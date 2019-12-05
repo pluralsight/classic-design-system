@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import Link from '@pluralsight/ps-design-system-link'
 
-import Table from '..'
+import Table from '../index.js'
 
 storiesOf('table', module)
   .add('empty', _ => <Table />)

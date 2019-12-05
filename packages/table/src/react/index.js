@@ -1,8 +1,9 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { Children } from 'react'
 
 import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Icon from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
@@ -12,7 +13,7 @@ import * as vars from '../vars/index.js'
 const drawerDisplayNameRegex = new RegExp(drawerDisplayName)
 
 const styles = {
-  cell: ({ align, emphasis, themeName }) => {
+  cell: (themeName, { align, emphasis }) => {
     const label = 'psds-table__cell'
 
     return compose(
@@ -24,7 +25,8 @@ const styles = {
       align && css(stylesheet[`.${label}--align-${align}`])
     )
   },
-  columnHeader: ({ active, align, onClick, sort, themeName }) => {
+  columnHeader: (themeName, props, { active }) => {
+    const { align, onClick } = props
     const label = 'psds-table__column-header'
 
     return compose(
@@ -38,7 +40,7 @@ const styles = {
     )
   },
   columnHeaderIcon: _ => css(stylesheet['.psds-table__column-header__icon']),
-  row: ({ _tableHasDrawers, themeName }) => {
+  row: (themeName, { _tableHasDrawers }) => {
     const label = 'psds-table__row'
 
     return compose(
@@ -47,7 +49,7 @@ const styles = {
       _tableHasDrawers && css(stylesheet[`.${label}--drawers`])
     )
   },
-  table: ({ inDrawer, themeName }) => {
+  table: (themeName, { inDrawer }) => {
     const label = 'psds-table'
 
     return compose(
@@ -61,9 +63,11 @@ const styles = {
 const SortIconAsc = _ => (
   <Icon id={Icon.ids.sortAsc} {...styles.columnHeaderIcon()} />
 )
+
 const SortIconDesc = _ => (
   <Icon id={Icon.ids.sortDesc} {...styles.columnHeaderIcon()} />
 )
+
 const SortIconDefault = _ => (
   <Icon id={Icon.ids.sort} {...styles.columnHeaderIcon()} />
 )
@@ -82,47 +86,41 @@ const getToggledSort = props =>
 
 function ColumnHeader(props) {
   const themeName = useTheme()
-  const allProps = {
-    ...props,
-    active: vars.sorts[props.sort] && typeof props.onClick === 'function',
-    themeName
-  }
+  const Tag = props.onClick ? 'button' : 'div'
 
-  const { onClick } = allProps
-  const style = allProps.style || {}
+  const active = vars.sorts[props.sort] && typeof props.onClick === 'function'
 
-  if (
-    (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
-    allProps.flex
-  ) {
-    style.flex = allProps.flex
-  }
+  const style = props.style || {}
+  if (props.flex && !style.flex) style.flex = props.flex
 
-  return React.createElement(
-    onClick ? 'button' : 'div',
-    {
-      role: 'columnheader',
-      ...(allProps.className ? { className: allProps.className } : null),
-      ...styles.columnHeader(allProps),
-      ...(onClick ? { onClick: _ => onClick(getToggledSort(props)) } : null),
-      style
-    },
-    allProps.children,
-    allProps.sort && getSortIcon(allProps)
+  const handleClick = props.onClick
+    ? () => props.onClick(getToggledSort(props))
+    : undefined
+
+  return (
+    <Tag
+      role="columnheader"
+      {...styles.columnHeader(themeName, props, { active })}
+      {...filterReactProps(props, { tagName: Tag })}
+      onClick={handleClick}
+      style={style}
+    >
+      {props.children}
+      {props.sort && getSortIcon(props)}
+    </Tag>
   )
 }
 
 ColumnHeader.displayName = 'Table.ColumnHeader'
 
-/* eslint-disable react/no-unused-prop-types */
 ColumnHeader.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
   children: PropTypes.node,
   flex: PropTypes.string,
   onClick: PropTypes.func,
-  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
+  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)]),
+  style: PropTypes.object
 }
-/* eslint-enable react/no-unused-prop-types */
 
 ColumnHeader.defaultProps = {
   align: vars.aligns.left
@@ -130,51 +128,43 @@ ColumnHeader.defaultProps = {
 
 function Cell(props) {
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
 
-  const style = allProps.style || {}
-  if (
-    (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
-    allProps.flex
-  ) {
-    style.flex = allProps.flex
-  }
+  const style = props.style || {}
+  if (props.flex && !style.flex) style.flex = props.flex
 
   return (
     <div
       role="cell"
-      {...styles.cell(allProps)}
-      {...(allProps.className ? { className: allProps.className } : null)}
+      {...styles.cell(themeName, props)}
+      {...filterReactProps(props)}
       style={style}
-    >
-      {allProps.children}
-    </div>
+    />
   )
 }
+
+Cell.displayName = 'Table.Cell'
+
 Cell.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
   emphasis: PropTypes.bool,
-  flex: PropTypes.string
+  flex: PropTypes.string,
+  style: PropTypes.object
 }
+
 Cell.defaultProps = {
   align: vars.aligns.left,
   emphasis: false
 }
-Cell.displayName = 'Table.Cell'
 
 function Row(props) {
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
 
   return (
     <div
       role="row"
-      {...styles.row(allProps)}
-      {...(allProps.className ? { className: allProps.className } : null)}
-      {...(allProps.style ? { style: allProps.style } : null)}
-    >
-      {allProps.children}
-    </div>
+      {...styles.row(themeName, props)}
+      {...filterReactProps(props)}
+    />
   )
 }
 Row.displayName = 'Table.Row'
@@ -186,29 +176,32 @@ Row.defaultProps = {
 }
 
 export default function Table(props) {
+  const { children = [] } = props
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
 
-  const _tableHasDrawers = React.Children.map(
-    allProps.children || [],
-    child =>
-      child && child.type && drawerDisplayNameRegex.test(child.type.displayName)
-  ).some(bool => bool)
+  const isDrawer = comp =>
+    comp && comp.type && drawerDisplayNameRegex.test(comp.type.displayName)
+
+  const isRow = comp =>
+    comp && comp.type && comp.type.displayName === Row.displayName
+
+  const _tableHasDrawers = Children.map(children, isDrawer).some(bool => bool)
 
   return (
     <div
       role="table"
-      {...styles.table(allProps)}
-      {...(allProps.className ? { className: allProps.className } : null)}
-      {...(allProps.style ? { style: allProps.style } : null)}
+      {...styles.table(themeName, props)}
+      {...filterReactProps(props)}
     >
-      {React.Children.map(allProps.children || [], child =>
-        child && child.type && child.type.displayName === Row.displayName
-          ? React.cloneElement(child, { _tableHasDrawers })
-          : child
+      {Children.map(children, child =>
+        isRow ? React.cloneElement(child, { _tableHasDrawers }) : child
       )}
     </div>
   )
+}
+
+Table.propTypes = {
+  children: PropTypes.node
 }
 
 Table.Row = Row
