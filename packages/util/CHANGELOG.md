@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.0.1...@pluralsight/ps-design-system-util@3.0.2) (2019-12-05)
+
+
+### Bug Fixes
+
+* **dropdown:** dev can set width thus truncating long input & options ([fd365be](https://github.com/pluralsight/design-system/commit/fd365be6ab6bb8c385fbe3c0ad8ae398b9ad7864))
+
+
+
+
+
 ## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.0.0...@pluralsight/ps-design-system-util@3.0.1) (2019-11-06)
 
 
