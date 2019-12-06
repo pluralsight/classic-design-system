@@ -5,10 +5,8 @@ import PropTypes from 'prop-types'
 
 import { accessibility } from '@pluralsight/ps-design-system-core'
 
-const ScreenReaderOnly = React.forwardRef((props, forwardedRef) => {
+const ScreenReaderOnly = React.forwardRef((props, ref) => {
   const { as: Tag, ...rest } = props
-  const ref = React.useRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
 
   return <Tag ref={ref} {...css(accessibility.screenReaderOnly)} {...rest} />
 })
