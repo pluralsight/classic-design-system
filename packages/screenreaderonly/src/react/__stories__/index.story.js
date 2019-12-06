@@ -5,7 +5,7 @@ import ScreenReaderOnly from '../index.js'
 
 storiesOf('ScreenReaderOnly', module).add('basic', _ => (
   <div>
-    <p>
+    <p style={{ background: 'white', padding: 20 }}>
       There is some hidden text on this page. Try to find it with a screen
       reader
     </p>
