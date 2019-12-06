@@ -5,8 +5,11 @@ import ScreenReaderOnly from '../index.js'
 
 storiesOf('ScreenReaderOnly', module).add('basic', _ => (
   <div>
-    <p>you should not see the following</p>
+    <p>
+      There is some hidden text on this page. Try to find it with a screen
+      reader
+    </p>
 
-    <ScreenReaderOnly />
+    <ScreenReaderOnly>content only for screen readers</ScreenReaderOnly>
   </div>
 ))
