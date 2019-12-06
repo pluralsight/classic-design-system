@@ -3,7 +3,12 @@ import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
-import {MoreIcon, ChannelIcon, PathIcon, ReportIcon} from '@pluralsight/ps-design-system-icon'
+import {
+  MoreIcon,
+  ChannelIcon,
+  PathIcon,
+  ReportIcon
+} from '@pluralsight/ps-design-system-icon'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
@@ -47,7 +52,7 @@ function InAppExample() {
   }
 
   return (
-    <React.Fragment>
+    <>
       <style jsx>{`
         .example {
           padding: ${core.layout.spacingLarge};
@@ -183,7 +188,7 @@ function InAppExample() {
   )
 }`}
       </Code>
-    </React.Fragment>
+    </>
   )
 }
 
@@ -325,7 +330,7 @@ export default _ => (
         includes={{ ActionMenu }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -354,7 +359,7 @@ export default _ => (
         }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>

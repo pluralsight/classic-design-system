@@ -69,7 +69,7 @@ storiesOf('Note', module)
         </Text.Heading>
       }
       message={
-        <React.Fragment>
+        <>
           <Text.P>
             Be so very light. Be a gentle whisper. If these lines aren't
             straight, your water's going to run right out of your painting and
@@ -81,7 +81,7 @@ storiesOf('Note', module)
             Just beat the devil out of it. Work that paint. A beautiful little
             sunset. This painting comes right out of your heart.
           </Text.P>
-        </React.Fragment>
+        </>
       }
     />
   ))
@@ -89,7 +89,7 @@ storiesOf('Note', module)
     <NoteWithDefaults
       heading={<h1>Bob Ross</h1>}
       message={
-        <React.Fragment>
+        <>
           <Text.P>
             Be so very light. Be a gentle whisper. If these lines aren't
             straight, your water's going to run right out of your painting and
@@ -101,7 +101,7 @@ storiesOf('Note', module)
             Just beat the devil out of it. Work that paint. A beautiful little
             sunset. This painting comes right out of your heart.
           </Text.P>
-        </React.Fragment>
+        </>
       }
     />
   ))
@@ -128,17 +128,13 @@ storiesOf('Note/actions', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
   .add('visible on hover', _ => (
     <NoteWithDefaults
-      actionBar={[
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
-      ]}
+      actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
       actionBarVisible={false}
     />
   ))
   .add('one action', _ => (
     <NoteWithDefaults
-      actionBar={[
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
-      ]}
+      actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
       actionBarVisible
     />
   ))
@@ -201,7 +197,7 @@ storiesOf('Note/actions', module)
       const [isOpen, setIsOpen] = React.useState(false)
 
       return (
-        <React.Fragment>
+        <>
           <NoteWithDefaults
             actionBar={[
               <Below
@@ -224,7 +220,7 @@ storiesOf('Note/actions', module)
             ]}
             actionBarVisible
           />
-        </React.Fragment>
+        </>
       )
     }
 

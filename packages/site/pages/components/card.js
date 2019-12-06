@@ -7,7 +7,11 @@ import * as core from '@pluralsight/ps-design-system-core'
 import * as Layout from '@pluralsight/ps-design-system-layout'
 import Theme from '@pluralsight/ps-design-system-theme'
 import {
-  PathIcon, BookmarkIcon, MoreIcon, PlayCircleIcon, ChannelIcon
+  PathIcon,
+  BookmarkIcon,
+  MoreIcon,
+  PlayCircleIcon,
+  ChannelIcon
 } from '@pluralsight/ps-design-system-icon'
 
 import {
@@ -87,11 +91,7 @@ const InAppExample = props => (
                   title="Book action"
                   icon={<BookmarkIcon />}
                 />,
-                <Card.Action
-                  key="2"
-                  title="More action"
-                  icon={<MoreIcon />}
-                />
+                <Card.Action key="2" title="More action" icon={<MoreIcon />} />
               ]}
               title={
                 <Card.Title>
@@ -120,11 +120,7 @@ const InAppExample = props => (
                   title="Bookmark action"
                   icon={<BookmarkIcon />}
                 />,
-                <Card.Action
-                  key="2"
-                  title="More action"
-                  icon={<MoreIcon />}
-                />
+                <Card.Action key="2" title="More action" icon={<MoreIcon />} />
               ]}
               actionBarVisible
               title={<Card.Title>Webpack Fundamentals"</Card.Title>}

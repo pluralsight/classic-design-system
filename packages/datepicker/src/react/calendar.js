@@ -3,7 +3,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import {CaretLeftIcon, CaretRightIcon} from '@pluralsight/ps-design-system-icon'
+import {
+  CaretLeftIcon,
+  CaretRightIcon
+} from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'

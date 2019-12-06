@@ -4,7 +4,7 @@ import React from 'react'
 
 import BaseButton from '@pluralsight/ps-design-system-button'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import {CloseIcon} from '@pluralsight/ps-design-system-icon'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'

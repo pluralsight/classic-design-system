@@ -31,22 +31,14 @@ Object.keys(Button.sizes).forEach(size =>
 const iconStory = storiesOf('Button / icon', module)
 Object.keys(Button.appearances).forEach(app =>
   iconStory.add(app, _ => (
-    <Button
-      key={app}
-      appearance={app}
-      icon={<Icon.CheckIcon key={app} />}
-    >
+    <Button key={app} appearance={app} icon={<Icon.CheckIcon key={app} />}>
       With Icon
     </Button>
   ))
 )
 Object.keys(Button.iconAligns).forEach(iconAlign =>
   iconStory.add(iconAlign, _ => (
-    <Button
-      key={iconAlign}
-      iconAlign={iconAlign}
-      icon={<Icon.CheckIcon />}
-    >
+    <Button key={iconAlign} iconAlign={iconAlign} icon={<Icon.CheckIcon />}>
       With Icon
     </Button>
   ))
@@ -183,11 +175,7 @@ Object.keys(Button.appearances).forEach(appearance =>
   ))
 )
 loadingExample.add('lone icon', _ => (
-  <Button
-    icon={<Icon.CheckIcon />}
-    size={Button.sizes.large}
-    loading
-  />
+  <Button icon={<Icon.CheckIcon />} size={Button.sizes.large} loading />
 ))
 
 class SwitchToLoading extends React.Component {

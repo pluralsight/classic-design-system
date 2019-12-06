@@ -53,6 +53,7 @@ class PreventToggleDrawerStory extends React.Component {
     this.state = { isOpen: false }
     this.handleToggle = this.handleToggle.bind(this)
   }
+
   handleToggle(isOpen, evt) {
     const isCaret =
       evt &&
@@ -63,6 +64,7 @@ class PreventToggleDrawerStory extends React.Component {
       this.setState({ isOpen })
     }
   }
+
   render() {
     return (
       <div>
@@ -126,9 +128,7 @@ storiesOf('drawer', module)
     <Drawer
       base={
         <Row
-          actionBar={[
-            <Row.Action key="iHeartCats" icon={<Icon.MoreIcon />} />
-          ]}
+          actionBar={[<Row.Action key="iHeartCats" icon={<Icon.MoreIcon />} />]}
           actionBarVisible
           image={<Row.Image src="https://cataas.com/cat" />}
           metadata1={['Kitten McCatbuns', '23 hours of cuteness']}

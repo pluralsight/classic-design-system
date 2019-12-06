@@ -1,38 +1,45 @@
-import { css } from 'glamor'
-import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import ActionMenu from './menu.js'
-import Arrow from './arrow.js'
+import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+
 import { calcNestedMenuPosition } from '../js/index.js'
-import ItemIcon from './item-icon.js'
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
+import ActionMenu from './menu.js'
+import Arrow from './arrow.js'
+import ItemIcon from './item-icon.js'
+
 const styles = {
   itemContainer: () => css(stylesheet['.psds-actionmenu__item-container']),
-  item: ({ _isKeyboarding, disabled, icon, isActive, nested }) =>
-    css(
-      stylesheet['.psds-actionmenu__item'],
-      _isKeyboarding
-        ? !disabled && {
-            ':focus': stylesheet['.psds-actionmenu__item--focus-keyboard'],
-            ':focus div':
-              stylesheet['.psds-actionmenu__item__arrow--focus-keyboard']
-          }
-        : !disabled && {
-            ':focus': stylesheet['.psds-actionmenu__item:focus'],
-            ':hover': stylesheet['.psds-actionmenu__item--link'],
-            ':active': stylesheet['.psds-actionmenu__item--link'],
-            ':visited': stylesheet['.psds-actionmenu__item--link']
-          },
-      icon ? stylesheet['.psds-actionmenu__item--icon'] : null,
-      nested ? stylesheet['.psds-actionmenu__item--nested'] : null,
-      isActive ? stylesheet['.psds-actionmenu__item--isActive'] : null,
-      disabled && stylesheet['.psds-actionmenu__item--disabled']
-    ),
+  item: ({ _isKeyboarding, disabled, icon, isActive, nested }) => {
+    const focusable = !_isKeyboarding && !disabled
+    const focused = _isKeyboarding && !disabled
+
+    return compose(
+      css(stylesheet['.psds-actionmenu__item']),
+      focusable &&
+        css({
+          ':focus': stylesheet['.psds-actionmenu__item:focus'],
+          ':hover': stylesheet['.psds-actionmenu__item--link'],
+          ':active': stylesheet['.psds-actionmenu__item--link'],
+          ':visited': stylesheet['.psds-actionmenu__item--link']
+        }),
+      focused &&
+        css({
+          ':focus': stylesheet['.psds-actionmenu__item--focus-keyboard'],
+          ':focus div':
+            stylesheet['.psds-actionmenu__item__arrow--focus-keyboard']
+        }),
+      icon && css(stylesheet['.psds-actionmenu__item--icon']),
+      nested && css(stylesheet['.psds-actionmenu__item--nested']),
+      isActive && css(stylesheet['.psds-actionmenu__item--isActive']),
+      disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
+    )
+  },
   inner: _ => css(stylesheet['.psds-actionmenu__item-inner'])
 }
 

@@ -1,20 +1,22 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const style = props =>
-  glamor.css({
-    ...css['.psds-text__heading'],
-    ...css[`.psds-text__heading.psds-theme--${props.themeName}`],
-    ...css[`.psds-text__heading--size-${props.size}`],
-    ...css[
-      `.psds-text__heading--size-${props.size}.psds-theme--${props.themeName}`
-    ]
-  })
+  compose(
+    css(stylesheet['.psds-text__heading']),
+    css(stylesheet[`.psds-text__heading.psds-theme--${props.themeName}`]),
+    css(stylesheet[`.psds-text__heading--size-${props.size}`]),
+    css(
+      stylesheet[
+        `.psds-text__heading--size-${props.size}.psds-theme--${props.themeName}`
+      ]
+    )
+  )
 
 const rmChildren = ({ children, ...rest }) => rest
 

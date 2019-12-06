@@ -1,4 +1,9 @@
-import {colors, layout, type, motion} from '@pluralsight/ps-design-system-core'
+import {
+  colors,
+  layout,
+  type,
+  motion
+} from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util'

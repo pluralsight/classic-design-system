@@ -17,10 +17,7 @@ const longStringsMetaData = [
 ]
 
 const PlayIcon = () => (
-  <Icon.PlayCircleIcon
-    color={Icon.colors.white}
-    size={Icon.sizes.large}
-  />
+  <Icon.PlayCircleIcon color={Icon.colors.white} size={Icon.sizes.large} />
 )
 
 storiesOf('combo', module).add('everything', _ => (
@@ -373,7 +370,7 @@ Object.keys(Row.sizes).forEach(size =>
 )
 
 storiesOf('in a stack', module).add('no top border on first row', _ => (
-  <React.Fragment>
+  <>
     <Row
       title="Course thing you do"
       metadata1={['1m 46s']}
@@ -388,5 +385,5 @@ storiesOf('in a stack', module).add('no top border on first row', _ => (
       actionBar={[<Row.Action icon={<Icon.MoreIcon />} key="more" />]}
       actionBarVisible
     />
-  </React.Fragment>
+  </>
 ))

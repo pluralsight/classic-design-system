@@ -1,7 +1,10 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
-import {CaretRightIcon, CaretLeftIcon} from '@pluralsight/ps-design-system-icon'
+import {
+  CaretRightIcon,
+  CaretLeftIcon
+} from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -218,11 +221,7 @@ function OverflowButton(props) {
   return (
     <button {...styles.overflowButton(allProps)} tabIndex="-1" {...props}>
       <div {...styles.overflowButtonIcon()}>
-        {
-            allProps.position === 'right'
-              ? <CaretRightIcon />
-              : <CaretLeftIcon />
-        }
+        {allProps.position === 'right' ? <CaretRightIcon /> : <CaretLeftIcon />}
       </div>
     </button>
   )

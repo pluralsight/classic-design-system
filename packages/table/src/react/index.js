@@ -1,61 +1,74 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
-import {SortAscIcon, SortDescIcon, SortIcon} from '@pluralsight/ps-design-system-icon'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import {
+  SortAscIcon,
+  SortDescIcon,
+  SortIcon
+} from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const drawerDisplayNameRegex = new RegExp(drawerDisplayName)
 
 const styles = {
-  cell: ({ align, emphasis, themeName }) =>
-    glamor.css(
-      css['.psds-table__cell'],
-      css[`.psds-table__cell.psds-theme--${themeName}`],
-      emphasis && css['.psds-table__cell--emphasis'],
-      emphasis && css[`.psds-table__cell--emphasis.psds-theme--${themeName}`],
-      align && css[`.psds-table__cell--align-${align}`]
-    ),
-  columnHeader: ({ active, align, onClick, sort, themeName }) =>
-    glamor.css(
-      css['.psds-table__column-header'],
-      css[`.psds-table__column-header.psds-theme--${themeName}`],
-      css[`.psds-table__column-header--align-${align}`],
-      active && css['.psds-table__column-header--active'],
-      active &&
-        css[`.psds-table__column-header--active.psds-theme--${themeName}`],
-      onClick && css['.psds-table__column-header--onclick'],
-      onClick &&
-        css[`.psds-table__column-header--onclick.psds-theme--${themeName}`]
-    ),
-  columnHeaderIcon: _ => glamor.css(css['.psds-table__column-header__icon']),
-  row: ({ _tableHasDrawers, themeName }) =>
-    glamor.css(
-      css['.psds-table__row'],
-      css[`.psds-table__row--${themeName}`],
-      _tableHasDrawers && css['.psds-table__row--drawers']
-    ),
-  table: ({ inDrawer, themeName }) =>
-    glamor.css(
-      css['.psds-table'],
-      inDrawer && css['.psds-table--in-drawer'],
-      css[`.psds-table.psds-theme--${themeName}`]
+  cell: (themeName, { align, emphasis }) => {
+    const label = 'psds-table__cell'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      emphasis && css(stylesheet[`.${label}--emphasis`]),
+      emphasis &&
+        css(stylesheet[`.${label}--emphasis.psds-theme--${themeName}`]),
+      align && css(stylesheet[`.${label}--align-${align}`])
     )
+  },
+  columnHeader: (themeName, props, { active }) => {
+    const { align, onClick } = props
+    const label = 'psds-table__column-header'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      css(stylesheet[`.${label}--align-${align}`]),
+      active && css(stylesheet[`.${label}--active`]),
+      active && css(stylesheet[`.${label}--active.psds-theme--${themeName}`]),
+      onClick && css(stylesheet[`.${label}--onclick`]),
+      onClick && css(stylesheet[`.${label}--onclick.psds-theme--${themeName}`])
+    )
+  },
+  columnHeaderIcon: _ => css(stylesheet['.psds-table__column-header__icon']),
+  row: (themeName, { _tableHasDrawers }) => {
+    const label = 'psds-table__row'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      _tableHasDrawers && css(stylesheet[`.${label}--drawers`])
+    )
+  },
+  table: (themeName, { inDrawer }) => {
+    const label = 'psds-table'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      inDrawer && css(stylesheet[`.${label}--in-drawer`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  }
 }
 
-const SortIconAsc = _ => (
-  <SortAscIcon {...styles.columnHeaderIcon()} />
-)
-const SortIconDesc = _ => (
-  <SortDescIcon {...styles.columnHeaderIcon()} />
-)
-const SortIconDefault = _ => (
-  <SortIcon {...styles.columnHeaderIcon()} />
-)
+const SortIconAsc = _ => <SortAscIcon {...styles.columnHeaderIcon()} />
+
+const SortIconDesc = _ => <SortDescIcon {...styles.columnHeaderIcon()} />
+
+const SortIconDefault = _ => <SortIcon {...styles.columnHeaderIcon()} />
 
 const getSortIcon = props =>
   ({
@@ -71,47 +84,41 @@ const getToggledSort = props =>
 
 function ColumnHeader(props) {
   const themeName = useTheme()
-  const allProps = {
-    ...props,
-    active: vars.sorts[props.sort] && typeof props.onClick === 'function',
-    themeName
-  }
+  const Tag = props.onClick ? 'button' : 'div'
 
-  const { onClick } = allProps
-  const style = allProps.style || {}
+  const active = vars.sorts[props.sort] && typeof props.onClick === 'function'
 
-  if (
-    (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
-    allProps.flex
-  ) {
-    style.flex = allProps.flex
-  }
+  const style = props.style || {}
+  if (props.flex && !style.flex) style.flex = props.flex
 
-  return React.createElement(
-    onClick ? 'button' : 'div',
-    {
-      role: 'columnheader',
-      ...(allProps.className ? { className: allProps.className } : null),
-      ...styles.columnHeader(allProps),
-      ...(onClick ? { onClick: _ => onClick(getToggledSort(props)) } : null),
-      style
-    },
-    allProps.children,
-    allProps.sort && getSortIcon(allProps)
+  const handleClick = props.onClick
+    ? () => props.onClick(getToggledSort(props))
+    : undefined
+
+  return (
+    <Tag
+      role="columnheader"
+      {...styles.columnHeader(themeName, props, { active })}
+      {...filterReactProps(props, { tagName: Tag })}
+      onClick={handleClick}
+      style={style}
+    >
+      {props.children}
+      {props.sort && getSortIcon(props)}
+    </Tag>
   )
 }
 
 ColumnHeader.displayName = 'Table.ColumnHeader'
 
-/* eslint-disable react/no-unused-prop-types */
 ColumnHeader.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
   children: PropTypes.node,
   flex: PropTypes.string,
   onClick: PropTypes.func,
-  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
+  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)]),
+  style: PropTypes.object
 }
-/* eslint-enable react/no-unused-prop-types */
 
 ColumnHeader.defaultProps = {
   align: vars.aligns.left
@@ -119,51 +126,43 @@ ColumnHeader.defaultProps = {
 
 function Cell(props) {
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
 
-  const style = allProps.style || {}
-  if (
-    (!allProps.styles || (allProps.styles && !allProps.styles.flex)) &&
-    allProps.flex
-  ) {
-    style.flex = allProps.flex
-  }
+  const style = props.style || {}
+  if (props.flex && !style.flex) style.flex = props.flex
 
   return (
     <div
       role="cell"
-      {...styles.cell(allProps)}
-      {...(allProps.className ? { className: allProps.className } : null)}
+      {...styles.cell(themeName, props)}
+      {...filterReactProps(props)}
       style={style}
-    >
-      {allProps.children}
-    </div>
+    />
   )
 }
+
+Cell.displayName = 'Table.Cell'
+
 Cell.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns)),
   emphasis: PropTypes.bool,
-  flex: PropTypes.string
+  flex: PropTypes.string,
+  style: PropTypes.object
 }
+
 Cell.defaultProps = {
   align: vars.aligns.left,
   emphasis: false
 }
-Cell.displayName = 'Table.Cell'
 
 function Row(props) {
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
 
   return (
     <div
       role="row"
-      {...styles.row(allProps)}
-      {...(allProps.className ? { className: allProps.className } : null)}
-      {...(allProps.style ? { style: allProps.style } : null)}
-    >
-      {allProps.children}
-    </div>
+      {...styles.row(themeName, props)}
+      {...filterReactProps(props)}
+    />
   )
 }
 Row.displayName = 'Table.Row'
@@ -175,11 +174,11 @@ Row.defaultProps = {
 }
 
 export default function Table(props) {
+  const { children = [] } = props
   const themeName = useTheme()
-  const allProps = { ...props, themeName }
 
   const _tableHasDrawers = React.Children.map(
-    allProps.children || [],
+    children,
     child =>
       child && child.type && drawerDisplayNameRegex.test(child.type.displayName)
   ).some(bool => bool)
@@ -187,17 +186,20 @@ export default function Table(props) {
   return (
     <div
       role="table"
-      {...styles.table(allProps)}
-      {...(allProps.className ? { className: allProps.className } : null)}
-      {...(allProps.style ? { style: allProps.style } : null)}
+      {...styles.table(themeName, props)}
+      {...filterReactProps(props)}
     >
-      {React.Children.map(allProps.children || [], child =>
+      {React.Children.map(children, child =>
         child && child.type && child.type.displayName === Row.displayName
           ? React.cloneElement(child, { _tableHasDrawers })
           : child
       )}
     </div>
   )
+}
+
+Table.propTypes = {
+  children: PropTypes.node
 }
 
 Table.Row = Row

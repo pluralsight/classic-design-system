@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 
@@ -9,13 +9,13 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import stylesheet from '../css/index.js'
 import { toPercentageString } from '../js/index.js'
 import * as vars from '../vars/index.js'
 
-import ConditionalWrap from './conditional-wrap'
-import Shave from './shave'
-import useMatchMedia from './use-match-media'
+import ConditionalWrap from './conditional-wrap.js'
+import Shave from './shave.js'
+import useMatchMedia from './use-match-media.js'
 
 const formatImageWidth = ({ image, size }) =>
   image && size !== vars.sizes.small
@@ -29,69 +29,70 @@ const formatActionBarWidth = ({ actionBar }) =>
 
 const styles = {
   actionBar: ({ actionBarVisible: visible, fullOverlay }) =>
-    glamor.css({
-      ...css['.psds-row__action-bar'],
-      ...(fullOverlay && css['.psds-row__action-bar--fullOverlay']),
-      ...(visible && css['.psds-row__action-bar--actionBarVisible'])
-    }),
+    compose(
+      css(stylesheet['.psds-row__action-bar']),
+      fullOverlay && css(stylesheet['.psds-row__action-bar--fullOverlay']),
+      visible && css(stylesheet['.psds-row__action-bar--actionBarVisible'])
+    ),
   actionBarAction: ({ disabled, themeName }) =>
-    glamor.css({
-      ...css['.psds-row__action-bar__button'],
-      ...css[`.psds-row__action-bar__button.psds-theme--${themeName}`],
-      ...(disabled && css['.psds-row__action-bar__button--disabled'])
-    }),
+    compose(
+      css(stylesheet['.psds-row__action-bar__button']),
+      css(stylesheet[`.psds-row__action-bar__button.psds-theme--${themeName}`]),
+      disabled && css(stylesheet['.psds-row__action-bar__button--disabled'])
+    ),
   fullOverlay: ({ fullOverlayVisible: visible, isFocused }) =>
-    glamor.css({
-      ...css['.psds-row__full-overlay'],
-      ...(isFocused && css['.psds-row__full-overlay--isFocused']),
-      ...(visible && css['.psds-row__full-overlay--fullOverlayVisible'])
-    }),
-  fullOverlayLink: props => glamor.css(css['.psds-row__full-overlay-link']),
+    compose(
+      css(stylesheet['.psds-row__full-overlay']),
+      isFocused && css(stylesheet['.psds-row__full-overlay--isFocused']),
+      visible && css(stylesheet['.psds-row__full-overlay--fullOverlayVisible'])
+    ),
+  fullOverlayLink: props => css(stylesheet['.psds-row__full-overlay-link']),
   image: props =>
-    glamor.css({
-      ...css['.psds-row__image'],
-      backgroundImage: `url(${props.src})`
-    }),
-  imageLink: () => glamor.css(css['.psds-row__image-link']),
+    compose(
+      css(stylesheet['.psds-row__image']),
+      css({ backgroundImage: `url(${props.src})` })
+    ),
+  imageLink: () => css(stylesheet['.psds-row__image-link']),
   metadata: props =>
-    glamor.css({
-      ...css['.psds-row__metadata'],
-      ...css[`.psds-row__metadata.psds-theme--${props.themeName}`],
-      ...css[`.psds-row__metadata--size-${props.size}`]
-    }),
-  metadataDatum: () => glamor.css(css['.psds-row__metadata__datum']),
-  metadataDot: () => glamor.css(css['.psds-row__metadata__dot']),
-  overlays: () => glamor.css(css['.psds-row__overlays']),
-  progress: () => glamor.css(css['.psds-row__progress']),
+    compose(
+      css(stylesheet['.psds-row__metadata']),
+      css(stylesheet[`.psds-row__metadata.psds-theme--${props.themeName}`]),
+      css(stylesheet[`.psds-row__metadata--size-${props.size}`])
+    ),
+  metadataDatum: () => css(stylesheet['.psds-row__metadata__datum']),
+  metadataDot: () => css(stylesheet['.psds-row__metadata__dot']),
+  overlays: () => css(stylesheet['.psds-row__overlays']),
+  progress: () => css(stylesheet['.psds-row__progress']),
   progressBar: props => {
     const percent = toPercentageString(props.progress)
+    const complete = percent === '100%'
 
-    return glamor.css({
-      ...css['.psds-row__progress__bar'],
-      ...(percent === '100%' && css['.psds-row__progress__bar--complete']),
-      width: percent
-    })
+    return compose(
+      css(stylesheet['.psds-row__progress__bar']),
+      complete && css(stylesheet['.psds-row__progress__bar--complete']),
+      css({ width: percent })
+    )
   },
-  row: () => glamor.css(css['.psds-row']),
+  row: () => css(stylesheet['.psds-row']),
   textLink: props =>
-    glamor.css({
-      ...css['.psds-row__text-link'],
-      ...css[`.psds-row__text-link.psds-theme--${props.themeName}`]
-    }),
+    compose(
+      css(stylesheet['.psds-row__text-link']),
+      css(stylesheet[`.psds-row__text-link.psds-theme--${props.themeName}`])
+    ),
   title: props =>
-    glamor.css({
-      ...css['.psds-row__title'],
-      ...css[`.psds-row__title--size-${props.size}`],
-      ...css[`.psds-row__title.psds-theme--${props.themeName}`]
-    }),
+    compose(
+      css(stylesheet['.psds-row__title']),
+      css(stylesheet[`.psds-row__title--size-${props.size}`]),
+      css(stylesheet[`.psds-row__title.psds-theme--${props.themeName}`])
+    ),
   words: props => {
     const imgWidth = formatImageWidth(props)
     const actionBarWidth = formatActionBarWidth(props)
 
-    return glamor.css({
-      ...css['.psds-row__words'],
-      maxWidth: `calc(100% - ${imgWidth} - ${actionBarWidth})`
-    })
+    return compose(
+      css(stylesheet['.psds-row__words']),
+      css({ maxWidth: `calc(100% - ${imgWidth} - ${actionBarWidth})` })
+    )
   }
 }
 
@@ -186,7 +187,7 @@ const MetadataDot = props => (
     {...styles.metadataDot(props)}
     {...filterReactProps(props, { tagName: 'span' })}
     aria-hidden
-    children={'·'}
+    children="·"
   />
 )
 

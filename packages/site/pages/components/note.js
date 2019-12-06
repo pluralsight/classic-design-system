@@ -1,7 +1,11 @@
 import React from 'react'
 
 import Avatar from '@pluralsight/ps-design-system-avatar'
-import {MoreIcon, PencilIcon, BookmarkIcon} from '@pluralsight/ps-design-system-icon'
+import {
+  MoreIcon,
+  PencilIcon,
+  BookmarkIcon
+} from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
 import Note from '@pluralsight/ps-design-system-note'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -278,7 +282,7 @@ export default _ => (
       <Example.React
         themeToggle
         themeName="light"
-        includes={{ Note, Link , BookmarkIcon, MoreIcon}}
+        includes={{ Note, Link, BookmarkIcon, MoreIcon }}
         codes={[
           `<Note
   actionBar={[

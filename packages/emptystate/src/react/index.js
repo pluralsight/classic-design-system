@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, { createContext, useEffect, useState } from 'react'
 
@@ -6,7 +6,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css, { sizeClasses, themeClasses } from '../css/index.js'
+import stylesheet, { sizeClasses, themeClasses } from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 import * as illustrations from './illustrations/index.js'
@@ -18,17 +18,17 @@ const Context = createContext({
 })
 
 const combineClasses = (className, { size, themeName }) =>
-  glamor.css(
-    css[className],
-    css[className + themeClasses[themeName]],
-    css[className + sizeClasses[size]]
+  css(
+    stylesheet[className],
+    stylesheet[className + themeClasses[themeName]],
+    stylesheet[className + sizeClasses[size]]
   )
 
 const styles = {
   emptyState: (_, ctx, { hasRenderedOnce }) => {
-    return glamor.compose(
+    return compose(
       combineClasses('.psds-emptystate', ctx),
-      !hasRenderedOnce && css['.psds-emptystate--hidden']
+      !hasRenderedOnce && stylesheet['.psds-emptystate--hidden']
     )
   },
   actions: (_, ctx) => combineClasses('.psds-emptystate__actions', ctx),

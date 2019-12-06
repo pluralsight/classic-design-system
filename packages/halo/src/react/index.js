@@ -1,4 +1,4 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -6,7 +6,7 @@ import React from 'react'
 import { withTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import css, { BASE_CLASSNAME, themeClasses } from '../css/index.js'
+import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
@@ -23,17 +23,17 @@ const styles = {
     const visible = `${BASE_CLASSNAME}--visible`
     const visibleOnFocus = `${BASE_CLASSNAME}--visible-on-focus`
 
-    return glamor.css(
-      css[base],
-      css[theme],
-      css[shape],
-      css[gapSize],
-      css[gapTheme],
+    return compose(
+      css(stylesheet[base]),
+      css(stylesheet[theme]),
+      css(stylesheet[shape]),
+      css(stylesheet[gapSize]),
+      css(stylesheet[gapTheme]),
 
-      props.inline && css[`${BASE_CLASSNAME}--inline`],
-      props.error && css[`${BASE_CLASSNAME}--error`],
-      props.visible && css[visible],
-      props.visibleOnFocus && css[visibleOnFocus]
+      props.inline && css(stylesheet[`${BASE_CLASSNAME}--inline`]),
+      props.error && css(stylesheet[`${BASE_CLASSNAME}--error`]),
+      props.visible && css(stylesheet[visible]),
+      props.visibleOnFocus && css(stylesheet[visibleOnFocus])
     )
   }
 }

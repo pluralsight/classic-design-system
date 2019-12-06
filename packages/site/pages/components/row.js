@@ -1,7 +1,7 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
-import {BookmarkIcon, MoreIcon} from '@pluralsight/ps-design-system-icon'
+import { BookmarkIcon, MoreIcon } from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row'
 import Theme from '@pluralsight/ps-design-system-theme'
 

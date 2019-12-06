@@ -26,7 +26,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
           }
         />
         <div
-          data-css-1kb1o0e=""
+          data-css-4ed7vx=""
         >
           <button
             aria-label="Bookmark"
@@ -1058,7 +1058,7 @@ exports[`Storyshots combo everything locked 1`] = `
           </span>
         </div>
         <div
-          data-css-1kb1o0e=""
+          data-css-4ed7vx=""
         >
           <button
             aria-label="Bookmark"

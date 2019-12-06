@@ -1,7 +1,13 @@
 import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
-import Icon, {colors, widths, sizes, CodeIcon, PathIcon} from '@pluralsight/ps-design-system-icon'
+import Icon, {
+  colors,
+  widths,
+  sizes,
+  CodeIcon,
+  PathIcon
+} from '@pluralsight/ps-design-system-icon'
 import * as Icons from '@pluralsight/ps-design-system-icon/dist/cjs/react/icons'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -32,10 +38,10 @@ const CommonSet = props => (
       {Object.keys(Icons).map((id, i) => {
         const Comp = Icons[id]
         return (
-        <div className="icon" key={i}>
-          <Comp size={sizes.large} className="svg"/>
-          <div className="iconLabel">{id}</div>
-        </div>
+          <div className="icon" key={i}>
+            <Comp size={sizes.large} className="svg" />
+            <div className="iconLabel">{id}</div>
+          </div>
         )
       })}
     </div>

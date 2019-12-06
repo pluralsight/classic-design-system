@@ -1,4 +1,4 @@
-import {colors, layout, type} from '@pluralsight/ps-design-system-core'
+import { colors, layout, type } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 
@@ -68,11 +68,12 @@ export default {
       paddingTop: '92px'
     },
 
-    // __text > h1
-    '.psds-error-page__text > h1': {
-      fontSize: type.fontSizeLarge,
-      lineHeight: type.lineHeightExtra,
-      fontWeight: type.fontWeightBook
+    '.psds-error-page__text': {
+      '& > h1': {
+        fontSize: type.fontSizeLarge,
+        fontWeight: type.fontWeightBook,
+        lineHeight: type.lineHeightExtra
+      }
     }
   }
 }

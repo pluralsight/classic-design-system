@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@8.0.1...@pluralsight/ps-design-system-actionmenu@9.0.0) (2019-12-05)
+
+
+### Code Refactoring
+
+* **actionmenu:** update to use new glamor coding styles ([6048e3e](https://github.com/pluralsight/design-system/commit/6048e3e7ebae155f18fa7c8e4d0727ffc20dfbc9))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** drop support for css prop
+
+
+
+
+
 ## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@8.0.0...@pluralsight/ps-design-system-actionmenu@8.0.1) (2019-12-05)
 
 

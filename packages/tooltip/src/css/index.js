@@ -21,7 +21,8 @@ export default {
       opacity: 1
     }
   },
-  [`.psds-tooltip`]: ({ fade }) => ({
+
+  '.psds-tooltip': ({ fade }) => ({
     position: 'relative',
     display: 'inline-block',
     maxWidth: '320px',
@@ -46,85 +47,76 @@ export default {
     backgroundColor: core.colors.blue
   },
 
-  [`.psds-tooltip__tail`]: {
+  '.psds-tooltip__tail': {
     position: 'absolute',
     height: diamondHeight,
     width: `calc(${diamondHeight} + 2 * ${shadowBlurWidth})`,
-    overflow: 'hidden'
+    overflow: 'hidden',
+
+    '&:after': {
+      position: 'absolute',
+      top: 0,
+      left: shadowBlurWidth,
+      display: 'block',
+      content: ' ',
+      whiteSpace: 'pre',
+      height: tailDimension,
+      width: tailDimension,
+      lineHeight: '0',
+      transform: 'rotate(45deg)',
+      boxShadow
+    }
   },
-  [`.psds-tooltip__tail:after`]: {
-    position: 'absolute',
-    top: 0,
-    left: shadowBlurWidth,
-    display: 'block',
-    content: ' ',
-    whiteSpace: 'pre',
-    height: tailDimension,
-    width: tailDimension,
-    lineHeight: '0',
-    transform: 'rotate(45deg)',
-    boxShadow
+  [`.psds-tooltip__tail--appearance-${vars.appearances.basic}`]: {
+    '&:after': { backgroundColor: core.colors.white }
   },
-  [`.psds-tooltip__tail--appearance-${vars.appearances.basic}:after`]: {
-    backgroundColor: core.colors.white
-  },
-  [`.psds-tooltip__tail--appearance-${vars.appearances.accent}:after`]: {
-    backgroundColor: core.colors.blue
+  [`.psds-tooltip__tail--appearance-${vars.appearances.accent}`]: {
+    '&:after': { backgroundColor: core.colors.blue }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topLeft}`]: {
     top: `calc(${diamondHeight} * -1)`,
-    left: `calc(${tailDimension} - ${shadowBlurWidth})`
-  },
-  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topLeft}:after`]: {
-    transform: tailTransformTop,
-    boxShadow
+    left: `calc(${tailDimension} - ${shadowBlurWidth})`,
+
+    '&:after': { transform: tailTransformTop, boxShadow }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topCenter}`]: {
     top: `calc(${diamondHeight} * -1)`,
     left: '50%',
-    transform: 'translateX(-50%)'
-  },
-  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topCenter}:after`]: {
-    transform: tailTransformTop,
-    boxShadow
+    transform: 'translateX(-50%)',
+
+    '&:after': { transform: tailTransformTop, boxShadow }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topRight}`]: {
     top: `calc(${diamondHeight} * -1)`,
-    right: `calc(${tailDimension} - ${shadowBlurWidth})`
-  },
-  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topRight}:after`]: {
-    transform: tailTransformTop,
-    boxShadow
+    right: `calc(${tailDimension} - ${shadowBlurWidth})`,
+
+    '&:after': { transform: tailTransformTop, boxShadow }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomLeft}`]: {
     bottom: `calc(${diamondHeight} * -1)`,
-    left: `calc(${tailDimension} - ${shadowBlurWidth})`
-  },
-  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomLeft}:after`]: {
-    transform: tailTransformBottom,
-    boxShadow
+    left: `calc(${tailDimension} - ${shadowBlurWidth})`,
+
+    '&:after': { transform: tailTransformBottom, boxShadow }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomCenter}`]: {
     bottom: `calc(${diamondHeight} * -1)`,
     left: '50%',
-    transform: 'translateX(-50%)'
-  },
-  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomCenter}:after`]: {
-    transform: tailTransformBottom,
-    boxShadow
+    transform: 'translateX(-50%)',
+
+    '&:after': { transform: tailTransformBottom, boxShadow }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomRight}`]: {
     bottom: `calc(${diamondHeight} * -1)`,
-    right: `calc(${tailDimension} - ${shadowBlurWidth})`
+    right: `calc(${tailDimension} - ${shadowBlurWidth})`,
+
+    '&:after': { transform: tailTransformBottom, boxShadow }
   },
-  [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.bottomRight}:after`]: {
-    transform: tailTransformBottom,
-    boxShadow
-  },
+
   // --closeable
   [`.psds-tooltip--closeable`]: {
     padding: `${core.layout.spacingMedium} calc(${core.layout.spacingMedium} * 2) ${core.layout.spacingMedium} ${core.layout.spacingLarge}`
   },
+
   // __close
   [`.psds-tooltip__close`]: {
     position: 'absolute',
@@ -135,17 +127,15 @@ export default {
     lineHeight: '0',
     border: 'none',
     background: 'none',
-    cursor: 'pointer'
+    cursor: 'pointer',
+
+    '& > svg': { height: '24px', width: '24px' }
   },
-  [`.psds-tooltip__close > svg`]: {
-    height: '24px',
-    width: '24px'
+  [`.psds-tooltip__close--appearance-${vars.appearances.basic}`]: {
+    '& > svg': { fill: core.colors.gray03 }
   },
-  [`.psds-tooltip__close--appearance-${vars.appearances.basic} > svg`]: {
-    fill: core.colors.gray03
-  },
-  [`.psds-tooltip__close--appearance-${vars.appearances.accent} > svg`]: {
-    fill: core.colors.bone
+  [`.psds-tooltip__close--appearance-${vars.appearances.accent}`]: {
+    '& > svg': { fill: core.colors.bone }
   }
 }
 

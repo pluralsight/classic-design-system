@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.0...@pluralsight/ps-design-system-table@7.1.1) (2019-12-06)
+
+
+### Bug Fixes
+
+* **table:** revert to old child map style to fix doc build ([211ff77](https://github.com/pluralsight/design-system/commit/211ff77c94274896da0fcfe33a7f81299ca4d035))
+
+
+
+
+
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.0.1...@pluralsight/ps-design-system-table@7.1.0) (2019-12-05)
+
+
+### Features
+
+* **table:** allow passing valid props through ([40a150c](https://github.com/pluralsight/design-system/commit/40a150c26b96f7a0dd777f90b7694a8f94abf7f0))
+
+
+
+
+
 ## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.0.0...@pluralsight/ps-design-system-table@7.0.1) (2019-12-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
