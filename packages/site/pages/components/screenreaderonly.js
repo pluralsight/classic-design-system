@@ -11,7 +11,7 @@ import {
 
 export default () => (
   <Chrome>
-    <Content title="ScreenReaderOnly">
+    <Content title="Screen Reader Only">
       <PageHeading packageName="screenreaderonly">ScreenReaderOnly</PageHeading>
 
       <P>Install the component dependency:</P>
@@ -26,6 +26,11 @@ export default () => (
 
       <SectionHeading>Usage example</SectionHeading>
       <br />
+      <P>
+        Wrap content that you want the visually impaired to read through a
+        screenreader. It will be heard through screenreader audio but not
+        visually present on the page.
+      </P>
       <Code language="javascript">
         {'<ScreenReaderOnly>content only for screen readers</ScreenReaderOnly>'}
       </Code>
