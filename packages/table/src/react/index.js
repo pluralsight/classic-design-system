@@ -1,6 +1,6 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, { Children } from 'react'
+import React from 'react'
 
 import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -177,13 +177,11 @@ export default function Table(props) {
   const { children = [] } = props
   const themeName = useTheme()
 
-  const isDrawer = comp =>
-    comp && comp.type && drawerDisplayNameRegex.test(comp.type.displayName)
-
-  const isRow = comp =>
-    comp && comp.type && comp.type.displayName === Row.displayName
-
-  const _tableHasDrawers = Children.map(children, isDrawer).some(bool => bool)
+  const _tableHasDrawers = React.Children.map(
+    children,
+    child =>
+      child && child.type && drawerDisplayNameRegex.test(child.type.displayName)
+  ).some(bool => bool)
 
   return (
     <div
@@ -191,8 +189,10 @@ export default function Table(props) {
       {...styles.table(themeName, props)}
       {...filterReactProps(props)}
     >
-      {Children.map(children, child =>
-        isRow ? React.cloneElement(child, { _tableHasDrawers }) : child
+      {React.Children.map(children, child =>
+        child && child.type && child.type.displayName === Row.displayName
+          ? React.cloneElement(child, { _tableHasDrawers })
+          : child
       )}
     </div>
   )
