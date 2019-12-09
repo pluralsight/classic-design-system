@@ -424,6 +424,9 @@ const SideNav = withHeadings(props => (
       <NavLink href="/components/searchinput" headings={props.headings}>
         Search Input
       </NavLink>
+      <NavLink href="/components/screenreaderonly" headings={props.headings}>
+        Screen Reader Only
+      </NavLink>
       <NavLink href="/components/starrating" headings={props.headings}>
         Star Rating
       </NavLink>

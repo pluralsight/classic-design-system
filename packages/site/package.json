@@ -52,6 +52,7 @@
     "@pluralsight/ps-design-system-position": "^2.0.5",
     "@pluralsight/ps-design-system-radio": "^5.0.3",
     "@pluralsight/ps-design-system-row": "^8.0.2",
+    "@pluralsight/ps-design-system-screenreaderonly": "*",
     "@pluralsight/ps-design-system-searchinput": "^4.0.2",
     "@pluralsight/ps-design-system-starrating": "^6.0.1",
     "@pluralsight/ps-design-system-switch": "^5.0.3",
