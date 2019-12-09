@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@1.1.0...@pluralsight/ps-design-system-screenreaderonly@1.1.1) (2019-12-09)
+
+
+### Bug Fixes
+
+* **screenreaderonly:** export default from css file ([d60495c](https://github.com/pluralsight/design-system/commit/d60495c43a5f06164cee25c5ed3c6be7cff225a9))
+
+
+
+
+
 # 1.1.0 (2019-12-09)
 
 
