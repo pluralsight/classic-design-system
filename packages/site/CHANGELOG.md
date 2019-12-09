@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.0.1...@pluralsight/ps-design-system-site@17.1.0) (2019-12-09)
+
+
+### Features
+
+* **screenreaderonly:** implementation ([80c7004](https://github.com/pluralsight/design-system/commit/80c700441b5ff15f0d08aabcf491c56a32b85040))
+
+
+
+
+
 ## [17.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.0.0...@pluralsight/ps-design-system-site@17.0.1) (2019-12-06)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
