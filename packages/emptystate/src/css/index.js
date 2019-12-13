@@ -45,9 +45,9 @@ export default {
   // __caption
   '.psds-emptystate__caption': {
     marginBottom: core.layout.spacingLarge,
-    fontSize: core.type.psTypeFontSizeSmall,
-    letterSpacing: core.type.psTypeLetterSpacingSmall,
-    lineHeight: core.type.psTypeLineHeightStandard,
+    fontSize: core.type.fontSizeSmall,
+    letterSpacing: core.type.letterSpacingSmall,
+    lineHeight: core.type.lineHeightStandard,
     maxWidth: 500
   },
   ['.psds-emptystate__caption' + themeClasses[themeDefaultName]]: {
