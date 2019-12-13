@@ -8,9 +8,20 @@ const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
+function AutofocusStory(props) {
+  const ref = React.createRef()
+
+  React.useEffect(_ => {
+    ref.current.focus()
+  })
+
+  return <Checkbox name="colorRed" value="red" label="Red" ref={ref} />
+}
+
 storiesOf('Checkbox', module)
   .addDecorator(PaddingDecorator)
   .add('default', _ => <Checkbox name="colorRed" value="red" label="Red" />)
+  .add('autofocus', _ => <AutofocusStory />)
   .add('checked', _ => (
     <Checkbox checked name="colorRed" value="red" label="Red" />
   ))
@@ -37,7 +48,7 @@ storiesOf('Checkbox', module)
       const [values, updateValues] = React.useState([])
 
       function handleCheck(evt, checked, value, name) {
-        let nextValues = { ...values }
+        const nextValues = { ...values }
 
         if (checked) nextValues[name] = value
         else delete nextValues[name]
