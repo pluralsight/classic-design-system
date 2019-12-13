@@ -5,6 +5,16 @@ import * as Text from '@pluralsight/ps-design-system-text'
 
 import FocusManager from '../index.js'
 
+// function AutofocusStory(props) {
+//   const ref = React.createRef()
+
+//   React.useEffect(_ => {
+//     ref.current.focus()
+//   })
+
+//   return <Checkbox name="colorRed" value="red" label="Red" ref={ref} />
+// }
+
 storiesOf('FocusManager', module)
   .add('trapped', _ => (
     <FocusManager style={{ color: 'white', textAlign: 'center', margin: 100 }}>

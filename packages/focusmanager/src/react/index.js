@@ -5,9 +5,8 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import useFocusManager from './use-focus-manager.js'
 
-const FocusManager = React.forwardRef((props, _ref) => {
-  const ref = React.useRef()
-  React.useImperativeHandle(_ref, () => ref.current)
+const FocusManager = React.forwardRef((props, ref) => {
+  if (!ref) ref = React.useRef()
 
   useFocusManager(ref, {
     autofocus: props.autofocus,
