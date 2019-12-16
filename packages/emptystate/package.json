@@ -16,7 +16,7 @@
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
     "build:watch": "npm run build:js -- --watch",
-    "copy:svg": "node copySvgs.js",
+    "copy:svg": "node copy-svgs.js",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
