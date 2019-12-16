@@ -167,7 +167,7 @@ function InAppExample() {
   const options = ['Beginner', 'Intermediate', 'Advanced']
 
   return (
-    <React.Fragment>
+    <>
       <style jsx>{`
         .example {
           padding: ${core.layout.spacingLarge};
@@ -198,6 +198,6 @@ const options = ['Beginner', 'Intermediate', 'Advanced']
 </Typeahead>
 `}
       </Code>
-    </React.Fragment>
+    </>
   )
 }

@@ -17,6 +17,7 @@ export default class SectionHeading extends React.Component {
     super(props)
     this.el = React.createRef()
   }
+
   componentDidMount() {
     const href = formatHref(this.props.children)
     addHeading(this.props.children, href)
@@ -31,6 +32,7 @@ export default class SectionHeading extends React.Component {
       setTimeout(_ => this.el.current.scrollIntoView(), 1)
     }
   }
+
   render() {
     return (
       <div>

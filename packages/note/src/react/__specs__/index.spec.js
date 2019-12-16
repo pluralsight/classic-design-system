@@ -22,7 +22,7 @@ describe('Note', () => {
 
   it('renders metadata', () => {
     const { container } = render(
-      <Note message={'message'} metadata={['meta1', 'meta2']} />
+      <Note message="message" metadata={['meta1', 'meta2']} />
     )
 
     expect(container).toHaveTextContent('meta1')
@@ -33,7 +33,7 @@ describe('Note', () => {
     const spy = jest.fn()
 
     const { getByTestId } = render(
-      <Note data-testid="note" message={'message'} onMouseOver={spy} />
+      <Note data-testid="note" message="message" onMouseOver={spy} />
     )
 
     const el = await waitForElement(() => getByTestId('note'))
@@ -46,7 +46,7 @@ describe('Note', () => {
     const spy = jest.fn()
 
     const { getByTestId } = render(
-      <Note data-testid="note" message={'message'} onMouseOut={spy} />
+      <Note data-testid="note" message="message" onMouseOut={spy} />
     )
 
     const el = await waitForElement(() => getByTestId('note'))

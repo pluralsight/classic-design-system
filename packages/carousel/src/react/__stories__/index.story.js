@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 
 import { css } from 'glamor'
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'

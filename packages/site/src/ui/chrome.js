@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-handler-names */
 import * as core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'

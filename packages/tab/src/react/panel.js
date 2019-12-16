@@ -15,7 +15,13 @@ const PanelComponent = props => {
 
 PanelComponent.propTypes = {
   labelledBy: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-    .isRequired
+    .isRequired,
+  style: PropTypes.object,
+  className: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ])
 }
 
 export default PanelComponent

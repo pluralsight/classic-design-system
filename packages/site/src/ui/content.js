@@ -14,19 +14,24 @@ class Headings {
     this.subscribe = this.subscribe.bind(this)
     this.unsubscribe = this.unsubscribe.bind(this)
   }
+
   reset() {
     this.headings = []
   }
+
   add(label, href) {
     this.headings.push({ label, href })
     this.notifySubscribers()
   }
+
   notifySubscribers() {
     this.subscribers.forEach(fn => fn(this.headings))
   }
+
   subscribe(fn) {
     this.subscribers.push(fn)
   }
+
   unsubscribe(fn) {
     this.subscribers = this.subscribers.filter(f => f !== fn)
   }
@@ -40,15 +45,19 @@ export const withHeadings = WrappedComponent =>
       this.state = { headings: [] }
       this.handleHeadingAdd = this.handleHeadingAdd.bind(this)
     }
+
     componentDidMount() {
       headings.subscribe(this.handleHeadingAdd)
     }
+
     componentWillUnmount() {
       headings.unsubscribe(this.handleHeadingAdd)
     }
+
     handleHeadingAdd(headings) {
       this.setState({ headings })
     }
+
     render() {
       return <WrappedComponent {...this.props} headings={this.state.headings} />
     }
@@ -60,6 +69,7 @@ export default class Content extends React.Component {
   componentDidMount() {
     headings.reset()
   }
+
   render() {
     return (
       <div className="content">

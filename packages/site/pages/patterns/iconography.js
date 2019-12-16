@@ -21,12 +21,15 @@ class Boxes extends React.Component {
     this.handleOpen = this.handleOpen.bind(this)
     this.handleClose = this.handleClose.bind(this)
   }
+
   handleOpen(modalSrc) {
     this.setState({ modalSrc })
   }
+
   handleClose() {
     this.setState({ modalSrc: null })
   }
+
   render() {
     const { props } = this
     return (

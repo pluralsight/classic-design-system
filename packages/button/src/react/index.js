@@ -124,7 +124,7 @@ const Button = React.forwardRef((props, ref) => {
   }
 
   const isDisabledLink = allProps.disabled && allProps.href
-  let filteredProps = filterReactProps(props, { tagName })
+  const filteredProps = filterReactProps(props, { tagName })
   delete filteredProps.icon
   if (isDisabledLink) {
     delete filteredProps.onClick

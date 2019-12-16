@@ -26,9 +26,11 @@ class AnimationDemo extends React.Component {
       this.setState({ value: rando > 100 ? 100 : rando })
     }, 2500)
   }
+
   componentWillUnmount() {
     clearInterval(this.interval)
   }
+
   render() {
     return (
       <div className="root">

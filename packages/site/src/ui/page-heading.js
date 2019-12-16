@@ -11,10 +11,10 @@ const BadgeSpacer = () => <span style={{ width: core.layout.spacingLarge }} />
 
 function Beta(props) {
   return (
-    <React.Fragment>
+    <>
       <BadgeSpacer />
       <Badge color={Badge.colors.blue}>Beta</Badge>
-    </React.Fragment>
+    </>
   )
 }
 

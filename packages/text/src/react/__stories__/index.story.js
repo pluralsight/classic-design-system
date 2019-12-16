@@ -172,7 +172,7 @@ storiesOf('Code', module)
     </P>
   ))
   .add('maintains whitespace', () => (
-    <Code>{`                in the middle                `}</Code>
+    <Code>                in the middle                </Code>
   ))
   .add('line wrap', () => (
     <P>

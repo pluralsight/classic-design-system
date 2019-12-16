@@ -20,9 +20,11 @@ class InAppExample extends React.Component {
     this.state = { value: 'beginner' }
     this.handleSelect = this.handleSelect.bind(this)
   }
+
   handleSelect(_, value) {
     this.setState(_ => ({ value }))
   }
+
   render() {
     return (
       <div>

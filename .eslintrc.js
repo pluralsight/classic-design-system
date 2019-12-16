@@ -25,5 +25,13 @@ module.exports = {
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
     'react/jsx-no-bind': [IGNORE]
-  }
+  },
+  overrides: [
+    {
+      files: ['packages/site/pages/**/*.js', '**/__stories__/*.js'],
+      rules: {
+        'react/jsx-key': [WARNING]
+      }
+    }
+  ]
 }
