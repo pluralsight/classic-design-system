@@ -1,51 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Checkbox autofocus 1`] = `
-<div
-  data-css-1so76ss=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-kn3wr0=""
-      onClick={[Function]}
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-vzrwad=""
-      >
-        <div
-          aria-checked={false}
-          data-css-v2gdam=""
-          role="checkbox"
-          tabIndex="0"
-        />
-      </div>
-      <input
-        checked={false}
-        data-css-gyrv08=""
-        disabled={false}
-        name="colorRed"
-        readOnly={true}
-        tabIndex="-1"
-        type="checkbox"
-        value="red"
-      />
-      <div
-        data-css-pgc406=""
-      >
-        Red
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Checkbox checked & indeterminate 1`] = `
 <div
   data-css-1so76ss=""
