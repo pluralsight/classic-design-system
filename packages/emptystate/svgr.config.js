@@ -36,7 +36,7 @@ module.exports = {
     '#FFF': 'currentColor'
   },
   svgProps: {
-    'aria-hidden': true,
+    'aria-hidden': 'true',
     role: 'img'
   },
   template,
