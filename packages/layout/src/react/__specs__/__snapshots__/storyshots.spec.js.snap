@@ -818,3 +818,38 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
   My content
 </div>
 `;
+
+exports[`Storyshots Layout / PageWidthLayout default 1`] = `
+<div
+  data-css-eg0ypq=""
+  style={
+    Object {
+      "color": "white",
+    }
+  }
+>
+  My content
+</div>
+`;
+
+exports[`Storyshots Layout / PageWidthLayout full-bleed 1`] = `
+<div
+  style={
+    Object {
+      "background": "rebeccapurple",
+    }
+  }
+>
+  <div
+    data-css-60rhmp=""
+    style={
+      Object {
+        "color": "white",
+        "outline": "1px solid red",
+      }
+    }
+  >
+    My content
+  </div>
+</div>
+`;
