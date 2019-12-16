@@ -51,7 +51,7 @@ describe('DatePicker', () => {
   describe('with a controlled value', () => {
     let container
     let rerender
-    let fields = { day: null, month: null, year: null }
+    const fields = { day: null, month: null, year: null }
 
     beforeEach(() => {
       ;({ container, rerender } = render(<DatePicker value="1/20/1993" />))

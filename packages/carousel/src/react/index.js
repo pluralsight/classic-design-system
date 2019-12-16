@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-handler-names */
 import { compose, css } from 'glamor'
 import React, { cloneElement } from 'react'
 import PropTypes from 'prop-types'

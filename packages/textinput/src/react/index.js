@@ -152,7 +152,7 @@ export default TextInput
 function isRef(ref) {
   if (!isPlainObject(ref)) return false
 
-  return ref.hasOwnProperty('current')
+  return Object.prototype.hasOwnProperty.call(ref, 'current')
 }
 
 function isRefs(refs) {

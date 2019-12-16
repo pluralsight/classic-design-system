@@ -20,7 +20,7 @@ function Guideline(props) {
       }
 
   return (
-    <Fragment>
+    <>
       <style jsx>{`
         .guideline {
           padding: ${core.layout.spacingXSmall} 0 ${core.layout.spacingXLarge} 0;
@@ -72,7 +72,7 @@ function Guideline(props) {
           </div>
         </div>
       </Layout>
-    </Fragment>
+    </>
   )
 }
 

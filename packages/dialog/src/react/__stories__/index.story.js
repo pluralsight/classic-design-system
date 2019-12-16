@@ -14,7 +14,7 @@ const openAction = action('open')
 
 function MockDialog(props) {
   const children = props.children || (
-    <React.Fragment>
+    <>
       <Text.Heading>
         <h1>Wowzers, a Dialog</h1>
       </Text.Heading>
@@ -38,7 +38,7 @@ function MockDialog(props) {
         <span style={{ marginLeft: 10 }} />
         <Button>Primary CTA</Button>
       </div>
-    </React.Fragment>
+    </>
   )
 
   return <Dialog {...props}>{children}</Dialog>

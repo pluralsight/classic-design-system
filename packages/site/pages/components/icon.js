@@ -2,8 +2,6 @@ import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
 import Icon, {
-  colors,
-  widths,
   sizes,
   CodeIcon,
   PathIcon

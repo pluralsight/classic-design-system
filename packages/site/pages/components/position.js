@@ -198,7 +198,7 @@ function JsExample() {
   }, [])
 
   return (
-    <React.Fragment>
+    <>
       <div className="examples">
         <Theme name={Theme.names.dark}>
           <div className="example">
@@ -290,7 +290,7 @@ function Example(){
           margin-right: 0;
         }
       `}</style>
-    </React.Fragment>
+    </>
   )
 }
 
