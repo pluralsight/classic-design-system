@@ -1,4 +1,4 @@
-import * as subject from '../index'
+import * as subject from '../index.js'
 
 describe('#getDaysInMonth', () => {
   test('feb 1983 had 28 days', () => {

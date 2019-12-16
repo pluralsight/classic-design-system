@@ -26,9 +26,11 @@ class InAppExample extends React.Component {
     }))
     this.handleTabClick = this.handleTabClick.bind(this)
   }
+
   handleTabClick(i) {
     this.setState({ activeIndex: i })
   }
+
   render() {
     return (
       <div>

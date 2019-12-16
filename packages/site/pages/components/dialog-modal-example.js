@@ -13,9 +13,11 @@ export default class DialogModalExample extends React.Component {
     this.state = { isOpen: false }
     this.handleButtonClick = this.handleButtonClick.bind(this)
   }
+
   handleButtonClick() {
     this.setState({ isOpen: !this.state.isOpen })
   }
+
   render() {
     return (
       <div className="page">

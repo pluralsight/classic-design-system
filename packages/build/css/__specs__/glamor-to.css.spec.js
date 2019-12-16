@@ -1,4 +1,4 @@
-import glamorToCss from '../glamor-to-css'
+import glamorToCss from '../glamor-to-css.js'
 
 describe('#glamorToCss', () => {
   it('converts a simple style to flattened css', () => {

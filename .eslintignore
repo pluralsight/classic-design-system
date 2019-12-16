@@ -5,3 +5,4 @@ node_modules/*
 .github
 examples
 scripts/create-component
+packages/packages-api/*

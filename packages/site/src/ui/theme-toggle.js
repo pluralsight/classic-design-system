@@ -8,7 +8,7 @@ import { capitalize } from '@pluralsight/ps-design-system-util'
 
 function ThemeToggle(props) {
   return (
-    <React.Fragment>
+    <>
       <style jsx>{`
         .toggle {
           position: absolute;
@@ -30,7 +30,7 @@ function ThemeToggle(props) {
           ))}
         </ViewToggle>
       </div>
-    </React.Fragment>
+    </>
   )
 }
 
@@ -48,7 +48,7 @@ function Themeable(props) {
   }
 
   return (
-    <React.Fragment>
+    <>
       <style jsx>{`
         .themeable {
           position: relative;
@@ -65,7 +65,7 @@ function Themeable(props) {
         <ThemeToggle activeThemeName={themeName} onSelect={handleSelect} />
         <Theme name={themeName}>{props.children}</Theme>
       </div>
-    </React.Fragment>
+    </>
   )
 }
 

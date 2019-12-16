@@ -1,7 +1,7 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import flush from 'styled-jsx/server'
+import Document, { Head, Main, NextScript } from 'next/document.js'
+import flush from 'styled-jsx/server.js'
 import React from 'react'
-import { renderStatic } from 'glamor/server'
+import { renderStatic } from 'glamor/server.js'
 
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {

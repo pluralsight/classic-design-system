@@ -1,4 +1,4 @@
-import jsToCss from '../js-to-css'
+import jsToCss from '../js-to-css.js'
 
 test('null to empty string', () => {
   expect(jsToCss()).toEqual('')

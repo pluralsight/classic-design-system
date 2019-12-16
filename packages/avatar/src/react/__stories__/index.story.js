@@ -51,9 +51,9 @@ const names = [
 ]
 
 const storyInitials = storiesOf('Using Initials', module)
-  .add('empty name, no src', () => <Avatar name={''} />)
+  .add('empty name, no src', () => <Avatar name="" />)
   .add('null name, no src', () => <Avatar name={null} />)
-  .add('single string name, no src', () => <Avatar name={'x'} />)
+  .add('single string name, no src', () => <Avatar name="x" />)
   .add('error-out image src, with name', () => (
     <Avatar name="Bill Dill" src="https://jaketrent.com/fake.jpg" />
   ))
@@ -89,7 +89,7 @@ storyInitials.add('alpha-order names w/ varied colors', () => (
 storiesOf('Image cases', module)
   .add('tall, thin', () => (
     <Avatar
-      name={'Will Ferrill'}
+      name="Will Ferrill"
       src="https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg"
     />
   ))

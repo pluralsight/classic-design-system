@@ -106,7 +106,7 @@ export default _ => (
         Source Code Pro. Import it into your app with:
       </P>
       <Code language="css">
-        {`@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);`}
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);
       </Code>
 
       <P>Install the component dependency:</P>

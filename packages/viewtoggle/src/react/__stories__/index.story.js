@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
 import { css } from 'glamor'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import ViewToggle from '../index.js'
 
@@ -43,7 +43,7 @@ storiesOf('options count', module)
       const remove = () => updateCount(count - 1)
 
       return (
-        <Fragment>
+        <>
           <ViewToggle>
             {new Array(count).fill(null).map((_, index) => (
               <ViewToggle.Option key={index}>
@@ -68,7 +68,7 @@ storiesOf('options count', module)
               add
             </button>
           </div>
-        </Fragment>
+        </>
       )
     }
 
