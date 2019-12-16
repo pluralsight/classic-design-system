@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.1.2...@pluralsight/ps-design-system-site@17.2.0) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+* missing js extensition eslint warnings ([bebf5d7](https://github.com/pluralsight/design-system/commit/bebf5d718290eb9e3a3cdf0e64ee5f1849226c89))
+
+
+### Features
+
+* **site:** add PageHeadingLayout docs ([0445e95](https://github.com/pluralsight/design-system/commit/0445e959296e7c6cb1817cd2b63bcd1361325245))
+
+
+
+
+
 ## [17.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.1.1...@pluralsight/ps-design-system-site@17.1.2) (2019-12-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

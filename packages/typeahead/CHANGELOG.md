@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@3.0.2...@pluralsight/ps-design-system-typeahead@3.1.0) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+### Features
+
+* **typeahead:** position checkmark to right of lable ([97f0f3d](https://github.com/pluralsight/design-system/commit/97f0f3dc503df54bd3037e2311387f5489730223))
+
+
+
+
+
 ## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@3.0.1...@pluralsight/ps-design-system-typeahead@3.0.2) (2019-12-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead

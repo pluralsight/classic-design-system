@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@7.0.3...@pluralsight/ps-design-system-emptystate@7.0.4) (2019-12-16)
+
+
+### Bug Fixes
+
+* missing js extensition eslint warnings ([bebf5d7](https://github.com/pluralsight/design-system/commit/bebf5d718290eb9e3a3cdf0e64ee5f1849226c89))
+* **emptystate:** missing svgs from package ([d2e30ed](https://github.com/pluralsight/design-system/commit/d2e30edee94d501fc88c500ab4dc1c3265e3a92c))
+* **emptystate:** rename build script file ([905115d](https://github.com/pluralsight/design-system/commit/905115d46a8b0f36a57f6f94a603611edee936bd))
+
+
+
+
+
 ## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@7.0.2...@pluralsight/ps-design-system-emptystate@7.0.3) (2019-12-13)
 
 
