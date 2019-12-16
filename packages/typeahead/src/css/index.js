@@ -49,9 +49,13 @@ export default {
       outline: 'none'
     }
   },
+  '.psds-typeahead__menu__item__label': {
+    flexGrow: 1,
+    marginRight: 'auto'
+  },
   '.psds-typeahead__menu__item__icon': {
     color: 'transparent',
-    marginRight: core.layout.spacingXSmall
+    marginLeft: core.layout.spacingXSmall
   },
   '.psds-typeahead__menu__item__icon--selected': {
     color: core.colors.blue

@@ -10,6 +10,7 @@ import stylesheet from '../css/index.js'
 const styles = {
   menu: () => css(stylesheet['.psds-typeahead__menu']),
   menuItem: () => css(stylesheet['.psds-typeahead__menu__item']),
+  menuItemLabel: () => css(stylesheet['.psds-typeahead__menu__item__label']),
   menuItemIcon: ({ selected }) =>
     compose(
       css(stylesheet['.psds-typeahead__menu__item__icon']),
@@ -59,9 +60,8 @@ SuggestionsMenu.propTypes = {
 function MenuItem({ children, selected, value, ...rest }) {
   return (
     <button {...rest} {...styles.menuItem()}>
+      <span {...styles.menuItemLabel()}>{children}</span>
       <CheckIcon {...styles.menuItemIcon({ selected })} />
-
-      {children}
     </button>
   )
 }
