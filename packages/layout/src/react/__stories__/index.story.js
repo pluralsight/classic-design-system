@@ -7,7 +7,12 @@ import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Link from '@pluralsight/ps-design-system-link'
 
-import { AsideLayout, EqualColumnLayout, PageHeadingLayout } from '../index.js'
+import {
+  AsideLayout,
+  EqualColumnLayout,
+  PageHeadingLayout,
+  PageWidthLayout
+} from '../index.js'
 
 const mockActions = [
   <Button key="action-1">Wow, an action</Button>,
@@ -34,6 +39,20 @@ const mockManyActions = [
     <a href="https://duckduckgo.com">A link</a>
   </Link>
 ]
+
+storiesOf('Layout / PageWidthLayout', module)
+  .add('default', _ => (
+    <PageWidthLayout style={{ color: 'white', outline: '1px solid red' }}>
+      My content
+    </PageWidthLayout>
+  ))
+  .add('full-bleed', _ => (
+    <div style={{ background: 'rebeccapurple' }}>
+      <PageWidthLayout style={{ color: 'white', outline: '1px solid red' }}>
+        My content
+      </PageWidthLayout>
+    </div>
+  ))
 
 storiesOf('Layout / PageHeadingLayout', module)
   .add('default', _ => (
