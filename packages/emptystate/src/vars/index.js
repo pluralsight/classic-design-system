@@ -1,5 +1,5 @@
 // NOTE: is there a better way to do this?
-import * as illustrations from '../react/illustrations'
+import * as illustrations from '../react/illustrations/index.js'
 
 export const illustrationNames = Object.keys(illustrations).reduce(
   (acc, id) => {

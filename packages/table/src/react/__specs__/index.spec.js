@@ -1,7 +1,7 @@
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
-import Table from '..'
+import Table from '../index.js'
 
 describe('columnHeader', () => {
   test('sorted=false onClick called with asc', () => {

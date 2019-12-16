@@ -6,7 +6,7 @@ import Icon, {
   CodeIcon,
   PathIcon
 } from '@pluralsight/ps-design-system-icon'
-import * as Icons from '@pluralsight/ps-design-system-icon/dist/cjs/react/icons'
+import * as Icons from '@pluralsight/ps-design-system-icon/dist/cjs/react/icons/index.js'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
