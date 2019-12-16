@@ -821,10 +821,11 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
 
 exports[`Storyshots Layout / PageWidthLayout default 1`] = `
 <div
-  data-css-eg0ypq=""
+  data-css-60rhmp=""
   style={
     Object {
       "color": "white",
+      "outline": "1px solid red",
     }
   }
 >
