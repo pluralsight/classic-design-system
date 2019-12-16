@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@7.0.2...@pluralsight/ps-design-system-emptystate@7.0.3) (2019-12-13)
+
+
+### Bug Fixes
+
+* **emptystate:** fix undefined caption css attributes ([15c5a47](https://github.com/pluralsight/design-system/commit/15c5a47a99865f22fdb3010ec010d097809055b1))
+
+
+
+
+
 ## [7.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@7.0.1...@pluralsight/ps-design-system-emptystate@7.0.2) (2019-12-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate
