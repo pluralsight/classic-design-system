@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-radio",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "description": "Design system components for radio buttons",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.3",
-    "@pluralsight/ps-design-system-icon": "^15.0.2",
+    "@pluralsight/ps-design-system-icon": "^15.1.0",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.2",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.2",
     "@pluralsight/ps-design-system-theme": "^4.0.1"

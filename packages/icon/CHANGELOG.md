@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.0.2...@pluralsight/ps-design-system-icon@15.1.0) (2019-12-17)
+
+
+### Features
+
+* **icon:** add article ([da561a2](https://github.com/pluralsight/design-system/commit/da561a21a2c002f712e2b966bbb5c59b98ff1b39))
+
+
+
+
+
 ## [15.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.0.1...@pluralsight/ps-design-system-icon@15.0.2) (2019-12-16)
 
 
