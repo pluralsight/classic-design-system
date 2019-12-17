@@ -76,6 +76,15 @@ export default _ => (
       <PropTypes
         props={[
           PropTypes.row([
+            'enableBleutrals',
+            'boolean',
+            null,
+            <code>false</code>,
+            <span>
+              assists in feature toggle for upcoming "bleutral" colors
+            </span>
+          ]),
+          PropTypes.row([
             'name',
             PropTypes.union(Theme.names),
             null,
