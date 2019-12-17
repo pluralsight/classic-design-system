@@ -19,34 +19,46 @@ export function withTheme(BaseComponent) {
   const name = getDisplayName(BaseComponent)
 
   const Forwarded = React.forwardRef((props, ref) => {
-    const themeName = useTheme()
-    return <BaseComponent {...props} ref={ref} themeName={themeName} />
+    const { enableBleutrals, ...rest } = props
+    const themeName = useTheme({ enableBleutrals })
+    return <BaseComponent {...rest} ref={ref} themeName={themeName} />
   })
   Forwarded.BaseComponent = BaseComponent
   Forwarded.displayName = `withTheme(${name})`
+  Forwarded.propTypes = {
+    enableBleutrals: PropTypes.bool
+  }
+  Forwarded.defaultProps = {
+    enableBleutrals: false
+  }
 
   return hoistNonReactStatics(Forwarded, BaseComponent)
 }
 
-export function useTheme() {
+export function useTheme(config) {
   const themeName = React.useContext(ThemeContext)
-  return themeName
+  const bleutralsAdjustedThemeName =
+    config && config.enableBleutrals ? themeName + 'Bleutrals' : themeName
+  return bleutralsAdjustedThemeName
 }
 
 // NOTE: anything that uses <Theme /> from context only (no withTheme), will be broken with this new impl
 // TODO: find this set of components ^ and update
 export default function Theme(props) {
+  const value = props.enableBleutrals ? props.name + 'Bleutrals' : props.name
   return (
-    <ThemeContext.Provider value={props.name}>
+    <ThemeContext.Provider value={value}>
       {props.children}
     </ThemeContext.Provider>
   )
 }
 Theme.propTypes = {
   children: PropTypes.any,
+  enableBleutrals: PropTypes.bool,
   name: PropTypes.oneOf(Object.keys(vars.names)).isRequired
 }
 Theme.defaultProps = {
+  enableBleutrals: false,
   name: vars.defaultName
 }
 

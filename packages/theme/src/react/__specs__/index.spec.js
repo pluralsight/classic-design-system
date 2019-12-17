@@ -59,6 +59,22 @@ describe('Theme', () => {
     expect(container).toHaveTextContent(Theme.names.light)
   })
 
+  it('allows changing the enableBleutrals', () => {
+    const { container, rerender } = render(
+      <Theme name={Theme.names.dark}>
+        <MockComponent />
+      </Theme>
+    )
+
+    rerender(
+      <Theme name={Theme.names.light} enableBleutrals>
+        <MockComponent />
+      </Theme>
+    )
+
+    expect(container).toHaveTextContent(Theme.names.light + 'Bleutrals')
+  })
+
   it('should allow nesting', () => {
     const { getByTestId } = render(
       <Theme name={Theme.names.light}>
@@ -79,6 +95,11 @@ describe('useTheme', () => {
   it('should return the themeName', () => {
     const { result } = renderHook(() => useTheme())
     expect(result.current).toEqual(defaultName)
+  })
+
+  it('should return the themeName with enableBleutrals config', () => {
+    const { result } = renderHook(() => useTheme({ enableBleutrals: true }))
+    expect(result.current).toEqual(defaultName + 'Bleutrals')
   })
 })
 
@@ -116,6 +137,16 @@ describe('withTheme', () => {
 
       expect(container).toHaveTextContent(Theme.names.light)
     })
+
+    it('adjusts themeName based on enableBleutrals', () => {
+      const { container } = render(
+        <Theme name={Theme.names.light} enableBleutrals>
+          <EnhancedComponent />
+        </Theme>
+      )
+
+      expect(container).toHaveTextContent(Theme.names.light + 'Bleutrals')
+    })
   })
 
   describe('when NOT wrapped in a ThemeProvider', () => {
@@ -123,6 +154,12 @@ describe('withTheme', () => {
       const { container } = render(<EnhancedComponent />)
 
       expect(container).toHaveTextContent(defaultName)
+    })
+
+    it('allows HoC withTheme component to enableBleutrals', () => {
+      const { container } = render(<EnhancedComponent enableBleutrals />)
+
+      expect(container).toHaveTextContent(defaultName + 'Bleutrals')
     })
   })
 })
