@@ -1,3 +1,1 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22 12V22H12C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" fill="white"/>
-</svg>
+<svg aria-label="iq icon" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 12v10H12C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10zm-10 5a5 5 0 100-10 5 5 0 000 10z"/></svg>

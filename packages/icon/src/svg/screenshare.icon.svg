@@ -1,3 +1,1 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2 18C2 18.5523 2.44772 19 3 19H5.17163L7.17163 17H4V7H20V17H16.8284L18.8284 19H21C21.5523 19 22 18.5523 22 18V6C22 5.44772 21.5523 5 21 5H3C2.44772 5 2 5.44772 2 6V18ZM12 15L6 21H18L12 15Z" fill="white"/>
-</svg>
+<svg aria-label="screenshare icon" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 18a1 1 0 001 1h2.172l2-2H4V7h16v10h-3.172l2 2H21a1 1 0 001-1V6a1 1 0 00-1-1H3a1 1 0 00-1 1v12zm10-3l-6 6h12l-6-6z"/></svg>
