@@ -400,6 +400,9 @@ const SideNav = withHeadings(props => (
       <NavLink href="/components/errors" headings={props.headings}>
         Errors
       </NavLink>
+      <NavLink href="/components/featureflags" headings={props.headings}>
+        Feature Flags
+      </NavLink>
       <NavLink href="/components/form" headings={props.headings}>
         Form
       </NavLink>
