@@ -42,6 +42,7 @@
     "@pluralsight/ps-design-system-dropdown": "^5.0.4",
     "@pluralsight/ps-design-system-emptystate": "^7.0.5",
     "@pluralsight/ps-design-system-errors": "^7.0.4",
+    "@pluralsight/ps-design-system-featureflags": "*",
     "@pluralsight/ps-design-system-form": "^4.0.9",
     "@pluralsight/ps-design-system-icon": "^15.1.0",
     "@pluralsight/ps-design-system-layout": "^5.1.1",
