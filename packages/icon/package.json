@@ -18,6 +18,7 @@
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
     "build:watch": "npm run build:js -- --watch",
+    "clean:svgs": "node bin/icon -s src/svg --clean",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",

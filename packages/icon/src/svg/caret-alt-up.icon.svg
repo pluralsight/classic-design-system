@@ -1,3 +1,1 @@
-<svg role="img" aria-label="caret up icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1661 10.1477C12.0714 10.0635 11.9287 10.0635 11.834 10.1477L7.99152 13.5633C7.8197 13.716 7.92773 14.0001 8.15761 14.0001H15.8425C16.0724 14.0001 16.1804 13.716 16.0086 13.5633L12.1661 10.1477Z" />
-</svg>
+<svg aria-label="caret alt up icon" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.166 10.148a.25.25 0 00-.332 0l-3.842 3.415a.25.25 0 00.166.437h7.684a.25.25 0 00.167-.437l-3.843-3.415z"/></svg>
