@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-typeahead",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Typeahead UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,11 +23,11 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.0.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.9",
-    "@pluralsight/ps-design-system-icon": "^15.1.0",
-    "@pluralsight/ps-design-system-position": "^2.0.6",
+    "@pluralsight/ps-design-system-icon": "^15.1.1",
+    "@pluralsight/ps-design-system-position": "^2.0.7",
     "@pluralsight/ps-design-system-prop-types": "^2.0.10",
-    "@pluralsight/ps-design-system-textinput": "^6.0.4",
-    "@pluralsight/ps-design-system-theme": "^4.0.1"
+    "@pluralsight/ps-design-system-textinput": "^6.0.5",
+    "@pluralsight/ps-design-system-theme": "^4.0.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.1.7",
@@ -38,6 +38,6 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.3",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.2"
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.3"
   }
 }
