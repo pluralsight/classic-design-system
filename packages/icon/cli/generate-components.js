@@ -48,6 +48,7 @@ const exportTemplate = filePaths =>
       filePath => `export { ${filePath.split('.')[0]} } from './${filePath}'`
     )
     .join('\n')
+    .concat('\n')
 
 exports.generateComponents = async ({ src, dest, ext = 'dist.js', core }) => {
   try {
