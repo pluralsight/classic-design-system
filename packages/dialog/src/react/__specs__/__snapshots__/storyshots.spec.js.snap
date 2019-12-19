@@ -59,7 +59,7 @@ exports[`Storyshots modal default 1`] = `
         role="region"
       >
         <div
-          data-css-t04v5a=""
+          data-css-192xfnn=""
           onKeyUp={[Function]}
         >
           <div>
@@ -218,7 +218,7 @@ exports[`Storyshots modal no click overlay 1`] = `
         role="region"
       >
         <div
-          data-css-t04v5a=""
+          data-css-192xfnn=""
           onKeyUp={[Function]}
         >
           <div>
@@ -377,7 +377,7 @@ exports[`Storyshots modal no close button 1`] = `
         role="region"
       >
         <div
-          data-css-t04v5a=""
+          data-css-192xfnn=""
           onKeyUp={[Function]}
         >
           <div>
@@ -520,7 +520,7 @@ exports[`Storyshots modal no escape key 1`] = `
         role="region"
       >
         <div
-          data-css-t04v5a=""
+          data-css-192xfnn=""
         >
           <div>
             <button
@@ -678,7 +678,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
         role="region"
       >
         <div
-          data-css-t04v5a=""
+          data-css-192xfnn=""
           onKeyUp={[Function]}
         >
           <div>
@@ -837,7 +837,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
         role="region"
       >
         <div
-          data-css-t04v5a=""
+          data-css-192xfnn=""
           onKeyUp={[Function]}
         >
           <div>
@@ -871,6 +871,433 @@ exports[`Storyshots modal no focusable child elements 1`] = `
 </div>
 `;
 
+exports[`Storyshots modal overflow-y 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div>
+      <p
+        data-css-145tgfu=""
+      >
+        Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
+        <a
+          href="#"
+        >
+          I love chocolate cake
+        </a>
+         wafer chupa chups.
+      </p>
+      <p
+        data-css-145tgfu=""
+      >
+        Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
+      </p>
+      <button
+        data-css-126c1n5=""
+        disabled={false}
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          close modal
+        </span>
+      </button>
+      <p
+        data-css-145tgfu=""
+      >
+        Sweet soufflé 
+        <a
+          href="#"
+        >
+          apple pie
+        </a>
+        . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
+      </p>
+      <div
+        aria-label="Storybook Modal"
+        data-css-19y8f6h=""
+        id="psds-dialog__overlay"
+        onClick={[Function]}
+        role="region"
+      >
+        <div
+          data-css-192xfnn=""
+          onKeyUp={[Function]}
+        >
+          <div>
+            <button
+              aria-label="Close dialog"
+              data-css-1gmw1mr=""
+              onClick={[Function]}
+            >
+              <svg
+                aria-label="close icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+                />
+              </svg>
+            </button>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+            <p
+              data-css-15w0yq1=""
+            >
+              <a
+                href="#"
+              >
+                Brownie bear claw
+              </a>
+               liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice.
+               
+              <a
+                href="#"
+              >
+                Tart donut
+              </a>
+               lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots onClose with onClose 1`] = `
 <div
   data-css-1so76ss=""
@@ -883,7 +1310,7 @@ exports[`Storyshots onClose with onClose 1`] = `
     }
   >
     <div
-      data-css-aun0k9=""
+      data-css-gnd6c=""
       onKeyUp={[Function]}
     >
       <div>
@@ -993,7 +1420,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
     }
   >
     <div
-      data-css-1csdgoc=""
+      data-css-wmucfn=""
     >
       <div>
         <h1
@@ -1086,7 +1513,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
     }
   >
     <div
-      data-css-basbhr=""
+      data-css-kvhto4=""
     >
       <div>
         <h1
@@ -1179,7 +1606,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
     }
   >
     <div
-      data-css-ti9y4k=""
+      data-css-1y967xl=""
     >
       <div>
         <h1
@@ -1272,7 +1699,7 @@ exports[`Storyshots tailPosition none 1`] = `
     }
   >
     <div
-      data-css-aun0k9=""
+      data-css-gnd6c=""
     >
       <div>
         <h1
@@ -1365,7 +1792,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
     }
   >
     <div
-      data-css-14e5t6a=""
+      data-css-g3vmsd=""
     >
       <div>
         <h1
@@ -1458,7 +1885,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
     }
   >
     <div
-      data-css-1u0aeys=""
+      data-css-s54oy9=""
     >
       <div>
         <h1
@@ -1551,7 +1978,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-1qagfjh=""
+      data-css-r7qi1n=""
     >
       <div>
         <h1
