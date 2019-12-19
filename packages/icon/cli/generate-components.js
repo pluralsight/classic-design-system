@@ -44,10 +44,12 @@ const dashToPascalCase = str => {
 const exportTemplate = filePaths =>
   [...filePaths]
     .sort((a, b) => a.localeCompare(b))
-    .map(filePath => `export {${filePath.split('.')[0]}} from './${filePath}'`)
+    .map(
+      filePath => `export { ${filePath.split('.')[0]} } from './${filePath}'`
+    )
     .join('\n')
 
-exports.buildSvgIcon = async ({ src, dest, ext = 'dist.js', core }) => {
+exports.generateComponents = async ({ src, dest, ext = 'dist.js', core }) => {
   try {
     await fs.mkdir(dest, { recursive: true })
     const files = await fg([`${src}/*.svg`])
