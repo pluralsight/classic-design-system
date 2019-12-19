@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-emptystate",
-  "version": "7.0.7",
+  "version": "7.0.8",
   "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

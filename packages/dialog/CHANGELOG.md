@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.9...@pluralsight/ps-design-system-dialog@7.0.10) (2019-12-19)
+
+
+### Bug Fixes
+
+* **dialog:** allow vert overflow/scroll ([68018f4](https://github.com/pluralsight/design-system/commit/68018f4db1935b333078d574a09b58240cd3e332))
+
+
+
+
+
 ## [7.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.8...@pluralsight/ps-design-system-dialog@7.0.9) (2019-12-19)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@7.0.7...@pluralsight/ps-design-system-emptystate@7.0.8) (2019-12-19)
+
+
+### Bug Fixes
+
+* **emptystate:** raw svgs should use currentColor ([dc50ea0](https://github.com/pluralsight/design-system/commit/dc50ea0178ed2e8dca0aa82949c568ed5786380c))
+
+
+
+
+
 ## [7.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@7.0.6...@pluralsight/ps-design-system-emptystate@7.0.7) (2019-12-19)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate
