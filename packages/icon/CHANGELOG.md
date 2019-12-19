@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.1.1...@pluralsight/ps-design-system-icon@16.0.0) (2019-12-19)
+
+
+### Bug Fixes
+
+* **icon:** adds new line to end of generated file ([f2a9434](https://github.com/pluralsight/design-system/commit/f2a9434b2608e4827bba3b58c13e57979476b862))
+
+
+### Features
+
+* **icon:** build updated and cleanup script added ([00abab0](https://github.com/pluralsight/design-system/commit/00abab08952740f6703e726d2c1195e5087f7c67))
+* **icon:** new icons added ([7fa971a](https://github.com/pluralsight/design-system/commit/7fa971aaabe7465d20c52de67cf0bb0beff02084))
+* **icon:** now exports svgs with package ([0f85860](https://github.com/pluralsight/design-system/commit/0f858606f22c8eca3041b86122fb7def16e9be5a))
+* **icon:** rename logout -> signout and trend-up -> arrow-up-right ([795dc3d](https://github.com/pluralsight/design-system/commit/795dc3df1b613bbdf0b499385082acff86bc9641))
+* **icon:** update old icons ([6016a2c](https://github.com/pluralsight/design-system/commit/6016a2c2ef7f0847adae4fc3fa65507e94c068bb))
+
+
+### BREAKING CHANGES
+
+* **icon:** Logout renamed Signout, TrendUp renamed ArrowUpRight
+
+
+
+
+
 ## [15.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.1.0...@pluralsight/ps-design-system-icon@15.1.1) (2019-12-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
