@@ -142,3 +142,21 @@ storiesOf('modal', module)
       )}
     </ModalStory>
   ))
+  .add('overflow-y', _ => (
+    <ModalStory>
+      {props => (
+        <MockDialog {...props}>
+          {Array.from(Array(20)).map((_, i) => (
+            <Text.P key={i}>
+              <a href="#">Brownie bear claw</a> liquorice dragée candy canes
+              pastry topping. Chocolate cake soufflé sweet roll jelly beans oat
+              cake donut. Wafer chocolate cake pastry chocolate bar fruitcake.
+              Cupcake jelly-o croissant lollipop liquorice.{' '}
+              <a href="#">Tart donut</a> lollipop dragée tootsie roll wafer
+              lemon drops cupcake chocolate bar.
+            </Text.P>
+          ))}
+        </MockDialog>
+      )}
+    </ModalStory>
+  ))
