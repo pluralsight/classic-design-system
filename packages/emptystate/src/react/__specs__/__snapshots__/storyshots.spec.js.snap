@@ -1088,8 +1088,8 @@ exports[`Storyshots EmptyState/illustrations/large document 1`] = `
         />
         <path
           d="M26 92.323v14.709h63.742V28.581L26 92.323zM76.5 100a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
-          fill="#C4C4C4"
-          opacity={0.2}
+          fill="currentColor"
+          opacity={0.1}
         />
       </g>
     </svg>
@@ -1654,8 +1654,8 @@ exports[`Storyshots EmptyState/illustrations/small document 1`] = `
         />
         <path
           d="M13 56.601v-7.426L45.175 17v39.601z"
-          fill="#C4C4C4"
-          opacity={0.2}
+          fill="currentColor"
+          opacity={0.1}
         />
       </g>
     </svg>
