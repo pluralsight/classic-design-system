@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { useCallback } from 'react'
+import React, { useCallback, useState, useEffect } from 'react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 // NOTE: see https://stackoverflow.com/a/3485654
@@ -63,12 +63,12 @@ const open = element => {
   })
 }
 
-const close = element => {
+const close = (element, mounted) => {
   setTransitionEnabled(false, element)
   element.style.height = window.getComputedStyle(element).height
   forceRepaint(element)
   updateOverflowStyle({ element, isOpen: false, isTransitioning: true })
-  setTransitionEnabled(true, element)
+  mounted && setTransitionEnabled(true, element)
   element.style.height = '0px'
 
   waitForHeightTransitionToEnd(element).then(() => {
@@ -78,12 +78,17 @@ const close = element => {
 }
 
 const Collapsible = ({ isOpen, tagName, ...rest }) => {
+  const [mounted, setMount] = useState(false)
   const containerRef = useCallback(
     node => {
-      if (node) isOpen ? open(node) : close(node)
+      if (node) isOpen ? open(node) : close(node, mounted)
     },
-    [isOpen]
+    [isOpen, mounted]
   )
+  useEffect(() => {
+    setMount(true)
+  }, [])
+  
 
   const TagName = tagName
   return (
