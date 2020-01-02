@@ -4,7 +4,7 @@ import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-
+import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
@@ -22,7 +22,8 @@ const styles = {
     iconOnly,
     loading,
     size,
-    themeName
+    themeName,
+    psds2020Colors,
   }) =>
     css(
       stylesheet['.psds-button'],
@@ -31,6 +32,7 @@ const styles = {
       stylesheet[
         `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
       ],
+      psds2020Colors && stylesheet['.psds-button--psds2020Colors'],
       disabled && {
         ...stylesheet[`.psds-button--disabled`],
         ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
@@ -107,6 +109,7 @@ renderIcon.propTypes = {
 
 const Button = React.forwardRef((props, ref) => {
   const themeName = useTheme()
+  const {flags: { psds2020Colors }} = useFeatureFlags()
   if (!ref) ref = React.useRef()
   const nonLoadingWidth = React.useMemo(() => {
     if (props.loading && ref && ref.current) {
@@ -120,7 +123,8 @@ const Button = React.forwardRef((props, ref) => {
     ...props,
     isLoadingWithNoText,
     iconOnly: React.Children.count(props.children) <= 0,
-    themeName
+    themeName,
+    psds2020Colors,
   }
 
   const isDisabledLink = allProps.disabled && allProps.href

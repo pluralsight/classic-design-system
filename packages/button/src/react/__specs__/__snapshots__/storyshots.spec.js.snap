@@ -239,6 +239,20 @@ exports[`Storyshots Button / disabled with icon 1`] = `
 </button>
 `;
 
+exports[`Storyshots Button / featureFlags nested 1`] = `
+<button
+  data-css-126c1n5=""
+  disabled={false}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    test
+  </span>
+</button>
+`;
+
 exports[`Storyshots Button / icon flat 1`] = `
 <button
   data-css-1doxelo=""

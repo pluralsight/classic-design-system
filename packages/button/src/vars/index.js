@@ -13,3 +13,5 @@ export const sizes = {
   medium: 'medium',
   large: 'large'
 }
+
+export const psds2020Colors = 'psds2020Colors'

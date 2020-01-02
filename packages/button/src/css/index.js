@@ -50,7 +50,14 @@ export default {
       }
     }
   },
-
+  '.psds-button--psds2020Colors': {
+    color: core.colorsTextIcon.highOnDark,
+    background: core.blue.base,
+    '&:not([disabled]):hover': {
+      background: core.blue[5],
+      cursor: 'pointer'
+    }
+  },
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
     fontSize: core.type.fontSizeXSmall,
     padding: `0 ${core.layout.spacingXSmall}`,
@@ -182,7 +189,6 @@ export default {
   [`.psds-button--iconOnly.psds-button--size-${vars.sizes.large}`]: {
     width: '48px'
   },
-
   [`.psds-button__icon`]: {
     display: 'flex',
     alignItems: 'center',
