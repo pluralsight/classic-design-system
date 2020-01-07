@@ -5,6 +5,7 @@ import { addDecorator, configure } from '@storybook/react'
 import * as glamor from 'glamor'
 import React from 'react'
 
+import chaosDecorator from '@pluralsight/ps-design-system-storybook-addon-chaos'
 import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
 
 const StoryWrapper = props => (
@@ -21,6 +22,7 @@ const StoryWrapper = props => (
 
 addDecorator(storyFn => <StoryWrapper>{storyFn()}</StoryWrapper>)
 addDecorator(themeDecorator)
+addDecorator(chaosDecorator)
 
 const req = requireContext('../src', true, /\.story\.js$/)
 

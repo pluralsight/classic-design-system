@@ -171,9 +171,7 @@ storiesOf('Code', module)
       clear head.
     </P>
   ))
-  .add('maintains whitespace', () => (
-    <Code>                in the middle                </Code>
-  ))
+  .add('maintains whitespace', () => <Code> in the middle </Code>)
   .add('line wrap', () => (
     <P>
       text at the start

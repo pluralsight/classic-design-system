@@ -88,7 +88,6 @@ const Collapsible = ({ isOpen, tagName, ...rest }) => {
   useEffect(() => {
     setMount(true)
   }, [])
-  
 
   const TagName = tagName
   return (
