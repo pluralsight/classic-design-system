@@ -4,7 +4,7 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export const sizeClasses = {
   [vars.sizes.small]: '.psds-emptystate--size-small',

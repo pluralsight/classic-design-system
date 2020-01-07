@@ -5,7 +5,7 @@ import React from 'react'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import Row from '..'
+import Row from '../index.js'
 
 const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
   `//picsum.photos/${w}/${h}?image=${id}&gravity=north`

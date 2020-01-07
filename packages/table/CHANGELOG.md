@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.5...@pluralsight/ps-design-system-table@7.1.6) (2019-12-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.4...@pluralsight/ps-design-system-table@7.1.5) (2019-12-19)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.3...@pluralsight/ps-design-system-table@7.1.4) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.2...@pluralsight/ps-design-system-table@7.1.3) (2019-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.1...@pluralsight/ps-design-system-table@7.1.2) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+* missing js extensition eslint warnings ([bebf5d7](https://github.com/pluralsight/design-system/commit/bebf5d718290eb9e3a3cdf0e64ee5f1849226c89))
+
+
+
+
+
 ## [7.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.0...@pluralsight/ps-design-system-table@7.1.1) (2019-12-06)
 
 

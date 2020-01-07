@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.9...@pluralsight/ps-design-system-dialog@7.0.10) (2019-12-19)
+
+
+### Bug Fixes
+
+* **dialog:** allow vert overflow/scroll ([68018f4](https://github.com/pluralsight/design-system/commit/68018f4db1935b333078d574a09b58240cd3e332))
+
+
+
+
+
+## [7.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.8...@pluralsight/ps-design-system-dialog@7.0.9) (2019-12-19)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [7.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.7...@pluralsight/ps-design-system-dialog@7.0.8) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [7.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.6...@pluralsight/ps-design-system-dialog@7.0.7) (2019-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [7.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.5...@pluralsight/ps-design-system-dialog@7.0.6) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+
+
+
 ## [7.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.4...@pluralsight/ps-design-system-dialog@7.0.5) (2019-12-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

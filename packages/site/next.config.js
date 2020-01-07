@@ -35,6 +35,7 @@ module.exports = {
       '/components/dropdown': { page: '/components/dropdown' },
       '/components/emptystate': { page: '/components/emptystate' },
       '/components/errors': { page: '/components/errors' },
+      '/components/featureflags': { page: '/components/featureflags' },
       '/components/form': { page: '/components/form' },
       '/components/icon': { page: '/components/icon' },
       '/components/layout': { page: '/components/layout' },

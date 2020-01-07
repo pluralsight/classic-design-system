@@ -14,7 +14,7 @@ const openAction = action('open')
 
 function MockDialog(props) {
   const children = props.children || (
-    <React.Fragment>
+    <>
       <Text.Heading>
         <h1>Wowzers, a Dialog</h1>
       </Text.Heading>
@@ -38,7 +38,7 @@ function MockDialog(props) {
         <span style={{ marginLeft: 10 }} />
         <Button>Primary CTA</Button>
       </div>
-    </React.Fragment>
+    </>
   )
 
   return <Dialog {...props}>{children}</Dialog>
@@ -138,6 +138,24 @@ storiesOf('modal', module)
           <Text.Heading>
             <h1>Wowzers, a Dialog</h1>
           </Text.Heading>
+        </MockDialog>
+      )}
+    </ModalStory>
+  ))
+  .add('overflow-y', _ => (
+    <ModalStory>
+      {props => (
+        <MockDialog {...props}>
+          {Array.from(Array(20)).map((_, i) => (
+            <Text.P key={i}>
+              <a href="#">Brownie bear claw</a> liquorice dragée candy canes
+              pastry topping. Chocolate cake soufflé sweet roll jelly beans oat
+              cake donut. Wafer chocolate cake pastry chocolate bar fruitcake.
+              Cupcake jelly-o croissant lollipop liquorice.{' '}
+              <a href="#">Tart donut</a> lollipop dragée tootsie roll wafer
+              lemon drops cupcake chocolate bar.
+            </Text.P>
+          ))}
         </MockDialog>
       )}
     </ModalStory>

@@ -17,7 +17,7 @@ jobs:
         - npm install @commitlint/travis-cli
         - commitlint-travis
     - name: Lint Files
-      script: npm run lint:no-fail
+      script: npm run lint
     - stage: test
       name: Unit Test
       script:

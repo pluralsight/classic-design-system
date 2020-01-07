@@ -170,6 +170,7 @@ class Task extends React.Component {
       <a
         href={href}
         target="_blank"
+        rel="noreferrer noopener"
         className="task"
         onMouseOver={this.handleMouseOver}
         onMouseOut={this.handleMouseOut}

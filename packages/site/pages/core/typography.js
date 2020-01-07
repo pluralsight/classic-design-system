@@ -25,9 +25,13 @@ const FontFamily = props => (
       Apply the font family to the entire page. The recommended method is to
       include the normalize stylesheet. First install:
     </P>
-    <Code language="bash">{`npm install @pluralsight/ps-design-system-normalize`}</Code>
+    <Code language="bash">
+      npm install @pluralsight/ps-design-system-normalize
+    </Code>
     <P>Then include it in your global stylesheet:</P>
-    <Code language="css">{`@import "@pluralsight/ps-design-system-normalize";`}</Code>
+    <Code language="css">
+      @import "@pluralsight/ps-design-system-normalize";
+    </Code>
     <style jsx>{`
       .family {
         background: ${core.colors.bone};
@@ -300,11 +304,11 @@ const LineHeight = _ => (
 const MonospaceFont = _ => (
   <div>
     <div className="box glyphs">
-      <div>{`A B C D E F G H I J K L M N O P Q R S T U V W X Y Z`}</div>
-      <div>{`a b c d e f g h i j k l m n o p q r s t u v w x y z`}</div>
-      <div>{`0 1 2 3 4 5 6 7 8 9`}</div>
+      <div>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+      <div>a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+      <div>0 1 2 3 4 5 6 7 8 9</div>
       <div>{`‘ ? ’ “ ! ” ( % ) [ # ] { @ } / & \ < - + ÷ × = >`}</div>
-      <div>{`® © $ € £ ¥ ¢ : ; , . *`}</div>
+      <div>® © $ € £ ¥ ¢ : ; , . *</div>
     </div>
     <P>
       To use the Source Code Pro on your site, you can install it by importing
@@ -315,7 +319,8 @@ const MonospaceFont = _ => (
       .
     </P>
     <Code language="css">
-      {`@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);`}
+      @import
+      url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);
     </Code>
     <P>Only one Source Code Pro font weight is available for use.</P>
     <div className="box fontWeight">

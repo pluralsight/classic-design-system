@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.3...@pluralsight/ps-design-system-collapsible@2.0.4) (2019-12-31)
+
+
+### Bug Fixes
+
+* **collapsible:** fixes animation on mount ([614b5f1](https://github.com/pluralsight/design-system/commit/614b5f1e891e70e76fcae3ab8337e382a9d548c5))
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.2...@pluralsight/ps-design-system-collapsible@2.0.3) (2019-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-collapsible
+
+
+
+
+
 ## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.1...@pluralsight/ps-design-system-collapsible@2.0.2) (2019-12-05)
 
 

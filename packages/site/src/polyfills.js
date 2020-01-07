@@ -1,1 +1,1 @@
-import 'core-js/es'
+import 'core-js/es/index.js'

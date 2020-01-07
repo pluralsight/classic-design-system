@@ -26,6 +26,7 @@ export default {
     fontWeight: core.type.fontWeightMedium,
     lineHeight: core.type.lineHeightTight,
     opacity: 0,
+    overflowY: 'auto',
     padding: core.layout.spacingLarge,
     position: 'relative',
     transform: `translateY(${core.layout.spacingXSmall})`

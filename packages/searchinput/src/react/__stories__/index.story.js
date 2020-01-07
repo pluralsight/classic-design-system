@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import SearchInput from '../index'
+import SearchInput from '../index.js'
 
 const noop = () => {}
 

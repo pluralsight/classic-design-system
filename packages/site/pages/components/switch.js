@@ -20,9 +20,11 @@ class InAppExample extends React.Component {
     this.state = { isChecked: true }
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick(isChecked) {
     this.setState({ isChecked })
   }
+
   render() {
     return (
       <div className="root">

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { css } from 'glamor'
 
 const styles = {
@@ -16,9 +17,13 @@ const styles = {
   })
 }
 
-const Center = props => (
-  <div {...styles.outer}>{props.children}</div>
-)
+const Center = props => <div {...styles.outer}>{props.children}</div>
+Center.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ])
+}
 
 const centerDecorator = storyFn => <Center>{storyFn()}</Center>
 

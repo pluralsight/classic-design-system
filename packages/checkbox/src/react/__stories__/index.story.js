@@ -37,7 +37,7 @@ storiesOf('Checkbox', module)
       const [values, updateValues] = React.useState([])
 
       function handleCheck(evt, checked, value, name) {
-        let nextValues = { ...values }
+        const nextValues = { ...values }
 
         if (checked) nextValues[name] = value
         else delete nextValues[name]

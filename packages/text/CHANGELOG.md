@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.5...@pluralsight/ps-design-system-text@14.0.6) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [14.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.4...@pluralsight/ps-design-system-text@14.0.5) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+
+
+
 ## [14.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.3...@pluralsight/ps-design-system-text@14.0.4) (2019-12-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-text

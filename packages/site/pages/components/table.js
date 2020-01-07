@@ -73,9 +73,11 @@ class InAppExample extends React.Component {
     this.handleSortClick = this.handleSortClick.bind(this)
     this.sortRows = this.sortRows.bind(this)
   }
+
   handleSortClick(sortKey, sortDirection) {
     this.setState({ sortKey, sortDirection })
   }
+
   sortRows(row1, row2) {
     const { state } = this
     const [rowA, rowB] =
@@ -84,6 +86,7 @@ class InAppExample extends React.Component {
       ? rowA[state.sortKey].localeCompare(rowB[state.sortKey])
       : rowA[state.sortKey] - rowB[state.sortKey]
   }
+
   render() {
     const { handleSortClick, props, sortRows, state } = this
     return (

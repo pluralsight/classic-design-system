@@ -20,6 +20,7 @@ class InAppExample extends React.Component {
     this.state = { values: {} }
     this.handleCheck = this.handleCheck.bind(this)
   }
+
   handleCheck(evt, checked, value, name) {
     if (checked) {
       this.setState({ values: { ...this.state.values, [name]: value } })
@@ -28,6 +29,7 @@ class InAppExample extends React.Component {
       this.setState({ values })
     }
   }
+
   render() {
     const features = Object.keys(this.state.values)
     const checked = name => features.indexOf(name) > -1

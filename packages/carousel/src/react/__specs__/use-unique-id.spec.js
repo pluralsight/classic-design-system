@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks'
 
-import useUniqueId from '../use-unique-id'
+import useUniqueId from '../use-unique-id.js'
 
 jest.mock('../../js/utils.js', () => ({
   uniqueId: jest.fn().mockImplementation(prefix => prefix + '12345')

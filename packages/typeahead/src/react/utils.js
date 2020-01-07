@@ -31,7 +31,7 @@ export function pick(obj, props = []) {
   if (!isPlainObject(obj)) throw new TypeError('#pick input must be an object')
 
   return props.reduce((acc, key) => {
-    if (obj.hasOwnProperty(key)) acc[key] = obj[key]
+    if (Object.prototype.hasOwnProperty.call(obj, key)) acc[key] = obj[key]
     return acc
   }, {})
 }

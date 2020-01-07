@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-prop-types@2.0.9...@pluralsight/ps-design-system-prop-types@2.0.10) (2019-12-16)
+
+
+### Bug Fixes
+
+* missing js extensition eslint warnings ([bebf5d7](https://github.com/pluralsight/design-system/commit/bebf5d718290eb9e3a3cdf0e64ee5f1849226c89))
+
+
+
+
+
 ## [2.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-prop-types@2.0.8...@pluralsight/ps-design-system-prop-types@2.0.9) (2019-11-06)
 
 

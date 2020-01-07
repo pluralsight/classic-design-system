@@ -21,7 +21,6 @@
     "generate": "plop",
     "generate:component": "plop component",
     "lint": "eslint .",
-    "lint:no-fail": "eslint .; exit 0",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "publish": "lerna publish --conventional-commits --message \"build: publish\"",

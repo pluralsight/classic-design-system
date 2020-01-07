@@ -454,6 +454,7 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -507,6 +508,7 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -560,6 +562,7 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -638,6 +641,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -658,6 +662,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -691,6 +696,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -711,6 +717,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -744,6 +751,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -764,6 +772,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -797,7 +806,7 @@ exports[`Storyshots columnHeader sort asc 1`] = `
         data-css-otejxm=""
       >
         <svg
-          aria-label="sort ascending icon"
+          aria-label="sort asc icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -832,7 +841,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
         data-css-otejxm=""
       >
         <svg
-          aria-label="sort ascending icon"
+          aria-label="sort asc icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -854,6 +863,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -894,6 +904,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -928,6 +939,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -949,6 +961,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -982,7 +995,7 @@ exports[`Storyshots columnHeader sort desc 1`] = `
         data-css-otejxm=""
       >
         <svg
-          aria-label="sort descending icon"
+          aria-label="sort desc icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -1017,7 +1030,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
         data-css-otejxm=""
       >
         <svg
-          aria-label="sort descending icon"
+          aria-label="sort desc icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -1039,6 +1052,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -1099,6 +1113,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -1119,6 +1134,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -1221,6 +1237,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -1241,6 +1258,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
         data-css-otejxm=""
       >
         <svg
+          aria-label="sort icon"
           role="img"
           viewBox="0 0 24 24"
         >

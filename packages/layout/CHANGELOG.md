@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@5.1.2...@pluralsight/ps-design-system-layout@5.1.3) (2019-12-19)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [5.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@5.1.1...@pluralsight/ps-design-system-layout@5.1.2) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+## [5.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@5.1.0...@pluralsight/ps-design-system-layout@5.1.1) (2019-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@5.0.6...@pluralsight/ps-design-system-layout@5.1.0) (2019-12-16)
+
+
+### Features
+
+* **layout:** add PageWidthLayout component ([1e6d3ea](https://github.com/pluralsight/design-system/commit/1e6d3eaa84c8b63a532231029a51fe95f6c95673))
+
+
+
+
+
 ## [5.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@5.0.5...@pluralsight/ps-design-system-layout@5.0.6) (2019-12-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-layout

@@ -23,10 +23,10 @@ const PropTypesRow = props => (
     <Table.Cell>
       <code className="nameCode">{props.row.name}</code>
       {props.row.required ? (
-        <React.Fragment>
+        <>
           <BadgeSpacer />
           <Badge appearance={Badge.appearances.subtle}>Required</Badge>
-        </React.Fragment>
+        </>
       ) : (
         ''
       )}

@@ -1,7 +1,7 @@
 import reactHTMLAttributes from 'react-html-attributes'
 
-import REACT_PROPS from '../react-props'
-import filterReactProps from '..'
+import REACT_PROPS from '../react-props.js'
+import filterReactProps from '../index.js'
 
 describe('filterReactProps', () => {
   it('should filter out an unknown prop', () => {

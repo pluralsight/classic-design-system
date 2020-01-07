@@ -1,4 +1,4 @@
-import PropTypeError from '../prop-type-error'
+import PropTypeError from '../prop-type-error.js'
 
 export function createChainableTypeChecker(validate) {
   function checkType(

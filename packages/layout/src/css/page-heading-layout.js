@@ -1,8 +1,8 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { layout } from '@pluralsight/ps-design-system-core'
 
 export default {
   '.psds-page-heading-layout': {
-    padding: core.layout.spacingLarge
+    padding: layout.spacingLarge
   },
   '.psds-page-heading-layout__actions': {
     display: 'flex',
@@ -11,8 +11,8 @@ export default {
     flexWrap: 'wrap',
 
     '& > *': {
-      marginRight: core.layout.spacingSmall,
-      marginBottom: core.layout.spacingMedium
+      marginRight: layout.spacingSmall,
+      marginBottom: layout.spacingMedium
     }
   },
   '@media (min-width: 769px)': {
@@ -22,7 +22,7 @@ export default {
     },
     '.psds-page-heading-layout__actions': {
       marginLeft: 'auto',
-      paddingLeft: core.layout.spacingLarge,
+      paddingLeft: layout.spacingLarge,
       justifyContent: 'flex-end',
       alignItems: 'center',
       flexWrap: 'nowrap',
@@ -32,7 +32,7 @@ export default {
         marginBottom: 0
       },
       '& > * + *': {
-        marginLeft: core.layout.spacingSmall
+        marginLeft: layout.spacingSmall
       }
     }
   }
