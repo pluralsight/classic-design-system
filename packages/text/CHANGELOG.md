@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.6...@pluralsight/ps-design-system-text@14.0.7) (2020-01-08)
+
+
+### Bug Fixes
+
+* **text:** snapshot whitespace ([a113c70](https://github.com/pluralsight/design-system/commit/a113c70e3db15435edead887102b7d66af691785))
+
+
+
+
+
 ## [14.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.5...@pluralsight/ps-design-system-text@14.0.6) (2019-12-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-text
