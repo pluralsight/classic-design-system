@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dropdown",
-  "version": "5.0.6",
+  "version": "5.0.9",
   "description": "Design system components for dropdown",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -19,8 +19,9 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
+  "gitHead": "ea4595a4bff6a08255102a0321bb641dc4d25913",
   "dependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^9.0.4",
+    "@pluralsight/ps-design-system-actionmenu": "^9.0.7",
     "@pluralsight/ps-design-system-core": "^5.0.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.9",
     "@pluralsight/ps-design-system-halo": "^6.0.4",
