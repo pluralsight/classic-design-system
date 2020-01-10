@@ -1,21 +1,32 @@
 import { css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { appearances } from '../vars/index.js'
+
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
 
-const style = props =>
-  css(
-    {
-      ':hover': stylesheet['.psds-link:hover']
-    },
-    stylesheet[`.psds-link--appearance-${props.appearance}`]
+const style = ({ psds2020Colors, appearance, themeName }) => {
+  const flag = psds2020Colors ? '.psds-button--psds2020Colors' : ''
+  return css(
+    stylesheet[`.psds-link${flag}`],
+    appearance === appearances.default
+      ? stylesheet[
+          `.psds-link--appearance-${appearance}.psds-theme--${themeName}${flag}`
+        ]
+      : stylesheet[`.psds-link--appearance-${appearance}`]
   )
+}
 
 const Link = React.forwardRef((props, forwardedRef) => {
   const ref = forwardedRef || React.useRef()
+  const {
+    flags: { psds2020Colors }
+  } = useFeatureFlags()
+  const themeName = useTheme()
 
   let tagName = 'a'
   React.useEffect(_ => {
@@ -24,21 +35,21 @@ const Link = React.forwardRef((props, forwardedRef) => {
 
   const { children, ...rest } = props
   return React.cloneElement(React.Children.only(props.children), {
-    ...style(props),
+    ...style({ ...props, psds2020Colors, themeName }),
     ...filterReactProps(rest, { tagName })
   })
 })
 
-Link.appearances = vars.appearances
+Link.appearances = appearances
 
 Link.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
+  appearance: PropTypes.oneOf(Object.keys(appearances)),
   children: PropTypes.element.isRequired
 }
 Link.defaultProps = {
-  appearance: vars.appearances.default
+  appearance: appearances.default
 }
 
-export const appearances = vars.appearances
+export { appearances }
 
 export default Link
