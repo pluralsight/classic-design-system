@@ -3,20 +3,26 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 
 import stylesheet from '../css/index.js'
 
-const style = ({ themeName }) =>
-  compose(
+const style = ({ themeName, psds2020Colors }) => {
+  const flag = psds2020Colors ? '.psds-button--psds2020Colors' : ''
+  return compose(
     css(stylesheet[`.psds-text__p`]),
-    css(stylesheet[`.psds-text__p.psds-theme--${themeName}`])
+    css(stylesheet[`.psds-text__p.psds-theme--${themeName}${flag}`])
   )
+}
 
-const P = (props, context) => {
+const P = props => {
   const themeName = useTheme()
+  const {
+    flags: { psds2020Colors }
+  } = useFeatureFlags()
 
   return (
-    <p {...props} {...style({ ...props, themeName })}>
+    <p {...props} {...style({ ...props, themeName, psds2020Colors })}>
       {props.children}
     </p>
   )
