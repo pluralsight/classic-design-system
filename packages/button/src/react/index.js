@@ -23,16 +23,17 @@ const styles = {
     loading,
     size,
     themeName,
-    psds2020Colors,
-  }) =>
-    css(
+    psds2020Colors
+  }) => {
+    const flag = psds2020Colors ? '.psds-button--psds2020Colors' : ''
+    return css(
       stylesheet['.psds-button'],
       stylesheet[`.psds-button--size-${size}`],
-      stylesheet[`.psds-button--appearance-${appearance}`],
+      stylesheet[`.psds-button--appearance-${appearance}${flag}`],
       stylesheet[
-        `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
+        `.psds-button--appearance-${appearance}.psds-theme--${themeName}${flag}`
       ],
-      psds2020Colors && stylesheet['.psds-button--psds2020Colors'],
+
       disabled && {
         ...stylesheet[`.psds-button--disabled`],
         ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
@@ -56,7 +57,8 @@ const styles = {
         ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
       },
       cssProp
-    ),
+    )
+  },
   loading: ({ appearance, themeName }) =>
     css(
       stylesheet[`.psds-button__loading`]({ spin }),
@@ -109,7 +111,9 @@ renderIcon.propTypes = {
 
 const Button = React.forwardRef((props, ref) => {
   const themeName = useTheme()
-  const {flags: { psds2020Colors }} = useFeatureFlags()
+  const {
+    flags: { psds2020Colors }
+  } = useFeatureFlags()
   if (!ref) ref = React.useRef()
   const nonLoadingWidth = React.useMemo(() => {
     if (props.loading && ref && ref.current) {
@@ -124,7 +128,7 @@ const Button = React.forwardRef((props, ref) => {
     isLoadingWithNoText,
     iconOnly: React.Children.count(props.children) <= 0,
     themeName,
-    psds2020Colors,
+    psds2020Colors
   }
 
   const isDisabledLink = allProps.disabled && allProps.href
