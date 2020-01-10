@@ -141,8 +141,8 @@ export const colorsGradient = {
 
 export const colorsPrimaryAction = {
   background: blue.base,
-  textDarkTheme: '#0096D6',
-  textLightTheme: '#0072A3'
+  textDarkTheme: blue[5],
+  textLightTheme: blue[7]
 }
 
 export const colorsSecondaryAction = {
