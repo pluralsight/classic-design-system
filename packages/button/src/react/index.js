@@ -24,15 +24,15 @@ const styles = {
     size,
     themeName,
     psds2020Colors
-  }) =>
-    css(
+  }) => {
+    const flag = psds2020Colors ? '.psds-button--2020-colors' : ''
+    return css(
       stylesheet['.psds-button'],
       stylesheet[`.psds-button--size-${size}`],
-      stylesheet[`.psds-button--appearance-${appearance}`],
+      stylesheet[`.psds-button--appearance-${appearance}${flag}`],
       stylesheet[
-        `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
+        `.psds-button--appearance-${appearance}.psds-theme--${themeName}${flag}`
       ],
-      psds2020Colors && stylesheet['.psds-button--2020-colors'],
       disabled && {
         ...stylesheet[`.psds-button--disabled`],
         ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
@@ -56,7 +56,8 @@ const styles = {
         ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
       },
       cssProp
-    ),
+    )
+  },
   loading: ({ appearance, themeName }) =>
     css(
       stylesheet[`.psds-button__loading`]({ spin }),
