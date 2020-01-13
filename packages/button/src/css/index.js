@@ -195,7 +195,7 @@ export default {
   },
   [`.psds-button--disabled.psds-button--psds2020Colors`]: {
     opacity: '50%',
-    cursor: 'default',
+    cursor: 'not-allowed',
     '&:not([disabled]):hover': {
       color: 'inherit',
       background: 'inherit',
