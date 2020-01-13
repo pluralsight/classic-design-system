@@ -1,11 +1,12 @@
 import { compose, css } from 'glamor'
 
-import React from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
 import stylesheet from '../css/index.js'
+import { combineFns } from './utils.js'
 
 const styles = {
   menu: () => css(stylesheet['.psds-typeahead__menu']),
@@ -21,10 +22,72 @@ const styles = {
 const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
   const { activeValue, onChange, suggestions, ...rest } = props
 
-  const items = React.useMemo(() => {
-    if (suggestions.length <= 0) {
-      return <MenuItem disabled>no results found</MenuItem>
-    }
+  const ref = useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
+
+  const [cursor, setCursor] = useState()
+  const itemCount = useMemo(() => suggestions.length, [suggestions])
+
+  const resetCursor = () => setCursor(undefined)
+
+  const first = () => setCursor(0)
+  const last = () => setCursor(itemCount - 1)
+
+  const next = () => {
+    const nextCursor = (cursor || 0) + 1
+    if (nextCursor > itemCount - 1) return
+    setCursor(nextCursor)
+  }
+  const prev = () => {
+    const nextCursor = (cursor || 0) - 1
+    if (nextCursor < 0) return
+    setCursor(nextCursor)
+  }
+
+  useEffect(() => {
+    resetCursor()
+  }, [itemCount])
+
+  const selectItemNodes = () => {
+    if (!ref.current) return []
+
+    const nodeList = ref.current.querySelectorAll('button')
+    return Array.from(nodeList)
+  }
+
+  React.useEffect(() => {
+    if (!ref.current || typeof cursor !== 'number') return
+    if (cursor < 0 || cursor > itemCount) return
+
+    const nodes = selectItemNodes()
+    const node = nodes[cursor]
+
+    if (node) node.focus()
+  }, [cursor, itemCount])
+
+  const handleFocus = combineFns(evt => {
+    if (!ref.current) return
+
+    const nodes = selectItemNodes()
+    const nextCursor = nodes.findIndex(n => n === evt.target)
+
+    setCursor(nextCursor)
+  }, props.onFocus)
+
+  const handleKeyDown = combineFns(evt => {
+    const tab = evt.key === 'Tab'
+    if (tab) return
+
+    if (evt.key === 'ArrowDown') next()
+    else if (evt.key === 'ArrowUp') prev()
+    else if (evt.key === 'Home') first()
+    else if (evt.key === 'End') last()
+
+    evt.preventDefault()
+  }, props.onKeyDown)
+
+  const items = useMemo(() => {
+    if (itemCount <= 0) return <MenuItem disabled>no results found</MenuItem>
 
     return suggestions.map(sug => (
       <MenuItem
@@ -36,10 +99,17 @@ const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
         {sug.label}
       </MenuItem>
     ))
-  }, [activeValue, onChange, suggestions])
+  }, [activeValue, itemCount, onChange, suggestions])
 
   return (
-    <div ref={forwardedRef} role="menu" {...rest} {...styles.menu()}>
+    <div
+      ref={ref}
+      role="menu"
+      {...styles.menu()}
+      {...rest}
+      onFocus={handleFocus}
+      onKeyDown={handleKeyDown}
+    >
       {items}
     </div>
   )
@@ -48,6 +118,8 @@ const SuggestionsMenu = React.forwardRef((props, forwardedRef) => {
 SuggestionsMenu.propTypes = {
   activeValue: PropTypes.string.isRequired,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
+  onKeyDown: PropTypes.func,
   suggestions: PropTypes.arrayOf(
     PropTypes.shape({
       index: PropTypes.number.isRequired,

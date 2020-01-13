@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@3.1.3...@pluralsight/ps-design-system-typeahead@3.2.0) (2020-01-08)
+
+
+### Features
+
+* **typeahead:** keyboard list support ([ce2e26d](https://github.com/pluralsight/design-system/commit/ce2e26d0dd96fac51f7b676c955bfbfdf8cd24de))
+
+
+
+
+
 ## [3.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@3.1.2...@pluralsight/ps-design-system-typeahead@3.1.3) (2019-12-19)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead

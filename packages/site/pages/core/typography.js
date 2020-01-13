@@ -25,9 +25,13 @@ const FontFamily = props => (
       Apply the font family to the entire page. The recommended method is to
       include the normalize stylesheet. First install:
     </P>
-    <Code language="bash">npm install @pluralsight/ps-design-system-normalize</Code>
+    <Code language="bash">
+      npm install @pluralsight/ps-design-system-normalize
+    </Code>
     <P>Then include it in your global stylesheet:</P>
-    <Code language="css">@import "@pluralsight/ps-design-system-normalize";</Code>
+    <Code language="css">
+      @import "@pluralsight/ps-design-system-normalize";
+    </Code>
     <style jsx>{`
       .family {
         background: ${core.colors.bone};
@@ -315,7 +319,8 @@ const MonospaceFont = _ => (
       .
     </P>
     <Code language="css">
-      @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);
+      @import
+      url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);
     </Code>
     <P>Only one Source Code Pro font weight is available for use.</P>
     <div className="box fontWeight">
