@@ -14,7 +14,7 @@ export const FeatureFlagsPanel = ({ active, api, ...props }) => {
   const handleFeatureFlagChange = (evt, flag) => api.emit(EVENTS.change, flag)
   return !active ? null : (
     <div {...styles.panel(props)} {...props}>
-      {[featFlags].map(name => (
+      {featFlags.map(name => (
         <Switch key={name} name={name} onChange={handleFeatureFlagChange} />
       ))}
     </div>
