@@ -1,4 +1,4 @@
-export const blue = {
+export const colorsBlue = {
   base: '#0084BD',
   1: '#D9F1FF',
   2: '#B9E4FD',
@@ -11,7 +11,7 @@ export const blue = {
   9: '#005685',
   10: '#00446B'
 }
-export const teal = {
+export const colorsTeal = {
   base: '#00BAA5',
   1: '#D5FAF5',
   2: '#AFFAEF',
@@ -24,7 +24,7 @@ export const teal = {
   9: '#007A6A',
   10: '#006658'
 }
-export const green = {
+export const colorsGreen = {
   base: '#009E52',
   1: '#D9FAE5',
   2: '#ADF0C8',
@@ -37,7 +37,7 @@ export const green = {
   9: '#00672E',
   10: '#005724'
 }
-export const lime = {
+export const colorsLime = {
   base: '#8CCA08',
   1: '#ECFFC7',
   2: '#DEFFA3',
@@ -50,7 +50,7 @@ export const lime = {
   9: '#588A00',
   10: '#4C7700'
 }
-export const yellow = {
+export const colorsYellow = {
   base: '#FAD000',
   1: '#FFFBCC',
   2: '#FFF7A8',
@@ -63,7 +63,7 @@ export const yellow = {
   9: '#B28300',
   10: '#946500'
 }
-export const orange = {
+export const colorsOrange = {
   base: '#F59127',
   1: '#FFECD1',
   2: '#FFDCAD',
@@ -76,7 +76,7 @@ export const orange = {
   9: '#B85500',
   10: '#9E4100'
 }
-export const red = {
+export const colorsRed = {
   base: '#D21C09',
   1: '#FFD6D6',
   2: '#FFB3B3',
@@ -89,7 +89,7 @@ export const red = {
   9: '#920000',
   10: '#750000'
 }
-export const pink = {
+export const colorsPink = {
   base: '#E7558B',
   1: '#FFDDEB',
   2: '#FFC2DB',
@@ -102,7 +102,7 @@ export const pink = {
   9: '#A22554',
   10: '#8A1A45'
 }
-export const purple = {
+export const colorsPurple = {
   base: '#8359DF',
   1: '#E9DEFF',
   2: '#D6C2FF',
@@ -140,9 +140,9 @@ export const colorsGradient = {
 }
 
 export const colorsPrimaryAction = {
-  background: blue.base,
-  textDarkTheme: blue[5],
-  textLightTheme: blue[7]
+  background: colorsBlue.base,
+  textDarkTheme: colorsBlue[5],
+  textLightTheme: colorsBlue[7]
 }
 
 export const colorsSecondaryAction = {

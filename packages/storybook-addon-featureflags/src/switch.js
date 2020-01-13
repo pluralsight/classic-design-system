@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import {
   layout,
-  blue,
+  colorsBlue,
   colorsBorder,
   colorsTextIcon
 } from '@pluralsight/ps-design-system-core'
@@ -27,7 +27,7 @@ const styles = {
   preview: checked =>
     glamor.css({
       height: 60,
-      background: checked ? blue.base : blue[1]
+      background: checked ? colorsBlue.base : colorsBlue[1]
     }),
   info: _ =>
     glamor.css({

@@ -52,9 +52,9 @@ export default {
   },
   '.psds-button--2020-colors': {
     color: core.colorsTextIcon.highOnDark,
-    background: core.blue.base,
+    background: core.colorsBlue.base,
     '&:not([disabled]):hover': {
-      background: core.blue[5],
+      background: core.colorsBlue[5],
       cursor: 'pointer'
     }
   },
