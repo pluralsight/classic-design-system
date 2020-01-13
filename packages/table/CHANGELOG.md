@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.8...@pluralsight/ps-design-system-table@7.1.9) (2020-01-13)
+
+
+### Bug Fixes
+
+* **table:** fix classname typo ([4e85ac9](https://github.com/pluralsight/design-system/commit/4e85ac9c75d56d9edf64c685950110d714ebefaf)), closes [#766](https://github.com/pluralsight/design-system/issues/766)
+
+
+
+
+
 ## [7.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.6...@pluralsight/ps-design-system-table@7.1.7) (2020-01-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
