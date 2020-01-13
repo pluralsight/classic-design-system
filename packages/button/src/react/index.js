@@ -34,10 +34,10 @@ const styles = {
         `.psds-button--appearance-${appearance}.psds-theme--${themeName}${flag}`
       ],
       disabled && {
-        ...stylesheet[`.psds-button--disabled`],
-        ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
+        ...stylesheet[`.psds-button--disabled${flag}`],
+        ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}${flag}`],
         ...stylesheet[
-          `.psds-button--disabled.psds-button--appearance-${appearance}`
+          `.psds-button--disabled.psds-button--appearance-${appearance}${flag}`
         ]
       },
       icon &&
