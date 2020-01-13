@@ -67,10 +67,10 @@ export default {
     color: core.colors.gray02
   },
   [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
-    color: core.colors.gray03
+    color: core.colorsTextIcon.lowOnLight
   },
   [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
-    color: core.colors.gray02
+    color: core.colorsTextIcon.lowOnDark
   },
   [`.psds-text__heading--size-${vars.headingSizes.medium}`]: {
     fontSize: core.type.fontSizeMedium,
@@ -104,10 +104,10 @@ export default {
     color: core.colors.bone
   },
   [`.psds-text__list.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
-    color: core.colors.gray03
+    color: core.colorsTextIcon.highOnLight
   },
   [`.psds-text__list.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
-    color: core.colors.bone
+    color: core.colorsTextIcon.highOnDark
   },
   [`.psds-text__list--type-${vars.listTypes.bulleted}`]: {
     listStyle: 'inherit'
@@ -129,9 +129,9 @@ export default {
     color: core.colors.bone
   },
   [`.psds-text__p.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
-    color: core.colors.gray06
+    color: core.colorsTextIcon.highOnLight
   },
   [`.psds-text__p.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
-    color: core.colors.bone
+    color: core.colorsTextIcon.highOnDark
   }
 }
