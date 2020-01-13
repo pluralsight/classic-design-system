@@ -33,7 +33,7 @@ export default {
 
     '&:first-of-type': { borderTop: 'none' }
   },
-  [`.psds-table__row--${themeNames.light}`]: {
+  [`.psds-table__row.psds-theme--${themeNames.light}`]: {
     borderTop: `1px solid ${core.colors.gray01}`
   },
   '.psds-table__row--drawers': {
