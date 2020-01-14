@@ -82,7 +82,7 @@ export default _ => (
         In your package webpack config in order to enable treeshaking add the
         following config option:
       </P>
-      <Code>{`optimization: {usedExports: true }`}</Code>
+      <Code>{`optimization: { usedExports: true }`}</Code>
       <P>Include a React component in your project:</P>
       <Code language="javascript">
         {`import {CodeIcon, /* OtherNamedIcons */} from '@pluralsight/ps-design-system-icon'`}
