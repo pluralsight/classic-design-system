@@ -52,7 +52,7 @@ export default {
   },
   [`.psds-button--appearance-${vars.appearances.primary}.psds-button--2020-colors`]: {
     color: core.colorsTextIcon.highOnDark,
-    background: core.colorsBlue.base,
+    background: core.colorsPrimaryAction.background,
     '&:not([disabled]):hover': {
       background: core.colorsBlue[5],
       cursor: 'pointer'
@@ -132,8 +132,8 @@ export default {
     background: 'none',
 
     '&:not([disabled]):hover': {
-      border: `1px solid ${core.blue[5]}`,
-      color: core.blue[5],
+      border: `1px solid ${core.colorsBlue[5]}`,
+      color: core.colorsBlue[5],
       background: 'none'
     }
   },
