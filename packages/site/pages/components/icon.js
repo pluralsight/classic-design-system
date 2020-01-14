@@ -79,10 +79,11 @@ export default _ => (
         npm install @pluralsight/ps-design-system-icon
       </Code>
       <P>
-        In your package webpack config in order to enable treeshaking add the
-        following config option:
+        To enable treeshaking use Webpack 4's <b>production</b> mode or add the
+        following config option to your <b>dev/non-prod</b> mode config:
       </P>
       <Code>{`optimization: {usedExports: true }`}</Code>
+
       <P>Include a React component in your project:</P>
       <Code language="javascript">
         {`import {CodeIcon, /* OtherNamedIcons */} from '@pluralsight/ps-design-system-icon'`}
