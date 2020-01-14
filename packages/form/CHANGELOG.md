@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.0.16...@pluralsight/ps-design-system-form@4.0.17) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
 ## [4.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.0.11...@pluralsight/ps-design-system-form@4.0.12) (2020-01-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form
