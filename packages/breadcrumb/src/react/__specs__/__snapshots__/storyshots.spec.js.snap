@@ -48,7 +48,7 @@ exports[`Storyshots disabled disabled 1`] = `
     data-css-nipl9k=""
   >
     <button
-      data-css-1rtcga3=""
+      data-css-1qqwiqx=""
       disabled={true}
       onClick={[Function]}
       style={Object {}}
