@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [16.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.0.1...@pluralsight/ps-design-system-icon@16.1.0) (2020-01-14)
+
+
+### Features
+
+* **icon:** enables treeshaking when used by parcel or webpack ([3517f8f](https://github.com/pluralsight/design-system/commit/3517f8f512f99867c7df194bc9665b09097e0739))
+
+
+
+
+
 # [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.1.1...@pluralsight/ps-design-system-icon@16.0.0) (2019-12-19)
 
 
