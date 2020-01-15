@@ -5,7 +5,6 @@ import React from 'react'
 import { Code, P, List } from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
 
-import logo from './logo.svg'
 import './App.css'
 
 function App() {
@@ -17,20 +16,17 @@ function App() {
     <FeatureFlags flags={{ psds2020Colors: flag }}>
       <Theme>
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <Button>DS Button</Button>
-            <Link>
-              <a href="#">DS Link</a>
-            </Link>
-            <Code>DS Text.Code</Code>
-            <P>DS Text.P</P>
-            <List>
-              <List.Item>DS.List Item 1</List.Item>
-              <List.Item>DS.List Item 2</List.Item>
-              <List.Item>DS.List Item 3</List.Item>
-            </List>
-          </header>
+          <Button>DS Button</Button>
+          <Link>
+            <a href="#">DS Link</a>
+          </Link>
+          <Code>DS Text.Code</Code>
+          <P>DS Text.P</P>
+          <List>
+            <List.Item>DS.List Item 1</List.Item>
+            <List.Item>DS.List Item 2</List.Item>
+            <List.Item>DS.List Item 3</List.Item>
+          </List>
         </div>
       </Theme>
     </FeatureFlags>
