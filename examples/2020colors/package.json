@@ -24,9 +24,16 @@
     "extends": "react-app"
   },
   "dependencies": {
+    "@pluralsight/ps-design-system-button": "^16.2.0",
+    "@pluralsight/ps-design-system-featureflags": "^1.1.3",
+    "@pluralsight/ps-design-system-link": "^8.1.0",
+    "@pluralsight/ps-design-system-normalize": "^3.1.11",
+    "@pluralsight/ps-design-system-text": "^14.1.0",
+    "@pluralsight/ps-design-system-theme": "^4.0.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "glamor": "^2.20.40",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"

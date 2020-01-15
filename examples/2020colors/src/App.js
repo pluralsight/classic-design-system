@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button from '@pluralsight/ps-design-system-button'
+import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
+import Link from '@pluralsight/ps-design-system-link'
+import React from 'react'
+import { Code, P, List } from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
+
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
+  const [flag, setFlag] = React.useState(false)
+  React.useEffect(() => {
+    setInterval(() => setFlag(!flag), 2000)
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <FeatureFlags flags={{ psds2020Colors: flag }}>
+      <Theme>
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <Button>DS Button</Button>
+            <Link>
+              <a href="#">DS Link</a>
+            </Link>
+            <Code>DS Text.Code</Code>
+            <P>DS Text.P</P>
+            <List>
+              <List.Item>DS.List Item 1</List.Item>
+              <List.Item>DS.List Item 2</List.Item>
+              <List.Item>DS.List Item 3</List.Item>
+            </List>
+          </header>
+        </div>
+      </Theme>
+    </FeatureFlags>
+  )
 }
 
-export default App;
+export default App
