@@ -130,6 +130,23 @@ export const colorsBorder = {
   lowOnLight: 'rgba(0, 0, 0, 0.15)'
 }
 
+export const colorsBackgroundDark = {
+  1: '#0F0F0F',
+  2: '#1B1B1B',
+  3: '#232323'
+}
+
+export const colorsBackgroundLight = {
+  1: '#F2F2F2',
+  2: '#F8F8F8',
+  3: '#FFFFFF'
+}
+
+export const colorsBackgroundUtility = {
+  base: '#B0B0B0',
+  25: 'rgba(176,176,176, 0.25)'
+}
+
 export const colorsGradient = {
   skillsBackground: 'linear-gradient(90deg, #E80A89 0%, #F15B2A 100%)',
   skillsStop0: '#E80A89',
@@ -146,6 +163,6 @@ export const colorsPrimaryAction = {
 }
 
 export const colorsSecondaryAction = {
-  backgroundLightTheme: 'rgba(204, 204, 204, 0.35)',
-  backgroundDarkTheme: '#222222'
+  backgroundLightTheme: colorsBackgroundUtility[25],
+  backgroundDarkTheme: colorsBackgroundUtility[25]
 }
