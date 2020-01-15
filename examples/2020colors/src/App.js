@@ -9,13 +9,18 @@ import './App.css'
 
 function App() {
   const [flag, setFlag] = React.useState(false)
-  React.useEffect(() => {
-    setInterval(() => setFlag(!flag), 2000)
-  })
   return (
     <FeatureFlags flags={{ psds2020Colors: flag }}>
       <Theme>
         <div className="App">
+          <div>
+            <button
+              onClick={() => setFlag(!flag)}
+              style={{ marginBottom: '3rem' }}
+            >
+              Toggle fake colors feature flag {flag ? 'off' : 'on'}
+            </button>
+          </div>
           <Button>DS Button</Button>
           <Link>
             <a href="#">DS Link</a>
