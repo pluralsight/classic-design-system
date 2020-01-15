@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [16.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@16.1.0...@pluralsight/ps-design-system-button@16.2.0) (2020-01-15)
+
+
+### Features
+
+* **button:** confirmed colors with Brian ([4a384f9](https://github.com/pluralsight/design-system/commit/4a384f978c6b33ececeeae09a306074d825c561d))
+* **button:** new 2020 color palette applied ([a55ecb2](https://github.com/pluralsight/design-system/commit/a55ecb2f536912ebfde97ffcfade5b3a69a3f61d))
+* **button:** requested disabled cursor ([3cc1023](https://github.com/pluralsight/design-system/commit/3cc1023e9f1304ec5094d5ff872492a598fb83c6))
+* **button:** update snapshots ([2dd73b5](https://github.com/pluralsight/design-system/commit/2dd73b5742b7aca5a7328ee36e4a54595cc41413))
+* **button:** update token names ([2993fb0](https://github.com/pluralsight/design-system/commit/2993fb00ca80312cdf6d07f887f92e1bc8472640))
+
+
+
+
+
 # [16.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@16.0.7...@pluralsight/ps-design-system-button@16.1.0) (2020-01-14)
 
 

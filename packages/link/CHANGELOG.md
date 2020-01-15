@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@8.0.6...@pluralsight/ps-design-system-link@8.1.0) (2020-01-15)
+
+
+### Features
+
+* **link:** new 2020 color palette applied ([529733b](https://github.com/pluralsight/design-system/commit/529733b036853239a9b17e667f06e2a7f8b5694c))
+
+
+
+
+
 ## [8.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@8.0.5...@pluralsight/ps-design-system-link@8.0.6) (2020-01-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

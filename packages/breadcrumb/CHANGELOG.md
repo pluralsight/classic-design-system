@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.8...@pluralsight/ps-design-system-breadcrumb@6.1.0) (2020-01-15)
+
+
+### Features
+
+* **button:** update token names ([2993fb0](https://github.com/pluralsight/design-system/commit/2993fb00ca80312cdf6d07f887f92e1bc8472640))
+
+
+
+
+
 ## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.7...@pluralsight/ps-design-system-breadcrumb@6.0.8) (2020-01-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
