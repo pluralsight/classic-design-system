@@ -27,7 +27,6 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-featureflags": "^1.1.2",
     "@pluralsight/ps-design-system-normalize": "^3.1.7",
     "@pluralsight/ps-design-system-theme": "^4.0.0",
     "glamor": "^2.20.40",
