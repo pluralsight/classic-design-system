@@ -7,6 +7,20 @@ import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
+export const colorsSecondaryAction = {
+  backgroundDefault: core.colorsBackgroundUtility[25],
+  backgroundHover: core.colorsBackgroundUtility[30],
+  backgroundPressed: core.colorsBackgroundUtility[40]
+}
+
+export const loading = {
+  trackColorOnLight: core.colorsBorder.lowOnLight,
+  trackColorOnDark: core.colorsBorder.lowOnDark,
+  borderTopColorOnLight: core.colorsTextIcon.highOnLight,
+  borderTopColorOnDark: core.colorsTextIcon.highOnDark,
+  borderTopColorOnStroke: core.colorsPrimaryAction.background
+}
+
 export default {
   '@keyframes psds-button__keyframes__spin': {
     '100%': {
@@ -99,20 +113,23 @@ export default {
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-button--2020-colors`]: {
     color: core.colorsTextIcon.highOnDark,
-    background: core.colorsSecondaryAction.backgroundDarkTheme,
+    background: colorsSecondaryAction.backgroundDefault,
 
     '&:not([disabled]):hover': {
-      color: core.colors.white,
-      background: transparentize(0.65, core.colors.gray02)
+      background: colorsSecondaryAction.backgroundHover
+    },
+    '&:not([disabled]):active': {
+      background: colorsSecondaryAction.backgroundPressed
     }
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
     color: core.colorsTextIcon.highOnLight,
-    background: core.colorsSecondaryAction.backgroundLightTheme,
-
+    background: colorsSecondaryAction.backgroundDefault,
     '&:not([disabled]):hover': {
-      color: core.colors.gray06,
-      background: transparentize(0.35, core.colors.gray01)
+      background: colorsSecondaryAction.backgroundHover
+    },
+    '&:not([disabled]):active': {
+      background: colorsSecondaryAction.backgroundPressed
     }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}`]: {
@@ -161,19 +178,15 @@ export default {
   [`.psds-button--appearance-${vars.appearances.flat}.psds-button--2020-colors`]: {
     border: 'none',
     background: 'none',
-
     '&:not([disabled]):hover': {
-      color: core.colors.white,
-      background: transparentize(0.85, core.colors.white)
+      background: colorsSecondaryAction.backgroundHover
+    },
+    '&:not([disabled]):active': {
+      background: colorsSecondaryAction.backgroundPressed
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
-    color: core.colorsTextIcon.highOnLight,
-
-    '&:not([disabled]):hover': {
-      color: 'inherit',
-      background: transparentize(0.85, core.colors.gray03)
-    }
+    color: core.colorsTextIcon.highOnLight
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
     color: core.colorsTextIcon.highOnDark
@@ -203,7 +216,7 @@ export default {
     }
   },
   [`.psds-button--disabled.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
-    opacity: '50%'
+    opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.primary}`]: {
     opacity: 0.5
@@ -313,6 +326,34 @@ export default {
   [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeDefaultName}`]: {
     borderColor: transparentize(0.8, core.colors.white),
     borderTopColor: core.colors.white
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.primary}.psds-button--2020-colors`]: {
+    borderColor: loading.trackColorOnDark,
+    borderTopColor: loading.borderTopColorOnDark
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeNames.light}.psds-button--2020-colors`]: {
+    borderColor: loading.trackColorOnLight,
+    borderTopColor: loading.borderTopColorOnLight
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeDefaultName}.psds-button--2020-colors`]: {
+    borderColor: loading.trackColorOnDark,
+    borderTopColor: loading.borderTopColorOnDark
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeNames.light}.psds-button--2020-colors`]: {
+    borderColor: loading.trackColorOnLight,
+    borderTopColor: loading.borderTopColorOnStroke
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeDefaultName}.psds-button--2020-colors`]: {
+    borderColor: loading.trackColorOnDark,
+    borderTopColor: loading.borderTopColorOnStroke
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeNames.light}.psds-button--2020-colors`]: {
+    borderColor: loading.trackColorOnLight,
+    borderTopColor: loading.borderTopColorOnLight
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeDefaultName}.psds-button--2020-colors`]: {
+    borderColor: loading.trackColorOnDark,
+    borderTopColor: loading.borderTopColorOnDark
   },
 
   [`.psds-button__text`]: {
