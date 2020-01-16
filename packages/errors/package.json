@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-errors",
-  "version": "7.0.11",
+  "version": "7.0.12",
   "description": "Design system components for errors",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,7 +21,7 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^16.2.1",
+    "@pluralsight/ps-design-system-button": "^17.0.0",
     "@pluralsight/ps-design-system-core": "^5.2.0",
     "@pluralsight/ps-design-system-icon": "^16.1.1",
     "@pluralsight/ps-design-system-text": "^15.0.0",
