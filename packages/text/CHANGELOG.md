@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.1.0...@pluralsight/ps-design-system-text@15.0.0) (2020-01-16)
+
+
+### Code Refactoring
+
+* **text:** move feature-flags to peerDependencies ([61e2ac0](https://github.com/pluralsight/design-system/commit/61e2ac060029a2cbdcbcaccfff7114d07d23c5c7))
+
+
+### BREAKING CHANGES
+
+* **text:** move feature-flags to peerDependencies
+
+
+
+
+
 # [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.9...@pluralsight/ps-design-system-text@14.1.0) (2020-01-15)
 
 

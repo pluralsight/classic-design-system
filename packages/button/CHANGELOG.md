@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@16.2.0...@pluralsight/ps-design-system-button@16.2.1) (2020-01-16)
+
+
+### Bug Fixes
+
+* **button:** rm feature flags peer dep and stop reacting to 2020 colors ([772a1b7](https://github.com/pluralsight/design-system/commit/772a1b7215f8e486862fb9816e94bdfb2992e64f))
+
+
+
+
+
 # [16.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@16.1.0...@pluralsight/ps-design-system-button@16.2.0) (2020-01-15)
 
 
