@@ -144,7 +144,9 @@ export const colorsBackgroundLight = {
 
 export const colorsBackgroundUtility = {
   base: '#B0B0B0',
-  25: 'rgba(176,176,176, 0.25)'
+  25: 'rgba(176,176,176, 0.25)',
+  30: 'rgba(176,176,176, 0.30)',
+  40: 'rgba(176,176,176, 0.40)'
 }
 
 export const colorsGradient = {
@@ -160,9 +162,4 @@ export const colorsPrimaryAction = {
   background: colorsBlue.base,
   textDarkTheme: colorsBlue[5],
   textLightTheme: colorsBlue[7]
-}
-
-export const colorsSecondaryAction = {
-  backgroundLightTheme: colorsBackgroundUtility[25],
-  backgroundDarkTheme: colorsBackgroundUtility[25]
 }
