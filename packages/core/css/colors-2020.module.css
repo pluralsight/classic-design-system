@@ -1,0 +1,150 @@
+:root {
+  /* 2020 palette - temporarily separate */
+  --psColors2020BlueBase: #0084bd;
+  --psColors2020Blue1: #d9f1ff;
+  --psColors2020Blue2: #b9e4fd;
+  --psColors2020Blue3: #8ed1f6;
+  --psColors2020Blue4: #58b9eb;
+  --psColors2020Blue5: #2ea0d6;
+  --psColors2020Blue6: #0084bd;
+  --psColors2020Blue7: #0074ab;
+  --psColors2020Blue8: #006395;
+  --psColors2020Blue9: #005685;
+  --psColors2020Blue10: #00446b;
+
+  --psColors2020TealBase: #00baa5;
+  --psColors2020Teal1: #d5faf5;
+  --psColors2020Teal2: #affaef;
+  --psColors2020Teal3: #84f0e1;
+  --psColors2020Teal4: #5ce6d4;
+  --psColors2020Teal5: #2fd1be;
+  --psColors2020Teal6: #00baa5;
+  --psColors2020Teal7: #00a894;
+  --psColors2020Teal8: #009380;
+  --psColors2020Teal9: #007a6a;
+  --psColors2020Teal10: #006658;
+
+  --psColors2020GreenBase: #009e52;
+  --psColors2020Green1: #d9fae5;
+  --psColors2020Green2: #adf0c8;
+  --psColors2020Green3: #82e2ab;
+  --psColors2020Green4: #57d08e;
+  --psColors2020Green5: #2bb970;
+  --psColors2020Green6: #009e52;
+  --psColors2020Green7: #008f46;
+  --psColors2020Green8: #007c3a;
+  --psColors2020Green9: #00672e;
+  --psColors2020Green10: #005724;
+
+  --psColors2020LimeBase: #8cca08;
+  --psColors2020Lime1: #ecffc7;
+  --psColors2020Lime2: #deffa3;
+  --psColors2020Lime3: #ccfc7a;
+  --psColors2020Lime4: #b8f052;
+  --psColors2020Lime5: #a3e029;
+  --psColors2020Lime6: #8cca08;
+  --psColors2020Lime7: #7bb600;
+  --psColors2020Lime8: #6ba300;
+  --psColors2020Lime9: #588a00;
+  --psColors2020Lime10: #4c7700;
+
+  --psColors2020YellowBase: #fad000;
+  --psColors2020Yellow1: #fffbcc;
+  --psColors2020Yellow2: #fff7a8;
+  --psColors2020Yellow3: #fff380;
+  --psColors2020Yellow4: #ffeb57;
+  --psColors2020Yellow5: #ffdf29;
+  --psColors2020Yellow6: #fad000;
+  --psColors2020Yellow7: #e2b500;
+  --psColors2020Yellow8: #cc9e00;
+  --psColors2020Yellow9: #b28300;
+  --psColors2020Yellow10: #946500;
+
+  --psColors2020OrangeBase: #f59127;
+  --psColors2020Orange1: #ffecd1;
+  --psColors2020Orange2: #ffdcad;
+  --psColors2020Orange3: #ffcd8a;
+  --psColors2020Orange4: #ffba61;
+  --psColors2020Orange5: #ffa43e;
+  --psColors2020Orange6: #f59127;
+  --psColors2020Orange7: #e27a18;
+  --psColors2020Orange8: #cb670b;
+  --psColors2020Orange9: #b85500;
+  --psColors2020Orange10: #9e4100;
+
+  --psColors2020RedBase: #d21c09;
+  --psColors2020Red1: #ffd6d6;
+  --psColors2020Red2: #ffb3b3;
+  --psColors2020Red3: #ff8a8a;
+  --psColors2020Red4: #f86968;
+  --psColors2020Red5: #e94a3f;
+  --psColors2020Red6: #d21c09;
+  --psColors2020Red7: #c00f00;
+  --psColors2020Red8: #ab0600;
+  --psColors2020Red9: #920000;
+  --psColors2020Red10: #750000;
+
+  --psColors2020PinkBase: #e7558b;
+  --psColors2020Pink1: #ffddeb;
+  --psColors2020Pink2: #ffc2db;
+  --psColors2020Pink3: #ffa3c8;
+  --psColors2020Pink4: #ff8ab5;
+  --psColors2020Pink5: #f66fa1;
+  --psColors2020Pink6: #e7558b;
+  --psColors2020Pink7: #d1487b;
+  --psColors2020Pink8: #c13368;
+  --psColors2020Pink9: #a22554;
+  --psColors2020Pink10: #8a1a45;
+
+  --psColors2020PurpleBase: #8359df;
+  --psColors2020Purple1: #e9deff;
+  --psColors2020Purple2: #d6c2ff;
+  --psColors2020Purple3: #c0a3ff;
+  --psColors2020Purple4: #a883f8;
+  --psColors2020Purple5: #956ced;
+  --psColors2020Purple6: #8359df;
+  --psColors2020Purple7: #7048c6;
+  --psColors2020Purple8: #5934ac;
+  --psColors2020Purple9: #482592;
+  --psColors2020Purple10: #351973;
+
+  --psColors2020TextIconHighOnDark: rgba(255, 255, 255, 0.95);
+  --psColors2020TextIconHighOnLight: rgba(0, 0, 0, 0.95);
+  --psColors2020TextIconLowOnDark: rgba(255, 255, 255, 0.65);
+  --psColors2020TextIconLowOnLight: rgba(0, 0, 0, 0.55);
+
+  --psColors2020BorderHighOnDark: rgba(255, 255, 255, 0.3);
+  --psColors2020BorderHighOnLight: rgba(0, 0, 0, 0.3);
+  --psColors2020BorderLowOnDark: rgba(255, 255, 255, 0.15);
+  --psColors2020BorderLowOnLight: rgba(0, 0, 0, 0.15);
+
+  --psColors2020BackgroundDark1: #0f0f0f;
+  --psColors2020BackgroundDark2: #1b1b1b;
+  --psColors2020BackgroundDark3: #232323;
+
+  --psColors2020BackgroundLight1: #f2f2f2;
+  --psColors2020BackgroundLight2: #f8f8f8;
+  --psColors2020BackgroundLight3: #ffffff;
+
+  --psColors2020BackgroundUtilityBase: #b0b0b0;
+  --psColors2020BackgroundUtility25: rgba(176, 176, 176, 0.25);
+
+  --psColors2020GradientSkillsBackground: linear-gradient(
+    90deg,
+    #e80a89 0%,
+    #f15b2a 100%
+  );
+  --psColors2020GradientSkillsStop0: #e80a89;
+  --psColors2020GradientSkillsStop100: #f15b2a;
+  --psColors2020GradientFlowBackground: linear-gradient(
+    90deg,
+    #2968b2 0%,
+    #27aae1 100%
+  );
+  --psColors2020GradientFlowStop0: #2968b2;
+  --psColors2020GradientFlowStop100: #27aae1;
+
+  --psColors2020PrimaryActionBackground: #0084bd;
+  --psColors2020PrimaryActionTextDarkTheme: #2ea0d6;
+  --psColors2020PrimaryActionTextLightTheme: #0074ab;
+}

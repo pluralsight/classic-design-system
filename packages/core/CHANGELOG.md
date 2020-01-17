@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.1.0...@pluralsight/ps-design-system-core@5.2.0) (2020-01-16)
+
+
+### Features
+
+* **core:** add 2020 colors as css ([a5f30c1](https://github.com/pluralsight/design-system/commit/a5f30c137bcb4b3b675922f487ead288d025c7a1)), closes [#780](https://github.com/pluralsight/design-system/issues/780)
+* **core:** add 2020 neutral colors to css ([13a089d](https://github.com/pluralsight/design-system/commit/13a089d0c67917d06efa1ed4010a815eb2a359f7))
+* **core:** add step 1 neutrals ([527a337](https://github.com/pluralsight/design-system/commit/527a3376c4010dbcd625be1fbe369511db08a4cb))
+
+
+
+
+
 # [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.0.3...@pluralsight/ps-design-system-core@5.1.0) (2020-01-14)
 
 
