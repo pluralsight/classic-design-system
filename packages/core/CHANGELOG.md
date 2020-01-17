@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.2.0...@pluralsight/ps-design-system-core@5.3.0) (2020-01-17)
+
+
+### Features
+
+* **button:** move secondary tokens, update hover, active, & loading ([e3f0fa0](https://github.com/pluralsight/design-system/commit/e3f0fa000caf5229fe3f6720fc2bcba9ba1d9a08))
+* **core:** update colors2020 css ([a66256a](https://github.com/pluralsight/design-system/commit/a66256ac6b210958b3ad2ecdac664a0db31f02da))
+
+
+
+
+
 # [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.1.0...@pluralsight/ps-design-system-core@5.2.0) (2020-01-16)
 
 

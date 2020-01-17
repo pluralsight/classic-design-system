@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@17.0.0...@pluralsight/ps-design-system-button@17.1.0) (2020-01-17)
+
+
+### Features
+
+* **button:** move secondary tokens, update hover, active, & loading ([e3f0fa0](https://github.com/pluralsight/design-system/commit/e3f0fa000caf5229fe3f6720fc2bcba9ba1d9a08))
+
+
+
+
+
 # [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@16.2.1...@pluralsight/ps-design-system-button@17.0.0) (2020-01-16)
 
 
