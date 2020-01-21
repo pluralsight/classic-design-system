@@ -163,3 +163,11 @@ export const colorsPrimaryAction = {
   textDarkTheme: colorsBlue[5],
   textLightTheme: colorsBlue[7]
 }
+
+export const colorsStatusError = colorsRed.base
+
+export const colorsStatusInfo = colorsBlue.base
+
+export const colorsStatusSuccess = colorsGreen.base
+
+export const colorsStatusWarning = colorsYellow.base
