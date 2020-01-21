@@ -5,10 +5,14 @@ exports[`Storyshots Halo/error false 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-1xm24a9=""
+    data-css-aelvpu=""
   >
-    <div>
-      not error
+    <div
+      data-css-1xm24a9=""
+    >
+      <div>
+        not error
+      </div>
     </div>
   </div>
 </div>
@@ -19,10 +23,14 @@ exports[`Storyshots Halo/error true 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-utxo7p=""
+    data-css-aelvpu=""
   >
-    <div>
-      error
+    <div
+      data-css-utxo7p=""
+    >
+      <div>
+        error
+      </div>
     </div>
   </div>
 </div>
@@ -33,10 +41,14 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-nbiptv=""
+    data-css-aelvpu=""
   >
-    <div>
-      default
+    <div
+      data-css-nbiptv=""
+    >
+      <div>
+        default
+      </div>
     </div>
   </div>
 </div>
@@ -47,10 +59,14 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-nbiptv=""
+    data-css-aelvpu=""
   >
-    <div>
-      small
+    <div
+      data-css-nbiptv=""
+    >
+      <div>
+        small
+      </div>
     </div>
   </div>
 </div>
@@ -61,12 +77,16 @@ exports[`Storyshots Halo/shapes default 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-nbiptv=""
+    data-css-aelvpu=""
   >
     <div
-      shape="default"
+      data-css-nbiptv=""
     >
-      default
+      <div
+        shape="default"
+      >
+        default
+      </div>
     </div>
   </div>
 </div>
@@ -77,12 +97,16 @@ exports[`Storyshots Halo/shapes pill 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-34tmci=""
+    data-css-aelvpu=""
   >
     <div
-      shape="pill"
+      data-css-34tmci=""
     >
-      pill
+      <div
+        shape="pill"
+      >
+        pill
+      </div>
     </div>
   </div>
 </div>
@@ -93,10 +117,14 @@ exports[`Storyshots Halo/visible false & error 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-utxo7p=""
+    data-css-aelvpu=""
   >
-    <div>
-      not visible (always visible if error) & error
+    <div
+      data-css-utxo7p=""
+    >
+      <div>
+        not visible (always visible if error) & error
+      </div>
     </div>
   </div>
 </div>
@@ -107,10 +135,14 @@ exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-14u1z9b=""
+    data-css-aelvpu=""
   >
-    <div>
-      really not visible (even on focus)
+    <div
+      data-css-14u1z9b=""
+    >
+      <div>
+        really not visible (even on focus)
+      </div>
     </div>
   </div>
 </div>
@@ -121,10 +153,14 @@ exports[`Storyshots Halo/visible false 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-1xm24a9=""
+    data-css-aelvpu=""
   >
-    <div>
-      not visible (until focused)
+    <div
+      data-css-1xm24a9=""
+    >
+      <div>
+        not visible (until focused)
+      </div>
     </div>
   </div>
 </div>
@@ -135,10 +171,14 @@ exports[`Storyshots Halo/visible true & error 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-nbiptv=""
+    data-css-aelvpu=""
   >
-    <div>
-      visible & error
+    <div
+      data-css-nbiptv=""
+    >
+      <div>
+        visible & error
+      </div>
     </div>
   </div>
 </div>
@@ -149,10 +189,14 @@ exports[`Storyshots Halo/visible true 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-nbiptv=""
+    data-css-aelvpu=""
   >
-    <div>
-      visible
+    <div
+      data-css-nbiptv=""
+    >
+      <div>
+        visible
+      </div>
     </div>
   </div>
 </div>
@@ -163,10 +207,14 @@ exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-utxo7p=""
+    data-css-aelvpu=""
   >
-    <div>
-      visible when focused with error
+    <div
+      data-css-utxo7p=""
+    >
+      <div>
+        visible when focused with error
+      </div>
     </div>
   </div>
 </div>
@@ -177,10 +225,14 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-1xm24a9=""
+    data-css-aelvpu=""
   >
-    <div>
-      visible when focused
+    <div
+      data-css-1xm24a9=""
+    >
+      <div>
+        visible when focused
+      </div>
     </div>
   </div>
 </div>
