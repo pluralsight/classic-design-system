@@ -15,29 +15,26 @@ export default {
     borderRadius: '16px',
     fontWeight: core.type.fontWeightMedium,
     textDecoration: 'none',
-    border: '1px solid transparent',
-    color: core.colors.bone,
-    backgroundColor: core.colors.gray03,
+    color: core.colorsTextIcon.highOnDark,
+    backgroundColor: core.colorsBackgroundUtility[25],
     transition: `background-color ${core.motion.speedXFast} linear, color ${core.motion.speedXFast} linear`
   },
   [base + '.psds-theme--' + themeNames.light]: {
-    backgroundColor: core.colors.white,
-    borderColor: core.colors.gray02,
-    color: core.colors.gray06
+    color: core.colorsTextIcon.highOnLight
   },
 
   [base + '--clickable']: {
     '&:hover, &:focus': {
-      backgroundColor: core.colors.gray02,
-      color: core.colors.black,
+      backgroundColor: core.colorsBackgroundUtility[30],
+      color: core.colorsTextIcon.highOnDark,
       cursor: 'pointer',
       outline: 'none'
     }
   },
   [base + '--clickable' + '.psds-theme--' + themeNames.light]: {
     '&:hover, &:focus': {
-      backgroundColor: core.colors.bone,
-      borderColor: core.colors.gray03
+      backgroundColor: core.colorsBackgroundUtility[30],
+      color: core.colorsTextIcon.highOnLight
     }
   },
 
@@ -59,13 +56,14 @@ export default {
   },
 
   [base + '--isPressed']: {
-    color: core.colors.white,
-    backgroundColor: core.colors.blue,
-    borderColor: 'transparent',
+    color: core.colorsTextIcon.highOnDark,
+    backgroundColor: core.colorsPrimaryAction.background
+  },
+
+  [base + '--isPressed' + base + '--clickable']: {
     '&:hover, &:focus': {
-      backgroundColor: core.colors.blue,
-      borderColor: 'transparent',
-      color: core.colors.white
+      backgroundColor: core.colorsBlue[5],
+      color: core.colorsTextIcon.highOnDark
     }
   },
 

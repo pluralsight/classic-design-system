@@ -386,68 +386,6 @@ exports[`Storyshots isPressed link 1`] = `
 </div>
 `;
 
-exports[`Storyshots long string 1`] = `
-<div
-  data-css-1so76ss=""
->
-  <div
-    data-css-1r7zk4a=""
-  >
-    <div
-      data-css-480533=""
-    >
-      <div
-        data-css-frhtu8=""
-      >
-        <span
-          data-css-1997kh1=""
-        >
-          This is the string that goes on forever and always. There really isn't an end. Wow.
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots long with icon 1`] = `
-<div
-  data-css-1so76ss=""
->
-  <div
-    data-css-1r7zk4a=""
-  >
-    <div
-      data-css-480533=""
-    >
-      <div
-        data-css-wa9aah=""
-      >
-        <span
-          data-css-1997kh1=""
-        >
-          This is the string that goes on forever and always. There really isn't an end. Wow.
-        </span>
-        <div
-          data-css-otejxm=""
-          onClick={[Function]}
-        >
-          <svg
-            aria-label="check icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots size medium 1`] = `
 <div
   data-css-1so76ss=""
