@@ -74,11 +74,7 @@ export default {
   },
 
   '.psds-table__cell--emphasis': {
-    color: core.colors.white,
     fontWeight: core.type.fontWeightMedium
-  },
-  [`.psds-table__cell--emphasis.psds-theme--${themeNames.light}`]: {
-    color: core.colors.black
   },
   [`.psds-table__cell--align-${vars.aligns.left}`]: {
     justifyContent: 'left',
