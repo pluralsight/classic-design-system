@@ -39,12 +39,6 @@ export default {
     listStyle: 'none',
     margin: 0
   },
-  [`.psds-verticaltabs.psds-theme--${themeNames.light}`]: {
-    backgroundColor: core.colors.bone
-  },
-  [`.psds-verticaltabs.psds-theme--${themeDefaultName}`]: {
-    backgroundColor: core.colors.gray05
-  },
 
   '.psds-verticaltabs__divider': {
     margin: `${core.layout.spacingMedium} 0`,
@@ -52,10 +46,10 @@ export default {
     borderStyle: 'solid'
   },
   [`.psds-verticaltabs__divider.psds-theme--${themeNames.light}`]: {
-    borderColor: core.colors.gray01
+    borderColor: core.colorsBorder.lowOnLight
   },
   [`.psds-verticaltabs__divider.psds-theme--${themeDefaultName}`]: {
-    borderColor: core.colors.gray03
+    borderColor: core.colorsBorder.lowOnDark
   },
 
   '.psds-verticaltabs__list': {
@@ -83,26 +77,26 @@ export default {
     }
   },
   [`.psds-verticaltabs__item.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03,
+    color: core.colorsTextIcon.lowOnLight,
 
     '& > a, & > button': {
       cursor: 'pointer',
 
       '&:focus, &:hover': {
-        backgroundColor: 'rgb(225, 225, 225)',
-        color: core.colors.black
+        backgroundColor: core.colorsBackgroundUtility[25],
+        color: core.colorsTextIcon.highOnLight
       }
     }
   },
   [`.psds-verticaltabs__item.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02,
+    color: core.colorsTextIcon.lowOnDark,
 
     '& > a, & > button': {
       cursor: 'pointer',
 
       '&:focus, &:hover': {
-        backgroundColor: core.colors.gray04,
-        color: core.colors.white
+        backgroundColor: core.colorsBackgroundUtility[25],
+        color: core.colorsTextIcon.highOnDark
       }
     }
   },
@@ -140,12 +134,12 @@ export default {
     }
   },
   [`.psds-verticaltabs__tier1.psds-theme--${themeNames.light}`]: {
-    '&:before': { background: core.colors.black },
-    '&[data-active]': { color: core.colors.black }
+    '&:before': { background: core.colorsPrimaryAction.background },
+    '&[data-active]': { color: core.colorsTextIcon.highOnLight }
   },
   [`.psds-verticaltabs__tier1.psds-theme--${themeDefaultName}`]: {
-    '&:before': { background: core.colors.white },
-    '&[data-active]': { color: core.colors.white }
+    '&:before': { background: core.colorsPrimaryAction.background },
+    '&[data-active]': { color: core.colorsTextIcon.highOnDark }
   },
 
   '.psds-verticaltabs__tier1__header': {
@@ -183,19 +177,19 @@ export default {
     }
   },
   [`.psds-verticaltabs__tier2.psds-theme--${themeNames.light}`]: {
-    '&:before': { background: core.colors.gray01 },
+    '&:before': { background: core.colorsBorder.lowOnLight },
     '&[data-active]': {
-      color: core.colors.black,
+      color: core.colorsTextIcon.highOnLight,
 
-      '&:before': { background: core.colors.black }
+      '&:before': { background: core.colorsPrimaryAction.background }
     }
   },
   [`.psds-verticaltabs__tier2.psds-theme--${themeDefaultName}`]: {
-    '&:before': { background: core.colors.gray03 },
+    '&:before': { background: core.colorsBorder.lowOnDark },
 
     '&[data-active]': {
-      color: core.colors.white,
-      '&:before': { background: core.colors.white }
+      color: core.colorsTextIcon.highOnDark,
+      '&:before': { background: core.colorsPrimaryAction.background }
     }
   },
 
@@ -223,10 +217,10 @@ export default {
   },
   '.psds-verticaltabs__group__header__inner': {},
   [`.psds-verticaltabs__group__header.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: core.colorsTextIcon.lowOnLight
   },
   [`.psds-verticaltabs__group__header.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02
+    color: core.colorsTextIcon.lowOnDark
   },
 
   '.psds-verticaltabs__header__label': {
