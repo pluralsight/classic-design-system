@@ -414,6 +414,32 @@ exports[`Storyshots cell text 1`] = `
 </div>
 `;
 
+exports[`Storyshots cell with child anchor 1`] = `
+<div
+  data-css-vijq7m=""
+  role="table"
+>
+  <div
+    data-css-lmjdxe=""
+    role="row"
+  >
+    <div
+      data-css-yawg45=""
+      role="cell"
+      style={Object {}}
+    >
+      cell text 
+      <a
+        href="#"
+      >
+        inline link
+      </a>
+       and more text
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots columnHeader align center 1`] = `
 <div
   data-css-vijq7m=""

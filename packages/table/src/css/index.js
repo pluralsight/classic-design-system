@@ -58,17 +58,8 @@ export default {
       textDecoration: 'none',
 
       '&:active, &:focus, &:hover': {
-        color: core.colors.white,
         textDecoration: 'underline',
         transition: `all ${core.motion.speedNormal}`
-      }
-    }
-  },
-
-  [`.psds-table__cell.psds-theme--${themeNames.light}`]: {
-    '& a': {
-      '&:active, &:focus, &:hover': {
-        color: core.colors.black
       }
     }
   },
