@@ -164,10 +164,9 @@ export const colorsPrimaryAction = {
   textLightTheme: colorsBlue[7]
 }
 
-export const colorsStatusError = colorsRed.base
-
-export const colorsStatusInfo = colorsBlue.base
-
-export const colorsStatusSuccess = colorsGreen.base
-
-export const colorsStatusWarning = colorsYellow.base
+export const colorsStatus = {
+  error: colorsRed.base,
+  info: colorsBlue.base,
+  success: colorsGreen.base,
+  warning: colorsYellow.base
+}
