@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { colorsStatus } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 export const BASE_CLASSNAME = '.psds-halo'
@@ -20,7 +20,7 @@ export default {
       position: 'absolute',
       borderWidth: '3px',
       borderStyle: 'solid',
-      borderColor: core.colors.blue,
+      borderColor: colorsStatus.info,
       pointerEvents: 'none',
       visibility: 'hidden'
     }
@@ -34,21 +34,21 @@ export default {
   [`${BASE_CLASSNAME}--error`]: {
     '&:after': {
       visibility: 'visible',
-      borderColor: core.colors.red
+      borderColor: colorsStatus.error
     }
   },
 
   [`${BASE_CLASSNAME}--visible`]: {
     '&:after': {
       visibility: 'visible',
-      borderColor: core.colors.blue
+      borderColor: colorsStatus.info
     }
   },
 
   [`${BASE_CLASSNAME}--visible-on-focus`]: {
     '&:focus-within:after, &[focus-within]:after': {
       visibility: 'visible',
-      borderColor: core.colors.blue
+      borderColor: colorsStatus.info
     }
   },
 
