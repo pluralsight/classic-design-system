@@ -1,5 +1,4 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
@@ -9,10 +8,7 @@ const diamondHeight = getDiamondHeight(tailDimension, tailDimension) + 'px'
 const tailTransformTop = `translate(calc(((${diamondHeight} - ${tailDimension})) / 2), calc(50% + (${diamondHeight} - ${tailDimension}))) rotate(45deg)`
 const tailTransformBottom = `translate(calc(((${diamondHeight} - ${tailDimension})) / 2), -50%) rotate(45deg)`
 
-const boxShadow = `0px 1px ${shadowBlurWidth} ${transparentize(
-  0.5,
-  core.colors.black
-)}`
+const boxShadow = `0px 1px ${shadowBlurWidth} rgba(0, 0, 0, 0.5)`
 
 export default {
   [`@keyframes psds-tooltip__keyframes__fade`]: {
@@ -39,12 +35,12 @@ export default {
     } ease-out forwards`
   }),
   [`.psds-tooltip--appearance-${vars.appearances.basic}`]: {
-    color: core.colors.gray05,
+    color: core.colorsTextIcon.highOnLight,
     backgroundColor: core.colors.white
   },
   [`.psds-tooltip--appearance-${vars.appearances.accent}`]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.blue
+    color: core.colorsTextIcon.highOnDark,
+    backgroundColor: core.colorsPrimaryAction.background
   },
 
   '.psds-tooltip__tail': {
@@ -71,7 +67,7 @@ export default {
     '&:after': { backgroundColor: core.colors.white }
   },
   [`.psds-tooltip__tail--appearance-${vars.appearances.accent}`]: {
-    '&:after': { backgroundColor: core.colors.blue }
+    '&:after': { backgroundColor: core.colorsPrimaryAction.background }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topLeft}`]: {
     top: `calc(${diamondHeight} * -1)`,
@@ -132,10 +128,10 @@ export default {
     '& > svg': { height: '24px', width: '24px' }
   },
   [`.psds-tooltip__close--appearance-${vars.appearances.basic}`]: {
-    '& > svg': { fill: core.colors.gray03 }
+    '& > svg': { fill: core.colorsTextIcon.lowOnLight }
   },
   [`.psds-tooltip__close--appearance-${vars.appearances.accent}`]: {
-    '& > svg': { fill: core.colors.bone }
+    '& > svg': { fill: core.colorsTextIcon.lowOnDark }
   }
 }
 

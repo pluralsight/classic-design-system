@@ -23,7 +23,10 @@ const styles = {
         css(stylesheet[`.${label}--clickable.psds-theme--${themeName}`]),
       css(stylesheet[`.${label}--size-${size}`]),
       icon && css(stylesheet[`.${label}--icon`]),
-      isPressed && css(stylesheet[`.${label}--isPressed`])
+      isPressed && css(stylesheet[`.${label}--isPressed`]),
+      isPressed &&
+        clickable &&
+        css(stylesheet[`.${label}--isPressed.${label}--clickable`])
     )
   },
   label: (themeName, { icon }) => {

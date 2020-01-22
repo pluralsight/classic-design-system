@@ -21,7 +21,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-utxo7p=""
+        data-css-in6gqi=""
       >
         <div
           data-css-ne3jjf=""
@@ -106,7 +106,7 @@ exports[`Storyshots appearance gaps 1`] = `
           data-css-8u2q7u=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <div
               data-css-ne3jjf=""
@@ -161,7 +161,7 @@ exports[`Storyshots appearance gaps 1`] = `
           data-css-8u2q7u=""
         >
           <div
-            data-css-utxo7p=""
+            data-css-in6gqi=""
           >
             <div
               data-css-ne3jjf=""
@@ -235,7 +235,7 @@ exports[`Storyshots appearance gaps 1`] = `
           data-css-8u2q7u=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <div
               data-css-ne3jjf=""
@@ -290,7 +290,7 @@ exports[`Storyshots appearance gaps 1`] = `
           data-css-8u2q7u=""
         >
           <div
-            data-css-utxo7p=""
+            data-css-in6gqi=""
           >
             <div
               data-css-ne3jjf=""
@@ -370,7 +370,7 @@ exports[`Storyshots appearance medium default 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -433,7 +433,7 @@ exports[`Storyshots appearance medium subtle 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -496,7 +496,7 @@ exports[`Storyshots appearance small default 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -559,7 +559,7 @@ exports[`Storyshots appearance small subtle 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -627,7 +627,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-utxo7p=""
+        data-css-in6gqi=""
       >
         <div
           data-css-ne3jjf=""
@@ -711,7 +711,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""
@@ -773,7 +773,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""
@@ -842,7 +842,7 @@ exports[`Storyshots focus autofocus with ref 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -901,7 +901,7 @@ exports[`Storyshots focus disabled 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -962,7 +962,7 @@ exports[`Storyshots focus onBlur 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1022,7 +1022,7 @@ exports[`Storyshots focus onFocus 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1087,7 +1087,7 @@ exports[`Storyshots labels all 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1160,7 +1160,7 @@ exports[`Storyshots labels label 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1224,7 +1224,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1288,7 +1288,7 @@ exports[`Storyshots labels none 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1347,7 +1347,7 @@ exports[`Storyshots labels placeholder 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1410,7 +1410,7 @@ exports[`Storyshots labels subLabel 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -1495,7 +1495,7 @@ exports[`Storyshots layouts custom width 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""
@@ -1554,7 +1554,7 @@ exports[`Storyshots layouts custom width 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""
@@ -1639,7 +1639,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""
@@ -1698,7 +1698,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-utxo7p=""
+          data-css-in6gqi=""
         >
           <div
             data-css-ne3jjf=""
@@ -1776,7 +1776,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""
@@ -1835,7 +1835,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-utxo7p=""
+          data-css-in6gqi=""
         >
           <div
             data-css-ne3jjf=""
@@ -1929,7 +1929,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
           data-css-8u2q7u=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <div
               data-css-ne3jjf=""
@@ -2007,7 +2007,7 @@ exports[`Storyshots menu divider 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2075,7 +2075,7 @@ exports[`Storyshots menu in stack 1`] = `
           data-css-8u2q7u=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <div
               data-css-ne3jjf=""
@@ -2134,7 +2134,7 @@ exports[`Storyshots menu in stack 1`] = `
           data-css-8u2q7u=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <div
               data-css-ne3jjf=""
@@ -2204,7 +2204,7 @@ exports[`Storyshots menu nested 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2272,7 +2272,7 @@ exports[`Storyshots menu onClicks 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-utxo7p=""
+        data-css-in6gqi=""
       >
         <div
           data-css-ne3jjf=""
@@ -2359,7 +2359,7 @@ exports[`Storyshots menu single list 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2425,7 +2425,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2493,7 +2493,7 @@ exports[`Storyshots menu super long 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2559,7 +2559,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2625,7 +2625,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2693,7 +2693,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2759,7 +2759,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2827,7 +2827,7 @@ exports[`Storyshots props whitelist title 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -2910,7 +2910,7 @@ exports[`Storyshots whitelist clear 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""
@@ -2976,7 +2976,7 @@ exports[`Storyshots whitelist name 1`] = `
       data-css-8u2q7u=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <div
           data-css-ne3jjf=""
@@ -3056,7 +3056,7 @@ exports[`Storyshots whitelist onChange 1`] = `
         data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
             data-css-ne3jjf=""

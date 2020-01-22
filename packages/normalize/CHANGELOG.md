@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.18...@pluralsight/ps-design-system-normalize@3.1.20) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [3.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.16...@pluralsight/ps-design-system-normalize@3.1.18) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [3.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.14...@pluralsight/ps-design-system-normalize@3.1.16) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [3.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.13...@pluralsight/ps-design-system-normalize@3.1.14) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
 ## [3.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@3.1.12...@pluralsight/ps-design-system-normalize@3.1.13) (2020-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize
