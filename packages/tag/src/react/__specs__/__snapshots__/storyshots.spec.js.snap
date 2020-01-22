@@ -11,7 +11,7 @@ exports[`Storyshots actions button 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1avozw2=""
+        data-css-118jh52=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -38,7 +38,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1fobjei=""
+        data-css-gk8v57=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -79,7 +79,7 @@ exports[`Storyshots actions just icon button 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-wa9aah=""
+        data-css-qqcts=""
       >
         <span
           data-css-1997kh1=""
@@ -117,7 +117,7 @@ exports[`Storyshots actions link 1`] = `
       data-css-480533=""
     >
       <a
-        data-css-1avozw2=""
+        data-css-118jh52=""
         href="https://duckduckgo.com/"
       >
         <span
@@ -142,7 +142,7 @@ exports[`Storyshots actions link with target 1`] = `
       data-css-480533=""
     >
       <a
-        data-css-1avozw2=""
+        data-css-118jh52=""
         href="https://duckduckgo.com/"
         target="_blank"
       >
@@ -168,7 +168,7 @@ exports[`Storyshots actions small button 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1i9achc=""
+        data-css-1uq890c=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -195,7 +195,7 @@ exports[`Storyshots error focusable 1`] = `
       data-css-11lyqbs=""
     >
       <div
-        data-css-1avozw2=""
+        data-css-118jh52=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -222,7 +222,7 @@ exports[`Storyshots icon medium 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-wa9aah=""
+        data-css-qqcts=""
       >
         <span
           data-css-1997kh1=""
@@ -260,7 +260,7 @@ exports[`Storyshots icon small 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-llk67k=""
+        data-css-1djephf=""
       >
         <span
           data-css-1997kh1=""
@@ -299,7 +299,7 @@ exports[`Storyshots isPressed button 1`] = `
     >
       <div
         aria-pressed={true}
-        data-css-uehscn=""
+        data-css-9da3oj=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -327,7 +327,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
     >
       <div
         aria-pressed={true}
-        data-css-1kwjqf=""
+        data-css-miasr5=""
         onClick={[Function]}
         role="button"
         tabIndex={0}
@@ -369,7 +369,7 @@ exports[`Storyshots isPressed link 1`] = `
     >
       <a
         aria-pressed={true}
-        data-css-uehscn=""
+        data-css-9da3oj=""
         href="https://duckduckgo.com/"
         onClick={[Function]}
         role="button"
@@ -386,6 +386,93 @@ exports[`Storyshots isPressed link 1`] = `
 </div>
 `;
 
+exports[`Storyshots isPressed without click/href 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-1r7zk4a=""
+  >
+    <div
+      data-css-480533=""
+    >
+      <div
+        aria-pressed={true}
+        data-css-2yhwm3=""
+      >
+        <span
+          data-css-1997kh1=""
+        >
+          no click/href
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots long string 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-1r7zk4a=""
+  >
+    <div
+      data-css-480533=""
+    >
+      <div
+        data-css-1oh88fc=""
+      >
+        <span
+          data-css-1997kh1=""
+        >
+          This is the string that goes on forever and always. There really isn't an end. Wow.
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots long with icon 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-1r7zk4a=""
+  >
+    <div
+      data-css-480533=""
+    >
+      <div
+        data-css-qqcts=""
+      >
+        <span
+          data-css-1997kh1=""
+        >
+          This is the string that goes on forever and always. There really isn't an end. Wow.
+        </span>
+        <div
+          data-css-otejxm=""
+          onClick={[Function]}
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots size medium 1`] = `
 <div
   data-css-1so76ss=""
@@ -397,7 +484,7 @@ exports[`Storyshots size medium 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-frhtu8=""
+        data-css-1oh88fc=""
       >
         <span
           data-css-1997kh1=""
@@ -421,7 +508,7 @@ exports[`Storyshots size small 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1kwinz7=""
+        data-css-5jeww0=""
       >
         <span
           data-css-1997kh1=""
