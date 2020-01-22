@@ -34,12 +34,6 @@ const styles = {
       fullOverlay && css(stylesheet['.psds-row__action-bar--fullOverlay']),
       visible && css(stylesheet['.psds-row__action-bar--actionBarVisible'])
     ),
-  actionBarAction: ({ disabled, themeName }) =>
-    compose(
-      css(stylesheet['.psds-row__action-bar__button']),
-      css(stylesheet[`.psds-row__action-bar__button.psds-theme--${themeName}`]),
-      disabled && css(stylesheet['.psds-row__action-bar__button--disabled'])
-    ),
   fullOverlay: ({ fullOverlayVisible: visible, isFocused }) =>
     compose(
       css(stylesheet['.psds-row__full-overlay']),
@@ -99,23 +93,6 @@ const styles = {
 const ActionBar = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
-
-const ActionBarAction = withTheme(
-  React.forwardRef((props, ref) => {
-    // eslint-disable-next-line react/prop-types
-    const { icon, ...rest } = props
-    const filteredProps = filterReactProps(rest, { tagName: 'button' })
-
-    return (
-      <button {...styles.actionBarAction(props)} ref={ref} {...filteredProps}>
-        {icon}
-      </button>
-    )
-  })
-)
-
-ActionBarAction.displayName = 'Row.Action'
-ActionBarAction.propTypes = { icon: PropTypes.element.isRequired }
 
 const FullOverlayFocusManager = ({ fullOverlayVisible, fullOverlay }) => {
   const [isFocused, setFocused] = useState(false)
@@ -389,7 +366,7 @@ const Row = ({ title, titleTruncated, ...props }) => {
 }
 
 Row.propTypes = {
-  actionBar: PropTypes.arrayOf(elementOfType(ActionBarAction)),
+  actionBar: PropTypes.arrayOf(PropTypes.object), // <Button size="small" appearance="secondary" />
   actionBarVisible: PropTypes.bool,
   fullOverlay: PropTypes.oneOfType([
     PropTypes.element,
@@ -430,7 +407,6 @@ Row.defaultProps = {
 Row.sizes = vars.sizes
 export const sizes = Row.sizes
 
-Row.Action = ActionBarAction
 Row.FullOverlayLink = FullOverlayLink
 Row.Image = Image
 Row.ImageLink = ImageLink

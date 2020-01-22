@@ -128,7 +128,14 @@ storiesOf('drawer', module)
     <Drawer
       base={
         <Row
-          actionBar={[<Row.Action key="iHeartCats" icon={<Icon.MoreIcon />} />]}
+          actionBar={[
+            <Button
+              size={Button.sizes.small}
+              appearance={Button.appearances.flat}
+              key="iHeartCats"
+              icon={<Icon.MoreIcon />}
+            />
+          ]}
           actionBarVisible
           image={<Row.Image src="https://cataas.com/cat" />}
           metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
@@ -145,7 +152,9 @@ storiesOf('drawer', module)
       base={
         <Row
           actionBar={[
-            <Row.Action
+            <Button
+              size={Button.sizes.small}
+              appearance={Button.appearances.flat}
               key="iHeartCats"
               icon={<Icon.MoreIcon />}
               onClick={action('action')}

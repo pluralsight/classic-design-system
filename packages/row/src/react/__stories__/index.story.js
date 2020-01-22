@@ -2,6 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
+import Button from '@pluralsight/ps-design-system-button'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
@@ -54,9 +55,24 @@ storiesOf('combo', module).add('everything', _ => (
     ))}
     metadata2={['Goodness me!']}
     actionBar={[
-      <Row.Action key="bookmark" icon={<Icon.BookmarkIcon />} />,
-      <Row.Action key="gear" icon={<Icon.GearIcon />} />,
-      <Row.Action key="more" icon={<Icon.MoreIcon />} />
+      <Button
+        size={Button.sizes.small}
+        appearance={Button.appearances.flat}
+        key="bookmark"
+        icon={<Icon.BookmarkIcon />}
+      />,
+      <Button
+        size={Button.sizes.small}
+        appearance={Button.appearances.flat}
+        key="gear"
+        icon={<Icon.GearIcon />}
+      />,
+      <Button
+        size={Button.sizes.small}
+        appearance={Button.appearances.flat}
+        key="more"
+        icon={<Icon.MoreIcon />}
+      />
     ]}
     actionBarVisible
   />
@@ -266,19 +282,40 @@ storiesOf('actionBar', module)
   .add('one action', _ => (
     <Row
       title="Ready, Action, Bar!"
-      actionBar={[<Row.Action key="bookmark" icon={<Icon.BookmarkIcon />} />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          key="bookmark"
+          icon={<Icon.BookmarkIcon />}
+        />
+      ]}
     />
   ))
   .add('long title', _ => (
     <Row
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
-      actionBar={[<Row.Action key="bookmark" icon={<Icon.BookmarkIcon />} />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          key="bookmark"
+          icon={<Icon.BookmarkIcon />}
+        />
+      ]}
     />
   ))
   .add('long title with image', _ => (
     <Row
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
-      actionBar={[<Row.Action key="bookmark" icon={<Icon.BookmarkIcon />} />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          key="bookmark"
+          icon={<Icon.BookmarkIcon />}
+        />
+      ]}
       image={<Row.Image src={getImgSrc()} />}
     />
   ))
@@ -286,7 +323,14 @@ storiesOf('actionBar', module)
     <Row
       actionBarVisible
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
-      actionBar={[<Row.Action key="bookmark" icon={<Icon.BookmarkIcon />} />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          key="bookmark"
+          icon={<Icon.BookmarkIcon />}
+        />
+      ]}
       image={<Row.Image src={getImgSrc()} />}
     />
   ))
@@ -353,7 +397,9 @@ Object.keys(Row.sizes).forEach(size =>
           metadata1={['1m 46s']}
           image={<Row.Image src={getImgSrc()} />}
           actionBar={[
-            <Row.Action
+            <Button
+              size={Button.sizes.small}
+              appearance={Button.appearances.flat}
               icon={<Icon.MoreIcon />}
               key="more"
               onClick={action('clicked action')}
@@ -375,14 +421,28 @@ storiesOf('in a stack', module).add('no top border on first row', _ => (
       title="Course thing you do"
       metadata1={['1m 46s']}
       image={<Row.Image src={getImgSrc()} />}
-      actionBar={[<Row.Action icon={<Icon.MoreIcon />} key="more" />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<Icon.MoreIcon />}
+          key="more"
+        />
+      ]}
       actionBarVisible
     />
     <Row
       title="Course thing you do"
       metadata1={['1m 46s']}
       image={<Row.Image src={getImgSrc()} />}
-      actionBar={[<Row.Action icon={<Icon.MoreIcon />} key="more" />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<Icon.MoreIcon />}
+          key="more"
+        />
+      ]}
       actionBarVisible
     />
   </>
