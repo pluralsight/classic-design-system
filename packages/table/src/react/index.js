@@ -22,10 +22,7 @@ const styles = {
 
     return compose(
       css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
       emphasis && css(stylesheet[`.${label}--emphasis`]),
-      emphasis &&
-        css(stylesheet[`.${label}--emphasis.psds-theme--${themeName}`]),
       align && css(stylesheet[`.${label}--align-${align}`])
     )
   },
