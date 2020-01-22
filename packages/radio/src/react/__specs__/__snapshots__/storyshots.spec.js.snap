@@ -30,7 +30,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -47,7 +47,7 @@ exports[`Storyshots Radio default 1`] = `
           value="red"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Red
         </div>
@@ -68,7 +68,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -85,7 +85,7 @@ exports[`Storyshots Radio default 1`] = `
           value="green"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Green
         </div>
@@ -106,7 +106,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -123,7 +123,7 @@ exports[`Storyshots Radio default 1`] = `
           value="blue"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Blue
         </div>
@@ -163,7 +163,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -180,7 +180,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="red"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Red
         </div>
@@ -201,13 +201,13 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1m80hge=""
+              data-css-12prt44=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-16yi4o9=""
+                data-css-1qtmg0s=""
               />
             </div>
           </div>
@@ -222,7 +222,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="green"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Green
         </div>
@@ -243,7 +243,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -260,7 +260,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="blue"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Blue
         </div>
@@ -300,7 +300,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -317,7 +317,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="red"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Red
         </div>
@@ -338,13 +338,13 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1m80hge=""
+              data-css-12prt44=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-16yi4o9=""
+                data-css-1qtmg0s=""
               />
             </div>
           </div>
@@ -359,7 +359,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="green"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Green
         </div>
@@ -380,7 +380,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
@@ -397,7 +397,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="blue"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Blue
         </div>
@@ -437,7 +437,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -454,7 +454,7 @@ exports[`Storyshots Radio error 1`] = `
           value="red"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Red
         </div>
@@ -475,13 +475,13 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1m80hge=""
+              data-css-12prt44=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-16yi4o9=""
+                data-css-1qtmg0s=""
               />
             </div>
           </div>
@@ -496,7 +496,7 @@ exports[`Storyshots Radio error 1`] = `
           value="green"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Green
         </div>
@@ -517,7 +517,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -534,7 +534,7 @@ exports[`Storyshots Radio error 1`] = `
           value="blue"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Blue
         </div>
@@ -574,7 +574,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -591,7 +591,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="red"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Red
         </div>
@@ -612,13 +612,13 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1m80hge=""
+              data-css-12prt44=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-16yi4o9=""
+                data-css-1qtmg0s=""
               />
             </div>
           </div>
@@ -633,7 +633,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="green"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Green
         </div>
@@ -654,7 +654,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
@@ -671,7 +671,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="blue"
         />
         <div
-          data-css-cgsoeo=""
+          data-css-wbyy03=""
         >
           Blue
         </div>
@@ -723,13 +723,13 @@ exports[`Storyshots Radio state demo 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-1m80hge=""
+                data-css-12prt44=""
                 onFocus={[Function]}
                 role="radio"
                 tabIndex="-1"
               >
                 <div
-                  data-css-16yi4o9=""
+                  data-css-1qtmg0s=""
                 />
               </div>
             </div>
@@ -744,7 +744,7 @@ exports[`Storyshots Radio state demo 1`] = `
             value="red"
           />
           <div
-            data-css-cgsoeo=""
+            data-css-wbyy03=""
           >
             Red
           </div>
@@ -765,7 +765,7 @@ exports[`Storyshots Radio state demo 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-dbvyuf=""
+                data-css-1e1erju=""
                 onFocus={[Function]}
                 role="radio"
                 tabIndex="-1"
@@ -782,7 +782,7 @@ exports[`Storyshots Radio state demo 1`] = `
             value="green"
           />
           <div
-            data-css-cgsoeo=""
+            data-css-wbyy03=""
           >
             Green
           </div>
@@ -803,7 +803,7 @@ exports[`Storyshots Radio state demo 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-dbvyuf=""
+                data-css-1e1erju=""
                 onFocus={[Function]}
                 role="radio"
                 tabIndex="-1"
@@ -820,7 +820,7 @@ exports[`Storyshots Radio state demo 1`] = `
             value="blue"
           />
           <div
-            data-css-cgsoeo=""
+            data-css-wbyy03=""
           >
             Blue
           </div>
