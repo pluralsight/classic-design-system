@@ -2,7 +2,6 @@ import { css } from 'glamor'
 import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 
-import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import Context from './context.js'
@@ -13,11 +12,7 @@ import { Tier1, Tier2 } from './item.js'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  verticaltabs: themeName =>
-    css(
-      stylesheet['.psds-verticaltabs'],
-      stylesheet[`.psds-verticaltabs.psds-theme--${themeName}`]
-    )
+  verticaltabs: _ => css(stylesheet['.psds-verticaltabs'])
 }
 
 const VerticalTabs = forwardRef((props, ref) => {
@@ -28,7 +23,6 @@ const VerticalTabs = forwardRef((props, ref) => {
     ...rest
   } = props
 
-  const themeName = useTheme()
   const contextValue = React.useMemo(() => ({ forceCollapsed, hideLabels }), [
     forceCollapsed,
     hideLabels
@@ -38,7 +32,7 @@ const VerticalTabs = forwardRef((props, ref) => {
     <Context.Provider value={contextValue}>
       <ul
         ref={ref}
-        {...styles.verticaltabs(themeName)}
+        {...styles.verticaltabs()}
         {...filterReactProps(rest, { tagName: 'ul' })}
       >
         {children}

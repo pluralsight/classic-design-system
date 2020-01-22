@@ -149,4 +149,9 @@
   --psColors2020PrimaryActionBackground: #0084bd;
   --psColors2020PrimaryActionTextDarkTheme: #2ea0d6;
   --psColors2020PrimaryActionTextLightTheme: #0074ab;
+
+  --psColors2020StatusError: var(--psColors2020RedBase);
+  --psColors2020StatusInfo: var(--psColors2020BlueBase);
+  --psColors2020StatusSuccess: var(--psColors2020GreenBase);
+  --psColors2020StatusWarning: var(--psColors2020YellowBase);
 }

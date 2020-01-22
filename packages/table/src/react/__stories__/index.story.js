@@ -170,6 +170,15 @@ Object.keys(Table.aligns).forEach(align => {
     </Table>
   ))
 })
+cellStory.add('with child anchor', _ => (
+  <Table>
+    <Table.Row>
+      <Table.Cell>
+        cell text <a href="#">inline link</a> and more text
+      </Table.Cell>
+    </Table.Row>
+  </Table>
+))
 cellStory.add('custom className', _ => (
   <Table>
     <Table.Row>
