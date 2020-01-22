@@ -14,7 +14,7 @@ exports[`Storyshots checked false 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -54,7 +54,7 @@ exports[`Storyshots checked true 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-3p558u=""
@@ -94,7 +94,7 @@ exports[`Storyshots click large toggles 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -129,7 +129,7 @@ exports[`Storyshots click small toggles 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-2sz0ak=""
@@ -164,7 +164,7 @@ exports[`Storyshots color blue 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-3p558u=""
@@ -204,7 +204,7 @@ exports[`Storyshots color green 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-1ad2n5h=""
@@ -244,7 +244,7 @@ exports[`Storyshots color orange 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-3p558u=""
@@ -284,7 +284,7 @@ exports[`Storyshots disabled false 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -319,7 +319,7 @@ exports[`Storyshots disabled true 1`] = `
     tabIndex={-1}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -354,7 +354,7 @@ exports[`Storyshots error false 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -389,7 +389,7 @@ exports[`Storyshots error true 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-11lyqbs=""
+      data-css-mmyfiy=""
     >
       <div
         data-css-rao1gl=""
@@ -429,7 +429,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
     tabIndex={-1}
   >
     <div
-      data-css-11lyqbs=""
+      data-css-mmyfiy=""
     >
       <div
         data-css-rao1gl=""
@@ -469,7 +469,7 @@ exports[`Storyshots label large left 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -509,7 +509,7 @@ exports[`Storyshots label large right 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -549,7 +549,7 @@ exports[`Storyshots label small left 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-2sz0ak=""
@@ -589,7 +589,7 @@ exports[`Storyshots label small right 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-2sz0ak=""
@@ -629,7 +629,7 @@ exports[`Storyshots size large 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-rao1gl=""
@@ -669,7 +669,7 @@ exports[`Storyshots size small 1`] = `
     tabIndex={0}
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-2sz0ak=""
