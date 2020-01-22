@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.3.0...@pluralsight/ps-design-system-core@5.4.0) (2020-01-22)
+
+
+### Features
+
+* **core:** add status color vars/tokens ([8cbb314](https://github.com/pluralsight/design-system/commit/8cbb314851ff14b28b9b0c60a12850ce4ded8c81))
+
+
+
+
+
 # [5.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.2.0...@pluralsight/ps-design-system-core@5.3.0) (2020-01-17)
 
 
