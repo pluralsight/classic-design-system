@@ -21,13 +21,13 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
       >
         <div
           aria-checked={true}
-          data-css-1sxo0xr=""
+          data-css-18wdktl=""
           role="checkbox"
           tabIndex="0"
         >
           <svg
             aria-label="Indeterminate Mark"
-            data-css-a3uikz=""
+            data-css-ey6g07=""
             role="img"
             version="1.1"
             viewBox="0 0 16 16"
@@ -53,7 +53,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
         value="red"
       />
       <div
-        data-css-pgc406=""
+        data-css-185gc3y=""
       >
         Red
       </div>
@@ -83,13 +83,13 @@ exports[`Storyshots Checkbox checked 1`] = `
       >
         <div
           aria-checked={true}
-          data-css-1sxo0xr=""
+          data-css-18wdktl=""
           role="checkbox"
           tabIndex="0"
         >
           <svg
             aria-label="Checkmark"
-            data-css-a3uikz=""
+            data-css-ey6g07=""
             role="img"
             version="1.1"
             viewBox="0 0 16 16"
@@ -112,7 +112,7 @@ exports[`Storyshots Checkbox checked 1`] = `
         value="red"
       />
       <div
-        data-css-pgc406=""
+        data-css-185gc3y=""
       >
         Red
       </div>
@@ -142,7 +142,7 @@ exports[`Storyshots Checkbox default 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-v2gdam=""
+          data-css-13tsqsg=""
           role="checkbox"
           tabIndex="0"
         />
@@ -158,7 +158,7 @@ exports[`Storyshots Checkbox default 1`] = `
         value="red"
       />
       <div
-        data-css-pgc406=""
+        data-css-185gc3y=""
       >
         Red
       </div>
@@ -188,7 +188,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-v2gdam=""
+          data-css-13tsqsg=""
           role="checkbox"
           tabIndex="-1"
         />
@@ -204,7 +204,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
         value="red"
       />
       <div
-        data-css-pgc406=""
+        data-css-185gc3y=""
       >
         Red
       </div>
@@ -234,7 +234,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-v2gdam=""
+          data-css-13tsqsg=""
           role="checkbox"
           tabIndex="-1"
         />
@@ -250,7 +250,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
         value="red"
       />
       <div
-        data-css-pgc406=""
+        data-css-185gc3y=""
       >
         Red
       </div>
@@ -281,13 +281,13 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <div
             aria-checked={true}
-            data-css-1sxo0xr=""
+            data-css-18wdktl=""
             role="checkbox"
             tabIndex="0"
           >
             <svg
               aria-label="Checkmark"
-              data-css-a3uikz=""
+              data-css-ey6g07=""
               role="img"
               version="1.1"
               viewBox="0 0 16 16"
@@ -310,7 +310,7 @@ exports[`Storyshots Checkbox error 1`] = `
           value="red"
         />
         <div
-          data-css-pgc406=""
+          data-css-185gc3y=""
         >
           Red
         </div>
@@ -325,7 +325,7 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-v2gdam=""
+            data-css-13tsqsg=""
             role="checkbox"
             tabIndex="0"
           />
@@ -341,7 +341,7 @@ exports[`Storyshots Checkbox error 1`] = `
           value="red"
         />
         <div
-          data-css-pgc406=""
+          data-css-185gc3y=""
         >
           Red
         </div>
@@ -372,13 +372,13 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-1sxo0xr=""
+          data-css-18wdktl=""
           role="checkbox"
           tabIndex="0"
         >
           <svg
             aria-label="Indeterminate Mark"
-            data-css-a3uikz=""
+            data-css-ey6g07=""
             role="img"
             version="1.1"
             viewBox="0 0 16 16"
@@ -404,7 +404,7 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
         value="red"
       />
       <div
-        data-css-pgc406=""
+        data-css-185gc3y=""
       >
         Red
       </div>
@@ -446,7 +446,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-v2gdam=""
+            data-css-13tsqsg=""
             role="checkbox"
             tabIndex="0"
           />
@@ -462,7 +462,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
           value="red"
         />
         <div
-          data-css-pgc406=""
+          data-css-185gc3y=""
         >
           Red
         </div>
@@ -477,7 +477,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-v2gdam=""
+            data-css-13tsqsg=""
             role="checkbox"
             tabIndex="0"
           />
@@ -493,7 +493,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
           value="green"
         />
         <div
-          data-css-pgc406=""
+          data-css-185gc3y=""
         >
           Green
         </div>
@@ -508,7 +508,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-v2gdam=""
+            data-css-13tsqsg=""
             role="checkbox"
             tabIndex="0"
           />
@@ -524,7 +524,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
           value="blue"
         />
         <div
-          data-css-pgc406=""
+          data-css-185gc3y=""
         >
           Blue
         </div>

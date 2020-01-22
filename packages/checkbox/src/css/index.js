@@ -20,13 +20,13 @@ export default {
     height: '16px',
     width: '16px',
     borderRadius: '2px',
-    border: `2px solid ${core.colors.gray02}`,
-    background: core.colors.gray05,
+    border: `2px solid ${core.colorsTextIcon.lowOnDark}`,
+    background: core.colorsBackgroundDark[1],
     color: core.colors.white
   },
   [`.psds-checkbox__square.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    borderColor: core.colors.gray04,
+    background: core.colorsBackgroundLight[3],
+    borderColor: core.colorsTextIcon.lowOnLight,
 
     '&:focus': { outline: 'none' }
   },
@@ -62,26 +62,14 @@ export default {
     right: '-7px',
     bottom: '-7px'
   },
-  '.psds-checkbox__square:focus:before': {
-    background: core.colors.gray05
-  },
   '.psds-checkbox__square:focus:after': {
-    background: core.colors.blue
-  },
-  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:before`]: {
-    background: core.colors.bone
-  },
-  '.psds-checkbox__square--error:before': {
-    background: core.colors.gray05
-  },
-  [`.psds-checkbox__square--error.psds-theme--${themeNames.light}:before`]: {
-    background: core.colors.bone
+    background: core.colorsBlue.base
   },
   '.psds-checkbox__square--error:after': {
-    background: core.colors.red
+    background: core.colorsStatus.error
   },
   '.psds-checkbox__square--active': {
-    background: core.colors.blue,
+    background: core.colorsBlue.base,
     border: 'none'
   },
   '.psds-checkbox__square--active:focus:before, .psds-checkbox__square--active--error:before': {
@@ -113,7 +101,7 @@ export default {
   '.psds-checkbox__icon': {
     height: '100%',
     width: '100%',
-    fill: core.colors.white
+    fill: core.colorsTextIcon.highOnDark
   },
 
   // __input
@@ -124,12 +112,12 @@ export default {
   // __label
   '.psds-checkbox__label': {
     marginLeft: core.layout.spacingSmall,
-    color: core.colors.bone,
+    color: core.colorsTextIcon.highOnDark,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,
     fontWeight: core.type.fontWeightMedium
   },
   [`.psds-checkbox__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray04
+    color: core.colorsTextIcon.highOnLight
   }
 }
