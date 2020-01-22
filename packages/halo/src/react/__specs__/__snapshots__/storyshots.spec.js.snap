@@ -8,7 +8,7 @@ exports[`Storyshots Halo/error false 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-1xm24a9=""
+      data-css-ctre2o=""
     >
       <div>
         not error
@@ -26,7 +26,7 @@ exports[`Storyshots Halo/error true 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-utxo7p=""
+      data-css-in6gqi=""
     >
       <div>
         error
@@ -44,7 +44,7 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-nbiptv=""
+      data-css-77dl98=""
     >
       <div>
         default
@@ -62,7 +62,7 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-nbiptv=""
+      data-css-77dl98=""
     >
       <div>
         small
@@ -80,7 +80,7 @@ exports[`Storyshots Halo/shapes default 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-nbiptv=""
+      data-css-77dl98=""
     >
       <div
         shape="default"
@@ -100,7 +100,7 @@ exports[`Storyshots Halo/shapes pill 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-34tmci=""
+      data-css-1jg9j68=""
     >
       <div
         shape="pill"
@@ -120,7 +120,7 @@ exports[`Storyshots Halo/visible false & error 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-utxo7p=""
+      data-css-in6gqi=""
     >
       <div>
         not visible (always visible if error) & error
@@ -138,7 +138,7 @@ exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-14u1z9b=""
+      data-css-rmw7at=""
     >
       <div>
         really not visible (even on focus)
@@ -156,7 +156,7 @@ exports[`Storyshots Halo/visible false 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-1xm24a9=""
+      data-css-ctre2o=""
     >
       <div>
         not visible (until focused)
@@ -174,7 +174,7 @@ exports[`Storyshots Halo/visible true & error 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-nbiptv=""
+      data-css-77dl98=""
     >
       <div>
         visible & error
@@ -192,7 +192,7 @@ exports[`Storyshots Halo/visible true 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-nbiptv=""
+      data-css-77dl98=""
     >
       <div>
         visible
@@ -210,7 +210,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-utxo7p=""
+      data-css-in6gqi=""
     >
       <div>
         visible when focused with error
@@ -228,7 +228,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
     data-css-aelvpu=""
   >
     <div
-      data-css-1xm24a9=""
+      data-css-ctre2o=""
     >
       <div>
         visible when focused
