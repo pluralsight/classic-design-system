@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tab",
-  "version": "14.0.13",
+  "version": "14.0.14",
   "description": "Design system component for tab list ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,10 +20,10 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^5.4.2",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.12",
-    "@pluralsight/ps-design-system-icon": "^16.1.5",
-    "@pluralsight/ps-design-system-util": "^3.0.6",
+    "@pluralsight/ps-design-system-core": "^5.4.3",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.13",
+    "@pluralsight/ps-design-system-icon": "^16.1.6",
+    "@pluralsight/ps-design-system-util": "^3.0.7",
     "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1"
   },
@@ -34,9 +34,9 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.6",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.5",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.10",
-    "@pluralsight/ps-design-system-theme": "^4.0.5"
+    "@pluralsight/ps-design-system-build": "^1.11.7",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.6",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.11",
+    "@pluralsight/ps-design-system-theme": "^4.0.6"
   }
 }
