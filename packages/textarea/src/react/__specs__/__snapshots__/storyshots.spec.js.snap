@@ -9,7 +9,7 @@ exports[`Storyshots disabled compare 1`] = `
       data-css-na8jqt=""
     >
       <div
-        data-css-1j9p7fe=""
+        data-css-hnaccs=""
       >
         Normal
       </div>
@@ -20,7 +20,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-ctre2o=""
         >
           <textarea
-            data-css-12a0glg=""
+            data-css-1nz7dvz=""
             disabled={false}
             placeholder="I'm normal, see"
             rows={4}
@@ -33,7 +33,7 @@ exports[`Storyshots disabled compare 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Still normal
       </div>
@@ -42,7 +42,7 @@ exports[`Storyshots disabled compare 1`] = `
       data-css-1tctpgo=""
     >
       <div
-        data-css-1j9p7fe=""
+        data-css-hnaccs=""
       >
         I'm not usable
       </div>
@@ -53,7 +53,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-ctre2o=""
         >
           <textarea
-            data-css-12a0glg=""
+            data-css-1nz7dvz=""
             disabled={true}
             placeholder="I'm untouchable"
             rows={4}
@@ -66,7 +66,7 @@ exports[`Storyshots disabled compare 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Neither am I
       </div>
@@ -84,7 +84,7 @@ exports[`Storyshots error compare 1`] = `
       data-css-na8jqt=""
     >
       <div
-        data-css-1j9p7fe=""
+        data-css-hnaccs=""
       >
         Normal
       </div>
@@ -95,7 +95,7 @@ exports[`Storyshots error compare 1`] = `
           data-css-ctre2o=""
         >
           <textarea
-            data-css-12a0glg=""
+            data-css-1nz7dvz=""
             disabled={false}
             placeholder="I'm normal, see"
             rows={4}
@@ -108,7 +108,7 @@ exports[`Storyshots error compare 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Still normal
       </div>
@@ -117,7 +117,7 @@ exports[`Storyshots error compare 1`] = `
       data-css-na8jqt=""
     >
       <div
-        data-css-1j9p7fe=""
+        data-css-hnaccs=""
       >
         I'm in an error state
       </div>
@@ -128,7 +128,7 @@ exports[`Storyshots error compare 1`] = `
           data-css-in6gqi=""
         >
           <textarea
-            data-css-12a0glg=""
+            data-css-1nz7dvz=""
             disabled={false}
             rows={4}
             style={
@@ -140,7 +140,7 @@ exports[`Storyshots error compare 1`] = `
           />
         </div>
         <div
-          data-css-1ss30jn=""
+          data-css-h6j4b2=""
         >
           <div
             data-css-otejxm=""
@@ -160,7 +160,7 @@ exports[`Storyshots error compare 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Here
       </div>
@@ -183,7 +183,7 @@ exports[`Storyshots focus onFocus/onBlur 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -209,7 +209,7 @@ exports[`Storyshots labels all 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-1j9p7fe=""
+      data-css-hnaccs=""
     >
       Some label
     </div>
@@ -220,7 +220,7 @@ exports[`Storyshots labels all 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           placeholder="Some placeholder"
           rows={4}
@@ -233,7 +233,7 @@ exports[`Storyshots labels all 1`] = `
       </div>
     </div>
     <div
-      data-css-1de0a6a=""
+      data-css-bf7jp3=""
     >
       Some sublabel
     </div>
@@ -249,7 +249,7 @@ exports[`Storyshots labels label 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-1j9p7fe=""
+      data-css-hnaccs=""
     >
       Some label
     </div>
@@ -260,7 +260,7 @@ exports[`Storyshots labels label 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           rows={4}
           style={
@@ -283,7 +283,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-1j9p7fe=""
+      data-css-hnaccs=""
     >
       Some label
     </div>
@@ -294,7 +294,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           rows={4}
           style={
@@ -306,7 +306,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       </div>
     </div>
     <div
-      data-css-1de0a6a=""
+      data-css-bf7jp3=""
     >
       Some sublabel
     </div>
@@ -328,7 +328,7 @@ exports[`Storyshots labels none 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           rows={4}
           style={
@@ -357,7 +357,7 @@ exports[`Storyshots labels placeholder 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           placeholder="some placeholder"
           rows={4}
@@ -387,7 +387,7 @@ exports[`Storyshots labels subLabel 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           rows={4}
           style={
@@ -399,7 +399,7 @@ exports[`Storyshots labels subLabel 1`] = `
       </div>
     </div>
     <div
-      data-css-1de0a6a=""
+      data-css-bf7jp3=""
     >
       Some sublabel
     </div>
@@ -427,7 +427,7 @@ exports[`Storyshots layouts Form.VerticalLayout 1`] = `
         }
       >
         <div
-          data-css-1j9p7fe=""
+          data-css-hnaccs=""
         >
           Inside Form.VerticalLayout
         </div>
@@ -438,7 +438,7 @@ exports[`Storyshots layouts Form.VerticalLayout 1`] = `
             data-css-ctre2o=""
           >
             <textarea
-              data-css-12a0glg=""
+              data-css-1nz7dvz=""
               disabled={false}
               rows={4}
               style={
@@ -477,7 +477,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-1j9p7fe=""
+        data-css-hnaccs=""
       >
         max-width still applies
       </div>
@@ -488,7 +488,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-ctre2o=""
         >
           <textarea
-            data-css-12a0glg=""
+            data-css-1nz7dvz=""
             disabled={false}
             rows={4}
             style={
@@ -511,7 +511,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-1j9p7fe=""
+        data-css-hnaccs=""
       >
         remove max-width
       </div>
@@ -522,7 +522,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-in6gqi=""
         >
           <textarea
-            data-css-12a0glg=""
+            data-css-1nz7dvz=""
             disabled={false}
             rows={4}
             style={
@@ -533,7 +533,7 @@ exports[`Storyshots layouts full width 1`] = `
           />
         </div>
         <div
-          data-css-1ss30jn=""
+          data-css-h6j4b2=""
         >
           <div
             data-css-otejxm=""
@@ -565,7 +565,7 @@ exports[`Storyshots rows less than 4 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-1j9p7fe=""
+      data-css-hnaccs=""
     >
       Min Height Engages
     </div>
@@ -576,7 +576,7 @@ exports[`Storyshots rows less than 4 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           rows={1}
           style={
@@ -599,7 +599,7 @@ exports[`Storyshots rows more than 4 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-1j9p7fe=""
+      data-css-hnaccs=""
     >
       6 Rows of Text
     </div>
@@ -610,7 +610,7 @@ exports[`Storyshots rows more than 4 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           rows={6}
           style={
@@ -639,7 +639,7 @@ exports[`Storyshots whitelist name 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           name="myFieldNameOfPower"
           placeholder="I have a form name"
@@ -670,7 +670,7 @@ exports[`Storyshots whitelist onChange 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-12a0glg=""
+          data-css-1nz7dvz=""
           disabled={false}
           onChange={[Function]}
           placeholder="Change me"
