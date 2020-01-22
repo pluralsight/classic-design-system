@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@6.0.17...@pluralsight/ps-design-system-datepicker@6.0.19) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [6.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@6.0.15...@pluralsight/ps-design-system-datepicker@6.0.17) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [6.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@6.0.13...@pluralsight/ps-design-system-datepicker@6.0.15) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [6.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@6.0.12...@pluralsight/ps-design-system-datepicker@6.0.13) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
 ## [6.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@6.0.11...@pluralsight/ps-design-system-datepicker@6.0.12) (2020-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
