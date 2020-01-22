@@ -674,7 +674,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   >
                     <div
                       aria-checked={false}
-                      data-css-dbvyuf=""
+                      data-css-1e1erju=""
                       onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
@@ -691,7 +691,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="full"
                 />
                 <div
-                  data-css-cgsoeo=""
+                  data-css-wbyy03=""
                 >
                   Full-time employement
                 </div>
@@ -712,7 +712,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   >
                     <div
                       aria-checked={false}
-                      data-css-dbvyuf=""
+                      data-css-1e1erju=""
                       onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
@@ -729,7 +729,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="part"
                 />
                 <div
-                  data-css-cgsoeo=""
+                  data-css-wbyy03=""
                 >
                   Part-time employement
                 </div>
