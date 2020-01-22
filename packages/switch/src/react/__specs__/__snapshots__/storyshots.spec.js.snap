@@ -17,10 +17,10 @@ exports[`Storyshots checked false 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -32,7 +32,7 @@ exports[`Storyshots checked false 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Click me
     </label>
@@ -57,10 +57,10 @@ exports[`Storyshots checked true 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1t8mno4=""
+        data-css-3p558u=""
       >
         <div
-          data-css-4g7l16=""
+          data-css-1pmieqv=""
         />
       </div>
     </div>
@@ -72,7 +72,7 @@ exports[`Storyshots checked true 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Click me
     </label>
@@ -97,10 +97,10 @@ exports[`Storyshots click large toggles 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -132,10 +132,10 @@ exports[`Storyshots click small toggles 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1m9fpc5=""
+        data-css-2sz0ak=""
       >
         <div
-          data-css-1qt5hlf=""
+          data-css-1ua381t=""
         />
       </div>
     </div>
@@ -167,10 +167,10 @@ exports[`Storyshots color blue 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1yognj7=""
+        data-css-3p558u=""
       >
         <div
-          data-css-4g7l16=""
+          data-css-1pmieqv=""
         />
       </div>
     </div>
@@ -182,7 +182,7 @@ exports[`Storyshots color blue 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Click me
     </label>
@@ -207,10 +207,10 @@ exports[`Storyshots color green 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1ecl5dy=""
+        data-css-1ad2n5h=""
       >
         <div
-          data-css-4g7l16=""
+          data-css-1pmieqv=""
         />
       </div>
     </div>
@@ -222,7 +222,7 @@ exports[`Storyshots color green 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Click me
     </label>
@@ -247,10 +247,10 @@ exports[`Storyshots color orange 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1t8mno4=""
+        data-css-3p558u=""
       >
         <div
-          data-css-4g7l16=""
+          data-css-1pmieqv=""
         />
       </div>
     </div>
@@ -262,7 +262,7 @@ exports[`Storyshots color orange 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Click me
     </label>
@@ -287,10 +287,10 @@ exports[`Storyshots disabled false 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -322,10 +322,10 @@ exports[`Storyshots disabled true 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -357,10 +357,10 @@ exports[`Storyshots error false 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -392,10 +392,10 @@ exports[`Storyshots error true 1`] = `
       data-css-11lyqbs=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -407,7 +407,7 @@ exports[`Storyshots error true 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Clickable in error state
     </label>
@@ -432,10 +432,10 @@ exports[`Storyshots error true w/ disabled 1`] = `
       data-css-11lyqbs=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -447,7 +447,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Such errors
     </label>
@@ -472,10 +472,10 @@ exports[`Storyshots label large left 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -487,7 +487,7 @@ exports[`Storyshots label large left 1`] = `
       type="checkbox"
     />
     <label
-      data-css-aau49w=""
+      data-css-qisca0=""
     >
       Click me
     </label>
@@ -512,10 +512,10 @@ exports[`Storyshots label large right 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -527,7 +527,7 @@ exports[`Storyshots label large right 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Click me
     </label>
@@ -552,10 +552,10 @@ exports[`Storyshots label small left 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1m9fpc5=""
+        data-css-2sz0ak=""
       >
         <div
-          data-css-1qt5hlf=""
+          data-css-1ua381t=""
         />
       </div>
     </div>
@@ -567,7 +567,7 @@ exports[`Storyshots label small left 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1waj6du=""
+      data-css-kccklm=""
     >
       Click me
     </label>
@@ -592,10 +592,10 @@ exports[`Storyshots label small right 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1m9fpc5=""
+        data-css-2sz0ak=""
       >
         <div
-          data-css-1qt5hlf=""
+          data-css-1ua381t=""
         />
       </div>
     </div>
@@ -607,7 +607,7 @@ exports[`Storyshots label small right 1`] = `
       type="checkbox"
     />
     <label
-      data-css-6olsyv=""
+      data-css-yktx6h=""
     >
       Click me
     </label>
@@ -632,10 +632,10 @@ exports[`Storyshots size large 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1rncajx=""
+        data-css-rao1gl=""
       >
         <div
-          data-css-1nqr5a6=""
+          data-css-12e9w50=""
         />
       </div>
     </div>
@@ -647,7 +647,7 @@ exports[`Storyshots size large 1`] = `
       type="checkbox"
     />
     <label
-      data-css-1wrf03j=""
+      data-css-on3oux=""
     >
       Click me
     </label>
@@ -672,10 +672,10 @@ exports[`Storyshots size small 1`] = `
       data-css-480533=""
     >
       <div
-        data-css-1m9fpc5=""
+        data-css-2sz0ak=""
       >
         <div
-          data-css-1qt5hlf=""
+          data-css-1ua381t=""
         />
       </div>
     </div>
@@ -687,7 +687,7 @@ exports[`Storyshots size small 1`] = `
       type="checkbox"
     />
     <label
-      data-css-6olsyv=""
+      data-css-yktx6h=""
     >
       Click me
     </label>
