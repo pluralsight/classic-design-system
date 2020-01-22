@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.13...@pluralsight/ps-design-system-checkbox@5.0.15) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.11...@pluralsight/ps-design-system-checkbox@5.0.13) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.9...@pluralsight/ps-design-system-checkbox@5.0.11) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.8...@pluralsight/ps-design-system-checkbox@5.0.9) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
 ## [5.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.7...@pluralsight/ps-design-system-checkbox@5.0.8) (2020-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
