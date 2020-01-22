@@ -8,7 +8,7 @@ exports[`Storyshots actions button 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-118jh52=""
@@ -35,7 +35,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-gk8v57=""
@@ -76,7 +76,7 @@ exports[`Storyshots actions just icon button 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-qqcts=""
@@ -114,7 +114,7 @@ exports[`Storyshots actions link 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <a
         data-css-118jh52=""
@@ -139,7 +139,7 @@ exports[`Storyshots actions link with target 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <a
         data-css-118jh52=""
@@ -165,7 +165,7 @@ exports[`Storyshots actions small button 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-1uq890c=""
@@ -192,7 +192,7 @@ exports[`Storyshots error focusable 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-11lyqbs=""
+      data-css-mmyfiy=""
     >
       <div
         data-css-118jh52=""
@@ -219,7 +219,7 @@ exports[`Storyshots icon medium 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-qqcts=""
@@ -257,7 +257,7 @@ exports[`Storyshots icon small 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-1djephf=""
@@ -295,7 +295,7 @@ exports[`Storyshots isPressed button 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         aria-pressed={true}
@@ -323,7 +323,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         aria-pressed={true}
@@ -365,7 +365,7 @@ exports[`Storyshots isPressed link 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <a
         aria-pressed={true}
@@ -419,7 +419,7 @@ exports[`Storyshots long string 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-1oh88fc=""
@@ -443,7 +443,7 @@ exports[`Storyshots long with icon 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-qqcts=""
@@ -481,7 +481,7 @@ exports[`Storyshots size medium 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-1oh88fc=""
@@ -505,7 +505,7 @@ exports[`Storyshots size small 1`] = `
     data-css-1r7zk4a=""
   >
     <div
-      data-css-480533=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-5jeww0=""

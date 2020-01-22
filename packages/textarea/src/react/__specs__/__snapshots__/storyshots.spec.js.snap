@@ -17,7 +17,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-1ios7mb=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <textarea
             data-css-12a0glg=""
@@ -50,7 +50,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-1ios7mb=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <textarea
             data-css-12a0glg=""
@@ -92,7 +92,7 @@ exports[`Storyshots error compare 1`] = `
         data-css-1ios7mb=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <textarea
             data-css-12a0glg=""
@@ -125,7 +125,7 @@ exports[`Storyshots error compare 1`] = `
         data-css-1ios7mb=""
       >
         <div
-          data-css-utxo7p=""
+          data-css-in6gqi=""
         >
           <textarea
             data-css-12a0glg=""
@@ -180,7 +180,7 @@ exports[`Storyshots focus onFocus/onBlur 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -217,7 +217,7 @@ exports[`Storyshots labels all 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -257,7 +257,7 @@ exports[`Storyshots labels label 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -291,7 +291,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -325,7 +325,7 @@ exports[`Storyshots labels none 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -354,7 +354,7 @@ exports[`Storyshots labels placeholder 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -384,7 +384,7 @@ exports[`Storyshots labels subLabel 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -435,7 +435,7 @@ exports[`Storyshots layouts Form.VerticalLayout 1`] = `
           data-css-1ios7mb=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <textarea
               data-css-12a0glg=""
@@ -485,7 +485,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-1ios7mb=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <textarea
             data-css-12a0glg=""
@@ -519,7 +519,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-1ios7mb=""
       >
         <div
-          data-css-utxo7p=""
+          data-css-in6gqi=""
         >
           <textarea
             data-css-12a0glg=""
@@ -573,7 +573,7 @@ exports[`Storyshots rows less than 4 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -607,7 +607,7 @@ exports[`Storyshots rows more than 4 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -636,7 +636,7 @@ exports[`Storyshots whitelist name 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
@@ -667,7 +667,7 @@ exports[`Storyshots whitelist onChange 1`] = `
       data-css-1ios7mb=""
     >
       <div
-        data-css-1xm24a9=""
+        data-css-ctre2o=""
       >
         <textarea
           data-css-12a0glg=""
