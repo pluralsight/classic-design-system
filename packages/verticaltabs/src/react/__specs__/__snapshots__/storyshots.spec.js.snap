@@ -5,13 +5,13 @@ exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li
       data-css-1268me8=""
     >
       <h2
-        data-css-1ygb770=""
+        data-css-1ix4obe=""
       >
         <div>
           <span
@@ -26,8 +26,8 @@ exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -42,8 +42,8 @@ exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -59,8 +59,8 @@ exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
         <li>
           <div
             data-active={true}
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -75,8 +75,8 @@ exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -100,7 +100,7 @@ exports[`Storyshots components|VerticalTabs/Group basic 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li
       data-css-1268me8=""
@@ -110,8 +110,8 @@ exports[`Storyshots components|VerticalTabs/Group basic 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -126,8 +126,8 @@ exports[`Storyshots components|VerticalTabs/Group basic 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -142,8 +142,8 @@ exports[`Storyshots components|VerticalTabs/Group basic 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -158,8 +158,8 @@ exports[`Storyshots components|VerticalTabs/Group basic 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -183,11 +183,11 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <div>
       <h2
-        data-css-1ygb770=""
+        data-css-1ix4obe=""
       >
         <button
           aria-label="Expand"
@@ -221,8 +221,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -237,8 +237,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -253,8 +253,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -269,8 +269,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -294,11 +294,11 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <div>
       <h2
-        data-css-1ygb770=""
+        data-css-1ix4obe=""
       >
         <button
           aria-label="Collapse"
@@ -332,8 +332,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -348,8 +348,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -364,8 +364,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -380,8 +380,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -405,13 +405,13 @@ exports[`Storyshots components|VerticalTabs/Group header 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li
       data-css-1268me8=""
     >
       <h2
-        data-css-1ygb770=""
+        data-css-1ix4obe=""
       >
         <div>
           <span
@@ -426,8 +426,8 @@ exports[`Storyshots components|VerticalTabs/Group header 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -442,8 +442,8 @@ exports[`Storyshots components|VerticalTabs/Group header 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -458,8 +458,8 @@ exports[`Storyshots components|VerticalTabs/Group header 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -474,8 +474,8 @@ exports[`Storyshots components|VerticalTabs/Group header 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -499,13 +499,13 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li
       data-css-1268me8=""
     >
       <h2
-        data-css-1ygb770=""
+        data-css-1ix4obe=""
       >
         <div>
           <span
@@ -520,8 +520,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -538,8 +538,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
           >
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -552,8 +552,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -566,8 +566,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -582,8 +582,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -600,8 +600,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
           >
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -614,8 +614,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -628,8 +628,8 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -653,13 +653,13 @@ exports[`Storyshots components|VerticalTabs/Tier1 active 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
         data-active={true}
-        data-css-13xqjhl=""
-        data-css-1b8plv5=""
+        data-css-1jlubof=""
+        data-css-1sg3kjc=""
       >
         <span
           data-css-zrqgca=""
@@ -696,12 +696,12 @@ exports[`Storyshots components|VerticalTabs/Tier1 basic 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
-        data-css-13xqjhl=""
-        data-css-1b8plv5=""
+        data-css-1jlubof=""
+        data-css-1sg3kjc=""
       >
         <span
           data-css-zrqgca=""
@@ -737,12 +737,12 @@ exports[`Storyshots components|VerticalTabs/Tier1 button 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
-        data-css-13xqjhl=""
-        data-css-1b8plv5=""
+        data-css-1jlubof=""
+        data-css-1sg3kjc=""
       >
         <button
           data-css-zrqgca=""
@@ -779,12 +779,12 @@ exports[`Storyshots components|VerticalTabs/Tier1 collapsible 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
-        data-css-13xqjhl=""
-        data-css-1b8plv5=""
+        data-css-1jlubof=""
+        data-css-1sg3kjc=""
       >
         <button
           data-css-zrqgca=""
@@ -844,12 +844,12 @@ exports[`Storyshots components|VerticalTabs/Tier1 link 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
-        data-css-13xqjhl=""
-        data-css-1b8plv5=""
+        data-css-1jlubof=""
+        data-css-1sg3kjc=""
       >
         <a
           data-css-zrqgca=""
@@ -886,13 +886,13 @@ exports[`Storyshots components|VerticalTabs/Tier2 active 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
         data-active={true}
-        data-css-1b8plv5=""
-        data-css-1uosnkx=""
+        data-css-1sg3kjc=""
+        data-css-jp9uxl=""
       >
         <span>
           <span
@@ -912,12 +912,12 @@ exports[`Storyshots components|VerticalTabs/Tier2 basic 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
-        data-css-1b8plv5=""
-        data-css-1uosnkx=""
+        data-css-1sg3kjc=""
+        data-css-jp9uxl=""
       >
         <span>
           <span
@@ -937,12 +937,12 @@ exports[`Storyshots components|VerticalTabs/Tier2 button 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
-        data-css-1b8plv5=""
-        data-css-1uosnkx=""
+        data-css-1sg3kjc=""
+        data-css-jp9uxl=""
       >
         <button
           onClick={[Function]}
@@ -964,12 +964,12 @@ exports[`Storyshots components|VerticalTabs/Tier2 link 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li>
       <div
-        data-css-1b8plv5=""
-        data-css-1uosnkx=""
+        data-css-1sg3kjc=""
+        data-css-jp9uxl=""
       >
         <a
           href="#"
@@ -1007,7 +1007,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
     }
   >
     <ul
-      data-css-nqd4p3=""
+      data-css-15hj73r=""
     >
       <li
         data-css-1268me8=""
@@ -1017,8 +1017,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
         >
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1051,8 +1051,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1085,8 +1085,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <button
                 data-css-zrqgca=""
@@ -1134,8 +1134,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
             >
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1152,8 +1152,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               <li>
                 <div
                   data-active={true}
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1169,8 +1169,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1186,8 +1186,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1203,8 +1203,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1222,8 +1222,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1256,8 +1256,8 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1314,13 +1314,13 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
     }
   >
     <ul
-      data-css-nqd4p3=""
+      data-css-15hj73r=""
     >
       <li
         data-css-1268me8=""
       >
         <h2
-          data-css-1ygb770=""
+          data-css-1ix4obe=""
         >
           <div>
             <span
@@ -1335,8 +1335,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         >
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1356,8 +1356,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1377,8 +1377,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1398,8 +1398,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1420,13 +1420,13 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         </ul>
       </li>
       <hr
-        data-css-1luso1=""
+        data-css-7hrnfu=""
       />
       <li
         data-css-1268me8=""
       >
         <h2
-          data-css-1ygb770=""
+          data-css-1ix4obe=""
         >
           <div>
             <span
@@ -1441,8 +1441,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         >
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1476,8 +1476,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1511,8 +1511,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1546,8 +1546,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1581,8 +1581,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1617,13 +1617,13 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         </ul>
       </li>
       <hr
-        data-css-1luso1=""
+        data-css-7hrnfu=""
       />
       <li
         data-css-1268me8=""
       >
         <h2
-          data-css-1ygb770=""
+          data-css-1ix4obe=""
         >
           <div>
             <span
@@ -1638,8 +1638,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         >
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1659,8 +1659,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
               <li>
                 <div
                   data-active={true}
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1676,8 +1676,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1695,8 +1695,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1716,8 +1716,8 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <a
                 data-css-zrqgca=""
@@ -1738,7 +1738,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         </ul>
       </li>
       <hr
-        data-css-1luso1=""
+        data-css-7hrnfu=""
       />
     </ul>
   </div>
@@ -1766,7 +1766,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
     }
   >
     <ul
-      data-css-nqd4p3=""
+      data-css-15hj73r=""
     >
       <li
         data-css-1268me8=""
@@ -1776,8 +1776,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
         >
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <span
                 data-css-zrqgca=""
@@ -1809,8 +1809,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <button
                 data-css-zrqgca=""
@@ -1858,8 +1858,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
             >
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1875,8 +1875,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1892,8 +1892,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1909,8 +1909,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1926,8 +1926,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1943,8 +1943,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -1962,8 +1962,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <button
                 data-css-zrqgca=""
@@ -2011,8 +2011,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
             >
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2028,8 +2028,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2046,8 +2046,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               <li>
                 <div
                   data-active={true}
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2063,8 +2063,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2080,8 +2080,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2099,8 +2099,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <button
                 data-css-zrqgca=""
@@ -2148,8 +2148,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
             >
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2167,8 +2167,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
           </li>
           <li>
             <div
-              data-css-13xqjhl=""
-              data-css-1b8plv5=""
+              data-css-1jlubof=""
+              data-css-1sg3kjc=""
             >
               <button
                 data-css-zrqgca=""
@@ -2216,8 +2216,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
             >
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2233,8 +2233,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2250,8 +2250,8 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               </li>
               <li>
                 <div
-                  data-css-1b8plv5=""
-                  data-css-1uosnkx=""
+                  data-css-1sg3kjc=""
+                  data-css-jp9uxl=""
                 >
                   <a
                     href="#"
@@ -2279,13 +2279,13 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
   data-css-b1z6un=""
 >
   <ul
-    data-css-nqd4p3=""
+    data-css-15hj73r=""
   >
     <li
       data-css-1268me8=""
     >
       <h2
-        data-css-1ygb770=""
+        data-css-1ix4obe=""
       >
         <div>
           <span
@@ -2300,8 +2300,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -2318,8 +2318,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
           >
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2332,8 +2332,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2346,8 +2346,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2362,8 +2362,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -2394,8 +2394,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
           >
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2408,8 +2408,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2422,8 +2422,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2440,7 +2440,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
     </li>
     <div>
       <h2
-        data-css-1ygb770=""
+        data-css-1ix4obe=""
       >
         <button
           aria-label="Collapse"
@@ -2474,8 +2474,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
       >
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -2492,8 +2492,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
           >
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2506,8 +2506,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2520,8 +2520,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2536,8 +2536,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
         </li>
         <li>
           <div
-            data-css-13xqjhl=""
-            data-css-1b8plv5=""
+            data-css-1jlubof=""
+            data-css-1sg3kjc=""
           >
             <span
               data-css-zrqgca=""
@@ -2568,8 +2568,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
           >
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2582,8 +2582,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
@@ -2596,8 +2596,8 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             </li>
             <li>
               <div
-                data-css-1b8plv5=""
-                data-css-1uosnkx=""
+                data-css-1sg3kjc=""
+                data-css-jp9uxl=""
               >
                 <span>
                   <span
