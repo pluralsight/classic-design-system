@@ -10,7 +10,7 @@ exports[`Storyshots cell align center 1`] = `
     role="row"
   >
     <div
-      data-css-187b6yg=""
+      data-css-1fq7qo2=""
       role="cell"
       style={Object {}}
     >
@@ -31,7 +31,7 @@ exports[`Storyshots cell align left 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -52,7 +52,7 @@ exports[`Storyshots cell align right 1`] = `
     role="row"
   >
     <div
-      data-css-lbxvqf=""
+      data-css-mxt6a3=""
       role="cell"
       style={Object {}}
     >
@@ -73,7 +73,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -84,7 +84,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
       </a>
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -96,7 +96,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -108,7 +108,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
       </a>
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -129,7 +129,7 @@ exports[`Storyshots cell custom className 1`] = `
   >
     <div
       className="some-classname"
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -149,7 +149,7 @@ exports[`Storyshots cell custom style 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -173,14 +173,14 @@ exports[`Storyshots cell emphasis text 1`] = `
     role="row"
   >
     <div
-      data-css-qxm2r1=""
+      data-css-13emsj4=""
       role="cell"
       style={Object {}}
     >
       em-PHA-sis
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -200,7 +200,7 @@ exports[`Storyshots cell empty 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     />
@@ -218,7 +218,7 @@ exports[`Storyshots cell flex 1 | 4 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -229,7 +229,7 @@ exports[`Storyshots cell flex 1 | 4 1`] = `
       Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1 Flex 1
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -253,7 +253,7 @@ exports[`Storyshots cell flex 2 | 1 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -264,7 +264,7 @@ exports[`Storyshots cell flex 2 | 1 1`] = `
       Flex 2
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -288,7 +288,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -299,7 +299,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
       Flex 2
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -315,7 +315,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -326,7 +326,7 @@ exports[`Storyshots cell flex, multiple cell, multiple row 1`] = `
       Flex 2
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={
         Object {
@@ -350,14 +350,14 @@ exports[`Storyshots cell inner padding 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
       Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell 1 text Cell
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -377,14 +377,14 @@ exports[`Storyshots cell multiple text 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
       Cell 1 text
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -404,7 +404,7 @@ exports[`Storyshots cell text 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -1186,14 +1186,14 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
             cell text
           </div>
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
@@ -1300,14 +1300,14 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
       cell text
     </div>
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -1337,7 +1337,7 @@ exports[`Storyshots drawer mulitple 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
@@ -1399,7 +1399,7 @@ exports[`Storyshots drawer mulitple 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
@@ -1469,21 +1469,21 @@ exports[`Storyshots drawer nested table 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
             Parent Cell
           </div>
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
             Parent Cell
           </div>
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
@@ -1535,47 +1535,21 @@ exports[`Storyshots drawer nested table 1`] = `
             role="row"
           >
             <div
-              data-css-1cc2f5z=""
+              data-css-yawg45=""
               role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
-              data-css-1cc2f5z=""
+              data-css-yawg45=""
               role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
-              data-css-1cc2f5z=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-          </div>
-          <div
-            data-css-lmjdxe=""
-            role="row"
-          >
-            <div
-              data-css-1cc2f5z=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-1cc2f5z=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-1cc2f5z=""
+              data-css-yawg45=""
               role="cell"
               style={Object {}}
             >
@@ -1587,21 +1561,47 @@ exports[`Storyshots drawer nested table 1`] = `
             role="row"
           >
             <div
-              data-css-1cc2f5z=""
+              data-css-yawg45=""
               role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
-              data-css-1cc2f5z=""
+              data-css-yawg45=""
               role="cell"
               style={Object {}}
             >
               Child Cell
             </div>
             <div
-              data-css-1cc2f5z=""
+              data-css-yawg45=""
+              role="cell"
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+          </div>
+          <div
+            data-css-lmjdxe=""
+            role="row"
+          >
+            <div
+              data-css-yawg45=""
+              role="cell"
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-yawg45=""
+              role="cell"
+              style={Object {}}
+            >
+              Child Cell
+            </div>
+            <div
+              data-css-yawg45=""
               role="cell"
               style={Object {}}
             >
@@ -1635,7 +1635,7 @@ exports[`Storyshots drawer single 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={Object {}}
           >
@@ -1705,7 +1705,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={
               Object {
@@ -1716,7 +1716,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
             flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
           </div>
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={
               Object {
@@ -1782,7 +1782,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={
               Object {
@@ -1793,7 +1793,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
             flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
           </div>
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={
               Object {
@@ -1859,7 +1859,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           role="row"
         >
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={
               Object {
@@ -1870,7 +1870,7 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
             flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
           </div>
           <div
-            data-css-1cc2f5z=""
+            data-css-yawg45=""
             role="cell"
             style={
               Object {
@@ -1935,7 +1935,7 @@ exports[`Storyshots row custom className 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -1960,7 +1960,7 @@ exports[`Storyshots row custom style 1`] = `
     }
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -1980,7 +1980,7 @@ exports[`Storyshots row multiple rows 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -1992,7 +1992,7 @@ exports[`Storyshots row multiple rows 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -2004,7 +2004,7 @@ exports[`Storyshots row multiple rows 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -2024,7 +2024,7 @@ exports[`Storyshots row one row, content 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -2057,7 +2057,7 @@ exports[`Storyshots table custom className 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
@@ -2082,7 +2082,7 @@ exports[`Storyshots table custom style 1`] = `
     role="row"
   >
     <div
-      data-css-1cc2f5z=""
+      data-css-yawg45=""
       role="cell"
       style={Object {}}
     >
