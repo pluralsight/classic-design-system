@@ -30,7 +30,7 @@ export default {
     fontWeight: type.fontWeightBook,
     color: colorsTextIcon.HighOnLight,
     padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
-    border: 'none',
+    border: `1px solid ${colorsBorder.lowOnDark}`,
 
     '&:focus': { outline: 'none' },
     '&::placeholder': { color: colorsTextIcon.lowOnLight }
