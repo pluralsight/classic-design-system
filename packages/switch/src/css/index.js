@@ -47,7 +47,6 @@ export default {
     height: '24px',
     width: '48px',
     borderRadius: '12px'
-    // padding: '1px'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.blue}`]: {
     backgroundColor: core.colorsBlue.base,
