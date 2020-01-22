@@ -63,6 +63,7 @@ storiesOf('isPressed', module)
       As a button
     </PressedTag>
   ))
+  .add('without click/href', _ => <Tag isPressed>no click/href</Tag>)
 
 storiesOf('long', module)
   .add('string', _ => (
