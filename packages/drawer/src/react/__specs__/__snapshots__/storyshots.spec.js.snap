@@ -371,7 +371,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
             </div>
           </div>
           <div
-            data-css-1akhza9=""
+            data-css-7b22zo=""
           >
             <button
               data-css-j5lae8=""
@@ -1258,24 +1258,33 @@ exports[`Storyshots drawer with row component 1`] = `
             </div>
           </div>
           <div
-            data-css-okadky=""
+            data-css-7zyoug=""
           >
             <button
-              data-css-2qvjr2=""
+              data-css-j5lae8=""
+              disabled={false}
+              style={Object {}}
             >
               <div
-                data-css-otejxm=""
+                data-css-y80vay=""
               >
-                <svg
-                  aria-label="more icon"
-                  role="img"
-                  viewBox="0 0 24 24"
+                <div
+                  data-css-otejxm=""
                 >
-                  <path
-                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                  />
-                </svg>
+                  <svg
+                    aria-label="more icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                    />
+                  </svg>
+                </div>
               </div>
+              <span
+                data-css-15b13by=""
+              />
             </button>
           </div>
         </div>
