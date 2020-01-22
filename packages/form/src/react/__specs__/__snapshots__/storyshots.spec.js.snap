@@ -596,13 +596,13 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-1sxo0xr=""
+                data-css-18wdktl=""
                 role="checkbox"
                 tabIndex="0"
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-a3uikz=""
+                  data-css-ey6g07=""
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -630,7 +630,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               value="someVal"
             />
             <div
-              data-css-pgc406=""
+              data-css-185gc3y=""
             >
               Checkbox selected
             </div>

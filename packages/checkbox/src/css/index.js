@@ -69,7 +69,7 @@ export default {
     background: core.colorsStatus.error
   },
   '.psds-checkbox__square--active': {
-    background: core.colorsStatus.info,
+    background: core.colorsBlue.base,
     border: 'none'
   },
   '.psds-checkbox__square--active:focus:before, .psds-checkbox__square--active--error:before': {
