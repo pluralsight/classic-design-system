@@ -1,3 +1,4 @@
+import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
@@ -39,14 +40,28 @@ const ExampleDrawerPanel = () => (
     <Row
       title="Course Overview"
       metadata1={['1m 46s']}
-      actionBar={[<Row.Action icon={<BookmarkIcon />} key="bookmark" />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<BookmarkIcon />}
+          key="bookmark"
+        />
+      ]}
       size={Row.sizes.small}
       actionBarVisible
     />
     <Row
       title="What is ASP.NET Core?"
       metadata1={['39m 28s']}
-      actionBar={[<Row.Action icon={<BookmarkIcon />} key="bookmark" />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<BookmarkIcon />}
+          key="bookmark"
+        />
+      ]}
       size={Row.sizes.small}
       actionBarVisible
     />
