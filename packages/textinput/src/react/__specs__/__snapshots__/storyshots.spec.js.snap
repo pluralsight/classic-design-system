@@ -21,10 +21,10 @@ exports[`Storyshots after field w/icon 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-1oolqwv=""
+            data-css-q830u4=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="Some placeholder"
               size="medium"
@@ -71,10 +71,10 @@ exports[`Storyshots appearance default medium w/ iconAlign left 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-1ir2txp=""
+            data-css-j2bcjh=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="The placeholder "
               size="medium"
@@ -82,7 +82,7 @@ exports[`Storyshots appearance default medium w/ iconAlign left 1`] = `
           </div>
         </div>
         <div
-          data-css-1w67sw9=""
+          data-css-9fh4h5=""
         >
           <div
             data-css-otejxm=""
@@ -127,10 +127,10 @@ exports[`Storyshots appearance default medium w/ iconAlign right 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-ajs356=""
+            data-css-1yz65u0=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="The placeholder "
               size="medium"
@@ -138,7 +138,7 @@ exports[`Storyshots appearance default medium w/ iconAlign right 1`] = `
           </div>
         </div>
         <div
-          data-css-121dxw3=""
+          data-css-awmen3=""
         >
           <div
             data-css-otejxm=""
@@ -183,10 +183,10 @@ exports[`Storyshots appearance default small w/ iconAlign left 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-ldlj12=""
+            data-css-dcmnug=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="The placeholder "
               size="small"
@@ -194,7 +194,7 @@ exports[`Storyshots appearance default small w/ iconAlign left 1`] = `
           </div>
         </div>
         <div
-          data-css-1w67sw9=""
+          data-css-9fh4h5=""
         >
           <div
             data-css-otejxm=""
@@ -239,10 +239,10 @@ exports[`Storyshots appearance default small w/ iconAlign right 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-txecu0=""
+            data-css-1tg10fg=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="The placeholder "
               size="small"
@@ -250,7 +250,7 @@ exports[`Storyshots appearance default small w/ iconAlign right 1`] = `
           </div>
         </div>
         <div
-          data-css-121dxw3=""
+          data-css-awmen3=""
         >
           <div
             data-css-otejxm=""
@@ -289,7 +289,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
         Problem field
       </div>
@@ -300,17 +300,17 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-in6gqi=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               size="medium"
             />
           </div>
         </div>
         <div
-          data-css-loo18p=""
+          data-css-1ha66tv=""
         >
           <div
             data-css-otejxm=""
@@ -355,10 +355,10 @@ exports[`Storyshots appearance small 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-9668hb=""
+            data-css-r3qbdc=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="small input"
               size="small"
@@ -392,10 +392,10 @@ exports[`Storyshots appearance subtle medium w/ iconAlign left 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-1e3i43a=""
+            data-css-1ar6lh1=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-egljo0=""
               disabled={false}
               placeholder="The placeholder "
               size="medium"
@@ -403,7 +403,7 @@ exports[`Storyshots appearance subtle medium w/ iconAlign left 1`] = `
           </div>
         </div>
         <div
-          data-css-1x5ndtu=""
+          data-css-1os68q9=""
         >
           <div
             data-css-otejxm=""
@@ -448,10 +448,10 @@ exports[`Storyshots appearance subtle medium w/ iconAlign right 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-g760uo=""
+            data-css-my8ipd=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-egljo0=""
               disabled={false}
               placeholder="The placeholder "
               size="medium"
@@ -459,7 +459,7 @@ exports[`Storyshots appearance subtle medium w/ iconAlign right 1`] = `
           </div>
         </div>
         <div
-          data-css-13qmv6x=""
+          data-css-seje8w=""
         >
           <div
             data-css-otejxm=""
@@ -504,10 +504,10 @@ exports[`Storyshots appearance subtle small w/ iconAlign left 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-3xz96j=""
+            data-css-1x7qqwa=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-egljo0=""
               disabled={false}
               placeholder="The placeholder "
               size="small"
@@ -515,7 +515,7 @@ exports[`Storyshots appearance subtle small w/ iconAlign left 1`] = `
           </div>
         </div>
         <div
-          data-css-1x5ndtu=""
+          data-css-1os68q9=""
         >
           <div
             data-css-otejxm=""
@@ -560,10 +560,10 @@ exports[`Storyshots appearance subtle small w/ iconAlign right 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-pcxuzt=""
+            data-css-177y2wa=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-egljo0=""
               disabled={false}
               placeholder="The placeholder "
               size="small"
@@ -571,7 +571,7 @@ exports[`Storyshots appearance subtle small w/ iconAlign right 1`] = `
           </div>
         </div>
         <div
-          data-css-13qmv6x=""
+          data-css-seje8w=""
         >
           <div
             data-css-otejxm=""
@@ -610,7 +610,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
         Problem field
       </div>
@@ -621,17 +621,17 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-in6gqi=""
         >
           <div
-            data-css-1talm5x=""
+            data-css-1600jit=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-egljo0=""
               disabled={false}
               size="medium"
             />
           </div>
         </div>
         <div
-          data-css-loo18p=""
+          data-css-1ha66tv=""
         >
           <div
             data-css-otejxm=""
@@ -671,7 +671,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-w0yocm=""
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
           Normal
         </div>
@@ -682,10 +682,10 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ctre2o=""
           >
             <div
-              data-css-177hkuc=""
+              data-css-ydex85=""
             >
               <input
-                data-css-lzb8ea=""
+                data-css-1aru8qc=""
                 disabled={false}
                 placeholder="I'm normal, see"
                 size="medium"
@@ -694,7 +694,7 @@ exports[`Storyshots disabled compare 1`] = `
           </div>
         </div>
         <div
-          data-css-1de0a6a=""
+          data-css-bf7jp3=""
         >
           Still normal
         </div>
@@ -703,7 +703,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-1y0hkm3=""
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
           I'm not usable
         </div>
@@ -714,10 +714,10 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ctre2o=""
           >
             <div
-              data-css-177hkuc=""
+              data-css-ydex85=""
             >
               <input
-                data-css-lzb8ea=""
+                data-css-1aru8qc=""
                 disabled={true}
                 placeholder="I'm untouchable"
                 size="medium"
@@ -726,7 +726,7 @@ exports[`Storyshots disabled compare 1`] = `
           </div>
         </div>
         <div
-          data-css-1de0a6a=""
+          data-css-bf7jp3=""
         >
           Neither am I
         </div>
@@ -735,7 +735,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-1y0hkm3=""
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
           Disbled and errored
         </div>
@@ -746,10 +746,10 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-in6gqi=""
           >
             <div
-              data-css-177hkuc=""
+              data-css-ydex85=""
             >
               <input
-                data-css-lzb8ea=""
+                data-css-1aru8qc=""
                 disabled={true}
                 placeholder="I'm untouchable"
                 size="medium"
@@ -757,7 +757,7 @@ exports[`Storyshots disabled compare 1`] = `
             </div>
           </div>
           <div
-            data-css-loo18p=""
+            data-css-1ha66tv=""
           >
             <div
               data-css-otejxm=""
@@ -777,7 +777,7 @@ exports[`Storyshots disabled compare 1`] = `
           </div>
         </div>
         <div
-          data-css-1de0a6a=""
+          data-css-bf7jp3=""
         >
           Neither am I
         </div>
@@ -802,7 +802,7 @@ exports[`Storyshots labels all 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
         Some label
       </div>
@@ -813,10 +813,10 @@ exports[`Storyshots labels all 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="Some placeholder"
               size="medium"
@@ -825,7 +825,7 @@ exports[`Storyshots labels all 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Some sublabel
       </div>
@@ -849,7 +849,7 @@ exports[`Storyshots labels all w/error 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
         Some label
       </div>
@@ -860,10 +860,10 @@ exports[`Storyshots labels all w/error 1`] = `
           data-css-in6gqi=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="Some placeholder"
               size="medium"
@@ -871,7 +871,7 @@ exports[`Storyshots labels all w/error 1`] = `
           </div>
         </div>
         <div
-          data-css-loo18p=""
+          data-css-1ha66tv=""
         >
           <div
             data-css-otejxm=""
@@ -891,7 +891,7 @@ exports[`Storyshots labels all w/error 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Some sublabel
       </div>
@@ -915,7 +915,7 @@ exports[`Storyshots labels label 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
         Some label
       </div>
@@ -926,10 +926,10 @@ exports[`Storyshots labels label 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               size="medium"
             />
@@ -956,7 +956,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
         Some label
       </div>
@@ -967,10 +967,10 @@ exports[`Storyshots labels label and subLabel 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               size="medium"
             />
@@ -978,7 +978,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Some sublabel
       </div>
@@ -1013,10 +1013,10 @@ exports[`Storyshots labels long placeholder 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="some placeholder that goes on forever when the little things can't handle it"
               size="medium"
@@ -1050,10 +1050,10 @@ exports[`Storyshots labels none 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               size="medium"
             />
@@ -1086,10 +1086,10 @@ exports[`Storyshots labels placeholder 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="some placeholder"
               size="medium"
@@ -1123,10 +1123,10 @@ exports[`Storyshots labels subLabel 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               size="medium"
             />
@@ -1134,7 +1134,7 @@ exports[`Storyshots labels subLabel 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
         Some sublabel
       </div>
@@ -1172,7 +1172,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
           First
         </div>
@@ -1183,10 +1183,10 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ctre2o=""
           >
             <div
-              data-css-177hkuc=""
+              data-css-ydex85=""
             >
               <input
-                data-css-lzb8ea=""
+                data-css-1aru8qc=""
                 disabled={false}
                 size="medium"
               />
@@ -1204,7 +1204,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
           Second
         </div>
@@ -1215,17 +1215,17 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-in6gqi=""
           >
             <div
-              data-css-177hkuc=""
+              data-css-ydex85=""
             >
               <input
-                data-css-lzb8ea=""
+                data-css-1aru8qc=""
                 disabled={false}
                 size="medium"
               />
             </div>
           </div>
           <div
-            data-css-loo18p=""
+            data-css-1ha66tv=""
           >
             <div
               data-css-otejxm=""
@@ -1255,7 +1255,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
           Third
         </div>
@@ -1266,10 +1266,10 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ctre2o=""
           >
             <div
-              data-css-1talm5x=""
+              data-css-1600jit=""
             >
               <input
-                data-css-lzb8ea=""
+                data-css-egljo0=""
                 disabled={false}
                 size="medium"
               />
@@ -1287,7 +1287,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
           Fourth
         </div>
@@ -1298,17 +1298,17 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-in6gqi=""
           >
             <div
-              data-css-1talm5x=""
+              data-css-1600jit=""
             >
               <input
-                data-css-lzb8ea=""
+                data-css-egljo0=""
                 disabled={false}
                 size="medium"
               />
             </div>
           </div>
           <div
-            data-css-loo18p=""
+            data-css-1ha66tv=""
           >
             <div
               data-css-otejxm=""
@@ -1369,10 +1369,10 @@ exports[`Storyshots layouts right-aligned 1`] = `
               data-css-ctre2o=""
             >
               <div
-                data-css-1e3i43a=""
+                data-css-1ar6lh1=""
               >
                 <input
-                  data-css-lzb8ea=""
+                  data-css-egljo0=""
                   disabled={false}
                   placeholder="Search"
                   size="medium"
@@ -1380,7 +1380,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               </div>
             </div>
             <div
-              data-css-1x5ndtu=""
+              data-css-1os68q9=""
             >
               <div
                 data-css-otejxm=""
@@ -1435,10 +1435,10 @@ exports[`Storyshots whitelist name 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               name="myFieldNameOfPower"
               placeholder="I have a form name"
@@ -1473,10 +1473,10 @@ exports[`Storyshots whitelist onChange 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               onChange={[Function]}
               placeholder="Change me"
@@ -1511,10 +1511,10 @@ exports[`Storyshots whitelist title 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               size="medium"
               title="some title"
@@ -1548,10 +1548,10 @@ exports[`Storyshots whitelist type=date 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="Date"
               size="medium"
@@ -1586,10 +1586,10 @@ exports[`Storyshots whitelist type=password 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-177hkuc=""
+            data-css-ydex85=""
           >
             <input
-              data-css-lzb8ea=""
+              data-css-1aru8qc=""
               disabled={false}
               placeholder="Password"
               size="medium"
