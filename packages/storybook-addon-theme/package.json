@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-theme",
-  "version": "5.0.12",
+  "version": "5.0.13",
   "description": "Storybook addon for Theme switching",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -15,7 +15,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^5.4.4",
+    "@pluralsight/ps-design-system-core": "^5.4.5",
     "@storybook/addons": "^5.2.5",
     "@storybook/core-events": "^5.2.5"
   },
@@ -25,6 +25,6 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-theme": "^4.0.7"
+    "@pluralsight/ps-design-system-theme": "^4.0.8"
   }
 }

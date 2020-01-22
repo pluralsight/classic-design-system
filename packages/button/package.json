@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "17.1.5",
+  "version": "17.1.6",
   "description": "Design System component for button ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,10 +20,10 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^5.4.4",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.14",
-    "@pluralsight/ps-design-system-icon": "^16.1.7",
-    "@pluralsight/ps-design-system-util": "^3.0.8",
+    "@pluralsight/ps-design-system-core": "^5.4.5",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.15",
+    "@pluralsight/ps-design-system-icon": "^16.1.8",
+    "@pluralsight/ps-design-system-util": "^3.0.9",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -34,11 +34,11 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.8",
-    "@pluralsight/ps-design-system-featureflags": "^1.1.7",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.7",
-    "@pluralsight/ps-design-system-storybook-addon-featureflags": "^1.1.7",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.12",
-    "@pluralsight/ps-design-system-theme": "^4.0.7"
+    "@pluralsight/ps-design-system-build": "^1.11.9",
+    "@pluralsight/ps-design-system-featureflags": "^1.1.8",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.8",
+    "@pluralsight/ps-design-system-storybook-addon-featureflags": "^1.1.8",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.13",
+    "@pluralsight/ps-design-system-theme": "^4.0.8"
   }
 }
