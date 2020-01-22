@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-emptystate",
-  "version": "7.0.20",
+  "version": "7.0.21",
   "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,9 +23,9 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^5.4.5",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.15",
-    "@pluralsight/ps-design-system-prop-types": "^2.0.16",
+    "@pluralsight/ps-design-system-core": "^5.4.6",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
+    "@pluralsight/ps-design-system-prop-types": "^2.0.17",
     "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1"
   },
@@ -36,14 +36,14 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.9",
-    "@pluralsight/ps-design-system-button": "^17.1.6",
-    "@pluralsight/ps-design-system-icon": "^16.1.8",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.8",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.13",
-    "@pluralsight/ps-design-system-tag": "^6.0.16",
-    "@pluralsight/ps-design-system-textinput": "^6.0.18",
-    "@pluralsight/ps-design-system-theme": "^4.0.8",
+    "@pluralsight/ps-design-system-build": "^1.11.10",
+    "@pluralsight/ps-design-system-button": "^17.1.7",
+    "@pluralsight/ps-design-system-icon": "^16.1.9",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.9",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.14",
+    "@pluralsight/ps-design-system-tag": "^6.0.17",
+    "@pluralsight/ps-design-system-textinput": "^6.0.19",
+    "@pluralsight/ps-design-system-theme": "^4.0.9",
     "ncp": "^2.0.0"
   }
 }
