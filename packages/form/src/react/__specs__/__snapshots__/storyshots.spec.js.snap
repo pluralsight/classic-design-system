@@ -489,7 +489,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Choose a Date
             </div>
@@ -497,10 +497,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-ctre2o=""
             >
               <div
-                data-css-17azrqv=""
+                data-css-e41y4a=""
               >
                 <input
-                  data-css-baao50=""
+                  data-css-1ynlp2p=""
                   disabled={false}
                   name="mm"
                   onBlur={[Function]}
@@ -515,12 +515,12 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value=""
                 />
                 <span
-                  data-css-p5zzy=""
+                  data-css-9eecwn=""
                 >
                   /
                 </span>
                 <input
-                  data-css-baao50=""
+                  data-css-1ynlp2p=""
                   disabled={false}
                   name="dd"
                   onBlur={[Function]}
@@ -535,12 +535,12 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value=""
                 />
                 <span
-                  data-css-p5zzy=""
+                  data-css-9eecwn=""
                 >
                   /
                 </span>
                 <input
-                  data-css-baao50=""
+                  data-css-1ynlp2p=""
                   disabled={false}
                   name="yyyy"
                   onBlur={[Function]}
@@ -561,7 +561,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   tabIndex="-1"
                 />
                 <button
-                  data-css-a5xmu1=""
+                  data-css-m80zy8=""
                   disabled={false}
                   onClick={[Function]}
                 >

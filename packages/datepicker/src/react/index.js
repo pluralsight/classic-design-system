@@ -54,8 +54,7 @@ const styles = {
   icon: (themeName, { appearance }) =>
     compose(
       css(stylesheet['.psds-date-picker__icon']),
-      css(stylesheet[`.psds-date-picker__icon--appearance-${appearance}`]),
-      css(stylesheet[`.psds-date-picker__icon.psds-theme--${themeName}`])
+      css(stylesheet[`.psds-date-picker__icon--appearance-${appearance}`])
     ),
   overlay: _ => css(stylesheet['.psds-date-picker__overlay']),
   subField: ({ appearance }) =>
