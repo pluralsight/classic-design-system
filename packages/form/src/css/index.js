@@ -24,7 +24,7 @@ export default {
   '.psds-form-divider': {
     height: '1px',
     width: '100%',
-    backgroundColor: colorsBorder.lightOnDark
+    backgroundColor: colorsBorder.lowOnDark
   },
   [`.psds-form-divider.psds-theme--${themeNames.light}`]: {
     backgroundColor: colorsBorder.lowOnLight
