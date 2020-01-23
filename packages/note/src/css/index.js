@@ -1,4 +1,10 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBorder,
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 export const resetButton = {
@@ -28,62 +34,62 @@ export default {
     marginLeft: 0
   },
   '.psds-note__list-item': {
-    borderTop: `1px solid ${core.colors.gray03}`,
+    borderTop: `1px solid ${colorsBorder.lowOnDark}`,
 
     '&:first-of-type': { borderTop: 'none' }
   },
   [`.psds-note__list-item.psds-theme--${themeNames.light}`]: {
-    borderTop: `1px solid ${core.colors.gray01}`
+    borderTop: `1px solid ${colorsBorder.lowOnLight}`
   },
 
   '.psds-note': {
     alignItems: 'flex-start',
     display: 'flex',
-    fontWeight: core.type.fontWeightBook,
-    lineHeight: core.type.lineHeightStandard,
-    padding: `${core.layout.spacingLarge} ${core.layout.spacingMedium}`
+    fontWeight: type.fontWeightBook,
+    lineHeight: type.lineHeightStandard,
+    padding: `${layout.spacingLarge} ${layout.spacingMedium}`
   },
   [`.psds-note.psds-theme--${themeNames.light}`]: {
-    borderColor: core.colors.gray01
+    borderColor: colorsBorder.lowOnLight
   },
 
   '.psds-note__action-bar': {
-    color: core.colors.gray02,
+    color: colorsTextIcon.lowOnDark,
     display: 'flex',
     marginLeft: 'auto',
     opacity: 0,
-    transition: `opacity ${core.motion.speedNormal}`
+    transition: `opacity ${motion.speedNormal}`
   },
   [`.psds-note__action-bar.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
   '.psds-note__action-bar--action-bar-visible': {
     opacity: 1
   },
   '.psds-note__action-bar--meta-sibling': {
-    marginLeft: core.layout.spacingMedium
+    marginLeft: layout.spacingMedium
   },
 
   '.psds-note__action': {
     ...resetButton,
     cursor: 'pointer',
-    fontSize: core.type.fontSizeXSmall,
-    transition: `all ${core.motion.speedNormal}`,
+    fontSize: type.fontSizeXSmall,
+    transition: `all ${motion.speedNormal}`,
 
-    '&:hover, &:active': { color: core.colors.white },
-    '& + &': { marginLeft: core.layout.spacingSmall }
+    '&:hover, &:active': { color: colorsTextIcon.highOnDark },
+    '& + &': { marginLeft: layout.spacingSmall }
   },
   [`.psds-note__action.psds-theme--${themeNames.light}`]: {
-    '&:hover, &:active': { color: core.colors.gray03 }
+    '&:hover, &:active': { color: colorsTextIcon.highOnLight }
   },
 
   '.psds-note__aside': {
-    marginRight: core.layout.spacingMedium
+    marginRight: layout.spacingMedium
   },
 
   '.psds-note__contents': {
     flex: 1,
-    paddingTop: core.layout.spacingXXSmall,
+    paddingTop: layout.spacingXXSmall,
     maxWidth: '100%',
     minWidth: 0,
 
@@ -91,28 +97,28 @@ export default {
     '& :last-child': { marginBottom: 0 }
   },
   [`.psds-note__contents.psds-theme--${themeNames.dark}`]: {
-    color: core.colors.white
+    color: colorsTextIcon.highOnDark
   },
   [`.psds-note__contents.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray06
+    color: colorsTextIcon.highOnLight
   },
 
   '.psds-note__header': {
     alignItems: 'center',
     display: 'flex',
-    marginBottom: core.layout.spacingSmall
+    marginBottom: layout.spacingSmall
   },
 
   '.psds-note__heading': {
-    fontSize: core.type.fontSizeSmall,
-    fontWeight: core.type.fontWeightBold,
-    lineHeight: core.type.lineHeightTight,
+    fontSize: type.fontSizeSmall,
+    fontWeight: type.fontWeightBold,
+    lineHeight: type.lineHeightTight,
     marginRight: 'auto',
 
     '& > *': {
-      fontSize: core.type.fontSizeSmall,
-      fontWeight: core.type.fontWeightBold,
-      lineHeight: core.type.lineHeightTight
+      fontSize: type.fontSizeSmall,
+      fontWeight: type.fontWeightBold,
+      lineHeight: type.lineHeightTight
     },
     '& a': {
       color: 'inherit',
@@ -120,38 +126,33 @@ export default {
       textDecoration: 'none',
 
       '&:hover, &:active': {
+        color: 'inherit',
         textDecoration: 'underline',
-        transition: `all ${core.motion.speedNormal}`
+        transition: `all ${motion.speedNormal}`
       }
     }
-  },
-  [`.psds-note__heading.psds-theme--${themeNames.dark}`]: {
-    '& a:hover, & a:active': { color: core.colors.white }
-  },
-  [`.psds-note__heading.psds-theme--${themeNames.light}`]: {
-    '& a:hover, & a:active': { color: core.colors.gray03 }
   },
 
   '.psds-note__footer': {
     alignItems: 'center',
     display: 'flex',
-    marginTop: core.layout.spacingSmall,
+    marginTop: layout.spacingSmall,
     maxWidth: '100%'
   },
 
   '.psds-note__metadata': {
     alignItems: 'center',
-    color: core.colors.gray02,
+    color: colorsTextIcon.lowOnDark,
     display: 'flex',
-    fontSize: core.type.fontSizeXSmall,
-    fontWeight: core.type.fontWeightBook,
-    lineHeight: core.type.lineHeightTight,
+    fontSize: type.fontSizeXSmall,
+    fontWeight: type.fontWeightBook,
+    lineHeight: type.lineHeightTight,
     marginRight: 'auto',
     maxWidth: '100%',
     minWidth: 0
   },
   [`.psds-note__metadata.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
 
   '.psds-note__metadata-datum': {
@@ -171,19 +172,19 @@ export default {
 
       '&:hover, &:active': {
         textDecoration: 'underline',
-        transition: `all ${core.motion.speedNormal}`
+        transition: `all ${motion.speedNormal}`
       }
     }
   },
   [`.psds-note__metadata-datum.psds-theme--${themeNames.dark}`]: {
-    '& a:hover, & a:active': { color: core.colors.white }
+    '& a:hover, & a:active': { color: colorsTextIcon.highOnDark }
   },
   [`.psds-note__metadata-datum.psds-theme--${themeNames.light}`]: {
-    '& a:hover, & a:active': { color: core.colors.gray03 }
+    '& a:hover, & a:active': { color: colorsTextIcon.highOnLight }
   },
 
   '.psds-note__metadata-dot': {
     display: 'inline-block',
-    margin: `0 ${core.layout.spacingXSmall}`
+    margin: `0 ${layout.spacingXSmall}`
   }
 }
