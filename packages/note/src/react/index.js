@@ -41,11 +41,7 @@ const styles = {
     ),
   footer: _ => css(stylesheet['.psds-note__footer']),
   header: _ => css(stylesheet['.psds-note__header']),
-  heading: themeName =>
-    compose(
-      css(stylesheet['.psds-note__heading']),
-      css(stylesheet[`.psds-note__heading.psds-theme--${themeName}`])
-    ),
+  heading: () => compose(css(stylesheet['.psds-note__heading'])),
   noteList: _ => css(stylesheet['.psds-note__list']),
   noteListItem: themeName =>
     compose(
@@ -224,8 +220,7 @@ function Header(props) {
 }
 
 function Heading(props) {
-  const themeName = useTheme()
-  return <div {...styles.heading(themeName)} {...props} />
+  return <div {...styles.heading()} {...props} />
 }
 
 function Metadata(props) {
