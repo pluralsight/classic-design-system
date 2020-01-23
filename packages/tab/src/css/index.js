@@ -3,35 +3,31 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { transparentize } from '@pluralsight/ps-design-system-util'
-
-const listItemTextLightHover = {
-  color: core.colors.gray06
-}
-const listItemTextDefaultHover = {
-  color: core.colors.white
-}
 
 const listItemText = {
   fontWeight: core.type.fontWeightMedium
 }
+const listItemTextLightHover = {
+  color: core.colorsTextIcon.highOnLight
+}
+const listItemTextDefaultHover = {
+  color: core.colorsTextIcon.highOnDark
+}
 const listItemTextLightActive = {
   ...listItemText,
-  color: core.colors.gray06
+  color: core.colorsTextIcon.highOnLight
 }
 const listItemTextDefaultActive = {
   ...listItemText,
-  color: core.colors.white
+  color: core.colorsTextIcon.highOnDark
 }
 
 const listItemBarHover = {
-  backgroundColor: core.colors.gray02,
   height: core.layout.spacingXXSmall,
   opacity: 1
 }
-
 const listItemBarActive = {
-  backgroundColor: core.colors.orange
+  backgroundColor: core.colorsPrimaryAction.background
 }
 const listItemBarActiveActive = {
   ...listItemBarActive,
@@ -51,10 +47,10 @@ export default {
     }
   },
   [`.psds-tab__list.psds-theme--${themeNames.light}`]: {
-    borderBottom: `1px solid ${core.colors.gray02}`
+    borderBottom: `1px solid ${core.colorsBorder.lowOnLight}`
   },
   [`.psds-tab__list.psds-theme--${themeDefaultName}`]: {
-    borderBottom: `1px solid ${core.colors.gray04}`
+    borderBottom: `1px solid ${core.colorsBorder.lowOnDark}`
   },
 
   '.psds-tab__slider': {
@@ -74,54 +70,56 @@ export default {
     alignItems: 'center',
     height: 'calc(100% + 1px)',
     width: '64px',
-    color: core.colors.white,
+    color: core.colorsTextIcon.highOnLight,
     border: 0,
     zIndex: 1,
     cursor: 'pointer',
     outline: 'none',
 
     // __icon
+    '& > div': {
+      background: 'rgba(255, 255, 255, 0.4)'
+    },
     '&:hover > div': {
-      background: core.colors.gray03
+      background: 'rgba(255, 255, 255, 0.7)'
     }
   },
   '.psds-tab__overflow-button--left': {
     left: 0,
     justifyContent: 'flex-start',
-    background: `linear-gradient(to left, transparent, ${transparentize(
-      0.1,
-      core.colors.gray05
-    )} 50%)`,
+    background: `linear-gradient(to left, transparent, ${
+      core.colorsBackgroundDark[1]
+    } 50%)`,
     paddingLeft: core.layout.spacingMedium
   },
   '.psds-tab__overflow-button--right': {
     right: 0,
     justifyContent: 'flex-end',
-    background: `linear-gradient(to right, transparent, ${transparentize(
-      0.1,
-      core.colors.gray05
-    )} 50%)`,
+    background: `linear-gradient(to right, transparent, ${
+      core.colorsBackgroundDark[1]
+    } 50%)`,
     paddingRight: core.layout.spacingMedium
   },
   [`.psds-tab__overflow-button.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray06,
+    color: core.colorsTextIcon.highOnDark,
 
     // __icon
+    '& > div': {
+      background: 'rgba(0, 0, 0, 0.4)'
+    },
     '&:hover > div': {
-      background: core.colors.gray01
+      background: 'rgba(0, 0, 0, 0.7)'
     }
   },
   [`.psds-tab__overflow-button--left.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to left, transparent, ${transparentize(
-      0.1,
-      core.colors.white
-    )} 50%)`
+    background: `linear-gradient(to left, transparent, ${
+      core.colorsBackgroundLight[3]
+    } 50%)`
   },
   [`.psds-tab__overflow-button--right.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to right, transparent, ${transparentize(
-      0.1,
-      core.colors.white
-    )} 50%)`
+    background: `linear-gradient(to right, transparent, ${
+      core.colorsBackgroundLight[3]
+    } 50%)`
   },
 
   '.psds-tab__overflow-button__icon': {
@@ -151,17 +149,26 @@ export default {
       paddingLeft: 0
     },
     // __bar
-    '&:hover span, &:focus span': listItemBarHover,
+    '&:hover span, &:focus span': {
+      ...listItemBarHover,
+      backgroundColor: core.colorsBorder.highOnDark
+    },
     '&:active span': listItemBarActive
   },
   [`.psds-tab__list-item.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03,
+    color: core.colorsTextIcon.lowOnLight,
+    // __bar
+    '&:hover span, &:focus span': {
+      ...listItemBarHover,
+      backgroundColor: core.colorsBorder.highOnLight
+    },
+    '&:active span': listItemBarActive,
     // __text
     '&:hover div, &:focus div': listItemTextLightHover,
     '&:active': listItemTextLightActive
   },
   [`.psds-tab__list-item.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02,
+    color: core.colorsTextIcon.lowOnDark,
     // __text
     '&:hover div, &:focus div': listItemTextDefaultHover,
     '&:active': listItemTextDefaultActive

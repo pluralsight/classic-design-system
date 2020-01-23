@@ -8,7 +8,7 @@ import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const style = props => {
-  const flag = props.psds2020Colors ? '.psds-button--2020-colors' : ''
+  const flag = props.psds2020Colors ? '.psds-text--2020-colors' : ''
   return compose(
     css(stylesheet['.psds-text__heading']),
     css(

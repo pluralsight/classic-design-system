@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.0.18...@pluralsight/ps-design-system-radio@5.1.0) (2020-01-22)
+
+
+### Features
+
+* **radio:** update with 2020 colors changes ([5bcaad7](https://github.com/pluralsight/design-system/commit/5bcaad7578b1be2ff4353ba16ef203e1fa76fdce))
+
+
+
+
+
+## [5.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.0.16...@pluralsight/ps-design-system-radio@5.0.18) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-radio
+
+
+
+
+
+## [5.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.0.14...@pluralsight/ps-design-system-radio@5.0.16) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-radio
+
+
+
+
+
+## [5.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.0.12...@pluralsight/ps-design-system-radio@5.0.14) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-radio
+
+
+
+
+
+## [5.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.0.11...@pluralsight/ps-design-system-radio@5.0.12) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-radio
+
+
+
+
+
 ## [5.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.0.10...@pluralsight/ps-design-system-radio@5.0.11) (2020-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

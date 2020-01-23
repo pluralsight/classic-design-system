@@ -35,17 +35,17 @@ export default {
     height: '16px',
     width: '16px',
     borderRadius: '50%',
-    border: `2px solid ${core.colors.gray02}`,
-    background: core.colors.gray05,
+    border: `2px solid ${core.colorsTextIcon.lowOnDark}`,
+    background: core.colorsBackgroundDark[1],
 
     '&:focus': { outline: 'none' }
   },
   [`.psds-radio-button__circle.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    borderColor: core.colors.gray04
+    background: core.colorsBackgroundLight[3],
+    borderColor: core.colorsTextIcon.lowOnLight
   },
   '.psds-radio-button__circle--checked': {
-    borderColor: core.colors.blue
+    borderColor: core.colorsBlue.base
   },
 
   '.psds-radio-button__circle-inner': {
@@ -54,7 +54,7 @@ export default {
     width: 'calc(100% - 4px)',
     margin: '2px',
     borderRadius: '50%',
-    background: core.colors.blue
+    background: core.colorsBlue.base
   },
 
   '.psds-radio-button__input': {
@@ -62,12 +62,12 @@ export default {
   },
 
   '.psds-radio-button__label': {
-    color: core.colors.bone,
+    color: core.colorsTextIcon.highOnDark,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,
     fontWeight: core.type.fontWeightMedium
   },
   [`.psds-radio-button__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray04
+    color: core.colorsTextIcon.highOnLight
   }
 }

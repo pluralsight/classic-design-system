@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.24...@pluralsight/ps-design-system-dialog@7.0.25) (2020-01-23)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [7.0.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.22...@pluralsight/ps-design-system-dialog@7.0.24) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [7.0.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.20...@pluralsight/ps-design-system-dialog@7.0.22) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [7.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.18...@pluralsight/ps-design-system-dialog@7.0.20) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+## [7.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.17...@pluralsight/ps-design-system-dialog@7.0.18) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
 ## [7.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.16...@pluralsight/ps-design-system-dialog@7.0.17) (2020-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.22...@pluralsight/ps-design-system-table@7.1.23) (2020-01-23)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.21...@pluralsight/ps-design-system-table@7.1.22) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.19...@pluralsight/ps-design-system-table@7.1.21) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.17...@pluralsight/ps-design-system-table@7.1.19) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.15...@pluralsight/ps-design-system-table@7.1.17) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [7.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.14...@pluralsight/ps-design-system-table@7.1.15) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
 ## [7.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.13...@pluralsight/ps-design-system-table@7.1.14) (2020-01-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

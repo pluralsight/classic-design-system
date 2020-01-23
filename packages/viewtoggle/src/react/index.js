@@ -1,8 +1,8 @@
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -10,16 +10,28 @@ import * as vars from '../vars/index.js'
 const styles = {
   optionButton: props =>
     compose(
-      css(stylesheet['.psds-viewtoggle__option']),
+      css(
+        stylesheet['.psds-viewtoggle__option'],
+        stylesheet[`.psds-viewtoggle__option.psds-theme--${props.themeName}`]
+      ),
       props.active && css(stylesheet['.psds-viewtoggle__option--active'])
     ),
-  list: () => css(stylesheet['.psds-viewtoggle']),
-  activePillBg: () => css(stylesheet['.psds-viewtoggle__option-bg']),
+  list: props =>
+    css(
+      stylesheet['.psds-viewtoggle'],
+      stylesheet[`.psds-viewtoggle.psds-theme--${props.themeName}`]
+    ),
+  activePillBg: props =>
+    css(
+      stylesheet['.psds-viewtoggle__option-bg'],
+      stylesheet[`.psds-viewtoggle__option-bg.psds-theme--${props.themeName}`]
+    ),
   pillBgSpacer: () => css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
 }
 
 const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
   const ref = forwardedRef || React.useRef()
+  const themeName = useTheme()
   const hasRenderedOnce = useHasRenderedOnce()
 
   const initialIndex = React.useMemo(() => findActiveIndex(props.children), [
@@ -51,7 +63,7 @@ const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
     }
 
     return (
-      <ActivePillBg aria-hidden style={activePillStyle}>
+      <ActivePillBg style={activePillStyle} themeName={themeName}>
         <PillBgSpacer>{activeEl.props.children}</PillBgSpacer>
       </ActivePillBg>
     )
@@ -64,13 +76,14 @@ const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
       return React.cloneElement(child, {
         _i: i,
         _onSelect: handleSelect,
-        active: activeIndex === i
+        active: activeIndex === i,
+        themeName
       })
     })
   }
 
   return (
-    <List ref={ref} role="radiogroup" {...props}>
+    <List ref={ref} role="radiogroup" themeName={themeName} {...props}>
       {renderActivePill()}
       {renderChildren()}
     </List>
@@ -82,11 +95,19 @@ ViewToggle.propTypes = {
   onSelect: PropTypes.func
 }
 
-const List = React.forwardRef((props, ref) => (
-  <div ref={ref} {...styles.list(props)} {...filterReactProps(props)} />
-))
+const List = React.forwardRef((props, ref) => {
+  return <div ref={ref} {...styles.list(props)} {...filterReactProps(props)} />
+})
 
-const ActivePillBg = props => <div {...styles.activePillBg(props)} {...props} />
+const ActivePillBg = props => (
+  <div {...styles.activePillBg(props)} style={props.style} aria-hidden>
+    {props.children}
+  </div>
+)
+ActivePillBg.propTypes = {
+  children: PropTypes.node,
+  style: PropTypes.object
+}
 
 const PillBgSpacer = props => (
   <span {...styles.pillBgSpacer(props)} {...props} />
@@ -118,13 +139,15 @@ Option.defaultProps = {
   active: false
 }
 
-const OptionButton = React.forwardRef((props, ref) => (
-  <button
-    ref={ref}
-    {...styles.optionButton(props)}
-    {...filterReactProps(props, { tagName: 'button' })}
-  />
-))
+const OptionButton = React.forwardRef((props, ref) => {
+  return (
+    <button
+      ref={ref}
+      {...styles.optionButton(props)}
+      {...filterReactProps(props, { tagName: 'button' })}
+    />
+  )
+})
 
 function findActiveIndex(els) {
   const index = React.Children.toArray(els).findIndex(el => el.props.active)

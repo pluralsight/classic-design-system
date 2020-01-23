@@ -19,22 +19,22 @@ export default {
     paddingRight: toggleAreaWidth
   },
   [`.psds-table.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02
+    color: core.colorsTextIcon.highOnDark
   },
   [`.psds-table.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray05
+    color: core.colorsTextIcon.highOnLight
   },
 
   // __row
   '.psds-table__row': {
     width: '100%',
     display: 'flex',
-    borderTop: `1px solid ${core.colors.gray04}`,
+    borderTop: `1px solid ${core.colorsBorder.lowOnDark}`,
 
     '&:first-of-type': { borderTop: 'none' }
   },
   [`.psds-table__row.psds-theme--${themeNames.light}`]: {
-    borderTop: `1px solid ${core.colors.gray01}`
+    borderTop: `1px solid ${core.colorsBorder.lowOnLight}`
   },
   '.psds-table__row--drawers': {
     paddingLeft: core.layout.spacingMedium,
@@ -58,27 +58,14 @@ export default {
       textDecoration: 'none',
 
       '&:active, &:focus, &:hover': {
-        color: core.colors.white,
         textDecoration: 'underline',
         transition: `all ${core.motion.speedNormal}`
       }
     }
   },
 
-  [`.psds-table__cell.psds-theme--${themeNames.light}`]: {
-    '& a': {
-      '&:active, &:focus, &:hover': {
-        color: core.colors.black
-      }
-    }
-  },
-
   '.psds-table__cell--emphasis': {
-    color: core.colors.white,
     fontWeight: core.type.fontWeightMedium
-  },
-  [`.psds-table__cell--emphasis.psds-theme--${themeNames.light}`]: {
-    color: core.colors.black
   },
   [`.psds-table__cell--align-${vars.aligns.left}`]: {
     justifyContent: 'left',
@@ -104,13 +91,13 @@ export default {
     textTransform: 'uppercase',
     border: 'none',
     background: 'none',
-    color: core.colors.gray02,
+    color: core.colorsTextIcon.lowOnDark,
 
     '&:first-of-type': { paddingLeft: 0 },
     '&:last-of-type': { paddingRight: 0 }
   },
   [`.psds-table__column-header.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray05
+    color: core.colorsTextIcon.lowOnLight
   },
   [`.psds-table__column-header--align-${vars.aligns.left}`]: {
     justifyContent: 'left',
@@ -125,20 +112,20 @@ export default {
     textAlign: 'center'
   },
   '.psds-table__column-header--active': {
-    color: core.colors.white
+    color: core.colorsTextIcon.highOnDark
   },
   [`.psds-table__column-header--active.psds-theme--${themeNames.light}`]: {
-    color: core.colors.black
+    color: core.colorsTextIcon.highOnLight
   },
   '.psds-table__column-header--onclick': {
     '&:hover': {
-      color: core.colors.white,
+      color: core.colorsTextIcon.highOnDark,
       cursor: 'pointer'
     }
   },
   [`.psds-table__column-header--onclick.psds-theme--${themeNames.light}`]: {
     '&:hover': {
-      color: core.colors.black,
+      color: core.colorsTextIcon.highOnLight,
       cursor: 'pointer'
     }
   },
