@@ -36,12 +36,10 @@ export default {
     '&::placeholder': { color: colorsTextIcon.lowOnLight }
   },
   [`.psds-text-area__field.psds-theme--${themeNames.light}`]: {
+    border: `1px solid ${colorsBorder.highOnLight}`,
     '&:focus': { border: '1px solid transparent' }
   },
 
-  [`.psds-text-area__field.psds-theme--${themeNames.light}`]: {
-    border: `1px solid ${colorsBorder.highOnLight}`
-  },
   [`.psds-text-area__field--error.psds-theme--${themeNames.light}`]: {
     border: '1px solid transparent'
   },
