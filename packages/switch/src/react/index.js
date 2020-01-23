@@ -20,6 +20,7 @@ const styles = {
   track: (themeName, { checked, color, size }) =>
     compose(
       css(stylesheet['.psds-switch__track']),
+      css(stylesheet[`.psds-switch__track.psds-theme--${themeName}`]),
       checked &&
         css(
           stylesheet[

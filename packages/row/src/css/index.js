@@ -89,45 +89,17 @@ export default {
     lineHeight: 0,
     height: '64px',
     transition: `opacity ${core.motion.speedNormal}`,
-    opacity: 0
+    opacity: 0,
+
+    '& > button, & > a': {
+      marginLeft: vars.style.actionBarActionMarginLeft
+    }
   },
   '.psds-row__action-bar--fullOverlay': {
     background: 'none'
   },
   '.psds-row__action-bar--actionBarVisible': {
     opacity: 1
-  },
-
-  // __action-bar__button
-  '.psds-row__action-bar__button': {
-    fontSize: core.type.fontSizeXSmall,
-    marginLeft: vars.style.actionBarActionMarginLeft,
-    padding: 0,
-    lineHeight: 0,
-    cursor: 'pointer',
-    border: 'none',
-    background: 'none',
-    transition: `all ${core.motion.speedNormal}`
-  },
-  [`.psds-row__action-bar__button.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02,
-
-    '&:active, &:hover': { color: core.colors.white }
-  },
-  [`.psds-row__action-bar__button.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03,
-
-    '&:active, &:hover': { color: core.colors.black }
-  },
-
-  '.psds-row__action-bar__button--disabled': {
-    color: core.colors.gray02,
-    background: core.colors.gray03,
-
-    '&:hover': {
-      color: core.colors.gray02,
-      background: core.colors.gray03
-    }
   },
 
   // __progress

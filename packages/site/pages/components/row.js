@@ -1,8 +1,11 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
+import Badge from '@pluralsight/ps-design-system-badge'
+import Button from '@pluralsight/ps-design-system-button'
 import { BookmarkIcon, MoreIcon } from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row'
+import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
@@ -106,7 +109,7 @@ export default _ => (
             PropTypes.row([
               'actionBar',
               <span>
-                <code>Row.Action[]</code>
+                <code>Button</code>
               </span>,
               null,
               null,
@@ -185,17 +188,6 @@ export default _ => (
               'limit title to 2 lines'
             ])
           ],
-          'Row.Action': [
-            PropTypes.row([
-              'icon',
-              <span>
-                <code>*Icon</code>
-              </span>,
-              true,
-              null,
-              'icon representing action'
-            ])
-          ],
           'Row.Image': [
             PropTypes.row(['src', 'string', true, null, 'image url'])
           ]
@@ -214,7 +206,7 @@ export default _ => (
       <P>The size will determine certain base measurements.</P>
       <Example.React
         orient="vertical"
-        includes={{ Row }}
+        includes={{ Button, Row }}
         themeToggle
         codes={[
           `
@@ -243,7 +235,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, BookmarkIcon }}
+        includes={{ Button, Row, BookmarkIcon }}
         themeToggle
         codes={[
           `
@@ -268,7 +260,7 @@ export default _ => (
     </Row.ImageLink>
   }
   title="Linked image with other overlays"
-  actionBar={[<Row.Action key="bookmark" icon={<BookmarkIcon />} />]}
+  actionBar={[<Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />]}
   fullOverlay={
     <Row.FullOverlayLink>
       <a href="https://google.com?q=full%20overlay" target="_blank">
@@ -288,7 +280,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row }}
+        includes={{ Button, Row }}
         themeToggle
         codes={[
           `
@@ -319,7 +311,7 @@ export default _ => (
       <P>The title will grow indefinitely, never truncating.</P>
       <Example.React
         orient="vertical"
-        includes={{ Row }}
+        includes={{ Button, Row }}
         themeToggle
         codes={[
           `
@@ -358,7 +350,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row }}
+        includes={{ Button, Row }}
         themeToggle
         codes={[
           `
@@ -398,14 +390,22 @@ export default _ => (
         The action bar contains the on-row affordances a user can take besides
         linking straight to the content. These are usually buttons.
       </P>
+      <P>
+        <Badge color={Badge.colors.yellow}>Note</Badge> Prior to v9.0.0, there
+        used to be a sub-component called <Text.Code>Row.Action</Text.Code> that
+        was used in the Action Bar. It has been removed to provide needed
+        flexibility. You will now want to use{' '}
+        <Text.Code>{`<Button size={Button.sizes.small} appearance={Button.appearances.flat} />`}</Text.Code>{' '}
+        instead.
+      </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, BookmarkIcon, MoreIcon }}
+        includes={{ Button, Row, BookmarkIcon, MoreIcon }}
         themeToggle
         codes={[
           `
 <Row
-  actionBar={[<Row.Action key="bookmark" icon={<BookmarkIcon />} />]}
+  actionBar={[<Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />]}
   title="Action bar appears on hover"
   image={<Row.Image src="/static/img/course2.jpg" />}
 />
@@ -414,8 +414,8 @@ export default _ => (
           `
 <Row
   actionBar={[
-    <Row.Action key="bookmark" icon={<BookmarkIcon />} />,
-    <Row.Action key="more" icon={<MoreIcon />} />
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />,
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="more" icon={<MoreIcon />} />
   ]}
   title="Multiple actions"
   image={<Row.Image src="/static/img/course2.jpg" />}
@@ -425,8 +425,8 @@ export default _ => (
           `
 <Row
   actionBar={[
-    <Row.Action key="bookmark" icon={<BookmarkIcon />} />,
-    <Row.Action key="more" icon={<MoreIcon />} />
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />,
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="more" icon={<MoreIcon />} />
   ]}
   actionBarVisible
   title="Action bar locked visible"
@@ -447,7 +447,7 @@ export default _ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, BookmarkIcon }}
+        includes={{ Button, Row, BookmarkIcon }}
         themeToggle
         codes={[
           `
@@ -472,7 +472,7 @@ export default _ => (
       <a href="https://pluralsight.com" target="_blank">Custom Link</a>
     </Row.FullOverlayLink>
   }
-  actionBar={[<Row.Action key="bookmark" icon={<BookmarkIcon />} />]}
+  actionBar={[<Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />]}
   title="Combined with other overlays"
   image={<Row.Image src="/static/img/course3.jpg" />}
 />

@@ -596,13 +596,13 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-1sxo0xr=""
+                data-css-18wdktl=""
                 role="checkbox"
                 tabIndex="0"
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-a3uikz=""
+                  data-css-ey6g07=""
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -630,7 +630,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               value="someVal"
             />
             <div
-              data-css-pgc406=""
+              data-css-185gc3y=""
             >
               Checkbox selected
             </div>
@@ -674,7 +674,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   >
                     <div
                       aria-checked={false}
-                      data-css-dbvyuf=""
+                      data-css-1e1erju=""
                       onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
@@ -691,7 +691,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="full"
                 />
                 <div
-                  data-css-cgsoeo=""
+                  data-css-wbyy03=""
                 >
                   Full-time employement
                 </div>
@@ -712,7 +712,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   >
                     <div
                       aria-checked={false}
-                      data-css-dbvyuf=""
+                      data-css-1e1erju=""
                       onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
@@ -729,7 +729,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="part"
                 />
                 <div
-                  data-css-cgsoeo=""
+                  data-css-wbyy03=""
                 >
                   Part-time employement
                 </div>
@@ -766,10 +766,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1lu7sfl=""
             >
               <div
-                data-css-1rncajx=""
+                data-css-rao1gl=""
               >
                 <div
-                  data-css-1nqr5a6=""
+                  data-css-12e9w50=""
                 />
               </div>
             </div>
@@ -781,7 +781,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               type="checkbox"
             />
             <label
-              data-css-1wrf03j=""
+              data-css-on3oux=""
             >
               toggle
             </label>

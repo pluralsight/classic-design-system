@@ -63,7 +63,7 @@ const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
     }
 
     return (
-      <ActivePillBg aria-hidden style={activePillStyle} themeName={themeName}>
+      <ActivePillBg style={activePillStyle} themeName={themeName}>
         <PillBgSpacer>{activeEl.props.children}</PillBgSpacer>
       </ActivePillBg>
     )
@@ -99,7 +99,15 @@ const List = React.forwardRef((props, ref) => {
   return <div ref={ref} {...styles.list(props)} {...filterReactProps(props)} />
 })
 
-const ActivePillBg = props => <div {...styles.activePillBg(props)} {...props} />
+const ActivePillBg = props => (
+  <div {...styles.activePillBg(props)} style={props.style} aria-hidden>
+    {props.children}
+  </div>
+)
+ActivePillBg.propTypes = {
+  children: PropTypes.node,
+  style: PropTypes.object
+}
 
 const PillBgSpacer = props => (
   <span {...styles.pillBgSpacer(props)} {...props} />

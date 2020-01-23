@@ -9,7 +9,6 @@ exports[`Storyshots active default first 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -53,7 +52,6 @@ exports[`Storyshots active explicit first 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -97,7 +95,6 @@ exports[`Storyshots active explicit second 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -141,7 +138,6 @@ exports[`Storyshots active explicit third 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -185,7 +181,6 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -229,7 +224,6 @@ exports[`Storyshots onSelect handles click 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -274,7 +268,6 @@ Array [
       aria-hidden={true}
       data-css-1282r6f=""
       style={Object {}}
-      themeName="dark"
     >
       <span
         data-css-1jyyyen=""
@@ -330,7 +323,6 @@ exports[`Storyshots options count more than max 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -374,7 +366,6 @@ exports[`Storyshots options count one 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -402,7 +393,6 @@ exports[`Storyshots options count three 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -446,7 +436,6 @@ exports[`Storyshots options count two 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -482,7 +471,6 @@ exports[`Storyshots text length all long 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""
@@ -526,7 +514,6 @@ exports[`Storyshots text length differing lengths 1`] = `
     aria-hidden={true}
     data-css-1282r6f=""
     style={Object {}}
-    themeName="dark"
   >
     <span
       data-css-1jyyyen=""

@@ -8,5 +8,5 @@ export const style = {
   overlaysWidth: '96px',
   overlaysMarginRight: core.layout.spacingLarge,
   actionBarActionWidth: xSmallIconWidth,
-  actionBarActionMarginLeft: core.layout.spacingMedium
+  actionBarActionMarginLeft: core.layout.spacingXSmall
 }
