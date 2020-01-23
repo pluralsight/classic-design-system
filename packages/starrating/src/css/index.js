@@ -1,4 +1,10 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  colorsBorder,
+  colorsTextIcon,
+  colorsYellow
+} from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
@@ -50,29 +56,29 @@ export default {
   },
 
   [`.psds-starrating__star--theme-${themeDefaultName}`]: {
-    color: core.colorsBorder.lowOnDark
+    color: colorsBorder.lowOnDark
   },
   [`.psds-starrating__star--theme-${themeNames.light}`]: {
-    color: core.colorsBorder.lowOnLight
+    color: colorsBorder.lowOnLight
   },
 
   [`.psds-starrating__star__half__secondary--theme-${themeDefaultName}`]: {
-    color: 'red', // core.colorsBackgroundDark[1],
-    fill: core.colorsBackgroundDark[1] // safari needs this
+    color: colorsBackgroundDark[1],
+    fill: colorsBackgroundDark[1] // safari needs this
   },
   [`.psds-starrating__star__half__secondary--theme-${themeNames.light}`]: {
-    color: core.colorsBackgroundLight[3],
-    fill: core.colorsBackgroundLight[3] // safari needs this
+    color: colorsBackgroundLight[3],
+    fill: colorsBackgroundLight[3] // safari needs this
   },
 
   '.psds-starrating__star--active': {
-    color: core.colorsYellow.base
+    color: colorsYellow.base
   },
   [`.psds-starrating__star--bright.psds-theme--${themeDefaultName}`]: {
-    color: core.colorsTextIcon.lowOnDark
+    color: colorsTextIcon.lowOnDark
   },
   [`.psds-starrating__star--bright.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.lowOnLight
+    color: colorsTextIcon.lowOnLight
   },
   '.psds-starrating__star--interactive': {
     cursor: 'pointer'
