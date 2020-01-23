@@ -55,10 +55,10 @@ export default {
   },
 
   [`.psds-starrating__star--theme-${themeDefaultName}`]: {
-    color: 'rgba(255, 255, 255, 0.3)'
+    color: 'rgba(255, 255, 255, 0.15)'
   },
   [`.psds-starrating__star--theme-${themeNames.light}`]: {
-    color: 'rgba(0, 0, 0, 0.4)'
+    color: 'rgba(0, 0, 0, 0.15)'
   },
 
   [`.psds-starrating__star__half__secondary--theme-${themeDefaultName}`]: {
