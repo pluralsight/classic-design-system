@@ -11,10 +11,10 @@ exports[`Storyshots LinearProgress animates to new values 1`] = `
   }
 >
   <div
-    data-css-3rzk8v=""
+    data-css-f5n0d7=""
   >
     <div
-      data-css-inydxc=""
+      data-css-lskj0=""
     />
   </div>
   <div
@@ -41,10 +41,10 @@ exports[`Storyshots LinearProgress fills container 1`] = `
   }
 >
   <div
-    data-css-3rzk8v=""
+    data-css-f5n0d7=""
   >
     <div
-      data-css-o5chp9=""
+      data-css-1y8zqkb=""
     />
   </div>
 </div>
@@ -52,60 +52,60 @@ exports[`Storyshots LinearProgress fills container 1`] = `
 
 exports[`Storyshots LinearProgress min width, no val 1`] = `
 <div
-  data-css-3rzk8v=""
+  data-css-f5n0d7=""
 >
   <div
-    data-css-inydxc=""
+    data-css-lskj0=""
   />
 </div>
 `;
 
 exports[`Storyshots LinearProgress value, 0% 1`] = `
 <div
-  data-css-3rzk8v=""
+  data-css-f5n0d7=""
 >
   <div
-    data-css-inydxc=""
+    data-css-lskj0=""
   />
 </div>
 `;
 
 exports[`Storyshots LinearProgress value, 33% 1`] = `
 <div
-  data-css-3rzk8v=""
+  data-css-f5n0d7=""
 >
   <div
-    data-css-1bc6cih=""
+    data-css-6wpswa=""
   />
 </div>
 `;
 
 exports[`Storyshots LinearProgress value, 50% 1`] = `
 <div
-  data-css-3rzk8v=""
+  data-css-f5n0d7=""
 >
   <div
-    data-css-1rczh6u=""
+    data-css-qfqbsq=""
   />
 </div>
 `;
 
 exports[`Storyshots LinearProgress value, 100% 1`] = `
 <div
-  data-css-3rzk8v=""
+  data-css-f5n0d7=""
 >
   <div
-    data-css-1hjlj9w=""
+    data-css-1hrjrcb=""
   />
 </div>
 `;
 
 exports[`Storyshots LinearProgress value, 999% 1`] = `
 <div
-  data-css-3rzk8v=""
+  data-css-f5n0d7=""
 >
   <div
-    data-css-1hjlj9w=""
+    data-css-1hrjrcb=""
   />
 </div>
 `;

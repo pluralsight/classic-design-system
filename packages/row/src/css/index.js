@@ -1,5 +1,11 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util'
+import {
+  colorsBorder,
+  colorsGreen,
+  colorsTextIcon,
+  motion,
+  layout,
+  type
+} from '@pluralsight/ps-design-system-core'
 
 import {
   defaultName as themeDefaultName,
@@ -13,9 +19,9 @@ export default {
     display: 'flex',
     alignItems: 'center',
     width: '100%',
-    padding: `${core.layout.spacingSmall} 0`,
+    padding: `${layout.spacingSmall} 0`,
     textAlign: 'left',
-    borderTop: `1px solid ${core.colors.gray04}`,
+    borderTop: `1px solid ${colorsBorder.lowOnDark}`,
 
     '&:hover, &:hover': {
       '& div': { opacity: 1 }
@@ -24,6 +30,9 @@ export default {
     '&:first-of-type': {
       borderTop: 'none'
     }
+  },
+  [`.psds-row.psds-theme--${themeNames.light}`]: {
+    borderTop: `1px solid ${colorsBorder.lowOnLight}`
   },
 
   // __overlays
@@ -57,8 +66,8 @@ export default {
     left: 0,
     height: '100%',
     width: '100%',
-    background: transparentize(0.5, core.colors.black),
-    transition: `opacity ${core.motion.speedNormal}`,
+    background: 'rgba(0, 0, 0, 0.5)',
+    transition: `opacity ${motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0,
 
@@ -88,7 +97,7 @@ export default {
     alignItems: 'center',
     lineHeight: 0,
     height: '64px',
-    transition: `opacity ${core.motion.speedNormal}`,
+    transition: `opacity ${motion.speedNormal}`,
     opacity: 0,
 
     '& > button, & > a': {
@@ -109,8 +118,8 @@ export default {
     bottom: 0,
     width: '100%',
     height: 5,
-    borderTop: `1px solid ${transparentize(0.8, core.colors.black)}`,
-    backgroundColor: transparentize(0.6, core.colors.gray01),
+    borderTop: '1px solid rgba(0, 0, 0, 0.2)',
+    backgroundColor: 'rgba(15, 15, 15, 0.2)',
     overflow: 'hidden'
   },
   // __progress__bar
@@ -120,10 +129,10 @@ export default {
     left: 0,
     width: '0%',
     height: '5px',
-    backgroundColor: core.colors.white
+    backgroundColor: colorsTextIcon.highOnDark
   },
   '.psds-row__progress__bar--complete': {
-    backgroundColor: core.colors.green
+    backgroundColor: colorsGreen.base
   },
 
   // __words
@@ -138,22 +147,22 @@ export default {
   // __title
   '.psds-row__title': {
     display: 'block',
-    fontWeight: core.type.fontWeightMedium,
+    fontWeight: type.fontWeightMedium,
     textAlign: 'left'
   },
   [`.psds-row__title.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.white
+    color: colorsTextIcon.highOnDark
   },
   [`.psds-row__title.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray06
+    color: colorsTextIcon.highOnLight
   },
   [`.psds-row__title--size-${vars.sizes.small}`]: {
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightTight
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightTight
   },
   [`.psds-row__title--size-${vars.sizes.medium}`]: {
-    fontSize: core.type.fontSizeMedium,
-    lineHeight: core.type.lineHeightStandard
+    fontSize: type.fontSizeMedium,
+    lineHeight: type.lineHeightStandard
   },
 
   // __image-link
@@ -172,7 +181,7 @@ export default {
       height: '100%',
       width: '100%',
       textDecoration: 'none',
-      transition: `all ${core.motion.speedNormal}`
+      transition: `all ${motion.speedNormal}`
     }
   },
 
@@ -187,18 +196,18 @@ export default {
 
       '&:active, &:hover': {
         textDecoration: 'underline',
-        transition: `all ${core.motion.speedNormal}`
+        transition: `all ${motion.speedNormal}`
       }
     }
   },
   [`.psds-row__text-link.psds-theme--${themeDefaultName}`]: {
     '&:active, &:hover': {
-      color: core.colors.white
+      color: colorsTextIcon.highOnDark
     }
   },
   [`.psds-row__text-link.psds-theme--${themeNames.light}`]: {
     '&:active, &:hover': {
-      color: core.colors.black
+      color: colorsTextIcon.highOnLight
     }
   },
 
@@ -206,24 +215,24 @@ export default {
   '.psds-row__metadata': {
     display: 'flex',
     alignItems: 'center',
-    fontWeight: core.type.fontWeightBook,
-    lineHeight: core.type.lineHeightTight,
+    fontWeight: type.fontWeightBook,
+    lineHeight: type.lineHeightTight,
     maxWidth: '100%',
-    paddingTop: core.layout.spacingXXSmall
+    paddingTop: layout.spacingXXSmall
   },
   [`.psds-row__metadata.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.gray02
+    color: colorsTextIcon.lowOnDark
   },
   [`.psds-row__metadata.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
   [`.psds-row__metadata--size-${vars.sizes.small}`]: {
-    fontSize: core.type.fontSizeXSmall,
+    fontSize: type.fontSizeXSmall,
     paddingTop: 0
   },
   [`.psds-row__metadata--size-${vars.sizes.medium}`]: {
-    fontSize: core.type.fontSizeXSmall,
-    paddingTop: core.layout.spacingXXSmall
+    fontSize: type.fontSizeXSmall,
+    paddingTop: layout.spacingXXSmall
   },
 
   // __metadata__datum
@@ -243,6 +252,6 @@ export default {
   // __metadata__dot
   '.psds-row__metadata__dot': {
     display: 'inline-block',
-    margin: `0 ${core.layout.spacingXSmall}`
+    margin: `0 ${layout.spacingXSmall}`
   }
 }
