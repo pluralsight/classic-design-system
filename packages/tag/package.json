@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tag",
-  "version": "6.0.17",
+  "version": "6.0.18",
   "description": "Design System component for tag ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,7 +22,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.4.6",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
-    "@pluralsight/ps-design-system-halo": "^6.0.15",
+    "@pluralsight/ps-design-system-halo": "^6.1.0",
     "@pluralsight/ps-design-system-icon": "^16.1.9",
     "prop-types": "^15.7.2"
   },

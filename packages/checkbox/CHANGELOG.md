@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.15...@pluralsight/ps-design-system-checkbox@5.1.0) (2020-01-22)
+
+
+### Features
+
+* **checkbox:** use 2020 colors ([7245c73](https://github.com/pluralsight/design-system/commit/7245c7362efd14ece4533a21b749bf1788b09f59))
+
+
+
+
+
 ## [5.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.13...@pluralsight/ps-design-system-checkbox@5.0.15) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

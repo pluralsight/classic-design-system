@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@9.0.0...@pluralsight/ps-design-system-row@9.0.1) (2020-01-23)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-row
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@8.0.21...@pluralsight/ps-design-system-row@9.0.0) (2020-01-22)
+
+
+### Code Refactoring
+
+* **row:** remove Row.Action to make more flexible ([def3791](https://github.com/pluralsight/design-system/commit/def37917a1be07a62c4c4092e260e3aadf955da9))
+
+
+### BREAKING CHANGES
+
+* **row:** Remove Row.Action; use DS Button size="small"
+appearance="flat instead
+
+
+
+
+
 ## [8.0.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@8.0.19...@pluralsight/ps-design-system-row@8.0.21) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-row

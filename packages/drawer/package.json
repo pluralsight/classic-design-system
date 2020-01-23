@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-drawer",
-  "version": "6.0.21",
+  "version": "6.0.23",
   "description": "Design System component for drawer ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -37,9 +37,9 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.10",
     "@pluralsight/ps-design-system-button": "^17.1.7",
-    "@pluralsight/ps-design-system-row": "^8.0.21",
+    "@pluralsight/ps-design-system-row": "^9.0.1",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.14",
-    "@pluralsight/ps-design-system-text": "^15.0.8",
+    "@pluralsight/ps-design-system-text": "^15.0.9",
     "@pluralsight/ps-design-system-theme": "^4.0.9"
   }
 }
