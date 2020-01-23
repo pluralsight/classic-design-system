@@ -1,7 +1,6 @@
 import {
   colorsBackgroundDark,
   colorsBackgroundLight,
-  colorsBorder,
   colorsTextIcon,
   colorsYellow
 } from '@pluralsight/ps-design-system-core'
@@ -56,10 +55,10 @@ export default {
   },
 
   [`.psds-starrating__star--theme-${themeDefaultName}`]: {
-    color: colorsBorder.lowOnDark
+    color: 'rgba(255, 255, 255, 0.3)'
   },
   [`.psds-starrating__star--theme-${themeNames.light}`]: {
-    color: colorsBorder.lowOnLight
+    color: 'rgba(0, 0, 0, 0.4)'
   },
 
   [`.psds-starrating__star__half__secondary--theme-${themeDefaultName}`]: {
