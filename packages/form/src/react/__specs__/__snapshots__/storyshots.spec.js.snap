@@ -211,7 +211,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Name
             </div>
@@ -222,10 +222,10 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-ctre2o=""
               >
                 <div
-                  data-css-177hkuc=""
+                  data-css-ydex85=""
                 >
                   <input
-                    data-css-lzb8ea=""
+                    data-css-1aru8qc=""
                     disabled={false}
                     placeholder="What's your name?"
                     size="medium"
@@ -248,7 +248,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Alias
             </div>
@@ -259,10 +259,10 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-ctre2o=""
               >
                 <div
-                  data-css-177hkuc=""
+                  data-css-ydex85=""
                 >
                   <input
-                    data-css-lzb8ea=""
+                    data-css-1aru8qc=""
                     disabled={false}
                     placeholder="Do you have a nick name?"
                     size="medium"
@@ -271,7 +271,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               </div>
             </div>
             <div
-              data-css-1de0a6a=""
+              data-css-bf7jp3=""
             >
               *Optional
             </div>
@@ -290,7 +290,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Email address
             </div>
@@ -301,10 +301,10 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-in6gqi=""
               >
                 <div
-                  data-css-177hkuc=""
+                  data-css-ydex85=""
                 >
                   <input
-                    data-css-lzb8ea=""
+                    data-css-1aru8qc=""
                     disabled={false}
                     size="medium"
                     value="steve@example.com"
@@ -312,7 +312,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 </div>
               </div>
               <div
-                data-css-loo18p=""
+                data-css-1ha66tv=""
               >
                 <div
                   data-css-otejxm=""
@@ -332,7 +332,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               </div>
             </div>
             <div
-              data-css-1de0a6a=""
+              data-css-bf7jp3=""
             >
               Not a valid email address
             </div>
@@ -640,7 +640,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <div
-            data-css-gdknmt=""
+            data-css-141usbw=""
           />
         </div>
         <div
@@ -741,7 +741,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <div
-            data-css-gdknmt=""
+            data-css-141usbw=""
           />
         </div>
         <div
@@ -791,7 +791,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <div
-            data-css-gdknmt=""
+            data-css-141usbw=""
           />
         </div>
         <div
@@ -807,7 +807,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-1j9p7fe=""
+              data-css-hnaccs=""
             >
               Comment
             </div>
@@ -818,7 +818,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-ctre2o=""
               >
                 <textarea
-                  data-css-12a0glg=""
+                  data-css-dpjpe2=""
                   disabled={false}
                   placeholder="Anything else to report?"
                   rows={4}

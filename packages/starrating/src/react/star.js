@@ -22,7 +22,8 @@ const styles = {
     css(
       stylesheet['.psds-starrating__star'],
       stylesheet[`.psds-starrating__star--theme-${themeName}`],
-      props.bright && stylesheet['.psds-starrating__star--bright'],
+      props.bright &&
+        stylesheet[`.psds-starrating__star--bright.psds-theme--${themeName}`],
       props.active && stylesheet['.psds-starrating__star--active'],
       props.interactive && stylesheet['.psds-starrating__star--interactive']
     ),

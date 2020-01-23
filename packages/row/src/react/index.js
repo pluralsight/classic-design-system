@@ -67,7 +67,11 @@ const styles = {
       css({ width: percent })
     )
   },
-  row: () => css(stylesheet['.psds-row']),
+  row: props =>
+    css(
+      stylesheet['.psds-row'],
+      stylesheet[`.psds-row.psds-theme--${props.themeName}`]
+    ),
   textLink: props =>
     compose(
       css(stylesheet['.psds-row__text-link']),
