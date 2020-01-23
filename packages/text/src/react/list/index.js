@@ -11,7 +11,7 @@ import * as vars from '../../vars/index.js'
 
 const styles = {
   list: props => {
-    const flag = props.psds2020Colors ? '.psds-button--2020-colors' : ''
+    const flag = props.psds2020Colors ? '.psds-text--2020-colors' : ''
     return compose(
       css(stylesheet[`.psds-text__list.psds-theme--${props.themeName}${flag}`]),
       css(stylesheet[`.psds-text__list`]),

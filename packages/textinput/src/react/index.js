@@ -44,7 +44,12 @@ const styles = {
     )
   },
   fieldContainer: _ => css(stylesheet['.psds-text-input__field-container']),
-  fieldInput: _ => css(stylesheet['.psds-text-input__field-input']),
+  fieldInput: ({ appearance, themeName }) =>
+    css(
+      stylesheet['.psds-text-input__field-input'],
+      stylesheet[`.psds-text-input__field-input--appearance-${appearance}`],
+      stylesheet[`.psds-text-input__field-input.psds-theme--${themeName}`]
+    ),
   icon: ({ appearance, icon, iconAlign, themeName }) =>
     css(
       stylesheet['.psds-text-input__icon'],

@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { colorsBorder, layout } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index.js'
@@ -16,19 +16,18 @@ export default {
     justifyContent: 'flex-end'
   },
   '.psds-form-button-row__button': {
-    marginRight: core.layout.spacingLarge,
-    '&:last-child': {
-      marginRight: 0
-    }
+    marginRight: layout.spacingLarge,
+
+    '&:last-child': { marginRight: 0 }
   },
 
   '.psds-form-divider': {
     height: '1px',
     width: '100%',
-    backgroundColor: core.colors.gray04
+    backgroundColor: colorsBorder.lowOnDark
   },
   [`.psds-form-divider.psds-theme--${themeNames.light}`]: {
-    backgroundColor: core.colors.gray01
+    backgroundColor: colorsBorder.lowOnLight
   },
 
   '.psds-form-vertical-layout': {
@@ -36,9 +35,8 @@ export default {
     width: '100%'
   },
   '.psds-form-vertical-layout__child': {
-    marginBottom: core.layout.spacingLarge,
-    '&:last-child': {
-      marginBottom: 0
-    }
+    marginBottom: layout.spacingLarge,
+
+    '&:last-child': { marginBottom: 0 }
   }
 }
