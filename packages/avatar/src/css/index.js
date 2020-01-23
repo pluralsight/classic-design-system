@@ -52,8 +52,8 @@ export default {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    color: core.colors.white,
+    color: core.colorsTextIcon.highOnDark,
     fontWeight: core.type.fontWeightBook,
-    backgroundColor: core.colors.gray02
+    backgroundColor: core.colorsBackgroundUtility.base
   }
 }
