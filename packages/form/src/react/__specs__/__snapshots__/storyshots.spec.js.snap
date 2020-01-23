@@ -807,7 +807,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-1j9p7fe=""
+              data-css-hnaccs=""
             >
               Comment
             </div>
@@ -818,7 +818,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-ctre2o=""
               >
                 <textarea
-                  data-css-12a0glg=""
+                  data-css-dpjpe2=""
                   disabled={false}
                   placeholder="Anything else to report?"
                   rows={4}
