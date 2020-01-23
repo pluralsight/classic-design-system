@@ -28,12 +28,12 @@ export default {
     background: transparentize(0.5, core.colors.black),
     border: `1px solid ${core.colors.black}`
   },
-  [`.psds-text__code.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-text__code.psds-theme--${themeNames.light}.psds-text--2020-colors`]: {
     color: '#0072be',
     background: core.colors.bone,
     border: `1px solid ${core.colors.gray01}`
   },
-  [`.psds-text__code.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
+  [`.psds-text__code.psds-theme--${themeDefaultName}.psds-text--2020-colors`]: {
     color: core.colors.codeBlue,
     background: transparentize(0.5, core.colors.black),
     border: `1px solid ${core.colors.black}`
@@ -47,10 +47,10 @@ export default {
   [`.psds-text__heading.psds-theme--${themeDefaultName}`]: {
     color: core.colors.white
   },
-  [`.psds-text__heading.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-text__heading.psds-theme--${themeNames.light}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.highOnLight
   },
-  [`.psds-text__heading.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
+  [`.psds-text__heading.psds-theme--${themeDefaultName}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.highOnDark
   },
   [`.psds-text__heading--size-${vars.headingSizes.smallCaps}`]: {
@@ -66,10 +66,10 @@ export default {
   [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeDefaultName}`]: {
     color: core.colors.gray02
   },
-  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeNames.light}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.lowOnLight
   },
-  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
+  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeDefaultName}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.lowOnDark
   },
   [`.psds-text__heading--size-${vars.headingSizes.medium}`]: {
@@ -103,10 +103,10 @@ export default {
   [`.psds-text__list.psds-theme--${themeDefaultName}`]: {
     color: core.colors.bone
   },
-  [`.psds-text__list.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-text__list.psds-theme--${themeNames.light}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.highOnLight
   },
-  [`.psds-text__list.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
+  [`.psds-text__list.psds-theme--${themeDefaultName}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.highOnDark
   },
   [`.psds-text__list--type-${vars.listTypes.bulleted}`]: {
@@ -128,10 +128,10 @@ export default {
   [`.psds-text__p.psds-theme--${themeDefaultName}`]: {
     color: core.colors.bone
   },
-  [`.psds-text__p.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-text__p.psds-theme--${themeNames.light}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.highOnLight
   },
-  [`.psds-text__p.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
+  [`.psds-text__p.psds-theme--${themeDefaultName}.psds-text--2020-colors`]: {
     color: core.colorsTextIcon.highOnDark
   }
 }

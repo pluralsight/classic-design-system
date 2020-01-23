@@ -8,7 +8,7 @@ import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 import stylesheet from '../css/index.js'
 
 const style = ({ themeName, psds2020Colors }) => {
-  const flag = psds2020Colors ? '.psds-button--2020-colors' : ''
+  const flag = psds2020Colors ? '.psds-text--2020-colors' : ''
   return compose(
     css(stylesheet[`.psds-text__p`]),
     css(stylesheet[`.psds-text__p.psds-theme--${themeName}${flag}`])
