@@ -1,5 +1,8 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 
 const hideVisually = {
   border: 0,
@@ -46,27 +49,30 @@ export default {
     lineHeight: 0
   },
 
-  [`.psds-starrating__star--theme-${themeNames.dark}`]: {
-    color: core.colors.gray04
+  [`.psds-starrating__star--theme-${themeDefaultName}`]: {
+    color: core.colorsBorder.lowOnDark
   },
   [`.psds-starrating__star--theme-${themeNames.light}`]: {
-    color: core.colors.gray01
+    color: core.colorsBorder.lowOnLight
   },
 
-  [`.psds-starrating__star__half__secondary--theme-${themeNames.dark}`]: {
-    color: core.colors.gray04,
-    fill: core.colors.gray04 // safari needs this
+  [`.psds-starrating__star__half__secondary--theme-${themeDefaultName}`]: {
+    color: 'red', // core.colorsBackgroundDark[1],
+    fill: core.colorsBackgroundDark[1] // safari needs this
   },
   [`.psds-starrating__star__half__secondary--theme-${themeNames.light}`]: {
-    color: core.colors.gray01,
-    fill: core.colors.gray01 // safari needs this
+    color: core.colorsBackgroundLight[3],
+    fill: core.colorsBackgroundLight[3] // safari needs this
   },
 
   '.psds-starrating__star--active': {
-    color: core.colors.yellow
+    color: core.colorsYellow.base
   },
-  '.psds-starrating__star--bright': {
-    color: core.colors.gray02
+  [`.psds-starrating__star--bright.psds-theme--${themeDefaultName}`]: {
+    color: core.colorsTextIcon.lowOnDark
+  },
+  [`.psds-starrating__star--bright.psds-theme--${themeNames.light}`]: {
+    color: core.colorsTextIcon.lowOnLight
   },
   '.psds-starrating__star--interactive': {
     cursor: 'pointer'
