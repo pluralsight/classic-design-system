@@ -187,7 +187,7 @@ export default _ => (
       <P>
         Note: To override the size and color of a custom SVG, remove any{' '}
         <Text.Code>height</Text.Code>, <Text.Code>width</Text.Code>, and{' '}
-        <Text.Code>fill</Text.Code> attributes from from the SVG after exporting
+        <Text.Code>fill</Text.Code> attributes from the SVG after exporting
         it.
       </P>
     </Content>
