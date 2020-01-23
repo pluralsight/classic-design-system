@@ -1,9 +1,12 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsGreen,
+  colorsTextIcon,
+  motion
+} from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { transparentize } from '@pluralsight/ps-design-system-util'
 
 export default {
   '.psds-linearprogress__bg': {
@@ -13,23 +16,23 @@ export default {
     borderRadius: '4px'
   },
   [`.psds-linearprogress__bg.psds-theme--${themeDefaultName}`]: {
-    backgroundColor: transparentize(0.8, core.colors.bone)
+    backgroundColor: 'rgba(255, 255, 255, 0.15)'
   },
   [`.psds-linearprogress__bg.psds-theme--${themeNames.light}`]: {
-    backgroundColor: core.colors.gray01
+    backgroundColor: 'rgba(0, 0, 0, 0.15)'
   },
   '.psds-linearprogress__fg': {
     height: '8px',
     borderRadius: '4px',
-    transition: `width ${core.motion.speedNormal} linear`
+    transition: `width ${motion.speedNormal} linear`
   },
   [`.psds-linearprogress__fg.psds-theme--${themeDefaultName}`]: {
-    backgroundColor: core.colors.white
+    backgroundColor: colorsTextIcon.highOnDark
   },
   [`.psds-linearprogress__fg.psds-theme--${themeNames.light}`]: {
-    backgroundColor: core.colors.gray04
+    backgroundColor: colorsTextIcon.highOnLight
   },
   '.psds-linearprogress__fg--complete': {
-    backgroundColor: core.colors.green
+    backgroundColor: colorsGreen.base
   }
 }

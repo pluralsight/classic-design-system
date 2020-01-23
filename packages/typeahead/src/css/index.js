@@ -1,35 +1,41 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundLight,
+  colorsBlue,
+  colorsTextIcon,
+  layout,
+  type
+} from '@pluralsight/ps-design-system-core'
 
 export default {
   '.psds-typeahead': {},
 
   '.psds-typeahead__menu': {
-    background: core.colors.white,
+    background: colorsBackgroundLight[3],
     borderRadius: '2px',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     display: 'inline-block',
-    fontSize: core.type.fontSizeSmall,
+    fontSize: type.fontSizeSmall,
     listStyle: 'none',
     marginLeft: 0,
     maxHeight: '277px',
     maxWidth: '320px',
     minWidth: '160px',
     overflowY: 'auto',
-    padding: `${core.layout.spacingXXSmall} 0`
+    padding: `${layout.spacingXXSmall} 0`
   },
   '.psds-typeahead__menu__item': {
     alignItems: 'center',
     background: 'none',
     border: 'none',
-    color: core.colors.gray05,
+    color: colorsTextIcon.highOnLight,
     cursor: 'pointer',
     display: 'flex',
-    fontWeight: core.type.fontWeightMedium,
-    lineHeight: core.type.lineHeightExtra,
+    fontWeight: type.fontWeightMedium,
+    lineHeight: type.lineHeightExtra,
     overflow: 'hidden',
     paddingBottom: '0',
-    paddingLeft: core.layout.spacingSmall,
-    paddingRight: core.layout.spacingSmall,
+    paddingLeft: layout.spacingSmall,
+    paddingRight: layout.spacingSmall,
     paddingTop: '0',
     textAlign: 'left',
     textDecoration: 'none',
@@ -38,13 +44,13 @@ export default {
     width: '100%',
 
     '&:focus': {
-      background: core.colors.bone,
-      color: core.colors.gray05,
+      background: colorsBackgroundLight[1],
+      color: colorsTextIcon.highOnLight,
       outline: 'none'
     },
 
     '&[disabled]': {
-      color: core.colors.gray02,
+      color: colorsTextIcon.lowOnLight,
       cursor: 'auto',
       outline: 'none'
     }
@@ -55,9 +61,9 @@ export default {
   },
   '.psds-typeahead__menu__item__icon': {
     color: 'transparent',
-    marginLeft: core.layout.spacingXSmall
+    marginLeft: layout.spacingXSmall
   },
   '.psds-typeahead__menu__item__icon--selected': {
-    color: core.colors.blue
+    color: colorsBlue.base
   }
 }
