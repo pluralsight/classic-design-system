@@ -1,4 +1,8 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  type,
+  colorsTextIcon,
+  colorsBackgroundUtility
+} from '@pluralsight/ps-design-system-core'
 
 import * as vars from '../vars/index.js'
 
@@ -14,27 +18,27 @@ export default {
   [`.psds-avatar--size-${vars.sizes.xSmall}`]: {
     width: vars.widths.xSmall,
     height: vars.widths.xSmall,
-    fontSize: core.type.fontSizeXSmall
+    fontSize: type.fontSizeXSmall
   },
   [`.psds-avatar--size-${vars.sizes.small}`]: {
     width: vars.widths.small,
     height: vars.widths.small,
-    fontSize: core.type.fontSizeSmall
+    fontSize: type.fontSizeSmall
   },
   [`.psds-avatar--size-${vars.sizes.medium}`]: {
     width: vars.widths.medium,
     height: vars.widths.medium,
-    fontSize: core.type.fontSizeMedium
+    fontSize: type.fontSizeMedium
   },
   [`.psds-avatar--size-${vars.sizes.large}`]: {
     width: vars.widths.large,
     height: vars.widths.large,
-    fontSize: core.type.fontSizeLarge
+    fontSize: type.fontSizeLarge
   },
   [`.psds-avatar--size-${vars.sizes.xLarge}`]: {
     width: vars.widths.xLarge,
     height: vars.widths.xLarge,
-    fontSize: core.type.fontSizeXLarge
+    fontSize: type.fontSizeXLarge
   },
 
   '.psds-avatar__image': {
@@ -52,8 +56,8 @@ export default {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    color: core.colorsTextIcon.highOnDark,
-    fontWeight: core.type.fontWeightBook,
-    backgroundColor: core.colorsBackgroundUtility.base
+    color: colorsTextIcon.highOnDark,
+    fontWeight: type.fontWeightBook,
+    backgroundColor: colorsBackgroundUtility.base
   }
 }
