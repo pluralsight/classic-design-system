@@ -19,7 +19,7 @@
     "dotenv": "^8.2.0",
     "http-server": "^0.11.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.1.2",
+    "next": "^9.2.0",
     "react-codemirror": "^1.0.0",
     "react-markdown": "^4.2.2"
   },
