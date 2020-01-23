@@ -1,4 +1,12 @@
-import { colors, layout, type } from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  colorsBorder,
+  colorsStatus,
+  colorsTextIcon,
+  layout,
+  type
+} from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
@@ -15,9 +23,10 @@ export default {
   // __field
   '.psds-text-input__field': {
     alignItems: 'center',
-    background: colors.bone,
+    background: colorsBackgroundLight[3],
+    border: `1px solid ${colorsBorder.highOnLight}`,
     borderRadius: '2px',
-    color: colors.gray03,
+    color: colorsTextIcon.highOnLight,
     display: 'flex',
     fontWeight: type.fontWeightBook,
     height: '40px',
@@ -25,6 +34,10 @@ export default {
     padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
     position: 'relative',
     width: '100%'
+  },
+  [`.psds-text-input__field.psds-theme--${themeNames.light}`]: {
+    background: colorsBackgroundLight[3],
+    border: `1px solid ${colorsBorder.highOnLight}`
   },
   '.psds-text-input__field.psds-text-input--small': {
     height: '32px',
@@ -43,29 +56,26 @@ export default {
     outline: 'none',
     padding: 0,
 
-    '&:focus': {
-      outline: 'none'
-    }
+    '&:focus': { outline: 'none' },
+    '&::placeholder': { color: colorsTextIcon.lowOnLight }
   },
-  [`.psds-text-input__field.psds-theme--${themeNames.light}`]: {
-    background: colors.white,
-    border: `1px solid ${colors.gray02}`,
-
-    '&:focus': {
-      border: '1px solid transparent'
-    }
+  [`.psds-text-input__field-input--appearance-${vars.appearances.subtle}`]: {
+    '&::placeholder': { color: colorsTextIcon.lowOnDark }
+  },
+  [`.psds-text-input__field-input.psds-theme--${themeNames.light}`]: {
+    '&::placeholder': { color: colorsTextIcon.lowOnLight }
   },
 
   [`.psds-text-input__field--error.psds-theme--${themeNames.light}`]: {
     border: '1px solid transparent'
   },
   [`.psds-text-input__field--appearance-${vars.appearances.subtle}`]: {
-    color: colors.gray01,
-    background: colors.gray06,
-    border: `1px solid ${colors.gray03}`
+    color: colorsTextIcon.highOnDark,
+    background: colorsBackgroundDark[1],
+    border: `1px solid ${colorsBorder.highOnDark}`
   },
   [`.psds-text-input__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.light}`]: {
-    color: colors.gray05
+    color: colorsTextIcon.highOnLight
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.left}`]: {
     padding: `0 ${layout.spacingMedium} 0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall})`
@@ -98,41 +108,42 @@ export default {
     transform: 'translateY(-50%)',
     display: 'flex',
     alignItems: 'center',
-    color: colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
   [`.psds-text-input__icon.psds-theme--${themeNames.light}`]: {
-    color: colors.gray02
+    color: colorsTextIcon.lowOnLight
   },
+
   [`.psds-text-input__icon--icon-align-${vars.iconAligns.right}`]: {
     left: 'auto',
     right: layout.spacingXSmall
   },
   [`.psds-text-input__icon--appearance-${vars.appearances.subtle}`]: {
-    color: colors.gray02
+    color: colorsTextIcon.lowOnDark
   },
 
   // __label
   '.psds-text-input__label': {
-    color: colors.bone,
+    color: colorsTextIcon.highOnDark,
     fontSize: type.fontSizeSmall,
     lineHeight: '16px',
     fontWeight: type.fontWeightMedium,
     paddingBottom: layout.spacingXSmall
   },
   [`.psds-text-input__label.psds-theme--${themeNames.light}`]: {
-    color: colors.gray05
+    color: colorsTextIcon.highOnLight
   },
 
   // __sub-label
   '.psds-text-input__sub-label': {
-    color: colors.gray02,
+    color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSizeXSmall,
     lineHeight: '16px',
     fontWeight: type.fontWeightMedium,
     paddingTop: layout.spacingXSmall
   },
   [`.psds-text-input__sub-label.psds-theme--${themeNames.light}`]: {
-    color: colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
 
   // __error
@@ -141,7 +152,7 @@ export default {
     right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
-    color: colors.red,
+    color: colorsStatus.error,
     marginLeft: layout.spacingXSmall
   }
 }
