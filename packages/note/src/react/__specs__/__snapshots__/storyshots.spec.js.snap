@@ -28,7 +28,7 @@ exports[`Storyshots Note basic 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -111,7 +111,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -206,7 +206,7 @@ exports[`Storyshots Note with h1 in heading 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -301,7 +301,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
           />
           <div
             aria-label="Bob Ross"
-            data-css-1oawbuy=""
+            data-css-x99j9q=""
             style={
               Object {
                 "backgroundColor": "#1F964E",
@@ -385,7 +385,7 @@ exports[`Storyshots Note with linked heading 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -694,7 +694,7 @@ exports[`Storyshots Note/actions one action 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -800,7 +800,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -925,7 +925,7 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -1031,7 +1031,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -1145,7 +1145,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -1366,7 +1366,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             />
             <div
               aria-label="Bob Ross"
-              data-css-1oawbuy=""
+              data-css-x99j9q=""
               style={
                 Object {
                   "backgroundColor": "#1F964E",
@@ -1442,7 +1442,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             />
             <div
               aria-label="Bob Ross"
-              data-css-1oawbuy=""
+              data-css-x99j9q=""
               style={
                 Object {
                   "backgroundColor": "#1F964E",
@@ -1518,7 +1518,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             />
             <div
               aria-label="Bob Ross"
-              data-css-1oawbuy=""
+              data-css-x99j9q=""
               style={
                 Object {
                   "backgroundColor": "#1F964E",
@@ -1603,7 +1603,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
@@ -1696,7 +1696,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-1oawbuy=""
+          data-css-x99j9q=""
           style={
             Object {
               "backgroundColor": "#1F964E",
