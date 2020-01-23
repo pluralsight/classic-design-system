@@ -2,7 +2,10 @@ import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
 import Icon, {
+  colors,
   sizes,
+  widths,
+  StarIcon,
   CodeIcon,
   PathIcon
 } from '@pluralsight/ps-design-system-icon'
@@ -92,12 +95,10 @@ export default _ => (
         props={[
           PropTypes.row([
             'color',
-            <span>
-              <code>*Icon.colors</code> enum
-            </span>,
+            PropTypes.union(colors),
             null,
-            null,
-            'all flat Core colors'
+            <code>currentColor</code>,
+            'color presets'
           ]),
           PropTypes.row([
             'size',
@@ -125,9 +126,29 @@ export default _ => (
 
       <SectionHeading>Color</SectionHeading>
       <P>
+        The <Text.Code>color</Text.Code> prop makes available the following
+        colors.
+      </P>
+      <Example.React
+        includes={{ StarIcon }}
+        outputStyle={{
+          display: 'grid',
+          gap: core.layout.spacingLarge,
+          gridTemplateColumns: `repeat(auto-fill, minmax(${widths.large}, 1fr))`
+        }}
+        outputChildStyle={{ margin: 0 }}
+        codes={Object.keys(Icon.colors).map(
+          colorKey =>
+            `
+  <StarIcon color={StarIcon.colors.${StarIcon.colors[colorKey]}} size={StarIcon.sizes.large} />
+`
+        )}
+        themeToggle
+      />
+      <P>
         Icon color will usually match the surrounding text color. It can also be
-        overridden Core <TextLink href="/core/color">colors</TextLink> or any
-        fill.
+        overridden with Core <TextLink href="/core/color">colors</TextLink> or
+        any fill color.
       </P>
       <Example.React
         includes={{ PathIcon }}
@@ -138,11 +159,8 @@ export default _ => (
 </div>
 `,
           `
-<PathIcon style={{ color: 'red' }} size={CodeIcon.sizes.large} />
-`,
-          `
-<PathIcon color={PathIcon.colors.orange} size={CodeIcon.sizes.large} />
- `
+<PathIcon style={{ color: 'rebeccapurple' }} size={CodeIcon.sizes.large} />
+`
         ]}
       />
 
@@ -187,8 +205,7 @@ export default _ => (
       <P>
         Note: To override the size and color of a custom SVG, remove any{' '}
         <Text.Code>height</Text.Code>, <Text.Code>width</Text.Code>, and{' '}
-        <Text.Code>fill</Text.Code> attributes from the SVG after exporting
-        it.
+        <Text.Code>fill</Text.Code> attributes from the SVG after exporting it.
       </P>
     </Content>
   </Chrome>

@@ -26,13 +26,13 @@ const GridItem = props => <div {...props} {...styles.gridItem} />
 
 const colorStory = storiesOf('appearance', module)
 Object.values(Icon.colors).forEach(color =>
-  colorStory.add(color, _ => <Icons.CheckIcon color={color} />)
+  colorStory.add(color, _ => <Icons.CheckIcon color={Icon.colors[color]} />)
 )
 
 const sizeStory = storiesOf('size', module)
 Object.values(Icon.sizes).forEach(size =>
   sizeStory.add(size, _ => (
-    <Icons.CheckIcon color={Icon.colors.white} size={size} />
+    <Icons.CheckIcon color={Icon.colors.textIconHighOnDark} size={size} />
   ))
 )
 
@@ -43,7 +43,7 @@ idStory.add('all export names', () => (
       const Comp = Icons[id]
       return (
         <GridItem key={`item-${id}`}>
-          <Comp color={Icon.colors.white} />
+          <Comp color={Icon.colors.textIconHighOnDark} />
         </GridItem>
       )
     })}
@@ -52,12 +52,17 @@ idStory.add('all export names', () => (
 Object.keys(Icons).forEach(id =>
   idStory.add(id, _ => {
     const Comp = Icons[id]
-    return <Comp color={Icon.colors.white} size={Icon.sizes.large} />
+    return (
+      <Comp color={Icon.colors.textIconHighOnDark} size={Icon.sizes.large} />
+    )
   })
 )
 
 storiesOf('custom props', module).add('aria-label', () => (
-  <Icons.CheckIcon color={Icon.colors.white} aria-label="completed" />
+  <Icons.CheckIcon
+    color={Icon.colors.textIconHighOnDark}
+    aria-label="completed"
+  />
 ))
 
 const SvgAccounticon = props => (
@@ -67,7 +72,7 @@ const SvgAccounticon = props => (
 )
 
 storiesOf('custom icon', module).add('aria-label', () => (
-  <Icon color={Icon.colors.white}>
+  <Icon color={Icon.colors.textIconHighOnDark}>
     <SvgAccounticon />
   </Icon>
 ))
