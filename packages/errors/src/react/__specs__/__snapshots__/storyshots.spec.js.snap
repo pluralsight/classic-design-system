@@ -5,7 +5,7 @@ exports[`Storyshots pages 403 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-1vjdl4y=""
+    data-css-1li9v0l=""
   >
     <div
       data-css-1ew8cs7=""
@@ -37,7 +37,7 @@ exports[`Storyshots pages 403 1`] = `
       </h1>
     </div>
     <div
-      data-css-vf7nz1=""
+      data-css-i38iv3=""
     >
       <h2
         data-css-1oooiac=""
@@ -68,7 +68,7 @@ exports[`Storyshots pages 404 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-1vjdl4y=""
+    data-css-1li9v0l=""
   >
     <div
       data-css-1ew8cs7=""
@@ -100,7 +100,7 @@ exports[`Storyshots pages 404 1`] = `
       </h1>
     </div>
     <div
-      data-css-vf7nz1=""
+      data-css-i38iv3=""
     >
       <h2
         data-css-1oooiac=""
@@ -112,11 +112,11 @@ exports[`Storyshots pages 404 1`] = `
     </div>
     <form
       action="/search"
-      data-css-oxne5y=""
+      data-css-y92u4c=""
       method="get"
     >
       <div
-        data-css-1iawi3a=""
+        data-css-f8qy26=""
       >
         <svg
           aria-label="search icon"
@@ -129,7 +129,7 @@ exports[`Storyshots pages 404 1`] = `
         </svg>
       </div>
       <input
-        data-css-1xjnlrz=""
+        data-css-1k3396l=""
         name="q"
         placeholder="Search"
         type="text"
@@ -144,7 +144,7 @@ exports[`Storyshots pages 500 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-1vjdl4y=""
+    data-css-1li9v0l=""
   >
     <div
       data-css-1ew8cs7=""
@@ -176,7 +176,7 @@ exports[`Storyshots pages 500 1`] = `
       </h1>
     </div>
     <div
-      data-css-vf7nz1=""
+      data-css-i38iv3=""
     >
       <h2
         data-css-1oooiac=""
@@ -207,7 +207,7 @@ exports[`Storyshots pages 503 1`] = `
   data-css-1so76ss=""
 >
   <div
-    data-css-1vjdl4y=""
+    data-css-1li9v0l=""
   >
     <div
       data-css-1ew8cs7=""
@@ -239,7 +239,7 @@ exports[`Storyshots pages 503 1`] = `
       </h1>
     </div>
     <div
-      data-css-vf7nz1=""
+      data-css-i38iv3=""
     >
       <h2
         data-css-1oooiac=""
