@@ -297,6 +297,31 @@ const colorCategories = [
         ]
       }
     ]
+  },
+  {
+    heading: 'Status Colors',
+    subCategories: [
+      {
+        colors: [
+          {
+            name: 'Status - Success',
+            var: 'psColorsStatusSuccess',
+            hex: core.colorsStatus.success
+          },
+          {
+            name: 'Status - Warning',
+            var: 'psColorsStatusWarning',
+            hex: core.colorsStatus.warning,
+            fg: core.colorsTextIcon.highOnLight
+          },
+          {
+            name: 'Status - Error',
+            var: 'psColorsStatusError',
+            hex: core.colorsStatus.error
+          }
+        ]
+      }
+    ]
   }
 ]
 
