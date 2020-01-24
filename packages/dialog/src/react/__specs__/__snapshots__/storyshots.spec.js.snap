@@ -53,19 +53,19 @@ exports[`Storyshots modal default 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-19y8f6h=""
+        data-css-hdres9=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-5v2fb5=""
           onKeyUp={[Function]}
         >
           <div>
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-1tyhxxd=""
               onClick={[Function]}
             >
               <svg
@@ -212,19 +212,19 @@ exports[`Storyshots modal no click overlay 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-19y8f6h=""
+        data-css-hdres9=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-5v2fb5=""
           onKeyUp={[Function]}
         >
           <div>
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-1tyhxxd=""
               onClick={[Function]}
             >
               <svg
@@ -371,13 +371,13 @@ exports[`Storyshots modal no close button 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-19y8f6h=""
+        data-css-hdres9=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-5v2fb5=""
           onKeyUp={[Function]}
         >
           <div>
@@ -514,18 +514,18 @@ exports[`Storyshots modal no escape key 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-19y8f6h=""
+        data-css-hdres9=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-5v2fb5=""
         >
           <div>
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-1tyhxxd=""
               onClick={[Function]}
             >
               <svg
@@ -672,19 +672,19 @@ exports[`Storyshots modal no focus on mount 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-19y8f6h=""
+        data-css-hdres9=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-5v2fb5=""
           onKeyUp={[Function]}
         >
           <div>
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-1tyhxxd=""
               onClick={[Function]}
             >
               <svg
@@ -831,19 +831,19 @@ exports[`Storyshots modal no focusable child elements 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-19y8f6h=""
+        data-css-hdres9=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-5v2fb5=""
           onKeyUp={[Function]}
         >
           <div>
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-1tyhxxd=""
               onClick={[Function]}
             >
               <svg
@@ -924,19 +924,19 @@ exports[`Storyshots modal overflow-y 1`] = `
       </p>
       <div
         aria-label="Storybook Modal"
-        data-css-19y8f6h=""
+        data-css-hdres9=""
         id="psds-dialog__overlay"
         onClick={[Function]}
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-5v2fb5=""
           onKeyUp={[Function]}
         >
           <div>
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-1tyhxxd=""
               onClick={[Function]}
             >
               <svg
@@ -1310,13 +1310,13 @@ exports[`Storyshots onClose with onClose 1`] = `
     }
   >
     <div
-      data-css-gnd6c=""
+      data-css-1sa59c1=""
       onKeyUp={[Function]}
     >
       <div>
         <button
           aria-label="Close dialog"
-          data-css-1gmw1mr=""
+          data-css-1tyhxxd=""
           onClick={[Function]}
         >
           <svg
@@ -1420,7 +1420,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
     }
   >
     <div
-      data-css-wmucfn=""
+      data-css-1vlov12=""
     >
       <div>
         <h1
@@ -1513,7 +1513,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
     }
   >
     <div
-      data-css-kvhto4=""
+      data-css-cypb35=""
     >
       <div>
         <h1
@@ -1606,7 +1606,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
     }
   >
     <div
-      data-css-1y967xl=""
+      data-css-1rr7rzx=""
     >
       <div>
         <h1
@@ -1699,7 +1699,7 @@ exports[`Storyshots tailPosition none 1`] = `
     }
   >
     <div
-      data-css-gnd6c=""
+      data-css-1sa59c1=""
     >
       <div>
         <h1
@@ -1792,7 +1792,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
     }
   >
     <div
-      data-css-g3vmsd=""
+      data-css-zuzejd=""
     >
       <div>
         <h1
@@ -1885,7 +1885,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
     }
   >
     <div
-      data-css-s54oy9=""
+      data-css-57emgt=""
     >
       <div>
         <h1
@@ -1978,7 +1978,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-r7qi1n=""
+      data-css-1we3fsw=""
     >
       <div>
         <h1
