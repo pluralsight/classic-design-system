@@ -28,10 +28,10 @@ exports[`Storyshots Note basic 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -40,13 +40,13 @@ exports[`Storyshots Note basic 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
@@ -58,10 +58,10 @@ exports[`Storyshots Note basic 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -72,7 +72,7 @@ exports[`Storyshots Note basic 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -111,10 +111,10 @@ exports[`Storyshots Note with DS Text components 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -123,13 +123,13 @@ exports[`Storyshots Note with DS Text components 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           <h3
             data-css-1fxxvvr=""
@@ -153,10 +153,10 @@ exports[`Storyshots Note with DS Text components 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -167,7 +167,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -206,10 +206,10 @@ exports[`Storyshots Note with h1 in heading 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -218,13 +218,13 @@ exports[`Storyshots Note with h1 in heading 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           <h1>
             Bob Ross
@@ -245,10 +245,10 @@ exports[`Storyshots Note with h1 in heading 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -259,7 +259,7 @@ exports[`Storyshots Note with h1 in heading 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -301,10 +301,10 @@ exports[`Storyshots Note with linked avatar 1`] = `
           />
           <div
             aria-label="Bob Ross"
-            data-css-x99j9q=""
+            data-css-1oawbuy=""
             style={
               Object {
-                "backgroundColor": "#1F964E",
+                "backgroundColor": "#008F46",
               }
             }
           >
@@ -314,13 +314,13 @@ exports[`Storyshots Note with linked avatar 1`] = `
       </a>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
@@ -332,10 +332,10 @@ exports[`Storyshots Note with linked avatar 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -346,7 +346,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -385,10 +385,10 @@ exports[`Storyshots Note with linked heading 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -397,13 +397,13 @@ exports[`Storyshots Note with linked heading 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           <p>
             <a
@@ -422,10 +422,10 @@ exports[`Storyshots Note with linked heading 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -436,7 +436,7 @@ exports[`Storyshots Note with linked heading 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -461,7 +461,7 @@ exports[`Storyshots Note without avatar and author 1`] = `
     onMouseOver={[Function]}
   >
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <p>
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
@@ -470,10 +470,10 @@ exports[`Storyshots Note without avatar and author 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -484,7 +484,7 @@ exports[`Storyshots Note without avatar and author 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -509,7 +509,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
     onMouseOver={[Function]}
   >
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <p>
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
@@ -518,10 +518,10 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             It is impossible to count the grand contributions of this great author
           </span>
@@ -532,7 +532,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             Levels heretofore unknown in the battle for truth and knowledge
           </span>
@@ -543,16 +543,16 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             A length of such amazing lengthitude so-as to blow the mind
           </span>
         </div>
         <div
-          data-css-88uwpz=""
+          data-css-1wdz5wp=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(BookmarkIcon) />}
             title="Bookmark"
           >
@@ -571,7 +571,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
             </div>
           </button>
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             title="More"
           >
@@ -610,7 +610,7 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
     onMouseOver={[Function]}
   >
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <p>
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
@@ -619,10 +619,10 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1ttz8q1=""
+          data-css-5g9w0h=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(BookmarkIcon) />}
             title="Bookmark"
           >
@@ -641,7 +641,7 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
             </div>
           </button>
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             title="More"
           >
@@ -694,10 +694,10 @@ exports[`Storyshots Note/actions one action 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -706,21 +706,21 @@ exports[`Storyshots Note/actions one action 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
         <div
-          data-css-1ttz8q1=""
+          data-css-5g9w0h=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             title="More"
           >
@@ -747,10 +747,10 @@ exports[`Storyshots Note/actions one action 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -761,7 +761,7 @@ exports[`Storyshots Note/actions one action 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -800,10 +800,10 @@ exports[`Storyshots Note/actions two actions 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -812,21 +812,21 @@ exports[`Storyshots Note/actions two actions 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
         <div
-          data-css-1ttz8q1=""
+          data-css-5g9w0h=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(BookmarkIcon) />}
             title="Bookmark"
           >
@@ -845,7 +845,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
             </div>
           </button>
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             title="More"
           >
@@ -872,10 +872,10 @@ exports[`Storyshots Note/actions two actions 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -886,7 +886,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -925,10 +925,10 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -937,21 +937,21 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
         <div
-          data-css-16ufoco=""
+          data-css-lcnfz=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             title="More"
           >
@@ -978,10 +978,10 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -992,7 +992,7 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -1031,10 +1031,10 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -1043,21 +1043,21 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
         <div
-          data-css-1ttz8q1=""
+          data-css-5g9w0h=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             onClick={[Function]}
             title="More"
@@ -1092,10 +1092,10 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -1106,7 +1106,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -1145,10 +1145,10 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -1157,21 +1157,21 @@ exports[`Storyshots Note/actions with long heading 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           This is probably the greatest thing that's ever happened in my life
         </div>
         <div
-          data-css-1ttz8q1=""
+          data-css-5g9w0h=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(BookmarkIcon) />}
             title="Bookmark"
           >
@@ -1190,7 +1190,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
             </div>
           </button>
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             title="More"
           >
@@ -1217,10 +1217,10 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -1231,7 +1231,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
@@ -1256,7 +1256,7 @@ exports[`Storyshots Note/actions without author 1`] = `
     onMouseOver={[Function]}
   >
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <p>
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
@@ -1265,10 +1265,10 @@ exports[`Storyshots Note/actions without author 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta first
           </span>
@@ -1279,16 +1279,16 @@ exports[`Storyshots Note/actions without author 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             meta second
           </span>
         </div>
         <div
-          data-css-88uwpz=""
+          data-css-1wdz5wp=""
         >
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(BookmarkIcon) />}
             title="Bookmark"
           >
@@ -1307,7 +1307,7 @@ exports[`Storyshots Note/actions without author 1`] = `
             </div>
           </button>
           <button
-            data-css-tqgxbw=""
+            data-css-td0jeq=""
             icon={<ForwardRef(MoreIcon) />}
             title="More"
           >
@@ -1344,7 +1344,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
     data-css-17bsnt1=""
   >
     <li
-      data-css-qrekpk=""
+      data-css-pu8y6x=""
     >
       <div
         data-css-ae1vww=""
@@ -1366,10 +1366,10 @@ exports[`Storyshots Note/in a list basic 1`] = `
             />
             <div
               aria-label="Bob Ross"
-              data-css-x99j9q=""
+              data-css-1oawbuy=""
               style={
                 Object {
-                  "backgroundColor": "#1F964E",
+                  "backgroundColor": "#008F46",
                 }
               }
             >
@@ -1378,13 +1378,13 @@ exports[`Storyshots Note/in a list basic 1`] = `
           </div>
         </div>
         <div
-          data-css-1e0ri2d=""
+          data-css-odzpq7=""
         >
           <div
             data-css-1wkpnw7=""
           >
             <div
-              data-css-1qsfjxo=""
+              data-css-15wuh48=""
             >
               Bob Ross
             </div>
@@ -1396,10 +1396,10 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-126k7w0=""
           >
             <div
-              data-css-1n0mdtj=""
+              data-css-1afye6p=""
             >
               <span
-                data-css-uiygjz=""
+                data-css-1plyjau=""
               >
                 meta first
               </span>
@@ -1410,7 +1410,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
                 ·
               </span>
               <span
-                data-css-uiygjz=""
+                data-css-1plyjau=""
               >
                 meta second
               </span>
@@ -1420,7 +1420,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
       </div>
     </li>
     <li
-      data-css-qrekpk=""
+      data-css-pu8y6x=""
     >
       <div
         data-css-ae1vww=""
@@ -1442,10 +1442,10 @@ exports[`Storyshots Note/in a list basic 1`] = `
             />
             <div
               aria-label="Bob Ross"
-              data-css-x99j9q=""
+              data-css-1oawbuy=""
               style={
                 Object {
-                  "backgroundColor": "#1F964E",
+                  "backgroundColor": "#008F46",
                 }
               }
             >
@@ -1454,13 +1454,13 @@ exports[`Storyshots Note/in a list basic 1`] = `
           </div>
         </div>
         <div
-          data-css-1e0ri2d=""
+          data-css-odzpq7=""
         >
           <div
             data-css-1wkpnw7=""
           >
             <div
-              data-css-1qsfjxo=""
+              data-css-15wuh48=""
             >
               Bob Ross
             </div>
@@ -1472,10 +1472,10 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-126k7w0=""
           >
             <div
-              data-css-1n0mdtj=""
+              data-css-1afye6p=""
             >
               <span
-                data-css-uiygjz=""
+                data-css-1plyjau=""
               >
                 meta first
               </span>
@@ -1486,7 +1486,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
                 ·
               </span>
               <span
-                data-css-uiygjz=""
+                data-css-1plyjau=""
               >
                 meta second
               </span>
@@ -1496,7 +1496,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
       </div>
     </li>
     <li
-      data-css-qrekpk=""
+      data-css-pu8y6x=""
     >
       <div
         data-css-ae1vww=""
@@ -1518,10 +1518,10 @@ exports[`Storyshots Note/in a list basic 1`] = `
             />
             <div
               aria-label="Bob Ross"
-              data-css-x99j9q=""
+              data-css-1oawbuy=""
               style={
                 Object {
-                  "backgroundColor": "#1F964E",
+                  "backgroundColor": "#008F46",
                 }
               }
             >
@@ -1530,13 +1530,13 @@ exports[`Storyshots Note/in a list basic 1`] = `
           </div>
         </div>
         <div
-          data-css-1e0ri2d=""
+          data-css-odzpq7=""
         >
           <div
             data-css-1wkpnw7=""
           >
             <div
-              data-css-1qsfjxo=""
+              data-css-15wuh48=""
             >
               Bob Ross
             </div>
@@ -1548,10 +1548,10 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-126k7w0=""
           >
             <div
-              data-css-1n0mdtj=""
+              data-css-1afye6p=""
             >
               <span
-                data-css-uiygjz=""
+                data-css-1plyjau=""
               >
                 meta first
               </span>
@@ -1562,7 +1562,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
                 ·
               </span>
               <span
-                data-css-uiygjz=""
+                data-css-1plyjau=""
               >
                 meta second
               </span>
@@ -1603,10 +1603,10 @@ exports[`Storyshots Note/metadata as a link 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -1615,13 +1615,13 @@ exports[`Storyshots Note/metadata as a link 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
@@ -1633,10 +1633,10 @@ exports[`Storyshots Note/metadata as a link 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             <a
               data-css-1skajya=""
@@ -1652,7 +1652,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             <a
               data-css-1vzf57m=""
@@ -1696,10 +1696,10 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
         />
         <div
           aria-label="Bob Ross"
-          data-css-x99j9q=""
+          data-css-1oawbuy=""
           style={
             Object {
-              "backgroundColor": "#1F964E",
+              "backgroundColor": "#008F46",
             }
           }
         >
@@ -1708,13 +1708,13 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
       </div>
     </div>
     <div
-      data-css-1e0ri2d=""
+      data-css-odzpq7=""
     >
       <div
         data-css-1wkpnw7=""
       >
         <div
-          data-css-1qsfjxo=""
+          data-css-15wuh48=""
         >
           Bob Ross
         </div>
@@ -1726,10 +1726,10 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
         data-css-126k7w0=""
       >
         <div
-          data-css-1n0mdtj=""
+          data-css-1afye6p=""
         >
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             It is impossible to count the grand contributions of this great author
           </span>
@@ -1740,7 +1740,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             Levels heretofore unknown in the battle for truth and knowledge
           </span>
@@ -1751,7 +1751,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
             ·
           </span>
           <span
-            data-css-uiygjz=""
+            data-css-1plyjau=""
           >
             A length of such amazing lengthitude so-as to blow the mind
           </span>

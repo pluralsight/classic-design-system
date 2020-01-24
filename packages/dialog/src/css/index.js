@@ -1,5 +1,10 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util'
+import {
+  colors,
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 
 import * as vars from '../vars/index.js'
 
@@ -15,27 +20,31 @@ export default {
 
   '.psds-dialog': ({ fade }) => ({
     animation: `${fade || 'psds-dialog__keyframes__fade'} ${
-      core.motion.speedFast
+      motion.speedFast
     } ease-out forwards`,
-    background: core.colors.white,
+    background: colors.white,
     borderRadius: '2px',
-    boxShadow: `0 1px 2px ${transparentize(0.5, core.colors.black)}`,
-    color: core.colors.gray05,
-    display: 'inline-block',
-    fontSize: core.type.fontSizeSmall,
-    fontWeight: core.type.fontWeightMedium,
-    lineHeight: core.type.lineHeightTight,
+    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
+    display: 'inline-flex',
     opacity: 0,
-    overflowY: 'auto',
-    padding: core.layout.spacingLarge,
     position: 'relative',
-    transform: `translateY(${core.layout.spacingXSmall})`
+    transform: `translateY(${layout.spacingXSmall})`
   }),
+
+  '.psds-dialog__content': {
+    color: colorsTextIcon.highOnLight,
+    fontSize: type.fontSizeSmall,
+    fontWeight: type.fontWeightMedium,
+    lineHeight: type.lineHeightTight,
+    padding: layout.spacingLarge,
+    flex: '1 1 auto',
+    overflowY: 'auto'
+  },
 
   // --w-tail
   '.psds-dialog--w-tail': {
     '&:after': {
-      backgroundColor: core.colors.white,
+      backgroundColor: colors.white,
       content: ' ',
       display: 'block',
       height: tailDimension,
@@ -68,14 +77,14 @@ export default {
   [`.psds-dialog--tailPosition-${vars.tailPositions.bottomLeft}`]: {
     '&:after': {
       bottom: `calc(${tailDimension} / -2)`,
-      boxShadow: `1px 1px 1px ${transparentize(0.5, core.colors.black)}`,
+      boxShadow: `1px 1px 1px rgba(0, 0, 0, 0.5)`,
       left: tailDimension
     }
   },
   [`.psds-dialog--tailPosition-${vars.tailPositions.bottomCenter}`]: {
     '&:after': {
       bottom: `calc(${tailDimension} / -2)`,
-      boxShadow: `1px 1px 1px ${transparentize(0.5, core.colors.black)}`,
+      boxShadow: `1px 1px 1px rgba(0, 0, 0, 0.5)`,
       left: '50%',
       transform: 'translateX(-50%) rotate(45deg)'
     }
@@ -83,15 +92,15 @@ export default {
   [`.psds-dialog--tailPosition-${vars.tailPositions.bottomRight}`]: {
     '&:after': {
       bottom: `calc(${tailDimension} / -2)`,
-      boxShadow: `1px 1px 1px ${transparentize(0.5, core.colors.black)}`,
+      boxShadow: `1px 1px 1px rgba(0, 0, 0, 0.5)`,
       right: tailDimension
     }
   },
 
   // --modal
   '.psds-dialog--modal': {
-    maxHeight: `calc(100% - (2 * ${core.layout.spacingLarge}))`,
-    maxWidth: `calc(100% - (2 * ${core.layout.spacingLarge}))`
+    maxHeight: `calc(100% - (2 * ${layout.spacingLarge}))`,
+    maxWidth: `calc(100% - (2 * ${layout.spacingLarge}))`
   },
 
   // __close
@@ -103,11 +112,11 @@ export default {
     lineHeight: '0',
     padding: '0',
     position: 'absolute',
-    right: core.layout.spacingXSmall,
-    top: core.layout.spacingXSmall,
+    right: layout.spacingMedium,
+    top: layout.spacingMedium,
 
     '& > svg': {
-      fill: core.colors.gray03,
+      fill: colorsTextIcon.lowOnLight,
       height: '24px',
       width: '24px'
     }
@@ -116,7 +125,7 @@ export default {
   // __overlay
   '.psds-dialog__overlay': {
     alignItems: 'center',
-    backgroundColor: transparentize(0.5, core.colors.black),
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     display: 'flex',
     height: '100%',
     justifyContent: 'center',

@@ -27,7 +27,7 @@ export default {
     position: 'absolute',
     display: 'inline-block',
     marginLeft: 0,
-    background: core.colors.white,
+    background: core.colorsBackgroundLight[3],
     borderRadius: '2px',
     padding: `${vars.style.menuPaddingVert} 0`,
     minWidth: '160px',
@@ -87,7 +87,7 @@ export default {
     paddingBottom: '0',
     paddingLeft: core.layout.spacingMedium,
     paddingRight: core.layout.spacingMedium,
-    color: core.colors.gray05,
+    color: core.colorsTextIcon.highOnLight,
     background: 'none',
     textDecoration: 'none',
     transition: `background ${core.motion.speedXFast}`
@@ -101,18 +101,18 @@ export default {
   },
 
   '.psds-actionmenu__item:focus': {
-    background: core.colors.bone,
+    background: core.colorsBackgroundLight[2],
     outline: 'none',
-    color: core.colors.gray05
+    color: core.colorsTextIcon.highOnLight
   },
   '.psds-actionmenu__item--focus-keyboard': {
-    background: core.colors.blue,
+    background: core.colorsPrimaryAction.background,
     outline: 'none',
-    color: core.colors.white
+    color: core.colorsTextIcon.highOnDark
   },
 
   '.psds-actionmenu__item--link': {
-    color: core.colors.gray05
+    color: core.colorsTextIcon.highOnLight
   },
 
   '.psds-actionmenu__item--icon': {
@@ -124,12 +124,12 @@ export default {
   },
 
   '.psds-actionmenu__item--isActive': {
-    background: core.colors.bone,
+    background: core.colorsBackgroundLight[2],
     outline: 'none'
   },
 
   '.psds-actionmenu__item--disabled': {
-    color: core.colors.gray02,
+    opacity: '50%',
     cursor: 'auto',
     outline: 'none'
   },
@@ -137,7 +137,7 @@ export default {
   '.psds-actionmenu__divider': {
     height: '1px',
     width: '100%',
-    backgroundColor: core.colors.gray01,
+    backgroundColor: core.colorsBorder.lowOnLight,
     margin: `${core.layout.spacingXXSmall} 0`
   },
 
@@ -148,12 +148,12 @@ export default {
   },
 
   '.psds-actionmenu__item__arrow': {
-    color: '#888',
+    color: core.colorsTextIcon.lowOnLight,
     marginLeft: 'auto',
     paddingLeft: core.layout.spacingXSmall
   },
   '.psds-actionmenu__item__arrow--focus-keyboard': {
-    color: core.colors.white
+    color: core.colorsTextIcon.highOnDark
   },
   '.psds-actionmenu__item__arrow__svg': {
     fill: 'currentColor'
