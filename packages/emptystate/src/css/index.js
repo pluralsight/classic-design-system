@@ -1,4 +1,9 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
@@ -19,22 +24,22 @@ export const themeClasses = {
 export default {
   '.psds-emptystate': {
     margin: '0 auto',
-    padding: `${core.layout.spacingXLarge} ${core.layout.spacingLarge}`,
+    padding: `${layout.spacingXLarge} ${layout.spacingLarge}`,
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    transition: `opacity ${core.motion.speedXFast} ${core.motion.speedNormal}`
+    transition: `opacity ${motion.speedXFast} ${motion.speedNormal}`
   },
   '.psds-emptystate--hidden': {
     opacity: 0
   },
   ['.psds-emptystate' + themeClasses[themeDefaultName]]: {
-    color: core.colors.white
+    color: colorsTextIcon.highOnDark
   },
   ['.psds-emptystate' + themeClasses[themeNames.light]]: {
-    color: core.colors.gray06
+    color: colorsTextIcon.highOnLight
   },
 
   // __actions
@@ -44,39 +49,39 @@ export default {
 
   // __caption
   '.psds-emptystate__caption': {
-    marginBottom: core.layout.spacingLarge,
-    fontSize: core.type.fontSizeSmall,
-    letterSpacing: core.type.letterSpacingSmall,
-    lineHeight: core.type.lineHeightStandard,
+    marginBottom: layout.spacingLarge,
+    fontSize: type.fontSizeSmall,
+    letterSpacing: type.letterSpacingSmall,
+    lineHeight: type.lineHeightStandard,
     maxWidth: 500
   },
   ['.psds-emptystate__caption' + themeClasses[themeDefaultName]]: {
-    color: core.colors.gray01
+    color: colorsTextIcon.lowOnDark
   },
   ['.psds-emptystate__caption' + themeClasses[themeNames.light]]: {
-    color: core.colors.gray04
+    color: colorsTextIcon.lowOnLight
   },
 
   // __heading,
   '.psds-emptystate__heading': {
-    marginBottom: core.layout.spacingLarge,
-    letterSpacing: core.type.letterSpacingLarge,
-    fontWeight: core.type.fontWeightBook,
+    marginBottom: layout.spacingLarge,
+    letterSpacing: type.letterSpacingLarge,
+    fontWeight: type.fontWeightBook,
     maxWidth: 500
   },
   ['.psds-emptystate__heading' + sizeClasses.small]: {
-    fontSize: core.type.fontSizeMedium
+    fontSize: type.fontSizeMedium
   },
   ['.psds-emptystate__heading' + sizeClasses.large]: {
-    fontSize: core.type.fontSizeLarge,
-    lineHeight: core.type.lineHeightExtra
+    fontSize: type.fontSizeLarge,
+    lineHeight: type.lineHeightExtra
   },
 
   // __illustration
   '.psds-emptystate__illustration': {
     display: 'inline-block',
-    marginBottom: core.layout.spacingLarge,
-    transition: `all ${core.motion.speedXFast}`
+    marginBottom: layout.spacingLarge,
+    transition: `all ${motion.speedXFast}`
   },
   ['.psds-emptystate__illustration' + sizeClasses.small]: {
     width: 64,
