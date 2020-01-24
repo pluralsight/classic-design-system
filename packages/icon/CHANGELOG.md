@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.9...@pluralsight/ps-design-system-icon@17.0.0) (2020-01-24)
+
+
+### Code Refactoring
+
+* **icon:** apply 2020 colors; remove many colors ([3b17071](https://github.com/pluralsight/design-system/commit/3b170713724cb2053877c9d748cf8ffeb7d2d5c2))
+
+
+### BREAKING CHANGES
+
+* **icon:** remove many colors
+
+
+
+
+
 ## [16.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.7...@pluralsight/ps-design-system-icon@16.1.9) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

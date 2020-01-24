@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@6.0.20...@pluralsight/ps-design-system-datepicker@6.1.0) (2020-01-24)
+
+
+### Features
+
+* **datepicker:** apply 2020 colors ([1d62c96](https://github.com/pluralsight/design-system/commit/1d62c9626908d1d6de1ca6cd8c806437211ee412))
+
+
+
+
+
 ## [6.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@6.0.19...@pluralsight/ps-design-system-datepicker@6.0.20) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

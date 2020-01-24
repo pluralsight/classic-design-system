@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.4.13...@pluralsight/ps-design-system-site@17.5.0) (2020-01-24)
+
+
+### Bug Fixes
+
+* **site:** fix cross link from dialog to tooltip ([81473b7](https://github.com/pluralsight/design-system/commit/81473b7dbbbb0825b6be70dafc7d45bd8580e60c))
+
+
+### Features
+
+* **site:** add dialog in-app example ([9e164f8](https://github.com/pluralsight/design-system/commit/9e164f8efa90e87234708a75764220140ac43f60))
+* **site:** add icon color enum to docs ([98968ec](https://github.com/pluralsight/design-system/commit/98968ecb995df4f4a23ea120f5817b72c7ad5e89))
+
+
+
+
+
 ## [17.4.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.4.12...@pluralsight/ps-design-system-site@17.4.13) (2020-01-23)
 
 

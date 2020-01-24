@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@3.2.17...@pluralsight/ps-design-system-typeahead@3.3.0) (2020-01-24)
+
+
+### Features
+
+* **typeahead:** apply 2020 colors ([63c2494](https://github.com/pluralsight/design-system/commit/63c2494cce166f63fa9dab1793063f6dd34e1171))
+
+
+
+
+
 ## [3.2.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@3.2.16...@pluralsight/ps-design-system-typeahead@3.2.17) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
