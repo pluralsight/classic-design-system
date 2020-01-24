@@ -20,17 +20,21 @@ export default {
     background: core.colors.white,
     borderRadius: '2px',
     boxShadow: `0 1px 2px ${transparentize(0.5, core.colors.black)}`,
-    color: core.colors.gray05,
-    display: 'inline-block',
-    fontSize: core.type.fontSizeSmall,
-    fontWeight: core.type.fontWeightMedium,
-    lineHeight: core.type.lineHeightTight,
+    display: 'inline-flex',
     opacity: 0,
-    overflowY: 'auto',
-    padding: core.layout.spacingLarge,
     position: 'relative',
     transform: `translateY(${core.layout.spacingXSmall})`
   }),
+
+  '.psds-dialog__content': {
+    color: core.colors.gray05,
+    fontSize: core.type.fontSizeSmall,
+    fontWeight: core.type.fontWeightMedium,
+    lineHeight: core.type.lineHeightTight,
+    padding: core.layout.spacingLarge,
+    flex: '1 1 auto',
+    overflowY: 'auto'
+  },
 
   // --w-tail
   '.psds-dialog--w-tail': {
@@ -103,8 +107,8 @@ export default {
     lineHeight: '0',
     padding: '0',
     position: 'absolute',
-    right: core.layout.spacingXSmall,
-    top: core.layout.spacingXSmall,
+    right: core.layout.spacingMedium,
+    top: core.layout.spacingMedium,
 
     '& > svg': {
       fill: core.colors.gray03,
