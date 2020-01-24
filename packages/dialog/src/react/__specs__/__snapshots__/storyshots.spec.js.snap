@@ -59,13 +59,15 @@ exports[`Storyshots modal default 1`] = `
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-15z5i26=""
           onKeyUp={[Function]}
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-124fqrw=""
               onClick={[Function]}
             >
               <svg
@@ -218,13 +220,15 @@ exports[`Storyshots modal no click overlay 1`] = `
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-15z5i26=""
           onKeyUp={[Function]}
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-124fqrw=""
               onClick={[Function]}
             >
               <svg
@@ -377,10 +381,12 @@ exports[`Storyshots modal no close button 1`] = `
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-15z5i26=""
           onKeyUp={[Function]}
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <h1
               data-css-7941k5=""
               size="large"
@@ -520,12 +526,14 @@ exports[`Storyshots modal no escape key 1`] = `
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-15z5i26=""
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-124fqrw=""
               onClick={[Function]}
             >
               <svg
@@ -678,13 +686,15 @@ exports[`Storyshots modal no focus on mount 1`] = `
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-15z5i26=""
           onKeyUp={[Function]}
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-124fqrw=""
               onClick={[Function]}
             >
               <svg
@@ -837,13 +847,15 @@ exports[`Storyshots modal no focusable child elements 1`] = `
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-15z5i26=""
           onKeyUp={[Function]}
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-124fqrw=""
               onClick={[Function]}
             >
               <svg
@@ -930,13 +942,15 @@ exports[`Storyshots modal overflow-y 1`] = `
         role="region"
       >
         <div
-          data-css-192xfnn=""
+          data-css-15z5i26=""
           onKeyUp={[Function]}
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-124fqrw=""
               onClick={[Function]}
             >
               <svg
@@ -1357,13 +1371,15 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
         role="region"
       >
         <div
-          data-css-1u1saw0=""
+          data-css-qz85yh=""
           onKeyUp={[Function]}
         >
-          <div>
+          <div
+            data-css-7e9vg6=""
+          >
             <button
               aria-label="Close dialog"
-              data-css-1gmw1mr=""
+              data-css-124fqrw=""
               onClick={[Function]}
             >
               <svg
@@ -1737,13 +1753,15 @@ exports[`Storyshots onClose with onClose 1`] = `
     }
   >
     <div
-      data-css-gnd6c=""
+      data-css-9fm7lf=""
       onKeyUp={[Function]}
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <button
           aria-label="Close dialog"
-          data-css-1gmw1mr=""
+          data-css-124fqrw=""
           onClick={[Function]}
         >
           <svg
@@ -1847,9 +1865,11 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
     }
   >
     <div
-      data-css-wmucfn=""
+      data-css-7yrv6i=""
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <h1
           data-css-7941k5=""
           size="large"
@@ -1940,9 +1960,11 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
     }
   >
     <div
-      data-css-kvhto4=""
+      data-css-egcwx=""
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <h1
           data-css-7941k5=""
           size="large"
@@ -2033,9 +2055,11 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
     }
   >
     <div
-      data-css-1y967xl=""
+      data-css-1dkyu1u=""
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <h1
           data-css-7941k5=""
           size="large"
@@ -2126,9 +2150,11 @@ exports[`Storyshots tailPosition none 1`] = `
     }
   >
     <div
-      data-css-gnd6c=""
+      data-css-9fm7lf=""
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <h1
           data-css-7941k5=""
           size="large"
@@ -2219,9 +2245,11 @@ exports[`Storyshots tailPosition topCenter 1`] = `
     }
   >
     <div
-      data-css-g3vmsd=""
+      data-css-582zur=""
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <h1
           data-css-7941k5=""
           size="large"
@@ -2312,9 +2340,11 @@ exports[`Storyshots tailPosition topLeft 1`] = `
     }
   >
     <div
-      data-css-s54oy9=""
+      data-css-wam50j=""
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <h1
           data-css-7941k5=""
           size="large"
@@ -2405,9 +2435,11 @@ exports[`Storyshots tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-r7qi1n=""
+      data-css-zzyd7d=""
     >
-      <div>
+      <div
+        data-css-7e9vg6=""
+      >
         <h1
           data-css-7941k5=""
           size="large"
