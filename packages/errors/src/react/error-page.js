@@ -40,7 +40,11 @@ const styles = {
       stylesheet['@media (min-width: 769px)'][`.${label}`]
     )
   },
-  code: props => css(stylesheet['.psds-error-page__code']),
+  code: ({ themeName }) =>
+    css(
+      stylesheet['.psds-error-page__code'],
+      stylesheet[`.psds-error-page__code.psds-theme--${themeName}`]
+    ),
   search: ({ themeName }) => {
     const label = 'psds-error-page__search'
 
@@ -49,7 +53,11 @@ const styles = {
       css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   },
-  searchIcon: _ => css(stylesheet['.psds-error-page__search__icon']),
+  searchIcon: ({ themeName }) =>
+    css(
+      stylesheet['.psds-error-page__search__icon'],
+      stylesheet[`.psds-error-page__search__icon.psds-theme--${themeName}`]
+    ),
   searchInput: ({ themeName }) => {
     const label = 'psds-error-page__search__input'
 
