@@ -159,16 +159,17 @@ function Swatch2(props) {
         <div className="hex">{props.hex}</div>
       </div>
       {props.icon && <div className="icon">{props.icon}</div>}
+      {props.borderExample && <div className="borderExample" />}
       <style jsx>{`
         .swatch {
           background: ${props.bg};
           border: ${props.border ? `1px solid ${props.border}` : 'none'};
           color: ${props.fg ? props.fg : core.colorsTextIcon.highOnDark};
-          display: flex;
-          height: 88px;
-          padding: 14px ${core.layout.spacingSmall};
+          display: ${props.borderExample ? 'display' : 'flex'};
+          overflow: hidden;
         }
         .text {
+          padding: 14px ${core.layout.spacingSmall};
           flex: 1 1 auto;
         }
         .name {
@@ -191,7 +192,11 @@ function Swatch2(props) {
         .icon {
           display: flex;
           align-items: center;
-          padding-right: 6px;
+          padding-right: ${core.layout.spacingSmall};
+        }
+        .borderExample {
+          height: ${core.layout.spacingXSmall};
+          border-top: 1px solid ${props.borderExample};
         }
       `}</style>
     </div>
@@ -202,6 +207,7 @@ Swatch2.propTypes = {
   bg: PropTypes.string,
   fg: PropTypes.string,
   icon: PropTypes.node,
+  borderExample: PropTypes.string,
   name: PropTypes.string.isRequired,
   var: PropTypes.string.isRequired,
   hex: PropTypes.string.isRequired
@@ -337,10 +343,10 @@ const colorCategories = [
   },
   {
     heading: 'Text & Icon Colors',
+    icon: <CheckCircleIcon />,
     subCategories: [
       {
         label: 'On dark backgrounds',
-        icon: <CheckCircleIcon />,
         bg: core.colorsBackgroundDark[1],
         colors: [
           {
@@ -359,7 +365,6 @@ const colorCategories = [
       },
       {
         label: 'On light backgrounds',
-        icon: <CheckCircleIcon />,
         bg: core.colorsBackgroundLight[3],
         border: core.colorsBorder.lowOnLight,
         colors: [
@@ -374,6 +379,52 @@ const colorCategories = [
             var: 'psColorsTextIconLowOnLight',
             hex: '#000000, 55% opacity',
             fg: core.colorsTextIcon.lowOnLight
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'Border Colors',
+    subCategories: [
+      {
+        label: 'On dark backgrounds',
+        bg: core.colorsBackgroundDark[1],
+        colors: [
+          {
+            name: 'Border - On Dark - High Contrast',
+            var: 'psColorsBorderHighOnDark',
+            hex: '#FFFFFF, 30% opacity',
+            fg: core.colorsTextIcon.highOnDark,
+            borderExample: core.colorsBorder.highOnDark
+          },
+          {
+            name: 'Border - On Dark - Low Contrast',
+            var: 'psColorsBorderLowOnDark',
+            hex: '#FFFFFF, 15% opacity',
+            fg: core.colorsTextIcon.lowOnDark,
+            borderExample: core.colorsBorder.lowOnDark
+          }
+        ]
+      },
+      {
+        label: 'On light backgrounds',
+        bg: core.colorsBackgroundLight[3],
+        border: core.colorsBorder.lowOnLight,
+        colors: [
+          {
+            name: 'Border - On Light - High Contrast',
+            var: 'psColorsBorderHighOnLight',
+            hex: '#000000, 30% opacity',
+            fg: core.colorsTextIcon.highOnLight,
+            borderExample: core.colorsBorder.highOnLight
+          },
+          {
+            name: 'Border - On Light - Low Contrast',
+            var: 'psColorsBorderLowOnLight',
+            hex: '#000000, 15% opacity',
+            fg: core.colorsTextIcon.lowOnLight,
+            borderExample: core.colorsBorder.lowOnLight
           }
         ]
       }
@@ -406,10 +457,11 @@ export default _ => (
                       name={color.name}
                       var={color.var}
                       hex={color.hex}
-                      icon={color.icon || subCat.icon}
+                      icon={color.icon || subCat.icon || cat.icon}
                       border={color.border || subCat.border}
                       fg={color.fg || subCat.fg}
                       bg={color.bg || subCat.bg || color.hex}
+                      borderExample={color.borderExample}
                     />
                   ))}
                 </Grid>
