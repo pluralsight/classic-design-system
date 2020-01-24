@@ -158,7 +158,7 @@ function Swatch2(props) {
       <div className="hex">{props.hex}</div>
       <style jsx>{`
         .swatch {
-          background: ${props.hex};
+          background: ${props.bg};
           border: ${props.border ? `1px solid ${props.border}` : 'none'};
           color: ${props.fg ? props.fg : core.colorsTextIcon.highOnDark};
           display: block;
@@ -188,6 +188,7 @@ function Swatch2(props) {
 }
 Swatch2.propTypes = {
   border: PropTypes.string,
+  bg: PropTypes.string,
   fg: PropTypes.string,
   name: PropTypes.string.isRequired,
   var: PropTypes.string.isRequired,
@@ -263,6 +264,39 @@ const colorCategories = [
         ]
       }
     ]
+  },
+  {
+    heading: 'Primary Action & Text Link Colors',
+    subCategories: [
+      {
+        colors: [
+          {
+            name: 'Primary Action - Background',
+            var: 'psColorsPrimaryActionBackground',
+            hex: core.colorsPrimaryAction.background
+          }
+        ]
+      },
+      {
+        colors: [
+          {
+            name: 'Primary Action Text - On Dark',
+            var: 'psColorsPrimaryActionTextOnDark',
+            hex: core.colorsPrimaryAction.textDarkTheme,
+            bg: core.colorsBackgroundDark[1],
+            fg: core.colorsPrimaryAction.textDarkTheme
+          },
+          {
+            name: 'Primary Action Text - On Light',
+            var: 'psColorsPrimaryActionTextOnDark',
+            hex: core.colorsPrimaryAction.textLightTheme,
+            border: core.colorsBorder.lowOnLight,
+            bg: core.colorsBackgroundLight[3],
+            fg: core.colorsPrimaryAction.textLightTheme
+          }
+        ]
+      }
+    ]
   }
 ]
 
@@ -278,7 +312,13 @@ export default _ => (
             {cat.subCategories.map(subCat => (
               <div key={cat.heading + subCat.label}>
                 <Label>{subCat.label}</Label>
-                <Grid>
+                <Grid
+                  cols={
+                    subCat.colors.length < 3
+                      ? subCat.colors.length
+                      : subCat.cols
+                  }
+                >
                   {subCat.colors.map(color => (
                     <Swatch2
                       key={color.var}
@@ -287,6 +327,7 @@ export default _ => (
                       hex={color.hex}
                       border={color.border}
                       fg={color.fg || subCat.fg}
+                      bg={color.bg || color.hex}
                     />
                   ))}
                 </Grid>
