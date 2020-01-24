@@ -1,7 +1,7 @@
 import * as core from '@pluralsight/ps-design-system-core'
+import { CheckCircleIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
-
 import {
   Chrome,
   Code,
@@ -153,17 +153,23 @@ Label.propTypes = {
 function Swatch2(props) {
   return (
     <div className="swatch">
-      <div className="name">{props.name}</div>
-      <div className="var">{props.var}</div>
-      <div className="hex">{props.hex}</div>
+      <div className="text">
+        <div className="name">{props.name}</div>
+        <div className="var">{props.var}</div>
+        <div className="hex">{props.hex}</div>
+      </div>
+      {props.icon && <div className="icon">{props.icon}</div>}
       <style jsx>{`
         .swatch {
           background: ${props.bg};
           border: ${props.border ? `1px solid ${props.border}` : 'none'};
           color: ${props.fg ? props.fg : core.colorsTextIcon.highOnDark};
-          display: block;
+          display: flex;
           height: 88px;
           padding: 14px ${core.layout.spacingSmall};
+        }
+        .text {
+          flex: 1 1 auto;
         }
         .name {
           font-size: 16px;
@@ -182,6 +188,11 @@ function Swatch2(props) {
           font-weight: 500;
           line-height: ${core.type.fontSizeSmall};
         }
+        .icon {
+          display: flex;
+          align-items: center;
+          padding-right: 6px;
+        }
       `}</style>
     </div>
   )
@@ -190,6 +201,7 @@ Swatch2.propTypes = {
   border: PropTypes.string,
   bg: PropTypes.string,
   fg: PropTypes.string,
+  icon: PropTypes.node,
   name: PropTypes.string.isRequired,
   var: PropTypes.string.isRequired,
   hex: PropTypes.string.isRequired
@@ -322,6 +334,50 @@ const colorCategories = [
         ]
       }
     ]
+  },
+  {
+    heading: 'Text & Icon Colors',
+    subCategories: [
+      {
+        label: 'On dark backgrounds',
+        icon: <CheckCircleIcon />,
+        bg: core.colorsBackgroundDark[1],
+        colors: [
+          {
+            name: 'Text & Icons - On Dark - High Contrast',
+            var: 'psColorsTextIconHighOnDark',
+            hex: '#FFFFFF, 95% opacity',
+            fg: core.colorsTextIcon.highOnDark
+          },
+          {
+            name: 'Text & Icons - On Dark - Low Contrast',
+            var: 'psColorsTextIconLowOnDark',
+            hex: '#FFFFFF, 65% opacity',
+            fg: core.colorsTextIcon.lowOnDark
+          }
+        ]
+      },
+      {
+        label: 'On light backgrounds',
+        icon: <CheckCircleIcon />,
+        bg: core.colorsBackgroundLight[3],
+        border: core.colorsBorder.lowOnLight,
+        colors: [
+          {
+            name: 'Text & Icons - On Light - High Contrast',
+            var: 'psColorsTextIconHighOnLight',
+            hex: '#000000, 95% opacity',
+            fg: core.colorsTextIcon.highOnLight
+          },
+          {
+            name: 'Text & Icons - On Light - Low Contrast',
+            var: 'psColorsTextIconLowOnLight',
+            hex: '#000000, 55% opacity',
+            fg: core.colorsTextIcon.lowOnLight
+          }
+        ]
+      }
+    ]
   }
 ]
 
@@ -350,9 +406,10 @@ export default _ => (
                       name={color.name}
                       var={color.var}
                       hex={color.hex}
-                      border={color.border}
+                      icon={color.icon || subCat.icon}
+                      border={color.border || subCat.border}
                       fg={color.fg || subCat.fg}
-                      bg={color.bg || color.hex}
+                      bg={color.bg || subCat.bg || color.hex}
                     />
                   ))}
                 </Grid>
