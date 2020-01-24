@@ -50,6 +50,7 @@ const Dialog = React.forwardRef((props, ref) => {
       {...(props.modal && { 'aria-label': undefined })}
       autofocus={autofocus}
       trapped={trapped}
+      ref={ref}
     >
       <Theme name={Theme.names.light}>
         <div>
