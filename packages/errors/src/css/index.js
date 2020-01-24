@@ -72,12 +72,12 @@ export default {
     fontSize: type.fontSizeSmall,
     lineHeight: type.lineHeightStandard,
     background: 'none',
-    border: `1px solid ${colorsTextIcon.lowOnDark}`,
+    border: `1px solid ${colorsBorder.highOnDark}`,
     borderRadius: '2px'
   },
   [`.psds-error-page__search__input.psds-theme--${themeNames.light}`]: {
     border: `1px solid ${colorsBorder.highOnLight}`,
-    color: colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
 
   '@media (min-width: 769px)': {
