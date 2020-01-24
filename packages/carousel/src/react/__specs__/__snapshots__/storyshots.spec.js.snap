@@ -9594,7 +9594,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
               data-testid="mock-item"
             >
               <div
-                data-css-1x8y3e3=""
+                data-css-13za233=""
                 onKeyDown={[Function]}
                 role="menu"
                 style={
@@ -9609,7 +9609,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-13rq2gb=""
+                    data-css-1qr74j9=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -9630,7 +9630,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-1i7nryb=""
+                    data-css-1stw8mg=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -9651,7 +9651,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-1i7nryb=""
+                    data-css-1stw8mg=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -9672,7 +9672,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-1i7nryb=""
+                    data-css-1stw8mg=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -9693,7 +9693,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-1i7nryb=""
+                    data-css-1stw8mg=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -9714,7 +9714,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-1i7nryb=""
+                    data-css-1stw8mg=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -9735,7 +9735,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-1i7nryb=""
+                    data-css-1stw8mg=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}
@@ -9756,7 +9756,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 >
                   <button
                     aria-haspopup={false}
-                    data-css-1i7nryb=""
+                    data-css-1stw8mg=""
                     onClick={[Function]}
                     onFocus={[Function]}
                     onKeyDown={[Function]}

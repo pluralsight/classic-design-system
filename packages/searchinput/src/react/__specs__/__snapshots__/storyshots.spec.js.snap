@@ -11,10 +11,10 @@ exports[`Storyshots SearchInput default 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1ar6lh1=""
+        data-css-1e3i43a=""
       >
         <input
-          data-css-egljo0=""
+          data-css-lzb8ea=""
           disabled={false}
           placeholder="Search"
           size="medium"
@@ -23,7 +23,7 @@ exports[`Storyshots SearchInput default 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1x5ndtu=""
     >
       <div
         data-css-otejxm=""
@@ -56,10 +56,10 @@ exports[`Storyshots SearchInput when loading 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1ar6lh1=""
+        data-css-1e3i43a=""
       >
         <input
-          data-css-egljo0=""
+          data-css-lzb8ea=""
           disabled={false}
           placeholder="Search"
           size="medium"
@@ -68,7 +68,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1x5ndtu=""
     >
       <div
         data-css-1abx40i=""
@@ -82,13 +82,13 @@ exports[`Storyshots SearchInput when loading 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-rk8c6r=""
+            data-css-1n6oxz3=""
             r={22}
           />
           <circle
             cx="24"
             cy="24"
-            data-css-17x5ehd=""
+            data-css-y5gw89=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={103.67255756846316}
@@ -105,7 +105,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
   data-css-w0yocm=""
 >
   <div
-    data-css-1ewie3k=""
+    data-css-n53zhn=""
   >
     Label
   </div>
@@ -116,10 +116,10 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       data-css-in6gqi=""
     >
       <div
-        data-css-zbzen2=""
+        data-css-7vhsjg=""
       >
         <input
-          data-css-egljo0=""
+          data-css-lzb8ea=""
           disabled={false}
           placeholder="Le placeholder"
           size="medium"
@@ -159,7 +159,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1x5ndtu=""
     >
       <div
         data-css-otejxm=""
@@ -178,7 +178,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       </div>
     </div>
     <div
-      data-css-1ha66tv=""
+      data-css-loo18p=""
     >
       <div
         data-css-otejxm=""
@@ -198,7 +198,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
     </div>
   </div>
   <div
-    data-css-bf7jp3=""
+    data-css-1de0a6a=""
   >
     Sub label
   </div>
@@ -216,10 +216,10 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-zbzen2=""
+        data-css-7vhsjg=""
       >
         <input
-          data-css-egljo0=""
+          data-css-lzb8ea=""
           disabled={false}
           placeholder="Search"
           size="medium"
@@ -259,7 +259,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1x5ndtu=""
     >
       <div
         data-css-otejxm=""

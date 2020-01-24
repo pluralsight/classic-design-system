@@ -293,7 +293,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
         data-css-euzj8=""
       >
         <div
-          data-css-19vzw9x=""
+          data-css-vl7fes=""
         >
           <div
             data-css-js3ti3=""
@@ -310,7 +310,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
               </a>
             </span>
             <div
-              data-css-1gtggsm=""
+              data-css-t9uarq=""
             >
               <span
                 data-css-1fxa3fl=""
@@ -329,10 +329,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
             data-css-kxulf3=""
           >
             <div
-              data-css-2pesz8=""
+              data-css-1jlgfae=""
             >
               <span
-                data-css-1bnk4mn=""
+                data-css-1le2bq0=""
               >
                 <a
                   href="https://duckduckgo.com?q=title"
@@ -342,13 +342,13 @@ exports[`Storyshots drawer row component with actions 1`] = `
               </span>
             </div>
             <div
-              data-css-145nbth=""
+              data-css-cnfu1f=""
             >
               <span
                 data-css-1kcrbi9=""
               >
                 <span
-                  data-css-1bnk4mn=""
+                  data-css-1le2bq0=""
                 >
                   <a
                     href="https://duckduckgo.com?q=cats"
@@ -1219,7 +1219,7 @@ exports[`Storyshots drawer with row component 1`] = `
         data-css-euzj8=""
       >
         <div
-          data-css-19vzw9x=""
+          data-css-vl7fes=""
         >
           <div
             data-css-js3ti3=""
@@ -1232,12 +1232,12 @@ exports[`Storyshots drawer with row component 1`] = `
             data-css-kxulf3=""
           >
             <div
-              data-css-2pesz8=""
+              data-css-1jlgfae=""
             >
               Look at me! I'm a &lt;Row /&gt;!
             </div>
             <div
-              data-css-145nbth=""
+              data-css-cnfu1f=""
             >
               <span
                 data-css-1kcrbi9=""
