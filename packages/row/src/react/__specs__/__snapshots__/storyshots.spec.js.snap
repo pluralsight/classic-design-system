@@ -974,10 +974,10 @@ exports[`Storyshots in drawer medium 1`] = `
     }
   >
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-1oot5vc=""
+        data-css-1kak7hl=""
         onClick={[Function]}
       >
         <div
@@ -1049,7 +1049,7 @@ exports[`Storyshots in drawer medium 1`] = `
         >
           <button
             aria-label="Expand"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -1073,7 +1073,7 @@ exports[`Storyshots in drawer medium 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={true}
@@ -1102,10 +1102,10 @@ exports[`Storyshots in drawer small 1`] = `
     }
   >
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-1oot5vc=""
+        data-css-1kak7hl=""
         onClick={[Function]}
       >
         <div
@@ -1170,7 +1170,7 @@ exports[`Storyshots in drawer small 1`] = `
         >
           <button
             aria-label="Expand"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -1194,7 +1194,7 @@ exports[`Storyshots in drawer small 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={true}
