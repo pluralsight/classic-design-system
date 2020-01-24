@@ -24,6 +24,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.4.6",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
+    "@pluralsight/ps-design-system-halo": "*",
     "@pluralsight/ps-design-system-icon": "^16.1.9",
     "resize-observer-polyfill": "^1.5.1"
   },

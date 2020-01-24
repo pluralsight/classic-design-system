@@ -1,4 +1,9 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  accessibility,
+  colorsTextIcon,
+  layout,
+  motion
+} from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import { controlDirections as directions } from '../vars/index.js'
@@ -50,31 +55,9 @@ export default {
   },
 
   '.psds-carousel__controls__control': {
-    ...resetButton,
-    alignItems: 'center',
-    borderRadius: '100%',
-    boxShadow: '0px 4px 14px rgba(0, 0, 0, 0.25)',
-    display: 'flex',
-    height: '36px',
-    justifyContent: 'center',
     position: 'absolute',
     top: '50%',
-    transition: `transform ${core.motion.speedFast} ease-in-out`,
-    width: '36px',
-
-    '&:hover': { cursor: 'pointer' }
-  },
-  [`.psds-carousel__controls__control.psds-theme--${themeNames.dark}`]: {
-    background: core.colors.gray03,
-    color: core.colors.white,
-
-    '&:hover, &:focus': { background: core.colors.gray04 }
-  },
-  [`.psds-carousel__controls__control.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    color: core.colors.gray04,
-
-    '&:hover, &:focus': { background: core.colors.bone }
+    transition: `transform ${motion.speedFast} ease-in-out`
   },
   [`.psds-carousel__controls__control--${directions.prev}`]: {
     left: 0,
@@ -89,6 +72,32 @@ export default {
     '&[hidden]': { transform: 'translate(50%, -50%) scale(0)' }
   },
 
+  '.psds-carousel__controls__control__button': {
+    ...resetButton,
+    alignItems: 'center',
+    borderRadius: '100%',
+    boxShadow: '0px 4px 14px rgba(0, 0, 0, 0.25)',
+    display: 'flex',
+    height: '36px',
+    justifyContent: 'center',
+    width: '36px',
+
+    '&:focus': { outline: 'none' },
+    '&:hover': { cursor: 'pointer' }
+  },
+  [`.psds-carousel__controls__control__button.psds-theme--${themeNames.dark}`]: {
+    color: colorsTextIcon.highOnLight,
+    background: 'rgba(255, 255, 255, 0.6)',
+
+    '&:hover, &:focus, &:active': { background: 'white' }
+  },
+  [`.psds-carousel__controls__control__button.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnDark,
+    background: 'rgba(0, 0, 0, 0.6)',
+
+    '&:hover, &:focus, &:active': { background: 'black' }
+  },
+
   '.psds-carousel__pages': {
     ...resetList,
     ...resetFocus,
@@ -101,9 +110,9 @@ export default {
     alignItems: 'flex-start',
     display: 'flex',
     flex: '1 0 100%',
-    margin: `0 calc(${core.layout.spacingSmall}/2)`,
+    margin: `0 calc(${layout.spacingSmall}/2)`,
     pointerEvents: 'none',
-    transition: `transform ${core.motion.speedXSlow} ease-in-out`,
+    transition: `transform ${motion.speedXSlow} ease-in-out`,
 
     '&:first-child': { marginLeft: 0 },
     '&:last-child': { marginRight: 0 }
@@ -112,7 +121,7 @@ export default {
   '.psds-carousel__page--active': { pointerEvents: 'auto' },
 
   '.psds-carousel__item': {
-    margin: `0 calc(${core.layout.spacingSmall}/2)`,
+    margin: `0 calc(${layout.spacingSmall}/2)`,
     flex: '1 1 100%',
     width: 0,
     minWidth: 0,
@@ -122,6 +131,6 @@ export default {
   },
 
   '.psds-carousel__instructions': {
-    ...core.accessibility.screenReaderOnly
+    ...accessibility.screenReaderOnly
   }
 }

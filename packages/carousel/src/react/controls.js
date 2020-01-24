@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo'
 import {
   CaretLeftIcon,
   CaretRightIcon,
@@ -18,13 +19,19 @@ import CarouselContext from './context.js'
 
 const styles = {
   controls: () => css(stylesheet['.psds-carousel__controls']),
-  control: (themeName, { direction }) =>
+  control: (_, { direction }) =>
     compose(
       css(stylesheet['.psds-carousel__controls__control']),
-      css(
-        stylesheet[`.psds-carousel__controls__control.psds-theme--${themeName}`]
-      ),
       css(stylesheet[`.psds-carousel__controls__control--${direction}`])
+    ),
+  controlButton: (themeName, { direction }) =>
+    compose(
+      css(stylesheet['.psds-carousel__controls__control__button']),
+      css(
+        stylesheet[
+          `.psds-carousel__controls__control__button.psds-theme--${themeName}`
+        ]
+      )
     )
 }
 
@@ -55,16 +62,21 @@ export function Control(props) {
   const handleClick = combineFns(isPrev ? prev : next, props.onClick)
 
   return (
-    <li>
-      <button
-        aria-label={isPrev ? 'previous' : 'next'}
-        {...styles.control(themeName, props)}
-        {...filterReactProps(props, { tagName: 'button' })}
-        {...(!visible && { hidden: true, tabIndex: -1 })}
-        onClick={handleClick}
-      >
-        <IconCaret aria-hidden size={iconSizes.medium} />
-      </button>
+    <li
+      {...styles.control(themeName, props)}
+      {...(!visible && { hidden: true })}
+      {...filterReactProps(props, { tagName: 'li' })}
+      onClick={handleClick}
+    >
+      <Halo shape={Halo.shapes.pill}>
+        <button
+          aria-label={isPrev ? 'previous' : 'next'}
+          {...styles.controlButton(themeName, props)}
+          {...(!visible && { tabIndex: -1 })}
+        >
+          <IconCaret aria-hidden size={iconSizes.medium} />
+        </button>
+      </Halo>
     </li>
   )
 }
