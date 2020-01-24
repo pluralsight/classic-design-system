@@ -256,7 +256,7 @@ export default _ => (
         appear contextually or as a <Link href="#modal">modal</Link>. The Dialog
         adapts to various amounts and types of content. For contextual,
         non-actionable messaging, consider the{' '}
-        <Link href="/components/tooltip">Dialog</Link> instead.
+        <Link href="/components/tooltip">Tooltip</Link> instead.
       </Intro>
 
       <P>Install the component dependency:</P>
