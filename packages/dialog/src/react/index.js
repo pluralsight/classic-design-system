@@ -27,6 +27,7 @@ const styles = {
           stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
         )
     ),
+  content: () => css(stylesheet['.psds-dialog__content']),
   close: _ => css(stylesheet['.psds-dialog__close']),
   overlay: _ => css(stylesheet['.psds-dialog__overlay'])
 }
@@ -50,9 +51,10 @@ const Dialog = React.forwardRef((props, ref) => {
       {...(props.modal && { 'aria-label': undefined })}
       autofocus={autofocus}
       trapped={trapped}
+      ref={ref}
     >
       <Theme name={Theme.names.light}>
-        <div>
+        <div {...styles.content()}>
           {!props.disableCloseButton && isFunction(props.onClose) && (
             <CloseButton onClick={props.onClose} />
           )}

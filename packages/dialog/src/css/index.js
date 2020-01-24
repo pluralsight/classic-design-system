@@ -25,17 +25,21 @@ export default {
     background: colors.white,
     borderRadius: '2px',
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
-    color: colorsTextIcon.highOnLight,
-    display: 'inline-block',
-    fontSize: type.fontSizeSmall,
-    fontWeight: type.fontWeightMedium,
-    lineHeight: type.lineHeightTight,
+    display: 'inline-flex',
     opacity: 0,
-    overflowY: 'auto',
-    padding: layout.spacingLarge,
     position: 'relative',
     transform: `translateY(${layout.spacingXSmall})`
   }),
+
+  '.psds-dialog__content': {
+    color: colorsTextIcon.highOnLight,
+    fontSize: type.fontSizeSmall,
+    fontWeight: type.fontWeightMedium,
+    lineHeight: type.lineHeightTight,
+    padding: layout.spacingLarge,
+    flex: '1 1 auto',
+    overflowY: 'auto'
+  },
 
   // --w-tail
   '.psds-dialog--w-tail': {
@@ -108,8 +112,8 @@ export default {
     lineHeight: '0',
     padding: '0',
     position: 'absolute',
-    right: layout.spacingXSmall,
-    top: layout.spacingXSmall,
+    right: layout.spacingMedium,
+    top: layout.spacingMedium,
 
     '& > svg': {
       fill: colorsTextIcon.lowOnLight,

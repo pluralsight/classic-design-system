@@ -1,9 +1,11 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import Button from '@pluralsight/ps-design-system-button'
 import Dialog from '@pluralsight/ps-design-system-dialog'
+import { Below } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 import React from 'react'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -18,6 +20,127 @@ import {
   PropTypes,
   SectionHeading
 } from '../../src/ui/index.js'
+
+function InAppExample() {
+  const [isHovered, setHovered] = React.useState(false)
+  const [isClicked, setClicked] = React.useState(false)
+  console.log({ isHovered })
+  return (
+    <div>
+      <div className="examples">
+        <Theme name={Theme.names.dark}>
+          <div className="example">
+            <Below
+              show={
+                <Dialog
+                  style={{ outline: '2px solid blue' }}
+                  tailPosition={Dialog.tailPositions.topCenter}
+                >
+                  Dialog
+                </Dialog>
+              }
+              when
+            >
+              <Button
+                appearance={Button.appearances.secondary}
+                className="text"
+              >
+                Look at me
+              </Button>
+            </Below>
+          </div>
+
+          <div className="example">
+            <Below
+              show={
+                <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+                  Dialog
+                </Dialog>
+              }
+              when={isHovered}
+            >
+              <Button
+                appearance={Button.appearances.secondary}
+                className="text"
+                onMouseEnter={_ => setHovered(true)}
+                onMouseOut={_ => setHovered(false)}
+              >
+                Hover me
+              </Button>
+            </Below>
+          </div>
+
+          <div className="example">
+            <Below
+              show={
+                <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+                  Dialog
+                </Dialog>
+              }
+              when={isClicked}
+            >
+              <Button
+                appearance={Button.appearances.secondary}
+                className="text"
+                onClick={_ => setClicked(!isClicked)}
+              >
+                Click me
+              </Button>
+            </Below>
+          </div>
+        </Theme>
+      </div>
+      <Code
+        collapsible
+        lang="javascript"
+      >{`import Button from '@pluralsight/ps-design-system-button'
+import { Below } from '@pluralsight/ps-design-system-position'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+
+function HoverExampleOnly() {
+  const [isHovered, setHovered] = React.useState(false)
+  return (
+    <Below
+      show={
+        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+          Dialog
+        </Dialog>
+      }
+      when={isHovered}
+    >
+      <Button
+        appearance={Button.appearances.secondary}
+        onMouseEnter={_ => setHovered(true)}
+        onMouseOut={_ => setHovered(false)}
+      >
+        Hover me
+      </Button>
+    </Below>
+  )
+}`}</Code>
+
+      <style jsx>{`
+        .examples {
+          display: flex;
+          padding: ${core.layout.spacingLarge};
+          padding-bottom: 188px;
+          color: ${core.colors.gray02};
+          font-weight: ${core.type.fontWeightMedium};
+          background: ${core.colors.gray06};
+        }
+        .example {
+          margin-right: calc(${core.layout.spacingLarge} * 2);
+        }
+        .text {
+          display: inline-block;
+        }
+        .example:last-child {
+          margin-right: 0;
+        }
+      `}</style>
+    </div>
+  )
+}
 
 const ContentGridVisual = _ => (
   <div className="grid">
@@ -215,6 +338,13 @@ export default _ => (
           ])
         ]}
       />
+
+      <SectionHeading>In-app example</SectionHeading>
+      <P>
+        Dialogs can appear automatically, or be triggered by hover, focus, tap
+        or click.
+      </P>
+      <InAppExample />
 
       <SectionHeading>Tail</SectionHeading>
       <P>
