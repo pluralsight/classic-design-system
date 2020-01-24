@@ -22,10 +22,10 @@ exports[`Storyshots drawer controlled 1`] = `
       </span>
     </button>
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-i9wfit=""
+        data-css-iaytli=""
         onClick={[Function]}
       >
         <div
@@ -50,7 +50,7 @@ exports[`Storyshots drawer controlled 1`] = `
         >
           <button
             aria-label="Collapse"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -74,7 +74,7 @@ exports[`Storyshots drawer controlled 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={false}
@@ -109,10 +109,10 @@ exports[`Storyshots drawer default 1`] = `
   }
 >
   <div
-    data-css-1fq8nx6=""
+    data-css-knxp45=""
   >
     <div
-      data-css-1oot5vc=""
+      data-css-1kak7hl=""
       onClick={[Function]}
     >
       <div
@@ -137,7 +137,7 @@ exports[`Storyshots drawer default 1`] = `
       >
         <button
           aria-label="Expand"
-          data-css-7jbmom=""
+          data-css-xkympi=""
           onClick={[Function]}
         >
           <div
@@ -161,7 +161,7 @@ exports[`Storyshots drawer default 1`] = `
       </div>
     </div>
     <div
-      data-css-1i2htk9=""
+      data-css-gm8biz=""
     >
       <div
         aria-hidden={true}
@@ -196,10 +196,10 @@ exports[`Storyshots drawer prevent toggle 1`] = `
 >
   <div>
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-1oot5vc=""
+        data-css-1kak7hl=""
         onClick={[Function]}
       >
         <div
@@ -224,7 +224,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
         >
           <button
             aria-label="Expand"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -248,7 +248,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={true}
@@ -283,10 +283,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
   }
 >
   <div
-    data-css-1fq8nx6=""
+    data-css-knxp45=""
   >
     <div
-      data-css-1oot5vc=""
+      data-css-1kak7hl=""
       onClick={[Function]}
     >
       <div
@@ -408,7 +408,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
       >
         <button
           aria-label="Expand"
-          data-css-7jbmom=""
+          data-css-xkympi=""
           onClick={[Function]}
         >
           <div
@@ -432,7 +432,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
       </div>
     </div>
     <div
-      data-css-1i2htk9=""
+      data-css-gm8biz=""
     >
       <div
         aria-hidden={true}
@@ -467,10 +467,10 @@ exports[`Storyshots drawer stack of drawers 1`] = `
 >
   <div>
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-1oot5vc=""
+        data-css-1kak7hl=""
         onClick={[Function]}
       >
         <div
@@ -495,7 +495,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         >
           <button
             aria-label="Expand"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -519,7 +519,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={true}
@@ -542,10 +542,10 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       </div>
     </div>
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-1oot5vc=""
+        data-css-1kak7hl=""
         onClick={[Function]}
       >
         <div
@@ -570,7 +570,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         >
           <button
             aria-label="Expand"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -594,7 +594,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={true}
@@ -617,10 +617,10 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       </div>
     </div>
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-1oot5vc=""
+        data-css-1kak7hl=""
         onClick={[Function]}
       >
         <div
@@ -645,7 +645,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         >
           <button
             aria-label="Expand"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -669,7 +669,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={true}
@@ -706,10 +706,10 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
   <div>
     <div>
       <div
-        data-css-1fq8nx6=""
+        data-css-knxp45=""
       >
         <div
-          data-css-1oot5vc=""
+          data-css-1kak7hl=""
           onClick={[Function]}
         >
           <div
@@ -734,7 +734,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           >
             <button
               aria-label="Expand"
-              data-css-7jbmom=""
+              data-css-xkympi=""
               onClick={[Function]}
             >
               <div
@@ -758,7 +758,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           </div>
         </div>
         <div
-          data-css-1i2htk9=""
+          data-css-gm8biz=""
         >
           <div
             aria-hidden={true}
@@ -783,10 +783,10 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
     </div>
     <div>
       <div
-        data-css-1fq8nx6=""
+        data-css-knxp45=""
       >
         <div
-          data-css-1oot5vc=""
+          data-css-1kak7hl=""
           onClick={[Function]}
         >
           <div
@@ -811,7 +811,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           >
             <button
               aria-label="Expand"
-              data-css-7jbmom=""
+              data-css-xkympi=""
               onClick={[Function]}
             >
               <div
@@ -835,7 +835,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           </div>
         </div>
         <div
-          data-css-1i2htk9=""
+          data-css-gm8biz=""
         >
           <div
             aria-hidden={true}
@@ -860,10 +860,10 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
     </div>
     <div>
       <div
-        data-css-1fq8nx6=""
+        data-css-knxp45=""
       >
         <div
-          data-css-1oot5vc=""
+          data-css-1kak7hl=""
           onClick={[Function]}
         >
           <div
@@ -888,7 +888,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           >
             <button
               aria-label="Expand"
-              data-css-7jbmom=""
+              data-css-xkympi=""
               onClick={[Function]}
             >
               <div
@@ -912,7 +912,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           </div>
         </div>
         <div
-          data-css-1i2htk9=""
+          data-css-gm8biz=""
         >
           <div
             aria-hidden={true}
@@ -948,10 +948,10 @@ exports[`Storyshots drawer using custom aria label 1`] = `
   }
 >
   <div
-    data-css-1fq8nx6=""
+    data-css-knxp45=""
   >
     <div
-      data-css-1oot5vc=""
+      data-css-1kak7hl=""
       onClick={[Function]}
     >
       <div
@@ -976,7 +976,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
       >
         <button
           aria-label="Expand custom drawer"
-          data-css-7jbmom=""
+          data-css-xkympi=""
           onClick={[Function]}
         >
           <div
@@ -1000,7 +1000,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
       </div>
     </div>
     <div
-      data-css-1i2htk9=""
+      data-css-gm8biz=""
     >
       <div
         aria-hidden={true}
@@ -1035,10 +1035,10 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
 >
   <div>
     <div
-      data-css-1fq8nx6=""
+      data-css-knxp45=""
     >
       <div
-        data-css-1oot5vc=""
+        data-css-1kak7hl=""
         onClick={[Function]}
       >
         <div
@@ -1064,7 +1064,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
         >
           <button
             aria-label="Expand"
-            data-css-7jbmom=""
+            data-css-xkympi=""
             onClick={[Function]}
           >
             <div
@@ -1088,7 +1088,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
         </div>
       </div>
       <div
-        data-css-1i2htk9=""
+        data-css-gm8biz=""
       >
         <div
           aria-hidden={true}
@@ -1123,10 +1123,10 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
   }
 >
   <div
-    data-css-1fq8nx6=""
+    data-css-knxp45=""
   >
     <div
-      data-css-i9wfit=""
+      data-css-iaytli=""
       onClick={[Function]}
     >
       <div
@@ -1151,7 +1151,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
       >
         <button
           aria-label="Collapse"
-          data-css-7jbmom=""
+          data-css-xkympi=""
           onClick={[Function]}
         >
           <div
@@ -1175,7 +1175,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
       </div>
     </div>
     <div
-      data-css-1i2htk9=""
+      data-css-gm8biz=""
     >
       <div
         aria-hidden={false}
@@ -1209,10 +1209,10 @@ exports[`Storyshots drawer with row component 1`] = `
   }
 >
   <div
-    data-css-1fq8nx6=""
+    data-css-knxp45=""
   >
     <div
-      data-css-1oot5vc=""
+      data-css-1kak7hl=""
       onClick={[Function]}
     >
       <div
@@ -1294,7 +1294,7 @@ exports[`Storyshots drawer with row component 1`] = `
       >
         <button
           aria-label="Expand"
-          data-css-7jbmom=""
+          data-css-xkympi=""
           onClick={[Function]}
         >
           <div
@@ -1318,7 +1318,7 @@ exports[`Storyshots drawer with row component 1`] = `
       </div>
     </div>
     <div
-      data-css-1i2htk9=""
+      data-css-gm8biz=""
     >
       <div
         aria-hidden={true}
