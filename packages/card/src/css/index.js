@@ -1,4 +1,13 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  layout,
+  type,
+  motion,
+  colorsTextIcon,
+  colorsGreen,
+  colorsBackgroundDark,
+  colorsBorder,
+  colorsBackgroundUtility
+} from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 
@@ -21,18 +30,18 @@ export default {
 
       '&:hover, &:active': {
         textDecoration: 'underline',
-        transition: `all ${core.motion.speedNormal}`
+        transition: `all ${motion.speedNormal}`
       }
     }
   },
   [`.psds-card__text-link--theme-${themeNames.dark}`]: {
     '&:hover, &:active': {
-      color: core.colors.white
+      color: colorsTextIcon.highOnDark
     }
   },
   [`.psds-card__text-link--theme-${themeNames.light}`]: {
     '&:hover, &:active': {
-      color: core.colors.gray03
+      color: colorsTextIcon.highOnLight
     }
   },
 
@@ -42,7 +51,7 @@ export default {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: core.colors.gray05,
+    background: colorsBackgroundDark[3],
 
     // TODO: target child
     '&:hover div, &:active div': {
@@ -85,7 +94,7 @@ export default {
       height: '100%',
       width: '100%',
       textDecoration: 'none',
-      transition: `all ${core.motion.speedNormal}`
+      transition: `all ${motion.speedNormal}`
     }
   },
 
@@ -99,8 +108,8 @@ export default {
     left: 0,
     height: '100%',
     width: '100%',
-    background: transparentize(0.5, core.colors.black),
-    transition: `opacity ${core.motion.speedNormal}`,
+    background: 'rgba(0, 0, 0, 0.6)',
+    transition: `opacity ${motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0,
 
@@ -115,7 +124,7 @@ export default {
   // __full-overlay-link
   '.psds-card__full-overlay-link': {
     pointerEvents: 'all',
-    color: core.colors.white,
+    color: colorsTextIcon.highOnDark,
 
     '& > a': {
       display: 'flex'
@@ -130,12 +139,12 @@ export default {
     top: 0,
     right: 0,
     width: '100%',
-    padding: `${core.layout.spacingSmall} ${core.layout.spacingSmall} 0 ${core.layout.spacingSmall}`,
+    padding: `${layout.spacingSmall} ${layout.spacingSmall} 0 ${layout.spacingSmall}`,
     background: `linear-gradient(to bottom, ${transparentize(
       0.25,
-      core.colors.black
+      '#000000'
     )}, transparent)`,
-    transition: `opacity ${core.motion.speedNormal}`,
+    transition: `opacity ${motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0,
     zIndex: 10,
@@ -157,38 +166,35 @@ export default {
 
   // __action-bar__button
   '.psds-card__action-bar__button': {
-    fontSize: core.type.fontSizeXSmall,
+    fontSize: type.fontSizeXSmall,
     padding: 0,
     cursor: 'pointer',
     border: 'none',
-    color: transparentize(0.2, core.colors.white),
+    color: colorsTextIcon.highOnDark,
     background: 'none',
-    transition: `all ${core.motion.speedNormal}`,
+    transition: `all ${motion.speedNormal}`,
 
     '&:hover, &:active': {
-      color: core.colors.white
+      color: colorsTextIcon.highOnDark
     },
     '& + &': {
-      marginLeft: core.layout.spacingSmall
+      marginLeft: layout.spacingSmall
     }
   },
   // __action-bar__button--disabled
   '.psds-card__action-bar__button--disabled': {
-    color: core.colors.gray02,
-    background: core.colors.gray03,
-
+    opacity: '50%',
     '&:hover': {
-      color: core.colors.gray02,
-      background: core.colors.gray03
+      opacity: '50%'
     }
   },
 
   // __bonus-bar
   '.psds-card__bonus-bar': {
     position: 'absolute',
-    bottom: core.layout.spacingSmall,
-    left: core.layout.spacingSmall,
-    color: core.colors.white
+    bottom: layout.spacingSmall,
+    left: layout.spacingSmall,
+    color: colorsTextIcon.highOnDark
   },
 
   // __tag
@@ -196,17 +202,17 @@ export default {
     display: 'flex',
     alignItems: 'center',
     position: 'absolute',
-    top: core.layout.spacingSmall,
+    top: layout.spacingSmall,
     left: 0,
-    padding: `${core.layout.spacingXXSmall} ${core.layout.spacingXSmall}`,
-    background: transparentize(0.1, core.colors.white),
+    padding: `${layout.spacingXXSmall} ${layout.spacingXSmall}`,
+    background: 'rgba(255, 255, 255, 0.9)',
     borderRadius: '0 2px 2px 0',
-    color: core.colors.gray06,
+    color: colorsTextIcon.highOnLight,
     textTransform: 'uppercase',
-    fontSize: core.type.fontSizeXSmall,
-    fontWeight: core.type.fontWeightBold,
+    fontSize: type.fontSizeXSmall,
+    fontWeight: type.fontWeightBold,
     lineHeight: '16px',
-    boxShadow: `0 1px 4px 0 ${transparentize(0.5, core.colors.black)}`,
+    boxShadow: '0 1px 4px 0 rgba(0, 0, 0, 0.5)',
     maxWidth: '75%'
   },
 
@@ -214,7 +220,7 @@ export default {
   '.psds-card__tag__icon': {
     display: 'flex',
     alignItems: 'center',
-    marginRight: core.layout.spacingXSmall
+    marginRight: layout.spacingXSmall
   },
   // __tag__text
   '.psds-card__tag__text': {
@@ -230,8 +236,8 @@ export default {
     bottom: 0,
     width: '100%',
     height: 5,
-    borderTop: `1px solid ${transparentize(0.8, core.colors.black)}`,
-    backgroundColor: transparentize(0.6, core.colors.gray01),
+    borderTop: `1px solid ${colorsBorder.lowOnLight}`,
+    backgroundColor: colorsBackgroundUtility[25],
     overflow: 'hidden'
   },
 
@@ -242,62 +248,62 @@ export default {
     left: 0,
     width: '0%',
     height: '5px',
-    backgroundColor: core.colors.white
+    backgroundColor: '#ffffff'
   },
   '.psds-card__progress__bar--complete': {
-    backgroundColor: core.colors.green
+    backgroundColor: colorsGreen.base
   },
 
   // __title-container
   [`.psds-card__title-container--size-${vars.sizes.small}`]: {
-    fontSize: core.type.fontSizeXSmall,
-    lineHeight: core.type.lineHeightTight
+    fontSize: type.fontSizeXSmall,
+    lineHeight: type.lineHeightTight
   },
   [`.psds-card__title-container--size-${vars.sizes.medium}`]: {
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightTight
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightTight
   },
   [`.psds-card__title-container--size-${vars.sizes.large}`]: {
-    fontSize: core.type.fontSizeMedium,
-    lineHeight: core.type.lineHeightStandard
+    fontSize: type.fontSizeMedium,
+    lineHeight: type.lineHeightStandard
   },
   // __title
   '.psds-card__title': {
     display: 'block',
-    paddingTop: core.layout.spacingXSmall,
-    fontWeight: core.type.fontWeightMedium,
+    paddingTop: layout.spacingXSmall,
+    fontWeight: type.fontWeightMedium,
     overflow: 'hidden'
   },
   [`.psds-card__title--theme-${themeNames.dark}`]: {
-    color: core.colors.white
+    color: colorsTextIcon.highOnDark
   },
   [`.psds-card__title--theme-${themeNames.light}`]: {
-    color: core.colors.gray06
+    color: colorsTextIcon.highOnLight
   },
 
   // __metadata
   '.psds-card__metadata': {
     display: 'flex',
     alignItems: 'center',
-    fontWeight: core.type.fontWeightBook,
-    lineHeight: core.type.lineHeightTight,
+    fontWeight: type.fontWeightBook,
+    lineHeight: type.lineHeightTight,
     maxWidth: '100%'
   },
   [`.psds-card__metadata--theme-${themeNames.dark}`]: {
-    color: core.colors.gray02
+    color: colorsTextIcon.lowOnDark
   },
   [`.psds-card__metadata--theme-${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
   // __metadata--size
   [`.psds-card__metadata--size-${vars.sizes.small}`]: {
-    fontSize: core.type.fontSizeXSmall
+    fontSize: type.fontSizeXSmall
   },
   [`.psds-card__metadata--size-${vars.sizes.medium}`]: {
-    fontSize: core.type.fontSizeXSmall
+    fontSize: type.fontSizeXSmall
   },
   [`.psds-card__metadata--size-${vars.sizes.large}`]: {
-    fontSize: core.type.fontSizeSmall
+    fontSize: type.fontSizeSmall
   },
 
   // __metadata__datum
@@ -315,6 +321,6 @@ export default {
   // __metadata__dot
   '.psds-card__metadata__dot': {
     display: 'inline-block',
-    margin: `0 ${core.layout.spacingXSmall}`
+    margin: `0 ${layout.spacingXSmall}`
   }
 }
