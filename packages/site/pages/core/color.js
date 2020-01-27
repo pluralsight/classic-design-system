@@ -220,7 +220,9 @@ function Grid(props) {
       <style jsx>{`
         .grid {
           display: grid;
-          gap: ${core.layout.spacingMedium} ${core.layout.spacingLarge};
+          gap: ${props.cols >= 5
+            ? 0
+            : `${core.layout.spacingMedium} ${core.layout.spacingLarge}`};
           grid-template-columns: repeat(${props.cols}, 1fr);
         }
       `}</style>
@@ -450,8 +452,68 @@ const colorCategories = [
         ]
       }
     ]
+  },
+  {
+    heading: 'All colors',
+    subCategories: [
+      formatAllColorSubCategory({ color: core.colorsBlue, name: 'Blue' }),
+      formatAllColorSubCategory({
+        color: core.colorsTeal,
+        name: 'Teal',
+        fgSwitch: 7
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsGreen,
+        name: 'Green'
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsLime,
+        name: 'Lime',
+        fgSwitch: 8
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsYellow,
+        name: 'Yellow',
+        fgSwitch: 8
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsOrange,
+        name: 'Orange',
+        fgSwitch: 7
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsRed,
+        name: 'Red'
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsPink,
+        name: 'Pink'
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsPurple,
+        name: 'Purple'
+      })
+    ]
   }
 ]
+
+function formatAllColorSubCategory({ color, fgSwitch, fgMin, fgMax, name }) {
+  return {
+    cols: 5,
+    colors: Object.keys(color)
+      .map(key => parseInt(key, 10))
+      .filter(key => Number.isInteger(key))
+      .map(key => ({
+        name: name + ' ' + key + (key === 6 ? ' (Base)' : ''),
+        var: 'psColors' + name + key,
+        hex: color[key],
+        fg:
+          key < (fgSwitch || 6)
+            ? fgMin || core.colorsTextIcon.highOnLight
+            : fgMax || core.colorsTextIcon.highOnDark
+      }))
+  }
+}
 
 export default _ => (
   <Chrome>
