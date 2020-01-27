@@ -429,6 +429,27 @@ const colorCategories = [
         ]
       }
     ]
+  },
+  {
+    heading: 'Brand Gradients',
+    subCategories: [
+      {
+        colors: [
+          {
+            name: 'Brand Gradient - Skills',
+            var: 'psColorsGradientSkillsBackground',
+            hex: `${core.colorsGradient.skillsStop0} to ${core.colorsGradient.skillsStop100}`,
+            bg: core.colorsGradient.skillsBackground
+          },
+          {
+            name: 'Brand Gradient - Flow',
+            var: 'psColorsGradientFlowBackground',
+            hex: `${core.colorsGradient.flowStop0} to ${core.colorsGradient.flowStop100}`,
+            bg: core.colorsGradient.flowBackground
+          }
+        ]
+      }
+    ]
   }
 ]
 
