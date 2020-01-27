@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@5.0.15...@pluralsight/ps-design-system-avatar@5.1.0) (2020-01-24)
+
+
+### Features
+
+* **avatar:** inital avatar background colors ([c17e79a](https://github.com/pluralsight/design-system/commit/c17e79aaf8233372e8b63d4bba6239f5a46cd496))
+* **avatar:** new colors applied ([74a6b40](https://github.com/pluralsight/design-system/commit/74a6b403c4d0513d18def63c5df70c8b3c133cf0))
+
+
+
+
+
 ## [5.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@5.0.13...@pluralsight/ps-design-system-avatar@5.0.15) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

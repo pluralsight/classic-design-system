@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.25...@pluralsight/ps-design-system-dialog@7.0.26) (2020-01-24)
+
+
+### Bug Fixes
+
+* **dialog:** allow tail to show with overflow ([b039154](https://github.com/pluralsight/design-system/commit/b039154a780dc0173ec6c0ad3f093f0e91d9f8ba))
+* **dialog:** use forwarded ref ([d0419e0](https://github.com/pluralsight/design-system/commit/d0419e0263853736da9c44eb242356f590ad3630))
+
+
+
+
+
 ## [7.0.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@7.0.24...@pluralsight/ps-design-system-dialog@7.0.25) (2020-01-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog
