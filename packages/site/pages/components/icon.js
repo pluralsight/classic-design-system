@@ -11,6 +11,7 @@ import Icon, {
 } from '@pluralsight/ps-design-system-icon'
 import * as Icons from '@pluralsight/ps-design-system-icon/dist/cjs/react/icons/index.js'
 import * as Text from '@pluralsight/ps-design-system-text'
+import { capitalize } from '@pluralsight/ps-design-system-util'
 
 import {
   Chrome,
@@ -113,7 +114,12 @@ export default _ => (
       />
 
       <SectionHeading>Size</SectionHeading>
-      <P>Icons can take on {Object.keys(sizes).length} standard sizes.</P>
+      <P>
+        Icons can be used at {Object.keys(sizes).length} standard sizes:{' '}
+        {Object.keys(sizes)
+          .map(size => capitalize(size) + ' (' + widths[size] + ')')
+          .join(', ')}
+      </P>
       <Example.React
         includes={{ CodeIcon }}
         codes={Object.keys(sizes).map(
