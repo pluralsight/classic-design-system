@@ -1,4 +1,13 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsTextIcon,
+  type,
+  layout,
+  motion,
+  colorsBlue,
+  colorsGreen,
+  colorsYellow,
+  colorsRed
+} from '@pluralsight/ps-design-system-core'
 
 import * as vars from '../vars/index.js'
 
@@ -8,32 +17,32 @@ export default {
     alignItems: 'flex-start',
     width: '100%',
     overflow: 'hidden',
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
-    fontWeight: core.type.fontWeightMedium,
-    padding: `${core.layout.spacingXSmall} ${core.layout.spacingSmall}`
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightStandard,
+    fontWeight: type.fontWeightMedium,
+    padding: `${layout.spacingXSmall} ${layout.spacingSmall}`
   },
 
   [`.psds-banner--color-${vars.colors.blue}`]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.blue
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsBlue.base
   },
   [`.psds-banner--color-${vars.colors.green}`]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.green
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsGreen.base
   },
   [`.psds-banner--color-${vars.colors.yellow}`]: {
-    color: core.colors.black,
-    backgroundColor: core.colors.yellow
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsYellow.base
   },
   [`.psds-banner--color-${vars.colors.red}`]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.red
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsRed.base
   },
 
   '.psds-banner__button': {
     '&:hover, &:active, &:focus': {
-      transition: `all ${core.motion.speedNormal}`,
+      transition: `all ${motion.speedNormal}`,
       opacity: '0.65'
     }
   },
@@ -49,7 +58,7 @@ export default {
 
       '&:hover, &:active, &:focus': {
         color: 'inherit',
-        transition: `all ${core.motion.speedNormal}`,
+        transition: `all ${motion.speedNormal}`,
         opacity: '0.65'
       }
     }
@@ -61,7 +70,7 @@ export default {
     alignItems: 'flex-start',
     background: 'none',
     border: 'none',
-    marginLeft: core.layout.spacingSmall,
+    marginLeft: layout.spacingSmall,
     padding: '0',
     color: 'currentColor',
     cursor: 'pointer',
