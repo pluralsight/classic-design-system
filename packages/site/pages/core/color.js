@@ -1,3 +1,4 @@
+import Badge from '@pluralsight/ps-design-system-badge'
 import * as core from '@pluralsight/ps-design-system-core'
 import { CheckCircleIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
@@ -538,6 +539,25 @@ export default _ => (
     <Content title="Color">
       <PageHeading>Color</PageHeading>
 
+      <SectionHeading>Usage</SectionHeading>
+      <P>
+        Colors are available from the core package. Colors are usable in CSS:
+      </P>
+      <Code language="css">{`@import "@pluralsight/ps-design-system-core";
+
+.mySelector {
+  color: var(--psColorsBlueBase);
+}`}</Code>
+      <P>Colors are also usable in JavaScript:</P>
+      <Code language="js">{`import { 
+  colorsBlue, 
+  /* other named exports */ 
+} from "@pluralsight/ps-design-system-core";
+
+myCssInJsSolution({
+  color: colorsBlue.base
+})`}</Code>
+
       {colorCategories.map(cat => {
         return (
           <div key={cat.heading}>
@@ -573,7 +593,15 @@ export default _ => (
         )
       })}
 
-      <SectionHeading>Legacy grayscale colors</SectionHeading>
+      <P>
+        The colors listed below are legacy colors, replaced by the colors above.
+      </P>
+
+      <SectionHeading
+        notice={<Badge color={Badge.colors.yellow}>Deprecated</Badge>}
+      >
+        Legacy grayscale colors
+      </SectionHeading>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <div>
         <Palette>
@@ -594,7 +622,11 @@ export default _ => (
 }`}</Code>
       </div>
 
-      <SectionHeading>Legacy UI colors</SectionHeading>
+      <SectionHeading
+        notice={<Badge color={Badge.colors.yellow}>Deprecated</Badge>}
+      >
+        Legacy UI colors
+      </SectionHeading>
       <P>
         UI colors emphasize interface elements such as buttons, links, accents
         and visualization.
@@ -618,7 +650,11 @@ export default _ => (
 }`}</Code>
       </div>
 
-      <SectionHeading>Legacy gradient</SectionHeading>
+      <SectionHeading
+        notice={<Badge color={Badge.colors.yellow}>Deprecated</Badge>}
+      >
+        Legacy gradient
+      </SectionHeading>
       <P>
         So fresh. Use the standard gradient to emphasize and showcase the brand.
         Use sparingly.
