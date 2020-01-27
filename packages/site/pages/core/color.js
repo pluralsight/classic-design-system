@@ -2,6 +2,8 @@ import * as core from '@pluralsight/ps-design-system-core'
 import { CheckCircleIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
+import * as Text from '@pluralsight/ps-design-system-text'
+
 import {
   Chrome,
   Code,
@@ -240,6 +242,13 @@ Grid.propTypes = {
 const colorCategories = [
   {
     heading: 'Background colors',
+    explanation: (
+      <Text.P>
+        There are three background colors available to use for surfaces in the
+        app. The lower the number, the lower the elevation of the surface.
+        Background 1 Is the app background.
+      </Text.P>
+    ),
     subCategories: [
       {
         label: 'Dark',
@@ -455,6 +464,15 @@ const colorCategories = [
   },
   {
     heading: 'All colors',
+    explanation: (
+      <Text.P>
+        These are additional colors beyond the core set. They can be used for
+        things like illustrations, complex data visualizations, etc. Colors
+        numbered 6 are the same as base colors. (e.g.,{' '}
+        <Text.Code>psColorsBlue6</Text.Code> has the same value as{' '}
+        <Text.Code>psColorsBlueBase</Text.Code>)
+      </Text.P>
+    ),
     subCategories: [
       formatAllColorSubCategory({ color: core.colorsBlue, name: 'Blue' }),
       formatAllColorSubCategory({
@@ -524,6 +542,7 @@ export default _ => (
         return (
           <div key={cat.heading}>
             <SectionHeading>{cat.heading}</SectionHeading>
+            {cat.explanation}
             {cat.subCategories.map((subCat, i) => (
               <div key={i}>
                 <Label>{subCat.label}</Label>
