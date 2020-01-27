@@ -306,7 +306,7 @@ const colorCategories = [
           },
           {
             name: 'Primary Action Text - On Light',
-            var: 'psColorsPrimaryActionTextOnDark',
+            var: 'psColorsPrimaryActionTextOnLight',
             hex: core.colorsPrimaryAction.textLightTheme,
             border: core.colorsBorder.lowOnLight,
             bg: core.colorsBackgroundLight[3],
@@ -460,10 +460,10 @@ export default _ => (
 
       {colorCategories.map(cat => {
         return (
-          <div>
+          <div key={cat.heading}>
             <SectionHeading>{cat.heading}</SectionHeading>
-            {cat.subCategories.map(subCat => (
-              <div key={cat.heading + subCat.label}>
+            {cat.subCategories.map((subCat, i) => (
+              <div key={i}>
                 <Label>{subCat.label}</Label>
                 <Grid
                   cols={
