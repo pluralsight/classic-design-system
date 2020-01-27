@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@6.0.23...@pluralsight/ps-design-system-textarea@6.1.0) (2020-01-24)
+
+
+### Bug Fixes
+
+* **textarea:** cleanup dupped styles ([24a8e84](https://github.com/pluralsight/design-system/commit/24a8e84d7ebe3ed6e39f892e925923b8f985b9fc))
+
+
+### Features
+
+* **textarea:** add a border to dark theme fields ([cfd0aa8](https://github.com/pluralsight/design-system/commit/cfd0aa819c1b4a7d6c591f74e9246fd8ab1755ba))
+* **textarea:** apply 2020 colors ([f032e51](https://github.com/pluralsight/design-system/commit/f032e516c17f62f94162b5df5dbf171342eef1fb))
+
+
+
+
+
 ## [6.0.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@6.0.22...@pluralsight/ps-design-system-textarea@6.0.23) (2020-01-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

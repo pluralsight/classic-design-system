@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@9.0.19...@pluralsight/ps-design-system-actionmenu@9.1.0) (2020-01-24)
+
+
+### Features
+
+* **actionmenu:** new colors applied ([6353969](https://github.com/pluralsight/design-system/commit/63539695e237a9d53d2820f01d2db5cb0396d4c7))
+
+
+
+
+
 ## [9.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@9.0.18...@pluralsight/ps-design-system-actionmenu@9.0.19) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
