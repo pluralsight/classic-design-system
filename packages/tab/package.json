@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tab",
-  "version": "14.0.18",
+  "version": "14.0.19",
   "description": "Design system component for tab list ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,7 +22,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.4.6",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
-    "@pluralsight/ps-design-system-icon": "^16.1.9",
+    "@pluralsight/ps-design-system-icon": "^17.0.0",
     "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1"
   },

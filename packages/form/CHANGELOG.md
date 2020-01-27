@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.1.1...@pluralsight/ps-design-system-form@4.2.0) (2020-01-24)
+
+
+### Bug Fixes
+
+* **form:** fix css typo ([feb21c6](https://github.com/pluralsight/design-system/commit/feb21c67ef3389634f1f3cd87e8a7defad0a780e))
+
+
+### Features
+
+* **datepicker:** apply 2020 colors ([1d62c96](https://github.com/pluralsight/design-system/commit/1d62c9626908d1d6de1ca6cd8c806437211ee412))
+* **form:** apply 2020 colors ([524151e](https://github.com/pluralsight/design-system/commit/524151edf280d252e6268ae660281d1c89659acc))
+
+
+
+
+
 ## [4.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.1.0...@pluralsight/ps-design-system-form@4.1.1) (2020-01-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

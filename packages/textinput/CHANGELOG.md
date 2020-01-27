@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@6.0.20...@pluralsight/ps-design-system-textinput@6.1.0) (2020-01-24)
+
+
+### Features
+
+* **textinput:** apply 2020 colors ([72f8eb4](https://github.com/pluralsight/design-system/commit/72f8eb4e673298323e91e3be86bae975aa5edb53))
+
+
+
+
+
 ## [6.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@6.0.19...@pluralsight/ps-design-system-textinput@6.0.20) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

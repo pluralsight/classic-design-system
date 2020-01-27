@@ -194,6 +194,7 @@ export default _ => (
         mechanism to expose the DrawerPanel.
       </P>
       <Example.React
+        themeToggle
         includes={{ Drawer, PinkBox }}
         orient="vertical"
         codes={[
@@ -209,6 +210,7 @@ export default _ => (
         built in.
       </P>
       <Example.React
+        themeToggle
         includes={{ Drawer }}
         orient="vertical"
         codes={[

@@ -21,10 +21,10 @@ const styles = {
       css(stylesheet['.psds-drawer__base']),
       isOpen && css(stylesheet['.psds-drawer__base--isOpen'])
     ),
-  panel: ({ isOpen, themeName }) =>
+  panel: ({ themeName }) =>
     compose(
       css(stylesheet['.psds-drawer__panel']),
-      isOpen && css(stylesheet[`.psds-drawer__panel.psds-theme--${themeName}`])
+      css(stylesheet[`.psds-drawer__panel.psds-theme--${themeName}`])
     ),
   panelContent: () => css(stylesheet[`.psds-drawer__panel-content`]),
   rotatable: isRotated =>
@@ -93,7 +93,7 @@ const Drawer = ({
           </button>
         </div>
       </div>
-      <div {...styles.panel({ themeName, open })}>
+      <div {...styles.panel({ themeName })}>
         <Collapsible isOpen={open} {...styles.collapsible()}>
           {children}
         </Collapsible>
