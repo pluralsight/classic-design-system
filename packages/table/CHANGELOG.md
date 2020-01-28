@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.24...@pluralsight/ps-design-system-table@7.1.25) (2020-01-28)
+
+
+### Bug Fixes
+
+* **table:** ci lint bug ([253935d](https://github.com/pluralsight/design-system/commit/253935d333f87e0946c0eefe87f9c4d11045f811))
+* **table:** ci lint bug ([9cd2f1a](https://github.com/pluralsight/design-system/commit/9cd2f1a6ff69224a909804e2df3221eec619f6d6))
+
+
+
+
+
 ## [7.1.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@7.1.23...@pluralsight/ps-design-system-table@7.1.24) (2020-01-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

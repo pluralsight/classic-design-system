@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@8.0.15...@pluralsight/ps-design-system-badge@9.0.0) (2020-01-28)
+
+
+### Code Refactoring
+
+* **badge:** simplify css selector utility ([dcb7ef5](https://github.com/pluralsight/design-system/commit/dcb7ef5c34abbbfb005cc5ecef3ab7b8e3a97e64))
+
+
+### Features
+
+* **badge:** color update ([30fbc3d](https://github.com/pluralsight/design-system/commit/30fbc3dc4d521618d5d222b9b30fb6a205d43c5f))
+* **badge:** font color on lightupdate ([73d39ea](https://github.com/pluralsight/design-system/commit/73d39ea156a9bef78150ff828679768820e145c2))
+
+
+### BREAKING CHANGES
+
+* **badge:** change named and signature of css selector utility
+
+
+
+
+
 ## [8.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@8.0.13...@pluralsight/ps-design-system-badge@8.0.15) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge

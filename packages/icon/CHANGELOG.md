@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.0.0...@pluralsight/ps-design-system-icon@17.1.0) (2020-01-28)
+
+
+### Features
+
+* **icon:** new chat icons ([37ef2f4](https://github.com/pluralsight/design-system/commit/37ef2f40d5f49e228dca81b5008704ea3c2e8e0e)), closes [#833](https://github.com/pluralsight/design-system/issues/833)
+
+
+
+
+
 # [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.9...@pluralsight/ps-design-system-icon@17.0.0) (2020-01-24)
 
 

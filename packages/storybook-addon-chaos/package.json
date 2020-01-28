@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-chaos",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Storybook addon w/chaos",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -15,7 +15,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^17.1.8",
+    "@pluralsight/ps-design-system-button": "^17.1.9",
     "@pluralsight/ps-design-system-core": "^5.4.6",
     "@storybook/addons": "^5.2.5",
     "@storybook/core-events": "^5.2.5",

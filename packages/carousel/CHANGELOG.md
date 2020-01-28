@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@6.0.25...@pluralsight/ps-design-system-carousel@7.0.0) (2020-01-28)
+
+
+### Bug Fixes
+
+* **card:** updates snapshots ([f0445ba](https://github.com/pluralsight/design-system/commit/f0445ba6ef41d5eaf4b24c0e6a309c86ebbba88e))
+
+
+### Features
+
+* **halo:** apply 2020 colors and new focus indicator ([13db696](https://github.com/pluralsight/design-system/commit/13db6960a497246af14f34e37a97ad088d664692))
+
+
+### BREAKING CHANGES
+
+* **halo:** Halo.Control props are now passed to the li element instead of the button element
+
+
+
+
+
 ## [6.0.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@6.0.24...@pluralsight/ps-design-system-carousel@6.0.25) (2020-01-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

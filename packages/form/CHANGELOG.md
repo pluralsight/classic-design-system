@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.2.0...@pluralsight/ps-design-system-form@4.3.0) (2020-01-28)
+
+
+### Features
+
+* **dropdown:** apply 2020 color variables ([9d14f1b](https://github.com/pluralsight/design-system/commit/9d14f1ba85344760cec52f070efbf573b26bcf21))
+
+
+
+
+
 # [4.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.1.1...@pluralsight/ps-design-system-form@4.2.0) (2020-01-24)
 
 
