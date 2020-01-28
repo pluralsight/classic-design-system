@@ -6,16 +6,14 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
-import { defaultWithColor, subtleThemeWithColor } from '../js/index.js'
+import { select } from '../js/index.js'
 import * as vars from '../vars/index.js'
 
 const styles = {
   badge: props =>
     css(
       stylesheet['.psds-badge'],
-      props.appearance === appearances.default
-        ? stylesheet[defaultWithColor(props.themeName, props.color)]
-        : stylesheet[subtleThemeWithColor(props.themeName, props.color)]
+      stylesheet[select(props.themeName, props.appearance, props.color)]
     )
 }
 
