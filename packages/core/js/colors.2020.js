@@ -1,3 +1,7 @@
+export const colorsWhite = '#FFFFFF'
+
+export const colorsBlack = '#000000'
+
 export const colorsBlue = {
   base: '#0084BD',
   1: '#D9F1FF',
@@ -169,4 +173,15 @@ export const colorsStatus = {
   info: colorsBlue.base,
   success: colorsGreen.base,
   warning: colorsYellow.base
+}
+
+export const colorsCode = {
+  red: '#f26d6d',
+  orange: '#ff9466',
+  yellow: '#ffca80',
+  green: '#b8cc7a',
+  turquoise: '#abd9c6',
+  blue: '#8ac7e6',
+  purple: '#e695bd',
+  sand: '#d99077'
 }
