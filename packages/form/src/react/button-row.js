@@ -24,10 +24,7 @@ const ButtonRow = (props, context) => (
 ButtonRow.displayName = 'ButtonRow'
 ButtonRow.propTypes = {
   align: PropTypes.oneOf(Object.keys(vars.aligns).map(k => vars.aligns[k])),
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]),
+  children: PropTypes.node
 }
 ButtonRow.defaultProps = {
   align: vars.aligns.left
