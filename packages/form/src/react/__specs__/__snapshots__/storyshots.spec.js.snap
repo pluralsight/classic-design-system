@@ -352,7 +352,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Occupation
             </div>
@@ -366,7 +366,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   data-css-ne3jjf=""
                 >
                   <button
-                    data-css-1fhymn9=""
+                    data-css-1lq4mos=""
                     disabled={false}
                     onClick={[Function]}
                   >
@@ -383,7 +383,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     </span>
                   </button>
                   <div
-                    data-css-cstzed=""
+                    data-css-wvt485=""
                   >
                     <div
                       data-css-otejxm=""
