@@ -103,7 +103,7 @@ export default function Item(props) {
     props.nested &&
     isActive &&
     React.cloneElement(props.nested, {
-      css: calcNestedMenuPosition(
+      style: calcNestedMenuPosition(
         itemRef.current.getBoundingClientRect().width,
         props._origin
       ),
