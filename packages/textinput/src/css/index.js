@@ -44,7 +44,7 @@ export default {
     padding: `6px ${layout.spacingXSmall}`
   },
   '.psds-text-input__field--w-after': {
-    paddingRight: 0
+    paddingRight: layout.spacingXSmall
   },
   '.psds-text-input__field-input': {
     width: '100%',
