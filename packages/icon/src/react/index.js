@@ -12,10 +12,7 @@ const style = {
     css({
       ...stylesheet['.psds-icon'],
       ...stylesheet[`.psds-icon--size-${size}`],
-
-      '> svg': color
-        ? stylesheet[`.psds-icon--color-${color} > svg`]
-        : stylesheet['.psds-icon > svg']
+      ...stylesheet[`.psds-icon--color-${color}`]
     })
 }
 
