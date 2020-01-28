@@ -296,7 +296,7 @@ const colorCategories = [
     ]
   },
   {
-    heading: 'Primary Action & Text Link Colors',
+    heading: 'Primary action & text link colors',
     subCategories: [
       {
         colors: [
@@ -329,7 +329,7 @@ const colorCategories = [
     ]
   },
   {
-    heading: 'Status Colors',
+    heading: 'Status colors',
     subCategories: [
       {
         colors: [
@@ -354,7 +354,7 @@ const colorCategories = [
     ]
   },
   {
-    heading: 'Text & Icon Colors',
+    heading: 'Text & icon colors',
     icon: <CheckCircleIcon />,
     subCategories: [
       {
@@ -397,7 +397,7 @@ const colorCategories = [
     ]
   },
   {
-    heading: 'Border Colors',
+    heading: 'Border colors',
     subCategories: [
       {
         label: 'On dark backgrounds',
@@ -443,7 +443,7 @@ const colorCategories = [
     ]
   },
   {
-    heading: 'Brand Gradients',
+    heading: 'Brand gradients',
     subCategories: [
       {
         colors: [
