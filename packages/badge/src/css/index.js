@@ -11,8 +11,8 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { defaultWithColor, subtleThemeWithColor } from '../js/index.js'
-import { colors } from '../vars/index.js'
+import { appearances, colors } from '../vars/index.js'
+import { select } from '../js/index.js'
 
 export default {
   '.psds-badge': {
@@ -26,104 +26,101 @@ export default {
     textTransform: 'uppercase'
   },
 
-  [defaultWithColor(themeNames.dark, colors.gray)]: {
+  [select(themeNames.dark, appearances.default, colors.gray)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBackgroundUtility[25],
     borderColor: colorsBackgroundUtility[25]
   },
-  [defaultWithColor(themeNames.dark, colors.green)]: {
+  [select(themeNames.dark, appearances.default, colors.green)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsGreen.base,
     borderColor: colorsGreen.base
   },
-  [defaultWithColor(themeNames.dark, colors.yellow)]: {
+  [select(themeNames.dark, appearances.default, colors.yellow)]: {
     color: '#181818',
     backgroundColor: colorsYellow.base,
     borderColor: colorsYellow.base
   },
-  [defaultWithColor(themeNames.dark, colors.red)]: {
+  [select(themeNames.dark, appearances.default, colors.red)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsRed.base,
     borderColor: colorsRed.base
   },
-  [defaultWithColor(themeNames.dark, colors.blue)]: {
+  [select(themeNames.dark, appearances.default, colors.blue)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBlue.base,
     borderColor: colorsBlue.base
   },
 
-  [defaultWithColor(themeNames.light, colors.gray)]: {
+  [select(themeNames.light, appearances.default, colors.gray)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsBackgroundUtility[25],
     borderColor: colorsBackgroundUtility[25]
   },
-  [defaultWithColor(themeNames.light, colors.green)]: {
+  [select(themeNames.light, appearances.default, colors.green)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsGreen.base,
     borderColor: colorsGreen.base
   },
-  [defaultWithColor(themeNames.light, colors.yellow)]: {
+  [select(themeNames.light, appearances.default, colors.yellow)]: {
     color: '#181818',
     backgroundColor: colorsYellow.base,
     borderColor: colorsYellow.base
   },
-  [defaultWithColor(themeNames.light, colors.red)]: {
+  [select(themeNames.light, appearances.default, colors.red)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsRed.base,
     borderColor: colorsRed.base
   },
-  [defaultWithColor(themeNames.light, colors.blue)]: {
+  [select(themeNames.light, appearances.default, colors.blue)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBlue.base,
     borderColor: colorsBlue.base
   },
 
-  [subtleThemeWithColor(themeNames.dark, colors.gray)]: {
+  [select(themeNames.dark, appearances.subtle, colors.gray)]: {
     color: colorsTextIcon.lowOnDark,
     borderColor: colorsBorder.highOnDark
   },
-
-  [subtleThemeWithColor(themeNames.dark, colors.green)]: {
+  [select(themeNames.dark, appearances.subtle, colors.green)]: {
     color: colorsGreen.base,
     borderColor: colorsGreen.base
   },
-
-  [subtleThemeWithColor(themeNames.dark, colors.yellow)]: {
+  [select(themeNames.dark, appearances.subtle, colors.yellow)]: {
     color: colorsYellow.base,
     borderColor: colorsYellow.base
   },
-
-  [subtleThemeWithColor(themeNames.dark, colors.red)]: {
+  [select(themeNames.dark, appearances.subtle, colors.red)]: {
     color: colorsRed.base,
     borderColor: colorsRed.base
   },
 
-  [subtleThemeWithColor(themeNames.dark, colors.blue)]: {
+  [select(themeNames.dark, appearances.subtle, colors.blue)]: {
     color: colorsBlue.base,
     borderColor: colorsBlue.base
   },
 
-  [subtleThemeWithColor(themeNames.light, colors.gray)]: {
+  [select(themeNames.light, appearances.subtle, colors.gray)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsBackgroundUtility[25],
     borderColor: colorsBackgroundUtility[25]
   },
-  [subtleThemeWithColor(themeNames.light, colors.green)]: {
+  [select(themeNames.light, appearances.subtle, colors.green)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsGreen[1],
     borderColor: colorsGreen[1]
   },
-  [subtleThemeWithColor(themeNames.light, colors.yellow)]: {
+  [select(themeNames.light, appearances.subtle, colors.yellow)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsYellow[1],
     borderColor: colorsYellow[1]
   },
-  [subtleThemeWithColor(themeNames.light, colors.red)]: {
+  [select(themeNames.light, appearances.subtle, colors.red)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsRed[1],
     borderColor: colorsRed[1]
   },
-  [subtleThemeWithColor(themeNames.light, colors.blue)]: {
+  [select(themeNames.light, appearances.subtle, colors.blue)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsBlue[3],
     borderColor: colorsBlue[3]
