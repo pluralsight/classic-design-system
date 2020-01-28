@@ -57,7 +57,7 @@ exports[`Storyshots drawer controlled 1`] = `
               data-css-xnveog=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -144,7 +144,7 @@ exports[`Storyshots drawer default 1`] = `
             data-css-1byjzqg=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret down icon"
@@ -231,7 +231,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
               data-css-1byjzqg=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -383,7 +383,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
                 data-css-y80vay=""
               >
                 <div
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="more icon"
@@ -415,7 +415,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
             data-css-1byjzqg=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret down icon"
@@ -502,7 +502,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
               data-css-1byjzqg=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -577,7 +577,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
               data-css-1byjzqg=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -652,7 +652,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
               data-css-1byjzqg=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -741,7 +741,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
                 data-css-1byjzqg=""
               >
                 <div
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -818,7 +818,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
                 data-css-1byjzqg=""
               >
                 <div
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -895,7 +895,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
                 data-css-1byjzqg=""
               >
                 <div
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -983,7 +983,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
             data-css-1byjzqg=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret down icon"
@@ -1071,7 +1071,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
               data-css-1byjzqg=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1158,7 +1158,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
             data-css-xnveog=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret down icon"
@@ -1269,7 +1269,7 @@ exports[`Storyshots drawer with row component 1`] = `
                 data-css-y80vay=""
               >
                 <div
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="more icon"
@@ -1301,7 +1301,7 @@ exports[`Storyshots drawer with row component 1`] = `
             data-css-1byjzqg=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret down icon"

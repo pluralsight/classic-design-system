@@ -84,7 +84,7 @@ exports[`Storyshots appearance default 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -193,7 +193,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -210,7 +210,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
             data-css-1ha66tv=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="warning icon"
@@ -316,7 +316,7 @@ exports[`Storyshots appearance subtle 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -425,7 +425,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -442,7 +442,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             data-css-1ha66tv=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="warning icon"
@@ -554,7 +554,7 @@ exports[`Storyshots disabled compare 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -657,7 +657,7 @@ exports[`Storyshots disabled compare 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -775,7 +775,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="calendar icon"
@@ -910,7 +910,7 @@ exports[`Storyshots labels label 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -1019,7 +1019,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -1129,7 +1129,7 @@ exports[`Storyshots labels none 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -1233,7 +1233,7 @@ exports[`Storyshots labels subLabel 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -1361,7 +1361,7 @@ exports[`Storyshots layouts full width 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -1465,7 +1465,7 @@ exports[`Storyshots layouts full width 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -1482,7 +1482,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1ha66tv=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="warning icon"
@@ -1588,7 +1588,7 @@ exports[`Storyshots layouts full width 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -1692,7 +1692,7 @@ exports[`Storyshots layouts full width 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -1709,7 +1709,7 @@ exports[`Storyshots layouts full width 1`] = `
               data-css-1ha66tv=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="warning icon"
@@ -1831,7 +1831,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="calendar icon"
@@ -1946,7 +1946,7 @@ exports[`Storyshots value single slash-separated value 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -2061,7 +2061,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -2179,7 +2179,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
               onClick={[Function]}
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="calendar icon"
@@ -2285,7 +2285,7 @@ exports[`Storyshots whitelist name 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"
@@ -2390,7 +2390,7 @@ exports[`Storyshots whitelist onChange 1`] = `
             onClick={[Function]}
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="calendar icon"

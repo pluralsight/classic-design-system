@@ -49,7 +49,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
           As a button
         </span>
         <div
-          data-css-otejxm=""
+          data-css-7dab2f=""
           onClick={[Function]}
         >
           <svg
@@ -87,7 +87,7 @@ exports[`Storyshots actions just icon button 1`] = `
           As a button
         </span>
         <div
-          data-css-otejxm=""
+          data-css-7dab2f=""
           onClick={[Function]}
         >
           <svg
@@ -230,7 +230,7 @@ exports[`Storyshots icon medium 1`] = `
           With Icon
         </span>
         <div
-          data-css-otejxm=""
+          data-css-7dab2f=""
           onClick={[Function]}
         >
           <svg
@@ -268,7 +268,7 @@ exports[`Storyshots icon small 1`] = `
           With Icon
         </span>
         <div
-          data-css-12f5sv2=""
+          data-css-1gzzcm2=""
           onClick={[Function]}
         >
           <svg
@@ -338,7 +338,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
           As a button
         </span>
         <div
-          data-css-otejxm=""
+          data-css-7dab2f=""
           onClick={[Function]}
         >
           <svg
@@ -454,7 +454,7 @@ exports[`Storyshots long with icon 1`] = `
           This is the string that goes on forever and always. There really isn't an end. Wow.
         </span>
         <div
-          data-css-otejxm=""
+          data-css-7dab2f=""
           onClick={[Function]}
         >
           <svg

@@ -30,7 +30,7 @@ exports[`Storyshots after field w/icon 1`] = `
               size="medium"
             />
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="close icon"
@@ -85,7 +85,7 @@ exports[`Storyshots appearance default medium w/ iconAlign left 1`] = `
           data-css-9fh4h5=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -141,7 +141,7 @@ exports[`Storyshots appearance default medium w/ iconAlign right 1`] = `
           data-css-awmen3=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -197,7 +197,7 @@ exports[`Storyshots appearance default small w/ iconAlign left 1`] = `
           data-css-9fh4h5=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -253,7 +253,7 @@ exports[`Storyshots appearance default small w/ iconAlign right 1`] = `
           data-css-awmen3=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -313,7 +313,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-1ha66tv=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="warning icon"
@@ -406,7 +406,7 @@ exports[`Storyshots appearance subtle medium w/ iconAlign left 1`] = `
           data-css-1os68q9=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -462,7 +462,7 @@ exports[`Storyshots appearance subtle medium w/ iconAlign right 1`] = `
           data-css-seje8w=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -518,7 +518,7 @@ exports[`Storyshots appearance subtle small w/ iconAlign left 1`] = `
           data-css-1os68q9=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -574,7 +574,7 @@ exports[`Storyshots appearance subtle small w/ iconAlign right 1`] = `
           data-css-seje8w=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="info icon"
@@ -634,7 +634,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-1ha66tv=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="warning icon"
@@ -760,7 +760,7 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-1ha66tv=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="warning icon"
@@ -874,7 +874,7 @@ exports[`Storyshots labels all w/error 1`] = `
           data-css-1ha66tv=""
         >
           <div
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="warning icon"
@@ -1228,7 +1228,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-1ha66tv=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="warning icon"
@@ -1311,7 +1311,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-1ha66tv=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="warning icon"
@@ -1383,7 +1383,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               data-css-1os68q9=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="search icon"

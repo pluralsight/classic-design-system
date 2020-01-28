@@ -36,7 +36,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -95,7 +95,7 @@ exports[`Storyshots actionBar long title 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -154,7 +154,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -213,7 +213,7 @@ exports[`Storyshots actionBar one action 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -344,7 +344,7 @@ exports[`Storyshots combo everything 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="bookmark icon"
@@ -370,7 +370,7 @@ exports[`Storyshots combo everything 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="gear icon"
@@ -398,7 +398,7 @@ exports[`Storyshots combo everything 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="more icon"
@@ -886,7 +886,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="more icon"
@@ -938,7 +938,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
             data-css-y80vay=""
           >
             <div
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="more icon"
@@ -1024,7 +1024,7 @@ exports[`Storyshots in drawer medium 1`] = `
                   data-css-y80vay=""
                 >
                   <div
-                    data-css-otejxm=""
+                    data-css-7dab2f=""
                   >
                     <svg
                       aria-label="more icon"
@@ -1056,7 +1056,7 @@ exports[`Storyshots in drawer medium 1`] = `
               data-css-1byjzqg=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1145,7 +1145,7 @@ exports[`Storyshots in drawer small 1`] = `
                   data-css-y80vay=""
                 >
                   <div
-                    data-css-otejxm=""
+                    data-css-7dab2f=""
                   >
                     <svg
                       aria-label="more icon"
@@ -1177,7 +1177,7 @@ exports[`Storyshots in drawer small 1`] = `
               data-css-1byjzqg=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret down icon"

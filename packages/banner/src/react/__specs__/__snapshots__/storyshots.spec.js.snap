@@ -213,7 +213,7 @@ exports[`Storyshots onClick displays X 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
@@ -247,7 +247,7 @@ exports[`Storyshots onClick side by side 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
@@ -274,7 +274,7 @@ exports[`Storyshots onClick side by side 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
@@ -301,7 +301,7 @@ exports[`Storyshots onClick side by side 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
@@ -328,7 +328,7 @@ exports[`Storyshots onClick side by side 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
@@ -363,7 +363,7 @@ exports[`Storyshots onClick w/ long text 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
@@ -466,7 +466,7 @@ exports[`Storyshots styling className prop 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
@@ -505,7 +505,7 @@ exports[`Storyshots styling style prop 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="close icon"
