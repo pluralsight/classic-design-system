@@ -26,27 +26,53 @@ export default {
     textTransform: 'uppercase'
   },
 
-  [defaultWithColor(colors.gray)]: {
+  [defaultWithColor(themeNames.dark, colors.gray)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBackgroundUtility[25],
     borderColor: colorsBackgroundUtility[25]
   },
-  [defaultWithColor(colors.green)]: {
+  [defaultWithColor(themeNames.dark, colors.green)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsGreen.base,
     borderColor: colorsGreen.base
   },
-  [defaultWithColor(colors.yellow)]: {
+  [defaultWithColor(themeNames.dark, colors.yellow)]: {
     color: '#181818',
     backgroundColor: colorsYellow.base,
     borderColor: colorsYellow.base
   },
-  [defaultWithColor(colors.red)]: {
+  [defaultWithColor(themeNames.dark, colors.red)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsRed.base,
     borderColor: colorsRed.base
   },
-  [defaultWithColor(colors.blue)]: {
+  [defaultWithColor(themeNames.dark, colors.blue)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsBlue.base,
+    borderColor: colorsBlue.base
+  },
+
+  [defaultWithColor(themeNames.light, colors.gray)]: {
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsBackgroundUtility[25],
+    borderColor: colorsBackgroundUtility[25]
+  },
+  [defaultWithColor(themeNames.light, colors.green)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsGreen.base,
+    borderColor: colorsGreen.base
+  },
+  [defaultWithColor(themeNames.light, colors.yellow)]: {
+    color: '#181818',
+    backgroundColor: colorsYellow.base,
+    borderColor: colorsYellow.base
+  },
+  [defaultWithColor(themeNames.light, colors.red)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsRed.base,
+    borderColor: colorsRed.base
+  },
+  [defaultWithColor(themeNames.light, colors.blue)]: {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBlue.base,
     borderColor: colorsBlue.base
@@ -93,7 +119,7 @@ export default {
     borderColor: colorsYellow[1]
   },
   [subtleThemeWithColor(themeNames.light, colors.red)]: {
-    color: colorsTextIcon.highOnDark,
+    color: colorsTextIcon.highOnLight,
     backgroundColor: colorsRed[1],
     borderColor: colorsRed[1]
   },
