@@ -80,6 +80,10 @@ getSortIcon.propTypes = {
   sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
 }
 
+getSortIcon.propTypes = {
+  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
+}
+
 const getToggledSort = props =>
   ({
     [vars.sorts.asc]: vars.sorts.desc,

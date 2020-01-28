@@ -1,7 +1,7 @@
 import { appearances } from '../vars/index.js'
 
-export function defaultWithColor(c) {
-  return appearance(appearances.default) + color(c)
+export function defaultWithColor(themeName, c) {
+  return appearance(appearances.default) + theme(themeName) + color(c)
 }
 
 export function subtleThemeWithColor(themeName, c) {
