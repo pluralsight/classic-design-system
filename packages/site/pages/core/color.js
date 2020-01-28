@@ -1,6 +1,9 @@
+import Badge from '@pluralsight/ps-design-system-badge'
 import * as core from '@pluralsight/ps-design-system-core'
+import { CheckCircleIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -132,12 +135,473 @@ Swatch.propTypes = {
 const DarkSwatch = props => <Swatch {...props} />
 const LightSwatch = props => <Swatch {...props} light />
 
+function Label(props) {
+  return (
+    <header>
+      <h3>{props.children}</h3>
+      <style jsx>{`
+        h3 {
+          font-size: ${core.type.fontSizeSmall};
+          line-height: ${core.type.lineHeightTight};
+          margin: ${core.layout.spacingLarge} 0 ${core.layout.spacingXSmall} 0;
+        }
+      `}</style>
+    </header>
+  )
+}
+Label.propTypes = {
+  children: PropTypes.node
+}
+
+function Swatch2(props) {
+  return (
+    <div className="swatch">
+      <div className="text">
+        <div className="name">{props.name}</div>
+        <div className="var">{props.var}</div>
+        <div className="hex">{props.hex}</div>
+      </div>
+      {props.icon && <div className="icon">{props.icon}</div>}
+      {props.borderExample && <div className="borderExample" />}
+      <style jsx>{`
+        .swatch {
+          background: ${props.bg};
+          border: ${props.border ? `1px solid ${props.border}` : 'none'};
+          color: ${props.fg ? props.fg : core.colorsTextIcon.highOnDark};
+          display: ${props.borderExample ? 'display' : 'flex'};
+          overflow: hidden;
+        }
+        .text {
+          padding: 14px ${core.layout.spacingSmall};
+          flex: 1 1 auto;
+        }
+        .name {
+          font-size: 16px;
+          font-weight: 350;
+          line-height: ${core.type.lineHeightTight};
+          margin-bottom: ${core.layout.spacingXXSmall};
+        }
+        .var {
+          font-size: ${core.type.fontSizeXSmall};
+          font-weight: 500;
+          line-height: 16px;
+          margin-bottom: ${core.layout.spacingXXSmall};
+        }
+        .hex {
+          font-size: ${core.type.fontSizeXSmall};
+          font-weight: 500;
+          line-height: ${core.type.fontSizeSmall};
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          padding-right: ${core.layout.spacingSmall};
+        }
+        .borderExample {
+          height: ${core.layout.spacingXSmall};
+          border-top: 1px solid ${props.borderExample};
+        }
+      `}</style>
+    </div>
+  )
+}
+Swatch2.propTypes = {
+  border: PropTypes.string,
+  bg: PropTypes.string,
+  fg: PropTypes.string,
+  icon: PropTypes.node,
+  borderExample: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  var: PropTypes.string.isRequired,
+  hex: PropTypes.string.isRequired
+}
+
+function Grid(props) {
+  return (
+    <div className="grid">
+      {props.children}
+      <style jsx>{`
+        .grid {
+          display: grid;
+          gap: ${props.cols >= 5
+            ? 0
+            : `${core.layout.spacingMedium} ${core.layout.spacingLarge}`};
+          grid-template-columns: repeat(${props.cols}, 1fr);
+        }
+      `}</style>
+    </div>
+  )
+}
+Grid.defaultProps = {
+  cols: 3
+}
+Grid.propTypes = {
+  children: PropTypes.node,
+  cols: PropTypes.number
+}
+
+const colorCategories = [
+  {
+    heading: 'Background colors',
+    explanation: (
+      <Text.P>
+        There are three background colors available to use for surfaces in the
+        app. The lower the number, the lower the elevation of the surface.
+        Background 1 Is the app background.
+      </Text.P>
+    ),
+    subCategories: [
+      {
+        label: 'Dark',
+        colors: [
+          {
+            name: 'Background - Dark 1',
+            var: 'psColorsBackgroundDark1',
+            hex: core.colorsBackgroundDark[1]
+          },
+          {
+            name: 'Background - Dark 2',
+            var: 'psColorsBackgroundDark2',
+            hex: core.colorsBackgroundDark[2]
+          },
+          {
+            name: 'Background - Dark 3',
+            var: 'psColorsBackgroundDark3',
+            hex: core.colorsBackgroundDark[3]
+          }
+        ]
+      },
+      {
+        label: 'Light',
+        fg: core.colorsTextIcon.highOnLight,
+        colors: [
+          {
+            name: 'Background - Light 1',
+            var: 'psColorsBackgroundLight1',
+            hex: core.colorsBackgroundLight[1]
+          },
+          {
+            name: 'Background - Light 2',
+            var: 'psColorsBackgroundLight2',
+            hex: core.colorsBackgroundLight[2]
+          },
+          {
+            name: 'Background - Light 3',
+            var: 'psColorsBackgroundLight3',
+            hex: core.colorsBackgroundLight[3],
+            border: core.colorsBorder.lowOnLight
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'Primary action & text link colors',
+    subCategories: [
+      {
+        colors: [
+          {
+            name: 'Primary Action - Background',
+            var: 'psColorsPrimaryActionBackground',
+            hex: core.colorsPrimaryAction.background
+          }
+        ]
+      },
+      {
+        colors: [
+          {
+            name: 'Primary Action Text - On Dark',
+            var: 'psColorsPrimaryActionTextOnDark',
+            hex: core.colorsPrimaryAction.textDarkTheme,
+            bg: core.colorsBackgroundDark[1],
+            fg: core.colorsPrimaryAction.textDarkTheme
+          },
+          {
+            name: 'Primary Action Text - On Light',
+            var: 'psColorsPrimaryActionTextOnLight',
+            hex: core.colorsPrimaryAction.textLightTheme,
+            border: core.colorsBorder.lowOnLight,
+            bg: core.colorsBackgroundLight[3],
+            fg: core.colorsPrimaryAction.textLightTheme
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'Status colors',
+    subCategories: [
+      {
+        colors: [
+          {
+            name: 'Status - Success',
+            var: 'psColorsStatusSuccess',
+            hex: core.colorsStatus.success
+          },
+          {
+            name: 'Status - Warning',
+            var: 'psColorsStatusWarning',
+            hex: core.colorsStatus.warning,
+            fg: core.colorsTextIcon.highOnLight
+          },
+          {
+            name: 'Status - Error',
+            var: 'psColorsStatusError',
+            hex: core.colorsStatus.error
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'Text & icon colors',
+    icon: <CheckCircleIcon />,
+    subCategories: [
+      {
+        label: 'On dark backgrounds',
+        bg: core.colorsBackgroundDark[1],
+        colors: [
+          {
+            name: 'Text & Icons - On Dark - High Contrast',
+            var: 'psColorsTextIconHighOnDark',
+            hex: '#FFFFFF, 95% opacity',
+            fg: core.colorsTextIcon.highOnDark
+          },
+          {
+            name: 'Text & Icons - On Dark - Low Contrast',
+            var: 'psColorsTextIconLowOnDark',
+            hex: '#FFFFFF, 65% opacity',
+            fg: core.colorsTextIcon.lowOnDark
+          }
+        ]
+      },
+      {
+        label: 'On light backgrounds',
+        bg: core.colorsBackgroundLight[3],
+        border: core.colorsBorder.lowOnLight,
+        colors: [
+          {
+            name: 'Text & Icons - On Light - High Contrast',
+            var: 'psColorsTextIconHighOnLight',
+            hex: '#000000, 95% opacity',
+            fg: core.colorsTextIcon.highOnLight
+          },
+          {
+            name: 'Text & Icons - On Light - Low Contrast',
+            var: 'psColorsTextIconLowOnLight',
+            hex: '#000000, 55% opacity',
+            fg: core.colorsTextIcon.lowOnLight
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'Border colors',
+    subCategories: [
+      {
+        label: 'On dark backgrounds',
+        bg: core.colorsBackgroundDark[1],
+        colors: [
+          {
+            name: 'Border - On Dark - High Contrast',
+            var: 'psColorsBorderHighOnDark',
+            hex: '#FFFFFF, 30% opacity',
+            fg: core.colorsTextIcon.highOnDark,
+            borderExample: core.colorsBorder.highOnDark
+          },
+          {
+            name: 'Border - On Dark - Low Contrast',
+            var: 'psColorsBorderLowOnDark',
+            hex: '#FFFFFF, 15% opacity',
+            fg: core.colorsTextIcon.lowOnDark,
+            borderExample: core.colorsBorder.lowOnDark
+          }
+        ]
+      },
+      {
+        label: 'On light backgrounds',
+        bg: core.colorsBackgroundLight[3],
+        border: core.colorsBorder.lowOnLight,
+        colors: [
+          {
+            name: 'Border - On Light - High Contrast',
+            var: 'psColorsBorderHighOnLight',
+            hex: '#000000, 30% opacity',
+            fg: core.colorsTextIcon.highOnLight,
+            borderExample: core.colorsBorder.highOnLight
+          },
+          {
+            name: 'Border - On Light - Low Contrast',
+            var: 'psColorsBorderLowOnLight',
+            hex: '#000000, 15% opacity',
+            fg: core.colorsTextIcon.lowOnLight,
+            borderExample: core.colorsBorder.lowOnLight
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'Brand gradients',
+    subCategories: [
+      {
+        colors: [
+          {
+            name: 'Brand Gradient - Skills',
+            var: 'psColorsGradientSkillsBackground',
+            hex: `${core.colorsGradient.skillsStop0} to ${core.colorsGradient.skillsStop100}`,
+            bg: core.colorsGradient.skillsBackground
+          },
+          {
+            name: 'Brand Gradient - Flow',
+            var: 'psColorsGradientFlowBackground',
+            hex: `${core.colorsGradient.flowStop0} to ${core.colorsGradient.flowStop100}`,
+            bg: core.colorsGradient.flowBackground
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'All colors',
+    explanation: (
+      <Text.P>
+        These are additional colors beyond the core set. They can be used for
+        things like illustrations, complex data visualizations, etc. Colors
+        numbered 6 are the same as base colors. (e.g.,{' '}
+        <Text.Code>psColorsBlue6</Text.Code> has the same value as{' '}
+        <Text.Code>psColorsBlueBase</Text.Code>)
+      </Text.P>
+    ),
+    subCategories: [
+      formatAllColorSubCategory({ color: core.colorsBlue, name: 'Blue' }),
+      formatAllColorSubCategory({
+        color: core.colorsTeal,
+        name: 'Teal',
+        fgSwitch: 7
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsGreen,
+        name: 'Green'
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsLime,
+        name: 'Lime',
+        fgSwitch: 8
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsYellow,
+        name: 'Yellow',
+        fgSwitch: 8
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsOrange,
+        name: 'Orange',
+        fgSwitch: 7
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsRed,
+        name: 'Red'
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsPink,
+        name: 'Pink'
+      }),
+      formatAllColorSubCategory({
+        color: core.colorsPurple,
+        name: 'Purple'
+      })
+    ]
+  }
+]
+
+function formatAllColorSubCategory({ color, fgSwitch, fgMin, fgMax, name }) {
+  return {
+    cols: 5,
+    colors: Object.keys(color)
+      .map(key => parseInt(key, 10))
+      .filter(key => Number.isInteger(key))
+      .map(key => ({
+        name: name + ' ' + key + (key === 6 ? ' (Base)' : ''),
+        var: 'psColors' + name + key,
+        hex: color[key],
+        fg:
+          key < (fgSwitch || 6)
+            ? fgMin || core.colorsTextIcon.highOnLight
+            : fgMax || core.colorsTextIcon.highOnDark
+      }))
+  }
+}
+
 export default _ => (
   <Chrome>
     <Content title="Color">
       <PageHeading>Color</PageHeading>
 
-      <SectionHeading>Grayscale colors</SectionHeading>
+      <SectionHeading>Usage</SectionHeading>
+      <P>
+        Colors are available from the core package. Colors are usable in CSS:
+      </P>
+      <Code language="css">{`@import "@pluralsight/ps-design-system-core";
+
+.mySelector {
+  color: var(--psColorsBlueBase);
+}`}</Code>
+      <P>Colors are also usable in JavaScript:</P>
+      <Code language="js">{`import { 
+  colorsBlue, 
+  /* other named exports */ 
+} from "@pluralsight/ps-design-system-core";
+
+myCssInJsSolution({
+  color: colorsBlue.base
+})`}</Code>
+
+      {colorCategories.map(cat => {
+        return (
+          <div key={cat.heading}>
+            <SectionHeading>{cat.heading}</SectionHeading>
+            {cat.explanation}
+            {cat.subCategories.map((subCat, i) => (
+              <div key={i}>
+                <Label>{subCat.label}</Label>
+                <Grid
+                  cols={
+                    subCat.colors.length < 3
+                      ? subCat.colors.length
+                      : subCat.cols
+                  }
+                >
+                  {subCat.colors.map(color => (
+                    <Swatch2
+                      key={color.var}
+                      name={color.name}
+                      var={color.var}
+                      hex={color.hex}
+                      icon={color.icon || subCat.icon || cat.icon}
+                      border={color.border || subCat.border}
+                      fg={color.fg || subCat.fg}
+                      bg={color.bg || subCat.bg || color.hex}
+                      borderExample={color.borderExample}
+                    />
+                  ))}
+                </Grid>
+              </div>
+            ))}
+          </div>
+        )
+      })}
+
+      <P>
+        The colors listed below are legacy colors, replaced by the colors above.
+      </P>
+
+      <SectionHeading
+        notice={<Badge color={Badge.colors.yellow}>Deprecated</Badge>}
+      >
+        Legacy grayscale colors
+      </SectionHeading>
       <P>Grayscale colors are used for containers, text, lines and borders.</P>
       <div>
         <Palette>
@@ -158,7 +622,11 @@ export default _ => (
 }`}</Code>
       </div>
 
-      <SectionHeading>UI colors</SectionHeading>
+      <SectionHeading
+        notice={<Badge color={Badge.colors.yellow}>Deprecated</Badge>}
+      >
+        Legacy UI colors
+      </SectionHeading>
       <P>
         UI colors emphasize interface elements such as buttons, links, accents
         and visualization.
@@ -182,7 +650,11 @@ export default _ => (
 }`}</Code>
       </div>
 
-      <SectionHeading>Gradient</SectionHeading>
+      <SectionHeading
+        notice={<Badge color={Badge.colors.yellow}>Deprecated</Badge>}
+      >
+        Legacy gradient
+      </SectionHeading>
       <P>
         So fresh. Use the standard gradient to emphasize and showcase the brand.
         Use sparingly.
