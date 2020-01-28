@@ -25,7 +25,9 @@ export default {
     width: vars.widths.large
   },
   [`.psds-icon > svg`]: {
-    fill: 'currentColor'
+    fill: 'currentColor',
+    width: '100%',
+    height: '100%'
   },
   '.psds-icon--color-textIconHighOnDark > svg': {
     fill: colorsTextIcon.highOnDark
