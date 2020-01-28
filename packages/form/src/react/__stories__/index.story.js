@@ -114,3 +114,14 @@ Object.keys(Form.ButtonRow.aligns).forEach(a =>
     </Form.VerticalLayout>
   ))
 )
+
+storiesOf('Form.ButtonRow', module)
+  .addDecorator(FormContainer)
+  .addDecorator(PaddingDecorator)
+  .add('single form element with single button', _ => (
+    <Form.VerticalLayout>
+      <Form.ButtonRow>
+        <Button>Only One</Button>
+      </Form.ButtonRow>
+    </Form.VerticalLayout>
+  ))
