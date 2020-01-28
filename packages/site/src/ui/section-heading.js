@@ -44,13 +44,18 @@ export default class SectionHeading extends React.Component {
               href={formatHref(this.props.children)}
               ref={this.el}
             >
+              {this.props.notice && (
+                <span className="notice">{this.props.notice}</span>
+              )}
               {this.props.children}
             </a>
           </h2>
         </Heading>
         <style jsx>{`
           .link {
+            align-items: center;
             color: currentColor;
+            display: flex;
             text-decoration: none;
           }
           .link:focus {
@@ -58,11 +63,17 @@ export default class SectionHeading extends React.Component {
             color: ${core.colors.white};
             outline: none;
           }
+          .notice {
+            align-items: center;
+            display: flex;
+            margin-right: ${core.layout.spacingMedium};
+          }
         `}</style>
       </div>
     )
   }
 }
 SectionHeading.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  notice: PropTypes.node
 }

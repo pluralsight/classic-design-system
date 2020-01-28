@@ -14,7 +14,7 @@ const styles = {
     css(
       stylesheet['.psds-badge'],
       props.appearance === appearances.default
-        ? stylesheet[defaultWithColor(props.color)]
+        ? stylesheet[defaultWithColor(props.themeName, props.color)]
         : stylesheet[subtleThemeWithColor(props.themeName, props.color)]
     )
 }

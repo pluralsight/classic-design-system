@@ -1,6 +1,14 @@
-import { transparentize } from '@pluralsight/ps-design-system-util'
-
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundUtility,
+  colorsTextIcon,
+  layout,
+  type,
+  colorsGreen,
+  colorsYellow,
+  colorsBlue,
+  colorsRed,
+  colorsBorder
+} from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import { defaultWithColor, subtleThemeWithColor } from '../js/index.js'
@@ -11,82 +19,113 @@ export default {
     border: `1px solid transparent`,
     borderRadius: '2px',
     display: 'inline-block',
-    fontSize: core.type.fontSizeXSmall,
-    fontWeight: core.type.fontWeightMedium,
-    lineHeight: core.type.lineHeightStandard,
-    padding: `0 ${core.layout.spacingXSmall}`,
+    fontSize: type.fontSizeXSmall,
+    fontWeight: type.fontWeightMedium,
+    lineHeight: type.lineHeightStandard,
+    padding: `0 ${layout.spacingXSmall}`,
     textTransform: 'uppercase'
   },
 
-  [defaultWithColor(colors.gray)]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.gray03,
-    borderColor: core.colors.gray03
+  [defaultWithColor(themeNames.dark, colors.gray)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsBackgroundUtility[25],
+    borderColor: colorsBackgroundUtility[25]
   },
-  [defaultWithColor(colors.green)]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.green,
-    borderColor: core.colors.green
+  [defaultWithColor(themeNames.dark, colors.green)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsGreen.base,
+    borderColor: colorsGreen.base
   },
-  [defaultWithColor(colors.yellow)]: {
-    color: core.colors.black,
-    backgroundColor: core.colors.yellow,
-    borderColor: core.colors.yellow
+  [defaultWithColor(themeNames.dark, colors.yellow)]: {
+    color: '#181818',
+    backgroundColor: colorsYellow.base,
+    borderColor: colorsYellow.base
   },
-  [defaultWithColor(colors.red)]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.red,
-    borderColor: core.colors.red
+  [defaultWithColor(themeNames.dark, colors.red)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsRed.base,
+    borderColor: colorsRed.base
   },
-  [defaultWithColor(colors.blue)]: {
-    color: core.colors.white,
-    backgroundColor: core.colors.blue,
-    borderColor: core.colors.blue
+  [defaultWithColor(themeNames.dark, colors.blue)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsBlue.base,
+    borderColor: colorsBlue.base
+  },
+
+  [defaultWithColor(themeNames.light, colors.gray)]: {
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsBackgroundUtility[25],
+    borderColor: colorsBackgroundUtility[25]
+  },
+  [defaultWithColor(themeNames.light, colors.green)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsGreen.base,
+    borderColor: colorsGreen.base
+  },
+  [defaultWithColor(themeNames.light, colors.yellow)]: {
+    color: '#181818',
+    backgroundColor: colorsYellow.base,
+    borderColor: colorsYellow.base
+  },
+  [defaultWithColor(themeNames.light, colors.red)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsRed.base,
+    borderColor: colorsRed.base
+  },
+  [defaultWithColor(themeNames.light, colors.blue)]: {
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsBlue.base,
+    borderColor: colorsBlue.base
   },
 
   [subtleThemeWithColor(themeNames.dark, colors.gray)]: {
-    color: core.colors.gray02,
-    borderColor: core.colors.gray02
+    color: colorsTextIcon.lowOnDark,
+    borderColor: colorsBorder.highOnDark
   },
 
   [subtleThemeWithColor(themeNames.dark, colors.green)]: {
-    color: core.colors.green,
-    borderColor: core.colors.green
+    color: colorsGreen.base,
+    borderColor: colorsGreen.base
   },
 
   [subtleThemeWithColor(themeNames.dark, colors.yellow)]: {
-    color: core.colors.yellow,
-    borderColor: core.colors.yellow
+    color: colorsYellow.base,
+    borderColor: colorsYellow.base
   },
 
   [subtleThemeWithColor(themeNames.dark, colors.red)]: {
-    color: core.colors.red,
-    borderColor: core.colors.red
+    color: colorsRed.base,
+    borderColor: colorsRed.base
   },
 
   [subtleThemeWithColor(themeNames.dark, colors.blue)]: {
-    color: core.colors.blue,
-    borderColor: core.colors.blue
+    color: colorsBlue.base,
+    borderColor: colorsBlue.base
   },
 
   [subtleThemeWithColor(themeNames.light, colors.gray)]: {
-    color: core.colors.gray04,
-    backgroundColor: transparentize(0.85, core.colors.gray03)
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsBackgroundUtility[25],
+    borderColor: colorsBackgroundUtility[25]
   },
   [subtleThemeWithColor(themeNames.light, colors.green)]: {
-    color: core.colors.gray04,
-    backgroundColor: transparentize(0.85, core.colors.green)
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsGreen[1],
+    borderColor: colorsGreen[1]
   },
   [subtleThemeWithColor(themeNames.light, colors.yellow)]: {
-    color: core.colors.gray04,
-    backgroundColor: transparentize(0.85, core.colors.yellow)
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsYellow[1],
+    borderColor: colorsYellow[1]
   },
   [subtleThemeWithColor(themeNames.light, colors.red)]: {
-    color: core.colors.gray04,
-    backgroundColor: transparentize(0.85, core.colors.red)
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsRed[1],
+    borderColor: colorsRed[1]
   },
   [subtleThemeWithColor(themeNames.light, colors.blue)]: {
-    color: core.colors.gray04,
-    backgroundColor: transparentize(0.85, core.colors.blue)
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsBlue[3],
+    borderColor: colorsBlue[3]
   }
 }
