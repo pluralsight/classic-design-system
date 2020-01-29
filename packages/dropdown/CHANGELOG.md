@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@5.1.0...@pluralsight/ps-design-system-dropdown@5.1.1) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@5.0.22...@pluralsight/ps-design-system-dropdown@5.1.0) (2020-01-28)
+
+
+### Features
+
+* **dropdown:** apply 2020 color variables ([9d14f1b](https://github.com/pluralsight/design-system/commit/9d14f1ba85344760cec52f070efbf573b26bcf21))
+
+
+
+
+
 ## [5.0.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@5.0.21...@pluralsight/ps-design-system-dropdown@5.0.22) (2020-01-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

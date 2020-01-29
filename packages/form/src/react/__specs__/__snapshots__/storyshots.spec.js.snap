@@ -160,6 +160,212 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 </div>
 `;
 
+exports[`Storyshots Sample Form null children 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <h2
+            data-css-10w3axr=""
+            size="large"
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            Sample form
+          </h2>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-1ewie3k=""
+            >
+              Name
+            </div>
+            <div
+              data-css-1r967oi=""
+            >
+              <div
+                data-css-ctre2o=""
+              >
+                <div
+                  data-css-ydex85=""
+                >
+                  <input
+                    data-css-1aru8qc=""
+                    disabled={false}
+                    placeholder="What's your name?"
+                    size="medium"
+                  />
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-1ewie3k=""
+            >
+              Alias
+            </div>
+            <div
+              data-css-1r967oi=""
+            >
+              <div
+                data-css-ctre2o=""
+              >
+                <div
+                  data-css-ydex85=""
+                >
+                  <input
+                    data-css-1aru8qc=""
+                    disabled={false}
+                    placeholder="Do you have a nick name?"
+                    size="medium"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-bf7jp3=""
+            >
+              *Optional
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-141usbw=""
+          />
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-na8jqt=""
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-hnaccs=""
+            >
+              Comment
+            </div>
+            <div
+              data-css-1ios7mb=""
+            >
+              <div
+                data-css-ctre2o=""
+              >
+                <textarea
+                  data-css-dpjpe2=""
+                  disabled={false}
+                  placeholder="Anything else to report?"
+                  rows={4}
+                  style={
+                    Object {
+                      "height": 112,
+                    }
+                  }
+                />
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-1cqgl9p=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-126c1n5=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-1oaxr3i=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Cancel
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Sample Form sample 1`] = `
 <div
   data-css-1so76ss=""
@@ -352,7 +558,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Occupation
             </div>
@@ -366,7 +572,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   data-css-ne3jjf=""
                 >
                   <button
-                    data-css-1fhymn9=""
+                    data-css-1lq4mos=""
                     disabled={false}
                     onClick={[Function]}
                   >
@@ -383,7 +589,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     </span>
                   </button>
                   <div
-                    data-css-cstzed=""
+                    data-css-wvt485=""
                   >
                     <div
                       data-css-otejxm=""

@@ -660,7 +660,7 @@ exports[`Storyshots names ChannelIcon 1`] = `
 </div>
 `;
 
-exports[`Storyshots names ChatIcon 1`] = `
+exports[`Storyshots names ChatAltFillIcon 1`] = `
 <div
   data-css-10pr3ns=""
 >
@@ -671,7 +671,64 @@ exports[`Storyshots names ChatIcon 1`] = `
   >
     <path
       clipRule="evenodd"
-      d="M6 22v-3H3a1 1 0 01-1-1V4a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-9.667L6.8 22.4A.5.5 0 016 22zM4 5v12h4v2l2.667-2H20V5H4zm13.5 2h-11a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h11a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm0 3h-11a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h11a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm-11 3h7a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-7a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5z"
+      d="M6.414 23.64A.25.25 0 016 23.451V18H3a1 1 0 01-1-1V3a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-8.1l-6.486 5.64z"
+      fillRule="evenodd"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots names ChatAltIcon 1`] = `
+<div
+  data-css-10pr3ns=""
+>
+  <svg
+    aria-label="chat icon"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      clipRule="evenodd"
+      d="M6.414 23.64A.25.25 0 016 23.451V18H3a1 1 0 01-1-1V3a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-8.1l-6.486 5.64zM8 16v3.61L12.152 16H20V4H4v12h4z"
+      fillRule="evenodd"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots names ChatFillIcon 1`] = `
+<div
+  data-css-10pr3ns=""
+>
+  <svg
+    aria-label="chat icon"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      clipRule="evenodd"
+      d="M6 23.451c0 .215.252.33.414.189L12.9 18H21a1 1 0 001-1V3a1 1 0 00-1-1H3a1 1 0 00-1 1v14a1 1 0 001 1h3v5.451zM18 7H6v2h12V7zM6 11h10v2H6v-2z"
+      fillRule="evenodd"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots names ChatIcon 1`] = `
+<div
+  data-css-10pr3ns=""
+>
+  <svg
+    aria-label="chat icon"
+    role="img"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M6 7h12v2H6V7zm10 4H6v2h10v-2z"
+    />
+    <path
+      clipRule="evenodd"
+      d="M6.414 23.64A.25.25 0 016 23.451V18H3a1 1 0 01-1-1V3a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-8.1l-6.486 5.64zM8 16v3.61L12.152 16H20V4H4v12h4z"
       fillRule="evenodd"
     />
   </svg>
@@ -3459,7 +3516,67 @@ exports[`Storyshots names all export names 1`] = `
       >
         <path
           clipRule="evenodd"
-          d="M6 22v-3H3a1 1 0 01-1-1V4a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-9.667L6.8 22.4A.5.5 0 016 22zM4 5v12h4v2l2.667-2H20V5H4zm13.5 2h-11a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h11a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm0 3h-11a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h11a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm-11 3h7a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-7a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5z"
+          d="M6.414 23.64A.25.25 0 016 23.451V18H3a1 1 0 01-1-1V3a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-8.1l-6.486 5.64z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-adcgpe=""
+    >
+      <svg
+        aria-label="chat icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M6.414 23.64A.25.25 0 016 23.451V18H3a1 1 0 01-1-1V3a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-8.1l-6.486 5.64zM8 16v3.61L12.152 16H20V4H4v12h4z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-adcgpe=""
+    >
+      <svg
+        aria-label="chat icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M6 23.451c0 .215.252.33.414.189L12.9 18H21a1 1 0 001-1V3a1 1 0 00-1-1H3a1 1 0 00-1 1v14a1 1 0 001 1h3v5.451zM18 7H6v2h12V7zM6 11h10v2H6v-2z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-1abx40i=""
+  >
+    <div
+      data-css-adcgpe=""
+    >
+      <svg
+        aria-label="chat icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M6 7h12v2H6V7zm10 4H6v2h10v-2z"
+        />
+        <path
+          clipRule="evenodd"
+          d="M6.414 23.64A.25.25 0 016 23.451V18H3a1 1 0 01-1-1V3a1 1 0 011-1h18a1 1 0 011 1v14a1 1 0 01-1 1h-8.1l-6.486 5.64zM8 16v3.61L12.152 16H20V4H4v12h4z"
           fillRule="evenodd"
         />
       </svg>

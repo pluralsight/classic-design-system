@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@13.1.0...@pluralsight/ps-design-system-card@13.1.1) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@13.0.18...@pluralsight/ps-design-system-card@13.1.0) (2020-01-28)
+
+
+### Features
+
+* **card:** updates colors ([ddbf26b](https://github.com/pluralsight/design-system/commit/ddbf26b2db4031605351af694e7d883054f2f311))
+
+
+
+
+
 ## [13.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@13.0.17...@pluralsight/ps-design-system-card@13.0.18) (2020-01-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

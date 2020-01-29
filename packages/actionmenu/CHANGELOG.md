@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@9.1.1...@pluralsight/ps-design-system-actionmenu@9.1.2) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [9.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@9.1.0...@pluralsight/ps-design-system-actionmenu@9.1.1) (2020-01-28)
+
+
+### Bug Fixes
+
+* **actionmenu:** incorrectly named prop 'css' should be 'style' ([614d51c](https://github.com/pluralsight/design-system/commit/614d51c647d7330977cdbee87eeadcffccb07039))
+
+
+
+
+
 # [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@9.0.19...@pluralsight/ps-design-system-actionmenu@9.1.0) (2020-01-24)
 
 

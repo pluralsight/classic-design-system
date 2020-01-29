@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.6.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.6.1...@pluralsight/ps-design-system-site@17.6.2) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+## [17.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.6.0...@pluralsight/ps-design-system-site@17.6.1) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+# [17.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.5.0...@pluralsight/ps-design-system-site@17.6.0) (2020-01-28)
+
+
+### Bug Fixes
+
+* **site:** fix 2020 colors react keys ([98ee075](https://github.com/pluralsight/design-system/commit/98ee075d65a61c0cf37879f67bdb07f5e9ede81d))
+
+
+### Features
+
+* **site:** add 2020 all colors ([37f34e9](https://github.com/pluralsight/design-system/commit/37f34e920c0c82f4d6ebc8d452505ac30a179777))
+* **site:** add 2020 border colors ([5049fa1](https://github.com/pluralsight/design-system/commit/5049fa193834db86d1910c582cd44cf5fc26b9f4))
+* **site:** add 2020 brand gradient colors ([eafb1b3](https://github.com/pluralsight/design-system/commit/eafb1b3aaa38d2d2fa789c100db086ebe26ffd53))
+* **site:** add 2020 color explanation ([a24524f](https://github.com/pluralsight/design-system/commit/a24524ffdadca3acb956fcd8797df62ea81cbff8))
+* **site:** add 2020 color usage and legacy annotations ([492ad1e](https://github.com/pluralsight/design-system/commit/492ad1ec4cd7629813f5a2051f50ef1bd94ee330))
+* **site:** add 2020 primary action colors ([eb12ead](https://github.com/pluralsight/design-system/commit/eb12ead0f253f72723a04097b1fb9320fc6cbeef))
+* **site:** add 2020 status colors ([5cc8165](https://github.com/pluralsight/design-system/commit/5cc81659d0e61817ab229ba829868db909508b7f))
+* **site:** add 2020 text icon colors ([f8d9b28](https://github.com/pluralsight/design-system/commit/f8d9b2890175afb3253612740ab8612a7eb24e8b))
+* **site:** add sizes in px to icon docs ([6df9d7f](https://github.com/pluralsight/design-system/commit/6df9d7f6eb0078ff89783ed28d70f3672dfed10c))
+* **site:** new 2020 background colors ([6cc11b3](https://github.com/pluralsight/design-system/commit/6cc11b3b749d7098917ffb0e60b814aa255d0ac9))
+
+
+
+
+
 # [17.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.4.13...@pluralsight/ps-design-system-site@17.5.0) (2020-01-24)
 
 

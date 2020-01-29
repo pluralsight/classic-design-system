@@ -33,14 +33,18 @@ describe('Carousel', () => {
       pages = container.querySelectorAll('[aria-label="carousel"] > li')
     })
 
-    it('should hide the prev button', () => {
-      const btn = container.querySelector('[aria-label="previous"]')
-      expect(btn).toHaveAttribute('hidden')
+    it('should hide the prev control', () => {
+      const control = container
+        .querySelector('[aria-label="previous"]')
+        .closest('li')
+      expect(control).toHaveAttribute('hidden')
     })
 
-    it('should hide the next button', () => {
-      const btn = container.querySelector('[aria-label="next"]')
-      expect(btn).toHaveAttribute('hidden')
+    it('should hide the next control', () => {
+      const control = container
+        .querySelector('[aria-label="next"]')
+        .closest('li')
+      expect(control).toHaveAttribute('hidden')
     })
 
     it('should NOT hide the active page from screen readers', () => {
@@ -115,36 +119,20 @@ describe('Carousel', () => {
       container = _container
     })
 
-    it('should show the next button', () => {
+    it('should show the next control', () => {
       const btn = container.querySelector('[aria-label="next"]')
       expect(btn).toBeDefined()
-      expect(btn).not.toHaveAttribute('hidden')
+
+      const control = btn.closest('li')
+      expect(control).not.toHaveAttribute('hidden')
     })
 
     it('should hide the prev button', () => {
       const btn = container.querySelector('[aria-label="previous"]')
-      expect(btn).toHaveAttribute('hidden')
+      expect(btn).toBeDefined()
+
+      const control = btn.closest('li')
+      expect(control).toHaveAttribute('hidden')
     })
-  })
-
-  describe('when on the last page', () => {
-    it.skip('should NOT show the next button', () => {})
-    it.skip('should show the prev button', () => {})
-  })
-
-  describe('when next button is clicked', () => {
-    it.skip('should page foward', () => {})
-  })
-
-  describe('when prev button is clicked', () => {
-    it.skip('should page backward', () => {})
-  })
-
-  describe('when the right arrow key is pressed', () => {
-    it.skip('should page foward', () => {})
-  })
-
-  describe('when the left arrow key is pressed', () => {
-    it.skip('should page backward', () => {})
   })
 })

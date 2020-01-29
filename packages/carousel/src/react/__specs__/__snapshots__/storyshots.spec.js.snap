@@ -156,51 +156,63 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -468,51 +480,63 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -717,61 +741,73 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          style={
-            Object {
-              "top": "33%",
-            }
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+        style={
+          Object {
+            "top": "33%",
           }
-          tabIndex={-1}
+        }
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
-          style={
-            Object {
-              "top": "33%",
-            }
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+        style={
+          Object {
+            "top": "33%",
           }
+        }
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -886,51 +922,63 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -1366,51 +1414,63 @@ exports[`Storyshots Carousel/items many items 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -1470,53 +1530,65 @@ exports[`Storyshots Carousel/items one item 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-1qnonck=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -1593,51 +1665,63 @@ exports[`Storyshots Carousel/items two items 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -1914,51 +1998,63 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -2235,51 +2331,63 @@ exports[`Storyshots Carousel/size wide 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -2552,51 +2660,63 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
         aria-label="carousel controls"
         data-css-b3afd4=""
       >
-        <li>
-          <button
-            aria-label="previous"
-            data-css-1wkjkcr=""
-            hidden={true}
-            onClick={[Function]}
-            tabIndex={-1}
+        <li
+          data-css-pmh2ws=""
+          hidden={true}
+          onClick={[Function]}
+        >
+          <div
+            data-css-a3m9si=""
           >
-            <div
-              aria-hidden={true}
-              data-css-otejxm=""
+            <button
+              aria-label="previous"
+              data-css-1bqkmub=""
+              tabIndex={-1}
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
+              <div
+                aria-hidden={true}
+                data-css-otejxm=""
               >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         </li>
-        <li>
-          <button
-            aria-label="next"
-            data-css-n705st=""
-            onClick={[Function]}
+        <li
+          data-css-1qnonck=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-a3m9si=""
           >
-            <div
-              aria-hidden={true}
-              data-css-otejxm=""
+            <button
+              aria-label="next"
+              data-css-1bqkmub=""
             >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
+              <div
+                aria-hidden={true}
+                data-css-otejxm=""
               >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         </li>
       </ul>
       <div
@@ -9489,51 +9609,63 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
         aria-label="carousel controls"
         data-css-b3afd4=""
       >
-        <li>
-          <button
-            aria-label="previous"
-            data-css-1wkjkcr=""
-            hidden={true}
-            onClick={[Function]}
-            tabIndex={-1}
+        <li
+          data-css-pmh2ws=""
+          hidden={true}
+          onClick={[Function]}
+        >
+          <div
+            data-css-a3m9si=""
           >
-            <div
-              aria-hidden={true}
-              data-css-otejxm=""
+            <button
+              aria-label="previous"
+              data-css-1bqkmub=""
+              tabIndex={-1}
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
+              <div
+                aria-hidden={true}
+                data-css-otejxm=""
               >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         </li>
-        <li>
-          <button
-            aria-label="next"
-            data-css-n705st=""
-            onClick={[Function]}
+        <li
+          data-css-1qnonck=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-a3m9si=""
           >
-            <div
-              aria-hidden={true}
-              data-css-otejxm=""
+            <button
+              aria-label="next"
+              data-css-1bqkmub=""
             >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
+              <div
+                aria-hidden={true}
+                data-css-otejxm=""
               >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         </li>
       </ul>
       <div
@@ -9977,51 +10109,63 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
         aria-label="carousel controls"
         data-css-b3afd4=""
       >
-        <li>
-          <button
-            aria-label="previous"
-            data-css-1wkjkcr=""
-            hidden={true}
-            onClick={[Function]}
-            tabIndex={-1}
+        <li
+          data-css-pmh2ws=""
+          hidden={true}
+          onClick={[Function]}
+        >
+          <div
+            data-css-a3m9si=""
           >
-            <div
-              aria-hidden={true}
-              data-css-otejxm=""
+            <button
+              aria-label="previous"
+              data-css-1bqkmub=""
+              tabIndex={-1}
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
+              <div
+                aria-hidden={true}
+                data-css-otejxm=""
               >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         </li>
-        <li>
-          <button
-            aria-label="next"
-            data-css-n705st=""
-            onClick={[Function]}
+        <li
+          data-css-1qnonck=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-a3m9si=""
           >
-            <div
-              aria-hidden={true}
-              data-css-otejxm=""
+            <button
+              aria-label="next"
+              data-css-1bqkmub=""
             >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
+              <div
+                aria-hidden={true}
+                data-css-otejxm=""
               >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
         </li>
       </ul>
       <div
@@ -12109,51 +12253,63 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
@@ -14240,51 +14396,63 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       aria-label="carousel controls"
       data-css-b3afd4=""
     >
-      <li>
-        <button
-          aria-label="previous"
-          data-css-1wkjkcr=""
-          hidden={true}
-          onClick={[Function]}
-          tabIndex={-1}
+      <li
+        data-css-pmh2ws=""
+        hidden={true}
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="previous"
+            data-css-1bqkmub=""
+            tabIndex={-1}
           >
-            <svg
-              aria-label="caret left icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
-      <li>
-        <button
-          aria-label="next"
-          data-css-n705st=""
-          onClick={[Function]}
+      <li
+        data-css-1qnonck=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            aria-hidden={true}
-            data-css-otejxm=""
+          <button
+            aria-label="next"
+            data-css-1bqkmub=""
           >
-            <svg
-              aria-label="caret right icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              aria-hidden={true}
+              data-css-otejxm=""
             >
-              <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-              />
-            </svg>
-          </div>
-        </button>
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
       </li>
     </ul>
     <div
