@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-row",
-  "version": "9.0.3",
+  "version": "9.0.4",
   "description": "Design System component for row ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,7 +20,7 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^5.4.6",
+    "@pluralsight/ps-design-system-core": "^5.5.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
     "@pluralsight/ps-design-system-prop-types": "^2.0.17",
     "prop-types": "^15.7.2",
@@ -34,10 +34,10 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.10",
-    "@pluralsight/ps-design-system-button": "^17.1.9",
-    "@pluralsight/ps-design-system-drawer": "^6.0.25",
-    "@pluralsight/ps-design-system-icon": "^17.1.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.14",
+    "@pluralsight/ps-design-system-button": "^17.1.10",
+    "@pluralsight/ps-design-system-drawer": "^6.0.26",
+    "@pluralsight/ps-design-system-icon": "^17.1.1",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.15",
     "@pluralsight/ps-design-system-theme": "^4.0.9"
   }
 }

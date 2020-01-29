@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.4.6...@pluralsight/ps-design-system-core@5.5.0) (2020-01-29)
+
+
+### Features
+
+* **core:** add white, black, and code colors ([bcfecd4](https://github.com/pluralsight/design-system/commit/bcfecd49de187740fd51df8a78e2d590ec139354))
+
+
+
+
+
 ## [5.4.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.4.4...@pluralsight/ps-design-system-core@5.4.6) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core
