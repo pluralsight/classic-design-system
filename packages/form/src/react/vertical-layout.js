@@ -1,6 +1,6 @@
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { Children, isValidElement } from 'react'
 
 import stylesheet from '../css/index.js'
 
@@ -9,17 +9,24 @@ const styles = {
   child: _ => css(stylesheet['.psds-form-vertical-layout__child'])
 }
 
-const VerticalLayout = (props, context) => (
-  <div {...styles.layout(props)}>
-    {React.Children.map(props.children, (child, i) => (
-      <div {...styles.child(props)}>
-        {React.cloneElement(child, {
-          style: { ...child.props.style, width: '100%', maxWidth: 'none' }
-        })}
-      </div>
-    ))}
-  </div>
-)
+const VerticalLayout = props => {
+  const children = Children.toArray(props.children).filter(child =>
+    isValidElement(child)
+  )
+
+  return (
+    <div {...styles.layout(props)}>
+      {children.map((child, i) => (
+        <div key={i} {...styles.child(props)}>
+          {React.cloneElement(child, {
+            style: { ...child.props.style, width: '100%', maxWidth: 'none' }
+          })}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 VerticalLayout.displayName = 'VerticalLayout'
 VerticalLayout.propTypes = {
   children: PropTypes.arrayOf(PropTypes.element)

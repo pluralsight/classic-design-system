@@ -98,6 +98,34 @@ storiesOf('Sample Form', module)
       </Form.ButtonRow>
     </Form.VerticalLayout>
   ))
+  .add('null children', _ => (
+    <Form.VerticalLayout>
+      <Text.Heading>
+        <h2>Sample form</h2>
+      </Text.Heading>
+
+      <TextInput label="Name" placeholder="What's your name?" />
+
+      {null}
+
+      <TextInput
+        label="Alias"
+        placeholder="Do you have a nick name?"
+        subLabel="*Optional"
+      />
+
+      {null}
+
+      <Form.Divider />
+
+      <TextArea label="Comment" placeholder="Anything else to report?" />
+
+      <Form.ButtonRow>
+        <Button>Save</Button>
+        <Button appearance={Button.appearances.flat}>Cancel</Button>
+      </Form.ButtonRow>
+    </Form.VerticalLayout>
+  ))
 
 const alignsStories = storiesOf('Form.ButtonRow | aligns', module)
   .addDecorator(FormContainer)
