@@ -160,6 +160,57 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 </div>
 `;
 
+exports[`Storyshots Form.ButtonRow single form element with single button 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-1cqgl9p=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-126c1n5=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Only One
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Sample Form null children 1`] = `
 <div
   data-css-1so76ss=""
