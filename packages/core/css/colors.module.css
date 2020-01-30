@@ -1,7 +1,17 @@
 :root {
-  /* ui colors */
   --psColorsWhite: #ffffff;
   --psColorsBone: #f2f2f2;
+
+  --psColorsCodeRed: #f26d6d;
+  --psColorsCodeOrange: #ff9466;
+  --psColorsCodeYellow: #ffca80;
+  --psColorsCodeGreen: #b8cc7a;
+  --psColorsCodeTurquoise: #abd9c6;
+  --psColorsCodeBlue: #8ac7e6;
+  --psColorsCodePurple: #e695bd;
+  --psColorsCodeSand: #d99077;
+
+  /* deprecated */
   --psColorsGray01: #cccccc;
   --psColorsGray02: #aaaaaa;
   --psColorsGray03: #555555;
@@ -19,16 +29,6 @@
   --psColorsGreen: #23aa5a;
   --psColorsBlue: #137bc2;
 
-  /* gradients */
   --psColorsGradientHorz: linear-gradient(to right, #f05a28, #e80a89);
   --psColorsGradientVert: linear-gradient(to bottom, #f05a28, #e80a89);
-
-  --psColorsCodeRed: #f26d6d;
-  --psColorsCodeOrange: #ff9466;
-  --psColorsCodeYellow: #ffca80;
-  --psColorsCodeGreen: #b8cc7a;
-  --psColorsCodeTurquoise: #abd9c6;
-  --psColorsCodeBlue: #8ac7e6;
-  --psColorsCodePurple: #e695bd;
-  --psColorsCodeSand: #d99077;
 }
