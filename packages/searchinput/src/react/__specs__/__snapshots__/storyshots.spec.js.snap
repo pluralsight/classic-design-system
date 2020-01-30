@@ -26,7 +26,7 @@ exports[`Storyshots SearchInput default 1`] = `
       data-css-1os68q9=""
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="search icon"
@@ -116,7 +116,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       data-css-in6gqi=""
     >
       <div
-        data-css-zbzen2=""
+        data-css-g4f2qk=""
       >
         <input
           data-css-egljo0=""
@@ -138,7 +138,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
               data-css-y80vay=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="close icon"
@@ -162,7 +162,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       data-css-1os68q9=""
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="search icon"
@@ -181,7 +181,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       data-css-1ha66tv=""
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="warning icon"
@@ -216,7 +216,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-zbzen2=""
+        data-css-g4f2qk=""
       >
         <input
           data-css-egljo0=""
@@ -238,7 +238,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
               data-css-y80vay=""
             >
               <div
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="close icon"
@@ -262,7 +262,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       data-css-1os68q9=""
     >
       <div
-        data-css-otejxm=""
+        data-css-7dab2f=""
       >
         <svg
           aria-label="search icon"

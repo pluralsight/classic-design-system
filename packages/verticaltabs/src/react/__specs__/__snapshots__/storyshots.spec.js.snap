@@ -200,8 +200,8 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
             Group Header
           </span>
           <div
-            data-css-12f5sv2=""
             data-css-1gtb6c4=""
+            data-css-1gzzcm2=""
           >
             <svg
               aria-label="caret down icon"
@@ -311,7 +311,7 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
             Group Header
           </span>
           <div
-            data-css-12f5sv2=""
+            data-css-1gzzcm2=""
             data-css-1rikgj2=""
           >
             <svg
@@ -667,7 +667,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 active 1`] = `
           <div
             data-active={true}
             data-css-1kqp8s2=""
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="placeholder icon"
@@ -708,7 +708,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 basic 1`] = `
         >
           <div
             data-css-1kqp8s2=""
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="placeholder icon"
@@ -750,7 +750,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 button 1`] = `
         >
           <div
             data-css-1kqp8s2=""
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="placeholder icon"
@@ -792,7 +792,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 collapsible 1`] = `
         >
           <div
             data-css-1kqp8s2=""
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="placeholder icon"
@@ -810,7 +810,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 collapsible 1`] = `
             text here
           </span>
           <div
-            data-css-12f5sv2=""
+            data-css-1gzzcm2=""
             data-css-7bjcwq=""
           >
             <svg
@@ -857,7 +857,7 @@ exports[`Storyshots components|VerticalTabs/Tier1 link 1`] = `
         >
           <div
             data-css-1kqp8s2=""
-            data-css-otejxm=""
+            data-css-7dab2f=""
           >
             <svg
               aria-label="placeholder icon"
@@ -1026,7 +1026,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1060,7 +1060,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1094,7 +1094,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1112,7 +1112,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
                   People
                 </span>
                 <div
-                  data-css-12f5sv2=""
+                  data-css-1gzzcm2=""
                   data-css-7bjcwq=""
                 >
                   <svg
@@ -1231,7 +1231,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1265,7 +1265,7 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1451,7 +1451,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1486,7 +1486,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1521,7 +1521,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1556,7 +1556,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1591,7 +1591,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1784,7 +1784,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1818,7 +1818,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1836,7 +1836,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   Operational Reports
                 </span>
                 <div
-                  data-css-12f5sv2=""
+                  data-css-1gzzcm2=""
                   data-css-7bjcwq=""
                 >
                   <svg
@@ -1971,7 +1971,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1989,7 +1989,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   Review & Collaborate
                 </span>
                 <div
-                  data-css-12f5sv2=""
+                  data-css-1gzzcm2=""
                   data-css-7bjcwq=""
                 >
                   <svg
@@ -2108,7 +2108,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2126,7 +2126,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   Delivery
                 </span>
                 <div
-                  data-css-12f5sv2=""
+                  data-css-1gzzcm2=""
                   data-css-7bjcwq=""
                 >
                   <svg
@@ -2176,7 +2176,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
               >
                 <div
                   data-css-1kqp8s2=""
-                  data-css-otejxm=""
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2194,7 +2194,7 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
                   Fundamentals
                 </span>
                 <div
-                  data-css-12f5sv2=""
+                  data-css-1gzzcm2=""
                   data-css-7bjcwq=""
                 >
                   <svg
@@ -2370,7 +2370,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             >
               <div
                 data-css-1kqp8s2=""
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="placeholder icon"
@@ -2453,7 +2453,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
           </span>
           <div
-            data-css-12f5sv2=""
+            data-css-1gzzcm2=""
             data-css-1rikgj2=""
           >
             <svg
@@ -2544,7 +2544,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
             >
               <div
                 data-css-1kqp8s2=""
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="placeholder icon"

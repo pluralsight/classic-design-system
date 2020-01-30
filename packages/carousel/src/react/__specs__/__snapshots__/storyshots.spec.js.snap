@@ -171,7 +171,7 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -199,7 +199,7 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -495,7 +495,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -523,7 +523,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -761,7 +761,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -794,7 +794,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -937,7 +937,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -965,7 +965,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -1429,7 +1429,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -1457,7 +1457,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -1545,7 +1545,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -1575,7 +1575,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -1680,7 +1680,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -1708,7 +1708,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -2013,7 +2013,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -2041,7 +2041,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -2346,7 +2346,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -2374,7 +2374,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -2466,7 +2466,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                     title="asdf"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -2675,7 +2675,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
             >
               <div
                 aria-hidden={true}
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret left icon"
@@ -2703,7 +2703,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
             >
               <div
                 aria-hidden={true}
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret right icon"
@@ -2796,7 +2796,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -2967,7 +2967,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -3138,7 +3138,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -3309,7 +3309,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -3480,7 +3480,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -3651,7 +3651,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -3822,7 +3822,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -3993,7 +3993,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -4164,7 +4164,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -4335,7 +4335,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -4506,7 +4506,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -4677,7 +4677,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -4848,7 +4848,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -5019,7 +5019,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -5190,7 +5190,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -5361,7 +5361,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -5532,7 +5532,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -5703,7 +5703,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -5874,7 +5874,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -6045,7 +6045,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -6216,7 +6216,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -6387,7 +6387,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -6558,7 +6558,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -6729,7 +6729,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -6900,7 +6900,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -7071,7 +7071,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -7242,7 +7242,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -7413,7 +7413,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -7584,7 +7584,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -7755,7 +7755,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -7926,7 +7926,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -8097,7 +8097,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -8268,7 +8268,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -8439,7 +8439,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -8610,7 +8610,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -8781,7 +8781,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -8952,7 +8952,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -9123,7 +9123,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -9294,7 +9294,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -9465,7 +9465,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                     title="See more"
                   >
                     <div
-                      data-css-otejxm=""
+                      data-css-7dab2f=""
                     >
                       <svg
                         aria-label="more icon"
@@ -9624,7 +9624,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
             >
               <div
                 aria-hidden={true}
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret left icon"
@@ -9652,7 +9652,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
             >
               <div
                 aria-hidden={true}
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret right icon"
@@ -10124,7 +10124,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
             >
               <div
                 aria-hidden={true}
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret left icon"
@@ -10152,7 +10152,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
             >
               <div
                 aria-hidden={true}
-                data-css-otejxm=""
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="caret right icon"
@@ -12268,7 +12268,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -12296,7 +12296,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
@@ -14411,7 +14411,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret left icon"
@@ -14439,7 +14439,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-otejxm=""
+              data-css-7dab2f=""
             >
               <svg
                 aria-label="caret right icon"
