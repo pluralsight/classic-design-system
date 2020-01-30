@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.0...@pluralsight/ps-design-system-core@5.5.1) (2020-01-30)
+
+
+### Bug Fixes
+
+* **core:** remove 2020 from color css var names ([1a79d1b](https://github.com/pluralsight/design-system/commit/1a79d1b477f765c2717826fa49bd99bea32d13cc))
+
+
+
+
+
 # [5.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.4.6...@pluralsight/ps-design-system-core@5.5.0) (2020-01-29)
 
 
