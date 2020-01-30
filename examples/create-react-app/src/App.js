@@ -1,10 +1,9 @@
-// DS: import and use react components
+// DS: import and used react components
+import React from 'react'
 
-import React, { Component } from 'react'
-
-import Button from '@pluralsight/ps-design-system-button'
-import {CodeIcon} from '@pluralsight/ps-design-system-icon'
-import * as Text from '@pluralsight/ps-design-system-text'
+import Button from '@pluralsight/ps-design-system-button/react'
+import { CodeIcon } from '@pluralsight/ps-design-system-icon'
+import Text from '@pluralsight/ps-design-system-text/react'
 
 import './App.css'
 

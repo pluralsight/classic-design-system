@@ -232,7 +232,7 @@ export default _ => (
               'children',
               <span>
                 <code>node</code>
-                {' | '}
+                 | 
                 <code>() => node</code>
               </span>,
               true,

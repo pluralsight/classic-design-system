@@ -39,18 +39,27 @@ const styles = {
   tier1Header: () => {
     const label = `verticaltabs__tier1__header`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`])
+    )
   },
   tier1HeaderInner: () => {
     const label = `verticaltabs__tier1__header__inner`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`])
+    )
   },
 
   tier2Header: () => {
     const label = `verticaltabs__tier2__header`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return compose(
+      css({ label }),
+      css(stylesheet[`.psds-${label}`])
+    )
   },
 
   tierHeaderLabel: (_, { hideLabels }) => {

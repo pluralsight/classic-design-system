@@ -63,7 +63,7 @@ export default _ => (
               'avatar',
               <span>
                 <code>Avatar</code>
-                {' | '}
+                 | 
                 <code>Note.AvatarLink</code>
               </span>,
               null,
@@ -74,7 +74,7 @@ export default _ => (
               'heading',
               <span>
                 <code>string</code>
-                {' | '}
+                 | 
                 <code>node</code>
               </span>,
               null,
@@ -92,7 +92,7 @@ export default _ => (
               'metadata',
               <span>
                 <code>string[]</code>
-                {' | '}
+                 | 
                 <code>node[]</code>
               </span>,
               null,
