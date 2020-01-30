@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.3.3...@pluralsight/ps-design-system-form@4.3.4) (2020-01-30)
+
+
+### Bug Fixes
+
+* **form:** relaxes proptypes ([6228095](https://github.com/pluralsight/design-system/commit/622809520028349417d4720830e3543024994ae8))
+
+
+
+
+
 ## [4.3.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.3.2...@pluralsight/ps-design-system-form@4.3.3) (2020-01-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-text",
-  "version": "15.0.12",
+  "version": "15.0.13",
   "description": "Design system component for text-related ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.10",
     "@pluralsight/ps-design-system-featureflags": "^1.1.9",
-    "@pluralsight/ps-design-system-storybook-addon-featureflags": "^1.1.11",
+    "@pluralsight/ps-design-system-storybook-addon-featureflags": "^1.1.12",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.16",
     "@pluralsight/ps-design-system-theme": "^4.0.9"
   }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@6.1.3...@pluralsight/ps-design-system-textinput@6.1.4) (2020-01-30)
+
+
+### Bug Fixes
+
+* **textinput:** fixes horizontal alignment ([76ff78f](https://github.com/pluralsight/design-system/commit/76ff78ffdb975f05a3d8a8309cf36846744804a0))
+
+
+
+
+
 ## [6.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@6.1.2...@pluralsight/ps-design-system-textinput@6.1.3) (2020-01-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.1.2...@pluralsight/ps-design-system-icon@17.1.3) (2020-01-30)
+
+
+### Bug Fixes
+
+* **icon:** automated icon cleanup on build ([f8aa8bd](https://github.com/pluralsight/design-system/commit/f8aa8bd9cb0b9bf92ed7499bb8681ed50c4048ca))
+* **icon:** vertical alignment ([4f993c7](https://github.com/pluralsight/design-system/commit/4f993c77d74135cc2f522c004cf28f1a5087fcb5))
+
+
+
+
+
 ## [17.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.1.1...@pluralsight/ps-design-system-icon@17.1.2) (2020-01-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
