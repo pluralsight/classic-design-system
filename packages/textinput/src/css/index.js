@@ -1,8 +1,16 @@
-import core from '@pluralsight/ps-design-system-core'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import {
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  colorsBorder,
+  colorsStatus,
+  colorsTextIcon,
+  layout,
+  type
+} from '@pluralsight/ps-design-system-core'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   '.psds-text-input': {
@@ -14,46 +22,74 @@ export default {
 
   // __field
   '.psds-text-input__field': {
-    position: 'relative',
+    alignItems: 'center',
+    background: colorsBackgroundLight[3],
+    border: `1px solid ${colorsBorder.highOnLight}`,
+    borderRadius: '2px',
+    color: colorsTextIcon.highOnLight,
+    display: 'flex',
+    fontWeight: type.fontWeightBook,
     height: '40px',
     minWidth: '192px',
+    padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
+    position: 'relative',
+    width: '100%'
+  },
+  [`.psds-text-input__field.psds-theme--${themeNames.light}`]: {
+    background: colorsBackgroundLight[3],
+    border: `1px solid ${colorsBorder.highOnLight}`
+  },
+  '.psds-text-input__field.psds-text-input--small': {
+    height: '32px',
+    padding: `6px ${layout.spacingXSmall}`
+  },
+  '.psds-text-input__field--w-after': {
+    paddingRight: 0
+  },
+  '.psds-text-input__field-input': {
     width: '100%',
-    borderRadius: '2px',
-    background: core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
-    fontWeight: core.type.fontWeightBook,
-    color: core.colors.gray03,
-    padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
-    border: 'none'
+    background: 'none',
+    border: 'none',
+    color: 'inherit',
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightStandard,
+    outline: 'none',
+    padding: 0,
+
+    '&:focus': { outline: 'none' },
+    '&::placeholder': { color: colorsTextIcon.lowOnLight }
   },
-  '.psds-text-input__field:focus': {
-    outline: 'none'
+  [`.psds-text-input__field-input--appearance-${vars.appearances.subtle}`]: {
+    '&::placeholder': { color: colorsTextIcon.lowOnDark }
   },
-  [`.psds-text-input__field.psds-theme--${themeNames.light}:focus`]: {
-    border: '1px solid transparent'
+  [`.psds-text-input__field-input.psds-theme--${themeNames.light}`]: {
+    '&::placeholder': { color: colorsTextIcon.lowOnLight }
   },
+
   [`.psds-text-input__field--error.psds-theme--${themeNames.light}`]: {
     border: '1px solid transparent'
   },
-  [`.psds-text-input__field.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    border: `1px solid ${core.colors.gray02}`
-  },
   [`.psds-text-input__field--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray01,
-    background: core.colors.gray06,
-    border: `1px solid ${core.colors.gray03}`
+    color: colorsTextIcon.highOnDark,
+    background: colorsBackgroundDark[1],
+    border: `1px solid ${colorsBorder.highOnDark}`
+  },
+  [`.psds-text-input__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnLight
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.left}`]: {
-    padding: `0 ${core.layout.spacingMedium} 0 calc(${
-      core.layout.spacingXSmall
-    } + ${iconVars.widths.medium} + ${core.layout.spacingXSmall})`
+    padding: `0 ${layout.spacingMedium} 0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall})`
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.right}`]: {
-    padding: `0 calc(${core.layout.spacingXSmall} + ${
-      iconVars.widths.medium
-    } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`
+  },
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.left}.psds-text-input--small`]: {
+    padding: `0 ${layout.spacingXSmall} 0 ${parseInt(layout.spacingMedium, 10) +
+      parseInt(iconWidths.medium, 10)}px`
+  },
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.right}.psds-text-input--small`]: {
+    padding: `0 ${parseInt(layout.spacingMedium, 10) +
+      parseInt(iconWidths.medium, 10)}px 0 ${layout.spacingXSmall}`
   },
 
   // __field-container
@@ -61,61 +97,62 @@ export default {
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
-    minWidth: `calc(192px + ${core.layout.spacingXSmall})`
+    minWidth: `calc(192px + ${layout.spacingXSmall})`
   },
 
   // __icon
   '.psds-text-input__icon': {
     position: 'absolute',
-    left: core.layout.spacingXSmall,
+    left: layout.spacingXSmall,
+    top: '50%',
+    transform: 'translateY(-50%)',
     display: 'flex',
     alignItems: 'center',
-    color: core.colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
   [`.psds-text-input__icon.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray02
+    color: colorsTextIcon.lowOnLight
   },
+
   [`.psds-text-input__icon--icon-align-${vars.iconAligns.right}`]: {
     left: 'auto',
-    right: core.layout.spacingXSmall
+    right: layout.spacingXSmall
   },
   [`.psds-text-input__icon--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray02
+    color: colorsTextIcon.lowOnDark
   },
 
   // __label
   '.psds-text-input__label': {
-    color: core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
+    color: colorsTextIcon.highOnDark,
+    fontSize: type.fontSizeSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingBottom: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingBottom: layout.spacingXSmall
   },
   [`.psds-text-input__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray05
+    color: colorsTextIcon.highOnLight
   },
 
   // __sub-label
   '.psds-text-input__sub-label': {
-    color: core.colors.gray02,
-    fontSize: core.type.fontSizeXSmall,
+    color: colorsTextIcon.lowOnDark,
+    fontSize: type.fontSizeXSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingTop: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingTop: layout.spacingXSmall
   },
   [`.psds-text-input__sub-label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
 
   // __error
   '.psds-text-input__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    }))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
-    color: core.colors.red,
-    marginLeft: core.layout.spacingXSmall
+    color: colorsStatus.error,
+    marginLeft: layout.spacingXSmall
   }
 }

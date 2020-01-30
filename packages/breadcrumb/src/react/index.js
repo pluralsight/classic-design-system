@@ -1,38 +1,47 @@
-import * as glamor from 'glamor'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import PropTypes from 'prop-types'
+import { css } from 'glamor'
 import React from 'react'
+import PropTypes from 'prop-types'
 
-import css from '../css'
+import Button from '@pluralsight/ps-design-system-button'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
+
+import stylesheet from '../css/index.js'
 
 const styles = {
-  breadcrumb: _ => glamor.css(css['.psds-breadcrumb'])
+  breadcrumb: _ => css(stylesheet['.psds-breadcrumb'])
 }
 
-const Breadcrumb = props => {
-  const breadcrumbProps = {
-    ...styles.breadcrumb(props),
-    ...(props.style ? { style: props.style } : null),
-    ...(props.className ? { className: props.className } : null)
-  }
-
+const Breadcrumb = React.forwardRef((props, ref) => {
+  const { disabled, href, loading, onClick, ...rest } = props
   return (
-    <div {...breadcrumbProps}>
+    <div {...filterReactProps(rest)} {...styles.breadcrumb(props)}>
       <Button
-        {...props}
-        icon={<Icon id={Icon.ids.caretLeft} />}
         appearance={Button.appearances.flat}
+        href={href}
+        disabled={disabled}
+        icon={<CaretLeftIcon />}
+        loading={loading}
+        onClick={onClick}
+        ref={ref}
         size={Button.sizes.small}
-      />
+      >
+        {props.children}
+      </Button>
     </div>
   )
-}
+})
 
 Breadcrumb.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
   disabled: PropTypes.bool,
-  innerRef: PropTypes.func
+  href: PropTypes.string,
+  loading: PropTypes.bool,
+  onClick: PropTypes.func,
+  style: PropTypes.object
 }
+
 Breadcrumb.defaultProps = {
   disabled: false
 }

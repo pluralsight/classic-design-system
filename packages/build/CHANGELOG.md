@@ -3,6 +3,106 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.8...@pluralsight/ps-design-system-build@1.11.10) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [1.11.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.6...@pluralsight/ps-design-system-build@1.11.8) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [1.11.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.4...@pluralsight/ps-design-system-build@1.11.6) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [1.11.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.2...@pluralsight/ps-design-system-build@1.11.3) (2019-12-16)
+
+
+### Bug Fixes
+
+* missing js extensition eslint warnings ([bebf5d7](https://github.com/pluralsight/design-system/commit/bebf5d718290eb9e3a3cdf0e64ee5f1849226c89))
+
+
+
+
+
+## [1.11.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.1...@pluralsight/ps-design-system-build@1.11.2) (2019-11-06)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [1.11.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.0...@pluralsight/ps-design-system-build@1.11.1) (2019-11-04)
+
+
+### Bug Fixes
+
+* **build:** fixes glamor-tocss-bug that greedly formated css rules ([30fbf35](https://github.com/pluralsight/design-system/commit/30fbf35))
+
+
+
+
+
+# [1.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.10.1...@pluralsight/ps-design-system-build@1.11.0) (2019-10-02)
+
+
+### Features
+
+* **build:** setup esm build deps ([c2a80c7](https://github.com/pluralsight/design-system/commit/c2a80c7))
+
+
+
+
+
+## [1.10.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.10.0...@pluralsight/ps-design-system-build@1.10.1) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+# [1.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.9.2...@pluralsight/ps-design-system-build@1.10.0) (2019-07-18)
+
+
+### Features
+
+* **build:** support keyframes in glamor css build ([c7d783e](https://github.com/pluralsight/design-system/commit/c7d783e))
+
+
+
+
+
+## [1.9.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.9.0...@pluralsight/ps-design-system-build@1.9.2) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [1.9.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.9.0...@pluralsight/ps-design-system-build@1.9.1) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
 # [1.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.8.5...@pluralsight/ps-design-system-build@1.9.0) (2018-11-14)
 
 

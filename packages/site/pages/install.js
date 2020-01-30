@@ -1,18 +1,17 @@
-import Badge from '@pluralsight/ps-design-system-badge/react'
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
+
+import Badge from '@pluralsight/ps-design-system-badge'
 
 import {
   Chrome,
-  Code,
   Content,
   Doc,
   P,
   PageHeading,
-  TextLink,
-  withServerProps
-} from '../src/ui'
+  TextLink
+} from '../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Install">
       <PageHeading>Install FTW!</PageHeading>
@@ -26,6 +25,13 @@ npm install @pluralsight/ps-design-system-normalize
 \`\`\`
 
 Include this vanilla CSS in your application in a method appropriate for your project. For usage options, follow the [Core Usage docs](/core/usage) patterns.
+
+
+## JavaScript Environment Requirements
+
+Many components in the the Design System depend on features in more modern versions of ecmascript(es6 and es7). Older browsers and devices that we support do not provide these natively (e.g. IE 11) so you'll need to include a global polyfill in your bundled application, such as \`core-js\` or \`babel-polyfill\`.
+
+To explore features by version you can visit the [ECMAScript Compatibility Table](https://kangax.github.io/compat-table/es6/).
 
 ## Use Core
 
@@ -46,7 +52,7 @@ If you write your CSS in JavaScript, no additional configuration is required.  O
 Install any required plugins you don't have yet for PostCSS:
 
 \`\`\`bash
-npm install postcss-cssnext postcss-import
+npm install postcss-preset-env postcss-import
 \`\`\`
 
 Adjust your \`postcss.config.js\` to include the required plugins:
@@ -55,7 +61,7 @@ Adjust your \`postcss.config.js\` to include the required plugins:
 module.exports = {
   plugins: {
     'postcss-import': {},
-    'postcss-cssnext': { browsers: ['Last 2 versions', 'IE >= 10'] }
+    'postcss-preset-env': { browsers: ['Last 2 versions', 'IE >= 11'] }
   }
 }
 \`\`\`
@@ -72,10 +78,16 @@ For usage details, see the [Core Usage docs](/core/usage).
 
 ## Use Components
 
-Most components use [glamorous](https://github.com/paypal/glamorous), which has a peerDependency on [glamor](https://github.com/threepointone/glamor).  It needs to be installed exactly once per application that uses these components:
+[glamor](https://github.com/threepointone/glamor) needs to be installed exactly once per application that uses these components:
 
 \`\`\`bash
 npm install glamor
+\`\`\`
+
+All components support theming and have a peer dependency on the Theme package. Install with:
+
+\`\`\`bash
+npm install @pluralsight/ps-design-system-theme
 \`\`\`
 
 Each component is installed separately.  The JavaScript is prebuilt Node modules.  Assets are inlined.  Find and use what you need.  For example:
@@ -90,4 +102,4 @@ For full, working project examples, see [github](https://github.com/pluralsight/
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

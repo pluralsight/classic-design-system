@@ -3,6 +3,333 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.18...@pluralsight/ps-design-system-tooltip@5.0.19) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.17...@pluralsight/ps-design-system-tooltip@5.0.18) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.16...@pluralsight/ps-design-system-tooltip@5.0.17) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.14...@pluralsight/ps-design-system-tooltip@5.0.16) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.12...@pluralsight/ps-design-system-tooltip@5.0.14) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.10...@pluralsight/ps-design-system-tooltip@5.0.12) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.9...@pluralsight/ps-design-system-tooltip@5.0.10) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.8...@pluralsight/ps-design-system-tooltip@5.0.9) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.7...@pluralsight/ps-design-system-tooltip@5.0.8) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.6...@pluralsight/ps-design-system-tooltip@5.0.7) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.4...@pluralsight/ps-design-system-tooltip@5.0.5) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.3...@pluralsight/ps-design-system-tooltip@5.0.4) (2019-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.2...@pluralsight/ps-design-system-tooltip@5.0.3) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.1...@pluralsight/ps-design-system-tooltip@5.0.2) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.0...@pluralsight/ps-design-system-tooltip@5.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.9...@pluralsight/ps-design-system-tooltip@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **tooltip:** esm export refactor ([d9f65c6](https://github.com/pluralsight/design-system/commit/d9f65c6))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **util:** import patterns
+* **core:** import patterns
+* **tooltip:** new import pattern
+
+
+
+
+
+## [4.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.8...@pluralsight/ps-design-system-tooltip@4.0.9) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.7...@pluralsight/ps-design-system-tooltip@4.0.8) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.6...@pluralsight/ps-design-system-tooltip@4.0.7) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.5...@pluralsight/ps-design-system-tooltip@4.0.6) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.4...@pluralsight/ps-design-system-tooltip@4.0.5) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.3...@pluralsight/ps-design-system-tooltip@4.0.4) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.2...@pluralsight/ps-design-system-tooltip@4.0.3) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.1...@pluralsight/ps-design-system-tooltip@4.0.2) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@4.0.0...@pluralsight/ps-design-system-tooltip@4.0.1) (2019-05-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@3.0.3...@pluralsight/ps-design-system-tooltip@4.0.0) (2019-05-20)
+
+
+### Features
+
+* **tooltip:** add React.forwardRef ([292928d](https://github.com/pluralsight/design-system/commit/292928d))
+
+
+### BREAKING CHANGES
+
+* **tooltip:** support React.forwardRef
+
+
+
+
+
+## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@3.0.2...@pluralsight/ps-design-system-tooltip@3.0.3) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@3.0.1...@pluralsight/ps-design-system-tooltip@3.0.2) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@3.0.0...@pluralsight/ps-design-system-tooltip@3.0.1) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@2.0.1...@pluralsight/ps-design-system-tooltip@3.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@2.0.0...@pluralsight/ps-design-system-tooltip@2.0.1) (2019-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.22...@pluralsight/ps-design-system-tooltip@2.0.0) (2019-01-08)
+
+
+### Bug Fixes
+
+* **tooltip:** snapshot update ([c8812ed](https://github.com/pluralsight/design-system/commit/c8812ed))
+
+
+### Code Refactoring
+
+* **tooltip:** support light theme and fix tail shadow bleed ([8b4991f](https://github.com/pluralsight/design-system/commit/8b4991f)), closes [#396](https://github.com/pluralsight/design-system/issues/396) [#397](https://github.com/pluralsight/design-system/issues/397)
+
+
+### BREAKING CHANGES
+
+* **tooltip:** put tail styles in __tail css element selector
+
+
+
+
+
+## [1.3.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.20...@pluralsight/ps-design-system-tooltip@1.3.22) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [1.3.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.20...@pluralsight/ps-design-system-tooltip@1.3.21) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [1.3.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.19...@pluralsight/ps-design-system-tooltip@1.3.20) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
 ## [1.3.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@1.3.18...@pluralsight/ps-design-system-tooltip@1.3.19) (2018-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip

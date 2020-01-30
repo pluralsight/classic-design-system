@@ -1,24 +1,20 @@
-import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
+import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Button from '@pluralsight/ps-design-system-button'
 
 import {
   Chrome,
   Content,
-  Heading,
   Intro,
   Link,
+  Guideline,
   P,
   PageHeading,
-  PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const Divider = _ => (
   <div className="divider">
@@ -42,6 +38,9 @@ const ExampleHeader = props => (
     `}</style>
   </header>
 )
+ExampleHeader.propTypes = {
+  children: PropTypes.node
+}
 
 const PrincipleHeader = props => (
   <header className="header">
@@ -66,6 +65,9 @@ const PrincipleHeader = props => (
     `}</style>
   </header>
 )
+PrincipleHeader.propTypes = {
+  children: PropTypes.node
+}
 
 const QuoteBox = props => (
   <div
@@ -109,8 +111,11 @@ const QuoteBox = props => (
     `}</style>
   </div>
 )
+QuoteBox.propTypes = {
+  children: PropTypes.node
+}
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Voice & tone">
       <PageHeading>Voice & tone</PageHeading>
@@ -172,8 +177,9 @@ export default withServerProps(_ => (
           href="https://en.wikipedia.org/wiki/Narration#Second-person"
         >
           second person
-        </Link>, meaning address the audience as “you,” “your,” etc. We talk to
-        our audience directly, addressing them as “you” not as “one,” “persons,”
+        </Link>
+        , meaning address the audience as “you,” “your,” etc. We talk to our
+        audience directly, addressing them as “you” not as “one,” “persons,”
         etc. (We want to avoid phrases like this: “To take a skill assessment,
         one needs to select…”) This language feels formal and unnatural.
       </P>
@@ -188,7 +194,8 @@ export default withServerProps(_ => (
           target="_blank"
         >
           challenge writing styleguide
-        </Link>.
+        </Link>
+        .
       </P>
 
       <Divider />
@@ -223,7 +230,7 @@ export default withServerProps(_ => (
       </EqualColumnLayout>
       <P>
         <ExampleHeader>Exclamation points</ExampleHeader>
-        Avoid over-using excalmation points, unless offering congratulations on
+        Avoid over-using exclamation points, unless offering congratulations on
         having completed a complex flow. Exclamation points aren’t a substitute
         for creating excitement.
       </P>
@@ -253,6 +260,92 @@ export default withServerProps(_ => (
           </div>
         </QuoteBox>
       </EqualColumnLayout>
+
+      <Divider />
+
+      <SectionHeading>Error messages</SectionHeading>
+      <P>
+        Do all you can to prevent errors, but when they occur, use the
+        opportunity to help users understand what happened and how to get
+        through it. Follow these 3 guidelines when writing error messages:
+      </P>
+
+      <P
+        style={{
+          marginTop: core.layout.spacingXLarge
+        }}
+      >
+        <ExampleHeader>1. Explain what happened and why</ExampleHeader>
+        Be clear about what’s going on. Give the right amount of detail, but
+        don’t get too technical. Write in a way that anyone could easily
+        understand without using jargon.
+      </P>
+
+      <Guideline
+        do={
+          <div style={{ textAlign: 'center' }}>
+            <strong>Your credit card has expired</strong> <br />
+            Update your payment method to restore your subscription.
+          </div>
+        }
+        dont={
+          <div style={{ textAlign: 'center' }}>
+            <strong>Billing error</strong>
+          </div>
+        }
+      />
+
+      <P
+        style={{
+          marginTop: core.layout.spacingXLarge
+        }}
+      >
+        <ExampleHeader>2. Suggest a next step</ExampleHeader>
+        After you explain what happened, tell the user what they can do to
+        resolve the issue. If possible include a button, a link, or another call
+        to action.
+      </P>
+
+      <Guideline
+        do={
+          <div style={{ textAlign: 'center' }}>
+            <strong>There was a problem loading the video</strong> <br />
+            <br />
+            <Button appearance={Button.appearances.primary}>Try again</Button>
+          </div>
+        }
+        dont={
+          <div style={{ textAlign: 'center' }}>
+            <strong>Error 7007</strong>
+            <br />
+            Unable to play video
+          </div>
+        }
+      />
+
+      <P
+        style={{
+          marginTop: core.layout.spacingXLarge
+        }}
+      >
+        <ExampleHeader>3. Match the tone to the context</ExampleHeader>
+        Avoid being robotic or silly. Remember, something went wrong, now's your
+        time to help them through it in a friendly way.
+      </P>
+
+      <Guideline
+        do={
+          <div style={{ textAlign: 'center' }}>
+            That password doesn’t match. Try again?
+          </div>
+        }
+        dont={
+          <div style={{ textAlign: 'center' }}>
+            Yo, big problemo! The password you provided doesn’t match. Wanna try
+            that again?
+          </div>
+        }
+      />
 
       <Divider />
 
@@ -325,4 +418,4 @@ export default withServerProps(_ => (
       </EqualColumnLayout>
     </Content>
   </Chrome>
-))
+)

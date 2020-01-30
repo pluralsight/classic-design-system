@@ -1,8 +1,8 @@
-import Button from '@pluralsight/ps-design-system-button/react'
-import core from '@pluralsight/ps-design-system-core'
+import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -12,9 +12,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const ContrastingExample = _ => (
   <div className="contrast">
@@ -54,7 +53,7 @@ const ContrastingExample = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Button">
       <PageHeading packageName="theme">Theme</PageHeading>
@@ -71,7 +70,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Theme from '@pluralsight/ps-design-system-theme/react'
+        import Theme from '@pluralsight/ps-design-system-theme'
       </Code>
 
       <PropTypes
@@ -105,7 +104,7 @@ export default withServerProps(_ => (
       <P>
         The product is mostly presented within a "dark" interface theme. This is
         the default, but the <Text.Code>Theme</Text.Code> component can change
-        that for a page or subset of themable components.
+        that for a page or subset of themeable components.
       </P>
       <P>
         Here's an example of the <Text.Code>Button</Text.Code> component in both
@@ -114,4 +113,4 @@ export default withServerProps(_ => (
       <ContrastingExample />
     </Content>
   </Chrome>
-))
+)

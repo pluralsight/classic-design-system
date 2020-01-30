@@ -1,8 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
+import * as core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 export default {
   '.psds-checkbox': {
@@ -23,16 +20,15 @@ export default {
     height: '16px',
     width: '16px',
     borderRadius: '2px',
-    border: `2px solid ${core.colors.gray02}`,
-    background: core.colors.gray05,
+    border: `2px solid ${core.colorsTextIcon.lowOnDark}`,
+    background: core.colorsBackgroundDark[1],
     color: core.colors.white
   },
   [`.psds-checkbox__square.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    borderColor: core.colors.gray04
-  },
-  '.psds-checkbox__square:focus': {
-    outline: 'none'
+    background: core.colorsBackgroundLight[3],
+    borderColor: core.colorsTextIcon.lowOnLight,
+
+    '&:focus': { outline: 'none' }
   },
   '.psds-checkbox__square:focus:before .psds-checkbox__square--error:before': {
     content: ' ',
@@ -44,11 +40,7 @@ export default {
     zIndex: '-1',
     borderRadius: '2px'
   },
-  [`.psds-checkbox__square.psds-theme--${
-    themeNames.light
-  }:focus:before .psds-checkbox__square--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
+  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:before .psds-checkbox__square--error.psds-theme--${themeNames.light}:before`]: {
     top: '-4px',
     left: '-4px',
     right: '-4px',
@@ -64,76 +56,52 @@ export default {
     zIndex: '-2',
     borderRadius: '4px'
   },
-  [`.psds-checkbox__square.psds-theme--${
-    themeNames.light
-  }:focus:after .psds-checkbox__square--error.psds-theme--${
-    themeNames.light
-  }:after`]: {
+  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:after .psds-checkbox__square--error.psds-theme--${themeNames.light}:after`]: {
     top: '-7px',
     left: '-7px',
     right: '-7px',
     bottom: '-7px'
   },
-  '.psds-checkbox__square:focus:before': {
-    background: core.colors.gray05
-  },
   '.psds-checkbox__square:focus:after': {
-    background: core.colors.blue
-  },
-  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:before`]: {
-    background: core.colors.bone
-  },
-  '.psds-checkbox__square--error:before': {
-    background: core.colors.gray05
-  },
-  [`.psds-checkbox__square--error.psds-theme--${themeNames.light}:before`]: {
-    background: core.colors.bone
+    background: core.colorsBlue.base
   },
   '.psds-checkbox__square--error:after': {
-    background: core.colors.red
+    background: core.colorsStatus.error
   },
-  '.psds-checkbox__square--checked': {
-    background: core.colors.blue,
+  '.psds-checkbox__square--active': {
+    background: core.colorsBlue.base,
     border: 'none'
   },
-  '.psds-checkbox__square--checked:focus:before, .psds-checkbox__square--checked--error:before': {
+  '.psds-checkbox__square--active:focus:before, .psds-checkbox__square--active--error:before': {
     top: '-1px',
     left: '-1px',
     right: '-1px',
     bottom: '-1px'
   },
-  [`.psds-checkbox__square--checked.psds-theme--${
-    themeNames.light
-  }:focus:before, .psds-checkbox__square--checked--error.psds-theme--${
-    themeNames.light
-  }:before`]: {
+  [`.psds-checkbox__square--active.psds-theme--${themeNames.light}:focus:before, .psds-checkbox__square--active--error.psds-theme--${themeNames.light}:before`]: {
     top: '-2px',
     left: '-2px',
     right: '-2px',
     bottom: '-2px'
   },
-  '.psds-checkbox__square--checked:focus:after, .psds-checkbox__square--checked--error:after': {
+  '.psds-checkbox__square--active:focus:after, .psds-checkbox__square--active--error:after': {
     top: '-4px',
     left: '-4px',
     right: '-4px',
     bottom: '-4px'
   },
-  [`.psds-checkbox__square--checked.psds-theme--${
-    themeNames.light
-  }:focus:after, .psds-checkbox__square--checked--error.psds-theme--${
-    themeNames.light
-  }:after`]: {
+  [`.psds-checkbox__square--active.psds-theme--${themeNames.light}:focus:after, .psds-checkbox__square--active--error.psds-theme--${themeNames.light}:after`]: {
     top: '-5px',
     left: '-5px',
     right: '-5px',
     bottom: '-5px'
   },
 
-  // __checkmark
-  '.psds-checkbox__checkmark': {
+  // __icon
+  '.psds-checkbox__icon': {
     height: '100%',
     width: '100%',
-    fill: core.colors.white
+    fill: core.colorsTextIcon.highOnDark
   },
 
   // __input
@@ -144,12 +112,12 @@ export default {
   // __label
   '.psds-checkbox__label': {
     marginLeft: core.layout.spacingSmall,
-    color: core.colors.bone,
+    color: core.colorsTextIcon.highOnDark,
     fontSize: core.type.fontSizeSmall,
     lineHeight: core.type.lineHeightStandard,
     fontWeight: core.type.fontWeightMedium
   },
   [`.psds-checkbox__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray04
+    color: core.colorsTextIcon.highOnLight
   }
 }

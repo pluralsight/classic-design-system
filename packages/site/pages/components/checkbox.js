@@ -1,22 +1,18 @@
-import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import * as core from '@pluralsight/ps-design-system-core'
+import React from 'react'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class InAppExample extends React.Component {
   constructor() {
@@ -24,6 +20,7 @@ class InAppExample extends React.Component {
     this.state = { values: {} }
     this.handleCheck = this.handleCheck.bind(this)
   }
+
   handleCheck(evt, checked, value, name) {
     if (checked) {
       this.setState({ values: { ...this.state.values, [name]: value } })
@@ -32,6 +29,7 @@ class InAppExample extends React.Component {
       this.setState({ values })
     }
   }
+
   render() {
     const features = Object.keys(this.state.values)
     const checked = name => features.indexOf(name) > -1
@@ -116,7 +114,7 @@ class InAppExample extends React.Component {
         <div>
           Checked:{' '}
           {features
-            .map(name => \`\$\{name\}: \$\{this.state.values[name]\}\`)
+            .map(name => name + ': ' + this.state.values[name]
             .join(', ')}
         </div>
       </div>
@@ -151,12 +149,10 @@ class InAppExample extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Checkbox">
-      <PageHeading beta packageName="checkbox">
-        Checkbox
-      </PageHeading>
+      <PageHeading packageName="checkbox">Checkbox</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -165,7 +161,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
+        import Checkbox from '@pluralsight/ps-design-system-checkbox'
       </Code>
 
       <PropTypes
@@ -192,11 +188,11 @@ export default withServerProps(_ => (
             'error state flag'
           ]),
           PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
+            'indeterminate',
+            'boolean',
             null,
-            null,
-            'input field react ref callback'
+            <code>false</code>,
+            'marks as indeterminate'
           ]),
           PropTypes.row(['name', 'string', null, null, 'form data identifier']),
           PropTypes.row(['label', 'node', true, null, 'display name']),
@@ -226,7 +222,7 @@ export default withServerProps(_ => (
       <SectionHeading>Checked</SectionHeading>
       <P>
         Passing the <Text.Code>checked</Text.Code> indicates that the checkbox
-        is active.
+        is selected.
       </P>
       <Example.React
         themeToggle
@@ -238,6 +234,21 @@ export default withServerProps(_ => (
         ]}
       />
 
+      <SectionHeading>Indeterminate</SectionHeading>
+      <P>
+        Passing the <Text.Code>indeterminate</Text.Code> flag indicates that the
+        checkbox selection should be obscured as if the control was in a third,
+        indeterminate, state.
+      </P>
+      <Example.React
+        themeToggle
+        orient="vertical"
+        includes={{ Checkbox }}
+        codes={[
+          `<Checkbox indeterminate label="I'm indeterminate" />`,
+          `<Checkbox checked indeterminate label="I'm checked but still indeterminate" />`
+        ]}
+      />
       <SectionHeading>Disabled</SectionHeading>
       <P>Disabled checkboxes are unmodifiable and diminished visually.</P>
       <Example.React
@@ -265,4 +276,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

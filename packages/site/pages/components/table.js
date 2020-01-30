@@ -1,11 +1,11 @@
-import Avatar from '@pluralsight/ps-design-system-avatar/react'
-import core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import * as core from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
 import PT from 'prop-types'
 import React from 'react'
-import Table from '@pluralsight/ps-design-system-table/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Table from '@pluralsight/ps-design-system-table'
+import Theme from '@pluralsight/ps-design-system-theme'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -17,9 +17,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const PinkBox = props => (
   <div className="pink-box">
@@ -74,9 +73,11 @@ class InAppExample extends React.Component {
     this.handleSortClick = this.handleSortClick.bind(this)
     this.sortRows = this.sortRows.bind(this)
   }
+
   handleSortClick(sortKey, sortDirection) {
     this.setState({ sortKey, sortDirection })
   }
+
   sortRows(row1, row2) {
     const { state } = this
     const [rowA, rowB] =
@@ -85,6 +86,7 @@ class InAppExample extends React.Component {
       ? rowA[state.sortKey].localeCompare(rowB[state.sortKey])
       : rowA[state.sortKey] - rowB[state.sortKey]
   }
+
   render() {
     const { handleSortClick, props, sortRows, state } = this
     return (
@@ -139,11 +141,14 @@ class InAppExample extends React.Component {
     )
   }
 }
+InAppExample.propTypes = {
+  themeName: PropTypes.string
+}
 InAppExample.defaultProps = {
   themeName: Theme.names.dark
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Table">
       <PageHeading packageName="table">Table</PageHeading>
@@ -160,7 +165,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-design-system-table/react'
+        import Button from '@pluralsight/ps-design-system-table'
       </Code>
 
       <PropTypes
@@ -172,6 +177,13 @@ export default withServerProps(_ => (
               null,
               null,
               'content of table, per row'
+            ]),
+            PropTypes.row([
+              'inDrawer',
+              'boolean',
+              null,
+              <code>false</code>,
+              'used to add additional styles when table is nested in a Drawer'
             ])
           ],
           'Table.Cell': [
@@ -421,6 +433,56 @@ export default withServerProps(_ => (
 </Table>`
         ]}
       />
+
+      <P>
+        You can also nest an entire <Text.Code>Table</Text.Code> inside a{' '}
+        <Link href="/components/drawer">
+          <Text.Code>Drawer</Text.Code>
+        </Link>
+        . Mark the nested <Text.Code>Table</Text.Code> with the{' '}
+        <Text.Code>isDrawer</Text.Code> prop to get the correct styling.
+      </P>
+
+      <Example.React
+        themeToggle
+        includes={{ Drawer, Table }}
+        orient="vertical"
+        codes={[
+          `<Table>
+  <Table.Row>
+    <Table.ColumnHeader>Column</Table.ColumnHeader>
+    <Table.ColumnHeader>Column</Table.ColumnHeader>
+    <Table.ColumnHeader>Column</Table.ColumnHeader>
+  </Table.Row>
+
+  <Drawer startOpen base={
+    <Table.Row>
+      <Table.Cell>Cell</Table.Cell>
+      <Table.Cell>Cell</Table.Cell>
+      <Table.Cell>Cell</Table.Cell>
+    </Table.Row>
+  }>
+    <Table inDrawer>
+      <Table.Row>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+        <Table.Cell>Nested Cell</Table.Cell>
+      </Table.Row>
+    </Table>
+  </Drawer>
+</Table>`
+        ]}
+      />
     </Content>
   </Chrome>
-))
+)

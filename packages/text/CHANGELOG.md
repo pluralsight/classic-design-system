@@ -3,6 +3,382 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.11...@pluralsight/ps-design-system-text@15.0.12) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.10...@pluralsight/ps-design-system-text@15.0.11) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.9...@pluralsight/ps-design-system-text@15.0.10) (2020-01-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.8...@pluralsight/ps-design-system-text@15.0.9) (2020-01-23)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.6...@pluralsight/ps-design-system-text@15.0.8) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.4...@pluralsight/ps-design-system-text@15.0.6) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.2...@pluralsight/ps-design-system-text@15.0.4) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.1...@pluralsight/ps-design-system-text@15.0.2) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@15.0.0...@pluralsight/ps-design-system-text@15.0.1) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.1.0...@pluralsight/ps-design-system-text@15.0.0) (2020-01-16)
+
+
+### Code Refactoring
+
+* **text:** move feature-flags to peerDependencies ([61e2ac0](https://github.com/pluralsight/design-system/commit/61e2ac060029a2cbdcbcaccfff7114d07d23c5c7))
+
+
+### BREAKING CHANGES
+
+* **text:** move feature-flags to peerDependencies
+
+
+
+
+
+# [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.9...@pluralsight/ps-design-system-text@14.1.0) (2020-01-15)
+
+
+### Features
+
+* **text:** confirmed colors with Brian ([427f433](https://github.com/pluralsight/design-system/commit/427f4334117438209d2836554c6d30671f2f3902))
+* **text:** new 2020 color palette applied partially ([f660ca9](https://github.com/pluralsight/design-system/commit/f660ca929179ad9def44c287c50aed8376dd24a9))
+
+
+
+
+
+## [14.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.8...@pluralsight/ps-design-system-text@14.0.9) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [14.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.6...@pluralsight/ps-design-system-text@14.0.7) (2020-01-08)
+
+
+### Bug Fixes
+
+* **text:** snapshot whitespace ([a113c70](https://github.com/pluralsight/design-system/commit/a113c70e3db15435edead887102b7d66af691785))
+
+
+
+
+
+## [14.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.5...@pluralsight/ps-design-system-text@14.0.6) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [14.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.4...@pluralsight/ps-design-system-text@14.0.5) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+
+
+
+## [14.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.3...@pluralsight/ps-design-system-text@14.0.4) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.2...@pluralsight/ps-design-system-text@14.0.3) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [14.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.1...@pluralsight/ps-design-system-text@14.0.2) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@14.0.0...@pluralsight/ps-design-system-text@14.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* cjs paths ([22702b3](https://github.com/pluralsight/design-system/commit/22702b3a7e20e417e7f40bf0d13cfedfb6c3b2ee))
+
+
+
+
+
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@13.0.3...@pluralsight/ps-design-system-text@14.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **text:** esm export refactor ([a1a6345](https://github.com/pluralsight/design-system/commit/a1a6345))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **text:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [13.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@13.0.2...@pluralsight/ps-design-system-text@13.0.3) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [13.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@13.0.1...@pluralsight/ps-design-system-text@13.0.2) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@13.0.0...@pluralsight/ps-design-system-text@13.0.1) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@12.0.4...@pluralsight/ps-design-system-text@13.0.0) (2019-08-09)
+
+
+### Build System
+
+* **text:** move theme package to peerDeps ([759763a](https://github.com/pluralsight/design-system/commit/759763a))
+
+
+### BREAKING CHANGES
+
+* **text:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [12.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@12.0.3...@pluralsight/ps-design-system-text@12.0.4) (2019-08-02)
+
+
+### Bug Fixes
+
+* **text:** fix list export and build ([d4e4043](https://github.com/pluralsight/design-system/commit/d4e4043))
+
+
+
+
+
+## [12.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@12.0.2...@pluralsight/ps-design-system-text@12.0.3) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [12.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@12.0.1...@pluralsight/ps-design-system-text@12.0.2) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@12.0.0...@pluralsight/ps-design-system-text@12.0.1) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@11.0.3...@pluralsight/ps-design-system-text@12.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **text:** use new theme context ([a9e33a7](https://github.com/pluralsight/design-system/commit/a9e33a7))
+
+
+### BREAKING CHANGES
+
+* **text:** upgrade React peerDeps to 16.8.6
+
+
+
+
+
+## [11.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@11.0.2...@pluralsight/ps-design-system-text@11.0.3) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@11.0.1...@pluralsight/ps-design-system-text@11.0.2) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@11.0.0...@pluralsight/ps-design-system-text@11.0.1) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.26...@pluralsight/ps-design-system-text@11.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [10.7.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.25...@pluralsight/ps-design-system-text@10.7.26) (2019-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [10.7.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.24...@pluralsight/ps-design-system-text@10.7.25) (2019-01-08)
+
+
+### Bug Fixes
+
+* **text:** revert to prev export pattern ([8af41ca](https://github.com/pluralsight/design-system/commit/8af41ca))
+
+
+
+
+
+## [10.7.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.22...@pluralsight/ps-design-system-text@10.7.24) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [10.7.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.22...@pluralsight/ps-design-system-text@10.7.23) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [10.7.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.21...@pluralsight/ps-design-system-text@10.7.22) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
 ## [10.7.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@10.7.20...@pluralsight/ps-design-system-text@10.7.21) (2018-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-text

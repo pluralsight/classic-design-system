@@ -1,50 +1,43 @@
-import core from '@pluralsight/ps-design-system-core'
-import glamorous from 'glamorous'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import icons from '../js/icons'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import css from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
-const IconContainer = glamorous.div(
-  css['.psds-icon'],
-  ({ size }) => css[`.psds-icon--size-${size}`],
-  ({ color }) => ({
-    '> svg': color
-      ? css[`.psds-icon--color-${color} > svg`]
-      : css['.psds-icon > svg']
-  }),
-  ({ css: propsCss }) => propsCss
-)
+const style = {
+  icon: ({ color, size }) =>
+    css({
+      ...stylesheet['.psds-icon'],
+      ...stylesheet[`.psds-icon--size-${size}`],
 
-const rmNonHtmlProps = props => {
-  const { id, ...rest } = props
-  return rest
+      '> svg': color
+        ? stylesheet[`.psds-icon--color-${color} > svg`]
+        : stylesheet['.psds-icon > svg']
+    })
 }
 
-const Icon = props => {
-  return (
-    <IconContainer {...rmNonHtmlProps(props)}>
-      {props.children || icons[props.id](React)}
-    </IconContainer>
-  )
-}
-
+const Icon = React.forwardRef(({ children, ...props }, ref) => (
+  <div {...style.icon(props)} {...filterReactProps(props)} ref={ref}>
+    {children}
+  </div>
+))
+Icon.displayName = 'Icon'
 Icon.propTypes = {
-  color: PropTypes.oneOf(Object.keys(vars.colors)),
-  id: PropTypes.oneOf(Object.keys(vars.ids)),
-  size: PropTypes.oneOf(Object.keys(vars.sizes))
+  children: PropTypes.node,
+  color: PropTypes.oneOf(Object.values(vars.colors)),
+  size: PropTypes.oneOf(Object.values(vars.sizes))
 }
+
 Icon.defaultProps = {
   size: vars.sizes.medium
 }
+
 Icon.colors = vars.colors
-Icon.ids = vars.ids
 Icon.sizes = vars.sizes
 
-export const ids = vars.ids
 export const sizes = vars.sizes
 export const colors = vars.colors
 

@@ -1,6 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const option = {
   display: 'inline-block',
@@ -26,9 +27,13 @@ export default {
     margin: 0,
     padding: '2px 3px',
     height: vars.style.outerHeight,
-    background: core.colors.gray03,
+    background: core.colorsBackgroundUtility[25],
+    border: `1px solid ${core.colorsBorder.lowOnDark}`,
     borderRadius: `calc(${vars.style.outerHeight} / 2)`,
     overflow: 'hidden'
+  },
+  [`.psds-viewtoggle.psds-theme--${themeNames.light}`]: {
+    borderColor: core.colorsBorder.lowOnLight
   },
 
   // __option
@@ -36,19 +41,24 @@ export default {
     ...option,
     position: 'relative',
     background: 'none',
-    color: core.colors.bone
+    color: core.colorsTextIcon.highOnDark
+  },
+  [`.psds-viewtoggle__option.psds-theme--${themeNames.light}`]: {
+    color: core.colorsTextIcon.highOnLight
   },
   '.psds-viewtoggle__option--active': {
-    color: core.colors.gray05
+    color: core.colorsTextIcon.highOnLight
   },
 
   // __option-bg
   '.psds-viewtoggle__option-bg': {
     ...option,
     position: 'absolute',
-    top: '2px',
-    background: core.colors.white,
-    boxShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)'
+    top: '1px',
+    background: core.colors.white
+  },
+  [`.psds-viewtoggle__option-bg.psds-theme--${themeNames.light}`]: {
+    border: `1px solid ${core.colorsBorder.lowOnLight}`
   },
 
   // __option-bg__spacer

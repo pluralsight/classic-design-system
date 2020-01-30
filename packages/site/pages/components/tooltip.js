@@ -1,9 +1,11 @@
-import Button from '@pluralsight/ps-design-system-button/react'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import { Below } from '@pluralsight/ps-design-system-position'
+import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
+import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
+import ReactPropTypes from 'prop-types'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+import Theme from '@pluralsight/ps-design-system-theme'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
 import {
   Chrome,
@@ -11,297 +13,162 @@ import {
   Content,
   Example,
   Guideline,
-  Heading,
   Intro,
   Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-const styleUnder = (target, tooltip) => {
-  if (!target || !tooltip) return
-
-  const targetRect = target.getBoundingClientRect()
-  const tooltipRect = tooltip.getBoundingClientRect()
-
-  const scrollLeft = window.pageXOffset
-  const scrollTop = window.pageYOffset
-
-  const bufferHeight = 10
-  const targetCenterLeft = targetRect.left + targetRect.width / 2
-  const tooltipLeft = scrollLeft + targetCenterLeft - tooltipRect.width / 2
-  const tooltipTop =
-    scrollTop + targetRect.top + targetRect.height + bufferHeight
-
-  return {
-    position: 'absolute',
-    top: tooltipTop,
-    left: tooltipLeft
-  }
+function TooltipGuideline(props) {
+  return (
+    <Theme name={Theme.names.light}>
+      <Button appearance={Button.appearances.flat} icon={<BookmarkIcon />} />
+      <div className="tooltipWrapper">
+        <Tooltip
+          appearance={props.appearance}
+          onClose={props.onClose}
+          tailPosition={Tooltip.tailPositions.topLeft}
+        >
+          {props.children}
+        </Tooltip>
+      </div>
+      <style jsx>{`
+        .tooltipWrapper {
+          position: relative;
+          top: 12px;
+          left: -2px;
+        }
+      `}</style>
+    </Theme>
+  )
+}
+TooltipGuideline.propTypes = {
+  appearance: ReactPropTypes.oneOf(
+    Object.keys(Tooltip.appearances).map(a => Tooltip.appearances[a])
+  ),
+  children: ReactPropTypes.string,
+  onClose: ReactPropTypes.func
 }
 
-class TooltipGuideline extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { el: null }
-  }
-  componentDidMount() {
-    this.setState({ el: this.el })
-  }
-  render() {
-    return (
-      <Theme name={Theme.names.light}>
-        <Button
-          appearance={Button.appearances.flat}
-          innerRef={el => (this.el = el)}
-          icon={<Icon id={Icon.ids.bookmark} />}
-        />
-        <div className="tooltipWrapper">
-          <Tooltip
-            appearance={this.props.appearance}
-            onClose={this.props.onClose}
-            tailPosition={Tooltip.tailPositions.topLeft}
-          >
-            {this.props.children}
-          </Tooltip>
-        </div>
-        <style jsx>{`
-          .tooltipWrapper {
-            position: relative;
-            top: 12px;
-            left: -2px;
-          }
-        `}</style>
-      </Theme>
-    )
-  }
-}
-
-class TooltipPositioner extends React.Component {
-  constructor(props) {
-    super(props)
-    this.el = null
-    this.state = { rect: { top: 0, left: 0 } }
-  }
-  componentDidMount() {
-    this.setState({ rect: this.el.getBoundingClientRect() })
-  }
-  render() {
-    return React.cloneElement(this.props.children, {
-      innerRef: el => (this.el = el),
-      style: this.props.styleBy(this.el)
-    })
-  }
-}
-
-class InAppExample extends React.Component {
-  constructor(props) {
-    super(props)
-    this.examples = []
-    this.tips = []
-    this.state = {
-      examples: [],
-      tips: [],
-      isHovered: false,
-      isClicked: false
-    }
-    this.handleMouseOver = this.handleMouseOver.bind(this)
-    this.handleMouseOut = this.handleMouseOut.bind(this)
-    this.handleClick = this.handleClick.bind(this)
-  }
-  componentDidMount() {
-    this.setState({
-      examples: this.examples.map(el => el),
-      tips: this.tips.map(el => el)
-    })
-  }
-  handleClick() {
-    this.setState({ isClicked: !this.state.isClicked })
-  }
-  handleMouseOver() {
-    this.setState({ isHovered: true })
-  }
-  handleMouseOut() {
-    this.setState({ isHovered: false })
-  }
-  render() {
-    return (
-      <div>
-        <div className="examples">
-          <Theme name={Theme.names.dark}>
-            <div className="example">
+function InAppExample() {
+  const [isHovered, setHovered] = React.useState(false)
+  const [isClicked, setClicked] = React.useState(false)
+  return (
+    <div>
+      <div className="examples">
+        <Theme name={Theme.names.dark}>
+          <div className="example">
+            <Below
+              show={
+                <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
+                  Tooltip
+                </Tooltip>
+              }
+            >
               <Button
-                appearance={Button.appearances.flat}
+                appearance={Button.appearances.secondary}
                 className="text"
-                innerRef={el => (this.examples[0] = el)}
               >
                 Look at me
               </Button>
-              <TooltipPositioner
-                styleBy={styleUnder.bind(null, this.examples[0])}
-              >
-                <Tooltip
-                  innerRef={el => (this.tips[0] = el)}
-                  tailPosition={Tooltip.tailPositions.topCenter}
-                >
+            </Below>
+          </div>
+
+          <div className="example">
+            <Below
+              show={
+                <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
                   Tooltip
                 </Tooltip>
-              </TooltipPositioner>
-            </div>
-
-            <div className="example">
+              }
+              when={isHovered}
+            >
               <Button
-                appearance={Button.appearances.flat}
+                appearance={Button.appearances.secondary}
                 className="text"
-                innerRef={el => (this.examples[1] = el)}
-                onMouseOver={this.handleMouseOver}
-                onMouseOut={this.handleMouseOut}
+                onMouseEnter={_ => setHovered(true)}
+                onMouseOut={_ => setHovered(false)}
               >
                 Hover me
               </Button>
-            </div>
-            {this.state.isHovered && (
-              <TooltipPositioner
-                styleBy={styleUnder.bind(null, this.examples[1])}
-              >
-                <Tooltip
-                  innerRef={el => (this.tips[1] = el)}
-                  tailPosition={Tooltip.tailPositions.topCenter}
-                >
-                  Is hovered
-                </Tooltip>
-              </TooltipPositioner>
-            )}
+            </Below>
+          </div>
 
-            <div className="example">
+          <div className="example">
+            <Below
+              show={
+                <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
+                  Tooltip
+                </Tooltip>
+              }
+              when={isClicked}
+            >
               <Button
-                appearance={Button.appearances.flat}
+                appearance={Button.appearances.secondary}
                 className="text"
-                innerRef={el => (this.examples[2] = el)}
-                onClick={this.handleClick}
+                onClick={_ => setClicked(!isClicked)}
               >
                 Click me
               </Button>
-            </div>
-            {this.state.isClicked && (
-              <TooltipPositioner
-                styleBy={styleUnder.bind(null, this.examples[2])}
-              >
-                <Tooltip
-                  innerRef={el => (this.tips[2] = el)}
-                  tailPosition={Tooltip.tailPositions.topCenter}
-                >
-                  Was clicked
-                </Tooltip>
-              </TooltipPositioner>
-            )}
-          </Theme>
-        </div>
-        <Code
-          collapsible
-          lang="javascript"
-        >{`const styleUnder = (target, tooltip) => {
-  if (!target || !tooltip) return
-
-  const targetRect = target.getBoundingClientRect()
-  const tooltipRect = tooltip.getBoundingClientRect()
-
-  const scrollLeft = window.pageXOffset
-  const scrollTop = window.pageYOffset
-
-  const bufferHeight = 10
-  const targetCenterLeft = targetRect.left + targetRect.width / 2
-  const tooltipLeft = scrollLeft + targetCenterLeft - tooltipRect.width / 2
-  const tooltipTop =
-    scrollTop + targetRect.top + targetRect.height + bufferHeight
-
-  return {
-    position: 'absolute',
-    top: tooltipTop,
-    left: tooltipLeft
-  }
-}
-
-class TooltipPositioner extends React.Component {
-  constructor(props) {
-    super(props)
-    this.el = null
-    this.state = { rect: { top: 0, left: 0 } }
-  }
-  componentDidMount() {
-    this.setState({ rect: this.el.getBoundingClientRect() })
-  }
-  render() {
-    return React.cloneElement(this.props.children, {
-      innerRef: el => (this.el = el),
-      style: this.props.styleBy(this.el)
-    })
-  }
-}
-
-class HoverExampleOnly extends React.Component {
-  constructor(props) {
-    super(props)
-    this.triggerEl = null
-    this.tooltipEl = null
-    this.state = {
-      isHovered: false
-    }
-  }
-  render() {
-    return (
-      <div>
-        <Button
-          appearance={Button.appearances.flat}
-          innerRef={el => (this.triggerEl = el)}
-          onMouseOver={_ => this.setState({ isHovered: true })}
-          onMouseOut={_ => this.setState({ isHovered: false })}
-        >
-          Hover me
-        </Button>
-        {this.state.isHovered && (
-          <TooltipPositioner styleBy={styleUnder.bind(null, this.triggerEl)}>
-            <Tooltip
-              innerRef={el => (this.tooltipEl = el)}
-              tailPosition={Tooltip.tailPositions.topCenter}
-            >
-              Is hovered
-            </Tooltip>
-          </TooltipPositioner>
-        )}
+            </Below>
+          </div>
+        </Theme>
       </div>
-    )
-  }
+      <Code
+        collapsible
+        lang="javascript"
+      >{`import Button from '@pluralsight/ps-design-system-button'
+import { Below } from '@pluralsight/ps-design-system-position'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+
+function HoverExampleOnly() {
+  const [isHovered, setHovered] = React.useState(false)
+  return (
+    <Below
+      show={
+        <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
+          Tooltip
+        </Tooltip>
+      }
+      when={isHovered}
+    >
+      <Button
+        appearance={Button.appearances.secondary}
+        onMouseEnter={_ => setHovered(true)}
+        onMouseOut={_ => setHovered(false)}
+      >
+        Hover me
+      </Button>
+    </Below>
+  )
 }`}</Code>
 
-        <style jsx>{`
-          .examples {
-            display: flex;
-            padding: ${core.layout.spacingLarge};
-            padding-bottom: 88px;
-            color: ${core.colors.gray02};
-            font-weight: ${core.type.fontWeightMedium};
-            background: ${core.colors.gray06};
-          }
-          .example {
-            margin-right: calc(${core.layout.spacingLarge} * 2);
-          }
-          .text {
-            display: inline-block;
-          }
-          .example:last-child {
-            margin-right: 0;
-          }
-        `}</style>
-      </div>
-    )
-  }
+      <style jsx>{`
+        .examples {
+          display: flex;
+          padding: ${core.layout.spacingLarge};
+          padding-bottom: 88px;
+          color: ${core.colors.gray02};
+          font-weight: ${core.type.fontWeightMedium};
+          background: ${core.colors.gray06};
+        }
+        .example {
+          margin-right: calc(${core.layout.spacingLarge} * 2);
+        }
+        .text {
+          display: inline-block;
+        }
+        .example:last-child {
+          margin-right: 0;
+        }
+      `}</style>
+    </div>
+  )
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Tooltip">
       <PageHeading packageName="tooltip">Tooltip</PageHeading>
@@ -309,7 +176,7 @@ export default withServerProps(_ => (
       <Intro>
         The purpose of a tooltip is to provide context and explain the function
         of a user interface element or feature. The content of a tooltip is
-        limited to styled text. If more cutomization is necessary, consider the{' '}
+        limited to styled text. If more customization is necessary, consider the{' '}
         <Link href="/components/dialog">Dialog</Link> component which builds on
         the patterns of the tooltip.
       </Intro>
@@ -321,7 +188,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Tooltip from '@pluralsight/ps-design-system-tooltip/react'
+        import Tooltip from '@pluralsight/ps-design-system-tooltip'
       </Code>
 
       <PropTypes
@@ -419,7 +286,7 @@ export default withServerProps(_ => (
         dont={<TooltipGuideline>Bookmark This Course</TooltipGuideline>}
       />
 
-      <P>Write your tooltips to be consice and scannable.</P>
+      <P>Write your tooltips to be concise and scannable.</P>
       <Guideline
         do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
         dont={
@@ -458,4 +325,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

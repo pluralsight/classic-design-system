@@ -1,31 +1,33 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 
-import css from '../css'
+import stylesheet from '../css/index.js'
 
-const style = ({ themeName }) =>
-  glamor.css({
-    ...css[`.psds-text__code`],
-    ...css[`.psds-text__code.psds-theme--${themeName}`]
-  })
+const style = ({ themeName, psds2020Colors }) => {
+  const flag = psds2020Colors ? '.psds-text--2020-colors' : ''
+  return compose(
+    css(stylesheet[`.psds-text__code`]),
+    css(stylesheet[`.psds-text__code.psds-theme--${themeName}${flag}`])
+  )
+}
+const Code = props => {
+  const themeName = useTheme()
+  const {
+    flags: { psds2020Colors }
+  } = useFeatureFlags()
 
-const Code = (props, context) =>
-  props.children ? (
-    <code
-      {...props}
-      {...style({ ...props, themeName: context.themeName || themeDefaultName })}
-    >
+  return props.children ? (
+    <code {...props} {...style({ ...props, themeName, psds2020Colors })}>
       {props.children}
     </code>
   ) : null
+}
 
-Code.contextTypes = {
-  themeName: PropTypes.string
+Code.propTypes = {
+  children: PropTypes.node
 }
 
 export default Code

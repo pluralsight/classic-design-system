@@ -1,7 +1,13 @@
-import core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
-
-export const BASE_CLASSNAME = '.psds-starrating'
+import {
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  colorsTextIcon,
+  colorsYellow
+} from '@pluralsight/ps-design-system-core'
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 
 const hideVisually = {
   border: 0,
@@ -43,45 +49,40 @@ const resetButton = {
 }
 
 export default {
-  [BASE_CLASSNAME]: {},
-
-  [`${BASE_CLASSNAME}__star`]: {
+  '.psds-starrating__star': {
     ...resetButton,
     lineHeight: 0
   },
 
-  [`${BASE_CLASSNAME}__star--theme-${themeNames.dark}`]: {
-    color: core.colors.gray04
+  [`.psds-starrating__star--theme-${themeDefaultName}`]: {
+    color: 'rgba(255, 255, 255, 0.15)'
   },
-  [`${BASE_CLASSNAME}__star--theme-${themeNames.light}`]: {
-    color: core.colors.gray01
-  },
-
-  [`${BASE_CLASSNAME}__star__half__secondary`]: {},
-  [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.dark}`]: {
-    color: core.colors.gray04,
-    fill: core.colors.gray04 // safari needs this
-  },
-  [`${BASE_CLASSNAME}__star__half__secondary--theme-${themeNames.light}`]: {
-    color: core.colors.gray01,
-    fill: core.colors.gray01 // safari needs this
+  [`.psds-starrating__star--theme-${themeNames.light}`]: {
+    color: 'rgba(0, 0, 0, 0.15)'
   },
 
-  [`${BASE_CLASSNAME}__star--active`]: {
-    color: core.colors.yellow
+  [`.psds-starrating__star__half__secondary--theme-${themeDefaultName}`]: {
+    color: colorsBackgroundDark[1],
+    fill: colorsBackgroundDark[1] // safari needs this
   },
-  [`${BASE_CLASSNAME}__star--bright`]: {
-    color: core.colors.gray02
+  [`.psds-starrating__star__half__secondary--theme-${themeNames.light}`]: {
+    color: colorsBackgroundLight[3],
+    fill: colorsBackgroundLight[3] // safari needs this
   },
-  [`${BASE_CLASSNAME}__star--interactive`]: {
+
+  '.psds-starrating__star--active': {
+    color: colorsYellow.base
+  },
+  [`.psds-starrating__star--bright.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-starrating__star--bright.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  '.psds-starrating__star--interactive': {
     cursor: 'pointer'
   },
 
-  [`${BASE_CLASSNAME}__screen-reader-input`]: {
-    ...hideVisually
-  },
-
-  [`${BASE_CLASSNAME}__screen-reader-text`]: {
-    ...hideVisually
-  }
+  '.psds-starrating__screen-reader-input': hideVisually,
+  '.psds-starrating__screen-reader-text': hideVisually
 }

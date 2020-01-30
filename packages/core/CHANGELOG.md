@@ -3,6 +3,176 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.0...@pluralsight/ps-design-system-core@5.5.1) (2020-01-30)
+
+
+### Bug Fixes
+
+* **core:** remove 2020 from color css var names ([1a79d1b](https://github.com/pluralsight/design-system/commit/1a79d1b477f765c2717826fa49bd99bea32d13cc))
+
+
+
+
+
+# [5.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.4.6...@pluralsight/ps-design-system-core@5.5.0) (2020-01-29)
+
+
+### Features
+
+* **core:** add white, black, and code colors ([bcfecd4](https://github.com/pluralsight/design-system/commit/bcfecd49de187740fd51df8a78e2d590ec139354))
+
+
+
+
+
+## [5.4.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.4.4...@pluralsight/ps-design-system-core@5.4.6) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [5.4.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.4.2...@pluralsight/ps-design-system-core@5.4.4) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [5.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.4.0...@pluralsight/ps-design-system-core@5.4.2) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+# [5.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.3.0...@pluralsight/ps-design-system-core@5.4.0) (2020-01-22)
+
+
+### Features
+
+* **core:** add status color vars/tokens ([8cbb314](https://github.com/pluralsight/design-system/commit/8cbb314851ff14b28b9b0c60a12850ce4ded8c81))
+
+
+
+
+
+# [5.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.2.0...@pluralsight/ps-design-system-core@5.3.0) (2020-01-17)
+
+
+### Features
+
+* **button:** move secondary tokens, update hover, active, & loading ([e3f0fa0](https://github.com/pluralsight/design-system/commit/e3f0fa000caf5229fe3f6720fc2bcba9ba1d9a08))
+* **core:** update colors2020 css ([a66256a](https://github.com/pluralsight/design-system/commit/a66256ac6b210958b3ad2ecdac664a0db31f02da))
+
+
+
+
+
+# [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.1.0...@pluralsight/ps-design-system-core@5.2.0) (2020-01-16)
+
+
+### Features
+
+* **core:** add 2020 colors as css ([a5f30c1](https://github.com/pluralsight/design-system/commit/a5f30c137bcb4b3b675922f487ead288d025c7a1)), closes [#780](https://github.com/pluralsight/design-system/issues/780)
+* **core:** add 2020 neutral colors to css ([13a089d](https://github.com/pluralsight/design-system/commit/13a089d0c67917d06efa1ed4010a815eb2a359f7))
+* **core:** add step 1 neutrals ([527a337](https://github.com/pluralsight/design-system/commit/527a3376c4010dbcd625be1fbe369511db08a4cb))
+
+
+
+
+
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.0.3...@pluralsight/ps-design-system-core@5.1.0) (2020-01-14)
+
+
+### Features
+
+* **core:** rename color variables for consitency ([6e2750e](https://github.com/pluralsight/design-system/commit/6e2750e8f26e966bb772c4e5049cab62e6c3b336))
+* adds storybook featureflag addon and scaffolds button ([10dff55](https://github.com/pluralsight/design-system/commit/10dff55e23dfd877ed061d9b612940cca797fc5e))
+* **core:** new colors added to core ([3917421](https://github.com/pluralsight/design-system/commit/391742198c21dd8eb036c1cca1810410e44f38f1))
+
+
+
+
+
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.0.1...@pluralsight/ps-design-system-core@5.0.2) (2019-12-16)
+
+
+### Bug Fixes
+
+* missing js extensition eslint warnings ([bebf5d7](https://github.com/pluralsight/design-system/commit/bebf5d718290eb9e3a3cdf0e64ee5f1849226c89))
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.0.0...@pluralsight/ps-design-system-core@5.0.1) (2019-11-06)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.5...@pluralsight/ps-design-system-core@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+
+
+
+
+
+## [4.4.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.4...@pluralsight/ps-design-system-core@4.4.5) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [4.4.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.3...@pluralsight/ps-design-system-core@4.4.4) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [4.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.2...@pluralsight/ps-design-system-core@4.4.3) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [4.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.0...@pluralsight/ps-design-system-core@4.4.2) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [4.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.4.0...@pluralsight/ps-design-system-core@4.4.1) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
 # [4.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@4.3.6...@pluralsight/ps-design-system-core@4.4.0) (2018-11-30)
 
 

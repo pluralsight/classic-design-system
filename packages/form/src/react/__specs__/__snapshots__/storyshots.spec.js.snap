@@ -1,8 +1,168 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Sample Form sample 1`] = `
+exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            form stuff
+          </div>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-1cqgl9p=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-126c1n5=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-1oaxr3i=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Cancel
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            form stuff
+          </div>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-5osg3l=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-126c1n5=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-1oaxr3i=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Cancel
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Sample Form null children 1`] = `
+<div
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -30,6 +190,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             size="large"
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
@@ -44,12 +205,13 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-w0yocm=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Name
             </div>
@@ -57,13 +219,18 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                data-css-1xm24a9=""
+                data-css-ctre2o=""
               >
-                <input
-                  data-css-ly16us=""
-                  disabled={false}
-                  placeholder="What's your name?"
-                />
+                <div
+                  data-css-ydex85=""
+                >
+                  <input
+                    data-css-1aru8qc=""
+                    disabled={false}
+                    placeholder="What's your name?"
+                    size="medium"
+                  />
+                </div>
               </div>
             </div>
           </label>
@@ -75,12 +242,13 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-w0yocm=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Alias
             </div>
@@ -88,17 +256,228 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                data-css-1xm24a9=""
+                data-css-ctre2o=""
               >
-                <input
-                  data-css-ly16us=""
-                  disabled={false}
-                  placeholder="Do you have a nick name?"
-                />
+                <div
+                  data-css-ydex85=""
+                >
+                  <input
+                    data-css-1aru8qc=""
+                    disabled={false}
+                    placeholder="Do you have a nick name?"
+                    size="medium"
+                  />
+                </div>
               </div>
             </div>
             <div
-              data-css-1de0a6a=""
+              data-css-bf7jp3=""
+            >
+              *Optional
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-141usbw=""
+          />
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-na8jqt=""
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-hnaccs=""
+            >
+              Comment
+            </div>
+            <div
+              data-css-1ios7mb=""
+            >
+              <div
+                data-css-ctre2o=""
+              >
+                <textarea
+                  data-css-dpjpe2=""
+                  disabled={false}
+                  placeholder="Anything else to report?"
+                  rows={4}
+                  style={
+                    Object {
+                      "height": 112,
+                    }
+                  }
+                />
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <div
+            data-css-1cqgl9p=""
+          >
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-126c1n5=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <div
+              data-css-7d5932=""
+            >
+              <button
+                data-css-1oaxr3i=""
+                disabled={false}
+                style={Object {}}
+              >
+                <span
+                  data-css-15b13by=""
+                >
+                  Cancel
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Sample Form sample 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+        "width": "50%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-15rjys7=""
+      >
+        <div
+          data-css-4l6uky=""
+        >
+          <h2
+            data-css-10w3axr=""
+            size="large"
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            Sample form
+          </h2>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-1ewie3k=""
+            >
+              Name
+            </div>
+            <div
+              data-css-1r967oi=""
+            >
+              <div
+                data-css-ctre2o=""
+              >
+                <div
+                  data-css-ydex85=""
+                >
+                  <input
+                    data-css-1aru8qc=""
+                    disabled={false}
+                    placeholder="What's your name?"
+                    size="medium"
+                  />
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          data-css-4l6uky=""
+        >
+          <label
+            data-css-w0yocm=""
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              data-css-1ewie3k=""
+            >
+              Alias
+            </div>
+            <div
+              data-css-1r967oi=""
+            >
+              <div
+                data-css-ctre2o=""
+              >
+                <div
+                  data-css-ydex85=""
+                >
+                  <input
+                    data-css-1aru8qc=""
+                    disabled={false}
+                    placeholder="Do you have a nick name?"
+                    size="medium"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-bf7jp3=""
             >
               *Optional
             </div>
@@ -111,12 +490,13 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-w0yocm=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Email address
             </div>
@@ -124,35 +504,41 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1r967oi=""
             >
               <div
-                data-css-utxo7p=""
-              >
-                <input
-                  data-css-ly16us=""
-                  disabled={false}
-                  value="steve@example.com"
-                />
-              </div>
-              <div
-                data-css-loo18p=""
+                data-css-in6gqi=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-ydex85=""
+                >
+                  <input
+                    data-css-1aru8qc=""
+                    disabled={false}
+                    size="medium"
+                    value="steve@example.com"
+                  />
+                </div>
+              </div>
+              <div
+                data-css-1ha66tv=""
+              >
+                <div
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="warning icon"
                     role="img"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                      clipRule="evenodd"
+                      d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                      fillRule="evenodd"
                     />
                   </svg>
                 </div>
               </div>
             </div>
             <div
-              data-css-1de0a6a=""
+              data-css-bf7jp3=""
             >
               Not a valid email address
             </div>
@@ -166,48 +552,47 @@ exports[`Storyshots Sample Form sample 1`] = `
             onKeyDown={[Function]}
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Occupation
             </div>
             <div
-              data-css-1812rv9=""
+              data-css-8u2q7u=""
             >
               <div
-                data-css-1xm24a9=""
+                data-css-ctre2o=""
               >
                 <div
-                  data-css-1r44zeb=""
+                  data-css-ne3jjf=""
                 >
                   <button
-                    data-css-8bndf1=""
+                    data-css-1lq4mos=""
                     disabled={false}
-                    onBlur={[Function]}
                     onClick={[Function]}
-                    onFocus={[Function]}
                   >
                     <span
                       aria-hidden={true}
-                      data-css-e6fvyw=""
+                      data-css-1pnvt9=""
                     >
                       Select your occupation...
                     </span>
                     <span
-                      data-css-5m5yd6=""
+                      data-css-1qy54zb=""
                     >
                       Select your occupation...
                     </span>
                   </button>
                   <div
-                    data-css-cstzed=""
+                    data-css-wvt485=""
                   >
                     <div
-                      className="css-otejxm"
+                      data-css-otejxm=""
                     >
                       <svg
                         aria-label="caret down icon"
@@ -233,15 +618,16 @@ exports[`Storyshots Sample Form sample 1`] = `
             style={
               Object {
                 "display": "flex",
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
           >
             <div
-              data-css-480533=""
+              data-css-1lu7sfl=""
             >
               <a
-                data-css-qgf2xw=""
+                data-css-118jh52=""
                 href="http://google.com"
               >
                 <span
@@ -259,10 +645,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               }
             />
             <div
-              data-css-480533=""
+              data-css-1lu7sfl=""
             >
               <a
-                data-css-qgf2xw=""
+                data-css-118jh52=""
                 href="http://google.com"
               >
                 <span
@@ -280,10 +666,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               }
             />
             <div
-              data-css-480533=""
+              data-css-1lu7sfl=""
             >
               <a
-                data-css-qgf2xw=""
+                data-css-118jh52=""
                 href="http://google.com"
               >
                 <span
@@ -300,27 +686,27 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <label
             data-css-w0yocm=""
-            onBlur={[Function]}
-            onFocus={[Function]}
+            onKeyDown={[Function]}
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
           >
             <div
-              data-css-n53zhn=""
+              data-css-1ewie3k=""
             >
               Choose a Date
             </div>
             <div
-              data-css-1xm24a9=""
+              data-css-ctre2o=""
             >
               <div
-                data-css-17azrqv=""
+                data-css-e41y4a=""
               >
                 <input
-                  data-css-baao50=""
+                  data-css-1ynlp2p=""
                   disabled={false}
                   name="mm"
                   onBlur={[Function]}
@@ -335,12 +721,12 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value=""
                 />
                 <span
-                  data-css-vk5b0l=""
+                  data-css-9eecwn=""
                 >
                   /
                 </span>
                 <input
-                  data-css-baao50=""
+                  data-css-1ynlp2p=""
                   disabled={false}
                   name="dd"
                   onBlur={[Function]}
@@ -355,12 +741,12 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value=""
                 />
                 <span
-                  data-css-vk5b0l=""
+                  data-css-9eecwn=""
                 >
                   /
                 </span>
                 <input
-                  data-css-baao50=""
+                  data-css-1ynlp2p=""
                   disabled={false}
                   name="yyyy"
                   onBlur={[Function]}
@@ -377,27 +763,24 @@ exports[`Storyshots Sample Form sample 1`] = `
                 <input
                   data-css-gyrv08=""
                   disabled={false}
-                  onBlur={[Function]}
-                  onFocus={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                 />
                 <button
-                  data-css-ay0j88=""
+                  data-css-m80zy8=""
                   disabled={false}
                   onClick={[Function]}
                 >
                   <div
-                    className="css-otejxm"
+                    data-css-otejxm=""
                   >
                     <svg
                       aria-label="calendar icon"
                       role="img"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M8,7 L4,7 L4,10 L20,10 L20,7 L16,7 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L14.5,9 C14.2238576,9 14,8.77614237 14,8.5 L14,7 L10,7 L10,8.5 C10,8.77614237 9.77614237,9 9.5,9 L8.5,9 C8.22385763,9 8,8.77614237 8,8.5 L8,7 Z M10,5 L14,5 L14,3.5 C14,3.22385763 14.2238576,3 14.5,3 L15.5,3 C15.7761424,3 16,3.22385763 16,3.5 L16,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L8,5 L8,3.5 C8,3.22385763 8.22385763,3 8.5,3 L9.5,3 C9.77614237,3 10,3.22385763 10,3.5 L10,5 Z M20,12 L4,12 L4,19 L20,19 L20,12 Z M5,13 L7,13 L7,15 L5,15 L5,13 Z M5,16 L7,16 L7,18 L5,18 L5,16 Z M8,13 L10,13 L10,15 L8,15 L8,13 Z M8,16 L10,16 L10,18 L8,18 L8,16 Z M11,13 L13,13 L13,15 L11,15 L11,13 Z M11,16 L13,16 L13,18 L11,18 L11,16 Z M14,13 L16,13 L16,15 L14,15 L14,13 Z M14,16 L16,16 L16,18 L14,18 L14,16 Z M17,13 L19,13 L19,15 L17,15 L17,13 Z M17,16 L19,16 L19,18 L17,18 L17,16 Z"
+                        d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
                       />
                     </svg>
                   </div>
@@ -415,17 +798,17 @@ exports[`Storyshots Sample Form sample 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-vzrwad=""
+              data-css-1ij5lym=""
             >
               <div
                 aria-checked={true}
-                data-css-1erplld=""
+                data-css-18wdktl=""
                 role="checkbox"
                 tabIndex="0"
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-a3uikz=""
+                  data-css-ey6g07=""
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -440,13 +823,20 @@ exports[`Storyshots Sample Form sample 1`] = `
             <input
               checked={true}
               data-css-gyrv08=""
+              disabled={false}
               readOnly={true}
+              style={
+                Object {
+                  "maxWidth": "none",
+                  "width": "100%",
+                }
+              }
               tabIndex="-1"
               type="checkbox"
               value="someVal"
             />
             <div
-              data-css-pgc406=""
+              data-css-185gc3y=""
             >
               Checkbox selected
             </div>
@@ -456,7 +846,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <div
-            data-css-gdknmt=""
+            data-css-141usbw=""
           />
         </div>
         <div
@@ -467,36 +857,47 @@ exports[`Storyshots Sample Form sample 1`] = `
             onFocus={[Function]}
             onKeyDown={[Function]}
             role="radiogroup"
-            tabIndex="0"
+            style={
+              Object {
+                "maxWidth": "none",
+                "width": "100%",
+              }
+            }
+            tabIndex={0}
           >
             <div
               data-css-xp79s5=""
             >
               <label
                 data-css-kn3wr0=""
-                onClick={[Function]}
               >
                 <div
-                  data-css-480533=""
+                  data-css-1gbdc34=""
                 >
                   <div
-                    aria-checked={false}
-                    data-css-dbvyuf=""
-                    onFocus={[Function]}
-                    role="radio"
-                    tabIndex="-1"
-                  />
+                    data-css-1lu7sfl=""
+                    data-css-iwspcj=""
+                  >
+                    <div
+                      aria-checked={false}
+                      data-css-1e1erju=""
+                      onFocus={[Function]}
+                      role="radio"
+                      tabIndex="-1"
+                    />
+                  </div>
                 </div>
                 <input
                   checked={false}
                   data-css-gyrv08=""
+                  onClick={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
                   value="full"
                 />
                 <div
-                  data-css-pgc406=""
+                  data-css-wbyy03=""
                 >
                   Full-time employement
                 </div>
@@ -507,29 +908,34 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <label
                 data-css-kn3wr0=""
-                onClick={[Function]}
               >
                 <div
-                  data-css-480533=""
+                  data-css-1gbdc34=""
                 >
                   <div
-                    aria-checked={false}
-                    data-css-dbvyuf=""
-                    onFocus={[Function]}
-                    role="radio"
-                    tabIndex="-1"
-                  />
+                    data-css-1lu7sfl=""
+                    data-css-iwspcj=""
+                  >
+                    <div
+                      aria-checked={false}
+                      data-css-1e1erju=""
+                      onFocus={[Function]}
+                      role="radio"
+                      tabIndex="-1"
+                    />
+                  </div>
                 </div>
                 <input
                   checked={false}
                   data-css-gyrv08=""
+                  onClick={[Function]}
                   readOnly={true}
                   tabIndex="-1"
                   type="radio"
                   value="part"
                 />
                 <div
-                  data-css-pgc406=""
+                  data-css-wbyy03=""
                 >
                   Part-time employement
                 </div>
@@ -541,7 +947,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <div
-            data-css-gdknmt=""
+            data-css-141usbw=""
           />
         </div>
         <div
@@ -549,26 +955,27 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <button
             aria-checked={false}
-            data-css-1fg1tn7=""
+            data-css-nq9iqf=""
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             role="checkbox"
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
-            tabIndex="0"
+            tabIndex={0}
           >
             <div
-              data-css-480533=""
+              data-css-1lu7sfl=""
             >
               <div
-                data-css-1rncajx=""
+                data-css-rao1gl=""
               >
                 <div
-                  data-css-1nqr5a6=""
+                  data-css-12e9w50=""
                 />
               </div>
             </div>
@@ -580,7 +987,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               type="checkbox"
             />
             <label
-              data-css-1wrf03j=""
+              data-css-on3oux=""
             >
               toggle
             </label>
@@ -590,35 +997,37 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <div
-            data-css-gdknmt=""
+            data-css-141usbw=""
           />
         </div>
         <div
           data-css-4l6uky=""
         >
           <label
-            data-css-1p1sjwu=""
+            data-css-na8jqt=""
             style={
               Object {
+                "maxWidth": "none",
                 "width": "100%",
               }
             }
           >
             <div
-              data-css-1j9p7fe=""
+              data-css-hnaccs=""
             >
               Comment
             </div>
             <div
-              data-css-1ghdxx6=""
+              data-css-1ios7mb=""
             >
               <div
-                data-css-1xm24a9=""
+                data-css-ctre2o=""
               >
                 <textarea
-                  data-css-1vpjki6=""
+                  data-css-dpjpe2=""
                   disabled={false}
                   placeholder="Anything else to report?"
+                  rows={4}
                   style={
                     Object {
                       "height": 112,
@@ -639,7 +1048,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1ij2lam=""
+                data-css-126c1n5=""
                 disabled={false}
                 style={Object {}}
               >
@@ -654,7 +1063,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-3rnlur=""
+                data-css-1oaxr3i=""
                 disabled={false}
                 style={Object {}}
               >

@@ -1,9 +1,9 @@
-import core from '@pluralsight/ps-design-system-core'
+import { layout } from '@pluralsight/ps-design-system-core'
 
-import { AsideLayout as vars } from '../vars'
+import { asideLayout as vars } from '../vars/index.js'
 
 export default {
-  ['.psds-aside-layout']: {
+  '.psds-aside-layout': {
     display: 'flex'
   },
   [`.psds-aside-layout--aside-position-${vars.asidePositions.first}`]: {
@@ -13,10 +13,10 @@ export default {
     flexDirection: 'column-reverse'
   },
   [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.first}`]: {
-    marginBottom: core.layout.spacingLarge
+    marginBottom: layout.spacingLarge
   },
   [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.last}`]: {
-    marginTop: core.layout.spacingLarge
+    marginTop: layout.spacingLarge
   },
   '@media (min-width: 769px)': {
     [`.psds-aside-layout--aside-position-${vars.asidePositions.first}`]: {
@@ -25,20 +25,18 @@ export default {
     [`.psds-aside-layout--aside-position-${vars.asidePositions.last}`]: {
       flexDirection: 'row-reverse'
     },
-    ['.psds-aside-layout__aside']: {
+    '.psds-aside-layout__aside': {
       width: 'calc(25%)'
     },
-    [`.psds-aside-layout__aside--aside-position-${
-      vars.asidePositions.first
-    }`]: {
+    [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.first}`]: {
       marginBottom: 0,
-      marginRight: core.layout.spacingLarge
+      marginRight: layout.spacingLarge
     },
     [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.last}`]: {
       marginTop: 0,
-      marginLeft: core.layout.spacingLarge
+      marginLeft: layout.spacingLarge
     },
-    ['.psds-aside-layout__main']: {
+    '.psds-aside-layout__main': {
       width: 'calc(75%)'
     }
   }

@@ -1,14 +1,13 @@
-import core from '@pluralsight/ps-design-system-core'
+import { colorsTextIcon } from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
+} from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
-  ['@keyframes psds-circularprogress__keyframes__spin']: {
+  '@keyframes psds-circularprogress__keyframes__spin': {
     to: {
       transform: 'rotate(270deg)'
     }
@@ -38,10 +37,10 @@ export default {
     transition: 'stroke-dashoffset 1s'
   },
   [`.psds-circularprogress__fg.psds-theme--${themeNames.light}`]: {
-    stroke: core.colors.gray04
+    stroke: colorsTextIcon.highOnLight
   },
   [`.psds-circularprogress__fg.psds-theme--${themeDefaultName}`]: {
-    stroke: core.colors.white
+    stroke: colorsTextIcon.highOnDark
   },
   // __bg
   [`.psds-circularprogress__bg`]: {
@@ -49,9 +48,9 @@ export default {
     strokeWidth: `${vars.style.strokeWidth}px`
   },
   [`.psds-circularprogress__bg.psds-theme--${themeNames.light}`]: {
-    stroke: transparentize(0.8, core.colors.gray04)
+    stroke: 'rgba(0, 0, 0, 0.15)'
   },
   [`.psds-circularprogress__bg.psds-theme--${themeDefaultName}`]: {
-    stroke: core.colors.gray04
+    stroke: 'rgba(255, 255, 255, 0.15)'
   }
 }

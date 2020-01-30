@@ -1,7 +1,7 @@
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
-import Tag from '@pluralsight/ps-design-system-tag/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
+import Tag from '@pluralsight/ps-design-system-tag'
+import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -11,11 +11,10 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Tag">
       <PageHeading packageName="tag">Tag</PageHeading>
@@ -25,20 +24,11 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Tag from '@pluralsight/ps-design-system-tag/react'
+        import Tag from '@pluralsight/ps-design-system-tag'
       </Code>
 
       <PropTypes
         props={[
-          PropTypes.row([
-            'appearance',
-            PropTypes.union(Tag.appearances),
-            null,
-            <code>basic</code>,
-            <span>
-              visual style (from <code>Tag.appearances</code>)
-            </span>
-          ]),
           PropTypes.row([
             'error',
             'boolean',
@@ -48,7 +38,7 @@ export default withServerProps(_ => (
           ]),
           PropTypes.row([
             'icon',
-            <code>Icon</code>,
+            <code>*Icon</code>,
             null,
             null,
             'Icon component, right-aligned'
@@ -72,18 +62,6 @@ export default withServerProps(_ => (
         ]}
       />
 
-      <SectionHeading>Appearance</SectionHeading>
-      <P>
-        Tags come in {Object.keys(Tag.appearances).length} styles. Tags may
-        change appearance based on action.
-      </P>
-      <Example.React
-        includes={{ Tag }}
-        codes={Object.keys(Tag.appearances).map(
-          a => `<Tag appearance={Tag.appearances.${a}}>${a}</Tag>`
-        )}
-      />
-
       <SectionHeading>Size</SectionHeading>
       <P>
         Tags come in two sizes. Try to use the default size, <code>medium</code>
@@ -91,6 +69,7 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         includes={{ Tag }}
+        themeToggle
         codes={Object.keys(Tag.sizes).map(
           s => `<Tag size={Tag.sizes.${s}}>${s}</Tag>`
         )}
@@ -102,11 +81,12 @@ export default withServerProps(_ => (
         also receive on <code>onClick</code> prop in this position.
       </P>
       <Example.React
-        includes={{ Tag, Icon }}
+        themeToggle
+        includes={{ Tag, CloseIcon }}
         codes={[
-          `<Tag icon={<Icon id={Icon.ids.close} />}>With Icon</Tag>`,
-          `<Tag icon={<Icon id={Icon.ids.close} />} size={Tag.sizes.small}>With Icon</Tag>`,
-          `<Tag icon={<Icon id={Icon.ids.close} onClick={_ => alert('icon clicked')} />} size={Tag.sizes.small}>With Icon</Tag>`
+          `<Tag icon={<CloseIcon />}>With Icon</Tag>`,
+          `<Tag icon={<CloseIcon />} size={Tag.sizes.small}>With Icon</Tag>`,
+          `<Tag icon={<CloseIcon onClick={_ => alert('icon clicked')} />} size={Tag.sizes.small}>With Icon</Tag>`
         ]}
       />
 
@@ -117,7 +97,8 @@ export default withServerProps(_ => (
         present.
       </P>
       <Example.React
-        includes={{ Tag, Icon }}
+        themeToggle
+        includes={{ Tag }}
         codes={[
           `<Tag onClick={_ => alert('click')}>With Click</Tag>`,
           `<Tag href="https://duckduckgo.com">With Link</Tag>`
@@ -132,7 +113,8 @@ export default withServerProps(_ => (
         storing toggled state.
       </P>
       <Example.React
-        includes={{ Tag, Icon }}
+        themeToggle
+        includes={{ Tag }}
         codes={[`<Tag isPressed>Toggled on</Tag>`, `<Tag>Toggled off</Tag>`]}
       />
 
@@ -142,9 +124,10 @@ export default withServerProps(_ => (
         This is useful when tags are used from within a form
       </P>
       <Example.React
+        themeToggle
         includes={{ Tag }}
         codes={[`<Tag error>Problem tag</Tag>`]}
       />
     </Content>
   </Chrome>
-))
+)

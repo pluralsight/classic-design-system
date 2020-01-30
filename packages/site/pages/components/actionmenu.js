@@ -1,23 +1,198 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import Button from '@pluralsight/ps-design-system-button/react'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import React from 'react'
+
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
+import {
+  MoreIcon,
+  ChannelIcon,
+  PathIcon,
+  ReportIcon
+} from '@pluralsight/ps-design-system-icon'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+function InAppExample() {
+  const categories = [
+    {
+      name: 'Channels',
+      options: [
+        { value: 'dev', label: 'Development' },
+        { value: 'ops', label: 'Operations' },
+        { value: 'des', label: 'Design' }
+      ]
+    },
+    {
+      name: 'Socialz',
+      options: [
+        { value: 't', label: 'Twitz' },
+        { value: 'd', label: 'DaBook' },
+        { value: 'i', label: 'Instas' }
+      ]
+    }
+  ]
+  const [isOpen, setIsOpen] = React.useState(false)
+  const [selected, select] = React.useState({})
+
+  function handleSelect(evt, value, label) {
+    select({ value, label })
+    setIsOpen(false)
+  }
+
+  return (
+    <>
+      <style jsx>{`
+        .example {
+          padding: ${core.layout.spacingLarge};
+          background: ${core.colors.gray06};
+          color: ${core.colors.white};
+          min-height: 200px;
+        }
+        .label {
+          padding: ${core.layout.spacingLarge} 0;
+          font-size: ${core.type.fontSizeMedium};
+        }
+      `}</style>
+
+      <Theme>
+        <div className="example">
+          <BelowLeft
+            when={isOpen}
+            show={
+              <div>
+                <ActionMenu
+                  origin={ActionMenu.origins.topLeft}
+                  onChange={handleSelect}
+                >
+                  {categories.map(cat => (
+                    <ActionMenu.Item
+                      key={cat.name}
+                      nested={
+                        <ActionMenu>
+                          {cat.options.map(opt => (
+                            <ActionMenu.Item value={opt.value} key={opt.value}>
+                              {opt.label}
+                            </ActionMenu.Item>
+                          ))}
+                        </ActionMenu>
+                      }
+                    >
+                      {cat.name}
+                    </ActionMenu.Item>
+                  ))}
+                </ActionMenu>
+              </div>
+            }
+          >
+            <Button
+              appearance={Button.appearances.secondary}
+              size={Button.sizes.small}
+              icon={<MoreIcon />}
+              onClick={_ => setIsOpen(!isOpen)}
+            />
+          </BelowLeft>
+
+          <div className="label">
+            Clicked Item: {selected.label} ({selected.value})
+          </div>
+        </div>
+      </Theme>
+
+      <Code collapsible language="javascript">
+        {`import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
+import Button from '@pluralsight/ps-design-system-button'
+
+function InAppExample() {
+  const categories = [
+    {
+      name: 'Channels',
+      options: [
+        { value: 'dev', label: 'Development' },
+        { value: 'ops', label: 'Operations' },
+        { value: 'des', label: 'Design' }
+      ]
+    },
+    {
+      name: 'Socialz',
+      options: [
+        { value: 't', label: 'Twitz' },
+        { value: 'd', label: 'DaBook' },
+        { value: 'i', label: 'Instas' }
+      ]
+    }
+  ]
+  const [isOpen, setIsOpen] = React.useState(false)
+  const [selected, select] = React.useState({})
+
+  function handleSelect(evt, value, label) {
+    select({ value, label })
+    setIsOpen(false)
+  }
+
+  return (
+    <React.Fragment>
+      <BelowLeft
+        when={isOpen}
+        show={
+          <div>
+            <ActionMenu
+              origin={ActionMenu.origins.topLeft}
+              onChange={handleSelect}
+              whoa="adsf"
+            >
+              {categories.map(cat => (
+                <ActionMenu.Item
+                  key={cat.name}
+                  nested={
+                    <ActionMenu>
+                      {cat.options.map(opt => (
+                        <ActionMenu.Item value={opt.value} key={opt.value}>
+                          {opt.label}
+                        </ActionMenu.Item>
+                      ))}
+                    </ActionMenu>
+                  }
+                >
+                  {cat.name}
+                </ActionMenu.Item>
+              ))}
+            </ActionMenu>
+          </div>
+        }
+      >
+        <Button
+          appearance={Button.appearances.secondary}
+          size={Button.sizes.small}
+          icon={<MoreIcon />}
+          onClick={_ => setIsOpen(!isOpen)}
+        />
+      </BelowLeft>
+
+      <div className="label">
+        Clicked Item: {selected.label} ({selected.value})
+      </div>
+    </React.Fragment>
+  )
+}`}
+      </Code>
+    </>
+  )
+}
+
+export default _ => (
   <Chrome>
     <Content title="Action Menu">
       <PageHeading packageName="actionmenu">Action Menu</PageHeading>
@@ -29,7 +204,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
+        import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
       </Code>
 
       <PropTypes
@@ -40,7 +215,14 @@ export default withServerProps(_ => (
               'function',
               null,
               null,
-              'triggered when a menu collapses'
+              'triggered when a menu collapses; providing it renders an overlay that triggers this function on click'
+            ]),
+            PropTypes.row([
+              'onChange',
+              <span>(Event, value, label) => ()</span>,
+              null,
+              null,
+              'triggered when an item selected'
             ]),
             PropTypes.row([
               'origin',
@@ -61,10 +243,17 @@ export default withServerProps(_ => (
             ])
           ],
           'ActionMenu.Item': [
+            PropTypes.row([
+              'disabled',
+              'boolean',
+              null,
+              <code>false</code>,
+              'visually disabled, non-interactive'
+            ]),
             PropTypes.row(['href', 'string', null, null, 'anchor tag uri']),
             PropTypes.row([
               'icon',
-              <code>Icon</code>,
+              <code>*Icon</code>,
               null,
               null,
               'Icon component'
@@ -89,59 +278,42 @@ export default withServerProps(_ => (
               null,
               null,
               'triggered on item click'
+            ]),
+            PropTypes.row([
+              'value',
+              <code>string | number</code>,
+              null,
+              null,
+              <span>
+                value sent to <code>Menu#onChange</code>
+              </span>
             ])
           ]
         }}
       />
 
-      <SectionHeading>Triggers</SectionHeading>
+      <SectionHeading>In-app example</SectionHeading>
       <P>
         Menus can originate from various affordance types: buttons, dropdowns,
         and stand-alone icons. All menus left align with the affordance by
         default.
       </P>
-      <Example.React
-        includes={{ ActionMenu, Button, Icon }}
-        codes={[
-          `
-<div>
-  <Button
-    appearance={Button.appearances.flat}
-    size={Button.sizes.small}
-    icon={<Icon id={Icon.ids.more} />}
-  />
-  <div style={{ position: 'relative' }}>
-    <ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
-      <ActionMenu.Item>
-        One menu item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Two menu item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        Three menu item
-      </ActionMenu.Item>
-    </ActionMenu>
-  </div>
-</div>
-`
-        ]}
-      />
+      <InAppExample />
 
       <SectionHeading>Icons</SectionHeading>
-      <P>Use icons to add conext and recognition to action menu items.</P>
+      <P>Use icons to add context and recognition to action menu items.</P>
       <Example.React
-        includes={{ ActionMenu, Icon }}
+        includes={{ ActionMenu, ChannelIcon, PathIcon, ReportIcon }}
         codes={[
           `
 <ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
-  <ActionMenu.Item icon={<Icon id={Icon.ids.channel} />}>
+  <ActionMenu.Item icon={<ChannelIcon />}>
     Channels
   </ActionMenu.Item>
-  <ActionMenu.Item icon={<Icon id={Icon.ids.path} />}>
+  <ActionMenu.Item icon={<PathIcon />}>
     Paths
   </ActionMenu.Item>
-  <ActionMenu.Item icon={<Icon id={Icon.ids.report} />}>
+  <ActionMenu.Item icon={<ReportIcon />}>
     Reports
   </ActionMenu.Item>
 </ActionMenu>
@@ -152,13 +324,13 @@ export default withServerProps(_ => (
       <SectionHeading>Dividers</SectionHeading>
       <P>
         Dividers can be useful to separate similar actions. Dividers are applied
-        at the li level, below the assigned list item.
+        at the list level, below the assigned list item.
       </P>
       <Example.React
         includes={{ ActionMenu }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -187,7 +359,7 @@ export default withServerProps(_ => (
         }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item>
     One item
   </ActionMenu.Item>
@@ -292,13 +464,48 @@ export default withServerProps(_ => (
       />
 
       <P>
-        <i>
-          Note: Examples on this page use <code>shouldFocusOnMount=false</code>
-          only in order to display the examples without interrupting your
-          browsing experience. In most real-world scenarios, you will want to
-          leave the default focus behavior in tact.
-        </i>
+        <em>
+          Note: Examples on this page use{' '}
+          <Text.Code>shouldFocusOnMount=false</Text.Code> only in order to
+          display the examples without interrupting your browsing experience. In
+          most real-world scenarios, you will want to leave the default focus
+          behavior in tact.
+        </em>
       </P>
+
+      <SectionHeading>Disabled Items</SectionHeading>
+      <P>
+        To keep items in the menu but make them disabled, mark with a{' '}
+        <Text.Code>disabled</Text.Code> prop.
+      </P>
+      <Example.React
+        includes={{ ActionMenu }}
+        outputStyle={{
+          height: `calc(200px + (2 * ${core.layout.spacingLarge}))`,
+          position: 'relative'
+        }}
+        outputChildStyle={{
+          position: 'relative',
+          height: '200px',
+          width: '100%',
+          padding: core.layout.spacingLarge
+        }}
+        codes={[
+          `
+<ActionMenu shouldFocusOnMount={false}>
+  <ActionMenu.Item>
+    Normal, enabled
+  </ActionMenu.Item>
+  <ActionMenu.Item disabled>
+    Present, but disabled
+  </ActionMenu.Item>
+  <ActionMenu.Item>
+    Normal, enabled
+  </ActionMenu.Item>
+</ActionMenu>
+`
+        ]}
+      />
     </Content>
   </Chrome>
-))
+)

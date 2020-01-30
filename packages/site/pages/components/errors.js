@@ -1,27 +1,26 @@
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
+
 import {
   ForbiddenErrorPage,
   NotFoundErrorPage,
   InternalServerErrorPage,
   ServiceUnavailableErrorPage
-} from '@pluralsight/ps-design-system-errors/react'
+} from '@pluralsight/ps-design-system-errors'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
   Intro,
   P,
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Errors">
       <PageHeading packageName="errors">Errors</PageHeading>
@@ -43,7 +42,7 @@ export default withServerProps(_ => (
   NotFoundErrorPage,
   InternalServerErrorPage,
   ServiceUnavailableErrorPage
-} from '@pluralsight/ps-design-system-errors/react'`}
+} from '@pluralsight/ps-design-system-errors'`}
       </Code>
 
       <SectionHeading>Forbidden Error Page</SectionHeading>
@@ -91,7 +90,7 @@ export default withServerProps(_ => (
             'action',
             'string',
             null,
-            <code>/library/search</code>,
+            <code>/search</code>,
             <span>
               Search form destination; handles <code>q</code> query string
             </span>
@@ -142,4 +141,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

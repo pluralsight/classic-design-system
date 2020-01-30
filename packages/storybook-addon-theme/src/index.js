@@ -1,88 +1,79 @@
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import core from '@pluralsight/ps-design-system-core'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import addons, { makeDecorator } from '@storybook/addons'
+import { STORY_CHANGED } from '@storybook/core-events'
+
+import * as core from '@pluralsight/ps-design-system-core'
+import Theme, { names } from '@pluralsight/ps-design-system-theme'
+
+import { EVENTS } from './constants.js'
 
 const styles = {
   decorator: ({ themeName }) => {
-    const base = glamor.css({
-      overflow: 'scroll',
-      position: 'fixed',
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
+    const base = css({
+      overflow: 'auto',
+      width: '100%',
+      height: '100vh',
       transition: `background ${core.motion.speedNormal}`,
       backgroundSize: 'cover',
       background: 'transparent'
     })
 
-    const theme = glamor.css(
-      themeName === 'dark' && { background: core.colors.gray06 },
-      themeName === 'light' && { background: core.colors.bone }
+    const theme = css(
+      themeName === names.dark && { background: core.colors.gray06 },
+      themeName === names.light && { background: core.colors.bone }
     )
 
-    return glamor.compose(
+    return compose(
       base,
       theme
     )
   }
 }
 
-export class ThemeDecorator extends React.Component {
-  constructor (props) {
-    super(props)
+export default makeDecorator({
+  name: 'withTheme',
+  parameterName: 'theme',
+  skipIfNoParametersOrOptions: false,
+  wrapper: (getStory, context, { parameters }) => {
+    const channel = addons.getChannel()
 
-    this.channel = this.props.addons.getChannel()
-    this.story = this.props.story()
-
-    this.setTheme = this.setTheme.bind(this)
-
-    this.state = { themeName: Theme.defaultName }
-  }
-
-  componentWillMount () {
-    this.channel.on('theme', this.setTheme)
-  }
-
-  componentWillReceiveProps (nextProps) {
-    if (nextProps.story !== this.props.story) this.story = nextProps.story()
-  }
-
-  componentWillUnmount () {
-    this.channel.removeListener('theme', this.setTheme)
-  }
-
-  setTheme (themeName) {
-    this.setState({ themeName })
-  }
-
-  handleClick (themeName) {
-    this.setState({ themeName })
-    this.channel.emit('ps-design-system-theme/names/select', themeName)
-  }
-
-  render () {
     return (
-      <div {...styles.decorator({ themeName: this.state.themeName })}>
-        <Theme name={this.state.themeName}>{this.story}</Theme>
-      </div>
+      <ThemeDecorator channel={channel}>{getStory(context)}</ThemeDecorator>
     )
   }
+})
+
+function ThemeDecorator({ channel, children, ...props }) {
+  const [themeName, setTheme] = React.useState(names.dark)
+
+  React.useEffect(() => {
+    channel.addListener(STORY_CHANGED, reset)
+    channel.addListener(EVENTS.change, setTheme)
+
+    return () => {
+      channel.removeListener(STORY_CHANGED, reset)
+      channel.removeListener(EVENTS.change, setTheme)
+    }
+  }, [channel])
+
+  function reset() {
+    setTheme(names.dark)
+  }
+
+  return (
+    <div {...styles.decorator({ themeName })}>
+      <Theme name={themeName}>{children}</Theme>
+    </div>
+  )
 }
 
 ThemeDecorator.propTypes = {
-  addons: PropTypes.shape({
-    getChannel: PropTypes.func.isRequired
+  channel: PropTypes.shape({
+    addListener: PropTypes.func.isRequired,
+    removeListener: PropTypes.func.isRequired
   }).isRequired,
-  story: PropTypes.func.isRequired
+  children: PropTypes.node
 }
-
-// NOTE: unconventional need to pass addons here.  dealt with this for a day
-// https://storybook.js.org/basics/faq/#why-is-there-no-addons-channel
-// this is the way I solved it, finally
-export default addons => story => (
-  <ThemeDecorator addons={addons} story={story} />
-)

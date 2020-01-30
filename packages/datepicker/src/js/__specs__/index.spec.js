@@ -1,4 +1,4 @@
-import * as subject from '../index'
+import * as subject from '../index.js'
 
 describe('#getDaysInMonth', () => {
   test('feb 1983 had 28 days', () => {
@@ -153,5 +153,38 @@ describe('#formatDate', () => {
         yyyy: 1941
       })
     ).toEqual('12/7/1941')
+  })
+})
+
+describe('#shallowEqual', () => {
+  const { shallowEqual } = subject
+
+  test('is true if args are falsy but equal', () => {
+    expect(shallowEqual()).toBe(true)
+    expect(shallowEqual(undefined, undefined)).toBe(true)
+    expect(shallowEqual(null, null)).toBe(true)
+    expect(shallowEqual(NaN, NaN)).toBe(true)
+  })
+
+  test('is false if a single arg is falsy', () => {
+    expect(shallowEqual({})).toBe(false)
+    expect(shallowEqual({}, null)).toBe(false)
+    expect(shallowEqual(null, {})).toBe(false)
+  })
+
+  test('is true with two equal objects', () => {
+    expect(shallowEqual({ key: 'value' }, { key: 'value' })).toBe(true)
+  })
+
+  test('is false when one object has more key/value pairs', () => {
+    expect(
+      shallowEqual({ key: 'value', additional: true }, { key: 'value' })
+    ).toBe(false)
+  })
+
+  test('is true with equal objects but different ordered keys', () => {
+    expect(
+      shallowEqual({ first: '1', second: '2' }, { second: '2', first: '1' })
+    ).toBe(true)
   })
 })

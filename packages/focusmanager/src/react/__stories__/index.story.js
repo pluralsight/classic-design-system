@@ -1,9 +1,9 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Text from '@pluralsight/ps-design-system-text/react'
+import * as Text from '@pluralsight/ps-design-system-text'
 
-import FocusManager from '..'
+import FocusManager from '../index.js'
 
 storiesOf('FocusManager', module)
   .add('trapped', _ => (

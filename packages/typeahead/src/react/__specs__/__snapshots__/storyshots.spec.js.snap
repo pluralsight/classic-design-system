@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Typeahead / appearances default 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1yz65u0=""
+        >
+          <input
+            data-css-1aru8qc=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            size="medium"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-awmen3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / appearances subtle 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-my8ipd=""
+        >
+          <input
+            data-css-egljo0=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            size="medium"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-seje8w=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / controlled default 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1yz65u0=""
+        >
+          <input
+            data-css-1aru8qc=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            size="medium"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-awmen3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / form props all 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1yz65u0=""
+        >
+          <input
+            data-css-1aru8qc=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+            size="medium"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-awmen3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-1yz65u0=""
+        >
+          <input
+            data-css-1aru8qc=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+            size="medium"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-awmen3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1yz65u0=""
+        >
+          <input
+            data-css-1aru8qc=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            size="medium"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-awmen3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Components | Typeahead / uncontrolled default 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1yz65u0=""
+        >
+          <input
+            data-css-1aru8qc=""
+            disabled={false}
+            onChange={[Function]}
+            onFocus={[Function]}
+            size="medium"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-awmen3=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;

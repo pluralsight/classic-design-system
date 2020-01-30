@@ -2,7 +2,7 @@
 
 exports[`Storyshots appearance default 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <p
     style={
@@ -23,7 +23,7 @@ exports[`Storyshots appearance default 1`] = `
 
 exports[`Storyshots appearance subtle 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <p
     style={
@@ -38,6 +38,26 @@ exports[`Storyshots appearance subtle 1`] = `
     >
       Click me
     </a>
+  </p>
+</div>
+`;
+
+exports[`Storyshots tagNames button 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <p
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <button
+      data-css-1skajya=""
+    >
+      Click me
+    </button>
   </p>
 </div>
 `;

@@ -1,21 +1,18 @@
-import Avatar from '@pluralsight/ps-design-system-avatar/react'
-import core from '@pluralsight/ps-design-system-core'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import React from 'react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Avatar">
       <PageHeading packageName="avatar">Avatar</PageHeading>
@@ -27,7 +24,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Avatar from '@pluralsight/ps-design-system-avatar/react'
+        import Avatar from '@pluralsight/ps-design-system-avatar'
       </Code>
 
       <PropTypes
@@ -84,4 +81,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

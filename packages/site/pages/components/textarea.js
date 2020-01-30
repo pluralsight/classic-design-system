@@ -1,29 +1,22 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import TextArea from '@pluralsight/ps-design-system-textarea/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import React from 'react'
+import * as Text from '@pluralsight/ps-design-system-text'
+import TextArea from '@pluralsight/ps-design-system-textarea'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Text Area">
-      <PageHeading beta packageName="textarea">
-        Text Area
-      </PageHeading>
+      <PageHeading packageName="textarea">Text Area</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -32,7 +25,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import TextArea from '@pluralsight/ps-design-system-textarea/react'
+        import TextArea from '@pluralsight/ps-design-system-textarea'
       </Code>
 
       <PropTypes
@@ -41,22 +34,15 @@ export default withServerProps(_ => (
             'disabled',
             'boolean',
             null,
-            <code>false</code>,
+            <code key="value">false</code>,
             'standard input disabled flag'
           ]),
           PropTypes.row([
             'error',
             'boolean',
             null,
-            <code>false</code>,
+            <code key="value">false</code>,
             'error state flag'
-          ]),
-          PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'textarea field react ref callback'
           ]),
           PropTypes.row([
             'label',
@@ -76,7 +62,7 @@ export default withServerProps(_ => (
             'rows',
             'number',
             null,
-            <code>4</code>,
+            <code key="value">4</code>,
             'expand the viewable rows (height)'
           ]),
           PropTypes.row([
@@ -148,4 +134,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

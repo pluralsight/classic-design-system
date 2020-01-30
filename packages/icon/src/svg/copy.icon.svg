@@ -1,3 +1,1 @@
-<svg aria-label="Copy icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M18 17V5H8V3.933C8 3.418 8.316 3 8.706 3h10.588c.39 0 .706.418.706.933v12.134c0 .515-.316.933-.706.933H18zM4.75 7h10.5c.414 0 .75.482.75 1.077v11.846c0 .595-.336 1.077-.75 1.077H4.75c-.414 0-.75-.482-.75-1.077V8.077C4 7.482 4.336 7 4.75 7zM6 9v10h8V9H6z"/>
-</svg>
+<svg aria-label="copy icon" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 7a1 1 0 00-1-1H8a1 1 0 00-1 1v14a1 1 0 001 1h12a1 1 0 001-1V7zM9 20h10V8H9v12z"/><path d="M16.5 2a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H5v13.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V3a1 1 0 011-1h12.5z"/></svg>

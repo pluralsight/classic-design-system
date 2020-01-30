@@ -1,11 +1,12 @@
-import Button from '@pluralsight/ps-design-system-button/react'
+import Button from '@pluralsight/ps-design-system-button'
 import CodeMirror from 'react-codemirror'
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import { CodeIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
+import React from 'react'
 
-import CodeMirrorCss from '../../vendor/codemirror-css'
-import CodeMirrorPsTheme from './codemirror-ps-theme'
+import CodeMirrorCss from '../../vendor/codemirror-css.js'
+import CodeMirrorPsTheme from './codemirror-ps-theme.js'
 
 let modeLoaded = false
 if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
@@ -23,7 +24,7 @@ const CollapsibleButton = props => (
       color: core.colors.gray02,
       zIndex: 10 /* TODO: arbitrary; above code mirror; come back when ready to systemize */
     }}
-    icon={<Icon id={Icon.ids.code} />}
+    icon={<CodeIcon />}
     appearance={Button.appearances.flat}
     onClick={props.onClick}
     size={Button.sizes.xSmall}
@@ -31,25 +32,37 @@ const CollapsibleButton = props => (
     {props.isOpen ? 'Hide' : 'Show'} code
   </Button>
 )
+CollapsibleButton.propTypes = {
+  isOpen: PropTypes.bool,
+  onClick: PropTypes.func
+}
 
 class Collapsible extends React.Component {
+  constructor(props) {
+    super(props)
+    this.containerElement = React.createRef()
+  }
+
   componentDidMount() {
     this.updateOverflowStyle(this.props.isOpen)
     if (!this.props.isOpen) {
-      this.containerElement.style.height = this.props.height
+      this.containerElement.current.style.height = this.props.height
     }
   }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.isOpen !== this.props.isOpen) {
       this.toggle(nextProps.isOpen)
     }
   }
+
   toggle(isOpen) {
     if (isOpen) setTimeout(() => this.open(), 0)
     else this.close()
   }
+
   open() {
-    const element = this.containerElement
+    const element = this.containerElement.current
     this.setHeightToAuto(element)
     this.updateOverflowStyle(true, true)
     return this.waitForHeightTransitionToEnd(element).then(() => {
@@ -62,8 +75,9 @@ class Collapsible extends React.Component {
       }
     })
   }
+
   close() {
-    const element = this.containerElement
+    const element = this.containerElement.current
     this.setTransitionEnabled(false, element)
     element.style.height = window.getComputedStyle(element).height
     this.forceRepaint(element)
@@ -76,12 +90,14 @@ class Collapsible extends React.Component {
       }
     })
   }
+
   updateOverflowStyle(isOpen, isTransitioning = false) {
-    this.containerElement.style.overflow =
+    this.containerElement.current.style.overflow =
       isTransitioning || !isOpen ? 'hidden' : 'visible'
     // this.containerElement.style.visibility =
     //   isTransitioning || isOpen ? 'visible' : 'hidden'
   }
+
   setHeightToAuto(element) {
     const prevHeight = element.style.height
     element.style.height = 'auto'
@@ -90,12 +106,16 @@ class Collapsible extends React.Component {
     this.forceRepaint(element)
     element.style.height = autoHeight
   }
+
   setTransitionEnabled(enabled, element) {
     element.style.transition = enabled ? '' : 'none'
   }
+
   forceRepaint(element) {
-    element.offsetHeight // see https://stackoverflow.com/a/3485654
+    // see https://stackoverflow.com/a/3485654
+    element.offsetHeight // eslint-disable-line no-unused-expressions
   }
+
   waitForHeightTransitionToEnd(element) {
     return new Promise(resolve => {
       element.addEventListener(
@@ -110,9 +130,10 @@ class Collapsible extends React.Component {
       )
     })
   }
+
   render() {
     return (
-      <div ref={e => (this.containerElement = e)}>
+      <div ref={this.containerElement}>
         {this.props.children}
         <style jsx>{`
           overflow: hidden;
@@ -129,7 +150,7 @@ Collapsible.propTypes = {
   children: PropTypes.node
 }
 
-/* TODO: rename CodeBlock, do inline as Code*/
+/* TODO: rename CodeBlock, do inline as Code */
 class Code extends React.Component {
   constructor(props) {
     super(props)
@@ -138,9 +159,11 @@ class Code extends React.Component {
       this
     )
   }
+
   handleCollapsibleButtonClick() {
     this.setState({ isOpen: !this.state.isOpen })
   }
+
   render() {
     const { state, props } = this
     const options = {
@@ -207,6 +230,7 @@ class Code extends React.Component {
 }
 
 Code.propTypes = {
+  children: PropTypes.node,
   collapsible: PropTypes.bool,
   lang: PropTypes.string
 }

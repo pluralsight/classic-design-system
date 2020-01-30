@@ -3,6 +3,462 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.22...@pluralsight/ps-design-system-viewtoggle@5.0.23) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.21...@pluralsight/ps-design-system-viewtoggle@5.0.22) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.20...@pluralsight/ps-design-system-viewtoggle@5.0.21) (2020-01-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.19...@pluralsight/ps-design-system-viewtoggle@5.0.20) (2020-01-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.18...@pluralsight/ps-design-system-viewtoggle@5.0.19) (2020-01-22)
+
+
+### Bug Fixes
+
+* **viewtoggle:** remove prop themeName from dom element ([fe01ed5](https://github.com/pluralsight/design-system/commit/fe01ed5f2b7a1cf745fbaff3f46e08c0f6ce81eb))
+
+
+
+
+
+## [5.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.16...@pluralsight/ps-design-system-viewtoggle@5.0.18) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.14...@pluralsight/ps-design-system-viewtoggle@5.0.16) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.12...@pluralsight/ps-design-system-viewtoggle@5.0.14) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.11...@pluralsight/ps-design-system-viewtoggle@5.0.12) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.10...@pluralsight/ps-design-system-viewtoggle@5.0.11) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.9...@pluralsight/ps-design-system-viewtoggle@5.0.10) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.8...@pluralsight/ps-design-system-viewtoggle@5.0.9) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.6...@pluralsight/ps-design-system-viewtoggle@5.0.7) (2019-12-19)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.5...@pluralsight/ps-design-system-viewtoggle@5.0.6) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.4...@pluralsight/ps-design-system-viewtoggle@5.0.5) (2019-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.3...@pluralsight/ps-design-system-viewtoggle@5.0.4) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+
+
+
+## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.2...@pluralsight/ps-design-system-viewtoggle@5.0.3) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.1...@pluralsight/ps-design-system-viewtoggle@5.0.2) (2019-12-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.0...@pluralsight/ps-design-system-viewtoggle@5.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.6...@pluralsight/ps-design-system-viewtoggle@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **viewtoggle:** esm export refactor ([e4121b1](https://github.com/pluralsight/design-system/commit/e4121b1))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** import pattern
+* **core:** import patterns
+
+
+
+
+
+## [4.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.5...@pluralsight/ps-design-system-viewtoggle@4.0.6) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [4.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.4...@pluralsight/ps-design-system-viewtoggle@4.0.5) (2019-10-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.3...@pluralsight/ps-design-system-viewtoggle@4.0.4) (2019-10-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.2...@pluralsight/ps-design-system-viewtoggle@4.0.3) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.1...@pluralsight/ps-design-system-viewtoggle@4.0.2) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@4.0.0...@pluralsight/ps-design-system-viewtoggle@4.0.1) (2019-08-26)
+
+
+### Bug Fixes
+
+* **viewtoggle:** error that happens when the active option is removed ([ad13efc](https://github.com/pluralsight/design-system/commit/ad13efc))
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@3.0.0...@pluralsight/ps-design-system-viewtoggle@4.0.0) (2019-08-09)
+
+
+### Bug Fixes
+
+* **viewtoggle:** dep range character ([e62529a](https://github.com/pluralsight/design-system/commit/e62529a))
+
+
+### Build System
+
+* **viewtoggle:** move theme package to peerDeps ([26ed7d7](https://github.com/pluralsight/design-system/commit/26ed7d7))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.12...@pluralsight/ps-design-system-viewtoggle@3.0.0) (2019-08-06)
+
+
+### Bug Fixes
+
+* **viewtoggle:** active item bg on initial render ([936dd82](https://github.com/pluralsight/design-system/commit/936dd82))
+
+
+### Code Refactoring
+
+* **viewtoggle:** change onSelect param order ([7607cd0](https://github.com/pluralsight/design-system/commit/7607cd0))
+
+
+### Features
+
+* **viewtoggle:** use hooks and forward refs ([99237ad](https://github.com/pluralsight/design-system/commit/99237ad))
+
+
+### Performance Improvements
+
+* **viewtoggle:** memoize initial index lookup ([33eea39](https://github.com/pluralsight/design-system/commit/33eea39))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** onSelect param order changed. the Event is the first parameter and the option index
+is the second
+* **viewtoggle:** latest react (v16.8.6) is now a requirement
+
+
+
+
+
+## [2.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.11...@pluralsight/ps-design-system-viewtoggle@2.0.12) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.10...@pluralsight/ps-design-system-viewtoggle@2.0.11) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.9...@pluralsight/ps-design-system-viewtoggle@2.0.10) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.8...@pluralsight/ps-design-system-viewtoggle@2.0.9) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.7...@pluralsight/ps-design-system-viewtoggle@2.0.8) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.6...@pluralsight/ps-design-system-viewtoggle@2.0.7) (2019-05-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.5...@pluralsight/ps-design-system-viewtoggle@2.0.6) (2019-05-01)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.4...@pluralsight/ps-design-system-viewtoggle@2.0.5) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.3...@pluralsight/ps-design-system-viewtoggle@2.0.4) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.2...@pluralsight/ps-design-system-viewtoggle@2.0.3) (2019-04-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.1...@pluralsight/ps-design-system-viewtoggle@2.0.2) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@2.0.0...@pluralsight/ps-design-system-viewtoggle@2.0.1) (2019-03-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.26...@pluralsight/ps-design-system-viewtoggle@2.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [1.3.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.25...@pluralsight/ps-design-system-viewtoggle@1.3.26) (2019-02-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [1.3.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.24...@pluralsight/ps-design-system-viewtoggle@1.3.25) (2019-01-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [1.3.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.23...@pluralsight/ps-design-system-viewtoggle@1.3.24) (2019-01-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [1.3.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.22...@pluralsight/ps-design-system-viewtoggle@1.3.23) (2018-12-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [1.3.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.20...@pluralsight/ps-design-system-viewtoggle@1.3.22) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [1.3.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.20...@pluralsight/ps-design-system-viewtoggle@1.3.21) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+## [1.3.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.19...@pluralsight/ps-design-system-viewtoggle@1.3.20) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
 ## [1.3.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@1.3.18...@pluralsight/ps-design-system-viewtoggle@1.3.19) (2018-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

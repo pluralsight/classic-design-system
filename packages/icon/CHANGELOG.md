@@ -3,6 +3,500 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.1.1...@pluralsight/ps-design-system-icon@17.1.2) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [17.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.1.0...@pluralsight/ps-design-system-icon@17.1.1) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [17.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.0.0...@pluralsight/ps-design-system-icon@17.1.0) (2020-01-28)
+
+
+### Features
+
+* **icon:** new chat icons ([37ef2f4](https://github.com/pluralsight/design-system/commit/37ef2f40d5f49e228dca81b5008704ea3c2e8e0e)), closes [#833](https://github.com/pluralsight/design-system/issues/833)
+
+
+
+
+
+# [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.9...@pluralsight/ps-design-system-icon@17.0.0) (2020-01-24)
+
+
+### Code Refactoring
+
+* **icon:** apply 2020 colors; remove many colors ([3b17071](https://github.com/pluralsight/design-system/commit/3b170713724cb2053877c9d748cf8ffeb7d2d5c2))
+
+
+### BREAKING CHANGES
+
+* **icon:** remove many colors
+
+
+
+
+
+## [16.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.7...@pluralsight/ps-design-system-icon@16.1.9) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [16.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.5...@pluralsight/ps-design-system-icon@16.1.7) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [16.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.3...@pluralsight/ps-design-system-icon@16.1.5) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [16.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.2...@pluralsight/ps-design-system-icon@16.1.3) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [16.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.1...@pluralsight/ps-design-system-icon@16.1.2) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [16.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.1.0...@pluralsight/ps-design-system-icon@16.1.1) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [16.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@16.0.1...@pluralsight/ps-design-system-icon@16.1.0) (2020-01-14)
+
+
+### Features
+
+* **icon:** enables treeshaking when used by parcel or webpack ([3517f8f](https://github.com/pluralsight/design-system/commit/3517f8f512f99867c7df194bc9665b09097e0739))
+
+
+
+
+
+# [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.1.1...@pluralsight/ps-design-system-icon@16.0.0) (2019-12-19)
+
+
+### Bug Fixes
+
+* **icon:** adds new line to end of generated file ([f2a9434](https://github.com/pluralsight/design-system/commit/f2a9434b2608e4827bba3b58c13e57979476b862))
+
+
+### Features
+
+* **icon:** build updated and cleanup script added ([00abab0](https://github.com/pluralsight/design-system/commit/00abab08952740f6703e726d2c1195e5087f7c67))
+* **icon:** new icons added ([7fa971a](https://github.com/pluralsight/design-system/commit/7fa971aaabe7465d20c52de67cf0bb0beff02084))
+* **icon:** now exports svgs with package ([0f85860](https://github.com/pluralsight/design-system/commit/0f858606f22c8eca3041b86122fb7def16e9be5a))
+* **icon:** rename logout -> signout and trend-up -> arrow-up-right ([795dc3d](https://github.com/pluralsight/design-system/commit/795dc3df1b613bbdf0b499385082acff86bc9641))
+* **icon:** update old icons ([6016a2c](https://github.com/pluralsight/design-system/commit/6016a2c2ef7f0847adae4fc3fa65507e94c068bb))
+
+
+### BREAKING CHANGES
+
+* **icon:** Logout renamed Signout, TrendUp renamed ArrowUpRight
+
+
+
+
+
+## [15.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.1.0...@pluralsight/ps-design-system-icon@15.1.1) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [15.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.0.2...@pluralsight/ps-design-system-icon@15.1.0) (2019-12-17)
+
+
+### Features
+
+* **icon:** add article ([da561a2](https://github.com/pluralsight/design-system/commit/da561a21a2c002f712e2b966bbb5c59b98ff1b39))
+
+
+
+
+
+## [15.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.0.1...@pluralsight/ps-design-system-icon@15.0.2) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+
+
+
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@15.0.0...@pluralsight/ps-design-system-icon@15.0.1) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@14.0.1...@pluralsight/ps-design-system-icon@15.0.0) (2019-12-02)
+
+
+### Bug Fixes
+
+* **icon:** dash-case aria|data attrs, camelcase other attrs ([7b3c0a5](https://github.com/pluralsight/design-system/commit/7b3c0a5dd0574b74284c57d96973de0275d8d62b))
+
+
+### Features
+
+* **icon:** named icon exports and cli util ([15e1e08](https://github.com/pluralsight/design-system/commit/15e1e08a8f04ac6a0aa2bf3cf78efeb412cd6dd6))
+
+
+### BREAKING CHANGES
+
+* **icon:** Icons must be refactored to used Named exports inatad of id prop. Please see docs for example
+
+
+
+
+
+## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@14.0.0...@pluralsight/ps-design-system-icon@14.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.3.0...@pluralsight/ps-design-system-icon@14.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+
+
+### BREAKING CHANGES
+
+* **core:** import patterns
+
+
+
+
+
+# [13.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.2.0...@pluralsight/ps-design-system-icon@13.3.0) (2019-10-21)
+
+
+### Features
+
+* **verticaltabs:** new verticaltabs component ([c1748e8](https://github.com/pluralsight/design-system/commit/c1748e8))
+
+
+
+
+
+# [13.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.1.0...@pluralsight/ps-design-system-icon@13.2.0) (2019-10-09)
+
+
+### Features
+
+* **icon:** alternate caret icons ([85d9cb0](https://github.com/pluralsight/design-system/commit/85d9cb0))
+
+
+
+
+
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.0.2...@pluralsight/ps-design-system-icon@13.1.0) (2019-10-04)
+
+
+### Features
+
+* **icon:** forward refs ([389d260](https://github.com/pluralsight/design-system/commit/389d260))
+
+
+
+
+
+## [13.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.0.1...@pluralsight/ps-design-system-icon@13.0.2) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@13.0.0...@pluralsight/ps-design-system-icon@13.0.1) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.6...@pluralsight/ps-design-system-icon@13.0.0) (2019-08-09)
+
+
+### Build System
+
+* **icon:** move theme package to peerDeps ([e2b567b](https://github.com/pluralsight/design-system/commit/e2b567b))
+
+
+### BREAKING CHANGES
+
+* **icon:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [12.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.5...@pluralsight/ps-design-system-icon@12.0.6) (2019-07-30)
+
+
+### Bug Fixes
+
+* **icon:** missing dependency ([ba0d201](https://github.com/pluralsight/design-system/commit/ba0d201))
+
+
+
+
+
+## [12.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.4...@pluralsight/ps-design-system-icon@12.0.5) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [12.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.3...@pluralsight/ps-design-system-icon@12.0.4) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [12.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.2...@pluralsight/ps-design-system-icon@12.0.3) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [12.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.1...@pluralsight/ps-design-system-icon@12.0.2) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@12.0.0...@pluralsight/ps-design-system-icon@12.0.1) (2019-05-14)
+
+
+### Bug Fixes
+
+* **icon:** fix a couple icons ([57902f3](https://github.com/pluralsight/design-system/commit/57902f3))
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.2.2...@pluralsight/ps-design-system-icon@12.0.0) (2019-05-01)
+
+
+### Features
+
+* **icon:** code, trend up, and clock icons ([fd4bfd9](https://github.com/pluralsight/design-system/commit/fd4bfd9)), closes [#494](https://github.com/pluralsight/design-system/issues/494)
+
+
+### BREAKING CHANGES
+
+* **icon:** previous code icon is now called `code-branded`
+
+
+
+
+
+## [11.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.2.1...@pluralsight/ps-design-system-icon@11.2.2) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [11.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.2.0...@pluralsight/ps-design-system-icon@11.2.1) (2019-04-23)
+
+
+### Bug Fixes
+
+* **icon:** build to transform clip-rule for react ([3ce6ba0](https://github.com/pluralsight/design-system/commit/3ce6ba0))
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.1.1...@pluralsight/ps-design-system-icon@11.2.0) (2019-04-08)
+
+
+### Features
+
+* **icon:** new video icon ([46e7d4e](https://github.com/pluralsight/design-system/commit/46e7d4e))
+
+
+
+
+
+## [11.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.1.0...@pluralsight/ps-design-system-icon@11.1.1) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@11.0.0...@pluralsight/ps-design-system-icon@11.1.0) (2019-03-12)
+
+
+### Features
+
+* **icon:** add channel-add icon ([96f532b](https://github.com/pluralsight/design-system/commit/96f532b))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@10.0.1...@pluralsight/ps-design-system-icon@11.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@10.0.0...@pluralsight/ps-design-system-icon@10.0.1) (2019-02-12)
+
+
+### Bug Fixes
+
+* **icon:** aria-label should update svg attr ([25126af](https://github.com/pluralsight/design-system/commit/25126af)), closes [#462](https://github.com/pluralsight/design-system/issues/462)
+
+
+
+
+
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.3...@pluralsight/ps-design-system-icon@10.0.0) (2019-01-02)
+
+
+### Features
+
+* **icon:** add new thumb icons; removed old one; test based on dist ([5e3e504](https://github.com/pluralsight/design-system/commit/5e3e504))
+
+
+### BREAKING CHANGES
+
+* **icon:** remove thumb icon; replaced with thumbUp thumbUpFill
+thumbDown and thumbDownFill
+
+
+
+
+
+## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.2...@pluralsight/ps-design-system-icon@9.0.3) (2018-12-21)
+
+
+### Bug Fixes
+
+* **icon:** prevent lingering svgs from being published ([52028b4](https://github.com/pluralsight/design-system/commit/52028b4))
+
+
+
+
+
+## [9.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.0...@pluralsight/ps-design-system-icon@9.0.2) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@9.0.0...@pluralsight/ps-design-system-icon@9.0.1) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.13.7...@pluralsight/ps-design-system-icon@9.0.0) (2018-12-14)
+
+
+### Bug Fixes
+
+* **icon:** bundle icon component with source ([25872df](https://github.com/pluralsight/design-system/commit/25872df))
+* **icon:** convert to pure component ([6f83141](https://github.com/pluralsight/design-system/commit/6f83141))
+* **icon:** props.children wasn't handled correctly ([51a3939](https://github.com/pluralsight/design-system/commit/51a3939))
+
+
+### Code Refactoring
+
+* **icon:** remove glamorous; add additional prop support ([4ec5d1e](https://github.com/pluralsight/design-system/commit/4ec5d1e))
+
+
+### BREAKING CHANGES
+
+* **icon:** the css prop is no longer supported on Icon; react componts for each icon are no
+longer available at <root>/js
+
+
+
+
+
 ## [8.13.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@8.13.6...@pluralsight/ps-design-system-icon@8.13.7) (2018-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

@@ -1,30 +1,33 @@
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css'
-import { defaultWithColor, subtleThemeWithColor } from '../js'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import { select } from '../js/index.js'
+import * as vars from '../vars/index.js'
 
 const styles = {
   badge: props =>
-    glamor.css(
-      css['.psds-badge'],
-      props.appearance === appearances.default
-        ? css[defaultWithColor(props.color)]
-        : css[subtleThemeWithColor(props.themeName, props.color)]
+    css(
+      stylesheet['.psds-badge'],
+      stylesheet[select(props.themeName, props.appearance, props.color)]
     )
 }
 
-const Badge = props => (
-  <div {...styles.badge(props)} {...filterReactProps(props)} />
-)
-
-Badge.appearances = vars.appearances
-Badge.colors = vars.colors
+const Badge = React.forwardRef((props, ref) => {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+  return (
+    <div
+      {...styles.badge(allProps)}
+      {...filterReactProps(allProps)}
+      ref={ref}
+    />
+  )
+})
 
 Badge.propTypes = {
   appearance: PropTypes.oneOf(Object.values(vars.appearances)),
@@ -36,7 +39,10 @@ Badge.defaultProps = {
   color: vars.colors.gray
 }
 
+Badge.appearances = vars.appearances
+Badge.colors = vars.colors
+
 export const appearances = vars.appearances
 export const colors = vars.colors
 
-export default withTheme(Badge)
+export default Badge

@@ -1,9 +1,8 @@
-import AForbiddenErrorPage from './forbidden-error-page'
-import ANotFoundErrorPage from './not-found-error-page'
-import AInternalServerErrorPage from './internal-server-error-page'
-import AServiceUnavailableErrorPage from './service-unavailable-error-page'
-
-export const ForbiddenErrorPage = AForbiddenErrorPage
-export const NotFoundErrorPage = ANotFoundErrorPage
-export const InternalServerErrorPage = AInternalServerErrorPage
-export const ServiceUnavailableErrorPage = AServiceUnavailableErrorPage
+export { default as ForbiddenErrorPage } from './forbidden-error-page.js'
+export { default as NotFoundErrorPage } from './not-found-error-page.js'
+export {
+  default as InternalServerErrorPage
+} from './internal-server-error-page.js'
+export {
+  default as ServiceUnavailableErrorPage
+} from './service-unavailable-error-page.js'

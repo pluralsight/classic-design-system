@@ -2,10 +2,9 @@
 
 exports[`Storyshots FocusManager no focusable children 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    onKeyDown={[Function]}
     style={
       Object {
         "color": "white",
@@ -25,10 +24,9 @@ exports[`Storyshots FocusManager no focusable children 1`] = `
 
 exports[`Storyshots FocusManager not trapped 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    onKeyDown={[Function]}
     style={
       Object {
         "color": "white",
@@ -67,10 +65,9 @@ exports[`Storyshots FocusManager not trapped 1`] = `
 
 exports[`Storyshots FocusManager trapped 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    onKeyDown={[Function]}
     style={
       Object {
         "color": "white",

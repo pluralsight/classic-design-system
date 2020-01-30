@@ -1,20 +1,21 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import Banner from '@pluralsight/ps-design-system-banner/react'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Checkbox from '@pluralsight/ps-design-system-checkbox/react'
-import core from '@pluralsight/ps-design-system-core'
-import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
-import Form from '@pluralsight/ps-design-system-form/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import Tag from '@pluralsight/ps-design-system-tag/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
-import TextArea from '@pluralsight/ps-design-system-textarea/react'
-import Radio from '@pluralsight/ps-design-system-radio/react'
-import Switch from '@pluralsight/ps-design-system-switch/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
-import { string as stringUtil } from '@pluralsight/ps-design-system-util'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import Banner from '@pluralsight/ps-design-system-banner'
+import Button from '@pluralsight/ps-design-system-button'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import * as core from '@pluralsight/ps-design-system-core'
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Form from '@pluralsight/ps-design-system-form'
+import { CloseIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
+import PropTypes from 'prop-types'
+import Tag from '@pluralsight/ps-design-system-tag'
+import * as Text from '@pluralsight/ps-design-system-text'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+import Radio from '@pluralsight/ps-design-system-radio'
+import React from 'react'
+import { capitalize } from '@pluralsight/ps-design-system-util'
+import Switch from '@pluralsight/ps-design-system-switch'
 
 import {
   Chrome,
@@ -22,16 +23,13 @@ import {
   Content,
   Example,
   Guideline,
-  Heading,
   Intro,
   P,
   PageHeading,
-  PropTypes,
   SectionHeading,
   TextLink,
-  ThemeToggle,
-  withServerProps
-} from '../../src/ui'
+  ThemeToggle
+} from '../../src/ui/index.js'
 
 class TagExample extends React.Component {
   constructor() {
@@ -39,9 +37,11 @@ class TagExample extends React.Component {
     this.state = { tags: ['javascript', 'flowtype', 'static-types'] }
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick(tag) {
     this.setState({ tags: this.state.tags.filter(t => t !== tag) })
   }
+
   render() {
     return (
       <div>
@@ -50,19 +50,12 @@ class TagExample extends React.Component {
             key={tag}
             style={{
               display: 'inline-block',
-              margin: `0 ${core.layout.spacingXSmall} ${
-                core.layout.spacingXSmall
-              } 0`
+              margin: `0 ${core.layout.spacingXSmall} ${core.layout.spacingXSmall} 0`
             }}
           >
             <Tag
               icon={
-                <Icon
-                  id={Icon.ids.close}
-                  why
-                  he
-                  onClick={this.handleClick.bind(this, tag)}
-                />
+                <CloseIcon why he onClick={this.handleClick.bind(this, tag)} />
               }
             >
               {tag}
@@ -80,6 +73,7 @@ class CheckboxExample extends React.Component {
     this.state = { values: {} }
     this.handleCheck = this.handleCheck.bind(this)
   }
+
   handleCheck(evt, checked, value, name) {
     if (checked) {
       this.setState({ values: { ...this.state.values, [name]: value } })
@@ -88,6 +82,7 @@ class CheckboxExample extends React.Component {
       this.setState({ values })
     }
   }
+
   render() {
     const features = Object.keys(this.state.values)
     const checked = name => features.indexOf(name) > -1
@@ -125,9 +120,11 @@ class SwitchExample extends React.Component {
     this.state = { checked: false }
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick(checked) {
     this.setState({ checked })
   }
+
   render() {
     const { state } = this
     return (
@@ -148,7 +145,7 @@ const Comp = props => (
         <span className="desc">{props.desc}</span>
         <span className="link">
           <TextLink href={props.href}>Docs</TextLink>
-          <Icon id={Icon.ids.caretRight} size={Icon.sizes.small} />
+          <CaretRightIcon size={CaretRightIcon.sizes.small} />
         </span>
       </div>
     </div>
@@ -181,6 +178,12 @@ const Comp = props => (
     `}</style>
   </div>
 )
+Comp.propTypes = {
+  children: PropTypes.node,
+  desc: PropTypes.node,
+  href: PropTypes.string,
+  title: PropTypes.node
+}
 
 const validate = state => {
   const rules = {
@@ -239,12 +242,14 @@ class InAppExample extends React.Component {
     this.handleChange = this.handleChange.bind(this)
     this.reset = this.reset.bind(this)
   }
+
   handleChange(evt) {
     const { name, value } = evt.target
     this.setState({
       [name]: value
     })
   }
+
   handleSubmit(evt) {
     evt.preventDefault()
     const errors = validate(this.state)
@@ -263,11 +268,13 @@ class InAppExample extends React.Component {
       })
     }
   }
+
   reset(evt) {
     this.setState(initialState)
   }
+
   render() {
-    const { props, state } = this
+    const { state } = this
     const errorMsg = name => state.errors[name]
     const isError = name => !!errorMsg(name)
     const hasErrors = Object.keys(state.errors).length > 0
@@ -317,7 +324,7 @@ class InAppExample extends React.Component {
                           name="level"
                           onClick={_ => this.setState({ level })}
                         >
-                          {stringUtil.capitalize(level)}
+                          {capitalize(level)}
                         </ActionMenu.Item>
                       ))}
                     </ActionMenu>
@@ -559,8 +566,11 @@ const FormFocusable = props => (
     `}</style>
   </div>
 )
+FormFocusable.propTypes = {
+  children: PropTypes.node
+}
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Form">
       <PageHeading packageName="form">Form</PageHeading>
@@ -577,7 +587,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        {`import Form from '@pluralsight/ps-design-system-form/react'`}
+        import Form from '@pluralsight/ps-design-system-form'
       </Code>
 
       <SectionHeading>In-app example</SectionHeading>
@@ -791,7 +801,7 @@ export default withServerProps(_ => (
       <SectionHeading>Guidelines</SectionHeading>
       <P>
         Write labels in sentence case. Capital case is not optimal for
-        scanability..
+        scannability.
       </P>
       <Guideline
         do={
@@ -959,4 +969,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

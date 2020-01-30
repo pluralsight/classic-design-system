@@ -2,121 +2,132 @@
 
 exports[`Storyshots Radio default 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
+    data-css-1a26704=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="radiogroup"
+    tabIndex={0}
   >
     <div
-      data-css-1a26704=""
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="radiogroup"
-      tabIndex="0"
+      data-css-xp79s5=""
     >
-      <div
-        data-css-xp79s5=""
+      <label
+        data-css-kn3wr0=""
       >
-        <label
-          data-css-kn3wr0=""
-          onClick={[Function]}
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-480533=""
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="red"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Red
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
           onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="red"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Red
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-480533=""
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="green"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Green
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
           onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="green"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Green
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-480533=""
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="blue"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Blue
-          </div>
-        </label>
-      </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="blue"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Blue
+        </div>
+      </label>
     </div>
   </div>
 </div>
@@ -124,125 +135,136 @@ exports[`Storyshots Radio default 1`] = `
 
 exports[`Storyshots Radio disabled & error 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
+    data-css-sz0dtt=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="radiogroup"
+    tabIndex={0}
   >
     <div
-      data-css-d41p20=""
-      onFocus={null}
-      onKeyDown={null}
-      role="radiogroup"
-      tabIndex="0"
+      data-css-xp79s5=""
     >
-      <div
-        data-css-xp79s5=""
+      <label
+        data-css-kn3wr0=""
       >
-        <label
-          data-css-kn3wr0=""
-          onClick={null}
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-8x851q=""
+            data-css-iwspcj=""
+            data-css-j6capy=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="red"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Red
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
           onClick={null}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="red"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Red
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-8x851q=""
+            data-css-iwspcj=""
+            data-css-j6capy=""
           >
             <div
               aria-checked={true}
-              data-css-4a14oy=""
+              data-css-12prt44=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-16yi4o9=""
+                data-css-1qtmg0s=""
               />
             </div>
           </div>
-          <input
-            checked={true}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="green"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Green
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={true}
+          data-css-gyrv08=""
           onClick={null}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="green"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Green
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-8x851q=""
+            data-css-iwspcj=""
+            data-css-j6capy=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="blue"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Blue
-          </div>
-        </label>
-      </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={null}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="blue"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Blue
+        </div>
+      </label>
     </div>
   </div>
 </div>
@@ -250,125 +272,136 @@ exports[`Storyshots Radio disabled & error 1`] = `
 
 exports[`Storyshots Radio disabled 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
+    data-css-sz0dtt=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="radiogroup"
+    tabIndex={0}
   >
     <div
-      data-css-d41p20=""
-      onFocus={null}
-      onKeyDown={null}
-      role="radiogroup"
-      tabIndex="0"
+      data-css-xp79s5=""
     >
-      <div
-        data-css-xp79s5=""
+      <label
+        data-css-kn3wr0=""
       >
-        <label
-          data-css-kn3wr0=""
-          onClick={null}
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-jg1k2y=""
+            data-css-iwspcj=""
+            data-css-rbpa8o=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="red"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Red
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
           onClick={null}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="red"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Red
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-jg1k2y=""
+            data-css-iwspcj=""
+            data-css-rbpa8o=""
           >
             <div
               aria-checked={true}
-              data-css-4a14oy=""
+              data-css-12prt44=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-16yi4o9=""
+                data-css-1qtmg0s=""
               />
             </div>
           </div>
-          <input
-            checked={true}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="green"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Green
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={true}
+          data-css-gyrv08=""
           onClick={null}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="green"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Green
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-jg1k2y=""
+            data-css-iwspcj=""
+            data-css-rbpa8o=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="blue"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Blue
-          </div>
-        </label>
-      </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={null}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="blue"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Blue
+        </div>
+      </label>
     </div>
   </div>
 </div>
@@ -376,125 +409,136 @@ exports[`Storyshots Radio disabled 1`] = `
 
 exports[`Storyshots Radio error 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
+    data-css-1a26704=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="radiogroup"
+    tabIndex={0}
   >
     <div
-      data-css-1a26704=""
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="radiogroup"
-      tabIndex="0"
+      data-css-xp79s5=""
     >
-      <div
-        data-css-xp79s5=""
+      <label
+        data-css-kn3wr0=""
       >
-        <label
-          data-css-kn3wr0=""
-          onClick={[Function]}
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-11lyqbs=""
+            data-css-iwspcj=""
+            data-css-mmyfiy=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="red"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Red
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
           onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="red"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Red
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-11lyqbs=""
+            data-css-iwspcj=""
+            data-css-mmyfiy=""
           >
             <div
               aria-checked={true}
-              data-css-4a14oy=""
+              data-css-12prt44=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-16yi4o9=""
+                data-css-1qtmg0s=""
               />
             </div>
           </div>
-          <input
-            checked={true}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="green"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Green
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-xp79s5=""
-      >
-        <label
-          data-css-kn3wr0=""
+        </div>
+        <input
+          checked={true}
+          data-css-gyrv08=""
           onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="green"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Green
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
         >
           <div
-            data-css-11lyqbs=""
+            data-css-iwspcj=""
+            data-css-mmyfiy=""
           >
             <div
               aria-checked={false}
-              data-css-dbvyuf=""
+              data-css-1e1erju=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             />
           </div>
-          <input
-            checked={false}
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex="-1"
-            type="radio"
-            value="blue"
-          />
-          <div
-            data-css-pgc406=""
-          >
-            Blue
-          </div>
-        </label>
-      </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="blue"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Blue
+        </div>
+      </label>
     </div>
   </div>
 </div>
@@ -502,50 +546,205 @@ exports[`Storyshots Radio error 1`] = `
 
 exports[`Storyshots Radio one selected 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
+    data-css-1a26704=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="radiogroup"
+    tabIndex={0}
   >
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
+        >
+          <div
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
+          >
+            <div
+              aria-checked={false}
+              data-css-1e1erju=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="red"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Red
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
+        >
+          <div
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
+          >
+            <div
+              aria-checked={true}
+              data-css-12prt44=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            >
+              <div
+                data-css-1qtmg0s=""
+              />
+            </div>
+          </div>
+        </div>
+        <input
+          checked={true}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="green"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Green
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
+        >
+          <div
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
+          >
+            <div
+              aria-checked={false}
+              data-css-1e1erju=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="blue"
+        />
+        <div
+          data-css-wbyy03=""
+        >
+          Blue
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Radio state demo 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "color": "#555555",
+        }
+      }
+    >
+      Selected: 
+      red
+    </div>
     <div
       data-css-1a26704=""
       onFocus={[Function]}
       onKeyDown={[Function]}
+      onSelect={[Function]}
       role="radiogroup"
-      tabIndex="0"
+      tabIndex={0}
     >
       <div
         data-css-xp79s5=""
       >
         <label
           data-css-kn3wr0=""
-          onClick={[Function]}
         >
           <div
-            data-css-480533=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-1lu7sfl=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={true}
+                data-css-12prt44=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              >
+                <div
+                  data-css-1qtmg0s=""
+                />
+              </div>
+            </div>
           </div>
           <input
-            checked={false}
+            checked={true}
             data-css-gyrv08=""
+            onClick={[Function]}
             readOnly={true}
             tabIndex="-1"
             type="radio"
             value="red"
           />
           <div
-            data-css-pgc406=""
+            data-css-wbyy03=""
           >
             Red
           </div>
@@ -556,33 +755,34 @@ exports[`Storyshots Radio one selected 1`] = `
       >
         <label
           data-css-kn3wr0=""
-          onClick={[Function]}
         >
           <div
-            data-css-480533=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={true}
-              data-css-4a14oy=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
+              data-css-1lu7sfl=""
+              data-css-iwspcj=""
             >
               <div
-                data-css-16yi4o9=""
+                aria-checked={false}
+                data-css-1e1erju=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
               />
             </div>
           </div>
           <input
-            checked={true}
+            checked={false}
             data-css-gyrv08=""
+            onClick={[Function]}
             readOnly={true}
             tabIndex="-1"
             type="radio"
             value="green"
           />
           <div
-            data-css-pgc406=""
+            data-css-wbyy03=""
           >
             Green
           </div>
@@ -593,171 +793,38 @@ exports[`Storyshots Radio one selected 1`] = `
       >
         <label
           data-css-kn3wr0=""
-          onClick={[Function]}
         >
           <div
-            data-css-480533=""
+            data-css-1gbdc34=""
           >
             <div
-              aria-checked={false}
-              data-css-dbvyuf=""
-              onFocus={[Function]}
-              role="radio"
-              tabIndex="-1"
-            />
+              data-css-1lu7sfl=""
+              data-css-iwspcj=""
+            >
+              <div
+                aria-checked={false}
+                data-css-1e1erju=""
+                onFocus={[Function]}
+                role="radio"
+                tabIndex="-1"
+              />
+            </div>
           </div>
           <input
             checked={false}
             data-css-gyrv08=""
+            onClick={[Function]}
             readOnly={true}
             tabIndex="-1"
             type="radio"
             value="blue"
           />
           <div
-            data-css-pgc406=""
+            data-css-wbyy03=""
           >
             Blue
           </div>
         </label>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Radio state demo 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <div>
-      <div
-        style={
-          Object {
-            "color": "#555555",
-          }
-        }
-      >
-        Selected: 
-        red
-      </div>
-      <div
-        data-css-1a26704=""
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        role="radiogroup"
-        tabIndex="0"
-      >
-        <div
-          data-css-xp79s5=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-480533=""
-            >
-              <div
-                aria-checked={true}
-                data-css-4a14oy=""
-                onFocus={[Function]}
-                role="radio"
-                tabIndex="-1"
-              >
-                <div
-                  data-css-16yi4o9=""
-                />
-              </div>
-            </div>
-            <input
-              checked={true}
-              data-css-gyrv08=""
-              readOnly={true}
-              tabIndex="-1"
-              type="radio"
-              value="red"
-            />
-            <div
-              data-css-pgc406=""
-            >
-              Red
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-xp79s5=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-480533=""
-            >
-              <div
-                aria-checked={false}
-                data-css-dbvyuf=""
-                onFocus={[Function]}
-                role="radio"
-                tabIndex="-1"
-              />
-            </div>
-            <input
-              checked={false}
-              data-css-gyrv08=""
-              readOnly={true}
-              tabIndex="-1"
-              type="radio"
-              value="green"
-            />
-            <div
-              data-css-pgc406=""
-            >
-              Green
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-xp79s5=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-          >
-            <div
-              data-css-480533=""
-            >
-              <div
-                aria-checked={false}
-                data-css-dbvyuf=""
-                onFocus={[Function]}
-                role="radio"
-                tabIndex="-1"
-              />
-            </div>
-            <input
-              checked={false}
-              data-css-gyrv08=""
-              readOnly={true}
-              tabIndex="-1"
-              type="radio"
-              value="blue"
-            />
-            <div
-              data-css-pgc406=""
-            >
-              Blue
-            </div>
-          </label>
-        </div>
       </div>
     </div>
   </div>

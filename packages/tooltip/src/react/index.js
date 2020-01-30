@@ -1,40 +1,43 @@
-import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { transparentize } from 'polished'
 
-import css from '../css'
-import * as vars from '../vars'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-const fade = glamor.css.keyframes(
-  css[`@keyframes psds-tooltip__keyframes__fade`]
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
+
+const fade = css.keyframes(
+  stylesheet[`@keyframes psds-tooltip__keyframes__fade`]
 )
 const styles = {
-  tooltip: ({ appearance, onClose, tailPosition }) =>
-    glamor.css({
-      ...css[`.psds-tooltip`]({ fade }),
-      ...css[`.psds-tooltip--appearance-${appearance}`],
-      ...(typeof onClose === 'function'
-        ? css[`.psds-tooltip--closeable`]
-        : null),
-      ':after': tailPosition
-        ? {
-            ...css[`.psds-tooltip:after`],
-            ...css[`.psds-tooltip--appearance-${appearance}:after`],
-            ...css[`.psds-tooltip--tailPosition-${tailPosition}:after`]
-          }
-        : null
-    }),
-  close: ({ appearance }) =>
-    glamor.css({
-      ...css[`.psds-tooltip__close`],
-      ...css[`.psds-tooltip__close--appearance-${appearance}`],
-      '> svg': {
-        ...css[`.psds-tooltip__close > svg`],
-        ...css[`.psds-tooltip__close--appearance-${appearance} > svg`]
-      }
-    })
+  tail: ({ appearance, onClose, tailPosition }) => {
+    const label = 'psds-tooltip__tail'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--appearance-${appearance}`]),
+      css(stylesheet[`.${label}--tailPosition-${tailPosition}`])
+    )
+  },
+  tooltip: ({ appearance, onClose }) => {
+    const label = 'psds-tooltip'
+    const closeable = typeof onClose === 'function'
+
+    return compose(
+      css(stylesheet[`.${label}`]({ fade })),
+      css(stylesheet[`.${label}--appearance-${appearance}`]),
+      closeable && css(stylesheet[`.${label}--closeable`])
+    )
+  },
+  close: ({ appearance }) => {
+    const label = 'psds-tooltip__close'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--appearance-${appearance}`])
+    )
+  }
 }
 
 const CloseButton = props => (
@@ -53,33 +56,27 @@ const CloseButton = props => (
     </svg>
   </button>
 )
-
-class Tooltip extends React.Component {
-  render() {
-    const { props } = this
-    const tooltipProps = {
-      ...styles.tooltip(props),
-      ...(props.innerRef ? { ref: props.innerRef } : null),
-      ...(props.style ? { style: props.style } : null),
-      ...(props.className ? { className: props.className } : null)
-    }
-    return (
-      <div {...tooltipProps}>
-        {typeof props.onClose === 'function' && (
-          <CloseButton appearance={props.appearance} onClose={props.onClose} />
-        )}
-        {props.children}
-      </div>
-    )
-  }
+CloseButton.propTypes = {
+  onClose: PropTypes.func.isRequired
 }
+
+const Tooltip = React.forwardRef((props, ref) => {
+  return (
+    <div {...styles.tooltip(props)} {...filterReactProps(props)} ref={ref}>
+      {typeof props.onClose === 'function' && (
+        <CloseButton appearance={props.appearance} onClose={props.onClose} />
+      )}
+      {props.children}
+      {props.tailPosition && <div {...styles.tail(props)} aria-hidden />}
+    </div>
+  )
+})
 
 Tooltip.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   children: PropTypes.string.isRequired,
-  innerRef: PropTypes.func,
-  tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions)),
-  onClose: PropTypes.func
+  onClose: PropTypes.func,
+  tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions))
 }
 Tooltip.defaultProps = {
   appearance: vars.appearances.basic

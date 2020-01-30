@@ -1,7 +1,7 @@
-import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react'
-import core from '@pluralsight/ps-design-system-core'
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -11,9 +11,8 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class AnimationDemo extends React.Component {
   constructor(props) {
@@ -27,9 +26,11 @@ class AnimationDemo extends React.Component {
       this.setState({ value: rando > 100 ? 100 : rando })
     }, 2500)
   }
+
   componentWillUnmount() {
     clearInterval(this.interval)
   }
+
   render() {
     return (
       <div className="root">
@@ -74,7 +75,7 @@ class AnimationDemo extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Circular Progress">
       <PageHeading packageName="circularprogress">
@@ -89,7 +90,7 @@ export default withServerProps(_ => (
       <P>Include a React component in your project:</P>
       <Code language="javascript">
         import CircularProgress from
-        '@pluralsight/ps-design-system-circularprogress/react'
+        '@pluralsight/ps-design-system-circularprogress'
       </Code>
 
       <PropTypes
@@ -146,4 +147,4 @@ export default withServerProps(_ => (
       <AnimationDemo />
     </Content>
   </Chrome>
-))
+)

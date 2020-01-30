@@ -1,25 +1,18 @@
-import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
+import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 import {
   Chrome,
-  Code,
   Content,
-  Example,
-  Heading,
   Intro,
   Link,
   P,
   PageHeading,
-  PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class Boxes extends React.Component {
   constructor(props) {
@@ -28,12 +21,15 @@ class Boxes extends React.Component {
     this.handleOpen = this.handleOpen.bind(this)
     this.handleClose = this.handleClose.bind(this)
   }
+
   handleOpen(modalSrc) {
     this.setState({ modalSrc })
   }
+
   handleClose() {
     this.setState({ modalSrc: null })
   }
+
   render() {
     const { props } = this
     return (
@@ -53,7 +49,7 @@ class Boxes extends React.Component {
           ))}
         </EqualColumnLayout>
         {this.state.modalSrc && (
-          <Dialog modal onClose={this.handleClose}>
+          <Dialog modal onClose={this.handleClose} aria-label="Enlarge graphic">
             <img className="imageLarge" src={this.state.modalSrc} />
           </Dialog>
         )}
@@ -82,8 +78,12 @@ class Boxes extends React.Component {
     )
   }
 }
+Boxes.propTypes = {
+  children: PropTypes.node,
+  count: PropTypes.number
+}
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Iconography">
       <PageHeading>Iconography</PageHeading>
@@ -95,18 +95,19 @@ export default withServerProps(_ => (
         adding an{' '}
         <Link href="https://github.com/pluralsight/design-system/issues/new">
           issue in Github
-        </Link>. For implementation instructions, visit the{' '}
+        </Link>
+        . For implementation instructions, visit the{' '}
         <Link href="/components/icon">Icon component page</Link>.
       </Intro>
-      <Button
-        href="/static/img/patterns/iconography/icon-grid-template.sketch"
-        iconAlign={Button.iconAligns.right}
-        icon={<Icon id={Icon.ids.download} />}
-        size={Button.sizes.large}
-        appearance={Button.appearances.stroke}
-      >
-        Download Sketch template
-      </Button>
+
+      <SectionHeading>Design asset</SectionHeading>
+      <P>
+        To design on this grid, you might want to use the{' '}
+        <Link href="https://www.figma.com/file/XCSM7mJXGr1pC3y3Tfgu6bLS/Icon-Grid-Template?node-id=0%3A1">
+          icon grid template Figma file
+        </Link>
+        .
+      </P>
 
       <SectionHeading>Canvas Size, Padding, Live Area</SectionHeading>
       <Boxes>
@@ -216,4 +217,4 @@ export default withServerProps(_ => (
       </Boxes>
     </Content>
   </Chrome>
-))
+)

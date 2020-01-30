@@ -1,52 +1,49 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "8.13.7",
+  "version": "17.1.2",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
-  "main": "index.js",
-  "module": "index.js",
+  "keywords": [],
+  "bin": {
+    "psds-icon": "bin/icon"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
-    "build": "run-s build:js build:css",
-    "build-storybook": "build-storybook",
-    "build:css": "build-css",
-    "build:js": "babel src --out-dir dist --ignore spec.js --copy-files",
+    "build": "run-s build:svg build:js build:cjs build:css copy:svg",
+    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
+    "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
+    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
+    "prebuild:svg": "npm run clean:svg",
+    "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
     "build:watch": "npm run build:js -- --watch",
+    "clean:svg": "node bin/icon -s src/svg --clean",
+    "copy:svg": "node cli/copy-svgs.js",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "svg:clean": "node build/svg-clean",
     "test": "jest",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
-  "keywords": [],
+  "sideEffects": false,
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^4.4.0",
-    "glamorous": "^4.1.0",
-    "prop-types": "^15.5.10"
+    "@pluralsight/ps-design-system-core": "^5.5.1",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
+    "arg": "^4.1.1",
+    "fast-glob": "^3.1.0",
+    "prop-types": "^15.7.2",
+    "svgo": "^1.3.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.0.24",
-    "glamor": "^2.20.0",
-    "react": ">=0.15.0 < 17.0.0"
+    "@pluralsight/ps-design-system-normalize": "^3.1.7",
+    "glamor": "^2.20.40",
+    "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.9.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^1.2.6",
-    "@storybook/addon-storyshots": "^4.0.0",
-    "@storybook/addons": "^4.0.0",
-    "@storybook/react": "^4.0.0",
-    "@tsuyoshiwada/htmltojsx": "0.0.4",
-    "babel-cli": "^6.24.1",
-    "babel-plugin-glamorous-displayname": "^1.1.3",
-    "babel-plugin-preval": "^1.4.2",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "jest": "^23.6.0",
-    "npm-run-all": "^4.1.2",
-    "raf": "^3.4.0",
-    "svgo": "0.5.6"
+    "@pluralsight/ps-design-system-build": "^1.11.10",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.9",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.16",
+    "ncp": "^2.0.0"
   }
 }

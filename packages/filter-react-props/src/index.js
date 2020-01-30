@@ -1,7 +1,7 @@
 import memoize from 'fast-memoize'
 import reactHTMLAttributes from 'react-html-attributes'
 
-import REACT_PROPS from './react-props'
+import REACT_PROPS from './react-props.js'
 
 const SUPPORTED_HTML_ATTRS = reactHTMLAttributes['*']
 const SUPPORTED_CSS_PROPS = ['color', 'height', 'width']

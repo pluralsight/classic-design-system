@@ -1,6 +1,12 @@
-import core from '@pluralsight/ps-design-system-core'
+import {
+  colorsTextIcon,
+  colorsRed,
+  colorsBlue,
+  colorsGreen,
+  colorsYellow
+} from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   [`.psds-icon`]: {
@@ -21,10 +27,28 @@ export default {
   [`.psds-icon > svg`]: {
     fill: 'currentColor'
   },
-  ...Object.keys(vars.colors).reduce((acc, color) => {
-    acc[`.psds-icon--color-${color} > svg`] = {
-      fill: core.colors[color]
-    }
-    return acc
-  }, {})
+  '.psds-icon--color-textIconHighOnDark > svg': {
+    fill: colorsTextIcon.highOnDark
+  },
+  '.psds-icon--color-textIconLowOnDark > svg': {
+    fill: colorsTextIcon.lowOnDark
+  },
+  '.psds-icon--color-textIconHighOnLight > svg': {
+    fill: colorsTextIcon.highOnLight
+  },
+  '.psds-icon--color-textIconLowOnLight > svg': {
+    fill: colorsTextIcon.lowOnLight
+  },
+  '.psds-icon--color-red > svg': {
+    fill: colorsRed.base
+  },
+  '.psds-icon--color-blue > svg': {
+    fill: colorsBlue.base
+  },
+  '.psds-icon--color-green > svg': {
+    fill: colorsGreen.base
+  },
+  '.psds-icon--color-yellow > svg': {
+    fill: colorsYellow.base
+  }
 }

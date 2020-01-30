@@ -1,15 +1,8 @@
-import core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 
-import {
-  Chrome,
-  Content,
-  Doc,
-  P,
-  PageHeading,
-  withServerProps
-} from '../../src/ui'
+import { Chrome, Content, Doc, PageHeading } from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Components">
       <PageHeading>Step-by-step Components</PageHeading>
@@ -17,11 +10,11 @@ export default withServerProps(_ => (
 
 ## Before you start
 
-Please collaborate with the Design System team in [#design-system-help](slack://channel?team=pluralsight&id=design-system-help) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
+Please collaborate with the Design System team in [#design-system](slack://channel?team=pluralsight&id=design-system) on the whats, whys, and hows of your component.  The [Contribute Code](/contribute/code) doc has some relevant insights into how and why we collaborate.
 
 ## Create your component
 
-1. From the project root run \`npm run component:create\`
+1. From the project root run \`npm run generate\`
 1. Write your component.  Copy conventions you see in other components.  TODO: list some of these conventions somewhere. :)
 1. Commit to a feature branch.  (An [example commit](https://github.com/pluralsight/design-system/commit/ec0fc78ecc6ebf9f91056e59c581bfaaee8ee7cd) of a new component)
 1. Send up the [Pull Request](https://github.com/pluralsight/design-system/pulls).  Include relevant details in the PR template on Github.
@@ -40,4 +33,4 @@ There's probably more important and helpful steps that we could include here.  P
 `}</Doc>
     </Content>
   </Chrome>
-))
+)

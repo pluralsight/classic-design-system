@@ -1,21 +1,20 @@
 import React from 'react'
 
-import Badge from '@pluralsight/ps-design-system-badge/react'
-import core from '@pluralsight/ps-design-system-core'
+import Badge from '@pluralsight/ps-design-system-badge'
+import * as core from '@pluralsight/ps-design-system-core'
+import PropTypes from 'prop-types'
 
-import ChangeLog from './change-log'
-import Heading from './heading'
+import ChangeLog from './change-log.js'
+import Heading from './heading.js'
 
 const BadgeSpacer = () => <span style={{ width: core.layout.spacingLarge }} />
 
-const renderBeta = ({ beta }) => {
-  if (!beta) return null
-
+function Beta(props) {
   return (
-    <React.Fragment>
+    <>
       <BadgeSpacer />
       <Badge color={Badge.colors.blue}>Beta</Badge>
-    </React.Fragment>
+    </>
   )
 }
 
@@ -30,20 +29,27 @@ const ChangeLogContainer = props => (
     `}</style>
   </div>
 )
+ChangeLogContainer.propTypes = {
+  children: PropTypes.node
+}
 
-const renderChangeLog = ({ packageName }) =>
-  packageName ? (
-    <ChangeLogContainer>
-      <ChangeLog packageName={packageName} />
-    </ChangeLogContainer>
-  ) : null
-
-export default props => (
-  <Heading size={Heading.sizes.xLarge}>
-    <h1 style={{ display: 'flex', alignItems: 'center' }}>
-      {props.children}
-      {renderBeta(props)}
-      {renderChangeLog(props)}
-    </h1>
-  </Heading>
-)
+export default function PageHeading(props) {
+  return (
+    <Heading size={Heading.sizes.xLarge}>
+      <h1 style={{ display: 'flex', alignItems: 'center' }}>
+        {props.children}
+        {props.beta && <Beta />}
+        {props.packageName && (
+          <ChangeLogContainer>
+            <ChangeLog packageName={props.packageName} />
+          </ChangeLogContainer>
+        )}
+      </h1>
+    </Heading>
+  )
+}
+PageHeading.propTypes = {
+  beta: PropTypes.bool,
+  children: PropTypes.node,
+  packageName: PropTypes.string
+}

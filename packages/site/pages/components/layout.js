@@ -1,27 +1,27 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
-  PageHeadingLayout,
   AsideLayout,
-  EqualColumnLayout
-} from '@pluralsight/ps-design-system-layout/react'
-import Badge from '@pluralsight/ps-design-system-badge/react'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+  EqualColumnLayout,
+  PageHeadingLayout,
+  PageWidthLayout
+} from '@pluralsight/ps-design-system-layout'
+import Badge from '@pluralsight/ps-design-system-badge'
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+import ReactPropTypes from 'prop-types'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
   Code,
   Content,
-  Example,
-  Heading,
   P,
   PageHeading,
   PropTypes,
   SectionHeading,
-  TextLink,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
 const BlueBox = props => (
   <div className="bluebox" {...props}>
@@ -39,6 +39,9 @@ const BlueBox = props => (
     `}</style>
   </div>
 )
+BlueBox.propTypes = {
+  children: ReactPropTypes.any
+}
 
 const PageHeadingLayoutOutput = _ => (
   <div className="page">
@@ -112,6 +115,101 @@ const PageHeadingLayoutOutput = _ => (
         top: 0;
         left: 0;
         border-right-width: 1px;
+      }
+    `}</style>
+  </div>
+)
+
+const PageWidthLayoutOutput = _ => (
+  <div className="page">
+    <Theme>
+      <div className="fullBleed">
+        <div className="body">
+          <PageWidthLayout>
+            <div className="content">
+              Contents in front of full-bleed background
+              <div className="marginBg" />
+              <div className="margin marginVert marginRight" />
+              <div className="margin marginVert marginLeft" />
+            </div>
+          </PageWidthLayout>
+        </div>
+      </div>
+      <div className="divider" />
+      <div className="body">
+        <PageWidthLayout>
+          <div className="content">
+            Normal case contents layout
+            <div className="marginBg" />
+            <div className="margin marginVert marginRight" />
+            <div className="margin marginVert marginLeft" />
+          </div>
+        </PageWidthLayout>
+      </div>
+    </Theme>
+    <style jsx>{`
+      .page {
+        background: ${core.colors.gray06};
+        color: ${core.colors.white};
+      }
+      .fullBleed {
+        background: rebeccapurple;
+      }
+      .body {
+        position: relative;
+        margin: 0 ${core.layout.spacingXXLarge};
+        background: ${core.colors.gray06};
+      }
+      .divider {
+        border-top: 1px dashed #ff00ce;
+        margin: 0 ${core.layout.spacingXXLarge};
+        height: 0;
+      }
+      .content {
+        height: 134px;
+        background: #223a56;
+      }
+      .marginBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: ${core.layout.spacingLarge} solid rgba(232, 10, 137, 0.3);
+        border-top-width: 0;
+        border-bottom-width: 0;
+      }
+      .margin {
+        position: absolute;
+        border-style: dashed;
+        border-color: #ff00ce;
+        border-width: 0;
+      }
+      .marginVert {
+        height: 100%;
+        width: ${core.layout.spacingLarge};
+      }
+      .marginRight {
+        top: 0;
+        right: 0;
+        border-left-width: 1px;
+      }
+      .marginLeft {
+        top: 0;
+        left: 0;
+        border-right-width: 1px;
+      }
+      @media (min-width: 769px) {
+        .body:after {
+          width: calc(100% - 2 * ${core.layout.spacingXLarge});
+        }
+        .marginBg {
+          border-left-width: ${core.layout.spacingXLarge};
+          border-right-width: ${core.layout.spacingXLarge};
+        }
+        .marginVert {
+          width: ${core.layout.spacingXLarge};
+        }
       }
     `}</style>
   </div>
@@ -275,12 +373,10 @@ const VerticalGridVisual = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Layout">
-      <PageHeading packageName="layout" beta>
-        Layout
-      </PageHeading>
+      <PageHeading packageName="layout">Layout</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -290,10 +386,11 @@ export default withServerProps(_ => (
       <P>Include a React component in your project:</P>
       <Code language="javascript">
         {`import {
-  PageHeadingLayout,
   AsideLayout,
-  EqualColumnLayout
-} from '@pluralsight/ps-design-system-layout/react'`}
+  EqualColumnLayout,
+  PageHeadingLayout,
+  PageWidthLayout
+} from '@pluralsight/ps-design-system-layout'`}
       </Code>
 
       <SectionHeading>Page Heading Layout</SectionHeading>
@@ -325,17 +422,38 @@ export default withServerProps(_ => (
             'React.element[]',
             null,
             null,
-            <span>Actionable elements to place in the top-right</span>
+            <span key="a">Actionable elements to place in the top-right</span>
           ]),
           PropTypes.row([
             'heading',
             'React.element',
             true,
             null,
-            <span>Heading element to display as page title</span>
+            <span key="a">Heading element to display as page title</span>
           ])
         ]}
       />
+
+      <SectionHeading>Page Width Layout</SectionHeading>
+      <P>
+        This layout will help you consistently match the max width of the site
+        and the standard margins.
+      </P>
+      <P>
+        We anticipate this will be used to support full-bleed background
+        layouts, where the background might run to the edge of the viewport, but
+        the content should still be constrained.
+      </P>
+      <PageWidthLayoutOutput />
+      <Code language="javascript">{`<div style={{ background: 'rebeccapurple' }}>
+  <PageWidthLayout>
+    Contents in front of full-bleed background
+  </PageHeadingLayout>
+</div>
+<PageWidthLayout>
+  Normal case contents layout
+</PageHeadingLayout>
+`}</Code>
 
       <SectionHeading>Aside Layout</SectionHeading>
       <P>Use this layout for any 1/4, 3/4-proportioned layouts.</P>
@@ -353,26 +471,26 @@ export default withServerProps(_ => (
         props={[
           PropTypes.row([
             'aside',
-            'React.element',
+            <code key="a">AsideLayout.Aside</code>,
             true,
             null,
-            <span>Content for aside</span>
+            <span key="b">Content for aside</span>
           ]),
           PropTypes.row([
             'asidePosition',
             PropTypes.union(AsideLayout.asidePositions),
             false,
-            <code>first</code>,
-            <span>
+            <code key="a">first</code>,
+            <span key="b">
               Aside position (from <code>AsideLayout.asidePositions</code>)
             </span>
           ]),
           PropTypes.row([
             'main',
-            'React.element',
+            <code key="a">AsideLayout.Main</code>,
             true,
             null,
-            <span>Main content</span>
+            <span key="b">Main content</span>
           ])
         ]}
       />
@@ -417,15 +535,15 @@ export default withServerProps(_ => (
             'count',
             PropTypes.union(EqualColumnLayout.counts),
             false,
-            <code>four</code>,
-            <span>Number of columns in a row at full width</span>
+            <code key="a">four</code>,
+            <span key="b">Number of columns in a row at full width</span>
           ]),
           PropTypes.row([
             'children',
             'single parent element | children array',
             false,
-            <code>div</code>,
-            <span>
+            <code key="a">div</code>,
+            <span key="b">
               Where children must accept <code>data-css-*</code> props
             </span>
           ])
@@ -449,4 +567,4 @@ export default withServerProps(_ => (
       <VerticalGridVisual />
     </Content>
   </Chrome>
-))
+)

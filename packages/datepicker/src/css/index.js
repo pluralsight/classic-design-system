@@ -1,14 +1,23 @@
-import core from '@pluralsight/ps-design-system-core'
-import * as iconVars from '@pluralsight/ps-design-system-icon/vars'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from 'polished'
+import {
+  colorsStatus,
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  colorsTextIcon,
+  colorsBorder,
+  colorsPrimaryAction,
+  layout,
+  type,
+  motion
+} from '@pluralsight/ps-design-system-core'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const dayDimensions = {
   height: '32px',
   width: '32px',
-  margin: `0 2px ${core.layout.spacingXSmall} 0`,
+  margin: `0 2px ${layout.spacingXSmall} 0`,
   border: '3px solid transparent'
 }
 
@@ -30,114 +39,105 @@ export default {
     border: 'none',
     display: 'inline-block',
     background: 'none',
-    color: core.colors.gray05
-  },
-  '.psds-date-picker__sub-field:focus': {
-    outline: 'none'
+    color: colorsTextIcon.highOnLight,
+
+    '&:focus': { outline: 'none' },
+    '&::placeholder': { color: colorsTextIcon.lowOnLight }
   },
   [`.psds-date-picker__sub-field--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray01
+    color: colorsTextIcon.highOnDark,
+
+    '&::placeholder': { color: colorsTextIcon.lowOnDark }
   },
 
   // __sub-field-divider
   '.psds-date-picker__sub-field-divider': {
     border: 'none',
-    color: core.colors.gray05
+    color: colorsTextIcon.highOnLight
   },
-  [`.psds-date-picker__sub-field-divider--appearance-${
-    vars.appearances.subtle
-  }`]: {
-    color: core.colors.gray01
+  [`.psds-date-picker__sub-field-divider--appearance-${vars.appearances.subtle}`]: {
+    color: colorsTextIcon.highOnDark
   },
 
   // __field-container
   '.psds-date-picker__field-container': {
     position: 'relative',
     display: 'flex',
+    border: `1px solid ${colorsBorder.highOnDark}`,
     borderRadius: '2px',
     alignItems: 'center',
     width: '100%',
     height: '40px',
-    minWidth: `calc(192px + ${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    })`,
-    padding: `0 calc(${core.layout.spacingXSmall} + ${
-      iconVars.widths.medium
-    } + ${core.layout.spacingXSmall}) 0 ${core.layout.spacingMedium}`,
-    background: core.colors.bone
+    minWidth: `calc(192px + ${iconWidths.medium} + ${layout.spacingXSmall})`,
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`,
+    background: colorsBackgroundLight[3]
   },
   [`.psds-date-picker__field-container.psds-theme--${themeNames.light}`]: {
-    background: core.colors.white,
-    border: `1px solid ${core.colors.gray02}`
+    border: `1px solid ${colorsBorder.highOnLight}`
   },
-  [`.psds-date-picker__field-container--appearance-${
-    vars.appearances.subtle
-  }`]: {
-    color: core.colors.gray01,
-    background: core.colors.gray06,
-    border: `1px solid ${core.colors.gray03}`
+  [`.psds-date-picker__field-container--appearance-${vars.appearances.subtle}`]: {
+    color: colorsTextIcon.highOnDark,
+    background: colorsBackgroundDark[1],
+    border: `1px solid ${colorsBorder.highOnDark}`
   },
 
   // __icon
   '.psds-date-picker__icon': {
     position: 'absolute',
+    top: '0',
     left: 'auto',
-    right: core.layout.spacingXSmall,
+    right: layout.spacingXSmall,
     display: 'flex',
+    alignItems: 'center',
     height: '100%',
-    color: core.colors.gray03,
+    color: colorsTextIcon.lowOnLight,
     cursor: 'pointer',
     background: 'none',
     border: 'none'
   },
-  [`.psds-date-picker__icon.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray02
-  },
   [`.psds-date-picker__icon--appearance-${vars.appearances.subtle}`]: {
-    color: core.colors.gray02
+    color: colorsTextIcon.lowOnDark
   },
 
   // __label
   '.psds-date-picker__label': {
-    color: core.colors.bone,
-    fontSize: core.type.fontSizeSmall,
+    color: colorsTextIcon.highOnDark,
+    fontSize: type.fontSizeSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingBottom: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingBottom: layout.spacingXSmall
   },
   [`.psds-date-picker__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray05
+    color: colorsTextIcon.highOnLight
   },
 
   // __sub-label
   '.psds-date-picker__sub-label': {
-    color: core.colors.gray02,
-    fontSize: core.type.fontSizeXSmall,
+    color: colorsTextIcon.lowOnDark,
+    fontSize: type.fontSizeXSmall,
     lineHeight: '16px',
-    fontWeight: core.type.fontWeightMedium,
-    paddingTop: core.layout.spacingXSmall
+    fontWeight: type.fontWeightMedium,
+    paddingTop: layout.spacingXSmall
   },
   [`.psds-date-picker__sub-label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray03
+    color: colorsTextIcon.lowOnLight
   },
 
   // __error
   '.psds-date-picker__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconVars.widths.medium} + ${
-      core.layout.spacingXSmall
-    }))`,
+    right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
     display: 'flex',
     alignItems: 'center',
-    color: core.colors.red,
-    marginLeft: core.layout.spacingXSmall
+    color: colorsStatus.error,
+    marginLeft: layout.spacingXSmall
   },
 
   // __calendar-container
   '.psds-date-picker__calendar-container': {
     position: 'absolute',
     zIndex: '1',
-    marginTop: core.layout.spacingXXSmall
+    marginTop: layout.spacingXXSmall
   },
 
   '@keyframes psds-date-picker__calendar__keyframes__slide': {
@@ -153,17 +153,17 @@ export default {
     zIndex: '0',
     width: '286px',
     maxHeight: '352px',
-    background: core.colors.white,
-    color: core.colors.gray03,
+    background: colorsBackgroundLight[3],
+    color: colorsTextIcon.highOnLight,
     borderRadius: '2px',
-    padding: `${core.layout.spacingMedium} ${core.layout.spacingLarge}`,
-    fontSize: core.type.fontSizeXSmall,
-    fontWeight: core.type.fontWeightMedium,
-    boxShadow: `0 2px 4px ${transparentize(0.5, core.colors.black)}`,
+    padding: `${layout.spacingMedium} ${layout.spacingLarge}`,
+    fontSize: type.fontSizeXSmall,
+    fontWeight: type.fontWeightMedium,
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
     opacity: 0,
-    transform: `translateY(calc(-1 * ${core.layout.spacingXSmall}))`,
+    transform: `translateY(calc(-1 * ${layout.spacingXSmall}))`,
     animation: `${slide || 'psds-date-picker__calendar__keyframes__slide'} ${
-      core.motion.speedNormal
+      motion.speedNormal
     } forwards`
   }),
 
@@ -171,9 +171,9 @@ export default {
   '.psds-date-picker__calendar__week-heading': {
     display: 'flex',
     justifyContent: 'flex-start',
-    color: core.colors.gray02,
+    color: colorsTextIcon.lowOnLight,
     textTransform: 'uppercase',
-    marginBottom: core.layout.spacingSmall
+    marginBottom: layout.spacingSmall
   },
 
   // __calendar__week-heading__day
@@ -188,7 +188,7 @@ export default {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
-    color: core.colors.gray02,
+    color: colorsTextIcon.highOnLight,
     textTransform: 'uppercase'
   },
 
@@ -200,19 +200,17 @@ export default {
     ...dayDimensions,
     borderRadius: '50%',
     lineHeight: '1em',
-    fontWeight: core.type.fontWeightMedium,
+    fontWeight: type.fontWeightMedium,
     background: 'none',
-    cursor: 'pointer'
-  },
-  '.psds-date-picker__calendar__day:hover': {
-    border: `3px solid ${core.colors.blue}`
+    cursor: 'pointer',
+
+    '&:hover': { border: `3px solid ${colorsPrimaryAction.background}` }
   },
   '.psds-date-picker__calendar__day--selected': {
-    background: core.colors.blue,
-    color: core.colors.white
-  },
-  '.psds-date-picker__calendar__day--selected:hover': {
-    border: '3px solid transparent'
+    background: colorsPrimaryAction.background,
+    color: colorsTextIcon.highOnDark,
+
+    '&:hover': { border: '3px solid transparent' }
   },
 
   // __calendar__skipped-day
@@ -223,11 +221,11 @@ export default {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: core.layout.spacingMedium
+    marginBottom: layout.spacingMedium
   },
 
   // __calendar__switcher__month
   '.psds-date-picker__calendar__switcher__month': {
-    fontSize: core.type.fontSizeSmall
+    fontSize: type.fontSizeSmall
   }
 }

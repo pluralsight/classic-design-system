@@ -3,6 +3,330 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.18...@pluralsight/ps-design-system-switch@5.0.19) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.17...@pluralsight/ps-design-system-switch@5.0.18) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.16...@pluralsight/ps-design-system-switch@5.0.17) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.14...@pluralsight/ps-design-system-switch@5.0.16) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.12...@pluralsight/ps-design-system-switch@5.0.14) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.10...@pluralsight/ps-design-system-switch@5.0.12) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.9...@pluralsight/ps-design-system-switch@5.0.10) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.8...@pluralsight/ps-design-system-switch@5.0.9) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.7...@pluralsight/ps-design-system-switch@5.0.8) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.6...@pluralsight/ps-design-system-switch@5.0.7) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.4...@pluralsight/ps-design-system-switch@5.0.5) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.3...@pluralsight/ps-design-system-switch@5.0.4) (2019-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.2...@pluralsight/ps-design-system-switch@5.0.3) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.1...@pluralsight/ps-design-system-switch@5.0.2) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@5.0.0...@pluralsight/ps-design-system-switch@5.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@4.0.4...@pluralsight/ps-design-system-switch@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **halo:** esm export refactor ([723a966](https://github.com/pluralsight/design-system/commit/723a966))
+* **switch:** esm export refactor ([1e973fa](https://github.com/pluralsight/design-system/commit/1e973fa))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **switch:** import pattern
+* **halo:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@4.0.3...@pluralsight/ps-design-system-switch@4.0.4) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@4.0.2...@pluralsight/ps-design-system-switch@4.0.3) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@4.0.1...@pluralsight/ps-design-system-switch@4.0.2) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@4.0.0...@pluralsight/ps-design-system-switch@4.0.1) (2019-08-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@3.0.3...@pluralsight/ps-design-system-switch@4.0.0) (2019-08-09)
+
+
+### Build System
+
+* **switch:** move theme package to peerDeps ([6136bb3](https://github.com/pluralsight/design-system/commit/6136bb3))
+
+
+### BREAKING CHANGES
+
+* **switch:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@3.0.2...@pluralsight/ps-design-system-switch@3.0.3) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@3.0.1...@pluralsight/ps-design-system-switch@3.0.2) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@3.0.0...@pluralsight/ps-design-system-switch@3.0.1) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@2.0.4...@pluralsight/ps-design-system-switch@3.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **switch:** use new theme context ([4c4df0e](https://github.com/pluralsight/design-system/commit/4c4df0e))
+
+
+### BREAKING CHANGES
+
+* **switch:** update React peerDep to 16.8.6
+
+
+
+
+
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@2.0.3...@pluralsight/ps-design-system-switch@2.0.4) (2019-05-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@2.0.2...@pluralsight/ps-design-system-switch@2.0.3) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@2.0.1...@pluralsight/ps-design-system-switch@2.0.2) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@2.0.0...@pluralsight/ps-design-system-switch@2.0.1) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.7...@pluralsight/ps-design-system-switch@2.0.0) (2019-03-04)
+
+
+### Bug Fixes
+
+* **switch:** don't call onClick function unless exists ([44b1b44](https://github.com/pluralsight/design-system/commit/44b1b44))
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [1.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.6...@pluralsight/ps-design-system-switch@1.6.7) (2019-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [1.6.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.4...@pluralsight/ps-design-system-switch@1.6.6) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [1.6.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.4...@pluralsight/ps-design-system-switch@1.6.5) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [1.6.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.3...@pluralsight/ps-design-system-switch@1.6.4) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
 ## [1.6.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@1.6.2...@pluralsight/ps-design-system-switch@1.6.3) (2018-11-30)
 
 

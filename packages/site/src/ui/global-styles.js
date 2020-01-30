@@ -1,4 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
+import React from 'react'
 
 export default _ => (
   <style global jsx>{`

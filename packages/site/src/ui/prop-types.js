@@ -1,11 +1,10 @@
-import React from 'react'
+import Badge from '@pluralsight/ps-design-system-badge'
+import * as core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
+import React from 'react'
+import Table from '@pluralsight/ps-design-system-table'
 
-import Badge from '@pluralsight/ps-design-system-badge/react'
-import core from '@pluralsight/ps-design-system-core'
-import Table from '@pluralsight/ps-design-system-table/react'
-
-import { Heading, SectionHeading } from './index'
+import { Heading, SectionHeading } from './index.js'
 
 const BadgeSpacer = () => <span style={{ width: core.layout.spacingXSmall }} />
 
@@ -24,10 +23,10 @@ const PropTypesRow = props => (
     <Table.Cell>
       <code className="nameCode">{props.row.name}</code>
       {props.row.required ? (
-        <React.Fragment>
+        <>
           <BadgeSpacer />
           <Badge appearance={Badge.appearances.subtle}>Required</Badge>
-        </React.Fragment>
+        </>
       ) : (
         ''
       )}

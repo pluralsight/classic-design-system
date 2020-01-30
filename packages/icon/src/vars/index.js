@@ -1,12 +1,3 @@
-import core from '@pluralsight/ps-design-system-core'
-
-import icons from '../js/icons'
-
-export const ids = Object.keys(icons).reduce((acc, id) => {
-  acc[id] = `${id}`
-  return acc
-}, {})
-
 export const sizes = {
   small: 'small',
   medium: 'medium',
@@ -19,9 +10,13 @@ export const widths = {
   large: '48px'
 }
 
-export const colors = Object.keys(core.colors)
-  .filter(c => !/gradient/.test(c))
-  .reduce((acc, c) => {
-    acc[c] = c
-    return acc
-  }, {})
+export const colors = {
+  textIconHighOnDark: 'textIconHighOnDark',
+  textIconLowOnDark: 'textIconLowOnDark',
+  textIconHighOnLight: 'textIconHighOnLight',
+  textIconLowOnLight: 'textIconLowOnLight',
+  red: 'red',
+  blue: 'blue',
+  green: 'green',
+  yellow: 'yellow'
+}

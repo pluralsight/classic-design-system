@@ -1,27 +1,17 @@
 import React from 'react'
-import {
-  Chrome,
-  Code,
-  Content,
-  Doc,
-  P,
-  PageHeading,
-  withServerProps
-} from '../../src/ui'
+import { Chrome, Content, Doc, PageHeading } from '../../src/ui/index.js'
 
-export default withServerProps(_ =>
+export default _ => (
   <Chrome>
     <Content title="Core Usage">
-      <PageHeading>
-        Core Usage
-      </PageHeading>
+      <PageHeading>Core Usage</PageHeading>
       <Doc>{`
 After, [installation](/install), use Core in the flavor of your choice.  JavaScript or CSSNext is recommended.
 
 ## Import JavaScript
 
 \`\`\`js
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 
 <button style={{ backgroundColor: core.colors.orange }}>Click</button>
 \`\`\`

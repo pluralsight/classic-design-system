@@ -1,18 +1,19 @@
-import core from '@pluralsight/ps-design-system-core'
+import { layout } from '@pluralsight/ps-design-system-core'
 
 export default {
-  ['.psds-page-heading-layout']: {
-    padding: core.layout.spacingLarge
+  '.psds-page-heading-layout': {
+    padding: layout.spacingLarge
   },
   '.psds-page-heading-layout__actions': {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'left',
-    flexWrap: 'wrap'
-  },
-  '.psds-page-head-layout__actions > *': {
-    marginRight: core.layout.spacingSmall,
-    marginBottom: core.layout.spacingMedium
+    flexWrap: 'wrap',
+
+    '& > *': {
+      marginRight: layout.spacingSmall,
+      marginBottom: layout.spacingMedium
+    }
   },
   '@media (min-width: 769px)': {
     '.psds-page-heading-layout__heading': {
@@ -21,17 +22,18 @@ export default {
     },
     '.psds-page-heading-layout__actions': {
       marginLeft: 'auto',
-      paddingLeft: core.layout.spacingLarge,
+      paddingLeft: layout.spacingLarge,
       justifyContent: 'flex-end',
       alignItems: 'center',
-      flexWrap: 'nowrap'
-    },
-    '.psds-page-head-layout__actions > *': {
-      marginRight: 0,
-      marginBottom: 0
-    },
-    '.psds-page-head-layout__actions > * + *': {
-      marginLeft: core.layout.spacingSmall
+      flexWrap: 'nowrap',
+
+      '& > *': {
+        marginRight: 0,
+        marginBottom: 0
+      },
+      '& > * + *': {
+        marginLeft: layout.spacingSmall
+      }
     }
   }
 }

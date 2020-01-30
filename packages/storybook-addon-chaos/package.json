@@ -1,0 +1,28 @@
+{
+  "name": "@pluralsight/ps-design-system-storybook-addon-chaos",
+  "version": "0.0.18",
+  "description": "Storybook addon w/chaos",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "keywords": [
+    "react-storybook",
+    "chaos"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --root-mode upward src --out-dir dist",
+    "build:watch": "npm run build -- --watch",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-button": "^17.1.11",
+    "@pluralsight/ps-design-system-core": "^5.5.1",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/core-events": "^5.2.5",
+    "pseudo-localization": "^2.1.1"
+  },
+  "peerDependencies": {
+    "glamor": "^2.20.40",
+    "react": "^16.8.6"
+  }
+}

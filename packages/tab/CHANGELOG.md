@@ -3,6 +3,492 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.21...@pluralsight/ps-design-system-tab@14.0.22) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.20...@pluralsight/ps-design-system-tab@14.0.21) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.19...@pluralsight/ps-design-system-tab@14.0.20) (2020-01-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.18...@pluralsight/ps-design-system-tab@14.0.19) (2020-01-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.17...@pluralsight/ps-design-system-tab@14.0.18) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.15...@pluralsight/ps-design-system-tab@14.0.17) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.13...@pluralsight/ps-design-system-tab@14.0.15) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.11...@pluralsight/ps-design-system-tab@14.0.13) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.10...@pluralsight/ps-design-system-tab@14.0.11) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.9...@pluralsight/ps-design-system-tab@14.0.10) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.8...@pluralsight/ps-design-system-tab@14.0.9) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.7...@pluralsight/ps-design-system-tab@14.0.8) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.5...@pluralsight/ps-design-system-tab@14.0.6) (2019-12-19)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.4...@pluralsight/ps-design-system-tab@14.0.5) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.3...@pluralsight/ps-design-system-tab@14.0.4) (2019-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.2...@pluralsight/ps-design-system-tab@14.0.3) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+
+
+
+## [14.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.1...@pluralsight/ps-design-system-tab@14.0.2) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@14.0.0...@pluralsight/ps-design-system-tab@14.0.1) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@13.0.1...@pluralsight/ps-design-system-tab@14.0.0) (2019-12-02)
+
+
+### Features
+
+* **icon:** named icon exports and cli util ([15e1e08](https://github.com/pluralsight/design-system/commit/15e1e08a8f04ac6a0aa2bf3cf78efeb412cd6dd6))
+
+
+### BREAKING CHANGES
+
+* **icon:** Icons must be refactored to used Named exports inatad of id prop. Please see docs for example
+
+
+
+
+
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@13.0.0...@pluralsight/ps-design-system-tab@13.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@12.0.5...@pluralsight/ps-design-system-tab@13.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **tab:** esm export refactor ([5101869](https://github.com/pluralsight/design-system/commit/5101869))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+* **util:** esm export ([55cbd9d](https://github.com/pluralsight/design-system/commit/55cbd9d))
+
+
+### BREAKING CHANGES
+
+* **tab:** import pattern
+* **util:** import patterns
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [12.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@12.0.4...@pluralsight/ps-design-system-tab@12.0.5) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [12.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@12.0.3...@pluralsight/ps-design-system-tab@12.0.4) (2019-10-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [12.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@12.0.2...@pluralsight/ps-design-system-tab@12.0.3) (2019-10-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [12.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@12.0.1...@pluralsight/ps-design-system-tab@12.0.2) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@12.0.0...@pluralsight/ps-design-system-tab@12.0.1) (2019-09-17)
+
+
+### Bug Fixes
+
+* **tab:** focus borderline jump ([87da7f1](https://github.com/pluralsight/design-system/commit/87da7f1))
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.8...@pluralsight/ps-design-system-tab@12.0.0) (2019-08-09)
+
+
+### Build System
+
+* **tab:** move theme package to peerDeps ([421494a](https://github.com/pluralsight/design-system/commit/421494a))
+
+
+### BREAKING CHANGES
+
+* **tab:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [11.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.7...@pluralsight/ps-design-system-tab@11.0.8) (2019-08-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.6...@pluralsight/ps-design-system-tab@11.0.7) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.5...@pluralsight/ps-design-system-tab@11.0.6) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.4...@pluralsight/ps-design-system-tab@11.0.5) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.3...@pluralsight/ps-design-system-tab@11.0.4) (2019-06-26)
+
+
+### Bug Fixes
+
+* **tab:** remove vars reference ([e2d4d0a](https://github.com/pluralsight/design-system/commit/e2d4d0a))
+
+
+
+
+
+## [11.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.2...@pluralsight/ps-design-system-tab@11.0.3) (2019-06-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.1...@pluralsight/ps-design-system-tab@11.0.2) (2019-06-04)
+
+
+### Bug Fixes
+
+* **tab:** dont cut off active orange bar ([b970d72](https://github.com/pluralsight/design-system/commit/b970d72))
+* **tab:** prevent overflow buttons from shifting on list focus ([88af4d6](https://github.com/pluralsight/design-system/commit/88af4d6))
+
+
+
+
+
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@11.0.0...@pluralsight/ps-design-system-tab@11.0.1) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@10.0.0...@pluralsight/ps-design-system-tab@11.0.0) (2019-05-31)
+
+
+### Bug Fixes
+
+* **tab:** avoid slide-in animation on mount if no overflow ([46e5a3e](https://github.com/pluralsight/design-system/commit/46e5a3e))
+* **tab:** diff calc of slider width; workaround flexbox container width ([62e3094](https://github.com/pluralsight/design-system/commit/62e3094))
+* **tab:** dont let items focus outside visible list container ([f76fbb6](https://github.com/pluralsight/design-system/commit/f76fbb6))
+* **tab:** firefox has enough time to recalc overflow ([469cb7a](https://github.com/pluralsight/design-system/commit/469cb7a))
+* **tab:** fix resizeEvery story to keep running on interval ([00eac9f](https://github.com/pluralsight/design-system/commit/00eac9f))
+* **tab:** make the light theme overflow button correct ([7d27acd](https://github.com/pluralsight/design-system/commit/7d27acd))
+* **tab:** more specific css to compensate extra text div ([ade2df5](https://github.com/pluralsight/design-system/commit/ade2df5))
+* **tab:** properly calculate nowrap slider length ([e39f149](https://github.com/pluralsight/design-system/commit/e39f149))
+* **tab:** unstyle focus on extra inner text div ([1793d42](https://github.com/pluralsight/design-system/commit/1793d42))
+* **tab:** wait for animation, fix paging recalcs ([d6ba890](https://github.com/pluralsight/design-system/commit/d6ba890))
+
+
+### Code Refactoring
+
+* **tab:** convert to react16 functional components ([6ab4c0b](https://github.com/pluralsight/design-system/commit/6ab4c0b))
+* **tab:** require react 16.8 ([acc0a4d](https://github.com/pluralsight/design-system/commit/acc0a4d))
+
+
+### Features
+
+* **tab:** add overflow button hover style ([2f4eb98](https://github.com/pluralsight/design-system/commit/2f4eb98))
+* **tab:** add transition to slide ([e5d5056](https://github.com/pluralsight/design-system/commit/e5d5056))
+* **tab:** click overflow button to page ([9513567](https://github.com/pluralsight/design-system/commit/9513567))
+* **tab:** handle overflow calc on element resize ([274fc9c](https://github.com/pluralsight/design-system/commit/274fc9c))
+* **tab:** items on slider, detect horz overflow, hide buttons ([062aaec](https://github.com/pluralsight/design-system/commit/062aaec))
+* **tab:** keep arrowed to list items in view ([745f20c](https://github.com/pluralsight/design-system/commit/745f20c))
+* **tab:** offscreen active item scrolls into view on mount ([a1c2b3b](https://github.com/pluralsight/design-system/commit/a1c2b3b))
+* **tab:** style overflow buttons ([ecb4950](https://github.com/pluralsight/design-system/commit/ecb4950))
+* **tab:** style overflow buttons for light theme ([a0b7170](https://github.com/pluralsight/design-system/commit/a0b7170))
+
+
+### BREAKING CHANGES
+
+* **tab:** support React.forwardRef on Tab.List and Tab.ListItem
+* **tab:** require react 16.8.6
+
+
+
+
+
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.3...@pluralsight/ps-design-system-tab@10.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **tab:** use new react context ([d45e190](https://github.com/pluralsight/design-system/commit/d45e190))
+
+
+### BREAKING CHANGES
+
+* **tab:** upgrade React peerDep to 16.8.6
+
+
+
+
+
+## [9.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.2...@pluralsight/ps-design-system-tab@9.0.3) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [9.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.1...@pluralsight/ps-design-system-tab@9.0.2) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@9.0.0...@pluralsight/ps-design-system-tab@9.0.1) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@8.0.0...@pluralsight/ps-design-system-tab@9.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.7.4...@pluralsight/ps-design-system-tab@8.0.0) (2019-01-29)
+
+
+### Bug Fixes
+
+* **tab:** keep focus on list-item for safari style ([8385588](https://github.com/pluralsight/design-system/commit/8385588)), closes [#431](https://github.com/pluralsight/design-system/issues/431)
+
+
+### Code Refactoring
+
+* **tab:** simplify css selectors for list-item ([2f4524b](https://github.com/pluralsight/design-system/commit/2f4524b))
+* **tab:** simplify tab list css ([21f46b3](https://github.com/pluralsight/design-system/commit/21f46b3))
+
+
+### BREAKING CHANGES
+
+* **tab:** list-item css selectors changed
+* **tab:** changed list css selectors
+
+
+
+
+
+## [7.7.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.7.3...@pluralsight/ps-design-system-tab@7.7.4) (2019-01-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [7.7.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.7.1...@pluralsight/ps-design-system-tab@7.7.3) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [7.7.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.7.1...@pluralsight/ps-design-system-tab@7.7.2) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
+## [7.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.7.0...@pluralsight/ps-design-system-tab@7.7.1) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tab
+
+
+
+
+
 # [7.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@7.6.21...@pluralsight/ps-design-system-tab@7.7.0) (2018-12-10)
 
 

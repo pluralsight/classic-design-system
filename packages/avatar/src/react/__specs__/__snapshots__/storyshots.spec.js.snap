@@ -1,43 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Default className override 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    aria-hidden={true}
+    className="fakeClassName"
+    data-css-7fe6v0=""
+  >
+    <img
+      data-css-d7y6x2=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+    />
+    <div
+      aria-label="Jake Trent"
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#C00F00",
+        }
+      }
+    >
+      JT
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Default large 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-12kblpa=""
   >
     <img
       alt="large avatar"
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
+    <div
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      :)
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Default light image 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <img
       alt="light image avatar"
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
     <div
       aria-label="Jake Trent"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#BE344B",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -49,89 +89,250 @@ exports[`Storyshots Default light image 1`] = `
 
 exports[`Storyshots Default medium 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <img
       alt="medium avatar"
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
+    <div
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      :)
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Default small 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-6fiexv=""
   >
     <img
       alt="small avatar"
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
+    <div
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      :)
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Default style override 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    aria-hidden={true}
+    data-css-7fe6v0=""
+    style={
+      Object {
+        "border": "3px solid red",
+      }
+    }
+  >
+    <img
+      data-css-d7y6x2=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+    />
+    <div
+      aria-label="Jake Trent"
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#C00F00",
+        }
+      }
+    >
+      JT
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Default xLarge 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-inys4v=""
   >
     <img
       alt="xLarge avatar"
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
+    <div
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      :)
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Default xSmall 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-1pii7we=""
   >
     <img
       alt="xSmall avatar"
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
+    <div
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      :)
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image cases flat, long 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    aria-hidden={true}
+    data-css-7fe6v0=""
+  >
+    <img
+      data-css-d7y6x2=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://cdn1.thr.com/sites/default/files/2019/03/chrisrocknaacp.jpg"
+    />
+    <div
+      aria-label="Chris Rock"
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#00A894",
+        }
+      }
+    >
+      CR
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image cases square 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    aria-hidden={true}
+    data-css-7fe6v0=""
+  >
+    <img
+      data-css-d7y6x2=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://gravatar.com/avatar/63a1fa126f541c0f0ecf1d74f7a40640?s=320&r=g&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+    />
+    <div
+      aria-label="Jake Trentsky"
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      JT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image cases tall, thin 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    aria-hidden={true}
+    data-css-7fe6v0=""
+  >
+    <img
+      data-css-d7y6x2=""
+      onError={[Function]}
+      onLoad={[Function]}
+      src="https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg"
+    />
+    <div
+      aria-label="Will Ferrill"
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#008F46",
+        }
+      }
+    >
+      WF
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Using Initials % Special Characters 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="% Special Characters"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#1F964E",
+          "backgroundColor": "#008F46",
         }
       }
     >
@@ -143,17 +344,17 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
 
 exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Anakin Skywalker"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#2D4E82",
+          "backgroundColor": "#D1487B",
         }
       }
     >
@@ -165,17 +366,17 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
 
 exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Budapest Skywalker"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#0074AB",
         }
       }
     >
@@ -187,17 +388,17 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
 
 exports[`Storyshots Using Initials Carlos Organa 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Carlos Organa"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#1F964E",
+          "backgroundColor": "#008F46",
         }
       }
     >
@@ -209,17 +410,17 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
 
 exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Dennis Pimenta"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#BE344B",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -231,17 +432,17 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
 
 exports[`Storyshots Using Initials Diz Blau 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Diz Blau"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#2D4E82",
+          "backgroundColor": "#D1487B",
         }
       }
     >
@@ -253,17 +454,17 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
 
 exports[`Storyshots Using Initials Harry Potter 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Harry Potter"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#0074AB",
         }
       }
     >
@@ -275,17 +476,17 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
 
 exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Obi-Wan Kenobi"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#0074AB",
         }
       }
     >
@@ -297,17 +498,17 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
 
 exports[`Storyshots Using Initials Peia Organa 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Peia Organa"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#0074AB",
         }
       }
     >
@@ -319,17 +520,17 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
 
 exports[`Storyshots Using Initials Single 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Single"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#076F84",
+          "backgroundColor": "#E27A18",
         }
       }
     >
@@ -341,17 +542,17 @@ exports[`Storyshots Using Initials Single 1`] = `
 
 exports[`Storyshots Using Initials Uy Marley 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
     <div
       aria-label="Uy Marley"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#0074AB",
         }
       }
     >
@@ -363,7 +564,7 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
 
 exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div>
     <div
@@ -371,17 +572,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Alan Turing"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#49897C",
+            "backgroundColor": "#0074AB",
           }
         }
       >
@@ -393,17 +594,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Alan Sleuse"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#2D4E82",
+            "backgroundColor": "#D1487B",
           }
         }
       >
@@ -415,17 +616,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Alan Alanosphere"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#2D4E82",
+            "backgroundColor": "#D1487B",
           }
         }
       >
@@ -437,17 +638,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Allen Alarm"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#076F84",
+            "backgroundColor": "#E27A18",
           }
         }
       >
@@ -459,17 +660,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Allen Allen"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#BE344B",
+            "backgroundColor": "#C00F00",
           }
         }
       >
@@ -481,17 +682,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Allen Stewart"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#9A171B",
+            "backgroundColor": "#00A894",
           }
         }
       >
@@ -503,17 +704,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Brian Can Stand Here"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#9A171B",
+            "backgroundColor": "#00A894",
           }
         }
       >
@@ -525,17 +726,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Brian Can't Stand Here"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#49897C",
+            "backgroundColor": "#0074AB",
           }
         }
       >
@@ -547,17 +748,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Brian Life Of"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#2D4E82",
+            "backgroundColor": "#D1487B",
           }
         }
       >
@@ -569,17 +770,17 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
       data-css-7fe6v0=""
     >
       <img
-        data-css-1ba73bf=""
+        data-css-d7y6x2=""
         onError={[Function]}
         onLoad={[Function]}
         src="https://example.com/image.jpg"
       />
       <div
         aria-label="Brian O'Mally"
-        data-css-x99j9q=""
+        data-css-1oawbuy=""
         style={
           Object {
-            "backgroundColor": "#076F84",
+            "backgroundColor": "#E27A18",
           }
         }
       >
@@ -592,36 +793,46 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
 
 exports[`Storyshots Using Initials empty name, no src 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
   >
-    
+    <div
+      aria-label=""
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      :)
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     aria-hidden={true}
     data-css-7fe6v0=""
   >
     <img
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
       src="https://jaketrent.com/fake.jpg"
     />
     <div
       aria-label="Bill Dill"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#0074AB",
         }
       }
     >
@@ -633,34 +844,68 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 
 exports[`Storyshots Using Initials null name, no src 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     data-css-7fe6v0=""
-  />
+  >
+    <div
+      aria-label={null}
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#00A894",
+        }
+      }
+    >
+      :)
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials single string name, no src 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-7fe6v0=""
+  >
+    <div
+      aria-label="x"
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#D1487B",
+        }
+      }
+    >
+      X
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     aria-hidden={true}
     data-css-7fe6v0=""
   >
     <img
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
     <div
       aria-label="Alan Turing"
-      data-css-x99j9q=""
+      data-css-1oawbuy=""
       style={
         Object {
-          "backgroundColor": "#49897C",
+          "backgroundColor": "#0074AB",
         }
       }
     >
@@ -672,18 +917,28 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
 
 exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     aria-hidden={true}
     data-css-7fe6v0=""
   >
     <img
-      data-css-1ba73bf=""
+      data-css-d7y6x2=""
       onError={[Function]}
       onLoad={[Function]}
-      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
     />
+    <div
+      data-css-1oawbuy=""
+      style={
+        Object {
+          "backgroundColor": "#E27A18",
+        }
+      }
+    >
+      :)
+    </div>
   </div>
 </div>
 `;

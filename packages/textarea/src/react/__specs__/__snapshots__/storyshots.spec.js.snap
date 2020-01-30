@@ -2,452 +2,445 @@
 
 exports[`Storyshots disabled compare 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
+  <div>
+    <label
+      data-css-na8jqt=""
     >
-      <div>
-        <label
-          data-css-1p1sjwu=""
-        >
-          <div
-            data-css-1j9p7fe=""
-          >
-            Normal
-          </div>
-          <div
-            data-css-1ghdxx6=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <textarea
-                data-css-1vpjki6=""
-                disabled={false}
-                placeholder="I'm normal, see"
-                style={
-                  Object {
-                    "height": 112,
-                  }
-                }
-              />
-            </div>
-          </div>
-          <div
-            data-css-1de0a6a=""
-          >
-            Still normal
-          </div>
-        </label>
-        <label
-          data-css-b2u8ok=""
-        >
-          <div
-            data-css-1j9p7fe=""
-          >
-            I'm not usable
-          </div>
-          <div
-            data-css-1ghdxx6=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <textarea
-                data-css-1vpjki6=""
-                disabled={true}
-                placeholder="I'm untouchable"
-                style={
-                  Object {
-                    "height": 112,
-                  }
-                }
-              />
-            </div>
-          </div>
-          <div
-            data-css-1de0a6a=""
-          >
-            Neither am I
-          </div>
-        </label>
+      <div
+        data-css-hnaccs=""
+      >
+        Normal
       </div>
-    </div>
+      <div
+        data-css-1ios7mb=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <textarea
+            data-css-dpjpe2=""
+            disabled={false}
+            placeholder="I'm normal, see"
+            rows={4}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        data-css-bf7jp3=""
+      >
+        Still normal
+      </div>
+    </label>
+    <label
+      data-css-1tctpgo=""
+    >
+      <div
+        data-css-hnaccs=""
+      >
+        I'm not usable
+      </div>
+      <div
+        data-css-1ios7mb=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <textarea
+            data-css-dpjpe2=""
+            disabled={true}
+            placeholder="I'm untouchable"
+            rows={4}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        data-css-bf7jp3=""
+      >
+        Neither am I
+      </div>
+    </label>
   </div>
 </div>
 `;
 
 exports[`Storyshots error compare 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
-  >
-    <div
-      data-css-1nnsngu=""
+  <div>
+    <label
+      data-css-na8jqt=""
     >
-      <div>
-        <label
-          data-css-1p1sjwu=""
-        >
-          <div
-            data-css-1j9p7fe=""
-          >
-            Normal
-          </div>
-          <div
-            data-css-1ghdxx6=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <textarea
-                data-css-1vpjki6=""
-                disabled={false}
-                placeholder="I'm normal, see"
-                style={
-                  Object {
-                    "height": 112,
-                  }
-                }
-              />
-            </div>
-          </div>
-          <div
-            data-css-1de0a6a=""
-          >
-            Still normal
-          </div>
-        </label>
-        <label
-          data-css-1p1sjwu=""
-        >
-          <div
-            data-css-1j9p7fe=""
-          >
-            I'm in an error state
-          </div>
-          <div
-            data-css-1ghdxx6=""
-          >
-            <div
-              data-css-utxo7p=""
-            >
-              <textarea
-                data-css-1vpjki6=""
-                disabled={false}
-                style={
-                  Object {
-                    "height": 112,
-                  }
-                }
-                value="Wow, here is all the content wrapped up inside.Wow, here is all the content wrapped up inside.Wow, here is all the content wrapped up inside.   "
-              />
-            </div>
-            <div
-              data-css-1ss30jn=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="warning icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-1de0a6a=""
-          >
-            Here
-          </div>
-        </label>
+      <div
+        data-css-hnaccs=""
+      >
+        Normal
       </div>
-    </div>
+      <div
+        data-css-1ios7mb=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <textarea
+            data-css-dpjpe2=""
+            disabled={false}
+            placeholder="I'm normal, see"
+            rows={4}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        data-css-bf7jp3=""
+      >
+        Still normal
+      </div>
+    </label>
+    <label
+      data-css-na8jqt=""
+    >
+      <div
+        data-css-hnaccs=""
+      >
+        I'm in an error state
+      </div>
+      <div
+        data-css-1ios7mb=""
+      >
+        <div
+          data-css-in6gqi=""
+        >
+          <textarea
+            data-css-dpjpe2=""
+            disabled={false}
+            rows={4}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+            value="Wow, here is all the content wrapped up inside.Wow, here is all the content wrapped up inside.Wow, here is all the content wrapped up inside.   "
+          />
+        </div>
+        <div
+          data-css-h6j4b2=""
+        >
+          <div
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-bf7jp3=""
+      >
+        Here
+      </div>
+    </label>
   </div>
 </div>
 `;
 
 exports[`Storyshots focus onFocus/onBlur 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-1ios7mb=""
     >
-      <label
-        data-css-1p1sjwu=""
+      <div
+        data-css-ctre2o=""
       >
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              onBlur={[Function]}
-              onFocus={[Function]}
-              placeholder="Focus on me!"
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Focus on me!"
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels all 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-hnaccs=""
     >
-      <label
-        data-css-1p1sjwu=""
-      >
-        <div
-          data-css-1j9p7fe=""
-        >
-          Some label
-        </div>
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              placeholder="Some placeholder"
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-        <div
-          data-css-1de0a6a=""
-        >
-          Some sublabel
-        </div>
-      </label>
+      Some label
     </div>
-  </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          placeholder="Some placeholder"
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels label 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-hnaccs=""
     >
-      <label
-        data-css-1p1sjwu=""
-      >
-        <div
-          data-css-1j9p7fe=""
-        >
-          Some label
-        </div>
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+      Some label
     </div>
-  </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-hnaccs=""
     >
-      <label
-        data-css-1p1sjwu=""
-      >
-        <div
-          data-css-1j9p7fe=""
-        >
-          Some label
-        </div>
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-        <div
-          data-css-1de0a6a=""
-        >
-          Some sublabel
-        </div>
-      </label>
+      Some label
     </div>
-  </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels none 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-1ios7mb=""
     >
-      <label
-        data-css-1p1sjwu=""
+      <div
+        data-css-ctre2o=""
       >
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels placeholder 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-1ios7mb=""
     >
-      <label
-        data-css-1p1sjwu=""
+      <div
+        data-css-ctre2o=""
       >
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              placeholder="some placeholder"
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          placeholder="some placeholder"
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels subLabel 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots layouts Form.VerticalLayout 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-15rjys7=""
+  >
+    <div
+      data-css-4l6uky=""
     >
       <label
-        data-css-1p1sjwu=""
+        data-css-na8jqt=""
+        style={
+          Object {
+            "maxWidth": "none",
+            "width": "100%",
+          }
+        }
       >
         <div
-          data-css-1ghdxx6=""
+          data-css-hnaccs=""
+        >
+          Inside Form.VerticalLayout
+        </div>
+        <div
+          data-css-1ios7mb=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <textarea
-              data-css-1vpjki6=""
+              data-css-dpjpe2=""
               disabled={false}
+              rows={4}
               style={
                 Object {
                   "height": 112,
@@ -455,11 +448,6 @@ exports[`Storyshots labels subLabel 1`] = `
               }
             />
           </div>
-        </div>
-        <div
-          data-css-1de0a6a=""
-        >
-          Some sublabel
         </div>
       </label>
     </div>
@@ -469,264 +457,232 @@ exports[`Storyshots labels subLabel 1`] = `
 
 exports[`Storyshots layouts full width 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-wx7ofq=""
+    style={
+      Object {
+        "border": "1px solid blue",
+        "width": "800px",
+      }
+    }
   >
-    <div
-      data-css-1nnsngu=""
+    <label
+      data-css-na8jqt=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
     >
       <div
-        style={
-          Object {
-            "border": "1px solid blue",
-            "width": "500px",
-          }
-        }
+        data-css-hnaccs=""
       >
-        <label
-          data-css-1p1sjwu=""
-          style={
-            Object {
-              "display": "block",
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            data-css-1j9p7fe=""
-          >
-            First
-          </div>
-          <div
-            data-css-1ghdxx6=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <textarea
-                data-css-1vpjki6=""
-                disabled={false}
-                style={
-                  Object {
-                    "height": 112,
-                  }
-                }
-              />
-            </div>
-          </div>
-        </label>
-        <label
-          data-css-1p1sjwu=""
-          style={
-            Object {
-              "display": "block",
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            data-css-1j9p7fe=""
-          >
-            Second
-          </div>
-          <div
-            data-css-1ghdxx6=""
-          >
-            <div
-              data-css-utxo7p=""
-            >
-              <textarea
-                data-css-1vpjki6=""
-                disabled={false}
-                style={
-                  Object {
-                    "height": 112,
-                  }
-                }
-              />
-            </div>
-            <div
-              data-css-1ss30jn=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="warning icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </label>
+        max-width still applies
       </div>
-    </div>
+      <div
+        data-css-1ios7mb=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <textarea
+            data-css-dpjpe2=""
+            disabled={false}
+            rows={4}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+      </div>
+    </label>
+    <label
+      data-css-na8jqt=""
+      style={
+        Object {
+          "display": "block",
+          "maxWidth": "none",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-hnaccs=""
+      >
+        remove max-width
+      </div>
+      <div
+        data-css-1ios7mb=""
+      >
+        <div
+          data-css-in6gqi=""
+        >
+          <textarea
+            data-css-dpjpe2=""
+            disabled={false}
+            rows={4}
+            style={
+              Object {
+                "height": 112,
+              }
+            }
+          />
+        </div>
+        <div
+          data-css-h6j4b2=""
+        >
+          <div
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
   </div>
 </div>
 `;
 
 exports[`Storyshots rows less than 4 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-hnaccs=""
     >
-      <label
-        data-css-1p1sjwu=""
-      >
-        <div
-          data-css-1j9p7fe=""
-        >
-          Min Height Engages
-        </div>
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              style={
-                Object {
-                  "height": 40,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+      Min Height Engages
     </div>
-  </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          rows={1}
+          style={
+            Object {
+              "height": 40,
+            }
+          }
+        />
+      </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots rows more than 4 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-hnaccs=""
     >
-      <label
-        data-css-1p1sjwu=""
-      >
-        <div
-          data-css-1j9p7fe=""
-        >
-          6 Rows of Text
-        </div>
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              style={
-                Object {
-                  "height": 160,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+      6 Rows of Text
     </div>
-  </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          rows={6}
+          style={
+            Object {
+              "height": 160,
+            }
+          }
+        />
+      </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots whitelist name 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-1ios7mb=""
     >
-      <label
-        data-css-1p1sjwu=""
+      <div
+        data-css-ctre2o=""
       >
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              name="myFieldNameOfPower"
-              placeholder="I have a form name"
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          name="myFieldNameOfPower"
+          placeholder="I have a form name"
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots whitelist onChange 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
-  <div
-    data-css-wx7ofq=""
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-1nnsngu=""
+      data-css-1ios7mb=""
     >
-      <label
-        data-css-1p1sjwu=""
+      <div
+        data-css-ctre2o=""
       >
-        <div
-          data-css-1ghdxx6=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <textarea
-              data-css-1vpjki6=""
-              disabled={false}
-              onChange={[Function]}
-              placeholder="Change me"
-              style={
-                Object {
-                  "height": 112,
-                }
-              }
-            />
-          </div>
-        </div>
-      </label>
+        <textarea
+          data-css-dpjpe2=""
+          disabled={false}
+          onChange={[Function]}
+          placeholder="Change me"
+          rows={4}
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
     </div>
-  </div>
+  </label>
 </div>
 `;

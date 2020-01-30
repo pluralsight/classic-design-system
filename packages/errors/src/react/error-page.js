@@ -1,53 +1,76 @@
-import * as glamor from 'glamor'
+import { compose, css, media } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
-import * as textVars from '@pluralsight/ps-design-system-text/vars'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
+import Button from '@pluralsight/ps-design-system-button'
+import { headingSizes } from '@pluralsight/ps-design-system-text'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css'
-import Heading from './heading'
-import icons from './icons'
+import stylesheet from '../css/index.js'
+
+import Heading from './heading.js'
+import icons from './icon-loader.js'
 
 const styles = {
-  page: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page'],
-      css[`.psds-error-page.psds-theme--${themeName}`],
-      {
-        '@media (min-width: 769px)':
-          css['@media (min-width: 769px)']['.psds-error-page']
-      }
-    ),
-  icon: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page__icon'],
-      css[`.psds-error-page__icon.psds-theme--${themeName}`]
-    ),
-  text: props =>
-    glamor.css({
-      '@media (min-width: 769px)': {
-        '> h1': css['@media (min-width: 769px)']['.psds-error-page__text > h1']
-      }
-    }),
-  code: props => glamor.css(css['.psds-error-page__code']),
-  search: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page__search'],
-      css[`.psds-error-page__search.psds-theme--${themeName}`]
-    ),
-  searchIcon: _ => glamor.css(css['.psds-error-page__search__icon']),
-  searchInput: ({ themeName }) =>
-    glamor.css(
-      css['.psds-error-page__search__input'],
-      css[`.psds-error-page__search__input.psds-theme--${themeName}`]
+  page: ({ themeName }) => {
+    const label = 'psds-error-page'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      media(
+        '(min-width: 769px)',
+        stylesheet['@media (min-width: 769px)'][`.${label}`]
+      )
     )
+  },
+  icon: ({ themeName }) => {
+    const label = 'psds-error-page__icon'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  text: () => {
+    const label = 'psds-error-page__text'
+
+    return media(
+      '(min-width: 769px)',
+      stylesheet['@media (min-width: 769px)'][`.${label}`]
+    )
+  },
+  code: ({ themeName }) =>
+    css(
+      stylesheet['.psds-error-page__code'],
+      stylesheet[`.psds-error-page__code.psds-theme--${themeName}`]
+    ),
+  search: ({ themeName }) => {
+    const label = 'psds-error-page__search'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  },
+  searchIcon: ({ themeName }) =>
+    css(
+      stylesheet['.psds-error-page__search__icon'],
+      stylesheet[`.psds-error-page__search__icon.psds-theme--${themeName}`]
+    ),
+  searchInput: ({ themeName }) => {
+    const label = 'psds-error-page__search__input'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    )
+  }
 }
 
 const SearchForm = props => (
   <form action={props.action} method="get" {...styles.search(props)}>
-    <div {...styles.searchIcon(props)}>{icons.search(React)}</div>
+    <div {...styles.searchIcon(props)}>{icons.search()}</div>
     <input
       {...styles.searchInput(props)}
       type="text"
@@ -56,24 +79,28 @@ const SearchForm = props => (
     />
   </form>
 )
+SearchForm.propTypes = {
+  action: PropTypes.string
+}
 
-const ErrorPage = (props, context) => {
+const ErrorPage = props => {
+  const themeName = useTheme()
   const allProps = {
     ...props,
-    themeName: context.themeName || themeDefaultName
+    themeName
   }
   return (
     <div {...styles.page(allProps)}>
       {allProps.iconId && icons[allProps.iconId] && (
-        <div {...styles.icon(allProps)}>{icons[allProps.iconId](React)}</div>
+        <div {...styles.icon(allProps)}>{icons[allProps.iconId]()}</div>
       )}
       <div {...styles.text(allProps)}>
-        <Heading size={textVars.headingSizes.medium}>
+        <Heading size={headingSizes.medium}>
           <h1>{allProps.text}</h1>
         </Heading>
       </div>
       <div {...styles.code(allProps)}>
-        <Heading size={textVars.headingSizes.smallCaps}>
+        <Heading size={headingSizes.smallCaps}>
           <h2>Error code: {allProps.code}</h2>
         </Heading>
       </div>
@@ -88,9 +115,6 @@ ErrorPage.propTypes = {
   href: PropTypes.string,
   iconId: PropTypes.oneOf(Object.keys(icons)),
   text: PropTypes.string
-}
-ErrorPage.contextTypes = {
-  themeName: PropTypes.string
 }
 
 export default ErrorPage

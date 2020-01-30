@@ -1,24 +1,27 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import Row from '@pluralsight/ps-design-system-row/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import React from 'react'
+
+import Badge from '@pluralsight/ps-design-system-badge'
+import Button from '@pluralsight/ps-design-system-button'
+import { BookmarkIcon, MoreIcon } from '@pluralsight/ps-design-system-icon'
+import Row from '@pluralsight/ps-design-system-row'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const InAppExample = props => (
-  <div className="example">
-    <div className="stack">
+  <Theme>
+    <div className="example">
       <Row
         title="Advanced TypeScript"
         progress={0}
@@ -48,6 +51,7 @@ const InAppExample = props => (
         image={<Row.Image src="/static/img/course4.jpg" />}
       />
     </div>
+
     <Code collapsible language="javascript">{`<Row
   title="Advanced TypeScript"
   progress={0}
@@ -76,16 +80,17 @@ const InAppExample = props => (
   metadata2={['90m watched']}
   image={<Row.Image src="/static/img/course4.jpg" />}
 />`}</Code>
+
     <style jsx>{`
-      .stack {
+      .example {
         padding: ${core.layout.spacingLarge};
         background: ${core.colors.gray06};
       }
     `}</style>
-  </div>
+  </Theme>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Row">
       <PageHeading packageName="row">Row</PageHeading>
@@ -95,7 +100,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Row from '@pluralsight/ps-design-system-row/react'
+        import Row from '@pluralsight/ps-design-system-row'
       </Code>
 
       <PropTypes
@@ -104,7 +109,7 @@ export default withServerProps(_ => (
             PropTypes.row([
               'actionBar',
               <span>
-                <code>Row.Action[]</code>
+                <code>Button</code>
               </span>,
               null,
               null,
@@ -159,31 +164,28 @@ export default withServerProps(_ => (
             PropTypes.row([
               'size',
               PropTypes.union(Row.sizes),
+              false,
               null,
-              <code>medium</code>,
               <span>
-                size of row (from <code>Row.sizes</code>)
+                disable resizing layout and set explicit size (from{' '}
+                <code>Row.sizes</code>)
               </span>
             ]),
             PropTypes.row([
               'title',
               <span>
-                <code>Row.TextLink > a > Row.Text</code> | <code>Row.Text</code>
+                string | <code>Row.TextLink > a > string</code>
               </span>,
               true,
               null,
               'row title or linked title'
-            ])
-          ],
-          'Row.Action': [
+            ]),
             PropTypes.row([
-              'icon',
-              <span>
-                <code>Icon</code>
-              </span>,
-              true,
+              'titleTruncated',
+              'boolean',
               null,
-              'icon representing action'
+              <code>false</code>,
+              'limit title to 2 lines'
             ])
           ],
           'Row.Image': [
@@ -204,7 +206,8 @@ export default withServerProps(_ => (
       <P>The size will determine certain base measurements.</P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Button, Row }}
+        themeToggle
         codes={[
           `
 <Row
@@ -232,7 +235,8 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Button, Row, BookmarkIcon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -256,7 +260,7 @@ export default withServerProps(_ => (
     </Row.ImageLink>
   }
   title="Linked image with other overlays"
-  actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />]}
   fullOverlay={
     <Row.FullOverlayLink>
       <a href="https://google.com?q=full%20overlay" target="_blank">
@@ -276,7 +280,8 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Button, Row }}
+        themeToggle
         codes={[
           `
 <Row
@@ -306,7 +311,8 @@ export default withServerProps(_ => (
       <P>The title will grow indefinitely, never truncating.</P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Button, Row }}
+        themeToggle
         codes={[
           `
 <Row
@@ -336,7 +342,7 @@ export default withServerProps(_ => (
       </P>
       <P>
         Metadata is constrained to a single line, overflowing with an ellipsis
-        indicated. The first datum is given display space precendence.
+        indicated. The first datum is given display space precedence.
       </P>
       <P>
         Metadata can be strings or links, defined by the `Row.TextLink`
@@ -344,7 +350,8 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Button, Row }}
+        themeToggle
         codes={[
           `
 <Row
@@ -383,13 +390,22 @@ export default withServerProps(_ => (
         The action bar contains the on-row affordances a user can take besides
         linking straight to the content. These are usually buttons.
       </P>
+      <P>
+        <Badge color={Badge.colors.yellow}>Note</Badge> Prior to v9.0.0, there
+        used to be a sub-component called <Text.Code>Row.Action</Text.Code> that
+        was used in the Action Bar. It has been removed to provide needed
+        flexibility. You will now want to use{' '}
+        <Text.Code>{`<Button size={Button.sizes.small} appearance={Button.appearances.flat} />`}</Text.Code>{' '}
+        instead.
+      </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Button, Row, BookmarkIcon, MoreIcon }}
+        themeToggle
         codes={[
           `
 <Row
-  actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+  actionBar={[<Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />]}
   title="Action bar appears on hover"
   image={<Row.Image src="/static/img/course2.jpg" />}
 />
@@ -398,8 +414,8 @@ export default withServerProps(_ => (
           `
 <Row
   actionBar={[
-    <Row.Action key="bookmark" icon={<Icon id="bookmark" />} />,
-    <Row.Action key="more" icon={<Icon id="more" />} />
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />,
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="more" icon={<MoreIcon />} />
   ]}
   title="Multiple actions"
   image={<Row.Image src="/static/img/course2.jpg" />}
@@ -409,8 +425,8 @@ export default withServerProps(_ => (
           `
 <Row
   actionBar={[
-    <Row.Action key="bookmark" icon={<Icon id="bookmark" />} />,
-    <Row.Action key="more" icon={<Icon id="more" />} />
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />,
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat} key="more" icon={<MoreIcon />} />
   ]}
   actionBarVisible
   title="Action bar locked visible"
@@ -431,7 +447,8 @@ export default withServerProps(_ => (
       </P>
       <Example.React
         orient="vertical"
-        includes={{ Row, Icon }}
+        includes={{ Button, Row, BookmarkIcon }}
+        themeToggle
         codes={[
           `
 <Row
@@ -450,8 +467,12 @@ export default withServerProps(_ => (
 `,
           `
 <Row
-  fullOverlay={<Row.FullOverlayLink><a>Custom Thing</a></Row.FullOverlayLink>}
-  actionBar={[<Row.Action key="bookmark" icon={<Icon id="bookmark" />} />]}
+  fullOverlay={
+    <Row.FullOverlayLink>
+      <a href="https://pluralsight.com" target="_blank">Custom Link</a>
+    </Row.FullOverlayLink>
+  }
+  actionBar={[<Button size={Button.sizes.small} appearance={Button.appearances.flat} key="bookmark" icon={<BookmarkIcon />} />]}
   title="Combined with other overlays"
   image={<Row.Image src="/static/img/course3.jpg" />}
 />
@@ -460,4 +481,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

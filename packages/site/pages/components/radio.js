@@ -1,22 +1,18 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Radio from '@pluralsight/ps-design-system-radio/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Radio from '@pluralsight/ps-design-system-radio'
+import React from 'react'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class InAppExample extends React.Component {
   constructor() {
@@ -24,9 +20,11 @@ class InAppExample extends React.Component {
     this.state = { value: 'beginner' }
     this.handleSelect = this.handleSelect.bind(this)
   }
+
   handleSelect(_, value) {
     this.setState(_ => ({ value }))
   }
+
   render() {
     return (
       <div>
@@ -93,12 +91,10 @@ class InAppExample extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Radio">
-      <PageHeading beta packageName="radio">
-        Radio
-      </PageHeading>
+      <PageHeading packageName="radio">Radio</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -107,7 +103,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Radio from '@pluralsight/ps-design-system-radio/react'
+        import Radio from '@pluralsight/ps-design-system-radio'
       </Code>
 
       <PropTypes
@@ -231,4 +227,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

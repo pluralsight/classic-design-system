@@ -1,9 +1,9 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, fireEvent } from '@testing-library/react'
 
-import * as vars from '../../vars'
+import * as vars from '../../vars/index.js'
 
-import DatePicker from '..'
+import DatePicker from '../index.js'
 
 describe('DatePicker', () => {
   describe('.appearances', () => {
@@ -11,26 +11,68 @@ describe('DatePicker', () => {
   })
 
   it('renders', () => {
-    expect(() => shallow(<DatePicker />)).not.toThrow()
+    const { getByTestId } = render(<DatePicker data-testid="mock-component" />)
+
+    expect(getByTestId('mock-component')).toBeInTheDocument()
   })
 
-  it('should derive initial state from value prop', () => {
-    const wrapper = shallow(<DatePicker value="1/20/1993" />)
-    const { mm, dd, yyyy } = wrapper.state()
+  it('forwards refs', () => {
+    const ref = React.createRef()
 
-    expect(mm).toEqual(1)
-    expect(dd).toEqual(20)
-    expect(yyyy).toEqual(1993)
+    render(<DatePicker ref={ref} />)
+
+    expect(ref.current).not.toBeNull()
   })
 
-  it('should update state when the value prop changes', () => {
-    const wrapper = shallow(<DatePicker value="1/20/1993" />)
+  describe('onBlur prop', () => {
+    it('should call onBlur when onBlur is called for a valid date', () => {
+      const onBlurMock = jest.fn()
+      const { getByDisplayValue } = render(
+        <DatePicker value="8/14/2001" onSubBlur={onBlurMock} />
+      )
+      fireEvent.blur(getByDisplayValue('2001'))
+      expect(onBlurMock).toHaveBeenCalledTimes(1)
+      expect(onBlurMock).toHaveBeenCalledWith('8/14/2001')
+    })
 
-    wrapper.setProps({ value: '2/10/2000' })
-    const { mm, dd, yyyy } = wrapper.state()
+    it('should call onBlur when onBlur is called for an invalid date', () => {
+      const onBlurMock = jest.fn()
+      const { getByDisplayValue } = render(
+        <DatePicker value="8/14/2001" onSubBlur={onBlurMock} />
+      )
+      const yearSubField = getByDisplayValue('2001')
+      fireEvent.change(yearSubField, { target: { value: '' } })
+      fireEvent.blur(yearSubField)
+      expect(onBlurMock).toHaveBeenCalledTimes(1)
+      expect(onBlurMock).toHaveBeenCalledWith(null)
+    })
+  })
 
-    expect(mm).toEqual(2)
-    expect(dd).toEqual(10)
-    expect(yyyy).toEqual(2000)
+  describe('with a controlled value', () => {
+    let container
+    let rerender
+    const fields = { day: null, month: null, year: null }
+
+    beforeEach(() => {
+      ;({ container, rerender } = render(<DatePicker value="1/20/1993" />))
+
+      fields.day = container.querySelector('[name="dd"]')
+      fields.month = container.querySelector('[name="mm"]')
+      fields.year = container.querySelector('[name="yyyy"]')
+    })
+
+    it('derives initial value from prop', () => {
+      expect(fields.day.value).toEqual('20')
+      expect(fields.month.value).toEqual('1')
+      expect(fields.year.value).toEqual('1993')
+    })
+
+    it('should update on prop change', () => {
+      rerender(<DatePicker value="8/14/2001" />)
+
+      expect(fields.day.value).toEqual('14')
+      expect(fields.month.value).toEqual('8')
+      expect(fields.year.value).toEqual('2001')
+    })
   })
 })

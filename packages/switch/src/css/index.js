@@ -1,11 +1,10 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
-import { transparentize } from 'polished'
+} from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 export default {
   '.psds-switch': {
@@ -15,10 +14,9 @@ export default {
     opacity: '1',
     background: 'none',
     border: 'none',
-    padding: 0
-  },
-  '.psds-switch:focus': {
-    outline: 'none'
+    padding: 0,
+
+    '&:focus': { outline: 'none' }
   },
   '.psds-switch--disabled': {
     opacity: '0.4',
@@ -31,11 +29,14 @@ export default {
     flexDirection: 'row-reverse'
   },
 
-  // __track
-  [`.psds-switch__track`]: {
+  '.psds-switch__track': {
     position: 'relative',
-    backgroundColor: core.colors.gray03,
+    backgroundColor: core.colorsBackgroundUtility[25],
+    border: `1px solid ${core.colorsBorder.lowOnDark}`,
     transition: `background-color ${core.motion.speedFast} ease-in-out`
+  },
+  [`.psds-switch__track.psds-theme--${themeNames.light}`]: {
+    border: `1px solid ${core.colorsBorder.lowOnLight}`
   },
   [`.psds-switch__track.psds-switch__track--size-${vars.sizes.small}`]: {
     height: '12px',
@@ -45,51 +46,42 @@ export default {
   [`.psds-switch__track.psds-switch__track--size-${vars.sizes.large}`]: {
     height: '24px',
     width: '48px',
-    borderRadius: '12px',
-    padding: '1px'
+    borderRadius: '12px'
   },
-  [`.psds-switch__track--checked.psds-switch__track--color-${
-    vars.colors.blue
-  }`]: {
-    backgroundColor: core.colors.blue
+  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.blue}`]: {
+    backgroundColor: core.colorsBlue.base,
+    borderColor: 'transparent'
   },
-  [`.psds-switch__track--checked.psds-switch__track--color-${
-    vars.colors.green
-  }`]: {
-    backgroundColor: core.colors.green
+  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.green}`]: {
+    backgroundColor: core.colorsGreen.base,
+    borderColor: 'transparent'
   },
-  [`.psds-switch__track--checked.psds-switch__track--color-${
-    vars.colors.orange
-  }`]: {
-    backgroundColor: core.colors.orange
+  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.orange}`]: {
+    // NOTE: temp: make orange blue until we do a breaking change to remove orange
+    backgroundColor: core.colorsBlue.base,
+    borderColor: 'transparent'
   },
 
-  // __thumb
   [`.psds-switch__thumb`]: {
     backgroundColor: core.colors.white,
     borderRadius: '50%',
-    boxShadow: `0 0 2px ${transparentize(0.5, core.colors.black)}`,
     transition: `transform ${core.motion.speedFast} ease-in-out`
   },
   [`.psds-switch__thumb--size-${vars.sizes.small}`]: {
-    height: '12px',
-    width: '12px'
+    height: '10px',
+    width: '10px'
   },
   [`.psds-switch__thumb--size-${vars.sizes.large}`]: {
     height: '22px',
     width: '22px'
   },
-  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${
-    vars.sizes.small
-  }`]: {
+  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${vars.sizes.small}`]: {
     transform: 'translateX(12px)'
   },
-  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${
-    vars.sizes.large
-  }`]: {
+  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${vars.sizes.large}`]: {
     transform: 'translateX(24px)'
   },
-  // __label
+
   [`.psds-switch__label`]: {
     fontWeight: core.type.fontWeightMedium,
     lineHeight: '1em'
@@ -100,32 +92,24 @@ export default {
   [`.psds-switch__label--size-${vars.sizes.large}`]: {
     fontSize: core.type.fontSizeSmall
   },
-  [`.psds-switch__label--size-${
-    vars.sizes.small
-  }.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
+  [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
     marginRight: core.layout.spacingXSmall
   },
-  [`.psds-switch__label--size-${
-    vars.sizes.large
-  }.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
+  [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
     marginRight: core.layout.spacingMedium
   },
-  [`.psds-switch__label--size-${
-    vars.sizes.small
-  }.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
+  [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
     marginLeft: core.layout.spacingXSmall
   },
-  [`.psds-switch__label--size-${
-    vars.sizes.large
-  }.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
+  [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
     marginLeft: core.layout.spacingMedium
   },
   [`.psds-switch__label.psds-theme--${themeNames.light}`]: {
-    color: core.colors.gray05
+    color: core.colorsTextIcon.highOnLight
   },
   [`.psds-switch__label.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.bone
+    color: core.colorsTextIcon.highOnDark
   },
-  // __checkbox
+
   '.psds-switch__checkbox': core.accessibility.screenReaderOnly
 }

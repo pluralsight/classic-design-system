@@ -3,6 +3,340 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.1.1...@pluralsight/ps-design-system-checkbox@5.1.2) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.1.0...@pluralsight/ps-design-system-checkbox@5.1.1) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.15...@pluralsight/ps-design-system-checkbox@5.1.0) (2020-01-22)
+
+
+### Features
+
+* **checkbox:** use 2020 colors ([7245c73](https://github.com/pluralsight/design-system/commit/7245c7362efd14ece4533a21b749bf1788b09f59))
+
+
+
+
+
+## [5.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.13...@pluralsight/ps-design-system-checkbox@5.0.15) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.11...@pluralsight/ps-design-system-checkbox@5.0.13) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.9...@pluralsight/ps-design-system-checkbox@5.0.11) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.8...@pluralsight/ps-design-system-checkbox@5.0.9) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.7...@pluralsight/ps-design-system-checkbox@5.0.8) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.6...@pluralsight/ps-design-system-checkbox@5.0.7) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.5...@pluralsight/ps-design-system-checkbox@5.0.6) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.3...@pluralsight/ps-design-system-checkbox@5.0.4) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.2...@pluralsight/ps-design-system-checkbox@5.0.3) (2019-12-16)
+
+
+### Bug Fixes
+
+* linting errors cleanup ([3ca1954](https://github.com/pluralsight/design-system/commit/3ca1954965fb2e6376a7e58f7281b183dfe70577))
+
+
+
+
+
+## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.1...@pluralsight/ps-design-system-checkbox@5.0.2) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@5.0.0...@pluralsight/ps-design-system-checkbox@5.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@4.1.1...@pluralsight/ps-design-system-checkbox@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **checkbox:** esm export refactor ([6465d79](https://github.com/pluralsight/design-system/commit/6465d79))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **halo:** esm export refactor ([723a966](https://github.com/pluralsight/design-system/commit/723a966))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** import pattern
+* **halo:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [4.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@4.1.0...@pluralsight/ps-design-system-checkbox@4.1.1) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@4.0.2...@pluralsight/ps-design-system-checkbox@4.1.0) (2019-10-11)
+
+
+### Features
+
+* **checkbox:** add support for indeterminate attr ([bd76bcc](https://github.com/pluralsight/design-system/commit/bd76bcc))
+
+
+
+
+
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@4.0.1...@pluralsight/ps-design-system-checkbox@4.0.2) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@4.0.0...@pluralsight/ps-design-system-checkbox@4.0.1) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@3.0.0...@pluralsight/ps-design-system-checkbox@4.0.0) (2019-08-09)
+
+
+### Build System
+
+* **checkbox:** move theme package to peerDeps ([620c5a3](https://github.com/pluralsight/design-system/commit/620c5a3))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.3...@pluralsight/ps-design-system-checkbox@3.0.0) (2019-08-02)
+
+
+### Code Refactoring
+
+* **checkbox:** update ref forwarding and dynamically filter props ([0137735](https://github.com/pluralsight/design-system/commit/0137735))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** remove innerRef prop support; use ref prop instead
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.2...@pluralsight/ps-design-system-checkbox@2.0.3) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.1...@pluralsight/ps-design-system-checkbox@2.0.2) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@2.0.0...@pluralsight/ps-design-system-checkbox@2.0.1) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@1.0.4...@pluralsight/ps-design-system-checkbox@2.0.0) (2019-05-31)
+
+
+### Code Refactoring
+
+* **checkbox:** use new theme context; update storybook config ([87e2492](https://github.com/pluralsight/design-system/commit/87e2492))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** upgrade react peerDep to 16.8.6
+
+
+
+
+
+## [1.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@1.0.3...@pluralsight/ps-design-system-checkbox@1.0.4) (2019-05-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [1.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@1.0.2...@pluralsight/ps-design-system-checkbox@1.0.3) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [1.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@1.0.1...@pluralsight/ps-design-system-checkbox@1.0.2) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [1.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@1.0.0...@pluralsight/ps-design-system-checkbox@1.0.1) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+# [1.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.19...@pluralsight/ps-design-system-checkbox@1.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [0.3.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.18...@pluralsight/ps-design-system-checkbox@0.3.19) (2019-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [0.3.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.16...@pluralsight/ps-design-system-checkbox@0.3.18) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [0.3.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.16...@pluralsight/ps-design-system-checkbox@0.3.17) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
+## [0.3.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.15...@pluralsight/ps-design-system-checkbox@0.3.16) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
 ## [0.3.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@0.3.14...@pluralsight/ps-design-system-checkbox@0.3.15) (2018-12-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

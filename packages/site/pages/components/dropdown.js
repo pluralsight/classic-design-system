@@ -1,130 +1,113 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu/react'
-import core from '@pluralsight/ps-design-system-core'
-import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import React from 'react'
+
+import * as core from '@pluralsight/ps-design-system-core'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
   PropTypes,
   SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  TextLink
+} from '../../src/ui/index.js'
 
-class InAppExample extends React.Component {
-  constructor() {
-    super()
-    this.state = { value: null }
-  }
-  render() {
-    const options = [
-      { value: 'beg', label: 'Beginner' },
-      { value: 'int', label: 'Intermediate' },
-      { value: 'adv', label: 'Advanced' }
-    ]
-    return (
-      <div>
-        <div className="example">
-          <div className="dropdown">
-            <Dropdown
-              label="Level"
-              placeholder="Select"
-              menu={
-                <ActionMenu>
-                  {options.map(opt => (
-                    <ActionMenu.Item
-                      key={opt.value}
-                      onClick={_ => this.setState({ value: opt.value })}
-                    >
-                      {opt.label}
-                    </ActionMenu.Item>
-                  ))}
-                </ActionMenu>
-              }
-            />
-          </div>
-          <div className="selection">Selected: {this.state.value}</div>
+function InAppExample() {
+  const options = [
+    { value: 'beg', label: 'Beginner' },
+    { value: 'int', label: 'Intermediate' },
+    { value: 'adv', label: 'Advanced' }
+  ]
+  const [value, setValue] = React.useState(options[1].value)
+  return (
+    <div>
+      <div className="example">
+        <div className="dropdown">
+          <Dropdown
+            label="Level"
+            placeholder="Select"
+            onChange={(evt, value, label) => setValue(value)}
+            menu={
+              <ActionMenu>
+                {options.map(opt => (
+                  <ActionMenu.Item key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </ActionMenu.Item>
+                ))}
+              </ActionMenu>
+            }
+            value={value}
+          />
         </div>
-        <Code
-          lang="javascript"
-          collapsible
-        >{`class InAppExample extends React.Component {
-  constructor() {
-    super()
-    this.state = { value: null }
-  }
-  render() {
-    const options = [
-      { value: 'beg', label: 'Beginner' },
-      { value: 'int', label: 'Intermediate' },
-      { value: 'adv', label: 'Advanced' }
-    ]
-    return (
-      <div>
-        <Dropdown
-          label="Level"
-          placeholder="Select"
-          menu={
-            <ActionMenu>
-              {options.map(opt => (
-                <ActionMenu.Item
-                  key={opt.value}
-                  onClick={_ => this.setState({ value: opt.value })}
-                >
-                  {opt.label}
-                </ActionMenu.Item>
-              ))}
-            </ActionMenu>
-          }
-        />
-        <div>Selected: {this.state.value}</div>
+        <div className="selection">Selected: {value}</div>
       </div>
-    )
-  }
+      <Code lang="javascript" collapsible>{`function InAppExample() {
+  const options = [
+    { value: 'beg', label: 'Beginner' },
+    { value: 'int', label: 'Intermediate' },
+    { value: 'adv', label: 'Advanced' }
+  ]
+  const [value, setValue] = React.useState(options[1].value)
+  return (
+    <div>
+      <Dropdown
+        label="Level"
+        placeholder="Select"
+        onChange={(evt, value, label) => setValue(value)}
+        menu={
+          <ActionMenu>
+            {options.map(opt => (
+              <ActionMenu.Item key={opt.value} value={opt.value}>
+                {opt.label}
+              </ActionMenu.Item>
+            ))}
+          </ActionMenu>
+        }
+        value={value}
+      />
+      <div>Selected: {value}</div>
+    </div>
+  )
 }`}</Code>
-        <style jsx>{`
-          .example {
-            display: flex;
-            margin-bottom: ${core.layout.spacingMedium};
-          }
-          .selection {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            margin: ${core.layout.spacingMedium} 0 0 0;
-            padding: ${core.layout.spacingLarge};
-            font-size: ${core.type.fontSizeMedium};
-            color: ${core.colors.gray04};
-            background: ${core.colors.bone};
-            border-radius: 12px;
-          }
-          .dropdown {
-            flex: 1;
-            position: relative;
-            z-index: 0;
-            padding: ${core.layout.spacingLarge} ${core.layout.spacingLarge}
-              104px ${core.layout.spacingLarge};
-          }
-        `}</style>
-      </div>
-    )
-  }
+      <style jsx>{`
+        .example {
+          display: flex;
+          margin-bottom: ${core.layout.spacingMedium};
+        }
+        .selection {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          margin: ${core.layout.spacingMedium} 0 0 0;
+          padding: ${core.layout.spacingLarge};
+          font-size: ${core.type.fontSizeMedium};
+          color: ${core.colors.gray04};
+          background: ${core.colors.bone};
+          border-radius: 12px;
+        }
+        .dropdown {
+          flex: 1;
+          position: relative;
+          z-index: 0;
+          padding: ${core.layout.spacingLarge} ${core.layout.spacingLarge} 104px
+            ${core.layout.spacingLarge};
+        }
+      `}</style>
+    </div>
+  )
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Dropdown">
-      <PageHeading beta packageName="dropdown">
-        Dropdown
-      </PageHeading>
+      <PageHeading packageName="dropdown">Dropdown</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -133,7 +116,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Dropdown from '@pluralsight/ps-design-system-dropdown/react'
+        import Dropdown from '@pluralsight/ps-design-system-dropdown'
       </Code>
       <PropTypes
         props={[
@@ -161,13 +144,6 @@ export default withServerProps(_ => (
             'error state flag'
           ]),
           PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'input field react ref callback'
-          ]),
-          PropTypes.row([
             'label',
             'string',
             null,
@@ -182,11 +158,27 @@ export default withServerProps(_ => (
             'menu for dropdown contents'
           ]),
           PropTypes.row([
+            'onChange',
+            <span>(Event, value, label) => ()</span>,
+            null,
+            null,
+            'triggered when an item selected'
+          ]),
+          PropTypes.row([
             'placeholder',
             'string',
             null,
             null,
             'in-field usage hint'
+          ]),
+          PropTypes.row([
+            'size',
+            PropTypes.union(Dropdown.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>Dropdown.sizes</code>)
+            </span>
           ]),
           PropTypes.row([
             'subLabel',
@@ -203,8 +195,10 @@ export default withServerProps(_ => (
 
       <SectionHeading>In-app example</SectionHeading>
       <P>
-        The Dropdown menu is provided by the{' '}
-        <Link href="/components/actionmenu">ActionMenu</Link>.
+        Keep your own app state. Feed it to the dropdown with{' '}
+        <Text.Code>value</Text.Code>. Listen for changes in the menu selection
+        using <Text.Code>onChange</Text.Code>. The Dropdown menu is provided by
+        the <Link href="/components/actionmenu">ActionMenu</Link>.
       </P>
       <InAppExample />
 
@@ -245,6 +239,35 @@ export default withServerProps(_ => (
           `<Dropdown
   label="Level"
   placeholder="Select level"
+  subLabel="Which audience is this course aimed at?"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`
+        ]}
+      />
+
+      <SectionHeading>Pre-selected Label</SectionHeading>
+      <P>
+        To pre-select a label, use the <Text.Code>placeholder</Text.Code> prop.
+        Note that this is a visual preselection only, which will work for most
+        React apps where your data model with the initial *value* is held in
+        memory somewhere already. To see this in action, refer to the{' '}
+        <TextLink href="#in-app-example">In-app example</TextLink> above.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '96px' }}
+        themeToggle
+        includes={{ ActionMenu, Dropdown }}
+        codes={[
+          `<Dropdown
+  label="Level"
+  placeholder="Intermediate"
   subLabel="Which audience is this course aimed at?"
   menu={
     <ActionMenu>
@@ -322,6 +345,40 @@ export default withServerProps(_ => (
 />`
         ]}
       />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small dropdown is ideal for usage within table rows otherwise use
+        the default, medium size dropdown, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ ActionMenu, Dropdown }}
+        codes={[
+          `<Dropdown
+  placeholder="medium dropdown"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`,
+          `<Dropdown
+  size={Dropdown.sizes.small}
+  placeholder="Small dropdown"
+  menu={
+    <ActionMenu>
+      <ActionMenu.Item>Beginner</ActionMenu.Item>
+      <ActionMenu.Item>Intermediate</ActionMenu.Item>
+      <ActionMenu.Item>Advanced</ActionMenu.Item>
+    </ActionMenu>
+  }
+/>`
+        ]}
+      />
     </Content>
   </Chrome>
-))
+)

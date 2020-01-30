@@ -1,22 +1,21 @@
-import core from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer/react'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import Row from '@pluralsight/ps-design-system-row/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+import Row from '@pluralsight/ps-design-system-row'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const ExampleDrawerBase = () => (
   <div>
@@ -41,14 +40,28 @@ const ExampleDrawerPanel = () => (
     <Row
       title="Course Overview"
       metadata1={['1m 46s']}
-      actionBar={[<Row.Action icon={<Icon id="bookmark" />} key="bookmark" />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<BookmarkIcon />}
+          key="bookmark"
+        />
+      ]}
       size={Row.sizes.small}
       actionBarVisible
     />
     <Row
       title="What is ASP.NET Core?"
       metadata1={['39m 28s']}
-      actionBar={[<Row.Action icon={<Icon id="bookmark" />} key="bookmark" />]}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<BookmarkIcon />}
+          key="bookmark"
+        />
+      ]}
       size={Row.sizes.small}
       actionBarVisible
     />
@@ -102,8 +115,11 @@ const PinkBox = props => (
     `}</style>
   </div>
 )
+PinkBox.propTypes = {
+  children: PropTypes.any
+}
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Drawer">
       <PageHeading packageName="drawer">Drawer</PageHeading>
@@ -115,7 +131,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Drawer from '@pluralsight/ps-design-system-drawer/react'
+        import Drawer from '@pluralsight/ps-design-system-drawer'
       </Code>
 
       <PropTypes
@@ -143,7 +159,7 @@ export default withServerProps(_ => (
           ]),
           PropTypes.row([
             'onToggle',
-            <code>boolean => ()</code>,
+            <code>(boolean, Event) => ()</code>,
             null,
             null,
             'triggered when the drawer opens or closes'
@@ -178,6 +194,7 @@ export default withServerProps(_ => (
         mechanism to expose the DrawerPanel.
       </P>
       <Example.React
+        themeToggle
         includes={{ Drawer, PinkBox }}
         orient="vertical"
         codes={[
@@ -193,6 +210,7 @@ export default withServerProps(_ => (
         built in.
       </P>
       <Example.React
+        themeToggle
         includes={{ Drawer }}
         orient="vertical"
         codes={[
@@ -201,24 +219,6 @@ export default withServerProps(_ => (
 </Drawer>`
         ]}
       />
-
-      <SectionHeading>Light Theme</SectionHeading>
-      <P>
-        To specify the light theme, wrap your components in a <code>Theme</code>{' '}
-        component.
-      </P>
-      <Example.React
-        includes={{ Drawer, Theme }}
-        themeName={Theme.names.light}
-        orient="vertical"
-        codes={[
-          `<Theme name={Theme.names.light}>
-  <Drawer startOpen base={<div style={{ height: 100 }} />}>
-    <div style={{ height: 128 }} />
-  </Drawer>
-</Theme>`
-        ]}
-      />
     </Content>
   </Chrome>
-))
+)

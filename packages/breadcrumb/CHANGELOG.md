@@ -3,6 +3,497 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.2.1...@pluralsight/ps-design-system-breadcrumb@6.2.2) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.2.0...@pluralsight/ps-design-system-breadcrumb@6.2.1) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+# [6.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.11...@pluralsight/ps-design-system-breadcrumb@6.2.0) (2020-01-28)
+
+
+### Features
+
+* **breadcrumb:** update to use named import ([e8284ab](https://github.com/pluralsight/design-system/commit/e8284abe9499cbed2f9c7b1033ae35c2ff25a0e6))
+
+
+
+
+
+## [6.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.10...@pluralsight/ps-design-system-breadcrumb@6.1.11) (2020-01-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.8...@pluralsight/ps-design-system-breadcrumb@6.1.10) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.6...@pluralsight/ps-design-system-breadcrumb@6.1.8) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.4...@pluralsight/ps-design-system-breadcrumb@6.1.6) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.3...@pluralsight/ps-design-system-breadcrumb@6.1.4) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.2...@pluralsight/ps-design-system-breadcrumb@6.1.3) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.1...@pluralsight/ps-design-system-breadcrumb@6.1.2) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.1.0...@pluralsight/ps-design-system-breadcrumb@6.1.1) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.8...@pluralsight/ps-design-system-breadcrumb@6.1.0) (2020-01-15)
+
+
+### Features
+
+* **button:** update token names ([2993fb0](https://github.com/pluralsight/design-system/commit/2993fb00ca80312cdf6d07f887f92e1bc8472640))
+
+
+
+
+
+## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.7...@pluralsight/ps-design-system-breadcrumb@6.0.8) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.5...@pluralsight/ps-design-system-breadcrumb@6.0.6) (2019-12-19)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.4...@pluralsight/ps-design-system-breadcrumb@6.0.5) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.3...@pluralsight/ps-design-system-breadcrumb@6.0.4) (2019-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.2...@pluralsight/ps-design-system-breadcrumb@6.0.3) (2019-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.1...@pluralsight/ps-design-system-breadcrumb@6.0.2) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@6.0.0...@pluralsight/ps-design-system-breadcrumb@6.0.1) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@5.0.1...@pluralsight/ps-design-system-breadcrumb@6.0.0) (2019-12-02)
+
+
+### Features
+
+* **icon:** named icon exports and cli util ([15e1e08](https://github.com/pluralsight/design-system/commit/15e1e08a8f04ac6a0aa2bf3cf78efeb412cd6dd6))
+
+
+### BREAKING CHANGES
+
+* **icon:** Icons must be refactored to used Named exports inatad of id prop. Please see docs for example
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@5.0.0...@pluralsight/ps-design-system-breadcrumb@5.0.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* revert react dep ([c8d1a5a](https://github.com/pluralsight/design-system/commit/c8d1a5a5456e99e9cee64c9ccd8b1a98d0642ac0))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.10...@pluralsight/ps-design-system-breadcrumb@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **breadcrumb:** esm export refactor ([429c64a](https://github.com/pluralsight/design-system/commit/429c64a))
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** import pattern
+* **core:** import patterns
+
+
+
+
+
+## [4.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.9...@pluralsight/ps-design-system-breadcrumb@4.0.10) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.8...@pluralsight/ps-design-system-breadcrumb@4.0.9) (2019-10-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.7...@pluralsight/ps-design-system-breadcrumb@4.0.8) (2019-10-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.6...@pluralsight/ps-design-system-breadcrumb@4.0.7) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.5...@pluralsight/ps-design-system-breadcrumb@4.0.6) (2019-09-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.4...@pluralsight/ps-design-system-breadcrumb@4.0.5) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.3...@pluralsight/ps-design-system-breadcrumb@4.0.4) (2019-08-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.2...@pluralsight/ps-design-system-breadcrumb@4.0.3) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.1...@pluralsight/ps-design-system-breadcrumb@4.0.2) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@4.0.0...@pluralsight/ps-design-system-breadcrumb@4.0.1) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@3.0.4...@pluralsight/ps-design-system-breadcrumb@4.0.0) (2019-07-15)
+
+
+### Code Refactoring
+
+* **breadcrumb:** only pass Button props to inner button ([85c4ccc](https://github.com/pluralsight/design-system/commit/85c4ccc))
+
+
+### Features
+
+* **breadcrumb:** filter props into root div ([2757887](https://github.com/pluralsight/design-system/commit/2757887))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** spread props onto root div not inner button
+
+
+
+
+
+## [3.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@3.0.3...@pluralsight/ps-design-system-breadcrumb@3.0.4) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@3.0.2...@pluralsight/ps-design-system-breadcrumb@3.0.3) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@3.0.1...@pluralsight/ps-design-system-breadcrumb@3.0.2) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@3.0.0...@pluralsight/ps-design-system-breadcrumb@3.0.1) (2019-05-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.7...@pluralsight/ps-design-system-breadcrumb@3.0.0) (2019-05-20)
+
+
+### Features
+
+* **breadcrumb:** support forwardRef ([cf6886f](https://github.com/pluralsight/design-system/commit/cf6886f))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** support forwardRef
+
+
+
+
+
+## [2.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.6...@pluralsight/ps-design-system-breadcrumb@2.0.7) (2019-05-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.5...@pluralsight/ps-design-system-breadcrumb@2.0.6) (2019-05-01)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.4...@pluralsight/ps-design-system-breadcrumb@2.0.5) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.3...@pluralsight/ps-design-system-breadcrumb@2.0.4) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.2...@pluralsight/ps-design-system-breadcrumb@2.0.3) (2019-04-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.1...@pluralsight/ps-design-system-breadcrumb@2.0.2) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@2.0.0...@pluralsight/ps-design-system-breadcrumb@2.0.1) (2019-03-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.30...@pluralsight/ps-design-system-breadcrumb@2.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [1.2.30](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.29...@pluralsight/ps-design-system-breadcrumb@1.2.30) (2019-02-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [1.2.29](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.28...@pluralsight/ps-design-system-breadcrumb@1.2.29) (2019-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [1.2.28](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.27...@pluralsight/ps-design-system-breadcrumb@1.2.28) (2019-01-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [1.2.27](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.26...@pluralsight/ps-design-system-breadcrumb@1.2.27) (2019-01-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [1.2.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.25...@pluralsight/ps-design-system-breadcrumb@1.2.26) (2018-12-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [1.2.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.23...@pluralsight/ps-design-system-breadcrumb@1.2.25) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [1.2.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.23...@pluralsight/ps-design-system-breadcrumb@1.2.24) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
+## [1.2.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.22...@pluralsight/ps-design-system-breadcrumb@1.2.23) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb
+
+
+
+
+
 ## [1.2.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@1.2.21...@pluralsight/ps-design-system-breadcrumb@1.2.22) (2018-12-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb

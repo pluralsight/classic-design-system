@@ -1,29 +1,23 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import * as Text from '@pluralsight/ps-design-system-text'
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import React from 'react'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
-  Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Date Picker">
-      <PageHeading beta packageName="datepicker">
-        Date Picker
-      </PageHeading>
+      <PageHeading packageName="datepicker">Date Picker</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -32,7 +26,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import DatePicker from '@pluralsight/ps-design-system-datepicker/react'
+        import DatePicker from '@pluralsight/ps-design-system-datepicker'
       </Code>
 
       <PropTypes
@@ -73,6 +67,13 @@ export default withServerProps(_ => (
             null,
             null,
             'identifying string for input'
+          ]),
+          PropTypes.row([
+            'onSubBlur',
+            "('mm/dd/yyyy') => ()",
+            null,
+            null,
+            'on subfield blur, returns null if invalid date'
           ]),
           PropTypes.row([
             'onSelect',
@@ -164,4 +165,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import core from '@pluralsight/ps-design-system-core'
-import Tab from '@pluralsight/ps-design-system-tab/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import Tab from '@pluralsight/ps-design-system-tab'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -12,16 +12,14 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 class InAppExample extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = { activeIndex: 2 }
-    this.menus = [1, 2, 3, 4, 5].map(i => ({
+    this.menus = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(i => ({
       id: `example${i}`,
       label: `Menu ${i}`,
       content: `Menu stuff ${i}`
@@ -36,14 +34,8 @@ class InAppExample extends React.Component {
   render() {
     return (
       <div>
-        <SectionHeading>In-app example</SectionHeading>
-        <P>
-          The Tab component provides the look and feel and accessibility
-          standards for the UI. You control the hiding and showing of content or
-          other interaction specific to your application.
-        </P>
-        <Theme>
-          <div className="app">
+        <div className="app">
+          <Theme>
             <Tab.List>
               {this.menus.map((menu, i) => (
                 <Tab.ListItem
@@ -63,8 +55,51 @@ class InAppExample extends React.Component {
                 </Tab.Panel>
               ) : null
             )}
-          </div>
-        </Theme>
+          </Theme>
+        </div>
+        <Code
+          lang="javascript"
+          collapsible
+        >{`class InAppExample extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { activeIndex: 2 }
+    this.menus = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(i => ({
+      id: 'example' + i,
+      label: 'Menu ' + i,
+      content: 'Menu stuff ' + i
+    }))
+    this.handleTabClick = this.handleTabClick.bind(this)
+  }
+  handleTabClick(i) {
+    this.setState({ activeIndex: i })
+  }
+  render() {
+    return (
+      <div>
+        <Tab.List>
+          {this.menus.map((menu, i) => (
+            <Tab.ListItem
+              id={menu.id}
+              key={menu.id}
+              onClick={this.handleTabClick}
+              {...(i === this.state.activeIndex ? { active: true } : null)}
+            >
+              {menu.label}
+            </Tab.ListItem>
+          ))}
+        </Tab.List>
+        {this.menus.map((menu, i) =>
+          i === this.state.activeIndex ? (
+            <Tab.Panel labelledBy={menu.id} key={menu.id}>
+              <div className="content">{menu.content}</div>
+            </Tab.Panel>
+          ) : null
+        )}
+      </div>
+    )
+  }
+}`}</Code>
         <style jsx>{`
           .app {
             background: ${core.colors.gray06};
@@ -80,19 +115,17 @@ class InAppExample extends React.Component {
   }
 }
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Tab">
       <PageHeading packageName="tab">Tab</PageHeading>
 
       <P>Install the component dependency:</P>
-      <Code language="bash">
-        npm install @pluralsight/ps-design-system-dialog
-      </Code>
+      <Code language="bash">npm install @pluralsight/ps-design-system-tab</Code>
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Dialog from '@pluralsight/ps-design-system-dialog/react'
+        import Tab from '@pluralsight/ps-design-system-tab'
       </Code>
 
       <PropTypes
@@ -139,6 +172,14 @@ export default withServerProps(_ => (
         }}
       />
 
+      <SectionHeading>In-app example</SectionHeading>
+      <P>
+        The Tab component provides the look and feel and accessibility standards
+        for the UI. You control the hiding and showing of content or other
+        interaction specific to your application.
+      </P>
+      <InAppExample />
+
       <SectionHeading>Tab List</SectionHeading>
       <P>
         Tabs are a navigational element used to show and pivot between related
@@ -181,8 +222,6 @@ export default withServerProps(_ => (
 `
         ]}
       />
-
-      <InAppExample />
     </Content>
   </Chrome>
-))
+)

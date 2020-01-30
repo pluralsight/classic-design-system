@@ -1,105 +1,144 @@
 import polyfillFocusWithin from 'focus-within'
 
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
 
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { withTheme } from '@pluralsight/ps-design-system-theme/react'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme/vars'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import { toPercentageString } from '../js/index.js'
+import * as vars from '../vars/index.js'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 const styles = {
-  actionBar: ({ actionBarVisible: visible, fullOverlay }) =>
-    glamor.css({
-      ...css['.psds-card__action-bar'],
-      ...(fullOverlay &&
+  actionBar: ({ actionBarVisible: visible, fullOverlay }) => {
+    const label = 'psds-card__action-bar'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      fullOverlay &&
         !visible &&
-        css[
-          '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible'
-        ]),
-      ...(visible && css['.psds-card__action-bar--actionBarVisible'])
-    }),
-  actionButton: ({ disabled }) =>
-    glamor.css({
-      ...css['.psds-card__action-bar__button'],
-      ...(disabled && css['.psds-card__action-bar__button--disabled'])
-    }),
-  bonusBar: () => glamor.css(css['.psds-card__bonus-bar']),
-  card: () => glamor.css(css['.psds-card']),
-  fullOverlay: ({ fullOverlayVisible: visible }) =>
-    glamor.css({
-      ...css['.psds-card__full-overlay'],
-      ...(visible && css['.psds-card__full-overlay--fullOverlayVisible'])
-    }),
-  fullOverlayLink: () => glamor.css(css['.psds-card__full-overlay-link']),
-  image: () => glamor.css(css['.psds-card__image']),
-  imageLink: () => glamor.css(css['.psds-card__image-link']),
-  metadata: ({ size, themeName }) =>
-    glamor.css({
-      ...css['.psds-card__metadata'],
-      ...css[`.psds-card__metadata--size-${size}`],
-      ...css[`.psds-card__metadata--theme-${themeName}`]
-    }),
-  metadataDatum: ({ size }) => glamor.css(css['.psds-card__metadata__datum']),
-  metadataDot: ({ size }) => glamor.css(css['.psds-card__metadata__dot']),
-  overlays: ({ size }) =>
-    glamor.css({
-      ...css['.psds-card__overlays'],
-      ...css[`.psds-card__overlays--size-${size}`]
-    }),
-  progress: () => glamor.css(css['.psds-card__progress']),
+        css(stylesheet[`.${label}--fullOverlay.${label}--no-actionBarVisible`]),
+      visible && css(stylesheet[`${label}--actionBarVisible`])
+    )
+  },
+  actionButton: ({ disabled }) => {
+    const label = 'psds-card__action-bar__button'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      disabled && css(stylesheet[`.${label}--disabled`])
+    )
+  },
+
+  bonusBar: () => css(stylesheet['.psds-card__bonus-bar']),
+
+  card: () => css(stylesheet['.psds-card']),
+
+  fullOverlay: ({ fullOverlayVisible: visible }) => {
+    const label = 'psds-card__full-overlay'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      visible && css(stylesheet[`.${label}--fullOverlayVisible`])
+    )
+  },
+  fullOverlayLink: () => css(stylesheet['.psds-card__full-overlay-link']),
+
+  image: () => css(stylesheet['.psds-card__image']),
+  imageLink: () => css(stylesheet['.psds-card__image-link']),
+
+  metadata: ({ size, themeName }) => {
+    const label = 'psds-card__metadata'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--size-${size}`]),
+      css(stylesheet[`.${label}--theme-${themeName}`])
+    )
+  },
+  metadataDatum: () => css(stylesheet['.psds-card__metadata__datum']),
+  metadataDot: () => css(stylesheet['.psds-card__metadata__dot']),
+
+  overlays: ({ size }) => {
+    const label = 'psds-card__overlays'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--size-${size}`])
+    )
+  },
+
+  progress: () => css(stylesheet['.psds-card__progress']),
   progressBar: ({ progress }) => {
+    const label = 'psds-card__progress__bar'
     const percent = toPercentageString(progress)
     const isCompleted = percent === '100%'
 
-    return glamor.css({
-      ...css['.psds-card__progress__bar'],
-      ...(isCompleted && css['.psds-card__progress__bar--complete']),
-      width: percent
-    })
+    return compose(
+      css(stylesheet[`.${label}`]),
+      isCompleted && css(stylesheet[`.${label}--complete`]),
+      css({ width: percent })
+    )
   },
-  tag: () => glamor.css(css['.psds-card__tag']),
-  tagIcon: () => glamor.css(css['.psds-card__tag__icon']),
-  tagText: () => glamor.css(css['.psds-card__tag__text']),
-  textLink: ({ themeName }) =>
-    glamor.css({
-      ...css['.psds-card__text-link'],
-      ...css[`.psds-card__text-link--theme-${themeName}`]
-    }),
-  title: ({ themeName }) =>
-    glamor.css({
-      ...css['.psds-card__title'],
-      ...css[`.psds-card__title--theme-${themeName}`]
-    }),
-  titleContainer: ({ size }) =>
-    glamor.css(css[`.psds-card__title-container--size-${size}`])
+
+  tag: () => css(stylesheet['.psds-card__tag']),
+  tagIcon: () => css(stylesheet['.psds-card__tag__icon']),
+  tagText: () => css(stylesheet['.psds-card__tag__text']),
+
+  textLink: ({ themeName }) => {
+    const label = 'psds-card__text-link'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--theme-${themeName}`])
+    )
+  },
+
+  title: ({ themeName }) => {
+    const label = 'psds-card__title'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--theme-${themeName}`])
+    )
+  },
+
+  titleContainer: ({ size }) => {
+    const label = 'psds-card__title-container'
+
+    return compose(
+      css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--size-${size}`])
+    )
+  }
 }
 
 const ActionBar = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
-const ActionButton = props => (
-  <button
-    {...styles.actionButton(props)}
-    {...filterReactProps(props, { tagName: 'button' })}
-  />
-)
-
-const ActionBarAction = ({ icon, ...props }) => (
-  <ActionButton {...filterReactProps(props)}>{icon}</ActionButton>
-)
-
+const ActionBarAction = React.forwardRef(({ icon, ...props }, ref) => {
+  const ariaLabel = props['aria-label'] || props.title
+  return (
+    <button
+      {...styles.actionButton(props)}
+      {...filterReactProps(props, { tagName: 'button' })}
+      aria-label={ariaLabel}
+      ref={ref}
+    >
+      {icon}
+    </button>
+  )
+})
 ActionBarAction.displayName = 'Card.Action'
 ActionBarAction.propTypes = {
+  'aria-label': PropTypes.string,
   icon: PropTypes.element.isRequired,
   title: PropTypes.string.isRequired
 }
@@ -236,38 +275,50 @@ Tag.propTypes = {
   icon: PropTypes.element
 }
 
-const renderTag = props =>
-  props.tag && props.size !== 'small' ? props.tag : null
+const renderTag = props => props.tag
 
 const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
 Text.displayName = 'Card.Text'
 
-const TextLink = withTheme(props => (
-  <span
-    {...styles.textLink(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-))
+const TextLink = props => {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+
+  return (
+    <span
+      {...styles.textLink(allProps)}
+      {...filterReactProps(allProps, { tagName: 'span' })}
+    />
+  )
+}
 TextLink.displayName = 'Card.TextLink'
 
 const TitleContainer = props => (
   <div {...styles.titleContainer(props)} {...filterReactProps(props)} />
 )
 
-const Title = withTheme(props => (
-  <div {...styles.title(props)} {...filterReactProps(props)}>
-    <Shiitake lines={2}>{props.children}</Shiitake>
-  </div>
-))
+const Title = props => {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+
+  return (
+    <div {...styles.title(allProps)} {...filterReactProps(allProps)}>
+      <Shiitake lines={2}>{allProps.children}</Shiitake>
+    </div>
+  )
+}
 Title.displayName = 'Card.Title'
 
 const renderTitle = (props, title) => {
   return <TitleContainer {...props}>{title}</TitleContainer>
 }
 
-const Metadata = withTheme(props => (
-  <div {...styles.metadata(props)} {...filterReactProps(props)} />
-))
+const Metadata = props => {
+  const themeName = useTheme()
+  const allProps = { themeName, ...props }
+
+  return <div {...styles.metadata(allProps)} {...filterReactProps(allProps)} />
+}
 
 const MetadataDatum = props => (
   <span
@@ -354,8 +405,7 @@ CardComponent.propTypes = {
 CardComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
-  size: vars.sizes.medium,
-  themeName: PropTypes.oneOf(Object.values(themeNames)).isRequired
+  size: vars.sizes.medium
 }
 
 export const sizes = vars.sizes

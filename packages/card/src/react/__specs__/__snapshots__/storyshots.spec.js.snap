@@ -2,7 +2,7 @@
 
 exports[`Storyshots actionBar locked visible 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -15,7 +15,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -26,23 +26,23 @@ exports[`Storyshots actionBar locked visible 1`] = `
           }
         />
         <div
-          data-css-1di4zm0=""
+          data-css-4ed7vx=""
         >
           <button
-            data-css-z6g59z=""
+            aria-label="Bookmark"
+            data-css-45oxhg=""
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                 />
               </svg>
             </div>
@@ -53,7 +53,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -76,8 +76,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -136,8 +135,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -151,7 +149,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
 
 exports[`Storyshots actionBar multiple actions 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -164,7 +162,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -175,42 +173,42 @@ exports[`Storyshots actionBar multiple actions 1`] = `
           }
         />
         <div
-          data-css-1ifisgx=""
+          data-css-4ed7vx=""
         >
           <button
-            data-css-z6g59z=""
+            aria-label="Bookmark"
+            data-css-45oxhg=""
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                 />
               </svg>
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            aria-label="More"
+            data-css-45oxhg=""
             title="More"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="more icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
                 />
               </svg>
             </div>
@@ -221,7 +219,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -244,8 +242,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -304,8 +301,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -319,7 +315,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
 
 exports[`Storyshots actionBar single action 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -332,7 +328,7 @@ exports[`Storyshots actionBar single action 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -343,23 +339,23 @@ exports[`Storyshots actionBar single action 1`] = `
           }
         />
         <div
-          data-css-1ifisgx=""
+          data-css-4ed7vx=""
         >
           <button
-            data-css-z6g59z=""
+            aria-label="Bookmark"
+            data-css-45oxhg=""
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                 />
               </svg>
             </div>
@@ -370,7 +366,7 @@ exports[`Storyshots actionBar single action 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -393,8 +389,7 @@ exports[`Storyshots actionBar single action 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -453,8 +448,7 @@ exports[`Storyshots actionBar single action 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -468,7 +462,7 @@ exports[`Storyshots actionBar single action 1`] = `
 
 exports[`Storyshots bonusBar only text 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -481,7 +475,7 @@ exports[`Storyshots bonusBar only text 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -492,7 +486,7 @@ exports[`Storyshots bonusBar only text 1`] = `
           }
         />
         <div
-          data-css-1pi4dj8=""
+          data-css-68klfw=""
         >
           Wow, I'm bonus.
         </div>
@@ -501,7 +495,7 @@ exports[`Storyshots bonusBar only text 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -524,8 +518,7 @@ exports[`Storyshots bonusBar only text 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -584,8 +577,7 @@ exports[`Storyshots bonusBar only text 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -599,7 +591,7 @@ exports[`Storyshots bonusBar only text 1`] = `
 
 exports[`Storyshots bonusBar some element 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -612,7 +604,7 @@ exports[`Storyshots bonusBar some element 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -623,19 +615,20 @@ exports[`Storyshots bonusBar some element 1`] = `
           }
         />
         <div
-          data-css-1pi4dj8=""
+          data-css-68klfw=""
         >
           <div
-            className="css-7wkwcf"
+            data-css-7wkwcf=""
           >
             <svg
               aria-label="channel icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                clipRule="evenodd"
+                d="M12.5 23h-1a.5.5 0 01-.5-.5v-8.645A3.502 3.502 0 0112 7a3.5 3.5 0 011 6.855V22.5a.5.5 0 01-.5.5zM6.015 3.122A9.482 9.482 0 002.5 10.5a9.476 9.476 0 003.38 7.263.5.5 0 01.078.686l-.605.797a.5.5 0 01-.717.084A11.471 11.471 0 01.5 10.5a11.48 11.48 0 014.321-8.985.272.272 0 01.387.048l.859 1.13a.31.31 0 01-.052.429zM23.5 10.5a11.47 11.47 0 01-3.782 8.526c-.09.081-.209.183-.355.303a.5.5 0 01-.716-.083l-.605-.797a.5.5 0 01.078-.687 8.65 8.65 0 00.285-.245A9.475 9.475 0 0021.5 10.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.474 11.474 0 0123.5 10.5zM8.316 6.42a4.408 4.408 0 00-.189.175A5.483 5.483 0 006.5 10.5a5.484 5.484 0 001.816 4.08.5.5 0 01.068.678l-.608.8a.5.5 0 01-.724.076A7.48 7.48 0 014.5 10.5a7.48 7.48 0 012.55-5.635.5.5 0 01.726.076l.608.801a.5.5 0 01-.068.678zM19.5 10.5a7.481 7.481 0 01-2.55 5.634.5.5 0 01-.726-.075l-.609-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.483 5.483 0 0017.5 10.5a5.481 5.481 0 00-1.539-3.815 4.948 4.948 0 00-.28-.264.5.5 0 01-.066-.677l.608-.801a.5.5 0 01.724-.077A7.48 7.48 0 0119.5 10.5zM12 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                fillRule="evenodd"
               />
             </svg>
           </div>
@@ -645,7 +638,7 @@ exports[`Storyshots bonusBar some element 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -668,8 +661,7 @@ exports[`Storyshots bonusBar some element 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -728,8 +720,7 @@ exports[`Storyshots bonusBar some element 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -743,7 +734,7 @@ exports[`Storyshots bonusBar some element 1`] = `
 
 exports[`Storyshots combo everything focusable 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -756,7 +747,7 @@ exports[`Storyshots combo everything focusable 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <span
           data-css-15yq56v=""
@@ -775,25 +766,26 @@ exports[`Storyshots combo everything focusable 1`] = `
           </a>
         </span>
         <div
-          data-css-senzm1=""
+          data-css-14m9qky=""
         >
           <span
-            data-css-10wozz3=""
+            data-css-11lki9j=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                    clipRule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.688-7.792l-5.3 3.533a.25.25 0 01-.388-.208V8.467a.25.25 0 01.389-.208l5.299 3.533a.25.25 0 010 .416z"
+                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -801,83 +793,86 @@ exports[`Storyshots combo everything focusable 1`] = `
           </span>
         </div>
         <div
-          data-css-acm057=""
+          data-css-ldsotz=""
         >
           <button
-            data-css-z6g59z=""
+            aria-label="Bookmark"
+            data-css-45oxhg=""
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                 />
               </svg>
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            aria-label="Settings"
+            data-css-45oxhg=""
             title="Settings"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="gear icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
+                  clipRule="evenodd"
+                  d="M4 12c0-.377.026-.748.077-1.111L2.274 9.848a.5.5 0 01-.183-.683l2.5-4.33a.5.5 0 01.683-.183l1.804 1.041A7.988 7.988 0 019 4.581V2.5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v2.082a7.99 7.99 0 011.922 1.112l1.805-1.042a.5.5 0 01.683.183l2.5 4.33a.5.5 0 01-.183.683l-1.804 1.042a8.063 8.063 0 010 2.22l1.804 1.042a.5.5 0 01.183.683l-2.5 4.33a.5.5 0 01-.683.183l-1.805-1.042A7.992 7.992 0 0115 19.418V21.5a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-2.081a7.985 7.985 0 01-1.923-1.112l-1.804 1.041a.5.5 0 01-.683-.183l-2.5-4.33a.5.5 0 01.183-.683l1.803-1.04A8.077 8.077 0 014 12zm9-8h-2v2.083a5.994 5.994 0 00-3.623 2.092L5.573 7.133l-1 1.732 1.803 1.04A5.986 5.986 0 006 12c0 .736.132 1.44.375 2.092l-1.803 1.041 1 1.732 1.804-1.041A5.993 5.993 0 0011 17.917V20h2v-2.083a5.994 5.994 0 003.625-2.094l1.805 1.042 1-1.732-1.805-1.042A5.987 5.987 0 0018 12a5.99 5.99 0 00-.375-2.093l1.804-1.042-1-1.732-1.806 1.042A5.994 5.994 0 0013 6.083V4zm-5 8a4 4 0 108 0 4 4 0 00-8 0zm4 2a2 2 0 100-4 2 2 0 000 4z"
+                  fillRule="evenodd"
                 />
               </svg>
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            aria-label="More"
+            data-css-45oxhg=""
             title="More"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="more icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
                 />
               </svg>
             </div>
           </button>
         </div>
         <div
-          data-css-1ld8yc7=""
+          data-css-11tzvtj=""
         >
           <div
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="path icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M4.4113 10l3.5858 3.5858V22H6l-.003-7.5858L3 11.4172V14H1V8h6v2H4.4113zM21 11.4142l-3 3V22h-2v-8.4142L19.5858 10H17V8h6v6h-2v-2.5858zm-8-5.5884V22h-2V5.831L9.1742 7.657 7.76 6.2425 12.0026 2l4.2427 4.2426L14.831 7.657 13 5.8257z"
+                  clipRule="evenodd"
+                  d="M4.411 9l3.44 3.44a.5.5 0 01.146.353V20.5a.5.5 0 01-.5.5H6.5a.5.5 0 01-.5-.5l-.003-7.086L3 10.417V12.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H4.411zM21 10.414l-3 3V20.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-7.707a.5.5 0 01.146-.353L19.586 9H17.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-2.086zM12.5 21h-1a.5.5 0 01-.5-.5V4.831L9.528 6.303a.5.5 0 01-.707 0l-.707-.707a.5.5 0 010-.707l3.535-3.535a.5.5 0 01.707 0l3.536 3.535a.5.5 0 010 .707l-.707.707a.5.5 0 01-.707 0L13 4.826V20.5a.5.5 0 01-.5.5z"
+                  fillRule="evenodd"
                 />
               </svg>
             </div>
@@ -893,13 +888,13 @@ exports[`Storyshots combo everything focusable 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1202ll4=""
+          data-css-18hqvbo=""
         >
           <a
             href="http://duckduckgo.com?q=title"
           >
             <div
-              data-css-1tlmf72=""
+              data-css-fvvao4=""
             >
               <div
                 className=""
@@ -922,8 +917,7 @@ exports[`Storyshots combo everything focusable 1`] = `
                       }
                     }
                   >
-                    
-                    …
+                    Should focus
                   </span>
                   <span
                     aria-hidden="true"
@@ -982,8 +976,7 @@ exports[`Storyshots combo everything focusable 1`] = `
                         }
                       }
                     >
-                      
-                      …
+                      Should focus
                     </span>
                   </span>
                 </span>
@@ -993,13 +986,13 @@ exports[`Storyshots combo everything focusable 1`] = `
         </span>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1202ll4=""
+            data-css-18hqvbo=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1016,7 +1009,7 @@ exports[`Storyshots combo everything focusable 1`] = `
 
 exports[`Storyshots combo everything locked 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1029,7 +1022,7 @@ exports[`Storyshots combo everything locked 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <span
           data-css-15yq56v=""
@@ -1048,25 +1041,26 @@ exports[`Storyshots combo everything locked 1`] = `
           </a>
         </span>
         <div
-          data-css-116u4ke=""
+          data-css-5tk5g6=""
         >
           <span
-            data-css-10wozz3=""
+            data-css-11lki9j=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                    clipRule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.688-7.792l-5.3 3.533a.25.25 0 01-.388-.208V8.467a.25.25 0 01.389-.208l5.299 3.533a.25.25 0 010 .416z"
+                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -1074,83 +1068,86 @@ exports[`Storyshots combo everything locked 1`] = `
           </span>
         </div>
         <div
-          data-css-1di4zm0=""
+          data-css-4ed7vx=""
         >
           <button
-            data-css-z6g59z=""
+            aria-label="Bookmark"
+            data-css-45oxhg=""
             title="Bookmark"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="bookmark icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M17.5012 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4c.552 0 1-.447 1-1V6c0-2.205-1.2918-4-3.4988-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536c-.34.589-.536 1.272-.536 2zm5 2h-3V6c0-1.104.3982-2 1.5012-2C18.6032 4 19 4.896 19 6v2z"
+                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                 />
               </svg>
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            aria-label="Settings"
+            data-css-45oxhg=""
             title="Settings"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="gear icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M13 6.083V4h-2v2.083c-1.45.2432-2.7237 1.0066-3.6226 2.0917L5.5734 7.133l-1 1.7322 1.8022 1.0405C6.1326 10.5577 6 11.2634 6 12c0 .736.1325 1.441.375 2.0924L4.5722 15.133l1 1.7322 1.8038-1.0414c.899 1.086 2.1733 1.85 3.624 2.0932V20h2v-2.083c1.451-.2434 2.7255-1.0077 3.6246-2.094l1.805 1.0422 1-1.732-1.8042-1.0418C17.8676 13.4402 18 12.7356 18 12c0-.7363-.1326-1.4416-.3753-2.0933l1.804-1.0415-1-1.732-1.8054 1.0423C15.7243 7.09 14.4503 6.3263 13 6.083zm-8.9235 7.028C4.026 12.748 4 12.377 4 12s.026-.748.0765-1.111L1.8407 9.598l3-5.196 2.2368 1.2913c.582-.455 1.2285-.831 1.9235-1.1122V2h6v2.582c.6946.2812 1.3408.6572 1.9224 1.112l2.238-1.292 3 5.196-2.2378 1.292c.0504.3628.0764.7333.0764 1.11 0 .3767-.026.7472-.0764 1.11l2.2377 1.292-3 5.196-2.238-1.292c-.5815.4548-1.2277.8308-1.9223 1.112V22h-6v-2.581c-.695-.2814-1.3416-.6574-1.9235-1.1123L4.8407 19.598l-3-5.196 2.2358-1.291zM12 16c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm0-2c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2z"
+                  clipRule="evenodd"
+                  d="M4 12c0-.377.026-.748.077-1.111L2.274 9.848a.5.5 0 01-.183-.683l2.5-4.33a.5.5 0 01.683-.183l1.804 1.041A7.988 7.988 0 019 4.581V2.5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v2.082a7.99 7.99 0 011.922 1.112l1.805-1.042a.5.5 0 01.683.183l2.5 4.33a.5.5 0 01-.183.683l-1.804 1.042a8.063 8.063 0 010 2.22l1.804 1.042a.5.5 0 01.183.683l-2.5 4.33a.5.5 0 01-.683.183l-1.805-1.042A7.992 7.992 0 0115 19.418V21.5a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-2.081a7.985 7.985 0 01-1.923-1.112l-1.804 1.041a.5.5 0 01-.683-.183l-2.5-4.33a.5.5 0 01.183-.683l1.803-1.04A8.077 8.077 0 014 12zm9-8h-2v2.083a5.994 5.994 0 00-3.623 2.092L5.573 7.133l-1 1.732 1.803 1.04A5.986 5.986 0 006 12c0 .736.132 1.44.375 2.092l-1.803 1.041 1 1.732 1.804-1.041A5.993 5.993 0 0011 17.917V20h2v-2.083a5.994 5.994 0 003.625-2.094l1.805 1.042 1-1.732-1.805-1.042A5.987 5.987 0 0018 12a5.99 5.99 0 00-.375-2.093l1.804-1.042-1-1.732-1.806 1.042A5.994 5.994 0 0013 6.083V4zm-5 8a4 4 0 108 0 4 4 0 00-8 0zm4 2a2 2 0 100-4 2 2 0 000 4z"
+                  fillRule="evenodd"
                 />
               </svg>
             </div>
           </button>
           <button
-            data-css-z6g59z=""
+            aria-label="More"
+            data-css-45oxhg=""
             title="More"
           >
             <div
-              className="css-otejxm"
+              data-css-otejxm=""
             >
               <svg
                 aria-label="more icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M6 14.5c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm12 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2zm-6 0c-1.1046 0-2-.8954-2-2s.8954-2 2-2 2 .8954 2 2-.8954 2-2 2z"
+                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
                 />
               </svg>
             </div>
           </button>
         </div>
         <div
-          data-css-1ld8yc7=""
+          data-css-11tzvtj=""
         >
           <div
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="path icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M4.4113 10l3.5858 3.5858V22H6l-.003-7.5858L3 11.4172V14H1V8h6v2H4.4113zM21 11.4142l-3 3V22h-2v-8.4142L19.5858 10H17V8h6v6h-2v-2.5858zm-8-5.5884V22h-2V5.831L9.1742 7.657 7.76 6.2425 12.0026 2l4.2427 4.2426L14.831 7.657 13 5.8257z"
+                  clipRule="evenodd"
+                  d="M4.411 9l3.44 3.44a.5.5 0 01.146.353V20.5a.5.5 0 01-.5.5H6.5a.5.5 0 01-.5-.5l-.003-7.086L3 10.417V12.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H4.411zM21 10.414l-3 3V20.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-7.707a.5.5 0 01.146-.353L19.586 9H17.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-2.086zM12.5 21h-1a.5.5 0 01-.5-.5V4.831L9.528 6.303a.5.5 0 01-.707 0l-.707-.707a.5.5 0 010-.707l3.535-3.535a.5.5 0 01.707 0l3.536 3.535a.5.5 0 010 .707l-.707.707a.5.5 0 01-.707 0L13 4.826V20.5a.5.5 0 01-.5.5z"
+                  fillRule="evenodd"
                 />
               </svg>
             </div>
@@ -1166,13 +1163,13 @@ exports[`Storyshots combo everything locked 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1202ll4=""
+          data-css-18hqvbo=""
         >
           <a
             href="http://duckduckgo.com?q=title"
           >
             <div
-              data-css-1tlmf72=""
+              data-css-fvvao4=""
             >
               <div
                 className=""
@@ -1195,8 +1192,7 @@ exports[`Storyshots combo everything locked 1`] = `
                       }
                     }
                   >
-                    
-                    …
+                    Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
                   </span>
                   <span
                     aria-hidden="true"
@@ -1255,8 +1251,7 @@ exports[`Storyshots combo everything locked 1`] = `
                         }
                       }
                     >
-                      
-                      …
+                      Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
                     </span>
                   </span>
                 </span>
@@ -1266,13 +1261,13 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1202ll4=""
+            data-css-18hqvbo=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1291,7 +1286,7 @@ exports[`Storyshots combo everything locked 1`] = `
           data-css-1tz10dh=""
         >
           <span
-            data-css-1202ll4=""
+            data-css-18hqvbo=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1310,7 +1305,7 @@ exports[`Storyshots combo everything locked 1`] = `
           data-css-1tz10dh=""
         >
           <span
-            data-css-1202ll4=""
+            data-css-18hqvbo=""
           >
             <a
               href="http://duckduckgo.com/?q=jaketrent"
@@ -1321,7 +1316,7 @@ exports[`Storyshots combo everything locked 1`] = `
         </span>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
@@ -1336,7 +1331,7 @@ exports[`Storyshots combo everything locked 1`] = `
 
 exports[`Storyshots fullOverlay link 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1349,7 +1344,7 @@ exports[`Storyshots fullOverlay link 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -1360,10 +1355,10 @@ exports[`Storyshots fullOverlay link 1`] = `
           }
         />
         <div
-          data-css-senzm1=""
+          data-css-14m9qky=""
         >
           <span
-            data-css-10wozz3=""
+            data-css-11lki9j=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
@@ -1377,7 +1372,7 @@ exports[`Storyshots fullOverlay link 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -1400,8 +1395,7 @@ exports[`Storyshots fullOverlay link 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -1460,8 +1454,7 @@ exports[`Storyshots fullOverlay link 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -1475,7 +1468,7 @@ exports[`Storyshots fullOverlay link 1`] = `
 
 exports[`Storyshots fullOverlay linked icon 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1488,7 +1481,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -1499,25 +1492,26 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
           }
         />
         <div
-          data-css-senzm1=""
+          data-css-14m9qky=""
         >
           <span
-            data-css-10wozz3=""
+            data-css-11lki9j=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                    clipRule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.688-7.792l-5.3 3.533a.25.25 0 01-.388-.208V8.467a.25.25 0 01.389-.208l5.299 3.533a.25.25 0 010 .416z"
+                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -1529,7 +1523,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -1552,8 +1546,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -1612,8 +1605,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -1627,7 +1619,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
 
 exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1640,7 +1632,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <span
           data-css-15yq56v=""
@@ -1659,25 +1651,26 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
           </a>
         </span>
         <div
-          data-css-senzm1=""
+          data-css-14m9qky=""
         >
           <span
-            data-css-10wozz3=""
+            data-css-11lki9j=""
           >
             <a
               href="http://duckduckgo.com?q=overlay"
             >
               <div
-                className="css-195ztb"
+                data-css-7wkwcf=""
               >
                 <svg
                   aria-label="play circle icon"
                   role="img"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm-2-4V8l6 4-6 4z"
+                    clipRule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.688-7.792l-5.3 3.533a.25.25 0 01-.388-.208V8.467a.25.25 0 01.389-.208l5.299 3.533a.25.25 0 010 .416z"
+                    fillRule="evenodd"
                   />
                 </svg>
               </div>
@@ -1689,7 +1682,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -1712,8 +1705,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -1772,8 +1764,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -1787,7 +1778,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 
 exports[`Storyshots fullOverlay locked visible 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1800,7 +1791,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -1811,10 +1802,10 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
           }
         />
         <div
-          data-css-116u4ke=""
+          data-css-5tk5g6=""
         >
           <span
-            data-css-10wozz3=""
+            data-css-11lki9j=""
           >
             Element
           </span>
@@ -1824,7 +1815,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -1847,8 +1838,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -1907,8 +1897,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -1922,7 +1911,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
 
 exports[`Storyshots fullOverlay text only 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -1935,7 +1924,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -1946,10 +1935,10 @@ exports[`Storyshots fullOverlay text only 1`] = `
           }
         />
         <div
-          data-css-senzm1=""
+          data-css-14m9qky=""
         >
           <span
-            data-css-10wozz3=""
+            data-css-11lki9j=""
           >
             Element
           </span>
@@ -1959,7 +1948,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -1982,8 +1971,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2042,8 +2030,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2057,7 +2044,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
 
 exports[`Storyshots image image link 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2070,7 +2057,7 @@ exports[`Storyshots image image link 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <span
           data-css-15yq56v=""
@@ -2093,7 +2080,7 @@ exports[`Storyshots image image link 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -2116,8 +2103,7 @@ exports[`Storyshots image image link 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2176,8 +2162,7 @@ exports[`Storyshots image image link 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2191,7 +2176,7 @@ exports[`Storyshots image image link 1`] = `
 
 exports[`Storyshots image image only 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2204,7 +2189,7 @@ exports[`Storyshots image image only 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -2219,7 +2204,7 @@ exports[`Storyshots image image only 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -2242,8 +2227,7 @@ exports[`Storyshots image image only 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2302,8 +2286,7 @@ exports[`Storyshots image image only 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2317,7 +2300,7 @@ exports[`Storyshots image image only 1`] = `
 
 exports[`Storyshots metadata multiple text 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2330,7 +2313,7 @@ exports[`Storyshots metadata multiple text 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -2345,7 +2328,7 @@ exports[`Storyshots metadata multiple text 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -2368,8 +2351,7 @@ exports[`Storyshots metadata multiple text 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2428,8 +2410,7 @@ exports[`Storyshots metadata multiple text 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2437,7 +2418,7 @@ exports[`Storyshots metadata multiple text 1`] = `
         </div>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
@@ -2463,7 +2444,7 @@ exports[`Storyshots metadata multiple text 1`] = `
 
 exports[`Storyshots metadata single text 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2476,7 +2457,7 @@ exports[`Storyshots metadata single text 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -2491,7 +2472,7 @@ exports[`Storyshots metadata single text 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -2514,8 +2495,7 @@ exports[`Storyshots metadata single text 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2574,8 +2554,7 @@ exports[`Storyshots metadata single text 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2583,7 +2562,7 @@ exports[`Storyshots metadata single text 1`] = `
         </div>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
@@ -2598,7 +2577,7 @@ exports[`Storyshots metadata single text 1`] = `
 
 exports[`Storyshots metadata text link 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2611,7 +2590,7 @@ exports[`Storyshots metadata text link 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -2626,7 +2605,7 @@ exports[`Storyshots metadata text link 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -2649,8 +2628,7 @@ exports[`Storyshots metadata text link 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2709,8 +2687,7 @@ exports[`Storyshots metadata text link 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2718,13 +2695,13 @@ exports[`Storyshots metadata text link 1`] = `
         </div>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1202ll4=""
+            data-css-18hqvbo=""
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -2741,7 +2718,7 @@ exports[`Storyshots metadata text link 1`] = `
 
 exports[`Storyshots metadata text wrapper 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2754,7 +2731,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -2769,7 +2746,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -2792,8 +2769,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2852,8 +2828,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2861,7 +2836,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
         </div>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
@@ -2878,7 +2853,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
 
 exports[`Storyshots metadata two lines, mixed content 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -2891,7 +2866,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -2906,7 +2881,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -2929,8 +2904,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -2989,8 +2963,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -2998,13 +2971,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </div>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1202ll4=""
+            data-css-18hqvbo=""
           >
             <a
               href="http://duckduckgo.com?q=jim%20cooper"
@@ -3015,13 +2988,13 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         </span>
       </div>
       <div
-        data-css-sb1dn8=""
+        data-css-qxq52s=""
       >
         <span
           data-css-1tz10dh=""
         >
           <span
-            data-css-1202ll4=""
+            data-css-18hqvbo=""
           >
             <a
               href="http://duckduckgo.com?q=react"
@@ -3062,7 +3035,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
 
 exports[`Storyshots progress done 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -3075,7 +3048,7 @@ exports[`Storyshots progress done 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -3086,11 +3059,11 @@ exports[`Storyshots progress done 1`] = `
           }
         />
         <div
-          data-css-268zju=""
+          data-css-fqm94w=""
         >
           <div
             aria-label="100% complete"
-            data-css-1qb9ko2=""
+            data-css-1gebpgk=""
           />
         </div>
       </div>
@@ -3098,7 +3071,7 @@ exports[`Storyshots progress done 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -3121,8 +3094,7 @@ exports[`Storyshots progress done 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -3181,8 +3153,7 @@ exports[`Storyshots progress done 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -3196,7 +3167,7 @@ exports[`Storyshots progress done 1`] = `
 
 exports[`Storyshots progress none 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -3209,7 +3180,7 @@ exports[`Storyshots progress none 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -3224,7 +3195,7 @@ exports[`Storyshots progress none 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -3247,8 +3218,7 @@ exports[`Storyshots progress none 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -3307,8 +3277,7 @@ exports[`Storyshots progress none 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -3322,7 +3291,7 @@ exports[`Storyshots progress none 1`] = `
 
 exports[`Storyshots progress some 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -3335,7 +3304,7 @@ exports[`Storyshots progress some 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -3346,7 +3315,7 @@ exports[`Storyshots progress some 1`] = `
           }
         />
         <div
-          data-css-268zju=""
+          data-css-fqm94w=""
         >
           <div
             aria-label="34% complete"
@@ -3358,7 +3327,7 @@ exports[`Storyshots progress some 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -3381,8 +3350,7 @@ exports[`Storyshots progress some 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -3441,8 +3409,7 @@ exports[`Storyshots progress some 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -3456,7 +3423,7 @@ exports[`Storyshots progress some 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -3469,7 +3436,7 @@ exports[`Storyshots size large 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-1f6j1kc=""
+        data-css-4q8p40=""
       >
         <div
           data-css-i7gti2=""
@@ -3484,7 +3451,7 @@ exports[`Storyshots size large 1`] = `
         data-css-fvo1sh=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -3507,8 +3474,7 @@ exports[`Storyshots size large 1`] = `
                   }
                 }
               >
-                
-                …
+                large Card
               </span>
               <span
                 aria-hidden="true"
@@ -3567,8 +3533,7 @@ exports[`Storyshots size large 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  large Card
                 </span>
               </span>
             </span>
@@ -3582,7 +3547,7 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -3595,7 +3560,7 @@ exports[`Storyshots size medium 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -3610,7 +3575,7 @@ exports[`Storyshots size medium 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -3633,8 +3598,7 @@ exports[`Storyshots size medium 1`] = `
                   }
                 }
               >
-                
-                …
+                medium Card
               </span>
               <span
                 aria-hidden="true"
@@ -3693,8 +3657,7 @@ exports[`Storyshots size medium 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  medium Card
                 </span>
               </span>
             </span>
@@ -3708,7 +3671,7 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -3721,7 +3684,7 @@ exports[`Storyshots size small 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-1tphk30=""
+        data-css-1r81vl5=""
       >
         <div
           data-css-i7gti2=""
@@ -3736,7 +3699,7 @@ exports[`Storyshots size small 1`] = `
         data-css-pzomq8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -3759,8 +3722,7 @@ exports[`Storyshots size small 1`] = `
                   }
                 }
               >
-                
-                …
+                small Card
               </span>
               <span
                 aria-hidden="true"
@@ -3819,8 +3781,463 @@ exports[`Storyshots size small 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  small Card
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots sizes with tags large 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "width": "540px",
+      }
+    }
+  >
+    <div
+      data-css-1ybvkp1=""
+    >
+      <div
+        data-css-4q8p40=""
+      >
+        <div
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
+        />
+        <div
+          data-css-11tzvtj=""
+        >
+          <div
+            data-css-1pif58i=""
+          >
+            <div
+              data-css-12f5sv2=""
+            >
+              <svg
+                aria-label="channel icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12.5 23h-1a.5.5 0 01-.5-.5v-8.645A3.502 3.502 0 0112 7a3.5 3.5 0 011 6.855V22.5a.5.5 0 01-.5.5zM6.015 3.122A9.482 9.482 0 002.5 10.5a9.476 9.476 0 003.38 7.263.5.5 0 01.078.686l-.605.797a.5.5 0 01-.717.084A11.471 11.471 0 01.5 10.5a11.48 11.48 0 014.321-8.985.272.272 0 01.387.048l.859 1.13a.31.31 0 01-.052.429zM23.5 10.5a11.47 11.47 0 01-3.782 8.526c-.09.081-.209.183-.355.303a.5.5 0 01-.716-.083l-.605-.797a.5.5 0 01.078-.687 8.65 8.65 0 00.285-.245A9.475 9.475 0 0021.5 10.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.474 11.474 0 0123.5 10.5zM8.316 6.42a4.408 4.408 0 00-.189.175A5.483 5.483 0 006.5 10.5a5.484 5.484 0 001.816 4.08.5.5 0 01.068.678l-.608.8a.5.5 0 01-.724.076A7.48 7.48 0 014.5 10.5a7.48 7.48 0 012.55-5.635.5.5 0 01.726.076l.608.801a.5.5 0 01-.068.678zM19.5 10.5a7.481 7.481 0 01-2.55 5.634.5.5 0 01-.726-.075l-.609-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.483 5.483 0 0017.5 10.5a5.481 5.481 0 00-1.539-3.815 4.948 4.948 0 00-.28-.264.5.5 0 01-.066-.677l.608-.801a.5.5 0 01.724-.077A7.48 7.48 0 0119.5 10.5zM12 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-tz46pd=""
+          >
+            Channel
+          </span>
+        </div>
+      </div>
+      <div
+        data-css-fvo1sh=""
+      >
+        <div
+          data-css-fvvao4=""
+        >
+          <div
+            className=""
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "maxHeight": "0px",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "width": "100%",
+                  }
+                }
+              >
+                large Card with tag
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                large Card with tag
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  large Card with tag
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots sizes with tags medium 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "width": "320px",
+      }
+    }
+  >
+    <div
+      data-css-1ybvkp1=""
+    >
+      <div
+        data-css-vcul9a=""
+      >
+        <div
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
+        />
+        <div
+          data-css-11tzvtj=""
+        >
+          <div
+            data-css-1pif58i=""
+          >
+            <div
+              data-css-12f5sv2=""
+            >
+              <svg
+                aria-label="channel icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12.5 23h-1a.5.5 0 01-.5-.5v-8.645A3.502 3.502 0 0112 7a3.5 3.5 0 011 6.855V22.5a.5.5 0 01-.5.5zM6.015 3.122A9.482 9.482 0 002.5 10.5a9.476 9.476 0 003.38 7.263.5.5 0 01.078.686l-.605.797a.5.5 0 01-.717.084A11.471 11.471 0 01.5 10.5a11.48 11.48 0 014.321-8.985.272.272 0 01.387.048l.859 1.13a.31.31 0 01-.052.429zM23.5 10.5a11.47 11.47 0 01-3.782 8.526c-.09.081-.209.183-.355.303a.5.5 0 01-.716-.083l-.605-.797a.5.5 0 01.078-.687 8.65 8.65 0 00.285-.245A9.475 9.475 0 0021.5 10.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.474 11.474 0 0123.5 10.5zM8.316 6.42a4.408 4.408 0 00-.189.175A5.483 5.483 0 006.5 10.5a5.484 5.484 0 001.816 4.08.5.5 0 01.068.678l-.608.8a.5.5 0 01-.724.076A7.48 7.48 0 014.5 10.5a7.48 7.48 0 012.55-5.635.5.5 0 01.726.076l.608.801a.5.5 0 01-.068.678zM19.5 10.5a7.481 7.481 0 01-2.55 5.634.5.5 0 01-.726-.075l-.609-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.483 5.483 0 0017.5 10.5a5.481 5.481 0 00-1.539-3.815 4.948 4.948 0 00-.28-.264.5.5 0 01-.066-.677l.608-.801a.5.5 0 01.724-.077A7.48 7.48 0 0119.5 10.5zM12 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-tz46pd=""
+          >
+            Channel
+          </span>
+        </div>
+      </div>
+      <div
+        data-css-piydn8=""
+      >
+        <div
+          data-css-fvvao4=""
+        >
+          <div
+            className=""
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "maxHeight": "0px",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "width": "100%",
+                  }
+                }
+              >
+                medium Card with tag
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                medium Card with tag
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  medium Card with tag
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots sizes with tags small 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "width": "140px",
+      }
+    }
+  >
+    <div
+      data-css-1ybvkp1=""
+    >
+      <div
+        data-css-1r81vl5=""
+      >
+        <div
+          data-css-i7gti2=""
+          style={
+            Object {
+              "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+            }
+          }
+        />
+        <div
+          data-css-11tzvtj=""
+        >
+          <div
+            data-css-1pif58i=""
+          >
+            <div
+              data-css-12f5sv2=""
+            >
+              <svg
+                aria-label="channel icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12.5 23h-1a.5.5 0 01-.5-.5v-8.645A3.502 3.502 0 0112 7a3.5 3.5 0 011 6.855V22.5a.5.5 0 01-.5.5zM6.015 3.122A9.482 9.482 0 002.5 10.5a9.476 9.476 0 003.38 7.263.5.5 0 01.078.686l-.605.797a.5.5 0 01-.717.084A11.471 11.471 0 01.5 10.5a11.48 11.48 0 014.321-8.985.272.272 0 01.387.048l.859 1.13a.31.31 0 01-.052.429zM23.5 10.5a11.47 11.47 0 01-3.782 8.526c-.09.081-.209.183-.355.303a.5.5 0 01-.716-.083l-.605-.797a.5.5 0 01.078-.687 8.65 8.65 0 00.285-.245A9.475 9.475 0 0021.5 10.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.474 11.474 0 0123.5 10.5zM8.316 6.42a4.408 4.408 0 00-.189.175A5.483 5.483 0 006.5 10.5a5.484 5.484 0 001.816 4.08.5.5 0 01.068.678l-.608.8a.5.5 0 01-.724.076A7.48 7.48 0 014.5 10.5a7.48 7.48 0 012.55-5.635.5.5 0 01.726.076l.608.801a.5.5 0 01-.068.678zM19.5 10.5a7.481 7.481 0 01-2.55 5.634.5.5 0 01-.726-.075l-.609-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.483 5.483 0 0017.5 10.5a5.481 5.481 0 00-1.539-3.815 4.948 4.948 0 00-.28-.264.5.5 0 01-.066-.677l.608-.801a.5.5 0 01.724-.077A7.48 7.48 0 0119.5 10.5zM12 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-tz46pd=""
+          >
+            Channel
+          </span>
+        </div>
+      </div>
+      <div
+        data-css-pzomq8=""
+      >
+        <div
+          data-css-fvvao4=""
+        >
+          <div
+            className=""
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "maxHeight": "0px",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                    "width": "100%",
+                  }
+                }
+              >
+                small Card with tag
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "height": "0px",
+                    "overflow": "hidden",
+                    "width": "100%",
+                  }
+                }
+              >
+                small Card with tag
+              </span>
+              <span
+                aria-hidden="true"
+                style={
+                  Object {
+                    "display": "block",
+                    "left": "-20000px",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "display": "block",
+                      }
+                    }
+                  >
+                    W
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  small Card with tag
                 </span>
               </span>
             </span>
@@ -3834,7 +4251,7 @@ exports[`Storyshots size small 1`] = `
 
 exports[`Storyshots tag long multi-word 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -3847,7 +4264,7 @@ exports[`Storyshots tag long multi-word 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -3858,22 +4275,23 @@ exports[`Storyshots tag long multi-word 1`] = `
           }
         />
         <div
-          data-css-1ld8yc7=""
+          data-css-11tzvtj=""
         >
           <div
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="channel icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                  clipRule="evenodd"
+                  d="M12.5 23h-1a.5.5 0 01-.5-.5v-8.645A3.502 3.502 0 0112 7a3.5 3.5 0 011 6.855V22.5a.5.5 0 01-.5.5zM6.015 3.122A9.482 9.482 0 002.5 10.5a9.476 9.476 0 003.38 7.263.5.5 0 01.078.686l-.605.797a.5.5 0 01-.717.084A11.471 11.471 0 01.5 10.5a11.48 11.48 0 014.321-8.985.272.272 0 01.387.048l.859 1.13a.31.31 0 01-.052.429zM23.5 10.5a11.47 11.47 0 01-3.782 8.526c-.09.081-.209.183-.355.303a.5.5 0 01-.716-.083l-.605-.797a.5.5 0 01.078-.687 8.65 8.65 0 00.285-.245A9.475 9.475 0 0021.5 10.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.474 11.474 0 0123.5 10.5zM8.316 6.42a4.408 4.408 0 00-.189.175A5.483 5.483 0 006.5 10.5a5.484 5.484 0 001.816 4.08.5.5 0 01.068.678l-.608.8a.5.5 0 01-.724.076A7.48 7.48 0 014.5 10.5a7.48 7.48 0 012.55-5.635.5.5 0 01.726.076l.608.801a.5.5 0 01-.068.678zM19.5 10.5a7.481 7.481 0 01-2.55 5.634.5.5 0 01-.726-.075l-.609-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.483 5.483 0 0017.5 10.5a5.481 5.481 0 00-1.539-3.815 4.948 4.948 0 00-.28-.264.5.5 0 01-.066-.677l.608-.801a.5.5 0 01.724-.077A7.48 7.48 0 0119.5 10.5zM12 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  fillRule="evenodd"
                 />
               </svg>
             </div>
@@ -3889,7 +4307,7 @@ exports[`Storyshots tag long multi-word 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -3912,8 +4330,7 @@ exports[`Storyshots tag long multi-word 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -3972,8 +4389,7 @@ exports[`Storyshots tag long multi-word 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -3987,7 +4403,7 @@ exports[`Storyshots tag long multi-word 1`] = `
 
 exports[`Storyshots tag long single word 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -4000,7 +4416,7 @@ exports[`Storyshots tag long single word 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -4011,22 +4427,23 @@ exports[`Storyshots tag long single word 1`] = `
           }
         />
         <div
-          data-css-1ld8yc7=""
+          data-css-11tzvtj=""
         >
           <div
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="channel icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                  clipRule="evenodd"
+                  d="M12.5 23h-1a.5.5 0 01-.5-.5v-8.645A3.502 3.502 0 0112 7a3.5 3.5 0 011 6.855V22.5a.5.5 0 01-.5.5zM6.015 3.122A9.482 9.482 0 002.5 10.5a9.476 9.476 0 003.38 7.263.5.5 0 01.078.686l-.605.797a.5.5 0 01-.717.084A11.471 11.471 0 01.5 10.5a11.48 11.48 0 014.321-8.985.272.272 0 01.387.048l.859 1.13a.31.31 0 01-.052.429zM23.5 10.5a11.47 11.47 0 01-3.782 8.526c-.09.081-.209.183-.355.303a.5.5 0 01-.716-.083l-.605-.797a.5.5 0 01.078-.687 8.65 8.65 0 00.285-.245A9.475 9.475 0 0021.5 10.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.474 11.474 0 0123.5 10.5zM8.316 6.42a4.408 4.408 0 00-.189.175A5.483 5.483 0 006.5 10.5a5.484 5.484 0 001.816 4.08.5.5 0 01.068.678l-.608.8a.5.5 0 01-.724.076A7.48 7.48 0 014.5 10.5a7.48 7.48 0 012.55-5.635.5.5 0 01.726.076l.608.801a.5.5 0 01-.068.678zM19.5 10.5a7.481 7.481 0 01-2.55 5.634.5.5 0 01-.726-.075l-.609-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.483 5.483 0 0017.5 10.5a5.481 5.481 0 00-1.539-3.815 4.948 4.948 0 00-.28-.264.5.5 0 01-.066-.677l.608-.801a.5.5 0 01.724-.077A7.48 7.48 0 0119.5 10.5zM12 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  fillRule="evenodd"
                 />
               </svg>
             </div>
@@ -4042,7 +4459,7 @@ exports[`Storyshots tag long single word 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -4065,8 +4482,7 @@ exports[`Storyshots tag long single word 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -4125,8 +4541,7 @@ exports[`Storyshots tag long single word 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -4140,7 +4555,7 @@ exports[`Storyshots tag long single word 1`] = `
 
 exports[`Storyshots tag text only 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -4153,7 +4568,7 @@ exports[`Storyshots tag text only 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -4164,7 +4579,7 @@ exports[`Storyshots tag text only 1`] = `
           }
         />
         <div
-          data-css-1ld8yc7=""
+          data-css-11tzvtj=""
         >
           <span
             data-css-tz46pd=""
@@ -4177,7 +4592,7 @@ exports[`Storyshots tag text only 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -4200,8 +4615,7 @@ exports[`Storyshots tag text only 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -4260,8 +4674,7 @@ exports[`Storyshots tag text only 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -4275,7 +4688,7 @@ exports[`Storyshots tag text only 1`] = `
 
 exports[`Storyshots tag with icon 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -4288,7 +4701,7 @@ exports[`Storyshots tag with icon 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -4299,22 +4712,23 @@ exports[`Storyshots tag with icon 1`] = `
           }
         />
         <div
-          data-css-1ld8yc7=""
+          data-css-11tzvtj=""
         >
           <div
             data-css-1pif58i=""
           >
             <div
-              className="css-12f5sv2"
+              data-css-12f5sv2=""
             >
               <svg
                 aria-label="channel icon"
                 role="img"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M13 13.855V23h-2v-9.145c-1.4457-.4302-2.5-1.7695-2.5-3.355C8.5 8.567 10.067 7 12 7s3.5 1.567 3.5 3.5c0 1.5855-1.0543 2.9248-2.5 3.355zM5.0412 1.3437L6.2514 2.936C3.9716 4.6715 2.5 7.414 2.5 10.5s1.4716 5.8286 3.7514 7.564l-1.2102 1.5924C2.2814 17.5557.5 14.236.5 10.5c0-3.736 1.7814-7.0557 4.5412-9.1564zm13.9176 0C21.7186 3.4443 23.5 6.764 23.5 10.5c0 3.736-1.7814 7.0557-4.5412 9.1564l-1.2102-1.5925C20.0284 16.3284 21.5 13.586 21.5 10.5s-1.4716-5.8286-3.7514-7.564l1.2102-1.5924zM7.4616 4.5287l1.2104 1.592C7.352 7.1255 6.5 8.7133 6.5 10.5c0 1.7867.852 3.3745 2.172 4.379l-1.2104 1.5925C5.6618 15.1015 4.5 12.9365 4.5 10.5c0-2.4365 1.1618-4.6016 2.9616-5.9715zm9.0768 0C18.3382 5.8982 19.5 8.0634 19.5 10.5s-1.1618 4.6016-2.9616 5.9715L15.328 14.879c1.32-1.0045 2.172-2.5923 2.172-4.379 0-1.7867-.852-3.3745-2.172-4.379l1.2104-1.5925zM12 12c.8284 0 1.5-.6716 1.5-1.5S12.8284 9 12 9s-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"
+                  clipRule="evenodd"
+                  d="M12.5 23h-1a.5.5 0 01-.5-.5v-8.645A3.502 3.502 0 0112 7a3.5 3.5 0 011 6.855V22.5a.5.5 0 01-.5.5zM6.015 3.122A9.482 9.482 0 002.5 10.5a9.476 9.476 0 003.38 7.263.5.5 0 01.078.686l-.605.797a.5.5 0 01-.717.084A11.471 11.471 0 01.5 10.5a11.48 11.48 0 014.321-8.985.272.272 0 01.387.048l.859 1.13a.31.31 0 01-.052.429zM23.5 10.5a11.47 11.47 0 01-3.782 8.526c-.09.081-.209.183-.355.303a.5.5 0 01-.716-.083l-.605-.797a.5.5 0 01.078-.687 8.65 8.65 0 00.285-.245A9.475 9.475 0 0021.5 10.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.474 11.474 0 0123.5 10.5zM8.316 6.42a4.408 4.408 0 00-.189.175A5.483 5.483 0 006.5 10.5a5.484 5.484 0 001.816 4.08.5.5 0 01.068.678l-.608.8a.5.5 0 01-.724.076A7.48 7.48 0 014.5 10.5a7.48 7.48 0 012.55-5.635.5.5 0 01.726.076l.608.801a.5.5 0 01-.068.678zM19.5 10.5a7.481 7.481 0 01-2.55 5.634.5.5 0 01-.726-.075l-.609-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.483 5.483 0 0017.5 10.5a5.481 5.481 0 00-1.539-3.815 4.948 4.948 0 00-.28-.264.5.5 0 01-.066-.677l.608-.801a.5.5 0 01.724-.077A7.48 7.48 0 0119.5 10.5zM12 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  fillRule="evenodd"
                 />
               </svg>
             </div>
@@ -4330,7 +4744,7 @@ exports[`Storyshots tag with icon 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -4353,8 +4767,7 @@ exports[`Storyshots tag with icon 1`] = `
                   }
                 }
               >
-                
-                …
+                Card Title
               </span>
               <span
                 aria-hidden="true"
@@ -4413,8 +4826,7 @@ exports[`Storyshots tag with icon 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Card Title
                 </span>
               </span>
             </span>
@@ -4428,7 +4840,7 @@ exports[`Storyshots tag with icon 1`] = `
 
 exports[`Storyshots title long title, text link with title wrapper 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -4441,7 +4853,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -4456,13 +4868,13 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1202ll4=""
+          data-css-18hqvbo=""
         >
           <a
             href="http://duckduckgo.com?q=text"
           >
             <div
-              data-css-1tlmf72=""
+              data-css-fvvao4=""
             >
               <div
                 className=""
@@ -4485,8 +4897,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
                       }
                     }
                   >
-                    
-                    …
+                    The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
                   </span>
                   <span
                     aria-hidden="true"
@@ -4545,8 +4956,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
                         }
                       }
                     >
-                      
-                      …
+                      The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
                     </span>
                   </span>
                 </span>
@@ -4562,7 +4972,7 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
 
 exports[`Storyshots title long title, title wrapper 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -4575,7 +4985,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -4590,7 +5000,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -4613,8 +5023,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
                   }
                 }
               >
-                
-                …
+                The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
               </span>
               <span
                 aria-hidden="true"
@@ -4673,8 +5082,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds
                 </span>
               </span>
             </span>
@@ -4688,7 +5096,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
 
 exports[`Storyshots title text link with title wrapper 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -4701,7 +5109,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -4716,13 +5124,13 @@ exports[`Storyshots title text link with title wrapper 1`] = `
         data-css-piydn8=""
       >
         <span
-          data-css-1202ll4=""
+          data-css-18hqvbo=""
         >
           <a
             href="http://duckduckgo.com?q=text"
           >
             <div
-              data-css-1tlmf72=""
+              data-css-fvvao4=""
             >
               <div
                 className=""
@@ -4745,8 +5153,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
                       }
                     }
                   >
-                    
-                    …
+                    Text link
                   </span>
                   <span
                     aria-hidden="true"
@@ -4805,8 +5212,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
                         }
                       }
                     >
-                      
-                      …
+                      Text link
                     </span>
                   </span>
                 </span>
@@ -4822,7 +5228,7 @@ exports[`Storyshots title text link with title wrapper 1`] = `
 
 exports[`Storyshots title title wrapper 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -4835,7 +5241,7 @@ exports[`Storyshots title title wrapper 1`] = `
       data-css-1ybvkp1=""
     >
       <div
-        data-css-x1twjb=""
+        data-css-vcul9a=""
       >
         <div
           data-css-i7gti2=""
@@ -4850,7 +5256,7 @@ exports[`Storyshots title title wrapper 1`] = `
         data-css-piydn8=""
       >
         <div
-          data-css-1tlmf72=""
+          data-css-fvvao4=""
         >
           <div
             className=""
@@ -4873,8 +5279,7 @@ exports[`Storyshots title title wrapper 1`] = `
                   }
                 }
               >
-                
-                …
+                Text only
               </span>
               <span
                 aria-hidden="true"
@@ -4933,8 +5338,7 @@ exports[`Storyshots title title wrapper 1`] = `
                     }
                   }
                 >
-                  
-                  …
+                  Text only
                 </span>
               </span>
             </span>

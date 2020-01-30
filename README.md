@@ -1,4 +1,4 @@
-# Pluralsight Design System
+# Pluralsight Design System [![Build Status](https://travis-ci.org/pluralsight/design-system.svg?branch=master)](https://travis-ci.org/pluralsight/design-system)
 
 <a href="https://www.youtube.com/watch?v=aDh6eIodH-c"><img alt="The UI building blocks for creating a cohesive design across Pluralsight products." src="https://i.imgur.com/tf35gHt.jpg" /></a>
 
@@ -16,9 +16,12 @@ Light WIP -- 50% less fat!
 
 ## Run locally
 
+Install [nvm](https://github.com/nvm-sh/nvm)
+
 ```
+nvm install
 nvm use
-npm install 
+npm install
 npm run bootstrap
 npm start
 ```

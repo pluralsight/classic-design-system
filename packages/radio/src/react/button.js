@@ -1,125 +1,113 @@
-import * as glamor from 'glamor'
-import Halo from '@pluralsight/ps-design-system-halo/react'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { defaultName as themeDefaultName } from '@pluralsight/ps-design-system-theme/react'
-import * as propsUtil from '@pluralsight/ps-design-system-util/props'
 
-import css from '../css'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Halo from '@pluralsight/ps-design-system-halo'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-const radioButtonHtmlPropsWhitelist = [
-  'type',
-  'name',
-  'autocomplete',
-  'autofocus',
-  'role',
-  'tabIndex',
-  'value',
-  'defaultValue',
-  /^on/,
-  /^aria-/,
-  /^data-/,
-  /^form/
-]
+import stylesheet from '../css/index.js'
 
 const styles = {
-  button: () => glamor.css(css['.psds-radio-button']),
-  circle: ({ checked, themeName }) =>
-    glamor.css(
-      css['.psds-radio-button__circle'],
-      css[`.psds-radio-button__circle.psds-theme--${themeName}`],
-      checked && css['.psds-radio-button__circle--checked'],
-      { ':focus': css['.psds-radio-button__circle:focus'] }
+  button: () => css(stylesheet['.psds-radio-button']),
+  circle: (themeName, { checked }) =>
+    compose(
+      css(stylesheet['.psds-radio-button__circle']),
+      css(stylesheet[`.psds-radio-button__circle.psds-theme--${themeName}`]),
+      checked && css(stylesheet['.psds-radio-button__circle--checked'])
     ),
-  circleInner: ({ checked }) =>
-    glamor.css(css['.psds-radio-button__circle-inner']),
-  input: () => glamor.css(css['.psds-radio-button__input']),
-  label: ({ themeName }) =>
-    glamor.css(
-      css['.psds-radio-button__label'],
-      css[`.psds-radio-button__label.psds-theme--${themeName}`]
+  circleOuter: () => css(stylesheet['.psds-radio-button__circle-outer']),
+  circleInner: (themeName, { checked }) =>
+    css(stylesheet['.psds-radio-button__circle-inner']),
+  halo: () => css(stylesheet['.psds-radio-button__halo']),
+  input: () => css(stylesheet['.psds-radio-button__input']),
+  label: themeName =>
+    compose(
+      css(stylesheet['.psds-radio-button__label']),
+      css(stylesheet[`.psds-radio-button__label.psds-theme--${themeName}`])
     )
 }
 
-class Button extends React.Component {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-    this.selectButton = this.selectButton.bind(this)
-  }
-  selectButton(evt) {
+const Button = React.forwardRef((props, forwardedRef) => {
+  const themeName = useTheme()
+
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
+
+  const circleRef = React.useRef()
+
+  function handleClick(evt) {
     const value = evt.target.value
-    this.props._onClick(evt, value)
-    if (typeof this.props.onClick === 'function') this.props.onClick(evt, value)
-    this.props._onFocus(evt, value)
-    this.circle.focus()
+    props._onClick(evt, value)
+
+    if (isFunction(props.onClick)) props.onClick(evt, value)
+    props._onFocus(evt, value)
+
+    circleRef.current.focus()
   }
-  handleClick(evt) {
-    this.selectButton(evt)
-  }
-  render() {
-    const { context, props } = this
-    const allProps = {
-      ...props,
-      themeName: context.themeName || themeDefaultName
-    }
-    return (
-      <label
-        onClick={props._disabled ? null : this.handleClick}
-        {...styles.button(allProps)}
-      >
+
+  const { _disabled, _error, _isFocused, _onFocus, _name } = props
+
+  return (
+    <label {...styles.button(themeName, props)}>
+      <div {...styles.circleOuter()}>
         <Halo
-          error={allProps._error}
+          error={_error}
           inline
           shape={Halo.shapes.pill}
-          visibleOnFocus={!allProps._disabled}
-          visible={allProps._isFocused}
+          visibleOnFocus={!_disabled}
+          visible={_isFocused}
+          {...styles.halo()}
         >
           <div
             role="radio"
-            aria-checked={allProps.checked}
+            aria-checked={props.checked}
             tabIndex="-1"
-            onFocus={props._disabled ? null : _ => props._onFocus(props.value)}
-            ref={el => (this.circle = el)}
-            {...styles.circle(allProps)}
+            onFocus={_disabled ? null : _ => _onFocus(props.value)}
+            ref={circleRef}
+            {...styles.circle(themeName, props)}
           >
-            {allProps.checked && <div {...styles.circleInner(allProps)} />}
+            {props.checked && <div {...styles.circleInner(themeName, props)} />}
           </div>
         </Halo>
-        <input
-          {...propsUtil.whitelistProps(allProps, radioButtonHtmlPropsWhitelist)}
-          tabIndex="-1"
-          type="radio"
-          readOnly
-          name={props._name}
-          checked={allProps.checked}
-          value={allProps.value}
-          ref={allProps.innerRef}
-          {...styles.input(allProps)}
-        />
-        <div {...styles.label(allProps)}>{allProps.label}</div>
-      </label>
-    )
-  }
-}
+      </div>
+
+      <input
+        {...filterReactProps(props, { tagName: 'input' })}
+        onClick={_disabled ? null : handleClick}
+        tabIndex="-1"
+        type="radio"
+        readOnly
+        name={_name}
+        ref={ref}
+        {...styles.input()}
+      />
+
+      <div {...styles.label(themeName)}>{props.label}</div>
+    </label>
+  )
+})
 
 Button.propTypes = {
-  checked: PropTypes.bool,
-  innerRef: PropTypes.func,
-  label: PropTypes.node.isRequired,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   _disabled: PropTypes.bool,
   _error: PropTypes.bool,
   _isFocused: PropTypes.bool,
   _name: PropTypes.string,
   _onClick: PropTypes.func,
-  _onFocus: PropTypes.func
+  _onFocus: PropTypes.func,
+
+  checked: PropTypes.bool,
+  label: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 }
+
 Button.defaultProps = {
   checked: false
 }
-Button.contextTypes = {
-  themeName: PropTypes.string
-}
 
 export default Button
+
+function isFunction(fn) {
+  return typeof fn === 'function'
+}

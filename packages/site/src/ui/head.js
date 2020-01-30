@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head.js'
 import React from 'react'
 
 export default _ => (
@@ -11,7 +11,7 @@ export default _ => (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="https://cloud.typography.com/6966154/691568/css/fonts.css"
+      href="https://cloud.typography.com/6966154/6397212/css/fonts.css"
     />
     <link
       rel="stylesheet"
@@ -19,7 +19,7 @@ export default _ => (
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@pluralsight/ps-design-system-normalize"
+      href="https://unpkg.com/@pluralsight/ps-design-system-normalize@latest/dist/index.css"
     />
   </Head>
 )

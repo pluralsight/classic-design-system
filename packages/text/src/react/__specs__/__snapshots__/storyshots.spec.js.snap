@@ -2,7 +2,7 @@
 
 exports[`Storyshots Code empty 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -23,7 +23,7 @@ exports[`Storyshots Code empty 1`] = `
 
 exports[`Storyshots Code ends single line 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -48,7 +48,7 @@ exports[`Storyshots Code ends single line 1`] = `
 
 exports[`Storyshots Code lead single line 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -73,7 +73,7 @@ exports[`Storyshots Code lead single line 1`] = `
 
 exports[`Storyshots Code line wrap 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -99,7 +99,7 @@ exports[`Storyshots Code line wrap 1`] = `
 
 exports[`Storyshots Code maintains whitespace 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -111,7 +111,7 @@ exports[`Storyshots Code maintains whitespace 1`] = `
     <code
       data-css-qf6m0u=""
     >
-                      in the middle                
+       in the middle 
     </code>
   </div>
 </div>
@@ -119,7 +119,7 @@ exports[`Storyshots Code maintains whitespace 1`] = `
 
 exports[`Storyshots Code middle of paragraph 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -145,7 +145,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
 
 exports[`Storyshots Code standalone 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -165,7 +165,7 @@ exports[`Storyshots Code standalone 1`] = `
 
 exports[`Storyshots Heading className override 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -191,7 +191,7 @@ exports[`Storyshots Heading className override 1`] = `
 
 exports[`Storyshots Heading size: large 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -212,7 +212,7 @@ exports[`Storyshots Heading size: large 1`] = `
 
 exports[`Storyshots Heading size: medium 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -233,7 +233,7 @@ exports[`Storyshots Heading size: medium 1`] = `
 
 exports[`Storyshots Heading size: smallCaps 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -254,7 +254,7 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
 
 exports[`Storyshots Heading size: xLarge 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -275,7 +275,7 @@ exports[`Storyshots Heading size: xLarge 1`] = `
 
 exports[`Storyshots Heading style override 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -301,7 +301,7 @@ exports[`Storyshots Heading style override 1`] = `
 
 exports[`Storyshots List type: bulleted 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -311,11 +311,7 @@ exports[`Storyshots List type: bulleted 1`] = `
     }
   >
     <ul
-      className={
-        Object {
-          "data-css-12zx3gr": "",
-        }
-      }
+      data-css-12zx3gr=""
     >
       <li>
         one
@@ -339,7 +335,7 @@ exports[`Storyshots List type: bulleted 1`] = `
 
 exports[`Storyshots List type: default 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -349,11 +345,7 @@ exports[`Storyshots List type: default 1`] = `
     }
   >
     <ul
-      className={
-        Object {
-          "data-css-1o7kfj5": "",
-        }
-      }
+      data-css-1o7kfj5=""
     >
       <li>
         one
@@ -377,7 +369,7 @@ exports[`Storyshots List type: default 1`] = `
 
 exports[`Storyshots List type: numbered 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -387,11 +379,7 @@ exports[`Storyshots List type: numbered 1`] = `
     }
   >
     <ol
-      className={
-        Object {
-          "data-css-1lkx3qm": "",
-        }
-      }
+      data-css-1lkx3qm=""
     >
       <li>
         one
@@ -415,7 +403,7 @@ exports[`Storyshots List type: numbered 1`] = `
 
 exports[`Storyshots P className override 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -440,7 +428,7 @@ exports[`Storyshots P className override 1`] = `
 
 exports[`Storyshots P stacked 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -472,7 +460,7 @@ exports[`Storyshots P stacked 1`] = `
 
 exports[`Storyshots P style override 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={
@@ -497,7 +485,7 @@ exports[`Storyshots P style override 1`] = `
 
 exports[`Storyshots P vanilla 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     style={

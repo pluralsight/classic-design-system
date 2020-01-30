@@ -1,9 +1,11 @@
-import core from '@pluralsight/ps-design-system-core'
-import Button from '@pluralsight/ps-design-system-button/react'
-import Dialog from '@pluralsight/ps-design-system-dialog/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import { transparentize } from 'polished'
+import * as core from '@pluralsight/ps-design-system-core'
+import Button from '@pluralsight/ps-design-system-button'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import { Below } from '@pluralsight/ps-design-system-position'
+import * as Text from '@pluralsight/ps-design-system-text'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 import React from 'react'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
@@ -16,9 +18,129 @@ import {
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
+
+function InAppExample() {
+  const [isHovered, setHovered] = React.useState(false)
+  const [isClicked, setClicked] = React.useState(false)
+  console.log({ isHovered })
+  return (
+    <div>
+      <div className="examples">
+        <Theme name={Theme.names.dark}>
+          <div className="example">
+            <Below
+              show={
+                <Dialog
+                  style={{ outline: '2px solid blue' }}
+                  tailPosition={Dialog.tailPositions.topCenter}
+                >
+                  Dialog
+                </Dialog>
+              }
+              when
+            >
+              <Button
+                appearance={Button.appearances.secondary}
+                className="text"
+              >
+                Look at me
+              </Button>
+            </Below>
+          </div>
+
+          <div className="example">
+            <Below
+              show={
+                <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+                  Dialog
+                </Dialog>
+              }
+              when={isHovered}
+            >
+              <Button
+                appearance={Button.appearances.secondary}
+                className="text"
+                onMouseEnter={_ => setHovered(true)}
+                onMouseOut={_ => setHovered(false)}
+              >
+                Hover me
+              </Button>
+            </Below>
+          </div>
+
+          <div className="example">
+            <Below
+              show={
+                <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+                  Dialog
+                </Dialog>
+              }
+              when={isClicked}
+            >
+              <Button
+                appearance={Button.appearances.secondary}
+                className="text"
+                onClick={_ => setClicked(!isClicked)}
+              >
+                Click me
+              </Button>
+            </Below>
+          </div>
+        </Theme>
+      </div>
+      <Code
+        collapsible
+        lang="javascript"
+      >{`import Button from '@pluralsight/ps-design-system-button'
+import { Below } from '@pluralsight/ps-design-system-position'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+
+function HoverExampleOnly() {
+  const [isHovered, setHovered] = React.useState(false)
+  return (
+    <Below
+      show={
+        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+          Dialog
+        </Dialog>
+      }
+      when={isHovered}
+    >
+      <Button
+        appearance={Button.appearances.secondary}
+        onMouseEnter={_ => setHovered(true)}
+        onMouseOut={_ => setHovered(false)}
+      >
+        Hover me
+      </Button>
+    </Below>
+  )
+}`}</Code>
+
+      <style jsx>{`
+        .examples {
+          display: flex;
+          padding: ${core.layout.spacingLarge};
+          padding-bottom: 188px;
+          color: ${core.colors.gray02};
+          font-weight: ${core.type.fontWeightMedium};
+          background: ${core.colors.gray06};
+        }
+        .example {
+          margin-right: calc(${core.layout.spacingLarge} * 2);
+        }
+        .text {
+          display: inline-block;
+        }
+        .example:last-child {
+          margin-right: 0;
+        }
+      `}</style>
+    </div>
+  )
+}
 
 const ContentGridVisual = _ => (
   <div className="grid">
@@ -73,6 +195,10 @@ const ModalGuidelineExample = props => (
     `}</style>
   </div>
 )
+ModalGuidelineExample.propTypes = {
+  children: PropTypes.node,
+  style: PropTypes.object
+}
 
 const ExampleContent = _ => (
   <div style={{ maxWidth: '300px' }}>
@@ -120,7 +246,7 @@ const ModalIframe = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Dialog">
       <PageHeading packageName="dialog">Dialog</PageHeading>
@@ -140,11 +266,18 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Dialog from '@pluralsight/ps-design-system-dialog/react'
+        import Dialog from '@pluralsight/ps-design-system-dialog'
       </Code>
 
       <PropTypes
         props={[
+          PropTypes.row([
+            'aria-label',
+            'string',
+            true,
+            null,
+            <span>description of dialog purpose</span>
+          ]),
           PropTypes.row([
             'disableCloseButton',
             'boolean',
@@ -206,11 +339,18 @@ export default withServerProps(_ => (
         ]}
       />
 
+      <SectionHeading>In-app example</SectionHeading>
+      <P>
+        Dialogs can appear automatically, or be triggered by hover, focus, tap
+        or click.
+      </P>
+      <InAppExample />
+
       <SectionHeading>Tail</SectionHeading>
       <P>
         Dialogs can be shown with or without a tail (a directional indicator).
         To make the tail appear, use a{' '}
-        <Text.Code>Dialog.tailPositions</Text.Code> option.tion.
+        <Text.Code>Dialog.tailPositions</Text.Code> option.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -232,7 +372,7 @@ export default withServerProps(_ => (
         close button, clicking the overlay (in the case of a{' '}
         <Text.Code>modal</Text.Code> Dialog), and pressing the escape key. One
         or all of these methods, if available, will call the{' '}
-        <Text.Code>onClose</Text.Code> function when triggered.ered.
+        <Text.Code>onClose</Text.Code> function when triggered.
       </P>
       <Example.React
         includes={{ Dialog, ExampleContent }}
@@ -274,6 +414,7 @@ export default withServerProps(_ => (
         By that measure, place your actions at the bottom/right, with the
         primary action on the right.{' '}
       </P>
+
       <Guideline
         do={
           <Dialog disableFocusOnMount>
@@ -390,7 +531,7 @@ export default withServerProps(_ => (
       />
 
       <P>
-        Be explicit as possible when writing dialog buttons. Use affirimitive
+        Be explicit as possible when writing dialog buttons. Use affirmative
         action text to clearly indicate the outcome of the decision. [
         <Link
           appearance={Link.appearances.subtle}
@@ -444,4 +585,4 @@ export default withServerProps(_ => (
       />
     </Content>
   </Chrome>
-))
+)

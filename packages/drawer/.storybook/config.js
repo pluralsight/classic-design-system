@@ -1,8 +1,15 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
-import { configure } from '@storybook/react';
+import requireContext from 'require-context.macro'
+
+import { addDecorator, configure } from '@storybook/react'
+
+import themeDecorator from '@pluralsight/ps-design-system-storybook-addon-theme'
+
+addDecorator(themeDecorator)
+
+const req = requireContext('../src', true, /\.story\.js$/)
 
 function loadStories() {
-  require('../stories');
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStories, module);
+configure(loadStories, module)

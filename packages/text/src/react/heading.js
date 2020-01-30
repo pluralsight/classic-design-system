@@ -1,45 +1,51 @@
-import core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/react'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 
-import css from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
-const style = props =>
-  glamor.css({
-    ...css['.psds-text__heading'],
-    ...css[`.psds-text__heading.psds-theme--${props.themeName}`],
-    ...css[`.psds-text__heading--size-${props.size}`],
-    ...css[
-      `.psds-text__heading--size-${props.size}.psds-theme--${props.themeName}`
-    ]
-  })
-
+const style = props => {
+  const flag = props.psds2020Colors ? '.psds-text--2020-colors' : ''
+  return compose(
+    css(stylesheet['.psds-text__heading']),
+    css(
+      stylesheet[`.psds-text__heading.psds-theme--${props.themeName}${flag}`]
+    ),
+    css(stylesheet[`.psds-text__heading--size-${props.size}`]),
+    css(
+      stylesheet[
+        `.psds-text__heading--size-${props.size}.psds-theme--${props.themeName}${flag}`
+      ]
+    )
+  )
+}
 const rmChildren = ({ children, ...rest }) => rest
 
-const Heading = (props, context) =>
-  React.cloneElement(React.Children.only(props.children), {
+const Heading = props => {
+  const themeName = useTheme()
+  const {
+    flags: { psds2020Colors }
+  } = useFeatureFlags()
+
+  return React.cloneElement(React.Children.only(props.children), {
     ...rmChildren(props),
     ...style({
       ...props,
-      themeName: context.themeName || themeDefaultName
+      themeName,
+      psds2020Colors
     }),
     className: props.className
   })
+}
 
 Heading.propTypes = {
   size: PropTypes.oneOf(Object.keys(vars.headingSizes))
 }
 Heading.defaultProps = {
   size: vars.headingSizes.large
-}
-Heading.contextTypes = {
-  themeName: PropTypes.string
 }
 
 Heading.sizes = vars.headingSizes

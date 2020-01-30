@@ -1,8 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
-import {
-  Code as DSCode,
-  P as DSP
-} from '@pluralsight/ps-design-system-text/react'
+import * as core from '@pluralsight/ps-design-system-core'
+import * as Text from '@pluralsight/ps-design-system-text'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -14,9 +11,8 @@ import {
   Link,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const formatVarName = name => 'psColors' + name[0].toUpperCase() + name.slice(1)
 const ColorDesc = props => (
@@ -99,7 +95,7 @@ const CodeColors = _ => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Code">
       <PageHeading packageName="text">Code</PageHeading>
@@ -110,7 +106,8 @@ export default withServerProps(_ => (
         Source Code Pro. Import it into your app with:
       </P>
       <Code language="css">
-        {`@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);`}
+        @import
+        url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);
       </Code>
 
       <P>Install the component dependency:</P>
@@ -120,15 +117,17 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        {`import { Code } from '@pluralsight/ps-design-system-text/react'`}
+        {`import { Code } from '@pluralsight/ps-design-system-text'`}
       </Code>
 
       <SectionHeading>Inline code</SectionHeading>
       <P>Use when presenting code strings inline with body text.</P>
       <Example.React
         themeToggle
-        includes={{ P: DSP, Code: DSCode }}
-        codes={[`<P>The text has <Code>inline-code</Code> in the middle.</P>`]}
+        includes={{ Text: Text }}
+        codes={[
+          `<Text.P>The text has <Text.Code>inline-code</Text.Code> in the middle.</Text.P>`
+        ]}
       />
 
       <SectionHeading>Code block</SectionHeading>
@@ -146,7 +145,7 @@ export default withServerProps(_ => (
         In order to ensure proper color contrast when rendering your code
         blocks, don't use any dark background{' '}
         <Link href="/core/color">color</Link> lighter than{' '}
-        <DSCode>gray06</DSCode>.
+        <Text.Code>gray06</Text.Code>.
       </P>
       <Code language="bash">{`const what = "'s amazing"
 console.log('Design System' + what)`}</Code>
@@ -161,4 +160,4 @@ console.log('Design System' + what)`}</Code>
       <CodeColors />
     </Content>
   </Chrome>
-))
+)

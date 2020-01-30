@@ -1,654 +1,134 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots appearance default 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-1812rv9=""
-      >
-        <div
-          data-css-1xm24a9=""
-        >
-          <div
-            data-css-1r44zeb=""
-          >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                The placeholder 
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                The placeholder 
-              </span>
-            </button>
-            <div
-              data-css-cstzed=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
 exports[`Storyshots appearance default w/ error 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Problem field
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Problem field
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-in6gqi=""
       >
         <div
-          data-css-utxo7p=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
         <div
-          data-css-loo18p=""
+          data-css-otejxm=""
         >
-          <div
-            className="css-otejxm"
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-label="warning icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-              />
-            </svg>
-          </div>
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots appearance gaps 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
-  >
-    <div>
-      <div>
-        <label
-          data-css-1hniuff=""
-          onKeyDown={[Function]}
-        >
-          <div
-            data-css-n53zhn=""
-          >
-            Problem field
-          </div>
-          <div
-            data-css-1812rv9=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <div
-                data-css-1r44zeb=""
-              >
-                <button
-                  data-css-8bndf1=""
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                >
-                  <span
-                    aria-hidden={true}
-                    data-css-e6fvyw=""
-                  />
-                  <span
-                    data-css-5m5yd6=""
-                  />
-                </button>
-                <div
-                  data-css-cstzed=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.5 14L8 10h9z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-      <div>
-        <label
-          data-css-1hniuff=""
-          onKeyDown={[Function]}
-        >
-          <div
-            data-css-n53zhn=""
-          >
-            Problem field
-          </div>
-          <div
-            data-css-1812rv9=""
-          >
-            <div
-              data-css-utxo7p=""
-            >
-              <div
-                data-css-1r44zeb=""
-              >
-                <button
-                  data-css-8bndf1=""
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                >
-                  <span
-                    aria-hidden={true}
-                    data-css-e6fvyw=""
-                  />
-                  <span
-                    data-css-5m5yd6=""
-                  />
-                </button>
-                <div
-                  data-css-cstzed=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.5 14L8 10h9z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-loo18p=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="warning icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-      <div>
-        <label
-          data-css-1hniuff=""
-          onKeyDown={[Function]}
-        >
-          <div
-            data-css-n53zhn=""
-          >
-            Problem field
-          </div>
-          <div
-            data-css-1812rv9=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <div
-                data-css-1r44zeb=""
-              >
-                <button
-                  data-css-1e7y5c2=""
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                >
-                  <span
-                    aria-hidden={true}
-                    data-css-e6fvyw=""
-                  />
-                  <span
-                    data-css-5m5yd6=""
-                  />
-                </button>
-                <div
-                  data-css-145erv=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.5 14L8 10h9z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-      <div>
-        <label
-          data-css-1hniuff=""
-          onKeyDown={[Function]}
-        >
-          <div
-            data-css-n53zhn=""
-          >
-            Problem field
-          </div>
-          <div
-            data-css-1812rv9=""
-          >
-            <div
-              data-css-utxo7p=""
-            >
-              <div
-                data-css-1r44zeb=""
-              >
-                <button
-                  data-css-1e7y5c2=""
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                >
-                  <span
-                    aria-hidden={true}
-                    data-css-e6fvyw=""
-                  />
-                  <span
-                    data-css-5m5yd6=""
-                  />
-                </button>
-                <div
-                  data-css-145erv=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.5 14L8 10h9z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-loo18p=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="warning icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle 1`] = `
-<div
-  data-css-claeju=""
+  }
 >
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-1812rv9=""
-      >
-        <div
-          data-css-1xm24a9=""
-        >
-          <div
-            data-css-1r44zeb=""
-          >
-            <button
-              data-css-1e7y5c2=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                The placeholder 
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                The placeholder 
-              </span>
-            </button>
-            <div
-              data-css-145erv=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle w/ error 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-n53zhn=""
-      >
-        Problem field
-      </div>
-      <div
-        data-css-1812rv9=""
-      >
-        <div
-          data-css-utxo7p=""
-        >
-          <div
-            data-css-1r44zeb=""
-          >
-            <button
-              data-css-1e7y5c2=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
-            <div
-              data-css-145erv=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          data-css-loo18p=""
-        >
-          <div
-            className="css-otejxm"
-          >
-            <svg
-              aria-label="warning icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots disabled compare 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
+  <div>
     <div>
       <label
         data-css-1hniuff=""
         onKeyDown={[Function]}
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
-          Normal
+          Problem field
         </div>
         <div
-          data-css-1812rv9=""
+          data-css-8u2q7u=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-ctre2o=""
           >
             <div
-              data-css-1r44zeb=""
+              data-css-ne3jjf=""
             >
               <button
-                data-css-8bndf1=""
+                data-css-1lq4mos=""
                 disabled={false}
-                onBlur={[Function]}
                 onClick={[Function]}
-                onFocus={[Function]}
               >
                 <span
                   aria-hidden={true}
-                  data-css-e6fvyw=""
-                >
-                  I'm normal, see
-                </span>
+                  data-css-1pnvt9=""
+                />
                 <span
-                  data-css-5m5yd6=""
-                >
-                  I'm normal, see
-                </span>
+                  data-css-1qy54zb=""
+                />
               </button>
               <div
-                data-css-cstzed=""
+                data-css-wvt485=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -665,54 +145,119 @@ exports[`Storyshots disabled compare 1`] = `
             </div>
           </div>
         </div>
-        <div
-          data-css-1de0a6a=""
-        >
-          Still normal
-        </div>
       </label>
+    </div>
+    <div>
       <label
-        data-css-1h53i33=""
+        data-css-1hniuff=""
         onKeyDown={[Function]}
       >
         <div
-          data-css-n53zhn=""
+          data-css-1ewie3k=""
         >
-          I'm not usable
+          Problem field
         </div>
         <div
-          data-css-1812rv9=""
+          data-css-8u2q7u=""
         >
           <div
-            data-css-1xm24a9=""
+            data-css-in6gqi=""
           >
             <div
-              data-css-1r44zeb=""
+              data-css-ne3jjf=""
             >
               <button
-                data-css-8bndf1=""
-                disabled={true}
-                onBlur={null}
-                onClick={null}
-                onFocus={null}
+                data-css-1lq4mos=""
+                disabled={false}
+                onClick={[Function]}
               >
                 <span
                   aria-hidden={true}
-                  data-css-e6fvyw=""
-                >
-                  I'm untouchable
-                </span>
+                  data-css-1pnvt9=""
+                />
                 <span
-                  data-css-5m5yd6=""
-                >
-                  I'm untouchable
-                </span>
+                  data-css-1qy54zb=""
+                />
               </button>
               <div
-                data-css-cstzed=""
+                data-css-wvt485=""
               >
                 <div
-                  className="css-otejxm"
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-css-1ha66tv=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="warning icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div>
+      <label
+        data-css-1hniuff=""
+        onKeyDown={[Function]}
+      >
+        <div
+          data-css-1ewie3k=""
+        >
+          Problem field
+        </div>
+        <div
+          data-css-8u2q7u=""
+        >
+          <div
+            data-css-ctre2o=""
+          >
+            <div
+              data-css-ne3jjf=""
+            >
+              <button
+                data-css-18uvdlm=""
+                disabled={false}
+                onClick={[Function]}
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-1pnvt9=""
+                />
+                <span
+                  data-css-1qy54zb=""
+                />
+              </button>
+              <div
+                data-css-kojjpx=""
+              >
+                <div
+                  data-css-otejxm=""
                 >
                   <svg
                     aria-label="caret down icon"
@@ -729,10 +274,79 @@ exports[`Storyshots disabled compare 1`] = `
             </div>
           </div>
         </div>
+      </label>
+    </div>
+    <div>
+      <label
+        data-css-1hniuff=""
+        onKeyDown={[Function]}
+      >
         <div
-          data-css-1de0a6a=""
+          data-css-1ewie3k=""
         >
-          Neither am I
+          Problem field
+        </div>
+        <div
+          data-css-8u2q7u=""
+        >
+          <div
+            data-css-in6gqi=""
+          >
+            <div
+              data-css-ne3jjf=""
+            >
+              <button
+                data-css-18uvdlm=""
+                disabled={false}
+                onClick={[Function]}
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-1pnvt9=""
+                />
+                <span
+                  data-css-1qy54zb=""
+                />
+              </button>
+              <div
+                data-css-kojjpx=""
+              >
+                <div
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-css-1ha66tv=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="warning icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </label>
     </div>
@@ -740,59 +354,390 @@ exports[`Storyshots disabled compare 1`] = `
 </div>
 `;
 
-exports[`Storyshots labels all 1`] = `
+exports[`Storyshots appearance medium default 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              The placeholder 
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              The placeholder 
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots appearance medium subtle 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-18uvdlm=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              The placeholder 
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              The placeholder 
+            </span>
+          </button>
+          <div
+            data-css-kojjpx=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots appearance small default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-nypqc5=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              The placeholder 
+            </span>
+            <span
+              data-css-co7lhr=""
+            >
+              The placeholder 
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots appearance small subtle 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-112wuyk=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              The placeholder 
+            </span>
+            <span
+              data-css-co7lhr=""
+            >
+              The placeholder 
+            </span>
+          </button>
+          <div
+            data-css-kojjpx=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots appearance subtle w/ error 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Problem field
+    </div>
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-18uvdlm=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-kojjpx=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots disabled compare 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div>
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
-        Some label
+        Normal
       </div>
       <div
-        data-css-1812rv9=""
+        data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ne3jjf=""
           >
             <button
-              data-css-8bndf1=""
+              data-css-1lq4mos=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
-                data-css-e6fvyw=""
+                data-css-1pnvt9=""
               >
-                Some placeholder
+                I'm normal, see
               </span>
               <span
-                data-css-5m5yd6=""
+                data-css-1qy54zb=""
               >
-                Some placeholder
+                I'm normal, see
               </span>
             </button>
             <div
-              data-css-cstzed=""
+              data-css-wvt485=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -810,273 +755,775 @@ exports[`Storyshots labels all 1`] = `
         </div>
       </div>
       <div
-        data-css-1de0a6a=""
+        data-css-bf7jp3=""
       >
-        Some sublabel
+        Still normal
+      </div>
+    </label>
+    <label
+      data-css-1h53i33=""
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1ewie3k=""
+      >
+        I'm not usable
+      </div>
+      <div
+        data-css-8u2q7u=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              data-css-1lq4mos=""
+              disabled={true}
+              onClick={null}
+            >
+              <span
+                aria-hidden={true}
+                data-css-1pnvt9=""
+              >
+                I'm untouchable
+              </span>
+              <span
+                data-css-1qy54zb=""
+              >
+                I'm untouchable
+              </span>
+            </button>
+            <div
+              data-css-wvt485=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-bf7jp3=""
+      >
+        Neither am I
       </div>
     </label>
   </div>
+</div>
+`;
+
+exports[`Storyshots focus autofocus with ref 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots focus disabled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1h53i33=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={true}
+            onBlur={[Function]}
+            onClick={null}
+            onFocus={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots focus onBlur 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots focus onFocus 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+            onFocus={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots labels all 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              Some placeholder
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              Some placeholder
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels label 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Some label
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Some label
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      >
-        Some sublabel
-      </div>
-    </label>
-  </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels none 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              />
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels placeholder 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              some placeholder
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              some placeholder
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots labels subLabel 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            />
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      Some sublabel
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots layouts custom width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "color": "#ababab",
+        }
+      }
+    >
+      Value: 
+      two
+    </div>
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
+      style={
+        Object {
+          "width": 150,
+        }
+      }
     >
       <div
-        data-css-1812rv9=""
+        data-css-1ewie3k=""
+      >
+        Width 150
+      </div>
+      <div
+        data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ne3jjf=""
           >
             <button
-              data-css-8bndf1=""
+              data-css-1lq4mos=""
               disabled={false}
-              onBlur={[Function]}
+              onChange={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
+              value="two"
             >
               <span
                 aria-hidden={true}
-                data-css-e6fvyw=""
+                data-css-1pnvt9=""
               >
-                some placeholder
+                One item One item One item One item One item One item
               </span>
               <span
-                data-css-5m5yd6=""
+                data-css-1qy54zb=""
               >
-                some placeholder
+                Two item
               </span>
             </button>
             <div
-              data-css-cstzed=""
+              data-css-wvt485=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1094,54 +1541,48 @@ exports[`Storyshots labels placeholder 1`] = `
         </div>
       </div>
     </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels subLabel 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
-        data-css-1812rv9=""
+        data-css-1ewie3k=""
+      >
+        Width determined by longest item
+      </div>
+      <div
+        data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ne3jjf=""
           >
             <button
-              data-css-8bndf1=""
+              data-css-1lq4mos=""
               disabled={false}
-              onBlur={[Function]}
+              onChange={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
+              value="two"
             >
               <span
                 aria-hidden={true}
-                data-css-e6fvyw=""
-              />
+                data-css-1pnvt9=""
+              >
+                One item One item One item One item One item One item
+              </span>
               <span
-                data-css-5m5yd6=""
-              />
+                data-css-1qy54zb=""
+              >
+                Two item
+              </span>
             </button>
             <div
-              data-css-cstzed=""
+              data-css-wvt485=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1157,11 +1598,6 @@ exports[`Storyshots labels subLabel 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
-        data-css-1de0a6a=""
-      >
-        Some sublabel
       </div>
     </label>
   </div>
@@ -1170,453 +1606,62 @@ exports[`Storyshots labels subLabel 1`] = `
 
 exports[`Storyshots layouts full width 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
-  >
-    <div
-      style={
-        Object {
-          "border": "1px solid blue",
-          "width": "500px",
-        }
-      }
-    >
-      <label
-        data-css-1hniuff=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-n53zhn=""
-        >
-          First
-        </div>
-        <div
-          data-css-1812rv9=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <div
-              data-css-1r44zeb=""
-            >
-              <button
-                data-css-8bndf1=""
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-e6fvyw=""
-                />
-                <span
-                  data-css-5m5yd6=""
-                />
-              </button>
-              <div
-                data-css-cstzed=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.5 14L8 10h9z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </label>
-      <label
-        data-css-1hniuff=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-n53zhn=""
-        >
-          Second
-        </div>
-        <div
-          data-css-1812rv9=""
-        >
-          <div
-            data-css-utxo7p=""
-          >
-            <div
-              data-css-1r44zeb=""
-            >
-              <button
-                data-css-8bndf1=""
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-e6fvyw=""
-                />
-                <span
-                  data-css-5m5yd6=""
-                />
-              </button>
-              <div
-                data-css-cstzed=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.5 14L8 10h9z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-loo18p=""
-          >
-            <div
-              className="css-otejxm"
-            >
-              <svg
-                aria-label="warning icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </label>
-      <label
-        data-css-1hniuff=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-n53zhn=""
-        >
-          Third
-        </div>
-        <div
-          data-css-1812rv9=""
-        >
-          <div
-            data-css-1xm24a9=""
-          >
-            <div
-              data-css-1r44zeb=""
-            >
-              <button
-                data-css-1e7y5c2=""
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-e6fvyw=""
-                />
-                <span
-                  data-css-5m5yd6=""
-                />
-              </button>
-              <div
-                data-css-145erv=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.5 14L8 10h9z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </label>
-      <label
-        data-css-1hniuff=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-n53zhn=""
-        >
-          Fourth
-        </div>
-        <div
-          data-css-1812rv9=""
-        >
-          <div
-            data-css-utxo7p=""
-          >
-            <div
-              data-css-1r44zeb=""
-            >
-              <button
-                data-css-1e7y5c2=""
-                disabled={false}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-e6fvyw=""
-                />
-                <span
-                  data-css-5m5yd6=""
-                />
-              </button>
-              <div
-                data-css-145erv=""
-              >
-                <div
-                  className="css-otejxm"
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.5 14L8 10h9z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-loo18p=""
-          >
-            <div
-              className="css-otejxm"
-            >
-              <svg
-                aria-label="warning icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </label>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots layouts right-aligned 1`] = `
-<div
-  data-css-claeju=""
+  }
 >
   <div
     style={
       Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "border": "1px solid blue",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "flex-end",
-          }
-        }
-      >
-        <label
-          data-css-1hniuff=""
-          onKeyDown={[Function]}
-        >
-          <div
-            data-css-1812rv9=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <div
-                data-css-1r44zeb=""
-              >
-                <button
-                  data-css-1e7y5c2=""
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                >
-                  <span
-                    aria-hidden={true}
-                    data-css-e6fvyw=""
-                  >
-                    Filter
-                  </span>
-                  <span
-                    data-css-5m5yd6=""
-                  >
-                    Filter
-                  </span>
-                </button>
-                <div
-                  data-css-145erv=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.5 14L8 10h9z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-      <div
-        style={
-          Object {
-            "border": "3px solid green",
-            "height": "50px",
-          }
-        }
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu divider 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
+        "border": "1px solid blue",
+        "width": "500px",
       }
     }
   >
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
-        Level
+        First
       </div>
       <div
-        data-css-1812rv9=""
+        data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ne3jjf=""
           >
             <button
-              data-css-8bndf1=""
+              data-css-1lq4mos=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three and the amazing item
-              </span>
+                data-css-1pnvt9=""
+              />
               <span
-                data-css-5m5yd6=""
+                data-css-1qy54zb=""
               />
             </button>
             <div
-              data-css-cstzed=""
+              data-css-wvt485=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1634,276 +1679,48 @@ exports[`Storyshots menu divider 1`] = `
         </div>
       </div>
     </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu in stack 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
-    <div>
-      <div>
-        <label
-          data-css-1hniuff=""
-          onKeyDown={[Function]}
-        >
-          <div
-            data-css-n53zhn=""
-          >
-            Level
-          </div>
-          <div
-            data-css-1812rv9=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <div
-                data-css-1r44zeb=""
-              >
-                <button
-                  data-css-8bndf1=""
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                >
-                  <span
-                    aria-hidden={true}
-                    data-css-e6fvyw=""
-                  >
-                    Three and the amazing item
-                  </span>
-                  <span
-                    data-css-5m5yd6=""
-                  >
-                    Select one
-                  </span>
-                </button>
-                <div
-                  data-css-cstzed=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.5 14L8 10h9z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-      <div>
-        <label
-          data-css-1hniuff=""
-          onKeyDown={[Function]}
-        >
-          <div
-            data-css-n53zhn=""
-          >
-            Level
-          </div>
-          <div
-            data-css-1812rv9=""
-          >
-            <div
-              data-css-1xm24a9=""
-            >
-              <div
-                data-css-1r44zeb=""
-              >
-                <button
-                  data-css-8bndf1=""
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                >
-                  <span
-                    aria-hidden={true}
-                    data-css-e6fvyw=""
-                  >
-                    Three and the amazing item
-                  </span>
-                  <span
-                    data-css-5m5yd6=""
-                  >
-                    Select another one
-                  </span>
-                </button>
-                <div
-                  data-css-cstzed=""
-                >
-                  <div
-                    className="css-otejxm"
-                  >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.5 14L8 10h9z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </label>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu nested 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
-    }
-  >
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
-    >
-      <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
-      >
-        <div
-          data-css-1xm24a9=""
-        >
-          <div
-            data-css-1r44zeb=""
-          >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three and the amazing item
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                Select another one
-              </span>
-            </button>
-            <div
-              data-css-cstzed=""
-            >
-              <div
-                className="css-otejxm"
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu onClicks 1`] = `
-<div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
       }
-    }
-  >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
-        Level
+        Second
       </div>
       <div
-        data-css-1812rv9=""
+        data-css-8u2q7u=""
       >
         <div
-          data-css-utxo7p=""
+          data-css-in6gqi=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ne3jjf=""
           >
             <button
-              data-css-1e7y5c2=""
+              data-css-1lq4mos=""
               disabled={false}
-              onBlur={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
             >
               <span
                 aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three and the amazing item
-              </span>
+                data-css-1pnvt9=""
+              />
               <span
-                data-css-5m5yd6=""
-              >
-                Select another one
-              </span>
+                data-css-1qy54zb=""
+              />
             </button>
             <div
-              data-css-145erv=""
+              data-css-wvt485=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -1920,19 +1737,157 @@ exports[`Storyshots menu onClicks 1`] = `
           </div>
         </div>
         <div
-          data-css-loo18p=""
+          data-css-1ha66tv=""
         >
           <div
-            className="css-otejxm"
+            data-css-otejxm=""
           >
             <svg
               aria-label="warning icon"
               role="img"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M2,12 C2,6.48608696 6.48608696,2 12,2 C17.513913,2 22,6.48608696 22,12 C22,17.513913 17.513913,22 12,22 C6.48608696,22 2,17.513913 2,12 Z M4,12 C4,16.4111304 7.58886957,20 12,20 C16.4111304,20 20,16.4111304 20,12 C20,7.58886957 16.4111304,4 12,4 C7.58886957,4 4,7.58886957 4,12 Z M12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,16.5 C11,16.2238576 11.2238576,16 11.5,16 L12.5,16 C12.7761424,16 13,16.2238576 13,16.5 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 Z M12.5,14 L11.5,14 C11.2238576,14 11,13.7761424 11,13.5 L11,7 C11,6.72385763 11.2238576,6.5 11.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 Z"
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-1ewie3k=""
+      >
+        Third
+      </div>
+      <div
+        data-css-8u2q7u=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              data-css-18uvdlm=""
+              disabled={false}
+              onClick={[Function]}
+            >
+              <span
+                aria-hidden={true}
+                data-css-1pnvt9=""
+              />
+              <span
+                data-css-1qy54zb=""
+              />
+            </button>
+            <div
+              data-css-kojjpx=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </label>
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-1ewie3k=""
+      >
+        Fourth
+      </div>
+      <div
+        data-css-8u2q7u=""
+      >
+        <div
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              data-css-18uvdlm=""
+              disabled={false}
+              onClick={[Function]}
+            >
+              <span
+                aria-hidden={true}
+                data-css-1pnvt9=""
+              />
+              <span
+                data-css-1qy54zb=""
+              />
+            </button>
+            <div
+              data-css-kojjpx=""
+            >
+              <div
+                data-css-otejxm=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 14L8 10h9z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-1ha66tv=""
+        >
+          <div
+            data-css-otejxm=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
               />
             </svg>
           </div>
@@ -1943,568 +1898,1047 @@ exports[`Storyshots menu onClicks 1`] = `
 </div>
 `;
 
-exports[`Storyshots menu single list 1`] = `
+exports[`Storyshots layouts right-aligned 1`] = `
 <div
-  data-css-claeju=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
     style={
       Object {
-        "padding": "24px",
+        "border": "1px solid blue",
       }
     }
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "flex-end",
+        }
+      }
     >
-      <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
+      <label
+        data-css-1hniuff=""
+        onKeyDown={[Function]}
       >
         <div
-          data-css-1xm24a9=""
+          data-css-8u2q7u=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ctre2o=""
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-            >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three and the amazing item
-              </span>
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
             <div
-              data-css-cstzed=""
+              data-css-ne3jjf=""
             >
-              <div
-                className="css-otejxm"
+              <button
+                data-css-18uvdlm=""
+                disabled={false}
+                onClick={[Function]}
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <span
+                  aria-hidden={true}
+                  data-css-1pnvt9=""
                 >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
+                  Filter
+                </span>
+                <span
+                  data-css-1qy54zb=""
+                >
+                  Filter
+                </span>
+              </button>
+              <div
+                data-css-kojjpx=""
+              >
+                <div
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </label>
+      </label>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "3px solid green",
+          "height": "50px",
+        }
+      }
+    />
   </div>
+</div>
+`;
+
+exports[`Storyshots menu divider 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              Three and the amazing item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots menu in stack 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div>
+    <div>
+      <label
+        data-css-1hniuff=""
+        onKeyDown={[Function]}
+      >
+        <div
+          data-css-1ewie3k=""
+        >
+          Level
+        </div>
+        <div
+          data-css-8u2q7u=""
+        >
+          <div
+            data-css-ctre2o=""
+          >
+            <div
+              data-css-ne3jjf=""
+            >
+              <button
+                data-css-1lq4mos=""
+                disabled={false}
+                onClick={[Function]}
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-1pnvt9=""
+                >
+                  Three and the amazing item
+                </span>
+                <span
+                  data-css-1qy54zb=""
+                >
+                  Select one
+                </span>
+              </button>
+              <div
+                data-css-wvt485=""
+              >
+                <div
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div>
+      <label
+        data-css-1hniuff=""
+        onKeyDown={[Function]}
+      >
+        <div
+          data-css-1ewie3k=""
+        >
+          Level
+        </div>
+        <div
+          data-css-8u2q7u=""
+        >
+          <div
+            data-css-ctre2o=""
+          >
+            <div
+              data-css-ne3jjf=""
+            >
+              <button
+                data-css-1lq4mos=""
+                disabled={false}
+                onClick={[Function]}
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-1pnvt9=""
+                >
+                  Three and the amazing item
+                </span>
+                <span
+                  data-css-1qy54zb=""
+                >
+                  Select another one
+                </span>
+              </button>
+              <div
+                data-css-wvt485=""
+              >
+                <div
+                  data-css-otejxm=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 14L8 10h9z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots menu nested 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              Three and the amazing item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              Select another one
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots menu onClicks 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-18uvdlm=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              Three and the amazing item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              Select another one
+            </span>
+          </button>
+          <div
+            data-css-kojjpx=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-otejxm=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots menu single list 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              Three and the amazing item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots menu single list w/ icon 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
             >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three and the amazing item
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                Select one
-              </span>
-            </button>
+              Three and the amazing item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              Select one
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots menu super long 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
             >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                This level really is the longest level that anyone has ever seen. There is none longer
-              </span>
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
+              This level really is the longest level that anyone has ever seen. There is none longer
+            </span>
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots menu w/ longer nested menu item label 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
             >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                The longest in el mundo. Find me!
-              </span>
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
+              The longest in el mundo. Find me!
+            </span>
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots menu w/ longer placeholder 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
             >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                This one is longer than any menu item
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                This one is longer than any menu item
-              </span>
-            </button>
+              This one is longer than any menu item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              This one is longer than any menu item
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots menu w/ subLabel 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-n53zhn=""
-      >
-        Level
-      </div>
-      <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
             >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three and the amazing item
-              </span>
-              <span
-                data-css-5m5yd6=""
-              />
-            </button>
+              Three and the amazing item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-      <div
-        data-css-1de0a6a=""
-      >
-        The course level
-      </div>
-    </label>
-  </div>
+    </div>
+    <div
+      data-css-bf7jp3=""
+    >
+      The course level
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots placeholder as pre-selected item 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
             >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                Three item
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                Two item
-              </span>
-            </button>
+              Three item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              Two item
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots props whitelist title 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
+    <div
+      data-css-1ewie3k=""
+    >
+      Level
+    </div>
+    <div
+      data-css-8u2q7u=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            onClick={[Function]}
+            title="This title should be present"
+          >
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
+            >
+              One item
+            </span>
+            <span
+              data-css-1qy54zb=""
+            />
+          </button>
+          <div
+            data-css-wvt485=""
+          >
+            <div
+              data-css-otejxm=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots whitelist clear 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "color": "#ababab",
+        }
+      }
+    >
+      Value: 
+      two
+    </div>
+    <button
+      onClick={[Function]}
+    >
+      Clear
+    </button>
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
-        data-css-n53zhn=""
+        data-css-1ewie3k=""
       >
-        Level
+        Thing to change
       </div>
       <div
-        data-css-1812rv9=""
+        data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ne3jjf=""
           >
             <button
-              data-css-8bndf1=""
+              data-css-1lq4mos=""
               disabled={false}
-              onBlur={[Function]}
+              onChange={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
-              title="This title should be present"
+              value="two"
             >
               <span
                 aria-hidden={true}
-                data-css-e6fvyw=""
+                data-css-1pnvt9=""
               >
-                One item
+                Three item
               </span>
               <span
-                data-css-5m5yd6=""
-              />
+                data-css-1qy54zb=""
+              >
+                Two item
+              </span>
             </button>
             <div
-              data-css-cstzed=""
+              data-css-wvt485=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"
@@ -2528,123 +2962,129 @@ exports[`Storyshots props whitelist title 1`] = `
 
 exports[`Storyshots whitelist name 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
   >
-    <label
-      data-css-1hniuff=""
-      onKeyDown={[Function]}
+    <div
+      data-css-8u2q7u=""
     >
       <div
-        data-css-1812rv9=""
+        data-css-ctre2o=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ne3jjf=""
         >
-          <div
-            data-css-1r44zeb=""
+          <button
+            data-css-1lq4mos=""
+            disabled={false}
+            name="myFieldNameOfPower"
+            onClick={[Function]}
           >
-            <button
-              data-css-8bndf1=""
-              disabled={false}
-              name="myFieldNameOfPower"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <span
+              aria-hidden={true}
+              data-css-1pnvt9=""
             >
-              <span
-                aria-hidden={true}
-                data-css-e6fvyw=""
-              >
-                I have a form name
-              </span>
-              <span
-                data-css-5m5yd6=""
-              >
-                I have a form name
-              </span>
-            </button>
+              I have a form name
+            </span>
+            <span
+              data-css-1qy54zb=""
+            >
+              I have a form name
+            </span>
+          </button>
+          <div
+            data-css-wvt485=""
+          >
             <div
-              data-css-cstzed=""
+              data-css-otejxm=""
             >
-              <div
-                className="css-otejxm"
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 14L8 10h9z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12.5 14L8 10h9z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </label>
-  </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots whitelist onChange 1`] = `
 <div
-  data-css-claeju=""
->
-  <div
-    style={
-      Object {
-        "padding": "24px",
-      }
+  style={
+    Object {
+      "padding": "24px",
     }
-  >
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "color": "#ababab",
+        }
+      }
+    >
+      Value: 
+      two
+    </div>
     <label
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
       <div
-        data-css-1812rv9=""
+        data-css-1ewie3k=""
+      >
+        Thing to change
+      </div>
+      <div
+        data-css-8u2q7u=""
       >
         <div
-          data-css-1xm24a9=""
+          data-css-ctre2o=""
         >
           <div
-            data-css-1r44zeb=""
+            data-css-ne3jjf=""
           >
             <button
-              data-css-8bndf1=""
+              data-css-1lq4mos=""
               disabled={false}
-              onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
-              onFocus={[Function]}
+              value="two"
             >
               <span
                 aria-hidden={true}
-                data-css-e6fvyw=""
+                data-css-1pnvt9=""
               >
-                Change me
+                Three item
               </span>
               <span
-                data-css-5m5yd6=""
+                data-css-1qy54zb=""
               >
-                Change me
+                Two item
               </span>
             </button>
             <div
-              data-css-cstzed=""
+              data-css-wvt485=""
             >
               <div
-                className="css-otejxm"
+                data-css-otejxm=""
               >
                 <svg
                   aria-label="caret down icon"

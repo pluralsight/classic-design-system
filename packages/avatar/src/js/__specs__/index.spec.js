@@ -1,12 +1,12 @@
 import { URL } from 'url'
-import * as utils from '../index'
-import { fallbackPixel } from '../../vars'
+import * as utils from '../index.js'
+import { fallbackPixel } from '../../vars/index.js'
 
 describe('avatar/utils', () => {
   describe('#getInitials', () => {
     test('empty cases', () => {
-      expect(utils.getInitials(null)).toEqual(undefined)
-      expect(utils.getInitials('')).toEqual(undefined)
+      expect(utils.getInitials(null)).toEqual(':)')
+      expect(utils.getInitials('')).toEqual(':)')
     })
 
     test('should return proper initials', () => {
@@ -16,7 +16,7 @@ describe('avatar/utils', () => {
         PU: ['Peter Miller Ukra', 'Puto', 'Paca Uto']
       }
 
-      for (let initials in cases) {
+      for (const initials in cases) {
         cases[initials].forEach(value => {
           expect(utils.getInitials(value)).toEqual(initials)
         })

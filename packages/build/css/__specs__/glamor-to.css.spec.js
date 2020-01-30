@@ -1,4 +1,4 @@
-import glamorToCss from '../glamor-to-css'
+import glamorToCss from '../glamor-to-css.js'
 
 describe('#glamorToCss', () => {
   it('converts a simple style to flattened css', () => {
@@ -10,7 +10,19 @@ describe('#glamorToCss', () => {
 
     const result = glamorToCss(style)
 
-    expect(result).toEqual('.a{color:black;}')
+    expect(result).toEqual('.a{color:#000}')
+  })
+
+  it('does not strip values from rgba', () => {
+    const style = {
+      '.a': {
+        color: 'rgba(170, 170, 170, 0.24)'
+      }
+    }
+
+    const result = glamorToCss(style)
+
+    expect(result).toEqual('.a{color:rgba(170,170,170,.24)}')
   })
 
   it('converts multiple styles to css', () => {
@@ -25,9 +37,7 @@ describe('#glamorToCss', () => {
 
     const result = glamorToCss(style)
 
-    expect(result).toEqual(
-      '.first-style{color:black;}.second-style{color:green;}'
-    )
+    expect(result).toEqual('.first-style{color:#000}.second-style{color:green}')
   })
 
   it('converts a nested style to flattened css', () => {
@@ -43,7 +53,7 @@ describe('#glamorToCss', () => {
 
     const result = glamorToCss(style)
 
-    expect(result).toEqual('.a{color:black;}.a:hover{color:white;}')
+    expect(result).toEqual('.a{color:#000}.a:hover{color:#fff}')
   })
 
   it('allows unique comma-delimited selectors', () => {
@@ -59,7 +69,7 @@ describe('#glamorToCss', () => {
 
     const result = glamorToCss(style)
 
-    expect(result).toEqual('.a,.b{color:black;}.a:hover,.b:hover{color:white;}')
+    expect(result).toEqual('.a,.b{color:#000}.a:hover,.b:hover{color:#fff}')
   })
 
   it('converts numbers to pixel values', () => {
@@ -71,6 +81,31 @@ describe('#glamorToCss', () => {
 
     const result = glamorToCss(style)
 
-    expect(result).toEqual('.abc{font-size:4px;}')
+    expect(result).toEqual('.abc{font-size:4px}')
+  })
+
+  it('converts keyframes mixed with selectors', () => {
+    expect(
+      glamorToCss({
+        '@keyframes foo__zers': {
+          from: {
+            opacity: 0
+          },
+          to: {
+            opacity: 1
+          }
+        },
+        '.amaze': { zing: 'showman' }
+      })
+    ).toEqual(
+      `@keyframes foo__zers {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}.amaze{zing:showman}`
+    )
   })
 })

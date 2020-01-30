@@ -1,5 +1,6 @@
-import classnames from 'classnames'
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 import {
   Chrome,
@@ -7,9 +8,8 @@ import {
   Content,
   P,
   PageHeading,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
 const increments = [
   { width: 4, label: 'XX-Small', varName: 'psLayoutSpacingXXSmall' },
@@ -21,7 +21,7 @@ const increments = [
   { width: 64, label: 'XX-Large', varName: 'psLayoutSpacingXXLarge' }
 ]
 
-const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+const capitalize = str => str && str.charAt(0).toUpperCase() + str.slice(1)
 
 const Parent = props => (
   <div className="parent">
@@ -35,23 +35,20 @@ const Parent = props => (
     `}</style>
   </div>
 )
+Parent.propTypes = {
+  children: PropTypes.node
+}
 
 const dimension = side =>
   side === 'left' || side === 'right' ? 'width' : 'height'
 
-const renderSingleLine = (props, side, i) => {
-  const className = classnames({
-    line: true,
-    lineSingleSide: props.sides !== 'all',
-    ['line' + capitalize(side)]: true
-  })
+function SingleLine(props) {
+  const className = `line line${capitalize(props.side)}${
+    props.sides !== 'all' ? ' lineSingleSide' : ''
+  }`
 
   return (
-    <div
-      style={{ [dimension(side)]: props.width }}
-      key={i}
-      className={className}
-    >
+    <div style={{ [dimension(props.side)]: props.width }} className={className}>
       <style jsx>{`
         .line {
           position: absolute;
@@ -90,17 +87,31 @@ const renderSingleLine = (props, side, i) => {
     </div>
   )
 }
+SingleLine.propTypes = {
+  side: PropTypes.string,
+  sides: PropTypes.string,
+  width: PropTypes.number
+}
 
-const renderAllLines = props =>
-  ['top', 'right', 'bottom', 'left'].map(renderSingleLine.bind(this, props))
+function AllLines(props) {
+  return ['top', 'right', 'bottom', 'left'].map(side => (
+    <SingleLine {...props} key={side} side={side} />
+  ))
+}
 
-const renderLines = props =>
-  props.sides === 'all'
-    ? renderAllLines(props)
-    : renderSingleLine(props, props.sides)
+function Lines(props) {
+  return props.sides === 'all' ? (
+    <AllLines {...props} />
+  ) : (
+    <SingleLine {...props} />
+  )
+}
+Lines.propTypes = {
+  sides: PropTypes.string
+}
 
-const renderBorder = props =>
-  props.sides === 'all' ? (
+function Border(props) {
+  return props.sides === 'all' ? (
     <div style={{ borderWidth: props.width }} className="border">
       <style jsx>{`
         .border {
@@ -116,9 +127,14 @@ const renderBorder = props =>
       `}</style>
     </div>
   ) : null
+}
+Border.propTypes = {
+  sides: PropTypes.string,
+  width: PropTypes.number
+}
 
-const renderLabel = props =>
-  props.label ? (
+function Label(props) {
+  return props.label ? (
     <div className="label">
       {`${props.width}px - ${props.label}`}
       <style jsx>{`
@@ -131,9 +147,14 @@ const renderLabel = props =>
       `}</style>
     </div>
   ) : null
+}
+Label.propTypes = {
+  label: PropTypes.string,
+  width: PropTypes.number
+}
 
-const renderVar = props =>
-  props.varName ? (
+function Var(props) {
+  return props.varName ? (
     <code className="varName">
       {props.varName}
       <style jsx>{`
@@ -145,15 +166,19 @@ const renderVar = props =>
       `}</style>
     </code>
   ) : null
+}
+Var.propTypes = {
+  varName: PropTypes.string
+}
 
 const Example = props => (
   <div className="root">
     <div className="box">
-      {renderBorder(props)}
-      {renderLines(props)}
+      <Border {...props} />
+      <Lines {...props} />
     </div>
-    {renderLabel(props)}
-    {renderVar(props)}
+    <Label {...props} />
+    <Var {...props} />
     <style jsx>{`
       .root {
         margin: calc(${core.layout.spacingLarge} / 2);
@@ -210,7 +235,7 @@ const IndividualSpacing = props => (
     <div className="example">
       <Spacing.Parent>
         {incrementExamples.map((x, i) => (
-          <Spacing.Example key={i} width={24} sides={x.side} />
+          <Spacing.Example key={i} width={24} side={x.side} />
         ))}
       </Spacing.Parent>
     </div>
@@ -224,7 +249,7 @@ const IndividualSpacing = props => (
   </div>
 )
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content>
       <PageHeading>Spacing</PageHeading>
@@ -245,4 +270,4 @@ export default withServerProps(_ => (
       <IndividualSpacing />
     </Content>
   </Chrome>
-))
+)

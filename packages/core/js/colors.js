@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   white: '#ffffff',
   bone: '#f2f2f2',
   gray01: '#cccccc',

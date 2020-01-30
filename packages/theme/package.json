@@ -1,43 +1,29 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "1.4.1",
+  "version": "4.0.9",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
-  "main": "index.js",
-  "module": "index.js",
+  "keywords": [],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --ignore spec.js --copy-files",
-    "build:watch": "npm run build -- --watch",
+    "build": "run-s build:js build:cjs",
+    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
+    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
+    "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "test": "jest",
-    "test:updateSnapshot": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watchAll"
   },
-  "jest": {
-    "setupFiles": [
-      "raf/polyfill",
-      "<rootDir>/test/setup.js"
-    ]
-  },
-  "keywords": [],
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "hoist-non-react-statics": "^3.3.0",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^3.0.24",
-    "glamor": "^2.20.0",
-    "react": ">=0.15.0 < 17.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.0",
-    "jest": "^23.6.0",
-    "raf": "^3.4.0"
+    "@pluralsight/ps-design-system-normalize": "^3.1.7",
+    "glamor": "^2.20.40",
+    "react": "^16.8.6"
   }
 }

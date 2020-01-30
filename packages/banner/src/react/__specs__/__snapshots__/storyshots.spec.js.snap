@@ -1,14 +1,146 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots color blue 1`] = `
+exports[`Storyshots Button blue 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-13j4h8v=""
+    data-css-ue58aw=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button green 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-q43imj=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button red 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-1bpd8ni=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button yellow 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-12l9wqa=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text with a 
+      <button
+        data-css-8e2uc6=""
+        data-css-mdmyt1=""
+        disabled={false}
+        style={
+          Object {
+            "borderColor": "currentColor",
+            "color": "currentColor",
+          }
+        }
+      >
+        <span
+          data-css-15b13by=""
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots color blue 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-ue58aw=""
+  >
+    <div
+      data-css-s10s6t=""
     >
       blue
     </div>
@@ -18,13 +150,13 @@ exports[`Storyshots color blue 1`] = `
 
 exports[`Storyshots color green 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-g8uz7t=""
+    data-css-q43imj=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       green
     </div>
@@ -34,13 +166,13 @@ exports[`Storyshots color green 1`] = `
 
 exports[`Storyshots color red 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-1j58ngq=""
+    data-css-1bpd8ni=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       red
     </div>
@@ -50,13 +182,13 @@ exports[`Storyshots color red 1`] = `
 
 exports[`Storyshots color yellow 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-jrrxjl=""
+    data-css-12l9wqa=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       yellow
     </div>
@@ -66,31 +198,145 @@ exports[`Storyshots color yellow 1`] = `
 
 exports[`Storyshots onClick displays X 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-13j4h8v=""
+    data-css-ue58aw=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        data-css-otejxm=""
       >
         <svg
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots onClick side by side 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    data-css-ue58aw=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    data-css-q43imj=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    data-css-12l9wqa=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div
+    data-css-1bpd8ni=""
+  >
+    <div
+      data-css-s10s6t=""
+    >
+      this is the text
+    </div>
+    <button
+      data-css-1nptnaw=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-otejxm=""
+      >
+        <svg
+          aria-label="close icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
           />
         </svg>
       </div>
@@ -101,32 +347,31 @@ exports[`Storyshots onClick displays X 1`] = `
 
 exports[`Storyshots onClick w/ long text 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-13j4h8v=""
+    data-css-ue58aw=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text.
        
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        data-css-otejxm=""
       >
         <svg
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
           />
         </svg>
       </div>
@@ -137,13 +382,13 @@ exports[`Storyshots onClick w/ long text 1`] = `
 
 exports[`Storyshots styling child Link component auto-styled 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-13j4h8v=""
+    data-css-ue58aw=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text with an
        
@@ -161,13 +406,13 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
 
 exports[`Storyshots styling child anchor tag auto-styled 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-13j4h8v=""
+    data-css-ue58aw=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text with an 
       <a
@@ -183,13 +428,13 @@ exports[`Storyshots styling child anchor tag auto-styled 1`] = `
 
 exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-jrrxjl=""
+    data-css-12l9wqa=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text with an 
       <a
@@ -203,34 +448,33 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
 </div>
 `;
 
-exports[`Storyshots styling className prop  1`] = `
+exports[`Storyshots styling className prop 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
     className="someClass"
-    data-css-13j4h8v=""
+    data-css-ue58aw=""
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        data-css-otejxm=""
       >
         <svg
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
           />
         </svg>
       </div>
@@ -239,12 +483,12 @@ exports[`Storyshots styling className prop  1`] = `
 </div>
 `;
 
-exports[`Storyshots styling style prop  1`] = `
+exports[`Storyshots styling style prop 1`] = `
 <div
-  data-css-claeju=""
+  data-css-1so76ss=""
 >
   <div
-    data-css-13j4h8v=""
+    data-css-ue58aw=""
     style={
       Object {
         "outline": "3px solid red",
@@ -252,25 +496,24 @@ exports[`Storyshots styling style prop  1`] = `
     }
   >
     <div
-      data-css-1mceaus=""
+      data-css-s10s6t=""
     >
       this is the text
     </div>
     <button
-      data-css-1j8ux48=""
+      data-css-1nptnaw=""
       onClick={[Function]}
     >
       <div
-        className="css-otejxm"
+        data-css-otejxm=""
       >
         <svg
           aria-label="close icon"
           role="img"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+            d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
           />
         </svg>
       </div>

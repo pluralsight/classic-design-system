@@ -1,48 +1,54 @@
-import { mount, shallow } from 'enzyme'
-import Icon from '@pluralsight/ps-design-system-icon/react'
+import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import Button from '../index'
+import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
-test('click on button triggered once', () => {
-  let callCount = 0
-  const onClick = _ => {
-    callCount += 1
-  }
-  const button = shallow(
-    <Button onClick={onClick} icon={<Icon id={Icon.ids.check} />}>
-      Clicks once
-    </Button>
-  )
-  button.simulate('click')
-  expect(callCount).toBe(1)
+import Button from '../index.js'
+
+describe('Button', () => {
+  it('forwards refs', () => {
+    const ref = React.createRef()
+    render(<Button ref={ref}>with ref</Button>)
+
+    expect(ref.current).not.toBeNull()
+  })
+
+  describe('when disabled', () => {
+    const handleClick = jest.fn()
+    let container
+
+    beforeEach(() => {
+      const { container: _container } = render(
+        <Button
+          disabled
+          onClick={handleClick}
+          icon={<CheckIcon data-testid="icon" />}
+        >
+          Can't Be Clicked
+        </Button>
+      )
+
+      container = _container
+    })
+
+    afterEach(() => {
+      handleClick.mockClear()
+    })
+
+    it('does not allow clicks on the button', () => {
+      const button = container.querySelector('button')
+
+      fireEvent.click(button)
+
+      expect(handleClick).not.toHaveBeenCalled()
+    })
+
+    it('does not allow clicks on the icon', () => {
+      const icon = container.querySelector('[data-testid="icon"]')
+
+      fireEvent.click(icon)
+
+      expect(handleClick).not.toHaveBeenCalled()
+    })
+  })
 })
-
-test('click on disabled button with href does not trigger onClick', () => {
-  let callCount = 0
-  const onClick = _ => {
-    callCount += 1
-  }
-  const button = mount(
-    <Button
-      disabled
-      onClick={onClick}
-      href="https://foo.com"
-      icon={<Icon id={Icon.ids.check} />}
-    >
-      Can't Be Clicked
-    </Button>
-  )
-  button.simulate('click')
-
-  expect(callCount).toBe(0)
-})
-
-test('custom innerRef function called', () => {
-  const innerRef = jest.fn()
-  mount(<Button innerRef={innerRef} />)
-  expect(innerRef).toHaveBeenCalled()
-})
-
-// TODO: once enzyme supports event propagation, impl test for clicking icon
-// https://github.com/airbnb/enzyme/blob/master/docs/future.md

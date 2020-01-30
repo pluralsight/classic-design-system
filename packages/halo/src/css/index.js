@@ -1,6 +1,12 @@
-import core from '@pluralsight/ps-design-system-core'
+import { colorsBlue, colorsStatus } from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 export const BASE_CLASSNAME = '.psds-halo'
+
+export const themeClasses = {
+  [themeNames.dark]: `.psds-theme--dark`,
+  [themeNames.light]: `.psds-theme--light`
+}
 
 export default {
   [BASE_CLASSNAME]: {
@@ -14,7 +20,7 @@ export default {
       position: 'absolute',
       borderWidth: '3px',
       borderStyle: 'solid',
-      borderColor: core.colors.blue,
+      borderColor: colorsBlue.base,
       pointerEvents: 'none',
       visibility: 'hidden'
     }
@@ -28,25 +34,25 @@ export default {
   [`${BASE_CLASSNAME}--error`]: {
     '&:after': {
       visibility: 'visible',
-      borderColor: core.colors.red
+      borderColor: colorsStatus.error
     }
   },
 
   [`${BASE_CLASSNAME}--visible`]: {
     '&:after': {
       visibility: 'visible',
-      borderColor: core.colors.blue
+      borderColor: colorsBlue.base
     }
   },
 
   [`${BASE_CLASSNAME}--visible-on-focus`]: {
     '&:focus-within:after, &[focus-within]:after': {
       visibility: 'visible',
-      borderColor: core.colors.blue
+      borderColor: colorsBlue.base
     }
   },
 
-  [`${BASE_CLASSNAME}--gap-size-default${BASE_CLASSNAME}--theme-dark`]: {
+  [`${BASE_CLASSNAME}--gap-size-default${themeClasses[themeNames.dark]}`]: {
     '&:after': {
       top: '-4px',
       bottom: '-4px',
@@ -54,7 +60,7 @@ export default {
       right: '-4px'
     }
   },
-  [`${BASE_CLASSNAME}--gap-size-default${BASE_CLASSNAME}--theme-light`]: {
+  [`${BASE_CLASSNAME}--gap-size-default${themeClasses[themeNames.light]}`]: {
     '&:after': {
       top: '-5px',
       bottom: '-5px',
@@ -62,7 +68,7 @@ export default {
       right: '-5px'
     }
   },
-  [`${BASE_CLASSNAME}--gap-size-small${BASE_CLASSNAME}--theme-dark`]: {
+  [`${BASE_CLASSNAME}--gap-size-small${themeClasses[themeNames.dark]}`]: {
     '&:after': {
       top: '-4px',
       bottom: '-4px',
@@ -70,7 +76,7 @@ export default {
       right: '-4px'
     }
   },
-  [`${BASE_CLASSNAME}--gap-size-small${BASE_CLASSNAME}--theme-light`]: {
+  [`${BASE_CLASSNAME}--gap-size-small${themeClasses[themeNames.light]}`]: {
     '&:after': {
       top: '-2px',
       bottom: '-2px',

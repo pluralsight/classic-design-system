@@ -1,6 +1,8 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
 import * as glamor from 'glamor'
-import { Heading } from '@pluralsight/ps-design-system-text/react'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const styleSize = ({ size }) =>
   ({
@@ -47,6 +49,10 @@ const HeadingComponent = props => (
   </div>
 )
 
+HeadingComponent.propTypes = {
+  children: PropTypes.node,
+  size: PropTypes.string
+}
 HeadingComponent.defaultProps = {
   size: Heading.sizes.large
 }

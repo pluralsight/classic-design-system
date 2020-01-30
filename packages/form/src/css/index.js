@@ -1,9 +1,7 @@
-import core from '@pluralsight/ps-design-system-core'
-import {
-  defaultName as themeDefaultName,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme/vars'
-import { transparentize } from 'polished'
+import { colorsBorder, layout } from '@pluralsight/ps-design-system-core'
+import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+
+import * as vars from '../vars/index.js'
 
 const newStackingContextForFocusRingVisibility = {
   position: 'relative',
@@ -11,40 +9,34 @@ const newStackingContextForFocusRingVisibility = {
 }
 
 export default {
-  // button-row
-
   '.psds-form-button-row': {
     display: 'flex'
   },
+  [`.psds-form-button-row--align-${vars.aligns.right}`]: {
+    justifyContent: 'flex-end'
+  },
   '.psds-form-button-row__button': {
-    marginRight: core.layout.spacingLarge
-  },
-  '.psds-form-button-row__button:last-child': {
-    marginRight: 0
-  },
+    marginRight: layout.spacingLarge,
 
-  // divider
+    '&:last-child': { marginRight: 0 }
+  },
 
   '.psds-form-divider': {
     height: '1px',
     width: '100%',
-    backgroundColor: core.colors.gray04
-    // margin: `${core.layout.spacingXXSmall} 0`
+    backgroundColor: colorsBorder.lowOnDark
   },
   [`.psds-form-divider.psds-theme--${themeNames.light}`]: {
-    backgroundColor: core.colors.gray01
+    backgroundColor: colorsBorder.lowOnLight
   },
-
-  // vertical-layout
 
   '.psds-form-vertical-layout': {
     ...newStackingContextForFocusRingVisibility,
     width: '100%'
   },
   '.psds-form-vertical-layout__child': {
-    marginBottom: core.layout.spacingLarge
-  },
-  '.psds-form-vertical-layout__child:last-child': {
-    marginBottom: 0
+    marginBottom: layout.spacingLarge,
+
+    '&:last-child': { marginBottom: 0 }
   }
 }

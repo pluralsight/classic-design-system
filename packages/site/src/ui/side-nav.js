@@ -1,9 +1,12 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
 import PropTypes from 'prop-types'
+import React from 'react'
+import { withRouter } from 'next/router.js'
 
-import Link from './link'
-import { withHeadings } from './content'
+import * as core from '@pluralsight/ps-design-system-core'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+
+import { withHeadings } from './content.js'
+import Link from './link.js'
 
 const css = {
   linkActiveWidth: '8px',
@@ -21,10 +24,14 @@ const Group = props => (
     `}</style>
   </div>
 )
+Group.propTypes = {
+  children: PropTypes.node
+}
 
 const GroupTitle = props => (
   <div className="groupTitle">
     {props.children}
+
     <style jsx>{`
       .groupTitle {
         margin: 0;
@@ -32,19 +39,26 @@ const GroupTitle = props => (
         font-size: ${core.type.fontSizeXSmall};
         line-height: ${core.type.lineHeightExtra};
         font-weight: ${core.type.fontWeightMedium};
+        text-transform: uppercase;
       }
     `}</style>
   </div>
 )
+GroupTitle.propTypes = {
+  children: PropTypes.node
+}
 
-const InternalLinks = props =>
-  Array.isArray(props.headings) && props.headings.length > 0 ? (
+const InternalLinks = ({ headings = [] }) => {
+  if (headings.length <= 0) return null
+
+  return (
     <div className="links">
-      {props.headings.map(h => (
+      {headings.map(h => (
         <a className="link" href={h.href} key={h.href}>
           {h.label}
         </a>
       ))}
+
       <style jsx>{`
         @keyframes grow {
           100% {
@@ -85,14 +99,18 @@ const InternalLinks = props =>
         }
       `}</style>
     </div>
-  ) : null
+  )
+}
+InternalLinks.propTypes = {
+  headings: PropTypes.array
+}
 
-class NavLink extends React.Component {
+class RouterUnawareNavLink extends React.Component {
   render() {
     const isActive =
       (typeof window !== 'undefined' &&
         window.location.pathname === this.props.href) ||
-      this.context.pathname === this.props.href
+      this.props.router.pathname === this.props.href
     return (
       <div className="navLink">
         <Link href={this.props.href}>
@@ -146,11 +164,22 @@ class NavLink extends React.Component {
     )
   }
 }
-NavLink.contextTypes = {
-  pathname: PropTypes.string
+RouterUnawareNavLink.propTypes = {
+  children: PropTypes.node,
+  headings: PropTypes.arrayOf(PropTypes.object),
+  href: PropTypes.string
 }
+RouterUnawareNavLink.propTypes = {
+  children: PropTypes.node,
+  headings: PropTypes.arrayOf(PropTypes.any),
+  href: PropTypes.string,
+  router: PropTypes.shape({
+    pathname: PropTypes.string
+  })
+}
+const NavLink = withRouter(RouterUnawareNavLink)
 
-const LogoSvg = props => (
+const LogoSvg = _ => (
   <svg
     className="logoSvg"
     viewBox="0 0 32 32"
@@ -192,8 +221,8 @@ const Logo = _ => (
       <span className="box">
         <LogoSvg />
         <h2 className="text">
-          <span className="textCompany">PLURALSIGHT</span>
-          <span className="textTitle">DESIGN SYSTEM</span>
+          <span className="textCompany">Pluralsight</span>
+          <span className="textTitle">Design System</span>
         </h2>
       </span>
     </Link>
@@ -228,12 +257,14 @@ const Logo = _ => (
           font-weight: ${core.type.fontWeightMedium};
           color: ${core.colors.black};
           font-family: ${core.type.fontFamily};
+          text-transform: uppercase;
         }
         .textTitle {
           display: block;
           font-size: 8px;
           color: ${core.colors.gray03};
           font-weight: ${core.type.fontWeightMedium};
+          text-transform: uppercase;
         }
       }
     `}</style>
@@ -243,8 +274,9 @@ const Logo = _ => (
 const Close = props => (
   <div className="close">
     <button className="button" onClick={props.onCloseClick}>
-      <Icon id={Icon.ids.close} />
+      <CloseIcon />
     </button>
+
     <style jsx>{`
       .close {
       }
@@ -274,13 +306,18 @@ const Close = props => (
     `}</style>
   </div>
 )
+Close.propTypes = {
+  onCloseClick: PropTypes.func.isRequired
+}
 
-export default withHeadings(props => (
-  <div className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
+const SideNav = withHeadings(props => (
+  <nav className={`sidenav ${props.isOpen ? 'sidenavOpen' : ''}`}>
     <Close onCloseClick={props.onCloseClick} />
+
     <Logo />
+
     <Group>
-      <GroupTitle>INTRODUCTION</GroupTitle>
+      <GroupTitle>Introduction</GroupTitle>
       <NavLink href="/install">Install</NavLink>
       <NavLink href="/design-assets">Design assets</NavLink>
       <NavLink href="/contribute" headings={props.headings}>
@@ -288,15 +325,27 @@ export default withHeadings(props => (
       </NavLink>
       <NavLink href="/roadmap">Roadmap</NavLink>
     </Group>
+
     <Group>
-      <GroupTitle>CORE</GroupTitle>
+      <GroupTitle>Core</GroupTitle>
       <NavLink href="/core/color">Color</NavLink>
       <NavLink href="/core/motion">Motion</NavLink>
       <NavLink href="/core/spacing">Spacing</NavLink>
       <NavLink href="/core/typography">Typography</NavLink>
     </Group>
+
     <Group>
-      <GroupTitle>COMPONENTS</GroupTitle>
+      <GroupTitle>Patterns</GroupTitle>
+      <NavLink href="/patterns/iconography" headings={props.headings}>
+        Iconography
+      </NavLink>
+      <NavLink href="/patterns/voice-tone" headings={props.headings}>
+        Voice & tone
+      </NavLink>
+    </Group>
+
+    <Group>
+      <GroupTitle>Components</GroupTitle>
       <NavLink href="/components/actionmenu" headings={props.headings}>
         Action Menu
       </NavLink>
@@ -318,6 +367,9 @@ export default withHeadings(props => (
       <NavLink href="/components/card" headings={props.headings}>
         Card
       </NavLink>
+      <NavLink href="/components/carousel" headings={props.headings}>
+        Carousel
+      </NavLink>
       <NavLink href="/components/checkbox" headings={props.headings}>
         Checkbox
       </NavLink>
@@ -326,6 +378,9 @@ export default withHeadings(props => (
       </NavLink>
       <NavLink href="/components/code" headings={props.headings}>
         Code
+      </NavLink>
+      <NavLink href="/components/datawell" headings={props.headings}>
+        Data Well
       </NavLink>
       <NavLink href="/components/datepicker" headings={props.headings}>
         Date Picker
@@ -339,8 +394,14 @@ export default withHeadings(props => (
       <NavLink href="/components/dropdown" headings={props.headings}>
         Dropdown
       </NavLink>
+      <NavLink href="/components/emptystate" headings={props.headings}>
+        Empty State
+      </NavLink>
       <NavLink href="/components/errors" headings={props.headings}>
         Errors
+      </NavLink>
+      <NavLink href="/components/featureflags" headings={props.headings}>
+        Feature Flags
       </NavLink>
       <NavLink href="/components/form" headings={props.headings}>
         Form
@@ -351,12 +412,23 @@ export default withHeadings(props => (
       <NavLink href="/components/layout" headings={props.headings}>
         Layout
       </NavLink>
+      <NavLink href="/components/linearprogress">Linear Progress</NavLink>
       <NavLink href="/components/link">Link</NavLink>
+      <NavLink href="/components/note">Note</NavLink>
+      <NavLink href="/components/position" headings={props.headings}>
+        Position
+      </NavLink>
       <NavLink href="/components/radio" headings={props.headings}>
         Radio
       </NavLink>
       <NavLink href="/components/row" headings={props.headings}>
         Row
+      </NavLink>
+      <NavLink href="/components/searchinput" headings={props.headings}>
+        Search Input
+      </NavLink>
+      <NavLink href="/components/screenreaderonly" headings={props.headings}>
+        Screen Reader Only
       </NavLink>
       <NavLink href="/components/starrating" headings={props.headings}>
         Star Rating
@@ -388,19 +460,24 @@ export default withHeadings(props => (
       <NavLink href="/components/tooltip" headings={props.headings}>
         Tooltip
       </NavLink>
+      <NavLink href="/components/typeahead" headings={props.headings}>
+        Typeahead
+      </NavLink>
+      <NavLink href="/components/verticaltabs" headings={props.headings}>
+        Vertical Tabs
+      </NavLink>
       <NavLink href="/components/viewtoggle" headings={props.headings}>
         View Toggle
       </NavLink>
     </Group>
+
     <Group>
-      <GroupTitle>PATTERNS</GroupTitle>
-      <NavLink href="/patterns/iconography" headings={props.headings}>
-        Iconography
-      </NavLink>
-      <NavLink href="/patterns/voice-tone" headings={props.headings}>
-        Voice & tone
+      <GroupTitle>Utils</GroupTitle>
+      <NavLink href="/utils/icon" headings={props.headings}>
+        Icon CLI
       </NavLink>
     </Group>
+
     <style jsx>{`
       .sidenav {
         position: fixed;
@@ -432,5 +509,11 @@ export default withHeadings(props => (
         }
       }
     `}</style>
-  </div>
+  </nav>
 ))
+
+SideNav.propTypes = {
+  isOpen: PropTypes.bool
+}
+
+export default SideNav

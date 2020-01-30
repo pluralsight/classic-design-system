@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Avatar from '..'
+import Avatar from '../index.js'
 
 const storySizes = storiesOf('Default', module)
 
@@ -17,6 +17,20 @@ Object.values(Avatar.sizes).forEach(size =>
 storySizes.add('light image', () => (
   <Avatar
     alt="light image avatar"
+    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+    name="Jake Trent"
+  />
+))
+storySizes.add('style override', () => (
+  <Avatar
+    style={{ border: '3px solid red' }}
+    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+    name="Jake Trent"
+  />
+))
+storySizes.add('className override', () => (
+  <Avatar
+    className="fakeClassName"
     src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
     name="Jake Trent"
   />
@@ -37,8 +51,9 @@ const names = [
 ]
 
 const storyInitials = storiesOf('Using Initials', module)
-  .add('empty name, no src', () => <Avatar name={''} />)
+  .add('empty name, no src', () => <Avatar name="" />)
   .add('null name, no src', () => <Avatar name={null} />)
+  .add('single string name, no src', () => <Avatar name="x" />)
   .add('error-out image src, with name', () => (
     <Avatar name="Bill Dill" src="https://jaketrent.com/fake.jpg" />
   ))
@@ -70,3 +85,23 @@ storyInitials.add('alpha-order names w/ varied colors', () => (
     <Avatar name="Brian O'Mally" src="https://example.com/image.jpg" />
   </div>
 ))
+
+storiesOf('Image cases', module)
+  .add('tall, thin', () => (
+    <Avatar
+      name="Will Ferrill"
+      src="https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg"
+    />
+  ))
+  .add('flat, long', () => (
+    <Avatar
+      name="Chris Rock"
+      src="https://cdn1.thr.com/sites/default/files/2019/03/chrisrocknaacp.jpg"
+    />
+  ))
+  .add('square', () => (
+    <Avatar
+      name="Jake Trentsky"
+      src="https://gravatar.com/avatar/63a1fa126f541c0f0ecf1d74f7a40640?s=320&r=g"
+    />
+  ))

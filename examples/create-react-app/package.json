@@ -2,32 +2,32 @@
   "name": "create-react-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@pluralsight/ps-design-system-button": "^17.1.10",
-    "@pluralsight/ps-design-system-core": "^5.5.0",
-    "@pluralsight/ps-design-system-icon": "^17.1.1",
-    "@pluralsight/ps-design-system-normalize": "^3.1.21",
-    "@pluralsight/ps-design-system-featureflags": "1.1.9",
-    "@pluralsight/ps-design-system-text": "^15.0.11",
-    "@pluralsight/ps-design-system-theme": "4.0.9",
-    "glamor": "^2.20.40",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-button": "^17.1.10",
+    "@pluralsight/ps-design-system-core": "^5.5.0",
+    "@pluralsight/ps-design-system-featureflags": "1.1.9",
+    "@pluralsight/ps-design-system-icon": "^17.1.1",
+    "@pluralsight/ps-design-system-normalize": "^3.1.21",
+    "@pluralsight/ps-design-system-text": "^15.0.11",
+    "@pluralsight/ps-design-system-theme": "4.0.9",
+    "glamor": "^2.20.40",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
+  }
 }

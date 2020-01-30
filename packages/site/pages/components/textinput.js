@@ -1,29 +1,25 @@
-import core from '@pluralsight/ps-design-system-core'
-import Icon from '@pluralsight/ps-design-system-icon/react'
-import * as Text from '@pluralsight/ps-design-system-text/react'
-import TextInput from '@pluralsight/ps-design-system-textinput/react'
-import Theme from '@pluralsight/ps-design-system-theme/react'
+import { SearchIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+import * as Text from '@pluralsight/ps-design-system-text'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Heading,
   Link,
   P,
   PageHeading,
   PropTypes,
-  SectionHeading,
-  withServerProps
-} from '../../src/ui'
+  SectionHeading
+} from '../../src/ui/index.js'
 
-export default withServerProps(_ => (
+export default _ => (
   <Chrome>
     <Content title="Text Input">
-      <PageHeading beta packageName="textinput">
-        Text Input
-      </PageHeading>
+      <PageHeading packageName="textinput">Text Input</PageHeading>
 
       <P>Install the component dependency:</P>
       <Code language="bash">
@@ -32,7 +28,7 @@ export default withServerProps(_ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import TextInput from '@pluralsight/ps-design-system-textinput/react'
+        import TextInput from '@pluralsight/ps-design-system-textinput'
       </Code>
 
       <PropTypes
@@ -62,7 +58,7 @@ export default withServerProps(_ => (
           ]),
           PropTypes.row([
             'icon',
-            <code>Icon</code>,
+            <code>*Icon</code>,
             null,
             null,
             'Icon component'
@@ -77,13 +73,6 @@ export default withServerProps(_ => (
             </span>
           ]),
           PropTypes.row([
-            'innerRef',
-            'DOM element => ()',
-            null,
-            null,
-            'input field react ref callback'
-          ]),
-          PropTypes.row([
             'label',
             'string',
             null,
@@ -96,6 +85,22 @@ export default withServerProps(_ => (
             null,
             null,
             'in-field usage hint'
+          ]),
+          PropTypes.row([
+            'ref',
+            'Ref || { field: Ref,input: Ref, }',
+            null,
+            null,
+            'refs to access underlying elements'
+          ]),
+          PropTypes.row([
+            'size',
+            PropTypes.union(TextInput.sizes),
+            null,
+            <code>medium</code>,
+            <span>
+              horizontal icon placement (from <code>TextInput.sizes</code>)
+            </span>
           ]),
           PropTypes.row([
             'subLabel',
@@ -140,14 +145,14 @@ export default withServerProps(_ => (
       <Example.React
         orient="vertical"
         themeToggle
-        includes={{ TextInput, Icon }}
+        includes={{ TextInput, SearchIcon }}
         codes={[
           `<TextInput
-  icon={<Icon id={Icon.ids.search} />}
+  icon={<SearchIcon />}
   placeholder="Search"
 />`,
           `<TextInput
-  icon={<Icon id={Icon.ids.search} />}
+  icon={<SearchIcon />}
   iconAlign={TextInput.iconAligns.right}
   placeholder="Search"
 />`
@@ -156,19 +161,19 @@ export default withServerProps(_ => (
 
       <SectionHeading>Appearance</SectionHeading>
       <P>
-        When using the <Text.Code>dark</Text.Code> theme, a{' '}
-        <Text.Code>subtle</Text.Code> appearance is available.{' '}
+        For a more subtle look, use <Text.Code>subtle</Text.Code> appearance. So
+        subtle.
       </P>
       <Example.React
         orient="vertical"
-        includes={{ TextInput, Theme }}
+        includes={{ TextInput, Theme, SearchIcon }}
+        themeToggle
         codes={[
-          `<Theme name={Theme.names.dark}>
-  <TextInput
-    appearance={TextInput.appearances.subtle}
-    icon={<Icon id={Icon.ids.search} />}
-    placeholder="Search" />
-</Theme>`
+          `<TextInput
+  appearance={TextInput.appearances.subtle}
+  icon={<SearchIcon />}
+  placeholder="Search"
+/>`
         ]}
       />
 
@@ -193,6 +198,28 @@ export default withServerProps(_ => (
           `<TextInput error label="First name" subLabel="Field is required" />`
         ]}
       />
+      <SectionHeading>Size</SectionHeading>
+      <P>
+        The small text input is ideal for usage within table rows otherwise use
+        the default, medium size text input, in forms for example.
+      </P>
+      <Example.React
+        orient="vertical"
+        outputStyle={{ paddingBottom: '116px' }}
+        themeToggle
+        includes={{ TextInput }}
+        codes={[
+          `
+<TextInput
+placeholder="medium text input"
+/>`,
+          `<TextInput
+placeholder="small text input"
+size={TextInput.sizes.small}
+/>
+          `
+        ]}
+      />
     </Content>
   </Chrome>
-))
+)

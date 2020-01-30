@@ -1,4 +1,5 @@
-import core from '@pluralsight/ps-design-system-core'
+/* eslint-disable react/jsx-handler-names */
+import * as core from '@pluralsight/ps-design-system-core'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -8,7 +9,7 @@ import {
   MobileMenuBar,
   OpenIssuePrompt,
   SideNav
-} from './index'
+} from './index.js'
 
 class Chrome extends React.Component {
   constructor(props) {

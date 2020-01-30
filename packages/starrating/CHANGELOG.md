@@ -3,6 +3,418 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.19...@pluralsight/ps-design-system-starrating@6.0.20) (2020-01-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.18...@pluralsight/ps-design-system-starrating@6.0.19) (2020-01-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.17...@pluralsight/ps-design-system-starrating@6.0.18) (2020-01-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.16...@pluralsight/ps-design-system-starrating@6.0.17) (2020-01-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.14...@pluralsight/ps-design-system-starrating@6.0.16) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.12...@pluralsight/ps-design-system-starrating@6.0.14) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.10...@pluralsight/ps-design-system-starrating@6.0.12) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.9...@pluralsight/ps-design-system-starrating@6.0.10) (2020-01-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.8...@pluralsight/ps-design-system-starrating@6.0.9) (2020-01-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.7...@pluralsight/ps-design-system-starrating@6.0.8) (2020-01-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.6...@pluralsight/ps-design-system-starrating@6.0.7) (2020-01-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.4...@pluralsight/ps-design-system-starrating@6.0.5) (2019-12-19)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.3...@pluralsight/ps-design-system-starrating@6.0.4) (2019-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.2...@pluralsight/ps-design-system-starrating@6.0.3) (2019-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.1...@pluralsight/ps-design-system-starrating@6.0.2) (2019-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@6.0.0...@pluralsight/ps-design-system-starrating@6.0.1) (2019-12-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@5.0.1...@pluralsight/ps-design-system-starrating@6.0.0) (2019-12-02)
+
+
+### Features
+
+* **icon:** named icon exports and cli util ([15e1e08](https://github.com/pluralsight/design-system/commit/15e1e08a8f04ac6a0aa2bf3cf78efeb412cd6dd6))
+
+
+### BREAKING CHANGES
+
+* **icon:** Icons must be refactored to used Named exports inatad of id prop. Please see docs for example
+
+
+
+
+
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@5.0.0...@pluralsight/ps-design-system-starrating@5.0.1) (2019-11-06)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.5...@pluralsight/ps-design-system-starrating@5.0.0) (2019-11-04)
+
+
+### Code Refactoring
+
+* **core:** esm refactor ([02d5928](https://github.com/pluralsight/design-system/commit/02d5928))
+* **starrating:** esm export refactor ([a319ccf](https://github.com/pluralsight/design-system/commit/a319ccf))
+* **theme:** esm export refactor ([dee9f11](https://github.com/pluralsight/design-system/commit/dee9f11))
+
+
+### BREAKING CHANGES
+
+* **starrating:** import pattern
+* **core:** import patterns
+* **theme:** new import pattern
+
+
+
+
+
+## [4.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.4...@pluralsight/ps-design-system-starrating@4.0.5) (2019-10-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [4.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.3...@pluralsight/ps-design-system-starrating@4.0.4) (2019-10-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [4.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.2...@pluralsight/ps-design-system-starrating@4.0.3) (2019-10-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.1...@pluralsight/ps-design-system-starrating@4.0.2) (2019-10-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@4.0.0...@pluralsight/ps-design-system-starrating@4.0.1) (2019-09-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@3.0.0...@pluralsight/ps-design-system-starrating@4.0.0) (2019-08-28)
+
+
+### Features
+
+* **starrating:** support React.forwardRef ([3b3a698](https://github.com/pluralsight/design-system/commit/3b3a698))
+
+
+### BREAKING CHANGES
+
+* **starrating:** Require react 16.9 as a peer dependency
+* **starrating:** Support React.forwardRef
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.12...@pluralsight/ps-design-system-starrating@3.0.0) (2019-08-09)
+
+
+### Build System
+
+* **starrating:** move theme package to peerDeps ([3c3cee0](https://github.com/pluralsight/design-system/commit/3c3cee0))
+
+
+### BREAKING CHANGES
+
+* **starrating:** @pluralsight/ps-design-system-theme is now a peerDependency and
+must be installed separately
+
+
+
+
+
+## [2.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.11...@pluralsight/ps-design-system-starrating@2.0.12) (2019-07-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.10...@pluralsight/ps-design-system-starrating@2.0.11) (2019-07-30)
+
+
+### Bug Fixes
+
+* **starrating:** add glamor as a peerDep ([d654790](https://github.com/pluralsight/design-system/commit/d654790))
+
+
+
+
+
+## [2.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.9...@pluralsight/ps-design-system-starrating@2.0.10) (2019-07-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.8...@pluralsight/ps-design-system-starrating@2.0.9) (2019-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.7...@pluralsight/ps-design-system-starrating@2.0.8) (2019-05-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.6...@pluralsight/ps-design-system-starrating@2.0.7) (2019-05-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.5...@pluralsight/ps-design-system-starrating@2.0.6) (2019-05-01)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.4...@pluralsight/ps-design-system-starrating@2.0.5) (2019-04-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.3...@pluralsight/ps-design-system-starrating@2.0.4) (2019-04-23)
+
+
+### Bug Fixes
+
+* dependency range ([e6e59f9](https://github.com/pluralsight/design-system/commit/e6e59f9))
+
+
+
+
+
+## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.2...@pluralsight/ps-design-system-starrating@2.0.3) (2019-04-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.1...@pluralsight/ps-design-system-starrating@2.0.2) (2019-03-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@2.0.0...@pluralsight/ps-design-system-starrating@2.0.1) (2019-03-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.8...@pluralsight/ps-design-system-starrating@2.0.0) (2019-03-04)
+
+
+### Features
+
+* **theme:** forward refs ([5946706](https://github.com/pluralsight/design-system/commit/5946706))
+
+
+### BREAKING CHANGES
+
+* **theme:** bump to react 16.3 to use forwardrefs api
+
+
+
+
+
+## [1.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.7...@pluralsight/ps-design-system-starrating@1.2.8) (2019-02-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [1.2.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.6...@pluralsight/ps-design-system-starrating@1.2.7) (2019-01-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [1.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.5...@pluralsight/ps-design-system-starrating@1.2.6) (2018-12-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [1.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.3...@pluralsight/ps-design-system-starrating@1.2.5) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [1.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.3...@pluralsight/ps-design-system-starrating@1.2.4) (2018-12-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [1.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.2...@pluralsight/ps-design-system-starrating@1.2.3) (2018-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
 ## [1.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@1.2.1...@pluralsight/ps-design-system-starrating@1.2.2) (2018-12-10)
 
 

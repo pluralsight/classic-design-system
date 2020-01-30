@@ -1,7 +1,9 @@
-import core from '@pluralsight/ps-design-system-core'
+import * as core from '@pluralsight/ps-design-system-core'
+import PropTypes from 'prop-types'
+import React from 'react'
 
-import Heading from './heading'
-import { addHeading } from './content'
+import Heading from './heading.js'
+import { addHeading } from './content.js'
 
 const formatId = href =>
   href
@@ -10,19 +12,27 @@ const formatId = href =>
     .join('-')
 const formatHref = href => '#' + formatId(href)
 
-export default class extends React.Component {
+export default class SectionHeading extends React.Component {
+  constructor(props) {
+    super(props)
+    this.el = React.createRef()
+  }
+
   componentDidMount() {
     const href = formatHref(this.props.children)
     addHeading(this.props.children, href)
     if (
+      // eslint-disable-next-line eqeqeq
       typeof window != 'undefined' &&
       window.location.hash === href &&
-      this.el
+      this.el &&
+      this.el.current
     ) {
-      this.el.focus()
-      setTimeout(_ => this.el.scrollIntoView(), 1)
+      this.el.current.focus()
+      setTimeout(_ => this.el.current.scrollIntoView(), 1)
     }
   }
+
   render() {
     return (
       <div>
@@ -32,15 +42,20 @@ export default class extends React.Component {
               id={formatId(this.props.children)}
               className="link"
               href={formatHref(this.props.children)}
-              ref={el => (this.el = el)}
+              ref={this.el}
             >
+              {this.props.notice && (
+                <span className="notice">{this.props.notice}</span>
+              )}
               {this.props.children}
             </a>
           </h2>
         </Heading>
         <style jsx>{`
           .link {
+            align-items: center;
             color: currentColor;
+            display: flex;
             text-decoration: none;
           }
           .link:focus {
@@ -48,8 +63,17 @@ export default class extends React.Component {
             color: ${core.colors.white};
             outline: none;
           }
+          .notice {
+            align-items: center;
+            display: flex;
+            margin-right: ${core.layout.spacingMedium};
+          }
         `}</style>
       </div>
     )
   }
+}
+SectionHeading.propTypes = {
+  children: PropTypes.node,
+  notice: PropTypes.node
 }
