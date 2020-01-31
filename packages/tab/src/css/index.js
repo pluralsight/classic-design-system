@@ -1,38 +1,47 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  colorsBorder,
+  colorsPrimaryAction,
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
 const listItemText = {
-  fontWeight: core.type.fontWeightMedium
+  fontWeight: type.fontWeightMedium
 }
 const listItemTextLightHover = {
-  color: core.colorsTextIcon.highOnLight
+  color: colorsTextIcon.highOnLight
 }
 const listItemTextDefaultHover = {
-  color: core.colorsTextIcon.highOnDark
+  color: colorsTextIcon.highOnDark
 }
 const listItemTextLightActive = {
   ...listItemText,
-  color: core.colorsTextIcon.highOnLight
+  color: colorsTextIcon.highOnLight
 }
 const listItemTextDefaultActive = {
   ...listItemText,
-  color: core.colorsTextIcon.highOnDark
+  color: colorsTextIcon.highOnDark
 }
 
 const listItemBarHover = {
-  height: core.layout.spacingXXSmall,
+  height: layout.spacingXXSmall,
   opacity: 1
 }
 const listItemBarActive = {
-  backgroundColor: core.colorsPrimaryAction.background
+  backgroundColor: colorsPrimaryAction.background
 }
 const listItemBarActiveActive = {
   ...listItemBarActive,
   opacity: 1,
-  height: core.layout.spacingXXSmall
+  height: layout.spacingXXSmall
 }
 
 export default {
@@ -47,10 +56,10 @@ export default {
     }
   },
   [`.psds-tab__list.psds-theme--${themeNames.light}`]: {
-    borderBottom: `1px solid ${core.colorsBorder.lowOnLight}`
+    borderBottom: `1px solid ${colorsBorder.lowOnLight}`
   },
   [`.psds-tab__list.psds-theme--${themeDefaultName}`]: {
-    borderBottom: `1px solid ${core.colorsBorder.lowOnDark}`
+    borderBottom: `1px solid ${colorsBorder.lowOnDark}`
   },
 
   '.psds-tab__slider': {
@@ -60,7 +69,7 @@ export default {
     display: 'flex',
     height: '64px',
     transform: 'translateX(0)',
-    transition: `transform ${core.motion.speedFast} ease-in-out`
+    transition: `transform ${motion.speedFast} ease-in-out`
   },
 
   '.psds-tab__overflow-button': {
@@ -70,7 +79,7 @@ export default {
     alignItems: 'center',
     height: 'calc(100% + 1px)',
     width: '64px',
-    color: core.colorsTextIcon.highOnLight,
+    color: colorsTextIcon.highOnLight,
     border: 0,
     zIndex: 1,
     cursor: 'pointer',
@@ -87,21 +96,17 @@ export default {
   '.psds-tab__overflow-button--left': {
     left: 0,
     justifyContent: 'flex-start',
-    background: `linear-gradient(to left, transparent, ${
-      core.colorsBackgroundDark[1]
-    } 50%)`,
-    paddingLeft: core.layout.spacingMedium
+    background: `linear-gradient(to left, transparent, ${colorsBackgroundDark[1]} 50%)`,
+    paddingLeft: layout.spacingMedium
   },
   '.psds-tab__overflow-button--right': {
     right: 0,
     justifyContent: 'flex-end',
-    background: `linear-gradient(to right, transparent, ${
-      core.colorsBackgroundDark[1]
-    } 50%)`,
-    paddingRight: core.layout.spacingMedium
+    background: `linear-gradient(to right, transparent, ${colorsBackgroundDark[1]} 50%)`,
+    paddingRight: layout.spacingMedium
   },
   [`.psds-tab__overflow-button.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.highOnDark,
+    color: colorsTextIcon.highOnDark,
 
     // __icon
     '& > div': {
@@ -112,14 +117,10 @@ export default {
     }
   },
   [`.psds-tab__overflow-button--left.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to left, transparent, ${
-      core.colorsBackgroundLight[3]
-    } 50%)`
+    background: `linear-gradient(to left, transparent, ${colorsBackgroundLight[3]} 50%)`
   },
   [`.psds-tab__overflow-button--right.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to right, transparent, ${
-      core.colorsBackgroundLight[3]
-    } 50%)`
+    background: `linear-gradient(to right, transparent, ${colorsBackgroundLight[3]} 50%)`
   },
 
   '.psds-tab__overflow-button__icon': {
@@ -129,7 +130,7 @@ export default {
     height: '32px',
     width: '32px',
     borderRadius: '50%',
-    transition: `all ${core.motion.speedFast} ease-in-out`
+    transition: `all ${motion.speedFast} ease-in-out`
   },
 
   // __list-item
@@ -151,16 +152,16 @@ export default {
     // __bar
     '&:hover span, &:focus span': {
       ...listItemBarHover,
-      backgroundColor: core.colorsBorder.highOnDark
+      backgroundColor: colorsBorder.highOnDark
     },
     '&:active span': listItemBarActive
   },
   [`.psds-tab__list-item.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.lowOnLight,
+    color: colorsTextIcon.lowOnLight,
     // __bar
     '&:hover span, &:focus span': {
       ...listItemBarHover,
-      backgroundColor: core.colorsBorder.highOnLight
+      backgroundColor: colorsBorder.highOnLight
     },
     '&:active span': listItemBarActive,
     // __text
@@ -168,7 +169,7 @@ export default {
     '&:active': listItemTextLightActive
   },
   [`.psds-tab__list-item.psds-theme--${themeDefaultName}`]: {
-    color: core.colorsTextIcon.lowOnDark,
+    color: colorsTextIcon.lowOnDark,
     // __text
     '&:hover div, &:focus div': listItemTextDefaultHover,
     '&:active': listItemTextDefaultActive
@@ -192,9 +193,9 @@ export default {
     display: 'flex',
     alignItems: 'center',
     height: '100%',
-    fontWeight: core.type.fontWeightBook,
-    padding: `0 0 ${core.layout.spacingXXSmall} 0`,
-    transition: `color ${core.motion.speedXFast} linear`,
+    fontWeight: type.fontWeightBook,
+    padding: `0 0 ${layout.spacingXXSmall} 0`,
+    transition: `color ${motion.speedXFast} linear`,
     '&:focus': {
       outline: 'none'
     }
@@ -216,6 +217,6 @@ export default {
     display: 'block',
     height: 0,
     opacity: 0,
-    transition: `height ${core.motion.speedNormal} ease-in-out, opacity ${core.motion.speedNormal} ease-in-out`
+    transition: `height ${motion.speedNormal} ease-in-out, opacity ${motion.speedNormal} ease-in-out`
   }
 }

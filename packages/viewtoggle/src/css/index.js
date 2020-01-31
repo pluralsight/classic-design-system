@@ -1,4 +1,12 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundUtility,
+  colorsBorder,
+  colorsTextIcon,
+  colorsWhite,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index.js'
@@ -12,12 +20,12 @@ const option = {
   whiteSpace: 'nowrap',
   lineHeight: `calc(${vars.style.innerHeight} - 1px)`,
   fontSize: '10px',
-  fontWeight: core.type.fontWeightMedium,
-  padding: `0 ${core.layout.spacingSmall}`,
+  fontWeight: type.fontWeightMedium,
+  padding: `0 ${layout.spacingSmall}`,
   border: 'none',
   borderRadius: `calc(${vars.style.innerHeight} / 2)`,
   cursor: 'pointer',
-  transition: `all ${core.motion.speedNormal}`
+  transition: `all ${motion.speedNormal}`
 }
 
 export default {
@@ -27,13 +35,13 @@ export default {
     margin: 0,
     padding: '2px 3px',
     height: vars.style.outerHeight,
-    background: core.colorsBackgroundUtility[25],
-    border: `1px solid ${core.colorsBorder.lowOnDark}`,
+    background: colorsBackgroundUtility[25],
+    border: `1px solid ${colorsBorder.lowOnDark}`,
     borderRadius: `calc(${vars.style.outerHeight} / 2)`,
     overflow: 'hidden'
   },
   [`.psds-viewtoggle.psds-theme--${themeNames.light}`]: {
-    borderColor: core.colorsBorder.lowOnLight
+    borderColor: colorsBorder.lowOnLight
   },
 
   // __option
@@ -41,13 +49,13 @@ export default {
     ...option,
     position: 'relative',
     background: 'none',
-    color: core.colorsTextIcon.highOnDark
+    color: colorsTextIcon.highOnDark
   },
   [`.psds-viewtoggle__option.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
   '.psds-viewtoggle__option--active': {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
 
   // __option-bg
@@ -55,10 +63,10 @@ export default {
     ...option,
     position: 'absolute',
     top: '1px',
-    background: core.colors.white
+    background: colorsWhite
   },
   [`.psds-viewtoggle__option-bg.psds-theme--${themeNames.light}`]: {
-    border: `1px solid ${core.colorsBorder.lowOnLight}`
+    border: `1px solid ${colorsBorder.lowOnLight}`
   },
 
   // __option-bg__spacer

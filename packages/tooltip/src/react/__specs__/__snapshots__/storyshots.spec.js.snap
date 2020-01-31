@@ -32,7 +32,7 @@ exports[`Storyshots appearance basic 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
     >
       Some text
     </div>
@@ -88,7 +88,7 @@ exports[`Storyshots onClose basic 1`] = `
     }
   >
     <div
-      data-css-9n15zz=""
+      data-css-77hfnq=""
     >
       <button
         aria-label="Close tooltip"
@@ -124,7 +124,7 @@ exports[`Storyshots onClose short text 1`] = `
     }
   >
     <div
-      data-css-9n15zz=""
+      data-css-77hfnq=""
     >
       <button
         aria-label="Close tooltip"
@@ -160,7 +160,7 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-9n15zz=""
+      data-css-77hfnq=""
     >
       <button
         aria-label="Close tooltip"
@@ -181,7 +181,7 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
       Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
       <div
         aria-hidden={true}
-        data-css-1ojgf6e=""
+        data-css-18a10xy=""
       />
     </div>
   </div>
@@ -344,12 +344,12 @@ exports[`Storyshots tailPosition basic bottomCenter 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
     >
       Some text
       <div
         aria-hidden={true}
-        data-css-1lnac5l=""
+        data-css-l3wv5t=""
       />
     </div>
   </div>
@@ -368,12 +368,12 @@ exports[`Storyshots tailPosition basic bottomLeft 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
     >
       Some text
       <div
         aria-hidden={true}
-        data-css-3q3si=""
+        data-css-1k9wbso=""
       />
     </div>
   </div>
@@ -392,12 +392,12 @@ exports[`Storyshots tailPosition basic bottomRight 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
     >
       Some text
       <div
         aria-hidden={true}
-        data-css-3pxnq4=""
+        data-css-12lma4r=""
       />
     </div>
   </div>
@@ -416,12 +416,12 @@ exports[`Storyshots tailPosition basic topCenter 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
     >
       Some text
       <div
         aria-hidden={true}
-        data-css-148few3=""
+        data-css-oyhebf=""
       />
     </div>
   </div>
@@ -440,12 +440,12 @@ exports[`Storyshots tailPosition basic topLeft 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
     >
       Some text
       <div
         aria-hidden={true}
-        data-css-g2irhy=""
+        data-css-13sxmbg=""
       />
     </div>
   </div>
@@ -464,12 +464,12 @@ exports[`Storyshots tailPosition basic topRight 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
     >
       Some text
       <div
         aria-hidden={true}
-        data-css-1ojgf6e=""
+        data-css-18a10xy=""
       />
     </div>
   </div>

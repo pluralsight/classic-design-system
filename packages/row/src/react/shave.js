@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { useEffect, useRef, useCallback } from 'react'
 import shave from 'shave'
 
-import * as core from '@pluralsight/ps-design-system-core'
+import { type } from '@pluralsight/ps-design-system-core'
 
 const reset = (children, current) => {
   if (current) {
@@ -31,7 +31,7 @@ const Shave = ({ children, lineHeight, lines, character, ...rest }) => {
 
 Shave.defaultProps = {
   character: '&hellip;',
-  lineHeight: parseInt(core.type.lineHeightStandard, 10),
+  lineHeight: parseInt(type.lineHeightStandard, 10),
   lines: 3
 }
 

@@ -2,7 +2,15 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBorder,
+  colorsBackgroundUtility,
+  colorsPrimaryAction,
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 
 const resetButton = {
   background: 'transparent',
@@ -35,21 +43,21 @@ export default {
   '.psds-verticaltabs': {
     height: '100%',
     overflowY: 'auto',
-    padding: `${core.layout.spacingMedium} 0`,
+    padding: `${layout.spacingMedium} 0`,
     listStyle: 'none',
     margin: 0
   },
 
   '.psds-verticaltabs__divider': {
-    margin: `${core.layout.spacingMedium} 0`,
+    margin: `${layout.spacingMedium} 0`,
     borderWidth: '1px 0 0 0',
     borderStyle: 'solid'
   },
   [`.psds-verticaltabs__divider.psds-theme--${themeNames.light}`]: {
-    borderColor: core.colorsBorder.lowOnLight
+    borderColor: colorsBorder.lowOnLight
   },
   [`.psds-verticaltabs__divider.psds-theme--${themeDefaultName}`]: {
-    borderColor: core.colorsBorder.lowOnDark
+    borderColor: colorsBorder.lowOnDark
   },
 
   '.psds-verticaltabs__list': {
@@ -59,7 +67,7 @@ export default {
   },
   '.psds-verticaltabs__list--collapsible': {
     overflow: 'hidden',
-    transition: `height ${core.motion.speedNormal}`,
+    transition: `height ${motion.speedNormal}`,
     visibility: 'hidden'
   },
 
@@ -77,38 +85,38 @@ export default {
     }
   },
   [`.psds-verticaltabs__item.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.lowOnLight,
+    color: colorsTextIcon.lowOnLight,
 
     '& > a, & > button': {
       cursor: 'pointer',
 
       '&:focus, &:hover': {
-        backgroundColor: core.colorsBackgroundUtility[25],
-        color: core.colorsTextIcon.highOnLight
+        backgroundColor: colorsBackgroundUtility[25],
+        color: colorsTextIcon.highOnLight
       }
     }
   },
   [`.psds-verticaltabs__item.psds-theme--${themeDefaultName}`]: {
-    color: core.colorsTextIcon.lowOnDark,
+    color: colorsTextIcon.lowOnDark,
 
     '& > a, & > button': {
       cursor: 'pointer',
 
       '&:focus, &:hover': {
-        backgroundColor: core.colorsBackgroundUtility[25],
-        color: core.colorsTextIcon.highOnDark
+        backgroundColor: colorsBackgroundUtility[25],
+        color: colorsTextIcon.highOnDark
       }
     }
   },
 
   '.psds-verticaltabs__item__icon': {
     flexShrink: 0,
-    marginRight: core.layout.spacingSmall
+    marginRight: layout.spacingSmall
   },
 
   '.psds-verticaltabs__tier1': {
-    fontSize: core.type.fontSizeSmall,
-    fontWeight: core.type.fontWeightMedium,
+    fontSize: type.fontSizeSmall,
+    fontWeight: type.fontWeightMedium,
     height: '40px',
 
     '&:before': {
@@ -123,29 +131,29 @@ export default {
     },
 
     '& > *': {
-      padding: `${core.layout.spacingXSmall} ${core.layout.spacingLarge}`
+      padding: `${layout.spacingXSmall} ${layout.spacingLarge}`
     },
 
     '&[data-active]': {
       '&:before': {
-        height: `calc(100% - ${core.layout.spacingXSmall})`,
-        transition: `height ${core.motion.speedNormal} ease-out`
+        height: `calc(100% - ${layout.spacingXSmall})`,
+        transition: `height ${motion.speedNormal} ease-out`
       }
     }
   },
   [`.psds-verticaltabs__tier1.psds-theme--${themeNames.light}`]: {
-    '&:before': { background: core.colorsPrimaryAction.background },
-    '&[data-active]': { color: core.colorsTextIcon.highOnLight }
+    '&:before': { background: colorsPrimaryAction.background },
+    '&[data-active]': { color: colorsTextIcon.highOnLight }
   },
   [`.psds-verticaltabs__tier1.psds-theme--${themeDefaultName}`]: {
-    '&:before': { background: core.colorsPrimaryAction.background },
-    '&[data-active]': { color: core.colorsTextIcon.highOnDark }
+    '&:before': { background: colorsPrimaryAction.background },
+    '&[data-active]': { color: colorsTextIcon.highOnDark }
   },
 
   '.psds-verticaltabs__tier1__header': {
     alignItems: 'center',
     display: 'flex',
-    transition: `color ${core.motion.speedXFast} linear`,
+    transition: `color ${motion.speedXFast} linear`,
     width: '100%',
 
     '& > span': { ...truncate }
@@ -162,46 +170,46 @@ export default {
       position: 'absolute',
       top: '50%',
       transform: 'translateY(-50%)',
-      transition: `height ${core.motion.speedXFast} linear`,
+      transition: `height ${motion.speedXFast} linear`,
       width: '1px'
     },
 
     '& > *': {
       ...truncate,
-      fontSize: core.type.fontSizeXSmall,
-      fontWeight: core.type.fontWeightBook,
+      fontSize: type.fontSizeXSmall,
+      fontWeight: type.fontWeightBook,
       marginLeft: '37px',
       minHeight: '32px',
-      padding: `${core.layout.spacingXSmall} ${core.layout.spacingLarge}`,
+      padding: `${layout.spacingXSmall} ${layout.spacingLarge}`,
       textAlign: 'left'
     }
   },
   [`.psds-verticaltabs__tier2.psds-theme--${themeNames.light}`]: {
-    '&:before': { background: core.colorsBorder.lowOnLight },
+    '&:before': { background: colorsBorder.lowOnLight },
     '&[data-active]': {
-      color: core.colorsTextIcon.highOnLight,
+      color: colorsTextIcon.highOnLight,
 
-      '&:before': { background: core.colorsPrimaryAction.background }
+      '&:before': { background: colorsPrimaryAction.background }
     }
   },
   [`.psds-verticaltabs__tier2.psds-theme--${themeDefaultName}`]: {
-    '&:before': { background: core.colorsBorder.lowOnDark },
+    '&:before': { background: colorsBorder.lowOnDark },
 
     '&[data-active]': {
-      color: core.colorsTextIcon.highOnDark,
-      '&:before': { background: core.colorsPrimaryAction.background }
+      color: colorsTextIcon.highOnDark,
+      '&:before': { background: colorsPrimaryAction.background }
     }
   },
 
   '.psds-verticaltabs__tier2__header': {
-    transition: `color ${core.motion.speedXFast} ease-out`
+    transition: `color ${motion.speedXFast} ease-out`
   },
 
   '.psds-verticaltabs__group__header': {
     alignItems: 'center',
     display: 'flex',
     fontSize: '11px',
-    fontWeight: core.type.fontWeightBold,
+    fontWeight: type.fontWeightBold,
     textTransform: 'uppercase',
 
     '& > a, & > button, & > div': {
@@ -209,7 +217,7 @@ export default {
       display: 'flex',
       height: '100%',
       justifyContent: 'space-between',
-      padding: `${core.layout.spacingSmall} ${core.layout.spacingLarge}`,
+      padding: `${layout.spacingSmall} ${layout.spacingLarge}`,
       textAlign: 'left',
       textTransform: 'inherit',
       width: '100%'
@@ -217,10 +225,10 @@ export default {
   },
   '.psds-verticaltabs__group__header__inner': {},
   [`.psds-verticaltabs__group__header.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.lowOnLight
+    color: colorsTextIcon.lowOnLight
   },
   [`.psds-verticaltabs__group__header.psds-theme--${themeDefaultName}`]: {
-    color: core.colorsTextIcon.lowOnDark
+    color: colorsTextIcon.lowOnDark
   },
 
   '.psds-verticaltabs__header__label': {
@@ -237,7 +245,7 @@ export default {
     flexShrink: 0,
     flexGrow: 0,
     transform: 'translateX(10px) rotateZ(180deg)',
-    transition: `transform ${core.motion.speedNormal} linear`
+    transition: `transform ${motion.speedNormal} linear`
   },
 
   '.psds-verticaltabs__header__label__icon--collapsed': {
@@ -248,7 +256,7 @@ export default {
 
   '.psds-verticaltabs__group__collapsible-list': {
     overflow: 'hidden',
-    transition: `height ${core.motion.speedNormal}`,
+    transition: `height ${motion.speedNormal}`,
     visibility: 'hidden'
   },
 
@@ -256,7 +264,7 @@ export default {
     flexShrink: 0,
     flexGrow: 0,
     transform: 'translateX(10px)',
-    transition: `transform ${core.motion.speedNormal}`
+    transition: `transform ${motion.speedNormal}`
   },
 
   [`.psds-verticaltabs__rotatable--isOpen`]: {

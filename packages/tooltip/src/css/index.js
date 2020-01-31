@@ -1,4 +1,11 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsPrimaryAction,
+  colorsTextIcon,
+  colorsWhite,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 
 import * as vars from '../vars/index.js'
 
@@ -22,25 +29,25 @@ export default {
     position: 'relative',
     display: 'inline-block',
     maxWidth: '320px',
-    padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
+    padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
     borderRadius: '2px',
     boxShadow,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightTight,
-    fontWeight: core.type.fontWeightMedium,
-    transform: `translateY(${core.layout.spacingXSmall})`,
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightTight,
+    fontWeight: type.fontWeightMedium,
+    transform: `translateY(${layout.spacingXSmall})`,
     opacity: 0,
     animation: `${fade || 'psds-tooltip__keyframes__fade'} ${
-      core.motion.speedFast
+      motion.speedFast
     } ease-out forwards`
   }),
   [`.psds-tooltip--appearance-${vars.appearances.basic}`]: {
-    color: core.colorsTextIcon.highOnLight,
-    backgroundColor: core.colors.white
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsWhite
   },
   [`.psds-tooltip--appearance-${vars.appearances.accent}`]: {
-    color: core.colorsTextIcon.highOnDark,
-    backgroundColor: core.colorsPrimaryAction.background
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsPrimaryAction.background
   },
 
   '.psds-tooltip__tail': {
@@ -64,10 +71,10 @@ export default {
     }
   },
   [`.psds-tooltip__tail--appearance-${vars.appearances.basic}`]: {
-    '&:after': { backgroundColor: core.colors.white }
+    '&:after': { backgroundColor: colorsWhite }
   },
   [`.psds-tooltip__tail--appearance-${vars.appearances.accent}`]: {
-    '&:after': { backgroundColor: core.colorsPrimaryAction.background }
+    '&:after': { backgroundColor: colorsPrimaryAction.background }
   },
   [`.psds-tooltip__tail--tailPosition-${vars.tailPositions.topLeft}`]: {
     top: `calc(${diamondHeight} * -1)`,
@@ -110,14 +117,14 @@ export default {
 
   // --closeable
   [`.psds-tooltip--closeable`]: {
-    padding: `${core.layout.spacingMedium} calc(${core.layout.spacingMedium} * 2) ${core.layout.spacingMedium} ${core.layout.spacingLarge}`
+    padding: `${layout.spacingMedium} calc(${layout.spacingMedium} * 2) ${layout.spacingMedium} ${layout.spacingLarge}`
   },
 
   // __close
   [`.psds-tooltip__close`]: {
     position: 'absolute',
-    top: core.layout.spacingXSmall,
-    right: core.layout.spacingXSmall,
+    top: layout.spacingXSmall,
+    right: layout.spacingXSmall,
     display: 'block',
     padding: '0',
     lineHeight: '0',
@@ -128,10 +135,10 @@ export default {
     '& > svg': { height: '24px', width: '24px' }
   },
   [`.psds-tooltip__close--appearance-${vars.appearances.basic}`]: {
-    '& > svg': { fill: core.colorsTextIcon.lowOnLight }
+    '& > svg': { fill: colorsTextIcon.lowOnLight }
   },
   [`.psds-tooltip__close--appearance-${vars.appearances.accent}`]: {
-    '& > svg': { fill: core.colorsTextIcon.lowOnDark }
+    '& > svg': { fill: colorsTextIcon.lowOnDark }
   }
 }
 
