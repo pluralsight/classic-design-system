@@ -12,6 +12,8 @@ import {
   SectionHeading
 } from '../../src/ui/index.js'
 
+const featureFlags = { psds2020Colors: true }
+
 export default _ => (
   <Chrome>
     <Content title="Text">
@@ -37,6 +39,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
         possible.
       </P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         orient="vertical"
         includes={{ Text }}
@@ -67,6 +70,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
       <SectionHeading>Body text</SectionHeading>
       <P>Try to use common paragraph style when possible.</P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         includes={{ Text }}
         codes={[
@@ -86,6 +90,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
       <SectionHeading>List</SectionHeading>
       <P>Nothing fancy, just simple lists. You’ll know when you need them.</P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         includes={{ Text }}
         codes={[

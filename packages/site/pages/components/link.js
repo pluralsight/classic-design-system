@@ -12,6 +12,8 @@ import {
   SectionHeading
 } from '../../src/ui/index.js'
 
+const featureFlags = { psds2020Colors: true }
+
 export default _ => (
   <Chrome>
     <Content title="Link">
@@ -55,6 +57,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
         routing.
       </P>
       <Example.React
+        featureFlags={featureFlags}
         orient="vertical"
         includes={{ Link }}
         codes={[
