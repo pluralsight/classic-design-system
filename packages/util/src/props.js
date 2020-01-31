@@ -1,7 +1,6 @@
 const isPropInWhitelist = (whitelist, key) =>
-  whitelist.some(
-    regex =>
-      typeof regex === 'string' ? new RegExp(regex).test(key) : regex.test(key)
+  whitelist.some(regex =>
+    typeof regex === 'string' ? new RegExp(regex).test(key) : regex.test(key)
   )
 
 export const whitelistProps = (props, whitelist) =>
