@@ -4,6 +4,24 @@ import React from 'react'
 import * as components from '../index.js'
 
 describe('Position', () => {
+  // NOTE: suppressing unnecessary warnings from test renderer.
+  //       ref: https://github.com/facebook/react/pull/14853
+  // TODO: once we've upgraded to react@16.9 we can remove
+  const originalError = console.error
+
+  beforeAll(() => {
+    console.error = (...args) => {
+      if (/Warning.*not wrapped in act/.test(args[0])) return
+
+      originalError.call(console, ...args)
+    }
+  })
+
+  afterAll(() => {
+    console.error = originalError
+  })
+  // END NOTE
+
   describe.each(Object.keys(components))('%s', key => {
     const Comp = components[key]
 
