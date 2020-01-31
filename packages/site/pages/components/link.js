@@ -17,9 +17,12 @@ export default _ => (
     <Content title="Link">
       <PageHeading packageName="link">Link</PageHeading>
 
-      <P>Install the component dependency:</P>
+      <P>
+        Install the component dependency and its specific peer dependencies:
+      </P>
       <Code language="bash">
-        npm install @pluralsight/ps-design-system-link
+        {`npm install @pluralsight/ps-design-system-link 
+npm install @pluralsight/ps-design-system-featureflags`}
       </Code>
 
       <P>Include a React component in your project:</P>

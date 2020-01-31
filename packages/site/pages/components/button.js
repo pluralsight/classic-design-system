@@ -28,9 +28,12 @@ export default _ => (
   <Chrome>
     <Content title="Button">
       <PageHeading packageName="button">Button</PageHeading>
-      <P>Install the component dependency:</P>
+      <P>
+        Install the component dependency and its specific peer dependencies:
+      </P>
       <Code language="bash">
-        npm install @pluralsight/ps-design-system-button
+        {`npm install @pluralsight/ps-design-system-button 
+npm install @pluralsight/ps-design-system-featureflags`}
       </Code>
       <P>Include a React component in your project:</P>
       <Code language="javascript">
