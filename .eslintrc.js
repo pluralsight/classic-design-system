@@ -3,28 +3,31 @@ const WARNING = 1
 const ERROR = 2
 
 module.exports = {
+  root: true,
   env: {
+    browser: true,
     es6: true,
-    'jest/globals': true
+    jest: true
   },
   extends: [
     'standard',
     'standard-react',
-    'prettier',
+    'eslint:recommended',
+    'plugin:jest/recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
     'prettier/flowtype',
     'prettier/react',
-    'prettier/standard',
-    'plugin:jest/recommended'
+    'prettier/standard'
   ],
-  plugins: ['jest', 'react', 'react-hooks'],
-  env: {
-    'jest/globals': true
-  },
+  plugins: ['jest', 'react', 'react-hooks', 'prettier'],
   rules: {
     'import/extensions': [WARNING, 'always', { ignorePackages: true }],
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
-    'react/jsx-no-bind': [IGNORE]
+    'react/display-name': WARNING,
+    'react/jsx-no-bind': IGNORE,
+    'react/no-unescaped-entities': WARNING
   },
   overrides: [
     {
