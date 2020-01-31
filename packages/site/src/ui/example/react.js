@@ -122,7 +122,7 @@ class ReactExample extends React.Component {
     this.state = {
       codes: props.codes,
       error: null,
-      featureFlags: props.featureFlags || [],
+      featureFlags: props.featureFlags || {},
       themeName: props.themeName
     }
     this.handleCodeChange = this.handleCodeChange.bind(this)
@@ -273,7 +273,7 @@ ReactExample.propTypes = {
 }
 
 ReactExample.defaultProps = {
-  featureFlags: [],
+  featureFlags: {},
   orient: 'horizontal',
   themeName: Theme.defaultName,
   themeToggle: false
