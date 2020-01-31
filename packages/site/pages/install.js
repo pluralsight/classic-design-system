@@ -90,6 +90,17 @@ All components support theming and have a peer dependency on the Theme package. 
 npm install @pluralsight/ps-design-system-theme
 \`\`\`
 
+`}</Doc>
+      <P>
+        <Badge color={Badge.colors.yellow}>Note</Badge> Some components
+        currently have FeatureFlags as another peer dependency. If you see an
+        expected warning in npm installs, add this package:
+      </P>
+      <Doc>{`
+\`\`\`bash
+npm install @pluralsight/ps-design-system-featureflags
+\`\`\`
+
 Each component is installed separately.  The JavaScript is prebuilt Node modules.  Assets are inlined.  Find and use what you need.  For example:
 
 \`\`\`bash

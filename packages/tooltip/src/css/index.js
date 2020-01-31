@@ -55,6 +55,7 @@ export default {
     height: diamondHeight,
     width: `calc(${diamondHeight} + 2 * ${shadowBlurWidth})`,
     overflow: 'hidden',
+    pointerEvents: 'none',
 
     '&:after': {
       position: 'absolute',
