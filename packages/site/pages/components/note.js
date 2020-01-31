@@ -62,9 +62,7 @@ export default _ => (
             PropTypes.row([
               'avatar',
               <span>
-                <code>Avatar</code>
-                 | 
-                <code>Note.AvatarLink</code>
+                <code>Avatar</code>|<code>Note.AvatarLink</code>
               </span>,
               null,
               null,
@@ -73,9 +71,7 @@ export default _ => (
             PropTypes.row([
               'heading',
               <span>
-                <code>string</code>
-                 | 
-                <code>node</code>
+                <code>string</code>|<code>node</code>
               </span>,
               null,
               null,
@@ -91,9 +87,7 @@ export default _ => (
             PropTypes.row([
               'metadata',
               <span>
-                <code>string[]</code>
-                 | 
-                <code>node[]</code>
+                <code>string[]</code>|<code>node[]</code>
               </span>,
               null,
               null,
