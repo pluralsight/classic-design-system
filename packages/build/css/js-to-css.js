@@ -6,11 +6,10 @@ ${tab}}`
 
 const rules = (tab, obj) =>
   Object.keys(obj)
-    .map(
-      attr =>
-        typeof obj[attr] === 'object'
-          ? selector(tab, attr, obj[attr])
-          : rule(tab, attr, obj)
+    .map(attr =>
+      typeof obj[attr] === 'object'
+        ? selector(tab, attr, obj[attr])
+        : rule(tab, attr, obj)
     )
     .join('\n')
 

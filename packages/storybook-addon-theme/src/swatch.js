@@ -29,10 +29,7 @@ const styles = {
       props.name === 'light' && { background: core.colors.bone }
     )
 
-    return glamor.compose(
-      base,
-      theme
-    )
+    return glamor.compose(base, theme)
   },
   info: props =>
     glamor.css({

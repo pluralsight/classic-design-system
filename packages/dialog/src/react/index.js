@@ -68,14 +68,17 @@ const Dialog = React.forwardRef((props, ref) => {
   return props.modal ? (
     <Overlay
       aria-label={props['aria-label']}
-      children={content}
       disableCloseOnOverlayClick={props.disableCloseOnOverlayClick}
       onClose={props.onClose}
-    />
+    >
+      {content}
+    </Overlay>
   ) : (
     content
   )
 })
+
+Dialog.displayName = 'Dialog'
 
 Dialog.tailPositions = vars.tailPositions
 export const tailPositions = Dialog.tailPositions

@@ -231,9 +231,7 @@ export default _ => (
             PropTypes.row([
               'children',
               <span>
-                <code>node</code>
-                 | 
-                <code>() => node</code>
+                <code>node</code>|<code>() => node</code>
               </span>,
               true,
               null,

@@ -252,11 +252,13 @@ class InAppExample extends React.Component {
 
   handleSubmit(evt) {
     evt.preventDefault()
+
     const errors = validate(this.state)
     const hasErrors = Object.keys(errors).length > 0
+
     this.setState({ errors })
-    if (hasErrors) {
-    } else {
+
+    if (!hasErrors) {
       this.setState({ isSubmitting: true }, _ => {
         setTimeout(
           _ =>
