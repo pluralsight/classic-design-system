@@ -553,7 +553,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(BookmarkIcon) />}
+            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -572,7 +572,7 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -623,7 +623,7 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(BookmarkIcon) />}
+            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -642,7 +642,7 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -721,7 +721,7 @@ exports[`Storyshots Note/actions one action 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -827,7 +827,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(BookmarkIcon) />}
+            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -846,7 +846,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -952,7 +952,7 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -1058,7 +1058,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             onClick={[Function]}
             title="More"
           >
@@ -1172,7 +1172,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(BookmarkIcon) />}
+            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -1191,7 +1191,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -1289,7 +1289,7 @@ exports[`Storyshots Note/actions without author 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(BookmarkIcon) />}
+            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -1308,7 +1308,7 @@ exports[`Storyshots Note/actions without author 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<ForwardRef(MoreIcon) />}
+            icon={<MoreIcon />}
             title="More"
           >
             <div
