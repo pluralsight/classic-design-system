@@ -2,6 +2,7 @@
 
 import { transform } from 'babel-standalone'
 import debounce from 'debounce'
+import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
 import PropTypes from 'prop-types'
 import React from 'react'
 import CodeMirror from 'react-codemirror'
@@ -99,8 +100,13 @@ const makeGlobalsAvailable = includes => {
 
 const evalSrc = compiled => eval(compiled)
 
-const renderOutput = (themeName, evaled, el) =>
-  ReactDOM.render(<Theme name={themeName}>{evaled}</Theme>, el)
+const renderOutput = ({ featureFlags, themeName }, evaled, el) =>
+  ReactDOM.render(
+    <FeatureFlags flags={featureFlags}>
+      <Theme name={themeName}>{evaled}</Theme>
+    </FeatureFlags>,
+    el
+  )
 
 const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
 
@@ -113,7 +119,12 @@ class ReactExample extends React.Component {
   constructor(props) {
     super(props)
     this.outputEl = React.createRef()
-    this.state = { codes: props.codes, error: null, themeName: props.themeName }
+    this.state = {
+      codes: props.codes,
+      error: null,
+      featureFlags: props.featureFlags || [],
+      themeName: props.themeName
+    }
     this.handleCodeChange = this.handleCodeChange.bind(this)
     this.handleThemeSelect = this.handleThemeSelect.bind(this)
   }
@@ -125,6 +136,7 @@ class ReactExample extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (
       this.props.codes !== prevProps.codes ||
+      this.state.featureFlags !== prevState.featureFlags ||
       this.state.themeName !== prevState.themeName
     )
       this.renderOutput()
@@ -160,7 +172,7 @@ class ReactExample extends React.Component {
           const compiled = compileSrc(src)
           makeGlobalsAvailable(this.props.includes)
           const evaled = evalSrc(compiled)
-          renderOutput(this.state.themeName, evaled, this.outputEl.current)
+          renderOutput(this.state, evaled, this.outputEl.current)
         } catch (err) {
           console.log('err', err)
           unmountOutput(this.outputEl.current)
@@ -250,6 +262,7 @@ class ReactExample extends React.Component {
 ReactExample.propTypes = {
   codes: PropTypes.arrayOf(PropTypes.string),
   decorateCodes: PropTypes.func,
+  featureFlags: PropTypes.object,
   includes: PropTypes.object,
   /* eslint-disable react/no-unused-prop-types */
   outputChildStyle: PropTypes.object,
@@ -260,6 +273,7 @@ ReactExample.propTypes = {
 }
 
 ReactExample.defaultProps = {
+  featureFlags: [],
   orient: 'horizontal',
   themeName: Theme.defaultName,
   themeToggle: false
