@@ -4,7 +4,7 @@ const gulp = require('gulp')
 const octo = require('@octopusdeploy/gulp-octo')
 const path = require('path')
 
-function verifyApp () {
+function verifyApp() {
   if (!argv.app || !argv.pkgVersion) {
     throw new Error(
       'So which app and version did you want to publish then? Set with --app {name} --pkgVersion {semVer}'
