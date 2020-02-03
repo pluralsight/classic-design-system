@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { colors, colorsPrimaryAction } from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
@@ -8,30 +8,30 @@ import * as vars from '../vars/index.js'
 export default {
   [`.psds-link`]: {
     '&:hover': {
-      color: core.colors.orange,
+      color: colors.orange,
       textDecoration: 'underline'
     }
   },
   [`.psds-link.psds-button--2020-colors`]: {
     '&:hover': {
-      color: core.colorsPrimaryAction.background,
+      color: colorsPrimaryAction.background,
       textDecoration: 'underline'
     }
   },
   [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeNames.light}`]: {
-    color: core.colors.orange,
+    color: colors.orange,
     textDecoration: 'none'
   },
   [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeDefaultName}`]: {
-    color: core.colors.orange,
+    color: colors.orange,
     textDecoration: 'none'
   },
   [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
-    color: core.colorsPrimaryAction.textLightTheme,
+    color: colorsPrimaryAction.textLightTheme,
     textDecoration: 'none'
   },
   [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
-    color: core.colorsPrimaryAction.textDarkTheme,
+    color: colorsPrimaryAction.textDarkTheme,
     textDecoration: 'none'
   },
   [`.psds-link--appearance-${vars.appearances.subtle}`]: {

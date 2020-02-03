@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { layout } from '@pluralsight/ps-design-system-core'
 
 const xSmallIconWidth = '24px'
 
@@ -6,7 +6,7 @@ export const sizes = { small: 'small', medium: 'medium' }
 
 export const style = {
   overlaysWidth: '96px',
-  overlaysMarginRight: core.layout.spacingLarge,
+  overlaysMarginRight: layout.spacingLarge,
   actionBarActionWidth: xSmallIconWidth,
-  actionBarActionMarginLeft: core.layout.spacingXSmall
+  actionBarActionMarginLeft: layout.spacingXSmall
 }

@@ -20,7 +20,7 @@ exports[`Storyshots checked false 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -60,7 +60,7 @@ exports[`Storyshots checked true 1`] = `
         data-css-3p558u=""
       >
         <div
-          data-css-1pmieqv=""
+          data-css-1a0fvsw=""
         />
       </div>
     </div>
@@ -100,7 +100,7 @@ exports[`Storyshots click large toggles 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -135,7 +135,7 @@ exports[`Storyshots click small toggles 1`] = `
         data-css-2sz0ak=""
       >
         <div
-          data-css-1ua381t=""
+          data-css-44oays=""
         />
       </div>
     </div>
@@ -170,7 +170,7 @@ exports[`Storyshots color blue 1`] = `
         data-css-3p558u=""
       >
         <div
-          data-css-1pmieqv=""
+          data-css-1a0fvsw=""
         />
       </div>
     </div>
@@ -210,7 +210,7 @@ exports[`Storyshots color green 1`] = `
         data-css-1ad2n5h=""
       >
         <div
-          data-css-1pmieqv=""
+          data-css-1a0fvsw=""
         />
       </div>
     </div>
@@ -250,7 +250,7 @@ exports[`Storyshots color orange 1`] = `
         data-css-3p558u=""
       >
         <div
-          data-css-1pmieqv=""
+          data-css-1a0fvsw=""
         />
       </div>
     </div>
@@ -290,7 +290,7 @@ exports[`Storyshots disabled false 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -325,7 +325,7 @@ exports[`Storyshots disabled true 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -360,7 +360,7 @@ exports[`Storyshots error false 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -395,7 +395,7 @@ exports[`Storyshots error true 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -435,7 +435,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -475,7 +475,7 @@ exports[`Storyshots label large left 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -515,7 +515,7 @@ exports[`Storyshots label large right 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -555,7 +555,7 @@ exports[`Storyshots label small left 1`] = `
         data-css-2sz0ak=""
       >
         <div
-          data-css-1ua381t=""
+          data-css-44oays=""
         />
       </div>
     </div>
@@ -595,7 +595,7 @@ exports[`Storyshots label small right 1`] = `
         data-css-2sz0ak=""
       >
         <div
-          data-css-1ua381t=""
+          data-css-44oays=""
         />
       </div>
     </div>
@@ -635,7 +635,7 @@ exports[`Storyshots size large 1`] = `
         data-css-rao1gl=""
       >
         <div
-          data-css-12e9w50=""
+          data-css-1o90whm=""
         />
       </div>
     </div>
@@ -675,7 +675,7 @@ exports[`Storyshots size small 1`] = `
         data-css-2sz0ak=""
       >
         <div
-          data-css-1ua381t=""
+          data-css-44oays=""
         />
       </div>
     </div>

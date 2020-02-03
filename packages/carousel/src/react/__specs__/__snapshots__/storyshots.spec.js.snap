@@ -2514,6 +2514,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                           }
                         >
                           <span
+                            className="shiitake-children"
                             style={
                               Object {
                                 "display": "block",
@@ -2574,6 +2575,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                               </span>
                             </span>
                             <span
+                              className="shiitake-test-children"
                               style={
                                 Object {
                                   "display": "block",
@@ -2838,6 +2840,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -2898,6 +2901,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -3009,6 +3013,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -3069,6 +3074,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -3180,6 +3186,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -3240,6 +3247,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -3351,6 +3359,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -3411,6 +3420,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -3522,6 +3532,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -3582,6 +3593,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -3693,6 +3705,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -3753,6 +3766,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -3864,6 +3878,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -3924,6 +3939,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -4035,6 +4051,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -4095,6 +4112,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -4206,6 +4224,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -4266,6 +4285,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -4377,6 +4397,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -4437,6 +4458,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -4548,6 +4570,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -4608,6 +4631,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -4719,6 +4743,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -4779,6 +4804,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -4890,6 +4916,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -4950,6 +4977,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -5061,6 +5089,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -5121,6 +5150,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -5232,6 +5262,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -5292,6 +5323,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -5403,6 +5435,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -5463,6 +5496,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -5574,6 +5608,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -5634,6 +5669,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -5745,6 +5781,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -5805,6 +5842,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -5916,6 +5954,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -5976,6 +6015,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -6087,6 +6127,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -6147,6 +6188,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -6258,6 +6300,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -6318,6 +6361,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -6429,6 +6473,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -6489,6 +6534,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -6600,6 +6646,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -6660,6 +6707,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -6771,6 +6819,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -6831,6 +6880,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -6942,6 +6992,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -7002,6 +7053,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -7113,6 +7165,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -7173,6 +7226,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -7284,6 +7338,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -7344,6 +7399,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -7455,6 +7511,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -7515,6 +7572,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -7626,6 +7684,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -7686,6 +7745,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -7797,6 +7857,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -7857,6 +7918,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -7968,6 +8030,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -8028,6 +8091,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -8139,6 +8203,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -8199,6 +8264,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -8310,6 +8376,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -8370,6 +8437,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -8481,6 +8549,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -8541,6 +8610,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -8652,6 +8722,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -8712,6 +8783,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -8823,6 +8895,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -8883,6 +8956,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -8994,6 +9068,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -9054,6 +9129,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -9165,6 +9241,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -9225,6 +9302,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -9336,6 +9414,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -9396,6 +9475,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -9507,6 +9587,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                       }
                     >
                       <span
+                        className="shiitake-children"
                         style={
                           Object {
                             "display": "block",
@@ -9567,6 +9648,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                           </span>
                         </span>
                         <span
+                          className="shiitake-test-children"
                           style={
                             Object {
                               "display": "block",
@@ -10253,6 +10335,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -10313,6 +10396,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -10412,6 +10496,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -10472,6 +10557,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -10557,6 +10643,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -10617,6 +10704,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -10702,6 +10790,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -10762,6 +10851,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -10847,6 +10937,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -10907,6 +10998,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -10992,6 +11084,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -11052,6 +11145,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -11137,6 +11231,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -11197,6 +11292,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -11282,6 +11378,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -11342,6 +11439,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -11427,6 +11525,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -11487,6 +11586,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -11572,6 +11672,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -11632,6 +11733,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -11717,6 +11819,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -11777,6 +11880,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -11862,6 +11966,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -11922,6 +12027,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -12007,6 +12113,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -12067,6 +12174,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -12152,6 +12260,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -12212,6 +12321,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -12396,6 +12506,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -12456,6 +12567,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -12555,6 +12667,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -12615,6 +12728,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -12700,6 +12814,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -12760,6 +12875,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -12845,6 +12961,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -12905,6 +13022,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -12990,6 +13108,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -13050,6 +13169,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -13135,6 +13255,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -13195,6 +13316,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -13280,6 +13402,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -13340,6 +13463,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -13425,6 +13549,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -13485,6 +13610,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -13570,6 +13696,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -13630,6 +13757,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -13715,6 +13843,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -13775,6 +13904,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -13860,6 +13990,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -13920,6 +14051,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -14005,6 +14137,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -14065,6 +14198,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -14150,6 +14284,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -14210,6 +14345,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",
@@ -14295,6 +14431,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                         }
                       >
                         <span
+                          className="shiitake-children"
                           style={
                             Object {
                               "display": "block",
@@ -14355,6 +14492,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                             </span>
                           </span>
                           <span
+                            className="shiitake-test-children"
                             style={
                               Object {
                                 "display": "block",

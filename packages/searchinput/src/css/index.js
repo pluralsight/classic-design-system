@@ -1,7 +1,7 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { layout } from '@pluralsight/ps-design-system-core'
 
 export default {
   '.psds-searchinput-clear': {
-    margin: `0 ${core.layout.spacingXXSmall}`
+    margin: `0 ${layout.spacingXXSmall}`
   }
 }

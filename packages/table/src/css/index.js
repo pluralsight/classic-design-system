@@ -1,4 +1,10 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBorder,
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
@@ -10,34 +16,34 @@ import * as vars from '../vars/index.js'
 export default {
   '.psds-table': {
     width: '100%',
-    fontWeight: core.type.fontWeightBook,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightTight
+    fontWeight: type.fontWeightBook,
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightTight
   },
   '.psds-table--in-drawer': {
-    paddingLeft: core.layout.spacingMedium,
+    paddingLeft: layout.spacingMedium,
     paddingRight: toggleAreaWidth
   },
   [`.psds-table.psds-theme--${themeDefaultName}`]: {
-    color: core.colorsTextIcon.highOnDark
+    color: colorsTextIcon.highOnDark
   },
   [`.psds-table.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
 
   // __row
   '.psds-table__row': {
     width: '100%',
     display: 'flex',
-    borderTop: `1px solid ${core.colorsBorder.lowOnDark}`,
+    borderTop: `1px solid ${colorsBorder.lowOnDark}`,
 
     '&:first-of-type': { borderTop: 'none' }
   },
   [`.psds-table__row.psds-theme--${themeNames.light}`]: {
-    borderTop: `1px solid ${core.colorsBorder.lowOnLight}`
+    borderTop: `1px solid ${colorsBorder.lowOnLight}`
   },
   '.psds-table__row--drawers': {
-    paddingLeft: core.layout.spacingMedium,
+    paddingLeft: layout.spacingMedium,
     paddingRight: toggleAreaWidth
   },
 
@@ -46,7 +52,7 @@ export default {
     flex: 1,
     display: 'flex',
     alignItems: 'center',
-    padding: `${core.layout.spacingSmall} calc(${core.layout.spacingMedium} / 2)`,
+    padding: `${layout.spacingSmall} calc(${layout.spacingMedium} / 2)`,
     overflow: 'hidden',
 
     '&:first-of-type': { paddingLeft: 0 },
@@ -59,13 +65,13 @@ export default {
 
       '&:active, &:focus, &:hover': {
         textDecoration: 'underline',
-        transition: `all ${core.motion.speedNormal}`
+        transition: `all ${motion.speedNormal}`
       }
     }
   },
 
   '.psds-table__cell--emphasis': {
-    fontWeight: core.type.fontWeightMedium
+    fontWeight: type.fontWeightMedium
   },
   [`.psds-table__cell--align-${vars.aligns.left}`]: {
     justifyContent: 'left',
@@ -85,19 +91,19 @@ export default {
     display: 'flex',
     flex: 1,
     alignItems: 'flex-end',
-    padding: `${core.layout.spacingSmall} calc(${core.layout.spacingMedium} / 2)`,
-    fontSize: core.type.fontSizeXSmall,
+    padding: `${layout.spacingSmall} calc(${layout.spacingMedium} / 2)`,
+    fontSize: type.fontSizeXSmall,
     lineHeight: '16px',
     textTransform: 'uppercase',
     border: 'none',
     background: 'none',
-    color: core.colorsTextIcon.lowOnDark,
+    color: colorsTextIcon.lowOnDark,
 
     '&:first-of-type': { paddingLeft: 0 },
     '&:last-of-type': { paddingRight: 0 }
   },
   [`.psds-table__column-header.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.lowOnLight
+    color: colorsTextIcon.lowOnLight
   },
   [`.psds-table__column-header--align-${vars.aligns.left}`]: {
     justifyContent: 'left',
@@ -112,20 +118,20 @@ export default {
     textAlign: 'center'
   },
   '.psds-table__column-header--active': {
-    color: core.colorsTextIcon.highOnDark
+    color: colorsTextIcon.highOnDark
   },
   [`.psds-table__column-header--active.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
   '.psds-table__column-header--onclick': {
     '&:hover': {
-      color: core.colorsTextIcon.highOnDark,
+      color: colorsTextIcon.highOnDark,
       cursor: 'pointer'
     }
   },
   [`.psds-table__column-header--onclick.psds-theme--${themeNames.light}`]: {
     '&:hover': {
-      color: core.colorsTextIcon.highOnLight,
+      color: colorsTextIcon.highOnLight,
       cursor: 'pointer'
     }
   },
@@ -133,6 +139,6 @@ export default {
   '.psds-table__column-header__icon': {
     position: 'relative',
     flexShrink: '0',
-    bottom: `calc(-1 * (${core.layout.spacingSmall} - ${core.layout.spacingXSmall}))`
+    bottom: `calc(-1 * (${layout.spacingSmall} - ${layout.spacingXSmall}))`
   }
 }
