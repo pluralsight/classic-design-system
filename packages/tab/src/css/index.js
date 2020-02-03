@@ -96,13 +96,17 @@ export default {
   '.psds-tab__overflow-button--left': {
     left: 0,
     justifyContent: 'flex-start',
-    background: `linear-gradient(to left, transparent, ${colorsBackgroundDark[1]} 50%)`,
+    background: `linear-gradient(to left, transparent, ${
+      colorsBackgroundDark[1]
+    } 50%)`,
     paddingLeft: layout.spacingMedium
   },
   '.psds-tab__overflow-button--right': {
     right: 0,
     justifyContent: 'flex-end',
-    background: `linear-gradient(to right, transparent, ${colorsBackgroundDark[1]} 50%)`,
+    background: `linear-gradient(to right, transparent, ${
+      colorsBackgroundDark[1]
+    } 50%)`,
     paddingRight: layout.spacingMedium
   },
   [`.psds-tab__overflow-button.psds-theme--${themeNames.light}`]: {
@@ -117,10 +121,14 @@ export default {
     }
   },
   [`.psds-tab__overflow-button--left.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to left, transparent, ${colorsBackgroundLight[3]} 50%)`
+    background: `linear-gradient(to left, transparent, ${
+      colorsBackgroundLight[3]
+    } 50%)`
   },
   [`.psds-tab__overflow-button--right.psds-theme--${themeNames.light}`]: {
-    background: `linear-gradient(to right, transparent, ${colorsBackgroundLight[3]} 50%)`
+    background: `linear-gradient(to right, transparent, ${
+      colorsBackgroundLight[3]
+    } 50%)`
   },
 
   '.psds-tab__overflow-button__icon': {

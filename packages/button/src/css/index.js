@@ -155,7 +155,7 @@ export default {
   },
   [`.psds-button--appearance-${vars.appearances.stroke}.psds-button--2020-colors`]: {
     border: `1px solid ${colorsPrimaryAction.background}`,
-    color: colorsPrimaryAction.background,
+    color: colorsPrimaryAction.textDarkTheme,
     background: 'none',
 
     '&:not([disabled]):hover': {

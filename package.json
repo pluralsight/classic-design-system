@@ -20,7 +20,8 @@
     "clean": "lerna clean",
     "generate": "plop",
     "generate:component": "plop component",
-    "lint": "eslint .",
+    "lint": "eslint . --quiet",
+    "lint:ci": "eslint .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "publish": "lerna publish --conventional-commits --message \"build: publish\"",
@@ -31,23 +32,16 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -e",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "**/*.css": [
-      "prettier-eslint --write",
-      "git add"
-    ],
-    "**/*.js": [
-      "prettier-eslint --write",
-      "eslint",
-      "git add"
+    "*.{css,js}": [
+      "eslint --fix"
     ],
     "package.json": [
-      "format-package -w",
-      "git add"
+      "format-package -w"
     ]
   },
   "dependencies": {
@@ -80,7 +74,7 @@
     "@storybook/addons": "^5.2.5",
     "@storybook/react": "^5.2.5",
     "@svgr/cli": "^4.3.3",
-    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/jest-dom": "^5.0.2",
     "@testing-library/react": "^9.3.2",
     "@testing-library/react-hooks": "^3.1.1",
     "babel-loader": "^8.0.6",
@@ -95,7 +89,8 @@
     "eslint-config-standard-react": "^9.2.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^23.0.2",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.2.0",
@@ -103,15 +98,15 @@
     "format-package": "^5.2.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^3.1.0",
-    "husky": "^3.0.9",
+    "husky": "^4.2.1",
     "import-all.macro": "^2.0.3",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "jest-axe": "^3.2.0",
     "jest-prop-type-error": "^1.1.0",
     "jest-watch-typeahead": "^0.4.0",
     "lerna": "^3.18.3",
     "link-parent-bin": "^1.0.2",
-    "lint-staged": "^9.4.2",
+    "lint-staged": "^10.0.7",
     "npm-run-all": "^4.1.5",
     "octopus-deploy": "^6.0.0",
     "plop": "^2.5.3",

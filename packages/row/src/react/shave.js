@@ -11,22 +11,30 @@ const reset = (children, current) => {
 }
 const Shave = ({ children, lineHeight, lines, character, ...rest }) => {
   const elRef = useRef()
+
   useEffect(() => {
     reset(children, elRef.current)
   }, [children])
+
   const truncate = useCallback(() => {
     const maxHeight = lineHeight * lines
     shave(elRef.current, maxHeight, { character: character })
   }, [lineHeight, lines, character])
+
   useEffect(() => {
     window.addEventListener('resize', truncate)
     truncate()
+
     return _ => {
       window.removeEventListener('resize', truncate)
     }
   }, [truncate])
 
-  return <div ref={elRef} children={children} {...rest} />
+  return (
+    <div ref={elRef} {...rest}>
+      {children}
+    </div>
+  )
 }
 
 Shave.defaultProps = {

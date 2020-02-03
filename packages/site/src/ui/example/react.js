@@ -99,8 +99,9 @@ const makeGlobalsAvailable = includes => {
 
 const evalSrc = compiled => eval(compiled)
 
-const renderOutput = (themeName, evaled, el) =>
+const renderOutput = (themeName, evaled, el) => {
   ReactDOM.render(<Theme name={themeName}>{evaled}</Theme>, el)
+}
 
 const unmountOutput = el => ReactDOM.unmountComponentAtNode(el)
 
