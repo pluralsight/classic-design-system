@@ -1,4 +1,12 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundUtility,
+  colorsBlue,
+  colorsPrimaryAction,
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index.js'
@@ -13,57 +21,57 @@ export default {
     alignItems: 'center',
     textAlign: 'center',
     borderRadius: '16px',
-    fontWeight: core.type.fontWeightMedium,
+    fontWeight: type.fontWeightMedium,
     textDecoration: 'none',
-    color: core.colorsTextIcon.highOnDark,
-    backgroundColor: core.colorsBackgroundUtility[25],
-    transition: `background-color ${core.motion.speedXFast} linear, color ${core.motion.speedXFast} linear`
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsBackgroundUtility[25],
+    transition: `background-color ${motion.speedXFast} linear, color ${motion.speedXFast} linear`
   },
   [base + '.psds-theme--' + themeNames.light]: {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
 
   [base + '--clickable']: {
     '&:hover, &:focus': {
-      backgroundColor: core.colorsBackgroundUtility[30],
-      color: core.colorsTextIcon.highOnDark,
+      backgroundColor: colorsBackgroundUtility[30],
+      color: colorsTextIcon.highOnDark,
       cursor: 'pointer',
       outline: 'none'
     }
   },
   [base + '--clickable' + '.psds-theme--' + themeNames.light]: {
     '&:hover, &:focus': {
-      backgroundColor: core.colorsBackgroundUtility[30],
-      color: core.colorsTextIcon.highOnLight
+      backgroundColor: colorsBackgroundUtility[30],
+      color: colorsTextIcon.highOnLight
     }
   },
 
   [`${base}--size-${vars.sizes.small}`]: {
     height: '24px',
-    padding: `0 ${core.layout.spacingSmall}`,
-    fontSize: core.type.fontSizeXSmall,
-    lineHeight: core.type.lineHeightStandard
+    padding: `0 ${layout.spacingSmall}`,
+    fontSize: type.fontSizeXSmall,
+    lineHeight: type.lineHeightStandard
   },
   [`${base}--size-${vars.sizes.medium}`]: {
     height: '32px',
-    padding: `0 ${core.layout.spacingMedium}`,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightExtra
+    padding: `0 ${layout.spacingMedium}`,
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightExtra
   },
 
   [base + '--icon']: {
-    paddingRight: core.layout.spacingXXSmall
+    paddingRight: layout.spacingXXSmall
   },
 
   [base + '--isPressed']: {
-    color: core.colorsTextIcon.highOnDark,
-    backgroundColor: core.colorsPrimaryAction.background
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsPrimaryAction.background
   },
 
   [base + '--isPressed' + base + '--clickable']: {
     '&:hover, &:focus': {
-      backgroundColor: core.colorsBlue[5],
-      color: core.colorsTextIcon.highOnDark
+      backgroundColor: colorsBlue[5],
+      color: colorsTextIcon.highOnDark
     }
   },
 
@@ -75,6 +83,6 @@ export default {
     textOverflow: 'ellipsis'
   },
   [base + '__label--icon']: {
-    marginRight: core.layout.spacingXXSmall
+    marginRight: layout.spacingXXSmall
   }
 }

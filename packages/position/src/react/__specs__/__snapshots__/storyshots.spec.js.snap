@@ -19,7 +19,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -51,7 +51,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -83,7 +83,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -115,7 +115,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -147,7 +147,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -179,7 +179,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -211,7 +211,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -243,7 +243,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -283,7 +283,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -323,7 +323,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -363,7 +363,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -403,7 +403,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -443,7 +443,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -483,7 +483,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -523,7 +523,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -563,7 +563,7 @@ Array [
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -601,7 +601,7 @@ exports[`Storyshots Components | Position / in custom portal Above 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -639,7 +639,7 @@ exports[`Storyshots Components | Position / in custom portal AboveLeft 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -677,7 +677,7 @@ exports[`Storyshots Components | Position / in custom portal AboveRight 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -715,7 +715,7 @@ exports[`Storyshots Components | Position / in custom portal Below 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -753,7 +753,7 @@ exports[`Storyshots Components | Position / in custom portal BelowLeft 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -791,7 +791,7 @@ exports[`Storyshots Components | Position / in custom portal BelowRight 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -829,7 +829,7 @@ exports[`Storyshots Components | Position / in custom portal LeftOf 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -867,7 +867,7 @@ exports[`Storyshots Components | Position / in custom portal RightOf 1`] = `
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -912,7 +912,7 @@ exports[`Storyshots Components | Position / in scrollable container RightOf 1`] 
     }
   >
     <div
-      data-css-7zj9s4=""
+      data-css-c17omc=""
       style={
         Object {
           "position": "absolute",
@@ -944,7 +944,7 @@ exports[`Storyshots Utilities | Position / position fns above 1`] = `
     above
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",
@@ -954,7 +954,7 @@ exports[`Storyshots Utilities | Position / position fns above 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-2n3dau=""
+      data-css-1kbx59o=""
     />
   </div>
 </div>
@@ -972,7 +972,7 @@ exports[`Storyshots Utilities | Position / position fns aboveLeft 1`] = `
     aboveLeft
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",
@@ -982,7 +982,7 @@ exports[`Storyshots Utilities | Position / position fns aboveLeft 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-14o0ovr=""
+      data-css-g58j1y=""
     />
   </div>
 </div>
@@ -1000,7 +1000,7 @@ exports[`Storyshots Utilities | Position / position fns aboveRight 1`] = `
     aboveRight
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",
@@ -1010,7 +1010,7 @@ exports[`Storyshots Utilities | Position / position fns aboveRight 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-u75al5=""
+      data-css-ogqxtl=""
     />
   </div>
 </div>
@@ -1028,7 +1028,7 @@ exports[`Storyshots Utilities | Position / position fns below 1`] = `
     below
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",
@@ -1038,7 +1038,7 @@ exports[`Storyshots Utilities | Position / position fns below 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-istrhi=""
+      data-css-1sx28dq=""
     />
   </div>
 </div>
@@ -1056,7 +1056,7 @@ exports[`Storyshots Utilities | Position / position fns belowLeft 1`] = `
     belowLeft
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",
@@ -1066,7 +1066,7 @@ exports[`Storyshots Utilities | Position / position fns belowLeft 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-1kdi4tz=""
+      data-css-18ju24q=""
     />
   </div>
 </div>
@@ -1084,7 +1084,7 @@ exports[`Storyshots Utilities | Position / position fns belowRight 1`] = `
     belowRight
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",
@@ -1094,7 +1094,7 @@ exports[`Storyshots Utilities | Position / position fns belowRight 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-1kx2x4x=""
+      data-css-bkjqmk=""
     />
   </div>
 </div>
@@ -1112,7 +1112,7 @@ exports[`Storyshots Utilities | Position / position fns leftOf 1`] = `
     leftOf
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",
@@ -1136,7 +1136,7 @@ exports[`Storyshots Utilities | Position / position fns rightOf 1`] = `
     rightOf
   </div>
   <div
-    data-css-7zj9s4=""
+    data-css-c17omc=""
     style={
       Object {
         "position": "absolute",

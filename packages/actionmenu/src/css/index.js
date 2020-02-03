@@ -1,18 +1,26 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundLight,
+  colorsBorder,
+  colorsPrimaryAction,
+  colorsTextIcon,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 
 import * as vars from '../vars/index.js'
 
 const menuOriginRight = {
-  transform: `translate(${core.layout.spacingXSmall}, 0)`
+  transform: `translate(${layout.spacingXSmall}, 0)`
 }
 const menuOriginLeft = {
-  transform: `translate(calc(-1 * ${core.layout.spacingXSmall}), 0)`
+  transform: `translate(calc(-1 * ${layout.spacingXSmall}), 0)`
 }
 const menuOriginTop = {
-  transform: `translate(0, calc(-1 * ${core.layout.spacingXSmall}))`
+  transform: `translate(0, calc(-1 * ${layout.spacingXSmall}))`
 }
 const menuOriginBottom = {
-  transform: `translate(0, ${core.layout.spacingXSmall})`
+  transform: `translate(0, ${layout.spacingXSmall})`
 }
 
 export default {
@@ -27,17 +35,17 @@ export default {
     position: 'absolute',
     display: 'inline-block',
     marginLeft: 0,
-    background: core.colorsBackgroundLight[3],
+    background: colorsBackgroundLight[3],
     borderRadius: '2px',
     padding: `${vars.style.menuPaddingVert} 0`,
     minWidth: '160px',
     maxWidth: '320px',
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
-    fontSize: core.type.fontSizeSmall,
+    fontSize: type.fontSizeSmall,
     opacity: 0,
     animation: `${slide || 'psds-actionmenu__keyframes__slide'} ${
-      core.motion.speedNormal
+      motion.speedNormal
     } forwards`
   }),
 
@@ -75,8 +83,8 @@ export default {
     display: 'flex',
     width: '100%',
     alignItems: 'center',
-    lineHeight: core.type.lineHeightExtra,
-    fontWeight: core.type.fontWeightMedium,
+    lineHeight: type.lineHeightExtra,
+    fontWeight: type.fontWeightMedium,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -85,12 +93,12 @@ export default {
     border: 'none',
     paddingTop: '0',
     paddingBottom: '0',
-    paddingLeft: core.layout.spacingMedium,
-    paddingRight: core.layout.spacingMedium,
-    color: core.colorsTextIcon.highOnLight,
+    paddingLeft: layout.spacingMedium,
+    paddingRight: layout.spacingMedium,
+    color: colorsTextIcon.highOnLight,
     background: 'none',
     textDecoration: 'none',
-    transition: `background ${core.motion.speedXFast}`
+    transition: `background ${motion.speedXFast}`
   },
 
   '.psds-actionmenu__item-inner': {
@@ -101,30 +109,30 @@ export default {
   },
 
   '.psds-actionmenu__item:focus': {
-    background: core.colorsBackgroundLight[2],
+    background: colorsBackgroundLight[2],
     outline: 'none',
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
   '.psds-actionmenu__item--focus-keyboard': {
-    background: core.colorsPrimaryAction.background,
+    background: colorsPrimaryAction.background,
     outline: 'none',
-    color: core.colorsTextIcon.highOnDark
+    color: colorsTextIcon.highOnDark
   },
 
   '.psds-actionmenu__item--link': {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
 
   '.psds-actionmenu__item--icon': {
-    paddingLeft: core.layout.spacingXSmall
+    paddingLeft: layout.spacingXSmall
   },
 
   '.psds-actionmenu__item--nested': {
-    paddingRight: core.layout.spacingXSmall
+    paddingRight: layout.spacingXSmall
   },
 
   '.psds-actionmenu__item--isActive': {
-    background: core.colorsBackgroundLight[2],
+    background: colorsBackgroundLight[2],
     outline: 'none'
   },
 
@@ -137,23 +145,23 @@ export default {
   '.psds-actionmenu__divider': {
     height: '1px',
     width: '100%',
-    backgroundColor: core.colorsBorder.lowOnLight,
-    margin: `${core.layout.spacingXXSmall} 0`
+    backgroundColor: colorsBorder.lowOnLight,
+    margin: `${layout.spacingXXSmall} 0`
   },
 
   '.psds-actionmenu__item__icon': {
     display: 'inline-flex',
     alignItems: 'center',
-    marginRight: core.layout.spacingXSmall
+    marginRight: layout.spacingXSmall
   },
 
   '.psds-actionmenu__item__arrow': {
-    color: core.colorsTextIcon.lowOnLight,
+    color: colorsTextIcon.lowOnLight,
     marginLeft: 'auto',
-    paddingLeft: core.layout.spacingXSmall
+    paddingLeft: layout.spacingXSmall
   },
   '.psds-actionmenu__item__arrow--focus-keyboard': {
-    color: core.colorsTextIcon.highOnDark
+    color: colorsTextIcon.highOnDark
   },
   '.psds-actionmenu__item__arrow__svg': {
     fill: 'currentColor'

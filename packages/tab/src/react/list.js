@@ -1,4 +1,4 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { motion } from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import * as glamor from 'glamor'
 import {
@@ -12,7 +12,7 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import css from '../css/index.js'
 import useResizeObserver from './use-resize-observer.js'
 
-const slideAnimationLength = parseInt(core.motion.speedFast) + 10
+const slideAnimationLength = parseInt(motion.speedFast) + 10
 
 const styles = {
   list: ({ themeName }) =>

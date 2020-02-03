@@ -1,4 +1,15 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  accessibility,
+  colorsBackgroundUtility,
+  colorsBlue,
+  colorsBorder,
+  colorsGreen,
+  colorsTextIcon,
+  colorsWhite,
+  layout,
+  motion,
+  type
+} from '@pluralsight/ps-design-system-core'
 import {
   defaultName as themeDefaultName,
   names as themeNames
@@ -31,12 +42,12 @@ export default {
 
   '.psds-switch__track': {
     position: 'relative',
-    backgroundColor: core.colorsBackgroundUtility[25],
-    border: `1px solid ${core.colorsBorder.lowOnDark}`,
-    transition: `background-color ${core.motion.speedFast} ease-in-out`
+    backgroundColor: colorsBackgroundUtility[25],
+    border: `1px solid ${colorsBorder.lowOnDark}`,
+    transition: `background-color ${motion.speedFast} ease-in-out`
   },
   [`.psds-switch__track.psds-theme--${themeNames.light}`]: {
-    border: `1px solid ${core.colorsBorder.lowOnLight}`
+    border: `1px solid ${colorsBorder.lowOnLight}`
   },
   [`.psds-switch__track.psds-switch__track--size-${vars.sizes.small}`]: {
     height: '12px',
@@ -49,23 +60,23 @@ export default {
     borderRadius: '12px'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.blue}`]: {
-    backgroundColor: core.colorsBlue.base,
+    backgroundColor: colorsBlue.base,
     borderColor: 'transparent'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.green}`]: {
-    backgroundColor: core.colorsGreen.base,
+    backgroundColor: colorsGreen.base,
     borderColor: 'transparent'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.orange}`]: {
     // NOTE: temp: make orange blue until we do a breaking change to remove orange
-    backgroundColor: core.colorsBlue.base,
+    backgroundColor: colorsBlue.base,
     borderColor: 'transparent'
   },
 
   [`.psds-switch__thumb`]: {
-    backgroundColor: core.colors.white,
+    backgroundColor: colorsWhite,
     borderRadius: '50%',
-    transition: `transform ${core.motion.speedFast} ease-in-out`
+    transition: `transform ${motion.speedFast} ease-in-out`
   },
   [`.psds-switch__thumb--size-${vars.sizes.small}`]: {
     height: '10px',
@@ -83,33 +94,33 @@ export default {
   },
 
   [`.psds-switch__label`]: {
-    fontWeight: core.type.fontWeightMedium,
+    fontWeight: type.fontWeightMedium,
     lineHeight: '1em'
   },
   [`.psds-switch__label--size-${vars.sizes.small}`]: {
-    fontSize: core.type.fontSizeXSmall
+    fontSize: type.fontSizeXSmall
   },
   [`.psds-switch__label--size-${vars.sizes.large}`]: {
-    fontSize: core.type.fontSizeSmall
+    fontSize: type.fontSizeSmall
   },
   [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
-    marginRight: core.layout.spacingXSmall
+    marginRight: layout.spacingXSmall
   },
   [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
-    marginRight: core.layout.spacingMedium
+    marginRight: layout.spacingMedium
   },
   [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
-    marginLeft: core.layout.spacingXSmall
+    marginLeft: layout.spacingXSmall
   },
   [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
-    marginLeft: core.layout.spacingMedium
+    marginLeft: layout.spacingMedium
   },
   [`.psds-switch__label.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   },
   [`.psds-switch__label.psds-theme--${themeDefaultName}`]: {
-    color: core.colorsTextIcon.highOnDark
+    color: colorsTextIcon.highOnDark
   },
 
-  '.psds-switch__checkbox': core.accessibility.screenReaderOnly
+  '.psds-switch__checkbox': accessibility.screenReaderOnly
 }

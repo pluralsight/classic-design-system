@@ -1,11 +1,20 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colors,
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  colorsBlue,
+  colorsStatus,
+  colorsTextIcon,
+  layout,
+  type
+} from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 export default {
   '.psds-checkbox': {
     display: 'flex',
     alignItems: 'center',
-    padding: `${core.layout.spacingXXSmall} 0`,
+    padding: `${layout.spacingXXSmall} 0`,
     cursor: 'pointer'
   },
   '.psds-checkbox--disabled': {
@@ -20,13 +29,13 @@ export default {
     height: '16px',
     width: '16px',
     borderRadius: '2px',
-    border: `2px solid ${core.colorsTextIcon.lowOnDark}`,
-    background: core.colorsBackgroundDark[1],
-    color: core.colors.white
+    border: `2px solid ${colorsTextIcon.lowOnDark}`,
+    background: colorsBackgroundDark[1],
+    color: colors.white
   },
   [`.psds-checkbox__square.psds-theme--${themeNames.light}`]: {
-    background: core.colorsBackgroundLight[3],
-    borderColor: core.colorsTextIcon.lowOnLight,
+    background: colorsBackgroundLight[3],
+    borderColor: colorsTextIcon.lowOnLight,
 
     '&:focus': { outline: 'none' }
   },
@@ -63,13 +72,13 @@ export default {
     bottom: '-7px'
   },
   '.psds-checkbox__square:focus:after': {
-    background: core.colorsBlue.base
+    background: colorsBlue.base
   },
   '.psds-checkbox__square--error:after': {
-    background: core.colorsStatus.error
+    background: colorsStatus.error
   },
   '.psds-checkbox__square--active': {
-    background: core.colorsBlue.base,
+    background: colorsBlue.base,
     border: 'none'
   },
   '.psds-checkbox__square--active:focus:before, .psds-checkbox__square--active--error:before': {
@@ -101,7 +110,7 @@ export default {
   '.psds-checkbox__icon': {
     height: '100%',
     width: '100%',
-    fill: core.colorsTextIcon.highOnDark
+    fill: colorsTextIcon.highOnDark
   },
 
   // __input
@@ -111,13 +120,13 @@ export default {
 
   // __label
   '.psds-checkbox__label': {
-    marginLeft: core.layout.spacingSmall,
-    color: core.colorsTextIcon.highOnDark,
-    fontSize: core.type.fontSizeSmall,
-    lineHeight: core.type.lineHeightStandard,
-    fontWeight: core.type.fontWeightMedium
+    marginLeft: layout.spacingSmall,
+    color: colorsTextIcon.highOnDark,
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightStandard,
+    fontWeight: type.fontWeightMedium
   },
   [`.psds-checkbox__label.psds-theme--${themeNames.light}`]: {
-    color: core.colorsTextIcon.highOnLight
+    color: colorsTextIcon.highOnLight
   }
 }

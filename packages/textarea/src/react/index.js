@@ -2,7 +2,7 @@ import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import * as core from '@pluralsight/ps-design-system-core'
+import { layout, type } from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
@@ -13,8 +13,8 @@ import stylesheet from '../css/index.js'
 const calcRowsPxHeight = rows => {
   const int = varVal => parseInt(varVal.replace('px', ''), 10)
   return (
-    int(core.layout.spacingXSmall) * 2 +
-    parseInt(rows, 10) * int(core.type.lineHeightStandard)
+    int(layout.spacingXSmall) * 2 +
+    parseInt(rows, 10) * int(type.lineHeightStandard)
   )
 }
 
