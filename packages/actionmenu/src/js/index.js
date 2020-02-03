@@ -17,7 +17,13 @@ export function calcNextIndex(childrenProps, direction, currentIndex) {
           currentIndex,
           currentIndex
         )
-      : find(i => --i, i => i < 0, childrenProps, currentIndex, currentIndex)
+      : find(
+          i => --i,
+          i => i < 0,
+          childrenProps,
+          currentIndex,
+          currentIndex
+        )
   } else {
     return next
   }
