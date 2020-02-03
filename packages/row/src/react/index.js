@@ -168,8 +168,9 @@ const MetadataDot = props => (
     {...styles.metadataDot(props)}
     {...filterReactProps(props, { tagName: 'span' })}
     aria-hidden
-    children="·"
-  />
+  >
+    ·
+  </span>
 )
 
 const Overlays = props => (
