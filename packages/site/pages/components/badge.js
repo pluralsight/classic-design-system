@@ -1,7 +1,6 @@
 import React from 'react'
 import Badge from '@pluralsight/ps-design-system-badge'
 import * as core from '@pluralsight/ps-design-system-core'
-import * as Text from '@pluralsight/ps-design-system-text'
 
 import {
   Chrome,
@@ -54,14 +53,17 @@ export default _ => (
       />
 
       <SectionHeading>Colors &amp; appearance</SectionHeading>
-      <P>
-		Colors come from the Design System. Semantics come from your heart.
-      </P>
+      <P>Colors come from the Design System. Semantics come from your heart.</P>
       <Example.React
         includes={{ Badge }}
         themeToggle
-		outputStyle={{display:'grid',gap:core.layout.spacingMedium}}
-		outputChildStyle={{margin:0,display:'grid',gridTemplateColumns:'min-content min-content',gap:core.layout.spacingMedium}}
+        outputStyle={{ display: 'grid', gap: core.layout.spacingMedium }}
+        outputChildStyle={{
+          margin: 0,
+          display: 'grid',
+          gridTemplateColumns: 'min-content min-content',
+          gap: core.layout.spacingMedium
+        }}
         orient="vertical"
         codes={Object.values(Badge.colors).map(
           color => `<Badge color={Badge.colors.${color}}>Badge</Badge>

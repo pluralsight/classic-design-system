@@ -29,7 +29,7 @@ export default {
 
   [select(themeNames.dark, appearances.default, colors.gray)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBackgroundUtility[25],
+    backgroundColor: colorsBackgroundUtility[25]
   },
   [select(themeNames.dark, appearances.default, colors.green)]: {
     color: colorsTextIcon.highOnDark,
@@ -103,7 +103,7 @@ export default {
   [select(themeNames.light, appearances.subtle, colors.gray)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsBackgroundUtility[25],
-	borderColor: 'transparent'
+    borderColor: 'transparent'
   },
   [select(themeNames.light, appearances.subtle, colors.green)]: {
     color: colorsTextIcon.highOnLight,
