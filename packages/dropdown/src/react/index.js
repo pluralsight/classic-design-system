@@ -55,13 +55,21 @@ const styles = {
     )
   },
   menu: _ => css(stylesheet['.psds-dropdown__menu']),
-  placeholder: ({ size }) => {
+  placeholder: ({ appearance, selectedLabel, size }) => {
     const label = 'psds-dropdown__placeholder'
     const isSmall = size === vars.sizes.small
-
+    const placeholderColor =
+      appearance === vars.appearances.subtle
+        ? css(
+            stylesheet[
+              `.psds-dropdown__field--appearance-${vars.appearances.subtle}.psds-dropdown__placeholder--color`
+            ]
+          )
+        : css(stylesheet['.psds-dropdown__placeholder--color'])
     return compose(
       css(stylesheet[`.${label}`]),
-      isSmall && css(stylesheet[`.${label}.psds-dropdown--small`])
+      isSmall && css(stylesheet[`.${label}.psds-dropdown--small`]),
+      !selectedLabel && placeholderColor
     )
   },
   subLabel: ({ themeName }) => {
@@ -229,7 +237,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
                 <span aria-hidden {...styles.buttonSizer(allProps)}>
                   {longestMenuItemState.label || allProps.placeholder}
                 </span>
-                <span {...styles.placeholder(allProps)}>
+                <span {...styles.placeholder({ ...allProps, selectedLabel })}>
                   {selectedLabel || allProps.placeholder}
                 </span>
               </button>
