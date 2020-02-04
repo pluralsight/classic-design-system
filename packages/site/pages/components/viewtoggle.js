@@ -66,6 +66,7 @@ export default _ => (
       </P>
       <Example.React
         includes={{ ViewToggle }}
+        themeToggle
         codes={[
           `
 <ViewToggle>
@@ -80,6 +81,7 @@ export default _ => (
       <P>Make a toggle with up to 3 options.</P>
       <Example.React
         includes={{ ViewToggle }}
+        themeToggle
         codes={[
           `
 <ViewToggle>
@@ -95,6 +97,7 @@ export default _ => (
       <P>Keep labels short. Long labels will truncate with ellipsis.</P>
       <Example.React
         includes={{ ViewToggle }}
+        themeToggle
         codes={[
           `
 <ViewToggle>
