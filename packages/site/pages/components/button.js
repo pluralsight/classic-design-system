@@ -24,6 +24,8 @@ import {
   ThemeToggle
 } from '../../src/ui/index.js'
 
+const featureFlags = { psds2020Colors: true }
+
 export default _ => (
   <Chrome>
     <Content title="Button">
@@ -102,6 +104,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
       <P>Buttons come in three standard visual styles.</P>
       <Example.React
         themeToggle
+        featureFlags={featureFlags}
         includes={{ Button }}
         codes={Object.keys(Button.appearances).map(
           a => `<Button appearance={Button.appearances.${a}}>Click me</Button>`
@@ -110,6 +113,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
       <SectionHeading>Size</SectionHeading>
       <P>Buttons come in four standard sizes. The default size is 'medium'.</P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         includes={{ Button }}
         codes={Object.keys(Button.sizes).map(
@@ -122,6 +126,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
         <Link href="/components/icon">icon docs</Link>.
       </P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         includes={{ Button, CheckIcon, ChannelIcon, PlayIcon }}
         codes={[
@@ -140,6 +145,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
         Read more <Link href="/components/icon">icon docs</Link>.
       </P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         includes={{ Button, UserIcon }}
         codes={[
@@ -158,6 +164,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
         for non-disabled buttons.
       </P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         includes={{ Button, PencilIcon }}
         codes={[
@@ -175,6 +182,7 @@ npm install @pluralsight/ps-design-system-featureflags`}
         anchor tag.
       </P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         includes={{ Button, PencilIcon }}
         codes={[
@@ -229,6 +237,7 @@ const ButtonLink = withRouter(props => (
         replaces your text.
       </P>
       <Example.React
+        featureFlags={featureFlags}
         themeToggle
         orient="vertical"
         includes={{ Button, UserIcon }}

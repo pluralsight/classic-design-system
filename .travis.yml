@@ -9,7 +9,6 @@ if: type != push OR (tag IS blank AND branch = master)
 install:
   - npm install
 
-
 before_script:
   - export NODE_OPTIONS=--max_old_space_size=4096
 
