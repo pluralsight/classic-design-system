@@ -55,7 +55,7 @@ const styles = {
     )
   },
   menu: _ => css(stylesheet['.psds-dropdown__menu']),
-  placeholder: ({ size, selectedLabel, appearance }) => {
+  placeholder: ({ appearance, selectedLabel, size }) => {
     const label = 'psds-dropdown__placeholder'
     const isSmall = size === vars.sizes.small
     const placeholderColor =
