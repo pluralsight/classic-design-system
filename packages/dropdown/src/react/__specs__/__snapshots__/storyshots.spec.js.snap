@@ -36,7 +36,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -121,7 +121,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-1pnvt9=""
                 />
                 <span
-                  data-css-1qy54zb=""
+                  data-css-1yk08w2=""
                 />
               </button>
               <div
@@ -176,7 +176,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-1pnvt9=""
                 />
                 <span
-                  data-css-1qy54zb=""
+                  data-css-1yk08w2=""
                 />
               </button>
               <div
@@ -250,7 +250,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-1pnvt9=""
                 />
                 <span
-                  data-css-1qy54zb=""
+                  data-css-4goio8=""
                 />
               </button>
               <div
@@ -305,7 +305,7 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-1pnvt9=""
                 />
                 <span
-                  data-css-1qy54zb=""
+                  data-css-4goio8=""
                 />
               </button>
               <div
@@ -387,7 +387,7 @@ exports[`Storyshots appearance medium default 1`] = `
               The placeholder 
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               The placeholder 
             </span>
@@ -450,7 +450,7 @@ exports[`Storyshots appearance medium subtle 1`] = `
               The placeholder 
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-4goio8=""
             >
               The placeholder 
             </span>
@@ -513,7 +513,7 @@ exports[`Storyshots appearance small default 1`] = `
               The placeholder 
             </span>
             <span
-              data-css-co7lhr=""
+              data-css-iff4wh=""
             >
               The placeholder 
             </span>
@@ -576,7 +576,7 @@ exports[`Storyshots appearance small subtle 1`] = `
               The placeholder 
             </span>
             <span
-              data-css-co7lhr=""
+              data-css-1fqmm62=""
             >
               The placeholder 
             </span>
@@ -642,7 +642,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-4goio8=""
             />
           </button>
           <div
@@ -728,7 +728,7 @@ exports[`Storyshots disabled compare 1`] = `
                 I'm normal, see
               </span>
               <span
-                data-css-1qy54zb=""
+                data-css-1yk08w2=""
               >
                 I'm normal, see
               </span>
@@ -790,7 +790,7 @@ exports[`Storyshots disabled compare 1`] = `
                 I'm untouchable
               </span>
               <span
-                data-css-1qy54zb=""
+                data-css-1yk08w2=""
               >
                 I'm untouchable
               </span>
@@ -857,7 +857,7 @@ exports[`Storyshots focus autofocus with ref 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -918,7 +918,7 @@ exports[`Storyshots focus disabled 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -978,7 +978,7 @@ exports[`Storyshots focus onBlur 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -1038,7 +1038,7 @@ exports[`Storyshots focus onFocus 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -1104,7 +1104,7 @@ exports[`Storyshots labels all 1`] = `
               Some placeholder
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               Some placeholder
             </span>
@@ -1175,7 +1175,7 @@ exports[`Storyshots labels label 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -1239,7 +1239,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -1303,7 +1303,7 @@ exports[`Storyshots labels none 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -1364,7 +1364,7 @@ exports[`Storyshots labels placeholder 1`] = `
               some placeholder
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               some placeholder
             </span>
@@ -1425,7 +1425,7 @@ exports[`Storyshots labels subLabel 1`] = `
               data-css-1pnvt9=""
             />
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -1654,7 +1654,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-1pnvt9=""
               />
               <span
-                data-css-1qy54zb=""
+                data-css-1yk08w2=""
               />
             </button>
             <div
@@ -1713,7 +1713,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-1pnvt9=""
               />
               <span
-                data-css-1qy54zb=""
+                data-css-1yk08w2=""
               />
             </button>
             <div
@@ -1791,7 +1791,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-1pnvt9=""
               />
               <span
-                data-css-1qy54zb=""
+                data-css-4goio8=""
               />
             </button>
             <div
@@ -1850,7 +1850,7 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-1pnvt9=""
               />
               <span
-                data-css-1qy54zb=""
+                data-css-4goio8=""
               />
             </button>
             <div
@@ -1946,7 +1946,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                   Filter
                 </span>
                 <span
-                  data-css-1qy54zb=""
+                  data-css-4goio8=""
                 >
                   Filter
                 </span>
@@ -2024,7 +2024,7 @@ exports[`Storyshots menu divider 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -2092,7 +2092,7 @@ exports[`Storyshots menu in stack 1`] = `
                   Three and the amazing item
                 </span>
                 <span
-                  data-css-1qy54zb=""
+                  data-css-1yk08w2=""
                 >
                   Select one
                 </span>
@@ -2151,7 +2151,7 @@ exports[`Storyshots menu in stack 1`] = `
                   Three and the amazing item
                 </span>
                 <span
-                  data-css-1qy54zb=""
+                  data-css-1yk08w2=""
                 >
                   Select another one
                 </span>
@@ -2221,7 +2221,7 @@ exports[`Storyshots menu nested 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               Select another one
             </span>
@@ -2289,7 +2289,7 @@ exports[`Storyshots menu onClicks 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-4goio8=""
             >
               Select another one
             </span>
@@ -2376,7 +2376,7 @@ exports[`Storyshots menu single list 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -2442,7 +2442,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               Select one
             </span>
@@ -2510,7 +2510,7 @@ exports[`Storyshots menu super long 1`] = `
               This level really is the longest level that anyone has ever seen. There is none longer
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -2576,7 +2576,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
               The longest in el mundo. Find me!
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -2642,7 +2642,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
               This one is longer than any menu item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               This one is longer than any menu item
             </span>
@@ -2710,7 +2710,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -2776,7 +2776,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
               Three item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               Two item
             </span>
@@ -2845,7 +2845,7 @@ exports[`Storyshots props whitelist title 1`] = `
               One item
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             />
           </button>
           <div
@@ -2994,7 +2994,7 @@ exports[`Storyshots whitelist name 1`] = `
               I have a form name
             </span>
             <span
-              data-css-1qy54zb=""
+              data-css-1yk08w2=""
             >
               I have a form name
             </span>

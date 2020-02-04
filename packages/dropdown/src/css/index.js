@@ -135,6 +135,12 @@ export default {
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis'
   },
+  '.psds-dropdown__placeholder--color': {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-dropdown__field--appearance-${vars.appearances.subtle}.psds-dropdown__placeholder--color`]: {
+    color: colorsTextIcon.lowOnDark
+  },
   '.psds-dropdown__placeholder.psds-dropdown--small': {
     left: layout.spacingXSmall,
     top: layout.spacingXXSmall
