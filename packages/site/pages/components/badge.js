@@ -1,6 +1,6 @@
 import React from 'react'
 import Badge from '@pluralsight/ps-design-system-badge'
-import * as Text from '@pluralsight/ps-design-system-text'
+import * as core from '@pluralsight/ps-design-system-core'
 
 import {
   Chrome,
@@ -52,31 +52,22 @@ export default _ => (
         ]}
       />
 
-      <SectionHeading>Appearance</SectionHeading>
-      <P>
-        In either solid or stroked styles. The stroke appearance should not be
-        used with the light theme
-      </P>
-      <Example.React
-        includes={{ Badge }}
-        themeToggle
-        codes={Object.values(Badge.appearances).map(
-          a => `<Badge appearance={Badge.appearances.${a}}>Badge</Badge>`
-        )}
-      />
-
-      <SectionHeading>Colors</SectionHeading>
+      <SectionHeading>Colors &amp; appearance</SectionHeading>
       <P>Colors come from the Design System. Semantics come from your heart.</P>
-      <P>
-        To get the light colors, <Text.Code>Badge.appearances.subtle</Text.Code>{' '}
-        must be used.
-      </P>
       <Example.React
         includes={{ Badge }}
         themeToggle
+        outputStyle={{ display: 'grid', gap: core.layout.spacingMedium }}
+        outputChildStyle={{
+          margin: 0,
+          display: 'grid',
+          gridTemplateColumns: 'min-content min-content',
+          gap: core.layout.spacingMedium
+        }}
         orient="vertical"
         codes={Object.values(Badge.colors).map(
-          color => `<Badge color={Badge.colors.${color}}>Badge</Badge>`
+          color => `<Badge color={Badge.colors.${color}}>Badge</Badge>
+<Badge color={Badge.colors.${color}} appearance={Badge.appearances.subtle}>Badge</Badge>`
         )}
       />
     </Content>

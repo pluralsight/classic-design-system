@@ -1,4 +1,5 @@
 import {
+  colorsBackgroundDark,
   colorsBackgroundUtility,
   colorsTextIcon,
   layout,
@@ -28,8 +29,7 @@ export default {
 
   [select(themeNames.dark, appearances.default, colors.gray)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBackgroundUtility[25],
-    borderColor: colorsBackgroundUtility[25]
+    backgroundColor: colorsBackgroundUtility[25]
   },
   [select(themeNames.dark, appearances.default, colors.green)]: {
     color: colorsTextIcon.highOnDark,
@@ -37,7 +37,7 @@ export default {
     borderColor: colorsGreen.base
   },
   [select(themeNames.dark, appearances.default, colors.yellow)]: {
-    color: '#181818',
+    color: colorsTextIcon.highOnLight,
     backgroundColor: colorsYellow.base,
     borderColor: colorsYellow.base
   },
@@ -53,9 +53,9 @@ export default {
   },
 
   [select(themeNames.light, appearances.default, colors.gray)]: {
-    color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsBackgroundUtility[25],
-    borderColor: colorsBackgroundUtility[25]
+    color: colorsTextIcon.highOnDark,
+    backgroundColor: colorsBackgroundDark[3],
+    borderColor: colorsBackgroundDark[3]
   },
   [select(themeNames.light, appearances.default, colors.green)]: {
     color: colorsTextIcon.highOnDark,
@@ -63,7 +63,7 @@ export default {
     borderColor: colorsGreen.base
   },
   [select(themeNames.light, appearances.default, colors.yellow)]: {
-    color: '#181818',
+    color: colorsTextIcon.highOnLight,
     backgroundColor: colorsYellow.base,
     borderColor: colorsYellow.base
   },
@@ -91,19 +91,19 @@ export default {
     borderColor: colorsYellow.base
   },
   [select(themeNames.dark, appearances.subtle, colors.red)]: {
-    color: colorsRed.base,
+    color: colorsRed[5],
     borderColor: colorsRed.base
   },
 
   [select(themeNames.dark, appearances.subtle, colors.blue)]: {
-    color: colorsBlue.base,
+    color: colorsBlue[5],
     borderColor: colorsBlue.base
   },
 
   [select(themeNames.light, appearances.subtle, colors.gray)]: {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsBackgroundUtility[25],
-    borderColor: colorsBackgroundUtility[25]
+    borderColor: 'transparent'
   },
   [select(themeNames.light, appearances.subtle, colors.green)]: {
     color: colorsTextIcon.highOnLight,
@@ -122,7 +122,7 @@ export default {
   },
   [select(themeNames.light, appearances.subtle, colors.blue)]: {
     color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsBlue[3],
-    borderColor: colorsBlue[3]
+    backgroundColor: colorsBlue[1],
+    borderColor: colorsBlue[1]
   }
 }
