@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@9.0.6...@pluralsight/ps-design-system-row@9.0.7) (2020-02-04)
+
+
+### Bug Fixes
+
+* named imports from core ([4ba16f5](https://github.com/pluralsight/design-system/commit/4ba16f548e665bdf86bf2a8e1875a1f58bceb33c))
+
+
+
+
+
 ## [9.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@9.0.5...@pluralsight/ps-design-system-row@9.0.6) (2020-01-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-row

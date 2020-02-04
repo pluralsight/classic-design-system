@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.6.4...@pluralsight/ps-design-system-site@17.7.0) (2020-02-04)
+
+
+### Features
+
+* **site:** add featureflags peer dep doc ([34e0184](https://github.com/pluralsight/design-system/commit/34e0184ef5fe73eaf8fe068b89a7ba951fbe504c)), closes [#854](https://github.com/pluralsight/design-system/issues/854)
+
+
+
+
+
 ## [17.6.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.6.3...@pluralsight/ps-design-system-site@17.6.4) (2020-01-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

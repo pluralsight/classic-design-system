@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.1...@pluralsight/ps-design-system-core@5.5.2) (2020-02-04)
+
+
+### Bug Fixes
+
+* **core:** enables tree shaking of core ([f69cbcf](https://github.com/pluralsight/design-system/commit/f69cbcf30eeaa19a35b0780adb770d2911d2ab8a))
+
+
+
+
+
 ## [5.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.0...@pluralsight/ps-design-system-core@5.5.1) (2020-01-30)
 
 

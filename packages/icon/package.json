@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "17.1.3",
+  "version": "17.1.4",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -28,7 +28,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^5.5.1",
+    "@pluralsight/ps-design-system-core": "^5.5.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
     "arg": "^4.1.1",
     "fast-glob": "^3.1.0",
@@ -41,9 +41,9 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.10",
+    "@pluralsight/ps-design-system-build": "^1.11.11",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.9",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.16",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.17",
     "ncp": "^2.0.0"
   }
 }
