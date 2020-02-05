@@ -11,6 +11,8 @@
     "start": "next -p 1337"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.5.5",
+    "@next/mdx": "^9.2.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-standalone": "^6.26.0",

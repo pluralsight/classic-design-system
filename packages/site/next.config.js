@@ -7,9 +7,11 @@ const glob = require('glob')
 const globAsync = util.promisify(glob)
 const webpack = require('webpack')
 
-module.exports = {
+const withMDX = require('@next/mdx')({ extension: /\.mdx?$/ })
+
+module.exports = withMDX({
   exportPathMap: async function(defaultPathMap) {
-    const files = await globAsync(`pages/**/*.js`)
+    const files = await globAsync(`pages/**/*.{mdx,js}`)
     const matchExtension = /\.[^/.]+$/
 
     return files
@@ -22,6 +24,8 @@ module.exports = {
         {}
       )
   },
+
+  pageExtensions: ['js', 'mdx'],
 
   webpack(config, options) {
     const originalEntry = config.entry
@@ -65,4 +69,4 @@ module.exports = {
 
     return config
   }
-}
+})
