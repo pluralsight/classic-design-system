@@ -17,6 +17,7 @@
     "core-js": "^3.3.6",
     "debounce": "^1.2.0",
     "dotenv": "^8.2.0",
+    "glob": "^7.1.6",
     "http-server": "^0.11.1",
     "isomorphic-fetch": "^2.2.1",
     "next": "9.1.7",
