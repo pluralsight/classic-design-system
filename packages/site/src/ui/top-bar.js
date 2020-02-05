@@ -11,7 +11,7 @@ export default _ => (
       .bar {
         display: block;
         height: ${cssVars.topBarHeight};
-        background: ${core.colors.gradientHorz};
+        background: ${core.colorsGradient.skillsBackground};
       }
     `}</style>
   </div>

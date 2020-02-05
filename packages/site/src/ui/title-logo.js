@@ -14,14 +14,14 @@ const TitleLogo = props => (
     </g>
     <style jsx>{`
       .titleSvg {
-        fill: ${core.colors.gray03};
+        fill: ${core.colorsTextIcon.highOnLight};
         height: 24px;
         width: 201px;
         max-width: 100%;
       }
       @media screen and (min-width: 769px) {
         .titleSvg {
-          fill: ${core.colors.white};
+          fill: ${core.colorsWhite};
           height: 56px;
           width: 486px;
         }

@@ -42,11 +42,11 @@ const PropTypesRow = props => (
     </Table.Cell>
     <style jsx>{`
       .nameCode {
-        color: ${core.colors.pink};
+        color: ${core.colorsPink[8]};
       }
       .maybeCode :global(code) {
         white-space: normal;
-        color: ${core.colors.blue};
+        color: ${core.colorsBlue[8]};
       }
     `}</style>
   </Table.Row>

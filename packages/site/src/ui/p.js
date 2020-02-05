@@ -9,7 +9,7 @@ export default function Paragraph(props) {
       <P>{props.children}</P>
       <style jsx>{`
         .p :global(p) {
-          color: ${core.colors.gray04};
+          color: ${core.colorsTextIcon.highOnLight};
         }
       `}</style>
     </div>

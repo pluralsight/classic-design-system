@@ -10,7 +10,7 @@ export default _ => (
       letter-spacing: 0.3px;
       word-spacing: 1px;
       background: #272822;
-      color: ${core.colors.bone};
+      color: ${core.colorsTextIcon.highOnDark};
     }
     .cm-s-ps-codemirror .CodeMirror-lines {
       padding: 8px 0;
@@ -33,7 +33,7 @@ export default _ => (
       background: #49483e;
     }
     .cm-s-ps-codemirror .cm-comment {
-      color: ${core.colors.gray02};
+      color: ${core.colorsTextIcon.lowOnDark};
     }
     .cm-s-ps-codemirror .cm-string {
       color: ${core.colors.codeGreen};
@@ -61,7 +61,7 @@ export default _ => (
       color: ${core.colors.codeBlue};
     }
     .cm-s-ps-codemirror .cm-operator {
-      color: ${core.colors.bone};
+      color: ${core.colorsTextIcon.lowOnDark};
     }
     .cm-s-ps-codemirror .CodeMirror-linenumber {
       color: #75715e;

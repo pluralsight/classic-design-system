@@ -24,7 +24,7 @@ export default function MobileMenuBar(props) {
           justify-content: center;
           align-items: center;
           height: 69px;
-          background: ${core.colors.bone};
+          background: ${core.colorsBackgroundLight[2]};
         }
         .burger {
           position: absolute;
@@ -36,15 +36,12 @@ export default function MobileMenuBar(props) {
           border: 0;
           background: none;
           cursor: pointer;
-          color: ${core.colors.gray03};
+          color: ${core.colorsTextIcon.lowOnLight};
           transition: all ${core.motion.speedXFast} linear;
         }
         .burger:hover,
         .burger:focus {
-          color: ${core.colors.black};
-        }
-        .burger:focus {
-          outline: 1px solid ${core.colors.black};
+          color: ${core.colorsTextIcon.highOnLight};
         }
         .title {
           text-align: center;

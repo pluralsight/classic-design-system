@@ -1,25 +1,76 @@
 import 'isomorphic-fetch'
 
+import PropTypes from 'prop-types'
+import React, { useEffect, useState } from 'react'
+
 import * as core from '@pluralsight/ps-design-system-core'
 import { colors as iconColors } from '@pluralsight/ps-design-system-icon'
-import PropTypes from 'prop-types'
-import React from 'react'
 
 import { GithubIcon, TextLink } from './index.js'
 
-const ChangeLog = props => {
-  const changeLogUrl = `https://github.com/pluralsight/design-system/blob/master/packages/${props.packageName}/CHANGELOG.md`
-  const label = props.version ? `v${props.version}` : 'CHANGELOG'
+export default function ChangeLog(props) {
+  const { packageName } = props
+  const [packages, setPackages] = useState([])
+
+  useEffect(() => {
+    let cancelled = false
+
+    async function fetchPackages() {
+      try {
+        const host = getPackagesApiHost()
+        const endpoint = `${host}/api/v2/packages`
+
+        const res = await fetch(endpoint)
+        const json = await res.json()
+
+        if (!res.ok) throw new Error('changelog request failed')
+        if (cancelled) return
+
+        setPackages(json.data)
+      } catch (err) {
+        console.error(err)
+      }
+    }
+
+    fetchPackages()
+
+    return () => {
+      cancelled = true
+    }
+  }, [packageName])
+
   return (
-    <div className="version">
-      <TextLink href={changeLogUrl} target="_blank">
-        <span className="text">
-          {label}
-          <div className="icon">
-            <GithubIcon color={iconColors.orange} />
-          </div>
-        </span>
-      </TextLink>
+    <ChangeLogLabel
+      version={packages[`@pluralsight/ps-design-system-${packageName}`]}
+      packageName={packageName}
+    />
+  )
+}
+
+ChangeLog.propTypes = {
+  packageName: PropTypes.string.isRequired
+}
+
+function ChangeLogLabel(props) {
+  const { packageName, version } = props
+
+  const label = version ? `v${version}` : 'CHANGELOG'
+  const changeLogUrl = `https://github.com/pluralsight/design-system/blob/master/packages/${packageName}/CHANGELOG.md`
+
+  return (
+    <>
+      <div className="version">
+        <TextLink href={changeLogUrl} target="_blank">
+          <span className="text">
+            {label}
+
+            <div className="icon">
+              <GithubIcon color={iconColors.orange} />
+            </div>
+          </span>
+        </TextLink>
+      </div>
+
       <style jsx>{`
         .version {
           font-size: ${core.type.fontSizeSmall};
@@ -34,61 +85,17 @@ const ChangeLog = props => {
           margin-left: ${core.layout.spacingXSmall};
         }
       `}</style>
-    </div>
+    </>
   )
 }
-ChangeLog.propTypes = {
-  packageName: PropTypes.string,
+
+ChangeLogLabel.propTypes = {
+  packageName: PropTypes.string.isRequired,
   version: PropTypes.string
 }
 
-const getPackagesApiHost = _ => {
+const getPackagesApiHost = () => {
   const host = process.env.PACKAGES_API_HOST
   if (!host) throw new Error('process.env.PACKAGES_API_HOST required')
   return host
-}
-
-export default class ChangeLogContainer extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { packages: null }
-  }
-
-  async fetchPackages() {
-    console.log('fetching packages...')
-    try {
-      const res = await fetch(getPackagesApiHost() + '/api/v2/packages') // eslint-disable-line no-undef
-      const json = await res.json()
-      if (res.ok) {
-        console.log('res.ok', res, json)
-        this.setState(_ => ({ packages: json.data }))
-      } else {
-        console.log('res.!ok', res)
-      }
-    } catch (err) {
-      console.log('err', err)
-    }
-  }
-
-  componentDidMount() {
-    if (this.props.packageName) this.fetchPackages()
-  }
-
-  render() {
-    return this.state.packages ? (
-      <ChangeLog
-        version={
-          this.state.packages[
-            `@pluralsight/ps-design-system-${this.props.packageName}`
-          ]
-        }
-        packageName={this.props.packageName}
-      />
-    ) : (
-      <ChangeLog packageName={this.props.packageName} />
-    )
-  }
-}
-ChangeLogContainer.propTypes = {
-  packageName: PropTypes.string
 }

@@ -54,10 +54,10 @@ function Themeable(props) {
           position: relative;
         }
         .themeable-dark {
-          background: ${core.colors.gray06};
+          background: ${core.colorsBackgroundDark[1]};
         }
         .themeable-light {
-          background: ${core.colors.bone};
+          background: ${core.colorsBackgroundLight[1]};
         }
       `}</style>
 

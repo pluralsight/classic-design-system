@@ -59,8 +59,7 @@ export default class SectionHeading extends React.Component {
             text-decoration: none;
           }
           .link:focus {
-            background: ${core.colors.gradientHorz};
-            color: ${core.colors.white};
+            background: ${core.colorsBackgroundLight[1]};
             outline: none;
           }
           .notice {

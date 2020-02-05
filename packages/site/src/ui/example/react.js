@@ -40,15 +40,15 @@ const OutputDecorationGlobalStyles = _ => (
       flex-direction: column;
       justify-content: flex-start;
       padding: ${core.layout.spacingXLarge} ${core.layout.spacingLarge};
-      background: ${core.colors.gray06};
+      background: ${core.colorsBackgroundDark[1]};
       overflow: hidden;
     }
     .outputLight {
-      background: ${core.colors.bone};
+      background: ${core.colorsBackgroundLight[1]};
     }
     .outputChild {
       margin: ${core.layout.spacingLarge} 0 0 0;
-      color: ${core.colors.white};
+      color: ${core.colorsTextIcon.highOnDark};
       width: 100%;
     }
     .outputChild:first-child {
@@ -218,8 +218,8 @@ class ReactExample extends React.Component {
         {this.state.error}
         <style jsx>{`
           .error {
-            background: ${core.colors.red};
-            color: ${core.colors.white};
+            background: ${core.colorsStatus.error};
+            color: ${core.colorsTextIcon.highOnDark};
             overflow: hidden;
             padding: ${core.layout.spacingLarge};
           }

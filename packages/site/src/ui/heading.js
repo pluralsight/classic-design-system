@@ -31,7 +31,7 @@ const HeadingComponent = props => (
       .heading :global(h2),
       .heading :global(h3),
       .heading :global(h4) {
-        color: ${core.colors.gray06};
+        color: ${core.colorsTextIcon.highOnLight};
       }
       .heading.${Heading.sizes.large} :global(h1),
       .heading.${Heading.sizes.large} :global(h2),

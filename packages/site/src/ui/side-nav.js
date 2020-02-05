@@ -19,7 +19,7 @@ const Group = props => (
     <style jsx>{`
       .group {
         padding: ${core.layout.spacingSmall} ${core.layout.spacingLarge};
-        border-top: 1px solid ${core.colors.gray01};
+        border-top: 1px solid ${core.colorsBorder.lowOnLight};
       }
     `}</style>
   </div>
@@ -35,7 +35,7 @@ const GroupTitle = props => (
     <style jsx>{`
       .groupTitle {
         margin: 0;
-        color: ${core.colors.black};
+        color: ${core.colorsTextIcon.highOnLight};
         font-size: ${core.type.fontSizeXSmall};
         line-height: ${core.type.lineHeightExtra};
         font-weight: ${core.type.fontWeightMedium};
@@ -82,19 +82,19 @@ const InternalLinks = ({ headings = [] }) => {
           display: block;
           height: calc(100% - (2 * ${core.layout.spacingXSmall}));
           width: 0;
-          border-left: 1px solid ${core.colors.gray01};
+          border-left: 1px solid ${core.colorsBorder.lowOnLight};
         }
         .link {
           display: block;
           font-size: ${core.type.fontSizeXSmall};
           line-height: ${core.type.lineHeightExtra};
-          color: ${core.colors.gray03};
+          color: ${core.colorsTextIcon.lowOnLight};
           white-space: nowrap;
           cursor: pointer;
           transition: all ${core.motion.speedXFast} ease-in-out;
         }
         .link:hover {
-          color: ${core.colors.black};
+          color: ${core.colorsTextIcon.highOnLight};
           text-decoration: none;
         }
       `}</style>
@@ -126,7 +126,7 @@ class RouterUnawareNavLink extends React.Component {
             height: 8px;
             width: 0px;
             margin-right: 0px;
-            background: ${core.colors.gradientHorz};
+            background: ${core.colorsPrimaryAction.background};
             transition: all ${core.motion.speedXFast} ease-in-out;
           }
           .navLink :global(a) {
@@ -137,12 +137,12 @@ class RouterUnawareNavLink extends React.Component {
             align-items: center;
             font-size: ${core.type.fontSizeSmall};
             line-height: ${core.type.lineHeightExtra};
-            color: ${core.colors.gray03};
+            color: ${core.colorsTextIcon.lowOnLight};
             white-space: nowrap;
             transition: all ${core.motion.speedXFast} ease-in-out;
           }
           .navLink .link:hover {
-            color: ${core.colors.black};
+            color: ${core.colorsTextIcon.highOnLight};
             text-decoration: none;
           }
           .link:hover .box {
@@ -151,7 +151,7 @@ class RouterUnawareNavLink extends React.Component {
             margin-right: 12px;
           }
           .linkActive {
-            color: ${core.colors.black};
+            color: ${core.colorsTextIcon.highOnLight};
             font-weight: ${core.type.fontWeightBold};
           }
           .linkActive .box {
@@ -255,14 +255,14 @@ const Logo = _ => (
           letter-spacing: 0.15em;
           font-size: ${core.type.fontSizeXSmall};
           font-weight: ${core.type.fontWeightMedium};
-          color: ${core.colors.black};
+          color: ${core.colorsTextIcon.highOnLight};
           font-family: ${core.type.fontFamily};
           text-transform: uppercase;
         }
         .textTitle {
           display: block;
           font-size: 8px;
-          color: ${core.colors.gray03};
+          color: ${core.colorsTextIcon.highOnLight};
           font-weight: ${core.type.fontWeightMedium};
           text-transform: uppercase;
         }
@@ -286,16 +286,16 @@ const Close = props => (
         padding: 0;
         margin: ${core.layout.spacingLarge};
         cursor: pointer;
-        color: ${core.colors.gray03};
+        color: ${core.colorsTextIcon.lowOnLight};
         line-height: 0;
         transition: all ${core.motion.speedXFast} linear;
       }
       .button:hover,
       .button:focus {
-        color: ${core.colors.black};
+        color: ${core.colorsTextIcon.highOnLight};
       }
       .button:focus {
-        background: ${core.colors.gray01};
+        color: ${core.colorsTextIcon.highOnLight};
         border-radius: 2px;
       }
       @media screen and (min-width: 769px) {
@@ -483,11 +483,11 @@ const SideNav = withHeadings(props => (
         position: fixed;
         top: 0;
         left: 0;
-        border-right: 1px solid ${core.colors.gray01};
+        border-right: 1px solid ${core.colorsBorder.lowOnLight};
         transform: translateX(calc(-1 * ${css.sidenavWidth}));
         height: 100vh;
         width: ${css.sidenavWidth};
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         overflow-x: hidden;
         overflow-y: auto;
         transition: transform ${core.motion.speedXFast} ease-in-out;
