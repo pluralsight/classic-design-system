@@ -15,7 +15,7 @@ module.exports = {
     return files
       .map(filename => filename.replace('pages', ''))
       .map(filename => filename.replace(matchExtension, ''))
-      .map(filename => filename.replace('index', ''))
+      .map(filename => filename.replace('/index', ''))
       .filter(filename => !filename.startsWith('/_'))
       .reduce(
         (acc, filename) => ({ ...acc, [filename]: { page: filename } }),
