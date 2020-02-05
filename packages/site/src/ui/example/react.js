@@ -234,10 +234,12 @@ class ReactExample extends React.Component {
         {this.renderError()}
 
         {this.props.themeToggle && (
-          <ThemeToggle
-            activeThemeName={this.state.themeName}
-            onSelect={this.handleThemeSelect}
-          />
+          <Theme name={this.state.themeName}>
+            <ThemeToggle
+              activeThemeName={this.state.themeName}
+              onSelect={this.handleThemeSelect}
+            />
+          </Theme>
         )}
 
         <div ref={this.outputEl} />
