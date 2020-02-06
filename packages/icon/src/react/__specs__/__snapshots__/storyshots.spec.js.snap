@@ -2,7 +2,7 @@
 
 exports[`Storyshots appearance blue 1`] = `
 <div
-  data-css-10yvgv3=""
+  data-css-1cmuuoq=""
 >
   <svg
     aria-label="check icon"
@@ -18,7 +18,7 @@ exports[`Storyshots appearance blue 1`] = `
 
 exports[`Storyshots appearance green 1`] = `
 <div
-  data-css-123ye8j=""
+  data-css-34vomf=""
 >
   <svg
     aria-label="check icon"
@@ -34,7 +34,7 @@ exports[`Storyshots appearance green 1`] = `
 
 exports[`Storyshots appearance red 1`] = `
 <div
-  data-css-1tmld6c=""
+  data-css-1blzrm4=""
 >
   <svg
     aria-label="check icon"
@@ -50,7 +50,7 @@ exports[`Storyshots appearance red 1`] = `
 
 exports[`Storyshots appearance textIconHighOnDark 1`] = `
 <div
-  data-css-o1xz16=""
+  data-css-p3lka6=""
 >
   <svg
     aria-label="check icon"
@@ -66,7 +66,7 @@ exports[`Storyshots appearance textIconHighOnDark 1`] = `
 
 exports[`Storyshots appearance textIconHighOnLight 1`] = `
 <div
-  data-css-1oejax5=""
+  data-css-6h7wru=""
 >
   <svg
     aria-label="check icon"
@@ -82,7 +82,7 @@ exports[`Storyshots appearance textIconHighOnLight 1`] = `
 
 exports[`Storyshots appearance textIconLowOnDark 1`] = `
 <div
-  data-css-4u8mez=""
+  data-css-f42zkr=""
 >
   <svg
     aria-label="check icon"
@@ -98,7 +98,7 @@ exports[`Storyshots appearance textIconLowOnDark 1`] = `
 
 exports[`Storyshots appearance textIconLowOnLight 1`] = `
 <div
-  data-css-iirnyq=""
+  data-css-1j19xd0=""
 >
   <svg
     aria-label="check icon"
@@ -114,7 +114,7 @@ exports[`Storyshots appearance textIconLowOnLight 1`] = `
 
 exports[`Storyshots appearance yellow 1`] = `
 <div
-  data-css-c9yg4r=""
+  data-css-1a8094h=""
 >
   <svg
     aria-label="check icon"
@@ -130,7 +130,7 @@ exports[`Storyshots appearance yellow 1`] = `
 
 exports[`Storyshots custom icon aria-label 1`] = `
 <div
-  data-css-o1xz16=""
+  data-css-p3lka6=""
 >
   <svg
     aria-label="account icon"
@@ -146,7 +146,7 @@ exports[`Storyshots custom icon aria-label 1`] = `
 
 exports[`Storyshots custom props aria-label 1`] = `
 <div
-  data-css-o1xz16=""
+  data-css-p3lka6=""
 >
   <svg
     aria-label="completed"
@@ -162,7 +162,7 @@ exports[`Storyshots custom props aria-label 1`] = `
 
 exports[`Storyshots names AccountIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="account icon"
@@ -178,7 +178,7 @@ exports[`Storyshots names AccountIcon 1`] = `
 
 exports[`Storyshots names AnalyticsIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="analytics icon"
@@ -196,7 +196,7 @@ exports[`Storyshots names AnalyticsIcon 1`] = `
 
 exports[`Storyshots names ArrowDownIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="arrow down icon"
@@ -214,7 +214,7 @@ exports[`Storyshots names ArrowDownIcon 1`] = `
 
 exports[`Storyshots names ArrowDownRightIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="arrow down right icon"
@@ -230,7 +230,7 @@ exports[`Storyshots names ArrowDownRightIcon 1`] = `
 
 exports[`Storyshots names ArrowLeftIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="arrow left icon"
@@ -248,7 +248,7 @@ exports[`Storyshots names ArrowLeftIcon 1`] = `
 
 exports[`Storyshots names ArrowRightIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="arrow right icon"
@@ -266,7 +266,7 @@ exports[`Storyshots names ArrowRightIcon 1`] = `
 
 exports[`Storyshots names ArrowUpIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="arrow up icon"
@@ -284,7 +284,7 @@ exports[`Storyshots names ArrowUpIcon 1`] = `
 
 exports[`Storyshots names ArrowUpRightIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="arrow up right icon"
@@ -300,7 +300,7 @@ exports[`Storyshots names ArrowUpRightIcon 1`] = `
 
 exports[`Storyshots names ArticleIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="article icon"
@@ -316,7 +316,7 @@ exports[`Storyshots names ArticleIcon 1`] = `
 
 exports[`Storyshots names AuthorKitIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="author kit icon"
@@ -334,7 +334,7 @@ exports[`Storyshots names AuthorKitIcon 1`] = `
 
 exports[`Storyshots names AuthorsNestIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="authors nest icon"
@@ -352,7 +352,7 @@ exports[`Storyshots names AuthorsNestIcon 1`] = `
 
 exports[`Storyshots names BellIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="bell icon"
@@ -370,7 +370,7 @@ exports[`Storyshots names BellIcon 1`] = `
 
 exports[`Storyshots names BellRungIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="bell rung icon"
@@ -388,7 +388,7 @@ exports[`Storyshots names BellRungIcon 1`] = `
 
 exports[`Storyshots names BookmarkFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="bookmark fill icon"
@@ -404,7 +404,7 @@ exports[`Storyshots names BookmarkFillIcon 1`] = `
 
 exports[`Storyshots names BookmarkIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="bookmark icon"
@@ -420,7 +420,7 @@ exports[`Storyshots names BookmarkIcon 1`] = `
 
 exports[`Storyshots names BriefcaseIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="briefcase icon"
@@ -438,7 +438,7 @@ exports[`Storyshots names BriefcaseIcon 1`] = `
 
 exports[`Storyshots names BrowseIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="browse icon"
@@ -456,7 +456,7 @@ exports[`Storyshots names BrowseIcon 1`] = `
 
 exports[`Storyshots names BuildingIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="building icon"
@@ -474,7 +474,7 @@ exports[`Storyshots names BuildingIcon 1`] = `
 
 exports[`Storyshots names CalendarIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="calendar icon"
@@ -490,7 +490,7 @@ exports[`Storyshots names CalendarIcon 1`] = `
 
 exports[`Storyshots names CaretAltDownIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret alt down icon"
@@ -508,7 +508,7 @@ exports[`Storyshots names CaretAltDownIcon 1`] = `
 
 exports[`Storyshots names CaretAltLeftIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret alt left icon"
@@ -526,7 +526,7 @@ exports[`Storyshots names CaretAltLeftIcon 1`] = `
 
 exports[`Storyshots names CaretAltRightIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret alt right icon"
@@ -544,7 +544,7 @@ exports[`Storyshots names CaretAltRightIcon 1`] = `
 
 exports[`Storyshots names CaretAltUpIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret alt up icon"
@@ -562,7 +562,7 @@ exports[`Storyshots names CaretAltUpIcon 1`] = `
 
 exports[`Storyshots names CaretDownIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret down icon"
@@ -578,7 +578,7 @@ exports[`Storyshots names CaretDownIcon 1`] = `
 
 exports[`Storyshots names CaretLeftIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret left icon"
@@ -594,7 +594,7 @@ exports[`Storyshots names CaretLeftIcon 1`] = `
 
 exports[`Storyshots names CaretRightIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret right icon"
@@ -610,7 +610,7 @@ exports[`Storyshots names CaretRightIcon 1`] = `
 
 exports[`Storyshots names CaretUpIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="caret up icon"
@@ -626,7 +626,7 @@ exports[`Storyshots names CaretUpIcon 1`] = `
 
 exports[`Storyshots names ChannelAddIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="channel add icon"
@@ -644,7 +644,7 @@ exports[`Storyshots names ChannelAddIcon 1`] = `
 
 exports[`Storyshots names ChannelIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="channel icon"
@@ -662,7 +662,7 @@ exports[`Storyshots names ChannelIcon 1`] = `
 
 exports[`Storyshots names ChatAltFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="chat icon"
@@ -680,7 +680,7 @@ exports[`Storyshots names ChatAltFillIcon 1`] = `
 
 exports[`Storyshots names ChatAltIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="chat icon"
@@ -698,7 +698,7 @@ exports[`Storyshots names ChatAltIcon 1`] = `
 
 exports[`Storyshots names ChatFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="chat icon"
@@ -716,7 +716,7 @@ exports[`Storyshots names ChatFillIcon 1`] = `
 
 exports[`Storyshots names ChatIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="chat icon"
@@ -737,7 +737,7 @@ exports[`Storyshots names ChatIcon 1`] = `
 
 exports[`Storyshots names CheckCircleFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="check circle fill icon"
@@ -753,7 +753,7 @@ exports[`Storyshots names CheckCircleFillIcon 1`] = `
 
 exports[`Storyshots names CheckCircleIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="check circle icon"
@@ -771,7 +771,7 @@ exports[`Storyshots names CheckCircleIcon 1`] = `
 
 exports[`Storyshots names CheckIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="check icon"
@@ -787,7 +787,7 @@ exports[`Storyshots names CheckIcon 1`] = `
 
 exports[`Storyshots names ClockIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="clock icon"
@@ -803,7 +803,7 @@ exports[`Storyshots names ClockIcon 1`] = `
 
 exports[`Storyshots names ClockWarningIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="clock warning icon"
@@ -821,7 +821,7 @@ exports[`Storyshots names ClockWarningIcon 1`] = `
 
 exports[`Storyshots names CloseCaptionedFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="close captioned fill icon"
@@ -837,7 +837,7 @@ exports[`Storyshots names CloseCaptionedFillIcon 1`] = `
 
 exports[`Storyshots names CloseCaptionedIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="close captioned icon"
@@ -855,7 +855,7 @@ exports[`Storyshots names CloseCaptionedIcon 1`] = `
 
 exports[`Storyshots names CloseIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="close icon"
@@ -871,7 +871,7 @@ exports[`Storyshots names CloseIcon 1`] = `
 
 exports[`Storyshots names CloudIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="cloud icon"
@@ -887,7 +887,7 @@ exports[`Storyshots names CloudIcon 1`] = `
 
 exports[`Storyshots names CloudOffIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="cloud off icon"
@@ -903,7 +903,7 @@ exports[`Storyshots names CloudOffIcon 1`] = `
 
 exports[`Storyshots names CodeBrandedIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="code branded icon"
@@ -921,7 +921,7 @@ exports[`Storyshots names CodeBrandedIcon 1`] = `
 
 exports[`Storyshots names CodeIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="code icon"
@@ -938,7 +938,7 @@ exports[`Storyshots names CodeIcon 1`] = `
 
 exports[`Storyshots names ConnectionWarningIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="connection warning icon"
@@ -956,7 +956,7 @@ exports[`Storyshots names ConnectionWarningIcon 1`] = `
 
 exports[`Storyshots names CopyIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="copy icon"
@@ -977,7 +977,7 @@ exports[`Storyshots names CopyIcon 1`] = `
 
 exports[`Storyshots names CoursesIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="courses icon"
@@ -995,7 +995,7 @@ exports[`Storyshots names CoursesIcon 1`] = `
 
 exports[`Storyshots names CurriculumIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="curriculum icon"
@@ -1021,7 +1021,7 @@ exports[`Storyshots names CurriculumIcon 1`] = `
 
 exports[`Storyshots names DashboardIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="dashboard icon"
@@ -1037,7 +1037,7 @@ exports[`Storyshots names DashboardIcon 1`] = `
 
 exports[`Storyshots names DesktopIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="desktop icon"
@@ -1055,7 +1055,7 @@ exports[`Storyshots names DesktopIcon 1`] = `
 
 exports[`Storyshots names DownloadIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="download icon"
@@ -1074,7 +1074,7 @@ exports[`Storyshots names DownloadIcon 1`] = `
 
 exports[`Storyshots names EnvelopeArrowIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="envelope arrow icon"
@@ -1092,7 +1092,7 @@ exports[`Storyshots names EnvelopeArrowIcon 1`] = `
 
 exports[`Storyshots names EnvelopeIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="envelope icon"
@@ -1108,7 +1108,7 @@ exports[`Storyshots names EnvelopeIcon 1`] = `
 
 exports[`Storyshots names ExternalLinkIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="external link icon"
@@ -1124,7 +1124,7 @@ exports[`Storyshots names ExternalLinkIcon 1`] = `
 
 exports[`Storyshots names EyeIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="eye icon"
@@ -1142,7 +1142,7 @@ exports[`Storyshots names EyeIcon 1`] = `
 
 exports[`Storyshots names EyeOffIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="eye off icon"
@@ -1160,7 +1160,7 @@ exports[`Storyshots names EyeOffIcon 1`] = `
 
 exports[`Storyshots names FileIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="file icon"
@@ -1176,7 +1176,7 @@ exports[`Storyshots names FileIcon 1`] = `
 
 exports[`Storyshots names FilterIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="filter icon"
@@ -1194,7 +1194,7 @@ exports[`Storyshots names FilterIcon 1`] = `
 
 exports[`Storyshots names FullscreenExitIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="fullscreen exit icon"
@@ -1212,7 +1212,7 @@ exports[`Storyshots names FullscreenExitIcon 1`] = `
 
 exports[`Storyshots names FullscreenIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="fullscreen icon"
@@ -1230,7 +1230,7 @@ exports[`Storyshots names FullscreenIcon 1`] = `
 
 exports[`Storyshots names GearIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="gear icon"
@@ -1248,7 +1248,7 @@ exports[`Storyshots names GearIcon 1`] = `
 
 exports[`Storyshots names GlobeIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="globe icon"
@@ -1266,7 +1266,7 @@ exports[`Storyshots names GlobeIcon 1`] = `
 
 exports[`Storyshots names HandIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="hand icon"
@@ -1288,7 +1288,7 @@ exports[`Storyshots names HandIcon 1`] = `
 
 exports[`Storyshots names HelpIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="help icon"
@@ -1306,7 +1306,7 @@ exports[`Storyshots names HelpIcon 1`] = `
 
 exports[`Storyshots names HistoryIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="history icon"
@@ -1324,7 +1324,7 @@ exports[`Storyshots names HistoryIcon 1`] = `
 
 exports[`Storyshots names HomeAdminToolsIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="home admin tools icon"
@@ -1340,7 +1340,7 @@ exports[`Storyshots names HomeAdminToolsIcon 1`] = `
 
 exports[`Storyshots names HomeContentToolsIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="home content tools icon"
@@ -1356,7 +1356,7 @@ exports[`Storyshots names HomeContentToolsIcon 1`] = `
 
 exports[`Storyshots names HomeIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="home icon"
@@ -1374,7 +1374,7 @@ exports[`Storyshots names HomeIcon 1`] = `
 
 exports[`Storyshots names InfoIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="info icon"
@@ -1392,7 +1392,7 @@ exports[`Storyshots names InfoIcon 1`] = `
 
 exports[`Storyshots names InteractiveIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="interactive icon"
@@ -1408,7 +1408,7 @@ exports[`Storyshots names InteractiveIcon 1`] = `
 
 exports[`Storyshots names IqIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="iq icon"
@@ -1426,7 +1426,7 @@ exports[`Storyshots names IqIcon 1`] = `
 
 exports[`Storyshots names LinkIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="link icon"
@@ -1444,7 +1444,7 @@ exports[`Storyshots names LinkIcon 1`] = `
 
 exports[`Storyshots names ListIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="list icon"
@@ -1462,7 +1462,7 @@ exports[`Storyshots names ListIcon 1`] = `
 
 exports[`Storyshots names LocationIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="location icon"
@@ -1480,7 +1480,7 @@ exports[`Storyshots names LocationIcon 1`] = `
 
 exports[`Storyshots names LockFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="lock fill icon"
@@ -1498,7 +1498,7 @@ exports[`Storyshots names LockFillIcon 1`] = `
 
 exports[`Storyshots names LockIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="lock icon"
@@ -1514,7 +1514,7 @@ exports[`Storyshots names LockIcon 1`] = `
 
 exports[`Storyshots names MenuCloseIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="menu close icon"
@@ -1532,7 +1532,7 @@ exports[`Storyshots names MenuCloseIcon 1`] = `
 
 exports[`Storyshots names MenuIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="menu icon"
@@ -1550,7 +1550,7 @@ exports[`Storyshots names MenuIcon 1`] = `
 
 exports[`Storyshots names MicIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="mic icon"
@@ -1568,7 +1568,7 @@ exports[`Storyshots names MicIcon 1`] = `
 
 exports[`Storyshots names MoreIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="more icon"
@@ -1584,7 +1584,7 @@ exports[`Storyshots names MoreIcon 1`] = `
 
 exports[`Storyshots names MoveIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="move icon"
@@ -1602,7 +1602,7 @@ exports[`Storyshots names MoveIcon 1`] = `
 
 exports[`Storyshots names NextIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="next icon"
@@ -1620,7 +1620,7 @@ exports[`Storyshots names NextIcon 1`] = `
 
 exports[`Storyshots names NoteIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="note icon"
@@ -1638,7 +1638,7 @@ exports[`Storyshots names NoteIcon 1`] = `
 
 exports[`Storyshots names NotificationsIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="notifications icon"
@@ -1656,7 +1656,7 @@ exports[`Storyshots names NotificationsIcon 1`] = `
 
 exports[`Storyshots names NotificationsNewIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="notifications new icon"
@@ -1674,7 +1674,7 @@ exports[`Storyshots names NotificationsNewIcon 1`] = `
 
 exports[`Storyshots names ObjectiveIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="objective icon"
@@ -1692,7 +1692,7 @@ exports[`Storyshots names ObjectiveIcon 1`] = `
 
 exports[`Storyshots names OrgIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="org icon"
@@ -1708,7 +1708,7 @@ exports[`Storyshots names OrgIcon 1`] = `
 
 exports[`Storyshots names PathIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="path icon"
@@ -1726,7 +1726,7 @@ exports[`Storyshots names PathIcon 1`] = `
 
 exports[`Storyshots names PauseIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="pause icon"
@@ -1744,7 +1744,7 @@ exports[`Storyshots names PauseIcon 1`] = `
 
 exports[`Storyshots names PencilIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="pencil icon"
@@ -1760,7 +1760,7 @@ exports[`Storyshots names PencilIcon 1`] = `
 
 exports[`Storyshots names PeopleIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="people icon"
@@ -1776,7 +1776,7 @@ exports[`Storyshots names PeopleIcon 1`] = `
 
 exports[`Storyshots names PhoneDownIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="phone down icon"
@@ -1794,7 +1794,7 @@ exports[`Storyshots names PhoneDownIcon 1`] = `
 
 exports[`Storyshots names PhoneIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="phone icon"
@@ -1812,7 +1812,7 @@ exports[`Storyshots names PhoneIcon 1`] = `
 
 exports[`Storyshots names PlaceholderIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="placeholder icon"
@@ -1828,7 +1828,7 @@ exports[`Storyshots names PlaceholderIcon 1`] = `
 
 exports[`Storyshots names PlayCircleIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="play circle icon"
@@ -1846,7 +1846,7 @@ exports[`Storyshots names PlayCircleIcon 1`] = `
 
 exports[`Storyshots names PlayIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="play icon"
@@ -1864,7 +1864,7 @@ exports[`Storyshots names PlayIcon 1`] = `
 
 exports[`Storyshots names PlusCircleFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="plus circle fill icon"
@@ -1882,7 +1882,7 @@ exports[`Storyshots names PlusCircleFillIcon 1`] = `
 
 exports[`Storyshots names PlusCircleIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="plus circle icon"
@@ -1898,7 +1898,7 @@ exports[`Storyshots names PlusCircleIcon 1`] = `
 
 exports[`Storyshots names PlusIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="plus icon"
@@ -1914,7 +1914,7 @@ exports[`Storyshots names PlusIcon 1`] = `
 
 exports[`Storyshots names PodcastIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="podcast icon"
@@ -1932,7 +1932,7 @@ exports[`Storyshots names PodcastIcon 1`] = `
 
 exports[`Storyshots names PreviousIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="previous icon"
@@ -1950,7 +1950,7 @@ exports[`Storyshots names PreviousIcon 1`] = `
 
 exports[`Storyshots names ProjectIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="project icon"
@@ -1966,7 +1966,7 @@ exports[`Storyshots names ProjectIcon 1`] = `
 
 exports[`Storyshots names QNAIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="q n a icon"
@@ -1987,7 +1987,7 @@ exports[`Storyshots names QNAIcon 1`] = `
 
 exports[`Storyshots names QuestionFilledIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="question filled icon"
@@ -2005,7 +2005,7 @@ exports[`Storyshots names QuestionFilledIcon 1`] = `
 
 exports[`Storyshots names QuestionIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="question icon"
@@ -2023,7 +2023,7 @@ exports[`Storyshots names QuestionIcon 1`] = `
 
 exports[`Storyshots names RedoIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="redo icon"
@@ -2039,7 +2039,7 @@ exports[`Storyshots names RedoIcon 1`] = `
 
 exports[`Storyshots names ReloadIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="reload icon"
@@ -2055,7 +2055,7 @@ exports[`Storyshots names ReloadIcon 1`] = `
 
 exports[`Storyshots names ReportIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="report icon"
@@ -2071,7 +2071,7 @@ exports[`Storyshots names ReportIcon 1`] = `
 
 exports[`Storyshots names ScopeIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="scope icon"
@@ -2087,7 +2087,7 @@ exports[`Storyshots names ScopeIcon 1`] = `
 
 exports[`Storyshots names ScreenshareIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="screenshare icon"
@@ -2105,7 +2105,7 @@ exports[`Storyshots names ScreenshareIcon 1`] = `
 
 exports[`Storyshots names SearchIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="search icon"
@@ -2123,7 +2123,7 @@ exports[`Storyshots names SearchIcon 1`] = `
 
 exports[`Storyshots names ServiceBoxIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="service box icon"
@@ -2141,7 +2141,7 @@ exports[`Storyshots names ServiceBoxIcon 1`] = `
 
 exports[`Storyshots names ServiceDropboxIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="service dropbox icon"
@@ -2159,7 +2159,7 @@ exports[`Storyshots names ServiceDropboxIcon 1`] = `
 
 exports[`Storyshots names ServiceGoogleDriveIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="service google drive icon"
@@ -2177,7 +2177,7 @@ exports[`Storyshots names ServiceGoogleDriveIcon 1`] = `
 
 exports[`Storyshots names ShareIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="share icon"
@@ -2193,7 +2193,7 @@ exports[`Storyshots names ShareIcon 1`] = `
 
 exports[`Storyshots names SignoutIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="signout icon"
@@ -2211,7 +2211,7 @@ exports[`Storyshots names SignoutIcon 1`] = `
 
 exports[`Storyshots names SkipBackwardIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="skip backward icon"
@@ -2229,7 +2229,7 @@ exports[`Storyshots names SkipBackwardIcon 1`] = `
 
 exports[`Storyshots names SkipForwardIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="skip forward icon"
@@ -2247,7 +2247,7 @@ exports[`Storyshots names SkipForwardIcon 1`] = `
 
 exports[`Storyshots names SocialDribbbleIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social dribbble icon"
@@ -2265,7 +2265,7 @@ exports[`Storyshots names SocialDribbbleIcon 1`] = `
 
 exports[`Storyshots names SocialFacebookIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social facebook icon"
@@ -2283,7 +2283,7 @@ exports[`Storyshots names SocialFacebookIcon 1`] = `
 
 exports[`Storyshots names SocialGithubIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social github icon"
@@ -2301,7 +2301,7 @@ exports[`Storyshots names SocialGithubIcon 1`] = `
 
 exports[`Storyshots names SocialGooglePlusIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social google plus icon"
@@ -2319,7 +2319,7 @@ exports[`Storyshots names SocialGooglePlusIcon 1`] = `
 
 exports[`Storyshots names SocialLinkedinIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social linkedin icon"
@@ -2337,7 +2337,7 @@ exports[`Storyshots names SocialLinkedinIcon 1`] = `
 
 exports[`Storyshots names SocialMediumIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social medium icon"
@@ -2353,7 +2353,7 @@ exports[`Storyshots names SocialMediumIcon 1`] = `
 
 exports[`Storyshots names SocialRssIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social rss icon"
@@ -2371,7 +2371,7 @@ exports[`Storyshots names SocialRssIcon 1`] = `
 
 exports[`Storyshots names SocialStackoverflowIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social stackoverflow icon"
@@ -2389,7 +2389,7 @@ exports[`Storyshots names SocialStackoverflowIcon 1`] = `
 
 exports[`Storyshots names SocialTwitterIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="social twitter icon"
@@ -2407,7 +2407,7 @@ exports[`Storyshots names SocialTwitterIcon 1`] = `
 
 exports[`Storyshots names SortAscIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="sort asc icon"
@@ -2423,7 +2423,7 @@ exports[`Storyshots names SortAscIcon 1`] = `
 
 exports[`Storyshots names SortDescIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="sort desc icon"
@@ -2439,7 +2439,7 @@ exports[`Storyshots names SortDescIcon 1`] = `
 
 exports[`Storyshots names SortIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="sort icon"
@@ -2455,7 +2455,7 @@ exports[`Storyshots names SortIcon 1`] = `
 
 exports[`Storyshots names StarFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="star fill icon"
@@ -2471,7 +2471,7 @@ exports[`Storyshots names StarFillIcon 1`] = `
 
 exports[`Storyshots names StarIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="star icon"
@@ -2487,7 +2487,7 @@ exports[`Storyshots names StarIcon 1`] = `
 
 exports[`Storyshots names StopIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="stop icon"
@@ -2505,7 +2505,7 @@ exports[`Storyshots names StopIcon 1`] = `
 
 exports[`Storyshots names TagAssignmentIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="tag assignment icon"
@@ -2536,7 +2536,7 @@ exports[`Storyshots names TagAssignmentIcon 1`] = `
 
 exports[`Storyshots names TagIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="tag icon"
@@ -2552,7 +2552,7 @@ exports[`Storyshots names TagIcon 1`] = `
 
 exports[`Storyshots names TagManagementIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="tag management icon"
@@ -2575,7 +2575,7 @@ exports[`Storyshots names TagManagementIcon 1`] = `
 
 exports[`Storyshots names TestIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="test icon"
@@ -2593,7 +2593,7 @@ exports[`Storyshots names TestIcon 1`] = `
 
 exports[`Storyshots names ThumbDownFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="thumb down fill icon"
@@ -2610,7 +2610,7 @@ exports[`Storyshots names ThumbDownFillIcon 1`] = `
 
 exports[`Storyshots names ThumbDownIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="thumb down icon"
@@ -2627,7 +2627,7 @@ exports[`Storyshots names ThumbDownIcon 1`] = `
 
 exports[`Storyshots names ThumbUpFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="thumb up fill icon"
@@ -2644,7 +2644,7 @@ exports[`Storyshots names ThumbUpFillIcon 1`] = `
 
 exports[`Storyshots names ThumbUpIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="thumb up icon"
@@ -2661,7 +2661,7 @@ exports[`Storyshots names ThumbUpIcon 1`] = `
 
 exports[`Storyshots names TranscriptIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="transcript icon"
@@ -2679,7 +2679,7 @@ exports[`Storyshots names TranscriptIcon 1`] = `
 
 exports[`Storyshots names TrashIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="trash icon"
@@ -2697,7 +2697,7 @@ exports[`Storyshots names TrashIcon 1`] = `
 
 exports[`Storyshots names UndoIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="undo icon"
@@ -2713,7 +2713,7 @@ exports[`Storyshots names UndoIcon 1`] = `
 
 exports[`Storyshots names UnionIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="union icon"
@@ -2737,7 +2737,7 @@ exports[`Storyshots names UnionIcon 1`] = `
 
 exports[`Storyshots names UploadIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="upload icon"
@@ -2756,7 +2756,7 @@ exports[`Storyshots names UploadIcon 1`] = `
 
 exports[`Storyshots names UserAddIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="user add icon"
@@ -2774,7 +2774,7 @@ exports[`Storyshots names UserAddIcon 1`] = `
 
 exports[`Storyshots names UserIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="user icon"
@@ -2792,7 +2792,7 @@ exports[`Storyshots names UserIcon 1`] = `
 
 exports[`Storyshots names VideoIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="video icon"
@@ -2810,7 +2810,7 @@ exports[`Storyshots names VideoIcon 1`] = `
 
 exports[`Storyshots names VolumeHighIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="volume high icon"
@@ -2828,7 +2828,7 @@ exports[`Storyshots names VolumeHighIcon 1`] = `
 
 exports[`Storyshots names VolumeLowIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="volume low icon"
@@ -2846,7 +2846,7 @@ exports[`Storyshots names VolumeLowIcon 1`] = `
 
 exports[`Storyshots names VolumeMediumIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="volume medium icon"
@@ -2864,7 +2864,7 @@ exports[`Storyshots names VolumeMediumIcon 1`] = `
 
 exports[`Storyshots names VolumeOffIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="volume off icon"
@@ -2882,7 +2882,7 @@ exports[`Storyshots names VolumeOffIcon 1`] = `
 
 exports[`Storyshots names WarningFilledIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="warning filled icon"
@@ -2900,7 +2900,7 @@ exports[`Storyshots names WarningFilledIcon 1`] = `
 
 exports[`Storyshots names WarningIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="warning icon"
@@ -2918,7 +2918,7 @@ exports[`Storyshots names WarningIcon 1`] = `
 
 exports[`Storyshots names WindowIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="window icon"
@@ -2936,7 +2936,7 @@ exports[`Storyshots names WindowIcon 1`] = `
 
 exports[`Storyshots names XCircleFillIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="x circle fill icon"
@@ -2954,7 +2954,7 @@ exports[`Storyshots names XCircleFillIcon 1`] = `
 
 exports[`Storyshots names XCircleIcon 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="x circle icon"
@@ -2978,7 +2978,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="account icon"
@@ -2995,7 +2995,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="analytics icon"
@@ -3014,7 +3014,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="arrow down icon"
@@ -3033,7 +3033,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="arrow down right icon"
@@ -3050,7 +3050,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="arrow left icon"
@@ -3069,7 +3069,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="arrow right icon"
@@ -3088,7 +3088,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="arrow up icon"
@@ -3107,7 +3107,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="arrow up right icon"
@@ -3124,7 +3124,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="article icon"
@@ -3141,7 +3141,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="author kit icon"
@@ -3160,7 +3160,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="authors nest icon"
@@ -3179,7 +3179,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="bell icon"
@@ -3198,7 +3198,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="bell rung icon"
@@ -3217,7 +3217,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="bookmark fill icon"
@@ -3234,7 +3234,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="bookmark icon"
@@ -3251,7 +3251,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="briefcase icon"
@@ -3270,7 +3270,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="browse icon"
@@ -3289,7 +3289,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="building icon"
@@ -3308,7 +3308,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="calendar icon"
@@ -3325,7 +3325,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret alt down icon"
@@ -3344,7 +3344,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret alt left icon"
@@ -3363,7 +3363,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret alt right icon"
@@ -3382,7 +3382,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret alt up icon"
@@ -3401,7 +3401,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret down icon"
@@ -3418,7 +3418,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret left icon"
@@ -3435,7 +3435,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret right icon"
@@ -3452,7 +3452,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="caret up icon"
@@ -3469,7 +3469,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="channel add icon"
@@ -3488,7 +3488,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="channel icon"
@@ -3507,7 +3507,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="chat icon"
@@ -3526,7 +3526,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="chat icon"
@@ -3545,7 +3545,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="chat icon"
@@ -3564,7 +3564,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="chat icon"
@@ -3586,7 +3586,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="check circle fill icon"
@@ -3603,7 +3603,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="check circle icon"
@@ -3622,7 +3622,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="check icon"
@@ -3639,7 +3639,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="clock icon"
@@ -3656,7 +3656,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="clock warning icon"
@@ -3675,7 +3675,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="close captioned fill icon"
@@ -3692,7 +3692,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="close captioned icon"
@@ -3711,7 +3711,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="close icon"
@@ -3728,7 +3728,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="cloud icon"
@@ -3745,7 +3745,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="cloud off icon"
@@ -3762,7 +3762,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="code branded icon"
@@ -3781,7 +3781,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="code icon"
@@ -3799,7 +3799,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="connection warning icon"
@@ -3818,7 +3818,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="copy icon"
@@ -3840,7 +3840,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="courses icon"
@@ -3859,7 +3859,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="curriculum icon"
@@ -3886,7 +3886,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="dashboard icon"
@@ -3903,7 +3903,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="desktop icon"
@@ -3922,7 +3922,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="download icon"
@@ -3942,7 +3942,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="envelope arrow icon"
@@ -3961,7 +3961,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="envelope icon"
@@ -3978,7 +3978,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="external link icon"
@@ -3995,7 +3995,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="eye icon"
@@ -4014,7 +4014,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="eye off icon"
@@ -4033,7 +4033,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="file icon"
@@ -4050,7 +4050,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="filter icon"
@@ -4069,7 +4069,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="fullscreen exit icon"
@@ -4088,7 +4088,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="fullscreen icon"
@@ -4107,7 +4107,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="gear icon"
@@ -4126,7 +4126,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="globe icon"
@@ -4145,7 +4145,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="hand icon"
@@ -4168,7 +4168,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="help icon"
@@ -4187,7 +4187,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="history icon"
@@ -4206,7 +4206,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="home admin tools icon"
@@ -4223,7 +4223,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="home content tools icon"
@@ -4240,7 +4240,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="home icon"
@@ -4259,7 +4259,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="info icon"
@@ -4278,7 +4278,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="interactive icon"
@@ -4295,7 +4295,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="iq icon"
@@ -4314,7 +4314,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="link icon"
@@ -4333,7 +4333,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="list icon"
@@ -4352,7 +4352,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="location icon"
@@ -4371,7 +4371,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="lock fill icon"
@@ -4390,7 +4390,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="lock icon"
@@ -4407,7 +4407,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="menu close icon"
@@ -4426,7 +4426,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="menu icon"
@@ -4445,7 +4445,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="mic icon"
@@ -4464,7 +4464,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="more icon"
@@ -4481,7 +4481,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="move icon"
@@ -4500,7 +4500,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="next icon"
@@ -4519,7 +4519,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="note icon"
@@ -4538,7 +4538,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="notifications icon"
@@ -4557,7 +4557,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="notifications new icon"
@@ -4576,7 +4576,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="objective icon"
@@ -4595,7 +4595,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="org icon"
@@ -4612,7 +4612,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="path icon"
@@ -4631,7 +4631,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="pause icon"
@@ -4650,7 +4650,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="pencil icon"
@@ -4667,7 +4667,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="people icon"
@@ -4684,7 +4684,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="phone down icon"
@@ -4703,7 +4703,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="phone icon"
@@ -4722,7 +4722,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="placeholder icon"
@@ -4739,7 +4739,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="play circle icon"
@@ -4758,7 +4758,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="play icon"
@@ -4777,7 +4777,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="plus circle fill icon"
@@ -4796,7 +4796,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="plus circle icon"
@@ -4813,7 +4813,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="plus icon"
@@ -4830,7 +4830,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="podcast icon"
@@ -4849,7 +4849,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="previous icon"
@@ -4868,7 +4868,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="project icon"
@@ -4885,7 +4885,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="q n a icon"
@@ -4907,7 +4907,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="question filled icon"
@@ -4926,7 +4926,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="question icon"
@@ -4945,7 +4945,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="redo icon"
@@ -4962,7 +4962,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="reload icon"
@@ -4979,7 +4979,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="report icon"
@@ -4996,7 +4996,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="scope icon"
@@ -5013,7 +5013,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="screenshare icon"
@@ -5032,7 +5032,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="search icon"
@@ -5051,7 +5051,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="service box icon"
@@ -5070,7 +5070,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="service dropbox icon"
@@ -5089,7 +5089,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="service google drive icon"
@@ -5108,7 +5108,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="share icon"
@@ -5125,7 +5125,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="signout icon"
@@ -5144,7 +5144,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="skip backward icon"
@@ -5163,7 +5163,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="skip forward icon"
@@ -5182,7 +5182,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social dribbble icon"
@@ -5201,7 +5201,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social facebook icon"
@@ -5220,7 +5220,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social github icon"
@@ -5239,7 +5239,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social google plus icon"
@@ -5258,7 +5258,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social linkedin icon"
@@ -5277,7 +5277,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social medium icon"
@@ -5294,7 +5294,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social rss icon"
@@ -5313,7 +5313,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social stackoverflow icon"
@@ -5332,7 +5332,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="social twitter icon"
@@ -5351,7 +5351,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="sort asc icon"
@@ -5368,7 +5368,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="sort desc icon"
@@ -5385,7 +5385,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="sort icon"
@@ -5402,7 +5402,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="star fill icon"
@@ -5419,7 +5419,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="star icon"
@@ -5436,7 +5436,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="stop icon"
@@ -5455,7 +5455,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="tag assignment icon"
@@ -5487,7 +5487,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="tag icon"
@@ -5504,7 +5504,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="tag management icon"
@@ -5528,7 +5528,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="test icon"
@@ -5547,7 +5547,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="thumb down fill icon"
@@ -5565,7 +5565,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="thumb down icon"
@@ -5583,7 +5583,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="thumb up fill icon"
@@ -5601,7 +5601,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="thumb up icon"
@@ -5619,7 +5619,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="transcript icon"
@@ -5638,7 +5638,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="trash icon"
@@ -5657,7 +5657,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="undo icon"
@@ -5674,7 +5674,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="union icon"
@@ -5699,7 +5699,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="upload icon"
@@ -5719,7 +5719,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="user add icon"
@@ -5738,7 +5738,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="user icon"
@@ -5757,7 +5757,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="video icon"
@@ -5776,7 +5776,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="volume high icon"
@@ -5795,7 +5795,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="volume low icon"
@@ -5814,7 +5814,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="volume medium icon"
@@ -5833,7 +5833,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="volume off icon"
@@ -5852,7 +5852,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="warning filled icon"
@@ -5871,7 +5871,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="warning icon"
@@ -5890,7 +5890,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="window icon"
@@ -5909,7 +5909,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="x circle fill icon"
@@ -5928,7 +5928,7 @@ exports[`Storyshots names all export names 1`] = `
     data-css-1abx40i=""
   >
     <div
-      data-css-o1xz16=""
+      data-css-p3lka6=""
     >
       <svg
         aria-label="x circle icon"
@@ -5948,7 +5948,7 @@ exports[`Storyshots names all export names 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  data-css-11aki6q=""
+  data-css-cz2uvs=""
 >
   <svg
     aria-label="check icon"
@@ -5964,7 +5964,7 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  data-css-o1xz16=""
+  data-css-p3lka6=""
 >
   <svg
     aria-label="check icon"
@@ -5980,7 +5980,7 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  data-css-1wd6whc=""
+  data-css-19i1qso=""
 >
   <svg
     aria-label="check icon"

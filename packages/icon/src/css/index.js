@@ -12,12 +12,11 @@ export default {
   [`.psds-icon`]: {
     display: 'inline-flex',
     alignItems: 'center',
-    justifyContent: 'center',
-
-    '& > svg': {
-      fill: 'currentColor',
-      flex: 1
-    }
+    justifyContent: 'center'
+  },
+  '.psds-icon > svg': {
+    fill: 'currentColor',
+    flex: 1
   },
   [`.psds-icon--size-${vars.sizes.small}`]: {
     height: vars.widths.small,
@@ -31,44 +30,28 @@ export default {
     height: vars.widths.large,
     width: vars.widths.large
   },
-  '.psds-icon--color-textIconHighOnDark': {
-    [`& > svg`]: {
-      fill: colorsTextIcon.highOnDark
-    }
+  '.psds-icon--color-textIconHighOnDark > svg': {
+    fill: colorsTextIcon.highOnDark
   },
-  '.psds-icon--color-textIconLowOnDark': {
-    [`& > svg`]: {
-      fill: colorsTextIcon.lowOnDark
-    }
+  '.psds-icon--color-textIconLowOnDark > svg': {
+    fill: colorsTextIcon.lowOnDark
   },
-  '.psds-icon--color-textIconHighOnLight': {
-    [`& > svg`]: {
-      fill: colorsTextIcon.highOnLight
-    }
+  '.psds-icon--color-textIconHighOnLight > svg': {
+    fill: colorsTextIcon.highOnLight
   },
-  '.psds-icon--color-textIconLowOnLight': {
-    [`& > svg`]: {
-      fill: colorsTextIcon.lowOnLight
-    }
+  '.psds-icon--color-textIconLowOnLight > svg': {
+    fill: colorsTextIcon.lowOnLight
   },
-  '.psds-icon--color-red': {
-    [`& > svg`]: {
-      fill: colorsRed.base
-    }
+  '.psds-icon--color-red > svg': {
+    fill: colorsRed.base
   },
-  '.psds-icon--color-blue': {
-    [`& > svg`]: {
-      fill: colorsBlue.base
-    }
+  '.psds-icon--color-blue > svg': {
+    fill: colorsBlue.base
   },
-  '.psds-icon--color-green': {
-    [`& > svg`]: {
-      fill: colorsGreen.base
-    }
+  '.psds-icon--color-green > svg': {
+    fill: colorsGreen.base
   },
-  '.psds-icon--color-yellow': {
-    [`& > svg`]: {
-      fill: colorsYellow.base
-    }
+  '.psds-icon--color-yellow > svg': {
+    fill: colorsYellow.base
   }
 }
