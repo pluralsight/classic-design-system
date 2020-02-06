@@ -1,7 +1,8 @@
 import React from 'react'
 
-import * as core from '@pluralsight/ps-design-system-core'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
@@ -45,6 +46,14 @@ function InAppExample() {
             }
             value={value}
           />
+          <div className="button">
+            <Button
+              onClick={() => setValue('beg')}
+              appearance={Button.appearances.secondary}
+            >
+              Set Beginner
+            </Button>
+          </div>
         </div>
         <div className="selection">Selected: {value}</div>
       </div>
@@ -72,6 +81,7 @@ function InAppExample() {
         }
         value={value}
       />
+      <Button onClick={() => setValue('beg')}>Set Beginner</Button>
       <div>Selected: {value}</div>
     </div>
   )
@@ -80,6 +90,9 @@ function InAppExample() {
         .example {
           display: flex;
           margin-bottom: ${core.layout.spacingMedium};
+        }
+        .button {
+          margin-top: ${core.layout.spacingLarge};
         }
         .selection {
           flex: 1;
