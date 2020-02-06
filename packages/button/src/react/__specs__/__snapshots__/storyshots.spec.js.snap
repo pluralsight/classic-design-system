@@ -125,7 +125,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-1fjf1n4=""
+    data-css-5torc2=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -210,7 +210,7 @@ exports[`Storyshots Button / disabled all 1`] = `
 
 exports[`Storyshots Button / disabled with icon 1`] = `
 <button
-  data-css-b7bryr=""
+  data-css-1cln9ma=""
   disabled={true}
   style={Object {}}
 >
