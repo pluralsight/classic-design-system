@@ -1,27 +1,31 @@
-import Link from '@pluralsight/ps-design-system-link'
 import NextLink from 'next/link.js'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-const TextLink = React.forwardRef((props, ref) =>
-  /^http/.test(props.href) ? (
+import Link from '@pluralsight/ps-design-system-link'
+
+const TextLink = forwardRef((props, ref) => {
+  const { href, ...rest } = props
+
+  const isExternal = /^http/.test(href)
+
+  return isExternal ? (
     <Link>
-      <a {...props} href={props.href} ref={ref}>
-        {props.children}
-      </a>
+      <a href={href} ref={ref} {...rest} />
     </Link>
   ) : (
-    <NextLink href={props.href}>
+    <NextLink href={href}>
       <Link>
-        <a ref={ref} {...props}>
-          {props.children}
-        </a>
+        <a ref={ref} {...rest} />
       </Link>
     </NextLink>
   )
-)
+})
+
+TextLink.displayName = 'TextLink'
+
 TextLink.propTypes = {
-  children: PropTypes.node,
   href: PropTypes.string
 }
+
 export default TextLink

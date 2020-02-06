@@ -1,5 +1,3 @@
-import 'isomorphic-fetch'
-
 import PropTypes from 'prop-types'
 import React, { useEffect, useState } from 'react'
 

@@ -1,60 +1,50 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import * as glamor from 'glamor'
-import { Heading } from '@pluralsight/ps-design-system-text'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const styleSize = ({ size }) =>
-  ({
-    [Heading.sizes.large]: {
-      margin: '56px 0 0 0'
-    },
-    [Heading.sizes.xLarge]: {
-      margin: '56px 0'
-    }
-  }[size])
+import { colorsTextIcon } from '@pluralsight/ps-design-system-core'
+import { Heading as DSHeading } from '@pluralsight/ps-design-system-text'
 
-const style = props =>
-  glamor.css(
-    {
-      color: core.colors.gray06
-    },
-    styleSize(props)
+const { sizes } = DSHeading
+
+function Heading(props) {
+  return (
+    <div className={`heading ${props.size}`}>
+      <DSHeading size={props.size}>{props.children}</DSHeading>
+
+      <style jsx>{`
+        /* TODO: style with jsx without global tag */
+        .heading :global(h1),
+        .heading :global(h2),
+        .heading :global(h3),
+        .heading :global(h4) {
+          color: ${colorsTextIcon.highOnLight};
+        }
+        .heading.${sizes.large} :global(h1),
+        .heading.${sizes.large} :global(h2),
+        .heading.${sizes.large} :global(h3),
+        .heading.${sizes.large} :global(h4) {
+          margin: 56px 0 0 0;
+        }
+        .heading.${sizes.xLarge} :global(h1),
+        .heading.${sizes.xLarge} :global(h2),
+        .heading.${sizes.xLarge} :global(h3),
+        .heading.${sizes.xLarge} :global(h4) {
+          margin: 56px 0;
+        }
+      `}</style>
+    </div>
   )
+}
 
-const HeadingComponent = props => (
-  <div className={`heading ${props.size}`}>
-    <Heading size={props.size}>{props.children}</Heading>
-    <style jsx>{`
-      /* TODO: style with jsx without global tag */
-      .heading :global(h1),
-      .heading :global(h2),
-      .heading :global(h3),
-      .heading :global(h4) {
-        color: ${core.colorsTextIcon.highOnLight};
-      }
-      .heading.${Heading.sizes.large} :global(h1),
-      .heading.${Heading.sizes.large} :global(h2),
-      .heading.${Heading.sizes.large} :global(h3),
-      .heading.${Heading.sizes.large} :global(h4) {
-        margin: 56px 0 0 0;
-      }
-      .heading.${Heading.sizes.xLarge} :global(h1),
-      .heading.${Heading.sizes.xLarge} :global(h2),
-      .heading.${Heading.sizes.xLarge} :global(h3),
-      .heading.${Heading.sizes.xLarge} :global(h4) {
-        margin: 56px 0;
-      }
-    `}</style>
-  </div>
-)
-
-HeadingComponent.propTypes = {
+Heading.propTypes = {
   children: PropTypes.node,
-  size: PropTypes.string
+  size: PropTypes.oneOf(Object.values(sizes))
 }
-HeadingComponent.defaultProps = {
-  size: Heading.sizes.large
+
+Heading.defaultProps = {
+  size: sizes.large
 }
-HeadingComponent.sizes = Heading.sizes
-export default HeadingComponent
+
+Heading.sizes = sizes
+
+export default Heading

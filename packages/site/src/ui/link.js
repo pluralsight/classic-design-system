@@ -1,7 +1,8 @@
-import DSLink from '@pluralsight/ps-design-system-link'
 import NextLink from 'next/link.js'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import DSLink from '@pluralsight/ps-design-system-link'
 
 // TODO: consolidate text-link.js usages into this
 // TODO: make handle activeClassName-type thing
@@ -11,6 +12,7 @@ const Link = React.forwardRef((props, ref) => {
       document.body.scrollTop = document.documentElement.scrollTop = 0
     if (typeof props.onClick === 'function') props.onClick(evt)
   }
+
   return /^http/.test(props.href) ? (
     <DSLink appearance={props.appearance}>
       <a {...props} href={props.href} ref={ref}>
@@ -27,7 +29,10 @@ const Link = React.forwardRef((props, ref) => {
     </NextLink>
   )
 })
+
 Link.appearances = DSLink.appearances
+Link.displayName = 'Link'
+
 Link.propTypes = {
   appearance: PropTypes.oneOf(
     Object.keys(DSLink.appearances).map(k => DSLink.appearances[k])
@@ -36,4 +41,5 @@ Link.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func
 }
+
 export default Link

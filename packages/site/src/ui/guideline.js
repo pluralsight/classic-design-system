@@ -2,10 +2,13 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import Badge from '@pluralsight/ps-design-system-badge'
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundLight,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 
-function Guideline(props) {
+export default function Guideline(props) {
   const isSingleCol = props.columnCount === 1
 
   const Layout = isSingleCol
@@ -21,30 +24,6 @@ function Guideline(props) {
 
   return (
     <>
-      <style jsx>{`
-        .guideline {
-          padding: ${core.layout.spacingXSmall} 0 ${core.layout.spacingXLarge} 0;
-        }
-
-        .badgeWrapper {
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-
-        .box {
-          background: ${core.colors.bone};
-          border-radius: 12px;
-          height: 100%;
-          padding: ${core.layout.spacingXLarge};
-          position: relative;
-        }
-
-        .box--vertical {
-          margin-bottom: ${core.layout.spacingMedium};
-        }
-      `}</style>
-
       <Layout>
         <div
           className={`box${isSingleCol ? ' box--vertical' : ''}`}
@@ -72,6 +51,30 @@ function Guideline(props) {
           </div>
         </div>
       </Layout>
+
+      <style jsx>{`
+        .guideline {
+          padding: ${layout.spacingXSmall} 0 ${layout.spacingXLarge} 0;
+        }
+
+        .badgeWrapper {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .box {
+          background: ${colorsBackgroundLight[2]};
+          border-radius: 12px;
+          height: 100%;
+          padding: ${layout.spacingXLarge};
+          position: relative;
+        }
+
+        .box--vertical {
+          margin-bottom: ${layout.spacingMedium};
+        }
+      `}</style>
     </>
   )
 }
@@ -102,5 +105,3 @@ const numToLayoutCount = num => {
       return null
   }
 }
-
-export default Guideline

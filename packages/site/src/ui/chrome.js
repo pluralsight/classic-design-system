@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 
 import { colorsWhite } from '@pluralsight/ps-design-system-core'
@@ -51,8 +50,4 @@ export default function Chrome(props) {
       `}</style>
     </>
   )
-}
-
-Chrome.propTypes = {
-  children: PropTypes.node.isRequired
 }
