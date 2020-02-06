@@ -464,6 +464,27 @@ const colorCategories = [
     ]
   },
   {
+    heading: 'Neutrals',
+    subCategories: [
+      {
+        colors: [
+          {
+            name: 'Black',
+            var: 'psColorsBlack',
+            hex: core.colorsBlack
+          },
+          {
+            name: 'White',
+            var: 'psColorsWhite',
+            hex: core.colorsWhite,
+            fg: core.colorsTextIcon.highOnLight,
+            border: core.colorsBorder.lowOnLight
+          }
+        ]
+      }
+    ]
+  },
+  {
     heading: 'All colors',
     explanation: (
       <Text.P>
