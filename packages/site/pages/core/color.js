@@ -656,7 +656,7 @@ myCssInJsSolution({
         Legacy gradient
       </SectionHeading>
       <P>
-        So fresh. Use the standard gradient to emphasize and showcase the brand.
+        So stale. Use the standard gradient to emphasize and showcase the brand.
         Use sparingly.
       </P>
       <div>
