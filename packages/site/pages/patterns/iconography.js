@@ -102,9 +102,9 @@ export default _ => (
 
       <SectionHeading>Design asset</SectionHeading>
       <P>
-        To design on this grid, you might want to use the{' '}
-        <Link href="https://www.figma.com/file/XCSM7mJXGr1pC3y3Tfgu6bLS/Icon-Grid-Template?node-id=0%3A1">
-          icon grid template Figma file
+        You can find the icon grid template and see all of our icons in the{' '}
+        <Link href="https://www.figma.com/file/HVFUT0XlrkfsTMde6PMWLITj/PSDS-Icons">
+          PSDS - Icons Figma file
         </Link>
         .
       </P>
