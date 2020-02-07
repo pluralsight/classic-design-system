@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.3.5...@pluralsight/ps-design-system-form@4.3.6) (2020-02-07)
+
+
+### Bug Fixes
+
+* **dropdown:** corrects placeholder fonter color ([b8fdad2](https://github.com/pluralsight/design-system/commit/b8fdad24220a29f6d1a72c0faa0bb4471b9a60b9))
+
+
+
+
+
 ## [4.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.3.4...@pluralsight/ps-design-system-form@4.3.5) (2020-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

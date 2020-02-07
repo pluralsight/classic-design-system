@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
-  "version": "5.1.24",
+  "version": "5.1.25",
   "description": "Design system components for ui layouts",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.11",
-    "@pluralsight/ps-design-system-button": "^17.1.13",
+    "@pluralsight/ps-design-system-button": "^17.1.14",
     "@pluralsight/ps-design-system-link": "^9.0.12",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.17"
   }

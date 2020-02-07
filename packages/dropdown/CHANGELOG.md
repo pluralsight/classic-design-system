@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@5.1.4...@pluralsight/ps-design-system-dropdown@5.1.5) (2020-02-07)
+
+
+### Bug Fixes
+
+* **dropdown:** corrects placeholder fonter color ([b8fdad2](https://github.com/pluralsight/design-system/commit/b8fdad24220a29f6d1a72c0faa0bb4471b9a60b9))
+* **dropdown:** linting fix ([671ccff](https://github.com/pluralsight/design-system/commit/671ccffb83c5bc2bed10b1b9e655c4ae10a88643))
+
+
+
+
+
 ## [5.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@5.1.3...@pluralsight/ps-design-system-dropdown@5.1.4) (2020-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

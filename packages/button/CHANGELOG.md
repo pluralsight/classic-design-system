@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@17.1.13...@pluralsight/ps-design-system-button@17.1.14) (2020-02-07)
+
+
+### Bug Fixes
+
+* **button:** foreground visible on primary disabled state ([04c4b41](https://github.com/pluralsight/design-system/commit/04c4b41b37225e39585bdbac2e6fe99c65382d76))
+
+
+
+
+
 ## [17.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@17.1.12...@pluralsight/ps-design-system-button@17.1.13) (2020-02-04)
 
 

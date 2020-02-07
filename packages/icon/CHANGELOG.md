@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.1.4...@pluralsight/ps-design-system-icon@17.1.5) (2020-02-07)
+
+
+### Bug Fixes
+
+* **icon:** restore svg coloring ([612a94b](https://github.com/pluralsight/design-system/commit/612a94b5ef5580a32ae935f52703988463c742e4))
+
+
+
+
+
 ## [17.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@17.1.3...@pluralsight/ps-design-system-icon@17.1.4) (2020-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
