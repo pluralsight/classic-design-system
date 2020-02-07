@@ -9,11 +9,11 @@ import * as vars from '../vars/index.js'
 
 const style = {
   icon: ({ color, size }) =>
-    css({
-      ...stylesheet['.psds-icon'],
-      ...stylesheet[`.psds-icon--size-${size}`],
-      ...stylesheet[`.psds-icon--color-${color}`]
-    })
+    css(
+      stylesheet['.psds-icon'],
+      stylesheet[`.psds-icon--size-${size}`],
+      stylesheet[`.psds-icon--color-${color}`]
+    )
 }
 
 const Icon = React.forwardRef(({ children, ...props }, ref) => (
