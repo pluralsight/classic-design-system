@@ -3,14 +3,14 @@ import React from 'react'
 
 import {
   Chrome,
-  Code,
   Content,
-  Example,
   P,
   PageHeading,
   PropTypes,
   SectionHeading
 } from '../../src/ui/index.js'
+
+import CodeBlock from '../../src/ui/code-block/index.js'
 
 export default _ => (
   <Chrome>
@@ -18,14 +18,14 @@ export default _ => (
       <PageHeading packageName="avatar">Avatar</PageHeading>
 
       <P>Install the component dependency:</P>
-      <Code language="bash">
+      <CodeBlock language="bash">
         npm install @pluralsight/ps-design-system-avatar
-      </Code>
+      </CodeBlock>
 
       <P>Include a React component in your project:</P>
-      <Code language="javascript">
+      <CodeBlock language="javascript">
         import Avatar from '@pluralsight/ps-design-system-avatar'
-      </Code>
+      </CodeBlock>
 
       <PropTypes
         props={[
@@ -57,13 +57,31 @@ export default _ => (
 
       <SectionHeading>Size</SectionHeading>
       <P>Five avatar sizes are available.</P>
-      <Example.React
-        includes={{ Avatar }}
-        codes={Object.keys(Avatar.sizes).map(
-          size =>
-            `<Avatar size={Avatar.sizes.${size}} src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400" />`
-        )}
-      />
+
+      <CodeBlock live>
+        {`<>
+  <Avatar
+    size={Avatar.sizes.xSmall}
+    src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+  />
+  <Avatar
+    size={Avatar.sizes.small}
+    src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+  />
+  <Avatar
+    size={Avatar.sizes.medium}
+    src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+  />
+  <Avatar
+    size={Avatar.sizes.large}
+    src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+  />
+  <Avatar
+    size={Avatar.sizes.xLarge}
+    src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
+  />
+</>`}
+      </CodeBlock>
 
       <SectionHeading>Default with initials</SectionHeading>
       <P>
@@ -71,14 +89,13 @@ export default _ => (
         unavailable or loading, initials of the person pictured will be
         displayed. Always provide the <code>name</code> prop as a fallback.
       </P>
-      <Example.React
-        includes={{ Avatar }}
-        codes={[
-          `<Avatar name="Alan Turing" />`,
-          `<Avatar name="Grace Hopper" />`,
-          `<Avatar name="Tim Berners-Lee" />`
-        ]}
-      />
+      <CodeBlock live>
+        {`<>
+  <Avatar name="Alan Turing" />
+  <Avatar name="Grace Hopper" />
+  <Avatar name="Tim Berners-Lee" />
+</>`}
+      </CodeBlock>
     </Content>
   </Chrome>
 )

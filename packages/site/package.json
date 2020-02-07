@@ -22,6 +22,7 @@
     "isomorphic-fetch": "^2.2.1",
     "next": "9.1.7",
     "react-codemirror": "^1.0.0",
+    "react-dom": "^16.12.0",
     "react-markdown": "^4.2.2"
   },
   "devDependencies": {
@@ -70,6 +71,8 @@
     "@pluralsight/ps-design-system-util": "^3.0.11",
     "@pluralsight/ps-design-system-verticaltabs": "^3.0.25",
     "@pluralsight/ps-design-system-viewtoggle": "^5.0.25",
-    "prop-types": "^15.7.2"
+    "prism-react-renderer": "^1.0.2",
+    "prop-types": "^15.7.2",
+    "react-live": "^2.2.2"
   }
 }
