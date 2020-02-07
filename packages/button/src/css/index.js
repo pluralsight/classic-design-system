@@ -5,6 +5,7 @@ import {
   colorsBorder,
   colorsPrimaryAction,
   colorsTextIcon,
+  colorsWhite,
   layout,
   motion,
   type
@@ -229,6 +230,7 @@ export default {
     opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.primary}`]: {
+    color: colorsWhite,
     opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.secondary}`]: {
