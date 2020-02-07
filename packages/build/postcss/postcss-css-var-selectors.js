@@ -4,36 +4,33 @@ const dashify = require('../css/dashify')
 
 const defaultOptions = { propNameTests: [] }
 
-const createSelectorsForVar = (decl, options) => {
-  const prop = dashify(decl.prop)
-  const value = decl.value
-  return (
-    options.propNameTests.find(t => t.match.test(decl.prop)) || {
-      props: []
-    }
-  ).props.map((p, i, newProps) =>
-    postcss.parse(`
-.${prop + (newProps.length > 1 ? `--${p}` : '')} { ${p}: ${value}; }
-`)
-  )
-}
+module.exports = postcss.plugin('postcss-css-var-selectors', function(options) {
+  const matchCssVarSelector = /^--?/
+  options = Object.assign({}, defaultOptions, options)
 
-module.exports = postcss.plugin('css-var-selectors', options => {
-  return css => {
-    options = Object.assign({}, defaultOptions, options)
-
-    css.walkRules(rule => {
-      rule.walkDecls((decl, i) => {
-        const isCssVar = /^--/.test(decl.prop)
-        if (isCssVar) {
-          createSelectorsForVar(decl, options).forEach(node =>
-            decl.root().insertAfter(decl.root(), node)
-          )
-        }
+  return function(root, result) {
+    root.walkRules(rule => {
+      rule.walkDecls(matchCssVarSelector, decl => {
+        const selectors = createVarSelectors(decl, options)
+        selectors.forEach(node => decl.root().insertAfter(decl.root(), node))
       })
+    })
 
-      const isCssVarRoot = rule.selector === ':root'
-      if (isCssVarRoot) rule.remove()
+    root.walkRules(':root', rule => {
+      rule.remove()
     })
   }
 })
+
+function createVarSelectors(decl, options) {
+  const prop = dashify(decl.prop)
+  const value = decl.value
+
+  let foundDecl = options.propNameTests.find(t => t.match.test(decl.prop))
+  if (!foundDecl) foundDecl = { props: [] }
+
+  return foundDecl.props.map((p, i, newProps) => {
+    const selector = '.' + prop + (newProps.length > 1 ? `--${p}` : '')
+    return postcss.decl({ prop: selector, value: `{ ${p}: ${value} }` })
+  })
+}
