@@ -149,8 +149,8 @@
   --psColorsPrimaryActionTextDarkTheme: #2ea0d6;
   --psColorsPrimaryActionTextLightTheme: #0074ab;
 
-  --psColorsStatusError: var(--psColorsRedBase);
-  --psColorsStatusInfo: var(--psColorsBlueBase);
-  --psColorsStatusSuccess: var(--psColorsGreenBase);
-  --psColorsStatusWarning: var(--psColorsYellowBase);
+  --psColorsStatusError: #d21c09;
+  --psColorsStatusInfo: #0084bd;
+  --psColorsStatusSuccess: #009e52;
+  --psColorsStatusWarning: #fad000;
 }
