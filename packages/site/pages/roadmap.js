@@ -79,7 +79,7 @@ const Bar = _ => (
         height: 0;
         overflow: hidden;
         padding-bottom: ${core.layout.spacingXLarge};
-        border-bottom: 1px solid ${core.colors.gray01};
+        border-bottom: 1px solid ${core.colorsBorder.lowOnLight};
         margin-bottom: ${core.layout.spacingSmall};
       }
     `}</style>
@@ -188,7 +188,7 @@ class Task extends React.Component {
             display: block;
             width: 100%;
             margin: calc(${core.layout.spacingMedium} / 2);
-            background: ${core.colors.bone};
+            background: ${core.colorsBackgroundLight[1]};
             padding: ${core.layout.spacingMedium};
             border-radius: 12px;
             border: 2px solid transparent;
@@ -197,9 +197,9 @@ class Task extends React.Component {
           }
           .task:focus,
           .task:hover {
-            border: 2px solid ${core.colors.gray01};
+            border: 2px solid ${core.colorsBorder.highOnLight};
             outline: none;
-            background: ${core.colors.white};
+            background: ${core.colorsBackgroundLight[3]};
           }
           .meta {
             display: flex;
@@ -326,7 +326,7 @@ export default _ => (
         , or take a look at how you can{' '}
         <TextLink href="/contribute">contribute</TextLink>.
       </P>
-      <Tasks color={core.colors.yellow} tasks={work.short} />
+      <Tasks color={core.colorsYellow.base} tasks={work.short} />
     </Content>
   </Chrome>
 )

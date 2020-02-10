@@ -1,23 +1,18 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import {
+  colorsBackgroundDark,
+  colorsBackgroundLight,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import Theme from '@pluralsight/ps-design-system-theme'
-import * as core from '@pluralsight/ps-design-system-core'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 import { capitalize } from '@pluralsight/ps-design-system-util'
 
-function ThemeToggle(props) {
+export default function ThemeToggle(props) {
   return (
     <>
-      <style jsx>{`
-        .toggle {
-          position: absolute;
-          top: ${core.layout.spacingXSmall};
-          right: ${core.layout.spacingXSmall};
-          z-index: 1;
-        }
-      `}</style>
-
       <div className="toggle">
         <ViewToggle onSelect={props.onSelect}>
           {Object.keys(Theme.names).map(themeName => (
@@ -30,6 +25,15 @@ function ThemeToggle(props) {
           ))}
         </ViewToggle>
       </div>
+
+      <style jsx>{`
+        .toggle {
+          position: absolute;
+          top: ${layout.spacingXSmall};
+          right: ${layout.spacingXSmall};
+          z-index: 1;
+        }
+      `}</style>
     </>
   )
 }
@@ -49,22 +53,22 @@ function Themeable(props) {
 
   return (
     <>
+      <div className={`themeable themeable-${themeName}`}>
+        <ThemeToggle activeThemeName={themeName} onSelect={handleSelect} />
+        <Theme name={themeName}>{props.children}</Theme>
+      </div>
+
       <style jsx>{`
         .themeable {
           position: relative;
         }
         .themeable-dark {
-          background: ${core.colors.gray06};
+          background: ${colorsBackgroundDark[1]};
         }
         .themeable-light {
-          background: ${core.colors.bone};
+          background: ${colorsBackgroundLight[1]};
         }
       `}</style>
-
-      <div className={`themeable themeable-${themeName}`}>
-        <ThemeToggle activeThemeName={themeName} onSelect={handleSelect} />
-        <Theme name={themeName}>{props.children}</Theme>
-      </div>
     </>
   )
 }
@@ -74,5 +78,3 @@ Themeable.propTypes = {
 }
 
 ThemeToggle.Container = Themeable
-
-export default ThemeToggle

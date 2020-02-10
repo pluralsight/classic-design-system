@@ -21,7 +21,7 @@ const CollapsibleButton = props => (
       position: 'absolute',
       top: core.layout.spacingLarge,
       right: core.layout.spacingLarge,
-      color: core.colors.gray02,
+      color: core.colorsTextIcon.lowOnDark,
       zIndex: 10 /* TODO: arbitrary; above code mirror; come back when ready to systemize */
     }}
     icon={<CodeIcon />}
@@ -197,7 +197,7 @@ class Code extends React.Component {
             position: relative;
             padding: ${core.layout.spacingMedium} ${core.layout.spacingLarge} 0
               ${core.layout.spacingLarge};
-            background: ${core.colors.gray04};
+            background: ${core.colorsBackgroundDark[3]};
             transition: height ${core.motion.speedFast};
             height: auto;
           }
@@ -217,7 +217,7 @@ class Code extends React.Component {
             background: linear-gradient(
               to bottom,
               transparent,
-              ${core.colors.gray04}
+              ${core.colorsBackgroundDark[3]}
             );
             z-index: 9;
           }

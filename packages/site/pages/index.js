@@ -45,7 +45,7 @@ Point.propTypes = {
 const Action = props => (
   <span className="action">
     <Link href={props.href}>
-      <Button appearance="stroke" size="large">
+      <Button appearance="secondary" size="large">
         {props.children}
       </Button>
     </Link>
@@ -76,7 +76,11 @@ const Header = props => (
       }
       @media screen and (min-width: 769px) {
         .header {
-          background: linear-gradient(to top, #2bb2e3, #137bc2);
+          background: linear-gradient(
+            to top,
+            ${core.colorsBlue[4]},
+            ${core.colorsBlue[7]}
+          );
           height: 178px;
           display: flex;
           flex-direction: column;
@@ -86,7 +90,7 @@ const Header = props => (
         .title {
           display: flex;
           align-items: center;
-          color: ${core.colors.white};
+          color: ${core.colorsWhite};
           margin: auto;
           margin-right: auto;
           padding: 0 ${core.layout.spacingLarge};

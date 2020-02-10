@@ -1,8 +1,9 @@
-import * as core from '@pluralsight/ps-design-system-core'
 import Markdown from 'react-markdown/with-html.js'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Router from 'next/router.js'
+
+import * as core from '@pluralsight/ps-design-system-core'
 
 import CodeMirrorCss from '../../vendor/codemirror-css.js'
 import CodeMirrorPsTheme from './codemirror-ps-theme.js'

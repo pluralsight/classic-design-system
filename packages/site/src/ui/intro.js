@@ -1,24 +1,20 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-function Intro(props) {
+import { layout, type } from '@pluralsight/ps-design-system-core'
+
+export default function Intro(props) {
   return (
-    <div className="intro">
-      {props.children}
+    <>
+      <div className="intro" {...props} />
+
       <style jsx>{`
         .intro {
-          margin-bottom: ${core.layout.spacingLarge};
-          font-size: ${core.type.fontSizeMedium};
-          line-height: ${core.type.lineHeightExtra};
-          font-weight: ${core.type.fontWeightLight};
+          margin-bottom: ${layout.spacingLarge};
+          font-size: ${type.fontSizeMedium};
+          line-height: ${type.lineHeightExtra};
+          font-weight: ${type.fontWeightLight};
         }
       `}</style>
-    </div>
+    </>
   )
 }
-Intro.propTypes = {
-  children: PropTypes.node
-}
-
-export default Intro
