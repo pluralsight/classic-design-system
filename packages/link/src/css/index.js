@@ -6,18 +6,6 @@ import {
 import * as vars from '../vars/index.js'
 
 export default {
-  [`.psds-link`]: {
-    '&:hover': {
-      color: colors.orange,
-      textDecoration: 'underline'
-    }
-  },
-  [`.psds-link.psds-button--2020-colors`]: {
-    '&:hover': {
-      color: colorsPrimaryAction.background,
-      textDecoration: 'underline'
-    }
-  },
   [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeNames.light}`]: {
     color: colors.orange,
     textDecoration: 'none'
@@ -37,5 +25,17 @@ export default {
   [`.psds-link--appearance-${vars.appearances.subtle}`]: {
     color: 'currentColor',
     textDecoration: 'underline'
+  },
+  [`.psds-link`]: {
+    '&:hover': {
+      color: colors.orange,
+      textDecoration: 'underline'
+    }
+  },
+  [`.psds-link.psds-button--2020-colors`]: {
+    '&:hover': {
+      color: colorsPrimaryAction.background,
+      textDecoration: 'underline'
+    }
   }
 }
