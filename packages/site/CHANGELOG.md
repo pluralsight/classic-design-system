@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.8.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.8.0...@pluralsight/ps-design-system-site@17.8.1) (2020-02-10)
+
+
+### Bug Fixes
+
+* **site:** themeToggle missing correct context ([c933931](https://github.com/pluralsight/design-system/commit/c933931b6b8ac024820972bb447e5b17ed943669))
+
+
+
+
+
 # [17.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.7.0...@pluralsight/ps-design-system-site@17.8.0) (2020-02-07)
 
 
