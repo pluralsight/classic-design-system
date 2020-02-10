@@ -2,26 +2,25 @@ const postcss = require('postcss')
 
 const dashify = require('../css/dashify')
 
-const createSassVar = (decl, options) => {
-  const node = postcss.parse(`
-$${dashify(decl.prop.replace('--', ''))}: ${decl.value};
-`)
+module.exports = postcss.plugin('postcss-css-var-sass-var', function() {
+  const matchCssVarSelector = /^--?/
 
-  decl.root().insertAfter(decl.root(), node)
-}
-
-module.exports = postcss.plugin('css-var-selectors', options => {
-  return css => {
-    options = options || {}
-
-    css.walkRules(rule => {
-      rule.walkDecls((decl, i) => {
-        const isCssVar = /^--/.test(decl.prop)
-        if (isCssVar) createSassVar(decl, options)
+  return function(root, result) {
+    root.walkRules(rule => {
+      rule.walkDecls(matchCssVarSelector, decl => {
+        const sassDecl = createSassVarDecl(decl)
+        decl.root().insertAfter(decl.root(), sassDecl)
       })
+    })
 
-      const isCssVarRoot = rule.selector === ':root'
-      if (isCssVarRoot) rule.remove()
+    root.walkRules(':root', rule => {
+      rule.remove()
     })
   }
 })
+
+function createSassVarDecl(decl) {
+  const name = `${dashify(decl.prop.replace('--', ''))}`
+
+  return postcss.decl({ prop: '$' + name, value: decl.value })
+}
