@@ -10,7 +10,7 @@ import React from 'react'
 import stylesheet from '../css/index.js'
 
 const style = ({ psds2020Colors, appearance, themeName }) => {
-  const flag = psds2020Colors ? '.psds-button--2020-colors' : ''
+  const flag = psds2020Colors ? '.psds-link--2020-colors' : ''
   return css(
     stylesheet[`.psds-link${flag}`],
     appearance === appearances.default
