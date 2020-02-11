@@ -12,7 +12,7 @@ export default {
       textDecoration: 'underline'
     }
   },
-  [`.psds-link.psds-button--2020-colors`]: {
+  [`.psds-link.psds-link--2020-colors`]: {
     '&:hover': {
       color: colorsPrimaryAction.background,
       textDecoration: 'underline'
@@ -26,11 +26,11 @@ export default {
     color: colors.orange,
     textDecoration: 'none'
   },
-  [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeNames.light}.psds-link--2020-colors`]: {
     color: colorsPrimaryAction.textLightTheme,
     textDecoration: 'none'
   },
-  [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
+  [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeDefaultName}.psds-link--2020-colors`]: {
     color: colorsPrimaryAction.textDarkTheme,
     textDecoration: 'none'
   },
