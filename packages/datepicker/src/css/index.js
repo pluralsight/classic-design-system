@@ -102,10 +102,9 @@ export default {
   // __label
   '.psds-date-picker__label': {
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeSmall,
-    lineHeight: '16px',
+    fontSize: type.fontSizeXSmall,
     fontWeight: type.fontWeightMedium,
-    paddingBottom: layout.spacingXSmall
+    marginBottom: layout.spacingXXSmall
   },
   [`.psds-date-picker__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -115,9 +114,8 @@ export default {
   '.psds-date-picker__sub-label': {
     color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSizeXSmall,
-    lineHeight: '16px',
-    fontWeight: type.fontWeightMedium,
-    paddingTop: layout.spacingXSmall
+    fontWeight: type.fontWeightBook,
+    marginTop: layout.spacingXXSmall
   },
   [`.psds-date-picker__sub-label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.lowOnLight
