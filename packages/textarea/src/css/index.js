@@ -53,10 +53,9 @@ export default {
   '.psds-text-area__label': {
     width: '100%',
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeSmall,
-    lineHeight: '16px',
+    fontSize: type.fontSizeXSmall,
     fontWeight: type.fontWeightMedium,
-    paddingBottom: layout.spacingXSmall
+    marginBottom: layout.spacingXXSmall
   },
   [`.psds-text-area__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -65,9 +64,8 @@ export default {
   '.psds-text-area__sub-label': {
     color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSizeXSmall,
-    lineHeight: '16px',
     fontWeight: type.fontWeightMedium,
-    paddingTop: layout.spacingXSmall
+    marginTop: layout.spacingXXSmall
   },
   [`.psds-text-area__sub-label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.lowOnLight
