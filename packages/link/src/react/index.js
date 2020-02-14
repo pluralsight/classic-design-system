@@ -1,6 +1,5 @@
 import { css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { appearances } from '../vars/index.js'
 
@@ -9,23 +8,18 @@ import React from 'react'
 
 import stylesheet from '../css/index.js'
 
-const style = ({ psds2020Colors, appearance, themeName }) => {
-  const flag = psds2020Colors ? '.psds-link--2020-colors' : ''
-  return css(
-    stylesheet[`.psds-link${flag}`],
+const style = ({ appearance, themeName }) =>
+  css(
+    stylesheet[`.psds-link`],
     appearance === appearances.default
       ? stylesheet[
-          `.psds-link--appearance-${appearance}.psds-theme--${themeName}${flag}`
+          `.psds-link--appearance-${appearance}.psds-theme--${themeName}`
         ]
       : stylesheet[`.psds-link--appearance-${appearance}`]
   )
-}
 
 const Link = React.forwardRef((props, forwardedRef) => {
   const ref = forwardedRef || React.useRef()
-  const {
-    flags: { psds2020Colors }
-  } = useFeatureFlags()
   const themeName = useTheme()
 
   let tagName = 'a'
@@ -35,7 +29,7 @@ const Link = React.forwardRef((props, forwardedRef) => {
 
   const { children, ...rest } = props
   return React.cloneElement(React.Children.only(props.children), {
-    ...style({ ...props, psds2020Colors, themeName }),
+    ...style({ ...props, themeName }),
     ...filterReactProps(rest, { tagName })
   })
 })
