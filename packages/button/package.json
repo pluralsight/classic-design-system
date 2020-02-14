@@ -27,7 +27,6 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-featureflags": "1.x",
     "@pluralsight/ps-design-system-normalize": "^3.1.7",
     "@pluralsight/ps-design-system-theme": "^4.0.0",
     "glamor": "^2.20.40",
@@ -35,9 +34,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.11",
-    "@pluralsight/ps-design-system-featureflags": "^1.1.10",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.9",
-    "@pluralsight/ps-design-system-storybook-addon-featureflags": "^1.1.13",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.17",
     "@pluralsight/ps-design-system-theme": "^4.0.9"
   }

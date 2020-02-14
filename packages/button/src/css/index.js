@@ -1,11 +1,9 @@
 import {
-  colors,
   colorsBackgroundUtility,
   colorsBlue,
   colorsBorder,
   colorsPrimaryAction,
   colorsTextIcon,
-  colorsWhite,
   layout,
   motion,
   type
@@ -14,7 +12,6 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
@@ -49,20 +46,16 @@ export default {
     fontSize: type.fontSizeSmall,
     fontWeight: type.fontWeightMedium,
     textAlign: 'center',
-    color: colors.white,
-    background: colors.orange,
     whiteSpace: 'nowrap',
     textDecoration: 'none',
     transition: `all ${motion.speedNormal}`,
     verticalAlign: 'middle',
 
     '&:not([disabled]):hover': {
-      background: colors.orangeLight,
       cursor: 'pointer'
     },
     '&:focus': {
       outline: 'none',
-
       '&:before': {
         content: ' ',
         position: 'absolute',
@@ -70,17 +63,16 @@ export default {
         left: '-4px',
         right: '-4px',
         bottom: '-4px',
-        border: `3px solid ${colors.blue}`,
+        border: `3px solid ${colorsBlue.base}`,
         borderRadius: '4px'
       }
     }
   },
-  [`.psds-button--appearance-${vars.appearances.primary}.psds-button--2020-colors`]: {
+  [`.psds-button--appearance-${vars.appearances.primary}`]: {
     color: colorsTextIcon.highOnDark,
     background: colorsPrimaryAction.background,
     '&:not([disabled]):hover': {
-      background: colorsBlue[5],
-      cursor: 'pointer'
+      background: colorsBlue[5]
     }
   },
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
@@ -103,26 +95,7 @@ export default {
     padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
     height: '48px'
   },
-
   [`.psds-button--appearance-${vars.appearances.secondary}`]: {
-    color: colors.gray01,
-    background: transparentize(0.75, colors.gray02),
-
-    '&:not([disabled]):hover': {
-      color: colors.white,
-      background: transparentize(0.65, colors.gray02)
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colors.gray03,
-    background: transparentize(0.65, colors.gray01),
-
-    '&:not([disabled]):hover': {
-      color: colors.gray06,
-      background: transparentize(0.35, colors.gray01)
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-button--2020-colors`]: {
     color: colorsTextIcon.highOnDark,
     background: colorsSecondaryAction.backgroundDefault,
 
@@ -133,7 +106,7 @@ export default {
       background: colorsSecondaryAction.backgroundPressed
     }
   },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight,
     background: colorsSecondaryAction.backgroundDefault,
     '&:not([disabled]):hover': {
@@ -144,17 +117,6 @@ export default {
     }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}`]: {
-    border: `1px solid ${colors.orange}`,
-    color: colors.orange,
-    background: 'none',
-
-    '&:not([disabled]):hover': {
-      border: `1px solid ${colors.orangeLight}`,
-      color: colors.orangeLight,
-      background: 'none'
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.stroke}.psds-button--2020-colors`]: {
     border: `1px solid ${colorsPrimaryAction.background}`,
     color: colorsPrimaryAction.textDarkTheme,
     background: 'none',
@@ -168,27 +130,6 @@ export default {
   [`.psds-button--appearance-${vars.appearances.flat}`]: {
     border: 'none',
     background: 'none',
-
-    '&:not([disabled]):hover': {
-      color: colors.white,
-      background: transparentize(0.85, colors.white)
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
-    color: colors.gray03,
-
-    '&:not([disabled]):hover': {
-      color: 'inherit',
-      background: transparentize(0.85, colors.gray03)
-    }
-  },
-
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
-    color: colors.gray02
-  },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-button--2020-colors`]: {
-    border: 'none',
-    background: 'none',
     '&:not([disabled]):hover': {
       background: colorsSecondaryAction.backgroundHover
     },
@@ -196,28 +137,13 @@ export default {
       background: colorsSecondaryAction.backgroundPressed
     }
   },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}.psds-button--2020-colors`]: {
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark
   },
   [`.psds-button--disabled`]: {
-    color: colors.gray02,
-    opacity: '50%',
-    cursor: 'default',
-
-    '&:not([disabled]):hover': {
-      color: 'inherit',
-      background: 'inherit',
-      border: 'inherit'
-    }
-  },
-  [`.psds-button--disabled.psds-theme--${themeNames.light}`]: {
-    color: colors.gray03,
-    background: colors.gray01
-  },
-  [`.psds-button--disabled.psds-button--2020-colors`]: {
     opacity: '50%',
     cursor: 'not-allowed',
     '&:not([disabled]):hover': {
@@ -226,34 +152,19 @@ export default {
       border: 'inherit'
     }
   },
-  [`.psds-button--disabled.psds-theme--${themeNames.light}.psds-button--2020-colors`]: {
+  [`.psds-button--disabled.psds-theme--${themeNames.light}`]: {
     opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.primary}`]: {
-    color: colorsWhite,
     opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.secondary}`]: {
     opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.stroke}`]: {
-    border: 'none',
     opacity: 0.5
   },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.flat}`]: {
-    opacity: 0.4,
-    background: 'none'
-  },
-  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.primary}.psds-button--2020-colors`]: {
-    opacity: 0.5
-  },
-  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.secondary}.psds-button--2020-colors`]: {
-    opacity: 0.5
-  },
-  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.stroke}.psds-button--2020-colors`]: {
-    opacity: 0.5
-  },
-  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.flat}.psds-button--2020-colors`]: {
     opacity: 0.5
   },
   [`.psds-button--iconAlign-${vars.iconAligns.right}`]: {
@@ -316,54 +227,30 @@ export default {
     animation: `${spin || 'psds-button__keyframes__spin'} 1s linear infinite`
   }),
   [`.psds-button__loading--appearance-${vars.appearances.primary}`]: {
-    borderColor: transparentize(0.8, colors.gray04),
-    borderTopColor: colors.white
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.secondary}`]: {
-    borderColor: transparentize(0.8, colors.gray01),
-    borderTopColor: colors.gray01
+    borderColor: loading.trackColorOnDark,
+    borderTopColor: loading.borderTopColorOnDark
   },
   [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeNames.light}`]: {
-    borderColor: transparentize(0.8, colors.gray04),
-    borderTopColor: colors.gray04
+    borderColor: loading.trackColorOnLight,
+    borderTopColor: loading.borderTopColorOnLight
   },
-  [`.psds-button__loading--appearance-${vars.appearances.stroke}`]: {
-    borderColor: transparentize(0.8, colors.white),
-    borderTopColor: colors.orange
+  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeDefaultName}`]: {
+    borderColor: loading.trackColorOnDark,
+    borderTopColor: loading.borderTopColorOnDark
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeNames.light}`]: {
+    borderColor: loading.trackColorOnLight,
+    borderTopColor: loading.borderTopColorOnStroke
+  },
+  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeDefaultName}`]: {
+    borderColor: loading.trackColorOnDark,
+    borderTopColor: loading.borderTopColorOnStroke
   },
   [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeNames.light}`]: {
-    borderColor: transparentize(0.8, colors.gray04),
-    borderTopColor: colors.gray04
+    borderColor: loading.trackColorOnLight,
+    borderTopColor: loading.borderTopColorOnLight
   },
   [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeDefaultName}`]: {
-    borderColor: transparentize(0.8, colors.white),
-    borderTopColor: colors.white
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.primary}.psds-button--2020-colors`]: {
-    borderColor: loading.trackColorOnDark,
-    borderTopColor: loading.borderTopColorOnDark
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeNames.light}.psds-button--2020-colors`]: {
-    borderColor: loading.trackColorOnLight,
-    borderTopColor: loading.borderTopColorOnLight
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeDefaultName}.psds-button--2020-colors`]: {
-    borderColor: loading.trackColorOnDark,
-    borderTopColor: loading.borderTopColorOnDark
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeNames.light}.psds-button--2020-colors`]: {
-    borderColor: loading.trackColorOnLight,
-    borderTopColor: loading.borderTopColorOnStroke
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeDefaultName}.psds-button--2020-colors`]: {
-    borderColor: loading.trackColorOnDark,
-    borderTopColor: loading.borderTopColorOnStroke
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeNames.light}.psds-button--2020-colors`]: {
-    borderColor: loading.trackColorOnLight,
-    borderTopColor: loading.borderTopColorOnLight
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeDefaultName}.psds-button--2020-colors`]: {
     borderColor: loading.trackColorOnDark,
     borderTopColor: loading.borderTopColorOnDark
   },
