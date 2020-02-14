@@ -30,7 +30,7 @@ exports[`Storyshots pages 403 1`] = `
       data-css-1qym0u7=""
     >
       <h1
-        data-css-1fxxvvr=""
+        data-css-xhd98s=""
         size="medium"
       >
         You are not authorized to view this page. Try contacting support or reaching out to your plan administrator.
@@ -40,7 +40,7 @@ exports[`Storyshots pages 403 1`] = `
       data-css-i38iv3=""
     >
       <h2
-        data-css-1oooiac=""
+        data-css-k4y5mo=""
         size="smallCaps"
       >
         Error code: 
@@ -93,7 +93,7 @@ exports[`Storyshots pages 404 1`] = `
       data-css-1qym0u7=""
     >
       <h1
-        data-css-1fxxvvr=""
+        data-css-xhd98s=""
         size="medium"
       >
         Sorry, the page you are looking for cannot be found. Try checking the URL for errors or search our library.
@@ -103,7 +103,7 @@ exports[`Storyshots pages 404 1`] = `
       data-css-i38iv3=""
     >
       <h2
-        data-css-1oooiac=""
+        data-css-k4y5mo=""
         size="smallCaps"
       >
         Error code: 
@@ -169,7 +169,7 @@ exports[`Storyshots pages 500 1`] = `
       data-css-1qym0u7=""
     >
       <h1
-        data-css-1fxxvvr=""
+        data-css-xhd98s=""
         size="medium"
       >
         Something unexpected has happened. Please try again. If you continue to experience problems, let us know.
@@ -179,7 +179,7 @@ exports[`Storyshots pages 500 1`] = `
       data-css-i38iv3=""
     >
       <h2
-        data-css-1oooiac=""
+        data-css-k4y5mo=""
         size="smallCaps"
       >
         Error code: 
@@ -232,7 +232,7 @@ exports[`Storyshots pages 503 1`] = `
       data-css-1qym0u7=""
     >
       <h1
-        data-css-1fxxvvr=""
+        data-css-xhd98s=""
         size="medium"
       >
         Unfortunately the site is currently unavailable. We expect everything back in order shortly. Sorry for the inconvenience.
@@ -242,7 +242,7 @@ exports[`Storyshots pages 503 1`] = `
       data-css-i38iv3=""
     >
       <h2
-        data-css-1oooiac=""
+        data-css-k4y5mo=""
         size="smallCaps"
       >
         Error code: 
