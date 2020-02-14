@@ -165,7 +165,7 @@ exports[`Storyshots Components | Typeahead / form props all 1`] = `
     data-css-w0yocm=""
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -208,7 +208,7 @@ exports[`Storyshots Components | Typeahead / form props all 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-6ga4kh=""
     >
       Some sublabel
     </div>
@@ -229,7 +229,7 @@ exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
     data-css-w0yocm=""
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -291,7 +291,7 @@ exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-6ga4kh=""
     >
       Some sublabel
     </div>
@@ -312,7 +312,7 @@ exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] =
     data-css-w0yocm=""
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -354,7 +354,7 @@ exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] =
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-6ga4kh=""
     >
       Some sublabel
     </div>

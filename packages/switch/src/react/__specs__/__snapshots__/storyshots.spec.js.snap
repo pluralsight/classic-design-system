@@ -32,7 +32,7 @@ exports[`Storyshots checked false 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Click me
     </label>
@@ -72,7 +72,7 @@ exports[`Storyshots checked true 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Click me
     </label>
@@ -182,7 +182,7 @@ exports[`Storyshots color blue 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Click me
     </label>
@@ -222,7 +222,7 @@ exports[`Storyshots color green 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Click me
     </label>
@@ -262,7 +262,7 @@ exports[`Storyshots color orange 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Click me
     </label>
@@ -407,7 +407,7 @@ exports[`Storyshots error true 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Clickable in error state
     </label>
@@ -447,7 +447,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Such errors
     </label>
@@ -487,7 +487,7 @@ exports[`Storyshots label large left 1`] = `
       type="checkbox"
     />
     <label
-      data-css-qisca0=""
+      data-css-16fknc=""
     >
       Click me
     </label>
@@ -527,7 +527,7 @@ exports[`Storyshots label large right 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Click me
     </label>
@@ -567,7 +567,7 @@ exports[`Storyshots label small left 1`] = `
       type="checkbox"
     />
     <label
-      data-css-kccklm=""
+      data-css-i4my9=""
     >
       Click me
     </label>
@@ -607,7 +607,7 @@ exports[`Storyshots label small right 1`] = `
       type="checkbox"
     />
     <label
-      data-css-yktx6h=""
+      data-css-y6ldsm=""
     >
       Click me
     </label>
@@ -647,7 +647,7 @@ exports[`Storyshots size large 1`] = `
       type="checkbox"
     />
     <label
-      data-css-on3oux=""
+      data-css-1oms9gl=""
     >
       Click me
     </label>
@@ -687,7 +687,7 @@ exports[`Storyshots size small 1`] = `
       type="checkbox"
     />
     <label
-      data-css-yktx6h=""
+      data-css-y6ldsm=""
     >
       Click me
     </label>
