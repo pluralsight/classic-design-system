@@ -54,7 +54,7 @@ export default {
   },
   '.psds-radio-button__circle--checked': {
     borderColor: colorsBlue.base,
-    background: colorsBlue.base
+	background: colorsBlue.base
   },
 
   '.psds-radio-button__circle-inner': {
