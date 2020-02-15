@@ -289,7 +289,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Problem field
       </div>
@@ -610,7 +610,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Problem field
       </div>
@@ -671,7 +671,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-w0yocm=""
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Normal
         </div>
@@ -694,7 +694,7 @@ exports[`Storyshots disabled compare 1`] = `
           </div>
         </div>
         <div
-          data-css-bf7jp3=""
+          data-css-6ga4kh=""
         >
           Still normal
         </div>
@@ -703,7 +703,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-1y0hkm3=""
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           I'm not usable
         </div>
@@ -726,7 +726,7 @@ exports[`Storyshots disabled compare 1`] = `
           </div>
         </div>
         <div
-          data-css-bf7jp3=""
+          data-css-6ga4kh=""
         >
           Neither am I
         </div>
@@ -735,7 +735,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-1y0hkm3=""
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Disbled and errored
         </div>
@@ -777,7 +777,7 @@ exports[`Storyshots disabled compare 1`] = `
           </div>
         </div>
         <div
-          data-css-bf7jp3=""
+          data-css-6ga4kh=""
         >
           Neither am I
         </div>
@@ -802,7 +802,7 @@ exports[`Storyshots labels all 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Some label
       </div>
@@ -825,7 +825,7 @@ exports[`Storyshots labels all 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-6ga4kh=""
       >
         Some sublabel
       </div>
@@ -849,7 +849,7 @@ exports[`Storyshots labels all w/error 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Some label
       </div>
@@ -891,7 +891,7 @@ exports[`Storyshots labels all w/error 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-6ga4kh=""
       >
         Some sublabel
       </div>
@@ -915,7 +915,7 @@ exports[`Storyshots labels label 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Some label
       </div>
@@ -956,7 +956,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       data-css-w0yocm=""
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Some label
       </div>
@@ -978,7 +978,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-6ga4kh=""
       >
         Some sublabel
       </div>
@@ -1134,7 +1134,7 @@ exports[`Storyshots labels subLabel 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-6ga4kh=""
       >
         Some sublabel
       </div>
@@ -1172,7 +1172,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           First
         </div>
@@ -1204,7 +1204,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Second
         </div>
@@ -1255,7 +1255,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Third
         </div>
@@ -1287,7 +1287,7 @@ exports[`Storyshots layouts full width 1`] = `
         }
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Fourth
         </div>
