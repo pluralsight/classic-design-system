@@ -4,7 +4,6 @@ import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
@@ -22,22 +21,20 @@ const styles = {
     iconOnly,
     loading,
     size,
-    themeName,
-    psds2020Colors
-  }) => {
-    const flag = psds2020Colors ? '.psds-button--2020-colors' : ''
-    return css(
+    themeName
+  }) =>
+    css(
       stylesheet['.psds-button'],
       stylesheet[`.psds-button--size-${size}`],
-      stylesheet[`.psds-button--appearance-${appearance}${flag}`],
+      stylesheet[`.psds-button--appearance-${appearance}`],
       stylesheet[
-        `.psds-button--appearance-${appearance}.psds-theme--${themeName}${flag}`
+        `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
       ],
       disabled && {
-        ...stylesheet[`.psds-button--disabled${flag}`],
-        ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}${flag}`],
+        ...stylesheet[`.psds-button--disabled`],
+        ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
         ...stylesheet[
-          `.psds-button--disabled.psds-button--appearance-${appearance}${flag}`
+          `.psds-button--disabled.psds-button--appearance-${appearance}`
         ]
       },
       icon &&
@@ -56,18 +53,15 @@ const styles = {
         ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
       },
       cssProp
-    )
-  },
-  loading: ({ appearance, themeName, psds2020Colors }) => {
-    const flag = psds2020Colors ? '.psds-button--2020-colors' : ''
-    return css(
+    ),
+  loading: ({ appearance, themeName }) =>
+    css(
       stylesheet[`.psds-button__loading`]({ spin }),
-      stylesheet[`.psds-button__loading--appearance-${appearance}${flag}`],
+      stylesheet[`.psds-button__loading--appearance-${appearance}`],
       stylesheet[
-        `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}${flag}`
+        `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
       ]
-    )
-  },
+    ),
   icon: ({ iconAlign, iconOnly, isLoadingWithNoText }) =>
     css(
       stylesheet['.psds-button__icon'],
@@ -112,9 +106,6 @@ renderIcon.propTypes = {
 
 const Button = React.forwardRef((props, ref) => {
   const themeName = useTheme()
-  const {
-    flags: { psds2020Colors }
-  } = useFeatureFlags()
   if (!ref) ref = React.useRef()
   const nonLoadingWidth = React.useMemo(() => {
     if (props.loading && ref && ref.current) {
@@ -128,8 +119,7 @@ const Button = React.forwardRef((props, ref) => {
     ...props,
     isLoadingWithNoText,
     iconOnly: React.Children.count(props.children) <= 0,
-    themeName,
-    psds2020Colors
+    themeName
   }
 
   const isDisabledLink = allProps.disabled && allProps.href
