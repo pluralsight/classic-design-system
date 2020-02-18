@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-errors",
-  "version": "7.0.29",
+  "version": "7.1.0",
   "description": "Design system components for errors",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,10 +21,10 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^17.1.15",
+    "@pluralsight/ps-design-system-button": "^17.2.0",
     "@pluralsight/ps-design-system-core": "^5.5.3",
     "@pluralsight/ps-design-system-icon": "^17.1.6",
-    "@pluralsight/ps-design-system-text": "^15.0.15",
+    "@pluralsight/ps-design-system-text": "^15.1.0",
     "camelize": "^1.0.0",
     "prop-types": "^15.7.2"
   },

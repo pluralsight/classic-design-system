@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@7.0.29...@pluralsight/ps-design-system-errors@7.1.0) (2020-02-18)
+
+
+### Features
+
+* **button:** removes featureFlags consumer and old styles ([88046f4](https://github.com/pluralsight/design-system/commit/88046f4768f5d78dfa8c6b31b2fd756e700626ef))
+* **text:** removes featureFlags consumer and old styles ([5a2b7fc](https://github.com/pluralsight/design-system/commit/5a2b7fc05c1be6e0baa61ccc050e0c721d64ebea))
+
+
+
+
+
 ## [7.0.29](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@7.0.28...@pluralsight/ps-design-system-errors@7.0.29) (2020-02-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors

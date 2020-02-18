@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-datawell",
-  "version": "3.0.27",
+  "version": "3.1.0",
   "description": "Data Well UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^5.5.3",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
-    "@pluralsight/ps-design-system-text": "^15.0.15"
+    "@pluralsight/ps-design-system-text": "^15.1.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.1.7",

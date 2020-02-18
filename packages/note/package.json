@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-note",
-  "version": "5.1.7",
+  "version": "5.2.0",
   "description": "Note UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -37,11 +37,11 @@
     "@pluralsight/ps-design-system-actionmenu": "^9.1.7",
     "@pluralsight/ps-design-system-build": "^1.11.12",
     "@pluralsight/ps-design-system-icon": "^17.1.6",
-    "@pluralsight/ps-design-system-link": "^9.0.13",
+    "@pluralsight/ps-design-system-link": "^9.1.0",
     "@pluralsight/ps-design-system-position": "^2.0.26",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.9",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.18",
-    "@pluralsight/ps-design-system-text": "^15.0.15",
+    "@pluralsight/ps-design-system-text": "^15.1.0",
     "@pluralsight/ps-design-system-theme": "^4.0.9"
   }
 }

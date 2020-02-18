@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@3.0.27...@pluralsight/ps-design-system-datawell@3.1.0) (2020-02-18)
+
+
+### Features
+
+* **text:** removes featureFlags consumer and old styles ([5a2b7fc](https://github.com/pluralsight/design-system/commit/5a2b7fc05c1be6e0baa61ccc050e0c721d64ebea))
+
+
+
+
+
 ## [3.0.27](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@3.0.26...@pluralsight/ps-design-system-datawell@3.0.27) (2020-02-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datawell
