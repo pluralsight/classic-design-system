@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.13...@pluralsight/ps-design-system-collapsible@2.0.14) (2020-02-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-collapsible
+
+
+
+
+
 ## [2.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.12...@pluralsight/ps-design-system-collapsible@2.0.13) (2020-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-collapsible

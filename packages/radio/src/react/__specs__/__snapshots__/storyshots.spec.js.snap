@@ -47,7 +47,7 @@ exports[`Storyshots Radio default 1`] = `
           value="red"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -85,7 +85,7 @@ exports[`Storyshots Radio default 1`] = `
           value="green"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -123,7 +123,7 @@ exports[`Storyshots Radio default 1`] = `
           value="blue"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -180,7 +180,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="red"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -201,13 +201,13 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-12prt44=""
+              data-css-1olif27=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-1qtmg0s=""
+                data-css-ppl1jg=""
               />
             </div>
           </div>
@@ -222,7 +222,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="green"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -260,7 +260,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="blue"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -317,7 +317,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="red"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -338,13 +338,13 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-12prt44=""
+              data-css-1olif27=""
               onFocus={null}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-1qtmg0s=""
+                data-css-ppl1jg=""
               />
             </div>
           </div>
@@ -359,7 +359,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="green"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -397,7 +397,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="blue"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -454,7 +454,7 @@ exports[`Storyshots Radio error 1`] = `
           value="red"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -475,13 +475,13 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-12prt44=""
+              data-css-1olif27=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-1qtmg0s=""
+                data-css-ppl1jg=""
               />
             </div>
           </div>
@@ -496,7 +496,7 @@ exports[`Storyshots Radio error 1`] = `
           value="green"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -534,7 +534,7 @@ exports[`Storyshots Radio error 1`] = `
           value="blue"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -591,7 +591,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="red"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -612,13 +612,13 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-12prt44=""
+              data-css-1olif27=""
               onFocus={[Function]}
               role="radio"
               tabIndex="-1"
             >
               <div
-                data-css-1qtmg0s=""
+                data-css-ppl1jg=""
               />
             </div>
           </div>
@@ -633,7 +633,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="green"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -671,7 +671,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="blue"
         />
         <div
-          data-css-wbyy03=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -723,13 +723,13 @@ exports[`Storyshots Radio state demo 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-12prt44=""
+                data-css-1olif27=""
                 onFocus={[Function]}
                 role="radio"
                 tabIndex="-1"
               >
                 <div
-                  data-css-1qtmg0s=""
+                  data-css-ppl1jg=""
                 />
               </div>
             </div>
@@ -744,7 +744,7 @@ exports[`Storyshots Radio state demo 1`] = `
             value="red"
           />
           <div
-            data-css-wbyy03=""
+            data-css-nrxvu5=""
           >
             Red
           </div>
@@ -782,7 +782,7 @@ exports[`Storyshots Radio state demo 1`] = `
             value="green"
           />
           <div
-            data-css-wbyy03=""
+            data-css-nrxvu5=""
           >
             Green
           </div>
@@ -820,7 +820,7 @@ exports[`Storyshots Radio state demo 1`] = `
             value="blue"
           />
           <div
-            data-css-wbyy03=""
+            data-css-nrxvu5=""
           >
             Blue
           </div>

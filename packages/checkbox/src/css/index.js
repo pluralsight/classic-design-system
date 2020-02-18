@@ -124,7 +124,7 @@ export default {
     color: colorsTextIcon.highOnDark,
     fontSize: type.fontSizeSmall,
     lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightMedium
+    fontWeight: type.fontWeightBook
   },
   [`.psds-checkbox__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
