@@ -101,7 +101,7 @@ exports[`Storyshots cell auto style anchor tag 1`] = `
       style={Object {}}
     >
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         Link component with anchor tag

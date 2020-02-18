@@ -407,7 +407,7 @@ exports[`Storyshots Note with linked heading 1`] = `
         >
           <p>
             <a
-              data-css-1vzf57m=""
+              data-css-di03rb=""
               href="#"
             >
               Bob Ross
@@ -1639,7 +1639,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
             data-css-1plyjau=""
           >
             <a
-              data-css-1skajya=""
+              data-css-1ud2sxh=""
               href="#"
             >
               i'm a link
@@ -1655,7 +1655,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
             data-css-1plyjau=""
           >
             <a
-              data-css-1vzf57m=""
+              data-css-di03rb=""
               href="#"
             >
               i'm a subtle link

@@ -12,7 +12,7 @@ exports[`Storyshots appearance default 1`] = `
     }
   >
     <a
-      data-css-1skajya=""
+      data-css-1ud2sxh=""
       href="http://duckduckgo.com"
     >
       Click me
@@ -33,7 +33,7 @@ exports[`Storyshots appearance subtle 1`] = `
     }
   >
     <a
-      data-css-1vzf57m=""
+      data-css-di03rb=""
       href="http://duckduckgo.com"
     >
       Click me
@@ -54,7 +54,7 @@ exports[`Storyshots tagNames button 1`] = `
     }
   >
     <button
-      data-css-1skajya=""
+      data-css-1ud2sxh=""
     >
       Click me
     </button>
