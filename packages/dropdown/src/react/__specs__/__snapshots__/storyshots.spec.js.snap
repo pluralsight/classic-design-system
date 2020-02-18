@@ -13,7 +13,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Problem field
     </div>
@@ -27,7 +27,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -98,7 +98,7 @@ exports[`Storyshots appearance gaps 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Problem field
         </div>
@@ -112,7 +112,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1lq4mos=""
+                data-css-i9dafq=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -153,7 +153,7 @@ exports[`Storyshots appearance gaps 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Problem field
         </div>
@@ -167,7 +167,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1lq4mos=""
+                data-css-i9dafq=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -227,7 +227,7 @@ exports[`Storyshots appearance gaps 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Problem field
         </div>
@@ -241,7 +241,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-18uvdlm=""
+                data-css-1xu7t6b=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -282,7 +282,7 @@ exports[`Storyshots appearance gaps 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Problem field
         </div>
@@ -296,7 +296,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-18uvdlm=""
+                data-css-1xu7t6b=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -376,7 +376,7 @@ exports[`Storyshots appearance medium default 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -439,7 +439,7 @@ exports[`Storyshots appearance medium subtle 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-18uvdlm=""
+            data-css-1xu7t6b=""
             disabled={false}
             onClick={[Function]}
           >
@@ -502,7 +502,7 @@ exports[`Storyshots appearance small default 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-nypqc5=""
+            data-css-kcavkk=""
             disabled={false}
             onClick={[Function]}
           >
@@ -565,7 +565,7 @@ exports[`Storyshots appearance small subtle 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-112wuyk=""
+            data-css-uxc8uo=""
             disabled={false}
             onClick={[Function]}
           >
@@ -619,7 +619,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Problem field
     </div>
@@ -633,7 +633,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-18uvdlm=""
+            data-css-1xu7t6b=""
             disabled={false}
             onClick={[Function]}
           >
@@ -703,7 +703,7 @@ exports[`Storyshots disabled compare 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Normal
       </div>
@@ -717,7 +717,7 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={false}
               onClick={[Function]}
             >
@@ -755,7 +755,7 @@ exports[`Storyshots disabled compare 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-6ga4kh=""
       >
         Still normal
       </div>
@@ -765,7 +765,7 @@ exports[`Storyshots disabled compare 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         I'm not usable
       </div>
@@ -779,7 +779,7 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={true}
               onClick={null}
             >
@@ -817,7 +817,7 @@ exports[`Storyshots disabled compare 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-6ga4kh=""
       >
         Neither am I
       </div>
@@ -848,7 +848,7 @@ exports[`Storyshots focus autofocus with ref 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -907,7 +907,7 @@ exports[`Storyshots focus disabled 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={true}
             onBlur={[Function]}
             onClick={null}
@@ -968,7 +968,7 @@ exports[`Storyshots focus onBlur 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -1028,7 +1028,7 @@ exports[`Storyshots focus onFocus 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
             onFocus={[Function]}
@@ -1079,7 +1079,7 @@ exports[`Storyshots labels all 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -1093,7 +1093,7 @@ exports[`Storyshots labels all 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -1131,7 +1131,7 @@ exports[`Storyshots labels all 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-6ga4kh=""
     >
       Some sublabel
     </div>
@@ -1152,7 +1152,7 @@ exports[`Storyshots labels label 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -1166,7 +1166,7 @@ exports[`Storyshots labels label 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -1216,7 +1216,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -1230,7 +1230,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -1264,7 +1264,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-6ga4kh=""
     >
       Some sublabel
     </div>
@@ -1294,7 +1294,7 @@ exports[`Storyshots labels none 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -1353,7 +1353,7 @@ exports[`Storyshots labels placeholder 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -1416,7 +1416,7 @@ exports[`Storyshots labels subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -1450,7 +1450,7 @@ exports[`Storyshots labels subLabel 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-6ga4kh=""
     >
       Some sublabel
     </div>
@@ -1487,7 +1487,7 @@ exports[`Storyshots layouts custom width 1`] = `
       }
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Width 150
       </div>
@@ -1501,7 +1501,7 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={false}
               onChange={[Function]}
               onClick={[Function]}
@@ -1546,7 +1546,7 @@ exports[`Storyshots layouts custom width 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Width determined by longest item
       </div>
@@ -1560,7 +1560,7 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={false}
               onChange={[Function]}
               onClick={[Function]}
@@ -1631,7 +1631,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         First
       </div>
@@ -1645,7 +1645,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={false}
               onClick={[Function]}
             >
@@ -1690,7 +1690,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Second
       </div>
@@ -1704,7 +1704,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={false}
               onClick={[Function]}
             >
@@ -1768,7 +1768,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Third
       </div>
@@ -1782,7 +1782,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-18uvdlm=""
+              data-css-1xu7t6b=""
               disabled={false}
               onClick={[Function]}
             >
@@ -1827,7 +1827,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Fourth
       </div>
@@ -1841,7 +1841,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-18uvdlm=""
+              data-css-1xu7t6b=""
               disabled={false}
               onClick={[Function]}
             >
@@ -1935,7 +1935,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-18uvdlm=""
+                data-css-1xu7t6b=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -1999,7 +1999,7 @@ exports[`Storyshots menu divider 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2013,7 +2013,7 @@ exports[`Storyshots menu divider 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2067,7 +2067,7 @@ exports[`Storyshots menu in stack 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Level
         </div>
@@ -2081,7 +2081,7 @@ exports[`Storyshots menu in stack 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1lq4mos=""
+                data-css-i9dafq=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -2126,7 +2126,7 @@ exports[`Storyshots menu in stack 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-1ewie3k=""
+          data-css-dysqqm=""
         >
           Level
         </div>
@@ -2140,7 +2140,7 @@ exports[`Storyshots menu in stack 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1lq4mos=""
+                data-css-i9dafq=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -2196,7 +2196,7 @@ exports[`Storyshots menu nested 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2210,7 +2210,7 @@ exports[`Storyshots menu nested 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2264,7 +2264,7 @@ exports[`Storyshots menu onClicks 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2278,7 +2278,7 @@ exports[`Storyshots menu onClicks 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-18uvdlm=""
+            data-css-1xu7t6b=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2351,7 +2351,7 @@ exports[`Storyshots menu single list 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2365,7 +2365,7 @@ exports[`Storyshots menu single list 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2417,7 +2417,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2431,7 +2431,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2485,7 +2485,7 @@ exports[`Storyshots menu super long 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2499,7 +2499,7 @@ exports[`Storyshots menu super long 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2551,7 +2551,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2565,7 +2565,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2617,7 +2617,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2631,7 +2631,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2685,7 +2685,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2699,7 +2699,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2735,7 +2735,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-6ga4kh=""
     >
       The course level
     </div>
@@ -2765,7 +2765,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
           >
@@ -2819,7 +2819,7 @@ exports[`Storyshots props whitelist title 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1ewie3k=""
+      data-css-dysqqm=""
     >
       Level
     </div>
@@ -2833,7 +2833,7 @@ exports[`Storyshots props whitelist title 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             onClick={[Function]}
             title="This title should be present"
@@ -2902,7 +2902,7 @@ exports[`Storyshots whitelist clear 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Thing to change
       </div>
@@ -2916,7 +2916,7 @@ exports[`Storyshots whitelist clear 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={false}
               onChange={[Function]}
               onClick={[Function]}
@@ -2982,7 +2982,7 @@ exports[`Storyshots whitelist name 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1lq4mos=""
+            data-css-i9dafq=""
             disabled={false}
             name="myFieldNameOfPower"
             onClick={[Function]}
@@ -3048,7 +3048,7 @@ exports[`Storyshots whitelist onChange 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1ewie3k=""
+        data-css-dysqqm=""
       >
         Thing to change
       </div>
@@ -3062,7 +3062,7 @@ exports[`Storyshots whitelist onChange 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1lq4mos=""
+              data-css-i9dafq=""
               disabled={false}
               onChange={[Function]}
               onClick={[Function]}
