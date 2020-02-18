@@ -2,40 +2,31 @@ import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
-const style = props => {
-  const flag = props.psds2020Colors ? '.psds-text--2020-colors' : ''
-  return compose(
+const style = props =>
+  compose(
     css(stylesheet['.psds-text__heading']),
-    css(
-      stylesheet[`.psds-text__heading.psds-theme--${props.themeName}${flag}`]
-    ),
+    css(stylesheet[`.psds-text__heading.psds-theme--${props.themeName}`]),
     css(stylesheet[`.psds-text__heading--size-${props.size}`]),
     css(
       stylesheet[
-        `.psds-text__heading--size-${props.size}.psds-theme--${props.themeName}${flag}`
+        `.psds-text__heading--size-${props.size}.psds-theme--${props.themeName}`
       ]
     )
   )
-}
 const rmChildren = ({ children, ...rest }) => rest
 
 const Heading = props => {
   const themeName = useTheme()
-  const {
-    flags: { psds2020Colors }
-  } = useFeatureFlags()
 
   return React.cloneElement(React.Children.only(props.children), {
     ...rmChildren(props),
     ...style({
       ...props,
-      themeName,
-      psds2020Colors
+      themeName
     }),
     className: props.className
   })
