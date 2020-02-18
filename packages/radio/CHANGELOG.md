@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.1.7...@pluralsight/ps-design-system-radio@5.1.8) (2020-02-18)
+
+
+### Reverts
+
+* Revert "Fix space issue" ([4f4ce91](https://github.com/pluralsight/design-system/commit/4f4ce9115acd5cee65f1de34da2c426ef988c4a8))
+
+
+
+
+
 ## [5.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@5.1.6...@pluralsight/ps-design-system-radio@5.1.7) (2020-02-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

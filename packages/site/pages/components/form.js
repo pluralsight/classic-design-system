@@ -395,7 +395,7 @@ class InAppExample extends React.Component {
                     Save
                   </Button>
                   <Button
-                    appearance={Button.appearances.flat}
+                    appearance={Button.appearances.secondary}
                     onClick={evt => evt.preventDefault()}
                   >
                     Cancel
@@ -538,7 +538,7 @@ class InAppExample extends React.Component {
             >
               Save
             </Button>
-            <Button appearance={Button.appearances.flat} onClick={_ => {}}>
+            <Button appearance={Button.appearances.secondary onClick={_ => {}}>
               Cancel
             </Button>
           </Form.ButtonRow>
@@ -684,7 +684,7 @@ export default _ => (
     <TextInput placeholder="Other related stuff" />
     <Form.ButtonRow>
       <Button>Primary</Button>
-      <Button appearance={Button.appearances.flat}>Secondary</Button>
+      <Button appearance={Button.appearances.secondary}>Secondary</Button>
     </Form.ButtonRow>
   </Form.VerticalLayout>
 </div>`
