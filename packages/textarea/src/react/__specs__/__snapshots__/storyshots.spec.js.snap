@@ -9,7 +9,7 @@ exports[`Storyshots disabled compare 1`] = `
       data-css-na8jqt=""
     >
       <div
-        data-css-hnaccs=""
+        data-css-9kywkh=""
       >
         Normal
       </div>
@@ -33,7 +33,7 @@ exports[`Storyshots disabled compare 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-1u5arfw=""
       >
         Still normal
       </div>
@@ -42,7 +42,7 @@ exports[`Storyshots disabled compare 1`] = `
       data-css-1tctpgo=""
     >
       <div
-        data-css-hnaccs=""
+        data-css-9kywkh=""
       >
         I'm not usable
       </div>
@@ -66,7 +66,7 @@ exports[`Storyshots disabled compare 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-1u5arfw=""
       >
         Neither am I
       </div>
@@ -84,7 +84,7 @@ exports[`Storyshots error compare 1`] = `
       data-css-na8jqt=""
     >
       <div
-        data-css-hnaccs=""
+        data-css-9kywkh=""
       >
         Normal
       </div>
@@ -108,7 +108,7 @@ exports[`Storyshots error compare 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-1u5arfw=""
       >
         Still normal
       </div>
@@ -117,7 +117,7 @@ exports[`Storyshots error compare 1`] = `
       data-css-na8jqt=""
     >
       <div
-        data-css-hnaccs=""
+        data-css-9kywkh=""
       >
         I'm in an error state
       </div>
@@ -160,7 +160,7 @@ exports[`Storyshots error compare 1`] = `
         </div>
       </div>
       <div
-        data-css-bf7jp3=""
+        data-css-1u5arfw=""
       >
         Here
       </div>
@@ -209,7 +209,7 @@ exports[`Storyshots labels all 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-hnaccs=""
+      data-css-9kywkh=""
     >
       Some label
     </div>
@@ -233,7 +233,7 @@ exports[`Storyshots labels all 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-1u5arfw=""
     >
       Some sublabel
     </div>
@@ -249,7 +249,7 @@ exports[`Storyshots labels label 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-hnaccs=""
+      data-css-9kywkh=""
     >
       Some label
     </div>
@@ -283,7 +283,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-hnaccs=""
+      data-css-9kywkh=""
     >
       Some label
     </div>
@@ -306,7 +306,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-1u5arfw=""
     >
       Some sublabel
     </div>
@@ -399,7 +399,7 @@ exports[`Storyshots labels subLabel 1`] = `
       </div>
     </div>
     <div
-      data-css-bf7jp3=""
+      data-css-1u5arfw=""
     >
       Some sublabel
     </div>
@@ -427,7 +427,7 @@ exports[`Storyshots layouts Form.VerticalLayout 1`] = `
         }
       >
         <div
-          data-css-hnaccs=""
+          data-css-9kywkh=""
         >
           Inside Form.VerticalLayout
         </div>
@@ -477,7 +477,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-hnaccs=""
+        data-css-9kywkh=""
       >
         max-width still applies
       </div>
@@ -511,7 +511,7 @@ exports[`Storyshots layouts full width 1`] = `
       }
     >
       <div
-        data-css-hnaccs=""
+        data-css-9kywkh=""
       >
         remove max-width
       </div>
@@ -565,7 +565,7 @@ exports[`Storyshots rows less than 4 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-hnaccs=""
+      data-css-9kywkh=""
     >
       Min Height Engages
     </div>
@@ -599,7 +599,7 @@ exports[`Storyshots rows more than 4 1`] = `
     data-css-na8jqt=""
   >
     <div
-      data-css-hnaccs=""
+      data-css-9kywkh=""
     >
       6 Rows of Text
     </div>

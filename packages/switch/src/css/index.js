@@ -94,7 +94,7 @@ export default {
   },
 
   [`.psds-switch__label`]: {
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeightBook,
     lineHeight: '1em'
   },
   [`.psds-switch__label--size-${vars.sizes.small}`]: {

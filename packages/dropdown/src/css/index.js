@@ -31,7 +31,7 @@ export default {
     background: colorsBackgroundLight[3],
     fontSize: type.fontSizeSmall,
     lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeightBook,
     color: colorsTextIcon.highOnLight,
     textAlign: 'left',
     cursor: 'pointer',
@@ -93,10 +93,9 @@ export default {
   // __label
   '.psds-dropdown__label': {
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeSmall,
-    lineHeight: '16px',
+    fontSize: type.fontSizeXSmall,
     fontWeight: type.fontWeightMedium,
-    paddingBottom: layout.spacingXSmall
+    marginBottom: layout.spacingXXSmall
   },
   [`.psds-dropdown__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -106,9 +105,8 @@ export default {
   '.psds-dropdown__sub-label': {
     color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSizeXSmall,
-    lineHeight: '16px',
-    fontWeight: type.fontWeightMedium,
-    paddingTop: layout.spacingXSmall
+    fontWeight: type.fontWeightBook,
+    marginTop: layout.spacingXXSmall
   },
   [`.psds-dropdown__sub-label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.lowOnLight
