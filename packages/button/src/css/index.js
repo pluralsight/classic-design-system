@@ -12,13 +12,17 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
 export const colorsSecondaryAction = {
-  backgroundDefault: colorsBackgroundUtility[25],
-  backgroundHover: colorsBackgroundUtility[30],
-  backgroundPressed: colorsBackgroundUtility[40]
+  backgroundDefaultOnDark: transparentize(0.75, colorsBackgroundUtility.base),
+  backgroundHoverOnDark: transparentize(0.65, colorsBackgroundUtility.base),
+  backgroundPressedOnDark: transparentize(0.80, colorsBackgroundUtility.base),
+  backgroundDefaultOnLight: transparentize(0.75, colorsBackgroundUtility.base),
+  backgroundHoverOnLight: transparentize(0.55, colorsBackgroundUtility.base),
+  backgroundPressedOnLight: transparentize(0.35, colorsBackgroundUtility.base)
 }
 
 export const loading = {
@@ -56,23 +60,10 @@ export default {
     },
     '&:focus': {
       outline: 'none',
-      '&:before': {
-        content: ' ',
-        position: 'absolute',
-        top: '-4px',
-        left: '-4px',
-        right: '-4px',
-        bottom: '-4px',
-        border: `3px solid ${colorsBlue.base}`,
-        borderRadius: '4px'
-      }
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.primary}`]: {
-    color: colorsTextIcon.highOnDark,
-    background: colorsPrimaryAction.background,
-    '&:not([disabled]):hover': {
-      background: colorsBlue[5]
+      boxShadow: `0 0 0 3px ${transparentize(0.5, colorsPrimaryAction.background)}`
+    },
+    '&:not([disabled]):active': {
+      transform: 'translateY(1px)'
     }
   },
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
@@ -95,53 +86,126 @@ export default {
     padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
     height: '48px'
   },
-  [`.psds-button--appearance-${vars.appearances.secondary}`]: {
+  [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark,
-    background: colorsSecondaryAction.backgroundDefault,
-
+    background: colorsPrimaryAction.background,
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHover
+      background: colorsBlue[5],
+      cursor: 'pointer'
+    },
+    '&:not([disabled]):focus': {
+      background: colorsBlue[5],
+      cursor: 'pointer'
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressed
+      background: colorsBlue[7],
+    }
+  },
+  [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnDark,
+    background: colorsPrimaryAction.background,
+    '&:not([disabled]):hover': {
+      background: colorsBlue[7],
+      cursor: 'pointer'
+    },
+    '&:not([disabled]):focus': {
+      background: colorsBlue[7],
+      cursor: 'pointer'
+    },
+    '&:not([disabled]):active': {
+      background: colorsBlue[8],
+    }
+  },
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.highOnDark,
+    background: colorsSecondaryAction.backgroundDefaultOnDark,
+
+    '&:not([disabled]):hover': {
+      background: colorsSecondaryAction.backgroundHoverOnDark
+    },
+    '&:not([disabled]):focus': {
+      background: colorsSecondaryAction.backgroundHoverOnDark
+    },
+    '&:not([disabled]):active': {
+      background: colorsSecondaryAction.backgroundPressedOnDark,
     }
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight,
-    background: colorsSecondaryAction.backgroundDefault,
+    background: colorsSecondaryAction.backgroundDefaultOnLight,
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHover
+      background: colorsSecondaryAction.backgroundHoverOnLight
+    },
+    '&:not([disabled]):focus': {
+      background: colorsSecondaryAction.backgroundHoverOnLight
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressed
+      background: colorsSecondaryAction.backgroundPressedOnLight,
     }
   },
-  [`.psds-button--appearance-${vars.appearances.stroke}`]: {
-    border: `1px solid ${colorsPrimaryAction.background}`,
+  [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeDefaultName}`]: {
+    border: `2px solid ${colorsPrimaryAction.background}`,
     color: colorsPrimaryAction.textDarkTheme,
     background: 'none',
 
     '&:not([disabled]):hover': {
-      border: `1px solid ${colorsBlue[5]}`,
-      color: colorsBlue[5],
-      background: 'none'
+      border: `2px solid ${colorsBlue[5]}`,
+      background: transparentize(0.85, colorsBlue.base)
+    },
+    '&:not([disabled]):focus': {
+      border: `2px solid ${colorsBlue[5]}`,
+      background: transparentize(0.85, colorsBlue.base)
+    },
+    '&:not([disabled]):active': {
+      border: `2px solid ${colorsBlue[7]}`,
+      background: transparentize(0.80, colorsBlue.base),
+    }
+  },
+  [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeNames.light}`]: {
+    border: `2px solid ${colorsPrimaryAction.background}`,
+    color: colorsPrimaryAction.textLightTheme,
+    background: 'none',
+
+    '&:not([disabled]):hover': {
+      border: `2px solid ${colorsBlue[7]}`,
+      background: transparentize(0.95, colorsBlue.base)
+    },
+    '&:not([disabled]):focus': {
+      border: `2px solid ${colorsBlue[7]}`,
+      background: transparentize(0.95, colorsBlue.base)
+    },
+    '&:not([disabled]):active': {
+      border: `2px solid ${colorsBlue[8]}`,
+      background: transparentize(0.90, colorsBlue.base),
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}`]: {
     border: 'none',
     background: 'none',
+  },
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.highOnDark,
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHover
+      background: colorsSecondaryAction.backgroundHoverOnDark
+    },
+    '&:not([disabled]):focus': {
+      background: colorsSecondaryAction.backgroundHoverOnDark
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressed
+      background: colorsSecondaryAction.backgroundPressedOnDark,
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
+    color: colorsTextIcon.highOnLight,
+    '&:not([disabled]):hover': {
+      background: colorsSecondaryAction.backgroundHoverOnLight
+    },
+    '&:not([disabled]):focus': {
+      background: colorsSecondaryAction.backgroundHoverOnLight
+    },
+    '&:not([disabled]):active': {
+      background: colorsSecondaryAction.backgroundPressedOnLight
+    }
   },
   [`.psds-button--disabled`]: {
     opacity: '50%',
