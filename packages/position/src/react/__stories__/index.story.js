@@ -182,11 +182,11 @@ function JsStory({ positionType, ...rest }) {
     above: Tooltip.tailPositions.bottomCenter,
     aboveLeft: Tooltip.tailPositions.bottomLeft,
     aboveRight: Tooltip.tailPositions.bottomRight,
-    rightOf: null,
+    rightOf: Tooltip.tailPositions.leftCenter,
     below: Tooltip.tailPositions.topCenter,
     belowLeft: Tooltip.tailPositions.topLeft,
     belowRight: Tooltip.tailPositions.topRight,
-    leftOf: null
+    leftOf: Tooltip.tailPositions.rightCenter
   }
   const tailPosition = TAIL_POSITION_MAP[positionType]
 

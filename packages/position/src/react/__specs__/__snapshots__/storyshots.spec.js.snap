@@ -954,7 +954,7 @@ exports[`Storyshots Utilities | Position / position fns above 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-1kbx59o=""
+      data-css-s1sch4=""
     />
   </div>
 </div>
@@ -982,7 +982,7 @@ exports[`Storyshots Utilities | Position / position fns aboveLeft 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-g58j1y=""
+      data-css-1jxkkwb=""
     />
   </div>
 </div>
@@ -1010,7 +1010,7 @@ exports[`Storyshots Utilities | Position / position fns aboveRight 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-ogqxtl=""
+      data-css-as9lde=""
     />
   </div>
 </div>
@@ -1038,7 +1038,7 @@ exports[`Storyshots Utilities | Position / position fns below 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-1sx28dq=""
+      data-css-161cv40=""
     />
   </div>
 </div>
@@ -1066,7 +1066,7 @@ exports[`Storyshots Utilities | Position / position fns belowLeft 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-18ju24q=""
+      data-css-1oan5ap=""
     />
   </div>
 </div>
@@ -1094,7 +1094,7 @@ exports[`Storyshots Utilities | Position / position fns belowRight 1`] = `
     The tip
     <div
       aria-hidden={true}
-      data-css-bkjqmk=""
+      data-css-pnrenl=""
     />
   </div>
 </div>
@@ -1120,6 +1120,10 @@ exports[`Storyshots Utilities | Position / position fns leftOf 1`] = `
     }
   >
     The tip
+    <div
+      aria-hidden={true}
+      data-css-1lnrdce=""
+    />
   </div>
 </div>
 `;
@@ -1144,6 +1148,10 @@ exports[`Storyshots Utilities | Position / position fns rightOf 1`] = `
     }
   >
     The tip
+    <div
+      aria-hidden={true}
+      data-css-1bzlzco=""
+    />
   </div>
 </div>
 `;
