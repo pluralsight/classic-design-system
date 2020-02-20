@@ -90,15 +90,15 @@ export default {
     color: colorsTextIcon.highOnDark,
     background: colorsPrimaryAction.background,
     '&:not([disabled]):hover': {
-      background: colorsBlue[5],
+      background: colorsBlue[7],
       cursor: 'pointer'
     },
     '&:not([disabled]):focus': {
-      background: colorsBlue[5],
+      background: colorsBlue[7],
       cursor: 'pointer'
     },
     '&:not([disabled]):active': {
-      background: colorsBlue[7],
+      background: colorsBlue[8],
     }
   },
   [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeNames.light}`]: {
