@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.21...@pluralsight/ps-design-system-tooltip@5.1.0) (2020-02-20)
+
+
+### Bug Fixes
+
+* **tooltip:** add displayName ([fecc9c5](https://github.com/pluralsight/design-system/commit/fecc9c556e9986d3155881286d91e24125c02b6b))
+
+
+### Features
+
+* **tooltip:** left and right tails ([3f25397](https://github.com/pluralsight/design-system/commit/3f2539703ea995e54031c8702c59c6408f18f69a))
+
+
+
+
+
 ## [5.0.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.20...@pluralsight/ps-design-system-tooltip@5.0.21) (2020-02-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
