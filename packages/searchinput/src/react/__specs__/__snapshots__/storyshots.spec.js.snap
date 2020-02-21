@@ -129,7 +129,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           data-css-tzuwtx=""
         >
           <button
-            data-css-vabc10=""
+            data-css-1ijf5aa=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -229,7 +229,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           data-css-tzuwtx=""
         >
           <button
-            data-css-vabc10=""
+            data-css-1ijf5aa=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
