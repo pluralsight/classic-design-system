@@ -15,7 +15,7 @@
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./dist",
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
