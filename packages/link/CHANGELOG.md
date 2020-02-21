@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@9.0.13...@pluralsight/ps-design-system-link@9.1.0) (2020-02-18)
+
+
+### Features
+
+* **link:** removes featureFlags consumer and old styles ([92c677a](https://github.com/pluralsight/design-system/commit/92c677a0d5cc8f35b98f514ecd29517b04e8a1b7))
+
+
+
+
+
+## [9.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@9.0.12...@pluralsight/ps-design-system-link@9.0.13) (2020-02-18)
+
+
+### Bug Fixes
+
+* **link:** className for featureFlags ([6a91dc6](https://github.com/pluralsight/design-system/commit/6a91dc6e955325abad375f65e3fbae7f36a20f2c))
+
+
+
+
+
 ## [9.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@9.0.11...@pluralsight/ps-design-system-link@9.0.12) (2020-02-04)
 
 

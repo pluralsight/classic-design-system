@@ -105,7 +105,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
   data-css-w0yocm=""
 >
   <div
-    data-css-1ewie3k=""
+    data-css-dysqqm=""
   >
     Label
   </div>
@@ -129,7 +129,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           data-css-tzuwtx=""
         >
           <button
-            data-css-wla1dx=""
+            data-css-vabc10=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -198,7 +198,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
     </div>
   </div>
   <div
-    data-css-bf7jp3=""
+    data-css-6ga4kh=""
   >
     Sub label
   </div>
@@ -229,7 +229,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           data-css-tzuwtx=""
         >
           <button
-            data-css-wla1dx=""
+            data-css-vabc10=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}

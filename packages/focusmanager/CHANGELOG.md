@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@4.0.26...@pluralsight/ps-design-system-focusmanager@4.1.0) (2020-02-18)
+
+
+### Features
+
+* **text:** removes featureFlags consumer and old styles ([5a2b7fc](https://github.com/pluralsight/design-system/commit/5a2b7fc05c1be6e0baa61ccc050e0c721d64ebea))
+
+
+
+
+
+## [4.0.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@4.0.25...@pluralsight/ps-design-system-focusmanager@4.0.26) (2020-02-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
 ## [4.0.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@4.0.24...@pluralsight/ps-design-system-focusmanager@4.0.25) (2020-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

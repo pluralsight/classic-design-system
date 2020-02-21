@@ -132,7 +132,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
           data-css-15wuh48=""
         >
           <h3
-            data-css-1fxxvvr=""
+            data-css-xhd98s=""
             size="medium"
           >
             Bob Ross
@@ -140,12 +140,12 @@ exports[`Storyshots Note with DS Text components 1`] = `
         </div>
       </div>
       <p
-        data-css-145tgfu=""
+        data-css-1djw98v=""
       >
         Be so very light. Be a gentle whisper. If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. It is a lot of fun.
       </p>
       <p
-        data-css-145tgfu=""
+        data-css-1djw98v=""
       >
         So often we avoid running water, and running water is a lot of fun. Just beat the devil out of it. Work that paint. A beautiful little sunset. This painting comes right out of your heart.
       </p>
@@ -232,12 +232,12 @@ exports[`Storyshots Note with h1 in heading 1`] = `
         </div>
       </div>
       <p
-        data-css-145tgfu=""
+        data-css-1djw98v=""
       >
         Be so very light. Be a gentle whisper. If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. It is a lot of fun.
       </p>
       <p
-        data-css-145tgfu=""
+        data-css-1djw98v=""
       >
         So often we avoid running water, and running water is a lot of fun. Just beat the devil out of it. Work that paint. A beautiful little sunset. This painting comes right out of your heart.
       </p>
@@ -407,7 +407,7 @@ exports[`Storyshots Note with linked heading 1`] = `
         >
           <p>
             <a
-              data-css-1vzf57m=""
+              data-css-di03rb=""
               href="#"
             >
               Bob Ross
@@ -1639,7 +1639,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
             data-css-1plyjau=""
           >
             <a
-              data-css-1skajya=""
+              data-css-1ud2sxh=""
               href="#"
             >
               i'm a link
@@ -1655,7 +1655,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
             data-css-1plyjau=""
           >
             <a
-              data-css-1vzf57m=""
+              data-css-di03rb=""
               href="#"
             >
               i'm a subtle link

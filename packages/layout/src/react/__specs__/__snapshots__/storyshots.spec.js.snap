@@ -533,7 +533,7 @@ exports[`Storyshots Layout / PageHeadingLayout default 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-10w3axr=""
+      data-css-1odmcd6=""
       size="large"
     >
       My Page
@@ -551,7 +551,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-10w3axr=""
+      data-css-1odmcd6=""
       size="large"
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
@@ -569,7 +569,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-10w3axr=""
+      data-css-1odmcd6=""
       size="large"
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
@@ -578,7 +578,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
       data-css-1cnar9w=""
     >
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -589,7 +589,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
@@ -608,7 +608,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
     data-css-wlfhsa=""
   >
     <h2
-      data-css-10w3axr=""
+      data-css-1odmcd6=""
       size="large"
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
@@ -617,7 +617,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
       data-css-1cnar9w=""
     >
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -628,13 +628,13 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
       </a>
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -645,13 +645,13 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
       </a>
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -662,13 +662,13 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
       </a>
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -679,7 +679,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
@@ -698,7 +698,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-10w3axr=""
+      data-css-1odmcd6=""
       size="large"
     >
       My Page
@@ -707,7 +707,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
       data-css-1cnar9w=""
     >
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -718,7 +718,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
@@ -737,7 +737,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-10w3axr=""
+      data-css-1odmcd6=""
       size="large"
     >
       My Page
@@ -746,7 +746,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
       data-css-1cnar9w=""
     >
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -757,13 +757,13 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
       </a>
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -774,13 +774,13 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
       </a>
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -791,13 +791,13 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link
       </a>
       <button
-        data-css-126c1n5=""
+        data-css-sa9fj5=""
         disabled={false}
         style={Object {}}
       >
@@ -808,7 +808,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1skajya=""
+        data-css-1ud2sxh=""
         href="https://duckduckgo.com"
       >
         A link

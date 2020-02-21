@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.2...@pluralsight/ps-design-system-core@5.5.3) (2020-02-18)
+
+
+### Bug Fixes
+
+* **core:** export valid sass variables ([8ab3c9e](https://github.com/pluralsight/design-system/commit/8ab3c9e08343dbeaade8a9b1b14843aaa1ff153b)), closes [#869](https://github.com/pluralsight/design-system/issues/869)
+
+
+
+
+
 ## [5.5.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.1...@pluralsight/ps-design-system-core@5.5.2) (2020-02-04)
 
 

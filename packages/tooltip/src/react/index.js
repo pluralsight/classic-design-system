@@ -72,14 +72,15 @@ const Tooltip = React.forwardRef((props, ref) => {
   )
 })
 
+Tooltip.displayName = 'Tooltip'
+Tooltip.defaultProps = {
+  appearance: vars.appearances.basic
+}
 Tooltip.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
   children: PropTypes.string.isRequired,
   onClose: PropTypes.func,
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions))
-}
-Tooltip.defaultProps = {
-  appearance: vars.appearances.basic
 }
 
 Tooltip.appearances = vars.appearances

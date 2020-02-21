@@ -1,5 +1,6 @@
 import {
   colorsBlue,
+  colorsWhite,
   colorsBackgroundDark,
   colorsBackgroundLight,
   colorsTextIcon,
@@ -52,16 +53,17 @@ export default {
     borderColor: colorsTextIcon.lowOnLight
   },
   '.psds-radio-button__circle--checked': {
-    borderColor: colorsBlue.base
+    borderColor: colorsBlue.base,
+    background: colorsBlue.base
   },
 
   '.psds-radio-button__circle-inner': {
     display: 'block',
-    height: 'calc(100% - 4px)',
-    width: 'calc(100% - 4px)',
-    margin: '2px',
+    height: 'calc(100% - 6px)',
+    width: 'calc(100% - 6px)',
+    margin: '3px',
     borderRadius: '50%',
-    background: colorsBlue.base
+    background: colorsWhite
   },
 
   '.psds-radio-button__input': {
@@ -72,7 +74,7 @@ export default {
     color: colorsTextIcon.highOnDark,
     fontSize: type.fontSizeSmall,
     lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightMedium
+    fontWeight: type.fontWeightBook
   },
   [`.psds-radio-button__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight

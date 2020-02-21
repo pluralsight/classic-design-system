@@ -46,7 +46,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-126c1n5=""
+                data-css-sa9fj5=""
                 disabled={false}
                 style={Object {}}
               >
@@ -61,7 +61,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1oaxr3i=""
+                data-css-16poyq3=""
                 disabled={false}
                 style={Object {}}
               >
@@ -126,7 +126,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-126c1n5=""
+                data-css-sa9fj5=""
                 disabled={false}
                 style={Object {}}
               >
@@ -141,7 +141,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1oaxr3i=""
+                data-css-16poyq3=""
                 disabled={false}
                 style={Object {}}
               >
@@ -192,7 +192,7 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
               data-css-7d5932=""
             >
               <button
-                data-css-126c1n5=""
+                data-css-sa9fj5=""
                 disabled={false}
                 style={Object {}}
               >
@@ -237,7 +237,7 @@ exports[`Storyshots Sample Form null children 1`] = `
           data-css-4l6uky=""
         >
           <h2
-            data-css-10w3axr=""
+            data-css-1odmcd6=""
             size="large"
             style={
               Object {
@@ -262,7 +262,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             }
           >
             <div
-              data-css-1ewie3k=""
+              data-css-dysqqm=""
             >
               Name
             </div>
@@ -299,7 +299,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             }
           >
             <div
-              data-css-1ewie3k=""
+              data-css-dysqqm=""
             >
               Alias
             </div>
@@ -322,7 +322,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               </div>
             </div>
             <div
-              data-css-bf7jp3=""
+              data-css-6ga4kh=""
             >
               *Optional
             </div>
@@ -348,7 +348,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             }
           >
             <div
-              data-css-hnaccs=""
+              data-css-9kywkh=""
             >
               Comment
             </div>
@@ -383,7 +383,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-126c1n5=""
+                data-css-sa9fj5=""
                 disabled={false}
                 style={Object {}}
               >
@@ -398,7 +398,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1oaxr3i=""
+                data-css-16poyq3=""
                 disabled={false}
                 style={Object {}}
               >
@@ -443,7 +443,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           data-css-4l6uky=""
         >
           <h2
-            data-css-10w3axr=""
+            data-css-1odmcd6=""
             size="large"
             style={
               Object {
@@ -468,7 +468,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-1ewie3k=""
+              data-css-dysqqm=""
             >
               Name
             </div>
@@ -505,7 +505,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-1ewie3k=""
+              data-css-dysqqm=""
             >
               Alias
             </div>
@@ -528,7 +528,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               </div>
             </div>
             <div
-              data-css-bf7jp3=""
+              data-css-6ga4kh=""
             >
               *Optional
             </div>
@@ -547,7 +547,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-1ewie3k=""
+              data-css-dysqqm=""
             >
               Email address
             </div>
@@ -589,7 +589,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               </div>
             </div>
             <div
-              data-css-bf7jp3=""
+              data-css-6ga4kh=""
             >
               Not a valid email address
             </div>
@@ -609,7 +609,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-1ewie3k=""
+              data-css-dysqqm=""
             >
               Occupation
             </div>
@@ -623,7 +623,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   data-css-ne3jjf=""
                 >
                   <button
-                    data-css-1lq4mos=""
+                    data-css-i9dafq=""
                     disabled={false}
                     onClick={[Function]}
                   >
@@ -746,7 +746,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-1ewie3k=""
+              data-css-dysqqm=""
             >
               Choose a Date
             </div>
@@ -887,7 +887,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               value="someVal"
             />
             <div
-              data-css-185gc3y=""
+              data-css-ybwuvp=""
             >
               Checkbox selected
             </div>
@@ -948,7 +948,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="full"
                 />
                 <div
-                  data-css-wbyy03=""
+                  data-css-nrxvu5=""
                 >
                   Full-time employement
                 </div>
@@ -986,7 +986,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   value="part"
                 />
                 <div
-                  data-css-wbyy03=""
+                  data-css-nrxvu5=""
                 >
                   Part-time employement
                 </div>
@@ -1038,7 +1038,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               type="checkbox"
             />
             <label
-              data-css-on3oux=""
+              data-css-1oms9gl=""
             >
               toggle
             </label>
@@ -1064,7 +1064,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           >
             <div
-              data-css-hnaccs=""
+              data-css-9kywkh=""
             >
               Comment
             </div>
@@ -1099,7 +1099,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-126c1n5=""
+                data-css-sa9fj5=""
                 disabled={false}
                 style={Object {}}
               >
@@ -1114,7 +1114,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1oaxr3i=""
+                data-css-16poyq3=""
                 disabled={false}
                 style={Object {}}
               >

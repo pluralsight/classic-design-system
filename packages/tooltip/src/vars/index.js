@@ -4,10 +4,12 @@ export const appearances = {
 }
 
 export const tailPositions = {
-  topLeft: 'topLeft',
-  topCenter: 'topCenter',
-  topRight: 'topRight',
-  bottomLeft: 'bottomLeft',
   bottomCenter: 'bottomCenter',
-  bottomRight: 'bottomRight'
+  bottomLeft: 'bottomLeft',
+  bottomRight: 'bottomRight',
+  leftCenter: 'leftCenter',
+  rightCenter: 'rightCenter',
+  topCenter: 'topCenter',
+  topLeft: 'topLeft',
+  topRight: 'topRight'
 }
