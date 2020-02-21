@@ -1,4 +1,6 @@
 import {
+  colorsBlack,
+  colorsWhite,
   colorsTextIcon,
   type,
   layout,
@@ -42,15 +44,26 @@ export default {
   },
 
   '.psds-banner__button': {
-    '&:hover, &:active': {
-      opacity: '0.8'
-    },
-    '&:focus': {
-      boxShadow: `0 0 0 3px ${transparentize(0.5, currentColor)}`
+    ':not(#fake-id-to-force-higher-specificity) &': {
+      background: 'none',
+      borderColor: 'currentColor',
+      color: 'currentColor',
+
+      '&:hover, &:active, &:focus': {
+        backgroundColor: transparentize(0.9, colorsBlack)
+      },
+      '&:focus': { boxShadow: `0 0 0 3px ${transparentize(0.5, colorsWhite)}` }
     }
-
-
   },
+
+  [`.psds-banner__button--color-${vars.colors.blue}`]: {},
+  [`.psds-banner__button--color-${vars.colors.green}`]: {},
+  [`.psds-banner__button--color-${vars.colors.yellow}`]: {
+    ':not(#fake-id-to-force-higher-specificity)': {
+      '&:focus': { boxShadow: `0 0 0 3px ${transparentize(0.5, colorsBlack)}` }
+    }
+  },
+  [`.psds-banner__button--color-${vars.colors.red}`]: {},
 
   '.psds-banner__text': {
     flex: '1',

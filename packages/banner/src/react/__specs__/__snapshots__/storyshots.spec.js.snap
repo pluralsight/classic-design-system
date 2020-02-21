@@ -8,19 +8,14 @@ exports[`Storyshots Button blue 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text with a 
       <button
         data-css-1a10mji=""
-        data-css-mdmyt1=""
+        data-css-1irnvz6=""
         disabled={false}
-        style={
-          Object {
-            "borderColor": "currentColor",
-            "color": "currentColor",
-          }
-        }
+        style={Object {}}
       >
         <span
           data-css-15b13by=""
@@ -41,19 +36,14 @@ exports[`Storyshots Button green 1`] = `
     data-css-q43imj=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text with a 
       <button
         data-css-1a10mji=""
-        data-css-mdmyt1=""
+        data-css-1irnvz6=""
         disabled={false}
-        style={
-          Object {
-            "borderColor": "currentColor",
-            "color": "currentColor",
-          }
-        }
+        style={Object {}}
       >
         <span
           data-css-15b13by=""
@@ -74,19 +64,14 @@ exports[`Storyshots Button red 1`] = `
     data-css-1bpd8ni=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text with a 
       <button
         data-css-1a10mji=""
-        data-css-mdmyt1=""
+        data-css-1irnvz6=""
         disabled={false}
-        style={
-          Object {
-            "borderColor": "currentColor",
-            "color": "currentColor",
-          }
-        }
+        style={Object {}}
       >
         <span
           data-css-15b13by=""
@@ -107,19 +92,14 @@ exports[`Storyshots Button yellow 1`] = `
     data-css-12l9wqa=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text with a 
       <button
         data-css-1a10mji=""
-        data-css-mdmyt1=""
+        data-css-be14da=""
         disabled={false}
-        style={
-          Object {
-            "borderColor": "currentColor",
-            "color": "currentColor",
-          }
-        }
+        style={Object {}}
       >
         <span
           data-css-15b13by=""
@@ -140,7 +120,7 @@ exports[`Storyshots color blue 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       blue
     </div>
@@ -156,7 +136,7 @@ exports[`Storyshots color green 1`] = `
     data-css-q43imj=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       green
     </div>
@@ -172,7 +152,7 @@ exports[`Storyshots color red 1`] = `
     data-css-1bpd8ni=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       red
     </div>
@@ -188,7 +168,7 @@ exports[`Storyshots color yellow 1`] = `
     data-css-12l9wqa=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       yellow
     </div>
@@ -204,12 +184,12 @@ exports[`Storyshots onClick displays X 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
@@ -238,12 +218,12 @@ exports[`Storyshots onClick side by side 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
@@ -265,12 +245,12 @@ exports[`Storyshots onClick side by side 1`] = `
     data-css-q43imj=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
@@ -292,12 +272,12 @@ exports[`Storyshots onClick side by side 1`] = `
     data-css-12l9wqa=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
@@ -319,12 +299,12 @@ exports[`Storyshots onClick side by side 1`] = `
     data-css-1bpd8ni=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
@@ -353,13 +333,13 @@ exports[`Storyshots onClick w/ long text 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text.
        
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
@@ -388,7 +368,7 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text with an
        
@@ -412,7 +392,7 @@ exports[`Storyshots styling child anchor tag auto-styled 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text with an 
       <a
@@ -434,7 +414,7 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
     data-css-12l9wqa=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text with an 
       <a
@@ -457,12 +437,12 @@ exports[`Storyshots styling className prop 1`] = `
     data-css-ue58aw=""
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
@@ -496,12 +476,12 @@ exports[`Storyshots styling style prop 1`] = `
     }
   >
     <div
-      data-css-s10s6t=""
+      data-css-ctomgo=""
     >
       this is the text
     </div>
     <button
-      data-css-1nptnaw=""
+      data-css-w2n93m=""
       onClick={[Function]}
     >
       <div
