@@ -8,6 +8,7 @@ import {
   colorsYellow,
   colorsRed
 } from '@pluralsight/ps-design-system-core'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
@@ -41,10 +42,14 @@ export default {
   },
 
   '.psds-banner__button': {
-    '&:hover, &:active, &:focus': {
-      transition: `all ${motion.speedNormal}`,
-      opacity: '0.65'
+    '&:hover, &:active': {
+      opacity: '0.8'
+    },
+    '&:focus': {
+      boxShadow: `0 0 0 3px ${transparentize(0.5, currentColor)}`
     }
+
+
   },
 
   '.psds-banner__text': {
@@ -59,7 +64,7 @@ export default {
       '&:hover, &:active, &:focus': {
         color: 'inherit',
         transition: `all ${motion.speedNormal}`,
-        opacity: '0.65'
+        opacity: '0.85'
       }
     }
   },
@@ -78,7 +83,7 @@ export default {
     '&:hover, &:focus, &:active': {
       outline: 'none',
       borderRadius: '2px',
-      boxShadow: '0 0 2px currentColor, inset 0 0 2px currentColor'
+      boxShadow: '0 0 0 3px currentColor'
     }
   }
 }
