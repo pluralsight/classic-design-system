@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@9.1.0...@pluralsight/ps-design-system-link@9.1.1) (2020-02-21)
+
+
+### Bug Fixes
+
+* **link:** reorder selectors for hover in cascade ([b7dd243](https://github.com/pluralsight/design-system/commit/b7dd2435b958f751e91aa8728cc7eb5802f074a7)), closes [#888](https://github.com/pluralsight/design-system/issues/888)
+
+
+
+
+
 # [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@9.0.13...@pluralsight/ps-design-system-link@9.1.0) (2020-02-18)
 
 
