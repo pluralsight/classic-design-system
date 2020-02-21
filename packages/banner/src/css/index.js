@@ -1,4 +1,6 @@
 import {
+  colorsBlack,
+  colorsWhite,
   colorsTextIcon,
   type,
   layout,
@@ -8,6 +10,7 @@ import {
   colorsYellow,
   colorsRed
 } from '@pluralsight/ps-design-system-core'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
@@ -41,11 +44,26 @@ export default {
   },
 
   '.psds-banner__button': {
-    '&:hover, &:active, &:focus': {
-      transition: `all ${motion.speedNormal}`,
-      opacity: '0.65'
+    ':not(#fake-id-to-force-higher-specificity) &': {
+      background: 'none',
+      borderColor: 'currentColor',
+      color: 'currentColor',
+
+      '&:hover, &:active, &:focus': {
+        backgroundColor: transparentize(0.9, colorsBlack)
+      },
+      '&:focus': { boxShadow: `0 0 0 3px ${transparentize(0.5, colorsWhite)}` }
     }
   },
+
+  [`.psds-banner__button--color-${vars.colors.blue}`]: {},
+  [`.psds-banner__button--color-${vars.colors.green}`]: {},
+  [`.psds-banner__button--color-${vars.colors.yellow}`]: {
+    ':not(#fake-id-to-force-higher-specificity)': {
+      '&:focus': { boxShadow: `0 0 0 3px ${transparentize(0.5, colorsBlack)}` }
+    }
+  },
+  [`.psds-banner__button--color-${vars.colors.red}`]: {},
 
   '.psds-banner__text': {
     flex: '1',
@@ -59,7 +77,7 @@ export default {
       '&:hover, &:active, &:focus': {
         color: 'inherit',
         transition: `all ${motion.speedNormal}`,
-        opacity: '0.65'
+        opacity: '0.85'
       }
     }
   },
@@ -78,7 +96,7 @@ export default {
     '&:hover, &:focus, &:active': {
       outline: 'none',
       borderRadius: '2px',
-      boxShadow: '0 0 2px currentColor, inset 0 0 2px currentColor'
+      boxShadow: '0 0 0 3px currentColor'
     }
   }
 }

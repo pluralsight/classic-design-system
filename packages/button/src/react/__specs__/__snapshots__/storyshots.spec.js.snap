@@ -2,7 +2,7 @@
 
 exports[`Storyshots Button / appearance flat 1`] = `
 <button
-  data-css-16poyq3=""
+  data-css-1bkq010=""
   disabled={false}
   style={Object {}}
 >
@@ -16,7 +16,7 @@ exports[`Storyshots Button / appearance flat 1`] = `
 
 exports[`Storyshots Button / appearance primary 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   style={Object {}}
 >
@@ -30,7 +30,7 @@ exports[`Storyshots Button / appearance primary 1`] = `
 
 exports[`Storyshots Button / appearance secondary 1`] = `
 <button
-  data-css-1ikvaiy=""
+  data-css-1oubj1m=""
   disabled={false}
   style={Object {}}
 >
@@ -44,7 +44,7 @@ exports[`Storyshots Button / appearance secondary 1`] = `
 
 exports[`Storyshots Button / appearance stroke 1`] = `
 <button
-  data-css-bphuvq=""
+  data-css-867vqf=""
   disabled={false}
   style={Object {}}
 >
@@ -58,7 +58,7 @@ exports[`Storyshots Button / appearance stroke 1`] = `
 
 exports[`Storyshots Button / as link default 1`] = `
 <a
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   href="https://duckduckgo.com"
   style={Object {}}
@@ -73,7 +73,7 @@ exports[`Storyshots Button / as link default 1`] = `
 
 exports[`Storyshots Button / as link with icon 1`] = `
 <a
-  data-css-w99sgt=""
+  data-css-zkf6c1=""
   disabled={false}
   href="https://duckduckgo.com"
   style={Object {}}
@@ -114,7 +114,7 @@ exports[`Storyshots Button / disabled all 1`] = `
   }
 >
   <button
-    data-css-sa9fj5=""
+    data-css-el86ax=""
     disabled={false}
     style={Object {}}
   >
@@ -125,7 +125,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-1cx3zm8=""
+    data-css-1jhwdxf=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -137,7 +137,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-1ikvaiy=""
+    data-css-1oubj1m=""
     disabled={false}
     style={Object {}}
   >
@@ -148,7 +148,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-e2b02b=""
+    data-css-kiolsa=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -160,7 +160,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-bphuvq=""
+    data-css-867vqf=""
     disabled={false}
     style={Object {}}
   >
@@ -171,7 +171,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-hmdi5p=""
+    data-css-jv2mlo=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -183,7 +183,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-16poyq3=""
+    data-css-1bkq010=""
     disabled={false}
     style={Object {}}
   >
@@ -194,7 +194,7 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-12fbbof=""
+    data-css-1b0cxkb=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -210,7 +210,7 @@ exports[`Storyshots Button / disabled all 1`] = `
 
 exports[`Storyshots Button / disabled with icon 1`] = `
 <button
-  data-css-1ehv3f3=""
+  data-css-1fk3xbf=""
   disabled={true}
   style={Object {}}
 >
@@ -241,7 +241,7 @@ exports[`Storyshots Button / disabled with icon 1`] = `
 
 exports[`Storyshots Button / icon flat 1`] = `
 <button
-  data-css-oh1nln=""
+  data-css-1bb6rlh=""
   disabled={false}
   style={Object {}}
 >
@@ -272,7 +272,7 @@ exports[`Storyshots Button / icon flat 1`] = `
 
 exports[`Storyshots Button / icon large 1`] = `
 <button
-  data-css-1kwobks=""
+  data-css-1s48g55=""
   disabled={false}
   style={Object {}}
 >
@@ -303,7 +303,7 @@ exports[`Storyshots Button / icon large 1`] = `
 
 exports[`Storyshots Button / icon left 1`] = `
 <button
-  data-css-w99sgt=""
+  data-css-zkf6c1=""
   disabled={false}
   style={Object {}}
 >
@@ -334,7 +334,7 @@ exports[`Storyshots Button / icon left 1`] = `
 
 exports[`Storyshots Button / icon lone flat large 1`] = `
 <button
-  data-css-1drfu81=""
+  data-css-6b29fr=""
   disabled={false}
   style={Object {}}
 >
@@ -363,7 +363,7 @@ exports[`Storyshots Button / icon lone flat large 1`] = `
 
 exports[`Storyshots Button / icon lone flat medium 1`] = `
 <button
-  data-css-y7le5t=""
+  data-css-dqx3ws=""
   disabled={false}
   style={Object {}}
 >
@@ -392,7 +392,7 @@ exports[`Storyshots Button / icon lone flat medium 1`] = `
 
 exports[`Storyshots Button / icon lone flat small 1`] = `
 <button
-  data-css-my28jv=""
+  data-css-7x6n1t=""
   disabled={false}
   style={Object {}}
 >
@@ -421,7 +421,7 @@ exports[`Storyshots Button / icon lone flat small 1`] = `
 
 exports[`Storyshots Button / icon lone flat xSmall 1`] = `
 <button
-  data-css-a4tmec=""
+  data-css-1s984ma=""
   disabled={false}
   style={Object {}}
 >
@@ -450,7 +450,7 @@ exports[`Storyshots Button / icon lone flat xSmall 1`] = `
 
 exports[`Storyshots Button / icon lone primary large 1`] = `
 <button
-  data-css-qfd5dk=""
+  data-css-19nz5qt=""
   disabled={false}
   style={Object {}}
 >
@@ -479,7 +479,7 @@ exports[`Storyshots Button / icon lone primary large 1`] = `
 
 exports[`Storyshots Button / icon lone primary medium 1`] = `
 <button
-  data-css-h752rn=""
+  data-css-14faee9=""
   disabled={false}
   style={Object {}}
 >
@@ -508,7 +508,7 @@ exports[`Storyshots Button / icon lone primary medium 1`] = `
 
 exports[`Storyshots Button / icon lone primary small 1`] = `
 <button
-  data-css-jg1dwu=""
+  data-css-1a642rh=""
   disabled={false}
   style={Object {}}
 >
@@ -537,7 +537,7 @@ exports[`Storyshots Button / icon lone primary small 1`] = `
 
 exports[`Storyshots Button / icon lone primary xSmall 1`] = `
 <button
-  data-css-1skg54j=""
+  data-css-54skdq=""
   disabled={false}
   style={Object {}}
 >
@@ -566,7 +566,7 @@ exports[`Storyshots Button / icon lone primary xSmall 1`] = `
 
 exports[`Storyshots Button / icon lone secondary large 1`] = `
 <button
-  data-css-2sz2u0=""
+  data-css-3y4opo=""
   disabled={false}
   style={Object {}}
 >
@@ -595,7 +595,7 @@ exports[`Storyshots Button / icon lone secondary large 1`] = `
 
 exports[`Storyshots Button / icon lone secondary medium 1`] = `
 <button
-  data-css-146xzn3=""
+  data-css-yyx4ww=""
   disabled={false}
   style={Object {}}
 >
@@ -624,7 +624,7 @@ exports[`Storyshots Button / icon lone secondary medium 1`] = `
 
 exports[`Storyshots Button / icon lone secondary small 1`] = `
 <button
-  data-css-h2alp3=""
+  data-css-6n5z6f=""
   disabled={false}
   style={Object {}}
 >
@@ -653,7 +653,7 @@ exports[`Storyshots Button / icon lone secondary small 1`] = `
 
 exports[`Storyshots Button / icon lone secondary xSmall 1`] = `
 <button
-  data-css-1fnd78h=""
+  data-css-11r2g9l=""
   disabled={false}
   style={Object {}}
 >
@@ -682,7 +682,7 @@ exports[`Storyshots Button / icon lone secondary xSmall 1`] = `
 
 exports[`Storyshots Button / icon lone stroke large 1`] = `
 <button
-  data-css-1h4h8jn=""
+  data-css-8ecb3k=""
   disabled={false}
   style={Object {}}
 >
@@ -711,7 +711,7 @@ exports[`Storyshots Button / icon lone stroke large 1`] = `
 
 exports[`Storyshots Button / icon lone stroke medium 1`] = `
 <button
-  data-css-1usc4sc=""
+  data-css-1y5uahs=""
   disabled={false}
   style={Object {}}
 >
@@ -740,7 +740,7 @@ exports[`Storyshots Button / icon lone stroke medium 1`] = `
 
 exports[`Storyshots Button / icon lone stroke small 1`] = `
 <button
-  data-css-vi3vl6=""
+  data-css-kmu6t8=""
   disabled={false}
   style={Object {}}
 >
@@ -769,7 +769,7 @@ exports[`Storyshots Button / icon lone stroke small 1`] = `
 
 exports[`Storyshots Button / icon lone stroke xSmall 1`] = `
 <button
-  data-css-1uk6zgb=""
+  data-css-hziwng=""
   disabled={false}
   style={Object {}}
 >
@@ -798,7 +798,7 @@ exports[`Storyshots Button / icon lone stroke xSmall 1`] = `
 
 exports[`Storyshots Button / icon medium 1`] = `
 <button
-  data-css-w99sgt=""
+  data-css-zkf6c1=""
   disabled={false}
   style={Object {}}
 >
@@ -829,7 +829,7 @@ exports[`Storyshots Button / icon medium 1`] = `
 
 exports[`Storyshots Button / icon primary 1`] = `
 <button
-  data-css-w99sgt=""
+  data-css-zkf6c1=""
   disabled={false}
   style={Object {}}
 >
@@ -860,7 +860,7 @@ exports[`Storyshots Button / icon primary 1`] = `
 
 exports[`Storyshots Button / icon right 1`] = `
 <button
-  data-css-6nbvc9=""
+  data-css-1c12ih0=""
   disabled={false}
   style={Object {}}
 >
@@ -891,7 +891,7 @@ exports[`Storyshots Button / icon right 1`] = `
 
 exports[`Storyshots Button / icon secondary 1`] = `
 <button
-  data-css-pvws3e=""
+  data-css-eytjqx=""
   disabled={false}
   style={Object {}}
 >
@@ -922,7 +922,7 @@ exports[`Storyshots Button / icon secondary 1`] = `
 
 exports[`Storyshots Button / icon small 1`] = `
 <button
-  data-css-2bytlt=""
+  data-css-p6p8uk=""
   disabled={false}
   style={Object {}}
 >
@@ -953,7 +953,7 @@ exports[`Storyshots Button / icon small 1`] = `
 
 exports[`Storyshots Button / icon stroke 1`] = `
 <button
-  data-css-scvwl0=""
+  data-css-1o13tha=""
   disabled={false}
   style={Object {}}
 >
@@ -985,7 +985,7 @@ exports[`Storyshots Button / icon stroke 1`] = `
 exports[`Storyshots Button / icon vertically aligned rows 1`] = `
 <div>
   <button
-    data-css-w99sgt=""
+    data-css-zkf6c1=""
     disabled={false}
     style={Object {}}
   >
@@ -1013,7 +1013,7 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
     </span>
   </button>
   <button
-    data-css-sa9fj5=""
+    data-css-el86ax=""
     disabled={false}
     style={Object {}}
   >
@@ -1028,7 +1028,7 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
 
 exports[`Storyshots Button / icon xSmall 1`] = `
 <button
-  data-css-lp049p=""
+  data-css-1e3qamj=""
   disabled={false}
   style={Object {}}
 >
@@ -1070,7 +1070,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
     }
   >
     <button
-      data-css-kkg3f7=""
+      data-css-2jszr5=""
       disabled={false}
       style={Object {}}
     >
@@ -1081,7 +1081,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-175kuut=""
+      data-css-1ethlrj=""
       disabled={false}
       style={Object {}}
     >
@@ -1092,7 +1092,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-lhspts=""
+      data-css-1m8bv6x=""
       disabled={false}
       style={Object {}}
     >
@@ -1103,62 +1103,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-rj2a0i=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-  </div>
-  <div
-    style={
-      Object {
-        "display": "grid",
-        "gap": "8px",
-        "gridTemplateColumns": "auto auto auto auto",
-        "marginBottom": "8px",
-      }
-    }
-  >
-    <button
-      data-css-t652ih=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1e2gbcu=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-8f2jwy=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1ya4wpx=""
+      data-css-1s3kkli=""
       disabled={false}
       style={Object {}}
     >
@@ -1180,7 +1125,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
     }
   >
     <button
-      data-css-sa9fj5=""
+      data-css-n38nmt=""
       disabled={false}
       style={Object {}}
     >
@@ -1191,7 +1136,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-1ikvaiy=""
+      data-css-h5g27k=""
       disabled={false}
       style={Object {}}
     >
@@ -1202,7 +1147,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-bphuvq=""
+      data-css-1a10mji=""
       disabled={false}
       style={Object {}}
     >
@@ -1213,7 +1158,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-16poyq3=""
+      data-css-4rhymh=""
       disabled={false}
       style={Object {}}
     >
@@ -1235,7 +1180,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
     }
   >
     <button
-      data-css-16axkid=""
+      data-css-el86ax=""
       disabled={false}
       style={Object {}}
     >
@@ -1246,7 +1191,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-1bobly0=""
+      data-css-1oubj1m=""
       disabled={false}
       style={Object {}}
     >
@@ -1257,7 +1202,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-kxbizw=""
+      data-css-867vqf=""
       disabled={false}
       style={Object {}}
     >
@@ -1268,7 +1213,62 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
       </span>
     </button>
     <button
-      data-css-1glblf8=""
+      data-css-1bkq010=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        button
+      </span>
+    </button>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gap": "8px",
+        "gridTemplateColumns": "auto auto auto auto",
+        "marginBottom": "8px",
+      }
+    }
+  >
+    <button
+      data-css-mq99zh=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        button
+      </span>
+    </button>
+    <button
+      data-css-nq33nh=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        button
+      </span>
+    </button>
+    <button
+      data-css-npqdvw=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        button
+      </span>
+    </button>
+    <button
+      data-css-1g2snd9=""
       disabled={false}
       style={Object {}}
     >
@@ -1284,7 +1284,7 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
 
 exports[`Storyshots Button / loading flat 1`] = `
 <button
-  data-css-1glblf8=""
+  data-css-1g2snd9=""
   disabled={true}
   style={Object {}}
 >
@@ -1309,7 +1309,7 @@ exports[`Storyshots Button / loading flat 1`] = `
 
 exports[`Storyshots Button / loading large 1`] = `
 <button
-  data-css-16axkid=""
+  data-css-mq99zh=""
   disabled={true}
   onClick={[Function]}
   style={Object {}}
@@ -1335,7 +1335,7 @@ exports[`Storyshots Button / loading large 1`] = `
 
 exports[`Storyshots Button / loading lone icon 1`] = `
 <button
-  data-css-qfd5dk=""
+  data-css-19nz5qt=""
   disabled={true}
   style={Object {}}
 >
@@ -1358,7 +1358,7 @@ exports[`Storyshots Button / loading lone icon 1`] = `
 
 exports[`Storyshots Button / loading medium 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={true}
   onClick={[Function]}
   style={Object {}}
@@ -1384,7 +1384,7 @@ exports[`Storyshots Button / loading medium 1`] = `
 
 exports[`Storyshots Button / loading no icon, hidden text 1`] = `
 <button
-  data-css-16axkid=""
+  data-css-mq99zh=""
   disabled={false}
   style={Object {}}
 >
@@ -1398,7 +1398,7 @@ exports[`Storyshots Button / loading no icon, hidden text 1`] = `
 
 exports[`Storyshots Button / loading primary 1`] = `
 <button
-  data-css-16axkid=""
+  data-css-mq99zh=""
   disabled={true}
   style={Object {}}
 >
@@ -1423,7 +1423,7 @@ exports[`Storyshots Button / loading primary 1`] = `
 
 exports[`Storyshots Button / loading secondary 1`] = `
 <button
-  data-css-1bobly0=""
+  data-css-nq33nh=""
   disabled={true}
   style={Object {}}
 >
@@ -1448,7 +1448,7 @@ exports[`Storyshots Button / loading secondary 1`] = `
 
 exports[`Storyshots Button / loading small 1`] = `
 <button
-  data-css-t652ih=""
+  data-css-n38nmt=""
   disabled={true}
   onClick={[Function]}
   style={Object {}}
@@ -1474,7 +1474,7 @@ exports[`Storyshots Button / loading small 1`] = `
 
 exports[`Storyshots Button / loading stroke 1`] = `
 <button
-  data-css-kxbizw=""
+  data-css-npqdvw=""
   disabled={true}
   style={Object {}}
 >
@@ -1499,7 +1499,7 @@ exports[`Storyshots Button / loading stroke 1`] = `
 
 exports[`Storyshots Button / loading xSmall 1`] = `
 <button
-  data-css-kkg3f7=""
+  data-css-2jszr5=""
   disabled={true}
   onClick={[Function]}
   style={Object {}}
@@ -1530,7 +1530,7 @@ exports[`Storyshots Button / override styles with className 1`] = `
       "data-css-jxpnuu": "",
     }
   }
-  data-css-w99sgt=""
+  data-css-zkf6c1=""
   disabled={false}
   style={Object {}}
 >
@@ -1561,7 +1561,7 @@ exports[`Storyshots Button / override styles with className 1`] = `
 
 exports[`Storyshots Button / override styles with style 1`] = `
 <button
-  data-css-w99sgt=""
+  data-css-zkf6c1=""
   disabled={false}
   style={
     Object {
@@ -1596,7 +1596,7 @@ exports[`Storyshots Button / override styles with style 1`] = `
 
 exports[`Storyshots Button / props pass through anchor supports download 1`] = `
 <a
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   download={true}
   href="/somewhere"
@@ -1613,7 +1613,7 @@ exports[`Storyshots Button / props pass through anchor supports download 1`] = `
 exports[`Storyshots Button / props pass through aria-expanded 1`] = `
 <button
   aria-expanded={true}
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   style={Object {}}
 >
@@ -1627,7 +1627,7 @@ exports[`Storyshots Button / props pass through aria-expanded 1`] = `
 
 exports[`Storyshots Button / props pass through button doesnt support download 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   style={Object {}}
 >
@@ -1641,7 +1641,7 @@ exports[`Storyshots Button / props pass through button doesnt support download 1
 
 exports[`Storyshots Button / props pass through data-something 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   data-something="wow"
   disabled={false}
   style={Object {}}
@@ -1656,7 +1656,7 @@ exports[`Storyshots Button / props pass through data-something 1`] = `
 
 exports[`Storyshots Button / props pass through not supported 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   onMouseOver={[Function]}
   style={Object {}}
@@ -1671,7 +1671,7 @@ exports[`Storyshots Button / props pass through not supported 1`] = `
 
 exports[`Storyshots Button / props pass through role 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   role="link"
   style={Object {}}
@@ -1686,7 +1686,7 @@ exports[`Storyshots Button / props pass through role 1`] = `
 
 exports[`Storyshots Button / props pass through title 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   style={Object {}}
   title="My caption"
@@ -1701,7 +1701,7 @@ exports[`Storyshots Button / props pass through title 1`] = `
 
 exports[`Storyshots Button / size large 1`] = `
 <button
-  data-css-16axkid=""
+  data-css-mq99zh=""
   disabled={false}
   style={Object {}}
 >
@@ -1715,7 +1715,7 @@ exports[`Storyshots Button / size large 1`] = `
 
 exports[`Storyshots Button / size medium 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   style={Object {}}
 >
@@ -1729,7 +1729,7 @@ exports[`Storyshots Button / size medium 1`] = `
 
 exports[`Storyshots Button / size small 1`] = `
 <button
-  data-css-t652ih=""
+  data-css-n38nmt=""
   disabled={false}
   style={Object {}}
 >
@@ -1743,7 +1743,7 @@ exports[`Storyshots Button / size small 1`] = `
 
 exports[`Storyshots Button / size xSmall 1`] = `
 <button
-  data-css-kkg3f7=""
+  data-css-2jszr5=""
   disabled={false}
   style={Object {}}
 >
@@ -1758,7 +1758,7 @@ exports[`Storyshots Button / size xSmall 1`] = `
 exports[`Storyshots Button / theme nested 1`] = `
 Array [
   <button
-    data-css-16poyq3=""
+    data-css-1bkq010=""
     disabled={false}
     style={Object {}}
   >
@@ -1769,7 +1769,7 @@ Array [
     </span>
   </button>,
   <button
-    data-css-1qsw3ev=""
+    data-css-16m9s3q=""
     disabled={false}
     style={Object {}}
   >
@@ -1780,7 +1780,7 @@ Array [
     </span>
   </button>,
   <button
-    data-css-16poyq3=""
+    data-css-1bkq010=""
     disabled={false}
     style={Object {}}
   >
@@ -1795,7 +1795,7 @@ Array [
 
 exports[`Storyshots Button / with onClick clicks once 1`] = `
 <button
-  data-css-w99sgt=""
+  data-css-zkf6c1=""
   disabled={false}
   onClick={[Function]}
   style={Object {}}
@@ -1827,7 +1827,7 @@ exports[`Storyshots Button / with onClick clicks once 1`] = `
 
 exports[`Storyshots Button / with ref ref to handle focus 1`] = `
 <button
-  data-css-sa9fj5=""
+  data-css-el86ax=""
   disabled={false}
   style={Object {}}
 >
