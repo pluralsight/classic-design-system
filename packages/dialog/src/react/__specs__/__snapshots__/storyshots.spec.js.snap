@@ -29,7 +29,7 @@ exports[`Storyshots modal default 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -190,7 +190,7 @@ exports[`Storyshots modal no click overlay 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -351,7 +351,7 @@ exports[`Storyshots modal no close button 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -496,7 +496,7 @@ exports[`Storyshots modal no escape key 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -656,7 +656,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -817,7 +817,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -912,7 +912,7 @@ exports[`Storyshots modal overflow-y 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}
@@ -1341,7 +1341,7 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
         Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
       </p>
       <button
-        data-css-hc40ca=""
+        data-css-el86ax=""
         disabled={false}
         onClick={[Function]}
         style={Object {}}

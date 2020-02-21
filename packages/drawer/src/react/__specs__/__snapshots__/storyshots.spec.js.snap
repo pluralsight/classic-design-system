@@ -10,7 +10,7 @@ exports[`Storyshots drawer controlled 1`] = `
 >
   <div>
     <button
-      data-css-hc40ca=""
+      data-css-el86ax=""
       disabled={false}
       onClick={[Function]}
       style={Object {}}
