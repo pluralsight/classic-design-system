@@ -320,7 +320,7 @@ const colorCategories = [
         colors: [
           {
             name: 'Primary Action Text - On Dark',
-            var: 'psColorsPrimaryActionTextOnDark',
+            var: 'psColorsPrimaryActionTextDarkTheme',
             js: 'colorsPrimaryAction.textDarkTheme',
             hex: core.colorsPrimaryAction.textDarkTheme,
             bg: core.colorsBackgroundDark[1],
@@ -328,7 +328,7 @@ const colorCategories = [
           },
           {
             name: 'Primary Action Text - On Light',
-            var: 'psColorsPrimaryActionTextOnLight',
+            var: 'psColorsPrimaryActionTextLightTheme',
             js: 'colorsPrimaryAction.textLightTheme',
             hex: core.colorsPrimaryAction.textLightTheme,
             border: core.colorsBorder.lowOnLight,
@@ -362,6 +362,12 @@ const colorCategories = [
             var: 'psColorsStatusError',
             js: 'colorsStatus.error',
             hex: core.colorsStatus.error
+          },
+          {
+            name: 'Status - Info',
+            var: 'psColorsStatusInfo',
+            js: 'colorsStatus.info',
+            hex: core.colorsStatus.info
           }
         ]
       }
