@@ -158,7 +158,8 @@ function Swatch2(props) {
     <div className="swatch">
       <div className="text">
         <div className="name">{props.name}</div>
-        <div className="var">{props.var}</div>
+        <div className="var">CSS: {props.var}</div>
+        <div className="var">JS: {props.js}</div>
         <div className="hex">{props.hex}</div>
       </div>
       {props.icon && <div className="icon">{props.icon}</div>}
@@ -182,7 +183,7 @@ function Swatch2(props) {
           margin-bottom: ${core.layout.spacingXXSmall};
         }
         .var {
-          font-size: ${core.type.fontSizeXSmall};
+          font-size: 11px;
           font-weight: 500;
           line-height: 16px;
           margin-bottom: ${core.layout.spacingXXSmall};
@@ -213,6 +214,7 @@ Swatch2.propTypes = {
   borderExample: PropTypes.string,
   name: PropTypes.string.isRequired,
   var: PropTypes.string.isRequired,
+  js: PropTypes.string.isRequired,
   hex: PropTypes.string.isRequired
 }
 
@@ -257,16 +259,19 @@ const colorCategories = [
           {
             name: 'Background - Dark 1',
             var: 'psColorsBackgroundDark1',
+            js: 'colorsBackgroundDark[1]',
             hex: core.colorsBackgroundDark[1]
           },
           {
             name: 'Background - Dark 2',
             var: 'psColorsBackgroundDark2',
+            js: 'colorsBackgroundDark[2]',
             hex: core.colorsBackgroundDark[2]
           },
           {
             name: 'Background - Dark 3',
             var: 'psColorsBackgroundDark3',
+            js: 'colorsBackgroundDark[3]',
             hex: core.colorsBackgroundDark[3]
           }
         ]
@@ -278,16 +283,19 @@ const colorCategories = [
           {
             name: 'Background - Light 1',
             var: 'psColorsBackgroundLight1',
+            js: 'colorsBackgroundLight[1]',
             hex: core.colorsBackgroundLight[1]
           },
           {
             name: 'Background - Light 2',
             var: 'psColorsBackgroundLight2',
+            js: 'colorsBackgroundLight[2]',
             hex: core.colorsBackgroundLight[2]
           },
           {
             name: 'Background - Light 3',
             var: 'psColorsBackgroundLight3',
+            js: 'colorsBackgroundLight[3]',
             hex: core.colorsBackgroundLight[3],
             border: core.colorsBorder.lowOnLight
           }
@@ -303,6 +311,7 @@ const colorCategories = [
           {
             name: 'Primary Action - Background',
             var: 'psColorsPrimaryActionBackground',
+            js: 'colorsPrimaryAction.background',
             hex: core.colorsPrimaryAction.background
           }
         ]
@@ -312,6 +321,7 @@ const colorCategories = [
           {
             name: 'Primary Action Text - On Dark',
             var: 'psColorsPrimaryActionTextOnDark',
+            js: 'colorsPrimaryAction.textDarkTheme',
             hex: core.colorsPrimaryAction.textDarkTheme,
             bg: core.colorsBackgroundDark[1],
             fg: core.colorsPrimaryAction.textDarkTheme
@@ -319,6 +329,7 @@ const colorCategories = [
           {
             name: 'Primary Action Text - On Light',
             var: 'psColorsPrimaryActionTextOnLight',
+            js: 'colorsPrimaryAction.textLightTheme',
             hex: core.colorsPrimaryAction.textLightTheme,
             border: core.colorsBorder.lowOnLight,
             bg: core.colorsBackgroundLight[3],
@@ -336,17 +347,20 @@ const colorCategories = [
           {
             name: 'Status - Success',
             var: 'psColorsStatusSuccess',
+            js: 'colorsStatus.success',
             hex: core.colorsStatus.success
           },
           {
             name: 'Status - Warning',
             var: 'psColorsStatusWarning',
+            js: 'colorsStatus.warning',
             hex: core.colorsStatus.warning,
             fg: core.colorsTextIcon.highOnLight
           },
           {
             name: 'Status - Error',
             var: 'psColorsStatusError',
+            js: 'colorsStatus.error',
             hex: core.colorsStatus.error
           }
         ]
@@ -364,12 +378,14 @@ const colorCategories = [
           {
             name: 'Text & Icons - On Dark - High Contrast',
             var: 'psColorsTextIconHighOnDark',
+            js: 'colorsTextIcon.highOnDark',
             hex: '#FFFFFF, 95% opacity',
             fg: core.colorsTextIcon.highOnDark
           },
           {
             name: 'Text & Icons - On Dark - Low Contrast',
             var: 'psColorsTextIconLowOnDark',
+            js: 'colorsTextIcon.lowOnDark',
             hex: '#FFFFFF, 65% opacity',
             fg: core.colorsTextIcon.lowOnDark
           }
@@ -383,12 +399,14 @@ const colorCategories = [
           {
             name: 'Text & Icons - On Light - High Contrast',
             var: 'psColorsTextIconHighOnLight',
+            js: 'colorsTextIcon.highOnLight',
             hex: '#000000, 95% opacity',
             fg: core.colorsTextIcon.highOnLight
           },
           {
             name: 'Text & Icons - On Light - Low Contrast',
             var: 'psColorsTextIconLowOnLight',
+            js: 'colorsTextIcon.lowOnLight',
             hex: '#000000, 55% opacity',
             fg: core.colorsTextIcon.lowOnLight
           }
@@ -407,6 +425,7 @@ const colorCategories = [
             name: 'Border - On Dark - High Contrast',
             var: 'psColorsBorderHighOnDark',
             hex: '#FFFFFF, 30% opacity',
+            js: 'colorsTextIcon.highOnDark',
             fg: core.colorsTextIcon.highOnDark,
             borderExample: core.colorsBorder.highOnDark
           },
@@ -414,6 +433,7 @@ const colorCategories = [
             name: 'Border - On Dark - Low Contrast',
             var: 'psColorsBorderLowOnDark',
             hex: '#FFFFFF, 15% opacity',
+            js: 'colorsTextIcon.lowOnDark',
             fg: core.colorsTextIcon.lowOnDark,
             borderExample: core.colorsBorder.lowOnDark
           }
@@ -428,6 +448,7 @@ const colorCategories = [
             name: 'Border - On Light - High Contrast',
             var: 'psColorsBorderHighOnLight',
             hex: '#000000, 30% opacity',
+            js: 'colorsTextIcon.highOnLight',
             fg: core.colorsTextIcon.highOnLight,
             borderExample: core.colorsBorder.highOnLight
           },
@@ -435,6 +456,7 @@ const colorCategories = [
             name: 'Border - On Light - Low Contrast',
             var: 'psColorsBorderLowOnLight',
             hex: '#000000, 15% opacity',
+            js: 'colorsTextIcon.lowOnLight',
             fg: core.colorsTextIcon.lowOnLight,
             borderExample: core.colorsBorder.lowOnLight
           }
@@ -450,12 +472,14 @@ const colorCategories = [
           {
             name: 'Brand Gradient - Skills',
             var: 'psColorsGradientSkillsBackground',
+            js: 'colorsGradient.skillsBackground',
             hex: `${core.colorsGradient.skillsStop0} to ${core.colorsGradient.skillsStop100}`,
             bg: core.colorsGradient.skillsBackground
           },
           {
             name: 'Brand Gradient - Flow',
             var: 'psColorsGradientFlowBackground',
+            js: 'colorsGradient.flowBackground',
             hex: `${core.colorsGradient.flowStop0} to ${core.colorsGradient.flowStop100}`,
             bg: core.colorsGradient.flowBackground
           }
@@ -471,11 +495,13 @@ const colorCategories = [
           {
             name: 'Black',
             var: 'psColorsBlack',
+            js: 'colorsBlack',
             hex: core.colorsBlack
           },
           {
             name: 'White',
             var: 'psColorsWhite',
+            js: 'colorsWhite',
             hex: core.colorsWhite,
             fg: core.colorsTextIcon.highOnLight,
             border: core.colorsBorder.lowOnLight
@@ -547,6 +573,7 @@ function formatAllColorSubCategory({ color, fgSwitch, fgMin, fgMax, name }) {
         name: name + ' ' + key + (key === 6 ? ' (Base)' : ''),
         var: 'psColors' + name + key,
         hex: color[key],
+        js: `colors${name}[${key}]`,
         fg:
           key < (fgSwitch || 6)
             ? fgMin || core.colorsTextIcon.highOnLight
@@ -599,6 +626,7 @@ myCssInJsSolution({
                       key={color.var}
                       name={color.name}
                       var={color.var}
+                      js={color.js}
                       hex={color.hex}
                       icon={color.icon || subCat.icon || cat.icon}
                       border={color.border || subCat.border}
