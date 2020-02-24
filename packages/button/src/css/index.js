@@ -19,7 +19,7 @@ import * as vars from '../vars/index.js'
 export const colorsSecondaryAction = {
   backgroundDefaultOnDark: transparentize(0.75, colorsBackgroundUtility.base),
   backgroundHoverOnDark: transparentize(0.65, colorsBackgroundUtility.base),
-  backgroundPressedOnDark: transparentize(0.80, colorsBackgroundUtility.base),
+  backgroundPressedOnDark: transparentize(0.8, colorsBackgroundUtility.base),
   backgroundDefaultOnLight: transparentize(0.75, colorsBackgroundUtility.base),
   backgroundHoverOnLight: transparentize(0.55, colorsBackgroundUtility.base),
   backgroundPressedOnLight: transparentize(0.35, colorsBackgroundUtility.base)
@@ -60,7 +60,10 @@ export default {
     },
     '&:focus': {
       outline: 'none',
-      boxShadow: `0 0 0 3px ${transparentize(0.5, colorsPrimaryAction.background)}`
+      boxShadow: `0 0 0 3px ${transparentize(
+        0.5,
+        colorsPrimaryAction.background
+      )}`
     },
     '&:not([disabled]):active': {
       transform: 'translateY(1px)'
@@ -98,7 +101,7 @@ export default {
       cursor: 'pointer'
     },
     '&:not([disabled]):active': {
-      background: colorsBlue[8],
+      background: colorsBlue[8]
     }
   },
   [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeNames.light}`]: {
@@ -113,7 +116,7 @@ export default {
       cursor: 'pointer'
     },
     '&:not([disabled]):active': {
-      background: colorsBlue[8],
+      background: colorsBlue[8]
     }
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeDefaultName}`]: {
@@ -127,7 +130,7 @@ export default {
       background: colorsSecondaryAction.backgroundHoverOnDark
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnDark,
+      background: colorsSecondaryAction.backgroundPressedOnDark
     }
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]: {
@@ -140,7 +143,7 @@ export default {
       background: colorsSecondaryAction.backgroundHoverOnLight
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnLight,
+      background: colorsSecondaryAction.backgroundPressedOnLight
     }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeDefaultName}`]: {
@@ -158,7 +161,7 @@ export default {
     },
     '&:not([disabled]):active': {
       border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.80, colorsBlue.base),
+      background: transparentize(0.8, colorsBlue.base)
     }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeNames.light}`]: {
@@ -176,12 +179,12 @@ export default {
     },
     '&:not([disabled]):active': {
       border: `2px solid ${colorsBlue[8]}`,
-      background: transparentize(0.90, colorsBlue.base),
+      background: transparentize(0.9, colorsBlue.base)
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}`]: {
     border: 'none',
-    background: 'none',
+    background: 'none'
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark,
@@ -192,7 +195,7 @@ export default {
       background: colorsSecondaryAction.backgroundHoverOnDark
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnDark,
+      background: colorsSecondaryAction.backgroundPressedOnDark
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
