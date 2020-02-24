@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "9.1.0",
+  "version": "9.1.2",
   "description": "Design System component for link/anchor ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -15,7 +15,7 @@
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./dist",
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },

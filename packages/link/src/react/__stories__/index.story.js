@@ -22,3 +22,16 @@ storiesOf('tagNames', module).add('button', _ => (
     </Link>
   </p>
 ))
+
+storiesOf('css only', module).add('hover', _ => (
+  <p style={{ color: 'white' }}>
+    This is a css-styled anchor tag{' '}
+    <a
+      href="#"
+      className="psds-link psds-button--2020-colors psds-link--appearance-default psds-theme--light"
+    >
+      anchor
+    </a>
+    .
+  </p>
+))

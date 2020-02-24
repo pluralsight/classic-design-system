@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@5.2.1...@pluralsight/ps-design-system-banner@5.2.2) (2020-02-21)
+
+
+### Bug Fixes
+
+* **banner:** update buttons with contrast ([88f0176](https://github.com/pluralsight/design-system/commit/88f01763124a72a255fb900b94957287692ca5b7))
+
+
+
+
+
+## [5.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@5.2.0...@pluralsight/ps-design-system-banner@5.2.1) (2020-02-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-banner
+
+
+
+
+
 # [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@5.1.6...@pluralsight/ps-design-system-banner@5.2.0) (2020-02-18)
 
 
