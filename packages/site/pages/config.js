@@ -1,10 +1,10 @@
 import React from 'react'
-import { Chrome, Content, Doc, PageHeading } from '../../src/ui/index.js'
+import { Chrome, Content, Doc, PageHeading } from '../src/ui/index.js'
 
 export default _ => (
   <Chrome>
-    <Content title="Core Build">
-      <PageHeading>Core CSS Build Config</PageHeading>
+    <Content title="Config">
+      <PageHeading>CSS Config</PageHeading>
       <Doc>{`
 ## PostCSS Config
 
@@ -122,7 +122,7 @@ In \`next.config.js\` directly adjust postCSS configuration like so:
 \`\`\`bash
 npm install @pluralsight/ps-design-system-core
 \`\`\`
-*Note: css variables consumed by app need to be added to `importFrom` field.
+*Note: css variables consumed by app need to be added to import from field.
 
 \`\`\`js
 const postcssPresetEnv = require('postcss-preset-env')

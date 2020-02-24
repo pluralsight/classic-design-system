@@ -69,8 +69,8 @@ module.exports = {
 `}</Doc>
       <P>
         <Badge color={Badge.colors.yellow}>Important</Badge> See the{' '}
-        <TextLink href="/core/build">CSS Build docs</TextLink> for other CSS
-        tech config options if the above doesn't apply.
+        <TextLink href="/config">CSS config docs</TextLink> for other CSS tech
+        config options if the above doesn't apply.
       </P>
       <Doc>{`
 
