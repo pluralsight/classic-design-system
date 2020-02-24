@@ -122,7 +122,7 @@ In \`next.config.js\` directly adjust postCSS configuration like so:
 \`\`\`bash
 npm install @pluralsight/ps-design-system-core
 \`\`\`
-*Note css variables consumed by app need to be added to importFrom field.
+*Note: css variables consumed by app need to be added to `importFrom` field.
 
 \`\`\`js
 const postcssPresetEnv = require('postcss-preset-env')
