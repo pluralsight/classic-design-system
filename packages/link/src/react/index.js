@@ -19,7 +19,8 @@ const style = ({ appearance, themeName }) =>
   )
 
 const Link = React.forwardRef((props, forwardedRef) => {
-  const ref = forwardedRef || React.useRef()
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
   const themeName = useTheme()
 
   let tagName = 'a'

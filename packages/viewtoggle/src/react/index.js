@@ -30,7 +30,8 @@ const styles = {
 }
 
 const ViewToggle = React.forwardRef(({ onSelect, ...props }, forwardedRef) => {
-  const ref = forwardedRef || React.useRef()
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
   const themeName = useTheme()
   const hasRenderedOnce = useHasRenderedOnce()
 
