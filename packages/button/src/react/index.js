@@ -104,9 +104,10 @@ renderIcon.propTypes = {
   icon: PropTypes.element
 }
 
-const Button = React.forwardRef((props, ref) => {
+const Button = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
-  if (!ref) ref = React.useRef()
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
   const nonLoadingWidth = React.useMemo(() => {
     if (props.loading && ref && ref.current) {
       return ref.current.offsetWidth
