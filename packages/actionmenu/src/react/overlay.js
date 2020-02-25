@@ -11,6 +11,13 @@ const styles = {
   overlay: () => css(stylesheet['.psds-actionmenu__overlay'])
 }
 
+const hasComponentRendered = () =>
+  !!(
+    typeof window !== 'undefined' &&
+    typeof window.document !== 'undefined' &&
+    typeof window.document.body !== 'undefined'
+  )
+
 const Overlay = props => {
   function handleOverlayClick(evt) {
     if (evt.target.id === MODAL_OVERLAY_ID) {
@@ -18,14 +25,17 @@ const Overlay = props => {
       if (typeof props.onClick === 'function') props.onClick(evt)
     }
   }
-  return (
-    <div
-      {...filterReactProps(props)}
-      id={MODAL_OVERLAY_ID}
-      {...styles.overlay(props)}
-      onClick={handleOverlayClick}
-    />
-  )
+  return hasComponentRendered()
+    ? ReactDOM.createPortal(
+        <div
+          {...filterReactProps(props)}
+          id={MODAL_OVERLAY_ID}
+          {...styles.overlay(props)}
+          onClick={handleOverlayClick}
+        />,
+        document.body
+      )
+    : null
 }
 Overlay.propTypes = {
   onClick: PropTypes.func,
