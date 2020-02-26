@@ -320,7 +320,7 @@ const MonospaceFont = _ => (
     </P>
     <Code language="css">
       @import
-      url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500’);
+      url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
     </Code>
     <P>Only one Source Code Pro font weight is available for use.</P>
     <div className="box fontWeight">
