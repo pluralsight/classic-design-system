@@ -1,7 +1,10 @@
+import { canUseDOM } from 'exenv'
 import { css } from 'glamor'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import PropTypes from 'prop-types'
 import React from 'react'
+import ReactDOM from 'react-dom'
+
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
 
@@ -11,25 +14,40 @@ const styles = {
   overlay: () => css(stylesheet['.psds-actionmenu__overlay'])
 }
 
-const Overlay = props => {
-  function handleOverlayClick(evt) {
-    if (evt.target.id === MODAL_OVERLAY_ID) {
-      if (typeof props.onClose === 'function') props.onClose(evt)
-      if (typeof props.onClick === 'function') props.onClick(evt)
-    }
+function Overlay(props) {
+  if (!canUseDOM) return null
+
+  function handleClick(evt) {
+    if (evt.target.id !== MODAL_OVERLAY_ID) return
+
+    if (typeof props.onClose === 'function') props.onClose(evt)
+    if (typeof props.onClick === 'function') props.onClick(evt)
   }
-  return (
+
+  return createUniversalPortal(
     <div
       {...filterReactProps(props)}
-      id={MODAL_OVERLAY_ID}
       {...styles.overlay(props)}
-      onClick={handleOverlayClick}
-    />
+      id={MODAL_OVERLAY_ID}
+      onClick={handleClick}
+    />,
+    props.inNode
   )
 }
+
+Overlay.defaultProps = {
+  inNode: canUseDOM ? document.body : null
+}
+
 Overlay.propTypes = {
+  inNode: PropTypes.any,
   onClick: PropTypes.func,
   onClose: PropTypes.func
 }
 
 export default Overlay
+
+function createUniversalPortal() {
+  if (!canUseDOM) return null
+  return ReactDOM.createPortal(...arguments)
+}
