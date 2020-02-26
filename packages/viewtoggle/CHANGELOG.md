@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.28](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.27...@pluralsight/ps-design-system-viewtoggle@5.0.28) (2020-02-26)
+
+
+### Bug Fixes
+
+* removes conditional uses of useRef ([f54265e](https://github.com/pluralsight/design-system/commit/f54265e9a57f1a3ca4acd334008ab1a0276c2ebf))
+
+
+
+
+
 ## [5.0.27](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@5.0.26...@pluralsight/ps-design-system-viewtoggle@5.0.27) (2020-02-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

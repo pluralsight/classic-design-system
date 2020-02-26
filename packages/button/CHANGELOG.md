@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@17.2.1...@pluralsight/ps-design-system-button@17.2.2) (2020-02-26)
+
+
+### Bug Fixes
+
+* removes conditional uses of useRef ([f54265e](https://github.com/pluralsight/design-system/commit/f54265e9a57f1a3ca4acd334008ab1a0276c2ebf))
+
+
+
+
+
 ## [17.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@17.2.0...@pluralsight/ps-design-system-button@17.2.1) (2020-02-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

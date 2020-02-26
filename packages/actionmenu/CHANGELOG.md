@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@9.1.8...@pluralsight/ps-design-system-actionmenu@10.0.0) (2020-02-26)
+
+
+### Features
+
+* **actionmenu:** overlay to direct child of body ([2065903](https://github.com/pluralsight/design-system/commit/20659031551296c19474224c2bce63512a03f4ae))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** action menu overlay rendered using a portal
+
+
+
+
+
 ## [9.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@9.1.7...@pluralsight/ps-design-system-actionmenu@9.1.8) (2020-02-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
