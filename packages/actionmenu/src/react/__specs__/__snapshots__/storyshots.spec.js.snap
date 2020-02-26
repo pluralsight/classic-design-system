@@ -2284,6 +2284,123 @@ exports[`Storyshots onClick nested 1`] = `
 </div>
 `;
 
+exports[`Storyshots onClose toggle show/hide 1`] = `
+<div
+  data-css-1so76ss=""
+>
+  <div
+    style={
+      Object {
+        "margin": "16px",
+      }
+    }
+  >
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "pink",
+          "display": "inline-block",
+          "padding": "4px",
+        }
+      }
+    >
+      anchor
+    </div>
+    <div
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "background": "pink",
+            "display": "inline-block",
+            "padding": "4px",
+            "position": "absolute",
+          }
+        }
+      >
+        <div
+          data-css-1crjksd=""
+          id="psds-actionmenu__overlay"
+          onClick={[Function]}
+        />
+        <div
+          data-css-1x8y3e3=""
+          onKeyDown={[Function]}
+          role="menu"
+        >
+          <div
+            data-css-13azwyo=""
+          >
+            <button
+              aria-haspopup={false}
+              data-css-1i7nryb=""
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseOver={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              <span
+                data-css-3fe0zw=""
+              >
+                One item
+              </span>
+            </button>
+          </div>
+          <div
+            data-css-13azwyo=""
+          >
+            <button
+              aria-haspopup={false}
+              data-css-1i7nryb=""
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseOver={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              <span
+                data-css-3fe0zw=""
+              >
+                Two item
+              </span>
+            </button>
+          </div>
+          <div
+            data-css-13azwyo=""
+          >
+            <button
+              aria-haspopup={false}
+              data-css-1i7nryb=""
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseOver={[Function]}
+              role="menuitem"
+              tabIndex="0"
+            >
+              <span
+                data-css-3fe0zw=""
+              >
+                Three item
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots shouldFocusOnMount false 1`] = `
 <div
   data-css-1so76ss=""
