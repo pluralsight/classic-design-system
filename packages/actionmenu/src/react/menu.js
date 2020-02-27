@@ -129,6 +129,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
       {!props._isNested && typeof props.onClose === 'function' && (
         <Overlay onClose={navigateOut} />
       )}
+
       <div
         {...styles.menu(props)}
         {...filterReactProps(props)}
@@ -156,5 +157,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
     </>
   )
 })
+
+ActionMenu.displayName = 'ActionMenu'
 
 export default ActionMenu

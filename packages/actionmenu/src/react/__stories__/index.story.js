@@ -363,3 +363,46 @@ storiesOf('with Position', module)
       </BelowRight>
     </div>
   ))
+
+storiesOf('onClose', module).add('toggle show/hide', () => {
+  function Story() {
+    const [open, setOpen] = React.useState(true)
+
+    const show = () => setOpen(true)
+    const hide = () => setOpen(false)
+
+    return (
+      <div style={{ margin: core.layout.spacingMedium }}>
+        <BelowLeft
+          when={open}
+          show={
+            <div>
+              <ActionMenu
+                onClose={hide}
+                origin={ActionMenu.origins.topLeft}
+                shouldFocusOnMount={false}
+              >
+                <ActionMenu.Item>One item</ActionMenu.Item>
+                <ActionMenu.Item>Two item</ActionMenu.Item>
+                <ActionMenu.Item>Three item</ActionMenu.Item>
+              </ActionMenu>
+            </div>
+          }
+        >
+          <div
+            onClick={show}
+            style={{
+              background: 'pink',
+              display: 'inline-block',
+              padding: core.layout.spacingXXSmall
+            }}
+          >
+            {!open ? 'click to show' : 'anchor'}
+          </div>
+        </BelowLeft>
+      </div>
+    )
+  }
+
+  return <Story />
+})

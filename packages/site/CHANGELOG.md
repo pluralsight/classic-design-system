@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.8.6...@pluralsight/ps-design-system-site@17.9.0) (2020-02-26)
+
+
+### Bug Fixes
+
+* **site:** correct incorrect color values ([4585510](https://github.com/pluralsight/design-system/commit/45855101e70a03df76b5041953057a1fced0120d))
+* **site:** remove encoded_closed_quotes ([df4894f](https://github.com/pluralsight/design-system/commit/df4894f7d62161b75c0bd6521483fa8d5cf67494))
+
+
+### Features
+
+* **site:** adds js vars to site for colors ([2a4af4a](https://github.com/pluralsight/design-system/commit/2a4af4aef1db7245420fd4edf1179aac935b782e))
+
+
+
+
+
 ## [17.8.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.8.5...@pluralsight/ps-design-system-site@17.8.6) (2020-02-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

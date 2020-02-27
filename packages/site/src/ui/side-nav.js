@@ -27,6 +27,7 @@ const NAV_CONFIG = [
     title: 'Introduction',
     items: [
       { href: '/install', label: 'Install' },
+      { href: '/config', label: 'Config' },
       { href: '/design-assets', label: 'Design Assets' },
       { href: '/contribute', label: 'Contribute' },
       { href: '/roadmap', label: 'Roadmap' }
@@ -57,7 +58,7 @@ const NAV_CONFIG = [
     title: 'Components',
     hrefPrefix: '/components',
     items: [
-      { href: '/action-menu', label: 'Action Menu' },
+      { href: '/actionmenu', label: 'Action Menu' },
       { href: '/avatar', label: 'Avatar' },
       { href: '/badge', label: 'Badge' },
       { href: '/banner', label: 'Banner' },
