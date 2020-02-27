@@ -109,6 +109,10 @@ function List(props) {
     }
   }, [listRef, sliderRef, xOffset, listWidth, sliderWidth])
 
+  React.useEffect(() => {
+    listWidth >= listRef.current.scrollWidth && setXOffset(0)
+  }, [listWidth, listRef])
+
   function handleListItemClick(i, originalOnClick, evt) {
     setActiveIndex(i)
     if (typeof originalOnClick === 'function') originalOnClick(i, evt)
