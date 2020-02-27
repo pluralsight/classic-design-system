@@ -18,9 +18,10 @@ exports[`Storyshots appearance default w/ error 1`] = `
       Problem field
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-in6gqi=""
       >
         <div
@@ -40,7 +41,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -60,7 +61,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         </div>
       </div>
       <div
-        data-css-1ha66tv=""
+        data-css-vaotfo=""
       >
         <div
           data-css-7dab2f=""
@@ -103,9 +104,10 @@ exports[`Storyshots appearance gaps 1`] = `
           Problem field
         </div>
         <div
-          data-css-8u2q7u=""
+          data-css-8befsb=""
         >
           <div
+            data-css-159tac3=""
             data-css-ctre2o=""
           >
             <div
@@ -125,7 +127,7 @@ exports[`Storyshots appearance gaps 1`] = `
                 />
               </button>
               <div
-                data-css-wvt485=""
+                data-css-1af7ks9=""
               >
                 <div
                   data-css-7dab2f=""
@@ -158,9 +160,10 @@ exports[`Storyshots appearance gaps 1`] = `
           Problem field
         </div>
         <div
-          data-css-8u2q7u=""
+          data-css-8befsb=""
         >
           <div
+            data-css-159tac3=""
             data-css-in6gqi=""
           >
             <div
@@ -180,7 +183,7 @@ exports[`Storyshots appearance gaps 1`] = `
                 />
               </button>
               <div
-                data-css-wvt485=""
+                data-css-1af7ks9=""
               >
                 <div
                   data-css-7dab2f=""
@@ -200,7 +203,7 @@ exports[`Storyshots appearance gaps 1`] = `
             </div>
           </div>
           <div
-            data-css-1ha66tv=""
+            data-css-vaotfo=""
           >
             <div
               data-css-7dab2f=""
@@ -232,9 +235,10 @@ exports[`Storyshots appearance gaps 1`] = `
           Problem field
         </div>
         <div
-          data-css-8u2q7u=""
+          data-css-8befsb=""
         >
           <div
+            data-css-159tac3=""
             data-css-ctre2o=""
           >
             <div
@@ -254,7 +258,7 @@ exports[`Storyshots appearance gaps 1`] = `
                 />
               </button>
               <div
-                data-css-kojjpx=""
+                data-css-eycxdp=""
               >
                 <div
                   data-css-7dab2f=""
@@ -287,9 +291,10 @@ exports[`Storyshots appearance gaps 1`] = `
           Problem field
         </div>
         <div
-          data-css-8u2q7u=""
+          data-css-8befsb=""
         >
           <div
+            data-css-159tac3=""
             data-css-in6gqi=""
           >
             <div
@@ -309,7 +314,7 @@ exports[`Storyshots appearance gaps 1`] = `
                 />
               </button>
               <div
-                data-css-kojjpx=""
+                data-css-eycxdp=""
               >
                 <div
                   data-css-7dab2f=""
@@ -329,7 +334,7 @@ exports[`Storyshots appearance gaps 1`] = `
             </div>
           </div>
           <div
-            data-css-1ha66tv=""
+            data-css-vaotfo=""
           >
             <div
               data-css-7dab2f=""
@@ -367,9 +372,10 @@ exports[`Storyshots appearance medium default 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -393,7 +399,7 @@ exports[`Storyshots appearance medium default 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -430,9 +436,10 @@ exports[`Storyshots appearance medium subtle 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -456,7 +463,7 @@ exports[`Storyshots appearance medium subtle 1`] = `
             </span>
           </button>
           <div
-            data-css-kojjpx=""
+            data-css-eycxdp=""
           >
             <div
               data-css-7dab2f=""
@@ -493,9 +500,10 @@ exports[`Storyshots appearance small default 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -519,7 +527,7 @@ exports[`Storyshots appearance small default 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -556,9 +564,10 @@ exports[`Storyshots appearance small subtle 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -582,7 +591,7 @@ exports[`Storyshots appearance small subtle 1`] = `
             </span>
           </button>
           <div
-            data-css-kojjpx=""
+            data-css-eycxdp=""
           >
             <div
               data-css-7dab2f=""
@@ -624,9 +633,10 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       Problem field
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-in6gqi=""
       >
         <div
@@ -646,7 +656,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             />
           </button>
           <div
-            data-css-kojjpx=""
+            data-css-eycxdp=""
           >
             <div
               data-css-7dab2f=""
@@ -666,7 +676,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         </div>
       </div>
       <div
-        data-css-1ha66tv=""
+        data-css-vaotfo=""
       >
         <div
           data-css-7dab2f=""
@@ -708,9 +718,10 @@ exports[`Storyshots disabled compare 1`] = `
         Normal
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -734,7 +745,7 @@ exports[`Storyshots disabled compare 1`] = `
               </span>
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
@@ -770,9 +781,10 @@ exports[`Storyshots disabled compare 1`] = `
         I'm not usable
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -796,7 +808,7 @@ exports[`Storyshots disabled compare 1`] = `
               </span>
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
@@ -839,9 +851,10 @@ exports[`Storyshots focus autofocus with ref 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -861,7 +874,7 @@ exports[`Storyshots focus autofocus with ref 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -898,9 +911,10 @@ exports[`Storyshots focus disabled 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -922,7 +936,7 @@ exports[`Storyshots focus disabled 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -959,9 +973,10 @@ exports[`Storyshots focus onBlur 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -982,7 +997,7 @@ exports[`Storyshots focus onBlur 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1019,9 +1034,10 @@ exports[`Storyshots focus onFocus 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -1042,7 +1058,7 @@ exports[`Storyshots focus onFocus 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1084,9 +1100,10 @@ exports[`Storyshots labels all 1`] = `
       Some label
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -1110,7 +1127,7 @@ exports[`Storyshots labels all 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1157,9 +1174,10 @@ exports[`Storyshots labels label 1`] = `
       Some label
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -1179,7 +1197,7 @@ exports[`Storyshots labels label 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1221,9 +1239,10 @@ exports[`Storyshots labels label and subLabel 1`] = `
       Some label
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -1243,7 +1262,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1285,9 +1304,10 @@ exports[`Storyshots labels none 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -1307,7 +1327,7 @@ exports[`Storyshots labels none 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1344,9 +1364,10 @@ exports[`Storyshots labels placeholder 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -1370,7 +1391,7 @@ exports[`Storyshots labels placeholder 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1407,9 +1428,10 @@ exports[`Storyshots labels subLabel 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -1429,7 +1451,7 @@ exports[`Storyshots labels subLabel 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -1492,9 +1514,10 @@ exports[`Storyshots layouts custom width 1`] = `
         Width 150
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -1520,7 +1543,7 @@ exports[`Storyshots layouts custom width 1`] = `
               </span>
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
@@ -1551,9 +1574,10 @@ exports[`Storyshots layouts custom width 1`] = `
         Width determined by longest item
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -1579,7 +1603,7 @@ exports[`Storyshots layouts custom width 1`] = `
               </span>
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
@@ -1636,9 +1660,10 @@ exports[`Storyshots layouts full width 1`] = `
         First
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -1658,7 +1683,7 @@ exports[`Storyshots layouts full width 1`] = `
               />
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
@@ -1695,9 +1720,10 @@ exports[`Storyshots layouts full width 1`] = `
         Second
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-in6gqi=""
         >
           <div
@@ -1717,7 +1743,7 @@ exports[`Storyshots layouts full width 1`] = `
               />
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
@@ -1737,7 +1763,7 @@ exports[`Storyshots layouts full width 1`] = `
           </div>
         </div>
         <div
-          data-css-1ha66tv=""
+          data-css-vaotfo=""
         >
           <div
             data-css-7dab2f=""
@@ -1773,9 +1799,10 @@ exports[`Storyshots layouts full width 1`] = `
         Third
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -1795,7 +1822,7 @@ exports[`Storyshots layouts full width 1`] = `
               />
             </button>
             <div
-              data-css-kojjpx=""
+              data-css-eycxdp=""
             >
               <div
                 data-css-7dab2f=""
@@ -1832,9 +1859,10 @@ exports[`Storyshots layouts full width 1`] = `
         Fourth
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-in6gqi=""
         >
           <div
@@ -1854,7 +1882,7 @@ exports[`Storyshots layouts full width 1`] = `
               />
             </button>
             <div
-              data-css-kojjpx=""
+              data-css-eycxdp=""
             >
               <div
                 data-css-7dab2f=""
@@ -1874,7 +1902,7 @@ exports[`Storyshots layouts full width 1`] = `
           </div>
         </div>
         <div
-          data-css-1ha66tv=""
+          data-css-vaotfo=""
         >
           <div
             data-css-7dab2f=""
@@ -1926,9 +1954,10 @@ exports[`Storyshots layouts right-aligned 1`] = `
         onKeyDown={[Function]}
       >
         <div
-          data-css-8u2q7u=""
+          data-css-8befsb=""
         >
           <div
+            data-css-159tac3=""
             data-css-ctre2o=""
           >
             <div
@@ -1952,7 +1981,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 </span>
               </button>
               <div
-                data-css-kojjpx=""
+                data-css-eycxdp=""
               >
                 <div
                   data-css-7dab2f=""
@@ -2004,9 +2033,10 @@ exports[`Storyshots menu divider 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2028,7 +2058,7 @@ exports[`Storyshots menu divider 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2072,9 +2102,10 @@ exports[`Storyshots menu in stack 1`] = `
           Level
         </div>
         <div
-          data-css-8u2q7u=""
+          data-css-8befsb=""
         >
           <div
+            data-css-159tac3=""
             data-css-ctre2o=""
           >
             <div
@@ -2098,7 +2129,7 @@ exports[`Storyshots menu in stack 1`] = `
                 </span>
               </button>
               <div
-                data-css-wvt485=""
+                data-css-1af7ks9=""
               >
                 <div
                   data-css-7dab2f=""
@@ -2131,9 +2162,10 @@ exports[`Storyshots menu in stack 1`] = `
           Level
         </div>
         <div
-          data-css-8u2q7u=""
+          data-css-8befsb=""
         >
           <div
+            data-css-159tac3=""
             data-css-ctre2o=""
           >
             <div
@@ -2157,7 +2189,7 @@ exports[`Storyshots menu in stack 1`] = `
                 </span>
               </button>
               <div
-                data-css-wvt485=""
+                data-css-1af7ks9=""
               >
                 <div
                   data-css-7dab2f=""
@@ -2201,9 +2233,10 @@ exports[`Storyshots menu nested 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2227,7 +2260,7 @@ exports[`Storyshots menu nested 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2269,9 +2302,10 @@ exports[`Storyshots menu onClicks 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-in6gqi=""
       >
         <div
@@ -2295,7 +2329,7 @@ exports[`Storyshots menu onClicks 1`] = `
             </span>
           </button>
           <div
-            data-css-kojjpx=""
+            data-css-eycxdp=""
           >
             <div
               data-css-7dab2f=""
@@ -2315,7 +2349,7 @@ exports[`Storyshots menu onClicks 1`] = `
         </div>
       </div>
       <div
-        data-css-1ha66tv=""
+        data-css-vaotfo=""
       >
         <div
           data-css-7dab2f=""
@@ -2356,9 +2390,10 @@ exports[`Storyshots menu single list 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2380,7 +2415,7 @@ exports[`Storyshots menu single list 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2422,9 +2457,10 @@ exports[`Storyshots menu single list w/ icon 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2448,7 +2484,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2490,9 +2526,10 @@ exports[`Storyshots menu super long 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2514,7 +2551,7 @@ exports[`Storyshots menu super long 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2556,9 +2593,10 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2580,7 +2618,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2622,9 +2660,10 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2648,7 +2687,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2690,9 +2729,10 @@ exports[`Storyshots menu w/ subLabel 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2714,7 +2754,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2756,9 +2796,10 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2782,7 +2823,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2824,9 +2865,10 @@ exports[`Storyshots props whitelist title 1`] = `
       Level
     </div>
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -2849,7 +2891,7 @@ exports[`Storyshots props whitelist title 1`] = `
             />
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -2907,9 +2949,10 @@ exports[`Storyshots whitelist clear 1`] = `
         Thing to change
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -2935,7 +2978,7 @@ exports[`Storyshots whitelist clear 1`] = `
               </span>
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
@@ -2973,9 +3016,10 @@ exports[`Storyshots whitelist name 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-8u2q7u=""
+      data-css-8befsb=""
     >
       <div
+        data-css-159tac3=""
         data-css-ctre2o=""
       >
         <div
@@ -3000,7 +3044,7 @@ exports[`Storyshots whitelist name 1`] = `
             </span>
           </button>
           <div
-            data-css-wvt485=""
+            data-css-1af7ks9=""
           >
             <div
               data-css-7dab2f=""
@@ -3053,9 +3097,10 @@ exports[`Storyshots whitelist onChange 1`] = `
         Thing to change
       </div>
       <div
-        data-css-8u2q7u=""
+        data-css-8befsb=""
       >
         <div
+          data-css-159tac3=""
           data-css-ctre2o=""
         >
           <div
@@ -3081,7 +3126,7 @@ exports[`Storyshots whitelist onChange 1`] = `
               </span>
             </button>
             <div
-              data-css-wvt485=""
+              data-css-1af7ks9=""
             >
               <div
                 data-css-7dab2f=""
