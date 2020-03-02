@@ -614,9 +614,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               Occupation
             </div>
             <div
-              data-css-8u2q7u=""
+              data-css-8befsb=""
             >
               <div
+                data-css-159tac3=""
                 data-css-ctre2o=""
               >
                 <div
@@ -640,7 +641,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     </span>
                   </button>
                   <div
-                    data-css-wvt485=""
+                    data-css-1af7ks9=""
                   >
                     <div
                       data-css-7dab2f=""
