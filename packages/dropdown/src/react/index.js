@@ -81,7 +81,7 @@ const styles = {
     )
   },
   pageOverlay: _ => css(stylesheet['.psds-dropdown__page-overlay']),
-  halo: _ => css(css['.psds-dropdown__field-halo'])
+  halo: _ => css(stylesheet['.psds-dropdown__field-halo'])
 }
 
 const CaretDown = _ => (

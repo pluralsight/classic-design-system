@@ -63,7 +63,7 @@ export default {
   // __field-container
   '.psds-dropdown__field-container': {
     position: 'relative',
-    display: 'inline-flex',
+    display: 'inline-block',
     alignItems: 'center',
     width: '100%',
     minWidth: `calc(${iconWidths.medium} + ${layout.spacingXSmall})`,
@@ -80,6 +80,8 @@ export default {
   '.psds-dropdown__icon': {
     position: 'absolute',
     left: 'auto',
+    top: '50%',
+    transform: 'translateY(-50%)',
     right: layout.spacingXSmall,
     display: 'flex',
     alignItems: 'center',
@@ -115,7 +117,9 @@ export default {
   // __error
   '.psds-dropdown__error': {
     position: 'absolute',
-    right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
+    right: 0,
+    top: '50%',
+    transform: `translate(calc(100% + ${layout.spacingXSmall}), -50%)`,
     display: 'flex',
     alignItems: 'center',
     color: colorsStatus.error,
@@ -169,6 +173,7 @@ export default {
     left: 0
   },
   '.psds-dropdown__field-halo': {
-    maxWidth: '100%'
+    maxWidth: '100%',
+    display: 'block'
   }
 }
