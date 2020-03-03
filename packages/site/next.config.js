@@ -12,15 +12,18 @@ module.exports = {
     const files = await globAsync(`pages/**/*.js`)
     const matchExtension = /\.[^/.]+$/
 
-    return files
+    const pathMap = files
       .map(filename => filename.replace('pages', ''))
       .map(filename => filename.replace(matchExtension, ''))
-      .map(filename => filename.replace('/index', ''))
-      .filter(filename => !filename.startsWith('/_'))
+      .map(filename => filename.replace(/^\/index/i, '/')) // home page
+      .map(filename => filename.replace('/index', '')) // strip trailing file path from dir index
+      .filter(filename => !filename.startsWith('/_')) // remove nextjs template overrides
       .reduce(
         (acc, filename) => ({ ...acc, [filename]: { page: filename } }),
         {}
       )
+
+    return pathMap
   },
 
   webpack(config, options) {
