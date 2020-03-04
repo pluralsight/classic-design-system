@@ -135,22 +135,22 @@ export const colorsBorder = {
 }
 
 export const colorsBackgroundDark = {
-  1: '#0F0F0F',
-  2: '#1B1B1B',
-  3: '#232323'
+  1: '#0D0F12',
+  2: '#181C20',
+  3: '#1E2429'
 }
 
 export const colorsBackgroundLight = {
-  1: '#F2F2F2',
-  2: '#F8F8F8',
+  1: '#F0F3F5',
+  2: '#F7F9FA',
   3: '#FFFFFF'
 }
 
 export const colorsBackgroundUtility = {
   base: '#B0B0B0',
-  25: 'rgba(176,176,176, 0.25)',
-  30: 'rgba(176,176,176, 0.30)',
-  40: 'rgba(176,176,176, 0.40)'
+  25: 'rgba(138,153,168, 0.25)',
+  30: 'rgba(138,153,168, 0.30)',
+  40: 'rgba(138,153,168, 0.40)'
 }
 
 export const colorsGradient = {
