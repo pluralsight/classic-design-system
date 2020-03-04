@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.4.3...@pluralsight/ps-design-system-form@4.4.4) (2020-03-04)
+
+
+### Bug Fixes
+
+* **dropdown:** fixes width on ie11 ([8b30f46](https://github.com/pluralsight/design-system/commit/8b30f46a72c3a2fb6564fbd9aa82d82a11d86f04))
+
+
+
+
+
 ## [4.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@4.4.2...@pluralsight/ps-design-system-form@4.4.3) (2020-02-26)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

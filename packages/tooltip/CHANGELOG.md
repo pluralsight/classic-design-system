@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.1.0...@pluralsight/ps-design-system-tooltip@5.2.0) (2020-03-04)
+
+
+### Features
+
+* **tooltip:** update font size and vertical padding ([98a30a9](https://github.com/pluralsight/design-system/commit/98a30a966961b5270d373657dc2d680d3d474f06))
+
+
+
+
+
 # [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@5.0.21...@pluralsight/ps-design-system-tooltip@5.1.0) (2020-02-20)
 
 

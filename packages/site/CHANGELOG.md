@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [17.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.9.0...@pluralsight/ps-design-system-site@17.10.0) (2020-03-04)
+
+
+### Bug Fixes
+
+* **site:** add colon ([f94fb46](https://github.com/pluralsight/design-system/commit/f94fb4613986c8a19e7bf9ab75e6d376e5417414))
+* **site:** fix link path ([522f1c0](https://github.com/pluralsight/design-system/commit/522f1c0ce592c8ec4ed51a6ffad6ba7e1dc0ac50))
+* **site:** fix root page path mapping ([4a8992d](https://github.com/pluralsight/design-system/commit/4a8992def247167784f842b477506931c2561a50))
+
+
+### Features
+
+* **site:** move css config up to top nav ([193f5de](https://github.com/pluralsight/design-system/commit/193f5def25dce44ab963697b5be20f63feb37d97))
+* **site:** update build docs with SSR and peer dep setup info ([4b47214](https://github.com/pluralsight/design-system/commit/4b472144aa012c37ed343236a14f6530705a9f08))
+
+
+
+
+
 # [17.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@17.8.6...@pluralsight/ps-design-system-site@17.9.0) (2020-02-26)
 
 
