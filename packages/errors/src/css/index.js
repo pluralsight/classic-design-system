@@ -1,7 +1,7 @@
 import {
   colorsBorder,
   colorsTextIcon,
-  colors,
+  colorsWhite,
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
@@ -51,7 +51,7 @@ export default {
     alignItems: 'center'
   },
   [`.psds-error-page__search.psds-theme--${themeNames.light}`]: {
-    background: colors.white,
+    background: colorsWhite,
     color: colorsTextIcon.lownOnLight
   },
   '.psds-error-page__search__icon': {
