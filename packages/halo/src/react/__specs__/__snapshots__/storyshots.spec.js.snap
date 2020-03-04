@@ -2,7 +2,7 @@
 
 exports[`Storyshots Halo/error false 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -20,7 +20,7 @@ exports[`Storyshots Halo/error false 1`] = `
 
 exports[`Storyshots Halo/error true 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -38,7 +38,7 @@ exports[`Storyshots Halo/error true 1`] = `
 
 exports[`Storyshots Halo/gapSizes default 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -56,7 +56,7 @@ exports[`Storyshots Halo/gapSizes default 1`] = `
 
 exports[`Storyshots Halo/gapSizes small 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -74,7 +74,7 @@ exports[`Storyshots Halo/gapSizes small 1`] = `
 
 exports[`Storyshots Halo/shapes default 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -94,7 +94,7 @@ exports[`Storyshots Halo/shapes default 1`] = `
 
 exports[`Storyshots Halo/shapes pill 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -114,7 +114,7 @@ exports[`Storyshots Halo/shapes pill 1`] = `
 
 exports[`Storyshots Halo/visible false & error 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -132,7 +132,7 @@ exports[`Storyshots Halo/visible false & error 1`] = `
 
 exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -150,7 +150,7 @@ exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
 
 exports[`Storyshots Halo/visible false 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -168,7 +168,7 @@ exports[`Storyshots Halo/visible false 1`] = `
 
 exports[`Storyshots Halo/visible true & error 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -186,7 +186,7 @@ exports[`Storyshots Halo/visible true & error 1`] = `
 
 exports[`Storyshots Halo/visible true 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -204,7 +204,7 @@ exports[`Storyshots Halo/visible true 1`] = `
 
 exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
@@ -222,7 +222,7 @@ exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
 
 exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-aelvpu=""
