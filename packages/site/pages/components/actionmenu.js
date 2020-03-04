@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
@@ -219,7 +220,7 @@ export default _ => (
             ]),
             PropTypes.row([
               'onChange',
-              <span>(Event, value, label) => ()</span>,
+              <span>(Event, value, label) {'=>'} ()</span>,
               null,
               null,
               'triggered when an item selected'

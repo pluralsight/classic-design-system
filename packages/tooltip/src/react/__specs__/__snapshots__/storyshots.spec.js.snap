@@ -12,7 +12,7 @@ exports[`Storyshots appearance accent 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
     </div>
@@ -32,7 +32,7 @@ exports[`Storyshots appearance basic 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
     </div>
@@ -52,7 +52,7 @@ exports[`Storyshots onClose accent 1`] = `
     }
   >
     <div
-      data-css-k5uu2e=""
+      data-css-ca4yqr=""
     >
       <button
         aria-label="Close tooltip"
@@ -88,7 +88,7 @@ exports[`Storyshots onClose basic 1`] = `
     }
   >
     <div
-      data-css-77hfnq=""
+      data-css-12mtufz=""
     >
       <button
         aria-label="Close tooltip"
@@ -124,7 +124,7 @@ exports[`Storyshots onClose short text 1`] = `
     }
   >
     <div
-      data-css-77hfnq=""
+      data-css-12mtufz=""
     >
       <button
         aria-label="Close tooltip"
@@ -160,7 +160,7 @@ exports[`Storyshots onClose tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-77hfnq=""
+      data-css-12mtufz=""
     >
       <button
         aria-label="Close tooltip"
@@ -200,7 +200,7 @@ exports[`Storyshots tailPosition accent bottomCenter 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -224,7 +224,7 @@ exports[`Storyshots tailPosition accent bottomLeft 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -248,7 +248,7 @@ exports[`Storyshots tailPosition accent bottomRight 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -272,7 +272,7 @@ exports[`Storyshots tailPosition accent leftCenter 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -296,7 +296,7 @@ exports[`Storyshots tailPosition accent rightCenter 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -320,7 +320,7 @@ exports[`Storyshots tailPosition accent topCenter 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -344,7 +344,7 @@ exports[`Storyshots tailPosition accent topLeft 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -368,7 +368,7 @@ exports[`Storyshots tailPosition accent topRight 1`] = `
     }
   >
     <div
-      data-css-129o3ii=""
+      data-css-1xfwfkk=""
     >
       Some text
       <div
@@ -392,7 +392,7 @@ exports[`Storyshots tailPosition basic bottomCenter 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div
@@ -416,7 +416,7 @@ exports[`Storyshots tailPosition basic bottomLeft 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div
@@ -440,7 +440,7 @@ exports[`Storyshots tailPosition basic bottomRight 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div
@@ -464,7 +464,7 @@ exports[`Storyshots tailPosition basic leftCenter 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div
@@ -488,7 +488,7 @@ exports[`Storyshots tailPosition basic rightCenter 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div
@@ -512,7 +512,7 @@ exports[`Storyshots tailPosition basic topCenter 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div
@@ -536,7 +536,7 @@ exports[`Storyshots tailPosition basic topLeft 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div
@@ -560,7 +560,7 @@ exports[`Storyshots tailPosition basic topRight 1`] = `
     }
   >
     <div
-      data-css-c17omc=""
+      data-css-2fmxat=""
     >
       Some text
       <div

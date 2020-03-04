@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react'
 
 import Avatar from '@pluralsight/ps-design-system-avatar'
@@ -278,7 +279,9 @@ export default _ => (
               <span>
                 <code>Card.Image</code>
                 <span> | </span>
-                <code>Card.ImageLink > a > Card.Image</code>
+                <code>
+                  Card.ImageLink {'>'} a {'>'} Card.Image
+                </code>
               </span>,
               true,
               null,
@@ -318,8 +321,10 @@ export default _ => (
             PropTypes.row([
               'title',
               <span>
-                <code>Card.TextLink > a > Card.Title</code> |{' '}
-                <code>Card.Title</code>
+                <code>
+                  Card.TextLink {'>'} a {'>'} Card.Title
+                </code>{' '}
+                | <code>Card.Title</code>
               </span>,
               true,
               null,

@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
@@ -140,7 +141,9 @@ export default _ => (
               'image',
               <span>
                 <code>Row.Image</code> |
-                <code>Row.ImageLink > a > Row.Image</code>
+                <code>
+                  Row.ImageLink {'>'} a {'>'} Row.Image
+                </code>
               </span>,
               null,
               null,
@@ -174,7 +177,10 @@ export default _ => (
             PropTypes.row([
               'title',
               <span>
-                string | <code>Row.TextLink > a > string</code>
+                string |{' '}
+                <code>
+                  Row.TextLink {'>'} a {'>'} string
+                </code>
               </span>,
               true,
               null,
