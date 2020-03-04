@@ -16,8 +16,8 @@ const Box = React.forwardRef((props, forwardedRef) => {
 
   const className = css({
     alignItems: 'center',
-    border: `4px dashed ${core.colors.pink}`,
-    color: core.colors.pink,
+    border: `4px dashed ${core.colorsPink.base}`,
+    color: core.colorsPink.base,
     display: 'flex',
     fontSize: core.type.fontSizeMedium,
     fontWeight: core.type.fontWeightBold,
@@ -43,15 +43,15 @@ const MockToolip = React.forwardRef((props, forwardedRef) => {
 
 const ScrollContainer = props => {
   const containerClass = css({
-    border: `4px dashed ${core.colors.orange}`,
-    color: core.colors.bone,
+    border: `4px dashed ${core.colorsOrange.base}`,
+    color: core.colorsTextIcon.highOnDark,
     height: 500,
     overflow: 'scroll',
     padding: 20,
     width: 500
   })
   const shimClass = css({
-    border: `1px dashed ${core.colors.bone}`,
+    border: `1px dashed ${core.colorsBorder.highOnLight}`,
     height: 200,
     margin: '20px 0',
     opacity: 0.4
@@ -89,8 +89,8 @@ Object.values(positionComponents).forEach(Comp => {
 
   const Outer = props => {
     const className = css({
-      border: `4px dashed ${core.colors.orange}`,
-      color: core.colors.bone,
+      border: `4px dashed ${core.colorsOrange.base}`,
+      color: core.colorsTextIcon.highOnDark,
       height: 500,
       padding: 20,
       width: 500
