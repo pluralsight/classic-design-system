@@ -2,7 +2,7 @@
 
 exports[`Storyshots Code empty 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -23,7 +23,7 @@ exports[`Storyshots Code empty 1`] = `
 
 exports[`Storyshots Code ends single line 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -37,7 +37,7 @@ exports[`Storyshots Code ends single line 1`] = `
     >
       This is where we see 
       <code
-        data-css-1ki8ryb=""
+        data-css-exlif5=""
       >
         inline code
       </code>
@@ -48,7 +48,7 @@ exports[`Storyshots Code ends single line 1`] = `
 
 exports[`Storyshots Code lead single line 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -61,7 +61,7 @@ exports[`Storyshots Code lead single line 1`] = `
       data-css-1djw98v=""
     >
       <code
-        data-css-1ki8ryb=""
+        data-css-exlif5=""
       >
         inline code
       </code>
@@ -73,7 +73,7 @@ exports[`Storyshots Code lead single line 1`] = `
 
 exports[`Storyshots Code line wrap 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -87,7 +87,7 @@ exports[`Storyshots Code line wrap 1`] = `
     >
       text at the start
       <code
-        data-css-1ki8ryb=""
+        data-css-exlif5=""
       >
         buy-in programmatically, or out of the loop. I'll book a meeting so we can solution this before the sprint is over get buy-in, and closing these latest prospects is like putting socks on an octopus. Knowledge is power
       </code>
@@ -99,7 +99,7 @@ exports[`Storyshots Code line wrap 1`] = `
 
 exports[`Storyshots Code maintains whitespace 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -109,7 +109,7 @@ exports[`Storyshots Code maintains whitespace 1`] = `
     }
   >
     <code
-      data-css-1ki8ryb=""
+      data-css-exlif5=""
     >
        in the middle 
     </code>
@@ -119,7 +119,7 @@ exports[`Storyshots Code maintains whitespace 1`] = `
 
 exports[`Storyshots Code middle of paragraph 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -133,7 +133,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
     >
       Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
       <code
-        data-css-1ki8ryb=""
+        data-css-exlif5=""
       >
         inline code
       </code>
@@ -145,7 +145,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
 
 exports[`Storyshots Code standalone 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -155,7 +155,7 @@ exports[`Storyshots Code standalone 1`] = `
     }
   >
     <code
-      data-css-1ki8ryb=""
+      data-css-exlif5=""
     >
       inline code
     </code>
@@ -165,7 +165,7 @@ exports[`Storyshots Code standalone 1`] = `
 
 exports[`Storyshots Heading className override 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -177,7 +177,7 @@ exports[`Storyshots Heading className override 1`] = `
     <h2
       className={
         Object {
-          "data-css-3sgfk1": "",
+          "data-css-mbiza7": "",
         }
       }
       data-css-1odmcd6=""
@@ -191,7 +191,7 @@ exports[`Storyshots Heading className override 1`] = `
 
 exports[`Storyshots Heading size: large 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -212,7 +212,7 @@ exports[`Storyshots Heading size: large 1`] = `
 
 exports[`Storyshots Heading size: medium 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -233,7 +233,7 @@ exports[`Storyshots Heading size: medium 1`] = `
 
 exports[`Storyshots Heading size: smallCaps 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -254,7 +254,7 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
 
 exports[`Storyshots Heading size: xLarge 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -275,7 +275,7 @@ exports[`Storyshots Heading size: xLarge 1`] = `
 
 exports[`Storyshots Heading style override 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -289,7 +289,7 @@ exports[`Storyshots Heading style override 1`] = `
       size="large"
       style={
         Object {
-          "color": "#e80a89",
+          "color": "#E7558B",
         }
       }
     >
@@ -301,7 +301,7 @@ exports[`Storyshots Heading style override 1`] = `
 
 exports[`Storyshots List type: bulleted 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -335,7 +335,7 @@ exports[`Storyshots List type: bulleted 1`] = `
 
 exports[`Storyshots List type: default 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -369,7 +369,7 @@ exports[`Storyshots List type: default 1`] = `
 
 exports[`Storyshots List type: numbered 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -403,7 +403,7 @@ exports[`Storyshots List type: numbered 1`] = `
 
 exports[`Storyshots P className override 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -415,7 +415,7 @@ exports[`Storyshots P className override 1`] = `
     <p
       className={
         Object {
-          "data-css-3sgfk1": "",
+          "data-css-mbiza7": "",
         }
       }
       data-css-1djw98v=""
@@ -428,7 +428,7 @@ exports[`Storyshots P className override 1`] = `
 
 exports[`Storyshots P stacked 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -460,7 +460,7 @@ exports[`Storyshots P stacked 1`] = `
 
 exports[`Storyshots P style override 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -473,7 +473,7 @@ exports[`Storyshots P style override 1`] = `
       data-css-1djw98v=""
       style={
         Object {
-          "color": "#e80a89",
+          "color": "#E7558B",
         }
       }
     >
@@ -485,7 +485,7 @@ exports[`Storyshots P style override 1`] = `
 
 exports[`Storyshots P vanilla 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
