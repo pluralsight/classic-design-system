@@ -2,7 +2,7 @@
 
 exports[`Storyshots disabled compare 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div>
     <label
@@ -77,7 +77,7 @@ exports[`Storyshots disabled compare 1`] = `
 
 exports[`Storyshots error compare 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div>
     <label
@@ -171,7 +171,7 @@ exports[`Storyshots error compare 1`] = `
 
 exports[`Storyshots focus onFocus/onBlur 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -203,7 +203,7 @@ exports[`Storyshots focus onFocus/onBlur 1`] = `
 
 exports[`Storyshots labels all 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -243,7 +243,7 @@ exports[`Storyshots labels all 1`] = `
 
 exports[`Storyshots labels label 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -277,7 +277,7 @@ exports[`Storyshots labels label 1`] = `
 
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -316,7 +316,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
 
 exports[`Storyshots labels none 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -345,7 +345,7 @@ exports[`Storyshots labels none 1`] = `
 
 exports[`Storyshots labels placeholder 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -375,7 +375,7 @@ exports[`Storyshots labels placeholder 1`] = `
 
 exports[`Storyshots labels subLabel 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -409,7 +409,7 @@ exports[`Storyshots labels subLabel 1`] = `
 
 exports[`Storyshots layouts Form.VerticalLayout 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-15rjys7=""
@@ -457,7 +457,7 @@ exports[`Storyshots layouts Form.VerticalLayout 1`] = `
 
 exports[`Storyshots layouts full width 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -559,7 +559,7 @@ exports[`Storyshots layouts full width 1`] = `
 
 exports[`Storyshots rows less than 4 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -593,7 +593,7 @@ exports[`Storyshots rows less than 4 1`] = `
 
 exports[`Storyshots rows more than 4 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -627,7 +627,7 @@ exports[`Storyshots rows more than 4 1`] = `
 
 exports[`Storyshots whitelist name 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
@@ -658,7 +658,7 @@ exports[`Storyshots whitelist name 1`] = `
 
 exports[`Storyshots whitelist onChange 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <label
     data-css-na8jqt=""
