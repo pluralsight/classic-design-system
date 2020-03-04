@@ -22,11 +22,14 @@ const styles = {
     })
 
     const theme = css(
-      themeName === names.dark && { background: core.colors.gray06 },
-      themeName === names.light && { background: core.colors.bone }
+      themeName === names.dark && { background: core.colorsBackgroundDark[2] },
+      themeName === names.light && { background: core.colorsBackgroundLight[2] }
     )
 
-    return compose(base, theme)
+    return compose(
+      base,
+      theme
+    )
   }
 }
 

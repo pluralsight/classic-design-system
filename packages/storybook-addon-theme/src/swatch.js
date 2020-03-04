@@ -8,7 +8,7 @@ import Theme from '@pluralsight/ps-design-system-theme'
 const styles = {
   container: props =>
     glamor.css({
-      border: `1px solid ${core.colors.gray01}`,
+      border: `1px solid ${core.colorsBorder.lowOnLight}`,
       borderRadius: 4,
       color: 'inherit',
       cursor: 'pointer',
@@ -25,16 +25,19 @@ const styles = {
       height: 60
     })
     const theme = glamor.css(
-      props.name === 'dark' && { background: core.colors.gray06 },
-      props.name === 'light' && { background: core.colors.bone }
+      props.name === 'dark' && { background: core.colorsBackgroundDark[2] },
+      props.name === 'light' && { background: core.colorsBackgroundLight[2] }
     )
 
-    return glamor.compose(base, theme)
+    return glamor.compose(
+      base,
+      theme
+    )
   },
   info: props =>
     glamor.css({
-      borderTop: `1px solid ${core.colors.gray01}`,
-      color: core.colors.gray03,
+      borderTop: `1px solid ${core.colorsBorder.highOnLight}`,
+      color: core.colorsTextIcon.highOnLight,
       padding: '0 10px'
     }),
   title: props =>
