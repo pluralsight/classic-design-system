@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
@@ -231,7 +232,7 @@ export default _ => (
             PropTypes.row([
               'children',
               <span>
-                <code>node</code>|<code>() => node</code>
+                <code>node</code>|<code>() {'=>'} node</code>
               </span>,
               true,
               null,

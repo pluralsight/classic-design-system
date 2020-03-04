@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
@@ -154,7 +155,7 @@ export default _ => (
             ]),
             PropTypes.row([
               'onClick',
-              <code>Event => ()</code>,
+              <code>Event {'=>'} ()</code>,
               null,
               null,
               'callback when list item clicked'

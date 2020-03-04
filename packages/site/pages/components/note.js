@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react'
 
 import Avatar from '@pluralsight/ps-design-system-avatar'
@@ -113,7 +114,7 @@ export default _ => (
           'Note.AvatarLink': [
             PropTypes.row([
               'children',
-              <code>a > Avatar</code>,
+              <code>a {'>'} Avatar</code>,
               true,
               null,
               'hyperlinked avatar'

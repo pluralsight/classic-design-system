@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer'
@@ -159,7 +160,7 @@ export default _ => (
           ]),
           PropTypes.row([
             'onToggle',
-            <code>(boolean, Event) => ()</code>,
+            <code>(boolean, Event) {'=>'} ()</code>,
             null,
             null,
             'triggered when the drawer opens or closes'
