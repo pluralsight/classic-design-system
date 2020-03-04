@@ -2,7 +2,7 @@
 
 exports[`Storyshots checked false 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -17,7 +17,7 @@ exports[`Storyshots checked false 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -42,7 +42,7 @@ exports[`Storyshots checked false 1`] = `
 
 exports[`Storyshots checked true 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={true}
@@ -82,7 +82,7 @@ exports[`Storyshots checked true 1`] = `
 
 exports[`Storyshots click large toggles 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -97,7 +97,7 @@ exports[`Storyshots click large toggles 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -117,7 +117,7 @@ exports[`Storyshots click large toggles 1`] = `
 
 exports[`Storyshots click small toggles 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -132,7 +132,7 @@ exports[`Storyshots click small toggles 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-2sz0ak=""
+        data-css-f5cui8=""
       >
         <div
           data-css-44oays=""
@@ -152,7 +152,7 @@ exports[`Storyshots click small toggles 1`] = `
 
 exports[`Storyshots color blue 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={true}
@@ -192,7 +192,7 @@ exports[`Storyshots color blue 1`] = `
 
 exports[`Storyshots color green 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={true}
@@ -232,7 +232,7 @@ exports[`Storyshots color green 1`] = `
 
 exports[`Storyshots color orange 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={true}
@@ -272,7 +272,7 @@ exports[`Storyshots color orange 1`] = `
 
 exports[`Storyshots disabled false 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -287,7 +287,7 @@ exports[`Storyshots disabled false 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -307,7 +307,7 @@ exports[`Storyshots disabled false 1`] = `
 
 exports[`Storyshots disabled true 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -322,7 +322,7 @@ exports[`Storyshots disabled true 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -342,7 +342,7 @@ exports[`Storyshots disabled true 1`] = `
 
 exports[`Storyshots error false 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -357,7 +357,7 @@ exports[`Storyshots error false 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -377,7 +377,7 @@ exports[`Storyshots error false 1`] = `
 
 exports[`Storyshots error true 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -392,7 +392,7 @@ exports[`Storyshots error true 1`] = `
       data-css-mmyfiy=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -417,7 +417,7 @@ exports[`Storyshots error true 1`] = `
 
 exports[`Storyshots error true w/ disabled 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -432,7 +432,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
       data-css-mmyfiy=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -457,7 +457,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
 
 exports[`Storyshots label large left 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -472,7 +472,7 @@ exports[`Storyshots label large left 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -497,7 +497,7 @@ exports[`Storyshots label large left 1`] = `
 
 exports[`Storyshots label large right 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -512,7 +512,7 @@ exports[`Storyshots label large right 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -537,7 +537,7 @@ exports[`Storyshots label large right 1`] = `
 
 exports[`Storyshots label small left 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -552,7 +552,7 @@ exports[`Storyshots label small left 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-2sz0ak=""
+        data-css-f5cui8=""
       >
         <div
           data-css-44oays=""
@@ -577,7 +577,7 @@ exports[`Storyshots label small left 1`] = `
 
 exports[`Storyshots label small right 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -592,7 +592,7 @@ exports[`Storyshots label small right 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-2sz0ak=""
+        data-css-f5cui8=""
       >
         <div
           data-css-44oays=""
@@ -617,7 +617,7 @@ exports[`Storyshots label small right 1`] = `
 
 exports[`Storyshots size large 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -632,7 +632,7 @@ exports[`Storyshots size large 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-rao1gl=""
+        data-css-19bj9q0=""
       >
         <div
           data-css-1o90whm=""
@@ -657,7 +657,7 @@ exports[`Storyshots size large 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <button
     aria-checked={false}
@@ -672,7 +672,7 @@ exports[`Storyshots size small 1`] = `
       data-css-1lu7sfl=""
     >
       <div
-        data-css-2sz0ak=""
+        data-css-f5cui8=""
       >
         <div
           data-css-44oays=""
