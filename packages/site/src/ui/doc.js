@@ -90,8 +90,8 @@ export default class Doc extends React.Component {
           }
           .markdown :global(pre:not(.CodeMirror-line)) {
             padding: ${core.layout.spacingLarge};
-            background: ${core.colors.gray04};
-            color: ${core.colors.white};
+            background: ${core.colorsBackgroundDark[1]};
+            color: ${core.colorsWhite};
             margin: ${core.layout.spacingSmall} 0;
           }
           .markdown :global(.CodeMirror) {
@@ -102,13 +102,13 @@ export default class Doc extends React.Component {
             height: auto;
           }
           .markdown :global(p) {
-            color: ${core.colors.gray04};
+            color: ${core.colorsTextIcon.highOnLight};
             font-size: ${core.type.fontSizeSmall};
             margin: ${core.layout.spacingSmall} 0;
             line-height: ${core.type.lineHeightStandard};
           }
           .markdown :global(a) {
-            color: ${core.colors.orange};
+            color: ${core.colorsPrimaryAction.textLightTheme};
             text-decoration: none;
           }
           .markdown :global(a):hover {

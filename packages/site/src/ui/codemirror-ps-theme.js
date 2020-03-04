@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {
-  colors,
+  colorsCode,
   colorsTextIcon,
   type
 } from '@pluralsight/ps-design-system-core'
@@ -42,29 +42,29 @@ export default function CodeMirrorPsTheme() {
         color: ${colorsTextIcon.lowOnDark};
       }
       .cm-s-ps-codemirror .cm-string {
-        color: ${colors.codeGreen};
+        color: ${colorsCode.green};
       }
       .cm-s-ps-codemirror .cm-number {
-        color: ${colors.codeOrange};
+        color: ${colorsCode.orange};
       }
       .cm-s-ps-codemirror .cm-atom {
-        color: ${colors.codeRed};
+        color: ${colorsCode.red};
       }
       .cm-s-ps-codemirror .cm-keyword {
-        color: ${colors.codeRed};
+        color: ${colorsCode.red};
       }
       .cm-s-ps-codemirror .cm-variable {
-        color: ${colors.codePurple};
+        color: ${colorsCode.purple};
       }
       .cm-s-ps-codemirror .cm-def {
         font-style: italic;
-        color: ${colors.codeYellow};
+        color: ${colorsCode.yellow};
       }
       .cm-s-ps-codemirror .cm-variable-2 {
-        color: ${colors.codePurple};
+        color: ${colorsCode.purple};
       }
       .cm-s-ps-codemirror .cm-property {
-        color: ${colors.codeBlue};
+        color: ${colorsCode.blue};
       }
       .cm-s-ps-codemirror .cm-operator {
         color: ${colorsTextIcon.lowOnDark};
