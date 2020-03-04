@@ -2,7 +2,7 @@
 
 exports[`Storyshots modal default 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -59,7 +59,7 @@ exports[`Storyshots modal default 1`] = `
         role="region"
       >
         <div
-          data-css-uu1k6e=""
+          data-css-1iiqhom=""
           onKeyUp={[Function]}
         >
           <div
@@ -163,7 +163,7 @@ exports[`Storyshots modal default 1`] = `
 
 exports[`Storyshots modal no click overlay 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -220,7 +220,7 @@ exports[`Storyshots modal no click overlay 1`] = `
         role="region"
       >
         <div
-          data-css-uu1k6e=""
+          data-css-1iiqhom=""
           onKeyUp={[Function]}
         >
           <div
@@ -324,7 +324,7 @@ exports[`Storyshots modal no click overlay 1`] = `
 
 exports[`Storyshots modal no close button 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -381,7 +381,7 @@ exports[`Storyshots modal no close button 1`] = `
         role="region"
       >
         <div
-          data-css-uu1k6e=""
+          data-css-1iiqhom=""
           onKeyUp={[Function]}
         >
           <div
@@ -469,7 +469,7 @@ exports[`Storyshots modal no close button 1`] = `
 
 exports[`Storyshots modal no escape key 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -526,7 +526,7 @@ exports[`Storyshots modal no escape key 1`] = `
         role="region"
       >
         <div
-          data-css-uu1k6e=""
+          data-css-1iiqhom=""
         >
           <div
             data-css-jp50nh=""
@@ -629,7 +629,7 @@ exports[`Storyshots modal no escape key 1`] = `
 
 exports[`Storyshots modal no focus on mount 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -686,7 +686,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
         role="region"
       >
         <div
-          data-css-uu1k6e=""
+          data-css-1iiqhom=""
           onKeyUp={[Function]}
         >
           <div
@@ -790,7 +790,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
 
 exports[`Storyshots modal no focusable child elements 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -847,7 +847,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
         role="region"
       >
         <div
-          data-css-uu1k6e=""
+          data-css-1iiqhom=""
           onKeyUp={[Function]}
         >
           <div
@@ -885,7 +885,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
 
 exports[`Storyshots modal overflow-y 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -942,7 +942,7 @@ exports[`Storyshots modal overflow-y 1`] = `
         role="region"
       >
         <div
-          data-css-uu1k6e=""
+          data-css-1iiqhom=""
           onKeyUp={[Function]}
         >
           <div
@@ -1314,7 +1314,7 @@ exports[`Storyshots modal overflow-y 1`] = `
 
 exports[`Storyshots modal overflow-y with tail 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1371,7 +1371,7 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
         role="region"
       >
         <div
-          data-css-t19rku=""
+          data-css-1gpoaz8=""
           onKeyUp={[Function]}
         >
           <div
@@ -1743,7 +1743,7 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
 
 exports[`Storyshots onClose with onClose 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1753,7 +1753,7 @@ exports[`Storyshots onClose with onClose 1`] = `
     }
   >
     <div
-      data-css-7zh8tk=""
+      data-css-n5eno6=""
       onKeyUp={[Function]}
     >
       <div
@@ -1855,7 +1855,7 @@ exports[`Storyshots onClose with onClose 1`] = `
 
 exports[`Storyshots tailPosition bottomCenter 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1865,7 +1865,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
     }
   >
     <div
-      data-css-1lhicpn=""
+      data-css-13siw4q=""
     >
       <div
         data-css-jp50nh=""
@@ -1950,7 +1950,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
 
 exports[`Storyshots tailPosition bottomLeft 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1960,7 +1960,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
     }
   >
     <div
-      data-css-4zc6pk=""
+      data-css-199727f=""
     >
       <div
         data-css-jp50nh=""
@@ -2045,7 +2045,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
 
 exports[`Storyshots tailPosition bottomRight 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -2055,7 +2055,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
     }
   >
     <div
-      data-css-1lvba78=""
+      data-css-4tsdcv=""
     >
       <div
         data-css-jp50nh=""
@@ -2140,7 +2140,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
 
 exports[`Storyshots tailPosition none 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -2150,7 +2150,7 @@ exports[`Storyshots tailPosition none 1`] = `
     }
   >
     <div
-      data-css-7zh8tk=""
+      data-css-n5eno6=""
     >
       <div
         data-css-jp50nh=""
@@ -2235,7 +2235,7 @@ exports[`Storyshots tailPosition none 1`] = `
 
 exports[`Storyshots tailPosition topCenter 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -2245,7 +2245,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
     }
   >
     <div
-      data-css-9cxj4a=""
+      data-css-1ovub7p=""
     >
       <div
         data-css-jp50nh=""
@@ -2330,7 +2330,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
 
 exports[`Storyshots tailPosition topLeft 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -2340,7 +2340,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
     }
   >
     <div
-      data-css-akp6ny=""
+      data-css-rqe4u=""
     >
       <div
         data-css-jp50nh=""
@@ -2425,7 +2425,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
 
 exports[`Storyshots tailPosition topRight 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -2435,7 +2435,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-155f81q=""
+      data-css-iu6qcy=""
     >
       <div
         data-css-jp50nh=""
