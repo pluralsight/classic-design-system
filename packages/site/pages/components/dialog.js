@@ -335,6 +335,18 @@ export default _ => (
             <span>
               positions a tail pointer (from <code>Dialog.tailPositions</code>)
             </span>
+          ]),
+          PropTypes.row([
+            'returnFocus',
+            'boolean',
+            null,
+            <code>true</code>,
+            <span>
+              Sets the focus to the caller when the modal is closed. Passing
+              false and not manually handling focus is not accessible friendly.
+              Ensure you handle setting focus manually if you pass false to this
+              prop.
+            </span>
           ])
         ]}
       />

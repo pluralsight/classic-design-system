@@ -36,6 +36,7 @@ const Dialog = React.forwardRef((props, ref) => {
   const autofocus = !props.disableFocusOnMount
   const trapped = !!props.modal || !!props.onClose
   const closeOnEscape = isFunction(props.onClose) && !props.disableCloseOnEscape
+  const returnFocus = props.returnFocus
 
   // TODO: combine fns
   function handleKeyUp(evt) {
@@ -51,6 +52,7 @@ const Dialog = React.forwardRef((props, ref) => {
       {...(props.modal && { 'aria-label': undefined })}
       autofocus={autofocus}
       trapped={trapped}
+      returnFocus={returnFocus}
       ref={ref}
     >
       <Theme name={Theme.names.light}>
@@ -92,7 +94,8 @@ Dialog.propTypes = {
   disableFocusOnMount: PropTypes.bool,
   modal: PropTypes.bool,
   onClose: PropTypes.func,
-  tailPosition: PropTypes.oneOf(Object.values(Dialog.tailPositions))
+  tailPosition: PropTypes.oneOf(Object.values(Dialog.tailPositions)),
+  returnFocus: PropTypes.bool
 }
 
 Dialog.defaultProps = {
@@ -100,7 +103,8 @@ Dialog.defaultProps = {
   disableCloseOnEscape: false,
   disableCloseOnOverlayClick: false,
   disableFocusOnMount: false,
-  modal: false
+  modal: false,
+  returnFocus: true
 }
 
 export default Dialog
