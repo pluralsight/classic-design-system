@@ -26,10 +26,7 @@ const styles = {
       themeName === names.light && { background: core.colorsBackgroundLight[2] }
     )
 
-    return compose(
-      base,
-      theme
-    )
+    return compose(base, theme)
   }
 }
 
