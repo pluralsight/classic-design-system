@@ -245,7 +245,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1xu7t6b=""
+                data-css-815a1y=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -301,7 +301,7 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1xu7t6b=""
+                data-css-815a1y=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -446,7 +446,7 @@ exports[`Storyshots appearance medium subtle 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1xu7t6b=""
+            data-css-815a1y=""
             disabled={false}
             onClick={[Function]}
           >
@@ -574,7 +574,7 @@ exports[`Storyshots appearance small subtle 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-uxc8uo=""
+            data-css-1xn4twy=""
             disabled={false}
             onClick={[Function]}
           >
@@ -643,7 +643,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1xu7t6b=""
+            data-css-815a1y=""
             disabled={false}
             onClick={[Function]}
           >
@@ -1809,7 +1809,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1xu7t6b=""
+              data-css-815a1y=""
               disabled={false}
               onClick={[Function]}
             >
@@ -1869,7 +1869,7 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1xu7t6b=""
+              data-css-815a1y=""
               disabled={false}
               onClick={[Function]}
             >
@@ -1964,7 +1964,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1xu7t6b=""
+                data-css-815a1y=""
                 disabled={false}
                 onClick={[Function]}
               >
@@ -2312,7 +2312,7 @@ exports[`Storyshots menu onClicks 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1xu7t6b=""
+            data-css-815a1y=""
             disabled={false}
             onClick={[Function]}
           >

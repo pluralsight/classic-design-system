@@ -2,7 +2,7 @@
 
 exports[`Storyshots actionBar locked visible 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -61,7 +61,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
 
 exports[`Storyshots actionBar long title 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -120,7 +120,7 @@ exports[`Storyshots actionBar long title 1`] = `
 
 exports[`Storyshots actionBar long title with image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -179,7 +179,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
 
 exports[`Storyshots actionBar one action 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -238,7 +238,7 @@ exports[`Storyshots actionBar one action 1`] = `
 
 exports[`Storyshots combo everything 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -423,7 +423,7 @@ exports[`Storyshots combo everything 1`] = `
 
 exports[`Storyshots fullOverlay element 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -452,7 +452,7 @@ exports[`Storyshots fullOverlay element 1`] = `
 
 exports[`Storyshots fullOverlay link 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -481,7 +481,7 @@ exports[`Storyshots fullOverlay link 1`] = `
 
 exports[`Storyshots fullOverlay linked icon 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -510,7 +510,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
 
 exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -539,7 +539,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 
 exports[`Storyshots image link 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -577,7 +577,7 @@ exports[`Storyshots image link 1`] = `
 
 exports[`Storyshots image no image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -615,7 +615,7 @@ exports[`Storyshots image no image 1`] = `
 
 exports[`Storyshots image no image with overlay 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -653,7 +653,7 @@ exports[`Storyshots image no image with overlay 1`] = `
 
 exports[`Storyshots image small image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -691,7 +691,7 @@ exports[`Storyshots image small image 1`] = `
 
 exports[`Storyshots image tall image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -729,7 +729,7 @@ exports[`Storyshots image tall image 1`] = `
 
 exports[`Storyshots image wide image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -767,7 +767,7 @@ exports[`Storyshots image wide image 1`] = `
 
 exports[`Storyshots image with image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -805,7 +805,7 @@ exports[`Storyshots image with image 1`] = `
 
 exports[`Storyshots image with image with overlay 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -843,7 +843,7 @@ exports[`Storyshots image with image with overlay 1`] = `
 
 exports[`Storyshots in a stack no top border on first row 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -963,7 +963,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
 
 exports[`Storyshots in drawer medium 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -977,7 +977,7 @@ exports[`Storyshots in drawer medium 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-1kak7hl=""
+        data-css-k6dw9o=""
         onClick={[Function]}
       >
         <div
@@ -1073,7 +1073,7 @@ exports[`Storyshots in drawer medium 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={true}
@@ -1091,7 +1091,7 @@ exports[`Storyshots in drawer medium 1`] = `
 
 exports[`Storyshots in drawer small 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1105,7 +1105,7 @@ exports[`Storyshots in drawer small 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-1kak7hl=""
+        data-css-k6dw9o=""
         onClick={[Function]}
       >
         <div
@@ -1194,7 +1194,7 @@ exports[`Storyshots in drawer small 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={true}
@@ -1212,7 +1212,7 @@ exports[`Storyshots in drawer small 1`] = `
 
 exports[`Storyshots metadata link 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1258,7 +1258,7 @@ exports[`Storyshots metadata link 1`] = `
 
 exports[`Storyshots metadata long links 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1342,7 +1342,7 @@ exports[`Storyshots metadata long links 1`] = `
 
 exports[`Storyshots metadata long strings 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1402,7 +1402,7 @@ exports[`Storyshots metadata long strings 1`] = `
 
 exports[`Storyshots metadata long strings with image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1462,7 +1462,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
 
 exports[`Storyshots metadata string 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1500,7 +1500,7 @@ exports[`Storyshots metadata string 1`] = `
 
 exports[`Storyshots metadata super long first string 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1560,7 +1560,7 @@ exports[`Storyshots metadata super long first string 1`] = `
 
 exports[`Storyshots metadata two lines 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1629,7 +1629,7 @@ exports[`Storyshots metadata two lines 1`] = `
 
 exports[`Storyshots progress 0 progress 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1665,7 +1665,7 @@ exports[`Storyshots progress 0 progress 1`] = `
 
 exports[`Storyshots progress 66.6667 progress 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1709,7 +1709,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
 
 exports[`Storyshots progress 100 progress 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1753,7 +1753,7 @@ exports[`Storyshots progress 100 progress 1`] = `
 
 exports[`Storyshots progress no image 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1782,7 +1782,7 @@ exports[`Storyshots progress no image 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1827,7 +1827,7 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1865,7 +1865,7 @@ exports[`Storyshots size small 1`] = `
 
 exports[`Storyshots title link 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1902,7 +1902,7 @@ exports[`Storyshots title link 1`] = `
 
 exports[`Storyshots title link truncated 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1949,7 +1949,7 @@ exports[`Storyshots title link truncated 1`] = `
 
 exports[`Storyshots title medium long title 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -1994,7 +1994,7 @@ exports[`Storyshots title medium long title 1`] = `
 
 exports[`Storyshots title small long title 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -2032,7 +2032,7 @@ exports[`Storyshots title small long title 1`] = `
 
 exports[`Storyshots title string 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -2061,7 +2061,7 @@ exports[`Storyshots title string 1`] = `
 
 exports[`Storyshots title string truncated 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={

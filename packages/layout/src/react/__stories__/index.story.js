@@ -201,7 +201,7 @@ asideLayoutStory.add('aside style overrides', _ => (
 const equalColumnLayoutStory = storiesOf('Layout / EqualColumnLayout', module)
 
 const Box = props => (
-  <div style={{ background: core.colors.pink }} {...props}>
+  <div style={{ background: core.colorsPink.base }} {...props}>
     {props.children}
   </div>
 )

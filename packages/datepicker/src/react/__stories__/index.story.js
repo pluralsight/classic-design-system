@@ -18,7 +18,9 @@ function StateDemo(props) {
 
   return (
     <div>
-      <div style={{ color: core.colors.gray03 }}>Selected: {value}</div>
+      <div style={{ color: core.colorsTextIcon.highOnDark }}>
+        Selected: {value}
+      </div>
 
       <DatePicker value={value} onSelect={handleDatePickerSelect} />
     </div>

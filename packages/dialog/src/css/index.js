@@ -1,5 +1,5 @@
 import {
-  colors,
+  colorsWhite,
   colorsTextIcon,
   layout,
   motion,
@@ -22,7 +22,7 @@ export default {
     animation: `${fade || 'psds-dialog__keyframes__fade'} ${
       motion.speedFast
     } ease-out forwards`,
-    background: colors.white,
+    background: colorsWhite,
     borderRadius: '2px',
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
     display: 'inline-flex',
@@ -44,7 +44,7 @@ export default {
   // --w-tail
   '.psds-dialog--w-tail': {
     '&:after': {
-      backgroundColor: colors.white,
+      backgroundColor: colorsWhite,
       content: ' ',
       display: 'block',
       height: tailDimension,

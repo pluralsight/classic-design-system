@@ -9,8 +9,8 @@ import Code from '../code.js'
 import Heading from '../heading.js'
 import P from '../p.js'
 
-const style = { color: core.colors.pink }
-const className = glamor.css({ color: `${core.colors.orange} !important` })
+const style = { color: core.colorsPink.base }
+const className = glamor.css({ color: `${core.colorsBlue.base} !important` })
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>

@@ -2,7 +2,7 @@
 
 exports[`Storyshots FocusManager no focusable children 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -24,7 +24,7 @@ exports[`Storyshots FocusManager no focusable children 1`] = `
 
 exports[`Storyshots FocusManager not trapped 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -65,7 +65,7 @@ exports[`Storyshots FocusManager not trapped 1`] = `
 
 exports[`Storyshots FocusManager trapped 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={

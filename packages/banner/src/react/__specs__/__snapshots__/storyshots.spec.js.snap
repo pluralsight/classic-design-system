@@ -2,7 +2,7 @@
 
 exports[`Storyshots Button blue 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""
@@ -30,7 +30,7 @@ exports[`Storyshots Button blue 1`] = `
 
 exports[`Storyshots Button green 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-q43imj=""
@@ -58,7 +58,7 @@ exports[`Storyshots Button green 1`] = `
 
 exports[`Storyshots Button red 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1bpd8ni=""
@@ -86,7 +86,7 @@ exports[`Storyshots Button red 1`] = `
 
 exports[`Storyshots Button yellow 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-12l9wqa=""
@@ -114,7 +114,7 @@ exports[`Storyshots Button yellow 1`] = `
 
 exports[`Storyshots color blue 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""
@@ -130,7 +130,7 @@ exports[`Storyshots color blue 1`] = `
 
 exports[`Storyshots color green 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-q43imj=""
@@ -146,7 +146,7 @@ exports[`Storyshots color green 1`] = `
 
 exports[`Storyshots color red 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1bpd8ni=""
@@ -162,7 +162,7 @@ exports[`Storyshots color red 1`] = `
 
 exports[`Storyshots color yellow 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-12l9wqa=""
@@ -178,7 +178,7 @@ exports[`Storyshots color yellow 1`] = `
 
 exports[`Storyshots onClick displays X 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""
@@ -212,7 +212,7 @@ exports[`Storyshots onClick displays X 1`] = `
 
 exports[`Storyshots onClick side by side 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""
@@ -327,7 +327,7 @@ exports[`Storyshots onClick side by side 1`] = `
 
 exports[`Storyshots onClick w/ long text 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""
@@ -362,7 +362,7 @@ exports[`Storyshots onClick w/ long text 1`] = `
 
 exports[`Storyshots styling child Link component auto-styled 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""
@@ -386,7 +386,7 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
 
 exports[`Storyshots styling child anchor tag auto-styled 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""
@@ -408,7 +408,7 @@ exports[`Storyshots styling child anchor tag auto-styled 1`] = `
 
 exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-12l9wqa=""
@@ -430,7 +430,7 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
 
 exports[`Storyshots styling className prop 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     className="someClass"
@@ -465,7 +465,7 @@ exports[`Storyshots styling className prop 1`] = `
 
 exports[`Storyshots styling style prop 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-ue58aw=""

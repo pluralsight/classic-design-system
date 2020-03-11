@@ -50,7 +50,7 @@ storiesOf('Checkbox', module)
 
       return (
         <div>
-          <div style={{ color: core.colors.gray03 }}>
+          <div style={{ color: core.colorsTextIcon.highOnDark }}>
             Checked:{' '}
             {colorNames.map(name => `${name}: ${values[name]}`).join('; ')}
           </div>

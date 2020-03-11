@@ -254,7 +254,7 @@ class ReactExample extends React.Component {
           }
           .src {
             padding: ${core.layout.spacingLarge};
-            background: ${core.colors.gray04};
+            background: ${core.colorsBackgroundDark[1]};
           }
         `}</style>
       </div>

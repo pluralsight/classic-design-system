@@ -2,7 +2,7 @@
 
 exports[`Storyshots Checkbox checked & indeterminate 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -21,7 +21,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
       >
         <div
           aria-checked={true}
-          data-css-18wdktl=""
+          data-css-1cfeqew=""
           role="checkbox"
           tabIndex="0"
         >
@@ -64,7 +64,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
 
 exports[`Storyshots Checkbox checked 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -83,7 +83,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       >
         <div
           aria-checked={true}
-          data-css-18wdktl=""
+          data-css-1cfeqew=""
           role="checkbox"
           tabIndex="0"
         >
@@ -123,7 +123,7 @@ exports[`Storyshots Checkbox checked 1`] = `
 
 exports[`Storyshots Checkbox default 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -142,7 +142,7 @@ exports[`Storyshots Checkbox default 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-13tsqsg=""
+          data-css-1lxtjk6=""
           role="checkbox"
           tabIndex="0"
         />
@@ -169,7 +169,7 @@ exports[`Storyshots Checkbox default 1`] = `
 
 exports[`Storyshots Checkbox disabled & errored 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -188,7 +188,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-13tsqsg=""
+          data-css-1lxtjk6=""
           role="checkbox"
           tabIndex="-1"
         />
@@ -215,7 +215,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
 
 exports[`Storyshots Checkbox disabled 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -234,7 +234,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-13tsqsg=""
+          data-css-1lxtjk6=""
           role="checkbox"
           tabIndex="-1"
         />
@@ -261,7 +261,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
 
 exports[`Storyshots Checkbox error 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -281,7 +281,7 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <div
             aria-checked={true}
-            data-css-18wdktl=""
+            data-css-1cfeqew=""
             role="checkbox"
             tabIndex="0"
           >
@@ -325,7 +325,7 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-13tsqsg=""
+            data-css-1lxtjk6=""
             role="checkbox"
             tabIndex="0"
           />
@@ -353,7 +353,7 @@ exports[`Storyshots Checkbox error 1`] = `
 
 exports[`Storyshots Checkbox indeterminate 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -372,7 +372,7 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       >
         <div
           aria-checked={false}
-          data-css-18wdktl=""
+          data-css-1cfeqew=""
           role="checkbox"
           tabIndex="0"
         >
@@ -415,7 +415,7 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
 
 exports[`Storyshots Checkbox state demo 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -428,7 +428,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
       <div
         style={
           Object {
-            "color": "#555555",
+            "color": "rgba(255, 255, 255, 0.95)",
           }
         }
       >
@@ -446,7 +446,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-13tsqsg=""
+            data-css-1lxtjk6=""
             role="checkbox"
             tabIndex="0"
           />
@@ -477,7 +477,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-13tsqsg=""
+            data-css-1lxtjk6=""
             role="checkbox"
             tabIndex="0"
           />
@@ -508,7 +508,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         >
           <div
             aria-checked={false}
-            data-css-13tsqsg=""
+            data-css-1lxtjk6=""
             role="checkbox"
             tabIndex="0"
           />

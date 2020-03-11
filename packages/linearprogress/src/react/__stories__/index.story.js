@@ -27,7 +27,7 @@ class AnimationDemo extends React.Component {
         style={{ display: 'flex', flexDirection: 'column', minWidth: '300px' }}
       >
         <LinearProgress value={this.state.value} />
-        <div style={{ color: core.colors.gray02 }}>
+        <div style={{ color: core.colorsTextIcon.highOnDark }}>
           Value: {this.state.value}
         </div>
       </div>

@@ -18,7 +18,7 @@ const Bar = props => (
       .bar {
         margin: ${core.layout.spacingXSmall} 0;
         height: 5px;
-        background: ${core.colors.gradientHorz};
+        background: ${core.colorsGradient.skillsBackground};
       }
     `}</style>
   </div>
@@ -50,8 +50,8 @@ const Level = props => (
         min-width: 150px;
         padding: ${core.layout.spacingMedium};
         margin: calc(${core.layout.spacingLarge} / 2);
-        background: ${core.colors.bone};
-        color: ${core.colors.gray06};
+        background: ${core.colorsBackgroundLight[1]};
+        color: ${core.colorsTextIcon.highOnLight};
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -104,7 +104,7 @@ const LevelList = props => (
     <style jsx>{`
       .list {
         padding-bottom: ${core.layout.spacingXLarge};
-        border-bottom: 1px solid ${core.colors.gray01};
+        border-bottom: 1px solid ${core.colorsBorder.lowOnLight};
         margin-bottom: ${core.layout.spacingSmall};
       }
     `}</style>

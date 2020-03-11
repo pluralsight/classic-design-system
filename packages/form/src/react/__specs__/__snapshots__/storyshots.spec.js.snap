@@ -2,7 +2,7 @@
 
 exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -82,7 +82,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 
 exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -162,7 +162,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 
 exports[`Storyshots Form.ButtonRow single form element with single button 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -213,7 +213,7 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
 
 exports[`Storyshots Sample Form null children 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -419,7 +419,7 @@ exports[`Storyshots Sample Form null children 1`] = `
 
 exports[`Storyshots Sample Form sample 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     style={
@@ -679,7 +679,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1lu7sfl=""
             >
               <a
-                data-css-118jh52=""
+                data-css-1aye8gw=""
                 href="http://google.com"
               >
                 <span
@@ -700,7 +700,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1lu7sfl=""
             >
               <a
-                data-css-118jh52=""
+                data-css-1aye8gw=""
                 href="http://google.com"
               >
                 <span
@@ -721,7 +721,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1lu7sfl=""
             >
               <a
-                data-css-118jh52=""
+                data-css-1aye8gw=""
                 href="http://google.com"
               >
                 <span
@@ -854,7 +854,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-18wdktl=""
+                data-css-1cfeqew=""
                 role="checkbox"
                 tabIndex="0"
               >
@@ -932,7 +932,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   >
                     <div
                       aria-checked={false}
-                      data-css-1e1erju=""
+                      data-css-1wbxh41=""
                       onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
@@ -970,7 +970,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   >
                     <div
                       aria-checked={false}
-                      data-css-1e1erju=""
+                      data-css-1wbxh41=""
                       onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
@@ -1024,7 +1024,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1lu7sfl=""
             >
               <div
-                data-css-rao1gl=""
+                data-css-19bj9q0=""
               >
                 <div
                   data-css-1o90whm=""
