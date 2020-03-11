@@ -117,18 +117,18 @@
   --psColorsBorderLowOnDark: rgba(255, 255, 255, 0.15);
   --psColorsBorderLowOnLight: rgba(0, 0, 0, 0.15);
 
-  --psColorsBackgroundDark1: #0f0f0f;
-  --psColorsBackgroundDark2: #1b1b1b;
-  --psColorsBackgroundDark3: #232323;
+  --psColorsBackgroundDark1: #0d0f12;
+  --psColorsBackgroundDark2: #181c20;
+  --psColorsBackgroundDark3: #1e2429;
 
-  --psColorsBackgroundLight1: #f2f2f2;
-  --psColorsBackgroundLight2: #f8f8f8;
+  --psColorsBackgroundLight1: #f0f3f5;
+  --psColorsBackgroundLight2: #f7f9fa;
   --psColorsBackgroundLight3: #ffffff;
 
   --psColorsBackgroundUtilityBase: #b0b0b0;
-  --psColorsBackgroundUtility25: rgba(176, 176, 176, 0.25);
-  --psColorsBackgroundUtility30: rgba(176, 176, 176, 0.3);
-  --psColorsBackgroundUtility30: rgba(176, 176, 176, 0.4);
+  --psColorsBackgroundUtility25: rgba(138, 153, 168, 0.25);
+  --psColorsBackgroundUtility30: rgba(138, 153, 168, 0.3);
+  --psColorsBackgroundUtility40: rgba(138, 153, 168, 0.4);
 
   --psColorsGradientSkillsBackground: linear-gradient(
     90deg,
