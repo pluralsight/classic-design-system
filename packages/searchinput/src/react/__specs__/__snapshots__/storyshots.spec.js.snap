@@ -11,7 +11,7 @@ exports[`Storyshots SearchInput default 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1ar6lh1=""
+        data-css-1c5qy71=""
       >
         <input
           data-css-egljo0=""
@@ -56,7 +56,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1ar6lh1=""
+        data-css-1c5qy71=""
       >
         <input
           data-css-egljo0=""
@@ -116,7 +116,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       data-css-in6gqi=""
     >
       <div
-        data-css-g4f2qk=""
+        data-css-1kh5e1a=""
       >
         <input
           data-css-egljo0=""
@@ -216,7 +216,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-g4f2qk=""
+        data-css-1kh5e1a=""
       >
         <input
           data-css-egljo0=""

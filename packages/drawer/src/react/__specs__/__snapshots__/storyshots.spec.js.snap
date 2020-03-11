@@ -25,7 +25,7 @@ exports[`Storyshots drawer controlled 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-iaytli=""
+        data-css-157tm1l=""
         onClick={[Function]}
       >
         <div
@@ -74,7 +74,7 @@ exports[`Storyshots drawer controlled 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={false}
@@ -112,7 +112,7 @@ exports[`Storyshots drawer default 1`] = `
     data-css-knxp45=""
   >
     <div
-      data-css-1kak7hl=""
+      data-css-k6dw9o=""
       onClick={[Function]}
     >
       <div
@@ -161,7 +161,7 @@ exports[`Storyshots drawer default 1`] = `
       </div>
     </div>
     <div
-      data-css-gm8biz=""
+      data-css-v1c8as=""
     >
       <div
         aria-hidden={true}
@@ -199,7 +199,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-1kak7hl=""
+        data-css-k6dw9o=""
         onClick={[Function]}
       >
         <div
@@ -248,7 +248,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={true}
@@ -286,7 +286,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
     data-css-knxp45=""
   >
     <div
-      data-css-1kak7hl=""
+      data-css-k6dw9o=""
       onClick={[Function]}
     >
       <div
@@ -432,7 +432,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
       </div>
     </div>
     <div
-      data-css-gm8biz=""
+      data-css-v1c8as=""
     >
       <div
         aria-hidden={true}
@@ -470,7 +470,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-1kak7hl=""
+        data-css-k6dw9o=""
         onClick={[Function]}
       >
         <div
@@ -519,7 +519,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={true}
@@ -545,7 +545,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-1kak7hl=""
+        data-css-k6dw9o=""
         onClick={[Function]}
       >
         <div
@@ -594,7 +594,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={true}
@@ -620,7 +620,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-1kak7hl=""
+        data-css-k6dw9o=""
         onClick={[Function]}
       >
         <div
@@ -669,7 +669,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={true}
@@ -709,7 +709,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
         data-css-knxp45=""
       >
         <div
-          data-css-1kak7hl=""
+          data-css-k6dw9o=""
           onClick={[Function]}
         >
           <div
@@ -758,7 +758,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           </div>
         </div>
         <div
-          data-css-gm8biz=""
+          data-css-v1c8as=""
         >
           <div
             aria-hidden={true}
@@ -786,7 +786,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
         data-css-knxp45=""
       >
         <div
-          data-css-1kak7hl=""
+          data-css-k6dw9o=""
           onClick={[Function]}
         >
           <div
@@ -835,7 +835,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           </div>
         </div>
         <div
-          data-css-gm8biz=""
+          data-css-v1c8as=""
         >
           <div
             aria-hidden={true}
@@ -863,7 +863,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
         data-css-knxp45=""
       >
         <div
-          data-css-1kak7hl=""
+          data-css-k6dw9o=""
           onClick={[Function]}
         >
           <div
@@ -912,7 +912,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
           </div>
         </div>
         <div
-          data-css-gm8biz=""
+          data-css-v1c8as=""
         >
           <div
             aria-hidden={true}
@@ -951,7 +951,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
     data-css-knxp45=""
   >
     <div
-      data-css-1kak7hl=""
+      data-css-k6dw9o=""
       onClick={[Function]}
     >
       <div
@@ -1000,7 +1000,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
       </div>
     </div>
     <div
-      data-css-gm8biz=""
+      data-css-v1c8as=""
     >
       <div
         aria-hidden={true}
@@ -1038,7 +1038,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
       data-css-knxp45=""
     >
       <div
-        data-css-1kak7hl=""
+        data-css-k6dw9o=""
         onClick={[Function]}
       >
         <div
@@ -1088,7 +1088,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
         </div>
       </div>
       <div
-        data-css-gm8biz=""
+        data-css-v1c8as=""
       >
         <div
           aria-hidden={true}
@@ -1126,7 +1126,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
     data-css-knxp45=""
   >
     <div
-      data-css-iaytli=""
+      data-css-157tm1l=""
       onClick={[Function]}
     >
       <div
@@ -1175,7 +1175,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
       </div>
     </div>
     <div
-      data-css-gm8biz=""
+      data-css-v1c8as=""
     >
       <div
         aria-hidden={false}
@@ -1212,7 +1212,7 @@ exports[`Storyshots drawer with row component 1`] = `
     data-css-knxp45=""
   >
     <div
-      data-css-1kak7hl=""
+      data-css-k6dw9o=""
       onClick={[Function]}
     >
       <div
@@ -1318,7 +1318,7 @@ exports[`Storyshots drawer with row component 1`] = `
       </div>
     </div>
     <div
-      data-css-gm8biz=""
+      data-css-v1c8as=""
     >
       <div
         aria-hidden={true}

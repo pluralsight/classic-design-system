@@ -7,7 +7,7 @@ import { withTheme } from '@pluralsight/ps-design-system-theme'
 
 const css = {
   '.focusable': {
-    background: core.colors.bone,
+    background: core.colorsBackgroundLight[1],
     borderRadius: '2px',
     cursor: 'pointer',
     fontSize: core.type.fontSizeSmall,
@@ -20,9 +20,9 @@ const css = {
     width: '100%'
   },
   '.focusable--theme-light': {
-    background: core.colors.gray02,
-    borderColor: core.colors.gray02,
-    color: core.colors.white
+    background: core.colorsBackgroundLight[1],
+    borderColor: core.colorsBorder.highOnLight,
+    color: core.colorsWhite
   },
   '.focusable--shape-pill': {
     borderRadius: '1000px'

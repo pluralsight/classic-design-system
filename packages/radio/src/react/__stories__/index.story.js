@@ -55,7 +55,9 @@ storiesOf('Radio', module)
 
       return (
         <div>
-          <div style={{ color: core.colors.gray03 }}>Selected: {value}</div>
+          <div style={{ color: core.colorsTextIcon.highOnDark }}>
+            Selected: {value}
+          </div>
           <Radio.Group value={value} onSelect={handleSelect}>
             <Radio.Button value="red" label="Red" />
             <Radio.Button value="green" label="Green" />

@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.0.1...@pluralsight/ps-design-system-core@6.0.2) (2020-03-11)
+
+
+### Bug Fixes
+
+* **core:** adjust css tokens for tonal neutrals ([2661a42](https://github.com/pluralsight/design-system/commit/2661a42379248f55f7ae9a2727f2771c709be13b))
+
+
+
+
+
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.3...@pluralsight/ps-design-system-core@6.0.0) (2020-03-11)
+
+
+### Code Refactoring
+
+* **core:** remove legacy color css token ([e45c7fb](https://github.com/pluralsight/design-system/commit/e45c7fb7a4ac76d16e372ec3ceade142be1577c3))
+* **core:** remove legacy color tokens ([4529326](https://github.com/pluralsight/design-system/commit/45293263d945e00461792e789829c8a605ee258f))
+* **core:** replace with bleutrals ([587c896](https://github.com/pluralsight/design-system/commit/587c896b9cb54521f14f21f822557d98e0e35f96))
+
+
+### BREAKING CHANGES
+
+* **core:** remove legacy color css tokens
+* **core:** remove legacy color tokens
+* **core:** tonal values in dark and light bg and utility colors
+
+
+
+
+
 ## [5.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.2...@pluralsight/ps-design-system-core@5.5.3) (2020-02-18)
 
 

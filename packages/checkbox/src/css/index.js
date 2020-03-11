@@ -1,10 +1,10 @@
 import {
-  colors,
   colorsBackgroundDark,
   colorsBackgroundLight,
   colorsBlue,
   colorsStatus,
   colorsTextIcon,
+  colorsWhite,
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
@@ -31,7 +31,7 @@ export default {
     borderRadius: '2px',
     border: `2px solid ${colorsTextIcon.lowOnDark}`,
     background: colorsBackgroundDark[1],
-    color: colors.white
+    color: colorsWhite
   },
   [`.psds-checkbox__square.psds-theme--${themeNames.light}`]: {
     background: colorsBackgroundLight[3],

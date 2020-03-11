@@ -36,7 +36,9 @@ storiesOf('animation', module).add('animates to new values', _ => {
       <div>
         <CircularProgress value={value} />
 
-        <div style={{ color: core.colors.gray02 }}>Value: {value}</div>
+        <div style={{ color: core.colorsTextIcon.highOnDark }}>
+          Value: {value}
+        </div>
       </div>
     )
   }

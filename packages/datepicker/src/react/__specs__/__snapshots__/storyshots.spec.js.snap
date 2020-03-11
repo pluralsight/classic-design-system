@@ -2,7 +2,7 @@
 
 exports[`Storyshots appearance default 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -106,7 +106,7 @@ exports[`Storyshots appearance default 1`] = `
 
 exports[`Storyshots appearance default w/ error 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -234,7 +234,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
 
 exports[`Storyshots appearance subtle 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -247,7 +247,7 @@ exports[`Storyshots appearance subtle 1`] = `
         data-css-ctre2o=""
       >
         <div
-          data-css-mukvh8=""
+          data-css-sl686u=""
         >
           <input
             data-css-18at7l7=""
@@ -338,7 +338,7 @@ exports[`Storyshots appearance subtle 1`] = `
 
 exports[`Storyshots appearance subtle w/ error 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -356,7 +356,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-in6gqi=""
       >
         <div
-          data-css-mukvh8=""
+          data-css-sl686u=""
         >
           <input
             data-css-18at7l7=""
@@ -466,7 +466,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
 
 exports[`Storyshots disabled compare 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -685,7 +685,7 @@ exports[`Storyshots disabled compare 1`] = `
 
 exports[`Storyshots labels compare w/ textinput 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -823,7 +823,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
 
 exports[`Storyshots labels label 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -932,7 +932,7 @@ exports[`Storyshots labels label 1`] = `
 
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -1046,7 +1046,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
 
 exports[`Storyshots labels none 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -1151,7 +1151,7 @@ exports[`Storyshots labels none 1`] = `
 
 exports[`Storyshots labels subLabel 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -1260,7 +1260,7 @@ exports[`Storyshots labels subLabel 1`] = `
 
 exports[`Storyshots layouts full width 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -1519,7 +1519,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-ctre2o=""
         >
           <div
-            data-css-mukvh8=""
+            data-css-sl686u=""
           >
             <input
               data-css-18at7l7=""
@@ -1623,7 +1623,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-in6gqi=""
         >
           <div
-            data-css-mukvh8=""
+            data-css-sl686u=""
           >
             <input
               data-css-18at7l7=""
@@ -1734,7 +1734,7 @@ exports[`Storyshots layouts full width 1`] = `
 
 exports[`Storyshots layouts right-aligned 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -1762,7 +1762,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-ctre2o=""
           >
             <div
-              data-css-mukvh8=""
+              data-css-sl686u=""
             >
               <input
                 data-css-18at7l7=""
@@ -1863,7 +1863,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
 
 exports[`Storyshots value single slash-separated value 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -1968,7 +1968,7 @@ exports[`Storyshots value single slash-separated value 1`] = `
 
 exports[`Storyshots value updated value, no initial 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -1977,7 +1977,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
       <div
         style={
           Object {
-            "color": "#555555",
+            "color": "rgba(255, 255, 255, 0.95)",
           }
         }
       >
@@ -2084,7 +2084,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
 
 exports[`Storyshots value updated value, w/ initial 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -2093,7 +2093,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
       <div
         style={
           Object {
-            "color": "#555555",
+            "color": "rgba(255, 255, 255, 0.95)",
           }
         }
       >
@@ -2202,7 +2202,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
 
 exports[`Storyshots whitelist name 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""
@@ -2307,7 +2307,7 @@ exports[`Storyshots whitelist name 1`] = `
 
 exports[`Storyshots whitelist onChange 1`] = `
 <div
-  data-css-1so76ss=""
+  data-css-12kxz7c=""
 >
   <div
     data-css-1r7zk4a=""

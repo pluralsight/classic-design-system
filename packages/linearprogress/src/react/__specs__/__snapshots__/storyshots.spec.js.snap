@@ -20,7 +20,7 @@ exports[`Storyshots LinearProgress animates to new values 1`] = `
   <div
     style={
       Object {
-        "color": "#aaaaaa",
+        "color": "rgba(255, 255, 255, 0.95)",
       }
     }
   >
