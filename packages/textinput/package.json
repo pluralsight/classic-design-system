@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textinput",
-  "version": "6.1.10",
+  "version": "7.0.0",
   "description": "Design system components for text input",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,11 +20,11 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^17.2.2",
-    "@pluralsight/ps-design-system-core": "^5.5.3",
+    "@pluralsight/ps-design-system-button": "^18.0.0",
+    "@pluralsight/ps-design-system-core": "^6.0.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.16",
-    "@pluralsight/ps-design-system-halo": "^6.1.4",
-    "@pluralsight/ps-design-system-icon": "^17.1.6",
+    "@pluralsight/ps-design-system-halo": "^7.0.0",
+    "@pluralsight/ps-design-system-icon": "^18.0.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.12",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^5.0.18",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.0",
     "@pluralsight/ps-design-system-theme": "^4.0.9"
   }
 }
