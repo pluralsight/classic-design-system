@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.0.1...@pluralsight/ps-design-system-core@6.0.2) (2020-03-11)
+
+
+### Bug Fixes
+
+* **core:** adjust css tokens for tonal neutrals ([2661a42](https://github.com/pluralsight/design-system/commit/2661a42379248f55f7ae9a2727f2771c709be13b))
+
+
+
+
+
 # [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@5.5.3...@pluralsight/ps-design-system-core@6.0.0) (2020-03-11)
 
 
