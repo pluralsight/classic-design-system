@@ -14,14 +14,16 @@ import {
   SectionHeading
 } from '../../src/ui/index.js'
 
-const formatVarName = name => 'psColors' + name[0].toUpperCase() + name.slice(1)
+const formatVarName = name =>
+  'psColorsCode' + name[0].toUpperCase() + name.slice(1)
+
 const ColorDesc = props => (
   <div className="color">
     <div
       className="swatch"
-      style={{ background: core.colors[props.varName] }}
+      style={{ background: core.colorsCode[props.varName] }}
     />
-    <div className="varName" style={{ color: core.colors[props.varName] }}>
+    <div className="varName" style={{ color: core.colorsCode[props.varName] }}>
       {formatVarName(props.varName)}
     </div>
     <div className="divider">-</div>
@@ -30,7 +32,7 @@ const ColorDesc = props => (
       .color {
         display: flex;
         align-items: center;
-        color: ${core.colors.gray02};
+        color: ${core.colorsTextIcon.lowOnDark};
       }
       .swatch {
         height: 16px;
@@ -56,38 +58,38 @@ ColorDesc.propTypes = {
 
 const CodeColors = _ => (
   <div className="colors">
-    <ColorDesc varName="bone">
+    <ColorDesc varName="white">
       default code, body text, primary content
     </ColorDesc>
-    <ColorDesc varName="gray02">comments, invisibles</ColorDesc>
-    <ColorDesc varName="codeRed">
+    <ColorDesc varName="gray">comments, invisibles</ColorDesc>
+    <ColorDesc varName="red">
       keywords, storage, selector, markup italic, diff changed
     </ColorDesc>
-    <ColorDesc varName="codeOrange">
+    <ColorDesc varName="orange">
       integers, boolean, constants, XML attributes, markup link url
     </ColorDesc>
-    <ColorDesc varName="codeYellow">
+    <ColorDesc varName="yellow">
       classes, markup bold, search text background
     </ColorDesc>
-    <ColorDesc varName="codeGreen">
+    <ColorDesc varName="green">
       strings, inherited class, markup code, diff inserted
     </ColorDesc>
-    <ColorDesc varName="codeTurquoise">
+    <ColorDesc varName="turquoise">
       support, regular expressions, escape characters, markup quotes
     </ColorDesc>
-    <ColorDesc varName="codeBlue">
+    <ColorDesc varName="blue">
       functions, methods, attribute ids, headings
     </ColorDesc>
-    <ColorDesc varName="codePurple">
+    <ColorDesc varName="purple">
       variables, XML tags, markup link text, markup lists, diff deleted
     </ColorDesc>
-    <ColorDesc varName="codeSand">
+    <ColorDesc varName="sand">
       {`deprecated, opening/closing embedded language tags e.g. <?php?>`}
     </ColorDesc>
     <style jsx>{`
       .colors {
         padding: ${core.layout.spacingLarge} ${core.layout.spacingMedium};
-        background: ${core.colors.gray05};
+        background: ${core.colorsBackgroundDark[2]};
         font-weight: ${core.type.fontWeightBook};
         font-size: ${core.type.fontSizeSmall};
       }
