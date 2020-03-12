@@ -176,14 +176,14 @@ export const colorsStatus = {
 }
 
 export const colorsCode = {
-  white: '#f2f2f2',
-  gray: '#aaaaaa',
-  red: '#f26d6d',
-  orange: '#ff9466',
-  yellow: '#ffca80',
-  green: '#b8cc7a',
-  turquoise: '#abd9c6',
-  blue: '#8ac7e6',
-  purple: '#e695bd',
-  sand: '#d99077'
+  white: '#F2F2F2',
+  gray: '#AAAAAA',
+  red: '#F26D6D',
+  orange: '#FF9466',
+  yellow: '#FFCA80',
+  green: '#B8CC7A',
+  turquoise: '#ABD9C6',
+  blue: '#8AC7E6',
+  purple: '#E695BD',
+  sand: '#D99077'
 }
