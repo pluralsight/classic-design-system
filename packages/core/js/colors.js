@@ -176,6 +176,8 @@ export const colorsStatus = {
 }
 
 export const colorsCode = {
+  white: '#f2f2f2',
+  gray: '#aaaaaa',
   red: '#f26d6d',
   orange: '#ff9466',
   yellow: '#ffca80',
