@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as PropTypes from 'prop-types'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Tab from '../index.js'
+import Tab from '../../index.js'
 
 function randomIntBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min)

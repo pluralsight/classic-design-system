@@ -28,8 +28,7 @@
     "publish:beta": "npm run publish -- --npm-tag=beta",
     "site": "cd packages/site && npm start",
     "start": "npm run site",
-    "test": "jest",
-    "typecheck-dts": "tsc --noemit"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -116,7 +115,6 @@
     "raf": "^3.4.1",
     "react-test-renderer": "^16.11.0",
     "require-context.macro": "^1.2.2",
-    "typescript": "^3.8.3",
     "webpack": "^4.41.2",
     "yargs": "^14.2.0"
   }

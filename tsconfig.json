@@ -1,9 +1,0 @@
-{   
-    "compilerOptions": {
-        "strict": true,
-        "jsx": "react"
-    },
-    "include": [
-        "./packages/tab/src/react/__specs__/__dts__/tab.typecheck.tsx"
-    ]
-}

@@ -1,8 +1,8 @@
 import { FunctionComponent, ReactChild, Component, MouseEvent } from 'react'
 
 interface Styling {
-    css?: Record<string, string>
-    style?: Record<string, string>
+    css?: Record<string, string | number>
+    style?: Record<string, string | number>
 }
 
 interface ListProps {
@@ -16,14 +16,13 @@ interface ListItemProps {
     active?: boolean
     children?: string
     className?: string
+    onClick?: (i: number, event: MouseEvent) => void
 }
 interface ListItemAnchorProps {
     href: string
-    onClick?: (event: MouseEvent) => void
     innerRef?: (element: HTMLAnchorElement | null) => void
 }
 interface ListItemButtonProps {
-    onClick: (event: MouseEvent) => void
     innerRef?: (element: HTMLButtonElement | null) => void
 }
 
