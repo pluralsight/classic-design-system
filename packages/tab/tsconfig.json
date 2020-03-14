@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
-        "allowJs": true,
-        "checkJs": true,
         "jsx": "react",
-        "strictNullChecks": true
+        "strict": true
     },
     "include": [
-        "./src/react/__stories__/index.story.js"
+        "**/*.tsx"
     ]
 }

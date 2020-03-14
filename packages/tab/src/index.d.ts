@@ -1,13 +1,12 @@
-import { FunctionComponent, ReactChild, Component, MouseEvent } from 'react'
+import { FunctionComponent, MouseEvent } from 'react'
 
 interface Styling {
     css?: Record<string, string | number>
     style?: Record<string, string | number>
-}
-
-interface ListProps {
     className?: string
 }
+
+interface ListProps {}  //leaving here so users can augment the interface with additional props if needed
 
 type List = FunctionComponent<ListProps & Styling>
 
@@ -15,7 +14,6 @@ interface ListItemProps {
     id: string | number
     active?: boolean
     children?: string
-    className?: string
     onClick?: (i: number, event: MouseEvent) => void
 }
 interface ListItemAnchorProps {
@@ -29,7 +27,6 @@ interface ListItemButtonProps {
 type ListItem = FunctionComponent<ListItemProps & (ListItemAnchorProps | ListItemButtonProps) & Styling>
 
 interface PanelProps {
-    className?: string
     labelledBy: string | number
 }
 
