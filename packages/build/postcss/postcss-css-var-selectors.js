@@ -31,6 +31,9 @@ function createVarSelectors(decl, options) {
 
   return foundDecl.props.map((p, i, newProps) => {
     const selector = '.' + prop + (newProps.length > 1 ? `--${p}` : '')
-    return postcss.decl({ prop: selector, value: `{ ${p}: ${value} }` })
+    const decl = postcss.decl({ prop: p, value })
+    const rule = postcss.rule({ selector })
+    rule.append(decl)
+    return rule
   })
 }
