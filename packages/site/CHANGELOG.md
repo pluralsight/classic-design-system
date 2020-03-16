@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [18.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.1.0...@pluralsight/ps-design-system-site@18.2.0) (2020-03-16)
+
+
+### Bug Fixes
+
+* **site:** use latest code color vars in code page ([6ede121](https://github.com/pluralsight/design-system/commit/6ede12161c4b234ed69a736db7407be259d05318))
+
+
+### Features
+
+* **site:** add code colors to colors page ([218d888](https://github.com/pluralsight/design-system/commit/218d8888587de40a6f74ec95f90d22838b9dc427))
+
+
+
+
+
 # [18.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.0.2...@pluralsight/ps-design-system-site@18.1.0) (2020-03-11)
 
 
