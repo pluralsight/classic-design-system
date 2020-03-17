@@ -2100,7 +2100,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2124,7 +2124,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2148,7 +2148,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2172,7 +2172,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2196,7 +2196,7 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2235,7 +2235,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2283,7 +2283,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2307,7 +2307,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2331,7 +2331,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2355,7 +2355,7 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2394,7 +2394,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2418,7 +2418,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2442,7 +2442,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2466,7 +2466,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2490,7 +2490,7 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2529,7 +2529,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2553,7 +2553,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2601,7 +2601,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2625,7 +2625,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2649,7 +2649,7 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2688,7 +2688,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2712,7 +2712,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2736,7 +2736,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2760,7 +2760,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2784,7 +2784,7 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2823,7 +2823,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2847,7 +2847,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2871,7 +2871,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2919,7 +2919,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2943,7 +2943,7 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -2982,7 +2982,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3006,7 +3006,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3030,7 +3030,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3054,7 +3054,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3078,7 +3078,7 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3117,7 +3117,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3141,7 +3141,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3165,7 +3165,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3189,7 +3189,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3237,7 +3237,7 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3276,7 +3276,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3300,7 +3300,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3324,7 +3324,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3348,7 +3348,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3372,7 +3372,7 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3411,7 +3411,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3435,7 +3435,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3459,7 +3459,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3483,7 +3483,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3507,7 +3507,7 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3570,7 +3570,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3594,7 +3594,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3618,7 +3618,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3642,7 +3642,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3666,7 +3666,7 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-k4u9v3=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3705,7 +3705,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3729,7 +3729,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3753,7 +3753,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3777,7 +3777,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3801,7 +3801,7 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3839,7 +3839,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
 >
   <div>
     <span
-      aria-label="Rate 1 Star"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3863,7 +3863,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 2 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3887,7 +3887,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 3 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3911,7 +3911,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 4 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
@@ -3935,7 +3935,7 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
       </div>
     </span>
     <span
-      aria-label="Rate 5 Stars"
+      aria-hidden={true}
       data-css-11f15fs=""
       onBlur={[Function]}
       onClick={[Function]}
