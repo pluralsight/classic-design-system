@@ -22,7 +22,7 @@ const Divider = _ => (
       .divider {
         height: 1px;
         margin-top: ${core.layout.spacingXLarge};
-        border-bottom: 1px solid ${core.colors.gray01};
+        border-bottom: 1px solid ${core.colorsBorder.lowOnDark};
       }
     `}</style>
   </div>
@@ -60,7 +60,7 @@ const PrincipleHeader = props => (
         display: block;
         width: 100%;
         height: 4px;
-        background: ${core.colors.gradientHorz};
+        background: ${core.colorsGradient.skillsBackground};
       }
     `}</style>
   </header>
@@ -85,12 +85,12 @@ const QuoteBox = props => (
     <style jsx>{`
       .quote {
         position: relative;
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         padding: ${core.layout.spacingLarge} ${core.layout.spacingXLarge};
         border-radius: 12px;
         line-height: ${core.type.lineHeightStandard};
         font-weight: ${core.type.fontWeightMedium};
-        color: ${core.colors.black};
+        color: ${core.colorsTextIcon.highOnLight};
       }
       .openquote,
       .closequote {
@@ -247,12 +247,12 @@ export default _ => (
         </P>
         <QuoteBox>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Text.List style={{ color: core.colors.black }}>
+            <Text.List style={{ color: core.colorsTextIcon.highOnLight }}>
               <Text.List.Item>Learn now</Text.List.Item>
               <Text.List.Item>Get started</Text.List.Item>
               <Text.List.Item>Get your IQ</Text.List.Item>
             </Text.List>
-            <Text.List style={{ color: core.colors.black }}>
+            <Text.List style={{ color: core.colorsTextIcon.highOnLight }}>
               <Text.List.Item>Watch a course</Text.List.Item>
               <Text.List.Item>Start a path</Text.List.Item>
               <Text.List.Item>Tell us more</Text.List.Item>
@@ -358,7 +358,7 @@ export default _ => (
           start at the hour. Use noon or midnight vs. 12 a.m. and 12 p.m.
         </P>
         <QuoteBox>
-          <Text.List style={{ color: core.colors.black }}>
+          <Text.List style={{ color: core.colorsTextIcon.highOnLight }}>
             <Text.List.Item>10:30 a.m.–1 p.m.</Text.List.Item>
             <Text.List.Item>Noon–3 p.m.</Text.List.Item>
             <Text.List.Item>1–5:30 p.m.</Text.List.Item>
@@ -371,7 +371,7 @@ export default _ => (
           four digit year.
         </P>
         <QuoteBox>
-          <Text.List style={{ color: core.colors.black }}>
+          <Text.List style={{ color: core.colorsTextIcon.highOnLight }}>
             <Text.List.Item>On May 15, Microsoft announced…</Text.List.Item>
             <Text.List.Item>Jan 23, 2017</Text.List.Item>
             <Text.List.Item>Jan 2017</Text.List.Item>
@@ -390,7 +390,7 @@ export default _ => (
           standard time format, no leading zeros.
         </P>
         <QuoteBox>
-          <Text.List style={{ color: core.colors.black }}>
+          <Text.List style={{ color: core.colorsTextIcon.highOnLight }}>
             <Text.List.Item>23h 8m</Text.List.Item>
             <Text.List.Item>23h </Text.List.Item>
             <Text.List.Item>About 1 hour</Text.List.Item>
@@ -405,7 +405,7 @@ export default _ => (
           acceptable. Do not use “By” in the beginning of an author(s) string.
         </P>
         <QuoteBox>
-          <Text.List style={{ color: core.colors.black }}>
+          <Text.List style={{ color: core.colorsTextIcon.highOnLight }}>
             <Text.List.Item>Gary Eimerman</Text.List.Item>
             <Text.List.Item>Gary Eimerman, Troy Hunt </Text.List.Item>
             <Text.List.Item>Eimerman, Hunt</Text.List.Item>

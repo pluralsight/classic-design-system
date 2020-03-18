@@ -61,7 +61,7 @@ class Boxes extends React.Component {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: ${core.colors.bone};
+            background: ${core.colorsBackgroundLight[2]};
             border-radius: 12px;
           }
           .button {

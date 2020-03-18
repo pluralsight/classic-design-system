@@ -75,8 +75,8 @@ class InAppExample extends React.Component {
             margin: ${core.layout.spacingMedium} 0 0 0;
             padding: ${core.layout.spacingLarge};
             font-size: ${core.type.fontSizeMedium};
-            color: ${core.colors.gray04};
-            background: ${core.colors.bone};
+            color: ${core.colorsTextIcon.lowOnLight};
+            background: ${core.colorsBackgroundLight[2]};
             border-radius: 12px;
           }
           .radios {

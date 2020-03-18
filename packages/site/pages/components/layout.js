@@ -33,7 +33,7 @@ const BlueBox = props => (
         align-items: center;
         height: ${core.layout.spacingLarge};
         background: #8fc4e9;
-        color: ${core.colors.white};
+        color: ${core.colorsTextIcon.highOnDark};
         font-weight: ${core.type.fontWeightBold};
       }
     `}</style>
@@ -66,8 +66,8 @@ const PageHeadingLayoutOutput = _ => (
     <style jsx>{`
       .page {
         position: relative;
-        background: ${core.colors.gray06};
-        color: ${core.colors.white};
+        background: ${core.colorsBackgroundDark[2]};
+        color: ${core.colorsTextIcon.highOnDark};
       }
       .body {
         height: 134px;
@@ -149,8 +149,8 @@ const PageWidthLayoutOutput = _ => (
     </Theme>
     <style jsx>{`
       .page {
-        background: ${core.colors.gray06};
-        color: ${core.colors.white};
+        background: ${core.colorsBackgroundDark[2]};
+        color: ${core.colorsTextIcon.highOnDark};
       }
       .fullBleed {
         background: rebeccapurple;
@@ -158,7 +158,7 @@ const PageWidthLayoutOutput = _ => (
       .body {
         position: relative;
         margin: 0 ${core.layout.spacingXXLarge};
-        background: ${core.colors.gray06};
+        background: ${core.colorsBackgroundDark[2]};
       }
       .divider {
         border-top: 1px dashed #ff00ce;

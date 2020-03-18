@@ -28,8 +28,8 @@ const PinkBox = props => (
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px dashed ${core.colors.pink};
-        color: ${core.colors.pink};
+        border: 2px dashed ${core.colorsPink[6]};
+        color: ${core.colorsPink[6]};
         font-size: 16px;
         font-family: ${core.type.fontFamilyCode};
         height: 100px;
@@ -133,8 +133,8 @@ class InAppExample extends React.Component {
           .example {
             padding: ${core.layout.spacingLarge};
             background: ${props.themeName === Theme.names.light
-              ? core.colors.bone
-              : core.colors.gray06};
+              ? core.colorsBackgroundLight[2]
+              : core.colorsBackgroundDark[2]};
           }
         `}</style>
       </div>

@@ -56,8 +56,8 @@ const Speeds = _ => (
         overflow: hidden;
         min-width: 150px;
         height: 150px;
-        background: ${core.colors.bone};
-        color: ${core.colors.gray03};
+        background: ${core.colorsBackgroundLight[2]};
+        color: ${core.colorsTextIcon.lowOnLight};
         border-radius: 12px;
       }
       .icon {
@@ -75,7 +75,7 @@ const Speeds = _ => (
       .varName {
         margin-top: ${core.layout.spacingSmall};
         font-size: ${core.type.fontSizeXSmall};
-        color: ${core.colors.pink};
+        color: ${core.colorsPink[6]};
       }
     `}</style>
   </div>
@@ -92,7 +92,7 @@ const Relative = _ => (
     <style jsx>{`
       .relative {
         padding: ${core.layout.spacingLarge} ${core.layout.spacingXLarge};
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         border-radius: 12px;
         overflow: hidden;
         text-align: center;
@@ -129,7 +129,7 @@ const Travel = _ => (
         position: relative;
         height: 213px;
         width: 100%;
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         border-radius: 12px;
         overflow: hidden;
         margin-bottom: ${core.layout.spacingLarge};
@@ -143,7 +143,7 @@ const Travel = _ => (
         padding: 0 ${core.layout.spacingMedium};
       }
       .pill {
-        background: ${core.colors.pink};
+        background: ${core.colorsPink[6]};
         height: 44px;
         margin-top: ${core.layout.spacingLarge};
         border-radius: 22px;
@@ -208,7 +208,7 @@ const Travel = _ => (
       }
       .line {
         flex: 1;
-        border-right: 1px dashed ${core.colors.blue};
+        border-right: 1px dashed ${core.colorsBlue[6]};
       }
     `}</style>
   </div>
@@ -401,7 +401,7 @@ const Easing = _ => (
         width: calc(50% - ${core.layout.spacingLarge});
         margin: calc(${core.layout.spacingLarge} / 2);
         padding: ${core.layout.spacingLarge};
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         border-radius: 12px;
         overflow: hidden;
       }
@@ -409,7 +409,7 @@ const Easing = _ => (
         margin-top: ${core.layout.spacingLarge};
         text-align: center;
         padding: ${core.layout.spacingLarge};
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         border-radius: 12px;
         font-size: ${core.type.fontSizeMedium};
         line-height: ${core.type.lineHeightStandard};
@@ -524,7 +524,7 @@ const Easing = _ => (
         height: 16px;
         width: 16px;
         border-radius: 50%;
-        background: ${core.colors.pink};
+        background: ${core.colorsPink[6]};
       }
       @media screen and (min-width: 769px) {
         .function {
@@ -552,7 +552,7 @@ const Rotation = _ => (
         display: flex;
         margin-bottom: ${core.layout.spacingLarge};
         padding: ${core.layout.spacingXLarge};
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         border-radius: 12px;
         overflow: hidden;
       }
@@ -562,17 +562,17 @@ const Rotation = _ => (
         }
       }
       .box {
-        background: ${core.colors.white};
+        background: ${core.colorsBackgroundLight[3]};
         margin-right: ${core.layout.spacingXLarge};
       }
       .boxSmall {
-        border: ${core.layout.spacingXXSmall} solid ${core.colors.pink};
+        border: ${core.layout.spacingXXSmall} solid ${core.colorsPink[6]};
         height: 32px;
         width: 32px;
         animation: 1s linear infinite rotateme;
       }
       .boxLarge {
-        border: ${core.layout.spacingSmall} solid ${core.colors.pink};
+        border: ${core.layout.spacingSmall} solid ${core.colorsPink[6]};
         height: 128px;
         width: 128px;
         animation: 3s linear infinite rotateme;

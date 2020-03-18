@@ -34,9 +34,9 @@ const FontFamily = props => (
     </Code>
     <style jsx>{`
       .family {
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         padding: ${core.layout.spacingLarge};
-        color: ${core.colors.gray06};
+        color: ${core.colorsBackgroundDark[2]};
         font-size: ${core.type.fontSizeLarge};
         line-height: ${core.type.lineHeightExtra};
         letter-spacing: ${core.layout.spacingSmall};
@@ -84,7 +84,7 @@ const FontWeight = props => (
       .weight {
         flex: 1;
         margin: calc(${core.layout.spacingLarge} / 2);
-        color: ${core.colors.gray06};
+        color: ${core.colorsBackgroundDark[2]};
         text-align: center;
       }
       .box {
@@ -93,7 +93,7 @@ const FontWeight = props => (
         justify-content: center;
         align-items: center;
         border-radius: 12px;
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         height: 150px;
         min-width: 150px;
       }
@@ -102,13 +102,13 @@ const FontWeight = props => (
         letter-spacing: ${core.type.letterSpacingGigantic};
       }
       .weightLabel {
-        color: ${core.colors.gray03};
+        color: ${core.colorsTextIcon.lowOnLight};
         font-size: ${core.type.fontSizeXSmall};
       }
       .weightVar {
         margin-top: ${core.layout.spacingSmall};
         font-size: ${core.type.fontSizeXSmall};
-        color: ${core.colors.pink};
+        color: ${core.colorsPink[6]};
       }
       .codeExample {
         margin-top: ${core.layout.spacingLarge};
@@ -148,7 +148,7 @@ const FontSize = props => (
 .mySelector { font-size: var(--psTypeFontSizeLarge); }`}</Code>
     <style jsx>{`
       .sizes {
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         border-radius: 12px;
         white-space: nowrap;
         overflow: hidden;
@@ -156,23 +156,23 @@ const FontSize = props => (
         margin-bottom: ${core.layout.spacingMedium};
       }
       .size {
-        color: ${core.colors.gray06};
+        color: ${core.colorsBackgroundDark[2]};
       }
       .size + .size {
         margin-top: ${core.layout.spacingLarge};
       }
       .sizeSentence {
-        color: ${core.colors.gray06};
+        color: ${core.colorsBackgroundDark[2]};
         margin-bottom: ${core.layout.spacingXSmall};
       }
       .sizeLabel {
-        color: ${core.colors.gray03};
+        color: ${core.colorsTextIcon.lowOnLight};
         font-size: ${core.type.fontSizeXSmall};
       }
       .sizeVar {
         margin-top: ${core.layout.spacingSmall};
         font-size: ${core.type.fontSizeXSmall};
-        color: ${core.colors.pink};
+        color: ${core.colorsPink[6]};
       }
     `}</style>
   </div>
@@ -236,7 +236,7 @@ const LineHeight = _ => (
         margin: calc(${core.layout.spacingLarge} / 2);
         border-radius: 12px;
         padding: ${core.layout.spacingLarge};
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
       }
       .text {
         position: relative;
@@ -289,13 +289,13 @@ const LineHeight = _ => (
       }
       .label {
         margin-top: ${core.layout.spacingSmall};
-        color: ${core.colors.gray03};
+        color: ${core.colorsTextIcon.lowOnLight};
         font-weight: ${core.type.fontWeightMedium};
       }
       .varName {
         margin-top: ${core.layout.spacingSmall};
         font-size: ${core.type.fontSizeXSmall};
-        color: ${core.colors.pink};
+        color: ${core.colorsPink[6]};
       }
     `}</style>
   </div>
@@ -339,7 +339,7 @@ const MonospaceFont = _ => (
     </P>
     <style jsx>{`
       .box {
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
         border-radius: 12px;
         padding: ${core.layout.spacingLarge};
         margin: ${core.layout.spacingLarge} 0;
@@ -361,7 +361,7 @@ const MonospaceFont = _ => (
         letter-spacing: ${core.type.letterSpacingGigantic};
       }
       .fontLabel {
-        color: ${core.colors.gray03};
+        color: ${core.colorsTextIcon.lowOnLight};
         font-size: ${core.type.fontSizeXSmall};
       }
     `}</style>

@@ -213,7 +213,7 @@ const InAppExample = props => (
     <style jsx>{`
       .gallery {
         padding: ${core.layout.spacingMedium};
-        background: ${core.colors.gray06};
+        background: ${core.colorsBackgroundDark[2]};
       }
     `}</style>
   </Theme>

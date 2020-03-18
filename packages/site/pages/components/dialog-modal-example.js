@@ -30,7 +30,12 @@ export default class DialogModalExample extends React.Component {
             <Text.Heading>
               <h2>Lorem ipsum dolor sit amet.</h2>
             </Text.Heading>
-            <div style={{ background: core.colors.bone, height: '176px' }} />
+            <div
+              style={{
+                background: core.colorsBackgroundLight[2],
+                height: '176px'
+              }}
+            />
             <div className="buttons">
               <Button appearance={Button.appearances.stroke}>Secondary</Button>
               <Button>Primary button</Button>
@@ -47,7 +52,7 @@ export default class DialogModalExample extends React.Component {
             justify-content: center;
             height: 100vh;
             width: 100vw;
-            background-color: ${transparentize(0.5, core.colors.black)};
+            background-color: ${transparentize(0.5, core.colorsBlack)};
           }
           .app {
             display: flex;
