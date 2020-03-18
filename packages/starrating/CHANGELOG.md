@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.0.3...@pluralsight/ps-design-system-starrating@7.1.0) (2020-03-18)
+
+
+### Features
+
+* **starrating:** 🎸 Made stars aria-hidden ([8812527](https://github.com/pluralsight/design-system/commit/88125270829141705792a07e9a135362b52caa5c))
+
+
+
+
+
 ## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.0.2...@pluralsight/ps-design-system-starrating@7.0.3) (2020-03-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating
