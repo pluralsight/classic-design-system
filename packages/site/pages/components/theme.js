@@ -44,10 +44,10 @@ const ContrastingExample = _ => (
         padding: ${core.layout.spacingXXLarge} ${core.layout.spacingLarge};
       }
       .light {
-        background: ${core.colors.bone};
+        background: ${core.colorsBackgroundLight[2]};
       }
       .dark {
-        background: ${core.colors.gray05};
+        background: ${core.colorsBackgroundDark[2]};
       }
     `}</style>
   </div>

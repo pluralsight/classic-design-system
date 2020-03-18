@@ -114,7 +114,7 @@ export default _ => (
         do={
           <div
             style={{
-              background: core.colors.gray04,
+              background: core.colorsBackgroundDark[3],
               borderRadius: '4px',
               padding: core.layout.spacingLarge
             }}
@@ -130,7 +130,7 @@ export default _ => (
         dont={
           <div
             style={{
-              background: core.colors.gray04,
+              background: core.colorsBackgroundDark[3],
               borderRadius: '4px',
               padding: core.layout.spacingLarge
             }}

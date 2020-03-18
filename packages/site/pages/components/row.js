@@ -85,7 +85,7 @@ const InAppExample = props => (
     <style jsx>{`
       .example {
         padding: ${core.layout.spacingLarge};
-        background: ${core.colors.gray06};
+        background: ${core.colorsBackgroundDark[2]};
       }
     `}</style>
   </Theme>

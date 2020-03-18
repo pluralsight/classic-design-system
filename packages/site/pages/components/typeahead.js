@@ -171,8 +171,8 @@ function InAppExample() {
       <style jsx>{`
         .example {
           padding: ${core.layout.spacingLarge};
-          background: ${core.colors.gray06};
-          color: ${core.colors.white};
+          background: ${core.colorsBackgroundDark[2]};
+          color: ${core.colorsTextIcon.highOnDark};
           min-height: 220px;
         }
       `}</style>
