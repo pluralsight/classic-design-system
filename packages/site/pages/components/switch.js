@@ -56,7 +56,7 @@ class InAppExample extends React.Component {
             }
             .example {
               padding: ${core.layout.spacingLarge};
-              background: ${core.colors.bone};
+              background: ${core.colorsBackgroundLight[2]};
               border-radius: 12px;
               margin-bottom: ${core.layout.spacingLarge};
             }

@@ -103,11 +103,11 @@ class InAppExample extends React.Component {
 }`}</Code>
         <style jsx>{`
           .app {
-            background: ${core.colors.gray06};
+            background: ${core.colorsBackgroundDark[2]};
             padding: ${core.layout.spacingSmall} ${core.layout.spacingLarge};
           }
           .content {
-            color: ${core.colors.white};
+            color: ${core.colorsTextIcon.highOnDark};
             padding: ${core.layout.spacingLarge} 0;
           }
         `}</style>

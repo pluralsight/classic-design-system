@@ -28,9 +28,9 @@ const PinkBox = props => (
         width: 100%;
         height: 100%;
         border-top: ${core.layout.spacingMedium} solid
-          ${transparentize(0.5, core.colors.pink)};
+          ${transparentize(0.5, core.colorsPink[6])};
         border-bottom: ${core.layout.spacingMedium} solid
-          ${transparentize(0.5, core.colors.pink)};
+          ${transparentize(0.5, core.colorsPink[6])};
       }
     `}</style>
   </div>
@@ -59,7 +59,7 @@ const InAppExample = _ => (
     </Theme>
     <style jsx>{`
       .example {
-        background: ${core.colors.gray06};
+        background: ${core.colorsBackgroundDark[2]};
       }
       .boxContainer {
         position: relative;

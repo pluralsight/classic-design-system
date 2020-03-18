@@ -153,7 +153,7 @@ const Comp = props => (
     <style jsx>{`
       .comp {
         padding-bottom: ${core.layout.spacingLarge};
-        border-bottom: 1px solid ${core.colors.gray02};
+        border-bottom: 1px solid ${core.colorsBorder.lowOnDark};
         margin-bottom: ${core.layout.spacingXLarge};
       }
       .label {
@@ -166,7 +166,7 @@ const Comp = props => (
       .link {
         display: inline-flex;
         align-items: center;
-        color: ${core.colors.orange};
+        color: ${core.colorsOrange[6]};
       }
       @media (min-width: 769px) {
         .comp {

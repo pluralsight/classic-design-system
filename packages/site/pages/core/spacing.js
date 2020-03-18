@@ -161,7 +161,7 @@ function Var(props) {
         .varName {
           margin-top: ${core.layout.spacingSmall};
           font-size: ${core.type.fontSizeXSmall};
-          color: ${core.colors.pink};
+          color: ${core.colorsPink[6]};
         }
       `}</style>
     </code>

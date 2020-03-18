@@ -13,7 +13,7 @@ After, [installation](/install), use Core in the flavor of your choice.  JavaScr
 \`\`\`js
 import * as core from '@pluralsight/ps-design-system-core'
 
-<button style={{ backgroundColor: core.colors.orange }}>Click</button>
+<button style={{ backgroundColor: core.colorsOrange[6] }}>Click</button>
 \`\`\`
 
 ## Import CSSNext

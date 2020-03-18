@@ -197,7 +197,7 @@ class Code extends React.Component {
             position: relative;
             padding: ${core.layout.spacingMedium} ${core.layout.spacingLarge} 0
               ${core.layout.spacingLarge};
-            background: ${core.colorsBackgroundDark[3]};
+            background: ${core.colorsBackgroundDark[1]};
             transition: height ${core.motion.speedFast};
             height: auto;
           }
