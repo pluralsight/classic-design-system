@@ -15,7 +15,8 @@ module.exports = api => {
 
     presets: [
       '@babel/preset-react',
-      ['@babel/preset-env', { modules: esm ? !esm : 'auto' }]
+      ['@babel/preset-env', { modules: esm ? !esm : 'auto' }],
+      '@babel/preset-typescript'
     ],
 
     plugins: [
