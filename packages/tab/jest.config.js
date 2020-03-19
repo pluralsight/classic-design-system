@@ -5,9 +5,5 @@ module.exports = {
   ...baseConfig,
   displayName: name,
   name: name,
-  testMatch: [`${__dirname}/**/*/?(*.)+(spec|test).js`],
-  transform: {
-    ...baseConfig.transform,
-    '^.+\\.tsx?$': '<rootDir>/jest/babel-transformer.js'
-  }
+  testMatch: [`${__dirname}/**/*/?(*.)+(spec|test).js`]
 }
