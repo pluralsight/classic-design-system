@@ -70,7 +70,7 @@ export default {
   },
   [`.psds-text__heading--size-${vars.headingSizes.xLarge}`]: {
     fontSize: type.fontSizeXXLarge,
-    letterSpacing: type.letterSpacingXXLarge,
+    letterSpacing: type.letterSpacingXLarge,
     lineHeight: type.lineHeightHuge,
     fontWeight: type.fontWeightLight
   },

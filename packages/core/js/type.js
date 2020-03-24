@@ -15,9 +15,9 @@ export default {
   /* letter spacing */
   letterSpacingGigantic: '-1px',
   letterSpacingJumbo: '-0.72px',
-  letterSpacingXXLarge: '-0.54px',
-  letterSpacingXLarge: '-0.45px',
-  letterSpacingLarge: '0.36px',
+  letterSpacingXXLarge: '-0.72px',
+  letterSpacingXLarge: '-0.54px',
+  letterSpacingLarge: '-0.36px',
   letterSpacingMedium: 0,
   letterSpacingSmall: 0,
   letterSpacingXSmall: 0,

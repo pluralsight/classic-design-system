@@ -82,7 +82,7 @@ exports[`Storyshots modal default 1`] = `
               </svg>
             </button>
             <h1
-              data-css-19qk6p4=""
+              data-css-rl5sq=""
               size="large"
             >
               Wowzers, a Dialog
@@ -243,7 +243,7 @@ exports[`Storyshots modal no click overlay 1`] = `
               </svg>
             </button>
             <h1
-              data-css-19qk6p4=""
+              data-css-rl5sq=""
               size="large"
             >
               Wowzers, a Dialog
@@ -388,7 +388,7 @@ exports[`Storyshots modal no close button 1`] = `
             data-css-jp50nh=""
           >
             <h1
-              data-css-19qk6p4=""
+              data-css-rl5sq=""
               size="large"
             >
               Wowzers, a Dialog
@@ -548,7 +548,7 @@ exports[`Storyshots modal no escape key 1`] = `
               </svg>
             </button>
             <h1
-              data-css-19qk6p4=""
+              data-css-rl5sq=""
               size="large"
             >
               Wowzers, a Dialog
@@ -709,7 +709,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
               </svg>
             </button>
             <h1
-              data-css-19qk6p4=""
+              data-css-rl5sq=""
               size="large"
             >
               Wowzers, a Dialog
@@ -870,7 +870,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
               </svg>
             </button>
             <h1
-              data-css-19qk6p4=""
+              data-css-rl5sq=""
               size="large"
             >
               Wowzers, a Dialog
@@ -1776,7 +1776,7 @@ exports[`Storyshots onClose with onClose 1`] = `
           </svg>
         </button>
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
@@ -1871,7 +1871,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
         data-css-jp50nh=""
       >
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
@@ -1966,7 +1966,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
         data-css-jp50nh=""
       >
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
@@ -2061,7 +2061,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
         data-css-jp50nh=""
       >
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
@@ -2156,7 +2156,7 @@ exports[`Storyshots tailPosition none 1`] = `
         data-css-jp50nh=""
       >
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
@@ -2251,7 +2251,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
         data-css-jp50nh=""
       >
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
@@ -2346,7 +2346,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
         data-css-jp50nh=""
       >
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
@@ -2441,7 +2441,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
         data-css-jp50nh=""
       >
         <h1
-          data-css-19qk6p4=""
+          data-css-rl5sq=""
           size="large"
         >
           Wowzers, a Dialog
