@@ -180,7 +180,7 @@ exports[`Storyshots Heading className override 1`] = `
           "data-css-mbiza7": "",
         }
       }
-      data-css-1odmcd6=""
+      data-css-1uk9rqa=""
       size="large"
     >
       orange
@@ -201,7 +201,7 @@ exports[`Storyshots Heading size: large 1`] = `
     }
   >
     <h1
-      data-css-1odmcd6=""
+      data-css-1uk9rqa=""
       size="large"
     >
       large
@@ -285,7 +285,7 @@ exports[`Storyshots Heading style override 1`] = `
     }
   >
     <h2
-      data-css-1odmcd6=""
+      data-css-1uk9rqa=""
       size="large"
       style={
         Object {
