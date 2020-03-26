@@ -85,7 +85,7 @@ const styles = {
 }
 
 const CaretDown = _ => (
-  <svg 
+  <svg
     role="img"
     aria-label="caret down icon"
     viewBox="0 0 24 24"

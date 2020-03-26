@@ -1,6 +1,5 @@
 import {
   colorsBackgroundUtility,
-  colorsBackgroundDark,
   colorsBackgroundLight,
   colorsBorder,
   colorsStatus,
