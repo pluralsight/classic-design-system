@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.1.1...@pluralsight/ps-design-system-dialog@8.1.2) (2020-03-27)
+
+
+### Bug Fixes
+
+* **core:** letter spacing values ([a1d14b3](https://github.com/pluralsight/design-system/commit/a1d14b3218b832848403198f8a9d9d7e53e2e763))
+
+
+
+
+
 ## [8.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.1.0...@pluralsight/ps-design-system-dialog@8.1.1) (2020-03-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog
