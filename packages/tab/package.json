@@ -12,7 +12,7 @@
     "build": "run-s build:js build:cjs build:css",
     "build:cjs": "babel --root-mode upward src --out-dir dist/cjs && cp src/react/index.d.ts dist/cjs/react/index.d.ts && cp src/index.d.ts dist/cjs/index.d.ts",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
-    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm && cp src/react/index.d.ts dist/esm/react/index.d.ts && cp src/index.d.ts dist/esm/index.d.ts",
+    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
