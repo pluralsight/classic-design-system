@@ -64,7 +64,7 @@ export default function PositionExample(props) {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: ${core.colors.bone};
+          background: ${core.colorsBackgroundLight[2]};
           border-radius: 8px;
         }
       `}</style>

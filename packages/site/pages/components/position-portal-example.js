@@ -42,7 +42,7 @@ export default function PortalExample() {
         .example {
           height: 300px;
           width: 100%;
-          background: ${core.colors.bone};
+          background: ${core.colorsBackgroundLight[2]};
           border-radius: 8px;
         }
         .relative-area {
@@ -51,14 +51,14 @@ export default function PortalExample() {
           left: 25%;
           height: 200px;
           width: 200px;
-          border: 2px dashed ${core.colors.orange};
+          border: 2px dashed ${core.colorsOrange[6]};
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: center;
           padding: 0 ${core.layout.spacingXLarge};
           font-size: ${core.type.fontSizeLarge};
-          color: ${core.colors.orange};
+          color: ${core.colorsOrange[6]};
         }
       `}</style>
     </div>

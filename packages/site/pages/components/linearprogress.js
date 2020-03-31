@@ -57,13 +57,13 @@ class AnimationDemo extends React.Component {
             flex: 1;
           }
           .value {
-            background: ${core.colors.bone};
+            background: ${core.colorsBackgroundLight[2]};
             border-radius: 12px 0 0 12px;
             font-size: ${core.type.fontSizeLarge};
-            color: ${core.colors.gray04};
+            color: ${core.colorsTextIcon.lowOnLight};
           }
           .example {
-            background: ${core.colors.gray04};
+            background: ${core.colorsBackgroundDark[3]};
             border-radius: 0 12px 12px 0;
             padding: 0 ${core.layout.spacingMedium};
           }

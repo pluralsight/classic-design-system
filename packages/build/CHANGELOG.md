@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.13...@pluralsight/ps-design-system-build@1.11.14) (2020-03-16)
+
+
+### Bug Fixes
+
+* **build:** corrects postcss-css-var-selectors.js ([4e3585c](https://github.com/pluralsight/design-system/commit/4e3585cfc64cd696a882b4ec25ef148d937d2840))
+
+
+
+
+
 ## [1.11.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.11...@pluralsight/ps-design-system-build@1.11.12) (2020-02-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-build

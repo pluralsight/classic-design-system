@@ -372,6 +372,71 @@ const colorCategories = [
     ]
   },
   {
+    heading: 'Code colors',
+    subCategories: [
+      {
+        fg: core.colorsTextIcon.highOnLight,
+        colors: [
+          {
+            name: 'Code - White',
+            var: 'psColorsCodeWhite',
+            js: 'colorsCode.white',
+            hex: core.colorsCode.white,
+            border: core.colorsBorder.lowOnLight
+          },
+          {
+            name: 'Code - Gray',
+            var: 'psColorsCodeGray',
+            js: 'colorsCode.gray',
+            hex: core.colorsCode.gray
+          },
+          {
+            name: 'Code - Orange',
+            var: 'psColorsCodeOrange',
+            js: 'colorsCode.orange',
+            hex: core.colorsCode.orange
+          },
+          {
+            name: 'Code - Yellow',
+            var: 'psColorsCodeYellow',
+            js: 'colorsCode.yellow',
+            hex: core.colorsCode.yellow
+          },
+          {
+            name: 'Code - Green',
+            var: 'psColorsCodeGreen',
+            js: 'colorsCode.green',
+            hex: core.colorsCode.green
+          },
+          {
+            name: 'Code - Turquoise',
+            var: 'psColorsCodeTurquoise',
+            js: 'colorsCode.turquoise',
+            hex: core.colorsCode.turquoise
+          },
+          {
+            name: 'Code - Blue',
+            var: 'psColorsCodeBlue',
+            js: 'colorsCode.blue',
+            hex: core.colorsCode.blue
+          },
+          {
+            name: 'Code - Purple',
+            var: 'psColorsCodePurple',
+            js: 'colorsCode.purple',
+            hex: core.colorsCode.purple
+          },
+          {
+            name: 'Code - Sand',
+            var: 'psColorsCodeSand',
+            js: 'colorsCode.sand',
+            hex: core.colorsCode.sand
+          }
+        ]
+      }
+    ]
+  },
+  {
     heading: 'Neutrals',
     subCategories: [
       {

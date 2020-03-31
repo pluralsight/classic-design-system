@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textarea",
-  "version": "7.0.2",
+  "version": "7.0.4",
   "description": "Design system components for text area",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,10 +21,10 @@
   },
   "gitHead": "d9a7f335cc63adf81745cd19561e1b8c09615b25",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.0.2",
+    "@pluralsight/ps-design-system-core": "^6.1.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.17",
-    "@pluralsight/ps-design-system-halo": "^7.0.2",
-    "@pluralsight/ps-design-system-icon": "^18.0.2",
+    "@pluralsight/ps-design-system-halo": "^7.0.4",
+    "@pluralsight/ps-design-system-icon": "^18.0.4",
     "@pluralsight/ps-design-system-util": "^3.0.12",
     "prop-types": "^15.7.2"
   },
@@ -35,9 +35,9 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.13",
-    "@pluralsight/ps-design-system-form": "^5.0.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.2",
+    "@pluralsight/ps-design-system-build": "^1.11.14",
+    "@pluralsight/ps-design-system-form": "^5.0.4",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.4",
     "@pluralsight/ps-design-system-theme": "^4.0.10"
   }
 }

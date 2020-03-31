@@ -124,9 +124,9 @@ function HoverExampleOnly() {
           display: flex;
           padding: ${core.layout.spacingLarge};
           padding-bottom: 188px;
-          color: ${core.colors.gray02};
+          color: ${core.colorsTextIcon.lowOnDark};
           font-weight: ${core.type.fontWeightMedium};
-          background: ${core.colors.gray06};
+          background: ${core.colorsBackgroundDark[2]};
         }
         .example {
           margin-right: calc(${core.layout.spacingLarge} * 2);
@@ -160,7 +160,7 @@ const ContentGridVisual = _ => (
       }
       .box {
         border-radius: 2px;
-        background: ${transparentize(0.8, core.colors.gray03)};
+        background: ${core.colorsBackgroundUtility[40]};
       }
       .top {
         grid-column: left / end;
@@ -240,7 +240,7 @@ const ModalIframe = _ => (
       .iframe {
         height: 400px;
         width: 100%;
-        border: 1px solid ${core.colors.gray04};
+        border: 1px solid ${core.colorsBorder.highOnLight};
       }
     `}</style>
   </div>
@@ -334,6 +334,18 @@ export default _ => (
             null,
             <span>
               positions a tail pointer (from <code>Dialog.tailPositions</code>)
+            </span>
+          ]),
+          PropTypes.row([
+            'returnFocus',
+            'boolean',
+            null,
+            <code>true</code>,
+            <span>
+              Sets the focus to the caller when the modal is closed. Passing
+              false and not manually handling focus is not accessible friendly.
+              Ensure you handle setting focus manually if you pass false to this
+              prop.
             </span>
           ])
         ]}
@@ -512,7 +524,7 @@ export default _ => (
                 left: 0;
                 height: 100%;
                 width: 100%;
-                background-color: ${transparentize(0.5, core.colors.black)};
+                background-color: ${transparentize(0.5, core.colorsBlack)};
                 border-radius: 12px;
                 display: flex;
                 justify-content: center;

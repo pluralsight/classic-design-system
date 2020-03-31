@@ -88,13 +88,15 @@ function Star(props) {
     <Tag
       {...styles.star(props, themeName)}
       {...filterReactProps(props, { tagName: Tag })}
-      aria-label={label}
       title={label}
       onBlur={handleLeave}
       onClick={handleClicked}
       onFocus={handleEnter}
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
+      {...(props.interactive
+        ? { 'aria-label': label }
+        : { 'aria-hidden': true })}
     >
       {props.appearance === APPEARANCES.full && (
         <StarFillIcon size={iconSize} />

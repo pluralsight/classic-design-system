@@ -8,7 +8,7 @@ describe('StarRating', () => {
     const nodeList = container.querySelectorAll('span, button')
 
     return [...nodeList].filter(node => {
-      const label = node.getAttribute('aria-label')
+      const label = node.getAttribute('title')
       return label && label.includes('Rate')
     })
   }
@@ -28,6 +28,15 @@ describe('StarRating', () => {
 
       stars.forEach(node => {
         expect(node.tagName.toLowerCase()).toBe('span')
+      })
+    })
+
+    it('hides the individual stars from screen readers', () => {
+      const { container } = render(<StarRating />)
+      const stars = collectStarNodes(container)
+
+      stars.forEach(node => {
+        expect(node.getAttribute('aria-hidden')).toBe('true')
       })
     })
   })

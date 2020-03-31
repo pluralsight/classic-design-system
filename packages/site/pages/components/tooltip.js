@@ -150,9 +150,9 @@ function HoverExampleOnly() {
           display: flex;
           padding: ${core.layout.spacingLarge};
           padding-bottom: 88px;
-          color: ${core.colors.gray02};
+          color: ${core.colorsTextIcon.lowOnDark};
           font-weight: ${core.type.fontWeightMedium};
-          background: ${core.colors.gray06};
+          background: ${core.colorsBackgroundDark[2]};
         }
         .example {
           margin-right: calc(${core.layout.spacingLarge} * 2);

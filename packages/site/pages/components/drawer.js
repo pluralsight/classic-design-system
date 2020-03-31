@@ -30,7 +30,7 @@ const ExampleDrawerBase = () => (
       .image-placeholder {
         width: 100%;
         height: 100%;
-        background: ${core.colors.gray03};
+        background: ${core.colorsBackgroundDark[3]};
       }
     `}</style>
   </div>
@@ -90,8 +90,8 @@ const DrawerExamples = () => (
     <style jsx>{`
       .drawer-example {
         padding: ${core.layout.spacingXLarge};
-        background: ${core.colors.gray06};
-        color: ${core.colors.bone};
+        background: ${core.colorsBackgroundDark[2]};
+        color: ${core.colorsTextIcon.lowOnDark};
       }
     `}</style>
   </div>
@@ -108,8 +108,8 @@ const PinkBox = props => (
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px dashed ${core.colors.pink};
-        color: ${core.colors.pink};
+        border: 2px dashed ${core.colorsPink[6]};
+        color: ${core.colorsPink[6]};
         font-size: 16px;
         font-family: ${core.type.fontFamilyCode};
       }

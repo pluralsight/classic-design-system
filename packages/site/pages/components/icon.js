@@ -52,7 +52,7 @@ const CommonSet = props => (
         display: flex;
         flex-wrap: wrap;
         border-radius: 12px;
-        background-color: ${core.colors.bone};
+        background-color: ${core.colorsBackgroundLight[2]};
         margin: 0 -${core.layout.spacingLarge};
       }
       .icon {

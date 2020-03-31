@@ -91,7 +91,7 @@ export default _ => (
         {`function ComponentUsingFlags(props) {
   const { flags } = useFeatureFlags()
   const style = {
-    background: flags.usingNewStyle ? core.colors.blue : core.colors.orange
+    background: flags.usingNewStyle ? core.colorsBlue[6] : core.colorsOrange[6]
   }
   return <Button style={style}>{props.children}</Button>
 }`}
@@ -103,7 +103,7 @@ export default _ => (
 function ComponentUsingFlags(props) {
   const { flags } = useFeatureFlags()
   const style = {
-    background: flags.usingNewStyle ? core.colors.blue : core.colors.orange
+    background: flags.usingNewStyle ? core.colorsBlue[6] : core.colorsOrange[6]
   }
   return <Button style={style}>{props.children}</Button>
 }

@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.2.1...@pluralsight/ps-design-system-site@18.2.2) (2020-03-27)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
+## [18.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.2.0...@pluralsight/ps-design-system-site@18.2.1) (2020-03-18)
+
+
+### Bug Fixes
+
+* **site:** update site color values to fix build ([93f0f6c](https://github.com/pluralsight/design-system/commit/93f0f6cd29e54a1aba18f8a29f4a39009f0ed258))
+
+
+
+
+
+# [18.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.1.0...@pluralsight/ps-design-system-site@18.2.0) (2020-03-16)
+
+
+### Bug Fixes
+
+* **site:** use latest code color vars in code page ([6ede121](https://github.com/pluralsight/design-system/commit/6ede12161c4b234ed69a736db7407be259d05318))
+
+
+### Features
+
+* **site:** add code colors to colors page ([218d888](https://github.com/pluralsight/design-system/commit/218d8888587de40a6f74ec95f90d22838b9dc427))
+
+
+
+
+
+# [18.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.0.2...@pluralsight/ps-design-system-site@18.1.0) (2020-03-11)
+
+
+### Features
+
+* **dialog:** add optional returnFocus prop ([5936915](https://github.com/pluralsight/design-system/commit/593691565683f457148cad9e4fe3191cfd2aafbc))
+
+
+
+
+
 ## [18.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.0.1...@pluralsight/ps-design-system-site@18.0.2) (2020-03-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
