@@ -41,7 +41,7 @@ const CommonSet = props => (
         const Comp = Icons[id]
         return (
           <div className="icon" key={i}>
-            <Comp size={sizes.large} className="svg" />
+            <Comp size={sizes.medium} className="svg" />
             <div className="iconLabel">{id}</div>
           </div>
         )
@@ -53,21 +53,19 @@ const CommonSet = props => (
         flex-wrap: wrap;
         border-radius: 12px;
         background-color: ${core.colorsBackgroundLight[2]};
-        margin: 0 -${core.layout.spacingLarge};
       }
       .icon {
         display: flex;
         flex-direction: column;
-        width: 165px;
-        height: 48px;
+        width: 140px;
+        flex-basis: 140px;
+        flex-grow: 1;
         align-items: center;
         margin: ${core.layout.spacingLarge};
       }
       .iconLabel {
         font-size: ${core.type.fontSizeXSmall};
-      }
-      .svg {
-        flex: 0;
+        margin-top: ${core.layout.spacingXSmall};
       }
     `}</style>
   </div>
