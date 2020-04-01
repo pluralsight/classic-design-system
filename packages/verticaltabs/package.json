@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-verticaltabs",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "Verticaltab UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,10 +21,10 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-collapsible": "^2.0.16",
+    "@pluralsight/ps-design-system-collapsible": "^2.0.17",
     "@pluralsight/ps-design-system-core": "^6.1.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.17",
-    "@pluralsight/ps-design-system-icon": "^18.0.4",
+    "@pluralsight/ps-design-system-icon": "^18.1.0",
     "@pluralsight/ps-design-system-prop-types": "^2.0.18",
     "prop-types": "^15.7.2"
   },
