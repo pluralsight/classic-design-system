@@ -41,7 +41,7 @@ const CommonSet = props => (
         const Comp = Icons[id]
         return (
           <div className="icon" key={i}>
-            <Comp size={sizes.medium} className="svg" />
+            <Comp size={sizes.medium} />
             <div className="iconLabel">{id}</div>
           </div>
         )
