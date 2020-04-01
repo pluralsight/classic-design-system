@@ -20,7 +20,7 @@
     "glob": "^7.1.6",
     "http-server": "^0.11.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "9.1.7",
+    "next": "9.3.3",
     "react-codemirror": "^1.0.0",
     "react-markdown": "^4.2.2"
   },
