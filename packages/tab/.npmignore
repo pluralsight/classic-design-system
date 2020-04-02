@@ -1,4 +1,3 @@
 __specs__
-src/**/*
-!src/**/*.d.ts
+src
 .babelrc
