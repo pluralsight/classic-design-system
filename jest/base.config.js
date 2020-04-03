@@ -7,7 +7,8 @@ module.exports = {
   rootDir: path.resolve(__dirname, '..'),
   setupFilesAfterEnv: ['<rootDir>/jest/setup/index.js'],
   transform: {
-    '^.+\\.js$': '<rootDir>/jest/babel-transformer.js'
+    '^.+\\.js$': '<rootDir>/jest/babel-transformer.js',
+    '^.+\\.tsx?$': '<rootDir>/jest/babel-transformer.js'
   },
   transformIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/.*/dist'],
   watchPlugins: [
