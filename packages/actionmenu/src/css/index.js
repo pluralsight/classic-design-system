@@ -31,7 +31,7 @@ export default {
     }
   },
 
-  '.psds-actionmenu': ({ slide }) => ({
+  '.psds-actionmenu': {
     position: 'absolute',
     display: 'inline-block',
     marginLeft: 0,
@@ -44,10 +44,8 @@ export default {
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     fontSize: type.fontSizeSmall,
     opacity: 0,
-    animation: `${slide || 'psds-actionmenu__keyframes__slide'} ${
-      motion.speedNormal
-    } forwards`
-  }),
+    animation: `psds-actionmenu__keyframes__slide ${motion.speedNormal} forwards`
+  },
 
   [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
     ...menuOriginTop,

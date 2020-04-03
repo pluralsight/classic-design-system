@@ -5,6 +5,7 @@ import { compose, css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import React from 'react'
 
+import { motion } from '@pluralsight/ps-design-system-core'
 import { calcNextIndex } from '../js/index.js'
 import Overlay from './overlay.js'
 import stylesheet from '../css/index.js'
@@ -16,7 +17,11 @@ const slide = css.keyframes(
 const styles = {
   menu: ({ _isNested, origin }) => {
     return compose(
-      css(stylesheet['.psds-actionmenu']({ slide })),
+      css(stylesheet['.psds-actionmenu']),
+      css({
+        animation: `${slide} ${motion.speedNormal} forwards`
+      }),
+      css(stylesheet['@keyframes psds-actionmenu__keyframes__slide']),
       css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
       _isNested &&
         css(
