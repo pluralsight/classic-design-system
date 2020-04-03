@@ -1,262 +1,225 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
+
 import Button from '@pluralsight/ps-design-system-button'
-import * as Icon from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
-import Row from '@pluralsight/ps-design-system-row'
 
-import { Drawer, useDrawer } from '../index.js'
+import { Drawer } from '../index.js'
+import { combineFns } from '../utils.js'
 
-const DrawerHeadContent = props => (
-  <Text.P {...props} style={{ padding: '10px 0', margin: 0 }} />
-)
-
-const DrawerBodyContent = props => (
-  <Text.P {...props} style={{ padding: 20, margin: 0 }} />
-)
-
-const ControlledExternalState = () => {
-  const [open, setOpen] = useState(true)
-  const { onOpen, onClose } = useDrawer({
-    init: () => ({
-      open
-    })
-  })
-  React.useEffect(() => {
-    if (open) {
-      onOpen()
-    } else {
-      onClose()
-    }
-  }, [open, onOpen, onClose])
-
-  return (
-    <>
-      <button
-        onClick={() => {
-          setOpen(true)
-        }}
-      >
-        open
-      </button>
-      <button
-        onClick={() => {
-          setOpen(false)
-        }}
-      >
-        close
-      </button>
-      <Drawer
-        open={open}
-        onToggle={() => {
-          setOpen(!open)
-        }}
-      >
-        <Drawer.Head>
-          <DrawerHeadContent>Click me to open</DrawerHeadContent>
-        </Drawer.Head>
-        <Drawer.Body>
-          <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-        </Drawer.Body>
-      </Drawer>
-    </>
-  )
-}
-
-const ControlledStartOpen = () => (
-  <Drawer
-    {...useDrawer({
-      init: () => ({
-        open: true
-      })
-    })}
+const HeadContent = ({ actions, title = 'Head Content', ...rest }) => (
+  <div
+    {...rest}
+    style={{ display: 'flex', width: '100%', padding: '10px 0', margin: 0 }}
   >
-    <Drawer.Head>
-      <DrawerHeadContent>Click me to open</DrawerHeadContent>
-    </Drawer.Head>
-    <Drawer.Body>
-      <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-    </Drawer.Body>
-  </Drawer>
+    {title && <Text.P>{title}</Text.P>}
+    {actions && <div style={{ marginLeft: 'auto' }}> {actions}</div>}
+  </div>
 )
 
-const ControlledButtonOnly = () => {
-  const { onToggle, open } = useDrawer()
-  return (
-    <>
-      <button onClick={onToggle}>toggle drawer</button>
-      <Drawer open={open}>
-        <Drawer.Head>
-          <DrawerHeadContent>Clicking me won't toggle drawer</DrawerHeadContent>
-        </Drawer.Head>
-        <Drawer.Body>
-          <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-        </Drawer.Body>
-      </Drawer>
-    </>
-  )
+const BodyContent = ({ children, title = 'Drawer Content', ...rest }) => (
+  <div {...rest} style={{ padding: 20, margin: 0 }}>
+    {title && <Text.P>{title}</Text.P>}
+
+    {children}
+  </div>
+)
+
+const eatEvent = evt => {
+  evt.preventDefault()
+  evt.stopPropagation()
 }
-storiesOf('drawer:rc', module)
+
+storiesOf('Drawer | RC / uncontrolled', module)
+  .addDecorator(story => <div style={{ padding: 48 }}>{story()}</div>)
+  .add('default', () => (
+    <Drawer>
+      <Drawer.Head>
+        <HeadContent />
+      </Drawer.Head>
+
+      <Drawer.Body>
+        <BodyContent />
+      </Drawer.Body>
+    </Drawer>
+  ))
+  .add('prop: onChange', () => (
+    <Drawer onChange={action('on change')}>
+      <Drawer.Head>
+        <HeadContent />
+      </Drawer.Head>
+
+      <Drawer.Body>
+        <BodyContent />
+      </Drawer.Body>
+    </Drawer>
+  ))
+  .add('as render prop', () => (
+    <Drawer>
+      {({ isOpen, toggle }) => (
+        <>
+          <Drawer.Head>
+            <HeadContent
+              onClick={eatEvent}
+              actions={
+                <Button onClick={combineFns(toggle, eatEvent)}>
+                  {isOpen ? 'close' : 'open'}
+                </Button>
+              }
+              title="Click should not toggle"
+            />
+          </Drawer.Head>
+
+          <Drawer.Body>
+            <BodyContent />
+          </Drawer.Body>
+        </>
+      )}
+    </Drawer>
+  ))
+
+storiesOf('Drawer | RC / controlled', module)
+  .addDecorator(story => <div style={{ padding: 48 }}>{story()}</div>)
+  .add('prop: isOpen', () => {
+    function Story() {
+      const [isOpen, setIsOpen] = useState(true)
+
+      return (
+        <Drawer isOpen={isOpen}>
+          <Drawer.Head>
+            <HeadContent
+              actions={
+                <div>
+                  <Button
+                    disabled={isOpen}
+                    onClick={combineFns(() => {
+                      setIsOpen(true)
+                    }, eatEvent)}
+                  >
+                    open
+                  </Button>
+
+                  <Button
+                    disabled={!isOpen}
+                    onClick={combineFns(() => {
+                      setIsOpen(false)
+                    }, eatEvent)}
+                  >
+                    close
+                  </Button>
+                </div>
+              }
+              title="Click should not toggle"
+            />
+          </Drawer.Head>
+
+          <Drawer.Body>
+            <BodyContent />
+          </Drawer.Body>
+        </Drawer>
+      )
+    }
+
+    return <Story />
+  })
+  .add('prop: onRequest(Open/Close/)', () => {
+    function Story() {
+      const [isOpen, setIsOpen] = useState(true)
+
+      return (
+        <Drawer
+          isOpen={isOpen}
+          onRequestOpen={() => setIsOpen(true)}
+          onRequestClose={() => setIsOpen(false)}
+        >
+          {({ isOpen, close, open }) => (
+            <>
+              <Drawer.Head onClick={eatEvent}>
+                <HeadContent
+                  actions={
+                    <div>
+                      <Button
+                        disabled={isOpen}
+                        onClick={combineFns(open, eatEvent)}
+                      >
+                        open
+                      </Button>
+
+                      <Button
+                        disabled={!isOpen}
+                        onClick={combineFns(close, eatEvent)}
+                      >
+                        close
+                      </Button>
+                    </div>
+                  }
+                />
+              </Drawer.Head>
+
+              <Drawer.Body>
+                <BodyContent />
+              </Drawer.Body>
+            </>
+          )}
+        </Drawer>
+      )
+    }
+
+    return <Story />
+  })
+
+storiesOf('Drawer | RC / advanced', module)
   .addDecorator(story => <div style={{ padding: 48 }}>{story()}</div>)
   .add('default', () => {
-    return (
-      <Drawer>
-        <Drawer.Head>
-          <DrawerHeadContent>Click me to open</DrawerHeadContent>
-        </Drawer.Head>
-        <Drawer.Body>
-          <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-        </Drawer.Body>
-      </Drawer>
-    )
+    function Story() {
+      const initialState = { isOpen: true }
+      const stateReducer = (prevState, action, pendingChanges) => {
+        if (action.type === Drawer.types.close && !confirm('allow to close'))
+          return prevState
+
+        if (action.type === Drawer.types.open && !confirm('allow to open'))
+          return prevState
+
+        return pendingChanges
+      }
+
+      return (
+        <Drawer initialState={initialState} stateReducer={stateReducer}>
+          {({ isOpen, close, open }) => (
+            <>
+              <Drawer.Head onClick={eatEvent}>
+                <HeadContent
+                  actions={
+                    <div>
+                      <Button
+                        disabled={isOpen}
+                        onClick={combineFns(open, eatEvent)}
+                      >
+                        open
+                      </Button>
+
+                      <Button
+                        disabled={!isOpen}
+                        onClick={combineFns(close, eatEvent)}
+                      >
+                        close
+                      </Button>
+                    </div>
+                  }
+                />
+              </Drawer.Head>
+
+              <Drawer.Body>
+                <BodyContent />
+              </Drawer.Body>
+            </>
+          )}
+        </Drawer>
+      )
+    }
+
+    return <Story />
   })
-  .add('controlled: external state', () => <ControlledExternalState />)
-  .add('controlled: start open', () => <ControlledStartOpen />)
-  .add('controlled: open with button only', () => <ControlledButtonOnly />)
-  .add('with row component', () => (
-    <Drawer>
-      <Drawer.Head>
-        <Row
-          actionBar={[
-            <Button
-              size={Button.sizes.small}
-              appearance={Button.appearances.flat}
-              key="iHeartCats"
-              icon={<Icon.MoreIcon />}
-            />
-          ]}
-          actionBarVisible
-          image={<Row.Image src="https://cataas.com/cat" />}
-          metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
-          size={Row.sizes.medium}
-          title="Look at me! I'm a <Row />!"
-        />
-      </Drawer.Head>
-      <Drawer.Body>
-        <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-      </Drawer.Body>
-    </Drawer>
-  ))
-  .add('row component with actions', () => (
-    <Drawer>
-      <Drawer.Head>
-        <Row
-          actionBar={[
-            <Button
-              size={Button.sizes.small}
-              appearance={Button.appearances.flat}
-              key="iHeartCats"
-              icon={<Icon.MoreIcon />}
-              onClick={action('action')}
-            />
-          ]}
-          actionBarVisible
-          fullOverlay={
-            <Row.FullOverlayLink>
-              <a href="https://duckduckgo.com?q=overlay">Overlay</a>
-            </Row.FullOverlayLink>
-          }
-          metadata1={[
-            <Row.TextLink>
-              <a href="https://duckduckgo.com?q=cats">Kitten McCatbuns</a>
-            </Row.TextLink>,
-            '23 hours of cuteness'
-          ]}
-          image={
-            <Row.ImageLink>
-              <a href="https://duckduckgo.com?q=image">
-                <img src="https://cataas.com/cat" />
-              </a>
-            </Row.ImageLink>
-          }
-          size={Row.sizes.medium}
-          title={
-            <Row.TextLink>
-              <a href="https://duckduckgo.com?q=title">
-                I'm a Row with Actions
-              </a>
-            </Row.TextLink>
-          }
-        />
-      </Drawer.Head>
-      <Drawer.Body>
-        <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-      </Drawer.Body>
-    </Drawer>
-  ))
-  .add('stack of drawers', () => (
-    <div>
-      <Drawer>
-        <Drawer.Head>
-          <DrawerHeadContent>The Drawer #1</DrawerHeadContent>
-        </Drawer.Head>
-        <Drawer.Body>
-          <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-        </Drawer.Body>
-      </Drawer>
-      <Drawer>
-        <Drawer.Head>
-          <DrawerHeadContent>The Drawer #2</DrawerHeadContent>
-        </Drawer.Head>
-        <Drawer.Body>
-          <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-        </Drawer.Body>
-      </Drawer>
-      <Drawer>
-        <Drawer.Head>
-          <DrawerHeadContent>The Drawer #1</DrawerHeadContent>
-        </Drawer.Head>
-        <Drawer.Body>
-          <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-        </Drawer.Body>
-      </Drawer>
-    </div>
-  ))
-  .add('stack of non-sibling drawers', () => (
-    <>
-      <div>
-        <Drawer>
-          <Drawer.Head>
-            <DrawerHeadContent>The Drawer #1</DrawerHeadContent>
-          </Drawer.Head>
-          <Drawer.Body>
-            <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-          </Drawer.Body>
-        </Drawer>
-      </div>
-
-      <div>
-        <Drawer>
-          <Drawer.Head>
-            <DrawerHeadContent>The Drawer #2</DrawerHeadContent>
-          </Drawer.Head>
-          <Drawer.Body>
-            <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-          </Drawer.Body>
-        </Drawer>
-      </div>
-
-      <div>
-        <Drawer>
-          <Drawer.Head>
-            <DrawerHeadContent>The Drawer #3</DrawerHeadContent>
-          </Drawer.Head>
-          <Drawer.Body>
-            <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-          </Drawer.Body>
-        </Drawer>
-      </div>
-    </>
-  )) // Is accessibility labels something we should be responsible for
-  .add('using custom aria label', () => (
-    <Drawer>
-      <Drawer.Head aria-label="custom drawer header">
-        <DrawerHeadContent>The Drawer</DrawerHeadContent>
-      </Drawer.Head>
-      <Drawer.Body aria-label="custom drawer body">
-        <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-      </Drawer.Body>
-    </Drawer>
-  ))

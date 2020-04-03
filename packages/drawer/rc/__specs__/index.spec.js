@@ -1,51 +1,79 @@
 import React from 'react'
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 
 import { Drawer } from '../index.js'
 
 describe('Drawer', () => {
-  describe('when the arrow icons is clicked', () => {
-    it('toggles open/close', () => {
-      const { container } = render(
+  describe('uncontrolled', () => {
+    beforeEach(() => {
+      render(
         <Drawer>
-          <Drawer.Head>
+          <Drawer.Head data-testid="header">
             <p>Click me to open</p>
           </Drawer.Head>
-          <Drawer.Body>
+
+          <Drawer.Body data-testid="body">
+            <p>Drawer Content here</p>
+          </Drawer.Body>
+        </Drawer>
+      )
+    })
+
+    it('should toggle open/close on header click', async () => {
+      const header = screen.getByTestId('header')
+      const body = screen.getByTestId('body')
+
+      fireEvent.click(header)
+      expect(body).toHaveAttribute('aria-hidden', 'true')
+
+      fireEvent.click(header)
+      expect(body).toHaveAttribute('aria-hidden', 'false')
+    })
+  })
+
+  describe('controlled', () => {
+    let rerender
+
+    beforeEach(() => {
+      const result = render(
+        <Drawer isOpen={false}>
+          <Drawer.Head data-testid="header">
+            <p>Click me to open</p>
+          </Drawer.Head>
+
+          <Drawer.Body data-testid="body">
             <p>Drawer Content here</p>
           </Drawer.Body>
         </Drawer>
       )
 
-      const btn = container.querySelector('div')
-      const contentWrapper = container.querySelector('[aria-hidden]')
+      ;({ rerender } = result)
+    })
 
-      fireEvent.click(btn)
-      expect(contentWrapper).toHaveAttribute('aria-hidden', 'false')
+    it('should start closed', async () => {
+      const body = screen.getByTestId('body')
 
-      fireEvent.click(btn)
-      expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
+      expect(body).not.toBeVisible()
+      expect(body).toHaveAttribute('aria-hidden', 'true')
+    })
+
+    it('should open on prop change', async () => {
+      const body = screen.getByTestId('body')
+
+      rerender(
+        <Drawer isOpen>
+          <Drawer.Head data-testid="header">
+            <p>Click me to open</p>
+          </Drawer.Head>
+
+          <Drawer.Body data-testid="body">
+            <p>Drawer Content here</p>
+          </Drawer.Body>
+        </Drawer>
+      )
+
+      expect(body).toBeVisible()
+      expect(body).toHaveAttribute('aria-hidden', 'false')
     })
   })
-
-  // describe('when is controlled', () => {
-  //   it('isOpen toggles open/closed', () => {
-  //     const { container, rerender } = render(
-  //       <Drawer base={<div />} isOpen>
-  //         <div />
-  //       </Drawer>
-  //     )
-
-  //     const contentWrapper = container.querySelector('[aria-hidden]')
-  //     expect(contentWrapper).toHaveAttribute('aria-hidden', 'false')
-
-  //     rerender(
-  //       <Drawer base={<div />} isOpen={false}>
-  //         <div />
-  //       </Drawer>
-  //     )
-
-  //     expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
-  //   })
-  // })
 })
