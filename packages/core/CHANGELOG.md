@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.1.1...@pluralsight/ps-design-system-core@6.1.2) (2020-04-03)
+
+
+### Bug Fixes
+
+* **core:** missing black color ([f2b583c](https://github.com/pluralsight/design-system/commit/f2b583c8c416b5125a306aa46365f4b38f6e6c7c))
+
+
+
+
+
 ## [6.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.1.1...@pluralsight/ps-design-system-core@6.1.2) (2020-04-02)
 
 

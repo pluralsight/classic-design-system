@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.0.5...@pluralsight/ps-design-system-tab@15.1.0) (2020-04-03)
+
+
+### Features
+
+* **tab:** don't copy .d.ts into dist/esm ([86d929a](https://github.com/pluralsight/design-system/commit/86d929a0be4f89670c0980dc9c63d720194d296d))
+* **tab:** draft for adding in .d.ts files for packages ([7efb10f](https://github.com/pluralsight/design-system/commit/7efb10f551888bf7ac6fa5f50c41125697778046))
+* **tab:** get typings working with esm ([6568326](https://github.com/pluralsight/design-system/commit/6568326be21c0435f9b5ffff453c45883490a170))
+* **tab:** revert .npmignore ([8886c21](https://github.com/pluralsight/design-system/commit/8886c21abc43e53570c441f0dc64fac2ebb1f2d7))
+* **tab:** ship .d.ts files with npm package ([11fb162](https://github.com/pluralsight/design-system/commit/11fb162e674f7374a92000d39674f35441c73f0e))
+* **tab:** use .d.ts files from src ([92bc44c](https://github.com/pluralsight/design-system/commit/92bc44c0eeb9d3d8ebd522857f59ae3a73f899af))
+
+
+
+
+
 ## [15.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.0.5...@pluralsight/ps-design-system-tab@15.0.6) (2020-04-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab
