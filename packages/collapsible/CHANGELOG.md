@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.16...@pluralsight/ps-design-system-collapsible@2.0.17) (2020-04-01)
+
+
+### Bug Fixes
+
+* **collapsible:** ensure it expands completely on page load ([1af0cd8](https://github.com/pluralsight/design-system/commit/1af0cd873f0198eaca43a62940789cbd6dd0b604)), closes [#946](https://github.com/pluralsight/design-system/issues/946)
+
+
+
+
+
 ## [2.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.15...@pluralsight/ps-design-system-collapsible@2.0.16) (2020-03-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-collapsible

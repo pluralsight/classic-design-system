@@ -26,7 +26,7 @@ const waitForHeightTransitionToEnd = element => {
     element.style.height === `${element.getBoundingClientRect().height}px`
   if (isAlreadyAtTargetHeight) return Promise.resolve()
 
-  return new Promise(resolve => {
+  const transitionEndEventPromise = new Promise(resolve => {
     element.addEventListener(
       'transitionend',
       function transitionEnd(event) {
@@ -38,6 +38,17 @@ const waitForHeightTransitionToEnd = element => {
       false
     )
   })
+
+  const transitionDuration = window.getComputedStyle(element).transitionDuration
+  const transitionDurationSeconds = parseFloat(transitionDuration)
+  const transitionDurationPassedPromise = new Promise(resolve => {
+    setTimeout(resolve, transitionDurationSeconds * 1000)
+  })
+
+  return Promise.race([
+    transitionEndEventPromise,
+    transitionDurationPassedPromise
+  ])
 }
 const updateOverflowStyle = ({ element, isOpen, isTransitioning = false }) => {
   if (element) {
