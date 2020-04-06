@@ -1,5 +1,0 @@
-export { default as accessibility } from './accessibility.js'
-export { default as layout } from './layout.js'
-export { default as type } from './type.js'
-export { default as motion } from './motion.js'
-export * from './colors.js'

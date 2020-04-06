@@ -11,7 +11,7 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "node ./build",
-    "build:js": "babel --root-mode upward js --out-dir dist && cp js/index.d.ts dist/index.d.ts",
+    "build:js": "tsc js/index.ts",
     "prepublish": "npm run build"
   },
   "sideEffects": false,
