@@ -7,15 +7,13 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Row from '@pluralsight/ps-design-system-row'
 
-import { Drawer, DrawerProvider } from '../index.js'
+import { Drawer } from '../index.js'
 
 const DrawerHeadContent = props => (
-  <Text.P {...props} style={{ padding: '10px 0', margin: 0 }} />
+  <Text.P {...props} style={{ padding: '10px 0' }} />
 )
 
-const DrawerBodyContent = props => (
-  <Text.P {...props} style={{ padding: 20, margin: 0 }} />
-)
+const DrawerBodyContent = props => <Text.P {...props} style={{ padding: 20 }} />
 
 const ControlledExternalState = () => {
   const [open, setOpen] = useState(false)
@@ -36,8 +34,8 @@ const ControlledExternalState = () => {
       >
         close
       </button>
-      <DrawerProvider
-        open={open}
+      <Drawer
+        isOpen={open}
         onToggle={() => {
           setOpen(!open)
         }}
@@ -48,7 +46,7 @@ const ControlledExternalState = () => {
         <Drawer.Body>
           <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
         </Drawer.Body>
-      </DrawerProvider>
+      </Drawer>
     </>
   )
 }
@@ -56,14 +54,14 @@ const ControlledExternalState = () => {
 const ControlledStartOpen = () => {
   const [open, setOpen] = useState(true)
   return (
-    <DrawerProvider onToggle={() => setOpen(!open)} open={open}>
+    <Drawer onToggle={() => setOpen(!open)} isOpen={open}>
       <Drawer.Head>
         <DrawerHeadContent>Click me to open</DrawerHeadContent>
       </Drawer.Head>
       <Drawer.Body>
         <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
       </Drawer.Body>
-    </DrawerProvider>
+    </Drawer>
   )
 }
 
@@ -72,14 +70,14 @@ const ControlledButtonOnly = () => {
   return (
     <>
       <button onClick={() => setOpen(!open)}>toggle drawer</button>
-      <DrawerProvider open={open}>
+      <Drawer isOpen={open}>
         <Drawer.Head>
           <DrawerHeadContent>Clicking me won't toggle drawer</DrawerHeadContent>
         </Drawer.Head>
         <Drawer.Body>
           <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
         </Drawer.Body>
-      </DrawerProvider>
+      </Drawer>
     </>
   )
 }
@@ -92,7 +90,30 @@ storiesOf('drawer:rc', module)
           <DrawerHeadContent>Click me to open</DrawerHeadContent>
         </Drawer.Head>
         <Drawer.Body>
-          <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
+          <DrawerBodyContent>
+            Ambulance and emergency sirens in New York City are wailing
+            ceaselessly this month, as the number of reported deaths from
+            Covid-19, the disease caused by the novel coronavirus, in the state
+            surpassed 4,100 as of April 6. (Public health experts say that these
+            tallies are severely undercounting the total.) As one of the
+            hardest-hit locations in the US so far, the city is scrambling to
+            find enough ventilators — equipment that gets oxygen into the lungs
+            of severe Covid-19 patients having trouble breathing on their own —
+            for the expected surge in patients. Gov. Andrew Cuomo said at a
+            press conference April 4 that the state had ordered 17,000
+            ventilators from the federal government, but “that order never came
+            through.” Although New York City may be the first city in the
+            country to run out of ventilators, other cities are expected to
+            follow. New Jersey Governor Phil Murphy recently tweeted,
+            “Ventilators are our #1 need right now. I won’t stop fighting to get
+            us the equipment we need to save every life we can.” Louisiana
+            Governor John Bel Edwards predicted that his state would run out of
+            ventilators by April 6. But to save a Covid-19 patient’s life with a
+            ventilator, you also need an ample supply of medications, both to be
+            able to use the machine and to prevent agonizing pain. Experts say
+            there’s a worrisome shortage of those, too — one that’s only
+            expected to grow worse.{' '}
+          </DrawerBodyContent>
         </Drawer.Body>
       </Drawer>
     )

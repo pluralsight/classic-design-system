@@ -1361,55 +1361,55 @@ exports[`Storyshots drawer:rc controlled: external state 1`] = `
   >
     close
   </button>
-  <div
-    data-css-eueoca=""
-    onClick={[Function]}
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": "10px 0",
-        }
-      }
-    >
-      Click me to open
-    </p>
+  <div>
     <div
-      data-css-17v14zz=""
+      data-css-eueoca=""
+      onClick={[Function]}
     >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": "10px 0",
+          }
+        }
       >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
+        Click me to open
+      </p>
+      <div
+        data-css-17v14zz=""
+      >
+        <div
+          data-css-1h00rme=""
+          data-css-7dab2f=""
         >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    aria-hidden={true}
-    data-css-1su0gfe=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
+    <div
+      aria-hidden={true}
+      data-css-1su0gfe=""
     >
-      Drawer Content here
-    </p>
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": 20,
+          }
+        }
+      >
+        Drawer Content here
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -1427,54 +1427,54 @@ exports[`Storyshots drawer:rc controlled: open with button only 1`] = `
   >
     toggle drawer
   </button>
-  <div
-    data-css-eueoca=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": "10px 0",
-        }
-      }
-    >
-      Clicking me won't toggle drawer
-    </p>
+  <div>
     <div
-      data-css-17v14zz=""
+      data-css-eueoca=""
     >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": "10px 0",
+          }
+        }
       >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
+        Clicking me won't toggle drawer
+      </p>
+      <div
+        data-css-17v14zz=""
+      >
+        <div
+          data-css-1h00rme=""
+          data-css-7dab2f=""
         >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    aria-hidden={true}
-    data-css-1su0gfe=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
+    <div
+      aria-hidden={true}
+      data-css-1su0gfe=""
     >
-      Drawer Content here
-    </p>
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": 20,
+          }
+        }
+      >
+        Drawer Content here
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -1487,281 +1487,60 @@ exports[`Storyshots drawer:rc controlled: start open 1`] = `
     }
   }
 >
-  <div
-    data-css-w6nawk=""
-    onClick={[Function]}
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": "10px 0",
-        }
-      }
-    >
-      Click me to open
-    </p>
+  <div>
     <div
-      data-css-17v14zz=""
+      data-css-w6nawk=""
+      onClick={[Function]}
     >
-      <div
-        data-css-7dab2f=""
-        data-css-ns6sfg=""
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": "10px 0",
+          }
+        }
       >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
+        Click me to open
+      </p>
+      <div
+        data-css-17v14zz=""
+      >
+        <div
+          data-css-7dab2f=""
+          data-css-ns6sfg=""
         >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    aria-hidden={false}
-    data-css-1su0gfe=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
+    <div
+      aria-hidden={false}
+      data-css-1su0gfe=""
     >
-      Drawer Content here
-    </p>
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": 20,
+          }
+        }
+      >
+        Drawer Content here
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots drawer:rc default 1`] = `
-<div
-  style={
-    Object {
-      "padding": 48,
-    }
-  }
->
-  <div
-    data-css-eueoca=""
-    onClick={[Function]}
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": "10px 0",
-        }
-      }
-    >
-      Click me to open
-    </p>
-    <div
-      data-css-17v14zz=""
-    >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div
-    aria-hidden={true}
-    data-css-1su0gfe=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
-    >
-      Drawer Content here
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer:rc row component with actions 1`] = `
-<div
-  style={
-    Object {
-      "padding": 48,
-    }
-  }
->
-  <div
-    data-css-eueoca=""
-    onClick={[Function]}
-  >
-    <div
-      data-css-19vzw9x=""
-    >
-      <div
-        data-css-js3ti3=""
-      >
-        <span
-          data-css-15yq56v=""
-        >
-          <a
-            href="https://duckduckgo.com?q=image"
-          >
-            <img
-              src="https://cataas.com/cat"
-            />
-          </a>
-        </span>
-        <div
-          data-css-1gtggsm=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            <a
-              href="https://duckduckgo.com?q=overlay"
-            >
-              Overlay
-            </a>
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          <span
-            data-css-1bnk4mn=""
-          >
-            <a
-              href="https://duckduckgo.com?q=title"
-            >
-              I'm a Row with Actions
-            </a>
-          </span>
-        </div>
-        <div
-          data-css-145nbth=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="https://duckduckgo.com?q=cats"
-              >
-                Kitten McCatbuns
-              </a>
-            </span>
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            23 hours of cuteness
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-7b22zo=""
-      >
-        <button
-          data-css-7x6n1t=""
-          disabled={false}
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-17v14zz=""
-    >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div
-    aria-hidden={true}
-    data-css-1su0gfe=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
-    >
-      Drawer Content here
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer:rc stack of drawers 1`] = `
 <div
   style={
     Object {
@@ -1778,12 +1557,11 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
         data-css-1djw98v=""
         style={
           Object {
-            "margin": 0,
             "padding": "10px 0",
           }
         }
       >
-        The Drawer #1
+        Click me to open
       </p>
       <div
         data-css-17v14zz=""
@@ -1812,29 +1590,141 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
         data-css-1djw98v=""
         style={
           Object {
-            "margin": 0,
             "padding": 20,
           }
         }
       >
-        Drawer Content here
+        Ambulance and emergency sirens in New York City are wailing ceaselessly this month, as the number of reported deaths from Covid-19, the disease caused by the novel coronavirus, in the state surpassed 4,100 as of April 6. (Public health experts say that these tallies are severely undercounting the total.) As one of the hardest-hit locations in the US so far, the city is scrambling to find enough ventilators — equipment that gets oxygen into the lungs of severe Covid-19 patients having trouble breathing on their own — for the expected surge in patients. Gov. Andrew Cuomo said at a press conference April 4 that the state had ordered 17,000 ventilators from the federal government, but “that order never came through.” Although New York City may be the first city in the country to run out of ventilators, other cities are expected to follow. New Jersey Governor Phil Murphy recently tweeted, “Ventilators are our #1 need right now. I won’t stop fighting to get us the equipment we need to save every life we can.” Louisiana Governor John Bel Edwards predicted that his state would run out of ventilators by April 6. But to save a Covid-19 patient’s life with a ventilator, you also need an ample supply of medications, both to be able to use the machine and to prevent agonizing pain. Experts say there’s a worrisome shortage of those, too — one that’s only expected to grow worse.
+         
       </p>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer:rc row component with actions 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div>
     <div
       data-css-eueoca=""
       onClick={[Function]}
     >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": "10px 0",
-          }
-        }
+      <div
+        data-css-19vzw9x=""
       >
-        The Drawer #2
-      </p>
+        <div
+          data-css-js3ti3=""
+        >
+          <span
+            data-css-15yq56v=""
+          >
+            <a
+              href="https://duckduckgo.com?q=image"
+            >
+              <img
+                src="https://cataas.com/cat"
+              />
+            </a>
+          </span>
+          <div
+            data-css-1gtggsm=""
+          >
+            <span
+              data-css-1fxa3fl=""
+              onBlur={[Function]}
+              onFocus={[Function]}
+            >
+              <a
+                href="https://duckduckgo.com?q=overlay"
+              >
+                Overlay
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-kxulf3=""
+        >
+          <div
+            data-css-2pesz8=""
+          >
+            <span
+              data-css-1bnk4mn=""
+            >
+              <a
+                href="https://duckduckgo.com?q=title"
+              >
+                I'm a Row with Actions
+              </a>
+            </span>
+          </div>
+          <div
+            data-css-145nbth=""
+          >
+            <span
+              data-css-1kcrbi9=""
+            >
+              <span
+                data-css-1bnk4mn=""
+              >
+                <a
+                  href="https://duckduckgo.com?q=cats"
+                >
+                  Kitten McCatbuns
+                </a>
+              </span>
+            </span>
+            <span
+              aria-hidden={true}
+              data-css-kykfz1=""
+            >
+              ·
+            </span>
+            <span
+              data-css-1kcrbi9=""
+            >
+              23 hours of cuteness
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-7b22zo=""
+        >
+          <button
+            data-css-7x6n1t=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="more icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </div>
+      </div>
       <div
         data-css-17v14zz=""
       >
@@ -1862,7 +1752,6 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
         data-css-1djw98v=""
         style={
           Object {
-            "margin": 0,
             "padding": 20,
           }
         }
@@ -1870,55 +1759,168 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
         Drawer Content here
       </p>
     </div>
-    <div
-      data-css-eueoca=""
-      onClick={[Function]}
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": "10px 0",
-          }
-        }
-      >
-        The Drawer #1
-      </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots drawer:rc stack of drawers 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <div>
+    <div>
       <div
-        data-css-17v14zz=""
+        data-css-eueoca=""
+        onClick={[Function]}
       >
-        <div
-          data-css-1h00rme=""
-          data-css-7dab2f=""
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
         >
-          <svg
-            aria-label="caret down icon"
-            role="img"
-            viewBox="0 0 24 24"
+          The Drawer #1
+        </p>
+        <div
+          data-css-17v14zz=""
+        >
+          <div
+            data-css-1h00rme=""
+            data-css-7dab2f=""
           >
-            <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-            />
-          </svg>
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      aria-hidden={true}
-      data-css-1su0gfe=""
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": 20,
-          }
-        }
+      <div
+        aria-hidden={true}
+        data-css-1su0gfe=""
       >
-        Drawer Content here
-      </p>
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          Drawer Content here
+        </p>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-eueoca=""
+        onClick={[Function]}
+      >
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
+        >
+          The Drawer #2
+        </p>
+        <div
+          data-css-17v14zz=""
+        >
+          <div
+            data-css-1h00rme=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden={true}
+        data-css-1su0gfe=""
+      >
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          Drawer Content here
+        </p>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-eueoca=""
+        onClick={[Function]}
+      >
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
+        >
+          The Drawer #1
+        </p>
+        <div
+          data-css-17v14zz=""
+        >
+          <div
+            data-css-1h00rme=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-hidden={true}
+        data-css-1su0gfe=""
+      >
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          Drawer Content here
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -1933,159 +1935,159 @@ exports[`Storyshots drawer:rc stack of non-sibling drawers 1`] = `
   }
 >
   <div>
-    <div
-      data-css-eueoca=""
-      onClick={[Function]}
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": "10px 0",
-          }
-        }
-      >
-        The Drawer #1
-      </p>
+    <div>
       <div
-        data-css-17v14zz=""
+        data-css-eueoca=""
+        onClick={[Function]}
       >
-        <div
-          data-css-1h00rme=""
-          data-css-7dab2f=""
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
         >
-          <svg
-            aria-label="caret down icon"
-            role="img"
-            viewBox="0 0 24 24"
+          The Drawer #1
+        </p>
+        <div
+          data-css-17v14zz=""
+        >
+          <div
+            data-css-1h00rme=""
+            data-css-7dab2f=""
           >
-            <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-            />
-          </svg>
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      aria-hidden={true}
-      data-css-1su0gfe=""
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": 20,
-          }
-        }
+      <div
+        aria-hidden={true}
+        data-css-1su0gfe=""
       >
-        Drawer Content here
-      </p>
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          Drawer Content here
+        </p>
+      </div>
     </div>
   </div>
   <div>
-    <div
-      data-css-eueoca=""
-      onClick={[Function]}
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": "10px 0",
-          }
-        }
-      >
-        The Drawer #2
-      </p>
+    <div>
       <div
-        data-css-17v14zz=""
+        data-css-eueoca=""
+        onClick={[Function]}
       >
-        <div
-          data-css-1h00rme=""
-          data-css-7dab2f=""
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
         >
-          <svg
-            aria-label="caret down icon"
-            role="img"
-            viewBox="0 0 24 24"
+          The Drawer #2
+        </p>
+        <div
+          data-css-17v14zz=""
+        >
+          <div
+            data-css-1h00rme=""
+            data-css-7dab2f=""
           >
-            <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-            />
-          </svg>
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      aria-hidden={true}
-      data-css-1su0gfe=""
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": 20,
-          }
-        }
+      <div
+        aria-hidden={true}
+        data-css-1su0gfe=""
       >
-        Drawer Content here
-      </p>
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          Drawer Content here
+        </p>
+      </div>
     </div>
   </div>
   <div>
-    <div
-      data-css-eueoca=""
-      onClick={[Function]}
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": "10px 0",
-          }
-        }
-      >
-        The Drawer #3
-      </p>
+    <div>
       <div
-        data-css-17v14zz=""
+        data-css-eueoca=""
+        onClick={[Function]}
       >
-        <div
-          data-css-1h00rme=""
-          data-css-7dab2f=""
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": "10px 0",
+            }
+          }
         >
-          <svg
-            aria-label="caret down icon"
-            role="img"
-            viewBox="0 0 24 24"
+          The Drawer #3
+        </p>
+        <div
+          data-css-17v14zz=""
+        >
+          <div
+            data-css-1h00rme=""
+            data-css-7dab2f=""
           >
-            <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-            />
-          </svg>
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      aria-hidden={true}
-      data-css-1su0gfe=""
-    >
-      <p
-        data-css-1djw98v=""
-        style={
-          Object {
-            "margin": 0,
-            "padding": 20,
-          }
-        }
+      <div
+        aria-hidden={true}
+        data-css-1su0gfe=""
       >
-        Drawer Content here
-      </p>
+        <p
+          data-css-1djw98v=""
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          Drawer Content here
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -2099,57 +2101,57 @@ exports[`Storyshots drawer:rc using custom aria label 1`] = `
     }
   }
 >
-  <div
-    aria-label="custom drawer header"
-    data-css-eueoca=""
-    onClick={[Function]}
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": "10px 0",
-        }
-      }
-    >
-      The Drawer
-    </p>
+  <div>
     <div
-      data-css-17v14zz=""
+      aria-label="custom drawer header"
+      data-css-eueoca=""
+      onClick={[Function]}
     >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": "10px 0",
+          }
+        }
       >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
+        The Drawer
+      </p>
+      <div
+        data-css-17v14zz=""
+      >
+        <div
+          data-css-1h00rme=""
+          data-css-7dab2f=""
         >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    aria-hidden={true}
-    aria-label="custom drawer body"
-    data-css-1su0gfe=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
+    <div
+      aria-hidden={true}
+      aria-label="custom drawer body"
+      data-css-1su0gfe=""
     >
-      Drawer Content here
-    </p>
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": 20,
+          }
+        }
+      >
+        Drawer Content here
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -2162,114 +2164,115 @@ exports[`Storyshots drawer:rc with row component 1`] = `
     }
   }
 >
-  <div
-    data-css-eueoca=""
-    onClick={[Function]}
-  >
+  <div>
     <div
-      data-css-19vzw9x=""
+      data-css-eueoca=""
+      onClick={[Function]}
     >
       <div
-        data-css-js3ti3=""
+        data-css-19vzw9x=""
       >
         <div
-          data-css-y8jh93=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          Look at me! I'm a &lt;Row /&gt;!
-        </div>
-        <div
-          data-css-145nbth=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Kitten McCatbuns
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            23 hours of cuteness
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-7zyoug=""
-      >
-        <button
-          data-css-7x6n1t=""
-          disabled={false}
-          style={Object {}}
+          data-css-js3ti3=""
         >
           <div
-            data-css-y80vay=""
+            data-css-y8jh93=""
+          />
+        </div>
+        <div
+          data-css-kxulf3=""
+        >
+          <div
+            data-css-2pesz8=""
+          >
+            Look at me! I'm a &lt;Row /&gt;!
+          </div>
+          <div
+            data-css-145nbth=""
+          >
+            <span
+              data-css-1kcrbi9=""
+            >
+              Kitten McCatbuns
+            </span>
+            <span
+              aria-hidden={true}
+              data-css-kykfz1=""
+            >
+              ·
+            </span>
+            <span
+              data-css-1kcrbi9=""
+            >
+              23 hours of cuteness
+            </span>
+          </div>
+        </div>
+        <div
+          data-css-7zyoug=""
+        >
+          <button
+            data-css-7x6n1t=""
+            disabled={false}
+            style={Object {}}
           >
             <div
-              data-css-7dab2f=""
+              data-css-y80vay=""
             >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
+              <div
+                data-css-7dab2f=""
               >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
+                <svg
+                  aria-label="more icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-17v14zz=""
+      >
+        <div
+          data-css-1h00rme=""
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
       </div>
     </div>
     <div
-      data-css-17v14zz=""
+      aria-hidden={true}
+      data-css-1su0gfe=""
     >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div
-    aria-hidden={true}
-    data-css-1su0gfe=""
-  >
-    <p
-      data-css-1djw98v=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
+      <p
+        data-css-1djw98v=""
+        style={
+          Object {
+            "padding": 20,
+          }
         }
-      }
-    >
-      Drawer Content here
-    </p>
+      >
+        Drawer Content here
+      </p>
+    </div>
   </div>
 </div>
 `;

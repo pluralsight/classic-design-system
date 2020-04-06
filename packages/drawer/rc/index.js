@@ -1,23 +1,25 @@
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, {
-  useState,
   createContext,
   useContext,
   useImperativeHandle,
-  useMemo
+  forwardRef
 } from 'react'
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { useToggle } from '@pluralsight/ps-design-system-util'
+
 import { useCollapsible } from '@pluralsight/ps-design-system-collapsible/rc'
 import stylesheet from './css/index.js'
 
 const styles = {
-  head: ({ themeName, open }) =>
+  head: ({ themeName, isOpen }) =>
     css(
       stylesheet[`.psds-drawer__head`],
-      open && stylesheet['.psds-drawer__head.psds-drawer--isOpen'],
+      isOpen && stylesheet['.psds-drawer__head.psds-drawer--isOpen'],
       stylesheet[`.psds-drawer__head.psds-theme--${themeName}`]
     ),
   body: themeName =>
@@ -26,17 +28,17 @@ const styles = {
       stylesheet[`.psds-drawer__body.psds-theme--${themeName}`]
     ),
   iconSlot: () => css(stylesheet['.psds-drawer__icon-slot']),
-  rotatable: ({ open, themeName }) =>
+  rotatable: ({ isOpen, themeName }) =>
     css(
       stylesheet['.psds-drawer__rotatable'],
       stylesheet[`.psds-drawer__rotatable.psds-theme--${themeName}`],
-      open && stylesheet['.psds-drawer__rotatable.psds-drawer--isOpen']
+      isOpen && stylesheet['.psds-drawer__rotatable.psds-drawer--isOpen']
     ),
   collapsible: () => css(stylesheet['.psds-drawer__collapsible'])
 }
 const DrawerContext = createContext()
 
-export const useDrawerContext = () => {
+const useDrawerContext = () => {
   const context = useContext(DrawerContext)
   if (!context) {
     throw new Error(
@@ -46,58 +48,55 @@ export const useDrawerContext = () => {
   return context
 }
 
-const Head = React.forwardRef(({ children, ...rest }, ref) => {
+const Head = forwardRef(({ children, ...rest }, ref) => {
   const themeName = useTheme()
-  const { open, onToggle } = useDrawerContext()
+  const { isOpen, onToggle } = useDrawerContext()
   return (
     <div
-      {...styles.head({ open, themeName })}
+      {...styles.head({ isOpen, themeName })}
       onClick={onToggle}
       ref={ref}
-      {...rest}
+      {...filterReactProps(rest)}
     >
       {children}
       <div {...styles.iconSlot()}>
-        <CaretDownIcon {...styles.rotatable({ open, themeName })} />
+        <CaretDownIcon {...styles.rotatable({ isOpen, themeName })} />
       </div>
     </div>
   )
 })
 
-const Body = React.forwardRef(({ children, ...rest }, forwardedRef) => {
+const Body = forwardRef(({ children, ...rest }, forwardedRef) => {
   const themeName = useTheme()
-  const { open } = useDrawerContext()
-  const { 'aria-hidden': ariaHidden, ref } = useCollapsible(open)
+  const { isOpen } = useDrawerContext()
+  const { 'aria-hidden': ariaHidden, ref } = useCollapsible(isOpen)
   useImperativeHandle(forwardedRef, () => ref.current)
   return (
     <div
       aria-hidden={ariaHidden}
       ref={ref}
       {...styles.body(themeName)}
-      {...rest}
+      {...filterReactProps(rest)}
     >
       {children}
     </div>
   )
 })
 
-export const DrawerProvider = ({ children, open, onToggle }) => {
-  const value = useMemo(() => ({ open, onToggle }), [open, onToggle])
-  return (
-    <DrawerContext.Provider value={value}>{children}</DrawerContext.Provider>
-  )
-}
+export const Drawer = forwardRef(
+  ({ children, isOpen, onToggle, ...rest }, ref) => {
+    const value = useToggle({ isOpen, onToggle })
+    return (
+      <div ref={ref} {...filterReactProps(rest)}>
+        <DrawerContext.Provider value={value}>
+          {children}
+        </DrawerContext.Provider>
+      </div>
+    )
+  }
+)
 
-export const Drawer = ({ children }) => {
-  const [open, setOpen] = useState(false)
-  return (
-    <DrawerProvider open={open} onToggle={() => setOpen(!open)}>
-      {children}
-    </DrawerProvider>
-  )
-}
-
-Head.displayName = 'Drawer(Head)'
+Head.displayName = 'Drawer.Head'
 Head.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.node,
@@ -105,19 +104,16 @@ Head.propTypes = {
   ])
 }
 
-Body.displayName = 'Drawer(Body)'
+Body.displayName = 'Drawer.Body'
 Body.propTypes = {
   ...Head.propTypes
 }
 
-DrawerProvider.propTypes = {
-  onToggle: PropTypes.func,
-  open: PropTypes.bool,
-  ...Head.propTypes
-}
-DrawerProvider.displayName = 'Drawer(Provider)'
 Drawer.propTypes = {
+  onToggle: PropTypes.func,
+  isOpen: PropTypes.bool,
   ...Head.propTypes
 }
+Drawer.displayName = 'Drawer'
 Drawer.Head = Head
 Drawer.Body = Body
