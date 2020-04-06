@@ -50,7 +50,7 @@ const waitForHeightTransitionToEnd = element => {
 }
 const updateOverflowStyle = ({ element, open, isTransitioning = false }) => {
   if (element) {
-    element.style.overflow = isTransitioning || !open ? 'hidden' : 'visible'
+    element.style.overflow = isTransitioning || !open ? 'hidden' : 'auto'
     element.style.visibility = isTransitioning || open ? 'visible' : 'hidden'
   }
 }
