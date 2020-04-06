@@ -7,7 +7,7 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Row from '@pluralsight/ps-design-system-row'
 
-import { Drawer, useDrawer } from '../index.js'
+import { Drawer, DrawerProvider } from '../index.js'
 
 const DrawerHeadContent = props => (
   <Text.P {...props} style={{ padding: '10px 0', margin: 0 }} />
@@ -18,19 +18,7 @@ const DrawerBodyContent = props => (
 )
 
 const ControlledExternalState = () => {
-  const [open, setOpen] = useState(true)
-  const { onOpen, onClose } = useDrawer({
-    init: () => ({
-      open
-    })
-  })
-  React.useEffect(() => {
-    if (open) {
-      onOpen()
-    } else {
-      onClose()
-    }
-  }, [open, onOpen, onClose])
+  const [open, setOpen] = useState(false)
 
   return (
     <>
@@ -48,7 +36,7 @@ const ControlledExternalState = () => {
       >
         close
       </button>
-      <Drawer
+      <DrawerProvider
         open={open}
         onToggle={() => {
           setOpen(!open)
@@ -60,41 +48,38 @@ const ControlledExternalState = () => {
         <Drawer.Body>
           <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
         </Drawer.Body>
-      </Drawer>
+      </DrawerProvider>
     </>
   )
 }
 
-const ControlledStartOpen = () => (
-  <Drawer
-    {...useDrawer({
-      init: () => ({
-        open: true
-      })
-    })}
-  >
-    <Drawer.Head>
-      <DrawerHeadContent>Click me to open</DrawerHeadContent>
-    </Drawer.Head>
-    <Drawer.Body>
-      <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-    </Drawer.Body>
-  </Drawer>
-)
+const ControlledStartOpen = () => {
+  const [open, setOpen] = useState(true)
+  return (
+    <DrawerProvider onToggle={() => setOpen(!open)} open={open}>
+      <Drawer.Head>
+        <DrawerHeadContent>Click me to open</DrawerHeadContent>
+      </Drawer.Head>
+      <Drawer.Body>
+        <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
+      </Drawer.Body>
+    </DrawerProvider>
+  )
+}
 
 const ControlledButtonOnly = () => {
-  const { onToggle, open } = useDrawer()
+  const [open, setOpen] = useState(false)
   return (
     <>
-      <button onClick={onToggle}>toggle drawer</button>
-      <Drawer open={open}>
+      <button onClick={() => setOpen(!open)}>toggle drawer</button>
+      <DrawerProvider open={open}>
         <Drawer.Head>
           <DrawerHeadContent>Clicking me won't toggle drawer</DrawerHeadContent>
         </Drawer.Head>
         <Drawer.Body>
           <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
         </Drawer.Body>
-      </Drawer>
+      </DrawerProvider>
     </>
   )
 }

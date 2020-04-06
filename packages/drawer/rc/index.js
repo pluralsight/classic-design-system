@@ -1,10 +1,11 @@
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, {
-  useReducer,
+  useState,
   createContext,
   useContext,
-  useImperativeHandle
+  useImperativeHandle,
+  useMemo
 } from 'react'
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
@@ -80,47 +81,19 @@ const Body = React.forwardRef(({ children, ...rest }, forwardedRef) => {
   )
 })
 
-const drawerReducer = (state, action) => {
-  return action.type === Drawer.types.toggleDrawer
-    ? { open: !state.open }
-    : action.type === Drawer.types.closeDrawer
-    ? { open: false }
-    : action.type === Drawer.types.openDrawer
-    ? { open: true }
-    : (() => {
-        throw new Error(`Unhandled type: ${action.type}`)
-      })()
-}
-
-export const useDrawer = ({ reducer = (s, a) => a.changes, init } = {}) => {
-  const [{ open }, dispatch] = useReducer(
-    (state, action) => {
-      const changes = drawerReducer(state, action)
-      return reducer(state, { ...action, changes })
-    },
-    { open: false },
-    init
-  )
-  const onToggle = () => {
-    dispatch({ type: Drawer.types.toggleDrawer })
-  }
-  const onOpen = () => {
-    dispatch({ type: Drawer.types.openDrawer })
-  }
-  const onClose = () => {
-    dispatch({ type: Drawer.types.closeDrawer })
-  }
-  return { open, onToggle, onClose, onOpen }
-}
-
-export const Drawer = ({ children, open, onToggle }) => {
-  const uncontrolled = useDrawer()
-  const value = React.useMemo(
-    () => ({ ...(open !== undefined ? { open, onToggle } : uncontrolled) }),
-    [open, onToggle, uncontrolled]
-  )
+export const DrawerProvider = ({ children, open, onToggle }) => {
+  const value = useMemo(() => ({ open, onToggle }), [open, onToggle])
   return (
     <DrawerContext.Provider value={value}>{children}</DrawerContext.Provider>
+  )
+}
+
+export const Drawer = ({ children }) => {
+  const [open, setOpen] = useState(false)
+  return (
+    <DrawerProvider open={open} onToggle={() => setOpen(!open)}>
+      {children}
+    </DrawerProvider>
   )
 }
 
@@ -137,15 +110,14 @@ Body.propTypes = {
   ...Head.propTypes
 }
 
-Drawer.propTypes = {
+DrawerProvider.propTypes = {
   onToggle: PropTypes.func,
   open: PropTypes.bool,
   ...Head.propTypes
 }
+DrawerProvider.displayName = 'Drawer(Provider)'
+Drawer.propTypes = {
+  ...Head.propTypes
+}
 Drawer.Head = Head
 Drawer.Body = Body
-Drawer.types = {
-  toggleDrawer: 'TOGGLE_DRAWER',
-  openDrawer: 'OPEN_DRAWER',
-  closeDrawer: 'CLOSE_DRAWER'
-}

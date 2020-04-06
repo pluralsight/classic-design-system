@@ -1362,7 +1362,7 @@ exports[`Storyshots drawer:rc controlled: external state 1`] = `
     close
   </button>
   <div
-    data-css-w6nawk=""
+    data-css-eueoca=""
     onClick={[Function]}
   >
     <p
@@ -1380,8 +1380,8 @@ exports[`Storyshots drawer:rc controlled: external state 1`] = `
       data-css-17v14zz=""
     >
       <div
+        data-css-1h00rme=""
         data-css-7dab2f=""
-        data-css-ns6sfg=""
       >
         <svg
           aria-label="caret down icon"
@@ -1396,7 +1396,7 @@ exports[`Storyshots drawer:rc controlled: external state 1`] = `
     </div>
   </div>
   <div
-    aria-hidden={false}
+    aria-hidden={true}
     data-css-1su0gfe=""
   >
     <p
