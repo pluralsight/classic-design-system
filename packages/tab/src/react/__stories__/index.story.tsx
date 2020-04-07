@@ -1,14 +1,13 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Tab from '../index.js'
+import Tab from '../../index.js'
 
-function randomIntBetween(min, max) {
+function randomIntBetween(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function NavigableExample({ count = 5, resizeEvery }) {
+function NavigableExample({ count = 5, resizeEvery } : { count?: number, resizeEvery?: number}) {
   const [activeIndex, setActiveIndex] = React.useState(2)
   const [width, setWidth] = React.useState(100)
   const menus = Array(count)
@@ -19,19 +18,19 @@ function NavigableExample({ count = 5, resizeEvery }) {
       content: `Menu stuff ${i}`
     }))
   React.useEffect(() => {
-    let timer
+    let timer : number | undefined
     if (resizeEvery) {
-      timer = setInterval(() => {
+      timer = window.setInterval(() => {
         setWidth(randomIntBetween(25, 100))
       }, resizeEvery)
     }
     return () => {
       clearInterval(timer)
-      timer = null
+      timer = undefined
     }
   }, [resizeEvery])
 
-  function handleTabClick(i) {
+  function handleTabClick(i: number, evt: React.MouseEvent) {
     setActiveIndex(i)
   }
 
@@ -53,10 +52,6 @@ function NavigableExample({ count = 5, resizeEvery }) {
       )}
     </div>
   )
-}
-NavigableExample.propTypes = {
-  count: PropTypes.number,
-  resizeEvery: PropTypes.number
 }
 
 storiesOf('default', module)

@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.0.5...@pluralsight/ps-design-system-drawer@7.0.6) (2020-04-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-drawer
+
+
+
+
+
+## [7.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.0.5...@pluralsight/ps-design-system-drawer@7.0.6) (2020-04-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-drawer
+
+
+
+
+
+## [7.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.0.4...@pluralsight/ps-design-system-drawer@7.0.5) (2020-04-01)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-drawer
+
+
+
+
+
+## [7.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.0.3...@pluralsight/ps-design-system-drawer@7.0.4) (2020-03-27)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-drawer
+
+
+
+
+
 ## [7.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.0.2...@pluralsight/ps-design-system-drawer@7.0.3) (2020-03-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

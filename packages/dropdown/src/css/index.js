@@ -1,5 +1,5 @@
 import {
-  colorsBackgroundDark,
+  colorsBackgroundUtility,
   colorsBackgroundLight,
   colorsBorder,
   colorsStatus,
@@ -56,8 +56,8 @@ export default {
   },
   [`.psds-dropdown__field--appearance-${vars.appearances.subtle}`]: {
     color: colorsTextIcon.highOnDark,
-    background: colorsBackgroundDark[1],
-    border: `1px solid ${colorsBorder.highOnDark}`
+    backgroundColor: colorsBackgroundUtility[30],
+    border: `none`
   },
 
   // __field-container

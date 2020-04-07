@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.1.0...@pluralsight/ps-design-system-icon@18.1.1) (2020-04-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+## [18.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.1.0...@pluralsight/ps-design-system-icon@18.1.1) (2020-04-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
+# [18.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.0.4...@pluralsight/ps-design-system-icon@18.1.0) (2020-04-01)
+
+
+### Features
+
+* **icon:** add new icons ([e7a7b13](https://github.com/pluralsight/design-system/commit/e7a7b130fedffb1512b5f24d249566c670e671b6))
+
+
+
+
+
+## [18.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.0.3...@pluralsight/ps-design-system-icon@18.0.4) (2020-03-27)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-icon
+
+
+
+
+
 ## [18.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.0.2...@pluralsight/ps-design-system-icon@18.0.3) (2020-03-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
