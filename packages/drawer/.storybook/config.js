@@ -11,7 +11,7 @@ const rc = requireContext('../rc', true, /\.story\.js$/)
 
 function loadStories() {
   req.keys().forEach(filename => req(filename))
-  require('../rc/__stories__/index.story');
+  rc.keys().forEach(filename => rc(filename))
 }
 
 configure(loadStories, module)
