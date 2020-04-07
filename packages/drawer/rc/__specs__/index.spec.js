@@ -26,20 +26,20 @@ describe('Drawer', () => {
       expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
     })
   })
-  const Controlled = () => {
-    const [open, setOpen] = useState(false)
-    return (
-      <Drawer onToggle={() => setOpen(!open)} isOpen={open}>
-        <Drawer.Head data-testid="head">
-          <p>Click me to open</p>
-        </Drawer.Head>
-        <Drawer.Body data-testid="body">
-          <p>Drawer Content here</p>
-        </Drawer.Body>
-      </Drawer>
-    )
-  }
   it('when is controlled', () => {
+    const Controlled = () => {
+      const [open, setOpen] = useState(false)
+      return (
+        <Drawer onToggle={() => setOpen(!open)} isOpen={open}>
+          <Drawer.Head data-testid="head">
+            <p>Click me to open</p>
+          </Drawer.Head>
+          <Drawer.Body data-testid="body">
+            <p>Drawer Content here</p>
+          </Drawer.Body>
+        </Drawer>
+      )
+    }
     const { getByTestId } = render(<Controlled />)
     const btn = getByTestId('head')
     const contentWrapper = getByTestId('body')
