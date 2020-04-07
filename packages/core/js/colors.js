@@ -147,7 +147,7 @@ export const colorsBackgroundLight = {
 }
 
 export const colorsBackgroundUtility = {
-  base: '#B0B0B0',
+  base: '#8A99A8',
   25: 'rgba(138,153,168, 0.25)',
   30: 'rgba(138,153,168, 0.30)',
   40: 'rgba(138,153,168, 0.40)'

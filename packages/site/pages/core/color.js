@@ -98,7 +98,7 @@ Swatch.propTypes = {
 
 function Grid(props) {
   return (
-    <div className="grid">
+    <div className={`grid ${props.bg ? 'grid--bg' : ''}`}>
       {props.children}
       <style jsx>{`
         .grid {
@@ -108,6 +108,10 @@ function Grid(props) {
             : `${core.layout.spacingMedium} ${core.layout.spacingLarge}`};
           grid-template-columns: repeat(${props.cols}, 1fr);
         }
+        .grid--bg {
+          background-color: ${props.bg};
+          padding: ${core.layout.spacingLarge};
+        }
       `}</style>
     </div>
   )
@@ -116,6 +120,7 @@ Grid.defaultProps = {
   cols: 3
 }
 Grid.propTypes = {
+  bg: PropTypes.string,
   children: PropTypes.node,
   cols: PropTypes.number
 }
@@ -176,6 +181,78 @@ const colorCategories = [
             js: 'colorsBackgroundLight[3]',
             hex: core.colorsBackgroundLight[3],
             border: core.colorsBorder.lowOnLight
+          }
+        ]
+      }
+    ]
+  },
+  {
+    heading: 'Utility color',
+    explanation: (
+      <Text.P>
+        Use utility color with transparency to lighten or darken backgrounds
+        beyond the three colors provided.
+      </Text.P>
+    ),
+    subCategories: [
+      {
+        label: 'Utility base color',
+        colors: [
+          {
+            name: 'Utility',
+            var: 'psColorsBackgroundUtilityBase',
+            js: 'colorsBackgroundUtility.base',
+            bg: core.colorsBackgroundUtility.base,
+            hex: core.colorsBackgroundUtility.base + ' / rgba(138, 153, 168, 1)'
+          }
+        ]
+      },
+      {
+        label: 'Utility with transparency on a dark background',
+        gridBg: core.colorsBackgroundDark[2],
+        colors: [
+          {
+            name: 'Utility-25',
+            var: 'psColorsBackgroundUtility25',
+            js: 'colorsBackgroundUtility[25]',
+            hex: core.colorsBackgroundUtility[25]
+          },
+          {
+            name: 'Utility-30',
+            var: 'psColorsBackgroundUtility30',
+            js: 'colorsBackgroundUtility[30]',
+            hex: core.colorsBackgroundUtility[30]
+          },
+          {
+            name: 'Utility-40',
+            var: 'psColorsBackgroundUtility40',
+            js: 'colorsBackgroundUtility[40]',
+            hex: core.colorsBackgroundUtility[40]
+          }
+        ]
+      },
+      {
+        label: 'Utility with transparency on a light background',
+        gridBg: core.colorsBackgroundLight[2],
+        fg: core.colorsTextIcon.highOnLight,
+        colors: [
+          {
+            name: 'Utility-25',
+            var: 'psColorsBackgroundUtility25',
+            js: 'colorsBackgroundUtility[25]',
+            hex: core.colorsBackgroundUtility[25]
+          },
+          {
+            name: 'Utility-30',
+            var: 'psColorsBackgroundUtility30',
+            js: 'colorsBackgroundUtility[30]',
+            hex: core.colorsBackgroundUtility[30]
+          },
+          {
+            name: 'Utility-40',
+            var: 'psColorsBackgroundUtility40',
+            js: 'colorsBackgroundUtility[40]',
+            hex: core.colorsBackgroundUtility[40]
           }
         ]
       }
@@ -569,6 +646,7 @@ myCssInJsSolution({
                       ? subCat.colors.length
                       : subCat.cols
                   }
+                  bg={subCat.gridBg}
                 >
                   {subCat.colors.map(color => (
                     <Swatch
