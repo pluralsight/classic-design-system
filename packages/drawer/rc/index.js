@@ -56,6 +56,8 @@ const Head = forwardRef(({ children, ...rest }, ref) => {
       {...styles.head({ isOpen, themeName })}
       onClick={onToggle}
       ref={ref}
+      role="button"
+      aria-expanded={isOpen}
       {...filterReactProps(rest)}
     >
       {children}
