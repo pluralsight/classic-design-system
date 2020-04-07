@@ -11,7 +11,7 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "node ./build",
-    "build:js": "tsc js/index.ts",
+    "build:js": "tsc --project ./tsconfig.json",
     "prepublish": "npm run build"
   },
   "sideEffects": false,
