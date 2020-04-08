@@ -374,7 +374,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
             data-css-7b22zo=""
           >
             <button
-              data-css-7x6n1t=""
+              data-css-1c23eje=""
               disabled={false}
               onClick={[Function]}
               style={Object {}}
@@ -1261,7 +1261,7 @@ exports[`Storyshots drawer with row component 1`] = `
             data-css-7zyoug=""
           >
             <button
-              data-css-7x6n1t=""
+              data-css-1c23eje=""
               disabled={false}
               style={Object {}}
             >
@@ -1706,7 +1706,7 @@ exports[`Storyshots drawer:rc row component with actions 1`] = `
           data-css-7b22zo=""
         >
           <button
-            data-css-7x6n1t=""
+            data-css-1c23eje=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2237,7 +2237,7 @@ exports[`Storyshots drawer:rc with row component 1`] = `
           data-css-7zyoug=""
         >
           <button
-            data-css-7x6n1t=""
+            data-css-1c23eje=""
             disabled={false}
             style={Object {}}
           >

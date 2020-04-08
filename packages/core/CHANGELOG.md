@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.1.2...@pluralsight/ps-design-system-core@6.2.0) (2020-04-07)
+
+
+### Bug Fixes
+
+* **core:** make base utilty color bleutral ([3ff0f1f](https://github.com/pluralsight/design-system/commit/3ff0f1f3d9c022cd066d84f17f741e6dfd28336d))
+
+
+### Features
+
+* **core:** add .d.ts for typescript support ([172715a](https://github.com/pluralsight/design-system/commit/172715afd24f487a622db8689d84df7c943873f9))
+* **core:** convert to TS ([b56e877](https://github.com/pluralsight/design-system/commit/b56e877b4110dc81a6b461aabeba8d19fb08b111))
+
+
+
+
+
 ## [6.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.1.1...@pluralsight/ps-design-system-core@6.1.2) (2020-04-03)
 
 

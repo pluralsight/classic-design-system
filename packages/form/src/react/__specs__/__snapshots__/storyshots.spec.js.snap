@@ -61,7 +61,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1bkq010=""
+                data-css-a3vwj=""
                 disabled={false}
                 style={Object {}}
               >
@@ -141,7 +141,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1bkq010=""
+                data-css-a3vwj=""
                 disabled={false}
                 style={Object {}}
               >
@@ -398,7 +398,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1bkq010=""
+                data-css-a3vwj=""
                 disabled={false}
                 style={Object {}}
               >
@@ -1115,7 +1115,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-1bkq010=""
+                data-css-a3vwj=""
                 disabled={false}
                 style={Object {}}
               >
