@@ -108,4 +108,20 @@ describe('#glamorToCss', () => {
 }.amaze{zing:showman}`
     )
   })
+
+  it('converts function selectors for keyframe animations', () => {
+    expect(
+      glamorToCss({
+        '.psds-button__loading': ({ spin }) => ({
+          animation: `${spin ||
+            'psds-button__keyframes__spin'} 1s linear infinite`
+        }),
+        '.other': { whiteSpace: 'nowrap' }
+      })
+    ).toEqual(
+      `.psds-button__loading {
+  animation: psds-button__keyframes__spin 1s linear infinite;
+}.other{white-space:nowrap}`
+    )
+  })
 })
