@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.0.12...@pluralsight/ps-design-system-util@3.1.0) (2020-04-08)
+
+
+### Features
+
+* **util:** add useToggle hook ([6054a62](https://github.com/pluralsight/design-system/commit/6054a62f093834a9ed4d12879fbee434994267ca))
+
+
+
+
+
 ## [3.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.0.10...@pluralsight/ps-design-system-util@3.0.11) (2020-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util

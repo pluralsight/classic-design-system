@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.0.7...@pluralsight/ps-design-system-drawer@7.1.0) (2020-04-08)
+
+
+### Features
+
+* **drawer:** add aria attributes to drawer and update test ([f14cd0e](https://github.com/pluralsight/design-system/commit/f14cd0ef5b8c7f8ee4b96f17bf2999c93e3f833d))
+* **drawer:** docs and patterns from feat/drawer-candidate-daneified ([9486ca8](https://github.com/pluralsight/design-system/commit/9486ca835bf8ebd8957f06453c303d14d45e036a))
+* **drawer:** rc/drawer tests and stories ([325e1ed](https://github.com/pluralsight/design-system/commit/325e1ed3b4e7b48d7c8148b6457c964f87f393d4))
+* **drawer:** update packages/drawer/.storybook/config.js ([982d252](https://github.com/pluralsight/design-system/commit/982d252f19e0159603065a1143a52238eb1ff04f))
+* simpler reimplementation of drawer ([975c0d0](https://github.com/pluralsight/design-system/commit/975c0d0145750f4ea815445b019de688ed2b9ddb))
+
+
+
+
+
 ## [7.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.0.6...@pluralsight/ps-design-system-drawer@7.0.7) (2020-04-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

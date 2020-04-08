@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "6.2.0",
+  "version": "6.2.1",
   "description": "Collection of Core design elements for the Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -17,7 +17,7 @@
   "sideEffects": false,
   "style": "css/index.css",
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.14",
+    "@pluralsight/ps-design-system-build": "^1.11.15",
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0"

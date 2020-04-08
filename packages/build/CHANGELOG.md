@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.14...@pluralsight/ps-design-system-build@1.11.15) (2020-04-08)
+
+
+### Bug Fixes
+
+* **build:** support building selectors as functions with glamor ([e814f03](https://github.com/pluralsight/design-system/commit/e814f0367770dd2362215dff96a6e9732b140495))
+
+
+
+
+
 ## [1.11.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@1.11.13...@pluralsight/ps-design-system-build@1.11.14) (2020-03-16)
 
 

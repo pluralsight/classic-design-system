@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.17...@pluralsight/ps-design-system-collapsible@2.1.0) (2020-04-08)
+
+
+### Bug Fixes
+
+* **collapsible:** debug unexpected margins on useCollapsible hook ([7466ebe](https://github.com/pluralsight/design-system/commit/7466ebe8678df4d03235ffd23b80e9f180a57cd9))
+
+
+### Features
+
+* **drawer:** rc/drawer tests and stories ([325e1ed](https://github.com/pluralsight/design-system/commit/325e1ed3b4e7b48d7c8148b6457c964f87f393d4))
+
+
+
+
+
 ## [2.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.0.16...@pluralsight/ps-design-system-collapsible@2.0.17) (2020-04-01)
 
 
