@@ -4,7 +4,7 @@ import { fireEvent, render } from '@testing-library/react'
 import { Drawer } from '../index.js'
 
 describe('Drawer', () => {
-  describe('when the arrow icons is clicked', () => {
+  describe('when uncontrolled', () => {
     it('toggles open/close', async () => {
       const { getByTestId } = render(
         <Drawer>
@@ -26,7 +26,7 @@ describe('Drawer', () => {
       expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
     })
   })
-  it('when is controlled', () => {
+  it('when controlled', () => {
     const Controlled = () => {
       const [open, setOpen] = useState(false)
       return (
