@@ -7,9 +7,7 @@ const subscribers = {
   [domEvents.scroll]: new Set()
 }
 
-export const subscribe = (event, callback) => {
-  subscribers[event].add(callback)
-}
+export const subscribe = (event, callback) => subscribers[event].add(callback)
 
 export const unsubscribe = (event, callback) => () =>
   subscribers[event].delete(callback)
