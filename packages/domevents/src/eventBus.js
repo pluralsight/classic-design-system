@@ -12,9 +12,10 @@ export const subscribe = (event, callback) => subscribers[event].add(callback)
 export const unsubscribe = (event, callback) =>
   subscribers[event].delete(callback)
 
-const send = event => e =>
+const send = event => e => {
+  console.log(event)
   Boolean(subscribers[event].size) && subscribers[event].forEach(l => l(e))
-
+}
 // Click
 document.addEventListener(domEvents.click, send(domEvents.click), {
   passive: true
