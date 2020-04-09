@@ -1,8 +1,8 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import React from 'react'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import CircularProgress from '../index.js'
+import CircularProgress from '../../index.js'
 
 const valueStory = storiesOf('value', module)
 ;[0, 25, 50, 75, 100, 33, 66].forEach(value =>
@@ -10,17 +10,17 @@ const valueStory = storiesOf('value', module)
 )
 
 const sizeStory = storiesOf('size', module)
-Object.keys(CircularProgress.sizes).forEach(size =>
+Object.values(CircularProgress.sizes).forEach(size =>
   sizeStory.add(size, _ => <CircularProgress size={size} value={75} />)
 )
 
 const indeterminateStory = storiesOf('indeterminate', module)
-Object.keys(CircularProgress.sizes).forEach(size =>
+Object.values(CircularProgress.sizes).forEach(size =>
   indeterminateStory.add(size, _ => <CircularProgress size={size} />)
 )
 
 storiesOf('animation', module).add('animates to new values', _ => {
-  const AnimationDemo = props => {
+  const AnimationDemo = () => {
     const [value, updateValue] = React.useState(0)
 
     React.useEffect(function() {
