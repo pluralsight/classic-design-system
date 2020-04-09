@@ -14,8 +14,8 @@ export const subscribe = (event, callback) => {
 export const unsubscribe = (event, callback) => () =>
   subscribers[event].delete(callback)
 
-const send = event => () =>
-  Boolean(subscribers[event].size) && subscribers[event].forEach(l => l())
+const send = event => e =>
+  Boolean(subscribers[event].size) && subscribers[event].forEach(l => l(e))
 
 // Click
 document.addEventListener(domEvents.click, send(domEvents.click), {
@@ -42,11 +42,8 @@ window.addEventListener(domEvents.resize, requestAnimationFrame, {
 
 // Scroll
 let timeout = null
-window.addEventListener(
-  domEvents.scroll,
-  () => {
-    clearTimeout(timeout)
-    timeout = setTimeout(send(domEvents.scroll), 50)
-  },
-  true
-)
+const clear = () => {
+  clearTimeout(timeout)
+  timeout = setTimeout(send(domEvents.scroll), 50)
+}
+window.addEventListener(domEvents.scroll, clear, { passive: true })
