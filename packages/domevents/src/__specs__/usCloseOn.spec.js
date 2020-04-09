@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, wait, act } from '@testing-library/react'
 import { useCloseOn, domEvents } from '../index.js'
 
 const Element = props => {
@@ -8,10 +8,16 @@ const Element = props => {
 }
 
 describe('usClosOn', () => {
-  test(domEvents.resize, () => {
+  test(domEvents.click, async () => {
     const callback = jest.fn()
-    render(<Element {...{ event: domEvents.resize, callback, isOpen: true }} />)
-    global.dispatchEvent(new Event(domEvents.resize))
-    expect(callback.mock.calls.length).toBe(1)
+    act(() => {
+      render(
+        <Element {...{ event: domEvents.click, callback, isOpen: true }} />
+      )
+    })
+    act(() => {
+      global.dispatchEvent(new Event(domEvents.click))
+    })
+    await wait(() => expect(callback.mock.calls.length).toBe(1))
   })
 })
