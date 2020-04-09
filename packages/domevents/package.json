@@ -1,5 +1,5 @@
 {
-  "name": "@pluralsight/ps-design-system-eventbus",
+  "name": "@pluralsight/ps-design-system-domevents",
   "version": "1.0.0",
   "description": "Event bus for global dom events",
   "license": "Apache-2.0",

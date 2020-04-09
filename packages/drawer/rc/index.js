@@ -11,7 +11,7 @@ import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useToggle } from '@pluralsight/ps-design-system-util'
-
+import { useCloseOn } from '@pluralsight/ps-design-system-domevents'
 import { useCollapsible } from '@pluralsight/ps-design-system-collapsible/rc'
 import stylesheet from './css/index.js'
 
@@ -51,6 +51,7 @@ const useDrawerContext = () => {
 const Head = forwardRef(({ children, ...rest }, ref) => {
   const themeName = useTheme()
   const { isOpen, onToggle } = useDrawerContext()
+  useCloseOn({ isOpen, callback: onToggle, event: 'resize' })
   return (
     <div
       {...styles.head({ isOpen, themeName })}
