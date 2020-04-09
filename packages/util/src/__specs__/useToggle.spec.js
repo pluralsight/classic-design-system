@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-import { renderHook } from '@testing-library/react-hooks'
-import { act } from 'react-test-renderer'
+import { renderHook, act } from '@testing-library/react-hooks'
 import { useToggle } from '../useToggle.js'
 
 describe('useToggle', () => {
