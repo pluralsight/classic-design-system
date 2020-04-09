@@ -9,7 +9,7 @@ const subscribers = {
 
 export const subscribe = (event, callback) => subscribers[event].add(callback)
 
-export const unsubscribe = (event, callback) => () =>
+export const unsubscribe = (event, callback) =>
   subscribers[event].delete(callback)
 
 const send = event => e =>
