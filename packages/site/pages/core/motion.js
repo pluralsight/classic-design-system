@@ -57,18 +57,19 @@ const Speeds = _ => (
         min-width: 150px;
         height: 150px;
         background: ${core.colorsBackgroundLight[2]};
-        color: ${core.colorsTextIcon.lowOnLight};
         border-radius: 12px;
       }
       .icon {
         font-size: ${core.type.fontSizeXLarge};
       }
       .title {
+        color: ${core.colorsTextIcon.lowOnLight};
         font-weight: ${core.type.fontWeightBook};
         line-height: ${core.type.lineHeightStandard};
         text-transform: uppercase;
       }
       .time {
+        color: ${core.colorsTextIcon.lowOnLight};
         font-weight: ${core.type.fontWeightBold};
         line-height: ${core.type.lineHeightStandard};
       }
