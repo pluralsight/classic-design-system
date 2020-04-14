@@ -1,24 +1,40 @@
-import { ForwardRefExoticComponent, RefAttributes } from 'react'
+import { ForwardRefExoticComponent, HTMLAttributes, RefAttributes } from 'react'
 
-interface Styling {
-  css?: Record<string, string | number>
-  style?: Record<string, string | number>
-  className?: string
-}
+declare const CircularProgress: RefForwardingComponent<
+  CircularProgressProps,
+  HTMLDivElement,
+  CircularProgressStatics
+>
+
+export default CircularProgress
 
 export interface CircularProgressProps {
-  size?: 'small' | 'medium'
+  size?: keyof typeof sizes
   value?: number
 }
 
-type Sizes = {
-  small: 'small',
-  medium: 'medium'
+export interface CircularProgressStatics {
+  sizes: typeof sizes
 }
 
-export const sizes: Sizes
+export const sizes = keyMirror('small', 'medium')
 
-declare const CircularProgress: ForwardRefExoticComponent<CircularProgressProps & Styling & RefAttributes<HTMLDivElement>>
-  & { sizes: Sizes }
+// TODO: relocate to a global typings file
+export type RefForwardingComponent<
+  Props = {},
+  El = Element,
+  Statics = {}
+> = ForwardRefExoticComponent<Props & HTMLAttributes<El> & RefAttributes<El>> &
+  Statics
 
-export default CircularProgress
+// TODO: move to global utils
+type KeyMirror<Keys extends string[]> = { readonly [K in Keys[number]]: K }
+
+declare function keyMirror<Keys extends string[]>(...inputs: Keys) {
+  const mirrored = inputs.reduce(
+    (acc, key) => ({ ...acc, [key]: key }),
+    {} as KeyMirror<Keys>
+  )
+
+  return Object.freeze(mirrored)
+}
