@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.3.1...@pluralsight/ps-design-system-site@18.3.2) (2020-04-14)
+
+
+### Bug Fixes
+
+* **site:** motion opacity ([fe5136d](https://github.com/pluralsight/design-system/commit/fe5136df69fa006dbd840bb3fa1858c0a361a724)), closes [#966](https://github.com/pluralsight/design-system/issues/966)
+
+
+
+
+
 ## [18.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.3.0...@pluralsight/ps-design-system-site@18.3.1) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site

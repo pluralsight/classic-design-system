@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@6.0.7...@pluralsight/ps-design-system-circularprogress@6.1.0) (2020-04-14)
+
+
+### Features
+
+* **circularprogress:** add .dts for typescript consumption ([f9849db](https://github.com/pluralsight/design-system/commit/f9849dbf043d0b40ff825d0d9d97e49c871f51bf))
+
+
+
+
+
 ## [6.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@6.0.6...@pluralsight/ps-design-system-circularprogress@6.0.7) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress
