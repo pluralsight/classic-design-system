@@ -527,7 +527,7 @@ exports[`Storyshots Layout / EqualColumnLayout two 1`] = `
 
 exports[`Storyshots Layout / PageHeadingLayout default 1`] = `
 <div
-  data-css-yto836=""
+  data-css-f5q9fb=""
 >
   <div
     data-css-wlfhsa=""
@@ -545,7 +545,7 @@ exports[`Storyshots Layout / PageHeadingLayout default 1`] = `
 
 exports[`Storyshots Layout / PageHeadingLayout long title 1`] = `
 <div
-  data-css-yto836=""
+  data-css-f5q9fb=""
 >
   <div
     data-css-wlfhsa=""
@@ -563,7 +563,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title 1`] = `
 
 exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
 <div
-  data-css-yto836=""
+  data-css-f5q9fb=""
 >
   <div
     data-css-wlfhsa=""
@@ -602,7 +602,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
 
 exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] = `
 <div
-  data-css-yto836=""
+  data-css-f5q9fb=""
 >
   <div
     data-css-wlfhsa=""
@@ -692,7 +692,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
 
 exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
 <div
-  data-css-yto836=""
+  data-css-f5q9fb=""
 >
   <div
     data-css-wlfhsa=""
@@ -731,7 +731,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
 
 exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
 <div
-  data-css-yto836=""
+  data-css-f5q9fb=""
 >
   <div
     data-css-wlfhsa=""

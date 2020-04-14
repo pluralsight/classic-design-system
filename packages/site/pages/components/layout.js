@@ -46,17 +46,19 @@ BlueBox.propTypes = {
 const PageHeadingLayoutOutput = _ => (
   <div className="page">
     <Theme>
-      <PageHeadingLayout
-        actions={[
-          <Button key="button1" appearance={Button.appearances.stroke}>
-            Button
-          </Button>,
-          <Button key="button2">Button</Button>
-        ]}
-        heading={<h3>Page title</h3>}
-      >
-        <div className="body" />
-      </PageHeadingLayout>
+      <PageWidthLayout>
+        <PageHeadingLayout
+          actions={[
+            <Button key="button1" appearance={Button.appearances.stroke}>
+              Button
+            </Button>,
+            <Button key="button2">Button</Button>
+          ]}
+          heading={<h3>Page title</h3>}
+        >
+          <div className="body" />
+        </PageHeadingLayout>
+      </PageWidthLayout>
     </Theme>
     <div className="marginBg" />
     <div className="margin marginHorz marginTop" />
@@ -395,25 +397,28 @@ export default _ => (
 
       <SectionHeading>Page Heading Layout</SectionHeading>
       <P>
-        Start your layout with this default template to achieve standard outer
-        spacing and title style.
+        Start your layout with this default template of, PageHeadingLayout
+        nested in PageWidthLayout, to achieve standard outer spacing and title
+        style.
       </P>
       <P>
         If you're using <Text.Code>actions</Text.Code>, be sure to stay limited
         to a small number of items (ie, 2-3).
       </P>
       <PageHeadingLayoutOutput />
-      <Code language="javascript">{`<PageHeadingLayout
-  actions={[
-    <Button key="button1" appearance={Button.appearances.stroke}>
-      Button
-    </Button>,
-    <Button key="button2">Button</Button>
-  ]}
-  heading={<h3>Page title</h3>}
->
-  Your page contents here
-</PageHeadingLayout> `}</Code>
+      <Code language="javascript">{`<PageWidthLayout>
+  <PageHeadingLayout
+    actions={[
+      <Button key="button1" appearance={Button.appearances.stroke}>
+        Button
+      </Button>,
+      <Button key="button2">Button</Button>
+    ]}
+    heading={<h3>Page title</h3>}
+  >
+    Your page contents here
+  </PageHeadingLayout>
+</PageWidthLayout> `}</Code>
       <PropTypes
         title="Layout.PageHeadingLayout PropTypes"
         props={[
