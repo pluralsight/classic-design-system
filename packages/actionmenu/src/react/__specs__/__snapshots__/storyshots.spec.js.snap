@@ -2325,11 +2325,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
         }
       >
         <div
-          data-css-1crjksd=""
-          id="psds-actionmenu__overlay"
-          onClick={[Function]}
-        />
-        <div
           data-css-1x8y3e3=""
           onKeyDown={[Function]}
           role="menu"

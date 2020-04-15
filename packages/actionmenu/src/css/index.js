@@ -165,13 +165,5 @@ export default {
   },
   '.psds-actionmenu__item__arrow__svg': {
     fill: 'currentColor'
-  },
-
-  '.psds-actionmenu__overlay': {
-    position: 'fixed',
-    height: '100vh',
-    width: '100vw',
-    top: 0,
-    left: 0
   }
 }

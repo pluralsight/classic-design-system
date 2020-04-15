@@ -5,13 +5,11 @@ import PropTypes from 'prop-types'
 import ActionMenu from './menu.js'
 import Divider from './divider.js'
 import Item from './item.js'
-import Overlay from './overlay.js'
 
 import * as vars from '../vars/index.js'
 
 ActionMenu.Item = Item
 ActionMenu.Divider = Divider
-ActionMenu.Overlay = Overlay
 ActionMenu.origins = vars.origins
 
 ActionMenu.displayName = 'ActionMenu'
