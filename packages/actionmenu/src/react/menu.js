@@ -115,7 +115,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
       (direction === 'up' && activeIndex === 0) ||
       (direction === 'down' && activeIndex === lastIndex)
 
-    if (atEdge) navigateOut(evt)
+    if (atEdge) props.onClose(evt)
     else navigate(evt, direction)
   }
 
