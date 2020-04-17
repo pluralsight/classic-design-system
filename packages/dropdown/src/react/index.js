@@ -1,6 +1,6 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
@@ -80,7 +80,6 @@ const styles = {
       css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   },
-  pageOverlay: _ => css(stylesheet['.psds-dropdown__page-overlay']),
   halo: _ => css(stylesheet['.psds-dropdown__field-halo'])
 }
 
@@ -151,10 +150,17 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
       allProps.onChange(evt, value, label)
   }
 
-  function handleOverlayClick() {
-    setOpen(false)
-    setKeyboarding(false)
+  const menu = useRef(null)
+  const handleClickOutsideMenu = e => {
+    if (menu.current && !menu.current.contains(e.target)) {
+      setOpen(false)
+      setKeyboarding(false)
+    }
   }
+  useEffect(() => {
+    isOpen && document.addEventListener('click', handleClickOutsideMenu)
+    return () => document.removeEventListener('click', handleClickOutsideMenu)
+  }, [isOpen])
 
   function getLongestMenuLabelState() {
     const getMenuItems = menu =>
@@ -208,9 +214,6 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   }, [combinedRef, forwardedRef])
   return (
     <>
-      {isOpen && (
-        <div {...styles.pageOverlay(allProps)} onClick={handleOverlayClick} />
-      )}
       <label
         {...styles.dropdown(allProps)}
         {...(style ? { style: style } : null)}
@@ -260,6 +263,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
               isKeyboarding: isKeyboarding,
               onChange: handleMenuChange,
               onClick: handleMenuClick,
+              ref: menu,
               onClose: _ => {
                 setOpen(false)
                 if (typeof allProps.menu.props.onClose === 'function')

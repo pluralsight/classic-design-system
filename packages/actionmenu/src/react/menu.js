@@ -6,7 +6,6 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import React from 'react'
 
 import { calcNextIndex } from '../js/index.js'
-import Overlay from './overlay.js'
 import stylesheet from '../css/index.js'
 
 const slide = css.keyframes(
@@ -125,36 +124,30 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
   }
 
   return (
-    <>
-      {!props._isNested && typeof props.onClose === 'function' && (
-        <Overlay onClose={navigateOut} />
+    <div
+      {...styles.menu(props)}
+      {...filterReactProps(props)}
+      ref={ref}
+      onKeyDown={handleKeyDown}
+      role="menu"
+    >
+      {React.Children.map(props.children, (child, i) =>
+        child
+          ? React.cloneElement(child, {
+              isActive: i === activeIndex,
+              shouldFocusOnMount: props.shouldFocusOnMount,
+
+              _i: i,
+              _isKeyboarding: isKeyboarding,
+              _onDividerFocus: handleDividerFocus,
+              _onItemFocus: focusItemAtIndex,
+              _onMouseOver: focusItemAtIndexWithMouse,
+              _onChange: handleChange,
+              _origin: props.origin
+            })
+          : null
       )}
-
-      <div
-        {...styles.menu(props)}
-        {...filterReactProps(props)}
-        ref={ref}
-        onKeyDown={handleKeyDown}
-        role="menu"
-      >
-        {React.Children.map(props.children, (child, i) =>
-          child
-            ? React.cloneElement(child, {
-                isActive: i === activeIndex,
-                shouldFocusOnMount: props.shouldFocusOnMount,
-
-                _i: i,
-                _isKeyboarding: isKeyboarding,
-                _onDividerFocus: handleDividerFocus,
-                _onItemFocus: focusItemAtIndex,
-                _onMouseOver: focusItemAtIndexWithMouse,
-                _onChange: handleChange,
-                _origin: props.origin
-              })
-            : null
-        )}
-      </div>
-    </>
+    </div>
   )
 })
 

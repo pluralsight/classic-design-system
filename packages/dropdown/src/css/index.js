@@ -163,15 +163,6 @@ export default {
     marginTop: layout.spacingXXSmall
   },
 
-  // __page-overlay
-  '.psds-dropdown__page-overlay': {
-    position: 'fixed',
-    zIndex: 970,
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0
-  },
   '.psds-dropdown__field-halo': {
     maxWidth: '100%',
     display: 'block'
