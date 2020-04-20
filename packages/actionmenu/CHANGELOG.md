@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@11.0.8...@pluralsight/ps-design-system-actionmenu@12.0.0) (2020-04-20)
+
+
+### Bug Fixes
+
+* **dropdown:** removes actionmenu and dropdown overlay components ([bdb77b0](https://github.com/pluralsight/design-system/commit/bdb77b02ca2dd52cb37eef5f74856587b7720bef))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** removal of actionmenu overlay component
+
+
+
+
+
 ## [11.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@11.0.7...@pluralsight/ps-design-system-actionmenu@11.0.8) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@6.0.8...@pluralsight/ps-design-system-layout@6.1.0) (2020-04-20)
+
+
+### Features
+
+* **layout:** removed left and right padding & update documentation ([fff3d0b](https://github.com/pluralsight/design-system/commit/fff3d0b192f09f0048756161491133f35d28428e))
+
+
+
+
+
 ## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@6.0.7...@pluralsight/ps-design-system-layout@6.0.8) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-layout
