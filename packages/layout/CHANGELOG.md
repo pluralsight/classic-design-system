@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@6.1.1...@pluralsight/ps-design-system-layout@7.0.0) (2020-04-20)
+
+
+### Features
+
+* **layout:** removed left and right padding & update documentation ([caa6683](https://github.com/pluralsight/design-system/commit/caa66836008e9ba37b2bb1c270e7140612f14553))
+
+
+### BREAKING CHANGES
+
+* **layout:** Needs to now be placed withn PageWidthLauout:
+ <PageWidthLayout>
+  <PageHeadingLayout/>
+</PageWidthLayout>
+
+
+
+
+
 ## [6.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@6.1.0...@pluralsight/ps-design-system-layout@6.1.1) (2020-04-20)
 
 
