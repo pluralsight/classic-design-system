@@ -2,7 +2,7 @@ import { layout } from '@pluralsight/ps-design-system-core'
 
 export default {
   '.psds-page-heading-layout': {
-    padding: `${layout.spacingLarge} 0`
+    padding: layout.spacingLarge
   },
   '.psds-page-heading-layout__actions': {
     display: 'flex',
