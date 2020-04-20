@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@6.1.0...@pluralsight/ps-design-system-layout@6.1.1) (2020-04-20)
+
+
+### Bug Fixes
+
+* **layout:** breaking change commit did not bump version number ([0688ad9](https://github.com/pluralsight/design-system/commit/0688ad904f8e8266829b1b1427af0b45667ffd13))
+
+
+
+
+
 # [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@6.0.8...@pluralsight/ps-design-system-layout@6.1.0) (2020-04-20)
 
 
