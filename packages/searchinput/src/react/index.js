@@ -11,7 +11,8 @@ import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  clear: _ => css(stylesheet['.psds-searchinput-clear'])
+  clear: _ => css(stylesheet['.psds-searchinput-clear']),
+  field: _ => css(stylesheet['.psds-searchinput-field'])
 }
 
 const SearchInput = React.forwardRef((props, forwardedRef) => {
@@ -39,6 +40,7 @@ const SearchInput = React.forwardRef((props, forwardedRef) => {
 
   return (
     <TextInput
+      {...styles.field()}
       appearance={TextInput.appearances.subtle}
       fieldAfter={clearBtn}
       icon={icon}

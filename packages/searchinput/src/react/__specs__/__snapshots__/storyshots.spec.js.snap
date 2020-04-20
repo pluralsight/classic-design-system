@@ -15,6 +15,7 @@ exports[`Storyshots SearchInput default 1`] = `
       >
         <input
           data-css-egljo0=""
+          data-css-r2g0l1=""
           disabled={false}
           placeholder="Search"
           size="medium"
@@ -60,6 +61,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
       >
         <input
           data-css-egljo0=""
+          data-css-r2g0l1=""
           disabled={false}
           placeholder="Search"
           size="medium"
@@ -120,6 +122,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       >
         <input
           data-css-egljo0=""
+          data-css-r2g0l1=""
           disabled={false}
           placeholder="Le placeholder"
           size="medium"
@@ -220,6 +223,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       >
         <input
           data-css-egljo0=""
+          data-css-r2g0l1=""
           disabled={false}
           placeholder="Search"
           size="medium"
