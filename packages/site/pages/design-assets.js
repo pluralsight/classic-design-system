@@ -29,7 +29,7 @@ Design components, color styles, and text styles are available in [Figma](http:/
           <Table.Cell>
             <Text.Code>
               <a
-                href="https://www.figma.com/file/HVFUT0XlrkfsTMde6PMWLITj/PSDS-Core"
+                href="https://www.figma.com/file/S9QHDvzv20ut7ICalO8cFV/PSDS---Core"
                 style={{ textDecoration: 'underline' }}
               >
                 PSDS - Core
@@ -42,7 +42,7 @@ Design components, color styles, and text styles are available in [Figma](http:/
           <Table.Cell>
             <Text.Code>
               <a
-                href="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web"
+                href="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS---Web"
                 style={{ textDecoration: 'underline' }}
               >
                 PSDS - Web
@@ -55,7 +55,7 @@ Design components, color styles, and text styles are available in [Figma](http:/
           <Table.Cell>
             <Text.Code>
               <a
-                href="https://www.figma.com/file/K575lLx48kMoPQGDlbdiWXv7/%E2%97%86-PSDS-Imagery"
+                href="https://www.figma.com/file/K575lLx48kMoPQGDlbdiWXv7/%CE%9E-PSDS---Imagery"
                 style={{ textDecoration: 'underline' }}
               >
                 PSDS - Imagery
@@ -70,7 +70,7 @@ Design components, color styles, and text styles are available in [Figma](http:/
           <Table.Cell>
             <Text.Code>
               <a
-                href="https://www.figma.com/file/U7JwbMLo37WPhu3StSq86Kyt/%E2%97%86-PSDS-Extras"
+                href="https://www.figma.com/file/U7JwbMLo37WPhu3StSq86Kyt/%CE%9E-PSDS---Extras"
                 style={{ textDecoration: 'underline' }}
               >
                 PSDS - Extras
@@ -83,7 +83,7 @@ Design components, color styles, and text styles are available in [Figma](http:/
           <Table.Cell>
             <Text.Code>
               <a
-                href="https://www.figma.com/file/DYZV1wR89TxDo63lEngOLvwm/%E2%97%86-PSDS-Brand"
+                href="https://www.figma.com/file/DYZV1wR89TxDo63lEngOLvwm/%CE%9E-PSDS---Brand"
                 style={{ textDecoration: 'underline' }}
               >
                 PSDS - Brand
