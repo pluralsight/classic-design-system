@@ -6,7 +6,6 @@ import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
-import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
 
@@ -30,7 +29,17 @@ const SearchInput = React.forwardRef((props, forwardedRef) => {
     onClear(evt)
   }
 
-  const clearBtn = onClear && <ClearButton onClick={handleClear} />
+  const clearBtn = onClear && (
+    <Button
+      onClick={handleClear}
+      {...styles.clear()}
+      appearance={Button.appearances.flat}
+      icon={<CloseIcon />}
+      iconOnly
+      size={Button.sizes.small}
+      {...props}
+    />
+  )
 
   const icon = loading ? (
     <CircularProgress size={CircularProgress.sizes.small} />
@@ -58,23 +67,6 @@ SearchInput.defaultProps = {
 SearchInput.propTypes = {
   loading: PropTypes.bool,
   onClear: PropTypes.func
-}
-
-const ClearButton = props => (
-  <div {...styles.clear()}>
-    <Theme name={themeNames.light}>
-      <Button
-        appearance={Button.appearances.flat}
-        icon={<CloseIcon />}
-        iconOnly
-        size={Button.sizes.small}
-        {...props}
-      />
-    </Theme>
-  </div>
-)
-ClearButton.propTypes = {
-  onClick: PropTypes.func.isRequired
 }
 
 export default SearchInput

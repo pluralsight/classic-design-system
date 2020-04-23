@@ -128,37 +128,34 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           size="medium"
           type="search"
         />
-        <div
-          data-css-tzuwtx=""
+        <button
+          data-css-1c23eje=""
+          data-css-1e0eciv=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
         >
-          <button
-            data-css-xfd20t=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
+          <div
+            data-css-y80vay=""
           >
             <div
-              data-css-y80vay=""
+              data-css-7dab2f=""
             >
-              <div
-                data-css-7dab2f=""
+              <svg
+                aria-label="close icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="close icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                />
+              </svg>
             </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-        </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
       </div>
     </div>
     <div
@@ -229,37 +226,34 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           size="medium"
           type="search"
         />
-        <div
-          data-css-tzuwtx=""
+        <button
+          data-css-1c23eje=""
+          data-css-1e0eciv=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
         >
-          <button
-            data-css-xfd20t=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
+          <div
+            data-css-y80vay=""
           >
             <div
-              data-css-y80vay=""
+              data-css-7dab2f=""
             >
-              <div
-                data-css-7dab2f=""
+              <svg
+                aria-label="close icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="close icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                />
+              </svg>
             </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-        </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
       </div>
     </div>
     <div
