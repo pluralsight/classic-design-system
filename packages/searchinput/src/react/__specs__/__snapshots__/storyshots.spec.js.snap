@@ -17,6 +17,7 @@ exports[`Storyshots SearchInput default 1`] = `
           data-css-egljo0=""
           data-css-r2g0l1=""
           disabled={false}
+          onChange={[Function]}
           placeholder="Search"
           size="medium"
           type="search"
@@ -63,6 +64,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
           data-css-egljo0=""
           data-css-r2g0l1=""
           disabled={false}
+          onChange={[Function]}
           placeholder="Search"
           size="medium"
           type="search"
@@ -124,13 +126,14 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           data-css-egljo0=""
           data-css-r2g0l1=""
           disabled={false}
+          onChange={[Function]}
           placeholder="Le placeholder"
           size="medium"
           type="search"
         />
         <button
           data-css-1c23eje=""
-          data-css-1e0eciv=""
+          data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -222,13 +225,14 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           data-css-egljo0=""
           data-css-r2g0l1=""
           disabled={false}
+          onChange={[Function]}
           placeholder="Search"
           size="medium"
           type="search"
         />
         <button
           data-css-1c23eje=""
-          data-css-1e0eciv=""
+          data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}

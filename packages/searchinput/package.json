@@ -25,7 +25,8 @@
     "@pluralsight/ps-design-system-circularprogress": "^6.1.0",
     "@pluralsight/ps-design-system-core": "^6.2.1",
     "@pluralsight/ps-design-system-icon": "^18.1.3",
-    "@pluralsight/ps-design-system-textinput": "^7.0.8"
+    "@pluralsight/ps-design-system-textinput": "^7.0.8",
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^3.1.7",
