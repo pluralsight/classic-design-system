@@ -130,8 +130,30 @@ export default _ => (
 
       <SectionHeading>Color</SectionHeading>
       <P>
-        The <Text.Code>color</Text.Code> prop makes available the following
-        colors.
+        An Icon will inherit it's color from the font color of it's parent
+        elements in the browser. When using Icon with{' '}
+        <TextLink href="/components/text">Text</TextLink> place inside the Text
+        component if you wish for it to inherit color styles. You can override
+        the color by styling the icon with the desired
+        <TextLink href="/core/color"> color</TextLink> in css or inline styles
+        as shown below.
+      </P>
+      <Example.React
+        includes={{ PathIcon }}
+        codes={[
+          `
+<div style={{ color: '#ffffff' }}>
+  <PathIcon size={CodeIcon.sizes.large} />
+</div>
+`,
+          `
+<PathIcon style={{ color: 'rebeccapurple' }} size={CodeIcon.sizes.large} />
+`
+        ]}
+      />
+      <P>
+        Additionally the <Text.Code>color</Text.Code> prop makes available the
+        following colors.
       </P>
       <Example.React
         includes={{ StarIcon }}
@@ -148,24 +170,6 @@ export default _ => (
 `
         )}
         themeToggle
-      />
-      <P>
-        Icon color will usually match the surrounding text color. It can also be
-        overridden with Core <TextLink href="/core/color">colors</TextLink> or
-        any fill color.
-      </P>
-      <Example.React
-        includes={{ PathIcon }}
-        codes={[
-          `
-<div style={{ color: '#ffffff' }}>
-  <PathIcon size={CodeIcon.sizes.large} />
-</div>
-`,
-          `
-<PathIcon style={{ color: 'rebeccapurple' }} size={CodeIcon.sizes.large} />
-`
-        ]}
       />
 
       <CommonSet />
