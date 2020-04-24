@@ -544,6 +544,153 @@ exports[`Storyshots Radio error 1`] = `
 </div>
 `;
 
+exports[`Storyshots Radio labels 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    data-css-1a26704=""
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="radiogroup"
+    tabIndex={0}
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Colors
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
+        >
+          <div
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
+          >
+            <div
+              aria-checked={false}
+              data-css-1wbxh41=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="red"
+        />
+        <div
+          data-css-nrxvu5=""
+        >
+          Red
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
+        >
+          <div
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
+          >
+            <div
+              aria-checked={true}
+              data-css-1olif27=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            >
+              <div
+                data-css-ppl1jg=""
+              />
+            </div>
+          </div>
+        </div>
+        <input
+          checked={true}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="green"
+        />
+        <div
+          data-css-nrxvu5=""
+        >
+          Green
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-xp79s5=""
+    >
+      <label
+        data-css-kn3wr0=""
+      >
+        <div
+          data-css-1gbdc34=""
+        >
+          <div
+            data-css-1lu7sfl=""
+            data-css-iwspcj=""
+          >
+            <div
+              aria-checked={false}
+              data-css-1wbxh41=""
+              onFocus={[Function]}
+              role="radio"
+              tabIndex="-1"
+            />
+          </div>
+        </div>
+        <input
+          checked={false}
+          data-css-gyrv08=""
+          onClick={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          type="radio"
+          value="blue"
+        />
+        <div
+          data-css-nrxvu5=""
+        >
+          Blue
+        </div>
+      </label>
+    </div>
+    <div
+      data-css-6ga4kh=""
+    >
+      These colors are very primary
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Radio one selected 1`] = `
 <div
   style={
