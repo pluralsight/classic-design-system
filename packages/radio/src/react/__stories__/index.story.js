@@ -24,6 +24,17 @@ storiesOf('Radio', module)
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
+  .add('labels', _ => (
+    <Radio.Group
+      value="green"
+      label="Colors"
+      subLabel="These colors are very primary"
+    >
+      <Radio.Button value="red" label="Red" />
+      <Radio.Button value="green" label="Green" />
+      <Radio.Button value="blue" label="Blue" />
+    </Radio.Group>
+  ))
   .add('error', _ => (
     <Radio.Group value="green" error>
       <Radio.Button value="red" label="Red" />

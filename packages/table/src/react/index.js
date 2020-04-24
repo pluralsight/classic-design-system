@@ -100,7 +100,7 @@ function ColumnHeader(props) {
   if (props.flex && !style.flex) style.flex = props.flex
 
   const handleClick = props.onClick
-    ? () => props.onClick(getToggledSort(props))
+    ? evt => props.onClick(getToggledSort(props), evt)
     : undefined
 
   return (

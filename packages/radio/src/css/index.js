@@ -21,6 +21,26 @@ export default {
     padding: `${layout.spacingXXSmall} 0`
   },
 
+  '.psds-radio-group__label': {
+    color: colorsTextIcon.highOnDark,
+    fontSize: type.fontSizeXSmall,
+    fontWeight: type.fontWeightMedium,
+    marginBottom: layout.spacingXXSmall
+  },
+  [`.psds-radio-group__label.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnLight
+  },
+
+  '.psds-radio-group__sub-label': {
+    color: colorsTextIcon.lowOnDark,
+    fontSize: type.fontSizeXSmall,
+    fontWeight: type.fontWeightBook,
+    marginTop: layout.spacingXXSmall
+  },
+  [`.psds-radio-group__sub-label.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+
   '.psds-radio-button': {
     display: 'flex',
     alignItems: 'center',

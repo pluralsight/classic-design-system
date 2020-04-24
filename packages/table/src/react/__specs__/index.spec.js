@@ -6,8 +6,9 @@ import Table from '../index.js'
 describe('columnHeader', () => {
   test('sorted=false onClick called with asc', () => {
     return new Promise(resolve => {
-      const onClick = sort => {
+      const onClick = (sort, evt) => {
         expect(sort).toBe(Table.sorts.asc)
+        expect(evt).toBeDefined()
         resolve()
       }
       const { getByText } = render(
@@ -19,8 +20,9 @@ describe('columnHeader', () => {
 
   test('sorted=true onClick called with asc', () => {
     return new Promise(resolve => {
-      const onClick = sort => {
+      const onClick = (sort, evt) => {
         expect(sort).toBe(Table.sorts.asc)
+        expect(evt).toBeDefined()
         resolve()
       }
       const { getByText } = render(
