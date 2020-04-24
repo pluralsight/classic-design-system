@@ -1,8 +1,14 @@
-import { layout } from '@pluralsight/ps-design-system-core'
+import { layout, motion } from '@pluralsight/ps-design-system-core'
 
 export default {
   '.psds-searchinput-clear': {
-    margin: `0 ${layout.spacingXXSmall}`
+    margin: `0 0 0 ${layout.spacingXXSmall}`,
+    flex: 'none',
+    opacity: 0,
+    transition: `opacity ${motion.speedNormal}`
+  },
+  '.psds-searchinput-clear__visible': {
+    opacity: 1
   },
   '.psds-searchinput-field': {
     '&::-webkit-search-cancel-button': {
