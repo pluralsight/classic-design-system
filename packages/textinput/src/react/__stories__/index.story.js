@@ -117,6 +117,7 @@ storiesOf('whitelist', module)
   .add('onChange', _ => (
     <TextInput placeholder="Change me" onChange={action('I changed')} />
   ))
+  .add('className', _ => <TextInput className="shouldExistOnOneElement" />)
 
 storiesOf('layouts', module)
   .addDecorator(PaddingDecorator)
