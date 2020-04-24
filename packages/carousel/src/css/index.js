@@ -51,7 +51,12 @@ export default {
   '.psds-carousel--ready': { opacity: 1 },
 
   '.psds-carousel__controls': {
-    ...resetList
+    ...resetList,
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    zIndex: 1,
+    pointerEvents: 'none'
   },
 
   '.psds-carousel__controls__control': {
@@ -81,7 +86,7 @@ export default {
     height: '36px',
     justifyContent: 'center',
     width: '36px',
-
+    pointerEvents: 'auto',
     '&:focus': { outline: 'none' },
     '&:hover': { cursor: 'pointer' }
   },

@@ -63,6 +63,7 @@ export default function Carousel({ controls, size, ...props }) {
         {...filterReactProps(props)}
         ref={ref}
       >
+        {controls}
         <Pages
           ref={pager.ref}
           id={id}
@@ -84,7 +85,7 @@ export default function Carousel({ controls, size, ...props }) {
 
                   return cloneElement(item, {
                     key: itemIndex,
-
+                    tabIndex: isActivePage ? 0 : -1,
                     isActivePage,
                     itemIndex,
                     itemsPerPage: perPage,
@@ -96,8 +97,6 @@ export default function Carousel({ controls, size, ...props }) {
             )
           })}
         </Pages>
-
-        {controls}
 
         <Instructions />
       </div>
@@ -185,36 +184,37 @@ const Pages = React.forwardRef((props, ref) => {
       id={context.id}
       ref={ref}
       role="region"
-      tabIndex="0"
       {...styles.pages(props)}
       {...filterReactProps(props)}
     />
   )
 })
 
+Pages.displayName = 'Carousel.Pages'
+
 Pages.propTypes = {
   onSwipeLeft: PropTypes.func.isRequired,
   onSwipeRight: PropTypes.func.isRequired
 }
 
-function Page(props) {
+const Page = props => {
   const ref = React.useRef()
 
   const { children, isActivePage, ...rest } = props
   const { offset } = React.useContext(CarouselContext)
-
   return (
     <li
       ref={ref}
       {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
       {...rest}
-      {...(!isActivePage && { hidden: true, tabIndex: -1 })}
+      {...(!isActivePage && { hidden: true })}
     >
       {children}
     </li>
   )
 }
+Pages.displayName = 'Carousel.Page'
 Page.propTypes = {
   children: PropTypes.node,
   onKeyDown: PropTypes.func

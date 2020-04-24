@@ -97,7 +97,6 @@ describe('Carousel', () => {
 
       for (const page of inactive) {
         expect(page).toHaveAttribute('hidden')
-        expect(page).toHaveAttribute('tabIndex', '-1')
       }
     })
   })
