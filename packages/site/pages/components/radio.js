@@ -124,6 +124,13 @@ export default _ => (
               'error state flag'
             ]),
             PropTypes.row([
+              'label',
+              'string',
+              null,
+              null,
+              'identifying string for group'
+            ]),
+            PropTypes.row([
               'name',
               'string',
               null,
@@ -136,6 +143,13 @@ export default _ => (
               null,
               null,
               'triggers on radio select'
+            ]),
+            PropTypes.row([
+              'subLabel',
+              'string',
+              null,
+              null,
+              'supporting text or error messaging'
             ]),
             PropTypes.row([
               'value',
