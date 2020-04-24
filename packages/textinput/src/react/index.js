@@ -78,6 +78,7 @@ const TextInput = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
   const allProps = { ...props, themeName }
   const {
+    className,
     error,
     fieldAfter,
     label,
@@ -93,7 +94,7 @@ const TextInput = React.forwardRef((props, forwardedRef) => {
     <label
       {...styles.textInput(allProps)}
       {...(allProps.style ? { style: allProps.style } : null)}
-      {...(allProps.className ? { className: allProps.className } : null)}
+      {...(allProps.className ? { className } : null)}
     >
       {label && <div {...styles.label(allProps)}>{label}</div>}
 

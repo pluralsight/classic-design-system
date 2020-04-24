@@ -1414,6 +1414,43 @@ exports[`Storyshots layouts right-aligned 1`] = `
 </div>
 `;
 
+exports[`Storyshots whitelist className 1`] = `
+<div
+  data-css-12kxz7c=""
+>
+  <div
+    style={
+      Object {
+        "padding": "24px",
+      }
+    }
+  >
+    <label
+      className="shouldExistOnOneElement"
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ydex85=""
+          >
+            <input
+              data-css-1aru8qc=""
+              disabled={false}
+              size="medium"
+            />
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots whitelist name 1`] = `
 <div
   data-css-12kxz7c=""
