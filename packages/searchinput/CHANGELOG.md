@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@5.0.10...@pluralsight/ps-design-system-searchinput@5.0.11) (2020-04-24)
+
+
+### Bug Fixes
+
+* **searchinput:** clear button visible only w/text ([59fc346](https://github.com/pluralsight/design-system/commit/59fc346aa42397f17fbec42b0c575e923e4af35b))
+* **searchinput:** clear icon background ([f3b4384](https://github.com/pluralsight/design-system/commit/f3b438448740ba0ea3b668df91640e186a8fa3c8))
+
+
+
+
+
 ## [5.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@5.0.9...@pluralsight/ps-design-system-searchinput@5.0.10) (2020-04-20)
 
 

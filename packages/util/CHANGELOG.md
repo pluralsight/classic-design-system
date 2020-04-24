@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.1.0...@pluralsight/ps-design-system-util@3.1.1) (2020-04-24)
+
+
+### Bug Fixes
+
+* **searchinput:** clear button visible only w/text ([59fc346](https://github.com/pluralsight/design-system/commit/59fc346aa42397f17fbec42b0c575e923e4af35b))
+
+
+
+
+
 # [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.0.12...@pluralsight/ps-design-system-util@3.1.0) (2020-04-08)
 
 
