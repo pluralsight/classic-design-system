@@ -1,8 +1,8 @@
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
 
@@ -12,11 +12,22 @@ const styles = {
     css(
       stylesheet['.psds-radio-group'],
       disabled && stylesheet['.psds-radio-group--disabled']
+    ),
+  label: themeName =>
+    css(
+      stylesheet['.psds-radio-group__label'],
+      stylesheet[`.psds-radio-group__label.psds-theme--${themeName}`]
+    ),
+  subLabel: themeName =>
+    css(
+      stylesheet['.psds-radio-group__sub-label'],
+      stylesheet[`.psds-radio-group__sub-label.psds-theme--${themeName}`]
     )
 }
 
 const Group = React.forwardRef((props, forwardedRef) => {
   const ref = React.useRef()
+  const themeName = useTheme()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
   const buttons = React.useMemo(_ => React.Children.toArray(props.children), [
@@ -88,6 +99,8 @@ const Group = React.forwardRef((props, forwardedRef) => {
       ref={ref}
       role="radiogroup"
     >
+      {props.label && <div {...styles.label(themeName)}>{props.label}</div>}
+
       {React.Children.map(props.children, (child, i) => {
         const childValue = child.props.value
 
@@ -107,6 +120,10 @@ const Group = React.forwardRef((props, forwardedRef) => {
           </div>
         )
       })}
+
+      {props.subLabel && (
+        <div {...styles.subLabel(themeName)}>{props.subLabel}</div>
+      )}
     </div>
   )
 })
@@ -115,10 +132,12 @@ Group.propTypes = {
   children: PropTypes.node, // TODO: children only Radio.Button
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  label: PropTypes.node,
   name: PropTypes.string,
   onFocus: PropTypes.func,
   onKeyDown: PropTypes.func,
   onSelect: PropTypes.func,
+  subLabel: PropTypes.node,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
