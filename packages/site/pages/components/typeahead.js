@@ -110,7 +110,14 @@ export default () => (
               <code>string</code>,
               null,
               null,
-              <span>suggestion text</span>
+              <span>suggestion label</span>
+            ]),
+            PropTypes.row([
+              'value',
+              <code>string</code>,
+              null,
+              null,
+              <span>suggestion value (optional, falls back to label)</span>
             ])
           ]
         }}
