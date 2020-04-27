@@ -85,7 +85,6 @@ export default function Carousel({ controls, size, ...props }) {
 
                   return cloneElement(item, {
                     key: itemIndex,
-                    tabIndex: isActivePage ? 0 : -1,
                     isActivePage,
                     itemIndex,
                     itemsPerPage: perPage,
