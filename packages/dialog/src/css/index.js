@@ -28,7 +28,8 @@ export default {
     display: 'inline-flex',
     opacity: 0,
     position: 'relative',
-    transform: `translateY(${layout.spacingXSmall})`
+    transform: `translateY(${layout.spacingXSmall})`,
+    '&:focus': { outline: 'none' }
   }),
 
   '.psds-dialog__content': {

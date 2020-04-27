@@ -59,7 +59,7 @@ exports[`Storyshots modal default 1`] = `
         role="region"
       >
         <div
-          data-css-1iiqhom=""
+          data-css-cxpnok=""
           onKeyUp={[Function]}
         >
           <div
@@ -220,7 +220,7 @@ exports[`Storyshots modal no click overlay 1`] = `
         role="region"
       >
         <div
-          data-css-1iiqhom=""
+          data-css-cxpnok=""
           onKeyUp={[Function]}
         >
           <div
@@ -381,7 +381,7 @@ exports[`Storyshots modal no close button 1`] = `
         role="region"
       >
         <div
-          data-css-1iiqhom=""
+          data-css-cxpnok=""
           onKeyUp={[Function]}
         >
           <div
@@ -526,7 +526,7 @@ exports[`Storyshots modal no escape key 1`] = `
         role="region"
       >
         <div
-          data-css-1iiqhom=""
+          data-css-cxpnok=""
         >
           <div
             data-css-jp50nh=""
@@ -686,7 +686,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
         role="region"
       >
         <div
-          data-css-1iiqhom=""
+          data-css-cxpnok=""
           onKeyUp={[Function]}
         >
           <div
@@ -847,7 +847,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
         role="region"
       >
         <div
-          data-css-1iiqhom=""
+          data-css-cxpnok=""
           onKeyUp={[Function]}
         >
           <div
@@ -942,7 +942,7 @@ exports[`Storyshots modal overflow-y 1`] = `
         role="region"
       >
         <div
-          data-css-1iiqhom=""
+          data-css-cxpnok=""
           onKeyUp={[Function]}
         >
           <div
@@ -1371,7 +1371,7 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
         role="region"
       >
         <div
-          data-css-1gpoaz8=""
+          data-css-tlsxtk=""
           onKeyUp={[Function]}
         >
           <div
@@ -1753,7 +1753,7 @@ exports[`Storyshots onClose with onClose 1`] = `
     }
   >
     <div
-      data-css-n5eno6=""
+      data-css-1p4854x=""
       onKeyUp={[Function]}
     >
       <div
@@ -1865,7 +1865,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
     }
   >
     <div
-      data-css-13siw4q=""
+      data-css-1pr6kyo=""
     >
       <div
         data-css-jp50nh=""
@@ -1960,7 +1960,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
     }
   >
     <div
-      data-css-199727f=""
+      data-css-13ex47j=""
     >
       <div
         data-css-jp50nh=""
@@ -2055,7 +2055,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
     }
   >
     <div
-      data-css-4tsdcv=""
+      data-css-ajmdw=""
     >
       <div
         data-css-jp50nh=""
@@ -2150,7 +2150,7 @@ exports[`Storyshots tailPosition none 1`] = `
     }
   >
     <div
-      data-css-n5eno6=""
+      data-css-1p4854x=""
     >
       <div
         data-css-jp50nh=""
@@ -2245,7 +2245,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
     }
   >
     <div
-      data-css-1ovub7p=""
+      data-css-1xpagdj=""
     >
       <div
         data-css-jp50nh=""
@@ -2340,7 +2340,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
     }
   >
     <div
-      data-css-rqe4u=""
+      data-css-pe4yzo=""
     >
       <div
         data-css-jp50nh=""
@@ -2435,7 +2435,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
     }
   >
     <div
-      data-css-iu6qcy=""
+      data-css-1niqzga=""
     >
       <div
         data-css-jp50nh=""
