@@ -278,6 +278,7 @@ Array [
       data-css-2fmxat=""
       style={
         Object {
+          "color": "#E7558B",
           "position": "absolute",
         }
       }
