@@ -46,9 +46,15 @@ function MockDialog(props) {
 
 MockDialog.propTypes = { children: PropTypes.node }
 
-storiesOf('onClose', module).add('with onClose', _ => (
-  <MockDialog onClose={closeAction} />
-))
+storiesOf('onClose', module)
+  .add('with onClose', _ => <MockDialog onClose={closeAction} />)
+  .add('with disableCloseButton', _ => (
+    <MockDialog disableCloseButton>
+      <Text.Heading>
+        <h1>Wowzers, a Dialog</h1>
+      </Text.Heading>
+    </MockDialog>
+  ))
 
 const positionStories = storiesOf('tailPosition', module)
 positionStories.add('none', _ => <MockDialog />)

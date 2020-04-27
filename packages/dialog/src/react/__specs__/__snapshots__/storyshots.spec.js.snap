@@ -1741,6 +1741,35 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
 </div>
 `;
 
+exports[`Storyshots onClose with disableCloseButton 1`] = `
+<div
+  data-css-12kxz7c=""
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div
+      data-css-1p4854x=""
+    >
+      <div
+        data-css-jp50nh=""
+      >
+        <h1
+          data-css-rl5sq=""
+          size="large"
+        >
+          Wowzers, a Dialog
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots onClose with onClose 1`] = `
 <div
   data-css-12kxz7c=""
