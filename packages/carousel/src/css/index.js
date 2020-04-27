@@ -29,20 +29,6 @@ const resetButton = {
   }
 }
 
-const resetFocus = {
-  '&:focus': {
-    outline: 'none',
-    boxShadow: '0 0 0 2px rgba(0, 123, 255, .5)'
-  }
-}
-
-const resetList = {
-  lineHeight: 'initial',
-  listStyle: 'none',
-  margin: 0,
-  padding: 0
-}
-
 export default {
   '.psds-carousel': {
     position: 'relative',
@@ -50,16 +36,8 @@ export default {
   },
   '.psds-carousel--ready': { opacity: 1 },
 
-  '.psds-carousel__controls': {
-    ...resetList,
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    zIndex: 1,
-    pointerEvents: 'none'
-  },
-
   '.psds-carousel__controls__control': {
+    zIndex: 1,
     position: 'absolute',
     top: '50%',
     transition: `transform ${motion.speedFast} ease-in-out`
@@ -104,14 +82,15 @@ export default {
   },
 
   '.psds-carousel__pages': {
-    ...resetList,
-    ...resetFocus,
     display: 'flex',
     width: '100%',
     overflow: 'hidden'
   },
 
   '.psds-carousel__page': {
+    lineHeight: 'initial',
+    listStyle: 'none',
+    padding: 0,
     alignItems: 'flex-start',
     display: 'flex',
     flex: '1 0 100%',
@@ -130,7 +109,7 @@ export default {
     flex: '1 1 100%',
     width: 0,
     minWidth: 0,
-
+    '&:focus': { opacity: 0.5 },
     '&:first-child': { marginLeft: 0 },
     '&:last-child': { marginRight: 0 }
   },

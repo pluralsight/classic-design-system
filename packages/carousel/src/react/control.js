@@ -10,6 +10,7 @@ import {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 
 import stylesheet from '../css/index.js'
 import { combineFns, toValues } from '../js/utils.js'
@@ -18,7 +19,6 @@ import * as vars from '../vars/index.js'
 import CarouselContext from './context.js'
 
 const styles = {
-  controls: () => css(stylesheet['.psds-carousel__controls']),
   control: (_, { direction }) =>
     compose(
       css(stylesheet['.psds-carousel__controls__control']),
@@ -35,20 +35,6 @@ const styles = {
     )
 }
 
-export const Controls = React.forwardRef((props, ref) => {
-  const context = React.useContext(CarouselContext)
-
-  return (
-    <ul
-      aria-controls={context.id}
-      aria-label="carousel controls"
-      ref={ref}
-      {...styles.controls()}
-      {...props}
-    />
-  )
-})
-
 export function Control(props) {
   const context = React.useContext(CarouselContext)
   const themeName = useTheme()
@@ -60,24 +46,26 @@ export function Control(props) {
 
   const IconCaret = isPrev ? CaretLeftIcon : CaretRightIcon
   const handleClick = combineFns(isPrev ? prev : next, props.onClick)
+  const scr = `get ${isPrev ? 'previous' : 'next'} page`
 
   return (
-    <li
+    <div
       {...styles.control(themeName, props)}
       {...(!visible && { hidden: true })}
-      {...filterReactProps(props, { tagName: 'li' })}
-      onClick={handleClick}
     >
       <Halo shape={Halo.shapes.pill}>
         <button
+          {...filterReactProps(props, { tagName: 'li' })}
+          onClick={handleClick}
           aria-label={isPrev ? 'previous' : 'next'}
           {...styles.controlButton(themeName, props)}
           {...(!visible && { tabIndex: -1 })}
         >
           <IconCaret aria-hidden size={iconSizes.medium} />
+          <ScreenReaderOnly>{scr}</ScreenReaderOnly>
         </button>
       </Halo>
-    </li>
+    </div>
   )
 }
 
