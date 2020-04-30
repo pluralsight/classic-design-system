@@ -79,6 +79,17 @@ Object.values(positionComponents).forEach(Comp => {
   ))
 })
 
+storiesOf('Components | Position / custom style', module).add(
+  'shown element keeps style prop',
+  () => (
+    <positionComponents.Above
+      show={<MockToolip style={{ color: core.colorsPink.base }} />}
+    >
+      <Box>Tooltip is pink</Box>
+    </positionComponents.Above>
+  )
+)
+
 const portalStories = storiesOf(
   'Components | Position / in custom portal',
   module
