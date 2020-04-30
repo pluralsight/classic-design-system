@@ -165,6 +165,7 @@ export default {
 
   '.psds-dropdown__field-halo': {
     maxWidth: '100%',
+    width: '100%',
     display: 'block'
   }
 }
