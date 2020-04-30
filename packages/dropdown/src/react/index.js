@@ -1,6 +1,7 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, { useRef, useEffect } from 'react'
+import ReactDOM from 'react-dom'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
@@ -157,9 +158,33 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
       setKeyboarding(false)
     }
   }
+
   useEffect(() => {
-    isOpen && document.addEventListener('click', handleClickOutsideMenu)
-    return () => document.removeEventListener('click', handleClickOutsideMenu)
+    let currentAnimationFrame = null
+    const requestAnimationFrame = () => {
+      window.cancelAnimationFrame(currentAnimationFrame)
+      currentAnimationFrame = window.requestAnimationFrame(() => setOpen(false))
+      return currentAnimationFrame
+    }
+    let timeout = null
+    const clear = () => {
+      clearTimeout(timeout)
+      timeout = setTimeout(() => setOpen(false), 50)
+    }
+    if (isOpen) {
+      document.addEventListener('click', handleClickOutsideMenu)
+      document.addEventListener('contextmenu', handleClickOutsideMenu)
+      window.addEventListener('resize', requestAnimationFrame, {
+        passive: true
+      })
+      window.addEventListener('scroll', clear, { passive: true })
+    }
+    return () => {
+      document.removeEventListener('click', handleClickOutsideMenu)
+      document.removeEventListener('contextmenu', handleClickOutsideMenu)
+      window.removeEventListener('resize', requestAnimationFrame)
+      window.removeEventListener('scroll', clear)
+    }
   }, [isOpen])
 
   function getLongestMenuLabelState() {
@@ -212,6 +237,13 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   React.useLayoutEffect(() => {
     setWidth(combinedRef.current.getBoundingClientRect().width)
   }, [combinedRef, forwardedRef])
+  const inNode = canUseDOM() ? document.body : null
+  const [menuPosition, setMenuPosition] = React.useState({})
+  const fieldContainerRef = useRef()
+  React.useLayoutEffect(() => {
+    const { left, bottom } = fieldContainerRef.current.getBoundingClientRect()
+    setMenuPosition({ left, top: bottom })
+  }, [fieldContainerRef])
   return (
     <>
       <label
@@ -223,7 +255,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
         {allProps.label && (
           <div {...styles.label(allProps)}>{allProps.label}</div>
         )}
-        <div {...styles.fieldContainer(allProps)}>
+        <div {...styles.fieldContainer(allProps)} ref={fieldContainerRef}>
           <Halo
             error={allProps.error}
             gapSize={Halo.gapSizes.small}
@@ -257,27 +289,30 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
             </div>
           )}
         </div>
-        {allProps.menu && isOpen && (
-          <div {...styles.menu(allProps)}>
-            {React.cloneElement(allProps.menu, {
-              isKeyboarding: isKeyboarding,
-              onChange: handleMenuChange,
-              onClick: handleMenuClick,
-              ref: menu,
-              onClose: _ => {
-                setOpen(false)
-                if (typeof allProps.menu.props.onClose === 'function')
-                  allProps.menu.props.onClose()
-              },
-              style: {
-                ...allProps.menu.props.style,
-                minWidth: '0',
-                maxWidth: 'none',
-                width
-              }
-            })}
-          </div>
-        )}
+        {allProps.menu &&
+          isOpen &&
+          createUniversalPortal(
+            <div {...styles.menu(allProps)} style={menuPosition}>
+              {React.cloneElement(allProps.menu, {
+                isKeyboarding: isKeyboarding,
+                onChange: handleMenuChange,
+                onClick: handleMenuClick,
+                ref: menu,
+                onClose: _ => {
+                  setOpen(false)
+                  if (typeof allProps.menu.props.onClose === 'function')
+                    allProps.menu.props.onClose()
+                },
+                style: {
+                  ...allProps.menu.props.style,
+                  minWidth: '0',
+                  maxWidth: 'none',
+                  width
+                }
+              })}
+            </div>,
+            inNode
+          )}
         {allProps.subLabel && (
           <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
         )}
@@ -319,3 +354,16 @@ export const appearances = vars.appearances
 export const sizes = vars.sizes
 
 export default Dropdown
+
+function canUseDOM() {
+  return !!(
+    typeof window !== 'undefined' &&
+    typeof window.document !== 'undefined' &&
+    typeof window.document.createElement !== 'undefined'
+  )
+}
+
+function createUniversalPortal() {
+  if (!canUseDOM()) return null
+  return ReactDOM.createPortal(...arguments)
+}
