@@ -10,7 +10,6 @@ import {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 
 import stylesheet from '../css/index.js'
 import { combineFns, toValues } from '../js/utils.js'
@@ -46,10 +45,11 @@ export function Control(props) {
 
   const IconCaret = isPrev ? CaretLeftIcon : CaretRightIcon
   const handleClick = combineFns(isPrev ? prev : next, props.onClick)
-  const scr = `get ${isPrev ? 'previous' : 'next'} page`
+  const scr = `get ${isPrev ? 'previous' : 'next'} carousel page`
 
   return (
     <div
+      data-testid="carousel control"
       {...styles.control(themeName, props)}
       {...(!visible && { hidden: true })}
     >
@@ -57,12 +57,11 @@ export function Control(props) {
         <button
           {...filterReactProps(props, { tagName: 'li' })}
           onClick={handleClick}
-          aria-label={isPrev ? 'previous' : 'next'}
+          aria-label={scr}
           {...styles.controlButton(themeName, props)}
           {...(!visible && { tabIndex: -1 })}
         >
           <IconCaret aria-hidden size={iconSizes.medium} />
-          <ScreenReaderOnly>{scr}</ScreenReaderOnly>
         </button>
       </Halo>
     </div>

@@ -9,10 +9,6 @@ describe('Carousel', () => {
     expect(Carousel.sizes).toEqual(vars.sizes)
   })
 
-  it('exports a Controls component', () => {
-    expect(Carousel.Controls).toBeDefined()
-  })
-
   it('exports a Control component', () => {
     expect(Carousel.Control).toBeDefined()
   })
@@ -30,20 +26,20 @@ describe('Carousel', () => {
 
       container = _container
 
-      pages = container.querySelectorAll('[aria-label="carousel"] > li')
+      pages = container.querySelectorAll('[aria-label="carousel"] > ul')
     })
 
     it('should hide the prev control', () => {
       const control = container
-        .querySelector('[aria-label="previous"]')
-        .closest('li')
+        .querySelector('[aria-label="get previous carousel page"]')
+        .closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })
 
     it('should hide the next control', () => {
       const control = container
-        .querySelector('[aria-label="next"]')
-        .closest('li')
+        .querySelector('[aria-label="get next carousel page"]')
+        .closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })
 
@@ -53,7 +49,6 @@ describe('Carousel', () => {
   })
 
   describe('with multiple items', () => {
-    let controls
     let pages
 
     beforeEach(() => {
@@ -68,19 +63,11 @@ describe('Carousel', () => {
         </Carousel>
       )
 
-      controls = container.querySelectorAll(
-        '[aria-label="carousel controls"] > li'
-      )
-
-      pages = container.querySelectorAll('[aria-label="carousel"] > li')
+      pages = container.querySelectorAll('[aria-label="carousel"] > ul')
     })
 
     it('should split items into pages', () => {
       expect(pages).toHaveLength(6)
-    })
-
-    it('should have controls', () => {
-      expect(controls.length).toBeGreaterThan(0)
     })
 
     it('should move the first page into view', () => {
@@ -119,18 +106,22 @@ describe('Carousel', () => {
     })
 
     it('should show the next control', () => {
-      const btn = container.querySelector('[aria-label="next"]')
+      const btn = container.querySelector(
+        '[aria-label="get next carousel page"]'
+      )
       expect(btn).toBeDefined()
 
-      const control = btn.closest('li')
+      const control = btn.closest('[data-testid="carousel control"]')
       expect(control).not.toHaveAttribute('hidden')
     })
 
     it('should hide the prev button', () => {
-      const btn = container.querySelector('[aria-label="previous"]')
+      const btn = container.querySelector(
+        '[aria-label="get previous carousel page"]'
+      )
       expect(btn).toBeDefined()
 
-      const control = btn.closest('li')
+      const control = btn.closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })
   })

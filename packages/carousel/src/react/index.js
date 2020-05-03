@@ -23,11 +23,11 @@ const styles = {
       css(stylesheet['.psds-carousel']),
       ready && css(stylesheet['.psds-carousel--ready'])
     ),
-  pages: _ => compose(css(stylesheet['.psds-carousel__pages'])),
-  page: isActivePage =>
+  pages: props => compose(css(stylesheet['.psds-carousel__pages'])),
+  page: props =>
     compose(
       css(stylesheet['.psds-carousel__page']),
-      isActivePage && css(stylesheet['.psds-carousel__page--active'])
+      props.isActivePage && css(stylesheet['.psds-carousel__page--active'])
     ),
   instructions: () => css(stylesheet['.psds-carousel__instructions']),
   item: () => css(stylesheet['.psds-carousel__item'])
@@ -82,14 +82,15 @@ export default function Carousel({ controlPrev, controlNext, size, ...props }) {
                 key={pageIndex}
                 isActivePage={isActivePage}
                 pageIndex={pageIndex}
+                paged={pager.paged}
               >
                 {items.map((item, itemIndex) => {
                   const wrapped = isOfComponentType(item, Item)
                   if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
 
                   return cloneElement(item, {
-                    ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),
                     key: itemIndex,
+                    ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),
                     isActivePage,
                     itemIndex,
                     itemsPerPage: perPage,
@@ -195,17 +196,24 @@ Pages.propTypes = {
   onSwipeRight: PropTypes.func.isRequired
 }
 
-const Page = ({ children, isActivePage, pageIndex }) => {
+const Page = props => {
   const ref = React.useRef()
+
+  const { children, isActivePage, paged, ...rest } = props
   React.useEffect(() => {
-    isActivePage && pageIndex > 0 && ref.current.firstElementChild.focus()
-  }, [isActivePage, pageIndex])
+    if (paged && isActivePage) {
+      const page = ref.current
+      const focusFirstChild = () => page.firstElementChild.focus()
+      page.addEventListener('transitionend', focusFirstChild)
+    }
+  }, [isActivePage, paged])
   const { offset } = React.useContext(CarouselContext)
   return (
     <ul
       ref={ref}
-      {...styles.page(isActivePage)}
+      {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
+      {...rest}
       {...(!isActivePage && { hidden: true })}
     >
       {children}
@@ -215,7 +223,7 @@ const Page = ({ children, isActivePage, pageIndex }) => {
 Pages.displayName = 'Carousel.Page'
 Page.propTypes = {
   children: PropTypes.node,
-  pageIndex: PropTypes.number,
+  paged: PropTypes.bool,
   isActivePage: PropTypes.bool
 }
 
@@ -236,7 +244,7 @@ function isOfComponentType(instance, el) {
 function usePager(pageCount, additionalSideEffectTriggers = []) {
   const [activePage, setActivePage] = React.useState(0)
   const [offset, setOffset] = React.useState(0)
-
+  const [paged, setPaged] = React.useState(false)
   const ref = React.useRef()
 
   React.useEffect(
@@ -263,6 +271,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     if (nextPage > pageCount - 1) return
 
     setActivePage(nextPage)
+    setPaged(true)
   }
 
   const prev = () => {
@@ -270,6 +279,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     if (nextPage < 0) return
 
     setActivePage(nextPage)
+    setPaged(true)
   }
 
   return {
@@ -277,6 +287,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     next,
     offset,
     prev,
-    ref
+    ref,
+    paged
   }
 }

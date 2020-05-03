@@ -8,204 +8,210 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
-        data-css-bxro55=""
-        hidden={true}
-      >
-        <div
-          data-css-efqczl=""
-        >
-          <div
-            data-css-1f7uvld=""
-            data-testid="mock-item"
-          />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
             data-css-1f7uvld=""
             data-testid="mock-item"
           />
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
+        data-css-bxro55=""
+        hidden={true}
+        pageIndex={8}
+      >
+        <li
+          data-css-efqczl=""
+        >
+          <div
+            data-css-1f7uvld=""
+            data-testid="mock-item"
+          />
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -233,84 +239,53 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -326,14 +301,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -350,14 +326,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -374,14 +351,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -398,14 +376,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -422,14 +401,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -446,14 +426,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -470,14 +451,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -494,14 +476,15 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={8}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -518,9 +501,38 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
 }
             </pre>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -548,94 +560,53 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
-        style={
-          Object {
-            "top": "33%",
-          }
-        }
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-        style={
-          Object {
-            "top": "33%",
-          }
-        }
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -644,14 +615,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             1
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -661,14 +633,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             2
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -678,14 +651,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             3
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -695,14 +669,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             4
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -712,14 +687,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             5
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -729,14 +705,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             6
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -746,14 +723,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             7
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -763,14 +741,15 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             8
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={8}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -780,9 +759,38 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
             item: 
             9
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -810,84 +818,53 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -896,14 +873,15 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
             item: 
             1
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -913,14 +891,15 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
             item: 
             2
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -930,14 +909,15 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
             item: 
             3
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -947,9 +927,38 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
             item: 
             4
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -992,84 +1001,53 @@ exports[`Storyshots Carousel/items many items 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -1078,14 +1056,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             1
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1095,14 +1074,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             2
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1112,14 +1092,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             3
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1129,14 +1110,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             4
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1146,14 +1128,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             5
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1163,14 +1146,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             6
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1180,14 +1164,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             7
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1197,14 +1182,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             8
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={8}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1214,14 +1200,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             9
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={9}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1231,14 +1218,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             10
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={10}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1248,14 +1236,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             11
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={11}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1265,14 +1254,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             12
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={12}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1282,14 +1272,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             13
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={13}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1299,14 +1290,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             14
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={14}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1316,14 +1308,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             15
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={15}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1333,14 +1326,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             16
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={16}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1350,14 +1344,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             17
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={17}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1367,14 +1362,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             18
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={18}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1384,14 +1380,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             19
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={19}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1401,14 +1398,15 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             20
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={20}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1418,9 +1416,38 @@ exports[`Storyshots Carousel/items many items 1`] = `
             item: 
             21
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -1448,86 +1475,53 @@ exports[`Storyshots Carousel/items one item 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        hidden={true}
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-            tabIndex={-1}
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -1535,9 +1529,40 @@ exports[`Storyshots Carousel/items one item 1`] = `
           >
             just one item
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+      hidden={true}
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -1565,84 +1590,53 @@ exports[`Storyshots Carousel/items two items 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -1650,14 +1644,15 @@ exports[`Storyshots Carousel/items two items 1`] = `
           >
             first item
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1666,9 +1661,38 @@ exports[`Storyshots Carousel/items two items 1`] = `
           >
             second item
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -1696,84 +1720,53 @@ exports[`Storyshots Carousel/size narrow 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -1782,14 +1775,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             1
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1799,14 +1793,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             2
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1816,14 +1811,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             3
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1833,14 +1829,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             4
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1850,14 +1847,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             5
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1867,14 +1865,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             6
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1884,14 +1883,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             7
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1901,14 +1901,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             8
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={8}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1918,14 +1919,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             9
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={9}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1935,14 +1937,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             10
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={10}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1952,14 +1955,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             11
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={11}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1969,14 +1973,15 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             12
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={12}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -1986,9 +1991,38 @@ exports[`Storyshots Carousel/size narrow 1`] = `
             item: 
             13
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -2016,84 +2050,53 @@ exports[`Storyshots Carousel/size wide 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1f7uvld=""
@@ -2102,14 +2105,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             1
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2119,14 +2123,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             2
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2136,14 +2141,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             3
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2153,14 +2159,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             4
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2170,14 +2177,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             5
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2187,14 +2195,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             6
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2204,14 +2213,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             7
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2221,14 +2231,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             8
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={8}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2238,14 +2249,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             9
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={9}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2255,14 +2267,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             10
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={10}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2272,14 +2285,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             11
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={11}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2289,14 +2303,15 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             12
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={12}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -2306,9 +2321,38 @@ exports[`Storyshots Carousel/size wide 1`] = `
             item: 
             13
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -2345,84 +2389,53 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
     <div
       data-css-rumlay=""
     >
-      <ul
-        aria-controls="carousel-mock_unique_id"
-        aria-label="carousel controls"
-        data-css-10ssmoc=""
+      <div
+        data-css-v9qvho=""
+        data-testid="carousel control"
+        hidden={true}
       >
-        <li
-          data-css-pmh2ws=""
-          hidden={true}
-          onClick={[Function]}
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            data-css-a3m9si=""
+          <button
+            aria-label="get previous carousel page"
+            data-css-69jvds=""
+            onClick={[Function]}
+            tabIndex={-1}
           >
-            <button
-              aria-label="previous"
-              data-css-69jvds=""
-              tabIndex={-1}
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
             >
-              <div
-                aria-hidden={true}
-                data-css-7dab2f=""
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="caret left icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </li>
-        <li
-          data-css-1qnonck=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-a3m9si=""
-          >
-            <button
-              aria-label="next"
-              data-css-69jvds=""
-            >
-              <div
-                aria-hidden={true}
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret right icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </li>
-      </ul>
-      <ul
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
         aria-describedby="carousel-mock_unique_id__instructions"
         aria-label="carousel"
-        data-css-1d3rq9b=""
+        data-css-1c5o92n=""
         id="carousel-mock_unique_id"
         onKeyDown={[Function]}
         role="region"
       >
-        <li
+        <ul
+          data-css-1lpz2b9=""
           data-css-bxro55=""
-          data-css-fx3xhe=""
+          pageIndex={0}
         >
-          <div
+          <li
             data-css-efqczl=""
+            tabIndex={-1}
           >
             <div
               data-css-1ybvkp1=""
@@ -2591,51 +2604,83 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={1}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={2}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={3}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-css-1n8kzqg=""
+        data-testid="carousel control"
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="get next carousel page"
+            data-css-69jvds=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
       <div
         data-css-6wu9td=""
         id="carousel-mock_unique_id__instructions"
@@ -2673,84 +2718,53 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
     <div
       data-css-rumlay=""
     >
-      <ul
-        aria-controls="carousel-mock_unique_id"
-        aria-label="carousel controls"
-        data-css-10ssmoc=""
+      <div
+        data-css-v9qvho=""
+        data-testid="carousel control"
+        hidden={true}
       >
-        <li
-          data-css-pmh2ws=""
-          hidden={true}
-          onClick={[Function]}
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            data-css-a3m9si=""
+          <button
+            aria-label="get previous carousel page"
+            data-css-69jvds=""
+            onClick={[Function]}
+            tabIndex={-1}
           >
-            <button
-              aria-label="previous"
-              data-css-69jvds=""
-              tabIndex={-1}
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
             >
-              <div
-                aria-hidden={true}
-                data-css-7dab2f=""
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="caret left icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </li>
-        <li
-          data-css-1qnonck=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-a3m9si=""
-          >
-            <button
-              aria-label="next"
-              data-css-69jvds=""
-            >
-              <div
-                aria-hidden={true}
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret right icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </li>
-      </ul>
-      <ul
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
         aria-describedby="carousel-mock_unique_id__instructions"
         aria-label="carousel"
-        data-css-1d3rq9b=""
+        data-css-1c5o92n=""
         id="carousel-mock_unique_id"
         onKeyDown={[Function]}
         role="region"
       >
-        <li
+        <ul
+          data-css-1lpz2b9=""
           data-css-bxro55=""
-          data-css-fx3xhe=""
+          pageIndex={0}
         >
-          <div
+          <li
             data-css-efqczl=""
+            tabIndex={-1}
           >
             <div
               data-css-1ybvkp1=""
@@ -2914,186 +2928,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
-          data-css-bxro55=""
-          hidden={true}
-        >
-          <div
-            data-css-efqczl=""
-          >
-            <div
-              data-css-1ybvkp1=""
-            >
-              <div
-                data-css-1pdjifv=""
-              >
-                <div
-                  data-css-i7gti2=""
-                  style={
-                    Object {
-                      "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
-                    }
-                  }
-                />
-                <div
-                  data-css-4ed7vx=""
-                >
-                  <button
-                    aria-label="See more"
-                    data-css-45oxhg=""
-                    onClick={[Function]}
-                    title="See more"
-                  >
-                    <div
-                      data-css-7dab2f=""
-                    >
-                      <svg
-                        aria-label="more icon"
-                        role="img"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <div
-                    style={
-                      Object {
-                        "visibility": "hidden",
-                      }
-                    }
-                  />
-                </div>
-              </div>
-              <div
-                data-css-piydn8=""
-              >
-                <div
-                  data-css-fvvao4=""
-                >
-                  <div
-                    className=""
-                  >
-                    <span
-                      style={
-                        Object {
-                          "display": "block",
-                          "maxHeight": "0px",
-                          "overflow": "hidden",
-                          "position": "relative",
-                        }
-                      }
-                    >
-                      <span
-                        className="shiitake-children"
-                        style={
-                          Object {
-                            "display": "block",
-                            "width": "100%",
-                          }
-                        }
-                      >
-                        Some Title
-                      </span>
-                      <span
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "display": "block",
-                            "height": "0px",
-                            "overflow": "hidden",
-                            "width": "100%",
-                          }
-                        }
-                      >
-                        Some Title
-                      </span>
-                      <span
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "display": "block",
-                            "left": "-20000px",
-                            "position": "absolute",
-                            "width": "100%",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          <span
-                            style={
-                              Object {
-                                "display": "block",
-                              }
-                            }
-                          >
-                            W
-                          </span>
-                          <span
-                            style={
-                              Object {
-                                "display": "block",
-                              }
-                            }
-                          >
-                            W
-                          </span>
-                        </span>
-                        <span
-                          className="shiitake-test-children"
-                          style={
-                            Object {
-                              "display": "block",
-                            }
-                          }
-                        >
-                          Some Title
-                        </span>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                data-css-qxq52s=""
-              >
-                <span
-                  data-css-1tz10dh=""
-                >
-                  Some Author
-                </span>
-                <span
-                  aria-hidden={true}
-                  data-css-kykfz1=""
-                >
-                  ·
-                </span>
-                <span
-                  data-css-1tz10dh=""
-                >
-                  Advanced
-                </span>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={1}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -3258,14 +3101,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={2}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -3430,14 +3274,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={3}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -3602,14 +3447,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={4}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -3774,14 +3620,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={5}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -3946,14 +3793,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={6}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -4118,14 +3966,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={7}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -4290,14 +4139,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={8}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -4462,14 +4312,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={9}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -4634,14 +4485,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={10}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -4806,14 +4658,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={11}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -4978,14 +4831,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={12}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -5150,14 +5004,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={13}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -5322,14 +5177,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={14}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -5494,14 +5350,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={15}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -5666,14 +5523,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={16}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -5838,14 +5696,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={17}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -6010,14 +5869,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={18}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -6182,14 +6042,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={19}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -6354,14 +6215,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={20}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -6526,14 +6388,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={21}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -6698,14 +6561,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={22}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -6870,14 +6734,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={23}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -7042,14 +6907,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={24}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -7214,14 +7080,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={25}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -7386,14 +7253,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={26}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -7558,14 +7426,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={27}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -7730,14 +7599,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={28}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -7902,14 +7772,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={29}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -8074,14 +7945,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={30}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -8246,14 +8118,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={31}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -8418,14 +8291,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={32}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -8590,14 +8464,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={33}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -8762,14 +8637,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={34}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -8934,14 +8810,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={35}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -9106,14 +8983,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={36}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -9278,14 +9156,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={37}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -9450,14 +9329,15 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={38}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
@@ -9622,9 +9502,211 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 </span>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
+          data-css-bxro55=""
+          hidden={true}
+          pageIndex={39}
+        >
+          <li
+            data-css-efqczl=""
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="See more"
+                    data-css-45oxhg=""
+                    onClick={[Function]}
+                    title="See more"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="more icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                  <div
+                    style={
+                      Object {
+                        "visibility": "hidden",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <div
+                  data-css-fvvao4=""
+                >
+                  <div
+                    className=""
+                  >
+                    <span
+                      style={
+                        Object {
+                          "display": "block",
+                          "maxHeight": "0px",
+                          "overflow": "hidden",
+                          "position": "relative",
+                        }
+                      }
+                    >
+                      <span
+                        className="shiitake-children"
+                        style={
+                          Object {
+                            "display": "block",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        Some Title
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        style={
+                          Object {
+                            "display": "block",
+                            "height": "0px",
+                            "overflow": "hidden",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        Some Title
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        style={
+                          Object {
+                            "display": "block",
+                            "left": "-20000px",
+                            "position": "absolute",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            W
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "display": "block",
+                              }
+                            }
+                          >
+                            W
+                          </span>
+                        </span>
+                        <span
+                          className="shiitake-test-children"
+                          style={
+                            Object {
+                              "display": "block",
+                            }
+                          }
+                        >
+                          Some Title
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                data-css-qxq52s=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  Some Author
+                </span>
+                <span
+                  aria-hidden={true}
+                  data-css-kykfz1=""
+                >
+                  ·
+                </span>
+                <span
+                  data-css-1tz10dh=""
+                >
+                  Advanced
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-css-1n8kzqg=""
+        data-testid="carousel control"
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="get next carousel page"
+            data-css-69jvds=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
       <div
         data-css-6wu9td=""
         id="carousel-mock_unique_id__instructions"
@@ -9662,84 +9744,53 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
     <div
       data-css-rumlay=""
     >
-      <ul
-        aria-controls="carousel-mock_unique_id"
-        aria-label="carousel controls"
-        data-css-10ssmoc=""
+      <div
+        data-css-v9qvho=""
+        data-testid="carousel control"
+        hidden={true}
       >
-        <li
-          data-css-pmh2ws=""
-          hidden={true}
-          onClick={[Function]}
+        <div
+          data-css-a3m9si=""
         >
-          <div
-            data-css-a3m9si=""
+          <button
+            aria-label="get previous carousel page"
+            data-css-69jvds=""
+            onClick={[Function]}
+            tabIndex={-1}
           >
-            <button
-              aria-label="previous"
-              data-css-69jvds=""
-              tabIndex={-1}
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
             >
-              <div
-                aria-hidden={true}
-                data-css-7dab2f=""
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="caret left icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </li>
-        <li
-          data-css-1qnonck=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-a3m9si=""
-          >
-            <button
-              aria-label="next"
-              data-css-69jvds=""
-            >
-              <div
-                aria-hidden={true}
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret right icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </li>
-      </ul>
-      <ul
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
         aria-describedby="carousel-mock_unique_id__instructions"
         aria-label="carousel"
-        data-css-1d3rq9b=""
+        data-css-1c5o92n=""
         id="carousel-mock_unique_id"
         onKeyDown={[Function]}
         role="region"
       >
-        <li
+        <ul
+          data-css-1lpz2b9=""
           data-css-bxro55=""
-          data-css-fx3xhe=""
+          pageIndex={0}
         >
-          <div
+          <li
             data-css-efqczl=""
+            tabIndex={-1}
           >
             <div
               data-css-1f7uvld=""
@@ -9926,191 +9977,233 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={1}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={2}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={3}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={4}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={5}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={6}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={7}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={8}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={9}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={10}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={11}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={12}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-        <li
-          data-css-17v35en=""
+          </li>
+        </ul>
+        <ul
+          data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
+          pageIndex={13}
         >
-          <div
+          <li
             data-css-efqczl=""
           >
             <div
               data-css-1f7uvld=""
               data-testid="mock-item"
             />
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-css-1n8kzqg=""
+        data-testid="carousel control"
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="get next carousel page"
+            data-css-69jvds=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
       <div
         data-css-6wu9td=""
         id="carousel-mock_unique_id__instructions"
@@ -10139,84 +10232,53 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1ybvkp1=""
@@ -10368,14 +10430,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -10514,14 +10577,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -10660,14 +10724,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -10806,14 +10871,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -10952,14 +11018,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -11098,14 +11165,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -11244,14 +11312,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -11390,14 +11459,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={8}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -11536,14 +11606,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={9}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -11682,14 +11753,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={10}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -11828,14 +11900,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={11}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -11974,14 +12047,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={12}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -12120,14 +12194,15 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={13}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -12266,9 +12341,38 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
@@ -12296,84 +12400,53 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
   <div
     data-css-rumlay=""
   >
-    <ul
-      aria-controls="carousel-mock_unique_id"
-      aria-label="carousel controls"
-      data-css-10ssmoc=""
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
     >
-      <li
-        data-css-pmh2ws=""
-        hidden={true}
-        onClick={[Function]}
+      <div
+        data-css-a3m9si=""
       >
-        <div
-          data-css-a3m9si=""
+        <button
+          aria-label="get previous carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+          tabIndex={-1}
         >
-          <button
-            aria-label="previous"
-            data-css-69jvds=""
-            tabIndex={-1}
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
           >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="caret left icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-      <li
-        data-css-1qnonck=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-a3m9si=""
-        >
-          <button
-            aria-label="next"
-            data-css-69jvds=""
-          >
-            <div
-              aria-hidden={true}
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </li>
-    </ul>
-    <ul
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
       aria-describedby="carousel-mock_unique_id__instructions"
       aria-label="carousel"
-      data-css-1d3rq9b=""
+      data-css-1c5o92n=""
       id="carousel-mock_unique_id"
       onKeyDown={[Function]}
       role="region"
     >
-      <li
+      <ul
+        data-css-1lpz2b9=""
         data-css-bxro55=""
-        data-css-fx3xhe=""
+        pageIndex={0}
       >
-        <div
+        <li
           data-css-efqczl=""
+          tabIndex={-1}
         >
           <div
             data-css-1ybvkp1=""
@@ -12525,14 +12598,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={1}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -12671,14 +12745,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={2}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -12817,14 +12892,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={3}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -12963,14 +13039,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={4}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -13109,14 +13186,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={5}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -13255,14 +13333,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={6}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -13401,14 +13480,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={7}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -13547,14 +13627,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={8}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -13693,14 +13774,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={9}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -13839,14 +13921,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={10}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -13985,14 +14068,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={11}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -14131,14 +14215,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={12}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -14277,14 +14362,15 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-      <li
-        data-css-17v35en=""
+        </li>
+      </ul>
+      <ul
+        data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
+        pageIndex={13}
       >
-        <div
+        <li
           data-css-efqczl=""
         >
           <div
@@ -14423,9 +14509,38 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               </span>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="get next carousel page"
+          data-css-69jvds=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
     <div
       data-css-6wu9td=""
       id="carousel-mock_unique_id__instructions"
