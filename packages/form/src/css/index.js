@@ -3,11 +3,6 @@ import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index.js'
 
-const newStackingContextForFocusRingVisibility = {
-  position: 'relative',
-  zIndex: '0'
-}
-
 export default {
   '.psds-form-button-row': {
     display: 'flex'
@@ -31,7 +26,6 @@ export default {
   },
 
   '.psds-form-vertical-layout': {
-    ...newStackingContextForFocusRingVisibility,
     width: '100%'
   },
   '.psds-form-vertical-layout__child': {

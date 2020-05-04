@@ -20,7 +20,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
       }
     >
       <div
-        data-css-15rjys7=""
+        data-css-63oe3q=""
       >
         <div
           data-css-4l6uky=""
@@ -100,7 +100,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
       }
     >
       <div
-        data-css-15rjys7=""
+        data-css-63oe3q=""
       >
         <div
           data-css-4l6uky=""
@@ -180,7 +180,7 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
       }
     >
       <div
-        data-css-15rjys7=""
+        data-css-63oe3q=""
       >
         <div
           data-css-4l6uky=""
@@ -231,7 +231,7 @@ exports[`Storyshots Sample Form null children 1`] = `
       }
     >
       <div
-        data-css-15rjys7=""
+        data-css-63oe3q=""
       >
         <div
           data-css-4l6uky=""
@@ -437,7 +437,7 @@ exports[`Storyshots Sample Form sample 1`] = `
       }
     >
       <div
-        data-css-15rjys7=""
+        data-css-63oe3q=""
       >
         <div
           data-css-4l6uky=""
