@@ -18,7 +18,7 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -403,7 +403,7 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -460,7 +460,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -1007,7 +1007,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -1064,7 +1064,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -1485,7 +1485,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -1542,7 +1542,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -1748,7 +1748,7 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -1820,7 +1820,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -2757,7 +2757,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -2814,7 +2814,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -2890,7 +2890,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -2948,7 +2948,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -3064,7 +3064,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -3121,7 +3121,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -3714,7 +3714,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -3771,7 +3771,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -4364,7 +4364,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -4430,7 +4430,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
         >
           <button
             aria-label="get previous carousel page"
-            data-css-69jvds=""
+            data-css-1bqkmub=""
             onClick={[Function]}
             tabIndex={-1}
           >
@@ -4765,7 +4765,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
         >
           <button
             aria-label="get next carousel page"
-            data-css-69jvds=""
+            data-css-1bqkmub=""
             onClick={[Function]}
           >
             <div
@@ -4832,7 +4832,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
         >
           <button
             aria-label="get previous carousel page"
-            data-css-69jvds=""
+            data-css-1bqkmub=""
             onClick={[Function]}
             tabIndex={-1}
           >
@@ -11986,7 +11986,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
         >
           <button
             aria-label="get next carousel page"
-            data-css-69jvds=""
+            data-css-1bqkmub=""
             onClick={[Function]}
           >
             <div
@@ -12053,7 +12053,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
         >
           <button
             aria-label="get previous carousel page"
-            data-css-69jvds=""
+            data-css-1bqkmub=""
             onClick={[Function]}
             tabIndex={-1}
           >
@@ -12993,7 +12993,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
         >
           <button
             aria-label="get next carousel page"
-            data-css-69jvds=""
+            data-css-1bqkmub=""
             onClick={[Function]}
           >
             <div
@@ -13051,7 +13051,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -15241,7 +15241,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div
@@ -15298,7 +15298,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -17488,7 +17488,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-69jvds=""
+          data-css-1bqkmub=""
           onClick={[Function]}
         >
           <div

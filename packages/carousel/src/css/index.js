@@ -78,7 +78,6 @@ export default {
     height: '36px',
     justifyContent: 'center',
     width: '36px',
-    pointerEvents: 'auto',
     '&:focus': { outline: 'none' },
     '&:hover': { cursor: 'pointer' }
   },
