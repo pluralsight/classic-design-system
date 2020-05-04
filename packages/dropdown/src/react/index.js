@@ -1,13 +1,16 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, { useRef, useEffect } from 'react'
-import ReactDOM from 'react-dom'
+import { canUseDOM } from 'exenv'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import Icon, { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
+import {
+  useCombinedRefs,
+  createUniversalPortal
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index.js'
 import { findMatchingActionMenuItem } from './utils.js'
@@ -354,16 +357,3 @@ export const appearances = vars.appearances
 export const sizes = vars.sizes
 
 export default Dropdown
-
-function canUseDOM() {
-  return !!(
-    typeof window !== 'undefined' &&
-    typeof window.document !== 'undefined' &&
-    typeof window.document.createElement !== 'undefined'
-  )
-}
-
-function createUniversalPortal() {
-  if (!canUseDOM()) return null
-  return ReactDOM.createPortal(...arguments)
-}

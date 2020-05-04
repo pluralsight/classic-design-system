@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { canUseDOM } from 'exenv'
+import { createUniversalPortal } from '@pluralsight/ps-design-system-util'
 
 import * as positionFns from '../js/index.js'
 
@@ -109,21 +110,8 @@ Position.propTypes = {
 }
 
 Position.defaultProps = {
-  inNode: canUseDOM() ? document.body : null,
+  inNode: canUseDOM ? document.body : null,
   when: true
-}
-
-function canUseDOM() {
-  return !!(
-    typeof window !== 'undefined' &&
-    typeof window.document !== 'undefined' &&
-    typeof window.document.createElement !== 'undefined'
-  )
-}
-
-function createUniversalPortal() {
-  if (!canUseDOM()) return null
-  return ReactDOM.createPortal(...arguments)
 }
 
 function delayUntilNextTick(fn) {

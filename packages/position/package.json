@@ -22,6 +22,8 @@
   "gitHead": "ea4595a4bff6a08255102a0321bb641dc4d25913",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.2.1",
+    "@pluralsight/ps-design-system-util": "*",
+    "exenv": "^1.2.2",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
