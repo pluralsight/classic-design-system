@@ -214,7 +214,10 @@ const Page = props => {
       {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
       {...rest}
-      {...(!isActivePage && { hidden: true })}
+      {...(!isActivePage && {
+        hidden: true,
+        style: { visibility: 'hidden' }
+      })}
     >
       {children}
     </ul>

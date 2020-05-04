@@ -57,9 +57,28 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -67,14 +86,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -82,14 +125,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -97,14 +164,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -112,14 +203,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -127,14 +242,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -142,14 +281,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -157,14 +320,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
       <ul
@@ -172,14 +359,38 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
-          />
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+            </a>
+             
+          </div>
         </li>
       </ul>
     </div>
@@ -288,18 +499,45 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": true,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 0
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": true,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 0
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -308,23 +546,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 1
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 1
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -333,23 +603,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 2
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 2
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -358,23 +660,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 3
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 3
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -383,23 +717,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 4
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 4
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -408,23 +774,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 5
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 5
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -433,23 +831,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 6
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 6
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -458,23 +888,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 7
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 7
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -483,23 +945,55 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            <pre>
-              {
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              <pre>
+                {
   "isActivePage": false,
   "itemIndex": 0,
   "itemsPerPage": 1,
   "pageCount": 9,
   "pageIndex": 8
 }
-            </pre>
+              </pre>
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              <pre>
+                {
+  "isActivePage": false,
+  "itemIndex": 0,
+  "itemsPerPage": 1,
+  "pageCount": 9,
+  "pageIndex": 8
+}
+              </pre>
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -609,11 +1103,31 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            1
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              1
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              1
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -622,16 +1136,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            2
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              2
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              2
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -640,16 +1179,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            3
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              3
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              3
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -658,16 +1222,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            4
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              4
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              4
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -676,16 +1265,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            5
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              5
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              5
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -694,16 +1308,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            6
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              6
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              6
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -712,16 +1351,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            7
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              7
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              7
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -730,16 +1394,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            8
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              8
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              8
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -748,16 +1437,41 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            9
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              9
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              9
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -867,11 +1581,31 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            1
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              1
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              1
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -880,16 +1614,41 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            2
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              2
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              2
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -898,16 +1657,41 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            3
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              3
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              3
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -916,16 +1700,41 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            4
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              4
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              4
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1050,11 +1859,31 @@ exports[`Storyshots Carousel/items many items 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            1
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              1
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              1
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1063,16 +1892,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            2
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              2
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              2
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1081,16 +1935,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            3
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              3
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              3
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1099,16 +1978,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            4
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              4
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              4
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1117,16 +2021,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            5
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              5
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              5
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1135,16 +2064,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            6
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              6
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              6
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1153,16 +2107,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            7
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              7
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              7
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1171,16 +2150,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            8
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              8
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              8
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1189,16 +2193,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            9
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              9
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              9
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1207,16 +2236,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={9}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            10
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              10
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              10
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1225,16 +2279,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={10}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            11
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              11
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              11
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1243,16 +2322,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={11}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            12
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              12
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              12
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1261,16 +2365,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={12}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            13
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              13
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              13
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1279,16 +2408,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={13}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            14
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              14
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              14
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1297,16 +2451,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={14}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            15
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              15
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              15
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1315,16 +2494,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={15}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            16
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              16
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              16
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1333,16 +2537,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={16}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            17
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              17
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              17
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1351,16 +2580,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={17}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            18
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              18
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              18
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1369,16 +2623,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={18}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            19
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              19
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              19
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1387,16 +2666,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={19}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            20
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              20
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              20
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1405,16 +2709,41 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={20}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            21
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              21
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              21
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1524,10 +2853,29 @@ exports[`Storyshots Carousel/items one item 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            just one item
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              just one item
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              just one item
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1639,10 +2987,29 @@ exports[`Storyshots Carousel/items two items 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            first item
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              first item
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              first item
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1651,15 +3018,39 @@ exports[`Storyshots Carousel/items two items 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            second item
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              second item
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              second item
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1769,11 +3160,31 @@ exports[`Storyshots Carousel/size narrow 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            1
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              1
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              1
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1782,16 +3193,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            2
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              2
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              2
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1800,16 +3236,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            3
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              3
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              3
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1818,16 +3279,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            4
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              4
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              4
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1836,16 +3322,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            5
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              5
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              5
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1854,16 +3365,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            6
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              6
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              6
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1872,16 +3408,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            7
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              7
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              7
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1890,16 +3451,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            8
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              8
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              8
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1908,16 +3494,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            9
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              9
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              9
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1926,16 +3537,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={9}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            10
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              10
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              10
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1944,16 +3580,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={10}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            11
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              11
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              11
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1962,16 +3623,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={11}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            12
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              12
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              12
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -1980,16 +3666,41 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={12}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            13
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              13
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              13
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2099,11 +3810,31 @@ exports[`Storyshots Carousel/size wide 1`] = `
           tabIndex={-1}
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            1
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              1
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              1
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2112,16 +3843,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            2
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              2
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              2
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2130,16 +3886,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            3
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              3
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              3
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2148,16 +3929,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            4
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              4
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              4
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2166,16 +3972,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            5
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              5
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              5
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2184,16 +4015,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            6
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              6
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              6
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2202,16 +4058,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            7
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              7
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              7
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2220,16 +4101,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            8
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              8
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              8
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2238,16 +4144,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            9
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              9
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              9
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2256,16 +4187,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={9}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            10
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              10
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              10
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2274,16 +4230,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={10}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            11
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              11
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              11
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2292,16 +4273,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={11}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            12
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              12
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              12
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2310,16 +4316,41 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={12}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
         >
           <div
-            data-css-1f7uvld=""
+            data-css-qv4hlw=""
             data-testid="mock-item"
           >
-            item: 
-            13
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button: 
+              item: 
+              13
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link: 
+              item: 
+              13
+            </a>
+             
           </div>
         </li>
       </ul>
@@ -2491,6 +4522,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                 >
                   <a
                     href="#"
+                    tabIndex={1}
                   >
                     <div
                       data-css-fvvao4=""
@@ -2611,14 +4643,38 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={1}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -2626,14 +4682,38 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={2}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -2641,14 +4721,38 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={3}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
       </div>
@@ -2935,6 +5039,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={1}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -3108,6 +5217,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={2}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -3281,6 +5395,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={3}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -3454,6 +5573,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={4}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -3627,6 +5751,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={5}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -3800,6 +5929,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={6}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -3973,6 +6107,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={7}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -4146,6 +6285,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={8}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -4319,6 +6463,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={9}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -4492,6 +6641,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={10}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -4665,6 +6819,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={11}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -4838,6 +6997,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={12}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -5011,6 +7175,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={13}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -5184,6 +7353,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={14}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -5357,6 +7531,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={15}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -5530,6 +7709,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={16}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -5703,6 +7887,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={17}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -5876,6 +8065,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={18}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -6049,6 +8243,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={19}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -6222,6 +8421,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={20}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -6395,6 +8599,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={21}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -6568,6 +8777,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={22}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -6741,6 +8955,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={23}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -6914,6 +9133,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={24}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -7087,6 +9311,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={25}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -7260,6 +9489,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={26}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -7433,6 +9667,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={27}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -7606,6 +9845,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={28}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -7779,6 +10023,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={29}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -7952,6 +10201,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={30}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -8125,6 +10379,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={31}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -8298,6 +10557,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={32}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -8471,6 +10735,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={33}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -8644,6 +10913,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={34}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -8817,6 +11091,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={35}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -8990,6 +11269,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={36}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -9163,6 +11447,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={37}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -9336,6 +11625,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={38}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -9509,6 +11803,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={39}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
@@ -9793,189 +12092,387 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
             >
-              <div
-                data-css-1x8y3e3=""
-                onKeyDown={[Function]}
-                role="menu"
-                style={
-                  Object {
-                    "left": 20,
-                    "top": 20,
-                  }
-                }
+               
+              <button
+                data-css-1kybs28=""
               >
+                Button: 
                 <div
-                  data-css-13azwyo=""
+                  data-css-1x8y3e3=""
+                  onKeyDown={[Function]}
+                  role="menu"
+                  style={
+                    Object {
+                      "left": 20,
+                      "top": 20,
+                    }
+                  }
                 >
-                  <button
-                    aria-haspopup={false}
-                    data-css-1c2ffua=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-1c2ffua=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      0
-                    </span>
-                  </button>
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        0
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        1
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        2
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        3
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        4
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        5
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        6
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        7
+                      </span>
+                    </button>
+                  </div>
                 </div>
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
                 <div
-                  data-css-13azwyo=""
+                  data-css-1x8y3e3=""
+                  onKeyDown={[Function]}
+                  role="menu"
+                  style={
+                    Object {
+                      "left": 20,
+                      "top": 20,
+                    }
+                  }
                 >
-                  <button
-                    aria-haspopup={false}
-                    data-css-mka67z=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-1c2ffua=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      1
-                    </span>
-                  </button>
-                </div>
-                <div
-                  data-css-13azwyo=""
-                >
-                  <button
-                    aria-haspopup={false}
-                    data-css-mka67z=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        0
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      2
-                    </span>
-                  </button>
-                </div>
-                <div
-                  data-css-13azwyo=""
-                >
-                  <button
-                    aria-haspopup={false}
-                    data-css-mka67z=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        1
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      3
-                    </span>
-                  </button>
-                </div>
-                <div
-                  data-css-13azwyo=""
-                >
-                  <button
-                    aria-haspopup={false}
-                    data-css-mka67z=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        2
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      4
-                    </span>
-                  </button>
-                </div>
-                <div
-                  data-css-13azwyo=""
-                >
-                  <button
-                    aria-haspopup={false}
-                    data-css-mka67z=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        3
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      5
-                    </span>
-                  </button>
-                </div>
-                <div
-                  data-css-13azwyo=""
-                >
-                  <button
-                    aria-haspopup={false}
-                    data-css-mka67z=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        4
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      6
-                    </span>
-                  </button>
-                </div>
-                <div
-                  data-css-13azwyo=""
-                >
-                  <button
-                    aria-haspopup={false}
-                    data-css-mka67z=""
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onMouseOver={[Function]}
-                    role="menuitem"
-                    tabIndex="0"
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        5
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
                   >
-                    <span
-                      data-css-3fe0zw=""
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
                     >
-                      item: 
-                      7
-                    </span>
-                  </button>
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        6
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    data-css-13azwyo=""
+                  >
+                    <button
+                      aria-haspopup={false}
+                      data-css-mka67z=""
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseOver={[Function]}
+                      role="menuitem"
+                      tabIndex="0"
+                    >
+                      <span
+                        data-css-3fe0zw=""
+                      >
+                        item: 
+                        7
+                      </span>
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </a>
+               
             </div>
           </li>
         </ul>
@@ -9984,14 +12481,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={1}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -9999,14 +12520,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={2}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10014,14 +12559,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={3}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10029,14 +12598,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={4}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10044,14 +12637,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={5}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10059,14 +12676,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={6}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10074,14 +12715,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={7}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10089,14 +12754,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={8}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10104,14 +12793,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={9}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10119,14 +12832,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={10}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10134,14 +12871,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={11}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10149,14 +12910,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={12}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
         <ul
@@ -10164,14 +12949,38 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-bxro55=""
           hidden={true}
           pageIndex={13}
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
         >
           <li
             data-css-efqczl=""
           >
             <div
-              data-css-1f7uvld=""
+              data-css-qv4hlw=""
               data-testid="mock-item"
-            />
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button: 
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link: 
+              </a>
+               
+            </div>
           </li>
         </ul>
       </div>
@@ -10303,6 +13112,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -10437,6 +13247,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -10464,6 +13279,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -10584,6 +13400,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -10611,6 +13432,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -10731,6 +13553,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -10758,6 +13585,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -10878,6 +13706,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -10905,6 +13738,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -11025,6 +13859,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -11052,6 +13891,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -11172,6 +14012,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -11199,6 +14044,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -11319,6 +14165,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -11346,6 +14197,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -11466,6 +14318,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -11493,6 +14350,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -11613,6 +14471,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={9}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -11640,6 +14503,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -11760,6 +14624,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={10}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -11787,6 +14656,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -11907,6 +14777,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={11}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -11934,6 +14809,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -12054,6 +14930,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={12}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -12081,6 +14962,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -12201,6 +15083,11 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={13}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -12228,6 +15115,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -12471,6 +15359,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -12605,6 +15494,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={1}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -12632,6 +15526,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -12752,6 +15647,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={2}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -12779,6 +15679,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -12899,6 +15800,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={3}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -12926,6 +15832,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -13046,6 +15953,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={4}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -13073,6 +15985,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -13193,6 +16106,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={5}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -13220,6 +16138,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -13340,6 +16259,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={6}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -13367,6 +16291,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -13487,6 +16412,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={7}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -13514,6 +16444,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -13634,6 +16565,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={8}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -13661,6 +16597,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -13781,6 +16718,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={9}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -13808,6 +16750,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -13928,6 +16871,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={10}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -13955,6 +16903,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -14075,6 +17024,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={11}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -14102,6 +17056,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -14222,6 +17177,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={12}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -14249,6 +17209,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""
@@ -14369,6 +17330,11 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-bxro55=""
         hidden={true}
         pageIndex={13}
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
       >
         <li
           data-css-efqczl=""
@@ -14396,6 +17362,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               >
                 <a
                   href="#"
+                  tabIndex={1}
                 >
                   <div
                     data-css-fvvao4=""

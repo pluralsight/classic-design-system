@@ -15,7 +15,7 @@ const MockCard = props => (
   <Card
     title={
       <Card.TextLink>
-        <a href="#">
+        <a href="#" tabIndex={1}>
           <Card.Title>{props.titleText}</Card.Title>
         </a>
       </Card.TextLink>
@@ -45,14 +45,28 @@ const MockItem = props => (
       alignItems: 'center',
       background: 'pink',
       display: 'flex',
+      flexDirection: 'column',
       height: '150px',
       justifyContent: 'center',
       position: 'relative'
     })}
     data-testid="mock-item"
     {...props}
-  />
+  >
+    {' '}
+    <button {...css({ flex: 'none' })}>Button: {props.children}</button>
+    <p {...css({ width: '100%', textAlign: 'center', padding: 10 })}>
+      non focusable /tabIndex text
+    </p>
+    <a href="https://duckduckgo.com/" {...css({ flex: 'none' })}>
+      Link: {props.children}
+    </a>{' '}
+  </div>
 )
+
+MockItem.propTypes = {
+  children: PropTypes.node
+}
 
 storiesOf('Carousel/items', module)
   .add('one item', _ => (
