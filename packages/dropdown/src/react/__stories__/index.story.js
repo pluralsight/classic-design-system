@@ -11,9 +11,6 @@ import Dropdown from '../index.js'
 const Empty = React.forwardRef((props, forwardedRef) => <span />)
 
 const DropdownWithDefaults = props => <Dropdown {...props} />
-DropdownWithDefaults.defaultProps = {
-  menu: <Empty />
-}
 
 storiesOf('labels', module)
   .add('none', _ => <DropdownWithDefaults />)

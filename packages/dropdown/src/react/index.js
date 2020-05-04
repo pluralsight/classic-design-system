@@ -176,7 +176,6 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     }
     if (isOpen) {
       document.addEventListener('click', handleClickOutsideMenu)
-      document.addEventListener('contextmenu', handleClickOutsideMenu)
       window.addEventListener('resize', requestAnimationFrame, {
         passive: true
       })
@@ -184,7 +183,6 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     }
     return () => {
       document.removeEventListener('click', handleClickOutsideMenu)
-      document.removeEventListener('contextmenu', handleClickOutsideMenu)
       window.removeEventListener('resize', requestAnimationFrame)
       window.removeEventListener('scroll', clear)
     }
@@ -240,7 +238,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   React.useLayoutEffect(() => {
     setWidth(combinedRef.current.getBoundingClientRect().width)
   }, [combinedRef, forwardedRef])
-  const inNode = canUseDOM() ? document.body : null
+  const inNode = canUseDOM ? document.body : null
   const [menuPosition, setMenuPosition] = React.useState({})
   const fieldContainerRef = useRef()
   React.useLayoutEffect(() => {
@@ -347,7 +345,8 @@ Dropdown.defaultProps = {
   appearance: vars.appearances.default,
   disabled: false,
   error: false,
-  size: vars.sizes.medium
+  size: vars.sizes.medium,
+  menu: <span />
 }
 
 Dropdown.appearances = vars.appearances
