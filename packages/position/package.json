@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-position",
-  "version": "3.0.7",
+  "version": "4.0.0",
   "description": "Position UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@3.0.7...@pluralsight/ps-design-system-position@4.0.0) (2020-05-05)
+
+
+### Bug Fixes
+
+* **position:** copy show element style instead of target ([5bdb36c](https://github.com/pluralsight/design-system/commit/5bdb36c1e67e3179051afe261b5b5321d7cd05f3))
+* **position:** no longer clones child styles onto tooltip ([0e65a68](https://github.com/pluralsight/design-system/commit/0e65a682d3a32f34f98af3dbd4d8b58f124691be))
+
+
+### BREAKING CHANGES
+
+* **position:** no longer clones child styles onto show element
+
+
+
+
+
 ## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@3.0.6...@pluralsight/ps-design-system-position@3.0.7) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

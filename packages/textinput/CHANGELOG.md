@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@7.0.9...@pluralsight/ps-design-system-textinput@8.0.0) (2020-05-05)
+
+
+### Bug Fixes
+
+* **textinput:** apply className only to label ([b6c58f3](https://github.com/pluralsight/design-system/commit/b6c58f309dddcb4273da93222efd09c34613f23f))
+
+
+### BREAKING CHANGES
+
+* **textinput:** only apply className to label
+
+
+
+
+
 ## [7.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@7.0.8...@pluralsight/ps-design-system-textinput@7.0.9) (2020-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

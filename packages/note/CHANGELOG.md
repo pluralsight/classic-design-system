@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@6.0.10...@pluralsight/ps-design-system-note@6.1.0) (2020-05-05)
+
+
+### Features
+
+* **note:** releases action limit ([1db08cd](https://github.com/pluralsight/design-system/commit/1db08cdee5b310824b2161918566a11add490220))
+
+
+
+
+
 ## [6.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@6.0.9...@pluralsight/ps-design-system-note@6.0.10) (2020-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-note
