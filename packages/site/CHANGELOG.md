@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [18.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.4.3...@pluralsight/ps-design-system-site@18.5.0) (2020-05-05)
+
+
+### Features
+
+* **site:** add label props to radio ([9e70485](https://github.com/pluralsight/design-system/commit/9e7048562b90a2c7eb7d971e7e27751d46ce9004))
+* **site:** add value to type suggestion proptypes ([1d0c347](https://github.com/pluralsight/design-system/commit/1d0c347f62d7bcde5e57740fb2b921289a8efca5))
+
+
+
+
+
 ## [18.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.4.2...@pluralsight/ps-design-system-site@18.4.3) (2020-04-24)
 
 

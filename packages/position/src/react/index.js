@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { canUseDOM } from 'exenv'
+import { createUniversalPortal } from '@pluralsight/ps-design-system-util'
 
 import * as positionFns from '../js/index.js'
 
@@ -59,7 +60,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
   const showRef = React.useRef()
   const showEl = React.cloneElement(props.show, {
     ref: showRef,
-    style: { ...child.props.style, ...style }
+    style: { ...props.show.props.style, ...style }
   })
 
   const updateStyle = React.useCallback(() => {
@@ -109,21 +110,8 @@ Position.propTypes = {
 }
 
 Position.defaultProps = {
-  inNode: canUseDOM() ? document.body : null,
+  inNode: canUseDOM ? document.body : null,
   when: true
-}
-
-function canUseDOM() {
-  return !!(
-    typeof window !== 'undefined' &&
-    typeof window.document !== 'undefined' &&
-    typeof window.document.createElement !== 'undefined'
-  )
-}
-
-function createUniversalPortal() {
-  if (!canUseDOM()) return null
-  return ReactDOM.createPortal(...arguments)
 }
 
 function delayUntilNextTick(fn) {

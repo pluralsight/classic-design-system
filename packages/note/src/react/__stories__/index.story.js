@@ -147,6 +147,16 @@ storiesOf('Note/actions', module)
       actionBarVisible
     />
   ))
+  .add('three actions', _ => (
+    <NoteWithDefaults
+      actionBar={[
+        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action icon={<Icon.AnalyticsIcon />} title="Analytics" />,
+        <Note.Action icon={<Icon.MoreIcon />} title="More" />
+      ]}
+      actionBarVisible
+    />
+  ))
   .add('with long heading', _ => (
     <NoteWithDefaults
       heading="This is probably the greatest thing that's ever happened in my life"

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@6.0.8...@pluralsight/ps-design-system-radio@6.1.0) (2020-05-05)
+
+
+### Features
+
+* **radio:** add label and subLabel props to group ([34239b6](https://github.com/pluralsight/design-system/commit/34239b6764cf47591c443262f2d9e03efb817db1))
+
+
+
+
+
 ## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@6.0.7...@pluralsight/ps-design-system-radio@6.0.8) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

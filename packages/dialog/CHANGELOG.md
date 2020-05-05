@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.1.7...@pluralsight/ps-design-system-dialog@8.1.8) (2020-05-05)
+
+
+### Bug Fixes
+
+* **dialog:** remove focus ring ([e366bfa](https://github.com/pluralsight/design-system/commit/e366bfa6fb69b9e2c6fb5913fdd88c028728a810))
+
+
+
+
+
 ## [8.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.1.6...@pluralsight/ps-design-system-dialog@8.1.7) (2020-04-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

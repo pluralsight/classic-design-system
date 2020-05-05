@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@12.0.0...@pluralsight/ps-design-system-actionmenu@13.0.0) (2020-05-05)
+
+
+### Bug Fixes
+
+* **position:** no longer clones child styles onto tooltip ([0e65a68](https://github.com/pluralsight/design-system/commit/0e65a682d3a32f34f98af3dbd4d8b58f124691be))
+
+
+### BREAKING CHANGES
+
+* **position:** no longer clones child styles onto show element
+
+
+
+
+
 # [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@11.0.8...@pluralsight/ps-design-system-actionmenu@12.0.0) (2020-04-20)
 
 
