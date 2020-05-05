@@ -16,6 +16,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
+    "exenv": "^1.2.2",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

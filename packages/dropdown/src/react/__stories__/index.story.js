@@ -8,12 +8,9 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
 
-const Empty = () => null
+const Empty = React.forwardRef((props, forwardedRef) => <span />)
 
 const DropdownWithDefaults = props => <Dropdown {...props} />
-DropdownWithDefaults.defaultProps = {
-  menu: <Empty />
-}
 
 storiesOf('labels', module)
   .add('none', _ => <DropdownWithDefaults />)
