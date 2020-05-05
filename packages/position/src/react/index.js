@@ -60,7 +60,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
   const showRef = React.useRef()
   const showEl = React.cloneElement(props.show, {
     ref: showRef,
-    style: { ...child.props.style, ...style }
+    style: { ...props.show.props.style, ...style }
   })
 
   const updateStyle = React.useCallback(() => {

@@ -2317,9 +2317,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
       <div
         style={
           Object {
-            "background": "pink",
-            "display": "inline-block",
-            "padding": "4px",
             "position": "absolute",
           }
         }
@@ -2501,9 +2498,6 @@ exports[`Storyshots with Position BelowLeft 1`] = `
       <div
         style={
           Object {
-            "background": "pink",
-            "display": "inline-block",
-            "padding": "4px",
             "position": "absolute",
           }
         }
@@ -2613,9 +2607,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
       <div
         style={
           Object {
-            "background": "pink",
-            "display": "inline-block",
-            "padding": "4px",
             "position": "absolute",
           }
         }
