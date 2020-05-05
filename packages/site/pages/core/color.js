@@ -386,7 +386,7 @@ const colorCategories = [
             name: 'Border - On Dark - High Contrast',
             var: 'psColorsBorderHighOnDark',
             hex: '#FFFFFF, 30% opacity',
-            js: 'colorsTextIcon.highOnDark',
+            js: 'colorsBorder.highOnDark',
             fg: core.colorsTextIcon.highOnDark,
             borderExample: core.colorsBorder.highOnDark
           },
@@ -394,7 +394,7 @@ const colorCategories = [
             name: 'Border - On Dark - Low Contrast',
             var: 'psColorsBorderLowOnDark',
             hex: '#FFFFFF, 15% opacity',
-            js: 'colorsTextIcon.lowOnDark',
+            js: 'colorsBorder.lowOnDark',
             fg: core.colorsTextIcon.lowOnDark,
             borderExample: core.colorsBorder.lowOnDark
           }
@@ -409,7 +409,7 @@ const colorCategories = [
             name: 'Border - On Light - High Contrast',
             var: 'psColorsBorderHighOnLight',
             hex: '#000000, 30% opacity',
-            js: 'colorsTextIcon.highOnLight',
+            js: 'colorsBorder.highOnLight',
             fg: core.colorsTextIcon.highOnLight,
             borderExample: core.colorsBorder.highOnLight
           },
@@ -417,7 +417,7 @@ const colorCategories = [
             name: 'Border - On Light - Low Contrast',
             var: 'psColorsBorderLowOnLight',
             hex: '#000000, 15% opacity',
-            js: 'colorsTextIcon.lowOnLight',
+            js: 'colorsBorder.lowOnLight',
             fg: core.colorsTextIcon.lowOnLight,
             borderExample: core.colorsBorder.lowOnLight
           }
