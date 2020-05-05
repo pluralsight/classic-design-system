@@ -50,11 +50,8 @@ export default {
   },
   '.psds-carousel--ready': { opacity: 1 },
 
-  '.psds-carousel__controls': {
-    ...resetList
-  },
-
   '.psds-carousel__controls__control': {
+    zIndex: 1,
     position: 'absolute',
     top: '50%',
     transition: `transform ${motion.speedFast} ease-in-out`
@@ -81,7 +78,6 @@ export default {
     height: '36px',
     justifyContent: 'center',
     width: '36px',
-
     '&:focus': { outline: 'none' },
     '&:hover': { cursor: 'pointer' }
   },
@@ -99,7 +95,6 @@ export default {
   },
 
   '.psds-carousel__pages': {
-    ...resetList,
     ...resetFocus,
     display: 'flex',
     width: '100%',
@@ -107,6 +102,7 @@ export default {
   },
 
   '.psds-carousel__page': {
+    ...resetList,
     alignItems: 'flex-start',
     display: 'flex',
     flex: '1 0 100%',

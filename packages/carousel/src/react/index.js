@@ -11,7 +11,7 @@ import { chunk, isFunction, pick } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
 import CarouselContext from './context.js'
-import { Controls, Control } from './controls.js'
+import { Control } from './control.js'
 
 import useResizeObserver from './use-resize-observer.js'
 import useSwipe from './use-swipe.js'
@@ -33,7 +33,7 @@ const styles = {
   item: () => css(stylesheet['.psds-carousel__item'])
 }
 
-export default function Carousel({ controls, size, ...props }) {
+export default function Carousel({ controlPrev, controlNext, size, ...props }) {
   const id = useUniqueId('carousel-')
   const { ref, width } = useResizeObserver()
 
@@ -63,6 +63,7 @@ export default function Carousel({ controls, size, ...props }) {
         {...filterReactProps(props)}
         ref={ref}
       >
+        {controlPrev}
         <Pages
           ref={pager.ref}
           id={id}
@@ -77,14 +78,19 @@ export default function Carousel({ controls, size, ...props }) {
             const isActivePage = pager.activePage === pageIndex
 
             return (
-              <Page key={pageIndex} isActivePage={isActivePage}>
+              <Page
+                key={pageIndex}
+                isActivePage={isActivePage}
+                pageIndex={pageIndex}
+                paged={pager.paged}
+              >
                 {items.map((item, itemIndex) => {
                   const wrapped = isOfComponentType(item, Item)
                   if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
 
                   return cloneElement(item, {
                     key: itemIndex,
-
+                    ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),
                     isActivePage,
                     itemIndex,
                     itemsPerPage: perPage,
@@ -96,9 +102,7 @@ export default function Carousel({ controls, size, ...props }) {
             )
           })}
         </Pages>
-
-        {controls}
-
+        {controlNext}
         <Instructions />
       </div>
     </CarouselContext.Provider>
@@ -107,7 +111,7 @@ export default function Carousel({ controls, size, ...props }) {
 
 function Item({ children, ...props }) {
   return (
-    <div {...styles.item()} {...filterReactProps(props)}>
+    <li {...styles.item()} {...filterReactProps(props)}>
       {isFunction(children)
         ? children({
             isActivePage: props.isActivePage,
@@ -117,7 +121,7 @@ function Item({ children, ...props }) {
             pageIndex: props.pageIndex
           })
         : children}
-    </div>
+    </li>
   )
 }
 
@@ -130,9 +134,6 @@ Item.propTypes = {
   pageIndex: PropTypes.number
 }
 
-Carousel.Controls = Controls
-Carousel.Controls.displayName = 'Carousel.Controls'
-
 Carousel.Control = Control
 Carousel.Control.displayName = 'Carousel.Control'
 
@@ -142,17 +143,14 @@ Carousel.Item.displayName = 'Carousel.Item'
 Carousel.sizes = vars.sizes
 
 Carousel.propTypes = {
-  controls: PropTypes.node,
+  controlPrev: PropTypes.node,
+  controlNext: PropTypes.node,
   children: PropTypes.node.isRequired,
   size: PropTypes.oneOf(Object.keys(Carousel.sizes))
 }
 Carousel.defaultProps = {
-  controls: (
-    <Controls>
-      <Control direction={Control.directions.prev} />
-      <Control direction={Control.directions.next} />
-    </Controls>
-  ),
+  controlPrev: <Control direction={Control.directions.prev} />,
+  controlNext: <Control direction={Control.directions.next} />,
   size: Carousel.sizes.narrow
 }
 
@@ -179,45 +177,57 @@ const Pages = React.forwardRef((props, ref) => {
   })
 
   return (
-    <ul
+    <div
       aria-describedby={`${context.id}__instructions`}
       aria-label="carousel"
       id={context.id}
       ref={ref}
       role="region"
-      tabIndex="0"
       {...styles.pages(props)}
       {...filterReactProps(props)}
     />
   )
 })
 
+Pages.displayName = 'Carousel.Pages'
+
 Pages.propTypes = {
   onSwipeLeft: PropTypes.func.isRequired,
   onSwipeRight: PropTypes.func.isRequired
 }
 
-function Page(props) {
+const Page = props => {
   const ref = React.useRef()
 
-  const { children, isActivePage, ...rest } = props
+  const { children, isActivePage, paged, ...rest } = props
+  React.useEffect(() => {
+    if (paged && isActivePage) {
+      const page = ref.current
+      const focusFirstChild = () => page.firstElementChild.focus()
+      page.addEventListener('transitionend', focusFirstChild)
+    }
+  }, [isActivePage, paged])
   const { offset } = React.useContext(CarouselContext)
-
   return (
-    <li
+    <ul
       ref={ref}
       {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
       {...rest}
-      {...(!isActivePage && { hidden: true, tabIndex: -1 })}
+      {...(!isActivePage && {
+        hidden: true,
+        style: { visibility: 'hidden' }
+      })}
     >
       {children}
-    </li>
+    </ul>
   )
 }
+Pages.displayName = 'Carousel.Page'
 Page.propTypes = {
   children: PropTypes.node,
-  onKeyDown: PropTypes.func
+  paged: PropTypes.bool,
+  isActivePage: PropTypes.bool
 }
 
 Page.propTypes = {
@@ -237,7 +247,7 @@ function isOfComponentType(instance, el) {
 function usePager(pageCount, additionalSideEffectTriggers = []) {
   const [activePage, setActivePage] = React.useState(0)
   const [offset, setOffset] = React.useState(0)
-
+  const [paged, setPaged] = React.useState(false)
   const ref = React.useRef()
 
   React.useEffect(
@@ -264,6 +274,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     if (nextPage > pageCount - 1) return
 
     setActivePage(nextPage)
+    setPaged(true)
   }
 
   const prev = () => {
@@ -271,6 +282,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     if (nextPage < 0) return
 
     setActivePage(nextPage)
+    setPaged(true)
   }
 
   return {
@@ -278,6 +290,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
     next,
     offset,
     prev,
-    ref
+    ref,
+    paged
   }
 }
