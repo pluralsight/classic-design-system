@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.1.1...@pluralsight/ps-design-system-util@3.2.0) (2020-05-05)
+
+
+### Features
+
+* **util:** move createUniversalPortal to util package ([073b80b](https://github.com/pluralsight/design-system/commit/073b80b06ed9f9f9a50797ddc99dff08a8c78400))
+
+
+
+
+
 ## [3.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.1.0...@pluralsight/ps-design-system-util@3.1.1) (2020-04-24)
 
 

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@7.0.2...@pluralsight/ps-design-system-dropdown@7.1.0) (2020-05-05)
+
+
+### Bug Fixes
+
+* **dropdown:** fullwidth styles on overriden by glamour ([e5b9f30](https://github.com/pluralsight/design-system/commit/e5b9f30b27d4fb12085a0ec0e0c39526bdd91fb2))
+* **dropdown:** moves menu into portal for render ([10a97eb](https://github.com/pluralsight/design-system/commit/10a97ebe5e23a88b2907fbbd3911f8f0d26a6c81))
+
+
+### Features
+
+* **dropdown:** requested changes ([de82685](https://github.com/pluralsight/design-system/commit/de826858a9852dd1ca9cd34224b03fdc251811a2))
+* **util:** move createUniversalPortal to util package ([073b80b](https://github.com/pluralsight/design-system/commit/073b80b06ed9f9f9a50797ddc99dff08a8c78400))
+
+
+
+
+
 ## [7.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@7.0.1...@pluralsight/ps-design-system-dropdown@7.0.2) (2020-05-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

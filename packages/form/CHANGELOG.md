@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@5.0.11...@pluralsight/ps-design-system-form@5.0.12) (2020-05-05)
+
+
+### Bug Fixes
+
+* **form:** remove unecessary z-index ([b9f1d1d](https://github.com/pluralsight/design-system/commit/b9f1d1d974724a094610882f56d81746d396fc52)), closes [#943](https://github.com/pluralsight/design-system/issues/943)
+
+
+
+
+
 ## [5.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@5.0.10...@pluralsight/ps-design-system-form@5.0.11) (2020-05-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@8.0.11...@pluralsight/ps-design-system-carousel@9.0.0) (2020-05-05)
+
+
+### Bug Fixes
+
+* **carousel:** remove tab index from carosousel item/card ([850bff3](https://github.com/pluralsight/design-system/commit/850bff3eef3a6b2f3983a3dd7566628f8c813cdd))
+* **carousel:** remove unused css rule ([9d3829a](https://github.com/pluralsight/design-system/commit/9d3829afcfd91182b7a445896b47128964e0c6fc))
+* **carousel:** update tabindex for acceisbility request ([85b7da1](https://github.com/pluralsight/design-system/commit/85b7da1d2b22b0f4bddbb8f6e394927471275f74))
+
+
+### Features
+
+* **carousel:** update story and fix render issue ([6f085de](https://github.com/pluralsight/design-system/commit/6f085de4b93eb55ecfc5377aa89747690236126f))
+* **carousel:** updates accesibility of components ([df4c52b](https://github.com/pluralsight/design-system/commit/df4c52b7624e9e018885338dd77df66e2b8c2f11))
+
+
+### BREAKING CHANGES
+
+* **carousel:** no more control prop now use controlPrev and controlNext
+
+
+
+
+
 ## [8.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@8.0.10...@pluralsight/ps-design-system-carousel@8.0.11) (2020-05-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel
