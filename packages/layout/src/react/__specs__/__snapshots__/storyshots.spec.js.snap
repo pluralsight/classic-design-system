@@ -578,7 +578,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
       data-css-1cnar9w=""
     >
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -617,7 +617,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
       data-css-1cnar9w=""
     >
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -634,7 +634,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
         A link
       </a>
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -651,7 +651,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
         A link
       </a>
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -668,7 +668,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
         A link
       </a>
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -707,7 +707,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
       data-css-1cnar9w=""
     >
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -746,7 +746,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
       data-css-1cnar9w=""
     >
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -763,7 +763,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
         A link
       </a>
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -780,7 +780,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
         A link
       </a>
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >
@@ -797,7 +797,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
         A link
       </a>
       <button
-        data-css-el86ax=""
+        data-css-176v989=""
         disabled={false}
         style={Object {}}
       >

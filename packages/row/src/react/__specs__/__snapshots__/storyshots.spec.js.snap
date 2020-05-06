@@ -28,7 +28,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
         data-css-7zyoug=""
       >
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -87,7 +87,7 @@ exports[`Storyshots actionBar long title 1`] = `
         data-css-1pe5xb7=""
       >
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -146,7 +146,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
         data-css-1pe5xb7=""
       >
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -205,7 +205,7 @@ exports[`Storyshots actionBar one action 1`] = `
         data-css-1pe5xb7=""
       >
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -336,7 +336,7 @@ exports[`Storyshots combo everything 1`] = `
         data-css-7b22zo=""
       >
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -362,7 +362,7 @@ exports[`Storyshots combo everything 1`] = `
           />
         </button>
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -390,7 +390,7 @@ exports[`Storyshots combo everything 1`] = `
           />
         </button>
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -878,7 +878,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
         data-css-7zyoug=""
       >
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -930,7 +930,7 @@ exports[`Storyshots in a stack no top border on first row 1`] = `
         data-css-7zyoug=""
       >
         <button
-          data-css-1c23eje=""
+          data-css-kovzf5=""
           disabled={false}
           style={Object {}}
         >
@@ -1015,7 +1015,7 @@ exports[`Storyshots in drawer medium 1`] = `
               data-css-7zyoug=""
             >
               <button
-                data-css-1c23eje=""
+                data-css-kovzf5=""
                 disabled={false}
                 onClick={[Function]}
                 style={Object {}}
@@ -1136,7 +1136,7 @@ exports[`Storyshots in drawer small 1`] = `
               data-css-7zyoug=""
             >
               <button
-                data-css-1c23eje=""
+                data-css-kovzf5=""
                 disabled={false}
                 onClick={[Function]}
                 style={Object {}}

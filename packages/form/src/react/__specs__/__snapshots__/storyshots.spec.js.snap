@@ -46,7 +46,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-el86ax=""
+                data-css-176v989=""
                 disabled={false}
                 style={Object {}}
               >
@@ -61,7 +61,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-a3vwj=""
+                data-css-17fxkyy=""
                 disabled={false}
                 style={Object {}}
               >
@@ -126,7 +126,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-el86ax=""
+                data-css-176v989=""
                 disabled={false}
                 style={Object {}}
               >
@@ -141,7 +141,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-a3vwj=""
+                data-css-17fxkyy=""
                 disabled={false}
                 style={Object {}}
               >
@@ -192,7 +192,7 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
               data-css-7d5932=""
             >
               <button
-                data-css-el86ax=""
+                data-css-176v989=""
                 disabled={false}
                 style={Object {}}
               >
@@ -383,7 +383,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-el86ax=""
+                data-css-176v989=""
                 disabled={false}
                 style={Object {}}
               >
@@ -398,7 +398,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-a3vwj=""
+                data-css-17fxkyy=""
                 disabled={false}
                 style={Object {}}
               >
@@ -1100,7 +1100,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-el86ax=""
+                data-css-176v989=""
                 disabled={false}
                 style={Object {}}
               >
@@ -1115,7 +1115,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-7d5932=""
             >
               <button
-                data-css-a3vwj=""
+                data-css-17fxkyy=""
                 disabled={false}
                 style={Object {}}
               >
