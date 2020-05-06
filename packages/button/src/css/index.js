@@ -66,7 +66,7 @@ export default {
       )}`
     },
     '&:not([disabled]):active': {
-      transform: 'translateY(1px)'
+      transform: 'scale(0.98)'
     }
   },
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
@@ -187,27 +187,33 @@ export default {
     background: 'none'
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark,
+    color: colorsTextIcon.lowOnDark,
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHoverOnDark
+      background: colorsSecondaryAction.backgroundHoverOnDark,
+      color: colorsTextIcon.highOnDark
     },
     '&:not([disabled]):focus': {
-      background: colorsSecondaryAction.backgroundHoverOnDark
+      background: colorsSecondaryAction.backgroundHoverOnDark,
+      color: colorsTextIcon.highOnDark
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnDark
+      background: colorsSecondaryAction.backgroundPressedOnDark,
+      color: colorsTextIcon.highOnDark
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight,
+    color: colorsTextIcon.lowOnLight,
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHoverOnLight
+      background: colorsSecondaryAction.backgroundHoverOnLight,
+      color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):focus': {
-      background: colorsSecondaryAction.backgroundHoverOnLight
+      background: colorsSecondaryAction.backgroundHoverOnLight,
+      color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnLight
+      background: colorsSecondaryAction.backgroundPressedOnLight,
+      color: colorsTextIcon.highOnLight
     }
   },
   [`.psds-button--disabled`]: {
