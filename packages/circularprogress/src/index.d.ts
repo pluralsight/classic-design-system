@@ -17,7 +17,10 @@ export interface CircularProgressStatics {
   sizes: typeof sizes
 }
 
-export const sizes = keyMirror('small', 'medium')
+export const sizes: {
+  small: 'small',
+  medium: 'medium'
+}
 
 // TODO: relocate to a global typings file
 export type RefForwardingComponent<
@@ -26,15 +29,3 @@ export type RefForwardingComponent<
   Statics = {}
 > = ForwardRefExoticComponent<Props & HTMLAttributes<El> & RefAttributes<El>> &
   Statics
-
-// TODO: move to global utils
-type KeyMirror<Keys extends string[]> = { readonly [K in Keys[number]]: K }
-
-declare function keyMirror<Keys extends string[]>(...inputs: Keys) {
-  const mirrored = inputs.reduce(
-    (acc, key) => ({ ...acc, [key]: key }),
-    {} as KeyMirror<Keys>
-  )
-
-  return Object.freeze(mirrored)
-}
