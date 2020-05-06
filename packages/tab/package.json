@@ -16,7 +16,7 @@
     "build:watch": "npm run build:js -- --watch",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "test": "jest",
+    "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
