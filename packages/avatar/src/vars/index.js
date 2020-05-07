@@ -17,7 +17,7 @@ export const sizes = {
   xLarge: 'xLarge'
 }
 
-const colors = [
+export const colors = [
   colorsBlue[7],
   colorsPurple[7],
   colorsGreen[7],
