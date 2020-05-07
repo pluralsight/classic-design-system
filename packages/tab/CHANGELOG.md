@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.1.3...@pluralsight/ps-design-system-tab@15.1.4) (2020-05-07)
+
+
+### Bug Fixes
+
+* update normalize peer dependency ([cd5b8a4](https://github.com/pluralsight/design-system/commit/cd5b8a41aa231dc2f5102643a3dca9a772d9b5ae))
+
+
+
+
+
 ## [15.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.1.2...@pluralsight/ps-design-system-tab@15.1.3) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab
