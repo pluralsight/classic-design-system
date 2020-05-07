@@ -56,7 +56,7 @@ export default _ => (
             'inNode',
             <code>HTMLElement</code>,
             null,
-            null,
+            <code>document.body</code>,
             'specific node for portal rendering'
           ]),
           PropTypes.row([
@@ -99,16 +99,12 @@ export default _ => (
         src="/components/position-positions-example"
       />
 
-      <SectionHeading>Portal Example</SectionHeading>
+      <SectionHeading>Portal override</SectionHeading>
       <P>
-        Sometimes it's difficult to accurately position relative to another
-        element on the page. Perhaps the surrounding markup and styles were not
-        designed to accommodate an inserted <Text.Code>Tooltip</Text.Code>. Or
-        perhaps there's a parent container that's{' '}
-        <Text.Code>position: relative</Text.Code>. Both of these would be good
-        cases for rendering through a React Portal. The component can take care
-        of that for you. You just supply another independent DOM node elsewhere
-        in your document.
+        <Text.Code>Position</Text.Code> always renders in a portal, defaulting
+        to <Text.Code>document.body</Text.Code>. It is often desirable to
+        provide your own node to render within. Use the{' '}
+        <Text.Code>inNode</Text.Code> prop to pass an element reference.
       </P>
       <iframe
         className="iframe"
@@ -133,7 +129,7 @@ export default _ => (
         <Above
           show={
             <Tooltip tailPosition={Tooltip.tailPositions.bottomCenter}>
-              Rendered through Portal
+              Custom portal node
             </Tooltip>
           }
           inNode={node}
