@@ -7,7 +7,7 @@ exports[`Storyshots Default className override 1`] = `
   <div
     aria-hidden={true}
     className="fakeClassName"
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       data-css-d7y6x2=""
@@ -20,7 +20,7 @@ exports[`Storyshots Default className override 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#C00F00",
+          "backgroundColor": "#009380",
         }
       }
     >
@@ -35,7 +35,7 @@ exports[`Storyshots Default large 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-12kblpa=""
+    data-css-1vpftcu=""
   >
     <img
       alt="large avatar"
@@ -48,7 +48,7 @@ exports[`Storyshots Default large 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -63,7 +63,7 @@ exports[`Storyshots Default light image 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       alt="light image avatar"
@@ -77,7 +77,7 @@ exports[`Storyshots Default light image 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#C00F00",
+          "backgroundColor": "#009380",
         }
       }
     >
@@ -92,7 +92,7 @@ exports[`Storyshots Default medium 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       alt="medium avatar"
@@ -105,7 +105,7 @@ exports[`Storyshots Default medium 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -120,7 +120,7 @@ exports[`Storyshots Default small 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-6fiexv=""
+    data-css-xthig=""
   >
     <img
       alt="small avatar"
@@ -133,7 +133,7 @@ exports[`Storyshots Default small 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -149,7 +149,7 @@ exports[`Storyshots Default style override 1`] = `
 >
   <div
     aria-hidden={true}
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
     style={
       Object {
         "border": "3px solid red",
@@ -167,7 +167,7 @@ exports[`Storyshots Default style override 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#C00F00",
+          "backgroundColor": "#009380",
         }
       }
     >
@@ -182,7 +182,7 @@ exports[`Storyshots Default xLarge 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-inys4v=""
+    data-css-5nxofe=""
   >
     <img
       alt="xLarge avatar"
@@ -195,7 +195,7 @@ exports[`Storyshots Default xLarge 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -210,7 +210,7 @@ exports[`Storyshots Default xSmall 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-1pii7we=""
+    data-css-79vgce=""
   >
     <img
       alt="xSmall avatar"
@@ -223,7 +223,7 @@ exports[`Storyshots Default xSmall 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -239,7 +239,7 @@ exports[`Storyshots Image cases flat, long 1`] = `
 >
   <div
     aria-hidden={true}
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       data-css-d7y6x2=""
@@ -252,7 +252,7 @@ exports[`Storyshots Image cases flat, long 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#00A894",
+          "backgroundColor": "#7048C6",
         }
       }
     >
@@ -268,7 +268,7 @@ exports[`Storyshots Image cases square 1`] = `
 >
   <div
     aria-hidden={true}
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       data-css-d7y6x2=""
@@ -281,7 +281,7 @@ exports[`Storyshots Image cases square 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -297,7 +297,7 @@ exports[`Storyshots Image cases tall, thin 1`] = `
 >
   <div
     aria-hidden={true}
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       data-css-d7y6x2=""
@@ -325,7 +325,7 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="% Special Characters"
@@ -347,7 +347,7 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Anakin Skywalker"
@@ -369,7 +369,7 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Budapest Skywalker"
@@ -391,7 +391,7 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Carlos Organa"
@@ -413,14 +413,14 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Dennis Pimenta"
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#C00F00",
+          "backgroundColor": "#009380",
         }
       }
     >
@@ -435,7 +435,7 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Diz Blau"
@@ -457,7 +457,7 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Harry Potter"
@@ -479,7 +479,7 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Obi-Wan Kenobi"
@@ -501,7 +501,7 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Peia Organa"
@@ -523,14 +523,14 @@ exports[`Storyshots Using Initials Single 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Single"
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -545,7 +545,7 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="Uy Marley"
@@ -569,7 +569,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -591,7 +591,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -613,7 +613,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -635,7 +635,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -648,7 +648,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         data-css-jw91c3=""
         style={
           Object {
-            "backgroundColor": "#E27A18",
+            "backgroundColor": "#C00F00",
           }
         }
       >
@@ -657,7 +657,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -670,7 +670,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         data-css-jw91c3=""
         style={
           Object {
-            "backgroundColor": "#C00F00",
+            "backgroundColor": "#009380",
           }
         }
       >
@@ -679,7 +679,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -692,7 +692,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         data-css-jw91c3=""
         style={
           Object {
-            "backgroundColor": "#00A894",
+            "backgroundColor": "#7048C6",
           }
         }
       >
@@ -701,7 +701,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -714,7 +714,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         data-css-jw91c3=""
         style={
           Object {
-            "backgroundColor": "#00A894",
+            "backgroundColor": "#7048C6",
           }
         }
       >
@@ -723,7 +723,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -745,7 +745,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -767,7 +767,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-7fe6v0=""
+      data-css-1a2nnhr=""
     >
       <img
         data-css-d7y6x2=""
@@ -780,7 +780,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
         data-css-jw91c3=""
         style={
           Object {
-            "backgroundColor": "#E27A18",
+            "backgroundColor": "#C00F00",
           }
         }
       >
@@ -796,14 +796,14 @@ exports[`Storyshots Using Initials empty name, no src 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label=""
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >
@@ -819,7 +819,7 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 >
   <div
     aria-hidden={true}
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       data-css-d7y6x2=""
@@ -847,14 +847,14 @@ exports[`Storyshots Using Initials null name, no src 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label={null}
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#00A894",
+          "backgroundColor": "#7048C6",
         }
       }
     >
@@ -869,7 +869,7 @@ exports[`Storyshots Using Initials single string name, no src 1`] = `
   data-css-12kxz7c=""
 >
   <div
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <div
       aria-label="x"
@@ -892,7 +892,7 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
 >
   <div
     aria-hidden={true}
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       data-css-d7y6x2=""
@@ -921,7 +921,7 @@ exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
 >
   <div
     aria-hidden={true}
-    data-css-7fe6v0=""
+    data-css-1a2nnhr=""
   >
     <img
       data-css-d7y6x2=""
@@ -933,7 +933,7 @@ exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
       data-css-jw91c3=""
       style={
         Object {
-          "backgroundColor": "#E27A18",
+          "backgroundColor": "#C00F00",
         }
       }
     >

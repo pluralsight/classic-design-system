@@ -18,27 +18,32 @@ export default {
   [`.psds-avatar--size-${vars.sizes.xSmall}`]: {
     width: vars.widths.xSmall,
     height: vars.widths.xSmall,
-    fontSize: type.fontSizeXSmall
+    fontSize: type.fontSizeMedium,
+    fontWeight: type.fontWeightBook
   },
   [`.psds-avatar--size-${vars.sizes.small}`]: {
     width: vars.widths.small,
     height: vars.widths.small,
-    fontSize: type.fontSizeSmall
+    fontSize: type.fontSizeLarge,
+    fontWeight: type.fontWeightBook
   },
   [`.psds-avatar--size-${vars.sizes.medium}`]: {
     width: vars.widths.medium,
     height: vars.widths.medium,
-    fontSize: type.fontSizeMedium
+    fontSize: type.fontSizeXXLarge,
+    fontWeight: type.fontWeightLight
   },
   [`.psds-avatar--size-${vars.sizes.large}`]: {
     width: vars.widths.large,
     height: vars.widths.large,
-    fontSize: type.fontSizeLarge
+    fontSize: type.fontSizeJumbo,
+    fontWeight: type.fontWeightLight
   },
   [`.psds-avatar--size-${vars.sizes.xLarge}`]: {
     width: vars.widths.xLarge,
     height: vars.widths.xLarge,
-    fontSize: type.fontSizeXLarge
+    fontSize: type.fontSizeGigantic,
+    fontWeight: type.fontWeightLight
   },
 
   '.psds-avatar__image': {
