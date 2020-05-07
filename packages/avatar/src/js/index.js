@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-import { colorByLetter, fallbackPixel } from '../vars/index.js'
+import { colors, fallbackPixel } from '../vars/index.js'
 
 export const getInitials = fullname => {
   if (!fullname || !fullname.length) return ':)'
@@ -9,12 +9,9 @@ export const getInitials = fullname => {
 }
 
 export const getColorByName = name => {
-  const defaultColorMapKey = 'A'
-  const stableRandLetter =
-    sha1(name)
-      .toUpperCase()
-      .replace(/[^A-Z]/g, '')[0] || defaultColorMapKey
-  return colorByLetter[stableRandLetter]
+  const stableRandNumber = parseInt(sha1(name).replace(/[^0-9]/g, '')[0], 10)
+  // console.log(stableRandNumber,sha1(name))
+  return colors[stableRandNumber] || colors[0]
 }
 
 export const transformSrc = src => {
