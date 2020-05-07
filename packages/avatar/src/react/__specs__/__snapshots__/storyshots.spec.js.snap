@@ -24,7 +24,7 @@ exports[`Storyshots Default className override 1`] = `
         }
       }
     >
-      JT
+      J
     </div>
   </div>
 </div>
@@ -81,7 +81,7 @@ exports[`Storyshots Default light image 1`] = `
         }
       }
     >
-      JT
+      J
     </div>
   </div>
 </div>
@@ -171,7 +171,7 @@ exports[`Storyshots Default style override 1`] = `
         }
       }
     >
-      JT
+      J
     </div>
   </div>
 </div>
@@ -256,7 +256,7 @@ exports[`Storyshots Image cases flat, long 1`] = `
         }
       }
     >
-      CR
+      C
     </div>
   </div>
 </div>
@@ -285,7 +285,7 @@ exports[`Storyshots Image cases square 1`] = `
         }
       }
     >
-      JT
+      J
     </div>
   </div>
 </div>
@@ -314,7 +314,7 @@ exports[`Storyshots Image cases tall, thin 1`] = `
         }
       }
     >
-      WF
+      W
     </div>
   </div>
 </div>
@@ -336,7 +336,7 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
         }
       }
     >
-      %C
+      %
     </div>
   </div>
 </div>
@@ -358,7 +358,7 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
         }
       }
     >
-      AS
+      A
     </div>
   </div>
 </div>
@@ -380,7 +380,7 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
         }
       }
     >
-      BS
+      B
     </div>
   </div>
 </div>
@@ -402,7 +402,7 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
         }
       }
     >
-      CO
+      C
     </div>
   </div>
 </div>
@@ -424,7 +424,7 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
         }
       }
     >
-      DP
+      D
     </div>
   </div>
 </div>
@@ -446,7 +446,7 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
         }
       }
     >
-      DB
+      D
     </div>
   </div>
 </div>
@@ -468,7 +468,7 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
         }
       }
     >
-      HP
+      H
     </div>
   </div>
 </div>
@@ -490,7 +490,7 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
         }
       }
     >
-      OK
+      O
     </div>
   </div>
 </div>
@@ -512,7 +512,7 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
         }
       }
     >
-      PO
+      P
     </div>
   </div>
 </div>
@@ -534,7 +534,7 @@ exports[`Storyshots Using Initials Single 1`] = `
         }
       }
     >
-      SI
+      S
     </div>
   </div>
 </div>
@@ -556,7 +556,7 @@ exports[`Storyshots Using Initials Uy Marley 1`] = `
         }
       }
     >
-      UM
+      U
     </div>
   </div>
 </div>
@@ -586,7 +586,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        AT
+        A
       </div>
     </div>
     <div
@@ -608,7 +608,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        AS
+        A
       </div>
     </div>
     <div
@@ -630,7 +630,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        AA
+        A
       </div>
     </div>
     <div
@@ -652,7 +652,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        AA
+        A
       </div>
     </div>
     <div
@@ -674,7 +674,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        AA
+        A
       </div>
     </div>
     <div
@@ -696,7 +696,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        AS
+        A
       </div>
     </div>
     <div
@@ -718,7 +718,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        BH
+        B
       </div>
     </div>
     <div
@@ -740,7 +740,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        BH
+        B
       </div>
     </div>
     <div
@@ -762,7 +762,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        BO
+        B
       </div>
     </div>
     <div
@@ -784,7 +784,7 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
           }
         }
       >
-        BO
+        B
       </div>
     </div>
   </div>
@@ -836,7 +836,7 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
         }
       }
     >
-      BD
+      B
     </div>
   </div>
 </div>
@@ -909,7 +909,7 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
         }
       }
     >
-      AT
+      A
     </div>
   </div>
 </div>

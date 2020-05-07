@@ -65,10 +65,10 @@ export default _ => (
         )}
       />
 
-      <SectionHeading>Default with initials</SectionHeading>
+      <SectionHeading>Default with initial</SectionHeading>
       <P>
         An avatar with a visual image is preferred. In cases where the image is
-        unavailable or loading, initials of the person pictured will be
+        unavailable or loading, the first initial of the person pictured will be
         displayed. Always provide the <code>name</code> prop as a fallback.
       </P>
       <Example.React
