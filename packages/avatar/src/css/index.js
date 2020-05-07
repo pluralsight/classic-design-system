@@ -42,7 +42,7 @@ export default {
   [`.psds-avatar--size-${vars.sizes.xLarge}`]: {
     width: vars.widths.xLarge,
     height: vars.widths.xLarge,
-    fontSize: type.fontSizeGigantic,
+    fontSize: '96px',
     fontWeight: type.fontWeightLight
   },
 
@@ -62,7 +62,6 @@ export default {
     flexDirection: 'column',
     justifyContent: 'center',
     color: colorsTextIcon.highOnDark,
-    fontWeight: type.fontWeightBook,
     backgroundColor: colorsBackgroundUtility.base
   }
 }
