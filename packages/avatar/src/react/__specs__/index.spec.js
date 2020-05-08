@@ -75,7 +75,7 @@ describe('Avatar', () => {
     })
 
     it('displays initial', () => {
-      expect(initials).toHaveTextContent('BC')
+      expect(initials).toHaveTextContent('B')
     })
 
     it('add the name as an aria-label', () => {

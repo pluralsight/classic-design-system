@@ -11,9 +11,9 @@ describe('avatar/utils', () => {
 
     test('should return proper initials', () => {
       const cases = {
-        AO: ['Alex Silva Orlando', 'Aol', 'Any Other'],
-        BS: ['Bruno Ma Suba', 'Bsil', 'Bola Skl'],
-        PU: ['Peter Miller Ukra', 'Puto', 'Paca Uto']
+        A: ['Alex Silva Orlando', 'Aol', 'Any Other'],
+        B: ['Bruno Ma Suba', 'Bsil', 'Bola Skl'],
+        P: ['Peter Miller Ukra', 'Puto', 'Paca Uto']
       }
 
       for (const initials in cases) {

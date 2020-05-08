@@ -1,6 +1,8 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import React from 'react'
 
+import * as core from '@pluralsight/ps-design-system-core'
+
 import {
   Chrome,
   Code,
@@ -54,29 +56,56 @@ export default _ => (
           ])
         ]}
       />
-
-      <SectionHeading>Size</SectionHeading>
-      <P>Five avatar sizes are available.</P>
-      <Example.React
-        includes={{ Avatar }}
-        codes={Object.keys(Avatar.sizes).map(
-          size =>
-            `<Avatar size={Avatar.sizes.${size}} src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400" />`
-        )}
-      />
-
-      <SectionHeading>Default with initials</SectionHeading>
+      <SectionHeading>Sizes</SectionHeading>
       <P>
-        An avatar with a visual image is preferred. In cases where the image is
-        unavailable or loading, initials of the person pictured will be
-        displayed. Always provide the <code>name</code> prop as a fallback.
+        Avatars are available in five sizes specified with the <code>size</code>{' '}
+        prop.
       </P>
       <Example.React
         includes={{ Avatar }}
+        outputStyle={{
+          display: 'grid',
+          gap: core.layout.spacingMedium,
+          gridTemplateColumns: `auto auto auto auto auto`,
+          alignItems: 'center'
+        }}
+        outputChildStyle={{ margin: 0 }}
         codes={[
-          `<Avatar name="Alan Turing" />`,
-          `<Avatar name="Grace Hopper" />`,
-          `<Avatar name="Tim Berners-Lee" />`
+          `<Avatar size="xLarge" name="Assis Silva" src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"  />`,
+          `<Avatar size="large" name="Assis Silva" src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"  />`,
+          `<Avatar size="medium" name="Assis Silva" src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"  />`,
+          `<Avatar size="small" name="Assis Silva" src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"  />`,
+          `<Avatar size="xSmall" name="Assis Silva" src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"  />`
+        ]}
+      />
+
+      <SectionHeading>Fallback states</SectionHeading>
+      <P>
+        An avatar with an image is preferred. In cases where the image is
+        unavailable or loading, the first initial of the person pictured will be
+        displayed on a background of nine possible colors. Always provide the{' '}
+        <code>name</code> prop as a fallback.
+      </P>
+      <Example.React
+        includes={{ Avatar }}
+        outputStyle={{
+          display: 'grid',
+          gap: core.layout.spacingMedium,
+          gridTemplateColumns: `auto auto auto auto auto`,
+          alignItems: 'center'
+        }}
+        outputChildStyle={{ margin: 0 }}
+        codes={[
+          `<Avatar size="medium" name="Vaughn Christensen" />`,
+          `<Avatar size="medium" name="Brie Cowan" />`,
+          `<Avatar size="medium" name="Darius Klein" />`,
+          `<Avatar size="medium" name="Ronnie Lindsey" />`,
+          `<Avatar size="medium" name="Michael Holden" />`,
+          `<Avatar size="medium" name="Teresa Brewer" />`,
+          `<Avatar size="medium" name="Jan Berg" />`,
+          `<Avatar size="medium" name="Grant Knight" />`,
+          `<Avatar size="medium" name="Penelope Taylor" />`,
+          `<Avatar size="medium" name="" />`
         ]}
       />
     </Content>
