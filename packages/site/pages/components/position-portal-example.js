@@ -21,7 +21,7 @@ export default function PortalExample() {
           <Above
             show={
               <Tooltip tailPosition={Tooltip.tailPositions.bottomCenter}>
-                Rendered through a Portal
+                Custom portal node
               </Tooltip>
             }
             inNode={node}

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.1.10...@pluralsight/ps-design-system-dialog@8.1.11) (2020-05-07)
+
+
+### Bug Fixes
+
+* update normalize peer dependency ([cd5b8a4](https://github.com/pluralsight/design-system/commit/cd5b8a41aa231dc2f5102643a3dca9a772d9b5ae))
+
+
+
+
+
 ## [8.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.1.9...@pluralsight/ps-design-system-dialog@8.1.10) (2020-05-06)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog
