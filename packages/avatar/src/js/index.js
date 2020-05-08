@@ -10,7 +10,6 @@ export const getInitials = fullname => {
 
 export const getColorByName = name => {
   const stableRandNumber = parseInt(sha1(name).replace(/[^0-9]/g, '')[0], 10)
-  // console.log(stableRandNumber,sha1(name))
   return colors[stableRandNumber] || colors[0]
 }
 
