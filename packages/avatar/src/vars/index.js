@@ -1,11 +1,13 @@
 import {
   colorsBlue,
-  colorsTeal,
+  colorsPurple,
   colorsGreen,
-  colorsOrange,
   colorsRed,
+  colorsTeal,
   colorsPink,
-  colorsPurple
+  colorsLime,
+  colorsOrange,
+  colorsYellow
 } from '@pluralsight/ps-design-system-core'
 export const sizes = {
   xSmall: 'xSmall',
@@ -15,14 +17,16 @@ export const sizes = {
   xLarge: 'xLarge'
 }
 
-const colors = [
+export const colors = [
   colorsBlue[7],
-  colorsTeal[7],
+  colorsPurple[7],
   colorsGreen[7],
-  colorsOrange[7],
   colorsRed[7],
+  colorsTeal[8],
   colorsPink[7],
-  colorsPurple[7]
+  colorsLime[8],
+  colorsOrange[8],
+  colorsYellow[9]
 ]
 
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
