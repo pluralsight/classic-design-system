@@ -8,22 +8,16 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
 
-const Empty = React.forwardRef((props, forwardedRef) => <span />)
-
-const DropdownWithDefaults = props => <Dropdown {...props} />
-
 storiesOf('labels', module)
-  .add('none', _ => <DropdownWithDefaults />)
-  .add('placeholder', _ => (
-    <DropdownWithDefaults placeholder="some placeholder" />
-  ))
-  .add('label', _ => <DropdownWithDefaults label="Some label" />)
-  .add('subLabel', _ => <DropdownWithDefaults subLabel="Some sublabel" />)
+  .add('none', _ => <Dropdown />)
+  .add('placeholder', _ => <Dropdown placeholder="some placeholder" />)
+  .add('label', _ => <Dropdown label="Some label" />)
+  .add('subLabel', _ => <Dropdown subLabel="Some sublabel" />)
   .add('label and subLabel', _ => (
-    <DropdownWithDefaults label="Some label" subLabel="Some sublabel" />
+    <Dropdown label="Some label" subLabel="Some sublabel" />
   ))
   .add('all', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Some label"
       subLabel="Some sublabel"
       placeholder="Some placeholder"
@@ -35,7 +29,7 @@ const appearanceStory = storiesOf('appearance', module)
 Object.keys(Dropdown.sizes).forEach(size =>
   Object.keys(Dropdown.appearances).forEach(appearance =>
     appearanceStory.add(`${size} ${appearance}`, _ => (
-      <DropdownWithDefaults
+      <Dropdown
         size={size}
         appearance={appearance}
         placeholder="The placeholder "
@@ -45,25 +39,25 @@ Object.keys(Dropdown.sizes).forEach(size =>
 )
 Object.keys(Dropdown.appearances).forEach(appearance =>
   appearanceStory.add(`${appearance} w/ error`, _ => (
-    <DropdownWithDefaults appearance={appearance} error label="Problem field" />
+    <Dropdown appearance={appearance} error label="Problem field" />
   ))
 )
 appearanceStory.add('gaps', _ => (
   <div>
     <div>
-      <DropdownWithDefaults label="Problem field" />
+      <Dropdown label="Problem field" />
     </div>
     <div>
-      <DropdownWithDefaults error label="Problem field" />
+      <Dropdown error label="Problem field" />
     </div>
     <div>
-      <DropdownWithDefaults
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         label="Problem field"
       />
     </div>
     <div>
-      <DropdownWithDefaults
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         error
         label="Problem field"
@@ -74,12 +68,12 @@ appearanceStory.add('gaps', _ => (
 
 storiesOf('disabled', module).add('compare', _ => (
   <div>
-    <DropdownWithDefaults
+    <Dropdown
       label="Normal"
       subLabel="Still normal"
       placeholder="I'm normal, see"
     />
-    <DropdownWithDefaults
+    <Dropdown
       label="I'm not usable"
       subLabel="Neither am I"
       disabled
@@ -90,10 +84,7 @@ storiesOf('disabled', module).add('compare', _ => (
 
 storiesOf('whitelist', module)
   .add('name', _ => (
-    <DropdownWithDefaults
-      placeholder="I have a form name"
-      name="myFieldNameOfPower"
-    />
+    <Dropdown placeholder="I have a form name" name="myFieldNameOfPower" />
   ))
   .add('onChange', _ => {
     function ChangeStory() {
@@ -163,21 +154,18 @@ storiesOf('whitelist', module)
 storiesOf('layouts', module)
   .add('full width', _ => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
-      <DropdownWithDefaults
-        label="First"
-        style={{ display: 'block', width: '100%' }}
-      />
-      <DropdownWithDefaults
+      <Dropdown label="First" style={{ display: 'block', width: '100%' }} />
+      <Dropdown
         error
         label="Second"
         style={{ display: 'block', width: '100%' }}
       />
-      <DropdownWithDefaults
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         label="Third"
         style={{ display: 'block', width: '100%' }}
       />
-      <DropdownWithDefaults
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         error
         label="Fourth"
@@ -188,7 +176,7 @@ storiesOf('layouts', module)
   .add('right-aligned', _ => (
     <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <DropdownWithDefaults
+        <Dropdown
           placeholder="Filter"
           appearance={Dropdown.appearances.subtle}
         />
@@ -244,7 +232,7 @@ storiesOf('layouts', module)
   })
 
 storiesOf('placeholder', module).add('as pre-selected item', _ => (
-  <DropdownWithDefaults
+  <Dropdown
     placeholder="Two item"
     menu={
       <ActionMenu>
@@ -258,7 +246,7 @@ storiesOf('placeholder', module).add('as pre-selected item', _ => (
 
 storiesOf('menu', module)
   .add('single list', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       menu={
         <ActionMenu>
@@ -271,7 +259,7 @@ storiesOf('menu', module)
     />
   ))
   .add('w/ subLabel', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       subLabel="The course level"
       menu={
@@ -285,7 +273,7 @@ storiesOf('menu', module)
     />
   ))
   .add('single list w/ icon', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       placeholder="Select one"
       menu={
@@ -301,7 +289,7 @@ storiesOf('menu', module)
     />
   ))
   .add('divider', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       menu={
         <ActionMenu>
@@ -317,7 +305,7 @@ storiesOf('menu', module)
   .add('in stack', _ => (
     <div>
       <div>
-        <DropdownWithDefaults
+        <Dropdown
           label="Level"
           placeholder="Select one"
           menu={
@@ -333,7 +321,7 @@ storiesOf('menu', module)
         />
       </div>
       <div>
-        <DropdownWithDefaults
+        <Dropdown
           label="Level"
           placeholder="Select another one"
           menu={
@@ -351,7 +339,7 @@ storiesOf('menu', module)
     </div>
   ))
   .add('super long', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       menu={
         <ActionMenu>
@@ -364,7 +352,7 @@ storiesOf('menu', module)
     />
   ))
   .add('nested', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       placeholder="Select another one"
       menu={
@@ -389,7 +377,7 @@ storiesOf('menu', module)
     />
   ))
   .add('onClicks', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       appearance={Dropdown.appearances.subtle}
       placeholder="Select another one"
@@ -424,7 +412,7 @@ storiesOf('menu', module)
     />
   ))
   .add('w/ longer placeholder', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       placeholder="This one is longer than any menu item"
       menu={
@@ -436,7 +424,7 @@ storiesOf('menu', module)
     />
   ))
   .add('w/ longer nested menu item label', _ => (
-    <DropdownWithDefaults
+    <Dropdown
       label="Level"
       menu={
         <ActionMenu>
@@ -468,7 +456,7 @@ storiesOf('menu', module)
   ))
 
 storiesOf('props whitelist', module).add('title', _ => (
-  <DropdownWithDefaults
+  <Dropdown
     title="This title should be present"
     label="Level"
     menu={
@@ -486,18 +474,14 @@ function AutofocusStory(props) {
     ref.current.focus()
   })
 
-  return <Dropdown {...props} ref={ref} menu={<Empty />} />
+  return <Dropdown {...props} ref={ref} />
 }
 
 storiesOf('focus', module)
-  .add('onFocus', _ => <DropdownWithDefaults onFocus={action('focused')} />)
-  .add('onBlur', _ => <DropdownWithDefaults onBlur={action('blurred')} />)
+  .add('onFocus', _ => <Dropdown onFocus={action('focused')} />)
+  .add('onBlur', _ => <Dropdown onBlur={action('blurred')} />)
   .add('disabled', _ => (
-    <DropdownWithDefaults
-      disabled
-      onBlur={action('blurred')}
-      onFocus={action('focused')}
-    />
+    <Dropdown disabled onBlur={action('blurred')} onFocus={action('focused')} />
   ))
   .add('autofocus with ref', _ => <AutofocusStory />)
 storiesOf('portal', module).add('position', _ => (
@@ -507,37 +491,80 @@ storiesOf('portal', module).add('position', _ => (
       height: '100vh',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      flexDirection: 'column'
     }}
   >
-    <DropdownWithDefaults
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis
+    cras sed. Ornare lectus sit amet est placerat in egestas. Sed lectus
+    vestibulum mattis ullamcorper velit sed ullamcorper. Nisl nisi scelerisque
+    eu ultrices. Amet risus nullam eget felis. Arcu non sodales neque sodales ut
+    etiam. Tortor at auctor urna nunc. Faucibus scelerisque eleifend donec
+    pretium vulputate sapien nec sagittis aliquam. Condimentum vitae sapien
+    pellentesque habitant morbi tristique. Egestas maecenas pharetra convallis
+    posuere morbi leo urna molestie. Et ultrices neque ornare aenean euismod
+    elementum nisi quis eleifend. Lobortis feugiat vivamus at augue eget arcu
+    dictum. Fusce id velit ut tortor pretium viverra suspendisse. Convallis
+    tellus id interdum velit. In tellus integer feugiat scelerisque varius morbi
+    enim nunc faucibus. Tempor orci dapibus ultrices in iaculis nunc. Elit
+    ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet massa vitae
+    tortor. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula
+    ipsum. Ipsum dolor sit amet consectetur adipiscing. Sed felis eget velit
+    aliquet sagittis. Elit pellentesque habitant morbi tristique. Sit amet
+    consectetur adipiscing elit. Id volutpat lacus laoreet non curabitur gravida
+    arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet.
+    <Dropdown
       label="Level"
       menu={
         <ActionMenu>
-          <ActionMenu.Item>Short</ActionMenu.Item>
-          <ActionMenu.Item
-            nested={
-              <ActionMenu>
-                <ActionMenu.Item
-                  nested={
-                    <ActionMenu>
-                      <ActionMenu.Item>This is pretty longest</ActionMenu.Item>
-                      <ActionMenu.Item>
-                        The longest in el mundo. Find me!
-                      </ActionMenu.Item>
-                    </ActionMenu>
-                  }
-                >
-                  Longer and longer
-                </ActionMenu.Item>
-                <ActionMenu.Item>This one is longer</ActionMenu.Item>
-              </ActionMenu>
-            }
-          >
-            Short enough
-          </ActionMenu.Item>
+          <ActionMenu.Item>One item</ActionMenu.Item>
+          <ActionMenu.Item>Two item</ActionMenu.Item>
+          <ActionMenu.Item>Three item</ActionMenu.Item>
+          <ActionMenu.Item>Three and the amazing item</ActionMenu.Item>
         </ActionMenu>
       }
     />
+    Aliquam sem et tortor consequat id. Vitae tempus quam pellentesque nec nam.
+    Platea dictumst quisque sagittis purus sit amet volutpat. Convallis tellus
+    id interdum velit laoreet id. Convallis tellus id interdum velit laoreet id
+    donec ultrices. Metus vulputate eu scelerisque felis imperdiet. Luctus
+    venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi
+    tristique senectus. Mi bibendum neque egestas congue quisque egestas diam
+    in. Faucibus interdum posuere lorem ipsum dolor sit. Tortor vitae purus
+    faucibus ornare suspendisse sed nisi lacus sed. Ut tortor pretium viverra
+    suspendisse potenti. Lectus proin nibh nisl condimentum id venenatis a
+    condimentum. Consequat id porta nibh venenatis cras sed felis eget velit.
+    Placerat orci nulla pellentesque dignissim enim sit. Erat imperdiet sed
+    euismod nisi porta lorem mollis aliquam. Malesuada fames ac turpis egestas
+    integer. Consectetur purus ut faucibus pulvinar elementum integer.
+    Consectetur adipiscing elit pellentesque habitant morbi. Lorem ipsum dolor
+    sit amet consectetur adipiscing elit ut. Sed tempus urna et pharetra
+    pharetra massa massa ultricies mi. Dictumst quisque sagittis purus sit.
+    Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum.
+    Porttitor massa id neque aliquam vestibulum. Viverra maecenas accumsan lacus
+    vel facilisis volutpat est. Ac orci phasellus egestas tellus. Dui vivamus
+    arcu felis bibendum ut tristique. Pharetra convallis posuere morbi leo urna
+    molestie at. Suscipit tellus mauris a diam maecenas. Cursus risus at
+    ultrices mi tempus imperdiet nulla. Turpis egestas pretium aenean pharetra
+    magna ac placerat vestibulum. In eu mi bibendum neque egestas congue
+    quisque. Augue mauris augue neque gravida in fermentum. Interdum consectetur
+    libero id faucibus nisl tincidunt eget. In metus vulputate eu scelerisque
+    felis imperdiet proin. Ut lectus arcu bibendum at varius vel pharetra vel.
+    Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. In
+    dictum non consectetur a erat nam at lectus urna. Sem fringilla ut morbi
+    tincidunt. Porttitor massa id neque aliquam vestibulum morbi. Ut placerat
+    orci nulla pellentesque dignissim enim sit amet. Sed augue lacus viverra
+    vitae congue eu consequat. Nibh cras pulvinar mattis nunc sed. Nec ultrices
+    dui sapien eget mi. Ut tellus elementum sagittis vitae. Diam sollicitudin
+    tempor id eu nisl nunc mi ipsum. Nisi vitae suscipit tellus mauris a diam.
+    Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
+    Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Amet justo
+    donec enim diam vulputate. Arcu vitae elementum curabitur vitae. Urna cursus
+    eget nunc scelerisque viverra mauris in aliquam sem. Vel turpis nunc eget
+    lorem dolor sed viverra. Orci eu lobortis elementum nibh tellus molestie
+    nunc non. Mi eget mauris pharetra et ultrices. Pulvinar neque laoreet
+    suspendisse interdum consectetur libero id. Vestibulum lectus mauris
+    ultrices eros in cursus turpis massa.
   </div>
 ))

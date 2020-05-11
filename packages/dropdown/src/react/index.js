@@ -1,6 +1,6 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { canUseDOM } from 'exenv'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -155,38 +155,6 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   }
 
   const menu = useRef(null)
-  const handleClickOutsideMenu = e => {
-    if (menu.current && !menu.current.contains(e.target)) {
-      setOpen(false)
-      setKeyboarding(false)
-    }
-  }
-
-  useEffect(() => {
-    let currentAnimationFrame = null
-    const requestAnimationFrame = () => {
-      window.cancelAnimationFrame(currentAnimationFrame)
-      currentAnimationFrame = window.requestAnimationFrame(() => setOpen(false))
-      return currentAnimationFrame
-    }
-    let timeout = null
-    const clear = () => {
-      clearTimeout(timeout)
-      timeout = setTimeout(() => setOpen(false), 50)
-    }
-    if (isOpen) {
-      document.addEventListener('click', handleClickOutsideMenu)
-      window.addEventListener('resize', requestAnimationFrame, {
-        passive: true
-      })
-      window.addEventListener('scroll', clear, { passive: true })
-    }
-    return () => {
-      document.removeEventListener('click', handleClickOutsideMenu)
-      window.removeEventListener('resize', requestAnimationFrame)
-      window.removeEventListener('scroll', clear)
-    }
-  }, [isOpen])
 
   function getLongestMenuLabelState() {
     const getMenuItems = menu =>

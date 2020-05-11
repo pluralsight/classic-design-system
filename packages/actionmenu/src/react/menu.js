@@ -3,7 +3,7 @@
 
 import { compose, css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { calcNextIndex } from '../js/index.js'
 import stylesheet from '../css/index.js'
@@ -122,6 +122,34 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
   function handleChange(evt, value, label) {
     if (typeof props.onChange === 'function') props.onChange(evt, value, label)
   }
+
+  useEffect(() => {
+    const handleClickOutsideMenu = e => {
+      if (ref.current && !ref.current.contains(e.target)) {
+        props.onClose(e)
+      }
+    }
+    let currentAnimationFrame = null
+    const requestAnimationFrame = e => {
+      window.cancelAnimationFrame(currentAnimationFrame)
+      currentAnimationFrame = window.requestAnimationFrame(() =>
+        props.onClose(e)
+      )
+      return currentAnimationFrame
+    }
+    document.addEventListener('click', handleClickOutsideMenu)
+    window.addEventListener('resize', requestAnimationFrame, {
+      passive: true
+    })
+    window.addEventListener('scroll', requestAnimationFrame, {
+      passive: true
+    })
+    return () => {
+      document.removeEventListener('click', handleClickOutsideMenu)
+      window.removeEventListener('resize', requestAnimationFrame)
+      window.removeEventListener('scroll', requestAnimationFrame)
+    }
+  })
 
   return (
     <div
