@@ -239,11 +239,12 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     setWidth(combinedRef.current.getBoundingClientRect().width)
   }, [combinedRef, forwardedRef])
   const inNode = canUseDOM ? document.body : null
-  const [menuPosition, setMenuPosition] = React.useState({})
+  const [menuPosition, setMenuPosition] = React.useState({ left: 0, top: 0 })
   const fieldContainerRef = useRef()
   React.useLayoutEffect(() => {
+    if (!isOpen) return
     const { left, bottom } = fieldContainerRef.current.getBoundingClientRect()
-    setMenuPosition({ left, top: bottom })
+    requestAnimationFrame(() => setMenuPosition({ left, top: bottom }))
   }, [fieldContainerRef, isOpen])
   return (
     <label

@@ -500,3 +500,44 @@ storiesOf('focus', module)
     />
   ))
   .add('autofocus with ref', _ => <AutofocusStory />)
+storiesOf('portal', module).add('position', _ => (
+  <div
+    style={{
+      width: '100%',
+      height: '100vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}
+  >
+    <DropdownWithDefaults
+      label="Level"
+      menu={
+        <ActionMenu>
+          <ActionMenu.Item>Short</ActionMenu.Item>
+          <ActionMenu.Item
+            nested={
+              <ActionMenu>
+                <ActionMenu.Item
+                  nested={
+                    <ActionMenu>
+                      <ActionMenu.Item>This is pretty longest</ActionMenu.Item>
+                      <ActionMenu.Item>
+                        The longest in el mundo. Find me!
+                      </ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                >
+                  Longer and longer
+                </ActionMenu.Item>
+                <ActionMenu.Item>This one is longer</ActionMenu.Item>
+              </ActionMenu>
+            }
+          >
+            Short enough
+          </ActionMenu.Item>
+        </ActionMenu>
+      }
+    />
+  </div>
+))
