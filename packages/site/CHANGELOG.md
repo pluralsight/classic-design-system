@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.5.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.5.4...@pluralsight/ps-design-system-site@18.5.5) (2020-05-11)
+
+
+### Bug Fixes
+
+* **site:** cleanup position portal doc ([4eac5cf](https://github.com/pluralsight/design-system/commit/4eac5cf2c747ab71689bba215693d097fbd87131))
+
+
+
+
+
 ## [18.5.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.5.3...@pluralsight/ps-design-system-site@18.5.4) (2020-05-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
