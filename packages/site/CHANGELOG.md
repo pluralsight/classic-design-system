@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.5.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.5.5...@pluralsight/ps-design-system-site@18.5.6) (2020-05-12)
+
+
+### Bug Fixes
+
+* **dropdown:** position needs to be caluclated each time dropdown opens ([#1002](https://github.com/pluralsight/design-system/issues/1002)) ([a36c9f3](https://github.com/pluralsight/design-system/commit/a36c9f3bfeb8baacac6f6f7b83543b861c5dc805))
+
+
+
+
+
 ## [18.5.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@18.5.4...@pluralsight/ps-design-system-site@18.5.5) (2020-05-11)
 
 
