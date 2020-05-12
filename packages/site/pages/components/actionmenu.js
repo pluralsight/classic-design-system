@@ -307,7 +307,7 @@ export default _ => (
         includes={{ ActionMenu, ChannelIcon, PathIcon, ReportIcon }}
         codes={[
           `
-<ActionMenu css={{ position: 'relative' }} shouldFocusOnMount={false}>
+<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
   <ActionMenu.Item icon={<ChannelIcon />}>
     Channels
   </ActionMenu.Item>
