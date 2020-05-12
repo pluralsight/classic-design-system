@@ -180,7 +180,4 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
 })
 
 ActionMenu.displayName = 'ActionMenu'
-ActionMenu.defaultProps = {
-  onClose: () => {}
-}
 export default ActionMenu

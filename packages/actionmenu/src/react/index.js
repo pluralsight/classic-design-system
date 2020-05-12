@@ -12,8 +12,6 @@ ActionMenu.Item = Item
 ActionMenu.Divider = Divider
 ActionMenu.origins = vars.origins
 
-ActionMenu.displayName = 'ActionMenu'
-
 ActionMenu.propTypes = {
   children: PropTypes.oneOfType([
     elementOfType(Item),
@@ -32,7 +30,8 @@ ActionMenu.propTypes = {
 ActionMenu.defaultProps = {
   isKeyboarding: false,
   origin: vars.origins.topLeft,
-  shouldFocusOnMount: true
+  shouldFocusOnMount: true,
+  onClose: () => {}
 }
 
 export const origins = vars.origins
