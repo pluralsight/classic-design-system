@@ -2847,6 +2847,88 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
 </div>
 `;
 
+exports[`Storyshots portal position 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100vh",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed. Ornare lectus sit amet est placerat in egestas. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nisl nisi scelerisque eu ultrices. Amet risus nullam eget felis. Arcu non sodales neque sodales ut etiam. Tortor at auctor urna nunc. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Condimentum vitae sapien pellentesque habitant morbi tristique. Egestas maecenas pharetra convallis posuere morbi leo urna molestie. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Lobortis feugiat vivamus at augue eget arcu dictum. Fusce id velit ut tortor pretium viverra suspendisse. Convallis tellus id interdum velit. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tempor orci dapibus ultrices in iaculis nunc. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet massa vitae tortor. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing. Sed felis eget velit aliquet sagittis. Elit pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Id volutpat lacus laoreet non curabitur gravida arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet.
+    <label
+      data-css-1hniuff=""
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-dysqqm=""
+      >
+        Level
+      </div>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              data-css-i9dafq=""
+              disabled={false}
+              onClick={[Function]}
+            >
+              <span
+                aria-hidden={true}
+                data-css-1pnvt9=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-1yk08w2=""
+              />
+            </button>
+            <div
+              data-css-1af7ks9=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </label>
+    Aliquam sem et tortor consequat id. Vitae tempus quam pellentesque nec nam. Platea dictumst quisque sagittis purus sit amet volutpat. Convallis tellus id interdum velit laoreet id. Convallis tellus id interdum velit laoreet id donec ultrices. Metus vulputate eu scelerisque felis imperdiet. Luctus venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi tristique senectus. Mi bibendum neque egestas congue quisque egestas diam in. Faucibus interdum posuere lorem ipsum dolor sit. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Ut tortor pretium viverra suspendisse potenti. Lectus proin nibh nisl condimentum id venenatis a condimentum. Consequat id porta nibh venenatis cras sed felis eget velit. Placerat orci nulla pellentesque dignissim enim sit. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Malesuada fames ac turpis egestas integer. Consectetur purus ut faucibus pulvinar elementum integer. Consectetur adipiscing elit pellentesque habitant morbi. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Dictumst quisque sagittis purus sit. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Porttitor massa id neque aliquam vestibulum. Viverra maecenas accumsan lacus vel facilisis volutpat est. Ac orci phasellus egestas tellus. Dui vivamus arcu felis bibendum ut tristique. Pharetra convallis posuere morbi leo urna molestie at. Suscipit tellus mauris a diam maecenas. Cursus risus at ultrices mi tempus imperdiet nulla. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. In eu mi bibendum neque egestas congue quisque. Augue mauris augue neque gravida in fermentum. Interdum consectetur libero id faucibus nisl tincidunt eget. In metus vulputate eu scelerisque felis imperdiet proin. Ut lectus arcu bibendum at varius vel pharetra vel. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. In dictum non consectetur a erat nam at lectus urna. Sem fringilla ut morbi tincidunt. Porttitor massa id neque aliquam vestibulum morbi. Ut placerat orci nulla pellentesque dignissim enim sit amet. Sed augue lacus viverra vitae congue eu consequat. Nibh cras pulvinar mattis nunc sed. Nec ultrices dui sapien eget mi. Ut tellus elementum sagittis vitae. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Nisi vitae suscipit tellus mauris a diam. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Amet justo donec enim diam vulputate. Arcu vitae elementum curabitur vitae. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Vel turpis nunc eget lorem dolor sed viverra. Orci eu lobortis elementum nibh tellus molestie nunc non. Mi eget mauris pharetra et ultrices. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Vestibulum lectus mauris ultrices eros in cursus turpis massa.
+  </div>
+</div>
+`;
+
 exports[`Storyshots props whitelist title 1`] = `
 <div
   style={
