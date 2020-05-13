@@ -1,6 +1,6 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { canUseDOM } from 'exenv'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -155,38 +155,6 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   }
 
   const menu = useRef(null)
-  const handleClickOutsideMenu = e => {
-    if (menu.current && !menu.current.contains(e.target)) {
-      setOpen(false)
-      setKeyboarding(false)
-    }
-  }
-
-  useEffect(() => {
-    let currentAnimationFrame = null
-    const requestAnimationFrame = () => {
-      window.cancelAnimationFrame(currentAnimationFrame)
-      currentAnimationFrame = window.requestAnimationFrame(() => setOpen(false))
-      return currentAnimationFrame
-    }
-    let timeout = null
-    const clear = () => {
-      clearTimeout(timeout)
-      timeout = setTimeout(() => setOpen(false), 50)
-    }
-    if (isOpen) {
-      document.addEventListener('click', handleClickOutsideMenu)
-      window.addEventListener('resize', requestAnimationFrame, {
-        passive: true
-      })
-      window.addEventListener('scroll', clear, { passive: true })
-    }
-    return () => {
-      document.removeEventListener('click', handleClickOutsideMenu)
-      window.removeEventListener('resize', requestAnimationFrame)
-      window.removeEventListener('scroll', clear)
-    }
-  }, [isOpen])
 
   function getLongestMenuLabelState() {
     const getMenuItems = menu =>
@@ -239,86 +207,85 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     setWidth(combinedRef.current.getBoundingClientRect().width)
   }, [combinedRef, forwardedRef])
   const inNode = canUseDOM ? document.body : null
-  const [menuPosition, setMenuPosition] = React.useState({})
+  const [menuPosition, setMenuPosition] = React.useState({ left: 0, top: 0 })
   const fieldContainerRef = useRef()
   React.useLayoutEffect(() => {
+    if (!isOpen) return
     const { left, bottom } = fieldContainerRef.current.getBoundingClientRect()
-    setMenuPosition({ left, top: bottom })
-  }, [fieldContainerRef])
+    requestAnimationFrame(() => setMenuPosition({ left, top: bottom }))
+  }, [fieldContainerRef, isOpen])
   return (
-    <>
-      <label
-        {...styles.dropdown(allProps)}
-        {...(style ? { style: style } : null)}
-        {...(className ? { className: className } : null)}
-        onKeyDown={handleKeyDown}
-      >
-        {allProps.label && (
-          <div {...styles.label(allProps)}>{allProps.label}</div>
-        )}
-        <div {...styles.fieldContainer(allProps)} ref={fieldContainerRef}>
-          <Halo
-            error={allProps.error}
-            gapSize={Halo.gapSizes.small}
-            {...styles.halo()}
-          >
-            <div {...styles.fieldAligner(allProps)}>
-              <button
-                {...filterReactProps(buttonProps, { tagName: 'button' })}
-                {...styles.field(allProps)}
-                disabled={allProps.disabled}
-                onClick={allProps.disabled ? null : handleToggleOpen}
-                ref={combinedRef}
-              >
-                <span aria-hidden {...styles.buttonSizer(allProps)}>
-                  {longestMenuItemState.label || allProps.placeholder}
-                </span>
-                <span {...styles.placeholder({ ...allProps, selectedLabel })}>
-                  {selectedLabel || allProps.placeholder}
-                </span>
-              </button>
-              <div {...styles.icon(allProps)}>
-                <Icon>
-                  <CaretDown />
-                </Icon>
-              </div>
+    <label
+      {...styles.dropdown(allProps)}
+      {...(style ? { style: style } : null)}
+      {...(className ? { className: className } : null)}
+      onKeyDown={handleKeyDown}
+    >
+      {allProps.label && (
+        <div {...styles.label(allProps)}>{allProps.label}</div>
+      )}
+      <div {...styles.fieldContainer(allProps)} ref={fieldContainerRef}>
+        <Halo
+          error={allProps.error}
+          gapSize={Halo.gapSizes.small}
+          {...styles.halo()}
+        >
+          <div {...styles.fieldAligner(allProps)}>
+            <button
+              {...filterReactProps(buttonProps, { tagName: 'button' })}
+              {...styles.field(allProps)}
+              disabled={allProps.disabled}
+              onClick={allProps.disabled ? null : handleToggleOpen}
+              ref={combinedRef}
+            >
+              <span aria-hidden {...styles.buttonSizer(allProps)}>
+                {longestMenuItemState.label || allProps.placeholder}
+              </span>
+              <span {...styles.placeholder({ ...allProps, selectedLabel })}>
+                {selectedLabel || allProps.placeholder}
+              </span>
+            </button>
+            <div {...styles.icon(allProps)}>
+              <Icon>
+                <CaretDown />
+              </Icon>
             </div>
-          </Halo>
-          {allProps.error && (
-            <div {...styles.error(allProps)}>
-              <WarningIcon />
-            </div>
-          )}
-        </div>
-        {allProps.menu &&
-          isOpen &&
-          createUniversalPortal(
-            <div {...styles.menu(allProps)} style={menuPosition}>
-              {React.cloneElement(allProps.menu, {
-                isKeyboarding: isKeyboarding,
-                onChange: handleMenuChange,
-                onClick: handleMenuClick,
-                ref: menu,
-                onClose: _ => {
-                  setOpen(false)
-                  if (typeof allProps.menu.props.onClose === 'function')
-                    allProps.menu.props.onClose()
-                },
-                style: {
-                  ...allProps.menu.props.style,
-                  minWidth: '0',
-                  maxWidth: 'none',
-                  width
-                }
-              })}
-            </div>,
-            inNode
-          )}
-        {allProps.subLabel && (
-          <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+          </div>
+        </Halo>
+        {allProps.error && (
+          <div {...styles.error(allProps)}>
+            <WarningIcon />
+          </div>
         )}
-      </label>
-    </>
+      </div>
+      {allProps.menu &&
+        isOpen &&
+        createUniversalPortal(
+          <div {...styles.menu(allProps)} style={menuPosition}>
+            {React.cloneElement(allProps.menu, {
+              isKeyboarding: isKeyboarding,
+              onChange: handleMenuChange,
+              onClick: handleMenuClick,
+              ref: menu,
+              onClose: _ => {
+                setOpen(false)
+                if (typeof allProps.menu.props.onClose === 'function')
+                  allProps.menu.props.onClose()
+              },
+              style: {
+                ...allProps.menu.props.style,
+                minWidth: '0',
+                maxWidth: 'none',
+                width
+              }
+            })}
+          </div>,
+          inNode
+        )}
+      {allProps.subLabel && (
+        <div {...styles.subLabel(allProps)}>{allProps.subLabel}</div>
+      )}
+    </label>
   )
 })
 
