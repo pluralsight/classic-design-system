@@ -3,12 +3,13 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { RadioContext } from './context.js'
 
 import stylesheet from '../css/index.js'
 
 const styles = {
   buttonContainer: _ => css(stylesheet['.psds-radio-group__button-container']),
-  group: ({ disabled }) =>
+  group: disabled =>
     css(
       stylesheet['.psds-radio-group'],
       disabled && stylesheet['.psds-radio-group--disabled']
@@ -25,100 +26,56 @@ const styles = {
     )
 }
 
-const Group = React.forwardRef((props, forwardedRef) => {
-  const ref = React.useRef()
-  const themeName = useTheme()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
-
-  const buttons = React.useMemo(_ => React.Children.toArray(props.children), [
-    props.children
-  ])
-
-  const [value, setValue] = React.useState(props.value)
-  const [focusValue, setFocusValue] = React.useState()
-
-  React.useEffect(() => {
-    setValue(value)
-  }, [props.value, value])
-
-  const handleKeyDown = combineFns(evt => {
-    if (props.disabled) return
-
-    if (evt.key === 'Enter' || evt.key === ' ') {
-      const nextValue = focusValue
-      setValue(nextValue)
-
-      if (isFunction(props.onSelect)) props.onSelect(evt, nextValue)
-    } else if (evt.key === 'ArrowDown') {
-      handleKeyboardNav(evt, 1)
-    } else if (evt.key === 'ArrowUp') {
-      handleKeyboardNav(evt, -1)
-    } else if (evt.key === 'Tab') {
-      setFocusValue(null)
-    }
-  }, props.onKeyDown)
-
-  function handleKeyboardNav(evt, indexDelta) {
-    evt.stopPropagation()
-    evt.preventDefault()
-
-    const focusIndex = buttons.findIndex(b => b.props.value === focusValue)
-    const newFocusIndex =
-      focusIndex + indexDelta > buttons.length - 1
-        ? focusIndex
-        : focusIndex + indexDelta < 0
-        ? 0
-        : focusIndex + indexDelta
-
-    const nextFocusValue = buttons[newFocusIndex].props.value
-    setFocusValue(nextFocusValue)
+const useValue = ({ value, onSelect }) => {
+  const [_value, setValue] = React.useState(value)
+  return {
+    ...(value !== undefined && onSelect !== undefined
+      ? { checkedValue: value, onSelect }
+      : { checkedValue: _value, onSelect: (evt, val) => setValue(val) })
   }
+}
 
-  function handleButtonFocus(evt, focusValue) {
-    setFocusValue(focusValue)
+const Group = React.forwardRef(
+  (
+    {
+      children,
+      disabled,
+      error,
+      label,
+      name,
+      onSelect,
+      subLabel,
+      value,
+      ...rest
+    },
+    ref
+  ) => {
+    const themeName = useTheme()
+    return (
+      <div
+        {...styles.group(disabled)}
+        {...filterReactProps(rest)}
+        ref={ref}
+        role="radiogroup"
+      >
+        {label && <div {...styles.label(themeName)}>{label}</div>}
+        <div {...styles.buttonContainer()}>
+          <RadioContext.Provider
+            value={{
+              disabled,
+              error,
+              name,
+              ...useValue({ value, onSelect })
+            }}
+          >
+            {children}
+          </RadioContext.Provider>
+        </div>
+        {subLabel && <div {...styles.subLabel(themeName)}>{subLabel}</div>}
+      </div>
+    )
   }
-
-  const handleSelect = combineFns((vt, nextValue) => {
-    setFocusValue(nextValue)
-    setValue(nextValue)
-  }, props.onSelect)
-
-  return (
-    <div
-      {...styles.group(props)}
-      {...filterReactProps(props)}
-      onKeyDown={handleKeyDown}
-      ref={ref}
-      role="radiogroup"
-    >
-      {props.label && <div {...styles.label(themeName)}>{props.label}</div>}
-
-      {React.Children.map(props.children, (child, i) => {
-        const childValue = child.props.value
-
-        return (
-          <div {...styles.buttonContainer()}>
-            {React.cloneElement(child, {
-              _disabled: props.disabled,
-              _error: props.error,
-              _isFocused: childValue === focusValue,
-              _name: props.name,
-              _onClick: handleSelect,
-              _onFocus: handleButtonFocus,
-
-              checked: value === childValue,
-              tabIndex: i === 0 && childValue > -1 ? childValue : 0
-            })}
-          </div>
-        )
-      })}
-
-      {props.subLabel && (
-        <div {...styles.subLabel(themeName)}>{props.subLabel}</div>
-      )}
-    </div>
-  )
-})
+)
 
 Group.displayName = 'Radio.Group'
 
@@ -127,9 +84,7 @@ Group.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   label: PropTypes.node,
-  name: PropTypes.string,
-  onFocus: PropTypes.func,
-  onKeyDown: PropTypes.func,
+  name: PropTypes.string.isRequired,
   onSelect: PropTypes.func,
   subLabel: PropTypes.node,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
@@ -142,11 +97,3 @@ Group.defaultProps = {
 }
 
 export default Group
-
-function combineFns(...fns) {
-  return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))
-}
-
-function isFunction(fn) {
-  return typeof fn === 'function'
-}

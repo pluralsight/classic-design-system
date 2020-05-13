@@ -23,6 +23,7 @@
     "@pluralsight/ps-design-system-core": "^6.2.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.17",
     "@pluralsight/ps-design-system-halo": "^7.0.8",
+    "@pluralsight/ps-design-system-util": "*",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

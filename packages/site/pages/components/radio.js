@@ -1,7 +1,8 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Radio from '@pluralsight/ps-design-system-radio'
-import React from 'react'
+import Button from '@pluralsight/ps-design-system-button'
+import React, { useState } from 'react'
 
 import {
   Chrome,
@@ -14,83 +15,133 @@ import {
   SectionHeading
 } from '../../src/ui/index.js'
 
-class InAppExample extends React.Component {
-  constructor() {
-    super()
-    this.state = { value: 'beginner' }
-    this.handleSelect = this.handleSelect.bind(this)
-  }
+const ControlledExample = () => {
+  const [value, setValue] = useState('intermediate')
 
-  handleSelect(_, value) {
-    this.setState(_ => ({ value }))
+  function handleSelect(evt, nextValue) {
+    setValue(nextValue)
   }
-
-  render() {
-    return (
-      <div>
-        <div className="example">
-          <div className="radios">
-            <Radio.Group onSelect={this.handleSelect} value={this.state.value}>
-              <Radio.Button value="beginner" label="Beginner" />
-              <Radio.Button value="intermediate" label="Intermediate" />
-              <Radio.Button value="advanced" label="Advanced" />
-            </Radio.Group>
-          </div>
-          <div className="selection">Selected: {this.state.value}</div>
+  return (
+    <div>
+      <div className="example">
+        <div className="radios">
+          <Radio.Group onSelect={handleSelect} value={value} name="controlled">
+            <Radio.Button value="beginner" label="Beginner" />
+            <Radio.Button value="intermediate" label="Intermediate" />
+            <Radio.Button value="advanced" label="Advanced" />
+          </Radio.Group>
         </div>
-        <Code
-          lang="javascript"
-          collapsible
-        >{`class InAppExample extends React.Component {
-  constructor() {
-    super()
-    this.state = { value: 'beginner' }
-    this.handleSelect = this.handleSelect.bind(this)
+        <div className="selection">
+          Selected: {value}
+          <div className="button">
+            <Button
+              onClick={() => setValue('intermediate')}
+              appearance={Button.appearances.secondary}
+            >
+              Set Intermediate
+            </Button>
+          </div>
+        </div>
+      </div>
+      <Code lang="javascript" collapsible>{`const ControlledExample = () => {
+  const [value, setValue] = React.useState('intermediate')
+
+  function handleSelect(evt, nextValue) {
+    setValue(nextValue)
   }
-  handleSelect(_, value) {
-    this.setState(_ => ({ value }))
-  }
-  render() {
-    return (
-      <div>
-        <Radio.Group onSelect={this.handleSelect} value={this.state.value}>
+  return (
+    <div className="example">
+      <div className="radios">
+        <Radio.Group onSelect={handleSelect} value={value} name="controlled">
           <Radio.Button value="beginner" label="Beginner" />
           <Radio.Button value="intermediate" label="Intermediate" />
           <Radio.Button value="advanced" label="Advanced" />
         </Radio.Group>
-        <div>Selected: {this.state.value}</div>
       </div>
-    )
-  }
+      <div className="selection">
+        Selected: {value}
+        <div className="button">
+          <Button
+            onClick={() => setValue('intermediate')}
+            appearance={Button.appearances.secondary}
+          >
+            Set Intermediate
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
 }`}</Code>
-        <style jsx>{`
-          .example {
-            display: flex;
-            margin-bottom: ${core.layout.spacingMedium};
-          }
-          .selection {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            margin: ${core.layout.spacingMedium} 0 0 0;
-            padding: ${core.layout.spacingLarge};
-            font-size: ${core.type.fontSizeMedium};
-            color: ${core.colorsTextIcon.lowOnLight};
-            background: ${core.colorsBackgroundLight[2]};
-            border-radius: 12px;
-          }
-          .radios {
-            flex: 1;
-            position: relative;
-            z-index: 0;
-            padding: ${core.layout.spacingLarge};
-          }
-        `}</style>
-      </div>
-    )
-  }
+      <style jsx>{`
+        .example {
+          display: flex;
+          margin-bottom: ${core.layout.spacingMedium};
+        }
+        .selection {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin: ${core.layout.spacingMedium} 0 0 0;
+          padding: ${core.layout.spacingLarge};
+          font-size: ${core.type.fontSizeMedium};
+          color: ${core.colorsTextIcon.lowOnLight};
+          background: ${core.colorsBackgroundLight[2]};
+          border-radius: 12px;
+        }
+        .button {
+          margin-top: ${core.layout.spacingLarge};
+        }
+        .radios {
+          flex: 1;
+          position: relative;
+          z-index: 0;
+          padding: ${core.layout.spacingLarge};
+        }
+      `}</style>
+    </div>
+  )
 }
-
+const UncontrolledExample = () => {
+  return (
+    <div>
+      <div className="example">
+        <div className="radios">
+          <Radio.Group name="uncontrolled" value="beginner">
+            <Radio.Button value="beginner" label="Beginner" />
+            <Radio.Button value="intermediate" label="Intermediate" />
+            <Radio.Button value="advanced" label="Advanced" />
+          </Radio.Group>
+        </div>
+      </div>
+      <Code lang="javascript" collapsible>{`const UncontrolledExample = () => {
+  return (
+    <div className="example">
+      <div className="radios">
+        <Radio.Group value="beginner">
+          <Radio.Button value="beginner" label="Beginner" />
+          <Radio.Button value="intermediate" label="Intermediate" />
+          <Radio.Button value="advanced" label="Advanced" />
+        </Radio.Group>
+      </div>
+    </div>
+  )
+}`}</Code>
+      <style jsx>{`
+        .example {
+          display: flex;
+          margin-bottom: ${core.layout.spacingMedium};
+        }
+        .radios {
+          flex: 1;
+          position: relative;
+          z-index: 0;
+          padding: ${core.layout.spacingLarge};
+        }
+      `}</style>
+    </div>
+  )
+}
 export default _ => (
   <Chrome>
     <Content title="Radio">
@@ -133,7 +184,7 @@ export default _ => (
             PropTypes.row([
               'name',
               'string',
-              null,
+              true,
               null,
               'form data identifier'
             ]),
@@ -156,25 +207,32 @@ export default _ => (
               'string | number',
               null,
               null,
-              'currently selected radio value'
+              'if Radio.Group is controlled current selected radio value else if uncontrolled initial selected value'
             ])
           ],
           'Radio.Button': [
-            PropTypes.row([
-              'checked',
-              'boolean',
-              null,
-              <code>false</code>,
-              'styled selected (automatically set)'
-            ]),
-            PropTypes.row([
-              'innerRef',
-              'DOM element => ()',
-              null,
-              null,
-              'input field react ref callback'
-            ]),
             PropTypes.row(['label', 'node', true, null, 'display text']),
+            PropTypes.row([
+              'onBlur',
+              '(DOM event) => ()',
+              null,
+              null,
+              'triggers on radio blur'
+            ]),
+            PropTypes.row([
+              'onClick',
+              '(DOM event, value) => ()',
+              null,
+              null,
+              'triggers on radio select'
+            ]),
+            PropTypes.row([
+              'onFocus',
+              '(DOM event) => ()',
+              null,
+              null,
+              'triggers on radio focus'
+            ]),
             PropTypes.row([
               'value',
               'string | number',
@@ -189,9 +247,31 @@ export default _ => (
         The normal React form-related props are also acceptable and expected.
       </P>
 
-      <SectionHeading>In-app example</SectionHeading>
-      <InAppExample />
+      <SectionHeading>In-app example: controlled</SectionHeading>
+      <P>Controlled Radios require both value and handleSelect callback</P>
+      <ControlledExample />
 
+      <SectionHeading>In-app example: uncontrolled</SectionHeading>
+      <P>Uncontrolled with inital value set</P>
+      <UncontrolledExample />
+
+      <SectionHeading>Radio groups</SectionHeading>
+      <P>
+        Radio buttons present a group of options, of which only a single option
+        can be selected at a time. The grouping is commonly defined by the{' '}
+        <Text.Code>name</Text.Code> prop.
+      </P>
+      <Example.React
+        themeToggle
+        includes={{ Radio }}
+        codes={[
+          `<Radio.Group name="courseLevel">
+  <Radio.Button value="beginner" label="Beginner" />
+  <Radio.Button value="intermediate" label="Intermediate" />
+  <Radio.Button value="advanced" label="Advanced" />
+</Radio.Group>`
+        ]}
+      />
       <SectionHeading>Radio groups</SectionHeading>
       <P>
         Radio buttons present a group of options, of which only a single option
