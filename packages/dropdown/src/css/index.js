@@ -158,7 +158,7 @@ export default {
 
   // __menu
   '.psds-dropdown__menu': {
-    position: 'absolute',
+    position: 'fixed',
     zIndex: 980,
     marginTop: layout.spacingXXSmall
   },
