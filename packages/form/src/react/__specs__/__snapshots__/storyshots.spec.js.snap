@@ -906,7 +906,6 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <div
             data-css-1a26704=""
-            onFocus={[Function]}
             onKeyDown={[Function]}
             role="radiogroup"
             style={

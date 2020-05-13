@@ -78,13 +78,6 @@ const Group = React.forwardRef((props, forwardedRef) => {
     setFocusValue(focusValue)
   }
 
-  const handleFocus = combineFns(evt => {
-    if (props.disabled || focusValue) return
-
-    const defaultFocusValue = buttons[0].props.value
-    setFocusValue(defaultFocusValue)
-  }, props.onFocus)
-
   const handleSelect = combineFns((vt, nextValue) => {
     setFocusValue(nextValue)
     setValue(nextValue)
@@ -94,7 +87,6 @@ const Group = React.forwardRef((props, forwardedRef) => {
     <div
       {...styles.group(props)}
       {...filterReactProps(props)}
-      onFocus={handleFocus}
       onKeyDown={handleKeyDown}
       ref={ref}
       role="radiogroup"
@@ -127,6 +119,8 @@ const Group = React.forwardRef((props, forwardedRef) => {
     </div>
   )
 })
+
+Group.displayName = 'Radio.Group'
 
 Group.propTypes = {
   children: PropTypes.node, // TODO: children only Radio.Button

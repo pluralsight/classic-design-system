@@ -88,6 +88,8 @@ const Button = React.forwardRef((props, forwardedRef) => {
   )
 })
 
+Button.displayName = 'Radio.Button'
+
 Button.propTypes = {
   _disabled: PropTypes.bool,
   _error: PropTypes.bool,

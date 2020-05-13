@@ -10,7 +10,6 @@ exports[`Storyshots Radio default 1`] = `
 >
   <div
     data-css-1a26704=""
-    onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
     tabIndex={0}
@@ -143,7 +142,6 @@ exports[`Storyshots Radio disabled & error 1`] = `
 >
   <div
     data-css-sz0dtt=""
-    onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
     tabIndex={0}
@@ -280,7 +278,6 @@ exports[`Storyshots Radio disabled 1`] = `
 >
   <div
     data-css-sz0dtt=""
-    onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
     tabIndex={0}
@@ -417,7 +414,6 @@ exports[`Storyshots Radio error 1`] = `
 >
   <div
     data-css-1a26704=""
-    onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
     tabIndex={0}
@@ -554,7 +550,6 @@ exports[`Storyshots Radio labels 1`] = `
 >
   <div
     data-css-1a26704=""
-    onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
     tabIndex={0}
@@ -701,7 +696,6 @@ exports[`Storyshots Radio one selected 1`] = `
 >
   <div
     data-css-1a26704=""
-    onFocus={[Function]}
     onKeyDown={[Function]}
     role="radiogroup"
     tabIndex={0}
@@ -849,7 +843,6 @@ exports[`Storyshots Radio state demo 1`] = `
     </div>
     <div
       data-css-1a26704=""
-      onFocus={[Function]}
       onKeyDown={[Function]}
       onSelect={[Function]}
       role="radiogroup"
