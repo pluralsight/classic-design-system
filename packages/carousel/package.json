@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-carousel",
-  "version": "9.0.3",
+  "version": "9.0.4",
   "description": "Carousel UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,7 +25,7 @@
     "@pluralsight/ps-design-system-core": "^6.2.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.17",
     "@pluralsight/ps-design-system-halo": "^7.0.8",
-    "@pluralsight/ps-design-system-icon": "^18.1.4",
+    "@pluralsight/ps-design-system-icon": "^18.1.5",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
@@ -35,12 +35,12 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^13.0.3",
+    "@pluralsight/ps-design-system-actionmenu": "^13.0.4",
     "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-card": "^14.0.11",
+    "@pluralsight/ps-design-system-card": "^14.0.12",
     "@pluralsight/ps-design-system-position": "^4.1.1",
     "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.10",
-    "@pluralsight/ps-design-system-storybook-addon-chaos": "^1.0.12",
+    "@pluralsight/ps-design-system-storybook-addon-chaos": "^1.0.13",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.8",
     "@pluralsight/ps-design-system-theme": "^4.0.11"
   }
