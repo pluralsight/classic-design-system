@@ -28,7 +28,6 @@ exports[`Storyshots Radio controlled 1`] = `
     <div
       data-css-1a26704=""
       role="radiogroup"
-      tabIndex={0}
     >
       <div
         data-css-xp79s5=""
@@ -156,7 +155,6 @@ exports[`Storyshots Radio default 1`] = `
   <div
     data-css-1a26704=""
     role="radiogroup"
-    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -279,7 +277,6 @@ exports[`Storyshots Radio disabled & error 1`] = `
   <div
     data-css-sz0dtt=""
     role="radiogroup"
-    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -406,7 +403,6 @@ exports[`Storyshots Radio disabled 1`] = `
   <div
     data-css-sz0dtt=""
     role="radiogroup"
-    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -533,7 +529,6 @@ exports[`Storyshots Radio error 1`] = `
   <div
     data-css-1a26704=""
     role="radiogroup"
-    tabIndex={0}
   >
     <div
       data-css-xp79s5=""
@@ -660,7 +655,6 @@ exports[`Storyshots Radio labels 1`] = `
   <div
     data-css-1a26704=""
     role="radiogroup"
-    tabIndex={0}
   >
     <div
       data-css-dysqqm=""
@@ -797,7 +791,6 @@ exports[`Storyshots Radio one selected 1`] = `
   <div
     data-css-1a26704=""
     role="radiogroup"
-    tabIndex={0}
   >
     <div
       data-css-xp79s5=""

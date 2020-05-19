@@ -22,7 +22,7 @@ describe('Radio', () => {
   it('controlled: fires event once', () => {
     const spy = jest.fn()
     const { container } = render(
-      <Radio.Group onSelect={spy} value="green" name="fires event once">
+      <Radio.Group onChange={spy} value="green" name="fires event once">
         <Radio.Button value="red" label="Red" />
         <Radio.Button value="green" label="Green" />
         <Radio.Button value="blue" label="Blue" />

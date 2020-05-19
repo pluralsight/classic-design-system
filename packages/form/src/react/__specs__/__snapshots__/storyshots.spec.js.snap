@@ -913,7 +913,6 @@ exports[`Storyshots Sample Form sample 1`] = `
                 "width": "100%",
               }
             }
-            tabIndex={0}
           >
             <div
               data-css-xp79s5=""

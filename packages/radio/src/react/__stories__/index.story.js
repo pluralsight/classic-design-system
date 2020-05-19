@@ -61,7 +61,7 @@ storiesOf('Radio', module)
     function StateDemo() {
       const [value, setValue] = React.useState('red')
 
-      function handleSelect(evt, nextValue) {
+      function handleChange(evt, nextValue) {
         setValue(nextValue)
       }
 
@@ -70,9 +70,9 @@ storiesOf('Radio', module)
           <div style={{ color: core.colorsTextIcon.highOnDark }}>
             Selected: {value}
             <br />
-            <button onClick={() => handleSelect(1, 'blue')}>blue</button>
+            <button onClick={() => handleChange(1, 'blue')}>blue</button>
           </div>
-          <Radio.Group value={value} onSelect={handleSelect} name="controlled">
+          <Radio.Group value={value} onChange={handleChange} name="controlled">
             <Radio.Button value="red" label="Red" />
             <Radio.Button value="green" label="Green" />
             <Radio.Button value="blue" label="Blue" />

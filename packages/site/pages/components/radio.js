@@ -18,14 +18,14 @@ import {
 const ControlledExample = () => {
   const [value, setValue] = useState('intermediate')
 
-  function handleSelect(evt, nextValue) {
+  function handleChange(evt, nextValue) {
     setValue(nextValue)
   }
   return (
     <div>
       <div className="example">
         <div className="radios">
-          <Radio.Group onSelect={handleSelect} value={value} name="controlled">
+          <Radio.Group onChange={handleChange} value={value} name="controlled">
             <Radio.Button value="beginner" label="Beginner" />
             <Radio.Button value="intermediate" label="Intermediate" />
             <Radio.Button value="advanced" label="Advanced" />
@@ -46,13 +46,13 @@ const ControlledExample = () => {
       <Code lang="javascript" collapsible>{`const ControlledExample = () => {
   const [value, setValue] = React.useState('intermediate')
 
-  function handleSelect(evt, nextValue) {
+  function handleChange(evt, nextValue) {
     setValue(nextValue)
   }
   return (
     <div className="example">
       <div className="radios">
-        <Radio.Group onSelect={handleSelect} value={value} name="controlled">
+        <Radio.Group onChange={handleChange} value={value} name="controlled">
           <Radio.Button value="beginner" label="Beginner" />
           <Radio.Button value="intermediate" label="Intermediate" />
           <Radio.Button value="advanced" label="Advanced" />
@@ -189,7 +189,7 @@ export default _ => (
               'form data identifier'
             ]),
             PropTypes.row([
-              'onSelect',
+              'onChange',
               '(DOM event, value) => ()',
               null,
               null,
@@ -248,7 +248,7 @@ export default _ => (
       </P>
 
       <SectionHeading>In-app example: controlled</SectionHeading>
-      <P>Controlled Radios require both value and handleSelect callback</P>
+      <P>Controlled Radios require both value and handleChange callback</P>
       <ControlledExample />
 
       <SectionHeading>In-app example: uncontrolled</SectionHeading>

@@ -26,12 +26,12 @@ const styles = {
     )
 }
 
-const useValue = ({ value, onSelect }) => {
+const useValue = ({ value, onChange }) => {
   const [_value, setValue] = React.useState(value)
   return {
-    ...(value !== undefined && onSelect !== undefined
-      ? { checkedValue: value, onSelect }
-      : { checkedValue: _value, onSelect: (evt, val) => setValue(val) })
+    ...(value !== undefined && onChange !== undefined
+      ? { checkedValue: value, onChange }
+      : { checkedValue: _value, onChange: (evt, val) => setValue(val) })
   }
 }
 
@@ -43,7 +43,7 @@ const Group = React.forwardRef(
       error,
       label,
       name,
-      onSelect,
+      onChange,
       subLabel,
       value,
       ...rest
@@ -65,7 +65,7 @@ const Group = React.forwardRef(
               disabled,
               error,
               name,
-              ...useValue({ value, onSelect })
+              ...useValue({ value, onChange })
             }}
           >
             {children}
@@ -85,15 +85,14 @@ Group.propTypes = {
   error: PropTypes.bool,
   label: PropTypes.node,
   name: PropTypes.string.isRequired,
-  onSelect: PropTypes.func,
+  onChange: PropTypes.func,
   subLabel: PropTypes.node,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 Group.defaultProps = {
   disabled: false,
-  error: false,
-  tabIndex: 0
+  error: false
 }
 
 export default Group

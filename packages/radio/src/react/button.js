@@ -32,7 +32,7 @@ const isChecked = (a, b) => a === b
 
 const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
   const themeName = useTheme()
-  const { checkedValue, onSelect, disabled, error, name } = useRadioContext()
+  const { checkedValue, onChange, disabled, error, name } = useRadioContext()
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
@@ -49,7 +49,7 @@ const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
   }
   function handleClick(e) {
     const value = e.target.value
-    combineFns(onSelect, props.onClick)(e, value)
+    combineFns(onChange, props.onClick)(e, value)
     ref.current.focus()
   }
   const checked = isChecked(value, checkedValue)
