@@ -54,8 +54,7 @@ export default {
 
   '.psds-radio-button__circle-outer': {
     width: '16px',
-    marginRight: layout.spacingSmall,
-    pointerEvents: 'none'
+    marginRight: layout.spacingSmall
   },
 
   '.psds-radio-button__circle': {
@@ -88,12 +87,7 @@ export default {
   },
 
   '.psds-radio-button__input': {
-    opacity: 0,
-    width: 0,
-    height: 0,
-    '&:focus': {
-      outline: 'none'
-    }
+    display: 'none'
   },
 
   '.psds-radio-button__label': {
