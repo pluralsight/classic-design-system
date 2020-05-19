@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@8.1.3...@pluralsight/ps-design-system-table@8.1.4) (2020-05-14)
+
+
+### Bug Fixes
+
+* **icon:** update snapshots ([c02ac62](https://github.com/pluralsight/design-system/commit/c02ac623a52c58dc8dda82ba4d7940b4b131b887))
+
+
+
+
+
 ## [8.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@8.1.2...@pluralsight/ps-design-system-table@8.1.3) (2020-05-07)
 
 
