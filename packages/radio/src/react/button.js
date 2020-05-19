@@ -1,4 +1,4 @@
-import { compose, css, checked } from 'glamor'
+import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 
@@ -52,7 +52,7 @@ const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
     combineFns(onSelect, props.onClick)(e, value)
     ref.current.focus()
   }
-
+  const checked = isChecked(value, checkedValue)
   return (
     <label {...styles.button()}>
       <div {...styles.circleOuter()}>
@@ -66,10 +66,10 @@ const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
         >
           <div
             role="radio"
-            aria-checked={isChecked(value, checkedValue)}
+            aria-checked={checked}
             tabIndex="-1"
             ref={circleRef}
-            {...styles.circle(themeName, isChecked(value, checkedValue))}
+            {...styles.circle(themeName, checked)}
           >
             {checked && <div {...styles.circleInner()} />}
           </div>

@@ -86,11 +86,7 @@ exports[`Storyshots Radio controlled 1`] = `
                 data-css-1wbxh41=""
                 role="radio"
                 tabIndex="-1"
-              >
-                <div
-                  data-css-ppl1jg=""
-                />
-              </div>
+              />
             </div>
           </div>
           <input
@@ -124,11 +120,7 @@ exports[`Storyshots Radio controlled 1`] = `
                 data-css-1wbxh41=""
                 role="radio"
                 tabIndex="-1"
-              >
-                <div
-                  data-css-ppl1jg=""
-                />
-              </div>
+              />
             </div>
           </div>
           <input
@@ -184,11 +176,7 @@ exports[`Storyshots Radio default 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -222,11 +210,7 @@ exports[`Storyshots Radio default 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -260,11 +244,7 @@ exports[`Storyshots Radio default 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -319,11 +299,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -395,11 +371,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -454,11 +426,7 @@ exports[`Storyshots Radio disabled 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -530,11 +498,7 @@ exports[`Storyshots Radio disabled 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -589,11 +553,7 @@ exports[`Storyshots Radio error 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -665,11 +625,7 @@ exports[`Storyshots Radio error 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -729,11 +685,7 @@ exports[`Storyshots Radio labels 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -805,11 +757,7 @@ exports[`Storyshots Radio labels 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -869,11 +817,7 @@ exports[`Storyshots Radio one selected 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input
@@ -945,11 +889,7 @@ exports[`Storyshots Radio one selected 1`] = `
               data-css-1wbxh41=""
               role="radio"
               tabIndex="-1"
-            >
-              <div
-                data-css-ppl1jg=""
-              />
-            </div>
+            />
           </div>
         </div>
         <input

@@ -933,11 +933,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                       data-css-1wbxh41=""
                       role="radio"
                       tabIndex="-1"
-                    >
-                      <div
-                        data-css-ppl1jg=""
-                      />
-                    </div>
+                    />
                   </div>
                 </div>
                 <input
@@ -971,11 +967,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                       data-css-1wbxh41=""
                       role="radio"
                       tabIndex="-1"
-                    >
-                      <div
-                        data-css-ppl1jg=""
-                      />
-                    </div>
+                    />
                   </div>
                 </div>
                 <input
