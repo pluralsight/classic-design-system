@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@6.2.0...@pluralsight/ps-design-system-radio@7.0.0) (2020-05-19)
+
+
+### Features
+
+* **radio:** new component api and usage of context ([#1016](https://github.com/pluralsight/design-system/issues/1016)) ([2fcec30](https://github.com/pluralsight/design-system/commit/2fcec30038c5b7d81eb5957a8e5e92010360ac66))
+
+
+### BREAKING CHANGES
+
+* **radio:** Radio.Group now require name prop and onSelect renamed onChange, Radio.button checked, onFocus, and onKeydown props removed
+
+
+
+
+
 # [6.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@6.1.3...@pluralsight/ps-design-system-radio@6.2.0) (2020-05-19)
 
 
