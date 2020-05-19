@@ -718,7 +718,7 @@ export default _ => (
           href="/components/radio"
           desc="For single selection amongst few choices."
         >
-          <Radio.Group>
+          <Radio.Group name="radio group">
             <Radio.Button value="beginner" label="Beginner" />
             <Radio.Button value="intermediate" label="Intermediate" />
             <Radio.Button value="advanced" label="Advanced" />

@@ -79,7 +79,7 @@ storiesOf('Sample Form', module)
 
       <Form.Divider />
 
-      <Radio.Group>
+      <Radio.Group name="sample">
         <Radio.Button value="full" label="Full-time employement" />
         <Radio.Button value="part" label="Part-time employement" />
       </Radio.Group>
