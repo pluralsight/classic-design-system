@@ -906,6 +906,8 @@ exports[`Storyshots Sample Form sample 1`] = `
         >
           <div
             data-css-1a26704=""
+            onFocus={[Function]}
+            onKeyDown={[Function]}
             role="radiogroup"
             style={
               Object {
@@ -913,6 +915,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 "width": "100%",
               }
             }
+            tabIndex={0}
           >
             <div
               data-css-xp79s5=""
@@ -921,7 +924,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-kn3wr0=""
               >
                 <div
-                  data-css-1lxv0yd=""
+                  data-css-1gbdc34=""
                 >
                   <div
                     data-css-1lu7sfl=""
@@ -930,18 +933,19 @@ exports[`Storyshots Sample Form sample 1`] = `
                     <div
                       aria-checked={false}
                       data-css-1wbxh41=""
+                      onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
                     />
                   </div>
                 </div>
                 <input
-                  data-css-fplhjw=""
+                  checked={false}
+                  data-css-gyrv08=""
                   name="sample"
-                  onBlur={[Function]}
                   onClick={[Function]}
-                  onFocus={[Function]}
                   readOnly={true}
+                  tabIndex="-1"
                   type="radio"
                   value="full"
                 />
@@ -951,11 +955,15 @@ exports[`Storyshots Sample Form sample 1`] = `
                   Full-time employement
                 </div>
               </label>
+            </div>
+            <div
+              data-css-xp79s5=""
+            >
               <label
                 data-css-kn3wr0=""
               >
                 <div
-                  data-css-1lxv0yd=""
+                  data-css-1gbdc34=""
                 >
                   <div
                     data-css-1lu7sfl=""
@@ -964,18 +972,19 @@ exports[`Storyshots Sample Form sample 1`] = `
                     <div
                       aria-checked={false}
                       data-css-1wbxh41=""
+                      onFocus={[Function]}
                       role="radio"
                       tabIndex="-1"
                     />
                   </div>
                 </div>
                 <input
-                  data-css-fplhjw=""
+                  checked={false}
+                  data-css-gyrv08=""
                   name="sample"
-                  onBlur={[Function]}
                   onClick={[Function]}
-                  onFocus={[Function]}
                   readOnly={true}
+                  tabIndex="-1"
                   type="radio"
                   value="part"
                 />

@@ -11,14 +11,14 @@ const PaddingDecorator = storyFn => (
 storiesOf('Radio', module)
   .addDecorator(PaddingDecorator)
   .add('default', _ => (
-    <Radio.Group name="default">
+    <Radio.Group>
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
   .add('one selected', _ => (
-    <Radio.Group value="green" name="one selected">
+    <Radio.Group value="green">
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
@@ -29,7 +29,6 @@ storiesOf('Radio', module)
       value="green"
       label="Colors"
       subLabel="These colors are very primary"
-      name="labels"
     >
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
@@ -37,31 +36,31 @@ storiesOf('Radio', module)
     </Radio.Group>
   ))
   .add('error', _ => (
-    <Radio.Group value="green" error name="error">
+    <Radio.Group value="green" error>
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
   .add('disabled', _ => (
-    <Radio.Group value="green" disabled name="disabled">
+    <Radio.Group value="green" disabled>
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
   .add('disabled & error', _ => (
-    <Radio.Group value="green" disabled error name="disabled & error">
+    <Radio.Group value="green" disabled error>
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
-  .add('controlled', _ => {
+  .add('state demo', _ => {
     function StateDemo() {
       const [value, setValue] = React.useState('red')
 
-      function handleChange(evt, nextValue) {
+      function handleSelect(evt, nextValue) {
         setValue(nextValue)
       }
 
@@ -69,10 +68,8 @@ storiesOf('Radio', module)
         <div>
           <div style={{ color: core.colorsTextIcon.highOnDark }}>
             Selected: {value}
-            <br />
-            <button onClick={() => handleChange(1, 'blue')}>blue</button>
           </div>
-          <Radio.Group value={value} onChange={handleChange} name="controlled">
+          <Radio.Group value={value} onSelect={handleSelect}>
             <Radio.Button value="red" label="Red" />
             <Radio.Button value="green" label="Green" />
             <Radio.Button value="blue" label="Blue" />
