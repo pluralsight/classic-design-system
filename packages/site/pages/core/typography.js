@@ -1,4 +1,5 @@
 /* eslint-disable no-useless-escape */
+/* eslint-disable react/no-children-prop */
 
 import React from 'react'
 import * as core from '@pluralsight/ps-design-system-core'
@@ -144,6 +145,7 @@ const FontSize = props => (
         </div>
       ))}
     </div>
+
     <Code language="css">{`@import "@pluralsight/ps-design-system-core";
 .mySelector { font-size: var(--psTypeFontSizeLarge); }`}</Code>
     <style jsx>{`
@@ -318,10 +320,14 @@ const MonospaceFont = _ => (
       </Link>
       .
     </P>
-    <Code language="css">
-      @import
-      url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
-    </Code>
+
+    <Code
+      language="html"
+      children={
+        '<link rel="stylesheet" src="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" />'
+      }
+    />
+
     <P>Only one Source Code Pro font weight is available for use.</P>
     <div className="box fontWeight">
       <div className="fontLetter">Aa</div>
@@ -378,9 +384,13 @@ export default _ => (
         To use the Pluralsight font-family on your site, you must install it by
         importing it from typography.com using Pluralsight's assigned CSS Key.
       </P>
-      <Code lang="css">
-        @import url(https://cloud.typography.com/6966154/6397212/css/fonts.css);
-      </Code>
+
+      <Code
+        language="html"
+        children={
+          '<link rel="stylesheet" src="https://cloud.typography.com/6966154/6397212/css/fonts.css" />'
+        }
+      />
 
       <SectionHeading>Font family</SectionHeading>
       <P>Pluralsight's font family for the web is Gotham SSm.</P>
