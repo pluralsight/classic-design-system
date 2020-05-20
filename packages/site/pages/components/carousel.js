@@ -165,67 +165,30 @@ function MockItem(props) {
   }
   return <div {...props} style={style} />
 }
-const MockCard = props => (
-  <Card
-    title={
-      <Card.TextLink>
-        <a href="#" tabIndex={1}>
-          <Card.Title>{props.titleText}</Card.Title>
-        </a>
-      </Card.TextLink>
-    }
-    image={<Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />}
-    metadata1={[
-      <Card.TextLink>
-        <a href="#">meta</a>
-      </Card.TextLink>
-    ]}
-    {...props}
-  />
-)
-MockCard.propTypes = {
-  titleText: PropTypes.string
+
+const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
+  `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
+const CardWithDefaults = props => <Card {...props} />
+
+CardWithDefaults.defaultProps = {
+  title: <Card.Title>Card Title</Card.Title>,
+  image: <Card.Image src={getImgSrc()} />
 }
 const CardExample = () => {
   return (
-    <Carousel size={Carousel.sizes.wide}>
-      {MOCK_DATA.courses.map(course => (
-        <Toggle>
-          {({ active, toggle }) => (
-            <Card
-              key={course.id}
-              image={<Card.Image src={course.image} />}
-              metadata1={[course.author, course.level]}
-              title={<Card.Title>{course.title}</Card.Title>}
-              actionBarVisible
-              actionBar={[
-                <BelowRight
-                  inNode={typeof document !== 'undefined' && document.body}
-                  when={active}
-                  show={
-                    <ActionMenu onClose={toggle}>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    </ActionMenu>
-                  }
-                  key="a"
-                >
-                  <Card.Action
-                    title="See more"
-                    icon={<MoreIcon />}
-                    onClick={toggle}
-                  />
-                </BelowRight>
-              ]}
-            />
-          )}
-        </Toggle>
+    <Carousel>
+      {new Array(21).fill(null).map((_, index) => (
+        <CardWithDefaults
+          actionBar={[<button {...css({ flex: 'none' })}>Button</button>]}
+          actionBarVisible
+          title={
+            <Card.TextLink>
+              <a href="http://duckduckgo.com?q=text">
+                <Card.Title>Text link</Card.Title>
+              </a>
+            </Card.TextLink>
+          }
+        />
       ))}
     </Carousel>
   )

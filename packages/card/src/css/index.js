@@ -147,10 +147,12 @@ export default {
     transition: `opacity ${motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0,
+    visibility: 'visible',
     zIndex: 10,
 
     '> *': {
-      pointerEvents: 'all'
+      pointerEvents: 'auto',
+      opacity: 1
     },
 
     '&:focus-within, &[focus-within]': {
