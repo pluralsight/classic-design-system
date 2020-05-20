@@ -9,6 +9,7 @@ import Carousel from '@pluralsight/ps-design-system-carousel'
 import { MoreIcon } from '@pluralsight/ps-design-system-icon'
 import Note from '@pluralsight/ps-design-system-note'
 import * as Text from '@pluralsight/ps-design-system-text'
+import { css } from 'glamor'
 
 import {
   Chrome,
@@ -164,7 +165,108 @@ function MockItem(props) {
   }
   return <div {...props} style={style} />
 }
+const MockCard = props => (
+  <Card
+    title={
+      <Card.TextLink>
+        <a href="#" tabIndex={1}>
+          <Card.Title>{props.titleText}</Card.Title>
+        </a>
+      </Card.TextLink>
+    }
+    image={<Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />}
+    metadata1={[
+      <Card.TextLink>
+        <a href="#">meta</a>
+      </Card.TextLink>
+    ]}
+    {...props}
+  />
+)
+MockCard.propTypes = {
+  titleText: PropTypes.string
+}
+const CardExample = () => {
+  return (
+    <Carousel size={Carousel.sizes.wide}>
+      {MOCK_DATA.courses.map(course => (
+        <Toggle>
+          {({ active, toggle }) => (
+            <Card
+              key={course.id}
+              image={<Card.Image src={course.image} />}
+              metadata1={[course.author, course.level]}
+              title={<Card.Title>{course.title}</Card.Title>}
+              actionBarVisible
+              actionBar={[
+                <BelowRight
+                  inNode={typeof document !== 'undefined' && document.body}
+                  when={active}
+                  show={
+                    <ActionMenu onClose={toggle}>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                  key="a"
+                >
+                  <Card.Action
+                    title="See more"
+                    icon={<MoreIcon />}
+                    onClick={toggle}
+                  />
+                </BelowRight>
+              ]}
+            />
+          )}
+        </Toggle>
+      ))}
+    </Carousel>
+  )
+}
 
+const Item = props => (
+  <div
+    {...css({
+      alignItems: 'center',
+      background: 'pink',
+      display: 'flex',
+      flexDirection: 'column',
+      height: '150px',
+      justifyContent: 'center',
+      position: 'relative'
+    })}
+    data-testid="mock-item"
+    {...props}
+  >
+    {' '}
+    <button {...css({ flex: 'none' })}>Button: {props.children}</button>
+    <p {...css({ width: '100%', textAlign: 'center', padding: 10 })}>
+      non focusable /tabIndex text
+    </p>
+    <a href="https://duckduckgo.com/" {...css({ flex: 'none' })}>
+      Link: {props.children}
+    </a>{' '}
+  </div>
+)
+const BasicExample = () => {
+  return (
+    <Carousel>
+      {new Array(21).fill(null).map((_, index) => (
+        <Item key={index}>item: {index + 1}</Item>
+      ))}
+    </Carousel>
+  )
+}
+Item.propTypes = {
+  children: PropTypes.element
+}
 export default _ => (
   <Chrome>
     <Content title="Carousel">
@@ -241,7 +343,10 @@ export default _ => (
           ]
         }}
       />
-
+      <SectionHeading>In-app: card example</SectionHeading>
+      <CardExample />
+      <SectionHeading>In-app: basic example</SectionHeading>
+      <BasicExample />
       <SectionHeading>Auto paging</SectionHeading>
       <P>The number and width of items are handled automatically.</P>
 
