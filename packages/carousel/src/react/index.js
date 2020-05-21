@@ -203,7 +203,9 @@ const Page = props => {
   React.useEffect(() => {
     if (paged && isActivePage) {
       const page = ref.current
-      const focusFirstChild = () => page.firstElementChild.focus()
+      const focusFirstChild = e => {
+        e.target === page && page.firstElementChild.focus()
+      }
       page.addEventListener('transitionend', focusFirstChild)
     }
   }, [isActivePage, paged])
@@ -213,7 +215,7 @@ const Page = props => {
       ref={ref}
       {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
-      {...rest}
+      {...filterReactProps(rest)}
       {...(!isActivePage && {
         hidden: true,
         style: { visibility: 'hidden' }

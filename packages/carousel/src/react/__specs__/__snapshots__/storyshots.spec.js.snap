@@ -50,7 +50,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -85,7 +84,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -124,7 +122,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -163,7 +160,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -202,7 +198,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -241,7 +236,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -280,7 +274,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -319,7 +312,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -358,7 +350,6 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -492,7 +483,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -545,7 +535,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -602,7 +591,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -659,7 +647,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -716,7 +703,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -773,7 +759,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -830,7 +815,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -887,7 +871,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -944,7 +927,6 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -1096,7 +1078,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -1135,7 +1116,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -1178,7 +1158,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -1221,7 +1200,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -1264,7 +1242,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -1307,7 +1284,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -1350,7 +1326,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -1393,7 +1368,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -1436,7 +1410,6 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -1574,7 +1547,6 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -1613,7 +1585,6 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -1656,7 +1627,6 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -1699,7 +1669,6 @@ exports[`Storyshots Carousel/items dynamic items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -1852,7 +1821,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -1891,7 +1859,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -1934,7 +1901,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -1977,7 +1943,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -2020,7 +1985,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -2063,7 +2027,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -2106,7 +2069,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -2149,7 +2111,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -2192,7 +2153,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -2235,7 +2195,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={9}
         style={
           Object {
             "visibility": "hidden",
@@ -2278,7 +2237,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={10}
         style={
           Object {
             "visibility": "hidden",
@@ -2321,7 +2279,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={11}
         style={
           Object {
             "visibility": "hidden",
@@ -2364,7 +2321,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={12}
         style={
           Object {
             "visibility": "hidden",
@@ -2407,7 +2363,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={13}
         style={
           Object {
             "visibility": "hidden",
@@ -2450,7 +2405,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={14}
         style={
           Object {
             "visibility": "hidden",
@@ -2493,7 +2447,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={15}
         style={
           Object {
             "visibility": "hidden",
@@ -2536,7 +2489,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={16}
         style={
           Object {
             "visibility": "hidden",
@@ -2579,7 +2531,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={17}
         style={
           Object {
             "visibility": "hidden",
@@ -2622,7 +2573,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={18}
         style={
           Object {
             "visibility": "hidden",
@@ -2665,7 +2615,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={19}
         style={
           Object {
             "visibility": "hidden",
@@ -2708,7 +2657,6 @@ exports[`Storyshots Carousel/items many items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={20}
         style={
           Object {
             "visibility": "hidden",
@@ -2846,7 +2794,6 @@ exports[`Storyshots Carousel/items one item 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -2980,7 +2927,6 @@ exports[`Storyshots Carousel/items two items 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -3017,7 +2963,6 @@ exports[`Storyshots Carousel/items two items 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -3153,7 +3098,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -3192,7 +3136,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -3235,7 +3178,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -3278,7 +3220,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -3321,7 +3262,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -3364,7 +3304,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -3407,7 +3346,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -3450,7 +3388,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -3493,7 +3430,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -3536,7 +3472,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={9}
         style={
           Object {
             "visibility": "hidden",
@@ -3579,7 +3514,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={10}
         style={
           Object {
             "visibility": "hidden",
@@ -3622,7 +3556,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={11}
         style={
           Object {
             "visibility": "hidden",
@@ -3665,7 +3598,6 @@ exports[`Storyshots Carousel/size narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={12}
         style={
           Object {
             "visibility": "hidden",
@@ -3803,7 +3735,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -3842,7 +3773,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -3885,7 +3815,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -3928,7 +3857,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -3971,7 +3899,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -4014,7 +3941,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -4057,7 +3983,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -4100,7 +4025,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -4143,7 +4067,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -4186,7 +4109,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={9}
         style={
           Object {
             "visibility": "hidden",
@@ -4229,7 +4151,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={10}
         style={
           Object {
             "visibility": "hidden",
@@ -4272,7 +4193,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={11}
         style={
           Object {
             "visibility": "hidden",
@@ -4315,7 +4235,6 @@ exports[`Storyshots Carousel/size wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={12}
         style={
           Object {
             "visibility": "hidden",
@@ -4462,7 +4381,6 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
         <ul
           data-css-1lpz2b9=""
           data-css-bxro55=""
-          pageIndex={0}
         >
           <li
             data-css-efqczl=""
@@ -4642,7 +4560,6 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={1}
           style={
             Object {
               "visibility": "hidden",
@@ -4681,7 +4598,6 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={2}
           style={
             Object {
               "visibility": "hidden",
@@ -4720,7 +4636,6 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={3}
           style={
             Object {
               "visibility": "hidden",
@@ -4864,7 +4779,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
         <ul
           data-css-1lpz2b9=""
           data-css-bxro55=""
-          pageIndex={0}
         >
           <li
             data-css-efqczl=""
@@ -5038,7 +4952,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={1}
           style={
             Object {
               "visibility": "hidden",
@@ -5216,7 +5129,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={2}
           style={
             Object {
               "visibility": "hidden",
@@ -5394,7 +5306,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={3}
           style={
             Object {
               "visibility": "hidden",
@@ -5572,7 +5483,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={4}
           style={
             Object {
               "visibility": "hidden",
@@ -5750,7 +5660,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={5}
           style={
             Object {
               "visibility": "hidden",
@@ -5928,7 +5837,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={6}
           style={
             Object {
               "visibility": "hidden",
@@ -6106,7 +6014,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={7}
           style={
             Object {
               "visibility": "hidden",
@@ -6284,7 +6191,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={8}
           style={
             Object {
               "visibility": "hidden",
@@ -6462,7 +6368,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={9}
           style={
             Object {
               "visibility": "hidden",
@@ -6640,7 +6545,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={10}
           style={
             Object {
               "visibility": "hidden",
@@ -6818,7 +6722,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={11}
           style={
             Object {
               "visibility": "hidden",
@@ -6996,7 +6899,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={12}
           style={
             Object {
               "visibility": "hidden",
@@ -7174,7 +7076,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={13}
           style={
             Object {
               "visibility": "hidden",
@@ -7352,7 +7253,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={14}
           style={
             Object {
               "visibility": "hidden",
@@ -7530,7 +7430,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={15}
           style={
             Object {
               "visibility": "hidden",
@@ -7708,7 +7607,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={16}
           style={
             Object {
               "visibility": "hidden",
@@ -7886,7 +7784,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={17}
           style={
             Object {
               "visibility": "hidden",
@@ -8064,7 +7961,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={18}
           style={
             Object {
               "visibility": "hidden",
@@ -8242,7 +8138,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={19}
           style={
             Object {
               "visibility": "hidden",
@@ -8420,7 +8315,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={20}
           style={
             Object {
               "visibility": "hidden",
@@ -8598,7 +8492,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={21}
           style={
             Object {
               "visibility": "hidden",
@@ -8776,7 +8669,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={22}
           style={
             Object {
               "visibility": "hidden",
@@ -8954,7 +8846,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={23}
           style={
             Object {
               "visibility": "hidden",
@@ -9132,7 +9023,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={24}
           style={
             Object {
               "visibility": "hidden",
@@ -9310,7 +9200,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={25}
           style={
             Object {
               "visibility": "hidden",
@@ -9488,7 +9377,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={26}
           style={
             Object {
               "visibility": "hidden",
@@ -9666,7 +9554,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={27}
           style={
             Object {
               "visibility": "hidden",
@@ -9844,7 +9731,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={28}
           style={
             Object {
               "visibility": "hidden",
@@ -10022,7 +9908,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={29}
           style={
             Object {
               "visibility": "hidden",
@@ -10200,7 +10085,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={30}
           style={
             Object {
               "visibility": "hidden",
@@ -10378,7 +10262,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={31}
           style={
             Object {
               "visibility": "hidden",
@@ -10556,7 +10439,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={32}
           style={
             Object {
               "visibility": "hidden",
@@ -10734,7 +10616,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={33}
           style={
             Object {
               "visibility": "hidden",
@@ -10912,7 +10793,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={34}
           style={
             Object {
               "visibility": "hidden",
@@ -11090,7 +10970,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={35}
           style={
             Object {
               "visibility": "hidden",
@@ -11268,7 +11147,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={36}
           style={
             Object {
               "visibility": "hidden",
@@ -11446,7 +11324,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={37}
           style={
             Object {
               "visibility": "hidden",
@@ -11624,7 +11501,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={38}
           style={
             Object {
               "visibility": "hidden",
@@ -11802,7 +11678,6 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={39}
           style={
             Object {
               "visibility": "hidden",
@@ -12085,7 +11960,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
         <ul
           data-css-1lpz2b9=""
           data-css-bxro55=""
-          pageIndex={0}
         >
           <li
             data-css-efqczl=""
@@ -12480,7 +12354,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={1}
           style={
             Object {
               "visibility": "hidden",
@@ -12519,7 +12392,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={2}
           style={
             Object {
               "visibility": "hidden",
@@ -12558,7 +12430,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={3}
           style={
             Object {
               "visibility": "hidden",
@@ -12597,7 +12468,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={4}
           style={
             Object {
               "visibility": "hidden",
@@ -12636,7 +12506,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={5}
           style={
             Object {
               "visibility": "hidden",
@@ -12675,7 +12544,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={6}
           style={
             Object {
               "visibility": "hidden",
@@ -12714,7 +12582,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={7}
           style={
             Object {
               "visibility": "hidden",
@@ -12753,7 +12620,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={8}
           style={
             Object {
               "visibility": "hidden",
@@ -12792,7 +12658,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={9}
           style={
             Object {
               "visibility": "hidden",
@@ -12831,7 +12696,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={10}
           style={
             Object {
               "visibility": "hidden",
@@ -12870,7 +12734,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={11}
           style={
             Object {
               "visibility": "hidden",
@@ -12909,7 +12772,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={12}
           style={
             Object {
               "visibility": "hidden",
@@ -12948,7 +12810,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
           data-css-8ks88a=""
           data-css-bxro55=""
           hidden={true}
-          pageIndex={13}
           style={
             Object {
               "visibility": "hidden",
@@ -13083,7 +12944,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -13103,6 +12963,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -13246,7 +13129,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -13270,6 +13152,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -13399,7 +13304,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -13423,6 +13327,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -13552,7 +13479,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -13576,6 +13502,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -13705,7 +13654,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -13729,6 +13677,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -13858,7 +13829,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -13882,6 +13852,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -14011,7 +14004,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -14035,6 +14027,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -14164,7 +14179,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -14188,6 +14202,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -14317,7 +14354,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -14341,6 +14377,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -14470,7 +14529,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={9}
         style={
           Object {
             "visibility": "hidden",
@@ -14494,6 +14552,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -14623,7 +14704,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={10}
         style={
           Object {
             "visibility": "hidden",
@@ -14647,6 +14727,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -14776,7 +14879,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={11}
         style={
           Object {
             "visibility": "hidden",
@@ -14800,6 +14902,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -14929,7 +15054,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={12}
         style={
           Object {
             "visibility": "hidden",
@@ -14953,6 +15077,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -15082,7 +15229,6 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={13}
         style={
           Object {
             "visibility": "hidden",
@@ -15106,6 +15252,29 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -15330,7 +15499,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
       <ul
         data-css-1lpz2b9=""
         data-css-bxro55=""
-        pageIndex={0}
       >
         <li
           data-css-efqczl=""
@@ -15350,6 +15518,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -15493,7 +15684,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={1}
         style={
           Object {
             "visibility": "hidden",
@@ -15517,6 +15707,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -15646,7 +15859,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={2}
         style={
           Object {
             "visibility": "hidden",
@@ -15670,6 +15882,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -15799,7 +16034,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={3}
         style={
           Object {
             "visibility": "hidden",
@@ -15823,6 +16057,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -15952,7 +16209,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={4}
         style={
           Object {
             "visibility": "hidden",
@@ -15976,6 +16232,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -16105,7 +16384,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={5}
         style={
           Object {
             "visibility": "hidden",
@@ -16129,6 +16407,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -16258,7 +16559,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={6}
         style={
           Object {
             "visibility": "hidden",
@@ -16282,6 +16582,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -16411,7 +16734,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={7}
         style={
           Object {
             "visibility": "hidden",
@@ -16435,6 +16757,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -16564,7 +16909,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={8}
         style={
           Object {
             "visibility": "hidden",
@@ -16588,6 +16932,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -16717,7 +17084,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={9}
         style={
           Object {
             "visibility": "hidden",
@@ -16741,6 +17107,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -16870,7 +17259,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={10}
         style={
           Object {
             "visibility": "hidden",
@@ -16894,6 +17282,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -17023,7 +17434,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={11}
         style={
           Object {
             "visibility": "hidden",
@@ -17047,6 +17457,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -17176,7 +17609,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={12}
         style={
           Object {
             "visibility": "hidden",
@@ -17200,6 +17632,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""
@@ -17329,7 +17784,6 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
         data-css-8ks88a=""
         data-css-bxro55=""
         hidden={true}
-        pageIndex={13}
         style={
           Object {
             "visibility": "hidden",
@@ -17353,6 +17807,29 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
                   }
                 }
               />
+              <div
+                data-css-4ed7vx=""
+              >
+                <button
+                  aria-label="Bookmark"
+                  data-css-45oxhg=""
+                  title="Bookmark"
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="bookmark icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
             <div
               data-css-piydn8=""

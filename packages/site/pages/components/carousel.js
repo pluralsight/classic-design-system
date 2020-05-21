@@ -9,7 +9,6 @@ import Carousel from '@pluralsight/ps-design-system-carousel'
 import { MoreIcon } from '@pluralsight/ps-design-system-icon'
 import Note from '@pluralsight/ps-design-system-note'
 import * as Text from '@pluralsight/ps-design-system-text'
-import { css } from 'glamor'
 
 import {
   Chrome,
@@ -166,70 +165,6 @@ function MockItem(props) {
   return <div {...props} style={style} />
 }
 
-const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
-  `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
-const CardWithDefaults = props => <Card {...props} />
-
-CardWithDefaults.defaultProps = {
-  title: <Card.Title>Card Title</Card.Title>,
-  image: <Card.Image src={getImgSrc()} />
-}
-const CardExample = () => {
-  return (
-    <Carousel>
-      {new Array(21).fill(null).map((_, index) => (
-        <CardWithDefaults
-          actionBar={[<button {...css({ flex: 'none' })}>Button</button>]}
-          actionBarVisible
-          title={
-            <Card.TextLink>
-              <a href="http://duckduckgo.com?q=text">
-                <Card.Title>Text link</Card.Title>
-              </a>
-            </Card.TextLink>
-          }
-        />
-      ))}
-    </Carousel>
-  )
-}
-
-const Item = props => (
-  <div
-    {...css({
-      alignItems: 'center',
-      background: 'pink',
-      display: 'flex',
-      flexDirection: 'column',
-      height: '150px',
-      justifyContent: 'center',
-      position: 'relative'
-    })}
-    data-testid="mock-item"
-    {...props}
-  >
-    {' '}
-    <button {...css({ flex: 'none' })}>Button: {props.children}</button>
-    <p {...css({ width: '100%', textAlign: 'center', padding: 10 })}>
-      non focusable /tabIndex text
-    </p>
-    <a href="https://duckduckgo.com/" {...css({ flex: 'none' })}>
-      Link: {props.children}
-    </a>{' '}
-  </div>
-)
-const BasicExample = () => {
-  return (
-    <Carousel>
-      {new Array(21).fill(null).map((_, index) => (
-        <Item key={index}>item: {index + 1}</Item>
-      ))}
-    </Carousel>
-  )
-}
-Item.propTypes = {
-  children: PropTypes.element
-}
 export default _ => (
   <Chrome>
     <Content title="Carousel">
@@ -306,10 +241,7 @@ export default _ => (
           ]
         }}
       />
-      <SectionHeading>In-app: card example</SectionHeading>
-      <CardExample />
-      <SectionHeading>In-app: basic example</SectionHeading>
-      <BasicExample />
+
       <SectionHeading>Auto paging</SectionHeading>
       <P>The number and width of items are handled automatically.</P>
 
