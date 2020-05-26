@@ -20,6 +20,13 @@ const MockCard = props => (
         </a>
       </Card.TextLink>
     }
+    actionBar={[
+      <Card.Action
+        key="bookmark"
+        icon={<Icon.BookmarkIcon />}
+        title="Bookmark"
+      />
+    ]}
     image={<Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />}
     metadata1={[
       <Card.TextLink>
