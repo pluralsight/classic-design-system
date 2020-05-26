@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-carousel",
-  "version": "9.0.5",
+  "version": "9.0.6",
   "description": "Carousel UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
