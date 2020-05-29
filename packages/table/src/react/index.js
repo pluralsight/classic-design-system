@@ -110,6 +110,13 @@ function ColumnHeader(props) {
       {...filterReactProps(props, { tagName: Tag })}
       onClick={handleClick}
       style={style}
+      aria-sort={
+        props.sort === vars.sorts.desc
+          ? 'descending'
+          : props.sort === vars.sorts.asc
+          ? 'ascending'
+          : 'none'
+      }
     >
       {props.children}
       {props.sort && getSortIcon(props)}

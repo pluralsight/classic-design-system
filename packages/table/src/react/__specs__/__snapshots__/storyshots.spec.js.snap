@@ -450,6 +450,7 @@ exports[`Storyshots columnHeader align center 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-vb7sgq=""
       role="columnheader"
       style={Object {}}
@@ -470,6 +471,7 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-vb7sgq=""
       role="columnheader"
       style={Object {}}
@@ -504,6 +506,7 @@ exports[`Storyshots columnHeader align left 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -524,6 +527,7 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -558,6 +562,7 @@ exports[`Storyshots columnHeader align right 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1793321=""
       role="columnheader"
       style={Object {}}
@@ -578,6 +583,7 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1793321=""
       role="columnheader"
       style={Object {}}
@@ -612,6 +618,7 @@ exports[`Storyshots columnHeader custom className 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       className="some-classname"
       data-css-1whtcij=""
       role="columnheader"
@@ -633,6 +640,7 @@ exports[`Storyshots columnHeader custom style 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={
@@ -657,6 +665,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-vb7sgq=""
       role="columnheader"
       style={Object {}}
@@ -678,6 +687,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-vb7sgq=""
       role="columnheader"
       style={Object {}}
@@ -712,6 +722,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -733,6 +744,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -767,6 +779,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1793321=""
       role="columnheader"
       style={Object {}}
@@ -788,6 +801,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1793321=""
       role="columnheader"
       style={Object {}}
@@ -822,6 +836,7 @@ exports[`Storyshots columnHeader sort asc 1`] = `
     role="row"
   >
     <div
+      aria-sort="ascending"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -856,6 +871,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     role="row"
   >
     <button
+      aria-sort="ascending"
       data-css-1yecw7w=""
       onClick={[Function]}
       role="columnheader"
@@ -878,6 +894,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
       </div>
     </button>
     <button
+      aria-sort="none"
       data-css-1pztpqq=""
       onClick={[Function]}
       role="columnheader"
@@ -900,6 +917,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
       </div>
     </button>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -920,6 +938,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -954,6 +973,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     role="row"
   >
     <button
+      aria-sort="none"
       data-css-1pztpqq=""
       onClick={[Function]}
       role="columnheader"
@@ -976,6 +996,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
       </div>
     </button>
     <button
+      aria-sort="none"
       data-css-1pztpqq=""
       onClick={[Function]}
       role="columnheader"
@@ -1011,6 +1032,7 @@ exports[`Storyshots columnHeader sort desc 1`] = `
     role="row"
   >
     <div
+      aria-sort="descending"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1045,6 +1067,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     role="row"
   >
     <button
+      aria-sort="descending"
       data-css-1yecw7w=""
       onClick={[Function]}
       role="columnheader"
@@ -1067,6 +1090,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
       </div>
     </button>
     <button
+      aria-sort="none"
       data-css-1pztpqq=""
       onClick={[Function]}
       role="columnheader"
@@ -1089,6 +1113,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
       </div>
     </button>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1109,6 +1134,7 @@ exports[`Storyshots columnHeader text 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1129,6 +1155,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1150,6 +1177,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1253,6 +1281,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1274,6 +1303,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
