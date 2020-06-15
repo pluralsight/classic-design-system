@@ -236,7 +236,7 @@ export default _ => (
               </span>,
               null,
               null,
-              'triggered on header click, returns new sort direction'
+              'triggered on header click, returns event as first argument. If sort prop applied new sort direction returned as second argument '
             ]),
             PropTypes.row([
               'sort',
