@@ -11,14 +11,14 @@ describe('Switch', () => {
     expect(ref.current).not.toBeNull()
   })
 
-  it('clicking the button calls the onClick handler', () => {
+  it('clicking the label calls the onClick handler', () => {
     const handleClick = jest.fn()
     const { container } = render(
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const button = container.querySelector('button')
-    fireEvent.click(button)
+    const label = container.querySelector('label')
+    fireEvent.click(label)
 
     expect(handleClick).toHaveBeenCalled()
   })
@@ -35,14 +35,14 @@ describe('Switch', () => {
     expect(handleClick).toHaveBeenCalled()
   })
 
-  it('clicking the label calls the onClick handler', () => {
+  it('clicking the span calls the onClick handler', () => {
     const handleClick = jest.fn()
     const { container } = render(
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const label = container.querySelector('label')
-    fireEvent.click(label)
+    const span = container.querySelector('span')
+    fireEvent.click(span)
 
     expect(handleClick).toHaveBeenCalled()
   })
