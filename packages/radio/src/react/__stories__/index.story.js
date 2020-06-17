@@ -83,3 +83,17 @@ storiesOf('Radio', module)
 
     return <StateDemo />
   })
+  .add('multiple radio groups', _ => (
+    <div>
+      <Radio.Group name="group one">
+        <Radio.Button value="red" label="Red" />
+        <Radio.Button value="green" label="Green" />
+        <Radio.Button value="blue" label="Blue" />
+      </Radio.Group>
+      <Radio.Group name="group two">
+        <Radio.Button value="red" label="Red" />
+        <Radio.Button value="green" label="Green" />
+        <Radio.Button value="blue" label="Blue" />
+      </Radio.Group>
+    </div>
+  ))

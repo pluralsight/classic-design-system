@@ -88,10 +88,11 @@ export default {
     color: colorsTextIcon.highOnDark
   },
   [`.psds-text__list--type-${vars.listTypes.bulleted}`]: {
-    listStyle: 'inherit'
+    listStyle: 'initial',
+    listStyleType: 'disc'
   },
   [`.psds-text__list--type-${vars.listTypes.numbered}`]: {
-    listStyle: 'inherit',
+    listStyle: 'initial',
     listStyleType: 'decimal'
   },
 
