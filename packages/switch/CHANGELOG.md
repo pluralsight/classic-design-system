@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@6.0.8...@pluralsight/ps-design-system-switch@6.0.9) (2020-06-17)
+
+
+### Bug Fixes
+
+* **switch:** html semantics and a11y ([#1028](https://github.com/pluralsight/design-system/issues/1028)) ([88d6d49](https://github.com/pluralsight/design-system/commit/88d6d4902a013111edf11d0143fcc861e2855361))
+
+
+
+
+
 ## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@6.0.7...@pluralsight/ps-design-system-switch@6.0.8) (2020-05-07)
 
 
