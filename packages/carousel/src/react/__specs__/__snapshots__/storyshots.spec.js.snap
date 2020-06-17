@@ -1048,6 +1048,11 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
           aria-label="get previous carousel page"
           data-css-1bqkmub=""
           onClick={[Function]}
+          style={
+            Object {
+              "top": "33%",
+            }
+          }
           tabIndex={-1}
         >
           <div
@@ -1460,6 +1465,11 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
           aria-label="get next carousel page"
           data-css-1bqkmub=""
           onClick={[Function]}
+          style={
+            Object {
+              "top": "33%",
+            }
+          }
         >
           <div
             aria-hidden={true}

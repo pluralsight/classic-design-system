@@ -299,6 +299,138 @@ exports[`Storyshots Heading style override 1`] = `
 </div>
 `;
 
+exports[`Storyshots List mixed liste 1`] = `
+<div
+  data-css-12kxz7c=""
+>
+  <div
+    style={
+      Object {
+        "padding": "48px",
+      }
+    }
+  >
+    <div>
+      <ul
+        data-css-trzyei=""
+      >
+        <li>
+          one
+        </li>
+        <li>
+          two
+        </li>
+        <li>
+          <ol
+            data-css-yr69um=""
+          >
+            <li>
+              one
+            </li>
+            <li>
+              two
+            </li>
+            <li>
+              three
+            </li>
+            <li>
+              <ul
+                data-css-1mfvpjq=""
+              >
+                <li>
+                  one
+                </li>
+                <li>
+                  two
+                </li>
+                <li>
+                  three
+                </li>
+                <li>
+                  four
+                </li>
+                <li>
+                  five
+                </li>
+              </ul>
+            </li>
+            <li>
+              five
+            </li>
+          </ol>
+        </li>
+        <li>
+          four
+        </li>
+        <li>
+          five
+        </li>
+      </ul>
+      <ul
+        data-css-1mfvpjq=""
+        style={
+          Object {
+            "marginTop": 50,
+          }
+        }
+      >
+        <li>
+          one
+        </li>
+        <li>
+          two
+        </li>
+        <li>
+          <ul
+            data-css-trzyei=""
+          >
+            <li>
+              one
+            </li>
+            <li>
+              two
+            </li>
+            <li>
+              <ol
+                data-css-yr69um=""
+              >
+                <li>
+                  one
+                </li>
+                <li>
+                  two
+                </li>
+                <li>
+                  three
+                </li>
+                <li>
+                  four
+                </li>
+                <li>
+                  five
+                </li>
+              </ol>
+            </li>
+            <li>
+              four
+            </li>
+            <li>
+              five
+            </li>
+          </ul>
+        </li>
+        <li>
+          four
+        </li>
+        <li>
+          five
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots List type: bulleted 1`] = `
 <div
   data-css-12kxz7c=""
@@ -311,7 +443,7 @@ exports[`Storyshots List type: bulleted 1`] = `
     }
   >
     <ul
-      data-css-tb5q9j=""
+      data-css-trzyei=""
     >
       <li>
         one
@@ -379,7 +511,7 @@ exports[`Storyshots List type: numbered 1`] = `
     }
   >
     <ol
-      data-css-1w911qv=""
+      data-css-yr69um=""
     >
       <li>
         one
