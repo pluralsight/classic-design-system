@@ -4,7 +4,7 @@ exports[`Storyshots checked false 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -31,12 +31,12 @@ exports[`Storyshots checked false 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -44,7 +44,7 @@ exports[`Storyshots checked true 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={true}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -71,12 +71,12 @@ exports[`Storyshots checked true 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -84,7 +84,7 @@ exports[`Storyshots click large toggles 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -111,7 +111,7 @@ exports[`Storyshots click large toggles 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </button>
+  </label>
 </div>
 `;
 
@@ -119,7 +119,7 @@ exports[`Storyshots click small toggles 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -146,7 +146,7 @@ exports[`Storyshots click small toggles 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </button>
+  </label>
 </div>
 `;
 
@@ -154,7 +154,7 @@ exports[`Storyshots color blue 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={true}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -181,12 +181,12 @@ exports[`Storyshots color blue 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -194,7 +194,7 @@ exports[`Storyshots color green 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={true}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -221,12 +221,12 @@ exports[`Storyshots color green 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -234,7 +234,7 @@ exports[`Storyshots color orange 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={true}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -261,12 +261,12 @@ exports[`Storyshots color orange 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -274,7 +274,7 @@ exports[`Storyshots disabled false 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -301,7 +301,7 @@ exports[`Storyshots disabled false 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </button>
+  </label>
 </div>
 `;
 
@@ -309,7 +309,7 @@ exports[`Storyshots disabled true 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-1yf296h=""
     onBlur={[Function]}
@@ -336,7 +336,7 @@ exports[`Storyshots disabled true 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </button>
+  </label>
 </div>
 `;
 
@@ -344,7 +344,7 @@ exports[`Storyshots error false 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -371,7 +371,7 @@ exports[`Storyshots error false 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-  </button>
+  </label>
 </div>
 `;
 
@@ -379,7 +379,7 @@ exports[`Storyshots error true 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -406,12 +406,12 @@ exports[`Storyshots error true 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Clickable in error state
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -419,7 +419,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-1yf296h=""
     onBlur={[Function]}
@@ -446,12 +446,12 @@ exports[`Storyshots error true w/ disabled 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Such errors
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -459,7 +459,7 @@ exports[`Storyshots label large left 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-1u14hec=""
     onBlur={[Function]}
@@ -486,12 +486,12 @@ exports[`Storyshots label large left 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-16fknc=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -499,7 +499,7 @@ exports[`Storyshots label large right 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -526,12 +526,12 @@ exports[`Storyshots label large right 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -539,7 +539,7 @@ exports[`Storyshots label small left 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-1u14hec=""
     onBlur={[Function]}
@@ -566,12 +566,12 @@ exports[`Storyshots label small left 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-i4my9=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -579,7 +579,7 @@ exports[`Storyshots label small right 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -606,12 +606,12 @@ exports[`Storyshots label small right 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-y6ldsm=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -619,7 +619,7 @@ exports[`Storyshots size large 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -646,12 +646,12 @@ exports[`Storyshots size large 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-1oms9gl=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
 
@@ -659,7 +659,7 @@ exports[`Storyshots size small 1`] = `
 <div
   data-css-12kxz7c=""
 >
-  <button
+  <label
     aria-checked={false}
     data-css-nq9iqf=""
     onBlur={[Function]}
@@ -686,11 +686,11 @@ exports[`Storyshots size small 1`] = `
       tabIndex="-1"
       type="checkbox"
     />
-    <label
+    <span
       data-css-y6ldsm=""
     >
       Click me
-    </label>
-  </button>
+    </span>
+  </label>
 </div>
 `;
