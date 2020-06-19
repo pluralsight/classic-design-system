@@ -16,22 +16,24 @@ const styles = {
   icon: () => css(stylesheet['.psds-navitem__icon']),
   text: () => css(stylesheet['.psds-navitem__text'])
 }
-// TODO
-// href
-// dynamic tag
-// theme
+// TODO theme
 
 const NavItem = React.forwardRef((props, forwardedRef) => {
   // const themeName = useTheme()
+  const tagName = props.href ? 'a' : 'button'
 
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  return (
-    <button ref={ref} {...styles.navitem(props)} {...filterReactProps(props)}>
-      <span {...styles.icon()}>{props.icon}</span>
-      <span {...styles.text()}>{props.children}</span>
-    </button>
+  return React.createElement(
+    tagName,
+    {
+      ...styles.navitem(props),
+      ...filterReactProps(props, { tagName }),
+      ref
+    },
+    <span {...styles.icon()}>{props.icon}</span>,
+    <span {...styles.text()}>{props.children}</span>
   )
 })
 NavItem.displayName = 'NavItem'

@@ -12,3 +12,8 @@ storiesOf('NavItem', module)
       Active state
     </NavItem>
   ))
+  .add('link', _ => (
+    <NavItem href="https://jaketrent.com" icon={<HomeIcon />}>
+      Link to web
+    </NavItem>
+  ))
