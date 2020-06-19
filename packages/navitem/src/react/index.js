@@ -2,7 +2,7 @@ import { css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+// import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import stylesheet from '../css/index.js'
@@ -17,28 +17,24 @@ const styles = {
   text: () => css(stylesheet['.psds-navitem__text'])
 }
 // TODO
-// icon
-// active
 // href
 // dynamic tag
+// theme
 
 const NavItem = React.forwardRef((props, forwardedRef) => {
-  const themeName = useTheme()
+  // const themeName = useTheme()
 
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
   return (
-    <button
-      ref={ref}
-      {...styles.navitem(themeName, props)}
-      {...filterReactProps(props)}
-    >
+    <button ref={ref} {...styles.navitem(props)} {...filterReactProps(props)}>
       <span {...styles.icon()}>{props.icon}</span>
       <span {...styles.text()}>{props.children}</span>
     </button>
   )
 })
+NavItem.displayName = 'NavItem'
 
 NavItem.propTypes = {
   active: PropTypes.bool,

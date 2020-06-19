@@ -40,7 +40,7 @@ export default {
       padding: 0
     },
 
-    ':after': {
+    '&:after': {
       background: colorsGradient.skillsBackground,
       bottom: '-1px',
       content: ' ',
@@ -64,7 +64,7 @@ export default {
   '.psds-navitem--active': {
     color: colorsTextIcon.highOnDark,
 
-    ':after': {
+    '&:after': {
       transition: `width ${motion.speedXFast} ease-out`,
       width: '100%'
     }

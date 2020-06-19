@@ -7,3 +7,8 @@ import NavItem from '../index.js'
 storiesOf('NavItem', module)
   .add('text only', _ => <NavItem>Text only</NavItem>)
   .add('icon', _ => <NavItem icon={<HomeIcon />}>With icon</NavItem>)
+  .add('active', _ => (
+    <NavItem active icon={<HomeIcon />}>
+      Active state
+    </NavItem>
+  ))
