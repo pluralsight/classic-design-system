@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots NavItem TODO 1`] = `<div />`;
+
+exports[`Storyshots NavItem text only 1`] = `
+<button
+  data-css-15sudsv=""
+>
+  <span />
+  <span>
+    Text only
+  </span>
+</button>
+`;

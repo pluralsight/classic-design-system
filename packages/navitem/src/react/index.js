@@ -8,9 +8,16 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  navItem: (themeName, props) => css(stylesheet['.psds-navitem'])
+  navitem: ({ active }) =>
+    css(
+      stylesheet['.psds-navitem'],
+      active && stylesheet['.psds-navitem--active']
+    ),
+  icon: () => css(stylesheet['.psds-navitem__icon']),
+  text: () => css(stylesheet['.psds-navitem__text'])
 }
 // TODO
+// icon
 // active
 // href
 // dynamic tag
@@ -22,16 +29,20 @@ const NavItem = React.forwardRef((props, forwardedRef) => {
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
   return (
-    <div
+    <button
       ref={ref}
-      {...styles.navItem(themeName, props)}
+      {...styles.navitem(themeName, props)}
       {...filterReactProps(props)}
-    />
+    >
+      <span {...styles.icon()}>{props.icon}</span>
+      <span {...styles.text()}>{props.children}</span>
+    </button>
   )
 })
 
 NavItem.propTypes = {
   active: PropTypes.bool,
+  children: PropTypes.node,
   href: PropTypes.string,
   icon: PropTypes.element
 }

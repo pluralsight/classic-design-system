@@ -5,9 +5,7 @@ import NavItem from '../index.js'
 
 describe('NavItem', () => {
   it('renders', () => {
-    const { getByTestId } = render(
-      <NavItem data-testid="undertest" />
-    )
+    const { getByTestId } = render(<NavItem data-testid="undertest" />)
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
@@ -15,9 +13,7 @@ describe('NavItem', () => {
   it('forwards refs', () => {
     const ref = React.createRef()
 
-    const { getByTestId } = render(
-      <NavItem ref={ref} />
-    )
+    render(<NavItem ref={ref} />)
 
     expect(ref.current).not.toBeNull()
   })
