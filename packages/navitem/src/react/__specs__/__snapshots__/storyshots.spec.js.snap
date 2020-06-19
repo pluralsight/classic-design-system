@@ -2,6 +2,32 @@
 
 exports[`Storyshots NavItem TODO 1`] = `<div />`;
 
+exports[`Storyshots NavItem icon 1`] = `
+<button
+  data-css-1x7oio0=""
+  icon={<CheckIcon />}
+>
+  <span>
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="check icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
+        />
+      </svg>
+    </div>
+  </span>
+  <span>
+    Text only
+  </span>
+</button>
+`;
+
 exports[`Storyshots NavItem text only 1`] = `
 <button
   data-css-15sudsv=""

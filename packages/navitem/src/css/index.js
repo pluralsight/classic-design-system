@@ -23,11 +23,11 @@ export default {
     color: colorsTextIcon.lowOnDark,
     display: 'flex',
     flexDirection: 'column',
-    fontSize: type.fontSizeMedium,
-    fontWeight: type.fontWeightMedium,
+    fontSize: '10px',
+    fontWeight: type.fontWeightBold,
     height: `64px`,
     justifyContent: 'center',
-    lineHeight: '1em',
+    lineHeight: '16px',
     padding: `0 ${layout.spacingMedium}`,
     position: 'relative',
     textDecoration: 'none',
@@ -69,6 +69,8 @@ export default {
       width: '100%'
     }
   },
-  '.psds-navitem__icon': {},
+  '.psds-navitem__icon': {
+    marginBottom: '6px'
+  },
   '.psds-navitem__text': {}
 }
