@@ -92,7 +92,7 @@ export default {
     background: 'transparent',
     border: 'none',
     color: colorsTextIcon.lowOnDark,
-    padding: layout.spacingXSmall,
+    padding: `${layout.spacingXSmall} 0`,
     borderRadius: '2px',
     textDecoration: 'none',
     cursor: 'pointer',
@@ -114,18 +114,15 @@ export default {
   '.psds-navitem__button--selected': {
     color: colorsTextIcon.highOnDark
   },
-  '.psds-navitem__button--menu': {
-    paddingRight: '2px'
-  },
-  '.psds-navitem__caret': {
-    lineHeight: '0',
-    marginLeft: layout.spacingXXSmall
-  },
   '.psds-navitem__container': {
     display: 'inline-block'
   },
 
   // horz
+  '.psds-navitem__horz-caret': {
+    lineHeight: '0',
+    marginLeft: layout.spacingXXSmall
+  },
   '.psds-navitem__horz-icon': {
     lineHeight: '0',
     marginRight: layout.spacingSmall
@@ -140,16 +137,39 @@ export default {
   '.psds-navitem__horz-layout': {
     display: 'inline-flex',
     alignItems: 'center',
-    height: `calc(40px - ${layout.spacingXSmall} * 2)`
+    height: `calc(40px - ${layout.spacingXSmall} * 2)`,
+    padding: `0 ${layout.spacingXSmall}`
+  },
+  '.psds-navitem__horz-layout--menu': {
+    paddingRight: '2px'
   },
 
-  // vertical
-  '.psds-navitem__vertical-label': {
+  // vert
+  '.psds-navitem__vert-caret': {
+    position: 'absolute',
+    top: '50%',
+    right: layout.spacingXSmall,
+    transform: 'translateY(-50%)'
+  },
+  '.psds-navitem__vert-icon': {
+    marginBottom: layout.spacingXXSmall
+  },
+  '.psds-navitem__vert-label': {
     fontWeight: type.fontWeightBold,
     fontSize: '10px',
     lineHeight: '12px',
     whiteSpace: 'nowrap',
     width: `calc(76px - ${layout.spacingXXSmall} * 2)`,
-    textOverflow: 'ellipsis'
+    textOverflow: 'ellipsis',
+    textAlign: 'center'
+  },
+  '.psds-navitem__vert-layout': {
+    position: 'relative',
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    height: `calc(48px - ${layout.spacingXSmall} * 2)`,
+    width: '76px'
   }
 }

@@ -4,19 +4,46 @@ import React from 'react'
 
 import NavItem from '../index.js'
 
-storiesOf('NavItem', module)
-  .add('text only', _ => <NavItem>Text only</NavItem>)
-  .add('icon', _ => <NavItem icon={<HomeIcon />}>With icon</NavItem>)
-  .add('selected', _ => (
-    <NavItem selected icon={<HomeIcon />}>
-      Selected
-    </NavItem>
+function Grid(props) {
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 200px)',
+        gap: '24px'
+      }}
+    >
+      {props.children}
+    </div>
+  )
+}
+
+const stories = storiesOf('NavItem', module)
+
+Object.keys(NavItem.alignments).forEach(key =>
+  stories.add(NavItem.alignments[key], _ => (
+    <Grid>
+      <NavItem alignment={NavItem.alignments[key]}>Text only</NavItem>
+      <NavItem alignment={NavItem.alignments[key]} icon={<HomeIcon />}>
+        With icon
+      </NavItem>
+      <NavItem alignment={NavItem.alignments[key]} selected icon={<HomeIcon />}>
+        Selected
+      </NavItem>
+      <NavItem
+        alignment={NavItem.alignments[key]}
+        href="https://jaketrent.com"
+        icon={<HomeIcon />}
+      >
+        Link to web
+      </NavItem>
+      <NavItem
+        alignment={NavItem.alignments[key]}
+        menu={<div>Placeholder menu</div>}
+        icon={<HomeIcon />}
+      >
+        With menu
+      </NavItem>
+    </Grid>
   ))
-  .add('link', _ => (
-    <NavItem href="https://jaketrent.com" icon={<HomeIcon />}>
-      Link to web
-    </NavItem>
-  ))
-  .add('menu', _ => (
-    <NavItem menu={<div>Placeholder menu</div>}>With menu</NavItem>
-  ))
+)

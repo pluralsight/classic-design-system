@@ -1,4 +1,3 @@
-import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { css } from 'glamor'
@@ -16,10 +15,8 @@ const styles = {
   button: props =>
     css(
       stylesheet['.psds-navitem__button'],
-      props.menu && stylesheet['.psds-navitem__button--menu'],
       props.selected && stylesheet['.psds-navitem__button--selected']
     ),
-  caret: () => css(stylesheet['.psds-navitem__caret']),
   container: () => css(stylesheet['.psds-navitem__container'])
 }
 
@@ -54,17 +51,6 @@ Button.displayName = 'NavItemButton'
 Button.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string
-}
-
-export function Caret(props) {
-  return props.menu ? (
-    <span className={styles.caret()}>
-      <CaretDownIcon size={CaretDownIcon.sizes.small} />
-    </span>
-  ) : null
-}
-Caret.propTypes = {
-  menu: PropTypes.element
 }
 
 export function Container(props) {

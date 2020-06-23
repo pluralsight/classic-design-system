@@ -1,18 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Bar, Button, Caret, Container } from './common.js'
-import { HorzIcon, HorzLabel, HorzLayout } from './horz.js'
+import { alignments } from '../vars/index.js'
+import { Bar, Button, Container } from './common.js'
+import { HorzLayout } from './horz.js'
+import { VertLayout } from './vert.js'
 
 const NavItem = React.forwardRef((props, forwardedRef) => {
   return (
     <Container>
       <Button {...props} ref={forwardedRef}>
-        <HorzLayout>
-          <HorzIcon {...props} />
-          <HorzLabel>{props.children}</HorzLabel>
-          <Caret {...props} />
-        </HorzLayout>
+        {props.alignment === 'vertical' ? (
+          <VertLayout {...props} />
+        ) : (
+          <HorzLayout {...props} />
+        )}
       </Button>
       <Bar {...props} />
     </Container>
@@ -20,6 +22,7 @@ const NavItem = React.forwardRef((props, forwardedRef) => {
 })
 NavItem.displayName = 'NavItem'
 NavItem.propTypes = {
+  alignment: PropTypes.oneOf(Object.keys(alignments).map(k => alignments[k])),
   children: PropTypes.node,
   href: PropTypes.string,
   icon: PropTypes.element,
@@ -27,7 +30,9 @@ NavItem.propTypes = {
   selected: PropTypes.bool
 }
 NavItem.defaultProps = {
+  alignment: 'horizontal',
   selected: false
 }
+NavItem.alignments = alignments
 
 export default NavItem
