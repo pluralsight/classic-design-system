@@ -10,7 +10,8 @@ const styles = {
   bar: props =>
     css(
       stylesheet['.psds-navitem__bar'],
-      props.selected && stylesheet['.psds-navitem__bar--selected']
+      props.selected && stylesheet['.psds-navitem__bar--selected'],
+      stylesFor('bar', props)
     ),
   button: props =>
     css(
@@ -58,4 +59,8 @@ export function Container(props) {
 }
 Container.propTypes = {
   children: PropTypes.node
+}
+
+export function stylesFor(elementId, props) {
+  return ((props && props.styles) || {})[elementId]
 }

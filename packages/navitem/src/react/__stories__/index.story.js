@@ -1,3 +1,4 @@
+import { colorsGradient } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
@@ -27,9 +28,6 @@ Object.keys(NavItem.alignments).forEach(key =>
       <NavItem alignment={NavItem.alignments[key]} icon={<HomeIcon />}>
         With icon
       </NavItem>
-      <NavItem alignment={NavItem.alignments[key]} selected icon={<HomeIcon />}>
-        Selected
-      </NavItem>
       <NavItem
         alignment={NavItem.alignments[key]}
         href="https://jaketrent.com"
@@ -43,6 +41,25 @@ Object.keys(NavItem.alignments).forEach(key =>
         icon={<HomeIcon />}
       >
         With menu
+      </NavItem>
+      <NavItem alignment={NavItem.alignments[key]} selected icon={<HomeIcon />}>
+        Selected
+      </NavItem>
+      <NavItem
+        styles={{ bar: { background: colorsGradient.skillsBackground } }}
+        alignment={NavItem.alignments[key]}
+        selected
+        icon={<HomeIcon />}
+      >
+        Skills
+      </NavItem>
+      <NavItem
+        styles={{ bar: { background: colorsGradient.flowBackground } }}
+        alignment={NavItem.alignments[key]}
+        selected
+        icon={<HomeIcon />}
+      >
+        Flow
       </NavItem>
     </Grid>
   ))

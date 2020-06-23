@@ -6,7 +6,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
     Object {
       "display": "grid",
       "gap": "24px",
-      "gridTemplateColumns": "repeat(3, 200px)",
+      "gridTemplateColumns": "repeat(3, auto)",
     }
   }
 >
@@ -21,12 +21,12 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-132ee93=""
+        data-css-11n5d38=""
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-50rv4t": "",
             }
           }
         >
@@ -61,13 +61,13 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-132ee93=""
+        data-css-11n5d38=""
         icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-50rv4t": "",
             }
           }
         >
@@ -124,79 +124,15 @@ exports[`Storyshots NavItem horizontal 1`] = `
     <div
       data-css-1ij5lym=""
     >
-      <button
-        data-css-1gpt87r=""
-        icon={<HomeIcon />}
-      >
-        <span
-          className={
-            Object {
-              "data-css-mjfxmh": "",
-            }
-          }
-        >
-          <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="home icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </span>
-          <span
-            className={
-              Object {
-                "data-css-1c3u483": "",
-              }
-            }
-          >
-            Selected
-          </span>
-        </span>
-      </button>
-    </div>
-    <div
-      className={
-        Object {
-          "data-css-1x5c7ce": "",
-        }
-      }
-    />
-  </span>
-  <span
-    className={
-      Object {
-        "data-css-w0yocm": "",
-      }
-    }
-  >
-    <div
-      data-css-1ij5lym=""
-    >
       <a
-        data-css-132ee93=""
+        data-css-11n5d38=""
         href="https://jaketrent.com"
         icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-50rv4t": "",
             }
           }
         >
@@ -254,15 +190,39 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-133qu0z=""
+        data-css-11n5d38=""
+        icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-5vea0s": "",
             }
           }
         >
+          <span
+            className={
+              Object {
+                "data-css-1o9ctb7": "",
+              }
+            }
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
           <span
             className={
               Object {
@@ -304,18 +264,6 @@ exports[`Storyshots NavItem horizontal 1`] = `
       }
     />
   </span>
-</div>
-`;
-
-exports[`Storyshots NavItem horziontal 1`] = `
-<div
-  style={
-    Object {
-      "display": "grid",
-      "gridTemplateColumns": "repeat(3, 200px)",
-    }
-  }
->
   <span
     className={
       Object {
@@ -327,117 +275,13 @@ exports[`Storyshots NavItem horziontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-132ee93=""
-      >
-        <span
-          className={
-            Object {
-              "data-css-mjfxmh": "",
-            }
-          }
-        >
-          <span
-            className={
-              Object {
-                "data-css-1c3u483": "",
-              }
-            }
-          >
-            Text only
-          </span>
-        </span>
-      </button>
-    </div>
-    <div
-      className={
-        Object {
-          "data-css-1pe8c3g": "",
-        }
-      }
-    />
-  </span>
-  <span
-    className={
-      Object {
-        "data-css-w0yocm": "",
-      }
-    }
-  >
-    <div
-      data-css-1ij5lym=""
-    >
-      <button
-        data-css-132ee93=""
+        data-css-15wi3dl=""
         icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
-            }
-          }
-        >
-          <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="home icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </span>
-          <span
-            className={
-              Object {
-                "data-css-1c3u483": "",
-              }
-            }
-          >
-            With icon
-          </span>
-        </span>
-      </button>
-    </div>
-    <div
-      className={
-        Object {
-          "data-css-1pe8c3g": "",
-        }
-      }
-    />
-  </span>
-  <span
-    className={
-      Object {
-        "data-css-w0yocm": "",
-      }
-    }
-  >
-    <div
-      data-css-1ij5lym=""
-    >
-      <button
-        data-css-1gpt87r=""
-        icon={<HomeIcon />}
-      >
-        <span
-          className={
-            Object {
-              "data-css-mjfxmh": "",
+              "data-css-50rv4t": "",
             }
           }
         >
@@ -494,15 +338,14 @@ exports[`Storyshots NavItem horziontal 1`] = `
     <div
       data-css-1ij5lym=""
     >
-      <a
-        data-css-132ee93=""
-        href="https://jaketrent.com"
+      <button
+        data-css-15wi3dl=""
         icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-50rv4t": "",
             }
           }
         >
@@ -536,15 +379,15 @@ exports[`Storyshots NavItem horziontal 1`] = `
               }
             }
           >
-            Link to web
+            Skills
           </span>
         </span>
-      </a>
+      </button>
     </div>
     <div
       className={
         Object {
-          "data-css-1pe8c3g": "",
+          "data-css-1y0klpa": "",
         }
       }
     />
@@ -560,15 +403,39 @@ exports[`Storyshots NavItem horziontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-133qu0z=""
+        data-css-15wi3dl=""
+        icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-50rv4t": "",
             }
           }
         >
+          <span
+            className={
+              Object {
+                "data-css-1o9ctb7": "",
+              }
+            }
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
           <span
             className={
               Object {
@@ -576,28 +443,7 @@ exports[`Storyshots NavItem horziontal 1`] = `
               }
             }
           >
-            With menu
-          </span>
-          <span
-            className={
-              Object {
-                "data-css-1cbyl54": "",
-              }
-            }
-          >
-            <div
-              data-css-1gzzcm2=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
+            Flow
           </span>
         </span>
       </button>
@@ -605,281 +451,12 @@ exports[`Storyshots NavItem horziontal 1`] = `
     <div
       className={
         Object {
-          "data-css-1pe8c3g": "",
+          "data-css-ec9853": "",
         }
       }
     />
   </span>
 </div>
-`;
-
-exports[`Storyshots NavItem icon 1`] = `
-<span
-  className={
-    Object {
-      "data-css-w0yocm": "",
-    }
-  }
->
-  <div
-    data-css-1ij5lym=""
-  >
-    <button
-      data-css-1mpln1q=""
-      icon={<HomeIcon />}
-    >
-      <span
-        className={
-          Object {
-            "data-css-pfebor": "",
-          }
-        }
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="home icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </span>
-      <span
-        className={
-          Object {
-            "data-css-1c3u483": "",
-          }
-        }
-      >
-        With icon
-      </span>
-    </button>
-  </div>
-  <div
-    className={
-      Object {
-        "data-css-1pe8c3g": "",
-      }
-    }
-  />
-</span>
-`;
-
-exports[`Storyshots NavItem link 1`] = `
-<span
-  className={
-    Object {
-      "data-css-w0yocm": "",
-    }
-  }
->
-  <div
-    data-css-1ij5lym=""
-  >
-    <a
-      data-css-1mpln1q=""
-      href="https://jaketrent.com"
-      icon={<HomeIcon />}
-    >
-      <span
-        className={
-          Object {
-            "data-css-pfebor": "",
-          }
-        }
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="home icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </span>
-      <span
-        className={
-          Object {
-            "data-css-1c3u483": "",
-          }
-        }
-      >
-        Link to web
-      </span>
-    </a>
-  </div>
-  <div
-    className={
-      Object {
-        "data-css-1pe8c3g": "",
-      }
-    }
-  />
-</span>
-`;
-
-exports[`Storyshots NavItem menu 1`] = `
-<span
-  className={
-    Object {
-      "data-css-w0yocm": "",
-    }
-  }
->
-  <div
-    data-css-1ij5lym=""
-  >
-    <button
-      data-css-1ekr6yp=""
-    >
-      <span
-        className={
-          Object {
-            "data-css-1c3u483": "",
-          }
-        }
-      >
-        With menu
-      </span>
-      <span
-        className={
-          Object {
-            "data-css-1cbyl54": "",
-          }
-        }
-      >
-        <div
-          data-css-1gzzcm2=""
-        >
-          <svg
-            aria-label="caret down icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-            />
-          </svg>
-        </div>
-      </span>
-    </button>
-  </div>
-  <div
-    className={
-      Object {
-        "data-css-1pe8c3g": "",
-      }
-    }
-  />
-</span>
-`;
-
-exports[`Storyshots NavItem selected 1`] = `
-<span
-  className={
-    Object {
-      "data-css-w0yocm": "",
-    }
-  }
->
-  <div
-    data-css-1ij5lym=""
-  >
-    <button
-      data-css-1mpln1q=""
-      icon={<HomeIcon />}
-    >
-      <span
-        className={
-          Object {
-            "data-css-pfebor": "",
-          }
-        }
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="home icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </span>
-      <span
-        className={
-          Object {
-            "data-css-1c3u483": "",
-          }
-        }
-      >
-        Selected
-      </span>
-    </button>
-  </div>
-  <div
-    className={
-      Object {
-        "data-css-1x5c7ce": "",
-      }
-    }
-  />
-</span>
-`;
-
-exports[`Storyshots NavItem text only 1`] = `
-<span
-  className={
-    Object {
-      "data-css-w0yocm": "",
-    }
-  }
->
-  <div
-    data-css-1ij5lym=""
-  >
-    <button
-      data-css-1mpln1q=""
-    >
-      <span
-        className={
-          Object {
-            "data-css-1c3u483": "",
-          }
-        }
-      >
-        Text only
-      </span>
-    </button>
-  </div>
-  <div
-    className={
-      Object {
-        "data-css-1pe8c3g": "",
-      }
-    }
-  />
-</span>
 `;
 
 exports[`Storyshots NavItem vertical 1`] = `
@@ -888,7 +465,7 @@ exports[`Storyshots NavItem vertical 1`] = `
     Object {
       "display": "grid",
       "gap": "24px",
-      "gridTemplateColumns": "repeat(3, 200px)",
+      "gridTemplateColumns": "repeat(3, auto)",
     }
   }
 >
@@ -903,19 +480,19 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-132ee93=""
+        data-css-11n5d38=""
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-nhvcy": "",
             }
           }
         >
           <span
             className={
               Object {
-                "data-css-1c3u483": "",
+                "data-css-1442w2z": "",
               }
             }
           >
@@ -943,20 +520,20 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-132ee93=""
+        data-css-11n5d38=""
         icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-nhvcy": "",
             }
           }
         >
           <span
             className={
               Object {
-                "data-css-1o9ctb7": "",
+                "data-css-tx38pc": "",
               }
             }
           >
@@ -979,7 +556,7 @@ exports[`Storyshots NavItem vertical 1`] = `
           <span
             className={
               Object {
-                "data-css-1c3u483": "",
+                "data-css-1442w2z": "",
               }
             }
           >
@@ -1006,86 +583,22 @@ exports[`Storyshots NavItem vertical 1`] = `
     <div
       data-css-1ij5lym=""
     >
-      <button
-        data-css-1gpt87r=""
-        icon={<HomeIcon />}
-      >
-        <span
-          className={
-            Object {
-              "data-css-mjfxmh": "",
-            }
-          }
-        >
-          <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="home icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </span>
-          <span
-            className={
-              Object {
-                "data-css-1c3u483": "",
-              }
-            }
-          >
-            Selected
-          </span>
-        </span>
-      </button>
-    </div>
-    <div
-      className={
-        Object {
-          "data-css-1x5c7ce": "",
-        }
-      }
-    />
-  </span>
-  <span
-    className={
-      Object {
-        "data-css-w0yocm": "",
-      }
-    }
-  >
-    <div
-      data-css-1ij5lym=""
-    >
       <a
-        data-css-132ee93=""
+        data-css-11n5d38=""
         href="https://jaketrent.com"
         icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-nhvcy": "",
             }
           }
         >
           <span
             className={
               Object {
-                "data-css-1o9ctb7": "",
+                "data-css-tx38pc": "",
               }
             }
           >
@@ -1108,7 +621,7 @@ exports[`Storyshots NavItem vertical 1`] = `
           <span
             className={
               Object {
-                "data-css-1c3u483": "",
+                "data-css-1442w2z": "",
               }
             }
           >
@@ -1136,19 +649,43 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-133qu0z=""
+        data-css-11n5d38=""
+        icon={<HomeIcon />}
       >
         <span
           className={
             Object {
-              "data-css-mjfxmh": "",
+              "data-css-nhvcy": "",
             }
           }
         >
           <span
             className={
               Object {
-                "data-css-1c3u483": "",
+                "data-css-tx38pc": "",
+              }
+            }
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
+          <span
+            className={
+              Object {
+                "data-css-1442w2z": "",
               }
             }
           >
@@ -1157,7 +694,7 @@ exports[`Storyshots NavItem vertical 1`] = `
           <span
             className={
               Object {
-                "data-css-1cbyl54": "",
+                "data-css-mz08e": "",
               }
             }
           >
@@ -1182,6 +719,198 @@ exports[`Storyshots NavItem vertical 1`] = `
       className={
         Object {
           "data-css-1pe8c3g": "",
+        }
+      }
+    />
+  </span>
+  <span
+    className={
+      Object {
+        "data-css-w0yocm": "",
+      }
+    }
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <button
+        data-css-15wi3dl=""
+        icon={<HomeIcon />}
+      >
+        <span
+          className={
+            Object {
+              "data-css-nhvcy": "",
+            }
+          }
+        >
+          <span
+            className={
+              Object {
+                "data-css-tx38pc": "",
+              }
+            }
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
+          <span
+            className={
+              Object {
+                "data-css-1442w2z": "",
+              }
+            }
+          >
+            Selected
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      className={
+        Object {
+          "data-css-1x5c7ce": "",
+        }
+      }
+    />
+  </span>
+  <span
+    className={
+      Object {
+        "data-css-w0yocm": "",
+      }
+    }
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <button
+        data-css-15wi3dl=""
+        icon={<HomeIcon />}
+      >
+        <span
+          className={
+            Object {
+              "data-css-nhvcy": "",
+            }
+          }
+        >
+          <span
+            className={
+              Object {
+                "data-css-tx38pc": "",
+              }
+            }
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
+          <span
+            className={
+              Object {
+                "data-css-1442w2z": "",
+              }
+            }
+          >
+            Skills
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      className={
+        Object {
+          "data-css-1y0klpa": "",
+        }
+      }
+    />
+  </span>
+  <span
+    className={
+      Object {
+        "data-css-w0yocm": "",
+      }
+    }
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <button
+        data-css-15wi3dl=""
+        icon={<HomeIcon />}
+      >
+        <span
+          className={
+            Object {
+              "data-css-nhvcy": "",
+            }
+          }
+        >
+          <span
+            className={
+              Object {
+                "data-css-tx38pc": "",
+              }
+            }
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
+          <span
+            className={
+              Object {
+                "data-css-1442w2z": "",
+              }
+            }
+          >
+            Flow
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      className={
+        Object {
+          "data-css-ec9853": "",
         }
       }
     />

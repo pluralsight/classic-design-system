@@ -23,6 +23,7 @@ const NavItem = React.forwardRef((props, forwardedRef) => {
 NavItem.displayName = 'NavItem'
 NavItem.propTypes = {
   alignment: PropTypes.oneOf(Object.keys(alignments).map(k => alignments[k])),
+  bar: PropTypes.element,
   children: PropTypes.node,
   href: PropTypes.string,
   icon: PropTypes.element,
