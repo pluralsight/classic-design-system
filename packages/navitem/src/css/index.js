@@ -1,10 +1,13 @@
 import {
+  colorsBackgroundUtility,
   colorsGradient,
   colorsTextIcon,
+  colorsWhite,
   layout,
   motion,
   type
 } from '@pluralsight/ps-design-system-core'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 export default {
   '.psds-navitem': {
@@ -72,5 +75,63 @@ export default {
   '.psds-navitem__icon': {
     marginBottom: '6px'
   },
-  '.psds-navitem__text': {}
+  '.psds-navitem__text': {},
+
+  // common
+  '.psds-navitem__bar': {
+    height: '2px',
+    marginTop: '6px',
+    width: '100%',
+    background: 'transparent'
+  },
+  '.psds-navitem__bar--selected': {
+    background: colorsWhite
+  },
+  '.psds-navitem__button': {
+    display: 'inline-flex',
+    alignItems: 'center',
+    background: 'transparent',
+    border: 'none',
+    color: colorsTextIcon.lowOnDark,
+    height: '40px',
+    padding: layout.spacingXSmall,
+    borderRadius: '2px',
+    textDecoration: 'none',
+    cursor: 'pointer',
+
+    '&:hover, &:focus, &:active': {
+      color: colorsTextIcon.highOnDark
+    },
+    '&:hover, &:focus': {
+      background: transparentize(0.85, colorsBackgroundUtility.base)
+    },
+    '&:focus': {
+      outline: 'none'
+    },
+    '&:active': {
+      background: transparentize(0.75, colorsBackgroundUtility.base)
+    }
+  },
+  '.psds-navitem__button--menu': {
+    paddingRight: '2px'
+  },
+  '.psds-navitem__caret': {
+    lineHeight: '0',
+    marginLeft: layout.spacingXXSmall
+  },
+  '.psds-navitem__container': {
+    display: 'inline-block'
+  },
+
+  // horizontal
+  '.psds-navitem__icon': {
+    marginRight: layout.spacingSmall
+  },
+  '.psds-navitem__label': {
+    fontWeight: type.fontWeightBold,
+    fontSize: type.fontSizeSmall,
+    lineHeight: type.lineHeightStandard,
+    letterSpacing: '-1%',
+    whiteSpace: 'nowrap'
+  }
 }

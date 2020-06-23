@@ -1,101 +1,270 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots NavItem TODO 1`] = `<div />`;
-
-exports[`Storyshots NavItem active 1`] = `
-<button
-  data-css-h9nsfk=""
-  icon={<HomeIcon />}
->
-  <span
-    data-css-1rjw4v0=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="home icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-  </span>
-  <span>
-    Active state
-  </span>
-</button>
-`;
-
 exports[`Storyshots NavItem icon 1`] = `
-<button
-  data-css-1x7oio0=""
-  icon={<CheckIcon />}
+<span
+  className={
+    Object {
+      "data-css-w0yocm": "",
+    }
+  }
 >
-  <span>
-    <div
-      data-css-7dab2f=""
+  <div
+    data-css-1ij5lym=""
+  >
+    <button
+      data-css-1mpln1q=""
+      icon={<HomeIcon />}
     >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <span
+        className={
+          Object {
+            "data-css-pfebor": "",
+          }
+        }
       >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </span>
-  <span>
-    Text only
-  </span>
-</button>
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="home icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </span>
+      <span
+        className={
+          Object {
+            "data-css-1c3u483": "",
+          }
+        }
+      >
+        With icon
+      </span>
+    </button>
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1pe8c3g": "",
+      }
+    }
+  />
+</span>
 `;
 
 exports[`Storyshots NavItem link 1`] = `
-<a
-  data-css-h9nsfk=""
-  href="https://jaketrent.com"
-  icon={<HomeIcon />}
+<span
+  className={
+    Object {
+      "data-css-w0yocm": "",
+    }
+  }
 >
-  <span
-    data-css-1rjw4v0=""
+  <div
+    data-css-1ij5lym=""
   >
-    <div
-      data-css-7dab2f=""
+    <a
+      data-css-1mpln1q=""
+      href="https://jaketrent.com"
+      icon={<HomeIcon />}
     >
-      <svg
-        aria-label="home icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <span
+        className={
+          Object {
+            "data-css-pfebor": "",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-  </span>
-  <span>
-    Link to web
-  </span>
-</a>
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="home icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </span>
+      <span
+        className={
+          Object {
+            "data-css-1c3u483": "",
+          }
+        }
+      >
+        Link to web
+      </span>
+    </a>
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1pe8c3g": "",
+      }
+    }
+  />
+</span>
+`;
+
+exports[`Storyshots NavItem menu 1`] = `
+<span
+  className={
+    Object {
+      "data-css-w0yocm": "",
+    }
+  }
+>
+  <div
+    data-css-1ij5lym=""
+  >
+    <button
+      data-css-1ekr6yp=""
+    >
+      <span
+        className={
+          Object {
+            "data-css-1c3u483": "",
+          }
+        }
+      >
+        With menu
+      </span>
+      <span
+        className={
+          Object {
+            "data-css-1cbyl54": "",
+          }
+        }
+      >
+        <div
+          data-css-1gzzcm2=""
+        >
+          <svg
+            aria-label="caret down icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            />
+          </svg>
+        </div>
+      </span>
+    </button>
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1pe8c3g": "",
+      }
+    }
+  />
+</span>
+`;
+
+exports[`Storyshots NavItem selected 1`] = `
+<span
+  className={
+    Object {
+      "data-css-w0yocm": "",
+    }
+  }
+>
+  <div
+    data-css-1ij5lym=""
+  >
+    <button
+      data-css-1mpln1q=""
+      icon={<HomeIcon />}
+    >
+      <span
+        className={
+          Object {
+            "data-css-pfebor": "",
+          }
+        }
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="home icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </span>
+      <span
+        className={
+          Object {
+            "data-css-1c3u483": "",
+          }
+        }
+      >
+        Selected
+      </span>
+    </button>
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1x5c7ce": "",
+      }
+    }
+  />
+</span>
 `;
 
 exports[`Storyshots NavItem text only 1`] = `
-<button
-  data-css-15sudsv=""
+<span
+  className={
+    Object {
+      "data-css-w0yocm": "",
+    }
+  }
 >
-  <span />
-  <span>
-    Text only
-  </span>
-</button>
+  <div
+    data-css-1ij5lym=""
+  >
+    <button
+      data-css-1mpln1q=""
+    >
+      <span
+        className={
+          Object {
+            "data-css-1c3u483": "",
+          }
+        }
+      >
+        Text only
+      </span>
+    </button>
+  </div>
+  <div
+    className={
+      Object {
+        "data-css-1pe8c3g": "",
+      }
+    }
+  />
+</span>
 `;
