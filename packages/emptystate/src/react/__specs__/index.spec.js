@@ -29,6 +29,7 @@ describe('EmptyState', () => {
   describe('when rendered with compound components', () => {
     const Compound = () => (
       <EmptyState
+        role="main"
         actions={<EmptyState.Actions>[ Actions ]</EmptyState.Actions>}
         caption={<EmptyState.Caption>Caption</EmptyState.Caption>}
         heading={<EmptyState.Heading>Heading</EmptyState.Heading>}
