@@ -40,6 +40,16 @@ const styles = {
       onClick && css(stylesheet[`.${label}--onclick.psds-theme--${themeName}`])
     )
   },
+  columnHeaderButton: () =>
+    css(stylesheet['.psds-table__column-header__button']),
+  columnHeaderButtonInner: props => {
+    const { align } = props
+    const label = 'psds-table__column-header'
+    return compose(
+      css(stylesheet[`.${label}__button-inner`]),
+      css(stylesheet[`.${label}--align-${align}`])
+    )
+  },
   columnHeaderIcon: _ => css(stylesheet['.psds-table__column-header__icon']),
   row: (themeName, { _tableHasDrawers }) => {
     const label = 'psds-table__row'
@@ -100,20 +110,44 @@ function ColumnHeader(props) {
   if (props.flex && !style.flex) style.flex = props.flex
 
   const handleClick = props.onClick
-    ? evt => props.onClick(getToggledSort(props), evt)
+    ? evt =>
+        props.onClick(
+          ...[evt, props.sort && getToggledSort(props)].filter(Boolean)
+        )
     : undefined
-
+  const children = props.onClick ? (
+    <button {...styles.columnHeaderButton()} onClick={handleClick}>
+      <div {...styles.columnHeaderButtonInner(props)}>
+        {props.children}
+        {props.sort && getSortIcon(props)}
+      </div>
+    </button>
+  ) : (
+    <>
+      {props.children}
+      {props.sort && getSortIcon(props)}
+    </>
+  )
+  const sort = {
+    ...(props.sort && {
+      'aria-sort':
+        props.sort === vars.sorts.desc
+          ? 'descending'
+          : props.sort === vars.sorts.asc
+          ? 'ascending'
+          : 'none'
+    })
+  }
   return (
-    <Tag
+    <div
       role="columnheader"
       {...styles.columnHeader(themeName, props, { active })}
       {...filterReactProps(props, { tagName: Tag })}
-      onClick={handleClick}
       style={style}
+      {...sort}
     >
-      {props.children}
-      {props.sort && getSortIcon(props)}
-    </Tag>
+      {children}
+    </div>
   )
 }
 

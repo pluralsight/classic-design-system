@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@9.0.0...@pluralsight/ps-design-system-table@9.0.1) (2020-06-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@8.1.5...@pluralsight/ps-design-system-table@9.0.0) (2020-06-15)
+
+
+### Bug Fixes
+
+* **table:** add aria-sort for a11y ([ddbd118](https://github.com/pluralsight/design-system/commit/ddbd11899d77f9dbeca0cdb390510809626a313f))
+* **table:** update column header click event arg order and aria-sort ([ff60671](https://github.com/pluralsight/design-system/commit/ff606714d32b26446e8a0dcf8f448e6a072e4a0e))
+
+
+### BREAKING CHANGES
+
+* **table:** onClick now returns evt as first argument sort prop must be applied in order to recieve sort as second arg
+
+
+
+
+
 ## [8.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@8.1.4...@pluralsight/ps-design-system-table@8.1.5) (2020-05-19)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

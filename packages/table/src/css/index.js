@@ -102,6 +102,24 @@ export default {
     '&:first-of-type': { paddingLeft: 0 },
     '&:last-of-type': { paddingRight: 0 }
   },
+  '.psds-table__column-header__button': {
+    background: 'inherit',
+    border: 'none',
+    margin: 0,
+    padding: 0,
+    overflow: 'visible',
+    color: 'inherit',
+    font: 'inherit',
+    lineHeight: 'inherit',
+    display: 'block',
+    width: '100%',
+    textTransform: 'inherit'
+  },
+  '.psds-table__column-header__button-inner': {
+    height: '100%',
+    display: 'flex',
+    alignItems: 'flex-end'
+  },
   [`.psds-table__column-header.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.lowOnLight
   },

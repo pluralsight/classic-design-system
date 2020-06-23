@@ -4,63 +4,53 @@ import { fireEvent, render } from '@testing-library/react'
 import Table from '../index.js'
 
 describe('columnHeader', () => {
-  test('sorted=false onClick called with asc', () => {
-    return new Promise(resolve => {
-      const onClick = (sort, evt) => {
-        expect(sort).toBe(Table.sorts.asc)
-        expect(evt).toBeDefined()
-        resolve()
-      }
-      const { getByText } = render(
-        <Table.ColumnHeader onClick={onClick}>Click me</Table.ColumnHeader>
-      )
-      fireEvent.click(getByText('Click me'))
-    })
+  test('sorted=false onClick called with just evt', () => {
+    const spy = jest.fn()
+    const { getByRole, container } = render(
+      <Table.ColumnHeader onClick={spy}>Click me</Table.ColumnHeader>
+    )
+    const columnHeader = container.firstChild
+    expect(columnHeader).not.toHaveAttribute('aria-sort')
+    fireEvent.click(getByRole('button'))
+    expect(spy).toBeCalledWith(expect.anything())
   })
 
   test('sorted=true onClick called with asc', () => {
-    return new Promise(resolve => {
-      const onClick = (sort, evt) => {
-        expect(sort).toBe(Table.sorts.asc)
-        expect(evt).toBeDefined()
-        resolve()
-      }
-      const { getByText } = render(
-        <Table.ColumnHeader sort onClick={onClick}>
-          Click me
-        </Table.ColumnHeader>
-      )
-      fireEvent.click(getByText('Click me'))
-    })
+    const spy = jest.fn()
+    const { getByRole, container } = render(
+      <Table.ColumnHeader sort onClick={spy}>
+        Click me
+      </Table.ColumnHeader>
+    )
+    const columnHeader = container.firstChild
+    expect(columnHeader).toHaveAttribute('aria-sort', 'none')
+    fireEvent.click(getByRole('button'))
+    expect(spy).toBeCalledWith(expect.anything(), Table.sorts.asc)
   })
 
   test('sorted=asc onClick called with desc', () => {
-    return new Promise(resolve => {
-      const onClick = sort => {
-        expect(sort).toBe(Table.sorts.desc)
-        resolve()
-      }
-      const { getByText } = render(
-        <Table.ColumnHeader sort={Table.sorts.asc} onClick={onClick}>
-          Click me
-        </Table.ColumnHeader>
-      )
-      fireEvent.click(getByText('Click me'))
-    })
+    const spy = jest.fn()
+    const { getByRole, container } = render(
+      <Table.ColumnHeader sort={Table.sorts.asc} onClick={spy}>
+        Click me
+      </Table.ColumnHeader>
+    )
+    const columnHeader = container.firstChild
+    expect(columnHeader).toHaveAttribute('aria-sort', 'ascending')
+    fireEvent.click(getByRole('button'))
+    expect(spy).toBeCalledWith(expect.anything(), Table.sorts.desc)
   })
 
   test('sorted=desc onClick called with asc', () => {
-    return new Promise(resolve => {
-      const onClick = sort => {
-        expect(sort).toBe(Table.sorts.asc)
-        resolve()
-      }
-      const { getByText } = render(
-        <Table.ColumnHeader sort={Table.sorts.desc} onClick={onClick}>
-          Click me
-        </Table.ColumnHeader>
-      )
-      fireEvent.click(getByText('Click me'))
-    })
+    const spy = jest.fn()
+    const { getByRole, container } = render(
+      <Table.ColumnHeader sort={Table.sorts.desc} onClick={spy}>
+        Click me
+      </Table.ColumnHeader>
+    )
+    const columnHeader = container.firstChild
+    expect(columnHeader).toHaveAttribute('aria-sort', 'descending')
+    fireEvent.click(getByRole('button'))
+    expect(spy).toBeCalledWith(expect.anything(), Table.sorts.asc)
   })
 })
