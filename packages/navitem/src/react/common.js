@@ -16,11 +16,11 @@ const styles = {
   button: props =>
     css(
       stylesheet['.psds-navitem__button'],
-      props.menu && stylesheet['.psds-navitem__button--menu']
+      props.menu && stylesheet['.psds-navitem__button--menu'],
+      props.selected && stylesheet['.psds-navitem__button--selected']
     ),
   caret: () => css(stylesheet['.psds-navitem__caret']),
-  container: () => css(stylesheet['.psds-navitem__container']),
-  label: () => css(stylesheet['.psds-navitem__label'])
+  container: () => css(stylesheet['.psds-navitem__container'])
 }
 
 export function Bar(props) {

@@ -112,6 +112,9 @@ export default {
       background: transparentize(0.75, colorsBackgroundUtility.base)
     }
   },
+  '.psds-navitem__button--selected': {
+    color: colorsTextIcon.highOnDark
+  },
   '.psds-navitem__button--menu': {
     paddingRight: '2px'
   },
@@ -123,15 +126,25 @@ export default {
     display: 'inline-block'
   },
 
-  // horizontal
-  '.psds-navitem__icon': {
+  // horz
+  '.psds-navitem__horz-icon': {
     marginRight: layout.spacingSmall
   },
-  '.psds-navitem__label': {
+  '.psds-navitem__horz-label': {
     fontWeight: type.fontWeightBold,
     fontSize: type.fontSizeSmall,
     lineHeight: type.lineHeightStandard,
     letterSpacing: '-1%',
     whiteSpace: 'nowrap'
+  },
+
+  // vertical
+  '.psds-navitem__vertical-label': {
+    fontWeight: type.fontWeightBold,
+    fontSize: '10px',
+    lineHeight: '12px',
+    whiteSpace: 'nowrap',
+    width: `calc(76px - ${layout.spacingXXSmall} * 2)`,
+    textOverflow: 'ellipsis'
   }
 }

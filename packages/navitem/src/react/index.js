@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Bar, Button, Caret, Container } from './common.js'
-import { Icon, Label } from './horizontal.js'
+import { HorzIcon, HorzLabel } from './horz.js'
 
 const NavItem = React.forwardRef((props, forwardedRef) => {
   return (
     <Container>
       <Button {...props} ref={forwardedRef}>
-        {props.icon && <Icon {...props} />}
-        <Label>{props.children}</Label>
+        {props.icon && <HorzIcon {...props} />}
+        <HorzLabel>{props.children}</HorzLabel>
         {props.menu && <Caret />}
       </Button>
       <Bar {...props} />

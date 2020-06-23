@@ -5,20 +5,20 @@ import React from 'react'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  icon: () => css(stylesheet['.psds-navitem__icon']),
-  label: () => css(stylesheet['.psds-navitem__label'])
+  icon: () => css(stylesheet['.psds-navitem__horz-icon']),
+  label: () => css(stylesheet['.psds-navitem__horz-label'])
 }
 
-export function Icon(props) {
+export function HorzIcon(props) {
   return <span className={styles.icon()}>{props.icon}</span>
 }
-Icon.propTypes = {
+HorzIcon.propTypes = {
   icon: PropTypes.element
 }
 
-export function Label(props) {
+export function HorzLabel(props) {
   return <span className={styles.label()}>{props.children}</span>
 }
-Label.propTypes = {
+HorzLabel.propTypes = {
   children: PropTypes.node
 }
