@@ -9,7 +9,7 @@ function Grid(props) {
     <div
       style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 200px)',
+        gridTemplateColumns: 'repeat(3, auto)',
         gap: '24px'
       }}
     >
