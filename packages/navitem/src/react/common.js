@@ -56,12 +56,15 @@ Button.propTypes = {
   href: PropTypes.string
 }
 
-export function Caret() {
-  return (
+export function Caret(props) {
+  return props.menu ? (
     <span className={styles.caret()}>
       <CaretDownIcon size={CaretDownIcon.sizes.small} />
     </span>
-  )
+  ) : null
+}
+Caret.propTypes = {
+  menu: PropTypes.element
 }
 
 export function Container(props) {

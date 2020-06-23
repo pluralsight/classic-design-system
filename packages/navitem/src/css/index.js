@@ -88,16 +88,15 @@ export default {
     background: colorsWhite
   },
   '.psds-navitem__button': {
-    display: 'inline-flex',
-    alignItems: 'center',
+    display: 'inline-block',
     background: 'transparent',
     border: 'none',
     color: colorsTextIcon.lowOnDark,
-    height: '40px',
     padding: layout.spacingXSmall,
     borderRadius: '2px',
     textDecoration: 'none',
     cursor: 'pointer',
+    lineHeight: 0,
 
     '&:hover, &:focus, &:active': {
       color: colorsTextIcon.highOnDark
@@ -128,6 +127,7 @@ export default {
 
   // horz
   '.psds-navitem__horz-icon': {
+    lineHeight: '0',
     marginRight: layout.spacingSmall
   },
   '.psds-navitem__horz-label': {
@@ -136,6 +136,11 @@ export default {
     lineHeight: type.lineHeightStandard,
     letterSpacing: '-1%',
     whiteSpace: 'nowrap'
+  },
+  '.psds-navitem__horz-layout': {
+    display: 'inline-flex',
+    alignItems: 'center',
+    height: `calc(40px - ${layout.spacingXSmall} * 2)`
   },
 
   // vertical
