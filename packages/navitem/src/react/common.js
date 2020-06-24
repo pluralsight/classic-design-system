@@ -25,7 +25,7 @@ export function Bar(props) {
   return <div className={styles.bar(props)} />
 }
 Bar.propTypes = {
-  selected: PropTypes.bool
+  selected: PropTypes.bool // eslint-disable-line react/no-unused-prop-types
 }
 
 export const Button = React.forwardRef((props, forwardedRef) => {

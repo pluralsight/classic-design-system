@@ -1,6 +1,7 @@
 import { colorsGradient } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import { storiesOf } from '@storybook/react'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import NavItem from '../index.js'
@@ -18,6 +19,9 @@ function Grid(props) {
       {props.children}
     </div>
   )
+}
+Grid.propTypes = {
+  children: PropTypes.node
 }
 
 const stories = storiesOf('NavItem', module)
