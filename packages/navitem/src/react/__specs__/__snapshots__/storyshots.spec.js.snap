@@ -5,8 +5,9 @@ exports[`Storyshots NavItem horizontal 1`] = `
   style={
     Object {
       "display": "grid",
-      "gap": "24px",
+      "gap": "32px",
       "gridTemplateColumns": "repeat(3, auto)",
+      "justifyItems": "center",
     }
   }
 >
@@ -464,8 +465,9 @@ exports[`Storyshots NavItem vertical 1`] = `
   style={
     Object {
       "display": "grid",
-      "gap": "24px",
+      "gap": "32px",
       "gridTemplateColumns": "repeat(3, auto)",
+      "justifyItems": "center",
     }
   }
 >

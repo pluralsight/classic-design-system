@@ -11,7 +11,8 @@ function Grid(props) {
       style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(3, auto)',
-        gap: '24px'
+        gap: '32px',
+        justifyItems: 'center'
       }}
     >
       {props.children}
