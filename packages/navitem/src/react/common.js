@@ -48,7 +48,7 @@ export const Button = React.forwardRef((props, forwardedRef) => {
     </Halo>
   )
 })
-Button.displayName = 'NavItemButton'
+Button.displayName = 'NavItem.Button'
 Button.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string
