@@ -127,6 +127,9 @@ export default {
     lineHeight: '0',
     marginRight: layout.spacingSmall
   },
+  '.psds-navitem__horz-icon--icon-only': {
+    marginRight: 0
+  },
   '.psds-navitem__horz-label': {
     fontWeight: type.fontWeightBold,
     fontSize: type.fontSizeSmall,
