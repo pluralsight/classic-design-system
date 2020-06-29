@@ -10,8 +10,16 @@ export default {
     outline: '1px solid blue',
     padding: layout.spacingXSmall
   },
-  '.psds-navbar__brand': {},
-  '.psds-navbar__items': {},
-  '.psds-navbar__utility': {},
+  '.psds-navbar__brand': {
+    marginRight: layout.spacingMedium
+  },
+  '.psds-navbar__items': {
+    flex: 1,
+    marginRight: layout.spacingLarge
+  },
+  '.psds-navbar__utility': {
+    marginLeft: 'auto',
+    marginRight: layout.spacingXXSmall
+  },
   '.psds-navbar__user': {}
 }

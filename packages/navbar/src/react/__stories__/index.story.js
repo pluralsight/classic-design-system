@@ -1,4 +1,4 @@
-import { colorsPink } from '@pluralsight/ps-design-system-core'
+import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
@@ -22,7 +22,8 @@ function Filler(props) {
         justifyContent: 'center',
         color: colorsPink.base,
         height: '100%',
-        outline: `2px dashed ${colorsPink.base}`
+        border: `2px dashed ${colorsPink.base}`,
+        padding: `0 ${layout.spacingMedium}`
       }}
     >
       {props.children}
