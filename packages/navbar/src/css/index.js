@@ -7,7 +7,6 @@ export default {
     display: 'flex',
     width: '100%',
     height: '56px',
-    outline: '1px solid blue',
     padding: layout.spacingXSmall
   },
   '.psds-navbar__brand': {
@@ -16,6 +15,9 @@ export default {
   '.psds-navbar__items': {
     flex: 1,
     marginRight: layout.spacingLarge
+  },
+  '.psds-navbar__mobile-menu': {
+    marginRight: layout.spacingXXSmall
   },
   '.psds-navbar__utility': {
     marginLeft: 'auto',

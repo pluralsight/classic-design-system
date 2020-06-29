@@ -1,59 +1,234 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Navbar TODO 1`] = `<div />`;
-
 exports[`Storyshots Navbar desktop 1`] = `
-<div>
-  <div>
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <div
+    data-css-1ety8xe=""
+  >
     <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "justifyContent": "center",
-        }
-      }
+      data-css-1kfsc44=""
     >
-      Brand
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        Brand
+      </div>
+    </div>
+    <div
+      data-css-1ns9ldv=""
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        Items
+      </div>
+    </div>
+    <div
+      data-css-jgr69u=""
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        Utility
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        User
+      </div>
     </div>
   </div>
-  <div>
+  <div
+    data-css-1ety8xe=""
+  >
     <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "justifyContent": "center",
-        }
-      }
+      data-css-1qn6dtd=""
     >
-      Nav
+      <span
+        className={
+          Object {
+            "data-css-w0yocm": "",
+          }
+        }
+      >
+        <div
+          data-css-1ij5lym=""
+        >
+          <button
+            data-css-11n5d38=""
+            icon={<MenuIcon />}
+            onClick={[Function]}
+          >
+            <span
+              className={
+                Object {
+                  "data-css-50rv4t": "",
+                }
+              }
+            >
+              <span
+                className={
+                  Object {
+                    "data-css-1o9ctb7": "",
+                  }
+                }
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="menu icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M22 11.5v1a.5.5 0 01-.5.5h-19a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h19a.5.5 0 01.5.5zM2.5 17h18.98a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H2.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5zm0-12h18.977a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H2.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </span>
+              <span
+                className={
+                  Object {
+                    "data-css-1c3u483": "",
+                  }
+                }
+              />
+            </span>
+          </button>
+        </div>
+        <div
+          className={
+            Object {
+              "data-css-1pe8c3g": "",
+            }
+          }
+        />
+      </span>
     </div>
-  </div>
-  <div>
     <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "justifyContent": "center",
-        }
-      }
+      data-css-1kfsc44=""
     >
-      Utility
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        Brand
+      </div>
     </div>
-  </div>
-  <div>
     <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "justifyContent": "center",
-        }
-      }
+      data-css-1ns9ldv=""
     >
-      User
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        Items
+      </div>
+    </div>
+    <div
+      data-css-jgr69u=""
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        Utility
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "border": "2px dashed #E7558B",
+            "color": "#E7558B",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "padding": "0 16px",
+          }
+        }
+      >
+        User
+      </div>
     </div>
   </div>
 </div>
