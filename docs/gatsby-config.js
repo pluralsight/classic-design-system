@@ -43,7 +43,7 @@ module.exports = {
         sidebarCategories: {
           null: ['index'],
           'Getting Started': ['getting-started/install'],
-          Components: ['components/emptystate']
+          Components: ['components/avatar', 'components/emptystate']
         }
       }
     },
