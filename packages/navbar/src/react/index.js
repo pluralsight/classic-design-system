@@ -8,25 +8,34 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  navbar: (themeName, props) => css(stylesheet['.psds-navbar'])
+  brand: () => css(stylesheet['.psds-navbar__brand']),
+  navbar: () => css(stylesheet['.psds-navbar']),
+  items: () => css(stylesheet['.psds-navbar__items']),
+  user: () => css(stylesheet['.psds-navbar__user']),
+  utility: () => css(stylesheet['.psds-navbar__utility'])
 }
 
-const Navbar = React.forwardRef((props, forwardedRef) => {
-  const themeName = useTheme()
+// TODO: support mobile menu
 
+const NavBar = React.forwardRef((props, forwardedRef) => {
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
   return (
-    <div
-      ref={ref}
-      {...styles.navbar(themeName, props)}
-      {...filterReactProps(props)}
-    />
+    <div ref={ref} {...styles.navbar()} {...filterReactProps(props)}>
+      <div {...styles.brand()}>{props.brand}</div>
+      <div {...styles.items()}>{props.items}</div>
+      <div {...styles.utility()}>{props.utility}</div>
+      <div {...styles.user()}>{props.user}</div>
+    </div>
   )
 })
 
+NavBar.propTypes = {
+  brand: PropTypes.node,
+  items: PropTypes.node,
+  utility: PropTypes.node,
+  user: PropTypes.node
+}
 
-Navbar.propTypes = {}
-
-export default Navbar
+export default NavBar

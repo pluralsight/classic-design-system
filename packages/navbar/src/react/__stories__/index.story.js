@@ -1,7 +1,31 @@
+import { colorsPink } from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Navbar from '../index.js'
+import NavBar from '../index.js'
 
-storiesOf('Navbar', module)
-  .add('TODO', _ => <Navbar />)
+storiesOf('Navbar', module).add('desktop', _ => (
+  <NavBar
+    brand={<Filler>Brand</Filler>}
+    items={<Filler>Items</Filler>}
+    user={<Filler>User</Filler>}
+    utility={<Filler>Utility</Filler>}
+  />
+))
+
+function Filler(props) {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: colorsPink.base,
+        height: '100%',
+        outline: `2px dashed ${colorsPink.base}`
+      }}
+    >
+      {props.children}
+    </div>
+  )
+}

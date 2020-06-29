@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Navbar TODO 1`] = `<div />`;
+
+exports[`Storyshots Navbar desktop 1`] = `
+<div>
+  <div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "center",
+        }
+      }
+    >
+      Brand
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "center",
+        }
+      }
+    >
+      Nav
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "center",
+        }
+      }
+    >
+      Utility
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "center",
+        }
+      }
+    >
+      User
+    </div>
+  </div>
+</div>
+`;
