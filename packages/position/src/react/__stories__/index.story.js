@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-
+import { InfoIcon } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
@@ -231,4 +231,59 @@ function JsStory({ positionType, ...rest }) {
 
 JsStory.propTypes = {
   positionType: PropTypes.oneOf(Object.keys(positionFns)).isRequired
+}
+
+storiesOf('Position Edge', module).add('below', () => <Bug />)
+
+function Bug() {
+  const [b1hover, setb1hover] = React.useState(false)
+  const [b2hover, setb2hover] = React.useState(false)
+
+  return (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        width: '100%',
+        height: '100vh',
+        overflow: 'hidden'
+      }}
+    >
+      <positionComponents.Below
+        when={b1hover}
+        show={
+          <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
+            I am some really long content, look at me go, i am so long and
+            contentful
+          </Tooltip>
+        }
+      >
+        <InfoIcon
+          onMouseEnter={() => setb1hover(true)}
+          onMouseLeave={() => setb1hover(false)}
+          style={{ color: 'white' }}
+        >
+          Hover me
+        </InfoIcon>
+      </positionComponents.Below>
+      <positionComponents.BelowRight
+        when={b2hover}
+        show={
+          <Tooltip tailPosition={Tooltip.tailPositions.topRight}>
+            I am some really long content, look at me go, i am so long and
+            contentful
+          </Tooltip>
+        }
+      >
+        <InfoIcon
+          style={{ marginLeft: 'auto', color: 'white' }}
+          onMouseEnter={() => setb2hover(true)}
+          onMouseLeave={() => setb2hover(false)}
+        >
+          Hover me
+        </InfoIcon>
+      </positionComponents.BelowRight>
+    </div>
+  )
 }
