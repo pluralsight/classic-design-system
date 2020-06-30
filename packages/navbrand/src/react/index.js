@@ -1,4 +1,5 @@
 import { css, media } from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo'
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -39,17 +40,21 @@ const NavBrand = React.forwardRef((props, forwardedRef) => {
 
   const tagName = props.href ? 'a' : props.onClick ? 'button' : 'div'
 
-  return React.createElement(
-    tagName,
-    {
-      ...styles.navBrand(props),
-      ...filterReactProps(props, { tagName }),
-      ref
-    },
-    <>
-      <Logo {...props} />
-      <Wordmark {...props} />
-    </>
+  return (
+    <Halo inline gapSize={Halo.gapSizes.small}>
+      {React.createElement(
+        tagName,
+        {
+          ...styles.navBrand(props),
+          ...filterReactProps(props, { tagName }),
+          ref
+        },
+        <>
+          <Logo {...props} />
+          <Wordmark {...props} />
+        </>
+      )}
+    </Halo>
   )
 })
 

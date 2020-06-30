@@ -1,4 +1,9 @@
-import { layout } from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundUtility,
+  layout
+} from '@pluralsight/ps-design-system-core'
+
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 export default {
   '.psds-navbrand': {
@@ -10,7 +15,17 @@ export default {
   '.psds-navbrand--clickable': {
     cursor: 'pointer',
     background: 'none',
-    border: 'none'
+    border: 'none',
+
+    '&:hover, &:focus': {
+      background: transparentize(0.85, colorsBackgroundUtility.base)
+    },
+    '&:focus': {
+      outline: 'none'
+    },
+    '&:active': {
+      background: transparentize(0.75, colorsBackgroundUtility.base)
+    }
   },
   '.psds-navbrand__logo': {
     height: '24px',

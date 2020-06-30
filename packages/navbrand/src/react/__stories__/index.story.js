@@ -9,6 +9,11 @@ storiesOf('NavBrand', module).add('states', _ => (
     <NavBrand logo={<SkillsLogo />} wordmark={<SkillsWordmark />} />
     <NavBrand logo={<FlowLogo />} wordmark={<FlowWordmark />} />
     <NavBrand logo={<PlaceholderLogo />} wordmark={<PlaceholderWordmark />} />
+    <NavBrand
+      href="https://jaketrent.com"
+      logo={<PlaceholderLogo />}
+      wordmark={<PlaceholderWordmark />}
+    />
   </Grid>
 ))
 
