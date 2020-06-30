@@ -1,8 +1,7 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 const vars = {
-  handleWidth: 9,
+  handleWidth: 8,
   nativeScrollWidth: 18
 }
 
@@ -36,25 +35,19 @@ export default {
   '.psds-scrollable__handle': {
     label: 'scrollable__handle',
 
+    backgroundColor: 'rgba(138, 153, 168, 0.40)',
     borderRadius: '4px',
     cursor: 'pointer',
     opacity: 0,
     position: 'absolute',
-    right: 0,
+    right: 2,
     top: 0,
     transition: `all ${core.motion.speedFast} ease-in-out`,
     transitionProperty: 'opacity, background, right',
     width: vars.handleWidth,
 
+    '&:active, &:hover': { backgroundColor: 'rgba(138, 153, 168, 0.60)' },
     '[data-scrollable]:active >  &, [data-scrollable]:hover > &': { opacity: 1 }
-  },
-  [`.psds-scrollable__handle.psds-theme--${themeNames.dark}`]: {
-    backgroundColor: core.colorsBackgroundDark[2],
-    '&:active, &:hover': { backgroundColor: core.colorsBackgroundDark[3] }
-  },
-  [`.psds-scrollable__handle.psds-theme--${themeNames.light}`]: {
-    backgroundColor: core.colorsBackgroundLight[2],
-    '&:active, &:hover': { backgroundColor: core.colorsBackgroundLight[3] }
   },
   '.psds-scrollable__handle--grabbed': {
     label: 'scrollable__handle--grabbed',

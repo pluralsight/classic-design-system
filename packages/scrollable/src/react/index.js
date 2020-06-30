@@ -10,7 +10,6 @@ import React, {
 } from 'react'
 import PropTypes from 'prop-types'
 
-import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { combineFns } from '@pluralsight/ps-design-system-util'
 
@@ -28,10 +27,9 @@ const styles = {
 
   content: () => css(stylesheet['.psds-scrollable__content']),
 
-  handle: (themeName, _props, { grabbed }) =>
+  handle: (_props, { grabbed }) =>
     compose(
       css(stylesheet['.psds-scrollable__handle']),
-      css(stylesheet[`.psds-scrollable__handle.psds-theme--${themeName}`]),
       grabbed && css(stylesheet['.psds-scrollable__handle--grabbed'])
     )
 }
@@ -149,7 +147,6 @@ Content.propTypes = {
 
 function Handle(props) {
   const [grabbed, setGrabbed] = useState(false)
-  const themeName = useTheme()
 
   const onDragEnd = combineFns(() => {
     setGrabbed(false)
@@ -161,7 +158,7 @@ function Handle(props) {
 
   return (
     <div
-      {...styles.handle(themeName, props, { grabbed })}
+      {...styles.handle(props, { grabbed })}
       {...props}
       onDragEnd={onDragEnd}
       onDragStart={onDragStart}
