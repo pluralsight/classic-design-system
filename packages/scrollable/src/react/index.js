@@ -1,0 +1,186 @@
+import { compose, css, media } from 'glamor'
+import React, {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useState,
+  useRef
+} from 'react'
+import PropTypes from 'prop-types'
+
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { combineFns } from '@pluralsight/ps-design-system-util'
+
+import stylesheet from '../css/index.js'
+import useResizeObserver from './use-resize-observer.js'
+
+const styles = {
+  outer: () =>
+    compose(
+      css(stylesheet['.psds-scrollable__outer']),
+      media('not print', stylesheet['.psds-scrollable__outer--screen'])
+    ),
+
+  inner: () => css(stylesheet['.psds-scrollable__inner']),
+
+  content: () => css(stylesheet['.psds-scrollable__content']),
+
+  handle: (themeName, _props, { grabbed }) =>
+    compose(
+      css(stylesheet['.psds-scrollable__handle']),
+      css(stylesheet[`.psds-scrollable__handle.psds-theme--${themeName}`]),
+      grabbed && css(stylesheet['.psds-scrollable__handle--grabbed'])
+    )
+}
+
+const BLANK_IMAGE = new Image(0, 0)
+// prettier-ignore
+BLANK_IMAGE.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+const Scrollable = forwardRef((props, forwardedRef) => {
+  const { contentAs, ...rest } = props
+
+  const ref = useRef()
+  useImperativeHandle(forwardedRef, () => ref.current)
+
+  const dragPreview = useRef(BLANK_IMAGE)
+
+  const [hidden, setHidden] = useState(true)
+  const [pageY, setPageY] = useState(0)
+  const [offset, setOffset] = useState('0%')
+  const [scrollRatio, setScrollRatio] = useState(0)
+
+  const updateDimensions = useCallback(() => {
+    if (!ref.current) return
+    const content = ref.current
+
+    const nextTotalHeight = content.scrollHeight
+    const nextOffset = (content.scrollTop / nextTotalHeight) * 100 + '%'
+    const nextScrollRatio = content.clientHeight / nextTotalHeight
+    const shouldHide = nextScrollRatio >= 1
+
+    setHidden(shouldHide)
+    setOffset(nextOffset)
+    setScrollRatio(nextScrollRatio)
+  }, [ref])
+
+  useResizeObserver(ref, updateDimensions)
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => updateDimensions(), [])
+
+  function onHandleDrag(evt) {
+    const nextPageY = evt.pageY
+    if (nextPageY <= 0) return
+
+    const content = ref.current
+    const delta = evt.pageY - pageY
+
+    setPageY(nextPageY)
+    content.scrollTop += delta / scrollRatio
+  }
+
+  function onHandleDragEnd(_evt) {
+    setPageY(0)
+  }
+
+  function onHandleDragStart(evt) {
+    evt.dataTransfer.setDragImage(dragPreview.current, 0, 0)
+
+    setPageY(evt.pageY)
+  }
+
+  const styleOverride = useMemo(() => {
+    const height = Math.max(scrollRatio * 100, 10) + '%'
+
+    return compose(
+      css({ height, top: offset }),
+      hidden && css({ visibility: 'hidden' })
+    )
+  }, [hidden, offset, scrollRatio])
+
+  return (
+    <Outer data-scrollable {...rest}>
+      <Inner key="scrollable-wrapper">
+        <Content as={contentAs} onScroll={updateDimensions} ref={ref}>
+          {props.children}
+        </Content>
+      </Inner>
+
+      <Handle
+        draggable
+        onDrag={onHandleDrag}
+        onDragEnd={onHandleDragEnd}
+        onDragStart={onHandleDragStart}
+        {...styleOverride}
+      />
+    </Outer>
+  )
+})
+
+Scrollable.propTypes = {
+  children: PropTypes.node,
+  contentAs: PropTypes.elementType
+}
+
+function Outer(props) {
+  return <div {...styles.outer()} {...filterReactProps(props)} />
+}
+
+function Inner(props) {
+  return <div {...styles.inner()} {...props} />
+}
+
+const Content = forwardRef((props, forwardedRef) => {
+  const { as: Tag = 'div', ...rest } = props
+
+  const ref = useRef()
+  useImperativeHandle(forwardedRef, () => ref.current)
+
+  return <Tag ref={ref} {...styles.content()} {...rest} />
+})
+
+Content.propTypes = {
+  as: PropTypes.elementType
+}
+
+function Handle(props) {
+  const [grabbed, setGrabbed] = useState(false)
+  const themeName = useTheme()
+
+  const onDragEnd = combineFns(() => {
+    setGrabbed(false)
+  }, props.onDragEnd)
+
+  const onDragStart = combineFns(() => {
+    setGrabbed(true)
+  }, props.onDragStart)
+
+  return (
+    <div
+      {...styles.handle(themeName, props, { grabbed })}
+      {...props}
+      onDragEnd={onDragEnd}
+      onDragStart={onDragStart}
+    />
+  )
+}
+
+Handle.propTypes = {
+  draggable: PropTypes.bool.isRequired,
+  onDrag: PropTypes.func,
+  onDragEnd: PropTypes.func,
+  onDragStart: PropTypes.func
+}
+
+Scrollable.displayName = 'Scrollable'
+
+Outer.displayName = 'Scrollable.Outer'
+Inner.displayName = 'Scrollable.Inner'
+Content.displayName = 'Scrollable.Content'
+Handle.displayName = 'Scrollable.Handle'
+
+export default Scrollable
