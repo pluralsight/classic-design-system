@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { HomeIcon, BrowseIcon } from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavItem from '@pluralsight/ps-design-system-navitem'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 import NavBar from '../index.js'
@@ -57,6 +58,9 @@ function Grid(props) {
     </div>
   )
 }
+Grid.propTypes = {
+  children: PropTypes.node
+}
 
 function Filler(props) {
   return (
@@ -74,6 +78,9 @@ function Filler(props) {
       {props.children}
     </div>
   )
+}
+Filler.propTypes = {
+  children: PropTypes.node
 }
 
 function SkillsBrand(props) {
