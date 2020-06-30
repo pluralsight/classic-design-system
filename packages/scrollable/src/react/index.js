@@ -11,10 +11,12 @@ import React, {
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { combineFns } from '@pluralsight/ps-design-system-util'
+import {
+  combineFns,
+  useResizeObserver
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index.js'
-import useResizeObserver from './use-resize-observer.js'
 
 const styles = {
   outer: () =>
