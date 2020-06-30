@@ -115,7 +115,8 @@ export default {
     color: colorsTextIcon.highOnDark
   },
   '.psds-navitem__container': {
-    display: 'inline-block'
+    display: 'inline-block',
+    marginTop: layout.spacingXSmall
   },
 
   // horz
