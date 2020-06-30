@@ -5,6 +5,7 @@ import * as vars from '../vars/index.js'
 export default {
   '.psds-navbar': {
     display: 'flex',
+    alignItems: 'center',
     width: '100%',
     height: '56px',
     padding: layout.spacingXSmall

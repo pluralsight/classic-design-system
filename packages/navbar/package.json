@@ -35,6 +35,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-navbrand": "*",
+    "@pluralsight/ps-design-system-navitem": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*"
   }
