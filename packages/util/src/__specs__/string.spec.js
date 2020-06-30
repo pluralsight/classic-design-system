@@ -1,4 +1,4 @@
-import { capitalize } from '../string.js'
+import { capitalize } from '..'
 
 describe('#capitalize', () => {
   test('empty', () => {

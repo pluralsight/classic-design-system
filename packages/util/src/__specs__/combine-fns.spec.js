@@ -1,4 +1,4 @@
-import { combineFns } from '../combineFns.js'
+import { combineFns } from '..'
 
 test('combineFns()', () => {
   const expected = 'string'

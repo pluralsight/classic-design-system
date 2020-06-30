@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { generateDefaultProps, generatePropTypes } from '../prop-defs.js'
+import { generateDefaultProps, generatePropTypes } from '..'
 
 describe('#generatePropTypes', () => {
   test('empty', () => {
