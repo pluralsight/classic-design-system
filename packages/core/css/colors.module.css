@@ -129,6 +129,7 @@
   --psColorsBackgroundUtility25: rgba(138, 153, 168, 0.25);
   --psColorsBackgroundUtility30: rgba(138, 153, 168, 0.3);
   --psColorsBackgroundUtility40: rgba(138, 153, 168, 0.4);
+  --psColorsBackgroundUtility60: rgba(138, 153, 168, 0.6);
 
   --psColorsGradientSkillsBackground: linear-gradient(
     90deg,
