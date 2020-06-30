@@ -1,14 +1,11 @@
 import { canUseDOM } from 'exenv'
-import { useEffect, useImperativeHandle, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
 
 import { combineFns } from './combine-fns.js'
 import { debounce } from './debounce.js'
 
-export function useResizeObserver(outerRef, onResize) {
-  const ref = useRef()
-  useImperativeHandle(ref, () => outerRef.current)
-
+export function useResizeObserver(ref, onResize) {
   const [width, setWidth] = useState(0)
   const [height, setHeight] = useState(0)
 
@@ -40,5 +37,5 @@ export function useResizeObserver(outerRef, onResize) {
     }
   }, [onResize, ref])
 
-  return { ref, width, height }
+  return { width, height }
 }
