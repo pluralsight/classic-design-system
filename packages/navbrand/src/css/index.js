@@ -6,6 +6,12 @@ export default {
     alignItems: 'center',
     padding: layout.spacingXSmall
   },
+  // TODO: handle hover and focus
+  '.psds-navbrand--clickable': {
+    cursor: 'pointer',
+    background: 'none',
+    border: 'none'
+  },
   '.psds-navbrand__logo': {
     height: '24px',
     width: '24px',

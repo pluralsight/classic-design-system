@@ -18,7 +18,11 @@ const styles = {
           ]
         )
     ),
-  navBrand: () => css(stylesheet['.psds-navbrand']),
+  navBrand: props =>
+    css(
+      stylesheet['.psds-navbrand'],
+      (props.href || props.onClick) && stylesheet['.psds-navbrand--clickable']
+    ),
   wordmark: () =>
     css(
       stylesheet['.psds-navbrand__wordmark'],
@@ -38,7 +42,7 @@ const NavBrand = React.forwardRef((props, forwardedRef) => {
   return React.createElement(
     tagName,
     {
-      ...styles.navBrand(),
+      ...styles.navBrand(props),
       ...filterReactProps(props, { tagName }),
       ref
     },
