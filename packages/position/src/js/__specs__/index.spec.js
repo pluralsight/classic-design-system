@@ -481,6 +481,143 @@ describe('#leftOf', () => {
   })
 })
 
+describe('#edgeCases', () => {
+  Object.defineProperty(window, 'innerHeight', {
+    writable: true,
+    configurable: true,
+    value: 500
+  })
+  Object.defineProperty(window, 'innerWidth', {
+    writable: true,
+    configurable: true,
+    value: 500
+  })
+
+  const targets = {
+    topLeft: {
+      top: 0,
+      right: 16,
+      bottom: 16,
+      left: 0,
+      width: 16,
+      height: 16
+    },
+    topRight: {
+      top: 0,
+      right: 500,
+      bottom: 16,
+      left: 484,
+      width: 16,
+      height: 16
+    },
+    bottomLeft: {
+      top: 484,
+      right: 16,
+      bottom: 500,
+      left: 0,
+      width: 16,
+      height: 16
+    },
+    bottomRight: {
+      top: 484,
+      right: 500,
+      bottom: 500,
+      left: 484,
+      width: 16,
+      height: 16
+    }
+  }
+
+  it('#above', async () => {
+    const { above } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(above(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+  it('#aboveLeft', async () => {
+    const { aboveLeft } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(aboveLeft(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+  it('#aboveRight', async () => {
+    const { aboveRight } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(aboveRight(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+  it('#below', async () => {
+    const { below } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(below(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+  it('#belowLeft', async () => {
+    const { belowLeft } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(belowLeft(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+  it('#belowRight', async () => {
+    const { belowRight } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(belowRight(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+  it('#rightOf', async () => {
+    const { rightOf } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(rightOf(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+  it('#leftOf', async () => {
+    const { leftOf } = positionFns
+    for (const position in targets) {
+      const targetEl = await createEl(targets[position])
+      const el = await createEl({
+        width: 100,
+        height: 100
+      })
+      expect(leftOf(targetEl).styleFor(el)).toMatchSnapshot(position)
+    }
+  })
+})
+
 function randStr() {
   return (
     Math.random()
