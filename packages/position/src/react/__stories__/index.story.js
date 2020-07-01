@@ -233,57 +233,97 @@ JsStory.propTypes = {
   positionType: PropTypes.oneOf(Object.keys(positionFns)).isRequired
 }
 
-storiesOf('Position Edge', module).add('below', () => <Bug />)
+const edgeCaseSotries = storiesOf('Position Edge', module)
 
-function Bug() {
-  const [b1hover, setb1hover] = React.useState(false)
-  const [b2hover, setb2hover] = React.useState(false)
+Object.values(positionComponents).forEach(Comp => {
+  const { displayName } = Comp
+  function Demo() {
+    const [b1hover, setb1hover] = React.useState(false)
+    const [b2hover, setb2hover] = React.useState(false)
+    const [b3hover, setb3hover] = React.useState(false)
+    const [b4hover, setb4hover] = React.useState(false)
 
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        flexDirection: 'row',
-        width: '100%',
-        height: '100vh',
-        overflow: 'hidden'
-      }}
-    >
-      <positionComponents.Below
-        when={b1hover}
-        show={
-          <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
-            I am some really long content, look at me go, i am so long and
-            contentful
-          </Tooltip>
-        }
+    return (
+      <div
+        style={{
+          display: 'grid',
+          justifyItems: 'start',
+          grid: '1fr 1fr/ 1fr 1fr',
+          width: '100%',
+          height: '100vh',
+          overflow: 'hidden'
+        }}
       >
-        <InfoIcon
-          onMouseEnter={() => setb1hover(true)}
-          onMouseLeave={() => setb1hover(false)}
-          style={{ color: 'white' }}
+        <Comp
+          when={b1hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
         >
-          Hover me
-        </InfoIcon>
-      </positionComponents.Below>
-      <positionComponents.BelowRight
-        when={b2hover}
-        show={
-          <Tooltip tailPosition={Tooltip.tailPositions.topRight}>
-            I am some really long content, look at me go, i am so long and
-            contentful
-          </Tooltip>
-        }
-      >
-        <InfoIcon
-          style={{ marginLeft: 'auto', color: 'white' }}
-          onMouseEnter={() => setb2hover(true)}
-          onMouseLeave={() => setb2hover(false)}
+          <InfoIcon
+            onMouseEnter={() => setb1hover(true)}
+            onMouseLeave={() => setb1hover(false)}
+            style={{ color: 'white' }}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+        <Comp
+          when={b2hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
         >
-          Hover me
-        </InfoIcon>
-      </positionComponents.BelowRight>
-    </div>
-  )
-}
+          <InfoIcon
+            onMouseEnter={() => setb2hover(true)}
+            onMouseLeave={() => setb2hover(false)}
+            style={{ color: 'white', justifySelf: 'end' }}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+        <Comp
+          when={b3hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
+        >
+          <InfoIcon
+            onMouseEnter={() => setb3hover(true)}
+            onMouseLeave={() => setb3hover(false)}
+            style={{ color: 'white', alignSelf: 'end' }}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+        <Comp
+          when={b4hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
+        >
+          <InfoIcon
+            style={{ color: 'white', justifySelf: 'end', alignSelf: 'end' }}
+            onMouseEnter={() => setb4hover(true)}
+            onMouseLeave={() => setb4hover(false)}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+      </div>
+    )
+  }
+  edgeCaseSotries.add(displayName, () => <Demo />)
+})

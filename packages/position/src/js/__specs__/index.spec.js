@@ -26,7 +26,7 @@ describe('#below', () => {
     expect(below(targetEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '12px',
-      left: '-50px'
+      left: '0px'
     })
   })
 
@@ -185,7 +185,7 @@ describe('#belowRight', () => {
     expect(belowRight(targetEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '12px',
-      left: '-150px'
+      left: '0px'
     })
   })
 
@@ -202,7 +202,7 @@ describe('#belowRight', () => {
     expect(belowRight(targetEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '212px',
-      left: '-50px'
+      left: '0px'
     })
   })
 
@@ -286,7 +286,7 @@ describe('#above', () => {
     expect(above(targetEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '38px',
-      left: '-25px'
+      left: '0px'
     })
   })
 })
@@ -382,7 +382,7 @@ describe('#aboveRight', () => {
     expect(aboveRight(targetEl).styleFor(el)).toEqual({
       position: 'absolute',
       top: '38px',
-      left: '-75px'
+      left: '0px'
     })
   })
 })
