@@ -233,7 +233,7 @@ JsStory.propTypes = {
   positionType: PropTypes.oneOf(Object.keys(positionFns)).isRequired
 }
 
-const edgeCaseSotries = storiesOf('Position Edge', module)
+const edgeCaseStories = storiesOf('Position Edge', module)
 
 Object.values(positionComponents).forEach(Comp => {
   const { displayName } = Comp
@@ -325,5 +325,5 @@ Object.values(positionComponents).forEach(Comp => {
       </div>
     )
   }
-  edgeCaseSotries.add(displayName, () => <Demo />)
+  edgeCaseStories.add(displayName, () => <Demo />)
 })
