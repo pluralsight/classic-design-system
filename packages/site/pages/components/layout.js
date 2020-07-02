@@ -453,11 +453,11 @@ export default _ => (
       <Code language="javascript">{`<div style={{ background: 'rebeccapurple' }}>
   <PageWidthLayout>
     Contents in front of full-bleed background
-  </PageHeadingLayout>
+  </PageWidthLayout>
 </div>
 <PageWidthLayout>
   Normal case contents layout
-</PageHeadingLayout>
+</PageWidthLayout>
 `}</Code>
 
       <SectionHeading>Aside Layout</SectionHeading>
