@@ -48,12 +48,14 @@ export default function Carousel({ controlPrev, controlNext, size, ...props }) {
 
   const pager = usePager(pageCount, [width])
   const ready = width && width > 0
-
+  const [transitioning, setTransitioning] = React.useState(false)
   const contextValue = {
     ...pick(pager, ['activePage', 'next', 'offset', 'prev']),
     id,
     pageCount,
-    perPage
+    perPage,
+    transitioning,
+    setTransitioning
   }
 
   return (
@@ -200,16 +202,19 @@ const Page = props => {
   const ref = React.useRef()
 
   const { children, isActivePage, paged, ...rest } = props
+  const { offset, transitioning, setTransitioning } = React.useContext(
+    CarouselContext
+  )
   React.useEffect(() => {
     if (paged && isActivePage) {
       const page = ref.current
       const focusFirstChild = e => {
+        setTransitioning(false)
         e.target === page && page.firstElementChild.focus()
       }
       page.addEventListener('transitionend', focusFirstChild)
     }
   }, [isActivePage, paged])
-  const { offset } = React.useContext(CarouselContext)
   return (
     <ul
       ref={ref}
@@ -218,7 +223,7 @@ const Page = props => {
       {...filterReactProps(rest)}
       {...(!isActivePage && {
         hidden: true,
-        style: { visibility: 'hidden' }
+        style: { visibility: transitioning ? 'visible' : 'hidden' }
       })}
     >
       {children}

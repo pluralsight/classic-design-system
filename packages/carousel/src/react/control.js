@@ -38,13 +38,15 @@ export function Control(props) {
   const context = React.useContext(CarouselContext)
   const themeName = useTheme()
 
-  const { activePage, pageCount, next, prev } = context
+  const { activePage, pageCount, next, prev, setTransitioning } = context
 
   const isPrev = props.direction === Control.directions.prev
   const visible = isPrev ? activePage > 0 : activePage !== pageCount - 1
 
   const IconCaret = isPrev ? CaretLeftIcon : CaretRightIcon
-  const handleClick = combineFns(isPrev ? prev : next, props.onClick)
+  const handleClick = combineFns(isPrev ? prev : next, props.onClick, () =>
+    setTransitioning(true)
+  )
   const scr = `get ${isPrev ? 'previous' : 'next'} carousel page`
 
   return (
