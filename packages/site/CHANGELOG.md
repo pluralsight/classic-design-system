@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [19.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.3...@pluralsight/ps-design-system-site@19.0.4) (2020-07-03)
+
+
+### Bug Fixes
+
+* **table:** doubled up click handler nulling sort ([#1049](https://github.com/pluralsight/design-system/issues/1049)) ([2b02663](https://github.com/pluralsight/design-system/commit/2b0266309a7a4b673940eed21a1c4b74e960ca11))
+
+
+
+
+
 ## [19.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.2...@pluralsight/ps-design-system-site@19.0.3) (2020-07-02)
 
 
