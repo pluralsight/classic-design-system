@@ -867,8 +867,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
   >
     <div
       aria-sort="ascending"
-      data-css-1yecw7w=""
-      onClick={[Function]}
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
@@ -899,8 +898,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     </div>
     <div
       aria-sort="none"
-      data-css-1pztpqq=""
-      onClick={[Function]}
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
@@ -986,8 +984,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
   >
     <div
       aria-sort="none"
-      data-css-1pztpqq=""
-      onClick={[Function]}
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
@@ -1018,8 +1015,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     </div>
     <div
       aria-sort="none"
-      data-css-1pztpqq=""
-      onClick={[Function]}
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
@@ -1098,8 +1094,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
   >
     <div
       aria-sort="descending"
-      data-css-1yecw7w=""
-      onClick={[Function]}
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
@@ -1130,8 +1125,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     </div>
     <div
       aria-sort="none"
-      data-css-1pztpqq=""
-      onClick={[Function]}
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
