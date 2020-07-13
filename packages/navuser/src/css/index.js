@@ -36,12 +36,10 @@ export default {
     fontSize: '12px'
   },
   '.psds-navuser__words': {
-    display: 'inline-flex',
-    justifyContent: 'center',
-    flexDirection: 'column',
     color: colorsTextIcon.highOnDark,
     lineHeight: '16px',
     marginLeft: layout.spacingXSmall,
-    fontWeight: type.fontWeightMedium
+    fontWeight: type.fontWeightMedium,
+    textAlign: 'left'
   }
 }
