@@ -1,7 +1,38 @@
 import { storiesOf } from '@storybook/react'
+import PropTypes from 'prop-types'
 import React from 'react'
 
-import Navuser from '../index.js'
+import NavUser from '../index.js'
 
-storiesOf('Navuser', module)
-  .add('TODO', _ => <Navuser />)
+storiesOf('Navuser', module).add('states', _ => (
+  <Grid>
+    <NavUser src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
+    <NavUser
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+      name="Jake Trent"
+    />
+    <NavUser
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+      name="Jake Trent"
+      planName="Accenture"
+    />
+  </Grid>
+))
+
+function Grid(props) {
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, auto)',
+        gap: '32px',
+        justifyItems: 'center'
+      }}
+    >
+      {props.children}
+    </div>
+  )
+}
+Grid.propTypes = {
+  children: PropTypes.node
+}
