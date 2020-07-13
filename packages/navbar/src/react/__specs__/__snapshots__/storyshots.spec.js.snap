@@ -526,134 +526,151 @@ exports[`Storyshots Navbar desktop 1`] = `
     <div
       data-css-1ns9ldv=""
     >
-      <span
-        className={
+      <div
+        style={
           Object {
-            "data-css-ruxays": "",
+            "display": "inline-block",
+            "marginRight": "4px",
           }
         }
       >
-        <div
-          data-css-1ij5lym=""
+        <span
+          className={
+            Object {
+              "data-css-ruxays": "",
+            }
+          }
         >
-          <button
-            data-css-11n5d38=""
-            icon={<HomeIcon />}
+          <div
+            data-css-1ij5lym=""
           >
-            <span
-              className={
-                Object {
-                  "data-css-50rv4t": "",
-                }
-              }
+            <button
+              data-css-11n5d38=""
+              icon={<HomeIcon />}
             >
               <span
                 className={
                   Object {
-                    "data-css-1o9ctb7": "",
+                    "data-css-50rv4t": "",
                   }
                 }
               >
-                <div
-                  data-css-7dab2f=""
+                <span
+                  className={
+                    Object {
+                      "data-css-1o9ctb7": "",
+                    }
+                  }
                 >
-                  <svg
-                    aria-label="home icon"
-                    role="img"
-                    viewBox="0 0 24 24"
+                  <div
+                    data-css-7dab2f=""
                   >
-                    <path
-                      clipRule="evenodd"
-                      d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </div>
-              </span>
-              <span
-                className={
-                  Object {
-                    "data-css-1c3u483": "",
+                    <svg
+                      aria-label="home icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </span>
+                <span
+                  className={
+                    Object {
+                      "data-css-1c3u483": "",
+                    }
                   }
-                }
-              >
-                Home
+                >
+                  Home
+                </span>
               </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className={
-            Object {
-              "data-css-1pe8c3g": "",
+            </button>
+          </div>
+          <div
+            className={
+              Object {
+                "data-css-1pe8c3g": "",
+              }
             }
-          }
-        />
-      </span>
-      <span
-        className={
+          />
+        </span>
+      </div>
+      <div
+        style={
           Object {
-            "data-css-ruxays": "",
+            "display": "inline-block",
           }
         }
       >
-        <div
-          data-css-1ij5lym=""
+        <span
+          className={
+            Object {
+              "data-css-ruxays": "",
+            }
+          }
         >
-          <button
-            data-css-15wi3dl=""
-            icon={<BrowseIcon />}
+          <div
+            data-css-1ij5lym=""
           >
-            <span
-              className={
-                Object {
-                  "data-css-50rv4t": "",
-                }
-              }
+            <button
+              data-css-15wi3dl=""
+              icon={<BrowseIcon />}
             >
               <span
                 className={
                   Object {
-                    "data-css-1o9ctb7": "",
+                    "data-css-50rv4t": "",
                   }
                 }
               >
-                <div
-                  data-css-7dab2f=""
+                <span
+                  className={
+                    Object {
+                      "data-css-1o9ctb7": "",
+                    }
+                  }
                 >
-                  <svg
-                    aria-label="browse icon"
-                    role="img"
-                    viewBox="0 0 24 24"
+                  <div
+                    data-css-7dab2f=""
                   >
-                    <path
-                      clipRule="evenodd"
-                      d="M3 9h18a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V10a1 1 0 011-1zm1 2v8h16v-8H4zm1-5h14a1 1 0 011 1v1H4V7a1 1 0 011-1zm3-3h8a1 1 0 011 1v1H7V4a1 1 0 011-1z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </div>
-              </span>
-              <span
-                className={
-                  Object {
-                    "data-css-1c3u483": "",
+                    <svg
+                      aria-label="browse icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M3 9h18a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V10a1 1 0 011-1zm1 2v8h16v-8H4zm1-5h14a1 1 0 011 1v1H4V7a1 1 0 011-1zm3-3h8a1 1 0 011 1v1H7V4a1 1 0 011-1z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </span>
+                <span
+                  className={
+                    Object {
+                      "data-css-1c3u483": "",
+                    }
                   }
-                }
-              >
-                Browse
+                >
+                  Browse
+                </span>
               </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className={
-            Object {
-              "data-css-1x5c7ce": "",
+            </button>
+          </div>
+          <div
+            className={
+              Object {
+                "data-css-1x5c7ce": "",
+              }
             }
-          }
-        />
-      </span>
+          />
+        </span>
+      </div>
     </div>
     <div
       data-css-jgr69u=""
@@ -661,17 +678,127 @@ exports[`Storyshots Navbar desktop 1`] = `
       <div
         style={
           Object {
-            "alignItems": "center",
-            "border": "2px dashed #E7558B",
-            "color": "#E7558B",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-            "padding": "0 16px",
+            "display": "inline-block",
+            "marginRight": "4px",
           }
         }
       >
-        Utility
+        <span
+          className={
+            Object {
+              "data-css-ruxays": "",
+            }
+          }
+        >
+          <div
+            data-css-1ij5lym=""
+          >
+            <button
+              data-css-11n5d38=""
+              icon={<NotificationsIcon />}
+            >
+              <span
+                className={
+                  Object {
+                    "data-css-50rv4t": "",
+                  }
+                }
+              >
+                <span
+                  className={
+                    Object {
+                      "data-css-1009u4g": "",
+                    }
+                  }
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="notifications icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M19.6 16.1c-1-1-1.2-3-1.2-4.1V9.9c0-2.8-1.9-5.2-4.4-6.1-.1-1-1-1.8-2-1.8s-1.9.8-2 1.8c-2.5.9-4.4 3.3-4.4 6.1v2.2c0 1.1-.2 3.1-1.2 4.1-.3.1-.4.4-.4.7 0 .6.5 1.1 1.1 1.1H19c.6 0 1.1-.5 1.1-1.1-.1-.3-.2-.6-.5-.8zM6.8 16c.573-1.146.69-2.566.786-3.736L7.6 12.1V9.9c0-2.4 2-4.4 4.4-4.4 2.4 0 4.4 2 4.4 4.4v2.2c0 1.2.2 2.6.8 3.9H6.8zm8.2 3c0 1.7-1.3 3-3 3s-3-1.3-3-3h6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            className={
+              Object {
+                "data-css-1pe8c3g": "",
+              }
+            }
+          />
+        </span>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <span
+          className={
+            Object {
+              "data-css-ruxays": "",
+            }
+          }
+        >
+          <div
+            data-css-1ij5lym=""
+          >
+            <button
+              data-css-11n5d38=""
+              icon={<AccountIcon />}
+            >
+              <span
+                className={
+                  Object {
+                    "data-css-50rv4t": "",
+                  }
+                }
+              >
+                <span
+                  className={
+                    Object {
+                      "data-css-1009u4g": "",
+                    }
+                  }
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="account icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 2c1.103 0 2 .898 2 2v16c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2V4c0-1.102.897-2 2-2h16zm-4 18h4.001L20 4h-4v3h-2V4h-4v8H8V4H4v16h4v-3h2v3h4v-8h2v8zM6 13h6v3H6v-3zm6-5h6v3h-6V8z"
+                      />
+                    </svg>
+                  </div>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            className={
+              Object {
+                "data-css-1pe8c3g": "",
+              }
+            }
+          />
+        </span>
       </div>
     </div>
     <div>

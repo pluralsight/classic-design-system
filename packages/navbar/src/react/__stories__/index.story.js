@@ -1,6 +1,11 @@
 import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
-import { HomeIcon, BrowseIcon } from '@pluralsight/ps-design-system-icon'
+import {
+  AccountIcon,
+  HomeIcon,
+  BrowseIcon,
+  NotificationsIcon
+} from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import PropTypes from 'prop-types'
@@ -34,15 +39,46 @@ storiesOf('Navbar', module).add('desktop', _ => (
       brand={<SkillsBrand onClick={() => alert('home')} />}
       items={
         <>
-          <NavItem icon={<HomeIcon />}>Home</NavItem>
-          <NavItem icon={<BrowseIcon />} selected>
-            Browse
-          </NavItem>
+          <div
+            style={{
+              marginRight: layout.spacingXXSmall,
+              display: 'inline-block'
+            }}
+          >
+            <NavItem icon={<HomeIcon />}>Home</NavItem>
+          </div>
+          <div
+            style={{
+              display: 'inline-block'
+            }}
+          >
+            <NavItem icon={<BrowseIcon />} selected>
+              Browse
+            </NavItem>
+          </div>
         </>
       }
       onMobileMenuClick={() => alert('mobile click')}
       user={<Filler>User</Filler>}
-      utility={<Filler>Utility</Filler>}
+      utility={
+        <>
+          <div
+            style={{
+              marginRight: layout.spacingXXSmall,
+              display: 'inline-block'
+            }}
+          >
+            <NavItem icon={<NotificationsIcon />} />
+          </div>
+          <div
+            style={{
+              display: 'inline-block'
+            }}
+          >
+            <NavItem icon={<AccountIcon />} />
+          </div>
+        </>
+      }
     />
   </Grid>
 ))
