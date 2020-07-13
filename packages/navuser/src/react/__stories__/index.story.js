@@ -16,6 +16,18 @@ storiesOf('Navuser', module).add('states', _ => (
       name="Jake Trent"
       planName="Accenture"
     />
+    <NavUser
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+      name="Jake Trent"
+      planName="Accenture"
+      href="https://jaketrent.com"
+    />
+    <NavUser
+      src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
+      name="Jake Trent"
+      planName="Accenture"
+      onClick={() => alert('clicked')}
+    />
   </Grid>
 ))
 
