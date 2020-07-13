@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@9.0.8...@pluralsight/ps-design-system-carousel@9.1.0) (2020-07-02)
+
+
+### Features
+
+* **carousel:** fixes transitioning of carousel ([#1047](https://github.com/pluralsight/design-system/issues/1047)) ([ae96a21](https://github.com/pluralsight/design-system/commit/ae96a2130158165aa42880c4a3e64b6415d13614))
+
+
+
+
+
 ## [9.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@9.0.7...@pluralsight/ps-design-system-carousel@9.0.8) (2020-06-25)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel
