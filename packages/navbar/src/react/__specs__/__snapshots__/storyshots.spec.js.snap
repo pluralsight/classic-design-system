@@ -802,21 +802,7 @@ exports[`Storyshots Navbar desktop 1`] = `
       </div>
     </div>
     <div>
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px dashed #E7558B",
-            "color": "#E7558B",
-            "display": "flex",
-            "height": "100%",
-            "justifyContent": "center",
-            "padding": "0 16px",
-          }
-        }
-      >
-        User
-      </div>
+      <div />
     </div>
   </div>
 </div>

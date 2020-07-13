@@ -8,6 +8,7 @@ import {
 } from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavItem from '@pluralsight/ps-design-system-navitem'
+import NavUser from '@pluralsight/ps-design-system-navuser'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -59,7 +60,13 @@ storiesOf('Navbar', module).add('desktop', _ => (
         </>
       }
       onMobileMenuClick={() => alert('mobile click')}
-      user={<Filler>User</Filler>}
+      user={
+        <NavUser
+          name="Jake"
+          planName="Accenture"
+          onClick={() => alert('user click')}
+        />
+      }
       utility={
         <>
           <div
