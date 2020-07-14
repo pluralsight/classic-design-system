@@ -5,9 +5,7 @@ import Navuser from '../index.js'
 
 describe('Navuser', () => {
   it('renders', () => {
-    const { getByTestId } = render(
-      <Navuser data-testid="undertest" />
-    )
+    const { getByTestId } = render(<Navuser data-testid="undertest" />)
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
@@ -15,9 +13,7 @@ describe('Navuser', () => {
   it('forwards refs', () => {
     const ref = React.createRef()
 
-    const { getByTestId } = render(
-      <Navuser ref={ref} />
-    )
+    render(<Navuser ref={ref} />)
 
     expect(ref.current).not.toBeNull()
   })
