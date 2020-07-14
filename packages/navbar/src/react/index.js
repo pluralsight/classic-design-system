@@ -35,7 +35,7 @@ const NavBar = React.forwardRef((props, forwardedRef) => {
     </div>
   )
 })
-
+NavBar.displayName = 'NavBar'
 NavBar.propTypes = {
   brand: PropTypes.node,
   items: PropTypes.node,
