@@ -24,8 +24,8 @@ storiesOf('Navuser', module).add('states', _ => (
     />
     <NavUser
       src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
-      name="Jake Trent"
-      planName="Accenture Company"
+      name="Jake Trent Name That is Long"
+      planName="Accenture Company Name That is Long"
       onClick={() => alert('clicked')}
     />
   </Grid>

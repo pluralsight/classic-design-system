@@ -18,7 +18,7 @@ export default {
   },
   '.psds-navuser--clickable': {
     cursor: 'pointer',
-    
+
     '&:hover, &:focus': {
       background: transparentize(0.85, colorsBackgroundUtility.base)
     },
@@ -32,9 +32,13 @@ export default {
   '.psds-navuser__plan-name': {
     color: colorsTextIcon.lowOnDark,
     fontSize: '11px',
-    fontWeight: type.fontWeightBook
+    fontWeight: type.fontWeightBook,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'
   },
   '.psds-navuser__name': {
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
     fontSize: '12px'
   },
   '.psds-navuser__words': {
@@ -42,6 +46,8 @@ export default {
     lineHeight: '16px',
     marginLeft: layout.spacingXSmall,
     fontWeight: type.fontWeightMedium,
-    textAlign: 'left'
+    textAlign: 'left',
+    whiteSpace: 'nowrap',
+    maxWidth: '120px'
   }
 }
