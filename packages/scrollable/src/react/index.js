@@ -88,18 +88,18 @@ const Scrollable = forwardRef((props, forwardedRef) => {
   }
 
   function onHandleDragStart(evt) {
-    evt.dataTransfer.setDragImage(dragPreview.current, 0, 0)
+    if (evt.dataTransfer?.setDragImage) {
+      evt.dataTransfer.setDragImage(dragPreview.current, 0, 0)
+    }
 
     setPageY(evt.pageY)
   }
 
   const styleOverride = useMemo(() => {
     const height = Math.max(scrollRatio * 100, 10) + '%'
+    const visibility = hidden ? 'hidden' : 'initial'
 
-    return compose(
-      css({ height, top: offset }),
-      hidden && css({ visibility: 'hidden' })
-    )
+    return css({ height, top: offset, visibility })
   }, [hidden, offset, scrollRatio])
 
   return (

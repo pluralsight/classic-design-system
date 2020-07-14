@@ -53,6 +53,7 @@ export default {
   '.psds-scrollable__handle--grabbed': {
     label: 'scrollable__handle--grabbed',
 
+    opacity: 1,
     userSelect: 'none'
   }
 }
