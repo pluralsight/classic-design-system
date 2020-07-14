@@ -130,7 +130,7 @@ exports[`Storyshots Navuser states 1`] = `
     data-css-1ij5lym=""
   >
     <a
-      data-css-1xhohig=""
+      data-css-6uwj3a=""
       href="https://jaketrent.com"
       name="Jake Trent"
     >
@@ -176,7 +176,7 @@ exports[`Storyshots Navuser states 1`] = `
     data-css-1ij5lym=""
   >
     <button
-      data-css-1xhohig=""
+      data-css-6uwj3a=""
       name="Jake Trent"
       onClick={[Function]}
     >
