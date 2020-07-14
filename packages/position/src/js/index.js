@@ -7,19 +7,23 @@ const clipAdjust = {
   ],
   below: ({ x, y, elRect, targetRect, opts }) => [
     [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
-    y > window.innerHeight
+    y > window.innerHeight + window.pageYOffset
       ? targetRect.top - (elRect.height + opts.bufferWidth)
       : y
   ],
   leftOf: ({ x, y, elRect, targetRect, opts }) => [
     x < 0 ? targetRect.right + opts.bufferWidth : x,
-    [0, y, window.innerHeight - elRect.height].sort((a, b) => a - b)[1]
+    [0, y, window.innerHeight + window.pageYOffset - elRect.height].sort(
+      (a, b) => a - b
+    )[1]
   ],
   rightOf: ({ x, y, elRect, targetRect, opts }) => [
     x > window.innerWidth
       ? targetRect.left - elRect.width - opts.bufferWidth
       : x,
-    [0, y, window.innerHeight - elRect.height].sort((a, b) => a - b)[1]
+    [0, y, window.innerHeight + window.pageYOffset - elRect.height].sort(
+      (a, b) => a - b
+    )[1]
   ]
 }
 
