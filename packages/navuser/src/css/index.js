@@ -17,6 +17,8 @@ export default {
     borderRadius: '2px'
   },
   '.psds-navuser--clickable': {
+    cursor: 'pointer',
+    
     '&:hover, &:focus': {
       background: transparentize(0.85, colorsBackgroundUtility.base)
     },
