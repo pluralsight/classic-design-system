@@ -1,4 +1,7 @@
-import { layout } from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundDark,
+  layout
+} from '@pluralsight/ps-design-system-core'
 
 export default {
   '.psds-navbar': {
@@ -6,7 +9,10 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '56px',
-    padding: layout.spacingXSmall
+    padding: layout.spacingXSmall,
+    background: colorsBackgroundDark[2],
+    borderBottom: `1px solid ${colorsBackgroundDark[3]}`,
+    boxShadow: 'rgba(0, 0, 0, 0.5) 0px 0 8px 0px'
   },
   '.psds-navbar__brand': {
     marginRight: layout.spacingMedium
