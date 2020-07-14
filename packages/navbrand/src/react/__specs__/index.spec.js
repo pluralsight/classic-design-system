@@ -5,9 +5,7 @@ import Navbrand from '../index.js'
 
 describe('Navbrand', () => {
   it('renders', () => {
-    const { getByTestId } = render(
-      <Navbrand data-testid="undertest" />
-    )
+    const { getByTestId } = render(<Navbrand data-testid="undertest" />)
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
@@ -15,9 +13,7 @@ describe('Navbrand', () => {
   it('forwards refs', () => {
     const ref = React.createRef()
 
-    const { getByTestId } = render(
-      <Navbrand ref={ref} />
-    )
+    render(<Navbrand ref={ref} />)
 
     expect(ref.current).not.toBeNull()
   })
