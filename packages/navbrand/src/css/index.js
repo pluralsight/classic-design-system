@@ -10,7 +10,9 @@ export default {
   '.psds-navbrand': {
     display: 'flex',
     alignItems: 'center',
-    padding: layout.spacingXSmall
+    padding: layout.spacingXSmall,
+    borderRadius: '2px',
+    height: '40px'
   },
   // TODO: handle hover and focus
   '.psds-navbrand--clickable': {
