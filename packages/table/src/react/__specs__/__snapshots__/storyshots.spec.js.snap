@@ -470,6 +470,7 @@ exports[`Storyshots columnHeader align center w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-vb7sgq=""
       role="columnheader"
       style={Object {}}
@@ -524,6 +525,7 @@ exports[`Storyshots columnHeader align left w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -578,6 +580,7 @@ exports[`Storyshots columnHeader align right w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1793321=""
       role="columnheader"
       style={Object {}}
@@ -657,6 +660,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-vb7sgq=""
       role="columnheader"
       style={Object {}}
@@ -678,6 +682,7 @@ exports[`Storyshots columnHeader long, align center w/ sort 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-vb7sgq=""
       role="columnheader"
       style={Object {}}
@@ -712,6 +717,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -733,6 +739,7 @@ exports[`Storyshots columnHeader long, align left w/ sort 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -767,6 +774,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1793321=""
       role="columnheader"
       style={Object {}}
@@ -788,6 +796,7 @@ exports[`Storyshots columnHeader long, align right w/ sort 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1793321=""
       role="columnheader"
       style={Object {}}
@@ -822,6 +831,7 @@ exports[`Storyshots columnHeader sort asc 1`] = `
     role="row"
   >
     <div
+      aria-sort="ascending"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -855,50 +865,68 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     data-css-lmjdxe=""
     role="row"
   >
-    <button
-      data-css-1yecw7w=""
-      onClick={[Function]}
+    <div
+      aria-sort="ascending"
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
-      active header
-      <div
-        data-css-1pv1hob=""
-        data-css-7dab2f=""
+      <button
+        data-css-1vzhat4=""
+        onClick={[Function]}
       >
-        <svg
-          aria-label="sort desc icon"
-          role="img"
-          viewBox="0 0 24 24"
+        <div
+          data-css-tdspsj=""
         >
-          <path
-            d="M11.646 5.354L7.354 9.646a.5.5 0 000 .707l.703.704a.5.5 0 00.707 0L11 8.827V17.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5V8.827l2.236 2.23a.5.5 0 00.707 0l.704-.704a.5.5 0 000-.707l-4.293-4.292a.5.5 0 00-.707 0z"
-          />
-        </svg>
-      </div>
-    </button>
-    <button
-      data-css-1pztpqq=""
-      onClick={[Function]}
+          active header
+          <div
+            data-css-1pv1hob=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="sort desc icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.646 5.354L7.354 9.646a.5.5 0 000 .707l.703.704a.5.5 0 00.707 0L11 8.827V17.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5V8.827l2.236 2.23a.5.5 0 00.707 0l.704-.704a.5.5 0 000-.707l-4.293-4.292a.5.5 0 00-.707 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      aria-sort="none"
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
-      other sortable
-      <div
-        data-css-1pv1hob=""
-        data-css-7dab2f=""
+      <button
+        data-css-1vzhat4=""
+        onClick={[Function]}
       >
-        <svg
-          aria-label="sort icon"
-          role="img"
-          viewBox="0 0 24 24"
+        <div
+          data-css-tdspsj=""
         >
-          <path
-            d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
-          />
-        </svg>
-      </div>
-    </button>
+          other sortable
+          <div
+            data-css-1pv1hob=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="sort icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+    </div>
     <div
       data-css-1whtcij=""
       role="columnheader"
@@ -920,6 +948,7 @@ exports[`Storyshots columnHeader sort default 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -953,50 +982,68 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     data-css-lmjdxe=""
     role="row"
   >
-    <button
-      data-css-1pztpqq=""
-      onClick={[Function]}
+    <div
+      aria-sort="none"
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
-      active header
-      <div
-        data-css-1pv1hob=""
-        data-css-7dab2f=""
+      <button
+        data-css-1vzhat4=""
+        onClick={[Function]}
       >
-        <svg
-          aria-label="sort icon"
-          role="img"
-          viewBox="0 0 24 24"
+        <div
+          data-css-tdspsj=""
         >
-          <path
-            d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
-          />
-        </svg>
-      </div>
-    </button>
-    <button
-      data-css-1pztpqq=""
-      onClick={[Function]}
+          active header
+          <div
+            data-css-1pv1hob=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="sort icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      aria-sort="none"
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
-      other sortable
-      <div
-        data-css-1pv1hob=""
-        data-css-7dab2f=""
+      <button
+        data-css-1vzhat4=""
+        onClick={[Function]}
       >
-        <svg
-          aria-label="sort icon"
-          role="img"
-          viewBox="0 0 24 24"
+        <div
+          data-css-tdspsj=""
         >
-          <path
-            d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
-          />
-        </svg>
-      </div>
-    </button>
+          other sortable
+          <div
+            data-css-1pv1hob=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="sort icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -1011,6 +1058,7 @@ exports[`Storyshots columnHeader sort desc 1`] = `
     role="row"
   >
     <div
+      aria-sort="descending"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1044,50 +1092,68 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     data-css-lmjdxe=""
     role="row"
   >
-    <button
-      data-css-1yecw7w=""
-      onClick={[Function]}
+    <div
+      aria-sort="descending"
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
-      active header
-      <div
-        data-css-1pv1hob=""
-        data-css-7dab2f=""
+      <button
+        data-css-1vzhat4=""
+        onClick={[Function]}
       >
-        <svg
-          aria-label="sort desc icon"
-          role="img"
-          viewBox="0 0 24 24"
+        <div
+          data-css-tdspsj=""
         >
-          <path
-            d="M11 15.173l-2.236-2.23a.5.5 0 00-.707 0l-.703.703a.5.5 0 000 .708l4.292 4.292a.5.5 0 00.707 0l4.293-4.292a.5.5 0 000-.708l-.703-.703a.5.5 0 00-.707 0L13 15.173V6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v8.673z"
-          />
-        </svg>
-      </div>
-    </button>
-    <button
-      data-css-1pztpqq=""
-      onClick={[Function]}
+          active header
+          <div
+            data-css-1pv1hob=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="sort desc icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11 15.173l-2.236-2.23a.5.5 0 00-.707 0l-.703.703a.5.5 0 000 .708l4.292 4.292a.5.5 0 00.707 0l4.293-4.292a.5.5 0 000-.708l-.703-.703a.5.5 0 00-.707 0L13 15.173V6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v8.673z"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      aria-sort="none"
+      data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
     >
-      other sortable
-      <div
-        data-css-1pv1hob=""
-        data-css-7dab2f=""
+      <button
+        data-css-1vzhat4=""
+        onClick={[Function]}
       >
-        <svg
-          aria-label="sort icon"
-          role="img"
-          viewBox="0 0 24 24"
+        <div
+          data-css-tdspsj=""
         >
-          <path
-            d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
-          />
-        </svg>
-      </div>
-    </button>
+          other sortable
+          <div
+            data-css-1pv1hob=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="sort icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </button>
+    </div>
     <div
       data-css-1whtcij=""
       role="columnheader"
@@ -1129,6 +1195,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1150,6 +1217,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1253,6 +1321,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
     role="row"
   >
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}
@@ -1274,6 +1343,7 @@ exports[`Storyshots columnHeader w/ rows 1`] = `
       </div>
     </div>
     <div
+      aria-sort="none"
       data-css-1whtcij=""
       role="columnheader"
       style={Object {}}

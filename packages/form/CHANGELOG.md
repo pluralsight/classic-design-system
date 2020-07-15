@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@6.0.2...@pluralsight/ps-design-system-form@6.0.3) (2020-07-02)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@6.0.1...@pluralsight/ps-design-system-form@6.0.2) (2020-06-25)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@6.0.0...@pluralsight/ps-design-system-form@6.0.1) (2020-06-17)
+
+
+### Bug Fixes
+
+* **switch:** html semantics and a11y ([#1028](https://github.com/pluralsight/design-system/issues/1028)) ([88d6d49](https://github.com/pluralsight/design-system/commit/88d6d4902a013111edf11d0143fcc861e2855361))
+
+
+
+
+
 # [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@5.1.0...@pluralsight/ps-design-system-form@6.0.0) (2020-05-19)
 
 

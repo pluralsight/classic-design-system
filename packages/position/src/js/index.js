@@ -1,5 +1,32 @@
 const defaultOptions = { bufferWidth: 12 }
 
+const clipAdjust = {
+  above: ({ x, y, elRect, targetRect, opts }) => [
+    [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
+    y < 0 ? targetRect.bottom + opts.bufferWidth : y
+  ],
+  below: ({ x, y, elRect, targetRect, opts }) => [
+    [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
+    y > window.innerHeight + window.pageYOffset
+      ? targetRect.top - (elRect.height + opts.bufferWidth)
+      : y
+  ],
+  leftOf: ({ x, y, elRect, targetRect, opts }) => [
+    x < 0 ? targetRect.right + opts.bufferWidth : x,
+    [0, y, window.innerHeight + window.pageYOffset - elRect.height].sort(
+      (a, b) => a - b
+    )[1]
+  ],
+  rightOf: ({ x, y, elRect, targetRect, opts }) => [
+    x > window.innerWidth
+      ? targetRect.left - elRect.width - opts.bufferWidth
+      : x,
+    [0, y, window.innerHeight + window.pageYOffset - elRect.height].sort(
+      (a, b) => a - b
+    )[1]
+  ]
+}
+
 export function above(target) {
   if (!target) throw new TypeError('target element required')
 
@@ -17,7 +44,9 @@ export function above(target) {
         elRect.width / 2
       const y =
         window.pageYOffset + targetRect.top - elRect.height - opts.bufferWidth
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.above({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }
@@ -36,7 +65,9 @@ export function aboveLeft(target) {
       const y =
         window.pageYOffset + targetRect.top - elRect.height - opts.bufferWidth
 
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.above({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }
@@ -56,7 +87,9 @@ export function aboveRight(target) {
       const y =
         window.pageYOffset + targetRect.top - elRect.height - opts.bufferWidth
 
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.above({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }
@@ -81,7 +114,9 @@ export function rightOf(target) {
         targetRect.top +
         targetRect.height / 2 -
         elRect.height / 2
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.rightOf({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }
@@ -107,7 +142,9 @@ export function below(target) {
         targetRect.height +
         opts.bufferWidth
 
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.below({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }
@@ -121,6 +158,7 @@ export function belowLeft(target) {
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
+      const elRect = el.getBoundingClientRect()
       const x = window.pageXOffset + targetRect.left
       const y =
         window.pageYOffset +
@@ -128,7 +166,9 @@ export function belowLeft(target) {
         targetRect.height +
         opts.bufferWidth
 
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.below({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }
@@ -151,7 +191,9 @@ export function belowRight(target) {
         targetRect.height +
         opts.bufferWidth
 
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.below({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }
@@ -173,7 +215,9 @@ export function leftOf(target) {
         targetRect.top +
         targetRect.height / 2 -
         elRect.height / 2
-      return formatOutputAsStyles(x, y)
+      return formatOutputAsStyles(
+        ...clipAdjust.leftOf({ x, y, targetRect, elRect, opts })
+      )
     }
   }
 }

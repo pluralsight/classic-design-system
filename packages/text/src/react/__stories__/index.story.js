@@ -123,7 +123,58 @@ storiesOf('P', module)
   .add('style override', _ => <P style={style}>pink</P>)
   .add('className override', _ => <P className={className}>orange</P>)
 
-const list = storiesOf('List', module).addDecorator(PaddingDecorator)
+const list = storiesOf('List', module)
+  .addDecorator(PaddingDecorator)
+  .add('mixed liste', () => (
+    <div>
+      <List type="bulleted">
+        <List.Item>one</List.Item>
+        <List.Item>two</List.Item>
+        <List.Item>
+          <List type="numbered">
+            <List.Item>one</List.Item>
+            <List.Item>two</List.Item>
+            <List.Item>three</List.Item>
+            <List.Item>
+              <List>
+                <List.Item>one</List.Item>
+                <List.Item>two</List.Item>
+                <List.Item>three</List.Item>
+                <List.Item>four</List.Item>
+                <List.Item>five</List.Item>
+              </List>
+            </List.Item>
+            <List.Item>five</List.Item>
+          </List>
+        </List.Item>
+        <List.Item>four</List.Item>
+        <List.Item>five</List.Item>
+      </List>
+      <List style={{ marginTop: 50 }}>
+        <List.Item>one</List.Item>
+        <List.Item>two</List.Item>
+        <List.Item>
+          <List type="bulleted">
+            <List.Item>one</List.Item>
+            <List.Item>two</List.Item>
+            <List.Item>
+              <List type="numbered">
+                <List.Item>one</List.Item>
+                <List.Item>two</List.Item>
+                <List.Item>three</List.Item>
+                <List.Item>four</List.Item>
+                <List.Item>five</List.Item>
+              </List>
+            </List.Item>
+            <List.Item>four</List.Item>
+            <List.Item>five</List.Item>
+          </List>
+        </List.Item>
+        <List.Item>four</List.Item>
+        <List.Item>five</List.Item>
+      </List>
+    </div>
+  ))
 Object.keys(List.types).forEach(typeProp =>
   list.add(`type: ${typeProp}`, _ => (
     <List type={typeProp}>

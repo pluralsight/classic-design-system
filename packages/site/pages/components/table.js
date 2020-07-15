@@ -94,18 +94,20 @@ class InAppExample extends React.Component {
         <Theme name={props.themeName}>
           <Table>
             <Table.Row>
-              {state.fields.map(field => (
-                <Table.ColumnHeader
-                  align={field.align}
-                  key={field.key}
-                  onClick={evt => handleSortClick(field.key, evt)}
-                  sort={
-                    state.sortKey === field.key ? state.sortDirection : true
-                  }
-                >
-                  {field.name}
-                </Table.ColumnHeader>
-              ))}
+              {state.fields.map(field => {
+                return (
+                  <Table.ColumnHeader
+                    align={field.align}
+                    key={field.key}
+                    onClick={(_, dir) => handleSortClick(field.key, dir)}
+                    sort={
+                      state.sortKey === field.key ? state.sortDirection : true
+                    }
+                  >
+                    {field.name}
+                  </Table.ColumnHeader>
+                )
+              })}
             </Table.Row>
             {state.rows.sort(sortRows).map(row => (
               <Table.Row key={row.name}>
@@ -137,6 +139,94 @@ class InAppExample extends React.Component {
               : core.colorsBackgroundDark[2]};
           }
         `}</style>
+        <Code
+          lang="javascript"
+          collapsible
+        >{`class InAppExample extends React.Component {
+          constructor(props) {
+            super(props)
+            this.state = {
+              fields: [
+                { key: 'name', name: 'Name', align: Table.aligns.left },
+                { key: 'courses', name: 'Unique Courses', align: Table.aligns.right },
+                { key: 'viewTime', name: 'View Time', align: Table.aligns.right }
+              ],
+              sortKey: 'name',
+              sortDirection: Table.sorts.asc,
+              rows: [
+                {
+                  name: 'Tod Gentille',
+                  courses: 41,
+                  viewTime: 839
+                },
+                {
+                  name: 'Dmitry Borodyansky',
+                  courses: 2,
+                  viewTime: 12
+                },
+                {
+                  name: 'Jake Trent',
+                  courses: 7,
+                  viewTime: 294
+                }
+              ]
+            }
+            this.handleSortClick = this.handleSortClick.bind(this)
+            this.sortRows = this.sortRows.bind(this)
+          }
+        
+          handleSortClick(sortKey, sortDirection) {
+            this.setState({ sortKey, sortDirection })
+          }
+        
+          sortRows(row1, row2) {
+            const { state } = this
+            const [rowA, rowB] =
+              state.sortDirection === Table.sorts.asc ? [row1, row2] : [row2, row1]
+            return typeof rowA[state.sortKey] === 'string'
+              ? rowA[state.sortKey].localeCompare(rowB[state.sortKey])
+              : rowA[state.sortKey] - rowB[state.sortKey]
+          }
+        
+          render() {
+            const { handleSortClick, props, sortRows, state } = this
+            return (
+              <Table>
+                <Table.Row>
+                  {state.fields.map(field => {
+                    return (
+                      <Table.ColumnHeader
+                        align={field.align}
+                        key={field.key}
+                        onClick={(_, dir) => handleSortClick(field.key, dir)}
+                        sort={state.sortKey === field.key ? state.sortDirection : true}
+                      >
+                        {field.name}
+                      </Table.ColumnHeader>
+                    )
+                  })}
+                </Table.Row>
+                {state.rows.sort(sortRows).map(row => (
+                  <Table.Row key={row.name}>
+                    <Table.Cell>
+                      <Avatar
+                        name={row.name}
+                        size={Avatar.sizes.xSmall}
+                        style={{ minWidth: Avatar.widths.xSmall }}
+                      />
+                      <div style={{ marginLeft: core.layout.spacingSmall }}>
+                        {row.name}
+                      </div>
+                    </Table.Cell>
+                    <Table.Cell align={Table.aligns.right}>{row.courses}</Table.Cell>
+                    <Table.Cell align={Table.aligns.right}>{row.viewTime}m</Table.Cell>
+                  </Table.Row>
+                ))}
+              </Table>
+            )
+          }
+        }
+        `}</Code>
       </div>
     )
   }
@@ -236,7 +326,7 @@ export default _ => (
               </span>,
               null,
               null,
-              'triggered on header click, returns new sort direction'
+              'triggered on header click, returns event as first argument. If sort prop applied new sort direction returned as second argument '
             ]),
             PropTypes.row([
               'sort',

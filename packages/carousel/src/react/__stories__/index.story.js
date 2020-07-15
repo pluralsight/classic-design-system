@@ -132,17 +132,17 @@ storiesOf('Carousel/items', module)
 
 storiesOf('Carousel/controls', module).add('custom alignment', _ => (
   <Carousel
-    controls={
-      <Carousel.Controls>
-        <Carousel.Control
-          direction={Carousel.Control.directions.prev}
-          style={{ top: '33%' }}
-        />
-        <Carousel.Control
-          direction={Carousel.Control.directions.next}
-          style={{ top: '33%' }}
-        />
-      </Carousel.Controls>
+    controlPrev={
+      <Carousel.Control
+        direction={Carousel.Control.directions.prev}
+        style={{ top: '33%' }}
+      />
+    }
+    controlNext={
+      <Carousel.Control
+        direction={Carousel.Control.directions.next}
+        style={{ top: '33%' }}
+      />
     }
   >
     {new Array(9).fill(null).map((_, index) => (
@@ -227,17 +227,17 @@ storiesOf('Carousel/with ActionMenu', module)
         <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
           <Carousel
             size={Carousel.sizes.wide}
-            controls={
-              <Carousel.Controls>
-                <Carousel.Control
-                  direction={Carousel.Control.directions.prev}
-                  onClick={_ => setOpen(false)}
-                />
-                <Carousel.Control
-                  direction={Carousel.Control.directions.next}
-                  onClick={_ => setOpen(false)}
-                />
-              </Carousel.Controls>
+            controlPrev={
+              <Carousel.Control
+                direction={Carousel.Control.directions.prev}
+                onClick={_ => setOpen(false)}
+              />
+            }
+            controlNext={
+              <Carousel.Control
+                direction={Carousel.Control.directions.next}
+                onClick={_ => setOpen(false)}
+              />
             }
           >
             <MockCard
@@ -305,17 +305,17 @@ storiesOf('Carousel/with ActionMenu', module)
         <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
           <Carousel
             size={Carousel.sizes.wide}
-            controls={
-              <Carousel.Controls>
-                <Carousel.Control
-                  direction={Carousel.Control.directions.prev}
-                  onClick={_ => openCourseMenu(-1)}
-                />
-                <Carousel.Control
-                  direction={Carousel.Control.directions.next}
-                  onClick={_ => openCourseMenu(-1)}
-                />
-              </Carousel.Controls>
+            controlPrev={
+              <Carousel.Control
+                direction={Carousel.Control.directions.prev}
+                onClick={_ => openCourseMenu(-1)}
+              />
+            }
+            controlNext={
+              <Carousel.Control
+                direction={Carousel.Control.directions.next}
+                onClick={_ => openCourseMenu(-1)}
+              />
             }
           >
             {MOCK_DATA.courses.map(course => (

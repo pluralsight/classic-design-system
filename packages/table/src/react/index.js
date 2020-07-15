@@ -40,6 +40,16 @@ const styles = {
       onClick && css(stylesheet[`.${label}--onclick.psds-theme--${themeName}`])
     )
   },
+  columnHeaderButton: () =>
+    css(stylesheet['.psds-table__column-header__button']),
+  columnHeaderButtonInner: props => {
+    const { align } = props
+    const label = 'psds-table__column-header'
+    return compose(
+      css(stylesheet[`.${label}__button-inner`]),
+      css(stylesheet[`.${label}--align-${align}`])
+    )
+  },
   columnHeaderIcon: _ => css(stylesheet['.psds-table__column-header__icon']),
   row: (themeName, { _tableHasDrawers }) => {
     const label = 'psds-table__row'
@@ -90,7 +100,7 @@ const getToggledSort = props =>
     [vars.sorts.desc]: vars.sorts.asc
   }[props.sort] || vars.sorts.asc)
 
-function ColumnHeader(props) {
+function ColumnHeader({ onClick, ...props }) {
   const themeName = useTheme()
   const Tag = props.onClick ? 'button' : 'div'
 
@@ -99,21 +109,43 @@ function ColumnHeader(props) {
   const style = props.style || {}
   if (props.flex && !style.flex) style.flex = props.flex
 
-  const handleClick = props.onClick
-    ? evt => props.onClick(getToggledSort(props), evt)
+  const handleClick = onClick
+    ? evt =>
+        onClick(...[evt, props.sort && getToggledSort(props)].filter(Boolean))
     : undefined
-
+  const children = onClick ? (
+    <button {...styles.columnHeaderButton()} onClick={handleClick}>
+      <div {...styles.columnHeaderButtonInner(props)}>
+        {props.children}
+        {props.sort && getSortIcon(props)}
+      </div>
+    </button>
+  ) : (
+    <>
+      {props.children}
+      {props.sort && getSortIcon(props)}
+    </>
+  )
+  const sort = {
+    ...(props.sort && {
+      'aria-sort':
+        props.sort === vars.sorts.desc
+          ? 'descending'
+          : props.sort === vars.sorts.asc
+          ? 'ascending'
+          : 'none'
+    })
+  }
   return (
-    <Tag
+    <div
       role="columnheader"
       {...styles.columnHeader(themeName, props, { active })}
       {...filterReactProps(props, { tagName: Tag })}
-      onClick={handleClick}
       style={style}
+      {...sort}
     >
-      {props.children}
-      {props.sort && getSortIcon(props)}
-    </Tag>
+      {children}
+    </div>
   )
 }
 

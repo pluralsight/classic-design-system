@@ -58,7 +58,7 @@ const styles = {
 }
 
 const Switch = React.forwardRef((props, forwardedRef) => {
-  const { checked, children, disabled, error, ...rest } = props
+  const { checked, children, disabled, onClick, error, ...rest } = props
 
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
@@ -72,8 +72,8 @@ const Switch = React.forwardRef((props, forwardedRef) => {
 
   function handleClick(evt) {
     if (disabled || !isFunction(props.onClick)) return
-
-    props.onClick(!props.checked)
+    evt.preventDefault()
+    onClick(!props.checked)
   }
 
   const handleFocus = combineFns(() => {
@@ -81,11 +81,11 @@ const Switch = React.forwardRef((props, forwardedRef) => {
   }, props.onFocus)
 
   return (
-    <button
+    <label
       aria-checked={checked}
       role="checkbox"
       {...styles.switch(themeName, props)}
-      {...filterReactProps(rest, { tagName: 'button' })}
+      {...filterReactProps(rest, { tagName: 'label' })}
       {...(disabled && { tabIndex: -1 })}
       onClick={handleClick}
       onBlur={handleBlur}
@@ -106,12 +106,12 @@ const Switch = React.forwardRef((props, forwardedRef) => {
         {...styles.checkbox()}
       />
 
-      {children && (
-        <label {...styles.label(themeName, props)}>{children}</label>
-      )}
-    </button>
+      {children && <span {...styles.label(themeName, props)}>{children}</span>}
+    </label>
   )
 })
+
+Switch.displayName = 'Switch'
 
 Switch.propTypes = {
   checked: PropTypes.bool,
