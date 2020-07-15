@@ -61,6 +61,7 @@ const NAV_CONFIG = [
       { href: '/featureflags', label: 'Feature Flags' },
       { href: '/icon', label: 'Icon Cli' },
       { href: '/position', label: 'Position' },
+      { href: '/scrollable', label: 'Scrollable' },
       { href: '/theme', label: 'Theme' },
       { href: '/screenreaderonly', label: 'Screen Reader Only' }
     ]

@@ -55,6 +55,7 @@
     "@pluralsight/ps-design-system-radio": "^7.0.1",
     "@pluralsight/ps-design-system-row": "^10.0.15",
     "@pluralsight/ps-design-system-screenreaderonly": "^2.0.8",
+    "@pluralsight/ps-design-system-scrollable": "*",
     "@pluralsight/ps-design-system-searchinput": "^5.0.18",
     "@pluralsight/ps-design-system-starrating": "^7.1.7",
     "@pluralsight/ps-design-system-switch": "^6.0.9",
