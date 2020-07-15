@@ -13,6 +13,7 @@ import PropTypes from 'prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import {
   combineFns,
+  shallowCompare,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
 
@@ -39,6 +40,11 @@ const styles = {
 const BLANK_IMAGE = new Image(0, 0)
 // prettier-ignore
 BLANK_IMAGE.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+function areEqualProps(prevProps, nextProps) {
+  const changed = shallowCompare(prevProps, nextProps)
+  return !changed
+}
 
 const Scrollable = forwardRef((props, forwardedRef) => {
   const { contentAs, ...rest } = props
@@ -126,13 +132,13 @@ Scrollable.propTypes = {
   contentAs: PropTypes.elementType
 }
 
-function Outer(props) {
+const Outer = React.memo(function OuterComp(props) {
   return <div {...styles.outer()} {...filterReactProps(props)} />
-}
+}, areEqualProps)
 
-function Inner(props) {
+const Inner = React.memo(function InnerComp(props) {
   return <div {...styles.inner()} {...props} />
-}
+}, areEqualProps)
 
 const Content = forwardRef((props, forwardedRef) => {
   const { as: Tag = 'div', ...rest } = props
