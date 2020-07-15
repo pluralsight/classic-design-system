@@ -8,7 +8,7 @@ import * as Text from '@pluralsight/ps-design-system-text'
 
 import Scrollable from '../index.js'
 
-storiesOf('components|Scrollable', module)
+storiesOf('components/Scrollable', module)
   .addDecorator(storyFn => (
     <div
       {...css({
