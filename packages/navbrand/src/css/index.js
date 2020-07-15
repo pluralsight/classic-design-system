@@ -1,5 +1,6 @@
 import {
   colorsBackgroundUtility,
+  colorsWhite,
   layout
 } from '@pluralsight/ps-design-system-core'
 
@@ -16,6 +17,7 @@ export default {
     cursor: 'pointer',
     background: 'none',
     border: 'none',
+    textDecoration: 'none',
 
     '&:hover, &:focus': {
       background: transparentize(0.85, colorsBackgroundUtility.base)
@@ -38,7 +40,12 @@ export default {
   },
   '.psds-navbrand__wordmark': {
     display: 'none',
-    lineHeight: 0
+    lineHeight: 0,
+    color: colorsWhite,
+    fontWeight: 900,
+    fontSize: '20px',
+    letterSpacing: '-.03em',
+    whiteSpace: 'nowrap'
   },
   '@media (min-width: 1200px)': {
     '.psds-navbrand__logo--wordmark': {
