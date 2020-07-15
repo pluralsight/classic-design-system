@@ -81,7 +81,6 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
-    "@welldone-software/why-did-you-render": "^4.2.5",
     "babel-loader": "^8.1.0",
     "babel-plugin-macros": "^2.6.1",
     "core-js": "^2.6.10",
