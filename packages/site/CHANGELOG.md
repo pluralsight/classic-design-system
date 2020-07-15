@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [19.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.4...@pluralsight/ps-design-system-site@19.0.5) (2020-07-15)
+
+
+### Bug Fixes
+
+* **position:** add yOffset to clipAdjust ([#1051](https://github.com/pluralsight/design-system/issues/1051)) ([5fed4c2](https://github.com/pluralsight/design-system/commit/5fed4c24b6eb710a03648497738d5e9aef4337f2))
+
+
+
+
+
 ## [19.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.3...@pluralsight/ps-design-system-site@19.0.4) (2020-07-03)
 
 

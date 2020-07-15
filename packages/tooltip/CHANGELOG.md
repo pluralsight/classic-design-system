@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.0.9...@pluralsight/ps-design-system-tooltip@6.0.10) (2020-07-15)
+
+
+### Bug Fixes
+
+* **tooltip:** accept child node proptypes ([9ec8c47](https://github.com/pluralsight/design-system/commit/9ec8c47a5351f97b71522b91ba56dc57923a99d2))
+
+
+
+
+
 ## [6.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.0.8...@pluralsight/ps-design-system-tooltip@6.0.9) (2020-06-25)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
