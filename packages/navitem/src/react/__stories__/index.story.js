@@ -29,10 +29,16 @@ const stories = storiesOf('NavItem', module)
 Object.keys(NavItem.alignments).forEach(key =>
   stories.add(NavItem.alignments[key], _ => (
     <Grid>
-      <NavItem alignment={NavItem.alignments[key]}>Text only</NavItem>
+      {NavItem.alignments[key] !== 'vertical' && (
+        <NavItem alignment={NavItem.alignments[key]}>Text only</NavItem>
+      )}
       <NavItem alignment={NavItem.alignments[key]} icon={<HomeIcon />}>
         With icon
       </NavItem>
+
+      {NavItem.alignments[key] !== 'vertical' && (
+        <NavItem alignment={NavItem.alignments[key]} icon={<HomeIcon />} />
+      )}
       <NavItem
         alignment={NavItem.alignments[key]}
         href="https://jaketrent.com"

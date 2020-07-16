@@ -7,7 +7,11 @@ import stylesheet from '../css/index.js'
 
 const styles = {
   caret: () => css(stylesheet['.psds-navitem__horz-caret']),
-  icon: () => css(stylesheet['.psds-navitem__horz-icon']),
+  icon: props =>
+    css(
+      stylesheet['.psds-navitem__horz-icon'],
+      !props.children && stylesheet['.psds-navitem__horz-icon--icon-only']
+    ),
   label: () => css(stylesheet['.psds-navitem__horz-label']),
   layout: props =>
     css(
@@ -28,14 +32,18 @@ HorzCaret.propTypes = {
 }
 
 export function HorzIcon(props) {
-  return props.icon ? <span className={styles.icon()}>{props.icon}</span> : null
+  return props.icon ? (
+    <span className={styles.icon(props)}>{props.icon}</span>
+  ) : null
 }
 HorzIcon.propTypes = {
   icon: PropTypes.element
 }
 
 export function HorzLabel(props) {
-  return <span className={styles.label()}>{props.children}</span>
+  return props.children ? (
+    <span className={styles.label()}>{props.children}</span>
+  ) : null
 }
 HorzLabel.propTypes = {
   children: PropTypes.node
@@ -45,7 +53,7 @@ export function HorzLayout(props) {
   return (
     <span className={styles.layout(props)}>
       <HorzIcon {...props} />
-      <HorzLabel>{props.children}</HorzLabel>
+      <HorzLabel {...props} />
       <HorzCaret {...props} />
     </span>
   )
