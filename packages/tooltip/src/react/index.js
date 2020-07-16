@@ -78,7 +78,7 @@ Tooltip.defaultProps = {
 }
 Tooltip.propTypes = {
   appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   onClose: PropTypes.func,
   tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions))
 }
