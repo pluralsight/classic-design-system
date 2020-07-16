@@ -13,7 +13,7 @@ const styles = {
       stylesheet['.psds-navuser'],
       (props.href || props.onClick) && stylesheet['.psds-navuser--clickable']
     ),
-  planName: () => css(stylesheet['.psds-navuser__plan-name']),
+  meta: () => css(stylesheet['.psds-navuser__plan-name']),
   name: () => css(stylesheet['.psds-navuser__name']),
   words: () => css(stylesheet['.psds-navuser__words'])
 }
@@ -49,24 +49,24 @@ NavUser.displayName = 'NavUser'
 NavUser.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
-  planName: PropTypes.string,
-  name: PropTypes.string,
+  meta: PropTypes.node,
+  name: PropTypes.node,
   src: PropTypes.string
 }
 
 export default NavUser
 
 function Words(props) {
-  return props.name || props.planName ? (
+  return props.name || props.meta ? (
     <div {...styles.words()}>
       <div {...styles.name()}>{props.name}</div>
-      <div {...styles.planName()}>{props.planName}</div>
+      <div {...styles.meta()}>{props.meta}</div>
     </div>
   ) : null
 }
 NavUser.displayName = 'NavUser.Words'
 Words.propTypes = {
-  planName: PropTypes.string,
+  meta: PropTypes.string,
   name: PropTypes.string,
   src: PropTypes.string
 }
