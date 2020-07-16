@@ -95,7 +95,7 @@ exports[`Storyshots Navbar desktop 1`] = `
       <span
         className={
           Object {
-            "data-css-ruxays": "",
+            "data-css-w0yocm": "",
           }
         }
       >
@@ -117,7 +117,7 @@ exports[`Storyshots Navbar desktop 1`] = `
               <span
                 className={
                   Object {
-                    "data-css-1009u4g": "",
+                    "data-css-1o9ctb7": "",
                   }
                 }
               >
@@ -137,6 +137,13 @@ exports[`Storyshots Navbar desktop 1`] = `
                   </svg>
                 </div>
               </span>
+              <span
+                className={
+                  Object {
+                    "data-css-1c3u483": "",
+                  }
+                }
+              />
             </span>
           </button>
         </div>
@@ -233,7 +240,7 @@ exports[`Storyshots Navbar desktop 1`] = `
       <span
         className={
           Object {
-            "data-css-ruxays": "",
+            "data-css-w0yocm": "",
           }
         }
       >
@@ -255,7 +262,7 @@ exports[`Storyshots Navbar desktop 1`] = `
               <span
                 className={
                   Object {
-                    "data-css-1009u4g": "",
+                    "data-css-1o9ctb7": "",
                   }
                 }
               >
@@ -275,6 +282,13 @@ exports[`Storyshots Navbar desktop 1`] = `
                   </svg>
                 </div>
               </span>
+              <span
+                className={
+                  Object {
+                    "data-css-1c3u483": "",
+                  }
+                }
+              />
             </span>
           </button>
         </div>
@@ -401,7 +415,7 @@ exports[`Storyshots Navbar desktop 1`] = `
       <span
         className={
           Object {
-            "data-css-ruxays": "",
+            "data-css-w0yocm": "",
           }
         }
       >
@@ -423,7 +437,7 @@ exports[`Storyshots Navbar desktop 1`] = `
               <span
                 className={
                   Object {
-                    "data-css-1009u4g": "",
+                    "data-css-1o9ctb7": "",
                   }
                 }
               >
@@ -443,6 +457,13 @@ exports[`Storyshots Navbar desktop 1`] = `
                   </svg>
                 </div>
               </span>
+              <span
+                className={
+                  Object {
+                    "data-css-1c3u483": "",
+                  }
+                }
+              />
             </span>
           </button>
         </div>
@@ -519,7 +540,7 @@ exports[`Storyshots Navbar desktop 1`] = `
         <span
           className={
             Object {
-              "data-css-ruxays": "",
+              "data-css-w0yocm": "",
             }
           }
         >
@@ -591,7 +612,7 @@ exports[`Storyshots Navbar desktop 1`] = `
         <span
           className={
             Object {
-              "data-css-ruxays": "",
+              "data-css-w0yocm": "",
             }
           }
         >
@@ -668,7 +689,7 @@ exports[`Storyshots Navbar desktop 1`] = `
         <span
           className={
             Object {
-              "data-css-ruxays": "",
+              "data-css-w0yocm": "",
             }
           }
         >
@@ -689,7 +710,7 @@ exports[`Storyshots Navbar desktop 1`] = `
                 <span
                   className={
                     Object {
-                      "data-css-1009u4g": "",
+                      "data-css-1o9ctb7": "",
                     }
                   }
                 >
@@ -709,6 +730,13 @@ exports[`Storyshots Navbar desktop 1`] = `
                     </svg>
                   </div>
                 </span>
+                <span
+                  className={
+                    Object {
+                      "data-css-1c3u483": "",
+                    }
+                  }
+                />
               </span>
             </button>
           </div>
@@ -731,7 +759,7 @@ exports[`Storyshots Navbar desktop 1`] = `
         <span
           className={
             Object {
-              "data-css-ruxays": "",
+              "data-css-w0yocm": "",
             }
           }
         >
@@ -752,7 +780,7 @@ exports[`Storyshots Navbar desktop 1`] = `
                 <span
                   className={
                     Object {
-                      "data-css-1009u4g": "",
+                      "data-css-1o9ctb7": "",
                     }
                   }
                 >
@@ -770,6 +798,13 @@ exports[`Storyshots Navbar desktop 1`] = `
                     </svg>
                   </div>
                 </span>
+                <span
+                  className={
+                    Object {
+                      "data-css-1c3u483": "",
+                    }
+                  }
+                />
               </span>
             </button>
           </div>
