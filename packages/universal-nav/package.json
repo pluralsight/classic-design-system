@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "build": "parcel build src/index.html src/oldschool.html src/templateliteral.html src/webcomponent.html",
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html src/oldschool.html src/templateliteral.html src/webcomponent.html"
+  },
+  "dependencies": {
+    "htm": "^3.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-core": "^6.2.1",
+    "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-navbrand": "*",
+    "@pluralsight/ps-design-system-navitem": "*",
+    "@pluralsight/ps-design-system-navuser": "*",
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "autoprefixer": "^9.8.5",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.0",
+    "prop-types": "^15.7.2"
+  }
+}
