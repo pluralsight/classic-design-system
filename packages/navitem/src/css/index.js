@@ -115,7 +115,8 @@ export default {
     color: colorsTextIcon.highOnDark
   },
   '.psds-navitem__container': {
-    display: 'inline-block'
+    display: 'inline-block',
+    marginTop: layout.spacingXSmall
   },
 
   // horz
@@ -126,6 +127,9 @@ export default {
   '.psds-navitem__horz-icon': {
     lineHeight: '0',
     marginRight: layout.spacingSmall
+  },
+  '.psds-navitem__horz-icon--icon-only': {
+    marginRight: 0
   },
   '.psds-navitem__horz-label': {
     fontWeight: type.fontWeightBold,

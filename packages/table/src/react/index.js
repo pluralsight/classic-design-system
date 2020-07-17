@@ -100,7 +100,7 @@ const getToggledSort = props =>
     [vars.sorts.desc]: vars.sorts.asc
   }[props.sort] || vars.sorts.asc)
 
-function ColumnHeader(props) {
+function ColumnHeader({ onClick, ...props }) {
   const themeName = useTheme()
   const Tag = props.onClick ? 'button' : 'div'
 
@@ -109,13 +109,11 @@ function ColumnHeader(props) {
   const style = props.style || {}
   if (props.flex && !style.flex) style.flex = props.flex
 
-  const handleClick = props.onClick
+  const handleClick = onClick
     ? evt =>
-        props.onClick(
-          ...[evt, props.sort && getToggledSort(props)].filter(Boolean)
-        )
+        onClick(...[evt, props.sort && getToggledSort(props)].filter(Boolean))
     : undefined
-  const children = props.onClick ? (
+  const children = onClick ? (
     <button {...styles.columnHeaderButton()} onClick={handleClick}>
       <div {...styles.columnHeaderButtonInner(props)}>
         {props.children}

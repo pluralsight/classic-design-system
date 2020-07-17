@@ -180,17 +180,21 @@ function JsExample() {
   const button = React.useRef()
   const tooltip = React.useRef()
 
-  const [isHovered, setHovered] = React.useState(true)
+  const [isHovered, setHovered] = React.useState(false)
   const [style, setStyle] = React.useState({ position: 'absolute' })
 
   const hide = () => setHovered(false)
-  const show = () => setHovered(true)
+  const show = () => {
+    const nextStyle = rightOf(button.current).styleFor(tooltip.current)
+    setStyle(nextStyle, { bufferWidth: 0 })
+    setHovered(true)
+  }
 
   React.useEffect(() => {
     if (!button.current || !tooltip.current) return
 
     const nextStyle = rightOf(button.current).styleFor(tooltip.current)
-    setStyle(nextStyle)
+    setStyle(nextStyle, { bufferWidth: 0 })
   }, [])
 
   return (

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-
+import { InfoIcon } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
@@ -232,3 +232,98 @@ function JsStory({ positionType, ...rest }) {
 JsStory.propTypes = {
   positionType: PropTypes.oneOf(Object.keys(positionFns)).isRequired
 }
+
+const edgeCaseStories = storiesOf('Position Edge', module)
+
+Object.values(positionComponents).forEach(Comp => {
+  const { displayName } = Comp
+  function Demo() {
+    const [b1hover, setb1hover] = React.useState(false)
+    const [b2hover, setb2hover] = React.useState(false)
+    const [b3hover, setb3hover] = React.useState(false)
+    const [b4hover, setb4hover] = React.useState(false)
+
+    return (
+      <div
+        style={{
+          display: 'grid',
+          justifyItems: 'start',
+          grid: '1fr 1fr/ 1fr 1fr',
+          width: '100%',
+          height: '100vh',
+          overflow: 'hidden'
+        }}
+      >
+        <Comp
+          when={b1hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
+        >
+          <InfoIcon
+            onMouseEnter={() => setb1hover(true)}
+            onMouseLeave={() => setb1hover(false)}
+            style={{ color: 'white' }}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+        <Comp
+          when={b2hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
+        >
+          <InfoIcon
+            onMouseEnter={() => setb2hover(true)}
+            onMouseLeave={() => setb2hover(false)}
+            style={{ color: 'white', justifySelf: 'end' }}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+        <Comp
+          when={b3hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
+        >
+          <InfoIcon
+            onMouseEnter={() => setb3hover(true)}
+            onMouseLeave={() => setb3hover(false)}
+            style={{ color: 'white', alignSelf: 'end' }}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+        <Comp
+          when={b4hover}
+          show={
+            <Tooltip>
+              I am some really long content, look at me go, i am so long and
+              contentful
+            </Tooltip>
+          }
+        >
+          <InfoIcon
+            style={{ color: 'white', justifySelf: 'end', alignSelf: 'end' }}
+            onMouseEnter={() => setb4hover(true)}
+            onMouseLeave={() => setb4hover(false)}
+          >
+            Hover me
+          </InfoIcon>
+        </Comp>
+      </div>
+    )
+  }
+  edgeCaseStories.add(displayName, () => <Demo />)
+})
