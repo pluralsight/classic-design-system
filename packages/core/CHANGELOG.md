@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.2.1...@pluralsight/ps-design-system-core@6.3.0) (2020-07-17)
+
+
+### Features
+
+* **core:** export utility color at 60% ([02a65ec](https://github.com/pluralsight/design-system/commit/02a65ec6b9ead1fad89cf5122aeacb9feb41ce97))
+
+
+
+
+
 ## [6.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.2.0...@pluralsight/ps-design-system-core@6.2.1) (2020-04-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core

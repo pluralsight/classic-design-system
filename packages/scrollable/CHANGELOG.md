@@ -1,0 +1,28 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 1.1.0 (2020-07-17)
+
+
+### Bug Fixes
+
+* **scrollable:** ie11 pathces ([4b0515b](https://github.com/pluralsight/design-system/commit/4b0515b8ce7e39ad07a3c2c0baf8a90f9ca4a717))
+
+
+### Features
+
+* **scrollable:** cleanup design/colors ([0a6c14b](https://github.com/pluralsight/design-system/commit/0a6c14b5bf2329764ef3270e731d586bafaf5bf1))
+* **scrollable:** initial impl ([b3015be](https://github.com/pluralsight/design-system/commit/b3015beaedbeab41311c8aa431c9c7a19dce1bf0))
+* **scrollable:** use utility colors from core ([bb8f8a3](https://github.com/pluralsight/design-system/commit/bb8f8a35544029ed9278d71311988c1bf97134ae))
+
+
+### Performance Improvements
+
+* **scrollable:** limit presentation renders on child changes ([b1bf24f](https://github.com/pluralsight/design-system/commit/b1bf24f9d7ee23a5bf6ccc61654efd0c59e3fd8a))
+
+
+### Reverts
+
+* Revert "test(scrollable): migration to new storybook config; add wdyu" ([7bafd41](https://github.com/pluralsight/design-system/commit/7bafd4191c2d0f24a35038de560f6bb332c994bb))

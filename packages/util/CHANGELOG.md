@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.2.1...@pluralsight/ps-design-system-util@3.3.0) (2020-07-17)
+
+
+### Features
+
+* **util:** add shallowCompare fn ([751b371](https://github.com/pluralsight/design-system/commit/751b3715155e2da3abfb2c781fce6b6e33854de1))
+* **util:** add useResizeObserver hook ([fea5353](https://github.com/pluralsight/design-system/commit/fea5353705d648d9df5ee7f6555569efc43f98f5))
+
+
+
+
+
 ## [3.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.2.0...@pluralsight/ps-design-system-util@3.2.1) (2020-05-19)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util
