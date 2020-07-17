@@ -54,6 +54,19 @@ const NAV_CONFIG = [
     ]
   },
   {
+    id: 'group-utils',
+    title: 'Utils',
+    hrefPrefix: '/utils',
+    items: [
+      { href: '/featureflags', label: 'Feature Flags' },
+      { href: '/icon', label: 'Icon Cli' },
+      { href: '/position', label: 'Position' },
+      { href: '/scrollable', label: 'Scrollable' },
+      { href: '/theme', label: 'Theme' },
+      { href: '/screenreaderonly', label: 'Screen Reader Only' }
+    ]
+  },
+  {
     id: 'group-components',
     title: 'Components',
     hrefPrefix: '/components',
@@ -76,18 +89,15 @@ const NAV_CONFIG = [
       { href: '/dropdown', label: 'Dropdown' },
       { href: '/emptystate', label: 'Empty State' },
       { href: '/errors', label: 'Errors' },
-      { href: '/featureflags', label: 'Feature Flags' },
       { href: '/form', label: 'Form' },
       { href: '/icon', label: 'Icon' },
       { href: '/layout', label: 'Layout' },
       { href: '/linearprogress', label: 'Linear Progress' },
       { href: '/link', label: 'Link' },
       { href: '/note', label: 'Note' },
-      { href: '/position', label: 'Position' },
       { href: '/radio', label: 'Radio' },
       { href: '/row', label: 'Row' },
       { href: '/searchinput', label: 'Search Input' },
-      { href: '/screenreaderonly', label: 'Screen Reader Only' },
       { href: '/starrating', label: 'Star Rating' },
       { href: '/switch', label: 'Switch' },
       { href: '/tab', label: 'Tab' },
@@ -96,18 +106,11 @@ const NAV_CONFIG = [
       { href: '/text', label: 'Text' },
       { href: '/textarea', label: 'Text Area' },
       { href: '/textinput', label: 'Text Input' },
-      { href: '/theme', label: 'Theme' },
       { href: '/tooltip', label: 'Tooltip' },
       { href: '/typeahead', label: 'Typeahead' },
       { href: '/verticaltabs', label: 'Vertical Tabs' },
       { href: '/viewtoggle', label: 'View Toggle' }
     ]
-  },
-  {
-    id: 'group-utils',
-    title: 'Utils',
-    hrefPrefix: '/utils',
-    items: [{ href: '/icon', label: 'Icon Cli' }]
   }
 ]
 

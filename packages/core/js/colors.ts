@@ -150,7 +150,8 @@ export const colorsBackgroundUtility = {
   base: '#8A99A8',
   25: 'rgba(138,153,168, 0.25)',
   30: 'rgba(138,153,168, 0.30)',
-  40: 'rgba(138,153,168, 0.40)'
+  40: 'rgba(138,153,168, 0.40)',
+  60: 'rgba(138,153,168, 0.60)'
 }
 
 export const colorsGradient = {

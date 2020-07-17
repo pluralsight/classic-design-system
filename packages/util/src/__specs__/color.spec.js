@@ -1,4 +1,4 @@
-import { transparentize } from '../color.js'
+import { transparentize } from '..'
 
 describe('#transparentize', () => {
   test('happy path', () => {

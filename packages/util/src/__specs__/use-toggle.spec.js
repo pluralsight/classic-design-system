@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { renderHook } from '@testing-library/react-hooks'
 import { act } from 'react-test-renderer'
-import { useToggle } from '../useToggle.js'
+
+import { useToggle } from '..'
 
 describe('useToggle', () => {
   test('uncontrolled', () => {

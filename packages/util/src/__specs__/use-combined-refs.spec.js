@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { renderHook } from '@testing-library/react-hooks'
 import { createRef, useImperativeHandle, useCallback, useState } from 'react'
-import { useCombinedRefs } from '../useCombinedRefs.js'
+
+import { useCombinedRefs } from '..'
 
 describe('useCombinedRefs', () => {
   test('multiple refs', () => {

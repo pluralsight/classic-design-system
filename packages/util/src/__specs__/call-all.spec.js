@@ -1,4 +1,4 @@
-import { callAll } from '../callAll.js'
+import { callAll } from '..'
 
 test('callAll()', () => {
   const expected = 'string'

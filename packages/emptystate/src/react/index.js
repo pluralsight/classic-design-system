@@ -1,16 +1,16 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useEffect, useRef, useState } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { useResizeObserver } from '@pluralsight/ps-design-system-util'
 
 import stylesheet, { sizeClasses, themeClasses } from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 import * as illustrations from './illustrations/index.js'
-import useResizeObserver from './use-resize-observer.js'
 
 const Context = createContext({
   size: null,
@@ -111,8 +111,9 @@ Illustration.propTypes = {
 const renderSmallIfElementLessThan = 450
 
 export default function EmptyState(props) {
+  const ref = useRef()
   const [hasRenderedOnce, setHasRenderedOnce] = useState(false)
-  const { ref, width } = useResizeObserver()
+  const { width } = useResizeObserver(ref)
   const themeName = useTheme()
 
   useEffect(() => {

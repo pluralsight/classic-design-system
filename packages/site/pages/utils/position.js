@@ -96,7 +96,7 @@ export default _ => (
       <iframe
         className="iframe"
         style={{ height: `calc((160px + ${core.layout.spacingLarge}) * 4)` }}
-        src="/components/position-positions-example"
+        src="/utils/position-positions-example"
       />
 
       <SectionHeading>Portal override</SectionHeading>
@@ -109,7 +109,7 @@ export default _ => (
       <iframe
         className="iframe"
         style={{ height: '300px' }}
-        src="/components/position-portal-example"
+        src="/utils/position-portal-example"
       />
       <Code collapsible lang="javascript">{`function PortalExample() {
   const portal = React.useRef()

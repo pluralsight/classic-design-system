@@ -1,25 +1,28 @@
-import { useEffect, useRef, useState } from 'react'
+import { canUseDOM } from 'exenv'
+import { useEffect, useState } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
 
-const isBrowser = typeof window !== 'undefined'
+import { combineFns } from './combine-fns.js'
+import { debounce } from './debounce.js'
 
-export default function useResizeObserver() {
-  const ref = useRef()
-
+export function useResizeObserver(ref, onResize) {
   const [width, setWidth] = useState(0)
   const [height, setHeight] = useState(0)
 
   useEffect(() => {
-    let subscribed = true
     const { current: el } = ref
+    if (!el || !canUseDOM) return
 
-    function handleResize(entries) {
-      if (!subscribed || !isBrowser) return
+    let subscribed = true
+
+    const handleResize = combineFns(entries => {
+      if (!subscribed) return
+
       const { contentRect } = entries[0]
 
       setWidth(contentRect.width)
       setHeight(contentRect.height)
-    }
+    }, onResize)
 
     const debouncedResize = debounce(150, handleResize)
     const observer = new ResizeObserver(debouncedResize)
@@ -28,23 +31,11 @@ export default function useResizeObserver() {
 
     return () => {
       subscribed = false
+
       clearTimeout(debouncedResize)
       observer.unobserve(el)
     }
-  }, [])
+  }, [onResize, ref])
 
-  return { ref, width, height }
-}
-
-function debounce(delay, fn) {
-  let timerId
-
-  return function(...args) {
-    if (timerId) clearTimeout(timerId)
-
-    timerId = setTimeout(() => {
-      fn(...args)
-      timerId = null
-    }, delay)
-  }
+  return { width, height }
 }
