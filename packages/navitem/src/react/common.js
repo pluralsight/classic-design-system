@@ -17,8 +17,7 @@ const styles = {
     css(
       stylesheet['.psds-navitem__button'],
       props.selected && stylesheet['.psds-navitem__button--selected']
-    ),
-  container: () => css(stylesheet['.psds-navitem__container'])
+    )
 }
 
 export function Bar(props) {
@@ -52,13 +51,6 @@ Button.displayName = 'NavItem.Button'
 Button.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string
-}
-
-export function Container(props) {
-  return <span className={styles.container()}>{props.children}</span>
-}
-Container.propTypes = {
-  children: PropTypes.node
 }
 
 export function stylesFor(elementId, props) {

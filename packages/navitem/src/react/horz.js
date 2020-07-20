@@ -3,9 +3,11 @@ import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { Bar, Button } from './common.js'
 import stylesheet from '../css/index.js'
 
 const styles = {
+  container: () => css(stylesheet['.psds-navitem__horz-container']),
   caret: () => css(stylesheet['.psds-navitem__horz-caret']),
   icon: props =>
     css(
@@ -20,6 +22,14 @@ const styles = {
     )
 }
 
+export function HorzContainer(props) {
+  return <span className={styles.container(props)}>{props.children}</span>
+}
+HorzContainer.displayName = 'NavItem.HorzContainer'
+HorzContainer.propTypes = {
+  children: PropTypes.node
+}
+
 export function HorzCaret(props) {
   return props.menu ? (
     <span className={styles.caret()}>
@@ -27,6 +37,7 @@ export function HorzCaret(props) {
     </span>
   ) : null
 }
+HorzCaret.displayName = 'NavItem.HorzCaret'
 HorzCaret.propTypes = {
   menu: PropTypes.element
 }
@@ -36,6 +47,7 @@ export function HorzIcon(props) {
     <span className={styles.icon(props)}>{props.icon}</span>
   ) : null
 }
+HorzIcon.displayName = 'NavItem.HorzIcon'
 HorzIcon.propTypes = {
   icon: PropTypes.element
 }
@@ -45,19 +57,24 @@ export function HorzLabel(props) {
     <span className={styles.label()}>{props.children}</span>
   ) : null
 }
+HorzLabel.displayName = 'NavItem.HorzLabel'
 HorzLabel.propTypes = {
   children: PropTypes.node
 }
 
-export function HorzLayout(props) {
-  return (
-    <span className={styles.layout(props)}>
-      <HorzIcon {...props} />
-      <HorzLabel {...props} />
-      <HorzCaret {...props} />
-    </span>
-  )
-}
+export const HorzLayout = React.forwardRef((props, forwardedRef) => (
+  <HorzContainer>
+    <Button {...props} ref={forwardedRef}>
+      <span className={styles.layout(props)}>
+        <HorzIcon {...props} />
+        <HorzLabel {...props} />
+        <HorzCaret {...props} />
+      </span>
+    </Button>
+    <Bar {...props} />
+  </HorzContainer>
+))
+HorzLayout.displayName = 'NavItem.HorzLayout'
 HorzLayout.propTypes = {
   children: PropTypes.node
 }

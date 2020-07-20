@@ -114,12 +114,12 @@ export default {
   '.psds-navitem__button--selected': {
     color: colorsTextIcon.highOnDark
   },
-  '.psds-navitem__container': {
+
+  // horz
+  '.psds-navitem__horz-container': {
     display: 'inline-block',
     marginTop: layout.spacingXSmall
   },
-
-  // horz
   '.psds-navitem__horz-caret': {
     lineHeight: '0',
     marginLeft: layout.spacingXXSmall
@@ -149,6 +149,9 @@ export default {
   },
 
   // vert
+  '.psds-navitem__vert-container': {
+    display: 'inline-block'
+  },
   '.psds-navitem__vert-caret': {
     position: 'absolute',
     top: '50%',
