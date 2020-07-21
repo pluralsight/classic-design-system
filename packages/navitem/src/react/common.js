@@ -11,7 +11,8 @@ const styles = {
     css(
       stylesheet['.psds-navitem__bar'],
       props.selected && stylesheet['.psds-navitem__bar--selected'],
-      stylesFor('bar', props)
+      stylesFor('bar', props),
+      props.selected && stylesFor('bar--selected', props)
     ),
   button: props =>
     css(
