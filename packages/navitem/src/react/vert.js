@@ -15,7 +15,7 @@ const styles = {
 }
 
 export function VertContainer(props) {
-  return <span className={styles.container(props)}>{props.children}</span>
+  return <span className={styles.container()}>{props.children}</span>
 }
 VertContainer.displayName = 'NavItem.VertContainer'
 VertContainer.propTypes = {
