@@ -57,17 +57,30 @@ Object.keys(NavItem.alignments).forEach(key =>
         Selected
       </NavItem>
       <NavItem
-        styles={{ bar: { background: colorsGradient.skillsBackground } }}
+        styles={{
+          'bar--selected': { background: colorsGradient.skillsBackground }
+        }}
         alignment={NavItem.alignments[key]}
         selected
         icon={<HomeIcon />}
       >
-        Skills
+        Skills Selected
       </NavItem>
       <NavItem
-        styles={{ bar: { background: colorsGradient.flowBackground } }}
+        styles={{
+          'bar--selected': { background: colorsGradient.flowBackground }
+        }}
         alignment={NavItem.alignments[key]}
         selected
+        icon={<HomeIcon />}
+      >
+        Flow Selected
+      </NavItem>
+      <NavItem
+        styles={{
+          'bar--selected': { background: colorsGradient.flowBackground }
+        }}
+        alignment={NavItem.alignments[key]}
         icon={<HomeIcon />}
       >
         Flow
