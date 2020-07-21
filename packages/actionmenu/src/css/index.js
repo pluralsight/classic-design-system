@@ -80,6 +80,7 @@ export default {
   },
 
   '.psds-actionmenu__item': {
+    label: 'action-menuitem',
     display: 'flex',
     width: '100%',
     alignItems: 'center',
@@ -98,7 +99,15 @@ export default {
     color: colorsTextIcon.highOnLight,
     background: 'none',
     textDecoration: 'none',
-    transition: `background ${motion.speedXFast}`
+    transition: `background ${motion.speedXFast}`,
+    '&:not(:disabled):active, &:not(:disabled):hover, &:not(:disabled):visited': {
+      color: colorsTextIcon.highOnLight
+    },
+    '&:not(:disabled):focus, &:not(:disabled):hover': {
+      background: colorsBackgroundLight[2],
+      outline: 'none',
+      color: colorsTextIcon.highOnLight
+    }
   },
 
   '.psds-actionmenu__item-inner': {
@@ -108,19 +117,10 @@ export default {
     textOverflow: 'ellipsis'
   },
 
-  '.psds-actionmenu__item:focus': {
-    background: colorsBackgroundLight[2],
-    outline: 'none',
-    color: colorsTextIcon.highOnLight
-  },
   '.psds-actionmenu__item--focus-keyboard': {
     background: colorsPrimaryAction.background,
     outline: 'none',
     color: colorsTextIcon.highOnDark
-  },
-
-  '.psds-actionmenu__item--link': {
-    color: colorsTextIcon.highOnLight
   },
 
   '.psds-actionmenu__item--icon': {

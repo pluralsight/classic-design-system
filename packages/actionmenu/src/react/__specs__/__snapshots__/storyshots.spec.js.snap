@@ -14,7 +14,7 @@ exports[`Storyshots customized styles item style 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -39,7 +39,7 @@ exports[`Storyshots customized styles item style 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -64,7 +64,7 @@ exports[`Storyshots customized styles item style 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -102,7 +102,7 @@ exports[`Storyshots disabled item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -122,7 +122,7 @@ exports[`Storyshots disabled item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1l4i2jl=""
+        data-css-1ntmown=""
         disabled={true}
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -142,7 +142,7 @@ exports[`Storyshots disabled item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -162,7 +162,7 @@ exports[`Storyshots disabled item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1l4i2jl=""
+        data-css-1ntmown=""
         disabled={true}
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -195,7 +195,7 @@ exports[`Storyshots disabled links 1`] = `
     >
       <a
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         href="https://duck.com"
         onClick={[Function]}
         onFocus={[Function]}
@@ -216,7 +216,7 @@ exports[`Storyshots disabled links 1`] = `
     >
       <a
         aria-haspopup={false}
-        data-css-1l4i2jl=""
+        data-css-1ntmown=""
         onClick={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -235,7 +235,7 @@ exports[`Storyshots disabled links 1`] = `
     >
       <a
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         href="https://duck.com"
         onClick={[Function]}
         onFocus={[Function]}
@@ -256,7 +256,7 @@ exports[`Storyshots disabled links 1`] = `
     >
       <a
         aria-haspopup={false}
-        data-css-1l4i2jl=""
+        data-css-1ntmown=""
         onClick={[Function]}
         onKeyDown={[Function]}
         onMouseOver={[Function]}
@@ -288,7 +288,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1l4i2jl=""
+        data-css-1ntmown=""
         disabled={true}
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -308,7 +308,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1l4i2jl=""
+        data-css-1ntmown=""
         disabled={true}
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -341,7 +341,7 @@ exports[`Storyshots disabled nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -361,7 +361,7 @@ exports[`Storyshots disabled nested 1`] = `
     >
       <button
         aria-haspopup={true}
-        data-css-1tqc35=""
+        data-css-58dsht=""
         disabled={true}
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -409,7 +409,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1l4i2jl=""
+        data-css-1ntmown=""
         disabled={true}
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -442,7 +442,7 @@ exports[`Storyshots dividers edge 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -479,7 +479,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -503,7 +503,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -523,7 +523,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -556,7 +556,7 @@ exports[`Storyshots link a w/ href 1`] = `
     >
       <a
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         href="https://duckduckgo.com"
         onClick={[Function]}
         onFocus={[Function]}
@@ -590,7 +590,7 @@ exports[`Storyshots menu items long text 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -610,7 +610,7 @@ exports[`Storyshots menu items long text 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -643,7 +643,7 @@ exports[`Storyshots menu items long text with icon 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-33ggw6=""
+        data-css-1yio5vj=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -695,7 +695,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -716,7 +716,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -737,7 +737,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -758,7 +758,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -779,7 +779,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -800,7 +800,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -821,7 +821,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -842,7 +842,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -863,7 +863,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -884,7 +884,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -905,7 +905,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -926,7 +926,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -947,7 +947,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -968,7 +968,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -989,7 +989,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1010,7 +1010,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1031,7 +1031,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1052,7 +1052,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1073,7 +1073,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1094,7 +1094,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1115,7 +1115,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1136,7 +1136,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1157,7 +1157,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1178,7 +1178,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1199,7 +1199,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1220,7 +1220,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1241,7 +1241,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1262,7 +1262,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1283,7 +1283,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1304,7 +1304,7 @@ exports[`Storyshots menu items lots 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1338,7 +1338,7 @@ exports[`Storyshots menu items multiple 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1358,7 +1358,7 @@ exports[`Storyshots menu items multiple 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1378,7 +1378,7 @@ exports[`Storyshots menu items multiple 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1411,7 +1411,7 @@ exports[`Storyshots menu items null item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1431,7 +1431,7 @@ exports[`Storyshots menu items null item 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1464,7 +1464,7 @@ exports[`Storyshots menu items one 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1497,7 +1497,7 @@ exports[`Storyshots menu items with icons 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-33ggw6=""
+        data-css-1yio5vj=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1536,7 +1536,7 @@ exports[`Storyshots menu items with icons 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-98yz0a=""
+        data-css-2i1ice=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1575,7 +1575,7 @@ exports[`Storyshots menu items with icons 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-98yz0a=""
+        data-css-2i1ice=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1634,7 +1634,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       >
         <button
           aria-haspopup={true}
-          data-css-17i0oa7=""
+          data-css-1pkltxb=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1669,7 +1669,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       >
         <button
           aria-haspopup={false}
-          data-css-mka67z=""
+          data-css-1lkxu85=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1712,7 +1712,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       >
         <button
           aria-haspopup={true}
-          data-css-17i0oa7=""
+          data-css-1pkltxb=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1747,7 +1747,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       >
         <button
           aria-haspopup={false}
-          data-css-mka67z=""
+          data-css-1lkxu85=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1790,7 +1790,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
       >
         <button
           aria-haspopup={true}
-          data-css-17i0oa7=""
+          data-css-1pkltxb=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1825,7 +1825,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
       >
         <button
           aria-haspopup={false}
-          data-css-mka67z=""
+          data-css-1lkxu85=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1868,7 +1868,7 @@ exports[`Storyshots nested origin topRight 1`] = `
       >
         <button
           aria-haspopup={true}
-          data-css-17i0oa7=""
+          data-css-1pkltxb=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1903,7 +1903,7 @@ exports[`Storyshots nested origin topRight 1`] = `
       >
         <button
           aria-haspopup={false}
-          data-css-mka67z=""
+          data-css-1lkxu85=""
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1937,7 +1937,7 @@ exports[`Storyshots onClick flat 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1957,7 +1957,7 @@ exports[`Storyshots onClick flat 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -1977,7 +1977,7 @@ exports[`Storyshots onClick flat 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2010,7 +2010,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-1c2ffua=""
+        data-css-1ra8o9n=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2030,7 +2030,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={true}
-        data-css-1wjctt1=""
+        data-css-139bapm=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2065,7 +2065,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2085,7 +2085,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2105,7 +2105,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2125,7 +2125,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2145,7 +2145,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2165,7 +2165,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2185,7 +2185,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2205,7 +2205,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2225,7 +2225,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2245,7 +2245,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2265,7 +2265,7 @@ exports[`Storyshots onClick nested 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2337,7 +2337,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2357,7 +2357,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2377,7 +2377,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2414,7 +2414,7 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2434,7 +2434,7 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2454,7 +2454,7 @@ exports[`Storyshots shouldFocusOnMount false 1`] = `
     >
       <button
         aria-haspopup={false}
-        data-css-mka67z=""
+        data-css-1lkxu85=""
         onClick={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -2519,7 +2519,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2539,7 +2539,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2559,7 +2559,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2628,7 +2628,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2648,7 +2648,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -2668,7 +2668,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
           >
             <button
               aria-haspopup={false}
-              data-css-mka67z=""
+              data-css-1lkxu85=""
               onClick={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}

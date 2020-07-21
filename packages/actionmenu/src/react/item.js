@@ -16,18 +16,10 @@ import ItemIcon from './item-icon.js'
 const styles = {
   itemContainer: () => css(stylesheet['.psds-actionmenu__item-container']),
   item: ({ _isKeyboarding, disabled, icon, isActive, nested }) => {
-    const focusable = !_isKeyboarding && !disabled
     const focused = _isKeyboarding && !disabled
 
     return compose(
       css(stylesheet['.psds-actionmenu__item']),
-      focusable &&
-        css({
-          ':focus': stylesheet['.psds-actionmenu__item:focus'],
-          ':hover': stylesheet['.psds-actionmenu__item--link'],
-          ':active': stylesheet['.psds-actionmenu__item--link'],
-          ':visited': stylesheet['.psds-actionmenu__item--link']
-        }),
       focused &&
         css({
           ':focus': stylesheet['.psds-actionmenu__item--focus-keyboard'],
