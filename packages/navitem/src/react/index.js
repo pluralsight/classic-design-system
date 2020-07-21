@@ -2,22 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { alignments } from '../vars/index.js'
-import { Bar, Button, Container } from './common.js'
 import { HorzLayout } from './horz.js'
 import { VertLayout } from './vert.js'
 
 const NavItem = React.forwardRef((props, forwardedRef) => {
-  return (
-    <Container>
-      <Button {...props} ref={forwardedRef}>
-        {props.alignment === 'vertical' ? (
-          <VertLayout {...props} />
-        ) : (
-          <HorzLayout {...props} />
-        )}
-      </Button>
-      <Bar {...props} />
-    </Container>
+  const { alignment, ...rest } = props
+  return props.alignment === 'vertical' ? (
+    <VertLayout ref={forwardedRef} {...rest} />
+  ) : (
+    <HorzLayout ref={forwardedRef} {...rest} />
   )
 })
 NavItem.displayName = 'NavItem'
