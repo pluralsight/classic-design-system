@@ -32,7 +32,8 @@ const styles = {
       disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
     )
   },
-  inner: _ => css(stylesheet['.psds-actionmenu__item-inner'])
+  inner: _ => css(stylesheet['.psds-actionmenu__item-inner']),
+  nested: _ => css(stylesheet['.psds-actionmenu__nested'])
 }
 
 export default function Item(props) {
@@ -41,8 +42,8 @@ export default function Item(props) {
   const prevIsActive = usePrevious(isActive)
 
   const itemRef = React.useRef()
-  const [isNestedRendered, setIsNestedRendered] = React.useState(false)
-
+  // const [isNestedRendered, setIsNestedRendered] = React.useState(false)
+  const isNestedRendered = Boolean(props.nested)
   React.useEffect(() => {
     if (isActive && props.shouldFocusOnMount) {
       delayUntilNextTick(_ => itemRef.current && itemRef.current.focus())
@@ -64,18 +65,16 @@ export default function Item(props) {
 
     if (
       (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
-      props.nested
+      isNestedRendered
     ) {
       evt.stopPropagation()
       evt.preventDefault()
-
-      setIsNestedRendered(true)
     }
   }
 
   function handleMouseOver(evt) {
     if (!props.disabled) {
-      if (props.nested) setIsNestedRendered(true)
+      props.nested && setIsNestedRendered(true)
       props._onMouseOver(props._i)
     }
   }
@@ -91,9 +90,9 @@ export default function Item(props) {
   }
 
   const nestedMenu =
-    isNestedRendered &&
-    props.nested &&
-    isActive &&
+    !props.disabled &&
+    Boolean(props.nested) &&
+    itemRef.current &&
     React.cloneElement(props.nested, {
       style: calcNestedMenuPosition(
         itemRef.current.getBoundingClientRect().width,
@@ -132,7 +131,7 @@ export default function Item(props) {
         {props.nested && <Arrow _isKeyboarding={props._isKeyboarding} />}
       </TagName>
 
-      {nestedMenu}
+      <span {...styles.nested()}>{nestedMenu}</span>
     </div>
   )
 }

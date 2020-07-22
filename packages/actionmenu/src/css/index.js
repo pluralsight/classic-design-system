@@ -76,9 +76,15 @@ export default {
   [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: menuOriginLeft,
 
   '.psds-actionmenu__item-container': {
-    position: 'relative'
+    label: 'container',
+    position: 'relative',
+    '&:hover > span, &:focus > span': {
+      display: 'inline'
+    }
   },
-
+  '.psds-actionmenu__nested': {
+    display: 'none'
+  },
   '.psds-actionmenu__item': {
     label: 'action-menuitem',
     display: 'flex',
