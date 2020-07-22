@@ -36,9 +36,9 @@ const styles = {
     ),
   collapsible: () => css(stylesheet['.psds-drawer__collapsible'])
 }
-const DrawerContext = createContext()
+export const DrawerContext = createContext()
 
-const useDrawerContext = () => {
+export const useDrawerContext = () => {
   const context = useContext(DrawerContext)
   if (!context) {
     throw new Error(
@@ -85,18 +85,12 @@ const Body = forwardRef(({ children, ...rest }, forwardedRef) => {
   )
 })
 
-export const Drawer = forwardRef(
-  ({ children, isOpen, onToggle, ...rest }, ref) => {
-    const value = useToggle({ isOpen, onToggle })
-    return (
-      <div ref={ref} {...filterReactProps(rest)}>
-        <DrawerContext.Provider value={value}>
-          {children}
-        </DrawerContext.Provider>
-      </div>
-    )
-  }
-)
+export const Drawer = ({ children, isOpen, onToggle, ...rest }) => {
+  const value = useToggle({ isOpen, onToggle })
+  return (
+    <DrawerContext.Provider value={value}>{children}</DrawerContext.Provider>
+  )
+}
 
 Head.displayName = 'Drawer.Head'
 Head.propTypes = {
