@@ -324,7 +324,7 @@ const MonospaceFont = _ => (
     <Code
       language="html"
       children={
-        '<link rel="stylesheet" src="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" />'
+        '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" />'
       }
     />
 
@@ -388,7 +388,7 @@ export default _ => (
       <Code
         language="html"
         children={
-          '<link rel="stylesheet" src="https://cloud.typography.com/6966154/6397212/css/fonts.css" />'
+          '<link rel="stylesheet" href="https://cloud.typography.com/6966154/6397212/css/fonts.css" />'
         }
       />
 
