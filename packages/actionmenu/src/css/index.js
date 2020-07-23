@@ -83,7 +83,9 @@ export default {
     }
   },
   '.psds-actionmenu__nested': {
-    display: 'none'
+    display: 'none',
+    position: 'relative',
+    zIndex: 1
   },
   '.psds-actionmenu__item': {
     label: 'action-menuitem',
