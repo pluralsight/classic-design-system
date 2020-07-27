@@ -1,10 +1,14 @@
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import { compose, css, media } from 'glamor'
+import PropTypes from 'prop-types'
 import React from 'react'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { useCookies } from 'react-cookie'
 
 import stylesheet from '../css/index.js'
+
+const DISMISS_COOKIE_NAME = 'prism-cookienotify'
+const DEFAULT_PRIVACY_UPDATED_DATE = new Date('2018-05-24T00:00:00')
 
 const styles = {
   banner: () =>
@@ -23,6 +27,24 @@ const styles = {
 const NavCookieBanner = React.forwardRef((props, forwardedRef) => {
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
+  const [cookies, setCookie] = useCookies(['cookie-name'])
+  const [clicked, setClicked] = React.useState(false)
+  const cookieDateAccepted = parseCookie(cookies[DISMISS_COOKIE_NAME])
+  const dismissed =
+    cookieDateAccepted && cookieDateAccepted > props.privacyUpdatedDate
+
+  if (dismissed || clicked) return null
+
+  function dismiss() {
+    const oneYear = new Date()
+    oneYear.setFullYear(oneYear.getFullYear() + 1)
+
+    setCookie(DISMISS_COOKIE_NAME, Date.now(), {
+      domain: '.pluralsight.com',
+      expires: oneYear
+    })
+    setClicked(true)
+  }
 
   return (
     <div ref={ref} {...styles.banner()} {...filterReactProps(props)}>
@@ -37,9 +59,7 @@ const NavCookieBanner = React.forwardRef((props, forwardedRef) => {
       <button
         {...styles.dismiss()}
         aria-label="Accept privacy policy"
-        onClick={evt => {
-          // TODO: impl
-        }}
+        onClick={dismiss}
       >
         <CloseIcon />
       </button>
@@ -47,6 +67,14 @@ const NavCookieBanner = React.forwardRef((props, forwardedRef) => {
   )
 })
 NavCookieBanner.displayName = 'NavCookieBanner'
-NavCookieBanner.propTypes = {}
-
+NavCookieBanner.defaultProps = {
+  privacyUpdatedDate: DEFAULT_PRIVACY_UPDATED_DATE
+}
+NavCookieBanner.propTypes = {
+  privacyUpdatedDate: PropTypes.instanceOf(Date)
+}
 export default NavCookieBanner
+
+function parseCookie(numberStr) {
+  return numberStr ? new Date(parseInt(numberStr, 10)) : undefined
+}
