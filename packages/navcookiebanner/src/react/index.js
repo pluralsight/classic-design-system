@@ -40,7 +40,9 @@ const NavCookieBanner = React.forwardRef((props, forwardedRef) => {
 
     setCookie(DISMISS_COOKIE_NAME, Date.now(), {
       domain: '.pluralsight.com',
-      expires: oneYear
+      expires: oneYear,
+      secure: true,
+      sameSite: 'strict'
     })
   }
 
