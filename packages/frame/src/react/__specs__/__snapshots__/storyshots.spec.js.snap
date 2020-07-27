@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Frame basic 1`] = `
+<div>
+  <nav />
+  <main />
+</div>
+`;
+
+exports[`Storyshots Frame w/sidenav 1`] = `
+<div>
+  <nav />
+  <nav />
+  <main />
+</div>
+`;
