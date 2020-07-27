@@ -27,13 +27,12 @@ const styles = {
 const NavCookieBanner = React.forwardRef((props, forwardedRef) => {
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
-  const [cookies, setCookie] = useCookies(['cookie-name'])
-  const [clicked, setClicked] = React.useState(false)
+  const [cookies, setCookie] = useCookies([DISMISS_COOKIE_NAME])
   const cookieDateAccepted = parseCookie(cookies[DISMISS_COOKIE_NAME])
   const dismissed =
     cookieDateAccepted && cookieDateAccepted > props.privacyUpdatedDate
 
-  if (dismissed || clicked) return null
+  if (dismissed) return null
 
   function dismiss() {
     const oneYear = new Date()
@@ -43,7 +42,6 @@ const NavCookieBanner = React.forwardRef((props, forwardedRef) => {
       domain: '.pluralsight.com',
       expires: oneYear
     })
-    setClicked(true)
   }
 
   return (
