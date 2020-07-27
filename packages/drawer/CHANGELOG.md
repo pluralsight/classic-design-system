@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.1.8...@pluralsight/ps-design-system-drawer@7.2.0) (2020-07-22)
+
+
+### Features
+
+* **drawer:** exposes underlying util useDrawerContext of drawer ([#1059](https://github.com/pluralsight/design-system/issues/1059)) ([e4ab26c](https://github.com/pluralsight/design-system/commit/e4ab26c8e245c7d5154196935acc024f2d5fe9b5))
+
+
+
+
+
 ## [7.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@7.1.7...@pluralsight/ps-design-system-drawer@7.1.8) (2020-07-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

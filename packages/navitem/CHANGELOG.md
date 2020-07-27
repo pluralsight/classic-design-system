@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.2.2...@pluralsight/ps-design-system-navitem@1.3.0) (2020-07-21)
+
+
+### Features
+
+* **navitem:** allow style overrides for bar on selected item ([f011ae2](https://github.com/pluralsight/design-system/commit/f011ae2417aa533e19833fc3d211facce97dd14b))
+
+
+
+
+
 ## [1.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.2.1...@pluralsight/ps-design-system-navitem@1.2.2) (2020-07-21)
 
 
