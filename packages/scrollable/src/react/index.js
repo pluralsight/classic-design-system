@@ -95,7 +95,7 @@ const Scrollable = forwardRef((props, forwardedRef) => {
   }
 
   function onHandleDragStart(evt) {
-    if (evt.dataTransfer?.setDragImage) {
+    if (evt && evt.dataTransfer && evt.dataTransfer.setDragImage) {
       evt.dataTransfer.setDragImage(dragPreview.current, 0, 0)
     }
 
