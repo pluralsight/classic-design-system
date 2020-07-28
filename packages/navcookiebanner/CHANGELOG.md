@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.1.0...@pluralsight/ps-design-system-navcookiebanner@1.2.0) (2020-07-28)
+
+
+### Features
+
+* **navcookiebanner:** add props to customize cookie and message ([ffb3d2c](https://github.com/pluralsight/design-system/commit/ffb3d2c53f2e4dc910a73cd3553622575455b75a))
+
+
+
+
+
 # 1.1.0 (2020-07-28)
 
 
