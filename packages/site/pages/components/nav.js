@@ -163,34 +163,38 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'`}
           codes={[`<NavCookieBanner />`]}
         />
 
-        <ComponentHeading>Reference designs</ComponentHeading>
+        <SectionHeading>Guidelines</SectionHeading>
+        <Text.List type={Text.List.types.bulleted}>
+          <Text.List.Item>
+            Always keep the navigation bar height 56px.
+          </Text.List.Item>
+          <Text.List.Item>
+            The navigation bar should be fluid and sticky to the left/top/right
+            edges of the browser viewport. This will happen automatically if you
+            use the app frame component.
+          </Text.List.Item>
+          <Text.List.Item>
+            Be prudent with the nav items and the the number you use. Try to
+            keep it to about about 2-5. Organize the items well, use short yet
+            descriptive labels, and use grouping with dropdown menus if you need
+            more items than will fit.
+          </Text.List.Item>
+          <Text.List.Item>
+            Use the nav brand component to provide consistency between
+            experiences.
+          </Text.List.Item>
+          <Text.List.Item>
+            Use icon only nav items when the icon clearly represents what the
+            nav item is or does. Use tooltips with icon only nav items.
+          </Text.List.Item>
+        </Text.List>
+
+        <SectionHeading>Reference design</SectionHeading>
         <P>
           Here are some examples of how the navigation components can be used
           together to create consistent global navigation system for your app.
         </P>
         <ReferenceDesign1 />
-
-        <SectionHeading>Guidelines</SectionHeading>
-        <P>Always keep the navigation bar height 56px.</P>
-        <P>
-          The navigation bar should be fluid and sticky to the left/top/right
-          edges of the browser viewport. This will happen automatically if you
-          use the app frame component.
-        </P>
-        <P>
-          Be prudent with the nav items and the the number you use. Try to keep
-          it to about about 2-5. Organize the items well, use short yet
-          descriptive labels, and use grouping with dropdown menus if you need
-          more items than will fit.
-        </P>
-        <P>
-          Use the nav brand component to provide consistency between
-          experiences.
-        </P>
-        <P>
-          Use icon only nav items when the icon clearly represents what the nav
-          item is or does. Use tooltips with icon only nav items.
-        </P>
       </Content>
     </Chrome>
   )
