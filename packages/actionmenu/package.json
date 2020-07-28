@@ -25,6 +25,7 @@
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-icon": "^18.1.6",
     "@pluralsight/ps-design-system-prop-types": "^2.0.18",
+    "@pluralsight/ps-design-system-util": "*",
     "exenv": "^1.2.2",
     "glamorous": "^5.0.0",
     "prop-types": "^15.7.2"

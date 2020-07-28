@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useMenuKeyEvents() TestComponent Snapshot 1`] = `
+<ul
+  data-testid="root-menu"
+>
+  <li
+    data-testid="root-list-item-0"
+  >
+    root list item
+  </li>
+  <li
+    data-testid="root-list-item-1"
+  >
+    root list item
+  </li>
+  <li
+    data-testid="root-list-item-2"
+  >
+    root list item
+  </li>
+  <li
+    data-testid="root-list-item-3"
+  >
+    root list item
+  </li>
+  <ul
+    data-testid="sub-menu"
+  >
+    <li
+      data-testid="first-sub-menu-list-item-0"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="first-sub-menu-list-item-1"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="first-sub-menu-list-item-2"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="first-sub-menu-list-item-3"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="first-sub-menu-list-item-4"
+    >
+      sub menu list item
+    </li>
+  </ul>
+  <li
+    data-testid="root-list-item-5"
+  >
+    root list item
+  </li>
+  <li
+    data-testid="root-list-item-6"
+  >
+    root list item
+  </li>
+  <ul
+    data-testid="sub-menu"
+  >
+    <li
+      data-testid="second-sub-menu-list-item-0"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="second-sub-menu-list-item-1"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="second-sub-menu-list-item-2"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="second-sub-menu-list-item-3"
+    >
+      sub menu list item
+    </li>
+    <li
+      data-testid="second-sub-menu-list-item-4"
+    >
+      sub menu list item
+    </li>
+  </ul>
+  <li
+    data-testid="root-list-item-8"
+  >
+    root list item
+  </li>
+  <li
+    data-testid="root-list-item-9"
+  >
+    root list item
+  </li>
+</ul>
+`;
