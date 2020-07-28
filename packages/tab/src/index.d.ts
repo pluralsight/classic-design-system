@@ -13,7 +13,7 @@ type List = FunctionComponent<ListProps & Styling>
 export interface ListItemProps {
     id: string | number
     active?: boolean
-    children?: string
+    children?: React.ReactNode
     onClick?: (i: number, event: MouseEvent) => void
 }
 interface ListItemAnchorProps {
