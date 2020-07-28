@@ -94,6 +94,7 @@ const NAV_CONFIG = [
       { href: '/layout', label: 'Layout' },
       { href: '/linearprogress', label: 'Linear Progress' },
       { href: '/link', label: 'Link' },
+      { href: '/nav', label: 'Nav' },
       { href: '/note', label: 'Note' },
       { href: '/radio', label: 'Radio' },
       { href: '/row', label: 'Row' },
