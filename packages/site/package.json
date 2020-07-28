@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-site",
-  "version": "19.0.8",
+  "version": "19.1.0",
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,
@@ -51,9 +51,9 @@
     "@pluralsight/ps-design-system-link": "^10.0.9",
     "@pluralsight/ps-design-system-navbar": "*",
     "@pluralsight/ps-design-system-navbrand": "*",
+    "@pluralsight/ps-design-system-navcookiebanner": "^1.2.0",
     "@pluralsight/ps-design-system-navitem": "*",
     "@pluralsight/ps-design-system-navuser": "*",
-    "@pluralsight/ps-design-system-navcookiebanner": "*",
     "@pluralsight/ps-design-system-normalize": "^4.0.8",
     "@pluralsight/ps-design-system-note": "^6.1.11",
     "@pluralsight/ps-design-system-position": "^4.1.6",
