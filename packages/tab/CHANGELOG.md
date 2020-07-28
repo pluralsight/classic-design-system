@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.1.7...@pluralsight/ps-design-system-tab@15.1.8) (2020-07-28)
+
+
+### Bug Fixes
+
+* **tab:** use ReactNode as children ([58df9e2](https://github.com/pluralsight/design-system/commit/58df9e2e5b3a8a2d4e4c965e7197d927cc008f17))
+
+
+
+
+
 ## [15.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.1.6...@pluralsight/ps-design-system-tab@15.1.7) (2020-07-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab
