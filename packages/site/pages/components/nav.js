@@ -1,35 +1,23 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Banner from '@pluralsight/ps-design-system-banner'
-import Button from '@pluralsight/ps-design-system-button'
-import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import * as core from '@pluralsight/ps-design-system-core'
-import DatePicker from '@pluralsight/ps-design-system-datepicker'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
-import Form from '@pluralsight/ps-design-system-form'
-import { CloseIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
+import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
-import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
-import TextInput from '@pluralsight/ps-design-system-textinput'
-import TextArea from '@pluralsight/ps-design-system-textarea'
-import Radio from '@pluralsight/ps-design-system-radio'
 import NavBar from '@pluralsight/ps-design-system-navbar'
+import NavBrand from '@pluralsight/ps-design-system-navbrand'
+import DSNavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
+import NavItem from '@pluralsight/ps-design-system-navitem'
+import NavUser from '@pluralsight/ps-design-system-navuser'
 import React from 'react'
-import { capitalize } from '@pluralsight/ps-design-system-util'
-import Switch from '@pluralsight/ps-design-system-switch'
 
 import {
   Chrome,
   Code,
   Content,
   Example,
-  Guideline,
   Intro,
   P,
   PageHeading,
-  SectionHeading,
-  TextLink,
-  ThemeToggle
+  SectionHeading
 } from '../../src/ui/index.js'
 
 export default function NavPage() {
@@ -63,23 +51,31 @@ import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser' 
 import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'`}
         </Code>
+
         <SectionHeading>Components</SectionHeading>
-        <h3>Nav bar</h3>
+        <ComponentHeading>Nav bar</ComponentHeading>
         <P>
           The nav bar component is the container of the global navigation. It’s
           56px tall and should be fluid and sticky to the left/top/right of the
           browser viewport.
         </P>
         <Example.React
-          themeToggle
           orient="vertical"
+          outputStyle={{ padding: `0 0 ${core.layout.spacingLarge} 0` }}
           includes={{
+            Filler,
             NavBar
           }}
-          codes={[`<NavBar />`]}
+          codes={[
+            `<NavBar 
+  brand={<Filler>Brand</Filler>}
+  items={<Filler>Items</Filler>}
+  user={<Filler>User</Filler>}
+  utility={<Filler>Utility</Filler>} />`
+          ]}
         />
 
-        <h3>Nav item</h3>
+        <ComponentHeading>Nav item</ComponentHeading>
         <P>
           The nav item component is for creating links to pages or as action
           triggers. A horizontal variant can be used with or without an icon.
@@ -88,30 +84,46 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'`}
           unecessary.
         </P>
         <Example.React
-          themeToggle
-          orient="vertical"
-          includes={{
-            NavBar
+          outputStyle={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gap: core.layout.spacingMedium
           }}
-          codes={[`<NavBar />`]}
+          outputChildStyle={{
+            display: 'flex',
+            justifyContent: 'center',
+            margin: 0
+          }}
+          includes={{
+            HomeIcon,
+            NavItem
+          }}
+          codes={[
+            `<NavItem icon={<HomeIcon />} menu={<div>placeholder</div>}>Label</NavItem>`,
+            `<NavItem icon={<HomeIcon />}>Label</NavItem>`,
+            `<NavItem menu={<div>placeholder</div>}>Label</NavItem>`,
+            `<NavItem>Label</NavItem>`,
+            `<NavItem icon={<HomeIcon />} alignment={NavItem.alignments.vertical}>Label</NavItem>`,
+            `<NavItem icon={<HomeIcon />} alignment={NavItem.alignments.vertical} menu={<div>placeholder</div>}>Label</NavItem>`,
+            `<NavItem icon={<HomeIcon />} />`
+          ]}
         />
 
-        <h3>Nav brand</h3>
+        <ComponentHeading>Nav brand</ComponentHeading>
         <P>
           The nav brand component creates a consistent use of branding for the
           icon and logo of an app. It is intended to always be placed at the
           left end of the nav bar.
         </P>
         <Example.React
-          themeToggle
-          orient="vertical"
           includes={{
-            NavBar
+            NavBrand,
+            MyLogo
           }}
-          codes={[`<NavBar />`]}
+          codes={[`<NavBrand logo={<MyLogo />} wordmark="TITLE" />`]}
         />
 
-        <h3>Nav user</h3>
+        <ComponentHeading>Nav user</ComponentHeading>
         <P>
           The nav user component is for actions & settings related to the user.
           It is intended to always be placed at the right end of the nav bar.
@@ -120,23 +132,30 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'`}
           narrow, the text will be dropped.
         </P>
         <Example.React
-          themeToggle
-          orient="vertical"
           includes={{
-            NavBar
+            NavUser
           }}
-          codes={[`<NavBar />`]}
+          codes={[
+            `<NavUser name="Name" meta="Meta" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />`,
+            `<NavUser name="Name" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />`,
+            `<NavUser src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />`
+          ]}
         />
 
-        <h3>Nav cookie banner</h3>
-        <P>TODO</P>
+        <ComponentHeading>Nav cookie banner</ComponentHeading>
+        <P>
+          The nav cookie banner is common nav element that should be present on
+          the page in order to comply with laws requiring notice that cookies
+          are used in our product. It will be affixed to the bottom/left of the
+          app frame.
+        </P>
         <Example.React
-          themeToggle
-          orient="vertical"
+          outputStyle={{ position: 'relative', minHeight: '128px', padding: 0 }}
+          outputChildStyle={{ position: 'relative' }}
           includes={{
-            NavBar
+            NavCookieBanner
           }}
-          codes={[`<NavBar />`]}
+          codes={[`<NavCookieBanner />`]}
         />
 
         <SectionHeading>Guidelines</SectionHeading>
@@ -163,4 +182,66 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'`}
       </Content>
     </Chrome>
   )
+}
+
+function ComponentHeading(props) {
+  return (
+    <Text.Heading size={Text.Heading.sizes.medium}>
+      <h3>{props.children}</h3>
+    </Text.Heading>
+  )
+}
+ComponentHeading.propTypes = {
+  children: PropTypes.children
+}
+
+function MyLogo() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="24" height="24" fill="url(#paint0_linear)" />
+      <defs>
+        <linearGradient
+          id="paint0_linear"
+          x1="0"
+          y1="0"
+          x2="24"
+          y2="24"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#8A99A8" />
+          <stop offset="1" stopColor="#576675" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
+function NavCookieBanner() {
+  return <DSNavCookieBanner style={{ position: 'absolute' }} />
+}
+
+function Filler(props) {
+  return (
+    <div>
+      {props.children}
+      <style jsx>{`
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: ${core.colorsPink.base};
+        height: 100%;
+        border: 2px dashed ${core.colorsPink.base};
+        padding: 0 ${core.layout.spacingMedium};
+      `}</style>
+    </div>
+  )
+}
+Filler.propTypes = {
+  children: PropTypes.node
 }
