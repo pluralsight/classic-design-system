@@ -1,6 +1,7 @@
-import React from 'react'
+import { createContext } from 'react'
 
-const initialValue = {}
-const context = React.createContext(initialValue)
+export const initialValue = {}
+
+const context = createContext(initialValue)
 
 export default context

@@ -21,9 +21,11 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
+    "@pluralsight/ps-design-system-button": "*",
     "@pluralsight/ps-design-system-core": "*",
     "@pluralsight/ps-design-system-filter-react-props": "*",
-    "@pluralsight/ps-design-system-prop-types": "*",
+    "@pluralsight/ps-design-system-scrollable": "*",
+    "focus-within": "^3.0.2",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -35,8 +37,14 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-button": "*",
+    "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-navbar": "*",
+    "@pluralsight/ps-design-system-navbrand": "*",
+    "@pluralsight/ps-design-system-navitem": "*",
+    "@pluralsight/ps-design-system-navuser": "*",
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
     "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-text": "*",
     "@pluralsight/ps-design-system-theme": "*"
   }
 }
