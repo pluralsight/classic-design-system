@@ -42,18 +42,23 @@ const NavCookieBanner = React.forwardRef((props, forwardedRef) => {
       domain: '.pluralsight.com',
       expires: oneYear,
       secure: true,
-      sameSite: 'strict'
+      sameSite: 'strict',
+      ...props.cookieOptions
     })
   }
 
   return (
     <div ref={ref} {...styles.banner()} {...filterReactProps(props)}>
       <p {...styles.message()}>
-        <label>Pluralsight uses cookies.</label>
-        {'  '}
-        <a href="//www.pluralsight.com/privacy">
-          Learn more about your privacy
-        </a>
+        {props.message || (
+          <>
+            <label>Pluralsight uses cookies.</label>
+            {'  '}
+            <a href="//www.pluralsight.com/privacy">
+              Learn more about your privacy
+            </a>
+          </>
+        )}
       </p>
 
       <button
@@ -71,6 +76,13 @@ NavCookieBanner.defaultProps = {
   privacyUpdatedDate: DEFAULT_PRIVACY_UPDATED_DATE
 }
 NavCookieBanner.propTypes = {
+  cookieOptions: PropTypes.shape({
+    domain: PropTypes.string,
+    expires: PropTypes.date,
+    secure: PropTypes.bool,
+    sameSite: PropTypes.string
+  }),
+  message: PropTypes.node,
   privacyUpdatedDate: PropTypes.instanceOf(Date)
 }
 export default NavCookieBanner
