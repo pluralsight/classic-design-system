@@ -1,3 +1,4 @@
+import { canUseDOM } from 'exenv'
 import { compose, css, media } from 'glamor'
 import React, {
   forwardRef,
@@ -37,7 +38,7 @@ const styles = {
     )
 }
 
-const BLANK_IMAGE = new Image(0, 0)
+const BLANK_IMAGE = canUseDOM ? new Image(0, 0) : {}
 // prettier-ignore
 BLANK_IMAGE.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
