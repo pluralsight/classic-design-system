@@ -1,5 +1,10 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { HomeIcon } from '@pluralsight/ps-design-system-icon'
+import {
+  AccountIcon,
+  BrowseIcon,
+  HomeIcon,
+  NotificationsIcon
+} from '@pluralsight/ps-design-system-icon'
 import PropTypes from 'prop-types'
 import * as Text from '@pluralsight/ps-design-system-text'
 import NavBar from '@pluralsight/ps-design-system-navbar'
@@ -158,6 +163,13 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'`}
           codes={[`<NavCookieBanner />`]}
         />
 
+        <ComponentHeading>Reference designs</ComponentHeading>
+        <P>
+          Here are some examples of how the navigation components can be used
+          together to create consistent global navigation system for your app.
+        </P>
+        <ReferenceDesign1 />
+
         <SectionHeading>Guidelines</SectionHeading>
         <P>Always keep the navigation bar height 56px.</P>
         <P>
@@ -244,4 +256,76 @@ function Filler(props) {
 }
 Filler.propTypes = {
   children: PropTypes.node
+}
+
+function ReferenceDesign1() {
+  return (
+    <Example.React
+      outputStyle={{ padding: `0 0 ${core.layout.spacingLarge} 0` }}
+      includes={{
+        AccountIcon,
+        BrowseIcon,
+        core,
+        NavBar,
+        NavBrand,
+        NavItem,
+        NavUser,
+        NotificationsIcon,
+        MyLogo
+      }}
+      codes={[
+        `<NavBar
+  brand={<NavBrand logo={<MyLogo />} wordmark="TITLE" />}
+  items={
+    <React.Fragment>
+      <div
+        style={{
+          marginRight: core.layout.spacingXXSmall,
+          display: 'inline-block'
+        }}
+      >
+        <NavItem icon={<HomeIcon />}>Home</NavItem>
+      </div>
+      <div
+        style={{
+          display: 'inline-block'
+        }}
+      >
+        <NavItem icon={<BrowseIcon />} selected>
+          Browse
+        </NavItem>
+      </div>
+    </React.Fragment>
+  }
+  onMobileMenuClick={() => alert('mobile click')}
+  user={
+    <NavUser
+      name="Jake"
+      planName="Accenture"
+      onClick={() => alert('user click')}
+    />
+  }
+  utility={
+    <React.Fragment>
+      <div
+        style={{
+          marginRight: core.layout.spacingXXSmall,
+          display: 'inline-block'
+        }}
+      >
+        <NavItem icon={<NotificationsIcon />} />
+      </div>
+      <div
+        style={{
+          display: 'inline-block'
+        }}
+      >
+        <NavItem icon={<AccountIcon />} />
+      </div>
+    </React.Fragment>
+  }
+/>`
+      ]}
+    />
+  )
 }
