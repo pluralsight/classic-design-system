@@ -55,6 +55,14 @@ const TestComponent = props => {
 }
 
 describe('useMenuKeyEvents()', () => {
+  beforeAll(() => {
+    Object.defineProperty(global.Element.prototype, 'innerText', {
+      get() {
+        this.querySelectorAll('script,style').forEach(s => s.remove())
+        return this.textContent
+      }
+    })
+  })
   it('TestComponent Snapshot', () => {
     const { getByTestId } = render(<TestComponent />)
     const root = getByTestId('root-menu')

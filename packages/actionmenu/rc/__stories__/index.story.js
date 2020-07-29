@@ -1,16 +1,16 @@
-import React, { createRef, useEffect } from 'react'
-import { compose, css } from 'glamor'
+import React, { useEffect } from 'react'
+import { css } from 'glamor'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { useMenuKeyEvents } from '@pluralsight/ps-design-system-util'
 
-storiesOf('actionmenu:rc', module).add('default', () => {
+const MockComponent = () => {
   const rootList = [...Array(10).keys()]
   const nestedList = [...Array(5).keys()]
   const [ref, removeListener] = useMenuKeyEvents()
   useEffect(() => {
     return removeListener
-  })
+  }, [removeListener])
   return (
     <ul
       data-testid="root-menu"
@@ -61,4 +61,5 @@ storiesOf('actionmenu:rc', module).add('default', () => {
       })}
     </ul>
   )
-})
+}
+storiesOf('actionmenu:rc', module).add('default', () => <MockComponent />)

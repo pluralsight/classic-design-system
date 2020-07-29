@@ -5,4 +5,3 @@ import '@testing-library/jest-dom/extend-expect.js'
 
 import './match-media.js'
 import './react-dom.js'
-import './inner-text.js'
