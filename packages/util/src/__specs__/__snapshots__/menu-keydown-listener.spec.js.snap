@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useMenuKeyEvents() TestComponent Snapshot 1`] = `
+<ul
+  data-testid="root-menu"
+>
+  <li
+    data-testid="root-list-item-0"
+    tabindex="-1"
+  >
+    0
+     root list item
+  </li>
+  <li
+    data-testid="root-list-item-1"
+    tabindex="-1"
+  >
+    1
+     root list item
+  </li>
+  <li
+    data-testid="root-list-item-2"
+    tabindex="-1"
+  >
+    2
+     root list item
+  </li>
+  <li
+    data-testid="root-list-item-3"
+    tabindex="-1"
+  >
+    3
+     root list item
+  </li>
+  <li
+    data-testid="root-list-item-4"
+    tabindex="-1"
+  >
+    4
+     root list item
+    <ul
+      data-testid="sub-menu"
+    >
+      <li
+        data-testid="first-sub-menu-list-item-0"
+        tabindex="-1"
+      >
+        0
+         sub menu list item
+      </li>
+      <li
+        data-testid="first-sub-menu-list-item-1"
+        tabindex="-1"
+      >
+        1
+         sub menu list item
+      </li>
+      <li
+        data-testid="first-sub-menu-list-item-2"
+        tabindex="-1"
+      >
+        2
+         sub menu list item
+      </li>
+      <li
+        data-testid="first-sub-menu-list-item-3"
+        tabindex="-1"
+      >
+        3
+         sub menu list item
+      </li>
+      <li
+        data-testid="first-sub-menu-list-item-4"
+        tabindex="-1"
+      >
+        4
+         sub menu list item
+      </li>
+    </ul>
+  </li>
+  <li
+    data-testid="root-list-item-5"
+    tabindex="-1"
+  >
+    5
+     root list item
+  </li>
+  <li
+    data-testid="root-list-item-6"
+    tabindex="-1"
+  >
+    6
+     root list item
+  </li>
+  <li
+    data-testid="root-list-item-7"
+    tabindex="-1"
+  >
+    7
+     root list item
+    <ul
+      data-testid="sub-menu"
+    >
+      <li
+        data-testid="second-sub-menu-list-item-0"
+        tabindex="-1"
+      >
+        0
+         sub menu list item
+      </li>
+      <li
+        data-testid="second-sub-menu-list-item-1"
+        tabindex="-1"
+      >
+        1
+         sub menu list item
+      </li>
+      <li
+        data-testid="second-sub-menu-list-item-2"
+        tabindex="-1"
+      >
+        2
+         sub menu list item
+      </li>
+      <li
+        data-testid="second-sub-menu-list-item-3"
+        tabindex="-1"
+      >
+        3
+         sub menu list item
+      </li>
+      <li
+        data-testid="second-sub-menu-list-item-4"
+        tabindex="-1"
+      >
+        4
+         sub menu list item
+      </li>
+    </ul>
+  </li>
+  <li
+    data-testid="root-list-item-8"
+    tabindex="-1"
+  >
+    8
+     root list item
+  </li>
+  <li
+    data-testid="root-list-item-9"
+    tabindex="-1"
+  >
+    9
+     root list item
+  </li>
+</ul>
+`;

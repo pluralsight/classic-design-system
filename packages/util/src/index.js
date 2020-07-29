@@ -10,4 +10,7 @@ export { capitalize } from './string.js'
 export { useCombinedRefs } from './use-combined-refs.js'
 export { useResizeObserver } from './use-resize-observer.js'
 export { useToggle } from './use-toggle.js'
-export { menuKeyupListener, useMenuKeyEvents } from './menu-keyup-listener.js'
+export {
+  menuKeydownListener,
+  useMenuKeyEvents
+} from './menu-keydown-listener.js'

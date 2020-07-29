@@ -1,4 +1,5 @@
-import { useCallback, useRef } from 'react'
+import { useCallback, createRef } from 'react'
+import { useCombinedRefs } from './use-combined-refs.js'
 
 const searchListItem = (el, down = true) => {
   return el.tagName === 'LI'
@@ -13,7 +14,6 @@ const searchListItem = (el, down = true) => {
 
 const rightArrow = e => {
   const subMenu = e.target.querySelector(':scope > ul')
-  console.log(e.target, subMenu)
   if (subMenu.tagName !== 'UL') return
   const firstChild = searchListItem(subMenu.firstElementChild)
   firstChild && firstChild.focus()
@@ -85,19 +85,23 @@ const keyEventsHandler = e => {
     : char(e)
 }
 
-export const menuKeyupListener = root => {
+export const menuKeydownListener = root => {
   const firstMenuItem = searchListItem(root.firstElementChild)
   firstMenuItem && firstMenuItem.focus()
-  firstMenuItem && root.addEventListener('keyup', keyEventsHandler)
+  firstMenuItem && root.addEventListener('keydown', keyEventsHandler)
   return keyEventsHandler
 }
 
 export const useMenuKeyEvents = () => {
-  const listener = useRef(null)
-  const ref = useCallback(node => {
+  const outer = createRef()
+  const inner = useCallback(node => {
     if (node !== null) {
-      listener.current = menuKeyupListener(node)
+      menuKeydownListener(node)
     }
   }, [])
-  return [ref, () => ref.current.removeEventListener('keyup', listener.current)]
+  const ref = useCombinedRefs(outer, inner)
+  return [
+    ref,
+    () => ref.current.removeEventListener('keydown', keyEventsHandler)
+  ]
 }
