@@ -530,7 +530,7 @@ export default _ => (
           <Text.Code>Drawer</Text.Code>
         </Link>
         . Mark the nested <Text.Code>Table</Text.Code> with the{' '}
-        <Text.Code>isDrawer</Text.Code> prop to get the correct styling.
+        <Text.Code>inDrawer</Text.Code> prop to get the correct styling.
       </P>
 
       <Example.React
