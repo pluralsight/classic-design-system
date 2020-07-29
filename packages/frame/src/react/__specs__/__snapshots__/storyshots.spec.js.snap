@@ -6,7 +6,7 @@ exports[`Storyshots Frame basic 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#TODO"
+    href="#ps-frame-skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -205,7 +205,7 @@ exports[`Storyshots Frame basic 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="TODO"
+        id="ps-frame-skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />
@@ -279,13 +279,247 @@ exports[`Storyshots Frame basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots Frame meta 1`] = `
+<div
+  data-css-2p2lwl=""
+>
+  <div
+    data-css-teuamr=""
+    href="#ps-frame-skip-target"
+  >
+    <button
+      data-css-1btzibk=""
+      disabled={false}
+      style={Object {}}
+      tabIndex={0}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        skip to main content
+      </span>
+    </button>
+  </div>
+  <div
+    data-css-1oxt2bx=""
+  >
+    <div>
+      <div
+        data-css-tuvdh3=""
+      >
+        <div
+          data-css-1qn6dtd=""
+        >
+          <span
+            className={
+              Object {
+                "data-css-ruxays": "",
+              }
+            }
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <button
+                data-css-11n5d38=""
+                icon={<MenuIcon />}
+                onClick={[Function]}
+              >
+                <span
+                  className={
+                    Object {
+                      "data-css-50rv4t": "",
+                    }
+                  }
+                >
+                  <span
+                    className={
+                      Object {
+                        "data-css-1009u4g": "",
+                      }
+                    }
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="menu icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M22 11.5v1a.5.5 0 01-.5.5h-19a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h19a.5.5 0 01.5.5zM2.5 17h18.98a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H2.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5zm0-12h18.977a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H2.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5z"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </span>
+                </span>
+              </button>
+            </div>
+            <div
+              className={
+                Object {
+                  "data-css-1pe8c3g": "",
+                }
+              }
+            />
+          </span>
+        </div>
+        <div
+          data-css-1kfsc44=""
+        >
+          <div
+            data-css-1ij5lym=""
+          >
+            <div
+              data-css-1yi1k4r=""
+            >
+              <div
+                data-css-1yppk9l=""
+              >
+                <svg
+                  aria-hidden={true}
+                  viewBox="0 0 32 32"
+                >
+                  <defs>
+                    <linearGradient
+                      gradientUnits="userSpaceOnUse"
+                      id="skills-gradient"
+                      x1="45.6377"
+                      x2="-32.2436"
+                      y1="47.4727"
+                      y2="-35.2537"
+                    >
+                      <stop
+                        offset="0.03"
+                        stopColor="#F05A28"
+                      />
+                      <stop
+                        offset="0.93"
+                        stopColor="#EB008B"
+                      />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M0 0V32H32V0H0ZM9.4053 12.7438L15.088 16L9.4053 19.287V12.7438ZM9.4053 24.8503V21.6468L19.1842 16L9.4053 10.3532V7.17166L24.6955 16L9.4053 24.8503Z"
+                    fill="url(#skills-gradient)"
+                  />
+                </svg>
+              </div>
+              <div
+                data-css-1b9xv68=""
+              >
+                SKILLS
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-1ns9ldv=""
+        >
+          <p
+            data-css-1djw98v=""
+          >
+            {"mobile":true,"skipTargetId":"ps-frame-skip-target"}
+          </p>
+        </div>
+        <div
+          data-css-jgr69u=""
+        />
+        <div>
+          <div
+            data-css-1ij5lym=""
+          >
+            <div
+              data-css-91smc8=""
+            >
+              <div
+                data-css-79vgce=""
+              >
+                <div
+                  aria-label="Jake"
+                  data-css-1h1qs66=""
+                  style={
+                    Object {
+                      "backgroundColor": "#008F46",
+                    }
+                  }
+                >
+                  J
+                </div>
+              </div>
+              <div
+                data-css-1mmc9g1=""
+              >
+                <div
+                  data-css-6flzpu=""
+                >
+                  Jake
+                </div>
+                <div
+                  data-css-1085xn4=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1lvztem=""
+  >
+    <div
+      data-css-oi6fbf=""
+    >
+      <div
+        data-css-q1pa3g=""
+      >
+        <div>
+          <p
+            data-css-1djw98v=""
+          >
+            side nav
+          </p>
+          <p
+            data-css-1djw98v=""
+          >
+            {"mobile":true,"skipTargetId":"ps-frame-skip-target"}
+          </p>
+        </div>
+      </div>
+    </div>
+    <main
+      data-css-1ixsor8=""
+    >
+      <a
+        id="ps-frame-skip-target"
+        onClick={[Function]}
+        tabIndex={-1}
+      />
+      <div
+        data-css-60rhmp=""
+      >
+        <p
+          data-css-1djw98v=""
+        >
+          {"mobile":true,"skipTargetId":"ps-frame-skip-target"}
+        </p>
+      </div>
+    </main>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Frame no sidenav 1`] = `
 <div
   data-css-2p2lwl=""
 >
   <div
     data-css-teuamr=""
-    href="#TODO"
+    href="#ps-frame-skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -409,7 +643,7 @@ exports[`Storyshots Frame no sidenav 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="TODO"
+        id="ps-frame-skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />
@@ -489,7 +723,7 @@ exports[`Storyshots Frame short content 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#TODO"
+    href="#ps-frame-skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -688,7 +922,7 @@ exports[`Storyshots Frame short content 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="TODO"
+        id="ps-frame-skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />

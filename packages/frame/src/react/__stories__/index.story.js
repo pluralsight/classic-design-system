@@ -62,6 +62,36 @@ storiesOf('Frame', module)
       <MockContent />
     </Frame>
   ))
+  .add('meta', _ => {
+    function Story() {
+      const [open, setOpen] = useState(false)
+      const toggle = () => setOpen(!open)
+
+      return (
+        <Frame
+          sidenav={meta => (
+            <MockSideNav>
+              <Text.P>{JSON.stringify(meta)}</Text.P>
+            </MockSideNav>
+          )}
+          sidenavOpen={open}
+          topnav={meta => (
+            <MockTopNav onMobileMenuClick={toggle}>
+              <Text.P>{JSON.stringify(meta)}</Text.P>
+            </MockTopNav>
+          )}
+        >
+          {meta => (
+            <PageWidthLayout>
+              <Text.P>{JSON.stringify(meta)}</Text.P>
+            </PageWidthLayout>
+          )}
+        </Frame>
+      )
+    }
+
+    return <Story />
+  })
 
 function MockContent() {
   return (
@@ -177,21 +207,25 @@ function MockContent() {
   )
 }
 
-function MockSideNav() {
+function MockSideNav({ children }) {
   return (
     <div>
       <Text.P>side nav</Text.P>
+
+      {children}
     </div>
   )
 }
+MockSideNav.propTypes = { children: PropTypes.node }
 
 function MockTopNav(props) {
-  const { onMobileMenuClick } = props
+  const { children, onMobileMenuClick } = props
 
   return (
     <div>
       <NavBar
         brand={<SkillsBrand />}
+        items={children}
         onMobileMenuClick={onMobileMenuClick}
         user={<NavUser name="Jake" planName="Accenture" />}
       />
@@ -199,6 +233,7 @@ function MockTopNav(props) {
   )
 }
 MockTopNav.propTypes = {
+  children: PropTypes.node,
   onMobileMenuClick: PropTypes.func
 }
 

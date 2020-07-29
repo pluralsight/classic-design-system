@@ -43,12 +43,12 @@ const styles = {
 }
 
 const Frame = React.forwardRef((props, forwardedRef) => {
-  const { sidenav, sidenavOpen = false } = props
+  const { children, sidenav, sidenavOpen = false, topnav } = props
 
   const ref = React.useRef()
   useImperativeHandle(forwardedRef, () => ref.current)
 
-  const medium = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
+  const tabletPlus = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
   const themeName = useTheme()
 
   const variant = useMemo(() => {
@@ -58,13 +58,13 @@ const Frame = React.forwardRef((props, forwardedRef) => {
 
     let nextVariant = sidenavOpen ? variants.open : variants.closed
 
-    if (!medium && sidenavOpen) nextVariant = variants.overlay
-    if (medium && !sidenavOpen) nextVariant = variants.minimized
+    if (!tabletPlus && sidenavOpen) nextVariant = variants.overlay
+    if (tabletPlus && !sidenavOpen) nextVariant = variants.minimized
 
     return nextVariant
-  }, [sidenav, sidenavOpen, medium])
+  }, [sidenav, sidenavOpen, tabletPlus])
 
-  const skipTargetId = 'TODO'
+  const skipTargetId = 'ps-frame-skip-target'
   const skipTargetRef = useRef()
 
   const focusSkipTarget = useCallback(() => {
@@ -72,6 +72,8 @@ const Frame = React.forwardRef((props, forwardedRef) => {
 
     skipTargetRef.current.focus()
   }, [])
+
+  const meta = { mobile: !tabletPlus, skipTargetId }
 
   return (
     <div
@@ -82,22 +84,29 @@ const Frame = React.forwardRef((props, forwardedRef) => {
       <Theme name={themes.dark}>
         <SkipBanner href={'#' + skipTargetId} />
       </Theme>
+
       <Theme name={themes.dark}>
-        <div {...styles.topnav()}>{props.topnav}</div>
+        <div {...styles.topnav()}>
+          {isFunction(topnav) ? topnav(meta) : topnav}
+        </div>
       </Theme>
 
       <Container variant={variant}>
-        {sidenav && <SideNav variant={variant}>{sidenav}</SideNav>}
+        {sidenav && (
+          <SideNav variant={variant}>
+            {isFunction(sidenav) ? sidenav(meta) : sidenav}
+          </SideNav>
+        )}
 
-        <Content>
+        <main {...styles.content()}>
           <SkipTarget
             id={skipTargetId}
             onClick={focusSkipTarget}
             ref={skipTargetRef}
           />
 
-          {props.children}
-        </Content>
+          {isFunction(children) ? children(meta) : children}
+        </main>
       </Container>
     </div>
   )
@@ -106,10 +115,10 @@ const Frame = React.forwardRef((props, forwardedRef) => {
 Frame.displayName = 'Frame'
 
 Frame.propTypes = {
-  children: PropTypes.node.isRequired,
-  sidenav: PropTypes.node,
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  sidenav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   sidenavOpen: PropTypes.bool,
-  topnav: PropTypes.node
+  topnav: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
 }
 
 function SkipBanner(props) {
@@ -147,13 +156,6 @@ Container.propTypes = {
   variant: PropTypes.oneOf(Object.keys(vars.sidenavVariants))
 }
 
-function Content(props) {
-  return <main {...styles.content()} {...props} />
-}
-Content.propTypes = {
-  children: PropTypes.node
-}
-
 function SideNav(props) {
   const { children, variant, ...rest } = props
   const ref = React.useRef()
@@ -172,6 +174,10 @@ function SideNav(props) {
 SideNav.propTypes = {
   children: PropTypes.node,
   variant: PropTypes.oneOf(Object.keys(vars.sidenavVariants))
+}
+
+function isFunction(fn) {
+  return typeof fn === 'function'
 }
 
 export default Frame
