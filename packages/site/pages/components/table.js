@@ -255,7 +255,7 @@ export default _ => (
 
       <P>Include a React component in your project:</P>
       <Code language="javascript">
-        import Button from '@pluralsight/ps-design-system-table'
+        import Table from '@pluralsight/ps-design-system-table'
       </Code>
 
       <PropTypes
