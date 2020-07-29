@@ -63,55 +63,72 @@ describe('useMenuKeyEvents()', () => {
       }
     })
   })
-  it('TestComponent Snapshot', () => {
+  it('ArrowUp', () => {
     const { getByTestId } = render(<TestComponent />)
-    const root = getByTestId('root-menu')
-    expect(root).toMatchSnapshot()
+    let focused = getByTestId('root-list-item-0')
+
+    // ArrowUp
+    fireEvent.keyDown(focused, { key: 'ArrowUp' })
+    focused = getByTestId('root-list-item-9')
+    expect(document.activeElement).toBe(focused)
+
+    // ArrowUp
+    fireEvent.keyDown(focused, { key: 'ArrowUp' })
+    focused = getByTestId('root-list-item-8')
+    expect(document.activeElement).toBe(focused)
   })
-  it('Keydown to ', () => {
+  it('ArrowDown + End', () => {
     const { getByTestId } = render(<TestComponent />)
     let focused = getByTestId('root-list-item-0')
     expect(document.activeElement).toBe(focused)
 
+    // ArrowDown
     fireEvent.keyDown(focused, { key: 'ArrowDown' })
     focused = getByTestId('root-list-item-1')
     expect(document.activeElement).toBe(focused)
 
-    fireEvent.keyDown(focused, { key: 'ArrowUp' })
+    // End
+    fireEvent.keyDown(focused, { key: 'End' })
+    focused = getByTestId('root-list-item-9')
+    expect(document.activeElement).toBe(focused)
+
+    // ArrowDown
+    fireEvent.keyDown(focused, { key: 'ArrowDown' })
     focused = getByTestId('root-list-item-0')
     expect(document.activeElement).toBe(focused)
+  })
 
-    fireEvent.keyDown(focused, { key: 'ArrowDown' })
-    focused = getByTestId('root-list-item-1')
-    fireEvent.keyDown(focused, { key: 'ArrowDown' })
-    focused = getByTestId('root-list-item-2')
-    fireEvent.keyDown(focused, { key: 'ArrowDown' })
-    focused = getByTestId('root-list-item-3')
-    fireEvent.keyDown(focused, { key: 'ArrowDown' })
+  it('Character + ArrowRight', () => {
+    const { getByTestId } = render(<TestComponent />)
+    let focused = getByTestId('root-list-item-0')
+
+    // Character
+    fireEvent.keyDown(focused, { key: '4' })
     focused = getByTestId('root-list-item-4')
     expect(document.activeElement).toBe(focused)
 
+    // ArrowRight
     fireEvent.keyDown(focused, { key: 'ArrowRight' })
     focused = getByTestId('first-sub-menu-list-item-0')
     expect(document.activeElement).toBe(focused)
-
-    fireEvent.keyDown(focused, { key: 'End' })
-    focused = getByTestId('first-sub-menu-list-item-4')
-    expect(document.activeElement).toBe(focused)
-
-    fireEvent.keyDown(focused, { key: 'ArrowLeft' })
-    focused = getByTestId('root-list-item-4')
-    expect(document.activeElement).toBe(focused)
-
-    fireEvent.keyDown(focused, { key: 'Home' })
-    focused = getByTestId('root-list-item-0')
-    expect(document.activeElement).toBe(focused)
-
-    fireEvent.keyDown(focused, { key: 'Home' })
-    focused = getByTestId('root-list-item-0')
-    expect(document.activeElement).toBe(focused)
-
+  })
+  it('Home + ArrowLeft', () => {
+    const { getByTestId } = render(<TestComponent />)
+    let focused = getByTestId('root-list-item-0')
     fireEvent.keyDown(focused, { key: '7' })
+    focused = getByTestId('root-list-item-7')
+    fireEvent.keyDown(focused, { key: 'ArrowRight' })
+    focused = getByTestId('second-sub-menu-list-item-0')
+    fireEvent.keyDown(focused, { key: 'ArrowUp' })
+    focused = getByTestId('second-sub-menu-list-item-4')
+
+    // Home
+    fireEvent.keyDown(focused, { key: 'Home' })
+    focused = getByTestId('second-sub-menu-list-item-0')
+    expect(document.activeElement).toBe(focused)
+
+    // ArrowLeft
+    fireEvent.keyDown(focused, { key: 'ArrowLeft' })
     focused = getByTestId('root-list-item-7')
     expect(document.activeElement).toBe(focused)
   })

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { css } from 'glamor'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { useMenuKeyEvents } from '@pluralsight/ps-design-system-util'
+import { useMenuKeyEvents } from '../index.js'
 
 const MockComponent = () => {
   const rootList = [...Array(10).keys()]
@@ -62,4 +62,4 @@ const MockComponent = () => {
     </ul>
   )
 }
-storiesOf('actionmenu:rc', module).add('default', () => <MockComponent />)
+storiesOf('util', module).add('useMenuKeyEvents', () => <MockComponent />)
