@@ -1,11 +1,6 @@
 import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
-import React, {
-  useCallback,
-  useImperativeHandle,
-  useRef,
-  useState
-} from 'react'
+import React, { useCallback, useImperativeHandle, useRef } from 'react'
 import PropTypes from 'prop-types'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -16,7 +11,7 @@ import Theme, {
 } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
-import FrameContext, { initialValue as initialContextValue } from './context.js'
+import * as vars from '../vars/index.js'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
@@ -31,16 +26,22 @@ const styles = {
 
   container: () => css(stylesheet['.psds-frame__container']),
   content: () => css(stylesheet['.psds-frame__content']),
-  sidenav: () => css(stylesheet['.psds-frame__sidenav']),
+  sidenav: state =>
+    compose(
+      css(stylesheet['.psds-frame__sidenav']),
+      state && css(stylesheet[`.psds-frame__sidenav--${state}`])
+    ),
+  sidenavInner: () => css(stylesheet['.psds-frame__sidenav__inner']),
   topnav: () => css(stylesheet['.psds-frame__topnav'])
 }
 
 const Frame = React.forwardRef((props, forwardedRef) => {
+  const { sidenavState } = props
+
   const ref = React.useRef()
   useImperativeHandle(forwardedRef, () => ref.current)
 
   const themeName = useTheme()
-  const [contextValue] = useState(initialContextValue)
 
   const skipTargetId = 'TODO'
   const skipTargetRef = useRef()
@@ -52,7 +53,7 @@ const Frame = React.forwardRef((props, forwardedRef) => {
   }, [])
 
   return (
-    <FrameContext.Provider value={contextValue}>
+    <>
       <Theme name={themes.dark}>
         <SkipBanner href={'#' + skipTargetId} />
       </Theme>
@@ -67,9 +68,9 @@ const Frame = React.forwardRef((props, forwardedRef) => {
         </Theme>
 
         <div {...styles.container()}>
-          <Theme name={themes.dark}>
-            {props.sidenav && <div {...styles.sidenav()}>{props.sidenav}</div>}
-          </Theme>
+          {props.sidenav && (
+            <SideNav state={sidenavState}>{props.sidenav}</SideNav>
+          )}
 
           <main {...styles.content()}>
             <SkipTarget
@@ -82,16 +83,25 @@ const Frame = React.forwardRef((props, forwardedRef) => {
           </main>
         </div>
       </div>
-    </FrameContext.Provider>
+    </>
   )
 })
 
 Frame.displayName = 'Frame'
 
+Frame.sidenavStates = vars.sidenavStates
+Frame.widthConstraints = vars.widthConstraints
+
+Frame.defaultProps = {
+  widthConstraint: Frame.widthConstraints.medium
+}
+
 Frame.propTypes = {
   children: PropTypes.node.isRequired,
   sidenav: PropTypes.node,
-  topnav: PropTypes.node
+  sidenavState: PropTypes.oneOf(Object.keys(Frame.sidenavStates)),
+  topnav: PropTypes.node,
+  widthConstraint: PropTypes.oneOf(Object.keys(Frame.widthConstraints))
 }
 
 function SkipBanner(props) {
@@ -117,6 +127,22 @@ const SkipTarget = React.forwardRef((props, ref) => {
 SkipTarget.displayName = 'SkipTarget'
 SkipTarget.propTypes = {
   id: PropTypes.string.isRequired
+}
+
+function SideNav(props) {
+  const { children, state, ...rest } = props
+
+  return (
+    <Theme name={themes.dark}>
+      <div {...styles.sidenav(state)} {...rest}>
+        <div {...styles.sidenavInner()}>{children}</div>
+      </div>
+    </Theme>
+  )
+}
+SideNav.propTypes = {
+  children: PropTypes.node,
+  state: PropTypes.oneOf(Object.keys(Frame.sidenavStates))
 }
 
 export default Frame

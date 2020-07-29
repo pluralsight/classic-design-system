@@ -1,13 +1,16 @@
 import { storiesOf } from '@storybook/react'
-import React from 'react'
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import * as Text from '@pluralsight/ps-design-system-text'
-
 import NavBar from '@pluralsight/ps-design-system-navbar'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 
+import { breakpoints } from '../../vars/index.js'
+
 import Frame from '../index.js'
+import useMatchMedia from '../use-match-media.js'
 
 storiesOf('Frame', module)
   .add('basic', _ => (
@@ -15,11 +18,34 @@ storiesOf('Frame', module)
       <MockContent />
     </Frame>
   ))
-  .add('w/sidenav', _ => (
-    <Frame topnav={<MockTopNav />} sidenav={<MockSideNav />}>
-      <MockContent />
-    </Frame>
-  ))
+  .add('w/sidenav', _ => {
+    const { sidenavStates: states } = Frame
+
+    function Story() {
+      const medium = useMatchMedia(`(min-width: ${breakpoints.medium})`)
+
+      const [open, setOpen] = useState(true)
+      const toggle = () => setOpen(!open)
+
+      const sidenavState = open
+        ? states.open
+        : medium
+        ? states.minimized
+        : states.closed
+
+      return (
+        <Frame
+          topnav={<MockTopNav onMobileMenuClick={toggle} />}
+          sidenav={<MockSideNav />}
+          sidenavState={sidenavState}
+        >
+          <MockContent />
+        </Frame>
+      )
+    }
+
+    return <Story />
+  })
 
 function MockContent() {
   return <Text.P>hello world</Text.P>
@@ -33,15 +59,21 @@ function MockSideNav() {
   )
 }
 
-function MockTopNav() {
+function MockTopNav(props) {
+  const { onMobileMenuClick } = props
+
   return (
     <div>
       <NavBar
         brand={<SkillsBrand />}
+        onMobileMenuClick={onMobileMenuClick}
         user={<NavUser name="Jake" planName="Accenture" />}
       />
     </div>
   )
+}
+MockTopNav.propTypes = {
+  onMobileMenuClick: PropTypes.func
 }
 
 function SkillsBrand(props) {
