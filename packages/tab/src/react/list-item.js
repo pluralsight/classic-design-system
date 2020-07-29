@@ -52,7 +52,7 @@ const ListItem = React.forwardRef((props, ref) => {
 })
 ListItem.propTypes = {
   active: PropTypes.bool,
-  children: PropTypes.string,
+  children: PropTypes.node,
   href: PropTypes.string,
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   innerRef: PropTypes.func,

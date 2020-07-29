@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [19.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.8...@pluralsight/ps-design-system-site@19.1.0) (2020-07-28)
+
+
+### Features
+
+* **site:** initial nav page ([34e6f63](https://github.com/pluralsight/design-system/commit/34e6f6323b26506d8cdd1e1ee5eb11d6ba065124))
+
+
+
+
+
+## [19.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.7...@pluralsight/ps-design-system-site@19.0.8) (2020-07-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-site
+
+
+
+
+
 ## [19.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.6...@pluralsight/ps-design-system-site@19.0.7) (2020-07-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
