@@ -1,6 +1,6 @@
 import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
-import React, { useCallback, useImperativeHandle, useRef } from 'react'
+import React, { useCallback, useImperativeHandle, useMemo, useRef } from 'react'
 import PropTypes from 'prop-types'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -13,6 +13,9 @@ import Theme, {
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
+import useBodyScrollLock from './use-body-scroll-lock.js'
+import useMatchMedia from './use-match-media.js'
+
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 const styles = {
@@ -24,24 +27,42 @@ const styles = {
 
   skipBanner: () => css(stylesheet['.psds-frame__skip-banner']),
 
-  container: () => css(stylesheet['.psds-frame__container']),
+  container: variant =>
+    compose(
+      css(stylesheet['.psds-frame__container']),
+      variant && css(stylesheet[`.psds-frame__container--${variant}`])
+    ),
   content: () => css(stylesheet['.psds-frame__content']),
-  sidenav: state =>
+  sidenav: variant =>
     compose(
       css(stylesheet['.psds-frame__sidenav']),
-      state && css(stylesheet[`.psds-frame__sidenav--${state}`])
+      variant && css(stylesheet[`.psds-frame__sidenav--${variant}`])
     ),
   sidenavInner: () => css(stylesheet['.psds-frame__sidenav__inner']),
   topnav: () => css(stylesheet['.psds-frame__topnav'])
 }
 
 const Frame = React.forwardRef((props, forwardedRef) => {
-  const { sidenavState } = props
+  const { sidenav, sidenavOpen = false } = props
 
   const ref = React.useRef()
   useImperativeHandle(forwardedRef, () => ref.current)
 
+  const medium = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
   const themeName = useTheme()
+
+  const variant = useMemo(() => {
+    const { sidenavVariants: variants } = vars
+
+    if (!sidenav) return variants.closed
+
+    let nextVariant = sidenavOpen ? variants.open : variants.closed
+
+    if (!medium && sidenavOpen) nextVariant = variants.overlay
+    if (medium && !sidenavOpen) nextVariant = variants.minimized
+
+    return nextVariant
+  }, [sidenav, sidenavOpen, medium])
 
   const skipTargetId = 'TODO'
   const skipTargetRef = useRef()
@@ -53,55 +74,42 @@ const Frame = React.forwardRef((props, forwardedRef) => {
   }, [])
 
   return (
-    <>
+    <div
+      ref={ref}
+      {...styles.frame(themeName, props)}
+      {...filterReactProps(props)}
+    >
       <Theme name={themes.dark}>
         <SkipBanner href={'#' + skipTargetId} />
       </Theme>
+      <Theme name={themes.dark}>
+        <div {...styles.topnav()}>{props.topnav}</div>
+      </Theme>
 
-      <div
-        ref={ref}
-        {...styles.frame(themeName, props)}
-        {...filterReactProps(props)}
-      >
-        <Theme name={themes.dark}>
-          <div {...styles.topnav()}>{props.topnav}</div>
-        </Theme>
+      <Container variant={variant}>
+        {sidenav && <SideNav variant={variant}>{sidenav}</SideNav>}
 
-        <div {...styles.container()}>
-          {props.sidenav && (
-            <SideNav state={sidenavState}>{props.sidenav}</SideNav>
-          )}
+        <Content>
+          <SkipTarget
+            id={skipTargetId}
+            onClick={focusSkipTarget}
+            ref={skipTargetRef}
+          />
 
-          <main {...styles.content()}>
-            <SkipTarget
-              id={skipTargetId}
-              onClick={focusSkipTarget}
-              ref={skipTargetRef}
-            />
-
-            {props.children}
-          </main>
-        </div>
-      </div>
-    </>
+          {props.children}
+        </Content>
+      </Container>
+    </div>
   )
 })
 
 Frame.displayName = 'Frame'
 
-Frame.sidenavStates = vars.sidenavStates
-Frame.widthConstraints = vars.widthConstraints
-
-Frame.defaultProps = {
-  widthConstraint: Frame.widthConstraints.medium
-}
-
 Frame.propTypes = {
   children: PropTypes.node.isRequired,
   sidenav: PropTypes.node,
-  sidenavState: PropTypes.oneOf(Object.keys(Frame.sidenavStates)),
-  topnav: PropTypes.node,
-  widthConstraint: PropTypes.oneOf(Object.keys(Frame.widthConstraints))
+  sidenavOpen: PropTypes.bool,
+  topnav: PropTypes.node
 }
 
 function SkipBanner(props) {
@@ -129,12 +137,33 @@ SkipTarget.propTypes = {
   id: PropTypes.string.isRequired
 }
 
+function Container(props) {
+  const { variant, ...rest } = props
+
+  return <div {...styles.container(variant)} {...rest} />
+}
+Container.propTypes = {
+  children: PropTypes.node,
+  variant: PropTypes.oneOf(Object.keys(vars.sidenavVariants))
+}
+
+function Content(props) {
+  return <main {...styles.content()} {...props} />
+}
+Content.propTypes = {
+  children: PropTypes.node
+}
+
 function SideNav(props) {
-  const { children, state, ...rest } = props
+  const { children, variant, ...rest } = props
+  const ref = React.useRef()
+
+  const lockScroll = variant === vars.sidenavVariants.overlay
+  useBodyScrollLock(ref, lockScroll)
 
   return (
     <Theme name={themes.dark}>
-      <div {...styles.sidenav(state)} {...rest}>
+      <div ref={ref} {...styles.sidenav(variant)} {...rest}>
         <div {...styles.sidenavInner()}>{children}</div>
       </div>
     </Theme>
@@ -142,7 +171,7 @@ function SideNav(props) {
 }
 SideNav.propTypes = {
   children: PropTypes.node,
-  state: PropTypes.oneOf(Object.keys(Frame.sidenavStates))
+  variant: PropTypes.oneOf(Object.keys(vars.sidenavVariants))
 }
 
 export default Frame

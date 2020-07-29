@@ -7,7 +7,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { breakpoints, sidenavStates } from '../vars/index.js'
+import { breakpoints, sidenavVariants } from '../vars/index.js'
 
 const layers = {
   content: 0,
@@ -22,12 +22,7 @@ const topnavHeight = '56px'
 
 export default {
   '.psds-frame': {
-    display: 'flex',
-    flexDirection: 'column',
-    left: 0,
-    minHeight: '100vh',
-    position: 'absolute',
-    top: 0
+    label: 'frame'
   },
 
   [`.psds-frame.psds-theme--${themeNames.dark}`]: {
@@ -38,6 +33,8 @@ export default {
   },
 
   '.psds-frame__skip-banner': {
+    label: 'frame__skip-banner',
+
     top: 0,
     left: '50%',
     padding: ` ${layout.spacingSmall}`,
@@ -56,37 +53,51 @@ export default {
   },
 
   '.psds-frame__container': {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
+    label: 'frame__container',
 
+    minHeight: '100vh',
+    transition: `all ${motion.speedFast} ease-in-out`,
+    transitionProperty: 'padding-left'
+  },
+  [`.psds-frame__container--${sidenavVariants.open}`]: {
     [`@media (min-width: ${breakpoints.medium})`]: {
-      flexDirection: 'row'
+      paddingLeft: sidenavWidth
     }
   },
+  [`.psds-frame__container--${sidenavVariants.closed}`]: {},
+  [`.psds-frame__container--${sidenavVariants.minimized}`]: {
+    paddingLeft: sidenavMinimizedWidth
+  },
+
   '.psds-frame__content': {
-    flex: 1,
-    width: '100vw',
+    label: 'frame__content',
+
+    paddingBottom: 1,
+    paddingTop: topnavHeight,
     zIndex: layers.content
   },
+
   '.psds-frame__sidenav': {
+    label: 'frame__sidenav',
+
     backgroundColor: colorsBackgroundDark[2],
     borderRight: `1px solid ${colorsBorder.lowOnDark}`,
     flexDirection: 'row',
     height: `calc(100vh - ${topnavHeight})`,
+    left: 0,
     position: 'fixed',
-    overflow: 'hidden',
-    zIndex: layers.sidenav,
-    width: sidenavWidth,
-
+    top: topnavHeight,
     transition: `all ${motion.speedFast} ease-in-out`,
-    transitionProperty: 'boxShadow, transform, width',
+    transitionProperty: 'transform, width',
+    width: sidenavWidth,
+    zIndex: layers.sidenav,
 
     '&::after': {
       content: ' ',
       display: 'block',
       height: '100%',
       left: 0,
+      pointerEvents: 'none',
       position: 'fixed',
       top: 0,
       transition: `box-shadow ${motion.speedFast} ease-in-out`,
@@ -94,24 +105,16 @@ export default {
     },
 
     [`@media (min-width: ${breakpoints.medium})`]: {
-      position: 'static'
+      overflow: 'hidden'
     }
   },
 
-  [`.psds-frame__sidenav--${sidenavStates.open}`]: {
+  [`.psds-frame__sidenav--${sidenavVariants.overlay}`]: {
     transform: 'translate(0, 0)',
 
-    '&::after': {
-      boxShadow: '50px 0 100px rgba(0, 0, 0, .8)',
-
-      [`@media (min-width: ${breakpoints.medium})`]: {
-        boxShadow: 'none'
-      }
-    },
-
-    [`@media (min-width: ${breakpoints.medium})`]: {}
+    '&::after': { boxShadow: '50px 0 100px rgba(0, 0, 0, .8)' }
   },
-  [`.psds-frame__sidenav--${sidenavStates.closed}`]: {
+  [`.psds-frame__sidenav--${sidenavVariants.closed}`]: {
     transform: 'translate(-100%, 0)',
 
     '&::after': { boxShadow: '0 0 0 rgba(0, 0, 0, .8)' },
@@ -121,11 +124,13 @@ export default {
       width: 0
     }
   },
-  [`.psds-frame__sidenav--${sidenavStates.minimized}`]: {
+  [`.psds-frame__sidenav--${sidenavVariants.minimized}`]: {
     width: sidenavMinimizedWidth
   },
 
   '.psds-frame__sidenav__inner': {
+    label: 'frame__sidenav__inner',
+
     height: '100%',
     minWidth: sidenavWidth,
 
@@ -137,7 +142,13 @@ export default {
   },
 
   '.psds-frame__topnav': {
+    label: 'frame__topnav',
+
     height: topnavHeight,
+    left: 0,
+    position: 'fixed',
+    right: 0,
+    top: 0,
     width: '100vw',
     zIndex: layers.topnav
   }

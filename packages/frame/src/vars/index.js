@@ -5,13 +5,9 @@ export const breakpoints = {
   xLarge: '1280px'
 }
 
-export const sidenavStates = {
+export const sidenavVariants = {
   closed: 'closed',
   minimized: 'minimized',
-  open: 'open'
-}
-
-export const widthConstraints = {
-  medium: 'medium',
-  large: 'large'
+  open: 'open',
+  overlay: 'overlay'
 }
