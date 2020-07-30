@@ -1,6 +1,12 @@
 import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
-import React, { useCallback, useImperativeHandle, useMemo, useRef } from 'react'
+import React, {
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState
+} from 'react'
 import PropTypes from 'prop-types'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -43,26 +49,36 @@ const styles = {
 }
 
 const Frame = React.forwardRef((props, forwardedRef) => {
-  const { children, sidenav, sidenavOpen = false, topnav } = props
+  const { children, sidenav, topnav } = props
 
   const ref = React.useRef()
   useImperativeHandle(forwardedRef, () => ref.current)
 
-  const tabletPlus = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
+  const mediumMedia = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
   const themeName = useTheme()
 
-  const variant = useMemo(() => {
+  const [sidenavOpen, setSidenavOpen] = useState(props.sidenavOpen)
+
+  useEffect(() => {
+    setSidenavOpen(props.sidenavOpen)
+  }, [props.sidenavOpen])
+
+  const getVariant = useCallback(() => {
     const { sidenavVariants: variants } = vars
 
     if (!sidenav) return variants.closed
 
-    let nextVariant = sidenavOpen ? variants.open : variants.closed
+    if (sidenavOpen) {
+      return mediumMedia ? variants.open : variants.overlay
+    } else {
+      return mediumMedia ? variants.minimized : variants.closed
+    }
+  }, [sidenav, sidenavOpen, mediumMedia])
 
-    if (!tabletPlus && sidenavOpen) nextVariant = variants.overlay
-    if (tabletPlus && !sidenavOpen) nextVariant = variants.minimized
-
-    return nextVariant
-  }, [sidenav, sidenavOpen, tabletPlus])
+  const [variant, setVariant] = useState(getVariant)
+  useEffect(() => {
+    setVariant(getVariant)
+  }, [getVariant])
 
   const skipTargetId = 'ps-frame-skip-target'
   const skipTargetRef = useRef()
@@ -72,8 +88,6 @@ const Frame = React.forwardRef((props, forwardedRef) => {
 
     skipTargetRef.current.focus()
   }, [])
-
-  const meta = { mobile: !tabletPlus, skipTargetId }
 
   return (
     <div
@@ -86,17 +100,11 @@ const Frame = React.forwardRef((props, forwardedRef) => {
       </Theme>
 
       <Theme name={themes.dark}>
-        <div {...styles.topnav()}>
-          {isFunction(topnav) ? topnav(meta) : topnav}
-        </div>
+        <div {...styles.topnav()}>{topnav}</div>
       </Theme>
 
       <Container variant={variant}>
-        {sidenav && (
-          <SideNav variant={variant}>
-            {isFunction(sidenav) ? sidenav(meta) : sidenav}
-          </SideNav>
-        )}
+        {sidenav && <SideNav variant={variant}>{sidenav}</SideNav>}
 
         <main {...styles.content()}>
           <SkipTarget
@@ -105,7 +113,7 @@ const Frame = React.forwardRef((props, forwardedRef) => {
             ref={skipTargetRef}
           />
 
-          {isFunction(children) ? children(meta) : children}
+          {children}
         </main>
       </Container>
     </div>
@@ -113,6 +121,9 @@ const Frame = React.forwardRef((props, forwardedRef) => {
 })
 
 Frame.displayName = 'Frame'
+Frame.defaultProps = {
+  sidenavOpen: true
+}
 
 Frame.propTypes = {
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
@@ -158,6 +169,7 @@ Container.propTypes = {
 
 function SideNav(props) {
   const { children, variant, ...rest } = props
+
   const ref = React.useRef()
 
   const lockScroll = variant === vars.sidenavVariants.overlay
@@ -171,13 +183,13 @@ function SideNav(props) {
     </Theme>
   )
 }
+Frame.SideNav = SideNav
+Frame.SideNav.displayName = 'Frame.SideNav'
+SideNav.variants = vars.sidenavVariants
+
 SideNav.propTypes = {
   children: PropTypes.node,
-  variant: PropTypes.oneOf(Object.keys(vars.sidenavVariants))
-}
-
-function isFunction(fn) {
-  return typeof fn === 'function'
+  variant: PropTypes.oneOf(Object.keys(SideNav.variants)).isRequired
 }
 
 export default Frame
