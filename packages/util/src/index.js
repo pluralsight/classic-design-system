@@ -14,3 +14,7 @@ export {
   menuKeydownListener,
   useMenuKeyEvents
 } from './menu-keydown-listener.js'
+export {
+  useCloseOnDocumentEvents,
+  onGlobalEventsClose
+} from './use-close-on-document-events.js'
