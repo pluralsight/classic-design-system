@@ -7,16 +7,20 @@ import * as Text from '@pluralsight/ps-design-system-text'
 import Frame from '../index.js'
 import { MockContent, SideNav, TopNav } from './shared.js'
 
-const noop = () => {}
-
 storiesOf('Frame', module)
   .add('basic', _ => (
-    <Frame
-      topnav={<TopNav onMobileMenuClick={noop} />}
-      sidenav={<SideNav />}
-      sidenavOpen
-    >
+    <Frame sidenav={<SideNav collapsed hideLabels />} topnav={<TopNav />}>
       <MockContent />
+    </Frame>
+  ))
+  .add('short content', _ => (
+    <Frame sidenav={<SideNav collapsed hideLabels />} topnav={<TopNav />}>
+      <PageWidthLayout>
+        <Text.P>
+          Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée
+          cotton candy candy canes bear claw apple pie.
+        </Text.P>
+      </PageWidthLayout>
     </Frame>
   ))
   .add('no sidenav', _ => (
@@ -24,18 +28,14 @@ storiesOf('Frame', module)
       <MockContent />
     </Frame>
   ))
-  .add('short content', _ => (
-    <Frame
-      topnav={<TopNav onMobileMenuClick={noop} />}
-      sidenav={<SideNav />}
-      sidenavOpen
-    >
-      <PageWidthLayout>
-        <Text.P>
-          Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée
-          cotton candy candy canes bear claw apple pie.
-        </Text.P>
-      </PageWidthLayout>
+  .add('open sidenav', _ => (
+    <Frame topnav={<TopNav />} sidenav={<SideNav />} sidenavOpen>
+      <MockContent />
+    </Frame>
+  ))
+  .add('overlayed sidenav', _ => (
+    <Frame topnav={<TopNav />} sidenav={<SideNav />} sidenavOverlayed>
+      <MockContent />
     </Frame>
   ))
   .add('sidenav toggle', _ => {

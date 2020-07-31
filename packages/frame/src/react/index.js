@@ -44,6 +44,8 @@ const styles = {
       css(stylesheet['.psds-frame__sidenav']),
       variant && css(stylesheet[`.psds-frame__sidenav--${variant}`])
     ),
+  sidenavOverflowMask: () =>
+    css(stylesheet['.psds-frame__sidenav__overflow-mask']),
   sidenavInner: () => css(stylesheet['.psds-frame__sidenav__inner']),
   topnav: () => css(stylesheet['.psds-frame__topnav'])
 }
@@ -58,22 +60,30 @@ const Frame = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
 
   const [sidenavOpen, setSidenavOpen] = useState(props.sidenavOpen)
-
   useEffect(() => {
     setSidenavOpen(props.sidenavOpen)
   }, [props.sidenavOpen])
+
+  const [sidenavOverlayed, setSidenavOverlayed] = useState(
+    props.sidenavOverlayed
+  )
+  useEffect(() => {
+    setSidenavOverlayed(props.sidenavOverlayed)
+  }, [props.sidenavOverlayed])
 
   const getVariant = useCallback(() => {
     const { sidenavVariants: variants } = vars
 
     if (!sidenav) return variants.closed
 
+    if (sidenavOverlayed) return variants.overlay
+
     if (sidenavOpen) {
       return mediumMedia ? variants.open : variants.overlay
     } else {
       return mediumMedia ? variants.minimized : variants.closed
     }
-  }, [sidenav, sidenavOpen, mediumMedia])
+  }, [sidenav, sidenavOpen, sidenavOverlayed, mediumMedia])
 
   const [variant, setVariant] = useState(getVariant)
   useEffect(() => {
@@ -122,13 +132,15 @@ const Frame = React.forwardRef((props, forwardedRef) => {
 
 Frame.displayName = 'Frame'
 Frame.defaultProps = {
-  sidenavOpen: true
+  sidenavOpen: false,
+  sidenavOverlayed: false
 }
 
 Frame.propTypes = {
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   sidenav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   sidenavOpen: PropTypes.bool,
+  sidenavOverlayed: PropTypes.bool,
   topnav: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
 }
 
@@ -178,7 +190,9 @@ function SideNav(props) {
   return (
     <Theme name={themes.dark}>
       <div ref={ref} {...styles.sidenav(variant)} {...rest}>
-        <div {...styles.sidenavInner()}>{children}</div>
+        <div {...styles.sidenavOverflowMask()}>
+          <div {...styles.sidenavInner()}>{children}</div>
+        </div>
       </div>
     </Theme>
   )

@@ -64,7 +64,9 @@ export default {
       paddingLeft: sidenavWidth
     }
   },
-  [`.psds-frame__container--${sidenavVariants.closed}`]: {},
+  [`.psds-frame__container--${sidenavVariants.overlay}`]: {
+    paddingLeft: sidenavMinimizedWidth
+  },
   [`.psds-frame__container--${sidenavVariants.minimized}`]: {
     paddingLeft: sidenavMinimizedWidth
   },
@@ -102,10 +104,6 @@ export default {
       top: 0,
       transition: `box-shadow ${motion.speedFast} ease-in-out`,
       width: '100%'
-    },
-
-    [`@media (min-width: ${breakpoints.medium})`]: {
-      overflow: 'hidden'
     }
   },
 
@@ -126,6 +124,12 @@ export default {
   },
   [`.psds-frame__sidenav--${sidenavVariants.minimized}`]: {
     width: sidenavMinimizedWidth
+  },
+
+  '.psds-frame__sidenav__overflow-mask': {
+    label: 'frame__sidenav__overflow-mask',
+
+    overflow: 'hidden'
   },
 
   '.psds-frame__sidenav__inner': {
