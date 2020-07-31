@@ -9,8 +9,10 @@ import React, {
 } from 'react'
 import PropTypes from 'prop-types'
 
-import Button from '@pluralsight/ps-design-system-button'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+
+import Button from '@pluralsight/ps-design-system-button'
+import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import Theme, {
   names as themes,
   useTheme
@@ -191,7 +193,7 @@ function SideNav(props) {
     <Theme name={themes.dark}>
       <div ref={ref} {...styles.sidenav(variant)} {...rest}>
         <div {...styles.sidenavOverflowMask()}>
-          <div {...styles.sidenavInner()}>{children}</div>
+          <Scrollable {...styles.sidenavInner()}>{children}</Scrollable>
         </div>
       </div>
     </Theme>

@@ -134,7 +134,7 @@ export function MockContent() {
   )
 }
 export function SideNav(props) {
-  const { collapsed, hideLabels, sections, ...rest } = props
+  const { children, collapsed, hideLabels, sections, ...rest } = props
 
   return (
     <div {...rest}>
@@ -182,6 +182,8 @@ export function SideNav(props) {
           </Fragment>
         )
       })}
+
+      {children}
     </div>
   )
 }
@@ -229,6 +231,7 @@ SideNav.defaultProps = {
 }
 
 SideNav.propTypes = {
+  children: PropTypes.node,
   collapsed: PropTypes.bool.isRequired,
   hideLabels: PropTypes.bool.isRequired,
   sections: PropTypes.arrayOf(

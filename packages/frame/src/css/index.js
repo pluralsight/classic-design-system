@@ -129,6 +129,7 @@ export default {
   '.psds-frame__sidenav__overflow-mask': {
     label: 'frame__sidenav__overflow-mask',
 
+    height: '100%',
     overflow: 'hidden'
   },
 

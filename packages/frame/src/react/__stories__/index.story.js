@@ -33,6 +33,19 @@ storiesOf('Frame', module)
       <MockContent />
     </Frame>
   ))
+  .add('scrollable sidenav', _ => (
+    <Frame
+      topnav={<TopNav />}
+      sidenav={
+        <SideNav sections={[]}>
+          <div style={{ border: '1px dashed red', margin: 40, height: 2000 }} />
+        </SideNav>
+      }
+      sidenavOpen
+    >
+      <MockContent />
+    </Frame>
+  ))
   .add('overlayed sidenav', _ => (
     <Frame topnav={<TopNav />} sidenav={<SideNav />} sidenavOverlayed>
       <MockContent />
