@@ -90,6 +90,7 @@ const menuKeydownEventsHandler = e => {
     : e.key === 'End'
     ? end(e)
     : character(e)
+  e.preventDefault()
 }
 
 export const menuKeydownListener = root => {

@@ -10,19 +10,6 @@ import {
 
 import * as vars from '../vars/index.js'
 
-const menuOriginRight = {
-  transform: `translate(${layout.spacingXSmall}, 0)`
-}
-const menuOriginLeft = {
-  transform: `translate(calc(-1 * ${layout.spacingXSmall}), 0)`
-}
-const menuOriginTop = {
-  transform: `translate(0, calc(-1 * ${layout.spacingXSmall}))`
-}
-const menuOriginBottom = {
-  transform: `translate(0, ${layout.spacingXSmall})`
-}
-
 export default {
   '@keyframes psds-actionmenu__keyframes__slide': {
     '100%': {
@@ -48,91 +35,71 @@ export default {
       motion.speedNormal
     } forwards`
   }),
-
-  [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
-    ...menuOriginTop,
-    right: 0,
-    top: 0
-  },
-  [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
-    ...menuOriginBottom,
-    bottom: 0,
-    right: 0
-  },
-  [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
-    ...menuOriginTop,
-    left: 0,
-    top: 0
-  },
-  [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
-    ...menuOriginBottom,
-    left: 0,
-    bottom: 0
-  },
-
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topRight}`]: menuOriginRight,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: menuOriginRight,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: menuOriginLeft,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: menuOriginLeft,
-
   '.psds-actionmenu__item-container': {
     label: 'container',
     position: 'relative',
-    '&:hover > span, &:focus > span': {
+    transition: `background ${motion.speedXFast}`,
+    color: colorsTextIcon.highOnLight,
+    '&:hover, &:focus': {
+      outline: 'none'
+    },
+    '&:focus': {
+      background: colorsPrimaryAction.background,
+      color: colorsTextIcon.highOnDark
+    },
+    '&:focus [data-submenu-arrow]': {
+      color: colorsTextIcon.highOnDark
+    },
+    '&:hover': {
+      background: colorsBackgroundLight[2],
+      color: colorsTextIcon.highOnLight
+    },
+    '&:hover > ul:not(:empty)': {
       display: 'inline'
     }
   },
   '.psds-actionmenu__nested': {
-    display: 'none',
-    position: 'relative',
-    zIndex: 1
+    label: 'subMenu',
+    display: 'inline-block',
+    position: 'absolute',
+    zIndex: 1,
+    top: 0,
+    left: '100%',
+    '&:empty': {
+      display: 'none'
+    }
   },
   '.psds-actionmenu__item': {
     label: 'action-menuitem',
-    display: 'flex',
+    display: 'inline-block',
     width: '100%',
-    alignItems: 'center',
+    color: 'inherit',
     lineHeight: type.lineHeightExtra,
     fontWeight: type.fontWeightMedium,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    textAlign: 'left',
     cursor: 'pointer',
     border: 'none',
     paddingTop: '0',
     paddingBottom: '0',
     paddingLeft: layout.spacingMedium,
     paddingRight: layout.spacingMedium,
-    color: colorsTextIcon.highOnLight,
     background: 'none',
-    textDecoration: 'none',
-    transition: `background ${motion.speedXFast}`,
-    '&:not(:disabled):active, &:not(:disabled):hover, &:not(:disabled):visited': {
-      color: colorsTextIcon.highOnLight
-    },
-    '&:not(:disabled):focus, &:not(:disabled):hover': {
-      background: colorsBackgroundLight[2],
-      outline: 'none',
-      color: colorsTextIcon.highOnLight
-    }
+    textDecoration: 'none'
   },
 
   '.psds-actionmenu__item-inner': {
-    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'left',
+    minWidth: 0
+  },
+
+  '.psds-actionmenu__text-only': {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis'
-  },
-
-  '.psds-actionmenu__item--focus-keyboard': {
-    background: colorsPrimaryAction.background,
-    outline: 'none',
-    color: colorsTextIcon.highOnDark
-  },
-
-  '.psds-actionmenu__item--icon': {
-    paddingLeft: layout.spacingXSmall
   },
 
   '.psds-actionmenu__item--nested': {
@@ -167,9 +134,6 @@ export default {
     color: colorsTextIcon.lowOnLight,
     marginLeft: 'auto',
     paddingLeft: layout.spacingXSmall
-  },
-  '.psds-actionmenu__item__arrow--focus-keyboard': {
-    color: colorsTextIcon.highOnDark
   },
   '.psds-actionmenu__item__arrow__svg': {
     fill: 'currentColor'
