@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { canUseDOM } from 'exenv'
-import { createUniversalPortal } from '@pluralsight/ps-design-system-util'
+import {
+  cloneElementWithRef,
+  createUniversalPortal
+} from '@pluralsight/ps-design-system-util'
 
 import * as positionFns from '../js/index.js'
 
@@ -88,7 +91,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
 
   return (
     <>
-      {target ? child : React.cloneElement(child, { ref })}
+      {target ? child : cloneElementWithRef(child, ref, {})}
 
       {createUniversalPortal(
         <div style={{ visibility: shownOnce ? 'visible' : 'hidden' }}>
