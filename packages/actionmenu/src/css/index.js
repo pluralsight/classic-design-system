@@ -54,9 +54,6 @@ export default {
       background: colorsBackgroundLight[2],
       color: colorsTextIcon.highOnLight
     },
-    // '& > ul': {
-    //   visibility: 'hidden'
-    // },
     '&:hover > ul:not(:empty)': {
       visibility: 'visible'
     }
@@ -68,9 +65,14 @@ export default {
     position: 'absolute',
     zIndex: 1,
     top: 0,
-    left: '100%'
+    left: '100%',
+    '&[aria-expanded="true"]': {
+      visibility: 'visible'
+    },
+    '&[aria-expanded="false"]': {
+      visibility: 'hidden'
+    }
   },
-  '.psds-actionmenu__nested--open': { visibility: 'visible' },
   '.psds-actionmenu__item': {
     label: 'action-menuitem',
     display: 'inline-block',
@@ -88,10 +90,7 @@ export default {
     paddingLeft: layout.spacingMedium,
     paddingRight: layout.spacingMedium,
     background: 'none',
-    textDecoration: 'none',
-    '&[aria-expanded="true"] + [role="menu"]': {
-      visibility: 'visible'
-    }
+    textDecoration: 'none'
   },
 
   '.psds-actionmenu__item-inner': {

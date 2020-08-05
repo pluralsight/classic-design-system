@@ -1,12 +1,6 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, {
-  useState,
-  useRef,
-  forwardRef,
-  useImperativeHandle,
-  createRef
-} from 'react'
+import React, { useState, useRef, forwardRef, useImperativeHandle } from 'react'
 
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -45,30 +39,39 @@ const Item = forwardRef(
     forwardedRef
   ) => {
     const ref = useRef()
-    // const subMenuRef = useRef()
+    const subMenuRef = useRef()
     useImperativeHandle(forwardedRef, () => ref.current)
     const TagName = href ? 'a' : 'button'
-    // const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false)
     const hasSubMenu = Boolean(subMenuItems)
-    // const handleMouseOver = e => {
-    //   hasSubMenu && setOpen(true)
-    // }
-    // const handleMouseOut = e => {
-    //   hasSubMenu && setOpen(false)
-    // }
-    // const handlerKeyDown = e => {
-    //   e.key === 'ArrowRight' && hasSubMenu && setOpen(true)
-    // }
-    // const handleBlur = e => {
-    //   // console.log(e.target.closest('ul').innerText, subMenuRef.current)
-    //   if (
-    //     [...subMenuRef.current.querySelectorAll('* > li')].includes(e.target)
-    //   ) {
-    //     setOpen(false)
-    //   }
-    // }
+    const handleMouseOver = e => {
+      hasSubMenu && setOpen(true)
+    }
+    const handleMouseOut = e => {
+      hasSubMenu && setOpen(false)
+    }
+    const handleArrowRight = e => {
+      if (e.key === 'ArrowRight' && hasSubMenu) {
+        setOpen(true)
+        e.stopPropagation()
+      }
+    }
+    const handleArrowLeft = e => {
+      if (e.key === 'ArrowLeft' && hasSubMenu) {
+        setOpen(false)
+        e.stopPropagation()
+      }
+    }
     return (
-      <li {...styles.itemContainer()} role="none" ref={ref} tabIndex="-1">
+      <li
+        {...styles.itemContainer()}
+        role="none"
+        ref={ref}
+        tabIndex="-1"
+        onKeyDown={handleArrowRight}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
         <TagName
           {...filterReactProps(rest, { tagName: TagName })}
           {...styles.item({ disabled, hasSubMenu })}
@@ -88,7 +91,13 @@ const Item = forwardRef(
           </div>
         </TagName>
 
-        <ul {...styles.nested()} role="menu">
+        <ul
+          {...styles.nested()}
+          role="menu"
+          aria-expanded={open}
+          ref={subMenuRef}
+          onKeyDown={handleArrowLeft}
+        >
           {!disabled && subMenuItems}
         </ul>
       </li>
