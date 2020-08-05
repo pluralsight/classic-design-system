@@ -77,7 +77,6 @@ const Item = forwardRef(
           origin
         )
       : {}
-    console.log(origin, subMenuAlignment)
     return (
       <li
         {...styles.itemContainer({ disabled })}
@@ -95,10 +94,10 @@ const Item = forwardRef(
           {...styles.item({ disabled, hasSubMenu })}
           aria-haspopup={!!nested}
           role="menuitem"
-          value={!href && value}
+          value={!href ? value : undefined}
           disabled={disabled}
           tabIndex="-1"
-          href={!value && href}
+          href={!value ? href : undefined}
         >
           <div className={className} {...styles.inner()}>
             {typeof children === 'string' ? (

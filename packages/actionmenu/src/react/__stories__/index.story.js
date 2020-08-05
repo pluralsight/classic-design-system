@@ -78,25 +78,25 @@ storiesOf('menu items', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
-//   .add('long text', _ => (
-//     <ActionMenu>
-//       <ActionMenu.Item>
-//         One item that has text that goes on forever and onward into the
-//         universes yet to be
-//       </ActionMenu.Item>
-//       <ActionMenu.Item>
-//         Another item that takes a long time to explain in the context of
-//         everything that is in a line.
-//       </ActionMenu.Item>
-//     </ActionMenu>
-//   ))
-//   .add('null item', _ => (
-//     <ActionMenu>
-//       <ActionMenu.Item>One item</ActionMenu.Item>
-//       {null}
-//       <ActionMenu.Item>Skip to three item</ActionMenu.Item>
-//     </ActionMenu>
-//   ))
+  .add('long text', _ => (
+    <ActionMenu>
+      <ActionMenu.Item>
+        One item that has text that goes on forever and onward into the
+        universes yet to be
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Another item that takes a long time to explain in the context of
+        everything that is in a line.
+      </ActionMenu.Item>
+    </ActionMenu>
+  ))
+  .add('null item', _ => (
+    <ActionMenu>
+      <ActionMenu.Item>One item</ActionMenu.Item>
+      {null}
+      <ActionMenu.Item>Skip to three item</ActionMenu.Item>
+    </ActionMenu>
+  ))
 
 storiesOf('dividers', module)
   .add('edge', _ => (
@@ -118,7 +118,8 @@ storiesOf('dividers', module)
 const BlurOnMount = () => {
   const ref = useRef(null)
   useEffect(() => {
-    ref.current && ref.current.querySelector('* > li').blur()
+    const firstItem = ref.current && ref.current.querySelector('* > li')
+    firstItem && firstItem.blur()
   })
   return (
     <ActionMenu ref={ref}>
@@ -190,12 +191,22 @@ Object.keys(ActionMenu.origins).forEach(origin =>
   ))
 )
 
+const handleClick = e => {
+  action()(e.currentTarget.value)
+}
+
 storiesOf('onClick', module)
   .add('flat', _ => (
     <ActionMenu>
-      <ActionMenu.Item onClick={action('one')}>One item</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('two')}>Two item</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('three')}>Three item</ActionMenu.Item>
+      <ActionMenu.Item value="one" onClick={handleClick}>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Item value="two" onClick={handleClick}>
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item value="three" onClick={handleClick}>
+        Three item
+      </ActionMenu.Item>
     </ActionMenu>
   ))
   .add('nested', _ => (

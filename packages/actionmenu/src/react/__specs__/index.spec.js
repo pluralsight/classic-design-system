@@ -19,19 +19,26 @@ describe('ActionMenu', () => {
 
   it('fires onChange on option click', () => {
     return new Promise(resolve => {
-      function handleChange(evt, value, label) {
-        expect(value).toEqual('two')
-        expect(label).toEqual('Two item')
+      function handleClick(evt) {
+        expect(evt.currentTarget.value).toEqual('two')
         resolve()
       }
 
       const { getByTestId } = render(
-        <ActionMenu data-testid="under-test" onChange={handleChange}>
-          <ActionMenu.Item value="one">One item</ActionMenu.Item>
-          <ActionMenu.Item value="two" data-testid="testtwo">
+        <ActionMenu data-testid="under-test">
+          <ActionMenu.Item value="one" onClick={handleClick}>
+            One item
+          </ActionMenu.Item>
+          <ActionMenu.Item
+            value="two"
+            data-testid="testtwo"
+            onClick={handleClick}
+          >
             Two item
           </ActionMenu.Item>
-          <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+          <ActionMenu.Item value="three" onClick={handleClick}>
+            Three item
+          </ActionMenu.Item>
         </ActionMenu>
       )
       const opt = getByTestId('testtwo')
@@ -41,23 +48,30 @@ describe('ActionMenu', () => {
 
   it('fires onChange on option keyPress', () => {
     return new Promise(resolve => {
-      function handleChange(evt, value, label) {
-        expect(value).toEqual('two')
-        expect(label).toEqual('Two item')
+      function handleClick(evt) {
+        expect(evt.currentTarget.value).toEqual('two')
         resolve()
       }
 
       const { getByTestId } = render(
-        <ActionMenu data-testid="under-test" onChange={handleChange}>
-          <ActionMenu.Item value="one">One item</ActionMenu.Item>
-          <ActionMenu.Item value="two" data-testid="testtwo">
+        <ActionMenu data-testid="under-test">
+          <ActionMenu.Item value="one" onClick={handleClick}>
+            One item
+          </ActionMenu.Item>
+          <ActionMenu.Item
+            value="two"
+            data-testid="testtwo"
+            onClick={handleClick}
+          >
             Two item
           </ActionMenu.Item>
-          <ActionMenu.Item value="three">Three item</ActionMenu.Item>
+          <ActionMenu.Item value="three" onClick={handleClick}>
+            Three item
+          </ActionMenu.Item>
         </ActionMenu>
       )
       const opt = getByTestId('testtwo')
-      fireEvent.keyDown(opt, { key: 'Enter', code: 13 })
+      fireEvent.keyUp(opt, { key: 'Enter', code: 13 })
     })
   })
 })
