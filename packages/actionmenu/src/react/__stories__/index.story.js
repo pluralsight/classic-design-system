@@ -150,8 +150,8 @@ storiesOf('Blur onMount', module).add('example', _ => <BlurOnMount />)
 //     }
 //   }[origin]
 // })
-const NestedMenu = () => (
-  <ActionMenu>
+const NestedMenu = props => (
+  <ActionMenu {...props}>
     <ActionMenu.Item
       subMenuItems={
         <>
@@ -187,7 +187,49 @@ const NestedMenu = () => (
     <ActionMenu.Item>Two</ActionMenu.Item>
   </ActionMenu>
 )
-storiesOf('subMenus', module).add(`example`, _ => <NestedMenu />)
+storiesOf('subMenus', module)
+  .add(`example`, _ => <NestedMenu />)
+  .add('four corners', () => {
+    return (
+      <div
+        style={{
+          height: '100%',
+          width: '100%',
+          display: 'grid',
+          grid: '1fr 1fr/ 1fr 1fr'
+        }}
+      >
+        <NestedMenu
+          style={{
+            position: 'relative',
+            justifySelf: 'start',
+            alignSelf: 'start'
+          }}
+        />
+        <NestedMenu
+          style={{
+            position: 'relative',
+            justifySelf: 'end',
+            alignSelf: 'start'
+          }}
+        />
+        <NestedMenu
+          style={{
+            position: 'relative',
+            justifySelf: 'start',
+            alignSelf: 'end'
+          }}
+        />
+        <NestedMenu
+          style={{
+            position: 'relative',
+            justifySelf: 'end',
+            alignSelf: 'end'
+          }}
+        />
+      </div>
+    )
+  })
 // Object.keys(ActionMenu.origins).forEach(origin =>
 //   nestedStory.add(`origin ${origin}`, _ => (
 //     <div style={calcContainerStyle(origin)}>
