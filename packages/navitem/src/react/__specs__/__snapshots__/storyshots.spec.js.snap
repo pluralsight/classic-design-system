@@ -73,11 +73,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
+            data-css-1o9ctb7=""
           >
             <div
               data-css-7dab2f=""
@@ -137,11 +133,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1009u4g": "",
-              }
-            }
+            data-css-1009u4g=""
           >
             <div
               data-css-7dab2f=""
@@ -193,11 +185,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
+            data-css-1o9ctb7=""
           >
             <div
               data-css-7dab2f=""
@@ -257,11 +245,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
+            data-css-1o9ctb7=""
           >
             <div
               data-css-7dab2f=""
@@ -342,11 +326,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
+            data-css-1o9ctb7=""
           >
             <div
               data-css-7dab2f=""
@@ -406,11 +386,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
+            data-css-1o9ctb7=""
           >
             <div
               data-css-7dab2f=""
@@ -470,11 +446,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
+            data-css-1o9ctb7=""
           >
             <div
               data-css-7dab2f=""
@@ -534,11 +506,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
           }
         >
           <span
-            className={
-              Object {
-                "data-css-1o9ctb7": "",
-              }
-            }
+            data-css-1o9ctb7=""
           >
             <div
               data-css-7dab2f=""
