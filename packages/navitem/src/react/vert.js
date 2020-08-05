@@ -31,7 +31,7 @@ export function VertCaret(props) {
 }
 VertCaret.displayName = 'NavItem.VertCaret'
 VertCaret.propTypes = {
-  menu: PropTypes.element
+  menu: PropTypes.bool
 }
 
 export function VertIcon(props) {

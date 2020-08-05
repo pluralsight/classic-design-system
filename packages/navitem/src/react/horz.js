@@ -39,7 +39,7 @@ export function HorzCaret(props) {
 }
 HorzCaret.displayName = 'NavItem.HorzCaret'
 HorzCaret.propTypes = {
-  menu: PropTypes.element
+  menu: PropTypes.bool
 }
 
 export function HorzIcon(props) {
