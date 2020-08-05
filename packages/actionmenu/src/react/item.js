@@ -1,6 +1,12 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, { useState, useRef, forwardRef, useImperativeHandle } from 'react'
+import React, {
+  useState,
+  useRef,
+  forwardRef,
+  useImperativeHandle,
+  createRef
+} from 'react'
 
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -39,32 +45,34 @@ const Item = forwardRef(
     forwardedRef
   ) => {
     const ref = useRef()
+    // const subMenuRef = useRef()
     useImperativeHandle(forwardedRef, () => ref.current)
     const TagName = href ? 'a' : 'button'
-    const [open, setOpen] = useState(false)
+    // const [open, setOpen] = useState(false)
     const hasSubMenu = Boolean(subMenuItems)
-    const handleAriaExpendedTrue = e => {
-      hasSubMenu && setOpen(true)
-    }
-    const handleAriaExpendedFalse = e => {
-      hasSubMenu && setOpen(false)
-    }
+    // const handleMouseOver = e => {
+    //   hasSubMenu && setOpen(true)
+    // }
+    // const handleMouseOut = e => {
+    //   hasSubMenu && setOpen(false)
+    // }
+    // const handlerKeyDown = e => {
+    //   e.key === 'ArrowRight' && hasSubMenu && setOpen(true)
+    // }
+    // const handleBlur = e => {
+    //   // console.log(e.target.closest('ul').innerText, subMenuRef.current)
+    //   if (
+    //     [...subMenuRef.current.querySelectorAll('* > li')].includes(e.target)
+    //   ) {
+    //     setOpen(false)
+    //   }
+    // }
     return (
-      <li
-        {...styles.itemContainer()}
-        role="none"
-        ref={ref}
-        tabIndex="-1"
-        onMouseOver={handleAriaExpendedTrue}
-        onMouseOut={handleAriaExpendedFalse}
-        onFocus={handleAriaExpendedTrue}
-        onBlur={handleAriaExpendedFalse}
-      >
+      <li {...styles.itemContainer()} role="none" ref={ref} tabIndex="-1">
         <TagName
           {...filterReactProps(rest, { tagName: TagName })}
           {...styles.item({ disabled, hasSubMenu })}
           aria-haspopup={!!subMenuItems}
-          aria-expanded={hasSubMenu && open}
           role="menuitem"
           value={!href && value}
           disabled={disabled}

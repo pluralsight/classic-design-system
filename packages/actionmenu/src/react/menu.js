@@ -3,10 +3,11 @@
 
 import { css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import React, { useEffect, useImperativeHandle } from 'react'
+import React, { useImperativeHandle } from 'react'
 import {
-  useCloseOnDocumentEvents,
-  useMenuKeyEvents
+  useMenuRef,
+  handleMenuKeyEvents,
+  useCloseOnDocumentEvents
 } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css/index.js'
 
@@ -19,10 +20,7 @@ const styles = {
 }
 
 const ActionMenu = React.forwardRef((props, forwardedRef) => {
-  const [ref, removeListener] = useMenuKeyEvents()
-  useEffect(() => {
-    return removeListener
-  }, [removeListener])
+  const ref = useMenuRef()
   useImperativeHandle(forwardedRef, () => ref.current)
   useCloseOnDocumentEvents(ref, props.onClose)
   return (
@@ -30,6 +28,7 @@ const ActionMenu = React.forwardRef((props, forwardedRef) => {
       {...styles.menu(props)}
       {...filterReactProps(props)}
       ref={ref}
+      onKeyUp={handleMenuKeyEvents}
       role="menu"
     >
       {props.children}

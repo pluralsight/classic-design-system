@@ -1,43 +1,26 @@
 import * as vars from '../vars/index.js'
 
-export function calcNextIndex(childrenProps, direction, currentIndex) {
-  const count = childrenProps.length
-  const next = currentIndex + direction
-
-  if (next < 0) return 0
-  if (next > count - 1) return count - 1
-
-  const isDisabled = childrenProps[next].disabled
-  if (isDisabled) {
-    return direction === 1
-      ? find(
-          i => ++i,
-          i => i >= childrenProps.length - 1,
-          childrenProps,
-          currentIndex,
-          currentIndex
-        )
-      : find(
-          i => --i,
-          i => i < 0,
-          childrenProps,
-          currentIndex,
-          currentIndex
-        )
-  } else {
-    return next
-  }
+export const handleMenuMouseover = e => {
+  const subMenu = e.target.querySelector('* > ul')
+  if (!subMenu) return
+  subMenu.setAttribute('aria-expanded', 'true')
 }
 
-function find(iterate, base, props, start, from) {
-  const i = iterate(from)
-  if (base(i)) {
-    return start
-  } else if (props[i].disabled) {
-    return find(iterate, base, props, start, i)
-  } else {
-    return i
-  }
+export const handleMenuMouseout = e => {
+  const subMenu = e.target.querySelector('* > ul')
+  if (!subMenu) return
+  e.target.parentNode.setAttribute('aria-expanded', 'false')
+}
+
+export const handleMenuBlur = e => {
+  const subMenu = e.target.querySelector('* > ul')
+  if (subMenu.tagName !== 'UL') return
+  e.target.parentNode.setAttribute('aria-expanded', 'false')
+}
+
+export const handleClick = e => {
+  const firstMenuItem = searchListItem(e.currentTarget.firstElementChild)
+  firstMenuItem && firstMenuItem.focus()
 }
 
 export function calcNestedMenuPosition(menuWidth, origin) {

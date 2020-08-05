@@ -47,28 +47,30 @@ export default {
       background: colorsPrimaryAction.background,
       color: colorsTextIcon.highOnDark
     },
-    '&:focus [data-submenu-arrow]': {
+    '&:focus > button [data-submenu-arrow]': {
       color: colorsTextIcon.highOnDark
     },
     '&:hover': {
       background: colorsBackgroundLight[2],
       color: colorsTextIcon.highOnLight
     },
+    // '& > ul': {
+    //   visibility: 'hidden'
+    // },
     '&:hover > ul:not(:empty)': {
-      display: 'inline'
+      visibility: 'visible'
     }
   },
   '.psds-actionmenu__nested': {
     label: 'subMenu',
+    visibility: 'hidden',
     display: 'inline-block',
     position: 'absolute',
     zIndex: 1,
     top: 0,
-    left: '100%',
-    '&:empty': {
-      display: 'none'
-    }
+    left: '100%'
   },
+  '.psds-actionmenu__nested--open': { visibility: 'visible' },
   '.psds-actionmenu__item': {
     label: 'action-menuitem',
     display: 'inline-block',
@@ -86,7 +88,10 @@ export default {
     paddingLeft: layout.spacingMedium,
     paddingRight: layout.spacingMedium,
     background: 'none',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    '&[aria-expanded="true"] + [role="menu"]': {
+      visibility: 'visible'
+    }
   },
 
   '.psds-actionmenu__item-inner': {
