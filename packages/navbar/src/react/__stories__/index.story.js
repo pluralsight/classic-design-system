@@ -70,7 +70,7 @@ storiesOf('Navbar', module).add('desktop', _ => {
                   <NavItem
                     icon={<BrowseIcon />}
                     selected
-                    menu={<div>this is useless</div>}
+                    menu
                     onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
                   >
                     Browse
