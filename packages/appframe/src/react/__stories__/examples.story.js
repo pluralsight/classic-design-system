@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useMemo } from 'react'
 
 import {
   HomeIcon,
@@ -8,42 +8,39 @@ import {
 } from '@pluralsight/ps-design-system-icon'
 
 import AppFrame from '../index.js'
-import {
-  MockContent,
-  SideNav as MockSideNav,
-  TopNav as MockTopNav
-} from './shared.js'
+import { MockContent, SideNav, TopNav } from './shared.js'
 
 import { breakpoints } from '../../vars/index.js'
 
 import useMatchMedia from '../use-match-media.js'
 
-storiesOf('AppFrame|Examples/Skills', module).add('controlled', () => {
+storiesOf('AppFrame|Examples', module).add('Skills', () => {
   function Story() {
-    const largeMedia = useMatchMedia(`(min-width: ${breakpoints.large})`)
+    const mobile = !useMatchMedia(`(min-width: ${breakpoints.small})`)
 
-    const [open, setOpen] = useState(() => largeMedia)
-    const [hovered, setHovered] = useState(false)
+    const sidenavSections = useMemo(
+      () =>
+        mobile
+          ? [{ items: MAIN_NAV_ITEMS }, ...SIDE_NAV_SECTIONS]
+          : SIDE_NAV_SECTIONS,
+      [mobile]
+    )
 
-    const toggle = () => setOpen(!open)
-    const handleMouseEnter = () => setHovered(true)
-    const handleMouseLeave = () => setHovered(false)
-
-    const hideNavItems = !open && !hovered
+    const topnavItems = useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [mobile])
 
     return (
       <AppFrame
-        sidenav={
-          <SkillsSideNav
-            collapsed={hideNavItems}
-            hideLabels={hideNavItems}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+        topnav={({ openSidenav, closeSidenav, sidenavOpen }) => {
+          const toggle = sidenavOpen ? closeSidenav : openSidenav
+          return <TopNav items={topnavItems} onMobileMenuClick={toggle} />
+        }}
+        sidenav={({ visible }) => (
+          <SideNav
+            collapsed={!visible}
+            hideLabels={!visible}
+            sections={sidenavSections}
           />
-        }
-        sidenavOpen={open}
-        sidenavOverlayed={!open && hovered}
-        topnav={<SkillsTopNav onMobileMenuClick={toggle} />}
+        )}
       >
         <MockContent />
       </AppFrame>
@@ -52,40 +49,6 @@ storiesOf('AppFrame|Examples/Skills', module).add('controlled', () => {
 
   return <Story />
 })
-
-function SkillsSideNav(props) {
-  const mediumMedia = useMatchMedia(`(min-width: ${breakpoints.medium})`)
-
-  const getSections = useCallback(() => {
-    return mediumMedia
-      ? SIDE_NAV_SECTIONS
-      : [{ items: MAIN_NAV_ITEMS }, ...SIDE_NAV_SECTIONS]
-  }, [mediumMedia])
-
-  const [sections, setSections] = useState(getSections)
-
-  useEffect(() => {
-    setSections(getSections)
-  }, [getSections])
-
-  return <MockSideNav {...props} sections={sections} />
-}
-
-function SkillsTopNav(props) {
-  const mediumMedia = useMatchMedia(`(min-width: ${breakpoints.medium})`)
-
-  const getItems = useCallback(() => {
-    return mediumMedia ? MAIN_NAV_ITEMS : []
-  }, [mediumMedia])
-
-  const [items, setItems] = useState(getItems)
-
-  useEffect(() => {
-    setItems(getItems)
-  }, [getItems])
-
-  return <MockTopNav {...props} items={items} />
-}
 
 const MAIN_NAV_ITEMS = [
   {

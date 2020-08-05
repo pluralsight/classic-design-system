@@ -1,9 +1,12 @@
 import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React, {
+  createContext,
   useCallback,
+  useContext,
   useEffect,
   useImperativeHandle,
+  useMemo,
   useRef,
   useState
 } from 'react'
@@ -13,10 +16,8 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import Button from '@pluralsight/ps-design-system-button'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
-import Theme, {
-  names as themes,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { isFunction, usePrevious } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
@@ -52,45 +53,70 @@ const styles = {
   topnav: () => css(stylesheet['.psds-appframe__topnav'])
 }
 
+const AppFrameContext = createContext()
+
 const AppFrame = React.forwardRef((props, forwardedRef) => {
-  const { children, sidenav, topnav } = props
+  const {
+    children,
+    onRequestSideNavClose,
+    onRequestSideNavOpen,
+    sidenav,
+    topnav
+  } = props
 
   const ref = React.useRef()
   useImperativeHandle(forwardedRef, () => ref.current)
 
-  const mediumMedia = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
   const themeName = useTheme()
 
-  const [sidenavOpen, setSidenavOpen] = useState(props.sidenavOpen)
-  useEffect(() => {
-    setSidenavOpen(props.sidenavOpen)
-  }, [props.sidenavOpen])
+  const largeMedia = useMatchMedia(`(min-width: ${vars.breakpoints.large})`)
+  const xLargeMedia = useMatchMedia(`(min-width: ${vars.breakpoints.xLarge})`)
+  const prevXLarge = usePrevious(xLargeMedia)
 
-  const [sidenavOverlayed, setSidenavOverlayed] = useState(
-    props.sidenavOverlayed
-  )
-  useEffect(() => {
-    setSidenavOverlayed(props.sidenavOverlayed)
-  }, [props.sidenavOverlayed])
+  const defaultSidenavOpen = useMemo(() => {
+    const controlled = typeof props.sidenavOpen !== 'undefined'
+    return controlled ? props.sidenavOpen : xLargeMedia
+  }, [props.sidenavOpen, xLargeMedia])
 
-  const getVariant = useCallback(() => {
+  const [sidenavOpen, setSidenavOpen] = useState(defaultSidenavOpen)
+
+  const closeSidenav = useCallback(() => {
+    const controlled = typeof props.sidenavOpen !== 'undefined'
+
+    if (controlled && isFunction(onRequestSideNavClose)) onRequestSideNavClose()
+    else if (!controlled) setSidenavOpen(false)
+  }, [props.sidenavOpen, onRequestSideNavClose])
+
+  const openSidenav = useCallback(() => {
+    const controlled = typeof props.sidenavOpen !== 'undefined'
+
+    if (controlled && isFunction(onRequestSideNavOpen)) onRequestSideNavOpen()
+    else if (!controlled) setSidenavOpen(true)
+  }, [props.sidenavOpen, onRequestSideNavOpen])
+
+  useEffect(() => {
+    const enteringXLarge = (prevXLarge !== xLargeMedia) & xLargeMedia
+    if (enteringXLarge) openSidenav()
+  }, [prevXLarge, xLargeMedia, openSidenav])
+
+  useEffect(() => {
+    const controlled = typeof props.sidenavOpen !== 'undefined'
+    const next = controlled ? props.sidenavOpen : defaultSidenavOpen
+
+    setSidenavOpen(next)
+  }, [props.sidenavOpen, defaultSidenavOpen])
+
+  const sidenavVariant = useMemo(() => {
     const { sidenavVariants: variants } = vars
 
     if (!sidenav) return variants.closed
 
-    if (sidenavOverlayed) return variants.overlay
-
     if (sidenavOpen) {
-      return mediumMedia ? variants.open : variants.overlay
+      return xLargeMedia ? variants.open : variants.overlay
     } else {
-      return mediumMedia ? variants.minimized : variants.closed
+      return largeMedia ? variants.minimized : variants.closed
     }
-  }, [sidenav, sidenavOpen, sidenavOverlayed, mediumMedia])
-
-  const [variant, setVariant] = useState(getVariant)
-  useEffect(() => {
-    setVariant(getVariant)
-  }, [getVariant])
+  }, [sidenav, sidenavOpen, largeMedia, xLargeMedia])
 
   const skipTargetId = 'ps-frame-skip-target'
   const skipTargetRef = useRef()
@@ -101,64 +127,70 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
     skipTargetRef.current.focus()
   }, [])
 
+  const contextValue = {
+    closeSidenav,
+    openSidenav,
+    sidenavOpen,
+    sidenavVariant
+  }
+
   return (
-    <div
-      ref={ref}
-      {...styles.appframe(themeName, props)}
-      {...filterReactProps(props)}
-    >
-      <Theme name={themes.dark}>
+    <AppFrameContext.Provider value={contextValue}>
+      <div
+        ref={ref}
+        {...styles.appframe(themeName, props)}
+        {...filterReactProps(props)}
+      >
         <SkipBanner href={'#' + skipTargetId} />
-      </Theme>
 
-      <Theme name={themes.dark}>
-        <div {...styles.topnav()}>{topnav}</div>
-      </Theme>
+        <TopNav>{topnav}</TopNav>
 
-      <Container variant={variant}>
-        {sidenav && <SideNav variant={variant}>{sidenav}</SideNav>}
+        <Container>
+          {sidenav && <SideNav>{sidenav}</SideNav>}
 
-        <main {...styles.content()}>
-          <SkipTarget
-            id={skipTargetId}
-            onClick={focusSkipTarget}
-            ref={skipTargetRef}
-          />
+          <main {...styles.content()}>
+            <SkipTarget
+              id={skipTargetId}
+              onClick={focusSkipTarget}
+              ref={skipTargetRef}
+            />
 
-          {children}
-        </main>
-      </Container>
-    </div>
+            {children}
+          </main>
+        </Container>
+      </div>
+    </AppFrameContext.Provider>
   )
 })
 
 AppFrame.displayName = 'AppFrame'
-AppFrame.defaultProps = {
-  sidenavOpen: false,
-  sidenavOverlayed: false
-}
+AppFrame.defaultProps = {}
 
 AppFrame.propTypes = {
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  onRequestSideNavClose: PropTypes.func,
+  onRequestSideNavOpen: PropTypes.func,
   sidenav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   sidenavOpen: PropTypes.bool,
-  sidenavOverlayed: PropTypes.bool,
   topnav: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
 }
 
 function SkipBanner(props) {
   return (
-    <div {...styles.skipBanner()} {...props}>
-      <Button
-        appearance={Button.appearances.secondary}
-        size={Button.sizes.small}
-        tabIndex={0}
-      >
-        skip to main content
-      </Button>
-    </div>
+    <Theme name={Theme.names.dark}>
+      <div {...styles.skipBanner()} {...props}>
+        <Button
+          appearance={Button.appearances.secondary}
+          size={Button.sizes.small}
+          tabIndex={0}
+        >
+          skip to main content
+        </Button>
+      </div>
+    </Theme>
   )
 }
+
 SkipBanner.propTypes = {
   href: PropTypes.string.isRequired
 }
@@ -166,46 +198,82 @@ SkipBanner.propTypes = {
 const SkipTarget = React.forwardRef((props, ref) => {
   return <a ref={ref} tabIndex={-1} {...props} />
 })
+
 SkipTarget.displayName = 'SkipTarget'
 SkipTarget.propTypes = {
   id: PropTypes.string.isRequired
 }
 
 function Container(props) {
-  const { variant, ...rest } = props
-
-  return <div {...styles.container(variant)} {...rest} />
-}
-Container.propTypes = {
-  children: PropTypes.node,
-  variant: PropTypes.oneOf(Object.keys(vars.sidenavVariants))
+  const context = useContext(AppFrameContext)
+  return <div {...styles.container(context.sidenavVariant)} {...props} />
 }
 
 function SideNav(props) {
-  const { children, variant, ...rest } = props
+  const { sidenavVariants: variants } = vars
+
+  const { children, ...rest } = props
+  const { sidenavVariant } = useContext(AppFrameContext)
+
+  const hoverable = sidenavVariant === variants.minimized
+  const [hovered, setHovered] = useState(false)
+
+  const variant = hoverable && hovered ? variants.overlay : sidenavVariant
+  const visible = variant === variants.overlay || variant === variants.open
 
   const ref = React.useRef()
 
-  const lockScroll = variant === vars.sidenavVariants.overlay
+  const lockScroll = variant === variants.overlay
   useBodyScrollLock(ref, lockScroll)
 
   return (
-    <Theme name={themes.dark}>
-      <div ref={ref} {...styles.sidenav(variant)} {...rest}>
+    <Theme name={Theme.names.dark}>
+      <div
+        ref={ref}
+        {...styles.sidenav(variant)}
+        {...rest}
+        {...(hoverable && {
+          onMouseEnter: () => setHovered(true),
+          onMouseLeave: () => setHovered(false)
+        })}
+      >
         <div {...styles.sidenavOverflowMask()}>
-          <Scrollable {...styles.sidenavInner()}>{children}</Scrollable>
+          <Scrollable {...styles.sidenavInner()}>
+            {isFunction(children) ? children({ visible }) : children}
+          </Scrollable>
         </div>
       </div>
     </Theme>
   )
 }
-AppFrame.SideNav = SideNav
-AppFrame.SideNav.displayName = 'AppFrame.SideNav'
-SideNav.variants = vars.sidenavVariants
 
 SideNav.propTypes = {
-  children: PropTypes.node,
-  variant: PropTypes.oneOf(Object.keys(SideNav.variants)).isRequired
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
 }
+SideNav.variants = vars.sidenavVariants
+
+function TopNav(props) {
+  const { children, ...rest } = props
+  const { closeSidenav, openSidenav, sidenavOpen } = useContext(AppFrameContext)
+
+  const meta = { closeSidenav, openSidenav, sidenavOpen }
+
+  return (
+    <Theme name={Theme.names.dark}>
+      <div {...styles.topnav()} {...rest}>
+        {isFunction(children) ? children(meta) : children}
+      </div>
+    </Theme>
+  )
+}
+TopNav.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
+}
+
+AppFrame.SideNav = SideNav
+AppFrame.SideNav.displayName = 'AppFrame.SideNav'
+
+AppFrame.TopNav = TopNav
+AppFrame.TopNav.displayName = 'AppFrame.TopNav'
 
 export default AppFrame

@@ -10,7 +10,7 @@ export default function useHasMounted() {
       ref.current = false
     }
 
-    reset()
+    return reset()
   }, [])
 
   return ref.current
