@@ -21,19 +21,19 @@ const sidenavWidth = '240px'
 const topnavHeight = '56px'
 
 export default {
-  '.psds-frame': {
-    label: 'frame'
+  '.psds-appframe': {
+    label: 'appframe'
   },
 
-  [`.psds-frame.psds-theme--${themeNames.dark}`]: {
+  [`.psds-appframe.psds-theme--${themeNames.dark}`]: {
     background: colorsBackgroundDark[1]
   },
-  [`.psds-frame.psds-theme--${themeNames.light}`]: {
+  [`.psds-appframe.psds-theme--${themeNames.light}`]: {
     background: colorsBackgroundLight[1]
   },
 
-  '.psds-frame__skip-banner': {
-    label: 'frame__skip-banner',
+  '.psds-appframe__skip-banner': {
+    label: 'appframe__skip-banner',
 
     top: 0,
     left: '50%',
@@ -52,35 +52,35 @@ export default {
     '@media print ': { display: 'none' }
   },
 
-  '.psds-frame__container': {
-    label: 'frame__container',
+  '.psds-appframe__container': {
+    label: 'appframe__container',
 
     minHeight: '100vh',
     transition: `all ${motion.speedFast} ease-in-out`,
     transitionProperty: 'padding-left'
   },
-  [`.psds-frame__container--${sidenavVariants.open}`]: {
+  [`.psds-appframe__container--${sidenavVariants.open}`]: {
     [`@media (min-width: ${breakpoints.medium})`]: {
       paddingLeft: sidenavWidth
     }
   },
-  [`.psds-frame__container--${sidenavVariants.overlay}`]: {
+  [`.psds-appframe__container--${sidenavVariants.overlay}`]: {
     paddingLeft: sidenavMinimizedWidth
   },
-  [`.psds-frame__container--${sidenavVariants.minimized}`]: {
+  [`.psds-appframe__container--${sidenavVariants.minimized}`]: {
     paddingLeft: sidenavMinimizedWidth
   },
 
-  '.psds-frame__content': {
-    label: 'frame__content',
+  '.psds-appframe__content': {
+    label: 'appframe__content',
 
     paddingBottom: 1,
     paddingTop: topnavHeight,
     zIndex: layers.content
   },
 
-  '.psds-frame__sidenav': {
-    label: 'frame__sidenav',
+  '.psds-appframe__sidenav': {
+    label: 'appframe__sidenav',
 
     backgroundColor: colorsBackgroundDark[2],
     borderRight: `1px solid ${colorsBorder.lowOnDark}`,
@@ -107,12 +107,12 @@ export default {
     }
   },
 
-  [`.psds-frame__sidenav--${sidenavVariants.overlay}`]: {
+  [`.psds-appframe__sidenav--${sidenavVariants.overlay}`]: {
     transform: 'translate(0, 0)',
 
     '&::after': { boxShadow: '50px 0 100px rgba(0, 0, 0, .8)' }
   },
-  [`.psds-frame__sidenav--${sidenavVariants.closed}`]: {
+  [`.psds-appframe__sidenav--${sidenavVariants.closed}`]: {
     transform: 'translate(-100%, 0)',
 
     '&::after': { boxShadow: '0 0 0 rgba(0, 0, 0, .8)' },
@@ -122,19 +122,19 @@ export default {
       width: 0
     }
   },
-  [`.psds-frame__sidenav--${sidenavVariants.minimized}`]: {
+  [`.psds-appframe__sidenav--${sidenavVariants.minimized}`]: {
     width: sidenavMinimizedWidth
   },
 
-  '.psds-frame__sidenav__overflow-mask': {
-    label: 'frame__sidenav__overflow-mask',
+  '.psds-appframe__sidenav__overflow-mask': {
+    label: 'appframe__sidenav__overflow-mask',
 
     height: '100%',
     overflow: 'hidden'
   },
 
-  '.psds-frame__sidenav__inner': {
-    label: 'frame__sidenav__inner',
+  '.psds-appframe__sidenav__inner': {
+    label: 'appframe__sidenav__inner',
 
     height: '100%',
     minWidth: sidenavWidth,
@@ -146,8 +146,8 @@ export default {
     }
   },
 
-  '.psds-frame__topnav': {
-    label: 'frame__topnav',
+  '.psds-appframe__topnav': {
+    label: 'appframe__topnav',
 
     height: topnavHeight,
     left: 0,

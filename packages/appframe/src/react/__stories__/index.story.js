@@ -4,37 +4,37 @@ import React, { useState } from 'react'
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Frame from '../index.js'
+import AppFrame from '../index.js'
 import { MockContent, SideNav, TopNav } from './shared.js'
 
-storiesOf('Frame', module)
+storiesOf('AppFrame', module)
   .add('basic', _ => (
-    <Frame sidenav={<SideNav collapsed hideLabels />} topnav={<TopNav />}>
+    <AppFrame sidenav={<SideNav collapsed hideLabels />} topnav={<TopNav />}>
       <MockContent />
-    </Frame>
+    </AppFrame>
   ))
   .add('short content', _ => (
-    <Frame sidenav={<SideNav collapsed hideLabels />} topnav={<TopNav />}>
+    <AppFrame sidenav={<SideNav collapsed hideLabels />} topnav={<TopNav />}>
       <PageWidthLayout>
         <Text.P>
           Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée
           cotton candy candy canes bear claw apple pie.
         </Text.P>
       </PageWidthLayout>
-    </Frame>
+    </AppFrame>
   ))
   .add('no sidenav', _ => (
-    <Frame topnav={<TopNav />}>
+    <AppFrame topnav={<TopNav />}>
       <MockContent />
-    </Frame>
+    </AppFrame>
   ))
   .add('open sidenav', _ => (
-    <Frame topnav={<TopNav />} sidenav={<SideNav />} sidenavOpen>
+    <AppFrame topnav={<TopNav />} sidenav={<SideNav />} sidenavOpen>
       <MockContent />
-    </Frame>
+    </AppFrame>
   ))
   .add('scrollable sidenav', _ => (
-    <Frame
+    <AppFrame
       topnav={<TopNav />}
       sidenav={
         <SideNav sections={[]}>
@@ -44,12 +44,12 @@ storiesOf('Frame', module)
       sidenavOpen
     >
       <MockContent />
-    </Frame>
+    </AppFrame>
   ))
   .add('overlayed sidenav', _ => (
-    <Frame topnav={<TopNav />} sidenav={<SideNav />} sidenavOverlayed>
+    <AppFrame topnav={<TopNav />} sidenav={<SideNav />} sidenavOverlayed>
       <MockContent />
-    </Frame>
+    </AppFrame>
   ))
   .add('sidenav toggle', _ => {
     function Story() {
@@ -57,13 +57,13 @@ storiesOf('Frame', module)
       const toggle = () => setOpen(!open)
 
       return (
-        <Frame
+        <AppFrame
           topnav={<TopNav onMobileMenuClick={toggle} />}
           sidenav={<SideNav collapsed={!open} hideLabels={!open} />}
           sidenavOpen={open}
         >
           <MockContent />
-        </Frame>
+        </AppFrame>
       )
     }
 

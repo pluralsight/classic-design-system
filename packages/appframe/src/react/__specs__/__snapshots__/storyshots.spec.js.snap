@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Frame basic 1`] = `
+exports[`Storyshots AppFrame basic 1`] = `
 <div
   data-css-2p2lwl=""
 >
@@ -380,7 +380,7 @@ exports[`Storyshots Frame basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Frame no sidenav 1`] = `
+exports[`Storyshots AppFrame no sidenav 1`] = `
 <div
   data-css-2p2lwl=""
 >
@@ -584,7 +584,7 @@ exports[`Storyshots Frame no sidenav 1`] = `
 </div>
 `;
 
-exports[`Storyshots Frame open sidenav 1`] = `
+exports[`Storyshots AppFrame open sidenav 1`] = `
 <div
   data-css-2p2lwl=""
 >
@@ -964,7 +964,7 @@ exports[`Storyshots Frame open sidenav 1`] = `
 </div>
 `;
 
-exports[`Storyshots Frame overlayed sidenav 1`] = `
+exports[`Storyshots AppFrame overlayed sidenav 1`] = `
 <div
   data-css-2p2lwl=""
 >
@@ -1344,7 +1344,7 @@ exports[`Storyshots Frame overlayed sidenav 1`] = `
 </div>
 `;
 
-exports[`Storyshots Frame scrollable sidenav 1`] = `
+exports[`Storyshots AppFrame scrollable sidenav 1`] = `
 <div
   data-css-2p2lwl=""
 >
@@ -1590,7 +1590,7 @@ exports[`Storyshots Frame scrollable sidenav 1`] = `
 </div>
 `;
 
-exports[`Storyshots Frame short content 1`] = `
+exports[`Storyshots AppFrame short content 1`] = `
 <div
   data-css-2p2lwl=""
 >
@@ -1914,7 +1914,7 @@ exports[`Storyshots Frame short content 1`] = `
 </div>
 `;
 
-exports[`Storyshots Frame sidenav toggle 1`] = `
+exports[`Storyshots AppFrame sidenav toggle 1`] = `
 <div
   data-css-2p2lwl=""
 >
@@ -2354,7 +2354,7 @@ exports[`Storyshots Frame sidenav toggle 1`] = `
 </div>
 `;
 
-exports[`Storyshots Frame|Examples/Skills controlled 1`] = `
+exports[`Storyshots AppFrame|Examples/Skills controlled 1`] = `
 <div
   data-css-2p2lwl=""
 >

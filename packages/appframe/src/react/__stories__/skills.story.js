@@ -7,7 +7,7 @@ import {
   PlaceholderIcon
 } from '@pluralsight/ps-design-system-icon'
 
-import Frame from '../index.js'
+import AppFrame from '../index.js'
 import {
   MockContent,
   SideNav as MockSideNav,
@@ -18,7 +18,7 @@ import { breakpoints } from '../../vars/index.js'
 
 import useMatchMedia from '../use-match-media.js'
 
-storiesOf('Frame|Examples/Skills', module).add('controlled', () => {
+storiesOf('AppFrame|Examples/Skills', module).add('controlled', () => {
   function Story() {
     const largeMedia = useMatchMedia(`(min-width: ${breakpoints.large})`)
 
@@ -32,7 +32,7 @@ storiesOf('Frame|Examples/Skills', module).add('controlled', () => {
     const hideNavItems = !open && !hovered
 
     return (
-      <Frame
+      <AppFrame
         sidenav={
           <SkillsSideNav
             collapsed={hideNavItems}
@@ -46,7 +46,7 @@ storiesOf('Frame|Examples/Skills', module).add('controlled', () => {
         topnav={<SkillsTopNav onMobileMenuClick={toggle} />}
       >
         <MockContent />
-      </Frame>
+      </AppFrame>
     )
   }
 

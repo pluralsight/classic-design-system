@@ -1,7 +1,7 @@
 {
-  "name": "@pluralsight/ps-design-system-frame",
+  "name": "@pluralsight/ps-design-system-appframe",
   "version": "1.0.0",
-  "description": "Frame UI Component for the Pluralsight Design System",
+  "description": "AppFrame UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "main": "dist/cjs/index.js",

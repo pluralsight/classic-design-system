@@ -27,32 +27,32 @@ import useMatchMedia from './use-match-media.js'
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 const styles = {
-  frame: (themeName, _props) =>
+  appframe: (themeName, _props) =>
     compose(
-      css(stylesheet['.psds-frame']),
-      css(stylesheet[`.psds-frame.psds-theme--${themeName}`])
+      css(stylesheet['.psds-appframe']),
+      css(stylesheet[`.psds-appframe.psds-theme--${themeName}`])
     ),
 
-  skipBanner: () => css(stylesheet['.psds-frame__skip-banner']),
+  skipBanner: () => css(stylesheet['.psds-appframe__skip-banner']),
 
   container: variant =>
     compose(
-      css(stylesheet['.psds-frame__container']),
-      variant && css(stylesheet[`.psds-frame__container--${variant}`])
+      css(stylesheet['.psds-appframe__container']),
+      variant && css(stylesheet[`.psds-appframe__container--${variant}`])
     ),
-  content: () => css(stylesheet['.psds-frame__content']),
+  content: () => css(stylesheet['.psds-appframe__content']),
   sidenav: variant =>
     compose(
-      css(stylesheet['.psds-frame__sidenav']),
-      variant && css(stylesheet[`.psds-frame__sidenav--${variant}`])
+      css(stylesheet['.psds-appframe__sidenav']),
+      variant && css(stylesheet[`.psds-appframe__sidenav--${variant}`])
     ),
   sidenavOverflowMask: () =>
-    css(stylesheet['.psds-frame__sidenav__overflow-mask']),
-  sidenavInner: () => css(stylesheet['.psds-frame__sidenav__inner']),
-  topnav: () => css(stylesheet['.psds-frame__topnav'])
+    css(stylesheet['.psds-appframe__sidenav__overflow-mask']),
+  sidenavInner: () => css(stylesheet['.psds-appframe__sidenav__inner']),
+  topnav: () => css(stylesheet['.psds-appframe__topnav'])
 }
 
-const Frame = React.forwardRef((props, forwardedRef) => {
+const AppFrame = React.forwardRef((props, forwardedRef) => {
   const { children, sidenav, topnav } = props
 
   const ref = React.useRef()
@@ -104,7 +104,7 @@ const Frame = React.forwardRef((props, forwardedRef) => {
   return (
     <div
       ref={ref}
-      {...styles.frame(themeName, props)}
+      {...styles.appframe(themeName, props)}
       {...filterReactProps(props)}
     >
       <Theme name={themes.dark}>
@@ -132,13 +132,13 @@ const Frame = React.forwardRef((props, forwardedRef) => {
   )
 })
 
-Frame.displayName = 'Frame'
-Frame.defaultProps = {
+AppFrame.displayName = 'AppFrame'
+AppFrame.defaultProps = {
   sidenavOpen: false,
   sidenavOverlayed: false
 }
 
-Frame.propTypes = {
+AppFrame.propTypes = {
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   sidenav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   sidenavOpen: PropTypes.bool,
@@ -199,8 +199,8 @@ function SideNav(props) {
     </Theme>
   )
 }
-Frame.SideNav = SideNav
-Frame.SideNav.displayName = 'Frame.SideNav'
+AppFrame.SideNav = SideNav
+AppFrame.SideNav.displayName = 'AppFrame.SideNav'
 SideNav.variants = vars.sidenavVariants
 
 SideNav.propTypes = {
@@ -208,4 +208,4 @@ SideNav.propTypes = {
   variant: PropTypes.oneOf(Object.keys(SideNav.variants)).isRequired
 }
 
-export default Frame
+export default AppFrame

@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Frame from '../index.js'
+import AppFrame from '../index.js'
 
-describe('Frame', () => {
+describe('AppFrame', () => {
   it('renders', () => {
     const { getByTestId } = render(
-      <Frame data-testid="undertest" topnav={<div>topnav</div>}>
+      <AppFrame data-testid="undertest" topnav={<div>topnav</div>}>
         hello world
-      </Frame>
+      </AppFrame>
     )
 
     expect(getByTestId('undertest')).toBeInTheDocument()
@@ -18,9 +18,9 @@ describe('Frame', () => {
     const ref = React.createRef()
 
     render(
-      <Frame data-testid="undertest" ref={ref} topnav={<div>topnav</div>}>
+      <AppFrame data-testid="undertest" ref={ref} topnav={<div>topnav</div>}>
         hello world
-      </Frame>
+      </AppFrame>
     )
 
     expect(ref.current).not.toBeNull()
