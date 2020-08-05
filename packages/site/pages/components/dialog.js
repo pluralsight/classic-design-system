@@ -440,7 +440,7 @@ export default _ => (
             </Text.P>
             <div style={{ textAlign: 'right' }}>
               <Button
-                appearance={Button.appearances.stroke}
+                appearance={Button.appearances.secondary}
                 style={{ marginRight: core.layout.spacingMedium }}
               >
                 Secondary
@@ -463,7 +463,9 @@ export default _ => (
               <Button style={{ marginRight: core.layout.spacingMedium }}>
                 Primary
               </Button>
-              <Button appearance={Button.appearances.stroke}>Secondary</Button>
+              <Button appearance={Button.appearances.secondary}>
+                Secondary
+              </Button>
             </div>
           </Dialog>
         }
@@ -565,7 +567,7 @@ export default _ => (
             </Text.P>
             <div style={{ textAlign: 'right' }}>
               <Button
-                appearance={Button.appearances.stroke}
+                appearance={Button.appearances.secondary}
                 style={{ marginRight: core.layout.spacingMedium }}
               >
                 Delete
@@ -585,7 +587,7 @@ export default _ => (
             </Text.P>
             <div style={{ textAlign: 'right' }}>
               <Button
-                appearance={Button.appearances.stroke}
+                appearance={Button.appearances.secondary}
                 style={{ marginRight: core.layout.spacingMedium }}
               >
                 Yes
