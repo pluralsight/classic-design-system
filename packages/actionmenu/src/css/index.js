@@ -19,7 +19,6 @@ export default {
   },
 
   '.psds-actionmenu': ({ slide }) => ({
-    position: 'absolute',
     display: 'inline-block',
     marginLeft: 0,
     background: colorsBackgroundLight[3],

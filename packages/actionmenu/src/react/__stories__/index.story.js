@@ -130,7 +130,8 @@ const BlurOnMount = () => {
 }
 storiesOf('Blur onMount', module).add('example', _ => <BlurOnMount />)
 
-const NestedMenu = props => (
+// eslint-disable-next-line react/prop-types
+const NestedMenu = ({ origin }) => (
   <ActionMenu origin={origin}>
     <ActionMenu.Item
       origin={origin}
@@ -184,7 +185,7 @@ Object.keys(ActionMenu.origins).forEach(origin =>
         width: '100%'
       }}
     >
-      <NestedMenu />
+      <NestedMenu origin={origin} />
     </div>
   ))
 )
