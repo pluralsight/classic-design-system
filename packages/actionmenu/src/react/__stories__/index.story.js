@@ -153,11 +153,11 @@ const calcContainerStyle = origin => ({
 const NestedMenu = props => (
   <ActionMenu {...props}>
     <ActionMenu.Item
-      subMenuItems={
+      nested={
         <>
           <ActionMenu.Item>Nest 1</ActionMenu.Item>
           <ActionMenu.Item
-            subMenuItems={
+            nested={
               <>
                 <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
                 <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
@@ -170,7 +170,7 @@ const NestedMenu = props => (
           <ActionMenu.Divider />
           <ActionMenu.Item>Nest 3</ActionMenu.Item>
           <ActionMenu.Item
-            subMenuItems={
+            nested={
               <>
                 <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
                 <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>
@@ -243,13 +243,13 @@ Object.keys(ActionMenu.origins).forEach(origin =>
     >
       <ActionMenu origin={origin}>
         <ActionMenu.Item
-          subMenuPosition={origin}
-          subMenuItems={
+          origin={origin}
+          nested={
             <>
               <ActionMenu.Item>Nest 1</ActionMenu.Item>
               <ActionMenu.Item
-                subMenuPosition={origin}
-                subMenuItems={
+                origin={origin}
+                nested={
                   <>
                     <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
                     <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
@@ -262,8 +262,8 @@ Object.keys(ActionMenu.origins).forEach(origin =>
               <ActionMenu.Divider />
               <ActionMenu.Item>Nest 3</ActionMenu.Item>
               <ActionMenu.Item
-                subMenuPosition={origin}
-                subMenuItems={
+                origin={origin}
+                nested={
                   <>
                     <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
                     <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>

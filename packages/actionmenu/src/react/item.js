@@ -38,16 +38,7 @@ const styles = {
 
 const Item = forwardRef(
   (
-    {
-      disabled,
-      subMenuItems,
-      subMenuPosition,
-      href,
-      value,
-      className,
-      children,
-      ...rest
-    },
+    { disabled, nested, origin, href, value, className, children, ...rest },
     forwardedRef
   ) => {
     const ref = useRef()
@@ -55,7 +46,7 @@ const Item = forwardRef(
     useImperativeHandle(forwardedRef, () => ref.current)
     const TagName = href ? 'a' : 'button'
     const [open, setOpen] = useState(false)
-    const hasSubMenu = Boolean(subMenuItems)
+    const hasSubMenu = Boolean(nested)
     const handleMouseOver = e => {
       hasSubMenu && setOpen(true)
     }
@@ -76,8 +67,9 @@ const Item = forwardRef(
     }
     const subMenuAlignment = ref.current
       ? calcNestedMenuPosition(
-          ref.current.getBoundingClientRect().width,
-          subMenuPosition
+          ref.current.getBoundingClientRect(),
+          subMenuRef.current.getBoundingClientRect(),
+          origin
         )
       : {}
     return (
@@ -94,7 +86,7 @@ const Item = forwardRef(
         <TagName
           {...filterReactProps(rest, { tagName: TagName })}
           {...styles.item({ disabled, hasSubMenu })}
-          aria-haspopup={!!subMenuItems}
+          aria-haspopup={!!nested}
           role="menuitem"
           value={!href && value}
           disabled={disabled}
@@ -118,7 +110,7 @@ const Item = forwardRef(
           onKeyDown={handleArrowLeft}
           style={{ ...subMenuAlignment }}
         >
-          {!disabled && subMenuItems}
+          {!disabled && nested}
         </ul>
       </li>
     )
@@ -131,8 +123,8 @@ Item.propTypes = {
   disabled: PropTypes.bool,
   href: PropTypes.string,
   className: PropTypes.string,
-  subMenuPosition: PropTypes.string,
-  subMenuItems: PropTypes.oneOfType([
+  origin: PropTypes.string,
+  nested: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
   ]),
