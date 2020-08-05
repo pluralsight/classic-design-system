@@ -56,5 +56,17 @@ describe('Position', () => {
 
       expect(ref.current).not.toBeNull()
     })
+
+    it('preserves ref on child component', () => {
+      const ref = React.createRef()
+
+      render(
+        <Comp show={<div data-testid="tethered" />}>
+          <div data-testid="child" ref={ref} />
+        </Comp>
+      )
+
+      expect(ref.current).not.toBeNull()
+    })
   })
 })
