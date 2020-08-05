@@ -3,7 +3,7 @@ import { useCombinedRefs } from './use-combined-refs.js'
 
 export const searchListItem = (el, down = true) => {
   if (!el) return
-  return el.tagName === 'LI'
+  return el.tagName === 'LI' && !el.hasAttribute('disabled')
     ? el
     : searchListItem(
         down ? el.nextElementSibling : el.previousElementSibling,

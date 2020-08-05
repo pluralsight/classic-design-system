@@ -65,6 +65,11 @@ const Item = forwardRef(
         e.stopPropagation()
       }
     }
+    const handleReturnUp = e => {
+      if (e.key === 'Enter') {
+        e.target.firstElementChild.click()
+      }
+    }
     const subMenuAlignment = ref.current
       ? calcNestedMenuPosition(
           ref.current.getBoundingClientRect(),
@@ -80,6 +85,7 @@ const Item = forwardRef(
         disabled={disabled}
         tabIndex={!disabled ? '-1' : undefined}
         onKeyDown={handleArrowRight}
+        onKeyUp={handleReturnUp}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
@@ -91,6 +97,7 @@ const Item = forwardRef(
           value={!href && value}
           disabled={disabled}
           tabIndex="-1"
+          href={!value && href}
         >
           <div className={className} {...styles.inner()}>
             {typeof children === 'string' ? (

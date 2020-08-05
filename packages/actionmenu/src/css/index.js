@@ -118,7 +118,8 @@ export default {
   '.psds-actionmenu__item--disabled': {
     opacity: '50%',
     cursor: 'auto',
-    outline: 'none'
+    outline: 'none',
+    pointerEvents: 'none'
   },
 
   '.psds-actionmenu__divider': {
