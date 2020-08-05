@@ -26,6 +26,7 @@
     "@pluralsight/ps-design-system-filter-react-props": "*",
     "@pluralsight/ps-design-system-scrollable": "*",
     "body-scroll-lock": "^3.0.3",
+    "exenv": "^1.2.2",
     "focus-within": "^3.0.2",
     "prop-types": "^15.7.2"
   },

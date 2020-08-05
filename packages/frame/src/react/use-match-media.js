@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
+import { canUseEventListeners } from 'exenv'
 
 import useHasMounted from './use-has-mounted.js'
-
-// TODO: exenv checks
 
 export default function useMatchMedia(query) {
   const hasMounted = useHasMounted()
@@ -30,11 +29,12 @@ function useMatches(queryList) {
     const updateMatches = () => {
       setMatches(queryList.matches)
     }
-    queryList.addListener(updateMatches)
+
+    if (canUseEventListeners) queryList.addListener(updateMatches)
     updateMatches()
 
     return () => {
-      queryList.removeListener(updateMatches)
+      if (canUseEventListeners) queryList.removeListener(updateMatches)
     }
   }, [queryList])
 
