@@ -19,34 +19,38 @@ import { breakpoints } from '../../vars/index.js'
 import useMatchMedia from '../use-match-media.js'
 
 storiesOf('Frame|Examples/Skills', module).add('controlled', () => {
-  const largeMedia = useMatchMedia(`(min-width: ${breakpoints.large})`)
+  function Story() {
+    const largeMedia = useMatchMedia(`(min-width: ${breakpoints.large})`)
 
-  const [open, setOpen] = useState(() => largeMedia)
-  const [hovered, setHovered] = useState(false)
+    const [open, setOpen] = useState(() => largeMedia)
+    const [hovered, setHovered] = useState(false)
 
-  const toggle = () => setOpen(!open)
-  const handleMouseEnter = () => setHovered(true)
-  const handleMouseLeave = () => setHovered(false)
+    const toggle = () => setOpen(!open)
+    const handleMouseEnter = () => setHovered(true)
+    const handleMouseLeave = () => setHovered(false)
 
-  const hideNavItems = !open && !hovered
+    const hideNavItems = !open && !hovered
 
-  return (
-    <Frame
-      sidenav={
-        <SkillsSideNav
-          collapsed={hideNavItems}
-          hideLabels={hideNavItems}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
-      }
-      sidenavOpen={open}
-      sidenavOverlayed={!open && hovered}
-      topnav={<SkillsTopNav onMobileMenuClick={toggle} />}
-    >
-      <MockContent />
-    </Frame>
-  )
+    return (
+      <Frame
+        sidenav={
+          <SkillsSideNav
+            collapsed={hideNavItems}
+            hideLabels={hideNavItems}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+        }
+        sidenavOpen={open}
+        sidenavOverlayed={!open && hovered}
+        topnav={<SkillsTopNav onMobileMenuClick={toggle} />}
+      >
+        <MockContent />
+      </Frame>
+    )
+  }
+
+  return <Story />
 })
 
 function SkillsSideNav(props) {
