@@ -1,8 +1,22 @@
 import * as vars from '../vars/index.js'
 
-export const onOpen = (subMenu, setPosition) => {
-  const coords = subMenu.getBoundingClientRect()
-  const parentCoords = subMenu.parentNode.getBoundingClientRect()
-  // the default position of the menu is rightOf it's parent list item
-  // so We'll use a modified version of rightOf from position
+export function calcNestedMenuPosition({ width, height }, origin) {
+  return {
+    topLeft: {
+      left: -(width + vars.style.nestedMenuHorzOverlap),
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+    topRight: {
+      right: width + vars.style.nestedMenuHorzOverlap,
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+    bottomRight: {
+      right: width + vars.style.nestedMenuHorzOverlap,
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+    bottomLeft: {
+      left: -(width + vars.style.nestedMenuHorzOverlap),
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`
+    }
+  }[origin]
 }

@@ -50,7 +50,7 @@ export default {
     '&:focus > button [data-submenu-arrow]': {
       color: colorsTextIcon.highOnDark
     },
-    '&:hover': {
+    '&:hover:not([disabled])': {
       background: colorsBackgroundLight[2],
       color: colorsTextIcon.highOnLight
     },

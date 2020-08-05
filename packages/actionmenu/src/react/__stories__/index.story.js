@@ -129,27 +129,27 @@ const BlurOnMount = () => {
 }
 storiesOf('Blur onMount', module).add('example', _ => <BlurOnMount />)
 
-// const calcContainerStyle = origin => ({
-//   position: 'absolute',
-//   ...{
-//     topLeft: {
-//       left: 20,
-//       top: 20
-//     },
-//     topRight: {
-//       right: 20,
-//       top: 20
-//     },
-//     bottomRight: {
-//       bottom: 20,
-//       right: 20
-//     },
-//     bottomLeft: {
-//       left: 20,
-//       bottom: 20
-//     }
-//   }[origin]
-// })
+const calcContainerStyle = origin => ({
+  position: 'absolute',
+  ...{
+    topLeft: {
+      left: 20,
+      top: 20
+    },
+    topRight: {
+      right: 20,
+      top: 20
+    },
+    bottomRight: {
+      bottom: 20,
+      right: 20
+    },
+    bottomLeft: {
+      left: 20,
+      bottom: 20
+    }
+  }[origin]
+})
 const NestedMenu = props => (
   <ActionMenu {...props}>
     <ActionMenu.Item
@@ -187,99 +187,109 @@ const NestedMenu = props => (
     <ActionMenu.Item>Two</ActionMenu.Item>
   </ActionMenu>
 )
-storiesOf('subMenus', module)
-  .add(`example`, _ => <NestedMenu />)
-  .add('four corners', () => {
-    return (
-      <div
-        style={{
-          height: '100%',
-          width: '100%',
-          display: 'grid',
-          grid: '1fr 1fr/ 1fr 1fr'
-        }}
-      >
-        <NestedMenu
-          style={{
-            position: 'relative',
-            justifySelf: 'start',
-            alignSelf: 'start'
-          }}
-        />
-        <NestedMenu
-          style={{
-            position: 'relative',
-            justifySelf: 'end',
-            alignSelf: 'start'
-          }}
-        />
-        <NestedMenu
-          style={{
-            position: 'relative',
-            justifySelf: 'start',
-            alignSelf: 'end'
-          }}
-        />
-        <NestedMenu
-          style={{
-            position: 'relative',
-            justifySelf: 'end',
-            alignSelf: 'end'
-          }}
-        />
-      </div>
-    )
-  })
-// Object.keys(ActionMenu.origins).forEach(origin =>
-//   nestedStory.add(`origin ${origin}`, _ => (
-//     <div style={calcContainerStyle(origin)}>
-//       <ActionMenu origin={origin}>
-//         <ActionMenu.Item
-//           nested={
-//             <ActionMenu origin={origin}>
-//               <ActionMenu.Item>Nest 1</ActionMenu.Item>
-//               <ActionMenu.Item
-//                 nested={
-//                   <ActionMenu origin={origin}>
-//                     <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
-//                     <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
-//                     <ActionMenu.Item>Nest nest 1-3</ActionMenu.Item>
-//                   </ActionMenu>
-//                 }
-//               >
-//                 Nest 2
-//               </ActionMenu.Item>
-//               <ActionMenu.Divider />
-//               <ActionMenu.Item>Nest 3</ActionMenu.Item>
-//               <ActionMenu.Item
-//                 nested={
-//                   <ActionMenu origin={origin}>
-//                     <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
-//                     <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>
-//                   </ActionMenu>
-//                 }
-//               >
-//                 Nest 4
-//               </ActionMenu.Item>
-//             </ActionMenu>
-//           }
-//         >
-//           One
-//         </ActionMenu.Item>
-//         <ActionMenu.Item>Two</ActionMenu.Item>
-//       </ActionMenu>
+const nestedStory = storiesOf('subMenus', module)
+// .add(`example`, _ => <NestedMenu />)
+// .add('four corners', () => {
+//   return (
+//     <div
+//       style={{
+//         height: '100%',
+//         width: '100%',
+//         display: 'grid',
+//         grid: '1fr 1fr/ 1fr 1fr'
+//       }}
+//     >
+//       <NestedMenu
+//         style={{
+//           position: 'relative',
+//           justifySelf: 'start',
+//           alignSelf: 'start'
+//         }}
+//       />
+//       <NestedMenu
+//         style={{
+//           position: 'relative',
+//           justifySelf: 'end',
+//           alignSelf: 'start'
+//         }}
+//       />
+//       <NestedMenu
+//         style={{
+//           position: 'relative',
+//           justifySelf: 'start',
+//           alignSelf: 'end'
+//         }}
+//       />
+//       <NestedMenu
+//         style={{
+//           position: 'relative',
+//           justifySelf: 'end',
+//           alignSelf: 'end'
+//         }}
+//       />
 //     </div>
-//   ))
-// )
+//   )
+// })
+Object.keys(ActionMenu.origins).forEach(origin =>
+  nestedStory.add(`origin ${origin}`, _ => (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        width: '100%'
+      }}
+    >
+      <ActionMenu origin={origin}>
+        <ActionMenu.Item
+          subMenuPosition={origin}
+          subMenuItems={
+            <>
+              <ActionMenu.Item>Nest 1</ActionMenu.Item>
+              <ActionMenu.Item
+                subMenuPosition={origin}
+                subMenuItems={
+                  <>
+                    <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 1-3</ActionMenu.Item>
+                  </>
+                }
+              >
+                Nest 2
+              </ActionMenu.Item>
+              <ActionMenu.Divider />
+              <ActionMenu.Item>Nest 3</ActionMenu.Item>
+              <ActionMenu.Item
+                subMenuPosition={origin}
+                subMenuItems={
+                  <>
+                    <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
+                    <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>
+                  </>
+                }
+              >
+                Nest 4
+              </ActionMenu.Item>
+            </>
+          }
+        >
+          One
+        </ActionMenu.Item>
+        <ActionMenu.Item>Two</ActionMenu.Item>
+      </ActionMenu>
+    </div>
+  ))
+)
 
-// storiesOf('onClick', module)
-//   .add('flat', _ => (
-//     <ActionMenu>
-//       <ActionMenu.Item onClick={action('one')}>One item</ActionMenu.Item>
-//       <ActionMenu.Item onClick={action('two')}>Two item</ActionMenu.Item>
-//       <ActionMenu.Item onClick={action('three')}>Three item</ActionMenu.Item>
-//     </ActionMenu>
-//   ))
+storiesOf('onClick', module).add('flat', _ => (
+  <ActionMenu>
+    <ActionMenu.Item onClick={action('one')}>One item</ActionMenu.Item>
+    <ActionMenu.Item onClick={action('two')}>Two item</ActionMenu.Item>
+    <ActionMenu.Item onClick={action('three')}>Three item</ActionMenu.Item>
+  </ActionMenu>
+))
 //   .add('nested', _ => (
 //     <ActionMenu>
 //       <ActionMenu.Item onClick={action('-0')}>0</ActionMenu.Item>
