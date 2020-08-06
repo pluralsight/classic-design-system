@@ -139,19 +139,11 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     }
   }
 
-  function handleMenuClick(evt) {
-    evt.preventDefault()
-    evt.stopPropagation()
-
-    if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
-      allProps.menu.props.onClick(evt)
-  }
-
-  function handleMenuChange(evt, value, label) {
-    setSelectedLabel(label)
+  function handleMenuChange(evt, value) {
+    const innerText = evt.currentTarget.innerText
+    setSelectedLabel(value === innerText ? value : innerText)
     setOpen(false)
-    if (typeof allProps.onChange === 'function')
-      allProps.onChange(evt, value, label)
+    if (typeof allProps.onChange === 'function') allProps.onChange(evt, value)
   }
 
   const menu = useRef(null)
@@ -264,8 +256,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
           <div {...styles.menu(allProps)} style={menuPosition}>
             {React.cloneElement(allProps.menu, {
               isKeyboarding: isKeyboarding,
-              onChange: handleMenuChange,
-              onClick: handleMenuClick,
+              onClick: handleMenuChange,
               ref: menu,
               onClose: _ => {
                 setOpen(false)
