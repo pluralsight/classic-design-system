@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@1.1.0...@pluralsight/ps-design-system-scrollable@1.1.1) (2020-08-06)
+
+
+### Bug Fixes
+
+* **scrollable:** hide image if ssr ([c819306](https://github.com/pluralsight/design-system/commit/c819306478311ff0f7491690d21b16eec21847d2))
+* **scrollable:** remove elvis operator in plain js ([e8d925a](https://github.com/pluralsight/design-system/commit/e8d925aa5767c578dac7010bfce0fbc81ec00247))
+
+
+
+
+
 # 1.1.0 (2020-07-17)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.3.0...@pluralsight/ps-design-system-navitem@1.3.1) (2020-08-06)
+
+
+### Bug Fixes
+
+* **navitem:** fix icon container style attr; and snapshots ([19f2761](https://github.com/pluralsight/design-system/commit/19f27615c71f15a3e3ad3a74ee71d2eeacec223e))
+
+
+
+
+
 # [1.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.2.2...@pluralsight/ps-design-system-navitem@1.3.0) (2020-07-21)
 
 

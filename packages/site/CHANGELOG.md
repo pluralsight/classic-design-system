@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [19.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.1.0...@pluralsight/ps-design-system-site@19.1.1) (2020-08-06)
+
+
+### Bug Fixes
+
+* **site:** typo ([5b8b539](https://github.com/pluralsight/design-system/commit/5b8b539fe28f843a055df490a97ca08ba23e5b9d))
+* **site:** typo 2 ([70f6eb9](https://github.com/pluralsight/design-system/commit/70f6eb98c0cdf1ab63b46da22ff9fe757e4fd650))
+
+
+
+
+
 # [19.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@19.0.8...@pluralsight/ps-design-system-site@19.1.0) (2020-07-28)
 
 
