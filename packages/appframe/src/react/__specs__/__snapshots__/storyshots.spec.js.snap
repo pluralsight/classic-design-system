@@ -6,7 +6,7 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#ps-frame-skip-target"
+    href="#ps-appframe--skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -23,6 +23,8 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
   </div>
   <div
     data-css-1oxt2bx=""
+    data-ps-appframe-topnav={true}
+    id="ps-appframe--topnav"
   >
     <div>
       <div
@@ -130,7 +132,7 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="ps-frame-skip-target"
+        id="ps-appframe--skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />
@@ -210,7 +212,7 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#ps-frame-skip-target"
+    href="#ps-appframe--skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -227,6 +229,8 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
   </div>
   <div
     data-css-1oxt2bx=""
+    data-ps-appframe-topnav={true}
+    id="ps-appframe--topnav"
   >
     <div>
       <div
@@ -376,7 +380,7 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="ps-frame-skip-target"
+        id="ps-appframe--skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />
@@ -456,7 +460,7 @@ exports[`Storyshots AppFrame short content 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#ps-frame-skip-target"
+    href="#ps-appframe--skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -473,6 +477,8 @@ exports[`Storyshots AppFrame short content 1`] = `
   </div>
   <div
     data-css-1oxt2bx=""
+    data-ps-appframe-topnav={true}
+    id="ps-appframe--topnav"
   >
     <div>
       <div
@@ -756,7 +762,7 @@ exports[`Storyshots AppFrame short content 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="ps-frame-skip-target"
+        id="ps-appframe--skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />
@@ -780,7 +786,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#ps-frame-skip-target"
+    href="#ps-appframe--skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -797,6 +803,8 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
   </div>
   <div
     data-css-1oxt2bx=""
+    data-ps-appframe-topnav={true}
+    id="ps-appframe--topnav"
   >
     <div>
       <div
@@ -1136,7 +1144,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="ps-frame-skip-target"
+        id="ps-appframe--skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />
@@ -1178,7 +1186,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#ps-frame-skip-target"
+    href="#ps-appframe--skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -1195,6 +1203,8 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
   </div>
   <div
     data-css-1oxt2bx=""
+    data-ps-appframe-topnav={true}
+    id="ps-appframe--topnav"
   >
     <div>
       <div
@@ -1534,7 +1544,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="ps-frame-skip-target"
+        id="ps-appframe--skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />
@@ -1614,7 +1624,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
 >
   <div
     data-css-teuamr=""
-    href="#ps-frame-skip-target"
+    href="#ps-appframe--skip-target"
   >
     <button
       data-css-1btzibk=""
@@ -1631,6 +1641,8 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
   </div>
   <div
     data-css-1oxt2bx=""
+    data-ps-appframe-topnav={true}
+    id="ps-appframe--topnav"
   >
     <div>
       <div
@@ -2299,7 +2311,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
       data-css-1ixsor8=""
     >
       <a
-        id="ps-frame-skip-target"
+        id="ps-appframe--skip-target"
         onClick={[Function]}
         tabIndex={-1}
       />

@@ -25,8 +25,14 @@ import * as vars from '../vars/index.js'
 
 import useBodyScrollLock from './use-body-scroll-lock.js'
 import useMatchMedia from './use-match-media.js'
+import useOnClickOutside from './use-on-click-outside.js'
+import useOnEscape from './use-on-escape.js'
+import useOnInnerFocus from './use-on-inner-focus.js'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
+
+const SKIP_TARGET_ID = 'ps-appframe--skip-target'
+const TOP_NAV_ID = 'ps-appframe--topnav'
 
 const styles = {
   appframe: (themeName, _props) =>
@@ -119,7 +125,6 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
     }
   }, [sidenav, sidenavOpen, smallMedia, largeMedia])
 
-  const skipTargetId = 'ps-frame-skip-target'
   const skipTargetRef = useRef()
 
   const focusSkipTarget = useCallback(() => {
@@ -142,16 +147,16 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
         {...styles.appframe(themeName, props)}
         {...filterReactProps(props)}
       >
-        <SkipBanner href={'#' + skipTargetId} />
+        <SkipBanner href={'#' + SKIP_TARGET_ID} />
 
-        <TopNav>{topnav}</TopNav>
+        <TopNav id={TOP_NAV_ID}>{topnav}</TopNav>
 
         <Container>
           {sidenav && <SideNav>{sidenav}</SideNav>}
 
           <main {...styles.content()}>
             <SkipTarget
-              id={skipTargetId}
+              id={SKIP_TARGET_ID}
               onClick={focusSkipTarget}
               ref={skipTargetRef}
             />
@@ -214,7 +219,9 @@ function SideNav(props) {
   const { sidenavVariants: variants } = vars
 
   const { children, ...rest } = props
-  const { sidenavVariant } = useContext(AppFrameContext)
+  const { closeSidenav, openSidenav, sidenavVariant } = useContext(
+    AppFrameContext
+  )
 
   const hoverable = sidenavVariant === variants.minimized
   const [hovered, setHovered] = useState(false)
@@ -224,8 +231,19 @@ function SideNav(props) {
 
   const ref = React.useRef()
 
-  const lockScroll = variant === variants.overlay
-  useBodyScrollLock(ref, lockScroll)
+  const overlayed = variant === variants.overlay
+  useBodyScrollLock(ref, overlayed)
+
+  const closeIfOverlayed = useCallback(() => {
+    if (overlayed) closeSidenav()
+  }, [overlayed, closeSidenav])
+
+  useOnClickOutside(ref, evt => {
+    const inTopNav = evt.target && !!evt.target.closest(`#${TOP_NAV_ID}`)
+    if (!inTopNav) closeIfOverlayed()
+  })
+  useOnEscape(closeIfOverlayed)
+  useOnInnerFocus(ref, { onEnter: openSidenav, onLeave: closeIfOverlayed })
 
   return (
     <Theme name={Theme.names.dark}>
@@ -261,7 +279,7 @@ function TopNav(props) {
 
   return (
     <Theme name={Theme.names.dark}>
-      <div {...styles.topnav()} {...rest}>
+      <div data-ps-appframe-topnav {...styles.topnav()} {...rest}>
         {isFunction(children) ? children(meta) : children}
       </div>
     </Theme>
