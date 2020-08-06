@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { useMemo } from 'react'
 
+import { breakpoints } from '@pluralsight/ps-design-system-core'
 import {
   HomeIcon,
   BrowseIcon,
@@ -9,8 +10,6 @@ import {
 
 import AppFrame from '../index.js'
 import { MockContent, SideNav, TopNav } from './shared.js'
-
-import { breakpoints } from '../../vars/index.js'
 
 import useMatchMedia from '../use-match-media.js'
 

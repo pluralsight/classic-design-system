@@ -1,4 +1,5 @@
 import {
+  breakpoints,
   colorsBackgroundDark,
   colorsBackgroundLight,
   colorsBorder,
@@ -7,7 +8,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { breakpoints, sidenavVariants } from '../vars/index.js'
+import { sidenavVariants } from '../vars/index.js'
 
 const layers = {
   content: 0,

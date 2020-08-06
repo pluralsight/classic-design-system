@@ -15,6 +15,7 @@ import PropTypes from 'prop-types'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import Button from '@pluralsight/ps-design-system-button'
+import { breakpoints } from '@pluralsight/ps-design-system-core'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { isFunction, usePrevious } from '@pluralsight/ps-design-system-util'
@@ -69,8 +70,8 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
 
   const themeName = useTheme()
 
-  const smallMedia = useMatchMedia(`(min-width: ${vars.breakpoints.small})`)
-  const largeMedia = useMatchMedia(`(min-width: ${vars.breakpoints.large})`)
+  const smallMedia = useMatchMedia(`(min-width: ${breakpoints.small})`)
+  const largeMedia = useMatchMedia(`(min-width: ${breakpoints.large})`)
   const prevLargeMedia = usePrevious(largeMedia)
 
   const defaultSidenavOpen = useMemo(() => {

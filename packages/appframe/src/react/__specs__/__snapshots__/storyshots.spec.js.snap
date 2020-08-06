@@ -828,11 +828,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
                   }
                 >
                   <span
-                    className={
-                      Object {
-                        "data-css-1009u4g": "",
-                      }
-                    }
+                    data-css-1009u4g=""
                   >
                     <div
                       data-css-7dab2f=""
@@ -1230,11 +1226,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
                   }
                 >
                   <span
-                    className={
-                      Object {
-                        "data-css-1009u4g": "",
-                      }
-                    }
+                    data-css-1009u4g=""
                   >
                     <div
                       data-css-7dab2f=""
@@ -1670,11 +1662,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
                   }
                 >
                   <span
-                    className={
-                      Object {
-                        "data-css-1009u4g": "",
-                      }
-                    }
+                    data-css-1009u4g=""
                   >
                     <div
                       data-css-7dab2f=""
