@@ -1,12 +1,18 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, { useState, useRef, forwardRef, useImperativeHandle } from 'react'
+import React, {
+  useState,
+  useRef,
+  forwardRef,
+  useImperativeHandle,
+  useContext
+} from 'react'
 
 import { calcNestedMenuPosition } from '../js/index.js'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-
 import stylesheet from '../css/index.js'
 
+import { ActionMenuContext } from './menu.js'
 import Arrow from './arrow.js'
 const slide = css.keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
@@ -38,9 +44,20 @@ const styles = {
 
 const Item = forwardRef(
   (
-    { disabled, nested, origin, href, value, className, children, ...rest },
+    {
+      disabled,
+      nested,
+      origin,
+      href,
+      value,
+      className,
+      children,
+      onClick,
+      ...rest
+    },
     forwardedRef
   ) => {
+    const { onClickContext, onClose } = useContext(ActionMenuContext)
     const ref = useRef()
     const subMenuRef = useRef()
     useImperativeHandle(forwardedRef, () => ref.current)
@@ -66,9 +83,14 @@ const Item = forwardRef(
       }
     }
     const handleReturnUp = e => {
-      if (e.key === 'Enter') {
+      if (e.key === 'Enter' || e.key === 'Space') {
         e.target.firstElementChild.click()
       }
+    }
+    const handleClick = e => {
+      onClick && onClick(e, value)
+      onClickContext && onClickContext(e, value)
+      onClose && onClose(e, value)
     }
     const subMenuAlignment = ref.current
       ? calcNestedMenuPosition(
@@ -98,6 +120,7 @@ const Item = forwardRef(
           disabled={disabled}
           tabIndex="-1"
           href={!value ? href : undefined}
+          onClick={!hasSubMenu ? handleClick : undefined}
         >
           <div className={className} {...styles.inner()}>
             {typeof children === 'string' ? (
@@ -131,6 +154,7 @@ Item.propTypes = {
   href: PropTypes.string,
   className: PropTypes.string,
   origin: PropTypes.string,
+  onClick: PropTypes.func,
   nested: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

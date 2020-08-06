@@ -21,6 +21,7 @@ exports[`Storyshots Blur onMount example 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -54,6 +55,7 @@ exports[`Storyshots Blur onMount example 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -87,6 +89,7 @@ exports[`Storyshots Blur onMount example 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -133,6 +136,7 @@ exports[`Storyshots customized styles item style 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         style={
           Object {
@@ -171,6 +175,7 @@ exports[`Storyshots customized styles item style 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         style={
           Object {
@@ -209,6 +214,7 @@ exports[`Storyshots customized styles item style 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         style={
           Object {
@@ -260,6 +266,7 @@ exports[`Storyshots disabled item 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -294,6 +301,7 @@ exports[`Storyshots disabled item 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         disabled={true}
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -327,6 +335,7 @@ exports[`Storyshots disabled item 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -361,6 +370,7 @@ exports[`Storyshots disabled item 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         disabled={true}
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -408,6 +418,7 @@ exports[`Storyshots disabled links 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         href="https://duck.com"
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -443,6 +454,7 @@ exports[`Storyshots disabled links 1`] = `
         data-css-19xgx8v=""
         disabled={true}
         href="https://duck.com"
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -477,6 +489,7 @@ exports[`Storyshots disabled links 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         href="https://duck.com"
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -512,6 +525,7 @@ exports[`Storyshots disabled links 1`] = `
         data-css-19xgx8v=""
         disabled={true}
         href="https://duck.com"
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -559,6 +573,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         disabled={true}
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -593,6 +608,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         disabled={true}
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -639,6 +655,7 @@ exports[`Storyshots disabled nested 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -736,6 +753,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         disabled={true}
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -782,6 +800,7 @@ exports[`Storyshots dividers edge 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -831,6 +850,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -867,6 +887,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -900,6 +921,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -947,6 +969,7 @@ exports[`Storyshots link a w/ href 1`] = `
         aria-haspopup={false}
         data-css-19xgx8v=""
         href="https://duckduckgo.com"
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -993,6 +1016,7 @@ exports[`Storyshots menu items ellipses with icon 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1065,6 +1089,7 @@ exports[`Storyshots menu items ellipsis 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1111,6 +1136,7 @@ exports[`Storyshots menu items flex gutter 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1158,6 +1184,7 @@ exports[`Storyshots menu items long text 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1191,6 +1218,7 @@ exports[`Storyshots menu items long text 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1237,6 +1265,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1267,6 +1296,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1297,6 +1327,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1327,6 +1358,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1357,6 +1389,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1387,6 +1420,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1417,6 +1451,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1447,6 +1482,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1477,6 +1513,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1507,6 +1544,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1537,6 +1575,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1567,6 +1606,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1597,6 +1637,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1627,6 +1668,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1657,6 +1699,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1687,6 +1730,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1717,6 +1761,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1747,6 +1792,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1777,6 +1823,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1807,6 +1854,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1837,6 +1885,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1867,6 +1916,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1897,6 +1947,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1927,6 +1978,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1957,6 +2009,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -1987,6 +2040,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2017,6 +2071,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2047,6 +2102,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2077,6 +2133,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2107,6 +2164,7 @@ exports[`Storyshots menu items lots 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2150,6 +2208,7 @@ exports[`Storyshots menu items multiple 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2183,6 +2242,7 @@ exports[`Storyshots menu items multiple 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2216,6 +2276,7 @@ exports[`Storyshots menu items multiple 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2262,6 +2323,7 @@ exports[`Storyshots menu items null item 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2295,6 +2357,7 @@ exports[`Storyshots menu items null item 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2341,6 +2404,7 @@ exports[`Storyshots menu items one 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2387,6 +2451,7 @@ exports[`Storyshots menu items with icons 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2433,6 +2498,7 @@ exports[`Storyshots menu items with icons 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2479,6 +2545,7 @@ exports[`Storyshots menu items with icons 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -2584,6 +2651,7 @@ exports[`Storyshots nested no origin 1`] = `
           <button
             aria-haspopup={false}
             data-css-19xgx8v=""
+            onClick={[Function]}
             role="menuitem"
             tabIndex="-1"
           >
@@ -2665,6 +2733,7 @@ exports[`Storyshots nested no origin 1`] = `
               <button
                 aria-haspopup={false}
                 data-css-19xgx8v=""
+                onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
               >
@@ -2698,6 +2767,7 @@ exports[`Storyshots nested no origin 1`] = `
               <button
                 aria-haspopup={false}
                 data-css-19xgx8v=""
+                onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
               >
@@ -2731,6 +2801,7 @@ exports[`Storyshots nested no origin 1`] = `
               <button
                 aria-haspopup={false}
                 data-css-19xgx8v=""
+                onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
               >
@@ -2769,6 +2840,7 @@ exports[`Storyshots nested no origin 1`] = `
           <button
             aria-haspopup={false}
             data-css-19xgx8v=""
+            onClick={[Function]}
             role="menuitem"
             tabIndex="-1"
           >
@@ -2850,6 +2922,7 @@ exports[`Storyshots nested no origin 1`] = `
               <button
                 aria-haspopup={false}
                 data-css-19xgx8v=""
+                onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
               >
@@ -2883,6 +2956,7 @@ exports[`Storyshots nested no origin 1`] = `
               <button
                 aria-haspopup={false}
                 data-css-19xgx8v=""
+                onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
               >
@@ -2920,6 +2994,7 @@ exports[`Storyshots nested no origin 1`] = `
       <button
         aria-haspopup={false}
         data-css-19xgx8v=""
+        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
       >
@@ -3025,6 +3100,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -3106,6 +3182,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3139,6 +3216,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3172,6 +3250,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3210,6 +3289,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -3291,6 +3371,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3324,6 +3405,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3361,6 +3443,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         <button
           aria-haspopup={false}
           data-css-19xgx8v=""
+          onClick={[Function]}
           role="menuitem"
           tabIndex="-1"
         >
@@ -3467,6 +3550,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -3548,6 +3632,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3581,6 +3666,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3614,6 +3700,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3652,6 +3739,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -3733,6 +3821,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3766,6 +3855,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -3803,6 +3893,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         <button
           aria-haspopup={false}
           data-css-19xgx8v=""
+          onClick={[Function]}
           role="menuitem"
           tabIndex="-1"
         >
@@ -3909,6 +4000,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -3990,6 +4082,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4023,6 +4116,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4056,6 +4150,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4094,6 +4189,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -4175,6 +4271,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4208,6 +4305,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4245,6 +4343,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
         <button
           aria-haspopup={false}
           data-css-19xgx8v=""
+          onClick={[Function]}
           role="menuitem"
           tabIndex="-1"
         >
@@ -4351,6 +4450,7 @@ exports[`Storyshots nested origin topRight 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -4432,6 +4532,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4465,6 +4566,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4498,6 +4600,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4536,6 +4639,7 @@ exports[`Storyshots nested origin topRight 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -4617,6 +4721,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4650,6 +4755,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 <button
                   aria-haspopup={false}
                   data-css-19xgx8v=""
+                  onClick={[Function]}
                   role="menuitem"
                   tabIndex="-1"
                 >
@@ -4687,6 +4793,7 @@ exports[`Storyshots nested origin topRight 1`] = `
         <button
           aria-haspopup={false}
           data-css-19xgx8v=""
+          onClick={[Function]}
           role="menuitem"
           tabIndex="-1"
         >
@@ -4855,6 +4962,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-0"
       >
         <div
           data-css-fxdh11=""
@@ -4886,9 +4994,9 @@ exports[`Storyshots onClick nested 1`] = `
       <button
         aria-haspopup={true}
         data-css-9yitgp=""
-        onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4938,6 +5046,7 @@ exports[`Storyshots onClick nested 1`] = `
             onClick={[Function]}
             role="menuitem"
             tabIndex="-1"
+            value="-1-1"
           >
             <div
               data-css-fxdh11=""
@@ -4969,9 +5078,9 @@ exports[`Storyshots onClick nested 1`] = `
           <button
             aria-haspopup={true}
             data-css-9yitgp=""
-            onClick={[Function]}
             role="menuitem"
             tabIndex="-1"
+            value="-1-2"
           >
             <div
               data-css-fxdh11=""
@@ -5021,6 +5130,7 @@ exports[`Storyshots onClick nested 1`] = `
                 onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
+                value="-1-2-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -5055,6 +5165,7 @@ exports[`Storyshots onClick nested 1`] = `
                 onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
+                value="-1-2-2"
               >
                 <div
                   data-css-fxdh11=""
@@ -5089,6 +5200,7 @@ exports[`Storyshots onClick nested 1`] = `
                 onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
+                value="-1-2-3"
               >
                 <div
                   data-css-fxdh11=""
@@ -5128,6 +5240,7 @@ exports[`Storyshots onClick nested 1`] = `
             onClick={[Function]}
             role="menuitem"
             tabIndex="-1"
+            value="-1-3"
           >
             <div
               data-css-fxdh11=""
@@ -5159,9 +5272,9 @@ exports[`Storyshots onClick nested 1`] = `
           <button
             aria-haspopup={true}
             data-css-9yitgp=""
-            onClick={[Function]}
             role="menuitem"
             tabIndex="-1"
+            value="-1-4"
           >
             <div
               data-css-fxdh11=""
@@ -5211,6 +5324,7 @@ exports[`Storyshots onClick nested 1`] = `
                 onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
+                value="-1-4-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -5245,6 +5359,7 @@ exports[`Storyshots onClick nested 1`] = `
                 onClick={[Function]}
                 role="menuitem"
                 tabIndex="-1"
+                value="-1-4-2"
               >
                 <div
                   data-css-fxdh11=""
@@ -5283,6 +5398,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-2"
       >
         <div
           data-css-fxdh11=""
@@ -5317,6 +5433,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-3"
       >
         <div
           data-css-fxdh11=""
@@ -5351,6 +5468,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-4"
       >
         <div
           data-css-fxdh11=""
@@ -5385,6 +5503,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-5"
       >
         <div
           data-css-fxdh11=""
@@ -5419,6 +5538,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-6"
       >
         <div
           data-css-fxdh11=""
@@ -5453,6 +5573,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-7"
       >
         <div
           data-css-fxdh11=""
@@ -5487,6 +5608,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-8"
       >
         <div
           data-css-fxdh11=""
@@ -5521,6 +5643,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-9"
       >
         <div
           data-css-fxdh11=""
@@ -5555,6 +5678,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-10"
       >
         <div
           data-css-fxdh11=""
@@ -5589,6 +5713,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-11"
       >
         <div
           data-css-fxdh11=""
@@ -5623,6 +5748,7 @@ exports[`Storyshots onClick nested 1`] = `
         onClick={[Function]}
         role="menuitem"
         tabIndex="-1"
+        value="-12"
       >
         <div
           data-css-fxdh11=""
@@ -5706,7 +5832,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
-              onClickCapture={[Function]}
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -5740,7 +5866,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
-              onClickCapture={[Function]}
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -5774,7 +5900,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
-              onClickCapture={[Function]}
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -5857,6 +5983,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -5890,6 +6017,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -5923,6 +6051,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -6005,6 +6134,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -6038,6 +6168,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >
@@ -6071,6 +6202,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
             <button
               aria-haspopup={false}
               data-css-19xgx8v=""
+              onClick={[Function]}
               role="menuitem"
               tabIndex="-1"
             >

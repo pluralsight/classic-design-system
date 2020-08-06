@@ -191,62 +191,46 @@ Object.keys(ActionMenu.origins).forEach(origin =>
   ))
 )
 
-const handleClick = e => {
-  action()(e.currentTarget.value)
+const handleClick = (e, value) => {
+  action()(value)
 }
 
 storiesOf('onClick', module)
   .add('flat', _ => (
-    <ActionMenu>
-      <ActionMenu.Item value="one" onClick={handleClick}>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item value="two" onClick={handleClick}>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item value="three" onClick={handleClick}>
-        Three item
-      </ActionMenu.Item>
+    <ActionMenu onClick={handleClick}>
+      <ActionMenu.Item value="one">One item</ActionMenu.Item>
+      <ActionMenu.Item value="two">Two item</ActionMenu.Item>
+      <ActionMenu.Item value="three">Three item</ActionMenu.Item>
     </ActionMenu>
   ))
   .add('nested', _ => (
-    <ActionMenu>
-      <ActionMenu.Item onClick={action('-0')}>0</ActionMenu.Item>
+    <ActionMenu onClick={handleClick}>
+      <ActionMenu.Item value="-0">0</ActionMenu.Item>
       <ActionMenu.Item
-        onClick={action('-1')}
+        value="-1"
         nested={
           <>
-            <ActionMenu.Item onClick={action('-1-1')}>1-1</ActionMenu.Item>
+            <ActionMenu.Item value="-1-1">1-1</ActionMenu.Item>
             <ActionMenu.Item
-              onClick={action('-1-2')}
+              value="-1-2"
               nested={
                 <>
-                  <ActionMenu.Item onClick={action('-1-2-1')}>
-                    1-2-1
-                  </ActionMenu.Item>
-                  <ActionMenu.Item onClick={action('-1-2-2')}>
-                    1-2-2
-                  </ActionMenu.Item>
-                  <ActionMenu.Item onClick={action('-1-2-3')}>
-                    1-2-3
-                  </ActionMenu.Item>
+                  <ActionMenu.Item value="-1-2-1">1-2-1</ActionMenu.Item>
+                  <ActionMenu.Item value="-1-2-2">1-2-2</ActionMenu.Item>
+                  <ActionMenu.Item value="-1-2-3">1-2-3</ActionMenu.Item>
                 </>
               }
             >
               1-2
             </ActionMenu.Item>
             <ActionMenu.Divider />
-            <ActionMenu.Item onClick={action('-1-3')}>1-3</ActionMenu.Item>
+            <ActionMenu.Item value="-1-3">1-3</ActionMenu.Item>
             <ActionMenu.Item
-              onClick={action('-1-4')}
+              value="-1-4"
               nested={
                 <>
-                  <ActionMenu.Item onClick={action('-1-4-1')}>
-                    1-4-1
-                  </ActionMenu.Item>
-                  <ActionMenu.Item onClick={action('-1-4-2')}>
-                    1-4-2
-                  </ActionMenu.Item>
+                  <ActionMenu.Item value="-1-4-1">1-4-1</ActionMenu.Item>
+                  <ActionMenu.Item value="-1-4-2">1-4-2</ActionMenu.Item>
                 </>
               }
             >
@@ -257,17 +241,17 @@ storiesOf('onClick', module)
       >
         1
       </ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-2')}>2</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-3')}>3</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-4')}>4</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-5')}>5</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-6')}>6</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-7')}>7</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-8')}>8</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-9')}>9</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-10')}>10</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-11')}>11</ActionMenu.Item>
-      <ActionMenu.Item onClick={action('-12')}>12</ActionMenu.Item>
+      <ActionMenu.Item value="-2">2</ActionMenu.Item>
+      <ActionMenu.Item value="-3">3</ActionMenu.Item>
+      <ActionMenu.Item value="-4">4</ActionMenu.Item>
+      <ActionMenu.Item value="-5">5</ActionMenu.Item>
+      <ActionMenu.Item value="-6">6</ActionMenu.Item>
+      <ActionMenu.Item value="-7">7</ActionMenu.Item>
+      <ActionMenu.Item value="-8">8</ActionMenu.Item>
+      <ActionMenu.Item value="-9">9</ActionMenu.Item>
+      <ActionMenu.Item value="-10">10</ActionMenu.Item>
+      <ActionMenu.Item value="-11">11</ActionMenu.Item>
+      <ActionMenu.Item value="-12">12</ActionMenu.Item>
     </ActionMenu>
   ))
 
@@ -447,15 +431,9 @@ storiesOf('onClose', module).add('toggle show/hide', () => {
                 origin={ActionMenu.origins.topLeft}
                 shouldFocusOnMount={false}
               >
-                <ActionMenu.Item onClickCapture={hide}>
-                  One item
-                </ActionMenu.Item>
-                <ActionMenu.Item onClickCapture={hide}>
-                  Two item
-                </ActionMenu.Item>
-                <ActionMenu.Item onClickCapture={hide}>
-                  Three item
-                </ActionMenu.Item>
+                <ActionMenu.Item>One item</ActionMenu.Item>
+                <ActionMenu.Item>Two item</ActionMenu.Item>
+                <ActionMenu.Item>Three item</ActionMenu.Item>
               </ActionMenu>
             </div>
           }

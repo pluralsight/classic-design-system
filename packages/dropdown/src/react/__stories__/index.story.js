@@ -3,7 +3,10 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import ActionMenu, {
+  ellipsesStyles,
+  iconLeftStyles
+} from '@pluralsight/ps-design-system-actionmenu'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
@@ -281,8 +284,9 @@ storiesOf('menu', module)
           <ActionMenu.Item>One item</ActionMenu.Item>
           <ActionMenu.Item>Two item</ActionMenu.Item>
           <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item icon={<Icon.CheckIcon />}>
-            Three and the amazing item
+          <ActionMenu.Item>
+            <Icon.CheckIcon style={iconLeftStyles} />
+            <span style={ellipsesStyles}>Three and the amazing item</span>
           </ActionMenu.Item>
         </ActionMenu>
       }
@@ -313,8 +317,16 @@ storiesOf('menu', module)
               <ActionMenu.Item>One item</ActionMenu.Item>
               <ActionMenu.Item>Two item</ActionMenu.Item>
               <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon.CheckIcon />}>
-                Three and the amazing item
+              <ActionMenu.Item>
+                <span
+                  style={{
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis'
+                  }}
+                >
+                  Three and the amazing item
+                </span>
               </ActionMenu.Item>
             </ActionMenu>
           }
@@ -329,8 +341,17 @@ storiesOf('menu', module)
               <ActionMenu.Item>One item</ActionMenu.Item>
               <ActionMenu.Item>Two item</ActionMenu.Item>
               <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon.CheckIcon />}>
-                Three and the amazing item
+              <ActionMenu.Item>
+                <Icon.CheckIcon style={iconLeftStyles} />
+                <span
+                  style={{
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis'
+                  }}
+                >
+                  Three and the amazing item
+                </span>
               </ActionMenu.Item>
             </ActionMenu>
           }
@@ -361,16 +382,16 @@ storiesOf('menu', module)
           <ActionMenu.Item>Two item</ActionMenu.Item>
           <ActionMenu.Item>Three item</ActionMenu.Item>
           <ActionMenu.Item
-            icon={<Icon.CheckIcon />}
             nested={
-              <ActionMenu>
+              <>
                 <ActionMenu.Item>3 - One item</ActionMenu.Item>
                 <ActionMenu.Item>3 - Two item</ActionMenu.Item>
                 <ActionMenu.Item>3 - Three item</ActionMenu.Item>
-              </ActionMenu>
+              </>
             }
           >
-            Three and the amazing item
+            <Icon.CheckIcon style={iconLeftStyles} />
+            <span style={ellipsesStyles}>Three and the amazing item</span>
           </ActionMenu.Item>
         </ActionMenu>
       }
@@ -390,9 +411,8 @@ storiesOf('menu', module)
             Three item
           </ActionMenu.Item>
           <ActionMenu.Item
-            icon={<Icon.CheckIcon />}
             nested={
-              <ActionMenu>
+              <>
                 <ActionMenu.Item onClick={action('three - One')}>
                   3 - One item
                 </ActionMenu.Item>
@@ -402,10 +422,11 @@ storiesOf('menu', module)
                 <ActionMenu.Item onClick={action('three -  Three')}>
                   3 - Three item
                 </ActionMenu.Item>
-              </ActionMenu>
+              </>
             }
           >
-            Three and the amazing item
+            <Icon.CheckIcon style={iconLeftStyles} />
+            <span style={ellipsesStyles}>Three and the amazing item</span>
           </ActionMenu.Item>
         </ActionMenu>
       }
@@ -431,21 +452,21 @@ storiesOf('menu', module)
           <ActionMenu.Item>Short</ActionMenu.Item>
           <ActionMenu.Item
             nested={
-              <ActionMenu>
+              <>
                 <ActionMenu.Item
                   nested={
-                    <ActionMenu>
+                    <>
                       <ActionMenu.Item>This is pretty longest</ActionMenu.Item>
                       <ActionMenu.Item>
                         The longest in el mundo. Find me!
                       </ActionMenu.Item>
-                    </ActionMenu>
+                    </>
                   }
                 >
                   Longer and longer
                 </ActionMenu.Item>
                 <ActionMenu.Item>This one is longer</ActionMenu.Item>
-              </ActionMenu>
+              </>
             }
           >
             Short enough

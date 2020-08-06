@@ -2120,7 +2120,7 @@ exports[`Storyshots menu in stack 1`] = `
                   aria-hidden={true}
                   data-css-1pnvt9=""
                 >
-                  Three and the amazing item
+                  Select one
                 </span>
                 <span
                   data-css-1yk08w2=""
@@ -2180,7 +2180,7 @@ exports[`Storyshots menu in stack 1`] = `
                   aria-hidden={true}
                   data-css-1pnvt9=""
                 >
-                  Three and the amazing item
+                  Select another one
                 </span>
                 <span
                   data-css-1yk08w2=""
@@ -2251,7 +2251,7 @@ exports[`Storyshots menu nested 1`] = `
               aria-hidden={true}
               data-css-1pnvt9=""
             >
-              Three and the amazing item
+              Select another one
             </span>
             <span
               data-css-1yk08w2=""
@@ -2320,7 +2320,7 @@ exports[`Storyshots menu onClicks 1`] = `
               aria-hidden={true}
               data-css-1pnvt9=""
             >
-              Three and the amazing item
+              Select another one
             </span>
             <span
               data-css-4goio8=""
@@ -2475,7 +2475,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
               aria-hidden={true}
               data-css-1pnvt9=""
             >
-              Three and the amazing item
+              Select one
             </span>
             <span
               data-css-1yk08w2=""

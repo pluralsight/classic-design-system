@@ -214,7 +214,7 @@ storiesOf('Note/actions', module)
                 when={isOpen}
                 show={
                   <div style={{ position: 'relative' }}>
-                    <ActionMenu origin={ActionMenu.origins.topRight}>
+                    <ActionMenu>
                       <ActionMenu.Item>Edit</ActionMenu.Item>
                       <ActionMenu.Item>Delete</ActionMenu.Item>
                     </ActionMenu>
