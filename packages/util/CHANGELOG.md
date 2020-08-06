@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.3.0...@pluralsight/ps-design-system-util@3.4.0) (2020-08-06)
+
+
+### Features
+
+* **util:** new method for cloning while preserving refs ([c76246a](https://github.com/pluralsight/design-system/commit/c76246a69cc3a9641f915f3cb548518314202a7d))
+
+
+
+
+
 # [3.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@3.2.1...@pluralsight/ps-design-system-util@3.3.0) (2020-07-17)
 
 
