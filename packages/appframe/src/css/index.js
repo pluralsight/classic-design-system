@@ -61,12 +61,12 @@ export default {
     transitionProperty: 'padding-left'
   },
   [`.psds-appframe__container--${sidenavVariants.open}`]: {
-    [`@media (min-width: ${breakpoints.small})`]: {
-      paddingLeft: sidenavWidth
-    }
+    paddingLeft: sidenavWidth
   },
   [`.psds-appframe__container--${sidenavVariants.overlay}`]: {
-    paddingLeft: sidenavMinimizedWidth
+    [`@media (min-width: ${breakpoints.small})`]: {
+      paddingLeft: sidenavMinimizedWidth
+    }
   },
   [`.psds-appframe__container--${sidenavVariants.minimized}`]: {
     paddingLeft: sidenavMinimizedWidth
