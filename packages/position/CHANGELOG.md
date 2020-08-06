@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@4.1.6...@pluralsight/ps-design-system-position@4.1.7) (2020-08-06)
+
+
+### Bug Fixes
+
+* **position:** preserve child ref ([f2b3590](https://github.com/pluralsight/design-system/commit/f2b359089e907b7581f3115b174f0f6ad87fd7f5))
+
+
+
+
+
 ## [4.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@4.1.5...@pluralsight/ps-design-system-position@4.1.6) (2020-07-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

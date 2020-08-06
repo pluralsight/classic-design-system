@@ -1,3 +1,4 @@
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
 import {
@@ -9,86 +10,118 @@ import {
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser'
+import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import NavBar from '../index.js'
 
-storiesOf('Navbar', module).add('desktop', _ => (
-  <Grid>
-    <NavBar
-      brand={<Filler>Brand</Filler>}
-      items={<Filler>Items</Filler>}
-      user={<Filler>User</Filler>}
-      utility={<Filler>Utility</Filler>}
-    />
-    <NavBar
-      brand={<Filler>Brand</Filler>}
-      items={<Filler>Items</Filler>}
-      onMobileMenuClick={() => alert('mobile click')}
-      user={<Filler>User</Filler>}
-      utility={<Filler>Utility</Filler>}
-    />
-    <NavBar
-      brand={<SkillsBrand />}
-      items={<Filler>Items</Filler>}
-      onMobileMenuClick={() => alert('mobile click')}
-      user={<Filler>User</Filler>}
-      utility={<Filler>Utility</Filler>}
-    />
-    <NavBar
-      brand={<SkillsBrand onClick={() => alert('home')} />}
-      items={
-        <>
-          <div
-            style={{
-              marginRight: layout.spacingXXSmall,
-              display: 'inline-block'
-            }}
-          >
-            <NavItem icon={<HomeIcon />}>Home</NavItem>
-          </div>
-          <div
-            style={{
-              display: 'inline-block'
-            }}
-          >
-            <NavItem icon={<BrowseIcon />} selected>
-              Browse
-            </NavItem>
-          </div>
-        </>
-      }
-      onMobileMenuClick={() => alert('mobile click')}
-      user={
-        <NavUser
-          name="Jake"
-          planName="Accenture"
-          onClick={() => alert('user click')}
+storiesOf('Navbar', module).add('desktop', _ => {
+  function Story() {
+    const [isBrowseMenuOpen, setBrowseMenuOpen] = React.useState(false)
+    const [isProfileMenuOpen, setProfileMenuOpen] = React.useState(false)
+    return (
+      <Grid>
+        <NavBar
+          brand={<Filler>Brand</Filler>}
+          items={<Filler>Items</Filler>}
+          user={<Filler>User</Filler>}
+          utility={<Filler>Utility</Filler>}
         />
-      }
-      utility={
-        <>
-          <div
-            style={{
-              marginRight: layout.spacingXXSmall,
-              display: 'inline-block'
-            }}
-          >
-            <NavItem icon={<NotificationsIcon />} />
-          </div>
-          <div
-            style={{
-              display: 'inline-block'
-            }}
-          >
-            <NavItem icon={<AccountIcon />} />
-          </div>
-        </>
-      }
-    />
-  </Grid>
-))
+        <NavBar
+          brand={<Filler>Brand</Filler>}
+          items={<Filler>Items</Filler>}
+          onMobileMenuClick={() => alert('mobile click')}
+          user={<Filler>User</Filler>}
+          utility={<Filler>Utility</Filler>}
+        />
+        <NavBar
+          brand={<SkillsBrand />}
+          items={<Filler>Items</Filler>}
+          onMobileMenuClick={() => alert('mobile click')}
+          user={<Filler>User</Filler>}
+          utility={<Filler>Utility</Filler>}
+        />
+        <NavBar
+          brand={<SkillsBrand onClick={() => alert('home')} />}
+          items={
+            <>
+              <div
+                style={{
+                  marginRight: layout.spacingXXSmall,
+                  display: 'inline-block'
+                }}
+              >
+                <NavItem icon={<HomeIcon />}>Home</NavItem>
+              </div>
+              <div
+                style={{
+                  display: 'inline-block'
+                }}
+              >
+                <BelowLeft
+                  show={
+                    <ActionMenu>
+                      <ActionMenu.Item>Experimental flyout</ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                  when={isBrowseMenuOpen}
+                >
+                  <NavItem
+                    icon={<BrowseIcon />}
+                    selected
+                    menu
+                    onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
+                  >
+                    Browse
+                  </NavItem>
+                </BelowLeft>
+              </div>
+            </>
+          }
+          onMobileMenuClick={() => alert('mobile click')}
+          user={
+            <BelowRight
+              show={
+                <ActionMenu>
+                  <ActionMenu.Item>Lame</ActionMenu.Item>
+                </ActionMenu>
+              }
+              when={isProfileMenuOpen}
+            >
+              <NavUser
+                name="Jake"
+                planName="Accenture"
+                onClick={() => setProfileMenuOpen(!isProfileMenuOpen)}
+              />
+            </BelowRight>
+          }
+          utility={
+            <>
+              <div
+                style={{
+                  marginRight: layout.spacingXXSmall,
+                  display: 'inline-block'
+                }}
+              >
+                <NavItem icon={<NotificationsIcon />} />
+              </div>
+              <div
+                style={{
+                  display: 'inline-block'
+                }}
+              >
+                <NavItem icon={<AccountIcon />} />
+              </div>
+            </>
+          }
+        />
+      </Grid>
+    )
+  }
+
+  return <Story />
+})
 
 function Grid(props) {
   return (
