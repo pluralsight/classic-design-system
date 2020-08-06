@@ -69,7 +69,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
 
   const themeName = useTheme()
 
-  const largeMedia = useMatchMedia(`(min-width: ${vars.breakpoints.large})`)
+  const mediumMedia = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
   const xLargeMedia = useMatchMedia(`(min-width: ${vars.breakpoints.xLarge})`)
   const prevXLarge = usePrevious(xLargeMedia)
 
@@ -114,9 +114,9 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
     if (sidenavOpen) {
       return xLargeMedia ? variants.open : variants.overlay
     } else {
-      return largeMedia ? variants.minimized : variants.closed
+      return mediumMedia ? variants.minimized : variants.closed
     }
-  }, [sidenav, sidenavOpen, largeMedia, xLargeMedia])
+  }, [sidenav, sidenavOpen, mediumMedia, xLargeMedia])
 
   const skipTargetId = 'ps-frame-skip-target'
   const skipTargetRef = useRef()
