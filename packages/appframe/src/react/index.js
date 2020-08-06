@@ -1,3 +1,4 @@
+import { canUseDOM } from 'exenv'
 import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React, {
@@ -21,6 +22,7 @@ import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { isFunction, usePrevious } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index.js'
+import polyfillElementClosest from '../js/polyfill-element-closest.js'
 import * as vars from '../vars/index.js'
 
 import useBodyScrollLock from './use-body-scroll-lock.js'
@@ -29,7 +31,10 @@ import useOnClickOutside from './use-on-click-outside.js'
 import useOnEscape from './use-on-escape.js'
 import useOnInnerFocus from './use-on-inner-focus.js'
 
-if (typeof window !== 'undefined') polyfillFocusWithin(document)
+if (canUseDOM) {
+  polyfillElementClosest()
+  polyfillFocusWithin(document)
+}
 
 const SKIP_TARGET_ID = 'ps-appframe--skip-target'
 const TOP_NAV_ID = 'ps-appframe--topnav'
