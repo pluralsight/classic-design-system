@@ -75,6 +75,7 @@ const Item = forwardRef(
         setOpen(true)
         e.stopPropagation()
       }
+      e.preventDefault()
     }
     const handleArrowLeft = e => {
       if (e.key === 'ArrowLeft' && hasSubMenu) {
