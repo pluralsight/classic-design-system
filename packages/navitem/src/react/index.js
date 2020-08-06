@@ -20,11 +20,12 @@ NavItem.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string,
   icon: PropTypes.element,
-  menu: PropTypes.node,
+  menu: PropTypes.bool,
   selected: PropTypes.bool
 }
 NavItem.defaultProps = {
   alignment: 'horizontal',
+  menu: false,
   selected: false
 }
 NavItem.alignments = alignments

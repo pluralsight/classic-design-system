@@ -115,11 +115,7 @@ exports[`Storyshots Navbar desktop 1`] = `
               }
             >
               <span
-                className={
-                  Object {
-                    "data-css-1009u4g": "",
-                  }
-                }
+                data-css-1009u4g=""
               >
                 <div
                   data-css-7dab2f=""
@@ -253,11 +249,7 @@ exports[`Storyshots Navbar desktop 1`] = `
               }
             >
               <span
-                className={
-                  Object {
-                    "data-css-1009u4g": "",
-                  }
-                }
+                data-css-1009u4g=""
               >
                 <div
                   data-css-7dab2f=""
@@ -421,11 +413,7 @@ exports[`Storyshots Navbar desktop 1`] = `
               }
             >
               <span
-                className={
-                  Object {
-                    "data-css-1009u4g": "",
-                  }
-                }
+                data-css-1009u4g=""
               >
                 <div
                   data-css-7dab2f=""
@@ -538,11 +526,7 @@ exports[`Storyshots Navbar desktop 1`] = `
                 }
               >
                 <span
-                  className={
-                    Object {
-                      "data-css-1o9ctb7": "",
-                    }
-                  }
+                  data-css-1o9ctb7=""
                 >
                   <div
                     data-css-7dab2f=""
@@ -601,20 +585,17 @@ exports[`Storyshots Navbar desktop 1`] = `
             <button
               data-css-15wi3dl=""
               icon={<BrowseIcon />}
+              onClick={[Function]}
             >
               <span
                 className={
                   Object {
-                    "data-css-50rv4t": "",
+                    "data-css-5vea0s": "",
                   }
                 }
               >
                 <span
-                  className={
-                    Object {
-                      "data-css-1o9ctb7": "",
-                    }
-                  }
+                  data-css-1o9ctb7=""
                 >
                   <div
                     data-css-7dab2f=""
@@ -641,6 +622,27 @@ exports[`Storyshots Navbar desktop 1`] = `
                 >
                   Browse
                 </span>
+                <span
+                  className={
+                    Object {
+                      "data-css-1cbyl54": "",
+                    }
+                  }
+                >
+                  <div
+                    data-css-1gzzcm2=""
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                      />
+                    </svg>
+                  </div>
+                </span>
               </span>
             </button>
           </div>
@@ -652,6 +654,13 @@ exports[`Storyshots Navbar desktop 1`] = `
             }
           />
         </span>
+        <div
+          style={
+            Object {
+              "visibility": "hidden",
+            }
+          }
+        />
       </div>
     </div>
     <div
@@ -687,11 +696,7 @@ exports[`Storyshots Navbar desktop 1`] = `
                 }
               >
                 <span
-                  className={
-                    Object {
-                      "data-css-1009u4g": "",
-                    }
-                  }
+                  data-css-1009u4g=""
                 >
                   <div
                     data-css-7dab2f=""
@@ -750,11 +755,7 @@ exports[`Storyshots Navbar desktop 1`] = `
                 }
               >
                 <span
-                  className={
-                    Object {
-                      "data-css-1009u4g": "",
-                    }
-                  }
+                  data-css-1009u4g=""
                 >
                   <div
                     data-css-7dab2f=""
@@ -821,6 +822,13 @@ exports[`Storyshots Navbar desktop 1`] = `
           </div>
         </button>
       </div>
+      <div
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      />
     </div>
   </div>
 </div>

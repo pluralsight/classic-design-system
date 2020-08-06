@@ -46,11 +46,7 @@ Object.keys(NavItem.alignments).forEach(key =>
       >
         Link to web
       </NavItem>
-      <NavItem
-        alignment={NavItem.alignments[key]}
-        menu={<div>Placeholder menu</div>}
-        icon={<HomeIcon />}
-      >
+      <NavItem alignment={NavItem.alignments[key]} menu icon={<HomeIcon />}>
         With menu
       </NavItem>
       <NavItem alignment={NavItem.alignments[key]} selected icon={<HomeIcon />}>

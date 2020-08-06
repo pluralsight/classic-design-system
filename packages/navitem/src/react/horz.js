@@ -39,13 +39,11 @@ export function HorzCaret(props) {
 }
 HorzCaret.displayName = 'NavItem.HorzCaret'
 HorzCaret.propTypes = {
-  menu: PropTypes.element
+  menu: PropTypes.bool
 }
 
 export function HorzIcon(props) {
-  return props.icon ? (
-    <span className={styles.icon(props)}>{props.icon}</span>
-  ) : null
+  return props.icon ? <span {...styles.icon(props)}>{props.icon}</span> : null
 }
 HorzIcon.displayName = 'NavItem.HorzIcon'
 HorzIcon.propTypes = {
