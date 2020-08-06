@@ -1,8 +1,9 @@
 export const breakpoints = {
-  small: '640px',
-  medium: '768px',
-  large: '1024px',
-  xLarge: '1280px'
+  xSmall: '640px',
+  small: '768px',
+  medium: '1024px',
+  large: '1280px',
+  xLarge: '1600px'
 }
 
 export const sidenavVariants = {

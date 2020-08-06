@@ -16,7 +16,7 @@ import useMatchMedia from '../use-match-media.js'
 
 storiesOf('AppFrame|Examples', module).add('Skills', () => {
   function Story() {
-    const mobile = !useMatchMedia(`(min-width: ${breakpoints.small})`)
+    const mobile = !useMatchMedia(`(min-width: ${breakpoints.xSmall})`)
 
     const sidenavSections = useMemo(
       () =>

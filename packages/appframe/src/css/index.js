@@ -60,7 +60,7 @@ export default {
     transitionProperty: 'padding-left'
   },
   [`.psds-appframe__container--${sidenavVariants.open}`]: {
-    [`@media (min-width: ${breakpoints.medium})`]: {
+    [`@media (min-width: ${breakpoints.small})`]: {
       paddingLeft: sidenavWidth
     }
   },
@@ -117,7 +117,7 @@ export default {
 
     '&::after': { boxShadow: '0 0 0 rgba(0, 0, 0, .8)' },
 
-    [`@media (min-width: ${breakpoints.medium})`]: {
+    [`@media (min-width: ${breakpoints.small})`]: {
       transform: 'translate(0, 0)',
       width: 0
     }

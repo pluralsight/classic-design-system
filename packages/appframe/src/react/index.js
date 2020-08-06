@@ -69,14 +69,14 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
 
   const themeName = useTheme()
 
-  const mediumMedia = useMatchMedia(`(min-width: ${vars.breakpoints.medium})`)
-  const xLargeMedia = useMatchMedia(`(min-width: ${vars.breakpoints.xLarge})`)
-  const prevXLarge = usePrevious(xLargeMedia)
+  const smallMedia = useMatchMedia(`(min-width: ${vars.breakpoints.small})`)
+  const largeMedia = useMatchMedia(`(min-width: ${vars.breakpoints.large})`)
+  const prevLargeMedia = usePrevious(largeMedia)
 
   const defaultSidenavOpen = useMemo(() => {
     const controlled = typeof props.sidenavOpen !== 'undefined'
-    return controlled ? props.sidenavOpen : xLargeMedia
-  }, [props.sidenavOpen, xLargeMedia])
+    return controlled ? props.sidenavOpen : largeMedia
+  }, [props.sidenavOpen, largeMedia])
 
   const [sidenavOpen, setSidenavOpen] = useState(defaultSidenavOpen)
 
@@ -95,9 +95,9 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
   }, [props.sidenavOpen, onRequestSideNavOpen])
 
   useEffect(() => {
-    const enteringXLarge = (prevXLarge !== xLargeMedia) & xLargeMedia
+    const enteringXLarge = (prevLargeMedia !== largeMedia) & largeMedia
     if (enteringXLarge) openSidenav()
-  }, [prevXLarge, xLargeMedia, openSidenav])
+  }, [prevLargeMedia, largeMedia, openSidenav])
 
   useEffect(() => {
     const controlled = typeof props.sidenavOpen !== 'undefined'
@@ -112,11 +112,11 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
     if (!sidenav) return variants.closed
 
     if (sidenavOpen) {
-      return xLargeMedia ? variants.open : variants.overlay
+      return largeMedia ? variants.open : variants.overlay
     } else {
-      return mediumMedia ? variants.minimized : variants.closed
+      return smallMedia ? variants.minimized : variants.closed
     }
-  }, [sidenav, sidenavOpen, mediumMedia, xLargeMedia])
+  }, [sidenav, sidenavOpen, smallMedia, largeMedia])
 
   const skipTargetId = 'ps-frame-skip-target'
   const skipTargetRef = useRef()
