@@ -178,7 +178,7 @@ AppFrame.displayName = 'AppFrame'
 AppFrame.defaultProps = {}
 
 AppFrame.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  children: PropTypes.node,
   onRequestSideNavClose: PropTypes.func,
   onRequestSideNavOpen: PropTypes.func,
   sidenav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),

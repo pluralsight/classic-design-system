@@ -24,7 +24,7 @@ import {
 function InAppExample() {
   const [isHovered, setHovered] = React.useState(false)
   const [isClicked, setClicked] = React.useState(false)
-  console.log({ isHovered })
+
   return (
     <div>
       <div className="examples">
