@@ -9,7 +9,7 @@ const styles = {
 }
 
 const Arrow = props => (
-  <div {...styles.arrow(props)}>
+  <div {...styles.arrow(props)} {...props} data-submenu-arrow>
     <svg
       width="4"
       height="9"

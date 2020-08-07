@@ -10,19 +10,6 @@ import {
 
 import * as vars from '../vars/index.js'
 
-const menuOriginRight = {
-  transform: `translate(${layout.spacingXSmall}, 0)`
-}
-const menuOriginLeft = {
-  transform: `translate(calc(-1 * ${layout.spacingXSmall}), 0)`
-}
-const menuOriginTop = {
-  transform: `translate(0, calc(-1 * ${layout.spacingXSmall}))`
-}
-const menuOriginBottom = {
-  transform: `translate(0, ${layout.spacingXSmall})`
-}
-
 export default {
   '@keyframes psds-actionmenu__keyframes__slide': {
     '100%': {
@@ -32,7 +19,6 @@ export default {
   },
 
   '.psds-actionmenu': ({ slide }) => ({
-    position: 'absolute',
     display: 'inline-block',
     marginLeft: 0,
     background: colorsBackgroundLight[3],
@@ -48,83 +34,75 @@ export default {
       motion.speedNormal
     } forwards`
   }),
-
-  [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
-    ...menuOriginTop,
-    right: 0,
-    top: 0
-  },
-  [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
-    ...menuOriginBottom,
-    bottom: 0,
-    right: 0
-  },
-  [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
-    ...menuOriginTop,
-    left: 0,
-    top: 0
-  },
-  [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
-    ...menuOriginBottom,
-    left: 0,
-    bottom: 0
-  },
-
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topRight}`]: menuOriginRight,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: menuOriginRight,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: menuOriginLeft,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: menuOriginLeft,
-
   '.psds-actionmenu__item-container': {
-    position: 'relative'
+    label: 'container',
+    position: 'relative',
+    transition: `background ${motion.speedXFast}`,
+    color: colorsTextIcon.highOnLight,
+    '&:hover, &:focus': {
+      outline: 'none'
+    },
+    '&:focus': {
+      background: colorsPrimaryAction.background,
+      color: colorsTextIcon.highOnDark
+    },
+    '&:focus > button [data-submenu-arrow]': {
+      color: colorsTextIcon.highOnDark
+    },
+    '&:hover:not([disabled])': {
+      background: colorsBackgroundLight[2],
+      color: colorsTextIcon.highOnLight
+    },
+    '&:hover > ul:not(:empty)': {
+      visibility: 'visible'
+    }
   },
-
+  '.psds-actionmenu__nested': {
+    label: 'subMenu',
+    visibility: 'hidden',
+    display: 'inline-block',
+    position: 'absolute',
+    zIndex: 1,
+    top: 0,
+    left: '100%',
+    '&[aria-expanded="true"]': {
+      visibility: 'visible'
+    },
+    '&[aria-expanded="false"]': {
+      visibility: 'hidden'
+    }
+  },
   '.psds-actionmenu__item': {
-    display: 'flex',
+    label: 'action-menuitem',
+    display: 'inline-block',
     width: '100%',
-    alignItems: 'center',
+    color: 'inherit',
     lineHeight: type.lineHeightExtra,
     fontWeight: type.fontWeightMedium,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    textAlign: 'left',
     cursor: 'pointer',
     border: 'none',
     paddingTop: '0',
     paddingBottom: '0',
     paddingLeft: layout.spacingMedium,
     paddingRight: layout.spacingMedium,
-    color: colorsTextIcon.highOnLight,
     background: 'none',
-    textDecoration: 'none',
-    transition: `background ${motion.speedXFast}`
+    textDecoration: 'none'
   },
 
   '.psds-actionmenu__item-inner': {
-    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'left',
+    minWidth: 0
+  },
+
+  '.psds-actionmenu__ellipsis': {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis'
-  },
-
-  '.psds-actionmenu__item:focus': {
-    background: colorsBackgroundLight[2],
-    outline: 'none',
-    color: colorsTextIcon.highOnLight
-  },
-  '.psds-actionmenu__item--focus-keyboard': {
-    background: colorsPrimaryAction.background,
-    outline: 'none',
-    color: colorsTextIcon.highOnDark
-  },
-
-  '.psds-actionmenu__item--link': {
-    color: colorsTextIcon.highOnLight
-  },
-
-  '.psds-actionmenu__item--icon': {
-    paddingLeft: layout.spacingXSmall
   },
 
   '.psds-actionmenu__item--nested': {
@@ -139,7 +117,8 @@ export default {
   '.psds-actionmenu__item--disabled': {
     opacity: '50%',
     cursor: 'auto',
-    outline: 'none'
+    outline: 'none',
+    pointerEvents: 'none'
   },
 
   '.psds-actionmenu__divider': {
@@ -159,9 +138,6 @@ export default {
     color: colorsTextIcon.lowOnLight,
     marginLeft: 'auto',
     paddingLeft: layout.spacingXSmall
-  },
-  '.psds-actionmenu__item__arrow--focus-keyboard': {
-    color: colorsTextIcon.highOnDark
   },
   '.psds-actionmenu__item__arrow__svg': {
     fill: 'currentColor'

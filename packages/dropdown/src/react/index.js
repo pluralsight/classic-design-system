@@ -15,7 +15,8 @@ import {
 import stylesheet from '../css/index.js'
 import { findMatchingActionMenuItem } from './utils.js'
 import * as vars from '../vars/index.js'
-
+import { Item } from './item.js'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 const styles = {
   buttonSizer: _ => css(stylesheet['.psds-dropdown__button-sizer']),
   error: _ => css(stylesheet['.psds-dropdown__error']),
@@ -101,7 +102,6 @@ const CaretDown = _ => (
 const Dropdown = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
   const allProps = { ...props, themeName }
-  const [isKeyboarding, setKeyboarding] = React.useState(false)
   const [isOpen, setOpen] = React.useState(false)
 
   const itemMatchingValue = React.useMemo(
@@ -131,27 +131,16 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
   }
 
   function handleKeyDown(evt) {
-    if (evt.key === 'ArrowDown' || evt.key === ' ' || evt.key === 'Enter') {
-      setKeyboarding(true)
-    }
     if (evt.key === 'ArrowDown') {
       setOpen(true)
     }
   }
 
-  function handleMenuClick(evt) {
-    evt.preventDefault()
-    evt.stopPropagation()
-
-    if (allProps.menu && typeof allProps.menu.props.onClick === 'function')
-      allProps.menu.props.onClick(evt)
-  }
-
-  function handleMenuChange(evt, value, label) {
-    setSelectedLabel(label)
+  function handleMenuChange(evt, value) {
+    const innerText = evt.currentTarget.innerText
+    setSelectedLabel(value === innerText ? value : innerText)
     setOpen(false)
-    if (typeof allProps.onChange === 'function')
-      allProps.onChange(evt, value, label)
+    if (typeof allProps.onChange === 'function') allProps.onChange(evt, value)
   }
 
   const menu = useRef(null)
@@ -262,23 +251,23 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
         isOpen &&
         createUniversalPortal(
           <div {...styles.menu(allProps)} style={menuPosition}>
-            {React.cloneElement(allProps.menu, {
-              isKeyboarding: isKeyboarding,
-              onChange: handleMenuChange,
-              onClick: handleMenuClick,
-              ref: menu,
-              onClose: _ => {
+            <ActionMenu
+              onClick={handleMenuChange}
+              ref={menu}
+              onClose={_ => {
                 setOpen(false)
                 if (typeof allProps.menu.props.onClose === 'function')
                   allProps.menu.props.onClose()
-              },
-              style: {
+              }}
+              style={{
                 ...allProps.menu.props.style,
                 minWidth: '0',
                 maxWidth: 'none',
                 width
-              }
-            })}
+              }}
+            >
+              {allProps.menu}
+            </ActionMenu>
           </div>,
           inNode
         )}
@@ -297,7 +286,8 @@ Dropdown.propTypes = {
   className: PropTypes.string,
   error: PropTypes.bool,
   label: PropTypes.node,
-  menu: PropTypes.element.isRequired,
+  menu: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)])
+    .isRequired,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
@@ -318,7 +308,8 @@ Dropdown.defaultProps = {
 
 Dropdown.appearances = vars.appearances
 Dropdown.sizes = vars.sizes
-
+Dropdown.Item = Item
+Dropdown.Divider = ActionMenu.Divider
 export const appearances = vars.appearances
 export const sizes = vars.sizes
 

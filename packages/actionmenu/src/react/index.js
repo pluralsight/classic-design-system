@@ -5,13 +5,14 @@ import PropTypes from 'prop-types'
 import ActionMenu from './menu.js'
 import Divider from './divider.js'
 import Item from './item.js'
+import { Ellipsis } from './ellipsis.js'
 
 import * as vars from '../vars/index.js'
 
+ActionMenu.Ellipsis = Ellipsis
 ActionMenu.Item = Item
 ActionMenu.Divider = Divider
 ActionMenu.origins = vars.origins
-
 ActionMenu.propTypes = {
   children: PropTypes.oneOfType([
     elementOfType(Item),
@@ -20,20 +21,11 @@ ActionMenu.propTypes = {
       PropTypes.oneOfType([elementOfType(Item), elementOfType(Divider)])
     )
   ]),
-  isKeyboarding: PropTypes.bool,
-  onClose: PropTypes.func,
-  onChange: PropTypes.func,
-  origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k])),
-  shouldFocusOnMount: PropTypes.bool,
-  _isNested: PropTypes.bool
+  onClose: PropTypes.func
 }
 ActionMenu.defaultProps = {
-  isKeyboarding: false,
-  origin: vars.origins.topLeft,
-  shouldFocusOnMount: true,
   onClose: () => {}
 }
-
 export const origins = vars.origins
 
 export default ActionMenu

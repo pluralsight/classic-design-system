@@ -167,5 +167,11 @@ export default {
     maxWidth: '100%',
     width: '100%',
     display: 'block'
+  },
+
+  '.psds-dropdown__item__icon': {
+    marginRight: layout.spacingXSmall,
+    display: 'inline-flex',
+    alignItems: 'center'
   }
 }

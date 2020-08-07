@@ -1,179 +1,163 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React from 'react'
-
-import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import React, {
+  useState,
+  useRef,
+  forwardRef,
+  useImperativeHandle,
+  useContext
+} from 'react'
 
 import { calcNestedMenuPosition } from '../js/index.js'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
 
-import ActionMenu from './menu.js'
+import { ActionMenuContext } from './menu.js'
 import Arrow from './arrow.js'
-import ItemIcon from './item-icon.js'
-
+const slide = css.keyframes(
+  stylesheet['@keyframes psds-actionmenu__keyframes__slide']
+)
 const styles = {
-  itemContainer: () => css(stylesheet['.psds-actionmenu__item-container']),
-  item: ({ _isKeyboarding, disabled, icon, isActive, nested }) => {
-    const focusable = !_isKeyboarding && !disabled
-    const focused = _isKeyboarding && !disabled
-
-    return compose(
-      css(stylesheet['.psds-actionmenu__item']),
-      focusable &&
-        css({
-          ':focus': stylesheet['.psds-actionmenu__item:focus'],
-          ':hover': stylesheet['.psds-actionmenu__item--link'],
-          ':active': stylesheet['.psds-actionmenu__item--link'],
-          ':visited': stylesheet['.psds-actionmenu__item--link']
-        }),
-      focused &&
-        css({
-          ':focus': stylesheet['.psds-actionmenu__item--focus-keyboard'],
-          ':focus div':
-            stylesheet['.psds-actionmenu__item__arrow--focus-keyboard']
-        }),
-      icon && css(stylesheet['.psds-actionmenu__item--icon']),
-      nested && css(stylesheet['.psds-actionmenu__item--nested']),
-      isActive && css(stylesheet['.psds-actionmenu__item--isActive']),
+  itemContainer: ({ disabled }) =>
+    compose(
+      css(stylesheet['.psds-actionmenu__item-container']),
       disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
-    )
-  },
-  inner: _ => css(stylesheet['.psds-actionmenu__item-inner'])
+    ),
+  item: ({ disabled, hasSubMenu }) =>
+    compose(
+      css(stylesheet['.psds-actionmenu__item']),
+      css({
+        ':focus': stylesheet['.psds-actionmenu__item--focus-keyboard'],
+        ':focus div':
+          stylesheet['.psds-actionmenu__item__arrow--focus-keyboard']
+      }),
+      hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
+    ),
+  inner: _ => css(stylesheet['.psds-actionmenu__item-inner']),
+  nested: _ =>
+    compose(
+      css(stylesheet['.psds-actionmenu']({ slide })),
+      css(stylesheet['.psds-actionmenu__nested'])
+    ),
+  textOnly: _ => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-export default function Item(props) {
-  const { icon, isActive, ...rest } = props
-  const TagName = props.href ? 'a' : 'button'
-  const prevIsActive = usePrevious(isActive)
-
-  const itemRef = React.useRef()
-  const [isNestedRendered, setIsNestedRendered] = React.useState(false)
-
-  React.useEffect(() => {
-    if (isActive && props.shouldFocusOnMount) {
-      delayUntilNextTick(_ => itemRef.current && itemRef.current.focus())
+const Item = forwardRef(
+  (
+    {
+      disabled,
+      nested,
+      origin,
+      value,
+      className,
+      children,
+      onClick,
+      tagName,
+      ...rest
+    },
+    forwardedRef
+  ) => {
+    const { onClickContext, onClose } = useContext(ActionMenuContext)
+    const ref = useRef()
+    const subMenuRef = useRef()
+    useImperativeHandle(forwardedRef, () => ref.current)
+    const TagName = tagName
+    const [open, setOpen] = useState(false)
+    const hasSubMenu = Boolean(nested)
+    const handleMouseOver = e => {
+      hasSubMenu && setOpen(true)
     }
-  }, [isActive, props.shouldFocusOnMount])
-
-  React.useEffect(() => {
-    if (!prevIsActive && isActive && !isNestedRendered) {
-      delayUntilNextTick(_ => itemRef.current && itemRef.current.focus())
+    const handleMouseOut = e => {
+      hasSubMenu && setOpen(false)
     }
-  }, [isActive, isNestedRendered, prevIsActive])
-
-  function handleFocus(evt) {
-    delayUntilNextTick(_ => props._onItemFocus(props._i))
-  }
-
-  function handleKeyDown(evt) {
-    if (evt.key === 'Enter') props._onChange(evt, props.value, props.children)
-
-    if (
-      (evt.key === 'ArrowRight' || evt.key === ' ' || evt.key === 'Enter') &&
-      props.nested
-    ) {
-      evt.stopPropagation()
-      evt.preventDefault()
-
-      setIsNestedRendered(true)
+    const handleArrowRight = e => {
+      if (e.key === 'ArrowRight' && hasSubMenu) {
+        setOpen(true)
+        e.stopPropagation()
+      }
+      e.preventDefault()
     }
-  }
-
-  function handleMouseOver(evt) {
-    if (!props.disabled) {
-      if (props.nested) setIsNestedRendered(true)
-      props._onMouseOver(props._i)
+    const handleArrowLeft = e => {
+      if (e.key === 'ArrowLeft' && hasSubMenu) {
+        setOpen(false)
+        e.stopPropagation()
+      }
     }
-  }
-
-  function handleNestedClose(evt) {
-    setIsNestedRendered(false)
-    itemRef.current.focus()
-  }
-
-  function handleChange(evt) {
-    props._onChange(evt, props.value, props.children)
-    if (typeof props.onClick === 'function') props.onClick(evt)
-  }
-
-  const nestedMenu =
-    isNestedRendered &&
-    props.nested &&
-    isActive &&
-    React.cloneElement(props.nested, {
-      style: calcNestedMenuPosition(
-        itemRef.current.getBoundingClientRect().width,
-        props._origin
-      ),
-      isKeyboarding: props._isKeyboarding,
-      onClose: handleNestedClose,
-      onChange: props._onChange,
-      origin: props._origin,
-      _isNested: true
-    })
-
-  return (
-    <div {...styles.itemContainer(props)}>
-      <TagName
-        {...filterReactProps(rest, { tagName: TagName })}
-        {...styles.item(props)}
-        aria-haspopup={!!props.nested}
-        onClick={handleChange}
-        onFocus={handleFocus}
-        onKeyDown={handleKeyDown}
+    const handleReturnUp = e => {
+      if (e.key === 'Enter' || e.key === 'Space') {
+        e.target.firstElementChild.click()
+      }
+    }
+    const handleClick = e => {
+      onClick && onClick(e, value)
+      onClickContext && onClickContext(e, value)
+      onClose && onClose(e, value)
+    }
+    const subMenuAlignment = ref.current
+      ? calcNestedMenuPosition(
+          ref.current.getBoundingClientRect(),
+          subMenuRef.current.getBoundingClientRect(),
+          origin
+        )
+      : {}
+    return (
+      <li
+        {...styles.itemContainer({ disabled })}
+        role="none"
+        ref={ref}
+        disabled={disabled}
+        tabIndex={!disabled ? '-1' : undefined}
+        onKeyDown={handleArrowRight}
+        onKeyUp={handleReturnUp}
         onMouseOver={handleMouseOver}
-        ref={itemRef}
-        role="menuitem"
-        tabIndex="0"
-        {...(props.disabled && {
-          href: undefined,
-          onFocus: undefined,
-          tabIndex: '-1'
-        })}
+        onMouseOut={handleMouseOut}
       >
-        {icon && <ItemIcon>{icon}</ItemIcon>}
+        <TagName
+          {...filterReactProps(rest, { tagName })}
+          {...styles.item({ disabled, hasSubMenu })}
+          aria-haspopup={!!nested}
+          role="menuitem"
+          disabled={disabled}
+          tabIndex="-1"
+          onClick={!hasSubMenu ? handleClick : undefined}
+        >
+          <div className={className} {...styles.inner()}>
+            {children}
+            {hasSubMenu && <Arrow />}
+          </div>
+        </TagName>
 
-        <span {...styles.inner()}>{props.children}</span>
-
-        {props.nested && <Arrow _isKeyboarding={props._isKeyboarding} />}
-      </TagName>
-
-      {nestedMenu}
-    </div>
-  )
-}
+        <ul
+          {...styles.nested()}
+          role="menu"
+          aria-expanded={open}
+          ref={subMenuRef}
+          onKeyDown={handleArrowLeft}
+          style={{ ...subMenuAlignment }}
+        >
+          {!disabled && nested}
+        </ul>
+      </li>
+    )
+  }
+)
 
 Item.displayName = 'ActionMenu.Item'
+Item.defaultProps = {
+  tagName: 'a'
+}
 Item.propTypes = {
   children: PropTypes.node,
   disabled: PropTypes.bool,
-  href: PropTypes.string,
-  icon: PropTypes.node,
-  isActive: PropTypes.bool,
-  nested: elementOfType(ActionMenu),
+  tagName: PropTypes.string,
+  className: PropTypes.string,
+  origin: PropTypes.string,
   onClick: PropTypes.func,
-  shouldFocusOnMount: PropTypes.bool,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  _i: PropTypes.number,
-  _isKeyboarding: PropTypes.bool,
-  _onItemFocus: PropTypes.func,
-  _onMouseOver: PropTypes.func,
-  _onChange: PropTypes.func,
-  _origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k]))
+  nested: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ]),
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
-function usePrevious(value) {
-  const ref = React.useRef()
-
-  React.useEffect(() => {
-    ref.current = value
-  }, [value])
-
-  return ref.current
-}
-
-function delayUntilNextTick(fn) {
-  setTimeout(fn, 0)
-}
+export default Item
