@@ -5,12 +5,12 @@ exports[`Storyshots Blur onMount example 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -33,14 +33,13 @@ exports[`Storyshots Blur onMount example 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -63,14 +62,13 @@ exports[`Storyshots Blur onMount example 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -93,10 +91,9 @@ exports[`Storyshots Blur onMount example 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -108,12 +105,12 @@ exports[`Storyshots customized styles item style 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -141,14 +138,13 @@ exports[`Storyshots customized styles item style 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -176,14 +172,13 @@ exports[`Storyshots customized styles item style 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -211,10 +206,9 @@ exports[`Storyshots customized styles item style 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -226,12 +220,12 @@ exports[`Storyshots disabled item 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -254,14 +248,13 @@ exports[`Storyshots disabled item 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -285,14 +278,13 @@ exports[`Storyshots disabled item 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -315,14 +307,13 @@ exports[`Storyshots disabled item 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -346,10 +337,9 @@ exports[`Storyshots disabled item 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -361,12 +351,12 @@ exports[`Storyshots disabled links 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -390,14 +380,13 @@ exports[`Storyshots disabled links 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -422,14 +411,13 @@ exports[`Storyshots disabled links 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -453,14 +441,13 @@ exports[`Storyshots disabled links 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -485,10 +472,9 @@ exports[`Storyshots disabled links 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -500,12 +486,12 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -529,14 +515,13 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -560,10 +545,9 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -575,12 +559,12 @@ exports[`Storyshots disabled nested 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -603,14 +587,13 @@ exports[`Storyshots disabled nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -649,10 +632,9 @@ exports[`Storyshots disabled nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -664,12 +646,12 @@ exports[`Storyshots disabled single, disabled 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-17a8jix=""
+      data-css-jqheje=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -693,10 +675,9 @@ exports[`Storyshots disabled single, disabled 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -708,12 +689,12 @@ exports[`Storyshots dividers edge 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -736,10 +717,9 @@ exports[`Storyshots dividers edge 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <div
@@ -754,12 +734,12 @@ exports[`Storyshots dividers sandwich 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -782,17 +762,16 @@ exports[`Storyshots dividers sandwich 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <div
       data-css-shsjok=""
     />
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -815,14 +794,13 @@ exports[`Storyshots dividers sandwich 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -845,10 +823,9 @@ exports[`Storyshots dividers sandwich 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -860,12 +837,12 @@ exports[`Storyshots link a w/ href 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -889,10 +866,9 @@ exports[`Storyshots link a w/ href 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -904,12 +880,12 @@ exports[`Storyshots menu items ellipses with icon 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -958,10 +934,9 @@ exports[`Storyshots menu items ellipses with icon 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -973,12 +948,12 @@ exports[`Storyshots menu items ellipsis 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1005,10 +980,9 @@ exports[`Storyshots menu items ellipsis 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -1020,12 +994,12 @@ exports[`Storyshots menu items long text 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1052,14 +1026,13 @@ exports[`Storyshots menu items long text 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1086,10 +1059,9 @@ exports[`Storyshots menu items long text 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -1101,12 +1073,12 @@ exports[`Storyshots menu items lots 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1130,14 +1102,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1161,14 +1132,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1192,14 +1162,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1223,14 +1192,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1254,14 +1222,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1285,14 +1252,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1316,14 +1282,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1347,14 +1312,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1378,14 +1342,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1409,14 +1372,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1440,14 +1402,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1471,14 +1432,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1502,14 +1462,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1533,14 +1492,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1564,14 +1522,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1595,14 +1552,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1626,14 +1582,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1657,14 +1612,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1688,14 +1642,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1719,14 +1672,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1750,14 +1702,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1781,14 +1732,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1812,14 +1762,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1843,14 +1792,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1874,14 +1822,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1905,14 +1852,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1936,14 +1882,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1967,14 +1912,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1998,14 +1942,13 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2029,10 +1972,9 @@ exports[`Storyshots menu items lots 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -2044,12 +1986,12 @@ exports[`Storyshots menu items multiple 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2072,14 +2014,13 @@ exports[`Storyshots menu items multiple 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2102,14 +2043,13 @@ exports[`Storyshots menu items multiple 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2132,10 +2072,9 @@ exports[`Storyshots menu items multiple 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -2147,12 +2086,12 @@ exports[`Storyshots menu items null item 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2175,14 +2114,13 @@ exports[`Storyshots menu items null item 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2205,10 +2143,9 @@ exports[`Storyshots menu items null item 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -2220,12 +2157,12 @@ exports[`Storyshots menu items one 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2248,10 +2185,9 @@ exports[`Storyshots menu items one 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -2263,12 +2199,12 @@ exports[`Storyshots menu items with icons 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2317,14 +2253,13 @@ exports[`Storyshots menu items with icons 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2373,14 +2308,13 @@ exports[`Storyshots menu items with icons 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2427,10 +2361,9 @@ exports[`Storyshots menu items with icons 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -2442,12 +2375,12 @@ exports[`Storyshots nested no origin 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2485,13 +2418,12 @@ exports[`Storyshots nested no origin 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       >
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2514,14 +2446,13 @@ exports[`Storyshots nested no origin 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           />
         </li>
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2559,13 +2490,12 @@ exports[`Storyshots nested no origin 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           >
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2588,14 +2518,13 @@ exports[`Storyshots nested no origin 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2618,14 +2547,13 @@ exports[`Storyshots nested no origin 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2648,10 +2576,9 @@ exports[`Storyshots nested no origin 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
           </ul>
@@ -2660,7 +2587,7 @@ exports[`Storyshots nested no origin 1`] = `
           data-css-shsjok=""
         />
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2683,14 +2610,13 @@ exports[`Storyshots nested no origin 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           />
         </li>
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2728,13 +2654,12 @@ exports[`Storyshots nested no origin 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           >
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2757,14 +2682,13 @@ exports[`Storyshots nested no origin 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2787,10 +2711,9 @@ exports[`Storyshots nested no origin 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
           </ul>
@@ -2798,7 +2721,7 @@ exports[`Storyshots nested no origin 1`] = `
       </ul>
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2821,10 +2744,9 @@ exports[`Storyshots nested no origin 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -2847,12 +2769,12 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
     }
   >
     <ul
-      data-css-sjidtt=""
+      data-css-1w2gzx5=""
       onKeyUp={[Function]}
       role="menu"
     >
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -2890,13 +2812,12 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-54qba0=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         >
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -2919,14 +2840,13 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -2964,13 +2884,12 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-54qba0=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -2993,14 +2912,13 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3023,14 +2941,13 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3053,10 +2970,9 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -3065,7 +2981,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3088,14 +3004,13 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3133,13 +3048,12 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-54qba0=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3162,14 +3076,13 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3192,10 +3105,9 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -3203,7 +3115,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         </ul>
       </li>
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3226,10 +3138,9 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-1sa7ihs=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         />
       </li>
     </ul>
@@ -3253,12 +3164,12 @@ exports[`Storyshots nested origin bottomRight 1`] = `
     }
   >
     <ul
-      data-css-sjidtt=""
+      data-css-i0cni4=""
       onKeyUp={[Function]}
       role="menu"
     >
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3296,13 +3207,12 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-1c2w3h6=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         >
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3325,14 +3235,13 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3370,13 +3279,12 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1c2w3h6=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3399,14 +3307,13 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3429,14 +3336,13 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3459,10 +3365,9 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -3471,7 +3376,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3494,14 +3399,13 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3539,13 +3443,12 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1c2w3h6=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3568,14 +3471,13 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3598,10 +3500,9 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -3609,7 +3510,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         </ul>
       </li>
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3632,10 +3533,9 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-1sa7ihs=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         />
       </li>
     </ul>
@@ -3659,12 +3559,12 @@ exports[`Storyshots nested origin topLeft 1`] = `
     }
   >
     <ul
-      data-css-sjidtt=""
+      data-css-ugmr4o=""
       onKeyUp={[Function]}
       role="menu"
     >
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3702,13 +3602,12 @@ exports[`Storyshots nested origin topLeft 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-1sa7ihs=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         >
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3731,14 +3630,13 @@ exports[`Storyshots nested origin topLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3776,13 +3674,12 @@ exports[`Storyshots nested origin topLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3805,14 +3702,13 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3835,14 +3731,13 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3865,10 +3760,9 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -3877,7 +3771,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3900,14 +3794,13 @@ exports[`Storyshots nested origin topLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3945,13 +3838,12 @@ exports[`Storyshots nested origin topLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3974,14 +3866,13 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4004,10 +3895,9 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -4015,7 +3905,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
         </ul>
       </li>
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -4038,10 +3928,9 @@ exports[`Storyshots nested origin topLeft 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-1sa7ihs=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         />
       </li>
     </ul>
@@ -4065,12 +3954,12 @@ exports[`Storyshots nested origin topRight 1`] = `
     }
   >
     <ul
-      data-css-sjidtt=""
+      data-css-rls1dj=""
       onKeyUp={[Function]}
       role="menu"
     >
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -4108,13 +3997,12 @@ exports[`Storyshots nested origin topRight 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-u8gp4l=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         >
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4137,14 +4025,13 @@ exports[`Storyshots nested origin topRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4182,13 +4069,12 @@ exports[`Storyshots nested origin topRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-u8gp4l=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4211,14 +4097,13 @@ exports[`Storyshots nested origin topRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4241,14 +4126,13 @@ exports[`Storyshots nested origin topRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4271,10 +4155,9 @@ exports[`Storyshots nested origin topRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -4283,7 +4166,7 @@ exports[`Storyshots nested origin topRight 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4306,14 +4189,13 @@ exports[`Storyshots nested origin topRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4351,13 +4233,12 @@ exports[`Storyshots nested origin topRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-u8gp4l=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             >
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4380,14 +4261,13 @@ exports[`Storyshots nested origin topRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
               <li
-                data-css-2mqpne=""
+                data-css-3810gd=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4410,10 +4290,9 @@ exports[`Storyshots nested origin topRight 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  data-css-4kkfaq=""
+                  data-css-1sa7ihs=""
                   onKeyDown={[Function]}
                   role="menu"
-                  style={Object {}}
                 />
               </li>
             </ul>
@@ -4421,7 +4300,7 @@ exports[`Storyshots nested origin topRight 1`] = `
         </ul>
       </li>
       <li
-        data-css-2mqpne=""
+        data-css-3810gd=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -4444,10 +4323,9 @@ exports[`Storyshots nested origin topRight 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-4kkfaq=""
+          data-css-1sa7ihs=""
           onKeyDown={[Function]}
           role="menu"
-          style={Object {}}
         />
       </li>
     </ul>
@@ -4460,12 +4338,12 @@ exports[`Storyshots onClick flat 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4488,14 +4366,13 @@ exports[`Storyshots onClick flat 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4518,14 +4395,13 @@ exports[`Storyshots onClick flat 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4548,10 +4424,9 @@ exports[`Storyshots onClick flat 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -4563,12 +4438,12 @@ exports[`Storyshots onClick nested 1`] = `
   data-css-12kxz7c=""
 >
   <ul
-    data-css-sjidtt=""
+    data-css-ugmr4o=""
     onKeyUp={[Function]}
     role="menu"
   >
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4591,14 +4466,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4636,13 +4510,12 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       >
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4665,14 +4538,13 @@ exports[`Storyshots onClick nested 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           />
         </li>
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4710,13 +4582,12 @@ exports[`Storyshots onClick nested 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           >
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4739,14 +4610,13 @@ exports[`Storyshots onClick nested 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4769,14 +4639,13 @@ exports[`Storyshots onClick nested 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4799,10 +4668,9 @@ exports[`Storyshots onClick nested 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
           </ul>
@@ -4811,7 +4679,7 @@ exports[`Storyshots onClick nested 1`] = `
           data-css-shsjok=""
         />
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4834,14 +4702,13 @@ exports[`Storyshots onClick nested 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           />
         </li>
         <li
-          data-css-2mqpne=""
+          data-css-3810gd=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4879,13 +4746,12 @@ exports[`Storyshots onClick nested 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            data-css-4kkfaq=""
+            data-css-1sa7ihs=""
             onKeyDown={[Function]}
             role="menu"
-            style={Object {}}
           >
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4908,14 +4774,13 @@ exports[`Storyshots onClick nested 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
             <li
-              data-css-2mqpne=""
+              data-css-3810gd=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4938,10 +4803,9 @@ exports[`Storyshots onClick nested 1`] = `
               </a>
               <ul
                 aria-expanded={false}
-                data-css-4kkfaq=""
+                data-css-1sa7ihs=""
                 onKeyDown={[Function]}
                 role="menu"
-                style={Object {}}
               />
             </li>
           </ul>
@@ -4949,7 +4813,7 @@ exports[`Storyshots onClick nested 1`] = `
       </ul>
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4972,14 +4836,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5002,14 +4865,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5032,14 +4894,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5062,14 +4923,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5092,14 +4952,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5122,14 +4981,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5152,14 +5010,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5182,14 +5039,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5212,14 +5068,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5242,14 +5097,13 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
     <li
-      data-css-2mqpne=""
+      data-css-3810gd=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5272,10 +5126,9 @@ exports[`Storyshots onClick nested 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        data-css-4kkfaq=""
+        data-css-1sa7ihs=""
         onKeyDown={[Function]}
         role="menu"
-        style={Object {}}
       />
     </li>
   </ul>
@@ -5326,12 +5179,12 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
         }
       >
         <ul
-          data-css-sjidtt=""
+          data-css-ugmr4o=""
           onKeyUp={[Function]}
           role="menu"
         >
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5354,14 +5207,13 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5384,14 +5236,13 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5414,10 +5265,9 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
         </ul>
@@ -5465,12 +5315,12 @@ exports[`Storyshots with Position BelowLeft 1`] = `
         }
       >
         <ul
-          data-css-sjidtt=""
+          data-css-ugmr4o=""
           onKeyUp={[Function]}
           role="menu"
         >
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5493,14 +5343,13 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5523,14 +5372,13 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5553,10 +5401,9 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
         </ul>
@@ -5604,12 +5451,12 @@ exports[`Storyshots with Position BelowRight 1`] = `
         }
       >
         <ul
-          data-css-sjidtt=""
+          data-css-ugmr4o=""
           onKeyUp={[Function]}
           role="menu"
         >
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5632,14 +5479,13 @@ exports[`Storyshots with Position BelowRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5662,14 +5508,13 @@ exports[`Storyshots with Position BelowRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
           <li
-            data-css-2mqpne=""
+            data-css-3810gd=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5692,10 +5537,9 @@ exports[`Storyshots with Position BelowRight 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-4kkfaq=""
+              data-css-1sa7ihs=""
               onKeyDown={[Function]}
               role="menu"
-              style={Object {}}
             />
           </li>
         </ul>

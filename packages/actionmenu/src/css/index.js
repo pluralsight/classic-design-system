@@ -10,6 +10,29 @@ import {
 
 import * as vars from '../vars/index.js'
 
+const menuOriginLeft = {
+  transform: `translate(calc(-100% + calc(-1 * ${layout.spacingXSmall})),0)`,
+  opacity: 0,
+  '&[aria-expanded="true"]': {
+    transform: 'translate(-100%, 0)',
+    opacity: 1
+  }
+}
+const menuOriginRight = {
+  transform: `translate(calc(100% + ${layout.spacingXSmall}), 0)`,
+  opacity: 0,
+  '&[aria-expanded="true"]': {
+    transform: 'translate(100%, 0)',
+    opacity: 1
+  }
+}
+const menuOriginTop = {
+  transform: `translate(0, calc(-1 * ${layout.spacingXSmall}))`
+}
+const menuOriginBottom = {
+  transform: `translate(0, ${layout.spacingXSmall})`
+}
+
 export default {
   '@keyframes psds-actionmenu__keyframes__slide': {
     '100%': {
@@ -18,7 +41,7 @@ export default {
     }
   },
 
-  '.psds-actionmenu': ({ slide }) => ({
+  '.psds-actionmenu': {
     display: 'inline-block',
     marginLeft: 0,
     background: colorsBackgroundLight[3],
@@ -29,11 +52,33 @@ export default {
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     fontSize: type.fontSizeSmall,
-    opacity: 0,
+    opacity: 0
+  },
+  '.psds-actionmenu__animation': ({ slide }) => ({
     animation: `${slide || 'psds-actionmenu__keyframes__slide'} ${
       motion.speedNormal
     } forwards`
   }),
+  [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
+    ...menuOriginTop,
+    right: 0,
+    top: 0
+  },
+  [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
+    ...menuOriginBottom,
+    bottom: 0,
+    right: 0
+  },
+  [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
+    ...menuOriginTop,
+    left: 0,
+    top: 0
+  },
+  [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
+    ...menuOriginBottom,
+    left: 0,
+    bottom: 0
+  },
   '.psds-actionmenu__item-container': {
     label: 'container',
     position: 'relative',
@@ -46,7 +91,7 @@ export default {
       background: colorsPrimaryAction.background,
       color: colorsTextIcon.highOnDark
     },
-    '&:focus > button [data-submenu-arrow]': {
+    '&:focus > :first-child [data-submenu-arrow]': {
       color: colorsTextIcon.highOnDark
     },
     '&:hover:not([disabled])': {
@@ -54,23 +99,42 @@ export default {
       color: colorsTextIcon.highOnLight
     },
     '&:hover > ul:not(:empty)': {
-      visibility: 'visible'
+      visibility: 'visible',
+      opacity: 1
     }
   },
   '.psds-actionmenu__nested': {
     label: 'subMenu',
-    visibility: 'hidden',
     display: 'inline-block',
     position: 'absolute',
     zIndex: 1,
-    top: 0,
-    left: '100%',
+    transition: `transform ${motion.speedNormal}, opacity ${motion.speedNormal}`,
     '&[aria-expanded="true"]': {
       visibility: 'visible'
     },
     '&[aria-expanded="false"]': {
       visibility: 'hidden'
     }
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
+    ...menuOriginRight,
+    right: 0,
+    top: `calc(-1 * ${vars.style.menuPaddingVert})`
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
+    ...menuOriginRight,
+    bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
+    right: 0
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
+    ...menuOriginLeft,
+    left: 0,
+    top: `calc(-1 * ${vars.style.menuPaddingVert})`
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
+    ...menuOriginLeft,
+    bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
+    left: 0
   },
   '.psds-actionmenu__item': {
     label: 'action-menuitem',

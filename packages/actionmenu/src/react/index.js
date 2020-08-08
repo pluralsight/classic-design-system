@@ -21,10 +21,12 @@ ActionMenu.propTypes = {
       PropTypes.oneOfType([elementOfType(Item), elementOfType(Divider)])
     )
   ]),
-  onClose: PropTypes.func
+  onClose: PropTypes.func,
+  origin: PropTypes.string
 }
 ActionMenu.defaultProps = {
-  onClose: () => {}
+  onClose: () => {},
+  origin: vars.origins.topLeft
 }
 export const origins = vars.origins
 

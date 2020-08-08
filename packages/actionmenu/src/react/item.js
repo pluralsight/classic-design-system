@@ -8,15 +8,12 @@ import React, {
   useContext
 } from 'react'
 
-import { calcNestedMenuPosition } from '../js/index.js'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
-
+import { origins } from '../vars/index.js'
 import { ActionMenuContext } from './menu.js'
 import Arrow from './arrow.js'
-const slide = css.keyframes(
-  stylesheet['@keyframes psds-actionmenu__keyframes__slide']
-)
+
 const styles = {
   itemContainer: ({ disabled }) =>
     compose(
@@ -34,10 +31,13 @@ const styles = {
       hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
     ),
   inner: _ => css(stylesheet['.psds-actionmenu__item-inner']),
-  nested: _ =>
+  nested: ({ origin }) =>
     compose(
-      css(stylesheet['.psds-actionmenu']({ slide })),
-      css(stylesheet['.psds-actionmenu__nested'])
+      css(stylesheet['.psds-actionmenu']),
+      css(stylesheet['.psds-actionmenu__nested']),
+      css(
+        stylesheet[`.psds-actionmenu__nested.psds-actionmenu--origin-${origin}`]
+      )
     ),
   textOnly: _ => css(stylesheet['.psds-actionmenu__text-only'])
 }
@@ -93,13 +93,6 @@ const Item = forwardRef(
       onClickContext && onClickContext(e, value)
       onClose && onClose(e, value)
     }
-    const subMenuAlignment = ref.current
-      ? calcNestedMenuPosition(
-          ref.current.getBoundingClientRect(),
-          subMenuRef.current.getBoundingClientRect(),
-          origin
-        )
-      : {}
     return (
       <li
         {...styles.itemContainer({ disabled })}
@@ -128,12 +121,11 @@ const Item = forwardRef(
         </TagName>
 
         <ul
-          {...styles.nested()}
+          {...styles.nested({ origin })}
           role="menu"
           aria-expanded={open}
           ref={subMenuRef}
           onKeyDown={handleArrowLeft}
-          style={{ ...subMenuAlignment }}
         >
           {!disabled && nested}
         </ul>
@@ -144,7 +136,8 @@ const Item = forwardRef(
 
 Item.displayName = 'ActionMenu.Item'
 Item.defaultProps = {
-  tagName: 'a'
+  tagName: 'a',
+  origin: origins.topLeft
 }
 Item.propTypes = {
   children: PropTypes.node,

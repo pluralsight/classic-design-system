@@ -213,7 +213,7 @@ storiesOf('Note/actions', module)
               <BelowLeft
                 when={isOpen}
                 show={
-                  <ActionMenu>
+                  <ActionMenu origin={ActionMenu.origins.topRight}>
                     <ActionMenu.Item>Edit</ActionMenu.Item>
                     <ActionMenu.Item>Delete</ActionMenu.Item>
                   </ActionMenu>

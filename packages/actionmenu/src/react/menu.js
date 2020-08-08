@@ -1,7 +1,7 @@
 // NOTE: proptypes linking Item is done in index.js to avoid circular menu-item dependency
 /* eslint react/prop-types: 0 */
 
-import { css } from 'glamor'
+import { css, compose } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import React, { useImperativeHandle, createContext } from 'react'
 import {
@@ -15,13 +15,16 @@ const slide = css.keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
 )
 
-const styles = {
-  menu: _ => css(stylesheet['.psds-actionmenu']({ slide }))
-}
+const styles = ({ origin }) =>
+  compose(
+    css(stylesheet['.psds-actionmenu']),
+    css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
+    css(stylesheet['.psds-actionmenu__animation']({ slide }))
+  )
 export const ActionMenuContext = createContext()
 
 const ActionMenu = React.forwardRef(
-  ({ onClick, onClose, children, ...props }, forwardedRef) => {
+  ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
     const ref = useMenuRef()
     useImperativeHandle(forwardedRef, () => ref.current)
     useCloseOnDocumentEvents(ref, onClose)
@@ -31,9 +34,10 @@ const ActionMenu = React.forwardRef(
         onClose()
       }
     }
+
     return (
       <ul
-        {...styles.menu(props)}
+        {...styles({ origin })}
         {...filterReactProps(props)}
         ref={ref}
         onKeyUp={handleKeyUp}
