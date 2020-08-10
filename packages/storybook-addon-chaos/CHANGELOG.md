@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-chaos@1.0.16...@pluralsight/ps-design-system-storybook-addon-chaos@1.0.17) (2020-08-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-chaos
+
+
+
+
+
 ## [1.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-chaos@1.0.15...@pluralsight/ps-design-system-storybook-addon-chaos@1.0.16) (2020-08-06)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-chaos

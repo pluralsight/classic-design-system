@@ -1,3 +1,4 @@
+@import './breakpoints.module.css';
 @import './colors.module.css';
 @import './layout.module.css';
 @import './type.module.css';
