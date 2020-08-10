@@ -11985,7 +11985,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
               >
                 Button: 
                 <ul
-                  data-css-ugmr4o=""
+                  data-css-rls1dj=""
                   onKeyUp={[Function]}
                   role="menu"
                   style={
@@ -11996,7 +11996,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   }
                 >
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12009,7 +12009,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12020,13 +12019,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12039,7 +12038,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12050,13 +12048,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12069,7 +12067,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12080,13 +12077,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12099,7 +12096,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12110,13 +12106,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12129,7 +12125,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12140,13 +12135,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12159,7 +12154,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12170,13 +12164,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12189,7 +12183,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12200,13 +12193,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12219,7 +12212,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12230,7 +12222,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
@@ -12248,7 +12240,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
               >
                 Link: 
                 <ul
-                  data-css-ugmr4o=""
+                  data-css-rls1dj=""
                   onKeyUp={[Function]}
                   role="menu"
                   style={
@@ -12259,7 +12251,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   }
                 >
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12272,7 +12264,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12283,13 +12274,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12302,7 +12293,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12313,13 +12303,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12332,7 +12322,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12343,13 +12332,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12362,7 +12351,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12373,13 +12361,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12392,7 +12380,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12403,13 +12390,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12422,7 +12409,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12433,13 +12419,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12452,7 +12438,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12463,13 +12448,13 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
                   </li>
                   <li
-                    data-css-3810gd=""
+                    data-css-dnlkcv=""
                     onKeyDown={[Function]}
                     onKeyUp={[Function]}
                     onMouseOut={[Function]}
@@ -12482,7 +12467,6 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                       data-css-19xgx8v=""
                       onClick={[Function]}
                       role="menuitem"
-                      tabIndex="-1"
                     >
                       <div
                         data-css-fxdh11=""
@@ -12493,7 +12477,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     </a>
                     <ul
                       aria-expanded={false}
-                      data-css-1sa7ihs=""
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
                       role="menu"
                     />
