@@ -6,6 +6,7 @@ exports[`Storyshots Blur onMount example 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -103,6 +104,7 @@ exports[`Storyshots customized styles item style 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -215,6 +217,7 @@ exports[`Storyshots disabled item 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -342,6 +345,7 @@ exports[`Storyshots disabled links 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -473,6 +477,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -544,6 +549,7 @@ exports[`Storyshots disabled nested 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -629,6 +635,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -671,6 +678,7 @@ exports[`Storyshots dividers edge 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -715,6 +723,7 @@ exports[`Storyshots dividers sandwich 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -815,6 +824,7 @@ exports[`Storyshots link a w/ href 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -857,6 +867,7 @@ exports[`Storyshots menu items ellipses with icon 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -921,6 +932,7 @@ exports[`Storyshots menu items ellipsis 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -966,6 +978,7 @@ exports[`Storyshots menu items long text 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -1043,6 +1056,7 @@ exports[`Storyshots menu items lots 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -1926,6 +1940,7 @@ exports[`Storyshots menu items multiple 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -2023,6 +2038,7 @@ exports[`Storyshots menu items null item 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -2092,6 +2108,7 @@ exports[`Storyshots menu items one 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -2133,6 +2150,7 @@ exports[`Storyshots menu items with icons 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -2297,6 +2315,7 @@ exports[`Storyshots nested no origin 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -2680,6 +2699,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
   >
     <ul
       data-css-1w2gzx5=""
+      onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
     >
@@ -3064,6 +3084,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
   >
     <ul
       data-css-i0cni4=""
+      onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
     >
@@ -3448,6 +3469,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
   >
     <ul
       data-css-ugmr4o=""
+      onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
     >
@@ -3832,6 +3854,7 @@ exports[`Storyshots nested origin topRight 1`] = `
   >
     <ul
       data-css-rls1dj=""
+      onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
     >
@@ -4205,6 +4228,7 @@ exports[`Storyshots onClick flat 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -4302,6 +4326,7 @@ exports[`Storyshots onClick nested 1`] = `
 >
   <ul
     data-css-rls1dj=""
+    onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
   >
@@ -5021,6 +5046,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
       >
         <ul
           data-css-ugmr4o=""
+          onKeyDown={[Function]}
           onKeyUp={[Function]}
           role="menu"
         >
@@ -5154,6 +5180,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
       >
         <ul
           data-css-rls1dj=""
+          onKeyDown={[Function]}
           onKeyUp={[Function]}
           role="menu"
         >
@@ -5287,6 +5314,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
       >
         <ul
           data-css-rls1dj=""
+          onKeyDown={[Function]}
           onKeyUp={[Function]}
           role="menu"
         >

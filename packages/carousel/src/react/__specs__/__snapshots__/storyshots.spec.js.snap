@@ -11986,6 +11986,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 Button: 
                 <ul
                   data-css-rls1dj=""
+                  onKeyDown={[Function]}
                   onKeyUp={[Function]}
                   role="menu"
                   style={
@@ -12241,6 +12242,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 Link: 
                 <ul
                   data-css-rls1dj=""
+                  onKeyDown={[Function]}
                   onKeyUp={[Function]}
                   role="menu"
                   style={

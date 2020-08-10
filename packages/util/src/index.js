@@ -14,10 +14,11 @@ export { useCombinedRefs } from './use-combined-refs.js'
 export { useResizeObserver } from './use-resize-observer.js'
 export { useToggle } from './use-toggle.js'
 export {
-  handleMenuKeyEvents,
+  handleMenuKeyDownEvents,
+  handleMenuKeyUpEvents,
   useMenuRef,
   searchListItem
-} from './menu-keyup-listener.js'
+} from './menu-key-listener.js'
 export {
   useCloseOnDocumentEvents,
   onGlobalEventsClose

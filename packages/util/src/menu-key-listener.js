@@ -76,12 +76,14 @@ const character = e => {
   }
 }
 
-export const handleMenuKeyEvents = e => {
-  e.key === 'ArrowRight'
-    ? rightArrow(e)
-    : e.key === 'ArrowLeft'
-    ? leftArrow(e)
-    : e.key === 'ArrowDown'
+export const handleMenuKeyUpEvents = e => {
+  e.key === 'ArrowRight' && rightArrow(e)
+  e.key === 'ArrowLeft' && leftArrow(e)
+  e.preventDefault()
+}
+
+export const handleMenuKeyDownEvents = e => {
+  e.key === 'ArrowDown'
     ? downArrow(e)
     : e.key === 'ArrowUp'
     ? upArrow(e)
