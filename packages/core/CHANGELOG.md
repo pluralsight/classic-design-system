@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.3.0...@pluralsight/ps-design-system-core@6.4.0) (2020-08-10)
+
+
+### Features
+
+* **core:** add breakpoint vars ([af14b66](https://github.com/pluralsight/design-system/commit/af14b6647d26343e53adc23ce93034fea0225ab0))
+
+
+
+
+
 # [6.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.2.1...@pluralsight/ps-design-system-core@6.3.0) (2020-07-17)
 
 
