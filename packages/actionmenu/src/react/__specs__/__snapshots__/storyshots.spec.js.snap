@@ -10,7 +10,7 @@ exports[`Storyshots Blur onMount example 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -23,7 +23,6 @@ exports[`Storyshots Blur onMount example 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -39,7 +38,7 @@ exports[`Storyshots Blur onMount example 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -52,7 +51,6 @@ exports[`Storyshots Blur onMount example 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -68,7 +66,7 @@ exports[`Storyshots Blur onMount example 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -81,7 +79,6 @@ exports[`Storyshots Blur onMount example 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -110,7 +107,7 @@ exports[`Storyshots customized styles item style 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -128,7 +125,6 @@ exports[`Storyshots customized styles item style 1`] = `
             "outline": "1px solid red",
           }
         }
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -144,7 +140,7 @@ exports[`Storyshots customized styles item style 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -162,7 +158,6 @@ exports[`Storyshots customized styles item style 1`] = `
             "outline": "1px solid blue",
           }
         }
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -178,7 +173,7 @@ exports[`Storyshots customized styles item style 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -196,7 +191,6 @@ exports[`Storyshots customized styles item style 1`] = `
             "outline": "1px solid green",
           }
         }
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -225,7 +219,7 @@ exports[`Storyshots disabled item 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -238,7 +232,6 @@ exports[`Storyshots disabled item 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -254,7 +247,7 @@ exports[`Storyshots disabled item 1`] = `
       />
     </li>
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -268,7 +261,6 @@ exports[`Storyshots disabled item 1`] = `
         disabled={true}
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -284,7 +276,7 @@ exports[`Storyshots disabled item 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -297,7 +289,6 @@ exports[`Storyshots disabled item 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -313,7 +304,7 @@ exports[`Storyshots disabled item 1`] = `
       />
     </li>
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -327,7 +318,6 @@ exports[`Storyshots disabled item 1`] = `
         disabled={true}
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -356,7 +346,7 @@ exports[`Storyshots disabled links 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -370,7 +360,6 @@ exports[`Storyshots disabled links 1`] = `
         href="https://duck.com"
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -386,7 +375,7 @@ exports[`Storyshots disabled links 1`] = `
       />
     </li>
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -401,7 +390,6 @@ exports[`Storyshots disabled links 1`] = `
         href="https://duck.com"
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -417,7 +405,7 @@ exports[`Storyshots disabled links 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -431,7 +419,6 @@ exports[`Storyshots disabled links 1`] = `
         href="https://duck.com"
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -447,7 +434,7 @@ exports[`Storyshots disabled links 1`] = `
       />
     </li>
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -462,7 +449,6 @@ exports[`Storyshots disabled links 1`] = `
         href="https://duck.com"
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -491,7 +477,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     role="menu"
   >
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -505,7 +491,6 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
         disabled={true}
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -521,7 +506,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
       />
     </li>
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -535,7 +520,6 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
         disabled={true}
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -564,7 +548,7 @@ exports[`Storyshots disabled nested 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -577,7 +561,6 @@ exports[`Storyshots disabled nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -593,7 +576,7 @@ exports[`Storyshots disabled nested 1`] = `
       />
     </li>
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -606,7 +589,6 @@ exports[`Storyshots disabled nested 1`] = `
         data-css-9yitgp=""
         disabled={true}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -651,7 +633,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
     role="menu"
   >
     <li
-      data-css-jqheje=""
+      data-css-16hzd1=""
       disabled={true}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
@@ -665,7 +647,6 @@ exports[`Storyshots disabled single, disabled 1`] = `
         disabled={true}
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -694,7 +675,7 @@ exports[`Storyshots dividers edge 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -707,7 +688,6 @@ exports[`Storyshots dividers edge 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -739,7 +719,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -752,7 +732,6 @@ exports[`Storyshots dividers sandwich 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -771,7 +750,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       data-css-shsjok=""
     />
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -784,7 +763,6 @@ exports[`Storyshots dividers sandwich 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -800,7 +778,7 @@ exports[`Storyshots dividers sandwich 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -813,7 +791,6 @@ exports[`Storyshots dividers sandwich 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -842,7 +819,7 @@ exports[`Storyshots link a w/ href 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -856,7 +833,6 @@ exports[`Storyshots link a w/ href 1`] = `
         href="https://duckduckgo.com"
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -885,7 +861,7 @@ exports[`Storyshots menu items ellipses with icon 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -898,7 +874,6 @@ exports[`Storyshots menu items ellipses with icon 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -953,7 +928,7 @@ exports[`Storyshots menu items ellipsis 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -966,7 +941,6 @@ exports[`Storyshots menu items ellipsis 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -999,7 +973,7 @@ exports[`Storyshots menu items long text 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1012,7 +986,6 @@ exports[`Storyshots menu items long text 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1032,7 +1005,7 @@ exports[`Storyshots menu items long text 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1045,7 +1018,6 @@ exports[`Storyshots menu items long text 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1078,7 +1050,7 @@ exports[`Storyshots menu items lots 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1091,7 +1063,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1108,7 +1079,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1121,7 +1092,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1138,7 +1108,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1151,7 +1121,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1168,7 +1137,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1181,7 +1150,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1198,7 +1166,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1211,7 +1179,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1228,7 +1195,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1241,7 +1208,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1258,7 +1224,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1271,7 +1237,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1288,7 +1253,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1301,7 +1266,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1318,7 +1282,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1331,7 +1295,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1348,7 +1311,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1361,7 +1324,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1378,7 +1340,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1391,7 +1353,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1408,7 +1369,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1421,7 +1382,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1438,7 +1398,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1451,7 +1411,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1468,7 +1427,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1481,7 +1440,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1498,7 +1456,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1511,7 +1469,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1528,7 +1485,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1541,7 +1498,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1558,7 +1514,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1571,7 +1527,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1588,7 +1543,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1601,7 +1556,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1618,7 +1572,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1631,7 +1585,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1648,7 +1601,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1661,7 +1614,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1678,7 +1630,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1691,7 +1643,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1708,7 +1659,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1721,7 +1672,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1738,7 +1688,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1751,7 +1701,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1768,7 +1717,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1781,7 +1730,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1798,7 +1746,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1811,7 +1759,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1828,7 +1775,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1841,7 +1788,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1858,7 +1804,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1871,7 +1817,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1888,7 +1833,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1901,7 +1846,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1918,7 +1862,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1931,7 +1875,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1948,7 +1891,7 @@ exports[`Storyshots menu items lots 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -1961,7 +1904,6 @@ exports[`Storyshots menu items lots 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -1991,7 +1933,7 @@ exports[`Storyshots menu items multiple 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2004,7 +1946,6 @@ exports[`Storyshots menu items multiple 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2020,7 +1961,7 @@ exports[`Storyshots menu items multiple 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2033,7 +1974,6 @@ exports[`Storyshots menu items multiple 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2049,7 +1989,7 @@ exports[`Storyshots menu items multiple 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2062,7 +2002,6 @@ exports[`Storyshots menu items multiple 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2091,7 +2030,7 @@ exports[`Storyshots menu items null item 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2104,7 +2043,6 @@ exports[`Storyshots menu items null item 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2120,7 +2058,7 @@ exports[`Storyshots menu items null item 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2133,7 +2071,6 @@ exports[`Storyshots menu items null item 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2162,7 +2099,7 @@ exports[`Storyshots menu items one 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2175,7 +2112,6 @@ exports[`Storyshots menu items one 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2204,7 +2140,7 @@ exports[`Storyshots menu items with icons 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2217,7 +2153,6 @@ exports[`Storyshots menu items with icons 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2259,7 +2194,7 @@ exports[`Storyshots menu items with icons 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2272,7 +2207,6 @@ exports[`Storyshots menu items with icons 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2314,7 +2248,7 @@ exports[`Storyshots menu items with icons 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2327,7 +2261,6 @@ exports[`Storyshots menu items with icons 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2380,7 +2313,7 @@ exports[`Storyshots nested no origin 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2392,7 +2325,6 @@ exports[`Storyshots nested no origin 1`] = `
         aria-haspopup={true}
         data-css-9yitgp=""
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2423,7 +2355,7 @@ exports[`Storyshots nested no origin 1`] = `
         role="menu"
       >
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2436,7 +2368,6 @@ exports[`Storyshots nested no origin 1`] = `
             data-css-19xgx8v=""
             onClick={[Function]}
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -2452,7 +2383,7 @@ exports[`Storyshots nested no origin 1`] = `
           />
         </li>
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2464,7 +2395,6 @@ exports[`Storyshots nested no origin 1`] = `
             aria-haspopup={true}
             data-css-9yitgp=""
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -2495,7 +2425,7 @@ exports[`Storyshots nested no origin 1`] = `
             role="menu"
           >
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2508,7 +2438,6 @@ exports[`Storyshots nested no origin 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -2524,7 +2453,7 @@ exports[`Storyshots nested no origin 1`] = `
               />
             </li>
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2537,7 +2466,6 @@ exports[`Storyshots nested no origin 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -2553,7 +2481,7 @@ exports[`Storyshots nested no origin 1`] = `
               />
             </li>
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2566,7 +2494,6 @@ exports[`Storyshots nested no origin 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -2587,7 +2514,7 @@ exports[`Storyshots nested no origin 1`] = `
           data-css-shsjok=""
         />
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2600,7 +2527,6 @@ exports[`Storyshots nested no origin 1`] = `
             data-css-19xgx8v=""
             onClick={[Function]}
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -2616,7 +2542,7 @@ exports[`Storyshots nested no origin 1`] = `
           />
         </li>
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -2628,7 +2554,6 @@ exports[`Storyshots nested no origin 1`] = `
             aria-haspopup={true}
             data-css-9yitgp=""
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -2659,7 +2584,7 @@ exports[`Storyshots nested no origin 1`] = `
             role="menu"
           >
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2672,7 +2597,6 @@ exports[`Storyshots nested no origin 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -2688,7 +2612,7 @@ exports[`Storyshots nested no origin 1`] = `
               />
             </li>
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -2701,7 +2625,6 @@ exports[`Storyshots nested no origin 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -2721,7 +2644,7 @@ exports[`Storyshots nested no origin 1`] = `
       </ul>
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -2734,7 +2657,6 @@ exports[`Storyshots nested no origin 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -2774,7 +2696,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       role="menu"
     >
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -2786,7 +2708,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           aria-haspopup={true}
           data-css-9yitgp=""
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -2817,7 +2738,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           role="menu"
         >
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -2830,7 +2751,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -2846,7 +2766,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -2858,7 +2778,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -2889,7 +2808,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -2902,7 +2821,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -2918,7 +2836,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -2931,7 +2849,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -2947,7 +2864,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -2960,7 +2877,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -2981,7 +2897,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -2994,7 +2910,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3010,7 +2925,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3022,7 +2937,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3053,7 +2967,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3066,7 +2980,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3082,7 +2995,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3095,7 +3008,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3115,7 +3027,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
         </ul>
       </li>
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3128,7 +3040,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           data-css-19xgx8v=""
           onClick={[Function]}
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -3169,7 +3080,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       role="menu"
     >
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3181,7 +3092,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           aria-haspopup={true}
           data-css-9yitgp=""
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -3212,7 +3122,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           role="menu"
         >
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3225,7 +3135,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3241,7 +3150,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3253,7 +3162,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3284,7 +3192,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3297,7 +3205,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3313,7 +3220,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3326,7 +3233,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3342,7 +3248,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3355,7 +3261,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3376,7 +3281,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3389,7 +3294,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3405,7 +3309,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3417,7 +3321,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3448,7 +3351,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3461,7 +3364,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3477,7 +3379,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3490,7 +3392,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3510,7 +3411,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
         </ul>
       </li>
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3523,7 +3424,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           data-css-19xgx8v=""
           onClick={[Function]}
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -3564,7 +3464,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
       role="menu"
     >
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3576,7 +3476,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
           aria-haspopup={true}
           data-css-9yitgp=""
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -3607,7 +3506,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
           role="menu"
         >
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3620,7 +3519,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3636,7 +3534,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3648,7 +3546,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3679,7 +3576,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3692,7 +3589,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3708,7 +3604,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3721,7 +3617,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3737,7 +3632,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3750,7 +3645,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3771,7 +3665,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3784,7 +3678,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3800,7 +3693,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -3812,7 +3705,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -3843,7 +3735,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3856,7 +3748,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3872,7 +3763,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -3885,7 +3776,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -3905,7 +3795,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
         </ul>
       </li>
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3918,7 +3808,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
           data-css-19xgx8v=""
           onClick={[Function]}
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -3959,7 +3848,7 @@ exports[`Storyshots nested origin topRight 1`] = `
       role="menu"
     >
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -3971,7 +3860,6 @@ exports[`Storyshots nested origin topRight 1`] = `
           aria-haspopup={true}
           data-css-9yitgp=""
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -4002,7 +3890,7 @@ exports[`Storyshots nested origin topRight 1`] = `
           role="menu"
         >
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4015,7 +3903,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -4031,7 +3918,7 @@ exports[`Storyshots nested origin topRight 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4043,7 +3930,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -4074,7 +3960,7 @@ exports[`Storyshots nested origin topRight 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4087,7 +3973,6 @@ exports[`Storyshots nested origin topRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -4103,7 +3988,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4116,7 +4001,6 @@ exports[`Storyshots nested origin topRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -4132,7 +4016,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4145,7 +4029,6 @@ exports[`Storyshots nested origin topRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -4166,7 +4049,7 @@ exports[`Storyshots nested origin topRight 1`] = `
             data-css-shsjok=""
           />
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4179,7 +4062,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -4195,7 +4077,7 @@ exports[`Storyshots nested origin topRight 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -4207,7 +4089,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               aria-haspopup={true}
               data-css-9yitgp=""
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -4238,7 +4119,7 @@ exports[`Storyshots nested origin topRight 1`] = `
               role="menu"
             >
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4251,7 +4132,6 @@ exports[`Storyshots nested origin topRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -4267,7 +4147,7 @@ exports[`Storyshots nested origin topRight 1`] = `
                 />
               </li>
               <li
-                data-css-3810gd=""
+                data-css-dnlkcv=""
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
                 onMouseOut={[Function]}
@@ -4280,7 +4160,6 @@ exports[`Storyshots nested origin topRight 1`] = `
                   data-css-19xgx8v=""
                   onClick={[Function]}
                   role="menuitem"
-                  tabIndex="-1"
                 >
                   <div
                     data-css-fxdh11=""
@@ -4300,7 +4179,7 @@ exports[`Storyshots nested origin topRight 1`] = `
         </ul>
       </li>
       <li
-        data-css-3810gd=""
+        data-css-dnlkcv=""
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         onMouseOut={[Function]}
@@ -4313,7 +4192,6 @@ exports[`Storyshots nested origin topRight 1`] = `
           data-css-19xgx8v=""
           onClick={[Function]}
           role="menuitem"
-          tabIndex="-1"
         >
           <div
             data-css-fxdh11=""
@@ -4343,7 +4221,7 @@ exports[`Storyshots onClick flat 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4356,7 +4234,6 @@ exports[`Storyshots onClick flat 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4372,7 +4249,7 @@ exports[`Storyshots onClick flat 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4385,7 +4262,6 @@ exports[`Storyshots onClick flat 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4401,7 +4277,7 @@ exports[`Storyshots onClick flat 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4414,7 +4290,6 @@ exports[`Storyshots onClick flat 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4443,7 +4318,7 @@ exports[`Storyshots onClick nested 1`] = `
     role="menu"
   >
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4456,7 +4331,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4472,7 +4346,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4484,7 +4358,6 @@ exports[`Storyshots onClick nested 1`] = `
         aria-haspopup={true}
         data-css-9yitgp=""
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4515,7 +4388,7 @@ exports[`Storyshots onClick nested 1`] = `
         role="menu"
       >
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4528,7 +4401,6 @@ exports[`Storyshots onClick nested 1`] = `
             data-css-19xgx8v=""
             onClick={[Function]}
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -4544,7 +4416,7 @@ exports[`Storyshots onClick nested 1`] = `
           />
         </li>
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4556,7 +4428,6 @@ exports[`Storyshots onClick nested 1`] = `
             aria-haspopup={true}
             data-css-9yitgp=""
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -4587,7 +4458,7 @@ exports[`Storyshots onClick nested 1`] = `
             role="menu"
           >
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4600,7 +4471,6 @@ exports[`Storyshots onClick nested 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -4616,7 +4486,7 @@ exports[`Storyshots onClick nested 1`] = `
               />
             </li>
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4629,7 +4499,6 @@ exports[`Storyshots onClick nested 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -4645,7 +4514,7 @@ exports[`Storyshots onClick nested 1`] = `
               />
             </li>
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4658,7 +4527,6 @@ exports[`Storyshots onClick nested 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -4679,7 +4547,7 @@ exports[`Storyshots onClick nested 1`] = `
           data-css-shsjok=""
         />
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4692,7 +4560,6 @@ exports[`Storyshots onClick nested 1`] = `
             data-css-19xgx8v=""
             onClick={[Function]}
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -4708,7 +4575,7 @@ exports[`Storyshots onClick nested 1`] = `
           />
         </li>
         <li
-          data-css-3810gd=""
+          data-css-dnlkcv=""
           onKeyDown={[Function]}
           onKeyUp={[Function]}
           onMouseOut={[Function]}
@@ -4720,7 +4587,6 @@ exports[`Storyshots onClick nested 1`] = `
             aria-haspopup={true}
             data-css-9yitgp=""
             role="menuitem"
-            tabIndex="-1"
           >
             <div
               data-css-fxdh11=""
@@ -4751,7 +4617,7 @@ exports[`Storyshots onClick nested 1`] = `
             role="menu"
           >
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4764,7 +4630,6 @@ exports[`Storyshots onClick nested 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -4780,7 +4645,7 @@ exports[`Storyshots onClick nested 1`] = `
               />
             </li>
             <li
-              data-css-3810gd=""
+              data-css-dnlkcv=""
               onKeyDown={[Function]}
               onKeyUp={[Function]}
               onMouseOut={[Function]}
@@ -4793,7 +4658,6 @@ exports[`Storyshots onClick nested 1`] = `
                 data-css-19xgx8v=""
                 onClick={[Function]}
                 role="menuitem"
-                tabIndex="-1"
               >
                 <div
                   data-css-fxdh11=""
@@ -4813,7 +4677,7 @@ exports[`Storyshots onClick nested 1`] = `
       </ul>
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4826,7 +4690,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4842,7 +4705,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4855,7 +4718,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4871,7 +4733,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4884,7 +4746,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4900,7 +4761,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4913,7 +4774,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4929,7 +4789,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4942,7 +4802,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4958,7 +4817,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -4971,7 +4830,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -4987,7 +4845,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5000,7 +4858,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -5016,7 +4873,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5029,7 +4886,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -5045,7 +4901,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5058,7 +4914,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -5074,7 +4929,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5087,7 +4942,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -5103,7 +4957,7 @@ exports[`Storyshots onClick nested 1`] = `
       />
     </li>
     <li
-      data-css-3810gd=""
+      data-css-dnlkcv=""
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       onMouseOut={[Function]}
@@ -5116,7 +4970,6 @@ exports[`Storyshots onClick nested 1`] = `
         data-css-19xgx8v=""
         onClick={[Function]}
         role="menuitem"
-        tabIndex="-1"
       >
         <div
           data-css-fxdh11=""
@@ -5184,7 +5037,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
           role="menu"
         >
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5197,7 +5050,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5213,7 +5065,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5226,7 +5078,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5242,7 +5093,7 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5255,7 +5106,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5320,7 +5170,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           role="menu"
         >
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5333,7 +5183,6 @@ exports[`Storyshots with Position BelowLeft 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5349,7 +5198,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5362,7 +5211,6 @@ exports[`Storyshots with Position BelowLeft 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5378,7 +5226,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5391,7 +5239,6 @@ exports[`Storyshots with Position BelowLeft 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5456,7 +5303,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
           role="menu"
         >
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5469,7 +5316,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5485,7 +5331,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5498,7 +5344,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""
@@ -5514,7 +5359,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
             />
           </li>
           <li
-            data-css-3810gd=""
+            data-css-dnlkcv=""
             onKeyDown={[Function]}
             onKeyUp={[Function]}
             onMouseOut={[Function]}
@@ -5527,7 +5372,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
               data-css-19xgx8v=""
               onClick={[Function]}
               role="menuitem"
-              tabIndex="-1"
             >
               <div
                 data-css-fxdh11=""

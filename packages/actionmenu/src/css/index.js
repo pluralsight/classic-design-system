@@ -94,6 +94,9 @@ export default {
     '&:focus > :first-child [data-submenu-arrow]': {
       color: colorsTextIcon.highOnDark
     },
+    '&:hover:focus > :first-child [data-submenu-arrow]': {
+      color: colorsTextIcon.highOnLight
+    },
     '&:hover:not([disabled])': {
       background: colorsBackgroundLight[2],
       color: colorsTextIcon.highOnLight

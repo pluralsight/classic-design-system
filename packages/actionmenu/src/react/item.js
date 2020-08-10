@@ -91,7 +91,7 @@ const Item = forwardRef(
     const handleClick = e => {
       onClick && onClick(e, value)
       onClickContext && onClickContext(e, value)
-      onClose && onClose(e, value)
+      onClose && onClose(e, value) // : e.currentTarget.parentNode.focus()
     }
     return (
       <li
@@ -111,7 +111,6 @@ const Item = forwardRef(
           aria-haspopup={!!nested}
           role="menuitem"
           disabled={disabled}
-          tabIndex="-1"
           onClick={!hasSubMenu ? handleClick : undefined}
         >
           <div className={className} {...styles.inner()}>
