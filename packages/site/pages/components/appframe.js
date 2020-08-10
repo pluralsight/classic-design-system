@@ -88,25 +88,30 @@ export default _ => (
       <br />
 
       <Code language="html">
-        {`<AppFrame
-  sidenav={<NavBar />}
-  topnav={<CustomTopNav />}
->
+        {`<AppFrame topnav={<TopNav />} sidenav={<CustomSideNav />}>
   {/* page content here */}
 </AppFrame>`}
       </Code>
 
-      <P>If needed, you can controlled the the sidenav open state.</P>
+      <P>If needed, you can control the the sidenav open state.</P>
       <Code language="html">
-        {`const [open, setOpen] = useState(false)
-const toggle = () => setOpen(!open)
+        {`const [sidenavOpen, setOpen] = useState(false)
 
-<AppFrame
-  sidenav={<CustomSideNav />}
-  topnav={<NavBar onMobileMenuClick={toggle} />}
->
-  {/* page content here */}
-</AppFrame>`}
+const close = () => setOpen(false)
+const open = () => setOpen(true)
+const toggle = sidenavOpen ? close : open
+
+return (
+  <AppFrame
+    onRequestSideNavClose={close}
+    onRequestSideNavOpen={open}
+    topnav={<TopNav onMobileMenuClick={toggle} />}
+    sidenav={<CustomSideNav />}
+    sidenavOpen={sidenavOpen}
+  >
+    {/* page content here */}
+  </AppFrame>
+)`}
       </Code>
     </Content>
   </Chrome>
