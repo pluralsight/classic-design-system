@@ -23,7 +23,7 @@ const styles = ({ origin }) =>
   )
 export const ActionMenuContext = createContext()
 
-const ActionMenu = React.forwardRef(
+export const ActionMenu = React.forwardRef(
   ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
     const ref = useMenuRef()
     useImperativeHandle(forwardedRef, () => ref.current)
@@ -53,6 +53,4 @@ const ActionMenu = React.forwardRef(
   }
 )
 
-ActionMenu.displayName = 'ActionMenu'
-
-export default ActionMenu
+ActionMenu.displayName = 'ActionMenu.Menu'

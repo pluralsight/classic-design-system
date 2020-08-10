@@ -8,7 +8,6 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 
 import ActionMenu from '../index.js'
-import { iconLeftStyle } from '../../vars/index.js'
 
 storiesOf('menu items', module)
   .add('one', _ => (
@@ -43,15 +42,21 @@ storiesOf('menu items', module)
   .add('with icons', _ => (
     <ActionMenu>
       <ActionMenu.Item>
-        <Icon.ChannelIcon style={iconLeftStyle} />
+        <ActionMenu.Icon marginLeft>
+          <Icon.ChannelIcon />
+        </ActionMenu.Icon>
         <ActionMenu.Ellipsis>One item</ActionMenu.Ellipsis>
       </ActionMenu.Item>
       <ActionMenu.Item>
-        <Icon.PathIcon style={iconLeftStyle} />
+        <ActionMenu.Icon marginLeft>
+          <Icon.PathIcon />
+        </ActionMenu.Icon>
         <ActionMenu.Ellipsis>Two item</ActionMenu.Ellipsis>
       </ActionMenu.Item>
       <ActionMenu.Item>
-        <Icon.ReportIcon style={iconLeftStyle} />
+        <ActionMenu.Icon marginLeft>
+          <Icon.ReportIcon />
+        </ActionMenu.Icon>
         <ActionMenu.Ellipsis>Three item</ActionMenu.Ellipsis>
       </ActionMenu.Item>
     </ActionMenu>
@@ -59,7 +64,9 @@ storiesOf('menu items', module)
   .add('ellipses with icon', _ => (
     <ActionMenu>
       <ActionMenu.Item>
-        <Icon.ChannelIcon style={iconLeftStyle} />
+        <ActionMenu.Icon marginLeft>
+          <Icon.ChannelIcon />
+        </ActionMenu.Icon>
         <ActionMenu.Ellipsis>
           One item that has text that goes on forever and onward into the
           universes yet to be

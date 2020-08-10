@@ -1,19 +1,17 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
-import { css } from 'glamor'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 
-import stylesheet from '../css/index.js'
-const styles = () => css(stylesheet[`.psds-dropdown__item__icon`])
-
-export const Item = ({ value, icon, children, ...rest }) => {
+export const Item = forwardRef(({ value, icon, children, ...rest }, ref) => {
   return (
-    <ActionMenu.Item tag="button" value={value} {...rest}>
-      {icon && <span {...styles()}>{icon}</span>}
+    <ActionMenu.Item ref={ref} tag="button" value={value} {...rest}>
+      <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
       <ActionMenu.Ellipsis>{children}</ActionMenu.Ellipsis>
     </ActionMenu.Item>
   )
-}
+})
+
+Item.displayName = 'Dropdown.Item'
 
 Item.propTypes = {
   children: PropTypes.string,

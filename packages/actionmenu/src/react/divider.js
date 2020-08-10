@@ -8,8 +8,8 @@ const styles = {
   divider: () => css(stylesheet['.psds-actionmenu__divider'])
 }
 
-const Divider = props => {
+export const Divider = props => {
   return <div {...styles.divider(props)} {...filterReactProps(props)} />
 }
 
-export default Divider
+Divider.displayName = 'ActionMenu.Divider'

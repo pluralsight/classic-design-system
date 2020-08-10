@@ -11,9 +11,3 @@ export const style = {
   menuPaddingVert: layout.spacingXXSmall,
   nestedMenuHorzOverlap: 0 // 3
 }
-
-export const iconLeftStyle = {
-  marginRight: layout.spacingXSmall,
-  display: 'inline-flex',
-  alignItems: 'center'
-}

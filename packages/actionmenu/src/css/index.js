@@ -146,9 +146,6 @@ export default {
     color: 'inherit',
     lineHeight: type.lineHeightExtra,
     fontWeight: type.fontWeightMedium,
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
     cursor: 'pointer',
     border: 'none',
     paddingTop: '0',
@@ -208,5 +205,15 @@ export default {
   },
   '.psds-actionmenu__item__arrow__svg': {
     fill: 'currentColor'
+  },
+  '.psds-actionmenu__icon': {
+    display: 'inline-flex',
+    alignItems: 'center'
+  },
+  '.psds-actionmenu__icon-left': {
+    marginRight: layout.spacingXSmall
+  },
+  '.psds-actionmenu__icon-right': {
+    marginLeft: layout.spacingXSmall
   }
 }

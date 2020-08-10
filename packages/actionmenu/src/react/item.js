@@ -12,7 +12,7 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
 import { origins } from '../vars/index.js'
 import { ActionMenuContext } from './menu.js'
-import Arrow from './arrow.js'
+import { Arrow } from './arrow.js'
 
 const styles = {
   itemContainer: ({ disabled }) =>
@@ -42,7 +42,7 @@ const styles = {
   textOnly: _ => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-const Item = forwardRef(
+export const Item = forwardRef(
   (
     {
       disabled,
@@ -118,7 +118,6 @@ const Item = forwardRef(
             {hasSubMenu && <Arrow />}
           </div>
         </TagName>
-
         <ul
           {...styles.nested({ origin })}
           role="menu"
@@ -151,5 +150,3 @@ Item.propTypes = {
   ]),
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
-
-export default Item
