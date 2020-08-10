@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^13.0.10",
+    "@pluralsight/ps-design-system-appframe": "*",
     "@pluralsight/ps-design-system-avatar": "^6.0.10",
     "@pluralsight/ps-design-system-badge": "^10.0.13",
     "@pluralsight/ps-design-system-banner": "^6.0.16",

@@ -11,6 +11,7 @@ export { whitelistProps } from './props.js'
 export { shallowCompare } from './shallow-compare.js'
 export { capitalize } from './string.js'
 export { useCombinedRefs } from './use-combined-refs.js'
+export { usePrevious } from './use-previous.js'
 export { useResizeObserver } from './use-resize-observer.js'
 export { useToggle } from './use-toggle.js'
 export {

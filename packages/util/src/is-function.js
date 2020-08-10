@@ -1,3 +1,3 @@
-export function isFunction(val) {
-  return typeof val === 'function'
+export function isFunction(fn) {
+  return typeof fn === 'function'
 }

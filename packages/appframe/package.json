@@ -1,0 +1,54 @@
+{
+  "name": "@pluralsight/ps-design-system-appframe",
+  "version": "1.0.0",
+  "description": "AppFrame UI Component for the Pluralsight Design System",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "run-s build:js build:cjs build:css",
+    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
+    "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
+    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
+    "build:watch": "npm run build:js -- --watch",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "dependencies": {
+    "@pluralsight/ps-design-system-button": "*",
+    "@pluralsight/ps-design-system-core": "*",
+    "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-scrollable": "*",
+    "@pluralsight/ps-design-system-util": "*",
+    "body-scroll-lock": "^3.0.3",
+    "exenv": "^1.2.2",
+    "focus-within": "^3.0.2",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "@pluralsight/ps-design-system-normalize": "^3.1.4",
+    "@pluralsight/ps-design-system-theme": "^3.0.2",
+    "glamor": "^2.x.x",
+    "react": ">=16.8.6 < 17.0.0"
+  },
+  "devDependencies": {
+    "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-button": "*",
+    "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-layout": "*",
+    "@pluralsight/ps-design-system-navbar": "*",
+    "@pluralsight/ps-design-system-navbrand": "*",
+    "@pluralsight/ps-design-system-navitem": "*",
+    "@pluralsight/ps-design-system-navuser": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
+    "@pluralsight/ps-design-system-text": "*",
+    "@pluralsight/ps-design-system-theme": "*",
+    "@pluralsight/ps-design-system-verticaltabs": "*"
+  }
+}

@@ -72,6 +72,7 @@ const NAV_CONFIG = [
     hrefPrefix: '/components',
     items: [
       { href: '/actionmenu', label: 'Action Menu' },
+      { href: '/appframe', label: 'App Frame' },
       { href: '/avatar', label: 'Avatar' },
       { href: '/badge', label: 'Badge' },
       { href: '/banner', label: 'Banner' },
