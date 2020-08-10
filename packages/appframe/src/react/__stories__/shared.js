@@ -134,7 +134,7 @@ export function MockContent() {
   )
 }
 export function SideNav(props) {
-  const { children, collapsed, hideLabels, sections, ...rest } = props
+  const { children, collapsed, sections, ...rest } = props
 
   return (
     <div {...rest}>
@@ -147,7 +147,7 @@ export function SideNav(props) {
               <SectionHeader collapsed={collapsed} title={header.title} />
             )}
 
-            <VerticalTabs forceCollapsed={collapsed} hideLabels={hideLabels}>
+            <VerticalTabs forceCollapsed={collapsed} hideLabels={collapsed}>
               {items.map(item => {
                 const { subItems = [] } = item
                 return (
@@ -187,9 +187,9 @@ export function SideNav(props) {
     </div>
   )
 }
+
 SideNav.defaultProps = {
   collapsed: false,
-  hideLabels: false,
   sections: [
     {
       header: {
@@ -233,7 +233,6 @@ SideNav.defaultProps = {
 SideNav.propTypes = {
   children: PropTypes.node,
   collapsed: PropTypes.bool.isRequired,
-  hideLabels: PropTypes.bool.isRequired,
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       header: PropTypes.shape({

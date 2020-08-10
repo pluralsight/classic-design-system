@@ -34,11 +34,7 @@ storiesOf('AppFrame|Examples', module).add('Skills', () => {
           return <TopNav items={topnavItems} onMobileMenuClick={toggle} />
         }}
         sidenav={({ visible }) => (
-          <SideNav
-            collapsed={!visible}
-            hideLabels={!visible}
-            sections={sidenavSections}
-          />
+          <SideNav collapsed={!visible} sections={sidenavSections} />
         )}
       >
         <MockContent />

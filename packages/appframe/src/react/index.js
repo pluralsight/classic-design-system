@@ -284,7 +284,7 @@ function TopNav(props) {
 
   return (
     <Theme name={Theme.names.dark}>
-      <div data-ps-appframe-topnav {...styles.topnav()} {...rest}>
+      <div {...styles.topnav()} {...rest}>
         {isFunction(children) ? children(meta) : children}
       </div>
     </Theme>

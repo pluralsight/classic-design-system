@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
 
-import Button from '@pluralsight/ps-design-system-button'
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -24,31 +23,21 @@ storiesOf('AppFrame', module)
   ))
   .add('sidenav controlled', _ => {
     function Story() {
-      const [open, setOpen] = useState(false)
-      const toggle = () => setOpen(!open)
+      const [sidenavOpen, setOpen] = useState(false)
+
+      const close = () => setOpen(false)
+      const open = () => setOpen(true)
+      const toggle = sidenavOpen ? close : open
 
       return (
         <AppFrame
-          onRequestSideNavClose={() => setOpen(false)}
-          onRequestSideNavOpen={() => setOpen(true)}
+          onRequestSideNavClose={close}
+          onRequestSideNavOpen={open}
           topnav={<TopNav onMobileMenuClick={toggle} />}
-          sidenav={({ visible }) => (
-            <SideNav collapsed={!visible} hideLabels={!visible} />
-          )}
-          sidenavOpen={open}
+          sidenav={({ visible }) => <SideNav collapsed={!visible} />}
+          sidenavOpen={sidenavOpen}
         >
-          <PageWidthLayout>
-            <div
-              style={{
-                alignItems: 'center',
-                display: 'flex',
-                justifyContent: 'center',
-                minHeight: 'calc(100vh - 56px)'
-              }}
-            >
-              <Button onClick={toggle}>toggle sidenav</Button>
-            </div>
-          </PageWidthLayout>
+          <MockContent />
         </AppFrame>
       )
     }
@@ -61,16 +50,14 @@ storiesOf('AppFrame', module)
         const toggle = sidenavOpen ? closeSidenav : openSidenav
         return <TopNav onMobileMenuClick={toggle} />
       }}
-      sidenav={({ visible }) => (
-        <SideNav collapsed={!visible} hideLabels={!visible} />
-      )}
+      sidenav={({ visible }) => <SideNav collapsed={!visible} />}
     >
       <MockContent />
     </AppFrame>
   ))
   .add('short content', _ => (
     <AppFrame
-      sidenav={<SideNav collapsed hideLabels />}
+      sidenav={<SideNav collapsed />}
       sidenavOpen={false}
       topnav={<TopNav />}
     >
