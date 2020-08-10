@@ -136,7 +136,7 @@ const Item = forwardRef(
 Item.displayName = 'ActionMenu.Item'
 Item.defaultProps = {
   tagName: 'a',
-  origin: origins.topLeft
+  origin: origins.topRight
 }
 Item.propTypes = {
   children: PropTypes.node,

@@ -17,7 +17,7 @@ describe('ActionMenu', () => {
     expect(el).toBe(refToForward.current)
   })
 
-  it('fires onChange on option click', () => {
+  it('fires onClick on option click', () => {
     return new Promise(resolve => {
       function handleClick(evt, value) {
         expect(value).toEqual('two')
@@ -46,7 +46,7 @@ describe('ActionMenu', () => {
     })
   })
 
-  it('fires onChange on option keyPress', () => {
+  it('fires onClick on option keyUp', () => {
     return new Promise(resolve => {
       function handleClick(evt, value) {
         expect(value).toEqual('two')
