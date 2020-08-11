@@ -10,11 +10,21 @@ import {
 
 import * as vars from '../vars/index.js'
 
-const menuOriginRight = {
-  transform: `translate(${layout.spacingXSmall}, 0)`
-}
 const menuOriginLeft = {
-  transform: `translate(calc(-1 * ${layout.spacingXSmall}), 0)`
+  transform: `translate(calc(-100% + calc(-1 * ${layout.spacingXSmall})),0)`,
+  opacity: 0,
+  '&[aria-expanded="true"]': {
+    transform: 'translate(-100%, 0)',
+    opacity: 1
+  }
+}
+const menuOriginRight = {
+  transform: `translate(calc(100% + ${layout.spacingXSmall}), 0)`,
+  opacity: 0,
+  '&[aria-expanded="true"]': {
+    transform: 'translate(100%, 0)',
+    opacity: 1
+  }
 }
 const menuOriginTop = {
   transform: `translate(0, calc(-1 * ${layout.spacingXSmall}))`
@@ -31,8 +41,7 @@ export default {
     }
   },
 
-  '.psds-actionmenu': ({ slide }) => ({
-    position: 'absolute',
+  '.psds-actionmenu': {
     display: 'inline-block',
     marginLeft: 0,
     background: colorsBackgroundLight[3],
@@ -43,12 +52,13 @@ export default {
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     fontSize: type.fontSizeSmall,
-    opacity: 0,
+    opacity: 0
+  },
+  '.psds-actionmenu__animation': ({ slide }) => ({
     animation: `${slide || 'psds-actionmenu__keyframes__slide'} ${
       motion.speedNormal
     } forwards`
   }),
-
   [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
     ...menuOriginTop,
     right: 0,
@@ -69,62 +79,94 @@ export default {
     left: 0,
     bottom: 0
   },
-
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topRight}`]: menuOriginRight,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: menuOriginRight,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: menuOriginLeft,
-  [`.psds-actionmenu--nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: menuOriginLeft,
-
   '.psds-actionmenu__item-container': {
-    position: 'relative'
+    label: 'container',
+    position: 'relative',
+    transition: `background ${motion.speedXFast}`,
+    color: colorsTextIcon.highOnLight,
+    '&:hover, &:focus': {
+      outline: 'none'
+    },
+    '&:focus': {
+      background: colorsPrimaryAction.background,
+      color: colorsTextIcon.highOnDark
+    },
+    '&:focus > :first-child [data-submenu-arrow]': {
+      color: colorsTextIcon.highOnDark
+    },
+    '&:hover:focus > :first-child [data-submenu-arrow]': {
+      color: colorsTextIcon.highOnLight
+    },
+    '&:hover:not([disabled])': {
+      background: colorsBackgroundLight[2],
+      color: colorsTextIcon.highOnLight
+    },
+    '&:hover > ul:not(:empty)': {
+      visibility: 'visible',
+      opacity: 1
+    }
   },
-
+  '.psds-actionmenu__nested': {
+    label: 'subMenu',
+    display: 'inline-block',
+    position: 'absolute',
+    zIndex: 1,
+    transition: `transform ${motion.speedNormal}, opacity ${motion.speedNormal}`,
+    '&[aria-expanded="true"]': {
+      visibility: 'visible'
+    },
+    '&[aria-expanded="false"]': {
+      visibility: 'hidden'
+    }
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
+    ...menuOriginRight,
+    right: 0,
+    top: `calc(-1 * ${vars.style.menuPaddingVert})`
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
+    ...menuOriginRight,
+    bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
+    right: 0
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
+    ...menuOriginLeft,
+    left: 0,
+    top: `calc(-1 * ${vars.style.menuPaddingVert})`
+  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
+    ...menuOriginLeft,
+    bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
+    left: 0
+  },
   '.psds-actionmenu__item': {
-    display: 'flex',
+    label: 'action-menuitem',
+    display: 'inline-block',
     width: '100%',
-    alignItems: 'center',
+    color: 'inherit',
     lineHeight: type.lineHeightExtra,
     fontWeight: type.fontWeightMedium,
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    textAlign: 'left',
     cursor: 'pointer',
     border: 'none',
     paddingTop: '0',
     paddingBottom: '0',
     paddingLeft: layout.spacingMedium,
     paddingRight: layout.spacingMedium,
-    color: colorsTextIcon.highOnLight,
     background: 'none',
-    textDecoration: 'none',
-    transition: `background ${motion.speedXFast}`
+    textDecoration: 'none'
   },
 
   '.psds-actionmenu__item-inner': {
-    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'left',
+    minWidth: 0
+  },
+
+  '.psds-actionmenu__ellipsis': {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis'
-  },
-
-  '.psds-actionmenu__item:focus': {
-    background: colorsBackgroundLight[2],
-    outline: 'none',
-    color: colorsTextIcon.highOnLight
-  },
-  '.psds-actionmenu__item--focus-keyboard': {
-    background: colorsPrimaryAction.background,
-    outline: 'none',
-    color: colorsTextIcon.highOnDark
-  },
-
-  '.psds-actionmenu__item--link': {
-    color: colorsTextIcon.highOnLight
-  },
-
-  '.psds-actionmenu__item--icon': {
-    paddingLeft: layout.spacingXSmall
   },
 
   '.psds-actionmenu__item--nested': {
@@ -139,7 +181,8 @@ export default {
   '.psds-actionmenu__item--disabled': {
     opacity: '50%',
     cursor: 'auto',
-    outline: 'none'
+    outline: 'none',
+    pointerEvents: 'none'
   },
 
   '.psds-actionmenu__divider': {
@@ -160,10 +203,17 @@ export default {
     marginLeft: 'auto',
     paddingLeft: layout.spacingXSmall
   },
-  '.psds-actionmenu__item__arrow--focus-keyboard': {
-    color: colorsTextIcon.highOnDark
-  },
   '.psds-actionmenu__item__arrow__svg': {
     fill: 'currentColor'
+  },
+  '.psds-actionmenu__icon': {
+    display: 'inline-flex',
+    alignItems: 'center'
+  },
+  '.psds-actionmenu__icon-left': {
+    marginRight: layout.spacingXSmall
+  },
+  '.psds-actionmenu__icon-right': {
+    marginLeft: layout.spacingXSmall
   }
 }

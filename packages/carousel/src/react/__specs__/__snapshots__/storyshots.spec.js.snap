@@ -11984,9 +11984,10 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 data-css-1kybs28=""
               >
                 Button: 
-                <div
-                  data-css-1x8y3e3=""
+                <ul
+                  data-css-rls1dj=""
                   onKeyDown={[Function]}
+                  onKeyUp={[Function]}
                   role="menu"
                   style={
                     Object {
@@ -11995,175 +11996,239 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     }
                   }
                 >
-                  <div
-                    data-css-13azwyo=""
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
                   >
-                    <button
+                    <a
                       aria-haspopup={false}
-                      data-css-1c2ffua=""
+                      data-css-1v7ok0h=""
                       onClick={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onMouseOver={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         0
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         1
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         2
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         3
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         4
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         5
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         6
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         7
-                      </span>
-                    </button>
-                  </div>
-                </div>
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
+                      onKeyDown={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                </ul>
               </button>
               <p
                 data-css-1hmiaa7=""
@@ -12175,9 +12240,10 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 href="https://duckduckgo.com/"
               >
                 Link: 
-                <div
-                  data-css-1x8y3e3=""
+                <ul
+                  data-css-rls1dj=""
                   onKeyDown={[Function]}
+                  onKeyUp={[Function]}
                   role="menu"
                   style={
                     Object {
@@ -12186,175 +12252,239 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     }
                   }
                 >
-                  <div
-                    data-css-13azwyo=""
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
                   >
-                    <button
+                    <a
                       aria-haspopup={false}
-                      data-css-1c2ffua=""
+                      data-css-1v7ok0h=""
                       onClick={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onMouseOver={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         0
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         1
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         2
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         3
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         4
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         5
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         6
-                      </span>
-                    </button>
-                  </div>
-                  <div
-                    data-css-13azwyo=""
-                  >
-                    <button
-                      aria-haspopup={false}
-                      data-css-mka67z=""
-                      onClick={[Function]}
-                      onFocus={[Function]}
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
                       onKeyDown={[Function]}
-                      onMouseOver={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                  <li
+                    data-css-dnlkcv=""
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    role="none"
+                    tabIndex="-1"
+                  >
+                    <a
+                      aria-haspopup={false}
+                      data-css-1v7ok0h=""
+                      onClick={[Function]}
                       role="menuitem"
-                      tabIndex="0"
                     >
-                      <span
-                        data-css-3fe0zw=""
+                      <div
+                        data-css-fxdh11=""
                       >
                         item: 
                         7
-                      </span>
-                    </button>
-                  </div>
-                </div>
+                      </div>
+                    </a>
+                    <ul
+                      aria-expanded={false}
+                      data-css-u8gp4l=""
+                      onKeyDown={[Function]}
+                      role="menu"
+                    />
+                  </li>
+                </ul>
               </a>
                
             </div>

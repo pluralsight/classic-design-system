@@ -2611,7 +2611,7 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
               aria-hidden={true}
               data-css-1pnvt9=""
             >
-              The longest in el mundo. Find me!
+              Short enough
             </span>
             <span
               data-css-1yk08w2=""

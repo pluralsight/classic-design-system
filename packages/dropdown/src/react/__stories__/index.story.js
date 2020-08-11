@@ -2,8 +2,6 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
 import React from 'react'
-
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
@@ -101,11 +99,11 @@ storiesOf('whitelist', module)
             placeholder="Change me"
             label="Thing to change"
             menu={
-              <ActionMenu>
-                <ActionMenu.Item value="one">One item</ActionMenu.Item>
-                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
-                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
-              </ActionMenu>
+              <>
+                <Dropdown.Item value="one">One item</Dropdown.Item>
+                <Dropdown.Item value="two">Two item</Dropdown.Item>
+                <Dropdown.Item value="three">Three item</Dropdown.Item>
+              </>
             }
             onChange={handleChange}
             value={value}
@@ -135,11 +133,11 @@ storiesOf('whitelist', module)
             placeholder="Change me"
             label="Thing to change"
             menu={
-              <ActionMenu>
-                <ActionMenu.Item value="one">One item</ActionMenu.Item>
-                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
-                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
-              </ActionMenu>
+              <>
+                <Dropdown.Item value="one">One item</Dropdown.Item>
+                <Dropdown.Item value="two">Two item</Dropdown.Item>
+                <Dropdown.Item value="three">Three item</Dropdown.Item>
+              </>
             }
             onChange={handleChange}
             value={value}
@@ -199,13 +197,13 @@ storiesOf('layouts', module)
             label="Width 150"
             style={{ width: 150 }}
             menu={
-              <ActionMenu>
-                <ActionMenu.Item value="one">
+              <>
+                <Dropdown.Item value="one">
                   One item One item One item One item One item One item
-                </ActionMenu.Item>
-                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
-                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
-              </ActionMenu>
+                </Dropdown.Item>
+                <Dropdown.Item value="two">Two item</Dropdown.Item>
+                <Dropdown.Item value="three">Three item</Dropdown.Item>
+              </>
             }
             onChange={handleChange}
             value={value}
@@ -214,13 +212,13 @@ storiesOf('layouts', module)
             placeholder="Change me"
             label="Width determined by longest item"
             menu={
-              <ActionMenu>
-                <ActionMenu.Item value="one">
+              <>
+                <Dropdown.Item value="one">
                   One item One item One item One item One item One item
-                </ActionMenu.Item>
-                <ActionMenu.Item value="two">Two item</ActionMenu.Item>
-                <ActionMenu.Item value="three">Three item</ActionMenu.Item>
-              </ActionMenu>
+                </Dropdown.Item>
+                <Dropdown.Item value="two">Two item</Dropdown.Item>
+                <Dropdown.Item value="three">Three item</Dropdown.Item>
+              </>
             }
             onChange={handleChange}
             value={value}
@@ -235,11 +233,11 @@ storiesOf('placeholder', module).add('as pre-selected item', _ => (
   <Dropdown
     placeholder="Two item"
     menu={
-      <ActionMenu>
-        <ActionMenu.Item>One item</ActionMenu.Item>
-        <ActionMenu.Item>Two item</ActionMenu.Item>
-        <ActionMenu.Item>Three item</ActionMenu.Item>
-      </ActionMenu>
+      <>
+        <Dropdown.Item>One item</Dropdown.Item>
+        <Dropdown.Item>Two item</Dropdown.Item>
+        <Dropdown.Item>Three item</Dropdown.Item>
+      </>
     }
   />
 ))
@@ -249,12 +247,12 @@ storiesOf('menu', module)
     <Dropdown
       label="Level"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-          <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item>Three and the amazing item</ActionMenu.Item>
-        </ActionMenu>
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item>Three and the amazing item</Dropdown.Item>
+        </>
       }
     />
   ))
@@ -263,12 +261,12 @@ storiesOf('menu', module)
       label="Level"
       subLabel="The course level"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-          <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item>Three and the amazing item</ActionMenu.Item>
-        </ActionMenu>
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item>Three and the amazing item</Dropdown.Item>
+        </>
       }
     />
   ))
@@ -277,14 +275,14 @@ storiesOf('menu', module)
       label="Level"
       placeholder="Select one"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-          <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item icon={<Icon.CheckIcon />}>
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item icon={<Icon.CheckIcon />}>
             Three and the amazing item
-          </ActionMenu.Item>
-        </ActionMenu>
+          </Dropdown.Item>
+        </>
       }
     />
   ))
@@ -292,13 +290,13 @@ storiesOf('menu', module)
     <Dropdown
       label="Level"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-          <ActionMenu.Divider />
-          <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item>Three and the amazing item</ActionMenu.Item>
-        </ActionMenu>
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item>Three and the amazing item</Dropdown.Item>
+        </>
       }
     />
   ))
@@ -309,14 +307,12 @@ storiesOf('menu', module)
           label="Level"
           placeholder="Select one"
           menu={
-            <ActionMenu>
-              <ActionMenu.Item>One item</ActionMenu.Item>
-              <ActionMenu.Item>Two item</ActionMenu.Item>
-              <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon.CheckIcon />}>
-                Three and the amazing item
-              </ActionMenu.Item>
-            </ActionMenu>
+            <>
+              <Dropdown.Item>One item</Dropdown.Item>
+              <Dropdown.Item>Two item</Dropdown.Item>
+              <Dropdown.Item>Three item</Dropdown.Item>
+              <Dropdown.Item>Three and the amazing item</Dropdown.Item>
+            </>
           }
         />
       </div>
@@ -325,14 +321,14 @@ storiesOf('menu', module)
           label="Level"
           placeholder="Select another one"
           menu={
-            <ActionMenu>
-              <ActionMenu.Item>One item</ActionMenu.Item>
-              <ActionMenu.Item>Two item</ActionMenu.Item>
-              <ActionMenu.Item>Three item</ActionMenu.Item>
-              <ActionMenu.Item icon={<Icon.CheckIcon />}>
+            <>
+              <Dropdown.Item>One item</Dropdown.Item>
+              <Dropdown.Item>Two item</Dropdown.Item>
+              <Dropdown.Item>Three item</Dropdown.Item>
+              <Dropdown.Item icon={<Icon.CheckIcon />}>
                 Three and the amazing item
-              </ActionMenu.Item>
-            </ActionMenu>
+              </Dropdown.Item>
+            </>
           }
         />
       </div>
@@ -342,12 +338,12 @@ storiesOf('menu', module)
     <Dropdown
       label="Level"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>
+        <>
+          <Dropdown.Item>
             This level really is the longest level that anyone has ever seen.
             There is none longer
-          </ActionMenu.Item>
-        </ActionMenu>
+          </Dropdown.Item>
+        </>
       }
     />
   ))
@@ -356,23 +352,23 @@ storiesOf('menu', module)
       label="Level"
       placeholder="Select another one"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-          <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item
-            icon={<Icon.CheckIcon />}
-            nested={
-              <ActionMenu>
-                <ActionMenu.Item>3 - One item</ActionMenu.Item>
-                <ActionMenu.Item>3 - Two item</ActionMenu.Item>
-                <ActionMenu.Item>3 - Three item</ActionMenu.Item>
-              </ActionMenu>
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item
+            menu={
+              <>
+                <Dropdown.Item>3 - One item</Dropdown.Item>
+                <Dropdown.Item>3 - Two item</Dropdown.Item>
+                <Dropdown.Item>3 - Three item</Dropdown.Item>
+              </>
             }
+            icon={<Icon.CheckIcon />}
           >
             Three and the amazing item
-          </ActionMenu.Item>
-        </ActionMenu>
+          </Dropdown.Item>
+        </>
       }
     />
   ))
@@ -383,31 +379,29 @@ storiesOf('menu', module)
       placeholder="Select another one"
       error
       menu={
-        <ActionMenu>
-          <ActionMenu.Item onClick={action('one')}>One item</ActionMenu.Item>
-          <ActionMenu.Item onClick={action('two')}>Two item</ActionMenu.Item>
-          <ActionMenu.Item onClick={action('three')}>
-            Three item
-          </ActionMenu.Item>
-          <ActionMenu.Item
-            icon={<Icon.CheckIcon />}
-            nested={
-              <ActionMenu>
-                <ActionMenu.Item onClick={action('three - One')}>
+        <>
+          <Dropdown.Item onClick={action('one')}>One item</Dropdown.Item>
+          <Dropdown.Item onClick={action('two')}>Two item</Dropdown.Item>
+          <Dropdown.Item onClick={action('three')}>Three item</Dropdown.Item>
+          <Dropdown.Item
+            menu={
+              <>
+                <Dropdown.Item onClick={action('three - One')}>
                   3 - One item
-                </ActionMenu.Item>
-                <ActionMenu.Item onClick={action('three - Two')}>
+                </Dropdown.Item>
+                <Dropdown.Item onClick={action('three - Two')}>
                   3 - Two item
-                </ActionMenu.Item>
-                <ActionMenu.Item onClick={action('three -  Three')}>
+                </Dropdown.Item>
+                <Dropdown.Item onClick={action('three -  Three')}>
                   3 - Three item
-                </ActionMenu.Item>
-              </ActionMenu>
+                </Dropdown.Item>
+              </>
             }
+            icon={<Icon.CheckIcon />}
           >
             Three and the amazing item
-          </ActionMenu.Item>
-        </ActionMenu>
+          </Dropdown.Item>
+        </>
       }
     />
   ))
@@ -416,10 +410,10 @@ storiesOf('menu', module)
       label="Level"
       placeholder="This one is longer than any menu item"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-        </ActionMenu>
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+        </>
       }
     />
   ))
@@ -427,30 +421,30 @@ storiesOf('menu', module)
     <Dropdown
       label="Level"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>Short</ActionMenu.Item>
-          <ActionMenu.Item
-            nested={
-              <ActionMenu>
-                <ActionMenu.Item
-                  nested={
-                    <ActionMenu>
-                      <ActionMenu.Item>This is pretty longest</ActionMenu.Item>
-                      <ActionMenu.Item>
+        <>
+          <Dropdown.Item>Short</Dropdown.Item>
+          <Dropdown.Item
+            menu={
+              <>
+                <Dropdown.Item
+                  menu={
+                    <>
+                      <Dropdown.Item>This is pretty longest</Dropdown.Item>
+                      <Dropdown.Item>
                         The longest in el mundo. Find me!
-                      </ActionMenu.Item>
-                    </ActionMenu>
+                      </Dropdown.Item>
+                    </>
                   }
                 >
                   Longer and longer
-                </ActionMenu.Item>
-                <ActionMenu.Item>This one is longer</ActionMenu.Item>
-              </ActionMenu>
+                </Dropdown.Item>
+                <Dropdown.Item>This one is longer</Dropdown.Item>
+              </>
             }
           >
             Short enough
-          </ActionMenu.Item>
-        </ActionMenu>
+          </Dropdown.Item>
+        </>
       }
     />
   ))
@@ -460,9 +454,9 @@ storiesOf('props whitelist', module).add('title', _ => (
     title="This title should be present"
     label="Level"
     menu={
-      <ActionMenu>
-        <ActionMenu.Item>One item</ActionMenu.Item>
-      </ActionMenu>
+      <>
+        <Dropdown.Item>One item</Dropdown.Item>
+      </>
     }
   />
 ))
@@ -517,12 +511,12 @@ storiesOf('portal', module).add('position', _ => (
     <Dropdown
       label="Level"
       menu={
-        <ActionMenu>
-          <ActionMenu.Item>One item</ActionMenu.Item>
-          <ActionMenu.Item>Two item</ActionMenu.Item>
-          <ActionMenu.Item>Three item</ActionMenu.Item>
-          <ActionMenu.Item>Three and the amazing item</ActionMenu.Item>
-        </ActionMenu>
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item>Three and the amazing item</Dropdown.Item>
+        </>
       }
     />
     Aliquam sem et tortor consequat id. Vitae tempus quam pellentesque nec nam.

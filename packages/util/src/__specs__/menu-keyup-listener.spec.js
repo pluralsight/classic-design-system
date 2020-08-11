@@ -1,17 +1,23 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import { useMenuKeyEvents } from '../index.js'
+import {
+  handleMenuKeyDownEvents,
+  handleMenuKeyUpEvents,
+  useMenuRef
+} from '../index.js'
 
-const TestComponent = props => {
+const TestComponent = () => {
   const rootList = [...Array(10).keys()]
   const nestedList = [...Array(5).keys()]
-  const [ref, removeListener] = useMenuKeyEvents()
-  useEffect(() => {
-    return removeListener
-  })
+  const ref = useMenuRef()
   return (
-    <ul data-testid="root-menu" ref={ref}>
+    <ul
+      data-testid="root-menu"
+      ref={ref}
+      onKeyDown={handleMenuKeyDownEvents}
+      onKeyUp={handleMenuKeyUpEvents}
+    >
       {rootList.map((el, i) => {
         return i === 4 || i === 7 ? (
           <li
@@ -108,7 +114,7 @@ describe('useMenuKeyEvents()', () => {
     expect(document.activeElement).toBe(focused)
 
     // ArrowRight
-    fireEvent.keyDown(focused, { key: 'ArrowRight' })
+    fireEvent.keyUp(focused, { key: 'ArrowRight' })
     focused = getByTestId('first-sub-menu-list-item-0')
     expect(document.activeElement).toBe(focused)
   })
@@ -117,7 +123,7 @@ describe('useMenuKeyEvents()', () => {
     let focused = getByTestId('root-list-item-0')
     fireEvent.keyDown(focused, { key: '7' })
     focused = getByTestId('root-list-item-7')
-    fireEvent.keyDown(focused, { key: 'ArrowRight' })
+    fireEvent.keyUp(focused, { key: 'ArrowRight' })
     focused = getByTestId('second-sub-menu-list-item-0')
     fireEvent.keyDown(focused, { key: 'ArrowUp' })
     focused = getByTestId('second-sub-menu-list-item-4')
@@ -128,7 +134,7 @@ describe('useMenuKeyEvents()', () => {
     expect(document.activeElement).toBe(focused)
 
     // ArrowLeft
-    fireEvent.keyDown(focused, { key: 'ArrowLeft' })
+    fireEvent.keyUp(focused, { key: 'ArrowLeft' })
     focused = getByTestId('root-list-item-7')
     expect(document.activeElement).toBe(focused)
   })

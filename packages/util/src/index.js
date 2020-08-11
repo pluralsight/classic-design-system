@@ -15,6 +15,12 @@ export { usePrevious } from './use-previous.js'
 export { useResizeObserver } from './use-resize-observer.js'
 export { useToggle } from './use-toggle.js'
 export {
-  menuKeydownListener,
-  useMenuKeyEvents
-} from './menu-keydown-listener.js'
+  handleMenuKeyDownEvents,
+  handleMenuKeyUpEvents,
+  useMenuRef,
+  searchListItem
+} from './menu-key-listener.js'
+export {
+  useCloseOnDocumentEvents,
+  onGlobalEventsClose
+} from './use-close-on-document-events.js'

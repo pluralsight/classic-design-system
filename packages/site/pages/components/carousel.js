@@ -459,7 +459,7 @@ function PortalExample() {
               inNode={typeof document !== 'undefined' && document.body}
               when={active}
               show={
-                <ActionMenu onClose={toggle}>
+                <ActionMenu onClick={toggle}>
                   <ActionMenu.Item>Useless item</ActionMenu.Item>
                   <ActionMenu.Item>Useless item</ActionMenu.Item>
                   <ActionMenu.Item>Useless item</ActionMenu.Item>

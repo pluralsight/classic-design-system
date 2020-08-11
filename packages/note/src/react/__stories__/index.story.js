@@ -5,7 +5,7 @@ import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
-import { Below } from '@pluralsight/ps-design-system-position'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import Note from '../index.js'
@@ -210,15 +210,13 @@ storiesOf('Note/actions', module)
         <>
           <NoteWithDefaults
             actionBar={[
-              <Below
+              <BelowLeft
                 when={isOpen}
                 show={
-                  <div style={{ position: 'relative' }}>
-                    <ActionMenu origin={ActionMenu.origins.topRight}>
-                      <ActionMenu.Item>Edit</ActionMenu.Item>
-                      <ActionMenu.Item>Delete</ActionMenu.Item>
-                    </ActionMenu>
-                  </div>
+                  <ActionMenu origin={ActionMenu.origins.topRight}>
+                    <ActionMenu.Item>Edit</ActionMenu.Item>
+                    <ActionMenu.Item>Delete</ActionMenu.Item>
+                  </ActionMenu>
                 }
               >
                 <Note.Action
@@ -226,7 +224,7 @@ storiesOf('Note/actions', module)
                   onClick={_ => setIsOpen(!isOpen)}
                   title="More"
                 />
-              </Below>
+              </BelowLeft>
             ]}
             actionBarVisible
           />

@@ -2,16 +2,20 @@ import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 
 import PropTypes from 'prop-types'
 
-import ActionMenu from './menu.js'
-import Divider from './divider.js'
-import Item from './item.js'
+import { ActionMenu } from './menu.js'
+import { Divider } from './divider.js'
+import { Item } from './item.js'
+import { Ellipsis } from './ellipsis.js'
+import { Icon } from './icon.js'
 
 import * as vars from '../vars/index.js'
 
+ActionMenu.Ellipsis = Ellipsis
+ActionMenu.Icon = Icon
 ActionMenu.Item = Item
 ActionMenu.Divider = Divider
 ActionMenu.origins = vars.origins
-
+ActionMenu.tagName = vars.tagName
 ActionMenu.propTypes = {
   children: PropTypes.oneOfType([
     elementOfType(Item),
@@ -20,18 +24,13 @@ ActionMenu.propTypes = {
       PropTypes.oneOfType([elementOfType(Item), elementOfType(Divider)])
     )
   ]),
-  isKeyboarding: PropTypes.bool,
   onClose: PropTypes.func,
-  onChange: PropTypes.func,
-  origin: PropTypes.oneOf(Object.keys(vars.origins).map(k => vars.origins[k])),
-  shouldFocusOnMount: PropTypes.bool,
-  _isNested: PropTypes.bool
+  origin: PropTypes.string,
+  onClick: PropTypes.func
 }
 ActionMenu.defaultProps = {
-  isKeyboarding: false,
-  origin: vars.origins.topLeft,
-  shouldFocusOnMount: true,
-  onClose: () => {}
+  onClose: () => {},
+  origin: vars.origins.topRight
 }
 
 export const origins = vars.origins

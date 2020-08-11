@@ -8,8 +8,8 @@ const styles = {
   arrowSvg: _ => css(stylesheet['.psds-actionmenu__item__arrow__svg'])
 }
 
-const Arrow = props => (
-  <div {...styles.arrow(props)}>
+export const Arrow = props => (
+  <div {...styles.arrow(props)} {...props} data-submenu-arrow>
     <svg
       width="4"
       height="9"
@@ -21,4 +21,4 @@ const Arrow = props => (
   </div>
 )
 
-export default Arrow
+Arrow.displayName = 'ActionMenu.Arrow'

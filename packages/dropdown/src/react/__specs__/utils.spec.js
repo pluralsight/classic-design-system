@@ -45,10 +45,10 @@ describe('#findMatchingActionMenuItem', () => {
         <ActionMenu.Item value="diff">Different</ActionMenu.Item>
         <ActionMenu.Item
           nested={
-            <ActionMenu>
+            <>
               <ActionMenu.Item value="stilldiff">Still Diff</ActionMenu.Item>
               {toFind}
-            </ActionMenu>
+            </>
           }
         >
           Nested Different

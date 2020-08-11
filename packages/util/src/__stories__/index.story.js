@@ -1,20 +1,23 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { css } from 'glamor'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { useMenuKeyEvents } from '../index.js'
+import {
+  handleMenuKeyDownEvents,
+  handleMenuKeyUpEvents,
+  useMenuRef
+} from '../index.js'
 
 const MockComponent = () => {
   const rootList = [...Array(10).keys()]
   const nestedList = [...Array(5).keys()]
-  const [ref, removeListener] = useMenuKeyEvents()
-  useEffect(() => {
-    return removeListener
-  }, [removeListener])
+  const ref = useMenuRef()
   return (
     <ul
       data-testid="root-menu"
       style={{ color: 'white' }}
+      onKeyDown={handleMenuKeyDownEvents}
+      onKeyUp={handleMenuKeyUpEvents}
       ref={ref}
       {...css({ '& :focus': { outline: '1px solid violet' } })}
     >

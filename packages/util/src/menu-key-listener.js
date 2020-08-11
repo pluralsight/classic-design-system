@@ -1,9 +1,9 @@
 import { useCallback, createRef } from 'react'
 import { useCombinedRefs } from './use-combined-refs.js'
 
-const searchListItem = (el, down = true) => {
+export const searchListItem = (el, down = true) => {
   if (!el) return
-  return el.tagName === 'LI'
+  return el.tagName === 'LI' && !el.hasAttribute('disabled')
     ? el
     : searchListItem(
         down ? el.nextElementSibling : el.previousElementSibling,
@@ -13,7 +13,7 @@ const searchListItem = (el, down = true) => {
 
 const rightArrow = e => {
   const subMenu = e.target.querySelector('* > ul')
-  if (subMenu.tagName !== 'UL') return
+  if (!subMenu) return
   const firstChild = searchListItem(subMenu.firstElementChild)
   firstChild && firstChild.focus()
 }
@@ -76,12 +76,14 @@ const character = e => {
   }
 }
 
-const menuKeydownEventsHandler = e => {
-  e.key === 'ArrowRight'
-    ? rightArrow(e)
-    : e.key === 'ArrowLeft'
-    ? leftArrow(e)
-    : e.key === 'ArrowDown'
+export const handleMenuKeyUpEvents = e => {
+  e.key === 'ArrowRight' && rightArrow(e)
+  e.key === 'ArrowLeft' && leftArrow(e)
+  e.preventDefault()
+}
+
+export const handleMenuKeyDownEvents = e => {
+  e.key === 'ArrowDown'
     ? downArrow(e)
     : e.key === 'ArrowUp'
     ? upArrow(e)
@@ -90,25 +92,16 @@ const menuKeydownEventsHandler = e => {
     : e.key === 'End'
     ? end(e)
     : character(e)
+  e.preventDefault()
 }
 
-export const menuKeydownListener = root => {
-  const firstMenuItem = searchListItem(root.firstElementChild)
-  firstMenuItem && firstMenuItem.focus()
-  firstMenuItem && root.addEventListener('keydown', menuKeydownEventsHandler)
-  return menuKeydownEventsHandler
-}
-
-export const useMenuKeyEvents = () => {
+export const useMenuRef = () => {
   const outer = createRef()
   const inner = useCallback(node => {
     if (node !== null) {
-      menuKeydownListener(node)
+      const firstMenuItem = searchListItem(node.firstElementChild)
+      firstMenuItem && firstMenuItem.focus()
     }
   }, [])
-  const ref = useCombinedRefs(outer, inner)
-  return [
-    ref,
-    () => ref.current.removeEventListener('keydown', menuKeydownEventsHandler)
-  ]
+  return useCombinedRefs(outer, inner)
 }
