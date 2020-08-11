@@ -15,6 +15,7 @@ ActionMenu.Icon = Icon
 ActionMenu.Item = Item
 ActionMenu.Divider = Divider
 ActionMenu.origins = vars.origins
+ActionMenu.tagName = vars.tagName
 ActionMenu.propTypes = {
   children: PropTypes.oneOfType([
     elementOfType(Item),
@@ -24,7 +25,8 @@ ActionMenu.propTypes = {
     )
   ]),
   onClose: PropTypes.func,
-  origin: PropTypes.string
+  origin: PropTypes.string,
+  onClick: PropTypes.func
 }
 ActionMenu.defaultProps = {
   onClose: () => {},

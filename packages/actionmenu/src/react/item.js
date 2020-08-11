@@ -10,7 +10,7 @@ import React, {
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
-import { origins } from '../vars/index.js'
+import { origins, tagName } from '../vars/index.js'
 import { ActionMenuContext } from './menu.js'
 import { Arrow } from './arrow.js'
 
@@ -134,7 +134,7 @@ export const Item = forwardRef(
 
 Item.displayName = 'ActionMenu.Item'
 Item.defaultProps = {
-  tagName: 'a',
+  tagName: tagName.a,
   origin: origins.topRight
 }
 Item.propTypes = {

@@ -1,4 +1,3 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Banner from '@pluralsight/ps-design-system-banner'
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
@@ -320,16 +319,16 @@ class InAppExample extends React.Component {
                   placeholder="Choose one"
                   subLabel={errorMsg('level')}
                   menu={
-                    <ActionMenu>
+                    <>
                       {['beginner', 'intermediate', 'advanced'].map(level => (
-                        <ActionMenu.Item
+                        <Dropdown.Item
                           name="level"
                           onClick={_ => this.setState({ level })}
                         >
                           {capitalize(level)}
-                        </ActionMenu.Item>
+                        </Dropdown.Item>
                       ))}
-                    </ActionMenu>
+                    </>
                   }
                 />
                 <DatePicker
@@ -463,16 +462,16 @@ class InAppExample extends React.Component {
             placeholder="Choose one"
             subLabel={errorMsg('level')}
             menu={
-              <ActionMenu>
+              <>
                 {['beginner', 'intermediate', 'advanced'].map(level => (
-                  <ActionMenu.Item
+                  <Dropdown.Item
                     name="level"
                     onClick={_ => this.setState({ level })}
                   >
                     {stringUtil.capitalize(level)}
-                  </ActionMenu.Item>
+                  </Dropdown.Item>
                 ))}
-              </ActionMenu>
+              </>
             }
           />
 
@@ -610,7 +609,6 @@ export default _ => (
         themeToggle
         orient="vertical"
         includes={{
-          ActionMenu,
           Button,
           Checkbox,
           Dropdown,
@@ -638,7 +636,6 @@ export default _ => (
         themeToggle
         orient="vertical"
         includes={{
-          ActionMenu,
           Button,
           Checkbox,
           Dropdown,
@@ -668,7 +665,6 @@ export default _ => (
         themeToggle
         orient="vertical"
         includes={{
-          ActionMenu,
           Button,
           Checkbox,
           Dropdown,
@@ -734,39 +730,39 @@ export default _ => (
             label="Level"
             subLabel="Be as specific as possible"
             menu={
-              <ActionMenu>
-                <ActionMenu.Item
-                  nested={
-                    <ActionMenu>
-                      <ActionMenu.Item>What's nylon</ActionMenu.Item>
-                      <ActionMenu.Item>Dream of nylon</ActionMenu.Item>
-                      <ActionMenu.Item>Dangerous</ActionMenu.Item>
-                    </ActionMenu>
+              <>
+                <Dropdown.Item
+                  menu={
+                    <>
+                      <Dropdown.Item>What's nylon</Dropdown.Item>
+                      <Dropdown.Item>Dream of nylon</Dropdown.Item>
+                      <Dropdown.Item>Dangerous</Dropdown.Item>
+                    </>
                   }
                 >
                   Beginner
-                </ActionMenu.Item>
-                <ActionMenu.Item
-                  nested={
-                    <ActionMenu>
-                      <ActionMenu.Item>Nylon adept</ActionMenu.Item>
-                      <ActionMenu.Item>Epic nylon user</ActionMenu.Item>
-                    </ActionMenu>
+                </Dropdown.Item>
+                <Dropdown.Item
+                  menu={
+                    <>
+                      <Dropdown.Item>Nylon adept</Dropdown.Item>
+                      <Dropdown.Item>Epic nylon user</Dropdown.Item>
+                    </>
                   }
                 >
                   Intermediate
-                </ActionMenu.Item>
-                <ActionMenu.Item
-                  nested={
-                    <ActionMenu>
-                      <ActionMenu.Item>Invented nylon</ActionMenu.Item>
-                      <ActionMenu.Item>Now it's kevlar</ActionMenu.Item>
-                    </ActionMenu>
+                </Dropdown.Item>
+                <Dropdown.Item
+                  menu={
+                    <>
+                      <Dropdown.Item>Invented nylon</Dropdown.Item>
+                      <Dropdown.Item>Now it's kevlar</Dropdown.Item>
+                    </>
                   }
                 >
                   Advanced
-                </ActionMenu.Item>
-              </ActionMenu>
+                </Dropdown.Item>
+              </>
             }
           />
         </Comp>
@@ -927,18 +923,18 @@ export default _ => (
               label="State"
               value="AL"
               menu={
-                <ActionMenu>
-                  <ActionMenu.Item>AL</ActionMenu.Item>
-                </ActionMenu>
+                <>
+                  <Dropdown.Item>AL</Dropdown.Item>
+                </>
               }
             />
             <Form.Divider />
             <Dropdown
               label="Contact preference"
               menu={
-                <ActionMenu>
-                  <ActionMenu.Item isActive>Email</ActionMenu.Item>
-                </ActionMenu>
+                <>
+                  <Dropdown.Item isActive>Email</Dropdown.Item>
+                </>
               }
             />
           </Form.VerticalLayout>
@@ -953,17 +949,17 @@ export default _ => (
               label="State"
               value="AL"
               menu={
-                <ActionMenu>
-                  <ActionMenu.Item>AL</ActionMenu.Item>
-                </ActionMenu>
+                <>
+                  <Dropdown.Item>AL</Dropdown.Item>
+                </>
               }
             />
             <Dropdown
               label="Contact preference"
               menu={
-                <ActionMenu>
-                  <ActionMenu.Item isActive>Email</ActionMenu.Item>
-                </ActionMenu>
+                <>
+                  <Dropdown.Item>Email</Dropdown.Item>
+                </>
               }
             />
           </Form.VerticalLayout>

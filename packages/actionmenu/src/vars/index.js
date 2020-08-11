@@ -11,3 +11,8 @@ export const style = {
   menuPaddingVert: layout.spacingXXSmall,
   nestedMenuHorzOverlap: 0 // 3
 }
+
+export const tagName = {
+  button: 'button',
+  a: 'a'
+}

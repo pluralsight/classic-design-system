@@ -357,7 +357,7 @@ storiesOf('menu', module)
           <Dropdown.Item>Two item</Dropdown.Item>
           <Dropdown.Item>Three item</Dropdown.Item>
           <Dropdown.Item
-            nested={
+            menu={
               <>
                 <Dropdown.Item>3 - One item</Dropdown.Item>
                 <Dropdown.Item>3 - Two item</Dropdown.Item>
@@ -384,7 +384,7 @@ storiesOf('menu', module)
           <Dropdown.Item onClick={action('two')}>Two item</Dropdown.Item>
           <Dropdown.Item onClick={action('three')}>Three item</Dropdown.Item>
           <Dropdown.Item
-            nested={
+            menu={
               <>
                 <Dropdown.Item onClick={action('three - One')}>
                   3 - One item
@@ -424,10 +424,10 @@ storiesOf('menu', module)
         <>
           <Dropdown.Item>Short</Dropdown.Item>
           <Dropdown.Item
-            nested={
+            menu={
               <>
                 <Dropdown.Item
-                  nested={
+                  menu={
                     <>
                       <Dropdown.Item>This is pretty longest</Dropdown.Item>
                       <Dropdown.Item>

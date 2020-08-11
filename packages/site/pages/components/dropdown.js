@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 import React from 'react'
 
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
@@ -37,13 +36,13 @@ function InAppExample() {
             placeholder="Select"
             onChange={(evt, value, label) => setValue(value)}
             menu={
-              <ActionMenu>
+              <>
                 {options.map(opt => (
-                  <ActionMenu.Item key={opt.value} value={opt.value}>
+                  <Dropdown.Item key={opt.value} value={opt.value}>
                     {opt.label}
-                  </ActionMenu.Item>
+                  </Dropdown.Item>
                 ))}
-              </ActionMenu>
+              </>
             }
             value={value}
           />
@@ -72,13 +71,13 @@ function InAppExample() {
         placeholder="Select"
         onChange={(evt, value, label) => setValue(value)}
         menu={
-          <ActionMenu>
+          <>
             {options.map(opt => (
-              <ActionMenu.Item key={opt.value} value={opt.value}>
+              <Dropdown.Item key={opt.value} value={opt.value}>
                 {opt.label}
-              </ActionMenu.Item>
+              </Dropdown.Item>
             ))}
-          </ActionMenu>
+          </>
         }
         value={value}
       />
@@ -133,75 +132,117 @@ export default _ => (
         import Dropdown from '@pluralsight/ps-design-system-dropdown'
       </Code>
       <PropTypes
-        props={[
-          PropTypes.row([
-            'appearance',
-            PropTypes.union(Dropdown.appearances),
-            null,
-            <code>default</code>,
-            <span>
-              visual style (from <code>Dropdown.appearances</code>)
-            </span>
-          ]),
-          PropTypes.row([
-            'disabled',
-            'boolean',
-            null,
-            <code>false</code>,
-            'standard input disabled flag'
-          ]),
-          PropTypes.row([
-            'error',
-            'boolean',
-            null,
-            <code>false</code>,
-            'error state flag'
-          ]),
-          PropTypes.row([
-            'label',
-            'string',
-            null,
-            null,
-            'identifying string for dropdown'
-          ]),
-          PropTypes.row([
-            'menu',
-            <code>ActionMenu</code>,
-            true,
-            null,
-            'menu for dropdown contents'
-          ]),
-          PropTypes.row([
-            'onChange',
-            <span>(Event, value, label) {'=>'} ()</span>,
-            null,
-            null,
-            'triggered when an item selected'
-          ]),
-          PropTypes.row([
-            'placeholder',
-            'string',
-            null,
-            null,
-            'in-field usage hint'
-          ]),
-          PropTypes.row([
-            'size',
-            PropTypes.union(Dropdown.sizes),
-            null,
-            <code>medium</code>,
-            <span>
-              horizontal icon placement (from <code>Dropdown.sizes</code>)
-            </span>
-          ]),
-          PropTypes.row([
-            'subLabel',
-            'string',
-            null,
-            null,
-            'supporting text or error messaging'
-          ])
-        ]}
+        props={{
+          Dropdown: [
+            PropTypes.row([
+              'appearance',
+              PropTypes.union(Dropdown.appearances),
+              null,
+              <code>default</code>,
+              <span>
+                visual style (from <code>Dropdown.appearances</code>)
+              </span>
+            ]),
+            PropTypes.row([
+              'disabled',
+              'boolean',
+              null,
+              <code>false</code>,
+              'standard input disabled flag'
+            ]),
+            PropTypes.row([
+              'error',
+              'boolean',
+              null,
+              <code>false</code>,
+              'error state flag'
+            ]),
+            PropTypes.row([
+              'label',
+              'string',
+              null,
+              null,
+              'identifying string for dropdown'
+            ]),
+            PropTypes.row([
+              'menu',
+              <code>Dropdown.Item</code>,
+              true,
+              null,
+              'menu for dropdown contents'
+            ]),
+            PropTypes.row([
+              'onChange',
+              <span>(Event, value, label) {'=>'} ()</span>,
+              null,
+              null,
+              'triggered when an item selected'
+            ]),
+            PropTypes.row([
+              'placeholder',
+              'string',
+              null,
+              null,
+              'in-field usage hint'
+            ]),
+            PropTypes.row([
+              'size',
+              PropTypes.union(Dropdown.sizes),
+              null,
+              <code>medium</code>,
+              <span>
+                horizontal icon placement (from <code>Dropdown.sizes</code>)
+              </span>
+            ]),
+            PropTypes.row([
+              'subLabel',
+              'string',
+              null,
+              null,
+              'supporting text or error messaging'
+            ])
+          ],
+          'Dropdown.Item': [
+            PropTypes.row([
+              'disabled',
+              'boolean',
+              null,
+              <code>false</code>,
+              'visually disabled, non-interactive'
+            ]),
+            PropTypes.row(['href', 'string', null, null, 'anchor tag uri']),
+            PropTypes.row([
+              'icon',
+              <code>*Icon</code>,
+              null,
+              null,
+              'Icon component'
+            ]),
+            PropTypes.row([
+              'menu',
+              <code>Dropdown.Items</code>,
+              null,
+              null,
+              'menu (Dropdown.Item)s'
+            ]),
+            PropTypes.row([
+              'onClick',
+              'Event => ()',
+              null,
+              null,
+              'triggered on item select: click, enter or space'
+            ]),
+            PropTypes.row([
+              'value',
+              <code>string | number</code>,
+              null,
+              null,
+              <span>
+                value sent to <code>Menu#onChange</code>
+              </span>
+            ])
+          ]
+        }}
       />
       <P>
         The normal React form-related props are also acceptable and expected.
@@ -227,27 +268,27 @@ export default _ => (
         orient="vertical"
         outputStyle={{ paddingBottom: '96px' }}
         themeToggle
-        includes={{ ActionMenu, Dropdown }}
+        includes={{ Dropdown }}
         codes={[
           `<Dropdown
   label="Level"
   menu={
-    <ActionMenu>
-      <ActionMenu.Item>Beginner</ActionMenu.Item>
-      <ActionMenu.Item>Intermediate</ActionMenu.Item>
-      <ActionMenu.Item>Advanced</ActionMenu.Item>
-    </ActionMenu>
+    <React.Fragment>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </React.Fragment>
   }
 />`,
           `<Dropdown
   label="Level"
   placeholder="Select level"
   menu={
-    <ActionMenu>
-      <ActionMenu.Item>Beginner</ActionMenu.Item>
-      <ActionMenu.Item>Intermediate</ActionMenu.Item>
-      <ActionMenu.Item>Advanced</ActionMenu.Item>
-    </ActionMenu>
+    <React.Fragment>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </React.Fragment>
   }
 />`,
           `<Dropdown
@@ -255,11 +296,11 @@ export default _ => (
   placeholder="Select level"
   subLabel="Which audience is this course aimed at?"
   menu={
-    <ActionMenu>
-      <ActionMenu.Item>Beginner</ActionMenu.Item>
-      <ActionMenu.Item>Intermediate</ActionMenu.Item>
-      <ActionMenu.Item>Advanced</ActionMenu.Item>
-    </ActionMenu>
+    <React.Fragment>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </React.Fragment>
   }
 />`
         ]}
@@ -277,18 +318,18 @@ export default _ => (
         orient="vertical"
         outputStyle={{ paddingBottom: '96px' }}
         themeToggle
-        includes={{ ActionMenu, Dropdown }}
+        includes={{ Dropdown }}
         codes={[
           `<Dropdown
   label="Level"
   placeholder="Intermediate"
   subLabel="Which audience is this course aimed at?"
   menu={
-    <ActionMenu>
-      <ActionMenu.Item>Beginner</ActionMenu.Item>
-      <ActionMenu.Item>Intermediate</ActionMenu.Item>
-      <ActionMenu.Item>Advanced</ActionMenu.Item>
-    </ActionMenu>
+    <React.Fragment>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </React.Fragment>
   }
 />`
         ]}
@@ -302,7 +343,7 @@ export default _ => (
       <Example.React
         orient="vertical"
         outputStyle={{ paddingBottom: '128px' }}
-        includes={{ ActionMenu, Dropdown, Theme }}
+        includes={{ Dropdown, Theme }}
         codes={[
           `<Theme name={Theme.names.dark}>
   <Dropdown
@@ -310,11 +351,11 @@ export default _ => (
     label="Level"
     placeholder="Select level"
     menu={
-      <ActionMenu>
-        <ActionMenu.Item>Beginner</ActionMenu.Item>
-        <ActionMenu.Item>Intermediate</ActionMenu.Item>
-        <ActionMenu.Item>Advanced</ActionMenu.Item>
-      </ActionMenu>
+      <React.Fragment>
+        <Dropdown.Item>Beginner</Dropdown.Item>
+        <Dropdown.Item>Intermediate</Dropdown.Item>
+        <Dropdown.Item>Advanced</Dropdown.Item>
+      </React.Fragment>
     }
   />
 </Theme>`
@@ -328,9 +369,9 @@ export default _ => (
       </P>
       <Example.React
         themeToggle
-        includes={{ ActionMenu, Dropdown }}
+        includes={{ Dropdown }}
         codes={[
-          `<Dropdown disabled label="Can't touch this" placeholder="Just try it" menu={<ActionMenu />} />`
+          `<Dropdown disabled label="Can't touch this" placeholder="Just try it" />`
         ]}
       />
 
@@ -343,18 +384,18 @@ export default _ => (
       <Example.React
         themeToggle
         outputStyle={{ paddingBottom: '128px' }}
-        includes={{ ActionMenu, Dropdown }}
+        includes={{ Dropdown }}
         codes={[
           `<Dropdown
   error
   label="Level"
   placeholder="Select level"
   menu={
-    <ActionMenu>
-      <ActionMenu.Item>Beginner</ActionMenu.Item>
-      <ActionMenu.Item>Intermediate</ActionMenu.Item>
-      <ActionMenu.Item>Advanced</ActionMenu.Item>
-    </ActionMenu>
+    <React.Fragment>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </React.Fragment>
   }
 />`
         ]}
@@ -368,27 +409,27 @@ export default _ => (
         orient="vertical"
         outputStyle={{ paddingBottom: '116px' }}
         themeToggle
-        includes={{ ActionMenu, Dropdown }}
+        includes={{ Dropdown }}
         codes={[
           `<Dropdown
   placeholder="medium dropdown"
   menu={
-    <ActionMenu>
-      <ActionMenu.Item>Beginner</ActionMenu.Item>
-      <ActionMenu.Item>Intermediate</ActionMenu.Item>
-      <ActionMenu.Item>Advanced</ActionMenu.Item>
-    </ActionMenu>
+    <React.Fragment>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </React.Fragment>
   }
 />`,
           `<Dropdown
   size={Dropdown.sizes.small}
   placeholder="Small dropdown"
   menu={
-    <ActionMenu>
-      <ActionMenu.Item>Beginner</ActionMenu.Item>
-      <ActionMenu.Item>Intermediate</ActionMenu.Item>
-      <ActionMenu.Item>Advanced</ActionMenu.Item>
-    </ActionMenu>
+    <React.Fragment>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </React.Fragment>
   }
 />`
         ]}

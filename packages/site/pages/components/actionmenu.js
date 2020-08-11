@@ -1,5 +1,5 @@
 /* eslint-disable react/display-name */
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
@@ -25,6 +25,15 @@ import {
   SectionHeading
 } from '../../src/ui/index.js'
 
+const BlurOnMount = ({ render }) => {
+  const ref = useRef(null)
+  useEffect(() => {
+    const firstItem = ref.current && ref.current.querySelector('* > li')
+    firstItem && firstItem.blur()
+  })
+  return render(ref)
+}
+
 function InAppExample() {
   const categories = [
     {
@@ -47,8 +56,8 @@ function InAppExample() {
   const [isOpen, setIsOpen] = React.useState(false)
   const [selected, select] = React.useState({})
 
-  function handleSelect(evt, value, label) {
-    select({ value, label })
+  function handleSelect(evt, value) {
+    select({ value, label: evt.currentTarget.innerText })
     setIsOpen(false)
   }
 
@@ -75,20 +84,20 @@ function InAppExample() {
               <div>
                 <ActionMenu
                   origin={ActionMenu.origins.topLeft}
-                  onChange={handleSelect}
+                  onClick={handleSelect}
                 >
                   {categories.map(cat => (
                     <ActionMenu.Item
                       key={cat.name}
-                      nested={
-                        <ActionMenu>
-                          {cat.options.map(opt => (
-                            <ActionMenu.Item value={opt.value} key={opt.value}>
-                              {opt.label}
-                            </ActionMenu.Item>
-                          ))}
-                        </ActionMenu>
-                      }
+                      nested={cat.options.map(opt => (
+                        <ActionMenu.Item
+                          value={opt.value}
+                          key={opt.value}
+                          tagName="button"
+                        >
+                          {opt.label}
+                        </ActionMenu.Item>
+                      ))}
                     >
                       {cat.name}
                     </ActionMenu.Item>
@@ -138,8 +147,8 @@ function InAppExample() {
   const [isOpen, setIsOpen] = React.useState(false)
   const [selected, select] = React.useState({})
 
-  function handleSelect(evt, value, label) {
-    select({ value, label })
+  function handleSelect(evt, value) {
+    select({ value, label: evt.currentTarget.innerText })
     setIsOpen(false)
   }
 
@@ -157,15 +166,15 @@ function InAppExample() {
               {categories.map(cat => (
                 <ActionMenu.Item
                   key={cat.name}
-                  nested={
-                    <ActionMenu>
-                      {cat.options.map(opt => (
-                        <ActionMenu.Item value={opt.value} key={opt.value}>
-                          {opt.label}
-                        </ActionMenu.Item>
-                      ))}
-                    </ActionMenu>
-                  }
+                  nested={cat.options.map(opt => (
+                    <ActionMenu.Item
+                      value={opt.value}
+                      key={opt.value}
+                      tagName="button"
+                    >
+                      {opt.label}
+                    </ActionMenu.Item>
+                  ))}
                 >
                   {cat.name}
                 </ActionMenu.Item>
@@ -219,11 +228,11 @@ export default _ => (
               'triggered when a menu collapses; providing it renders an overlay that triggers this function on click'
             ]),
             PropTypes.row([
-              'onChange',
-              <span>(Event, value, label) {'=>'} ()</span>,
+              'onClick',
+              <span>(Event, value) {'=>'} ()</span>,
               null,
               null,
-              'triggered when an item selected'
+              'triggered when an item selected via click, enter or space'
             ]),
             PropTypes.row([
               'origin',
@@ -231,16 +240,8 @@ export default _ => (
               null,
               <code>topLeft</code>,
               <span>
-                orientation (from <code>ActionMenu.origins</code>) of nested
-                menus
+                orientation (from <code>ActionMenu.origins</code>) of root menu
               </span>
-            ]),
-            PropTypes.row([
-              'shouldFocusOnMount',
-              'boolean',
-              null,
-              <code>true</code>,
-              'focus first menu item on render'
             ])
           ],
           'ActionMenu.Item': [
@@ -253,32 +254,38 @@ export default _ => (
             ]),
             PropTypes.row(['href', 'string', null, null, 'anchor tag uri']),
             PropTypes.row([
-              'icon',
-              <code>*Icon</code>,
-              null,
-              null,
-              'Icon component'
-            ]),
-            PropTypes.row([
-              'isActive',
-              'boolean',
-              null,
-              <code>false</code>,
-              'visually active (set automatically)'
-            ]),
-            PropTypes.row([
               'nested',
               <code>ActionMenu</code>,
               null,
               null,
-              'nested ActionMenu'
+              'nested (ActionMenu.Item)s'
             ]),
             PropTypes.row([
               'onClick',
               'Event => ()',
               null,
               null,
-              'triggered on item click'
+              'triggered on item select: click, enter or space'
+            ]),
+            PropTypes.row([
+              'origin',
+              PropTypes.union(ActionMenu.origins),
+              null,
+              <code>topLeft</code>,
+              <span>
+                orientation (from <code>ActionMenu.origins</code>) of nested
+                menus
+              </span>
+            ]),
+            PropTypes.row([
+              'tagName',
+              'boolean',
+              null,
+              <code>a</code>,
+              <span>
+                ActionMenu.Item trigger element tag (from{' '}
+                <code>ActionMenu.tagName</code>){' '}
+              </span>
             ]),
             PropTypes.row([
               'value',
@@ -301,23 +308,98 @@ export default _ => (
       </P>
       <InAppExample />
 
+      <P>
+        <em>
+          Note: Examples on this page use <Text.Code>BlurOnMount</Text.Code>:
+          <Code language="javascript">
+            {`
+            const BlurOnMount = ({ children }) => {
+              const ref = useRef(null)
+              useEffect(() => {
+                const firstItem = ref.current && ref.current.querySelector('* > li')
+                firstItem && firstItem.blur()
+              })
+              return children(ref)
+            }
+            `}
+          </Code>
+          <Text.Code>BlurOnMount</Text.Code> only in order to display the
+          examples without interrupting your browsing experience. In most
+          real-world scenarios, you will want to leave the default focus
+          behavior in tact.
+        </em>
+      </P>
       <SectionHeading>Icons</SectionHeading>
-      <P>Use icons to add context and recognition to action menu items.</P>
+      <P>
+        Use <code>ActionMenu.Icon</code> to add context and recognition to
+        action menu items.
+      </P>
       <Example.React
-        includes={{ ActionMenu, ChannelIcon, PathIcon, ReportIcon }}
+        includes={{
+          ActionMenu,
+          ChannelIcon,
+          PathIcon,
+          ReportIcon,
+          BlurOnMount
+        }}
         codes={[
           `
-<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
-  <ActionMenu.Item icon={<ChannelIcon />}>
-    Channels
-  </ActionMenu.Item>
-  <ActionMenu.Item icon={<PathIcon />}>
-    Paths
-  </ActionMenu.Item>
-  <ActionMenu.Item icon={<ReportIcon />}>
-    Reports
-  </ActionMenu.Item>
-</ActionMenu>
+<BlurOnMount render={
+  ref => (
+    <ActionMenu ref={ref}>
+      <ActionMenu.Item>
+        <ActionMenu.Icon marginLeft>
+          <ChannelIcon />
+        </ActionMenu.Icon>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        <ActionMenu.Icon marginLeft>
+          <PathIcon />
+        </ActionMenu.Icon>
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        <ActionMenu.Icon marginLeft>
+          <ReportIcon />
+        </ActionMenu.Icon>
+        Three item
+      </ActionMenu.Item>
+    </ActionMenu>
+  )
+}/>
+`
+        ]}
+      />
+
+      <SectionHeading>Ellipsis</SectionHeading>
+      <P>
+        Use <code>ActionMenu.Ellipsis</code> to add ellipsis to action menu
+        items.
+      </P>
+      <Example.React
+        includes={{ ActionMenu, BlurOnMount }}
+        codes={[
+          `
+
+<BlurOnMount render={
+  ref => (
+    <ActionMenu ref={ref} >
+      <ActionMenu.Item>
+        <ActionMenu.Ellipsis>
+          One item that has text that goes on forever and onward into the
+          universes yet to be
+        </ActionMenu.Ellipsis>
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        <ActionMenu.Ellipsis>
+          Another item that takes a long time to explain in the context of
+          everything that is in a line.
+        </ActionMenu.Ellipsis>
+      </ActionMenu.Item>
+    </ActionMenu>
+  )
+}/>
 `
         ]}
       />
@@ -328,25 +410,29 @@ export default _ => (
         at the list level, below the assigned list item.
       </P>
       <Example.React
-        includes={{ ActionMenu }}
+        includes={{ ActionMenu, BlurOnMount }}
         codes={[
           `
-<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
-  <ActionMenu.Item>
-    One item
-  </ActionMenu.Item>
-  <ActionMenu.Divider />
-  <ActionMenu.Item>
-    Two item
-  </ActionMenu.Item>
-  <ActionMenu.Item>
-    Three item
-  </ActionMenu.Item>
-  <ActionMenu.Divider />
-  <ActionMenu.Item>
-    Four item
-  </ActionMenu.Item>
-</ActionMenu>
+<BlurOnMount render={
+  ref => (
+    <ActionMenu ref={ref}>
+      <ActionMenu.Item>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item>
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Three item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item>
+        Four item
+      </ActionMenu.Item>
+    </ActionMenu>
+  )
+}/>
 `
         ]}
       />
@@ -354,68 +440,72 @@ export default _ => (
       <SectionHeading>Nesting</SectionHeading>
       <P>Nested menu lists may spawn from parent menu list items.</P>
       <Example.React
-        includes={{ ActionMenu }}
+        includes={{ ActionMenu, BlurOnMount }}
         outputChildStyle={{
           padding: `0 0 ${core.layout.spacingLarge} 0`
         }}
         codes={[
           `
-<ActionMenu style={{ position: 'relative' }} shouldFocusOnMount={false}>
-  <ActionMenu.Item>
-    One item
-  </ActionMenu.Item>
-  <ActionMenu.Divider />
-  <ActionMenu.Item
-    nested={
-      <ActionMenu>
-        <ActionMenu.Item>
-          Nest 1
-        </ActionMenu.Item>
-        <ActionMenu.Item
-          nested={
-            <ActionMenu>
-              <ActionMenu.Item>
-                Nest nest 1-1
-              </ActionMenu.Item>
-              <ActionMenu.Item>
-                Nest nest 1-2
-              </ActionMenu.Item>
-              <ActionMenu.Item>
-                Nest nest 1-3
-              </ActionMenu.Item>
-            </ActionMenu>
-          }
-        >
-          Nest 2
-        </ActionMenu.Item>
-        <ActionMenu.Divider />
-        <ActionMenu.Item
-          nested={
-            <ActionMenu>
-              <ActionMenu.Item>
-                Nest nest 3-1
-              </ActionMenu.Item>
-              <ActionMenu.Item>
-                Nest nest 3-2
-              </ActionMenu.Item>
-            </ActionMenu>
-          }
-        >
-          Nest 3
-        </ActionMenu.Item>
-      </ActionMenu>
-    }
-  >
-    Two item
-  </ActionMenu.Item>
-  <ActionMenu.Item>
-    Three item
-  </ActionMenu.Item>
-  <ActionMenu.Divider />
-  <ActionMenu.Item>
-    Four item
-  </ActionMenu.Item>
-</ActionMenu>
+<BlurOnMount render={
+  ref => (
+    <ActionMenu ref={ref}>
+      <ActionMenu.Item>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item
+        nested={
+          <React.Fragment>
+            <ActionMenu.Item>
+              Nest 1
+            </ActionMenu.Item>
+            <ActionMenu.Item
+              nested={
+                <React.Fragment>
+                  <ActionMenu.Item>
+                    Nest nest 1-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 1-2
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 1-3
+                  </ActionMenu.Item>
+                </React.Fragment>
+              }
+            >
+              Nest 2
+            </ActionMenu.Item>
+            <ActionMenu.Divider />
+            <ActionMenu.Item
+              nested={
+                <React.Fragment>
+                  <ActionMenu.Item>
+                    Nest nest 3-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 3-2
+                  </ActionMenu.Item>
+                </React.Fragment>
+              }
+            >
+              Nest 3
+            </ActionMenu.Item>
+          </React.Fragment>
+        }
+      >
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Three item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item>
+        Four item
+      </ActionMenu.Item>
+    </ActionMenu>
+  )
+}/>
 `
         ]}
       />
@@ -435,7 +525,7 @@ export default _ => (
       </Code>
       <P>Here's an example of ActionMenu.origins.bottomRight in action:</P>
       <Example.React
-        includes={{ ActionMenu }}
+        includes={{ ActionMenu, BlurOnMount }}
         outputStyle={{
           height: `calc(200px + (2 * ${core.layout.spacingLarge}))`,
           position: 'relative'
@@ -448,31 +538,51 @@ export default _ => (
         }}
         codes={[
           `
-<ActionMenu origin={ActionMenu.origins.bottomRight} shouldFocusOnMount={false}>
-  <ActionMenu.Item>
-    One item
-  </ActionMenu.Item>
-  <ActionMenu.Divider />
-  <ActionMenu.Item>
-    Two item
-  </ActionMenu.Item>
-  <ActionMenu.Item>
-    Three item
-  </ActionMenu.Item>
-</ActionMenu>
+<BlurOnMount render={
+  ref => (
+    <ActionMenu origin={ActionMenu.origins.bottomRight} ref={ref}>
+    <ActionMenu.Item
+      origin={ActionMenu.origins.bottomRight}
+      nested={
+        <React.Fragment>
+          <ActionMenu.Item>Nest 1</ActionMenu.Item>
+          <ActionMenu.Item
+            origin={ActionMenu.origins.bottomRight}
+            nested={
+              <React.Fragment>
+                <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
+                <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
+                <ActionMenu.Item>Nest nest 1-3</ActionMenu.Item>
+              </React.Fragment>
+            }
+          >
+            Nest 2
+          </ActionMenu.Item>
+          <ActionMenu.Divider />
+          <ActionMenu.Item>Nest 3</ActionMenu.Item>
+          <ActionMenu.Item
+            origin={ActionMenu.origins.bottomRight}
+            nested={
+              <React.Fragment>
+                <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
+                <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>
+              </React.Fragment>
+            }
+          >
+            Nest 4
+          </ActionMenu.Item>
+        </React.Fragment>
+      }
+    >
+      One
+    </ActionMenu.Item>
+    <ActionMenu.Item>Two</ActionMenu.Item>
+  </ActionMenu>
+  )
+}/>
 `
         ]}
       />
-
-      <P>
-        <em>
-          Note: Examples on this page use{' '}
-          <Text.Code>shouldFocusOnMount=false</Text.Code> only in order to
-          display the examples without interrupting your browsing experience. In
-          most real-world scenarios, you will want to leave the default focus
-          behavior in tact.
-        </em>
-      </P>
 
       <SectionHeading>Disabled Items</SectionHeading>
       <P>
@@ -480,7 +590,7 @@ export default _ => (
         <Text.Code>disabled</Text.Code> prop.
       </P>
       <Example.React
-        includes={{ ActionMenu }}
+        includes={{ ActionMenu, BlurOnMount }}
         outputStyle={{
           height: `calc(200px + (2 * ${core.layout.spacingLarge}))`,
           position: 'relative'
@@ -493,17 +603,21 @@ export default _ => (
         }}
         codes={[
           `
-<ActionMenu shouldFocusOnMount={false}>
-  <ActionMenu.Item>
-    Normal, enabled
-  </ActionMenu.Item>
-  <ActionMenu.Item disabled>
-    Present, but disabled
-  </ActionMenu.Item>
-  <ActionMenu.Item>
-    Normal, enabled
-  </ActionMenu.Item>
-</ActionMenu>
+<BlurOnMount render={
+  ref => (
+    <ActionMenu ref={ref}>
+      <ActionMenu.Item>
+        Normal, enabled
+      </ActionMenu.Item>
+      <ActionMenu.Item disabled>
+        Present, but disabled
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Normal, enabled
+      </ActionMenu.Item>
+    </ActionMenu>
+  )
+}/>
 `
         ]}
       />
