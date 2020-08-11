@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@6.1.13...@pluralsight/ps-design-system-note@7.0.0) (2020-08-11)
+
+
+### Features
+
+* **actionmenu:** rebuild actionmenu to support variable uses ([#1088](https://github.com/pluralsight/design-system/issues/1088)) ([0248ef3](https://github.com/pluralsight/design-system/commit/0248ef32d4676fc57de7352a390d034219503538))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** drops origin prop from action menu. adds Dropdown.Item to Dropdown. renames Util menu key listener. use Fragment for menu on Dropdown and nested on ActionMenu.  new ActionMenu.Ellipsis component and ActionMenu.Icon components. deprecated ActionMenu prop should mount on focus
+
+
+
+
+
 ## [6.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-note@6.1.12...@pluralsight/ps-design-system-note@6.1.13) (2020-08-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-note
