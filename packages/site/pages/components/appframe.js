@@ -113,6 +113,30 @@ return (
   </AppFrame>
 )`}
       </Code>
+
+      <SectionHeading>Examples</SectionHeading>
+      <P>
+        This reference implementation of the Skills nav is available on{' '}
+        <a href="https://codesandbox.io/s/crazy-carson-pe50v?fontsize=14&hidenavigation=1&theme=dark&view=preview">
+          codesandbox
+        </a>
+        .
+      </P>
+
+      <br />
+      <iframe
+        src="https://codesandbox.io/embed/crazy-carson-pe50v?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+        style={{
+          width: '100%',
+          height: 500,
+          border: 0,
+          borderRadius: 4,
+          overflow: 'hidden'
+        }}
+        title="psds-skills-nav-example"
+        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+      />
     </Content>
   </Chrome>
 )
