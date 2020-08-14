@@ -14,6 +14,13 @@ exports[`Storyshots LinearProgress animates to new values 1`] = `
     data-css-f5n0d7=""
   >
     <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      0% complete
+    </div>
+    <div
       data-css-lskj0=""
     />
   </div>
@@ -44,6 +51,13 @@ exports[`Storyshots LinearProgress fills container 1`] = `
     data-css-f5n0d7=""
   >
     <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      66% complete
+    </div>
+    <div
       data-css-1y8zqkb=""
     />
   </div>
@@ -55,6 +69,13 @@ exports[`Storyshots LinearProgress min width, no val 1`] = `
   data-css-f5n0d7=""
 >
   <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    0% complete
+  </div>
+  <div
     data-css-lskj0=""
   />
 </div>
@@ -64,6 +85,13 @@ exports[`Storyshots LinearProgress value, 0% 1`] = `
 <div
   data-css-f5n0d7=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    0% complete
+  </div>
   <div
     data-css-lskj0=""
   />
@@ -75,6 +103,13 @@ exports[`Storyshots LinearProgress value, 33% 1`] = `
   data-css-f5n0d7=""
 >
   <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    33% complete
+  </div>
+  <div
     data-css-6wpswa=""
   />
 </div>
@@ -84,6 +119,13 @@ exports[`Storyshots LinearProgress value, 50% 1`] = `
 <div
   data-css-f5n0d7=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    50% complete
+  </div>
   <div
     data-css-qfqbsq=""
   />
@@ -95,6 +137,13 @@ exports[`Storyshots LinearProgress value, 100% 1`] = `
   data-css-f5n0d7=""
 >
   <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    100% complete
+  </div>
+  <div
     data-css-1hrjrcb=""
   />
 </div>
@@ -104,6 +153,13 @@ exports[`Storyshots LinearProgress value, 999% 1`] = `
 <div
   data-css-f5n0d7=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    999% complete
+  </div>
   <div
     data-css-1hrjrcb=""
   />
