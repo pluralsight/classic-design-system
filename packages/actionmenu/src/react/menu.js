@@ -3,7 +3,7 @@
 
 import { css, compose } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import React, { useImperativeHandle, createContext } from 'react'
+import React, { createContext } from 'react'
 import {
   useMenuRef,
   handleMenuKeyDownEvents,
@@ -22,12 +22,12 @@ const styles = ({ origin }) =>
     css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
     css(stylesheet['.psds-actionmenu__animation']({ slide }))
   )
+
 export const ActionMenuContext = createContext()
 
 export const ActionMenu = React.forwardRef(
   ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
     const ref = useMenuRef()
-    useImperativeHandle(forwardedRef, () => ref.current)
     useCloseOnDocumentEvents(ref, onClose)
     const handleKeyDown = e => {
       handleMenuKeyDownEvents(e)
@@ -37,20 +37,21 @@ export const ActionMenu = React.forwardRef(
     }
 
     return (
-      <ul
-        {...styles({ origin })}
-        {...filterReactProps(props)}
-        ref={ref}
-        onKeyDown={handleKeyDown}
-        onKeyUp={handleMenuKeyUpEvents}
-        role="menu"
-      >
-        <ActionMenuContext.Provider
-          value={{ onClickContext: onClick, onClose }}
+      <div ref={forwardedRef} {...filterReactProps(props)}>
+        <ul
+          {...styles({ origin })}
+          ref={ref}
+          onKeyDown={handleKeyDown}
+          onKeyUp={handleMenuKeyUpEvents}
+          role="menu"
         >
-          {children}
-        </ActionMenuContext.Provider>
-      </ul>
+          <ActionMenuContext.Provider
+            value={{ onClickContext: onClick, onClose }}
+          >
+            {children}
+          </ActionMenuContext.Provider>
+        </ul>
+      </div>
     )
   }
 )

@@ -422,7 +422,7 @@ storiesOf('onClose', module).add('toggle show/hide', () => {
         gravida arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit
         amet. Aliquam sem et tortor consequat id. Vitae tempus quam pellentesque
         nec nam. Platea dictumst quisque sagittis purus sit amet volutpat.
-        <BelowLeft
+        <BelowRight
           when={open}
           show={
             <div>
@@ -448,7 +448,7 @@ storiesOf('onClose', module).add('toggle show/hide', () => {
           >
             {!open ? 'click to show' : 'anchor'}
           </div>
-        </BelowLeft>
+        </BelowRight>
         Convallis tellus id interdum velit laoreet id. Convallis tellus id
         interdum velit laoreet id donec ultrices. Metus vulputate eu scelerisque
         felis imperdiet. Luctus venenatis lectus magna fringilla urna porttitor.
