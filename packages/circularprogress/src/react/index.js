@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index.js'
@@ -46,7 +47,8 @@ const styles = {
 const CircularProgress = React.forwardRef((props, ref) => {
   const themeName = useTheme()
 
-  const value = typeof props.value === 'undefined' ? 25 : props.value
+  const isIndeterminate = typeof props.value === 'undefined'
+  const value = isIndeterminate ? 25 : props.value
   const dashOffset = ((100 - value) / 100) * circumference
 
   return (
@@ -55,6 +57,9 @@ const CircularProgress = React.forwardRef((props, ref) => {
       {...styles.circularprogress(themeName, props)}
       {...filterReactProps(props)}
     >
+      <ScreenReaderOnly role="region" aria-live="off">
+        {isIndeterminate ? 'Loading...' : `${value}% complete`}
+      </ScreenReaderOnly>
       <svg
         {...styles.svg(themeName, props)}
         viewBox={`0 0 ${vars.style.width} ${vars.style.width}`}
