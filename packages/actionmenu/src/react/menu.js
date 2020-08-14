@@ -3,7 +3,7 @@
 
 import { css, compose } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import React, { createContext } from 'react'
+import React, { createContext, useImperativeHandle } from 'react'
 import {
   useMenuRef,
   handleMenuKeyDownEvents,
@@ -28,7 +28,9 @@ export const ActionMenuContext = createContext()
 export const ActionMenu = React.forwardRef(
   ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
     const ref = useMenuRef()
+    useImperativeHandle(forwardedRef, () => ref.current)
     useCloseOnDocumentEvents(ref, onClose)
+
     const handleKeyDown = e => {
       handleMenuKeyDownEvents(e)
       if (e.key === 'Escape') {
@@ -37,21 +39,20 @@ export const ActionMenu = React.forwardRef(
     }
 
     return (
-      <div ref={forwardedRef} {...filterReactProps(props)}>
-        <ul
-          {...styles({ origin })}
-          ref={ref}
-          onKeyDown={handleKeyDown}
-          onKeyUp={handleMenuKeyUpEvents}
-          role="menu"
+      <ul
+        {...styles({ origin })}
+        ref={ref}
+        onKeyDown={handleKeyDown}
+        onKeyUp={handleMenuKeyUpEvents}
+        role="menu"
+        {...filterReactProps(props)}
+      >
+        <ActionMenuContext.Provider
+          value={{ onClickContext: onClick, onClose, originContext: origin }}
         >
-          <ActionMenuContext.Provider
-            value={{ onClickContext: onClick, onClose }}
-          >
-            {children}
-          </ActionMenuContext.Provider>
-        </ul>
-      </div>
+          {children}
+        </ActionMenuContext.Provider>
+      </ul>
     )
   }
 )

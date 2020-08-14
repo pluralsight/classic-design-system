@@ -10,7 +10,7 @@ import React, {
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index.js'
-import { origins, tagName } from '../vars/index.js'
+import { tagName } from '../vars/index.js'
 import { ActionMenuContext } from './menu.js'
 import { Arrow } from './arrow.js'
 
@@ -20,7 +20,7 @@ const styles = {
       css(stylesheet['.psds-actionmenu__item-container']),
       disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
     ),
-  item: ({ disabled, hasSubMenu }) =>
+  item: ({ hasSubMenu }) =>
     compose(
       css(stylesheet['.psds-actionmenu__item']),
       css({
@@ -57,7 +57,9 @@ export const Item = forwardRef(
     },
     forwardedRef
   ) => {
-    const { onClickContext, onClose } = useContext(ActionMenuContext)
+    const { onClickContext, onClose, originContext } = useContext(
+      ActionMenuContext
+    )
     const ref = useRef()
     const subMenuRef = useRef()
     useImperativeHandle(forwardedRef, () => ref.current)
@@ -119,7 +121,7 @@ export const Item = forwardRef(
           </div>
         </TagName>
         <ul
-          {...styles.nested({ origin })}
+          {...styles.nested({ origin: origin || originContext })}
           role="menu"
           aria-expanded={open}
           ref={subMenuRef}
@@ -134,8 +136,7 @@ export const Item = forwardRef(
 
 Item.displayName = 'ActionMenu.Item'
 Item.defaultProps = {
-  tagName: tagName.a,
-  origin: origins.topRight
+  tagName: tagName.a
 }
 Item.propTypes = {
   children: PropTypes.node,
