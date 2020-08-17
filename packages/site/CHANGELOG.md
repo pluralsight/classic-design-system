@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [20.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@20.0.1...@pluralsight/ps-design-system-site@20.0.2) (2020-08-17)
+
+
+### Bug Fixes
+
+* **actionmenu:** ensures a util grabbing ref and correctly update coords ([#1103](https://github.com/pluralsight/design-system/issues/1103)) ([6c16208](https://github.com/pluralsight/design-system/commit/6c1620864dd79c44c9375ee2174850ed637334f8))
+
+
+
+
+
 ## [20.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-site@20.0.0...@pluralsight/ps-design-system-site@20.0.1) (2020-08-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-site
