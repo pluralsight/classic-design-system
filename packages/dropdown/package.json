@@ -19,7 +19,7 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
-  "gitHead": "ea4595a4bff6a08255102a0321bb641dc4d25913",
+  "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^14.0.2",
     "@pluralsight/ps-design-system-core": "^6.4.0",
