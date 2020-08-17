@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@1.1.8...@pluralsight/ps-design-system-navbar@1.1.9) (2020-08-17)
+
+
+### Bug Fixes
+
+* bad build ([d699053](https://github.com/pluralsight/design-system/commit/d6990531d1a1c080f4f8f00d4af24f930b1a2f9f))
+
+
+
+
+
 ## [1.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@1.1.7...@pluralsight/ps-design-system-navbar@1.1.8) (2020-08-17)
 
 
