@@ -72,10 +72,13 @@ export const Item = forwardRef(
     const handleMouseOut = e => {
       hasSubMenu && setOpen(false)
     }
-    const handleArrowRight = e => {
+    const handleKeyDown = e => {
       if (e.key === 'ArrowRight' && hasSubMenu) {
         setOpen(true)
         e.stopPropagation()
+      }
+      if (e.key === 'Enter' || e.key === 'Space') {
+        e.target.firstElementChild.click()
       }
       e.preventDefault()
     }
@@ -83,11 +86,6 @@ export const Item = forwardRef(
       if (e.key === 'ArrowLeft' && hasSubMenu) {
         setOpen(false)
         e.stopPropagation()
-      }
-    }
-    const handleReturnUp = e => {
-      if (e.key === 'Enter' || e.key === 'Space') {
-        e.target.firstElementChild.click()
       }
     }
     const handleClick = e => {
@@ -102,8 +100,7 @@ export const Item = forwardRef(
         ref={ref}
         disabled={disabled}
         tabIndex={!disabled ? '-1' : undefined}
-        onKeyDown={handleArrowRight}
-        onKeyUp={handleReturnUp}
+        onKeyDown={handleKeyDown}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >

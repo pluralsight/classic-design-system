@@ -13,7 +13,6 @@ exports[`Storyshots Blur onMount example 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -41,7 +40,6 @@ exports[`Storyshots Blur onMount example 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -69,7 +67,6 @@ exports[`Storyshots Blur onMount example 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -111,7 +108,6 @@ exports[`Storyshots customized styles item style 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -144,7 +140,6 @@ exports[`Storyshots customized styles item style 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -177,7 +172,6 @@ exports[`Storyshots customized styles item style 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -224,7 +218,6 @@ exports[`Storyshots disabled item 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -253,7 +246,6 @@ exports[`Storyshots disabled item 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -281,7 +273,6 @@ exports[`Storyshots disabled item 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -310,7 +301,6 @@ exports[`Storyshots disabled item 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -352,7 +342,6 @@ exports[`Storyshots disabled links 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -382,7 +371,6 @@ exports[`Storyshots disabled links 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -411,7 +399,6 @@ exports[`Storyshots disabled links 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -441,7 +428,6 @@ exports[`Storyshots disabled links 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -485,7 +471,6 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -514,7 +499,6 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -556,7 +540,6 @@ exports[`Storyshots disabled nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -585,7 +568,6 @@ exports[`Storyshots disabled nested 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -643,7 +625,6 @@ exports[`Storyshots disabled single, disabled 1`] = `
       data-css-5nt1oa=""
       disabled={true}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -685,7 +666,6 @@ exports[`Storyshots dividers edge 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -730,7 +710,6 @@ exports[`Storyshots dividers sandwich 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -761,7 +740,6 @@ exports[`Storyshots dividers sandwich 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -789,7 +767,6 @@ exports[`Storyshots dividers sandwich 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -831,7 +808,6 @@ exports[`Storyshots link a w/ href 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -874,7 +850,6 @@ exports[`Storyshots menu items ellipses with icon 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -939,7 +914,6 @@ exports[`Storyshots menu items ellipsis 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -985,7 +959,6 @@ exports[`Storyshots menu items long text 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1017,7 +990,6 @@ exports[`Storyshots menu items long text 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1063,7 +1035,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1092,7 +1063,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1121,7 +1091,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1150,7 +1119,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1179,7 +1147,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1208,7 +1175,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1237,7 +1203,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1266,7 +1231,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1295,7 +1259,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1324,7 +1287,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1353,7 +1315,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1382,7 +1343,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1411,7 +1371,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1440,7 +1399,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1469,7 +1427,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1498,7 +1455,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1527,7 +1483,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1556,7 +1511,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1585,7 +1539,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1614,7 +1567,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1643,7 +1595,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1672,7 +1623,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1701,7 +1651,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1730,7 +1679,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1759,7 +1707,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1788,7 +1735,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1817,7 +1763,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1846,7 +1791,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1875,7 +1819,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1904,7 +1847,6 @@ exports[`Storyshots menu items lots 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1947,7 +1889,6 @@ exports[`Storyshots menu items multiple 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -1975,7 +1916,6 @@ exports[`Storyshots menu items multiple 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2003,7 +1943,6 @@ exports[`Storyshots menu items multiple 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2045,7 +1984,6 @@ exports[`Storyshots menu items null item 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2073,7 +2011,6 @@ exports[`Storyshots menu items null item 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2115,7 +2052,6 @@ exports[`Storyshots menu items one 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2157,7 +2093,6 @@ exports[`Storyshots menu items with icons 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2208,7 +2143,6 @@ exports[`Storyshots menu items with icons 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2259,7 +2193,6 @@ exports[`Storyshots menu items with icons 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2322,7 +2255,6 @@ exports[`Storyshots nested no origin 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2364,7 +2296,6 @@ exports[`Storyshots nested no origin 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -2392,7 +2323,6 @@ exports[`Storyshots nested no origin 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -2434,7 +2364,6 @@ exports[`Storyshots nested no origin 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -2462,7 +2391,6 @@ exports[`Storyshots nested no origin 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -2490,7 +2418,6 @@ exports[`Storyshots nested no origin 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -2523,7 +2450,6 @@ exports[`Storyshots nested no origin 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -2551,7 +2477,6 @@ exports[`Storyshots nested no origin 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -2593,7 +2518,6 @@ exports[`Storyshots nested no origin 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -2621,7 +2545,6 @@ exports[`Storyshots nested no origin 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -2653,7 +2576,6 @@ exports[`Storyshots nested no origin 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -2706,7 +2628,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -2748,7 +2669,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -2776,7 +2696,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -2818,7 +2737,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -2846,7 +2764,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -2874,7 +2791,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -2907,7 +2823,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -2935,7 +2850,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -2977,7 +2891,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3005,7 +2918,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3037,7 +2949,6 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -3091,7 +3002,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -3133,7 +3043,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3161,7 +3070,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3203,7 +3111,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3231,7 +3138,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3259,7 +3165,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3292,7 +3197,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3320,7 +3224,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3362,7 +3265,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3390,7 +3292,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3422,7 +3323,6 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -3476,7 +3376,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -3518,7 +3417,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3546,7 +3444,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3588,7 +3485,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3616,7 +3512,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3644,7 +3539,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3677,7 +3571,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3705,7 +3598,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3747,7 +3639,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3775,7 +3666,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -3807,7 +3697,6 @@ exports[`Storyshots nested origin topLeft 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -3861,7 +3750,6 @@ exports[`Storyshots nested origin topRight 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -3903,7 +3791,6 @@ exports[`Storyshots nested origin topRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3931,7 +3818,6 @@ exports[`Storyshots nested origin topRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -3973,7 +3859,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -4001,7 +3886,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -4029,7 +3913,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -4062,7 +3945,6 @@ exports[`Storyshots nested origin topRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -4090,7 +3972,6 @@ exports[`Storyshots nested origin topRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -4132,7 +4013,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -4160,7 +4040,6 @@ exports[`Storyshots nested origin topRight 1`] = `
               <li
                 data-css-kd3kna=""
                 onKeyDown={[Function]}
-                onKeyUp={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
                 role="none"
@@ -4192,7 +4071,6 @@ exports[`Storyshots nested origin topRight 1`] = `
       <li
         data-css-kd3kna=""
         onKeyDown={[Function]}
-        onKeyUp={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
         role="none"
@@ -4235,7 +4113,6 @@ exports[`Storyshots onClick flat 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4263,7 +4140,6 @@ exports[`Storyshots onClick flat 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4291,7 +4167,6 @@ exports[`Storyshots onClick flat 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4333,7 +4208,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4361,7 +4235,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4403,7 +4276,6 @@ exports[`Storyshots onClick nested 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -4431,7 +4303,6 @@ exports[`Storyshots onClick nested 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -4473,7 +4344,6 @@ exports[`Storyshots onClick nested 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -4501,7 +4371,6 @@ exports[`Storyshots onClick nested 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -4529,7 +4398,6 @@ exports[`Storyshots onClick nested 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -4562,7 +4430,6 @@ exports[`Storyshots onClick nested 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -4590,7 +4457,6 @@ exports[`Storyshots onClick nested 1`] = `
         <li
           data-css-kd3kna=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
           role="none"
@@ -4632,7 +4498,6 @@ exports[`Storyshots onClick nested 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -4660,7 +4525,6 @@ exports[`Storyshots onClick nested 1`] = `
             <li
               data-css-kd3kna=""
               onKeyDown={[Function]}
-              onKeyUp={[Function]}
               onMouseOut={[Function]}
               onMouseOver={[Function]}
               role="none"
@@ -4692,7 +4556,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4720,7 +4583,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4748,7 +4610,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4776,7 +4637,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4804,7 +4664,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4832,7 +4691,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4860,7 +4718,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4888,7 +4745,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4916,7 +4772,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4944,7 +4799,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -4972,7 +4826,6 @@ exports[`Storyshots onClick nested 1`] = `
     <li
       data-css-kd3kna=""
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
       role="none"
@@ -5053,7 +4906,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5081,7 +4933,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5109,7 +4960,6 @@ exports[`Storyshots onClose toggle show/hide 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5187,7 +5037,6 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5215,7 +5064,6 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5243,7 +5091,6 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5321,7 +5168,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5349,7 +5195,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
@@ -5377,7 +5222,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
           <li
             data-css-kd3kna=""
             onKeyDown={[Function]}
-            onKeyUp={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
             role="none"
