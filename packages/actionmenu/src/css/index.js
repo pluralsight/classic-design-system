@@ -59,22 +59,22 @@ export default {
       motion.speedNormal
     } forwards`
   }),
-  [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
     ...menuOriginTop,
     right: 0,
     top: 0
   },
-  [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
     ...menuOriginBottom,
     bottom: 0,
     right: 0
   },
-  [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
     ...menuOriginTop,
     left: 0,
     top: 0
   },
-  [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
     ...menuOriginBottom,
     left: 0,
     bottom: 0
@@ -119,22 +119,22 @@ export default {
       visibility: 'hidden'
     }
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
     ...menuOriginRight,
     right: 0,
     top: `calc(-1 * ${vars.style.menuPaddingVert})`
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
     ...menuOriginRight,
     bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
     right: 0
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
     ...menuOriginLeft,
     left: 0,
     top: `calc(-1 * ${vars.style.menuPaddingVert})`
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
     ...menuOriginLeft,
     bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
     left: 0
