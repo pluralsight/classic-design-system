@@ -32,6 +32,7 @@ const menuOriginTop = {
 const menuOriginBottom = {
   transform: `translate(0, ${layout.spacingXSmall})`
 }
+const menuMinWidth = '160px'
 
 export default {
   '@keyframes psds-actionmenu__keyframes__slide': {
@@ -47,7 +48,7 @@ export default {
     background: colorsBackgroundLight[3],
     borderRadius: '2px',
     padding: `${vars.style.menuPaddingVert} 0`,
-    minWidth: '160px',
+    minWidth: menuMinWidth,
     maxWidth: '320px',
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
@@ -103,20 +104,32 @@ export default {
     },
     '&:hover > ul:not(:empty)': {
       visibility: 'visible',
+      height: 'auto',
+      minWidth: menuMinWidth,
+      width: 'auto',
       opacity: 1
     }
   },
   '.psds-actionmenu__nested': {
     label: 'subMenu',
     display: 'inline-block',
+    height: 0,
+    minWidth: 0,
+    width: 0,
     position: 'absolute',
     zIndex: 1,
     transition: `transform ${motion.speedNormal}, opacity ${motion.speedNormal}`,
     '&[aria-expanded="true"]': {
-      visibility: 'visible'
+      visibility: 'visible',
+      height: 'auto',
+      minWidth: menuMinWidth,
+      width: 'auto'
     },
     '&[aria-expanded="false"]': {
-      visibility: 'hidden'
+      visibility: 'hidden',
+      height: 0,
+      minWidth: 0,
+      width: 0
     }
   },
   [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
