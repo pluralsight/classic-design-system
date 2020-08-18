@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navbar",
-  "version": "1.1.7",
+  "version": "1.1.9",
   "description": "Navbar UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,6 +20,7 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
+  "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
@@ -34,7 +35,7 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^14.0.1",
+    "@pluralsight/ps-design-system-actionmenu": "^14.0.3",
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-navbrand": "^1.1.6",
     "@pluralsight/ps-design-system-navitem": "*",

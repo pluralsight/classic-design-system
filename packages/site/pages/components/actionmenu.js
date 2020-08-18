@@ -240,7 +240,8 @@ export default _ => (
               null,
               <code>topLeft</code>,
               <span>
-                orientation (from <code>ActionMenu.origins</code>) of root menu
+                orientation (from <code>ActionMenu.origins</code>) of nested
+                menus
               </span>
             ])
           ],
@@ -271,10 +272,10 @@ export default _ => (
               'origin',
               PropTypes.union(ActionMenu.origins),
               null,
-              <code>topLeft</code>,
+              null,
               <span>
-                orientation (from <code>ActionMenu.origins</code>) of nested
-                menus
+                override orientation (from <code>ActionMenu.origins</code>) of
+                items nested menu
               </span>
             ]),
             PropTypes.row([
@@ -542,12 +543,10 @@ export default _ => (
   ref => (
     <ActionMenu origin={ActionMenu.origins.bottomRight} ref={ref}>
     <ActionMenu.Item
-      origin={ActionMenu.origins.bottomRight}
       nested={
         <React.Fragment>
           <ActionMenu.Item>Nest 1</ActionMenu.Item>
           <ActionMenu.Item
-            origin={ActionMenu.origins.bottomRight}
             nested={
               <React.Fragment>
                 <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
@@ -561,7 +560,6 @@ export default _ => (
           <ActionMenu.Divider />
           <ActionMenu.Item>Nest 3</ActionMenu.Item>
           <ActionMenu.Item
-            origin={ActionMenu.origins.bottomRight}
             nested={
               <React.Fragment>
                 <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>

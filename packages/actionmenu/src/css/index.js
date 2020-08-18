@@ -32,6 +32,7 @@ const menuOriginTop = {
 const menuOriginBottom = {
   transform: `translate(0, ${layout.spacingXSmall})`
 }
+const menuMinWidth = '160px'
 
 export default {
   '@keyframes psds-actionmenu__keyframes__slide': {
@@ -47,7 +48,7 @@ export default {
     background: colorsBackgroundLight[3],
     borderRadius: '2px',
     padding: `${vars.style.menuPaddingVert} 0`,
-    minWidth: '160px',
+    minWidth: menuMinWidth,
     maxWidth: '320px',
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
@@ -59,22 +60,22 @@ export default {
       motion.speedNormal
     } forwards`
   }),
-  [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
     ...menuOriginTop,
     right: 0,
     top: 0
   },
-  [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
     ...menuOriginBottom,
     bottom: 0,
     right: 0
   },
-  [`.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.topRight}`]: {
     ...menuOriginTop,
     left: 0,
     top: 0
   },
-  [`.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
+  [`.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
     ...menuOriginBottom,
     left: 0,
     bottom: 0
@@ -103,38 +104,50 @@ export default {
     },
     '&:hover > ul:not(:empty)': {
       visibility: 'visible',
+      height: 'auto',
+      minWidth: menuMinWidth,
+      width: 'auto',
       opacity: 1
     }
   },
   '.psds-actionmenu__nested': {
     label: 'subMenu',
     display: 'inline-block',
+    height: 0,
+    minWidth: 0,
+    width: 0,
     position: 'absolute',
     zIndex: 1,
     transition: `transform ${motion.speedNormal}, opacity ${motion.speedNormal}`,
     '&[aria-expanded="true"]': {
-      visibility: 'visible'
+      visibility: 'visible',
+      height: 'auto',
+      minWidth: menuMinWidth,
+      width: 'auto'
     },
     '&[aria-expanded="false"]': {
-      visibility: 'hidden'
+      visibility: 'hidden',
+      height: 0,
+      minWidth: 0,
+      width: 0
     }
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
     ...menuOriginRight,
     right: 0,
     top: `calc(-1 * ${vars.style.menuPaddingVert})`
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
     ...menuOriginRight,
     bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
     right: 0
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
     ...menuOriginLeft,
     left: 0,
     top: `calc(-1 * ${vars.style.menuPaddingVert})`
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
     ...menuOriginLeft,
     bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
     left: 0
