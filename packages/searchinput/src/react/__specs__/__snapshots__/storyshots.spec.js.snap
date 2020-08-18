@@ -77,6 +77,13 @@ exports[`Storyshots SearchInput when loading 1`] = `
       <div
         data-css-1abx40i=""
       >
+        <div
+          aria-live="off"
+          data-css-6wu9td=""
+          role="region"
+        >
+          Loading...
+        </div>
         <svg
           data-css-1txt1eh=""
           version="1.1"
