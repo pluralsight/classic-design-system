@@ -46,7 +46,7 @@ describe('ActionMenu', () => {
     })
   })
 
-  it('fires onClick on option keyUp', () => {
+  it('fires onClick on option keyDown', () => {
     return new Promise(resolve => {
       function handleClick(evt, value) {
         expect(value).toEqual('two')
@@ -71,7 +71,7 @@ describe('ActionMenu', () => {
         </ActionMenu>
       )
       const opt = getByTestId('testtwo')
-      fireEvent.keyUp(opt, { key: 'Enter', code: 13 })
+      fireEvent.keyDown(opt, { key: 'Enter', code: 13 })
     })
   })
 })

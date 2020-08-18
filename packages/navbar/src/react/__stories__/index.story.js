@@ -83,7 +83,7 @@ storiesOf('Navbar', module).add('desktop', _ => {
           user={
             <BelowRight
               show={
-                <ActionMenu>
+                <ActionMenu origin={ActionMenu.origins.topLeft}>
                   <ActionMenu.Item>Lame</ActionMenu.Item>
                 </ActionMenu>
               }

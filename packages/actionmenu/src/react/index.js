@@ -30,7 +30,7 @@ ActionMenu.propTypes = {
 }
 ActionMenu.defaultProps = {
   onClose: () => {},
-  origin: vars.origins.topRight
+  origin: vars.origins.topLeft
 }
 
 export const origins = vars.origins
