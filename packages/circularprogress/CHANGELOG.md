@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@6.1.5...@pluralsight/ps-design-system-circularprogress@6.2.0) (2020-08-18)
+
+
+### Features
+
+* **circularprogress:** add screenreader text ([7586a1c](https://github.com/pluralsight/design-system/commit/7586a1cfd87eb4d6f83ce30a04c05b13316079f9))
+
+
+
+
+
 ## [6.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@6.1.4...@pluralsight/ps-design-system-circularprogress@6.1.5) (2020-08-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress
