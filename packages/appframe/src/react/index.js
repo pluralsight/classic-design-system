@@ -20,6 +20,7 @@ import { breakpoints } from '@pluralsight/ps-design-system-core'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { isFunction, usePrevious } from '@pluralsight/ps-design-system-util'
+import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
 
 import stylesheet from '../css/index.js'
 import polyfillElementClosest from '../js/polyfill-element-closest.js'
@@ -73,7 +74,8 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
     onRequestSideNavClose,
     onRequestSideNavOpen,
     sidenav,
-    topnav
+    topnav,
+    cookieMessage
   } = props
 
   const ref = React.useRef()
@@ -170,6 +172,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
           </main>
         </Container>
       </div>
+      <NavCookieBanner message={cookieMessage} />
     </AppFrameContext.Provider>
   )
 })
@@ -183,7 +186,8 @@ AppFrame.propTypes = {
   onRequestSideNavOpen: PropTypes.func,
   sidenav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   sidenavOpen: PropTypes.bool,
-  topnav: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
+  topnav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  cookieMessage: PropTypes.node
 }
 
 function SkipBanner(props) {

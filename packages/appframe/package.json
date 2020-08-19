@@ -25,6 +25,7 @@
     "@pluralsight/ps-design-system-button": "^18.0.19",
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "*",
+    "@pluralsight/ps-design-system-navcookiebanner": "*",
     "@pluralsight/ps-design-system-scrollable": "^1.1.4",
     "@pluralsight/ps-design-system-util": "^4.0.1",
     "body-scroll-lock": "^3.0.3",
