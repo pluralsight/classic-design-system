@@ -150,7 +150,13 @@ export default {
 
   // vert
   '.psds-navitem__vert-container': {
-    display: 'inline-block'
+    display: 'inline-block',
+    marginTop: layout.spacingXXSmall,
+
+    '& a, & button': {
+      paddingTop: '6px',
+      paddingBottom: '6px'
+    }
   },
   '.psds-navitem__vert-caret': {
     position: 'absolute',
