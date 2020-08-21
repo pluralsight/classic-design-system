@@ -1,7 +1,7 @@
 import {
   colorsBackgroundLight,
   colorsBorder,
-  colorsPrimaryAction,
+  colorsBackgroundUtility,
   colorsTextIcon,
   layout,
   motion,
@@ -89,17 +89,17 @@ export default {
       outline: 'none'
     },
     '&:focus': {
-      background: colorsPrimaryAction.background,
-      color: colorsTextIcon.highOnDark
+      background: colorsBackgroundUtility[25],
+      color: colorsTextIcon.highOnLight
     },
     '&:focus > :first-child [data-submenu-arrow]': {
-      color: colorsTextIcon.highOnDark
+      color: colorsTextIcon.highOnLight
     },
     '&:hover:focus > :first-child [data-submenu-arrow]': {
       color: colorsTextIcon.highOnLight
     },
     '&:hover:not([disabled])': {
-      background: colorsBackgroundLight[2],
+      background: colorsBackgroundUtility[25],
       color: colorsTextIcon.highOnLight
     },
     '&:hover > ul:not(:empty)': {
