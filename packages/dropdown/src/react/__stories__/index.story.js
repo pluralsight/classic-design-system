@@ -256,6 +256,22 @@ storiesOf('menu', module)
       }
     />
   ))
+  .add('w/ value', _ => (
+    <Dropdown
+      label="Level"
+      value="three-1"
+      menu={
+        <>
+          <Dropdown.Item value="one">One item</Dropdown.Item>
+          <Dropdown.Item value="two">Two item</Dropdown.Item>
+          <Dropdown.Item value="three">Three item</Dropdown.Item>
+          <Dropdown.Item value="three-1">
+            Three and the amazing item
+          </Dropdown.Item>
+        </>
+      }
+    />
+  ))
   .add('w/ subLabel', _ => (
     <Dropdown
       label="Level"
