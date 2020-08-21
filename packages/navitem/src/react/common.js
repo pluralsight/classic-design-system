@@ -4,12 +4,18 @@ import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { alignments } from '../vars/index.js'
 import stylesheet from '../css/index.js'
 
 const styles = {
   bar: props =>
     css(
       stylesheet['.psds-navitem__bar'],
+      stylesheet[
+        `.psds-navitem__${
+          props.alignment === alignments.vertical ? 'vert' : 'horz'
+        }-bar`
+      ],
       props.selected && stylesheet['.psds-navitem__bar--selected'],
       stylesFor('bar', props),
       props.selected && stylesFor('bar--selected', props)
@@ -25,6 +31,7 @@ export function Bar(props) {
   return <div className={styles.bar(props)} />
 }
 Bar.propTypes = {
+  alignment: PropTypes.oneOf(Object.keys(alignments).map(k => alignments[k])), // eslint-disable-line react/no-unused-prop-types
   selected: PropTypes.bool // eslint-disable-line react/no-unused-prop-types
 }
 

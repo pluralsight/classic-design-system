@@ -856,7 +856,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
             <div
               className={
                 Object {
-                  "data-css-1pe8c3g": "",
+                  "data-css-1pig4yn": "",
                 }
               }
             />
@@ -1293,7 +1293,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
             <div
               className={
                 Object {
-                  "data-css-1pe8c3g": "",
+                  "data-css-1pig4yn": "",
                 }
               }
             />
@@ -1730,7 +1730,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
             <div
               className={
                 Object {
-                  "data-css-1pe8c3g": "",
+                  "data-css-1pig4yn": "",
                 }
               }
             />

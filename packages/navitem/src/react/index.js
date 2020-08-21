@@ -6,11 +6,10 @@ import { HorzLayout } from './horz.js'
 import { VertLayout } from './vert.js'
 
 const NavItem = React.forwardRef((props, forwardedRef) => {
-  const { alignment, ...rest } = props
   return props.alignment === 'vertical' ? (
-    <VertLayout ref={forwardedRef} {...rest} />
+    <VertLayout ref={forwardedRef} {...props} />
   ) : (
-    <HorzLayout ref={forwardedRef} {...rest} />
+    <HorzLayout ref={forwardedRef} {...props} />
   )
 })
 NavItem.displayName = 'NavItem'

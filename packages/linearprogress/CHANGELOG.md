@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@5.0.13...@pluralsight/ps-design-system-linearprogress@5.1.0) (2020-08-18)
+
+
+### Features
+
+* **linearprogress:** add screenreader text ([a8efbb2](https://github.com/pluralsight/design-system/commit/a8efbb21c6b4dd6ffb03bdc630a5470f142a3d59))
+
+
+
+
+
 ## [5.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@5.0.12...@pluralsight/ps-design-system-linearprogress@5.0.13) (2020-08-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-linearprogress

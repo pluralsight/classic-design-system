@@ -5,6 +5,13 @@ exports[`Storyshots animation animates to new values 1`] = `
   <div
     data-css-1ie49mc=""
   >
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      0% complete
+    </div>
     <svg
       data-css-r8je9y=""
       version="1.1"
@@ -44,6 +51,13 @@ exports[`Storyshots indeterminate medium 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
   <svg
     data-css-1txt1eh=""
     version="1.1"
@@ -72,6 +86,13 @@ exports[`Storyshots indeterminate small 1`] = `
 <div
   data-css-1abx40i=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
   <svg
     data-css-1txt1eh=""
     version="1.1"
@@ -100,6 +121,13 @@ exports[`Storyshots size medium 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    75% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -128,6 +156,13 @@ exports[`Storyshots size small 1`] = `
 <div
   data-css-1abx40i=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    75% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -157,6 +192,13 @@ exports[`Storyshots style overrides className (no viz change) 1`] = `
   className="someString"
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
   <svg
     data-css-1txt1eh=""
     version="1.1"
@@ -190,6 +232,13 @@ exports[`Storyshots style overrides style 1`] = `
     }
   }
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
   <svg
     data-css-1txt1eh=""
     version="1.1"
@@ -218,6 +267,13 @@ exports[`Storyshots value value 0 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    0% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -246,6 +302,13 @@ exports[`Storyshots value value 25 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    25% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -274,6 +337,13 @@ exports[`Storyshots value value 33 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    33% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -302,6 +372,13 @@ exports[`Storyshots value value 50 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    50% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -330,6 +407,13 @@ exports[`Storyshots value value 66 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    66% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -358,6 +442,13 @@ exports[`Storyshots value value 75 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    75% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
@@ -386,6 +477,13 @@ exports[`Storyshots value value 100 1`] = `
 <div
   data-css-1ie49mc=""
 >
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    100% complete
+  </div>
   <svg
     data-css-r8je9y=""
     version="1.1"
