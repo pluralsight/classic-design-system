@@ -48,6 +48,10 @@ export default {
     cursor: 'pointer'
   },
 
+  '.psds-radio-button__disabled': {
+    cursor: 'not-allowed'
+  },
+
   '.psds-radio-button__halo': {
     transform: 'translateY(3px)'
   },

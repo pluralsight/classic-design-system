@@ -193,7 +193,7 @@ export default {
 
   '.psds-actionmenu__item--disabled': {
     opacity: '50%',
-    cursor: 'auto',
+    cursor: 'not-allowed',
     outline: 'none',
     pointerEvents: 'none'
   },
