@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@14.0.3...@pluralsight/ps-design-system-actionmenu@14.1.0) (2020-08-24)
+
+
+### Features
+
+* **actionmenu:** update hover and focus styles ([#1109](https://github.com/pluralsight/design-system/issues/1109)) ([c3b5c83](https://github.com/pluralsight/design-system/commit/c3b5c83fce78983e99c084c279bcb60dcf6f6daa))
+
+
+
+
+
 ## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@14.0.2...@pluralsight/ps-design-system-actionmenu@14.0.3) (2020-08-17)
 
 
