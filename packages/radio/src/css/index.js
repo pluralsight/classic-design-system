@@ -48,7 +48,7 @@ export default {
     cursor: 'pointer'
   },
 
-  '.psds-radio-button__disabled': {
+  '.psds-radio-button--disabled': {
     cursor: 'not-allowed'
   },
 
