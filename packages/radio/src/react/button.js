@@ -13,7 +13,7 @@ const styles = {
   button: ({ disabled }) =>
     compose(
       css(stylesheet['.psds-radio-button']),
-      disabled && css(stylesheet['.psds-radio-button__disabled'])
+      disabled && css(stylesheet['.psds-radio-button--disabled'])
     ),
   circle: (themeName, checked) =>
     compose(
