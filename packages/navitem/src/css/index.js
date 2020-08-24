@@ -84,11 +84,11 @@ export default {
   // vert
   '.psds-navitem__vert-container': {
     display: 'inline-block',
-    marginTop: layout.spacingXXSmall,
+    marginTop: '6px',
 
     '& a, & button': {
-      paddingTop: '0',
-      paddingBottom: '0'
+      paddingTop: 0,
+      paddingBottom: 0
     }
   },
   '.psds-navitem__vert-caret': {
@@ -98,7 +98,7 @@ export default {
     transform: 'translateY(-50%)'
   },
   '.psds-navitem__vert-icon': {
-    marginBottom: layout.spacingXXSmall
+    marginBottom: '2px'
   },
   '.psds-navitem__vert-label': {
     fontWeight: type.fontWeightBold,
@@ -115,10 +115,10 @@ export default {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    height: '48px',
+    height: '44px',
     width: '76px'
   },
   '.psds-navitem__vert-bar': {
-    marginTop: '2px'
+    marginTop: '4px'
   }
 }
