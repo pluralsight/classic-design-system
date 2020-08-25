@@ -15,7 +15,7 @@ exports[`Storyshots Components | Typeahead / appearances default 1`] = `
           data-css-1yz65u0=""
         >
           <input
-            data-css-1aru8qc=""
+            data-css-zjzpem=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
@@ -68,7 +68,7 @@ exports[`Storyshots Components | Typeahead / appearances subtle 1`] = `
           data-css-rltil5=""
         >
           <input
-            data-css-egljo0=""
+            data-css-r9d4vy=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
@@ -121,7 +121,7 @@ exports[`Storyshots Components | Typeahead / controlled default 1`] = `
           data-css-1yz65u0=""
         >
           <input
-            data-css-1aru8qc=""
+            data-css-zjzpem=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
@@ -179,7 +179,7 @@ exports[`Storyshots Components | Typeahead / form props all 1`] = `
           data-css-1yz65u0=""
         >
           <input
-            data-css-1aru8qc=""
+            data-css-zjzpem=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
@@ -243,7 +243,7 @@ exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
           data-css-1yz65u0=""
         >
           <input
-            data-css-1aru8qc=""
+            data-css-zjzpem=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
@@ -326,7 +326,7 @@ exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] =
           data-css-1yz65u0=""
         >
           <input
-            data-css-1aru8qc=""
+            data-css-zjzpem=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
@@ -384,7 +384,7 @@ exports[`Storyshots Components | Typeahead / uncontrolled default 1`] = `
           data-css-1yz65u0=""
         >
           <input
-            data-css-1aru8qc=""
+            data-css-zjzpem=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}

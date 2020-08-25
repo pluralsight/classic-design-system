@@ -311,7 +311,7 @@ exports[`Storyshots disabled true 1`] = `
 >
   <label
     aria-checked={false}
-    data-css-1yf296h=""
+    data-css-wytdm9=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -421,7 +421,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
 >
   <label
     aria-checked={false}
-    data-css-1yf296h=""
+    data-css-wytdm9=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
