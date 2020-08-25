@@ -1,6 +1,6 @@
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
-import React, { useRef } from 'react'
+import React, { useRef, createContext } from 'react'
 import { canUseDOM } from 'exenv'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -99,6 +99,8 @@ const CaretDown = _ => (
   </svg>
 )
 
+export const DropdownContext = createContext()
+
 const Dropdown = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
   const allProps = { ...props, themeName }
@@ -110,17 +112,20 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     },
     [props.menu, props.value]
   )
+
   const [selectedLabel, setSelectedLabel] = React.useState(
     itemMatchingValue ? itemMatchingValue.props.children : null
   )
+  const [selectedValue, setSelectedValue] = React.useState(props.value)
 
   React.useEffect(
     _ => {
       setSelectedLabel(
         itemMatchingValue ? itemMatchingValue.props.children : null
       )
+      setSelectedValue(props.value)
     },
-    [itemMatchingValue]
+    [itemMatchingValue, props.value]
   )
 
   function handleToggleOpen(evt) {
@@ -138,6 +143,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
 
   function handleMenuChange(evt, value) {
     const innerText = evt.currentTarget.innerText
+    setSelectedValue(value)
     setSelectedLabel(value === innerText ? value : innerText)
     setOpen(false)
     if (typeof allProps.onChange === 'function') allProps.onChange(evt, value)
@@ -203,6 +209,7 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
     const { left, bottom } = fieldContainerRef.current.getBoundingClientRect()
     requestAnimationFrame(() => setMenuPosition({ left, top: bottom }))
   }, [fieldContainerRef, isOpen])
+
   return (
     <label
       {...styles.dropdown(allProps)}
@@ -251,23 +258,25 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
         isOpen &&
         createUniversalPortal(
           <div {...styles.menu(allProps)} style={menuPosition}>
-            <ActionMenu
-              onClick={handleMenuChange}
-              ref={menu}
-              onClose={_ => {
-                setOpen(false)
-                if (typeof allProps.menu.props.onClose === 'function')
-                  allProps.menu.props.onClose()
-              }}
-              style={{
-                ...allProps.menu.props.style,
-                minWidth: '0',
-                maxWidth: 'none',
-                width
-              }}
-            >
-              {allProps.menu}
-            </ActionMenu>
+            <DropdownContext.Provider value={selectedValue}>
+              <ActionMenu
+                onClick={handleMenuChange}
+                ref={menu}
+                onClose={_ => {
+                  setOpen(false)
+                  if (typeof allProps.menu.props.onClose === 'function')
+                    allProps.menu.props.onClose()
+                }}
+                style={{
+                  ...allProps.menu.props.style,
+                  minWidth: '0',
+                  maxWidth: 'none',
+                  width
+                }}
+              >
+                {allProps.menu}
+              </ActionMenu>
+            </DropdownContext.Provider>
           </div>,
           inNode
         )}

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-actionmenu",
-  "version": "14.1.0",
+  "version": "14.2.1",
   "description": "Design System component for actionmenu ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,7 +24,6 @@
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-icon": "^18.1.8",
-    "@pluralsight/ps-design-system-prop-types": "^2.0.18",
     "@pluralsight/ps-design-system-util": "^4.0.1",
     "exenv": "^1.2.2",
     "glamorous": "^5.0.0",

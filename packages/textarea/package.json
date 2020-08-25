@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textarea",
-  "version": "7.0.31",
+  "version": "7.0.33",
   "description": "Design system components for text area",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-form": "^6.0.12",
+    "@pluralsight/ps-design-system-form": "^6.1.1",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.10",
     "@pluralsight/ps-design-system-theme": "^4.0.11"
   }

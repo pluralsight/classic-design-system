@@ -1,5 +1,3 @@
-import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
-
 import PropTypes from 'prop-types'
 
 import { ActionMenu } from './menu.js'
@@ -18,11 +16,8 @@ ActionMenu.origins = vars.origins
 ActionMenu.tagName = vars.tagName
 ActionMenu.propTypes = {
   children: PropTypes.oneOfType([
-    elementOfType(Item),
-    elementOfType(Divider),
-    PropTypes.arrayOf(
-      PropTypes.oneOfType([elementOfType(Item), elementOfType(Divider)])
-    )
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
   ]),
   onClose: PropTypes.func,
   origin: PropTypes.string,
