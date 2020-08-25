@@ -54,7 +54,6 @@ export default {
     textDecoration: 'none',
     transition: `all ${motion.speedNormal}`,
     verticalAlign: 'middle',
-
     '&:not([disabled]):hover': {
       cursor: 'pointer'
     },

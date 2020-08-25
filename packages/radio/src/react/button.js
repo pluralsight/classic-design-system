@@ -10,7 +10,11 @@ import { useRadioContext } from './context.js'
 import stylesheet from '../css/index.js'
 
 const styles = {
-  button: () => css(stylesheet['.psds-radio-button']),
+  button: ({ disabled }) =>
+    compose(
+      css(stylesheet['.psds-radio-button']),
+      disabled && css(stylesheet['.psds-radio-button--disabled'])
+    ),
   circle: (themeName, checked) =>
     compose(
       css(stylesheet['.psds-radio-button__circle']),
@@ -54,7 +58,7 @@ const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
   }
   const checked = isChecked(value, checkedValue)
   return (
-    <label {...styles.button()}>
+    <label {...styles.button({ disabled })}>
       <div {...styles.circleOuter()}>
         <Halo
           error={error}

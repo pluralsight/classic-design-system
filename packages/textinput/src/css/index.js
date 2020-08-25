@@ -17,7 +17,8 @@ export default {
     display: 'inline-block'
   },
   '.psds-text-input--disabled': {
-    opacity: 0.5
+    opacity: 0.5,
+    cursor: 'not-allowed'
   },
 
   // __field
@@ -57,7 +58,10 @@ export default {
     padding: 0,
 
     '&:focus': { outline: 'none' },
-    '&::placeholder': { color: colorsTextIcon.lowOnLight }
+    '&::placeholder': { color: colorsTextIcon.lowOnLight },
+    '&:disabled': {
+      cursor: 'not-allowed'
+    }
   },
   [`.psds-text-input__field-input--appearance-${vars.appearances.subtle}`]: {
     '&::placeholder': { color: colorsTextIcon.lowOnDark }

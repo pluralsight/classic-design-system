@@ -31,7 +31,7 @@ export default {
   },
   '.psds-switch--disabled': {
     opacity: '0.4',
-    cursor: 'default'
+    cursor: 'not-allowed'
   },
   [`.psds-switch--labelAlign-${vars.labelAligns.right}`]: {
     flexDirection: 'row'

@@ -18,7 +18,8 @@ export default {
     cursor: 'pointer'
   },
   '.psds-checkbox--disabled': {
-    opacity: '0.5'
+    opacity: '0.5',
+    cursor: 'not-allowed'
   },
 
   // __square
