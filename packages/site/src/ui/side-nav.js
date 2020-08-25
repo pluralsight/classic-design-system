@@ -28,7 +28,6 @@ const NAV_CONFIG = [
     items: [
       { href: '/install', label: 'Install' },
       { href: '/config', label: 'Config' },
-      { href: '/design-assets', label: 'Design Assets' },
       { href: '/contribute', label: 'Contribute' },
       { href: '/roadmap', label: 'Roadmap' }
     ]
