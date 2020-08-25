@@ -1,9 +1,36 @@
-import React, { forwardRef } from 'react'
+import React, {
+  forwardRef,
+  useContext,
+  useEffect,
+  useRef,
+  useImperativeHandle
+} from 'react'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { DropdownContext } from './index.js'
+import { CheckIcon } from '@pluralsight/ps-design-system-icon'
+import stylesheet from '../css/index.js'
 
+const styles = {
+  icon: css(stylesheet['.psds-dropdown--selected-icon']),
+  text: css(stylesheet['.psds-dropdown--item-text'])
+}
 export const Item = forwardRef(
-  ({ value, icon, menu, children, ...rest }, ref) => {
+  ({ value, icon, menu, children, ...rest }, forwardedRef) => {
+    const selectedValue = useContext(DropdownContext)
+    const showSelectedValue = value && selectedValue === value
+    const ref = useRef()
+    useImperativeHandle(forwardedRef, () => ref.current)
+    useEffect(() => {
+      if (showSelectedValue && ref.current) {
+        let currentAnimationFrame = null
+        window.cancelAnimationFrame(currentAnimationFrame)
+        currentAnimationFrame = window.requestAnimationFrame(() =>
+          ref.current.focus()
+        )
+      }
+    }, [showSelectedValue])
     return (
       <ActionMenu.Item
         ref={ref}
@@ -13,7 +40,8 @@ export const Item = forwardRef(
         {...rest}
       >
         <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
-        <ActionMenu.Ellipsis>{children}</ActionMenu.Ellipsis>
+        <ActionMenu.Ellipsis {...styles.text}>{children}</ActionMenu.Ellipsis>
+        {showSelectedValue && <CheckIcon {...styles.icon} />}
       </ActionMenu.Item>
     )
   }

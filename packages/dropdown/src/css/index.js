@@ -1,6 +1,7 @@
 import {
   colorsBackgroundUtility,
   colorsBackgroundLight,
+  colorsBlue,
   colorsBorder,
   colorsStatus,
   colorsTextIcon,
@@ -167,5 +168,16 @@ export default {
     maxWidth: '100%',
     width: '100%',
     display: 'block'
+  },
+
+  '.psds-dropdown--selected-icon': {
+    marginLeft: 'auto',
+    color: colorsBlue[7]
+  },
+
+  '.psds-dropdown--item-text': {
+    '&:not(:last-child)': {
+      marginRight: layout.spacingXSmall
+    }
   }
 }
