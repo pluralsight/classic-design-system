@@ -123,8 +123,9 @@ const Dropdown = React.forwardRef((props, forwardedRef) => {
       setSelectedLabel(
         itemMatchingValue ? itemMatchingValue.props.children : null
       )
+      setSelectedValue(props.value)
     },
-    [itemMatchingValue]
+    [itemMatchingValue, props.value]
   )
 
   function handleToggleOpen(evt) {
