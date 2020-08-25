@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "18.0.19",
+  "version": "18.1.0",
   "description": "Design System component for button ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

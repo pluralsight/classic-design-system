@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-banner",
-  "version": "6.0.19",
+  "version": "6.0.20",
   "description": "Design System component for banner ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-button": "^18.0.19",
+    "@pluralsight/ps-design-system-button": "^18.1.0",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.10"
   }
 }
