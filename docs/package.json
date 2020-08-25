@@ -1,0 +1,20 @@
+{
+  "name": "@pluralsight/ps-design-system-docs",
+  "version": "0.0.0",
+  "description": "Reference site",
+  "license": "Apache-2.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "gatsby develop"
+  },
+  "dependencies": {
+    "docz": "^2.3.2-alpha.0",
+    "gatsby": "^2.24.50",
+    "gatsby-plugin-typescript": "^2.4.18",
+    "gatsby-theme-docz": "^2.3.1-alpha.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {}
+}
