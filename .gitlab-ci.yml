@@ -1,0 +1,56 @@
+include:
+  - project: 'pluralsight/experience/gitlab-helpers'
+    file: '/slack-notification/helper.yml'
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_MESSAGE =~ /build: publish/
+      when: never
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+
+stages:
+  - .pre
+  - lint
+  - test
+  # - pre_build
+  # TODO: via Dockerfile
+  - build
+  # TODO: via helm
+  - deploy
+  - .post
+
+default:
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+  image: docker:stable
+  retry:
+    max: 1
+    when:
+      - runner_system_failure
+  services:
+    - docker:18.09.7-dind
+  tags:
+    - linux
+
+install:
+  image: node:13.8-alpine
+  stage: .pre
+  script:
+    - npm install
+    - npm run bootstrap
+
+lint:
+  image: node:13.8-alpine
+  stage: lint
+  script:
+    - npm run lint
+
+test:
+  image: node:13.8-alpine
+  stage: test
+  script:
+    - npm test
