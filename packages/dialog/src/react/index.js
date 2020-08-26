@@ -27,7 +27,8 @@ const styles = {
           stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
         )
     ),
-  content: () => css(stylesheet['.psds-dialog__content']),
+  content: contentStyles =>
+    css(compose(stylesheet['.psds-dialog__content'], contentStyles)),
   close: _ => css(stylesheet['.psds-dialog__close']),
   overlay: _ => css(stylesheet['.psds-dialog__overlay'])
 }
@@ -56,7 +57,7 @@ const Dialog = React.forwardRef((props, ref) => {
       ref={ref}
     >
       <Theme name={Theme.names.light}>
-        <div {...styles.content()}>
+        <div {...styles.content(props.contentStyles)}>
           {!props.disableCloseButton && isFunction(props.onClose) && (
             <CloseButton onClick={props.onClose} />
           )}
@@ -95,7 +96,8 @@ Dialog.propTypes = {
   modal: PropTypes.bool,
   onClose: PropTypes.func,
   tailPosition: PropTypes.oneOf(Object.values(Dialog.tailPositions)),
-  returnFocus: PropTypes.bool
+  returnFocus: PropTypes.bool,
+  contentStyles: PropTypes.object
 }
 
 Dialog.defaultProps = {
