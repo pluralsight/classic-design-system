@@ -1,17 +1,8 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "lib": ["dom", "es5", "es6"],
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "dist",
     "rootDir": "src",
-    "sourceMap": true,
-    "target": "es5",
-    "typeRoots": ["./node_modules/@types", "./typings"]
+    "outDir": "dist"
   },
-  "exclude": ["node_modules", "db", "test", "**/*.spec.ts"]
+  "exclude": ["node_modules"]
 }

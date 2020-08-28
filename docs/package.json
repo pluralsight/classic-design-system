@@ -1,12 +1,12 @@
 {
   "name": "@pluralsight/ps-design-system-docs",
   "version": "0.0.0",
-  "engines": {
-    "node": "^11.4.0"
-  },
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,
+  "engines": {
+    "node": "^11.4.0"
+  },
   "scripts": {
     "build": "npm-run-all -s build:gatsby build:server build:assets",
     "build:assets": "copyfiles --up 1 ./src/**/*.{html,json} dist",
@@ -21,9 +21,10 @@
     "start:dev": "npm run dev:gatsby"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.16",
+    "@mdx-js/react": "^1.6.16",
     "body-parser": "^1.19.0",
     "bunyan": "^1.8.14",
-    "docz": "^2.3.2-alpha.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.1.0",
@@ -54,9 +55,10 @@
     "eslint-plugin-prettier": "^3.1.4",
     "gatsby": "^2.24.50",
     "gatsby-plugin-express": "^1.1.6",
+    "gatsby-plugin-mdx": "^1.2.37",
     "gatsby-plugin-remove-trailing-slashes": "^2.3.11",
     "gatsby-plugin-typescript": "^2.4.18",
-    "gatsby-theme-docz": "^2.3.1-alpha.0",
+    "gatsby-source-filesystem": "^2.3.27",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
