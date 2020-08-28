@@ -28,17 +28,21 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -114,17 +118,21 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-i9dafq=""
+                data-css-h0ocz=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  aria-hidden={true}
-                  data-css-1pnvt9=""
-                />
-                <span
-                  data-css-1yk08w2=""
-                />
+                  data-css-366l6x=""
+                >
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  />
+                  <span
+                    data-css-1t1vq03=""
+                  />
+                </span>
               </button>
               <div
                 data-css-1af7ks9=""
@@ -170,17 +178,21 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-i9dafq=""
+                data-css-h0ocz=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  aria-hidden={true}
-                  data-css-1pnvt9=""
-                />
-                <span
-                  data-css-1yk08w2=""
-                />
+                  data-css-366l6x=""
+                >
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  />
+                  <span
+                    data-css-1t1vq03=""
+                  />
+                </span>
               </button>
               <div
                 data-css-1af7ks9=""
@@ -245,17 +257,21 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1p24ny8=""
+                data-css-y50j5g=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  aria-hidden={true}
-                  data-css-1pnvt9=""
-                />
-                <span
-                  data-css-4goio8=""
-                />
+                  data-css-366l6x=""
+                >
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  />
+                  <span
+                    data-css-dafmp1=""
+                  />
+                </span>
               </button>
               <div
                 data-css-eycxdp=""
@@ -301,17 +317,21 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1p24ny8=""
+                data-css-y50j5g=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  aria-hidden={true}
-                  data-css-1pnvt9=""
-                />
-                <span
-                  data-css-4goio8=""
-                />
+                  data-css-366l6x=""
+                >
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  />
+                  <span
+                    data-css-dafmp1=""
+                  />
+                </span>
               </button>
               <div
                 data-css-eycxdp=""
@@ -382,20 +402,24 @@ exports[`Storyshots appearance medium default 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              The placeholder 
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              The placeholder 
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                The placeholder 
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                The placeholder 
+              </span>
             </span>
           </button>
           <div
@@ -446,20 +470,24 @@ exports[`Storyshots appearance medium subtle 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1p24ny8=""
+            data-css-y50j5g=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              The placeholder 
-            </span>
-            <span
-              data-css-4goio8=""
-            >
-              The placeholder 
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                The placeholder 
+              </span>
+              <span
+                data-css-dafmp1=""
+              >
+                The placeholder 
+              </span>
             </span>
           </button>
           <div
@@ -510,20 +538,24 @@ exports[`Storyshots appearance small default 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-kcavkk=""
+            data-css-1pu6hw5=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              The placeholder 
-            </span>
-            <span
-              data-css-iff4wh=""
-            >
-              The placeholder 
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                The placeholder 
+              </span>
+              <span
+                data-css-17xope6=""
+              >
+                The placeholder 
+              </span>
             </span>
           </button>
           <div
@@ -574,20 +606,24 @@ exports[`Storyshots appearance small subtle 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-80uqom=""
+            data-css-cdtd9o=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              The placeholder 
-            </span>
-            <span
-              data-css-1fqmm62=""
-            >
-              The placeholder 
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                The placeholder 
+              </span>
+              <span
+                data-css-10w7h1z=""
+              >
+                The placeholder 
+              </span>
             </span>
           </button>
           <div
@@ -643,17 +679,21 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1p24ny8=""
+            data-css-y50j5g=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-4goio8=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-dafmp1=""
+              />
+            </span>
           </button>
           <div
             data-css-eycxdp=""
@@ -699,6 +739,192 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
 </div>
 `;
 
+exports[`Storyshots custom dynamic icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-h0ocz=""
+            onClick={[Function]}
+          >
+            <span
+              data-css-366l6x=""
+            >
+              <div
+                data-css-7dab2f=""
+                style={
+                  Object {
+                    "marginRight": 8,
+                  }
+                }
+              >
+                <svg
+                  aria-label="calendar icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                  />
+                </svg>
+              </div>
+              <div
+                style={
+                  Object {
+                    "flex": 1,
+                    "height": "100%",
+                    "position": "relative",
+                  }
+                }
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Trailing 14 Days
+                </span>
+                <span
+                  data-css-1t1vq03=""
+                />
+              </div>
+            </span>
+          </button>
+          <div
+            data-css-1af7ks9=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots custom fixed icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-1hniuff=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-h0ocz=""
+            onClick={[Function]}
+          >
+            <span
+              data-css-366l6x=""
+            >
+              <div
+                data-css-7dab2f=""
+                style={
+                  Object {
+                    "marginRight": 8,
+                  }
+                }
+              >
+                <svg
+                  aria-label="calendar icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                  />
+                </svg>
+              </div>
+              <div
+                style={
+                  Object {
+                    "flex": 1,
+                    "height": "100%",
+                    "position": "relative",
+                  }
+                }
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Trailing 14 Days
+                </span>
+                <span
+                  data-css-1t1vq03=""
+                />
+              </div>
+            </span>
+          </button>
+          <div
+            data-css-1af7ks9=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
 exports[`Storyshots disabled compare 1`] = `
 <div
   style={
@@ -728,20 +954,24 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
+                data-css-366l6x=""
               >
-                I'm normal, see
-              </span>
-              <span
-                data-css-1yk08w2=""
-              >
-                I'm normal, see
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  I'm normal, see
+                </span>
+                <span
+                  data-css-1t1vq03=""
+                >
+                  I'm normal, see
+                </span>
               </span>
             </button>
             <div
@@ -791,20 +1021,24 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={true}
               onClick={null}
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
+                data-css-366l6x=""
               >
-                I'm untouchable
-              </span>
-              <span
-                data-css-1yk08w2=""
-              >
-                I'm untouchable
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  I'm untouchable
+                </span>
+                <span
+                  data-css-1t1vq03=""
+                >
+                  I'm untouchable
+                </span>
               </span>
             </button>
             <div
@@ -861,17 +1095,21 @@ exports[`Storyshots focus autofocus with ref 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -921,19 +1159,23 @@ exports[`Storyshots focus disabled 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={true}
             onBlur={[Function]}
             onClick={null}
             onFocus={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -983,18 +1225,22 @@ exports[`Storyshots focus onBlur 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -1044,18 +1290,22 @@ exports[`Storyshots focus onFocus 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
             onFocus={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -1110,20 +1360,24 @@ exports[`Storyshots labels all 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Some placeholder
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              Some placeholder
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Some placeholder
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                Some placeholder
+              </span>
             </span>
           </button>
           <div
@@ -1184,17 +1438,21 @@ exports[`Storyshots labels label 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -1249,17 +1507,21 @@ exports[`Storyshots labels label and subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -1314,17 +1576,21 @@ exports[`Storyshots labels none 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -1374,20 +1640,24 @@ exports[`Storyshots labels placeholder 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              some placeholder
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              some placeholder
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                some placeholder
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                some placeholder
+              </span>
             </span>
           </button>
           <div
@@ -1438,17 +1708,21 @@ exports[`Storyshots labels subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
-            />
-            <span
-              data-css-1yk08w2=""
-            />
+              data-css-366l6x=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              />
+              <span
+                data-css-1t1vq03=""
+              />
+            </span>
           </button>
           <div
             data-css-1af7ks9=""
@@ -1524,22 +1798,24 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
-              onChange={[Function]}
               onClick={[Function]}
-              value="two"
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
+                data-css-366l6x=""
               >
-                One item One item One item One item One item One item
-              </span>
-              <span
-                data-css-1qy54zb=""
-              >
-                Two item
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  One item One item One item One item One item One item
+                </span>
+                <span
+                  data-css-phnd7x=""
+                >
+                  Two item
+                </span>
               </span>
             </button>
             <div
@@ -1584,22 +1860,24 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
-              onChange={[Function]}
               onClick={[Function]}
-              value="two"
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
+                data-css-366l6x=""
               >
-                One item One item One item One item One item One item
-              </span>
-              <span
-                data-css-1qy54zb=""
-              >
-                Two item
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  One item One item One item One item One item One item
+                </span>
+                <span
+                  data-css-phnd7x=""
+                >
+                  Two item
+                </span>
               </span>
             </button>
             <div
@@ -1670,17 +1948,21 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
-              />
-              <span
-                data-css-1yk08w2=""
-              />
+                data-css-366l6x=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-1t1vq03=""
+                />
+              </span>
             </button>
             <div
               data-css-1af7ks9=""
@@ -1730,17 +2012,21 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
-              />
-              <span
-                data-css-1yk08w2=""
-              />
+                data-css-366l6x=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-1t1vq03=""
+                />
+              </span>
             </button>
             <div
               data-css-1af7ks9=""
@@ -1809,17 +2095,21 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1p24ny8=""
+              data-css-y50j5g=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
-              />
-              <span
-                data-css-4goio8=""
-              />
+                data-css-366l6x=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-dafmp1=""
+                />
+              </span>
             </button>
             <div
               data-css-eycxdp=""
@@ -1869,17 +2159,21 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-1p24ny8=""
+              data-css-y50j5g=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
-              />
-              <span
-                data-css-4goio8=""
-              />
+                data-css-366l6x=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-dafmp1=""
+                />
+              </span>
             </button>
             <div
               data-css-eycxdp=""
@@ -1964,20 +2258,24 @@ exports[`Storyshots layouts right-aligned 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-1p24ny8=""
+                data-css-y50j5g=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  aria-hidden={true}
-                  data-css-1pnvt9=""
+                  data-css-366l6x=""
                 >
-                  Filter
-                </span>
-                <span
-                  data-css-4goio8=""
-                >
-                  Filter
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  >
+                    Filter
+                  </span>
+                  <span
+                    data-css-dafmp1=""
+                  >
+                    Filter
+                  </span>
                 </span>
               </button>
               <div
@@ -2043,19 +2341,23 @@ exports[`Storyshots menu divider 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three and the amazing item
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              />
             </span>
-            <span
-              data-css-1yk08w2=""
-            />
           </button>
           <div
             data-css-1af7ks9=""
@@ -2112,20 +2414,24 @@ exports[`Storyshots menu in stack 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-i9dafq=""
+                data-css-h0ocz=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  aria-hidden={true}
-                  data-css-1pnvt9=""
+                  data-css-366l6x=""
                 >
-                  Three and the amazing item
-                </span>
-                <span
-                  data-css-1yk08w2=""
-                >
-                  Select one
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  >
+                    Three and the amazing item
+                  </span>
+                  <span
+                    data-css-1t1vq03=""
+                  >
+                    Select one
+                  </span>
                 </span>
               </button>
               <div
@@ -2172,20 +2478,24 @@ exports[`Storyshots menu in stack 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-i9dafq=""
+                data-css-h0ocz=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  aria-hidden={true}
-                  data-css-1pnvt9=""
+                  data-css-366l6x=""
                 >
-                  Three and the amazing item
-                </span>
-                <span
-                  data-css-1yk08w2=""
-                >
-                  Select another one
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  >
+                    Three and the amazing item
+                  </span>
+                  <span
+                    data-css-1t1vq03=""
+                  >
+                    Select another one
+                  </span>
                 </span>
               </button>
               <div
@@ -2243,20 +2553,24 @@ exports[`Storyshots menu nested 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              Select another one
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                Select another one
+              </span>
             </span>
           </button>
           <div
@@ -2312,20 +2626,24 @@ exports[`Storyshots menu onClicks 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-1p24ny8=""
+            data-css-y50j5g=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-4goio8=""
-            >
-              Select another one
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-dafmp1=""
+              >
+                Select another one
+              </span>
             </span>
           </button>
           <div
@@ -2400,19 +2718,23 @@ exports[`Storyshots menu single list 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three and the amazing item
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              />
             </span>
-            <span
-              data-css-1yk08w2=""
-            />
           </button>
           <div
             data-css-1af7ks9=""
@@ -2467,20 +2789,24 @@ exports[`Storyshots menu single list w/ icon 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              Select one
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                Select one
+              </span>
             </span>
           </button>
           <div
@@ -2536,19 +2862,23 @@ exports[`Storyshots menu super long 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              This level really is the longest level that anyone has ever seen. There is none longer
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                This level really is the longest level that anyone has ever seen. There is none longer
+              </span>
+              <span
+                data-css-1t1vq03=""
+              />
             </span>
-            <span
-              data-css-1yk08w2=""
-            />
           </button>
           <div
             data-css-1af7ks9=""
@@ -2603,19 +2933,23 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Short enough
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Short enough
+              </span>
+              <span
+                data-css-1t1vq03=""
+              />
             </span>
-            <span
-              data-css-1yk08w2=""
-            />
           </button>
           <div
             data-css-1af7ks9=""
@@ -2670,20 +3004,24 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              This one is longer than any menu item
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              This one is longer than any menu item
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                This one is longer than any menu item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                This one is longer than any menu item
+              </span>
             </span>
           </button>
           <div
@@ -2739,19 +3077,23 @@ exports[`Storyshots menu w/ subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three and the amazing item
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              />
             </span>
-            <span
-              data-css-1yk08w2=""
-            />
           </button>
           <div
             data-css-1af7ks9=""
@@ -2811,21 +3153,24 @@ exports[`Storyshots menu w/ value 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
-            value="three-1"
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-1qy54zb=""
-            >
-              Three and the amazing item
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three and the amazing item
+              </span>
+              <span
+                data-css-phnd7x=""
+              >
+                Three and the amazing item
+              </span>
             </span>
           </button>
           <div
@@ -2876,20 +3221,24 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              Three item
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              Two item
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Three item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                Two item
+              </span>
             </span>
           </button>
           <div
@@ -2958,19 +3307,23 @@ exports[`Storyshots portal position 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
+                data-css-366l6x=""
               >
-                Three and the amazing item
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Three and the amazing item
+                </span>
+                <span
+                  data-css-1t1vq03=""
+                />
               </span>
-              <span
-                data-css-1yk08w2=""
-              />
             </button>
             <div
               data-css-1af7ks9=""
@@ -3027,20 +3380,24 @@ exports[`Storyshots props whitelist title 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             onClick={[Function]}
             title="This title should be present"
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              One item
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                One item
+              </span>
+              <span
+                data-css-1t1vq03=""
+              />
             </span>
-            <span
-              data-css-1yk08w2=""
-            />
           </button>
           <div
             data-css-1af7ks9=""
@@ -3111,22 +3468,24 @@ exports[`Storyshots whitelist clear 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
-              onChange={[Function]}
               onClick={[Function]}
-              value="two"
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
+                data-css-366l6x=""
               >
-                Three item
-              </span>
-              <span
-                data-css-1qy54zb=""
-              >
-                Two item
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Three item
+                </span>
+                <span
+                  data-css-phnd7x=""
+                >
+                  Two item
+                </span>
               </span>
             </button>
             <div
@@ -3178,21 +3537,25 @@ exports[`Storyshots whitelist name 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-i9dafq=""
+            data-css-h0ocz=""
             disabled={false}
             name="myFieldNameOfPower"
             onClick={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-1pnvt9=""
+              data-css-366l6x=""
             >
-              I have a form name
-            </span>
-            <span
-              data-css-1yk08w2=""
-            >
-              I have a form name
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                I have a form name
+              </span>
+              <span
+                data-css-1t1vq03=""
+              >
+                I have a form name
+              </span>
             </span>
           </button>
           <div
@@ -3259,22 +3622,24 @@ exports[`Storyshots whitelist onChange 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-i9dafq=""
+              data-css-h0ocz=""
               disabled={false}
-              onChange={[Function]}
               onClick={[Function]}
-              value="two"
             >
               <span
-                aria-hidden={true}
-                data-css-1pnvt9=""
+                data-css-366l6x=""
               >
-                Three item
-              </span>
-              <span
-                data-css-1qy54zb=""
-              >
-                Two item
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Three item
+                </span>
+                <span
+                  data-css-phnd7x=""
+                >
+                  Two item
+                </span>
               </span>
             </button>
             <div

@@ -8,7 +8,7 @@ import React, {
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import { DropdownContext } from './index.js'
+import { DropdownContext } from '../js/index.js'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import stylesheet from '../css/index.js'
 
