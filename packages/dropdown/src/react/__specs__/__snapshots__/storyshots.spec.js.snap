@@ -769,23 +769,14 @@ exports[`Storyshots custom dynamic icon 1`] = `
               data-css-366l6x=""
             >
               <div
-                data-css-7dab2f=""
                 style={
                   Object {
+                    "height": 24,
                     "marginRight": 8,
+                    "width": 24,
                   }
                 }
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
+              />
               <div
                 style={
                   Object {
@@ -799,7 +790,7 @@ exports[`Storyshots custom dynamic icon 1`] = `
                   aria-hidden={true}
                   data-css-mlkf0z=""
                 >
-                  Trailing 14 Days
+                  Author Kit
                 </span>
                 <span
                   data-css-1t1vq03=""
