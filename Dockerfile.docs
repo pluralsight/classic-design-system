@@ -12,12 +12,14 @@ RUN npm set unsafe-perm true
 
 RUN npm config set depth 0
 
+## Use app/ subdir so root tsconfig can be extended
 RUN mkdir -p ./app
 COPY docs/. ./app/
 COPY tsconfig.json .
 
 WORKDIR ./app
 
+## Install exact dependencies from package-lock.json for production; then add devDependencies for build
 RUN npm ci --no-optional
 RUN npm i --only=dev
 
@@ -26,50 +28,50 @@ RUN npm run build
 RUN npm prune --no-optional --production --silent
 
 # DOCKER STAGE: APP
-# FROM node:13.8-alpine as app
+FROM node:11.4-alpine as app
 
-# ARG NEW_RELIC_APP_NAME=Prism::API::Production
-# ENV NEW_RELIC_APP_NAME $NEW_RELIC_APP_NAME
+ARG NEW_RELIC_APP_NAME=DesignSystemDocs::Production
+ENV NEW_RELIC_APP_NAME $NEW_RELIC_APP_NAME
 
-# ARG NEW_RELIC_ENABLED=true
-# ENV NEW_RELIC_ENABLED $NEW_RELIC_ENABLED
+ARG NEW_RELIC_ENABLED=true
+ENV NEW_RELIC_ENABLED $NEW_RELIC_ENABLED
 
-# ENV NEW_RELIC_LICENSE_KEY $NEW_RELIC_LICENSE_KEY
+ENV NEW_RELIC_LICENSE_KEY $NEW_RELIC_LICENSE_KEY
 
-# ARG NODE_ENV=production
-# ENV NODE_ENV $NODE_ENV
+ARG NODE_ENV=production
+ENV NODE_ENV $NODE_ENV
 
-# ARG HOST=0.0.0.0
-# ENV HOST $HOST
+ARG HOST=0.0.0.0
+ENV HOST $HOST
 
-# ARG PORT=3000
-# ENV PORT $PORT
+ARG PORT=3000
+ENV PORT $PORT
 
-# ARG TZ=America/Denver
-# ENV TZ $TZ
+ARG TZ=America/Denver
+ENV TZ $TZ
 
-# ARG LOG_LEVEL=info
-# ENV LOG_LEVEL $LOG_LEVEL
+ARG LOG_LEVEL=info
+ENV LOG_LEVEL $LOG_LEVEL
 
-# RUN mkdir -p /usr/src/app
-# WORKDIR /usr/src/app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-# COPY --from=builder dist /usr/src/app/dist
-# COPY --from=builder infra /usr/src/app/infra
-# COPY --from=builder node_modules /usr/src/app/node_modules
-# COPY --from=builder package.json /usr/src/app/package.json
-# COPY --from=builder .env.typeorm-cli /usr/src/app/.env.typeorm-cli
-# COPY --from=builder newrelic.js /usr/src/app/newrelic.js
+COPY --from=builder app/dist /usr/src/app/dist
+COPY --from=builder app/public /usr/src/app/public
+COPY --from=builder app/node_modules /usr/src/app/node_modules
+COPY --from=builder app/package.json /usr/src/app/package.json
+COPY --from=builder app/newrelic.js /usr/src/app/newrelic.js
+COPY --from=builder app/health-check.js /usr/src/app/health-check.js
 
-# # the official node image provides an unprivileged user as a security best practice
-# # https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#non-root-user
-# USER node
+# the official node image provides an unprivileged user as a security best practice
+# https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#non-root-user
+USER node
 
-# HEALTHCHECK --interval=5s --timeout=30s --retries=3 \
-#   CMD node /usr/src/app/infra/health-check.js
+HEALTHCHECK --interval=5s --timeout=30s --retries=3 \
+  CMD node /usr/src/app/health-check.js
 
-# ENTRYPOINT ["/usr/local/bin/npm", "run"]
-# CMD ["start"]
+ENTRYPOINT ["/usr/local/bin/npm", "run"]
+CMD ["start"]
 
 
 
