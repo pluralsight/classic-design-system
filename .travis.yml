@@ -12,7 +12,7 @@ language: node_js
 if: type != push OR (tag IS blank AND branch = master)
 
 install:
-  - yarn
+  - yarn install --ignore-engines
 
 before_script:
   - export NODE_OPTIONS=--max_old_space_size=4096
