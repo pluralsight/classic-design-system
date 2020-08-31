@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@14.2.0...@pluralsight/ps-design-system-actionmenu@14.2.1) (2020-08-25)
+
+
+### Bug Fixes
+
+* **actionmenu:** proptype on menu loosened ([#1121](https://github.com/pluralsight/design-system/issues/1121)) ([216e064](https://github.com/pluralsight/design-system/commit/216e064b4aca50d3374db2e317f668e597bf3ee4))
+
+
+
+
+
+# [14.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@14.1.0...@pluralsight/ps-design-system-actionmenu@14.2.0) (2020-08-25)
+
+
+### Features
+
+* disabled cursor styles ([#1115](https://github.com/pluralsight/design-system/issues/1115)) ([94fd04c](https://github.com/pluralsight/design-system/commit/94fd04c1751231573c06ad590c037c2cf9397d02))
+
+
+
+
+
 # [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@14.0.3...@pluralsight/ps-design-system-actionmenu@14.1.0) (2020-08-24)
 
 
