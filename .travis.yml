@@ -1,5 +1,10 @@
 sudo: false
 
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
 language: node_js
 
 # always test things that aren't pushes (like PRs)
@@ -7,7 +12,7 @@ language: node_js
 if: type != push OR (tag IS blank AND branch = master)
 
 install:
-  - npm install
+  - yarn
 
 before_script:
   - export NODE_OPTIONS=--max_old_space_size=4096
@@ -17,12 +22,12 @@ jobs:
     - stage: validate
       name: Lint Commits
       script:
-        - npm install @commitlint/travis-cli
+        - yarn global add @commitlint/travis-cli
         - commitlint-travis
     - name: Lint Files
-      script: npm run lint
+      script: yarn lint
     - stage: test
       name: Unit Test
       script:
-        - npm run bootstrap
-        - npm test
+        - yarn build
+        - yarn test
