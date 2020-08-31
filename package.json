@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "private": true,
   "engines": {
-    "node": ">= 7.9",
+    "node": ">= 11.4",
     "npm": ">= 4.2"
   },
   "author": "jaketrent",
@@ -14,20 +14,28 @@
     "design system",
     "pattern library"
   ],
+  "workspaces": {
+    "nohoist": [],
+    "packages": [
+      "docs",
+      "packages/**"
+    ]
+  },
   "main": "packages/site/index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist && link-parent-bin",
-    "clean": "lerna clean",
+    "build": "lerna run build",
+    "clean": "del '{,!(node_modules)/}**/dist'",
     "generate": "plop",
     "generate:component": "plop component",
     "lint": "eslint . --quiet",
     "lint:ci": "eslint .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
+    "postinstall": "link-parent-bin && yarn build",
     "publish": "lerna publish --conventional-commits --message \"build: publish\"",
-    "publish:beta": "npm run publish -- --npm-tag=beta",
-    "site": "cd packages/site && npm start",
-    "start": "npm run site",
+    "publish:beta": "yarn publish -- --npm-tag=beta",
+    "site": "yarn workspace @pluralsight/ps-design-system-site start",
+    "start": "yarn site",
     "test": "jest"
   },
   "husky": {
@@ -45,12 +53,17 @@
     ]
   },
   "dependencies": {
+    "@types/testing-library__dom": "^7.5.0",
+    "@types/vfile-message": "^2.0.0",
     "babel-eslint": "^10.0.3",
+    "del": "^5.1.0",
+    "del-cli": "^3.0.1",
     "glamor": "^2.20.40",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "wsrun": "^5.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
