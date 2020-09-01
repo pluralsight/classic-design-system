@@ -14,6 +14,7 @@
     "design system",
     "pattern library"
   ],
+  "main": "packages/site/index.js",
   "workspaces": {
     "nohoist": [],
     "packages": [
@@ -21,9 +22,8 @@
       "packages/**"
     ]
   },
-  "main": "packages/site/index.js",
   "scripts": {
-    "build": "lerna run build",
+    "build": "lerna run build --ignore @pluralsight/ps-design-system-docs",
     "clean": "del '{,!(node_modules)/}**/dist'",
     "generate": "plop",
     "generate:component": "plop component",
@@ -32,11 +32,12 @@
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "postinstall": "link-parent-bin && yarn build",
-    "publish": "lerna publish --conventional-commits --message \"build: publish\"",
-    "publish:beta": "yarn publish -- --npm-tag=beta",
+    "publish": "yarn build && lerna publish --conventional-commits --message \"build: publish\"",
+    "publish:beta": "yarn build && yarn publish -- --npm-tag=beta",
     "site": "yarn workspace @pluralsight/ps-design-system-site start",
     "start": "yarn site",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "jest --ci --collect-coverage --verbose"
   },
   "husky": {
     "hooks": {
@@ -53,17 +54,11 @@
     ]
   },
   "dependencies": {
-    "@types/testing-library__dom": "^7.5.0",
-    "@types/vfile-message": "^2.0.0",
-    "babel-eslint": "^10.0.3",
-    "del": "^5.1.0",
-    "del-cli": "^3.0.1",
     "glamor": "^2.20.40",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-transition-group": "^4.4.1",
-    "wsrun": "^5.2.1"
+    "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -94,11 +89,15 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "@types/vfile-message": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.1.0",
     "babel-plugin-macros": "^2.6.1",
     "core-js": "^2.6.10",
     "cross-env": "^6.0.3",
+    "del": "^5.1.0",
+    "del-cli": "^3.0.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.6.0",
@@ -137,6 +136,7 @@
     "ts-loader": "^6.2.2",
     "typescript": "^3.9.3",
     "webpack": "^4.41.2",
+    "wsrun": "^5.2.1",
     "yargs": "^14.2.3"
   }
 }

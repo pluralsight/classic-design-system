@@ -20,6 +20,7 @@ default:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+      - .yarn
   image: docker:stable
   retry:
     max: 1
@@ -32,18 +33,17 @@ install:
   image: node:13.8-alpine
   stage: .pre
   script:
-    - npm install
-    - npm run bootstrap
+    - yarn install --ignore-engines
 
 lint:
   image: node:13.8-alpine
   stage: lint
   script:
-    - npm run lint
+    - yarn lint:ci
 
 test:
   image: node:13.8-alpine
   stage: test
   script:
-    - npm test
+    - yarn test:ci
 
