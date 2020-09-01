@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-site",
-  "version": "20.0.10",
+  "version": "20.0.11",
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,
@@ -39,7 +39,7 @@
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-datawell": "^4.0.18",
     "@pluralsight/ps-design-system-datepicker": "^7.1.1",
-    "@pluralsight/ps-design-system-dialog": "^8.1.21",
+    "@pluralsight/ps-design-system-dialog": "^8.2.0",
     "@pluralsight/ps-design-system-drawer": "^7.2.6",
     "@pluralsight/ps-design-system-dropdown": "^8.0.7",
     "@pluralsight/ps-design-system-emptystate": "^8.1.1",
