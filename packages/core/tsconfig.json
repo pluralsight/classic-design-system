@@ -1,12 +1,14 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "strict": true,
     "declaration": true,
-    "outDir": "dist",
     "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
     "target": "ES5"
   },
-  "include": [
-    "js/*.ts"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["js/*.ts"]
 }
+
