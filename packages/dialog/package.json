@@ -23,6 +23,7 @@
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-focusmanager": "^5.0.18",
+    "@pluralsight/ps-design-system-util": "^4.1.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

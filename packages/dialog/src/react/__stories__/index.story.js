@@ -184,3 +184,19 @@ storiesOf('modal', module)
       )}
     </ModalStory>
   ))
+
+storiesOf('stylesFor', module).add('dialog_content', _ => (
+  <ModalStory>
+    {props => (
+      <MockDialog
+        {...props}
+        UNSAFE_stylesFor={{
+          dialog__content: {
+            padding: '128px',
+            background: 'red'
+          }
+        }}
+      />
+    )}
+  </ModalStory>
+))
