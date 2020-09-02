@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-position",
-  "version": "4.1.10",
+  "version": "4.1.11",
   "description": "Position UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,7 +22,7 @@
   "gitHead": "ea4595a4bff6a08255102a0321bb641dc4d25913",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.0",
-    "@pluralsight/ps-design-system-util": "^4.0.1",
+    "@pluralsight/ps-design-system-util": "^4.1.0",
     "exenv": "^1.2.2",
     "prop-types": "^15.7.2"
   },
