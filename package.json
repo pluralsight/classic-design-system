@@ -4,10 +4,6 @@
   "description": "Pluralsight design system",
   "license": "Apache-2.0",
   "private": true,
-  "engines": {
-    "node": ">= 11.4",
-    "npm": ">= 4.2"
-  },
   "author": "jaketrent",
   "keywords": [
     "pluralsight",
