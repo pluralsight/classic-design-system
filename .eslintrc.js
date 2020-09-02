@@ -27,6 +27,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': ERROR,
     'react/display-name': WARNING,
     'react/jsx-no-bind': IGNORE,
+    'react/jsx-pascal-case': IGNORE,
     'react/no-unescaped-entities': WARNING
   },
   overrides: [
