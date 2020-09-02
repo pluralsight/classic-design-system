@@ -1,8 +1,10 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "jsx": "react",
+    "outDir": "dist",
     "rootDir": "src",
-    "outDir": "dist"
+    "target": "es5"
   },
   "exclude": ["node_modules"]
 }
