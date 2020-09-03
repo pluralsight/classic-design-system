@@ -1,0 +1,58 @@
+@import '@pluralsight/ps-design-system-core';
+
+@custom-media --breakpoint-small (width >= 768px);
+
+.aside {
+  background: var(--psColorsBackgroundLight1);
+  border-right: 1px solid var(--psColorsBorderLowOnLight);
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: var(--asideWidth);
+  transition: all var(--psMotionSpeedFast) ease-in-out;
+  transition-property: transform, width;
+  transform: translate(0, 0);
+
+  &:after {
+    box-shadow: 50px 0 100px rgba(0, 0, 0, 0.8);
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transition: box-shadow var(--psMotionSpeedFast) ease-in-out;
+    width: 100%;
+  }
+
+  &.dark {
+    background: var(--psColorsBackgroundDark1);
+  }
+
+  &.light {
+    background: var(--psColorsBackgroundLight1);
+  }
+
+  @media (--breakpoint-small) {
+    transform: translate(0, 0);
+
+    &:after {
+      box-shadow: none;
+    }
+  }
+}
+
+.closed {
+  transform: translate(-100%, 0);
+
+  &:after {
+    box-shadow: none;
+  }
+
+  @media (--breakpoint-small) {
+    transform: initial;
+  }
+}
