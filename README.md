@@ -27,5 +27,6 @@ nvm use
 yarn config set ignore-engines true
 
 yarn
+yarn build
 yarn start
 ```

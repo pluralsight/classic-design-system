@@ -13,7 +13,8 @@ language: node_js
 if: type != push OR (tag IS blank AND branch = master)
 
 install:
-  - yarn install --ignore-engines
+  - yarn config set ignore-engines true
+  - yarn install
 
 before_script:
   - export NODE_OPTIONS=--max_old_space_size=4096
@@ -23,11 +24,12 @@ jobs:
     - stage: validate
       name: Lint Commits
       script:
-        - yarn global add @commitlint/travis-cli
+        - yarn add -W @commitlint/travis-cli
         - commitlint-travis
     - name: Lint Files
-      script: yarn lint
+      script: yarn lint:ci
     - stage: test
       name: Unit Test
       script:
+        - yarn build
         - yarn test:ci

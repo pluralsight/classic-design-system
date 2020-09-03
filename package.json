@@ -19,7 +19,7 @@
     ]
   },
   "scripts": {
-    "build": "lerna run build --ignore @pluralsight/ps-design-system-docs",
+    "build": "lerna run build",
     "clean": "del '{,!(node_modules)/}**/dist'",
     "generate": "plop",
     "generate:component": "plop component",
@@ -27,9 +27,9 @@
     "lint:ci": "eslint .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
-    "postinstall": "link-parent-bin && yarn build",
-    "publish": "yarn build && lerna publish --conventional-commits --message \"build: publish\"",
-    "publish:beta": "yarn build && yarn publish -- --npm-tag=beta",
+    "postinstall": "link-parent-bin",
+    "publish": "lerna publish --conventional-commits --message \"build: publish\"",
+    "publish:beta": "yarn publish -- --npm-tag=beta",
     "site": "yarn workspace @pluralsight/ps-design-system-site start",
     "start": "yarn site",
     "test": "jest",

@@ -10,6 +10,7 @@ RUN apk add --no-cache python make g++
 RUN mkdir -p /usr/src/app
 
 COPY docs/. /usr/src/app
+COPY tsconfig.json /usr/src
 
 WORKDIR /usr/src/app
 
@@ -56,17 +57,4 @@ USER node
 HEALTHCHECK --interval=5s --timeout=30s --retries=3 \
   CMD node /usr/src/app/health-check.js
 
-CMD ["yarn", "start"]
-
-
-
-
-
-
-
-
-
-
-
-
-
+CMD ["node", "./dist/server/main.js"]

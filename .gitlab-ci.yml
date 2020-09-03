@@ -1,6 +1,6 @@
 workflow:
   rules:
-    - if: $CI_COMMIT_MESSAGE =~ /publish/
+    - if: '$CI_COMMIT_MESSAGE == "build: publish"'
       when: never
     - if: $CI_COMMIT_TAG
       when: never
@@ -33,7 +33,8 @@ install:
   image: node:13.8-alpine
   stage: .pre
   script:
-    - yarn install --ignore-engines
+    - yarn config set ignore-engines true
+    - yarn install
 
 lint:
   image: node:13.8-alpine
@@ -45,5 +46,6 @@ test:
   image: node:13.8-alpine
   stage: test
   script:
+    - yarn build
     - yarn test:ci
 
