@@ -32,4 +32,4 @@ jobs:
       name: Unit Test
       script:
         - yarn build
-        - yarn test:ci
+        - yarn test

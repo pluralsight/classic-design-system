@@ -52,4 +52,3 @@ export default {
   ul: Ul,
   inlineCode: Text.Code,
 }
-

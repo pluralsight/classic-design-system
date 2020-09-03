@@ -7,7 +7,7 @@ import { Frame } from '../frame'
 import components from '../mdx-components'
 import { SideNav } from '../side-nav'
 
-const DefaultLayout: React.FC = (props) => {
+const DefaultLayout: React.FC = props => {
   const { children } = props
 
   return (

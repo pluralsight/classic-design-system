@@ -34,10 +34,10 @@ export const Frame: React.FC<Props> = (props) => {
     setTheme(theme === Theme.names.dark ? Theme.names.light : Theme.names.dark)
   }
 
-  const skipTargetRef = useRef()
+  const skipTargetRef = useRef<HTMLAnchorElement>(null)
 
   const focusSkipTarget = useCallback(() => {
-    if (skipTargetRef?.current) skipTargetRef.current.focus()
+    if (skipTargetRef.current) skipTargetRef.current.focus()
   }, [])
 
   const className = cx({

@@ -47,5 +47,5 @@ test:
   stage: test
   script:
     - yarn build
-    - yarn test:ci
+    - yarn test
 
