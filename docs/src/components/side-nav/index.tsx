@@ -1,4 +1,5 @@
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
+import { Link, navigate } from 'gatsby'
 import React, { HTMLAttributes } from 'react'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
@@ -10,7 +11,7 @@ export const SideNav: React.FC<Props> = () => {
   return (
     <nav>
       <Logo />
-      <VerticalTabs forceCollapsed={!open} hideLabels={!open}>
+      <VerticalTabs>
         <VerticalTabs.Group>
           {items.map((section) => {
             const sectionHeader = (
@@ -23,7 +24,13 @@ export const SideNav: React.FC<Props> = () => {
               <VerticalTabs.Tier1 header={sectionHeader}>
                 {section.items.map((item) => {
                   const itemHeader = (
-                    <VerticalTabs.Tier2.Header href={item.href}>
+                    <VerticalTabs.Tier2.Header
+                      href={item.href}
+                      onClick={(evt: Event) => {
+                        evt.preventDefault()
+                        navigate(item.href)
+                      }}
+                    >
                       {item.title}
                     </VerticalTabs.Tier2.Header>
                   )
@@ -54,5 +61,9 @@ const items = [
 ]
 
 function Logo() {
-  return <img src={logo} className={styles.logo} />
+  return (
+    <Link to="/">
+      <img src={logo} className={styles.logo} />
+    </Link>
+  )
 }
