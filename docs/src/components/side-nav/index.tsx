@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
-const SideNav: React.FC = () => {
+interface Props extends HTMLAttributes<HTMLDivElement> {}
+
+export const SideNav: React.FC<Props> = () => {
   return <nav />
 }
-
-export default SideNav

@@ -41,10 +41,13 @@
     "uuid": "^8.2.0"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-button": "^18.1.1",
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-emptystate": "^8.1.1",
     "@pluralsight/ps-design-system-featureflags": "^1.1.14",
+    "@pluralsight/ps-design-system-icon": "^18.1.8",
     "@pluralsight/ps-design-system-normalize": "^4.0.9",
+    "@pluralsight/ps-design-system-text": "^16.0.18",
     "@pluralsight/ps-design-system-theme": "^4.0.11",
     "@types/body-parser": "^1.19.0",
     "@types/bunyan": "^1.8.6",

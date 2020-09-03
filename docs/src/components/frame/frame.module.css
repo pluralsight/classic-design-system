@@ -1,0 +1,38 @@
+@import '@pluralsight/ps-design-system-normalize';
+@import '@pluralsight/ps-design-system-core';
+
+@custom-media --breakpoint-small (width >= 768px);
+
+/* TODO: create global vars file */
+:root {
+  --asideWidth: 200px;
+  --topNavHeight: 56px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  & .container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - var(--topNavHeight));
+  }
+}
+
+.dark {
+  background: var(--psColorsBackgroundDark2);
+}
+
+.light {
+}
+
+.main {
+  flex: 1;
+
+  @media (--breakpoint-small) {
+    margin-left: var(--asideWidth);
+  }
+}

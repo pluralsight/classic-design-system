@@ -1,7 +1,8 @@
 import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 
-import Frame from '../frame'
+import { Frame } from '../frame'
+import { SideNav } from '../side-nav'
 
 const shortcodes = {}
 
@@ -10,7 +11,7 @@ const DefaultLayout: React.FC = (props) => {
 
   return (
     <MDXProvider components={shortcodes}>
-      <Frame>{children}</Frame>
+      <Frame aside={<SideNav />}>{children}</Frame>
     </MDXProvider>
   )
 }

@@ -1,0 +1,17 @@
+@import '@pluralsight/ps-design-system-core';
+
+.skipBanner {
+  top: 0;
+  left: 50%;
+  padding: var(--psLayoutSpacingSmall);
+  position: fixed;
+  transform: translate(-50%, -300px);
+  transition: transform 1s ease-out;
+  z-index: 9000;
+
+  &:focus-within {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: top 0.1s ease-in;
+  }
+}
