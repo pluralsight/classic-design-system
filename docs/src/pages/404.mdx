@@ -1,0 +1,17 @@
+---
+name: Not Found
+---
+
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
+
+<EmptyState
+  style={{ height: '100%' }}
+  heading={
+    <EmptyState.Heading>
+      Sorry, the page you are looking for cannot be found.
+      Try checking the URL for errors or search our library.
+    </EmptyState.Heading>
+  }
+  caption={<EmptyState.Caption>ERROR CODE: 404</EmptyState.Caption>}
+  illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />}
+/>
