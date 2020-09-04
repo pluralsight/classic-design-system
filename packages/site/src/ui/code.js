@@ -58,6 +58,7 @@ class Collapsible extends React.Component {
   }
 
   toggle(isOpen) {
+    // eslint-disable-next-line
     if (isOpen) setTimeout(() => this.open(), 0)
     else this.close()
   }
