@@ -21,10 +21,14 @@ export const SideNav: React.FC<Props> = () => {
             )
 
             return (
-              <VerticalTabs.Tier1 header={sectionHeader}>
+              <VerticalTabs.Tier1
+                header={sectionHeader}
+                key={section.header.title}
+              >
                 {section.items.map((item) => {
                   const itemHeader = (
                     <VerticalTabs.Tier2.Header
+                      key={item.href}
                       href={item.href}
                       onClick={(evt: Event) => {
                         evt.preventDefault()
