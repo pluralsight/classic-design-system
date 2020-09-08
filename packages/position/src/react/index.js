@@ -118,5 +118,6 @@ Position.defaultProps = {
 }
 
 function delayUntilNextTick(fn) {
+  // eslint-disable-next-line
   return setTimeout(fn, 1)
 }
