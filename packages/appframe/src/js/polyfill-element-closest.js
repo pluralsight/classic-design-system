@@ -11,6 +11,7 @@ export default function polyfillElementClosest() {
 
   if (!Element.prototype.closest) {
     Element.prototype.closest = function(s) {
+      // eslint-disable-next-line/
       var el = this
 
       do {

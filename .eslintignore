@@ -4,6 +4,8 @@ node_modules/*
 *.dist.js
 .cache
 .github
-examples
-scripts/create-component
+coverage/*
+docs/public/*
+examples/*
+scripts/*
 packages/packages-api/*
