@@ -63,7 +63,7 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': WARNING,
     '@typescript-eslint/restrict-template-expressions': WARNING,
     '@typescript-eslint/unbound-method': WARNING,
-    'prettier/prettier': WARNING,
+    'prettier/prettier': ERROR,
     'react/prop-types': IGNORE,
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
