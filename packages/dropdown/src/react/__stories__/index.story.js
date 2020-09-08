@@ -7,11 +7,7 @@ import React, { forwardRef, useState } from 'react'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
-import {
-  DropdownContext,
-  useDropdown,
-  useDropdownProps
-} from '../../js/index.js'
+import { DropdownContext, useDropdown } from '../../js/index.js'
 
 storiesOf('labels', module)
   .add('none', _ => <Dropdown />)
@@ -645,15 +641,11 @@ const DropdownWithDynamicIcon = () => {
     <DropdownWithIcon
       icon={icon}
       onChange={handleChange}
-      menu={
-        <>
-          {Object.values(values).map(({ value, icon, label }) => (
-            <Dropdown.Item value={value} key={value} icon={icon}>
-              {label}
-            </Dropdown.Item>
-          ))}
-        </>
-      }
+      menu={Object.values(values).map(({ value, icon, label }) => (
+        <Dropdown.Item value={value} key={value} icon={icon}>
+          {label}
+        </Dropdown.Item>
+      ))}
     />
   )
 }

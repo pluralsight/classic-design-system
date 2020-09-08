@@ -24,11 +24,7 @@ export const Item = forwardRef(
     useImperativeHandle(forwardedRef, () => ref.current)
     useEffect(() => {
       if (showSelectedValue && ref.current) {
-        let currentAnimationFrame = null
-        window.cancelAnimationFrame(currentAnimationFrame)
-        currentAnimationFrame = window.requestAnimationFrame(() => {
-          ref.current.focus()
-        })
+        ref.current.focus()
       }
     }, [showSelectedValue])
     return (

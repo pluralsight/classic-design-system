@@ -9,7 +9,7 @@ import {
   useState
 } from 'react'
 import { canUseDOM } from 'exenv'
-import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
+import { useCombinedRefs, useMenuRef } from '@pluralsight/ps-design-system-util'
 
 export const DropdownContext = createContext()
 
@@ -111,11 +111,15 @@ export const useDropdown = (props, forwardedRef) => {
     if (typeof hook.onChange === 'function') hook.onChange(evt, value)
   }
 
-  const menuRef = useRef(null)
+  const menuRef = useMenuRef(!selectedValue)
 
   function getLongestMenuLabelState() {
     const getMenuItems = menu =>
-      menu ? Children.toArray(menu.props.children) : []
+      Array.isArray(menu)
+        ? menu
+        : menu
+        ? Children.toArray(menu.props.children)
+        : []
     const getNestedMenu = item => item && item.props.nested
     const hasIcon = item => item && !!item.props.icon
     const getLabel = item =>
@@ -205,7 +209,9 @@ export const useDropdown = (props, forwardedRef) => {
 export function findMatchingActionMenuItem(menu, value) {
   if (!menu || !value) return
 
-  const items = Children.toArray(menu.props.children)
+  const items = Array.isArray(menu)
+    ? menu
+    : Children.toArray(menu.props.children)
   let matchingItem = items.find(it => it.props.value === value)
 
   const nestedMenus = items.map(item => item.props.nested)
