@@ -39,4 +39,5 @@
 
 .grid {
   display: grid;
+  margin-bottom: var(--psLayoutSpacingLarge);
 }
