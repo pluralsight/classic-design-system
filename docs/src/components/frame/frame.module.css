@@ -31,6 +31,7 @@
 
 .main {
   flex: 1;
+  padding: var(--psLayoutSpacingXLarge);
 
   @media (--breakpoint-small) {
     margin-left: var(--asideWidth);
