@@ -1,6 +1,7 @@
 import { URL } from 'url'
-import * as utils from '../index.js'
-import { fallbackPixel } from '../../vars/index.js'
+
+import { fallbackPixel } from '../../vars'
+import * as utils from '..'
 
 describe('avatar/utils', () => {
   describe('#getInitials', () => {

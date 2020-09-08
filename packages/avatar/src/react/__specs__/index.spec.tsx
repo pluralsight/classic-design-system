@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as vars from '../../vars/index.js'
+import * as vars from '../../vars'
 
-import Avatar from '../index.js'
+import Avatar from '..'
 
 describe('Avatar', () => {
   describe('.sizes', () => {
@@ -28,7 +28,7 @@ describe('Avatar', () => {
   })
 
   it('should forward ref', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
     render(<Avatar ref={ref} />)
 

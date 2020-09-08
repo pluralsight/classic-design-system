@@ -19,6 +19,7 @@
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
