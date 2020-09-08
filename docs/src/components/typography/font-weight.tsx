@@ -51,7 +51,7 @@ export const FontWeight = () => (
           </div>
           <div className={styles.labels}>
             <div>JS: {w.jsVarName}</div>
-            <div>CS: {w.varName}</div>
+            <div>CSS: {w.varName}</div>
           </div>
         </div>
       ))}
