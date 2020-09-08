@@ -1,0 +1,34 @@
+.weights {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--psLayoutSpacingLarge) / -2);
+}
+.weight {
+  flex: 1;
+  margin: calc(var(--psLayoutSpacingLarge) / 2);
+  color: var(--psColorsBackgroundDark2);
+  text-align: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--psColorsBackgroundLight2);
+  height: 150px;
+  min-width: 150px;
+}
+.weightLetters {
+  font-size: var(--psTypeFontSizeGigantic);
+  letter-spacing: var(--psTypeLetterSpacingGigantic);
+}
+.weightLabel {
+  color: var(--psColorsTextIconLowOnLight);
+  font-size: var(--psTypeFontSizeXSmall);
+}
+.weightVar {
+  margin-top: var(--psLayoutSpacingSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  color: var(--psColorsPink6);
+}
