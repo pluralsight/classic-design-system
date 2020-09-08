@@ -1,34 +1,31 @@
 .weights {
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc(var(--psLayoutSpacingLarge) / -2);
-}
-.weight {
-  flex: 1;
-  margin: calc(var(--psLayoutSpacingLarge) / 2);
-  color: var(--psColorsBackgroundDark2);
-  text-align: center;
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 12px;
   background: var(--psColorsBackgroundLight2);
-  height: 150px;
-  min-width: 150px;
+  padding: var(--psLayoutSpacingMedium);
+}
+.weight {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  grid-gap: var(--psLayoutSpacingMedium);
+  grid-template-areas: 'letters vars' 'weight weight';
+  color: var(--psColorsBackgroundDark2);
+  margin-bottom: var(--psLayoutSpacingLarge);
 }
 .weightLetters {
+  grid-area: letters;
   font-size: var(--psTypeFontSizeGigantic);
   letter-spacing: var(--psTypeLetterSpacingGigantic);
+  line-height: 1em;
+}
+.labels {
+  grid-area: vars;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: var(--psTypeFontSizeXSmall);
+  font-weight: var(--psTypeFontWeightMedium);
 }
 .weightLabel {
+  grid-area: weight;
   color: var(--psColorsTextIconLowOnLight);
   font-size: var(--psTypeFontSizeXSmall);
-}
-.weightVar {
-  margin-top: var(--psLayoutSpacingSmall);
-  font-size: var(--psTypeFontSizeXSmall);
-  color: var(--psColorsPink6);
 }
