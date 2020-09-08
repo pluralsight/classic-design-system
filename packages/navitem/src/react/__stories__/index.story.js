@@ -53,8 +53,10 @@ Object.keys(NavItem.alignments).forEach(key =>
         Selected
       </NavItem>
       <NavItem
-        styles={{
-          'bar--selected': { background: colorsGradient.skillsBackground }
+        UNSAFE_stylesFor={{
+          'navitem__bar--selected': {
+            background: colorsGradient.skillsBackground
+          }
         }}
         alignment={NavItem.alignments[key]}
         selected
@@ -63,8 +65,10 @@ Object.keys(NavItem.alignments).forEach(key =>
         Skills Selected
       </NavItem>
       <NavItem
-        styles={{
-          'bar--selected': { background: colorsGradient.flowBackground }
+        UNSAFE_stylesFor={{
+          'navitem__bar--selected': {
+            background: colorsGradient.flowBackground
+          }
         }}
         alignment={NavItem.alignments[key]}
         selected
@@ -73,8 +77,10 @@ Object.keys(NavItem.alignments).forEach(key =>
         Flow Selected
       </NavItem>
       <NavItem
-        styles={{
-          'bar--selected': { background: colorsGradient.flowBackground }
+        UNSAFE_stylesFor={{
+          'navitem__bar--selected': {
+            background: colorsGradient.flowBackground
+          }
         }}
         alignment={NavItem.alignments[key]}
         icon={<HomeIcon />}

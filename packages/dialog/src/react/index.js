@@ -4,6 +4,7 @@ import React from 'react'
 
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { stylesFor } from '@pluralsight/ps-design-system-util'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
@@ -27,7 +28,11 @@ const styles = {
           stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
         )
     ),
-  content: () => css(stylesheet['.psds-dialog__content']),
+  content: props =>
+    css(
+      stylesheet['.psds-dialog__content'],
+      stylesFor('dialog__content', props)
+    ),
   close: _ => css(stylesheet['.psds-dialog__close']),
   overlay: _ => css(stylesheet['.psds-dialog__overlay'])
 }
@@ -56,7 +61,7 @@ const Dialog = React.forwardRef((props, ref) => {
       ref={ref}
     >
       <Theme name={Theme.names.light}>
-        <div {...styles.content()}>
+        <div {...styles.content(props)}>
           {!props.disableCloseButton && isFunction(props.onClose) && (
             <CloseButton onClick={props.onClose} />
           )}
@@ -95,7 +100,8 @@ Dialog.propTypes = {
   modal: PropTypes.bool,
   onClose: PropTypes.func,
   tailPosition: PropTypes.oneOf(Object.values(Dialog.tailPositions)),
-  returnFocus: PropTypes.bool
+  returnFocus: PropTypes.bool,
+  UNSAFE_stylesFor: PropTypes.object
 }
 
 Dialog.defaultProps = {

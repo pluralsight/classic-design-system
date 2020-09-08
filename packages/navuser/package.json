@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navuser",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Navuser UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,7 +25,7 @@
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-halo": "^7.0.10",
-    "@pluralsight/ps-design-system-util": "^4.0.1",
+    "@pluralsight/ps-design-system-util": "^4.1.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

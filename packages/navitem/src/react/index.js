@@ -20,7 +20,8 @@ NavItem.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.element,
   menu: PropTypes.bool,
-  selected: PropTypes.bool
+  selected: PropTypes.bool,
+  UNSAFE_stylesFor: PropTypes.object
 }
 NavItem.defaultProps = {
   alignment: 'horizontal',

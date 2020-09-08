@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@4.0.1...@pluralsight/ps-design-system-util@4.1.0) (2020-08-31)
+
+
+### Features
+
+* **util:** add stylesFor helper ([340c779](https://github.com/pluralsight/design-system/commit/340c7791a7e42a9f101e9ec819d7c5acd28c10bb))
+
+
+
+
+
 ## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@4.0.0...@pluralsight/ps-design-system-util@4.0.1) (2020-08-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util

@@ -1,5 +1,6 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
+import { stylesFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -17,8 +18,8 @@ const styles = {
         }-bar`
       ],
       props.selected && stylesheet['.psds-navitem__bar--selected'],
-      stylesFor('bar', props),
-      props.selected && stylesFor('bar--selected', props)
+      stylesFor('navitem__bar', props),
+      props.selected && stylesFor('navitem__bar--selected', props)
     ),
   button: props =>
     css(
@@ -59,8 +60,4 @@ Button.displayName = 'NavItem.Button'
 Button.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string
-}
-
-export function stylesFor(elementId, props) {
-  return ((props && props.styles) || {})[elementId]
 }

@@ -4,20 +4,35 @@
 const path = require('path')
 
 module.exports = {
+  siteMetadata: {
+    title: 'Pluralsight Design System'
+  },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `pages`,
+        name: 'pages',
         path: `${__dirname}/src/pages/`
       }
     },
     {
       resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/layouts/default.tsx')
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-postcss',
       options: {}
     },
     {
       resolve: 'gatsby-plugin-typescript',
+      options: {}
+    },
+    {
+      resolve: 'gatsby-plugin-react-helmet',
       options: {}
     },
     {

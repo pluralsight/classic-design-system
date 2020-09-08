@@ -1,0 +1,37 @@
+@import '@pluralsight/ps-design-system-core';
+
+@custom-media --breakpoint-small (width >= 768px);
+
+.header {
+  align-items: center;
+  display: flex;
+  height: var(--topNavHeight);
+  padding: var(--psLayoutSpacingXSmall);
+
+  &.dark {
+    background: var(--psColorsBackgroundDark1);
+  }
+
+  &.light {
+    background: var(--psColorsBackgroundLight1);
+  }
+
+  &.dark,
+  &.light {
+    @media (--breakpoint-small) {
+      background-color: transparent;
+    }
+  }
+
+  & .menuButton {
+    margin-right: auto;
+
+    @media (--breakpoint-small) {
+      display: none;
+    }
+  }
+
+  & .themeButton {
+    margin-left: auto;
+  }
+}
