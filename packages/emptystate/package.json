@@ -11,9 +11,9 @@
   },
   "scripts": {
     "build": "run-s build:svg build:js build:cjs build:css copy:svg",
-    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
+    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs && cp src/index.d.ts dist/cjs/index.d.ts",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
-    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
+    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm && cp src/index.d.ts dist/esm/index.d.ts",
     "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
     "build:watch": "npm run build:js -- --watch",
     "copy:svg": "node copy-svgs.js",
