@@ -26,9 +26,9 @@ export const Item = forwardRef(
       if (showSelectedValue && ref.current) {
         let currentAnimationFrame = null
         window.cancelAnimationFrame(currentAnimationFrame)
-        currentAnimationFrame = window.requestAnimationFrame(() =>
+        currentAnimationFrame = window.requestAnimationFrame(() => {
           ref.current.focus()
-        )
+        })
       }
     }, [showSelectedValue])
     return (

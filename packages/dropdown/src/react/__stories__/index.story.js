@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 /* eslint-disable react/prop-types */
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
@@ -6,7 +7,11 @@ import React, { forwardRef, useState } from 'react'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
-import { DropdownContext, useDropdown } from '../../js/index.js'
+import {
+  DropdownContext,
+  useDropdown,
+  useDropdownProps
+} from '../../js/index.js'
 
 storiesOf('labels', module)
   .add('none', _ => <Dropdown />)
@@ -580,102 +585,29 @@ storiesOf('portal', module).add('position', _ => (
     ultrices eros in cursus turpis massa.
   </div>
 ))
-const DropdownWithIcon = forwardRef(
-  (
-    {
-      appearance,
-      disabled,
-      className,
-      error,
-      label,
-      menu,
-      onChange,
-      onClick,
-      placeholder,
-      size,
-      subLabel,
-      style,
-      value,
-      icon,
-      ...rest
-    },
-    forwardedRef
-  ) => {
-    const {
-      combinedRef,
-      handleKeyDown,
-      handleMenuChange,
-      handleToggleOpen,
-      inNode,
-      isOpen,
-      longestMenuItemState,
-      menuPosition,
-      menuRef,
-      selectedLabel,
-      selectedValue,
-      setMenuPosition,
-      setOpen,
-      width
-    } = useDropdown({
-      forwardedRef,
-      menu,
-      value,
-      onChange,
-      onClick,
-      placeholder
-    })
-    return (
-      <Dropdown.Layout
-        disabled={disabled}
-        style={style}
-        className={className}
-        onKeyDown={handleKeyDown}
-        label={<Dropdown.Label label={label} />}
-        menu={
-          <DropdownContext.Provider value={selectedValue}>
-            <Dropdown.Menu
-              inNode={inNode}
-              isOpen={isOpen}
-              menu={menu}
-              menuPosition={menuPosition}
-              onClick={handleMenuChange}
-              onClose={() => {
-                setOpen(false)
-              }}
-              ref={menuRef}
-              width={width}
-            />
-          </DropdownContext.Provider>
-        }
-        subLabel={<Dropdown.SubLabel subLabel={subLabel} />}
-        button={
-          <Dropdown.Button
-            appearance={appearance}
-            disabled={disabled}
-            error={error}
-            isOpen={isOpen}
-            onClick={handleToggleOpen}
-            setMenuPosition={setMenuPosition}
-            size={size}
-            ref={combinedRef}
-            {...rest}
-          >
-            {icon}
-            <div style={{ height: '100%', position: 'relative', flex: 1 }}>
-              <Dropdown.Selected
-                appearance={appearance}
-                label={longestMenuItemState.label}
-                placeholder={placeholder}
-                selectedLabel={selectedLabel}
-                size={size}
-              />
-            </div>
-          </Dropdown.Button>
-        }
-      />
-    )
-  }
-)
+const DropdownWithIcon = forwardRef(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
 
 const DropdownWithDynamicIcon = () => {
   const [selected, setSelected] = useState()
@@ -704,15 +636,14 @@ const DropdownWithDynamicIcon = () => {
   const handleChange = (e, value) => {
     setSelected(value)
   }
+  const icon = values[selected] ? (
+    values[selected].icon
+  ) : (
+    <div style={{ width: 24, height: 24, marginRight: 8 }} />
+  )
   return (
     <DropdownWithIcon
-      icon={
-        values[selected] ? (
-          values[selected].icon
-        ) : (
-          <div style={{ width: 24, height: 24, marginRight: 8 }} />
-        )
-      }
+      icon={icon}
       onChange={handleChange}
       menu={
         <>

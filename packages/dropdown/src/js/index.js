@@ -13,43 +13,88 @@ import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
 
 export const DropdownContext = createContext()
 
-export const useDropdown = ({
-  forwardedRef,
+const sortDropdownProps = ({
+  appearance,
+  disabled,
+  className,
+  error,
+  label,
   menu,
-  onClick,
   onChange,
+  onClick,
   placeholder,
-  value
-}) => {
+  size,
+  subLabel,
+  style,
+  value,
+  ...rest
+}) => ({
+  button: {
+    appearance,
+    disabled,
+    error,
+    size,
+    ...rest
+  },
+  hook: {
+    menu,
+    value,
+    onChange,
+    onClick,
+    placeholder
+  },
+  label: {
+    label
+  },
+  layout: {
+    className,
+    disabled,
+    style
+  },
+  menu: {
+    menu
+  },
+  selected: {
+    appearance,
+    placeholder,
+    size
+  },
+  subLabel: {
+    subLabel
+  }
+})
+
+export const useDropdown = (props, forwardedRef) => {
+  const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
 
   const itemMatchingValue = useMemo(
     _ => {
-      return findMatchingActionMenuItem(menu, value)
+      return findMatchingActionMenuItem(hook.menu, hook.value)
     },
-    [menu, value]
+    [hook.menu, hook.value]
   )
 
   const [selectedLabel, setSelectedLabel] = useState(
     itemMatchingValue ? itemMatchingValue.props.children : null
   )
-  const [selectedValue, setSelectedValue] = useState(value)
+  const [selectedValue, setSelectedValue] = useState(hook.value)
 
   useEffect(
     _ => {
       setSelectedLabel(
         itemMatchingValue ? itemMatchingValue.props.children : null
       )
-      setSelectedValue(value)
+      setSelectedValue(hook.value)
     },
-    [itemMatchingValue, value]
+    [itemMatchingValue, hook.value]
   )
 
   function handleToggleOpen(evt) {
     evt.preventDefault()
     evt.stopPropagation()
     setOpen(!isOpen)
-    if (typeof onClick === 'function') onClick(evt)
+    if (typeof hook.onClick === 'function') hook.onClick(evt)
   }
 
   function handleKeyDown(evt) {
@@ -63,7 +108,7 @@ export const useDropdown = ({
     setSelectedValue(value)
     setSelectedLabel(value === innerText ? value : innerText)
     setOpen(false)
-    if (typeof onChange === 'function') onChange(evt, value)
+    if (typeof hook.onChange === 'function') hook.onChange(evt, value)
   }
 
   const menuRef = useRef(null)
@@ -104,11 +149,13 @@ export const useDropdown = ({
       }, startLongest)
     }
 
-    return getLongestState({ hasIcon: false, label: placeholder || '' }, menu)
+    return getLongestState(
+      { hasIcon: false, label: hook.placeholder || '' },
+      hook.menu
+    )
   }
 
   const longestMenuItemState = getLongestMenuLabelState()
-  console.log(longestMenuItemState)
   const [width, setWidth] = useState('auto')
   const innerRef = createRef(null)
   const combinedRef = useCombinedRefs(forwardedRef, innerRef)
@@ -119,20 +166,39 @@ export const useDropdown = ({
   const [menuPosition, setMenuPosition] = useState({ left: 0, top: 0 })
 
   return {
-    combinedRef,
-    handleKeyDown,
-    handleMenuChange,
-    handleToggleOpen,
-    inNode,
-    isOpen,
-    longestMenuItemState,
-    menuPosition,
-    menuRef,
-    selectedLabel,
-    selectedValue,
-    setMenuPosition,
-    setOpen,
-    width
+    button: {
+      ...rest.button,
+      ref: combinedRef,
+      isOpen,
+      onClick: handleToggleOpen,
+      setMenuPosition
+    },
+    label: rest.label,
+    layout: {
+      ...rest.layout,
+      onKeyDown: handleKeyDown
+    },
+    menu: {
+      ...rest.menu,
+      inNode,
+      isOpen,
+      menuPosition,
+      onClick: handleMenuChange,
+      onClose: () => {
+        setOpen(false)
+      },
+      ref: menuRef,
+      width
+    },
+    selected: {
+      ...rest.selected,
+      label: longestMenuItemState.label,
+      selectedLabel
+    },
+    subLabel: rest.subLabel,
+    value: {
+      value: selectedValue
+    }
   }
 }
 

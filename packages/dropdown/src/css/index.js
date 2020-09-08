@@ -36,7 +36,7 @@ export default {
     color: colorsTextIcon.highOnLight,
     textAlign: 'left',
     cursor: 'pointer',
-    padding: `0 ${layout.spacingMedium}`,
+    padding: `0 ${layout.spacingSmall}`,
     '&:focus': {
       outline: 'none'
     }
@@ -66,7 +66,8 @@ export default {
     display: 'inline-flex',
     alignItems: 'center',
     textAlign: 'left',
-    minWidth: 0
+    minWidth: 0,
+    width: '100%'
   },
 
   // __field-container

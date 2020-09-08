@@ -28,12 +28,12 @@ exports[`Storyshots appearance default w/ error 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -118,12 +118,12 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-h0ocz=""
+                data-css-94lg5r=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  data-css-366l6x=""
+                  data-css-1m4meif=""
                 >
                   <span
                     aria-hidden={true}
@@ -178,12 +178,12 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-h0ocz=""
+                data-css-94lg5r=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  data-css-366l6x=""
+                  data-css-1m4meif=""
                 >
                   <span
                     aria-hidden={true}
@@ -257,12 +257,12 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-y50j5g=""
+                data-css-1c2g7cd=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  data-css-366l6x=""
+                  data-css-1m4meif=""
                 >
                   <span
                     aria-hidden={true}
@@ -317,12 +317,12 @@ exports[`Storyshots appearance gaps 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-y50j5g=""
+                data-css-1c2g7cd=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  data-css-366l6x=""
+                  data-css-1m4meif=""
                 >
                   <span
                     aria-hidden={true}
@@ -402,12 +402,12 @@ exports[`Storyshots appearance medium default 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -470,12 +470,12 @@ exports[`Storyshots appearance medium subtle 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-y50j5g=""
+            data-css-1c2g7cd=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -543,7 +543,7 @@ exports[`Storyshots appearance small default 1`] = `
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -611,7 +611,7 @@ exports[`Storyshots appearance small subtle 1`] = `
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -679,12 +679,12 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-y50j5g=""
+            data-css-1c2g7cd=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -762,11 +762,11 @@ exports[`Storyshots custom dynamic icon 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <div
                 style={
@@ -846,11 +846,11 @@ exports[`Storyshots custom fixed icon 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <div
                 data-css-7dab2f=""
@@ -945,12 +945,12 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -1012,12 +1012,12 @@ exports[`Storyshots disabled compare 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={true}
               onClick={null}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -1086,12 +1086,12 @@ exports[`Storyshots focus autofocus with ref 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1150,14 +1150,14 @@ exports[`Storyshots focus disabled 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={true}
             onBlur={[Function]}
             onClick={null}
             onFocus={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1216,13 +1216,13 @@ exports[`Storyshots focus onBlur 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1281,13 +1281,13 @@ exports[`Storyshots focus onFocus 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
             onFocus={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1351,12 +1351,12 @@ exports[`Storyshots labels all 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1429,12 +1429,12 @@ exports[`Storyshots labels label 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1498,12 +1498,12 @@ exports[`Storyshots labels label and subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1567,12 +1567,12 @@ exports[`Storyshots labels none 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1631,12 +1631,12 @@ exports[`Storyshots labels placeholder 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1699,12 +1699,12 @@ exports[`Storyshots labels subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -1789,12 +1789,12 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -1851,12 +1851,12 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -1939,12 +1939,12 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -2003,12 +2003,12 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -2086,12 +2086,12 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-y50j5g=""
+              data-css-1c2g7cd=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -2150,12 +2150,12 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-y50j5g=""
+              data-css-1c2g7cd=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -2249,12 +2249,12 @@ exports[`Storyshots layouts right-aligned 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-y50j5g=""
+                data-css-1c2g7cd=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  data-css-366l6x=""
+                  data-css-1m4meif=""
                 >
                   <span
                     aria-hidden={true}
@@ -2332,12 +2332,12 @@ exports[`Storyshots menu divider 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -2405,12 +2405,12 @@ exports[`Storyshots menu in stack 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-h0ocz=""
+                data-css-94lg5r=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  data-css-366l6x=""
+                  data-css-1m4meif=""
                 >
                   <span
                     aria-hidden={true}
@@ -2469,12 +2469,12 @@ exports[`Storyshots menu in stack 1`] = `
               data-css-ne3jjf=""
             >
               <button
-                data-css-h0ocz=""
+                data-css-94lg5r=""
                 disabled={false}
                 onClick={[Function]}
               >
                 <span
-                  data-css-366l6x=""
+                  data-css-1m4meif=""
                 >
                   <span
                     aria-hidden={true}
@@ -2544,12 +2544,12 @@ exports[`Storyshots menu nested 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -2617,12 +2617,12 @@ exports[`Storyshots menu onClicks 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-y50j5g=""
+            data-css-1c2g7cd=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -2709,12 +2709,12 @@ exports[`Storyshots menu single list 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -2780,12 +2780,12 @@ exports[`Storyshots menu single list w/ icon 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -2853,12 +2853,12 @@ exports[`Storyshots menu super long 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -2924,12 +2924,12 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -2995,12 +2995,12 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -3068,12 +3068,12 @@ exports[`Storyshots menu w/ subLabel 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -3144,12 +3144,12 @@ exports[`Storyshots menu w/ value 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -3212,12 +3212,12 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -3298,12 +3298,12 @@ exports[`Storyshots portal position 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -3371,13 +3371,13 @@ exports[`Storyshots props whitelist title 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             onClick={[Function]}
             title="This title should be present"
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -3459,12 +3459,12 @@ exports[`Storyshots whitelist clear 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}
@@ -3528,13 +3528,13 @@ exports[`Storyshots whitelist name 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-h0ocz=""
+            data-css-94lg5r=""
             disabled={false}
             name="myFieldNameOfPower"
             onClick={[Function]}
           >
             <span
-              data-css-366l6x=""
+              data-css-1m4meif=""
             >
               <span
                 aria-hidden={true}
@@ -3613,12 +3613,12 @@ exports[`Storyshots whitelist onChange 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-h0ocz=""
+              data-css-94lg5r=""
               disabled={false}
               onClick={[Function]}
             >
               <span
-                data-css-366l6x=""
+                data-css-1m4meif=""
               >
                 <span
                   aria-hidden={true}

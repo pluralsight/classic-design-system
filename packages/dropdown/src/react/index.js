@@ -11,98 +11,26 @@ import { Button } from './button.js'
 import { Selected } from './selected.js'
 import * as vars from '../vars/index.js'
 
-const Dropdown = forwardRef(
-  (
-    {
-      appearance,
-      disabled,
-      className,
-      error,
-      label,
-      menu,
-      onChange,
-      onClick,
-      placeholder,
-      size,
-      subLabel,
-      style,
-      value,
-      ...rest
-    },
-    forwardedRef
-  ) => {
-    const {
-      combinedRef,
-      handleKeyDown,
-      handleMenuChange,
-      handleToggleOpen,
-      inNode,
-      isOpen,
-      longestMenuItemState,
-      menuPosition,
-      menuRef,
-      selectedLabel,
-      selectedValue,
-      setMenuPosition,
-      setOpen,
-      width
-    } = useDropdown({
-      forwardedRef,
-      menu,
-      value,
-      onChange,
-      onClick,
-      placeholder
-    })
-    return (
-      <Layout
-        disabled={disabled}
-        style={style}
-        className={className}
-        onKeyDown={handleKeyDown}
-        label={<Label label={label} />}
-        menu={
-          <DropdownContext.Provider value={selectedValue}>
-            <Menu
-              inNode={inNode}
-              isOpen={isOpen}
-              menu={menu}
-              menuPosition={menuPosition}
-              onClick={handleMenuChange}
-              onClose={() => {
-                setOpen(false)
-              }}
-              ref={menuRef}
-              width={width}
-            />
-          </DropdownContext.Provider>
-        }
-        subLabel={<SubLabel subLabel={subLabel} />}
-        button={
-          <Button
-            appearance={appearance}
-            disabled={disabled}
-            error={error}
-            isOpen={isOpen}
-            onClick={handleToggleOpen}
-            setMenuPosition={setMenuPosition}
-            size={size}
-            ref={combinedRef}
-            {...rest}
-          >
-            <Selected
-              appearance={appearance}
-              label={longestMenuItemState.label}
-              placeholder={placeholder}
-              selectedLabel={selectedLabel}
-              size={size}
-            />
-          </Button>
-        }
-      />
-    )
-  }
-)
+const Dropdown = forwardRef((props, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Layout
+      {...allProps.layout}
+      label={<Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<SubLabel {...allProps.subLabel} />}
+      button={
+        <Button {...allProps.button}>
+          <Selected {...allProps.selected} />
+        </Button>
+      }
+    />
+  )
+})
 
 Dropdown.displayName = 'Dropdown'
 Dropdown.propTypes = {

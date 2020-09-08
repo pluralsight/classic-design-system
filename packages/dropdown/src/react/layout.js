@@ -29,10 +29,10 @@ export const Layout = ({
       className={className}
       onKeyDown={onKeyDown}
     >
-      {label && label}
+      {label}
       {button}
-      {menu && menu}
-      {subLabel && subLabel}
+      {menu}
+      {subLabel}
     </label>
   )
 }
