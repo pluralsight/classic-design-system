@@ -102,7 +102,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
       )}
     </div>
   )
-})
+}) as IAvatar
 
 Avatar.defaultProps = { size: sizes.medium }
 Avatar.displayName = 'Avatar'
