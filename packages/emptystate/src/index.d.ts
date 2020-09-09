@@ -59,13 +59,13 @@ type Illustration = RefForwardingComponent<
   IllustrationStatics
 >
 
-interface EmptyStateProps<TagType = JSX.IntrinsicElements> {
+export interface EmptyStateProps<TagType = JSX.IntrinsicElements> {
   actions?: ReactNode
   caption?: ReactNode
   heading: ReactNode
   illustration?: ReactNode
   size?: keyof typeof sizes
-  themeName: string
+  themeName?: string
 }
 
 interface EmptyStateStatics {
