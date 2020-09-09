@@ -26,17 +26,18 @@ module.exports = {
             resolve: 'gatsby-remark-inline-codesandbox',
             options: {
               mode: 'iframe',
-              query: {
-                codemirror: 1,
-                hidenavigation: 1
-              },
               customTemplates: {
-                component: {
-                  extends: `file:${path.resolve('./sandboxes/component/')}`,
-                  entry: 'src/index.js'
+                default: {
+                  extends: `file:${path.resolve('./sandboxes/default/')}`,
+                  entry: 'src/example.tsx',
+                  query: { fontsize: 12, hidenavigation: 1, theme: 'dark' }
                 }
               }
             }
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {}
           }
         ]
       }

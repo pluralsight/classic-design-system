@@ -15,13 +15,30 @@ This is `inlineCode`.
 Code block vanilla for now.
 ```
 
-```js codesandbox=component
-import React from 'react';
-import ReactDOM from 'react-dom';
+```typescript
+import React from 'react'
 
-const Test = () => <p>hello world</p>
+const Example: React.FC = () => {
+  return (
+    <div>
+      <p>hello world</p>
+    </div>
+  )
+}
 
-const el = document.getElementById('root')
+export default Example
+```
 
-ReactDOM.render(<Test />, el);
+```typescript codesandbox=default
+import React from 'react'
+
+const Example: React.FC = () => {
+  return (
+    <div>
+      <p>hello world from typescript</p>
+    </div>
+  )
+}
+
+export default Example
 ```
