@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import * as React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import * as Icon from '@pluralsight/ps-design-system-icon'
@@ -7,7 +7,6 @@ import Tag from '@pluralsight/ps-design-system-tag'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
 import EmptyState, { EmptyStateProps } from '../../index.js'
-import { FunctionComponent } from 'react'
 
 const CustomIllustration: FunctionComponent = () => (
   <svg viewBox="0 0 128 128" aria-hidden role="img">

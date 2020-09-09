@@ -1,5 +1,10 @@
 {
-  "extends": "../../base-tsconfig.json",
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "rootDir": null,
+    "jsx": "react"
+  },
   "include": [
     "**/*",
     "../../typings/*"

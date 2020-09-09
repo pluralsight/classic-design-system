@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "rootDir": ".",
-    "strict": true,
-    "esModuleInterop": true,
-    "lib": ["dom", "es5", "es6"],
-    "jsx": "react"
-  }
-}
