@@ -19,7 +19,7 @@ const weights = [
     label: 'BOOK',
     weight: 400,
     varName: 'psTypeFontWeightBook',
-    jsVarName: 'type.fontWeightBoook',
+    jsVarName: 'type.fontWeightBook',
   },
   {
     label: 'LIGHT',
