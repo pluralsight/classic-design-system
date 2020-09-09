@@ -20,6 +20,7 @@ exports[`Storyshots Navuser states 1`] = `
       <div
         aria-hidden={true}
         data-css-79vgce=""
+        size="xSmall"
       >
         <img
           data-css-d7y6x2=""
@@ -49,6 +50,7 @@ exports[`Storyshots Navuser states 1`] = `
       <div
         aria-hidden={true}
         data-css-79vgce=""
+        size="xSmall"
       >
         <img
           data-css-d7y6x2=""
@@ -91,6 +93,7 @@ exports[`Storyshots Navuser states 1`] = `
       <div
         aria-hidden={true}
         data-css-79vgce=""
+        size="xSmall"
       >
         <img
           data-css-d7y6x2=""
@@ -137,6 +140,7 @@ exports[`Storyshots Navuser states 1`] = `
       <div
         aria-hidden={true}
         data-css-79vgce=""
+        size="xSmall"
       >
         <img
           data-css-d7y6x2=""
@@ -183,6 +187,7 @@ exports[`Storyshots Navuser states 1`] = `
       <div
         aria-hidden={true}
         data-css-79vgce=""
+        size="xSmall"
       >
         <img
           data-css-d7y6x2=""
