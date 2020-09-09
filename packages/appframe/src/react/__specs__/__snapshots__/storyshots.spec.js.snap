@@ -93,7 +93,6 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
             >
               <div
                 data-css-79vgce=""
-                size="xSmall"
               >
                 <div
                   aria-label="Jake"
@@ -299,7 +298,6 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
             >
               <div
                 data-css-79vgce=""
-                size="xSmall"
               >
                 <div
                   aria-label="Jake"
@@ -547,7 +545,6 @@ exports[`Storyshots AppFrame short content 1`] = `
             >
               <div
                 data-css-79vgce=""
-                size="xSmall"
               >
                 <div
                   aria-label="Jake"
@@ -929,7 +926,6 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
             >
               <div
                 data-css-79vgce=""
-                size="xSmall"
               >
                 <div
                   aria-label="Jake"
@@ -1367,7 +1363,6 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
             >
               <div
                 data-css-79vgce=""
-                size="xSmall"
               >
                 <div
                   aria-label="Jake"
@@ -1805,7 +1800,6 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
             >
               <div
                 data-css-79vgce=""
-                size="xSmall"
               >
                 <div
                   aria-label="Jake"

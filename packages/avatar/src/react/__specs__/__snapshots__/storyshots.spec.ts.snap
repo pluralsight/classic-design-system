@@ -5,7 +5,6 @@ exports[`Storyshots Default className override 1`] = `
   aria-hidden={true}
   className="fakeClassName"
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     data-css-d7y6x2=""
@@ -30,7 +29,6 @@ exports[`Storyshots Default className override 1`] = `
 exports[`Storyshots Default large 1`] = `
 <div
   data-css-1vpftcu=""
-  size="large"
 >
   <img
     alt="large avatar"
@@ -55,7 +53,6 @@ exports[`Storyshots Default large 1`] = `
 exports[`Storyshots Default light image 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     alt="light image avatar"
@@ -81,7 +78,6 @@ exports[`Storyshots Default light image 1`] = `
 exports[`Storyshots Default medium 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     alt="medium avatar"
@@ -106,7 +102,6 @@ exports[`Storyshots Default medium 1`] = `
 exports[`Storyshots Default small 1`] = `
 <div
   data-css-xthig=""
-  size="small"
 >
   <img
     alt="small avatar"
@@ -132,7 +127,6 @@ exports[`Storyshots Default style override 1`] = `
 <div
   aria-hidden={true}
   data-css-1a2nnhr=""
-  size="medium"
   style={
     Object {
       "border": "3px solid red",
@@ -162,7 +156,6 @@ exports[`Storyshots Default style override 1`] = `
 exports[`Storyshots Default xLarge 1`] = `
 <div
   data-css-1c3gh8k=""
-  size="xLarge"
 >
   <img
     alt="xLarge avatar"
@@ -187,7 +180,6 @@ exports[`Storyshots Default xLarge 1`] = `
 exports[`Storyshots Default xSmall 1`] = `
 <div
   data-css-79vgce=""
-  size="xSmall"
 >
   <img
     alt="xSmall avatar"
@@ -213,7 +205,6 @@ exports[`Storyshots Image cases flat, long 1`] = `
 <div
   aria-hidden={true}
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     data-css-d7y6x2=""
@@ -239,7 +230,6 @@ exports[`Storyshots Image cases square 1`] = `
 <div
   aria-hidden={true}
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     data-css-d7y6x2=""
@@ -265,7 +255,6 @@ exports[`Storyshots Image cases tall, thin 1`] = `
 <div
   aria-hidden={true}
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     data-css-d7y6x2=""
@@ -290,7 +279,6 @@ exports[`Storyshots Image cases tall, thin 1`] = `
 exports[`Storyshots Using Initials % Special Characters 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="% Special Characters"
@@ -309,7 +297,6 @@ exports[`Storyshots Using Initials % Special Characters 1`] = `
 exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Anakin Skywalker"
@@ -328,7 +315,6 @@ exports[`Storyshots Using Initials Anakin Skywalker 1`] = `
 exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Budapest Skywalker"
@@ -347,7 +333,6 @@ exports[`Storyshots Using Initials Budapest Skywalker 1`] = `
 exports[`Storyshots Using Initials Carlos Organa 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Carlos Organa"
@@ -366,7 +351,6 @@ exports[`Storyshots Using Initials Carlos Organa 1`] = `
 exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Dennis Pimenta"
@@ -385,7 +369,6 @@ exports[`Storyshots Using Initials Dennis Pimenta 1`] = `
 exports[`Storyshots Using Initials Diz Blau 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Diz Blau"
@@ -404,7 +387,6 @@ exports[`Storyshots Using Initials Diz Blau 1`] = `
 exports[`Storyshots Using Initials Harry Potter 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Harry Potter"
@@ -423,7 +405,6 @@ exports[`Storyshots Using Initials Harry Potter 1`] = `
 exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Obi-Wan Kenobi"
@@ -442,7 +423,6 @@ exports[`Storyshots Using Initials Obi-Wan Kenobi 1`] = `
 exports[`Storyshots Using Initials Peia Organa 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Peia Organa"
@@ -461,7 +441,6 @@ exports[`Storyshots Using Initials Peia Organa 1`] = `
 exports[`Storyshots Using Initials Single 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Single"
@@ -480,7 +459,6 @@ exports[`Storyshots Using Initials Single 1`] = `
 exports[`Storyshots Using Initials Uy Marley 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="Uy Marley"
@@ -501,7 +479,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -524,7 +501,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -547,7 +523,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -570,7 +545,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -593,7 +567,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -616,7 +589,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -639,7 +611,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -662,7 +633,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -685,7 +655,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -708,7 +677,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
   <div
     aria-hidden={true}
     data-css-1a2nnhr=""
-    size="medium"
   >
     <img
       data-css-d7y6x2=""
@@ -734,7 +702,6 @@ exports[`Storyshots Using Initials alpha-order names w/ varied colors 1`] = `
 exports[`Storyshots Using Initials empty name, no src 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label=""
@@ -754,7 +721,6 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 <div
   aria-hidden={true}
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     data-css-d7y6x2=""
@@ -779,7 +745,6 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 exports[`Storyshots Using Initials null name, no src 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label={null}
@@ -798,7 +763,6 @@ exports[`Storyshots Using Initials null name, no src 1`] = `
 exports[`Storyshots Using Initials single string name, no src 1`] = `
 <div
   data-css-1a2nnhr=""
-  size="medium"
 >
   <div
     aria-label="x"
@@ -818,7 +782,6 @@ exports[`Storyshots Using Initials with invalid gravatar image 1`] = `
 <div
   aria-hidden={true}
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     data-css-d7y6x2=""
@@ -844,7 +807,6 @@ exports[`Storyshots Using Initials with invalid gravatar image, no name 1`] = `
 <div
   aria-hidden={true}
   data-css-1a2nnhr=""
-  size="medium"
 >
   <img
     data-css-d7y6x2=""

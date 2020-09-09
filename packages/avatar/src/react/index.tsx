@@ -55,7 +55,7 @@ const styles: { [key: string]: StyleFn } = {
 }
 
 const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
-  const { alt, name, src, ...rest } = props
+  const { alt, name, size: _size, src, ...rest } = props
   const initials = getInitials(name)
 
   const [imageState, setImageState] = useState<ImageState>('loading')
