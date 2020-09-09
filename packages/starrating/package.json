@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-starrating",
-  "version": "7.1.10",
+  "version": "7.1.11",
   "description": "Design System component for star rating ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
-    "@pluralsight/ps-design-system-icon": "^18.1.8",
+    "@pluralsight/ps-design-system-icon": "^18.2.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

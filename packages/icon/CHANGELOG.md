@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [18.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.1.8...@pluralsight/ps-design-system-icon@18.2.0) (2020-09-09)
+
+
+### Features
+
+* **icon:** add theme icon ([1b20f21](https://github.com/pluralsight/design-system/commit/1b20f21fafd079c224a444c501aae87710192728))
+
+
+
+
+
 ## [18.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.1.7...@pluralsight/ps-design-system-icon@18.1.8) (2020-08-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

@@ -95,13 +95,16 @@ export const handleMenuKeyDownEvents = e => {
   e.preventDefault()
 }
 
-export const useMenuRef = () => {
+export const useMenuRef = (focus = false) => {
   const outer = createRef()
-  const inner = useCallback(node => {
-    if (node !== null) {
-      const firstMenuItem = searchListItem(node.firstElementChild)
-      firstMenuItem && firstMenuItem.focus()
-    }
-  }, [])
+  const inner = useCallback(
+    node => {
+      if (node && focus) {
+        const firstMenuItem = searchListItem(node.firstElementChild)
+        firstMenuItem && firstMenuItem.focus()
+      }
+    },
+    [focus]
+  )
   return useCombinedRefs(outer, inner)
 }

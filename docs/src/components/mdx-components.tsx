@@ -2,7 +2,7 @@ import Link from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
-function H1(props) {
+export function H1(props) {
   return (
     <Text.Heading size={Text.Heading.sizes.xLarge}>
       <h1>{props.children}</h1>
@@ -10,7 +10,7 @@ function H1(props) {
   )
 }
 
-function H2(props) {
+export function H2(props) {
   return (
     <Text.Heading size={Text.Heading.sizes.large}>
       <h2>{props.children}</h2>
@@ -18,7 +18,7 @@ function H2(props) {
   )
 }
 
-function H3(props) {
+export function H3(props) {
   return (
     <Text.Heading size={Text.Heading.sizes.medium}>
       <h3>{props.children}</h3>
@@ -26,15 +26,15 @@ function H3(props) {
   )
 }
 
-function Ol(props) {
+export function Ol(props) {
   return <Text.List type={Text.List.types.numbered}>{props.children}</Text.List>
 }
 
-function Ul(props) {
+export function Ul(props) {
   return <Text.List type={Text.List.types.bulleted}>{props.children}</Text.List>
 }
 
-function A(props) {
+export function A(props) {
   return (
     <Link>
       <a href={props.href}>{props.children}</a>
