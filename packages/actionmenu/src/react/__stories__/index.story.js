@@ -115,12 +115,10 @@ storiesOf('dividers', module)
   ))
 
 // eslint-disable-next-line react/prop-types
-const BlurOnMount = () => {
-  const ref = useRef(null)
-  useEffect(() => {
-    const firstItem = ref.current && ref.current.querySelector('* > li')
-    firstItem && firstItem.blur()
-  })
+// eslint-disable-next-line react/display-name
+const FocusOnMount = React.forwardRef((props, forwardedRef) => {
+  const ref = ActionMenu.useMenuRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
   return (
     <ActionMenu ref={ref}>
       <ActionMenu.Item>One item</ActionMenu.Item>
@@ -128,8 +126,8 @@ const BlurOnMount = () => {
       <ActionMenu.Item>Three item</ActionMenu.Item>
     </ActionMenu>
   )
-}
-storiesOf('Blur onMount', module).add('example', _ => <BlurOnMount />)
+})
+storiesOf('focus onMount', module).add('example', _ => <FocusOnMount />)
 
 // eslint-disable-next-line react/prop-types
 const NestedMenu = ({ origin }) => (
@@ -343,7 +341,11 @@ storiesOf('with Position', module)
         when
         show={
           <div>
-            <BlurOnMount />
+            <ActionMenu>
+              <ActionMenu.Item>One item</ActionMenu.Item>
+              <ActionMenu.Item>Two item</ActionMenu.Item>
+              <ActionMenu.Item>Three item</ActionMenu.Item>
+            </ActionMenu>
           </div>
         }
       >
@@ -364,9 +366,11 @@ storiesOf('with Position', module)
       <BelowRight
         when
         show={
-          <div>
-            <BlurOnMount />
-          </div>
+          <ActionMenu>
+            <ActionMenu.Item>One item</ActionMenu.Item>
+            <ActionMenu.Item>Two item</ActionMenu.Item>
+            <ActionMenu.Item>Three item</ActionMenu.Item>
+          </ActionMenu>
         }
       >
         <div
