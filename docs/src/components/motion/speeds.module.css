@@ -1,0 +1,41 @@
+.speeds {
+  border-radius: 12px;
+  background: var(--psColorsBackgroundLight2);
+  padding: var(--psLayoutSpacingMedium);
+}
+.speed {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  grid-gap: var(--psLayoutSpacingMedium);
+  grid-template-areas: 'icon vars' 'labels labels';
+  color: var(--psColorsBackgroundDark2);
+  margin-bottom: var(--psLayoutSpacingLarge);
+}
+.icon {
+  grid-area: icon;
+  font-size: var(--psTypeFontSizeGigantic);
+  letter-spacing: var(--psTypeLetterSpacingGigantic);
+  line-height: 1em;
+}
+.labels {
+  grid-area: labels;
+  color: var(--psColorsTextIconLowOnLight);
+  font-size: var(--psTypeFontSizeXSmall);
+}
+.title {
+  font-weight: var(--psTypeFontWeightBook);
+  text-transform: uppercase;
+}
+.time {
+  font-weight: var(--psTypeFontWeightBold);
+}
+.vars {
+  grid-area: vars;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: var(--psTypeFontSizeXSmall);
+  font-weight: var(--psTypeFontWeightMedium);
+}
+.vars code {
+  color: var(--psColorsPink6);
+}
