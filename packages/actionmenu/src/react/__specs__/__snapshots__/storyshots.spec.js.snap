@@ -1,100 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Blur onMount example 1`] = `
-<div
-  data-css-12kxz7c=""
->
-  <ul
-    data-css-rls1dj=""
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    role="menu"
-  >
-    <li
-      data-css-1vvjdfo=""
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
-      tabIndex="-1"
-    >
-      <a
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
-      >
-        <div
-          data-css-fxdh11=""
-        >
-          One item
-        </div>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-    <li
-      data-css-1vvjdfo=""
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
-      tabIndex="-1"
-    >
-      <a
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
-      >
-        <div
-          data-css-fxdh11=""
-        >
-          Two item
-        </div>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-    <li
-      data-css-1vvjdfo=""
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
-      tabIndex="-1"
-    >
-      <a
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
-      >
-        <div
-          data-css-fxdh11=""
-        >
-          Three item
-        </div>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-  </ul>
-</div>
-`;
-
 exports[`Storyshots customized styles item style 1`] = `
 <div
   data-css-12kxz7c=""
@@ -737,6 +642,101 @@ exports[`Storyshots dividers sandwich 1`] = `
     <div
       data-css-shsjok=""
     />
+    <li
+      data-css-1vvjdfo=""
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      role="none"
+      tabIndex="-1"
+    >
+      <a
+        aria-haspopup={false}
+        data-css-1v7ok0h=""
+        onClick={[Function]}
+        role="menuitem"
+      >
+        <div
+          data-css-fxdh11=""
+        >
+          Two item
+        </div>
+      </a>
+      <ul
+        aria-expanded={false}
+        data-css-kfdt74=""
+        onKeyDown={[Function]}
+        role="menu"
+      />
+    </li>
+    <li
+      data-css-1vvjdfo=""
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      role="none"
+      tabIndex="-1"
+    >
+      <a
+        aria-haspopup={false}
+        data-css-1v7ok0h=""
+        onClick={[Function]}
+        role="menuitem"
+      >
+        <div
+          data-css-fxdh11=""
+        >
+          Three item
+        </div>
+      </a>
+      <ul
+        aria-expanded={false}
+        data-css-kfdt74=""
+        onKeyDown={[Function]}
+        role="menu"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots focus onMount example 1`] = `
+<div
+  data-css-12kxz7c=""
+>
+  <ul
+    data-css-rls1dj=""
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    role="menu"
+  >
+    <li
+      data-css-1vvjdfo=""
+      onKeyDown={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      role="none"
+      tabIndex="-1"
+    >
+      <a
+        aria-haspopup={false}
+        data-css-1v7ok0h=""
+        onClick={[Function]}
+        role="menuitem"
+      >
+        <div
+          data-css-fxdh11=""
+        >
+          One item
+        </div>
+      </a>
+      <ul
+        aria-expanded={false}
+        data-css-kfdt74=""
+        onKeyDown={[Function]}
+        role="menu"
+      />
+    </li>
     <li
       data-css-1vvjdfo=""
       onKeyDown={[Function]}
@@ -5152,102 +5152,99 @@ exports[`Storyshots with Position BelowRight 1`] = `
         }
       }
     >
-      <div
+      <ul
+        data-css-rls1dj=""
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="menu"
         style={
           Object {
             "position": "absolute",
           }
         }
       >
-        <ul
-          data-css-rls1dj=""
+        <li
+          data-css-1vvjdfo=""
           onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          role="menu"
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          role="none"
+          tabIndex="-1"
         >
-          <li
-            data-css-1vvjdfo=""
-            onKeyDown={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            role="none"
-            tabIndex="-1"
+          <a
+            aria-haspopup={false}
+            data-css-1v7ok0h=""
+            onClick={[Function]}
+            role="menuitem"
           >
-            <a
-              aria-haspopup={false}
-              data-css-1v7ok0h=""
-              onClick={[Function]}
-              role="menuitem"
+            <div
+              data-css-fxdh11=""
             >
-              <div
-                data-css-fxdh11=""
-              >
-                One item
-              </div>
-            </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
-          </li>
-          <li
-            data-css-1vvjdfo=""
+              One item
+            </div>
+          </a>
+          <ul
+            aria-expanded={false}
+            data-css-kfdt74=""
             onKeyDown={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            role="none"
-            tabIndex="-1"
+            role="menu"
+          />
+        </li>
+        <li
+          data-css-1vvjdfo=""
+          onKeyDown={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          role="none"
+          tabIndex="-1"
+        >
+          <a
+            aria-haspopup={false}
+            data-css-1v7ok0h=""
+            onClick={[Function]}
+            role="menuitem"
           >
-            <a
-              aria-haspopup={false}
-              data-css-1v7ok0h=""
-              onClick={[Function]}
-              role="menuitem"
+            <div
+              data-css-fxdh11=""
             >
-              <div
-                data-css-fxdh11=""
-              >
-                Two item
-              </div>
-            </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
-          </li>
-          <li
-            data-css-1vvjdfo=""
+              Two item
+            </div>
+          </a>
+          <ul
+            aria-expanded={false}
+            data-css-kfdt74=""
             onKeyDown={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            role="none"
-            tabIndex="-1"
+            role="menu"
+          />
+        </li>
+        <li
+          data-css-1vvjdfo=""
+          onKeyDown={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          role="none"
+          tabIndex="-1"
+        >
+          <a
+            aria-haspopup={false}
+            data-css-1v7ok0h=""
+            onClick={[Function]}
+            role="menuitem"
           >
-            <a
-              aria-haspopup={false}
-              data-css-1v7ok0h=""
-              onClick={[Function]}
-              role="menuitem"
+            <div
+              data-css-fxdh11=""
             >
-              <div
-                data-css-fxdh11=""
-              >
-                Three item
-              </div>
-            </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
-          </li>
-        </ul>
-      </div>
+              Three item
+            </div>
+          </a>
+          <ul
+            aria-expanded={false}
+            data-css-kfdt74=""
+            onKeyDown={[Function]}
+            role="menu"
+          />
+        </li>
+      </ul>
     </div>
   </div>
 </div>

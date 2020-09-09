@@ -1,0 +1,43 @@
+.label {
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightTight);
+  margin: var(--psLayoutSpacingLarge) 0 var(--psLayoutSpacingXSmall) 0;
+}
+
+.swatch {
+  overflow: hidden;
+}
+.swatchText {
+  padding: 14px var(--psLayoutSpacingSmall);
+  flex: 1 1 auto;
+}
+.swatchName {
+  font-size: 16px;
+  font-weight: 350;
+  line-height: var(--psTypeLineHeightTight);
+  margin-bottom: var(--psLayoutSpacingXXSmall);
+}
+.swatchVar {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: var(--psLayoutSpacingXXSmall);
+}
+.swatchHex {
+  font-size: var(--psTypeFontSizeSmall);
+  font-weight: 500;
+  line-height: var(--psTypeFontSizeSmall);
+}
+.swatchIcon {
+  display: flex;
+  align-items: center;
+  padding-right: var(--psLayoutSpacingSmall);
+}
+.swatchBorderExample {
+  height: var(--psLayoutSpacingXSmall);
+}
+
+.grid {
+  display: grid;
+  margin-bottom: var(--psLayoutSpacingLarge);
+}

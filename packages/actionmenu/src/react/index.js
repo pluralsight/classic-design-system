@@ -5,7 +5,7 @@ import { Divider } from './divider.js'
 import { Item } from './item.js'
 import { Ellipsis } from './ellipsis.js'
 import { Icon } from './icon.js'
-
+import { useMenuRef } from '@pluralsight/ps-design-system-util'
 import * as vars from '../vars/index.js'
 
 ActionMenu.Ellipsis = Ellipsis
@@ -27,7 +27,7 @@ ActionMenu.defaultProps = {
   onClose: () => {},
   origin: vars.origins.topLeft
 }
-
+ActionMenu.useMenuRef = useMenuRef
 export const origins = vars.origins
 
 export default ActionMenu

@@ -10,7 +10,7 @@ import {
 const TestComponent = () => {
   const rootList = [...Array(10).keys()]
   const nestedList = [...Array(5).keys()]
-  const ref = useMenuRef()
+  const ref = useMenuRef(true)
   return (
     <ul
       data-testid="root-menu"

@@ -1,0 +1,34 @@
+.weights {
+  border-radius: 12px;
+  background: var(--psColorsBackgroundLight2);
+  padding: var(--psLayoutSpacingMedium);
+}
+.weight {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  grid-gap: var(--psLayoutSpacingMedium);
+  grid-template-areas: 'letters vars' 'weight weight';
+  color: var(--psColorsBackgroundDark2);
+  margin-bottom: var(--psLayoutSpacingLarge);
+}
+.weightLetters {
+  grid-area: letters;
+  font-size: var(--psTypeFontSizeGigantic);
+  letter-spacing: var(--psTypeLetterSpacingGigantic);
+  line-height: 1em;
+}
+.labels {
+  grid-area: vars;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: var(--psTypeFontSizeXSmall);
+  font-weight: var(--psTypeFontWeightMedium);
+}
+.labels code {
+  color: var(--psColorsPink6);
+}
+.weightLabel {
+  grid-area: weight;
+  color: var(--psColorsTextIconLowOnLight);
+  font-size: var(--psTypeFontSizeXSmall);
+}

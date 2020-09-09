@@ -27,8 +27,8 @@ export const ActionMenuContext = createContext()
 
 export const ActionMenu = React.forwardRef(
   ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
-    const ref = useMenuRef()
-    useImperativeHandle(forwardedRef, () => ref.current)
+    const fallbackRef = React.useRef()
+    const ref = forwardedRef || fallbackRef
     useCloseOnDocumentEvents(ref, onClose)
 
     const handleKeyDown = e => {

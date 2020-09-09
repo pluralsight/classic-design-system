@@ -1,10 +1,13 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react/prop-types */
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
-import React from 'react'
+import React, { forwardRef, useState } from 'react'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../index.js'
+import { DropdownContext, useDropdown } from '../../js/index.js'
 
 storiesOf('labels', module)
   .add('none', _ => <Dropdown />)
@@ -578,3 +581,89 @@ storiesOf('portal', module).add('position', _ => (
     ultrices eros in cursus turpis massa.
   </div>
 ))
+const DropdownWithIcon = forwardRef(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
+
+const DropdownWithDynamicIcon = () => {
+  const [selected, setSelected] = useState()
+  const values = {
+    channel: {
+      value: 'channel',
+      icon: <Icon.ChannelIcon style={{ marginRight: 8 }} />,
+      label: 'Channel'
+    },
+    analytics: {
+      value: 'analytics',
+      icon: <Icon.AnalyticsIcon style={{ marginRight: 8 }} />,
+      label: 'Analytics'
+    },
+    authorKit: {
+      value: 'authorKit',
+      icon: <Icon.AuthorKitIcon style={{ marginRight: 8 }} />,
+      label: 'Author Kit'
+    },
+    labs: {
+      value: 'labs',
+      icon: <Icon.LabsIcon style={{ marginRight: 8 }} />,
+      label: 'Labs'
+    }
+  }
+  const handleChange = (e, value) => {
+    setSelected(value)
+  }
+  const icon = values[selected] ? (
+    values[selected].icon
+  ) : (
+    <div style={{ width: 24, height: 24, marginRight: 8 }} />
+  )
+  return (
+    <DropdownWithIcon
+      icon={icon}
+      onChange={handleChange}
+      menu={Object.values(values).map(({ value, icon, label }) => (
+        <Dropdown.Item value={value} key={value} icon={icon}>
+          {label}
+        </Dropdown.Item>
+      ))}
+    />
+  )
+}
+
+storiesOf('custom', module)
+  .add('fixed icon', () => (
+    <DropdownWithIcon
+      icon={<Icon.CalendarIcon style={{ marginRight: 8 }} />}
+      menu={
+        <>
+          <Dropdown.Item>Trailing 14 Days</Dropdown.Item>
+          <Dropdown.Item>Last Month</Dropdown.Item>
+          <Dropdown.Item>Trailing 30 Days</Dropdown.Item>
+          <Dropdown.Item>Last Quater</Dropdown.Item>
+          <Dropdown.Item>Trailing 90 Days</Dropdown.Item>
+          <Dropdown.Item>Custom</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('dynamic icon', () => <DropdownWithDynamicIcon />)

@@ -25,16 +25,7 @@ import {
   SectionHeading
 } from '../../src/ui/index.js'
 
-const BlurOnMount = ({ render }) => {
-  const ref = useRef(null)
-  useEffect(() => {
-    const firstItem = ref.current && ref.current.querySelector('* > li')
-    firstItem && firstItem.blur()
-  })
-  return render(ref)
-}
-
-function InAppExample() {
+const InAppExample = React.forwardRef((_, forwardedRef) => {
   const categories = [
     {
       name: 'Channels',
@@ -60,7 +51,8 @@ function InAppExample() {
     select({ value, label: evt.currentTarget.innerText })
     setIsOpen(false)
   }
-
+  const ref = ActionMenu.useMenuRef(true)
+  React.useImperativeHandle(forwardedRef, () => ref.current)
   return (
     <>
       <style jsx>{`
@@ -83,6 +75,7 @@ function InAppExample() {
             show={
               <div>
                 <ActionMenu
+                  ref={ref}
                   origin={ActionMenu.origins.topLeft}
                   onClick={handleSelect}
                 >
@@ -152,6 +145,9 @@ function InAppExample() {
     setIsOpen(false)
   }
 
+  const ref = ActionMenu.useMenuRef(true)
+  React.useImperativeHandle(forwardedRef, () => ref.current)
+
   return (
     <React.Fragment>
       <BelowLeft
@@ -159,6 +155,7 @@ function InAppExample() {
         show={
           <div>
             <ActionMenu
+              ref={ref}
               origin={ActionMenu.origins.topLeft}
               onChange={handleSelect}
               whoa="adsf"
@@ -200,7 +197,7 @@ function InAppExample() {
       </Code>
     </>
   )
-}
+})
 
 export default _ => (
   <Chrome>
@@ -311,23 +308,8 @@ export default _ => (
 
       <P>
         <em>
-          Note: Examples on this page use <Text.Code>BlurOnMount</Text.Code>:
-          <Code language="javascript">
-            {`
-            const BlurOnMount = ({ children }) => {
-              const ref = useRef(null)
-              useEffect(() => {
-                const firstItem = ref.current && ref.current.querySelector('* > li')
-                firstItem && firstItem.blur()
-              })
-              return children(ref)
-            }
-            `}
-          </Code>
-          <Text.Code>BlurOnMount</Text.Code> only in order to display the
-          examples without interrupting your browsing experience. In most
-          real-world scenarios, you will want to leave the default focus
-          behavior in tact.
+          Note: The above example on this page uses to focus the first item in
+          menu <Text.Code>ActionMenu.useMenuRef(true)</Text.Code>
         </em>
       </P>
       <SectionHeading>Icons</SectionHeading>
@@ -340,14 +322,10 @@ export default _ => (
           ActionMenu,
           ChannelIcon,
           PathIcon,
-          ReportIcon,
-          BlurOnMount
+          ReportIcon
         }}
         codes={[
-          `
-<BlurOnMount render={
-  ref => (
-    <ActionMenu ref={ref}>
+          ` <ActionMenu >
       <ActionMenu.Item>
         <ActionMenu.Icon marginLeft>
           <ChannelIcon />
@@ -367,8 +345,6 @@ export default _ => (
         Three item
       </ActionMenu.Item>
     </ActionMenu>
-  )
-}/>
 `
         ]}
       />
@@ -379,13 +355,10 @@ export default _ => (
         items.
       </P>
       <Example.React
-        includes={{ ActionMenu, BlurOnMount }}
+        includes={{ ActionMenu }}
         codes={[
           `
-
-<BlurOnMount render={
-  ref => (
-    <ActionMenu ref={ref} >
+    <ActionMenu  >
       <ActionMenu.Item>
         <ActionMenu.Ellipsis>
           One item that has text that goes on forever and onward into the
@@ -399,8 +372,6 @@ export default _ => (
         </ActionMenu.Ellipsis>
       </ActionMenu.Item>
     </ActionMenu>
-  )
-}/>
 `
         ]}
       />
@@ -411,12 +382,10 @@ export default _ => (
         at the list level, below the assigned list item.
       </P>
       <Example.React
-        includes={{ ActionMenu, BlurOnMount }}
+        includes={{ ActionMenu }}
         codes={[
           `
-<BlurOnMount render={
-  ref => (
-    <ActionMenu ref={ref}>
+    <ActionMenu >
       <ActionMenu.Item>
         One item
       </ActionMenu.Item>
@@ -432,8 +401,6 @@ export default _ => (
         Four item
       </ActionMenu.Item>
     </ActionMenu>
-  )
-}/>
 `
         ]}
       />
@@ -441,15 +408,13 @@ export default _ => (
       <SectionHeading>Nesting</SectionHeading>
       <P>Nested menu lists may spawn from parent menu list items.</P>
       <Example.React
-        includes={{ ActionMenu, BlurOnMount }}
+        includes={{ ActionMenu }}
         outputChildStyle={{
           padding: `0 0 ${core.layout.spacingLarge} 0`
         }}
         codes={[
           `
-<BlurOnMount render={
-  ref => (
-    <ActionMenu ref={ref}>
+    <ActionMenu >
       <ActionMenu.Item>
         One item
       </ActionMenu.Item>
@@ -505,8 +470,6 @@ export default _ => (
         Four item
       </ActionMenu.Item>
     </ActionMenu>
-  )
-}/>
 `
         ]}
       />
@@ -526,7 +489,7 @@ export default _ => (
       </Code>
       <P>Here's an example of ActionMenu.origins.bottomRight in action:</P>
       <Example.React
-        includes={{ ActionMenu, BlurOnMount }}
+        includes={{ ActionMenu }}
         outputStyle={{
           height: `calc(200px + (2 * ${core.layout.spacingLarge}))`,
           position: 'relative'
@@ -539,9 +502,7 @@ export default _ => (
         }}
         codes={[
           `
-<BlurOnMount render={
-  ref => (
-    <ActionMenu origin={ActionMenu.origins.bottomRight} ref={ref}>
+    <ActionMenu origin={ActionMenu.origins.bottomRight} >
     <ActionMenu.Item
       nested={
         <React.Fragment>
@@ -576,8 +537,6 @@ export default _ => (
     </ActionMenu.Item>
     <ActionMenu.Item>Two</ActionMenu.Item>
   </ActionMenu>
-  )
-}/>
 `
         ]}
       />
@@ -588,7 +547,7 @@ export default _ => (
         <Text.Code>disabled</Text.Code> prop.
       </P>
       <Example.React
-        includes={{ ActionMenu, BlurOnMount }}
+        includes={{ ActionMenu }}
         outputStyle={{
           height: `calc(200px + (2 * ${core.layout.spacingLarge}))`,
           position: 'relative'
@@ -601,9 +560,7 @@ export default _ => (
         }}
         codes={[
           `
-<BlurOnMount render={
-  ref => (
-    <ActionMenu ref={ref}>
+    <ActionMenu >
       <ActionMenu.Item>
         Normal, enabled
       </ActionMenu.Item>
@@ -614,8 +571,6 @@ export default _ => (
         Normal, enabled
       </ActionMenu.Item>
     </ActionMenu>
-  )
-}/>
 `
         ]}
       />

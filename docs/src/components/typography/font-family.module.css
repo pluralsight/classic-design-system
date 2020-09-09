@@ -1,0 +1,9 @@
+.family {
+  background: var(--psColorsBackgroundLight2);
+  padding: var(--psLayoutSpacingLarge);
+  color: var(--psColorsBackgroundDark2);
+  font-size: var(--psTypeFontSizeLarge);
+  line-height: var(--psTypeLineHeightExtra);
+  letter-spacing: var(--psLayoutSpacingSmall);
+  border-radius: 12px;
+}

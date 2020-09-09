@@ -1,0 +1,28 @@
+.sizes {
+  background: var(--psColorsBackgroundLight2);
+  border-radius: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: var(--psLayoutSpacingLarge);
+  margin-bottom: var(--psLayoutSpacingMedium);
+  max-width: 900px;
+}
+.size {
+  color: var(--psColorsBackgroundDark2);
+}
+.size + .size {
+  margin-top: var(--psLayoutSpacingLarge);
+}
+.sizeSentence {
+  color: var(--psColorsBackgroundDark2);
+  margin-bottom: var(--psLayoutSpacingXSmall);
+}
+.sizeLabel {
+  color: var(--psColorsTextIconLowOnLight);
+  font-size: var(--psTypeFontSizeXSmall);
+}
+.sizeVar {
+  margin-top: var(--psLayoutSpacingSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  color: var(--psColorsPink6);
+}
