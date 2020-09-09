@@ -1,15 +1,15 @@
 import { storiesOf } from '@storybook/react'
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
-import EmptyState from '../index.js'
+import EmptyState, { EmptyStateProps } from '../../index.js'
+import { FunctionComponent } from 'react'
 
-const CustomIllustration = () => (
+const CustomIllustration: FunctionComponent = () => (
   <svg viewBox="0 0 128 128" aria-hidden role="img">
     <path
       fill="currentColor"
@@ -18,7 +18,9 @@ const CustomIllustration = () => (
   </svg>
 )
 
-const EmptyStateWithDefaults = props => {
+const EmptyStateWithDefaults: FunctionComponent<Partial<
+  EmptyStateProps
+>> = props => {
   const actions = (
     <EmptyState.Actions>
       <Button>Do a Thing</Button>
@@ -50,15 +52,15 @@ const EmptyStateWithDefaults = props => {
   )
 }
 
-const SearchInput = props => <TextInput {...props} />
+const SearchInput: FunctionComponent = props => <TextInput {...props} />
 SearchInput.defaultProps = {
   appearance: TextInput.appearances.subtle,
   icon: <Icon.SearchIcon />,
   placeholder: 'Find Something'
 }
 
-const InlineList = ({ children, ...props }) => {
-  const styles = {
+const InlineList: FunctionComponent = ({ children, ...props }) => {
+  const styles: { [key: string]: React.CSSProperties } = {
     list: { display: 'flex', flexWrap: 'wrap', justifyContent: 'center' },
     item: { display: 'inline-flex', margin: '0 5px 12px' }
   }
@@ -72,9 +74,6 @@ const InlineList = ({ children, ...props }) => {
       ))}
     </div>
   )
-}
-InlineList.propTypes = {
-  children: PropTypes.node
 }
 
 storiesOf('EmptyState', module)
@@ -180,16 +179,16 @@ storiesOf('EmptyState/actions', module)
     />
   ))
 
-const Show = ({ children, if: showIf, placeholder = null }) => (
+const Show = ({ children, if: showIf, placeholder = null }: ShowProps) => (
   <>{showIf ? children : placeholder}</>
 )
-Show.propTypes = {
-  children: PropTypes.node.isRequired,
-  if: PropTypes.bool.isRequired,
-  placeholder: PropTypes.node
+type ShowProps = {
+  children: React.ReactNode
+  if: boolean
+  placeholder?: React.ReactNode
 }
 
-const MountStory = props => {
+const MountStory: FunctionComponent = props => {
   const [shown, setShown] = React.useState(true)
 
   return (
@@ -203,9 +202,6 @@ const MountStory = props => {
       <Show if={shown}>{props.children}</Show>
     </>
   )
-}
-MountStory.propTypes = {
-  children: PropTypes.node.isRequired
 }
 
 storiesOf('EmptyState/mounting', module).add('toggle show/hide', _ => (
