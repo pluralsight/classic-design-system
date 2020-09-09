@@ -1,0 +1,25 @@
+.box {
+  background: var(--psColorsBackgroundLight2);
+  border-radius: 12px;
+  padding: var(--psLayoutSpacingLarge);
+  font-size: var(--psTypeFontSizeLarge);
+  line-height: var(--psTypeLineHeightExtra);
+  font-weight: var(--psTypeFontWeightBook);
+}
+.glyphs {
+  font-family: var(--psTypeFontFamilyCode);
+}
+.fontWeight {
+  text-align: center;
+}
+.fontLetter {
+  padding: var(--psLayoutSpacingLarge);
+  font-family: var(--psTypeFontFamilyCode);
+  font-weight: var(--psTypeFontWeightMedium);
+  font-size: var(--psTypeFontSizeGigantic);
+  letter-spacing: var(--psTypeLetterSpacingGigantic);
+}
+.fontLabel {
+  color: var(--psColorsTextIconLowOnLight);
+  font-size: var(--psTypeFontSizeXSmall);
+}

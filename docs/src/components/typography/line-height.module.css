@@ -1,0 +1,71 @@
+.lineHeights {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--psLayoutSpacingLarge) / -2);
+}
+.lineHeight {
+  width: calc(50% - var(--psLayoutSpacingLarge));
+  margin: calc(var(--psLayoutSpacingLarge) / 2);
+  border-radius: 12px;
+  padding: var(--psLayoutSpacingLarge);
+  background: var(--psColorsBackgroundLight2);
+}
+.text {
+  position: relative;
+  overflow: hidden;
+}
+.textInner {
+  position: relative;
+}
+.textBg {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #b4d9f2,
+    #b4d9f2 1px,
+    #efefef 1px,
+    #efefef
+  );
+  background-size: 1px 8px;
+}
+.textHuge {
+  font-size: var(--psTypeFontSizeXLarge);
+  line-height: var(--psTypeLineHeightHuge);
+}
+.textExtra {
+  font-size: var(--psTypeFontSizeLarge);
+  line-height: var(--psTypeLineHeightExtra);
+}
+.textStandard {
+  font-size: var(--psTypeFontSizeMedium);
+  line-height: var(--psTypeLineHeightStandard);
+}
+.textTight {
+  font-size: var(--psTypeFontSizeXSmall);
+  line-height: var(--psTypeLineHeightTight);
+}
+.textBgHuge {
+  top: 31px;
+}
+.textBgExtra {
+  top: 25px;
+}
+.textBgStandard {
+  top: 18px;
+}
+.textBgTight {
+  top: 14px;
+  background-size: 1px 4px;
+}
+.label {
+  margin-top: var(--psLayoutSpacingSmall);
+  color: var(--psColorsTextIconLowOnLight);
+  font-weight: var(--psTypeFontWeightMedium);
+}
+.varName {
+  margin-top: var(--psLayoutSpacingSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  color: var(--psColorsPink6);
+}
