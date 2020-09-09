@@ -24,6 +24,9 @@
   font-size: var(--psTypeFontSizeXSmall);
   font-weight: var(--psTypeFontWeightMedium);
 }
+.labels code {
+  color: var(--psColorsPink6);
+}
 .weightLabel {
   grid-area: weight;
   color: var(--psColorsTextIconLowOnLight);

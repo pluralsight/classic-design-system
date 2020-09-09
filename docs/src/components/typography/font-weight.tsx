@@ -50,8 +50,12 @@ export const FontWeight = () => (
             {w.label} ({w.weight})
           </div>
           <div className={styles.labels}>
-            <div>JS: {w.jsVarName}</div>
-            <div>CSS: {w.varName}</div>
+            <div>
+              JS: <code>{w.jsVarName}</code>
+            </div>
+            <div>
+              CSS: <code>{w.varName}</code>
+            </div>
           </div>
         </div>
       ))}
