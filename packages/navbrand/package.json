@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navbrand",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Navbrand UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,7 +24,7 @@
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-halo": "^7.0.10",
-    "@pluralsight/ps-design-system-util": "^4.1.0",
+    "@pluralsight/ps-design-system-util": "^5.0.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
