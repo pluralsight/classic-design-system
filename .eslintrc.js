@@ -63,13 +63,15 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': WARNING,
     '@typescript-eslint/restrict-template-expressions': WARNING,
     '@typescript-eslint/unbound-method': WARNING,
+    'no-unused-expressions': IGNORE,
+    'no-use-before-define': IGNORE,
     'prettier/prettier': ERROR,
-    'react/prop-types': IGNORE,
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
-    'react/display-name': WARNING,
+    'react/display-name': IGNORE,
     'react/jsx-no-bind': IGNORE,
-    'react/no-unescaped-entities': WARNING
+    'react/no-unescaped-entities': WARNING,
+    'react/prop-types': IGNORE
   },
   overrides: [
     {
