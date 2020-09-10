@@ -4,12 +4,13 @@ import {
   motion,
   type
 } from '@pluralsight/ps-design-system-core'
+
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 export const sizeClasses = {
   [vars.sizes.small]: '.psds-emptystate--size-small',

@@ -1,5 +1,4 @@
 import { storiesOf } from '@storybook/react'
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -7,7 +6,7 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
-import EmptyState from '../index.js'
+import EmptyState, { EmptyStateProps } from '..'
 
 const CustomIllustration = () => (
   <svg viewBox="0 0 128 128" aria-hidden role="img">
@@ -18,12 +17,13 @@ const CustomIllustration = () => (
   </svg>
 )
 
-const EmptyStateWithDefaults = props => {
+const EmptyStateWithDefaults: React.FC<Partial<EmptyStateProps>> = props => {
   const actions = (
     <EmptyState.Actions>
       <Button>Do a Thing</Button>
     </EmptyState.Actions>
   )
+
   const caption = (
     <EmptyState.Caption>
       Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket.
@@ -39,6 +39,7 @@ const EmptyStateWithDefaults = props => {
   const illustration = (
     <EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />
   )
+
   return (
     <EmptyState
       actions={actions}
@@ -50,21 +51,22 @@ const EmptyStateWithDefaults = props => {
   )
 }
 
-const SearchInput = props => <TextInput {...props} />
+const SearchInput: React.FC = props => <TextInput {...props} />
 SearchInput.defaultProps = {
   appearance: TextInput.appearances.subtle,
   icon: <Icon.SearchIcon />,
   placeholder: 'Find Something'
 }
 
-const InlineList = ({ children, ...props }) => {
-  const styles = {
+const InlineList: React.FC = props => {
+  const { children, ...rest } = props
+  const styles: { [key: string]: unknown } = {
     list: { display: 'flex', flexWrap: 'wrap', justifyContent: 'center' },
     item: { display: 'inline-flex', margin: '0 5px 12px' }
   }
 
   return (
-    <div style={styles.list} {...props}>
+    <div style={styles.list} {...rest}>
       {React.Children.map(children, (child, index) => (
         <div key={index} style={styles.item}>
           {child}
@@ -72,9 +74,6 @@ const InlineList = ({ children, ...props }) => {
       ))}
     </div>
   )
-}
-InlineList.propTypes = {
-  children: PropTypes.node
 }
 
 storiesOf('EmptyState', module)
@@ -180,36 +179,27 @@ storiesOf('EmptyState/actions', module)
     />
   ))
 
-const Show = ({ children, if: showIf, placeholder = null }) => (
-  <>{showIf ? children : placeholder}</>
-)
-Show.propTypes = {
-  children: PropTypes.node.isRequired,
-  if: PropTypes.bool.isRequired,
-  placeholder: PropTypes.node
-}
+storiesOf('EmptyState/mounting', module).add('toggle show/hide', () => {
+  const MountStory: React.FC = props => {
+    const [shown, setShown] = React.useState(true)
 
-const MountStory = props => {
-  const [shown, setShown] = React.useState(true)
+    return (
+      <>
+        <button
+          onClick={() => setShown(!shown)}
+          style={{ position: 'fixed', top: 20, left: 20 }}
+        >
+          {shown ? 'unmount' : 'mount'}
+        </button>
+
+        {shown && props.children}
+      </>
+    )
+  }
 
   return (
-    <>
-      <button
-        onClick={() => setShown(!shown)}
-        style={{ position: 'fixed', top: 20, left: 20 }}
-      >
-        {shown ? 'unmount' : 'mount'}
-      </button>
-      <Show if={shown}>{props.children}</Show>
-    </>
+    <MountStory>
+      <EmptyStateWithDefaults />
+    </MountStory>
   )
-}
-MountStory.propTypes = {
-  children: PropTypes.node.isRequired
-}
-
-storiesOf('EmptyState/mounting', module).add('toggle show/hide', _ => (
-  <MountStory>
-    <EmptyStateWithDefaults />
-  </MountStory>
-))
+})

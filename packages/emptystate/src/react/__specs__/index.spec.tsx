@@ -2,8 +2,8 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { axe, toHaveNoViolations } from 'jest-axe'
 
-import EmptyState from '../index.js'
-import * as vars from '../../vars/index.js'
+import EmptyState from '..'
+import * as vars from '../../vars'
 
 expect.extend(toHaveNoViolations)
 
