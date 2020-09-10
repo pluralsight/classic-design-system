@@ -3,35 +3,35 @@ import Link from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React, { HTMLAttributes } from 'react'
 
-const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = (props) => (
+export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = (props) => (
   <Link>
     <a {...props} />
   </Link>
 )
 
-const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
+export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
   <Text.Heading size={Text.Heading.sizes.xLarge}>
     <h1 {...props}>{props.children}</h1>
   </Text.Heading>
 )
 
-const H2: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
-  <Text.Heading size={Text.Heading.sizes.xLarge}>
+export const H2: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
+  <Text.Heading size={Text.Heading.sizes.large}>
     <h2 {...props}>{props.children}</h2>
   </Text.Heading>
 )
 
-const H3: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
-  <Text.Heading size={Text.Heading.sizes.xLarge}>
+export const H3: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
+  <Text.Heading size={Text.Heading.sizes.medium}>
     <h3 {...props}>{props.children}</h3>
   </Text.Heading>
 )
 
-const Ol: React.FC<HTMLAttributes<HTMLOListElement>> = (props) => (
+export const Ol: React.FC<HTMLAttributes<HTMLOListElement>> = (props) => (
   <Text.List type={Text.List.types.numbered} {...props} />
 )
 
-const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = (props) => (
+export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = (props) => (
   <Text.List type={Text.List.types.bulleted} {...props} />
 )
 

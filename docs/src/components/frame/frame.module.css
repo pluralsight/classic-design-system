@@ -2,7 +2,7 @@
 
 /* TODO: create global vars file */
 :root {
-  --asideWidth: 200px;
+  --asideWidth: 260px;
   --topNavHeight: 56px;
 }
 
@@ -28,7 +28,7 @@
 
 .main {
   flex: 1;
-  padding: 0 var(--psLayoutSpacingLarge);
+  padding: var(--psLayoutSpacingLarge);
 
   @media (--breakpoint-small) {
     margin-left: var(--asideWidth);

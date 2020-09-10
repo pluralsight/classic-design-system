@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navcookiebanner",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "NavCookieBanner UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "*",
-    "@pluralsight/ps-design-system-icon": "^18.1.8",
+    "@pluralsight/ps-design-system-icon": "^18.2.0",
     "prop-types": "^15.7.2",
     "react-cookie": "^4.0.3"
   },
