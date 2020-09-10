@@ -43,7 +43,6 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
   )
 
   const handleCopy = () => {
-    console.log('here')
     setCopied(true)
   }
 

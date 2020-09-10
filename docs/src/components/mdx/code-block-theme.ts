@@ -1,199 +1,101 @@
 import { PrismTheme } from 'prism-react-renderer'
 
-// import { colorsTextIcon } from '@pluralsight/ps-design-system-core'
-
-export const darkTheme: PrismTheme = {
-  plain: {
-    color: '#d6deeb',
-    backgroundColor: '#011627',
-  },
-  styles: [
-    {
-      types: ['changed'],
-      style: {
-        color: 'rgb(162, 191, 252)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['deleted'],
-      style: {
-        color: 'rgba(239, 83, 80, 0.56)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['inserted', 'attr-name'],
-      style: {
-        color: 'rgb(173, 219, 103)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['comment'],
-      style: {
-        color: 'rgb(99, 119, 119)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['string', 'url'],
-      style: {
-        color: 'rgb(173, 219, 103)',
-      },
-    },
-    {
-      types: ['variable'],
-      style: {
-        color: 'rgb(214, 222, 235)',
-      },
-    },
-    {
-      types: ['number'],
-      style: {
-        color: 'rgb(247, 140, 108)',
-      },
-    },
-    {
-      types: ['builtin', 'char', 'constant', 'function'],
-      style: {
-        color: 'rgb(130, 170, 255)',
-      },
-    },
-    {
-      types: ['punctuation'],
-      style: {
-        color: 'rgb(199, 146, 234)',
-      },
-    },
-    {
-      types: ['selector', 'doctype'],
-      style: {
-        color: 'rgb(199, 146, 234)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['class-name'],
-      style: {
-        color: 'rgb(255, 203, 139)',
-      },
-    },
-    {
-      types: ['tag', 'operator', 'keyword'],
-      style: {
-        color: 'rgb(127, 219, 202)',
-      },
-    },
-    {
-      types: ['boolean'],
-      style: {
-        color: 'rgb(255, 88, 116)',
-      },
-    },
-    {
-      types: ['property'],
-      style: {
-        color: 'rgb(128, 203, 196)',
-      },
-    },
-    {
-      types: ['namespace'],
-      style: {
-        color: 'rgb(178, 204, 214)',
-      },
-    },
-  ],
+interface Tokens {
+  baseText: string
+  blockBg: string
+  commentText: string
+  functionText: string
+  keywordText: string
+  operatorText: string
+  propertyText: string
+  punctuationText: string
+  selectorText: string
+  variableText: string
 }
 
-export const lightTheme: PrismTheme = {
-  plain: {
-    color: '#403f53',
-    backgroundColor: '#FBFBFB',
-  },
-  styles: [
-    {
-      types: ['changed'],
-      style: {
-        color: 'rgb(162, 191, 252)',
-        fontStyle: 'italic',
+const colorsCodeDark: Tokens = {
+  baseText: '#ffffff',
+  blockBg: '#1e2429',
+  commentText: '#718096',
+  functionText: '#8ed1f6',
+  keywordText: '#c0a3ff',
+  operatorText: '#8ed1f6',
+  propertyText: '#ffa3c8',
+  punctuationText: '#8ed1f6;',
+  selectorText: '#ccfc7a',
+  variableText: '#ccfc7a',
+}
+
+const colorsCodeLight: Tokens = {
+  baseText: '#1e2429',
+  blockBg: '#f7f9fa',
+  commentText: '#718096',
+  functionText: '#0074ab',
+  keywordText: '#5934ac',
+  operatorText: '#0074ab',
+  propertyText: '#c13368',
+  punctuationText: '#0074ab',
+  selectorText: '#588a00',
+  variableText: '#588a00',
+}
+
+export const darkTheme = createTheme(colorsCodeDark)
+
+export const lightTheme = createTheme(colorsCodeLight)
+
+function createTheme(tokens: Tokens): PrismTheme {
+  return {
+    plain: { color: tokens.baseText, backgroundColor: tokens.blockBg },
+    styles: [
+      {
+        types: ['comment', 'prolog', 'doctype', 'cdata'],
+        style: { color: tokens.commentText },
       },
-    },
-    {
-      types: ['deleted'],
-      style: {
-        color: 'rgba(239, 83, 80, 0.56)',
-        fontStyle: 'italic',
+      {
+        types: ['punctuation'],
+        style: { color: tokens.punctuationText },
       },
-    },
-    {
-      types: ['inserted', 'attr-name'],
-      style: {
-        color: 'rgb(72, 118, 214)',
-        fontStyle: 'italic',
+      {
+        types: [
+          'property',
+          'tag',
+          'boolean',
+          'number',
+          'constant',
+          'symbol',
+          'deleted',
+        ],
+        style: { color: tokens.propertyText },
       },
-    },
-    {
-      types: ['comment'],
-      style: {
-        color: 'rgb(152, 159, 177)',
-        fontStyle: 'italic',
+      {
+        types: [
+          'selector',
+          'attr-name',
+          'string',
+          'char',
+          'builtin',
+          'inserted',
+        ],
+        style: { color: tokens.selectorText },
       },
-    },
-    {
-      types: ['string', 'builtin', 'char', 'constant', 'url'],
-      style: {
-        color: 'rgb(72, 118, 214)',
+      {
+        types: ['operator', 'entity', 'url'],
+        style: {
+          color: tokens.operatorText,
+        },
       },
-    },
-    {
-      types: ['variable'],
-      style: {
-        color: 'rgb(201, 103, 101)',
+      {
+        types: ['atrule', 'attr-value', 'keyword'],
+        style: { color: tokens.keywordText },
       },
-    },
-    {
-      types: ['number'],
-      style: {
-        color: 'rgb(170, 9, 130)',
+      {
+        types: ['function'],
+        style: { color: tokens.functionText },
       },
-    },
-    {
-      types: ['punctuation'],
-      style: {
-        color: 'rgb(153, 76, 195)',
+      {
+        types: ['regex', 'important', 'variable'],
+        style: { color: tokens.variableText },
       },
-    },
-    {
-      types: ['function', 'selector', 'doctype'],
-      style: {
-        color: 'rgb(153, 76, 195)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['class-name'],
-      style: {
-        color: 'rgb(17, 17, 17)',
-      },
-    },
-    {
-      types: ['tag'],
-      style: {
-        color: 'rgb(153, 76, 195)',
-      },
-    },
-    {
-      types: ['operator', 'property', 'keyword', 'namespace'],
-      style: {
-        color: 'rgb(12, 150, 155)',
-      },
-    },
-    {
-      types: ['boolean'],
-      style: {
-        color: 'rgb(188, 84, 84)',
-      },
-    },
-  ],
+    ],
+  }
 }
