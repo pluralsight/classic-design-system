@@ -68,6 +68,10 @@ const items = [
         href: '/core/motion',
         title: 'Motion',
       },
+      {
+        href: '/core/spacing',
+        title: 'Spacing',
+      },
     ],
   },
 ]
