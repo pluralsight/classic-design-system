@@ -33,7 +33,7 @@ interface AvatarStatics {
   widths: typeof widths
 }
 
-interface IAvatar
+interface AvatarComponent
   extends RefForwardingComponentWithStatics<
     AvatarProps,
     HTMLDivElement,
@@ -102,7 +102,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
       )}
     </div>
   )
-}) as IAvatar
+}) as AvatarComponent
 
 Avatar.defaultProps = { size: sizes.medium }
 Avatar.displayName = 'Avatar'
