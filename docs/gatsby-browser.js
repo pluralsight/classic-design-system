@@ -1,3 +1,2 @@
-/* eslint-env node  */
-
-require('prismjs/themes/prism-solarizedlight.css')
+import './src/global/style.css'
+import './src/global/code-theme.css'
