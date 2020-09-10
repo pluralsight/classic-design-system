@@ -34,16 +34,6 @@ module.exports = {
                 }
               }
             }
-          },
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              prompt: {
-                user: 'root',
-                host: 'localhost',
-                global: true
-              }
-            }
           }
         ]
       }

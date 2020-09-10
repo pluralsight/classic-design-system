@@ -3,6 +3,8 @@ import Link from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React, { HTMLAttributes } from 'react'
 
+import { CodeBlock } from './code-block'
+
 export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = (props) => (
   <Link>
     <a {...props} />
@@ -37,12 +39,14 @@ export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = (props) => (
 
 const components = {
   a: A,
+  code: CodeBlock,
   h1: H1,
   h2: H2,
   h3: H3,
   inlineCode: Text.Code,
   ol: Ol,
   p: Text.P,
+  pre: (props) => <div {...props} />,
   ul: Ul,
 }
 
