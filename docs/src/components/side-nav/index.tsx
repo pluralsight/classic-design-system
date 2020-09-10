@@ -64,6 +64,10 @@ const items = [
         href: '/core/typography',
         title: 'Typography',
       },
+      {
+        href: '/core/motion',
+        title: 'Motion',
+      },
     ],
   },
 ]

@@ -1,0 +1,5 @@
+export { Speeds } from './speeds'
+export { Relative } from './relative'
+export { Travel } from './travel'
+export { Easing } from './easing'
+export { Rotation } from './rotation'

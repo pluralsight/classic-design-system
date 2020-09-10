@@ -1,0 +1,7 @@
+.relative {
+  padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingXLarge);
+  background: var(--psColorsBackgroundLight2);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+}
