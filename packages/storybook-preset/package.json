@@ -1,0 +1,28 @@
+{
+  "name": "@pluralsight/ps-design-system-storybook-preset",
+  "version": "0.0.1",
+  "description": "",
+  "license": "Apache-2.0",
+  "repository": "pluralsight/design-system",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
+    "build:watch": "npm run build -- --watch",
+    "prepublish": "npm run build"
+  },
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-viewport": "^6.0.21",
+    "@storybook/addons": "^6.0.21",
+    "@storybook/api": "^6.0.21"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
