@@ -585,7 +585,20 @@ const Grid: React.FC<GridProps> = (props) => {
   )
 }
 
-function formatAllColorSubCategory({ color, fgSwitch, fgMin, fgMax, name }) {
+interface ColorSubCategory {
+  name: string
+  color: object
+  fgSwitch?: number
+  fgMin?: number
+  fgMax?: number
+}
+function formatAllColorSubCategory({
+  color,
+  fgSwitch,
+  fgMin,
+  fgMax,
+  name,
+}: ColorSubCategory) {
   return {
     cols: 5,
     colors: Object.keys(color)
