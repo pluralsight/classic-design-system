@@ -511,7 +511,7 @@ const colorCategories = [
 const Label: React.FC = (props) => {
   return (
     <header>
-      <h3 classNames={styles.label}>{props.children}</h3>
+      <h3 className={styles.label}>{props.children}</h3>
     </header>
   )
 }
@@ -522,7 +522,7 @@ interface SwatchProps {
   fg?: string
   icon?: React.ReactNode
   borderExample?: string
-  names: string
+  name: string
   var: string
   js: string
   hex: string
