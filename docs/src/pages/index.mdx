@@ -3,6 +3,8 @@ name: Hello world
 route: /
 ---
 
+import * as Types from '../components/types'
+
 # Hello world
 
 Hello, I'm a mdx file!
@@ -14,3 +16,17 @@ This is `inlineCode`.
 ```
 Code block vanilla for now.
 ```
+
+## Types
+
+<Types.Table>
+  <Types.Prop name="Jake" require type={<code>string</code>} default={<code>awesome</code>} desc="That one guy">
+  </Types.Prop>
+</Types.Table>
+
+### Subheading
+
+<Types.Table>
+  <Types.Prop name="Jake" require type={<code>string</code>} default={<code>awesome</code>} desc="That one guy">
+  </Types.Prop>
+</Types.Table>
