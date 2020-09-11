@@ -43,14 +43,14 @@ interface VarProps {
 const Var: React.FC<VarProps> = (props) =>
   props.varName ? <code className={styles.varName}>{props.varName}</code> : null
 
-type Sides = 'all' | 'top' | 'right' | 'bottom' | 'left'
+type Side = 'all' | 'top' | 'right' | 'bottom' | 'left'
 
-const dimension = (side: Sides) =>
+const dimension = (side: Side) =>
   side === 'left' || side === 'right' ? 'width' : 'height'
 
 interface SingleLineProps {
-  side: Sides
-  sides: string
+  side: Side
+  sides: Side
   width: number
 }
 const SingleLine: React.FC<SingleLineProps> = (props) => (
@@ -63,13 +63,19 @@ const SingleLine: React.FC<SingleLineProps> = (props) => (
 )
 
 function AllLines(props) {
-  return ['top', 'right', 'bottom', 'left'].map((side) => (
-    <SingleLine {...props} key={side} side={side} />
-  ))
+  return (
+    <>
+      {['top', 'right', 'bottom', 'left'].map((side) => (
+        <SingleLine {...props} key={side} side={side} />
+      ))}
+    </>
+  )
 }
 
 interface LinesProps {
-  sides: string
+  sides: Side
+  side: Side
+  width: number
 }
 const Lines: React.FC<LinesProps> = (props) =>
   props.sides === 'all' ? <AllLines {...props} /> : <SingleLine {...props} />
