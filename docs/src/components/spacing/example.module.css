@@ -1,0 +1,69 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--psLayoutSpacingLarge) / -2);
+}
+
+.example {
+  margin: calc(var(--psLayoutSpacingLarge) / 2);
+}
+.box {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #c6e0f2;
+}
+.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: #8fc4e9;
+  border-width: 0;
+}
+.label {
+  margin-top: var(--psLayoutSpacingXSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  font-weight: var(--psTypeFontWeightBook);
+  line-height: var(--psTypeLineHeightTight);
+}
+.varName {
+  margin-top: var(--psLayoutSpacingSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  color: var(--psColorsPink6);
+}
+.line {
+  position: absolute;
+  border-style: dashed;
+  border-color: #ff00ce;
+  border-width: 0;
+}
+.lineSingleSide {
+  background: #8fc4e9;
+}
+.lineTop {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom-width: 1px;
+}
+.lineRight {
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-left-width: 1px;
+}
+.lineBottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top-width: 1px;
+}
+.lineLeft {
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-right-width: 1px;
+}
