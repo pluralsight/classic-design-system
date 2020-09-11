@@ -37,7 +37,7 @@
     "react-helmet": "^6.1.0",
     "response-time": "^2.3.2",
     "serve-favicon": "^2.5.0",
-    "typescript": "^3.9.7",
+    "typescript": "^4.0.2",
     "uuid": "^8.2.0"
   },
   "devDependencies": {
