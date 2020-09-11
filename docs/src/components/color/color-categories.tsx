@@ -7,43 +7,75 @@ import { H2 } from '../mdx-components'
 import * as styles from './color-categories.module.css'
 
 export const ColorCategories: React.FC = () => {
-  return colorCategories.map((cat) => {
-    return (
-      <div key={cat.heading}>
-        <H2>{cat.heading}</H2>
-        {cat.explanation}
-        {cat.subCategories.map((subCat, i) => (
-          <div key={i}>
-            <Label>{subCat.label}</Label>
-            <Grid
-              cols={
-                subCat.colors.length < 3 ? subCat.colors.length : subCat.cols
-              }
-              bg={subCat.gridBg}
-            >
-              {subCat.colors.map((color) => (
-                <Swatch
-                  key={color.var}
-                  name={color.name}
-                  var={color.var}
-                  js={color.js}
-                  hex={color.hex}
-                  icon={color.icon || subCat.icon || cat.icon}
-                  border={color.border || subCat.border}
-                  fg={color.fg || subCat.fg}
-                  bg={color.bg || subCat.bg || color.hex}
-                  borderExample={color.borderExample}
-                />
-              ))}
-            </Grid>
+  return (
+    <>
+      {colorCategories.map((cat) => {
+        return (
+          <div key={cat.heading}>
+            <H2>{cat.heading}</H2>
+            {cat.explanation}
+            {cat.subCategories.map((subCat, i) => (
+              <div key={i}>
+                <Label>{subCat.label}</Label>
+                <Grid
+                  cols={
+                    subCat.colors.length < 3
+                      ? subCat.colors.length
+                      : subCat.cols
+                  }
+                  bg={subCat.gridBg}
+                >
+                  {subCat.colors.map((color) => (
+                    <Swatch
+                      key={color.var}
+                      name={color.name}
+                      var={color.var}
+                      js={color.js}
+                      hex={color.hex}
+                      icon={color.icon || subCat.icon || cat.icon}
+                      border={color.border || subCat.border}
+                      fg={color.fg || subCat.fg}
+                      bg={color.bg || subCat.bg || color.hex}
+                      borderExample={color.borderExample}
+                    />
+                  ))}
+                </Grid>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    )
-  })
+        )
+      })}
+    </>
+  )
 }
-
-const colorCategories = [
+interface Color {
+  name: string
+  var: string
+  js: string
+  hex: string
+  border?: string
+  bg?: string
+  fg?: string
+  borderExample?: string
+  icon?: React.ReactNode
+}
+interface SubCategory {
+  label?: string
+  gridBg?: string
+  fg?: string
+  bg?: string
+  border?: string
+  cols?: number
+  colors: Color[]
+  icon?: React.ReactNode
+}
+interface ColorCategory {
+  heading: string
+  explanation?: React.ReactNode
+  icon?: React.ReactNode
+  subCategories: SubCategory[]
+}
+const colorCategories: ColorCategory[] = [
   {
     heading: 'Background colors',
     explanation: (
@@ -511,7 +543,7 @@ const colorCategories = [
 const Label: React.FC = (props) => {
   return (
     <header>
-      <h3 classNames={styles.label}>{props.children}</h3>
+      <h3 className={styles.label}>{props.children}</h3>
     </header>
   )
 }
@@ -522,7 +554,7 @@ interface SwatchProps {
   fg?: string
   icon?: React.ReactNode
   borderExample?: string
-  names: string
+  name: string
   var: string
   js: string
   hex: string
@@ -585,7 +617,16 @@ const Grid: React.FC<GridProps> = (props) => {
   )
 }
 
-function formatAllColorSubCategory({ color, fgSwitch, fgMin, fgMax, name }) {
+interface SubCategoryColorInputs {
+  name: string
+  color: Record<string, string>
+  fgSwitch?: number
+}
+function formatAllColorSubCategory({
+  color,
+  fgSwitch,
+  name,
+}: SubCategoryColorInputs): SubCategory {
   return {
     cols: 5,
     colors: Object.keys(color)
@@ -598,8 +639,8 @@ function formatAllColorSubCategory({ color, fgSwitch, fgMin, fgMax, name }) {
         js: `colors${name}[${key}]`,
         fg:
           key < (fgSwitch || 6)
-            ? fgMin || core.colorsTextIcon.highOnLight
-            : fgMax || core.colorsTextIcon.highOnDark,
+            ? core.colorsTextIcon.highOnLight
+            : core.colorsTextIcon.highOnDark,
       })),
   }
 }
