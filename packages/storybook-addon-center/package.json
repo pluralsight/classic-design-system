@@ -11,12 +11,14 @@
   "module": "dist/index.js",
   "scripts": {
     "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
-    "build:watch": "npm run build:esm -- --watch",
+    "build:watch": "npm run build -- --watch",
     "prepublish": "npm run build"
   },
   "types": "dist/index.d.ts",
+  "dependencies": {
+    "@storybook/addons": "^6.0.21"
+  },
   "peerDependencies": {
-    "@storybook/addons": "^5.2.5",
     "react": "^16.8.6"
   }
 }
