@@ -17,10 +17,13 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-storybook-addon-center": "*",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "*",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-viewport": "^6.0.21",
     "@storybook/addons": "^6.0.21",
-    "@storybook/api": "^6.0.21"
+    "@storybook/api": "^6.0.21",
+    "babel-loader": "^8.1.0",
+    "webpack-merge": "^5.1.2"
   },
   "peerDependencies": {
     "react": "*"
