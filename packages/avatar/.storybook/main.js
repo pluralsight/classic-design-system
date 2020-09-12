@@ -1,10 +1,5 @@
 module.exports = {
-  addons: [
-    {
-      name: '@pluralsight/ps-design-system-storybook-preset',
-      options: {}
-    }
-  ],
+  addons: ['@pluralsight/ps-design-system-storybook-preset'],
   stories: ['../src/**/*.story.@(js|ts|tsx)'],
   typescript: {
     check: true,
