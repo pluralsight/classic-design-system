@@ -1,5 +1,7 @@
 import Badge from '@pluralsight/ps-design-system-badge'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import cx from 'classnames'
 import * as React from 'react'
 
 import * as styles from './guideline.module.css'
@@ -12,6 +14,7 @@ interface GuidelineProps {
   dontStyle: object
 }
 export const Guideline: React.FC<GuidelineProps> = (props) => {
+  const themeName = useTheme()
   const isSingleCol = props.columnCount === 1
 
   const Layout = isSingleCol
@@ -25,14 +28,15 @@ export const Guideline: React.FC<GuidelineProps> = (props) => {
         )
       }
 
+  const boxClassName = cx({
+    [styles.box]: true,
+    [styles.dark]: themeName === Theme.names.dark,
+    [styles.light]: themeName === Theme.names.light,
+    [styles.vertical]: isSingleCol,
+  })
   return (
     <Layout className={styles.guidelines}>
-      <div
-        className={`${styles.box} ${
-          isSingleCol ? styles['box--vertical'] : ''
-        }`}
-        style={props.doStyle}
-      >
+      <div className={boxClassName} style={props.doStyle}>
         {props.do}
 
         <div className={styles.badgeWrapper}>
@@ -42,12 +46,7 @@ export const Guideline: React.FC<GuidelineProps> = (props) => {
         </div>
       </div>
 
-      <div
-        className={`${styles.box} ${
-          isSingleCol ? styles['box--vertical'] : ''
-        }`}
-        style={props.dontStyle}
-      >
+      <div className={boxClassName} style={props.dontStyle}>
         {props.dont}
 
         <div className={styles.badgeWrapper}>
