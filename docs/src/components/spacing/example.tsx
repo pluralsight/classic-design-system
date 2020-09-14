@@ -4,7 +4,9 @@ import * as styles from './example.module.css'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 
-export const Parent = (props) => <div className={styles.parent}>{props.children}</div>
+export const Parent = (props) => (
+  <div className={styles.parent}>{props.children}</div>
+)
 
 export const Example = (props) => (
   <div className={styles.example}>
@@ -41,34 +43,39 @@ interface VarProps {
 const Var: React.FC<VarProps> = (props) =>
   props.varName ? <code className={styles.varName}>{props.varName}</code> : null
 
-type Sides = 'all' | 'top' | 'right' | 'bottom' | 'left'
+type Side = 'all' | 'top' | 'right' | 'bottom' | 'left'
 
-const dimension = (side: Sides) =>
+const dimension = (side: Side) =>
   side === 'left' || side === 'right' ? 'width' : 'height'
 
 interface SingleLineProps {
-  side: Sides
-  sides: string
+  side: Side
+  sides: Side
   width: number
 }
 const SingleLine: React.FC<SingleLineProps> = (props) => (
   <div
     style={{ [dimension(props.side)]: props.width }}
-    className={`${styles.line} ${styles.[`line${capitalize(props.side)}`]} ${
+    className={`${styles.line} ${styles[`line${capitalize(props.side)}`]} ${
       props.sides !== 'all' ? styles.lineSingleSide : ''
     }`}
   ></div>
 )
 
 function AllLines(props) {
-  return ['top', 'right', 'bottom', 'left'].map((side) => (
-    <SingleLine {...props} key={side} side={side} />
-  ))
+  return (
+    <>
+      {['top', 'right', 'bottom', 'left'].map((side) => (
+        <SingleLine {...props} key={side} side={side} />
+      ))}
+    </>
+  )
 }
 
 interface LinesProps {
-  sides: string
+  sides: Side
+  side: Side
+  width: number
 }
 const Lines: React.FC<LinesProps> = (props) =>
   props.sides === 'all' ? <AllLines {...props} /> : <SingleLine {...props} />
-

@@ -23,6 +23,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
+    "@pluralsight/ps-design-system-badge": "^10.0.18",
+    "@pluralsight/ps-design-system-layout": "^7.0.15",
+    "@pluralsight/ps-design-system-table": "^9.0.11",
     "body-parser": "^1.19.0",
     "bunyan": "^1.8.14",
     "dotenv": "^8.2.0",
