@@ -26,7 +26,7 @@ export const Guideline: React.FC<GuidelineProps> = (props) => {
       }
 
   return (
-    <Layout>
+    <Layout className={styles.guidelines}>
       <div
         className={`${styles.box} ${
           isSingleCol ? styles['box--vertical'] : ''

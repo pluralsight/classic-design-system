@@ -1,10 +1,6 @@
-.guideline {
-  padding: var(--psLayoutSpacingXSmall) 0 var(--psLayoutSpacingLarge) 0;
-}
-.badgeWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
+.guidelines {
+  margin-top: var(--psLayoutSpacingLarge);
+  margin-bottom: var(--psLayoutSpacingLarge);
 }
 .box {
   background: var(--psColorsBackgroundLight2);
@@ -15,4 +11,12 @@
 }
 .box--vertical {
   margin-bottom: var(--psLayoutSpacingMedium);
+}
+.guideline {
+  padding: var(--psLayoutSpacingXSmall) 0 var(--psLayoutSpacingLarge) 0;
+}
+.badgeWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
