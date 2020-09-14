@@ -15,8 +15,38 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
 
 export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
   const { children: code } = props
+  const isSwitcher = /switcher/.test(props.metastring)
   const language = props.className.replace(/language-/, '')
 
+  if (isSwitcher) {
+    const codes = props.children.split('\n\n---\n\n')
+    return (
+      <div>
+        All the codes
+        <div>
+          {codes.map((code, i) => (
+            <Example
+              key={i}
+              language={language}
+              code={code}
+              className={props.className}
+            />
+          ))}
+        </div>
+      </div>
+    )
+  } else {
+    return (
+      <Example language={language} className={props.className} code={code} />
+    )
+  }
+}
+
+interface ExampleProps {
+  code: string
+  language: string
+}
+const Example: React.FC<ExampleProps> = (props) => {
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
@@ -61,7 +91,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
           )}
 
           {!copied && (
-            <CopyToClipboard text={code} onCopy={handleCopy}>
+            <CopyToClipboard text={props.code} onCopy={handleCopy}>
               <Button
                 appearance={Button.appearances.flat}
                 size={Button.sizes.xSmall}
@@ -73,8 +103,8 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
         </div>
       </Actions>
 
-      <Editor language={language} theme={codeTheme}>
-        {code}
+      <Editor language={props.language} theme={codeTheme}>
+        {props.code}
       </Editor>
     </div>
   )
@@ -93,16 +123,13 @@ interface EditorProps extends HTMLAttributes<HTMLPreElement> {
   language: string
   theme: PrismTheme
 }
-
 const Editor: React.FC<EditorProps> = (props) => {
-  const { language, theme } = props
-
   return (
     <Highlight
       {...defaultProps}
       code={props.children}
-      language={language}
-      theme={theme}
+      language={props.language}
+      theme={props.theme}
     >
       {(highlight) => {
         const { tokens, getLineProps, getTokenProps } = highlight
