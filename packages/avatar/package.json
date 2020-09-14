@@ -22,8 +22,7 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.0",
-    "prop-types": "^15.7.2"
+    "@pluralsight/ps-design-system-core": "^6.4.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -31,6 +30,7 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.15"
+    "@pluralsight/ps-design-system-build": "^1.11.15",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.0.1"
   }
 }

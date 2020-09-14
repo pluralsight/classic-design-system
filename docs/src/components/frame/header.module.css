@@ -1,5 +1,3 @@
-@import '@pluralsight/ps-design-system-core';
-
 @custom-media --breakpoint-small (width >= 768px);
 
 .header {

@@ -37,7 +37,7 @@
     "@pluralsight/ps-design-system-button": "^18.1.2",
     "@pluralsight/ps-design-system-drawer": "^7.2.7",
     "@pluralsight/ps-design-system-icon": "^18.2.0",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.10",
+    "@pluralsight/ps-design-system-storybook-preset": "*",
     "@pluralsight/ps-design-system-theme": "^4.0.11"
   }
 }
