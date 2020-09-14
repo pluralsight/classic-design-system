@@ -1,9 +1,9 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "jsx": "react",
-    "strict": true
+    "allowJs": true,
+    "rootDir": null,
+    "jsx": "react"
   },
-  "include": [
-    "**/*.tsx"
-  ]
+  "include": ["**/*.tsx"]
 }
