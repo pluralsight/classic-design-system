@@ -1,4 +1,5 @@
 import Button from '@pluralsight/ps-design-system-button'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import Prism from 'prismjs/components/prism-core'
@@ -6,38 +7,65 @@ import Highlight, { PrismTheme, defaultProps } from 'prism-react-renderer'
 import React, { HTMLAttributes, useEffect, useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
+import { H2 } from '../mdx'
 import styles from './code-block.module.css'
 import { darkTheme, lightTheme } from './code-block-theme'
 
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
+  metastring?: null
   live?: boolean
 }
 
 export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
-  const { children: code } = props
   const isSwitcher = /switcher/.test(props.metastring)
   const language = props.className.replace(/language-/, '')
 
+  const codes = props.children.split('\n\n---\n\n')
+  const options = isSwitcher
+    ? Array.from(Array(codes.length)).map((_, i) => ({
+        value: i,
+        label: 'Example #' + i,
+      }))
+    : [{ value: 0, label: 'Single example' }]
+
+  const [selectedOption, setSelectedOption] = React.useState(options[0].value)
+
   if (isSwitcher) {
-    const codes = props.children.split('\n\n---\n\n')
     return (
       <div>
-        All the codes
+        <div className={styles.title}>
+          <H2>Examples</H2>
+          <Dropdown
+            onChange={(evt, value, label) => setSelectedOption(value)}
+            menu={options.map((opt) => (
+              <Dropdown.Item key={opt.value} value={opt.value}>
+                {opt.label}
+              </Dropdown.Item>
+            ))}
+            value={selectedOption}
+          />
+        </div>
         <div>
-          {codes.map((code, i) => (
-            <Example
-              key={i}
-              language={language}
-              code={code}
-              className={props.className}
-            />
-          ))}
+          {codes.map((code, i) =>
+            i === selectedOption ? (
+              <Example
+                key={i}
+                language={language}
+                code={code}
+                className={props.className}
+              />
+            ) : null
+          )}
         </div>
       </div>
     )
   } else {
     return (
-      <Example language={language} className={props.className} code={code} />
+      <Example
+        language={language}
+        className={props.className}
+        code={codes[0]}
+      />
     )
   }
 }
