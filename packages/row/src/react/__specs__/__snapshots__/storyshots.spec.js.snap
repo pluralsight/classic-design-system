@@ -2,449 +2,371 @@
 
 exports[`Storyshots actionBar locked visible 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
+    >
+      Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+    </div>
+  </div>
+  <div
+    data-css-7zyoug=""
+  >
+    <button
+      data-css-kovzf5=""
+      disabled={false}
+      style={Object {}}
     >
       <div
-        data-css-1tiyrld=""
+        data-css-y80vay=""
       >
         <div
-          data-css-nu4y7h=""
+          data-css-7dab2f=""
         >
-          Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+          <svg
+            aria-label="bookmark icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+            />
+          </svg>
         </div>
       </div>
-      <div
-        data-css-7zyoug=""
-      >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="bookmark icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots actionBar long title 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
+    >
+      Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+    </div>
+  </div>
+  <div
+    data-css-1pe5xb7=""
+  >
+    <button
+      data-css-kovzf5=""
+      disabled={false}
+      style={Object {}}
     >
       <div
-        data-css-1tiyrld=""
+        data-css-y80vay=""
       >
         <div
-          data-css-nu4y7h=""
+          data-css-7dab2f=""
         >
-          Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+          <svg
+            aria-label="bookmark icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+            />
+          </svg>
         </div>
       </div>
-      <div
-        data-css-1pe5xb7=""
-      >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="bookmark icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots actionBar long title with image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
+    >
+      Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+    </div>
+  </div>
+  <div
+    data-css-1pe5xb7=""
+  >
+    <button
+      data-css-kovzf5=""
+      disabled={false}
+      style={Object {}}
     >
       <div
-        data-css-1tiyrld=""
+        data-css-y80vay=""
       >
         <div
-          data-css-nu4y7h=""
+          data-css-7dab2f=""
         >
-          Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+          <svg
+            aria-label="bookmark icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+            />
+          </svg>
         </div>
       </div>
-      <div
-        data-css-1pe5xb7=""
-      >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="bookmark icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots actionBar one action 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
+    >
+      Ready, Action, Bar!
+    </div>
+  </div>
+  <div
+    data-css-1pe5xb7=""
+  >
+    <button
+      data-css-kovzf5=""
+      disabled={false}
+      style={Object {}}
     >
       <div
-        data-css-1tiyrld=""
+        data-css-y80vay=""
       >
         <div
-          data-css-nu4y7h=""
+          data-css-7dab2f=""
         >
-          Ready, Action, Bar!
+          <svg
+            aria-label="bookmark icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+            />
+          </svg>
         </div>
       </div>
-      <div
-        data-css-1pe5xb7=""
-      >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="bookmark icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots combo everything 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-5n4uhw=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
+    >
+      <span
+        data-css-1bnk4mn=""
+      >
+        <a
+          href="http://google.com?query=title"
+        >
+          Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
+        </a>
+      </span>
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
+      >
+        <span
+          data-css-1bnk4mn=""
+        >
+          <a
+            href="http://google.com/?query=jaketrent"
+          >
+            It is impossible to count the grand contributions of this great author
+          </a>
+        </span>
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        <span
+          data-css-1bnk4mn=""
+        >
+          <a
+            href="http://google.com/?query=jaketrent"
+          >
+            Levels heretofore unknown in the battle for truth and knowledge
+          </a>
+        </span>
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        <span
+          data-css-1bnk4mn=""
+        >
+          <a
+            href="http://google.com/?query=jaketrent"
+          >
+            A length of such amazing lengthitude so-as to blow the mind
+          </a>
+        </span>
+      </span>
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
+      >
+        Goodness me!
+      </span>
+    </div>
+  </div>
+  <div
+    data-css-7b22zo=""
+  >
+    <button
+      data-css-kovzf5=""
+      disabled={false}
+      style={Object {}}
     >
       <div
-        data-css-5n4uhw=""
+        data-css-y80vay=""
       >
         <div
-          data-css-nu4y7h=""
+          data-css-7dab2f=""
         >
-          <span
-            data-css-1bnk4mn=""
+          <svg
+            aria-label="bookmark icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <a
-              href="http://google.com?query=title"
-            >
-              Image, Progress, Link Full Overlay, Icon, Link Title, Link Meta1, 2, Action Bar, and More Really. Why Not Put More In? Release a New Edition Every Year With All the Excesses of our VC Budget? Boundless Features Will Be Yours 2000
-            </a>
-          </span>
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com/?query=jaketrent"
-              >
-                It is impossible to count the grand contributions of this great author
-              </a>
-            </span>
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com/?query=jaketrent"
-              >
-                Levels heretofore unknown in the battle for truth and knowledge
-              </a>
-            </span>
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com/?query=jaketrent"
-              >
-                A length of such amazing lengthitude so-as to blow the mind
-              </a>
-            </span>
-          </span>
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Goodness me!
-          </span>
+            <path
+              d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+            />
+          </svg>
         </div>
       </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+    <button
+      data-css-kovzf5=""
+      disabled={false}
+      style={Object {}}
+    >
       <div
-        data-css-7b22zo=""
+        data-css-y80vay=""
       >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
+        <div
+          data-css-7dab2f=""
         >
-          <div
-            data-css-y80vay=""
+          <svg
+            aria-label="gear icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="bookmark icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="gear icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M4 12c0-.377.026-.748.077-1.111L2.274 9.848a.5.5 0 01-.183-.683l2.5-4.33a.5.5 0 01.683-.183l1.804 1.041A7.988 7.988 0 019 4.581V2.5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v2.082a7.99 7.99 0 011.922 1.112l1.805-1.042a.5.5 0 01.683.183l2.5 4.33a.5.5 0 01-.183.683l-1.804 1.042a8.063 8.063 0 010 2.22l1.804 1.042a.5.5 0 01.183.683l-2.5 4.33a.5.5 0 01-.683.183l-1.805-1.042A7.992 7.992 0 0115 19.418V21.5a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-2.081a7.985 7.985 0 01-1.923-1.112l-1.804 1.041a.5.5 0 01-.683-.183l-2.5-4.33a.5.5 0 01.183-.683l1.803-1.04A8.077 8.077 0 014 12zm9-8h-2v2.083a5.994 5.994 0 00-3.623 2.092L5.573 7.133l-1 1.732 1.803 1.04A5.986 5.986 0 006 12c0 .736.132 1.44.375 2.092l-1.803 1.041 1 1.732 1.804-1.041A5.993 5.993 0 0011 17.917V20h2v-2.083a5.994 5.994 0 003.625-2.094l1.805 1.042 1-1.732-1.805-1.042A5.987 5.987 0 0018 12a5.99 5.99 0 00-.375-2.093l1.804-1.042-1-1.732-1.806 1.042A5.994 5.994 0 0013 6.083V4zm-5 8a4 4 0 108 0 4 4 0 00-8 0zm4 2a2 2 0 100-4 2 2 0 000 4z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
+            <path
+              clipRule="evenodd"
+              d="M4 12c0-.377.026-.748.077-1.111L2.274 9.848a.5.5 0 01-.183-.683l2.5-4.33a.5.5 0 01.683-.183l1.804 1.041A7.988 7.988 0 019 4.581V2.5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v2.082a7.99 7.99 0 011.922 1.112l1.805-1.042a.5.5 0 01.683.183l2.5 4.33a.5.5 0 01-.183.683l-1.804 1.042a8.063 8.063 0 010 2.22l1.804 1.042a.5.5 0 01.183.683l-2.5 4.33a.5.5 0 01-.683.183l-1.805-1.042A7.992 7.992 0 0115 19.418V21.5a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-2.081a7.985 7.985 0 01-1.923-1.112l-1.804 1.041a.5.5 0 01-.683-.183l-2.5-4.33a.5.5 0 01.183-.683l1.803-1.04A8.077 8.077 0 014 12zm9-8h-2v2.083a5.994 5.994 0 00-3.623 2.092L5.573 7.133l-1 1.732 1.803 1.04A5.986 5.986 0 006 12c0 .736.132 1.44.375 2.092l-1.803 1.041 1 1.732 1.804-1.041A5.993 5.993 0 0011 17.917V20h2v-2.083a5.994 5.994 0 003.625-2.094l1.805 1.042 1-1.732-1.805-1.042A5.987 5.987 0 0018 12a5.99 5.99 0 00-.375-2.093l1.804-1.042-1-1.732-1.806 1.042A5.994 5.994 0 0013 6.083V4zm-5 8a4 4 0 108 0 4 4 0 00-8 0zm4 2a2 2 0 100-4 2 2 0 000 4z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
       </div>
-    </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
+    <button
+      data-css-kovzf5=""
+      disabled={false}
+      style={Object {}}
+    >
+      <div
+        data-css-y80vay=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="more icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        data-css-15b13by=""
+      />
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots fullOverlay element 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-nu4y7h=""
-        >
-          Overlay This!
-        </div>
-      </div>
+      Overlay This!
     </div>
   </div>
 </div>
@@ -452,28 +374,15 @@ exports[`Storyshots fullOverlay element 1`] = `
 
 exports[`Storyshots fullOverlay link 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-nu4y7h=""
-        >
-          Overlay This!
-        </div>
-      </div>
+      Overlay This!
     </div>
   </div>
 </div>
@@ -481,28 +390,15 @@ exports[`Storyshots fullOverlay link 1`] = `
 
 exports[`Storyshots fullOverlay linked icon 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-nu4y7h=""
-        >
-          Overlay This!
-        </div>
-      </div>
+      Overlay This!
     </div>
   </div>
 </div>
@@ -510,28 +406,15 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
 
 exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-nu4y7h=""
-        >
-          Both Icon and Image Have Separate Click Targets
-        </div>
-      </div>
+      Both Icon and Image Have Separate Click Targets
     </div>
   </div>
 </div>
@@ -539,37 +422,24 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
 
 exports[`Storyshots image link 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Linked Image
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Linked Image
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -577,37 +447,24 @@ exports[`Storyshots image link 1`] = `
 
 exports[`Storyshots image no image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      No Image
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          No Image
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -615,37 +472,24 @@ exports[`Storyshots image no image 1`] = `
 
 exports[`Storyshots image no image with overlay 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      No Image, With Overlay (Not Shown)
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          No Image, With Overlay (Not Shown)
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -653,37 +497,24 @@ exports[`Storyshots image no image with overlay 1`] = `
 
 exports[`Storyshots image small image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Small Image
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Small Image
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -691,37 +522,24 @@ exports[`Storyshots image small image 1`] = `
 
 exports[`Storyshots image tall image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Tall Image
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Tall Image
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -729,37 +547,24 @@ exports[`Storyshots image tall image 1`] = `
 
 exports[`Storyshots image wide image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Wide Image
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Wide Image
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -767,37 +572,24 @@ exports[`Storyshots image wide image 1`] = `
 
 exports[`Storyshots image with image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      With Image
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          With Image
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -805,284 +597,247 @@ exports[`Storyshots image with image 1`] = `
 
 exports[`Storyshots image with image with overlay 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      With Image
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          With Image
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots in a stack no top border on first row 1`] = `
-<div
-  data-css-12kxz7c=""
->
+Array [
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-19vzw9x=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-1tiyrld=""
     >
       <div
-        data-css-1tiyrld=""
+        data-css-nu4y7h=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Course thing you do
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            1m 46s
-          </span>
-        </div>
+        Course thing you do
       </div>
       <div
-        data-css-7zyoug=""
+        data-css-1b2ftmj=""
       >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
+        <span
+          data-css-1kcrbi9=""
         >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
+          1m 46s
+        </span>
       </div>
     </div>
     <div
-      data-css-19vzw9x=""
+      data-css-7zyoug=""
     >
-      <div
-        data-css-1tiyrld=""
+      <button
+        data-css-kovzf5=""
+        disabled={false}
+        style={Object {}}
       >
         <div
-          data-css-nu4y7h=""
-        >
-          Course thing you do
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            1m 46s
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-7zyoug=""
-      >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          style={Object {}}
+          data-css-y80vay=""
         >
           <div
-            data-css-y80vay=""
+            data-css-7dab2f=""
           >
-            <div
-              data-css-7dab2f=""
+            <svg
+              aria-label="more icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
+              <path
+                d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+              />
+            </svg>
           </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
+        </div>
+        <span
+          data-css-15b13by=""
+        />
+      </button>
+    </div>
+  </div>,
+  <div
+    data-css-19vzw9x=""
+  >
+    <div
+      data-css-1tiyrld=""
+    >
+      <div
+        data-css-nu4y7h=""
+      >
+        Course thing you do
+      </div>
+      <div
+        data-css-1b2ftmj=""
+      >
+        <span
+          data-css-1kcrbi9=""
+        >
+          1m 46s
+        </span>
       </div>
     </div>
-  </div>
-</div>
+    <div
+      data-css-7zyoug=""
+    >
+      <button
+        data-css-kovzf5=""
+        disabled={false}
+        style={Object {}}
+      >
+        <div
+          data-css-y80vay=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="more icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+              />
+            </svg>
+          </div>
+        </div>
+        <span
+          data-css-15b13by=""
+        />
+      </button>
+    </div>
+  </div>,
+]
 `;
 
 exports[`Storyshots in drawer medium 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-knxp45=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-k6dw9o=""
+    onClick={[Function]}
   >
     <div
-      data-css-knxp45=""
+      data-css-euzj8=""
     >
       <div
-        data-css-k6dw9o=""
-        onClick={[Function]}
+        data-css-19vzw9x=""
       >
         <div
-          data-css-euzj8=""
+          data-css-js3ti3=""
         >
           <div
-            data-css-19vzw9x=""
+            data-css-6x74ml=""
+          />
+        </div>
+        <div
+          data-css-kxulf3=""
+        >
+          <div
+            data-css-2pesz8=""
           >
-            <div
-              data-css-js3ti3=""
+            Course thing you do
+          </div>
+          <div
+            data-css-145nbth=""
+          >
+            <span
+              data-css-1kcrbi9=""
             >
-              <div
-                data-css-6x74ml=""
-              />
-            </div>
-            <div
-              data-css-kxulf3=""
-            >
-              <div
-                data-css-2pesz8=""
-              >
-                Course thing you do
-              </div>
-              <div
-                data-css-145nbth=""
-              >
-                <span
-                  data-css-1kcrbi9=""
-                >
-                  1m 46s
-                </span>
-              </div>
-            </div>
-            <div
-              data-css-7zyoug=""
-            >
-              <button
-                data-css-kovzf5=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    data-css-7dab2f=""
-                  >
-                    <svg
-                      aria-label="more icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-15b13by=""
-                />
-              </button>
-            </div>
+              1m 46s
+            </span>
           </div>
         </div>
         <div
-          data-css-qs2rg7=""
+          data-css-7zyoug=""
         >
           <button
-            aria-label="Expand"
-            data-css-xkympi=""
+            data-css-kovzf5=""
+            disabled={false}
             onClick={[Function]}
+            style={Object {}}
           >
             <div
-              data-css-1byjzqg=""
+              data-css-y80vay=""
             >
               <div
                 data-css-7dab2f=""
               >
                 <svg
-                  aria-label="caret down icon"
+                  aria-label="more icon"
                   role="img"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
                   />
                 </svg>
               </div>
             </div>
+            <span
+              data-css-15b13by=""
+            />
           </button>
         </div>
       </div>
-      <div
-        data-css-v1c8as=""
+    </div>
+    <div
+      data-css-qs2rg7=""
+    >
+      <button
+        aria-label="Expand"
+        data-css-xkympi=""
+        onClick={[Function]}
       >
         <div
-          aria-hidden={true}
-          data-css-1j3g0qd=""
+          data-css-1byjzqg=""
         >
-          <div>
-            some goodies in the drawer
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
           </div>
         </div>
+      </button>
+    </div>
+  </div>
+  <div
+    data-css-v1c8as=""
+  >
+    <div
+      aria-hidden={true}
+      data-css-1j3g0qd=""
+    >
+      <div>
+        some goodies in the drawer
       </div>
     </div>
   </div>
@@ -1091,119 +846,106 @@ exports[`Storyshots in drawer medium 1`] = `
 
 exports[`Storyshots in drawer small 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-knxp45=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-k6dw9o=""
+    onClick={[Function]}
   >
     <div
-      data-css-knxp45=""
+      data-css-euzj8=""
     >
       <div
-        data-css-k6dw9o=""
-        onClick={[Function]}
+        data-css-19vzw9x=""
       >
         <div
-          data-css-euzj8=""
+          data-css-1tiyrld=""
         >
           <div
-            data-css-19vzw9x=""
+            data-css-nu4y7h=""
           >
-            <div
-              data-css-1tiyrld=""
+            Course thing you do
+          </div>
+          <div
+            data-css-1b2ftmj=""
+          >
+            <span
+              data-css-1kcrbi9=""
             >
-              <div
-                data-css-nu4y7h=""
-              >
-                Course thing you do
-              </div>
-              <div
-                data-css-1b2ftmj=""
-              >
-                <span
-                  data-css-1kcrbi9=""
-                >
-                  1m 46s
-                </span>
-              </div>
-            </div>
-            <div
-              data-css-7zyoug=""
-            >
-              <button
-                data-css-kovzf5=""
-                disabled={false}
-                onClick={[Function]}
-                style={Object {}}
-              >
-                <div
-                  data-css-y80vay=""
-                >
-                  <div
-                    data-css-7dab2f=""
-                  >
-                    <svg
-                      aria-label="more icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <span
-                  data-css-15b13by=""
-                />
-              </button>
-            </div>
+              1m 46s
+            </span>
           </div>
         </div>
         <div
-          data-css-qs2rg7=""
+          data-css-7zyoug=""
         >
           <button
-            aria-label="Expand"
-            data-css-xkympi=""
+            data-css-kovzf5=""
+            disabled={false}
             onClick={[Function]}
+            style={Object {}}
           >
             <div
-              data-css-1byjzqg=""
+              data-css-y80vay=""
             >
               <div
                 data-css-7dab2f=""
               >
                 <svg
-                  aria-label="caret down icon"
+                  aria-label="more icon"
                   role="img"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
                   />
                 </svg>
               </div>
             </div>
+            <span
+              data-css-15b13by=""
+            />
           </button>
         </div>
       </div>
-      <div
-        data-css-v1c8as=""
+    </div>
+    <div
+      data-css-qs2rg7=""
+    >
+      <button
+        aria-label="Expand"
+        data-css-xkympi=""
+        onClick={[Function]}
       >
         <div
-          aria-hidden={true}
-          data-css-1j3g0qd=""
+          data-css-1byjzqg=""
         >
-          <div>
-            some goodies in the drawer
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
           </div>
         </div>
+      </button>
+    </div>
+  </div>
+  <div
+    data-css-v1c8as=""
+  >
+    <div
+      aria-hidden={true}
+      data-css-1j3g0qd=""
+    >
+      <div>
+        some goodies in the drawer
       </div>
     </div>
   </div>
@@ -1212,45 +954,32 @@ exports[`Storyshots in drawer small 1`] = `
 
 exports[`Storyshots metadata link 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Meta With Links
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
+        <span
+          data-css-1bnk4mn=""
         >
-          Meta With Links
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
+          <a
+            href="http://google.com/?query=jaketrent"
           >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com/?query=jaketrent"
-              >
-                Jake Trent
-              </a>
-            </span>
-          </span>
-        </div>
-      </div>
+            Jake Trent
+          </a>
+        </span>
+      </span>
     </div>
   </div>
 </div>
@@ -1258,83 +987,70 @@ exports[`Storyshots metadata link 1`] = `
 
 exports[`Storyshots metadata long links 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Meta With Links
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
+        <span
+          data-css-1bnk4mn=""
         >
-          Meta With Links
-        </div>
-        <div
-          data-css-1b2ftmj=""
+          <a
+            href="http://google.com/?query=jaketrent"
+          >
+            It is impossible to count the grand contributions of this great author
+          </a>
+        </span>
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        <span
+          data-css-1bnk4mn=""
         >
-          <span
-            data-css-1kcrbi9=""
+          <a
+            href="http://google.com/?query=jaketrent"
           >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com/?query=jaketrent"
-              >
-                It is impossible to count the grand contributions of this great author
-              </a>
-            </span>
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
+            Levels heretofore unknown in the battle for truth and knowledge
+          </a>
+        </span>
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        <span
+          data-css-1bnk4mn=""
+        >
+          <a
+            href="http://google.com/?query=jaketrent"
           >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com/?query=jaketrent"
-              >
-                Levels heretofore unknown in the battle for truth and knowledge
-              </a>
-            </span>
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com/?query=jaketrent"
-              >
-                A length of such amazing lengthitude so-as to blow the mind
-              </a>
-            </span>
-          </span>
-        </div>
-      </div>
+            A length of such amazing lengthitude so-as to blow the mind
+          </a>
+        </span>
+      </span>
     </div>
   </div>
 </div>
@@ -1342,59 +1058,46 @@ exports[`Storyshots metadata long links 1`] = `
 
 exports[`Storyshots metadata long strings 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      The Longest Strings in El Mundo
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          The Longest Strings in El Mundo
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            It is impossible to count the grand contributions of this great author
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            Levels heretofore unknown in the battle for truth and knowledge
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            A length of such amazing lengthitude so-as to blow the mind
-          </span>
-        </div>
-      </div>
+        It is impossible to count the grand contributions of this great author
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        Levels heretofore unknown in the battle for truth and knowledge
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        A length of such amazing lengthitude so-as to blow the mind
+      </span>
     </div>
   </div>
 </div>
@@ -1402,59 +1105,46 @@ exports[`Storyshots metadata long strings 1`] = `
 
 exports[`Storyshots metadata long strings with image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Long Strings AND Los Imagereo
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Long Strings AND Los Imagereo
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            It is impossible to count the grand contributions of this great author
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            Levels heretofore unknown in the battle for truth and knowledge
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            A length of such amazing lengthitude so-as to blow the mind
-          </span>
-        </div>
-      </div>
+        It is impossible to count the grand contributions of this great author
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        Levels heretofore unknown in the battle for truth and knowledge
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        A length of such amazing lengthitude so-as to blow the mind
+      </span>
     </div>
   </div>
 </div>
@@ -1462,37 +1152,24 @@ exports[`Storyshots metadata long strings with image 1`] = `
 
 exports[`Storyshots metadata string 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Meta with Strings
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Meta with Strings
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jake Trent
-          </span>
-        </div>
-      </div>
+        Jake Trent
+      </span>
     </div>
   </div>
 </div>
@@ -1500,59 +1177,46 @@ exports[`Storyshots metadata string 1`] = `
 
 exports[`Storyshots metadata super long first string 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Long Strings AND Los Imagereo
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Long Strings AND Los Imagereo
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. 
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            This is still visible
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            And so is this
-          </span>
-        </div>
-      </div>
+        This string is so long, it should be illegal.This string is so long, it should be illegal.This string is so long, it should be illegal.   This string is so long, it should be illegal. 
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        This is still visible
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        And so is this
+      </span>
     </div>
   </div>
 </div>
@@ -1560,68 +1224,55 @@ exports[`Storyshots metadata super long first string 1`] = `
 
 exports[`Storyshots metadata two lines 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      Meta With Links
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          Meta With Links
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jake Trent
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            School of the Internet
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            Blasted Good
-          </span>
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Certified GMO-free
-          </span>
-        </div>
-      </div>
+        Jake Trent
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        School of the Internet
+      </span>
+      <span
+        aria-hidden={true}
+        data-css-kykfz1=""
+      >
+        ·
+      </span>
+      <span
+        data-css-1kcrbi9=""
+      >
+        Blasted Good
+      </span>
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
+      >
+        Certified GMO-free
+      </span>
     </div>
   </div>
 </div>
@@ -1629,35 +1280,22 @@ exports[`Storyshots metadata two lines 1`] = `
 
 exports[`Storyshots progress 0 progress 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-js3ti3=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-6x74ml=""
+    />
+  </div>
+  <div
+    data-css-kxulf3=""
+  >
+    <div
+      data-css-2pesz8=""
     >
-      <div
-        data-css-js3ti3=""
-      >
-        <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          0 progress
-        </div>
-      </div>
+      0 progress
     </div>
   </div>
 </div>
@@ -1665,43 +1303,30 @@ exports[`Storyshots progress 0 progress 1`] = `
 
 exports[`Storyshots progress 66.6667 progress 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-js3ti3=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-6x74ml=""
+    />
+    <div
+      data-css-cmz505=""
     >
       <div
-        data-css-js3ti3=""
-      >
-        <div
-          data-css-6x74ml=""
-        />
-        <div
-          data-css-cmz505=""
-        >
-          <div
-            aria-label="67% complete"
-            data-css-6fy8id=""
-          />
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          66.6667 progress
-        </div>
-      </div>
+        aria-label="67% complete"
+        data-css-6fy8id=""
+      />
+    </div>
+  </div>
+  <div
+    data-css-kxulf3=""
+  >
+    <div
+      data-css-2pesz8=""
+    >
+      66.6667 progress
     </div>
   </div>
 </div>
@@ -1709,43 +1334,30 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
 
 exports[`Storyshots progress 100 progress 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-js3ti3=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-6x74ml=""
+    />
+    <div
+      data-css-cmz505=""
     >
       <div
-        data-css-js3ti3=""
-      >
-        <div
-          data-css-6x74ml=""
-        />
-        <div
-          data-css-cmz505=""
-        >
-          <div
-            aria-label="100% complete"
-            data-css-1gebpgk=""
-          />
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          100 progress
-        </div>
-      </div>
+        aria-label="100% complete"
+        data-css-1gebpgk=""
+      />
+    </div>
+  </div>
+  <div
+    data-css-kxulf3=""
+  >
+    <div
+      data-css-2pesz8=""
+    >
+      100 progress
     </div>
   </div>
 </div>
@@ -1753,28 +1365,15 @@ exports[`Storyshots progress 100 progress 1`] = `
 
 exports[`Storyshots progress no image 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-2pesz8=""
     >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          No image, with progress (not shown)
-        </div>
-      </div>
+      No image, with progress (not shown)
     </div>
   </div>
 </div>
@@ -1782,44 +1381,31 @@ exports[`Storyshots progress no image 1`] = `
 
 exports[`Storyshots size medium 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-js3ti3=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-6x74ml=""
+    />
+  </div>
+  <div
+    data-css-kxulf3=""
+  >
+    <div
+      data-css-2pesz8=""
     >
-      <div
-        data-css-js3ti3=""
+      medium Row
+    </div>
+    <div
+      data-css-145nbth=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          medium Row
-        </div>
-        <div
-          data-css-145nbth=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -1827,37 +1413,24 @@ exports[`Storyshots size medium 1`] = `
 
 exports[`Storyshots size small 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      small Row
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          small Row
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -1865,36 +1438,23 @@ exports[`Storyshots size small 1`] = `
 
 exports[`Storyshots title link 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      <span
+        data-css-1bnk4mn=""
       >
-        <div
-          data-css-nu4y7h=""
+        <a
+          href="http://google.com"
         >
-          <span
-            data-css-1bnk4mn=""
-          >
-            <a
-              href="http://google.com"
-            >
-              A Link Title
-            </a>
-          </span>
-        </div>
-      </div>
+          A Link Title
+        </a>
+      </span>
     </div>
   </div>
 </div>
@@ -1902,45 +1462,32 @@ exports[`Storyshots title link 1`] = `
 
 exports[`Storyshots title link truncated 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "maxWidth": 400,
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-19vzw9x=""
   >
     <div
-      style={
-        Object {
-          "maxWidth": 400,
-        }
-      }
+      data-css-1tiyrld=""
     >
       <div
-        data-css-19vzw9x=""
+        data-css-nu4y7h=""
       >
-        <div
-          data-css-1tiyrld=""
+        <span
+          data-css-1bnk4mn=""
         >
-          <div
-            data-css-nu4y7h=""
+          <a
+            href="http://google.com"
           >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="http://google.com"
-              >
-                <div>
-                  We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
-                </div>
-              </a>
-            </span>
-          </div>
-        </div>
+            <div>
+              We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
+            </div>
+          </a>
+        </span>
       </div>
     </div>
   </div>
@@ -1949,44 +1496,31 @@ exports[`Storyshots title link truncated 1`] = `
 
 exports[`Storyshots title medium long title 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-js3ti3=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-6x74ml=""
+    />
+  </div>
+  <div
+    data-css-kxulf3=""
+  >
+    <div
+      data-css-2pesz8=""
     >
-      <div
-        data-css-js3ti3=""
+      medium With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+    </div>
+    <div
+      data-css-145nbth=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          medium With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
-        </div>
-        <div
-          data-css-145nbth=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -1994,37 +1528,24 @@ exports[`Storyshots title medium long title 1`] = `
 
 exports[`Storyshots title small long title 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
+      small With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
+    </div>
+    <div
+      data-css-1b2ftmj=""
+    >
+      <span
+        data-css-1kcrbi9=""
       >
-        <div
-          data-css-nu4y7h=""
-        >
-          small With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            Jim Cooper
-          </span>
-        </div>
-      </div>
+        Jim Cooper
+      </span>
     </div>
   </div>
 </div>
@@ -2032,28 +1553,15 @@ exports[`Storyshots title small long title 1`] = `
 
 exports[`Storyshots title string 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-19vzw9x=""
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-1tiyrld=""
   >
     <div
-      data-css-19vzw9x=""
+      data-css-nu4y7h=""
     >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-nu4y7h=""
-        >
-          A String Title
-        </div>
-      </div>
+      A String Title
     </div>
   </div>
 </div>
@@ -2061,36 +1569,23 @@ exports[`Storyshots title string 1`] = `
 
 exports[`Storyshots title string truncated 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "maxWidth": 400,
+    }
+  }
 >
   <div
-    style={
-      Object {
-        "margin": "24px auto",
-        "maxWidth": "calc(100vw - 64px)",
-      }
-    }
+    data-css-19vzw9x=""
   >
     <div
-      style={
-        Object {
-          "maxWidth": 400,
-        }
-      }
+      data-css-1tiyrld=""
     >
       <div
-        data-css-19vzw9x=""
+        data-css-nu4y7h=""
       >
-        <div
-          data-css-1tiyrld=""
-        >
-          <div
-            data-css-nu4y7h=""
-          >
-            <div>
-              We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
-            </div>
-          </div>
+        <div>
+          We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.
         </div>
       </div>
     </div>
