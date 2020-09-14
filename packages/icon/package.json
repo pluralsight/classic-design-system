@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "18.2.0",
+  "version": "18.2.1",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-storybook-preset": "*",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.0",
     "ncp": "^2.0.0"
   }
 }
