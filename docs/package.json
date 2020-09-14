@@ -37,7 +37,7 @@
     "react-helmet": "^6.1.0",
     "response-time": "^2.3.2",
     "serve-favicon": "^2.5.0",
-    "typescript": "^3.9.7",
+    "typescript": "^4.0.2",
     "uuid": "^8.2.0"
   },
   "devDependencies": {
@@ -85,6 +85,7 @@
     "prism-react-renderer": "^1.1.1",
     "prismjs": "^1.21.0",
     "react-copy-to-clipboard": "^5.0.2",
-    "ts-node": "^9.0.0"
+    "ts-node": "^9.0.0",
+    "typescript-plugin-css-modules": "^2.4.0"
   }
 }
