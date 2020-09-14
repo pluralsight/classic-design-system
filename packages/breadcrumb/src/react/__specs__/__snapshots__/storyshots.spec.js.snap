@@ -2,159 +2,143 @@
 
 exports[`Storyshots as link hrefs 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-nipl9k=""
 >
-  <div
-    data-css-nipl9k=""
+  <a
+    data-css-mjh87q=""
+    disabled={false}
+    href="https://duckduckgo.com"
+    style={Object {}}
   >
-    <a
-      data-css-mjh87q=""
-      disabled={false}
-      href="https://duckduckgo.com"
-      style={Object {}}
+    <div
+      data-css-1mgd019=""
     >
       <div
-        data-css-1mgd019=""
+        data-css-7dab2f=""
       >
-        <div
-          data-css-7dab2f=""
+        <svg
+          aria-label="caret left icon"
+          role="img"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-label="caret left icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-            />
-          </svg>
-        </div>
+          <path
+            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+          />
+        </svg>
       </div>
-      <span
-        data-css-15b13by=""
-      >
-        Click as link
-      </span>
-    </a>
-  </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      Click as link
+    </span>
+  </a>
 </div>
 `;
 
 exports[`Storyshots disabled disabled 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-nipl9k=""
 >
-  <div
-    data-css-nipl9k=""
+  <button
+    data-css-4i058q=""
+    disabled={true}
+    onClick={[Function]}
+    style={Object {}}
   >
-    <button
-      data-css-4i058q=""
-      disabled={true}
-      onClick={[Function]}
-      style={Object {}}
+    <div
+      data-css-1mgd019=""
     >
       <div
-        data-css-1mgd019=""
+        data-css-7dab2f=""
       >
-        <div
-          data-css-7dab2f=""
+        <svg
+          aria-label="caret left icon"
+          role="img"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-label="caret left icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-            />
-          </svg>
-        </div>
+          <path
+            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+          />
+        </svg>
       </div>
-      <span
-        data-css-15b13by=""
-      >
-        Disabled
-      </span>
-    </button>
-  </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      Disabled
+    </span>
+  </button>
 </div>
 `;
 
 exports[`Storyshots normal looks great 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-nipl9k=""
 >
-  <div
-    data-css-nipl9k=""
+  <button
+    data-css-mjh87q=""
+    disabled={false}
+    style={Object {}}
   >
-    <button
-      data-css-mjh87q=""
-      disabled={false}
-      style={Object {}}
+    <div
+      data-css-1mgd019=""
     >
       <div
-        data-css-1mgd019=""
+        data-css-7dab2f=""
       >
-        <div
-          data-css-7dab2f=""
+        <svg
+          aria-label="caret left icon"
+          role="img"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-label="caret left icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-            />
-          </svg>
-        </div>
+          <path
+            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+          />
+        </svg>
       </div>
-      <span
-        data-css-15b13by=""
-      >
-        All the things
-      </span>
-    </button>
-  </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      All the things
+    </span>
+  </button>
 </div>
 `;
 
 exports[`Storyshots with onClick clicks once 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-nipl9k=""
 >
-  <div
-    data-css-nipl9k=""
+  <button
+    data-css-mjh87q=""
+    disabled={false}
+    onClick={[Function]}
+    style={Object {}}
   >
-    <button
-      data-css-mjh87q=""
-      disabled={false}
-      onClick={[Function]}
-      style={Object {}}
+    <div
+      data-css-1mgd019=""
     >
       <div
-        data-css-1mgd019=""
+        data-css-7dab2f=""
       >
-        <div
-          data-css-7dab2f=""
+        <svg
+          aria-label="caret left icon"
+          role="img"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-label="caret left icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-            />
-          </svg>
-        </div>
+          <path
+            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+          />
+        </svg>
       </div>
-      <span
-        data-css-15b13by=""
-      >
-        Clicks once
-      </span>
-    </button>
-  </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      Clicks once
+    </span>
+  </button>
 </div>
 `;
