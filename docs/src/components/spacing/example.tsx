@@ -4,7 +4,9 @@ import * as styles from './example.module.css'
 
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 
-export const Parent = (props) => <div className={styles.parent}>{props.children}</div>
+export const Parent = (props) => (
+  <div className={styles.parent}>{props.children}</div>
+)
 
 export const Example = (props) => (
   <div className={styles.example}>
@@ -54,7 +56,7 @@ interface SingleLineProps {
 const SingleLine: React.FC<SingleLineProps> = (props) => (
   <div
     style={{ [dimension(props.side)]: props.width }}
-    className={`${styles.line} ${styles.[`line${capitalize(props.side)}`]} ${
+    className={`${styles.line} ${styles[`line${capitalize(props.side)}`]} ${
       props.sides !== 'all' ? styles.lineSingleSide : ''
     }`}
   ></div>
@@ -71,4 +73,3 @@ interface LinesProps {
 }
 const Lines: React.FC<LinesProps> = (props) =>
   props.sides === 'all' ? <AllLines {...props} /> : <SingleLine {...props} />
-
