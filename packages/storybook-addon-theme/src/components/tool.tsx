@@ -20,7 +20,7 @@ export const ThemeTool: React.FC = () => {
 
   return (
     <IconButton active={isDark} title="Toggle theme" onClick={toggleTheme}>
-      <Icons icon="grid" />
+      <Icons icon="mirror" />
     </IconButton>
   )
 }
