@@ -18,7 +18,7 @@ export interface CircularProgressStatics {
 }
 
 export const sizes: {
-  small: 'small',
+  small: 'small'
   medium: 'medium'
 }
 
