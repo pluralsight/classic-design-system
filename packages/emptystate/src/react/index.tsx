@@ -165,7 +165,7 @@ interface IllustrationStatics {
   names: typeof illustrationNames
 }
 
-const IllustrationNotFound: React.FC = () => null
+const IllustrationNotFound = () => null
 
 const Illustration: React.FC<IllustrationProps> &
   IllustrationStatics = props => {
@@ -174,11 +174,11 @@ const Illustration: React.FC<IllustrationProps> &
   return (
     <Context.Consumer>
       {ctx => {
-        let Comp = illustrations[name] || IllustrationNotFound
-        const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
+        const Comp = illustrations[name] || IllustrationNotFound
+        // const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
 
-        if (isSmall) Comp = Comp.small
-        if (custom) Comp = () => custom
+        // if (isSmall) Comp = Comp.small
+        // if (custom) Comp = () => custom
 
         return (
           <div {...styles.illustration(props, ctx)}>
