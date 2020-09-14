@@ -1,0 +1,18 @@
+.guideline {
+  padding: var(--psLayoutSpacingXSmall) 0 var(--psLayoutSpacingLarge) 0;
+}
+.badgeWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box {
+  background: var(--psColorsBackgroundLight2);
+  border-radius: 12px;
+  height: 100%;
+  padding: var(--psLayoutSpacingXLarge);
+  position: relative;
+}
+.box--vertical {
+  margin-bottom: var(--psLayoutSpacingMedium);
+}

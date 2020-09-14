@@ -3,6 +3,8 @@ name: Hello world
 route: /
 ---
 
+import { Guideline } from '../components/guideline'
+
 # Hello world
 
 Hello, I'm a mdx file!
@@ -14,3 +16,12 @@ This is `inlineCode`.
 ```
 Code block vanilla for now.
 ```
+
+<Guideline
+  do={
+    <div>do this</div>
+  }
+  dont={
+    <div>don't do this</div>
+  }
+/>
