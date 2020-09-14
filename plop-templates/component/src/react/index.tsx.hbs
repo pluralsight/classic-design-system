@@ -1,0 +1,40 @@
+import { StyleAttribute, compose, css } from 'glamor'
+import React, { HTMLAttributes } from 'react'
+
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+
+import stylesheet from '../css'
+
+interface {{pascalCase name}}Props extends extends HTMLAttributes<HTMLDivElement> {}
+
+type StyleFn = (themeName:string, props: {{pascalCase name}}Props) => StyleAttribute
+
+const styles: { [key: string]: StyleFn }  = {
+  {{camelCase name}}: (themeName, props) =>
+    compose(
+      css(stylesheet['.psds-{{kebabCase name}}']),
+      css(stylesheet[`.psds-{{kebabCase name}}--${themeName}`])
+    )
+}
+
+
+const {{pascalCase name}} = React.forwardRef((props, forwardedRef) => {
+  const themeName = useTheme()
+
+  const ref = React.useRef()
+  React.useImperativeHandle(forwardedRef, () => ref.current)
+
+  return (
+    <div
+      ref={ref}
+      {...styles.{{camelCase name}}(themeName, props)}
+      {...filterReactProps(props)}
+    />
+  )
+})
+
+{{pascalCase name}}.defaultProps = {}
+{{pascalCase name}}.displayName = '{{pascalCase name}}'
+
+export default {{pascalCase name}}

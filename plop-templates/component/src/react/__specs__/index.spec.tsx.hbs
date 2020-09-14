@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import {{pascalCase name}} from '../index.js'
+import {{pascalCase name}} from '..'
 
 describe('{{pascalCase name}}', () => {
   it('renders', () => {
@@ -15,9 +15,7 @@ describe('{{pascalCase name}}', () => {
   it('forwards refs', () => {
     const ref = React.createRef()
 
-    const { getByTestId } = render(
-      <{{pascalCase name}} ref={ref} />
-    )
+    render(<{{pascalCase name}} ref={ref} />)
 
     expect(ref.current).not.toBeNull()
   })
