@@ -1,5 +1,6 @@
 import Badge from '@pluralsight/ps-design-system-badge'
 import Table from '@pluralsight/ps-design-system-table'
+import * as Text from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 import * as styles from './prop.module.css'
@@ -28,15 +29,13 @@ export const Prop: React.FC<PropProps> = (props) => {
         </Table.Cell>
 
         <Table.Cell>
-          <div className={styles.maybeCode}>{props.type}</div>
+          <Text.Code>{props.type}</Text.Code>
         </Table.Cell>
 
-        <Table.Cell>
-          <div className={styles.maybeCode}>{props.desc}</div>
-        </Table.Cell>
+        <Table.Cell>{props.desc}</Table.Cell>
 
         <Table.Cell>
-          <div className={styles.maybeCode}>{props.default}</div>
+          <Text.Code>{props.default}</Text.Code>
         </Table.Cell>
       </Table.Row>
     </>
