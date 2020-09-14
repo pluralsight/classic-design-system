@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@6.0.10...@pluralsight/ps-design-system-storybook-addon-theme@7.0.0) (2020-09-14)
+
+
+### Code Refactoring
+
+* **storybook-addon-theme:** use new api ([bd899cc](https://github.com/pluralsight/design-system/commit/bd899cce8225e2dea475502a72d87a5b37e49944))
+
+
+### Features
+
+* **storybook-addon-theme:** use mirror icon for tool ([d075c44](https://github.com/pluralsight/design-system/commit/d075c441cb635cad19b8f12f4b77993b011e408a))
+
+
+### BREAKING CHANGES
+
+* **storybook-addon-theme:** storybook 6 required
+
+
+
+
+
 ## [6.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@6.0.9...@pluralsight/ps-design-system-storybook-addon-theme@6.0.10) (2020-08-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
