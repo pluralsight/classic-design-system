@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+
+.codeBlock {
+  border-radius: 0.2em;
+  margin: 0 0 var(--psLayoutSpacingLarge) 0;
+}
+
+.dark {
+  border: 1px solid var(--psColorsBorderLowOnDark);
+}
+
+.light {
+  border: 1px solid var(--psColorsBorderLowOnLight);
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  padding: 0 var(--psLayoutSpacingXSmall);
+}
+
+.light .actions {
+  background-color: var(--psColorsBackgroundLight1);
+}
+
+.dark .actions {
+  background-color: var(--psColorsBackgroundDark1);
+}
+
+.actionsAlignRight {
+  margin-left: auto;
+}
+
+.editor {
+  font-family: 'source code pro', monospace;
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightTight);
+  overflow: auto;
+  padding: var(--psLayoutSpacingMedium);
+}

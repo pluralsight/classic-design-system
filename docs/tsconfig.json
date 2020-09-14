@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "react",
     "outDir": "dist",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "rootDir": "src",
     "target": "es5"
   },

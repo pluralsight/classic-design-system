@@ -1,7 +1,8 @@
 module.exports = {
-  stories: ['../src/**/*.story.@(js|tsx)'],
+  addons: ['@pluralsight/ps-design-system-storybook-preset'],
+  stories: ['../src/**/*.story.@(js|ts|tsx)'],
   typescript: {
     check: true,
-    reactDocgen: 'react-docgen-typescript'
-  }
+    reactDocgen: 'react-docgen-typescript',
+  },
 }

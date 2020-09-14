@@ -3,7 +3,7 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-const createNodeMock = el => document.createElement('div')
+const createNodeMock = () => document.createElement('div')
 
 initStoryshots({
   configPath: path.resolve(__dirname, '../../.storybook'),

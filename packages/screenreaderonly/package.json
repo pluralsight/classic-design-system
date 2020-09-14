@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-screenreaderonly",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "ScreenReaderOnly UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.10",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.10"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.0"
   }
 }

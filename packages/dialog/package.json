@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "8.2.1",
+  "version": "8.2.2",
   "description": "Design System component for dialog ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,8 +22,8 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
-    "@pluralsight/ps-design-system-focusmanager": "^5.0.19",
-    "@pluralsight/ps-design-system-util": "^5.0.0",
+    "@pluralsight/ps-design-system-focusmanager": "^5.0.20",
+    "@pluralsight/ps-design-system-util": "^5.0.1",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -34,10 +34,9 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-button": "^18.1.2",
-    "@pluralsight/ps-design-system-storybook-addon-center": "^2.1.10",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.10",
-    "@pluralsight/ps-design-system-text": "^16.0.19",
-    "@pluralsight/ps-design-system-theme": "^4.0.11"
+    "@pluralsight/ps-design-system-button": "^18.1.3",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.0",
+    "@pluralsight/ps-design-system-text": "^16.0.20",
+    "@pluralsight/ps-design-system-theme": "^4.0.12"
   }
 }
