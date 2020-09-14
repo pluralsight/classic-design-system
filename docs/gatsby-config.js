@@ -20,7 +20,22 @@ module.exports = {
       options: {
         defaultLayouts: {
           default: require.resolve('./src/components/layouts/default.tsx')
-        }
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-inline-codesandbox',
+            options: {
+              mode: 'iframe',
+              customTemplates: {
+                default: {
+                  extends: `file:${path.resolve('./sandboxes/default/')}`,
+                  entry: 'src/example.tsx',
+                  query: { fontsize: 12, hidenavigation: 1, theme: 'dark' }
+                }
+              }
+            }
+          }
+        ]
       }
     },
     {
