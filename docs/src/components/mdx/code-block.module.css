@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
 
+.title {
+  display: flex;
+  align-items: center;
+
+  & > h2:first-child {
+    margin-right: var(--psLayoutSpacingLarge);
+  }
+}
+
 .codeBlock {
   border-radius: 0.2em;
   margin: 0 0 var(--psLayoutSpacingLarge) 0;
 }
-
 .dark {
   border: 1px solid var(--psColorsBorderLowOnDark);
 }
-
 .light {
   border: 1px solid var(--psColorsBorderLowOnLight);
 }
@@ -19,15 +26,12 @@
   height: 40px;
   padding: 0 var(--psLayoutSpacingXSmall);
 }
-
 .light .actions {
   background-color: var(--psColorsBackgroundLight1);
 }
-
 .dark .actions {
   background-color: var(--psColorsBackgroundDark1);
 }
-
 .actionsAlignRight {
   margin-left: auto;
 }
