@@ -238,16 +238,10 @@ export function formatPreview(code: string): PreviewData {
     }[packageName]
   }
 
-  const formatted = moveImportsToScope(
+  return moveImportsToScope(
     replaceExport({
       code,
       scope: {},
     })
   )
-  console.log({ formatted })
-  return formatted
-  /* return { */
-  /*   code, */
-  /*   scope: { React }, */
-  /* } */
 }
