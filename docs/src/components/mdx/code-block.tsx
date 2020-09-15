@@ -115,14 +115,11 @@ const Example: React.FC<ExampleProps> = (props) => {
     setCopied(true)
   }
 
-  const codePreview = props.code.replace(
-    /export default (.*)/,
-    'render(<$1 />)'
-  )
+  const preview = formatPreview(props.code)
 
   return (
     <div className={className}>
-      <LiveProvider code={codePreview} noInline>
+      <LiveProvider code={preview.code} scope={preview.scope} noInline>
         <LiveError />
         <LivePreview />
         <Actions>
@@ -198,4 +195,59 @@ const Editor: React.FC<EditorProps> = (props) => {
       }}
     </Highlight>
   )
+}
+
+interface PreviewData {
+  code: string
+  scope: Record<string, unknown>
+}
+export function formatPreview(code: string): PreviewData {
+  function replaceExport(data: PreviewData): PreviewData {
+    return {
+      ...data,
+      code: data.code.replace(/export default (.*)/, 'render(<$1 />)'),
+    }
+  }
+
+  function moveImportsToScope(data: PreviewData): PreviewData {
+    const findAllImports = /import .+ from '.+'/g
+    const newData = { ...data }
+    let singleImportMatch = null
+    while ((singleImportMatch = findAllImports.exec(data.code)) !== null) {
+      const singleImportString = singleImportMatch[0]
+      const findPackageName = /.*'(.+)'.*/
+      const packageName = singleImportString.replace(findPackageName, '$1')
+      const codeWithoutImport =
+        data.code.slice(0, singleImportMatch.index) +
+        data.code.slice(singleImportMatch.index + singleImportMatch[0].length)
+      newData.code = codeWithoutImport
+      newData.scope = {
+        ...newData.scope,
+        ...mapPackageNameToScopes(packageName),
+      }
+    }
+    return newData
+  }
+
+  function mapPackageNameToScopes(
+    packageName: string
+  ): Record<string, unknown> | undefined {
+    return {
+      // NOTE: as needed, add other common imports for packages used in examples
+      react: { React },
+    }[packageName]
+  }
+
+  const formatted = moveImportsToScope(
+    replaceExport({
+      code,
+      scope: {},
+    })
+  )
+  console.log({ formatted })
+  return formatted
+  /* return { */
+  /*   code, */
+  /*   scope: { React }, */
+  /* } */
 }

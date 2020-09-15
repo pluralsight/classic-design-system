@@ -1,6 +1,7 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "esModuleInterop": true,
     "jsx": "react",
     "outDir": "dist",
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
