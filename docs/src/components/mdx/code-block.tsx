@@ -8,6 +8,7 @@ import Prism from 'prismjs/components/prism-core'
 import Highlight, { PrismTheme, defaultProps } from 'prism-react-renderer'
 import React, { HTMLAttributes, useEffect, useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { LiveError, LiveProvider, LivePreview } from 'react-live'
 
 import { H2 } from '../mdx'
 import styles from './code-block.module.css'
@@ -114,36 +115,45 @@ const Example: React.FC<ExampleProps> = (props) => {
     setCopied(true)
   }
 
+  const codePreview = props.code.replace(
+    /export default (.*)/,
+    'render(<$1 />)'
+  )
+
   return (
     <div className={className}>
-      <Actions>
-        <div className={styles.actionsAlignRight}>
-          {copied && (
-            <Button
-              appearance={Button.appearances.flat}
-              disabled
-              size={Button.sizes.xSmall}
-            >
-              Copied!
-            </Button>
-          )}
-
-          {!copied && (
-            <CopyToClipboard text={props.code} onCopy={handleCopy}>
+      <LiveProvider code={codePreview} noInline>
+        <LiveError />
+        <LivePreview />
+        <Actions>
+          <div className={styles.actionsAlignRight}>
+            {copied && (
               <Button
                 appearance={Button.appearances.flat}
+                disabled
                 size={Button.sizes.xSmall}
               >
-                Copy
+                Copied!
               </Button>
-            </CopyToClipboard>
-          )}
-        </div>
-      </Actions>
+            )}
 
-      <Editor language={props.language} theme={codeTheme}>
-        {props.code}
-      </Editor>
+            {!copied && (
+              <CopyToClipboard text={props.code} onCopy={handleCopy}>
+                <Button
+                  appearance={Button.appearances.flat}
+                  size={Button.sizes.xSmall}
+                >
+                  Copy
+                </Button>
+              </CopyToClipboard>
+            )}
+          </div>
+        </Actions>
+
+        <Editor language={props.language} theme={codeTheme}>
+          {props.code}
+        </Editor>
+      </LiveProvider>
     </div>
   )
 }
