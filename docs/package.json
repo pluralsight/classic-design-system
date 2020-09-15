@@ -14,9 +14,6 @@
     "build:server": "tsc --project ./tsconfig.json",
     "dev:gatsby": "gatsby develop",
     "dev:server": " nodemon | bunyan -o short",
-    "lint": "tsc --noEmit && eslint . --ext .js,.jsx,.ts,.tsx --quiet",
-    "lint:ci": "tsc --noEmit && eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "start": "node ./dist/server/main.js",
     "start:dev": "yarn dev:gatsby"
   },
@@ -38,6 +35,7 @@
     "http-errors": "^1.8.0",
     "newrelic": "^6.13.0",
     "react": "^16.8.1",
+    "react-codesandboxer": "^3.1.5",
     "react-dom": "^16.8.1",
     "react-helmet": "^6.1.0",
     "response-time": "^2.3.2",
