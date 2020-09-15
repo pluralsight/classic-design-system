@@ -22,7 +22,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
       >
         <span
           className={
@@ -62,7 +62,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
         icon={<HomeIcon />}
       >
         <span
@@ -122,7 +122,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
         icon={<HomeIcon />}
       >
         <span
@@ -173,7 +173,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <a
-        data-css-11n5d38=""
+        data-css-16atklq=""
         href="https://jaketrent.com"
         icon={<HomeIcon />}
       >
@@ -234,7 +234,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
         icon={<HomeIcon />}
       >
         <span
@@ -315,7 +315,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-15wi3dl=""
+        data-css-8y1zv3=""
         icon={<HomeIcon />}
       >
         <span
@@ -375,7 +375,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-15wi3dl=""
+        data-css-8y1zv3=""
         icon={<HomeIcon />}
       >
         <span
@@ -435,7 +435,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-15wi3dl=""
+        data-css-8y1zv3=""
         icon={<HomeIcon />}
       >
         <span
@@ -495,7 +495,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
         icon={<HomeIcon />}
       >
         <span
@@ -569,7 +569,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
         icon={<HomeIcon />}
       >
         <span
@@ -633,7 +633,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <a
-        data-css-11n5d38=""
+        data-css-16atklq=""
         href="https://jaketrent.com"
         icon={<HomeIcon />}
       >
@@ -698,7 +698,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
         icon={<HomeIcon />}
       >
         <span
@@ -783,7 +783,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-15wi3dl=""
+        data-css-8y1zv3=""
         icon={<HomeIcon />}
       >
         <span
@@ -847,7 +847,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-15wi3dl=""
+        data-css-8y1zv3=""
         icon={<HomeIcon />}
       >
         <span
@@ -911,7 +911,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-15wi3dl=""
+        data-css-8y1zv3=""
         icon={<HomeIcon />}
       >
         <span
@@ -975,7 +975,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-11n5d38=""
+        data-css-16atklq=""
         icon={<HomeIcon />}
       >
         <span
