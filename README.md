@@ -30,3 +30,9 @@ yarn
 yarn build
 yarn start
 ```
+
+## Publishing packages
+
+```
+yarn publish:all
+```
