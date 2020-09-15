@@ -41,8 +41,6 @@ danger:
   stage: lint
   script:
     - danger ci --failOnErrors
-  only:
-    - merge_requests
 
 lint:
   image: node:13.8-alpine
