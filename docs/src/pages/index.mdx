@@ -15,6 +15,10 @@ Hello, I'm a mdx file!
 This is `inlineCode`.
 
 ```typescript switcher
+---
+title: First Vanilla
+description: Some good descriptionaires here
+---
 import React from 'react'
 
 // comment here
@@ -31,13 +35,10 @@ export default Example
 
 ---
 
-/*
- * For now, the description can live in a code block.
- * 
- * If we don't put this in markdown, we will be authoring in .tsx instead of .mdx.
- * 
- * Later, we can update code-block.tsx to extract these, parse markdown and display as html
- */
+---
+title: Title of Num 2, Yo
+description: You want this, you really do.  Take care of it. Make sure that it's there.
+---
 import React from 'react'
 
 // comment here
@@ -53,10 +54,4 @@ const Example: React.FC = () => {
 export default Example
 ```
 
-
-```typescript
-const asdf = 'I am alone'
-
-export asdf
-````
 

@@ -1,5 +1,7 @@
+import frontmatter from '@github-docs/frontmatter'
 import Button from '@pluralsight/ps-design-system-button'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import * as Text from '@pluralsight/ps-design-system-text'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import Prism from 'prismjs/components/prism-core'
@@ -15,20 +17,22 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   metastring?: null
   live?: boolean
 }
-
 export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
   const isSwitcher = /switcher/.test(props.metastring)
   const language = props.className.replace(/language-/, '')
 
-  const codes = props.children.split('\n\n---\n\n')
-  const options = isSwitcher
-    ? Array.from(Array(codes.length)).map((_, i) => ({
-        value: i,
-        label: 'Example #' + i,
-      }))
-    : [{ value: 0, label: 'Single example' }]
+  const examples = props.children.split('\n\n---\n\n').map((example, i) => {
+    const { content, data } = frontmatter(example)
+    return {
+      i,
+      code: content,
+      meta: data || {},
+    }
+  })
 
-  const [selectedOption, setSelectedOption] = React.useState(options[0].value)
+  const [selectedOption, setSelectedOption] = React.useState(
+    'value' + examples[1].i
+  )
 
   if (isSwitcher) {
     return (
@@ -37,35 +41,41 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
           <H2>Examples</H2>
           <Dropdown
             onChange={(evt, value, label) => setSelectedOption(value)}
-            menu={options.map((opt) => (
-              <Dropdown.Item key={opt.value} value={opt.value}>
-                {opt.label}
+            menu={examples.map((example) => (
+              <Dropdown.Item key={example.i} value={'value' + example.i}>
+                {example.meta.title || 'Example #' + example.i}
               </Dropdown.Item>
             ))}
             value={selectedOption}
           />
         </div>
         <div>
-          {codes.map((code, i) =>
-            i === selectedOption ? (
-              <Example
-                key={i}
-                language={language}
-                code={code}
-                className={props.className}
-              />
+          {examples.map((example, i) => {
+            return 'value' + i === selectedOption ? (
+              <React.Fragment key={i}>
+                <Text.P>{example.meta.description}</Text.P>
+                <Example
+                  key={i}
+                  language={language}
+                  code={example.code}
+                  className={props.className}
+                />
+              </React.Fragment>
             ) : null
-          )}
+          })}
         </div>
       </div>
     )
   } else {
     return (
-      <Example
-        language={language}
-        className={props.className}
-        code={codes[0]}
-      />
+      <>
+        <Text.P>{examples[0].meta.description}</Text.P>
+        <Example
+          language={language}
+          className={props.className}
+          code={examples[0].code}
+        />
+      </>
     )
   }
 }
