@@ -15,23 +15,17 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { useResizeObserver } from '@pluralsight/ps-design-system-util'
+import {
+  RefForwardingComponent,
+  ValueOf,
+  useResizeObserver
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet, { sizeClasses, themeClasses } from '../css'
 import { illustrationNames, sizes } from '../vars'
 
 import Context, { ContextValue } from './context'
 import * as illustrations from './illustrations'
-
-// TODO: move to core pkg
-export type RefForwardingComponent<
-  P = Record<string, unknown>,
-  E = Element,
-  S = Record<string, unknown>
-> = ForwardRefExoticComponent<P & RefAttributes<E>> & S
-
-// TODO: move to core pkg
-type ValueOf<T> = T[keyof T]
 
 export interface EmptyStateProps extends HTMLAttributes<HTMLDivElement> {
   size?: ValueOf<typeof sizes>
