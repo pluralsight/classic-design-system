@@ -64,19 +64,31 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': WARNING,
     '@typescript-eslint/unbound-method': WARNING,
     'prettier/prettier': ERROR,
-    'react/prop-types': IGNORE,
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
     'react/display-name': WARNING,
     'react/jsx-no-bind': IGNORE,
     'react/jsx-pascal-case': IGNORE,
-    'react/no-unescaped-entities': WARNING
+    'react/no-unescaped-entities': WARNING,
+    'react/prop-types': IGNORE
   },
   overrides: [
     {
       files: ['packages/site/pages/**/*.js', '**/__stories__/*.js'],
       rules: {
-        'react/jsx-key': [IGNORE]
+        'react/jsx-key': IGNORE
+      }
+    },
+    {
+      files: ['*.tsx?'],
+      rules: {
+        'react/display-name': IGNORE
+      }
+    },
+    {
+      files: ['*.json'],
+      rules: {
+        'no-unused-expressions': IGNORE
       }
     }
   ]

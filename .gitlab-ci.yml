@@ -46,12 +46,14 @@ lint:
   image: node:13.8-alpine
   stage: lint
   script:
+    - yarn config set ignore-engines true
     - yarn lint:ci
 
 test:
   image: node:13.8-alpine
   stage: test
   script:
+    - yarn config set ignore-engines true
     - yarn build
     - yarn test
 
