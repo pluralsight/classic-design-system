@@ -1,0 +1,6 @@
+.required {
+  margin-left: var(--psLayoutSpacingXSmall);
+}
+.nameCode {
+  color: var(--psColorsPink6);
+}

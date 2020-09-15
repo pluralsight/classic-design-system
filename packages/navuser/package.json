@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navuser",
-  "version": "1.1.7",
+  "version": "1.1.10",
   "description": "Navuser UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,11 +21,11 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-avatar": "^6.0.11",
+    "@pluralsight/ps-design-system-avatar": "^6.0.13",
     "@pluralsight/ps-design-system-core": "^6.4.0",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
-    "@pluralsight/ps-design-system-halo": "^7.0.10",
-    "@pluralsight/ps-design-system-util": "^4.1.0",
+    "@pluralsight/ps-design-system-halo": "^7.0.11",
+    "@pluralsight/ps-design-system-util": "^5.0.1",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -36,7 +36,6 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
-    "@pluralsight/ps-design-system-storybook-addon-center": "*",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.10"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.0"
   }
 }

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@6.0.12...@pluralsight/ps-design-system-avatar@6.0.13) (2020-09-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-avatar
+
+
+
+
+
+## [6.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@6.0.11...@pluralsight/ps-design-system-avatar@6.0.12) (2020-09-10)
+
+
+### Bug Fixes
+
+* **avatar:** fix size prop passing, update snapshots ([9bca37a](https://github.com/pluralsight/design-system/commit/9bca37aa97ec83940dd4706cd849232ec2ff3471))
+
+
+
+
+
 ## [6.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@6.0.10...@pluralsight/ps-design-system-avatar@6.0.11) (2020-08-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

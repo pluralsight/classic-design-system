@@ -29,7 +29,9 @@ export const Frame: React.FC<Props> = (props) => {
   const closeMenu = () => setMenuOpen(false)
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
-  const [theme, setTheme] = useState<keyof Theme.names>(Theme.names.light)
+  const [theme, setTheme] = useState<ValueOf<typeof Theme.names>>(
+    Theme.names.light
+  )
   const toggleTheme = () => {
     setTheme(theme === Theme.names.dark ? Theme.names.light : Theme.names.dark)
   }

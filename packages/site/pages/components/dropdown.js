@@ -1,11 +1,21 @@
 /* eslint-disable react/display-name */
-import React from 'react'
+import React, { forwardRef, useState } from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Dropdown, {
+  useDropdown,
+  DropdownContext
+} from '@pluralsight/ps-design-system-dropdown'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
+import {
+  CalendarIcon,
+  ChannelIcon,
+  AnalyticsIcon,
+  AuthorKitIcon,
+  LabsIcon
+} from '@pluralsight/ps-design-system-icon'
 
 import {
   Chrome,
@@ -35,15 +45,11 @@ function InAppExample() {
             label="Level"
             placeholder="Select"
             onChange={(evt, value, label) => setValue(value)}
-            menu={
-              <>
-                {options.map(opt => (
-                  <Dropdown.Item key={opt.value} value={opt.value}>
-                    {opt.label}
-                  </Dropdown.Item>
-                ))}
-              </>
-            }
+            menu={options.map(opt => (
+              <Dropdown.Item key={opt.value} value={opt.value}>
+                {opt.label}
+              </Dropdown.Item>
+            ))}
             value={value}
           />
           <div className="button">
@@ -70,14 +76,11 @@ function InAppExample() {
         label="Level"
         placeholder="Select"
         onChange={(evt, value, label) => setValue(value)}
-        menu={
-          <>
-            {options.map(opt => (
+        menu={options.map(opt => (
               <Dropdown.Item key={opt.value} value={opt.value}>
                 {opt.label}
               </Dropdown.Item>
-            ))}
-          </>
+            ))
         }
         value={value}
       />
@@ -117,9 +120,232 @@ function InAppExample() {
   )
 }
 
+const DropdownWithIcon = forwardRef(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
+
+const FixedIconExample = () => {
+  return (
+    <div>
+      <div className="example">
+        <DropdownWithIcon
+          icon={<CalendarIcon style={{ marginRight: 8 }} />}
+          menu={
+            <>
+              <Dropdown.Item>Trailing 14 Days</Dropdown.Item>
+              <Dropdown.Item>Last Month</Dropdown.Item>
+              <Dropdown.Item>Trailing 30 Days</Dropdown.Item>
+              <Dropdown.Item>Last Quater</Dropdown.Item>
+              <Dropdown.Item>Trailing 90 Days</Dropdown.Item>
+              <Dropdown.Item>Custom</Dropdown.Item>
+            </>
+          }
+        />
+      </div>
+      <Code
+        lang="javascript"
+        collapsible
+      >{`const DropdownWithIcon = forwardRef(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
+const FixedIconExample = () => (
+  <DropdownWithIcon
+    icon={<CalendarIcon style={{ marginRight: 8 }} />}
+    menu={
+      <>
+        <Dropdown.Item>Trailing 14 Days</Dropdown.Item>
+        <Dropdown.Item>Last Month</Dropdown.Item>
+        <Dropdown.Item>Trailing 30 Days</Dropdown.Item>
+        <Dropdown.Item>Last Quater</Dropdown.Item>
+        <Dropdown.Item>Trailing 90 Days</Dropdown.Item>
+        <Dropdown.Item>Custom</Dropdown.Item>
+      </>
+    }
+  />
+)
+`}</Code>
+      <style jsx>
+        {`
+          .example {
+            display: flex;
+            margin-bottom: ${core.layout.spacingMedium};
+          }
+        `}
+      </style>
+    </div>
+  )
+}
+
+const DynamicIconExample = () => {
+  const [selected, setSelected] = useState()
+  const values = {
+    channel: {
+      value: 'channel',
+      icon: <ChannelIcon style={{ marginRight: 8 }} />,
+      label: 'Channel'
+    },
+    analytics: {
+      value: 'analytics',
+      icon: <AnalyticsIcon style={{ marginRight: 8 }} />,
+      label: 'Analytics'
+    },
+    authorKit: {
+      value: 'authorKit',
+      icon: <AuthorKitIcon style={{ marginRight: 8 }} />,
+      label: 'Author Kit'
+    },
+    labs: {
+      value: 'labs',
+      icon: <LabsIcon style={{ marginRight: 8 }} />,
+      label: 'Labs'
+    }
+  }
+  const handleChange = (e, value) => {
+    setSelected(value)
+  }
+  const icon = values[selected] ? (
+    values[selected].icon
+  ) : (
+    <div style={{ width: 24, height: 24, marginRight: 8 }} />
+  )
+  return (
+    <div>
+      <div className="example">
+        <DropdownWithIcon
+          icon={icon}
+          onChange={handleChange}
+          menu={Object.values(values).map(({ value, icon, label }) => (
+            <Dropdown.Item value={value} key={value} icon={icon}>
+              {label}
+            </Dropdown.Item>
+          ))}
+        />
+      </div>
+      <Code
+        lang="javascript"
+        collapsible
+      >{`const DropdownWithIcon = forwardRef(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
+const DynamicIconExample = () => {
+  const [selected, setSelected] = useState()
+  const values = {
+    channel: {
+      value: 'channel',
+      icon: <ChannelIcon style={{ marginRight: 8 }} />,
+      label: 'Channel'
+    },
+    analytics: {
+      value: 'analytics',
+      icon: <AnalyticsIcon style={{ marginRight: 8 }} />,
+      label: 'Analytics'
+    },
+    authorKit: {
+      value: 'authorKit',
+      icon: <AuthorKitIcon style={{ marginRight: 8 }} />,
+      label: 'Author Kit'
+    },
+    labs: {
+      value: 'labs',
+      icon: <LabsIcon style={{ marginRight: 8 }} />,
+      label: 'Labs'
+    }
+  }
+  const handleChange = (e, value) => {
+    setSelected(value)
+  }
+  const icon = values[selected] ? (
+    values[selected].icon
+  ) : (
+    <div style={{ width: 24, height: 24, marginRight: 8 }} />
+  )
+  return (
+    <DropdownWithIcon
+      icon={icon}
+      onChange={handleChange}
+      menu={Object.values(values).map(({ value, icon, label }) => (
+        <Dropdown.Item value={value} key={value} icon={icon}>
+          {label}
+        </Dropdown.Item>
+      ))}
+    />
+  )
+}
+`}</Code>
+      <style jsx>
+        {`
+          .example {
+            display: flex;
+            margin-bottom: ${core.layout.spacingMedium};
+          }
+        `}
+      </style>
+    </div>
+  )
+}
 export default _ => (
   <Chrome>
-    <Content title="Dropdown">
+    <Content title="Dropdown" class="content">
       <PageHeading packageName="dropdown">Dropdown</PageHeading>
 
       <P>Install the component dependency:</P>
@@ -434,6 +660,24 @@ export default _ => (
 />`
         ]}
       />
+      <SectionHeading>Extending Functionality</SectionHeading>
+      <P>
+        {' '}
+        The following examples illustrate how dropdown can be extended using its
+        atoms to create new behavior
+      </P>
+      <SectionHeading>Fixed Icon Pattern</SectionHeading>
+      <FixedIconExample />
+      <SectionHeading>Dynamic Icon Pattern</SectionHeading>
+      <DynamicIconExample />
+      <style jsx>
+        {`
+          .padding {
+            padding-bottom: 150px;
+          }
+        `}
+      </style>
+      <div className="padding" />
     </Content>
   </Chrome>
 )

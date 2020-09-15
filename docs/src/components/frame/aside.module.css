@@ -1,5 +1,3 @@
-@import '@pluralsight/ps-design-system-core';
-
 @custom-media --breakpoint-small (width >= 768px);
 
 .aside {
@@ -14,6 +12,7 @@
   transition: all var(--psMotionSpeedFast) ease-in-out;
   transition-property: transform, width;
   transform: translate(0, 0);
+  padding: var(--psLayoutSpacingLarge) 0;
 
   &:after {
     box-shadow: 50px 0 100px rgba(0, 0, 0, 0.8);

@@ -3,6 +3,9 @@ name: Hello world
 route: /
 ---
 
+import { Guideline } from '../components/guideline'
+import * as Types from '../components/types'
+
 # Hello world
 
 Hello, I'm a mdx file!
@@ -13,4 +16,58 @@ This is `inlineCode`.
 
 ```
 Code block vanilla for now.
+```
+
+<Guideline
+  do={
+    <div>do this</div>
+  }
+  dont={
+    <div>don't do this</div>
+  }
+/>
+
+## Types
+
+<Types.Table>
+  <Types.Prop name="Jake" required type="string" default="awesome" desc="That one guy">
+  </Types.Prop>
+</Types.Table>
+
+### Subheading
+
+<Types.Table>
+  <Types.Prop name="Jake" require type="string" default="awesome" desc="That one guy">
+  </Types.Prop>
+</Types.Table>
+
+
+```typescript
+import React from 'react'
+
+// comment here
+
+const Example: React.FC = () => {
+  return (
+    <div>
+      <p>hello world</p>
+    </div>
+  )
+}
+
+export default Example
+```
+
+```typescript codesandbox=default
+import React from 'react'
+
+const Example: React.FC = () => {
+  return (
+    <div>
+      <p>hello world from typescript</p>
+    </div>
+  )
+}
+
+export default Example
 ```

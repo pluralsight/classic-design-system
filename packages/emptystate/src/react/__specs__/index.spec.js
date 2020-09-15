@@ -8,7 +8,7 @@ import * as vars from '../../vars/index.js'
 expect.extend(toHaveNoViolations)
 
 async function renderWithAxeResults(...args) {
-  const { container, ...rest } = await render(...args)
+  const { container, ...rest } = render(...args)
   const axeResults = await axe(container.innerHTML)
 
   return { axeResults, container, ...rest }

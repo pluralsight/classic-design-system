@@ -36,14 +36,14 @@ export default {
     color: colorsTextIcon.highOnLight,
     textAlign: 'left',
     cursor: 'pointer',
-
+    padding: `0 ${layout.spacingSmall}`,
     '&:focus': {
       outline: 'none'
     }
   },
   '.psds-dropdown__field.psds-dropdown--small': {
     height: '32px',
-    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingXSmall}`
+    padding: `0 ${layout.spacingXSmall}`
   },
   [`.psds-dropdown__field.psds-theme--${themeNames.light}`]: {
     border: `1px solid ${colorsBorder.highOnLight}`,
@@ -59,6 +59,15 @@ export default {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBackgroundUtility[30],
     border: `none`
+  },
+  '.psds-dropdown__field-inner': {
+    position: 'relative',
+    height: '100%',
+    display: 'inline-flex',
+    alignItems: 'center',
+    textAlign: 'left',
+    minWidth: 0,
+    width: '100%'
   },
 
   // __field-container
@@ -129,7 +138,7 @@ export default {
 
   // __placeholder
   '.psds-dropdown__placeholder': {
-    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`,
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 0`,
     position: 'absolute',
     top: layout.spacingXSmall,
     left: 0,
@@ -145,7 +154,6 @@ export default {
     color: colorsTextIcon.lowOnDark
   },
   '.psds-dropdown__placeholder.psds-dropdown--small': {
-    left: layout.spacingXSmall,
     top: layout.spacingXXSmall
   },
 
@@ -154,7 +162,7 @@ export default {
     visibility: 'hidden',
     display: 'inline-block',
     whiteSpace: 'nowrap',
-    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 0`
   },
 
   // __menu

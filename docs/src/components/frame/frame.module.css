@@ -1,11 +1,8 @@
-@import '@pluralsight/ps-design-system-normalize';
-@import '@pluralsight/ps-design-system-core';
-
 @custom-media --breakpoint-small (width >= 768px);
 
 /* TODO: create global vars file */
 :root {
-  --asideWidth: 200px;
+  --asideWidth: 260px;
   --topNavHeight: 56px;
 }
 
@@ -18,7 +15,7 @@
   & .container {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - var(--topNavHeight));
+    min-height: calc(100vh - var(--topNavHeight));
   }
 }
 
@@ -31,6 +28,7 @@
 
 .main {
   flex: 1;
+  padding: var(--psLayoutSpacingLarge);
 
   @media (--breakpoint-small) {
     margin-left: var(--asideWidth);

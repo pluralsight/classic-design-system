@@ -1,0 +1,31 @@
+.guidelines {
+  margin-top: var(--psLayoutSpacingLarge);
+  margin-bottom: var(--psLayoutSpacingLarge);
+}
+.box {
+  border-radius: 12px;
+  height: 100%;
+  padding: var(--psLayoutSpacingXLarge);
+  position: relative;
+
+  &.dark {
+    background: var(--psColorsBackgroundDark3);
+    color: var(--psColorsTextIconHighOnDark);
+  }
+
+  &.light {
+    background: var(--psColorsBackgroundLight2);
+  }
+
+  &.vertical {
+    margin-bottom: var(--psLayoutSpacingMedium);
+  }
+}
+.guideline {
+  padding: var(--psLayoutSpacingXSmall) 0 var(--psLayoutSpacingLarge) 0;
+}
+.badgeWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -9,6 +9,18 @@
     },
     {
       "path": "/404"
+    },
+    {
+      "path": "/core/color"
+    },
+    {
+      "path": "/core/motion"
+    },
+    {
+      "path": "/core/spacing"
+    },
+    {
+      "path": "/core/typography"
     }
   ]
 }

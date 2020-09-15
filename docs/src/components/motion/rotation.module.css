@@ -1,0 +1,35 @@
+.rotation {
+  display: flex;
+  margin-bottom: var(--psLayoutSpacingLarge);
+  padding: var(--psLayoutSpacingXLarge);
+  background: var(--psColorsBackgroundLight2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+@keyframes rotateme {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.box {
+  background: var(--psColorsBackgroundLight3);
+  margin-right: var(--psLayoutSpacingXLarge);
+}
+.boxSmall {
+  border: var(--psLayoutSpacingXXSmall) solid var(--psColorsPink6);
+  height: 32px;
+  width: 32px;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: rotateme;
+}
+.boxLarge {
+  border: var(--psLayoutSpacingSmall) solid var(--psColorsPink6);
+  height: 128px;
+  width: 128px;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: rotateme;
+}

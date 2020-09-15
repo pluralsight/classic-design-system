@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.0.0...@pluralsight/ps-design-system-dropdown@9.0.1) (2020-09-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@8.0.7...@pluralsight/ps-design-system-dropdown@9.0.0) (2020-09-09)
+
+
+* Feat/dropdown patterns (#1125) ([f2c348c](https://github.com/pluralsight/design-system/commit/f2c348c8dd086cb53cc1fc7fcf9ef1ba1a5fc84c)), closes [#1125](https://github.com/pluralsight/design-system/issues/1125)
+
+
+### BREAKING CHANGES
+
+* remove focus on mount from actionmenu
+
+* docs(site): update actionmenu and dropdown
+
+
+
+
+
 ## [8.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@8.0.6...@pluralsight/ps-design-system-dropdown@8.0.7) (2020-08-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

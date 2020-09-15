@@ -2,238 +2,134 @@
 
 exports[`Storyshots Halo/error false 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-ctre2o=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <div>
-        not error
-      </div>
-    </div>
+  <div>
+    not error
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/error true 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-in6gqi=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-in6gqi=""
-    >
-      <div>
-        error
-      </div>
-    </div>
+  <div>
+    error
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/gapSizes default 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-77dl98=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-77dl98=""
-    >
-      <div>
-        default
-      </div>
-    </div>
+  <div>
+    default
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/gapSizes small 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-77dl98=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-77dl98=""
-    >
-      <div>
-        small
-      </div>
-    </div>
+  <div>
+    small
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/shapes default 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-77dl98=""
 >
   <div
-    data-css-aelvpu=""
+    shape="default"
   >
-    <div
-      data-css-77dl98=""
-    >
-      <div
-        shape="default"
-      >
-        default
-      </div>
-    </div>
+    default
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/shapes pill 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-1jg9j68=""
 >
   <div
-    data-css-aelvpu=""
+    shape="pill"
   >
-    <div
-      data-css-1jg9j68=""
-    >
-      <div
-        shape="pill"
-      >
-        pill
-      </div>
-    </div>
+    pill
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/visible false & error 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-in6gqi=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-in6gqi=""
-    >
-      <div>
-        not visible (always visible if error) & error
-      </div>
-    </div>
+  <div>
+    not visible (always visible if error) & error
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-rmw7at=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-rmw7at=""
-    >
-      <div>
-        really not visible (even on focus)
-      </div>
-    </div>
+  <div>
+    really not visible (even on focus)
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/visible false 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-ctre2o=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <div>
-        not visible (until focused)
-      </div>
-    </div>
+  <div>
+    not visible (until focused)
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/visible true & error 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-77dl98=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-77dl98=""
-    >
-      <div>
-        visible & error
-      </div>
-    </div>
+  <div>
+    visible & error
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/visible true 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-77dl98=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-77dl98=""
-    >
-      <div>
-        visible
-      </div>
-    </div>
+  <div>
+    visible
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-in6gqi=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-in6gqi=""
-    >
-      <div>
-        visible when focused with error
-      </div>
-    </div>
+  <div>
+    visible when focused with error
   </div>
 </div>
 `;
 
 exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
 <div
-  data-css-12kxz7c=""
+  data-css-ctre2o=""
 >
-  <div
-    data-css-aelvpu=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <div>
-        visible when focused
-      </div>
-    </div>
+  <div>
+    visible when focused
   </div>
 </div>
 `;
