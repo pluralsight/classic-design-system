@@ -26,6 +26,7 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "del '{,!(node_modules)/}**/dist'",
+    "danger:ci": "danger ci --failOnErrors",
     "generate": "plop",
     "generate:component": "plop component",
     "lint": "eslint . --quiet",

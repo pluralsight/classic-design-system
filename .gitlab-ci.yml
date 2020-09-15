@@ -42,7 +42,7 @@ danger:
   script:
     - yarn config set ignore-engines true
     - yarn install
-    - danger ci --failOnErrors
+    - yarn danger:ci
 
 lint:
   image: node:13.8-alpine
