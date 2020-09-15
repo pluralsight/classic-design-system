@@ -121,7 +121,7 @@ const Example: React.FC<ExampleProps> = (props) => {
     <div className={className}>
       <LiveProvider code={preview.code} scope={preview.scope} noInline>
         <LiveError />
-        <LivePreview />
+        <LivePreview className={styles.preview} />
         <Actions>
           <div className={styles.actionsAlignRight}>
             {copied && (
