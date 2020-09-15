@@ -4,9 +4,6 @@
   "description": "API for tracking the published packages in the design system",
   "license": "Apache-2.0",
   "private": true,
-  "engines": {
-    "node": "8.x"
-  },
   "author": "jaketrent",
   "main": "dist/index.js",
   "scripts": {

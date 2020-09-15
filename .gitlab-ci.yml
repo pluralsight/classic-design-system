@@ -1,6 +1,6 @@
 workflow:
   rules:
-    - if: $CI_COMMIT_MESSAGE =~ /build: publish/
+    - if: '$CI_COMMIT_MESSAGE == "build: publish"'
       when: never
     - if: $CI_COMMIT_TAG
       when: never
@@ -20,6 +20,7 @@ default:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - node_modules/
+      - .yarn
   image: docker:stable
   retry:
     max: 1
@@ -32,18 +33,29 @@ install:
   image: node:13.8-alpine
   stage: .pre
   script:
-    - npm install
-    - npm run bootstrap
+    - yarn config set ignore-engines true
+    - yarn install
+
+danger:
+  image: node:13.8-alpine
+  stage: lint
+  script:
+    - yarn config set ignore-engines true
+    - yarn install
+    - yarn danger:ci
 
 lint:
   image: node:13.8-alpine
   stage: lint
   script:
-    - npm run lint
+    - yarn config set ignore-engines true
+    - yarn lint:ci
 
 test:
   image: node:13.8-alpine
   stage: test
   script:
-    - npm test
+    - yarn config set ignore-engines true
+    - yarn build
+    - yarn test
 

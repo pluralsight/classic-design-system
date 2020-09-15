@@ -7,5 +7,5 @@
     "rootDir": "src",
     "target": "es5"
   },
-  "exclude": ["node_modules"]
+  "exclude": ["*.js", "dist", "public", "node_modules"]
 }
