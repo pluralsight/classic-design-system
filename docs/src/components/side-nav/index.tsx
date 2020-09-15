@@ -1,11 +1,13 @@
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { Link, navigate } from 'gatsby'
 import React, { HTMLAttributes } from 'react'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 import styles from './index.module.css'
-import logo from './logo.png'
+import logoDark from './logo-dark.png'
+import logoLight from './logo-light.png'
 
 export const SideNav: React.FC<Props> = () => {
   return (
@@ -77,9 +79,13 @@ const items = [
 ]
 
 function Logo() {
+  const themeName = useTheme()
   return (
     <Link to="/">
-      <img src={logo} className={styles.logo} />
+      <img
+        src={themeName === Theme.names.light ? logoLight : logoDark}
+        className={styles.logo}
+      />
     </Link>
   )
 }
