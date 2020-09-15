@@ -90,6 +90,29 @@ storiesOf('Components | Position / custom style', module).add(
   )
 )
 
+storiesOf('Components | Position / custom ref', module).add(
+  'shown element keeps style prop',
+  () => {
+    const ref = React.useRef()
+    const { x, y } = ref.current ? ref.current.getBoundingClientRect() : {}
+
+    return (
+      <>
+        <positionComponents.Above
+          show={
+            <MockToolip style={{ color: core.colorsPink.base }} ref={ref} />
+          }
+        >
+          <Box>Tooltip is pink</Box>
+        </positionComponents.Above>
+        <span style={{ color: 'white', position: 'absolute', top: 250 }}>
+          X: {x}, Y: {y}
+        </span>
+      </>
+    )
+  }
+)
+
 const portalStories = storiesOf(
   'Components | Position / in custom portal',
   module

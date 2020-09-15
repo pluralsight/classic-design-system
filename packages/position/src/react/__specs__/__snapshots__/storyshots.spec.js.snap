@@ -256,6 +256,51 @@ Array [
 ]
 `;
 
+exports[`Storyshots Components | Position / custom ref shown element keeps style prop 1`] = `
+Array [
+  <div
+    className={
+      Object {
+        "data-css-8l64z9": "",
+      }
+    }
+  >
+    Tooltip is pink
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      data-css-2fmxat=""
+      style={
+        Object {
+          "color": "#E7558B",
+          "position": "absolute",
+        }
+      }
+    >
+      The tip
+    </div>
+  </div>,
+  <span
+    style={
+      Object {
+        "color": "white",
+        "position": "absolute",
+        "top": 250,
+      }
+    }
+  >
+    X: 
+    , Y: 
+  </span>,
+]
+`;
+
 exports[`Storyshots Components | Position / custom style shown element keeps style prop 1`] = `
 Array [
   <div
