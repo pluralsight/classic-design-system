@@ -1,9 +1,7 @@
 import { StyleAttribute, compose, css } from 'glamor'
 import React, {
-  ForwardRefExoticComponent,
   HTMLAttributes,
   ReactNode,
-  RefAttributes,
   forwardRef,
   useEffect,
   useImperativeHandle,
@@ -168,11 +166,11 @@ const Illustration: React.FC<IllustrationProps> &
   return (
     <Context.Consumer>
       {ctx => {
-        const Comp = illustrations[name] || IllustrationNotFound
-        // const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
+        let Comp: any = illustrations[name] || IllustrationNotFound
+        const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
 
-        // if (isSmall) Comp = Comp.small
-        // if (custom) Comp = () => custom
+        if (isSmall) Comp = Comp.small
+        if (custom) Comp = () => custom
 
         return (
           <div {...styles.illustration(props, ctx)}>

@@ -1,10 +1,8 @@
 import { createContext } from 'react'
 import { name as themes } from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import { sizes } from '../vars'
-
-// TODO: move to core pkg
-type ValueOf<T> = T[keyof T]
 
 export interface ContextValue {
   size?: ValueOf<typeof sizes>
