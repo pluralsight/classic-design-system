@@ -1,5 +1,5 @@
-// export * from './types'
 export * from './menu-keys'
+export * from './types'
 
 export { callAll } from './call-all'
 export { cloneElementWithRef } from './clone-element-with-ref'
