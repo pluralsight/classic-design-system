@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-errors",
-  "version": "8.0.24",
+  "version": "8.0.26",
   "description": "Design system components for errors",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,10 +21,10 @@
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^18.1.2",
-    "@pluralsight/ps-design-system-core": "^6.4.0",
-    "@pluralsight/ps-design-system-icon": "^18.2.0",
-    "@pluralsight/ps-design-system-text": "^16.0.19",
+    "@pluralsight/ps-design-system-button": "^18.1.4",
+    "@pluralsight/ps-design-system-core": "^6.4.1",
+    "@pluralsight/ps-design-system-icon": "^18.2.2",
+    "@pluralsight/ps-design-system-text": "^16.0.21",
     "camelize": "^1.0.0",
     "prop-types": "^15.7.2"
   },
@@ -36,8 +36,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-normalize": "^4.0.9",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^6.0.10",
-    "@pluralsight/ps-design-system-theme": "^4.0.11"
+    "@pluralsight/ps-design-system-normalize": "^4.0.10",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.1",
+    "@pluralsight/ps-design-system-theme": "^4.0.13"
   }
 }

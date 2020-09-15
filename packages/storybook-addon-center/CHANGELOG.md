@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-center@3.0.0...@pluralsight/ps-design-system-storybook-addon-center@3.0.1) (2020-09-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-center
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-center@2.1.10...@pluralsight/ps-design-system-storybook-addon-center@3.0.0) (2020-09-14)
+
+
+### Features
+
+* **storybook-addon-center:** upgrade to use new apis ([ea8449e](https://github.com/pluralsight/design-system/commit/ea8449e9fc14c2b19b48317091a13a02d0434fe5))
+
+
+### BREAKING CHANGES
+
+* **storybook-addon-center:** storybook v6
+
+
+
+
+
 ## [2.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-center@2.1.7...@pluralsight/ps-design-system-storybook-addon-center@2.1.9) (2020-01-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-center

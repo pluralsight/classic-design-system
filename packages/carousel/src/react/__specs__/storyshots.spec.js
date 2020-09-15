@@ -3,10 +3,6 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-jest.mock('@pluralsight/ps-design-system-storybook-addon-center')
-jest.mock('@pluralsight/ps-design-system-storybook-addon-chaos')
-jest.mock('@pluralsight/ps-design-system-storybook-addon-theme')
-
 jest.mock('../../js/utils.js', () => ({
   ...jest.requireActual('../../js/utils.js'),
   uniqueId: jest
@@ -14,7 +10,7 @@ jest.mock('../../js/utils.js', () => ({
     .mockImplementation((prefix = '') => prefix + 'mock_unique_id')
 }))
 
-const createNodeMock = el => document.createElement('div')
+const createNodeMock = () => document.createElement('div')
 
 initStoryshots({
   configPath: path.resolve(__dirname, '../../../.storybook'),

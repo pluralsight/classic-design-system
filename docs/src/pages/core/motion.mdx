@@ -1,0 +1,58 @@
+---
+name: Motion
+route: /core/motion
+---
+
+import { Speeds, Relative, Travel, Easing, Rotation } from '../../components/motion'
+
+# Motion
+
+## Speed
+
+Motion speed should most often occur at the following standard increments.
+
+<Speeds />
+
+Use the CSS variables to set the duration.
+      
+```
+@import "@pluralsight/ps-design-system-core";
+.mySelector {
+  animation-duration: var(--psMotionSpeedXFast);
+}`
+```
+
+To select a duration, use the following rules of thumb.
+
+<Relative />
+
+A small object moving a great relative distance may have slightly longer duration so that the movement isn’t too fast and abrupt.
+
+<Travel />
+
+## Easing
+
+Some general guidance on selecting an easing curve.
+
+<Easing />
+
+```
+@import "@pluralsight/ps-design-system-core";
+.mySelector {
+  animation-timing-function: ease-in-out;
+}`
+```
+
+## Rotation
+
+Generally, larger objects look more natural when rotating slower than smaller objects. The easing property for rotation should be **linear**.
+      
+<Rotation />
+
+```
+@import "@pluralsight/ps-design-system-core";
+@keyframes rotateme { to { transform: rotate(360deg); }}
+.mySelector {
+  animation: var(--psMotionSpeedNormal) linear infinite rotateme;
+}
+```

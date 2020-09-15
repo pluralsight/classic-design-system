@@ -2,7 +2,7 @@ import cx from 'classnames'
 import React, { HTMLAttributes } from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import { MenuIcon, PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import { MenuIcon, ThemeIcon } from '@pluralsight/ps-design-system-icon'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import styles from './header.module.css'
@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
       <Button
         appearance={Button.appearances.secondary}
         className={styles.themeButton}
-        icon={<PlaceholderIcon />}
+        icon={<ThemeIcon />}
         onClick={onThemeButtonClick}
         size={Button.sizes.medium}
         title="Toggle Theme"

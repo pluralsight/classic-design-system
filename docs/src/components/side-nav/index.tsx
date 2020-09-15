@@ -13,7 +13,7 @@ export const SideNav: React.FC<Props> = () => {
       <Logo />
       <VerticalTabs>
         <VerticalTabs.Group>
-          {items.map((section) => {
+          {items.map((section, i) => {
             const sectionHeader = (
               <VerticalTabs.Tier1.Header>
                 {section.header.title}
@@ -25,22 +25,22 @@ export const SideNav: React.FC<Props> = () => {
                 header={sectionHeader}
                 key={section.header.title}
               >
-                {section.items.map((item) => {
-                  const itemHeader = (
-                    <VerticalTabs.Tier2.Header
-                      key={item.href}
-                      href={item.href}
-                      onClick={(evt: Event) => {
-                        evt.preventDefault()
-                        navigate(item.href)
-                      }}
-                    >
-                      {item.title}
-                    </VerticalTabs.Tier2.Header>
-                  )
-
-                  return <VerticalTabs.Tier2 header={itemHeader} />
-                })}
+                {section.items.map((item) => (
+                  <VerticalTabs.Tier2
+                    header={
+                      <VerticalTabs.Tier2.Header
+                        href={item.href}
+                        onClick={(evt: Event) => {
+                          evt.preventDefault()
+                          navigate(item.href)
+                        }}
+                      >
+                        {item.title}
+                      </VerticalTabs.Tier2.Header>
+                    }
+                    key={item.href}
+                  />
+                ))}
               </VerticalTabs.Tier1>
             )
           })}
@@ -63,6 +63,14 @@ const items = [
       {
         href: '/core/typography',
         title: 'Typography',
+      },
+      {
+        href: '/core/motion',
+        title: 'Motion',
+      },
+      {
+        href: '/core/spacing',
+        title: 'Spacing',
       },
     ],
   },

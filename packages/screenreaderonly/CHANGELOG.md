@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@2.0.11...@pluralsight/ps-design-system-screenreaderonly@2.0.12) (2020-09-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-screenreaderonly
+
+
+
+
+
+## [2.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@2.0.10...@pluralsight/ps-design-system-screenreaderonly@2.0.11) (2020-09-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-screenreaderonly
+
+
+
+
+
 ## [2.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@2.0.9...@pluralsight/ps-design-system-screenreaderonly@2.0.10) (2020-08-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-screenreaderonly

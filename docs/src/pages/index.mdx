@@ -3,6 +3,9 @@ name: Hello world
 route: /
 ---
 
+import { Guideline } from '../components/guideline'
+import * as Types from '../components/types'
+
 # Hello world
 
 Hello, I'm a mdx file!
@@ -11,11 +14,11 @@ Hello, I'm a mdx file!
 
 This is `inlineCode`.
 
-```
-Code block vanilla for now.
-```
-
-```typescript
+```typescript switcher
+---
+title: First Vanilla
+description: Some good descriptionaires here
+---
 import React from 'react'
 
 // comment here
@@ -29,18 +32,26 @@ const Example: React.FC = () => {
 }
 
 export default Example
-```
 
-```typescript codesandbox=default
+---
+
+---
+title: Title of Num 2, Yo
+description: You want this, you really do.  Take care of it. Make sure that it's there.
+---
 import React from 'react'
+
+// comment here
 
 const Example: React.FC = () => {
   return (
     <div>
-      <p>hello world from typescript</p>
+      <p>222 hello world</p>
     </div>
   )
 }
 
 export default Example
 ```
+
+

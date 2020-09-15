@@ -1,4 +1,7 @@
+import frontmatter from '@github-docs/frontmatter'
 import Button from '@pluralsight/ps-design-system-button'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import * as Text from '@pluralsight/ps-design-system-text'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import Prism from 'prismjs/components/prism-core'
@@ -6,17 +9,82 @@ import Highlight, { PrismTheme, defaultProps } from 'prism-react-renderer'
 import React, { HTMLAttributes, useEffect, useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
+import { H2 } from '../mdx'
 import styles from './code-block.module.css'
 import { darkTheme, lightTheme } from './code-block-theme'
 
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
+  metastring?: null
   live?: boolean
 }
-
 export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
-  const { children: code } = props
+  const isSwitcher = /switcher/.test(props.metastring)
   const language = props.className.replace(/language-/, '')
 
+  const examples = props.children.split('\n\n---\n\n').map((example, i) => {
+    const { content, data } = frontmatter(example)
+    return {
+      i,
+      code: content,
+      meta: data || {},
+    }
+  })
+
+  const [selectedOption, setSelectedOption] = React.useState(
+    'value' + examples[0].i
+  )
+
+  if (isSwitcher) {
+    return (
+      <div>
+        <div className={styles.title}>
+          <H2>Examples</H2>
+          <Dropdown
+            onChange={(evt, value, label) => setSelectedOption(value)}
+            menu={examples.map((example) => (
+              <Dropdown.Item key={example.i} value={'value' + example.i}>
+                {example.meta.title || 'Example #' + example.i}
+              </Dropdown.Item>
+            ))}
+            value={selectedOption}
+          />
+        </div>
+        <div>
+          {examples.map((example, i) => {
+            return 'value' + i === selectedOption ? (
+              <React.Fragment key={i}>
+                <Text.P>{example.meta.description}</Text.P>
+                <Example
+                  key={i}
+                  language={language}
+                  code={example.code}
+                  className={props.className}
+                />
+              </React.Fragment>
+            ) : null
+          })}
+        </div>
+      </div>
+    )
+  } else {
+    return (
+      <>
+        <Text.P>{examples[0].meta.description}</Text.P>
+        <Example
+          language={language}
+          className={props.className}
+          code={examples[0].code}
+        />
+      </>
+    )
+  }
+}
+
+interface ExampleProps {
+  code: string
+  language: string
+}
+const Example: React.FC<ExampleProps> = (props) => {
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
@@ -61,7 +129,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
           )}
 
           {!copied && (
-            <CopyToClipboard text={code} onCopy={handleCopy}>
+            <CopyToClipboard text={props.code} onCopy={handleCopy}>
               <Button
                 appearance={Button.appearances.flat}
                 size={Button.sizes.xSmall}
@@ -73,8 +141,8 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
         </div>
       </Actions>
 
-      <Editor language={language} theme={codeTheme}>
-        {code}
+      <Editor language={props.language} theme={codeTheme}>
+        {props.code}
       </Editor>
     </div>
   )
@@ -93,16 +161,13 @@ interface EditorProps extends HTMLAttributes<HTMLPreElement> {
   language: string
   theme: PrismTheme
 }
-
 const Editor: React.FC<EditorProps> = (props) => {
-  const { language, theme } = props
-
   return (
     <Highlight
       {...defaultProps}
       code={props.children}
-      language={language}
-      theme={theme}
+      language={props.language}
+      theme={props.theme}
     >
       {(highlight) => {
         const { tokens, getLineProps, getTokenProps } = highlight

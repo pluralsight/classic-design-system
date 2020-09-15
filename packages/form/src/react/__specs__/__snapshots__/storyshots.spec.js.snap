@@ -2,76 +2,72 @@
 
 exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "padding": "24px",
+      "width": "50%",
+    }
+  }
 >
   <div
     style={
       Object {
-        "padding": "24px",
-        "width": "50%",
+        "border": "1px solid blue",
       }
     }
   >
     <div
-      style={
-        Object {
-          "border": "1px solid blue",
-        }
-      }
+      data-css-63oe3q=""
     >
       <div
-        data-css-63oe3q=""
+        data-css-4l6uky=""
       >
         <div
-          data-css-4l6uky=""
-        >
-          <div
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
             }
-          >
-            form stuff
-          </div>
+          }
+        >
+          form stuff
         </div>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
         <div
-          data-css-4l6uky=""
+          data-css-1cqgl9p=""
         >
           <div
-            data-css-1cqgl9p=""
+            data-css-7d5932=""
           >
-            <div
-              data-css-7d5932=""
+            <button
+              data-css-176v989=""
+              disabled={false}
+              style={Object {}}
             >
-              <button
-                data-css-176v989=""
-                disabled={false}
-                style={Object {}}
+              <span
+                data-css-15b13by=""
               >
-                <span
-                  data-css-15b13by=""
-                >
-                  Save
-                </span>
-              </button>
-            </div>
-            <div
-              data-css-7d5932=""
+                Save
+              </span>
+            </button>
+          </div>
+          <div
+            data-css-7d5932=""
+          >
+            <button
+              data-css-17fxkyy=""
+              disabled={false}
+              style={Object {}}
             >
-              <button
-                data-css-17fxkyy=""
-                disabled={false}
-                style={Object {}}
+              <span
+                data-css-15b13by=""
               >
-                <span
-                  data-css-15b13by=""
-                >
-                  Cancel
-                </span>
-              </button>
-            </div>
+                Cancel
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -82,76 +78,72 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
 
 exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "padding": "24px",
+      "width": "50%",
+    }
+  }
 >
   <div
     style={
       Object {
-        "padding": "24px",
-        "width": "50%",
+        "border": "1px solid blue",
       }
     }
   >
     <div
-      style={
-        Object {
-          "border": "1px solid blue",
-        }
-      }
+      data-css-63oe3q=""
     >
       <div
-        data-css-63oe3q=""
+        data-css-4l6uky=""
       >
         <div
-          data-css-4l6uky=""
-        >
-          <div
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
             }
-          >
-            form stuff
-          </div>
+          }
+        >
+          form stuff
         </div>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
         <div
-          data-css-4l6uky=""
+          data-css-5osg3l=""
         >
           <div
-            data-css-5osg3l=""
+            data-css-7d5932=""
           >
-            <div
-              data-css-7d5932=""
+            <button
+              data-css-176v989=""
+              disabled={false}
+              style={Object {}}
             >
-              <button
-                data-css-176v989=""
-                disabled={false}
-                style={Object {}}
+              <span
+                data-css-15b13by=""
               >
-                <span
-                  data-css-15b13by=""
-                >
-                  Save
-                </span>
-              </button>
-            </div>
-            <div
-              data-css-7d5932=""
+                Save
+              </span>
+            </button>
+          </div>
+          <div
+            data-css-7d5932=""
+          >
+            <button
+              data-css-17fxkyy=""
+              disabled={false}
+              style={Object {}}
             >
-              <button
-                data-css-17fxkyy=""
-                disabled={false}
-                style={Object {}}
+              <span
+                data-css-15b13by=""
               >
-                <span
-                  data-css-15b13by=""
-                >
-                  Cancel
-                </span>
-              </button>
-            </div>
+                Cancel
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -162,47 +154,43 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 
 exports[`Storyshots Form.ButtonRow single form element with single button 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "padding": "24px",
+      "width": "50%",
+    }
+  }
 >
   <div
     style={
       Object {
-        "padding": "24px",
-        "width": "50%",
+        "border": "1px solid blue",
       }
     }
   >
     <div
-      style={
-        Object {
-          "border": "1px solid blue",
-        }
-      }
+      data-css-63oe3q=""
     >
       <div
-        data-css-63oe3q=""
+        data-css-4l6uky=""
       >
         <div
-          data-css-4l6uky=""
+          data-css-1cqgl9p=""
         >
           <div
-            data-css-1cqgl9p=""
+            data-css-7d5932=""
           >
-            <div
-              data-css-7d5932=""
+            <button
+              data-css-176v989=""
+              disabled={false}
+              style={Object {}}
             >
-              <button
-                data-css-176v989=""
-                disabled={false}
-                style={Object {}}
+              <span
+                data-css-15b13by=""
               >
-                <span
-                  data-css-15b13by=""
-                >
-                  Only One
-                </span>
-              </button>
-            </div>
+                Only One
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -213,202 +201,198 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
 
 exports[`Storyshots Sample Form null children 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "padding": "24px",
+      "width": "50%",
+    }
+  }
 >
   <div
     style={
       Object {
-        "padding": "24px",
-        "width": "50%",
+        "border": "1px solid blue",
       }
     }
   >
     <div
-      style={
-        Object {
-          "border": "1px solid blue",
-        }
-      }
+      data-css-63oe3q=""
     >
       <div
-        data-css-63oe3q=""
+        data-css-4l6uky=""
       >
-        <div
-          data-css-4l6uky=""
-        >
-          <h2
-            data-css-1uk9rqa=""
-            size="large"
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
+        <h2
+          data-css-1uk9rqa=""
+          size="large"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
             }
-          >
-            Sample form
-          </h2>
-        </div>
-        <div
-          data-css-4l6uky=""
+          }
         >
-          <label
-            data-css-w0yocm=""
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
+          Sample form
+        </h2>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-w0yocm=""
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
             }
-          >
-            <div
-              data-css-dysqqm=""
-            >
-              Name
-            </div>
-            <div
-              data-css-1r967oi=""
-            >
-              <div
-                data-css-ctre2o=""
-              >
-                <div
-                  data-css-ydex85=""
-                >
-                  <input
-                    data-css-zjzpem=""
-                    disabled={false}
-                    placeholder="What's your name?"
-                    size="medium"
-                  />
-                </div>
-              </div>
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-w0yocm=""
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
-          >
-            <div
-              data-css-dysqqm=""
-            >
-              Alias
-            </div>
-            <div
-              data-css-1r967oi=""
-            >
-              <div
-                data-css-ctre2o=""
-              >
-                <div
-                  data-css-ydex85=""
-                >
-                  <input
-                    data-css-zjzpem=""
-                    disabled={false}
-                    placeholder="Do you have a nick name?"
-                    size="medium"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-6ga4kh=""
-            >
-              *Optional
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
+          }
         >
           <div
-            data-css-141usbw=""
-          />
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-na8jqt=""
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
+            data-css-dysqqm=""
+          >
+            Name
+          </div>
+          <div
+            data-css-1r967oi=""
           >
             <div
-              data-css-9kywkh=""
-            >
-              Comment
-            </div>
-            <div
-              data-css-1ios7mb=""
+              data-css-ctre2o=""
             >
               <div
-                data-css-ctre2o=""
+                data-css-ydex85=""
               >
-                <textarea
-                  data-css-dpjpe2=""
+                <input
+                  data-css-zjzpem=""
                   disabled={false}
-                  placeholder="Anything else to report?"
-                  rows={4}
-                  style={
-                    Object {
-                      "height": 112,
-                    }
-                  }
+                  placeholder="What's your name?"
+                  size="medium"
                 />
               </div>
             </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-w0yocm=""
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         >
           <div
-            data-css-1cqgl9p=""
+            data-css-dysqqm=""
+          >
+            Alias
+          </div>
+          <div
+            data-css-1r967oi=""
           >
             <div
-              data-css-7d5932=""
+              data-css-ctre2o=""
             >
-              <button
-                data-css-176v989=""
-                disabled={false}
-                style={Object {}}
+              <div
+                data-css-ydex85=""
               >
-                <span
-                  data-css-15b13by=""
-                >
-                  Save
-                </span>
-              </button>
+                <input
+                  data-css-zjzpem=""
+                  disabled={false}
+                  placeholder="Do you have a nick name?"
+                  size="medium"
+                />
+              </div>
             </div>
+          </div>
+          <div
+            data-css-6ga4kh=""
+          >
+            *Optional
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <div
+          data-css-141usbw=""
+        />
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-na8jqt=""
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            data-css-9kywkh=""
+          >
+            Comment
+          </div>
+          <div
+            data-css-1ios7mb=""
+          >
             <div
-              data-css-7d5932=""
+              data-css-ctre2o=""
             >
-              <button
-                data-css-17fxkyy=""
+              <textarea
+                data-css-dpjpe2=""
                 disabled={false}
-                style={Object {}}
-              >
-                <span
-                  data-css-15b13by=""
-                >
-                  Cancel
-                </span>
-              </button>
+                placeholder="Anything else to report?"
+                rows={4}
+                style={
+                  Object {
+                    "height": 112,
+                  }
+                }
+              />
             </div>
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <div
+          data-css-1cqgl9p=""
+        >
+          <div
+            data-css-7d5932=""
+          >
+            <button
+              data-css-176v989=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                data-css-15b13by=""
+              >
+                Save
+              </span>
+            </button>
+          </div>
+          <div
+            data-css-7d5932=""
+          >
+            <button
+              data-css-17fxkyy=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                data-css-15b13by=""
+              >
+                Cancel
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -419,710 +403,706 @@ exports[`Storyshots Sample Form null children 1`] = `
 
 exports[`Storyshots Sample Form sample 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "padding": "24px",
+      "width": "50%",
+    }
+  }
 >
   <div
     style={
       Object {
-        "padding": "24px",
-        "width": "50%",
+        "border": "1px solid blue",
       }
     }
   >
     <div
-      style={
-        Object {
-          "border": "1px solid blue",
-        }
-      }
+      data-css-63oe3q=""
     >
       <div
-        data-css-63oe3q=""
+        data-css-4l6uky=""
       >
-        <div
-          data-css-4l6uky=""
-        >
-          <h2
-            data-css-1uk9rqa=""
-            size="large"
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
+        <h2
+          data-css-1uk9rqa=""
+          size="large"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
             }
-          >
-            Sample form
-          </h2>
-        </div>
-        <div
-          data-css-4l6uky=""
+          }
         >
-          <label
-            data-css-w0yocm=""
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
+          Sample form
+        </h2>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-w0yocm=""
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
             }
-          >
-            <div
-              data-css-dysqqm=""
-            >
-              Name
-            </div>
-            <div
-              data-css-1r967oi=""
-            >
-              <div
-                data-css-ctre2o=""
-              >
-                <div
-                  data-css-ydex85=""
-                >
-                  <input
-                    data-css-zjzpem=""
-                    disabled={false}
-                    placeholder="What's your name?"
-                    size="medium"
-                  />
-                </div>
-              </div>
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-w0yocm=""
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
-          >
-            <div
-              data-css-dysqqm=""
-            >
-              Alias
-            </div>
-            <div
-              data-css-1r967oi=""
-            >
-              <div
-                data-css-ctre2o=""
-              >
-                <div
-                  data-css-ydex85=""
-                >
-                  <input
-                    data-css-zjzpem=""
-                    disabled={false}
-                    placeholder="Do you have a nick name?"
-                    size="medium"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-6ga4kh=""
-            >
-              *Optional
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-w0yocm=""
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
-          >
-            <div
-              data-css-dysqqm=""
-            >
-              Email address
-            </div>
-            <div
-              data-css-1r967oi=""
-            >
-              <div
-                data-css-in6gqi=""
-              >
-                <div
-                  data-css-ydex85=""
-                >
-                  <input
-                    data-css-zjzpem=""
-                    disabled={false}
-                    size="medium"
-                    value="steve@example.com"
-                  />
-                </div>
-              </div>
-              <div
-                data-css-1ha66tv=""
-              >
-                <div
-                  data-css-7dab2f=""
-                >
-                  <svg
-                    aria-label="warning icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-6ga4kh=""
-            >
-              Not a valid email address
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-1hniuff=""
-            onKeyDown={[Function]}
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
-          >
-            <div
-              data-css-dysqqm=""
-            >
-              Occupation
-            </div>
-            <div
-              data-css-8befsb=""
-            >
-              <div
-                data-css-3ah8pf=""
-                data-css-ctre2o=""
-              >
-                <div
-                  data-css-ne3jjf=""
-                >
-                  <button
-                    data-css-94lg5r=""
-                    disabled={false}
-                    onClick={[Function]}
-                  >
-                    <span
-                      data-css-1m4meif=""
-                    >
-                      <span
-                        aria-hidden={true}
-                        data-css-mlkf0z=""
-                      >
-                        Select your occupation...
-                      </span>
-                      <span
-                        data-css-1t1vq03=""
-                      >
-                        Select your occupation...
-                      </span>
-                    </span>
-                  </button>
-                  <div
-                    data-css-1af7ks9=""
-                  >
-                    <div
-                      data-css-7dab2f=""
-                    >
-                      <svg
-                        aria-label="caret down icon"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
+          }
         >
           <div
-            style={
-              Object {
-                "display": "flex",
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
+            data-css-dysqqm=""
           >
-            <div
-              data-css-1lu7sfl=""
-            >
-              <a
-                data-css-1aye8gw=""
-                href="http://google.com"
-              >
-                <span
-                  data-css-1997kh1=""
-                >
-                  Foo
-                </span>
-              </a>
-            </div>
-            <span
-              style={
-                Object {
-                  "marginRight": "8px",
-                }
-              }
-            />
-            <div
-              data-css-1lu7sfl=""
-            >
-              <a
-                data-css-1aye8gw=""
-                href="http://google.com"
-              >
-                <span
-                  data-css-1997kh1=""
-                >
-                  Bar
-                </span>
-              </a>
-            </div>
-            <span
-              style={
-                Object {
-                  "marginRight": "8px",
-                }
-              }
-            />
-            <div
-              data-css-1lu7sfl=""
-            >
-              <a
-                data-css-1aye8gw=""
-                href="http://google.com"
-              >
-                <span
-                  data-css-1997kh1=""
-                >
-                  Baz
-                </span>
-              </a>
-            </div>
+            Name
           </div>
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-w0yocm=""
-            onKeyDown={[Function]}
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
+          <div
+            data-css-1r967oi=""
           >
-            <div
-              data-css-dysqqm=""
-            >
-              Choose a Date
-            </div>
             <div
               data-css-ctre2o=""
             >
               <div
-                data-css-e41y4a=""
+                data-css-ydex85=""
               >
                 <input
-                  data-css-1ynlp2p=""
+                  data-css-zjzpem=""
                   disabled={false}
-                  name="mm"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="mm"
-                  style={
-                    Object {
-                      "width": "32px",
-                    }
-                  }
-                  value=""
+                  placeholder="What's your name?"
+                  size="medium"
                 />
-                <span
-                  data-css-9eecwn=""
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-w0yocm=""
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            data-css-dysqqm=""
+          >
+            Alias
+          </div>
+          <div
+            data-css-1r967oi=""
+          >
+            <div
+              data-css-ctre2o=""
+            >
+              <div
+                data-css-ydex85=""
+              >
+                <input
+                  data-css-zjzpem=""
+                  disabled={false}
+                  placeholder="Do you have a nick name?"
+                  size="medium"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            data-css-6ga4kh=""
+          >
+            *Optional
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-w0yocm=""
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            data-css-dysqqm=""
+          >
+            Email address
+          </div>
+          <div
+            data-css-1r967oi=""
+          >
+            <div
+              data-css-in6gqi=""
+            >
+              <div
+                data-css-ydex85=""
+              >
+                <input
+                  data-css-zjzpem=""
+                  disabled={false}
+                  size="medium"
+                  value="steve@example.com"
+                />
+              </div>
+            </div>
+            <div
+              data-css-1ha66tv=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="warning icon"
+                  role="img"
+                  viewBox="0 0 24 24"
                 >
-                  /
-                </span>
-                <input
-                  data-css-1ynlp2p=""
-                  disabled={false}
-                  name="dd"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="dd"
-                  style={
-                    Object {
-                      "width": "28px",
-                    }
-                  }
-                  value=""
-                />
-                <span
-                  data-css-9eecwn=""
-                >
-                  /
-                </span>
-                <input
-                  data-css-1ynlp2p=""
-                  disabled={false}
-                  name="yyyy"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="yyyy"
-                  style={
-                    Object {
-                      "width": "50px",
-                    }
-                  }
-                  value=""
-                />
-                <input
-                  data-css-gyrv08=""
-                  disabled={false}
-                  readOnly={true}
-                  tabIndex="-1"
-                />
+                  <path
+                    clipRule="evenodd"
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            data-css-6ga4kh=""
+          >
+            Not a valid email address
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-1hniuff=""
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            data-css-dysqqm=""
+          >
+            Occupation
+          </div>
+          <div
+            data-css-8befsb=""
+          >
+            <div
+              data-css-3ah8pf=""
+              data-css-ctre2o=""
+            >
+              <div
+                data-css-ne3jjf=""
+              >
                 <button
-                  data-css-m80zy8=""
+                  data-css-94lg5r=""
                   disabled={false}
                   onClick={[Function]}
+                >
+                  <span
+                    data-css-1m4meif=""
+                  >
+                    <span
+                      aria-hidden={true}
+                      data-css-mlkf0z=""
+                    >
+                      Select your occupation...
+                    </span>
+                    <span
+                      data-css-1t1vq03=""
+                    >
+                      Select your occupation...
+                    </span>
+                  </span>
+                </button>
+                <div
+                  data-css-1af7ks9=""
                 >
                   <div
                     data-css-7dab2f=""
                   >
                     <svg
-                      aria-label="calendar icon"
+                      aria-label="caret down icon"
                       role="img"
                       viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                        d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                       />
                     </svg>
                   </div>
-                </button>
+                </div>
               </div>
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <div
-                aria-checked={true}
-                data-css-1cfeqew=""
-                role="checkbox"
-                tabIndex="0"
-              >
-                <svg
-                  aria-label="Checkmark"
-                  data-css-ey6g07=""
-                  role="img"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polygon
-                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-                  />
-                </svg>
-              </div>
-            </div>
-            <input
-              checked={true}
-              data-css-gyrv08=""
-              disabled={false}
-              readOnly={true}
-              style={
-                Object {
-                  "maxWidth": "none",
-                  "width": "100%",
-                }
-              }
-              tabIndex="-1"
-              type="checkbox"
-              value="someVal"
-            />
-            <div
-              data-css-ybwuvp=""
-            >
-              Checkbox selected
-            </div>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <div
-            data-css-141usbw=""
-          />
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <div
-            data-css-1a26704=""
-            role="radiogroup"
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
-          >
-            <div
-              data-css-xp79s5=""
-            >
-              <label
-                data-css-kn3wr0=""
-              >
-                <div
-                  data-css-1lxv0yd=""
-                >
-                  <div
-                    data-css-1lu7sfl=""
-                    data-css-iwspcj=""
-                  >
-                    <div
-                      aria-checked={false}
-                      data-css-1wbxh41=""
-                      role="radio"
-                      tabIndex="-1"
-                    />
-                  </div>
-                </div>
-                <input
-                  data-css-fplhjw=""
-                  name="sample"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  readOnly={true}
-                  type="radio"
-                  value="full"
-                />
-                <div
-                  data-css-nrxvu5=""
-                >
-                  Full-time employement
-                </div>
-              </label>
-              <label
-                data-css-kn3wr0=""
-              >
-                <div
-                  data-css-1lxv0yd=""
-                >
-                  <div
-                    data-css-1lu7sfl=""
-                    data-css-iwspcj=""
-                  >
-                    <div
-                      aria-checked={false}
-                      data-css-1wbxh41=""
-                      role="radio"
-                      tabIndex="-1"
-                    />
-                  </div>
-                </div>
-                <input
-                  data-css-fplhjw=""
-                  name="sample"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  readOnly={true}
-                  type="radio"
-                  value="part"
-                />
-                <div
-                  data-css-nrxvu5=""
-                >
-                  Part-time employement
-                </div>
-              </label>
             </div>
           </div>
-        </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
         <div
-          data-css-4l6uky=""
+          style={
+            Object {
+              "display": "flex",
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         >
           <div
-            data-css-141usbw=""
-          />
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            aria-checked={false}
-            data-css-nq9iqf=""
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            role="checkbox"
+            data-css-1lu7sfl=""
+          >
+            <a
+              data-css-1aye8gw=""
+              href="http://google.com"
+            >
+              <span
+                data-css-1997kh1=""
+              >
+                Foo
+              </span>
+            </a>
+          </div>
+          <span
             style={
               Object {
-                "maxWidth": "none",
-                "width": "100%",
+                "marginRight": "8px",
               }
             }
-            tabIndex={0}
+          />
+          <div
+            data-css-1lu7sfl=""
+          >
+            <a
+              data-css-1aye8gw=""
+              href="http://google.com"
+            >
+              <span
+                data-css-1997kh1=""
+              >
+                Bar
+              </span>
+            </a>
+          </div>
+          <span
+            style={
+              Object {
+                "marginRight": "8px",
+              }
+            }
+          />
+          <div
+            data-css-1lu7sfl=""
+          >
+            <a
+              data-css-1aye8gw=""
+              href="http://google.com"
+            >
+              <span
+                data-css-1997kh1=""
+              >
+                Baz
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-w0yocm=""
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            data-css-dysqqm=""
+          >
+            Choose a Date
+          </div>
+          <div
+            data-css-ctre2o=""
           >
             <div
-              data-css-1lu7sfl=""
+              data-css-e41y4a=""
             >
-              <div
-                data-css-19bj9q0=""
+              <input
+                data-css-1ynlp2p=""
+                disabled={false}
+                name="mm"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="mm"
+                style={
+                  Object {
+                    "width": "32px",
+                  }
+                }
+                value=""
+              />
+              <span
+                data-css-9eecwn=""
+              >
+                /
+              </span>
+              <input
+                data-css-1ynlp2p=""
+                disabled={false}
+                name="dd"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="dd"
+                style={
+                  Object {
+                    "width": "28px",
+                  }
+                }
+                value=""
+              />
+              <span
+                data-css-9eecwn=""
+              >
+                /
+              </span>
+              <input
+                data-css-1ynlp2p=""
+                disabled={false}
+                name="yyyy"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                placeholder="yyyy"
+                style={
+                  Object {
+                    "width": "50px",
+                  }
+                }
+                value=""
+              />
+              <input
+                data-css-gyrv08=""
+                disabled={false}
+                readOnly={true}
+                tabIndex="-1"
+              />
+              <button
+                data-css-m80zy8=""
+                disabled={false}
+                onClick={[Function]}
               >
                 <div
-                  data-css-1o90whm=""
-                />
-              </div>
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="calendar icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
-            <input
-              checked={false}
-              data-css-6wu9td=""
-              readOnly={true}
-              tabIndex="-1"
-              type="checkbox"
-            />
-            <span
-              data-css-1oms9gl=""
-            >
-              toggle
-            </span>
-          </label>
-        </div>
-        <div
-          data-css-4l6uky=""
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-kn3wr0=""
+          onClick={[Function]}
+          onKeyDown={[Function]}
         >
           <div
-            data-css-141usbw=""
-          />
-        </div>
-        <div
-          data-css-4l6uky=""
-        >
-          <label
-            data-css-na8jqt=""
+            data-css-1ij5lym=""
+          >
+            <div
+              aria-checked={true}
+              data-css-1cfeqew=""
+              role="checkbox"
+              tabIndex="0"
+            >
+              <svg
+                aria-label="Checkmark"
+                data-css-ey6g07=""
+                role="img"
+                version="1.1"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+                />
+              </svg>
+            </div>
+          </div>
+          <input
+            checked={true}
+            data-css-gyrv08=""
+            disabled={false}
+            readOnly={true}
             style={
               Object {
                 "maxWidth": "none",
                 "width": "100%",
               }
             }
+            tabIndex="-1"
+            type="checkbox"
+            value="someVal"
+          />
+          <div
+            data-css-ybwuvp=""
           >
-            <div
-              data-css-9kywkh=""
-            >
-              Comment
-            </div>
-            <div
-              data-css-1ios7mb=""
-            >
-              <div
-                data-css-ctre2o=""
-              >
-                <textarea
-                  data-css-dpjpe2=""
-                  disabled={false}
-                  placeholder="Anything else to report?"
-                  rows={4}
-                  style={
-                    Object {
-                      "height": 112,
-                    }
-                  }
-                />
-              </div>
-            </div>
-          </label>
-        </div>
+            Checkbox selected
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
         <div
-          data-css-4l6uky=""
+          data-css-141usbw=""
+        />
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <div
+          data-css-1a26704=""
+          role="radiogroup"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         >
           <div
-            data-css-1cqgl9p=""
+            data-css-xp79s5=""
+          >
+            <label
+              data-css-kn3wr0=""
+            >
+              <div
+                data-css-1lxv0yd=""
+              >
+                <div
+                  data-css-1lu7sfl=""
+                  data-css-iwspcj=""
+                >
+                  <div
+                    aria-checked={false}
+                    data-css-1wbxh41=""
+                    role="radio"
+                    tabIndex="-1"
+                  />
+                </div>
+              </div>
+              <input
+                data-css-fplhjw=""
+                name="sample"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                readOnly={true}
+                type="radio"
+                value="full"
+              />
+              <div
+                data-css-nrxvu5=""
+              >
+                Full-time employement
+              </div>
+            </label>
+            <label
+              data-css-kn3wr0=""
+            >
+              <div
+                data-css-1lxv0yd=""
+              >
+                <div
+                  data-css-1lu7sfl=""
+                  data-css-iwspcj=""
+                >
+                  <div
+                    aria-checked={false}
+                    data-css-1wbxh41=""
+                    role="radio"
+                    tabIndex="-1"
+                  />
+                </div>
+              </div>
+              <input
+                data-css-fplhjw=""
+                name="sample"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                readOnly={true}
+                type="radio"
+                value="part"
+              />
+              <div
+                data-css-nrxvu5=""
+              >
+                Part-time employement
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <div
+          data-css-141usbw=""
+        />
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          aria-checked={false}
+          data-css-nq9iqf=""
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="checkbox"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
+          tabIndex={0}
+        >
+          <div
+            data-css-1lu7sfl=""
           >
             <div
-              data-css-7d5932=""
+              data-css-19bj9q0=""
             >
-              <button
-                data-css-176v989=""
-                disabled={false}
-                style={Object {}}
-              >
-                <span
-                  data-css-15b13by=""
-                >
-                  Save
-                </span>
-              </button>
+              <div
+                data-css-1o90whm=""
+              />
             </div>
+          </div>
+          <input
+            checked={false}
+            data-css-6wu9td=""
+            readOnly={true}
+            tabIndex="-1"
+            type="checkbox"
+          />
+          <span
+            data-css-1oms9gl=""
+          >
+            toggle
+          </span>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <div
+          data-css-141usbw=""
+        />
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <label
+          data-css-na8jqt=""
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            data-css-9kywkh=""
+          >
+            Comment
+          </div>
+          <div
+            data-css-1ios7mb=""
+          >
             <div
-              data-css-7d5932=""
+              data-css-ctre2o=""
             >
-              <button
-                data-css-17fxkyy=""
+              <textarea
+                data-css-dpjpe2=""
                 disabled={false}
-                style={Object {}}
-              >
-                <span
-                  data-css-15b13by=""
-                >
-                  Cancel
-                </span>
-              </button>
+                placeholder="Anything else to report?"
+                rows={4}
+                style={
+                  Object {
+                    "height": 112,
+                  }
+                }
+              />
             </div>
+          </div>
+        </label>
+      </div>
+      <div
+        data-css-4l6uky=""
+      >
+        <div
+          data-css-1cqgl9p=""
+        >
+          <div
+            data-css-7d5932=""
+          >
+            <button
+              data-css-176v989=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                data-css-15b13by=""
+              >
+                Save
+              </span>
+            </button>
+          </div>
+          <div
+            data-css-7d5932=""
+          >
+            <button
+              data-css-17fxkyy=""
+              disabled={false}
+              style={Object {}}
+            >
+              <span
+                data-css-15b13by=""
+              >
+                Cancel
+              </span>
+            </button>
           </div>
         </div>
       </div>

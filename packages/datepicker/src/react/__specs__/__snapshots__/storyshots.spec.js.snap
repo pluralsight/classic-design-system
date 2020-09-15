@@ -1,2411 +1,2275 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots appearance default 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-ctre2o=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-ctre2o=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots appearance default w/ error 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-dysqqm=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    Problem field
+  </div>
+  <div
+    data-css-in6gqi=""
+  >
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-dysqqm=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
       >
-        Problem field
-      </div>
-      <div
-        data-css-in6gqi=""
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
+        </div>
+      </button>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
-          <div
-            data-css-1ha66tv=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="warning icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
         </div>
       </div>
-    </label>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots appearance subtle 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-ctre2o=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    <div
+      data-css-sl686u=""
     >
-      <div
-        data-css-ctre2o=""
+      <input
+        data-css-18at7l7=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-2cik8p=""
+      >
+        /
+      </span>
+      <input
+        data-css-18at7l7=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-2cik8p=""
+      >
+        /
+      </span>
+      <input
+        data-css-18at7l7=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-1rt4171=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-sl686u=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-18at7l7=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-2cik8p=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-18at7l7=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-2cik8p=""
-          >
-            /
-          </span>
-          <input
-            data-css-18at7l7=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-1rt4171=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots appearance subtle w/ error 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-dysqqm=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    Problem field
+  </div>
+  <div
+    data-css-in6gqi=""
+  >
+    <div
+      data-css-sl686u=""
     >
-      <div
-        data-css-dysqqm=""
+      <input
+        data-css-18at7l7=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-2cik8p=""
       >
-        Problem field
-      </div>
-      <div
-        data-css-in6gqi=""
+        /
+      </span>
+      <input
+        data-css-18at7l7=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-2cik8p=""
+      >
+        /
+      </span>
+      <input
+        data-css-18at7l7=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-1rt4171=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-sl686u=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-18at7l7=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-2cik8p=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-18at7l7=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-2cik8p=""
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
+        </div>
+      </button>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-18at7l7=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-1rt4171=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
-          <div
-            data-css-1ha66tv=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="warning icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
         </div>
       </div>
-    </label>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots disabled compare 1`] = `
-<div
-  data-css-12kxz7c=""
->
-  <div
-    data-css-1r7zk4a=""
+<div>
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
   >
-    <div>
-      <label
-        data-css-w0yocm=""
-        onKeyDown={[Function]}
-      >
-        <div
-          data-css-dysqqm=""
-        >
-          Normal
-        </div>
-        <div
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-e41y4a=""
-          >
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="mm"
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd"
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="yyyy"
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value=""
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={false}
-              readOnly={true}
-              tabIndex="-1"
-            />
-            <button
-              data-css-m80zy8=""
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
-          data-css-6ga4kh=""
-        >
-          Still normal
-        </div>
-      </label>
-      <label
-        data-css-1y0hkm3=""
-        onKeyDown={[Function]}
-      >
-        <div
-          data-css-dysqqm=""
-        >
-          I'm not usable
-        </div>
-        <div
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-e41y4a=""
-          >
-            <input
-              data-css-1ynlp2p=""
-              disabled={true}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="mm"
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={true}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd"
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={true}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="yyyy"
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value=""
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={true}
-              readOnly={true}
-              tabIndex="-1"
-            />
-            <button
-              data-css-m80zy8=""
-              disabled={true}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div
-          data-css-6ga4kh=""
-        >
-          Neither am I
-        </div>
-      </label>
+    <div
+      data-css-dysqqm=""
+    >
+      Normal
     </div>
-  </div>
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-e41y4a=""
+      >
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={false}
+          readOnly={true}
+          tabIndex="-1"
+        />
+        <button
+          data-css-m80zy8=""
+          disabled={false}
+          onClick={[Function]}
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-6ga4kh=""
+    >
+      Still normal
+    </div>
+  </label>
+  <label
+    data-css-1y0hkm3=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      I'm not usable
+    </div>
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-e41y4a=""
+      >
+        <input
+          data-css-1ynlp2p=""
+          disabled={true}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={true}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={true}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={true}
+          readOnly={true}
+          tabIndex="-1"
+        />
+        <button
+          data-css-m80zy8=""
+          disabled={true}
+          onClick={[Function]}
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-6ga4kh=""
+    >
+      Neither am I
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots labels compare w/ textinput 1`] = `
-<div
-  data-css-12kxz7c=""
->
+<div>
   <div
-    data-css-1r7zk4a=""
+    style={
+      Object {
+        "marginBottom": "12px",
+      }
+    }
   >
-    <div>
+    <label
+      data-css-w0yocm=""
+      onKeyDown={[Function]}
+    >
       <div
-        style={
-          Object {
-            "marginBottom": "12px",
-          }
-        }
+        data-css-ctre2o=""
       >
-        <label
-          data-css-w0yocm=""
-          onKeyDown={[Function]}
+        <div
+          data-css-e41y4a=""
         >
-          <div
-            data-css-ctre2o=""
+          <input
+            data-css-1ynlp2p=""
+            disabled={false}
+            name="mm"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
+          />
+          <span
+            data-css-9eecwn=""
+          >
+            /
+          </span>
+          <input
+            data-css-1ynlp2p=""
+            disabled={false}
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span
+            data-css-9eecwn=""
+          >
+            /
+          </span>
+          <input
+            data-css-1ynlp2p=""
+            disabled={false}
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            data-css-gyrv08=""
+            disabled={false}
+            readOnly={true}
+            tabIndex="-1"
+          />
+          <button
+            data-css-m80zy8=""
+            disabled={false}
+            onClick={[Function]}
           >
             <div
-              data-css-e41y4a=""
+              data-css-7dab2f=""
             >
-              <input
-                data-css-1ynlp2p=""
-                disabled={false}
-                name="mm"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="mm"
-                style={
-                  Object {
-                    "width": "32px",
-                  }
-                }
-                value=""
-              />
-              <span
-                data-css-9eecwn=""
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                /
-              </span>
-              <input
-                data-css-1ynlp2p=""
-                disabled={false}
-                name="dd"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="dd"
-                style={
-                  Object {
-                    "width": "28px",
-                  }
-                }
-                value=""
-              />
-              <span
-                data-css-9eecwn=""
-              >
-                /
-              </span>
-              <input
-                data-css-1ynlp2p=""
-                disabled={false}
-                name="yyyy"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="yyyy"
-                style={
-                  Object {
-                    "width": "50px",
-                  }
-                }
-                value=""
-              />
-              <input
-                data-css-gyrv08=""
-                disabled={false}
-                readOnly={true}
-                tabIndex="-1"
-              />
-              <button
-                data-css-m80zy8=""
-                disabled={false}
-                onClick={[Function]}
-              >
-                <div
-                  data-css-7dab2f=""
-                >
-                  <svg
-                    aria-label="calendar icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                    />
-                  </svg>
-                </div>
-              </button>
-            </div>
-          </div>
-        </label>
-      </div>
-      <div>
-        <label
-          data-css-w0yocm=""
-        >
-          <div
-            data-css-1r967oi=""
-          >
-            <div
-              data-css-ctre2o=""
-            >
-              <div
-                data-css-ydex85=""
-              >
-                <input
-                  data-css-zjzpem=""
-                  disabled={false}
-                  size="medium"
-                  type="date"
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
                 />
-              </div>
+              </svg>
             </div>
-          </div>
-        </label>
+          </button>
+        </div>
       </div>
-    </div>
+    </label>
+  </div>
+  <div>
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ydex85=""
+          >
+            <input
+              data-css-zjzpem=""
+              disabled={false}
+              size="medium"
+              type="date"
+            />
+          </div>
+        </div>
+      </div>
+    </label>
   </div>
 </div>
 `;
 
 exports[`Storyshots labels label 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-dysqqm=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    Some label
+  </div>
+  <div
+    data-css-ctre2o=""
+  >
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-dysqqm=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
       >
-        Some label
-      </div>
-      <div
-        data-css-ctre2o=""
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots labels label and subLabel 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-dysqqm=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    Some label
+  </div>
+  <div
+    data-css-ctre2o=""
+  >
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-dysqqm=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
       >
-        Some label
-      </div>
-      <div
-        data-css-ctre2o=""
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-      <div
-        data-css-6ga4kh=""
-      >
-        Some sublabel
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+  <div
+    data-css-6ga4kh=""
+  >
+    Some sublabel
+  </div>
+</label>
 `;
 
 exports[`Storyshots labels none 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-ctre2o=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-ctre2o=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        onSelect={[Function]}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            onSelect={[Function]}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots labels subLabel 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-ctre2o=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-ctre2o=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-      <div
-        data-css-6ga4kh=""
-      >
-        Some sublabel
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+  <div
+    data-css-6ga4kh=""
+  >
+    Some sublabel
+  </div>
+</label>
 `;
 
 exports[`Storyshots layouts full width 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "border": "1px solid blue",
+      "width": "500px",
+    }
+  }
 >
-  <div
-    data-css-1r7zk4a=""
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "display": "block",
+        "width": "100%",
+      }
+    }
   >
     <div
-      style={
-        Object {
-          "border": "1px solid blue",
-          "width": "500px",
-        }
-      }
+      data-css-dysqqm=""
     >
-      <label
-        data-css-w0yocm=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-dysqqm=""
-        >
-          First
-        </div>
-        <div
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-e41y4a=""
-          >
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="mm"
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd"
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="yyyy"
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value=""
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={false}
-              readOnly={true}
-              tabIndex="-1"
-            />
-            <button
-              data-css-m80zy8=""
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-      </label>
-      <label
-        data-css-w0yocm=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-dysqqm=""
-        >
-          Second
-        </div>
-        <div
-          data-css-in6gqi=""
-        >
-          <div
-            data-css-e41y4a=""
-          >
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="mm"
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd"
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="yyyy"
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value=""
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={false}
-              readOnly={true}
-              tabIndex="-1"
-            />
-            <button
-              data-css-m80zy8=""
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
-            <div
-              data-css-1ha66tv=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="warning icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </label>
-      <label
-        data-css-w0yocm=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-dysqqm=""
-        >
-          Third
-        </div>
-        <div
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-sl686u=""
-          >
-            <input
-              data-css-18at7l7=""
-              disabled={false}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="mm"
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-2cik8p=""
-            >
-              /
-            </span>
-            <input
-              data-css-18at7l7=""
-              disabled={false}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd"
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-2cik8p=""
-            >
-              /
-            </span>
-            <input
-              data-css-18at7l7=""
-              disabled={false}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="yyyy"
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value=""
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={false}
-              readOnly={true}
-              tabIndex="-1"
-            />
-            <button
-              data-css-1rt4171=""
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-      </label>
-      <label
-        data-css-w0yocm=""
-        onKeyDown={[Function]}
-        style={
-          Object {
-            "display": "block",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          data-css-dysqqm=""
-        >
-          Fourth
-        </div>
-        <div
-          data-css-in6gqi=""
-        >
-          <div
-            data-css-sl686u=""
-          >
-            <input
-              data-css-18at7l7=""
-              disabled={false}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="mm"
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-2cik8p=""
-            >
-              /
-            </span>
-            <input
-              data-css-18at7l7=""
-              disabled={false}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd"
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-2cik8p=""
-            >
-              /
-            </span>
-            <input
-              data-css-18at7l7=""
-              disabled={false}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="yyyy"
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value=""
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={false}
-              readOnly={true}
-              tabIndex="-1"
-            />
-            <button
-              data-css-1rt4171=""
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
-            <div
-              data-css-1ha66tv=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="warning icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </label>
+      First
     </div>
-  </div>
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-e41y4a=""
+      >
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={false}
+          readOnly={true}
+          tabIndex="-1"
+        />
+        <button
+          data-css-m80zy8=""
+          disabled={false}
+          onClick={[Function]}
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "display": "block",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Second
+    </div>
+    <div
+      data-css-in6gqi=""
+    >
+      <div
+        data-css-e41y4a=""
+      >
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={false}
+          readOnly={true}
+          tabIndex="-1"
+        />
+        <button
+          data-css-m80zy8=""
+          disabled={false}
+          onClick={[Function]}
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </button>
+        <div
+          data-css-1ha66tv=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "display": "block",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Third
+    </div>
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-sl686u=""
+      >
+        <input
+          data-css-18at7l7=""
+          disabled={false}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-2cik8p=""
+        >
+          /
+        </span>
+        <input
+          data-css-18at7l7=""
+          disabled={false}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-2cik8p=""
+        >
+          /
+        </span>
+        <input
+          data-css-18at7l7=""
+          disabled={false}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={false}
+          readOnly={true}
+          tabIndex="-1"
+        />
+        <button
+          data-css-1rt4171=""
+          disabled={false}
+          onClick={[Function]}
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
+    style={
+      Object {
+        "display": "block",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Fourth
+    </div>
+    <div
+      data-css-in6gqi=""
+    >
+      <div
+        data-css-sl686u=""
+      >
+        <input
+          data-css-18at7l7=""
+          disabled={false}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-2cik8p=""
+        >
+          /
+        </span>
+        <input
+          data-css-18at7l7=""
+          disabled={false}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-2cik8p=""
+        >
+          /
+        </span>
+        <input
+          data-css-18at7l7=""
+          disabled={false}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={false}
+          readOnly={true}
+          tabIndex="-1"
+        />
+        <button
+          data-css-1rt4171=""
+          disabled={false}
+          onClick={[Function]}
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </button>
+        <div
+          data-css-1ha66tv=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots layouts right-aligned 1`] = `
 <div
-  data-css-12kxz7c=""
+  style={
+    Object {
+      "border": "1px solid blue",
+    }
+  }
 >
   <div
-    data-css-1r7zk4a=""
-  >
-    <div
-      style={
-        Object {
-          "border": "1px solid blue",
-        }
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "flex-end",
       }
+    }
+  >
+    <label
+      data-css-w0yocm=""
+      onKeyDown={[Function]}
     >
       <div
-        style={
-          Object {
-            "display": "flex",
-            "justifyContent": "flex-end",
-          }
-        }
+        data-css-ctre2o=""
       >
-        <label
-          data-css-w0yocm=""
-          onKeyDown={[Function]}
+        <div
+          data-css-sl686u=""
         >
-          <div
-            data-css-ctre2o=""
+          <input
+            data-css-18at7l7=""
+            disabled={false}
+            name="mm"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="mm"
+            style={
+              Object {
+                "width": "32px",
+              }
+            }
+            value=""
+          />
+          <span
+            data-css-2cik8p=""
+          >
+            /
+          </span>
+          <input
+            data-css-18at7l7=""
+            disabled={false}
+            name="dd"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="dd"
+            style={
+              Object {
+                "width": "28px",
+              }
+            }
+            value=""
+          />
+          <span
+            data-css-2cik8p=""
+          >
+            /
+          </span>
+          <input
+            data-css-18at7l7=""
+            disabled={false}
+            name="yyyy"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="yyyy"
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+            value=""
+          />
+          <input
+            data-css-gyrv08=""
+            disabled={false}
+            readOnly={true}
+            tabIndex="-1"
+          />
+          <button
+            data-css-1rt4171=""
+            disabled={false}
+            onClick={[Function]}
           >
             <div
-              data-css-sl686u=""
+              data-css-7dab2f=""
             >
-              <input
-                data-css-18at7l7=""
-                disabled={false}
-                name="mm"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="mm"
-                style={
-                  Object {
-                    "width": "32px",
-                  }
-                }
-                value=""
-              />
-              <span
-                data-css-2cik8p=""
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                /
-              </span>
-              <input
-                data-css-18at7l7=""
-                disabled={false}
-                name="dd"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="dd"
-                style={
-                  Object {
-                    "width": "28px",
-                  }
-                }
-                value=""
-              />
-              <span
-                data-css-2cik8p=""
-              >
-                /
-              </span>
-              <input
-                data-css-18at7l7=""
-                disabled={false}
-                name="yyyy"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="yyyy"
-                style={
-                  Object {
-                    "width": "50px",
-                  }
-                }
-                value=""
-              />
-              <input
-                data-css-gyrv08=""
-                disabled={false}
-                readOnly={true}
-                tabIndex="-1"
-              />
-              <button
-                data-css-1rt4171=""
-                disabled={false}
-                onClick={[Function]}
-              >
-                <div
-                  data-css-7dab2f=""
-                >
-                  <svg
-                    aria-label="calendar icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                    />
-                  </svg>
-                </div>
-              </button>
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
             </div>
-          </div>
-        </label>
+          </button>
+        </div>
       </div>
-      <div
-        style={
-          Object {
-            "border": "3px solid green",
-            "height": "50px",
-          }
-        }
-      />
-    </div>
+    </label>
   </div>
+  <div
+    style={
+      Object {
+        "border": "3px solid green",
+        "height": "50px",
+      }
+    }
+  />
 </div>
 `;
 
 exports[`Storyshots value single slash-separated value 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-ctre2o=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-ctre2o=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder={12}
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value={12}
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder={7}
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value={7}
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder={1941}
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value={1941}
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        readOnly={true}
+        tabIndex="-1"
+        value="12/07/1941"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder={12}
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value={12}
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder={7}
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value={7}
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder={1941}
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value={1941}
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            readOnly={true}
-            tabIndex="-1"
-            value="12/07/1941"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots value updated value, no initial 1`] = `
-<div
-  data-css-12kxz7c=""
->
+<div>
   <div
-    data-css-1r7zk4a=""
+    style={
+      Object {
+        "color": "rgba(255, 255, 255, 0.95)",
+      }
+    }
   >
-    <div>
+    Selected: 
+  </div>
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-ctre2o=""
+    >
       <div
-        style={
-          Object {
-            "color": "rgba(255, 255, 255, 0.95)",
+        data-css-e41y4a=""
+      >
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
           }
-        }
-      >
-        Selected: 
-      </div>
-      <label
-        data-css-w0yocm=""
-        onKeyDown={[Function]}
-      >
-        <div
-          data-css-ctre2o=""
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value=""
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value=""
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={false}
+          onSelect={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+        />
+        <button
+          data-css-m80zy8=""
+          disabled={false}
+          onClick={[Function]}
         >
           <div
-            data-css-e41y4a=""
+            data-css-7dab2f=""
           >
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="mm"
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd"
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value=""
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="yyyy"
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value=""
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={false}
-              onSelect={[Function]}
-              readOnly={true}
-              tabIndex="-1"
-            />
-            <button
-              data-css-m80zy8=""
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
           </div>
-        </div>
-      </label>
+        </button>
+      </div>
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots value updated value, w/ initial 1`] = `
-<div
-  data-css-12kxz7c=""
->
+<div>
   <div
-    data-css-1r7zk4a=""
+    style={
+      Object {
+        "color": "rgba(255, 255, 255, 0.95)",
+      }
+    }
   >
-    <div>
+    Selected: 
+    3/15/1995
+  </div>
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-ctre2o=""
+    >
       <div
-        style={
-          Object {
-            "color": "rgba(255, 255, 255, 0.95)",
+        data-css-e41y4a=""
+      >
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="mm"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder={3}
+          style={
+            Object {
+              "width": "32px",
+            }
           }
-        }
-      >
-        Selected: 
-        3/15/1995
-      </div>
-      <label
-        data-css-w0yocm=""
-        onKeyDown={[Function]}
-      >
-        <div
-          data-css-ctre2o=""
+          value={3}
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="dd"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder={15}
+          style={
+            Object {
+              "width": "28px",
+            }
+          }
+          value={15}
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          disabled={false}
+          name="yyyy"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder={1995}
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+          value={1995}
+        />
+        <input
+          data-css-gyrv08=""
+          disabled={false}
+          onSelect={[Function]}
+          readOnly={true}
+          tabIndex="-1"
+          value="3/15/1995"
+        />
+        <button
+          data-css-m80zy8=""
+          disabled={false}
+          onClick={[Function]}
         >
           <div
-            data-css-e41y4a=""
+            data-css-7dab2f=""
           >
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="mm"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder={3}
-              style={
-                Object {
-                  "width": "32px",
-                }
-              }
-              value={3}
-            />
-            <span
-              data-css-9eecwn=""
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
             >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="dd"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder={15}
-              style={
-                Object {
-                  "width": "28px",
-                }
-              }
-              value={15}
-            />
-            <span
-              data-css-9eecwn=""
-            >
-              /
-            </span>
-            <input
-              data-css-1ynlp2p=""
-              disabled={false}
-              name="yyyy"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder={1995}
-              style={
-                Object {
-                  "width": "50px",
-                }
-              }
-              value={1995}
-            />
-            <input
-              data-css-gyrv08=""
-              disabled={false}
-              onSelect={[Function]}
-              readOnly={true}
-              tabIndex="-1"
-              value="3/15/1995"
-            />
-            <button
-              data-css-m80zy8=""
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="calendar icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                  />
-                </svg>
-              </div>
-            </button>
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
           </div>
-        </div>
-      </label>
+        </button>
+      </div>
     </div>
-  </div>
+  </label>
 </div>
 `;
 
 exports[`Storyshots whitelist name 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-ctre2o=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-ctre2o=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        name="myFieldNameOfPower"
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            name="myFieldNameOfPower"
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+</label>
 `;
 
 exports[`Storyshots whitelist onChange 1`] = `
-<div
-  data-css-12kxz7c=""
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
 >
   <div
-    data-css-1r7zk4a=""
+    data-css-ctre2o=""
   >
-    <label
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
+    <div
+      data-css-e41y4a=""
     >
-      <div
-        data-css-ctre2o=""
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="mm"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="dd"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "28px",
+          }
+        }
+        value=""
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        disabled={false}
+        name="yyyy"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "50px",
+          }
+        }
+        value=""
+      />
+      <input
+        data-css-gyrv08=""
+        disabled={false}
+        onChange={[Function]}
+        readOnly={true}
+        tabIndex="-1"
+      />
+      <button
+        data-css-m80zy8=""
+        disabled={false}
+        onClick={[Function]}
       >
         <div
-          data-css-e41y4a=""
+          data-css-7dab2f=""
         >
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "28px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            data-css-1ynlp2p=""
-            disabled={false}
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "50px",
-              }
-            }
-            value=""
-          />
-          <input
-            data-css-gyrv08=""
-            disabled={false}
-            onChange={[Function]}
-            readOnly={true}
-            tabIndex="-1"
-          />
-          <button
-            data-css-m80zy8=""
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-          </button>
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
         </div>
-      </div>
-    </label>
+      </button>
+    </div>
   </div>
-</div>
+</label>
 `;

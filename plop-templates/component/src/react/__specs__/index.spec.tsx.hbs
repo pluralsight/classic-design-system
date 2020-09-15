@@ -1,0 +1,22 @@
+import { render } from '@testing-library/react'
+import React from 'react'
+
+import {{pascalCase name}} from '..'
+
+describe('{{pascalCase name}}', () => {
+  it('renders', () => {
+    const { getByTestId } = render(
+      <{{pascalCase name}} data-testid="undertest" />
+    )
+
+    expect(getByTestId('undertest')).toBeInTheDocument()
+  })
+
+  it('forwards refs', () => {
+    const ref = React.createRef()
+
+    render(<{{pascalCase name}} ref={ref} />)
+
+    expect(ref.current).not.toBeNull()
+  })
+})
