@@ -36,6 +36,14 @@ install:
     - yarn config set ignore-engines true
     - yarn install
 
+danger:
+  image: node:13.8-alpine
+  stage: lint
+  script:
+    - danger ci --failOnErrors
+  only:
+    - merge_requests
+
 lint:
   image: node:13.8-alpine
   stage: lint

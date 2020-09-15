@@ -18,6 +18,11 @@
       "packages/**"
     ]
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "scripts": {
     "build": "lerna run build",
     "clean": "del '{,!(node_modules)/}**/dist'",
@@ -71,6 +76,7 @@
     "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-angular": "^8.2.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/config-lerna-scopes": "^8.2.0",
     "@octopusdeploy/gulp-octo": "0.0.12",
     "@storybook/addon-actions": "^6.0.21",
@@ -93,6 +99,9 @@
     "babel-plugin-macros": "^2.6.1",
     "core-js": "^3.6.5",
     "cross-env": "^6.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "danger": "^10.4.0",
+    "danger-plugin-conventional-commitlint": "^1.0.4",
     "del": "^5.1.0",
     "del-cli": "^3.0.1",
     "enzyme": "^3.10.0",
