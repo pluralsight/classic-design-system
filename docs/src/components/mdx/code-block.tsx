@@ -31,7 +31,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
   })
 
   const [selectedOption, setSelectedOption] = React.useState(
-    'value' + examples[1].i
+    'value' + examples[0].i
   )
 
   if (isSwitcher) {
