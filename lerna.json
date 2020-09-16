@@ -1,10 +1,6 @@
 {
-  "packages": ["./packages/*"],
+  "packages": ["docs", "./packages/*"],
   "version": "independent",
-  "command": {
-    "bootstrap": {
-      "npmClientArgs": ["--no-package-lock"],
-      "ci": false
-    }
-  }
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }

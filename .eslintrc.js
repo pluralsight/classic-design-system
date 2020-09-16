@@ -7,21 +7,21 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    jest: true
+    jest: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     sourceType: 'module',
     project: './tsconfig.json',
-    createDefaultProgram: true
+    createDefaultProgram: true,
   },
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   extends: [
     'standard',
@@ -35,7 +35,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier/flowtype',
     'prettier/react',
-    'prettier/standard'
+    'prettier/standard',
   ],
   plugins: ['@typescript-eslint', 'jest', 'react', 'react-hooks', 'prettier'],
   rules: {
@@ -53,7 +53,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-return': IGNORE,
     '@typescript-eslint/no-use-before-define': [
       ERROR,
-      { classes: false, functions: false, variables: false }
+      { classes: false, functions: false, variables: false },
     ],
     '@typescript-eslint/no-floating-promises': IGNORE,
     '@typescript-eslint/no-unused-vars': [WARNING, { argsIgnorePattern: '^_' }],
@@ -70,15 +70,28 @@ module.exports = {
     'react-hooks/rules-of-hooks': ERROR,
     'react/display-name': IGNORE,
     'react/jsx-no-bind': IGNORE,
+    'react/jsx-pascal-case': IGNORE,
     'react/no-unescaped-entities': WARNING,
-    'react/prop-types': IGNORE
+    'react/prop-types': IGNORE,
   },
   overrides: [
     {
       files: ['packages/site/pages/**/*.js', '**/__stories__/*.js'],
       rules: {
-        'react/jsx-key': [IGNORE]
-      }
-    }
-  ]
+        'react/jsx-key': IGNORE,
+      },
+    },
+    {
+      files: ['*.tsx?'],
+      rules: {
+        'react/display-name': IGNORE,
+      },
+    },
+    {
+      files: ['*.json'],
+      rules: {
+        'no-unused-expressions': IGNORE,
+      },
+    },
+  ],
 }

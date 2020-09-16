@@ -103,7 +103,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           data-css-1ij5lym=""
         >
           <button
-            data-css-11n5d38=""
+            data-css-16atklq=""
             icon={<MenuIcon />}
             onClick={[Function]}
           >
@@ -237,7 +237,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           data-css-1ij5lym=""
         >
           <button
-            data-css-11n5d38=""
+            data-css-16atklq=""
             icon={<MenuIcon />}
             onClick={[Function]}
           >
@@ -401,7 +401,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           data-css-1ij5lym=""
         >
           <button
-            data-css-11n5d38=""
+            data-css-16atklq=""
             icon={<MenuIcon />}
             onClick={[Function]}
           >
@@ -515,7 +515,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             data-css-1ij5lym=""
           >
             <button
-              data-css-11n5d38=""
+              data-css-16atklq=""
               icon={<HomeIcon />}
             >
               <span
@@ -583,7 +583,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             data-css-1ij5lym=""
           >
             <button
-              data-css-15wi3dl=""
+              data-css-8y1zv3=""
               icon={<BrowseIcon />}
               onClick={[Function]}
             >
@@ -685,7 +685,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             data-css-1ij5lym=""
           >
             <button
-              data-css-11n5d38=""
+              data-css-16atklq=""
               icon={<NotificationsIcon />}
             >
               <span
@@ -744,7 +744,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             data-css-1ij5lym=""
           >
             <button
-              data-css-11n5d38=""
+              data-css-16atklq=""
               icon={<AccountIcon />}
             >
               <span
