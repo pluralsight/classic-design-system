@@ -22,7 +22,7 @@ import React from 'react'
 
 function Example() {
   return Object.keys(Button.appearances).map(a =>
-    <Button appearance={Button.appearances.[a]}>Click me</Button>
+    <Button appearance={Button.appearances.[a]} key={a}>Click me</Button>
   )
 }
 
@@ -39,7 +39,7 @@ import React from 'react'
 
 function Example() {
   return Object.keys(Button.sizes).map(s =>
-    <Button size={Button.sizes[s]}>Click me</Button>
+    <Button size={Button.sizes[s]} key={s}>Click me</Button>
   )
 }
 
@@ -121,12 +121,62 @@ import React from 'react'
 
 function Example() {
   return <>
-    <Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>,
+    <Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>
     <Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<PencilIcon />}>Link with icon</Button>
   </>
 }
 
 export default Example
 
+---
+
+---
+title: With react-router
+description: Many users of this component are using it in conjunction with [`react-router`](https://github.com/ReactTraining/react-router/issues/1176) . If you'd like to do the same and use `Button` to trigger react-router links, you can follow this pattern.
+---
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+import { BrowserRouter as Router, withRouter } from 'react-router-dom'
+
+function Example() {
+  // #1 Define your react-router-specific ButtonLink
+  const ButtonLink = withRouter(props => (
+    <Button
+      {...props}
+      onClick={evt => {
+        evt.preventDefault();
+        props.onClick && props.onClick(evt);
+        props.history.push(props.to);
+      }}
+      href={props.to}
+    />
+  ))
+
+  // #2 Invoke it like you'd usually use Link
+  return <Router><ButtonLink to="/react-wonderland">React-router Link as DS button</ButtonLink></Router>
+}
+
+export default Example
+
+---
+
+---
+title: Loading prop
+description: To show a spinner, pass a `loading` flag to your button. By default, it replaces your icon. If no icon is present, it replaces your text.
+---
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return (
+    <Button
+      icon={<UserIcon />}
+      loading
+    >Loading...</Button>
+  )
+}
+
+export default Example
 ```
 
