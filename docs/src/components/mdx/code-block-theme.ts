@@ -3,12 +3,19 @@ import { PrismTheme } from 'prism-react-renderer'
 import {
   colorsBackgroundDark,
   colorsBackgroundLight,
+  colorsBlue,
+  colorsGreen,
+  colorsPurple,
+  colorsPink,
+  colorsRed,
+  colorsOrange,
   colorsTextIcon,
+  colorsTeal
 } from '@pluralsight/ps-design-system-core'
 
 export const darkTheme: PrismTheme = {
   plain: {
-    color: colorsTextIcon.lowOnDark,
+    color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBackgroundDark[2],
   },
 
@@ -20,160 +27,171 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['atrule'],
-      style: { color: '#c792ea' },
+      style: { color: '#996300' },
     },
     {
       types: ['attr-name'],
-      style: { color: '#ffcb6b' },
+      style: { color: '#996300' },
     },
     {
       types: ['attr-value'],
-      style: { color: '#a5e844' },
+      style: { color: '#996300' },
     },
     {
       types: ['attribute'],
-      style: { color: '#a5e844' },
+      style: { color: '#996300' },
     },
     {
       types: ['boolean'],
-      style: { color: '#c792ea' },
+      style: { color: colorsGreen[4] },
     },
     {
       types: ['builtin'],
-      style: { color: '#ffcb6b' },
+      style: { color: colorsTextIcon.lowOnDark },
     },
     {
       types: ['cdata'],
-      style: { color: '#80cbc4' },
+      style: { color: '#996300' },
     },
     {
       types: ['char'],
-      style: { color: '#80cbc4' },
+      style: { color: '#996300' },
     },
     {
       types: ['class'],
-      style: { color: '#ffcb6b' },
+      style: { color: '#996300' },
     },
     {
-      types: ['class-name'],
-      style: { color: '#f2ff00' },
+      types: ['class-name', 'maybe-class-name'],
+      style: { color: colorsBlue[4] },
     },
     {
       types: ['comment'],
-      style: { color: '#616161' },
+      style: { 
+        color: colorsTextIcon.lowOnDark,
+        fontStyle: 'italic'
+      },
     },
     {
       types: ['constant'],
-      style: { color: '#c792ea' },
+      style: { color: colorsRed[4] },
     },
     {
       types: ['deleted'],
-      style: { color: '#ff6666' },
+      style: { color: '#996300' },
     },
     {
       types: ['doctype'],
-      style: { color: '#616161' },
+      style: { color: '#996300' },
     },
     {
       types: ['entity'],
-      style: { color: '#ff6666' },
+      style: { color: '#996300' },
     },
     {
       types: ['function'],
-      style: { color: '#c792ea' },
+      style: { color: colorsBlue[5] },
     },
     {
       types: ['hexcode'],
-      style: { color: '#f2ff00' },
+      style: { color: '#996300' },
     },
     {
       types: ['id'],
       style: {
-        color: '#c792ea',
+        color: '#996300',
         fontWeight: 'bold',
       },
     },
     {
       types: ['important'],
       style: {
-        color: '#c792ea',
+        color: '#996300',
         fontWeight: 'bold',
       },
     },
     {
       types: ['inserted'],
-      style: { color: '#80cbc4' },
+      style: { color: '#996300' },
     },
     {
       types: ['keyword'],
-      style: { color: '#c792ea' },
+      style: { color: colorsPink[4] },
     },
     {
       types: ['number'],
-      style: { color: '#fd9170' },
+      style: { color: colorsGreen[4] },
     },
     {
       types: ['operator'],
-      style: { color: '#89ddff' },
+      style: { color: colorsTextIcon.lowOnDark },
+    },
+    {
+      types: ['parameter'],
+      style: { color: colorsBlue[4] },
     },
     {
       types: ['prolog'],
-      style: { color: '#616161' },
+      style: { color: colorsTextIcon.lowOnDark },
     },
     {
       types: ['property'],
-      style: { color: '#80cbc4' },
+      style: { color: '#996300' },
+    },
+    {
+      types: ['property-access'],
+      style: { color: colorsPurple[3] },
     },
     {
       types: ['pseudo-class'],
-      style: { color: '#a5e844' },
+      style: { color: '#996300' },
     },
     {
       types: ['pseudo-element'],
-      style: { color: '#a5e844' },
+      style: { color: '#996300' },
     },
     {
       types: ['punctuation'],
-      style: { color: '#89ddff' },
+      style: { color: colorsTextIcon.lowOnDark },
     },
     {
       types: ['regex'],
-      style: { color: '#f2ff00' },
+      style: { color: colorsOrange[4] },
     },
     {
       types: ['selector'],
-      style: { color: '#ff6666' },
+      style: { color: '#996300' },
     },
     {
       types: ['string'],
-      style: { color: '#a5e844' },
+      style: { color: colorsGreen[4] },
     },
     {
       types: ['symbol'],
-      style: { color: '#c792ea' },
+      style: { color: '#996300' },
     },
     {
       types: ['tag'],
-      style: { color: '#ff6666' },
+      style: { color: '#996300' },
     },
     {
       types: ['unit'],
-      style: { color: '#fd9170' },
+      style: { color: '#996300' },
     },
     {
       types: ['url'],
-      style: { color: '#ff6666' },
+      style: { color: '#996300' },
     },
     {
       types: ['variable'],
-      style: { color: '#ff6666' },
+      style: { color: '#996300' },
     },
   ],
 }
 
 export const lightTheme: PrismTheme = {
   plain: {
-    color: colorsTextIcon.lowOnLight,
+    color: colorsTextIcon.highOnLight,
     backgroundColor: colorsBackgroundLight[2],
   },
 
@@ -185,153 +203,164 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['atrule'],
-      style: { color: '#7c4dff' },
+      style: { color: '#996300' },
     },
     {
       types: ['attr-name'],
-      style: { color: '#39adb5' },
+      style: { color: '#996300' },
     },
     {
       types: ['attr-value'],
-      style: { color: '#f6a434' },
+      style: { color: '#996300' },
     },
     {
       types: ['attribute'],
-      style: { color: '#f6a434' },
+      style: { color: '#996300' },
     },
     {
       types: ['boolean'],
-      style: { color: '#7c4dff' },
+      style: { color: colorsGreen[8]  },
     },
     {
       types: ['builtin'],
-      style: { color: '#39adb5' },
+      style: { color: colorsTextIcon.lowOnLight },
     },
     {
       types: ['cdata'],
-      style: { color: '#39adb5' },
+      style: { color: '#996300' },
     },
     {
       types: ['char'],
-      style: { color: '#39adb5' },
+      style: { color: '#996300' },
     },
     {
       types: ['class'],
-      style: { color: '#39adb5' },
+      style: { color: '#996300' },
     },
     {
-      types: ['class-name'],
-      style: { color: '#6182b8' },
+      types: ['class-name', 'maybe-class-name'],
+      style: { color: colorsBlue[8] },
     },
     {
       types: ['comment'],
-      style: { color: '#aabfc9' },
+      style: { 
+        color: colorsTextIcon.lowOnLight,
+        fontStyle: 'italic'
+      },
     },
     {
       types: ['constant'],
-      style: { color: '#7c4dff' },
+      style: { color: colorsRed[8] },
     },
     {
       types: ['deleted'],
-      style: { color: '#e53935' },
+      style: { color: '#996300' },
     },
     {
       types: ['doctype'],
-      style: { color: '#aabfc9' },
+      style: { color: '#996300' },
     },
     {
       types: ['entity'],
-      style: { color: '#e53935' },
+      style: { color: '#996300' },
     },
     {
       types: ['function'],
-      style: { color: '#7c4dff' },
+      style: { color: colorsBlue[7] },
     },
     {
       types: ['hexcode'],
-      style: { color: '#f76d47' },
+      style: { color: '#996300' },
     },
     {
       types: ['id'],
       style: {
-        color: '#7c4dff',
+        color: '#996300',
         fontWeight: 'bold',
       },
     },
     {
       types: ['important'],
       style: {
-        color: '#7c4dff',
+        color: '#996300',
         fontWeight: 'bold',
       },
     },
     {
       types: ['inserted'],
-      style: { color: '#39adb5' },
+      style: { color: '#996300' },
     },
     {
       types: ['keyword'],
-      style: { color: '#7c4dff' },
+      style: { color: colorsPink[8] },
     },
     {
       types: ['number'],
-      style: { color: '#f76d47' },
+      style: { color: colorsGreen[8] },
     },
     {
       types: ['operator'],
-      style: { color: '#39adb5' },
+      style: { color: colorsTextIcon.lowOnLight },
+    },
+    {
+      types: ['parameter'],
+      style: { color: colorsBlue[8] },
     },
     {
       types: ['prolog'],
-      style: { color: '#aabfc9' },
+      style: { color: colorsTextIcon.lowOnLight },
     },
     {
       types: ['property'],
-      style: { color: '#39adb5' },
+      style: { color: '#996300' },
+    },
+    {
+      types: ['property-access'],
+      style: { color: colorsPurple[7] },
     },
     {
       types: ['pseudo-class'],
-      style: { color: '#f6a434' },
+      style: { color: '#996300' },
     },
     {
       types: ['pseudo-element'],
-      style: { color: '#f6a434' },
+      style: { color: '#996300' },
     },
     {
       types: ['punctuation'],
-      style: { color: '#39adb5' },
+      style: { color: colorsTextIcon.lowOnLight },
     },
     {
       types: ['regex'],
-      style: { color: '#6182b8' },
+      style: { color: colorsOrange[8] },
     },
     {
       types: ['selector'],
-      style: { color: '#e53935' },
+      style: { color: '#996300' },
     },
     {
       types: ['string'],
-      style: { color: '#f6a434' },
+      style: { color: colorsGreen[8] },
     },
     {
       types: ['symbol'],
-      style: { color: '#7c4dff' },
+      style: { color: '#996300' },
     },
     {
       types: ['tag'],
-      style: { color: '#e53935' },
+      style: { color: '#996300' },
     },
     {
       types: ['unit'],
-      style: { color: '#f76d47' },
+      style: { color: '#996300' },
     },
     {
       types: ['url'],
-      style: { color: '#e53935' },
+      style: { color: '#996300' },
     },
     {
       types: ['variable'],
-      style: { color: '#e53935' },
+      style: { color: '#996300' },
     },
   ],
 }
