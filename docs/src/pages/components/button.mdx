@@ -5,7 +5,7 @@ route: /components/button
 
 import Button from '@pluralsight/ps-design-system-button'
 
-import { Intro, Types } from '../../components/component'
+import { Intro, Types, Usage } from '../../components/component'
 
 # Button
 
@@ -184,6 +184,11 @@ export default Example
 
 ## Usage & Types
 
+<Usage install="npm install @pluralsight/ps-design-system-button"
+  import="import Button from '@pluralsight/ps-design-system-button'"
+  packageName="button"
+  />
+
 <Types.Table>
   <Types.Prop name="appearance" required type={<Types.Enum enum={Button.appearances} />} desc="visual style from Button.appearances" default={Button.appearances.primary} />
   <Types.Prop name="disabled" type="boolean" desc="standard input disable flag" default="false" />
@@ -192,6 +197,5 @@ export default Example
   <Types.Prop name="iconAlign" type={<Types.Enum enum={Button.iconAligns} />} desc="horizontal icon placement (from Button.iconAligns)" />
   <Types.Prop name="loading" type="boolean" desc="disables button and shows spinner" default="false" />
   <Types.Prop name="size" type={<Types.Enum enum={Button.sizes} />} desc="button size (from Button.sizes)" default={Button.sizes.medium} />
-  
 </Types.Table>
 
