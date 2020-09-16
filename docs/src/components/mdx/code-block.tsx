@@ -1,3 +1,4 @@
+import { transform } from '@babel/core'
 import frontmatter from '@github-docs/frontmatter'
 import Button from '@pluralsight/ps-design-system-button'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
@@ -119,7 +120,19 @@ const Example: React.FC<ExampleProps> = (props) => {
 
   return (
     <div className={className}>
-      <LiveProvider code={preview.code} scope={preview.scope} noInline>
+      <LiveProvider
+        code={preview.code}
+        scope={preview.scope}
+        noInline
+        transformCode={(code) => {
+          const transformed = transform(code, {
+            filename: 'example.tsx',
+            presets: [require('@babel/preset-typescript')],
+          }).code
+
+          return transformed
+        }}
+      >
         <LiveError />
         <LivePreview className={styles.preview} />
         <Actions>
