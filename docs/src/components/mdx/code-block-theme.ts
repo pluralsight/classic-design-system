@@ -5,12 +5,11 @@ import {
   colorsBackgroundLight,
   colorsBlue,
   colorsGreen,
-  colorsPurple,
-  colorsPink,
-  colorsRed,
   colorsOrange,
-  colorsTextIcon,
-  colorsTeal
+  colorsPink,
+  colorsPurple,
+  colorsRed,
+  colorsTextIcon
 } from '@pluralsight/ps-design-system-core'
 
 export const darkTheme: PrismTheme = {
