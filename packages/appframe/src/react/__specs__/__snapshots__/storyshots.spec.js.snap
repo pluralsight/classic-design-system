@@ -820,7 +820,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
               data-css-1ij5lym=""
             >
               <button
-                data-css-11n5d38=""
+                data-css-16atklq=""
                 icon={<MenuIcon />}
                 onClick={[Function]}
               >
@@ -1257,7 +1257,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
               data-css-1ij5lym=""
             >
               <button
-                data-css-11n5d38=""
+                data-css-16atklq=""
                 icon={<MenuIcon />}
                 onClick={[Function]}
               >
@@ -1694,7 +1694,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
               data-css-1ij5lym=""
             >
               <button
-                data-css-11n5d38=""
+                data-css-16atklq=""
                 icon={<MenuIcon />}
                 onClick={[Function]}
               >

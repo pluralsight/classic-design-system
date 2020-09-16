@@ -21,7 +21,18 @@ Install [nvm](https://github.com/nvm-sh/nvm)
 ```
 nvm install
 nvm use
-npm install
-npm run bootstrap
-npm start
+```
+
+```
+yarn config set ignore-engines true
+
+yarn
+yarn build
+yarn start
+```
+
+## Publishing packages
+
+```
+yarn publish:all
 ```

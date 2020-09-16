@@ -4,10 +4,6 @@
   "description": "Pluralsight design system",
   "license": "Apache-2.0",
   "private": true,
-  "engines": {
-    "node": ">= 7.9",
-    "npm": ">= 4.2"
-  },
   "author": "jaketrent",
   "keywords": [
     "pluralsight",
@@ -15,20 +11,35 @@
     "pattern library"
   ],
   "main": "packages/site/index.js",
+  "workspaces": {
+    "nohoist": [],
+    "packages": [
+      "docs",
+      "packages/**"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist && link-parent-bin",
-    "clean": "lerna clean",
+    "build": "lerna run build --ignore @pluralsight/ps-design-system-docs",
+    "clean": "del '{,!(node_modules)/}**/dist'",
+    "danger:ci": "danger ci --failOnErrors",
     "generate": "plop",
     "generate:component": "plop component",
     "lint": "eslint . --quiet",
     "lint:ci": "eslint .",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
-    "publish": "lerna publish --conventional-commits --message \"build: publish\"",
-    "publish:beta": "npm run publish -- --npm-tag=beta",
-    "site": "cd packages/site && npm start",
-    "start": "npm run site",
-    "test": "jest"
+    "postinstall": "link-parent-bin",
+    "publish:all": "lerna publish --conventional-commits --message \"build: publish\"",
+    "publish:all:beta": "yarn publish -- --npm-tag=beta",
+    "site": "yarn workspace @pluralsight/ps-design-system-site start",
+    "start": "yarn site",
+    "test": "jest",
+    "test:ci": "jest --ci --collect-coverage --verbose"
   },
   "husky": {
     "hooks": {
@@ -45,7 +56,6 @@
     ]
   },
   "dependencies": {
-    "babel-eslint": "^10.0.3",
     "glamor": "^2.20.40",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -66,7 +76,7 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-angular": "^8.2.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/config-lerna-scopes": "^8.2.0",
     "@octopusdeploy/gulp-octo": "0.0.12",
     "@storybook/addon-actions": "^6.0.21",
@@ -81,12 +91,19 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
+    "@types/vfile-message": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.1.0",
     "babel-plugin-macros": "^2.6.1",
     "core-js": "^3.6.5",
     "cross-env": "^6.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "danger": "^10.4.0",
+    "danger-plugin-conventional-commitlint": "^1.0.4",
+    "del": "^5.1.0",
+    "del-cli": "^3.0.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.8.0",
@@ -125,6 +142,7 @@
     "ts-loader": "^6.2.2",
     "typescript": "^3.9.3",
     "webpack": "^4.41.2",
+    "wsrun": "^5.2.1",
     "yargs": "^14.2.3"
   }
 }

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@6.0.15...@pluralsight/ps-design-system-viewtoggle@6.0.16) (2020-09-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
 ## [6.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@6.0.14...@pluralsight/ps-design-system-viewtoggle@6.0.15) (2020-09-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
