@@ -7,8 +7,10 @@ import cx from 'classnames'
 import Prism from 'prismjs/components/prism-core'
 import Highlight, { PrismTheme, defaultProps } from 'prism-react-renderer'
 import React, { HTMLAttributes, useEffect, useState } from 'react'
+import CodeSandboxer from 'react-codesandboxer'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
+import pkg from '../../../package.json'
 import { H2 } from '../mdx'
 import styles from './code-block.module.css'
 import { darkTheme, lightTheme } from './code-block-theme'
@@ -49,6 +51,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
             value={selectedOption}
           />
         </div>
+
         <div>
           {examples.map((example, i) => {
             return 'value' + i === selectedOption ? (
@@ -89,18 +92,6 @@ const Example: React.FC<ExampleProps> = (props) => {
   const isDarkTheme = theme === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
 
-  const [copied, setCopied] = useState(false)
-
-  useEffect(() => {
-    if (!copied) return
-
-    const timer = setTimeout(() => setCopied(false), 1000)
-
-    return () => {
-      clearTimeout(timer)
-    }
-  }, [copied])
-
   const className = cx(
     {
       [styles.codeBlock]: true,
@@ -110,34 +101,12 @@ const Example: React.FC<ExampleProps> = (props) => {
     props.className
   )
 
-  const handleCopy = () => {
-    setCopied(true)
-  }
-
   return (
     <div className={className}>
       <Actions>
         <div className={styles.actionsAlignRight}>
-          {copied && (
-            <Button
-              appearance={Button.appearances.flat}
-              disabled
-              size={Button.sizes.xSmall}
-            >
-              Copied!
-            </Button>
-          )}
-
-          {!copied && (
-            <CopyToClipboard text={props.code} onCopy={handleCopy}>
-              <Button
-                appearance={Button.appearances.flat}
-                size={Button.sizes.xSmall}
-              >
-                Copy
-              </Button>
-            </CopyToClipboard>
-          )}
+          <CopyAction code={props.code} />
+          <CodeSandboxAction code={props.code} />
         </div>
       </Actions>
 
@@ -155,6 +124,88 @@ const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const className = cx(styles.actions, cn)
 
   return <div className={className} {...rest} />
+}
+
+interface CodeSandboxActionProps extends HTMLAttributes<HTMLButtonElement> {
+  code: string
+}
+const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
+  const gitInfo = {
+    account: 'pluralsight',
+    repository: 'design-system',
+    branch: 'master',
+    host: 'github',
+  }
+
+  return (
+    <CodeSandboxer
+      example={props.code}
+      examplePath="does/not/do/anything/but/is/required.tsx"
+      dependencies={{
+        '@babel/runtime': 'latest',
+      }}
+      gitInfo={gitInfo}
+      pkgJSON={pkg}
+      template="create-react-app-typescript"
+    >
+      {(props: { error: string; isDeploying: boolean; isLoading: boolean }) => {
+        const { error, isDeploying, isLoading } = props
+        const deploying = isDeploying || isLoading || false
+
+        const buttonText = deploying ? 'Opening...' : 'Open in Codesandbox'
+
+        if (error) console.log(error)
+
+        return (
+          <Button
+            appearance={Button.appearances.flat}
+            disabled={deploying}
+            size={Button.sizes.xSmall}
+            type="submit"
+          >
+            {error ? 'Error' : buttonText}
+          </Button>
+        )
+      }}
+    </CodeSandboxer>
+  )
+}
+
+interface CopyActionProps extends HTMLAttributes<HTMLButtonElement> {
+  code: string
+}
+const CopyAction: React.FC<CopyActionProps> = (props) => {
+  const [copied, setCopied] = useState(false)
+
+  useEffect(() => {
+    if (!copied) return
+
+    const timer = setTimeout(() => setCopied(false), 1000)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [copied])
+
+  const handleCopy = () => {
+    setCopied(true)
+  }
+
+  return copied ? (
+    <Button
+      appearance={Button.appearances.flat}
+      disabled
+      size={Button.sizes.xSmall}
+    >
+      Copied!
+    </Button>
+  ) : (
+    <CopyToClipboard text={props.code} onCopy={handleCopy}>
+      <Button appearance={Button.appearances.flat} size={Button.sizes.xSmall}>
+        Copy
+      </Button>
+    </CopyToClipboard>
+  )
 }
 
 interface EditorProps extends HTMLAttributes<HTMLPreElement> {
