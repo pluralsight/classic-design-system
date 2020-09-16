@@ -3,7 +3,9 @@ name: button
 route: /components/button
 ---
 
-import { Intro } from '../../components/component'
+import Button from '@pluralsight/ps-design-system-button'
+
+import { Intro, Types } from '../../components/component'
 
 # Button
 
@@ -179,4 +181,17 @@ function Example() {
 
 export default Example
 ```
+
+## Usage & Types
+
+<Types.Table>
+  <Types.Prop name="appearance" required type={<Types.Enum enum={Button.appearances} />} desc="visual style from Button.appearances" default={Button.appearances.primary} />
+  <Types.Prop name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <Types.Prop name="href" type="string" desc="url of resource (renders as anchor)" />
+  <Types.Prop name="icon" type="Icon" desc="Icon component" />
+  <Types.Prop name="iconAlign" type={<Types.Enum enum={Button.iconAligns} />} desc="horizontal icon placement (from Button.iconAligns)" />
+  <Types.Prop name="loading" type="boolean" desc="disables button and shows spinner" default="false" />
+  <Types.Prop name="size" type={<Types.Enum enum={Button.sizes} />} desc="button size (from Button.sizes)" default={Button.sizes.medium} />
+  
+</Types.Table>
 
