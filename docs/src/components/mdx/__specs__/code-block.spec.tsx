@@ -1,3 +1,4 @@
+import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 
 import { formatPreview } from '../code-block'
@@ -12,11 +13,13 @@ describe('#formatPreviewCode', () => {
   })
 
   it('puts each `import` in the scope object', () => {
-    const codeWithImports = `import React from 'react'
-function Test() { return <div>test</div> }
+    const codeWithImports = `import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+function Test() { return <div>2 imports</div> }
 export default Test`
     const actual = formatPreview(codeWithImports)
     expect(actual.code).not.toMatch('import React')
-    expect(actual.scope).toMatchObject({ React: React })
+    expect(actual.code).not.toMatch('import Button')
+    expect(actual.scope).toMatchObject({ React, Button })
   })
 })

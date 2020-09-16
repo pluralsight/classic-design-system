@@ -1,6 +1,7 @@
+import Button from '@pluralsight/ps-design-system-button'
+
 import { transform } from '@babel/core'
 import frontmatter from '@github-docs/frontmatter'
-import Button from '@pluralsight/ps-design-system-button'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -19,7 +20,7 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   metastring?: null
   live?: boolean
 }
-export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
+export const CodeBlock: React.FC<CodeBlockProps> = props => {
   const isSwitcher = /switcher/.test(props.metastring)
   const language = props.className.replace(/language-/, '')
 
@@ -28,7 +29,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
     return {
       i,
       code: content,
-      meta: data || {},
+      meta: data || {}
     }
   })
 
@@ -43,7 +44,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
           <H2>Examples</H2>
           <Dropdown
             onChange={(evt, value, label) => setSelectedOption(value)}
-            menu={examples.map((example) => (
+            menu={examples.map(example => (
               <Dropdown.Item key={example.i} value={'value' + example.i}>
                 {example.meta.title || 'Example #' + example.i}
               </Dropdown.Item>
@@ -86,7 +87,7 @@ interface ExampleProps {
   code: string
   language: string
 }
-const Example: React.FC<ExampleProps> = (props) => {
+const Example: React.FC<ExampleProps> = props => {
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
@@ -107,7 +108,7 @@ const Example: React.FC<ExampleProps> = (props) => {
     {
       [styles.codeBlock]: true,
       [styles.dark]: isDarkTheme,
-      [styles.light]: !isDarkTheme,
+      [styles.light]: !isDarkTheme
     },
     props.className
   )
@@ -124,10 +125,10 @@ const Example: React.FC<ExampleProps> = (props) => {
         code={preview.code}
         scope={preview.scope}
         noInline
-        transformCode={(code) => {
+        transformCode={code => {
           const transformed = transform(code, {
             filename: 'example.tsx',
-            presets: [require('@babel/preset-typescript')],
+            presets: [require('@babel/preset-typescript')]
           }).code
 
           return transformed
@@ -170,7 +171,7 @@ const Example: React.FC<ExampleProps> = (props) => {
 
 CodeBlock.defaultProps = { className: '', live: false }
 
-const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
+const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actions, cn)
 
@@ -181,7 +182,7 @@ interface EditorProps extends HTMLAttributes<HTMLPreElement> {
   language: string
   theme: PrismTheme
 }
-const Editor: React.FC<EditorProps> = (props) => {
+const Editor: React.FC<EditorProps> = props => {
   return (
     <Highlight
       {...defaultProps}
@@ -189,7 +190,7 @@ const Editor: React.FC<EditorProps> = (props) => {
       language={props.language}
       theme={props.theme}
     >
-      {(highlight) => {
+      {highlight => {
         const { tokens, getLineProps, getTokenProps } = highlight
 
         const className = cx(highlight.className, styles.editor)
@@ -218,27 +219,38 @@ export function formatPreview(code: string): PreviewData {
   function replaceExport(data: PreviewData): PreviewData {
     return {
       ...data,
-      code: data.code.replace(/export default (.*)/, 'render(<$1 />)'),
+      code: data.code.replace(/export default (.*)/, 'render(<$1 />)')
     }
   }
 
   function moveImportsToScope(data: PreviewData): PreviewData {
     const findAllImports = /import .+ from '.+'/g
-    const newData = { ...data }
     let singleImportMatch = null
+    const newData = { ...data }
+
+    const imports = []
     while ((singleImportMatch = findAllImports.exec(data.code)) !== null) {
       const singleImportString = singleImportMatch[0]
       const findPackageName = /.*'(.+)'.*/
       const packageName = singleImportString.replace(findPackageName, '$1')
+
+      imports.push({
+        start: singleImportMatch.index,
+        end: singleImportMatch.index + singleImportMatch[0].length,
+        packageName
+      })
+    }
+
+    imports.reverse().forEach(range => {
       const codeWithoutImport =
-        data.code.slice(0, singleImportMatch.index) +
-        data.code.slice(singleImportMatch.index + singleImportMatch[0].length)
+        newData.code.slice(0, range.start) + newData.code.slice(range.end)
       newData.code = codeWithoutImport
       newData.scope = {
         ...newData.scope,
-        ...mapPackageNameToScopes(packageName),
+        ...mapPackageNameToScopes(range.packageName)
       }
-    }
+    })
+
     return newData
   }
 
@@ -247,14 +259,15 @@ export function formatPreview(code: string): PreviewData {
   ): Record<string, unknown> | undefined {
     return {
       // NOTE: as needed, add other common imports for packages used in examples
-      react: { React },
+      '@pluralsight/ps-design-system-button': { Button },
+      react: { React }
     }[packageName]
   }
 
   return moveImportsToScope(
     replaceExport({
       code,
-      scope: {},
+      scope: {}
     })
   )
 }
