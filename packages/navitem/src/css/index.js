@@ -3,6 +3,7 @@ import {
   colorsTextIcon,
   colorsWhite,
   layout,
+  motion,
   type
 } from '@pluralsight/ps-design-system-core'
 import { transparentize } from '@pluralsight/ps-design-system-util'
@@ -27,6 +28,7 @@ export default {
     textDecoration: 'none',
     cursor: 'pointer',
     lineHeight: 0,
+    transition: `all ${motion.speedNormal}`,
 
     '&:hover, &:focus, &:active': {
       color: colorsTextIcon.highOnDark
