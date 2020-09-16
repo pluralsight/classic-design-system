@@ -18,8 +18,9 @@ import { darkTheme, lightTheme } from './code-block-theme'
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   metastring?: null
   live?: boolean
+  startExpanded?: boolean
 }
-export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
+export const CodeBlock: React.FC<CodeBlockProps> = props => {
   const isSwitcher = /switcher/.test(props.metastring)
   const language = props.className.replace(/language-/, '')
 
@@ -28,7 +29,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
     return {
       i,
       code: content,
-      meta: data || {},
+      meta: data || {}
     }
   })
 
@@ -43,7 +44,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
           <H2>Examples</H2>
           <Dropdown
             onChange={(evt, value, label) => setSelectedOption(value)}
-            menu={examples.map((example) => (
+            menu={examples.map(example => (
               <Dropdown.Item key={example.i} value={'value' + example.i}>
                 {example.meta.title || 'Example #' + example.i}
               </Dropdown.Item>
@@ -62,6 +63,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
                   language={language}
                   code={example.code}
                   className={props.className}
+                  startExpanded={props.startExpanded}
                 />
               </React.Fragment>
             ) : null
@@ -83,20 +85,25 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
   }
 }
 
-interface ExampleProps {
+interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   code: string
   language: string
+  startExpanded?: boolean
 }
-const Example: React.FC<ExampleProps> = (props) => {
+const Example: React.FC<ExampleProps> = props => {
+  const { startExpanded = true } = props
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
+
+  const [expanded, setExpanded] = useState<boolean>(startExpanded)
+  const toggleExpanded = () => setExpanded(!expanded)
 
   const className = cx(
     {
       [styles.codeBlock]: true,
       [styles.dark]: isDarkTheme,
-      [styles.light]: !isDarkTheme,
+      [styles.light]: !isDarkTheme
     },
     props.className
   )
@@ -104,13 +111,17 @@ const Example: React.FC<ExampleProps> = (props) => {
   return (
     <div className={className}>
       <Actions>
-        <div className={styles.actionsAlignRight}>
+        <ActionsLeft>
+          <ExpandAction expanded={expanded} onClick={toggleExpanded} />
+        </ActionsLeft>
+
+        <ActionsRight>
           <CopyAction code={props.code} />
           <CodeSandboxAction code={props.code} />
-        </div>
+        </ActionsRight>
       </Actions>
 
-      <Editor language={props.language} theme={codeTheme}>
+      <Editor expanded={expanded} language={props.language} theme={codeTheme}>
         {props.code}
       </Editor>
     </div>
@@ -119,9 +130,21 @@ const Example: React.FC<ExampleProps> = (props) => {
 
 CodeBlock.defaultProps = { className: '', live: false }
 
-const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
+const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actions, cn)
+
+  return <div className={className} {...rest} />
+}
+const ActionsLeft: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+  const { className: cn, ...rest } = props
+  const className = cx(styles.actionsLeft, cn)
+
+  return <div className={className} {...rest} />
+}
+const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+  const { className: cn, ...rest } = props
+  const className = cx(styles.actionsRight, cn)
 
   return <div className={className} {...rest} />
 }
@@ -129,12 +152,12 @@ const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
 interface CodeSandboxActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
+const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
   const gitInfo = {
     account: 'pluralsight',
     repository: 'design-system',
     branch: 'master',
-    host: 'github',
+    host: 'github'
   }
 
   return (
@@ -142,7 +165,7 @@ const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
       example={props.code}
       examplePath="does/not/do/anything/but/is/required.tsx"
       dependencies={{
-        '@babel/runtime': 'latest',
+        '@babel/runtime': 'latest'
       }}
       gitInfo={gitInfo}
       pkgJSON={pkg}
@@ -174,7 +197,7 @@ const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
 interface CopyActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-const CopyAction: React.FC<CopyActionProps> = (props) => {
+const CopyAction: React.FC<CopyActionProps> = props => {
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -208,11 +231,29 @@ const CopyAction: React.FC<CopyActionProps> = (props) => {
   )
 }
 
+interface ExpandActionProps extends HTMLAttributes<HTMLButtonElement> {
+  expanded: boolean
+}
+const ExpandAction: React.FC<ExpandActionProps> = props => {
+  const { expanded, ...rest } = props
+
+  return (
+    <Button
+      appearance={Button.appearances.flat}
+      size={Button.sizes.xSmall}
+      {...rest}
+    >
+      {expanded ? 'Collapse' : 'Expand'} code
+    </Button>
+  )
+}
+
 interface EditorProps extends HTMLAttributes<HTMLPreElement> {
+  expanded: boolean
   language: string
   theme: PrismTheme
 }
-const Editor: React.FC<EditorProps> = (props) => {
+const Editor: React.FC<EditorProps> = props => {
   return (
     <Highlight
       {...defaultProps}
@@ -220,10 +261,14 @@ const Editor: React.FC<EditorProps> = (props) => {
       language={props.language}
       theme={props.theme}
     >
-      {(highlight) => {
+      {highlight => {
         const { tokens, getLineProps, getTokenProps } = highlight
 
-        const className = cx(highlight.className, styles.editor)
+        const className = cx({
+          [highlight.className]: true,
+          [styles.editor]: true,
+          [styles.editorExpanded]: props.expanded
+        })
 
         return (
           <pre className={className}>
