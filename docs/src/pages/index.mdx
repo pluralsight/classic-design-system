@@ -4,7 +4,6 @@ route: /
 ---
 
 import { Guideline } from '../components/guideline'
-import * as Types from '../components/types'
 
 # Hello world
 
@@ -19,19 +18,16 @@ This is `inlineCode`.
 title: First Vanilla
 description: Some good descriptionaires here
 ---
-import React from 'react'
 
-// comment here
-
-const Example: React.FC = () => {
-  return (
-    <div>
-      <p>hello world</p>
-    </div>
-  )
+function Jake() { 
+  const [num, setNum] = React.useState(2)
+  return <div>
+    Wow, React 
+    <button onClick={() => setNum(num + 1)}>{num}</button>
+    </div> 
 }
 
-export default Example
+export default Jake
 
 ---
 

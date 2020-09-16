@@ -1,0 +1,65 @@
+---
+name: button
+route: /components/button
+---
+
+import Button from '@pluralsight/ps-design-system-button'
+
+import { Intro, Types, Usage } from '../../components/component'
+
+# Button
+
+<Intro>
+  Used to call attention, perform an action, or to navigate.
+</Intro>
+
+## Examples
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <Button size={Button.sizes.large} appearance={Button.appearances.primary}>Large primary</Button>
+    <Button size={Button.sizes.large} appearance={Button.appearances.secondary}>Large secondary</Button>
+    <Button size={Button.sizes.large} appearance={Button.appearances.stroke}>Large stroke</Button>
+    <Button size={Button.sizes.large} appearance={Button.appearances.flat}>Large flat</Button>
+
+    <Button size={Button.sizes.medium} appearance={Button.appearances.primary}>Medium primary</Button>
+    <Button size={Button.sizes.medium} appearance={Button.appearances.secondary}>Medium secondary</Button>
+    <Button size={Button.sizes.medium} appearance={Button.appearances.stroke}>Medium stroke</Button>
+    <Button size={Button.sizes.medium} appearance={Button.appearances.flat}>Medium flat</Button>
+
+    <Button size={Button.sizes.small} appearance={Button.appearances.primary}>Medium primary</Button>
+    <Button size={Button.sizes.small} appearance={Button.appearances.secondary}>Medium secondary</Button>
+    <Button size={Button.sizes.small} appearance={Button.appearances.stroke}>Medium stroke</Button>
+    <Button size={Button.sizes.small} appearance={Button.appearances.flat}>Medium flat</Button>
+
+    <Button size={Button.sizes.xSmall} appearance={Button.appearances.primary}>xSmall primary</Button>
+    <Button size={Button.sizes.xSmall} appearance={Button.appearances.secondary}>xSmall secondary</Button>
+    <Button size={Button.sizes.xSmall} appearance={Button.appearances.stroke}>xSmall stroke</Button>
+    <Button size={Button.sizes.xSmall} appearance={Button.appearances.flat}>xSmall flat</Button>
+  </div>
+}
+
+export default Example
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-button"
+  import="import Button from '@pluralsight/ps-design-system-button'"
+  packageName="button"
+  />
+
+<Types.Table>
+  <Types.Prop name="appearance" required type={<Types.Enum enum={Button.appearances} />} desc="visual style from Button.appearances" default={Button.appearances.primary} />
+  <Types.Prop name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <Types.Prop name="href" type="string" desc="url of resource (renders as anchor)" />
+  <Types.Prop name="icon" type="Icon" desc="Icon component" />
+  <Types.Prop name="iconAlign" type={<Types.Enum enum={Button.iconAligns} />} desc="horizontal icon placement (from Button.iconAligns)" />
+  <Types.Prop name="loading" type="boolean" desc="disables button and shows spinner" default="false" />
+  <Types.Prop name="size" type={<Types.Enum enum={Button.sizes} />} desc="button size (from Button.sizes)" default={Button.sizes.medium} />
+</Types.Table>
+
