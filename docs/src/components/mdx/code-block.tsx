@@ -1,4 +1,11 @@
 import Button from '@pluralsight/ps-design-system-button'
+import {
+  CheckIcon,
+  ChannelIcon,
+  PencilIcon,
+  PlayIcon,
+  UserIcon
+} from '@pluralsight/ps-design-system-icon'
 
 import { transform } from '@babel/core'
 import frontmatter from '@github-docs/frontmatter'
@@ -260,6 +267,13 @@ export function formatPreview(code: string): PreviewData {
     return {
       // NOTE: as needed, add other common imports for packages used in examples
       '@pluralsight/ps-design-system-button': { Button },
+      '@pluralsight/ps-design-system-icon': {
+        CheckIcon,
+        ChannelIcon,
+        PencilIcon,
+        PlayIcon,
+        UserIcon
+      },
       react: { React }
     }[packageName]
   }

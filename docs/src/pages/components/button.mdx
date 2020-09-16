@@ -1,0 +1,132 @@
+---
+name: button
+route: /components/button
+---
+
+import { Intro } from '../../components/component'
+
+# Button
+
+<Intro>
+  Used to call attention, perform an action, or to navigate.
+</Intro>
+
+
+```typescript switcher
+---
+title: Appearance prop
+description: Buttons come in three standard visual styles.
+---
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+
+function Example() {
+  return Object.keys(Button.appearances).map(a =>
+    <Button appearance={Button.appearances.[a]}>Click me</Button>
+  )
+}
+
+export default Example
+
+---
+
+---
+title: Size prop
+description: Buttons come in four standard sizes. The default size is 'medium'.
+---
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+
+function Example() {
+  return Object.keys(Button.sizes).map(s =>
+    <Button size={Button.sizes[s]}>Click me</Button>
+  )
+}
+
+export default Example
+
+---
+
+---
+title: Icon prop
+description: Buttons may include an icon to the left or right of the label. Read more [icon docs](/components/icon).
+---
+import Button from '@pluralsight/ps-design-system-button'
+import { CheckIcon, ChannelIcon, PlayIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <>
+    <Button icon={<CheckIcon />}>With Icon</Button>
+    <Button icon={<ChannelIcon />} appearance={Button.appearances.stroke}>With Icon</Button>
+    <Button icon={<PlayIcon />} iconAlign={Button.iconAligns.right} appearance={Button.appearances.flat}>Aligned to Right</Button>
+  </>
+}
+
+export default Example
+
+---
+
+---
+title: Icon only
+description: Buttons may include an icon without a label. Please provide a `title` prop to display the native tooltip as well as to support assistive technology (i.e. screen readers).
+---
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <>
+    <Button icon={<UserIcon />} title="Profile" />
+    <Button
+      icon={<UserIcon />}
+      appearance={Button.appearances.flat}
+      title="Profile"
+    />
+  </>
+}
+
+export default Example
+
+---
+
+---
+title: Disabled prop
+description: Each button may be displayed as disabled. Do not use disabled treatment for non-disabled buttons.
+---
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <>
+    <Button disabled>Disabled</Button>
+    <Button disabled appearance={Button.appearances.stroke}>Disabled</Button>
+    <Button disabled appearance={Button.appearances.flat}>Disabled</Button>
+    <Button disabled icon={<PencilIcon />}>Disabled</Button>
+  </>
+}
+
+export default Example
+
+---
+
+---
+title: As link
+description: Elements that are visually equivalent to buttons but change the URL and link to a new experience should be rendered as HTML anchor tags. Provide an `href` prop, and the button will render as an anchor tag.
+---
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <>
+    <Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>,
+    <Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<PencilIcon />}>Link with icon</Button>
+  </>
+}
+
+export default Example
+
+```
+
