@@ -1,21 +1,10 @@
-import Carousel from '@pluralsight/ps-design-system-carousel'
-import Card from '@pluralsight/ps-design-system-card'
-import Button from '@pluralsight/ps-design-system-button'
-import {
-  CheckIcon,
-  ChannelIcon,
-  PencilIcon,
-  PlayIcon,
-  UserIcon,
-} from '@pluralsight/ps-design-system-icon'
-
 import { transform } from '@babel/core'
 import { Language } from 'prism-react-renderer'
 import React, { HTMLAttributes } from 'react'
 import { LiveError, LiveProvider, LivePreview } from 'react-live'
-import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
 import styles from './styles.module.css'
+import { mapPackageNameToScopes } from './package-map'
 
 const SUPPORTED_LANGUAGES: Language[] = [
   'javascript',
@@ -56,26 +45,6 @@ export const Preview: React.FC<PreviewProps> = (props) => {
 
 export function formatPreview(code: string): PreviewData {
   return moveImportsToScope(replaceExport({ code, scope: {} }))
-}
-
-// NOTE: add packages and other common imports as needed in examples
-function mapPackageNameToScopes(
-  packageName: string
-): Record<string, unknown> | undefined {
-  return {
-    '@pluralsight/ps-design-system-carousel': { Carousel },
-    '@pluralsight/ps-design-system-card': { Card },
-    '@pluralsight/ps-design-system-button': { Button },
-    '@pluralsight/ps-design-system-icon': {
-      CheckIcon,
-      ChannelIcon,
-      PencilIcon,
-      PlayIcon,
-      UserIcon,
-    },
-    react: { React },
-    'react-router-dom': { Router, withRouter },
-  }[packageName]
 }
 
 function moveImportsToScope(data: PreviewData): PreviewData {

@@ -5,6 +5,8 @@ import React, { HTMLAttributes } from 'react'
 
 import { CodeBlock } from '../code-block'
 
+import * as styles from './index.module.css'
+
 export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = (props) => (
   <Link>
     <a {...props} />
@@ -18,13 +20,13 @@ export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
 )
 
 export const H2: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
-  <Text.Heading size={Text.Heading.sizes.large}>
+  <Text.Heading size={Text.Heading.sizes.large} className={styles.h2}>
     <h2 {...props}>{props.children}</h2>
   </Text.Heading>
 )
 
 export const H3: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
-  <Text.Heading size={Text.Heading.sizes.medium}>
+  <Text.Heading size={Text.Heading.sizes.medium} className={styles.h3}>
     <h3 {...props}>{props.children}</h3>
   </Text.Heading>
 )
