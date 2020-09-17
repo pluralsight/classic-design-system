@@ -88,12 +88,14 @@ export default {
     padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.left}.psds-text-input--small`]: {
-    padding: `0 ${layout.spacingXSmall} 0 ${parseInt(layout.spacingMedium, 10) +
-      parseInt(iconWidths.medium, 10)}px`
+    padding: `0 ${layout.spacingXSmall} 0 ${
+      parseInt(layout.spacingMedium, 10) + parseInt(iconWidths.medium, 10)
+    }px`
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.right}.psds-text-input--small`]: {
-    padding: `0 ${parseInt(layout.spacingMedium, 10) +
-      parseInt(iconWidths.medium, 10)}px 0 ${layout.spacingXSmall}`
+    padding: `0 ${
+      parseInt(layout.spacingMedium, 10) + parseInt(iconWidths.medium, 10)
+    }px 0 ${layout.spacingXSmall}`
   },
 
   // __field-container

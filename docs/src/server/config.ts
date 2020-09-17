@@ -20,13 +20,13 @@ type Cache = {
 let cache: Cache
 
 const defaults: Partial<Cache> = {
-    appName: 'design-system-docs',
-    host: '0.0.0.0',
-    logLevel: 'info',
-    port: 3000
-  }
+  appName: 'design-system-docs',
+  host: '0.0.0.0',
+  logLevel: 'info',
+  port: 3000
+}
 
-  // NOTE: create and load config as soon as this file is accessed
+// NOTE: create and load config as soon as this file is accessed
 ;(function loadFromEnv(seed?: Partial<Cache>): Cache {
   dotenv.config()
 

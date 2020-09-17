@@ -11,7 +11,7 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   switcher?: boolean
   startExpanded?: boolean
 }
-export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
+export const CodeBlock: React.FC<CodeBlockProps> = props => {
   const { children, switcher = false, startExpanded, ...rest } = props
   const language = props.className.replace(/language-/, '') as Language
 
@@ -21,7 +21,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
     {
       [styles.codeBlock]: true,
       [styles.dark]: isDarkTheme,
-      [styles.light]: !isDarkTheme,
+      [styles.light]: !isDarkTheme
     },
     props.className
   )

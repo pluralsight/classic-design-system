@@ -10,7 +10,7 @@ const SUPPORTED_LANGUAGES: Language[] = [
   'javascript',
   'jsx',
   'tsx',
-  'typescript',
+  'typescript'
 ]
 
 interface PreviewData {
@@ -22,7 +22,7 @@ interface PreviewProps extends HTMLAttributes<HTMLDivElement> {
   code: string
   language: Language
 }
-export const Preview: React.FC<PreviewProps> = (props) => {
+export const Preview: React.FC<PreviewProps> = props => {
   const { code, language } = props
 
   const supported = SUPPORTED_LANGUAGES.includes(language)
@@ -61,18 +61,18 @@ function moveImportsToScope(data: PreviewData): PreviewData {
     imports.push({
       start: singleImportMatch.index,
       end: singleImportMatch.index + singleImportMatch[0].length,
-      packageName,
+      packageName
     })
   }
 
-  imports.reverse().forEach((range) => {
+  imports.reverse().forEach(range => {
     const codeWithoutImport =
       newData.code.slice(0, range.start) + newData.code.slice(range.end)
 
     newData.code = codeWithoutImport
     newData.scope = {
       ...newData.scope,
-      ...mapPackageNameToScopes(range.packageName),
+      ...mapPackageNameToScopes(range.packageName)
     }
   })
 
@@ -82,14 +82,14 @@ function moveImportsToScope(data: PreviewData): PreviewData {
 function replaceExport(data: PreviewData): PreviewData {
   return {
     ...data,
-    code: data.code.replace(/export default (.*)/, 'render(<$1 />)'),
+    code: data.code.replace(/export default (.*)/, 'render(<$1 />)')
   }
 }
 
 function transformCode(code: string) {
   const transformed = transform(code, {
     filename: 'example.tsx',
-    presets: [require('@babel/preset-typescript')],
+    presets: [require('@babel/preset-typescript')]
   }).code
 
   return transformed

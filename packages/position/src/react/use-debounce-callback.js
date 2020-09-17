@@ -4,7 +4,7 @@ export default function useDebounceCallback(fn, delay = 100) {
   const timeout = React.useRef()
 
   const debounced = React.useCallback(
-    function() {
+    function () {
       const self = this
       const args = arguments
 

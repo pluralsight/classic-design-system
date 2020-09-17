@@ -12,7 +12,7 @@ interface EditorProps extends HTMLAttributes<HTMLPreElement> {
   expanded: boolean
   language: Language
 }
-export const Editor: React.FC<EditorProps> = (props) => {
+export const Editor: React.FC<EditorProps> = props => {
   const { children: code, expanded, language, ...rest } = props
 
   const theme = useTheme()
@@ -26,13 +26,13 @@ export const Editor: React.FC<EditorProps> = (props) => {
       language={language}
       theme={codeTheme}
     >
-      {(highlight) => {
+      {highlight => {
         const { tokens, getLineProps, getTokenProps } = highlight
 
         const className = cx({
           [highlight.className]: true,
           [styles.editor]: true,
-          [styles.editorExpanded]: expanded,
+          [styles.editorExpanded]: expanded
         })
 
         return (

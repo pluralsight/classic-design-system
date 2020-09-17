@@ -31,10 +31,10 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier/@typescript-eslint',
-    'prettier/flowtype',
-    'prettier/react',
     'prettier/standard',
+    'prettier/react',
+    'prettier/flowtype',
+    'prettier/@typescript-eslint',
 
     // NOTE: this must be the last item in the array
     'plugin:prettier/recommended'
@@ -65,7 +65,6 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': WARNING,
     '@typescript-eslint/restrict-template-expressions': WARNING,
     '@typescript-eslint/unbound-method': WARNING,
-    'prettier/prettier': ERROR,
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
     'react/display-name': WARNING,

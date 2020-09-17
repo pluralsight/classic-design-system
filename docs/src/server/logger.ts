@@ -33,7 +33,7 @@ export function createLogger(name): LoggerModule {
     req.logger = logger.child({ correlationId: req.correlationId, id: req.id })
     req.logger.info({ req }, `Request ${req.method} ${req.originalUrl}`)
 
-    res.on('finish', function() {
+    res.on('finish', function () {
       req.logger.info({ res }, `Response ${req.method} ${req.originalUrl}`)
     })
 

@@ -7,7 +7,7 @@ import {
   ChannelIcon,
   PencilIcon,
   PlayIcon,
-  UserIcon,
+  UserIcon
 } from '@pluralsight/ps-design-system-icon'
 
 import React from 'react'
@@ -25,10 +25,10 @@ export const PACKAGE_MAP = {
     ChannelIcon,
     PencilIcon,
     PlayIcon,
-    UserIcon,
+    UserIcon
   },
   react: { React },
-  'react-router-dom': { Router, withRouter },
+  'react-router-dom': { Router, withRouter }
 }
 
 export function mapPackageNameToScopes(pkgName: string) {

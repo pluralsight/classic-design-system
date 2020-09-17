@@ -18,7 +18,7 @@ import {
   ActionsRight,
   CopyAction,
   CodeSandboxAction,
-  ExpandAction,
+  ExpandAction
 } from './actions'
 
 export interface ExampleData {
@@ -34,7 +34,7 @@ interface ExamplesSwitcherProps extends HTMLAttributes<HTMLDivElement> {
   language: Language
   startExpanded: boolean
 }
-export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = (props) => {
+export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
   const { examples, language, className, startExpanded, ...rest } = props
 
   const [selectedOption, setSelectedOption] = React.useState(examples[0].value)
@@ -49,7 +49,7 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = (props) => {
         <H2>Examples</H2>
 
         <Dropdown
-          menu={examples.map((example) => {
+          menu={examples.map(example => {
             return (
               <Dropdown.Item key={example.id} value={example.value}>
                 {example.title}
@@ -63,8 +63,8 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = (props) => {
 
       <div>
         {examples
-          .filter((example) => example.value === selectedOption)
-          .map((example) => {
+          .filter(example => example.value === selectedOption)
+          .map(example => {
             return (
               <Example
                 key={example.id}
@@ -87,7 +87,7 @@ interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   language: Language
   startExpanded?: boolean
 }
-export const Example: React.FC<ExampleProps> = (props) => {
+export const Example: React.FC<ExampleProps> = props => {
   const { code, description, language, startExpanded = true, ...rest } = props
 
   const [expanded, setExpanded] = useState<boolean>(startExpanded)

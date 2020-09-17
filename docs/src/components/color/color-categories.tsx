@@ -604,8 +604,9 @@ const Grid: React.FC<GridProps> = props => {
           props.cols || gridPropDefaults.cols >= 5
             ? 0
             : `${core.layout.spacingMedium} ${core.layout.spacingLarge}`,
-        gridTemplateColumns: `repeat(${props.cols ||
-          gridPropDefaults.cols}, 1fr)`,
+        gridTemplateColumns: `repeat(${
+          props.cols || gridPropDefaults.cols
+        }, 1fr)`,
         backgroundColor: props.bg || 'none',
         padding: props.bg ? core.layout.spacingLarge : 0
       }}

@@ -7,25 +7,21 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import pkg from '../../../package.json'
 import styles from './styles.module.css'
 
-export const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
+export const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actions, cn)
 
   return <div className={className} {...rest} />
 }
 
-export const ActionsLeft: React.FC<HTMLAttributes<HTMLDivElement>> = (
-  props
-) => {
+export const ActionsLeft: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actionsLeft, cn)
 
   return <div className={className} {...rest} />
 }
 
-export const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = (
-  props
-) => {
+export const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actionsRight, cn)
 
@@ -35,12 +31,12 @@ export const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = (
 interface CodeSandboxActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-export const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
+export const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
   const gitInfo = {
     account: 'pluralsight',
     repository: 'design-system',
     branch: 'master',
-    host: 'github',
+    host: 'github'
   }
 
   return (
@@ -48,7 +44,7 @@ export const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
       example={props.code}
       examplePath="does/not/do/anything/but/is/required.tsx"
       dependencies={{
-        '@babel/runtime': 'latest',
+        '@babel/runtime': 'latest'
       }}
       gitInfo={gitInfo}
       pkgJSON={pkg}
@@ -80,7 +76,7 @@ export const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
 interface CopyActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-export const CopyAction: React.FC<CopyActionProps> = (props) => {
+export const CopyAction: React.FC<CopyActionProps> = props => {
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -117,7 +113,7 @@ export const CopyAction: React.FC<CopyActionProps> = (props) => {
 interface ExpandActionProps extends HTMLAttributes<HTMLButtonElement> {
   expanded: boolean
 }
-export const ExpandAction: React.FC<ExpandActionProps> = (props) => {
+export const ExpandAction: React.FC<ExpandActionProps> = props => {
   const { expanded, ...rest } = props
 
   return (
