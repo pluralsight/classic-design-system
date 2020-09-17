@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.1.0...@pluralsight/ps-design-system-docs@0.2.0) (2020-09-17)
+
+
+### Bug Fixes
+
+* **docs:** themeable intro ([d4b0137](https://github.com/pluralsight/design-system/commit/d4b01371b7fa0480874c4f2f5803bffaa370ca74))
+
+
+### Features
+
+* **docs:** add codesandboxer ([a9cbc5d](https://github.com/pluralsight/design-system/commit/a9cbc5d5dc7d5b075587950872681d80e443c522))
+* **docs:** add sandboxer dep ([076ec8a](https://github.com/pluralsight/design-system/commit/076ec8a583249eecb7c7b57991fd81b909347541))
+* **docs:** add TS support in examples ([39975ca](https://github.com/pluralsight/design-system/commit/39975caa87e6446a82a33271a8eccb6e99e21c34))
+* **docs:** add usage table to button ([946a5af](https://github.com/pluralsight/design-system/commit/946a5aff6a8020d661c6eec5e4c215fd94b4c1e6))
+* **docs:** avatar page ([bf722f6](https://github.com/pluralsight/design-system/commit/bf722f6225b59d2bac8da0cacebde4accd73bbf5))
+* **docs:** button page ([b52ffa5](https://github.com/pluralsight/design-system/commit/b52ffa55a0cf4b37f2e8ca5280b3c550af3799ac))
+* **docs:** button page prop table ([d265b0a](https://github.com/pluralsight/design-system/commit/d265b0a6795d52b6c746805ab5a07dc132db84fe))
+* **docs:** daaaaark logo ([4fbef2e](https://github.com/pluralsight/design-system/commit/4fbef2e9819658a44aa116f7d08e7db12d694543))
+* **docs:** expand/collapse code block ([8e2d38a](https://github.com/pluralsight/design-system/commit/8e2d38ae47b1a898d516479a9477a0400df0b2e2))
+* **docs:** finish button examples ([d3ad38e](https://github.com/pluralsight/design-system/commit/d3ad38ee0e7abd32604befd953d25160d35546a1))
+* **docs:** live preview with imports ([b60b2b3](https://github.com/pluralsight/design-system/commit/b60b2b333989c414eb405521621c43a422eabd1b))
+* **docs:** pad that live preview ([a2f97e6](https://github.com/pluralsight/design-system/commit/a2f97e6ce4d62526371b2c31e6a1048c0f07ba33))
+* **docs:** persist theme selection ([a76edb7](https://github.com/pluralsight/design-system/commit/a76edb773d9b9d01bc46c68bdf63f07f0828c1dc))
+* **docs:** render live examples ([0f57525](https://github.com/pluralsight/design-system/commit/0f5752526dce784f929a24b74bb58c134a4209c5))
+* **docs:** reorder imports alphabetically ([d1efbf5](https://github.com/pluralsight/design-system/commit/d1efbf529fcb89920a432ebe56b241d2c188d42f))
+* **docs:** restore old button examples ([011d5e4](https://github.com/pluralsight/design-system/commit/011d5e485c1c558ab6c2a9c2badf104534610eee))
+* **docs:** start to consolidate button examples ([e063f9b](https://github.com/pluralsight/design-system/commit/e063f9b53ff2d74739deb227b74d9003727fbad9))
+* **docs:** use ps colors ([b720b96](https://github.com/pluralsight/design-system/commit/b720b96fd680006cabdeb1f55e60e2be6568cca8))
+
+
+
+
+
 # 0.1.0 (2020-09-15)
 
 

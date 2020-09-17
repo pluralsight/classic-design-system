@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-switch",
-  "version": "6.1.2",
+  "version": "6.1.3",
   "description": "Design System component for switch ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,9 +21,9 @@
   },
   "gitHead": "d9a7f335cc63adf81745cd19561e1b8c09615b25",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.1",
+    "@pluralsight/ps-design-system-core": "^6.4.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
-    "@pluralsight/ps-design-system-halo": "^7.0.12",
+    "@pluralsight/ps-design-system-halo": "^7.0.13",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -33,8 +33,8 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.1",
+    "@pluralsight/ps-design-system-build": "^1.11.16",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.2",
     "@pluralsight/ps-design-system-theme": "^4.0.13"
   }
 }

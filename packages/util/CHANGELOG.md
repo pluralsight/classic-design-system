@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.0.2...@pluralsight/ps-design-system-util@5.1.0) (2020-09-17)
+
+
+### Features
+
+* **util:** add keyMirror fn ([c853e0e](https://github.com/pluralsight/design-system/commit/c853e0eb2ca065a573faab8379ba07b8316a1bce))
+* **util:** export types ([9482a7c](https://github.com/pluralsight/design-system/commit/9482a7c98e7bac77f8cae88fd27b8aee68d59fa1))
+
+
+
+
+
 ## [5.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.0.1...@pluralsight/ps-design-system-util@5.0.2) (2020-09-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util
