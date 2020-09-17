@@ -7,7 +7,7 @@ import {
   ChannelIcon,
   PencilIcon,
   PlayIcon,
-  UserIcon
+  UserIcon,
 } from '@pluralsight/ps-design-system-icon'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
@@ -34,7 +34,7 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   live?: boolean
   startExpanded?: boolean
 }
-export const CodeBlock: React.FC<CodeBlockProps> = props => {
+export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
   const isSwitcher = /switcher/.test(props.metastring)
   const language = props.className.replace(/language-/, '')
 
@@ -43,9 +43,12 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
     return {
       i,
       code: content,
-      meta: data || {}
+      meta: data || {},
     }
   })
+  const isLive =
+    language === 'typescript' &&
+    examples.every((e) => /export default/.test(e.code))
 
   const [selectedOption, setSelectedOption] = React.useState(
     'value' + examples[0].i
@@ -58,7 +61,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
           <H2>Examples</H2>
           <Dropdown
             onChange={(evt, value, label) => setSelectedOption(value)}
-            menu={examples.map(example => (
+            menu={examples.map((example) => (
               <Dropdown.Item key={example.i} value={'value' + example.i}>
                 {example.meta.title || 'Example #' + example.i}
               </Dropdown.Item>
@@ -75,6 +78,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
                 <Example
                   key={i}
                   language={language}
+                  isLive={isLive}
                   code={example.code}
                   className={props.className}
                   startExpanded={props.startExpanded}
@@ -90,6 +94,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
       <>
         <Text.P>{examples[0].meta.description}</Text.P>
         <Example
+          isLive={isLive}
           language={language}
           className={props.className}
           code={examples[0].code}
@@ -98,13 +103,15 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
     )
   }
 }
+CodeBlock.defaultProps = { className: '', live: false, startExpanded: false }
 
 interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   code: string
+  isLive: boolean
   language: string
   startExpanded?: boolean
 }
-const Example: React.FC<ExampleProps> = props => {
+const Example: React.FC<ExampleProps> = (props) => {
   const { startExpanded = false } = props
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
@@ -117,7 +124,7 @@ const Example: React.FC<ExampleProps> = props => {
     {
       [styles.codeBlock]: true,
       [styles.dark]: isDarkTheme,
-      [styles.light]: !isDarkTheme
+      [styles.light]: !isDarkTheme,
     },
     props.className
   )
@@ -126,55 +133,92 @@ const Example: React.FC<ExampleProps> = props => {
 
   return (
     <div className={className}>
-      <LiveProvider
-        code={preview.code}
-        scope={preview.scope}
-        noInline
-        transformCode={code => {
-          const transformed = transform(code, {
-            filename: 'example.tsx',
-            presets: [require('@babel/preset-typescript')]
-          }).code
+      {props.isLive ? (
+        <LiveProvider
+          code={preview.code}
+          scope={preview.scope}
+          noInline
+          transformCode={(code) => {
+            const transformed = transform(code, {
+              filename: 'example.tsx',
+              presets: [require('@babel/preset-typescript')],
+            }).code
 
-          return transformed
-        }}
-      >
-        <LiveError />
-        <LivePreview className={styles.preview} />
-
-        <Actions>
-          <ActionsLeft>
-            <ExpandAction expanded={expanded} onClick={toggleExpanded} />
-          </ActionsLeft>
-
-          <ActionsRight>
-            <CopyAction code={props.code} />
-            <CodeSandboxAction code={props.code} />
-          </ActionsRight>
-        </Actions>
-
-        <Editor expanded={expanded} language={props.language} theme={codeTheme}>
-          {props.code}
-        </Editor>
-      </LiveProvider>
+            return transformed
+          }}
+        >
+          <LivePreview className={styles.preview} />
+          <LiveError />
+          <ReadOnlyExampleControls
+            expanded={expanded}
+            toggleExpanded={toggleExpanded}
+            code={props.code}
+            language={props.language}
+          />
+        </LiveProvider>
+      ) : (
+        <ReadOnlyExampleControls
+          expanded={expanded}
+          toggleExpanded={toggleExpanded}
+          code={props.code}
+          language={props.language}
+        />
+      )}
     </div>
   )
 }
-CodeBlock.defaultProps = { className: '', live: false, startExpanded: false }
+Example.defaultProps = { isLive: false }
 
-const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+interface ReadOnlyExampleControlsProps {
+  expanded: boolean
+  toggleExpanded: () => void
+  code: string
+  language: string
+  codeTheme: PrismTheme
+}
+const ReadOnlyExampleControls: React.FC<ReadOnlyExampleControlsProps> = (
+  props
+) => {
+  return (
+    <>
+      <Actions>
+        <ActionsLeft>
+          <ExpandAction
+            expanded={props.expanded}
+            onClick={props.toggleExpanded}
+          />
+        </ActionsLeft>
+
+        <ActionsRight>
+          <CopyAction code={props.code} />
+          <CodeSandboxAction code={props.code} />
+        </ActionsRight>
+      </Actions>
+
+      <Editor
+        expanded={props.expanded}
+        language={props.language}
+        theme={props.codeTheme}
+      >
+        {props.code}
+      </Editor>
+    </>
+  )
+}
+
+const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actions, cn)
 
   return <div className={className} {...rest} />
 }
-const ActionsLeft: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const ActionsLeft: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actionsLeft, cn)
 
   return <div className={className} {...rest} />
 }
-const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actionsRight, cn)
 
@@ -184,12 +228,12 @@ const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
 interface CodeSandboxActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
+const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
   const gitInfo = {
     account: 'pluralsight',
     repository: 'design-system',
     branch: 'master',
-    host: 'github'
+    host: 'github',
   }
 
   return (
@@ -197,7 +241,7 @@ const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
       example={props.code}
       examplePath="does/not/do/anything/but/is/required.tsx"
       dependencies={{
-        '@babel/runtime': 'latest'
+        '@babel/runtime': 'latest',
       }}
       gitInfo={gitInfo}
       pkgJSON={pkg}
@@ -229,7 +273,7 @@ const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
 interface CopyActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-const CopyAction: React.FC<CopyActionProps> = props => {
+const CopyAction: React.FC<CopyActionProps> = (props) => {
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -266,7 +310,7 @@ const CopyAction: React.FC<CopyActionProps> = props => {
 interface ExpandActionProps extends HTMLAttributes<HTMLButtonElement> {
   expanded: boolean
 }
-const ExpandAction: React.FC<ExpandActionProps> = props => {
+const ExpandAction: React.FC<ExpandActionProps> = (props) => {
   const { expanded, ...rest } = props
 
   return (
@@ -285,7 +329,7 @@ interface EditorProps extends HTMLAttributes<HTMLPreElement> {
   language: string
   theme: PrismTheme
 }
-const Editor: React.FC<EditorProps> = props => {
+const Editor: React.FC<EditorProps> = (props) => {
   return (
     <Highlight
       {...defaultProps}
@@ -293,13 +337,13 @@ const Editor: React.FC<EditorProps> = props => {
       language={props.language}
       theme={props.theme}
     >
-      {highlight => {
+      {(highlight) => {
         const { tokens, getLineProps, getTokenProps } = highlight
 
         const className = cx({
           [highlight.className]: true,
           [styles.editor]: true,
-          [styles.editorExpanded]: props.expanded
+          [styles.editorExpanded]: props.expanded,
         })
 
         return (
@@ -326,7 +370,7 @@ export function formatPreview(code: string): PreviewData {
   function replaceExport(data: PreviewData): PreviewData {
     return {
       ...data,
-      code: data.code.replace(/export default (.*)/, 'render(<$1 />)')
+      code: data.code.replace(/export default (.*)/, 'render(<$1 />)'),
     }
   }
 
@@ -344,17 +388,17 @@ export function formatPreview(code: string): PreviewData {
       imports.push({
         start: singleImportMatch.index,
         end: singleImportMatch.index + singleImportMatch[0].length,
-        packageName
+        packageName,
       })
     }
 
-    imports.reverse().forEach(range => {
+    imports.reverse().forEach((range) => {
       const codeWithoutImport =
         newData.code.slice(0, range.start) + newData.code.slice(range.end)
       newData.code = codeWithoutImport
       newData.scope = {
         ...newData.scope,
-        ...mapPackageNameToScopes(range.packageName)
+        ...mapPackageNameToScopes(range.packageName),
       }
     })
 
@@ -375,17 +419,17 @@ export function formatPreview(code: string): PreviewData {
         ChannelIcon,
         PencilIcon,
         PlayIcon,
-        UserIcon
+        UserIcon,
       },
       react: { React },
-      'react-router-dom': { Router, withRouter }
+      'react-router-dom': { Router, withRouter },
     }[packageName]
   }
 
   return moveImportsToScope(
     replaceExport({
       code,
-      scope: {}
+      scope: {},
     })
   )
 }
