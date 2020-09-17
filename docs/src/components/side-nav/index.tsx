@@ -15,7 +15,7 @@ export const SideNav: React.FC<Props> = () => {
       <Logo />
       <VerticalTabs>
         <VerticalTabs.Group>
-          {items.map((section) => {
+          {items.map(section => {
             const sectionHeader = (
               <VerticalTabs.Tier1.Header>
                 {section.header.title}
@@ -27,7 +27,7 @@ export const SideNav: React.FC<Props> = () => {
                 header={sectionHeader}
                 key={section.header.title}
               >
-                {section.items.map((item) => (
+                {section.items.map(item => (
                   <VerticalTabs.Tier2
                     header={
                       <VerticalTabs.Tier2.Header
@@ -55,38 +55,38 @@ export const SideNav: React.FC<Props> = () => {
 const items = [
   {
     header: {
-      title: 'Core',
+      title: 'Core'
     },
     items: [
       {
         href: '/core/color',
-        title: 'Color',
+        title: 'Color'
       },
       {
         href: '/core/typography',
-        title: 'Typography',
+        title: 'Typography'
       },
       {
         href: '/core/motion',
-        title: 'Motion',
+        title: 'Motion'
       },
       {
         href: '/core/spacing',
-        title: 'Spacing',
-      },
-    ],
+        title: 'Spacing'
+      }
+    ]
   },
   {
     header: {
-      title: 'Actions',
+      title: 'Actions'
     },
     items: [
       {
         href: '/components/button',
-        title: 'Button',
-      },
-    ],
-  },
+        title: 'Button'
+      }
+    ]
+  }
 ]
 
 function Logo() {

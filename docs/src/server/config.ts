@@ -20,13 +20,13 @@ type Cache = {
 let cache: Cache
 
 const defaults: Partial<Cache> = {
-  appName: 'design-system-docs',
-  host: '0.0.0.0',
-  logLevel: 'info',
-  port: 3000,
-}
+    appName: 'design-system-docs',
+    host: '0.0.0.0',
+    logLevel: 'info',
+    port: 3000
+  }
 
-// NOTE: create and load config as soon as this file is accessed
+  // NOTE: create and load config as soon as this file is accessed
 ;(function loadFromEnv(seed?: Partial<Cache>): Cache {
   dotenv.config()
 
@@ -41,7 +41,7 @@ const defaults: Partial<Cache> = {
       : false,
     newRelicLicenseKey: process.env.NEW_RELIC_LICENSE_KEY,
     port: parseInt(process.env.PORT, 10) || defaults.port,
-    publicDir: path.join(__dirname, '..', '..', 'public'),
+    publicDir: path.join(__dirname, '..', '..', 'public')
   }
 
   const config = { ...parsedEnsuredDefaulted, ...seed }

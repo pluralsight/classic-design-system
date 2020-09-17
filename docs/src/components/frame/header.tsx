@@ -12,7 +12,7 @@ interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
   onThemeButtonClick: React.MouseEventHandler<HTMLButtonElement>
 }
 
-export const Header: React.FC<HeaderProps> = (props) => {
+export const Header: React.FC<HeaderProps> = props => {
   const { onMenuButtonClick, onThemeButtonClick, ...rest } = props
   const theme = useTheme()
 
@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
     {
       [styles.header]: true,
       [styles.dark]: theme === Theme.names.dark,
-      [styles.light]: theme === Theme.names.light,
+      [styles.light]: theme === Theme.names.light
     },
     props.className
   )

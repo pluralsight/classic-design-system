@@ -4,7 +4,7 @@ import { HttpError } from 'http-errors'
 import { noticeError } from './newrelic'
 
 export function errorsMiddleware() {
-  return function (
+  return function(
     err: HttpError,
     req: Request,
     res: Response,

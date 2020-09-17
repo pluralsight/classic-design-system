@@ -7,6 +7,6 @@ module.exports = {
   name: name,
   testMatch: [`${__dirname}/**/*/?(*.)+(spec|test).(ts|tsx)`],
   moduleNameMapper: {
-    '\\.(css|less)$': '<rootDir>/jest/__mocks__/cssModuleMock.js',
-  },
+    '\\.(css|less)$': '<rootDir>/jest/__mocks__/cssModuleMock.js'
+  }
 }

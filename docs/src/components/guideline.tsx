@@ -13,13 +13,13 @@ interface GuidelineProps {
   dont: React.ReactNode
   dontStyle: object
 }
-export const Guideline: React.FC<GuidelineProps> = (props) => {
+export const Guideline: React.FC<GuidelineProps> = props => {
   const themeName = useTheme()
   const isSingleCol = props.columnCount === 1
 
   const Layout = isSingleCol
-    ? (layoutProps) => <Fragment {...layoutProps} />
-    : (layoutProps) => {
+    ? layoutProps => <Fragment {...layoutProps} />
+    : layoutProps => {
         return (
           <EqualColumnLayout
             count={numToLayoutCount(props.columnCount)}
@@ -32,7 +32,7 @@ export const Guideline: React.FC<GuidelineProps> = (props) => {
     [styles.box]: true,
     [styles.dark]: themeName === Theme.names.dark,
     [styles.light]: themeName === Theme.names.light,
-    [styles.vertical]: isSingleCol,
+    [styles.vertical]: isSingleCol
   })
   return (
     <Layout className={styles.guidelines}>
@@ -59,7 +59,7 @@ export const Guideline: React.FC<GuidelineProps> = (props) => {
   )
 }
 Guideline.defaultProps = {
-  columnCount: 2,
+  columnCount: 2
 }
 
 function numToLayoutCount(num: number) {

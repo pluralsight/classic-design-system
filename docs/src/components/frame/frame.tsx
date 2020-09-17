@@ -4,7 +4,7 @@ import React, {
   ReactNode,
   useCallback,
   useRef,
-  useState,
+  useState
 } from 'react'
 import { Helmet } from 'react-helmet'
 
@@ -22,7 +22,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   aside: ReactNode
 }
 
-export const Frame: React.FC<Props> = (props) => {
+export const Frame: React.FC<Props> = props => {
   const { aside, children, ...rest } = props
 
   const [menuOpen, setMenuOpen] = useState(false)
@@ -45,7 +45,7 @@ export const Frame: React.FC<Props> = (props) => {
   const className = cx({
     [styles.frame]: true,
     [styles.dark]: theme === Theme.names.dark,
-    [styles.light]: theme === Theme.names.light,
+    [styles.light]: theme === Theme.names.light
   })
 
   return (
@@ -83,8 +83,8 @@ export const Frame: React.FC<Props> = (props) => {
   )
 }
 
-const Container: React.FC = (props) => (
+const Container: React.FC = props => (
   <div className={styles.container} {...props} />
 )
 
-const Main: React.FC = (props) => <main className={styles.main} {...props} />
+const Main: React.FC = props => <main className={styles.main} {...props} />

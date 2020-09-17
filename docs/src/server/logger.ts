@@ -20,7 +20,7 @@ const serializers = {
   ...stdSerializers,
   data: JSON.stringify,
   payload: JSON.stringify,
-  req: serializeRequest,
+  req: serializeRequest
 }
 
 export function createLogger(name): LoggerModule {
@@ -33,7 +33,7 @@ export function createLogger(name): LoggerModule {
     req.logger = logger.child({ correlationId: req.correlationId, id: req.id })
     req.logger.info({ req }, `Request ${req.method} ${req.originalUrl}`)
 
-    res.on('finish', function () {
+    res.on('finish', function() {
       req.logger.info({ res }, `Response ${req.method} ${req.originalUrl}`)
     })
 
@@ -55,8 +55,8 @@ function serializeRequest(req: Request) {
       host: req.headers.host,
       origin: req.headers.origin,
       referer: req.headers.referer,
-      userAgent: req.headers['user-agent'],
+      userAgent: req.headers['user-agent']
     },
-    bodyData: JSON.stringify(req.body || {}),
+    bodyData: JSON.stringify(req.body || {})
   }
 }

@@ -13,7 +13,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   open: boolean
 }
 
-export const Aside: React.FC<Props> = (props) => {
+export const Aside: React.FC<Props> = props => {
   const { onRequestClose, open, ...rest } = props
 
   const ref = useRef()
@@ -26,7 +26,7 @@ export const Aside: React.FC<Props> = (props) => {
     [styles.aside]: true,
     [styles.closed]: !open,
     [styles.dark]: theme === Theme.names.dark,
-    [styles.light]: theme === Theme.names.light,
+    [styles.light]: theme === Theme.names.light
   })
 
   return <aside className={className} ref={ref} {...rest} />

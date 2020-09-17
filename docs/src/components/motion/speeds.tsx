@@ -6,14 +6,14 @@ import * as styles from './speeds.module.css'
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
 const speeds = Object.keys(motion)
-  .filter((key) => /^speed/.test(key))
-  .map((key) => ({ jsVarName: key, time: motion[key] }))
+  .filter(key => /^speed/.test(key))
+  .map(key => ({ jsVarName: key, time: motion[key] }))
   .reverse()
   .map((speed, i) => ({
     ...speed,
     varName: 'psMotion' + capitalize(speed.jsVarName),
     title: ['Extra Slow', 'Slow', 'Normal', 'Fast', 'Extra Fast'][i],
-    icon: ['🐌', '🐢', '🐐', '🐇', '🐆'][i],
+    icon: ['🐌', '🐢', '🐐', '🐇', '🐆'][i]
   }))
 
 export const Speeds = () => (
