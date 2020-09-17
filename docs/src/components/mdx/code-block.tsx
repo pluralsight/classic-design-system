@@ -104,7 +104,7 @@ interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   startExpanded?: boolean
 }
 const Example: React.FC<ExampleProps> = (props) => {
-  const { startExpanded = true } = props
+  const { startExpanded = false } = props
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
@@ -159,7 +159,7 @@ const Example: React.FC<ExampleProps> = (props) => {
     </div>
   )
 }
-CodeBlock.defaultProps = { className: '', live: false }
+CodeBlock.defaultProps = { className: '', live: false, startExpanded: false }
 
 const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className: cn, ...rest } = props
