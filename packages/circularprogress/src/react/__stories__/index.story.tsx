@@ -23,7 +23,7 @@ storiesOf('animation', module).add('animates to new values', _ => {
   const AnimationDemo = () => {
     const [value, updateValue] = React.useState(0)
 
-    React.useEffect(function() {
+    React.useEffect(function () {
       const interval = setInterval(() => {
         const rando = Math.random() * 115
         updateValue(rando)

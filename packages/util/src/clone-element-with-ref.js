@@ -1,6 +1,6 @@
 import { cloneElement } from 'react'
 
-import { isFunction, isRef } from './index.js'
+import { isFunction, isRef } from '.'
 
 export function cloneElementWithRef(element, outerRef, props) {
   const { ref } = element

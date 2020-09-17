@@ -10,7 +10,7 @@ b {
   flex-wrap: wrap;
   margin: calc(var(--psLayoutSpacingLarge) / -2);
 }
-.function {
+.functionBlock {
   position: relative;
   display: flex;
   flex-direction: column;

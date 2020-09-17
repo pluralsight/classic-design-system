@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /// <reference types="react" />
 
 interface Flags {

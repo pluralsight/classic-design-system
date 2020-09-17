@@ -11,6 +11,7 @@ export const withTheme = makeDecorator({
   name: ADDON_ID,
   parameterName: PARAM_KEY,
   wrapper: (storyFn, context) => {
+    // eslint-disable-next-line
     const [themeName] = useAddonState<keyof typeof themeNames>(
       `${ADDON_ID}/name`
     )
