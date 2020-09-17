@@ -40,6 +40,10 @@
   margin-left: auto;
 }
 
+.preview {
+  padding: var(--psLayoutSpacingMedium);
+}
+
 .editor {
   font-family: 'source code pro', monospace;
   font-size: var(--psTypeFontSizeSmall);
@@ -54,3 +58,4 @@
   /* large number so we have something to animate to */
   max-height: 2000px;
 }
+
