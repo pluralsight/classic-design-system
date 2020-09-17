@@ -27,15 +27,17 @@ module.exports = {
     'standard',
     'standard-react',
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:jest/recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'prettier/flowtype',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'prettier/standard',
     'prettier/react',
-    'prettier/standard'
+    'prettier/flowtype',
+    'prettier/@typescript-eslint',
+
+    // NOTE: this must be the last item in the array
+    'plugin:prettier/recommended'
   ],
   plugins: ['@typescript-eslint', 'jest', 'react', 'react-hooks', 'prettier'],
   rules: {
@@ -63,14 +65,12 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': WARNING,
     '@typescript-eslint/restrict-template-expressions': WARNING,
     '@typescript-eslint/unbound-method': WARNING,
-    'prettier/prettier': ERROR,
     'react-hooks/exhaustive-deps': WARNING,
     'react-hooks/rules-of-hooks': ERROR,
     'react/display-name': WARNING,
     'react/jsx-no-bind': IGNORE,
     'react/jsx-pascal-case': IGNORE,
-    'react/no-unescaped-entities': WARNING,
-    'react/prop-types': IGNORE
+    'react/no-unescaped-entities': WARNING
   },
   overrides: [
     {
@@ -80,9 +80,11 @@ module.exports = {
       }
     },
     {
-      files: ['*.tsx?'],
+      files: ['*.ts', '*.tsx'],
       rules: {
-        'react/display-name': IGNORE
+        'import/extensions': IGNORE,
+        'react/display-name': IGNORE,
+        'react/prop-types': IGNORE
       }
     },
     {

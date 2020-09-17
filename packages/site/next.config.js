@@ -8,7 +8,7 @@ const globAsync = util.promisify(glob)
 const webpack = require('webpack')
 
 module.exports = {
-  exportPathMap: async function(defaultPathMap) {
+  exportPathMap: async function (defaultPathMap) {
     const files = await globAsync(`pages/**/*.js`)
     const matchExtension = /\.[^/.]+$/
 

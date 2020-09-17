@@ -40,7 +40,7 @@ export default function useResizeObserver() {
 function debounce(delay, fn) {
   let timerId
 
-  return function(...args) {
+  return function (...args) {
     if (timerId) clearTimeout(timerId)
 
     timerId = setTimeout(() => {

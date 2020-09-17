@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /// <reference types="react" />
 
 export declare type AnyTag = keyof JSX.IntrinsicElements

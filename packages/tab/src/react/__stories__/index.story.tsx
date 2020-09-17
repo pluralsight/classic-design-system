@@ -7,7 +7,13 @@ function randomIntBetween(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function NavigableExample({ count = 5, resizeEvery } : { count?: number, resizeEvery?: number}) {
+function NavigableExample({
+  count = 5,
+  resizeEvery
+}: {
+  count?: number
+  resizeEvery?: number
+}) {
   const [activeIndex, setActiveIndex] = React.useState(2)
   const [width, setWidth] = React.useState(100)
   const menus = Array(count)
@@ -18,7 +24,7 @@ function NavigableExample({ count = 5, resizeEvery } : { count?: number, resizeE
       content: `Menu stuff ${i}`
     }))
   React.useEffect(() => {
-    let timer : number | undefined
+    let timer: number | undefined
     if (resizeEvery) {
       timer = window.setInterval(() => {
         setWidth(randomIntBetween(25, 100))

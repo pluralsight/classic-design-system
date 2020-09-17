@@ -7,7 +7,7 @@ interface SkipBannerProps extends HTMLAttributes<HTMLDivElement> {
   href: string
 }
 
-export const SkipBanner: React.FC<SkipBannerProps> = (props) => (
+export const SkipBanner: React.FC<SkipBannerProps> = props => (
   <div className={styles.skipBanner} {...props}>
     <Button
       appearance={Button.appearances.secondary}

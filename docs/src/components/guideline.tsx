@@ -2,24 +2,24 @@ import Badge from '@pluralsight/ps-design-system-badge'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
-import * as React from 'react'
+import React, { Fragment } from 'react'
 
 import * as styles from './guideline.module.css'
 
 interface GuidelineProps {
   columnCount: 1 | 2 | 3 | 4 | 6
   do: React.ReactNode
-  doStyle: object
+  doStyle: Record<string, unknown>
   dont: React.ReactNode
-  dontStyle: object
+  dontStyle: Record<string, unknown>
 }
-export const Guideline: React.FC<GuidelineProps> = (props) => {
+export const Guideline: React.FC<GuidelineProps> = props => {
   const themeName = useTheme()
   const isSingleCol = props.columnCount === 1
 
   const Layout = isSingleCol
-    ? (layoutProps) => <Fragment {...layoutProps} />
-    : (layoutProps) => {
+    ? layoutProps => <Fragment {...layoutProps} />
+    : layoutProps => {
         return (
           <EqualColumnLayout
             count={numToLayoutCount(props.columnCount)}
@@ -32,7 +32,7 @@ export const Guideline: React.FC<GuidelineProps> = (props) => {
     [styles.box]: true,
     [styles.dark]: themeName === Theme.names.dark,
     [styles.light]: themeName === Theme.names.light,
-    [styles.vertical]: isSingleCol,
+    [styles.vertical]: isSingleCol
   })
   return (
     <Layout className={styles.guidelines}>
@@ -59,7 +59,7 @@ export const Guideline: React.FC<GuidelineProps> = (props) => {
   )
 }
 Guideline.defaultProps = {
-  columnCount: 2,
+  columnCount: 2
 }
 
 function numToLayoutCount(num: number) {

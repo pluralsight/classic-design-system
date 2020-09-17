@@ -75,10 +75,6 @@ SectionHeading.propTypes = {
   notice: PropTypes.node
 }
 
-const formatId = href =>
-  href
-    .toLowerCase()
-    .split(' ')
-    .join('-')
+const formatId = href => href.toLowerCase().split(' ').join('-')
 
 const formatHref = href => '#' + formatId(href)

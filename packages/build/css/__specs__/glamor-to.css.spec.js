@@ -113,8 +113,9 @@ describe('#glamorToCss', () => {
     expect(
       glamorToCss({
         '.psds-button__loading': ({ spin }) => ({
-          animation: `${spin ||
-            'psds-button__keyframes__spin'} 1s linear infinite`
+          animation: `${
+            spin || 'psds-button__keyframes__spin'
+          } 1s linear infinite`
         }),
         '.other': { whiteSpace: 'nowrap' }
       })
