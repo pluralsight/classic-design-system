@@ -1,3 +1,5 @@
+import Carousel from '@pluralsight/ps-design-system-carousel'
+import Card from '@pluralsight/ps-design-system-card'
 import Button from '@pluralsight/ps-design-system-button'
 import {
   CheckIcon,
@@ -267,6 +269,8 @@ export function formatPreview(code: string): PreviewData {
   ): Record<string, unknown> | undefined {
     return {
       // NOTE: as needed, add other common imports for packages used in examples
+      '@pluralsight/ps-design-system-carousel': { Carousel },
+      '@pluralsight/ps-design-system-card': { Card },
       '@pluralsight/ps-design-system-button': { Button },
       '@pluralsight/ps-design-system-icon': {
         CheckIcon,
