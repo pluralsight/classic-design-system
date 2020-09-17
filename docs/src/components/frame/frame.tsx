@@ -6,6 +6,7 @@ import React, {
   useRef,
   useState
 } from 'react'
+import { useCookies } from 'react-cookie'
 import { Helmet } from 'react-helmet'
 
 import Theme from '@pluralsight/ps-design-system-theme'
@@ -17,6 +18,7 @@ import { SkipBanner, SkipTarget } from './skip-banner'
 import styles from './frame.module.css'
 
 const SKIP_TARGET_ID = 'frame--skip-target'
+const THEME_COOKIE_NAME = 'psds-docs-theme'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   aside: ReactNode
@@ -25,15 +27,19 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 export const Frame: React.FC<Props> = props => {
   const { aside, children, ...rest } = props
 
+  const [cookies, setCookie] = useCookies([THEME_COOKIE_NAME])
   const [menuOpen, setMenuOpen] = useState(false)
   const closeMenu = () => setMenuOpen(false)
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
-  const [theme, setTheme] = useState<ValueOf<typeof Theme.names>>(
-    Theme.names.light
+  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
+    cookies[THEME_COOKIE_NAME] || Theme.names.light
   )
   const toggleTheme = () => {
-    setTheme(theme === Theme.names.dark ? Theme.names.light : Theme.names.dark)
+    const newThemeName =
+      themeName === Theme.names.dark ? Theme.names.light : Theme.names.dark
+    setTheme(newThemeName)
+    setCookie(THEME_COOKIE_NAME, newThemeName)
   }
 
   const skipTargetRef = useRef<HTMLAnchorElement>(null)
@@ -44,8 +50,8 @@ export const Frame: React.FC<Props> = props => {
 
   const className = cx({
     [styles.frame]: true,
-    [styles.dark]: theme === Theme.names.dark,
-    [styles.light]: theme === Theme.names.light
+    [styles.dark]: themeName === Theme.names.dark,
+    [styles.light]: themeName === Theme.names.light
   })
 
   return (
@@ -57,7 +63,7 @@ export const Frame: React.FC<Props> = props => {
         />
       </Helmet>
 
-      <Theme name={theme}>
+      <Theme name={themeName}>
         <SkipBanner href={'#' + SKIP_TARGET_ID} onClick={focusSkipTarget} />
 
         <div className={className} {...rest}>
