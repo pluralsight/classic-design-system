@@ -27,15 +27,17 @@ module.exports = {
     'standard',
     'standard-react',
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:jest/recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier/@typescript-eslint',
     'prettier/flowtype',
     'prettier/react',
-    'prettier/standard'
+    'prettier/standard',
+
+    // NOTE: this must be the last item in the array
+    'plugin:prettier/recommended'
   ],
   plugins: ['@typescript-eslint', 'jest', 'react', 'react-hooks', 'prettier'],
   rules: {
