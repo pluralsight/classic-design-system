@@ -1,11 +1,13 @@
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { Link, navigate } from 'gatsby'
 import React, { HTMLAttributes } from 'react'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 import styles from './index.module.css'
-import logo from './logo.png'
+import logoDark from './logo-dark.png'
+import logoLight from './logo-light.png'
 
 export const SideNav: React.FC<Props> = () => {
   return (
@@ -25,7 +27,7 @@ export const SideNav: React.FC<Props> = () => {
                 header={sectionHeader}
                 key={section.header.title}
               >
-                {section.items.map((item) => (
+                {section.items.map(item => (
                   <VerticalTabs.Tier2
                     header={
                       <VerticalTabs.Tier2.Header
@@ -53,33 +55,59 @@ export const SideNav: React.FC<Props> = () => {
 const items = [
   {
     header: {
-      title: 'Core',
+      title: 'Core'
     },
     items: [
       {
         href: '/core/color',
-        title: 'Color',
+        title: 'Color'
       },
       {
         href: '/core/typography',
-        title: 'Typography',
+        title: 'Typography'
       },
       {
         href: '/core/motion',
-        title: 'Motion',
+        title: 'Motion'
       },
       {
         href: '/core/spacing',
-        title: 'Spacing',
-      },
-    ],
+        title: 'Spacing'
+      }
+    ]
   },
+  {
+    header: {
+      title: 'Actions'
+    },
+    items: [
+      {
+        href: '/components/button',
+        title: 'Button'
+      }
+    ]
+  },
+  {
+    header: {
+      title: 'Images & Icons'
+    },
+    items: [
+      {
+        href: '/components/avatar',
+        title: 'Avatar'
+      }
+    ]
+  }
 ]
 
 function Logo() {
+  const themeName = useTheme()
   return (
     <Link to="/">
-      <img src={logo} className={styles.logo} />
+      <img
+        src={themeName === Theme.names.light ? logoLight : logoDark}
+        className={styles.logo}
+      />
     </Link>
   )
 }

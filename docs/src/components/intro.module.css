@@ -1,0 +1,13 @@
+.intro {
+  margin-bottom: var(--psLayoutSpacingLarge);
+  font-size: var(--psTypeFontSizeMedium);
+  line-height: var(--psTypeLineHeightExtra);
+  font-weight: var(--psTypeFontWeightMedium);
+
+  &.light {
+    color: var(--psColorsTextIconHighOnLight);
+  }
+  &.dark {
+    color: var(--psColorsTextIconHighOnDark);
+  }
+}
