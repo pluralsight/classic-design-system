@@ -97,6 +97,17 @@ const items = [
         title: 'Avatar'
       }
     ]
+  },
+  {
+    header: {
+      title: 'Feedback'
+    },
+    items: [
+      {
+        href: '/components/banner',
+        title: 'Banner'
+      }
+    ]
   }
 ]
 

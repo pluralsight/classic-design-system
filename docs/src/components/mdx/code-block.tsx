@@ -1,7 +1,8 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
-import Carousel from '@pluralsight/ps-design-system-carousel'
-import Card from '@pluralsight/ps-design-system-card'
+import Banner from '@pluralsight/ps-design-system-banner'
 import Button from '@pluralsight/ps-design-system-button'
+import Card from '@pluralsight/ps-design-system-card'
+import Carousel from '@pluralsight/ps-design-system-carousel'
 import {
   CheckIcon,
   ChannelIcon,
@@ -367,9 +368,10 @@ export function formatPreview(code: string): PreviewData {
     return {
       // NOTE: as needed, add other common imports for packages used in examples
       '@pluralsight/ps-design-system-avatar': { Avatar },
-      '@pluralsight/ps-design-system-carousel': { Carousel },
-      '@pluralsight/ps-design-system-card': { Card },
+      '@pluralsight/ps-design-system-banner': { Banner },
       '@pluralsight/ps-design-system-button': { Button },
+      '@pluralsight/ps-design-system-card': { Card },
+      '@pluralsight/ps-design-system-carousel': { Carousel },
       '@pluralsight/ps-design-system-icon': {
         CheckIcon,
         ChannelIcon,
