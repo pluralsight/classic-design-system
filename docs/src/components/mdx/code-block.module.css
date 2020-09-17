@@ -36,6 +36,10 @@
   margin-left: auto;
 }
 
+.preview {
+  padding: var(--psLayoutSpacingMedium);
+}
+
 .editor {
   font-family: 'source code pro', monospace;
   font-size: var(--psTypeFontSizeSmall);
@@ -43,3 +47,4 @@
   overflow: auto;
   padding: var(--psLayoutSpacingMedium);
 }
+

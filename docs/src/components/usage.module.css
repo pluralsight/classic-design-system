@@ -1,0 +1,17 @@
+.usage {
+  margin: var(--psLayoutSpacingLarge) 0;
+  list-style: none;
+  font-size: var(--psTypeFontSizeXSmall);
+  line-height: 16px;
+}
+.item {
+  display: flex;
+  margin-bottom: var(--psLayoutSpacingMedium);
+}
+.label {
+  width: 96px;
+  color: var(--psColorsTextIconLowOnLight);
+}
+.value {
+  font-family: var(--psTypeFontFamilyCode);
+}
