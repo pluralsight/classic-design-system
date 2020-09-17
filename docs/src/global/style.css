@@ -9,3 +9,9 @@
   gap: var(--psLayoutSpacingLarge);
   justify-items: start;
 }
+.example-grid--col-5 {
+  display: inline-grid;
+  grid-template-columns: repeat(5, minmax(0, auto));
+  gap: var(--psLayoutSpacingLarge);
+  justify-items: start;
+}

@@ -86,6 +86,17 @@ const items = [
         title: 'Button'
       }
     ]
+  },
+  {
+    header: {
+      title: 'Images & Icons'
+    },
+    items: [
+      {
+        href: '/components/avatar',
+        title: 'Avatar'
+      }
+    ]
   }
 ]
 
