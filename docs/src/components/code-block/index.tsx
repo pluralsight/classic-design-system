@@ -13,7 +13,7 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
 }
 export const CodeBlock: React.FC<CodeBlockProps> = props => {
   const { children, switcher = false, startExpanded, ...rest } = props
-  const language = props.className.replace(/language-/, '') as Language
+  const language = props.className?.replace(/language-/, '') as Language
 
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
