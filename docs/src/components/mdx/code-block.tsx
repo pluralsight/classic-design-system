@@ -7,7 +7,7 @@ import {
   ChannelIcon,
   PencilIcon,
   PlayIcon,
-  UserIcon
+  UserIcon,
 } from '@pluralsight/ps-design-system-icon'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
@@ -32,7 +32,7 @@ import { darkTheme, lightTheme } from './code-block-theme'
 const CodeBlockContext = React.createContext({
   language: null,
   isLive: false,
-  startExpanded: false
+  startExpanded: false,
 })
 
 interface Example {
@@ -44,19 +44,19 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   metastring?: null
   startExpanded?: boolean
 }
-export const CodeBlock: React.FC<CodeBlockProps> = props => {
+export const CodeBlock: React.FC<CodeBlockProps> = (props) => {
   const language = props.className.replace(/language-/, '')
   const examples = props.children.split('\n\n---\n\n').map((example, i) => {
     const { content, data } = frontmatter(example)
     return {
       i,
       code: content,
-      meta: data || {}
+      meta: data || {},
     } as Example
   })
   const isLive =
     language === 'typescript' &&
-    examples.every(e => /export default/.test(e.code))
+    examples.every((e) => /export default/.test(e.code))
 
   const isSwitcher = /switcher/.test(props.metastring)
   return (
@@ -64,7 +64,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
       value={{
         language,
         isLive,
-        startExpanded: props.startExpanded
+        startExpanded: props.startExpanded,
       }}
     >
       {isSwitcher ? (
@@ -80,7 +80,7 @@ CodeBlock.defaultProps = { className: '', startExpanded: false }
 interface SwitcherExampleProps {
   examples: Example[]
 }
-const SwitcherExamples: React.FC<SwitcherExampleProps> = props => {
+const SwitcherExamples: React.FC<SwitcherExampleProps> = (props) => {
   const [selectedOption, setSelectedOption] = React.useState(
     'value' + props.examples[0].i
   )
@@ -90,7 +90,7 @@ const SwitcherExamples: React.FC<SwitcherExampleProps> = props => {
         <H2>Examples</H2>
         <Dropdown
           onChange={(evt, value, label) => setSelectedOption(value)}
-          menu={examples.map(example => (
+          menu={examples.map((example) => (
             <Dropdown.Item key={example.i} value={'value' + example.i}>
               {example.meta.title || 'Example #' + example.i}
             </Dropdown.Item>
@@ -115,11 +115,8 @@ const SwitcherExamples: React.FC<SwitcherExampleProps> = props => {
 
 interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   code: string
-  isLive: boolean
-  language: string
-  startExpanded?: boolean
 }
-const Example: React.FC<ExampleProps> = props => {
+const Example: React.FC<ExampleProps> = (props) => {
   const { isLive } = useContext(CodeBlockContext)
   const themeName = useTheme()
 
@@ -128,7 +125,7 @@ const Example: React.FC<ExampleProps> = props => {
       className={cx({
         [styles.codeBlock]: true,
         [styles.dark]: themeName === Theme.names.dark,
-        [styles.light]: themeName === Theme.names.light
+        [styles.light]: themeName === Theme.names.light,
       })}
     >
       {isLive && <LivePreviewControls code={props.code} />}
@@ -140,17 +137,17 @@ const Example: React.FC<ExampleProps> = props => {
 interface LivePreviewControlsProps {
   code: string
 }
-const LivePreviewControls: React.FC<LivePreviewControlsProps> = props => {
+const LivePreviewControls: React.FC<LivePreviewControlsProps> = (props) => {
   const preview = formatPreview(props.code)
   return (
     <LiveProvider
       code={preview.code}
       scope={preview.scope}
       noInline
-      transformCode={code => {
+      transformCode={(code) => {
         const transformed = transform(code, {
           filename: 'example.tsx',
-          presets: [require('@babel/preset-typescript')]
+          presets: [require('@babel/preset-typescript')],
         }).code
 
         return transformed
@@ -165,7 +162,7 @@ const LivePreviewControls: React.FC<LivePreviewControlsProps> = props => {
 interface TextualControlsProps {
   code: string
 }
-const TextualControls: React.FC<TextualControlsProps> = props => {
+const TextualControls: React.FC<TextualControlsProps> = (props) => {
   const { language, startExpanded } = useContext(CodeBlockContext)
   const themeName = useTheme()
 
@@ -196,19 +193,19 @@ const TextualControls: React.FC<TextualControlsProps> = props => {
   )
 }
 
-const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actions, cn)
 
   return <div className={className} {...rest} />
 }
-const ActionsLeft: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const ActionsLeft: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actionsLeft, cn)
 
   return <div className={className} {...rest} />
 }
-const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actionsRight, cn)
 
@@ -218,12 +215,12 @@ const ActionsRight: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
 interface CodeSandboxActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
+const CodeSandboxAction: React.FC<CodeSandboxActionProps> = (props) => {
   const gitInfo = {
     account: 'pluralsight',
     repository: 'design-system',
     branch: 'master',
-    host: 'github'
+    host: 'github',
   }
 
   return (
@@ -231,7 +228,7 @@ const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
       example={props.code}
       examplePath="does/not/do/anything/but/is/required.tsx"
       dependencies={{
-        '@babel/runtime': 'latest'
+        '@babel/runtime': 'latest',
       }}
       gitInfo={gitInfo}
       pkgJSON={pkg}
@@ -263,7 +260,7 @@ const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
 interface CopyActionProps extends HTMLAttributes<HTMLButtonElement> {
   code: string
 }
-const CopyAction: React.FC<CopyActionProps> = props => {
+const CopyAction: React.FC<CopyActionProps> = (props) => {
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -300,7 +297,7 @@ const CopyAction: React.FC<CopyActionProps> = props => {
 interface ExpandActionProps extends HTMLAttributes<HTMLButtonElement> {
   expanded: boolean
 }
-const ExpandAction: React.FC<ExpandActionProps> = props => {
+const ExpandAction: React.FC<ExpandActionProps> = (props) => {
   const { expanded, ...rest } = props
 
   return (
@@ -319,7 +316,7 @@ interface EditorProps extends HTMLAttributes<HTMLPreElement> {
   language: string
   theme: PrismTheme
 }
-const Editor: React.FC<EditorProps> = props => {
+const Editor: React.FC<EditorProps> = (props) => {
   return (
     <Highlight
       {...defaultProps}
@@ -327,13 +324,13 @@ const Editor: React.FC<EditorProps> = props => {
       language={props.language}
       theme={props.theme}
     >
-      {highlight => {
+      {(highlight) => {
         const { tokens, getLineProps, getTokenProps } = highlight
 
         const className = cx({
           [highlight.className]: true,
           [styles.editor]: true,
-          [styles.editorExpanded]: props.expanded
+          [styles.editorExpanded]: props.expanded,
         })
 
         return (
@@ -360,7 +357,7 @@ export function formatPreview(code: string): PreviewData {
   function replaceExport(data: PreviewData): PreviewData {
     return {
       ...data,
-      code: data.code.replace(/export default (.*)/, 'render(<$1 />)')
+      code: data.code.replace(/export default (.*)/, 'render(<$1 />)'),
     }
   }
 
@@ -378,17 +375,17 @@ export function formatPreview(code: string): PreviewData {
       imports.push({
         start: singleImportMatch.index,
         end: singleImportMatch.index + singleImportMatch[0].length,
-        packageName
+        packageName,
       })
     }
 
-    imports.reverse().forEach(range => {
+    imports.reverse().forEach((range) => {
       const codeWithoutImport =
         newData.code.slice(0, range.start) + newData.code.slice(range.end)
       newData.code = codeWithoutImport
       newData.scope = {
         ...newData.scope,
-        ...mapPackageNameToScopes(range.packageName)
+        ...mapPackageNameToScopes(range.packageName),
       }
     })
 
@@ -409,17 +406,17 @@ export function formatPreview(code: string): PreviewData {
         ChannelIcon,
         PencilIcon,
         PlayIcon,
-        UserIcon
+        UserIcon,
       },
       react: { React },
-      'react-router-dom': { Router, withRouter }
+      'react-router-dom': { Router, withRouter },
     }[packageName]
   }
 
   return moveImportsToScope(
     replaceExport({
       code,
-      scope: {}
+      scope: {},
     })
   )
 }
