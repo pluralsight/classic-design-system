@@ -3,55 +3,24 @@ name: Hello world
 route: /
 ---
 
-import { Guideline } from '../components/guideline'
-import * as Types from '../components/types'
-
-# Hello world
-
-Hello, I'm a mdx file!
-
-[https://jaketrent.com](jaketrent.com)
-
-This is `inlineCode`.
+# Hello World
 
 ```typescript switcher
 ---
-title: First Vanilla
-description: Some good descriptionaires here
+title: some title
+description: the description
 ---
-import React from 'react'
+const Comp = React.FC = () => <p>example 1</p>
 
-// comment here
-
-const Example: React.FC = () => {
-  return (
-    <div>
-      <p>hello world</p>
-    </div>
-  )
-}
-
-export default Example
+export default Comp
 
 ---
 
 ---
-title: Title of Num 2, Yo
-description: You want this, you really do.  Take care of it. Make sure that it's there.
+title: some title 2
+description: the description
 ---
-import React from 'react'
+const Comp = React.FC = () => <p>example 2</p>
 
-// comment here
-
-const Example: React.FC = () => {
-  return (
-    <div>
-      <p>222 hello world</p>
-    </div>
-  )
-}
-
-export default Example
+export default Comp
 ```
-
-

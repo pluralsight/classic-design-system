@@ -7,7 +7,7 @@ export default function useOnEscape(
   handler: (evt: KeyboardEvent) => void
 ): void {
   const handleKeyDown = useCallback(
-    (evt) => {
+    evt => {
       if (evt.keyCode === ESCAPE_KEY) handler(evt)
     },
     [handler]

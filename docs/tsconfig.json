@@ -5,7 +5,7 @@
     "outDir": "dist",
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "rootDir": "src",
-    "target": "es5"
+    "skipLibCheck": true
   },
   "exclude": ["*.js", "dist", "public", "node_modules"]
 }

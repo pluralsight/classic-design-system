@@ -23,7 +23,7 @@ const defaults: Partial<Cache> = {
   appName: 'design-system-docs',
   host: '0.0.0.0',
   logLevel: 'info',
-  port: 3000,
+  port: 3000
 }
 
 // NOTE: create and load config as soon as this file is accessed
@@ -41,7 +41,7 @@ const defaults: Partial<Cache> = {
       : false,
     newRelicLicenseKey: process.env.NEW_RELIC_LICENSE_KEY,
     port: parseInt(process.env.PORT, 10) || defaults.port,
-    publicDir: path.join(__dirname, '..', '..', 'public'),
+    publicDir: path.join(__dirname, '..', '..', 'public')
   }
 
   const config = { ...parsedEnsuredDefaulted, ...seed }

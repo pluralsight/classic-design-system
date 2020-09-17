@@ -12,7 +12,7 @@ interface PropProps {
   default?: React.ReactNode
   required?: boolean
 }
-export const Prop: React.FC<PropProps> = (props) => {
+export const Prop: React.FC<PropProps> = props => {
   return (
     <>
       <Table.Row>

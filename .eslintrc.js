@@ -27,15 +27,17 @@ module.exports = {
     'standard',
     'standard-react',
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:jest/recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'prettier/flowtype',
-    'prettier/react',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier/standard',
+    'prettier/react',
+    'prettier/flowtype',
+    'prettier/@typescript-eslint',
+
+    // NOTE: this must be the last item in the array
+    'plugin:prettier/recommended',
   ],
   plugins: ['@typescript-eslint', 'jest', 'react', 'react-hooks', 'prettier'],
   rules: {
@@ -55,9 +57,9 @@ module.exports = {
       ERROR,
       { classes: false, functions: false, variables: false },
     ],
+    '@typescript-eslint/no-extra-semi': IGNORE,
     '@typescript-eslint/no-floating-promises': IGNORE,
     '@typescript-eslint/no-unused-vars': [WARNING, { argsIgnorePattern: '^_' }],
-    '@typescript-eslint/no-extra-semi': IGNORE,
     '@typescript-eslint/no-var-requires': IGNORE,
     '@typescript-eslint/require-await': IGNORE,
     '@typescript-eslint/restrict-plus-operands': WARNING,
@@ -82,9 +84,11 @@ module.exports = {
       },
     },
     {
-      files: ['*.tsx?'],
+      files: ['*.ts', '*.tsx'],
       rules: {
+        'import/extensions': IGNORE,
         'react/display-name': IGNORE,
+        'react/prop-types': IGNORE,
       },
     },
     {
