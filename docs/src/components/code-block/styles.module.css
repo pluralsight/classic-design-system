@@ -10,15 +10,7 @@
 }
 
 .codeBlock {
-  border-radius: 0.2em;
   margin: 0 0 var(--psLayoutSpacingLarge) 0;
-  overflow: hidden;
-}
-.dark {
-  border: 1px solid var(--psColorsBorderLowOnDark);
-}
-.light {
-  border: 1px solid var(--psColorsBorderLowOnLight);
 }
 
 .actions {
@@ -57,4 +49,15 @@
 .editorExpanded {
   /* large number so we have something to animate to */
   max-height: 2000px;
+}
+
+.example {
+  border-radius: 0.2em;
+  overflow: hidden;
+}
+.dark .example {
+  border: 1px solid var(--psColorsBorderLowOnDark);
+}
+.light .example {
+  border: 1px solid var(--psColorsBorderLowOnLight);
 }

@@ -3,37 +3,37 @@ import Link from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React, { HTMLAttributes } from 'react'
 
-import { CodeBlock } from './code-block'
+import { CodeBlock } from '../code-block'
 
-export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => (
+export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = (props) => (
   <Link>
     <a {...props} />
   </Link>
 )
 
-export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => (
+export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
   <Text.Heading size={Text.Heading.sizes.xLarge}>
     <h1 {...props}>{props.children}</h1>
   </Text.Heading>
 )
 
-export const H2: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => (
+export const H2: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
   <Text.Heading size={Text.Heading.sizes.large}>
     <h2 {...props}>{props.children}</h2>
   </Text.Heading>
 )
 
-export const H3: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => (
+export const H3: React.FC<HTMLAttributes<HTMLHeadingElement>> = (props) => (
   <Text.Heading size={Text.Heading.sizes.medium}>
     <h3 {...props}>{props.children}</h3>
   </Text.Heading>
 )
 
-export const Ol: React.FC<HTMLAttributes<HTMLOListElement>> = props => (
+export const Ol: React.FC<HTMLAttributes<HTMLOListElement>> = (props) => (
   <Text.List type={Text.List.types.numbered} {...props} />
 )
 
-export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = props => (
+export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = (props) => (
   <Text.List type={Text.List.types.bulleted} {...props} />
 )
 
@@ -46,10 +46,10 @@ const components = {
   inlineCode: Text.Code,
   ol: Ol,
   p: Text.P,
-  pre: props => <div {...props} />,
-  ul: Ul
+  pre: (props) => <div {...props} />,
+  ul: Ul,
 }
 
-export const MDXProvider: React.FC = props => (
+export const MDXProvider: React.FC = (props) => (
   <BaseProvider components={components}>{props.children}</BaseProvider>
 )
