@@ -8,7 +8,7 @@ interface UsageProps {
   import: string
   packageName: string
 }
-export const Usage: React.FC<UsageProps> = props => {
+export const Usage: React.FC<UsageProps> = (props) => {
   return (
     <ul className={styles.usage}>
       <Item label="Version">
@@ -29,7 +29,7 @@ export const Usage: React.FC<UsageProps> = props => {
 interface LabelProps {
   label: string
 }
-const Item: React.FC<LabelProps> = props => {
+const Item: React.FC<LabelProps> = (props) => {
   return (
     <li className={styles.item}>
       <div className={styles.label}>{props.label}</div>

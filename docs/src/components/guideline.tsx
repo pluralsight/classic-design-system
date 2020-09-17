@@ -2,7 +2,7 @@ import Badge from '@pluralsight/ps-design-system-badge'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
-import * as React from 'react'
+import React, { Fragment } from 'react'
 
 import * as styles from './guideline.module.css'
 

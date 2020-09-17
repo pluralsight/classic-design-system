@@ -3,7 +3,7 @@ import React from 'react'
 
 import * as styles from './speeds.module.css'
 
-const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
+const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
 const speeds = Object.keys(motion)
   .filter((key) => /^speed/.test(key))

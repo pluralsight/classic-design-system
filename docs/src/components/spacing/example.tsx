@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as styles from './example.module.css'
 
-const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
+const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
 export const Parent = (props) => (
   <div className={styles.parent}>{props.children}</div>

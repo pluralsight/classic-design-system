@@ -9,7 +9,7 @@ import {
   colorsPink,
   colorsPurple,
   colorsRed,
-  colorsTextIcon
+  colorsTextIcon,
 } from '@pluralsight/ps-design-system-core'
 
 export const darkTheme: PrismTheme = {
@@ -17,8 +17,6 @@ export const darkTheme: PrismTheme = {
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBackgroundDark[2],
   },
-
-  // TODO: replace with PS colors
   styles: [
     {
       types: ['namespace'],
@@ -66,9 +64,9 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['comment'],
-      style: { 
+      style: {
         color: colorsTextIcon.lowOnDark,
-        fontStyle: 'italic'
+        fontStyle: 'italic',
       },
     },
     {
@@ -193,8 +191,6 @@ export const lightTheme: PrismTheme = {
     color: colorsTextIcon.highOnLight,
     backgroundColor: colorsBackgroundLight[2],
   },
-
-  // TODO: replace with PS colors
   styles: [
     {
       types: ['namespace'],
@@ -218,7 +214,7 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['boolean'],
-      style: { color: colorsGreen[8]  },
+      style: { color: colorsGreen[8] },
     },
     {
       types: ['builtin'],
@@ -242,9 +238,9 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['comment'],
-      style: { 
+      style: {
         color: colorsTextIcon.lowOnLight,
-        fontStyle: 'italic'
+        fontStyle: 'italic',
       },
     },
     {

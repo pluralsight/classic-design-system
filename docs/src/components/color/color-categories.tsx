@@ -1,7 +1,7 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { CheckCircleIcon } from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
-import * as React from 'react'
+import React from 'react'
 
 import { H2 } from '../mdx'
 import * as styles from './color-categories.module.css'

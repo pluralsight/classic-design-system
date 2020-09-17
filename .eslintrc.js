@@ -32,6 +32,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
     'prettier/flowtype',
     'prettier/react',
     'prettier/standard'
@@ -68,8 +69,7 @@ module.exports = {
     'react/display-name': WARNING,
     'react/jsx-no-bind': IGNORE,
     'react/jsx-pascal-case': IGNORE,
-    'react/no-unescaped-entities': WARNING,
-    'react/prop-types': IGNORE
+    'react/no-unescaped-entities': WARNING
   },
   overrides: [
     {
@@ -79,9 +79,11 @@ module.exports = {
       }
     },
     {
-      files: ['*.tsx?'],
+      files: ['*.ts', '*.tsx'],
       rules: {
-        'react/display-name': IGNORE
+        'import/extensions': IGNORE,
+        'react/display-name': IGNORE,
+        'react/prop-types': IGNORE
       }
     },
     {
