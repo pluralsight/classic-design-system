@@ -9,9 +9,9 @@ import * as styles from './guideline.module.css'
 interface GuidelineProps {
   columnCount: 1 | 2 | 3 | 4 | 6
   do: React.ReactNode
-  doStyle: object
+  doStyle: Record<string, unknown>
   dont: React.ReactNode
-  dontStyle: object
+  dontStyle: Record<string, unknown>
 }
 export const Guideline: React.FC<GuidelineProps> = props => {
   const themeName = useTheme()
