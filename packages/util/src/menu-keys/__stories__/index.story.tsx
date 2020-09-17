@@ -1,17 +1,21 @@
 import React from 'react'
 import { css } from 'glamor'
-import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import {
-  handleMenuKeyDownEvents,
-  handleMenuKeyUpEvents,
-  useMenuRef
-} from '../index.js'
 
-const MockComponent = () => {
-  const rootList = [...Array(10).keys()]
-  const nestedList = [...Array(5).keys()]
+import { handleMenuKeyDownEvents, handleMenuKeyUpEvents, useMenuRef } from '..'
+
+export default {
+  title: 'Utils/useMenuKeyEvents'
+}
+
+export const basic = () => <MockStory />
+
+const MockStory: React.FC = () => {
   const ref = useMenuRef()
+
+  const rootList = Array.from(Array(10).keys())
+  const nestedList = Array.from(Array(5).keys())
+
   return (
     <ul
       data-testid="root-menu"
@@ -27,14 +31,14 @@ const MockComponent = () => {
             onFocus={action(`root-list-item-${el}`)}
             data-testid={`root-list-item-${el}`}
             key={`root-list-item-${el}`}
-            tabIndex="-1"
+            tabIndex={-1}
           >
             {el} root list item
             <ul data-testid="sub-menu">
               {nestedList.map(sub => (
                 <li
                   onFocus={action(`root-list-item-${el}`)}
-                  tabIndex="-1"
+                  tabIndex={-1}
                   key={
                     i === 4
                       ? `first-sub-menu-list-item-${sub}`
@@ -56,7 +60,7 @@ const MockComponent = () => {
             onFocus={action(`root-list-item-${el}`)}
             data-testid={`root-list-item-${el}`}
             key={`root-list-item-${el}`}
-            tabIndex="-1"
+            tabIndex={-1}
           >
             {el} root list item
           </li>
@@ -65,4 +69,3 @@ const MockComponent = () => {
     </ul>
   )
 }
-storiesOf('util', module).add('useMenuKeyEvents', () => <MockComponent />)

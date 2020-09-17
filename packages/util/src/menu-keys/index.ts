@@ -1,5 +1,5 @@
 import { useCallback, createRef } from 'react'
-import { useCombinedRefs } from './use-combined-refs.js'
+import { useCombinedRefs } from '..'
 
 export const searchListItem = (el, down = true) => {
   if (!el) return

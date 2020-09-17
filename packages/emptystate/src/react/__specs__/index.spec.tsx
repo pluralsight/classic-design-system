@@ -2,13 +2,13 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { axe, toHaveNoViolations } from 'jest-axe'
 
-import EmptyState from '../index.js'
-import * as vars from '../../vars/index.js'
+import EmptyState from '..'
+import * as vars from '../../vars'
 
 expect.extend(toHaveNoViolations)
 
-async function renderWithAxeResults(...args) {
-  const { container, ...rest } = render(...args)
+async function renderWithAxeResults(ui: React.ReactElement) {
+  const { container, ...rest } = render(ui)
   const axeResults = await axe(container.innerHTML)
 
   return { axeResults, container, ...rest }
@@ -35,7 +35,7 @@ describe('EmptyState', () => {
         heading={<EmptyState.Heading>Heading</EmptyState.Heading>}
         illustration={
           <EmptyState.Illustration
-            name={EmptyState.Illustration.names.search}
+            name={EmptyState.Illustration.names.magnify}
           />
         }
       />

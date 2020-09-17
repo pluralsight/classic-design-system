@@ -1,1 +1,1 @@
-module.exports = require('./dist/prop-defs')
+module.exports = require('./dist/ejs/prop-defs')
