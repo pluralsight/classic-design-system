@@ -8,10 +8,6 @@ import React, { HTMLAttributes, useState } from 'react'
 
 import { H2 } from '../mdx'
 
-import styles from './styles.module.css'
-import { Editor } from './editor'
-import { Preview } from './preview'
-
 import {
   Actions,
   ActionsLeft,
@@ -20,6 +16,9 @@ import {
   CodeSandboxAction,
   ExpandAction
 } from './actions'
+import { Editor } from './editor'
+import { Preview } from './preview'
+import styles from './styles.module.css'
 
 export interface ExampleData {
   code: string
@@ -45,8 +44,8 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
 
   return (
     <div {...rest}>
-      <div className={styles.title}>
-        <H2>Examples</H2>
+      <header className={styles.header}>
+        <H2 className={styles.title}>Examples</H2>
 
         <Dropdown
           menu={examples.map(example => {
@@ -59,7 +58,7 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
           onChange={handleDropdownChange}
           value={selectedOption}
         />
-      </div>
+      </header>
 
       <div>
         {examples
