@@ -3,7 +3,8 @@ import Link from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React, { HTMLAttributes } from 'react'
 
-import { CodeBlock } from './code-block'
+import { CodeBlock } from '../code-block'
+
 import * as styles from './index.module.css'
 
 export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => (

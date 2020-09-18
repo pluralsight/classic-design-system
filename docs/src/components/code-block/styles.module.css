@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+
+.title {
+  display: flex;
+  align-items: center;
+
+  & > h2:first-child {
+    margin-right: var(--psLayoutSpacingLarge);
+  }
+}
+
+.codeBlock {
+  margin: 0 0 var(--psLayoutSpacingLarge) 0;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  padding: 0 var(--psLayoutSpacingXSmall);
+}
+.light .actions {
+  background-color: var(--psColorsBackgroundLight1);
+}
+.dark .actions {
+  background-color: var(--psColorsBackgroundDark1);
+}
+.actionsLeft {
+  margin-right: auto;
+}
+.actionsRight {
+  margin-left: auto;
+}
+
+.preview {
+  padding: var(--psLayoutSpacingMedium);
+}
+
+.editor {
+  font-family: 'source code pro', monospace;
+  font-size: var(--psTypeFontSizeSmall);
+  line-height: var(--psTypeLineHeightTight);
+  overflow: auto;
+  padding: var(--psLayoutSpacingMedium);
+  height: auto;
+  max-height: var(--psLayoutSpacingXXLarge);
+  transition: max-height var(--psMotionSpeedSlow) ease-out;
+}
+.editorExpanded {
+  /* large number so we have something to animate to */
+  max-height: 2000px;
+}
+
+.example {
+  border-radius: 0.2em;
+  overflow: hidden;
+}
+.dark .example {
+  border: 1px solid var(--psColorsBorderLowOnDark);
+}
+.light .example {
+  border: 1px solid var(--psColorsBorderLowOnLight);
+}

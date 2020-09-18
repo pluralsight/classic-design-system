@@ -20,7 +20,7 @@ const serializers = {
   ...stdSerializers,
   data: JSON.stringify,
   payload: JSON.stringify,
-  req: serializeRequest,
+  req: serializeRequest
 }
 
 export function createLogger(name): LoggerModule {
@@ -55,8 +55,8 @@ function serializeRequest(req: Request) {
       host: req.headers.host,
       origin: req.headers.origin,
       referer: req.headers.referer,
-      userAgent: req.headers['user-agent'],
+      userAgent: req.headers['user-agent']
     },
-    bodyData: JSON.stringify(req.body || {}),
+    bodyData: JSON.stringify(req.body || {})
   }
 }

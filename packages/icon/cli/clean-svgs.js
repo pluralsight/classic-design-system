@@ -12,11 +12,7 @@ const svgo = new SVGO({
 const regex = /aria-label=(?:"|')([\w ]+)(?:"|')/
 const addAria = (svg, name) =>
   regex.test(svg) ? svg : svg.replace(/<svg/, `<svg aria-label="${name} icon"`)
-const dashCaseToLower = str =>
-  str
-    .split('-')
-    .join(' ')
-    .toLowerCase()
+const dashCaseToLower = str => str.split('-').join(' ').toLowerCase()
 exports.cleanSvgs = async ({ src, dest = src }) => {
   try {
     await fs.mkdir(dest, { recursive: true })

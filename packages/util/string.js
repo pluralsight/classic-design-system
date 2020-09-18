@@ -1,1 +1,1 @@
-module.exports = require('./dist/string')
+module.exports = require('./dist/ejs/string')

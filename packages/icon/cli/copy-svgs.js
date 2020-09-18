@@ -6,7 +6,7 @@ const dest = path.resolve(__dirname, '../dist/svg')
 
 ncp.limit = 16
 
-ncp(src, dest, function(err) {
+ncp(src, dest, function (err) {
   if (err) {
     return console.error(err)
   }

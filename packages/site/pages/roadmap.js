@@ -159,10 +159,8 @@ class Task extends React.Component {
     const title =
       item.tags.indexOf('Site') > -1
         ? `site: ${item.title} Roadmap Discussion`
-        : item.title
-            .toLowerCase()
-            .replace(/ /g, '-')
-            .replace(/[()]/g, '') + ': Roadmap Discussion'
+        : item.title.toLowerCase().replace(/ /g, '-').replace(/[()]/g, '') +
+          ': Roadmap Discussion'
     const href = item.href
       ? item.href
       : `https://github.com/pluralsight/design-system/issues/new?title=${title}`

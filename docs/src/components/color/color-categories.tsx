@@ -1,7 +1,7 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { CheckCircleIcon } from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
-import * as React from 'react'
+import React from 'react'
 
 import { H2 } from '../mdx'
 import * as styles from './color-categories.module.css'
@@ -9,7 +9,7 @@ import * as styles from './color-categories.module.css'
 export const ColorCategories: React.FC = () => {
   return (
     <>
-      {colorCategories.map((cat) => {
+      {colorCategories.map(cat => {
         return (
           <div key={cat.heading}>
             <H2>{cat.heading}</H2>
@@ -25,7 +25,7 @@ export const ColorCategories: React.FC = () => {
                   }
                   bg={subCat.gridBg}
                 >
-                  {subCat.colors.map((color) => (
+                  {subCat.colors.map(color => (
                     <Swatch
                       key={color.var}
                       name={color.name}
@@ -93,21 +93,21 @@ const colorCategories: ColorCategory[] = [
             name: 'Background - Dark 1',
             var: 'psColorsBackgroundDark1',
             js: 'colorsBackgroundDark[1]',
-            hex: core.colorsBackgroundDark[1],
+            hex: core.colorsBackgroundDark[1]
           },
           {
             name: 'Background - Dark 2',
             var: 'psColorsBackgroundDark2',
             js: 'colorsBackgroundDark[2]',
-            hex: core.colorsBackgroundDark[2],
+            hex: core.colorsBackgroundDark[2]
           },
           {
             name: 'Background - Dark 3',
             var: 'psColorsBackgroundDark3',
             js: 'colorsBackgroundDark[3]',
-            hex: core.colorsBackgroundDark[3],
-          },
-        ],
+            hex: core.colorsBackgroundDark[3]
+          }
+        ]
       },
       {
         label: 'Light',
@@ -117,24 +117,24 @@ const colorCategories: ColorCategory[] = [
             name: 'Background - Light 1',
             var: 'psColorsBackgroundLight1',
             js: 'colorsBackgroundLight[1]',
-            hex: core.colorsBackgroundLight[1],
+            hex: core.colorsBackgroundLight[1]
           },
           {
             name: 'Background - Light 2',
             var: 'psColorsBackgroundLight2',
             js: 'colorsBackgroundLight[2]',
-            hex: core.colorsBackgroundLight[2],
+            hex: core.colorsBackgroundLight[2]
           },
           {
             name: 'Background - Light 3',
             var: 'psColorsBackgroundLight3',
             js: 'colorsBackgroundLight[3]',
             hex: core.colorsBackgroundLight[3],
-            border: core.colorsBorder.lowOnLight,
-          },
-        ],
-      },
-    ],
+            border: core.colorsBorder.lowOnLight
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Utility color',
@@ -153,10 +153,9 @@ const colorCategories: ColorCategory[] = [
             var: 'psColorsBackgroundUtilityBase',
             js: 'colorsBackgroundUtility.base',
             bg: core.colorsBackgroundUtility.base,
-            hex:
-              core.colorsBackgroundUtility.base + ' / rgba(138, 153, 168, 1)',
-          },
-        ],
+            hex: core.colorsBackgroundUtility.base + ' / rgba(138, 153, 168, 1)'
+          }
+        ]
       },
       {
         label: 'Utility with transparency on a dark background',
@@ -166,21 +165,21 @@ const colorCategories: ColorCategory[] = [
             name: 'Utility-25',
             var: 'psColorsBackgroundUtility25',
             js: 'colorsBackgroundUtility[25]',
-            hex: core.colorsBackgroundUtility[25],
+            hex: core.colorsBackgroundUtility[25]
           },
           {
             name: 'Utility-30',
             var: 'psColorsBackgroundUtility30',
             js: 'colorsBackgroundUtility[30]',
-            hex: core.colorsBackgroundUtility[30],
+            hex: core.colorsBackgroundUtility[30]
           },
           {
             name: 'Utility-40',
             var: 'psColorsBackgroundUtility40',
             js: 'colorsBackgroundUtility[40]',
-            hex: core.colorsBackgroundUtility[40],
-          },
-        ],
+            hex: core.colorsBackgroundUtility[40]
+          }
+        ]
       },
       {
         label: 'Utility with transparency on a light background',
@@ -191,23 +190,23 @@ const colorCategories: ColorCategory[] = [
             name: 'Utility-25',
             var: 'psColorsBackgroundUtility25',
             js: 'colorsBackgroundUtility[25]',
-            hex: core.colorsBackgroundUtility[25],
+            hex: core.colorsBackgroundUtility[25]
           },
           {
             name: 'Utility-30',
             var: 'psColorsBackgroundUtility30',
             js: 'colorsBackgroundUtility[30]',
-            hex: core.colorsBackgroundUtility[30],
+            hex: core.colorsBackgroundUtility[30]
           },
           {
             name: 'Utility-40',
             var: 'psColorsBackgroundUtility40',
             js: 'colorsBackgroundUtility[40]',
-            hex: core.colorsBackgroundUtility[40],
-          },
-        ],
-      },
-    ],
+            hex: core.colorsBackgroundUtility[40]
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Primary action & text link colors',
@@ -218,9 +217,9 @@ const colorCategories: ColorCategory[] = [
             name: 'Primary Action - Background',
             var: 'psColorsPrimaryActionBackground',
             js: 'colorsPrimaryAction.background',
-            hex: core.colorsPrimaryAction.background,
-          },
-        ],
+            hex: core.colorsPrimaryAction.background
+          }
+        ]
       },
       {
         colors: [
@@ -230,7 +229,7 @@ const colorCategories: ColorCategory[] = [
             js: 'colorsPrimaryAction.textDarkTheme',
             hex: core.colorsPrimaryAction.textDarkTheme,
             bg: core.colorsBackgroundDark[1],
-            fg: core.colorsPrimaryAction.textDarkTheme,
+            fg: core.colorsPrimaryAction.textDarkTheme
           },
           {
             name: 'Primary Action Text - On Light',
@@ -239,11 +238,11 @@ const colorCategories: ColorCategory[] = [
             hex: core.colorsPrimaryAction.textLightTheme,
             border: core.colorsBorder.lowOnLight,
             bg: core.colorsBackgroundLight[3],
-            fg: core.colorsPrimaryAction.textLightTheme,
-          },
-        ],
-      },
-    ],
+            fg: core.colorsPrimaryAction.textLightTheme
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Status colors',
@@ -254,30 +253,30 @@ const colorCategories: ColorCategory[] = [
             name: 'Status - Success',
             var: 'psColorsStatusSuccess',
             js: 'colorsStatus.success',
-            hex: core.colorsStatus.success,
+            hex: core.colorsStatus.success
           },
           {
             name: 'Status - Warning',
             var: 'psColorsStatusWarning',
             js: 'colorsStatus.warning',
             hex: core.colorsStatus.warning,
-            fg: core.colorsTextIcon.highOnLight,
+            fg: core.colorsTextIcon.highOnLight
           },
           {
             name: 'Status - Error',
             var: 'psColorsStatusError',
             js: 'colorsStatus.error',
-            hex: core.colorsStatus.error,
+            hex: core.colorsStatus.error
           },
           {
             name: 'Status - Info',
             var: 'psColorsStatusInfo',
             js: 'colorsStatus.info',
-            hex: core.colorsStatus.info,
-          },
-        ],
-      },
-    ],
+            hex: core.colorsStatus.info
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Text & icon colors',
@@ -292,16 +291,16 @@ const colorCategories: ColorCategory[] = [
             var: 'psColorsTextIconHighOnDark',
             js: 'colorsTextIcon.highOnDark',
             hex: '#FFFFFF, 95% opacity',
-            fg: core.colorsTextIcon.highOnDark,
+            fg: core.colorsTextIcon.highOnDark
           },
           {
             name: 'Text & Icons - On Dark - Low Contrast',
             var: 'psColorsTextIconLowOnDark',
             js: 'colorsTextIcon.lowOnDark',
             hex: '#FFFFFF, 65% opacity',
-            fg: core.colorsTextIcon.lowOnDark,
-          },
-        ],
+            fg: core.colorsTextIcon.lowOnDark
+          }
+        ]
       },
       {
         label: 'On light backgrounds',
@@ -313,18 +312,18 @@ const colorCategories: ColorCategory[] = [
             var: 'psColorsTextIconHighOnLight',
             js: 'colorsTextIcon.highOnLight',
             hex: '#000000, 95% opacity',
-            fg: core.colorsTextIcon.highOnLight,
+            fg: core.colorsTextIcon.highOnLight
           },
           {
             name: 'Text & Icons - On Light - Low Contrast',
             var: 'psColorsTextIconLowOnLight',
             js: 'colorsTextIcon.lowOnLight',
             hex: '#000000, 55% opacity',
-            fg: core.colorsTextIcon.lowOnLight,
-          },
-        ],
-      },
-    ],
+            fg: core.colorsTextIcon.lowOnLight
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Border colors',
@@ -339,7 +338,7 @@ const colorCategories: ColorCategory[] = [
             hex: '#FFFFFF, 30% opacity',
             js: 'colorsBorder.highOnDark',
             fg: core.colorsTextIcon.highOnDark,
-            borderExample: core.colorsBorder.highOnDark,
+            borderExample: core.colorsBorder.highOnDark
           },
           {
             name: 'Border - On Dark - Low Contrast',
@@ -347,9 +346,9 @@ const colorCategories: ColorCategory[] = [
             hex: '#FFFFFF, 15% opacity',
             js: 'colorsBorder.lowOnDark',
             fg: core.colorsTextIcon.lowOnDark,
-            borderExample: core.colorsBorder.lowOnDark,
-          },
-        ],
+            borderExample: core.colorsBorder.lowOnDark
+          }
+        ]
       },
       {
         label: 'On light backgrounds',
@@ -362,7 +361,7 @@ const colorCategories: ColorCategory[] = [
             hex: '#000000, 30% opacity',
             js: 'colorsBorder.highOnLight',
             fg: core.colorsTextIcon.highOnLight,
-            borderExample: core.colorsBorder.highOnLight,
+            borderExample: core.colorsBorder.highOnLight
           },
           {
             name: 'Border - On Light - Low Contrast',
@@ -370,11 +369,11 @@ const colorCategories: ColorCategory[] = [
             hex: '#000000, 15% opacity',
             js: 'colorsBorder.lowOnLight',
             fg: core.colorsTextIcon.lowOnLight,
-            borderExample: core.colorsBorder.lowOnLight,
-          },
-        ],
-      },
-    ],
+            borderExample: core.colorsBorder.lowOnLight
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Brand gradients',
@@ -386,18 +385,18 @@ const colorCategories: ColorCategory[] = [
             var: 'psColorsGradientSkillsBackground',
             js: 'colorsGradient.skillsBackground',
             hex: `${core.colorsGradient.skillsStop0} to ${core.colorsGradient.skillsStop100}`,
-            bg: core.colorsGradient.skillsBackground,
+            bg: core.colorsGradient.skillsBackground
           },
           {
             name: 'Brand Gradient - Flow',
             var: 'psColorsGradientFlowBackground',
             js: 'colorsGradient.flowBackground',
             hex: `${core.colorsGradient.flowStop0} to ${core.colorsGradient.flowStop100}`,
-            bg: core.colorsGradient.flowBackground,
-          },
-        ],
-      },
-    ],
+            bg: core.colorsGradient.flowBackground
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Code colors',
@@ -410,59 +409,59 @@ const colorCategories: ColorCategory[] = [
             var: 'psColorsCodeWhite',
             js: 'colorsCode.white',
             hex: core.colorsCode.white,
-            border: core.colorsBorder.lowOnLight,
+            border: core.colorsBorder.lowOnLight
           },
           {
             name: 'Code - Gray',
             var: 'psColorsCodeGray',
             js: 'colorsCode.gray',
-            hex: core.colorsCode.gray,
+            hex: core.colorsCode.gray
           },
           {
             name: 'Code - Orange',
             var: 'psColorsCodeOrange',
             js: 'colorsCode.orange',
-            hex: core.colorsCode.orange,
+            hex: core.colorsCode.orange
           },
           {
             name: 'Code - Yellow',
             var: 'psColorsCodeYellow',
             js: 'colorsCode.yellow',
-            hex: core.colorsCode.yellow,
+            hex: core.colorsCode.yellow
           },
           {
             name: 'Code - Green',
             var: 'psColorsCodeGreen',
             js: 'colorsCode.green',
-            hex: core.colorsCode.green,
+            hex: core.colorsCode.green
           },
           {
             name: 'Code - Turquoise',
             var: 'psColorsCodeTurquoise',
             js: 'colorsCode.turquoise',
-            hex: core.colorsCode.turquoise,
+            hex: core.colorsCode.turquoise
           },
           {
             name: 'Code - Blue',
             var: 'psColorsCodeBlue',
             js: 'colorsCode.blue',
-            hex: core.colorsCode.blue,
+            hex: core.colorsCode.blue
           },
           {
             name: 'Code - Purple',
             var: 'psColorsCodePurple',
             js: 'colorsCode.purple',
-            hex: core.colorsCode.purple,
+            hex: core.colorsCode.purple
           },
           {
             name: 'Code - Sand',
             var: 'psColorsCodeSand',
             js: 'colorsCode.sand',
-            hex: core.colorsCode.sand,
-          },
-        ],
-      },
-    ],
+            hex: core.colorsCode.sand
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'Neutrals',
@@ -473,7 +472,7 @@ const colorCategories: ColorCategory[] = [
             name: 'Black',
             var: 'psColorsBlack',
             js: 'colorsBlack',
-            hex: core.colorsBlack,
+            hex: core.colorsBlack
           },
           {
             name: 'White',
@@ -481,11 +480,11 @@ const colorCategories: ColorCategory[] = [
             js: 'colorsWhite',
             hex: core.colorsWhite,
             fg: core.colorsTextIcon.highOnLight,
-            border: core.colorsBorder.lowOnLight,
-          },
-        ],
-      },
-    ],
+            border: core.colorsBorder.lowOnLight
+          }
+        ]
+      }
+    ]
   },
   {
     heading: 'All colors',
@@ -503,44 +502,44 @@ const colorCategories: ColorCategory[] = [
       formatAllColorSubCategory({
         color: core.colorsTeal,
         name: 'Teal',
-        fgSwitch: 7,
+        fgSwitch: 7
       }),
       formatAllColorSubCategory({
         color: core.colorsGreen,
-        name: 'Green',
+        name: 'Green'
       }),
       formatAllColorSubCategory({
         color: core.colorsLime,
         name: 'Lime',
-        fgSwitch: 8,
+        fgSwitch: 8
       }),
       formatAllColorSubCategory({
         color: core.colorsYellow,
         name: 'Yellow',
-        fgSwitch: 8,
+        fgSwitch: 8
       }),
       formatAllColorSubCategory({
         color: core.colorsOrange,
         name: 'Orange',
-        fgSwitch: 7,
+        fgSwitch: 7
       }),
       formatAllColorSubCategory({
         color: core.colorsRed,
-        name: 'Red',
+        name: 'Red'
       }),
       formatAllColorSubCategory({
         color: core.colorsPink,
-        name: 'Pink',
+        name: 'Pink'
       }),
       formatAllColorSubCategory({
         color: core.colorsPurple,
-        name: 'Purple',
-      }),
-    ],
-  },
+        name: 'Purple'
+      })
+    ]
+  }
 ]
 
-const Label: React.FC = (props) => {
+const Label: React.FC = props => {
   return (
     <header>
       <h3 className={styles.label}>{props.children}</h3>
@@ -559,7 +558,7 @@ interface SwatchProps {
   js: string
   hex: string
 }
-const Swatch: React.FC<SwatchProps> = (props) => {
+const Swatch: React.FC<SwatchProps> = props => {
   return (
     <div
       className={styles.swatch}
@@ -567,7 +566,7 @@ const Swatch: React.FC<SwatchProps> = (props) => {
         background: props.bg,
         border: props.border ? `1px solid ${props.border}` : 'none',
         color: props.fg ? props.fg : core.colorsTextIcon.highOnDark,
-        display: props.borderExample ? 'display' : 'flex',
+        display: props.borderExample ? 'display' : 'flex'
       }}
     >
       <div className={styles.swatchText}>
@@ -581,7 +580,7 @@ const Swatch: React.FC<SwatchProps> = (props) => {
         <div
           className={styles.swatchBorderExample}
           style={{
-            borderTop: `1px solid ${props.borderExample}`,
+            borderTop: `1px solid ${props.borderExample}`
           }}
         />
       )}
@@ -594,9 +593,9 @@ interface GridProps {
   cols?: number
 }
 const gridPropDefaults = {
-  cols: 3,
+  cols: 3
 }
-const Grid: React.FC<GridProps> = (props) => {
+const Grid: React.FC<GridProps> = props => {
   return (
     <div
       className={styles.grid}
@@ -609,7 +608,7 @@ const Grid: React.FC<GridProps> = (props) => {
           props.cols || gridPropDefaults.cols
         }, 1fr)`,
         backgroundColor: props.bg || 'none',
-        padding: props.bg ? core.layout.spacingLarge : 0,
+        padding: props.bg ? core.layout.spacingLarge : 0
       }}
     >
       {props.children}
@@ -625,14 +624,14 @@ interface SubCategoryColorInputs {
 function formatAllColorSubCategory({
   color,
   fgSwitch,
-  name,
+  name
 }: SubCategoryColorInputs): SubCategory {
   return {
     cols: 5,
     colors: Object.keys(color)
-      .map((key) => parseInt(key, 10))
-      .filter((key) => Number.isInteger(key))
-      .map((key) => ({
+      .map(key => parseInt(key, 10))
+      .filter(key => Number.isInteger(key))
+      .map(key => ({
         name: name + ' ' + key + (key === 6 ? ' (Base)' : ''),
         var: 'psColors' + name + key,
         hex: color[key],
@@ -640,7 +639,7 @@ function formatAllColorSubCategory({
         fg:
           key < (fgSwitch || 6)
             ? core.colorsTextIcon.highOnLight
-            : core.colorsTextIcon.highOnDark,
-      })),
+            : core.colorsTextIcon.highOnDark
+      }))
   }
 }
