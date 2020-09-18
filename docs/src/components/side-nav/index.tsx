@@ -100,6 +100,17 @@ const items = [
   },
   {
     header: {
+      title: 'Lists & Tables'
+    },
+    items: [
+      {
+        href: '/components/card',
+        title: 'Card'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Images & Icons'
     },
     items: [
