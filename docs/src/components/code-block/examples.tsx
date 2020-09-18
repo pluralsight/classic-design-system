@@ -121,7 +121,7 @@ export const Example: React.FC<ExampleProps> = props => {
   )
 }
 
-export function parceCode(
+export function parseCode(
   code: string,
   delimiter = '\n\n---\n\n'
 ): ExampleData[] {
