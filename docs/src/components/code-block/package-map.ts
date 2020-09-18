@@ -57,8 +57,7 @@ import pkg from '../../../package.json'
 const deps = { ...pkg.dependencies, ...pkg.devDependencies } as const
 
 type PackageMap = { [key in keyof typeof deps]?: unknown }
-const exportsFromCore = { ...omit(core, ['default']) }
-console.log('EXXXXP', exportsFromCore)
+
 export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-actionmenu': { ActionMenu },
   '@pluralsight/ps-design-system-appframe': { AppFrame },
