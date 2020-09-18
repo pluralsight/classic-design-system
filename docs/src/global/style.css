@@ -21,3 +21,6 @@
   gap: var(--psLayoutSpacingMedium);
   justify-items: start;
 }
+.example-grid--spaced > * {
+  margin: var(--psLayoutSpacingSmall);
+}
