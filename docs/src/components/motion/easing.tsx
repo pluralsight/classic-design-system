@@ -2,10 +2,10 @@ import React from 'react'
 
 import * as styles from './easing.module.css'
 
-export const Easing = (_) => (
+export const Easing: React.FC = () => (
   <div className={styles.easing}>
     <div className={styles.functions}>
-      <div className={styles.function}>
+      <div className={styles.functionBlock}>
         <div className={styles.label}>
           <div>
             Use <b>ease-in-out</b> for moving point to point.
@@ -45,7 +45,7 @@ export const Easing = (_) => (
           </svg>
         </div>
       </div>
-      <div className={styles.function}>
+      <div className={styles.functionBlock}>
         <div className={styles.label}>
           <div>
             Use <b>ease-out</b> for entering elements.
@@ -85,7 +85,7 @@ export const Easing = (_) => (
           </svg>
         </div>
       </div>
-      <div className={styles.function}>
+      <div className={styles.functionBlock}>
         <div className={styles.label}>
           <div>
             Use <b>ease-in</b> for exiting elements.
@@ -125,7 +125,7 @@ export const Easing = (_) => (
           </svg>
         </div>
       </div>
-      <div className={styles.function}>
+      <div className={styles.functionBlock}>
         <div className={styles.label}>
           <div>
             Use <b>linear</b> for opacity or color changes.

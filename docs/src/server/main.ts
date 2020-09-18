@@ -24,4 +24,4 @@ async function main() {
   })
 }
 
-void main()
+main()

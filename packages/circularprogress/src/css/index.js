@@ -27,8 +27,9 @@ export default {
   },
   // __svg--no-value
   [`.psds-circularprogress__svg--no-value`]: ({ spin }) => ({
-    animation: `${spin ||
-      'psds-circularprogress__keyframes__spin'} 1s linear infinite`
+    animation: `${
+      spin || 'psds-circularprogress__keyframes__spin'
+    } 1s linear infinite`
   }),
   // __fg
   [`.psds-circularprogress__fg`]: {

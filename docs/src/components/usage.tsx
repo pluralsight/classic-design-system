@@ -1,4 +1,6 @@
 import Link from '@pluralsight/ps-design-system-link'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import cx from 'classnames'
 import React from 'react'
 
 import * as styles from './usage.module.css'
@@ -30,10 +32,25 @@ interface LabelProps {
   label: string
 }
 const Item: React.FC<LabelProps> = props => {
+  const themeName = useTheme()
   return (
     <li className={styles.item}>
-      <div className={styles.label}>{props.label}</div>
-      <div className={styles.value}>
+      <div
+        className={cx({
+          [styles.label]: true,
+          [styles.dark]: themeName === Theme.names.dark,
+          [styles.light]: themeName === Theme.names.light
+        })}
+      >
+        {props.label}
+      </div>
+      <div
+        className={cx({
+          [styles.value]: true,
+          [styles.dark]: themeName === Theme.names.dark,
+          [styles.light]: themeName === Theme.names.light
+        })}
+      >
         <code>{props.children}</code>
       </div>
     </li>

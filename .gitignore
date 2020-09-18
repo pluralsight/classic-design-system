@@ -1,6 +1,6 @@
 # builds from source that live in npm only
 dist
-*.dist.js
+*.dist.*
 
 # Logs
 logs
@@ -43,3 +43,5 @@ jspm_packages
 .env*
 
 .cache
+.eslintcache
+

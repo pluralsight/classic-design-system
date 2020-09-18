@@ -24,9 +24,11 @@
 }
 
 .light {
+  background: var(--psColorsWhite);
 }
 
 .main {
+  overflow: auto;
   flex: 1;
   padding: var(--psLayoutSpacingLarge);
 

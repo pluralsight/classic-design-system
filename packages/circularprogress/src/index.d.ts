@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { ForwardRefExoticComponent, HTMLAttributes, RefAttributes } from 'react'
 
 declare const CircularProgress: RefForwardingComponent<

@@ -6,7 +6,7 @@ export default function useOnClickOutside(
   handler: (evt: MouseEvent) => void
 ): void {
   const handleClick = useCallback(
-    (evt) => {
+    evt => {
       const isInner = ref.current && ref.current.contains(evt.target)
       if (!isInner) handler(evt)
     },

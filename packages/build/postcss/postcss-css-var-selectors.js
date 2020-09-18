@@ -4,11 +4,13 @@ const dashify = require('../css/dashify')
 
 const defaultOptions = { propNameTests: [] }
 
-module.exports = postcss.plugin('postcss-css-var-selectors', function(options) {
+module.exports = postcss.plugin('postcss-css-var-selectors', function (
+  options
+) {
   const matchCssVarSelector = /^--?/
   options = Object.assign({}, defaultOptions, options)
 
-  return function(root, result) {
+  return function (root, result) {
     root.walkRules(rule => {
       rule.walkDecls(matchCssVarSelector, decl => {
         const selectors = createVarSelectors(decl, options)

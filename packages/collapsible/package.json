@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-collapsible",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Collapsible UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -26,6 +26,6 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.15"
+    "@pluralsight/ps-design-system-build": "^1.11.16"
   }
 }

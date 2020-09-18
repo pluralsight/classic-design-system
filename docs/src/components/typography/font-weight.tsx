@@ -7,32 +7,32 @@ const weights = [
     label: 'BOLD',
     weight: 700,
     varName: 'psTypeFontWeightBold',
-    jsVarName: 'type.fontWeightBold',
+    jsVarName: 'type.fontWeightBold'
   },
   {
     label: 'MEDIUM',
     weight: 500,
     varName: 'psTypeFontWeightMedium',
-    jsVarName: 'type.fontWeightMedium',
+    jsVarName: 'type.fontWeightMedium'
   },
   {
     label: 'BOOK',
     weight: 400,
     varName: 'psTypeFontWeightBook',
-    jsVarName: 'type.fontWeightBook',
+    jsVarName: 'type.fontWeightBook'
   },
   {
     label: 'LIGHT',
     weight: 300,
     varName: 'psTypeFontWeightLight',
-    jsVarName: 'type.fontWeightLight',
+    jsVarName: 'type.fontWeightLight'
   },
   {
     label: 'EXTRA LIGHT',
     weight: 200,
     varName: 'psTypeFontWeightXLight',
-    jsVarName: 'type.fontWeightXLight',
-  },
+    jsVarName: 'type.fontWeightXLight'
+  }
 ]
 
 export const FontWeight = () => (
