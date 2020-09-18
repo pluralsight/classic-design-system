@@ -78,6 +78,17 @@ const items = [
   },
   {
     header: {
+      title: 'Navigation'
+    },
+    items: [
+      {
+        href: '/components/breadcrumb',
+        title: 'Breadcrumb'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Actions'
     },
     items: [
@@ -103,6 +114,10 @@ const items = [
       title: 'Feedback'
     },
     items: [
+      {
+        href: '/components/badge',
+        title: 'Badge'
+      },
       {
         href: '/components/banner',
         title: 'Banner'
