@@ -1,5 +1,6 @@
 /* eslint-disable react/display-name */
 import React, { forwardRef, useState } from 'react'
+import CorePropTypes from 'prop-types'
 
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
@@ -143,6 +144,7 @@ const DropdownWithIcon = forwardRef(({ icon, ...props }, forwardedRef) => {
     />
   )
 })
+DropdownWithIcon.propTypes = { icon: CorePropTypes.node }
 
 const FixedIconExample = () => {
   return (

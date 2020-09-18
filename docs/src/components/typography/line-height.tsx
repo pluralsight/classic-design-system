@@ -8,14 +8,14 @@ const heights = [
     className: styles.textHuge,
     label: '40px - Huge',
     text: 'Lorem ipsum dolor sit amet, consectetur',
-    varName: 'psTypeLineHeightHuge',
+    varName: 'psTypeLineHeightHuge'
   },
   {
     bgClassName: styles.textBgExtra,
     className: styles.textExtra,
     label: '32px - Extra',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,',
-    varName: 'psTypeLineHeightExtra',
+    varName: 'psTypeLineHeightExtra'
   },
   {
     bgClassName: styles.textBgStandard,
@@ -23,7 +23,7 @@ const heights = [
     label: '24px - Standard',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore',
-    varName: 'psTypeLineHeightStandard',
+    varName: 'psTypeLineHeightStandard'
   },
   {
     bgClassName: styles.textBgTight,
@@ -31,8 +31,8 @@ const heights = [
     label: '20px - Tight',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-    varName: 'psTypeLineHeightTight',
-  },
+    varName: 'psTypeLineHeightTight'
+  }
 ]
 
 export const LineHeight = () => (

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-emptystate",
-  "version": "8.1.4",
+  "version": "8.1.5",
   "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -10,24 +10,23 @@
     "access": "public"
   },
   "scripts": {
-    "build": "run-s build:svg build:js build:cjs build:css copy:svg",
-    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
+    "build": "run-s build:svg build:cjs build:esm build:css copy:svg",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
-    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
-    "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/illustrations src/svg",
-    "build:watch": "npm run build:js -- --watch",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build:svg": "svgr --typescript --filename-case kebab --ext \"dist.tsx\" -d src/react/illustrations src/svg",
+    "build:watch": "npm run build:esm -- --watch",
     "copy:svg": "node copy-svgs.js",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "npm run test -- --watchAll"
   },
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.1",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
-    "@pluralsight/ps-design-system-prop-types": "^2.0.18",
-    "@pluralsight/ps-design-system-util": "^5.0.2",
-    "prop-types": "^15.7.2"
+    "@pluralsight/ps-design-system-core": "^6.4.2",
+    "@pluralsight/ps-design-system-util": "^5.1.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -36,12 +35,12 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.15",
-    "@pluralsight/ps-design-system-button": "^18.1.4",
-    "@pluralsight/ps-design-system-icon": "^18.2.2",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.1",
-    "@pluralsight/ps-design-system-tag": "^7.0.16",
-    "@pluralsight/ps-design-system-textinput": "^8.1.4",
+    "@pluralsight/ps-design-system-build": "^1.11.16",
+    "@pluralsight/ps-design-system-button": "^18.1.5",
+    "@pluralsight/ps-design-system-icon": "^18.2.3",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.2",
+    "@pluralsight/ps-design-system-tag": "^7.0.17",
+    "@pluralsight/ps-design-system-textinput": "^8.1.5",
     "@pluralsight/ps-design-system-theme": "^4.0.13",
     "ncp": "^2.0.0"
   }

@@ -6,7 +6,7 @@ const incrementExamples = [
   { side: 'top', attrName: 'margin-top' },
   { side: 'right', attrName: 'margin-right' },
   { side: 'bottom', attrName: 'margin-bottom' },
-  { side: 'left', attrName: 'margin-left' },
+  { side: 'left', attrName: 'margin-left' }
 ]
 
 export const IndividualSpacing = () => (

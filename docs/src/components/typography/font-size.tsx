@@ -10,7 +10,7 @@ const sizes = [
   { label: 'Large', size: '24px', varName: 'psTypeFontSizeLarge' },
   { label: 'Medium', size: '18px', varName: 'psTypeFontSizeMedium' },
   { label: 'Small', size: '14px', varName: 'psTypeFontSizeSmall' },
-  { label: 'X-Small', size: '12px', varName: 'psTypeFontSizeXSmall' },
+  { label: 'X-Small', size: '12px', varName: 'psTypeFontSizeXSmall' }
 ]
 
 export const FontSize = () => (

@@ -3,7 +3,7 @@ import React from 'react'
 
 import * as styles from './table.module.css'
 
-export const Table: React.FC = (props) => {
+export const Table: React.FC = props => {
   return (
     <DSTable className={styles.table}>
       <DSTable.Row>

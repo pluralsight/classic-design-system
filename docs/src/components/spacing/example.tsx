@@ -2,13 +2,13 @@ import React from 'react'
 
 import * as styles from './example.module.css'
 
-const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
+const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
-export const Parent = (props) => (
+export const Parent = props => (
   <div className={styles.parent}>{props.children}</div>
 )
 
-export const Example = (props) => (
+export const Example = props => (
   <div className={styles.example}>
     <div className={styles.box}>
       <Border {...props} />
@@ -23,16 +23,16 @@ interface BorderProps {
   sides: string
   width: number
 }
-const Border: React.FC<BorderProps> = (props) =>
+const Border: React.FC<BorderProps> = props =>
   props.sides === 'all' ? (
-    <div style={{ borderWidth: props.width }} className={styles.border}></div>
+    <div style={{ borderWidth: props.width }} className={styles.border} />
   ) : null
 
 interface LabelProps {
   label: string
   width: number
 }
-const Label: React.FC<LabelProps> = (props) =>
+const Label: React.FC<LabelProps> = props =>
   props.label ? (
     <div className={styles.label}>{`${props.width}px - ${props.label}`}</div>
   ) : null
@@ -40,7 +40,7 @@ const Label: React.FC<LabelProps> = (props) =>
 interface VarProps {
   varName: string
 }
-const Var: React.FC<VarProps> = (props) =>
+const Var: React.FC<VarProps> = props =>
   props.varName ? <code className={styles.varName}>{props.varName}</code> : null
 
 type Side = 'all' | 'top' | 'right' | 'bottom' | 'left'
@@ -53,19 +53,19 @@ interface SingleLineProps {
   sides: Side
   width: number
 }
-const SingleLine: React.FC<SingleLineProps> = (props) => (
+const SingleLine: React.FC<SingleLineProps> = props => (
   <div
     style={{ [dimension(props.side)]: props.width }}
     className={`${styles.line} ${styles[`line${capitalize(props.side)}`]} ${
       props.sides !== 'all' ? styles.lineSingleSide : ''
     }`}
-  ></div>
+  />
 )
 
 function AllLines(props) {
   return (
     <>
-      {['top', 'right', 'bottom', 'left'].map((side) => (
+      {['top', 'right', 'bottom', 'left'].map(side => (
         <SingleLine {...props} key={side} side={side} />
       ))}
     </>
@@ -77,5 +77,5 @@ interface LinesProps {
   side: Side
   width: number
 }
-const Lines: React.FC<LinesProps> = (props) =>
+const Lines: React.FC<LinesProps> = props =>
   props.sides === 'all' ? <AllLines {...props} /> : <SingleLine {...props} />
