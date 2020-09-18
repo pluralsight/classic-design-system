@@ -14,12 +14,13 @@ Motion speed should most often occur at the following standard increments.
 <Speeds />
 
 Use the CSS variables to set the duration.
-      
-```
+
+```css
 @import "@pluralsight/ps-design-system-core";
+
 .mySelector {
   animation-duration: var(--psMotionSpeedXFast);
-}`
+}
 ```
 
 To select a duration, use the following rules of thumb.
@@ -36,23 +37,26 @@ Some general guidance on selecting an easing curve.
 
 <Easing />
 
-```
+```css
 @import "@pluralsight/ps-design-system-core";
+
 .mySelector {
   animation-timing-function: ease-in-out;
-}`
+}
 ```
 
 ## Rotation
 
 Generally, larger objects look more natural when rotating slower than smaller objects. The easing property for rotation should be **linear**.
-      
+
 <Rotation />
 
-```
+```css
 @import "@pluralsight/ps-design-system-core";
-@keyframes rotateme { to { transform: rotate(360deg); }}
+
+@keyframes rotateMe { to { transform: rotate(360deg); }}
+
 .mySelector {
-  animation: var(--psMotionSpeedNormal) linear infinite rotateme;
+  animation: var(--psMotionSpeedNormal) linear infinite rotateMe;
 }
 ```
