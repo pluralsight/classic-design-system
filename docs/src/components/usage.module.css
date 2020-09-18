@@ -1,7 +1,7 @@
 .usage {
-  margin: var(--psLayoutSpacingLarge) 0;
+  margin: var(--psLayoutSpacingXLarge) 0;
   list-style: none;
-  font-size: var(--psTypeFontSizeXSmall);
+  font-size: var(--psTypeFontSizeSmall);
   line-height: 16px;
 }
 .item {
@@ -9,9 +9,24 @@
   margin-bottom: var(--psLayoutSpacingMedium);
 }
 .label {
-  width: 96px;
-  color: var(--psColorsTextIconLowOnLight);
+  font-size: var(--psTypeFontSizeXSmall);
+  width: 80px;
+
+  &.light {
+    color: var(--psColorsTextIconLowOnLight);
+  }
+  &.dark {
+    color: var(--psColorsTextIconLowOnDark);
+  }
 }
 .value {
   font-family: var(--psTypeFontFamilyCode);
+
+  &.light {
+    color: var(--psColorsTextIconHighOnLight);
+  }
+  &.dark {
+    color: var(--psColorsTextIconHighOnDark);
+  }
 }
+
