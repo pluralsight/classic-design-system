@@ -7,6 +7,7 @@ import Badge from '@pluralsight/ps-design-system-badge'
 import Banner from '@pluralsight/ps-design-system-banner'
 import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
 import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import DataWell from '@pluralsight/ps-design-system-datawell'
@@ -56,7 +57,8 @@ import pkg from '../../../package.json'
 const deps = { ...pkg.dependencies, ...pkg.devDependencies } as const
 
 type PackageMap = { [key in keyof typeof deps]?: unknown }
-
+const exportsFromCore = { ...omit(core, ['default']) }
+console.log('EXXXXP', exportsFromCore)
 export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-actionmenu': { ActionMenu },
   '@pluralsight/ps-design-system-appframe': { AppFrame },
@@ -69,6 +71,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-carousel': { Carousel },
   '@pluralsight/ps-design-system-checkbox': { Checkbox },
   '@pluralsight/ps-design-system-circularprogress': { CircularProgress },
+  '@pluralsight/ps-design-system-core': { ...omit(core, ['default']) },
   '@pluralsight/ps-design-system-datawell': { DataWell },
   '@pluralsight/ps-design-system-datepicker': { DatePicker },
   '@pluralsight/ps-design-system-dialog': { Dialog },
