@@ -45,6 +45,7 @@
   height: auto;
   max-height: var(--psLayoutSpacingXXLarge);
   transition: max-height var(--psMotionSpeedSlow) ease-out;
+  overflow-y: hidden;
 }
 .editorExpanded {
   /* large number so we have something to animate to */
