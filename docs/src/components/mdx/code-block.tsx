@@ -1,6 +1,7 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Carousel from '@pluralsight/ps-design-system-carousel'
 import Card from '@pluralsight/ps-design-system-card'
+import Badge from '@pluralsight/ps-design-system-badge'
 import Button from '@pluralsight/ps-design-system-button'
 import {
   CheckIcon,
@@ -369,6 +370,7 @@ export function formatPreview(code: string): PreviewData {
       '@pluralsight/ps-design-system-avatar': { Avatar },
       '@pluralsight/ps-design-system-carousel': { Carousel },
       '@pluralsight/ps-design-system-card': { Card },
+      '@pluralsight/ps-design-system-badge': { Badge },
       '@pluralsight/ps-design-system-button': { Button },
       '@pluralsight/ps-design-system-icon': {
         CheckIcon,

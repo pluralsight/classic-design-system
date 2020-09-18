@@ -77,6 +77,17 @@ const items = [
     ]
   },
   {
+      header: {
+        title: 'Navigation'
+      },
+      items: [
+        {
+          href: '/components/breadcrumb',
+          title: 'Breadcrumb'
+        }
+      ]
+    },
+      {
     header: {
       title: 'Actions'
     },
@@ -97,7 +108,18 @@ const items = [
         title: 'Avatar'
       }
     ]
-  }
+  },
+  {
+    header: {
+      title: 'Feedback'
+    },
+    items: [
+      {
+        href: '/components/badge',
+        title: 'Badge'
+      }
+    ]
+  },
 ]
 
 function Logo() {
