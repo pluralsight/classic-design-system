@@ -1,0 +1,265 @@
+---
+name: Action Menu
+route: /components/actionmenu
+---
+
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { Intro, Types, Usage } from '../../components/component'
+
+# Action Menu
+
+<Intro>
+  Used to perform an action, or to navigate from a list of options
+</Intro>
+
+## Examples
+
+### Icons
+
+Use <code>ActionMenu.Icon</code> to add context and recognition to action menu items.
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { PencilIcon, ChannelIcon, PlayIcon } from '@pluralsight/ps-design-system-icon'
+
+function Example () {
+  return <ActionMenu >
+      <ActionMenu.Item>
+        <ActionMenu.Icon marginLeft>
+          <PencilIcon />
+        </ActionMenu.Icon>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        <ActionMenu.Icon marginLeft>
+          <ChannelIcon />
+        </ActionMenu.Icon>
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        <ActionMenu.Icon marginLeft>
+          <PlayIcon />
+        </ActionMenu.Icon>
+        Three item
+      </ActionMenu.Item>
+    </ActionMenu>
+}
+export default Example
+```
+
+### Ellipsis
+Use <code>ActionMenu.Ellipsis</code> to add ellipsis to action menu items.
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+function Example(){
+  return <ActionMenu  >
+      <ActionMenu.Item>
+        <ActionMenu.Ellipsis>
+          One item that has text that goes on forever and onward into the
+          universes yet to be
+        </ActionMenu.Ellipsis>
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        <ActionMenu.Ellipsis>
+          Another item that takes a long time to explain in the context of
+          everything that is in a line.
+        </ActionMenu.Ellipsis>
+      </ActionMenu.Item>
+    </ActionMenu>
+}
+export default Example
+```
+
+### Dividers
+Dividers can be useful to separate similar actions. Dividers are applied 
+at the list level, below the assigned list item.
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+function Example() {
+  return <ActionMenu >
+      <ActionMenu.Item>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item>
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Three item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item>
+        Four item
+      </ActionMenu.Item>
+    </ActionMenu>
+}
+export default Example
+```
+
+### Nesting
+Nested menu lists may spawn from parent menu list items.
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+function Example() {
+  return <ActionMenu >
+      <ActionMenu.Item>
+        One item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item
+        nested={
+          <React.Fragment>
+            <ActionMenu.Item>
+              Nest 1
+            </ActionMenu.Item>
+            <ActionMenu.Item
+              nested={
+                <React.Fragment>
+                  <ActionMenu.Item>
+                    Nest nest 1-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 1-2
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 1-3
+                  </ActionMenu.Item>
+                </React.Fragment>
+              }
+            >
+              Nest 2
+            </ActionMenu.Item>
+            <ActionMenu.Divider />
+            <ActionMenu.Item
+              nested={
+                <React.Fragment>
+                  <ActionMenu.Item>
+                    Nest nest 3-1
+                  </ActionMenu.Item>
+                  <ActionMenu.Item>
+                    Nest nest 3-2
+                  </ActionMenu.Item>
+                </React.Fragment>
+              }
+            >
+              Nest 3
+            </ActionMenu.Item>
+          </React.Fragment>
+        }
+      >
+        Two item
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Three item
+      </ActionMenu.Item>
+      <ActionMenu.Divider />
+      <ActionMenu.Item>
+        Four item
+      </ActionMenu.Item>
+    </ActionMenu>
+}
+export default Example
+```
+
+### Disabled Items
+To keep items in the menu but make them disabled, mark with a <code>disabled</code> prop.
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+function Example() {
+  return <ActionMenu >
+      <ActionMenu.Item>
+        Normal, enabled
+      </ActionMenu.Item>
+      <ActionMenu.Item disabled>
+        Present, but disabled
+      </ActionMenu.Item>
+      <ActionMenu.Item>
+        Normal, enabled
+      </ActionMenu.Item>
+    </ActionMenu>
+}
+export default Example
+```
+
+### Origin
+The origin prop determines the starting position and direction of nested menus.
+Here's an example of ActionMenu.origins.bottomLeft in action
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+function Example() {
+  return <div style={{ height: 300, width: 300, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'flex-start'}}>
+  <ActionMenu origin={ActionMenu.origins.bottomLeft} >
+    <ActionMenu.Item
+      nested={
+        <React.Fragment>
+          <ActionMenu.Item>Nest 1</ActionMenu.Item>
+          <ActionMenu.Item
+            nested={
+              <React.Fragment>
+                <ActionMenu.Item>Nest nest 1-1</ActionMenu.Item>
+                <ActionMenu.Item>Nest nest 1-2</ActionMenu.Item>
+                <ActionMenu.Item>Nest nest 1-3</ActionMenu.Item>
+              </React.Fragment>
+            }
+          >
+            Nest 2
+          </ActionMenu.Item>
+          <ActionMenu.Divider />
+          <ActionMenu.Item>Nest 3</ActionMenu.Item>
+          <ActionMenu.Item
+            nested={
+              <React.Fragment>
+                <ActionMenu.Item>Nest nest 2-1</ActionMenu.Item>
+                <ActionMenu.Item>Nest nest 2-2</ActionMenu.Item>
+              </React.Fragment>
+            }
+          >
+            Nest 4
+          </ActionMenu.Item>
+        </React.Fragment>
+      }
+    >
+      One
+    </ActionMenu.Item>
+    <ActionMenu.Item>Two</ActionMenu.Item>
+  </ActionMenu>
+  </div>
+}
+export default Example
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-actionmenu"
+  import="import Avatar from '@pluralsight/ps-design-system-actionmenu'"
+  packageName="actionmenu"
+  />
+
+### ActionMenu
+<Types.Table>
+  <Types.Prop name="onClose" type="function" desc="triggered when a menu collapses; providing it renders an overlay that triggers this function on click" />
+  <Types.Prop name="onClick" type="function" desc="triggered when an item selected via click, enter or space"/>
+  <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>} desc="orientation ActionMenu.origins of nested menus" default="topLeft"/>
+</Types.Table>
+
+### ActionMenu.Item
+<Types.Table>
+  <Types.Prop name="disabled" type="boolean" desc="visually disabled, non-interactive" />
+  <Types.Prop name="href" type="string" desc="anchor tag uri" />
+  <Types.Prop name="nested" type="ActionMenu.Item(s)" desc="nested menu items" />
+  <Types.Prop name="onClick" type="function" desc="triggered on item select: click, enter or space" />
+  <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>}  desc="override orientation (from ActionMenu.origins) of items nested menu" />
+  <Types.Prop name="tagName" type="boolean" desc="ActionMenu.Item trigger element tag (from ActionMenu.tagName)" default="a" />
+  <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
+</Types.Table>

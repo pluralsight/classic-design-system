@@ -3,6 +3,7 @@ import AppFrame from '@pluralsight/ps-design-system-appframe'
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Carousel from '@pluralsight/ps-design-system-carousel'
 import Card from '@pluralsight/ps-design-system-card'
+import * as core from '@pluralsight/ps-design-system-core'
 import Badge from '@pluralsight/ps-design-system-badge'
 import Banner from '@pluralsight/ps-design-system-banner'
 import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
@@ -13,7 +14,10 @@ import DataWell from '@pluralsight/ps-design-system-datawell'
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import Drawer from '@pluralsight/ps-design-system-drawer'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Dropdown, {
+  useDropdown,
+  DropdownContext
+} from '@pluralsight/ps-design-system-dropdown'
 import EmptyState from '@pluralsight/ps-design-system-emptystate'
 import * as Errors from '@pluralsight/ps-design-system-errors'
 import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
@@ -65,6 +69,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-banner': { Banner },
   '@pluralsight/ps-design-system-breadcrumb': { Breadcrumb },
   '@pluralsight/ps-design-system-button': { Button },
+  '@pluralsight/ps-design-system-core': { core },
   '@pluralsight/ps-design-system-card': { Card },
   '@pluralsight/ps-design-system-carousel': { Carousel },
   '@pluralsight/ps-design-system-checkbox': { Checkbox },
@@ -73,7 +78,11 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-datepicker': { DatePicker },
   '@pluralsight/ps-design-system-dialog': { Dialog },
   '@pluralsight/ps-design-system-drawer': { Drawer },
-  '@pluralsight/ps-design-system-dropdown': { Dropdown },
+  '@pluralsight/ps-design-system-dropdown': {
+    Dropdown,
+    useDropdown,
+    DropdownContext
+  },
   '@pluralsight/ps-design-system-emptystate': { EmptyState },
   '@pluralsight/ps-design-system-errors': { ...omit(Errors, ['default']) },
   '@pluralsight/ps-design-system-featureflags': { FeatureFlags },

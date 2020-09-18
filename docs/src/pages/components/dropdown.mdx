@@ -1,0 +1,394 @@
+---
+name: Dropdown
+route: /components/dropdown
+---
+import * as core from '@pluralsight/ps-design-system-core'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import { Intro, Types, Usage } from '../../components/component'
+
+# Dropdown
+
+
+```typescript switcher
+---
+title: labels
+description: Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
+---
+
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import * as core from '@pluralsight/ps-design-system-core'
+
+const Comp = () => (
+  <div className="example">
+    <Dropdown
+      label="Level"
+      menu={
+        <>
+          <Dropdown.Item>Beginner</Dropdown.Item>
+          <Dropdown.Item>Intermediate</Dropdown.Item>
+          <Dropdown.Item>Advanced</Dropdown.Item>
+        </>
+      }
+    />
+    <Dropdown
+      label="Level"
+      placeholder="Select level"
+      menu={
+        <>
+          <Dropdown.Item>Beginner</Dropdown.Item>
+          <Dropdown.Item>Intermediate</Dropdown.Item>
+          <Dropdown.Item>Advanced</Dropdown.Item>
+        </>
+      }
+    />
+    <Dropdown
+      label="Level"
+      placeholder="Select level"
+      subLabel="Which audience is this course aimed at?"
+      menu={
+        <>
+          <Dropdown.Item>Beginner</Dropdown.Item>
+          <Dropdown.Item>Intermediate</Dropdown.Item>
+          <Dropdown.Item>Advanced</Dropdown.Item>
+        </>
+      }
+    />
+    <style jsx>{`
+        .example {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .example > * {
+          margin-bottom: ${core.layout.spacingMedium};
+        }
+      `}</style>
+  </div>
+)
+export default Comp
+
+===
+
+---
+title: Pre-selected Label
+description: Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
+---
+
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Comp = () => <Dropdown
+  label="Level"
+  placeholder="Intermediate"
+  subLabel="Which audience is this course aimed at?"
+  menu={
+    <>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </>
+  }
+/>
+export default Comp
+
+===
+
+---
+title: Appearance
+description: When using the dark theme, a subtle appearance is available. (Switch theme to dark)
+---
+
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Comp = () => <Dropdown
+    appearance={Dropdown.appearances.subtle}
+    label="Level"
+    placeholder="Select level"
+    menu={
+      <React.Fragment>
+        <Dropdown.Item>Beginner</Dropdown.Item>
+        <Dropdown.Item>Intermediate</Dropdown.Item>
+        <Dropdown.Item>Advanced</Dropdown.Item>
+      </React.Fragment>
+    }
+  />
+
+export default Comp
+
+===
+
+---
+title: Disabled
+description: Disabled dropdowns are unmodifiable, not interactive, and diminished visually.
+---
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Comp = () => <Dropdown disabled label="Can't touch this" placeholder="Just try it" />
+
+export default Comp
+
+===
+
+---
+title: Error
+description: Error states are engaged with the error flag. Error-related messaging is sent to the subLabel prop.
+---
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Comp = () => <Dropdown
+  error
+  label="Level"
+  placeholder="Select level"
+  menu={
+    <>
+      <Dropdown.Item>Beginner</Dropdown.Item>
+      <Dropdown.Item>Intermediate</Dropdown.Item>
+      <Dropdown.Item>Advanced</Dropdown.Item>
+    </>
+  }
+/>
+
+export default Comp
+
+===
+
+---
+title: Size
+description: The small dropdown is ideal for usage within table rows otherwise use the default, medium size dropdown, in forms for example.
+---
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Comp = () => <>
+  <Dropdown
+    placeholder="medium dropdown"
+    menu={
+      <>
+        <Dropdown.Item>Beginner</Dropdown.Item>
+        <Dropdown.Item>Intermediate</Dropdown.Item>
+        <Dropdown.Item>Advanced</Dropdown.Item>
+      </>
+    }
+  />
+  <Dropdown
+    size={Dropdown.sizes.small}
+    placeholder="Small dropdown"
+    menu={
+      <>
+        <Dropdown.Item>Beginner</Dropdown.Item>
+        <Dropdown.Item>Intermediate</Dropdown.Item>
+        <Dropdown.Item>Advanced</Dropdown.Item>
+      </>
+    }
+  />
+</>
+
+export default Comp
+```
+
+## Stateful Example
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-dropdown'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
+function Example() {
+  const options = [
+    { value: 'beg', label: 'Beginner' },
+    { value: 'int', label: 'Intermediate' },
+    { value: 'adv', label: 'Advanced' }
+  ]
+  const [value, setValue] = React.useState(options[1].value)
+  return (<>
+    <div className="example">
+    <Button onClick={() => setValue('beg')}>Set Beginner</Button>
+      <Dropdown
+        label="Level"
+        placeholder="Select"
+        onChange={(evt, value, label) => setValue(value)}
+        menu={options.map(opt => (
+              <Dropdown.Item key={opt.value} value={opt.value}>
+                {opt.label}
+              </Dropdown.Item>
+            ))
+        }
+        value={value}
+      />
+      <div>Selected: {value}</div>
+    </div>
+    <style jsx>{`
+        .example {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .example > * {
+          margin-bottom: ${core.layout.spacingMedium};
+        }
+      `}</style>
+    </>
+  )
+}
+export default Example
+```
+
+## Extending Behavior
+
+### Fixed Icon
+
+```typescript
+import React from 'react'
+import Dropdown, {useDropdown} from '@pluralsight/ps-design-system-dropdown'
+import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
+
+const DropdownWithIcon = React.forwardRef(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
+function Example () {
+  return <DropdownWithIcon
+    icon={<CalendarIcon style={{ marginRight: 8 }} />}
+    menu={
+      <>
+        <Dropdown.Item>Trailing 14 Days</Dropdown.Item>
+        <Dropdown.Item>Last Month</Dropdown.Item>
+        <Dropdown.Item>Trailing 30 Days</Dropdown.Item>
+        <Dropdown.Item>Last Quater</Dropdown.Item>
+        <Dropdown.Item>Trailing 90 Days</Dropdown.Item>
+        <Dropdown.Item>Custom</Dropdown.Item>
+      </>
+    }
+  />
+}
+export default Example
+```
+
+### Dynamic Icon
+
+```typescript
+import React from 'react'
+import Dropdown, {useDropdown} from '@pluralsight/ps-design-system-dropdown'
+import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
+
+const DropdownWithIcon = React.forwardRef(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
+function Example () {
+  const [selected, setSelected] = React.useState()
+  const values = {
+    channel: {
+      value: 'channel',
+      icon: <ChannelIcon style={{ marginRight: 8 }} />,
+      label: 'Channel'
+    },
+    analytics: {
+      value: 'analytics',
+      icon: <AnalyticsIcon style={{ marginRight: 8 }} />,
+      label: 'Analytics'
+    },
+    authorKit: {
+      value: 'authorKit',
+      icon: <AuthorKitIcon style={{ marginRight: 8 }} />,
+      label: 'Author Kit'
+    },
+    labs: {
+      value: 'labs',
+      icon: <LabsIcon style={{ marginRight: 8 }} />,
+      label: 'Labs'
+    }
+  }
+  const handleChange = (e, value) => {
+    setSelected(value)
+  }
+  const icon = values[selected] ? (
+    values[selected].icon
+  ) : (
+    <div style={{ width: 24, height: 24, marginRight: 8 }} />
+  )
+  return <DropdownWithIcon
+    icon={icon}
+    onChange={handleChange}
+    menu={Object.values(values).map(({ value, icon, label }) => (
+      <Dropdown.Item value={value} key={value} icon={icon}>
+        {label}
+      </Dropdown.Item>
+    ))}
+  />
+}
+export default Example
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-dropdown"
+  import="import Avatar from '@pluralsight/ps-design-system-dropdown'"
+  packageName="dropdown"
+  />
+
+### Dropdown
+<Types.Table>
+  <Types.Prop name="appearance" type={<Types.Enum enum={Dropdown.appearances}/>} desc="visual style (from Dropdown.appearances)" default="default"/>
+  <Types.Prop name="disabled" type="boolean" desc="standard input disabled flag" />
+  <Types.Prop name="error" type="boolean" desc="error state flag"/>
+  <Types.Prop name="label" type="string" desc="identifying string for dropdown" />
+  <Types.Prop name="menu" type="Dropdown.Item(s)" desc="menu items for dropdown" default="<span></span>" />
+  <Types.Prop name="onChange" type="function" desc="triggered when an item selected ((event, value, label) => ())" />
+  <Types.Prop name="placeholder" type="string" desc="in-field usage hint" />
+  <Types.Prop name="size" type={<Types.Enum enum={Dropdown.sizes}/>} desc="sets dorpdown size (from Dropdown.sizes)" default="medium" />
+  <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging" />
+ </Types.Table>
+
+### Dropdown.Item
+<Types.Table>
+  <Types.Prop name="disabled" type="boolean" desc="visually disabled, non-interactive" />
+  <Types.Prop name="href" type="string" desc="anchor tag uri" />
+  <Types.Prop name="icon" type="*Icon" desc="An Icon component" />
+  <Types.Prop name="menu" type="Dropdown.Item(s)" desc="Menu items" />
+  <Types.Prop name="onClick" type="function" desc="triggered on item select: click, enter or space" />
+  <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
+</Types.Table>
