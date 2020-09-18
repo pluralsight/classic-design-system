@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
 
-.title {
+.header {
   display: flex;
   align-items: center;
-
-  & > h2:first-child {
+}
+.title {
+  &:not(.hack-to-make-more-specific) {
+    margin: 0;
     margin-right: var(--psLayoutSpacingLarge);
   }
 }
