@@ -3,7 +3,7 @@ import cx from 'classnames'
 import React, { HTMLAttributes } from 'react'
 import { Language } from 'prism-react-renderer'
 
-import { ExamplesSwitcher, Example, parceCode } from './examples'
+import { ExamplesSwitcher, Example, parseCode } from './examples'
 import styles from './styles.module.css'
 
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
@@ -26,7 +26,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
     props.className
   )
 
-  const examples = parceCode(children)
+  const examples = parseCode(children)
   const firstExample = examples[0]
 
   return (
