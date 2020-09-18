@@ -84,6 +84,10 @@ const items = [
       {
         href: '/components/breadcrumb',
         title: 'Breadcrumb'
+      },
+      {
+        href: '/components/verticaltabs',
+        title: 'Vertical Tabs'
       }
     ]
   },
