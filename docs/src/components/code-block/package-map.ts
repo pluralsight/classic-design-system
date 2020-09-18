@@ -1,6 +1,7 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Carousel from '@pluralsight/ps-design-system-carousel'
 import Card from '@pluralsight/ps-design-system-card'
+import Banner from '@pluralsight/ps-design-system-banner'
 import Button from '@pluralsight/ps-design-system-button'
 import {
   CheckIcon,
@@ -17,6 +18,7 @@ import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
 export const PACKAGE_MAP = {
   '@pluralsight/ps-design-system-avatar': { Avatar },
+  '@pluralsight/ps-design-system-banner': { Banner },
   '@pluralsight/ps-design-system-carousel': { Carousel },
   '@pluralsight/ps-design-system-card': { Card },
   '@pluralsight/ps-design-system-button': { Button },
