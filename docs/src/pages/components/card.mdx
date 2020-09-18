@@ -19,10 +19,10 @@ The card is a flexible component that will fit the container it's given.  A gall
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Card from '@pluralsight/ps-design-system-card'
 import { BookmarkIcon, MoreIcon, PathIcon, PlayCircleIcon } from '@pluralsight/ps-design-system-icon'
-import * as Layout from '@pluralsight/ps-design-system-layout'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 
 function Example() {
-  return <Layout.EqualColumnLayout>
+  return <EqualColumnLayout>
     <ul>
       <li>
         <Card
@@ -99,7 +99,7 @@ function Example() {
         />
       </li>
     </ul>
-  </Layout.EqualColumnLayout>
+  </EqualColumnLayout>
 }
 
 export default Example
