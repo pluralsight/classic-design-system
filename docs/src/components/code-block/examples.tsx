@@ -123,7 +123,7 @@ export const Example: React.FC<ExampleProps> = props => {
 
 export function parseCode(
   code: string,
-  delimiter = '\n\n---\n\n'
+  delimiter = '\n\n===\n\n'
 ): ExampleData[] {
   return code.split(delimiter).map((str: string, index) => {
     const { content = '', data = {} } = frontmatter(str)
