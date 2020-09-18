@@ -132,6 +132,10 @@ const items = [
       {
         href: '/components/banner',
         title: 'Banner'
+      },
+      {
+        href: '/components/circularprogress',
+        title: 'Circular progress'
       }
     ]
   }
