@@ -60,7 +60,8 @@ const Position = React.forwardRef((props, forwardedRef) => {
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
   const child = React.Children.only(props.children)
-  const showRef = React.useRef()
+  const innerRef = React.useRef()
+  const showRef = props.show.ref || innerRef
   const showEl = React.cloneElement(props.show, {
     ref: showRef,
     style: { ...props.show.props.style, ...style }
