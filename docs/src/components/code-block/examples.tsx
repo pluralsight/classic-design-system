@@ -126,7 +126,8 @@ export function parseCode(
   delimiter = '\n\n---\n\n'
 ): ExampleData[] {
   return code.split(delimiter).map((str: string, index) => {
-    const { content: code, data = {} } = frontmatter(str)
+    const { content = '', data = {} } = frontmatter(str)
+    const code = content.trim()
 
     const description = data.description || ''
     const title = data.title || `Example #${index}`
