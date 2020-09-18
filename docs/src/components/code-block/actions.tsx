@@ -5,6 +5,7 @@ import CodeSandboxer from 'react-codesandboxer'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 import pkg from '../../../package.json'
+import usePrevious from '../../hooks/use-previous'
 import styles from './styles.module.css'
 
 export const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
@@ -78,9 +79,11 @@ interface CopyActionProps extends HTMLAttributes<HTMLButtonElement> {
 }
 export const CopyAction: React.FC<CopyActionProps> = props => {
   const [copied, setCopied] = useState(false)
+  const prevCopied = usePrevious(copied)
 
   useEffect(() => {
-    if (copied) return
+    if (prevCopied === copied) return
+    if (!copied) return
 
     const timer = setTimeout(() => setCopied(false), 1000)
 
