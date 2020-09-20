@@ -115,6 +115,17 @@ const items = [
   },
   {
     header: {
+      title: 'Lists & Tables'
+    },
+    items: [
+      {
+        href: '/components/card',
+        title: 'Card'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Images & Icons'
     },
     items: [
@@ -136,6 +147,10 @@ const items = [
       {
         href: '/components/banner',
         title: 'Banner'
+      },
+      {
+        href: '/components/circularprogress',
+        title: 'Circular progress'
       }
     ]
   }
