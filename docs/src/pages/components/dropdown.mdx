@@ -2,7 +2,7 @@
 name: Dropdown
 route: /components/dropdown
 ---
-import * as core from '@pluralsight/ps-design-system-core'
+
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import { Intro, Types, Usage } from '../../components/component'
 
@@ -17,7 +17,7 @@ description: Primary identification of a dropdown comes through the label. Usage
 
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
-import * as core from '@pluralsight/ps-design-system-core'
+import {layout} from '@pluralsight/ps-design-system-core'
 
 const Comp = () => (
   <div className="example">
@@ -61,7 +61,7 @@ const Comp = () => (
           align-items: flex-start;
         }
         .example > * {
-          margin-bottom: ${core.layout.spacingMedium};
+          margin-bottom: ${layout.spacingMedium};
         }
       `}</style>
   </div>
@@ -197,7 +197,7 @@ import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-dropdown'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Button from '@pluralsight/ps-design-system-button'
-import * as core from '@pluralsight/ps-design-system-core'
+import {layout} from '@pluralsight/ps-design-system-core'
 function Example() {
   const options = [
     { value: 'beg', label: 'Beginner' },
@@ -229,7 +229,7 @@ function Example() {
           align-items: flex-start;
         }
         .example > * {
-          margin-bottom: ${core.layout.spacingMedium};
+          margin-bottom: ${layout.spacingMedium};
         }
       `}</style>
     </>
