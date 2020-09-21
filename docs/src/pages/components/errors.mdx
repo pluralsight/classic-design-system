@@ -10,7 +10,7 @@ import {
   ServiceUnavailableErrorPage
 } from '@pluralsight/ps-design-system-errors'
 
-import { Guideline, Types, Usage } from '../../components/component'
+import { Guideline, Intro, Types, Usage } from '../../components/component'
 
 # Error pages
 
@@ -29,9 +29,7 @@ import ForbiddenErrorPage from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
-  return <>
-   <ForbiddenErrorPage />
-  </>
+  return <ForbiddenErrorPage />
 }
 
 export default Example
@@ -53,9 +51,7 @@ import NotFoundErrorPage from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
-  return <>
-   <NotFoundErrorPage />
-  </>
+  return <NotFoundErrorPage />
 }
 
 export default Example
@@ -76,9 +72,7 @@ import InternalServerErrorPage from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
-  return <>
-   <InternalServerErrorPage />
-  </>
+  return <InternalServerErrorPage />
 }
 
 export default Example
@@ -100,9 +94,7 @@ import ServiceUnavailableErrorPage from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
-  return <>
-   <ServiceUnavailableErrorPage />
-  </>
+  return <ServiceUnavailableErrorPage />
 }
 
 export default Example
@@ -110,15 +102,18 @@ export default Example
 
 ## Usage
 
-<Usage install="npm install @pluralsight/ps-design-system-errors"
-  import="import {
-    ForbiddenErrorPage,
-    NotFoundErrorPage,
-    InternalServerErrorPage,
-    ServiceUnavailableErrorPage
-  } from '@pluralsight/ps-design-system-errors'"
+<Usage
+  install="npm install @pluralsight/ps-design-system-errors"
+  import={`
+import {
+  ForbiddenErrorPage,
+  NotFoundErrorPage,
+  InternalServerErrorPage,
+  ServiceUnavailableErrorPage
+} from '@pluralsight/ps-design-system-errors'"
+  `}
   packageName="errors"
-  />
+/>
 
 
 
