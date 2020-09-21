@@ -1,29 +1,28 @@
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import cx from 'classnames'
-import Highlight, { Language, defaultProps } from 'prism-react-renderer'
-import React, { HTMLAttributes } from 'react'
+import Highlight, { defaultProps } from 'prism-react-renderer'
+import React, { useContext } from 'react'
 
+import { CodeBlockContext } from './index'
 import styles from './styles.module.css'
 import { darkTheme, lightTheme } from './theme'
 
-interface EditorProps extends HTMLAttributes<HTMLPreElement> {
+interface EditorProps {
   children: string
   expanded: boolean
-  language: Language
 }
 export const Editor: React.FC<EditorProps> = props => {
-  const { children: code, expanded, language, ...rest } = props
-
-  const theme = useTheme()
-  const isDarkTheme = theme === Theme.names.dark
+  const context = useContext(CodeBlockContext)
+  const themeName = useTheme()
+  const isDarkTheme = themeName === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
 
   return (
     <Highlight
       {...defaultProps}
-      code={code}
-      language={language}
+      code={props.children}
+      language={context.language}
       theme={codeTheme}
     >
       {highlight => {
@@ -32,11 +31,11 @@ export const Editor: React.FC<EditorProps> = props => {
         const className = cx({
           [highlight.className]: true,
           [styles.editor]: true,
-          [styles.editorExpanded]: expanded
+          [styles.editorExpanded]: props.expanded
         })
 
         return (
-          <pre className={className} {...rest}>
+          <pre className={className}>
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
@@ -44,6 +43,7 @@ export const Editor: React.FC<EditorProps> = props => {
                 ))}
               </div>
             ))}
+            {!props.expanded && <div className={styles.editorFade} />}
           </pre>
         )
       }}
