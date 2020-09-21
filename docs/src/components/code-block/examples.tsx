@@ -1,11 +1,11 @@
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
-import cx from 'classnames'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import frontmatter from '@github-docs/frontmatter'
 import { Language } from 'prism-react-renderer'
-import React, { HTMLAttributes, useState } from 'react'
+import React, { HTMLAttributes, useContext, useState } from 'react'
 
+import { CodeBlockContext } from './index'
 import { H2 } from '../mdx'
 
 import {
@@ -30,33 +30,23 @@ export interface ExampleData {
 
 interface ExamplesSwitcherProps extends HTMLAttributes<HTMLDivElement> {
   examples: ExampleData[]
-  language: Language
-  noRender?: boolean
-  startExpanded: boolean
 }
 export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
-  const {
-    examples,
-    language,
-    className,
-    noRender,
-    startExpanded,
-    ...rest
-  } = props
-
-  const [selectedOption, setSelectedOption] = React.useState(examples[0].value)
+  const [selectedOption, setSelectedOption] = React.useState(
+    props.examples[0].value
+  )
 
   function handleDropdownChange(_evt: React.ChangeEvent, value: string) {
     setSelectedOption(value)
   }
 
   return (
-    <div {...rest}>
+    <div>
       <header className={styles.header}>
         <H2 className={styles.title}>Examples</H2>
 
         <Dropdown
-          menu={examples.map(example => {
+          menu={props.examples.map(example => {
             return (
               <Dropdown.Item key={example.id} value={example.value}>
                 {example.title}
@@ -69,18 +59,14 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
       </header>
 
       <div>
-        {examples
+        {props.examples
           .filter(example => example.value === selectedOption)
           .map(example => {
             return (
               <Example
                 key={example.id}
-                className={className}
                 code={example.code}
                 description={example.description}
-                language={language}
-                noRender={noRender}
-                startExpanded={startExpanded}
               />
             )
           })}
@@ -92,31 +78,18 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
 interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   description?: string
   code: string
-  language: Language
-  noRender?: boolean
-  startExpanded?: boolean
 }
 export const Example: React.FC<ExampleProps> = props => {
-  const {
-    code,
-    description,
-    language,
-    noRender,
-    startExpanded = true,
-    ...rest
-  } = props
-
-  const [expanded, setExpanded] = useState<boolean>(startExpanded)
+  const context = useContext(CodeBlockContext)
+  const [expanded, setExpanded] = useState<boolean>(context.startExpanded)
   const toggleExpanded = () => setExpanded(!expanded)
-
-  const className = cx(styles.example, props.className)
 
   return (
     <div>
-      {description && <Text.P>{description}</Text.P>}
+      {props.description && <Text.P>{props.description}</Text.P>}
 
-      <div {...rest} className={className}>
-        <Preview code={code} language={language} noRender={noRender} />
+      <div className={styles.example}>
+        <Preview code={props.code} />
 
         <Actions>
           <ActionsLeft>
@@ -129,9 +102,7 @@ export const Example: React.FC<ExampleProps> = props => {
           </ActionsRight>
         </Actions>
 
-        <Editor expanded={expanded} language={language}>
-          {props.code}
-        </Editor>
+        <Editor expanded={expanded}>{props.code}</Editor>
       </div>
     </div>
   )

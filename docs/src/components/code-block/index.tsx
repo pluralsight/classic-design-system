@@ -6,6 +6,17 @@ import { Language } from 'prism-react-renderer'
 import { ExamplesSwitcher, Example, parseCode } from './examples'
 import styles from './styles.module.css'
 
+interface CodeBlockContextValue {
+  language: Language
+  noRender: boolean
+  startExpanded: boolean
+}
+export const CodeBlockContext = React.createContext<CodeBlockContextValue>({
+  language: 'typescript',
+  noRender: false,
+  startExpanded: false
+})
+
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   children: string
   noRender?: boolean
@@ -13,9 +24,6 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   startExpanded?: boolean
 }
 export const CodeBlock: React.FC<CodeBlockProps> = props => {
-  const { children, noRender, switcher = false, startExpanded, ...rest } = props
-  const language = props.className?.replace(/language-/, '') as Language
-
   const theme = useTheme()
   const isDarkTheme = theme === Theme.names.dark
   const className = cx(
@@ -27,29 +35,30 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
     props.className
   )
 
-  const examples = parseCode(children)
+  const language = props.className?.replace(/language-/, '') as Language
+  const examples = parseCode(props.children)
   const firstExample = examples[0]
 
   return (
-    <div {...rest} className={className}>
-      {switcher ? (
-        <ExamplesSwitcher
-          language={language}
-          examples={examples}
-          noRender={noRender}
-          startExpanded={startExpanded}
-        />
-      ) : (
-        <>
-          <Example
-            description={firstExample.description}
-            language={language}
-            code={firstExample.code}
-            noRender={noRender}
-            startExpanded={startExpanded}
-          />
-        </>
-      )}
-    </div>
+    <CodeBlockContext.Provider
+      value={{
+        language,
+        noRender: props.noRender,
+        startExpanded: props.startExpanded
+      }}
+    >
+      <div className={className}>
+        {props.switcher ? (
+          <ExamplesSwitcher examples={examples} />
+        ) : (
+          <>
+            <Example
+              description={firstExample.description}
+              code={firstExample.code}
+            />
+          </>
+        )}
+      </div>
+    </CodeBlockContext.Provider>
   )
 }
