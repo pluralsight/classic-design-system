@@ -119,6 +119,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/datawell',
+        title: 'Data well'
+      },
+      {
         href: '/components/card',
         title: 'Card'
       }
