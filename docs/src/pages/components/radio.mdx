@@ -10,7 +10,9 @@ import { Intro, Types, Usage } from '../../components/component'
 ## Examples
 
 ### Uncontrolled
-Uncontrolled with inital value set. Radio buttons present a group of options, of which only a single option can be selected at a time. The grouping is commonly defined by the ```name``` prop.
+
+Uncontrolled with inital value set. Radio buttons present a group of options, of which only a single option can be selected at a time. The grouping is commonly defined by the `name` prop.
+
 ```typescript
 import React from 'react'
 import Radio from '@pluralsight/ps-design-system-radio'
@@ -28,7 +30,9 @@ export default Comp
 ```
 
 ### Controlled
-Controlled Radios require both ```value``` and ```handleChange``` callback
+
+Controlled Radios require both `value` and `handleChange` callback
+
 ```typescript
 import React from 'react'
 import Radio from '@pluralsight/ps-design-system-radio'
@@ -75,7 +79,9 @@ export default Comp
 ```
 
 ### Disabled
+
 Disabled radio buttons are unmodifiable and diminished visually.
+
 ```typescript
 import React from 'react'
 import Radio from '@pluralsight/ps-design-system-radio'
@@ -93,6 +99,7 @@ export default Comp
 ```
 
 ### Error
+
 Error states are engaged with the ```error``` flag.
 ```typescript
 import React from 'react'
@@ -113,17 +120,18 @@ export default Comp
 ## Usage & Types
 
 <Usage install="npm install @pluralsight/ps-design-system-radio"
-  import="import Avatar from '@pluralsight/ps-design-system-radio'"
+  import="import Radio from '@pluralsight/ps-design-system-radio'"
   packageName="radio"
   />
 
 ### Radio.Group
+
 <Types.Table>
   <Types.Prop name="disable" type="boolean" desc="standard input disable flag" default="false"/>
   <Types.Prop name="error" type="boolean" desc="error state flag" default="false"/>
   <Types.Prop name="label" type="string" desc="identifying string for group"/>
   <Types.Prop name="name" type="string" desc="form data identifier"/>
-  <Types.Prop name="onChange" type="(Event, value: any) => ()" desc="triggers on radio select"/>
+  <Types.Prop name="onChange" type="(Event, value: any) => void" desc="triggers on radio select"/>
   <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging"/>
   <Types.Prop name="value" type="string | number" desc="if Radio.Group is controlled current selected radio value else if uncontrolled initial selected value"/>
 </Types.Table>
@@ -131,9 +139,9 @@ export default Comp
 ### Radio.Button
 
 <Types.Table>
-  <Types.Prop name="label" type="node" desc="display text"/>
-  <Types.Prop name="onBlur" type="(Event) => ()" desc="triggers on radio blur"/>
-  <Types.Prop name="onClick" type="(Event, value: any) => ()" desc="triggers on radio select"/>
-  <Types.Prop name="onFocus" type="(Event) => ()" desc="triggers on radio focus"/>
+  <Types.Prop name="label" type="React.ReactNode" desc="display text"/>
+  <Types.Prop name="onBlur" type="(Event) => void" desc="triggers on radio blur"/>
+  <Types.Prop name="onClick" type="(Event, value: any) => void" desc="triggers on radio select"/>
+  <Types.Prop name="onFocus" type="(Event) => void" desc="triggers on radio focus"/>
   <Types.Prop name="value" type="string | number" desc="radio option value"/>
 </Types.Table>

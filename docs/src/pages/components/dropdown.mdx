@@ -7,13 +7,14 @@ import { Intro, Types, Usage } from '../../components/component'
 
 # Dropdown
 
+## Examples
 
-```typescript switcher
----
-title: labels
-description: Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
----
+### Label
 
+Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
+
+
+```typescript
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import { layout } from '@pluralsight/ps-design-system-core'
@@ -58,12 +59,13 @@ const Comp = () => (
 )
 export default Comp
 
-===
+```
 
----
-title: Pre-selected Label
-description: Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
----
+### Pre-selected Label
+
+Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
+
+```typescript
 
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
@@ -82,13 +84,14 @@ const Comp = () => <Dropdown
 />
 export default Comp
 
-===
+```
 
----
-title: Appearance
-description: When using the dark theme, a subtle appearance is available. (Switch theme to dark)
----
 
+### Appearance
+
+When using the dark theme, a `subtle` appearance is available. (Switch theme to dark)
+
+```typescript
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 
@@ -107,12 +110,13 @@ const Comp = () => <Dropdown
 
 export default Comp
 
-===
+```
 
----
-title: Disabled
-description: Disabled dropdowns are unmodifiable, not interactive, and diminished visually.
----
+### Disabled
+
+Disabled dropdowns are unmodifiable, not interactive, and diminished visually.
+
+```typescript
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 
@@ -120,12 +124,13 @@ const Comp = () => <Dropdown disabled label="Can't touch this" placeholder="Just
 
 export default Comp
 
-===
+```
 
----
-title: Error
-description: Error states are engaged with the error flag. Error-related messaging is sent to the subLabel prop.
----
+### Error
+
+Error states are engaged with the `error` flag. Error-related messaging is sent to the `subLabel` prop.
+
+```typescript
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 
@@ -144,12 +149,13 @@ const Comp = () => <Dropdown
 
 export default Comp
 
-===
+```
 
----
-title: Size
-description: The small dropdown is ideal for usage within table rows otherwise use the default, medium size dropdown, in forms for example.
----
+### Size
+
+The small dropdown is ideal for usage within table rows otherwise use the `default`, `medium` size dropdown, in forms for example.
+
+```typescript
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 
@@ -217,6 +223,7 @@ function Example() {
 }
 
 export default Example
+
 ```
 
 ## Extending Behavior
@@ -349,29 +356,31 @@ export default Example
 ## Usage & Types
 
 <Usage install="npm install @pluralsight/ps-design-system-dropdown"
-  import="import Avatar from '@pluralsight/ps-design-system-dropdown'"
+  import="import Dropdown from '@pluralsight/ps-design-system-dropdown'"
   packageName="dropdown"
   />
 
 ### Dropdown
+
 <Types.Table>
   <Types.Prop name="appearance" type={<Types.Enum enum={Dropdown.appearances}/>} desc="visual style (from Dropdown.appearances)" default="default"/>
   <Types.Prop name="disabled" type="boolean" desc="standard input disabled flag" />
   <Types.Prop name="error" type="boolean" desc="error state flag"/>
   <Types.Prop name="label" type="string" desc="identifying string for dropdown" />
   <Types.Prop name="menu" type="Dropdown.Item(s)" desc="menu items for dropdown" default="<span></span>" />
-  <Types.Prop name="onChange" type="(Event, value, label) => ()" desc="triggered when an item selected ((event, value, label) => ())" />
+  <Types.Prop name="onChange" type="(Event, value, label) => void" desc="triggered when an item selected ((event, value, label) => ())" />
   <Types.Prop name="placeholder" type="string" desc="in-field usage hint" />
   <Types.Prop name="size" type={<Types.Enum enum={Dropdown.sizes}/>} desc="sets dorpdown size (from Dropdown.sizes)" default="medium" />
   <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging" />
  </Types.Table>
 
 ### Dropdown.Item
+
 <Types.Table>
   <Types.Prop name="disabled" type="boolean" desc="visually disabled, non-interactive" />
   <Types.Prop name="href" type="string" desc="anchor tag uri" />
   <Types.Prop name="icon" type="*Icon" desc="An Icon component" />
   <Types.Prop name="menu" type="Dropdown.Item(s)" desc="Menu items" />
-  <Types.Prop name="onClick" type="(Event) => ()" desc="triggered on item select: click, enter or space" />
+  <Types.Prop name="onClick" type="(Event) => void" desc="triggered on item select: click, enter or space" />
   <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
 </Types.Table>

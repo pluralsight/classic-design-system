@@ -16,7 +16,7 @@ import { Intro, Types, Usage } from '../../components/component'
 
 ### Icons
 
-Use ```ActionMenu.Icon`` to add context and recognition to action menu items.
+Use `ActionMenu.Icon` to add context and recognition to action menu items.
 
 ```typescript
 import React from 'react'
@@ -50,7 +50,8 @@ export default Example
 ```
 
 ### Ellipsis
-Use ```ActionMenu.Ellipsis``` to add ellipsis to action menu items.
+
+Use `ActionMenu.Ellipsis` to add ellipsis to action menu items.
 
 ```typescript
 import React from 'react'
@@ -105,6 +106,7 @@ export default Example
 ```
 
 ### Nesting
+
 Nested menu lists may spawn from parent menu list items.
 
 ```typescript
@@ -173,6 +175,7 @@ export default Example
 ```
 
 ### Disabled Items
+
 To keep items in the menu but make them disabled, mark with a ```disabled``` prop.
 
 ```typescript
@@ -196,6 +199,7 @@ export default Example
 ```
 
 ### Origin
+
 The origin prop determines the starting position and direction of nested menus.
 Here's an example of ActionMenu.origins.bottomLeft in action
 
@@ -248,23 +252,25 @@ export default Example
 ## Usage & Types
 
 <Usage install="npm install @pluralsight/ps-design-system-actionmenu"
-  import="import Avatar from '@pluralsight/ps-design-system-actionmenu'"
+  import="import ActionMenu from '@pluralsight/ps-design-system-actionmenu'"
   packageName="actionmenu"
   />
 
 ### ActionMenu
+
 <Types.Table>
   <Types.Prop name="onClose" type="function" desc="triggered when a menu collapses; providing it renders an overlay that triggers this function on click" />
-  <Types.Prop name="onClick" type="(Event, value) => ()" desc="triggered when an item selected via click, enter or space"/>
+  <Types.Prop name="onClick" type="(Event, value) => void" desc="triggered when an item selected via click, enter or space"/>
   <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>} desc="orientation ActionMenu.origins of nested menus" default="topLeft"/>
 </Types.Table>
 
 ### ActionMenu.Item
+
 <Types.Table>
   <Types.Prop name="disabled" type="boolean" desc="visually disabled, non-interactive" />
   <Types.Prop name="href" type="string" desc="anchor tag uri" />
   <Types.Prop name="nested" type="ActionMenu.Item(s)" desc="nested menu items" />
-  <Types.Prop name="onClick" type="(Event) => ()" desc="triggered on item select: click, enter or space" />
+  <Types.Prop name="onClick" type="(Event) => void" desc="triggered on item select: click, enter or space" />
   <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>}  desc="override orientation (from ActionMenu.origins) of items nested menu" />
   <Types.Prop name="tagName" type="boolean" desc="ActionMenu.Item trigger element tag (from ActionMenu.tagName)" default="a" />
   <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />

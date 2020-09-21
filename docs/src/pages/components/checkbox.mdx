@@ -8,8 +8,10 @@ import { Intro, Types, Usage } from '../../components/component'
 # Checkbox
 
 ## Examples
+
 ### Checked
-Passing the ```checked``` indicates that the checkbox is selected.
+
+Passing the `checked` indicates that the checkbox is selected.
 
 ```typescript
 import React from 'react'
@@ -25,8 +27,10 @@ const Comp = () => (
 export default Comp
 
 ```
+
 ### Indeterminate
-Passing the ```indeterminate``` flag indicates that the checkbox selection should be obscured as if the control was in a third, indeterminate, state.
+
+Passing the `indeterminate` flag indicates that the checkbox selection should be obscured as if the control was in a third, indeterminate, state.
 
 ```typescript
 import React from 'react'
@@ -44,6 +48,7 @@ export default Comp
 ```
 
 ### Disabled
+
 Disabled checkboxes are unmodifiable and diminished visually.
 
 ```typescript
@@ -62,7 +67,8 @@ export default Comp
 ```
 
 ### Error
-description: Error states are engaged with the ```error``` flag.
+
+Error states are engaged with the `error` flag.
 
 ```typescript
 import React from 'react'
@@ -145,12 +151,13 @@ class Comp extends React.Component {
   }
 }
 export default Comp
+
 ```
 
 ## Usage & Types
 
 <Usage install="npm install @pluralsight/ps-design-system-checkbox"
-  import="import Avatar from '@pluralsight/ps-design-system-checkbox'"
+  import="import Checkbox from '@pluralsight/ps-design-system-checkbox'"
   packageName="checkbox"
   />
 
@@ -160,7 +167,7 @@ export default Comp
   <Types.Prop name="error" type="boolean" desc="error state flag" default="false"/>
   <Types.Prop name="indeterminate" type="boolean" desc="marks as indeterminate" default="false"/>
   <Types.Prop name="name" type="string" desc="form data identifier"/>
-  <Types.Prop name="label" type="node" desc="display name"/>
-  <Types.Prop name="onCheck" type="(Event, checked: boolean, value: any, name: string) => ()" desc="triggers on check toggle"/>
+  <Types.Prop name="label" type="React.ReactNode" desc="display name"/>
+  <Types.Prop name="onCheck" type="(Event, checked: boolean, value: any, name: string) => void" desc="triggers on check toggle"/>
   <Types.Prop name="value" type="string | number" desc="form value when checked"/>
 </Types.Table>
