@@ -175,6 +175,10 @@ const items = [
       {
         href: '/components/errors',
         title: 'Error pages'
+      },
+      {
+        href: '/components/starrating',
+        title: 'Star rating'
       }
     ]
   },
