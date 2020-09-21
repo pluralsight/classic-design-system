@@ -173,6 +173,17 @@ const items = [
         title: 'Error pages'
       }
     ]
+  },
+  {
+    header: {
+      title: 'Utility'
+    },
+    items: [
+      {
+        href: '/components/theme',
+        title: 'Theme'
+      }
+    ]
   }
 ]
 
