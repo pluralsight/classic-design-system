@@ -52,7 +52,7 @@ export default Example
 Mode is determined by the presence of the value prop. When a value is given the mode is "determinate", and visual progress is set to that static value. When a value is absent the mode is "indeterminate" and becomes an infinite spinner.
 
 ```typescript
-import { colorsBackgroundDark, colorsBackgroundLight, layout, type } from '@pluralsight/ps-design-system-core'
+import { colorsBackgroundDark, colorsBackgroundLight, colorsTextIcon, layout, type } from '@pluralsight/ps-design-system-core'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import Theme from '@pluralsight/ps-design-system-theme'
 import React from 'react'
@@ -68,15 +68,43 @@ function AnimationDemo() {
   })
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', height: '150px' }} >
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1, background: colorsBackgroundLight[1], borderRadius: '12px 0 0 12px', fontSize: type.fontSizeLarge, color: colorsTextIcon.lowOnLight  }}>
-        Value: <span style={{ paddingLeft: layout.spacingSmall, width: '3em' }}>{value}</span>
+    <div className="root">
+      <div className="value">
+        Value: <span className="exampleNumber">{value}</span>
       </div>
       <Theme>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1, background: colorsBackgroundDark[3], borderRadius: '0 12px 12px 0' }}>
+        <div className="example">
           <CircularProgress value={value} />
         </div>
       </Theme>
+      <style jsx>{`
+        .root {
+          display: flex;
+          justify-content: center;
+          height: 150px;
+        }
+        .value,
+        .example {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+        }
+        .value {
+          background: ${colorsBackgroundLight[2]};
+          border-radius: 12px 0 0 12px;
+          font-size: ${type.fontSizeLarge};
+          color: ${colorsTextIcon.lowOnLight};
+        }
+        .example {
+          background: ${colorsBackgroundDark[3]};
+          border-radius: 0 12px 12px 0;
+        }
+        .exampleNumber {
+          padding-left: ${layout.spacingSmall};
+          width: 3em;
+        }
+      `}</style>
     </div>
   )
 }

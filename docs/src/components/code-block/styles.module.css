@@ -46,13 +46,13 @@
   overflow: auto;
   padding: var(--psLayoutSpacingMedium);
   height: auto;
-  max-height: var(--psLayoutSpacingXXLarge);
+  max-height: var(--psLayoutSpacingXLarge);
   transition: max-height var(--psMotionSpeedSlow) ease-out;
   overflow-y: hidden;
 }
 .editorExpanded {
   /* large number so we have something to animate to */
-  max-height: 2000px;
+  max-height: 4000px;
 }
 .editorFade {
   position: absolute;

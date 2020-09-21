@@ -16,7 +16,7 @@ export const ColorCategories: React.FC = () => {
             {cat.explanation}
             {cat.subCategories.map((subCat, i) => (
               <div key={i}>
-                <Label>{subCat.label}</Label>
+                <Text.P>{subCat.label}</Text.P>
                 <Grid
                   cols={
                     subCat.colors.length < 3
@@ -538,14 +538,6 @@ const colorCategories: ColorCategory[] = [
     ]
   }
 ]
-
-const Label: React.FC = props => {
-  return (
-    <header>
-      <h3 className={styles.label}>{props.children}</h3>
-    </header>
-  )
-}
 
 interface SwatchProps {
   border?: string

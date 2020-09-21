@@ -84,6 +84,10 @@ const items = [
       {
         href: '/components/breadcrumb',
         title: 'Breadcrumb'
+      },
+      {
+        href: '/components/verticaltabs',
+        title: 'Vertical tabs'
       }
     ]
   },
@@ -99,6 +103,10 @@ const items = [
       {
         href: '/components/button',
         title: 'Button'
+      },
+      {
+        href: '/components/viewtoggle',
+        title: 'View toggle'
       }
     ]
   },
@@ -118,6 +126,10 @@ const items = [
       title: 'Lists & Tables'
     },
     items: [
+      {
+        href: '/components/datawell',
+        title: 'Data well'
+      },
       {
         href: '/components/card',
         title: 'Card'
