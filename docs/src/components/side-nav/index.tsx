@@ -87,7 +87,7 @@ const items = [
       },
       {
         href: '/components/verticaltabs',
-        title: 'Vertical Tabs'
+        title: 'Vertical tabs'
       }
     ]
   },

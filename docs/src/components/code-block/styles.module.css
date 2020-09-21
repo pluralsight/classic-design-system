@@ -51,7 +51,7 @@
 }
 .editorExpanded {
   /* large number so we have something to animate to */
-  max-height: 2000px;
+  max-height: 4000px;
 }
 
 .example {

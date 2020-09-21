@@ -1,5 +1,5 @@
 ---
-name: Vertical Tabs
+name: Vertical tabs
 route: /components/verticaltabs
 ---
 
@@ -7,17 +7,205 @@ import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 
 import { Types, Usage } from '../../components/component'
 
-# Vertical Tabs
+# Vertical tabs
 
-## Example
+## In-app example
 
 ```typescript startExpanded=false
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
-function Example() {
+const FLOW_NAV = [
+  {
+    collapsible: false,
+    header: {
+      href: '#',
+      icon: <PlaceholderIcon />,
+      id: 'reports-home',
+      title: 'Reports Home'
+    },
+    items: []
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <PlaceholderIcon />,
+      id: 'operational-reports',
+      title: 'Operational Reports'
+    },
+    items: [
+      {
+        href: '#',
+        id: 'work-log',
+        title: 'Work Log'
+      },
+      {
+        href: '#',
+        id: 'project-timeline',
+        title: 'Project Timeline'
+      },
+      {
+        href: '#',
+        id: 'leaderboard',
+        title: 'Leaderboard'
+      },
+      {
+        href: '#',
+        id: 'snapshot',
+        title: 'Snapshot'
+      },
+      {
+        href: '#',
+        id: 'daily-updates',
+        title: 'Daily Updates'
+      },
+      {
+        href: '#',
+        id: 'spot-check',
+        title: 'Spot Check'
+      }
+    ]
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <PlaceholderIcon />,
+      id: 'review-collaborate',
+      title: 'Review & Collaborate'
+    },
+    items: [
+      {
+        href: '#',
+        id: 'review-workflow',
+        title: 'Review Workflow'
+      },
+      {
+        href: '#',
+        id: 'review-collab',
+        title: 'Review Collaboration'
+      },
+      {
+        href: '#',
+        id: 'pr-resolution',
+        title: 'PR Resolution'
+      },
+      {
+        href: '#',
+        id: 'knowledge-sharing',
+        title: 'Knowledge Sharing'
+      },
+      {
+        href: '#',
+        id: 'player-card',
+        title: 'Player Card'
+      }
+    ]
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <PlaceholderIcon />,
+      id: 'delivery',
+      title: 'Delivery'
+    },
+    items: [
+      {
+        href: '#',
+        title: 'Retrospective'
+      }
+    ]
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <PlaceholderIcon />,
+      id: 'fundamentals',
+      title: 'Fundamentals'
+    },
+    items: [
+      {
+        href: '#',
+        id: 'fundamentals-code',
+        title: 'Code'
+      },
+      {
+        href: '#',
+        id: 'fundamentals-submit',
+        title: 'Submit'
+      },
+      {
+        href: '#',
+        id: 'fundamentals-review',
+        title: 'Review'
+      }
+    ]
+  }
+]
+
+const Example: React.FC = props => {
+  const [open, setOpen] = React.useState(false)
+  const [activeId, setActiveId] = React.useState('pr-resolution')
+  const isActive = id => activeId === id
+
+  const activate = (evt, id) => {
+    evt.preventDefault()
+    setActiveId(id)
+  }
+
   return (
-  <div />
+    <div
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+      style={{
+        display: 'flex',
+        height: '100%',
+        justifyContent: 'start',
+        minHeight: 500
+      }}
+    >
+      <div style={{ width: open ? 240 : 72 }}>
+        <VerticalTabs {...props} forceCollapsed={!open} hideLabels={!open}>
+          <VerticalTabs.Group>
+            {FLOW_NAV.map((section, sectionKey) => {
+              const sectionHeader = section.header && (
+                <VerticalTabs.Tier1.Header icon={section.header.icon}>
+                  {section.header.title}
+                </VerticalTabs.Tier1.Header>
+              )
+
+              return (
+                <VerticalTabs.Tier1
+                  collapsible={section.collapsible}
+                  key={sectionKey}
+                  header={sectionHeader}
+                >
+                  {section.items.map((item, itemKey) => {
+                    const active = isActive(item.id)
+                    const itemHeader = (
+                      <VerticalTabs.Tier2.Header
+                        href={item.href}
+                        onClick={evt => activate(evt, item.id)}
+                      >
+                        {item.title}
+                      </VerticalTabs.Tier2.Header>
+                    )
+
+                    return (
+                      <VerticalTabs.Tier2
+                        active={active}
+                        header={itemHeader}
+                        key={itemKey}
+                      />
+                    )
+                  })}
+                </VerticalTabs.Tier1>
+              )
+            })}
+          </VerticalTabs.Group>
+        </VerticalTabs>
+      </div>
+    </div>
   )
 }
 
@@ -131,7 +319,7 @@ function Example() {
 export default Example
 ```
 
-## Usage & Types
+## Usage & types
 
 <Usage
   install="npm install @pluralsight/ps-design-system-verticaltabs"
