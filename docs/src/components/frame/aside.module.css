@@ -2,7 +2,6 @@
 
 .aside {
   background: var(--psColorsBackgroundLight1);
-  border-right: 1px solid var(--psColorsBorderLowOnLight);
   bottom: 0;
   height: 100vh;
   left: 0;
@@ -29,7 +28,7 @@
   }
 
   &.dark {
-    background: var(--psColorsBackgroundDark1);
+    background: var(--psColorsBackgroundDark2);
   }
 
   &.light {
