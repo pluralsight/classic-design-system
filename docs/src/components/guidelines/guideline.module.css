@@ -1,7 +1,8 @@
-.guidelines {
+.guideline {
   margin-top: var(--psLayoutSpacingLarge);
   margin-bottom: var(--psLayoutSpacingLarge);
 }
+
 .box {
   border-radius: 12px;
   height: 100%;
@@ -21,13 +22,12 @@
     margin-bottom: var(--psLayoutSpacingMedium);
   }
 }
-.guideline {
-  padding: var(--psLayoutSpacingXSmall) 0 var(--psLayoutSpacingLarge) 0;
-}
+
 .badgeWrapper {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .badge {
 }

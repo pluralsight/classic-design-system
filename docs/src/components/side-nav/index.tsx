@@ -78,6 +78,17 @@ const items = [
   },
   {
     header: {
+      title: 'Layout'
+    },
+    items: [
+      {
+        href: '/components/errors',
+        title: 'Error pages'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Navigation'
     },
     items: [
@@ -177,8 +188,8 @@ const items = [
         title: 'Circular progress'
       },
       {
-        href: '/components/errors',
-        title: 'Error pages'
+        href: '/components/tooltip',
+        title: 'Tooltip'
       }
     ]
   },

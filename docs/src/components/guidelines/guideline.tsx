@@ -34,8 +34,9 @@ export const Guideline: React.FC<GuidelineProps> = props => {
     [styles.light]: themeName === Theme.names.light,
     [styles.vertical]: isSingleCol
   })
+
   return (
-    <Layout className={styles.guidelines}>
+    <Layout className={styles.guideline}>
       <div className={boxClassName} style={props.doStyle}>
         {props.do}
 
@@ -58,6 +59,7 @@ export const Guideline: React.FC<GuidelineProps> = props => {
     </Layout>
   )
 }
+
 Guideline.defaultProps = {
   columnCount: 2
 }
