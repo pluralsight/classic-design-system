@@ -32,7 +32,7 @@ interface ExamplesSwitcherProps extends HTMLAttributes<HTMLDivElement> {
   examples: ExampleData[]
 }
 export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
-  const [selectedOption, setSelectedOption] = React.useState(
+  const [selectedOption, setSelectedOption] = useState(
     props.examples[0].value
   )
 
