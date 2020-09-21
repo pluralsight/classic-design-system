@@ -2,13 +2,13 @@ import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import cx from 'classnames'
 import Highlight, { defaultProps } from 'prism-react-renderer'
-import React, { HTMLAttributes, useContext } from 'react'
+import React, { useContext } from 'react'
 
 import { CodeBlockContext } from './index'
 import styles from './styles.module.css'
 import { darkTheme, lightTheme } from './theme'
 
-interface EditorProps extends HTMLAttributes<HTMLPreElement> {
+interface EditorProps {
   children: string
   expanded: boolean
 }

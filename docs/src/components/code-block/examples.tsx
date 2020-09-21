@@ -2,8 +2,7 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import frontmatter from '@github-docs/frontmatter'
-import { Language } from 'prism-react-renderer'
-import React, { HTMLAttributes, useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 import { CodeBlockContext } from './index'
 import { H2 } from '../mdx'
@@ -28,13 +27,11 @@ export interface ExampleData {
   value: string
 }
 
-interface ExamplesSwitcherProps extends HTMLAttributes<HTMLDivElement> {
+interface ExamplesSwitcherProps {
   examples: ExampleData[]
 }
 export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
-  const [selectedOption, setSelectedOption] = useState(
-    props.examples[0].value
-  )
+  const [selectedOption, setSelectedOption] = useState(props.examples[0].value)
 
   function handleDropdownChange(_evt: React.ChangeEvent, value: string) {
     setSelectedOption(value)
