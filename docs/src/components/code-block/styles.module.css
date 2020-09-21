@@ -22,10 +22,10 @@
   padding: 0 var(--psLayoutSpacingXSmall);
 }
 .light .actions {
-  background-color: var(--psColorsBackgroundLight1);
+  background-color: var(--psColorsBackgroundLight2);
 }
 .dark .actions {
-  background-color: var(--psColorsBackgroundDark1);
+  background-color: var(--psColorsBackgroundDark2);
 }
 .actionsLeft {
   margin-right: auto;
@@ -47,8 +47,14 @@
   padding: var(--psLayoutSpacingMedium);
   height: auto;
   max-height: var(--psLayoutSpacingXLarge);
-  transition: max-height var(--psMotionSpeedSlow) ease-out;
+  transition: max-height var(--psMotionSpeedNormal) ease-out;
   overflow-y: hidden;
+}
+.light .editor {
+  background-color: var(--psColorsBackgroundLight1);
+}
+.dark .editor {
+  background-color: var(--psColorsBackgroundDark3);
 }
 .editorExpanded {
   /* large number so we have something to animate to */
@@ -63,16 +69,16 @@
 }
 .light .editorFade {
   background: linear-gradient(
-    to bottom,
-    transparent 40%,
-    var(--psColorsBackgroundLight1)
+    180deg,
+    rgba(240,243,245,0) 20%,
+    rgba(240,243,245,1) 100%
   );
 }
 .dark .editorFade {
   background: linear-gradient(
     to bottom,
-    transparent 40%,
-    var(--psColorsBackgroundDark3)
+    rgba(30,36,41,0) 20%,
+    rgba(30,36,41,1) 100%
   );
 }
 
