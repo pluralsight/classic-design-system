@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@4.1.15...@pluralsight/ps-design-system-position@4.1.16) (2020-09-21)
+
+
+### Bug Fixes
+
+* **position:** use show ref if present or innerRef if not ([#1161](https://github.com/pluralsight/design-system/issues/1161)) ([6ab93a4](https://github.com/pluralsight/design-system/commit/6ab93a4b0d392b039ee0f57c9525c76942d8d58d))
+
+
+
+
+
 ## [4.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@4.1.14...@pluralsight/ps-design-system-position@4.1.15) (2020-09-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

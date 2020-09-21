@@ -87,7 +87,10 @@ const Item = forwardRef((props, ref) => {
 
   const [collapsed, setCollapsed] = React.useState(_collapsed)
 
-  const handleToggle = () => setCollapsed(!collapsed)
+  const handleHeaderClick = evt => {
+    setCollapsed(!collapsed)
+    if (typeof header.props.onClick === 'function') header.props.onClick(evt)
+  }
   const ListComp = collapsible ? CollapsibleList : List
 
   return (
@@ -101,7 +104,7 @@ const Item = forwardRef((props, ref) => {
           active,
           collapsed,
           collapsible,
-          ...(collapsible && { onClick: handleToggle })
+          ...(collapsible && { onClick: handleHeaderClick })
         })}
       </div>
 
