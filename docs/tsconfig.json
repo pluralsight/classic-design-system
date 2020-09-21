@@ -4,7 +4,7 @@
     "jsx": "react",
     "outDir": "dist",
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
-    "rootDir": "src",
+    "rootDir": ".",
     "skipLibCheck": true
   },
   "exclude": ["*.js", "dist", "public", "node_modules"]
