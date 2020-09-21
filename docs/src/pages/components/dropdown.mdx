@@ -2,7 +2,6 @@
 name: Dropdown
 route: /components/dropdown
 ---
-
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import { Intro, Types, Usage } from '../../components/component'
 
@@ -17,7 +16,7 @@ description: Primary identification of a dropdown comes through the label. Usage
 
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
-import {layout} from '@pluralsight/ps-design-system-core'
+import { layout } from '@pluralsight/ps-design-system-core'
 
 const Comp = () => (
   <div className="example">
@@ -197,7 +196,8 @@ import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-dropdown'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Button from '@pluralsight/ps-design-system-button'
-import {layout} from '@pluralsight/ps-design-system-core'
+import { layout } from '@pluralsight/ps-design-system-core'
+
 function Example() {
   const options = [
     { value: 'beg', label: 'Beginner' },
@@ -205,24 +205,25 @@ function Example() {
     { value: 'adv', label: 'Advanced' }
   ]
   const [value, setValue] = React.useState(options[1].value)
-  return (<>
-    <div className="example">
-    <Button onClick={() => setValue('beg')}>Set Beginner</Button>
-      <Dropdown
-        label="Level"
-        placeholder="Select"
-        onChange={(evt, value, label) => setValue(value)}
-        menu={options.map(opt => (
-              <Dropdown.Item key={opt.value} value={opt.value}>
-                {opt.label}
-              </Dropdown.Item>
-            ))
-        }
-        value={value}
-      />
-      <div>Selected: {value}</div>
-    </div>
-    <style jsx>{`
+  return (
+    <>
+      <div className="example">
+        <Button onClick={() => setValue('beg')}>Set Beginner</Button>
+        <Dropdown
+          label="Level"
+          placeholder="Select"
+          onChange={(evt, value, label) => setValue(value)}
+          menu={options.map(opt => (
+                <Dropdown.Item key={opt.value} value={opt.value}>
+                  {opt.label}
+                </Dropdown.Item>
+              ))
+          }
+          value={value}
+        />
+        <div>Selected: {value}</div>
+      </div>
+      <style jsx>{`
         .example {
           display: flex;
           flex-direction: column;
@@ -235,8 +236,8 @@ function Example() {
     </>
   )
 }
-export default Example
 
+export default Example
 ```
 
 ## Extending Behavior

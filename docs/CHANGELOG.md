@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.2.0...@pluralsight/ps-design-system-docs@0.3.0) (2020-09-21)
+
+
+### Bug Fixes
+
+* **docs:** codeblock should be defensive on language name ([#1171](https://github.com/pluralsight/design-system/issues/1171)) ([debe34e](https://github.com/pluralsight/design-system/commit/debe34eded5c5ebd7af94a78244eb5d3e739610e))
+* **docs:** example heading alignment ([d0d8325](https://github.com/pluralsight/design-system/commit/d0d832553724cb6cfdee2d071790a52f8424122c))
+* **docs:** fix h1 props ([d123e4c](https://github.com/pluralsight/design-system/commit/d123e4c5746ed4ed9cf83926f4b310c5ecdfd1db))
+* **docs:** remove duplicate imports from package-map ([832792c](https://github.com/pluralsight/design-system/commit/832792c3b2247bebd6fa4ab2f5f4be58002b4318))
+* **docs:** reset copy button after timeout ([b2421ad](https://github.com/pluralsight/design-system/commit/b2421adaa74b9b6f65ea9a70540662561dcbaebd))
+* **docs:** stop code from causing page to overflow past viewport ([b9dde75](https://github.com/pluralsight/design-system/commit/b9dde7515e7262244d1a7f3c857329115db2baf1))
+
+
+### Features
+
+* **docs:** add 2 col example grid ([80b4415](https://github.com/pluralsight/design-system/commit/80b4415f85728bec0104de002fafbfa09a50a4f0))
+* **docs:** add missing languages to codeblocks ([1abc6e6](https://github.com/pluralsight/design-system/commit/1abc6e6d409595d7634eb0dc658365361cfb9ffa))
+* **docs:** badge page ([a10953a](https://github.com/pluralsight/design-system/commit/a10953a5a71ee762e8f919091b3150b57b650359))
+* **docs:** banner page ([834209d](https://github.com/pluralsight/design-system/commit/834209d142cfe952f50f0bc9299b5ad19c6a3b04))
+* **docs:** card page ([53bbed7](https://github.com/pluralsight/design-system/commit/53bbed763d4426727531400b2af2950c6335b884))
+* **docs:** change switcher delimiter ([bda1fae](https://github.com/pluralsight/design-system/commit/bda1fae4ee3479d993da297792186d4a1fdcd4f2))
+* **docs:** circularprogress page ([88adf47](https://github.com/pluralsight/design-system/commit/88adf47ccda8c999138632d9f0f6b4403b68bf51))
+* **docs:** import all components for live render ([3a8e591](https://github.com/pluralsight/design-system/commit/3a8e5910fdf8e20b95f44bbe532add7496ba944b))
+* **docs:** mdx heading component should be styleable ([ee41d81](https://github.com/pluralsight/design-system/commit/ee41d8146b5f713bfe086672db0247af53d07dd0))
+* **docs:** prevent scroll on code editor ([f6ec3c4](https://github.com/pluralsight/design-system/commit/f6ec3c4aacffb49e93a8769cffdaa6df4c4edb35))
+* **docs:** trim codeexample ([42a7a80](https://github.com/pluralsight/design-system/commit/42a7a806543ec46cd8531a7dab8e38f26a44a137))
+* **docs:** usage text dark theme support ([a6c2efa](https://github.com/pluralsight/design-system/commit/a6c2efa271d302e610c828178f9a6e1185f804ec))
+
+
+
+
+
 # [0.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.1.0...@pluralsight/ps-design-system-docs@0.2.0) (2020-09-17)
 
 

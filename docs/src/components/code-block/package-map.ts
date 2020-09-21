@@ -73,7 +73,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-carousel': { Carousel },
   '@pluralsight/ps-design-system-checkbox': { Checkbox },
   '@pluralsight/ps-design-system-circularprogress': { CircularProgress },
-  '@pluralsight/ps-design-system-core': { ...omit(core, ['default']) },
+  '@pluralsight/ps-design-system-core': { ...core },
   '@pluralsight/ps-design-system-datawell': { DataWell },
   '@pluralsight/ps-design-system-datepicker': { DatePicker },
   '@pluralsight/ps-design-system-dialog': { Dialog },

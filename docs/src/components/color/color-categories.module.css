@@ -1,9 +1,3 @@
-.label {
-  font-size: var(--psTypeFontSizeSmall);
-  line-height: var(--psTypeLineHeightTight);
-  margin: var(--psLayoutSpacingLarge) 0 var(--psLayoutSpacingXSmall) 0;
-}
-
 .swatch {
   overflow: hidden;
 }
