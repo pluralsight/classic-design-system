@@ -86,6 +86,10 @@ const items = [
         title: 'Breadcrumb'
       },
       {
+        href: '/components/nav',
+        title: 'Global navigation'
+      },
+      {
         href: '/components/tab',
         title: 'Horizontal tabs'
       },

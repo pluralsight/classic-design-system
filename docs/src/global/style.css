@@ -15,6 +15,12 @@
   gap: var(--psLayoutSpacingMedium);
   justify-items: start;
 }
+.example-grid--col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, auto));
+  gap: var(--psLayoutSpacingMedium);
+  justify-items: start;
+}
 .example-grid--col-5 {
   display: inline-grid;
   grid-template-columns: repeat(5, minmax(0, auto));
