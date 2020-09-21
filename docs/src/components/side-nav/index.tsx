@@ -112,12 +112,16 @@ const items = [
   },
   {
     header: {
-      title: 'Form'
+      title: 'Inputs'
     },
     items: [
       {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
+      },
+      {
+        href: '/components/typeahead',
+        title: 'Typeahead'
       }
     ]
   },
