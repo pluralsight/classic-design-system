@@ -78,12 +78,27 @@ const items = [
   },
   {
     header: {
+      title: 'Layout'
+    },
+    items: [
+      {
+        href: '/components/errors',
+        title: 'Error pages'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Navigation'
     },
     items: [
       {
         href: '/components/breadcrumb',
         title: 'Breadcrumb'
+      },
+      {
+        href: '/components/nav',
+        title: 'Global navigation'
       },
       {
         href: '/components/tab',
@@ -179,6 +194,10 @@ const items = [
       {
         href: '/components/starrating',
         title: 'Star rating'
+      },
+      {  
+        href: '/components/tooltip',
+        title: 'Tooltip'
       }
     ]
   },
