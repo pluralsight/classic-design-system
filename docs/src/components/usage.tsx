@@ -22,8 +22,8 @@ export const Usage: React.FC<UsageProps> = props => {
           </a>
         </Link>
       </Item>
-      <Item label="Install">{props.install}</Item>
-      <Item label="Import">{props.import}</Item>
+      <Item label="Install">{props.install.trim()}</Item>
+      <Item label="Import">{props.import.trim()}</Item>
     </ul>
   )
 }

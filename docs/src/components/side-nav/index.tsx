@@ -88,6 +88,14 @@ const items = [
       {
         href: '/components/nav',
         title: 'Global navigation'
+      },
+      {
+        href: '/components/tab',
+        title: 'Horizontal tabs'
+      },
+      {
+        href: '/components/verticaltabs',
+        title: 'Vertical tabs'
       }
     ]
   },
@@ -112,12 +120,16 @@ const items = [
   },
   {
     header: {
-      title: 'Form'
+      title: 'Inputs'
     },
     items: [
       {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
+      },
+      {
+        href: '/components/typeahead',
+        title: 'Typeahead'
       }
     ]
   },
@@ -163,6 +175,21 @@ const items = [
       {
         href: '/components/circularprogress',
         title: 'Circular progress'
+      },
+      {
+        href: '/components/errors',
+        title: 'Error pages'
+      }
+    ]
+  },
+  {
+    header: {
+      title: 'Utility'
+    },
+    items: [
+      {
+        href: '/components/theme',
+        title: 'Theme'
       }
     ]
   }
