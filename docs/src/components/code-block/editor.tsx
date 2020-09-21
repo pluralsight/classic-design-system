@@ -23,7 +23,7 @@ export const Editor: React.FC<EditorProps> = props => {
       {...defaultProps}
       code={props.children}
       language={context.language}
-      themeName={codeTheme}
+      theme={codeTheme}
     >
       {highlight => {
         const { tokens, getLineProps, getTokenProps } = highlight
