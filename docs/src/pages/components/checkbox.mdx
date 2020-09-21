@@ -161,6 +161,6 @@ export default Comp
   <Types.Prop name="indeterminate" type="boolean" desc="marks as indeterminate" default="false"/>
   <Types.Prop name="name" type="string" desc="form data identifier"/>
   <Types.Prop name="label" type="node" desc="display name"/>
-  <Types.Prop name="onCheck" type="fucntion" desc="triggers on check toggle" signature="(DOM event, checked, value, name) => ()"/>
+  <Types.Prop name="onCheck" type="(Event, checked: boolean, value: any, name: string) => ()" desc="triggers on check toggle"/>
   <Types.Prop name="value" type="string | number" desc="form value when checked"/>
 </Types.Table>

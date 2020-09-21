@@ -360,7 +360,7 @@ export default Example
   <Types.Prop name="error" type="boolean" desc="error state flag"/>
   <Types.Prop name="label" type="string" desc="identifying string for dropdown" />
   <Types.Prop name="menu" type="Dropdown.Item(s)" desc="menu items for dropdown" default="<span></span>" />
-  <Types.Prop name="onChange" type="function" desc="triggered when an item selected ((event, value, label) => ())" />
+  <Types.Prop name="onChange" type="(Event, value, label) => ()" desc="triggered when an item selected ((event, value, label) => ())" />
   <Types.Prop name="placeholder" type="string" desc="in-field usage hint" />
   <Types.Prop name="size" type={<Types.Enum enum={Dropdown.sizes}/>} desc="sets dorpdown size (from Dropdown.sizes)" default="medium" />
   <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging" />
@@ -372,6 +372,6 @@ export default Example
   <Types.Prop name="href" type="string" desc="anchor tag uri" />
   <Types.Prop name="icon" type="*Icon" desc="An Icon component" />
   <Types.Prop name="menu" type="Dropdown.Item(s)" desc="Menu items" />
-  <Types.Prop name="onClick" type="function" desc="triggered on item select: click, enter or space" />
+  <Types.Prop name="onClick" type="(Event) => ()" desc="triggered on item select: click, enter or space" />
   <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
 </Types.Table>

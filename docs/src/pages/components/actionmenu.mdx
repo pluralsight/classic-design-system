@@ -255,7 +255,7 @@ export default Example
 ### ActionMenu
 <Types.Table>
   <Types.Prop name="onClose" type="function" desc="triggered when a menu collapses; providing it renders an overlay that triggers this function on click" />
-  <Types.Prop name="onClick" type="function" desc="triggered when an item selected via click, enter or space"/>
+  <Types.Prop name="onClick" type="(Event, value) => ()" desc="triggered when an item selected via click, enter or space"/>
   <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>} desc="orientation ActionMenu.origins of nested menus" default="topLeft"/>
 </Types.Table>
 
@@ -264,7 +264,7 @@ export default Example
   <Types.Prop name="disabled" type="boolean" desc="visually disabled, non-interactive" />
   <Types.Prop name="href" type="string" desc="anchor tag uri" />
   <Types.Prop name="nested" type="ActionMenu.Item(s)" desc="nested menu items" />
-  <Types.Prop name="onClick" type="function" desc="triggered on item select: click, enter or space" />
+  <Types.Prop name="onClick" type="(Event) => ()" desc="triggered on item select: click, enter or space" />
   <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>}  desc="override orientation (from ActionMenu.origins) of items nested menu" />
   <Types.Prop name="tagName" type="boolean" desc="ActionMenu.Item trigger element tag (from ActionMenu.tagName)" default="a" />
   <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />

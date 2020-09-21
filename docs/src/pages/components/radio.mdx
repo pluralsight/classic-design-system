@@ -123,7 +123,7 @@ export default Comp
   <Types.Prop name="error" type="boolean" desc="error state flag" default="false"/>
   <Types.Prop name="label" type="string" desc="identifying string for group"/>
   <Types.Prop name="name" type="string" desc="form data identifier"/>
-  <Types.Prop name="onChange" type="function" desc="triggers on radio select" signature="(DOM event, value) => ()"/>
+  <Types.Prop name="onChange" type="(Event, value: any) => ()" desc="triggers on radio select"/>
   <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging"/>
   <Types.Prop name="value" type="string | number" desc="if Radio.Group is controlled current selected radio value else if uncontrolled initial selected value"/>
 </Types.Table>
@@ -132,8 +132,8 @@ export default Comp
 
 <Types.Table>
   <Types.Prop name="label" type="node" desc="display text"/>
-  <Types.Prop name="onBlur" type="function" desc="triggers on radio blur" signature="(DOM event) => ()"/>
-  <Types.Prop name="onClick" type="function" desc="triggers on radio select" signature="(DOM event, value) => ()"/>
-  <Types.Prop name="onFocus" type="function" desc="triggers on radio focus" signature="(DOM event) => ()"/>
+  <Types.Prop name="onBlur" type="(Event) => ()" desc="triggers on radio blur"/>
+  <Types.Prop name="onClick" type="(Event, value: any) => ()" desc="triggers on radio select"/>
+  <Types.Prop name="onFocus" type="(Event) => ()" desc="triggers on radio focus"/>
   <Types.Prop name="value" type="string | number" desc="radio option value"/>
 </Types.Table>

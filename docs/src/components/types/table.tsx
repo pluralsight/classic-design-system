@@ -11,7 +11,6 @@ export const Table: React.FC = props => {
         <DSTable.ColumnHeader>Type</DSTable.ColumnHeader>
         <DSTable.ColumnHeader>Description</DSTable.ColumnHeader>
         <DSTable.ColumnHeader>Default</DSTable.ColumnHeader>
-        <DSTable.ColumnHeader>Signature</DSTable.ColumnHeader>
       </DSTable.Row>
       {props.children}
     </DSTable>
