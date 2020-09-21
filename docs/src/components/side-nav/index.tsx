@@ -84,6 +84,10 @@ const items = [
       {
         href: '/components/breadcrumb',
         title: 'Breadcrumb'
+      },
+      {
+        href: '/components/verticaltabs',
+        title: 'Vertical tabs'
       }
     ]
   },
@@ -108,7 +112,7 @@ const items = [
   },
   {
     header: {
-      title: 'Form'
+      title: 'Inputs'
     },
     items: [
       {
@@ -122,6 +126,10 @@ const items = [
       {
         href: '/components/radio',
         title: 'Radio'
+      },
+      {
+        href: '/components/typeahead',
+        title: 'Typeahead'
       }
     ]
   },
@@ -167,6 +175,10 @@ const items = [
       {
         href: '/components/circularprogress',
         title: 'Circular progress'
+      },
+      {
+        href: '/components/errors',
+        title: 'Error pages'
       }
     ]
   }

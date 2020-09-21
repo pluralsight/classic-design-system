@@ -1,8 +1,9 @@
 import { transform } from '@babel/core'
 import { Language } from 'prism-react-renderer'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, useContext } from 'react'
 import { LiveError, LiveProvider, LivePreview } from 'react-live'
 
+import { CodeBlockContext } from './index'
 import styles from './styles.module.css'
 import { mapPackageNameToScopes } from './package-map'
 
@@ -20,15 +21,13 @@ interface PreviewData {
 
 interface PreviewProps extends HTMLAttributes<HTMLDivElement> {
   code: string
-  language: Language
 }
 export const Preview: React.FC<PreviewProps> = props => {
-  const { code, language } = props
+  const context = useContext(CodeBlockContext)
+  const supported = SUPPORTED_LANGUAGES.includes(context.language)
+  if (context.noRender || !supported) return null
 
-  const supported = SUPPORTED_LANGUAGES.includes(language)
-  if (!supported) return null
-
-  const preview = formatPreview(code)
+  const preview = formatPreview(props.code)
 
   return (
     <LiveProvider

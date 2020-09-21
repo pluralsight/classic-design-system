@@ -7,6 +7,7 @@
 .item {
   display: flex;
   margin-bottom: var(--psLayoutSpacingMedium);
+  white-space: pre-wrap;
 }
 .label {
   font-size: var(--psTypeFontSizeXSmall);
@@ -29,4 +30,3 @@
     color: var(--psColorsTextIconHighOnDark);
   }
 }
-
