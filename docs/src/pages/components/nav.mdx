@@ -83,12 +83,13 @@ export default Example
 The nav item component is for creating links to pages or as action triggers. A horizontal variant can be used with or without an icon. The vertical variant always requires an icon. The icon-only variant can also be used for very recognizable icons/actions when a label is unecessary.
 
 ```typescript
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid">
+  return <div className="example-grid" style={{ background: colorsBackgroundDark[2], padding: layout.spacingLarge }}>
     <NavItem icon={<HomeIcon />} menu={<div>placeholder</div>}>Label</NavItem>
     <NavItem icon={<HomeIcon />}>Label</NavItem>
     <NavItem menu={<div>placeholder</div>}>Label</NavItem>
@@ -132,12 +133,15 @@ export default Example
 The nav brand component creates a consistent use of branding for the icon and logo of an app. It is intended to always be placed at the left end of the nav bar.
 
 ```typescript
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import React from 'react'
 
 function Example() {
-  return <NavBrand logo={<MyLogo />} wordmark="TITLE" />
+  return <div className="example-grid" style={{ background: colorsBackgroundDark[2], padding: layout.spacingLarge }}>
+    <NavBrand logo={<MyLogo />} wordmark="TITLE" />
+  </div>
 }
 
 export default Example
@@ -145,9 +149,9 @@ export default Example
 function MyLogo() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="24" height="24" fill="url(#paint0_linear)" />
+      <rect width="24" height="24" fill="url(#logo)" />
       <defs>
-        <linearGradient x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+        <linearGradient id="logo" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
           <stop stopColor="#8A99A8" />
           <stop offset="1" stopColor="#576675" />
         </linearGradient>
@@ -157,7 +161,7 @@ function MyLogo() {
 }
 ```
 
-### Nav brand
+### Nav brand guidelines
 
 - Use the nav brand component to provide consistency between experiences.
 
@@ -183,11 +187,12 @@ function MyLogo() {
 The nav user component is for actions & settings related to the user. It is intended to always be placed at the right end of the nav bar. For wider screens, text can be displayed for the user’s name and a meta item (such as a plan name) or only a name. When the screen is narrow, the text will be dropped.
 
 ```typescript
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid--col-3">
+  return <div className="example-grid--col-3" style={{ background: colorsBackgroundDark[2], padding: layout.spacingLarge }}>
     <NavUser name="Name" meta="Meta" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
     <NavUser name="Name" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
     <NavUser src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
@@ -197,7 +202,7 @@ function Example() {
 export default Example
 ```
 
-### Nav brand usage & types
+### Nav user usage & types
 
 <Usage install="npm install @pluralsight/ps-design-system-navuser"
   import="import NavUser from '@pluralsight/ps-design-system-navuser'"
@@ -326,9 +331,9 @@ export default Example
 function MyLogo() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="24" height="24" fill="url(#paint0_linear)" />
+      <rect width="24" height="24" fill="url(#logo)" />
       <defs>
-        <linearGradient x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+        <linearGradient id="logo" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
           <stop stopColor="#8A99A8" />
           <stop offset="1" stopColor="#576675" />
         </linearGradient>
