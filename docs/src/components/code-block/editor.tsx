@@ -14,8 +14,8 @@ interface EditorProps extends HTMLAttributes<HTMLPreElement> {
 }
 export const Editor: React.FC<EditorProps> = props => {
   const context = useContext(CodeBlockContext)
-  const theme = useTheme()
-  const isDarkTheme = theme === Theme.names.dark
+  const themeName = useTheme()
+  const isDarkTheme = themeName === Theme.names.dark
   const codeTheme = isDarkTheme ? darkTheme : lightTheme
 
   return (
@@ -23,7 +23,7 @@ export const Editor: React.FC<EditorProps> = props => {
       {...defaultProps}
       code={props.children}
       language={context.language}
-      theme={codeTheme}
+      themeName={codeTheme}
     >
       {highlight => {
         const { tokens, getLineProps, getTokenProps } = highlight
@@ -43,6 +43,7 @@ export const Editor: React.FC<EditorProps> = props => {
                 ))}
               </div>
             ))}
+            {!props.expanded && <div className={styles.editorFade} />}
           </pre>
         )
       }}

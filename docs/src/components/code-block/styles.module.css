@@ -39,6 +39,7 @@
 }
 
 .editor {
+  position: relative;
   font-family: 'source code pro', monospace;
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightTight);
@@ -52,6 +53,27 @@
 .editorExpanded {
   /* large number so we have something to animate to */
   max-height: 2000px;
+}
+.editorFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+}
+.light .editorFade {
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    var(--psColorsBackgroundLight1)
+  );
+}
+.dark .editorFade {
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    var(--psColorsBackgroundDark3)
+  );
 }
 
 .example {
