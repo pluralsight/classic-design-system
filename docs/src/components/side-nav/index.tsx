@@ -99,6 +99,10 @@ const items = [
       {
         href: '/components/button',
         title: 'Button'
+      },
+      {
+        href: '/components/viewtoggle',
+        title: 'View toggle'
       }
     ]
   },
