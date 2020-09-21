@@ -79,7 +79,7 @@ function calculateStartExpanded(code: string, startExpanded: boolean) {
   return lineCount <= AUTO_EXPAND_LINE_COUNT_THRESHOLD
 }
 
-interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
+interface ExampleProps {
   description?: string
   code: string
 }
