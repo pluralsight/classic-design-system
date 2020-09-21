@@ -19,7 +19,7 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import { layout } from '@pluralsight/ps-design-system-core'
 
 const Comp = () => (
-  <div className="example">
+  <div className="example-flex-column">
     <Dropdown
       label="Level"
       menu={
@@ -53,16 +53,7 @@ const Comp = () => (
         </>
       }
     />
-    <style jsx>{`
-        .example {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .example > * {
-          margin-bottom: ${layout.spacingMedium};
-        }
-      `}</style>
+
   </div>
 )
 export default Comp
@@ -206,34 +197,22 @@ function Example() {
   ]
   const [value, setValue] = React.useState(options[1].value)
   return (
-    <>
-      <div className="example">
-        <Button onClick={() => setValue('beg')}>Set Beginner</Button>
-        <Dropdown
-          label="Level"
-          placeholder="Select"
-          onChange={(evt, value, label) => setValue(value)}
-          menu={options.map(opt => (
-                <Dropdown.Item key={opt.value} value={opt.value}>
-                  {opt.label}
-                </Dropdown.Item>
-              ))
-          }
-          value={value}
-        />
-        <div>Selected: {value}</div>
-      </div>
-      <style jsx>{`
-        .example {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
+    <div className="example-flex-column">
+      <Button onClick={() => setValue('beg')}>Set Beginner</Button>
+      <Dropdown
+        label="Level"
+        placeholder="Select"
+        onChange={(evt, value, label) => setValue(value)}
+        menu={options.map(opt => (
+              <Dropdown.Item key={opt.value} value={opt.value}>
+                {opt.label}
+              </Dropdown.Item>
+            ))
         }
-        .example > * {
-          margin-bottom: ${layout.spacingMedium};
-        }
-      `}</style>
-    </>
+        value={value}
+      />
+      <div>Selected: {value}</div>
+    </div>
   )
 }
 

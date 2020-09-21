@@ -112,8 +112,16 @@ const items = [
     },
     items: [
       {
+        href: '/components/checkbox',
+        title: 'Checkbox'
+      },
+      {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
+      },
+      {
+        href: '/components/radio',
+        title: 'Radio'
       }
     ]
   },

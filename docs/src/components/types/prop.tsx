@@ -10,6 +10,7 @@ interface PropProps {
   type: React.ReactNode
   desc: React.ReactNode
   default?: React.ReactNode
+  signature?: React.ReactNode
   required?: boolean
 }
 export const Prop: React.FC<PropProps> = props => {
@@ -36,6 +37,10 @@ export const Prop: React.FC<PropProps> = props => {
 
         <Table.Cell>
           <Text.Code>{props.default}</Text.Code>
+        </Table.Cell>
+
+        <Table.Cell>
+          <Text.Code>{props.signature}</Text.Code>
         </Table.Cell>
       </Table.Row>
     </>
