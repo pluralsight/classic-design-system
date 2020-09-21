@@ -13,6 +13,7 @@
   transition-property: transform, width;
   transform: translate(0, 0);
   padding: var(--psLayoutSpacingLarge) 0;
+  overflow-y: auto;
 
   &:after {
     box-shadow: 50px 0 100px rgba(0, 0, 0, 0.8);
