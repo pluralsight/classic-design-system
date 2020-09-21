@@ -59,5 +59,7 @@ Breadcrumbs should be written in sentence case, except for proper nouns or produ
 <Types.Table>
   <Types.Prop name="children" type="React.ReactNode" desc="textual label" />
     <Types.Prop name="disabled" type="boolean" desc="standard input disable flag" default="false" />
-  <Types.Prop name="innerRef" type="DOM element => ()" desc="react ref callback" />
+  <Types.Prop name="href" type="string" desc="target url; renders anchor" />
+    <Types.Prop name="loading" type="boolean" desc="shows loading animation" />
+    <Types.Prop name="onClick" type="Event => void" desc="click handler" />
 </Types.Table>
