@@ -4,7 +4,7 @@ import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import React, { Fragment } from 'react'
 
-import * as styles from './guideline.module.css'
+import * as styles from './guidelines.module.css'
 
 interface GuidelineProps {
   columnCount: 1 | 2 | 3 | 4 | 6
@@ -13,7 +13,7 @@ interface GuidelineProps {
   dont: React.ReactNode
   dontStyle: Record<string, unknown>
 }
-export const Guideline: React.FC<GuidelineProps> = props => {
+export const Guidelines: React.FC<GuidelineProps> = props => {
   const themeName = useTheme()
   const isSingleCol = props.columnCount === 1
 
@@ -34,6 +34,7 @@ export const Guideline: React.FC<GuidelineProps> = props => {
     [styles.light]: themeName === Theme.names.light,
     [styles.vertical]: isSingleCol
   })
+
   return (
     <Layout className={styles.guidelines}>
       <div className={boxClassName} style={props.doStyle}>
@@ -58,7 +59,8 @@ export const Guideline: React.FC<GuidelineProps> = props => {
     </Layout>
   )
 }
-Guideline.defaultProps = {
+
+Guidelines.defaultProps = {
   columnCount: 2
 }
 

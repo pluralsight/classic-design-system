@@ -5,8 +5,8 @@ route: /components/tooltip
 
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
-import { Guideline, Intro, Types, Usage } from '../../components/component'
-import { TooltipGuidelines } from '../../components/guidelines'
+import { Intro, Types, Usage } from '../../components/component'
+import { Guidelines, TooltipGuidelines } from '../../components/guidelines'
 
 # Tooltip
 
@@ -141,14 +141,14 @@ export default Example
 
 Tooltips should be written in sentence case.
 
-<Guideline
+<Guidelines
   do={<TooltipGuidelines>Bookmark this course</TooltipGuidelines>}
   dont={<TooltipGuidelines>Bookmark This Course</TooltipGuidelines>}
 />
 
 Write your tooltips to be concise and scannable.
 
-<Guideline
+<Guidelines
   do={<TooltipGuidelines>Bookmark this course</TooltipGuidelines>}
   dont={(
     <TooltipGuidelines>
@@ -162,7 +162,7 @@ Write your tooltips to be concise and scannable.
 
 Use `accent` appearance to gain user attention in cases such onboarding, introducing functionality, asking for input, or prompting action. A good rule of thumb is accent tooltips appear automatically, while basic tooltips appear as a user clicks or hovers to obtain more context.
 
-<Guideline
+<Guidelines
   do={(
     <TooltipGuidelines appearance={Tooltip.appearances.accent}>
       We’ve added a new way keep track of your content. Bookmark this course to
