@@ -31,10 +31,18 @@ export interface ExampleData {
 interface ExamplesSwitcherProps extends HTMLAttributes<HTMLDivElement> {
   examples: ExampleData[]
   language: Language
+  noRender?: boolean
   startExpanded: boolean
 }
 export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
-  const { examples, language, className, startExpanded, ...rest } = props
+  const {
+    examples,
+    language,
+    className,
+    noRender,
+    startExpanded,
+    ...rest
+  } = props
 
   const [selectedOption, setSelectedOption] = React.useState(examples[0].value)
 
@@ -71,6 +79,7 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
                 code={example.code}
                 description={example.description}
                 language={language}
+                noRender={noRender}
                 startExpanded={startExpanded}
               />
             )
@@ -84,10 +93,18 @@ interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   description?: string
   code: string
   language: Language
+  noRender?: boolean
   startExpanded?: boolean
 }
 export const Example: React.FC<ExampleProps> = props => {
-  const { code, description, language, startExpanded = true, ...rest } = props
+  const {
+    code,
+    description,
+    language,
+    noRender,
+    startExpanded = true,
+    ...rest
+  } = props
 
   const [expanded, setExpanded] = useState<boolean>(startExpanded)
   const toggleExpanded = () => setExpanded(!expanded)
@@ -99,7 +116,7 @@ export const Example: React.FC<ExampleProps> = props => {
       {description && <Text.P>{description}</Text.P>}
 
       <div {...rest} className={className}>
-        <Preview code={code} language={language} />
+        <Preview code={code} language={language} noRender={noRender} />
 
         <Actions>
           <ActionsLeft>

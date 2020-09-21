@@ -8,11 +8,12 @@ import styles from './styles.module.css'
 
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   children: string
+  noRender?: boolean
   switcher?: boolean
   startExpanded?: boolean
 }
 export const CodeBlock: React.FC<CodeBlockProps> = props => {
-  const { children, switcher = false, startExpanded, ...rest } = props
+  const { children, noRender, switcher = false, startExpanded, ...rest } = props
   const language = props.className?.replace(/language-/, '') as Language
 
   const theme = useTheme()
@@ -35,6 +36,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
         <ExamplesSwitcher
           language={language}
           examples={examples}
+          noRender={noRender}
           startExpanded={startExpanded}
         />
       ) : (
@@ -43,6 +45,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
             description={firstExample.description}
             language={language}
             code={firstExample.code}
+            noRender={noRender}
             startExpanded={startExpanded}
           />
         </>

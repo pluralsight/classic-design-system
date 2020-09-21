@@ -19,16 +19,15 @@ interface PreviewData {
 }
 
 interface PreviewProps extends HTMLAttributes<HTMLDivElement> {
+  noRender?: boolean
   code: string
   language: Language
 }
 export const Preview: React.FC<PreviewProps> = props => {
-  const { code, language } = props
+  const supported = SUPPORTED_LANGUAGES.includes(props.language)
+  if (props.noRender || !supported) return null
 
-  const supported = SUPPORTED_LANGUAGES.includes(language)
-  if (!supported) return null
-
-  const preview = formatPreview(code)
+  const preview = formatPreview(props.code)
 
   return (
     <LiveProvider
