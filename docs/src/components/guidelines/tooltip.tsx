@@ -3,11 +3,11 @@ import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import React from 'react'
 
-interface TooltipGuidelinesProps {
+interface TooltipGuidelineProps {
   appearance: boolean
 }
 
-export const TooltipGuidelines: React.FC<TooltipGuidelinesProps> = props => {
+export const TooltipGuideline: React.FC<TooltipGuidelineProps> = props => {
   return (
     <div>
       <Button appearance={Button.appearances.flat} icon={<BookmarkIcon />} />

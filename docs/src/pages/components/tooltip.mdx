@@ -5,8 +5,8 @@ route: /components/tooltip
 
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
-import { Intro, Types, Usage } from '../../components/component'
-import { Guidelines, TooltipGuidelines } from '../../components/guidelines'
+import { Guideline, Intro, Types, Usage } from '../../components/component'
+import { TooltipGuideline } from '../../components/guidelines/tooltip'
 
 # Tooltip
 
@@ -141,38 +141,38 @@ export default Example
 
 Tooltips should be written in sentence case.
 
-<Guidelines
-  do={<TooltipGuidelines>Bookmark this course</TooltipGuidelines>}
-  dont={<TooltipGuidelines>Bookmark This Course</TooltipGuidelines>}
+<Guideline
+  do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
+  dont={<TooltipGuideline>Bookmark This Course</TooltipGuideline>}
 />
 
 Write your tooltips to be concise and scannable.
 
-<Guidelines
-  do={<TooltipGuidelines>Bookmark this course</TooltipGuidelines>}
+<Guideline
+  do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
   dont={(
-    <TooltipGuidelines>
+    <TooltipGuideline>
       Bookmark this course and then you’ll know its safe and sound. This course
       will enjoy its new company amongst your other bookmarked courses. At first
       this course might feel shy, but the other bookmarked courses will be
       friendly and will help this new course get acclimated and comfortable.
-    </TooltipGuidelines>
+    </TooltipGuideline>
   )}
 />
 
 Use `accent` appearance to gain user attention in cases such onboarding, introducing functionality, asking for input, or prompting action. A good rule of thumb is accent tooltips appear automatically, while basic tooltips appear as a user clicks or hovers to obtain more context.
 
-<Guidelines
+<Guideline
   do={(
-    <TooltipGuidelines appearance={Tooltip.appearances.accent}>
+    <TooltipGuideline appearance={Tooltip.appearances.accent}>
       We’ve added a new way keep track of your content. Bookmark this course to
       view it later.
-    </TooltipGuidelines>
+    </TooltipGuideline>
   )}
   dont={(
-    <TooltipGuidelines appearance={Tooltip.appearances.accent}>
+    <TooltipGuideline appearance={Tooltip.appearances.accent}>
       Bookmark this course
-    </TooltipGuidelines>
+    </TooltipGuideline>
   )}
 />
 
