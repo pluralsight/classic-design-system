@@ -98,7 +98,7 @@ const items = [
       },
       {
         href: '/components/viewtoggle',
-        title: 'View Toggle'
+        title: 'View toggle'
       }
     ]
   },
