@@ -75,13 +75,22 @@ export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
   )
 }
 
+function calculateStartExpanded(code: string, startExpanded: boolean) {
+  if (startExpanded) return startExpanded
+  const AUTO_EXPAND_LINE_COUNT_THRESHOLD = 5
+  const lineCount = code.split(/\r\n|\r|\n/).length
+  return lineCount <= AUTO_EXPAND_LINE_COUNT_THRESHOLD
+}
+
 interface ExampleProps extends HTMLAttributes<HTMLDivElement> {
   description?: string
   code: string
 }
 export const Example: React.FC<ExampleProps> = props => {
   const context = useContext(CodeBlockContext)
-  const [expanded, setExpanded] = useState<boolean>(context.startExpanded)
+  const [expanded, setExpanded] = useState<boolean>(
+    calculateStartExpanded(props.code, context.startExpanded)
+  )
   const toggleExpanded = () => setExpanded(!expanded)
 
   return (
