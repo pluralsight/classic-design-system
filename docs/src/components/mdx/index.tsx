@@ -18,7 +18,7 @@ export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   const className = cx(styles.h1, props.className)
 
   return (
-    <Text.Heading size={className}>
+    <Text.Heading size={Text.Heading.sizes.xLarge} className={className}>
       <h1 {...props}>{props.children}</h1>
     </Text.Heading>
   )

@@ -97,8 +97,34 @@ const items = [
     },
     items: [
       {
+        href: '/components/actionmenu',
+        title: 'Action Menu'
+      },
+      {
         href: '/components/button',
         title: 'Button'
+      }
+    ]
+  },
+  {
+    header: {
+      title: 'Form'
+    },
+    items: [
+      {
+        href: '/components/dropdown',
+        title: 'Select(Dropdown)'
+      }
+    ]
+  },
+  {
+    header: {
+      title: 'Lists & Tables'
+    },
+    items: [
+      {
+        href: '/components/card',
+        title: 'Card'
       }
     ]
   },
@@ -125,6 +151,10 @@ const items = [
       {
         href: '/components/banner',
         title: 'Banner'
+      },
+      {
+        href: '/components/circularprogress',
+        title: 'Circular progress'
       }
     ]
   }
