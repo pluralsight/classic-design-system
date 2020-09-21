@@ -2,7 +2,6 @@
 
 .aside {
   background: var(--psColorsBackgroundLight1);
-  border-right: 1px solid var(--psColorsBorderLowOnLight);
   bottom: 0;
   height: 100vh;
   left: 0;
@@ -13,6 +12,7 @@
   transition-property: transform, width;
   transform: translate(0, 0);
   padding: var(--psLayoutSpacingLarge) 0;
+  overflow-y: auto;
 
   &:after {
     box-shadow: 50px 0 100px rgba(0, 0, 0, 0.8);
@@ -28,7 +28,7 @@
   }
 
   &.dark {
-    background: var(--psColorsBackgroundDark1);
+    background: var(--psColorsBackgroundDark2);
   }
 
   &.light {
