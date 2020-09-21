@@ -163,6 +163,10 @@ const items = [
       {
         href: '/components/circularprogress',
         title: 'Circular progress'
+      },
+      {
+        href: '/components/tooltip',
+        title: 'Tooltip'
       }
     ]
   }
