@@ -28,7 +28,8 @@
     "@pluralsight/ps-design-system-position": "^4.1.16",
     "@pluralsight/ps-design-system-prop-types": "^2.0.18",
     "@pluralsight/ps-design-system-textinput": "^8.1.5",
-    "@pluralsight/ps-design-system-theme": "^4.0.13"
+    "@pluralsight/ps-design-system-theme": "^4.0.13",
+    "@pluralsight/ps-design-system-util": "^5.1.1"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
