@@ -139,12 +139,20 @@ const items = [
         title: 'Checkbox'
       },
       {
+        href: '/components/datepicker',
+        title: 'Date picker'
+      },
+      {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
       },
       {
         href: '/components/radio',
         title: 'Radio'
+      },
+      {
+        href: '/components/switch',
+        title: 'Switch'
       },
       {
         href: '/components/typeahead',
@@ -164,6 +172,10 @@ const items = [
       {
         href: '/components/card',
         title: 'Card'
+      },
+      {
+        href: '/components/carousel',
+        title: 'Carousel'
       }
     ]
   },
