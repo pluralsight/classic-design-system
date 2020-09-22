@@ -5,7 +5,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
-const IconCommonSet: React.FC<Props> = () => (
+export const IconCommonSet: React.FC<Props> = () => (
   <div
     style={{
       display: 'flex',
