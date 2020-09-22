@@ -215,7 +215,7 @@ const items = [
         href: '/components/starrating',
         title: 'Star rating'
       },
-      {  
+      {
         href: '/components/tooltip',
         title: 'Tooltip'
       }
