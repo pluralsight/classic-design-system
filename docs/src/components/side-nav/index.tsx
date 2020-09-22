@@ -124,6 +124,10 @@ const items = [
         title: 'Button'
       },
       {
+        href: '/components/link',
+        title: 'Link'
+      },
+      {
         href: '/components/viewtoggle',
         title: 'View toggle'
       }
@@ -194,6 +198,10 @@ const items = [
       {
         href: '/components/circularprogress',
         title: 'Circular progress'
+      },
+      {
+        href: '/components/linearprogress',
+        title: 'Linear progress'
       },
       {
         href: '/components/tooltip',
