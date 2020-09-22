@@ -10,11 +10,13 @@ interface CodeBlockContextValue {
   language: Language
   noRender: boolean
   startExpanded: boolean
+  themeNameOverride: ValueOf<typeof Theme.names> | undefined
 }
 export const CodeBlockContext = React.createContext<CodeBlockContextValue>({
   language: 'typescript',
   noRender: false,
-  startExpanded: false
+  startExpanded: false,
+  themeNameOverride: undefined
 })
 
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
@@ -22,10 +24,11 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   noRender?: boolean
   switcher?: boolean
   startExpanded?: boolean
+  themeName?: ValueOf<typeof Theme.names>
 }
 export const CodeBlock: React.FC<CodeBlockProps> = props => {
-  const theme = useTheme()
-  const isDarkTheme = theme === Theme.names.dark
+  const themeName = useTheme()
+  const isDarkTheme = themeName === Theme.names.dark
   const className = cx(
     {
       [styles.codeBlock]: true,
@@ -44,7 +47,8 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
       value={{
         language,
         noRender: props.noRender,
-        startExpanded: props.startExpanded
+        startExpanded: props.startExpanded,
+        themeNameOverride: props.themeName
       }}
     >
       <div className={className}>
