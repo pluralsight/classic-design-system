@@ -32,7 +32,7 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import Note from '@pluralsight/ps-design-system-note'
-import Position from '@pluralsight/ps-design-system-position'
+import * as Position from '@pluralsight/ps-design-system-position'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Row from '@pluralsight/ps-design-system-row'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
@@ -97,7 +97,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-navitem': { NavItem },
   '@pluralsight/ps-design-system-navuser': { NavUser },
   '@pluralsight/ps-design-system-note': { Note },
-  '@pluralsight/ps-design-system-position': { Position },
+  '@pluralsight/ps-design-system-position': { ...omit(Position, ['default']) },
   '@pluralsight/ps-design-system-radio': { Radio },
   '@pluralsight/ps-design-system-row': { Row },
   '@pluralsight/ps-design-system-screenreaderonly': { ScreenReaderOnly },
@@ -116,7 +116,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-typeahead': { Typeahead },
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
-  react: { React },
+  react: { React, ...React },
   'react-router-dom': { Router, withRouter }
 }
 

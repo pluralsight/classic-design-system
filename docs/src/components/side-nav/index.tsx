@@ -78,12 +78,31 @@ const items = [
   },
   {
     header: {
+      title: 'Layout'
+    },
+    items: [
+      {
+        href: '/components/errors',
+        title: 'Error pages'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Navigation'
     },
     items: [
       {
         href: '/components/breadcrumb',
         title: 'Breadcrumb'
+      },
+      {
+        href: '/components/nav',
+        title: 'Global navigation'
+      },
+      {
+        href: '/components/tab',
+        title: 'Horizontal tabs'
       },
       {
         href: '/components/verticaltabs',
@@ -116,8 +135,16 @@ const items = [
     },
     items: [
       {
+        href: '/components/checkbox',
+        title: 'Checkbox'
+      },
+      {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
+      },
+      {
+        href: '/components/radio',
+        title: 'Radio'
       },
       {
         href: '/components/textinput',
@@ -177,8 +204,8 @@ const items = [
         title: 'Circular progress'
       },
       {
-        href: '/components/errors',
-        title: 'Error pages'
+        href: '/components/tooltip',
+        title: 'Tooltip'
       }
     ]
   },
