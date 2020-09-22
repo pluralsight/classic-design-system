@@ -1,0 +1,35 @@
+.example {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: var(--psLayoutSpacingSmall);
+  grid-template-columns: [left] 5fr [right] 1fr [end];
+  grid-template-rows: [row1] 1fr [row2] 2fr [row3] 5fr [end];
+  height: 100%;
+  width: 100%;
+  min-height: 400px;
+}
+.box {
+  border-radius: 2px;
+  background: var(--psColorsBackgroundUtility40);
+}
+.top {
+  grid-column: left / end;
+  grid-row: row1 / row2;
+}
+.hero {
+  grid-column: left / right;
+  grid-row: row2 / row3;
+}
+.body {
+  grid-column: left / right;
+  grid-row: row3 / end;
+}
+.side {
+  grid-column: right / end;
+  grid-row: row2 / end;
+}

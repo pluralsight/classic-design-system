@@ -204,6 +204,10 @@ const items = [
         title: 'Circular progress'
       },
       {
+        href: '/components/dialog',
+        title: 'Dialog'
+      },
+      {
         href: '/components/tooltip',
         title: 'Tooltip'
       }
