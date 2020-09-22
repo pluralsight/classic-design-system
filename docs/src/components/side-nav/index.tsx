@@ -168,6 +168,10 @@ const items = [
       {
         href: '/components/card',
         title: 'Card'
+      },
+      {
+        href: '/components/carousel',
+        title: 'Carousel'
       }
     ]
   },
