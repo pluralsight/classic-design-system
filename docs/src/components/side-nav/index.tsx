@@ -208,6 +208,14 @@ const items = [
         title: 'Circular progress'
       },
       {
+        href: '/components/errors',
+        title: 'Error pages'
+      },
+      {
+        href: '/components/starrating',
+        title: 'Star rating'
+      },
+      {  
         href: '/components/tooltip',
         title: 'Tooltip'
       }
