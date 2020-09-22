@@ -412,6 +412,7 @@ Access to page and item metadata
 ```typescript
 import Card from '@pluralsight/ps-design-system-card'
 import Carousel from '@pluralsight/ps-design-system-carousel'
+import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 function Example() {
@@ -420,7 +421,9 @@ function Example() {
       <Carousel.Item key={index}>
         {data => (
           <div>
-            <pre>{JSON.stringify(data, null, 2)}</pre>
+            <P>
+              <pre>{JSON.stringify(data, null, 2)}</pre>
+            </P>
           </div>
         )}
       </Carousel.Item>
