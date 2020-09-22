@@ -139,6 +139,10 @@ const items = [
         title: 'Checkbox'
       },
       {
+        href: '/components/datepicker',
+        title: 'Date picker'
+      },
+      {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
       },
