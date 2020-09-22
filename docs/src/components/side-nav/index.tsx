@@ -229,6 +229,10 @@ const items = [
       {
         href: '/components/theme',
         title: 'Theme'
+      },
+      {
+        href: '/components/scrollable',
+        title: 'Scrollable'
       }
     ]
   }
