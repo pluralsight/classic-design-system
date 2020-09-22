@@ -227,6 +227,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/position',
+        title: 'Position'
+      },
+      {
         href: '/components/theme',
         title: 'Theme'
       }
