@@ -154,6 +154,25 @@ const items = [
   },
   {
     header: {
+      title: 'Text'
+    },
+    items: [
+      {
+        href: '/components/text-headings',
+        title: 'Headings'
+      },
+      {
+        href: '/components/text-paragraph',
+        title: 'Paragraph'
+      },
+      {
+        href: '/components/text-lists',
+        title: 'Lists'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Lists & Tables'
     },
     items: [
