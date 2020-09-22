@@ -227,6 +227,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/screenreaderonly',
+        title: 'Screen reader only'
+      },
+      {
         href: '/components/theme',
         title: 'Theme'
       }
