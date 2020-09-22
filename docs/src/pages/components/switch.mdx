@@ -1,0 +1,184 @@
+---
+name: switch
+route: /components/switch
+---
+
+import Switch from '@pluralsight/ps-design-system-switch'
+
+import { Intro, Types, Usage } from '../../components/component'
+
+# Switch
+
+## Examples
+
+### Sizes & Colors
+
+Switches come in two sizes and two colors.
+
+```typescript
+import React from 'react'
+import Switch from '@pluralsight/ps-design-system-switch'
+
+function Example() {
+  return (
+    <div className="example-grid--col-2">
+      <Switch size={Switch.sizes.large} color={Switch.colors.blue} checked>
+        Large Blue
+      </Switch>
+      <Switch size={Switch.sizes.small} color={Switch.colors.blue} checked>
+        Small Blue
+      </Switch>
+      <Switch size={Switch.sizes.large} color={Switch.colors.green} checked>
+        Large Blue
+      </Switch>
+      <Switch size={Switch.sizes.small} color={Switch.colors.green} checked>
+        Small Green
+      </Switch>
+    </div>
+  )
+}
+
+export default Example
+```
+
+### Disabled
+
+```typescript
+import React from 'react'
+import Switch from '@pluralsight/ps-design-system-switch'
+
+function Example() {
+  return (
+    <div className="example-grid--col-2">
+      <Switch
+        size={Switch.sizes.large}
+        color={Switch.colors.blue}
+        checked
+        disabled
+      >
+        Large Blue
+      </Switch>
+      <Switch
+        size={Switch.sizes.small}
+        color={Switch.colors.blue}
+        checked
+        disabled
+      >
+        Small Blue
+      </Switch>
+      <Switch
+        size={Switch.sizes.large}
+        color={Switch.colors.green}
+        checked
+        disabled
+      >
+        Large Blue
+      </Switch>
+      <Switch
+        size={Switch.sizes.small}
+        color={Switch.colors.green}
+        checked
+        disabled
+      >
+        Small Green
+      </Switch>
+    </div>
+  )
+}
+
+export default Example
+```
+
+### Error state
+
+```typescript
+import React from 'react'
+import Switch from '@pluralsight/ps-design-system-switch'
+
+function Example() {
+  return (
+    <div className="example-grid--col-2">
+      <Switch
+        size={Switch.sizes.large}
+        color={Switch.colors.blue}
+        checked
+        error
+      >
+        Large Blue
+      </Switch>
+      <Switch
+        size={Switch.sizes.small}
+        color={Switch.colors.blue}
+        checked
+        error
+      >
+        Small Blue
+      </Switch>
+      <Switch
+        size={Switch.sizes.large}
+        color={Switch.colors.green}
+        checked
+        error
+      >
+        Large Blue
+      </Switch>
+      <Switch
+        size={Switch.sizes.small}
+        color={Switch.colors.green}
+        checked
+        error
+      >
+        Small Green
+      </Switch>
+    </div>
+  )
+}
+
+export default Example
+```
+
+## Usage & Types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-switch"
+  import="import Switch from '@pluralsight/ps-design-system-switch'"
+  packageName="switch"
+/>
+<Types.Table>
+  <Types.Prop
+    name="checked"
+    type="boolean"
+    desc="shows a toggled-on switch"
+    default="false"
+  />
+  <Types.Prop
+    name="color"
+    type={<Types.Enum enum={Switch.colors} />}
+    desc="track color (from <code>Switch.colors</code>)"
+    default="blue"
+  />
+  <Types.Prop
+    name="disabled"
+    type="boolean"
+    desc="standard input disable flag"
+    default="false"
+  />
+  <Types.Prop
+    name="error"
+    type="boolean"
+    desc="error state flag"
+    default="false"
+  />
+  <Types.Prop
+    name="labelAlign"
+    type={<Types.Enum enum={Switch.labelAligns} />}
+    desc="label position (from <code>Switch.labelAligns</code>)"
+    default="right"
+  />
+  <Types.Prop
+    name="size"
+    type={<Types.Enum enum={Switch.sizes} />}
+    desc="label position (from <code>Switch.sizes</code>)"
+    default="large"
+  />
+</Types.Table>

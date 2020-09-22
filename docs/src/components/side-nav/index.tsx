@@ -147,6 +147,10 @@ const items = [
         title: 'Radio'
       },
       {
+        href: '/components/switch',
+        title: 'Switch'
+      },
+      {
         href: '/components/typeahead',
         title: 'Typeahead'
       }
