@@ -4,7 +4,7 @@ route: /components/icon
 ---
 import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
 import { Intro, Types, Usage } from '../../components/component'
-import {IconCommonSet} from './icon-common-set.tsx'
+import IconCommonSet from './icon-common-set.tsx'
 
 # Icon
 
@@ -19,7 +19,7 @@ import React from 'react'
 import { CodeIcon } from '@pluralsight/ps-design-system-icon'
 
 const Comp = () => (
-  <div className="example-flex-colum">
+  <div className="example-flex-column">
     <CodeIcon size={CodeIcon.sizes.small} />
     <CodeIcon size={CodeIcon.sizes.medium} />
     <CodeIcon size={CodeIcon.sizes.large} />
@@ -40,7 +40,7 @@ import { PathIcon } from '@pluralsight/ps-design-system-icon'
 
 const Comp = () => (
   <div className="example-flex-colum">
-    <div style={{ color: '#ffffff' }}>
+    <div style={{ color: '#0084BD' }}>
       <PathIcon size={CodeIcon.sizes.large} />
     </div>
     <PathIcon style={{ color: 'rebeccapurple' }} size={CodeIcon.sizes.large} />
