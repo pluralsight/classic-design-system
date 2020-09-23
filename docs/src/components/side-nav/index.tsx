@@ -176,6 +176,10 @@ const items = [
       {
         href: '/components/carousel',
         title: 'Carousel'
+      },
+      {
+        href: '/components/note',
+        title: 'Note'
       }
     ]
   },
