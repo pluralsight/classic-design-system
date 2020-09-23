@@ -19,7 +19,7 @@ const DefaultLayout: React.FC<LayoutProps> = props => {
   const { children } = props
 
   const name = props.pageContext.frontmatter?.name
-  const title = `${name} | Pluralsight Design System`
+  const title = `${name ? name + ' | ' : ''}Pluralsight Design System`
 
   return (
     <MDXProvider>
