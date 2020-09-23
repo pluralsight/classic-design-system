@@ -124,6 +124,14 @@ const items = [
         title: 'Button'
       },
       {
+        href: '/components/link',
+        title: 'Link'
+      },
+      {
+        href: '/components/tag',
+        title: 'Tag'
+      },
+      {
         href: '/components/viewtoggle',
         title: 'View toggle'
       }
@@ -166,9 +174,32 @@ const items = [
   },
   {
     header: {
+      title: 'Text'
+    },
+    items: [
+      {
+        href: '/components/text-headings',
+        title: 'Headings'
+      },
+      {
+        href: '/components/text-paragraph',
+        title: 'Paragraph'
+      },
+      {
+        href: '/components/text-lists',
+        title: 'Lists'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Lists & Tables'
     },
     items: [
+      {
+        href: '/components/table',
+        title: 'Table'
+      },
       {
         href: '/components/drawer',
         title: 'Drawer'
@@ -184,6 +215,10 @@ const items = [
       {
         href: '/components/carousel',
         title: 'Carousel'
+      },
+      {
+        href: '/components/note',
+        title: 'Note'
       }
     ]
   },
@@ -224,6 +259,10 @@ const items = [
         title: 'Error pages'
       },
       {
+        href: '/components/linearprogress',
+        title: 'Linear progress'
+      },
+      {
         href: '/components/starrating',
         title: 'Star rating'
       },
@@ -239,8 +278,16 @@ const items = [
     },
     items: [
       {
+        href: '/components/screenreaderonly',
+        title: 'Screen reader only'
+      },
+      {
         href: '/components/theme',
         title: 'Theme'
+      },
+      {
+        href: '/components/scrollable',
+        title: 'Scrollable'
       }
     ]
   }
