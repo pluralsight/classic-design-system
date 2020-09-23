@@ -1,0 +1,445 @@
+---
+name: Table
+route: /components/theme
+---
+
+import Table from '@pluralsight/ps-design-system-table'
+
+import { Types, Usage } from '../../components/component'
+
+# Table
+
+## Examples
+
+### In-app example
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Table from '@pluralsight/ps-design-system-table'
+import React, { useState } from 'react'
+
+const FIELDS = [
+  { key: 'name', name: 'Name', align: Table.aligns.left },
+  { key: 'courses', name: 'Unique Courses', align: Table.aligns.right },
+  { key: 'viewTime', name: 'View Time', align: Table.aligns.right }
+]
+
+const ROWS = [
+  { name: 'Tod Gentille', courses: 41, viewTime: 839 },
+  { name: 'Dmitry Borodyansky', courses: 2, viewTime: 12 },
+  { name: 'Jake Trent', courses: 7, viewTime: 294 },
+]
+
+const Example: React.FC = props => {
+  const [sortDirection, setSortDirection] = useState(Table.sorts.asc)
+  const [sortKey, setSortKey] = useState('name')
+
+  const handleSortClick = (nextSortKey, nextSortDirection) => {
+    setSortDirection(nextSortDirection)
+    setSortKey(nextSortKey)
+  }
+
+  const sortedRows = useMemo(() => {
+    const isAscending = sortDirection === Table.sorts.asc
+
+    return ROWS.sort((row1, row2) => {
+      const [a, b] = isAscending ? [row1, row2] : [row2, row1]
+
+      return typeof a[sortKey] === 'string'
+        ? a[sortKey].localeCompare(b[sortKey])
+        : a[sortKey] - b[sortKey]
+    })
+  }, [sortDirection, sortKey])
+
+  return (
+    <Table>
+      <Table.Row>
+        {FIELDS.map(field => (
+          <Table.ColumnHeader
+            align={field.align}
+            key={field.key}
+            onClick={(_evt, dir) => { handleSortClick(field.key, dir) }}
+            sort={sortKey === field.key ? sortDirection : true}
+          >
+            {field.name}
+          </Table.ColumnHeader>
+        ))}
+      </Table.Row>
+
+      {sortedRows.map(row => (
+        <Table.Row key={row.name}>
+          <Table.Cell>
+            <Avatar
+              name={row.name}
+              size={Avatar.sizes.xSmall}
+              style={{ minWidth: Avatar.widths.xSmall }}
+            />
+            <div style={{ marginLeft: layout.spacingSmall }}>
+              {row.name}
+            </div>
+          </Table.Cell>
+
+          <Table.Cell align={Table.aligns.right}>
+            {row.courses}
+          </Table.Cell>
+
+          <Table.Cell align={Table.aligns.right}>
+            {row.viewTime}m
+          </Table.Cell>
+        </Table.Row>
+      ))}
+    </Table>
+  )
+}
+
+export default Example
+```
+
+### Emphasis
+
+Place the primary column, often "Name" or "Title", leftmost in the table. Add
+emphasis to visually anchor the primary column.
+
+```typescript
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell emphasis>Emphasized</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell emphasis>Emphasized</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+      </Table.Row>
+
+      <Table.Row>
+        <Table.Cell emphasis>Emphasized</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+      </Table.Row>
+    </Table>
+  )
+}
+
+export default Example
+```
+
+### Sorting
+
+Add sorting to your table with the sort prop. It will control which
+`ColumnHeader` is marked as sorted.
+
+Providing an `onClick` prop will make it become clickable. When clicked, the
+callback will receive what it expects to be the new sort order on that column.
+If your callback needs additional data, like a column identifier, it is up to
+you to prebind it.
+
+```typescript
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader sort={Table.sorts.asc} onClick={sort => alert(sort)}>Column</Table.ColumnHeader>
+        <Table.ColumnHeader sort>Column</Table.ColumnHeader>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Broccoli</Table.Cell>
+        <Table.Cell>Orange</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Cucumber</Table.Cell>
+        <Table.Cell>Strawberry</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Kale</Table.Cell>
+        <Table.Cell>Banana</Table.Cell>
+      </Table.Row>
+    </Table>
+  )
+}
+
+export default Example
+```
+
+### Column alignment
+
+Always left align alphabetic columns. Always right align numeric columns.
+
+```typescript
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader align={Table.aligns.left}>Column label</Table.ColumnHeader>
+        <Table.ColumnHeader align={Table.aligns.center}>Column label</Table.ColumnHeader>
+        <Table.ColumnHeader align={Table.aligns.right}>Column label</Table.ColumnHeader>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell align={Table.aligns.left}>Broccoli</Table.Cell>
+        <Table.Cell align={Table.aligns.center}>Orange</Table.Cell>
+        <Table.Cell align={Table.aligns.right}>1</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell align={Table.aligns.left}>Cucumber</Table.Cell>
+        <Table.Cell align={Table.aligns.center}>Strawberry</Table.Cell>
+        <Table.Cell align={Table.aligns.right}>123</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell align={Table.aligns.left}>Kale</Table.Cell>
+        <Table.Cell align={Table.aligns.center}>Banana</Table.Cell>
+        <Table.Cell align={Table.aligns.right}>123,456</Table.Cell>
+      </Table.Row>
+    </Table>
+  )
+}
+
+export default Example
+```
+
+### Column width
+
+By default, all columns are equally spaced. A single column may be prioritized
+to be grow differently by using the flex prop which is a convenience API for
+the [flex CSS attribute](https://developer.mozilla.org/en-US/docs/Web/CSS/flex).
+
+```typescript
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader flex="4">Column</Table.ColumnHeader>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell flex="4">This column is prioritized to take more of the available space.</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell flex="4">Cell</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+      </Table.Row>
+    </Table>
+  )
+}
+
+export default Example
+```
+
+### Drawer
+
+Pass the `Drawer` component as a direct child of `Table` in order to expose
+additional content or controls in your UI. Pass the row's `Table.Row` to the
+`Drawer` `base` prop.
+
+```typescript
+import { colorsPink, type } from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const PinkBox: React.FC = (props) => (
+  <React.Fragment>
+    <div className="pink-box">
+      {props.children}
+    </div>
+
+    <style jsx>{`
+      .pink-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed ${colorsPink[6]};
+        color: ${colorsPink[6]};
+        font-size: 16px;
+        font-family: ${type.fontFamilyCode};
+        height: 100px;
+      }
+    `}</style>
+  </React.Fragment>
+)
+
+const Example: React.FC = props => {
+  return (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+      </Table.Row>
+
+      <Drawer
+        startOpen
+        base={
+          <Table.Row>
+            <Table.Cell>Cell</Table.Cell>
+            <Table.Cell>Cell</Table.Cell>
+            <Table.Cell>Cell</Table.Cell>
+          </Table.Row>
+        }
+      >
+        <PinkBox>DrawerPanel</PinkBox>
+      </Drawer>
+
+      <Drawer
+        startOpen
+        base={
+          <Table.Row>
+            <Table.Cell>Cell</Table.Cell>
+            <Table.Cell>Cell</Table.Cell>
+            <Table.Cell>Cell</Table.Cell>
+          </Table.Row>
+        }
+      >
+        <PinkBox>DrawerPanel</PinkBox>
+      </Drawer>
+    </Table>
+  )
+}
+
+export default Example
+```
+You can also nest an entire `Table` inside a `Drawer`. Mark the nested `Table`
+with the `inDrawer` prop to get the correct styling.
+
+```typescript
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <Table>
+      <Table.Row>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+        <Table.ColumnHeader>Column</Table.ColumnHeader>
+      </Table.Row>
+
+      <Drawer
+        startOpen
+        base={
+          <Table.Row>
+            <Table.Cell>Cell</Table.Cell>
+            <Table.Cell>Cell</Table.Cell>
+            <Table.Cell>Cell</Table.Cell>
+          </Table.Row>
+        }
+      >
+        <Table inDrawer>
+          <Table.Row>
+            <Table.Cell>Nested Cell</Table.Cell>
+            <Table.Cell>Nested Cell</Table.Cell>
+            <Table.Cell>Nested Cell</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>Nested Cell</Table.Cell>
+            <Table.Cell>Nested Cell</Table.Cell>
+            <Table.Cell>Nested Cell</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>Nested Cell</Table.Cell>
+            <Table.Cell>Nested Cell</Table.Cell>
+            <Table.Cell>Nested Cell</Table.Cell>
+          </Table.Row>
+        </Table>
+      </Drawer>
+    </Table>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-table"
+  import="import Table from '@pluralsight/ps-design-system-table'"
+  packageName="table"
+/>
+
+
+### Table
+
+<Types.Table>
+  <Types.Prop
+    name="children"
+    type="Table.Row | Drawer"
+    desc="content of table, per row"
+  />
+  <Types.Prop
+    name="inDrawer"
+    type="boolean"
+    desc="used to add additional styles when table is nested in a Drawer"
+    default="false"
+  />
+</Types.Table>
+
+### Table.Cell
+
+<Types.Table>
+  <Types.Prop
+    name="align"
+    type={<Types.Enum enum={Table.aligns} />}
+    desc="text alignment"
+    default={Table.aligns.left}
+  />
+  <Types.Prop
+    name="emphasis"
+    type="boolean"
+    desc="highlight content priority"
+    default="false"
+  />
+  <Types.Prop
+    name="flex"
+    type="string"
+    desc="flex css attribute to control column width"
+  />
+</Types.Table>
+
+### Table.ColumnHeader
+
+<Types.Table>
+  <Types.Prop
+    name="align"
+    type={<Types.Enum enum={Table.aligns} />}
+    desc="text alignment"
+    default={Table.aligns.left}
+  />
+  <Types.Prop
+    name="flex"
+    type="(sort) => void"
+    desc="triggered on header click, returns event as first argument. If sort prop applied new sort direction returned as second argument "
+  />
+  <Types.Prop
+    name="onClick"
+    type="boolean"
+    desc="highlight content priority"
+    default="false"
+  />
+  <Types.Prop
+    name="sort"
+    type={<Types.Enum enum={Table.sorts} />}
+    desc="labels column as sortable or sorted"
+  />
+</Types.Table>
+

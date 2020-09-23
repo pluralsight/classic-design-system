@@ -14,6 +14,16 @@ export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => (
   </Link>
 )
 
+export const BlockQuote: React.FC<HTMLAttributes<HTMLQuoteElement>> = props => {
+  const className = cx(styles.blockquote, props.className)
+
+  return (
+    <blockquote className={className}>
+      <Text.P>{props.children}</Text.P>
+    </blockquote>
+  )
+}
+
 export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   const className = cx(styles.h1, props.className)
 
@@ -54,6 +64,7 @@ export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = props => (
 
 const components = {
   a: A,
+  blockquote: BlockQuote,
   code: CodeBlock,
   h1: H1,
   h2: H2,

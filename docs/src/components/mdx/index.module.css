@@ -7,3 +7,9 @@ main > .h2 {
 main > .h3 {
   margin-top: var(--psLayoutSpacingXLarge);
 }
+.blockquote {
+  border-left: 5px solid var(--psColorsBackgroundUtility25);
+  margin-bottom: var(--psLayoutSpacingMedium);
+  padding: var(--psLayoutSpacingXXSmall) 0 var(--psLayoutSpacingXXSmall)
+    var(--psLayoutSpacingMedium);
+}

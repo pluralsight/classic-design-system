@@ -1,0 +1,97 @@
+---
+name: Column layouts
+route: /components/layout-column
+---
+
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
+
+import { Types, Usage } from '../../components/component'
+
+# Column layouts
+
+## Equal column layout
+
+This layout will provide a set number of columns for an arbitrary number of
+items. If more items than columns are provided, they will flow into rows.
+
+> USAGE NOTE: The children elements that are supplied to the EqualColumnLayout must be able to accept `data-css-*` props. Optionally, you may provide your own semantics for the parent container by passing that as the first child.
+
+```typescript
+import { colorsBlue, colorsTextIcon, type, layout } from '@pluralsight/ps-design-system-core'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <EqualColumnLayout count={EqualColumnLayout.counts.two}>
+        <BlueBox>A</BlueBox>
+        <BlueBox>B</BlueBox>
+      </EqualColumnLayout>
+
+      <br />
+
+      <EqualColumnLayout count={EqualColumnLayout.counts.four}>
+        <BlueBox>C</BlueBox>
+        <BlueBox>D</BlueBox>
+        <BlueBox>E</BlueBox>
+        <BlueBox>F</BlueBox>
+      </EqualColumnLayout>
+
+      <br />
+
+      <EqualColumnLayout count={EqualColumnLayout.counts.three}>
+        <ul style={{ listStyle: 'none' }}>
+          <li><BlueBox>G</BlueBox></li>
+          <li><BlueBox>H</BlueBox></li>
+          <li><BlueBox>I</BlueBox></li>
+        </ul>
+      </EqualColumnLayout>
+    </React.Fragment>
+  )
+}
+
+const BlueBox: React.FC = props => (
+  <React.Fragment>
+    <div className="bluebox" {...props} />
+
+    <style jsx>{`
+      .bluebox {
+        align-items: center;
+        background: ${colorsBlue[6]};
+        color: ${colorsTextIcon.highOnDark};
+        display: flex;
+        font-weight: ${type.fontWeightBold};
+        height: ${layout.spacingLarge};
+        justify-content: center;
+      }
+    `}</style>
+  </React.Fragment>
+)
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { AsideLayout } from '@pluralsight/ps-design-system-layout'"
+  packageName="layout"
+/>
+
+<Types.Table>
+  <Types.Prop
+    name="count"
+    type={<Types.Enum enum={EqualColumnLayout.counts} />}
+    desc="number of columns in a row at full width"
+    default={EqualColumnLayout.counts.four}
+  />
+  <Types.Prop
+    name="children"
+    type="single parent el | children array"
+    desc="children must accept data-css-* props"
+    default="div"
+  />
+</Types.Table>
+
