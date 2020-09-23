@@ -271,6 +271,10 @@ const items = [
         title: 'Circular progress'
       },
       {
+        href: '/components/dialog',
+        title: 'Dialog'
+      },
+      {
         href: '/components/errors',
         title: 'Error pages'
       },

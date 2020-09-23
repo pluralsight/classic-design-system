@@ -1,10 +1,10 @@
-.h1 {
+main > .h1 {
   margin-top: 0;
 }
-.h2 {
+main > .h2 {
   margin-top: 80px;
 }
-.h3 {
+main > .h3 {
   margin-top: var(--psLayoutSpacingXLarge);
 }
 .blockquote {

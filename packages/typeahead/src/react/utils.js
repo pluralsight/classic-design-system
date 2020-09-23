@@ -1,11 +1,3 @@
-export function canUseDOM() {
-  return !!(
-    typeof window !== 'undefined' &&
-    window.document &&
-    window.document.createElement
-  )
-}
-
 export function combineFns(...fns) {
   return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))
 }
