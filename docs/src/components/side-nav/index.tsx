@@ -197,6 +197,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/table',
+        title: 'Table'
+      },
+      {
         href: '/components/datawell',
         title: 'Data well'
       },
