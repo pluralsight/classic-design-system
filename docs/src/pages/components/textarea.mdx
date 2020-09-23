@@ -1,0 +1,99 @@
+---
+name: Text Area
+route: /components/textarea
+---
+
+import { Intro, Types, Usage } from '../../components/component'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+
+# Text Area
+
+## Examples
+
+### Labels
+
+Primary identification of a text area comes through the `label`. Usage hints are given in the `placeholder`. Supporting text and error messaging is set in the `subLabel`.
+
+```typescript
+import React from 'react'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TextArea label="Bio" />
+    <TextArea label="Bio" placeholder="What brought you to authoring?" />
+    <TextArea
+      label="Bio"
+      placeholder="What brought you to authoring?"
+      subLabel="The short version"
+    />
+  </div>
+)
+
+export default Comp
+
+```
+
+### Disabled
+
+Disabled text inputs are unmodifiable and diminished visually.
+
+```typescript
+import React from 'react'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+
+const Comp = () => (
+  <TextArea disabled label="Can't touch this" />
+)
+
+export default Comp
+
+```
+
+### Error
+
+Error states are engaged with the `error` flag. Error-related messaging is sent to the `subLabel` prop.
+
+```typescript
+import React from 'react'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+
+const Comp = () => (
+  <TextArea error label="Bio" subLabel="Field is required" />
+)
+
+export default Comp
+
+```
+
+### Rows
+
+To increase the height of the text area, use the `rows` prop.
+
+```typescript
+import React from 'react'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+
+const Comp = () => (
+  <TextArea rows={8} label="Bio" subLabel="Field is required" />
+)
+
+export default Comp
+
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-textarea"
+  import="import TextArea from '@pluralsight/ps-design-system-textarea'"
+  packageName="textarea"
+  />
+
+<Types.Table>
+  <Types.Prop name="disabled" type="boolean" desc="standard input disabled flag" default="false" />
+  <Types.Prop name="error" type="boolean" desc="error state flag" default="false"/>
+  <Types.Prop name="label" type="string" desc="identifying string for input" />
+  <Types.Prop name="placeholder" type="string" desc="in-field usage hint" />
+  <Types.Prop name="rows" type="number" desc="expand the viewable rows (height)" default="4"/>
+  <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging" />
+</Types.Table>

@@ -1,0 +1,107 @@
+---
+name: Search Input
+route: /components/searchinput
+---
+
+import { Intro, Types, Usage, Guideline } from '../../components/component'
+import {colorsBackgroundDark, layout} from '@pluralsight/ps-design-system-core'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+import Theme from '@pluralsight/ps-design-system-theme'
+
+# Search Input
+
+## Examples
+
+### Loading
+
+Replaces the search icon with a loading indicator
+
+```typescript
+import React from 'react'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+
+const Comp = () => (
+  <SearchInput loading placeholder="What are you looking for?" />
+)
+
+export default Comp
+
+```
+
+### Clear Icon
+
+Providing a `onClear` prop will display a close icon.
+
+```typescript
+import React from 'react'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+
+const Comp = () => (
+  <SearchInput onClear={() => null} placeholder="What are you looking for?" />
+)
+
+export default Comp
+
+```
+
+### Guidelines
+
+Exercise consistency and clarity with explicit placeholder text.
+
+<Guideline
+  do={<SearchInput placeholder="Search for people" />}
+  dont={<SearchInput placeholder="Filter" />}
+/>
+
+Use consistent theming to encourage visual hierarchy
+
+<Guideline
+  do={
+    <div
+      style={{
+        background: colorsBackgroundDark[3],
+        borderRadius: '4px',
+        padding: layout.spacingLarge
+      }}
+    >
+      <Theme>
+        <SearchInput
+          placeholder="Search for people"
+          style={{ display: 'block', width: '100%' }}
+        />
+      </Theme>
+    </div>
+  }
+  dont={
+    <div
+      style={{
+        background: colorsBackgroundDark[3],
+        borderRadius: '4px',
+        padding: layout.spacingLarge
+      }}
+    >
+      <Theme name="light">
+        <SearchInput
+          placeholder="Search for people"
+          style={{ display: 'block', width: '100%' }}
+        />
+      </Theme>
+    </div>
+  }
+/>
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-searchinput"
+  import="import SearchInput from '@pluralsight/ps-design-system-searchinput'"
+  packageName="searchinput"
+  />
+
+<Types.Table>
+  <Types.Prop name="label" type="string" desc="non-standard above-field label" />
+  <Types.Prop name="onClear" type="function" desc="show clear button and trigger when button is clicked" />
+  <Types.Prop name="error" type="boolean" desc="show error state" default="false"/>
+  <Types.Prop name="loading" type="boolean" desc="show progress indicator" default="false"/>
+  <Types.Prop name="placeholder" type="string" desc="standard in-field usage hint" />
+  <Types.Prop name="subLabel" type="string" desc="non-standard below-field label or error message" />
+</Types.Table>
