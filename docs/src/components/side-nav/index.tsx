@@ -139,12 +139,20 @@ const items = [
         title: 'Checkbox'
       },
       {
+        href: '/components/datepicker',
+        title: 'Date picker'
+      },
+      {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
       },
       {
         href: '/components/radio',
         title: 'Radio'
+      },
+      {
+        href: '/components/switch',
+        title: 'Switch'
       },
       {
         href: '/components/textinput',
@@ -168,6 +176,10 @@ const items = [
       {
         href: '/components/card',
         title: 'Card'
+      },
+      {
+        href: '/components/carousel',
+        title: 'Carousel'
       }
     ]
   },
@@ -202,6 +214,14 @@ const items = [
       {
         href: '/components/circularprogress',
         title: 'Circular progress'
+      },
+      {
+        href: '/components/errors',
+        title: 'Error pages'
+      },
+      {
+        href: '/components/starrating',
+        title: 'Star rating'
       },
       {
         href: '/components/tooltip',
