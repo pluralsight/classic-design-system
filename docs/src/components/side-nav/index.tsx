@@ -124,6 +124,10 @@ const items = [
         title: 'Button'
       },
       {
+        href: '/components/link',
+        title: 'Link'
+      },
+      {
         href: '/components/viewtoggle',
         title: 'View toggle'
       }
@@ -218,6 +222,10 @@ const items = [
       {
         href: '/components/errors',
         title: 'Error pages'
+      },
+      {
+        href: '/components/linearprogress',
+        title: 'Linear progress'
       },
       {
         href: '/components/starrating',
