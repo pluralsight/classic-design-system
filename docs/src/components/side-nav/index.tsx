@@ -201,6 +201,10 @@ const items = [
         title: 'Table'
       },
       {
+        href: '/components/drawer',
+        title: 'Drawer'
+      },
+      {
         href: '/components/datawell',
         title: 'Data well'
       },
