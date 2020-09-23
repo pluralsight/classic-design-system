@@ -155,6 +155,10 @@ const items = [
         title: 'Switch'
       },
       {
+        href: '/components/textinput',
+        title: 'Text Input'
+      },
+      {
         href: '/components/typeahead',
         title: 'Typeahead'
       }
@@ -187,6 +191,10 @@ const items = [
       {
         href: '/components/avatar',
         title: 'Avatar'
+      },
+      {
+        href: '/components/icon',
+        title: 'Icon'
       }
     ]
   },
