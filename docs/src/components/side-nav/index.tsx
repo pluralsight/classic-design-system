@@ -128,6 +128,10 @@ const items = [
         title: 'Link'
       },
       {
+        href: '/components/tag',
+        title: 'Tag'
+      },
+      {
         href: '/components/viewtoggle',
         title: 'View toggle'
       }
