@@ -12,7 +12,7 @@ export const ModalGuidelineExample: React.FC<ModalGuidelineExampleProps> = props
   </div>
 )
 
-const ContentGridVisual = _ => (
+export const ContentGridVisual = _ => (
   <div className={styles.grid}>
     <div className={`${styles.box} ${styles.top}`} />
     <div className={`${styles.box} ${styles.hero}`} />

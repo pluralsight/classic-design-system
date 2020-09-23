@@ -9,7 +9,7 @@ import Dialog from '@pluralsight/ps-design-system-dialog'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import { Guideline, Intro, Types, Usage } from '../../components/component'
-import { ModalGuidelineExample } from '../../components/dialog'
+import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialog'
 
 # Dialog
 
@@ -157,17 +157,15 @@ import Button from '@pluralsight/ps-design-system-button'
 import { colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { Heading } from '@pluralsight/ps-design-system-text'
-import { createUniversalPortal, usePortal } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 function Example() {
-  const portal = usePortal()
   const [isOpen, setOpen] = React.useState(false)
   return <>
     <div className="app" aria-hidden={isOpen}>
       <Button onClick={() => setOpen(!isOpen)}>Open Modal</Button>
     </div>
-    {isOpen && createUniversalPortal(
+    {isOpen && 
       <Dialog modal onClose={() => setOpen(false)} aria-label="example dialog" style={{ zIndex: 1 }}>
         <Heading>
           <h2>Lorem ipsum dolor sit amet.</h2>
@@ -183,14 +181,14 @@ function Example() {
           <Button>Primary button</Button>
         </div>
       </Dialog>
-    , portal.current)}
+    }
   </>
 }
 
 export default Example
 ```
 
-## Guidlines
+## Guidelines
 
 In most cases, dialogs can assume the user to digest the content following a Z-Pattern. Readers will start in the top/left, move horizontally to the top/right and then diagonally to the bottom/left before finishing with another horizontal movement to the bottom/right. By that measure, place your actions at the bottom/right, with the primary action on the right.
       
