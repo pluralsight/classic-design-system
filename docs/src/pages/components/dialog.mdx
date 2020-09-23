@@ -157,16 +157,18 @@ import Button from '@pluralsight/ps-design-system-button'
 import { colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { Heading } from '@pluralsight/ps-design-system-text'
+import { createUniversalPortal, usePortal } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 function Example() {
+  const portal = usePortal()
   const [isOpen, setOpen] = React.useState(false)
   return <>
     <div className="app" aria-hidden={isOpen}>
       <Button onClick={() => setOpen(!isOpen)}>Open Modal</Button>
     </div>
-    {isOpen && (
-      <Dialog modal onClose={() => setOpen(false)} aria-label="example dialog">
+    {isOpen && createUniversalPortal(
+      <Dialog modal onClose={() => setOpen(false)} aria-label="example dialog" style={{ zIndex: 1 }}>
         <Heading>
           <h2>Lorem ipsum dolor sit amet.</h2>
         </Heading>
@@ -181,7 +183,7 @@ function Example() {
           <Button>Primary button</Button>
         </div>
       </Dialog>
-    )}
+    , portal.current)}
   </>
 }
 
