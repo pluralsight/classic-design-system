@@ -1,0 +1,46 @@
+---
+name: Link
+route: /components/link
+---
+import Link from '@pluralsight/ps-design-system-link'
+import { Intro, Types, Usage } from '../../components/component'
+
+# Link
+
+## Examples
+
+### Inline links
+
+Links are used to embed actions or pathways to more information within a sentence.
+
+The Link component simply styles the child element that you pass to it. You bring all your own semantics or links that support client-side routing.
+
+```typescript
+import React from 'react'
+import Link from '@pluralsight/ps-design-system-link'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <p>
+      Lorem ipsum dolor sit amet <Link><a href="https://duckduckgo.com">basic link</a></Link> nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet <Link appearance={Link.appearances.subtle}><a href="https://duckduckgo.com">subtle link</a></Link> nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+)
+
+export default Comp
+
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-link"
+  import="import Link from '@pluralsight/ps-design-system-link'"
+  packageName="link"
+  />
+
+<Types.Table>
+  <Types.Prop name="appearance" type={<Types.Enum enum={Link.appearances}/>} desc="visual style (from Link.appearances)" default="default" />
+</Types.Table>
