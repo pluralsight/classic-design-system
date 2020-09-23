@@ -1,0 +1,505 @@
+---
+name: carousel
+route: /components/carousel
+---
+
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Card from '@pluralsight/ps-design-system-card'
+import Carousel from '@pluralsight/ps-design-system-carousel'
+import Note from '@pluralsight/ps-design-system-note'
+
+import { Guideline, Intro, Types, Usage } from '../../components/component'
+import { MockItem } from '../../components/carousel'
+
+# Carousel
+
+<Intro>
+  Carousels are for displaying a related set of content items in a row.  Items can be paged using the next/previous buttons or by a swipe gesture.
+</Intro>
+
+## Examples
+
+### Auto paging
+
+The number and width of items are handled automatically.
+
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import Carousel from '@pluralsight/ps-design-system-carousel'
+import React from 'react'
+
+function Example() {
+  return <Carousel>
+    {MOCK_DATA.courses.map(course => (
+      <Card
+        key={course.id}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+        metadata1={[course.author, course.level]}
+        progress={randomInt()}
+        title={<Card.Title>{course.title}</Card.Title>}
+      />
+    ))}
+  </Carousel>
+}
+
+export default Example
+
+const randomInt = (max = 100) => Math.floor(Math.random() * Math.floor(max))
+
+const MOCK_DATA = {
+  courses: [
+    {
+      author: 'Jim Cooper',
+      id: '1',
+      level: 'Intermediate',
+      title: 'Vue.js Fundamentals'
+    },
+    {
+      author: 'Mark Heath',
+      id: '2',
+      level: 'Intermediate',
+      title: 'Azure Functions Fundamentals'
+    },
+    {
+      author: 'Kyle Simpson',
+      id: '3',
+      level: 'Advanced',
+      title: 'Advanced JavaScript'
+    },
+    {
+      author: 'Mark Zamoyta',
+      id: '4',
+      level: 'Advanced',
+      title: 'Rapid JavaScript Training'
+    },
+    {
+      author: 'Dan Wahlin',
+      id: '5',
+      level: 'Advanced',
+      title: 'Structuring JavaScript Code'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '6',
+      level: 'Advanced',
+      title: 'JavaScript Objects and PropTypes'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '11',
+      level: 'Intermediate',
+      title: 'Vue.js Fundamentals'
+    },
+    {
+      author: 'Mark Heath',
+      id: '12',
+      level: 'Intermediate',
+      title: 'Azure Functions Fundamentals'
+    },
+    {
+      author: 'Kyle Simpson',
+      id: '13',
+      level: 'Advanced',
+      title: 'Advanced JavaScript'
+    },
+    {
+      author: 'Mark Zamoyta',
+      id: '14',
+      level: 'Advanced',
+      title: 'Rapid JavaScript Training'
+    },
+    {
+      author: 'Dan Wahlin',
+      id: '15',
+      level: 'Advanced',
+      title: 'Structuring JavaScript Code'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '16',
+      level: 'Advanced',
+      title: 'JavaScript Objects and PropTypes'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '21',
+      level: 'Intermediate',
+      title: 'Vue.js Fundamentals'
+    },
+    {
+      author: 'Mark Heath',
+      id: '22',
+      level: 'Intermediate',
+      title: 'Azure Functions Fundamentals'
+    },
+    {
+      author: 'Kyle Simpson',
+      id: '23',
+      level: 'Advanced',
+      title: 'Advanced JavaScript'
+    },
+    {
+      author: 'Mark Zamoyta',
+      id: '24',
+      level: 'Advanced',
+      title: 'Rapid JavaScript Training'
+    },
+    {
+      author: 'Dan Wahlin',
+      id: '25',
+      level: 'Advanced',
+      title: 'Structuring JavaScript Code'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '26',
+      level: 'Advanced',
+      title: 'JavaScript Objects and PropTypes'
+    }
+  ]
+}
+```
+
+### Using portals
+
+If there are any UI elements that need to appear in the same visual space as the carousel container, they will need to be rendered outside the `Carousel` DOM. This is because the Carousel container solution requires being styled `overflow: hidden`. A [React Portal](https://reactjs.org/docs/portals.html) is a great solution. A common example could be an `ActionMenu` rendered from a `Card`. Here is some example code:
+
+```typescript
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { BelowRight } from '@pluralsight/ps-design-system-position'
+import Card from '@pluralsight/ps-design-system-card'
+import Carousel from '@pluralsight/ps-design-system-carousel'
+import { MoreIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <Carousel size={Carousel.sizes.wide}>
+    {MOCK_DATA.courses.map(course => (
+      <Toggle>
+        {({ active, toggle }) => (
+          <Card
+            key={course.id}
+            image={<Card.Image src={course.image} />}
+            metadata1={[course.author, course.level]}
+            title={<Card.Title>{course.title}</Card.Title>}
+            actionBarVisible
+            actionBar={[
+              <BelowRight
+                inNode={typeof document !== 'undefined' && document.body}
+                when={active}
+                show={
+                  <ActionMenu onClick={toggle}>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    <ActionMenu.Item>Useless item</ActionMenu.Item>
+                  </ActionMenu>
+                }
+                key="a"
+              >
+                <Card.Action
+                  title="See more"
+                  icon={<MoreIcon />}
+                  onClick={toggle}
+                />
+              </BelowRight>
+            ]}
+          />
+        )}
+      </Toggle>
+    ))}
+  </Carousel>
+}
+
+export default Example
+
+function Toggle(props) {
+  const [active, setActive] = React.useState(
+    typeof props.active === 'undefined' ? !!props.startActive : !!props.active
+  )
+
+  function toggle() {
+    setActive(!active)
+  }
+
+  return props.children({ active, toggle })
+}
+
+const MOCK_DATA = {
+  courses: [
+    {
+      author: 'Jim Cooper',
+      id: '1',
+      level: 'Intermediate',
+      title: 'Vue.js Fundamentals'
+    },
+    {
+      author: 'Mark Heath',
+      id: '2',
+      level: 'Intermediate',
+      title: 'Azure Functions Fundamentals'
+    },
+    {
+      author: 'Kyle Simpson',
+      id: '3',
+      level: 'Advanced',
+      title: 'Advanced JavaScript'
+    },
+    {
+      author: 'Mark Zamoyta',
+      id: '4',
+      level: 'Advanced',
+      title: 'Rapid JavaScript Training'
+    },
+    {
+      author: 'Dan Wahlin',
+      id: '5',
+      level: 'Advanced',
+      title: 'Structuring JavaScript Code'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '6',
+      level: 'Advanced',
+      title: 'JavaScript Objects and PropTypes'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '11',
+      level: 'Intermediate',
+      title: 'Vue.js Fundamentals'
+    },
+    {
+      author: 'Mark Heath',
+      id: '12',
+      level: 'Intermediate',
+      title: 'Azure Functions Fundamentals'
+    },
+    {
+      author: 'Kyle Simpson',
+      id: '13',
+      level: 'Advanced',
+      title: 'Advanced JavaScript'
+    },
+    {
+      author: 'Mark Zamoyta',
+      id: '14',
+      level: 'Advanced',
+      title: 'Rapid JavaScript Training'
+    },
+    {
+      author: 'Dan Wahlin',
+      id: '15',
+      level: 'Advanced',
+      title: 'Structuring JavaScript Code'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '16',
+      level: 'Advanced',
+      title: 'JavaScript Objects and PropTypes'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '21',
+      level: 'Intermediate',
+      title: 'Vue.js Fundamentals'
+    },
+    {
+      author: 'Mark Heath',
+      id: '22',
+      level: 'Intermediate',
+      title: 'Azure Functions Fundamentals'
+    },
+    {
+      author: 'Kyle Simpson',
+      id: '23',
+      level: 'Advanced',
+      title: 'Advanced JavaScript'
+    },
+    {
+      author: 'Mark Zamoyta',
+      id: '24',
+      level: 'Advanced',
+      title: 'Rapid JavaScript Training'
+    },
+    {
+      author: 'Dan Wahlin',
+      id: '25',
+      level: 'Advanced',
+      title: 'Structuring JavaScript Code'
+    },
+    {
+      author: 'Jim Cooper',
+      id: '26',
+      level: 'Advanced',
+      title: 'JavaScript Objects and PropTypes'
+    }
+  ]
+}
+```
+
+### Size
+
+The size will adjust the min/max constraints of the individual items in the carousel.
+
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import Carousel from '@pluralsight/ps-design-system-carousel'
+import React from 'react'
+
+function Example() {
+  return <>
+    <Carousel size={Carousel.sizes.narrow}>
+      {MOCK_DATA.courses.map(course => (
+        <Card
+          key={course.id}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          metadata1={[course.author, course.level]}
+          progress={randomInt()}
+          title={<Card.Title>{course.title}</Card.Title>}
+        />
+      ))}
+    </Carousel>
+
+    <br />
+
+    <Carousel size={Carousel.sizes.wide}>
+      {MOCK_DATA.courses.map(course => (
+        <Card
+          key={course.id}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          metadata1={[course.author, course.level]}
+          progress={randomInt()}
+          title={<Card.Title>{course.title}</Card.Title>}
+        />
+      ))}
+    </Carousel>
+  </>
+}
+
+export default Example
+
+const randomInt = (max = 100) => Math.floor(Math.random() * Math.floor(max))
+
+const MOCK_DATA = {
+  courses: [
+    {
+      author: 'Jim Cooper',
+      id: '1',
+      level: 'Intermediate',
+      title: 'Vue.js Fundamentals'
+    },
+    {
+      author: 'Mark Heath',
+      id: '2',
+      level: 'Intermediate',
+      title: 'Azure Functions Fundamentals'
+    }
+  ]
+}
+```
+
+
+### Access to page and item metadata
+
+Access to page and item metadata
+
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import Carousel from '@pluralsight/ps-design-system-carousel'
+import { P } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return <Carousel size={Carousel.sizes.wide}>
+    {new Array(9).fill(null).map((_, index) => (
+      <Carousel.Item key={index}>
+        {data => (
+          <div>
+            <P>
+              <pre>{JSON.stringify(data, null, 2)}</pre>
+            </P>
+          </div>
+        )}
+      </Carousel.Item>
+    ))}
+  </Carousel>
+}
+
+export default Example
+```
+
+## Guidelines
+
+The height of the carousel adapts to the height of the content it contains, but the width of its children will be equalized, so make sure to use related content for children that are intended to be used at the same height and width.
+
+<Guideline
+  columnCount={1}
+  do={
+    <Carousel size={Carousel.sizes.wide}>
+      <MockItem />
+      <MockItem />
+      <MockItem />
+      <MockItem />
+      <MockItem />
+      <MockItem />
+      <MockItem />
+    </Carousel>
+  }
+  dont={
+    <Carousel size={Carousel.sizes.wide}>
+      <Note avatar={<Avatar name="Bob Ross" src="//picsum.photos/128" />} message={<p>Wow, this is a card. The text goes on for a long time. It makes a vertical alignment problem with hetereogeneous content in a carousel.</p>} />
+      <Avatar name="Bob Ross" src="//picsum.photos/128" />
+      <Card
+        bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
+        title={
+          <Card.Title>
+            Getting Started with Reactive Programming Using RxJS
+          </Card.Title>
+        }
+        progress={20}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+        metadata1={['Scott Allen', 'Intermediate']}
+        metadata2={['23m watched']}
+        size={Card.sizes.small}
+      />
+    </Carousel>
+  }
+/>
+
+## Usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-carousel"
+  import="import Carousel from '@pluralsight/ps-design-system-carousel'"
+  packageName="carousel"
+  />
+
+### Carousel
+
+<Types.Table>
+  <Types.Prop name="children" required type="React.ReactNode" desc="items to place in carousel" />
+  <Types.Prop name="size" type={<Types.Enum enum={Carousel.sizes}/>} desc="size of carousel items" default="medium" />
+</Types.Table>
+
+### Carousel.Controls
+
+<Types.Table>
+  <Types.Prop name="children" required type="React.ReactNode" desc="controls to advance carousel frames" />
+</Types.Table>
+
+### Carousel.Control
+
+<Types.Table>
+  <Types.Prop name="direction" required type={<Types.Enum enum={Carousel.Control.directions} />} desc="(from Carousel.Control.directions)" />
+</Types.Table>
+
+### Carousel.Item
+
+<Types.Table>
+  <Types.Prop name="children" required type="React.ReactNode | () => React.ReactNode" desc="render prop used to access item and page metadata" />
+</Types.Table>

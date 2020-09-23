@@ -82,14 +82,14 @@ export default Example
 
 The nav item component is for creating links to pages or as action triggers. A horizontal variant can be used with or without an icon. The vertical variant always requires an icon. The icon-only variant can also be used for very recognizable icons/actions when a label is unecessary.
 
-```typescript
+```typescript themeName=dark
 import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid" style={{ background: colorsBackgroundDark[2], padding: layout.spacingLarge }}>
+  return <div className="example-grid">
     <NavItem icon={<HomeIcon />} menu={<div>placeholder</div>}>Label</NavItem>
     <NavItem icon={<HomeIcon />}>Label</NavItem>
     <NavItem menu={<div>placeholder</div>}>Label</NavItem>
@@ -132,14 +132,14 @@ export default Example
 
 The nav brand component creates a consistent use of branding for the icon and logo of an app. It is intended to always be placed at the left end of the nav bar.
 
-```typescript
+```typescript themeName=dark
 import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid" style={{ background: colorsBackgroundDark[2], padding: layout.spacingLarge }}>
+  return <div className="example-grid">
     <NavBrand logo={<MyLogo />} wordmark="TITLE" />
   </div>
 }
@@ -186,13 +186,13 @@ function MyLogo() {
 
 The nav user component is for actions & settings related to the user. It is intended to always be placed at the right end of the nav bar. For wider screens, text can be displayed for the user’s name and a meta item (such as a plan name) or only a name. When the screen is narrow, the text will be dropped.
 
-```typescript
+```typescript themeName=dark
 import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid--col-3" style={{ background: colorsBackgroundDark[2], padding: layout.spacingLarge }}>
+  return <div className="example-grid--col-3">
     <NavUser name="Name" meta="Meta" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
     <NavUser name="Name" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
     <NavUser src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />

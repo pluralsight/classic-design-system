@@ -1,4 +1,6 @@
 import { transform } from '@babel/core'
+import Theme from '@pluralsight/ps-design-system-theme'
+import cx from 'classnames'
 import { Language } from 'prism-react-renderer'
 import React, { HTMLAttributes, useContext } from 'react'
 import { LiveError, LiveProvider, LivePreview } from 'react-live'
@@ -37,7 +39,13 @@ export const Preview: React.FC<PreviewProps> = props => {
       transformCode={transformCode}
     >
       <LiveError />
-      <LivePreview className={styles.preview} />
+      <LivePreview
+        className={cx({
+          [styles.preview]: true,
+          [styles.dark]: context.themeNameOverride === Theme.names.dark,
+          [styles.light]: context.themeNameOverride === Theme.names.light
+        })}
+      />
     </LiveProvider>
   )
 }
