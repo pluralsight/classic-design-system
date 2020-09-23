@@ -1,0 +1,373 @@
+---
+name: dialog
+route: /components/dialog
+---
+
+import Button from '@pluralsight/ps-design-system-button'
+import { layout } from '@pluralsight/ps-design-system-core'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import * as Text from '@pluralsight/ps-design-system-text'
+
+import { Guideline, Intro, Types, Usage } from '../../components/component'
+import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialog'
+
+# Dialog
+
+<Intro>
+  The purpose of a Dialog is to provide actionable messaging and may appear contextually or as a [modal](#modal). The Dialog adapts to various amounts and types of content. For contextual, non-actionable messaging, consider the [Tooltip](/components/tooltip) instead.
+</Intro>
+
+## Examples
+
+### In-app example
+
+Dialogs can appear automatically, or be triggered by hover, focus, tap or click.
+      
+```typescript 
+import Button from '@pluralsight/ps-design-system-button'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import { Below } from '@pluralsight/ps-design-system-position'
+import React from 'react'
+
+function Example() {
+  const [isHovered, setHovered] = React.useState(false)
+  const [isClicked, setClicked] = React.useState(false)
+  return <div className="example-grid--col-3" style={{ height: '150px' }}>
+    <Below
+      show={
+        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+          Dialog
+        </Dialog>
+      }
+      when
+    >
+      <Button appearance={Button.appearances.secondary}>
+        Look at me
+      </Button>
+    </Below>
+
+    <Below
+      show={
+        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+          Dialog
+        </Dialog>
+      }
+      when={isHovered}
+    >
+      <Button
+        appearance={Button.appearances.secondary}
+        onMouseEnter={_ => setHovered(true)}
+        onMouseOut={_ => setHovered(false)}
+      >
+        Hover me
+      </Button>
+    </Below>
+
+    <Below
+      show={
+        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
+          Dialog
+        </Dialog>
+      }
+      when={isClicked}
+    >
+      <Button
+        appearance={Button.appearances.secondary}
+        onClick={_ => setClicked(!isClicked)}
+      >
+        Click me
+      </Button>
+    </Below>
+  </div>
+}
+
+export default Example
+```
+
+### Tail
+
+Dialogs can be shown with or without a tail (a directional indicator).  To make the tail appear, use a `Dialog.tailPositions` option.
+
+```typescript 
+import Button from '@pluralsight/ps-design-system-button'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import { P } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <Dialog disableFocusOnMount><ExampleContent /></Dialog>
+    <Dialog tailPosition={Dialog.tailPositions.topCenter} disableFocusOnMount><ExampleContent /></Dialog>
+  </div>
+}
+
+export default Example
+
+const ExampleContent = _ => (
+  <div style={{ maxWidth: '300px' }}>
+    <P>
+      Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+    </P>
+    <div style={{ textAlign: 'right' }}>
+      <Button>Primary button</Button>
+    </div>
+  </div>
+)
+```
+
+### Closing
+
+Dialogs may be closed using one of a number of methods: clicking the close button, clicking the overlay (in the case of a `modal` Dialog), and pressing the escape key. One or all of these methods, if available, will call the `onClose` function when triggered.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import { P } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <Dialog disableFocusOnMount><ExampleContent /></Dialog>
+    <Dialog onClose={_ => alert('Closing')} disableFocusOnMount><ExampleContent /></Dialog>
+  </div>
+}
+
+export default Example
+
+const ExampleContent = _ => (
+  <div style={{ maxWidth: '300px' }}>
+    <P>
+      Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+    </P>
+    <div style={{ textAlign: 'right' }}>
+      <Button>Primary button</Button>
+    </div>
+  </div>
+)
+```
+
+### Modal
+
+A modal Dialog will be shown fullscreen with an overlay behind and positioned in the center of the viewport.
+
+When a modal Dialog (or non-modal Dialog) are shown on the screen, it will take browser focus. In the case of a modal Dialog, the rest of the body of the application will continue to be visible through the translucent overlay. But it should be hidden. To hide it from screenreaders, add an `aria-hidden=true` attribute to your application's containing node, and make sure Dialog is mounted outside of that node. To hide it from keyboard users, add a `tabindex="-1"` to that same application node.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  const [isOpen, setOpen] = React.useState(false)
+  return <>
+    <div className="app" aria-hidden={isOpen}>
+      <Button onClick={() => setOpen(!isOpen)}>Open Modal</Button>
+    </div>
+    {isOpen && 
+      <Dialog modal onClose={() => setOpen(false)} aria-label="example dialog" style={{ zIndex: 1 }}>
+        <Heading>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+        </Heading>
+        <div
+          style={{
+            background: colorsBackgroundLight[2],
+            height: '176px'
+          }}
+        />
+        <div className="buttons">
+          <Button appearance={Button.appearances.stroke}>Secondary</Button>
+          <Button>Primary button</Button>
+        </div>
+      </Dialog>
+    }
+  </>
+}
+
+export default Example
+```
+
+## Guidelines
+
+In most cases, dialogs can assume the user to digest the content following a Z-Pattern. Readers will start in the top/left, move horizontally to the top/right and then diagonally to the bottom/left before finishing with another horizontal movement to the bottom/right. By that measure, place your actions at the bottom/right, with the primary action on the right.
+      
+<Guideline
+  do={
+    <Dialog disableFocusOnMount>
+      <Text.Heading>
+        <h3>Title</h3>
+      </Text.Heading>
+      <Text.P>
+        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation
+      </Text.P>
+      <div style={{ textAlign: 'right' }}>
+        <Button
+          appearance={Button.appearances.secondary}
+          style={{ marginRight: layout.spacingMedium }}
+        >
+          Secondary
+        </Button>
+        <Button>Primary</Button>
+      </div>
+    </Dialog>
+  }
+  dont={
+    <Dialog disableFocusOnMount>
+      <Text.Heading>
+        <h3>Title</h3>
+      </Text.Heading>
+      <Text.P>
+        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation
+      </Text.P>
+      <div>
+        <Button style={{ marginRight: layout.spacingMedium }}>
+          Primary
+        </Button>
+        <Button appearance={Button.appearances.secondary}>
+          Secondary
+        </Button>
+      </div>
+    </Dialog>
+  }
+/>
+
+Don’t use [modal](#modal) dialogs when displaying non-critical information that doesn’t need to interrupt a workflow.  Consider a dialog interaction which would be less intrusive.
+
+<Guideline
+  do={
+    <ModalGuidelineExample>
+      <div className="dialog">
+        <Dialog disableFocusOnMount>
+          Bookmark added. <Link href="">Undo?</Link>
+        </Dialog>
+      </div>
+      <style jsx>{`
+        .dialog {
+          position: absolute;
+          bottom: ${layout.spacingSmall};
+          left: 50%;
+          transform: translateX(-50%);
+          white-space: nowrap;
+        }
+      `}</style>
+    </ModalGuidelineExample>
+  }
+  dont={
+    <div className="example">
+      <div className="background">
+        <ContentGridVisual />
+      </div>
+      <div className="fakeOverlay">
+        <Dialog disableFocusOnMount style={{ maxWidth: '70%' }}>
+          <Text.Heading>
+            <h3>Bookmark added</h3>
+          </Text.Heading>
+          <Text.P>
+            Oh joy! You have successfully added a new bookmark.
+          </Text.P>
+          <div style={{ textAlign: 'right' }}>
+            <Button>Ok, got it</Button>
+          </div>
+        </Dialog>
+      </div>
+      <style jsx>{`
+        .example {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          min-height: 400px;
+        }
+        .fakeOverlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .background {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          padding: ${layout.spacingXLarge};
+        }
+      `}</style>
+    </div>
+  }
+  dontStyle={{ padding: 0 }}
+/>
+
+Be explicit as possible when writing dialog buttons. Use affirmative action text to clearly indicate the outcome of the decision. [Material Design](https://material.io/guidelines/components/dialogs.html#dialogs-alerts)
+
+<Guideline
+  do={
+    <Dialog disableFocusOnMount>
+      <Text.Heading>
+        <h3>Delete record?</h3>
+      </Text.Heading>
+      <Text.P>
+        This action cannot be reversed. Are you sure you want to delete
+        this record?
+      </Text.P>
+      <div style={{ textAlign: 'right' }}>
+        <Button
+          appearance={Button.appearances.secondary}
+          style={{ marginRight: layout.spacingMedium }}
+        >
+          Delete
+        </Button>
+        <Button>Cancel</Button>
+      </div>
+    </Dialog>
+  }
+  dont={
+    <Dialog disableFocusOnMount>
+      <Text.Heading>
+        <h3>Delete record?</h3>
+      </Text.Heading>
+      <Text.P>
+        This action cannot be reversed. Are you sure you want to delete
+        this record?
+      </Text.P>
+      <div style={{ textAlign: 'right' }}>
+        <Button
+          appearance={Button.appearances.secondary}
+          style={{ marginRight: layout.spacingMedium }}
+        >
+          Yes
+        </Button>
+        <Button>No</Button>
+      </div>
+    </Dialog>
+  }
+/>
+
+
+## Usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-dialog"
+  import="import Dialog from '@pluralsight/ps-design-system-dialog'"
+  packageName="dialog"
+  />
+
+<Types.Table>
+  <Types.Prop name="aria-label" required type="string" desc="description of dialog purpose" />
+  <Types.Prop name="disableCloseButton" type="boolean" desc="removes close button UI" default="false" />
+  <Types.Prop name="disableCloseOnEscape" type="boolean" desc="prevents closing Dialog with escape key" default="false" />
+  <Types.Prop name="disableCloseOnOverlayClick" type="boolean" desc="prevents clicking modal overlay to close Dialog" default="false" />
+  <Types.Prop name="disableFocusOnMount" type="boolean" desc="prevents focus the Dialog on render" default="false" />
+  <Types.Prop name="modal" type="boolean" desc="makes Dialog modal" default="false" />
+  <Types.Prop name="onClose" type="Event => void" desc="callback to be called by various close methods" />
+  <Types.Prop name="tailPosition" type={<Types.Enum enum={Dialog.tailPositions} />} desc="positions a tail pointer (from Dialog.tailPositions)" />
+  <Types.Prop name="returnFocus" type="boolean" desc="manage focus; set focus on call where closed" default="true"/>
+</Types.Table>
+

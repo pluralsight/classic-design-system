@@ -1,0 +1,158 @@
+---
+name: Text Input
+route: /components/textinput
+---
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import { Intro, Types, Usage } from '../../components/component'
+
+# TextInput
+
+
+## Examples
+
+### Labels
+Primary identification of a text input comes through the `label`. Usage hints are given in the `placeholder`. Supporting text and error messaging is set in the `subLabel`.
+
+```typescript
+import React from 'react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TextInput label="First name" />
+    <TextInput label="First name" placeholder="Your given name" />
+    <TextInput
+      label="First name"
+      placeholder="Your given name"
+      subLabel="As you'd like printed on your badge"
+    />
+  </div>
+)
+
+export default Comp
+
+```
+
+### Icon
+
+Text Inputs may include an icon to the left or right of the field. Read more in the [icon docs](/components/icon).
+
+```typescript
+import React from 'react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import { SearchIcon } from '@pluralsight/ps-design-system-icon'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TextInput
+      icon={<SearchIcon />}
+      placeholder="Search"
+    />
+    <TextInput
+      icon={<SearchIcon />}
+      iconAlign={TextInput.iconAligns.right}
+      placeholder="Search"
+    />
+  </div>
+)
+
+export default Comp
+
+```
+
+### Appearance
+
+For a more subtle look, use `subtle` appearance. So subtle. (Switch theme to dark)
+
+```typescript
+import React from 'react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import { SearchIcon } from '@pluralsight/ps-design-system-icon'
+
+const Comp = () => (
+  <TextInput
+    appearance={TextInput.appearances.subtle}
+    icon={<SearchIcon />}
+    placeholder="Search"
+  />
+)
+
+export default Comp
+
+```
+
+### Disabled
+
+Disabled text inputs are unmodifiable and diminished visually.
+
+```typescript
+import React from 'react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+
+const Comp = () => (
+  <TextInput disabled label="Can't touch this" />
+)
+
+export default Comp
+
+```
+
+### Error
+
+Error states are engaged with the `error` flag. Error-related messaging is sent to the `subLabel` prop.
+
+```typescript
+import React from 'react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+
+const Comp = () => (
+  <TextInput error label="First name" subLabel="Field is required" />
+)
+
+export default Comp
+
+```
+
+### Size
+
+The small text input is ideal for usage within table rows otherwise use the default, medium size text input, in forms for example.
+
+```typescript
+import React from 'react'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TextInput
+      placeholder="medium text input"
+    />
+    <TextInput
+      placeholder="small text input"
+      size={TextInput.sizes.small}
+    />
+  </div>
+)
+
+export default Comp
+
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-textinput"
+  import="import TextInput from '@pluralsight/ps-design-system-textinput'"
+  packageName="textinput"
+/>
+
+<Types.Table>
+  <Types.Prop name="appearance" type={<Types.Enum enum={TextInput.appearances}/>} desc="visual style (from TextInput.appearances)"/>
+  <Types.Prop name="disabled" type="boolean" desc="standard input disable flag"/>
+  <Types.Prop name="error" type="boolean" desc="error state flag"/>
+  <Types.Prop name="icon" type="*Icon" desc="An Icon component"/>
+  <Types.Prop name="iconAlign" type={<Types.Enum enum={TextInput.iconAligns}/>} desc="horizontal icon placement (from TextInput.iconAligns)"/>
+  <Types.Prop name="label" type="string" desc="identifying string for input"/>
+  <Types.Prop name="placeholder" type="string" desc="in-field usage hint"/>
+  <Types.Prop name="ref" type="Ref || { field: Ref,input: Ref, }" desc="refs to access underlying elements"/>
+  <Types.Prop name="size" type={<Types.Enum enum={TextInput.sizes}/>} desc="horizontal icon placement (from TextInput.sizes)"/>
+  <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging"/>
+</Types.Table>

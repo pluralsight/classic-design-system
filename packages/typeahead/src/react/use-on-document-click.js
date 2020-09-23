@@ -1,6 +1,5 @@
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-
-import { canUseDOM } from './utils.js'
 
 const isBrowser = canUseDOM()
 

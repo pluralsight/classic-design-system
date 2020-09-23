@@ -1,0 +1,79 @@
+---
+name: Page heading layout
+route: /components/layout-page-heading
+---
+
+import { Types, Usage } from '../../components/component'
+
+# Page heading layout
+
+Start your layout with this default template of, `PageHeadingLayout` nested in
+`PageWidthLayout`, to achieve standard outer spacing and title style.
+
+If you're using `actions`, be sure to stay limited to a small number of
+items (ie, 2-3).
+
+```typescript
+import { colorsBlue, layout } from '@pluralsight/ps-design-system-core'
+import Button from '@pluralsight/ps-design-system-button'
+import { PageHeadingLayout, PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import { Heading, P } from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <PageWidthLayout>
+        <PageHeadingLayout
+          actions={[
+            <Button key="btn-1" appearance={Button.appearances.stroke}>Button</Button>,
+            <Button key="btn-2">Button</Button>
+          ]}
+          heading={(
+            <Heading size={Heading.sizes.large}>
+              <h2>Page title</h2>
+            </Heading>
+          )}
+        >
+          <div className="outline">
+            <P>Your page contents here</P>
+          </div>
+        </PageHeadingLayout>
+      </PageWidthLayout>
+
+      <style jsx>{`
+        .outline {
+          border: 2px dashed ${colorsPink[6]};
+          min-height: 150px;
+          padding: ${layout.spacingSmall} 0;
+        }
+      `}</style>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout"
+  packageName="layout"
+/>
+
+<Types.Table>
+  <Types.Prop
+    name="actions"
+    type="React.ReactNode[]"
+    desc="actionable elements to place in the top-right"
+  />
+  <Types.Prop
+    name="heading"
+    type="React.ReactNode"
+    desc="heading element to display as page title"
+    required
+  />
+</Types.Table>
