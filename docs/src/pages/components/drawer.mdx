@@ -1,0 +1,194 @@
+---
+name: Drawer
+route: /components/drawer
+---
+
+import Drawer from '@pluralsight/ps-design-system-drawer'
+
+import { Types, Usage } from '../../components/component'
+
+# Drawer
+
+## Examples
+
+### Adaptive size
+
+A drawer as well as its expanded region can be wrapped around other components and adapt to their size.
+      
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
+import Row from '@pluralsight/ps-design-system-row'
+import React from 'react'
+
+function Example() {
+  return <>
+    <Drawer base={<ExampleDrawerBase />}>
+      <ExampleDrawerPanel />
+    </Drawer>
+    <Drawer startOpen base={<ExampleDrawerBase />}>
+      <ExampleDrawerPanel />
+    </Drawer>
+  </>
+}
+
+export default Example
+
+const ExampleDrawerBase = () => (
+  <div>
+    <Row
+      title="Building a Web App with ASP.NET Core"
+      progress={18}
+      metadata1={['Joe Eames', 'Intermediate', 'Jul 21, 2016']}
+      image={<div className="image-placeholder" />}
+    />
+    <style jsx>{`
+      .image-placeholder {
+        width: 100%;
+        height: 100%;
+        background: ${colorsBackgroundDark[3]};
+      }
+    `}</style>
+  </div>
+)
+
+const ExampleDrawerPanel = () => (
+  <div className="drawer-panel-example">
+    <Row
+      title="Course Overview"
+      metadata1={['1m 46s']}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<BookmarkIcon />}
+          key="bookmark"
+        />
+      ]}
+      size={Row.sizes.small}
+      actionBarVisible
+    />
+    <Row
+      title="What is ASP.NET Core?"
+      metadata1={['39m 28s']}
+      actionBar={[
+        <Button
+          size={Button.sizes.small}
+          appearance={Button.appearances.flat}
+          icon={<BookmarkIcon />}
+          key="bookmark"
+        />
+      ]}
+      size={Row.sizes.small}
+      actionBarVisible
+    />
+    <style jsx>{`
+      .drawer-panel-example {
+        padding: ${layout.spacingXLarge} ${layout.spacingXLarge}
+          ${layout.spacingMedium} ${layout.spacingXLarge};
+      }
+    `}</style>
+  </div>
+)
+```
+
+### Drawer base
+
+The DrawerBase may expand to fit any elements, and includes the mechanism to expose the DrawerPanel.
+
+```typescript
+import { colorsPink, type } from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
+import Row from '@pluralsight/ps-design-system-row'
+import React from 'react'
+
+function Example() {
+  return <Drawer startOpen base={<PinkBox>DrawerBase</PinkBox>}>
+    <div style={{ height: 128 }} />
+  </Drawer>
+}
+
+export default Example
+
+const PinkBox = props => (
+  <div
+    className="pink-box"
+    style={{ height: props.children === 'DrawerBase' ? 100 : 128 }}
+  >
+    <span>{`<${props.children}>`}</span>
+    <style jsx>{`
+      .pink-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed ${colorsPink[6]};
+        color: ${colorsPink[6]};
+        font-size: 16px;
+        font-family: ${type.fontFamilyCode};
+      }
+    `}</style>
+  </div>
+)
+```
+
+### Drawer panel
+
+The DrawerPanel may expand to fit any elements. No default spacing is built in.
+      
+```typescript
+import { colorsPink, type } from '@pluralsight/ps-design-system-core'
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
+import Row from '@pluralsight/ps-design-system-row'
+import React from 'react'
+
+function Example() {
+  return <Drawer startOpen base={<div style={{ height: 100 }} />}>
+    <PinkBox>DrawerPanel</PinkBox>
+  </Drawer>
+}
+
+export default Example
+
+const PinkBox = props => (
+  <div
+    className="pink-box"
+    style={{ height: props.children === 'DrawerBase' ? 100 : 128 }}
+  >
+    <span>{`<${props.children}>`}</span>
+    <style jsx>{`
+      .pink-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed ${colorsPink[6]};
+        color: ${colorsPink[6]};
+        font-size: 16px;
+        font-family: ${type.fontFamilyCode};
+      }
+    `}</style>
+  </div>
+)
+```
+
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-drawer"
+  import="import Drawer from '@pluralsight/ps-design-system-drawer'"
+  packageName="drawer"
+  />
+
+<Types.Table>
+  <Types.Prop name="base" required type="React.ReactNode" desc="content the drawer slides out from" />
+  <Types.Prop name="children" type="React.ReactNode" desc="content inside the drawer" />
+  <Types.Prop name="isOpen" type="boolean" desc="override for controlling internal drawer state" />
+  <Types.Prop name="onToggle" type="(boolean, Event) => void" desc="triggered when the drawer opens or closes" />
+  <Types.Prop name="startOpen" type="boolean" desc="drawer is open on first render" default="false" />
+  <Types.Prop name="toggleButtonAriaLabel" type="string" desc="custom label for drawer toggle for screenreaders" />
+</Types.Table>
+

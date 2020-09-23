@@ -170,6 +170,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/drawer',
+        title: 'Drawer'
+      },
+      {
         href: '/components/datawell',
         title: 'Data well'
       },
