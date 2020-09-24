@@ -298,6 +298,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/featureflags',
+        title: 'Feature flags'
+      },
+      {
         href: '/components/screenreaderonly',
         title: 'Screen reader only'
       },
