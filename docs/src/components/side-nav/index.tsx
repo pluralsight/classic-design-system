@@ -183,8 +183,16 @@ const items = [
         title: 'Radio'
       },
       {
+        href: '/components/searchinput',
+        title: 'Search Input'
+      },
+      {
         href: '/components/switch',
         title: 'Switch'
+      },
+      {
+        href: '/components/textarea',
+        title: 'Text Area'
       },
       {
         href: '/components/textinput',
