@@ -82,6 +82,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/appframe',
+        title: 'App frame'
+      },
+      {
         href: '/components/layout-page-heading',
         title: 'Page heading'
       },
@@ -301,6 +305,10 @@ const items = [
       title: 'Utility'
     },
     items: [
+      {
+        href: '/components/featureflags',
+        title: 'Feature flags'
+      },
       {
         href: '/components/screenreaderonly',
         title: 'Screen reader only'
