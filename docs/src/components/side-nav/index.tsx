@@ -82,6 +82,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/appframe',
+        title: 'App frame'
+      },
+      {
         href: '/components/layout-page-heading',
         title: 'Page heading'
       },
