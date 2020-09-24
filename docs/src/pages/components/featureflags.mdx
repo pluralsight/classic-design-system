@@ -1,0 +1,117 @@
+---
+name: Feature flags
+route: /components/featureflags
+---
+
+import { Intro, Types, Usage } from '../../components/component'
+
+# Feature flags
+
+<Intro>
+  We favor the use of feature flags when a UI change should be released
+  uniformly across the product. This allows teams to independently develop
+  and deploy.
+</Intro>
+
+## Examples
+
+Certain Design System components may need to react to feature flags. Watch for
+messaging in the `#design-system` channel for when feature flags are in active
+use. Product dev teams will need to request flags from the flag provider as
+they normally do. Then feed them to the Design System in this manner.
+
+Import the `FeatureFlags` React context provider:
+
+```typescript noRender startExpanded
+import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
+```
+
+And wrap all your Design System code in this provider.
+
+```typescript noRender startExpanded
+import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
+import React from 'react'
+
+import { ComponentUsingFlags } from './some/component/path'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <FeatureFlags flags={{}}>
+        <ComponentUsingFlags>Original style</ComponentUsingFlags>
+      </FeatureFlags>
+
+      <FeatureFlags flags={{ usingNewStyle: true }}>
+        <ComponentUsingFlags>New style</ComponentUsingFlags>
+      </FeatureFlags>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### As a utility component
+
+You may also find that you can use the Feature Flags component generally as a
+utility for your own code.
+
+Import the `useFeatureFlags` React hook to consume the feature Flags
+
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { colorsBlue, colorsOrange } from '@pluralsight/ps-design-system-core'
+import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
+import React, { HTMLAttributes, useState } from 'react'
+
+type Flag = { [name:string]: string | boolean | number }
+
+const Example: React.FC = () => {
+  const [flags, setFlags] = useState<Flag[]>({ usingNewStyle: true })
+  const toggle = () => { setFlags({ usingNewStyle: !flags.usingNewStyle }) }
+
+  return (
+    <FeatureFlags flags={flags}>
+      <ComponentUsingFlags onClick={toggle} />
+    </FeatureFlags>
+  )
+}
+
+const ComponentUsingFlags: React.FC<HTMLAttributes<HTMLButtonElement>> = props => {
+  const { flags: { usingNewStyle} } = useFeatureFlags()
+
+  const background = usingNewStyle ? colorsBlue[6] : colorsOrange[6]
+
+  return (
+    <Button style={{ background }} {...props}>
+      {usingNewStyle ? 'new style' : 'old style' }
+    </Button>
+  )
+}
+
+export default Example
+```
+
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-featureflags"
+  import="import FeatureFlags from '@pluralsight/ps-design-system-featureflags'"
+  packageName="featureflags"
+/>
+
+<Types.Table>
+  <Types.Prop
+    name="children"
+    type="React.ReactNode"
+    desc="children that need this context"
+  />
+  <Types.Prop
+    name="flags"
+    type="{ [name:string]: string | boolean | number }[]"
+    desc="dictionary of flag names and values"
+    default="{}"
+  />
+</Types.Table>

@@ -82,6 +82,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/appframe',
+        title: 'App frame'
+      },
+      {
         href: '/components/layout-page-heading',
         title: 'Page heading'
       },
@@ -241,6 +245,10 @@ const items = [
         title: 'Carousel'
       },
       {
+        href: '/components/row',
+        title: 'Row'
+      },
+      {
         href: '/components/note',
         title: 'Note'
       }
@@ -279,6 +287,10 @@ const items = [
         title: 'Circular progress'
       },
       {
+        href: '/components/dialog',
+        title: 'Dialog'
+      },
+      {
         href: '/components/errors',
         title: 'Error pages'
       },
@@ -301,6 +313,10 @@ const items = [
       title: 'Utility'
     },
     items: [
+      {
+        href: '/components/featureflags',
+        title: 'Feature flags'
+      },
       {
         href: '/components/screenreaderonly',
         title: 'Screen reader only'

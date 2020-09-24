@@ -1,3 +1,4 @@
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import cx from 'classnames'
@@ -11,6 +12,7 @@ import { darkTheme, lightTheme } from './theme'
 interface EditorProps {
   children: string
   expanded: boolean
+  onClick: (event: Event) => void
 }
 export const Editor: React.FC<EditorProps> = props => {
   const context = useContext(CodeBlockContext)
@@ -43,7 +45,19 @@ export const Editor: React.FC<EditorProps> = props => {
                 ))}
               </div>
             ))}
-            {!props.expanded && <div className={styles.editorFade} />}
+            {!props.expanded && (
+              <>
+                <button
+                  className={styles.clickToExpand}
+                  onClick={() => {
+                    if (!props.expanded) props.onClick()
+                  }}
+                >
+                  <ScreenReaderOnly>Click to expand</ScreenReaderOnly>
+                </button>
+                <div className={styles.editorFade} />
+              </>
+            )}
           </pre>
         )
       }}
