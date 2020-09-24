@@ -14,7 +14,7 @@ export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => {
   return (
     <DSLink>
       {isExternal ? (
-        <a {...props} />
+        <a {...props} rel="noopener noreferrer" />
       ) : (
         <GatsbyLink {...props} to={props.href} />
       )}
