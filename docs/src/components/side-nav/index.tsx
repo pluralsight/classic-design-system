@@ -167,6 +167,10 @@ const items = [
         title: 'Date picker'
       },
       {
+        href: '/components/form',
+        title: 'Form'
+      },
+      {
         href: '/components/dropdown',
         title: 'Select(Dropdown)'
       },
@@ -223,6 +227,10 @@ const items = [
       {
         href: '/components/datawell',
         title: 'Data well'
+      },
+      {
+        href: '/components/emptystate',
+        title: 'Empty state'
       },
       {
         href: '/components/card',
