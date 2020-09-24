@@ -1,0 +1,506 @@
+---
+name: Row
+route: /components/row
+---
+
+import Row from '@pluralsight/ps-design-system-row'
+
+import { Types, Usage } from '../../components/component'
+
+# Row
+
+## Examples
+
+### Flexibility
+
+The row is a flexible component that will expand to fit the container it's in. The height and width will grow indefinitely. Define your own constrains with parent elements
+
+```typescript
+import Row from '@pluralsight/ps-design-system-row'
+import Button from '@pluralsight/ps-design-system-button'
+import { BookmarkIcon, MoreIcon, PlayCircleIcon } from '@pluralsight/ps-design-system-icon'
+
+function Example() {
+  return (
+    <>
+      <Row
+        fullOverlay={
+          <Row.FullOverlayLink>
+            <a href="#"><PlayCircleIcon size="large" style={{ color: '#fff' }}/></a>
+          </Row.FullOverlayLink>
+        }
+        title=<Row.TextLink>
+          <a href="https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents">Angular: Getting Started</a>
+        </Row.TextLink>
+        progress={0}
+        image={
+          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-2-getting-started-update-v1.jpg" />
+        }
+        metadata1={[
+          <Row.TextLink><a href="#">Deborah Kurata</a></Row.TextLink>,
+          'Beginner',
+          'Aug 5, 2020'
+        ]}
+        actionBar={[
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="bookmark"
+            icon={<BookmarkIcon />}
+          />,
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="more"
+            icon={<MoreIcon />}
+          />
+        ]}
+        actionBarVisible
+      />
+      <Row
+      fullOverlay={
+        <Row.FullOverlayLink>
+          <a href="#"><PlayCircleIcon size="large" style={{ color: '#fff' }}/></a>
+        </Row.FullOverlayLink>
+      }
+        title={<Row.TextLink>
+          <a href="https://app.pluralsight.com/library/courses/csharp-fundamentals-dev/table-of-contents">C# Fundamentals</a>
+        </Row.TextLink>}
+        progress={20}
+        image={
+          <Row.Image src="https://pluralsight.imgix.net/course-images/csharp-fundamentals-dev-v1.png" />
+        }
+        metadata1={[
+          <Row.TextLink><a href="#">Scott Allen</a></Row.TextLink>,
+          'Beginner',
+          'Apr 15 2020'
+        ]}
+        actionBar={[
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="bookmark"
+            icon={<BookmarkIcon />}
+          />,
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="more"
+            icon={<MoreIcon />}
+          />
+        ]}
+        actionBarVisible
+      />
+      <Row
+      fullOverlay={
+        <Row.FullOverlayLink>
+          <a href="#"><PlayCircleIcon size="large" style={{ color: '#fff' }}/></a>
+        </Row.FullOverlayLink>
+      }
+        title={
+          <Row.TextLink>
+            <a href="https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents">
+              Angular Fundamentals
+            </a>
+          </Row.TextLink>
+        }
+        progress={67}
+        image={
+          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-fundamentals-v1.jpg" />
+        }
+        metadata1={[
+          <Row.TextLink><a href="#">Joe Eames, Jim Cooper</a></Row.TextLink>,
+          'Intermediate',
+          'Jan 31, 2019'
+        ]}
+        actionBar={[
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="bookmark"
+            icon={<BookmarkIcon />}
+          />,
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="more"
+            icon={<MoreIcon />}
+          />
+        ]}
+        actionBarVisible
+      />
+      <Row
+      fullOverlay={
+        <Row.FullOverlayLink>
+          <a href="#"><PlayCircleIcon size="large" style={{ color: '#fff' }}/></a>
+        </Row.FullOverlayLink>
+      }
+        title=
+        {
+          <Row.TextLink>
+            <a href="https://app.pluralsight.com/library/courses/getting-started-python-core/table-of-contents">
+              Core Python: Getting Started
+            </a>
+          </Row.TextLink>
+        }
+        progress={100}
+        metadata1={[
+          <Row.TextLink><a href="#">Robert Smallshire</a></Row.TextLink>,
+          'Beginner',
+          'Dec 11, 2019'
+        ]}
+        image={
+          <Row.Image src="https://pluralsight.imgix.net/course-images/getting-started-python-core-v1.png" />
+        }
+        actionBar={[
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="bookmark"
+            icon={<BookmarkIcon />}
+          />,
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="more"
+            icon={<MoreIcon />}
+          />
+        ]}
+        actionBarVisible
+      />
+    </>
+  )
+}
+export default Example
+```
+
+### Size
+
+The size will determine certain base measurements.
+
+```typescript
+import Row from '@pluralsight/ps-design-system-row'
+import Button from '@pluralsight/ps-design-system-button'
+
+function Example() {
+  return (
+    <>
+      <Row
+        size={Row.sizes.medium}
+        title="Medium Row"
+        metadata1={['Jim Cooper']}
+        image={
+          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-2-getting-started-update-v1.jpg" />
+        }
+      />
+      <Row
+        size={Row.sizes.small}
+        title="Small Row"
+        metadata1={['Jim Cooper']}
+        image={
+          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-2-getting-started-update-v1.jpg" />
+        }
+      />
+    </>
+  )
+}
+export default Example
+```
+
+### Image
+
+The image will cover the image area given. Image dimensions outside of this space will be clipped.
+
+```typescript
+import Row from '@pluralsight/ps-design-system-row'
+import Button from '@pluralsight/ps-design-system-button'
+
+function Example() {
+  return (
+    <>
+      <Row
+        image={<Row.Image src="http://via.placeholder.com/350x150" />}
+        title="Wide image"
+      />
+      <Row
+        image={<Row.Image src="http://via.placeholder.com/200x400" />}
+        title="Tall image"
+      />
+    </>
+  )
+}
+export default Example
+```
+
+### Progress
+
+Progress, if given, should be a number between 0 and 100 that describes the completion level of the content represented on the row.
+
+```typescript
+import Row from '@pluralsight/ps-design-system-row'
+import Button from '@pluralsight/ps-design-system-button'
+
+function Example() {
+  return (
+    <>
+      <Row
+        progress={0}
+        title="0% progress"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        progress={25}
+        title="25% progress"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        progress={66.6666667}
+        title="6.6666667% progress"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        progress={100}
+        title="100% progress"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+    </>
+  )
+}
+export default Example
+```
+
+### Title
+
+The title can be a string or a link.
+
+The title will grow indefinitely without truncating unless you use the `titleTruncated` prop which will limit the title to two lines.
+
+```typescript
+import Row from '@pluralsight/ps-design-system-row'
+import Button from '@pluralsight/ps-design-system-button'
+
+function Example() {
+  return (
+    <>
+      <Row
+        title={
+          <Row.TextLink>
+            <a>Linked Title</a>
+          </Row.TextLink>
+        }
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        title="Untruncated Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        title={
+          <Row.TextLink>
+            <a>
+              Linked and Truncated Super Long Title of the Technology of the
+              Century as Brought to You By Tech Groupsoft in the Stunning Desert
+              of British Lithuania
+            </a>
+          </Row.TextLink>
+        }
+        titleTruncated
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+    </>
+  )
+}
+export default Example
+```
+
+### Metadata
+
+Metadata is free-form strings or displayable elements like links. Each bit of metadata is separated by an interpunct.
+
+Metadata is constrained to a single line, overflowing with an ellipsis indicated. The first datum is given display space precedence.
+
+Metadata can be strings or links, defined by the `Row.TextLink` subcomponent.
+
+```typescript
+import Row from '@pluralsight/ps-design-system-row'
+import Button from '@pluralsight/ps-design-system-button'
+
+function Example() {
+  return (
+    <>
+      <Row
+        metadata1={['Simon Allardice']}
+        title="Row Title"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        metadata1={['Simon Allardice']}
+        metadata2={['Intermediate', '2h 20m', 'July 24, 1847']}
+        title="Row with Two Lines of Meta"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        metadata1={[
+          <Row.TextLink>
+            <a href="https://google.com?query=simon%20allardice">
+              The Honorable Simon Allardice Hailing From Shores Abroad
+            </a>
+          </Row.TextLink>
+        ]}
+        metadata2={[
+          'Only about the Best Level in the World for Learning',
+          '2h 20m or longer depending',
+          "July 24, 1847 or year thereabouts, it's unclear"
+        ]}
+        title="Super-long Metadata"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+    </>
+  )
+}
+export default Example
+```
+
+### Action bar
+
+The action bar contains the on-row affordances a user can take besides linking straight to the content. These are usually buttons.
+
+```typescript
+import Row from '@pluralsight/ps-design-system-row'
+import Button from '@pluralsight/ps-design-system-button'
+import { BookmarkIcon, MoreIcon } from '@pluralsight/ps-design-system-icon'
+
+function Example() {
+  return (
+    <>
+      <Row
+        actionBar={[
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="bookmark"
+            icon={<BookmarkIcon />}
+          />
+        ]}
+        title="Action bar appears on hover"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        actionBar={[
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="bookmark"
+            icon={<BookmarkIcon />}
+          />,
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="more"
+            icon={<MoreIcon />}
+          />
+        ]}
+        title="Multiple actions"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+      <Row
+        actionBar={[
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="bookmark"
+            icon={<BookmarkIcon />}
+          />,
+          <Button
+            size={Button.sizes.small}
+            appearance={Button.appearances.flat}
+            key="more"
+            icon={<MoreIcon />}
+          />
+        ]}
+        actionBarVisible
+        title="Action bar locked visible"
+        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+      />
+    </>
+  )
+}
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-row"
+  import="import Row from '@pluralsight/ps-design-system-row'"
+  packageName="row"
+/>
+
+### Row
+
+<Types.Table>
+  <Types.Prop
+    name="actionBar"
+    type="Row.Action[]"
+    desc="top-right action buttons"
+  />
+  <Types.Prop
+    name="actionBarVisible"
+    type="boolean"
+    desc="lock action bar on"
+    default="false"
+  />
+  <Types.Prop
+    name="fullOverlay"
+    type="Row.FullOverlayLink"
+    desc="hover state for image"
+  />
+  <Types.Prop
+    name="fullOverlayVisible"
+    type="boolean"
+    desc="lock full overlay on"
+    default="false"
+  />
+  <Types.Prop
+    name="image"
+    required
+    type="Row.Image | Row.ImageLink > a > Row.Image"
+    desc="main image or linked image"
+  />
+  <Types.Prop
+    name="metadata1"
+    type="string[] | React.ReactNode[]"
+    desc="first row of metadata"
+  />
+  <Types.Prop
+    name="metadata2"
+    type="string[] | React.ReactNode[]"
+    desc="second row of metadata"
+  />
+  <Types.Prop name="progress" type="number" desc="progress 0-100" />
+  <Types.Prop
+    name="size"
+    type={<Types.Enum enum={Row.sizes} />}
+    desc="size of row (from Row.sizes)"
+    default="medium"
+  />
+  <Types.Prop
+    name="title"
+    required
+    type="Row.TextLink > a > Row.Title | Row.Title"
+    desc="row title or linked title"
+  />
+  <Types.Prop
+    name="titleTruncated"
+    required
+    type="boolean"
+    desc="limit title to 2 lines"
+    default="false"
+  />
+</Types.Table>
+
+### Row.Image
+
+<Types.Table>
+  <Types.Prop name="src" required type="string" desc="image url" />
+</Types.Table>

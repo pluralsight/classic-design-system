@@ -1,18 +1,36 @@
 import { MDXProvider as BaseProvider } from '@mdx-js/react'
-import Link from '@pluralsight/ps-design-system-link'
+import DSLink from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import cx from 'classnames'
+import { Link as GatsbyLink } from 'gatsby'
 import React, { HTMLAttributes } from 'react'
 
 import { CodeBlock } from '../code-block'
 
 import * as styles from './index.module.css'
 
-export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => (
-  <Link>
-    <a {...props} />
-  </Link>
-)
+export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => {
+  const isExternal = /http/.test(props.href)
+  return (
+    <DSLink>
+      {isExternal ? (
+        <a {...props} rel="noopener noreferrer" />
+      ) : (
+        <GatsbyLink {...props} to={props.href} />
+      )}
+    </DSLink>
+  )
+}
+
+export const BlockQuote: React.FC<HTMLAttributes<HTMLQuoteElement>> = props => {
+  const className = cx(styles.blockquote, props.className)
+
+  return (
+    <blockquote className={className}>
+      <Text.P>{props.children}</Text.P>
+    </blockquote>
+  )
+}
 
 export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   const className = cx(styles.h1, props.className)
@@ -54,6 +72,7 @@ export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = props => (
 
 const components = {
   a: A,
+  blockquote: BlockQuote,
   code: CodeBlock,
   h1: H1,
   h2: H2,

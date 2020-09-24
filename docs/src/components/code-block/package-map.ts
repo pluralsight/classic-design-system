@@ -20,9 +20,11 @@ import Dropdown, {
 } from '@pluralsight/ps-design-system-dropdown'
 import EmptyState from '@pluralsight/ps-design-system-emptystate'
 import * as Errors from '@pluralsight/ps-design-system-errors'
-import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
+import FeatureFlags, {
+  useFeatureFlags
+} from '@pluralsight/ps-design-system-featureflags'
 import Form from '@pluralsight/ps-design-system-form'
-import * as Icon from '@pluralsight/ps-design-system-icon'
+import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout'
 import LinearProgress from '@pluralsight/ps-design-system-linearprogress'
 import Link from '@pluralsight/ps-design-system-link'
@@ -85,9 +87,12 @@ export const PACKAGE_MAP: PackageMap = {
   },
   '@pluralsight/ps-design-system-emptystate': { EmptyState },
   '@pluralsight/ps-design-system-errors': { ...omit(Errors, ['default']) },
-  '@pluralsight/ps-design-system-featureflags': { FeatureFlags },
+  '@pluralsight/ps-design-system-featureflags': {
+    FeatureFlags,
+    useFeatureFlags
+  },
   '@pluralsight/ps-design-system-form': { Form },
-  '@pluralsight/ps-design-system-icon': { ...omit(Icon, ['default']) },
+  '@pluralsight/ps-design-system-icon': { Icon, ...omit(Icons, ['default']) },
   '@pluralsight/ps-design-system-layout': { ...omit(Layout, ['default']) },
   '@pluralsight/ps-design-system-linearprogress': { LinearProgress },
   '@pluralsight/ps-design-system-link': { Link },

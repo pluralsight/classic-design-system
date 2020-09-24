@@ -82,6 +82,26 @@ const items = [
     },
     items: [
       {
+        href: '/components/appframe',
+        title: 'App frame'
+      },
+      {
+        href: '/components/layout-page-heading',
+        title: 'Page heading'
+      },
+      {
+        href: '/components/layout-page-width',
+        title: 'Page width'
+      },
+      {
+        href: '/components/layout-aside',
+        title: 'Aside'
+      },
+      {
+        href: '/components/layout-column',
+        title: 'Column'
+      },
+      {
         href: '/components/errors',
         title: 'Error pages'
       }
@@ -124,6 +144,14 @@ const items = [
         title: 'Button'
       },
       {
+        href: '/components/link',
+        title: 'Link'
+      },
+      {
+        href: '/components/tag',
+        title: 'Tag'
+      },
+      {
         href: '/components/viewtoggle',
         title: 'View toggle'
       }
@@ -163,8 +191,31 @@ const items = [
         title: 'Text Area'
       },
       {
+        href: '/components/textinput',
+        title: 'Text Input'
+      },
+      {
         href: '/components/typeahead',
         title: 'Typeahead'
+      }
+    ]
+  },
+  {
+    header: {
+      title: 'Text'
+    },
+    items: [
+      {
+        href: '/components/text-headings',
+        title: 'Headings'
+      },
+      {
+        href: '/components/text-paragraph',
+        title: 'Paragraph'
+      },
+      {
+        href: '/components/text-lists',
+        title: 'Lists'
       }
     ]
   },
@@ -173,6 +224,14 @@ const items = [
       title: 'Lists & Tables'
     },
     items: [
+      {
+        href: '/components/table',
+        title: 'Table'
+      },
+      {
+        href: '/components/drawer',
+        title: 'Drawer'
+      },
       {
         href: '/components/datawell',
         title: 'Data well'
@@ -184,6 +243,14 @@ const items = [
       {
         href: '/components/carousel',
         title: 'Carousel'
+      },
+      {
+        href: '/components/row',
+        title: 'Row'
+      },
+      {
+        href: '/components/note',
+        title: 'Note'
       }
     ]
   },
@@ -195,6 +262,10 @@ const items = [
       {
         href: '/components/avatar',
         title: 'Avatar'
+      },
+      {
+        href: '/components/icon',
+        title: 'Icon'
       }
     ]
   },
@@ -216,8 +287,16 @@ const items = [
         title: 'Circular progress'
       },
       {
+        href: '/components/dialog',
+        title: 'Dialog'
+      },
+      {
         href: '/components/errors',
         title: 'Error pages'
+      },
+      {
+        href: '/components/linearprogress',
+        title: 'Linear progress'
       },
       {
         href: '/components/starrating',
@@ -235,8 +314,20 @@ const items = [
     },
     items: [
       {
+        href: '/components/featureflags',
+        title: 'Feature flags'
+      },
+      {
+        href: '/components/screenreaderonly',
+        title: 'Screen reader only'
+      },
+      {
         href: '/components/theme',
         title: 'Theme'
+      },
+      {
+        href: '/components/scrollable',
+        title: 'Scrollable'
       }
     ]
   }

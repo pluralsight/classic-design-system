@@ -1,3 +1,4 @@
+export { A } from './mdx'
 export { Guideline } from './guidelines/guideline'
 export { Intro } from './intro'
 export * as Types from './types'

@@ -1,0 +1,107 @@
+---
+name: Aside layout
+route: /components/layout-aside
+---
+
+import { AsideLayout } from '@pluralsight/ps-design-system-layout'
+
+import { Types, Usage } from '../../components/component'
+
+# Aside layout
+
+Use this layout for any 1/4, 3/4-proportioned layouts.
+
+```typescript
+import { colorsBlue, colorsTextIcon, type, layout } from '@pluralsight/ps-design-system-core'
+import { AsideLayout } from '@pluralsight/ps-design-system-layout'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <AsideLayout
+          aside={
+            <AsideLayout.Aside>
+              <BlueBox>A</BlueBox>
+            </AsideLayout.Aside>
+          }
+          main={
+            <AsideLayout.Main>
+              <BlueBox>B</BlueBox>
+            </AsideLayout.Main>
+          }
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <AsideLayout
+          aside={
+            <AsideLayout.Aside>
+              <BlueBox>C</BlueBox>
+            </AsideLayout.Aside>
+          }
+          asidePosition={AsideLayout.asidePositions.last}
+          main={
+            <AsideLayout.Main>
+              <BlueBox>D</BlueBox>
+            </AsideLayout.Main>
+          }
+        />
+      </div>
+    </React.Fragment>
+  )
+}
+
+const BlueBox: React.FC = props => (
+  <React.Fragment>
+    <div className="bluebox" {...props} />
+
+    <style jsx>{`
+      .bluebox {
+        align-items: center;
+        background: ${colorsBlue[6]};
+        color: ${colorsTextIcon.highOnDark};
+        display: flex;
+        font-weight: ${type.fontWeightBold};
+        height: ${layout.spacingLarge};
+        justify-content: center;
+      }
+    `}</style>
+  </React.Fragment>
+)
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { AsideLayout } from '@pluralsight/ps-design-system-layout'"
+  packageName="layout"
+/>
+
+<Types.Table>
+  <Types.Prop
+    name="aside"
+    type="AsideLayout.Aside"
+    desc="content for aside"
+    required
+  />
+  <Types.Prop
+    name="asidePosition"
+    type={<Types.Enum enum={AsideLayout.asidePositions} />}
+    desc="Aside position (from AsideLayout.asidePositions)"
+    default={AsideLayout.asidePositions.first}
+  />
+  <Types.Prop
+    name="main"
+    type="AsideLayout.Main"
+    desc="main content"
+    required
+  />
+</Types.Table>
+
