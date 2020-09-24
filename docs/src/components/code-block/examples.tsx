@@ -108,7 +108,9 @@ export const Example: React.FC<ExampleProps> = props => {
           </ActionsRight>
         </Actions>
 
-        <Editor expanded={expanded}>{props.code}</Editor>
+        <Editor expanded={expanded} onClick={toggleExpanded}>
+          {props.code}
+        </Editor>
       </div>
     </div>
   )
