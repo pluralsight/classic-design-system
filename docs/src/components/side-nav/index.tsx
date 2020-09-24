@@ -237,6 +237,10 @@ const items = [
         title: 'Carousel'
       },
       {
+        href: '/components/row',
+        title: 'Row'
+      },
+      {
         href: '/components/note',
         title: 'Note'
       }
