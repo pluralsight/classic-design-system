@@ -1,4 +1,5 @@
 @custom-media --breakpoint-small (width >= 768px);
+@custom-media --breakpoint-medium (width >= 1024px);
 
 /* TODO: create global vars file */
 :root {
@@ -35,6 +36,8 @@
 
   @media (--breakpoint-small) {
     margin-left: var(--asideWidth);
+  }
+  @media (--breakpoint-medium) {
     margin-right: var(--metaWidth);
   }
 }

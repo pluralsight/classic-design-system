@@ -1,11 +1,11 @@
-@custom-media --breakpoint-small (width >= 768px);
+@custom-media --breakpoint-medium (width >= 1024px);
 
 .toc {
   width: 240px;
   overflow: hidden;
   background: var(--bg);
 
-  @media (--breakpoint-small) {
+  @media (--breakpoint-medium) {
     position: fixed;
     top: calc(var(--topNavHeight) + var(--psLayoutSpacingLarge));
     right: var(--psLayoutSpacingLarge);
