@@ -14,7 +14,10 @@ COPY tsconfig.json /usr/src
 
 WORKDIR /usr/src/app
 
-RUN yarn --ignore-engines
+RUN yarn config set ignore-engines true
+RUN yarn --no-lockfile --production=false
+
+RUN yarn build
 
 # DOCKER STAGE: APP
 FROM node:11.4-alpine as app
