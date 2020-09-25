@@ -6,6 +6,7 @@ import { Link as GatsbyLink } from 'gatsby'
 import React, { HTMLAttributes } from 'react'
 
 import { CodeBlock } from '../code-block'
+import { TableOfContents } from '../table-of-contents'
 
 import * as styles from './index.module.css'
 
@@ -81,7 +82,8 @@ const components = {
   ol: Ol,
   p: Text.P,
   pre: props => <div {...props} />,
-  ul: Ul
+  ul: Ul,
+  TableOfContents
 }
 
 export const MDXProvider: React.FC = props => (

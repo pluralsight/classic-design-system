@@ -3,6 +3,7 @@
 /* TODO: create global vars file */
 :root {
   --asideWidth: 260px;
+  --metaWidth: 296px;
   --topNavHeight: 56px;
 }
 
@@ -34,5 +35,6 @@
 
   @media (--breakpoint-small) {
     margin-left: var(--asideWidth);
+    margin-right: var(--metaWidth);
   }
 }

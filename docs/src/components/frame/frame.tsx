@@ -80,7 +80,7 @@ export const Frame: React.FC<Props> = props => {
             <Main>
               <SkipTarget id={SKIP_TARGET_ID} ref={skipTargetRef} />
 
-              {children}
+              <article>{children}</article>
             </Main>
           </Container>
         </div>

@@ -1,0 +1,16 @@
+@custom-media --breakpoint-small (width >= 768px);
+
+.toc {
+  width: 240px;
+  overflow: hidden;
+  background: var(--bg);
+
+  @media (--breakpoint-small) {
+    position: fixed;
+    top: calc(var(--topNavHeight) + var(--psLayoutSpacingLarge));
+    right: var(--psLayoutSpacingLarge);
+  }
+}
+.title {
+  margin: var(--psLayoutSpacingLarge) 0 0 var(--psLayoutSpacingLarge);
+}
