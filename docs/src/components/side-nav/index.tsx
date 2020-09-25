@@ -63,6 +63,10 @@ const items = [
         title: 'Color'
       },
       {
+        href: '/core/iconography',
+        title: 'Iconography'
+      },
+      {
         href: '/core/typography',
         title: 'Typography'
       },
