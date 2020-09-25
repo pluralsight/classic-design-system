@@ -11,15 +11,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages/`
+        name: 'content',
+        path: `${__dirname}/src/content/`
       }
     },
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
         defaultLayouts: {
-          default: require.resolve('./src/components/layouts/default.tsx')
+          default: require.resolve('./src/templates/page.tsx')
         },
         gatsbyRemarkPlugins: [
           {
