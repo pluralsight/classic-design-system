@@ -1,7 +1,7 @@
 import { transform } from '@babel/core'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import cx from 'classnames'
-import { canUseDOM } from 'exenv'
 import { Language } from 'prism-react-renderer'
 import React, { HTMLAttributes, useContext } from 'react'
 import { LiveError, LiveProvider, LivePreview } from 'react-live'
