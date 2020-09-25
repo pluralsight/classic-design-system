@@ -29,13 +29,13 @@ export const Prop: React.FC<PropProps> = props => {
         </Table.Cell>
 
         <Table.Cell>
-          <Text.Code>{props.type}</Text.Code>
+          <code className={styles.typeCode}>{props.type}</code>
         </Table.Cell>
 
-        <Table.Cell>{props.desc}</Table.Cell>
+        <Table.Cell className={styles.desc}>{props.desc}</Table.Cell>
 
         <Table.Cell>
-          <Text.Code>{props.default}</Text.Code>
+          <code className={styles.defaultCode}>{props.default}</code>
         </Table.Cell>
       </Table.Row>
     </>

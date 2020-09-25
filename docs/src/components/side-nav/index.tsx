@@ -104,10 +104,6 @@ const items = [
       {
         href: '/components/layout-column',
         title: 'Column'
-      },
-      {
-        href: '/components/errors',
-        title: 'Error pages'
       }
     ]
   },
@@ -140,16 +136,16 @@ const items = [
     },
     items: [
       {
-        href: '/components/actionmenu',
-        title: 'Action Menu'
-      },
-      {
         href: '/components/button',
         title: 'Button'
       },
       {
         href: '/components/link',
         title: 'Link'
+      },
+      {
+        href: '/components/actionmenu',
+        title: 'Action Menu'
       },
       {
         href: '/components/tag',
@@ -167,40 +163,41 @@ const items = [
     },
     items: [
       {
-        href: '/components/checkbox',
-        title: 'Checkbox'
-      },
-      {
-        href: '/components/datepicker',
-        title: 'Date picker'
-      },
-      {
-        href: '/components/dropdown',
-        title: 'Select(Dropdown)'
-      },
-      {
-        href: '/components/radio',
-        title: 'Radio'
+        href: '/components/textinput',
+        title: 'Text Input'
       },
       {
         href: '/components/searchinput',
         title: 'Search Input'
       },
       {
-        href: '/components/switch',
-        title: 'Switch'
-      },
-      {
         href: '/components/textarea',
         title: 'Text Area'
       },
       {
-        href: '/components/textinput',
-        title: 'Text Input'
+        href: '/components/dropdown',
+        title: 'Dropdown'
       },
       {
         href: '/components/typeahead',
         title: 'Typeahead'
+      },
+      {
+        href: '/components/datepicker',
+        title: 'Date picker'
+      },
+      {
+        href: '/components/checkbox',
+        title: 'Checkbox'
+      },
+      {
+        href: '/components/radio',
+        title: 'Radio'
+      },
+
+      {
+        href: '/components/switch',
+        title: 'Switch'
       }
     ]
   },
@@ -233,24 +230,24 @@ const items = [
         title: 'Table'
       },
       {
-        href: '/components/drawer',
-        title: 'Drawer'
-      },
-      {
-        href: '/components/datawell',
-        title: 'Data well'
+        href: '/components/row',
+        title: 'Row'
       },
       {
         href: '/components/card',
         title: 'Card'
       },
       {
+        href: '/components/drawer',
+        title: 'Drawer'
+      },
+      {
         href: '/components/carousel',
         title: 'Carousel'
       },
       {
-        href: '/components/row',
-        title: 'Row'
+        href: '/components/datawell',
+        title: 'Data well'
       },
       {
         href: '/components/note',
@@ -283,12 +280,20 @@ const items = [
         title: 'Badge'
       },
       {
+        href: '/components/tooltip',
+        title: 'Tooltip'
+      },
+      {
         href: '/components/banner',
         title: 'Banner'
       },
       {
         href: '/components/circularprogress',
         title: 'Circular progress'
+      },
+      {
+        href: '/components/linearprogress',
+        title: 'Linear progress'
       },
       {
         href: '/components/dialog',
@@ -299,16 +304,8 @@ const items = [
         title: 'Error pages'
       },
       {
-        href: '/components/linearprogress',
-        title: 'Linear progress'
-      },
-      {
         href: '/components/starrating',
         title: 'Star rating'
-      },
-      {
-        href: '/components/tooltip',
-        title: 'Tooltip'
       }
     ]
   },

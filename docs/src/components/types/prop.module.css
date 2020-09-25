@@ -3,4 +3,14 @@
 }
 .nameCode {
   color: var(--psColorsPink6);
+  font-weight: var(--psTypeFontWeightBold);
+}
+.typeCode {
+  color: var(--psColorsBlue6);
+}
+.desc {
+  font-size: var(--psTypeFontSizeXSmall);
+}
+.defaultCode {
+  color: var(--psColorsBlue6);
 }
