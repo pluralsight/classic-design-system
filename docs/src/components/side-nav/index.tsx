@@ -163,6 +163,14 @@ const items = [
         title: 'Text Input'
       },
       {
+        href: '/components/searchinput',
+        title: 'Search Input'
+      },
+      {
+        href: '/components/textarea',
+        title: 'Text Area'
+      },
+      {
         href: '/components/dropdown',
         title: 'Dropdown'
       },
@@ -182,6 +190,7 @@ const items = [
         href: '/components/radio',
         title: 'Radio'
       },
+
       {
         href: '/components/switch',
         title: 'Switch'
