@@ -6,7 +6,11 @@ import { Link as GatsbyLink } from 'gatsby'
 import React, { HTMLAttributes } from 'react'
 
 import { CodeBlock } from '../code-block'
+import { Guideline } from '../guidelines'
+import { Intro } from '../intro'
 import { TableOfContents } from '../table-of-contents'
+import * as Types from '../types'
+import { Usage } from '../usage'
 
 import * as styles from './index.module.css'
 
@@ -73,17 +77,21 @@ export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = props => (
 
 const components = {
   a: A,
+  A,
   blockquote: BlockQuote,
   code: CodeBlock,
   h1: H1,
   h2: H2,
   h3: H3,
   inlineCode: Text.Code,
+  Intro,
   ol: Ol,
   p: Text.P,
   pre: props => <div {...props} />,
+  TableOfContents,
+  Types,
   ul: Ul,
-  TableOfContents
+  Usage
 }
 
 export const MDXProvider: React.FC = props => (
