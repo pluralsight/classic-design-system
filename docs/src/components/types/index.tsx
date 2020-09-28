@@ -1,3 +1,5 @@
-export { Enum } from './enum'
-export { Prop } from './prop'
-export { Table } from './table'
+import { Enum } from './enum'
+import { Prop } from './prop'
+import { Table } from './table'
+
+export default { Enum, Prop, Table }
