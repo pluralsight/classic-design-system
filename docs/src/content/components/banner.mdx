@@ -43,15 +43,15 @@ export default Example
 
 ### Banner
 
-<Types.Table>
-  <Types.Prop name="color" type={<Types.Enum enum={Banner.colors} />} desc="banner color (from Banner.colors)" default="blue" />
-  <Types.Prop name="onClick" type="Event => ()" desc="displays dismiss button, triggered on click" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="color" type={<TypesEnum enum={Banner.colors} />} desc="banner color (from Banner.colors)" default="blue" />
+  <TypesProp name="onClick" type="Event => ()" desc="displays dismiss button, triggered on click" />
+</TypesTable>
 
 ### Banner.Button
 
-<Types.Table>
-  <Types.Prop name="children" required type="string" desc="visual label" />
-  <Types.Prop name="href" type="string" />
-  <Types.Prop name="children" type="Event => ()" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" required type="string" desc="visual label" />
+  <TypesProp name="href" type="string" />
+  <TypesProp name="children" type="Event => ()" />
+</TypesTable>

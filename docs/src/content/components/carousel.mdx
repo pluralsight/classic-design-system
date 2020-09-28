@@ -482,25 +482,25 @@ The height of the carousel adapts to the height of the content it contains, but 
 
 ### Carousel
 
-<Types.Table>
-  <Types.Prop name="children" required type="React.ReactNode" desc="items to place in carousel" />
-  <Types.Prop name="size" type={<Types.Enum enum={Carousel.sizes}/>} desc="size of carousel items" default="medium" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" required type="React.ReactNode" desc="items to place in carousel" />
+  <TypesProp name="size" type={<TypesEnum enum={Carousel.sizes}/>} desc="size of carousel items" default="medium" />
+</TypesTable>
 
 ### Carousel.Controls
 
-<Types.Table>
-  <Types.Prop name="children" required type="React.ReactNode" desc="controls to advance carousel frames" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" required type="React.ReactNode" desc="controls to advance carousel frames" />
+</TypesTable>
 
 ### Carousel.Control
 
-<Types.Table>
-  <Types.Prop name="direction" required type={<Types.Enum enum={Carousel.Control.directions} />} desc="(from Carousel.Control.directions)" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="direction" required type={<TypesEnum enum={Carousel.Control.directions} />} desc="(from Carousel.Control.directions)" />
+</TypesTable>
 
 ### Carousel.Item
 
-<Types.Table>
-  <Types.Prop name="children" required type="React.ReactNode | () => React.ReactNode" desc="render prop used to access item and page metadata" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" required type="React.ReactNode | () => React.ReactNode" desc="render prop used to access item and page metadata" />
+</TypesTable>

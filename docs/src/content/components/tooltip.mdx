@@ -185,22 +185,22 @@ Use `accent` appearance to gain user attention in cases such onboarding, introdu
   packageName="tooltip"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="appearance"
-    type={<Types.Enum enum={Tooltip.appearances} />}
+    type={<TypesEnum enum={Tooltip.appearances} />}
     desc="visual style (from Tooltip.appearances)"
     default={Tooltip.appearances.basic}
   />
-  <Types.Prop
+  <TypesProp
     name="onClose"
     type="Event => ()"
     desc="displays a close button, triggered on click"
   />
-  <Types.Prop
+  <TypesProp
     name="tailPosition"
-    type={<Types.Enum enum={Tooltip.tailPositions} />}
+    type={<TypesEnum enum={Tooltip.tailPositions} />}
     desc="positions a tail pointer (from Tooltip.tailPositions)"
   />
-</Types.Table>
+</TypesTable>
 

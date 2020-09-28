@@ -80,18 +80,18 @@ export default Example
   packageName="layout"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="count"
-    type={<Types.Enum enum={EqualColumnLayout.counts} />}
+    type={<TypesEnum enum={EqualColumnLayout.counts} />}
     desc="number of columns in a row at full width"
     default={EqualColumnLayout.counts.four}
   />
-  <Types.Prop
+  <TypesProp
     name="children"
     type="single parent el | children array"
     desc="children must accept data-css-* props"
     default="div"
   />
-</Types.Table>
+</TypesTable>
 

@@ -128,28 +128,28 @@ export default Example
   packageName="tag"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="error"
     type="boolean"
     desc="error state flag"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="icon"
     type="*Icon"
     desc="Icon component, right-aligned"
   />
-  <Types.Prop
+  <TypesProp
     name="isPressed"
     type="boolean"
     desc="for accessibility of tags used as toggles"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="size"
-    type={<Types.Enum enum={Tag.sizes} />}
+    type={<TypesEnum enum={Tag.sizes} />}
     desc="tag size (from Tag.sizes)"
     default={Tag.sizes.medium}
   />
-</Types.Table>
+</TypesTable>

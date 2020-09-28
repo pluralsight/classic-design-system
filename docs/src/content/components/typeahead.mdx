@@ -80,69 +80,69 @@ export default Example
 
 ### Typeahead
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="appearance"
-    type={<Types.Enum enum={Typeahead.appearances} />}
+    type={<TypesEnum enum={Typeahead.appearances} />}
     desc="visual style (from Typeahead.appearances)"
     default={Typeahead.appearances.default}
   />
-  <Types.Prop
+  <TypesProp
     name="disabled"
     type="boolean"
     desc="standard input disable flag"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="error"
     type="boolean"
     desc="error state flag"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="label"
     type="string"
     desc="identifying string for input"
   />
-  <Types.Prop
+  <TypesProp
     name="onChange"
     type="(Event, nextValue) => void"
     desc="triggered when value changes"
   />
-  <Types.Prop
+  <TypesProp
     name="placeholder"
     type="string"
     desc="in-field usage hint"
   />
-  <Types.Prop
+  <TypesProp
     name="size"
-    type={<Types.Enum enum={Typeahead.sizes} />}
+    type={<TypesEnum enum={Typeahead.sizes} />}
     desc="horizontal icon placement (from Typeahead.sizes)"
     default={Typeahead.sizes.medium}
   />
-  <Types.Prop
+  <TypesProp
     name="subLabel"
     type="string"
     desc="supporting text or error messaging"
   />
-  <Types.Prop
+  <TypesProp
     name="value"
     type="string"
     desc="controlled value"
   />
-</Types.Table>
+</TypesTable>
 
 ### Typeahead.Suggestion
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="string"
     desc="suggestion label"
   />
-  <Types.Prop
+  <TypesProp
     name="value"
     type="string"
     desc="suggestion value (optional, falls back to label)"
   />
-</Types.Table>
+</TypesTable>

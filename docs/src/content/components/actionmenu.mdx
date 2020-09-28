@@ -259,20 +259,20 @@ export default Example
 
 ### ActionMenu
 
-<Types.Table>
-  <Types.Prop name="onClose" type="function" desc="triggered when a menu collapses; providing it renders an overlay that triggers this function on click" />
-  <Types.Prop name="onClick" type="(Event, value) => void" desc="triggered when an item selected via click, enter or space"/>
-  <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>} desc="orientation ActionMenu.origins of nested menus" default="topLeft"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="onClose" type="function" desc="triggered when a menu collapses; providing it renders an overlay that triggers this function on click" />
+  <TypesProp name="onClick" type="(Event, value) => void" desc="triggered when an item selected via click, enter or space"/>
+  <TypesProp name="origin"  type={<TypesEnum enum={ActionMenu.origins}/>} desc="orientation ActionMenu.origins of nested menus" default="topLeft"/>
+</TypesTable>
 
 ### ActionMenu.Item
 
-<Types.Table>
-  <Types.Prop name="disabled" type="boolean" desc="visually disabled, non-interactive" />
-  <Types.Prop name="href" type="string" desc="anchor tag uri" />
-  <Types.Prop name="nested" type="ActionMenu.Item(s)" desc="nested menu items" />
-  <Types.Prop name="onClick" type="(Event) => void" desc="triggered on item select: click, enter or space" />
-  <Types.Prop name="origin"  type={<Types.Enum enum={ActionMenu.origins}/>}  desc="override orientation (from ActionMenu.origins) of items nested menu" />
-  <Types.Prop name="tagName" type="boolean" desc="ActionMenu.Item trigger element tag (from ActionMenu.tagName)" default="a" />
-  <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="disabled" type="boolean" desc="visually disabled, non-interactive" />
+  <TypesProp name="href" type="string" desc="anchor tag uri" />
+  <TypesProp name="nested" type="ActionMenu.Item(s)" desc="nested menu items" />
+  <TypesProp name="onClick" type="(Event) => void" desc="triggered on item select: click, enter or space" />
+  <TypesProp name="origin"  type={<TypesEnum enum={ActionMenu.origins}/>}  desc="override orientation (from ActionMenu.origins) of items nested menu" />
+  <TypesProp name="tagName" type="boolean" desc="ActionMenu.Item trigger element tag (from ActionMenu.tagName)" default="a" />
+  <TypesProp name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
+</TypesTable>

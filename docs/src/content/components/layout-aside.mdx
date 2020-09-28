@@ -84,24 +84,24 @@ export default Example
   packageName="layout"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="aside"
     type="AsideLayout.Aside"
     desc="content for aside"
     required
   />
-  <Types.Prop
+  <TypesProp
     name="asidePosition"
-    type={<Types.Enum enum={AsideLayout.asidePositions} />}
+    type={<TypesEnum enum={AsideLayout.asidePositions} />}
     desc="Aside position (from AsideLayout.asidePositions)"
     default={AsideLayout.asidePositions.first}
   />
-  <Types.Prop
+  <TypesProp
     name="main"
     type="AsideLayout.Main"
     desc="main content"
     required
   />
-</Types.Table>
+</TypesTable>
 

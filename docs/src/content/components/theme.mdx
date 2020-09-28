@@ -42,11 +42,11 @@ themeable components.
   packageName="theme"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="name"
-    type={<Types.Enum enum={Theme.names} />}
+    type={<TypesEnum enum={Theme.names} />}
     desc="controls which theme is used in child components"
     default={Theme.defaultName}
   />
-</Types.Table>
+</TypesTable>

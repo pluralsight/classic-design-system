@@ -183,12 +183,12 @@ const PinkBox = props => (
   packageName="drawer"
   />
 
-<Types.Table>
-  <Types.Prop name="base" required type="React.ReactNode" desc="content the drawer slides out from" />
-  <Types.Prop name="children" type="React.ReactNode" desc="content inside the drawer" />
-  <Types.Prop name="isOpen" type="boolean" desc="override for controlling internal drawer state" />
-  <Types.Prop name="onToggle" type="(boolean, Event) => void" desc="triggered when the drawer opens or closes" />
-  <Types.Prop name="startOpen" type="boolean" desc="drawer is open on first render" default="false" />
-  <Types.Prop name="toggleButtonAriaLabel" type="string" desc="custom label for drawer toggle for screenreaders" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="base" required type="React.ReactNode" desc="content the drawer slides out from" />
+  <TypesProp name="children" type="React.ReactNode" desc="content inside the drawer" />
+  <TypesProp name="isOpen" type="boolean" desc="override for controlling internal drawer state" />
+  <TypesProp name="onToggle" type="(boolean, Event) => void" desc="triggered when the drawer opens or closes" />
+  <TypesProp name="startOpen" type="boolean" desc="drawer is open on first render" default="false" />
+  <TypesProp name="toggleButtonAriaLabel" type="string" desc="custom label for drawer toggle for screenreaders" />
+</TypesTable>
 

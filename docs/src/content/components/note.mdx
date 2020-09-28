@@ -246,78 +246,78 @@ export default Example
 
 ### Note
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="actionBar"
     type="Note.Action[]"
     desc="action buttons"
   />
-  <Types.Prop
+  <TypesProp
     name="actionBarVisible"
     type="boolean"
     desc="locks actionBar visible"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="avatar"
     type="Avatar | Note.AvatarLink"
     desc="a user's avatar"
   />
-  <Types.Prop
+  <TypesProp
     name="heading"
     type="React.ReactNode"
     desc="the note heading"
   />
-  <Types.Prop
+  <TypesProp
     name="message"
     type="React.ReactNode"
     desc="the main message body"
     required
   />
-  <Types.Prop
+  <TypesProp
     name="metadata"
     type="React.ReactNode[]"
     desc="a row of metadata"
     required
   />
-</Types.Table>
+</TypesTable>
 
 ### Note.Action
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="icon"
     type="Icon"
     desc="icon representing action"
     required
   />
-  <Types.Prop
+  <TypesProp
     name="title"
     type="string"
     desc="text representing action"
     required
   />
-</Types.Table>
+</TypesTable>
 
 ### Note.AvatarLink
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="a > Avatar"
     desc="hyperlinked avatar"
     required
   />
-</Types.Table>
+</TypesTable>
 
 ### Note.List
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="Note[]"
     desc="Notes to be placed in list"
     required
   />
-</Types.Table>
+</TypesTable>
 

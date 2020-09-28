@@ -66,9 +66,9 @@ export default Example
   packageName="avatar"
   />
 
-<Types.Table>
-  <Types.Prop name="name" type="string" desc="used to generate intials as a fallback image" />
-  <Types.Prop name="size" type={<Types.Enum enum={Avatar.sizes}/>} desc="avatar size (from Avatar.sizes)" default="medium" />
-  <Types.Prop name="src" type="string" desc="URI or path to avatar image" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="name" type="string" desc="used to generate intials as a fallback image" />
+  <TypesProp name="size" type={<TypesEnum enum={Avatar.sizes}/>} desc="avatar size (from Avatar.sizes)" default="medium" />
+  <TypesProp name="src" type="string" desc="URI or path to avatar image" />
+</TypesTable>
 

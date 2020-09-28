@@ -438,69 +438,69 @@ export default Example
 
 ### Row
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="actionBar"
     type="Row.Action[]"
     desc="top-right action buttons"
   />
-  <Types.Prop
+  <TypesProp
     name="actionBarVisible"
     type="boolean"
     desc="lock action bar on"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="fullOverlay"
     type="Row.FullOverlayLink"
     desc="hover state for image"
   />
-  <Types.Prop
+  <TypesProp
     name="fullOverlayVisible"
     type="boolean"
     desc="lock full overlay on"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="image"
     required
     type="Row.Image | Row.ImageLink > a > Row.Image"
     desc="main image or linked image"
   />
-  <Types.Prop
+  <TypesProp
     name="metadata1"
     type="string[] | React.ReactNode[]"
     desc="first row of metadata"
   />
-  <Types.Prop
+  <TypesProp
     name="metadata2"
     type="string[] | React.ReactNode[]"
     desc="second row of metadata"
   />
-  <Types.Prop name="progress" type="number" desc="progress 0-100" />
-  <Types.Prop
+  <TypesProp name="progress" type="number" desc="progress 0-100" />
+  <TypesProp
     name="size"
-    type={<Types.Enum enum={Row.sizes} />}
+    type={<TypesEnum enum={Row.sizes} />}
     desc="size of row (from Row.sizes)"
     default="medium"
   />
-  <Types.Prop
+  <TypesProp
     name="title"
     required
     type="Row.TextLink > a > Row.Title | Row.Title"
     desc="row title or linked title"
   />
-  <Types.Prop
+  <TypesProp
     name="titleTruncated"
     required
     type="boolean"
     desc="limit title to 2 lines"
     default="false"
   />
-</Types.Table>
+</TypesTable>
 
 ### Row.Image
 
-<Types.Table>
-  <Types.Prop name="src" required type="string" desc="image url" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="src" required type="string" desc="image url" />
+</TypesTable>
