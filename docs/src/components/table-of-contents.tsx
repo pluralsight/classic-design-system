@@ -27,12 +27,14 @@ export const TableOfContents: React.FC<TableOfContentsProps> = props => {
   return (
     <nav
       className={styles.toc}
-      style={{
-        '--bg':
-          themeName === Theme.names.dark
-            ? colorsBackgroundUtility[25]
-            : colorsBackgroundLight[2]
-      }}
+      style={
+        {
+          '--bg':
+            themeName === Theme.names.dark
+              ? colorsBackgroundUtility[25]
+              : colorsBackgroundLight[2]
+        } as React.CSSProperties
+      }
     >
       <Heading size={Heading.sizes.smallCaps} className={styles.title}>
         <h2>Contents</h2>

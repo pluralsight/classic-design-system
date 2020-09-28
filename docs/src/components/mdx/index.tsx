@@ -3,10 +3,10 @@ import DSLink from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import cx from 'classnames'
 import { Link as GatsbyLink } from 'gatsby'
-import React, { HTMLAttributes } from 'react'
+import React, { AllHTMLAttributes, HTMLAttributes } from 'react'
 
 import { CodeBlock } from '../code-block'
-import { Guideline } from '../guidelines'
+import { Guideline } from '../guidelines/guideline'
 import { Intro } from '../intro'
 import { TableOfContents } from '../table-of-contents'
 import * as Types from '../types'
@@ -14,7 +14,7 @@ import { Usage } from '../usage'
 
 import * as styles from './index.module.css'
 
-export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => {
+export const A: React.FC<AllHTMLAttributes<HTMLAnchorElement>> = props => {
   const isExternal = props.href.includes('http')
   return (
     <DSLink>
@@ -80,6 +80,7 @@ const components = {
   A,
   blockquote: BlockQuote,
   code: CodeBlock,
+  Guideline,
   h1: H1,
   h2: H2,
   h3: H3,

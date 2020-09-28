@@ -22,10 +22,14 @@ export const Prop: React.FC<PropProps> = props => {
         <Table.Cell>
           <code
             className={styles.nameCode}
-            style={{
-              '--color':
-                themeName === Theme.names.light ? colorsPink[8] : colorsPink[4]
-            }}
+            style={
+              {
+                '--color':
+                  themeName === Theme.names.light
+                    ? colorsPink[8]
+                    : colorsPink[4]
+              } as React.CSSProperties
+            }
           >
             {props.name}
           </code>
@@ -42,10 +46,14 @@ export const Prop: React.FC<PropProps> = props => {
         <Table.Cell>
           <code
             className={styles.typeCode}
-            style={{
-              '--color':
-                themeName === Theme.names.light ? colorsBlue[8] : colorsBlue[4]
-            }}
+            style={
+              {
+                '--color':
+                  themeName === Theme.names.light
+                    ? colorsBlue[8]
+                    : colorsBlue[4]
+              } as React.CSSProperties
+            }
           >
             {props.type}
           </code>
@@ -56,10 +64,14 @@ export const Prop: React.FC<PropProps> = props => {
         <Table.Cell>
           <code
             className={styles.defaultCode}
-            style={{
-              '--color':
-                themeName === Theme.names.light ? colorsBlue[8] : colorsBlue[4]
-            }}
+            style={
+              {
+                '--color':
+                  themeName === Theme.names.light
+                    ? colorsBlue[8]
+                    : colorsBlue[4]
+              } as React.CSSProperties
+            }
           >
             {props.default}
           </code>
