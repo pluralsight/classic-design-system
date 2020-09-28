@@ -66,35 +66,35 @@ A reference implementation of the Skills nav is available on [codesandbox](https
   packageName="appframe"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="React.ReactNode"
   />
-  <Types.Prop
+  <TypesProp
     name="onRequestSideNavClose"
     type="Event => void"
     desc="callback triggered when the sidenav should be closed. Use if controlling the open state"
   />
-  <Types.Prop
+  <TypesProp
     name="onRequestSideNavOpen"
     type="Event => void"
     desc="callback triggered when the sidenav should be opened. Use if controlling the open state"
   />
-  <Types.Prop
+  <TypesProp
     name="sidenav"
     type="React.ReactNode | ({ visible }) => React.ReactNode"
     desc="area to display secondary navigation"
   />
-  <Types.Prop
+  <TypesProp
     name="sidenavOpen"
     type="boolean"
     desc="control if the sidenav container is opened"
   />
-  <Types.Prop
+  <TypesProp
     name="topnav"
     type="React.ReactNode | ({ closeSidenav, openSidenav, sidenavOpen }) => React.ReactNode"
     desc="area to display primary navigation - such as a NavBar"
   />
-</Types.Table>
+</TypesTable>
 

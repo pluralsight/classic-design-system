@@ -9,7 +9,7 @@ import { CodeBlock } from '../code-block'
 import { Guideline } from '../guidelines/guideline'
 import { Intro } from '../intro'
 import { TableOfContents } from '../table-of-contents'
-import Types from '../types'
+import * as Types from '../types'
 import { Usage } from '../usage'
 
 import * as styles from './index.module.css'
@@ -90,7 +90,9 @@ const components = {
   p: Text.P,
   pre: props => <div {...props} />,
   TableOfContents,
-  Types,
+  TypesTable: Types.Table,
+  TypesProp: Types.Prop,
+  TypesEnum: Types.Enum,
   ul: Ul,
   Usage
 }
