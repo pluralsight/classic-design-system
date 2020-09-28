@@ -15,7 +15,9 @@ import { Intro, Types, Usage } from '../../components/component'
 </Intro>
 
 
-Positioning with the component
+## Examples
+
+### Using the React component
 
 ```typescript
 import React, { useState } from 'react'
@@ -48,6 +50,135 @@ const Example: React.FC = props => {
         Hover me
       </Button>
     </RightOf>
+  )
+}
+
+export default Example
+```
+
+
+### Portal override
+
+`Position` always renders in a portal, defaulting to `document.body`. It is
+often desirable to provide your own node to render within. Use the `inNode`
+prop to pass an element reference.
+
+```typescript
+import React, { forward, useLayoutEffect, useRef, useState } from 'react'
+
+import Button from '@pluralsight/ps-design-system-button'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+
+import { Above } from '@pluralsight/ps-design-system-position'
+
+const Example: React.FC = props => {
+  const portal = useRef<HTMLDivElement>()
+
+  const [hasRendered, setHasRendered] = useState(false)
+  useLayoutEffect(() => { setHasRendered(true) }, [])
+
+  return (
+    <React.Fragment>
+      {hasRendered && (
+        <div className="example">
+          <Above
+            inNode={portal.current}
+            show={<Tooltip>Rendered in portal</Tooltip>}
+          >
+            <Target />
+          </Above>
+        </div>
+      )}
+
+      <div ref={portal} />
+
+      <style jsx>{`
+        .example {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 200px;
+          outline: 2px dashed lightgrey;
+        }
+      `}</style>
+    </React.Fragment>
+  )
+}
+
+const Target = forwardRef<HTMLButtonElement>((_props, ref) => (
+  <Button
+    appearance={Button.appearances.flat}
+    disabled
+    icon={<PlaceholderIcon />}
+    title="Target"
+    ref={ref}
+  />
+))
+
+export default Example
+```
+
+### Javascript Example
+
+The most important bits of this utility are available in pure JavaScript.
+
+```javascript noRender startExpanded
+import {
+  above, aboveLeft, aboveRight,
+  above, belowLeft, belowRight,
+  leftOf, rightOf
+} from '@pluralsight/ps-design-system-position'
+```
+
+Use the JavaScript function to get the positioning style desired.
+
+```typescript
+import React, { useEffect, useRef, useState } from 'react'
+
+import Button from '@pluralsight/ps-design-system-button'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+
+import { rightOf } from '@pluralsight/ps-design-system-position'
+
+const Example: React.FC = props => {
+  const button = useRef<HTMLButtonElement>()
+  const tooltip = useRef<HTMLDivElement>()
+
+  const [hovered, setHovered] = useState(false)
+
+  const hide = () => setHovered(false)
+  const show = () => setHovered(true)
+
+  const [style, setStyle] = useState({ position: 'absolute' })
+
+  useEffect(() => {
+    if (!button.current || !tooltip.current) return
+
+    const nextStyle = rightOf(button.current).styleFor(tooltip.current)
+    setStyle(nextStyle)
+  }, [hovered])
+
+  return (
+    <div>
+      <Button
+        appearance={Button.appearances.secondary}
+        onMouseEnter={show}
+        onMouseLeave={hide}
+        ref={button}
+      >
+        Hover me
+      </Button>
+
+      <Tooltip
+        ref={tooltip}
+        style={{ ...style, display: hovered ? 'block' : 'none' }}
+        visible={false}
+      >
+        Tooltip
+      </Tooltip>
+    </div>
   )
 }
 
@@ -153,136 +284,6 @@ const Target = forwardRef<HTMLButtonElement>((_props, ref) => (
 export default Example
 ```
 
-## Portal override
-
-`Position` always renders in a portal, defaulting to `document.body`. It is
-often desirable to provide your own node to render within. Use the `inNode`
-prop to pass an element reference.
-
-```typescript
-import React, { forward, useLayoutEffect, useRef, useState } from 'react'
-
-import Button from '@pluralsight/ps-design-system-button'
-import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
-import Tooltip from '@pluralsight/ps-design-system-tooltip'
-
-import { Above } from '@pluralsight/ps-design-system-position'
-
-const Example: React.FC = props => {
-  const portal = useRef<HTMLDivElement>()
-
-  const [hasRendered, setHasRendered] = useState(false)
-  useLayoutEffect(() => { setHasRendered(true) }, [])
-
-  return (
-    <React.Fragment>
-      {hasRendered && (
-        <div className="example">
-          <Above
-            inNode={portal.current}
-            show={<Tooltip>Rendered in portal</Tooltip>}
-          >
-            <Target />
-          </Above>
-        </div>
-      )}
-
-      <div ref={portal} />
-
-      <style jsx>{`
-        .example {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 200px;
-          outline: 2px dashed lightgrey;
-        }
-      `}</style>
-    </React.Fragment>
-  )
-}
-
-const Target = forwardRef<HTMLButtonElement>((_props, ref) => (
-  <Button
-    appearance={Button.appearances.flat}
-    disabled
-    icon={<PlaceholderIcon />}
-    title="Target"
-    ref={ref}
-  />
-))
-
-export default Example
-```
-
-## Javascript Example
-
-The most important bits of this utility are available in pure JavaScript. To
-use, import the `/js` part of the utility.
-
-```javascript noRender startExpanded
-import {
-  above,
-  below,
-  leftOf,
-  rightOf
-} from '@pluralsight/ps-design-system-position'
-```
-
-Use the JavaScript function to get the positioning style desired.
-
-```typescript
-import React, { useEffect, useRef, useState } from 'react'
-
-import Button from '@pluralsight/ps-design-system-button'
-import Tooltip from '@pluralsight/ps-design-system-tooltip'
-
-import { rightOf } from '@pluralsight/ps-design-system-position'
-
-const Example: React.FC = props => {
-  const button = useRef<HTMLButtonElement>()
-  const tooltip = useRef<HTMLDivElement>()
-
-  const [hovered, setHovered] = useState(false)
-
-  const hide = () => setHovered(false)
-  const show = () => setHovered(true)
-
-  const [style, setStyle] = useState({ position: 'absolute' })
-
-  useEffect(() => {
-    if (!button.current || !tooltip.current) return
-
-    const nextStyle = rightOf(button.current).styleFor(tooltip.current)
-    setStyle(nextStyle)
-  }, [hovered])
-
-  return (
-    <div>
-      <Button
-        appearance={Button.appearances.secondary}
-        onMouseEnter={show}
-        onMouseLeave={hide}
-        ref={button}
-      >
-        Hover me
-      </Button>
-
-      <Tooltip
-        ref={tooltip}
-        style={{ ...style, display: hovered ? 'block' : 'none' }}
-        visible={false}
-      >
-        Tooltip
-      </Tooltip>
-    </div>
-  )
-}
-
-export default Example
-```
-
 
 ## Usage & types
 
@@ -290,10 +291,9 @@ export default Example
   install="npm install @pluralsight/ps-design-system-position"
   import={`
 import {
-  Above,
-  Below,
-  LeftOf,
-  RightOf
+  Above, AboveLeft, AboveRight,
+  Below, BelowLeft, BelowRight,
+  LeftOf, RightOf
 } from '@pluralsight/ps-design-system-position'
 `}
   packageName="position"
