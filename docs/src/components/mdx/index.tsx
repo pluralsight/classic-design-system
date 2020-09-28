@@ -9,7 +9,7 @@ import { CodeBlock } from '../code-block'
 import { Guideline } from '../guidelines/guideline'
 import { Intro } from '../intro'
 import { TableOfContents } from '../table-of-contents'
-import * as Types from '../types'
+import Types from '../types'
 import { Usage } from '../usage'
 
 import * as styles from './index.module.css'
