@@ -11,6 +11,8 @@ import Switch from '@pluralsight/ps-design-system-switch'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import * as Text from '@pluralsight/ps-design-system-text'
 
+import { omit } from '../../components/util'
+
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 export const FormFocusable: React.FC<Props> = props => (
@@ -87,13 +89,16 @@ export const CheckboxExample = () => {
     if (checked) {
       setValues({ ...values, [name]: value })
     } else {
-      const { [name]: omit, ...rest } = values
-      setValues(rest)
+      setValues(
+        omit<Record<string, unknown>, string[]>(values, [
+          (name as unknown) as string
+        ])
+      )
     }
   }
 
   const features = Object.keys(values)
-  const checked = name => features.indexOf(name) > -1
+  const checked = name => features.includes(name)
   return (
     <div>
       <Checkbox
