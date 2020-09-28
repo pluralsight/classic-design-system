@@ -4,9 +4,10 @@ route: /components/text-lists
 ---
 
 import { List } from '@pluralsight/ps-design-system-text'
-import { Types, Usage } from '../../components/component'
 
 # Lists
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -58,11 +59,11 @@ export default Example
   packageName="text"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="type"
-    type={<Types.Enum enum={List.types} />}
+    type={<TypesEnum enum={List.types} />}
     desc="semantics and bullet styles (from List.types)"
     default={List.types.default}
   />
-</Types.Table>
+</TypesTable>

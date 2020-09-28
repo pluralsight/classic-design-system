@@ -95,6 +95,7 @@
     "react-helmet": "^6.1.0",
     "react-live": "^2.2.2",
     "react-router-dom": "^5.2.0",
+    "remark-slug": "^6.0.0",
     "response-time": "^2.3.2",
     "serve-favicon": "^2.5.0",
     "typescript": "^4.0.2",

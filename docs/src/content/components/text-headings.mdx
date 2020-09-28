@@ -4,9 +4,10 @@ route: /components/text-headings
 ---
 
 import { Heading } from '@pluralsight/ps-design-system-text'
-import { Types, Usage } from '../../components/component'
 
 # Headings
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -50,11 +51,11 @@ export default Example
   packageName="text"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="size"
-    type={<Types.Enum enum={Heading.sizes} />}
+    type={<TypesEnum enum={Heading.sizes} />}
     desc="size and style of heading (from Heading.sizes)"
     default={Heading.sizes.large}
   />
-</Types.Table>
+</TypesTable>

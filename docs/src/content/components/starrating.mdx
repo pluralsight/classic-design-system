@@ -5,9 +5,9 @@ route: /components/starrating
 
 import StarRating from '@pluralsight/ps-design-system-starrating'
 
-import { Types, Usage } from '../../components/component'
-
 # Star rating
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -63,9 +63,9 @@ export default Example
   packageName="starrating"
 />
 
-<Types.Table>
-  <Types.Prop name="onChange" type="
+<TypesTable>
+  <TypesProp name="onChange" type="
   (number, Event) => ()" desc="triggered when the value changes" default="null"/>
-  <Types.Prop name="value" type="number" desc="current value as a float" />
-</Types.Table>
+  <TypesProp name="value" type="number" desc="current value as a float" />
+</TypesTable>
 

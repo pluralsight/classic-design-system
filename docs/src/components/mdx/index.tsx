@@ -3,13 +3,18 @@ import DSLink from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
 import cx from 'classnames'
 import { Link as GatsbyLink } from 'gatsby'
-import React, { HTMLAttributes } from 'react'
+import React, { AllHTMLAttributes, HTMLAttributes } from 'react'
 
 import { CodeBlock } from '../code-block'
+import { Guideline } from '../guidelines/guideline'
+import { Intro } from '../intro'
+import { TableOfContents } from '../table-of-contents'
+import * as Types from '../types'
+import { Usage } from '../usage'
 
 import * as styles from './index.module.css'
 
-export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => {
+export const A: React.FC<AllHTMLAttributes<HTMLAnchorElement>> = props => {
   const isExternal = props.href.includes('http')
   return (
     <DSLink>
@@ -72,16 +77,24 @@ export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = props => (
 
 const components = {
   a: A,
+  A,
   blockquote: BlockQuote,
   code: CodeBlock,
+  Guideline,
   h1: H1,
   h2: H2,
   h3: H3,
   inlineCode: Text.Code,
+  Intro,
   ol: Ol,
   p: Text.P,
   pre: props => <div {...props} />,
-  ul: Ul
+  TableOfContents,
+  TypesTable: Types.Table,
+  TypesProp: Types.Prop,
+  TypesEnum: Types.Enum,
+  ul: Ul,
+  Usage
 }
 
 export const MDXProvider: React.FC = props => (

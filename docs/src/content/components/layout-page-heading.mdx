@@ -3,9 +3,9 @@ name: Page heading layout
 route: /components/layout-page-heading
 ---
 
-import { Types, Usage } from '../../components/component'
-
 # Page heading layout
+
+<TableOfContents {...props} />
 
 Start your layout with this default template of, `PageHeadingLayout` nested in
 `PageWidthLayout`, to achieve standard outer spacing and title style.
@@ -64,16 +64,16 @@ export default Example
   packageName="layout"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="actions"
     type="React.ReactNode[]"
     desc="actionable elements to place in the top-right"
   />
-  <Types.Prop
+  <TypesProp
     name="heading"
     type="React.ReactNode"
     desc="heading element to display as page title"
     required
   />
-</Types.Table>
+</TypesTable>

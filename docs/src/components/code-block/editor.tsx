@@ -3,7 +3,7 @@ import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import cx from 'classnames'
 import Highlight, { defaultProps } from 'prism-react-renderer'
-import React, { useContext } from 'react'
+import React, { useContext, MouseEvent } from 'react'
 
 import { CodeBlockContext } from './index'
 import styles from './styles.module.css'
@@ -12,7 +12,7 @@ import { darkTheme, lightTheme } from './theme'
 interface EditorProps {
   children: string
   expanded: boolean
-  onClick: (event: Event) => void
+  onClick: (event: MouseEvent<HTMLButtonElement>) => void
 }
 export const Editor: React.FC<EditorProps> = props => {
   const context = useContext(CodeBlockContext)
@@ -49,8 +49,8 @@ export const Editor: React.FC<EditorProps> = props => {
               <>
                 <button
                   className={styles.clickToExpand}
-                  onClick={() => {
-                    if (!props.expanded) props.onClick()
+                  onClick={(evt: MouseEvent<HTMLButtonElement>) => {
+                    if (!props.expanded) props.onClick(evt)
                   }}
                 >
                   <ScreenReaderOnly>Click to expand</ScreenReaderOnly>

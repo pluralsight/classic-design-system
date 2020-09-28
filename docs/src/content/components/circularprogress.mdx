@@ -5,9 +5,9 @@ route: /components/circularprogress
 
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 
-import { Types, Usage } from '../../components/component'
-
 # Circular progress
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -119,8 +119,8 @@ export default AnimationDemo
   packageName="circularprogress"
   />
 
-<Types.Table>
-  <Types.Prop name="size" type={<Types.Enum enum={CircularProgress.sizes}/>} desc="standard size for widget (from CircularProgress.sizes)" default="medium" />
-  <Types.Prop name="value" type="number" desc="current progress out of 100" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="size" type={<TypesEnum enum={CircularProgress.sizes}/>} desc="standard size for widget (from CircularProgress.sizes)" default="medium" />
+  <TypesProp name="value" type="number" desc="current progress out of 100" />
+</TypesTable>
 

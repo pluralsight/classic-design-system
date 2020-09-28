@@ -9,7 +9,6 @@ import { layout } from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import { A, Guideline, Intro, Types, Usage } from '../../components/component'
 import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialog'
 
 # Dialog
@@ -17,6 +16,8 @@ import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialo
 <Intro>
   The purpose of a Dialog is to provide actionable messaging and may appear contextually or as a <A href="#modal">modal</A>. The Dialog adapts to various amounts and types of content. For contextual, non-actionable messaging, consider the <A href="/components/tooltip">Tooltip</A> instead.
 </Intro>
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -360,15 +361,15 @@ Be explicit as possible when writing dialog buttons. Use affirmative action text
   packageName="dialog"
   />
 
-<Types.Table>
-  <Types.Prop name="aria-label" required type="string" desc="description of dialog purpose" />
-  <Types.Prop name="disableCloseButton" type="boolean" desc="removes close button UI" default="false" />
-  <Types.Prop name="disableCloseOnEscape" type="boolean" desc="prevents closing Dialog with escape key" default="false" />
-  <Types.Prop name="disableCloseOnOverlayClick" type="boolean" desc="prevents clicking modal overlay to close Dialog" default="false" />
-  <Types.Prop name="disableFocusOnMount" type="boolean" desc="prevents focus the Dialog on render" default="false" />
-  <Types.Prop name="modal" type="boolean" desc="makes Dialog modal" default="false" />
-  <Types.Prop name="onClose" type="Event => void" desc="callback to be called by various close methods" />
-  <Types.Prop name="tailPosition" type={<Types.Enum enum={Dialog.tailPositions} />} desc="positions a tail pointer (from Dialog.tailPositions)" />
-  <Types.Prop name="returnFocus" type="boolean" desc="manage focus; set focus on call where closed" default="true"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="aria-label" required type="string" desc="description of dialog purpose" />
+  <TypesProp name="disableCloseButton" type="boolean" desc="removes close button UI" default="false" />
+  <TypesProp name="disableCloseOnEscape" type="boolean" desc="prevents closing Dialog with escape key" default="false" />
+  <TypesProp name="disableCloseOnOverlayClick" type="boolean" desc="prevents clicking modal overlay to close Dialog" default="false" />
+  <TypesProp name="disableFocusOnMount" type="boolean" desc="prevents focus the Dialog on render" default="false" />
+  <TypesProp name="modal" type="boolean" desc="makes Dialog modal" default="false" />
+  <TypesProp name="onClose" type="Event => void" desc="callback to be called by various close methods" />
+  <TypesProp name="tailPosition" type={<TypesEnum enum={Dialog.tailPositions} />} desc="positions a tail pointer (from Dialog.tailPositions)" />
+  <TypesProp name="returnFocus" type="boolean" desc="manage focus; set focus on call where closed" default="true"/>
+</TypesTable>
 

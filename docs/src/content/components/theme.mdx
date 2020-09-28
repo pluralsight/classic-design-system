@@ -5,9 +5,9 @@ route: /components/theme
 
 import Theme from '@pluralsight/ps-design-system-theme'
 
-import { Types, Usage } from '../../components/component'
-
 # Theme
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -42,11 +42,11 @@ themeable components.
   packageName="theme"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="name"
-    type={<Types.Enum enum={Theme.names} />}
+    type={<TypesEnum enum={Theme.names} />}
     desc="controls which theme is used in child components"
     default={Theme.defaultName}
   />
-</Types.Table>
+</TypesTable>

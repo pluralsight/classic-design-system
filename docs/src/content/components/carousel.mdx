@@ -8,7 +8,6 @@ import Card from '@pluralsight/ps-design-system-card'
 import Carousel from '@pluralsight/ps-design-system-carousel'
 import Note from '@pluralsight/ps-design-system-note'
 
-import { Guideline, Intro, Types, Usage } from '../../components/component'
 import { MockItem } from '../../components/carousel'
 
 # Carousel
@@ -16,6 +15,8 @@ import { MockItem } from '../../components/carousel'
 <Intro>
   Carousels are for displaying a related set of content items in a row.  Items can be paged using the next/previous buttons or by a swipe gesture.
 </Intro>
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -481,25 +482,25 @@ The height of the carousel adapts to the height of the content it contains, but 
 
 ### Carousel
 
-<Types.Table>
-  <Types.Prop name="children" required type="React.ReactNode" desc="items to place in carousel" />
-  <Types.Prop name="size" type={<Types.Enum enum={Carousel.sizes}/>} desc="size of carousel items" default="medium" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" required type="React.ReactNode" desc="items to place in carousel" />
+  <TypesProp name="size" type={<TypesEnum enum={Carousel.sizes}/>} desc="size of carousel items" default="medium" />
+</TypesTable>
 
 ### Carousel.Controls
 
-<Types.Table>
-  <Types.Prop name="children" required type="React.ReactNode" desc="controls to advance carousel frames" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" required type="React.ReactNode" desc="controls to advance carousel frames" />
+</TypesTable>
 
 ### Carousel.Control
 
-<Types.Table>
-  <Types.Prop name="direction" required type={<Types.Enum enum={Carousel.Control.directions} />} desc="(from Carousel.Control.directions)" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="direction" required type={<TypesEnum enum={Carousel.Control.directions} />} desc="(from Carousel.Control.directions)" />
+</TypesTable>
 
 ### Carousel.Item
 
-<Types.Table>
-  <Types.Prop name="children" required type="React.ReactNode | () => React.ReactNode" desc="render prop used to access item and page metadata" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" required type="React.ReactNode | () => React.ReactNode" desc="render prop used to access item and page metadata" />
+</TypesTable>

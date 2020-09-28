@@ -9,9 +9,9 @@ import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
 
-import { Types, Usage } from '../../components/component'
-
 # Global navigation
+
+<TableOfContents {...props} />
 
 ## Nav bar
 
@@ -68,13 +68,13 @@ export default Example
   packageName="navbar"
   />
 
-<Types.Table>
-  <Types.Prop name="brand" type="React.ReactNode" desc="global product branding" />
-  <Types.Prop name="items" type="React.ReactNode" desc="top-level nav affordances" />
-  <Types.Prop name="onMobileMenuClick" type="Event => ()" desc="displays hamburger menu; called on click" />
-  <Types.Prop name="utility" type="React.ReactNode" desc="top-right affordances next to user" />
-  <Types.Prop name="user" type="React.ReactNode" desc="user profile affordance" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="brand" type="React.ReactNode" desc="global product branding" />
+  <TypesProp name="items" type="React.ReactNode" desc="top-level nav affordances" />
+  <TypesProp name="onMobileMenuClick" type="Event => ()" desc="displays hamburger menu; called on click" />
+  <TypesProp name="utility" type="React.ReactNode" desc="top-right affordances next to user" />
+  <TypesProp name="user" type="React.ReactNode" desc="user profile affordance" />
+</TypesTable>
 
 ## Nav item
 
@@ -115,15 +115,15 @@ export default Example
   packageName="navitem"
   />
 
-<Types.Table>
-  <Types.Prop name="alignment" type={<Types.Enum enum={NavItem.alignments} />} desc="orientation of item elements" default="horizontal" />
-  <Types.Prop name="bar" type="React.ReactNode" desc="active element indicator" />
-  <Types.Prop name="children" type="React.ReactNode" desc="label" />
-  <Types.Prop name="href" type="string" desc="destination url; renders anchor" />
-  <Types.Prop name="icon" type="React.ReactNode" desc="icon displayed" />
-  <Types.Prop name="menu" type="boolean" desc="toggles render of down caret" default="false" />
-  <Types.Prop name="selected" type="boolean" desc="toggles active state" default="false" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="alignment" type={<TypesEnum enum={NavItem.alignments} />} desc="orientation of item elements" default="horizontal" />
+  <TypesProp name="bar" type="React.ReactNode" desc="active element indicator" />
+  <TypesProp name="children" type="React.ReactNode" desc="label" />
+  <TypesProp name="href" type="string" desc="destination url; renders anchor" />
+  <TypesProp name="icon" type="React.ReactNode" desc="icon displayed" />
+  <TypesProp name="menu" type="boolean" desc="toggles render of down caret" default="false" />
+  <TypesProp name="selected" type="boolean" desc="toggles active state" default="false" />
+</TypesTable>
 
 
 ## Nav brand
@@ -172,12 +172,12 @@ function MyLogo() {
   packageName="navbrand"
   />
 
-<Types.Table>
-  <Types.Prop name="href" type="string" desc="destination url; renders anchor" />
-  <Types.Prop name="logo" type="React.ReactNode" desc="brand logo" />
-  <Types.Prop name="onClick" type="Event => void" desc="click handler" />
-  <Types.Prop name="wordmark" type="React.ReactNode" desc="brand logo" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="href" type="string" desc="destination url; renders anchor" />
+  <TypesProp name="logo" type="React.ReactNode" desc="brand logo" />
+  <TypesProp name="onClick" type="Event => void" desc="click handler" />
+  <TypesProp name="wordmark" type="React.ReactNode" desc="brand logo" />
+</TypesTable>
 
 
 ## Nav user
@@ -209,13 +209,13 @@ export default Example
   packageName="navuser"
   />
 
-<Types.Table>
-  <Types.Prop name="href" type="string" desc="destination url; renders anchor" />
-  <Types.Prop name="onClick" type="Event => void" desc="click handler" />
-  <Types.Prop name="meta" type="React.ReactNode" desc="user context" />
-  <Types.Prop name="name" type="React.ReactNode" desc="user name" />
-  <Types.Prop name="src" type="string" desc="user profile image url" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="href" type="string" desc="destination url; renders anchor" />
+  <TypesProp name="onClick" type="Event => void" desc="click handler" />
+  <TypesProp name="meta" type="React.ReactNode" desc="user context" />
+  <TypesProp name="name" type="React.ReactNode" desc="user name" />
+  <TypesProp name="src" type="string" desc="user profile image url" />
+</TypesTable>
 
 
 ## Nav cookie banner
@@ -250,11 +250,11 @@ export default Example
   packageName="navcookiebanner"
   />
 
-<Types.Table>
-  <Types.Prop name="cookieOptions" type="{ domain: string, expires: Date, secure: boolean, sameSite: string }" desc="attributes of cookie" />
-  <Types.Prop name="message" type="React.ReactNode" desc="messaging re cookies" />
-  <Types.Prop name="privacyUpdatedDate" type="Date" desc="date of last terms update" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="cookieOptions" type="{ domain: string, expires: Date, secure: boolean, sameSite: string }" desc="attributes of cookie" />
+  <TypesProp name="message" type="React.ReactNode" desc="messaging re cookies" />
+  <TypesProp name="privacyUpdatedDate" type="Date" desc="date of last terms update" />
+</TypesTable>
 
 
 ## Reference design

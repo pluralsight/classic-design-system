@@ -5,9 +5,9 @@ route: /components/datepicker
 
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
 
-import { Types, Usage } from '../../components/component'
-
 # Date picker
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -88,14 +88,14 @@ export default Example
   packageName="datepicker"
   />
 
-<Types.Table>
-  <Types.Prop name="appearance" type={<Types.Enum enum={DatePicker.appearances}/>} desc="visual style (from DatePicker.appearances)" default="default" />
-  <Types.Prop name="disabled" type="boolean" desc="standard input disable flag" default="false" />
-  <Types.Prop name="error" type="boolean" desc="error state flag" default="false" />
-  <Types.Prop name="label" type="string" desc="identifying string for input" />
-  <Types.Prop name="onSubBlur" type="('mm/dd/yyyy') => void" desc="on subfield blur, returns null if invalid date" />
-  <Types.Prop name="onSelect" type="('mm/dd/yyyy') => void" desc="triggered when new valid date selected" />
-  <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging" />
-  <Types.Prop name="value" type="string" desc="current date as a string (format mm/dd/yyyy)" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="appearance" type={<TypesEnum enum={DatePicker.appearances}/>} desc="visual style (from DatePicker.appearances)" default="default" />
+  <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <TypesProp name="error" type="boolean" desc="error state flag" default="false" />
+  <TypesProp name="label" type="string" desc="identifying string for input" />
+  <TypesProp name="onSubBlur" type="('mm/dd/yyyy') => void" desc="on subfield blur, returns null if invalid date" />
+  <TypesProp name="onSelect" type="('mm/dd/yyyy') => void" desc="triggered when new valid date selected" />
+  <TypesProp name="subLabel" type="string" desc="supporting text or error messaging" />
+  <TypesProp name="value" type="string" desc="current date as a string (format mm/dd/yyyy)" />
+</TypesTable>
 

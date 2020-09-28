@@ -3,14 +3,15 @@ name: Text input
 route: /components/textinput
 ---
 import TextInput from '@pluralsight/ps-design-system-textinput'
-import { Intro, Types, Usage } from '../../components/component'
 
 # TextInput
 
+<TableOfContents {...props} />
 
 ## Examples
 
 ### Labels
+
 Primary identification of a text input comes through the `label`. Usage hints are given in the `placeholder`. Supporting text and error messaging is set in the `subLabel`.
 
 ```typescript
@@ -144,15 +145,15 @@ export default Comp
   packageName="textinput"
 />
 
-<Types.Table>
-  <Types.Prop name="appearance" type={<Types.Enum enum={TextInput.appearances}/>} desc="visual style (from TextInput.appearances)"/>
-  <Types.Prop name="disabled" type="boolean" desc="standard input disable flag"/>
-  <Types.Prop name="error" type="boolean" desc="error state flag"/>
-  <Types.Prop name="icon" type="*Icon" desc="An Icon component"/>
-  <Types.Prop name="iconAlign" type={<Types.Enum enum={TextInput.iconAligns}/>} desc="horizontal icon placement (from TextInput.iconAligns)"/>
-  <Types.Prop name="label" type="string" desc="identifying string for input"/>
-  <Types.Prop name="placeholder" type="string" desc="in-field usage hint"/>
-  <Types.Prop name="ref" type="Ref || { field: Ref,input: Ref, }" desc="refs to access underlying elements"/>
-  <Types.Prop name="size" type={<Types.Enum enum={TextInput.sizes}/>} desc="horizontal icon placement (from TextInput.sizes)"/>
-  <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="appearance" type={<TypesEnum enum={TextInput.appearances}/>} desc="visual style (from TextInput.appearances)"/>
+  <TypesProp name="disabled" type="boolean" desc="standard input disable flag"/>
+  <TypesProp name="error" type="boolean" desc="error state flag"/>
+  <TypesProp name="icon" type="*Icon" desc="An Icon component"/>
+  <TypesProp name="iconAlign" type={<TypesEnum enum={TextInput.iconAligns}/>} desc="horizontal icon placement (from TextInput.iconAligns)"/>
+  <TypesProp name="label" type="string" desc="identifying string for input"/>
+  <TypesProp name="placeholder" type="string" desc="in-field usage hint"/>
+  <TypesProp name="ref" type="Ref || { field: Ref,input: Ref, }" desc="refs to access underlying elements"/>
+  <TypesProp name="size" type={<TypesEnum enum={TextInput.sizes}/>} desc="horizontal icon placement (from TextInput.sizes)"/>
+  <TypesProp name="subLabel" type="string" desc="supporting text or error messaging"/>
+</TypesTable>
