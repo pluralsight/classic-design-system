@@ -198,6 +198,11 @@ const items = [
       {
         href: '/components/switch',
         title: 'Switch'
+      },
+
+      {
+        href: '/components/form',
+        title: 'Form'
       }
     ]
   },
@@ -232,6 +237,10 @@ const items = [
       {
         href: '/components/row',
         title: 'Row'
+      },
+      {
+        href: '/components/emptystate',
+        title: 'Empty state'
       },
       {
         href: '/components/card',
