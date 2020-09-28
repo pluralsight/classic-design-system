@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textarea",
-  "version": "7.0.38",
+  "version": "7.0.39",
   "description": "Design system components for text area",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,7 +25,7 @@
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-halo": "^7.0.13",
     "@pluralsight/ps-design-system-icon": "^18.2.3",
-    "@pluralsight/ps-design-system-util": "^5.1.0",
+    "@pluralsight/ps-design-system-util": "^5.2.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.16",
-    "@pluralsight/ps-design-system-form": "^7.0.3",
+    "@pluralsight/ps-design-system-form": "^7.0.5",
     "@pluralsight/ps-design-system-storybook-preset": "^0.1.2",
     "@pluralsight/ps-design-system-theme": "^4.0.13"
   }

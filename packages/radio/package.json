@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-radio",
-  "version": "7.1.5",
+  "version": "7.1.6",
   "description": "Design system components for radio buttons",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,7 +23,7 @@
     "@pluralsight/ps-design-system-core": "^6.4.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-halo": "^7.0.13",
-    "@pluralsight/ps-design-system-util": "^5.1.0",
+    "@pluralsight/ps-design-system-util": "^5.2.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

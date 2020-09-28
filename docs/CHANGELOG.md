@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.3.0...@pluralsight/ps-design-system-docs@0.4.0) (2020-09-28)
+
+
+### Bug Fixes
+
+* **docs:** codeblock props are strings; update height ([8b3a16a](https://github.com/pluralsight/design-system/commit/8b3a16a236b1c58088f68bb53e532c8907557849))
+* **docs:** color category labels themeable ([aee8009](https://github.com/pluralsight/design-system/commit/aee800974b276e1b12b883037f9d61a9f84069fd))
+* **docs:** dont attempt to build static previews ([4ee0cc8](https://github.com/pluralsight/design-system/commit/4ee0cc8f7f35dc5d8fe5f4380b2beeb0d4731be4))
+* **docs:** fix light theme examples and a few nits ([43f43b8](https://github.com/pluralsight/design-system/commit/43f43b87d311c583c64e90597dd02be9d5836d47))
+* **docs:** let the sidenav scroll ([6ca2520](https://github.com/pluralsight/design-system/commit/6ca2520d5edc1ab1b070d29c321010e6de4ea94f))
+* **docs:** meta data example on theme dark ([3ed0fd3](https://github.com/pluralsight/design-system/commit/3ed0fd3f10a6c807ca13da3b50f1200f88ebbf6c))
+* **docs:** move rootDir up to include imported package.json ([574b2e1](https://github.com/pluralsight/design-system/commit/574b2e18ee390a646b501c00cbd84efba9b688cb))
+* **docs:** overeager themeName rename ([8e751d4](https://github.com/pluralsight/design-system/commit/8e751d440c8267f550e1246039d942d72641b1b7))
+* **docs:** re-remove type after merge ([34de984](https://github.com/pluralsight/design-system/commit/34de98456e67d7cd1810ed69b3f7870ab823af7b))
+* **docs:** replace markdown with components in dialog intro ([5d222f0](https://github.com/pluralsight/design-system/commit/5d222f062f8dba442729e6d5913594a5cc4e2348))
+* **docs:** sentence casing on page titles ([e6a8bae](https://github.com/pluralsight/design-system/commit/e6a8bae294a20f40c735857fd489d05b638175d3))
+* **docs:** small updates to theme docs ([49000a4](https://github.com/pluralsight/design-system/commit/49000a4ee7ffaffe78568deaf3424e74a43ec47a))
+* **docs:** tsc fix on core package map; usage in dropdown ([aafb6ef](https://github.com/pluralsight/design-system/commit/aafb6efbc7ed046399428453c50957bc71798fd0))
+
+
+### Features
+
+* **docs:** add ability to override theme for example ([e9278fb](https://github.com/pluralsight/design-system/commit/e9278fbdcce2b804e3cbd93426f97c0e54c25f2d))
+* **docs:** add blockquote styles ([1302589](https://github.com/pluralsight/design-system/commit/130258980bac99c52e3b177f2b36b6760d24e5f0))
+* **docs:** add fade out on editor ([b014799](https://github.com/pluralsight/design-system/commit/b014799536a1d8c48d9520af235f002bb36d85e7))
+* **docs:** add favicon ([48a6555](https://github.com/pluralsight/design-system/commit/48a65554b428dd772f3b27385f82a4325bbf8968))
+* **docs:** add meta title ([11a69a7](https://github.com/pluralsight/design-system/commit/11a69a778a7e3855f799441c605535ccadb73998))
+* **docs:** add start of VerticalTabs docs ([212acb7](https://github.com/pluralsight/design-system/commit/212acb73a282fa93efe17904ae37452f5263d1f6))
+* **docs:** allow multiline import examples ([b856034](https://github.com/pluralsight/design-system/commit/b8560342617310d5dcf2aee001653b906ef22f26))
+* **docs:** auto expand short examples ([0cc388a](https://github.com/pluralsight/design-system/commit/0cc388af48838da531bd0aa1d8f96912e4ae6b94))
+* **docs:** breadcrumb page ([9c714aa](https://github.com/pluralsight/design-system/commit/9c714aa98a28d2980fbb095a4553afc13817ffbf))
+* **docs:** carousel page ([8258e5e](https://github.com/pluralsight/design-system/commit/8258e5ef446c3f80977940c55c5f7dbeffaef0be))
+* **docs:** click example block to expand ([f3aa2d7](https://github.com/pluralsight/design-system/commit/f3aa2d7c7a4fecd63ca920681c933468c72a2356))
+* **docs:** datawell pg ([3381ae2](https://github.com/pluralsight/design-system/commit/3381ae2694614b939fb560e4d294e7fb413f298a))
+* **docs:** datepicker page ([7581e36](https://github.com/pluralsight/design-system/commit/7581e36376f48db778670547ce9ffaeaa08f7ccb))
+* **docs:** dialog page ([568ae65](https://github.com/pluralsight/design-system/commit/568ae655641063a37c07c4d82382b0fa8aa6c724))
+* **docs:** docs ([a881d47](https://github.com/pluralsight/design-system/commit/a881d47d7979bd4e20e3855721de146a7710860f))
+* **docs:** drawer page ([3020161](https://github.com/pluralsight/design-system/commit/3020161964a7a3e4baf98733d408f68695343ea1))
+* **docs:** error pages ([5c8c037](https://github.com/pluralsight/design-system/commit/5c8c03707c6105231c328de6363775dbadcd6344))
+* **docs:** format page title ([b319178](https://github.com/pluralsight/design-system/commit/b319178c57391b9ddae0c10087fef78b28f65676))
+* **docs:** nav pg ([1847135](https://github.com/pluralsight/design-system/commit/1847135f982484a2a28ab0467a9d1cd6e7054934))
+* **docs:** row page ([460b76b](https://github.com/pluralsight/design-system/commit/460b76b7c27ad78e9a9f8a486c5b419d5bff0d5a))
+* **docs:** starrating page ([6575667](https://github.com/pluralsight/design-system/commit/6575667bbd770d2f9749f3ff0a3e54597c8896f0))
+* **docs:** support internal router links in markdown ([9cd65fb](https://github.com/pluralsight/design-system/commit/9cd65fb54a54890c69bc4457f98503343c0b59fc))
+* **docs:** support turning live preview off ([802c3dd](https://github.com/pluralsight/design-system/commit/802c3dddd83440dd9690770c95bc70ffb102335c))
+* **docs:** switch docs tweaks ([e3179ee](https://github.com/pluralsight/design-system/commit/e3179ee97a0d511dc12884bc05abedf58e5b1af8))
+* **docs:** switch page ([f3bb901](https://github.com/pluralsight/design-system/commit/f3bb901c79c4cc680fef8a24d3d88436b06729a3))
+* **docs:** tab pg ([2fe2e33](https://github.com/pluralsight/design-system/commit/2fe2e33b6973e46a84b4c242cd3c46274ab9e9fc))
+* **docs:** text docs ([3e64482](https://github.com/pluralsight/design-system/commit/3e644827c30982302c2d7732d47992897190a940))
+* **docs:** verttabs sentence case and in app example ([c4ef750](https://github.com/pluralsight/design-system/commit/c4ef75037cd7221f5f7c520b0d226cce2555c77b))
+
+
+
+
+
 # [0.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.2.0...@pluralsight/ps-design-system-docs@0.3.0) (2020-09-21)
 
 

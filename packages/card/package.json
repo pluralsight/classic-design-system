@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "14.0.23",
+  "version": "14.0.24",
   "description": "Design System component for card ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,7 +23,7 @@
     "@pluralsight/ps-design-system-core": "^6.4.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
     "@pluralsight/ps-design-system-icon": "^18.2.3",
-    "@pluralsight/ps-design-system-util": "^5.1.0",
+    "@pluralsight/ps-design-system-util": "^5.2.0",
     "focus-within": "^3.0.2",
     "prop-types": "^15.7.2",
     "shiitake": "^3.0.2"
