@@ -1,7 +1,9 @@
+import React from 'react'
 import Badge from '@pluralsight/ps-design-system-badge'
 import Table from '@pluralsight/ps-design-system-table'
 import * as Text from '@pluralsight/ps-design-system-text'
-import React from 'react'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { colorsPink, colorsBlue } from '@pluralsight/ps-design-system-core'
 
 import * as styles from './prop.module.css'
 
@@ -13,11 +15,20 @@ interface PropProps {
   required?: boolean
 }
 export const Prop: React.FC<PropProps> = props => {
+  const themeName = useTheme()
   return (
     <>
       <Table.Row>
         <Table.Cell>
-          <code className={styles.nameCode}>{props.name}</code>
+          <code
+            className={styles.nameCode}
+            style={{
+              '--color':
+                themeName === Theme.names.light ? colorsPink[8] : colorsPink[4]
+            }}
+          >
+            {props.name}
+          </code>
 
           {props.required ? (
             <span className={styles.required}>
@@ -29,13 +40,29 @@ export const Prop: React.FC<PropProps> = props => {
         </Table.Cell>
 
         <Table.Cell>
-          <Text.Code>{props.type}</Text.Code>
+          <code
+            className={styles.typeCode}
+            style={{
+              '--color':
+                themeName === Theme.names.light ? colorsBlue[8] : colorsBlue[4]
+            }}
+          >
+            {props.type}
+          </code>
         </Table.Cell>
 
-        <Table.Cell>{props.desc}</Table.Cell>
+        <Table.Cell className={styles.desc}>{props.desc}</Table.Cell>
 
         <Table.Cell>
-          <Text.Code>{props.default}</Text.Code>
+          <code
+            className={styles.defaultCode}
+            style={{
+              '--color':
+                themeName === Theme.names.light ? colorsBlue[8] : colorsBlue[4]
+            }}
+          >
+            {props.default}
+          </code>
         </Table.Cell>
       </Table.Row>
     </>

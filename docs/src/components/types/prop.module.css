@@ -2,5 +2,15 @@
   margin-left: var(--psLayoutSpacingXSmall);
 }
 .nameCode {
-  color: var(--psColorsPink6);
+  color: var(--color);
+  font-weight: var(--psTypeFontWeightBold);
+}
+.typeCode {
+  color: var(--color);
+}
+.desc {
+  font-size: var(--psTypeFontSizeXSmall);
+}
+.defaultCode {
+  color: var(--color);
 }
