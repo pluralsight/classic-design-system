@@ -4,6 +4,7 @@ route: /components/dialog
 ---
 
 import Button from '@pluralsight/ps-design-system-button'
+import Link from '@pluralsight/ps-design-system-link'
 import { layout } from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import * as Text from '@pluralsight/ps-design-system-text'
@@ -23,8 +24,8 @@ import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialo
 ### In-app example
 
 Dialogs can appear automatically, or be triggered by hover, focus, tap or click.
-      
-```typescript 
+
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { Below } from '@pluralsight/ps-design-system-position'
@@ -89,7 +90,7 @@ export default Example
 
 Dialogs can be shown with or without a tail (a directional indicator).  To make the tail appear, use a `Dialog.tailPositions` option.
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { P } from '@pluralsight/ps-design-system-text'
@@ -166,7 +167,7 @@ function Example() {
     <div className="app" aria-hidden={isOpen}>
       <Button onClick={() => setOpen(!isOpen)}>Open Modal</Button>
     </div>
-    {isOpen && 
+    {isOpen &&
       <Dialog modal onClose={() => setOpen(false)} aria-label="example dialog" style={{ zIndex: 1 }}>
         <Heading>
           <h2>Lorem ipsum dolor sit amet.</h2>
@@ -192,7 +193,7 @@ export default Example
 ## Guidelines
 
 In most cases, dialogs can assume the user to digest the content following a Z-Pattern. Readers will start in the top/left, move horizontally to the top/right and then diagonally to the bottom/left before finishing with another horizontal movement to the bottom/right. By that measure, place your actions at the bottom/right, with the primary action on the right.
-      
+
 <Guideline
   do={
     <Dialog disableFocusOnMount>
@@ -244,7 +245,7 @@ Don’t use [modal](#modal) dialogs when displaying non-critical information tha
     <ModalGuidelineExample>
       <div className="dialog">
         <Dialog disableFocusOnMount>
-          Bookmark added. <Link href="">Undo?</Link>
+          Bookmark added. <Link><a href="#">Undo?</a></Link>
         </Dialog>
       </div>
       <style jsx>{`

@@ -19,7 +19,7 @@ import Button from '@pluralsight/ps-design-system-button'
 
 Buttons come in four standard visual styles.
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 
@@ -39,7 +39,7 @@ export default Example
 
 Buttons come in four standard sizes. The default size is `medium`.
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 
@@ -59,7 +59,7 @@ export default Example
 
 Buttons may include an icon to the left or right of the label. Read more [icon docs](/components/icon).
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import { CheckIcon, ChannelIcon, PlayIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
@@ -79,7 +79,7 @@ export default Example
 
 Buttons may include an icon without a label. Please provide a `title` prop to display the native tooltip as well as to support assistive technology (i.e. screen readers).
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import { UserIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
@@ -102,7 +102,7 @@ export default Example
 
 Each button may be displayed as disabled. Do not use disabled treatment for non-disabled buttons.
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import { UserIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
@@ -123,7 +123,7 @@ export default Example
 
 Elements that are visually equivalent to buttons but change the URL and link to a new experience should be rendered as HTML anchor tags. Provide an `href` prop, and the button will render as an anchor tag.
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import { UserIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
@@ -142,7 +142,7 @@ export default Example
 
 Many users of this component are using it in conjunction with [`react-router`](https://github.com/ReactTraining/react-router/issues/1176) . If you'd like to do the same and use `Button` to trigger react-router links, you can follow this pattern.
 
-```typescript 
+```typescript noRender
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
@@ -185,7 +185,7 @@ function Example() {
     >Loading...</Button>
   )
 }
- 
+
 export default Example
 ```
 
