@@ -1,5 +1,6 @@
 import { transform } from '@babel/core'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import cx from 'classnames'
 import { Language } from 'prism-react-renderer'
 import React, { HTMLAttributes, useContext } from 'react'
@@ -27,6 +28,8 @@ interface PreviewProps extends HTMLAttributes<HTMLDivElement> {
 export const Preview: React.FC<PreviewProps> = props => {
   const context = useContext(CodeBlockContext)
   const supported = SUPPORTED_LANGUAGES.includes(context.language)
+
+  if (!canUseDOM) return null
   if (context.noRender || !supported) return null
 
   const preview = formatPreview(props.code)
