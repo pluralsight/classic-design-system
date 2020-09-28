@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
 import { Helmet } from 'react-helmet'
@@ -26,11 +27,11 @@ export const query = graphql`
   }
 `
 
-interface PageContext {
+interface PageProps {
   data: {
     mdx: {
       body: string
-      frontmatter?: FrontMatter
+      frontmatter?: { name?: string }
       headings: {
         value: string
         depth: number
@@ -38,10 +39,7 @@ interface PageContext {
     }
   }
 }
-interface FrontMatter {
-  name?: string
-}
-export default function Page(props) {
+const Page: React.FC<PageProps> = props => {
   const name = props.data.mdx.frontmatter?.name
   const title = `${name ? name + ' | ' : ''}Pluralsight Design System`
 
@@ -56,3 +54,5 @@ export default function Page(props) {
     </MDXProvider>
   )
 }
+
+export default Page
