@@ -53,6 +53,7 @@ import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import Typeahead from '@pluralsight/ps-design-system-typeahead'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
+import * as util from '@pluralsight/ps-design-system-util'
 
 import React from 'react'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
@@ -119,6 +120,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-theme': { Theme },
   '@pluralsight/ps-design-system-tooltip': { Tooltip },
   '@pluralsight/ps-design-system-typeahead': { Typeahead },
+  '@pluralsight/ps-design-system-util': { ...util },
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
   react: { React, ...React },

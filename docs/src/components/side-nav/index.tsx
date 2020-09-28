@@ -63,6 +63,10 @@ const items = [
         title: 'Color'
       },
       {
+        href: '/core/iconography',
+        title: 'Iconography'
+      },
+      {
         href: '/core/typography',
         title: 'Typography'
       },
@@ -73,6 +77,10 @@ const items = [
       {
         href: '/core/spacing',
         title: 'Spacing'
+      },
+      {
+        href: '/core/voice',
+        title: 'Voice & tone'
       }
     ]
   },
@@ -194,6 +202,11 @@ const items = [
       {
         href: '/components/switch',
         title: 'Switch'
+      },
+
+      {
+        href: '/components/form',
+        title: 'Form'
       }
     ]
   },
@@ -228,6 +241,10 @@ const items = [
       {
         href: '/components/row',
         title: 'Row'
+      },
+      {
+        href: '/components/emptystate',
+        title: 'Empty state'
       },
       {
         href: '/components/card',

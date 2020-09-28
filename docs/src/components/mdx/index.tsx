@@ -10,7 +10,7 @@ import { CodeBlock } from '../code-block'
 import * as styles from './index.module.css'
 
 export const A: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => {
-  const isExternal = /http/.test(props.href)
+  const isExternal = props.href.includes('http')
   return (
     <DSLink>
       {isExternal ? (
