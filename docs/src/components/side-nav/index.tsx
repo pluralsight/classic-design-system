@@ -77,6 +77,10 @@ const items = [
       {
         href: '/core/spacing',
         title: 'Spacing'
+      },
+      {
+        href: '/core/voice',
+        title: 'Voice & tone'
       }
     ]
   },

@@ -47,7 +47,6 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   result.data.allMdx.edges.forEach(({ node }) => {
-    console.log({ node })
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/page.tsx`),
