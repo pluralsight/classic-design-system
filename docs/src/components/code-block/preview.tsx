@@ -26,10 +26,10 @@ interface PreviewProps extends HTMLAttributes<HTMLDivElement> {
   code: string
 }
 export const Preview: React.FC<PreviewProps> = props => {
-  if (!canUseDOM) return null
-
   const context = useContext(CodeBlockContext)
   const supported = SUPPORTED_LANGUAGES.includes(context.language)
+
+  if (!canUseDOM) return null
   if (context.noRender || !supported) return null
 
   const preview = formatPreview(props.code)
