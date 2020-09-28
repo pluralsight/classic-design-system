@@ -1,3 +1,15 @@
+.centeredExample {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  & > p {
+    margin: 0;
+  }
+}
+
 .principalHeader {
   display: inline-block;
 }
@@ -10,7 +22,10 @@
 
 .quote {
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
   font-size: var(--psTypeFontSizeMedium);
+  justify-content: center;
   padding: var(--psLayoutSpacingLarge) var(--psLayoutSpacingXLarge);
   position: relative;
   quotes: '“' '”' '‘' '’';
@@ -47,4 +62,9 @@
     background: var(--psColorsBackgroundLight2);
     color: var(--psColorsTextIconHighOnLight);
   }
+}
+
+.quoteList {
+  list-style: none;
+  font-size: var(--psTypeFontSizeXSmall);
 }

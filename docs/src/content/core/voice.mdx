@@ -3,11 +3,12 @@ name: Voice & tone
 route: /core/voice
 ---
 
+import Button from '@pluralsight/ps-design-system-button'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import { Heading, P } from '@pluralsight/ps-design-system-text'
 
-import { Intro } from '../../components/component'
-import { PrincipleHeader, Quote } from '../../components/voice'
+import { Guideline, Intro } from '../../components/component'
+import { CenteredExample, PrincipleHeader, Quote, QuoteList } from '../../components/voice'
 
 # Voice & tone
 
@@ -118,16 +119,18 @@ creating excitement.
   </P>
 
   <Quote>
-    <ul>
-      <li>Learn now</li>
-      <li>Get started</li>
-      <li>Get your IQ</li>
-    </ul>
-    <ul>
-      <li>Watch a course</li>
-      <li>Start a path</li>
-      <li>Tell us more</li>
-    </ul>
+    <EqualColumnLayout count={EqualColumnLayout.counts.two}>
+      <QuoteList>
+        <li>Learn now</li>
+        <li>Get started</li>
+        <li>Get your IQ</li>
+      </QuoteList>
+      <QuoteList>
+        <li>Watch a course</li>
+        <li>Start a path</li>
+        <li>Tell us more</li>
+      </QuoteList>
+    </EqualColumnLayout>
   </Quote>
 </EqualColumnLayout>
 
@@ -137,8 +140,163 @@ Do all you can to prevent errors, but when they occur, use the opportunity to
 help users understand what happened and how to get through it. Follow these 3
 guidelines when writing error messages:
 
-> TODO
+### 1. Explain what happened and why
+
+Be clear about what’s going on. Give the right amount of detail, but don’t get
+too technical. Write in a way that anyone could easily understand without
+using jargon.
+
+<Guideline
+  do={
+    <CenteredExample>
+      <P><strong>Your credit card has expired</strong></P>
+      <P>Update your payment method to restore your subscription.</P>
+    </CenteredExample>
+  }
+  dont={
+    <CenteredExample>
+      <P><strong>Billing Error</strong></P>
+    </CenteredExample>
+  }
+/>
+
+### 2. Suggest a next step
+
+After you explain what happened, tell the user what they can do to resolve the
+issue. If possible include a button, a link, or another call to action.
+
+<Guideline
+  do={
+    <CenteredExample>
+      <P><strong>There was a problem loading the video</strong></P>
+      <br />
+      <Button>Try again</Button>
+    </CenteredExample>
+  }
+  dont={
+    <CenteredExample>
+      <P><strong>Error 7007</strong></P>
+      <P>Unable to play video</P>
+    </CenteredExample>
+  }
+/>
+
+### 3. Match the tone to the context
+
+Avoid being robotic or silly. Remember, something went wrong, now's your time
+to help them through it in a friendly way.
+
+<Guideline
+  do={
+    <CenteredExample>
+      <P>That password doesn’t match. Try again?</P>
+    </CenteredExample>
+  }
+  dont={
+    <CenteredExample>
+      <P>Yo, big problemo! The password you provided doesn’t match. Wanna try that again?</P>
+    </CenteredExample>
+  }
+/>
 
 ## Formatting
 
-> TODO
+<EqualColumnLayout count={EqualColumnLayout.counts.two}>
+  <div>
+    <Heading size={Heading.sizes.medium}>
+      <h3>Time</h3>
+    </Heading>
+    <P>
+      Follow AP conventions, only listing a.m. or p.m. on one of the times
+      unless the time spans both a.m. and p.m. Drop :00 from any times that
+      start at the hour. Use noon or midnight vs. 12 a.m. and 12 p.m.
+    </P>
+  </div>
+  <Quote>
+    10:30 a.m.–1 p.m.
+    <br />
+    Noon–3 p.m.
+    <br />
+    1–5:30 p.m.
+  </Quote>
+</EqualColumnLayout>
+
+<EqualColumnLayout count={EqualColumnLayout.counts.two}>
+  <div>
+    <Heading size={Heading.sizes.medium}>
+      <h3>Dates</h3>
+    </Heading>
+    <P>
+      Do not use contractions (st, th, etc.) within a complete sentence. Do not
+      use leading zeros on days. Feel free to abbreviate months. Use four
+      digit year.
+    </P>
+  </div>
+  <Quote>
+    On May 15, Microsoft announced…
+    <br />
+    Jan 23, 2017
+    <br />
+    Jan 2017
+  </Quote>
+</EqualColumnLayout>
+
+<EqualColumnLayout count={EqualColumnLayout.counts.two}>
+  <div>
+    <Heading size={Heading.sizes.medium}>
+      <h3>Numbers</h3>
+    </Heading>
+    <P>For numerals over 999, insert a comma for clarity.</P>
+  </div>
+  <Quote>1,643</Quote>
+</EqualColumnLayout>
+
+<EqualColumnLayout count={EqualColumnLayout.counts.two}>
+  <div>
+    <Heading size={Heading.sizes.medium}>
+      <h3>Duration</h3>
+    </Heading>
+    <P>
+      When listing duration of long content, round to the nearest hour or
+      minute, with no leading zeros. For approximate durations, round to nearest
+      appropriate value. For short and exact duration, display standard time
+      format, no leading zeros.
+    </P>
+  </div>
+  <Quote>
+    23h 8m
+    <br />
+    23h
+    <br />
+    About 1 hour
+    <br />
+    About 30 minutes
+    <br />
+    4:54
+  </Quote>
+</EqualColumnLayout>
+
+<EqualColumnLayout count={EqualColumnLayout.counts.two}>
+  <div>
+    <Heading size={Heading.sizes.medium}>
+      <h3>Names</h3>
+    </Heading>
+    <P>
+      When listing a single author or owner, display full name. If listing
+      multiple and space is limited, abbreviating to last name only is
+      acceptable. Do not use “By” in the beginning of an author(s) string.
+    </P>
+  </div>
+  <Quote>
+    Gary Eimerman
+    <br />
+    Gary Eimerman, Troy Hunt
+    <br />
+    Eimerman, Hunt
+    <br />
+    Gary Eimerman, Troy Hunt, Lars Klint
+    <br />
+    Eimerman, +2
+  </Quote>
+</EqualColumnLayout>
+
