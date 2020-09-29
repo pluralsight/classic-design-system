@@ -40,4 +40,8 @@
   @media (--breakpoint-medium) {
     margin-right: var(--metaWidth);
   }
+
+  &.mainFullWidth {
+    margin-right: 0;
+  }
 }
