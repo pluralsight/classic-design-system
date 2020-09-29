@@ -1,18 +1,17 @@
 // NOTE: proptypes linking Item is done in index.js to avoid circular menu-item dependency
 /* eslint react/prop-types: 0 */
 
-import { css, compose } from 'glamor'
+import { css, compose, keyframes } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import React, { createContext, useImperativeHandle } from 'react'
+import React, { createContext, HTMLAttributes } from 'react'
 import {
-  useMenuRef,
   handleMenuKeyDownEvents,
   handleMenuKeyUpEvents,
-  useCloseOnDocumentEvents
+  useCloseOnDocumentEvents,
 } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css/index.js'
 
-const slide = css.keyframes(
+const slide = keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
 )
 
@@ -25,7 +24,14 @@ const styles = ({ origin }) =>
 
 export const ActionMenuContext = createContext()
 
-export const ActionMenu = React.forwardRef(
+interface Props extends HTMLAttributes<HTMLUListElement> {
+  children: React.ReactNode | Array<React.ReactNode>;
+  onClose: () => void;
+  origin: string;
+  onClick: (Event) => void;
+}
+
+export const ActionMenu: React.FC<Props> = React.forwardRef(
   ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
     const fallbackRef = React.useRef()
     const ref = forwardedRef || fallbackRef

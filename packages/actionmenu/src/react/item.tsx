@@ -5,7 +5,8 @@ import React, {
   useRef,
   forwardRef,
   useImperativeHandle,
-  useContext
+  useContext,
+  HTMLAttributes
 } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -15,12 +16,12 @@ import { ActionMenuContext } from './menu.js'
 import { Arrow } from './arrow.js'
 
 const styles = {
-  itemContainer: ({ disabled }) =>
+  itemContainer: ({ disabled }: { disabled: boolean}) =>
     compose(
       css(stylesheet['.psds-actionmenu__item-container']),
       disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
     ),
-  item: ({ hasSubMenu }) =>
+  item: ({ hasSubMenu }: { hasSubMenu: boolean}) =>
     compose(
       css(stylesheet['.psds-actionmenu__item']),
       css({
@@ -30,8 +31,8 @@ const styles = {
       }),
       hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
     ),
-  inner: _ => css(stylesheet['.psds-actionmenu__item-inner']),
-  nested: ({ origin }) =>
+  inner:  () => css(stylesheet['.psds-actionmenu__item-inner']),
+  nested: ({ origin }: { origin: string}) =>
     compose(
       css(stylesheet['.psds-actionmenu']),
       css(stylesheet['.psds-actionmenu__nested']),
@@ -39,10 +40,21 @@ const styles = {
         stylesheet[`.psds-actionmenu__nested.psds-actionmenu--origin-${origin}`]
       )
     ),
-  textOnly: _ => css(stylesheet['.psds-actionmenu__text-only'])
+  textOnly: () => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-export const Item = forwardRef(
+interface Props  {
+  children: React.ReactNode;
+  disabled: boolean;
+  tagName: string;
+  className: string;
+  origin: string;
+  onClick: (event: React.MouseEvent, value: string | number ) => void;
+  nested: React.ReactNode | Array<React.ReactNode>;
+  value: string | number;
+}
+
+export const Item: React.FC<Props> = forwardRef(
   (
     {
       disabled,
@@ -57,7 +69,7 @@ export const Item = forwardRef(
     },
     forwardedRef
   ) => {
-    const { onClickContext, onClose, originContext } = useContext(
+    const { onClickContext, onClose, originContext } : { onClickContext : (e: Event, v: string | number) => void } = useContext(
       ActionMenuContext
     )
     const ref = useRef()
@@ -98,15 +110,15 @@ export const Item = forwardRef(
         {...styles.itemContainer({ disabled })}
         role="none"
         ref={ref}
-        disabled={disabled}
-        tabIndex={!disabled ? '-1' : undefined}
+        data-disabled={disabled}
+        tabIndex={!disabled ? -1 : undefined}
         onKeyDown={handleKeyDown}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         <TagName
           {...filterReactProps(rest, { tagName })}
-          {...styles.item({ disabled, hasSubMenu })}
+          {...styles.item({ hasSubMenu })}
           aria-haspopup={!!nested}
           role="menuitem"
           disabled={disabled}

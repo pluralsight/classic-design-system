@@ -14,15 +14,6 @@ ActionMenu.Item = Item
 ActionMenu.Divider = Divider
 ActionMenu.origins = vars.origins
 ActionMenu.tagName = vars.tagName
-ActionMenu.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  onClose: PropTypes.func,
-  origin: PropTypes.string,
-  onClick: PropTypes.func
-}
 ActionMenu.defaultProps = {
   onClose: () => {},
   origin: vars.origins.topLeft
