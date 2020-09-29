@@ -44,7 +44,8 @@ export const TableOfContents: React.FC<TableOfContentsProps> = props => {
           .filter(h => h.depth > 1)
           .map(h => {
             const href = '#' + slugger.slug(h.value)
-            return h.depth == 2 ? (
+
+            return h.depth === 2 ? (
               <VerticalTabs.Tier1
                 key={h.value}
                 header={
