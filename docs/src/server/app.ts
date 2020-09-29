@@ -25,7 +25,7 @@ export async function createApp(
 
   app.use(correlationIds.middleware())
 
-  app.use(helmet({ referrerPolicy: { policy: ['strict-origin'] } }))
+  app.use(helmet({ contentSecurityPolicy: false }))
   app.use(responseTime())
 
   app.use(express.static(config.publicDir))
