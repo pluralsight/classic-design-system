@@ -7,7 +7,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 
-import ActionMenu from '../index.js'
+import ActionMenu from '../'
 
 storiesOf('menu items', module)
   .add('one', _ => (

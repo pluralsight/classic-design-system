@@ -8,7 +8,7 @@ import {
   type
 } from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars/index'
 
 const menuOriginLeft = {
   transform: `translate(calc(-100% + calc(-1 * ${layout.spacingXSmall})),0)`,

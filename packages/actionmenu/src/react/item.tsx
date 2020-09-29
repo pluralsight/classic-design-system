@@ -10,10 +10,10 @@ import React, {
 } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import stylesheet from '../css/index.js'
-import { tagName } from '../vars/index.js'
-import { ActionMenuContext } from './menu.js'
-import { Arrow } from './arrow.js'
+import stylesheet from '../css/index'
+import { tagName } from '../vars/index'
+import { ActionMenuContext } from './context'
+import { Arrow } from './arrow'
 
 const styles = {
   itemContainer: ({ disabled }: { disabled: boolean}) =>
@@ -43,18 +43,17 @@ const styles = {
   textOnly: () => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-interface Props  {
-  children: React.ReactNode;
+interface Props extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'>  {
   disabled: boolean;
   tagName: string;
   className: string;
   origin: string;
   onClick: (event: React.MouseEvent, value: string | number ) => void;
-  nested: React.ReactNode | Array<React.ReactNode>;
+  nested: React.ReactNode;
   value: string | number;
 }
 
-export const Item: React.FC<Props> = forwardRef(
+export const Item = forwardRef<HTMLLIElement, Props>(
   (
     {
       disabled,
@@ -69,7 +68,11 @@ export const Item: React.FC<Props> = forwardRef(
     },
     forwardedRef
   ) => {
-    const { onClickContext, onClose, originContext } : { onClickContext : (e: Event, v: string | number) => void } = useContext(
+    const { onClickContext, onClose, originContext }  = useContext<{
+      onClickContext : (e: Event, v: string | number) => void,
+      onClose: (e: Event, v: string | number) => void,
+      originContext: string
+    }>(
       ActionMenuContext
     )
     const ref = useRef()

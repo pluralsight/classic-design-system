@@ -2,7 +2,7 @@ import { css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import React, {HTMLAttributes} from 'react'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css/index'
 
 const styles = {
   divider: () => css(stylesheet['.psds-actionmenu__divider'])

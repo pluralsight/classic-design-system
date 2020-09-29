@@ -1,7 +1,7 @@
 import { css } from 'glamor'
 import React, {HTMLAttributes} from 'react'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css/index'
 
 const styles = {
   arrow: () => css(stylesheet['.psds-actionmenu__item__arrow']),

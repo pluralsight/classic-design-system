@@ -1,7 +1,6 @@
 import { css } from 'glamor'
 import React, {HTMLAttributes} from 'react'
-import PropTypes from 'prop-types'
-import stylesheet from '../css/index.js'
+import stylesheet from '../css/index'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 const styles = ({ marginLeft, marginRight }) =>
