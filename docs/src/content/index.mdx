@@ -1,26 +1,8 @@
 ---
-name: Hello world
+name: Home
 route: /
 ---
 
-# Hello World
+import { HomePage } from './index.tsx'
 
-```typescript switcher
----
-title: some title
-description: the description
----
-const Comp = React.FC = () => <p>example 1</p>
-
-export default Comp
-
-===
-
----
-title: some title 2
-description: the description
----
-const Comp = React.FC = () => <p>example 2</p>
-
-export default Comp
-```
+<HomePage />

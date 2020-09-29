@@ -55,6 +55,25 @@ export const SideNav: React.FC<Props> = () => {
 const items = [
   {
     header: {
+      title: 'Guides'
+    },
+    items: [
+      {
+        href: '/guides/designworkflow',
+        title: 'Design workflow'
+      },
+      {
+        href: '/guides/developmentworkflow',
+        title: 'Development workflow'
+      },
+      {
+        href: '/guides/contribute',
+        title: 'Contribute'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Core'
     },
     items: [

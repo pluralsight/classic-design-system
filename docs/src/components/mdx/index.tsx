@@ -15,7 +15,7 @@ import { Usage } from '../usage'
 import * as styles from './index.module.css'
 
 export const A: React.FC<AllHTMLAttributes<HTMLAnchorElement>> = props => {
-  const isExternal = props.href.includes('http')
+  const isExternal = /[a-z]+:\/\//.test(props.href)
   return (
     <DSLink>
       {isExternal ? (
@@ -75,6 +75,8 @@ export const Ul: React.FC<HTMLAttributes<HTMLUListElement>> = props => (
   <Text.List type={Text.List.types.bulleted} {...props} />
 )
 
+export const P = Text.P
+
 const components = {
   a: A,
   A,
@@ -87,7 +89,7 @@ const components = {
   inlineCode: Text.Code,
   Intro,
   ol: Ol,
-  p: Text.P,
+  p: P,
   pre: props => <div {...props} />,
   TableOfContents,
   TypesTable: Types.Table,
