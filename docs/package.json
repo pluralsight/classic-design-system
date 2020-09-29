@@ -11,7 +11,7 @@
     "build": "npm-run-all -s build:gatsby build:server build:assets",
     "build:assets": "copyfiles --up 1 ./src/**/*.{html,json} dist",
     "build:gatsby": "gatsby build",
-    "build:server": "tsc --project ./tsconfig.json",
+    "build:server": "tsc -b src/server",
     "dev:gatsby": "gatsby develop",
     "dev:server": " nodemon | bunyan -o short",
     "start": "node ./dist/server/main.js",
