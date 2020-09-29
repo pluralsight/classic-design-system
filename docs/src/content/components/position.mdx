@@ -5,15 +5,12 @@ route: /components/position
 
 import Position from '@pluralsight/ps-design-system-position'
 
-import { Intro, Types, Usage } from '../../components/component'
-
 # Position
 
 <Intro>
   The Position component is a utility meant to help one control position of
   elements relative to other elements, for example, tooltips above a button.
 </Intro>
-
 
 ## Examples
 
@@ -187,7 +184,7 @@ export default Example
 
 ## Positions
 
-```typescript
+```typescript noRender
 import Button from '@pluralsight/ps-design-system-button'
 import { layout } from '@pluralsight/ps-design-system-core'
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
@@ -299,33 +296,33 @@ import {
   packageName="position"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="React.ReactNode"
     desc="target element something will be relative to"
     required
   />
-  <Types.Prop
+  <TypesProp
     name="inNode"
     type="HTMLElement"
     desc="specific node for portal rendering"
     default="document.body"
   />
-  <Types.Prop
+  <TypesProp
     name="show"
     type="React.ReactNode"
     desc="element placed in relation to target"
   />
-  <Types.Prop
+  <TypesProp
     name="target"
     type="Ref"
     desc="reference to custom target"
   />
-  <Types.Prop
+  <TypesProp
     name="when"
     type="boolean"
     desc="conditional rendering of positioned element"
     default="true"
   />
-</Types.Table>
+</TypesTable>
