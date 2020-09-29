@@ -26,7 +26,6 @@
     "@pluralsight/ps-design-system-icon": "^18.2.3",
     "@pluralsight/ps-design-system-util": "^5.2.0",
     "exenv": "^1.2.2",
-    "glamorous": "^5.0.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
