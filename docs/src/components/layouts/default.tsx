@@ -27,6 +27,7 @@ const DefaultLayout: React.FC<LayoutProps> = props => {
       <Helmet title={title}>
         <link rel="shortcut icon" type="image/png" href={favicon} />
       </Helmet>
+
       <Frame aside={<SideNav />}>{children}</Frame>
     </MDXProvider>
   )

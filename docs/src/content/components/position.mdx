@@ -4,6 +4,7 @@ route: /components/position
 ---
 
 import Position from '@pluralsight/ps-design-system-position'
+import IframeResizer from 'iframe-resizer-react'
 
 # Position
 
@@ -52,7 +53,6 @@ const Example: React.FC = props => {
 
 export default Example
 ```
-
 
 ### Portal override
 
@@ -184,103 +184,11 @@ export default Example
 
 ## Positions
 
-```typescript noRender
-import Button from '@pluralsight/ps-design-system-button'
-import { layout } from '@pluralsight/ps-design-system-core'
-import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
-import Tooltip from '@pluralsight/ps-design-system-tooltip'
-import React from 'react'
-
-import { Above, AboveLeft, AboveRight } from '@pluralsight/ps-design-system-position'
-import { Below, BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
-import { LeftOf, RightOf } from '@pluralsight/ps-design-system-position'
-
-const Example: React.FC = props => {
-  return (
-    <React.Fragment>
-      <div className="examples">
-        <div className="example">
-          <Above show={<Tooltip>Above</Tooltip>}>
-            <Target />
-          </Above>
-        </div>
-
-        <div className="example">
-          <AboveLeft show={<Tooltip>AboveLeft</Tooltip>}>
-            <Target />
-          </AboveLeft>
-        </div>
-
-        <div className="example">
-          <AboveRight show={<Tooltip>AboveRight</Tooltip>}>
-            <Target />
-          </AboveRight>
-        </div>
-
-        <div className="example">
-          <Below show={<Tooltip>Below</Tooltip>}>
-            <Target />
-          </Below>
-        </div>
-
-        <div className="example">
-          <BelowLeft show={<Tooltip>BelowLeft</Tooltip>}>
-            <Target />
-          </BelowLeft>
-        </div>
-
-        <div className="example">
-          <BelowRight show={<Tooltip>BelowRight</Tooltip>}>
-            <PlaceholderIcon />
-          </BelowRight>
-        </div>
-
-        <div className="example">
-          <LeftOf show={<Tooltip>LeftOf</Tooltip>}>
-            <Target />
-          </LeftOf>
-        </div>
-
-        <div className="example">
-          <RightOf show={<Tooltip>RightOf</Tooltip>}>
-            <Target />
-          </RightOf>
-        </div>
-      </div>
-
-      <style jsx>{`
-        .examples {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, auto));
-          gap: ${layout.spacingLarge};
-          justify-items: start;
-        }
-        .example {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 200px;
-          outline: 2px dashed lightgrey;
-        }
-      `}</style>
-    </React.Fragment>
-  )
-}
-
-const Target = forwardRef<HTMLButtonElement>((_props, ref) => (
-  <Button
-    appearance={Button.appearances.flat}
-    disabled
-    icon={<PlaceholderIcon />}
-    title="Target"
-    ref={ref}
-  />
-))
-
-export default Example
-```
-
+<IframeResizer
+  frameborder="0"
+  src="/examples/position"
+  style={{ width: '1px', minWidth: '100%'}}
+/>
 
 ## Usage & types
 
