@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-screenreaderonly",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "ScreenReaderOnly UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,7 +24,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.2",
-    "@pluralsight/ps-design-system-util": "^5.1.0",
+    "@pluralsight/ps-design-system-util": "^5.2.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {

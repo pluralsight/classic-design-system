@@ -3,9 +3,9 @@ name: Radio
 route: /components/radio
 ---
 
-import { Intro, Types, Usage } from '../../components/component'
-
 # Radio
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -126,22 +126,22 @@ export default Comp
 
 ### Radio.Group
 
-<Types.Table>
-  <Types.Prop name="disable" type="boolean" desc="standard input disable flag" default="false"/>
-  <Types.Prop name="error" type="boolean" desc="error state flag" default="false"/>
-  <Types.Prop name="label" type="string" desc="identifying string for group"/>
-  <Types.Prop name="name" type="string" desc="form data identifier"/>
-  <Types.Prop name="onChange" type="(Event, value: any) => void" desc="triggers on radio select"/>
-  <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging"/>
-  <Types.Prop name="value" type="string | number" desc="if Radio.Group is controlled current selected radio value else if uncontrolled initial selected value"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="disable" type="boolean" desc="standard input disable flag" default="false"/>
+  <TypesProp name="error" type="boolean" desc="error state flag" default="false"/>
+  <TypesProp name="label" type="string" desc="identifying string for group"/>
+  <TypesProp name="name" type="string" desc="form data identifier"/>
+  <TypesProp name="onChange" type="(Event, value: any) => void" desc="triggers on radio select"/>
+  <TypesProp name="subLabel" type="string" desc="supporting text or error messaging"/>
+  <TypesProp name="value" type="string | number" desc="if Radio.Group is controlled current selected radio value else if uncontrolled initial selected value"/>
+</TypesTable>
 
 ### Radio.Button
 
-<Types.Table>
-  <Types.Prop name="label" type="React.ReactNode" desc="display text"/>
-  <Types.Prop name="onBlur" type="(Event) => void" desc="triggers on radio blur"/>
-  <Types.Prop name="onClick" type="(Event, value: any) => void" desc="triggers on radio select"/>
-  <Types.Prop name="onFocus" type="(Event) => void" desc="triggers on radio focus"/>
-  <Types.Prop name="value" type="string | number" desc="radio option value"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="label" type="React.ReactNode" desc="display text"/>
+  <TypesProp name="onBlur" type="(Event) => void" desc="triggers on radio blur"/>
+  <TypesProp name="onClick" type="(Event, value: any) => void" desc="triggers on radio select"/>
+  <TypesProp name="onFocus" type="(Event) => void" desc="triggers on radio focus"/>
+  <TypesProp name="value" type="string | number" desc="radio option value"/>
+</TypesTable>

@@ -3,8 +3,6 @@ name: Feature flags
 route: /components/featureflags
 ---
 
-import { Intro, Types, Usage } from '../../components/component'
-
 # Feature flags
 
 <Intro>
@@ -12,6 +10,8 @@ import { Intro, Types, Usage } from '../../components/component'
   uniformly across the product. This allows teams to independently develop
   and deploy.
 </Intro>
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -102,16 +102,16 @@ export default Example
   packageName="featureflags"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="React.ReactNode"
     desc="children that need this context"
   />
-  <Types.Prop
+  <TypesProp
     name="flags"
     type="{ [name:string]: string | boolean | number }[]"
     desc="dictionary of flag names and values"
     default="{}"
   />
-</Types.Table>
+</TypesTable>

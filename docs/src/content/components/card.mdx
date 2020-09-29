@@ -5,9 +5,9 @@ route: /components/card
 
 import Card from '@pluralsight/ps-design-system-card'
 
-import { Types, Usage } from '../../components/component'
-
 # Card
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -386,36 +386,36 @@ export default Example
 
 ### Card
 
-<Types.Table>
-  <Types.Prop name="actionBar" type="Card.Action[]" desc="top-right action buttons" />
-  <Types.Prop name="actionBarVisible" type="boolean" desc="lock action bar on" default="false" />
-  <Types.Prop name="bonusBar" type="React.ReactNode" desc="freeform space in image bottom-left" />
-  <Types.Prop name="fullOverlay" type="Card.FullOverlayLink" desc="hover state for image" />
-  <Types.Prop name="fullOverlayVisible" type="boolean" desc="lock full overlay on" default="false" />
-  <Types.Prop name="image" required type="Card.Image | Card.ImageLink > a > Card.Image" desc="main image or linked image" />
-  <Types.Prop name="metadata1" type="string[] | React.ReactNode[]" desc="first row of metadata" />
-  <Types.Prop name="metadata2" type="string[] | React.ReactNode[]" desc="second row of metadata" />
-  <Types.Prop name="progress" type="number" desc="progress 0-100" />
-  <Types.Prop name="size" type={<Types.Enum enum={Card.sizes} />} desc="size of card (from Card.sizes)" default="medium" />
-  <Types.Prop name="tag" type="Card.Tag" desc="categorization label in top-left" />
-  <Types.Prop name="title" required required type="Card.TextLink > a > Card.Title | Card.Title" desc="card title or linked title" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="actionBar" type="Card.Action[]" desc="top-right action buttons" />
+  <TypesProp name="actionBarVisible" type="boolean" desc="lock action bar on" default="false" />
+  <TypesProp name="bonusBar" type="React.ReactNode" desc="freeform space in image bottom-left" />
+  <TypesProp name="fullOverlay" type="Card.FullOverlayLink" desc="hover state for image" />
+  <TypesProp name="fullOverlayVisible" type="boolean" desc="lock full overlay on" default="false" />
+  <TypesProp name="image" required type="Card.Image | Card.ImageLink > a > Card.Image" desc="main image or linked image" />
+  <TypesProp name="metadata1" type="string[] | React.ReactNode[]" desc="first row of metadata" />
+  <TypesProp name="metadata2" type="string[] | React.ReactNode[]" desc="second row of metadata" />
+  <TypesProp name="progress" type="number" desc="progress 0-100" />
+  <TypesProp name="size" type={<TypesEnum enum={Card.sizes} />} desc="size of card (from Card.sizes)" default="medium" />
+  <TypesProp name="tag" type="Card.Tag" desc="categorization label in top-left" />
+  <TypesProp name="title" required required type="Card.TextLink > a > Card.Title | Card.Title" desc="card title or linked title" />
+</TypesTable>
 
 ### Card.Action
 
-<Types.Table>
-  <Types.Prop name="icon" required type="Icon" desc="icon representing action" />
-  <Types.Prop name="title" required />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="icon" required type="Icon" desc="icon representing action" />
+  <TypesProp name="title" required />
+</TypesTable>
 
 ### Card.Image
 
-<Types.Table>
-  <Types.Prop name="src" required type="string" desc="image url" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="src" required type="string" desc="image url" />
+</TypesTable>
 
 ### Card.Tag
 
-<Types.Table>
-  <Types.Prop name="icon" type="Icon" desc="tag icon" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="icon" type="Icon" desc="tag icon" />
+</TypesTable>

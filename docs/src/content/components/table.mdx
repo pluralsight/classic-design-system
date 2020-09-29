@@ -5,9 +5,9 @@ route: /components/theme
 
 import Table from '@pluralsight/ps-design-system-table'
 
-import { Types, Usage } from '../../components/component'
-
 # Table
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -380,66 +380,66 @@ export default Example
 
 ### Table
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="Table.Row | Drawer"
     desc="content of table, per row"
   />
-  <Types.Prop
+  <TypesProp
     name="inDrawer"
     type="boolean"
     desc="used to add additional styles when table is nested in a Drawer"
     default="false"
   />
-</Types.Table>
+</TypesTable>
 
 ### Table.Cell
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="align"
-    type={<Types.Enum enum={Table.aligns} />}
+    type={<TypesEnum enum={Table.aligns} />}
     desc="text alignment"
     default={Table.aligns.left}
   />
-  <Types.Prop
+  <TypesProp
     name="emphasis"
     type="boolean"
     desc="highlight content priority"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="flex"
     type="string"
     desc="flex css attribute to control column width"
   />
-</Types.Table>
+</TypesTable>
 
 ### Table.ColumnHeader
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="align"
-    type={<Types.Enum enum={Table.aligns} />}
+    type={<TypesEnum enum={Table.aligns} />}
     desc="text alignment"
     default={Table.aligns.left}
   />
-  <Types.Prop
+  <TypesProp
     name="flex"
     type="(sort) => void"
     desc="triggered on header click, returns event as first argument. If sort prop applied new sort direction returned as second argument "
   />
-  <Types.Prop
+  <TypesProp
     name="onClick"
     type="boolean"
     desc="highlight content priority"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="sort"
-    type={<Types.Enum enum={Table.sorts} />}
+    type={<TypesEnum enum={Table.sorts} />}
     desc="labels column as sortable or sorted"
   />
-</Types.Table>
+</TypesTable>
 

@@ -7,6 +7,7 @@ import { MDXProvider } from '../components/mdx'
 import favicon from './favicon.png'
 import { Frame } from '../components/frame'
 import { SideNav } from '../components/side-nav'
+import { Heading, TableOfContents } from '../components/table-of-contents'
 
 export const query = graphql`
   query($slug: String!) {
@@ -31,14 +32,15 @@ interface PageProps {
   data: {
     mdx: {
       body: string
-      frontmatter?: { name?: string }
-      headings: {
-        value: string
-        depth: number
-      }[]
+      frontmatter?: FrontMatter
+      headings: Heading[]
     }
   }
 }
+interface FrontMatter {
+  name?: string
+}
+
 const Page: React.FC<PageProps> = props => {
   const name = props.data.mdx.frontmatter?.name
   const title = `${name ? name + ' | ' : ''}Pluralsight Design System`
@@ -49,7 +51,9 @@ const Page: React.FC<PageProps> = props => {
         <link rel="shortcut icon" type="image/png" href={favicon} />
       </Helmet>
       <Frame aside={<SideNav />}>
-        <MDXRenderer>{props.data.mdx.body}</MDXRenderer>
+        <MDXRenderer headings={props.data.mdx.headings}>
+          {props.data.mdx.body}
+        </MDXRenderer>
       </Frame>
     </MDXProvider>
   )

@@ -5,9 +5,9 @@ route: /components/verticaltabs
 
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 
-import { Types, Usage } from '../../components/component'
-
 # Vertical tabs
+
+<TableOfContents {...props} />
 
 ## In-app example
 
@@ -278,7 +278,7 @@ export default Example
 
 Many users of this component are using it in conjunction with `react-router`. If you'd like to do the same and use `VerticalTabs.Tier1` or `VerticalTabs.Tier2` to trigger `react-router` links, you can follow this pattern.
 
-```typescript startExpanded=false
+```typescript noRender
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import React from 'react'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
@@ -329,151 +329,151 @@ export default Example
 
 ### VerticalTabs.Group
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="VerticalTabs.Tier1[]"
     desc="VerticalTabs.Tier1 components"
   />
-  <Types.Prop
+  <TypesProp
     name="header"
     type="VerticalTabs.Group.Header"
     desc="slot group header into position"
   />
-  <Types.Prop
+  <TypesProp
     name="forceCollapsed"
     type="boolean"
     desc="force lists to be collapsed"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="hideLabels"
     type="boolean"
     desc="hide text labels"
     default="false"
   />
-</Types.Table>
+</TypesTable>
 
 ### VerticalTabs.Group.Header
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="string"
     desc="header text"
   />
-  <Types.Prop
+  <TypesProp
     name="tagName"
     type="string"
     desc="change default tag of header root tag"
     default="h2"
   />
-</Types.Table>
+</TypesTable>
 
 ### VerticalTabs.CollapsibleGroup
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="VerticalTabs.Tier1"
     desc="VerticalTabs.Tier1 components"
   />
-  <Types.Prop
+  <TypesProp
     name="header"
     type="VerticalTabs.CollapsibleGroup"
     desc="slot group header into position"
   />
-  <Types.Prop
+  <TypesProp
     name="startOpen"
     type="boolean"
     desc="group in open is open on first render"
   />
-  <Types.Prop
+  <TypesProp
     name="groupButtonAriaLabel"
     type="string"
     desc="custom label for collapsible group toggle toggle for screenreaders"
   />
-</Types.Table>
+</TypesTable>
 
 ### VerticalTabs.CollapsibleGroup.Header
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="string"
     desc="header text"
   />
-  <Types.Prop
+  <TypesProp
     name="tagName"
     type="string"
     desc="change default tag of header root tag"
     default="h2"
   />
-</Types.Table>
+</TypesTable>
 
 ### VerticalTabs.Tier1
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="active"
     type="boolean"
     desc="changes visual state to active tab tier"
   />
-  <Types.Prop
+  <TypesProp
     name="children"
     type="VerticalTabs.Tier2"
     desc="VerticalTabs.Tier2 components"
   />
-  <Types.Prop
+  <TypesProp
     name="header"
     type="VerticalTabs.Tier1.Header"
     desc="slot tier1 header into position"
   />
-</Types.Table>
+</TypesTable>
 
 ### VerticalTabs.Tier1.Header
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="string"
     desc="header text"
   />
 
-  <Types.Prop
+  <TypesProp
     name="icon"
     type="Icon"
     desc="Icon component"
   />
-</Types.Table>
+</TypesTable>
 
 ### VerticalTabs.Tier2
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="active"
     type="boolean"
     desc="changes visual state to active tab tier"
   />
-  <Types.Prop
+  <TypesProp
     name="header"
     type="VerticalTabs.Tier2.Header"
     desc="slot tier2 header into position"
   />
-</Types.Table>
+</TypesTable>
 
 ### VerticalTabs.Tier2.Header
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="children"
     type="string"
     desc="header text"
   />
 
-  <Types.Prop
+  <TypesProp
     name="icon"
     type="Icon"
     desc="Icon component"
   />
-</Types.Table>
+</TypesTable>

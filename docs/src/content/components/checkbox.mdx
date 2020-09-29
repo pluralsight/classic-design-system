@@ -3,9 +3,9 @@ name: Checkbox
 route: /components/checkbox
 ---
 
-import { Intro, Types, Usage } from '../../components/component'
-
 # Checkbox
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -161,13 +161,13 @@ export default Comp
   packageName="checkbox"
   />
 
-<Types.Table>
-  <Types.Prop name="checked" type="boolean" desc="marks as selected" default="false"/>
-  <Types.Prop name="disabled" type="boolean" desc="standard input disable flag" default="false"/>
-  <Types.Prop name="error" type="boolean" desc="error state flag" default="false"/>
-  <Types.Prop name="indeterminate" type="boolean" desc="marks as indeterminate" default="false"/>
-  <Types.Prop name="name" type="string" desc="form data identifier"/>
-  <Types.Prop name="label" type="React.ReactNode" desc="display name"/>
-  <Types.Prop name="onCheck" type="(Event, checked: boolean, value: any, name: string) => void" desc="triggers on check toggle"/>
-  <Types.Prop name="value" type="string | number" desc="form value when checked"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="checked" type="boolean" desc="marks as selected" default="false"/>
+  <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false"/>
+  <TypesProp name="error" type="boolean" desc="error state flag" default="false"/>
+  <TypesProp name="indeterminate" type="boolean" desc="marks as indeterminate" default="false"/>
+  <TypesProp name="name" type="string" desc="form data identifier"/>
+  <TypesProp name="label" type="React.ReactNode" desc="display name"/>
+  <TypesProp name="onCheck" type="(Event, checked: boolean, value: any, name: string) => void" desc="triggers on check toggle"/>
+  <TypesProp name="value" type="string | number" desc="form value when checked"/>
+</TypesTable>

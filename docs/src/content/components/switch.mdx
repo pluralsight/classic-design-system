@@ -5,9 +5,9 @@ route: /components/switch
 
 import Switch from '@pluralsight/ps-design-system-switch'
 
-import { Intro, Types, Usage } from '../../components/component'
-
 # Switch
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -226,41 +226,41 @@ export default Example
   import="import Switch from '@pluralsight/ps-design-system-switch'"
   packageName="switch"
 />
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="checked"
     type="boolean"
     desc="shows a toggled-on switch"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="color"
-    type={<Types.Enum enum={Switch.colors} />}
+    type={<TypesEnum enum={Switch.colors} />}
     desc="track color (from <code>Switch.colors</code>)"
     default="blue"
   />
-  <Types.Prop
+  <TypesProp
     name="disabled"
     type="boolean"
     desc="standard input disable flag"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="error"
     type="boolean"
     desc="error state flag"
     default="false"
   />
-  <Types.Prop
+  <TypesProp
     name="labelAlign"
-    type={<Types.Enum enum={Switch.labelAligns} />}
+    type={<TypesEnum enum={Switch.labelAligns} />}
     desc="label position (from <code>Switch.labelAligns</code>)"
     default="right"
   />
-  <Types.Prop
+  <TypesProp
     name="size"
-    type={<Types.Enum enum={Switch.sizes} />}
+    type={<TypesEnum enum={Switch.sizes} />}
     desc="label position (from <code>Switch.sizes</code>)"
     default="large"
   />
-</Types.Table>
+</TypesTable>

@@ -58,6 +58,7 @@ import * as util from '@pluralsight/ps-design-system-util'
 import React from 'react'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
+import { omit } from '../util'
 import pkg from '../../../package.json'
 
 const deps = { ...pkg.dependencies, ...pkg.devDependencies } as const
@@ -129,13 +130,4 @@ export const PACKAGE_MAP: PackageMap = {
 
 export function mapPackageNameToScopes(pkgName: string) {
   return PACKAGE_MAP[pkgName]
-}
-
-function omit<T extends Record<string, unknown>, K extends [...(keyof T)[]]>(
-  obj: T,
-  fields: K
-): Record<string, unknown> {
-  const clone = Object.assign({}, obj)
-  for (let i = 0; i < fields.length; i += 1) delete clone[fields[i]]
-  return clone
 }

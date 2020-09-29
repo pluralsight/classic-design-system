@@ -5,7 +5,6 @@ route: /components/tooltip
 
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
-import { A, Guideline, Intro, Types, Usage } from '../../components/component'
 import { TooltipGuideline } from '../../components/guidelines/tooltip'
 
 # Tooltip
@@ -13,6 +12,8 @@ import { TooltipGuideline } from '../../components/guidelines/tooltip'
 <Intro>
   The purpose of a tooltip is to provide context and explain the function of a user interface element or feature. The content of a tooltip is limited to styled text. If more customization is necessary, consider the <A href="/components/dialog">Dialog</A> component which builds on the patterns of the tooltip.
 </Intro>
+
+<TableOfContents {...props} />
 
 ## In-app example
 
@@ -184,22 +185,22 @@ Use `accent` appearance to gain user attention in cases such onboarding, introdu
   packageName="tooltip"
 />
 
-<Types.Table>
-  <Types.Prop
+<TypesTable>
+  <TypesProp
     name="appearance"
-    type={<Types.Enum enum={Tooltip.appearances} />}
+    type={<TypesEnum enum={Tooltip.appearances} />}
     desc="visual style (from Tooltip.appearances)"
     default={Tooltip.appearances.basic}
   />
-  <Types.Prop
+  <TypesProp
     name="onClose"
     type="Event => ()"
     desc="displays a close button, triggered on click"
   />
-  <Types.Prop
+  <TypesProp
     name="tailPosition"
-    type={<Types.Enum enum={Tooltip.tailPositions} />}
+    type={<TypesEnum enum={Tooltip.tailPositions} />}
     desc="positions a tail pointer (from Tooltip.tailPositions)"
   />
-</Types.Table>
+</TypesTable>
 

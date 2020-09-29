@@ -3,9 +3,10 @@ name: Dropdown
 route: /components/dropdown
 ---
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
-import { Intro, Types, Usage } from '../../components/component'
 
 # Dropdown
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -362,25 +363,25 @@ export default Example
 
 ### Dropdown
 
-<Types.Table>
-  <Types.Prop name="appearance" type={<Types.Enum enum={Dropdown.appearances}/>} desc="visual style (from Dropdown.appearances)" default="default"/>
-  <Types.Prop name="disabled" type="boolean" desc="standard input disabled flag" />
-  <Types.Prop name="error" type="boolean" desc="error state flag"/>
-  <Types.Prop name="label" type="string" desc="identifying string for dropdown" />
-  <Types.Prop name="menu" type="Dropdown.Item(s)" desc="menu items for dropdown" default="<span></span>" />
-  <Types.Prop name="onChange" type="(Event, value, label) => void" desc="triggered when an item selected ((event, value, label) => ())" />
-  <Types.Prop name="placeholder" type="string" desc="in-field usage hint" />
-  <Types.Prop name="size" type={<Types.Enum enum={Dropdown.sizes}/>} desc="sets dorpdown size (from Dropdown.sizes)" default="medium" />
-  <Types.Prop name="subLabel" type="string" desc="supporting text or error messaging" />
- </Types.Table>
+<TypesTable>
+  <TypesProp name="appearance" type={<TypesEnum enum={Dropdown.appearances}/>} desc="visual style (from Dropdown.appearances)" default="default"/>
+  <TypesProp name="disabled" type="boolean" desc="standard input disabled flag" />
+  <TypesProp name="error" type="boolean" desc="error state flag"/>
+  <TypesProp name="label" type="string" desc="identifying string for dropdown" />
+  <TypesProp name="menu" type="Dropdown.Item(s)" desc="menu items for dropdown" default="<span></span>" />
+  <TypesProp name="onChange" type="(Event, value, label) => void" desc="triggered when an item selected ((event, value, label) => ())" />
+  <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
+  <TypesProp name="size" type={<TypesEnum enum={Dropdown.sizes}/>} desc="sets dorpdown size (from Dropdown.sizes)" default="medium" />
+  <TypesProp name="subLabel" type="string" desc="supporting text or error messaging" />
+ </TypesTable>
 
 ### Dropdown.Item
 
-<Types.Table>
-  <Types.Prop name="disabled" type="boolean" desc="visually disabled, non-interactive" />
-  <Types.Prop name="href" type="string" desc="anchor tag uri" />
-  <Types.Prop name="icon" type="*Icon" desc="An Icon component" />
-  <Types.Prop name="menu" type="Dropdown.Item(s)" desc="Menu items" />
-  <Types.Prop name="onClick" type="(Event) => void" desc="triggered on item select: click, enter or space" />
-  <Types.Prop name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="disabled" type="boolean" desc="visually disabled, non-interactive" />
+  <TypesProp name="href" type="string" desc="anchor tag uri" />
+  <TypesProp name="icon" type="*Icon" desc="An Icon component" />
+  <TypesProp name="menu" type="Dropdown.Item(s)" desc="Menu items" />
+  <TypesProp name="onClick" type="(Event) => void" desc="triggered on item select: click, enter or space" />
+  <TypesProp name="value" type="string | number" desc="value sent to ActionMenu#onChange" />
+</TypesTable>

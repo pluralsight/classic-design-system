@@ -5,13 +5,13 @@ route: /components/breadcrumb
 
 import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
 
-import { Guideline, Types, Usage } from '../../components/component'
-
 # Breadcrumb
 
 <Intro>
   The breadcrumb is to provide a consistently-placed and styled affordance to orient and move up a hierarchy.
 </Intro>
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -54,10 +54,10 @@ Breadcrumbs should be written in sentence case, except for proper nouns or produ
   packageName="breadcrumb"
 />
 
-<Types.Table>
-  <Types.Prop name="children" type="React.ReactNode" desc="textual label" />
-    <Types.Prop name="disabled" type="boolean" desc="standard input disable flag" default="false" />
-  <Types.Prop name="href" type="string" desc="target url; renders anchor" />
-    <Types.Prop name="loading" type="boolean" desc="shows loading animation" />
-    <Types.Prop name="onClick" type="Event => void" desc="click handler" />
-</Types.Table>
+<TypesTable>
+  <TypesProp name="children" type="React.ReactNode" desc="textual label" />
+    <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <TypesProp name="href" type="string" desc="target url; renders anchor" />
+    <TypesProp name="loading" type="boolean" desc="shows loading animation" />
+    <TypesProp name="onClick" type="Event => void" desc="click handler" />
+</TypesTable>

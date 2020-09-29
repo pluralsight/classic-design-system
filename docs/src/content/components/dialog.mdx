@@ -4,11 +4,11 @@ route: /components/dialog
 ---
 
 import Button from '@pluralsight/ps-design-system-button'
+import Link from '@pluralsight/ps-design-system-link'
 import { layout } from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import { A, Guideline, Intro, Types, Usage } from '../../components/component'
 import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialog'
 
 # Dialog
@@ -17,13 +17,15 @@ import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialo
   The purpose of a Dialog is to provide actionable messaging and may appear contextually or as a <A href="#modal">modal</A>. The Dialog adapts to various amounts and types of content. For contextual, non-actionable messaging, consider the <A href="/components/tooltip">Tooltip</A> instead.
 </Intro>
 
+<TableOfContents {...props} />
+
 ## Examples
 
 ### In-app example
 
 Dialogs can appear automatically, or be triggered by hover, focus, tap or click.
-      
-```typescript 
+
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { Below } from '@pluralsight/ps-design-system-position'
@@ -88,7 +90,7 @@ export default Example
 
 Dialogs can be shown with or without a tail (a directional indicator).  To make the tail appear, use a `Dialog.tailPositions` option.
 
-```typescript 
+```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { P } from '@pluralsight/ps-design-system-text'
@@ -165,7 +167,7 @@ function Example() {
     <div className="app" aria-hidden={isOpen}>
       <Button onClick={() => setOpen(!isOpen)}>Open Modal</Button>
     </div>
-    {isOpen && 
+    {isOpen &&
       <Dialog modal onClose={() => setOpen(false)} aria-label="example dialog" style={{ zIndex: 1 }}>
         <Heading>
           <h2>Lorem ipsum dolor sit amet.</h2>
@@ -191,7 +193,7 @@ export default Example
 ## Guidelines
 
 In most cases, dialogs can assume the user to digest the content following a Z-Pattern. Readers will start in the top/left, move horizontally to the top/right and then diagonally to the bottom/left before finishing with another horizontal movement to the bottom/right. By that measure, place your actions at the bottom/right, with the primary action on the right.
-      
+
 <Guideline
   do={
     <Dialog disableFocusOnMount>
@@ -243,7 +245,7 @@ Don’t use [modal](#modal) dialogs when displaying non-critical information tha
     <ModalGuidelineExample>
       <div className="dialog">
         <Dialog disableFocusOnMount>
-          Bookmark added. <Link href="">Undo?</Link>
+          Bookmark added. <Link><a href="#">Undo?</a></Link>
         </Dialog>
       </div>
       <style jsx>{`
@@ -359,15 +361,15 @@ Be explicit as possible when writing dialog buttons. Use affirmative action text
   packageName="dialog"
   />
 
-<Types.Table>
-  <Types.Prop name="aria-label" required type="string" desc="description of dialog purpose" />
-  <Types.Prop name="disableCloseButton" type="boolean" desc="removes close button UI" default="false" />
-  <Types.Prop name="disableCloseOnEscape" type="boolean" desc="prevents closing Dialog with escape key" default="false" />
-  <Types.Prop name="disableCloseOnOverlayClick" type="boolean" desc="prevents clicking modal overlay to close Dialog" default="false" />
-  <Types.Prop name="disableFocusOnMount" type="boolean" desc="prevents focus the Dialog on render" default="false" />
-  <Types.Prop name="modal" type="boolean" desc="makes Dialog modal" default="false" />
-  <Types.Prop name="onClose" type="Event => void" desc="callback to be called by various close methods" />
-  <Types.Prop name="tailPosition" type={<Types.Enum enum={Dialog.tailPositions} />} desc="positions a tail pointer (from Dialog.tailPositions)" />
-  <Types.Prop name="returnFocus" type="boolean" desc="manage focus; set focus on call where closed" default="true"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="aria-label" required type="string" desc="description of dialog purpose" />
+  <TypesProp name="disableCloseButton" type="boolean" desc="removes close button UI" default="false" />
+  <TypesProp name="disableCloseOnEscape" type="boolean" desc="prevents closing Dialog with escape key" default="false" />
+  <TypesProp name="disableCloseOnOverlayClick" type="boolean" desc="prevents clicking modal overlay to close Dialog" default="false" />
+  <TypesProp name="disableFocusOnMount" type="boolean" desc="prevents focus the Dialog on render" default="false" />
+  <TypesProp name="modal" type="boolean" desc="makes Dialog modal" default="false" />
+  <TypesProp name="onClose" type="Event => void" desc="callback to be called by various close methods" />
+  <TypesProp name="tailPosition" type={<TypesEnum enum={Dialog.tailPositions} />} desc="positions a tail pointer (from Dialog.tailPositions)" />
+  <TypesProp name="returnFocus" type="boolean" desc="manage focus; set focus on call where closed" default="true"/>
+</TypesTable>
 

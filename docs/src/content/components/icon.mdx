@@ -3,10 +3,11 @@ name: Icon
 route: /components/icon
 ---
 import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
-import { Intro, Types, Usage } from '../../components/component'
 import IconCommonSet from './icon-common-set.tsx'
 
 # Icon
+
+<TableOfContents {...props} />
 
 ## Examples
 
@@ -115,10 +116,10 @@ export default Comp
   packageName="icon"
 />
 
-<Types.Table>
-  <Types.Prop name="color" type={<Types.Enum enum={Icon.colors}/>} desc="color presets" default="currentColor"/>
-  <Types.Prop name="size" type={<Types.Enum enum={Icon.sizes}/>} desc="icon size (from *Icon.sizes)"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="color" type={<TypesEnum enum={Icon.colors}/>} desc="color presets" default="currentColor"/>
+  <TypesProp name="size" type={<TypesEnum enum={Icon.sizes}/>} desc="icon size (from *Icon.sizes)"/>
+</TypesTable>
 
 <h2 id="common-icon-set">Common icon set</h2>
 

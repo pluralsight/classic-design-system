@@ -1,3 +1,5 @@
+import Theme from '@pluralsight/ps-design-system-theme'
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import cx from 'classnames'
 import React, {
   HTMLAttributes,
@@ -9,13 +11,10 @@ import React, {
 import { useCookies } from 'react-cookie'
 import { Helmet } from 'react-helmet'
 
-import Theme from '@pluralsight/ps-design-system-theme'
-
 import { Aside } from './aside'
+import styles from './frame.module.css'
 import { Header } from './header'
 import { SkipBanner, SkipTarget } from './skip-banner'
-
-import styles from './frame.module.css'
 
 const SKIP_TARGET_ID = 'frame--skip-target'
 const THEME_COOKIE_NAME = 'psds-docs-theme'
@@ -80,7 +79,7 @@ export const Frame: React.FC<Props> = props => {
             <Main>
               <SkipTarget id={SKIP_TARGET_ID} ref={skipTargetRef} />
 
-              {children}
+              <article>{children}</article>
             </Main>
           </Container>
         </div>
@@ -93,4 +92,16 @@ const Container: React.FC = props => (
   <div className={styles.container} {...props} />
 )
 
-const Main: React.FC = props => <main className={styles.main} {...props} />
+const Main: React.FC = props => {
+  const isComponentPage =
+    canUseDOM() && /components|core/.test(window.location.pathname)
+  return (
+    <main
+      className={cx({
+        [styles.main]: true,
+        [styles.mainFullWidth]: !isComponentPage
+      })}
+      {...props}
+    />
+  )
+}

@@ -3,9 +3,10 @@ name: Empty state
 route: /components/emptystate
 ---
 import EmptyState from '@pluralsight/ps-design-system-emptystate'
-import { Intro, Types, Usage } from '../../components/component'
 
 # Empty state
+
+<TableOfContents {...props} />
 
 Present an empty state when there is an opportunity to provide explanation of an interface in absence of data. Empty states should orient the user, or communicate benefits of a feature. Use the following component to standardize empty state messaging display. Nevertheless, consider alternative experiences in situations where data is not available. For general error messages, use the [error component](./components/errors) instead.
 
@@ -205,22 +206,22 @@ export default Comp
 
 ### EmptyState
 
-<Types.Table>
-  <Types.Prop name="actions" type="EmptyState.Action" desc=""/>
-  <Types.Prop name="caption" type="EmptyState.Caption"/>
-  <Types.Prop name="heading" type="EmptyState.Heading"/>
-  <Types.Prop name="illustration" type="EmptyState.Illustration"/>
-  <Types.Prop name="size" type={<Types.Enum enum={EmptyState.sizes}/>} desc="disable resizing layout and set explicit size (from EmptyState.sizes)"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="actions" type="EmptyState.Action" desc=""/>
+  <TypesProp name="caption" type="EmptyState.Caption"/>
+  <TypesProp name="heading" type="EmptyState.Heading"/>
+  <TypesProp name="illustration" type="EmptyState.Illustration"/>
+  <TypesProp name="size" type={<TypesEnum enum={EmptyState.sizes}/>} desc="disable resizing layout and set explicit size (from EmptyState.sizes)"/>
+</TypesTable>
 
 ### EmptyState.Heading
 
-<Types.Table>
-  <Types.Prop name="as" type="string" desc="heading tagName" default="h1"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="as" type="string" desc="heading tagName" default="h1"/>
+</TypesTable>
 
 ### EmptyState.Illustration
 
-<Types.Table>
-  <Types.Prop name="name"  type={<Types.Enum enum={EmptyState.Illustration.names}/>} desc="the illustration name (from Illustration.names)"/>
-</Types.Table>
+<TypesTable>
+  <TypesProp name="name"  type={<TypesEnum enum={EmptyState.Illustration.names}/>} desc="the illustration name (from Illustration.names)"/>
+</TypesTable>
