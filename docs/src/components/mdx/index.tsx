@@ -15,7 +15,7 @@ import { Usage } from '../usage'
 import * as styles from './index.module.css'
 
 export const A: React.FC<AllHTMLAttributes<HTMLAnchorElement>> = props => {
-  const isExternal = props.href.includes('http')
+  const isExternal = /[a-z]+:\/\//.test(props.href)
   return (
     <DSLink>
       {isExternal ? (

@@ -57,13 +57,17 @@ export const HomePage: React.FC = () => {
           </Heading>
           <ul className={styles.resources}>
             <li>
-              <A href="/TODO">Github</A>
+              <A href="https://github.com/pluralsight/design-system">Github</A>
             </li>
             <li>
-              <A href="/TODO">Slack</A> (internal)
+              <A href="slack://channel?id=70HPSJPP&team=02A50N5X">Slack</A>{' '}
+              (internal)
             </li>
             <li>
-              <A href="/TODO">Figma</A> (internal)
+              <A href="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web?node-id=69%3A2190">
+                Figma
+              </A>{' '}
+              (internal)
             </li>
           </ul>
         </li>
