@@ -1,0 +1,119 @@
+---
+name: Error pages
+route: /components/errors
+---
+
+import {
+  ForbiddenErrorPage,
+  NotFoundErrorPage,
+  InternalServerErrorPage,
+  ServiceUnavailableErrorPage
+} from '@pluralsight/ps-design-system-errors'
+
+# Error pages
+
+<Intro>
+  Error page components are meant to be full-page, layout components. These pages are standardized throughout the product experience.
+</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+### 403 Forbidden
+
+[403 Forbidden](https://httpstatuses.com/403) The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
+
+```typescript
+import ForbiddenErrorPage from '@pluralsight/ps-design-system-errors'
+import React from 'react'
+
+function Example() {
+  return <ForbiddenErrorPage />
+}
+
+export default Example
+```
+
+#### Types
+
+<TypesTable>
+  <TypesProp name="href" type="string" desc="Destination of ”Contact support“ button" default="
+  https://help.pluralsight.com/help/contact-us" />
+</TypesTable>
+
+### 404 Not Found
+
+[404 Not Found](https://httpstatuses.com/404) The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
+
+```typescript
+import NotFoundErrorPage from '@pluralsight/ps-design-system-errors'
+import React from 'react'
+
+function Example() {
+  return <NotFoundErrorPage />
+}
+
+export default Example
+```
+
+#### Types
+
+<TypesTable>
+  <TypesProp name="action" type="string" desc="Search form destination; handles q query string" />
+</TypesTable>
+
+### 500 Internal Server Error
+
+[500 Internal Server Error](https://httpstatuses.com/500) A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
+
+```typescript
+import InternalServerErrorPage from '@pluralsight/ps-design-system-errors'
+import React from 'react'
+
+function Example() {
+  return <InternalServerErrorPage />
+}
+
+export default Example
+```
+
+#### Types
+
+<TypesTable>
+  <TypesProp name="href" type="string" desc="Destination of ”Contact support“ button" default="
+  https://help.pluralsight.com/help/contact-us" />
+</TypesTable>
+
+### 503 Service Unavailable
+
+[503 Service Unavailable](https://httpstatuses.com/503) The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.
+
+```typescript
+import ServiceUnavailableErrorPage from '@pluralsight/ps-design-system-errors'
+import React from 'react'
+
+function Example() {
+  return <ServiceUnavailableErrorPage />
+}
+
+export default Example
+```
+
+## Usage
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-errors"
+  import={`
+import {
+  ForbiddenErrorPage,
+  NotFoundErrorPage,
+  InternalServerErrorPage,
+  ServiceUnavailableErrorPage
+} from '@pluralsight/ps-design-system-errors'"
+  `}
+  packageName="errors"
+/>
+
+
+

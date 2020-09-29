@@ -1,0 +1,557 @@
+---
+name: Form
+route: /components/form
+---
+import Form from '@pluralsight/ps-design-system-form'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Radio from '@pluralsight/ps-design-system-radio'
+import Banner from '@pluralsight/ps-design-system-banner'
+import { 
+  FormFocusable,
+  Comp,
+  SwitchExample,
+  TagExample,
+  CheckboxExample,
+} from './form-controls.tsx'
+
+# Form
+
+The Form component helps arrange a form full of input controls. The package doesn't provide these controls but it is compatible with them.
+
+<TableOfContents {...props} />
+
+## Examples
+
+### In-app
+
+```typescript
+import React from 'react'
+import Form from '@pluralsight/ps-design-system-form'
+import Button from '@pluralsight/ps-design-system-button'
+import Banner from '@pluralsight/ps-design-system-banner'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import {Heading} from '@pluralsight/ps-design-system-text'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+import Radio from '@pluralsight/ps-design-system-radio'
+import Switch from '@pluralsight/ps-design-system-switch'
+import { capitalize } from '@pluralsight/ps-design-system-util'
+
+
+const validate = state => {
+  const rules = {
+    name: { rule: /.+/, message: 'Required' },
+    level: {
+      rule: /beginner|intermediate|advanced/,
+      message: 'Select a valid option'
+    },
+    slides: {
+      rule: /false|true/,
+      message: 'Turn on or off'
+    },
+    demo: {
+      rule: /false|true/,
+      message: 'Select a demo option'
+    },
+    assessment: {
+      rule: /false|true/,
+      message: 'Select an assessment option'
+    },
+    desc: { rule: /.+/, message: 'Required' },
+    publish: { rule: /^\d{2}\/\d{2}\/\d{4}$/, message: 'Required' }
+  }
+  return Object.keys(rules).reduce(
+    (errors, ruleName) => {
+      if (rules[ruleName].rule.test(state[ruleName])) {
+        delete errors[ruleName]
+      } else {
+        errors[ruleName] = rules[ruleName].message
+      }
+      return errors
+    },
+    { ...state.errors }
+  )
+}
+
+const initialState = {
+  errors: {},
+  isSubmitting: false,
+  isSubmitted: false,
+  name: '',
+  level: null,
+  slides: false,
+  slidestech: null,
+  demo: false,
+  assessment: false,
+  desc: '',
+  publish: ''
+}
+
+class InAppExample extends React.Component {
+  constructor() {
+    super()
+    this.state = initialState
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+    this.reset = this.reset.bind(this)
+  }
+
+  handleChange(evt) {
+    const { name, value } = evt.target
+    this.setState({
+      [name]: value
+    })
+  }
+
+  handleSubmit(evt) {
+    evt.preventDefault()
+
+    const errors = validate(this.state)
+    const hasErrors = Object.keys(errors).length > 0
+
+    this.setState({ errors })
+
+    if (!hasErrors) {
+      this.setState({ isSubmitting: true }, _ => {
+        setTimeout(
+          _ =>
+            this.setState({ isSubmitting: false, isSubmitted: true }, _ =>
+              setTimeout(_ => this.reset(), 800)
+            ),
+          1500
+        )
+      })
+    }
+  }
+
+  reset(evt) {
+    this.setState(initialState)
+  }
+
+  render() {
+    const { state } = this
+    const errorMsg = name => state.errors[name]
+    const isError = name => !!errorMsg(name)
+    const hasErrors = Object.keys(state.errors).length > 0
+    return (
+      <div style={{ position: 'relative'}}>
+        {state.isSubmitted && (
+          <Banner
+            color={Banner.colors.green}
+            style={{ position: 'absolute', top: '0', left: '0' }}
+          >
+            Course created!
+          </Banner>
+        )}
+        {hasErrors && (
+          <Banner
+            color={Banner.colors.red}
+            style={{ position: 'absolute', top: '0', left: '0' }}
+          >
+            Failed: Sample course form has errors
+          </Banner>
+        )}
+        <form onSubmit={this.handleSubmit}>
+          <Form.VerticalLayout>
+            <Heading>
+              <h2>Course sample form</h2>
+            </Heading>
+            <TextInput
+              error={isError('name')}
+              onChange={this.handleChange}
+              name="name"
+              label="Course name"
+              placeholder="Title"
+              subLabel={errorMsg('name') || 'Use Title Case'}
+              value={state.name}
+            />
+            <Dropdown
+              error={isError('level')}
+              label="Course difficulty level"
+              placeholder="Choose one"
+              subLabel={errorMsg('level')}
+              menu={
+                <>
+                  {['beginner', 'intermediate', 'advanced'].map(level => (
+                    <Dropdown.Item
+                      name="level"
+                      key={level}
+                      onClick={_ => this.setState({ level })}
+                    >
+                      {capitalize(level)}
+                    </Dropdown.Item>
+                  ))}
+                </>
+              }
+            />
+            <DatePicker
+              error={isError('publish')}
+              name="publish"
+              value={state.publish}
+              label="Publish date"
+              subLabel="When your course will go live"
+              onSelect={publish => this.setState({ publish })}
+            />
+            <Switch
+              error={isError('slides')}
+              checked={state.slides}
+              name="slides"
+              onClick={checked => this.setState({ slides: checked })}
+            >
+              Has slides?
+            </Switch>
+            <Form.Divider />
+            <Radio.Group
+              error={isError('slidestech')}
+              disabled={!state.slides}
+              name="slidestech"
+              onSelect={(_, slidestech) => this.setState({ slidestech })}
+              value={state.slidestech}
+            >
+              <Radio.Button value="key" label="Keynote" />
+              <Radio.Button value="pptx" label="Powerpoint" />
+            </Radio.Group>
+            <Form.Divider />
+            <Checkbox
+              error={isError('demo')}
+              checked={state.demo}
+              name="demo"
+              label="Demo included"
+              value="demo"
+              onCheck={(_, checked, __, name) =>
+                this.setState({ [name]: checked })
+              }
+            />
+            <Checkbox
+              error={isError('assessment')}
+              checked={state.assessment}
+              name="assessment"
+              label="Assessment included"
+              value="assessment"
+              onCheck={(_, checked, __, name) =>
+                this.setState({ [name]: checked })
+              }
+            />
+            <TextArea
+              error={isError('desc')}
+              label="Description"
+              subLabel={errorMsg('desc')}
+              placeholder="What is your course about?"
+              onChange={this.handleChange}
+              name="desc"
+              value={state.desc}
+            />
+            <Form.ButtonRow>
+              <Button
+                loading={state.isSubmitting}
+                onClick={this.handleSubmit}
+              >
+                Save
+              </Button>
+              <Button
+                appearance={Button.appearances.secondary}
+                onClick={evt => evt.preventDefault()}
+              >
+                Cancel
+              </Button>
+            </Form.ButtonRow>
+          </Form.VerticalLayout>
+        </form>
+      </div>
+
+    )
+  }
+}
+
+export default InAppExample
+
+```
+
+
+### Form.VerticalLayout
+
+Forms should be horizontally left-aligned, with one input control per line, and inputs are stretched to the full container width. Bring your own container. Form.VerticalLayout takes care of the vertical spacing between controls.
+
+```typescript
+import React from 'react'
+import Form from '@pluralsight/ps-design-system-form'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+
+const Comp = () => (
+  <div style={{ width: '80%' }}>
+    <Form.VerticalLayout>
+      <TextInput placeholder="Stacked" />
+      <TextInput placeholder="In a form" />
+    </Form.VerticalLayout>
+  </div>
+)
+
+export default Comp
+
+```
+
+### Form.Divider
+
+Dividers are simple visual indicators that break form flow and content into logical pieces.
+
+```typescript
+import React from 'react'
+import Form from '@pluralsight/ps-design-system-form'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+
+const Comp = () => (
+  <div style={{ width: '80%' }}>
+    <Form.VerticalLayout>
+      <TextInput placeholder="Related stuff" />
+      <Form.Divider />
+      <TextInput placeholder="Other related stuff" />
+    </Form.VerticalLayout>
+  </div>
+)
+
+export default Comp
+
+```
+
+### Form.ButtonRow
+
+Forms commonly have multiple buttons that a user can interact with. Those buttons should be on a single row and left-aligned. Form.ButtonRow will help.
+
+```typescript
+import React from 'react'
+import Form from '@pluralsight/ps-design-system-form'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import Button from '@pluralsight/ps-design-system-button'
+
+const Comp = () => (
+  <div style={{ width: '80%' }}>
+    <Form.VerticalLayout>
+      <TextInput placeholder="Related stuff" />
+      <TextInput placeholder="Other related stuff" />
+      <Form.ButtonRow>
+        <Button>Primary</Button>
+        <Button appearance={Button.appearances.secondary}>Secondary</Button>
+      </Form.ButtonRow>
+    </Form.VerticalLayout>
+  </div>
+)
+
+export default Comp
+
+```
+
+## Form Controls
+
+Each one of these controls is a separate package. They are mean to be used inside the `Form` layout component. Find links to the docs below
+
+<FormFocusable>
+  <Comp
+    title="Text Input"
+    href="/components/textinput"
+    desc="For short textual input."
+  >
+    <TextInput label="First name" placeholder="What's your name?" />
+  </Comp>
+
+  <Comp
+    title="Checkbox"
+    href="/components/checkbox"
+    desc="For multiple selection."
+  >
+    <CheckboxExample />
+  </Comp>
+  
+  <Comp
+    title="Switch"
+    href="/components/switch"
+    desc="For on/off selections."
+  >
+    <SwitchExample />
+  </Comp>
+
+  <Comp
+    title="DatePicker"
+    href="/components/datepicker"
+    desc="For dates."
+  >
+    <DatePicker label="Birthday" />
+  </Comp>
+
+  <Comp title="Tag" href="/components/tag" desc="For dynamic lists.">
+    <TagExample />
+  </Comp>
+</FormFocusable>
+
+
+## Guidelines
+
+Write labels in sentence case. Capital case is not optimal for scannability.
+
+<Guideline
+  do={
+    <TextInput
+      label="Zip"
+      value="92101"
+      css={{ '& input': { minWidth: 0, width: '81px' } }}
+      onChange={() => {}}
+    />
+  }
+  dont={<TextInput label="Zip" value="92101"  onChange={() => {}}/>}
+/>
+
+Don't rely on the placeholder. Use the label to specify the purpose of each field to avoid usability issues.
+
+<Guideline
+  do={
+    <Form.VerticalLayout>
+      <TextInput
+        label="Course title"
+        placeholder="What is the name of the course?"
+      />
+    </Form.VerticalLayout>
+  }
+  dont={
+    <Form.VerticalLayout>
+      <TextInput placeholder="Course title" />
+    </Form.VerticalLayout>
+  }
+/>
+
+Use field length as affordance. If a field has a defined character count, use it to determine the field length.
+
+<Guideline
+  do={
+    <TextInput
+      label="Zip"
+      value="92101"
+      onChange={() => {}}
+      css={{ '& input': { minWidth: 0, width: '81px' } }}
+    />
+  }
+  dont={<TextInput label="Zip" value="92101" onChange={() => {}}/>}
+/>
+
+Specify errors inline. Show where the error occurs and a clear reason for the error so users can find it in context.
+
+<Guideline
+  do={
+    <Form.VerticalLayout>
+      <TextInput
+        label="Email"
+        error
+        value="jake@example.com"
+        onChange={() => {}}
+        subLabel="Not a valid email address"
+      />
+      <TextInput label="Password" type="Password" />
+    </Form.VerticalLayout>
+  }
+  dont={
+    <Form.VerticalLayout>
+      <Banner color={Banner.colors.red}>
+        Email address is not valid
+      </Banner>
+      <TextInput label="Email" value="jake@example.com" onChange={() => {}}/>
+      <TextInput label="Password" type="Password" />
+    </Form.VerticalLayout>
+  }
+/>
+
+Rather than implying a required field with a marker (*), consider noting optional fields instead.
+
+<Guideline
+  do={
+    <Form.VerticalLayout>
+      <TextInput label="Course title" value="My course" onChange={() => {}}/>
+      <TextInput
+        label="Author"
+        placeholder="What is the author's name?"
+      />
+      <TextInput
+        label="Tags"
+        placeholder="Add tags"
+        subLabel="(Optional)"
+      />
+    </Form.VerticalLayout>
+  }
+  dont={
+    <Form.VerticalLayout>
+      <TextInput label="Course title *" value="My course" onChange={() => {}}/>
+      <TextInput
+        label="Author *"
+        placeholder="What is the author's name?"
+      />
+      <TextInput label="Tags" placeholder="Add tags" />
+    </Form.VerticalLayout>
+  }
+/>
+
+Use `Form.Divider` to group similar fields together into logical groups for users to parse the form more effectively.
+
+<Guideline
+  do={
+    <Form.VerticalLayout>
+      <TextInput label="Name" value="Jake Trent" onChange={() => {}}/>
+      <TextInput label="Role" placeholder="What do you do?" />
+      <Form.Divider />
+      <TextInput label="Address" />
+      <TextInput label="City" />
+      <Dropdown
+        label="State"
+        value="AL"
+        onChange={() => {}}
+        menu={
+          <>
+            <Dropdown.Item>AL</Dropdown.Item>
+          </>
+        }
+      />
+      <Form.Divider />
+      <Dropdown
+        label="Contact preference"
+        menu={
+          <>
+            <Dropdown.Item isActive>Email</Dropdown.Item>
+          </>
+        }
+      />
+    </Form.VerticalLayout>
+  }
+  dont={
+    <Form.VerticalLayout>
+      <TextInput label="Name" value="Jake Trent" onChange={() => {}}/>
+      <TextInput label="Role" placeholder="What do you do?" />
+      <TextInput label="Address" />
+      <TextInput label="City" />
+      <Dropdown
+        label="State"
+        value="AL"
+        onChange={() => {}}
+        menu={
+          <>
+            <Dropdown.Item>AL</Dropdown.Item>
+          </>
+        }
+      />
+      <Dropdown
+        label="Contact preference"
+        menu={
+          <>
+            <Dropdown.Item>Email</Dropdown.Item>
+          </>
+        }
+      />
+    </Form.VerticalLayout>
+  }
+/>
+
+## Usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-form"
+  import="import Form from '@pluralsight/ps-design-system-form'"
+  packageName="form"
+/>
+

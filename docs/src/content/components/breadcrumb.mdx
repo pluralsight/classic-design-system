@@ -1,0 +1,63 @@
+---
+name: Breadcrumb
+route: /components/breadcrumb
+---
+
+import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
+
+# Breadcrumb
+
+<Intro>
+  The breadcrumb is to provide a consistently-placed and styled affordance to orient and move up a hierarchy.
+</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+The breadcrumb should be placed toward the top left of the page below any persistent heading or navigation elements.
+
+```typescript
+import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
+import React from 'react'
+
+function Example() {
+  return (
+    <Breadcrumb>All the things</Breadcrumb>
+  )
+}
+
+export default Example
+```
+
+## Guidelines
+
+Reference the destination screen or page directly. Don't add text like "Back to..."
+
+<Guideline
+  do={<Breadcrumb>All things</Breadcrumb>}
+  dont={<Breadcrumb>Back to all things</Breadcrumb>}
+/>
+
+Breadcrumbs should be written in sentence case, except for proper nouns or product titles.
+
+<Guideline
+  do={<Breadcrumb>All the things</Breadcrumb>}
+  dont={<Breadcrumb>All The Things</Breadcrumb>}
+/>
+
+## Usage & Types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-breadcrumb"
+  import="import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'"
+  packageName="breadcrumb"
+/>
+
+<TypesTable>
+  <TypesProp name="children" type="React.ReactNode" desc="textual label" />
+    <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <TypesProp name="href" type="string" desc="target url; renders anchor" />
+    <TypesProp name="loading" type="boolean" desc="shows loading animation" />
+    <TypesProp name="onClick" type="Event => void" desc="click handler" />
+</TypesTable>

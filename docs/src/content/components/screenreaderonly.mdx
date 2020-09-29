@@ -1,0 +1,30 @@
+---
+name: Screen reader only
+route: /components/screenreaderonly
+---
+
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+
+# Screen reader only
+
+<TableOfContents {...props} />
+
+## Examples
+
+```typescript noRender startExpanded
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return <ScreenReaderOnly>content only for screen readers</ScreenReaderOnly>
+}
+
+export default Example
+```
+## Usage
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-screenreaderonly"
+  import="import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'"
+  packageName="screenreaderonly"
+/>

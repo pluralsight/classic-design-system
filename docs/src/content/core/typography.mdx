@@ -1,0 +1,94 @@
+---
+name: Typography
+route: /core/typography
+---
+
+import { FontFamily, FontWeight, FontSize, LineHeight, MonospaceFontWeight, MonospaceGlyphs } from '../../components/typography'
+
+# Typography
+
+<TableOfContents {...props} />
+
+## Install the font
+
+To use the Pluralsight font-family on your site, you must install it by importing it from typography.com using Pluralsight's assigned CSS Key.
+
+```html
+<link rel="stylesheet" href="https://cloud.typography.com/6966154/6397212/css/fonts.css" />
+```
+
+## Font family
+
+Pluralsight's font family for the web is Gotham SSm.
+
+<FontFamily />
+
+Apply the font family to the entire page. The recommended method is to include the normalize stylesheet. First install:
+
+```bash
+npm install @pluralsight/ps-design-system-normalize
+```
+
+Then include it in your global stylesheet:
+
+```css
+@import "@pluralsight/ps-design-system-normalize";
+```
+
+## Font weight
+
+Five Gotham SSm font weights are available for use.
+
+<FontWeight />
+
+To apply the font weights, use the vars in css:
+
+```css
+@import "@pluralsight/ps-design-system-core";
+
+.mySelector { font-weight: var(--psTypeFontWeightBold); }`}
+```
+
+## Font size
+
+Eight Gotham SSm font sizes are available.
+
+<FontSize />
+
+To apply the font sizes, use the vars in css:
+
+```css
+@import "@pluralsight/ps-design-system-core";
+
+.mySelector { font-size: var(--psTypeFontSizeLarge); }
+```
+
+## Line height
+
+Four line height increments are available. Each font size also has a default line height.
+
+<LineHeight />
+
+```css
+@import "@pluralsight/ps-design-system-core";
+
+.mySelector { line-height: var(--psTypeLineHeightStandard); }
+```
+
+## Monospace font
+
+Pluralsight’s monospace font family for the web is [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro).
+
+<MonospaceGlyphs />
+
+To use the Source Code Pro on your site, you can install it by importing it from [Google fonts](https://fonts.google.com/specimen/Source+Code+Pro).
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" />
+```
+
+Only one Source Code Pro font weight is available for use.
+
+<MonospaceFontWeight />
+
+Use monospace font when presenting code. Refrain from using for any other purpose. When displaying code, try keeping the font size consistent at `psTypeFontSizeSmall` size whenever possible. Add consistent [syntax highlighting](/components/code#syntax-highlighting).

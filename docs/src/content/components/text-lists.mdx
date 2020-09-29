@@ -1,0 +1,69 @@
+---
+name: Lists
+route: /components/text-lists
+---
+
+import { List } from '@pluralsight/ps-design-system-text'
+
+# Lists
+
+<TableOfContents {...props} />
+
+## Examples
+
+Heading styles compose complimentary typography attributes for simplified
+implementation. Try to use common heading styles when possible.
+
+```typescript
+import { List } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <div className="example-grid--col-3">
+      <List>
+        <List.Item>apple</List.Item>
+        <List.Item>orange</List.Item>
+        <List.Item>banana</List.Item>
+        <List.Item>strawberry</List.Item>
+        <List.Item>papaya</List.Item>
+      </List>
+
+      <List type="bulleted">
+        <List.Item>apple</List.Item>
+        <List.Item>orange</List.Item>
+        <List.Item>banana</List.Item>
+        <List.Item>strawberry</List.Item>
+        <List.Item>papaya</List.Item>
+      </List>
+
+      <List type="numbered">
+        <List.Item>apple</List.Item>
+        <List.Item>orange</List.Item>
+        <List.Item>banana</List.Item>
+        <List.Item>strawberry</List.Item>
+        <List.Item>papaya</List.Item>
+      </List>
+    </div>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-text"
+  import="import { Heading } from '@pluralsight/ps-design-system-text'"
+  packageName="text"
+/>
+
+<TypesTable>
+  <TypesProp
+    name="type"
+    type={<TypesEnum enum={List.types} />}
+    desc="semantics and bullet styles (from List.types)"
+    default={List.types.default}
+  />
+</TypesTable>

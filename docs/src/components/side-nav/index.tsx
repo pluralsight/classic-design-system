@@ -63,6 +63,10 @@ const items = [
         title: 'Color'
       },
       {
+        href: '/core/iconography',
+        title: 'Iconography'
+      },
+      {
         href: '/core/typography',
         title: 'Typography'
       },
@@ -73,6 +77,10 @@ const items = [
       {
         href: '/core/spacing',
         title: 'Spacing'
+      },
+      {
+        href: '/core/voice',
+        title: 'Voice & tone'
       }
     ]
   },
@@ -82,8 +90,24 @@ const items = [
     },
     items: [
       {
-        href: '/components/errors',
-        title: 'Error pages'
+        href: '/components/appframe',
+        title: 'App frame'
+      },
+      {
+        href: '/components/layout-page-heading',
+        title: 'Page heading'
+      },
+      {
+        href: '/components/layout-page-width',
+        title: 'Page width'
+      },
+      {
+        href: '/components/layout-aside',
+        title: 'Aside'
+      },
+      {
+        href: '/components/layout-column',
+        title: 'Column'
       }
     ]
   },
@@ -116,16 +140,16 @@ const items = [
     },
     items: [
       {
-        href: '/components/actionmenu',
-        title: 'Action Menu'
-      },
-      {
         href: '/components/button',
         title: 'Button'
       },
       {
         href: '/components/link',
         title: 'Link'
+      },
+      {
+        href: '/components/actionmenu',
+        title: 'Action Menu'
       },
       {
         href: '/components/tag',
@@ -143,32 +167,46 @@ const items = [
     },
     items: [
       {
-        href: '/components/checkbox',
-        title: 'Checkbox'
+        href: '/components/textinput',
+        title: 'Text Input'
+      },
+      {
+        href: '/components/searchinput',
+        title: 'Search Input'
+      },
+      {
+        href: '/components/textarea',
+        title: 'Text Area'
+      },
+      {
+        href: '/components/dropdown',
+        title: 'Dropdown'
+      },
+      {
+        href: '/components/typeahead',
+        title: 'Typeahead'
       },
       {
         href: '/components/datepicker',
         title: 'Date picker'
       },
       {
-        href: '/components/dropdown',
-        title: 'Select(Dropdown)'
+        href: '/components/checkbox',
+        title: 'Checkbox'
       },
       {
         href: '/components/radio',
         title: 'Radio'
       },
+
       {
         href: '/components/switch',
         title: 'Switch'
       },
+
       {
-        href: '/components/textinput',
-        title: 'Text Input'
-      },
-      {
-        href: '/components/typeahead',
-        title: 'Typeahead'
+        href: '/components/form',
+        title: 'Form'
       }
     ]
   },
@@ -201,16 +239,28 @@ const items = [
         title: 'Table'
       },
       {
-        href: '/components/datawell',
-        title: 'Data well'
+        href: '/components/row',
+        title: 'Row'
+      },
+      {
+        href: '/components/emptystate',
+        title: 'Empty state'
       },
       {
         href: '/components/card',
         title: 'Card'
       },
       {
+        href: '/components/drawer',
+        title: 'Drawer'
+      },
+      {
         href: '/components/carousel',
         title: 'Carousel'
+      },
+      {
+        href: '/components/datawell',
+        title: 'Data well'
       },
       {
         href: '/components/note',
@@ -243,6 +293,10 @@ const items = [
         title: 'Badge'
       },
       {
+        href: '/components/tooltip',
+        title: 'Tooltip'
+      },
+      {
         href: '/components/banner',
         title: 'Banner'
       },
@@ -251,20 +305,20 @@ const items = [
         title: 'Circular progress'
       },
       {
-        href: '/components/errors',
-        title: 'Error pages'
-      },
-      {
         href: '/components/linearprogress',
         title: 'Linear progress'
       },
       {
-        href: '/components/starrating',
-        title: 'Star rating'
+        href: '/components/dialog',
+        title: 'Dialog'
       },
       {
-        href: '/components/tooltip',
-        title: 'Tooltip'
+        href: '/components/errors',
+        title: 'Error pages'
+      },
+      {
+        href: '/components/starrating',
+        title: 'Star rating'
       }
     ]
   },
@@ -276,6 +330,10 @@ const items = [
       {
         href: '/components/position',
         title: 'Position'
+      },
+      {
+        href: '/components/featureflags',
+        title: 'Feature flags'
       },
       {
         href: '/components/screenreaderonly',

@@ -1,0 +1,101 @@
+---
+name: Datepicker
+route: /components/datepicker
+---
+
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+
+# Date picker
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Labels
+
+Primary identification of a date picker comes through the `label`. Supporting text and error messaging is set in the `subLabel`.
+
+```typescript
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <DatePicker label="Publish date" />
+    <DatePicker
+      label="Publish date"
+      subLabel="When your course will go live"
+    />
+  </div>
+}
+
+export default Example
+```
+
+### Appearance
+
+When using the `dark` theme, a `subtle` appearance is available.
+
+```typescript themeName=dark
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import Theme from '@pluralsight/ps-design-system-theme'
+import React from 'react'
+
+function Example() {
+  return <Theme name={Theme.names.dark}>
+    <DatePicker appearance={DatePicker.appearances.subtle} />
+  </Theme>
+}
+
+export default Example
+```
+
+### Disabled
+
+Disabled date pickers are unmodifiable and diminished visually.
+
+```typescript 
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import React from 'react'
+
+function Example() {
+  return <DatePicker disabled label="Can't touch this" />
+}
+
+export default Example
+```
+
+### Error
+
+Error states are engaged with the `error` flag.  Error-related messaging is sent to the `subLabel` prop.
+      
+```typescript 
+import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import React from 'react'
+
+function Example() {
+  return <DatePicker error label="Publish date" subLabel="Field is required" />
+}
+
+export default Example
+```
+
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-datepicker"
+  import="import Datepicker from '@pluralsight/ps-design-system-datepicker'"
+  packageName="datepicker"
+  />
+
+<TypesTable>
+  <TypesProp name="appearance" type={<TypesEnum enum={DatePicker.appearances}/>} desc="visual style (from DatePicker.appearances)" default="default" />
+  <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <TypesProp name="error" type="boolean" desc="error state flag" default="false" />
+  <TypesProp name="label" type="string" desc="identifying string for input" />
+  <TypesProp name="onSubBlur" type="('mm/dd/yyyy') => void" desc="on subfield blur, returns null if invalid date" />
+  <TypesProp name="onSelect" type="('mm/dd/yyyy') => void" desc="triggered when new valid date selected" />
+  <TypesProp name="subLabel" type="string" desc="supporting text or error messaging" />
+  <TypesProp name="value" type="string" desc="current date as a string (format mm/dd/yyyy)" />
+</TypesTable>
+

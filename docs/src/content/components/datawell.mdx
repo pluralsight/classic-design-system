@@ -1,0 +1,70 @@
+---
+name: Datawell
+route: /components/datawell
+---
+
+import DataWell from '@pluralsight/ps-design-system-datawell'
+
+# Data well
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Labels
+
+Often Data Wells are shown in a row. Data Well is designed to fit inside this experience. Simply wrap them in a flex container. Labels should provide context into the main meaning of the data shown.
+
+`label` is always required. `subLabel` is optional.
+
+```typescript
+import DataWell from '@pluralsight/ps-design-system-datawell'
+import React from 'react'
+
+function Example() {
+  return <div style={{ display: 'flex' }}>
+    <DataWell label="Active learners">7.2 Billion</DataWell>
+    <DataWell label="Pluralsight ROI">Vast</DataWell>
+    <DataWell label="Lives changed" subLabel="Up to 11">
+      11/10
+    </DataWell>
+  </div>
+}
+
+export default Example
+```
+
+## Guidelines
+
+Keep labels, sublabels, and values short as possible.
+
+<Guideline
+  do={
+    <DataWell label="Royalty Payments" subLabel="Last 30 days">
+      $123M
+    </DataWell>
+  }
+  dont={
+    <DataWell
+      label="Royalties Paid to Authors"
+      subLabel="For the period of the last thirty days"
+    >
+      $123,456,789.03
+    </DataWell>
+  }
+/>
+
+
+## Usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-datawell"
+  import="import DataWell from '@pluralsight/ps-design-system-datawell'"
+  packageName="datawell"
+  />
+
+<TypesTable>
+  <TypesProp name="children" required type="React.ReactNode" desc="main data to display" />
+  <TypesProp name="label" required type="string" desc="primary explanatory label"/>
+  <TypesProp name="subLabel" type="string" desc="secondary contextual label" />
+</TypesTable>
+

@@ -74,6 +74,7 @@
   left: 0;
   right: 0;
   height: 45px;
+  pointer-events: none;
 }
 .light .editorFade {
   background: linear-gradient(
@@ -88,6 +89,20 @@
     rgba(30, 36, 41, 0) 20%,
     rgba(30, 36, 41, 1) 100%
   );
+}
+.clickToExpand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: none;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+.clickToExpand:focus {
+  outline: none;
 }
 
 .example {

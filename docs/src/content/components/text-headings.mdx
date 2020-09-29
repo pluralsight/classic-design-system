@@ -1,0 +1,61 @@
+---
+name: Headings
+route: /components/text-headings
+---
+
+import { Heading } from '@pluralsight/ps-design-system-text'
+
+# Headings
+
+<TableOfContents {...props} />
+
+## Examples
+
+Heading styles compose complimentary typography attributes for simplified
+implementation. Try to use common heading styles when possible.
+
+```typescript
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <Heading size={Heading.sizes.smallCaps}>
+        <h2>smallCaps</h2>
+      </Heading>
+
+      <Heading size={Heading.sizes.medium}>
+        <h2>medium</h2>
+      </Heading>
+
+      <Heading size={Heading.sizes.large}>
+        <h2>large</h2>
+      </Heading>
+
+      <Heading size={Heading.sizes.xLarge}>
+        <h2>xLarge</h2>
+      </Heading>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-text"
+  import="import { Heading } from '@pluralsight/ps-design-system-text'"
+  packageName="text"
+/>
+
+<TypesTable>
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Heading.sizes} />}
+    desc="size and style of heading (from Heading.sizes)"
+    default={Heading.sizes.large}
+  />
+</TypesTable>

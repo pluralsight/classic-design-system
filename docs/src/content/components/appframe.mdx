@@ -1,0 +1,100 @@
+---
+name: App frame
+route: /components/appframe
+---
+
+# App frame
+
+<Intro>
+  The App Frame component provides page structure and integrates with other
+  navigation components.
+</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+```typescript noRender
+<AppFrame topnav={<TopNav />} sidenav={<CustomSideNav />}>
+  {/* page content here */}
+</AppFrame>
+```
+
+If needed, you can control the the sidenav open state.
+
+```typescript noRender
+const [sidenavOpen, setOpen] = useState(false)
+
+const close = () => setOpen(false)
+const open = () => setOpen(true)
+const toggle = sidenavOpen ? close : open
+
+return (
+  <AppFrame
+    onRequestSideNavClose={close}
+    onRequestSideNavOpen={open}
+    topnav={<TopNav onMobileMenuClick={toggle} />}
+    sidenav={<CustomSideNav />}
+    sidenavOpen={sidenavOpen}
+  >
+    {/* page content here */}
+  </AppFrame>
+)
+```
+
+A reference implementation of the Skills nav is available on [codesandbox](https://codesandbox.io/s/crazy-carson-pe50v?fontsize=14&hidenavigation=1&theme=dark&view=preview)
+
+<iframe
+  src="https://codesandbox.io/embed/crazy-carson-pe50v?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+  style={{
+    width: '100%',
+    height: 500,
+    border: 0,
+    borderRadius: 4,
+    overflow: 'hidden'
+  }}
+  title="psds-skills-nav-example"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+/>
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-appframe"
+  import="import AppFrame from '@pluralsight/ps-design-system-appframe'"
+  packageName="appframe"
+/>
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="React.ReactNode"
+  />
+  <TypesProp
+    name="onRequestSideNavClose"
+    type="Event => void"
+    desc="callback triggered when the sidenav should be closed. Use if controlling the open state"
+  />
+  <TypesProp
+    name="onRequestSideNavOpen"
+    type="Event => void"
+    desc="callback triggered when the sidenav should be opened. Use if controlling the open state"
+  />
+  <TypesProp
+    name="sidenav"
+    type="React.ReactNode | ({ visible }) => React.ReactNode"
+    desc="area to display secondary navigation"
+  />
+  <TypesProp
+    name="sidenavOpen"
+    type="boolean"
+    desc="control if the sidenav container is opened"
+  />
+  <TypesProp
+    name="topnav"
+    type="React.ReactNode | ({ closeSidenav, openSidenav, sidenavOpen }) => React.ReactNode"
+    desc="area to display primary navigation - such as a NavBar"
+  />
+</TypesTable>
+

@@ -1,0 +1,73 @@
+---
+name: Page width layout
+route: /components/layout-page-width
+---
+
+# Page width layout
+
+<TableOfContents {...props} />
+
+This layout will help you consistently match the max width of the site and the
+standard margins.
+
+We anticipate this will be used to support full-bleed background layouts, where
+the background might run to the edge of the viewport, but the content should
+still be constrained.
+
+```typescript
+import { colorsPink, colorsPurple, layout } from '@pluralsight/ps-design-system-core'
+import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import { P } from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <Theme name={Theme.names.dark}>
+        <header className="header">
+          <PageWidthLayout>
+            <div className="outline">
+              <P>Contents in front of full-bleed background</P>
+            </div>
+          </PageWidthLayout>
+        </header>
+      </Theme>
+
+      <PageWidthLayout>
+        <div className="outline">
+          <P>Normal case contents layout</P>
+        </div>
+      </PageWidthLayout>
+
+      <style jsx>{`
+        .header { background: ${colorsPurple[7]}; }
+        .outline {
+          border: 2px dashed ${colorsPink[6]};
+          min-height: 150px;
+          padding: ${layout.spacingSmall} 0;
+        }
+      `}</style>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { PageWidthLayout } from '@pluralsight/ps-design-system-layout"
+  packageName="layout"
+/>
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="React.ReactNode"
+    desc="content"
+    required
+  />
+</TypesTable>

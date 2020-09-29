@@ -1,0 +1,148 @@
+---
+name: Typeahead
+route: /components/viewtoggle
+---
+
+import Typeahead from '@pluralsight/ps-design-system-typeahead'
+
+# Typeahead
+
+<TableOfContents {...props} />
+
+## In-app example
+
+```typescript
+import Typeahead from '@pluralsight/ps-design-system-typeahead'
+import React from 'react'
+
+const Example: React.FC = props => {
+  const options = ['Beginner', 'Intermediate', 'Advanced']
+
+  return (
+    <Typeahead label="Level" placeholder="Select a Level">
+      {options.map((option, key) => (
+        <Typeahead.Suggestion key={key}>{option}</Typeahead.Suggestion>
+      ))}
+    </Typeahead>
+  )
+}
+
+export default Example
+```
+
+## Appearance
+
+For a more subtle look, use `subtle` appearance. So subtle.
+
+```typescript startExpanded=false
+import Typeahead from '@pluralsight/ps-design-system-typeahead'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <Typeahead
+      appearance={Typeahead.appearances.subtle}
+      placeholder="Search"
+    />
+  )
+}
+
+export default Example
+```
+
+## Size
+
+The small typeahead is ideal for usage within table rows otherwise use the default, medium size typeahead, in forms for example.
+
+```typescript startExpanded=false
+import Typeahead from '@pluralsight/ps-design-system-typeahead'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <div className="example-grid--col-2">
+      <Typeahead placeholder="medium typeahead" />
+      <Typeahead placeholder="small typeahead" size={Typeahead.sizes.small} />
+    </div>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-typeahead"
+  import="import VerticalTabs from '@pluralsight/ps-design-system-typeahead'"
+  packageName="typeahead"
+/>
+
+### Typeahead
+
+<TypesTable>
+  <TypesProp
+    name="appearance"
+    type={<TypesEnum enum={Typeahead.appearances} />}
+    desc="visual style (from Typeahead.appearances)"
+    default={Typeahead.appearances.default}
+  />
+  <TypesProp
+    name="disabled"
+    type="boolean"
+    desc="standard input disable flag"
+    default="false"
+  />
+  <TypesProp
+    name="error"
+    type="boolean"
+    desc="error state flag"
+    default="false"
+  />
+  <TypesProp
+    name="label"
+    type="string"
+    desc="identifying string for input"
+  />
+  <TypesProp
+    name="onChange"
+    type="(Event, nextValue) => void"
+    desc="triggered when value changes"
+  />
+  <TypesProp
+    name="placeholder"
+    type="string"
+    desc="in-field usage hint"
+  />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Typeahead.sizes} />}
+    desc="horizontal icon placement (from Typeahead.sizes)"
+    default={Typeahead.sizes.medium}
+  />
+  <TypesProp
+    name="subLabel"
+    type="string"
+    desc="supporting text or error messaging"
+  />
+  <TypesProp
+    name="value"
+    type="string"
+    desc="controlled value"
+  />
+</TypesTable>
+
+### Typeahead.Suggestion
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="string"
+    desc="suggestion label"
+  />
+  <TypesProp
+    name="value"
+    type="string"
+    desc="suggestion value (optional, falls back to label)"
+  />
+</TypesTable>

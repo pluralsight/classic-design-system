@@ -20,7 +20,9 @@ import Dropdown, {
 } from '@pluralsight/ps-design-system-dropdown'
 import EmptyState from '@pluralsight/ps-design-system-emptystate'
 import * as Errors from '@pluralsight/ps-design-system-errors'
-import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
+import FeatureFlags, {
+  useFeatureFlags
+} from '@pluralsight/ps-design-system-featureflags'
 import Form from '@pluralsight/ps-design-system-form'
 import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout'
@@ -51,10 +53,12 @@ import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import Typeahead from '@pluralsight/ps-design-system-typeahead'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
+import * as util from '@pluralsight/ps-design-system-util'
 
 import React from 'react'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
+import { omit } from '../util'
 import pkg from '../../../package.json'
 
 const deps = { ...pkg.dependencies, ...pkg.devDependencies } as const
@@ -85,7 +89,10 @@ export const PACKAGE_MAP: PackageMap = {
   },
   '@pluralsight/ps-design-system-emptystate': { EmptyState },
   '@pluralsight/ps-design-system-errors': { ...omit(Errors, ['default']) },
-  '@pluralsight/ps-design-system-featureflags': { FeatureFlags },
+  '@pluralsight/ps-design-system-featureflags': {
+    FeatureFlags,
+    useFeatureFlags
+  },
   '@pluralsight/ps-design-system-form': { Form },
   '@pluralsight/ps-design-system-icon': { Icon, ...omit(Icons, ['default']) },
   '@pluralsight/ps-design-system-layout': { ...omit(Layout, ['default']) },
@@ -114,6 +121,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-theme': { Theme },
   '@pluralsight/ps-design-system-tooltip': { Tooltip },
   '@pluralsight/ps-design-system-typeahead': { Typeahead },
+  '@pluralsight/ps-design-system-util': { ...util },
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
   react: { React, ...React },
@@ -124,11 +132,3 @@ export function mapPackageNameToScopes(pkgName: string) {
   return PACKAGE_MAP[pkgName]
 }
 
-function omit<T extends Record<string, unknown>, K extends [...(keyof T)[]]>(
-  obj: T,
-  fields: K
-): Record<string, unknown> {
-  const clone = Object.assign({}, obj)
-  for (let i = 0; i < fields.length; i += 1) delete clone[fields[i]]
-  return clone
-}

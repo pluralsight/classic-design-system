@@ -1,0 +1,206 @@
+---
+name: Tooltip
+route: /components/tooltip
+---
+
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+
+import { TooltipGuideline } from '../../components/guidelines/tooltip'
+
+# Tooltip
+
+<Intro>
+  The purpose of a tooltip is to provide context and explain the function of a user interface element or feature. The content of a tooltip is limited to styled text. If more customization is necessary, consider the <A href="/components/dialog">Dialog</A> component which builds on the patterns of the tooltip.
+</Intro>
+
+<TableOfContents {...props} />
+
+## In-app example
+
+Tooltips can appear automatically, or be triggered by hover, focus, tap or click.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import * as core from '@pluralsight/ps-design-system-core'
+import { Below } from '@pluralsight/ps-design-system-position'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+import React, { useState } from 'react'
+
+const Example: React.FC = () => {
+  const [isHovered, setHovered] = useState<boolean>(false)
+  const [isClicked, setClicked] = useState<boolean>(false)
+
+  const tooltip = (
+    <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
+      Tooltip
+    </Tooltip>
+  )
+
+  return (
+    <div className="examples">
+      <div className="example">
+        <Below show={tooltip}>
+          <Button appearance={Button.appearances.secondary}>Look at me</Button>
+        </Below>
+      </div>
+
+      <div className="example">
+        <Below show={tooltip} when={isHovered}>
+          <Button
+            appearance={Button.appearances.secondary}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            Hover me
+          </Button>
+        </Below>
+      </div>
+
+      <div className="example">
+        <Below show={tooltip} when={isClicked}>
+          <Button
+            appearance={Button.appearances.secondary}
+            onClick={() => setClicked(!isClicked)}
+          >
+            Click me
+          </Button>
+        </Below>
+      </div>
+
+      <style jsx>{`
+        .examples { display: flex; padding: ${layout.spacingLarge}; }
+        .example { margin-right: calc(${layout.spacingLarge} * 2); }
+        .example:last-child { margin-right: 0; }
+      `}</style>
+    </div>
+  )
+}
+
+export default Example
+```
+
+## Appearance
+
+Tooltips come in 2 styles. Defaults to basic.
+
+```typescript
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+import React from 'react'
+
+const Example: React.FC = () => (
+  <div className="example-grid">
+    <Tooltip appearance={Tooltip.appearances.basic}>basic</Tooltip>
+    <Tooltip appearance={Tooltip.appearances.accent}>accent</Tooltip>
+  </div>
+)
+
+export default Example
+```
+
+## Tail
+
+Tooltips can be shown with or without a tail (a directional indicator). To make the tail appear, use a `Tooltip.tailPositions` option.
+
+```typescript
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+import React from 'react'
+
+const Example: React.FC = () => (
+  <div className="example-grid">
+    <Tooltip tailPosition={Tooltip.tailPositions.bottomCenter}>bottomCenter</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.bottomLeft}>bottomLeft</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.bottomRight}>bottomRight</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.leftCenter}>leftCenter</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.rightCenter}>rightCenter</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>topCenter</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.topLeft}>topLeft</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.topRight}>topRight</Tooltip>
+  </div>
+)
+
+export default Example
+```
+
+## Close button
+
+Tooltips may be persistent until a user interaction closes them. For a close button in the top-right corner of the tooltip, provide a onClose callback.
+
+```typescript
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+import React from 'react'
+
+const Example: React.FC = () => (
+  <Tooltip onClose={_ => alert('close clicked')}>
+    With a close button for those cases you want the tooltip to persist until closed.
+  </Tooltip>
+)
+
+export default Example
+```
+
+## Guidelines
+
+Tooltips should be written in sentence case.
+
+<Guideline
+  do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
+  dont={<TooltipGuideline>Bookmark This Course</TooltipGuideline>}
+/>
+
+Write your tooltips to be concise and scannable.
+
+<Guideline
+  do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
+  dont={(
+    <TooltipGuideline>
+      Bookmark this course and then you’ll know its safe and sound. This course
+      will enjoy its new company amongst your other bookmarked courses. At first
+      this course might feel shy, but the other bookmarked courses will be
+      friendly and will help this new course get acclimated and comfortable.
+    </TooltipGuideline>
+  )}
+/>
+
+Use `accent` appearance to gain user attention in cases such onboarding, introducing functionality, asking for input, or prompting action. A good rule of thumb is accent tooltips appear automatically, while basic tooltips appear as a user clicks or hovers to obtain more context.
+
+<Guideline
+  do={(
+    <TooltipGuideline appearance={Tooltip.appearances.accent}>
+      We’ve added a new way keep track of your content. Bookmark this course to
+      view it later.
+    </TooltipGuideline>
+  )}
+  dont={(
+    <TooltipGuideline appearance={Tooltip.appearances.accent}>
+      Bookmark this course
+    </TooltipGuideline>
+  )}
+/>
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-tooltip"
+  import="import Tooltip from '@pluralsight/ps-design-system-tooltip"
+  packageName="tooltip"
+/>
+
+<TypesTable>
+  <TypesProp
+    name="appearance"
+    type={<TypesEnum enum={Tooltip.appearances} />}
+    desc="visual style (from Tooltip.appearances)"
+    default={Tooltip.appearances.basic}
+  />
+  <TypesProp
+    name="onClose"
+    type="Event => ()"
+    desc="displays a close button, triggered on click"
+  />
+  <TypesProp
+    name="tailPosition"
+    type={<TypesEnum enum={Tooltip.tailPositions} />}
+    desc="positions a tail pointer (from Tooltip.tailPositions)"
+  />
+</TypesTable>
+

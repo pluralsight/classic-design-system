@@ -1,0 +1,39 @@
+---
+name: Spacing
+route: /core/spacing
+---
+
+import { SpacingIncrements, IndividualSpacing } from '../../components/spacing'
+
+<TableOfContents {...props} />
+
+# Spacing
+
+## Spacing increments
+
+Spacing can be applied using margin or padding. There are 7 available spacing sizes. Both margin and padding share the same predefined scale.
+
+<SpacingIncrements />
+
+Apply spacing with CSS variables:
+
+```css
+@import "@pluralsight/ps-design-system-core";
+
+.mySelector { margin-top: var(--psLayoutSpacingLarge); }
+```
+
+## Individual spacing
+
+Individual spacing can be applied to a single side of an element. Both margin and padding share the same predefined scale. The same 7 sizes are available.
+
+<IndividualSpacing />
+
+Apply spacing more specifically with CSS variables:
+
+```css
+@import "@pluralsight/ps-design-system-core";
+
+.mySelector { margin-top: var(--psLayoutSpacingLarge); }
+```
+

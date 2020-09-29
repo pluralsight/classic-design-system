@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.1.1...@pluralsight/ps-design-system-util@5.2.0) (2020-09-28)
+
+
+### Features
+
+* **util:** add use-portal ([f5b9667](https://github.com/pluralsight/design-system/commit/f5b9667e200bf05ef3b8f0c04786193f94fab52c))
+
+
+
+
+
 ## [5.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.1.0...@pluralsight/ps-design-system-util@5.1.1) (2020-09-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util

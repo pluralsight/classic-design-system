@@ -1,0 +1,227 @@
+---
+name: Empty state
+route: /components/emptystate
+---
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
+
+# Empty state
+
+<TableOfContents {...props} />
+
+Present an empty state when there is an opportunity to provide explanation of an interface in absence of data. Empty states should orient the user, or communicate benefits of a feature. Use the following component to standardize empty state messaging display. Nevertheless, consider alternative experiences in situations where data is not available. For general error messages, use the [error component](./components/errors) instead.
+
+## Examples
+
+Default full page empty state
+
+```typescript
+import React from 'react'
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
+import Button from '@pluralsight/ps-design-system-button'
+
+const Comp = () => (
+  <EmptyState
+    heading={
+      <EmptyState.Heading>Alohamora wand elf parchment</EmptyState.Heading>
+    }
+    caption={
+      <EmptyState.Caption>
+        Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
+      </EmptyState.Caption>
+    }
+    illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />}
+    actions={
+      <EmptyState.Actions>
+        <Button appearance={Button.appearances.stroke}>Do a Thing</Button>
+      </EmptyState.Actions>
+    }
+  />
+)
+
+export default Comp
+
+```
+
+Layout scales from ‘large’ to ‘small’ based on container width. OR may be set as `small`
+
+```typescript
+import React from 'react'
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
+import Button from '@pluralsight/ps-design-system-button'
+
+const Comp = () => (
+  <EmptyState
+    heading={
+      <EmptyState.Heading>Alohamora wand elf parchment</EmptyState.Heading>
+    }
+    caption={
+      <EmptyState.Caption>
+        Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
+      </EmptyState.Caption>
+    }
+    illustration={<EmptyState.Illustration name={EmptyState.Illustration.names.magnify} />}
+    actions={
+      <EmptyState.Actions>
+        <Button appearance={Button.appearances.stroke}>Do a Thing</Button>
+      </EmptyState.Actions>
+    }
+    size={EmptyState.sizes.small}
+  />
+)
+
+export default Comp
+
+```
+
+## Alternatives
+
+Consider alternatives to empty states. Instead of an empty experience, might there be starter, educational, or sample content to present to users to help them learn about the product and start using it right away?
+
+### 👉 Sample content
+
+If the screen is intended to be populated with content by a user, consider suggesting samples or recommendations to ease the effort of getting started.
+
+### 👉 Educational content
+
+A single graphic and message may not be enough to convey the purpose of a feature. Consider animated or video walkthroughs, but keep them brief and dismissible.
+
+### 👉 Best match suggestion
+
+If the absence of data occurs due to a user query such as a search, consider displaying a best match instead of nothing at all.
+
+## Copy
+
+Follow [voice and tone guidelines](./patterns/voice-tone) when writing copy for empty states. Appropriate empty statement consist of a short declarative statement of what occurred, followed by a brief sentence giving more context if necessary. Provide a clear CTA button that’s no more than 2-3 words. Write clearly and conversationally like you would if you were talking to someone. Try to use an active voice
+
+## Illustration set
+
+```typescript
+import React from 'react'
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
+import {layout} from '@pluralsight/ps-design-system-core'
+import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
+
+const titleize = str =>
+  str.toLowerCase().replace(/(?:^|\s|-)\S/g, x => x.toUpperCase())
+
+const Comp = () => {
+  const sizes = Object.values(EmptyState.sizes)
+  const [activeSize, setActiveSize] = React.useState(sizes[1])
+  const handleSizeChange = (evt, index) => setActiveSize(sizes[index])
+  return (
+      <div>
+        <style jsx>{`
+          .container {
+            position: relative;
+          }
+          .toggle {
+            position: absolute;
+            top: ${layout.spacingMedium};
+            left: ${layout.spacingMedium};
+            z-index: 1;
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+            padding-top: ${layout.spacingXXLarge};
+            padding-bottom: ${layout.spacingMedium};
+          }
+        `}</style>
+        <div className="container">
+          <div className="toggle">
+            <ViewToggle onSelect={handleSizeChange}>
+              {sizes.map((id, index) => (
+                <ViewToggle.Option active={id === activeSize} key={id}>
+                  {titleize(id)}
+                </ViewToggle.Option>
+              ))}
+            </ViewToggle>
+          </div>
+          <div className="grid">
+            {Object.values(EmptyState.Illustration.names).map(name => (
+              <EmptyState
+                key={name}
+                style={{ alignSelf: 'center', margin: '0', padding: '0' }}
+                heading={
+                  <EmptyState.Heading style={{ fontSize: 14 }}>
+                    {name}
+                  </EmptyState.Heading>
+                }
+                illustration={<EmptyState.Illustration name={name} />}
+                size={activeSize}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+}
+
+export default Comp
+
+```
+
+## Custom illustration
+
+If no illustration in the standard set is found to be suitable, you may officially [aire your grievance](https://github.com/pluralsight/design-system/issues/new), or... consider creating a custom illustration within the guidelines of the predefined style.
+
+```typescript
+import React from 'react'
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
+
+const Comp = () =>  (
+  <EmptyState
+    heading={
+      <EmptyState.Heading>Alohamora wand elf parchment</EmptyState.Heading>
+    }
+    caption={
+      <EmptyState.Caption>
+        Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.
+      </EmptyState.Caption>
+    }
+    illustration={
+      <EmptyState.Illustration>
+        <svg viewBox="0 0 128 128" aria-hidden role="img">
+          <path
+            fill="currentColor"
+            d="M44.99 43.356v-16.77L109.792 64 44.99 101.414v-16.77l-14.897 8.601v-58.49l14.897 8.601zm0 7.162l-8.695-5.02v37.003l8.695-5.02V50.518zm6.202 30.544v9.609L97.387 64 51.192 37.329v9.608l29.552 17.062-29.552 17.063zm0-7.162l17.147-9.901-17.147-9.9v19.8z"
+          />
+        </svg>
+      </EmptyState.Illustration>
+    }
+  />
+)
+
+export default Comp
+
+```
+
+## Usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-emptystate"
+  import="import EmptyState from '@pluralsight/ps-design-system-emptystate'"
+  packageName="emptystate"
+  />
+
+### EmptyState
+
+<TypesTable>
+  <TypesProp name="actions" type="EmptyState.Action" desc=""/>
+  <TypesProp name="caption" type="EmptyState.Caption"/>
+  <TypesProp name="heading" type="EmptyState.Heading"/>
+  <TypesProp name="illustration" type="EmptyState.Illustration"/>
+  <TypesProp name="size" type={<TypesEnum enum={EmptyState.sizes}/>} desc="disable resizing layout and set explicit size (from EmptyState.sizes)"/>
+</TypesTable>
+
+### EmptyState.Heading
+
+<TypesTable>
+  <TypesProp name="as" type="string" desc="heading tagName" default="h1"/>
+</TypesTable>
+
+### EmptyState.Illustration
+
+<TypesTable>
+  <TypesProp name="name"  type={<TypesEnum enum={EmptyState.Illustration.names}/>} desc="the illustration name (from Illustration.names)"/>
+</TypesTable>

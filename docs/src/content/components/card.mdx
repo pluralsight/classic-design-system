@@ -1,0 +1,421 @@
+---
+name: Card
+route: /components/card
+---
+
+import Card from '@pluralsight/ps-design-system-card'
+
+# Card
+
+<TableOfContents {...props} />
+
+## Examples
+
+### In-app example
+
+The card is a flexible component that will fit the container it's given.  A gallery is a common container layout that one might encounter in the product. This is an example implementation of how the Card might look in a gallery in your app, using the [Layout.EqualColumnLayout](/components/layout) component.
+
+```typescript
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Card from '@pluralsight/ps-design-system-card'
+import { BookmarkIcon, MoreIcon, PathIcon, PlayCircleIcon } from '@pluralsight/ps-design-system-icon'
+import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
+
+function Example() {
+  return <EqualColumnLayout>
+    <ul>
+      <li>
+        <Card
+          tag={<Card.Tag icon={<PathIcon />}>Path</Card.Tag>}
+          title={<Card.Title>Advanced TypeScript</Card.Title>}
+          progress={0}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          metadata1={['Brice Wilson', 'Advanced']}
+          metadata2={['0m watched']}
+          size={Card.sizes.small}
+        />
+      </li>
+      <li>
+        <Card
+          bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
+          title={
+            <Card.Title>
+              Getting Started with Reactive Programming Using RxJS
+            </Card.Title>
+          }
+          progress={20}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          metadata1={['Scott Allen', 'Intermediate']}
+          metadata2={['23m watched']}
+          size={Card.sizes.small}
+        />
+      </li>
+      <li>
+        <Card
+          actionBar={[
+            <Card.Action
+              key="1"
+              title="Book action"
+              icon={<BookmarkIcon />}
+            />,
+            <Card.Action key="2" title="More action" icon={<MoreIcon />} />
+          ]}
+          title={
+            <Card.Title>
+              Building a JavaScript Development Environment"
+            </Card.Title>
+          }
+          fullOverlay={
+            <Card.FullOverlayLink>
+              <a>
+                <PlayCircleIcon size={PlayCircleIcon.sizes.large} />
+              </a>
+            </Card.FullOverlayLink>
+          }
+          progress={67}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          metadata1={['Cory House', 'Intermediate']}
+          metadata2={['3h 23m watched']}
+          size={Card.sizes.small}
+        />
+      </li>
+      <li>
+        <Card
+          actionBar={[
+            <Card.Action
+              key="1"
+              title="Bookmark action"
+              icon={<BookmarkIcon />}
+            />,
+            <Card.Action key="2" title="More action" icon={<MoreIcon />} />
+          ]}
+          actionBarVisible
+          title={<Card.Title>Webpack Fundamentals"</Card.Title>}
+          progress={100}
+          metadata1={['Joe Eames', 'Intermediate']}
+          metadata2={['90m watched']}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          size={Card.sizes.small}
+        />
+      </li>
+    </ul>
+  </EqualColumnLayout>
+}
+
+export default Example
+```
+
+### Size
+
+While the component is flexible, the size will determine certain base proportions and flexibility min and max bounds.
+      
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--spaced">
+    <div style={{ maxWidth: '540px' }}>
+      <Card
+        size={Card.sizes.large}
+        title={<Card.Title>Large card</Card.Title>}
+        metadata1={['Jim Cooper']}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+    <div style={{ maxWidth: '320px' }}>
+      <Card
+        size={Card.sizes.medium}
+        title={<Card.Title>Medium card</Card.Title>}
+        metadata1={['Jim Cooper']}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+    <div style={{ maxWidth: '140px' }}>
+      <Card
+        size={Card.sizes.small}
+        title={<Card.Title>Small card</Card.Title>}
+        metadata1={['Jim Cooper']}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+  </div>
+}
+
+export default Example
+```
+
+### Image
+
+The image will cover the space given. This space is variable width but set height according to the `size` property.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import Card from '@pluralsight/ps-design-system-card'
+import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div style={{ maxWidth: '320px' }}>
+    <Card
+      image={
+        <Card.ImageLink>
+          <a href="https://google.com" target="_blank">
+            <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+          </a>
+        </Card.ImageLink>
+      }
+      title={<Card.Title>Linked image with other overlays</Card.Title>}
+      actionBar={[<Card.Action key="1" title="Bookmark action" icon={<BookmarkIcon />} />]}
+      fullOverlay={
+        <Card.FullOverlayLink>
+          <a href="https://google.com?q=full%20overlay" target="_blank">
+            Full Overlay
+          </a>
+        </Card.FullOverlayLink>
+      }
+    />
+  </div>
+}
+
+export default Example
+```
+
+### Progress
+
+Progress, if given, should be a number between 0 and 100 that describes the completion level of the content represented on the card.
+
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <div style={{ width: '320px' }}>
+      <Card
+        progress={25}
+        title={<Card.Title>The Card Title</Card.Title>}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+    <div style={{ width: '320px' }}>
+      <Card
+        progress={100}
+        title={<Card.Title>The Card Title</Card.Title>}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+  </div>
+}
+
+export default Example
+```
+
+### Title
+
+The title can be a string or a some other element, such as a link, that contains a string
+
+Strings are line-clamped to 2 lines max, then the text will overflow with an ellipsis appended.
+
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <div style={{ width: '320px' }}>
+      <Card
+        title={<Card.Title>Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania</Card.Title>}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+    <div style={{ width: '320px' }}>
+      <Card
+        title={<Card.TextLink><a><Card.Title>Link with Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania</Card.Title></a></Card.TextLink>}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+  </div>
+}
+
+export default Example
+```
+
+### Metadata
+
+Metadata is free-form strings or displayable elements like links. Each bit of metadata is separated by an interpunct.
+
+Metadata is constrained to a single line, overflowing with an ellipsis indicated. The first datum is given display space precedence.
+      
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <div style={{ width: '320px' }}>
+      <Card
+        metadata1={['Simon Allardice']}
+        metadata2={['Intermediate', '2h 20m', 'July 24, 1847']}
+        title={<Card.Title>Card with Two Lines of Meta</Card.Title>}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+    <div style={{ width: '320px' }}>
+      <Card
+        metadata1={[
+          <Card.TextLink><a href="https://google.com?query=simon%20allardice">The Honorable Simon Allardice Hailing From Shores Abroad</a></Card.TextLink>
+        ]}
+        metadata2={[
+          'Only about the Best Level in the World for Learning',
+          '2h 20m or longer depending',
+          "July 24, 1847 or year thereabouts, it's unclear"
+        ]}
+        title={<Card.Title>Super-long Metadata</Card.Title>}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+      />
+    </div>
+  </div>
+}
+
+export default Example
+```
+
+### Action bar
+
+The action bar contains the on-card affordances a user can take besides linking straight to the content. These are usually buttons.
+      
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import { BookmarkIcon, MoreIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div style={{ width: '320px' }}>
+    <Card
+      actionBar={[
+        <Card.Action title="Bookmark action" icon={<BookmarkIcon />} />,
+        <Card.Action title="More action" icon={<MoreIcon />} />
+      ]}
+      actionBarVisible
+      title={<Card.Title>Action bar locked visible</Card.Title>}
+      image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+    />
+  </div>
+}
+
+export default Example
+```
+
+### Tag
+
+The tag provides a label, usually categorizing the card's content.
+
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import { ChannelIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div style={{ width: '320px' }}>
+    <Card
+      tag={<Card.Tag icon={<ChannelIcon />}>Channel</Card.Tag>}
+      title={<Card.Title>Icon and text on card</Card.Title>}
+      image={
+        <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+      }
+    />
+  </div>
+}
+
+export default Example
+```
+
+### Full overlay
+
+A special main action representing the main interaction for the card can be provided here. It will appear overlaid in the center of the image.
+      
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import { BookmarkIcon, ChannelIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div style={{ width: '320px' }}>
+    <Card
+      fullOverlay={<Card.FullOverlayLink><a>Custom Thing</a></Card.FullOverlayLink>}
+      actionBar={[<Card.Action title="Bookmark action" icon={<BookmarkIcon />} />]}
+      tag={<Card.Tag icon={<ChannelIcon />}>Channel</Card.Tag>}
+      title={<Card.Title>Combined with other overlays</Card.Title>}
+      image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+    />
+  </div>
+}
+
+export default Example
+```
+
+### Bonus bar
+
+Some cards may make use of a freeform area of content overlaid in the bottom-left corner of the image area. Use with dignity.
+
+```typescript
+import Card from '@pluralsight/ps-design-system-card'
+import React from 'react'
+
+function Example() {
+  return <div style={{ width: '320px' }}>
+    <Card
+      bonusBar={<div>Just bonus</div>}
+      title={<Card.Title>Custom elements in lower-left</Card.Title>}
+      image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+    />
+  </div>
+}
+
+export default Example
+```
+      
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-card"
+  import="import Avatar from '@pluralsight/ps-design-system-card'"
+  packageName="card"
+  />
+
+### Card
+
+<TypesTable>
+  <TypesProp name="actionBar" type="Card.Action[]" desc="top-right action buttons" />
+  <TypesProp name="actionBarVisible" type="boolean" desc="lock action bar on" default="false" />
+  <TypesProp name="bonusBar" type="React.ReactNode" desc="freeform space in image bottom-left" />
+  <TypesProp name="fullOverlay" type="Card.FullOverlayLink" desc="hover state for image" />
+  <TypesProp name="fullOverlayVisible" type="boolean" desc="lock full overlay on" default="false" />
+  <TypesProp name="image" required type="Card.Image | Card.ImageLink > a > Card.Image" desc="main image or linked image" />
+  <TypesProp name="metadata1" type="string[] | React.ReactNode[]" desc="first row of metadata" />
+  <TypesProp name="metadata2" type="string[] | React.ReactNode[]" desc="second row of metadata" />
+  <TypesProp name="progress" type="number" desc="progress 0-100" />
+  <TypesProp name="size" type={<TypesEnum enum={Card.sizes} />} desc="size of card (from Card.sizes)" default="medium" />
+  <TypesProp name="tag" type="Card.Tag" desc="categorization label in top-left" />
+  <TypesProp name="title" required required type="Card.TextLink > a > Card.Title | Card.Title" desc="card title or linked title" />
+</TypesTable>
+
+### Card.Action
+
+<TypesTable>
+  <TypesProp name="icon" required type="Icon" desc="icon representing action" />
+  <TypesProp name="title" required />
+</TypesTable>
+
+### Card.Image
+
+<TypesTable>
+  <TypesProp name="src" required type="string" desc="image url" />
+</TypesTable>
+
+### Card.Tag
+
+<TypesTable>
+  <TypesProp name="icon" type="Icon" desc="tag icon" />
+</TypesTable>

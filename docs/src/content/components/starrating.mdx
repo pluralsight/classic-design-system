@@ -1,0 +1,71 @@
+---
+name: Star rating
+route: /components/starrating
+---
+
+import StarRating from '@pluralsight/ps-design-system-starrating'
+
+# Star rating
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Display a rating
+
+Provide a `value` with the rating. Values are rounded down to the nearest half.
+
+```typescript
+import StarRating from '@pluralsight/ps-design-system-starrating'
+import React from 'react'
+
+function Example() {
+  return (
+    <>
+      <StarRating />
+      <StarRating value={3} />
+      <StarRating value={3.4} />
+      <StarRating value={3.5} />
+      <StarRating value={3.9} />
+      <StarRating value={4} />
+    </>
+  )
+}
+
+export default Example
+```
+
+### Interactive
+
+Add the `onChange` prop with function to make the rating interactive.
+
+```typescript
+import StarRating from '@pluralsight/ps-design-system-starrating'
+import React from 'react'
+
+function Example() {
+  return (
+    <>
+      <StarRating value={null} onChange={val => alert("The new value is: " + val)} />
+      <StarRating value={2.5} onChange={val => alert("The new value is: " + val)} />
+    </>
+  )
+}
+
+export default Example
+```
+
+## Usage & Types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-starrating"
+  import="import StarRating from '@pluralsight/ps-design-system-starrating'"
+  packageName="starrating"
+/>
+
+<TypesTable>
+  <TypesProp name="onChange" type="
+  (number, Event) => ()" desc="triggered when the value changes" default="null"/>
+  <TypesProp name="value" type="number" desc="current value as a float" />
+</TypesTable>
+

@@ -5,10 +5,12 @@ import {
   colorsBackgroundLight,
   colorsBlue,
   colorsGreen,
+  colorsLime,
   colorsOrange,
   colorsPink,
   colorsPurple,
   colorsRed,
+  colorsTeal,
   colorsTextIcon
 } from '@pluralsight/ps-design-system-core'
 
@@ -24,15 +26,15 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['atrule'],
-      style: { color: '#996300' }
+      style: { color: colorsPink[5] }
     },
     {
       types: ['attr-name'],
-      style: { color: '#996300' }
+      style: { color: colorsBlue[5] }
     },
     {
       types: ['attr-value'],
-      style: { color: '#996300' }
+      style: { color: colorsGreen[5] }
     },
     {
       types: ['attribute'],
@@ -40,7 +42,7 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['boolean'],
-      style: { color: colorsGreen[4] }
+      style: { color: colorsGreen[5] }
     },
     {
       types: ['builtin'],
@@ -56,11 +58,11 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['class'],
-      style: { color: '#996300' }
+      style: { color: colorsPurple[5] }
     },
     {
       types: ['class-name', 'maybe-class-name'],
-      style: { color: colorsBlue[4] }
+      style: { color: colorsBlue[5] }
     },
     {
       types: ['comment'],
@@ -71,7 +73,7 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['constant'],
-      style: { color: colorsRed[4] }
+      style: { color: colorsRed[5] }
     },
     {
       types: ['deleted'],
@@ -113,11 +115,11 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['keyword'],
-      style: { color: colorsPink[4] }
+      style: { color: colorsPink[5] }
     },
     {
       types: ['number'],
-      style: { color: colorsGreen[4] }
+      style: { color: colorsGreen[5] }
     },
     {
       types: ['operator'],
@@ -125,7 +127,7 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['parameter'],
-      style: { color: colorsBlue[4] }
+      style: { color: colorsBlue[5] }
     },
     {
       types: ['prolog'],
@@ -133,11 +135,11 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['property'],
-      style: { color: '#996300' }
+      style: { color: colorsLime[6] }
     },
     {
       types: ['property-access'],
-      style: { color: colorsPurple[3] }
+      style: { color: colorsPurple[5] }
     },
     {
       types: ['pseudo-class'],
@@ -153,15 +155,15 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['regex'],
-      style: { color: colorsOrange[4] }
+      style: { color: colorsOrange[5] }
     },
     {
       types: ['selector'],
-      style: { color: '#996300' }
+      style: { color: colorsPurple[5] }
     },
     {
       types: ['string'],
-      style: { color: colorsGreen[4] }
+      style: { color: colorsGreen[5] }
     },
     {
       types: ['symbol'],
@@ -169,7 +171,7 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['tag'],
-      style: { color: '#996300' }
+      style: { color: colorsRed[5] }
     },
     {
       types: ['unit'],
@@ -181,7 +183,7 @@ export const darkTheme: PrismTheme = {
     },
     {
       types: ['variable'],
-      style: { color: '#996300' }
+      style: { color: colorsTeal[5] }
     }
   ]
 }
@@ -198,15 +200,15 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['atrule'],
-      style: { color: '#996300' }
+      style: { color: colorsPink[8] }
     },
     {
       types: ['attr-name'],
-      style: { color: '#996300' }
+      style: { color: colorsBlue[8] }
     },
     {
       types: ['attr-value'],
-      style: { color: '#996300' }
+      style: { color: colorsGreen[8] }
     },
     {
       types: ['attribute'],
@@ -230,7 +232,7 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['class'],
-      style: { color: '#996300' }
+      style: { color: colorsPurple[8] }
     },
     {
       types: ['class-name', 'maybe-class-name'],
@@ -261,7 +263,7 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['function'],
-      style: { color: colorsBlue[7] }
+      style: { color: colorsBlue[8] }
     },
     {
       types: ['hexcode'],
@@ -307,11 +309,11 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['property'],
-      style: { color: '#996300' }
+      style: { color: colorsLime[9] }
     },
     {
       types: ['property-access'],
-      style: { color: colorsPurple[7] }
+      style: { color: colorsPurple[8] }
     },
     {
       types: ['pseudo-class'],
@@ -331,7 +333,7 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['selector'],
-      style: { color: '#996300' }
+      style: { color: colorsPurple[8] }
     },
     {
       types: ['string'],
@@ -343,7 +345,7 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['tag'],
-      style: { color: '#996300' }
+      style: { color: colorsRed[8] }
     },
     {
       types: ['unit'],
@@ -355,7 +357,7 @@ export const lightTheme: PrismTheme = {
     },
     {
       types: ['variable'],
-      style: { color: '#996300' }
+      style: { color: colorsTeal[8] }
     }
   ]
 }

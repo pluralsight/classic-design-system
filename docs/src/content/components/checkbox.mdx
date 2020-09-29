@@ -1,0 +1,173 @@
+---
+name: Checkbox
+route: /components/checkbox
+---
+
+# Checkbox
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Checked
+
+Passing the `checked` indicates that the checkbox is selected.
+
+```typescript
+import React from 'react'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <Checkbox checked label="I'm checked" value="Checked-eg" />
+    <Checkbox label="I'm not" value="Checked-eg" />
+  </div>
+)
+
+export default Comp
+
+```
+
+### Indeterminate
+
+Passing the `indeterminate` flag indicates that the checkbox selection should be obscured as if the control was in a third, indeterminate, state.
+
+```typescript
+import React from 'react'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <Checkbox indeterminate label="I'm indeterminate" value="Indeterminate-eg"/>
+    <Checkbox checked indeterminate label="I'm checked but still indeterminate" value="Indeterminate-eg"/>
+  </div>
+)
+
+export default Comp
+
+```
+
+### Disabled
+
+Disabled checkboxes are unmodifiable and diminished visually.
+
+```typescript
+import React from 'react'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <Checkbox disabled label="Can't touch this" value="Disabled-eg"/>
+    <Checkbox disabled checked label="Checked or not" value="Disabled-eg"/>
+  </div>
+)
+
+export default Comp
+
+```
+
+### Error
+
+Error states are engaged with the `error` flag.
+
+```typescript
+import React from 'react'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <Checkbox error label="I've got problems"  value="Error-eg"/>
+    <Checkbox error checked label="Checked and still not good enough" value="Error-eg"/>
+  </div>
+)
+
+export default Comp
+
+```
+
+### In-app
+
+```typescript
+import React from 'react'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import { layout, type, colorsTextIcon, colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
+
+class Comp extends React.Component {
+  constructor() {
+    super()
+    this.state = { values: {} }
+    this.handleCheck = this.handleCheck.bind(this)
+  }
+  handleCheck(evt, checked, value, name) {
+    if (checked) {
+      this.setState({ values: { ...this.state.values, [name]: value } })
+    } else {
+      const { [name]: omit, ...values } = this.state.values
+      this.setState({ values })
+    }
+  }
+  render() {
+    const features = Object.keys(this.state.values)
+    const checked = name => features.indexOf(name) > -1
+    return (
+      <div className="example-grid--col-2">
+        <div>
+          <Checkbox
+            onCheck={this.handleCheck}
+            name="demo"
+            value="yes"
+            label="Has demo?"
+            checked={checked('demo')}
+          />
+          <Checkbox
+            onCheck={this.handleCheck}
+            name="assessment"
+            value="of-course"
+            label="Has assessment?"
+            checked={checked('assessment')}
+          />
+          <Checkbox
+            onCheck={this.handleCheck}
+            name="slides"
+            value="who-doesnt"
+            label="Has slides?"
+            checked={checked('slides')}
+          />
+        </div>
+        <div style={{
+            padding: layout.spacingLarge,
+            fontSize: type.fontSizeMedium,
+            color: colorsTextIcon.lowOnLight,
+            background: colorsBackgroundLight[2],
+            borderRadius: 12,
+        }}>
+          Checked:{' '}
+          {features
+            .map(name => name + ': ' + this.state.values[name])
+            .join(', ')}
+        </div>
+      </div>
+    )
+  }
+}
+export default Comp
+
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-checkbox"
+  import="import Checkbox from '@pluralsight/ps-design-system-checkbox'"
+  packageName="checkbox"
+  />
+
+<TypesTable>
+  <TypesProp name="checked" type="boolean" desc="marks as selected" default="false"/>
+  <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false"/>
+  <TypesProp name="error" type="boolean" desc="error state flag" default="false"/>
+  <TypesProp name="indeterminate" type="boolean" desc="marks as indeterminate" default="false"/>
+  <TypesProp name="name" type="string" desc="form data identifier"/>
+  <TypesProp name="label" type="React.ReactNode" desc="display name"/>
+  <TypesProp name="onCheck" type="(Event, checked: boolean, value: any, name: string) => void" desc="triggers on check toggle"/>
+  <TypesProp name="value" type="string | number" desc="form value when checked"/>
+</TypesTable>

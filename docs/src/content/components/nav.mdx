@@ -1,0 +1,344 @@
+---
+name: Nav
+route: /components/nav
+---
+
+import NavBar from '@pluralsight/ps-design-system-navbar'
+import NavBrand from '@pluralsight/ps-design-system-navbrand'
+import NavItem from '@pluralsight/ps-design-system-navitem'
+import NavUser from '@pluralsight/ps-design-system-navuser'
+import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
+
+# Global navigation
+
+<TableOfContents {...props} />
+
+## Nav bar
+
+### Examples
+
+The nav bar component is the container of the global navigation. It’s 56px tall and should be fluid and sticky to the left/top/right of the browser viewport.
+
+```typescript
+import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
+import NavBar from '@pluralsight/ps-design-system-navbar'
+import React from 'react'
+
+function Filler(props) {
+  return (
+    <div className="filler">
+      {props.children}
+      <style jsx>{`
+        .filler {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: ${colorsPink.base};
+          height: 100%;
+          border: 2px dashed ${colorsPink.base};
+          padding: 0 ${layout.spacingMedium};
+        }
+      `}</style>
+    </div>
+  )
+}
+
+function Example() {
+  return <>
+    <NavBar 
+      brand={<Filler>Brand</Filler>}
+      items={<Filler>Items</Filler>}
+      user={<Filler>User</Filler>}
+      utility={<Filler>Utility</Filler>} />
+  </>
+}
+
+export default Example
+```
+
+### Nav bar guidelines
+
+- Always keep the navigation bar height 56px.
+- The navigation bar should be fluid and sticky to the left/top/right edges of the browser viewport. This will happen automatically if you use the app frame component.
+
+### Nav bar usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-navbar"
+  import="import NavBar from '@pluralsight/ps-design-system-navbar'"
+  packageName="navbar"
+  />
+
+<TypesTable>
+  <TypesProp name="brand" type="React.ReactNode" desc="global product branding" />
+  <TypesProp name="items" type="React.ReactNode" desc="top-level nav affordances" />
+  <TypesProp name="onMobileMenuClick" type="Event => ()" desc="displays hamburger menu; called on click" />
+  <TypesProp name="utility" type="React.ReactNode" desc="top-right affordances next to user" />
+  <TypesProp name="user" type="React.ReactNode" desc="user profile affordance" />
+</TypesTable>
+
+## Nav item
+
+### Examples
+
+The nav item component is for creating links to pages or as action triggers. A horizontal variant can be used with or without an icon. The vertical variant always requires an icon. The icon-only variant can also be used for very recognizable icons/actions when a label is unecessary.
+
+```typescript themeName=dark
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
+import { HomeIcon } from '@pluralsight/ps-design-system-icon'
+import NavItem from '@pluralsight/ps-design-system-navitem'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <NavItem icon={<HomeIcon />} menu={<div>placeholder</div>}>Label</NavItem>
+    <NavItem icon={<HomeIcon />}>Label</NavItem>
+    <NavItem menu={<div>placeholder</div>}>Label</NavItem>
+    <NavItem>Label</NavItem>
+    <NavItem icon={<HomeIcon />} alignment={NavItem.alignments.vertical}>Label</NavItem>
+    <NavItem icon={<HomeIcon />} alignment={NavItem.alignments.vertical} menu={<div>placeholder</div>}>Label</NavItem>
+    <NavItem icon={<HomeIcon />} />
+  </div>
+}
+
+export default Example
+```
+
+### Nav item guidelines
+
+- Be prudent with the nav items and the the number you use. Try to keep it to about about 2-5. Organize the items well, use short yet descriptive labels, and use grouping with dropdown menus if you need more items than will fit.
+- Use icon only nav items when the icon clearly represents what the nav item is or does. Use tooltips with icon only nav items.
+
+### Nav item usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-navitem"
+  import="import NavItem from '@pluralsight/ps-design-system-navitem'"
+  packageName="navitem"
+  />
+
+<TypesTable>
+  <TypesProp name="alignment" type={<TypesEnum enum={NavItem.alignments} />} desc="orientation of item elements" default="horizontal" />
+  <TypesProp name="bar" type="React.ReactNode" desc="active element indicator" />
+  <TypesProp name="children" type="React.ReactNode" desc="label" />
+  <TypesProp name="href" type="string" desc="destination url; renders anchor" />
+  <TypesProp name="icon" type="React.ReactNode" desc="icon displayed" />
+  <TypesProp name="menu" type="boolean" desc="toggles render of down caret" default="false" />
+  <TypesProp name="selected" type="boolean" desc="toggles active state" default="false" />
+</TypesTable>
+
+
+## Nav brand
+
+### Examples
+
+The nav brand component creates a consistent use of branding for the icon and logo of an app. It is intended to always be placed at the left end of the nav bar.
+
+```typescript themeName=dark
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
+import { HomeIcon } from '@pluralsight/ps-design-system-icon'
+import NavBrand from '@pluralsight/ps-design-system-navbrand'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <NavBrand logo={<MyLogo />} wordmark="TITLE" />
+  </div>
+}
+
+export default Example
+
+function MyLogo() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="24" height="24" fill="url(#logo)" />
+      <defs>
+        <linearGradient id="logo" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#8A99A8" />
+          <stop offset="1" stopColor="#576675" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+```
+
+### Nav brand guidelines
+
+- Use the nav brand component to provide consistency between experiences.
+
+### Nav brand usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-navbrand"
+  import="import NavBrand from '@pluralsight/ps-design-system-navbrand'"
+  packageName="navbrand"
+  />
+
+<TypesTable>
+  <TypesProp name="href" type="string" desc="destination url; renders anchor" />
+  <TypesProp name="logo" type="React.ReactNode" desc="brand logo" />
+  <TypesProp name="onClick" type="Event => void" desc="click handler" />
+  <TypesProp name="wordmark" type="React.ReactNode" desc="brand logo" />
+</TypesTable>
+
+
+## Nav user
+
+### Examples
+
+The nav user component is for actions & settings related to the user. It is intended to always be placed at the right end of the nav bar. For wider screens, text can be displayed for the user’s name and a meta item (such as a plan name) or only a name. When the screen is narrow, the text will be dropped.
+
+```typescript themeName=dark
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
+import NavUser from '@pluralsight/ps-design-system-navuser'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-3">
+    <NavUser name="Name" meta="Meta" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
+    <NavUser name="Name" src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
+    <NavUser src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
+  </div>
+}
+
+export default Example
+```
+
+### Nav user usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-navuser"
+  import="import NavUser from '@pluralsight/ps-design-system-navuser'"
+  packageName="navuser"
+  />
+
+<TypesTable>
+  <TypesProp name="href" type="string" desc="destination url; renders anchor" />
+  <TypesProp name="onClick" type="Event => void" desc="click handler" />
+  <TypesProp name="meta" type="React.ReactNode" desc="user context" />
+  <TypesProp name="name" type="React.ReactNode" desc="user name" />
+  <TypesProp name="src" type="string" desc="user profile image url" />
+</TypesTable>
+
+
+## Nav cookie banner
+
+### Examples
+
+The nav cookie banner is common nav element that should be present on the page in order to comply with laws requiring notice that cookies are used in our product. It will be affixed to the bottom/left of the app frame.
+
+```typescript
+import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
+import React from 'react'
+
+function Example() {
+  return <div className="example">
+    <NavCookieBanner />
+    <style jsx>{`
+      .example > div {
+        position: static;
+        display: inline-flex;
+      }
+    `}</style>
+  </div>
+}
+
+export default Example
+```
+
+### Nav cookiebanner usage & types
+
+<Usage install="npm install @pluralsight/ps-design-system-navcookiebanner"
+  import="import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'"
+  packageName="navcookiebanner"
+  />
+
+<TypesTable>
+  <TypesProp name="cookieOptions" type="{ domain: string, expires: Date, secure: boolean, sameSite: string }" desc="attributes of cookie" />
+  <TypesProp name="message" type="React.ReactNode" desc="messaging re cookies" />
+  <TypesProp name="privacyUpdatedDate" type="Date" desc="date of last terms update" />
+</TypesTable>
+
+
+## Reference design
+
+This is a more full example of how the navigation components can be used together to create a consistent global navigation system for your app.
+
+
+```typescript
+import { AccountIcon, BrowseIcon NotificationsIcon } from '@pluralsight/ps-design-system-icon'
+import { layout } from '@pluralsight/ps-design-system-core'
+import NavBar from '@pluralsight/ps-design-system-navbar'
+import NavBrand from '@pluralsight/ps-design-system-navbrand'
+import NavItem from '@pluralsight/ps-design-system-navitem'
+import NavUser from '@pluralsight/ps-design-system-navuser'
+import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
+import React from 'react'
+
+function Example() {
+  return <NavBar
+    brand={<NavBrand logo={<MyLogo />} wordmark="TITLE" />}
+    items={
+      <>
+        <div
+          style={{
+            marginRight: layout.spacingXXSmall,
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<HomeIcon />}>Home</NavItem>
+        </div>
+        <div
+          style={{
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<BrowseIcon />} selected>
+            Browse
+          </NavItem>
+        </div>
+      </>
+    }
+    onMobileMenuClick={() => alert('mobile click')}
+    user={
+      <NavUser
+        name="Jake"
+        planName="Accenture"
+        onClick={() => alert('user click')}
+      />
+    }
+    utility={
+      <React.Fragment>
+        <div
+          style={{
+            marginRight: layout.spacingXXSmall,
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<NotificationsIcon />} />
+        </div>
+        <div
+          style={{
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<AccountIcon />} />
+        </div>
+      </React.Fragment>
+    }
+  />
+}
+
+export default Example
+
+function MyLogo() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="24" height="24" fill="url(#logo)" />
+      <defs>
+        <linearGradient id="logo" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#8A99A8" />
+          <stop offset="1" stopColor="#576675" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+```

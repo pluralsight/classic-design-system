@@ -1,0 +1,208 @@
+---
+name: Button
+route: /components/button
+---
+
+import Button from '@pluralsight/ps-design-system-button'
+
+# Button
+
+<Intro>
+  Used to call attention, perform an action, or to navigate.
+</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Appearance
+
+Buttons come in four standard visual styles.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <Button appearance={Button.appearances.primary}>Primary</Button>
+    <Button appearance={Button.appearances.secondary}>Secondary</Button>
+    <Button appearance={Button.appearances.stroke}>Stroke</Button>
+    <Button appearance={Button.appearances.flat}>Flat</Button>
+  </div>
+}
+
+export default Example
+```
+
+### Size
+
+Buttons come in four standard sizes. The default size is `medium`.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <Button size={Button.sizes.large}>Large</Button>
+    <Button size={Button.sizes.medium}>Medium</Button>
+    <Button size={Button.sizes.small}>Small</Button>
+    <Button size={Button.sizes.xSmall}>XSmall</Button>
+  </div>
+}
+
+export default Example
+```
+
+### Icon
+
+Buttons may include an icon to the left or right of the label. Read more [icon docs](/components/icon).
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { CheckIcon, ChannelIcon, PlayIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <Button icon={<CheckIcon />}>With Icon</Button>
+    <Button icon={<ChannelIcon />} appearance={Button.appearances.stroke}>With Icon</Button>
+    <Button icon={<PlayIcon />} iconAlign={Button.iconAligns.right} appearance={Button.appearances.flat}>Aligned to Right</Button>
+  </div>
+}
+
+export default Example
+```
+
+### Icon only
+
+Buttons may include an icon without a label. Please provide a `title` prop to display the native tooltip as well as to support assistive technology (i.e. screen readers).
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <Button icon={<UserIcon />} title="Profile" />
+    <Button
+      icon={<UserIcon />}
+      appearance={Button.appearances.flat}
+      title="Profile"
+    />
+  </div>
+}
+
+export default Example
+```
+
+### Disabled prop
+
+Each button may be displayed as disabled. Do not use disabled treatment for non-disabled buttons.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <Button disabled>Disabled</Button>
+    <Button disabled appearance={Button.appearances.stroke}>Disabled</Button>
+    <Button disabled appearance={Button.appearances.flat}>Disabled</Button>
+    <Button disabled icon={<PencilIcon />}>Disabled</Button>
+  </div>
+}
+
+export default Example
+```
+
+## As Link
+
+Elements that are visually equivalent to buttons but change the URL and link to a new experience should be rendered as HTML anchor tags. Provide an `href` prop, and the button will render as an anchor tag.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid">
+    <Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>
+    <Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<PencilIcon />}>Link with icon</Button>
+  </div>
+}
+
+export default Example
+```
+
+### With react-router
+
+Many users of this component are using it in conjunction with [`react-router`](https://github.com/ReactTraining/react-router/issues/1176) . If you'd like to do the same and use `Button` to trigger react-router links, you can follow this pattern.
+
+```typescript noRender
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+import { BrowserRouter as Router, withRouter } from 'react-router-dom'
+
+function Example() {
+  // #1 Define your react-router-specific ButtonLink
+  const ButtonLink = withRouter(props => (
+    <Button
+      {...props}
+      onClick={evt => {
+        evt.preventDefault();
+        props.onClick && props.onClick(evt);
+        props.history.push(props.to);
+      }}
+      href={props.to}
+    />
+  ))
+
+  // #2 Invoke it like you'd usually use Link
+  return <Router><ButtonLink to="/react-wonderland">React-router Link as DS button</ButtonLink></Router>
+}
+
+export default Example
+```
+
+### Loading prop
+
+To show a spinner, pass a `loading` flag to your button. By default, it replaces your icon. If no icon is present, it replaces your text.
+
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
+import { UserIcon } from '@pluralsight/ps-design-system-icon'
+import React from 'react'
+
+function Example() {
+  return (
+    <Button
+      icon={<UserIcon />}
+      loading
+    >Loading...</Button>
+  )
+}
+
+export default Example
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-button"
+  import="import Button from '@pluralsight/ps-design-system-button'"
+  packageName="button"
+  />
+
+<TypesTable>
+  <TypesProp name="appearance" required type={<TypesEnum enum={Button.appearances} />} desc="visual style from Button.appearances" default={Button.appearances.primary} />
+  <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <TypesProp name="href" type="string" desc="url of resource (renders as anchor)" />
+  <TypesProp name="icon" type="Icon" desc="Icon component" />
+  <TypesProp name="iconAlign" type={<TypesEnum enum={Button.iconAligns} />} desc="horizontal icon placement (from Button.iconAligns)" />
+  <TypesProp name="loading" type="boolean" desc="disables button and shows spinner" default="false" />
+  <TypesProp name="size" type={<TypesEnum enum={Button.sizes} />} desc="button size (from Button.sizes)" default={Button.sizes.medium} />
+</TypesTable>
+

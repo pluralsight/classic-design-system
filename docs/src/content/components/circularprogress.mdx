@@ -1,0 +1,126 @@
+---
+name: Circular progress
+route: /components/circularprogress
+---
+
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+
+# Circular progress
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Size
+
+Circular progress comes in two standard sizes.
+
+```typescript
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <CircularProgress size={CircularProgress.sizes.small} value={75} />
+    <CircularProgress size={CircularProgress.sizes.medium} value={75} />
+  </div>
+}
+
+export default Example
+```
+
+### Mode
+
+Mode is determined by the presence of the value prop. When a value is given the mode is "determinate", and visual progress is set to that static value. When a value is absent the mode is "indeterminate" and becomes an infinite spinner.
+
+```typescript
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+import React from 'react'
+
+function Example() {
+  return <div className="example-grid--col-2">
+    <CircularProgress value={66} />
+    <CircularProgress />
+  </div>
+}
+
+export default Example
+```
+
+### Animation
+
+Mode is determined by the presence of the value prop. When a value is given the mode is "determinate", and visual progress is set to that static value. When a value is absent the mode is "indeterminate" and becomes an infinite spinner.
+
+```typescript
+import { colorsBackgroundDark, colorsBackgroundLight, colorsTextIcon, layout, type } from '@pluralsight/ps-design-system-core'
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+import Theme from '@pluralsight/ps-design-system-theme'
+import React from 'react'
+
+function AnimationDemo() {
+  const [value, setValue] = React.useState(0)
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      const rando = Math.floor(Math.random() * 115)
+      setValue(rando > 100 ? 100 : rando)
+    }, 2500)
+    return () => clearInterval(timer)
+  })
+
+  return (
+    <div className="root">
+      <div className="value">
+        Value: <span className="exampleNumber">{value}</span>
+      </div>
+      <Theme>
+        <div className="example">
+          <CircularProgress value={value} />
+        </div>
+      </Theme>
+      <style jsx>{`
+        .root {
+          display: flex;
+          justify-content: center;
+          height: 150px;
+        }
+        .value,
+        .example {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+        }
+        .value {
+          background: ${colorsBackgroundLight[2]};
+          border-radius: 12px 0 0 12px;
+          font-size: ${type.fontSizeLarge};
+          color: ${colorsTextIcon.lowOnLight};
+        }
+        .example {
+          background: ${colorsBackgroundDark[3]};
+          border-radius: 0 12px 12px 0;
+        }
+        .exampleNumber {
+          padding-left: ${layout.spacingSmall};
+          width: 3em;
+        }
+      `}</style>
+    </div>
+  )
+}
+
+export default AnimationDemo
+```
+
+## Usage & Types
+
+<Usage install="npm install @pluralsight/ps-design-system-circularprogress"
+  import="import Avatar from '@pluralsight/ps-design-system-circularprogress'"
+  packageName="circularprogress"
+  />
+
+<TypesTable>
+  <TypesProp name="size" type={<TypesEnum enum={CircularProgress.sizes}/>} desc="standard size for widget (from CircularProgress.sizes)" default="medium" />
+  <TypesProp name="value" type="number" desc="current progress out of 100" />
+</TypesTable>
+

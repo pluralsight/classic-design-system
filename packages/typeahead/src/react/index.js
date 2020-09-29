@@ -6,12 +6,12 @@ import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import TextInput from '@pluralsight/ps-design-system-textinput'
+import { usePortal } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars/index.js'
 
 import SuggestionsMenu from './menu.js'
 import useOnDocumentClick from './use-on-document-click.js'
-import usePortal from './use-portal.js'
 import { combineFns, omit, pick } from './utils.js'
 
 const TEXT_INPUT_PROPS = [
