@@ -131,4 +131,3 @@ export const PACKAGE_MAP: PackageMap = {
 export function mapPackageNameToScopes(pkgName: string) {
   return PACKAGE_MAP[pkgName]
 }
-

@@ -1,3 +1,6 @@
+// NOTE: imported so tsc will copy to dist dir
+import './gatsby-express.json'
+
 import path from 'path'
 
 import { Router } from 'express'
