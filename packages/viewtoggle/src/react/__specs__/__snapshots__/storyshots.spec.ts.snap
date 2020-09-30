@@ -4,13 +4,11 @@ exports[`Storyshots active default first 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -19,14 +17,29 @@ exports[`Storyshots active default first 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    I'm active
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
 </div>
 `;
 
@@ -34,13 +47,11 @@ exports[`Storyshots active explicit first 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -49,14 +60,29 @@ exports[`Storyshots active explicit first 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    I'm active
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
 </div>
 `;
 
@@ -64,13 +90,11 @@ exports[`Storyshots active explicit second 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -79,14 +103,29 @@ exports[`Storyshots active explicit second 1`] = `
     </div>
   </div>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 1
+  </button>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    I'm active
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
 </div>
 `;
 
@@ -94,13 +133,11 @@ exports[`Storyshots active explicit third 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -109,14 +146,29 @@ exports[`Storyshots active explicit third 1`] = `
     </div>
   </div>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 1
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    I'm active
+  </button>
 </div>
 `;
 
@@ -124,13 +176,11 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -139,14 +189,29 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
     </div>
   </div>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Apple
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Banana
+  </button>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Orange
+  </button>
 </div>
 `;
 
@@ -154,13 +219,11 @@ exports[`Storyshots onSelect handles click 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -169,14 +232,29 @@ exports[`Storyshots onSelect handles click 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 1
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
 </div>
 `;
 
@@ -185,13 +263,11 @@ Array [
   <div
     data-css-13xtft9=""
     role="radiogroup"
-    themeName="dark"
   >
     <div
       aria-hidden={true}
       data-css-w8tgx1=""
       style={Object {}}
-      themeName="dark"
     >
       <div
         data-css-1jyyyen=""
@@ -201,11 +277,23 @@ Array [
       </div>
     </div>
     <button
-      data-css-118ipcw=""
-    />
+      aria-selected={true}
+      data-css-192bud=""
+      onClick={[Function]}
+      role="radio"
+    >
+      item: 
+      1
+    </button>
     <button
+      aria-selected={false}
       data-css-118ipcw=""
-    />
+      onClick={[Function]}
+      role="radio"
+    >
+      item: 
+      2
+    </button>
   </div>,
   <div
     data-css-18ma6i3=""
@@ -230,13 +318,11 @@ exports[`Storyshots options count more than max 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -245,14 +331,29 @@ exports[`Storyshots options count more than max 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 1
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
 </div>
 `;
 
@@ -260,13 +361,11 @@ exports[`Storyshots options count one 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -275,8 +374,13 @@ exports[`Storyshots options count one 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    The Only Option
+  </button>
 </div>
 `;
 
@@ -284,13 +388,11 @@ exports[`Storyshots options count three 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -299,14 +401,29 @@ exports[`Storyshots options count three 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 1
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
 </div>
 `;
 
@@ -314,13 +431,11 @@ exports[`Storyshots options count two 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -329,11 +444,21 @@ exports[`Storyshots options count two 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 1
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
 </div>
 `;
 
@@ -341,13 +466,11 @@ exports[`Storyshots text length all long 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -356,14 +479,29 @@ exports[`Storyshots text length all long 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    This one is really long because everyone likes those
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    This one is really long because everyone likes those
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    This one is really long because everyone likes those
+  </button>
 </div>
 `;
 
@@ -371,13 +509,11 @@ exports[`Storyshots text length differing lengths 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
-  themeName="dark"
 >
   <div
     aria-hidden={true}
     data-css-w8tgx1=""
     style={Object {}}
-    themeName="dark"
   >
     <div
       data-css-1jyyyen=""
@@ -386,13 +522,28 @@ exports[`Storyshots text length differing lengths 1`] = `
     </div>
   </div>
   <button
-    data-css-118ipcw=""
-  />
+    aria-selected={true}
+    data-css-192bud=""
+    onClick={[Function]}
+    role="radio"
+  >
+    This one is really long because everyone likes those
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    This is medium
+  </button>
   <button
+    aria-selected={false}
     data-css-118ipcw=""
-  />
+    onClick={[Function]}
+    role="radio"
+  >
+    Short
+  </button>
 </div>
 `;

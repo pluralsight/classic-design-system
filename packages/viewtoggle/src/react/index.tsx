@@ -23,7 +23,10 @@ import React, {
 import stylesheet from '../css'
 import * as vars from '../vars'
 
-type StyleFn = (props: Record<string, any>) => StyleAttribute
+type StyleFn = (
+  themeName: ValueOf<Theme.names>,
+  props?: Record<string, any>
+) => StyleAttribute
 
 interface ViewToggleProps
   extends Omit<HTMLAttributes<HTMLDivElement>, 'onSelect'> {
@@ -42,23 +45,26 @@ interface ViewToggleComponent
   > {}
 
 const styles: { [key: string]: StyleFn } = {
-  optionButton: props =>
+  optionButton: (themeName, props) =>
     compose(
       css(
+        { label: 'viewtoggle__option' },
         stylesheet['.psds-viewtoggle__option'],
-        stylesheet[`.psds-viewtoggle__option.psds-theme--${props.themeName}`]
+        stylesheet[`.psds-viewtoggle__option.psds-theme--${themeName}`]
       ),
       props.active && css(stylesheet['.psds-viewtoggle__option--active'])
     ),
-  list: props =>
+  list: themeName =>
     css(
+      { label: 'viewtoggle' },
       stylesheet['.psds-viewtoggle'],
-      stylesheet[`.psds-viewtoggle.psds-theme--${props.themeName}`]
+      stylesheet[`.psds-viewtoggle.psds-theme--${themeName}`]
     ),
-  activePillBg: props =>
+  activePillBg: themeName =>
     css(
+      { label: 'viewtoggle__option-bg' },
       stylesheet['.psds-viewtoggle__option-bg'],
-      stylesheet[`.psds-viewtoggle__option-bg.psds-theme--${props.themeName}`]
+      stylesheet[`.psds-viewtoggle__option-bg.psds-theme--${themeName}`]
     ),
   pillBgSpacer: () => css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
 }
@@ -70,7 +76,6 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
     const ref = useRef<HTMLDivElement>()
     useImperativeHandle(forwardedRef, () => ref.current)
 
-    const themeName = useTheme()
     const hasRenderedOnce = useHasRenderedOnce()
 
     const initialIndex = useMemo(() => findActiveIndex(children), [children])
@@ -101,7 +106,7 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
       }
 
       return (
-        <ActivePillBg style={activePillStyle} themeName={themeName}>
+        <ActivePillBg style={activePillStyle}>
           <PillBgSpacer>{activeEl.props.children}</PillBgSpacer>
         </ActivePillBg>
       )
@@ -115,14 +120,13 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
         return cloneElement(child, {
           _i: i,
           _onSelect: handleSelect,
-          active: activeIndex === i,
-          themeName
+          active: activeIndex === i
         })
       })
     }
 
     return (
-      <List ref={ref} role="radiogroup" themeName={themeName} {...rest}>
+      <List ref={ref} role="radiogroup" {...rest}>
         {renderActivePill()}
         {renderChildren()}
       </List>
@@ -130,27 +134,37 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
   }
 ) as ViewToggleComponent
 
-interface ActivePillBgProps extends HTMLAttributes<HTMLDivElement> {
-  themeName: ValueOf<typeof Theme.names>
+const ActivePillBg: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+  const themeName = useTheme()
+  return <div {...styles.activePillBg(themeName)} aria-hidden {...props} />
 }
-const ActivePillBg: React.FC<ActivePillBgProps> = props => (
-  <div {...styles.activePillBg(props)} aria-hidden {...props} />
+
+const List = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
+  (props, ref) => {
+    const themeName = useTheme()
+    return <div ref={ref} {...styles.list(themeName)} {...props} />
+  }
 )
 
-interface ListProps extends HTMLAttributes<HTMLDivElement> {
-  themeName: ValueOf<typeof Theme.names>
+const PillBgSpacer: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+  const themeName = useTheme()
+  return <div {...styles.pillBgSpacer(themeName)} {...props} />
 }
-const List = forwardRef<HTMLDivElement, ListProps>((props, ref) => (
-  <div ref={ref} {...styles.list(props)} {...props} />
-))
 
-const PillBgSpacer: React.FC<HTMLAttributes<HTMLDivElement>> = props => (
-  <div {...styles.pillBgSpacer(props)} {...props} />
+interface OptionButtonProps extends HTMLAttributes<HTMLButtonElement> {
+  active: boolean
+}
+const OptionButton = forwardRef<HTMLButtonElement, OptionButtonProps>(
+  (props, ref) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { active, ...rest } = props
+    const themeName = useTheme()
+
+    return (
+      <button ref={ref} {...styles.optionButton(themeName, props)} {...rest} />
+    )
+  }
 )
-
-const OptionButton = forwardRef<HTMLButtonElement>((props, ref) => (
-  <button ref={ref} {...styles.optionButton(props)} />
-))
 
 interface OptionProps extends HTMLAttributes<HTMLButtonElement> {
   _i?: number
@@ -163,8 +177,10 @@ const Option = forwardRef<HTMLButtonElement, OptionProps>((props, ref) => {
   const handleClick = (evt: React.MouseEvent<HTMLButtonElement>) => {
     _onSelect(evt, _i)
   }
+
   return (
     <OptionButton
+      active={active}
       aria-selected={active}
       onClick={handleClick}
       ref={ref}
