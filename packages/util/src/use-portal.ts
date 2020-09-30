@@ -16,6 +16,8 @@ export function usePortal() {
     document.body.appendChild(current)
 
     return () => {
+      if (!isBrowser) return
+
       document.body.removeChild(current)
     }
   }, [])
