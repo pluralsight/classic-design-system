@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots active default first 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      I'm active
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots active explicit first 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      I'm active
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots active explicit second 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      I'm active
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots active explicit third 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      I'm active
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots dynamic options sizes correctly 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      Orange
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots onSelect handles click 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      Option 1
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots options count dynamic 1`] = `
+Array [
+  <div
+    data-css-13xtft9=""
+    role="radiogroup"
+    themeName="dark"
+  >
+    <div
+      aria-hidden={true}
+      data-css-w8tgx1=""
+      style={Object {}}
+      themeName="dark"
+    >
+      <div
+        data-css-1jyyyen=""
+      >
+        item: 
+        1
+      </div>
+    </div>
+    <button
+      data-css-118ipcw=""
+    />
+    <button
+      data-css-118ipcw=""
+    />
+  </div>,
+  <div
+    data-css-18ma6i3=""
+  >
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      remove
+    </button>
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      add
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots options count more than max 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      Option 1
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots options count one 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      The Only Option
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots options count three 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      Option 1
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots options count two 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      Option 1
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots text length all long 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      This one is really long because everyone likes those
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;
+
+exports[`Storyshots text length differing lengths 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+  themeName="dark"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+    themeName="dark"
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      This one is really long because everyone likes those
+    </div>
+  </div>
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+  <button
+    data-css-118ipcw=""
+  />
+</div>
+`;

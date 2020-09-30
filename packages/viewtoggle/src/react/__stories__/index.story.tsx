@@ -4,38 +4,38 @@ import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import ViewToggle from '../index.js'
+import ViewToggle from '..'
 
 storiesOf('options count', module)
-  .add('one', _ => (
+  .add('one', () => (
     <ViewToggle>
       <ViewToggle.Option>The Only Option</ViewToggle.Option>
     </ViewToggle>
   ))
-  .add('two', _ => (
+  .add('two', () => (
     <ViewToggle>
       <ViewToggle.Option>Option 1</ViewToggle.Option>
       <ViewToggle.Option>Option 2</ViewToggle.Option>
     </ViewToggle>
   ))
-  .add('three', _ => (
-    <ViewToggle>
-      <ViewToggle.Option>Option 1</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-      <ViewToggle.Option>Option 3</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('more than max', _ => (
+  .add('three', () => (
     <ViewToggle>
       <ViewToggle.Option>Option 1</ViewToggle.Option>
       <ViewToggle.Option>Option 2</ViewToggle.Option>
       <ViewToggle.Option>Option 3</ViewToggle.Option>
+    </ViewToggle>
+  ))
+  .add('more than max', () => (
+    <ViewToggle>
+      <ViewToggle.Option>Option 1</ViewToggle.Option>
+      <ViewToggle.Option>Option 2</ViewToggle.Option>
+      <ViewToggle.Option>Option 3</ViewToggle.Option>
       <ViewToggle.Option>Should not show up</ViewToggle.Option>
       <ViewToggle.Option>Should not show up</ViewToggle.Option>
       <ViewToggle.Option>Should not show up</ViewToggle.Option>
     </ViewToggle>
   ))
-  .add('dynamic', _ => {
+  .add('dynamic', () => {
     function DynamicOptions() {
       const [count, updateCount] = React.useState(2)
 
@@ -76,28 +76,28 @@ storiesOf('options count', module)
   })
 
 storiesOf('active', module)
-  .add('default first', _ => (
+  .add('default first', () => (
     <ViewToggle>
       <ViewToggle.Option>I'm active</ViewToggle.Option>
       <ViewToggle.Option>Option 2</ViewToggle.Option>
       <ViewToggle.Option>Option 3</ViewToggle.Option>
     </ViewToggle>
   ))
-  .add('explicit first', _ => (
+  .add('explicit first', () => (
     <ViewToggle>
       <ViewToggle.Option active>I'm active</ViewToggle.Option>
       <ViewToggle.Option>Option 2</ViewToggle.Option>
       <ViewToggle.Option>Option 3</ViewToggle.Option>
     </ViewToggle>
   ))
-  .add('explicit second', _ => (
+  .add('explicit second', () => (
     <ViewToggle>
       <ViewToggle.Option>Option 1</ViewToggle.Option>
       <ViewToggle.Option active>I'm active</ViewToggle.Option>
       <ViewToggle.Option>Option 3</ViewToggle.Option>
     </ViewToggle>
   ))
-  .add('explicit third', _ => (
+  .add('explicit third', () => (
     <ViewToggle>
       <ViewToggle.Option>Option 1</ViewToggle.Option>
       <ViewToggle.Option>Option 2</ViewToggle.Option>
@@ -105,7 +105,7 @@ storiesOf('active', module)
     </ViewToggle>
   ))
 
-storiesOf('onSelect', module).add('handles click', _ => (
+storiesOf('onSelect', module).add('handles click', () => (
   <ViewToggle onSelect={action('selected')}>
     <ViewToggle.Option>Option 1</ViewToggle.Option>
     <ViewToggle.Option>Option 2</ViewToggle.Option>
@@ -114,7 +114,7 @@ storiesOf('onSelect', module).add('handles click', _ => (
 ))
 
 storiesOf('text length', module)
-  .add('differing lengths', _ => (
+  .add('differing lengths', () => (
     <ViewToggle>
       <ViewToggle.Option>
         This one is really long because everyone likes those
@@ -123,7 +123,7 @@ storiesOf('text length', module)
       <ViewToggle.Option>Short</ViewToggle.Option>
     </ViewToggle>
   ))
-  .add('all long', _ => (
+  .add('all long', () => (
     <ViewToggle>
       <ViewToggle.Option>
         This one is really long because everyone likes those
@@ -137,7 +137,7 @@ storiesOf('text length', module)
     </ViewToggle>
   ))
 
-storiesOf('dynamic options', module).add('sizes correctly', _ => {
+storiesOf('dynamic options', module).add('sizes correctly', () => {
   const options = ['Apple', 'Banana', 'Orange']
   return (
     <ViewToggle>
