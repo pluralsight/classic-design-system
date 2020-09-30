@@ -3,8 +3,8 @@
 
 /* TODO: create global vars file */
 :root {
-  --asideWidth: 260px;
-  --metaWidth: 296px;
+  --asideWidth: 240px;
+  --metaWidth: 276px;
   --topNavHeight: 56px;
 }
 
@@ -19,6 +19,17 @@
     flex-direction: row;
     min-height: calc(100vh - var(--topNavHeight));
   }
+
+  @media (--breakpoint-small) {
+    padding-left: var(--asideWidth);
+  }
+  @media (--breakpoint-medium) {
+    padding-right: var(--metaWidth);
+  }
+
+  &.fullWidth {
+    margin-right: 0;
+  }
 }
 
 .dark {
@@ -31,17 +42,8 @@
 
 .main {
   overflow: auto;
-  flex: 1;
+  flex: 0 1 auto;
+  margin: 0 auto;
+  max-width: 1200px;
   padding: var(--psLayoutSpacingXLarge);
-
-  @media (--breakpoint-small) {
-    margin-left: var(--asideWidth);
-  }
-  @media (--breakpoint-medium) {
-    margin-right: var(--metaWidth);
-  }
-
-  &.mainFullWidth {
-    margin-right: 0;
-  }
 }
