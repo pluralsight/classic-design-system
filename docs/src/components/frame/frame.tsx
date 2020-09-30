@@ -53,9 +53,6 @@ export const Frame: React.FC<Props> = props => {
     [styles.light]: themeName === Theme.names.light
   })
 
-  const isExamplePage = window.location.pathname.includes('examples')
-  if (isExamplePage) return <ExamplePage>{children}</ExamplePage>
-
   return (
     <>
       <Helmet>
@@ -108,19 +105,3 @@ const Main: React.FC = props => {
     />
   )
 }
-
-const ExamplePage: React.FC = props => (
-  <>
-    <Helmet>
-      <link
-        rel="stylesheet"
-        href="https://cloud.typography.com/6966154/6397212/css/fonts.css"
-      />
-      <script src="https://unpkg.com/iframe-resizer@4.2.11/js/iframeResizer.contentWindow.min.js" />
-    </Helmet>
-
-    <Theme name={Theme.names.light}>
-      <div className={styles.example} {...props} />
-    </Theme>
-  </>
-)
