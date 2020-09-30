@@ -1,5 +1,5 @@
 .example {
   border-radius: 0.2em;
-  margin: var(--psLayoutSpacingMedium);
+  padding: var(--psLayoutSpacingMedium);
   background: var(--psColorsWhite);
 }

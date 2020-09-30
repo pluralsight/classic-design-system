@@ -95,6 +95,7 @@ const Container: React.FC = props => (
 const Main: React.FC = props => {
   const isComponentPage =
     canUseDOM() && /components|core|guides/.test(window.location.pathname)
+
   return (
     <main
       className={cx({
