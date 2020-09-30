@@ -16,12 +16,12 @@ import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
 
 const styles = {
-  itemContainer: ({ disabled }: { disabled: boolean}) =>
+  itemContainer: ({ disabled }: { disabled: boolean }) =>
     compose(
       css(stylesheet['.psds-actionmenu__item-container']),
       disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
     ),
-  item: ({ hasSubMenu }: { hasSubMenu: boolean}) =>
+  item: ({ hasSubMenu }: { hasSubMenu: boolean }) =>
     compose(
       css(stylesheet['.psds-actionmenu__item']),
       css({
@@ -31,8 +31,8 @@ const styles = {
       }),
       hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
     ),
-  inner:  () => css(stylesheet['.psds-actionmenu__item-inner']),
-  nested: ({ origin }: { origin: string}) =>
+  inner: () => css(stylesheet['.psds-actionmenu__item-inner']),
+  nested: ({ origin }: { origin: string }) =>
     compose(
       css(stylesheet['.psds-actionmenu']),
       css(stylesheet['.psds-actionmenu__nested']),
@@ -43,14 +43,14 @@ const styles = {
   textOnly: () => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-interface Props extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'>  {
-  disabled: boolean;
-  tagName: string;
-  className: string;
-  origin: string;
-  onClick: (event: React.MouseEvent, value: string | number ) => void;
-  nested: React.ReactNode;
-  value: string | number;
+interface Props extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'> {
+  disabled: boolean
+  tagName: string
+  className: string
+  origin: string
+  onClick: (event: React.MouseEvent, value: string | number) => void
+  nested: React.ReactNode
+  value: string | number
 }
 
 export const Item = forwardRef<HTMLLIElement, Props>(
@@ -68,13 +68,11 @@ export const Item = forwardRef<HTMLLIElement, Props>(
     },
     forwardedRef
   ) => {
-    const { onClickContext, onClose, originContext }  = useContext<{
-      onClickContext : (e: Event, v: string | number) => void,
-      onClose: (e: Event, v: string | number) => void,
+    const { onClickContext, onClose, originContext } = useContext<{
+      onClickContext: (e: Event, v: string | number) => void
+      onClose: (e: Event, v: string | number) => void
       originContext: string
-    }>(
-      ActionMenuContext
-    )
+    }>(ActionMenuContext)
     const ref = useRef()
     const subMenuRef = useRef()
     useImperativeHandle(forwardedRef, () => ref.current)

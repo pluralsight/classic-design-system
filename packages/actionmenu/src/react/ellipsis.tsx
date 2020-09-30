@@ -1,12 +1,16 @@
 import { css } from 'glamor'
 import React, { HTMLAttributes, forwardRef } from 'react'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import stylesheet from '../css/index'
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 
 const styles = () => css(stylesheet[`.psds-actionmenu__ellipsis`])
 
-export const Ellipsis:  React.FC<HTMLAttributes<HTMLSpanElement>> = forwardRef((props, ref) => (
-  <span ref={ref} {...filterReactProps(props)} {...styles()} />
-))
+interface Props extends HTMLAttributes<HTMLSpanElement> {}
+interface EllipsisComponent
+  extends RefForwardingComponent<Props, HTMLSpanElement> {}
+
+export const Ellipsis = forwardRef<HTMLSpanElement, Props>((props, ref) => (
+  <span ref={ref} {...props} {...styles()} />
+)) as EllipsisComponent
 
 Ellipsis.displayName = 'ActionMenu.Ellipsis'

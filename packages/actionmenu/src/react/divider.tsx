@@ -1,6 +1,5 @@
 import { css } from 'glamor'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import React, {HTMLAttributes} from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import stylesheet from '../css/index'
 
@@ -9,7 +8,7 @@ const styles = {
 }
 
 export const Divider: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
-  return <div {...styles.divider()} {...filterReactProps(props)} />
+  return <div {...styles.divider()} {...props} />
 }
 
 Divider.displayName = 'ActionMenu.Divider'

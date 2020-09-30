@@ -1,13 +1,13 @@
 import React, { HTMLAttributes } from 'react'
 import { css, compose, keyframes } from 'glamor'
-import { useMenuRef } from '@pluralsight/ps-design-system-util'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import {
+  useMenuRef,
   handleMenuKeyDownEvents,
   handleMenuKeyUpEvents,
   useCloseOnDocumentEvents,
-  RefForwardingComponent,
+  RefForwardingComponent
 } from '@pluralsight/ps-design-system-util'
+
 import { ActionMenuContext } from './context'
 import { Divider } from './divider'
 import { Item } from './item'
@@ -38,18 +38,13 @@ interface ActionMenuStatics {
 }
 
 interface Props extends HTMLAttributes<HTMLUListElement> {
-  children: React.ReactNode | Array<React.ReactNode>;
-  onClose: () => void;
-  origin: string;
-  onClick: (Event) => void;
+  children: React.ReactNode | Array<React.ReactNode>
+  onClose: () => void
+  origin: string
+  onClick: (Event) => void
 }
 interface ActionMenuComponent
-  extends RefForwardingComponent<
-    Props,
-    HTMLUListElement,
-    ActionMenuStatics
-  > {}
-
+  extends RefForwardingComponent<Props, HTMLUListElement, ActionMenuStatics> {}
 
 export const ActionMenu = React.forwardRef<HTMLUListElement, Props>(
   ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
@@ -71,7 +66,7 @@ export const ActionMenu = React.forwardRef<HTMLUListElement, Props>(
         onKeyDown={handleKeyDown}
         onKeyUp={handleMenuKeyUpEvents}
         role="menu"
-        {...filterReactProps(props)}
+        {...props}
       >
         <ActionMenuContext.Provider
           value={{ onClickContext: onClick, onClose, originContext: origin }}

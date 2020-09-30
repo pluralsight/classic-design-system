@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import React, {HTMLAttributes} from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import stylesheet from '../css/index'
 
