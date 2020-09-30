@@ -47,10 +47,14 @@ export const Frame: React.FC<Props> = props => {
     if (skipTargetRef.current) skipTargetRef.current.focus()
   }, [])
 
+  const isComponentPage =
+    canUseDOM() && /components|core|guides/.test(window.location.pathname)
+
   const className = cx({
     [styles.frame]: true,
     [styles.dark]: themeName === Theme.names.dark,
-    [styles.light]: themeName === Theme.names.light
+    [styles.light]: themeName === Theme.names.light,
+    [styles.fullWidth]: !isComponentPage
   })
 
   return (
@@ -93,14 +97,10 @@ const Container: React.FC = props => (
 )
 
 const Main: React.FC = props => {
-  const isComponentPage =
-    canUseDOM() && /components|core|guides/.test(window.location.pathname)
+
   return (
     <main
-      className={cx({
-        [styles.main]: true,
-        [styles.mainFullWidth]: !isComponentPage
-      })}
+      className={styles.main}
       {...props}
     />
   )
