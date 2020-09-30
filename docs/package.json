@@ -87,6 +87,7 @@
     "gatsby-transformer-remark": "^2.8.35",
     "helmet": "^4.1.0",
     "http-errors": "^1.8.0",
+    "iframe-resizer-react": "^1.0.4",
     "newrelic": "^6.13.0",
     "react": "^16.8.1",
     "react-codesandboxer": "^3.1.5",

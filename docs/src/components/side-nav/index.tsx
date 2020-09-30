@@ -347,6 +347,10 @@ const items = [
     },
     items: [
       {
+        href: '/components/position',
+        title: 'Position'
+      },
+      {
         href: '/components/featureflags',
         title: 'Feature flags'
       },
