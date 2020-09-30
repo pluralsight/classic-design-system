@@ -3,7 +3,13 @@ name: Motion
 route: /core/motion
 ---
 
-import { Speeds, Relative, Travel, Easing, Rotation } from '../../components/motion'
+import {
+  Speeds,
+  Relative,
+  Travel,
+  Easing,
+  Rotation
+} from '../../components/motion'
 
 # Motion
 
@@ -18,7 +24,7 @@ Motion speed should most often occur at the following standard increments.
 Use the CSS variables to set the duration.
 
 ```css
-@import "@pluralsight/ps-design-system-core";
+@import '@pluralsight/ps-design-system-core';
 
 .mySelector {
   animation-duration: var(--psMotionSpeedXFast);
@@ -40,7 +46,7 @@ Some general guidance on selecting an easing curve.
 <Easing />
 
 ```css
-@import "@pluralsight/ps-design-system-core";
+@import '@pluralsight/ps-design-system-core';
 
 .mySelector {
   animation-timing-function: ease-in-out;
@@ -54,9 +60,13 @@ Generally, larger objects look more natural when rotating slower than smaller ob
 <Rotation />
 
 ```css
-@import "@pluralsight/ps-design-system-core";
+@import '@pluralsight/ps-design-system-core';
 
-@keyframes rotateMe { to { transform: rotate(360deg); }}
+@keyframes rotateMe {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .mySelector {
   animation: var(--psMotionSpeedNormal) linear infinite rotateMe;

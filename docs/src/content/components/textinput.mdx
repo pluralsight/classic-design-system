@@ -2,6 +2,7 @@
 name: Text input
 route: /components/textinput
 ---
+
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
 # TextInput
@@ -31,7 +32,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Icon
@@ -45,10 +45,7 @@ import { SearchIcon } from '@pluralsight/ps-design-system-icon'
 
 const Comp = () => (
   <div className="example-flex-column">
-    <TextInput
-      icon={<SearchIcon />}
-      placeholder="Search"
-    />
+    <TextInput icon={<SearchIcon />} placeholder="Search" />
     <TextInput
       icon={<SearchIcon />}
       iconAlign={TextInput.iconAligns.right}
@@ -58,7 +55,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Appearance
@@ -79,7 +75,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Disabled
@@ -90,12 +85,9 @@ Disabled text inputs are unmodifiable and diminished visually.
 import React from 'react'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
-const Comp = () => (
-  <TextInput disabled label="Can't touch this" />
-)
+const Comp = () => <TextInput disabled label="Can't touch this" />
 
 export default Comp
-
 ```
 
 ### Error
@@ -111,7 +103,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Size
@@ -124,36 +115,55 @@ import TextInput from '@pluralsight/ps-design-system-textinput'
 
 const Comp = () => (
   <div className="example-flex-column">
-    <TextInput
-      placeholder="medium text input"
-    />
-    <TextInput
-      placeholder="small text input"
-      size={TextInput.sizes.small}
-    />
+    <TextInput placeholder="medium text input" />
+    <TextInput placeholder="small text input" size={TextInput.sizes.small} />
   </div>
 )
 
 export default Comp
-
 ```
 
 ## Usage & Types
 
-<Usage install="npm install @pluralsight/ps-design-system-textinput"
+<Usage
+  install="npm install @pluralsight/ps-design-system-textinput"
   import="import TextInput from '@pluralsight/ps-design-system-textinput'"
   packageName="textinput"
 />
 
 <TypesTable>
-  <TypesProp name="appearance" type={<TypesEnum enum={TextInput.appearances}/>} desc="visual style (from TextInput.appearances)"/>
-  <TypesProp name="disabled" type="boolean" desc="standard input disable flag"/>
-  <TypesProp name="error" type="boolean" desc="error state flag"/>
-  <TypesProp name="icon" type="*Icon" desc="An Icon component"/>
-  <TypesProp name="iconAlign" type={<TypesEnum enum={TextInput.iconAligns}/>} desc="horizontal icon placement (from TextInput.iconAligns)"/>
-  <TypesProp name="label" type="string" desc="identifying string for input"/>
-  <TypesProp name="placeholder" type="string" desc="in-field usage hint"/>
-  <TypesProp name="ref" type="Ref || { field: Ref,input: Ref, }" desc="refs to access underlying elements"/>
-  <TypesProp name="size" type={<TypesEnum enum={TextInput.sizes}/>} desc="horizontal icon placement (from TextInput.sizes)"/>
-  <TypesProp name="subLabel" type="string" desc="supporting text or error messaging"/>
+  <TypesProp
+    name="appearance"
+    type={<TypesEnum enum={TextInput.appearances} />}
+    desc="visual style (from TextInput.appearances)"
+  />
+  <TypesProp
+    name="disabled"
+    type="boolean"
+    desc="standard input disable flag"
+  />
+  <TypesProp name="error" type="boolean" desc="error state flag" />
+  <TypesProp name="icon" type="*Icon" desc="An Icon component" />
+  <TypesProp
+    name="iconAlign"
+    type={<TypesEnum enum={TextInput.iconAligns} />}
+    desc="horizontal icon placement (from TextInput.iconAligns)"
+  />
+  <TypesProp name="label" type="string" desc="identifying string for input" />
+  <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
+  <TypesProp
+    name="ref"
+    type="Ref || { field: Ref,input: Ref, }"
+    desc="refs to access underlying elements"
+  />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={TextInput.sizes} />}
+    desc="horizontal icon placement (from TextInput.sizes)"
+  />
+  <TypesProp
+    name="subLabel"
+    type="string"
+    desc="supporting text or error messaging"
+  />
 </TypesTable>

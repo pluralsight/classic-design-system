@@ -28,7 +28,7 @@ const FIELDS = [
 const ROWS = [
   { name: 'Tod Gentille', courses: 41, viewTime: 839 },
   { name: 'Dmitry Borodyansky', courses: 2, viewTime: 12 },
-  { name: 'Jake Trent', courses: 7, viewTime: 294 },
+  { name: 'Jake Trent', courses: 7, viewTime: 294 }
 ]
 
 const Example: React.FC = props => {
@@ -59,7 +59,9 @@ const Example: React.FC = props => {
           <Table.ColumnHeader
             align={field.align}
             key={field.key}
-            onClick={(_evt, dir) => { handleSortClick(field.key, dir) }}
+            onClick={(_evt, dir) => {
+              handleSortClick(field.key, dir)
+            }}
             sort={sortKey === field.key ? sortDirection : true}
           >
             {field.name}
@@ -75,18 +77,12 @@ const Example: React.FC = props => {
               size={Avatar.sizes.xSmall}
               style={{ minWidth: Avatar.widths.xSmall }}
             />
-            <div style={{ marginLeft: layout.spacingSmall }}>
-              {row.name}
-            </div>
+            <div style={{ marginLeft: layout.spacingSmall }}>{row.name}</div>
           </Table.Cell>
 
-          <Table.Cell align={Table.aligns.right}>
-            {row.courses}
-          </Table.Cell>
+          <Table.Cell align={Table.aligns.right}>{row.courses}</Table.Cell>
 
-          <Table.Cell align={Table.aligns.right}>
-            {row.viewTime}m
-          </Table.Cell>
+          <Table.Cell align={Table.aligns.right}>{row.viewTime}m</Table.Cell>
         </Table.Row>
       ))}
     </Table>
@@ -152,7 +148,12 @@ const Example: React.FC = props => {
   return (
     <Table>
       <Table.Row>
-        <Table.ColumnHeader sort={Table.sorts.asc} onClick={sort => alert(sort)}>Column</Table.ColumnHeader>
+        <Table.ColumnHeader
+          sort={Table.sorts.asc}
+          onClick={sort => alert(sort)}
+        >
+          Column
+        </Table.ColumnHeader>
         <Table.ColumnHeader sort>Column</Table.ColumnHeader>
       </Table.Row>
       <Table.Row>
@@ -186,9 +187,15 @@ const Example: React.FC = props => {
   return (
     <Table>
       <Table.Row>
-        <Table.ColumnHeader align={Table.aligns.left}>Column label</Table.ColumnHeader>
-        <Table.ColumnHeader align={Table.aligns.center}>Column label</Table.ColumnHeader>
-        <Table.ColumnHeader align={Table.aligns.right}>Column label</Table.ColumnHeader>
+        <Table.ColumnHeader align={Table.aligns.left}>
+          Column label
+        </Table.ColumnHeader>
+        <Table.ColumnHeader align={Table.aligns.center}>
+          Column label
+        </Table.ColumnHeader>
+        <Table.ColumnHeader align={Table.aligns.right}>
+          Column label
+        </Table.ColumnHeader>
       </Table.Row>
       <Table.Row>
         <Table.Cell align={Table.aligns.left}>Broccoli</Table.Cell>
@@ -230,7 +237,9 @@ const Example: React.FC = props => {
         <Table.ColumnHeader>Column</Table.ColumnHeader>
       </Table.Row>
       <Table.Row>
-        <Table.Cell flex="4">This column is prioritized to take more of the available space.</Table.Cell>
+        <Table.Cell flex="4">
+          This column is prioritized to take more of the available space.
+        </Table.Cell>
         <Table.Cell>Cell</Table.Cell>
       </Table.Row>
       <Table.Row>
@@ -256,11 +265,9 @@ import Drawer from '@pluralsight/ps-design-system-drawer'
 import Table from '@pluralsight/ps-design-system-table'
 import React from 'react'
 
-const PinkBox: React.FC = (props) => (
+const PinkBox: React.FC = props => (
   <React.Fragment>
-    <div className="pink-box">
-      {props.children}
-    </div>
+    <div className="pink-box">{props.children}</div>
 
     <style jsx>{`
       .pink-box {
@@ -317,6 +324,7 @@ const Example: React.FC = props => {
 
 export default Example
 ```
+
 You can also nest an entire `Table` inside a `Drawer`. Mark the nested `Table`
 with the `inDrawer` prop to get the correct styling.
 
@@ -376,7 +384,6 @@ export default Example
   import="import Table from '@pluralsight/ps-design-system-table'"
   packageName="table"
 />
-
 
 ### Table
 
@@ -442,4 +449,3 @@ export default Example
     desc="labels column as sortable or sorted"
   />
 </TypesTable>
-

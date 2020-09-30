@@ -12,7 +12,12 @@ import { AsideLayout } from '@pluralsight/ps-design-system-layout'
 Use this layout for any 1/4, 3/4-proportioned layouts.
 
 ```typescript
-import { colorsBlue, colorsTextIcon, type, layout } from '@pluralsight/ps-design-system-core'
+import {
+  colorsBlue,
+  colorsTextIcon,
+  type,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import { AsideLayout } from '@pluralsight/ps-design-system-layout'
 import React from 'react'
 
@@ -97,11 +102,5 @@ export default Example
     desc="Aside position (from AsideLayout.asidePositions)"
     default={AsideLayout.asidePositions.first}
   />
-  <TypesProp
-    name="main"
-    type="AsideLayout.Main"
-    desc="main content"
-    required
-  />
+  <TypesProp name="main" type="AsideLayout.Main" desc="main content" required />
 </TypesTable>
-

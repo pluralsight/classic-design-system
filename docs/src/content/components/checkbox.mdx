@@ -25,7 +25,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Indeterminate
@@ -38,13 +37,21 @@ import Checkbox from '@pluralsight/ps-design-system-checkbox'
 
 const Comp = () => (
   <div className="example-flex-column">
-    <Checkbox indeterminate label="I'm indeterminate" value="Indeterminate-eg"/>
-    <Checkbox checked indeterminate label="I'm checked but still indeterminate" value="Indeterminate-eg"/>
+    <Checkbox
+      indeterminate
+      label="I'm indeterminate"
+      value="Indeterminate-eg"
+    />
+    <Checkbox
+      checked
+      indeterminate
+      label="I'm checked but still indeterminate"
+      value="Indeterminate-eg"
+    />
   </div>
 )
 
 export default Comp
-
 ```
 
 ### Disabled
@@ -57,13 +64,12 @@ import Checkbox from '@pluralsight/ps-design-system-checkbox'
 
 const Comp = () => (
   <div className="example-flex-column">
-    <Checkbox disabled label="Can't touch this" value="Disabled-eg"/>
-    <Checkbox disabled checked label="Checked or not" value="Disabled-eg"/>
+    <Checkbox disabled label="Can't touch this" value="Disabled-eg" />
+    <Checkbox disabled checked label="Checked or not" value="Disabled-eg" />
   </div>
 )
 
 export default Comp
-
 ```
 
 ### Error
@@ -76,13 +82,17 @@ import Checkbox from '@pluralsight/ps-design-system-checkbox'
 
 const Comp = () => (
   <div className="example-flex-column">
-    <Checkbox error label="I've got problems"  value="Error-eg"/>
-    <Checkbox error checked label="Checked and still not good enough" value="Error-eg"/>
+    <Checkbox error label="I've got problems" value="Error-eg" />
+    <Checkbox
+      error
+      checked
+      label="Checked and still not good enough"
+      value="Error-eg"
+    />
   </div>
 )
 
 export default Comp
-
 ```
 
 ### In-app
@@ -90,7 +100,12 @@ export default Comp
 ```typescript
 import React from 'react'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
-import { layout, type, colorsTextIcon, colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
+import {
+  layout,
+  type,
+  colorsTextIcon,
+  colorsBackgroundLight
+} from '@pluralsight/ps-design-system-core'
 
 class Comp extends React.Component {
   constructor() {
@@ -134,13 +149,15 @@ class Comp extends React.Component {
             checked={checked('slides')}
           />
         </div>
-        <div style={{
+        <div
+          style={{
             padding: layout.spacingLarge,
             fontSize: type.fontSizeMedium,
             color: colorsTextIcon.lowOnLight,
             background: colorsBackgroundLight[2],
-            borderRadius: 12,
-        }}>
+            borderRadius: 12
+          }}
+        >
           Checked:{' '}
           {features
             .map(name => name + ': ' + this.state.values[name])
@@ -151,23 +168,51 @@ class Comp extends React.Component {
   }
 }
 export default Comp
-
 ```
 
 ## Usage & Types
 
-<Usage install="npm install @pluralsight/ps-design-system-checkbox"
+<Usage
+  install="npm install @pluralsight/ps-design-system-checkbox"
   import="import Checkbox from '@pluralsight/ps-design-system-checkbox'"
   packageName="checkbox"
-  />
+/>
 
 <TypesTable>
-  <TypesProp name="checked" type="boolean" desc="marks as selected" default="false"/>
-  <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false"/>
-  <TypesProp name="error" type="boolean" desc="error state flag" default="false"/>
-  <TypesProp name="indeterminate" type="boolean" desc="marks as indeterminate" default="false"/>
-  <TypesProp name="name" type="string" desc="form data identifier"/>
-  <TypesProp name="label" type="React.ReactNode" desc="display name"/>
-  <TypesProp name="onCheck" type="(Event, checked: boolean, value: any, name: string) => void" desc="triggers on check toggle"/>
-  <TypesProp name="value" type="string | number" desc="form value when checked"/>
+  <TypesProp
+    name="checked"
+    type="boolean"
+    desc="marks as selected"
+    default="false"
+  />
+  <TypesProp
+    name="disabled"
+    type="boolean"
+    desc="standard input disable flag"
+    default="false"
+  />
+  <TypesProp
+    name="error"
+    type="boolean"
+    desc="error state flag"
+    default="false"
+  />
+  <TypesProp
+    name="indeterminate"
+    type="boolean"
+    desc="marks as indeterminate"
+    default="false"
+  />
+  <TypesProp name="name" type="string" desc="form data identifier" />
+  <TypesProp name="label" type="React.ReactNode" desc="display name" />
+  <TypesProp
+    name="onCheck"
+    type="(Event, checked: boolean, value: any, name: string) => void"
+    desc="triggers on check toggle"
+  />
+  <TypesProp
+    name="value"
+    type="string | number"
+    desc="form value when checked"
+  />
 </TypesTable>

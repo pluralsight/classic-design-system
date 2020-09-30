@@ -7,7 +7,12 @@ import Button from '@pluralsight/ps-design-system-button'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import { Heading, P } from '@pluralsight/ps-design-system-text'
 
-import { CenteredExample, PrincipleHeader, Quote, QuoteList } from '../../components/voice'
+import {
+  CenteredExample,
+  PrincipleHeader,
+  Quote,
+  QuoteList
+} from '../../components/voice'
 
 # Voice & tone
 
@@ -22,8 +27,8 @@ import { CenteredExample, PrincipleHeader, Quote, QuoteList } from '../../compon
 </Intro>
 
 <Intro>
-  We follow three principles in our messaging: Be confident. Be enthusiastic.
-  Be clever.
+  We follow three principles in our messaging: Be confident. Be enthusiastic. Be
+  clever.
 </Intro>
 
 <TableOfContents {...props} />
@@ -34,10 +39,17 @@ import { CenteredExample, PrincipleHeader, Quote, QuoteList } from '../../compon
     <P>Be simple and direct. Avoid long, hard words and formal language. Try not to say too many things at once. Avoid hedging language and evasive phrases such as “seems like” and “according to.” Steer clear of empty words like “world class,” “robust” and “high quality.”</P>
   </div>
 
-  <div>
-    <PrincipleHeader>Enthusiastic</PrincipleHeader>
-    <P>Stay positive by avoiding comparisons designed to elevate one idea by diminishing another. Assume success and stay away from fear. Celebrate the craft. Our audience appreciates the skill that goes into their work, so shine light on it whenever possible.</P>
-  </div>
+
+{' '}
+<div>
+  <PrincipleHeader>Enthusiastic</PrincipleHeader>
+  <P>
+    Stay positive by avoiding comparisons designed to elevate one idea by
+    diminishing another. Assume success and stay away from fear. Celebrate the
+    craft. Our audience appreciates the skill that goes into their work, so
+    shine light on it whenever possible.
+  </P>
+</div>
 
   <div>
     <PrincipleHeader>Clever</PrincipleHeader>
@@ -89,7 +101,9 @@ This language feels formal and unnatural.
       connecting list items.
     </P>
   </div>
-  <Quote>At Pluralsight we are big fans of pizza, Indian and Chinese food.</Quote>
+  <Quote>
+    At Pluralsight we are big fans of pizza, Indian and Chinese food.
+  </Quote>
 </EqualColumnLayout>
 
 <EqualColumnLayout count={EqualColumnLayout.counts.two}>
@@ -119,6 +133,7 @@ creating excitement.
     ‘click here’, or anything that does not make sense when read out of context.
   </P>
 
+
   <Quote>
     <EqualColumnLayout count={EqualColumnLayout.counts.two}>
       <QuoteList>
@@ -135,6 +150,7 @@ creating excitement.
   </Quote>
 </EqualColumnLayout>
 
+
 ## Error messages
 
 Do all you can to prevent errors, but when they occur, use the opportunity to
@@ -150,13 +166,17 @@ using jargon.
 <Guideline
   do={
     <CenteredExample>
-      <P><strong>Your credit card has expired</strong></P>
+      <P>
+        <strong>Your credit card has expired</strong>
+      </P>
       <P>Update your payment method to restore your subscription.</P>
     </CenteredExample>
   }
   dont={
     <CenteredExample>
-      <P><strong>Billing Error</strong></P>
+      <P>
+        <strong>Billing Error</strong>
+      </P>
     </CenteredExample>
   }
 />
@@ -169,14 +189,18 @@ issue. If possible include a button, a link, or another call to action.
 <Guideline
   do={
     <CenteredExample>
-      <P><strong>There was a problem loading the video</strong></P>
+      <P>
+        <strong>There was a problem loading the video</strong>
+      </P>
       <br />
       <Button>Try again</Button>
     </CenteredExample>
   }
   dont={
     <CenteredExample>
-      <P><strong>Error 7007</strong></P>
+      <P>
+        <strong>Error 7007</strong>
+      </P>
       <P>Unable to play video</P>
     </CenteredExample>
   }
@@ -195,7 +219,10 @@ to help them through it in a friendly way.
   }
   dont={
     <CenteredExample>
-      <P>Yo, big problemo! The password you provided doesn’t match. Wanna try that again?</P>
+      <P>
+        Yo, big problemo! The password you provided doesn’t match. Wanna try
+        that again?
+      </P>
     </CenteredExample>
   }
 />
@@ -229,8 +256,8 @@ to help them through it in a friendly way.
     </Heading>
     <P>
       Do not use contractions (st, th, etc.) within a complete sentence. Do not
-      use leading zeros on days. Feel free to abbreviate months. Use four
-      digit year.
+      use leading zeros on days. Feel free to abbreviate months. Use four digit
+      year.
     </P>
   </div>
   <Quote>
@@ -300,4 +327,3 @@ to help them through it in a friendly way.
     Eimerman, +2
   </Quote>
 </EqualColumnLayout>
-
