@@ -53,9 +53,6 @@ export const Frame: React.FC<Props> = props => {
     [styles.light]: themeName === Theme.names.light
   })
 
-  /* const isExamplePage = window.location.pathname.includes('examples') */
-  /* if (isExamplePage) return <ExamplePage>{children}</ExamplePage> */
-
   return (
     <>
       <Helmet>
