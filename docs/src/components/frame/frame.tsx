@@ -47,14 +47,14 @@ export const Frame: React.FC<Props> = props => {
     if (skipTargetRef.current) skipTargetRef.current.focus()
   }, [])
 
-  const isComponentPage =
+  const hasTOC =
     canUseDOM() && /components|core|guides/.test(window.location.pathname)
 
   const className = cx({
     [styles.frame]: true,
     [styles.dark]: themeName === Theme.names.dark,
     [styles.light]: themeName === Theme.names.light,
-    [styles.fullWidth]: !isComponentPage
+    [styles.fullWidth]: !hasTOC
   })
 
   return (
