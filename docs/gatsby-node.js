@@ -49,7 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/page.tsx`),
+      component: chooseTemplate(node.fields.slug),
       context: {
         // NOTE: Data passed to context is available
         // in page queries as GraphQL variables.
@@ -57,4 +57,10 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     })
   })
+}
+
+function chooseTemplate(slug) {
+  return slug.includes('examples')
+    ? path.resolve(`./src/templates/example-frame.tsx`)
+    : path.resolve(`./src/templates/page.tsx`)
 }
