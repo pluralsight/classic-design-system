@@ -9,7 +9,6 @@ import React, {
   useState
 } from 'react'
 import { useCookies } from 'react-cookie'
-import { Helmet } from 'react-helmet'
 
 import { Aside } from './aside'
 import styles from './frame.module.css'
@@ -59,13 +58,6 @@ export const Frame: React.FC<Props> = props => {
 
   return (
     <>
-      <Helmet>
-        <link
-          rel="stylesheet"
-          href="https://cloud.typography.com/6966154/6397212/css/fonts.css"
-        />
-      </Helmet>
-
       <Theme name={themeName}>
         <SkipBanner href={'#' + SKIP_TARGET_ID} onClick={focusSkipTarget} />
 
@@ -97,10 +89,5 @@ const Container: React.FC = props => (
 )
 
 const Main: React.FC = props => {
-  return (
-    <main
-      className={styles.main}
-      {...props}
-    />
-  )
+  return <main className={styles.main} {...props} />
 }
