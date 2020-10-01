@@ -1,7 +1,7 @@
-import * as React from "react"
-import { LocationContext } from "@reach/router"
-import PropTypes from "prop-types"
-import { SessionStorage } from "./session-storage"
+import * as React from 'react'
+import { LocationContext } from '@reach/router'
+import PropTypes from 'prop-types'
+import { SessionStorage } from './session-storage'
 
 export const ScrollContext = React.createContext<SessionStorage>(
   new SessionStorage()
@@ -20,7 +20,7 @@ export class ScrollHandler extends React.Component<
   static propTypes = {
     shouldUpdateScroll: PropTypes.func,
     children: PropTypes.element.isRequired,
-    location: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired
   }
 
   _stateStorage: SessionStorage = new SessionStorage()

@@ -25,19 +25,27 @@
   }
 }
 .headerText {
-
   & h1 {
     margin-bottom: var(--psLayoutSpacingLarge);
+    font-weight: var(--psTypeFontWeightMedium);
+  }
+
+  & p {
+    font-size: var(--psTypeFontSizeMedium);
+    line-height: var(--psTypeLineHeightStandard);
   }
 }
 .headerImg {
+  --robotHeight: 656;
+  --robotWidth: 960;
+
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: var(--robotImg);
   overflow: hidden;
   height: 0;
-  padding-top: calc(656/960*100%);
+  padding-top: calc(var(--robotHeight) / var(--robotWidth) * 100%);
 }
 
 .steps {
