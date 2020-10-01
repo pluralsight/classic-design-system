@@ -23,15 +23,25 @@ function Example() {
   return (
     <div className="example-grid--col-2">
       <Badge color={Badge.colors.gray}>Gray Badge</Badge>
-      <Badge color={Badge.colors.gray} appearance={Badge.appearances.subtle}>Gray Badge (Subtle)</Badge>
+      <Badge color={Badge.colors.gray} appearance={Badge.appearances.subtle}>
+        Gray Badge (Subtle)
+      </Badge>
       <Badge color={Badge.colors.green}>Green Badge</Badge>
-      <Badge color={Badge.colors.green} appearance={Badge.appearances.subtle}>Green Badge (Subtle)</Badge>
+      <Badge color={Badge.colors.green} appearance={Badge.appearances.subtle}>
+        Green Badge (Subtle)
+      </Badge>
       <Badge color={Badge.colors.yellow}>Yellow Badge</Badge>
-      <Badge color={Badge.colors.yellow} appearance={Badge.appearances.subtle}>Yellow Badge Subtle</Badge>
+      <Badge color={Badge.colors.yellow} appearance={Badge.appearances.subtle}>
+        Yellow Badge Subtle
+      </Badge>
       <Badge color={Badge.colors.red}>Red Badge</Badge>
-      <Badge color={Badge.colors.red} appearance={Badge.appearances.subtle}>Red Badge (Subtle)</Badge>
+      <Badge color={Badge.colors.red} appearance={Badge.appearances.subtle}>
+        Red Badge (Subtle)
+      </Badge>
       <Badge color={Badge.colors.blue}>Blue Badge</Badge>
-      <Badge color={Badge.colors.blue} appearance={Badge.appearances.subtle}>Blue Badge (Subtle)</Badge>
+      <Badge color={Badge.colors.blue} appearance={Badge.appearances.subtle}>
+        Blue Badge (Subtle)
+      </Badge>
     </div>
   )
 }
@@ -48,7 +58,16 @@ export default Example
 />
 
 <TypesTable>
-  <TypesProp name="appearance" type={<TypesEnum enum={Badge.appearances} />} desc="badge appearance (from Badge.appearances)" default="blue" />
-  <TypesProp name="color" type={<TypesEnum enum={Badge.colors} />} desc="badge color (from Badge.colors)" default="blue" />
+  <TypesProp
+    name="appearance"
+    type={<TypesEnum enum={Badge.appearances} />}
+    desc="badge appearance (from Badge.appearances)"
+    default="blue"
+  />
+  <TypesProp
+    name="color"
+    type={<TypesEnum enum={Badge.colors} />}
+    desc="badge color (from Badge.colors)"
+    default="blue"
+  />
 </TypesTable>
-

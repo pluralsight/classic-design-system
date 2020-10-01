@@ -10,7 +10,11 @@ import { TooltipGuideline } from '../../components/guidelines/tooltip'
 # Tooltip
 
 <Intro>
-  The purpose of a tooltip is to provide context and explain the function of a user interface element or feature. The content of a tooltip is limited to styled text. If more customization is necessary, consider the <A href="/components/dialog">Dialog</A> component which builds on the patterns of the tooltip.
+  The purpose of a tooltip is to provide context and explain the function of a
+  user interface element or feature. The content of a tooltip is limited to
+  styled text. If more customization is necessary, consider the{' '}
+  <A href="/components/dialog">Dialog</A> component which builds on the patterns
+  of the tooltip.
 </Intro>
 
 <TableOfContents {...props} />
@@ -31,9 +35,7 @@ const Example: React.FC = () => {
   const [isClicked, setClicked] = useState<boolean>(false)
 
   const tooltip = (
-    <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>
-      Tooltip
-    </Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>Tooltip</Tooltip>
   )
 
   return (
@@ -68,9 +70,16 @@ const Example: React.FC = () => {
       </div>
 
       <style jsx>{`
-        .examples { display: flex; padding: ${layout.spacingLarge}; }
-        .example { margin-right: calc(${layout.spacingLarge} * 2); }
-        .example:last-child { margin-right: 0; }
+        .examples {
+          display: flex;
+          padding: ${layout.spacingLarge};
+        }
+        .example {
+          margin-right: calc(${layout.spacingLarge} * 2);
+        }
+        .example:last-child {
+          margin-right: 0;
+        }
       `}</style>
     </div>
   )
@@ -107,11 +116,21 @@ import React from 'react'
 
 const Example: React.FC = () => (
   <div className="example-grid">
-    <Tooltip tailPosition={Tooltip.tailPositions.bottomCenter}>bottomCenter</Tooltip>
-    <Tooltip tailPosition={Tooltip.tailPositions.bottomLeft}>bottomLeft</Tooltip>
-    <Tooltip tailPosition={Tooltip.tailPositions.bottomRight}>bottomRight</Tooltip>
-    <Tooltip tailPosition={Tooltip.tailPositions.leftCenter}>leftCenter</Tooltip>
-    <Tooltip tailPosition={Tooltip.tailPositions.rightCenter}>rightCenter</Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.bottomCenter}>
+      bottomCenter
+    </Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.bottomLeft}>
+      bottomLeft
+    </Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.bottomRight}>
+      bottomRight
+    </Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.leftCenter}>
+      leftCenter
+    </Tooltip>
+    <Tooltip tailPosition={Tooltip.tailPositions.rightCenter}>
+      rightCenter
+    </Tooltip>
     <Tooltip tailPosition={Tooltip.tailPositions.topCenter}>topCenter</Tooltip>
     <Tooltip tailPosition={Tooltip.tailPositions.topLeft}>topLeft</Tooltip>
     <Tooltip tailPosition={Tooltip.tailPositions.topRight}>topRight</Tooltip>
@@ -131,7 +150,8 @@ import React from 'react'
 
 const Example: React.FC = () => (
   <Tooltip onClose={_ => alert('close clicked')}>
-    With a close button for those cases you want the tooltip to persist until closed.
+    With a close button for those cases you want the tooltip to persist until
+    closed.
   </Tooltip>
 )
 
@@ -151,30 +171,30 @@ Write your tooltips to be concise and scannable.
 
 <Guideline
   do={<TooltipGuideline>Bookmark this course</TooltipGuideline>}
-  dont={(
+  dont={
     <TooltipGuideline>
       Bookmark this course and then you’ll know its safe and sound. This course
       will enjoy its new company amongst your other bookmarked courses. At first
       this course might feel shy, but the other bookmarked courses will be
       friendly and will help this new course get acclimated and comfortable.
     </TooltipGuideline>
-  )}
+  }
 />
 
 Use `accent` appearance to gain user attention in cases such onboarding, introducing functionality, asking for input, or prompting action. A good rule of thumb is accent tooltips appear automatically, while basic tooltips appear as a user clicks or hovers to obtain more context.
 
 <Guideline
-  do={(
+  do={
     <TooltipGuideline appearance={Tooltip.appearances.accent}>
       We’ve added a new way keep track of your content. Bookmark this course to
       view it later.
     </TooltipGuideline>
-  )}
-  dont={(
+  }
+  dont={
     <TooltipGuideline appearance={Tooltip.appearances.accent}>
       Bookmark this course
     </TooltipGuideline>
-  )}
+  }
 />
 
 ## Usage & types
@@ -203,4 +223,3 @@ Use `accent` appearance to gain user attention in cases such onboarding, introdu
     desc="positions a tail pointer (from Tooltip.tailPositions)"
   />
 </TypesTable>
-

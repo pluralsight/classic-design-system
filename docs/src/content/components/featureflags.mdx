@@ -7,8 +7,8 @@ route: /components/featureflags
 
 <Intro>
   We favor the use of feature flags when a UI change should be released
-  uniformly across the product. This allows teams to independently develop
-  and deploy.
+  uniformly across the product. This allows teams to independently develop and
+  deploy.
 </Intro>
 
 <TableOfContents {...props} />
@@ -58,18 +58,19 @@ utility for your own code.
 
 Import the `useFeatureFlags` React hook to consume the feature Flags
 
-
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
 import { colorsBlue, colorsOrange } from '@pluralsight/ps-design-system-core'
 import { useFeatureFlags } from '@pluralsight/ps-design-system-featureflags'
 import React, { HTMLAttributes, useState } from 'react'
 
-type Flag = { [name:string]: string | boolean | number }
+type Flag = { [name: string]: string | boolean | number }
 
 const Example: React.FC = () => {
   const [flags, setFlags] = useState<Flag[]>({ usingNewStyle: true })
-  const toggle = () => { setFlags({ usingNewStyle: !flags.usingNewStyle }) }
+  const toggle = () => {
+    setFlags({ usingNewStyle: !flags.usingNewStyle })
+  }
 
   return (
     <FeatureFlags flags={flags}>
@@ -78,21 +79,24 @@ const Example: React.FC = () => {
   )
 }
 
-const ComponentUsingFlags: React.FC<HTMLAttributes<HTMLButtonElement>> = props => {
-  const { flags: { usingNewStyle} } = useFeatureFlags()
+const ComponentUsingFlags: React.FC<HTMLAttributes<
+  HTMLButtonElement
+>> = props => {
+  const {
+    flags: { usingNewStyle }
+  } = useFeatureFlags()
 
   const background = usingNewStyle ? colorsBlue[6] : colorsOrange[6]
 
   return (
     <Button style={{ background }} {...props}>
-      {usingNewStyle ? 'new style' : 'old style' }
+      {usingNewStyle ? 'new style' : 'old style'}
     </Button>
   )
 }
 
 export default Example
 ```
-
 
 ## Usage & types
 

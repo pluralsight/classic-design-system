@@ -26,7 +26,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Controlled
@@ -37,8 +36,12 @@ Controlled Radios require both `value` and `handleChange` callback
 import React from 'react'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Button from '@pluralsight/ps-design-system-button'
-import { layout, type, colorsTextIcon, colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
-
+import {
+  layout,
+  type,
+  colorsTextIcon,
+  colorsBackgroundLight
+} from '@pluralsight/ps-design-system-core'
 
 const Comp = () => {
   const [value, setValue] = React.useState('intermediate')
@@ -53,15 +56,16 @@ const Comp = () => {
         <Radio.Button value="intermediate" label="Intermediate" />
         <Radio.Button value="advanced" label="Advanced" />
       </Radio.Group>
-      <div 
+      <div
         className="example-flex-column"
         style={{
-            padding: layout.spacingLarge,
-            fontSize: type.fontSizeMedium,
-            color: colorsTextIcon.lowOnLight,
-            background: colorsBackgroundLight[2],
-            borderRadius: 12,
-        }}>
+          padding: layout.spacingLarge,
+          fontSize: type.fontSizeMedium,
+          color: colorsTextIcon.lowOnLight,
+          background: colorsBackgroundLight[2],
+          borderRadius: 12
+        }}
+      >
         Selected: {value}
         <Button
           onClick={() => setValue('intermediate')}
@@ -75,7 +79,6 @@ const Comp = () => {
 }
 
 export default Comp
-
 ```
 
 ### Disabled
@@ -95,12 +98,12 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Error
 
-Error states are engaged with the ```error``` flag.
+Error states are engaged with the `error` flag.
+
 ```typescript
 import React from 'react'
 import Radio from '@pluralsight/ps-design-system-radio'
@@ -114,34 +117,68 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ## Usage & Types
 
-<Usage install="npm install @pluralsight/ps-design-system-radio"
+<Usage
+  install="npm install @pluralsight/ps-design-system-radio"
   import="import Radio from '@pluralsight/ps-design-system-radio'"
   packageName="radio"
-  />
+/>
 
 ### Radio.Group
 
 <TypesTable>
-  <TypesProp name="disable" type="boolean" desc="standard input disable flag" default="false"/>
-  <TypesProp name="error" type="boolean" desc="error state flag" default="false"/>
-  <TypesProp name="label" type="string" desc="identifying string for group"/>
-  <TypesProp name="name" type="string" desc="form data identifier"/>
-  <TypesProp name="onChange" type="(Event, value: any) => void" desc="triggers on radio select"/>
-  <TypesProp name="subLabel" type="string" desc="supporting text or error messaging"/>
-  <TypesProp name="value" type="string | number" desc="if Radio.Group is controlled current selected radio value else if uncontrolled initial selected value"/>
+  <TypesProp
+    name="disable"
+    type="boolean"
+    desc="standard input disable flag"
+    default="false"
+  />
+  <TypesProp
+    name="error"
+    type="boolean"
+    desc="error state flag"
+    default="false"
+  />
+  <TypesProp name="label" type="string" desc="identifying string for group" />
+  <TypesProp name="name" type="string" desc="form data identifier" />
+  <TypesProp
+    name="onChange"
+    type="(Event, value: any) => void"
+    desc="triggers on radio select"
+  />
+  <TypesProp
+    name="subLabel"
+    type="string"
+    desc="supporting text or error messaging"
+  />
+  <TypesProp
+    name="value"
+    type="string | number"
+    desc="if Radio.Group is controlled current selected radio value else if uncontrolled initial selected value"
+  />
 </TypesTable>
 
 ### Radio.Button
 
 <TypesTable>
-  <TypesProp name="label" type="React.ReactNode" desc="display text"/>
-  <TypesProp name="onBlur" type="(Event) => void" desc="triggers on radio blur"/>
-  <TypesProp name="onClick" type="(Event, value: any) => void" desc="triggers on radio select"/>
-  <TypesProp name="onFocus" type="(Event) => void" desc="triggers on radio focus"/>
-  <TypesProp name="value" type="string | number" desc="radio option value"/>
+  <TypesProp name="label" type="React.ReactNode" desc="display text" />
+  <TypesProp
+    name="onBlur"
+    type="(Event) => void"
+    desc="triggers on radio blur"
+  />
+  <TypesProp
+    name="onClick"
+    type="(Event, value: any) => void"
+    desc="triggers on radio select"
+  />
+  <TypesProp
+    name="onFocus"
+    type="(Event) => void"
+    desc="triggers on radio focus"
+  />
+  <TypesProp name="value" type="string | number" desc="radio option value" />
 </TypesTable>
