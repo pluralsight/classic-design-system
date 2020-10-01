@@ -9,19 +9,17 @@ workflow:
 stages:
   - .pre
   - lint
-  - test
   - build
-  # TODO: via helm
+  - test
   - deploy
   - .post
 
 default:
   cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules/
-      - .yarn
-  image: docker:stable
+    key: $CI_PROJECT_ID
+    policy: pull
+    untracked: true
+  image: node:13.8-alpine
   retry:
     max: 1
     when:
@@ -29,33 +27,38 @@ default:
   services:
     - docker:18.09.7-dind
 
+
+before_script:
+  - yarn config set ignore-engines true
+  - yarn install
+
 install:
-  image: node:13.8-alpine
   stage: .pre
-  script:
-    - yarn config set ignore-engines true
-    - yarn install
+  cache:
+    key: $CI_PROJECT_ID
+    policy: pull-push
+    paths:
+      - .yarn
+      - node_modules
+      - 'packages/*/node_modules'
+  script: echo 'Warming the cache'
 
 danger:
-  image: node:13.8-alpine
   stage: lint
-  script:
-    - yarn config set ignore-engines true
-    - yarn install
-    - yarn danger:ci
+  script: yarn danger:ci
 
 lint:
-  image: node:13.8-alpine
   stage: lint
-  script:
-    - yarn config set ignore-engines true
-    - yarn lint:ci
+  script: yarn lint:ci
+
+build:
+  stage: build
+  script: yarn build
+  artifacts:
+    paths:
+      - 'packages/*/dist'
 
 test:
-  image: node:13.8-alpine
   stage: test
-  script:
-    - yarn config set ignore-engines true
-    - yarn build
-    - yarn test
+  script: yarn test:ci
 

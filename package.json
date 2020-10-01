@@ -30,7 +30,7 @@
     "generate": "plop",
     "generate:component": "plop component",
     "lint": "eslint . --cache --quiet --ext .js,.jsx,.ts,.tsx",
-    "lint:ci": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:ci": "eslint . --quiet --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
