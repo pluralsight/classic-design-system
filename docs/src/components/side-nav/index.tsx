@@ -53,7 +53,7 @@ export const SideNav: React.FC<Props> = () => {
           </VerticalTabs.Group>
         </VerticalTabs>
       </nav>
-      <div class={styles.githubButton}>
+      <div className={styles.githubButton}>
         <Button
           icon={<GithubIcon />}
           appearance={Button.appearances.secondary}

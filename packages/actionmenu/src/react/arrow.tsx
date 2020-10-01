@@ -1,15 +1,15 @@
 import { css } from 'glamor'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css/index'
 
 const styles = {
   arrow: () => css(stylesheet['.psds-actionmenu__item__arrow']),
-  arrowSvg: _ => css(stylesheet['.psds-actionmenu__item__arrow__svg'])
+  arrowSvg: () => css(stylesheet['.psds-actionmenu__item__arrow__svg'])
 }
 
-export const Arrow = props => (
-  <div {...styles.arrow(props)} {...props} data-submenu-arrow>
+export const Arrow: React.FC<HTMLAttributes<HTMLDivElement>> = props => (
+  <div {...styles.arrow()} {...props} data-submenu-arrow>
     <svg
       width="4"
       height="9"

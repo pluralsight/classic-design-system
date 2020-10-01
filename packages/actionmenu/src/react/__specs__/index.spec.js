@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import ActionMenu from '../index.js'
+import ActionMenu from '../index'
 
 describe('ActionMenu', () => {
   it('forwards ref', () => {

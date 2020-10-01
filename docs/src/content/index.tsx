@@ -25,21 +25,21 @@ export const HomePage: React.FC = () => {
             </h1>
           </Heading>
           <P>
-            The cohesive design
-            language, shared vocabulary,  and building block components to accelerate the building of  Pluralsight products.
+            The cohesive design language, shared vocabulary, and building block
+            components to accelerate the building of Pluralsight products.
           </P>
         </div>
         <div className={styles.headerImg} />
       </header>
 
       <ul className={styles.steps}>
-      <li>
-        <Heading size={Heading.sizes.medium}>
-          <h2>Design</h2>
-        </Heading>
-        <P>Learn how to use the design system Figma libraries.</P>
-        <A href="/guides/designworkflow">See more</A>
-      </li>
+        <li>
+          <Heading size={Heading.sizes.medium}>
+            <h2>Design</h2>
+          </Heading>
+          <P>Learn how to use the design system Figma libraries.</P>
+          <A href="/guides/designworkflow">See more</A>
+        </li>
         <li>
           <Heading size={Heading.sizes.medium}>
             <h2>Develop</h2>
@@ -51,9 +51,7 @@ export const HomePage: React.FC = () => {
           <Heading size={Heading.sizes.medium}>
             <h2>Contribute</h2>
           </Heading>
-          <P>
-             Learn how you can contribute to the design system.
-          </P>
+          <P>Learn how you can contribute to the design system.</P>
           <A href="/guides/contribute">See more</A>
         </li>
         <li>
@@ -78,6 +76,5 @@ export const HomePage: React.FC = () => {
         </li>
       </ul>
     </div>
-
   )
 }
