@@ -4,12 +4,12 @@ import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import Context from './context.js'
-import Divider from './divider.js'
-import { Group, CollapsibleGroup } from './group.js'
-import { Tier1, Tier2 } from './item.js'
+import Context from './context'
+import Divider from './divider'
+import { Group, CollapsibleGroup } from './group'
+import { Tier1, Tier2 } from './item'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   verticaltabs: _ => css(stylesheet['.psds-verticaltabs'])

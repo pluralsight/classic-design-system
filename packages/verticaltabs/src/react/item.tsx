@@ -6,8 +6,8 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 
-import { useHideLabels } from './context.js'
-import { List, CollapsibleList } from './list.js'
+import { useHideLabels } from './context'
+import { List, CollapsibleList } from './list'
 
 import stylesheet from '../css/index.js'
 

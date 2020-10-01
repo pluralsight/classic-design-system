@@ -3,7 +3,7 @@ import React from 'react'
 
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   divider: themeName =>

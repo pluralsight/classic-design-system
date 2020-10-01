@@ -7,9 +7,9 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 
-import { List } from './list.js'
+import { List } from './list'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   group: () => css({ label: 'verticaltabs__group' }),
