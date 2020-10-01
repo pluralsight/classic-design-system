@@ -9,9 +9,7 @@ workflow:
 stages:
   - .pre
   - lint
-  - build
   - test
-  - deploy
   - .post
 
 default:
@@ -43,22 +41,15 @@ install:
       - 'packages/*/node_modules'
   script: echo 'Warming the cache'
 
-danger:
-  stage: lint
-  script: yarn danger:ci
-
 lint:
   stage: lint
-  script: yarn lint:ci
-
-build:
-  stage: build
-  script: yarn build
-  artifacts:
-    paths:
-      - 'packages/*/dist'
+  script:
+    - yarn danger:ci
+    - yarn lint:ci
 
 test:
   stage: test
-  script: yarn test:ci
+  script:
+    - yarn build
+    - yarn test:ci
 
