@@ -30,9 +30,13 @@
   }
 
   & .themeButton {
-    margin-left: auto;
-    margin-right: calc(
-      var(--psLayoutSpacingLarge) + var(--psLayoutSpacingXSmall)
-    );
+    position: fixed;
+    top: var(--psLayoutSpacingXSmall);
+    right: var(--psLayoutSpacingXSmall);
+
+    @media (--breakpoint-small) {
+      top: var(--psLayoutSpacingMedium);
+      right: var(--psLayoutSpacingMedium);
+    }
   }
 }

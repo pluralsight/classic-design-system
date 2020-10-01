@@ -11940,12 +11940,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 }
               >
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -11968,12 +11968,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -11996,12 +11996,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12024,12 +12024,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12052,12 +12052,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12080,12 +12080,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12108,12 +12108,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12136,12 +12136,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12188,12 +12188,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 }
               >
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12216,12 +12216,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12244,12 +12244,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12272,12 +12272,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12300,12 +12300,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12328,12 +12328,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12356,12 +12356,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}
@@ -12384,12 +12384,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1vvjdfo=""
+                  data-css-1a2slgk=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
                   role="none"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   <a
                     aria-haspopup={false}

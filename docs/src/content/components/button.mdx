@@ -7,9 +7,7 @@ import Button from '@pluralsight/ps-design-system-button'
 
 # Button
 
-<Intro>
-  Used to call attention, perform an action, or to navigate.
-</Intro>
+<Intro>Used to call attention, perform an action, or to navigate.</Intro>
 
 <TableOfContents {...props} />
 
@@ -24,12 +22,14 @@ import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid">
-    <Button appearance={Button.appearances.primary}>Primary</Button>
-    <Button appearance={Button.appearances.secondary}>Secondary</Button>
-    <Button appearance={Button.appearances.stroke}>Stroke</Button>
-    <Button appearance={Button.appearances.flat}>Flat</Button>
-  </div>
+  return (
+    <div className="example-grid">
+      <Button appearance={Button.appearances.primary}>Primary</Button>
+      <Button appearance={Button.appearances.secondary}>Secondary</Button>
+      <Button appearance={Button.appearances.stroke}>Stroke</Button>
+      <Button appearance={Button.appearances.flat}>Flat</Button>
+    </div>
+  )
 }
 
 export default Example
@@ -44,12 +44,14 @@ import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid">
-    <Button size={Button.sizes.large}>Large</Button>
-    <Button size={Button.sizes.medium}>Medium</Button>
-    <Button size={Button.sizes.small}>Small</Button>
-    <Button size={Button.sizes.xSmall}>XSmall</Button>
-  </div>
+  return (
+    <div className="example-grid">
+      <Button size={Button.sizes.large}>Large</Button>
+      <Button size={Button.sizes.medium}>Medium</Button>
+      <Button size={Button.sizes.small}>Small</Button>
+      <Button size={Button.sizes.xSmall}>XSmall</Button>
+    </div>
+  )
 }
 
 export default Example
@@ -65,11 +67,21 @@ import { CheckIcon, ChannelIcon, PlayIcon } from '@pluralsight/ps-design-system-
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid">
-    <Button icon={<CheckIcon />}>With Icon</Button>
-    <Button icon={<ChannelIcon />} appearance={Button.appearances.stroke}>With Icon</Button>
-    <Button icon={<PlayIcon />} iconAlign={Button.iconAligns.right} appearance={Button.appearances.flat}>Aligned to Right</Button>
-  </div>
+  return (
+    <div className="example-grid">
+      <Button icon={<CheckIcon />}>With Icon</Button>
+      <Button icon={<ChannelIcon />} appearance={Button.appearances.stroke}>
+        With Icon
+      </Button>
+      <Button
+        icon={<PlayIcon />}
+        iconAlign={Button.iconAligns.right}
+        appearance={Button.appearances.flat}
+      >
+        Aligned to Right
+      </Button>
+    </div>
+  )
 }
 
 export default Example
@@ -85,14 +97,16 @@ import { UserIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid">
-    <Button icon={<UserIcon />} title="Profile" />
-    <Button
-      icon={<UserIcon />}
-      appearance={Button.appearances.flat}
-      title="Profile"
-    />
-  </div>
+  return (
+    <div className="example-grid">
+      <Button icon={<UserIcon />} title="Profile" />
+      <Button
+        icon={<UserIcon />}
+        appearance={Button.appearances.flat}
+        title="Profile"
+      />
+    </div>
+  )
 }
 
 export default Example
@@ -108,12 +122,20 @@ import { UserIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid">
-    <Button disabled>Disabled</Button>
-    <Button disabled appearance={Button.appearances.stroke}>Disabled</Button>
-    <Button disabled appearance={Button.appearances.flat}>Disabled</Button>
-    <Button disabled icon={<PencilIcon />}>Disabled</Button>
-  </div>
+  return (
+    <div className="example-grid">
+      <Button disabled>Disabled</Button>
+      <Button disabled appearance={Button.appearances.stroke}>
+        Disabled
+      </Button>
+      <Button disabled appearance={Button.appearances.flat}>
+        Disabled
+      </Button>
+      <Button disabled icon={<PencilIcon />}>
+        Disabled
+      </Button>
+    </div>
+  )
 }
 
 export default Example
@@ -129,10 +151,20 @@ import { UserIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid">
-    <Button href="https://duckduckgo.com?q=pluralsight" target="_blank">Link</Button>
-    <Button href="https://duckduckgo.com?q=pluralsight%20icons" target="_blank" icon={<PencilIcon />}>Link with icon</Button>
-  </div>
+  return (
+    <div className="example-grid">
+      <Button href="https://duckduckgo.com?q=pluralsight" target="_blank">
+        Link
+      </Button>
+      <Button
+        href="https://duckduckgo.com?q=pluralsight%20icons"
+        target="_blank"
+        icon={<PencilIcon />}
+      >
+        Link with icon
+      </Button>
+    </div>
+  )
 }
 
 export default Example
@@ -153,16 +185,22 @@ function Example() {
     <Button
       {...props}
       onClick={evt => {
-        evt.preventDefault();
-        props.onClick && props.onClick(evt);
-        props.history.push(props.to);
+        evt.preventDefault()
+        props.onClick && props.onClick(evt)
+        props.history.push(props.to)
       }}
       href={props.to}
     />
   ))
 
   // #2 Invoke it like you'd usually use Link
-  return <Router><ButtonLink to="/react-wonderland">React-router Link as DS button</ButtonLink></Router>
+  return (
+    <Router>
+      <ButtonLink to="/react-wonderland">
+        React-router Link as DS button
+      </ButtonLink>
+    </Router>
+  )
 }
 
 export default Example
@@ -179,10 +217,9 @@ import React from 'react'
 
 function Example() {
   return (
-    <Button
-      icon={<UserIcon />}
-      loading
-    >Loading...</Button>
+    <Button icon={<UserIcon />} loading>
+      Loading...
+    </Button>
   )
 }
 
@@ -191,18 +228,47 @@ export default Example
 
 ## Usage & Types
 
-<Usage install="npm install @pluralsight/ps-design-system-button"
+<Usage
+  install="npm install @pluralsight/ps-design-system-button"
   import="import Button from '@pluralsight/ps-design-system-button'"
   packageName="button"
-  />
+/>
 
 <TypesTable>
-  <TypesProp name="appearance" required type={<TypesEnum enum={Button.appearances} />} desc="visual style from Button.appearances" default={Button.appearances.primary} />
-  <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false" />
-  <TypesProp name="href" type="string" desc="url of resource (renders as anchor)" />
+  <TypesProp
+    name="appearance"
+    required
+    type={<TypesEnum enum={Button.appearances} />}
+    desc="visual style from Button.appearances"
+    default={Button.appearances.primary}
+  />
+  <TypesProp
+    name="disabled"
+    type="boolean"
+    desc="standard input disable flag"
+    default="false"
+  />
+  <TypesProp
+    name="href"
+    type="string"
+    desc="url of resource (renders as anchor)"
+  />
   <TypesProp name="icon" type="Icon" desc="Icon component" />
-  <TypesProp name="iconAlign" type={<TypesEnum enum={Button.iconAligns} />} desc="horizontal icon placement (from Button.iconAligns)" />
-  <TypesProp name="loading" type="boolean" desc="disables button and shows spinner" default="false" />
-  <TypesProp name="size" type={<TypesEnum enum={Button.sizes} />} desc="button size (from Button.sizes)" default={Button.sizes.medium} />
+  <TypesProp
+    name="iconAlign"
+    type={<TypesEnum enum={Button.iconAligns} />}
+    desc="horizontal icon placement (from Button.iconAligns)"
+  />
+  <TypesProp
+    name="loading"
+    type="boolean"
+    desc="disables button and shows spinner"
+    default="false"
+  />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Button.sizes} />}
+    desc="button size (from Button.sizes)"
+    default={Button.sizes.medium}
+  />
 </TypesTable>
-

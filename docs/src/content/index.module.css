@@ -1,53 +1,67 @@
 @custom-media --breakpoint-small (width >= 768px);
+@custom-media --breakpoint-large (width >= 1280px);
 
 .home {
   width: 100%;
 
   &.light {
     --robotImg: url(/img/robot-light@2x.png);
-    --borderColor: var(--psColorsBorderLowOnLight);
+    --backgroundColor: var(--psColorsBackgroundLight2);
   }
 
   &.dark {
     --robotImg: url(/img/robot-dark@2x.png);
-    --borderColor: var(--psColorsBorderLowOnDark);
+    --backgroundColor: var(--psColorsBackgroundDark2);
   }
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: var(--psLayoutSpacingXLarge);
+  grid-column-gap: var(--psLayoutSpacingLarge);
 
   @media (--breakpoint-small) {
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .headerText {
-  font-weight: var(--psTypeFontWeightMedium);
-
   & h1 {
+    margin-bottom: var(--psLayoutSpacingLarge);
     font-weight: var(--psTypeFontWeightMedium);
-    margin-bottom: var(--psLayoutSpacingXLarge);
+  }
+
+  & p {
+    font-size: var(--psTypeFontSizeMedium);
+    line-height: var(--psTypeLineHeightStandard);
   }
 }
 .headerImg {
+  --robotHeight: 656;
+  --robotWidth: 960;
+
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: var(--robotImg);
+  overflow: hidden;
+  height: 0;
+  padding-top: calc(var(--robotHeight) / var(--robotWidth) * 100%);
 }
 
 .steps {
+  display: grid;
   list-style: none;
   margin: 80px 0 0 0;
+  grid-gap: var(--psLayoutSpacingMedium);
 
   & > li {
-    margin-bottom: var(--psLayoutSpacingXLarge);
+    background-color: var(--backgroundColor);
+    padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingLarge);
+    border-radius: 8px;
 
     &:not(:last-child) > a {
       display: inline-block;
-      margin-top: var(--psLayoutSpacingSmall);
+      margin-top: var(--psLayoutSpacingXSmall);
     }
   }
 
@@ -56,30 +70,12 @@
   }
 
   @media (--breakpoint-small) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--psLayoutSpacingLarge);
+  }
 
-    & > li {
-      padding: 0 var(--psLayoutSpacingXLarge);
-      margin-bottom: 0;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:not(:last-child) {
-        border-right: 1px solid var(--borderColor);
-
-        & > a {
-          display: inline-block;
-          margin-top: var(--psLayoutSpacingSmall);
-        }
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
+  @media (--breakpoint-large) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

@@ -25,9 +25,8 @@ export const HomePage: React.FC = () => {
             </h1>
           </Heading>
           <P>
-            The Pluralsight Design System strives toward a cohesive design
-            language for Pluralsight’s products, a shared vocabulary for our
-            teams, and building block components to accelerate development.
+            The cohesive design language, shared vocabulary, and building block
+            components to accelerate the building of Pluralsight products.
           </P>
         </div>
         <div className={styles.headerImg} />
@@ -36,20 +35,24 @@ export const HomePage: React.FC = () => {
       <ul className={styles.steps}>
         <li>
           <Heading size={Heading.sizes.medium}>
-            <h2>Install & configure</h2>
+            <h2>Design</h2>
+          </Heading>
+          <P>Learn how to use the design system Figma libraries.</P>
+          <A href="/guides/designworkflow">See more</A>
+        </li>
+        <li>
+          <Heading size={Heading.sizes.medium}>
+            <h2>Develop</h2>
           </Heading>
           <P>Everything you need to get up and running with the code.</P>
-          <A href="/install">See more</A>
+          <A href="/guides/developmentworkflow">See more</A>
         </li>
         <li>
           <Heading size={Heading.sizes.medium}>
             <h2>Contribute</h2>
           </Heading>
-          <P>
-            Want to pitch in? We have opportunities for internal and external
-            contributions.
-          </P>
-          <A href="/contribute">See more</A>
+          <P>Learn how you can contribute to the design system.</P>
+          <A href="/guides/contribute">See more</A>
         </li>
         <li>
           <Heading size={Heading.sizes.medium}>

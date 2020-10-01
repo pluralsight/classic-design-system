@@ -1,15 +1,16 @@
-@custom-media --breakpoint-medium (width >= 1024px);
+@custom-media --breakpoint-large (width >= 1280px);
 
 .toc {
   width: 100%;
+  max-width: 360px;
   overflow: hidden;
   background: var(--bg);
 
-  @media (--breakpoint-medium) {
+  @media (--breakpoint-large) {
     position: fixed;
     width: 240px;
     top: calc(var(--topNavHeight) + var(--psLayoutSpacingLarge));
-    right: var(--psLayoutSpacingLarge);
+    right: var(--psLayoutSpacingMedium);
   }
 }
 .title {

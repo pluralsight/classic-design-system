@@ -9,12 +9,18 @@ import { layout } from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import { ContentGridVisual, ModalGuidelineExample } from '../../components/dialog'
+import {
+  ContentGridVisual,
+  ModalGuidelineExample
+} from '../../components/dialog'
 
 # Dialog
 
 <Intro>
-  The purpose of a Dialog is to provide actionable messaging and may appear contextually or as a <A href="#modal">modal</A>. The Dialog adapts to various amounts and types of content. For contextual, non-actionable messaging, consider the <A href="/components/tooltip">Tooltip</A> instead.
+  The purpose of a Dialog is to provide actionable messaging and may appear
+  contextually or as a <A href="#modal">modal</A>. The Dialog adapts to various
+  amounts and types of content. For contextual, non-actionable messaging,
+  consider the <A href="/components/tooltip">Tooltip</A> instead.
 </Intro>
 
 <TableOfContents {...props} />
@@ -34,53 +40,47 @@ import React from 'react'
 function Example() {
   const [isHovered, setHovered] = React.useState(false)
   const [isClicked, setClicked] = React.useState(false)
-  return <div className="example-grid--col-3" style={{ height: '150px' }}>
-    <Below
-      show={
-        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
-          Dialog
-        </Dialog>
-      }
-      when
-    >
-      <Button appearance={Button.appearances.secondary}>
-        Look at me
-      </Button>
-    </Below>
-
-    <Below
-      show={
-        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
-          Dialog
-        </Dialog>
-      }
-      when={isHovered}
-    >
-      <Button
-        appearance={Button.appearances.secondary}
-        onMouseEnter={_ => setHovered(true)}
-        onMouseOut={_ => setHovered(false)}
+  return (
+    <div className="example-grid--col-3" style={{ height: '150px' }}>
+      <Below
+        show={
+          <Dialog tailPosition={Dialog.tailPositions.topCenter}>Dialog</Dialog>
+        }
+        when
       >
-        Hover me
-      </Button>
-    </Below>
+        <Button appearance={Button.appearances.secondary}>Look at me</Button>
+      </Below>
 
-    <Below
-      show={
-        <Dialog tailPosition={Dialog.tailPositions.topCenter}>
-          Dialog
-        </Dialog>
-      }
-      when={isClicked}
-    >
-      <Button
-        appearance={Button.appearances.secondary}
-        onClick={_ => setClicked(!isClicked)}
+      <Below
+        show={
+          <Dialog tailPosition={Dialog.tailPositions.topCenter}>Dialog</Dialog>
+        }
+        when={isHovered}
       >
-        Click me
-      </Button>
-    </Below>
-  </div>
+        <Button
+          appearance={Button.appearances.secondary}
+          onMouseEnter={_ => setHovered(true)}
+          onMouseOut={_ => setHovered(false)}
+        >
+          Hover me
+        </Button>
+      </Below>
+
+      <Below
+        show={
+          <Dialog tailPosition={Dialog.tailPositions.topCenter}>Dialog</Dialog>
+        }
+        when={isClicked}
+      >
+        <Button
+          appearance={Button.appearances.secondary}
+          onClick={_ => setClicked(!isClicked)}
+        >
+          Click me
+        </Button>
+      </Below>
+    </div>
+  )
 }
 
 export default Example
@@ -88,7 +88,7 @@ export default Example
 
 ### Tail
 
-Dialogs can be shown with or without a tail (a directional indicator).  To make the tail appear, use a `Dialog.tailPositions` option.
+Dialogs can be shown with or without a tail (a directional indicator). To make the tail appear, use a `Dialog.tailPositions` option.
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
@@ -97,10 +97,16 @@ import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid--col-2">
-    <Dialog disableFocusOnMount><ExampleContent /></Dialog>
-    <Dialog tailPosition={Dialog.tailPositions.topCenter} disableFocusOnMount><ExampleContent /></Dialog>
-  </div>
+  return (
+    <div className="example-grid--col-2">
+      <Dialog disableFocusOnMount>
+        <ExampleContent />
+      </Dialog>
+      <Dialog tailPosition={Dialog.tailPositions.topCenter} disableFocusOnMount>
+        <ExampleContent />
+      </Dialog>
+    </div>
+  )
 }
 
 export default Example
@@ -128,10 +134,16 @@ import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 function Example() {
-  return <div className="example-grid--col-2">
-    <Dialog disableFocusOnMount><ExampleContent /></Dialog>
-    <Dialog onClose={_ => alert('Closing')} disableFocusOnMount><ExampleContent /></Dialog>
-  </div>
+  return (
+    <div className="example-grid--col-2">
+      <Dialog disableFocusOnMount>
+        <ExampleContent />
+      </Dialog>
+      <Dialog onClose={_ => alert('Closing')} disableFocusOnMount>
+        <ExampleContent />
+      </Dialog>
+    </div>
+  )
 }
 
 export default Example
@@ -163,28 +175,35 @@ import React from 'react'
 
 function Example() {
   const [isOpen, setOpen] = React.useState(false)
-  return <>
-    <div className="app" aria-hidden={isOpen}>
-      <Button onClick={() => setOpen(!isOpen)}>Open Modal</Button>
-    </div>
-    {isOpen &&
-      <Dialog modal onClose={() => setOpen(false)} aria-label="example dialog" style={{ zIndex: 1 }}>
-        <Heading>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-        </Heading>
-        <div
-          style={{
-            background: colorsBackgroundLight[2],
-            height: '176px'
-          }}
-        />
-        <div className="buttons">
-          <Button appearance={Button.appearances.stroke}>Secondary</Button>
-          <Button>Primary button</Button>
-        </div>
-      </Dialog>
-    }
-  </>
+  return (
+    <>
+      <div className="app" aria-hidden={isOpen}>
+        <Button onClick={() => setOpen(!isOpen)}>Open Modal</Button>
+      </div>
+      {isOpen && (
+        <Dialog
+          modal
+          onClose={() => setOpen(false)}
+          aria-label="example dialog"
+          style={{ zIndex: 1 }}
+        >
+          <Heading>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+          </Heading>
+          <div
+            style={{
+              background: colorsBackgroundLight[2],
+              height: '176px'
+            }}
+          />
+          <div className="buttons">
+            <Button appearance={Button.appearances.stroke}>Secondary</Button>
+            <Button>Primary button</Button>
+          </div>
+        </Dialog>
+      )}
+    </>
+  )
 }
 
 export default Example
@@ -201,9 +220,9 @@ In most cases, dialogs can assume the user to digest the content following a Z-P
         <h3>Title</h3>
       </Text.Heading>
       <Text.P>
-        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation
+        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation
       </Text.P>
       <div style={{ textAlign: 'right' }}>
         <Button
@@ -222,30 +241,29 @@ In most cases, dialogs can assume the user to digest the content following a Z-P
         <h3>Title</h3>
       </Text.Heading>
       <Text.P>
-        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation
+        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation
       </Text.P>
       <div>
-        <Button style={{ marginRight: layout.spacingMedium }}>
-          Primary
-        </Button>
-        <Button appearance={Button.appearances.secondary}>
-          Secondary
-        </Button>
+        <Button style={{ marginRight: layout.spacingMedium }}>Primary</Button>
+        <Button appearance={Button.appearances.secondary}>Secondary</Button>
       </div>
     </Dialog>
   }
 />
 
-Don’t use [modal](#modal) dialogs when displaying non-critical information that doesn’t need to interrupt a workflow.  Consider a dialog interaction which would be less intrusive.
+Don’t use [modal](#modal) dialogs when displaying non-critical information that doesn’t need to interrupt a workflow. Consider a dialog interaction which would be less intrusive.
 
 <Guideline
   do={
     <ModalGuidelineExample>
       <div className="dialog">
         <Dialog disableFocusOnMount>
-          Bookmark added. <Link><a href="#">Undo?</a></Link>
+          Bookmark added.{' '}
+          <Link>
+            <a href="#">Undo?</a>
+          </Link>
         </Dialog>
       </div>
       <style jsx>{`
@@ -269,9 +287,7 @@ Don’t use [modal](#modal) dialogs when displaying non-critical information tha
           <Text.Heading>
             <h3>Bookmark added</h3>
           </Text.Heading>
-          <Text.P>
-            Oh joy! You have successfully added a new bookmark.
-          </Text.P>
+          <Text.P>Oh joy! You have successfully added a new bookmark.</Text.P>
           <div style={{ textAlign: 'right' }}>
             <Button>Ok, got it</Button>
           </div>
@@ -317,8 +333,8 @@ Be explicit as possible when writing dialog buttons. Use affirmative action text
         <h3>Delete record?</h3>
       </Text.Heading>
       <Text.P>
-        This action cannot be reversed. Are you sure you want to delete
-        this record?
+        This action cannot be reversed. Are you sure you want to delete this
+        record?
       </Text.P>
       <div style={{ textAlign: 'right' }}>
         <Button
@@ -337,8 +353,8 @@ Be explicit as possible when writing dialog buttons. Use affirmative action text
         <h3>Delete record?</h3>
       </Text.Heading>
       <Text.P>
-        This action cannot be reversed. Are you sure you want to delete
-        this record?
+        This action cannot be reversed. Are you sure you want to delete this
+        record?
       </Text.P>
       <div style={{ textAlign: 'right' }}>
         <Button
@@ -353,23 +369,65 @@ Be explicit as possible when writing dialog buttons. Use affirmative action text
   }
 />
 
-
 ## Usage & types
 
-<Usage install="npm install @pluralsight/ps-design-system-dialog"
+<Usage
+  install="npm install @pluralsight/ps-design-system-dialog"
   import="import Dialog from '@pluralsight/ps-design-system-dialog'"
   packageName="dialog"
-  />
+/>
 
 <TypesTable>
-  <TypesProp name="aria-label" required type="string" desc="description of dialog purpose" />
-  <TypesProp name="disableCloseButton" type="boolean" desc="removes close button UI" default="false" />
-  <TypesProp name="disableCloseOnEscape" type="boolean" desc="prevents closing Dialog with escape key" default="false" />
-  <TypesProp name="disableCloseOnOverlayClick" type="boolean" desc="prevents clicking modal overlay to close Dialog" default="false" />
-  <TypesProp name="disableFocusOnMount" type="boolean" desc="prevents focus the Dialog on render" default="false" />
-  <TypesProp name="modal" type="boolean" desc="makes Dialog modal" default="false" />
-  <TypesProp name="onClose" type="Event => void" desc="callback to be called by various close methods" />
-  <TypesProp name="tailPosition" type={<TypesEnum enum={Dialog.tailPositions} />} desc="positions a tail pointer (from Dialog.tailPositions)" />
-  <TypesProp name="returnFocus" type="boolean" desc="manage focus; set focus on call where closed" default="true"/>
+  <TypesProp
+    name="aria-label"
+    required
+    type="string"
+    desc="description of dialog purpose"
+  />
+  <TypesProp
+    name="disableCloseButton"
+    type="boolean"
+    desc="removes close button UI"
+    default="false"
+  />
+  <TypesProp
+    name="disableCloseOnEscape"
+    type="boolean"
+    desc="prevents closing Dialog with escape key"
+    default="false"
+  />
+  <TypesProp
+    name="disableCloseOnOverlayClick"
+    type="boolean"
+    desc="prevents clicking modal overlay to close Dialog"
+    default="false"
+  />
+  <TypesProp
+    name="disableFocusOnMount"
+    type="boolean"
+    desc="prevents focus the Dialog on render"
+    default="false"
+  />
+  <TypesProp
+    name="modal"
+    type="boolean"
+    desc="makes Dialog modal"
+    default="false"
+  />
+  <TypesProp
+    name="onClose"
+    type="Event => void"
+    desc="callback to be called by various close methods"
+  />
+  <TypesProp
+    name="tailPosition"
+    type={<TypesEnum enum={Dialog.tailPositions} />}
+    desc="positions a tail pointer (from Dialog.tailPositions)"
+  />
+  <TypesProp
+    name="returnFocus"
+    type="boolean"
+    desc="manage focus; set focus on call where closed"
+    default="true"
+  />
 </TypesTable>
-
