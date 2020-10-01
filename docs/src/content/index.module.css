@@ -27,6 +27,7 @@
 .headerText {
   & h1 {
     margin-bottom: var(--psLayoutSpacingLarge);
+    font-weight: var(--psTypeFontWeightMedium);
   }
 
   & p {

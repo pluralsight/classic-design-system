@@ -47,15 +47,3 @@
   max-width: 1200px;
   padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingXLarge);
 }
-
-.main h1 {
-  margin-bottom: var(--psLayoutSpacingLarge);
-  font-weight: var(--psTypeFontWeightMedium);
-}
-
-.main h2,
-.main h3,
-.main h4 {
-  font-weight: var(--psTypeFontWeightMedium);
-  margin-top: var(--psLayoutSpacingXLarge);
-}
