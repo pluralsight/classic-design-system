@@ -7,7 +7,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 
-import ActionMenu from '../index.js'
+import ActionMenu from '../'
 
 storiesOf('menu items', module)
   .add('one', _ => (
@@ -430,11 +430,7 @@ storiesOf('onClose', module).add('toggle show/hide', () => {
           when={open}
           show={
             <div>
-              <ActionMenu
-                onClose={hide}
-                origin={ActionMenu.origins.topLeft}
-                shouldFocusOnMount={false}
-              >
+              <ActionMenu onClose={hide} origin={ActionMenu.origins.topLeft}>
                 <ActionMenu.Item>One item</ActionMenu.Item>
                 <ActionMenu.Item>Two item</ActionMenu.Item>
                 <ActionMenu.Item>Three item</ActionMenu.Item>
