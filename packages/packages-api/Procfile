@@ -1,1 +1,0 @@
-web: cd packages/packages-api && npm run build && node dist/index.js

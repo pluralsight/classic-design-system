@@ -10,7 +10,6 @@
     "design system",
     "pattern library"
   ],
-  "main": "packages/site/index.js",
   "workspaces": {
     "nohoist": [],
     "packages": [
@@ -37,7 +36,7 @@
     "postinstall": "link-parent-bin",
     "publish:all": "lerna publish --conventional-commits --message \"build: publish\"",
     "publish:all:beta": "yarn publish -- --npm-tag=beta",
-    "site": "yarn workspace @pluralsight/ps-design-system-site start",
+    "docs": "yarn workspace @pluralsight/ps-design-system-docs start:dev",
     "start": "yarn site",
     "test": "jest",
     "test:ci": "jest --ci"
@@ -79,7 +78,6 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/config-lerna-scopes": "^8.2.0",
-    "@octopusdeploy/gulp-octo": "0.0.12",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/addon-storyshots": "^6.0.21",
@@ -127,8 +125,6 @@
     "eslint-plugin-standard": "^4.0.1",
     "fork-ts-checker-webpack-plugin": "^4.1.6",
     "format-package": "^5.2.0",
-    "gulp": "^3.9.1",
-    "gulp-bump": "^3.1.0",
     "husky": "^4.2.5",
     "import-all.macro": "^2.0.3",
     "jest": "^25.5.4",
