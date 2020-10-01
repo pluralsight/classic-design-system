@@ -31,8 +31,12 @@ export const Frame: React.FC<Props> = props => {
   const closeMenu = () => setMenuOpen(false)
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
+  const prefersDark =
+    canUseDOM() && window.matchMedia('(prefers-color-scheme: dark)').matches
   const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
-    cookies[THEME_COOKIE_NAME] || Theme.names.light
+    cookies[THEME_COOKIE_NAME] ||
+      (prefersDark && Theme.names.dark) ||
+      Theme.names.light
   )
   const toggleTheme = () => {
     const newThemeName =
@@ -97,10 +101,5 @@ const Container: React.FC = props => (
 )
 
 const Main: React.FC = props => {
-  return (
-    <main
-      className={styles.main}
-      {...props}
-    />
-  )
+  return <main className={styles.main} {...props} />
 }
