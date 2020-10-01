@@ -48,7 +48,6 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   const npmVersions = await findAllNpmPackages()
-  console.log({ npmVersions })
 
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
