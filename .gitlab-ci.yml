@@ -30,7 +30,7 @@ default:
 
 before_script:
   - yarn config set ignore-engines true
-  - yarn install
+  - yarn install --cache-folder .yarn
 
 install:
   stage: .pre
