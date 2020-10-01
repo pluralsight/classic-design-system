@@ -1,3 +1,4 @@
+const childProcess = require('child_process')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path')
 
@@ -46,21 +47,84 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  const npmVersions = await findAllNpmPackages()
+
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: chooseTemplate(node.fields.slug),
       context: {
-        // NOTE: Data passed to context is available
-        // in page queries as GraphQL variables.
-        slug: node.fields.slug
+        slug: node.fields.slug,
+        version: findVersion(npmVersions, node.fields.slug)
       }
     })
   })
+}
+
+function findVersion(allVersions, slug) {
+  const defaultVersion = 'CHANGELOG'
+  if (!slug.includes('components')) return defaultVersion
+
+  const packageName = slug
+    .split('/')
+    .filter(s => s.length > 0)
+    .pop()
+  const prefix = '@pluralsight/ps-design-system-'
+  const fullPackageName = `${prefix}${packageName}`
+  return allVersions[fullPackageName] || defaultVersion
 }
 
 function chooseTemplate(slug) {
   return slug.includes('examples')
     ? path.resolve(`./src/templates/example-frame.tsx`)
     : path.resolve(`./src/templates/page.tsx`)
+}
+
+function searchNpm() {
+  return new Promise((resolve, reject) => {
+    childProcess.exec(
+      'npm search ps-design-system --json --parseable',
+      {
+        cwd: __dirname,
+        encoding: 'utf8',
+        timeout: 5000
+      },
+      (err, stdout, stderr) => {
+        if (err) {
+          console.log('Error searching packages', err)
+          return reject(err)
+        }
+
+        if (stderr) {
+          console.log('Error output when searching packages', stderr)
+          return reject(new Error(stderr))
+        }
+
+        let json
+        try {
+          if (typeof stdout === 'string') {
+            json = JSON.parse(stdout)
+            return resolve(json)
+          } else {
+            return reject(new Error('Child process output must be a string'))
+          }
+        } catch (err) {
+          return reject(err)
+        }
+      }
+    )
+  })
+}
+
+async function findAllNpmPackages() {
+  try {
+    const list = await searchNpm()
+    return list.reduce((acc, searchResult) => {
+      acc[searchResult.name] = searchResult.version
+      return acc
+    }, {})
+  } catch (err) {
+    console.log('packages-api#findAll error', err)
+    return {}
+  }
 }
