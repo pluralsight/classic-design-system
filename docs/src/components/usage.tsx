@@ -9,6 +9,7 @@ interface UsageProps {
   install: string
   import: string
   packageName: string
+  version: string
 }
 export const Usage: React.FC<UsageProps> = props => {
   return (
@@ -18,7 +19,7 @@ export const Usage: React.FC<UsageProps> = props => {
           <a
             href={`https://github.com/pluralsight/design-system/blob/master/packages/${props.packageName}/CHANGELOG.md`}
           >
-            CHANGELOG
+            {props.version || 'CHANGELOG'}
           </a>
         </Link>
       </Item>
