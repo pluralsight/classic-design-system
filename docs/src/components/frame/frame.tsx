@@ -97,10 +97,5 @@ const Container: React.FC = props => (
 )
 
 const Main: React.FC = props => {
-  return (
-    <main
-      className={styles.main}
-      {...props}
-    />
-  )
+  return <main className={styles.main} {...props} />
 }

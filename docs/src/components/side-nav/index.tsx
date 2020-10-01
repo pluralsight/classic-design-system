@@ -53,11 +53,13 @@ export const SideNav: React.FC<Props> = () => {
           </VerticalTabs.Group>
         </VerticalTabs>
       </nav>
-      <div class={styles.githubButton}>
-        <Button icon={<GithubIcon/>}
+      <div className={styles.githubButton}>
+        <Button
+          icon={<GithubIcon />}
           appearance={Button.appearances.secondary}
           size={Button.sizes.small}
-          href="https://github.com/pluralsight/design-system/issues/new">
+          href="https://github.com/pluralsight/design-system/issues/new"
+        >
           Submit an issue
         </Button>
       </div>
@@ -388,9 +390,7 @@ function Logo() {
   return (
     <div className={styles.logo}>
       <Link to="/">
-        <img
-          src={themeName === Theme.names.light ? logoLight : logoDark}
-        />
+        <img src={themeName === Theme.names.light ? logoLight : logoDark} />
       </Link>
     </div>
   )

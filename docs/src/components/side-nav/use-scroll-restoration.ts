@@ -1,6 +1,6 @@
-import { ScrollContext } from "./scroll-handler"
-import { useRef, useContext, useLayoutEffect } from "react"
-import { useLocation } from "@reach/router"
+import { ScrollContext } from './scroll-handler'
+import { useRef, useContext, useLayoutEffect } from 'react'
+import { useLocation } from '@reach/router'
 
 interface IScrollRestorationProps {
   ref: React.MutableRefObject<HTMLElement | undefined>
@@ -27,6 +27,6 @@ export function useScrollRestoration(
       if (ref.current) {
         state.save(location, identifier, ref.current.scrollTop)
       }
-    },
+    }
   }
 }
