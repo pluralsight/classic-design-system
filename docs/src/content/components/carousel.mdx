@@ -13,7 +13,8 @@ import { MockItem } from '../../components/carousel'
 # Carousel
 
 <Intro>
-  Carousels are for displaying a related set of content items in a row.  Items can be paged using the next/previous buttons or by a swipe gesture.
+  Carousels are for displaying a related set of content items in a row. Items
+  can be paged using the next/previous buttons or by a swipe gesture.
 </Intro>
 
 <TableOfContents {...props} />
@@ -30,17 +31,19 @@ import Carousel from '@pluralsight/ps-design-system-carousel'
 import React from 'react'
 
 function Example() {
-  return <Carousel>
-    {MOCK_DATA.courses.map(course => (
-      <Card
-        key={course.id}
-        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
-        metadata1={[course.author, course.level]}
-        progress={randomInt()}
-        title={<Card.Title>{course.title}</Card.Title>}
-      />
-    ))}
-  </Carousel>
+  return (
+    <Carousel>
+      {MOCK_DATA.courses.map(course => (
+        <Card
+          key={course.id}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          metadata1={[course.author, course.level]}
+          progress={randomInt()}
+          title={<Card.Title>{course.title}</Card.Title>}
+        />
+      ))}
+    </Carousel>
+  )
 }
 
 export default Example
@@ -174,46 +177,48 @@ import { MoreIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 function Example() {
-  return <Carousel size={Carousel.sizes.wide}>
-    {MOCK_DATA.courses.map(course => (
-      <Toggle>
-        {({ active, toggle }) => (
-          <Card
-            key={course.id}
-            image={<Card.Image src={course.image} />}
-            metadata1={[course.author, course.level]}
-            title={<Card.Title>{course.title}</Card.Title>}
-            actionBarVisible
-            actionBar={[
-              <BelowRight
-                inNode={typeof document !== 'undefined' && document.body}
-                when={active}
-                show={
-                  <ActionMenu onClick={toggle}>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    <ActionMenu.Item>Useless item</ActionMenu.Item>
-                  </ActionMenu>
-                }
-                key="a"
-              >
-                <Card.Action
-                  title="See more"
-                  icon={<MoreIcon />}
-                  onClick={toggle}
-                />
-              </BelowRight>
-            ]}
-          />
-        )}
-      </Toggle>
-    ))}
-  </Carousel>
+  return (
+    <Carousel size={Carousel.sizes.wide}>
+      {MOCK_DATA.courses.map(course => (
+        <Toggle>
+          {({ active, toggle }) => (
+            <Card
+              key={course.id}
+              image={<Card.Image src={course.image} />}
+              metadata1={[course.author, course.level]}
+              title={<Card.Title>{course.title}</Card.Title>}
+              actionBarVisible
+              actionBar={[
+                <BelowRight
+                  inNode={typeof document !== 'undefined' && document.body}
+                  when={active}
+                  show={
+                    <ActionMenu onClick={toggle}>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      <ActionMenu.Item>Useless item</ActionMenu.Item>
+                    </ActionMenu>
+                  }
+                  key="a"
+                >
+                  <Card.Action
+                    title="See more"
+                    icon={<MoreIcon />}
+                    onClick={toggle}
+                  />
+                </BelowRight>
+              ]}
+            />
+          )}
+        </Toggle>
+      ))}
+    </Carousel>
+  )
 }
 
 export default Example
@@ -354,33 +359,39 @@ import Carousel from '@pluralsight/ps-design-system-carousel'
 import React from 'react'
 
 function Example() {
-  return <>
-    <Carousel size={Carousel.sizes.narrow}>
-      {MOCK_DATA.courses.map(course => (
-        <Card
-          key={course.id}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
-          metadata1={[course.author, course.level]}
-          progress={randomInt()}
-          title={<Card.Title>{course.title}</Card.Title>}
-        />
-      ))}
-    </Carousel>
+  return (
+    <>
+      <Carousel size={Carousel.sizes.narrow}>
+        {MOCK_DATA.courses.map(course => (
+          <Card
+            key={course.id}
+            image={
+              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+            }
+            metadata1={[course.author, course.level]}
+            progress={randomInt()}
+            title={<Card.Title>{course.title}</Card.Title>}
+          />
+        ))}
+      </Carousel>
 
-    <br />
+      <br />
 
-    <Carousel size={Carousel.sizes.wide}>
-      {MOCK_DATA.courses.map(course => (
-        <Card
-          key={course.id}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
-          metadata1={[course.author, course.level]}
-          progress={randomInt()}
-          title={<Card.Title>{course.title}</Card.Title>}
-        />
-      ))}
-    </Carousel>
-  </>
+      <Carousel size={Carousel.sizes.wide}>
+        {MOCK_DATA.courses.map(course => (
+          <Card
+            key={course.id}
+            image={
+              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+            }
+            metadata1={[course.author, course.level]}
+            progress={randomInt()}
+            title={<Card.Title>{course.title}</Card.Title>}
+          />
+        ))}
+      </Carousel>
+    </>
+  )
 }
 
 export default Example
@@ -405,7 +416,6 @@ const MOCK_DATA = {
 }
 ```
 
-
 ### Access to page and item metadata
 
 Access to page and item metadata
@@ -417,19 +427,21 @@ import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 function Example() {
-  return <Carousel size={Carousel.sizes.wide}>
-    {new Array(9).fill(null).map((_, index) => (
-      <Carousel.Item key={index}>
-        {data => (
-          <div>
-            <P>
-              <pre>{JSON.stringify(data, null, 2)}</pre>
-            </P>
-          </div>
-        )}
-      </Carousel.Item>
-    ))}
-  </Carousel>
+  return (
+    <Carousel size={Carousel.sizes.wide}>
+      {new Array(9).fill(null).map((_, index) => (
+        <Carousel.Item key={index}>
+          {data => (
+            <div>
+              <P>
+                <pre>{JSON.stringify(data, null, 2)}</pre>
+              </P>
+            </div>
+          )}
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  )
 }
 
 export default Example
@@ -454,7 +466,16 @@ The height of the carousel adapts to the height of the content it contains, but 
   }
   dont={
     <Carousel size={Carousel.sizes.wide}>
-      <Note avatar={<Avatar name="Bob Ross" src="//picsum.photos/128" />} message={<p>Wow, this is a card. The text goes on for a long time. It makes a vertical alignment problem with hetereogeneous content in a carousel.</p>} />
+      <Note
+        avatar={<Avatar name="Bob Ross" src="//picsum.photos/128" />}
+        message={
+          <p>
+            Wow, this is a card. The text goes on for a long time. It makes a
+            vertical alignment problem with hetereogeneous content in a
+            carousel.
+          </p>
+        }
+      />
       <Avatar name="Bob Ross" src="//picsum.photos/128" />
       <Card
         bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
@@ -475,32 +496,58 @@ The height of the carousel adapts to the height of the content it contains, but 
 
 ## Usage & types
 
-<Usage install="npm install @pluralsight/ps-design-system-carousel"
+<Usage
+  install="npm install @pluralsight/ps-design-system-carousel"
   import="import Carousel from '@pluralsight/ps-design-system-carousel'"
   packageName="carousel"
-  />
+/>
 
 ### Carousel
 
 <TypesTable>
-  <TypesProp name="children" required type="React.ReactNode" desc="items to place in carousel" />
-  <TypesProp name="size" type={<TypesEnum enum={Carousel.sizes}/>} desc="size of carousel items" default="medium" />
+  <TypesProp
+    name="children"
+    required
+    type="React.ReactNode"
+    desc="items to place in carousel"
+  />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Carousel.sizes} />}
+    desc="size of carousel items"
+    default="medium"
+  />
 </TypesTable>
 
 ### Carousel.Controls
 
 <TypesTable>
-  <TypesProp name="children" required type="React.ReactNode" desc="controls to advance carousel frames" />
+  <TypesProp
+    name="children"
+    required
+    type="React.ReactNode"
+    desc="controls to advance carousel frames"
+  />
 </TypesTable>
 
 ### Carousel.Control
 
 <TypesTable>
-  <TypesProp name="direction" required type={<TypesEnum enum={Carousel.Control.directions} />} desc="(from Carousel.Control.directions)" />
+  <TypesProp
+    name="direction"
+    required
+    type={<TypesEnum enum={Carousel.Control.directions} />}
+    desc="(from Carousel.Control.directions)"
+  />
 </TypesTable>
 
 ### Carousel.Item
 
 <TypesTable>
-  <TypesProp name="children" required type="React.ReactNode | () => React.ReactNode" desc="render prop used to access item and page metadata" />
+  <TypesProp
+    name="children"
+    required
+    type="React.ReactNode | () => React.ReactNode"
+    desc="render prop used to access item and page metadata"
+  />
 </TypesTable>

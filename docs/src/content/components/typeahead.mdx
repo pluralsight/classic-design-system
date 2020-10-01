@@ -40,10 +40,7 @@ import React from 'react'
 
 const Example: React.FC = props => {
   return (
-    <Typeahead
-      appearance={Typeahead.appearances.subtle}
-      placeholder="Search"
-    />
+    <Typeahead appearance={Typeahead.appearances.subtle} placeholder="Search" />
   )
 }
 
@@ -99,21 +96,13 @@ export default Example
     desc="error state flag"
     default="false"
   />
-  <TypesProp
-    name="label"
-    type="string"
-    desc="identifying string for input"
-  />
+  <TypesProp name="label" type="string" desc="identifying string for input" />
   <TypesProp
     name="onChange"
     type="(Event, nextValue) => void"
     desc="triggered when value changes"
   />
-  <TypesProp
-    name="placeholder"
-    type="string"
-    desc="in-field usage hint"
-  />
+  <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
   <TypesProp
     name="size"
     type={<TypesEnum enum={Typeahead.sizes} />}
@@ -125,21 +114,13 @@ export default Example
     type="string"
     desc="supporting text or error messaging"
   />
-  <TypesProp
-    name="value"
-    type="string"
-    desc="controlled value"
-  />
+  <TypesProp name="value" type="string" desc="controlled value" />
 </TypesTable>
 
 ### Typeahead.Suggestion
 
 <TypesTable>
-  <TypesProp
-    name="children"
-    type="string"
-    desc="suggestion label"
-  />
+  <TypesProp name="children" type="string" desc="suggestion label" />
   <TypesProp
     name="value"
     type="string"

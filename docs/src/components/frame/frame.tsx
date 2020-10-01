@@ -31,8 +31,12 @@ export const Frame: React.FC<Props> = props => {
   const closeMenu = () => setMenuOpen(false)
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
+  const prefersDark =
+    canUseDOM() && window.matchMedia('(prefers-color-scheme: dark)').matches
   const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
-    cookies[THEME_COOKIE_NAME] || Theme.names.light
+    cookies[THEME_COOKIE_NAME] ||
+      (prefersDark && Theme.names.dark) ||
+      Theme.names.light
   )
   const toggleTheme = () => {
     const newThemeName =
@@ -47,10 +51,14 @@ export const Frame: React.FC<Props> = props => {
     if (skipTargetRef.current) skipTargetRef.current.focus()
   }, [])
 
+  const hasTOC =
+    canUseDOM() && /components|core|guides/.test(window.location.pathname)
+
   const className = cx({
     [styles.frame]: true,
     [styles.dark]: themeName === Theme.names.dark,
-    [styles.light]: themeName === Theme.names.light
+    [styles.light]: themeName === Theme.names.light,
+    [styles.fullWidth]: !hasTOC
   })
 
   return (
@@ -93,16 +101,5 @@ const Container: React.FC = props => (
 )
 
 const Main: React.FC = props => {
-  const isComponentPage =
-    canUseDOM() && /components|core|guides/.test(window.location.pathname)
-
-  return (
-    <main
-      className={cx({
-        [styles.main]: true,
-        [styles.mainFullWidth]: !isComponentPage
-      })}
-      {...props}
-    />
-  )
+  return <main className={styles.main} {...props} />
 }

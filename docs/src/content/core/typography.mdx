@@ -3,7 +3,14 @@ name: Typography
 route: /core/typography
 ---
 
-import { FontFamily, FontWeight, FontSize, LineHeight, MonospaceFontWeight, MonospaceGlyphs } from '../../components/typography'
+import {
+  FontFamily,
+  FontWeight,
+  FontSize,
+  LineHeight,
+  MonospaceFontWeight,
+  MonospaceGlyphs
+} from '../../components/typography'
 
 # Typography
 
@@ -14,7 +21,10 @@ import { FontFamily, FontWeight, FontSize, LineHeight, MonospaceFontWeight, Mono
 To use the Pluralsight font-family on your site, you must install it by importing it from typography.com using Pluralsight's assigned CSS Key.
 
 ```html
-<link rel="stylesheet" href="https://cloud.typography.com/6966154/6397212/css/fonts.css" />
+<link
+  rel="stylesheet"
+  href="https://cloud.typography.com/6966154/6397212/css/fonts.css"
+/>
 ```
 
 ## Font family
@@ -32,7 +42,7 @@ npm install @pluralsight/ps-design-system-normalize
 Then include it in your global stylesheet:
 
 ```css
-@import "@pluralsight/ps-design-system-normalize";
+@import '@pluralsight/ps-design-system-normalize';
 ```
 
 ## Font weight
@@ -58,9 +68,11 @@ Eight Gotham SSm font sizes are available.
 To apply the font sizes, use the vars in css:
 
 ```css
-@import "@pluralsight/ps-design-system-core";
+@import '@pluralsight/ps-design-system-core';
 
-.mySelector { font-size: var(--psTypeFontSizeLarge); }
+.mySelector {
+  font-size: var(--psTypeFontSizeLarge);
+}
 ```
 
 ## Line height
@@ -70,9 +82,11 @@ Four line height increments are available. Each font size also has a default lin
 <LineHeight />
 
 ```css
-@import "@pluralsight/ps-design-system-core";
+@import '@pluralsight/ps-design-system-core';
 
-.mySelector { line-height: var(--psTypeLineHeightStandard); }
+.mySelector {
+  line-height: var(--psTypeLineHeightStandard);
+}
 ```
 
 ## Monospace font
@@ -84,7 +98,10 @@ Pluralsight’s monospace font family for the web is [Source Code Pro](https://f
 To use the Source Code Pro on your site, you can install it by importing it from [Google fonts](https://fonts.google.com/specimen/Source+Code+Pro).
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500"
+/>
 ```
 
 Only one Source Code Pro font weight is available for use.

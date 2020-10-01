@@ -22,13 +22,15 @@ import DataWell from '@pluralsight/ps-design-system-datawell'
 import React from 'react'
 
 function Example() {
-  return <div style={{ display: 'flex' }}>
-    <DataWell label="Active learners">7.2 Billion</DataWell>
-    <DataWell label="Pluralsight ROI">Vast</DataWell>
-    <DataWell label="Lives changed" subLabel="Up to 11">
-      11/10
-    </DataWell>
-  </div>
+  return (
+    <div style={{ display: 'flex' }}>
+      <DataWell label="Active learners">7.2 Billion</DataWell>
+      <DataWell label="Pluralsight ROI">Vast</DataWell>
+      <DataWell label="Lives changed" subLabel="Up to 11">
+        11/10
+      </DataWell>
+    </div>
+  )
 }
 
 export default Example
@@ -54,17 +56,26 @@ Keep labels, sublabels, and values short as possible.
   }
 />
 
-
 ## Usage & types
 
-<Usage install="npm install @pluralsight/ps-design-system-datawell"
+<Usage
+  install="npm install @pluralsight/ps-design-system-datawell"
   import="import DataWell from '@pluralsight/ps-design-system-datawell'"
   packageName="datawell"
-  />
+/>
 
 <TypesTable>
-  <TypesProp name="children" required type="React.ReactNode" desc="main data to display" />
-  <TypesProp name="label" required type="string" desc="primary explanatory label"/>
+  <TypesProp
+    name="children"
+    required
+    type="React.ReactNode"
+    desc="main data to display"
+  />
+  <TypesProp
+    name="label"
+    required
+    type="string"
+    desc="primary explanatory label"
+  />
   <TypesProp name="subLabel" type="string" desc="secondary contextual label" />
 </TypesTable>
-

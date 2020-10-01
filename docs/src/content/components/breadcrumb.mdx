@@ -8,7 +8,8 @@ import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
 # Breadcrumb
 
 <Intro>
-  The breadcrumb is to provide a consistently-placed and styled affordance to orient and move up a hierarchy.
+  The breadcrumb is to provide a consistently-placed and styled affordance to
+  orient and move up a hierarchy.
 </Intro>
 
 <TableOfContents {...props} />
@@ -22,9 +23,7 @@ import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
 import React from 'react'
 
 function Example() {
-  return (
-    <Breadcrumb>All the things</Breadcrumb>
-  )
+  return <Breadcrumb>All the things</Breadcrumb>
 }
 
 export default Example
@@ -56,8 +55,13 @@ Breadcrumbs should be written in sentence case, except for proper nouns or produ
 
 <TypesTable>
   <TypesProp name="children" type="React.ReactNode" desc="textual label" />
-    <TypesProp name="disabled" type="boolean" desc="standard input disable flag" default="false" />
+  <TypesProp
+    name="disabled"
+    type="boolean"
+    desc="standard input disable flag"
+    default="false"
+  />
   <TypesProp name="href" type="string" desc="target url; renders anchor" />
-    <TypesProp name="loading" type="boolean" desc="shows loading animation" />
-    <TypesProp name="onClick" type="Event => void" desc="click handler" />
+  <TypesProp name="loading" type="boolean" desc="shows loading animation" />
+  <TypesProp name="onClick" type="Event => void" desc="click handler" />
 </TypesTable>
