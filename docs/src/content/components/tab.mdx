@@ -59,23 +59,46 @@ export default Example
 
 ## Usage & types
 
-<Usage install="npm install @pluralsight/ps-design-system-tab"
+<Usage
+  install="npm install @pluralsight/ps-design-system-tab"
   import="import Tab from '@pluralsight/ps-design-system-tab'"
   packageName="tab"
-  />
+/>
 
 ### Tab
 
 <TypesTable>
-  <TypesProp name="active" type="boolean" desc="styled active (automatically set)" />
-  <TypesProp name="href" type="string" desc="url of resource (renders as anchor)" />
-  <TypesProp name="id" required type="string|number" desc="id tying list item to panel" />
-  <TypesProp name="onClick" required type="Event => void" desc="callback when list item clicked" />
+  <TypesProp
+    name="active"
+    type="boolean"
+    desc="styled active (automatically set)"
+  />
+  <TypesProp
+    name="href"
+    type="string"
+    desc="url of resource (renders as anchor)"
+  />
+  <TypesProp
+    name="id"
+    required
+    type="string|number"
+    desc="id tying list item to panel"
+  />
+  <TypesProp
+    name="onClick"
+    required
+    type="Event => void"
+    desc="callback when list item clicked"
+  />
 </TypesTable>
 
 ### Tab.Panel
 
 <TypesTable>
-  <TypesProp name="labelledBy" required type="string|number" desc="id tying panel to list item" />
+  <TypesProp
+    name="labelledBy"
+    required
+    type="string|number"
+    desc="id tying panel to list item"
+  />
 </TypesTable>
-

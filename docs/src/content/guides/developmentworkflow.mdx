@@ -79,9 +79,9 @@ All components support theming and have a peer dependency on the Theme package. 
 npm install @pluralsight/ps-design-system-theme
 ```
 
-<Badge color={Badge.colors.yellow}>
-  Note
-</Badge> Some components currently have FeatureFlags as another peer dependency. If you see an expected warning in npm installs, add this package:
+<Badge color={Badge.colors.yellow}>Note</Badge> Some components currently have FeatureFlags
+as another peer dependency. If you see an expected warning in npm installs, add this
+package:
 
 ```shell-session noRender startExpanded
 npm install @pluralsight/ps-design-system-featureflags
@@ -224,9 +224,8 @@ In `next.config.js` directly adjust postCSS configuration like so:
 npm install @pluralsight/ps-design-system-core
 ```
 
-<Badge color={Badge.colors.yellow}>
-  Note
-</Badge> css variables consumed by app need to be added to import from field.
+<Badge color={Badge.colors.yellow}>Note</Badge> css variables consumed by app need
+to be added to import from field.
 
 ```typescript noRender startExpanded
 const postcssPresetEnv = require('postcss-preset-env')

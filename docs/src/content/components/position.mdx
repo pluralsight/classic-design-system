@@ -75,7 +75,9 @@ const Example: React.FC = props => {
   const portal = useRef<HTMLDivElement>()
 
   const [hasRendered, setHasRendered] = useState(false)
-  useLayoutEffect(() => { setHasRendered(true) }, [])
+  useLayoutEffect(() => {
+    setHasRendered(true)
+  }, [])
 
   return (
     <React.Fragment>
@@ -125,9 +127,14 @@ The most important bits of this utility are available in pure JavaScript.
 
 ```javascript noRender startExpanded
 import {
-  above, aboveLeft, aboveRight,
-  above, belowLeft, belowRight,
-  leftOf, rightOf
+  above,
+  aboveLeft,
+  aboveRight,
+  above,
+  belowLeft,
+  belowRight,
+  leftOf,
+  rightOf
 } from '@pluralsight/ps-design-system-position'
 ```
 
@@ -189,7 +196,7 @@ export default Example
 <IframeResizer
   frameborder="0"
   src="/examples/position"
-  style={{ width: '1px', minWidth: '100%'}}
+  style={{ width: '1px', minWidth: '100%' }}
 />
 
 ## Usage & types
@@ -224,11 +231,7 @@ import {
     type="React.ReactNode"
     desc="element placed in relation to target"
   />
-  <TypesProp
-    name="target"
-    type="Ref"
-    desc="reference to custom target"
-  />
+  <TypesProp name="target" type="Ref" desc="reference to custom target" />
   <TypesProp
     name="when"
     type="boolean"

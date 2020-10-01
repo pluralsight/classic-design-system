@@ -41,8 +41,8 @@ const Example: React.FC = props => {
         heading={userName}
         message={
           <P>
-            Customs do not concern themselves with right or wrong or reason.
-            But they have to be obeyed; one reasons all around them until he is
+            Customs do not concern themselves with right or wrong or reason. But
+            they have to be obeyed; one reasons all around them until he is
             tired, but he must not transgress them, it is sternly forbidden.
           </P>
         }
@@ -114,9 +114,9 @@ const Example: React.FC = props => {
       }
       message={
         <P>
-          Customs do not concern themselves with right or wrong or reason.
-          But they have to be obeyed; one reasons all around them until he is
-          tired, but he must not transgress them, it is sternly forbidden.
+          Customs do not concern themselves with right or wrong or reason. But
+          they have to be obeyed; one reasons all around them until he is tired,
+          but he must not transgress them, it is sternly forbidden.
         </P>
       }
     />
@@ -142,9 +142,9 @@ const Example: React.FC = props => {
     <Note
       message={
         <P>
-          Customs do not concern themselves with right or wrong or reason.
-          But they have to be obeyed; one reasons all around them until he is
-          tired, but he must not transgress them, it is sternly forbidden.
+          Customs do not concern themselves with right or wrong or reason. But
+          they have to be obeyed; one reasons all around them until he is tired,
+          but he must not transgress them, it is sternly forbidden.
         </P>
       }
       metadata={[
@@ -190,9 +190,9 @@ const Example: React.FC = props => {
       }
       message={
         <P>
-          Customs do not concern themselves with right or wrong or reason.
-          But they have to be obeyed; one reasons all around them until he is
-          tired, but he must not transgress them, it is sternly forbidden.
+          Customs do not concern themselves with right or wrong or reason. But
+          they have to be obeyed; one reasons all around them until he is tired,
+          but he must not transgress them, it is sternly forbidden.
         </P>
       }
     />
@@ -223,12 +223,12 @@ const Example: React.FC = props => {
       actionBarVisible
       message={
         <P>
-          Customs do not concern themselves with right or wrong or reason.
-          But they have to be obeyed; one reasons all around them until he is
-          tired, but he must not transgress them, it is sternly forbidden.
+          Customs do not concern themselves with right or wrong or reason. But
+          they have to be obeyed; one reasons all around them until he is tired,
+          but he must not transgress them, it is sternly forbidden.
         </P>
       }
-      metadata={['Metadata 1', 'Metadata 2', '14 minutes ago' ]}
+      metadata={['Metadata 1', 'Metadata 2', '14 minutes ago']}
     />
   )
 }
@@ -247,11 +247,7 @@ export default Example
 ### Note
 
 <TypesTable>
-  <TypesProp
-    name="actionBar"
-    type="Note.Action[]"
-    desc="action buttons"
-  />
+  <TypesProp name="actionBar" type="Note.Action[]" desc="action buttons" />
   <TypesProp
     name="actionBarVisible"
     type="boolean"
@@ -263,11 +259,7 @@ export default Example
     type="Avatar | Note.AvatarLink"
     desc="a user's avatar"
   />
-  <TypesProp
-    name="heading"
-    type="React.ReactNode"
-    desc="the note heading"
-  />
+  <TypesProp name="heading" type="React.ReactNode" desc="the note heading" />
   <TypesProp
     name="message"
     type="React.ReactNode"
@@ -285,12 +277,7 @@ export default Example
 ### Note.Action
 
 <TypesTable>
-  <TypesProp
-    name="icon"
-    type="Icon"
-    desc="icon representing action"
-    required
-  />
+  <TypesProp name="icon" type="Icon" desc="icon representing action" required />
   <TypesProp
     name="title"
     type="string"
@@ -320,4 +307,3 @@ export default Example
     required
   />
 </TypesTable>
-

@@ -286,11 +286,11 @@ import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 const HeaderLink = withRouter(props => {
   const { history, onClick, to, ...rest } = props
 
-  const handleClick = (evt) => {
-      evt.preventDefault();
+  const handleClick = evt => {
+    evt.preventDefault()
 
-      if(onClick) onClick(evt);
-      props.history.push(to);
+    if (onClick) onClick(evt)
+    props.history.push(to)
   }
 
   return (
@@ -357,11 +357,7 @@ export default Example
 ### VerticalTabs.Group.Header
 
 <TypesTable>
-  <TypesProp
-    name="children"
-    type="string"
-    desc="header text"
-  />
+  <TypesProp name="children" type="string" desc="header text" />
   <TypesProp
     name="tagName"
     type="string"
@@ -398,11 +394,7 @@ export default Example
 ### VerticalTabs.CollapsibleGroup.Header
 
 <TypesTable>
-  <TypesProp
-    name="children"
-    type="string"
-    desc="header text"
-  />
+  <TypesProp name="children" type="string" desc="header text" />
   <TypesProp
     name="tagName"
     type="string"
@@ -440,12 +432,14 @@ export default Example
     desc="header text"
   />
 
+
   <TypesProp
     name="icon"
     type="Icon"
     desc="Icon component"
   />
 </TypesTable>
+
 
 ### VerticalTabs.Tier2
 
@@ -471,9 +465,11 @@ export default Example
     desc="header text"
   />
 
+
   <TypesProp
     name="icon"
     type="Icon"
     desc="Icon component"
   />
 </TypesTable>
+

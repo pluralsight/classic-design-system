@@ -1,5 +1,5 @@
 @custom-media --breakpoint-small (width >= 768px);
-@custom-media --breakpoint-medium (width >= 1024px);
+@custom-media --breakpoint-large (width >= 1280px);
 
 /* TODO: create global vars file */
 :root {
@@ -23,7 +23,7 @@
   @media (--breakpoint-small) {
     padding-left: var(--asideWidth);
   }
-  @media (--breakpoint-medium) {
+  @media (--breakpoint-large) {
     padding-right: var(--metaWidth);
   }
 
