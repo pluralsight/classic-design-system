@@ -5,6 +5,7 @@ import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import useOnClickOutside from '../../hooks/use-on-click-outside'
 import useOnEscape from '../../hooks/use-on-escape'
+import { useScrollRestoration } from '../side-nav/use-scroll-restoration'
 
 import styles from './aside.module.css'
 
@@ -15,6 +16,8 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 
 export const Aside: React.FC<Props> = props => {
   const { onRequestClose, open, ...rest } = props
+
+  const scrollRestore = useScrollRestoration('sidenav-list')
 
   const ref = useRef()
   const theme = useTheme()
@@ -29,5 +32,5 @@ export const Aside: React.FC<Props> = props => {
     [styles.light]: theme === Theme.names.light
   })
 
-  return <aside className={className} ref={ref} {...rest} />
+  return <aside className={className} ref={ref} {...rest} {...scrollRestore} />
 }
