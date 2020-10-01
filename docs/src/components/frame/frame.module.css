@@ -45,5 +45,5 @@
   flex: 0 1 auto;
   margin: 0 auto;
   max-width: 1200px;
-  padding: var(--psLayoutSpacingXLarge);
+  padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingXLarge);
 }

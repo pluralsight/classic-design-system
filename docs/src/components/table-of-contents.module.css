@@ -10,7 +10,7 @@
     position: fixed;
     width: 240px;
     top: calc(var(--topNavHeight) + var(--psLayoutSpacingLarge));
-    right: var(--psLayoutSpacingLarge);
+    right: var(--psLayoutSpacingMedium);
   }
 }
 .title {

@@ -1,5 +1,5 @@
 .usage {
-  margin: var(--psLayoutSpacingXLarge) 0;
+  margin: 0 0 var(--psLayoutSpacingXLarge) 0;
   list-style: none;
   font-size: var(--psTypeFontSizeSmall);
   line-height: 16px;
