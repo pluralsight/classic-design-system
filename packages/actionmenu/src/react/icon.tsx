@@ -14,13 +14,10 @@ interface Props extends HTMLAttributes<HTMLSpanElement> {
   marginLeft: boolean
 }
 
-
 export const Icon: React.FC<Props> = ({
   marginLeft,
   marginRight,
   ...props
-}) => (
-  <span {...props} {...styles({ marginLeft, marginRight })} />
-)
+}) => <span {...props} {...styles({ marginLeft, marginRight })} />
 
 Icon.displayName = 'ActionMenu.Icon'
