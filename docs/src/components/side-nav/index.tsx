@@ -54,10 +54,12 @@ export const SideNav: React.FC<Props> = () => {
         </VerticalTabs>
       </nav>
       <div class={styles.githubButton}>
-        <Button icon={<GithubIcon/>}
+        <Button
+          icon={<GithubIcon />}
           appearance={Button.appearances.secondary}
           size={Button.sizes.small}
-          href="https://github.com/pluralsight/design-system/issues/new">
+          href="https://github.com/pluralsight/design-system/issues/new"
+        >
           Submit an issue
         </Button>
       </div>
@@ -145,6 +147,25 @@ const items = [
   },
   {
     header: {
+      title: 'Text'
+    },
+    items: [
+      {
+        href: '/components/text-headings',
+        title: 'Headings'
+      },
+      {
+        href: '/components/text-paragraph',
+        title: 'Paragraph'
+      },
+      {
+        href: '/components/text-lists',
+        title: 'Lists'
+      }
+    ]
+  },
+  {
+    header: {
       title: 'Navigation'
     },
     items: [
@@ -179,10 +200,7 @@ const items = [
         href: '/components/link',
         title: 'Link'
       },
-      {
-        href: '/components/actionmenu',
-        title: 'Action Menu'
-      },
+
       {
         href: '/components/tag',
         title: 'Tag'
@@ -190,12 +208,16 @@ const items = [
       {
         href: '/components/viewtoggle',
         title: 'View toggle'
+      },
+      {
+        href: '/components/actionmenu',
+        title: 'Action Menu'
       }
     ]
   },
   {
     header: {
-      title: 'Inputs'
+      title: 'Form inputs'
     },
     items: [
       {
@@ -244,51 +266,28 @@ const items = [
   },
   {
     header: {
-      title: 'Text'
+      title: 'Content display'
     },
     items: [
-      {
-        href: '/components/text-headings',
-        title: 'Headings'
-      },
-      {
-        href: '/components/text-paragraph',
-        title: 'Paragraph'
-      },
-      {
-        href: '/components/text-lists',
-        title: 'Lists'
-      }
-    ]
-  },
-  {
-    header: {
-      title: 'Lists & Tables'
-    },
-    items: [
-      {
-        href: '/components/table',
-        title: 'Table'
-      },
       {
         href: '/components/row',
         title: 'Row'
-      },
-      {
-        href: '/components/emptystate',
-        title: 'Empty state'
       },
       {
         href: '/components/card',
         title: 'Card'
       },
       {
-        href: '/components/drawer',
-        title: 'Drawer'
-      },
-      {
         href: '/components/carousel',
         title: 'Carousel'
+      },
+      {
+        href: '/components/table',
+        title: 'Table'
+      },
+      {
+        href: '/components/drawer',
+        title: 'Drawer'
       },
       {
         href: '/components/datawell',
@@ -297,14 +296,7 @@ const items = [
       {
         href: '/components/note',
         title: 'Note'
-      }
-    ]
-  },
-  {
-    header: {
-      title: 'Images & Icons'
-    },
-    items: [
+      },
       {
         href: '/components/avatar',
         title: 'Avatar'
@@ -341,43 +333,47 @@ const items = [
         title: 'Linear progress'
       },
       {
+        href: '/components/starrating',
+        title: 'Star rating'
+      },
+      {
         href: '/components/dialog',
         title: 'Dialog'
       },
       {
-        href: '/components/errors',
-        title: 'Error pages'
+        href: '/components/emptystate',
+        title: 'Empty state'
       },
       {
-        href: '/components/starrating',
-        title: 'Star rating'
+        href: '/components/errors',
+        title: 'Error pages'
       }
     ]
   },
   {
     header: {
-      title: 'Utility'
+      title: 'Utilities'
     },
     items: [
       {
-        href: '/components/position',
-        title: 'Position'
+        href: '/components/theme',
+        title: 'Theme'
       },
       {
-        href: '/components/featureflags',
-        title: 'Feature flags'
+        href: '/components/position',
+        title: 'Position'
       },
       {
         href: '/components/screenreaderonly',
         title: 'Screen reader only'
       },
       {
-        href: '/components/theme',
-        title: 'Theme'
-      },
-      {
         href: '/components/scrollable',
         title: 'Scrollable'
+      },
+      {
+        href: '/components/featureflags',
+        title: 'Feature flags'
       }
     ]
   }
@@ -388,9 +384,7 @@ function Logo() {
   return (
     <div className={styles.logo}>
       <Link to="/">
-        <img
-          src={themeName === Theme.names.light ? logoLight : logoDark}
-        />
+        <img src={themeName === Theme.names.light ? logoLight : logoDark} />
       </Link>
     </div>
   )
