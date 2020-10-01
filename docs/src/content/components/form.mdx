@@ -2,17 +2,18 @@
 name: Form
 route: /components/form
 ---
+
 import Form from '@pluralsight/ps-design-system-form'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Banner from '@pluralsight/ps-design-system-banner'
-import { 
+import {
   FormFocusable,
   Comp,
   SwitchExample,
   TagExample,
-  CheckboxExample,
+  CheckboxExample
 } from './form-controls.tsx'
 
 # Form
@@ -33,13 +34,12 @@ import Banner from '@pluralsight/ps-design-system-banner'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
-import {Heading} from '@pluralsight/ps-design-system-text'
+import { Heading } from '@pluralsight/ps-design-system-text'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import TextArea from '@pluralsight/ps-design-system-textarea'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Switch from '@pluralsight/ps-design-system-switch'
 import { capitalize } from '@pluralsight/ps-design-system-util'
-
 
 const validate = state => {
   const rules = {
@@ -137,7 +137,7 @@ class InAppExample extends React.Component {
     const isError = name => !!errorMsg(name)
     const hasErrors = Object.keys(state.errors).length > 0
     return (
-      <div style={{ position: 'relative'}}>
+      <div style={{ position: 'relative' }}>
         {state.isSubmitted && (
           <Banner
             color={Banner.colors.green}
@@ -245,10 +245,7 @@ class InAppExample extends React.Component {
               value={state.desc}
             />
             <Form.ButtonRow>
-              <Button
-                loading={state.isSubmitting}
-                onClick={this.handleSubmit}
-              >
+              <Button loading={state.isSubmitting} onClick={this.handleSubmit}>
                 Save
               </Button>
               <Button
@@ -261,15 +258,12 @@ class InAppExample extends React.Component {
           </Form.VerticalLayout>
         </form>
       </div>
-
     )
   }
 }
 
 export default InAppExample
-
 ```
-
 
 ### Form.VerticalLayout
 
@@ -290,7 +284,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Form.Divider
@@ -313,7 +306,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Form.ButtonRow
@@ -340,7 +332,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ## Form Controls
@@ -356,29 +347,23 @@ Each one of these controls is a separate package. They are mean to be used insid
     <TextInput label="First name" placeholder="What's your name?" />
   </Comp>
 
-  <Comp
-    title="Checkbox"
-    href="/components/checkbox"
-    desc="For multiple selection."
-  >
-    <CheckboxExample />
-  </Comp>
-  
-  <Comp
-    title="Switch"
-    href="/components/switch"
-    desc="For on/off selections."
-  >
-    <SwitchExample />
-  </Comp>
 
-  <Comp
-    title="DatePicker"
-    href="/components/datepicker"
-    desc="For dates."
-  >
-    <DatePicker label="Birthday" />
-  </Comp>
+{' '}
+<Comp
+  title="Checkbox"
+  href="/components/checkbox"
+  desc="For multiple selection."
+>
+  <CheckboxExample />
+</Comp>
+<Comp title="Switch" href="/components/switch" desc="For on/off selections.">
+  <SwitchExample />
+</Comp>
+
+{' '}
+<Comp title="DatePicker" href="/components/datepicker" desc="For dates.">
+  <DatePicker label="Birthday" />
+</Comp>
 
   <Comp title="Tag" href="/components/tag" desc="For dynamic lists.">
     <TagExample />
@@ -399,7 +384,7 @@ Write labels in sentence case. Capital case is not optimal for scannability.
       onChange={() => {}}
     />
   }
-  dont={<TextInput label="Zip" value="92101"  onChange={() => {}}/>}
+  dont={<TextInput label="Zip" value="92101" onChange={() => {}} />}
 />
 
 Don't rely on the placeholder. Use the label to specify the purpose of each field to avoid usability issues.
@@ -431,7 +416,7 @@ Use field length as affordance. If a field has a defined character count, use it
       css={{ '& input': { minWidth: 0, width: '81px' } }}
     />
   }
-  dont={<TextInput label="Zip" value="92101" onChange={() => {}}/>}
+  dont={<TextInput label="Zip" value="92101" onChange={() => {}} />}
 />
 
 Specify errors inline. Show where the error occurs and a clear reason for the error so users can find it in context.
@@ -451,39 +436,27 @@ Specify errors inline. Show where the error occurs and a clear reason for the er
   }
   dont={
     <Form.VerticalLayout>
-      <Banner color={Banner.colors.red}>
-        Email address is not valid
-      </Banner>
-      <TextInput label="Email" value="jake@example.com" onChange={() => {}}/>
+      <Banner color={Banner.colors.red}>Email address is not valid</Banner>
+      <TextInput label="Email" value="jake@example.com" onChange={() => {}} />
       <TextInput label="Password" type="Password" />
     </Form.VerticalLayout>
   }
 />
 
-Rather than implying a required field with a marker (*), consider noting optional fields instead.
+Rather than implying a required field with a marker (\*), consider noting optional fields instead.
 
 <Guideline
   do={
     <Form.VerticalLayout>
-      <TextInput label="Course title" value="My course" onChange={() => {}}/>
-      <TextInput
-        label="Author"
-        placeholder="What is the author's name?"
-      />
-      <TextInput
-        label="Tags"
-        placeholder="Add tags"
-        subLabel="(Optional)"
-      />
+      <TextInput label="Course title" value="My course" onChange={() => {}} />
+      <TextInput label="Author" placeholder="What is the author's name?" />
+      <TextInput label="Tags" placeholder="Add tags" subLabel="(Optional)" />
     </Form.VerticalLayout>
   }
   dont={
     <Form.VerticalLayout>
-      <TextInput label="Course title *" value="My course" onChange={() => {}}/>
-      <TextInput
-        label="Author *"
-        placeholder="What is the author's name?"
-      />
+      <TextInput label="Course title *" value="My course" onChange={() => {}} />
+      <TextInput label="Author *" placeholder="What is the author's name?" />
       <TextInput label="Tags" placeholder="Add tags" />
     </Form.VerticalLayout>
   }
@@ -494,7 +467,7 @@ Use `Form.Divider` to group similar fields together into logical groups for user
 <Guideline
   do={
     <Form.VerticalLayout>
-      <TextInput label="Name" value="Jake Trent" onChange={() => {}}/>
+      <TextInput label="Name" value="Jake Trent" onChange={() => {}} />
       <TextInput label="Role" placeholder="What do you do?" />
       <Form.Divider />
       <TextInput label="Address" />
@@ -522,7 +495,7 @@ Use `Form.Divider` to group similar fields together into logical groups for user
   }
   dont={
     <Form.VerticalLayout>
-      <TextInput label="Name" value="Jake Trent" onChange={() => {}}/>
+      <TextInput label="Name" value="Jake Trent" onChange={() => {}} />
       <TextInput label="Role" placeholder="What do you do?" />
       <TextInput label="Address" />
       <TextInput label="City" />
@@ -550,8 +523,8 @@ Use `Form.Divider` to group similar fields together into logical groups for user
 
 ## Usage & types
 
-<Usage install="npm install @pluralsight/ps-design-system-form"
+<Usage
+  install="npm install @pluralsight/ps-design-system-form"
   import="import Form from '@pluralsight/ps-design-system-form'"
   packageName="form"
 />
-

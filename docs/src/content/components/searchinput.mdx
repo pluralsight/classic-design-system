@@ -3,7 +3,10 @@ name: Search input
 route: /components/searchinput
 ---
 
-import {colorsBackgroundDark, layout} from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundDark,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import Theme from '@pluralsight/ps-design-system-theme'
 
@@ -26,7 +29,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Clear icon
@@ -42,7 +44,6 @@ const Comp = () => (
 )
 
 export default Comp
-
 ```
 
 ### Guidelines
@@ -93,16 +94,39 @@ Use consistent theming to encourage visual hierarchy
 
 ## Usage & types
 
-<Usage install="npm install @pluralsight/ps-design-system-searchinput"
+<Usage
+  install="npm install @pluralsight/ps-design-system-searchinput"
   import="import SearchInput from '@pluralsight/ps-design-system-searchinput'"
   packageName="searchinput"
-  />
+/>
 
 <TypesTable>
   <TypesProp name="label" type="string" desc="non-standard above-field label" />
-  <TypesProp name="onClear" type="function" desc="show clear button and trigger when button is clicked" />
-  <TypesProp name="error" type="boolean" desc="show error state" default="false"/>
-  <TypesProp name="loading" type="boolean" desc="show progress indicator" default="false"/>
-  <TypesProp name="placeholder" type="string" desc="standard in-field usage hint" />
-  <TypesProp name="subLabel" type="string" desc="non-standard below-field label or error message" />
+  <TypesProp
+    name="onClear"
+    type="function"
+    desc="show clear button and trigger when button is clicked"
+  />
+  <TypesProp
+    name="error"
+    type="boolean"
+    desc="show error state"
+    default="false"
+  />
+  <TypesProp
+    name="loading"
+    type="boolean"
+    desc="show progress indicator"
+    default="false"
+  />
+  <TypesProp
+    name="placeholder"
+    type="string"
+    desc="standard in-field usage hint"
+  />
+  <TypesProp
+    name="subLabel"
+    type="string"
+    desc="non-standard below-field label or error message"
+  />
 </TypesTable>

@@ -46,7 +46,9 @@ const Example: React.FC = props => {
     <div className="example-grid--col-3">
       <Tag icon={<CloseIcon />}>With Icon</Tag>
 
-      <Tag icon={<CloseIcon />} size={Tag.sizes.small}>With Icon</Tag>
+      <Tag icon={<CloseIcon />} size={Tag.sizes.small}>
+        With Icon
+      </Tag>
 
       <Tag
         icon={<CloseIcon onClick={_ => alert('icon clicked')} />}
@@ -135,11 +137,7 @@ export default Example
     desc="error state flag"
     default="false"
   />
-  <TypesProp
-    name="icon"
-    type="*Icon"
-    desc="Icon component, right-aligned"
-  />
+  <TypesProp name="icon" type="*Icon" desc="Icon component, right-aligned" />
   <TypesProp
     name="isPressed"
     type="boolean"

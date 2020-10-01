@@ -15,7 +15,11 @@ the background might run to the edge of the viewport, but the content should
 still be constrained.
 
 ```typescript
-import { colorsPink, colorsPurple, layout } from '@pluralsight/ps-design-system-core'
+import {
+  colorsPink,
+  colorsPurple,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import { P } from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
@@ -41,7 +45,9 @@ const Example: React.FC = props => {
       </PageWidthLayout>
 
       <style jsx>{`
-        .header { background: ${colorsPurple[7]}; }
+        .header {
+          background: ${colorsPurple[7]};
+        }
         .outline {
           border: 2px dashed ${colorsPink[6]};
           min-height: 150px;
@@ -64,10 +70,5 @@ export default Example
 />
 
 <TypesTable>
-  <TypesProp
-    name="children"
-    type="React.ReactNode"
-    desc="content"
-    required
-  />
+  <TypesProp name="children" type="React.ReactNode" desc="content" required />
 </TypesTable>
