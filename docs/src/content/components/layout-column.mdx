@@ -17,7 +17,12 @@ items. If more items than columns are provided, they will flow into rows.
 > USAGE NOTE: The children elements that are supplied to the EqualColumnLayout must be able to accept `data-css-*` props. Optionally, you may provide your own semantics for the parent container by passing that as the first child.
 
 ```typescript
-import { colorsBlue, colorsTextIcon, type, layout } from '@pluralsight/ps-design-system-core'
+import {
+  colorsBlue,
+  colorsTextIcon,
+  type,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import React from 'react'
 
@@ -42,9 +47,15 @@ const Example: React.FC = props => {
 
       <EqualColumnLayout count={EqualColumnLayout.counts.three}>
         <ul style={{ listStyle: 'none' }}>
-          <li><BlueBox>G</BlueBox></li>
-          <li><BlueBox>H</BlueBox></li>
-          <li><BlueBox>I</BlueBox></li>
+          <li>
+            <BlueBox>G</BlueBox>
+          </li>
+          <li>
+            <BlueBox>H</BlueBox>
+          </li>
+          <li>
+            <BlueBox>I</BlueBox>
+          </li>
         </ul>
       </EqualColumnLayout>
     </React.Fragment>
@@ -94,4 +105,3 @@ export default Example
     default="div"
   />
 </TypesTable>
-

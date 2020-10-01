@@ -14,25 +14,29 @@ import Drawer from '@pluralsight/ps-design-system-drawer'
 ### Adaptive size
 
 A drawer as well as its expanded region can be wrapped around other components and adapt to their size.
-      
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
-import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundDark,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
 import Row from '@pluralsight/ps-design-system-row'
 import React from 'react'
 
 function Example() {
-  return <>
-    <Drawer base={<ExampleDrawerBase />}>
-      <ExampleDrawerPanel />
-    </Drawer>
-    <Drawer startOpen base={<ExampleDrawerBase />}>
-      <ExampleDrawerPanel />
-    </Drawer>
-  </>
+  return (
+    <>
+      <Drawer base={<ExampleDrawerBase />}>
+        <ExampleDrawerPanel />
+      </Drawer>
+      <Drawer startOpen base={<ExampleDrawerBase />}>
+        <ExampleDrawerPanel />
+      </Drawer>
+    </>
+  )
 }
 
 export default Example
@@ -107,9 +111,11 @@ import Row from '@pluralsight/ps-design-system-row'
 import React from 'react'
 
 function Example() {
-  return <Drawer startOpen base={<PinkBox>DrawerBase</PinkBox>}>
-    <div style={{ height: 128 }} />
-  </Drawer>
+  return (
+    <Drawer startOpen base={<PinkBox>DrawerBase</PinkBox>}>
+      <div style={{ height: 128 }} />
+    </Drawer>
+  )
 }
 
 export default Example
@@ -138,7 +144,7 @@ const PinkBox = props => (
 ### Drawer panel
 
 The DrawerPanel may expand to fit any elements. No default spacing is built in.
-      
+
 ```typescript
 import { colorsPink, type } from '@pluralsight/ps-design-system-core'
 import Drawer from '@pluralsight/ps-design-system-drawer'
@@ -147,9 +153,11 @@ import Row from '@pluralsight/ps-design-system-row'
 import React from 'react'
 
 function Example() {
-  return <Drawer startOpen base={<div style={{ height: 100 }} />}>
-    <PinkBox>DrawerPanel</PinkBox>
-  </Drawer>
+  return (
+    <Drawer startOpen base={<div style={{ height: 100 }} />}>
+      <PinkBox>DrawerPanel</PinkBox>
+    </Drawer>
+  )
 }
 
 export default Example
@@ -175,20 +183,45 @@ const PinkBox = props => (
 )
 ```
 
-
 ## Usage & Types
 
-<Usage install="npm install @pluralsight/ps-design-system-drawer"
+<Usage
+  install="npm install @pluralsight/ps-design-system-drawer"
   import="import Drawer from '@pluralsight/ps-design-system-drawer'"
   packageName="drawer"
-  />
+/>
 
 <TypesTable>
-  <TypesProp name="base" required type="React.ReactNode" desc="content the drawer slides out from" />
-  <TypesProp name="children" type="React.ReactNode" desc="content inside the drawer" />
-  <TypesProp name="isOpen" type="boolean" desc="override for controlling internal drawer state" />
-  <TypesProp name="onToggle" type="(boolean, Event) => void" desc="triggered when the drawer opens or closes" />
-  <TypesProp name="startOpen" type="boolean" desc="drawer is open on first render" default="false" />
-  <TypesProp name="toggleButtonAriaLabel" type="string" desc="custom label for drawer toggle for screenreaders" />
+  <TypesProp
+    name="base"
+    required
+    type="React.ReactNode"
+    desc="content the drawer slides out from"
+  />
+  <TypesProp
+    name="children"
+    type="React.ReactNode"
+    desc="content inside the drawer"
+  />
+  <TypesProp
+    name="isOpen"
+    type="boolean"
+    desc="override for controlling internal drawer state"
+  />
+  <TypesProp
+    name="onToggle"
+    type="(boolean, Event) => void"
+    desc="triggered when the drawer opens or closes"
+  />
+  <TypesProp
+    name="startOpen"
+    type="boolean"
+    desc="drawer is open on first render"
+    default="false"
+  />
+  <TypesProp
+    name="toggleButtonAriaLabel"
+    type="string"
+    desc="custom label for drawer toggle for screenreaders"
+  />
 </TypesTable>
-

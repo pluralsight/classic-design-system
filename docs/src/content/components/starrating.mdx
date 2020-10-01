@@ -46,8 +46,14 @@ import React from 'react'
 function Example() {
   return (
     <>
-      <StarRating value={null} onChange={val => alert("The new value is: " + val)} />
-      <StarRating value={2.5} onChange={val => alert("The new value is: " + val)} />
+      <StarRating
+        value={null}
+        onChange={val => alert('The new value is: ' + val)}
+      />
+      <StarRating
+        value={2.5}
+        onChange={val => alert('The new value is: ' + val)}
+      />
     </>
   )
 }
@@ -64,8 +70,12 @@ export default Example
 />
 
 <TypesTable>
-  <TypesProp name="onChange" type="
-  (number, Event) => ()" desc="triggered when the value changes" default="null"/>
+  <TypesProp
+    name="onChange"
+    type="
+  (number, Event) => ()"
+    desc="triggered when the value changes"
+    default="null"
+  />
   <TypesProp name="value" type="number" desc="current value as a float" />
 </TypesTable>
-
