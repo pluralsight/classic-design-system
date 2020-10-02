@@ -3,7 +3,7 @@ import React from 'react'
 
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
-import Button from '../index.js'
+import Button from '../'
 
 describe('Button', () => {
   it('forwards refs', () => {

@@ -2,9 +2,9 @@ import { css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { appearances } from '../vars/index.js'
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes }  from 'react'
 
 import stylesheet from '../css/index.js'
 
@@ -18,13 +18,25 @@ const style = ({ appearance, themeName }) =>
       : stylesheet[`.psds-link--appearance-${appearance}`]
   )
 
-const Link = React.forwardRef((props, forwardedRef) => {
+interface LinkStatics {
+  appearances: typeof appearances
+}
+
+interface Props extends HTMLAttributes<HTMLAnchorElement> {
+  children: React.ReactNode | Array<React.ReactNode>
+  appearance: string
+}
+interface LinkComponent
+  extends RefForwardingComponent<Props, HTMLAnchorElement, LinkStatics> {}
+
+
+const Link = React.forwardRef<HTMLAnchorElement, Props>((props, forwardedRef) => {
   const ref = React.useRef()
   React.useImperativeHandle(forwardedRef, () => ref.current)
   const themeName = useTheme()
 
   let tagName = 'a'
-  React.useEffect(_ => {
+  React.useEffect(() => {
     if (ref.current && ref.current.tagName) tagName = ref.current.tagName
   })
 
@@ -33,14 +45,10 @@ const Link = React.forwardRef((props, forwardedRef) => {
     ...style({ ...props, themeName }),
     ...filterReactProps(rest, { tagName })
   })
-})
+}) as LinkComponent
 
 Link.appearances = appearances
 
-Link.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(appearances)),
-  children: PropTypes.element.isRequired
-}
 Link.defaultProps = {
   appearance: appearances.default
 }

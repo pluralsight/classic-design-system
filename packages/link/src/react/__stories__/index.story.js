@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Link from '../index.js'
+import Link from '../'
 
 const appearanceStory = storiesOf('appearance', module)
 
