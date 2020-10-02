@@ -1,5 +1,8 @@
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import cx from 'classnames'
 import React from 'react'
 
+import { Box } from '../box'
 import * as styles from './font-size.module.css'
 
 const sizes = [
@@ -13,9 +16,16 @@ const sizes = [
   { label: 'X-Small', size: '12px', varName: 'psTypeFontSizeXSmall' }
 ]
 
-export const FontSize = () => (
-  <div>
-    <div className={styles.sizes}>
+export const FontSize = () => {
+  const themeName = useTheme()
+  return (
+    <Box
+      className={cx({
+        [styles.sizes]: true,
+        [styles.dark]: themeName === Theme.names.dark,
+        [styles.light]: themeName === Theme.names.light
+      })}
+    >
       {sizes.map((w, i) => (
         <div className={styles.size} key={i}>
           <div style={{ fontSize: w.size }} className={styles.sizeSentence}>
@@ -27,6 +37,6 @@ export const FontSize = () => (
           <code className={styles.sizeVar}>{w.varName}</code>
         </div>
       ))}
-    </div>
-  </div>
-)
+    </Box>
+  )
+}

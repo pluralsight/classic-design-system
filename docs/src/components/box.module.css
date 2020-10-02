@@ -1,6 +1,7 @@
 .box {
   padding: var(--psLayoutSpacingLarge);
   border-radius: 12px;
+  overflow: hidden;
 
   &.light {
     background: var(--psColorsBackgroundLight2);
