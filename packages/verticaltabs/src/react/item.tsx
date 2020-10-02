@@ -93,9 +93,9 @@ interface ItemProps extends HTMLAttributes<HTMLLIElement> {
 
 interface ItemHeaderProps
   extends HTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement> {
-  active: boolean
-  collapsed: boolean
-  collapsible: boolean
+  active?: boolean
+  collapsed?: boolean
+  collapsible?: boolean
   href?: string
 }
 
