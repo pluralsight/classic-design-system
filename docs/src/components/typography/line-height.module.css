@@ -1,14 +1,21 @@
+.dark {
+  --bg: var(--psColorsBackgroundDark2);
+  --fgLight: var(--psColorsTextIconLowOnDark);
+  --baseLine: #4d90bc;
+}
+.light {
+  --bg: var(--psColorsBackgroundLight2);
+  --fgLight: var(--psColorsTextIconLowOnLight);
+  --baseLine: #b4d9f2;
+}
 .lineHeights {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(var(--psLayoutSpacingLarge) / -2);
+  margin-bottom: var(--psLayoutSpacingLarge);
 }
 .lineHeight {
   width: calc(50% - var(--psLayoutSpacingLarge));
   margin: calc(var(--psLayoutSpacingLarge) / 2);
-  border-radius: 12px;
-  padding: var(--psLayoutSpacingLarge);
-  background: var(--psColorsBackgroundLight2);
 }
 .text {
   position: relative;
@@ -23,10 +30,10 @@
   width: 100%;
   background: linear-gradient(
     to bottom,
-    #b4d9f2,
-    #b4d9f2 1px,
-    #efefef 1px,
-    #efefef
+    var(--baseLine),
+    var(--baseLine) 1px,
+    var(--bg) 1px,
+    var(--bg)
   );
   background-size: 1px 8px;
 }
@@ -61,7 +68,7 @@
 }
 .label {
   margin-top: var(--psLayoutSpacingSmall);
-  color: var(--psColorsTextIconLowOnLight);
+  color: var(--fgLight);
   font-weight: var(--psTypeFontWeightMedium);
 }
 .varName {

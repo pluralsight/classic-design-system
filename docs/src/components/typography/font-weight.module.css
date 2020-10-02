@@ -1,14 +1,17 @@
-.weights {
-  border-radius: 12px;
-  background: var(--psColorsBackgroundLight2);
-  padding: var(--psLayoutSpacingMedium);
+.dark {
+  --fg: var(--psColorsTextIconHighOnDark);
+  --fgLight: var(--psColorsTextIconLowOnDark);
+}
+.light {
+  --fg: var(--psColorsTextIconHighOnLight);
+  --fgLight: var(--psColorsTextIconLowOnLight);
 }
 .weight {
   display: grid;
   grid-template-columns: 90px 1fr;
   grid-gap: var(--psLayoutSpacingMedium);
   grid-template-areas: 'letters vars' 'weight weight';
-  color: var(--psColorsBackgroundDark2);
+  color: var(--fg);
   margin-bottom: var(--psLayoutSpacingLarge);
 }
 .weightLetters {
@@ -29,6 +32,6 @@
 }
 .weightLabel {
   grid-area: weight;
-  color: var(--psColorsTextIconLowOnLight);
+  color: var(--fgLight);
   font-size: var(--psTypeFontSizeXSmall);
 }
