@@ -1,5 +1,8 @@
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import cx from 'classnames'
 import React from 'react'
 
+import { Box } from '../box'
 import * as styles from './line-height.module.css'
 
 const heights = [
@@ -35,9 +38,16 @@ const heights = [
   }
 ]
 
-export const LineHeight = () => (
-  <div>
-    <div className={styles.lineHeights}>
+export const LineHeight = () => {
+  const themeName = useTheme()
+  return (
+    <Box
+      className={cx({
+        [styles.lineHeights]: true,
+        [styles.dark]: themeName === Theme.names.dark,
+        [styles.light]: themeName === Theme.names.light
+      })}
+    >
       {heights.map((height, i) => (
         <div className={styles.lineHeight} key={i}>
           <div className={`${styles.text} ${height.className}`}>
@@ -48,6 +58,6 @@ export const LineHeight = () => (
           <code className={styles.varName}>{height.varName}</code>
         </div>
       ))}
-    </div>
-  </div>
-)
+    </Box>
+  )
+}
