@@ -4,10 +4,9 @@ import * as React from 'react'
 
 import * as styles from './box.module.css'
 
-export const Box: React.FC<HTMLDivElement> = props => {
+export const Box: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const { className, ...rest } = props
   const themeName = useTheme()
-  console.log({ themeName, styles })
 
   return (
     <div
