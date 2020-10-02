@@ -1,0 +1,14 @@
+.box {
+  padding: var(--psLayoutSpacingLarge);
+  border-radius: 12px;
+
+  &.light {
+    background: var(--psColorsBackgroundLight2);
+    color: var(--psColorsTextIconHighOnLight);
+  }
+
+  &.dark {
+    background: var(--psColorsBackgroundDark2);
+    color: var(--psColorsTextIconHighOnDark);
+  }
+}
