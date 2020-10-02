@@ -11,7 +11,7 @@ describe('Verticaltab', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLUListElement>()
 
     render(<VerticalTab ref={ref} />)
 
