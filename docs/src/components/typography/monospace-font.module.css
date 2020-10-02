@@ -1,7 +1,10 @@
+.dark {
+  --fgLight: var(--psColorsTextIconLowOnDark);
+}
+.light {
+  --fgLight: var(--psColorsTextIconLowOnLight);
+}
 .box {
-  background: var(--psColorsBackgroundLight2);
-  border-radius: 12px;
-  padding: var(--psLayoutSpacingLarge);
   font-size: var(--psTypeFontSizeLarge);
   line-height: var(--psTypeLineHeightExtra);
   font-weight: var(--psTypeFontWeightBook);
@@ -13,6 +16,7 @@
   text-align: center;
 }
 .fontLetter {
+  composes: glyphs;
   padding: var(--psLayoutSpacingLarge);
   font-family: var(--psTypeFontFamilyCode);
   font-weight: var(--psTypeFontWeightMedium);
@@ -20,6 +24,6 @@
   letter-spacing: var(--psTypeLetterSpacingGigantic);
 }
 .fontLabel {
-  color: var(--psColorsTextIconLowOnLight);
+  color: var(--fgLight);
   font-size: var(--psTypeFontSizeXSmall);
 }
