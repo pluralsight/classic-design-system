@@ -31,7 +31,7 @@ interface LinkComponent
 
 
 const Link = React.forwardRef<HTMLAnchorElement, Props>((props, forwardedRef) => {
-  const ref = React.useRef()
+  const ref = React.useRef() as React.MutableRefObject<HTMLAnchorElement>;
   React.useImperativeHandle(forwardedRef, () => ref.current)
   const themeName = useTheme()
 

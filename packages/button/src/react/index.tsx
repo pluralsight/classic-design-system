@@ -130,9 +130,9 @@ const renderIcon: React.FC<Props> = (props) =>
     </div>
   ) : null
 
-const Button = React.forwardRef<DynamicButton, Props>((props, forwardedRef) => {
+const Button = React.forwardRef<HTMLElement, Props>((props, forwardedRef) => {
   const themeName = useTheme()
-  const ref = React.useRef()
+  const ref = React.useRef() as React.MutableRefObject<HTMLAnchorElement | HTMLButtonElement>;
   React.useImperativeHandle(forwardedRef, () => ref.current)
   const nonLoadingWidth = React.useMemo(() => {
     if (props.loading && ref && ref.current) {
