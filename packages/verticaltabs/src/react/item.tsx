@@ -1,17 +1,27 @@
-import { compose, css } from 'glamor'
-import React, { cloneElement, forwardRef } from 'react'
-import PropTypes from 'prop-types'
-
-import { useTheme } from '@pluralsight/ps-design-system-theme'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { ValueOf, combineFns } from '@pluralsight/ps-design-system-util'
+import { StyleAttribute, compose, css } from 'glamor'
+import React, {
+  HTMLAttributes,
+  ReactElement,
+  ReactNode,
+  cloneElement,
+  forwardRef,
+  useState
+} from 'react'
+
+import stylesheet from '../css'
 
 import { useHideLabels } from './context'
 import { List, CollapsibleList } from './list'
 
-import stylesheet from '../css/index.js'
+type StyleFn = (
+  themeName?: ValueOf<Theme.names>,
+  props?: Record<string, any>
+) => StyleAttribute
 
-const styles = {
+const styles: { [key: string]: StyleFn } = {
   item: themeName => {
     const label = 'verticaltabs__item'
 
@@ -26,8 +36,8 @@ const styles = {
   itemIconActive: () =>
     css(stylesheet['.psds-verticaltabs__item__icon--active']),
 
-  itemTier: (themeName, { type }) => {
-    const label = `verticaltabs__${type}`
+  itemTier: (themeName, props: { type: string }) => {
+    const label = `verticaltabs__${props.type}`
 
     return compose(
       css({ label }),
@@ -53,48 +63,64 @@ const styles = {
     return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
   },
 
-  tierHeaderLabel: (_, { hideLabels }) => {
+  tierHeaderLabel: (_themeName, props: { hideLabels: boolean }) => {
     const label = `verticaltabs__header__label`
 
     return compose(
       css({ label }),
       css(stylesheet[`.psds-${label}`]),
-      hideLabels && css(stylesheet[`.psds-${label}--hide-labels`])
+      props.hideLabels && css(stylesheet[`.psds-${label}--hide-labels`])
     )
   },
-  tierHeaderLabelIcon: (_, { collapsed }) => {
+  tierHeaderLabelIcon: (_themeName, props: { collapsed: boolean }) => {
     const label = `verticaltabs__header__label__icon`
 
     return compose(
       css({ label }),
       css(stylesheet[`.psds-${label}`]),
-      collapsed && css(stylesheet[`.psds-${label}--collapsed`])
+      props.collapsed && css(stylesheet[`.psds-${label}--collapsed`])
     )
   }
 }
 
-const Item = forwardRef((props, ref) => {
+interface ItemProps extends HTMLAttributes<HTMLLIElement> {
+  active?: ReactNode
+  collapsed?: boolean
+  collapsible?: boolean
+  header?: ReactElement
+  itemType?: string
+}
+
+interface ItemHeaderProps
+  extends HTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement> {
+  active: boolean
+  collapsed: boolean
+  collapsible: boolean
+  href?: string
+}
+
+const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
   const {
     active,
-    collapsed: _collapsed = false,
+    collapsed: initialCollapsed = false,
     collapsible = false,
     children,
     header,
+    onClick,
     itemType: type,
     ...rest
   } = props
+
+  const [collapsed, setCollapsed] = useState<boolean>(initialCollapsed)
   const themeName = useTheme()
 
-  const [collapsed, setCollapsed] = React.useState(_collapsed)
-
-  const handleHeaderClick = evt => {
+  const handleHeaderClick = combineFns(() => {
     setCollapsed(!collapsed)
-    if (typeof header.props.onClick === 'function') header.props.onClick(evt)
-  }
+  }, onClick)
   const ListComp = collapsible ? CollapsibleList : List
 
   return (
-    <li {...filterReactProps(rest, { tagName: 'li' })} ref={ref}>
+    <li ref={ref} {...rest}>
       <div
         {...styles.item(themeName)}
         {...styles.itemTier(themeName, { type })}
@@ -113,34 +139,27 @@ const Item = forwardRef((props, ref) => {
   )
 })
 
-Item.propTypes = {
-  active: PropTypes.bool,
-  collapsed: PropTypes.bool,
-  collapsible: PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  header: PropTypes.node,
-  itemType: PropTypes.string
-}
-
 Item.displayName = 'VerticalTabs.Item'
 
-const Tier1 = props => <Item {...props} itemType="tier1" />
+interface Tier1Props extends ItemProps {
+  header: ReactElement<typeof Tier1Header>
+}
+const Tier1: React.FC<Tier1Props> & { Header: typeof Tier1Header } = props => (
+  <Item {...props} itemType="tier1" />
+)
 
-Tier1.Header = forwardRef((props, ref) => {
+interface Tier1HeaderProps extends ItemHeaderProps {
+  icon?: ReactElement
+}
+
+const Tier1Header = forwardRef<any, Tier1HeaderProps>((props, ref) => {
   const { active, collapsed, collapsible, children, icon, ...rest } = props
   const hideLabels = useHideLabels()
 
-  const TagName = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
+  const Tag = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
 
   return (
-    <TagName
-      {...styles.tier1Header()}
-      {...filterReactProps(rest, { tagName: TagName })}
-      ref={ref}
-    >
+    <Tag {...styles.tier1Header()} {...rest} ref={ref}>
       {icon &&
         cloneElement(icon, {
           size: CaretDownIcon.sizes.medium,
@@ -156,58 +175,40 @@ Tier1.Header = forwardRef((props, ref) => {
           {...styles.tierHeaderLabelIcon(null, { collapsed })}
         />
       )}
-    </TagName>
+    </Tag>
   )
 })
 
-Tier1.Header.propTypes = {
-  active: PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  collapsed: PropTypes.bool,
-  collapsible: PropTypes.bool,
-  icon: PropTypes.node
-}
+Tier1.Header = Tier1Header
 
 Tier1.displayName = 'VerticalTabs.Tier1'
 Tier1.Header.displayName = 'VerticalTabs.Tier1.Header'
 
-const Tier2 = ({ children, icon, ...props }) => {
+interface Tier2Props extends ItemProps {
+  header: ReactElement<typeof Tier1Header>
+}
+
+const Tier2: React.FC<Tier2Props> & {
+  Header: typeof Tier2Header
+} = props => {
   return <Item {...props} itemType="tier2" />
 }
 
-Tier2.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  icon: PropTypes.node
-}
-
-Tier2.Header = forwardRef(({ active, children, ...rest }, ref) => {
+interface Tier2HeaderProps extends ItemHeaderProps {}
+const Tier2Header = forwardRef<any, Tier2HeaderProps>((props, ref) => {
+  const { active, collapsed, collapsible, children, ...rest } = props
   const hideLabels = useHideLabels()
-  const TagName = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
+
+  const Tag = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
 
   return (
-    <TagName
-      {...styles.tier2Header}
-      {...filterReactProps(rest, { tagName: TagName })}
-      ref={ref}
-    >
+    <Tag {...styles.tier2Header} {...rest} ref={ref}>
       <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
-    </TagName>
+    </Tag>
   )
 })
 
-Tier2.Header.propTypes = {
-  active: PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ])
-}
+Tier2.Header = Tier2Header
 
 Tier2.displayName = 'VerticalTabs.Tier2'
 Tier2.Header.displayName = 'VerticalTabs.Tier2.Header'

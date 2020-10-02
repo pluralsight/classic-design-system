@@ -1,8 +1,6 @@
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React, { forwardRef } from 'react'
-import PropTypes from 'prop-types'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import React, { HTMLAttributes, forwardRef, useMemo } from 'react'
 
 import Context from './context'
 import Divider from './divider'
@@ -12,8 +10,28 @@ import { Tier1, Tier2 } from './item'
 import stylesheet from '../css'
 
 const styles = {
-  verticaltabs: _ => css(stylesheet['.psds-verticaltabs'])
+  verticaltabs: () => css(stylesheet['.psds-verticaltabs'])
 }
+
+interface VerticalTabsProps extends HTMLAttributes<HTMLUListElement> {
+  forceCollapsed?: boolean
+  hideLabels?: boolean
+}
+
+interface VerticalTabsStatics {
+  CollapsibleGroup: typeof CollapsibleGroup
+  Divider: typeof Divider
+  Group: typeof Group
+  Tier1: typeof Tier1
+  Tier2: typeof Tier2
+}
+
+interface VerticalTabsComponents
+  extends RefForwardingComponent<
+    VerticalTabsProps,
+    HTMLUListElement,
+    VerticalTabsStatics
+  > {}
 
 const VerticalTabs = forwardRef((props, ref) => {
   const {
@@ -23,32 +41,19 @@ const VerticalTabs = forwardRef((props, ref) => {
     ...rest
   } = props
 
-  const contextValue = React.useMemo(() => ({ forceCollapsed, hideLabels }), [
+  const contextValue = useMemo(() => ({ forceCollapsed, hideLabels }), [
     forceCollapsed,
     hideLabels
   ])
 
   return (
     <Context.Provider value={contextValue}>
-      <ul
-        ref={ref}
-        {...styles.verticaltabs()}
-        {...filterReactProps(rest, { tagName: 'ul' })}
-      >
+      <ul {...styles.verticaltabs()} ref={ref} {...rest}>
         {children}
       </ul>
     </Context.Provider>
   )
-})
-
-VerticalTabs.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  forceCollapsed: PropTypes.bool,
-  hideLabels: PropTypes.bool
-}
+}) as VerticalTabsComponents
 
 VerticalTabs.displayName = 'VerticalTabs'
 

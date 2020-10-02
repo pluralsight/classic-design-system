@@ -1,2 +1,2 @@
-export { default } from './react/index'
-export { default as css } from './css/index'
+export { default } from './react'
+export { default as css } from './css'

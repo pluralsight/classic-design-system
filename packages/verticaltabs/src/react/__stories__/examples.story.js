@@ -1,8 +1,8 @@
 import { storiesOf } from '@storybook/react'
 import React, { Fragment } from 'react'
 
-import { ADMIN_TOOLS_NAV, DESIGN_SYSTEM_NAV, FLOW_NAV } from './fixtures.js'
-import VerticalTabs from '../index.js'
+import { ADMIN_TOOLS_NAV, DESIGN_SYSTEM_NAV, FLOW_NAV } from './fixtures'
+import VerticalTabs from '..'
 
 const { CollapsibleGroup, Divider, Group, Tier1, Tier2 } = VerticalTabs
 

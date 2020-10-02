@@ -4,7 +4,7 @@ import React from 'react'
 
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import VerticalTabs from '../index.js'
+import VerticalTabs from '..'
 
 const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs
 

@@ -1,7 +1,15 @@
-import React, { useContext } from 'react'
+import { createContext, useContext } from 'react'
 
-const initialState = { forceCollapsed: false, hideLabels: false }
-const Context = React.createContext(initialState)
+interface ContextValue {
+  forceCollapsed: boolean
+  hideLabels: boolean
+}
+
+const initialState: ContextValue = {
+  forceCollapsed: false,
+  hideLabels: false
+}
+const Context = createContext<ContextValue>(initialState)
 
 export default Context
 
