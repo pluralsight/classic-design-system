@@ -12,10 +12,10 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
-    "build": "run-s build:svg build:js build:cjs build:css copy:svg",
-    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
+    "build": "run-s build:svg build:esm build:cjs build:css copy:svg",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
-    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "prebuild:svg": "npm run clean:svg",
     "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
     "build:watch": "npm run build:js -- --watch",
@@ -30,6 +30,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.2",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
+    "@pluralsight/ps-design-system-util": "^5.2.0",
     "arg": "^4.1.1",
     "fast-glob": "^3.1.0",
     "prop-types": "^15.7.2",

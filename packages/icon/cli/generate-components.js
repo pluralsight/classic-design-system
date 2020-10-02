@@ -7,23 +7,35 @@ const svgo = new SVGO({ plugins: [{ removeXMLNS: true }] })
 
 const regex = />/
 const componentTemplate = (svg, componentName, core) => `
-import React from 'react'
-import PropTypes from 'prop-types'
-import Icon from ${
-  core ? "'../index.js'" : "'@pluralsight/ps-design-system-icon'"
+import React, { HTMLAttributes } from 'react'
+import Icon from ${core ? "'../'" : "'@pluralsight/ps-design-system-icon'"}
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+
+
+interface IconStatics {
+  sizes: typeof Icon.sizes
+  colors: typeof Icon.colors
 }
-export const ${componentName} =  React.forwardRef(function ${componentName}({'aria-label': ariaLabel, ...props}, ref){ return (
-  <Icon {...props} ref={ref}>
-    ${svg.replace(
-      regex,
-      "role='img' {...(ariaLabel && { 'aria-label': ariaLabel })}>"
-    )}
-  </Icon>
-)})
+
+interface Props extends HTMLAttributes<HTMLDivElement> {
+  size: string
+}
+
+interface IconComponent
+  extends RefForwardingComponent<Props, HTMLDivElement, IconStatics> {}
+
+export const ${componentName} =  React.forwardRef<HTMLDivElement, Props>(({'aria-label': ariaLabel, ...props}, ref) => { 
+  return (
+    <Icon {...props} ref={ref}>
+      ${svg.replace(
+        regex,
+        "role='img' {...(ariaLabel && { 'aria-label': ariaLabel })}>"
+      )}
+    </Icon>
+  )
+}) as IconComponent
+
 ${componentName}.displayName = '${componentName}'
-${componentName}.propTypes = {
-  'aria-label': PropTypes.string,
-}
 ${componentName}.colors = Icon.colors
 ${componentName}.sizes = Icon.sizes
 `
@@ -45,12 +57,16 @@ const exportTemplate = filePaths =>
   [...filePaths]
     .sort((a, b) => a.localeCompare(b))
     .map(
-      filePath => `export { ${filePath.split('.')[0]} } from './${filePath}'`
+      filePath =>
+        `export { ${filePath.split('.')[0]} } from './${path.basename(
+          filePath,
+          '.tsx'
+        )}'`
     )
     .join('\n')
     .concat('\n')
 
-exports.generateComponents = async ({ src, dest, ext = 'dist.js', core }) => {
+exports.generateComponents = async ({ src, dest, ext = 'dist.tsx', core }) => {
   try {
     await fs.mkdir(dest, { recursive: true })
     const files = await fg([`${src}/*.svg`])
@@ -71,7 +87,7 @@ exports.generateComponents = async ({ src, dest, ext = 'dist.js', core }) => {
         return filePath
       })
     )
-    await fs.writeFile(`${dest}/index.js`, exportTemplate(filePaths))
+    await fs.writeFile(`${dest}/index.tsx`, exportTemplate(filePaths))
   } catch (err) {
     console.error(err)
   }

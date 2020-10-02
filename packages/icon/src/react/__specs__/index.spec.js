@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as vars from '../../vars/index.js'
+import * as vars from '../../vars'
 
-import Icon from '../index.js'
-import * as Icons from '../icons/index.js'
+import Icon from '../'
+import * as Icons from '../icons'
 
 describe('Icon', () => {
   describe('.colors', () => {
