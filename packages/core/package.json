@@ -12,7 +12,7 @@
     "build": "run-s build:js build:css",
     "build:css": "node ./build",
     "build:js": "tsc --project ./tsconfig.json",
-    "prepublish": "npm run build"
+    "prepublish": "yarn build"
   },
   "sideEffects": false,
   "style": "css/index.css",
