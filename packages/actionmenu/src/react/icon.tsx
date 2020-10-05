@@ -10,8 +10,8 @@ const styles = ({ marginLeft, marginRight }) =>
   )
 
 interface Props extends HTMLAttributes<HTMLSpanElement> {
-  marginRight: boolean
-  marginLeft: boolean
+  marginRight?: boolean
+  marginLeft?: boolean
 }
 
 export const Icon: React.FC<Props> = ({

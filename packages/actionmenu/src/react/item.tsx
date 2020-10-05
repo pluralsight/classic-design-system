@@ -44,13 +44,13 @@ const styles = {
 }
 
 interface Props extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'> {
-  disabled: boolean
-  tagName: string
-  className: string
-  origin: string
-  onClick: (event: React.MouseEvent, value: string | number) => void
-  nested: React.ReactNode
-  value: string | number
+  disabled?: boolean
+  tagName?: string
+  className?: string
+  origin?: string
+  onClick?: (event: React.MouseEvent, value: string | number) => void
+  nested?: React.ReactNode
+  value?: string | number
 }
 
 export const Item = forwardRef<HTMLLIElement, Props>(
