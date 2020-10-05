@@ -3,6 +3,7 @@ import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import { layout } from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { Link, navigate } from 'gatsby'
 import React, { HTMLAttributes } from 'react'
@@ -16,51 +17,50 @@ interface Props extends HTMLAttributes<HTMLDivElement> {}
 export const SideNav: React.FC<Props> = () => {
   return (
     <div className={styles.sideNav}>
-      <Logo />
-      <SearchInput
-        id="ALGOLIA_DOCUSEARCH_INPUT"
-        style={{
-          margin: `0 ${layout.spacingLarge} ${layout.spacingLarge} ${layout.spacingLarge}`
-        }}
-      />
-      <nav>
-        <VerticalTabs>
-          <VerticalTabs.Group>
-            {items.map(section => {
-              const sectionHeader = (
-                <VerticalTabs.Tier1.Header>
-                  {section.header.title}
-                </VerticalTabs.Tier1.Header>
-              )
+      <div className={styles.header}>
+        <Logo />
+        <SearchInput id="ALGOLIA_DOCUSEARCH_INPUT" />
+      </div>
+      <Scrollable className={styles.scrollable}>
+        <nav>
+          <VerticalTabs>
+            <VerticalTabs.Group>
+              {items.map(section => {
+                const sectionHeader = (
+                  <VerticalTabs.Tier1.Header>
+                    {section.header.title}
+                  </VerticalTabs.Tier1.Header>
+                )
 
-              return (
-                <VerticalTabs.Tier1
-                  header={sectionHeader}
-                  collapsible
-                  key={section.header.title}
-                >
-                  {section.items.map(item => (
-                    <VerticalTabs.Tier2
-                      header={
-                        <VerticalTabs.Tier2.Header
-                          href={item.href}
-                          onClick={(evt: Event) => {
-                            evt.preventDefault()
-                            navigate(item.href)
-                          }}
-                        >
-                          {item.title}
-                        </VerticalTabs.Tier2.Header>
-                      }
-                      key={item.href}
-                    />
-                  ))}
-                </VerticalTabs.Tier1>
-              )
-            })}
-          </VerticalTabs.Group>
-        </VerticalTabs>
-      </nav>
+                return (
+                  <VerticalTabs.Tier1
+                    header={sectionHeader}
+                    collapsible
+                    key={section.header.title}
+                  >
+                    {section.items.map(item => (
+                      <VerticalTabs.Tier2
+                        header={
+                          <VerticalTabs.Tier2.Header
+                            href={item.href}
+                            onClick={(evt: Event) => {
+                              evt.preventDefault()
+                              navigate(item.href)
+                            }}
+                          >
+                            {item.title}
+                          </VerticalTabs.Tier2.Header>
+                        }
+                        key={item.href}
+                      />
+                    ))}
+                  </VerticalTabs.Tier1>
+                )
+              })}
+            </VerticalTabs.Group>
+          </VerticalTabs>
+        </nav>
+      </Scrollable>
       <div className={styles.githubButton}>
         <Button
           icon={<GithubIcon />}
@@ -390,11 +390,12 @@ const items = [
 function Logo() {
   const themeName = useTheme()
   return (
-    <div className={styles.logo}>
-      <Link to="/">
-        <img src={themeName === Theme.names.light ? logoLight : logoDark} />
-      </Link>
-    </div>
+    <Link to="/">
+      <img
+        className={styles.logo}
+        src={themeName === Theme.names.light ? logoLight : logoDark}
+      />
+    </Link>
   )
 }
 
