@@ -2,46 +2,21 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { css, keyframes } from 'glamor'
 import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import PropTypes from 'prop-types'
 import React, { HTMLAttributes } from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import stylesheet from '../css'
 import * as vars from '../vars'
 
-const spin = keyframes(
-  stylesheet['@keyframes psds-button__keyframes__spin']
-)
-
-
-interface ButtonStatics {
-  appearances: typeof vars.appearances
-  iconAligns: typeof vars.iconAligns 
-  sizes: typeof vars.sizes
-}
-
-
-interface Props extends HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode | Array<React.ReactNode>
-  appearance:string,
-  disabled: boolean,
-  href: string,
-  icon: React.ReactNode,
-  iconAlign: string,
-  loading: boolean,
-  size: string,
-}
-interface ButtonComponent
-  extends RefForwardingComponent<Props, HTMLDivElement, ButtonStatics> {}
-
+const spin = keyframes(stylesheet['@keyframes psds-button__keyframes__spin'])
 
 const styles = {
   button: ({
     appearance,
-    css: cssProp,
     disabled,
     icon,
     iconAlign,
     iconOnly,
-    loading,
     size,
     themeName
   }) =>
@@ -73,8 +48,7 @@ const styles = {
       iconOnly && {
         ...stylesheet[`.psds-button--iconOnly`],
         ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
-      },
-      cssProp
+      }
     ),
   loading: ({ appearance, themeName }) =>
     css(
@@ -94,96 +68,148 @@ const styles = {
   text: () => css(stylesheet[`.psds-button__text`])
 }
 
-const mapIconSize = size => {
+const mapIconSize = (size: string) => {
   const btnToIconSizes = {
     [vars.sizes.xSmall]: iconSizes.small,
     [vars.sizes.small]: iconSizes.medium,
     [vars.sizes.medium]: iconSizes.medium,
     [vars.sizes.large]: iconSizes.medium
   }
-  return btnToIconSizes[size]
-    ? btnToIconSizes[size]
-    : iconSizes.medium
+  return btnToIconSizes[size] ? btnToIconSizes[size] : iconSizes.medium
 }
 
-interface Props extends HTMLAttributes<HTMLDivElement> {
-  loading: boolean,
-  icon: React.ReactNode,
-  appearance: string,
-  themeName: string,
-  size: string,
+interface RenderIconProps extends HTMLAttributes<HTMLDivElement> {
+  loading: boolean
+  icon: React.ReactNode
+  appearance: string
+  themeName: string
+  size: string
   iconOnly: boolean
   isLoadingWithNoText: boolean
+  iconAlign: string
 }
-const renderIcon: React.FC<Props> = (props) =>
+
+const renderIcon: React.FC<RenderIconProps> = props =>
   props.loading ? (
-    <div {...styles.icon({iconAlign: props.iconAlign, iconOnly: props.iconOnly, isLoadingWithNoText: props.isLoadingWithNoText})}>
+    <div
+      {...styles.icon({
+        iconAlign: props.iconAlign,
+        iconOnly: props.iconOnly,
+        isLoadingWithNoText: props.isLoadingWithNoText
+      })}
+    >
       <Icon size={mapIconSize(props.size)}>
-        <span {...styles.loading({ appearance: props.appearance, themeName: props.themeName })} />
+        <span
+          {...styles.loading({
+            appearance: props.appearance,
+            themeName: props.themeName
+          })}
+        />
       </Icon>
     </div>
   ) : props.icon ? (
-    <div {...styles.icon({iconAlign: props.iconAlign, iconOnly: props.iconOnly, isLoadingWithNoText: props.isLoadingWithNoText})}>
-      {React.cloneElement(props.icon, {
+    <div
+      {...styles.icon({
+        iconAlign: props.iconAlign,
+        iconOnly: props.iconOnly,
+        isLoadingWithNoText: props.isLoadingWithNoText
+      })}
+    >
+      {React.cloneElement(props.icon as React.ReactElement, {
         size: mapIconSize(props.size)
       })}
     </div>
   ) : null
 
-const Button = React.forwardRef<HTMLElement, Props>((props, forwardedRef) => {
-  const themeName = useTheme()
-  const ref = React.useRef() as React.MutableRefObject<HTMLAnchorElement | HTMLButtonElement>;
-  React.useImperativeHandle(forwardedRef, () => ref.current)
-  const nonLoadingWidth = React.useMemo(() => {
-    if (props.loading && ref && ref.current) {
-      return ref.current.offsetWidth
+renderIcon.propTypes = {
+  loading: PropTypes.bool,
+  icon: PropTypes.element
+}
+
+interface ButtonStatics {
+  appearances: typeof vars.appearances
+  iconAligns: typeof vars.iconAligns
+  sizes: typeof vars.sizes
+}
+
+interface ButtonProps extends HTMLAttributes<HTMLElement> {
+  appearance?: string
+  disabled?: boolean
+  href?: string
+  icon?: React.ReactNode
+  iconAlign?: string
+  loading?: boolean
+  size?: string
+}
+
+interface ButtonComponent
+  extends RefForwardingComponent<ButtonProps, HTMLElement, ButtonStatics> {}
+
+const Button = React.forwardRef<HTMLElement, ButtonProps>(
+  (props, forwardedRef) => {
+    const themeName = useTheme()
+    const ref = React.useRef<HTMLAnchorElement | HTMLButtonElement>()
+    React.useImperativeHandle(forwardedRef, () => ref.current)
+    const nonLoadingWidth = React.useMemo(() => {
+      if (props.loading && ref && ref.current) {
+        return ref.current.offsetWidth
+      }
+    }, [props.loading, ref])
+
+    const tagName = props.href ? 'a' : 'button'
+    const isLoadingWithNoText = !!nonLoadingWidth
+    const allProps = {
+      ...props,
+      isLoadingWithNoText,
+      iconOnly: React.Children.count(props.children) <= 0,
+      themeName
     }
-  }, [props.loading, ref])
 
-  const tagName = props.href ? 'a' : 'button'
-  const isLoadingWithNoText = !!nonLoadingWidth
-  const allProps = {
-    ...props,
-    isLoadingWithNoText,
-    iconOnly: React.Children.count(props.children) <= 0,
-    themeName
-  }
+    const isDisabledLink = allProps.disabled && allProps.href
+    const filteredProps = filterReactProps(props, { tagName })
+    delete filteredProps.icon
+    if (isDisabledLink) {
+      delete filteredProps.onClick
+    }
 
-  const isDisabledLink = allProps.disabled && allProps.href
-  const filteredProps = filterReactProps(props, { tagName })
-  delete filteredProps.icon
-  if (isDisabledLink) {
-    delete filteredProps.onClick
-  }
-
-  return React.createElement(
-    tagName,
-    {
-      ...styles.button({
-        appearance: props.appearance,
-        css: props.css,
-        disabled: props.disabled,
-        icon: props.icon,
-        iconAlign: props.iconAlign,
-        iconOnly: props.iconOnly,
-        loading: props.loading,
-        size: props.size,
-        themeName: props.themeName
-      }),
-      ...filteredProps,
-      disabled: props.disabled || props.loading,
-      ref,
-      style: isLoadingWithNoText
-        ? { ...props.style, width: nonLoadingWidth }
-        : props.style || {}
-    },
-    renderIcon(allProps),
-    !isLoadingWithNoText && (
-      <span {...styles.text()}>{allProps.children}</span>
+    return React.createElement(
+      tagName,
+      {
+        ...styles.button({
+          appearance: allProps.appearance,
+          disabled: allProps.disabled,
+          icon: allProps.icon,
+          iconAlign: allProps.iconAlign,
+          iconOnly: allProps.iconOnly,
+          size: allProps.size,
+          themeName: allProps.themeName
+        }),
+        ...filteredProps,
+        disabled: props.disabled || props.loading,
+        ref,
+        style: isLoadingWithNoText
+          ? { ...props.style, width: nonLoadingWidth }
+          : props.style || {}
+      },
+      renderIcon(allProps),
+      !isLoadingWithNoText && (
+        <span {...styles.text()}>{allProps.children}</span>
+      )
     )
-  )
-}) as ButtonComponent
+  }
+) as ButtonComponent
 
+Button.propTypes = {
+  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
+  children: PropTypes.any,
+  disabled: PropTypes.bool,
+  href: PropTypes.string,
+  icon: PropTypes.element,
+  iconAlign: PropTypes.oneOf(Object.keys(vars.iconAligns)),
+  loading: PropTypes.bool,
+  size: PropTypes.oneOf(Object.keys(vars.sizes)),
+  style: PropTypes.object
+}
 Button.defaultProps = {
   appearance: vars.appearances.primary,
   disabled: false,

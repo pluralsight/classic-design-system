@@ -3,11 +3,11 @@ import React from 'react'
 
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
-import Button from '../'
+import Button from '..'
 
 describe('Button', () => {
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.useRef()
     render(<Button ref={ref}>with ref</Button>)
 
     expect(ref.current).not.toBeNull()

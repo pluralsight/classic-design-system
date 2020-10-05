@@ -1,12 +1,12 @@
 import { css } from 'glamor'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { appearances } from '../vars/index.js'
+import { appearances } from '../vars'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 
-import React, { HTMLAttributes }  from 'react'
+import React, { HTMLAttributes } from 'react'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const style = ({ appearance, themeName }) =>
   css(
@@ -29,23 +29,27 @@ interface Props extends HTMLAttributes<HTMLAnchorElement> {
 interface LinkComponent
   extends RefForwardingComponent<Props, HTMLAnchorElement, LinkStatics> {}
 
+const Link = React.forwardRef<HTMLAnchorElement, Props>(
+  (props, forwardedRef) => {
+    const ref = React.useRef<HTMLAnchorElement>()
+    React.useImperativeHandle(forwardedRef, () => ref.current)
+    const themeName = useTheme()
 
-const Link = React.forwardRef<HTMLAnchorElement, Props>((props, forwardedRef) => {
-  const ref = React.useRef() as React.MutableRefObject<HTMLAnchorElement>;
-  React.useImperativeHandle(forwardedRef, () => ref.current)
-  const themeName = useTheme()
+    let tagName = 'a'
+    React.useEffect(() => {
+      if (ref.current && ref.current.tagName) tagName = ref.current.tagName
+    })
 
-  let tagName = 'a'
-  React.useEffect(() => {
-    if (ref.current && ref.current.tagName) tagName = ref.current.tagName
-  })
-
-  const { children, ...rest } = props
-  return React.cloneElement(React.Children.only(props.children), {
-    ...style({ ...props, themeName }),
-    ...filterReactProps(rest, { tagName })
-  })
-}) as LinkComponent
+    const { children, ...rest } = props
+    return React.cloneElement(
+      React.Children.only(props.children as React.ReactElement),
+      {
+        ...style({ ...props, themeName }),
+        ...filterReactProps(rest, { tagName })
+      }
+    )
+  }
+) as LinkComponent
 
 Link.appearances = appearances
 
