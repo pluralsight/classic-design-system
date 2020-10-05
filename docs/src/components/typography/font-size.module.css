@@ -1,24 +1,28 @@
+.dark {
+  --fg: var(--psColorsTextIconHighOnDark);
+  --fgLight: var(--psColorsTextIconLowOnDark);
+}
+.light {
+  --fg: var(--psColorsTextIconHighOnLight);
+  --fgLight: var(--psColorsTextIconLowOnLight);
+}
 .sizes {
-  background: var(--psColorsBackgroundLight2);
-  border-radius: 12px;
   white-space: nowrap;
-  overflow: hidden;
-  padding: var(--psLayoutSpacingLarge);
   margin-bottom: var(--psLayoutSpacingMedium);
   max-width: 900px;
 }
 .size {
-  color: var(--psColorsBackgroundDark2);
+  color: var(--fg);
 }
 .size + .size {
   margin-top: var(--psLayoutSpacingLarge);
 }
 .sizeSentence {
-  color: var(--psColorsBackgroundDark2);
+  color: var(--fg);
   margin-bottom: var(--psLayoutSpacingXSmall);
 }
 .sizeLabel {
-  color: var(--psColorsTextIconLowOnLight);
+  color: var(--fgLight);
   font-size: var(--psTypeFontSizeXSmall);
 }
 .sizeVar {
