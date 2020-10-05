@@ -1,17 +1,8 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src"],
-  "exclude": [
-    ".storybook",
-    "node_modules",
-    "dist",
-    "**/*.spec.*",
-    "**/*.story.*"
-  ],
   "compilerOptions": {
-    "declaration": true,
-    "jsx": "react",
-    "outDir": "dist",
-    "rootDir": "src"
+    "allowJs": true,
+    "rootDir": null,
+    "jsx": "react"
   }
 }
