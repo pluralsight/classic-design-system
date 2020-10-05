@@ -2,7 +2,10 @@ import { css } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -22,8 +25,8 @@ interface IconStatics {
 }
 
 export interface IconProps extends HTMLAttributes<HTMLDivElement> {
-  size?: string
-  color?: string
+  size?: ValueOf<typeof sizes>
+  color?: ValueOf<typeof colors>
 }
 
 interface IconComponent

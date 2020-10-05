@@ -50,6 +50,7 @@ lint:
 test:
   stage: test
   script:
+    - rm -rf packages/icon/src/react/icons
     - yarn build
     - yarn test:ci
 
