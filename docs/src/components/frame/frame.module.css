@@ -43,6 +43,6 @@
   overflow: auto;
   flex: 0 1 auto;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 800px;
   padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingXLarge);
 }
