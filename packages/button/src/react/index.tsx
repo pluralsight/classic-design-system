@@ -2,7 +2,6 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { css, keyframes } from 'glamor'
 import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
-import PropTypes from 'prop-types'
 import React, { HTMLAttributes } from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import stylesheet from '../css'
@@ -121,11 +120,6 @@ const renderIcon: React.FC<RenderIconProps> = props =>
     </div>
   ) : null
 
-renderIcon.propTypes = {
-  loading: PropTypes.bool,
-  icon: PropTypes.element
-}
-
 interface ButtonStatics {
   appearances: typeof vars.appearances
   iconAligns: typeof vars.iconAligns
@@ -208,17 +202,6 @@ const Button = React.forwardRef<HTMLElement, ButtonProps>(
   }
 ) as ButtonComponent
 
-Button.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
-  children: PropTypes.any,
-  disabled: PropTypes.bool,
-  href: PropTypes.string,
-  icon: PropTypes.element,
-  iconAlign: PropTypes.oneOf(Object.keys(vars.iconAligns)),
-  loading: PropTypes.bool,
-  size: PropTypes.oneOf(Object.keys(vars.sizes)),
-  style: PropTypes.object
-}
 Button.defaultProps = {
   appearance: vars.appearances.primary,
   disabled: false,
