@@ -14,10 +14,10 @@
     "build": "run-s build:js build:cjs",
     "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
-    "build:watch": "npm run build:js -- --watch",
-    "prepublish": "npm run build",
+    "build:watch": "yarn build:js -- --watch",
+    "prepublish": "yarn build",
     "test": "jest",
-    "test:watch": "npm run test -- --watchAll"
+    "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
     "fast-memoize": "^2.5.1",
