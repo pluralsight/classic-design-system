@@ -8,7 +8,13 @@ import React, { HTMLAttributes } from 'react'
 
 import stylesheet from '../css'
 
-const style = ({ appearance, themeName }) =>
+const style = ({
+  appearance,
+  themeName
+}: {
+  appearance: string
+  themeName: string
+}) =>
   css(
     stylesheet[`.psds-link`],
     appearance === appearances.default
@@ -43,7 +49,7 @@ const Link = React.forwardRef<HTMLAnchorElement, Props>(
     return React.cloneElement(
       React.Children.only(props.children as React.ReactElement),
       {
-        ...style({ ...props, themeName }),
+        ...style({ appearance: props.appearance, themeName }),
         ...filterReactProps(rest, { tagName })
       }
     )
