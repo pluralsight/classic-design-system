@@ -1,9 +1,11 @@
-import { css } from 'glamor'
-import React from 'react'
-import PropTypes from 'prop-types'
-
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css/index.js'
 import { select } from '../js/index.js'
@@ -17,7 +19,20 @@ const styles = {
     )
 }
 
-const Badge = React.forwardRef((props, ref) => {
+interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
+  appearance?: ValueOf<typeof vars.appearances>
+  color?: ValueOf<typeof vars.colors>
+}
+
+interface BadgeStatics {
+  appearances: typeof vars.appearances
+  colors: typeof vars.colors
+}
+
+interface BadgeComponent
+  extends RefForwardingComponent<BadgeProps, HTMLDivElement, BadgeStatics> {}
+
+const Badge = React.forwardRef<HTMLDivElement, BadgeProps>((props, ref) => {
   const themeName = useTheme()
   const allProps = { themeName, ...props }
   return (
@@ -27,12 +42,7 @@ const Badge = React.forwardRef((props, ref) => {
       ref={ref}
     />
   )
-})
-
-Badge.propTypes = {
-  appearance: PropTypes.oneOf(Object.values(vars.appearances)),
-  color: PropTypes.oneOf(Object.values(vars.colors))
-}
+}) as BadgeComponent
 
 Badge.defaultProps = {
   appearance: vars.appearances.default,
