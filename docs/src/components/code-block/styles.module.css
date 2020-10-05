@@ -23,11 +23,9 @@
 }
 .light .actions {
   background-color: var(--psColorsBackgroundLight2);
-  border-top: 1px solid var(--psColorsBorderLowOnLight);
 }
 .dark .actions {
   background-color: var(--psColorsBackgroundDark2);
-  border-top: 1px solid var(--psColorsBorderLowOnDark);
 }
 .actionsLeft {
   margin-right: auto;
@@ -38,14 +36,14 @@
 
 .preview {
   padding: var(--psLayoutSpacingMedium);
-
-  &.dark {
-    background: var(--psColorsBackgroundDark1);
-  }
-
-  &.light {
-    background: var(--psColorsBackgroundLight2);
-  }
+}
+.light .preview {
+  background: var(--psColorsBackgroundLight3);
+  border-bottom: 1px solid var(--psColorsBorderLowOnLight);
+}
+.dark .preview {
+  background: var(--psColorsBackgroundDark1);
+  border-bottom: 1px solid var(--psColorsBorderLowOnDark);
 }
 
 .editor {
