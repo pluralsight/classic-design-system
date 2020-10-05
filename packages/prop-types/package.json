@@ -12,10 +12,10 @@
   },
   "scripts": {
     "build": "babel --root-mode upward src --out-dir dist",
-    "build:watch": "npm run build -- --watch",
-    "prepublish": "npm run build",
+    "build:watch": "yarn build -- --watch",
+    "prepublish": "yarn build",
     "test": "jest",
-    "test:watch": "npm run test -- --watchAll"
+    "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
     "prop-types": "^15.7.2"
