@@ -3,7 +3,7 @@ import React from 'react'
 
 import * as vars from '../../vars'
 
-import Icon from '../'
+import Icon from '..'
 import * as Icons from '../icons'
 
 describe('Icon', () => {
@@ -16,7 +16,7 @@ describe('Icon', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
     render(<Icon ref={ref} />)
     expect(ref.current).not.toBeNull()
   })

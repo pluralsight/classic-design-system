@@ -22,7 +22,7 @@ interface IconStatics {
 }
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
-  size: string
+  size?: string
 }
 
 interface IconComponent

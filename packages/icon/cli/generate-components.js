@@ -12,28 +12,30 @@ import Icon from ${core ? "'../'" : "'@pluralsight/ps-design-system-icon'"}
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 
 
-interface IconStatics {
+interface ${componentName}Statics {
   sizes: typeof Icon.sizes
   colors: typeof Icon.colors
 }
 
-interface Props extends HTMLAttributes<HTMLDivElement> {
-  size: string
+interface ${componentName}Props extends HTMLAttributes<HTMLDivElement> {
+  size?: string
 }
 
-interface IconComponent
-  extends RefForwardingComponent<Props, HTMLDivElement, IconStatics> {}
+interface ${componentName}Component
+  extends RefForwardingComponent<${componentName}Props, HTMLDivElement, ${componentName}Statics> {}
 
-export const ${componentName} =  React.forwardRef<HTMLDivElement, Props>(({'aria-label': ariaLabel, ...props}, ref) => { 
-  return (
-    <Icon {...props} ref={ref}>
-      ${svg.replace(
-        regex,
-        "role='img' {...(ariaLabel && { 'aria-label': ariaLabel })}>"
-      )}
-    </Icon>
-  )
-}) as IconComponent
+export const ${componentName} = React.forwardRef<HTMLDivElement, ${componentName}Props>(
+  ({ 'aria-label': ariaLabel, ...props }, ref) => { 
+    return (
+      <Icon {...props} ref={ref}>
+        ${svg.replace(
+          regex,
+          "role='img' {...(ariaLabel && { 'aria-label': ariaLabel })}>"
+        )}
+      </Icon>
+    )
+  }
+) as ${componentName}Component
 
 ${componentName}.displayName = '${componentName}'
 ${componentName}.colors = Icon.colors
