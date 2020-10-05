@@ -1,5 +1,4 @@
 @custom-media --breakpoint-small (width >= 768px);
-@custom-media --breakpoint-large (width >= 1280px);
 
 .home {
   width: 100%;
@@ -72,10 +71,6 @@
   @media (--breakpoint-small) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--psLayoutSpacingLarge);
-  }
-
-  @media (--breakpoint-large) {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
