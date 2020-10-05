@@ -102,9 +102,9 @@ const getToggledSort = props =>
 
 function ColumnHeader({ onClick, ...props }) {
   const themeName = useTheme()
-  const Tag = props.onClick ? 'button' : 'div'
+  const Tag = onClick ? 'button' : 'div'
 
-  const active = vars.sorts[props.sort] && typeof props.onClick === 'function'
+  const active = vars.sorts[props.sort] && typeof onClick === 'function'
 
   const style = props.style || {}
   if (props.flex && !style.flex) style.flex = props.flex
