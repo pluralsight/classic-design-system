@@ -3,7 +3,8 @@ import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import {
   RefForwardingComponent,
-  ValueOf
+  ValueOf,
+  omit
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, {
@@ -62,13 +63,13 @@ interface GroupComponent
   extends RefForwardingComponent<GroupProps, HTMLLIElement, GroupStatics> {}
 
 const Group = forwardRef((props, ref) => {
-  const { children, header, startOpen, ...rest } = props
+  const rest = omit(props as Record<string, any>, ['header', 'startOpen'])
 
   return (
     <li ref={ref} {...styles.group()} {...rest}>
-      {header}
+      {props.header}
 
-      <List>{children}</List>
+      <List>{props.children}</List>
     </li>
   )
 }) as GroupComponent
@@ -127,7 +128,7 @@ const CollapsibleGroup = forwardRef((props, ref) => {
   return (
     <div ref={ref} {...rest}>
       {isValidElement(header) &&
-        cloneElement(header, {
+        cloneElement<CollapsibleGroupHeaderProps>(header as any, {
           toggle,
           open,
           getButtonAriaLabel

@@ -22,7 +22,8 @@
   "dependencies": {
     "@pluralsight/ps-design-system-collapsible": "^2.1.2",
     "@pluralsight/ps-design-system-core": "^6.4.2",
-    "@pluralsight/ps-design-system-icon": "^18.2.3"
+    "@pluralsight/ps-design-system-icon": "^18.2.3",
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

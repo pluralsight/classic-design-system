@@ -1,6 +1,6 @@
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { ValueOf, combineFns } from '@pluralsight/ps-design-system-util'
+import { ValueOf, combineFns, omit } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
 import React, {
   HTMLAttributes,
@@ -18,7 +18,7 @@ import { List, CollapsibleList } from './list'
 
 type StyleFn = (
   themeName?: ValueOf<Theme.names>,
-  props?: Record<string, any>
+  props?: Record<string, unknown>
 ) => StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
@@ -196,14 +196,18 @@ const Tier2: React.FC<Tier2Props> & {
 
 interface Tier2HeaderProps extends ItemHeaderProps {}
 const Tier2Header = forwardRef<any, Tier2HeaderProps>((props, ref) => {
-  const { active, collapsed, collapsible, children, ...rest } = props
   const hideLabels = useHideLabels()
 
+  // NOTE: some props are given during clone that are not used as should not be
+  //       passed to the underlying dom node
+  const rest = omit(props, ['active', 'collapsed', 'collapsible'])
   const Tag = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
 
   return (
     <Tag {...styles.tier2Header} {...rest} ref={ref}>
-      <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
+      <span {...styles.tierHeaderLabel(null, { hideLabels })}>
+        {props.children}
+      </span>
     </Tag>
   )
 })
