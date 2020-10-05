@@ -50,8 +50,6 @@ lint:
 test:
   stage: test
   script:
-    - yarn tsc -v
-    - yarn
     - yarn build
     - yarn test:ci
 
