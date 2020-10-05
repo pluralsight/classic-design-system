@@ -38,10 +38,9 @@ interface ActionMenuStatics {
 }
 
 interface Props extends HTMLAttributes<HTMLUListElement> {
-  children: React.ReactNode | Array<React.ReactNode>
-  onClose: () => void
-  origin: string
-  onClick: (Event) => void
+  onClose?: () => void
+  origin?: string
+  onClick?: (Event) => void
 }
 interface ActionMenuComponent
   extends RefForwardingComponent<Props, HTMLUListElement, ActionMenuStatics> {}

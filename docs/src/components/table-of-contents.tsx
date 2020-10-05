@@ -1,5 +1,5 @@
 import {
-  colorsBackgroundUtility,
+  colorsBackgroundDark,
   colorsBackgroundLight
 } from '@pluralsight/ps-design-system-core'
 import { Heading } from '@pluralsight/ps-design-system-text'
@@ -31,7 +31,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = props => {
         {
           '--bg':
             themeName === Theme.names.dark
-              ? colorsBackgroundUtility[25]
+              ? colorsBackgroundDark[2]
               : colorsBackgroundLight[2]
         } as React.CSSProperties
       }

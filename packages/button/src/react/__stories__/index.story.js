@@ -7,7 +7,7 @@ import React from 'react'
 
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
-import Button from '../index.js'
+import Button from '../'
 
 const appearanceStory = storiesOf('Button / appearance', module)
 Object.keys(Button.appearances).forEach(app =>

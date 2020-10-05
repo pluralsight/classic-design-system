@@ -1,7 +1,7 @@
 @custom-media --breakpoint-small (width >= 768px);
 
 .aside {
-  background: var(--psColorsBackgroundLight1);
+  background: var(--psColorsBackgroundLight2);
   bottom: 0;
   height: 100vh;
   left: 0;
@@ -32,7 +32,7 @@
   }
 
   &.light {
-    background: var(--psColorsBackgroundLight1);
+    background: var(--psColorsBackgroundLight2);
   }
 
   @media (--breakpoint-small) {

@@ -5,7 +5,7 @@ import ActionMenu from '../index'
 
 describe('ActionMenu', () => {
   it('forwards ref', () => {
-    const refToForward = React.createRef()
+    const refToForward = React.createRef<HTMLUListElement>()
 
     const { getByTestId } = render(
       <ActionMenu data-testid="under-test" ref={refToForward}>
