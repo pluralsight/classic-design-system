@@ -19,6 +19,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-glamor',
+      options: {}
+    },
+    {
+      resolve: 'gatsby-plugin-styled-jsx',
+      options: {}
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
