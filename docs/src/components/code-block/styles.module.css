@@ -23,9 +23,11 @@
 }
 .light .actions {
   background-color: var(--psColorsBackgroundLight2);
+  border-top: 1px solid var(--psColorsBorderLowOnLight);
 }
 .dark .actions {
   background-color: var(--psColorsBackgroundDark2);
+  border-top: 1px solid var(--psColorsBorderLowOnDark);
 }
 .actionsLeft {
   margin-right: auto;
@@ -52,17 +54,17 @@
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightTight);
   overflow: auto;
-  padding: var(--psLayoutSpacingMedium);
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
   height: auto;
   max-height: var(--psLayoutSpacingXLarge);
-  transition: max-height var(--psMotionSpeedNormal) ease-out;
+  transition: max-height var(--psMotionSpeedFast) ease-out;
   overflow-y: hidden;
 }
 .light .editor {
-  background-color: var(--psColorsBackgroundLight1);
+  background-color: var(--psColorsBackgroundLight2);
 }
 .dark .editor {
-  background-color: var(--psColorsBackgroundDark3);
+  background-color: var(--psColorsBackgroundDark2);
 }
 .editorExpanded {
   /* large number so we have something to animate to */
