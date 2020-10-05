@@ -23,8 +23,7 @@ interface LinkStatics {
 }
 
 interface Props extends HTMLAttributes<HTMLAnchorElement> {
-  children: React.ReactNode | Array<React.ReactNode>
-  appearance: string
+  appearance?: string
 }
 interface LinkComponent
   extends RefForwardingComponent<Props, HTMLAnchorElement, LinkStatics> {}

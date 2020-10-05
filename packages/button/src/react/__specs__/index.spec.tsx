@@ -7,7 +7,7 @@ import Button from '..'
 
 describe('Button', () => {
   it('forwards refs', () => {
-    const ref = React.useRef()
+    const ref = React.createRef<HTMLAnchorElement | HTMLButtonElement>()
     render(<Button ref={ref}>with ref</Button>)
 
     expect(ref.current).not.toBeNull()

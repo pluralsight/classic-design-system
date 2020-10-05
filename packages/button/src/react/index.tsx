@@ -191,7 +191,16 @@ const Button = React.forwardRef<HTMLElement, ButtonProps>(
           ? { ...props.style, width: nonLoadingWidth }
           : props.style || {}
       },
-      renderIcon(allProps),
+      renderIcon({
+        loading: allProps.loading,
+        icon: allProps.icon,
+        appearance: allProps.appearance,
+        themeName: allProps.themeName,
+        size: allProps.size,
+        iconOnly: allProps.iconOnly,
+        isLoadingWithNoText: allProps.isLoadingWithNoText,
+        iconAlign: allProps.iconAlign
+      }),
       !isLoadingWithNoText && (
         <span {...styles.text()}>{allProps.children}</span>
       )
