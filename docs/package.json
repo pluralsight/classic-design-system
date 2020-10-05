@@ -80,6 +80,7 @@
     "bunyan": "^1.8.14",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "gatsby-plugin-algolia-docsearch": "^1.0.5",
     "gatsby-plugin-express": "^1.1.6",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-remark-autolink-headers": "^2.3.13",
