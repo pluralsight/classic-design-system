@@ -1,4 +1,3 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
@@ -36,11 +35,9 @@ const Badge = React.forwardRef<HTMLDivElement, BadgeProps>((props, ref) => {
   const themeName = useTheme()
   const allProps = { themeName, ...props }
   return (
-    <div
-      {...styles.badge(allProps)}
-      {...filterReactProps(allProps)}
-      ref={ref}
-    />
+    <div {...styles.badge(allProps)} ref={ref}>
+      {props.children}
+    </div>
   )
 }) as BadgeComponent
 
