@@ -1,9 +1,5 @@
-export const appearances = { default: 'default', subtle: 'subtle' }
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const colors = {
-  gray: 'gray',
-  green: 'green',
-  yellow: 'yellow',
-  red: 'red',
-  blue: 'blue'
-}
+export const appearances = keyMirror('default', 'subtle')
+
+export const colors = keyMirror('gray', 'green', 'yellow', 'red', 'blue')
