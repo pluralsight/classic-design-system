@@ -25,8 +25,8 @@ interface IconStatics {
 }
 
 export interface IconProps extends HTMLAttributes<HTMLDivElement> {
-  size?: ValueOf<typeof sizes>
-  color?: ValueOf<typeof colors>
+  size?: ValueOf<typeof vars.sizes>
+  color?: ValueOf<typeof vars.colors>
 }
 
 interface IconComponent
