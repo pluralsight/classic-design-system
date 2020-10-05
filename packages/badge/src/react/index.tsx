@@ -7,9 +7,9 @@ import {
 import { css } from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css/index.js'
-import { select } from '../js/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import { select } from '../js'
+import * as vars from '../vars'
 
 const styles = {
   badge: props =>
