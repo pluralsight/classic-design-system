@@ -17,9 +17,6 @@ export const query = graphql`
         name
         route
       }
-      fields {
-        slug
-      }
       headings {
         value
         depth
@@ -36,6 +33,9 @@ interface PageProps {
       headings: Heading[]
     }
   }
+  pageContext: {
+    version: string
+  }
 }
 interface FrontMatter {
   name?: string
@@ -51,7 +51,10 @@ const Page: React.FC<PageProps> = props => {
         <link rel="shortcut icon" type="image/png" href={favicon} />
       </Helmet>
       <Frame aside={<SideNav />}>
-        <MDXRenderer headings={props.data.mdx.headings}>
+        <MDXRenderer
+          headings={props.data.mdx.headings}
+          version={props.pageContext.version}
+        >
           {props.data.mdx.body}
         </MDXRenderer>
       </Frame>

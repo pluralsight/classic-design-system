@@ -11,8 +11,8 @@
   },
   "scripts": {
     "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
-    "build:watch": "npm run build -- --watch",
-    "prepublish": "npm run build"
+    "build:watch": "yarn build -- --watch",
+    "prepublish": "yarn build"
   },
   "types": "dist/index.d.ts",
   "dependencies": {

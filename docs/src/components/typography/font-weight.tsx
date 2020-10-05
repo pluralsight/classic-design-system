@@ -1,5 +1,8 @@
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import cx from 'classnames'
 import React from 'react'
 
+import { Box } from '../box'
 import * as styles from './font-weight.module.css'
 
 const weights = [
@@ -35,9 +38,15 @@ const weights = [
   }
 ]
 
-export const FontWeight = () => (
-  <div>
-    <div className={styles.weights}>
+export const FontWeight = () => {
+  const themeName = useTheme()
+  return (
+    <Box
+      className={cx({
+        [styles.dark]: themeName === Theme.names.dark,
+        [styles.light]: themeName === Theme.names.light
+      })}
+    >
       {weights.map((w, i) => (
         <div className={styles.weight} key={i}>
           <div
@@ -59,6 +68,6 @@ export const FontWeight = () => (
           </div>
         </div>
       ))}
-    </div>
-  </div>
-)
+    </Box>
+  )
+}
