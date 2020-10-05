@@ -21,14 +21,15 @@ interface IconStatics {
   colors: typeof vars.colors
 }
 
-interface Props extends HTMLAttributes<HTMLDivElement> {
+export interface IconProps extends HTMLAttributes<HTMLDivElement> {
   size?: string
+  color?: string
 }
 
 interface IconComponent
-  extends RefForwardingComponent<Props, HTMLDivElement, IconStatics> {}
+  extends RefForwardingComponent<IconProps, HTMLDivElement, IconStatics> {}
 
-const Icon = React.forwardRef<HTMLDivElement, Props>(
+const Icon = React.forwardRef<HTMLDivElement, IconProps>(
   ({ children, color, size, ...props }, ref) => (
     <div
       {...style.icon({ color, size })}

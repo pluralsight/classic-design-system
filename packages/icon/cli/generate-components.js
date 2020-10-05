@@ -7,8 +7,10 @@ const svgo = new SVGO({ plugins: [{ removeXMLNS: true }] })
 
 const regex = />/
 const componentTemplate = (svg, componentName, core) => `
-import React, { HTMLAttributes } from 'react'
-import Icon from ${core ? "'../'" : "'@pluralsight/ps-design-system-icon'"}
+import React from 'react'
+import Icon, { IconProps } from ${
+  core ? "'../'" : "'@pluralsight/ps-design-system-icon'"
+}
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 
 
@@ -17,14 +19,10 @@ interface ${componentName}Statics {
   colors: typeof Icon.colors
 }
 
-interface ${componentName}Props extends HTMLAttributes<HTMLDivElement> {
-  size?: string
-}
-
 interface ${componentName}Component
-  extends RefForwardingComponent<${componentName}Props, HTMLDivElement, ${componentName}Statics> {}
+  extends RefForwardingComponent<IconProps, HTMLDivElement, ${componentName}Statics> {}
 
-export const ${componentName} = React.forwardRef<HTMLDivElement, ${componentName}Props>(
+const ${componentName} = React.forwardRef<HTMLDivElement, IconProps>(
   ({ 'aria-label': ariaLabel, ...props }, ref) => { 
     return (
       <Icon {...props} ref={ref}>
@@ -40,6 +38,8 @@ export const ${componentName} = React.forwardRef<HTMLDivElement, ${componentName
 ${componentName}.displayName = '${componentName}'
 ${componentName}.colors = Icon.colors
 ${componentName}.sizes = Icon.sizes
+
+export { ${componentName} }
 `
 
 const camelCaseAttributes = str =>
