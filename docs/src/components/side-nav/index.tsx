@@ -1,4 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+import { layout } from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
@@ -15,6 +17,12 @@ export const SideNav: React.FC<Props> = () => {
   return (
     <div className={styles.sideNav}>
       <Logo />
+      <SearchInput
+        id="ALGOLIA_DOCUSEARCH_INPUT"
+        style={{
+          margin: `0 ${layout.spacingLarge} ${layout.spacingLarge} ${layout.spacingLarge}`
+        }}
+      />
       <nav>
         <VerticalTabs>
           <VerticalTabs.Group>
