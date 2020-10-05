@@ -17,11 +17,11 @@
     "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
-    "build:watch": "npm run build:js -- --watch",
-    "prepublish": "npm run build",
+    "build:watch": "yarn build:js -- --watch",
+    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "test:watch": "npm run test -- --watchAll"
+    "test:watch": "yarn test -- --watchAll"
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
