@@ -4,8 +4,8 @@ import React, { HTMLAttributes } from 'react'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css/index'
-import * as vars from '../vars/index'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
 const style = {
   icon: ({ color, size }) =>
