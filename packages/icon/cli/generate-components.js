@@ -11,12 +11,13 @@ import React from 'react'
 import Icon, { IconProps } from ${
   core ? "'../'" : "'@pluralsight/ps-design-system-icon'"
 }
+import * as vars from '../../vars'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 
 
 interface ${componentName}Statics {
-  sizes: typeof Icon.sizes
-  colors: typeof Icon.colors
+  sizes: typeof vars.sizes
+  colors: typeof vars.colors
 }
 
 interface ${componentName}Component
@@ -36,8 +37,8 @@ const ${componentName} = React.forwardRef<HTMLDivElement, IconProps>(
 ) as ${componentName}Component
 
 ${componentName}.displayName = '${componentName}'
-${componentName}.colors = Icon.colors
-${componentName}.sizes = Icon.sizes
+${componentName}.colors = vars.colors
+${componentName}.sizes = vars.sizes
 
 export { ${componentName} }
 `
