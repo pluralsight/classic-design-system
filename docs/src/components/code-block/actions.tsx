@@ -8,6 +8,37 @@ import pkg from '../../../package.json'
 import usePrevious from '../../hooks/use-previous'
 import styles from './styles.module.css'
 
+const CODESANDBOX_CSS_FILE = `
+html,
+body {
+  background: var(--psColorsBackgroundDark2);
+}
+`
+const CODESANDBOX_INDEX_FILE = `
+import "@pluralsight/ps-design-system-core";
+import "@pluralsight/ps-design-system-normalize";
+import "./styles.css"
+
+import Theme from '@pluralsight/ps-design-system-theme'
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+import Example from './example';
+
+function App(){
+  return (
+    <Theme>
+      <Example />
+    </Theme>
+  )
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
+`
+
 export const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
   const { className: cn, ...rest } = props
   const className = cx(styles.actions, cn)
@@ -45,10 +76,19 @@ export const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
       example={props.code}
       examplePath="does/not/do/anything/but/is/required.tsx"
       dependencies={{
-        '@babel/runtime': 'latest'
+        '@pluralsight/ps-design-system-core': 'latest',
+        '@pluralsight/ps-design-system-featureflags': 'latest',
+        '@pluralsight/ps-design-system-normalize': 'latest',
+        '@pluralsight/ps-design-system-theme': 'latest',
+        '@babel/runtime': 'latest',
+        glamor: 'latest'
       }}
       gitInfo={gitInfo}
       pkgJSON={pkg}
+      providedFiles={{
+        'index.tsx': { content: CODESANDBOX_INDEX_FILE },
+        'styles.css': { content: CODESANDBOX_CSS_FILE }
+      }}
       template="create-react-app-typescript"
     >
       {(props: { error: string; isDeploying: boolean; isLoading: boolean }) => {
