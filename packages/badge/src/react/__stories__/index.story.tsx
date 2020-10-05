@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import Badge from '../index.js'
+import Badge from '..'
 
 const BadgeStory = ({ appearance }) => (
   <div style={{ display: 'grid', gridGap: 10 }}>
