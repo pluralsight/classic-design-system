@@ -47,14 +47,10 @@ lint:
     - yarn danger:ci
     - yarn lint:ci
 
-tsc:
-  stage: tsc
-  script:
-    - tsc -v
-
 test:
   stage: test
   script:
+    - tsc -v
     - yarn
     - yarn build
     - yarn test:ci
