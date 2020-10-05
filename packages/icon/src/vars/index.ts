@@ -2,7 +2,11 @@ import { keyMirror } from '@pluralsight/ps-design-system-util'
 
 export const sizes = keyMirror('small', 'medium', 'large')
 
-export const widths = keyMirror('16px', '24px', '48px')
+export const widths = {
+  small: '16px',
+  medium: '24px',
+  large: '48px'
+}
 
 export const colors = keyMirror(
   'textIconHighOnDark',
