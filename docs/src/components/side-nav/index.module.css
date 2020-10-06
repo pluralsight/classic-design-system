@@ -1,4 +1,5 @@
-.logo, .githubButton {
+.logo,
+.githubButton {
   margin: 0 var(--psLayoutSpacingLarge);
 }
 
@@ -18,5 +19,3 @@
     overflow: auto;
   }
 }
-
-

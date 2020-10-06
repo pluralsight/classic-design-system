@@ -11683,13 +11683,13 @@ gatsby-plugin-page-creator@^2.3.30:
     graphql "^14.7.0"
     lodash "^4.17.20"
 
-gatsby-plugin-postcss@^2.3.11:
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-2.3.13.tgz#f9a7173184747596a766161098d39899c06f3fa2"
-  integrity sha512-CX2QnF9RCT1vERFN//wexBYtvK3VAB5ADxW/j00CFEu8xZ+4fKKqGFKinSVSrVCwdB4M/CtC4N+0NI9XoLJmSw==
+gatsby-plugin-postcss@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-3.0.1.tgz#91344b881d14405ee35958f99bc98f4997e1ef0c"
+  integrity sha512-KYItS+VVxq405+RJKrBK71Mx73Z4BD+5uOfsJWdaqiO8L98zzf2O60sOLAfj2c7jBvVBJwUOLk6XzjrKatXw2g==
   dependencies:
     "@babel/runtime" "^7.11.2"
-    postcss-loader "^3.0.0"
+    postcss-loader "^4.0.2"
 
 gatsby-plugin-react-helmet@^3.3.10:
   version "3.3.12"
@@ -15844,6 +15844,11 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
+klona@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
+  integrity sha512-ZRbnvdg/NxqzC7L9Uyqzf4psi1OM4Cuc+sJAkQPjO6XkQIJTNbfK2Rsmbw8fx1p2mkZdp2FZYo2+LwXYY/uwIA==
+
 ky-universal@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/ky-universal/-/ky-universal-0.3.0.tgz#3fcbb0dd03da39b5f05100d9362a630d5e1d402e"
@@ -19698,6 +19703,17 @@ postcss-loader@^3.0.0:
     postcss "^7.0.0"
     postcss-load-config "^2.0.0"
     schema-utils "^1.0.0"
+
+postcss-loader@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-4.0.3.tgz#337f51bbdfb02269fb42f7db9fc7f0a93c1b2e3f"
+  integrity sha512-jHboC/AOnJLPu8/974hODCJ/rNAa2YhhJOclUeuRlAmFpKmEcBY6az8y1ejHyYc2LThzPl8qPRekh2Yz3CiRKA==
+  dependencies:
+    cosmiconfig "^7.0.0"
+    klona "^2.0.4"
+    loader-utils "^2.0.0"
+    schema-utils "^2.7.1"
+    semver "^7.3.2"
 
 postcss-logical@^3.0.0:
   version "3.0.0"

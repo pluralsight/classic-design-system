@@ -19,14 +19,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-glamor',
-      options: {}
-    },
-    {
-      resolve: 'gatsby-plugin-styled-jsx',
-      options: {}
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
@@ -59,6 +51,14 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-postcss',
+      options: {}
+    },
+    {
+      resolve: 'gatsby-plugin-glamor',
+      options: {}
+    },
+    {
+      resolve: 'gatsby-plugin-styled-jsx',
       options: {}
     },
     {
