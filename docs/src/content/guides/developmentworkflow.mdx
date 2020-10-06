@@ -16,7 +16,7 @@ import Badge from '@pluralsight/ps-design-system-badge'
 
 Use of the Core or Components requires the existence of the Design System normalize stylesheet on the page. Install with:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install @pluralsight/ps-design-system-normalize
 ```
 
@@ -33,7 +33,7 @@ To explore features by version you can visit the [ECMAScript Compatibility Table
 
 First install the dependency:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install @pluralsight/ps-design-system-core
 ```
 
@@ -45,7 +45,7 @@ If you write your CSS in JavaScript, no additional configuration is required. Ot
 
 Install any required plugins you don't have yet for PostCSS:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install postcss-preset-env postcss-import
 ```
 
@@ -69,13 +69,13 @@ For usage details, see the Core Usage docs.
 
 [glamor](https://github.com/threepointone/glamor) needs to be installed exactly once per application that uses these components:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install glamor
 ```
 
 All components support theming and have a peer dependency on the Theme package. Install with:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install @pluralsight/ps-design-system-theme
 ```
 
@@ -83,13 +83,13 @@ npm install @pluralsight/ps-design-system-theme
 as another peer dependency. If you see an expected warning in npm installs, add this
 package:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install @pluralsight/ps-design-system-featureflags
 ```
 
 Each component is installed separately. The JavaScript is prebuilt Node modules. Assets are inlined. Find and use what you need. For example:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install @pluralsight/ps-design-system-button
 ```
 
@@ -103,7 +103,7 @@ For full, working project examples, see [Github](https://github.com/pluralsight/
 
 To setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies for PostCSS:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install postcss-import postcss-preset-env
 ```
 
@@ -120,7 +120,7 @@ module.exports = {
 
 If you use Webpack for loading CSS, you'll also need to install your loaders:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install style-loader css-loader postcss-loader cssnano
 ```
 
@@ -146,13 +146,13 @@ module: {
 
 Sass variables are available, generated from the source variables. To use Sass, installed the required build tools, such as:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install node-sass
 ```
 
 If you use Webpack for loading CSS, you'll also need to install your loaders:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install style-loader css-loader sass-loader
 ```
 
@@ -180,7 +180,7 @@ To avoid flashes of unstyled content when doing SSR with `next.js` the following
 
 Add `glamor/server` to the `\_document.js`:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install glamor
 ```
 
@@ -220,7 +220,7 @@ export default MyDocument
 
 In `next.config.js` directly adjust postCSS configuration like so:
 
-```shell-session noRender startExpanded
+```bash startExpanded
 npm install @pluralsight/ps-design-system-core
 ```
 
