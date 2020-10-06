@@ -73,9 +73,7 @@ export const TagExample = () => {
             margin: `0 ${layout.spacingXSmall} ${layout.spacingXSmall} 0`
           }}
         >
-          <Tag icon={<CloseIcon why he onClick={handleClick(tag)} />}>
-            {tag}
-          </Tag>
+          <Tag icon={<CloseIcon onClick={handleClick(tag)} />}>{tag}</Tag>
         </div>
       ))}
     </div>

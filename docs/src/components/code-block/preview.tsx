@@ -14,8 +14,7 @@ const SUPPORTED_LANGUAGES: Language[] = [
   'javascript',
   'jsx',
   'tsx',
-  'typescript',
-  'shell-session'
+  'typescript'
 ]
 
 interface PreviewData {

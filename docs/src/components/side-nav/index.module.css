@@ -1,21 +1,21 @@
-.logo,
+.sideNav {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+.header {
+  margin: var(--psLayoutSpacingLarge);
+}
+.logo {
+  margin-bottom: var(--psLayoutSpacingLarge);
+}
+.scrollable {
+  margin-bottom: var(--psLayoutSpacingLarge);
+  width: calc(
+    100% - var(--psLayoutSpacingLarge) - var(--psLayoutSpacingXXSmall)
+  );
+  min-height: 0;
+}
 .githubButton {
   margin: 0 var(--psLayoutSpacingLarge);
-}
-
-.sideNav {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  & > .logo {
-    margin-bottom: var(--psLayoutSpacingLarge);
-  }
-
-  & > nav {
-    flex: 1 1 auto;
-    height: 0;
-    margin-bottom: var(--psLayoutSpacingLarge);
-    overflow: auto;
-  }
 }
