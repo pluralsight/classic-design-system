@@ -210,7 +210,7 @@ const DatePicker = React.forwardRef((props, ref) => {
             value={date.dd}
             name="dd"
             disabled={props.disabled}
-            style={{ width: '28px' }}
+            style={{ width: '24px' }}
           />
 
           <SubFieldDivider appearance={props.appearance} />
@@ -223,7 +223,7 @@ const DatePicker = React.forwardRef((props, ref) => {
             value={date.yyyy}
             name="yyyy"
             disabled={props.disabled}
-            style={{ width: '50px' }}
+            style={{ width: '48px' }}
           />
 
           <input

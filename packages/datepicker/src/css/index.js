@@ -68,8 +68,8 @@ export default {
     alignItems: 'center',
     width: '100%',
     height: '40px',
-    minWidth: `calc(192px + ${iconWidths.medium} + ${layout.spacingXSmall})`,
-    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`,
+    minWidth: `calc(144px + ${iconWidths.medium} + ${layout.spacingXSmall})`,
+    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium}) 0 ${layout.spacingMedium}`,
     background: colorsBackgroundLight[3]
   },
   [`.psds-date-picker__field-container.psds-theme--${themeNames.light}`]: {
@@ -86,7 +86,7 @@ export default {
     position: 'absolute',
     top: '0',
     left: 'auto',
-    right: layout.spacingXSmall,
+    right: '0',
     display: 'flex',
     alignItems: 'center',
     height: '100%',
