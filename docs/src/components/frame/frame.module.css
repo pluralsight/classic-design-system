@@ -33,10 +33,16 @@
 
 .dark {
   background: var(--psColorsBackgroundDark1);
+
+  --appColorsTextIconHigh: var(--psColorsTextIconHighOnDark);
+  --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
 
 .light {
   background: var(--psColorsWhite);
+
+  --appColorsTextIconHigh: var(--psColorsTextIconHighOnLight);
+  --appColorsTextIconLow: var(--psColorsTextIconLowOnLight);
 }
 
 .main {
@@ -46,3 +52,4 @@
   max-width: 800px;
   padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingXLarge);
 }
+
