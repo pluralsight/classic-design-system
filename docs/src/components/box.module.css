@@ -2,6 +2,6 @@
   padding: var(--psLayoutSpacingLarge);
   border-radius: 12px;
   overflow: hidden;
-  background: var(--appColorsBackground2);
+  background: var(--appColorsBackgroundMed);
   color: var(--appColorsTextIconHigh);
 }

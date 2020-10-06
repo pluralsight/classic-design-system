@@ -34,7 +34,11 @@
 .dark {
   background: var(--psColorsBackgroundDark1);
 
-  --appColorsBackground2: var(--psColorsBackgroundDark2);
+  --appColorsBackgroundLo: var(--psColorsBackgroundDark1);
+  --appColorsBackgroundMed: var(--psColorsBackgroundDark2);
+  --appColorsBackgroundHi: var(--psColorsBackgroundDark3);
+  --appColorsBorderLow: var(--psColorsBorderLowOnDark);
+  --appColorsBorderHigh: var(--psColorsBorderHighOnDark);
   --appColorsTextIconHigh: var(--psColorsTextIconHighOnDark);
   --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
@@ -42,7 +46,11 @@
 .light {
   background: var(--psColorsWhite);
 
-  --appColorsBackground2: var(--psColorsBackgroundLight2);
+  --appColorsBackgroundLo: var(--psColorsBackgroundLight3);
+  --appColorsBackgroundMed: var(--psColorsBackgroundLight2);
+  --appColorsBackgroundHi: var(--psColorsBackgroundLight1);
+  --appColorsBorderLow: var(--psColorsBorderLowOnLight);
+  --appColorsBorderHigh: var(--psColorsBorderHighOnLight);
   --appColorsTextIconHigh: var(--psColorsTextIconHighOnLight);
   --appColorsTextIconLow: var(--psColorsTextIconLowOnLight);
 }
