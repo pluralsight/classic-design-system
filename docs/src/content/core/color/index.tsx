@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import { CheckCircleIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
-import * as styles from './color-categories.module.css'
+import * as styles from './index.module.css'
 
 interface Color {
   name: string
