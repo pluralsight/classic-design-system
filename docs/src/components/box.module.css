@@ -2,14 +2,6 @@
   padding: var(--psLayoutSpacingLarge);
   border-radius: 12px;
   overflow: hidden;
-
-  &.light {
-    background: var(--psColorsBackgroundLight2);
-    color: var(--psColorsTextIconHighOnLight);
-  }
-
-  &.dark {
-    background: var(--psColorsBackgroundDark2);
-    color: var(--psColorsTextIconHighOnDark);
-  }
+  background: var(--appColorsBackground2);
+  color: var(--appColorsTextIconHigh);
 }

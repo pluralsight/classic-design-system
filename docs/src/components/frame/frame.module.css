@@ -34,6 +34,7 @@
 .dark {
   background: var(--psColorsBackgroundDark1);
 
+  --appColorsBackground2: var(--psColorsBackgroundDark2);
   --appColorsTextIconHigh: var(--psColorsTextIconHighOnDark);
   --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
@@ -41,6 +42,7 @@
 .light {
   background: var(--psColorsWhite);
 
+  --appColorsBackground2: var(--psColorsBackgroundLight2);
   --appColorsTextIconHigh: var(--psColorsTextIconHighOnLight);
   --appColorsTextIconLow: var(--psColorsTextIconLowOnLight);
 }
