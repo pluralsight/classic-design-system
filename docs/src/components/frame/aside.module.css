@@ -13,6 +13,7 @@
   transform: translate(0, 0);
   padding: var(--psLayoutSpacingLarge) 0;
   z-index: 1000;
+  background: var(--appColorsBackgroundMed);
 
   &:after {
     box-shadow: 50px 0 100px rgba(0, 0, 0, 0.8);
@@ -25,14 +26,6 @@
     top: 0;
     transition: box-shadow var(--psMotionSpeedFast) ease-in-out;
     width: 100%;
-  }
-
-  &.dark {
-    background: var(--psColorsBackgroundDark2);
-  }
-
-  &.light {
-    background: var(--psColorsBackgroundLight2);
   }
 
   @media (--breakpoint-small) {
