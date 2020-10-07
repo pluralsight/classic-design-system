@@ -1,11 +1,11 @@
-import { createContext } from 'react'
+import { MouseEvent, createContext } from 'react'
 
-export const ActionMenuContext = createContext<{
-  onClickContext: (e: Event, v: string | number) => void
-  onClose: (e: Event, v: string | number) => void
-  originContext: string
-}>({
-  onClickContext: (e, v) => {},
-  onClose: (e, v) => {},
-  originContext: ''
-})
+interface ContextValue {
+  onClickContext?: (evt: MouseEvent, value: string | number) => void
+  onClose?: (evt: MouseEvent, value: string | number) => void
+  originContext?: string
+}
+
+const initialValue = {}
+
+export const ActionMenuContext = createContext<ContextValue>(initialValue)
