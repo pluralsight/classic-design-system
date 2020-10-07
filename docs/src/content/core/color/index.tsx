@@ -490,7 +490,7 @@ interface GridProps {
 const gridPropDefaults = {
   cols: 3
 }
-export const Grid: React.FC<GridProps> = props => {
+const Grid: React.FC<GridProps> = props => {
   return (
     <div
       className={styles.grid}
