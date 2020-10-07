@@ -740,7 +740,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-ctre2o=""
           >
             <div
-              data-css-e41y4a=""
+              data-css-1gfowhv=""
             >
               <input
                 data-css-1ynlp2p=""
@@ -772,7 +772,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 placeholder="dd"
                 style={
                   Object {
-                    "width": "28px",
+                    "width": "24px",
                   }
                 }
                 value=""
@@ -792,7 +792,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 placeholder="yyyy"
                 style={
                   Object {
-                    "width": "50px",
+                    "width": "48px",
                   }
                 }
                 value=""
@@ -804,7 +804,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 tabIndex="-1"
               />
               <button
-                data-css-m80zy8=""
+                data-css-3txxwd=""
                 disabled={false}
                 onClick={[Function]}
               >
