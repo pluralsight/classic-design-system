@@ -200,7 +200,7 @@ const Tier2Header = forwardRef<any, Tier2HeaderProps>((props, ref) => {
 
   // NOTE: some props are given during clone that are not used as should not be
   //       passed to the underlying dom node
-  const rest = omit(props, ['active', 'collapsed', 'collapsible'])
+  const rest = omit(props as any, ['active', 'collapsed', 'collapsible'])
   const Tag = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
 
   return (
