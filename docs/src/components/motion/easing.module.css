@@ -151,7 +151,8 @@ b {
   border-radius: 50%;
   background: var(--psColorsPink6);
 }
-@media screen and (min-width: 769px) {
+
+@media (--breakpoint-large) {
   .function {
     flex-direction: row;
   }

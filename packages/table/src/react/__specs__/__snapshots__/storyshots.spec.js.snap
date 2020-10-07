@@ -867,7 +867,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
   >
     <div
       aria-sort="ascending"
-      data-css-1whtcij=""
+      data-css-1apk5wo=""
       role="columnheader"
       style={Object {}}
     >
@@ -1094,7 +1094,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
   >
     <div
       aria-sort="descending"
-      data-css-1whtcij=""
+      data-css-1apk5wo=""
       role="columnheader"
       style={Object {}}
     >

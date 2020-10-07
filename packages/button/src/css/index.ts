@@ -14,7 +14,7 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 export const colorsSecondaryAction = {
   backgroundDefaultOnDark: transparentize(0.75, colorsBackgroundUtility.base),
