@@ -1,17 +1,9 @@
-.dark {
-  --fg: var(--psColorsTextIconHighOnDark);
-  --fgLight: var(--psColorsTextIconLowOnDark);
-}
-.light {
-  --fg: var(--psColorsTextIconHighOnLight);
-  --fgLight: var(--psColorsTextIconLowOnLight);
-}
 .weight {
   display: grid;
   grid-template-columns: 90px 1fr;
   grid-gap: var(--psLayoutSpacingMedium);
   grid-template-areas: 'letters vars' 'weight weight';
-  color: var(--fg);
+  color: var(--appColorsTextIconHigh);
   margin-bottom: var(--psLayoutSpacingLarge);
 }
 .weightLetters {
@@ -32,6 +24,6 @@
 }
 .weightLabel {
   grid-area: weight;
-  color: var(--fgLight);
+  color: var(--appColorsTextIconLow);
   font-size: var(--psTypeFontSizeXSmall);
 }

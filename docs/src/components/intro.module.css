@@ -2,11 +2,5 @@
   margin-bottom: var(--psLayoutSpacingLarge);
   font-size: var(--psTypeFontSizeMedium);
   line-height: var(--psTypeLineHeightExtra);
-
-  &.light {
-    color: var(--psColorsTextIconHighOnLight);
-  }
-  &.dark {
-    color: var(--psColorsTextIconHighOnDark);
-  }
+  color: var(--appColorsTextIconHigh);
 }
