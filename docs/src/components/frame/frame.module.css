@@ -39,6 +39,7 @@
   --appColorsBackgroundHi: var(--psColorsBackgroundDark3);
   --appColorsBorderLow: var(--psColorsBorderLowOnDark);
   --appColorsBorderHigh: var(--psColorsBorderHighOnDark);
+  --appColorsPrimaryActionText: var(--psColorsPrimaryActionTextDarkTheme);
   --appColorsTextIconHigh: var(--psColorsTextIconHighOnDark);
   --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
@@ -51,6 +52,7 @@
   --appColorsBackgroundHi: var(--psColorsBackgroundLight1);
   --appColorsBorderLow: var(--psColorsBorderLowOnLight);
   --appColorsBorderHigh: var(--psColorsBorderHighOnLight);
+  --appColorsPrimaryActionText: var(--psColorsPrimaryActionTextLightTheme);
   --appColorsTextIconHigh: var(--psColorsTextIconHighOnLight);
   --appColorsTextIconLow: var(--psColorsTextIconLowOnLight);
 }
