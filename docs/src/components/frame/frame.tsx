@@ -20,10 +20,11 @@ const THEME_COOKIE_NAME = 'psds-docs-theme'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   aside: ReactNode
+  hasTableOfContents: boolean
 }
 
 export const Frame: React.FC<Props> = props => {
-  const { aside, children, ...rest } = props
+  const { aside, hasTableOfContents, children, ...rest } = props
 
   const [cookies, setCookie] = useCookies([THEME_COOKIE_NAME])
   const [menuOpen, setMenuOpen] = useState(false)
@@ -50,14 +51,11 @@ export const Frame: React.FC<Props> = props => {
     if (skipTargetRef.current) skipTargetRef.current.focus()
   }, [])
 
-  const hasTOC =
-    canUseDOM() && /components|core|guides/.test(window.location.pathname)
-
   const className = cx({
     [styles.frame]: true,
     [styles.dark]: themeName === Theme.names.dark,
     [styles.light]: themeName === Theme.names.light,
-    [styles.fullWidth]: !hasTOC
+    [styles.fullWidth]: !hasTableOfContents
   })
 
   return (
