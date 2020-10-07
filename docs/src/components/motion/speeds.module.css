@@ -1,6 +1,6 @@
 .speeds {
   border-radius: 12px;
-  background: var(--psColorsBackgroundLight2);
+  background: var(--appColorsBackgroundMed);
   padding: var(--psLayoutSpacingMedium);
 }
 .speed {
@@ -8,7 +8,7 @@
   grid-template-columns: 64px 1fr;
   grid-gap: var(--psLayoutSpacingMedium);
   grid-template-areas: 'icon vars' 'labels labels';
-  color: var(--psColorsBackgroundDark2);
+  color: var(--appColorsTextIconHigh);
   margin-bottom: var(--psLayoutSpacingLarge);
 }
 .icon {
@@ -19,7 +19,7 @@
 }
 .labels {
   grid-area: labels;
-  color: var(--psColorsTextIconLowOnLight);
+  color: var(--appColorsTextIconLow);
   font-size: var(--psTypeFontSizeXSmall);
 }
 .title {

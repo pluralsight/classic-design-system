@@ -1,9 +1,3 @@
-.dark {
-  --fgLight: var(--psColorsTextIconLowOnDark);
-}
-.light {
-  --fgLight: var(--psColorsTextIconLowOnLight);
-}
 .box {
   font-size: var(--psTypeFontSizeLarge);
   line-height: var(--psTypeLineHeightExtra);
@@ -24,6 +18,6 @@
   letter-spacing: var(--psTypeLetterSpacingGigantic);
 }
 .fontLabel {
-  color: var(--fgLight);
+  color: var(--appColorsTextIconLow);
   font-size: var(--psTypeFontSizeXSmall);
 }
