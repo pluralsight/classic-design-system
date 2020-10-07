@@ -1,28 +1,20 @@
-.dark {
-  --fg: var(--psColorsTextIconHighOnDark);
-  --fgLight: var(--psColorsTextIconLowOnDark);
-}
-.light {
-  --fg: var(--psColorsTextIconHighOnLight);
-  --fgLight: var(--psColorsTextIconLowOnLight);
-}
 .sizes {
   white-space: nowrap;
   margin-bottom: var(--psLayoutSpacingMedium);
   max-width: 900px;
 }
 .size {
-  color: var(--fg);
+  color: var(--appColorsTextIconHigh);
 }
 .size + .size {
   margin-top: var(--psLayoutSpacingLarge);
 }
 .sizeSentence {
-  color: var(--fg);
+  color: var(--appColorsTextIconHigh);
   margin-bottom: var(--psLayoutSpacingXSmall);
 }
 .sizeLabel {
-  color: var(--fgLight);
+  color: var(--appColorsTextIconLow);
   font-size: var(--psTypeFontSizeXSmall);
 }
 .sizeVar {
