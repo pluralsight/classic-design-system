@@ -61,6 +61,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [WARNING, { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-var-requires': IGNORE,
     '@typescript-eslint/require-await': IGNORE,
+    '@typescript-eslint/prefer-regexp-exec': IGNORE,
     '@typescript-eslint/restrict-plus-operands': WARNING,
     '@typescript-eslint/restrict-template-expressions': WARNING,
     '@typescript-eslint/unbound-method': WARNING,

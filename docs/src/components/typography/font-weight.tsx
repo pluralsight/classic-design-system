@@ -1,5 +1,3 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import cx from 'classnames'
 import React from 'react'
 
 import { Box } from '../box'
@@ -39,14 +37,8 @@ const weights = [
 ]
 
 export const FontWeight = () => {
-  const themeName = useTheme()
   return (
-    <Box
-      className={cx({
-        [styles.dark]: themeName === Theme.names.dark,
-        [styles.light]: themeName === Theme.names.light
-      })}
-    >
+    <Box>
       {weights.map((w, i) => (
         <div className={styles.weight} key={i}>
           <div
