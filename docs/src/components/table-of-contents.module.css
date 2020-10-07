@@ -1,5 +1,3 @@
-@custom-media --breakpoint-large (width >= 1280px);
-
 .toc {
   width: 100%;
   max-width: 360px;
@@ -13,6 +11,7 @@
     right: var(--psLayoutSpacingMedium);
   }
 }
+
 .title {
   margin: var(--psLayoutSpacingLarge) 0 0 var(--psLayoutSpacingLarge);
 }
