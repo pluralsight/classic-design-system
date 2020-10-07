@@ -1,5 +1,4 @@
 import { Heading } from '@pluralsight/ps-design-system-text'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import React, { Children, HTMLAttributes } from 'react'
 
@@ -28,16 +27,13 @@ interface QuoteProps extends HTMLAttributes<HTMLQuoteElement> {
   children: React.ReactNode
 }
 export const Quote: React.FC<QuoteProps> = props => {
-  const theme = useTheme()
   const innerText = Children.map(props.children, child => {
     if (typeof child === 'string') return child
   }).join(' ')
 
   const className = cx({
     [styles.quote]: true,
-    [styles.small]: innerText.length > 50,
-    [styles.dark]: theme === Theme.names.dark,
-    [styles.light]: theme === Theme.names.light
+    [styles.small]: innerText.length > 50
   })
 
   return <blockquote className={className} {...props} />
