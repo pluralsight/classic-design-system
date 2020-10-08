@@ -25,38 +25,35 @@ export const SideNav: React.FC<Props> = () => {
         <nav>
           <VerticalTabs>
             <VerticalTabs.Group>
-              {items.map(section => {
-                const sectionHeader = (
-                  <VerticalTabs.Tier1.Header>
-                    {section.header.title}
-                  </VerticalTabs.Tier1.Header>
-                )
-
-                return (
-                  <VerticalTabs.Tier1
-                    header={sectionHeader}
-                    collapsible
-                    key={section.header.title}
-                  >
-                    {section.items.map(item => (
-                      <VerticalTabs.Tier2
-                        header={
-                          <VerticalTabs.Tier2.Header
-                            href={item.href}
-                            onClick={(evt: Event) => {
-                              evt.preventDefault()
-                              navigate(item.href)
-                            }}
-                          >
-                            {item.title}
-                          </VerticalTabs.Tier2.Header>
-                        }
-                        key={item.href}
-                      />
-                    ))}
-                  </VerticalTabs.Tier1>
-                )
-              })}
+              {items.map(section => (
+                <VerticalTabs.Tier1
+                  header={
+                    <VerticalTabs.Tier1.Header>
+                      {section.header.title}
+                    </VerticalTabs.Tier1.Header>
+                  }
+                  collapsible
+                  collapsed
+                  key={section.header.title}
+                >
+                  {section.items.map(item => (
+                    <VerticalTabs.Tier2
+                      header={
+                        <VerticalTabs.Tier2.Header
+                          href={item.href}
+                          onClick={(evt: Event) => {
+                            evt.preventDefault()
+                            navigate(item.href)
+                          }}
+                        >
+                          {item.title}
+                        </VerticalTabs.Tier2.Header>
+                      }
+                      key={item.href}
+                    />
+                  ))}
+                </VerticalTabs.Tier1>
+              ))}
             </VerticalTabs.Group>
           </VerticalTabs>
         </nav>
