@@ -74,7 +74,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
     const nextStyle = positionFn(targetNode).styleFor(showRef.current)
     setStyle(nextStyle)
     setShownOnce(true)
-  }, [positionFn, target])
+  }, [positionFn, target, showRef.current])
 
   useOnWindowResize(evt => updateStyle())
   useOnWindowScroll(evt => {
