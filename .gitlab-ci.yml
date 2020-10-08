@@ -50,6 +50,7 @@ lint:
 test:
   stage: test
   script:
+    - find packages/icon/src/react/icons -name "*.dist.tsx" -type f  -delete
     - yarn build
     - yarn test:ci
 

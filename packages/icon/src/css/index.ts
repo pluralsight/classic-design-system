@@ -6,7 +6,7 @@ import {
   colorsYellow
 } from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars/'
 
 export default {
   [`.psds-icon`]: {
