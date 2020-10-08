@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-filter-react-props",
-  "version": "1.1.19",
+  "version": "1.1.20",
   "description": "Prop filter utility for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -15,7 +15,6 @@
     "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:watch": "yarn build:js -- --watch",
-    "prepublish": "yarn build",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },

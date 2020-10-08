@@ -35,8 +35,8 @@
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "postinstall": "link-parent-bin",
-    "publish:all": "lerna publish --conventional-commits --message \"build: publish\"",
-    "publish:all:beta": "yarn publish -- --npm-tag=beta",
+    "publish:all": "yarn build && lerna publish --ignore-scripts --ignore-prepublish",
+    "publish:all:beta": "yarn publish:all --npm-tag=beta",
     "start": "yarn docs",
     "test": "jest",
     "test:ci": "jest --ci"
@@ -55,16 +55,16 @@
       "format-package -w"
     ]
   },
+  "resolutions": {
+    "node-fetch": "^2.6.1",
+    "prismjs": "^1.21.0"
+  },
   "dependencies": {
     "glamor": "^2.20.40",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-transition-group": "^4.4.1"
-  },
-  "resolutions": {
-    "node-fetch": "^2.6.1",
-    "prismjs": "^1.21.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
