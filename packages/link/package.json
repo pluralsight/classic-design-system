@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "10.1.1",
+  "version": "10.1.2",
   "description": "Design System component for link/anchor ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,7 +22,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.4",
     "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
-    "@pluralsight/ps-design-system-util": "^5.3.1"
+    "@pluralsight/ps-design-system-util": "^5.3.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.17",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.4",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.5",
     "@pluralsight/ps-design-system-theme": "^4.0.15"
   }
 }

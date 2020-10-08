@@ -1,7 +1,7 @@
-import { fireEvent, render } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import React from 'react'
 
-import ActionMenu from '../index'
+import ActionMenu from '..'
 
 describe('ActionMenu', () => {
   it('forwards ref', () => {
@@ -19,7 +19,7 @@ describe('ActionMenu', () => {
 
   it('fires onClick on option click', () => {
     return new Promise(resolve => {
-      function handleClick(evt, value) {
+      const handleClick = (_evt: React.MouseEvent, value: React.ReactText) => {
         expect(value).toEqual('two')
         resolve()
       }
@@ -48,7 +48,7 @@ describe('ActionMenu', () => {
 
   it('fires onClick on option keyDown', () => {
     return new Promise(resolve => {
-      function handleClick(evt, value) {
+      const handleClick = (_evt: unknown, value: unknown) => {
         expect(value).toEqual('two')
         resolve()
       }

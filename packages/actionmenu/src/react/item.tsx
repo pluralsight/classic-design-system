@@ -1,21 +1,25 @@
-import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { StyleAttribute, compose, css } from 'glamor'
 import React, {
+  HTMLAttributes,
+  KeyboardEventHandler,
+  MouseEventHandler,
   useState,
   useRef,
   forwardRef,
   useImperativeHandle,
-  useContext,
-  HTMLAttributes
+  useContext
 } from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import stylesheet from '../css/index'
-import { tagName } from '../vars/index'
+import stylesheet from '../css'
+import { tagName } from '../vars'
+
 import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
 
-const styles = {
+type StyleFn = (obj?: unknown) => StyleAttribute
+
+const styles: { [name: string]: StyleFn } = {
   itemContainer: ({ disabled }: { disabled: boolean }) =>
     compose(
       css(stylesheet['.psds-actionmenu__item-container']),
@@ -43,99 +47,107 @@ const styles = {
   textOnly: () => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-interface Props extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'> {
-  disabled?: boolean
-  tagName?: string
+interface ItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'> {
   className?: string
-  origin?: string
-  onClick?: (event: React.MouseEvent, value: string | number) => void
+  disabled?: boolean
+  href?: string
   nested?: React.ReactNode
+  onClick?: (event: React.MouseEvent, value: React.ReactText) => void
+  origin?: string
+  tagName?: string
   value?: string | number
 }
-
-export const Item = forwardRef<HTMLLIElement, Props>(
-  (
-    {
+export const Item = forwardRef<HTMLLIElement, ItemProps>(
+  (props, forwardedRef) => {
+    const {
+      children,
+      className,
       disabled,
       nested,
-      origin,
-      value,
-      className,
-      children,
       onClick,
-      tagName,
+      origin,
+      tagName: TagName = tagName.a,
+      value,
       ...rest
-    },
-    forwardedRef
-  ) => {
-    const { onClickContext, onClose, originContext } = useContext<{
-      onClickContext: (e: React.MouseEvent, v: React.ReactText) => void
-      onClose: (e: React.MouseEvent, v: React.ReactText) => void
-      originContext: string
-    }>(ActionMenuContext)
+    } = props
+
+    const { onClickContext, onClose, originContext } = useContext(
+      ActionMenuContext
+    )
+
     const ref = useRef()
-    const subMenuRef = useRef()
     useImperativeHandle(forwardedRef, () => ref.current)
-    const TagName = tagName
+
+    const subMenuRef = useRef()
+
     const [open, setOpen] = useState(false)
     const hasSubMenu = Boolean(nested)
-    const handleMouseOver = e => {
+
+    const handleMouseOver: MouseEventHandler<HTMLLIElement> = () => {
       hasSubMenu && setOpen(true)
     }
-    const handleMouseOut = e => {
+
+    const handleMouseOut: MouseEventHandler<HTMLLIElement> = () => {
       hasSubMenu && setOpen(false)
     }
-    const handleKeyDown = e => {
-      if (e.key === 'ArrowRight' && hasSubMenu) {
+
+    const handleKeyDown: KeyboardEventHandler<HTMLLIElement> = evt => {
+      if (evt.key === 'ArrowRight' && hasSubMenu) {
         setOpen(true)
-        e.stopPropagation()
+        evt.stopPropagation()
       }
-      if (e.key === 'Enter' || e.key === 'Space') {
-        e.target.firstElementChild.click()
+
+      if (evt.key === 'Enter' || evt.key === 'Space') {
+        const target = evt.target as HTMLUListElement
+        const firstEl = target.firstElementChild as HTMLLIElement
+        firstEl.click()
       }
-      e.preventDefault()
+
+      evt.preventDefault()
     }
-    const handleArrowLeft = e => {
-      if (e.key === 'ArrowLeft' && hasSubMenu) {
+    const handleArrowLeft: KeyboardEventHandler<HTMLUListElement> = evt => {
+      if (evt.key === 'ArrowLeft' && hasSubMenu) {
         setOpen(false)
-        e.stopPropagation()
+        evt.stopPropagation()
       }
     }
-    const handleClick = e => {
-      onClick && onClick(e, value)
-      onClickContext && onClickContext(e, value)
-      onClose && onClose(e, value) // : e.currentTarget.parentNode.focus()
+    const handleClick: MouseEventHandler<HTMLLIElement> = evt => {
+      onClick && onClick(evt, value)
+      onClickContext && onClickContext(evt, value)
+      onClose && onClose(evt, value) // : e.currentTarget.parentNode.focus()
     }
+
     return (
       <li
         {...styles.itemContainer({ disabled })}
-        role="none"
-        ref={ref}
         data-disabled={disabled}
-        tabIndex={!disabled ? -1 : undefined}
         onKeyDown={handleKeyDown}
-        onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
+        onMouseOver={handleMouseOver}
+        ref={ref}
+        role="none"
+        tabIndex={!disabled ? -1 : undefined}
       >
         <TagName
-          {...filterReactProps(rest, { tagName })}
+          {...filterReactProps(rest, { tagName: TagName })}
           {...styles.item({ hasSubMenu })}
           aria-haspopup={!!nested}
-          role="menuitem"
           disabled={disabled}
           onClick={!hasSubMenu ? handleClick : undefined}
+          role="menuitem"
         >
           <div className={className} {...styles.inner()}>
             {children}
             {hasSubMenu && <Arrow />}
           </div>
         </TagName>
+
         <ul
           {...styles.nested({ origin: origin || originContext })}
-          role="menu"
           aria-expanded={open}
-          ref={subMenuRef}
           onKeyDown={handleArrowLeft}
+          ref={subMenuRef}
+          role="menu"
         >
           {!disabled && nested}
         </ul>
@@ -145,19 +157,3 @@ export const Item = forwardRef<HTMLLIElement, Props>(
 )
 
 Item.displayName = 'ActionMenu.Item'
-Item.defaultProps = {
-  tagName: tagName.a
-}
-Item.propTypes = {
-  children: PropTypes.node,
-  disabled: PropTypes.bool,
-  tagName: PropTypes.string,
-  className: PropTypes.string,
-  origin: PropTypes.string,
-  onClick: PropTypes.func,
-  nested: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-}
