@@ -8,10 +8,10 @@ import React, {
 } from 'react'
 import { css } from 'glamor'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import { DropdownContext } from '../js/index.js'
+import { DropdownContext } from '../js'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   icon: css(stylesheet['.psds-dropdown--selected-icon']),
@@ -19,9 +19,9 @@ const styles = {
 }
 
 interface DropdownItemProps extends HTMLAttributes<HTMLLIElement> {
-  icon: React.ReactNode,
-  value: string | number,
-  menu: React.ReactNode
+  icon?: React.ReactNode
+  value?: React.ReactText
+  menu?: React.ReactNode
 }
 
 export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(

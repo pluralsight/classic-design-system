@@ -1,16 +1,18 @@
 import React, { forwardRef, HTMLAttributes } from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import { RefForwardingComponent, ValueOf } from '@pluralsight/ps-design-system-util'
-import { Item } from './item.js'
-import { useDropdown, DropdownContext } from '../js/index.js'
-import { Label } from './label.js'
-import { Layout } from './layout.js'
-import { Menu } from './menu.js'
-import { SubLabel } from './sub-label.js'
-import { Button } from './button.js'
-import { Selected } from './selected.js'
-import * as vars from '../vars/index.js'
-
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+import { Item } from './item'
+import { useDropdown, DropdownContext } from '../js'
+import { Label } from './label'
+import { Layout } from './layout'
+import { Menu } from './menu'
+import { SubLabel } from './sub-label'
+import { Button } from './button'
+import { Selected } from './selected'
+import * as vars from '../vars'
 
 interface DropdownStatics {
   context: typeof DropdownContext
@@ -26,44 +28,50 @@ interface DropdownStatics {
   Selected: typeof Selected
 }
 
-interface DropdownProps extends Omit<HTMLAttributes<HTMLDivElement>, 'onChange'> {
-  appearance?:  ValueOf<typeof vars.appearances>
+interface DropdownProps
+  extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
+  appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
-  className: string
-  error: boolean
-  label: React.ReactNode
-  menu: React.ReactNode
-  onChange: (e:React.MouseEvent, v: React.ReactText) => void
-  onClick: (e: React.MouseEvent) => void
-  placeholder: string
-  size: ValueOf<typeof vars.sizes>
-  subLabel: React.ReactNode
-  value: React.ReactText
+  className?: string
+  error?: boolean
+  label?: React.ReactNode
+  menu?: React.ReactNode
+  onChange?: (e: React.MouseEvent, v: React.ReactText) => void
+  onClick?: (e: React.MouseEvent) => void
+  placeholder?: string
+  size?: ValueOf<typeof vars.sizes>
+  subLabel?: React.ReactNode
+  value?: React.ReactText
 }
 interface DropdownComponent
-  extends RefForwardingComponent<DropdownProps, HTMLDivElement, DropdownStatics> {}
+  extends RefForwardingComponent<
+    DropdownProps,
+    HTMLButtonElement,
+    DropdownStatics
+  > {}
 
-
-const Dropdown = forwardRef<HTMLDivElement, DropdownProps>((props, forwardedRef) => {
-  const allProps = useDropdown(props, forwardedRef)
-  return (
-    <Layout
-      {...allProps.layout}
-      label={<Label {...allProps.label} />}
-      menu={
-        <DropdownContext.Provider {...allProps.value}>
-          <Menu {...allProps.menu} />
-        </DropdownContext.Provider>
-      }
-      subLabel={<SubLabel {...allProps.subLabel} />}
-      button={
-        <Button {...allProps.button}>
-          <Selected {...allProps.selected} />
-        </Button>
-      }
-    />
-  )
-}) as DropdownComponent
+const Dropdown = forwardRef<HTMLButtonElement, DropdownProps>(
+  ({ children, ...props }, forwardedRef) => {
+    const allProps = useDropdown(props, forwardedRef)
+    return (
+      <Layout
+        {...allProps.layout}
+        label={<Label {...allProps.label} />}
+        menu={
+          <DropdownContext.Provider {...allProps.value}>
+            <Menu {...allProps.menu} />
+          </DropdownContext.Provider>
+        }
+        subLabel={<SubLabel {...allProps.subLabel} />}
+        button={
+          <Button {...allProps.button}>
+            <Selected {...allProps.selected} />
+          </Button>
+        }
+      />
+    )
+  }
+) as DropdownComponent
 
 Dropdown.displayName = 'Dropdown'
 Dropdown.defaultProps = {

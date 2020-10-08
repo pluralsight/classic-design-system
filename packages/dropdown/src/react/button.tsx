@@ -1,13 +1,18 @@
-import React, { forwardRef, useLayoutEffect, useRef, HTMLAttributes } from 'react'
+import React, {
+  forwardRef,
+  useLayoutEffect,
+  useRef,
+  HTMLAttributes
+} from 'react'
 import { compose, css } from 'glamor'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { CaretDown } from './caret-down.js'
-import { ErrorIcon } from './error-icon.js'
-import * as vars from '../vars/index.js'
+import { CaretDown } from './caret-down'
+import { ErrorIcon } from './error-icon'
+import * as vars from '../vars'
 const styles = {
   field: ({ appearance, error, themeName, size }) => {
     const label = 'psds-dropdown__field'
@@ -42,7 +47,7 @@ interface DropdownButtonProps extends HTMLAttributes<HTMLButtonElement> {
   error?: boolean
   isOpen?: boolean
   onClick?: (Event) => void
-  setMenuPosition?: ({left, top}: {left: number, top: number}) => void
+  setMenuPosition?: ({ left, top }: { left: number; top: number }) => void
   size?: ValueOf<typeof vars.sizes>
 }
 

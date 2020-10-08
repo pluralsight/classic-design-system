@@ -6,30 +6,35 @@ import {
   useLayoutEffect,
   useMemo,
   useState,
+  MutableRefObject,
   HTMLAttributes
 } from 'react'
 import { canUseDOM } from 'exenv'
-import { useCombinedRefs, useMenuRef } from '@pluralsight/ps-design-system-util'
-import {  ValueOf } from '@pluralsight/ps-design-system-util'
-import * as vars from '../vars/index.js'
+import {
+  useCombinedRefs,
+  useMenuRef,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 
-export const DropdownContext = createContext()
+import * as vars from '../vars'
 
+export const DropdownContext = createContext('' as React.ReactText)
 
-interface UseDropdownProps extends Record<string, unknown> {
-  appearance?:  ValueOf<typeof vars.appearances>
+interface UseDropdownProps
+  extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
+  appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
-  className: string
-  error: boolean
-  label: React.ReactNode
-  menu: React.ReactNode
-  onChange: (e: React.MouseEvent, v: React.ReactText) => void
-  onClick: (e:React.MouseEvent) => void
-  placeholder: string
-  size: ValueOf<typeof vars.sizes>
-  style: Record<string, React.ReactText>
-  subLabel: React.ReactNode
-  value: number | string
+  className?: string
+  error?: boolean
+  label?: React.ReactNode
+  menu?: React.ReactNode
+  onChange?: (e: React.MouseEvent, v: React.ReactText) => void
+  onClick?: (e: React.MouseEvent) => void
+  placeholder?: string
+  size?: ValueOf<typeof vars.sizes>
+  style?: React.CSSProperties
+  subLabel?: React.ReactNode
+  value?: number | string
 }
 
 const sortDropdownProps = ({
@@ -87,27 +92,21 @@ export const useDropdown = (props: UseDropdownProps, forwardedRef) => {
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
 
-  const itemMatchingValue = useMemo(
-    () => {
-      return findMatchingActionMenuItem(hook.menu, hook.value)
-    },
-    [hook.menu, hook.value]
-  )
+  const itemMatchingValue = useMemo(() => {
+    return findMatchingActionMenuItem(hook.menu, hook.value)
+  }, [hook.menu, hook.value])
 
   const [selectedLabel, setSelectedLabel] = useState(
     itemMatchingValue ? itemMatchingValue.props.children : null
   )
   const [selectedValue, setSelectedValue] = useState(hook.value)
 
-  useEffect(
-    () => {
-      setSelectedLabel(
-        itemMatchingValue ? itemMatchingValue.props.children : null
-      )
-      setSelectedValue(hook.value)
-    },
-    [itemMatchingValue, hook.value]
-  )
+  useEffect(() => {
+    setSelectedLabel(
+      itemMatchingValue ? itemMatchingValue.props.children : null
+    )
+    setSelectedValue(hook.value)
+  }, [itemMatchingValue, hook.value])
 
   function handleToggleOpen(evt) {
     evt.preventDefault()
@@ -116,14 +115,14 @@ export const useDropdown = (props: UseDropdownProps, forwardedRef) => {
     if (typeof hook.onClick === 'function') hook.onClick(evt)
   }
 
-  function handleKeyDown(evt) {
+  function handleKeyDown(evt: React.KeyboardEvent) {
     if (evt.key === 'ArrowDown') {
       setOpen(true)
     }
   }
 
-  function handleMenuChange(evt, value) {
-    const innerText = evt.currentTarget.innerText
+  function handleMenuChange(evt: React.MouseEvent, value?: React.ReactText) {
+    const innerText = (evt.currentTarget as HTMLElement).innerText
     setSelectedValue(value)
     setSelectedLabel(value === innerText ? value : innerText)
     setOpen(false)
@@ -143,7 +142,7 @@ export const useDropdown = (props: UseDropdownProps, forwardedRef) => {
     const hasIcon = item => item && !!item.props.icon
     const getLabel = (item): string =>
       // NOTE: only works if it's a string -- are there valid cases where actionMenuItem child is not a string
-      Children.toArray(item.props.children)[0] as string|| ''
+      (Children.toArray(item.props.children)[0] as string) || ''
     const getState = item => ({
       hasIcon: hasIcon(item),
       label: getLabel(item)
@@ -179,9 +178,12 @@ export const useDropdown = (props: UseDropdownProps, forwardedRef) => {
   }
 
   const longestMenuItemState = getLongestMenuLabelState()
-  const [width, setWidth] = useState('auto')
-  const innerRef = createRef<HTMLButtonElement>()
-  const combinedRef = useCombinedRefs(forwardedRef, innerRef)
+  const [width, setWidth] = useState<React.ReactText>('auto')
+  const innerRef = createRef()
+  const combinedRef = useCombinedRefs(
+    forwardedRef,
+    innerRef
+  ) as MutableRefObject<HTMLButtonElement>
   useLayoutEffect(() => {
     setWidth(combinedRef.current.getBoundingClientRect().width)
   }, [combinedRef, forwardedRef])
@@ -225,7 +227,7 @@ export const useDropdown = (props: UseDropdownProps, forwardedRef) => {
   }
 }
 
-export function findMatchingActionMenuItem(menu, value) {
+export function findMatchingActionMenuItem(menu?, value?) {
   if (!menu || !value) return
 
   const items = Array.isArray(menu)

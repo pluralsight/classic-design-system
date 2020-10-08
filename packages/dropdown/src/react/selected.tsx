@@ -1,8 +1,8 @@
-import React, {HTMLAttributes} from 'react'
+import React, { HTMLAttributes } from 'react'
 import { compose, css } from 'glamor'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
 const styles = {
   buttonSizer: () => css(stylesheet['.psds-dropdown__button-sizer']),
@@ -26,13 +26,12 @@ const styles = {
 }
 
 interface DropdownSelectedProps extends HTMLAttributes<HTMLLabelElement> {
-  appearance:ValueOf<typeof vars.appearances>,
-  label: string,
-  placeholder: string,
-  selectedLabel: string,
-  size: ValueOf<typeof vars.sizes>
+  appearance?: ValueOf<typeof vars.appearances>
+  label?: string
+  placeholder?: string
+  selectedLabel?: string
+  size?: ValueOf<typeof vars.sizes>
 }
-
 
 export const Selected: React.FC<DropdownSelectedProps> = ({
   appearance,

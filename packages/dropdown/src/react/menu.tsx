@@ -2,20 +2,19 @@ import React, { forwardRef, HTMLAttributes } from 'react'
 import { css } from 'glamor'
 import { createUniversalPortal } from '@pluralsight/ps-design-system-util'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = css(stylesheet['.psds-dropdown__menu'])
 
-interface DropdownMenuProps extends  Omit<HTMLAttributes<HTMLUListElement>, 'onClick'> {
-  inNode: React.ReactElement,
-  isOpen: boolean,
-  menu: React.ReactNode,
-  menuPosition: { top: number, left: number},
-  onClick:  (e:React.MouseEvent, v: React.ReactText) => void,
-  onClose:  () => void,
-  selectedValue: string | number,
-  setOpen: () => void,
-  width: string | number
+interface DropdownMenuProps
+  extends Omit<HTMLAttributes<HTMLUListElement>, 'onClick'> {
+  inNode?: HTMLElement
+  isOpen: boolean
+  menu: React.ReactNode
+  menuPosition: { top: number; left: number }
+  onClick: (e: React.MouseEvent, v?: React.ReactText) => void
+  onClose: () => void
+  width: React.ReactText
 }
 export const Menu = forwardRef<HTMLUListElement, DropdownMenuProps>(
   ({ menu, menuPosition, isOpen, onClick, inNode, onClose, width }, ref) => {
