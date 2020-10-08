@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [18.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@18.1.6...@pluralsight/ps-design-system-button@18.2.0) (2020-10-08)
+
+
+### Features
+
+* button link ts conversion ([#1280](https://github.com/pluralsight/design-system/issues/1280)) ([d15d64d](https://github.com/pluralsight/design-system/commit/d15d64d719341cc4d55ff261d35bff3265546082))
+
+
+
+
+
 ## [18.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@18.1.5...@pluralsight/ps-design-system-button@18.1.6) (2020-09-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button
