@@ -12,7 +12,7 @@ const styles = ({ themeName }) => {
   )
 }
 
-export const SubLabel = ({ subLabel }: { subLabel?: React.ReactNode }) => {
+export const SubLabel: React.FC<{ subLabel?: React.ReactNode }> = ({ subLabel }) => {
   const themeName = useTheme()
   return subLabel ? <div {...styles({ themeName })}>{subLabel}</div> : null
 }
