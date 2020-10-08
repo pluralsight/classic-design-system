@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
@@ -10,26 +10,26 @@ import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 import ActionMenu from '..'
 
 storiesOf('menu items', module)
-  .add('one', _ => (
+  .add('one', () => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('multiple', _ => (
+  .add('multiple', () => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Item>Two item</ActionMenu.Item>
       <ActionMenu.Item>Three item</ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('lots', _ => (
+  .add('lots', () => (
     <ActionMenu>
       {new Array(30).fill(null).map((_, index) => (
         <ActionMenu.Item key={index}>index: {index}</ActionMenu.Item>
       ))}
     </ActionMenu>
   ))
-  .add('ellipsis', _ => (
+  .add('ellipsis', () => (
     <ActionMenu>
       <ActionMenu.Item>
         <ActionMenu.Ellipsis>
@@ -39,7 +39,7 @@ storiesOf('menu items', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('with icons', _ => (
+  .add('with icons', () => (
     <ActionMenu>
       <ActionMenu.Item>
         <ActionMenu.Icon marginLeft>
@@ -61,7 +61,7 @@ storiesOf('menu items', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('ellipses with icon', _ => (
+  .add('ellipses with icon', () => (
     <ActionMenu>
       <ActionMenu.Item>
         <ActionMenu.Icon marginLeft>
@@ -74,7 +74,7 @@ storiesOf('menu items', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('long text', _ => (
+  .add('long text', () => (
     <ActionMenu>
       <ActionMenu.Item>
         <ActionMenu.Ellipsis>
@@ -90,7 +90,7 @@ storiesOf('menu items', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('null item', _ => (
+  .add('null item', () => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
       {null}
@@ -99,13 +99,13 @@ storiesOf('menu items', module)
   ))
 
 storiesOf('dividers', module)
-  .add('edge', _ => (
+  .add('edge', () => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />
     </ActionMenu>
   ))
-  .add('sandwich', _ => (
+  .add('sandwich', () => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />
@@ -114,23 +114,23 @@ storiesOf('dividers', module)
     </ActionMenu>
   ))
 
-// eslint-disable-next-line react/prop-types
-// eslint-disable-next-line react/display-name
-const FocusOnMount = React.forwardRef((props, forwardedRef) => {
-  const ref = ActionMenu.useMenuRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
-  return (
-    <ActionMenu ref={ref}>
-      <ActionMenu.Item>One item</ActionMenu.Item>
-      <ActionMenu.Item>Two item</ActionMenu.Item>
-      <ActionMenu.Item>Three item</ActionMenu.Item>
-    </ActionMenu>
-  )
-})
-storiesOf('focus onMount', module).add('example', _ => <FocusOnMount />)
+const FocusOnMount = React.forwardRef<HTMLUListElement>(
+  (_props, forwardedRef) => {
+    const ref = ActionMenu.useMenuRef()
+    React.useImperativeHandle(forwardedRef, () => ref.current)
 
-// eslint-disable-next-line react/prop-types
-const NestedMenu = ({ origin }) => (
+    return (
+      <ActionMenu ref={ref}>
+        <ActionMenu.Item>One item</ActionMenu.Item>
+        <ActionMenu.Item>Two item</ActionMenu.Item>
+        <ActionMenu.Item>Three item</ActionMenu.Item>
+      </ActionMenu>
+    )
+  }
+)
+storiesOf('focus onMount', module).add('example', () => <FocusOnMount />)
+
+const NestedMenu = ({ origin = null }) => (
   <ActionMenu origin={origin}>
     <ActionMenu.Item
       origin={origin}
@@ -170,11 +170,11 @@ const NestedMenu = ({ origin }) => (
     <ActionMenu.Item>Two</ActionMenu.Item>
   </ActionMenu>
 )
-const nestedStory = storiesOf('nested', module).add(`no origin`, _ => (
+const nestedStory = storiesOf('nested', module).add(`no origin`, () => (
   <NestedMenu />
 ))
 Object.keys(ActionMenu.origins).forEach(origin =>
-  nestedStory.add(`origin ${origin}`, _ => (
+  nestedStory.add(`origin ${origin}`, () => (
     <div
       style={{
         display: 'flex',
@@ -189,19 +189,19 @@ Object.keys(ActionMenu.origins).forEach(origin =>
   ))
 )
 
-const handleClick = (e, value) => {
-  action()(value)
+const handleClick = (_e: unknown, value: unknown) => {
+  action('on click')(value)
 }
 
 storiesOf('onClick', module)
-  .add('flat', _ => (
+  .add('flat', () => (
     <ActionMenu onClick={handleClick}>
       <ActionMenu.Item value="one">One item</ActionMenu.Item>
       <ActionMenu.Item value="two">Two item</ActionMenu.Item>
       <ActionMenu.Item value="three">Three item</ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('nested', _ => (
+  .add('nested', () => (
     <ActionMenu onClick={handleClick}>
       <ActionMenu.Item value="-0">0</ActionMenu.Item>
       <ActionMenu.Item
@@ -253,7 +253,7 @@ storiesOf('onClick', module)
     </ActionMenu>
   ))
 
-storiesOf('customized styles', module).add('item style', _ => (
+storiesOf('customized styles', module).add('item style', () => (
   <ActionMenu>
     <ActionMenu.Item style={{ outline: '1px solid red' }}>
       One item
@@ -267,7 +267,7 @@ storiesOf('customized styles', module).add('item style', _ => (
   </ActionMenu>
 ))
 
-storiesOf('link', module).add('a w/ href', _ => (
+storiesOf('link', module).add('a w/ href', () => (
   <ActionMenu>
     <ActionMenu.Item href="https://duckduckgo.com" tagName="a">
       Links to web
@@ -276,18 +276,18 @@ storiesOf('link', module).add('a w/ href', _ => (
 ))
 
 storiesOf('disabled', module)
-  .add('single, disabled', _ => (
+  .add('single, disabled', () => (
     <ActionMenu>
       <ActionMenu.Item disabled>Single, disabled</ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('multiple, all disabled', _ => (
+  .add('multiple, all disabled', () => (
     <ActionMenu>
       <ActionMenu.Item disabled>Mult 1, disabled</ActionMenu.Item>
       <ActionMenu.Item disabled>Mult 2, disabled</ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('item', _ => (
+  .add('item', () => (
     <ActionMenu>
       <ActionMenu.Item>Enabled</ActionMenu.Item>
       <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
@@ -295,7 +295,7 @@ storiesOf('disabled', module)
       <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('links', _ => (
+  .add('links', () => (
     <ActionMenu>
       <ActionMenu.Item href="https://duck.com">Enabled</ActionMenu.Item>
       <ActionMenu.Item disabled href="https://duck.com">
@@ -307,7 +307,7 @@ storiesOf('disabled', module)
       </ActionMenu.Item>
     </ActionMenu>
   ))
-  .add('nested', _ => (
+  .add('nested', () => (
     <ActionMenu>
       <ActionMenu.Item>Enabled</ActionMenu.Item>
       <ActionMenu.Item
