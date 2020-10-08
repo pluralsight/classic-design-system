@@ -52,7 +52,7 @@ interface ItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'> {
   disabled?: boolean
   href?: string
   nested?: React.ReactNode
-  onClick?: (event: React.MouseEvent, value: string | number) => void
+  onClick?: (event: React.MouseEvent, value: React.ReactText) => void
   origin?: string
   tagName?: string
   value?: string | number

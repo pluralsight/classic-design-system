@@ -1,4 +1,9 @@
-import React, { HTMLAttributes, KeyboardEventHandler, MouseEvent } from 'react'
+import React, {
+  HTMLAttributes,
+  KeyboardEventHandler,
+  MouseEvent,
+  ReactText
+} from 'react'
 import { css, compose, keyframes } from 'glamor'
 import {
   useMenuRef,
@@ -40,7 +45,7 @@ interface ActionMenuStatics {
 interface Props extends Omit<HTMLAttributes<HTMLUListElement>, 'onClick'> {
   onClose?: () => void
   origin?: string
-  onClick?: (evt: MouseEvent, value: string | number) => void
+  onClick?: (evt: MouseEvent, value: ReactText) => void
 }
 interface ActionMenuComponent
   extends RefForwardingComponent<Props, HTMLUListElement, ActionMenuStatics> {}

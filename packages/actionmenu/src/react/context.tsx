@@ -1,8 +1,8 @@
-import { MouseEvent, createContext } from 'react'
+import { MouseEvent, ReactText, createContext } from 'react'
 
 interface ContextValue {
-  onClickContext?: (evt: MouseEvent, value: string | number) => void
-  onClose?: (evt: MouseEvent, value: string | number) => void
+  onClickContext?: (evt: MouseEvent, value: ReactText) => void
+  onClose?: (evt: MouseEvent, value: ReactText) => void
   originContext?: string
 }
 

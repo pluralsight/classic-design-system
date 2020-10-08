@@ -99,13 +99,13 @@ storiesOf('menu items', module)
   ))
 
 storiesOf('dividers', module)
-  .add('edge', _ => (
+  .add('edge', () => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />
     </ActionMenu>
   ))
-  .add('sandwich', _ => (
+  .add('sandwich', () => (
     <ActionMenu>
       <ActionMenu.Item>One item</ActionMenu.Item>
       <ActionMenu.Divider />

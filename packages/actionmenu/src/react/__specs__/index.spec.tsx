@@ -19,7 +19,7 @@ describe('ActionMenu', () => {
 
   it('fires onClick on option click', () => {
     return new Promise(resolve => {
-      const handleClick = (_evt: unknown, value: unknown) => {
+      const handleClick = (_evt: React.MouseEvent, value: React.ReactText) => {
         expect(value).toEqual('two')
         resolve()
       }
