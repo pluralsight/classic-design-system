@@ -11,7 +11,7 @@ import React, {
   useContext
 } from 'react'
 
-import * as stylesheet from '../css'
+import stylesheet from '../css'
 import { tagName } from '../vars'
 
 import { ActionMenuContext } from './context'
