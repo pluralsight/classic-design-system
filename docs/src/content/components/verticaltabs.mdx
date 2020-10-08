@@ -319,6 +319,83 @@ function Example() {
 export default Example
 ```
 
+## Start collapsed
+
+Each `VerticalTabs.Tier1` item can start collapsed if the `collapse` and `collapsible` prop are both set.
+
+```typescript
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
+import * as React from 'react'
+
+const EXAMPLE_NAV = [
+  {
+    collapsible: true,
+    collapsed: true,
+    header: {
+      icon: <PlaceholderIcon />,
+      title: "Starts collapsed"
+    },
+    items: [
+      {
+        title: "See me after opening"
+      }
+    ]
+  },
+  {
+    collapsible: true,
+    header: {
+      icon: <PlaceholderIcon />,
+      title: "Starts open"
+    },
+    items: [
+      {
+        href: "#",
+        title: "See me on load"
+      }
+    ]
+  }
+]
+
+const Example: React.FC = () => {
+  return (
+    <div>
+      <div>
+        <VerticalTabs>
+          <VerticalTabs.Group>
+            {EXAMPLE_NAV.map((section, sectionKey) => (
+              <VerticalTabs.Tier1
+                collapsible={section.collapsible}
+                collapsed={section.collapsed}
+                key={sectionKey}
+                header={
+                  <VerticalTabs.Tier1.Header icon={section.header.icon}>
+                    {section.header.title}
+                  </VerticalTabs.Tier1.Header>
+                }
+              >
+                {section.items.map((item, itemKey) => (
+                  <VerticalTabs.Tier2
+                    header={
+                      <VerticalTabs.Tier2.Header href={item.href}>
+                        {item.title}
+                      </VerticalTabs.Tier2.Header>
+                    }
+                    key={itemKey}
+                  />
+                ))}
+              </VerticalTabs.Tier1>
+            ))}
+          </VerticalTabs.Group>
+        </VerticalTabs>
+      </div>
+    </div>
+  )
+}
+
+export default Example
+```
+
 ## Usage & types
 
 <Usage
