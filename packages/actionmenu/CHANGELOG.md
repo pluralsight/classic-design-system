@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.1.2...@pluralsight/ps-design-system-actionmenu@15.1.3) (2020-10-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.1.1...@pluralsight/ps-design-system-actionmenu@15.1.2) (2020-10-08)
+
+
+### Bug Fixes
+
+* **actionmenu:** add babelrc file so storybook can load story files ([f41ec97](https://github.com/pluralsight/design-system/commit/f41ec972779d405d174d12576c822a946a511384))
+* **actionmenu:** style import ([493f5c1](https://github.com/pluralsight/design-system/commit/493f5c1ad26d57d90ff256e8c4ae98ddb4b05b46))
+* **actionmenu:** stylesheet imports ([668ecbd](https://github.com/pluralsight/design-system/commit/668ecbd24808f88386e6b3bd02a117546adf7955))
+
+
+
+
+
+## [15.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.1.0...@pluralsight/ps-design-system-actionmenu@15.1.1) (2020-10-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
 # [15.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.0.5...@pluralsight/ps-design-system-actionmenu@15.1.0) (2020-10-08)
 
 

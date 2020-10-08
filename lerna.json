@@ -1,5 +1,13 @@
 {
   "packages": ["docs", "./packages/*"],
+  "command": {
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "ignore": ["docs"],
+      "message": "build: publish"
+    }
+  },
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true

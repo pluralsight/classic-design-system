@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@5.0.25...@pluralsight/ps-design-system-focusmanager@5.0.26) (2020-10-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [5.0.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@5.0.24...@pluralsight/ps-design-system-focusmanager@5.0.25) (2020-10-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
 ## [5.0.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@5.0.23...@pluralsight/ps-design-system-focusmanager@5.0.24) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
