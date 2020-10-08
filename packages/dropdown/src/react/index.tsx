@@ -1,6 +1,6 @@
-import React, { forwardRef } from 'react'
-import PropTypes from 'prop-types'
+import React, { forwardRef, HTMLAttributes } from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { RefForwardingComponent, ValueOf } from '@pluralsight/ps-design-system-util'
 import { Item } from './item.js'
 import { useDropdown, DropdownContext } from '../js/index.js'
 import { Label } from './label.js'
@@ -11,7 +11,40 @@ import { Button } from './button.js'
 import { Selected } from './selected.js'
 import * as vars from '../vars/index.js'
 
-const Dropdown = forwardRef((props, forwardedRef) => {
+
+interface DropdownStatics {
+  context: typeof DropdownContext
+  Item: typeof Item
+  Divider: typeof ActionMenu.Divider
+  appearances: typeof vars.appearances
+  sizes: typeof vars.sizes
+  Label: typeof Label
+  Layout: typeof Layout
+  Menu: typeof Menu
+  SubLabel: typeof SubLabel
+  Button: typeof Button
+  Selected: typeof Selected
+}
+
+interface DropdownProps extends Omit<HTMLAttributes<HTMLDivElement>, 'onChange'> {
+  appearance?:  ValueOf<typeof vars.appearances>
+  disabled?: boolean
+  className: string
+  error: boolean
+  label: React.ReactNode
+  menu: React.ReactNode
+  onChange: (e:React.MouseEvent, v: React.ReactText) => void
+  onClick: (e: React.MouseEvent) => void
+  placeholder: string
+  size: ValueOf<typeof vars.sizes>
+  subLabel: React.ReactNode
+  value: React.ReactText
+}
+interface DropdownComponent
+  extends RefForwardingComponent<DropdownProps, HTMLDivElement, DropdownStatics> {}
+
+
+const Dropdown = forwardRef<HTMLDivElement, DropdownProps>((props, forwardedRef) => {
   const allProps = useDropdown(props, forwardedRef)
   return (
     <Layout
@@ -30,27 +63,9 @@ const Dropdown = forwardRef((props, forwardedRef) => {
       }
     />
   )
-})
+}) as DropdownComponent
 
 Dropdown.displayName = 'Dropdown'
-Dropdown.propTypes = {
-  appearance: PropTypes.oneOf(
-    Object.keys(vars.appearances).map(k => vars.appearances[k])
-  ),
-  disabled: PropTypes.bool,
-  className: PropTypes.string,
-  error: PropTypes.bool,
-  label: PropTypes.node,
-  menu: PropTypes.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)])
-    .isRequired,
-  onChange: PropTypes.func,
-  onClick: PropTypes.func,
-  placeholder: PropTypes.string,
-  size: PropTypes.oneOf(Object.values(vars.sizes)),
-  subLabel: PropTypes.node,
-  style: PropTypes.object,
-  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-}
 Dropdown.defaultProps = {
   appearance: vars.appearances.default,
   disabled: false,

@@ -1,11 +1,10 @@
-import React, { forwardRef, useLayoutEffect, useRef } from 'react'
+import React, { forwardRef, useLayoutEffect, useRef, HTMLAttributes } from 'react'
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import stylesheet from '../css/index.js'
 import Icon from '@pluralsight/ps-design-system-icon'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { CaretDown } from './caret-down.js'
 import { ErrorIcon } from './error-icon.js'
 import * as vars from '../vars/index.js'
@@ -36,7 +35,18 @@ const styles = {
   },
   inner: () => css(stylesheet['.psds-dropdown__field-inner'])
 }
-export const Button = forwardRef(
+
+interface DropdownButtonProps extends HTMLAttributes<HTMLButtonElement> {
+  appearance?: ValueOf<typeof vars.appearances>
+  disabled?: boolean
+  error?: boolean
+  isOpen?: boolean
+  onClick?: (Event) => void
+  setMenuPosition?: ({left, top}: {left: number, top: number}) => void
+  size?: ValueOf<typeof vars.sizes>
+}
+
+export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
   (
     {
       appearance,
@@ -52,7 +62,7 @@ export const Button = forwardRef(
     ref
   ) => {
     const themeName = useTheme()
-    const fieldContainerRef = useRef()
+    const fieldContainerRef = useRef<HTMLDivElement>()
     useLayoutEffect(() => {
       if (!isOpen) return
       const { left, bottom } = fieldContainerRef.current.getBoundingClientRect()
@@ -63,7 +73,7 @@ export const Button = forwardRef(
         <Halo error={error} gapSize={Halo.gapSizes.small} {...styles.halo()}>
           <div {...styles.fieldAligner()}>
             <button
-              {...filterReactProps(rest, { tagName: 'button' })}
+              {...rest}
               {...styles.field({ appearance, error, themeName, size })}
               disabled={disabled}
               onClick={disabled ? null : onClick}
@@ -84,20 +94,4 @@ export const Button = forwardRef(
   }
 )
 
-Button.displayName = 'Dorpdown.Button'
-Button.propTypes = {
-  appearance: PropTypes.oneOf(
-    Object.keys(vars.appearances).map(k => vars.appearances[k])
-  ),
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-  disabled: PropTypes.bool,
-  error: PropTypes.bool,
-  isOpen: PropTypes.bool,
-  onClick: PropTypes.func,
-  setMenuPosition: PropTypes.func,
-  size: PropTypes.oneOf(Object.values(vars.sizes)),
-  themeName: PropTypes.string
-}
+Button.displayName = 'Dropdown.Button'

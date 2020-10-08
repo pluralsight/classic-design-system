@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {HTMLAttributes} from 'react'
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import stylesheet from '../css/index.js'
@@ -12,7 +12,16 @@ const styles = ({ disabled }) => {
   )
 }
 
-export const Layout = ({
+interface DropdownLayoutProps extends HTMLAttributes<HTMLLabelElement> {
+  button: React.ReactNode,
+  disabled: boolean,
+  label: React.ReactNode
+  menu: React.ReactNode,
+  onKeyDown: () => void,
+  subLabel: React.ReactNode
+}
+
+export const Layout: React.FC<DropdownLayoutProps> = ({
   className,
   button,
   disabled,
@@ -38,13 +47,3 @@ export const Layout = ({
 }
 
 Layout.displayName = 'Dropdown.Layout'
-Layout.propTypes = {
-  className: PropTypes.string,
-  style: PropTypes.object,
-  button: PropTypes.node,
-  disabled: PropTypes.bool,
-  label: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
-  menu: PropTypes.node,
-  onKeyDown: PropTypes.func,
-  subLabel: PropTypes.node
-}

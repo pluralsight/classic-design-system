@@ -13,12 +13,9 @@ const styles = ({ themeName }) => {
   )
 }
 
-export const SubLabel = ({ subLabel }) => {
+export const SubLabel = ({ subLabel }: { subLabel: React.ReactNode}) => {
   const themeName = useTheme()
   return subLabel ? <div {...styles({ themeName })}>{subLabel}</div> : null
 }
 
 SubLabel.displayName = 'Dropdown.SubLabel'
-SubLabel.propTypes = {
-  subLabel: PropTypes.node
-}
