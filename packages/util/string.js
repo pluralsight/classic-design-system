@@ -1,1 +1,1 @@
-module.exports = require('./dist/ejs/string')
+module.exports = require('./dist/cjs/string')
