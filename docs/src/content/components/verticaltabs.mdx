@@ -405,6 +405,23 @@ export default Example
   version={props.version}
 />
 
+### VerticalTabs
+
+<TypesTable>
+  <TypesProp
+    name="forceCollapsed"
+    type="boolean"
+    desc="force lists to be collapsed"
+    default="false"
+  />
+  <TypesProp
+    name="hideLabels"
+    type="boolean"
+    desc="hide text labels"
+    default="false"
+  />
+</TypesTable>
+
 ### VerticalTabs.Group
 
 <TypesTable>
@@ -417,18 +434,6 @@ export default Example
     name="header"
     type="VerticalTabs.Group.Header"
     desc="slot group header into position"
-  />
-  <TypesProp
-    name="forceCollapsed"
-    type="boolean"
-    desc="force lists to be collapsed"
-    default="false"
-  />
-  <TypesProp
-    name="hideLabels"
-    type="boolean"
-    desc="hide text labels"
-    default="false"
   />
 </TypesTable>
 
@@ -488,11 +493,24 @@ export default Example
     name="active"
     type="boolean"
     desc="changes visual state to active tab tier"
+    default="false"
   />
   <TypesProp
     name="children"
     type="VerticalTabs.Tier2"
     desc="VerticalTabs.Tier2 components"
+  />
+  <TypesProp
+    name="collapsed"
+    type="boolean"
+    desc="start item collapsed if collapsible also true"
+    default="false"
+  />
+  <TypesProp
+    name="collapsible"
+    type="boolean"
+    desc="allows collapsing of children"
+    default="false"
   />
   <TypesProp
     name="header"
@@ -509,8 +527,6 @@ export default Example
     type="string"
     desc="header text"
   />
-
-
   <TypesProp
     name="icon"
     type="Icon"
