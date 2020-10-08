@@ -12,7 +12,7 @@ const styles = ({ themeName }) => {
   )
 }
 
-export const Label = ({ label }: { label?: React.ReactNode }) => {
+export const Label: React.FC<{ label?: React.ReactNode }> = ({ label }) => {
   const themeName = useTheme()
   return label ? <div {...styles({ themeName })}>{label}</div> : null
 }
