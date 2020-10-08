@@ -1,8 +1,6 @@
-export const sizes = {
-  small: 'small',
-  medium: 'medium',
-  large: 'large'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
+
+export const sizes = keyMirror('small', 'medium', 'large')
 
 export const widths = {
   small: '16px',
@@ -10,13 +8,13 @@ export const widths = {
   large: '48px'
 }
 
-export const colors = {
-  textIconHighOnDark: 'textIconHighOnDark',
-  textIconLowOnDark: 'textIconLowOnDark',
-  textIconHighOnLight: 'textIconHighOnLight',
-  textIconLowOnLight: 'textIconLowOnLight',
-  red: 'red',
-  blue: 'blue',
-  green: 'green',
-  yellow: 'yellow'
-}
+export const colors = keyMirror(
+  'textIconHighOnDark',
+  'textIconLowOnDark',
+  'textIconHighOnLight',
+  'textIconLowOnLight',
+  'red',
+  'blue',
+  'green',
+  'yellow'
+)
