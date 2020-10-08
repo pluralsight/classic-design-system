@@ -1,8 +1,6 @@
 @import '@pluralsight/ps-design-system-normalize';
 @import '@pluralsight/ps-design-system-core';
 
-@custom-media --breakpoint-small (width >= 768px);
-
 .example-grid {
   display: inline-grid;
   grid-template-columns: repeat(4, minmax(0, auto));
@@ -51,3 +49,4 @@
 .example-flex-row > :not(:last-child) {
   margin-right: var(--psLayoutSpacingMedium);
 }
+

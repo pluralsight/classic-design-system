@@ -16,3 +16,21 @@ main > .h3 {
   padding: var(--psLayoutSpacingXXSmall) 0 var(--psLayoutSpacingXXSmall)
     var(--psLayoutSpacingMedium);
 }
+.headingLink {
+  position: relative;
+  color: inherit;
+
+  &:hover::before,
+  &:focus::before {
+    content: '#';
+    display: block;
+    position: absolute;
+    left: calc(-1ch - var(--psLayoutSpacingSmall));
+    height: 100%;
+    color: var(--appColorsPrimaryActionText);
+  }
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}

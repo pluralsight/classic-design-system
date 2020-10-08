@@ -20,12 +20,7 @@
   display: flex;
   height: 40px;
   padding: 0 var(--psLayoutSpacingXSmall);
-}
-.light .actions {
-  background-color: var(--psColorsBackgroundLight2);
-}
-.dark .actions {
-  background-color: var(--psColorsBackgroundDark2);
+  background-color: var(--appColorsBackground2);
 }
 .actionsLeft {
   margin-right: auto;
@@ -36,14 +31,8 @@
 
 .preview {
   padding: var(--psLayoutSpacingMedium);
-
-  &.dark {
-    background: var(--psColorsBackgroundDark1);
-  }
-
-  &.light {
-    background: var(--psColorsBackgroundLight2);
-  }
+  background: var(--appColorsBackgroundLo);
+  border-bottom: 1px solid var(--appColorsBorderLow);
 }
 
 .editor {
@@ -52,17 +41,12 @@
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightTight);
   overflow: auto;
-  padding: var(--psLayoutSpacingMedium);
+  padding: var(--psLayoutSpacingSmall) var(--psLayoutSpacingMedium);
   height: auto;
   max-height: var(--psLayoutSpacingXLarge);
-  transition: max-height var(--psMotionSpeedNormal) ease-out;
+  transition: max-height var(--psMotionSpeedFast) ease-out;
   overflow-y: hidden;
-}
-.light .editor {
-  background-color: var(--psColorsBackgroundLight1);
-}
-.dark .editor {
-  background-color: var(--psColorsBackgroundDark3);
+  background-color: var(--appColorsBackgroundMed);
 }
 .editorExpanded {
   /* large number so we have something to animate to */
@@ -108,10 +92,5 @@
 .example {
   border-radius: 0.2em;
   overflow: hidden;
-}
-.dark .example {
-  border: 1px solid var(--psColorsBorderLowOnDark);
-}
-.light .example {
-  border: 1px solid var(--psColorsBorderLowOnLight);
+  border: 1px solid var(--appColorsBorderLow);
 }

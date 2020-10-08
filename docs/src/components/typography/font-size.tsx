@@ -1,5 +1,3 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import cx from 'classnames'
 import React from 'react'
 
 import { Box } from '../box'
@@ -16,27 +14,18 @@ const sizes = [
   { label: 'X-Small', size: '12px', varName: 'psTypeFontSizeXSmall' }
 ]
 
-export const FontSize = () => {
-  const themeName = useTheme()
-  return (
-    <Box
-      className={cx({
-        [styles.sizes]: true,
-        [styles.dark]: themeName === Theme.names.dark,
-        [styles.light]: themeName === Theme.names.light
-      })}
-    >
-      {sizes.map((w, i) => (
-        <div className={styles.size} key={i}>
-          <div style={{ fontSize: w.size }} className={styles.sizeSentence}>
-            The quick brown fox jumps over the lazy dog.
-          </div>
-          <div className={styles.sizeLabel}>
-            {w.size} - {w.label}
-          </div>
-          <code className={styles.sizeVar}>{w.varName}</code>
+export const FontSize = () => (
+  <Box className={styles.sizes}>
+    {sizes.map((w, i) => (
+      <div className={styles.size} key={i}>
+        <div style={{ fontSize: w.size }} className={styles.sizeSentence}>
+          The quick brown fox jumps over the lazy dog.
         </div>
-      ))}
-    </Box>
-  )
-}
+        <div className={styles.sizeLabel}>
+          {w.size} - {w.label}
+        </div>
+        <code className={styles.sizeVar}>{w.varName}</code>
+      </div>
+    ))}
+  </Box>
+)

@@ -1,7 +1,5 @@
-@custom-media --breakpoint-small (width >= 768px);
-
 .aside {
-  background: var(--psColorsBackgroundLight1);
+  background: var(--psColorsBackgroundLight2);
   bottom: 0;
   height: 100vh;
   left: 0;
@@ -13,6 +11,7 @@
   transform: translate(0, 0);
   padding: var(--psLayoutSpacingLarge) 0;
   z-index: 1000;
+  background: var(--appColorsBackgroundMed);
 
   &:after {
     box-shadow: 50px 0 100px rgba(0, 0, 0, 0.8);
@@ -25,14 +24,6 @@
     top: 0;
     transition: box-shadow var(--psMotionSpeedFast) ease-in-out;
     width: 100%;
-  }
-
-  &.dark {
-    background: var(--psColorsBackgroundDark2);
-  }
-
-  &.light {
-    background: var(--psColorsBackgroundLight1);
   }
 
   @media (--breakpoint-small) {
