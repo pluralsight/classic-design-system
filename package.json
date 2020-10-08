@@ -35,7 +35,7 @@
     "octopus:deploy": "octopus-deploy-create-release-and-deploy",
     "octopus:publish": "gulp octopus-publish",
     "postinstall": "link-parent-bin",
-    "publish:all": "yarn build && yarn publish:all --ignore-scripts --ignore-prepublish",
+    "publish:all": "yarn build && lerna publish --ignore-scripts --ignore-prepublish",
     "publish:all:beta": "yarn publish:all --npm-tag=beta",
     "start": "yarn docs",
     "test": "jest",
