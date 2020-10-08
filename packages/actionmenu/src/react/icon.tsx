@@ -1,6 +1,7 @@
 import { css } from 'glamor'
 import React, { HTMLAttributes } from 'react'
-import stylesheet from '../css/index'
+
+import stylesheet from '../css'
 
 const styles = ({ marginLeft, marginRight }) =>
   css(
