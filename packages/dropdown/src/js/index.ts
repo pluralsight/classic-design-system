@@ -18,7 +18,7 @@ import {
 
 import * as vars from '../vars'
 
-export const DropdownContext = createContext('' as React.ReactText)
+export const DropdownContext = createContext<React.ReactText>('')
 
 interface UseDropdownProps
   extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
