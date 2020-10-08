@@ -21,7 +21,6 @@
     "build:watch": "yarn build:js -- --watch",
     "clean:svg": "node bin/icon -s src/svg --clean",
     "copy:svg": "node cli/copy-svgs.js",
-    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
