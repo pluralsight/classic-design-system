@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@9.0.15...@pluralsight/ps-design-system-table@9.0.16) (2020-10-08)
+
+
+### Bug Fixes
+
+* **table:** highlight color on sorted column header ([7f88ffd](https://github.com/pluralsight/design-system/commit/7f88ffd818f4873e19e9d221a19c0870b4275be7))
+
+
+
+
+
 ## [9.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@9.0.14...@pluralsight/ps-design-system-table@9.0.15) (2020-09-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

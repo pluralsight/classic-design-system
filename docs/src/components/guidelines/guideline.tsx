@@ -1,6 +1,5 @@
 import Badge from '@pluralsight/ps-design-system-badge'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import React, { Fragment } from 'react'
 
@@ -14,7 +13,6 @@ interface GuidelineProps {
   dontStyle: Record<string, unknown>
 }
 export const Guideline: React.FC<GuidelineProps> = props => {
-  const themeName = useTheme()
   const isSingleCol = props.columnCount === 1
 
   const Layout = isSingleCol
@@ -30,8 +28,6 @@ export const Guideline: React.FC<GuidelineProps> = props => {
 
   const boxClassName = cx({
     [styles.box]: true,
-    [styles.dark]: themeName === Theme.names.dark,
-    [styles.light]: themeName === Theme.names.light,
     [styles.vertical]: isSingleCol
   })
 
@@ -41,9 +37,7 @@ export const Guideline: React.FC<GuidelineProps> = props => {
         {props.do}
 
         <div className={styles.badgeWrapper}>
-          <Badge color={Badge.colors.green} className={styles.badge}>
-            Do
-          </Badge>
+          <Badge color={Badge.colors.green}>Do</Badge>
         </div>
       </div>
 

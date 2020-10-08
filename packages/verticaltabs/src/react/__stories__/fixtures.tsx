@@ -1,7 +1,11 @@
-import React from 'react'
 import * as Icon from '@pluralsight/ps-design-system-icon'
+import React from 'react'
 
-export const ADMIN_TOOLS_NAV = [
+export const ADMIN_TOOLS_NAV: {
+  collapsible: boolean
+  header: any
+  items: any[]
+}[] = [
   {
     collapsible: false,
     header: {
@@ -59,7 +63,11 @@ export const ADMIN_TOOLS_NAV = [
   }
 ]
 
-export const DESIGN_SYSTEM_NAV = [
+export const DESIGN_SYSTEM_NAV: {
+  collapsible: boolean
+  header: any
+  sections: any[]
+}[] = [
   {
     collapsible: false,
     header: { title: 'Introduction' },
@@ -159,7 +167,11 @@ export const DESIGN_SYSTEM_NAV = [
   }
 ]
 
-export const FLOW_NAV = [
+export const FLOW_NAV: {
+  collapsible: boolean
+  header: any
+  items: any[]
+}[] = [
   {
     collapsible: false,
     header: {

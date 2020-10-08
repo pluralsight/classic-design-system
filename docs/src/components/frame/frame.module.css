@@ -1,6 +1,3 @@
-@custom-media --breakpoint-small (width >= 768px);
-@custom-media --breakpoint-large (width >= 1280px);
-
 /* TODO: create global vars file */
 :root {
   --asideWidth: 240px;
@@ -33,10 +30,28 @@
 
 .dark {
   background: var(--psColorsBackgroundDark1);
+
+  --appColorsBackgroundLo: var(--psColorsBackgroundDark1);
+  --appColorsBackgroundMed: var(--psColorsBackgroundDark2);
+  --appColorsBackgroundHi: var(--psColorsBackgroundDark3);
+  --appColorsBorderLow: var(--psColorsBorderLowOnDark);
+  --appColorsBorderHigh: var(--psColorsBorderHighOnDark);
+  --appColorsPrimaryActionText: var(--psColorsPrimaryActionTextDarkTheme);
+  --appColorsTextIconHigh: var(--psColorsTextIconHighOnDark);
+  --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
 
 .light {
   background: var(--psColorsWhite);
+
+  --appColorsBackgroundLo: var(--psColorsBackgroundLight3);
+  --appColorsBackgroundMed: var(--psColorsBackgroundLight2);
+  --appColorsBackgroundHi: var(--psColorsBackgroundLight1);
+  --appColorsBorderLow: var(--psColorsBorderLowOnLight);
+  --appColorsBorderHigh: var(--psColorsBorderHighOnLight);
+  --appColorsPrimaryActionText: var(--psColorsPrimaryActionTextLightTheme);
+  --appColorsTextIconHigh: var(--psColorsTextIconHighOnLight);
+  --appColorsTextIconLow: var(--psColorsTextIconLowOnLight);
 }
 
 .main {
@@ -46,3 +61,4 @@
   max-width: 800px;
   padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingXLarge);
 }
+

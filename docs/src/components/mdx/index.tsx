@@ -47,12 +47,23 @@ export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   )
 }
 
+const LinkedHeaderText: React.FC<HTMLAttributes<HTMLAnchorElement>> = props =>
+  props.id ? (
+    <A href={`#${props.id}`} className={styles.headingLink}>
+      {props.children}
+    </A>
+  ) : (
+    props.children
+  )
+
 export const H2: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   const className = cx(styles.h2, props.className)
 
   return (
     <Text.Heading size={Text.Heading.sizes.large} className={className}>
-      <h2 {...props}>{props.children}</h2>
+      <h2 {...props}>
+        <LinkedHeaderText {...props} />
+      </h2>
     </Text.Heading>
   )
 }
@@ -62,7 +73,9 @@ export const H3: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
 
   return (
     <Text.Heading size={Text.Heading.sizes.medium} className={className}>
-      <h3 {...props}>{props.children}</h3>
+      <h3 {...props}>
+        <LinkedHeaderText {...props} />
+      </h3>
     </Text.Heading>
   )
 }

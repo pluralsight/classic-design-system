@@ -1,1 +1,1 @@
-module.exports = require('./dist/ejs/color')
+module.exports = require('./dist/cjs/color')

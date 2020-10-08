@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import ViewToggle from '../index.js'
+import ViewToggle from '..'
 
 describe('ViewToggle', () => {
   describe('.Option component', () => {
@@ -19,8 +19,8 @@ describe('ViewToggle', () => {
   })
 
   it('fowards refs', () => {
-    const toggleRef = React.createRef()
-    const optionRef = React.createRef()
+    const toggleRef = React.createRef<HTMLDivElement>()
+    const optionRef = React.createRef<HTMLButtonElement>()
 
     render(
       <ViewToggle ref={toggleRef}>

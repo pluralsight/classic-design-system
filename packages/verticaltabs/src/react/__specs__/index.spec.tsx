@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import VerticalTab from '../index.js'
+import VerticalTab from '..'
 
 describe('Verticaltab', () => {
   it('renders', () => {
@@ -11,7 +11,7 @@ describe('Verticaltab', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLUListElement>()
 
     render(<VerticalTab ref={ref} />)
 
