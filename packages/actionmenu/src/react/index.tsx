@@ -37,10 +37,10 @@ interface ActionMenuStatics {
   useMenuRef: typeof useMenuRef
 }
 
-interface Props extends HTMLAttributes<HTMLUListElement> {
+interface Props extends Omit<HTMLAttributes<HTMLUListElement>, 'onClick'> {
   onClose?: () => void
   origin?: string
-  onClick?: (Event) => void
+  onClick?: (e: React.MouseEvent, v?: React.ReactText) => void
 }
 interface ActionMenuComponent
   extends RefForwardingComponent<Props, HTMLUListElement, ActionMenuStatics> {}
