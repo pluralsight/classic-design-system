@@ -44,13 +44,16 @@ interface FrontMatter {
 const Page: React.FC<PageProps> = props => {
   const name = props.data.mdx.frontmatter?.name
   const title = `${name ? name + ' | ' : ''}Pluralsight Design System`
+  const hasTableOfContents = !!props.data.mdx.body.match(
+    /makeShortcode\("TableOfContents"\)/
+  )
 
   return (
     <MDXProvider>
       <Helmet title={title}>
         <link rel="shortcut icon" type="image/png" href={favicon} />
       </Helmet>
-      <Frame aside={<SideNav />}>
+      <Frame aside={<SideNav />} hasTableOfContents={hasTableOfContents}>
         <MDXRenderer
           headings={props.data.mdx.headings}
           version={props.pageContext.version}

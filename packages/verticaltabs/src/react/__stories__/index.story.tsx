@@ -1,10 +1,9 @@
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import * as Icon from '@pluralsight/ps-design-system-icon'
-
-import VerticalTabs from '../index.js'
+import VerticalTabs from '..'
 
 const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs
 
@@ -12,13 +11,13 @@ const noop = () => null
 
 const longTitle = `Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.`
 
-const ContainerDecorator = (storyFn, _, parameters) => (
+const ContainerDecorator = (storyFn: () => React.ReactNode) => (
   <div {...css({ height: '100%', width: '240px' })}>
     <VerticalTabs>{storyFn()}</VerticalTabs>
   </div>
 )
 
-const Placeholder = props => (
+const Placeholder: React.FC = props => (
   <div {...css({ height: 100, border: '1px dashed pink' })} {...props} />
 )
 
