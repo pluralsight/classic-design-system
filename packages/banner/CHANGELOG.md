@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.28](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@6.0.27...@pluralsight/ps-design-system-banner@6.0.28) (2020-10-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-banner
+
+
+
+
+
 ## [6.0.27](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@6.0.26...@pluralsight/ps-design-system-banner@6.0.27) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner
