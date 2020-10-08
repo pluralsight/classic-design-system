@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-prop-types",
-  "version": "2.0.18",
+  "version": "2.0.20",
   "description": "Custom Prop Types for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -13,7 +13,6 @@
   "scripts": {
     "build": "babel --root-mode upward src --out-dir dist",
     "build:watch": "yarn build -- --watch",
-    "prepublish": "yarn build",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },

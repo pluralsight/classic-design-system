@@ -10,11 +10,11 @@ exports[`Storyshots active default first 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       I'm active
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -53,11 +53,11 @@ exports[`Storyshots active explicit first 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       I'm active
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -96,11 +96,11 @@ exports[`Storyshots active explicit second 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       I'm active
-    </span>
+    </div>
   </div>
   <button
     aria-selected={false}
@@ -139,11 +139,11 @@ exports[`Storyshots active explicit third 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       I'm active
-    </span>
+    </div>
   </div>
   <button
     aria-selected={false}
@@ -182,11 +182,11 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       Orange
-    </span>
+    </div>
   </div>
   <button
     aria-selected={false}
@@ -225,11 +225,11 @@ exports[`Storyshots onSelect handles click 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       Option 1
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -269,12 +269,12 @@ Array [
       data-css-w8tgx1=""
       style={Object {}}
     >
-      <span
+      <div
         data-css-1jyyyen=""
       >
         item: 
         1
-      </span>
+      </div>
     </div>
     <button
       aria-selected={true}
@@ -324,11 +324,11 @@ exports[`Storyshots options count more than max 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       Option 1
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -367,11 +367,11 @@ exports[`Storyshots options count one 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       The Only Option
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -394,11 +394,11 @@ exports[`Storyshots options count three 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       Option 1
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -437,11 +437,11 @@ exports[`Storyshots options count two 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       Option 1
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -472,11 +472,11 @@ exports[`Storyshots text length all long 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       This one is really long because everyone likes those
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}
@@ -515,11 +515,11 @@ exports[`Storyshots text length differing lengths 1`] = `
     data-css-w8tgx1=""
     style={Object {}}
   >
-    <span
+    <div
       data-css-1jyyyen=""
     >
       This one is really long because everyone likes those
-    </span>
+    </div>
   </div>
   <button
     aria-selected={true}

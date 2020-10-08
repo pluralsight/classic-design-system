@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "18.2.3",
+  "version": "18.2.5",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,15 +21,14 @@
     "build:watch": "yarn build:js -- --watch",
     "clean:svg": "node bin/icon -s src/svg --clean",
     "copy:svg": "node cli/copy-svgs.js",
-    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },
   "sideEffects": false,
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.2",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
+    "@pluralsight/ps-design-system-core": "^6.4.4",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
     "arg": "^4.1.1",
     "fast-glob": "^3.1.0",
     "prop-types": "^15.7.2",
@@ -41,8 +40,8 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.16",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.2",
+    "@pluralsight/ps-design-system-build": "^1.11.17",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.4",
     "ncp": "^2.0.0"
   }
 }

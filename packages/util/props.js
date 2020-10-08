@@ -1,1 +1,1 @@
-module.exports = require('./dist/ejs/props')
+module.exports = require('./dist/cjs/props')

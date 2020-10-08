@@ -1,7 +1,6 @@
 import { MDXProvider as BaseProvider } from '@mdx-js/react'
 import DSLink from '@pluralsight/ps-design-system-link'
 import * as Text from '@pluralsight/ps-design-system-text'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import { Link as GatsbyLink } from 'gatsby'
 import React, { AllHTMLAttributes, HTMLAttributes } from 'react'
@@ -48,26 +47,14 @@ export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   )
 }
 
-const LinkedHeaderText: React.FC<HTMLAttributes<HTMLAnchorElement>> = props => {
-  const themeName = useTheme()
-
-  const linkOrText = props.id ? (
-    <A
-      href={`#${props.id}`}
-      className={cx({
-        [styles.headingLink]: true,
-        [styles.dark]: themeName === Theme.names.dark,
-        [styles.light]: themeName === Theme.names.light
-      })}
-    >
+const LinkedHeaderText: React.FC<HTMLAttributes<HTMLAnchorElement>> = props =>
+  props.id ? (
+    <A href={`#${props.id}`} className={styles.headingLink}>
       {props.children}
     </A>
   ) : (
     props.children
   )
-
-  return linkOrText
-}
 
 export const H2: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   const className = cx(styles.h2, props.className)

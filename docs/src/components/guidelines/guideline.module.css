@@ -8,15 +8,8 @@
   height: 100%;
   padding: var(--psLayoutSpacingXLarge);
   position: relative;
-
-  &.dark {
-    background: var(--psColorsBackgroundDark3);
-    color: var(--psColorsTextIconHighOnDark);
-  }
-
-  &.light {
-    background: var(--psColorsBackgroundLight2);
-  }
+  background: var(--appColorsBackgroundHi);
+  color: var(--appColorsTextIconHigh);
 
   &.vertical {
     height: auto;
@@ -28,7 +21,4 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.badge {
 }

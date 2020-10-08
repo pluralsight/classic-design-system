@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "6.4.2",
+  "version": "6.4.4",
   "description": "Collection of Core design elements for the Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -11,14 +11,13 @@
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "node ./build",
-    "build:js": "tsc --project ./tsconfig.json",
-    "prepublish": "yarn build"
+    "build:js": "tsc --project ./tsconfig.json"
   },
   "sideEffects": false,
   "style": "css/index.css",
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.16",
+    "@pluralsight/ps-design-system-build": "^1.11.17",
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0"

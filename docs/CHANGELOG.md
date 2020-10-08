@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.5.0...@pluralsight/ps-design-system-docs@0.5.1) (2020-10-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.4.0...@pluralsight/ps-design-system-docs@0.5.0) (2020-10-08)
+
+
+### Bug Fixes
+
+* **docs:** clean up example styles ([a98267a](https://github.com/pluralsight/design-system/commit/a98267aae285f99efd4a932f6140a126d68b1c77))
+* **docs:** fix meta margin for guides pages ([3375134](https://github.com/pluralsight/design-system/commit/3375134c7250e432c1c39459397bee89ba212b91))
+* **docs:** import of color tsx from mdx ([478d9ad](https://github.com/pluralsight/design-system/commit/478d9ade70cdcd80daa8dfe9c4eb7c391f8d4472))
+* **docs:** last couple pages with imports ([e21caee](https://github.com/pluralsight/design-system/commit/e21caee3d7213e07ac1e41dbc92658b7d18694bc))
+* **docs:** make example import 1 line to make transform work ([335e577](https://github.com/pluralsight/design-system/commit/335e577a1f7411c55067cfba0db45e387b3ba0f4))
+* **docs:** position dark theme example styles ([e7a32df](https://github.com/pluralsight/design-system/commit/e7a32df1ed574a02d1d652d4a026751620c7a814))
+* **docs:** properly label dev workflow lang types ([db0c1da](https://github.com/pluralsight/design-system/commit/db0c1dab418988f1f32f9cab2bf98e072649ccfe))
+* **docs:** props generic for new box component ([fcd5c22](https://github.com/pluralsight/design-system/commit/fcd5c22d1a234f80ce9a48462e2a690aa8eacabe))
+* **docs:** rm min-width constraint from frame to rm x scroll ([6e1ffb2](https://github.com/pluralsight/design-system/commit/6e1ffb29ba5a075987230b299f3d4f64860b1121))
+* **docs:** rm shell-session from supported renderable langs ([654dcd6](https://github.com/pluralsight/design-system/commit/654dcd6a8d66376aafc326bf6feb957a4825cac4))
+* **docs:** rm slack in the props, lol ([98c2eb3](https://github.com/pluralsight/design-system/commit/98c2eb3ac214c098440037a0308a87c30925384c))
+* **docs:** single line commits to fix transform in preview ([b73f9f4](https://github.com/pluralsight/design-system/commit/b73f9f45177544cd36c1ea3695da6ccd49b1fedd)), closes [#1297](https://github.com/pluralsight/design-system/issues/1297)
+* **docs:** tsc fixies ([cea01ca](https://github.com/pluralsight/design-system/commit/cea01ca0599044db853c20982b1499fc36c5ab66))
+* **docs:** update position mdx ([b79d64a](https://github.com/pluralsight/design-system/commit/b79d64ab23630b641aadea1a707558422317178a))
+
+
+### Features
+
+* **docs:** add css ssr plugins ([3041b2e](https://github.com/pluralsight/design-system/commit/3041b2e820e8477a2cc52fe97a1aeb57b977aa45))
+* **docs:** add design & dev workflow and contribute pages ([b1b9aa0](https://github.com/pluralsight/design-system/commit/b1b9aa0921365fae4643291eab3662fbe71adca3))
+* **docs:** add resource urls ([a1cd657](https://github.com/pluralsight/design-system/commit/a1cd65774a807a7d74fcda8ceccb3e442810b3f7))
+* **docs:** add toc, use shortcodes instead of imports ([2f1f9bb](https://github.com/pluralsight/design-system/commit/2f1f9bbc5ee776f7dacbe654f3e7cfca3629b485))
+* **docs:** dark theme for mono font ([14b76c6](https://github.com/pluralsight/design-system/commit/14b76c600c0bb30dceea4773b19ea601abc13d8e))
+* **docs:** design workflow page ([5a42256](https://github.com/pluralsight/design-system/commit/5a4225622644cd33d1b7a623a2cd47274e568393))
+* **docs:** home page design and content ([d440b6f](https://github.com/pluralsight/design-system/commit/d440b6fb3ef04c2d5274c7aa1dc762eb4a09426c))
+* **docs:** line height supports dark theme ([130ff5e](https://github.com/pluralsight/design-system/commit/130ff5e4350c289d7359ddec3db6c28785bc606b))
+* **docs:** linked headings in mdx ([30b4205](https://github.com/pluralsight/design-system/commit/30b420516abdbb6ccb47b7d1003859a208fc6d3a)), closes [#1281](https://github.com/pluralsight/design-system/issues/1281)
+* **docs:** pass version thru to the usage section ([7f4d24b](https://github.com/pluralsight/design-system/commit/7f4d24be0be91dfcabd1d24861075e0f7179dfad))
+* **docs:** render toc ([5503476](https://github.com/pluralsight/design-system/commit/55034766150c34ec1f5b25760fc6f16a178b1cbc))
+* **docs:** respect os theme preference ([7fccb40](https://github.com/pluralsight/design-system/commit/7fccb40b2725eef41826221c40f706086167af4c))
+* **docs:** supply deps to new codesandboxes ([9afd386](https://github.com/pluralsight/design-system/commit/9afd386d3a084e8fac7d816e30d5a200a9dab142))
+* **docs:** support npm version in build and usage component ([bf3d447](https://github.com/pluralsight/design-system/commit/bf3d447b1818e1d07e6afa8d9832d749fe9ff2d7))
+* **docs:** support side nav scroll restore across renders ([22d0e5d](https://github.com/pluralsight/design-system/commit/22d0e5d0fdf6b754d4d4cb218a3256b267f552d4))
+* **docs:** toc for merged pages ([4f0a938](https://github.com/pluralsight/design-system/commit/4f0a9389336c32ea16bc08e3bb76d8f3cd6dd39b))
+* **docs:** toc to position pg ([b401ddc](https://github.com/pluralsight/design-system/commit/b401ddca4a4a84e531b77559e615d35b0abba850))
+
+
+
+
+
 # [0.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.3.0...@pluralsight/ps-design-system-docs@0.4.0) (2020-09-28)
 
 

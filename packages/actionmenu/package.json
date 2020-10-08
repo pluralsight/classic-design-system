@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-actionmenu",
-  "version": "15.0.5",
+  "version": "15.1.1",
   "description": "Design System component for actionmenu ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -14,7 +14,6 @@
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "build:watch": "yarn build:esm -- --watch",
-    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
@@ -22,10 +21,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.2",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
-    "@pluralsight/ps-design-system-icon": "^18.2.3",
-    "@pluralsight/ps-design-system-util": "^5.2.0",
+    "@pluralsight/ps-design-system-core": "^6.4.4",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
+    "@pluralsight/ps-design-system-icon": "^18.2.5",
+    "@pluralsight/ps-design-system-util": "^5.3.1",
     "exenv": "^1.2.2",
     "prop-types": "^15.7.2"
   },
@@ -35,8 +34,8 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.16",
-    "@pluralsight/ps-design-system-position": "^4.1.17",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.2"
+    "@pluralsight/ps-design-system-build": "^1.11.17",
+    "@pluralsight/ps-design-system-position": "^4.1.19",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.4"
   }
 }

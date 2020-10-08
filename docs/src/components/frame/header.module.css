@@ -3,20 +3,10 @@
   display: flex;
   height: var(--topNavHeight);
   padding: var(--psLayoutSpacingXSmall);
+  background: var(--appColorsBackgroundHi);
 
-  &.dark {
-    background: var(--psColorsBackgroundDark1);
-  }
-
-  &.light {
-    background: var(--psColorsBackgroundLight1);
-  }
-
-  &.dark,
-  &.light {
-    @media (--breakpoint-small) {
-      background-color: transparent;
-    }
+  @media (--breakpoint-small) {
+    background-color: transparent;
   }
 
   & .menuButton {

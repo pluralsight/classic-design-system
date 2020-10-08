@@ -1,11 +1,7 @@
 .dark {
-  --bg: var(--psColorsBackgroundDark2);
-  --fgLight: var(--psColorsTextIconLowOnDark);
   --baseLine: #4d90bc;
 }
 .light {
-  --bg: var(--psColorsBackgroundLight2);
-  --fgLight: var(--psColorsTextIconLowOnLight);
   --baseLine: #b4d9f2;
 }
 .lineHeights {
@@ -32,8 +28,8 @@
     to bottom,
     var(--baseLine),
     var(--baseLine) 1px,
-    var(--bg) 1px,
-    var(--bg)
+    var(--appColorsBackgroundMed) 1px,
+    var(--appColorsBackgroundMed)
   );
   background-size: 1px 8px;
 }
@@ -68,7 +64,7 @@
 }
 .label {
   margin-top: var(--psLayoutSpacingSmall);
-  color: var(--fgLight);
+  color: var(--appColorsTextIconLow);
   font-weight: var(--psTypeFontWeightMedium);
 }
 .varName {

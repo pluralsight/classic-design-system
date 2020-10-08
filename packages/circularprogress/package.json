@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-circularprogress",
-  "version": "6.2.4",
+  "version": "6.2.6",
   "description": "Design System component for circular progress ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -14,15 +14,14 @@
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm && cp src/index.d.ts dist/esm/index.d.ts",
     "build:watch": "yarn build:js -- --watch",
-    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.2",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.18",
-    "@pluralsight/ps-design-system-screenreaderonly": "^2.0.14",
+    "@pluralsight/ps-design-system-core": "^6.4.4",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
+    "@pluralsight/ps-design-system-screenreaderonly": "^2.0.16",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -32,8 +31,8 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.16",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.2",
-    "@pluralsight/ps-design-system-theme": "^4.0.13"
+    "@pluralsight/ps-design-system-build": "^1.11.17",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.1.4",
+    "@pluralsight/ps-design-system-theme": "^4.0.15"
   }
 }
