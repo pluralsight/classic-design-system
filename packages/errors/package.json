@@ -15,7 +15,6 @@
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/icons src/svg",
     "build:watch": "yarn build:js -- --watch",
-    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"

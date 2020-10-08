@@ -14,7 +14,6 @@
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm && cp src/index.d.ts dist/esm/index.d.ts",
     "build:watch": "yarn build:js -- --watch",
-    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"

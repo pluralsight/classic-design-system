@@ -15,7 +15,6 @@
     "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
     "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
     "build:watch": "yarn build:js -- --watch",
-    "prepublish": "yarn build",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },

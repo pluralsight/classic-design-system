@@ -17,7 +17,6 @@
     "build:svg": "svgr --typescript --filename-case kebab --ext \"dist.tsx\" -d src/react/illustrations src/svg",
     "build:watch": "yarn build:esm -- --watch",
     "copy:svg": "node copy-svgs.js",
-    "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"

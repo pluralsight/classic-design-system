@@ -8,8 +8,7 @@
   "keywords": [],
   "main": "dist/index.css",
   "scripts": {
-    "build": "postcss css/index.css --dir dist",
-    "prepublish": "yarn build"
+    "build": "postcss css/index.css --dir dist"
   },
   "style": "dist/index.css",
   "dependencies": {
