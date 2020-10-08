@@ -289,13 +289,13 @@ export default Example
 ### Dynamic Icon
 
 ```typescript
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import Dropdown, { useDropdown } from '@pluralsight/ps-design-system-dropdown'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 
 interface DropdownWithIconProps extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
   icon: React.ReactNode
-  onChange?: (e: React.MouseEvent, value: string) => void
+  onChange?: (e: React.MouseEvent, value: React.ReactText) => void
   menu: React.ReactNode
 }
 
@@ -348,7 +348,7 @@ function Example() {
       label: 'Labs'
     }
   }
-  const handleChange = (e: React.MouseEvent, value: string) => {
+  const handleChange = (e: React.MouseEvent, value: React.ReactText) => {
     setSelected(value)
   }
   const icon = values[selected] ? (
