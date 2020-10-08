@@ -1,11 +1,10 @@
 import React from 'react'
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = ({ themeName }) => {
-  const label = 'psds-dropdown__label'
+  const label = 'psds-dropdown__sub-label'
 
   return compose(
     css(stylesheet[`.${label}`]),
@@ -13,12 +12,11 @@ const styles = ({ themeName }) => {
   )
 }
 
-export const Label = ({ label }) => {
+export const SubLabel: React.FC<{ subLabel?: React.ReactNode }> = ({
+  subLabel
+}) => {
   const themeName = useTheme()
-  return label ? <div {...styles({ themeName })}>{label}</div> : null
+  return subLabel ? <div {...styles({ themeName })}>{subLabel}</div> : null
 }
 
-Label.displayName = 'Dropdown.Label'
-Label.propTypes = {
-  label: PropTypes.node
-}
+SubLabel.displayName = 'Dropdown.SubLabel'

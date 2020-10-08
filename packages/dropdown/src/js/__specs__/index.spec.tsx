@@ -1,7 +1,7 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import React from 'react'
 
-import { findMatchingActionMenuItem } from '../index.js'
+import { findMatchingActionMenuItem } from '..'
 
 describe('#findMatchingActionMenuItem', () => {
   it('returns undefined for undefined menu', () => {

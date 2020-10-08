@@ -3,21 +3,21 @@
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
-import React, { forwardRef, useState } from 'react'
+import React, { forwardRef, useState, HTMLAttributes } from 'react'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import Dropdown from '../index.js'
-import { DropdownContext, useDropdown } from '../../js/index.js'
+import Dropdown from '../'
+import { DropdownContext, useDropdown } from '../../js'
 
 storiesOf('labels', module)
-  .add('none', _ => <Dropdown />)
-  .add('placeholder', _ => <Dropdown placeholder="some placeholder" />)
-  .add('label', _ => <Dropdown label="Some label" />)
-  .add('subLabel', _ => <Dropdown subLabel="Some sublabel" />)
-  .add('label and subLabel', _ => (
+  .add('none', () => <Dropdown />)
+  .add('placeholder', () => <Dropdown placeholder="some placeholder" />)
+  .add('label', () => <Dropdown label="Some label" />)
+  .add('subLabel', () => <Dropdown subLabel="Some sublabel" />)
+  .add('label and subLabel', () => (
     <Dropdown label="Some label" subLabel="Some sublabel" />
   ))
-  .add('all', _ => (
+  .add('all', () => (
     <Dropdown
       label="Some label"
       subLabel="Some sublabel"
@@ -29,21 +29,25 @@ const appearanceStory = storiesOf('appearance', module)
 
 Object.keys(Dropdown.sizes).forEach(size =>
   Object.keys(Dropdown.appearances).forEach(appearance =>
-    appearanceStory.add(`${size} ${appearance}`, _ => (
+    appearanceStory.add(`${size} ${appearance}`, () => (
       <Dropdown
-        size={size}
-        appearance={appearance}
+        size={size as 'medium' | 'small'}
+        appearance={appearance as 'default' | 'subtle'}
         placeholder="The placeholder "
       />
     ))
   )
 )
 Object.keys(Dropdown.appearances).forEach(appearance =>
-  appearanceStory.add(`${appearance} w/ error`, _ => (
-    <Dropdown appearance={appearance} error label="Problem field" />
+  appearanceStory.add(`${appearance} w/ error`, () => (
+    <Dropdown
+      appearance={appearance as 'default' | 'subtle'}
+      error
+      label="Problem field"
+    />
   ))
 )
-appearanceStory.add('gaps', _ => (
+appearanceStory.add('gaps', () => (
   <div>
     <div>
       <Dropdown label="Problem field" />
@@ -67,7 +71,7 @@ appearanceStory.add('gaps', _ => (
   </div>
 ))
 
-storiesOf('disabled', module).add('compare', _ => (
+storiesOf('disabled', module).add('compare', () => (
   <div>
     <Dropdown
       label="Normal"
@@ -84,14 +88,11 @@ storiesOf('disabled', module).add('compare', _ => (
 ))
 
 storiesOf('whitelist', module)
-  .add('name', _ => (
-    <Dropdown placeholder="I have a form name" name="myFieldNameOfPower" />
-  ))
-  .add('onChange', _ => {
+  .add('onChange', () => {
     function ChangeStory() {
       const [value, setValue] = React.useState('two')
 
-      function handleChange(evt, value, label) {
+      function handleChange(evt: React.MouseEvent, value: string) {
         setValue(value)
       }
 
@@ -116,11 +117,11 @@ storiesOf('whitelist', module)
     }
     return <ChangeStory />
   })
-  .add('clear', _ => {
+  .add('clear', () => {
     function ClearStory(props) {
       const [value, setValue] = React.useState('two')
 
-      function handleChange(evt, value, label) {
+      function handleChange(evt: React.MouseEvent, value: string) {
         setValue(value)
       }
 
@@ -153,7 +154,7 @@ storiesOf('whitelist', module)
   })
 
 storiesOf('layouts', module)
-  .add('full width', _ => (
+  .add('full width', () => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
       <Dropdown label="First" style={{ display: 'block', width: '100%' }} />
       <Dropdown
@@ -174,7 +175,7 @@ storiesOf('layouts', module)
       />
     </div>
   ))
-  .add('right-aligned', _ => (
+  .add('right-aligned', () => (
     <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <Dropdown
@@ -185,10 +186,10 @@ storiesOf('layouts', module)
       <div style={{ border: '3px solid green', height: '50px' }} />
     </div>
   ))
-  .add('custom width', _ => {
+  .add('custom width', () => {
     function ChangeStory() {
       const [value, setValue] = React.useState('two')
-      function handleChange(evt, value, label) {
+      function handleChange(ev: React.MouseEvent, value: string) {
         setValue(value)
       }
 
@@ -232,7 +233,7 @@ storiesOf('layouts', module)
     return <ChangeStory />
   })
 
-storiesOf('placeholder', module).add('as pre-selected item', _ => (
+storiesOf('placeholder', module).add('as pre-selected item', () => (
   <Dropdown
     placeholder="Two item"
     menu={
@@ -246,7 +247,7 @@ storiesOf('placeholder', module).add('as pre-selected item', _ => (
 ))
 
 storiesOf('menu', module)
-  .add('single list', _ => (
+  .add('single list', () => (
     <Dropdown
       label="Level"
       menu={
@@ -259,7 +260,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('w/ value', _ => (
+  .add('w/ value', () => (
     <Dropdown
       label="Level"
       value="three-1"
@@ -275,7 +276,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('w/ subLabel', _ => (
+  .add('w/ subLabel', () => (
     <Dropdown
       label="Level"
       subLabel="The course level"
@@ -289,7 +290,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('single list w/ icon', _ => (
+  .add('single list w/ icon', () => (
     <Dropdown
       label="Level"
       placeholder="Select one"
@@ -305,7 +306,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('divider', _ => (
+  .add('divider', () => (
     <Dropdown
       label="Level"
       menu={
@@ -319,7 +320,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('in stack', _ => (
+  .add('in stack', () => (
     <div>
       <div>
         <Dropdown
@@ -353,7 +354,7 @@ storiesOf('menu', module)
       </div>
     </div>
   ))
-  .add('super long', _ => (
+  .add('super long', () => (
     <Dropdown
       label="Level"
       menu={
@@ -366,7 +367,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('nested', _ => (
+  .add('nested', () => (
     <Dropdown
       label="Level"
       placeholder="Select another one"
@@ -391,7 +392,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('onClicks', _ => (
+  .add('onClicks', () => (
     <Dropdown
       label="Level"
       appearance={Dropdown.appearances.subtle}
@@ -424,7 +425,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('w/ longer placeholder', _ => (
+  .add('w/ longer placeholder', () => (
     <Dropdown
       label="Level"
       placeholder="This one is longer than any menu item"
@@ -436,7 +437,7 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('w/ longer nested menu item label', _ => (
+  .add('w/ longer nested menu item label', () => (
     <Dropdown
       label="Level"
       menu={
@@ -468,7 +469,7 @@ storiesOf('menu', module)
     />
   ))
 
-storiesOf('props whitelist', module).add('title', _ => (
+storiesOf('props whitelist', module).add('title', () => (
   <Dropdown
     title="This title should be present"
     label="Level"
@@ -481,9 +482,9 @@ storiesOf('props whitelist', module).add('title', _ => (
 ))
 
 function AutofocusStory(props) {
-  const ref = React.createRef()
+  const ref = React.createRef<HTMLButtonElement>()
 
-  React.useEffect(_ => {
+  React.useEffect(() => {
     ref.current.focus()
   })
 
@@ -491,13 +492,13 @@ function AutofocusStory(props) {
 }
 
 storiesOf('focus', module)
-  .add('onFocus', _ => <Dropdown onFocus={action('focused')} />)
-  .add('onBlur', _ => <Dropdown onBlur={action('blurred')} />)
-  .add('disabled', _ => (
+  .add('onFocus', () => <Dropdown onFocus={action('focused')} />)
+  .add('onBlur', () => <Dropdown onBlur={action('blurred')} />)
+  .add('disabled', () => (
     <Dropdown disabled onBlur={action('blurred')} onFocus={action('focused')} />
   ))
-  .add('autofocus with ref', _ => <AutofocusStory />)
-storiesOf('portal', module).add('position', _ => (
+  .add('autofocus with ref', () => <AutofocusStory />)
+storiesOf('portal', module).add('position', () => (
   <div
     style={{
       width: '100%',
@@ -581,32 +582,42 @@ storiesOf('portal', module).add('position', _ => (
     ultrices eros in cursus turpis massa.
   </div>
 ))
-const DropdownWithIcon = forwardRef(({ icon, ...props }, forwardedRef) => {
-  const allProps = useDropdown(props, forwardedRef)
-  return (
-    <Dropdown.Layout
-      {...allProps.layout}
-      label={<Dropdown.Label {...allProps.label} />}
-      menu={
-        <DropdownContext.Provider {...allProps.value}>
-          <Dropdown.Menu {...allProps.menu} />
-        </DropdownContext.Provider>
-      }
-      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
-      button={
-        <Dropdown.Button {...allProps.button}>
-          {icon}
-          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
-            <Dropdown.Selected {...allProps.selected} />
-          </div>
-        </Dropdown.Button>
-      }
-    />
-  )
-})
+
+interface DropdownWithIconProps
+  extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
+  icon: React.ReactNode
+  onChange?: (e: React.MouseEvent, value: string) => void
+  menu: React.ReactNode
+}
+
+const DropdownWithIcon = forwardRef<HTMLButtonElement, DropdownWithIconProps>(
+  ({ icon, ...props }, forwardedRef) => {
+    const allProps = useDropdown(props, forwardedRef)
+    return (
+      <Dropdown.Layout
+        {...allProps.layout}
+        label={<Dropdown.Label {...allProps.label} />}
+        menu={
+          <DropdownContext.Provider {...allProps.value}>
+            <Dropdown.Menu {...allProps.menu} />
+          </DropdownContext.Provider>
+        }
+        subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+        button={
+          <Dropdown.Button {...allProps.button}>
+            {icon}
+            <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+              <Dropdown.Selected {...allProps.selected} />
+            </div>
+          </Dropdown.Button>
+        }
+      />
+    )
+  }
+)
 
 const DropdownWithDynamicIcon = () => {
-  const [selected, setSelected] = useState()
+  const [selected, setSelected] = useState<null | string>()
   const values = {
     channel: {
       value: 'channel',
@@ -629,7 +640,7 @@ const DropdownWithDynamicIcon = () => {
       label: 'Labs'
     }
   }
-  const handleChange = (e, value) => {
+  const handleChange = (e: React.MouseEvent, value: string) => {
     setSelected(value)
   }
   const icon = values[selected] ? (
