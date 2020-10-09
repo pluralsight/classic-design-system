@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.5.3...@pluralsight/ps-design-system-docs@0.6.0) (2020-10-09)
+
+
+### Features
+
+* **docs:** add start collapsed example for vert collapsed ([7b7dc40](https://github.com/pluralsight/design-system/commit/7b7dc40bdf871e442a428de7a40804a7281b35e2))
+* **dropdown:** ts conversion ([#1304](https://github.com/pluralsight/design-system/issues/1304)) ([7dcd674](https://github.com/pluralsight/design-system/commit/7dcd67435a8d3e1d59d1faf455523f544c0825d9))
+
+
+
+
+
 ## [0.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.5.2...@pluralsight/ps-design-system-docs@0.5.3) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

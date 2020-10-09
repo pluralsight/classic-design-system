@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@1.1.21...@pluralsight/ps-design-system-appframe@1.1.22) (2020-10-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
 ## [1.1.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@1.1.20...@pluralsight/ps-design-system-appframe@1.1.21) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe
