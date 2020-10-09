@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import PropTypes from 'prop-types'
 
-import Theme, { defaultName, useTheme, withTheme } from '../index.js'
+import Theme, { defaultName, useTheme, withTheme } from '..'
 
 describe('Theme', () => {
-  function MockComponent(props) {
+  const MockComponent: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
     const themeName = useTheme()
     return <div {...props}>{themeName}</div>
   }
