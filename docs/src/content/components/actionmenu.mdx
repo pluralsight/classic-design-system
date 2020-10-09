@@ -20,11 +20,7 @@ Use `ActionMenu.Icon` to add context and recognition to action menu items.
 ```typescript
 import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import {
-  PencilIcon,
-  ChannelIcon,
-  PlayIcon
-} from '@pluralsight/ps-design-system-icon'
+import { PencilIcon, ChannelIcon, PlayIcon } from '@pluralsight/ps-design-system-icon'
 
 function Example() {
   return (
@@ -278,8 +274,8 @@ export default Example
   <TypesProp name="nested" type="ActionMenu.Item(s)" desc="nested menu items" />
   <TypesProp
     name="onClick"
-    type="(Event) => void"
-    desc="triggered on item select: click, enter or space"
+    type="(Event, value) => void"
+    desc="override default onClick behavior passed to ActionMenu.props.onClick"
   />
   <TypesProp
     name="origin"

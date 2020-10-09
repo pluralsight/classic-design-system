@@ -236,7 +236,12 @@ import React from 'react'
 import Dropdown, { useDropdown } from '@pluralsight/ps-design-system-dropdown'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 
-const DropdownWithIcon = React.forwardRef(
+interface DropdownWithIconProps extends HTMLAttributes<HTMLButtonElement> {
+  icon: React.ReactNode
+  menu: React.ReactNode
+}
+
+const DropdownWithIcon = React.forwardRef<HTMLButtonElement, DropdownWithIconProps>(
   ({ icon, ...props }, forwardedRef) => {
     const allProps = useDropdown(props, forwardedRef)
     return (
@@ -284,11 +289,17 @@ export default Example
 ### Dynamic Icon
 
 ```typescript
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import Dropdown, { useDropdown } from '@pluralsight/ps-design-system-dropdown'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 
-const DropdownWithIcon = React.forwardRef(
+interface DropdownWithIconProps extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
+  icon: React.ReactNode
+  onChange?: (e: React.MouseEvent, value: React.ReactText) => void
+  menu: React.ReactNode
+}
+
+const DropdownWithIcon = React.forwardRef<HTMLButtonElement, DropdownWithIconProps>(
   ({ icon, ...props }, forwardedRef) => {
     const allProps = useDropdown(props, forwardedRef)
     return (
@@ -314,7 +325,7 @@ const DropdownWithIcon = React.forwardRef(
   }
 )
 function Example() {
-  const [selected, setSelected] = React.useState()
+  const [selected, setSelected] = React.useState<null| string>()
   const values = {
     channel: {
       value: 'channel',
@@ -337,7 +348,7 @@ function Example() {
       label: 'Labs'
     }
   }
-  const handleChange = (e, value) => {
+  const handleChange = (e: React.MouseEvent, value: React.ReactText) => {
     setSelected(value)
   }
   const icon = values[selected] ? (
@@ -427,8 +438,8 @@ export default Example
   <TypesProp name="menu" type="Dropdown.Item(s)" desc="Menu items" />
   <TypesProp
     name="onClick"
-    type="(Event) => void"
-    desc="triggered on item select: click, enter or space"
+    type="(Event, value) => void"
+    desc="override default onClick behavior passed to Dropdown.props.onChange"
   />
   <TypesProp
     name="value"
