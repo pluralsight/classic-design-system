@@ -4,18 +4,17 @@
   height: 100%;
 }
 .header {
-  margin: var(--psLayoutSpacingLarge);
+  margin: var(--psLayoutSpacingLarge) 0 var(--psLayoutSpacingLarge)
+    var(--psLayoutSpacingLarge);
 }
 .logo {
   margin-bottom: var(--psLayoutSpacingLarge);
 }
 .scrollable {
   margin-bottom: var(--psLayoutSpacingLarge);
-  width: calc(
-    100% - var(--psLayoutSpacingLarge) - var(--psLayoutSpacingXXSmall)
-  );
   min-height: 0;
+  min-width: 0;
 }
 .githubButton {
-  margin: 0 var(--psLayoutSpacingLarge);
+  margin: 0 0 0 var(--psLayoutSpacingLarge);
 }
