@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.44](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@7.0.42...@pluralsight/ps-design-system-textarea@7.0.44) (2020-10-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
+## [7.0.43](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@7.0.42...@pluralsight/ps-design-system-textarea@7.0.43) (2020-10-09)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
 ## [7.0.42](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@7.0.41...@pluralsight/ps-design-system-textarea@7.0.42) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea
