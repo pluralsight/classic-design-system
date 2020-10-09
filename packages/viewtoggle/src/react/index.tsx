@@ -1,4 +1,4 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { names, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
   ValueOf,
@@ -24,7 +24,7 @@ import stylesheet from '../css'
 import * as vars from '../vars'
 
 type StyleFn = (
-  themeName: ValueOf<Theme.names>,
+  themeName: ValueOf<keyof typeof names>,
   props?: Record<string, any>
 ) => StyleAttribute
 

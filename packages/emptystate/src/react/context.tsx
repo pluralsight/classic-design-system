@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import { name as themes } from '@pluralsight/ps-design-system-theme'
+import { names as themes } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import { sizes } from '../vars'
