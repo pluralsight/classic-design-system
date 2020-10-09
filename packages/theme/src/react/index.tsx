@@ -2,7 +2,7 @@ import hoistNonReactStatics from 'hoist-non-react-statics'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 export const ThemeContext = React.createContext(vars.defaultName)
 

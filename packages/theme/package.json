@@ -8,17 +8,18 @@
   "keywords": [],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "scripts": {
-    "build": "run-s build:js build:cjs",
-    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
-    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
-    "build:watch": "yarn build:js -- --watch",
+    "build": "run-s build:cjs build:esm",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build:watch": "yarn build:esm -- --watch",
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
     "hoist-non-react-statics": "^3.3.0",
-    "prop-types": "^15.7.2"
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
