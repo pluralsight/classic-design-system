@@ -98,10 +98,6 @@ describe('withTheme', () => {
     expect(EnhancedComponent).not.toBeNull()
   })
 
-  it('exposes the original Component', () => {
-    expect(EnhancedComponent.BaseComponent).toBe(MockComponent)
-  })
-
   it('adds a debuggable displayName', () => {
     expect(EnhancedComponent.displayName).toBe('withTheme(MockComponent)')
   })
