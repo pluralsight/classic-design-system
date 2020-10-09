@@ -10,6 +10,9 @@
 .logo {
   margin-bottom: var(--psLayoutSpacingLarge);
 }
+.search {
+  width: calc(100% - var(--psLayoutSpacingLarge));
+}
 .scrollable {
   margin-bottom: var(--psLayoutSpacingLarge);
   min-height: 0;
