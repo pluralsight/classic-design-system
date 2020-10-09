@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-searchinput",
-  "version": "5.1.9",
+  "version": "5.1.10",
   "description": "Searchinput UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,11 +20,11 @@
     "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^18.2.2",
+    "@pluralsight/ps-design-system-button": "^18.3.0",
     "@pluralsight/ps-design-system-circularprogress": "^6.2.7",
     "@pluralsight/ps-design-system-core": "^6.4.4",
     "@pluralsight/ps-design-system-icon": "^18.2.6",
-    "@pluralsight/ps-design-system-textinput": "^8.1.9",
+    "@pluralsight/ps-design-system-textinput": "^8.1.10",
     "@pluralsight/ps-design-system-util": "^5.3.2"
   },
   "peerDependencies": {
