@@ -45,7 +45,9 @@ function getDisplayName<T>(Component: ComponentType<T>) {
 /**
  * @deprecated please use the useTheme hook to get theme information
  */
-export function withTheme<T, P extends {}>(BaseComponent: ComponentType<P>) {
+export function withTheme<T, P extends Record<string, unknown>>(
+  BaseComponent: ComponentType<P>
+) {
   const name = getDisplayName(BaseComponent)
 
   const Forwarded = forwardRef<T, P>((props, ref) => {
