@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.1.2...@pluralsight/ps-design-system-link@10.2.1) (2020-10-09)
+
+
+### Features
+
+* **dropdown:** ts conversion ([#1304](https://github.com/pluralsight/design-system/issues/1304)) ([7dcd674](https://github.com/pluralsight/design-system/commit/7dcd67435a8d3e1d59d1faf455523f544c0825d9))
+
+
+
+
+
+# [10.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.1.2...@pluralsight/ps-design-system-link@10.2.0) (2020-10-09)
+
+
+### Features
+
+* **dropdown:** ts conversion ([#1304](https://github.com/pluralsight/design-system/issues/1304)) ([7dcd674](https://github.com/pluralsight/design-system/commit/7dcd67435a8d3e1d59d1faf455523f544c0825d9))
+
+
+
+
+
 ## [10.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.1.1...@pluralsight/ps-design-system-link@10.1.2) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

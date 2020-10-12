@@ -7,7 +7,7 @@ import { defaultName, names } from '@pluralsight/ps-design-system-theme'
 import { ADDON_ID } from '../constants'
 
 export const ThemeTool: React.FC = () => {
-  const [themeName, setThemeName] = useAddonState<keyof names>(
+  const [themeName, setThemeName] = useAddonState<keyof typeof names>(
     `${ADDON_ID}/name`,
     defaultName
   )
