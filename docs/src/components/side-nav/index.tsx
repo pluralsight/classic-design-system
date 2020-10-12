@@ -12,6 +12,7 @@ import React, { HTMLAttributes, useState } from 'react'
 import styles from './index.module.css'
 import logoDark from './logo-dark.png'
 import logoLight from './logo-light.png'
+import { useScrollRestoration } from './use-scroll-restoration'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
@@ -35,13 +36,14 @@ export const SideNav: React.FC<Props> = () => {
     'psds-sidenav-openheadertitles',
     headerContainingActiveHref ? [headerContainingActiveHref.header.title] : []
   )
+  const scrollRestore = useScrollRestoration('sidenav-list')
   return (
     <div className={styles.sideNav}>
       <div className={styles.header}>
         <Logo />
         <SearchInput id="ALGOLIA_DOCUSEARCH_INPUT" className={styles.search} />
       </div>
-      <Scrollable className={styles.scrollable}>
+      <Scrollable className={styles.scrollable} {...scrollRestore}>
         <nav>
           <VerticalTabs>
             <VerticalTabs.Group>
@@ -57,14 +59,11 @@ export const SideNav: React.FC<Props> = () => {
                     collapsible
                     collapsed={!isOpen}
                     key={section.header.title}
-                    onClick={() => {
-                      const newTitles = toggleTitle(
-                        openHeaderTitles,
-                        section.header.title
+                    onClick={() =>
+                      setOpenHeaderTitles(
+                        toggleTitle(openHeaderTitles, section.header.title)
                       )
-                      console.log({ newTitles })
-                      setOpenHeaderTitles(newTitles)
-                    }}
+                    }
                   >
                     {section.items.map(item => {
                       const isActive = canUseDOM()
