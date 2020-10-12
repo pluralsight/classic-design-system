@@ -15,16 +15,23 @@ import logoLight from './logo-light.png'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
+function toggleTitle(titles: string[], title: string) {
+  const index = titles.indexOf(title)
+  if (index > -1) {
+    return [...titles.slice(0, index), ...titles.slice(index + 1)]
+  } else {
+    return [...titles, title]
+  }
+}
+
 export const SideNav: React.FC<Props> = () => {
-  const headerContainingActiveHref = items.find(item => {
-    const foundItem = item.items.find(innerItem => {
-      return new RegExp(innerItem.href + '/?').test(window.location.pathname)
-    })
-
-    return !!foundItem
-  })
-
-  const [openHeaderTitles, setOpenHeaderTitles] = useSessionStorage(
+  const headerContainingActiveHref = items.find(
+    item =>
+      !!item.items.find(innerItem =>
+        new RegExp(innerItem.href + '/?').test(window.location.pathname)
+      )
+  )
+  const [openHeaderTitles, setOpenHeaderTitles] = useSessionStorage<string[]>(
     'psds-sidenav-openheadertitles',
     headerContainingActiveHref ? [headerContainingActiveHref.header.title] : []
   )
@@ -50,6 +57,14 @@ export const SideNav: React.FC<Props> = () => {
                     collapsible
                     collapsed={!isOpen}
                     key={section.header.title}
+                    onClick={() => {
+                      const newTitles = toggleTitle(
+                        openHeaderTitles,
+                        section.header.title
+                      )
+                      console.log({ newTitles })
+                      setOpenHeaderTitles(newTitles)
+                    }}
                   >
                     {section.items.map(item => {
                       const isActive = canUseDOM()
@@ -229,7 +244,6 @@ const items = [
         href: '/components/link',
         title: 'Link'
       },
-
       {
         href: '/components/tag',
         title: 'Tag'
@@ -281,12 +295,10 @@ const items = [
         href: '/components/radio',
         title: 'Radio'
       },
-
       {
         href: '/components/switch',
         title: 'Switch'
       },
-
       {
         href: '/components/form',
         title: 'Form'
@@ -430,36 +442,25 @@ function GithubIcon(props) {
   )
 }
 
-function useSessionStorage(key, initialValue) {
-  // State to store our value
-  // Pass initial state function to useState so logic is only executed once
+function useSessionStorage<T>(key: string, initialValue: T) {
   const [storedValue, setStoredValue] = useState(() => {
     try {
-      // Get from local storage by key
       const item = window.sessionStorage.getItem(key)
-      // Parse stored json or if none return initialValue
       return item ? JSON.parse(item) : initialValue
     } catch (error) {
-      // If error also return initialValue
-      console.log(error)
+      console.log('psds docs: error setting session value', error)
       return initialValue
     }
   })
 
-  // Return a wrapped version of useState's setter function that ...
-  // ... persists the new value to sessionStorage.
   const setValue = value => {
     try {
-      // Allow value to be a function so we have same API as useState
       const valueToStore =
         value instanceof Function ? value(storedValue) : value
-      // Save state
       setStoredValue(valueToStore)
-      // Save to local storage
       window.sessionStorage.setItem(key, JSON.stringify(valueToStore))
     } catch (error) {
-      // A more advanced implementation would handle the error case
-      console.log(error)
+      console.log('psds docs: error setting session value', error)
     }
   }
 
