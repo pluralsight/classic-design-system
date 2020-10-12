@@ -2,7 +2,7 @@ import { accessibility } from '@pluralsight/ps-design-system-core'
 import { css } from 'glamor'
 import React, { ReactNode, forwardRef } from 'react'
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLElement> {
   children?: ReactNode
   as?: React.ElementType | keyof JSX.IntrinsicElements
 }
