@@ -1,13 +1,12 @@
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
-
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
 const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
 const circumference = 2 * Math.PI * radius
