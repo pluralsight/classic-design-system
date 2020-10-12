@@ -19,7 +19,7 @@ export const SideNav: React.FC<Props> = () => {
     <div className={styles.sideNav}>
       <div className={styles.header}>
         <Logo />
-        <SearchInput id="ALGOLIA_DOCUSEARCH_INPUT" />
+        <SearchInput id="ALGOLIA_DOCUSEARCH_INPUT" className={styles.search} />
       </div>
       <Scrollable className={styles.scrollable}>
         <nav>
