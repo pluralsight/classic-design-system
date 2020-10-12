@@ -1,7 +1,11 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+import { compose, css, keyframes, StyleAttribute } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -10,13 +14,18 @@ import * as vars from '../vars'
 
 const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
 const circumference = 2 * Math.PI * radius
-const spin = css.keyframes({
+const spin = keyframes({
   to: {
     transform: 'rotate(270deg)'
   }
 })
 
-const styles = {
+type StyleFn = (
+  themeName: string,
+  props: CircularProgressProps
+) => StyleAttribute
+
+const styles: { [key: string]: StyleFn } = {
   circularprogress: (themeName, { size }) =>
     css(stylesheet[`.psds-circularprogress--size-${size}`]),
 
@@ -30,20 +39,39 @@ const styles = {
     )
   },
 
-  bg: themeName =>
+  bg: (themeName, _props) =>
     compose(
       css(stylesheet['.psds-circularprogress__bg']),
       css(stylesheet[`.psds-circularprogress__bg.psds-theme--${themeName}`])
     ),
 
-  fg: themeName =>
+  fg: (themeName, _props) =>
     compose(
       css(stylesheet['.psds-circularprogress__fg']),
       css(stylesheet[`.psds-circularprogress__fg.psds-theme--${themeName}`])
     )
 }
 
-const CircularProgress = React.forwardRef((props, ref) => {
+interface CircularProgressProps extends React.HTMLAttributes<HTMLDivElement> {
+  size?: ValueOf<typeof vars.sizes>
+  value?: number
+}
+
+interface CircularProgressStatics {
+  sizes: typeof vars.sizes
+}
+
+interface CircularProgressComponent
+  extends RefForwardingComponent<
+    CircularProgressProps,
+    HTMLDivElement,
+    CircularProgressStatics
+  > {}
+
+const CircularProgress = React.forwardRef<
+  HTMLDivElement,
+  CircularProgressProps
+>((props, ref) => {
   const themeName = useTheme()
 
   const isIndeterminate = typeof props.value === 'undefined'
@@ -77,7 +105,7 @@ const CircularProgress = React.forwardRef((props, ref) => {
       </svg>
     </div>
   )
-})
+}) as CircularProgressComponent
 
 CircularProgress.propTypes = {
   className: PropTypes.string,

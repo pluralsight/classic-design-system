@@ -12,7 +12,7 @@ describe('CircularProgress', () => {
     expect(getByTestId('mock-component')).toBeInTheDocument()
   })
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
     render(<CircularProgress ref={ref} />)
 
