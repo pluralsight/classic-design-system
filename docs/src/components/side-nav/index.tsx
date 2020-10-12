@@ -4,9 +4,10 @@ import { layout } from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { Link, navigate } from 'gatsby'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, useState } from 'react'
 
 import styles from './index.module.css'
 import logoDark from './logo-dark.png'
@@ -36,22 +37,30 @@ export const SideNav: React.FC<Props> = () => {
                   collapsed
                   key={section.header.title}
                 >
-                  {section.items.map(item => (
-                    <VerticalTabs.Tier2
-                      header={
-                        <VerticalTabs.Tier2.Header
-                          href={item.href}
-                          onClick={(evt: Event) => {
-                            evt.preventDefault()
-                            navigate(item.href)
-                          }}
-                        >
-                          {item.title}
-                        </VerticalTabs.Tier2.Header>
-                      }
-                      key={item.href}
-                    />
-                  ))}
+                  {section.items.map(item => {
+                    const isActive = canUseDOM()
+                      ? new RegExp(item.href + '/?').test(
+                          window.location.pathname
+                        )
+                      : false
+                    return (
+                      <VerticalTabs.Tier2
+                        active={isActive}
+                        header={
+                          <VerticalTabs.Tier2.Header
+                            href={item.href}
+                            onClick={(evt: Event) => {
+                              evt.preventDefault()
+                              navigate(item.href)
+                            }}
+                          >
+                            {item.title}
+                          </VerticalTabs.Tier2.Header>
+                        }
+                        key={item.href}
+                      />
+                    )
+                  })}
                 </VerticalTabs.Tier1>
               ))}
             </VerticalTabs.Group>
