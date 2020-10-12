@@ -16,6 +16,18 @@ import logoLight from './logo-light.png'
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 export const SideNav: React.FC<Props> = () => {
+  const headerContainingActiveHref = items.find(item => {
+    const foundItem = item.items.find(innerItem => {
+      return new RegExp(innerItem.href + '/?').test(window.location.pathname)
+    })
+
+    return !!foundItem
+  })
+
+  const [openHeaderTitles, setOpenHeaderTitles] = useSessionStorage(
+    'psds-sidenav-openheadertitles',
+    headerContainingActiveHref ? [headerContainingActiveHref.header.title] : []
+  )
   return (
     <div className={styles.sideNav}>
       <div className={styles.header}>
@@ -26,43 +38,46 @@ export const SideNav: React.FC<Props> = () => {
         <nav>
           <VerticalTabs>
             <VerticalTabs.Group>
-              {items.map(section => (
-                <VerticalTabs.Tier1
-                  header={
-                    <VerticalTabs.Tier1.Header>
-                      {section.header.title}
-                    </VerticalTabs.Tier1.Header>
-                  }
-                  collapsible
-                  collapsed
-                  key={section.header.title}
-                >
-                  {section.items.map(item => {
-                    const isActive = canUseDOM()
-                      ? new RegExp(item.href + '/?').test(
-                          window.location.pathname
-                        )
-                      : false
-                    return (
-                      <VerticalTabs.Tier2
-                        active={isActive}
-                        header={
-                          <VerticalTabs.Tier2.Header
-                            href={item.href}
-                            onClick={(evt: Event) => {
-                              evt.preventDefault()
-                              navigate(item.href)
-                            }}
-                          >
-                            {item.title}
-                          </VerticalTabs.Tier2.Header>
-                        }
-                        key={item.href}
-                      />
-                    )
-                  })}
-                </VerticalTabs.Tier1>
-              ))}
+              {items.map(section => {
+                const isOpen = openHeaderTitles.includes(section.header.title)
+                return (
+                  <VerticalTabs.Tier1
+                    header={
+                      <VerticalTabs.Tier1.Header>
+                        {section.header.title}
+                      </VerticalTabs.Tier1.Header>
+                    }
+                    collapsible
+                    collapsed={!isOpen}
+                    key={section.header.title}
+                  >
+                    {section.items.map(item => {
+                      const isActive = canUseDOM()
+                        ? new RegExp(item.href + '/?').test(
+                            window.location.pathname
+                          )
+                        : false
+                      return (
+                        <VerticalTabs.Tier2
+                          active={isActive}
+                          header={
+                            <VerticalTabs.Tier2.Header
+                              href={item.href}
+                              onClick={(evt: Event) => {
+                                evt.preventDefault()
+                                navigate(item.href)
+                              }}
+                            >
+                              {item.title}
+                            </VerticalTabs.Tier2.Header>
+                          }
+                          key={item.href}
+                        />
+                      )
+                    })}
+                  </VerticalTabs.Tier1>
+                )
+              })}
             </VerticalTabs.Group>
           </VerticalTabs>
         </nav>
@@ -413,4 +428,40 @@ function GithubIcon(props) {
       </svg>
     </Icon>
   )
+}
+
+function useSessionStorage(key, initialValue) {
+  // State to store our value
+  // Pass initial state function to useState so logic is only executed once
+  const [storedValue, setStoredValue] = useState(() => {
+    try {
+      // Get from local storage by key
+      const item = window.sessionStorage.getItem(key)
+      // Parse stored json or if none return initialValue
+      return item ? JSON.parse(item) : initialValue
+    } catch (error) {
+      // If error also return initialValue
+      console.log(error)
+      return initialValue
+    }
+  })
+
+  // Return a wrapped version of useState's setter function that ...
+  // ... persists the new value to sessionStorage.
+  const setValue = value => {
+    try {
+      // Allow value to be a function so we have same API as useState
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value
+      // Save state
+      setStoredValue(valueToStore)
+      // Save to local storage
+      window.sessionStorage.setItem(key, JSON.stringify(valueToStore))
+    } catch (error) {
+      // A more advanced implementation would handle the error case
+      console.log(error)
+    }
+  }
+
+  return [storedValue, setValue]
 }
