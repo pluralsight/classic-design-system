@@ -17,7 +17,7 @@ import { useHideLabels } from './context'
 import { List, CollapsibleList } from './list'
 
 type StyleFn = (
-  themeName?: ValueOf<Theme.names>,
+  themeName?: ValueOf<keyof typeof Theme.names>,
   props?: Record<string, unknown>
 ) => StyleAttribute
 
