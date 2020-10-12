@@ -26,10 +26,10 @@ function toggleTitle(titles: string[], title: string) {
 }
 
 export const SideNav: React.FC<Props> = () => {
-  const headerContainingActiveHref = items.find(
-    item =>
-      !!item.items.find(innerItem =>
-        new RegExp(innerItem.href + '/?').test(window.location.pathname)
+  const headerContainingActiveHref = groups.find(
+    group =>
+      !!group.items.find(item =>
+        new RegExp(item.href + '/?').test(window.location.pathname)
       )
   )
   const [openHeaderTitles, setOpenHeaderTitles] = useSessionStorage<string[]>(
@@ -47,7 +47,7 @@ export const SideNav: React.FC<Props> = () => {
         <nav>
           <VerticalTabs>
             <VerticalTabs.Group>
-              {items.map(section => {
+              {groups.map(section => {
                 const isOpen = openHeaderTitles.includes(section.header.title)
                 return (
                   <VerticalTabs.Tier1
@@ -110,7 +110,7 @@ export const SideNav: React.FC<Props> = () => {
   )
 }
 
-const items = [
+const groups = [
   {
     header: {
       title: 'Guides'
