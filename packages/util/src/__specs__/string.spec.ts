@@ -2,7 +2,7 @@ import { capitalize } from '..'
 
 describe('#capitalize', () => {
   test('empty', () => {
-    expect(capitalize()).toEqual()
+    expect(capitalize(undefined)).toEqual(undefined)
     expect(capitalize('')).toEqual('')
   })
 

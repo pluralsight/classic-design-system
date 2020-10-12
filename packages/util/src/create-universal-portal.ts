@@ -1,7 +1,14 @@
-import { canUseDOM } from 'exenv'
+import { ReactNode, ReactPortal } from 'react'
 import { createPortal } from 'react-dom'
 
-export function createUniversalPortal() {
+import { canUseDOM } from '..'
+
+export function createUniversalPortal(
+  children: ReactNode,
+  container: Element,
+  key?: null | string
+): ReactPortal {
   if (!canUseDOM) return null
-  return createPortal(...arguments)
+
+  return createPortal(children, container, key)
 }

@@ -1,6 +1,12 @@
 import { useState } from 'react'
 
-export const useToggle = ({ isOpen, onToggle } = {}) => {
+interface Options {
+  isOpen?: boolean
+  onToggle?: () => unknown
+}
+
+export const useToggle = (opts: Options = {}) => {
+  const { isOpen, onToggle } = opts
   const [_isOpen, setOpen] = useState(false)
   return {
     ...(isOpen !== undefined

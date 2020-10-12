@@ -11,8 +11,10 @@ describe('useToggle', () => {
     act(() => {
       result.current.onToggle()
     })
+
     expect(result.current.isOpen).toBe(true)
   })
+
   test('controlled', () => {
     let open = false
     const mockCallback = jest.fn(() => (open = !open))
