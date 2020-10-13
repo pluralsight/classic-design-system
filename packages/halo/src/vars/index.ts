@@ -1,9 +1,5 @@
-export const gapSizes = {
-  default: 'default',
-  small: 'small'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const shapes = {
-  default: 'default',
-  pill: 'pill'
-}
+export const gapSizes = keyMirror('default', 'small')
+
+export const shapes = keyMirror('default', 'pill')

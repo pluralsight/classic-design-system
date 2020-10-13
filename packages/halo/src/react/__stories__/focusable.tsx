@@ -1,9 +1,7 @@
+import * as core from '@pluralsight/ps-design-system-core'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import * as glamor from 'glamor'
 import React from 'react'
-import PropTypes from 'prop-types'
-
-import * as core from '@pluralsight/ps-design-system-core'
-import { withTheme } from '@pluralsight/ps-design-system-theme'
 
 const css = {
   '.focusable': {
@@ -30,23 +28,19 @@ const css = {
 }
 
 const styles = {
-  focusable: props =>
+  focusable: (themeName, { shape }) =>
     glamor.css(
       css['.focusable'],
-      css[`.focusable--theme-${props.themeName}`],
-      css[`.focusable--shape-${props.shape}`]
+      css[`.focusable--theme-${themeName}`],
+      css[`.focusable--shape-${shape}`]
     )
 }
 
 const Focusable = props => {
-  const { shape, themeName, ...filteredProps } = props
+  const themeName = useTheme()
+  const { shape, ...filteredProps } = props
 
-  return <div {...styles.focusable(props)} {...filteredProps} />
-}
-
-Focusable.propTypes = {
-  shape: PropTypes.string,
-  themeName: PropTypes.string
+  return <div {...styles.focusable(themeName, { shape })} {...filteredProps} />
 }
 
 Focusable.defaultProps = {
@@ -54,4 +48,4 @@ Focusable.defaultProps = {
   tabIndex: 0
 }
 
-export default withTheme(Focusable)
+export default Focusable

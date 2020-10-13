@@ -4,7 +4,7 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-jest.mock('../__stories__/focusable.js', () => props => <div {...props} />)
+jest.mock('../__stories__/focusable', () => props => <div {...props} />)
 
 const createNodeMock = () => document.createElement('div')
 
