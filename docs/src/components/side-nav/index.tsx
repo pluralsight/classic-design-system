@@ -4,56 +4,94 @@ import { layout } from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { Link, navigate } from 'gatsby'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, useState } from 'react'
 
 import styles from './index.module.css'
 import logoDark from './logo-dark.png'
 import logoLight from './logo-light.png'
+import { useScrollRestoration } from './use-scroll-restoration'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
 
+function toggleTitle(titles: string[], title: string) {
+  const index = titles.indexOf(title)
+  if (index > -1) {
+    return [...titles.slice(0, index), ...titles.slice(index + 1)]
+  } else {
+    return [...titles, title]
+  }
+}
+
 export const SideNav: React.FC<Props> = () => {
+  const headerContainingActiveHref = groups.find(
+    group =>
+      !!group.items.find(item =>
+        new RegExp(item.href + '/?').test(window.location.pathname)
+      )
+  )
+  const [openHeaderTitles, setOpenHeaderTitles] = useSessionStorage<string[]>(
+    'psds-sidenav-openheadertitles',
+    headerContainingActiveHref ? [headerContainingActiveHref.header.title] : []
+  )
+  const scrollRestore = useScrollRestoration('sidenav-list')
   return (
     <div className={styles.sideNav}>
       <div className={styles.header}>
         <Logo />
-        <SearchInput id="ALGOLIA_DOCUSEARCH_INPUT" />
+        <SearchInput id="ALGOLIA_DOCUSEARCH_INPUT" className={styles.search} />
       </div>
-      <Scrollable className={styles.scrollable}>
+      <Scrollable className={styles.scrollable} {...scrollRestore}>
         <nav>
           <VerticalTabs>
             <VerticalTabs.Group>
-              {items.map(section => (
-                <VerticalTabs.Tier1
-                  header={
-                    <VerticalTabs.Tier1.Header>
-                      {section.header.title}
-                    </VerticalTabs.Tier1.Header>
-                  }
-                  collapsible
-                  collapsed
-                  key={section.header.title}
-                >
-                  {section.items.map(item => (
-                    <VerticalTabs.Tier2
-                      header={
-                        <VerticalTabs.Tier2.Header
-                          href={item.href}
-                          onClick={(evt: Event) => {
-                            evt.preventDefault()
-                            navigate(item.href)
-                          }}
-                        >
-                          {item.title}
-                        </VerticalTabs.Tier2.Header>
-                      }
-                      key={item.href}
-                    />
-                  ))}
-                </VerticalTabs.Tier1>
-              ))}
+              {groups.map(section => {
+                const isOpen = openHeaderTitles.includes(section.header.title)
+                return (
+                  <VerticalTabs.Tier1
+                    header={
+                      <VerticalTabs.Tier1.Header>
+                        {section.header.title}
+                      </VerticalTabs.Tier1.Header>
+                    }
+                    collapsible
+                    collapsed={!isOpen}
+                    key={section.header.title}
+                    onClick={() =>
+                      setOpenHeaderTitles(
+                        toggleTitle(openHeaderTitles, section.header.title)
+                      )
+                    }
+                  >
+                    {section.items.map(item => {
+                      const isActive = canUseDOM()
+                        ? new RegExp(item.href + '/?').test(
+                            window.location.pathname
+                          )
+                        : false
+                      return (
+                        <VerticalTabs.Tier2
+                          active={isActive}
+                          header={
+                            <VerticalTabs.Tier2.Header
+                              href={item.href}
+                              onClick={(evt: Event) => {
+                                evt.preventDefault()
+                                navigate(item.href)
+                              }}
+                            >
+                              {item.title}
+                            </VerticalTabs.Tier2.Header>
+                          }
+                          key={item.href}
+                        />
+                      )
+                    })}
+                  </VerticalTabs.Tier1>
+                )
+              })}
             </VerticalTabs.Group>
           </VerticalTabs>
         </nav>
@@ -72,7 +110,7 @@ export const SideNav: React.FC<Props> = () => {
   )
 }
 
-const items = [
+const groups = [
   {
     header: {
       title: 'Guides'
@@ -205,7 +243,6 @@ const items = [
         href: '/components/link',
         title: 'Link'
       },
-
       {
         href: '/components/tag',
         title: 'Tag'
@@ -257,12 +294,10 @@ const items = [
         href: '/components/radio',
         title: 'Radio'
       },
-
       {
         href: '/components/switch',
         title: 'Switch'
       },
-
       {
         href: '/components/form',
         title: 'Form'
@@ -404,4 +439,29 @@ function GithubIcon(props) {
       </svg>
     </Icon>
   )
+}
+
+function useSessionStorage<T>(key: string, initialValue: T) {
+  const [storedValue, setStoredValue] = useState(() => {
+    try {
+      const item = window.sessionStorage.getItem(key)
+      return item ? JSON.parse(item) : initialValue
+    } catch (error) {
+      console.log('psds docs: error setting session value', error)
+      return initialValue
+    }
+  })
+
+  const setValue = value => {
+    try {
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value
+      setStoredValue(valueToStore)
+      window.sessionStorage.setItem(key, JSON.stringify(valueToStore))
+    } catch (error) {
+      console.log('psds docs: error setting session value', error)
+    }
+  }
+
+  return [storedValue, setValue]
 }

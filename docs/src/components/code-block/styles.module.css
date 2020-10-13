@@ -63,15 +63,15 @@
 .light .editorFade {
   background: linear-gradient(
     180deg,
-    rgba(240, 243, 245, 0) 20%,
-    rgba(240, 243, 245, 1) 100%
+    rgba(247, 249, 250, 0) 20%,
+    rgba(247, 249, 250, 1) 100%
   );
 }
 .dark .editorFade {
   background: linear-gradient(
     to bottom,
-    rgba(30, 36, 41, 0) 20%,
-    rgba(30, 36, 41, 1) 100%
+    rgba(24, 28, 32, 0) 20%,
+    rgba(24, 28, 32, 1) 100%
   );
 }
 .clickToExpand {

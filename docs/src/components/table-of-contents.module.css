@@ -12,6 +12,6 @@
   }
 }
 
-.title {
+h2.title {
   margin: var(--psLayoutSpacingLarge) 0 0 var(--psLayoutSpacingLarge);
 }
