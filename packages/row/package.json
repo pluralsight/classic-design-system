@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-row",
-  "version": "10.0.33",
+  "version": "10.1.0",
   "description": "Design System component for row ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -19,9 +19,9 @@
     "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.4",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
-    "@pluralsight/ps-design-system-prop-types": "^2.0.21",
+    "@pluralsight/ps-design-system-core": "^6.5.0",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.2.0",
+    "@pluralsight/ps-design-system-prop-types": "^2.1.0",
     "prop-types": "^15.7.2",
     "shave": "^2.5.6"
   },
@@ -32,11 +32,11 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.17",
-    "@pluralsight/ps-design-system-button": "^18.3.1",
-    "@pluralsight/ps-design-system-drawer": "^7.2.16",
-    "@pluralsight/ps-design-system-icon": "^18.2.7",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.6",
-    "@pluralsight/ps-design-system-theme": "^5.0.0"
+    "@pluralsight/ps-design-system-build": "^1.12.0",
+    "@pluralsight/ps-design-system-button": "^18.4.0",
+    "@pluralsight/ps-design-system-drawer": "^7.3.0",
+    "@pluralsight/ps-design-system-icon": "^18.3.0",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.0",
+    "@pluralsight/ps-design-system-theme": "^5.1.0"
   }
 }

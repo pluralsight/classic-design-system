@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@10.1.14...@pluralsight/ps-design-system-carousel@10.2.0) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
 ## [10.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@10.1.13...@pluralsight/ps-design-system-carousel@10.1.14) (2020-10-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

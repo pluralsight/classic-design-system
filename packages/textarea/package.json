@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textarea",
-  "version": "7.0.44",
+  "version": "7.1.0",
   "description": "Design system components for text area",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,11 +20,11 @@
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.4",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
-    "@pluralsight/ps-design-system-halo": "^7.0.17",
-    "@pluralsight/ps-design-system-icon": "^18.2.7",
-    "@pluralsight/ps-design-system-util": "^5.3.4",
+    "@pluralsight/ps-design-system-core": "^6.5.0",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.2.0",
+    "@pluralsight/ps-design-system-halo": "^7.1.0",
+    "@pluralsight/ps-design-system-icon": "^18.3.0",
+    "@pluralsight/ps-design-system-util": "^5.4.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -34,9 +34,9 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.17",
-    "@pluralsight/ps-design-system-form": "^7.0.11",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.6",
-    "@pluralsight/ps-design-system-theme": "^5.0.0"
+    "@pluralsight/ps-design-system-build": "^1.12.0",
+    "@pluralsight/ps-design-system-form": "^7.1.0",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.0",
+    "@pluralsight/ps-design-system-theme": "^5.1.0"
   }
 }
