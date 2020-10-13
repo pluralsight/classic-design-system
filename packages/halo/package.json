@@ -35,6 +35,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.11.17",
     "@pluralsight/ps-design-system-storybook-preset": "^0.1.5",
-    "@pluralsight/ps-design-system-theme": "^4.0.15"
+    "@pluralsight/ps-design-system-theme": "^4.0.15",
+    "@types/focus-within": "^1.0.0"
   }
 }

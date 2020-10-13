@@ -16,19 +16,12 @@ import * as vars from '../vars'
 
 if (canUseDOM()) polyfillFocusWithin(document)
 
-type StyleFn = (
+export type StyleFn<P> = (
   themeName: ValueOf<typeof themeNames>,
-  props: {
-    error: boolean
-    gapSize: ValueOf<typeof vars.gapSizes>
-    inline: boolean
-    shape: ValueOf<typeof vars.shapes>
-    visible: boolean
-    visibleOnFocus: boolean
-  }
+  props: P
 ) => StyleAttribute
 
-const styles: { [name: string]: StyleFn } = {
+const styles: { [name: string]: StyleFn<HaloProps> } = {
   halo: (themeName, props) => {
     const base = BASE_CLASSNAME
     const theme = base + themeClasses[themeName]
