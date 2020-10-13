@@ -21,7 +21,7 @@ export type StyleFn<P> = (
   props: P
 ) => StyleAttribute
 
-const styles: { [name: string]: StyleFn<HaloProps> } = {
+const styles: { [name: string]: StyleFn<InternalHaloProps> } = {
   halo: (themeName, props) => {
     const base = BASE_CLASSNAME
     const theme = base + themeClasses[themeName]
@@ -48,14 +48,16 @@ const styles: { [name: string]: StyleFn<HaloProps> } = {
   }
 }
 
-interface HaloProps extends HTMLAttributes<HTMLDivElement> {
-  error?: boolean
-  gapSize?: ValueOf<typeof vars.gapSizes>
-  inline?: boolean
-  shape?: ValueOf<typeof vars.shapes>
-  visible?: boolean
-  visibleOnFocus?: boolean
+interface InternalHaloProps {
+  error: boolean
+  gapSize: ValueOf<typeof vars.gapSizes>
+  inline: boolean
+  shape: ValueOf<typeof vars.shapes>
+  visible: boolean
+  visibleOnFocus: boolean
 }
+
+type HaloProps = HTMLAttributes<HTMLDivElement> & Partial<InternalHaloProps>
 
 interface HaloStatics {
   gapSizes: typeof vars.gapSizes
