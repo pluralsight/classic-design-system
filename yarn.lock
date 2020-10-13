@@ -2813,6 +2813,244 @@
     string-width "^2.0.0"
     strip-ansi "^3"
 
+"@pluralsight/ps-design-system-appframe@^1.1.23":
+  version "1.1.23"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-appframe/-/ps-design-system-appframe-1.1.23.tgz#11778651fe4188ae418a36b535f2decf1d335f83"
+  integrity sha512-4VYV4mlytOO8DH1peZmWyVRvmX48hkKSVObHKJI9YnMcVtkHH9sQEwngTUov8pY3fMzH/Av1TQvWa0/DdeXDmw==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^18.3.1"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-scrollable" "^1.1.13"
+    "@pluralsight/ps-design-system-util" "^5.3.3"
+    body-scroll-lock "^3.0.3"
+    exenv "^1.2.2"
+    focus-within "^3.0.2"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-banner@^6.0.31":
+  version "6.0.31"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-banner/-/ps-design-system-banner-6.0.31.tgz#eedbcc0a2ac298e24638c8d695322f4801485627"
+  integrity sha512-zkFTqh24CMBm+qmK2eGHeKppNxheOKGVpUJZfWaML12/RVfgWhBTy+cXyklPmUAhDhER0DWQ8f8KSWrKUfXTaA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-link" "^10.2.1"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-breadcrumb@^7.0.31":
+  version "7.0.31"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-breadcrumb/-/ps-design-system-breadcrumb-7.0.31.tgz#b21de266699ca22f62c6ba94e1df79d3965458da"
+  integrity sha512-NzmWciTM2ZYaBijH3/SYqWvN4g9q2DgoPrRdyZJ0vPGuACa99XazK7FmNdfXeDuQbmhxt+Lt+N3L9s88igaiwg==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^18.3.1"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-button@^18.3.1":
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-button/-/ps-design-system-button-18.3.1.tgz#91824742d18ad4cbb20d4fe26d37498d96a02730"
+  integrity sha512-kcAWhA9A5gYb0cD6YDMIcyXzzQ75RrUflZApP55lzZeNX0AQazaufHYgCYLio0LnYQ9/zuzoJH7SixYi8V4mgg==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+
+"@pluralsight/ps-design-system-datepicker@^7.1.11":
+  version "7.1.11"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-datepicker/-/ps-design-system-datepicker-7.1.11.tgz#ba57255c6f6fa8eed452842d3c1d00083c3c1d29"
+  integrity sha512-LgIuARvXFGnohXCS6N7Cdw3qyXzMwhpvAX8BtDYTNDrjycCkWZp/5wyDzC1JNGeWMpAV5wBKOOC6I0aYKloAEQ==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^18.3.1"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-halo" "^7.0.16"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-dialog@^8.2.10":
+  version "8.2.10"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-dialog/-/ps-design-system-dialog-8.2.10.tgz#61247470c24d13e5acfd88f30df7f53a6eefcb19"
+  integrity sha512-cYVhxA6EQSonFzgxhCIqw1TqbxrJc4H8nphnxpZPINi0SKy4urJWhQ8lzHxHrEaOq7hAg1opAHtVaBCq/8RoRA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-focusmanager" "^5.0.26"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-drawer@^7.2.16":
+  version "7.2.16"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-drawer/-/ps-design-system-drawer-7.2.16.tgz#2215bb829bdd6ff14008ef6a949c95f5e8f72fb7"
+  integrity sha512-B+ZmGCg3meIxsgU1kggk5kkGE1AohyWp23kap76r4B+rUPfVtd204dEVPaiJTMvAjrO4UnzomMJnHX/TmVAG4A==
+  dependencies:
+    "@pluralsight/ps-design-system-collapsible" "^2.1.4"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+    element-closest "^3.0.2"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-dropdown@^9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-dropdown/-/ps-design-system-dropdown-9.1.1.tgz#7064bf5d81f228669679d9e965587deed92d486c"
+  integrity sha512-po5Q6vIrCZCkmUUcz4DQ8wBggHGSRK+fOxI7RhFHvtW8J30Qr1Nmv3GhsHfRCRqYKuM1Bq4dvfFpzRx4lN/1Nw==
+  dependencies:
+    "@pluralsight/ps-design-system-actionmenu" "^15.1.3"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-halo" "^7.0.16"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-util" "^5.3.3"
+    exenv "^1.2.2"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-emptystate@^8.1.11":
+  version "8.1.11"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-emptystate/-/ps-design-system-emptystate-8.1.11.tgz#30251230dbc3b0691855215d743b8b3e5a74fdb6"
+  integrity sha512-/Ha+4x+42gO9yIBLXUhioYeihp/37dZNi9F55ETNeUlbf9L6+YTX95lwg/qgsTpMouVfHt/J8cETeFwz/hgiMQ==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+
+"@pluralsight/ps-design-system-errors@^8.0.33":
+  version "8.0.33"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-errors/-/ps-design-system-errors-8.0.33.tgz#aef0d078d4002c3cceafbb4e1337793cb8a10d6c"
+  integrity sha512-S6CVvH1Ke/rLs0cZlO5MzAVKgt59czREQ2qMjmDiytAWsBBzFh2Ya/X35stWm4vt4MSDtPLygm7qxnf9XmeZNQ==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^18.3.1"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-text" "^16.0.26"
+    camelize "^1.0.0"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-form@^7.0.11":
+  version "7.0.11"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-form/-/ps-design-system-form-7.0.11.tgz#eab3cf0b68ba7fd0a7fefca689d78ac9eb82076b"
+  integrity sha512-5FJFsnQDtRLrf4QoSoUVKqaT1N+HXRkQAOYXBgcvZ3BftDWJnZofuwK+cabPZhdcz1/+zRzhT0GPmbrasWFcXQ==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-util" "^5.3.3"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-layout@^7.0.24":
+  version "7.0.24"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-layout/-/ps-design-system-layout-7.0.24.tgz#ed028ef715276a3cbf7e2a31cdb873d999bac1e1"
+  integrity sha512-00z+AjxUV2VYW1mFcGZX4T0mGaUhthN8NZDjb8Qa99g4mOmj/jEsrk6QbHFkzmNGOna6cQP9z2f4HfsltJ1aYQ==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-prop-types" "^2.0.20"
+    "@pluralsight/ps-design-system-text" "^16.0.26"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-link@^10.2.1":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-link/-/ps-design-system-link-10.2.1.tgz#ff168817c0180d930ec7c14567c8b8b88811ec79"
+  integrity sha512-MqdpwNQu+tFDDsyJgkJ9uiqWgLjk8q3GNNrCjYBsOrp5RrNVFZcOWzTFYRPZN28AUgrYBbVgUgvHJuGn59lhNQ==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+
+"@pluralsight/ps-design-system-note@^7.0.20":
+  version "7.0.20"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-note/-/ps-design-system-note-7.0.20.tgz#aba0a3215c30b6ef1fde06070014f8a4874b3572"
+  integrity sha512-UyNy6kfGop0ufXQApZvPJ1xSInWRSxLpkKtoMi/eWgSI+X5bY/GvgJ8/OTIQ6nrz2L21dYOUsQlLmi7FfD1XoA==
+  dependencies:
+    "@pluralsight/ps-design-system-avatar" "^6.0.18"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-prop-types" "^2.0.20"
+
+"@pluralsight/ps-design-system-row@^10.0.33":
+  version "10.0.33"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-row/-/ps-design-system-row-10.0.33.tgz#613e00328a9faafdf2fdcc6b363881b7b50ca423"
+  integrity sha512-/2xva3QYnLThUydmuL4DZJSQmuyfNFFjENhyaMaT3SGt2oqraHccwDg8ctFMr4BVZhxNY0pCBSiMRQ5l8gGlkQ==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-prop-types" "^2.0.20"
+    prop-types "^15.7.2"
+    shave "^2.5.6"
+
+"@pluralsight/ps-design-system-searchinput@^5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-searchinput/-/ps-design-system-searchinput-5.1.11.tgz#fcde009159b07900351af8b349ca4fab73eceab4"
+  integrity sha512-k3AmHPRJQn/IA2M/pxRuvGgi7oJU6B8jY5xokP2gs5q6ej4rW53RGqJENKTwQoCpNHHCe3daaPcjHrmEB63pog==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^18.3.1"
+    "@pluralsight/ps-design-system-circularprogress" "^6.2.7"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-textinput" "^8.1.11"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+
+"@pluralsight/ps-design-system-table@^9.0.20":
+  version "9.0.20"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-table/-/ps-design-system-table-9.0.20.tgz#1b405b49165b35c1d06d9dfe39f020c27fa496b8"
+  integrity sha512-GQ2vyyn32wUBEAdRghC4kZxcBxJ7yAZVX6r6u9k8MXilkkW3FHqFkrQF89EvT0HFSTHZoHgz2XYIbo2gtAR0pw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-drawer" "^7.2.16"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-textarea@^7.0.44":
+  version "7.0.44"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-textarea/-/ps-design-system-textarea-7.0.44.tgz#f6461f2096f9c0166eedfcb3bdb4c0f3c42e431b"
+  integrity sha512-4YqrvWowZq/8jLIV/AMCFw5naVkrxyoHwWL7CZDa2kpauoCWc9wvXG34vuyVqBNsZsyc7A7b3ekE7kTourvDPA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-halo" "^7.0.16"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-textinput@^8.1.11":
+  version "8.1.11"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-textinput/-/ps-design-system-textinput-8.1.11.tgz#384e485b6d8543b18466f03978a53d7eef9e5c42"
+  integrity sha512-1TJASXV8iOTncgbAqkP5DZpkbJNwegaD9xgEHe62QaztcVyOktbmncHKVxidETvaxrrV1VKmRF2pSuT2ba1Pyw==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^18.3.1"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-halo" "^7.0.16"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    prop-types "^15.7.2"
+
+"@pluralsight/ps-design-system-typeahead@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-typeahead/-/ps-design-system-typeahead-4.1.12.tgz#2b60b9c9044e49656954ddc2659e037affad9cc3"
+  integrity sha512-x6dMLl72TcwNiIUO4dUa4tB/p42lSosEDm2zDnE+TTanpGqOTfOeZR3vGTlG++4T63pU5BSdM5Wgl9dBudfRHg==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-position" "^4.1.21"
+    "@pluralsight/ps-design-system-prop-types" "^2.0.20"
+    "@pluralsight/ps-design-system-textinput" "^8.1.11"
+    "@pluralsight/ps-design-system-theme" "^4.0.15"
+    "@pluralsight/ps-design-system-util" "^5.3.3"
+
+"@pluralsight/ps-design-system-verticaltabs@^4.1.5":
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-verticaltabs/-/ps-design-system-verticaltabs-4.1.5.tgz#f7d1e1504ef35a30c2c83d5e54eb19eb1f1fb2fd"
+  integrity sha512-9uOTq2tbCeq/dMLBfYi7CRBktWGvQTG58op8DH8TpdwHBWnKxmftnx8ADSzKL/DKRhGYzE1zeZsJzGmQ0jEJtg==
+  dependencies:
+    "@pluralsight/ps-design-system-collapsible" "^2.1.4"
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-icon" "^18.2.6"
+    "@pluralsight/ps-design-system-util" "^5.3.2"
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.1":
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.2.tgz#1f9741e0bde9790a0e13272082ed7272a083620d"
@@ -3954,6 +4192,11 @@
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@types/fined/-/fined-1.1.2.tgz#05d2b9f93d144855c97c18c9675f424ed01400c4"
   integrity sha512-hzzTS+X9EqDhx4vwdch/DOZci/bfh5J6Nyz8lqvyfBg2ROx2fPafX+LpDfpVgSvQKj0EYkwTYpBO3z2etwbkOw==
+
+"@types/focus-within@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/focus-within/-/focus-within-1.0.0.tgz#650d9d8b518a7f664883d39864525c2785435dfe"
+  integrity sha512-CT4wbB46M2Vmw+njLkkVysCtKKErxt0lksk70SZcm7BnKYduMOsk/vCN+hn73onK7Oyax/2WCMg2L2Qkl0Gs2w==
 
 "@types/get-port@^3.2.0":
   version "3.2.0"
