@@ -772,14 +772,12 @@ exports[`Storyshots combo everything focusable 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              css={
+              data-css-1vvr7he=""
+              style={
                 Object {
-                  "& svg": Object {
-                    "fill": "#FFFFFF",
-                  },
+                  "color": "#FFFFFF",
                 }
               }
-              data-css-1vvr7he=""
             >
               <svg
                 aria-label="play circle icon"
@@ -1054,14 +1052,12 @@ exports[`Storyshots combo everything locked 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              css={
+              data-css-1vvr7he=""
+              style={
                 Object {
-                  "& svg": Object {
-                    "fill": "#FFFFFF",
-                  },
+                  "color": "#FFFFFF",
                 }
               }
-              data-css-1vvr7he=""
             >
               <svg
                 aria-label="play circle icon"
@@ -1512,14 +1508,12 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              css={
+              data-css-1vvr7he=""
+              style={
                 Object {
-                  "& svg": Object {
-                    "fill": "#FFFFFF",
-                  },
+                  "color": "#FFFFFF",
                 }
               }
-              data-css-1vvr7he=""
             >
               <svg
                 aria-label="play circle icon"
@@ -1678,14 +1672,12 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              css={
+              data-css-1vvr7he=""
+              style={
                 Object {
-                  "& svg": Object {
-                    "fill": "#FFFFFF",
-                  },
+                  "color": "#FFFFFF",
                 }
               }
-              data-css-1vvr7he=""
             >
               <svg
                 aria-label="play circle icon"

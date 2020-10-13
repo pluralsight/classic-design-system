@@ -55,7 +55,7 @@ storiesOf('combo', module)
           <a href="http://duckduckgo.com?q=overlay">
             <Icon.PlayCircleIcon
               size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colorsWhite } }}
+              style={{ color: core.colorsWhite }}
             />
           </a>
         </Card.FullOverlayLink>
@@ -101,7 +101,7 @@ storiesOf('combo', module)
           <a href="http://duckduckgo.com?q=overlay">
             <Icon.PlayCircleIcon
               size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colorsWhite } }}
+              style={{ color: core.colorsWhite }}
             />
           </a>
         </Card.FullOverlayLink>
@@ -249,7 +249,7 @@ storiesOf('fullOverlay', module)
           <a href="http://duckduckgo.com?q=overlay">
             <Icon.PlayCircleIcon
               size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colorsWhite } }}
+              style={{ color: core.colorsWhite }}
             />
           </a>
         </Card.FullOverlayLink>
@@ -263,7 +263,7 @@ storiesOf('fullOverlay', module)
           <a href="http://duckduckgo.com?q=overlay">
             <Icon.PlayCircleIcon
               size={Icon.sizes.large}
-              css={{ '& svg': { fill: core.colorsWhite } }}
+              style={{ color: core.colorsWhite }}
             />
           </a>
         </Card.FullOverlayLink>

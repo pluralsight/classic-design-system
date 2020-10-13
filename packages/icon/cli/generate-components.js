@@ -22,10 +22,14 @@ interface ${componentName}Statics {
   colors: typeof vars.colors
 }
 
-interface ${componentName}Component
-  extends RefForwardingComponent<IconProps, HTMLDivElement, ${componentName}Statics> {}
+interface ${componentName}Props extends IconProps {
+  'aria-label'?: string
+}
 
-const ${componentName} = React.forwardRef<HTMLDivElement, IconProps>(
+interface ${componentName}Component
+  extends RefForwardingComponent<${componentName}Props, HTMLDivElement, ${componentName}Statics> {}
+
+const ${componentName} = React.forwardRef<HTMLDivElement, ${componentName}Props>(
   ({ 'aria-label': ariaLabel, ...props }, ref) => { 
     return (
       <Icon {...props} ref={ref}>
