@@ -1,13 +1,10 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import React, { HTMLAttributes } from 'react'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import { withTheme } from '@pluralsight/ps-design-system-theme'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
-import { toPercentageString } from '../js/index.js'
+import stylesheet from '../css'
+import { toPercentageString } from '../js'
 
 const styles = {
   bg: ({ themeName }) =>
@@ -28,20 +25,24 @@ const styles = {
   }
 }
 
-const LinearProgress = props => (
-  <div {...styles.bg(props)} {...filterReactProps(props)}>
-    <ScreenReaderOnly role="region" aria-live="off">
-      {`${props.value}% complete`}
-    </ScreenReaderOnly>
-    <div {...styles.fg(props)} />
-  </div>
-)
-
-LinearProgress.propTypes = {
-  value: PropTypes.number
+interface LinearProgressProps extends HTMLAttributes<HTMLDivElement> {
+  value?: number
 }
+
+const LinearProgress: React.FC<LinearProgressProps> = ({ value, ...rest }) => {
+  const themeName = useTheme()
+  return (
+    <div {...styles.bg({ themeName })} {...rest}>
+      <ScreenReaderOnly role="region" aria-live="off">
+        {`${value}% complete`}
+      </ScreenReaderOnly>
+      <div {...styles.fg({ themeName, value })} />
+    </div>
+  )
+}
+
 LinearProgress.defaultProps = {
   value: 0
 }
 
-export default withTheme(LinearProgress)
+export default LinearProgress
