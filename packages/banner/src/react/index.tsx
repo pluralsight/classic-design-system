@@ -46,12 +46,12 @@ interface BannerComponent
   extends RefForwardingComponent<BannerProps, HTMLDivElement, BannerStatics> {}
 
 const Banner = React.forwardRef((props, ref) => {
-  const { color, onClick, ...rest } = props
+  const { color = vars.colors.blue, onClick, ...rest } = props
 
   return (
     <ColorContext.Provider value={color}>
-      <div {...styles.banner(props)} {...rest} ref={ref}>
-        <div {...styles.text(props)}>{props.children}</div>
+      <div {...styles.banner({ color })} {...rest} ref={ref}>
+        <div {...styles.text({ color })}>{props.children}</div>
         {props.onClick && (
           <button {...styles.dismiss(props)} onClick={onClick}>
             <CloseIcon />
