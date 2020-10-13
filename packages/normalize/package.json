@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-normalize",
-  "version": "4.0.13",
+  "version": "4.1.1",
   "description": "Normalize stylesheet. Should be present on-page to help guarantee ps-* design system components appear properly.",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -12,7 +12,7 @@
   },
   "style": "dist/index.css",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.4",
+    "@pluralsight/ps-design-system-core": "^6.5.1",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

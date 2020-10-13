@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.0...@pluralsight/ps-design-system-docs@0.8.1) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.7.0...@pluralsight/ps-design-system-docs@0.8.0) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.6.0...@pluralsight/ps-design-system-docs@0.7.0) (2020-10-13)
+
+
+### Bug Fixes
+
+* **docs:** hack search thin enough to mostly fit and not disturb scrollbar ([b5b40f2](https://github.com/pluralsight/design-system/commit/b5b40f28eb9f9805b269d121e7cb2ba9e0ccb651))
+* **docs:** horz align scrollbar on sidenav ([133a61f](https://github.com/pluralsight/design-system/commit/133a61feb151bd686eb784ee6c08beb1b130e399))
+* **docs:** make heading more specific for unreliable style order ([bbd3c32](https://github.com/pluralsight/design-system/commit/bbd3c32cba3f8495e83066b25ef075036c055ff0))
+* **docs:** restore the scroll restore, broken by scrollable ([87d0143](https://github.com/pluralsight/design-system/commit/87d01433b687f9eb8ac66e09972778940625b60e))
+
+
+### Features
+
+* **docs:** highlight active sidenav link ([81a6a23](https://github.com/pluralsight/design-system/commit/81a6a23b3b630450eb98b688f5bd8b100739ee01))
+* **docs:** open sidenav group containing active link ([bf579f8](https://github.com/pluralsight/design-system/commit/bf579f833939c5b7837fda8c6c2a06ac74d1500e))
+* **docs:** persist sidenav group toggling ([5238349](https://github.com/pluralsight/design-system/commit/523834967f19f17137a414ef7e0c831d5604c165))
+
+
+
+
+
 ## [0.6.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.5.3...@pluralsight/ps-design-system-docs@0.6.1) (2020-10-09)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "4.0.15",
+  "version": "5.1.1",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -18,8 +18,8 @@
     "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
-    "hoist-non-react-statics": "^3.3.0",
-    "@pluralsight/ps-design-system-util": "*"
+    "@pluralsight/ps-design-system-util": "^5.4.1",
+    "hoist-non-react-statics": "^3.3.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

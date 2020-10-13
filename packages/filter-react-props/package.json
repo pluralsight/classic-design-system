@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-filter-react-props",
-  "version": "1.1.20",
+  "version": "1.2.1",
   "description": "Prop filter utility for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
