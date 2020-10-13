@@ -5,7 +5,7 @@ import React from 'react'
 
 import Link from '@pluralsight/ps-design-system-link'
 
-import Banner from '../index.js'
+import Banner from '..'
 
 const colorStory = storiesOf('color', module)
 Object.keys(Banner.colors).forEach(color =>
@@ -24,13 +24,15 @@ storiesOf('onClick', module)
       long text. this is the long text. this is the long text.{' '}
     </Banner>
   ))
-  .add('side by side', () =>
-    Object.keys(Banner.colors).map(color => (
-      <Banner key={color} color={color} onClick={action('click X')}>
-        this is the text
-      </Banner>
-    ))
-  )
+  .add('side by side', () => (
+    <div>
+      {Object.keys(Banner.colors).map(color => (
+        <Banner key={color} color={color} onClick={action('click X')}>
+          this is the text
+        </Banner>
+      ))}
+    </div>
+  ))
 
 const buttonStory = storiesOf('Button', module)
 Object.keys(Banner.colors).forEach(color =>

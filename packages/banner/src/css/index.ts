@@ -12,7 +12,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 export default {
   '.psds-banner': {

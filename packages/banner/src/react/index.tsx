@@ -1,17 +1,22 @@
-import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
+import DSButton from '@pluralsight/ps-design-system-button'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+import { compose, css, StyleAttribute } from 'glamor'
 import React, { createContext, useContext } from 'react'
 
-import BaseButton from '@pluralsight/ps-design-system-button'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+const ColorContext = createContext<ValueOf<typeof vars.colors>>(
+  vars.colors.blue
+)
 
-const ColorContext = createContext()
+type StyleFn = (props: BannerProps) => StyleAttribute
 
-const styles = {
+const styles: { [name: string]: StyleFn } = {
   banner: ({ color }) =>
     compose(
       css(stylesheet['.psds-banner']),
@@ -26,12 +31,26 @@ const styles = {
   text: () => css(stylesheet['.psds-banner__text'])
 }
 
+interface BannerProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'> {
+  color?: ValueOf<typeof vars.colors>
+  onClick?: (evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+}
+
+interface BannerStatics {
+  Button: typeof Button
+  colors: typeof vars.colors
+}
+
+interface BannerComponent
+  extends RefForwardingComponent<BannerProps, HTMLDivElement, BannerStatics> {}
+
 const Banner = React.forwardRef((props, ref) => {
   const { color, onClick, ...rest } = props
 
   return (
     <ColorContext.Provider value={color}>
-      <div {...styles.banner(props)} {...filterReactProps(rest)} ref={ref}>
+      <div {...styles.banner(props)} {...rest} ref={ref}>
         <div {...styles.text(props)}>{props.children}</div>
         {props.onClick && (
           <button {...styles.dismiss(props)} onClick={onClick}>
@@ -41,32 +60,33 @@ const Banner = React.forwardRef((props, ref) => {
       </div>
     </ColorContext.Provider>
   )
-})
+}) as BannerComponent
 
 Banner.displayName = 'Banner'
 
-Banner.propTypes = {
-  color: PropTypes.oneOf(Object.keys(vars.colors).map(key => vars.colors[key])),
-  children: PropTypes.node.isRequired,
-  onClick: PropTypes.func
-}
-Banner.defaultProps = {
-  color: vars.colors.blue
-}
+interface ButtonProps
+  extends React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {}
+
+interface ButtonComponent
+  extends RefForwardingComponent<
+    ButtonProps,
+    HTMLButtonElement | HTMLAnchorElement,
+    {}
+  > {}
 
 const Button = React.forwardRef((props, forwardRef) => {
   const color = useContext(ColorContext)
 
   return (
-    <BaseButton
+    <DSButton
       {...props}
       {...styles.button({ color })}
       ref={forwardRef}
-      appearance={BaseButton.appearances.stroke}
-      size={BaseButton.sizes.small}
+      appearance={DSButton.appearances.stroke}
+      size={DSButton.sizes.small}
     />
   )
-})
+}) as ButtonComponent
 Button.displayName = 'Button'
 
 Banner.Button = Button
