@@ -36,7 +36,9 @@ const styles = {
     )
 }
 
-interface CheckboxProps extends React.HTMLAttributes<HTMLDivElement> {
+interface CheckboxProps
+  extends React.HTMLAttributes<HTMLDivElement>,
+    Record<string, unknown> {
   checked?: boolean
   disabled?: boolean
   error?: boolean
@@ -124,7 +126,10 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
         type="checkbox"
         value={props.value}
         {...styles.input()}
-        {...omit(props, ['label', 'onCheck', 'error', 'indeterminate'])}
+        {...omit<CheckboxProps, ['label', 'onCheck', 'error', 'indeterminate']>(
+          props,
+          ['label', 'onCheck', 'error', 'indeterminate']
+        )}
       />
       <div {...styles.label(themeName, props)}>{props.label}</div>
     </label>
