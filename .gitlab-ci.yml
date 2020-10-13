@@ -50,6 +50,8 @@ lint:
 test:
   stage: test
   script:
+    - yarn workspace @pluralsight/ps-design-system-core run build
+    - yarn workspace @pluralsight/ps-design-system-icon run build
     - yarn build
     - yarn test:ci
 
