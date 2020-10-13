@@ -2,8 +2,8 @@ import { css } from 'glamor'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Icon from '../index.js'
-import * as Icons from '../icons/index.js'
+import Icon from '..'
+import * as Icons from '../icons'
 const styles = {
   grid: css({
     display: 'grid',

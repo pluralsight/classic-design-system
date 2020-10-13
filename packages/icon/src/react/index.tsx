@@ -1,11 +1,13 @@
 import { css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
 const style = {
   icon: ({ color, size }) =>
@@ -16,17 +18,28 @@ const style = {
     )
 }
 
-const Icon = React.forwardRef(({ children, ...props }, ref) => (
-  <div {...style.icon(props)} {...filterReactProps(props)} ref={ref}>
-    {children}
-  </div>
-))
-Icon.displayName = 'Icon'
-Icon.propTypes = {
-  children: PropTypes.node,
-  color: PropTypes.oneOf(Object.values(vars.colors)),
-  size: PropTypes.oneOf(Object.values(vars.sizes))
+interface IconStatics {
+  sizes: typeof vars.sizes
+  colors: typeof vars.colors
 }
+
+export interface IconProps extends HTMLAttributes<HTMLDivElement> {
+  size?: ValueOf<typeof vars.sizes>
+  color?: ValueOf<typeof vars.colors>
+}
+
+interface IconComponent
+  extends RefForwardingComponent<IconProps, HTMLDivElement, IconStatics> {}
+
+const Icon = React.forwardRef<HTMLDivElement, IconProps>(
+  ({ children, color, size, ...props }, ref) => (
+    <div {...style.icon({ color, size })} {...props} ref={ref}>
+      {children}
+    </div>
+  )
+) as IconComponent
+
+Icon.displayName = 'Icon'
 
 Icon.defaultProps = {
   size: vars.sizes.medium
