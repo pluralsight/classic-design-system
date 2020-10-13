@@ -2,37 +2,32 @@ import * as core from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import LinearProgress from '../index.js'
+import LinearProgress from '..'
 
-class AnimationDemo extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { value: 0 }
-  }
+const useRandom = () => {
+  const [value, setValue] = React.useState(0)
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      const rando = Math.floor(Math.random() * 115)
+      setValue(rando > 100 ? 100 : rando)
+    }, 2500)
+    return () => clearInterval(interval)
+  })
+  return value
+}
 
-  componentDidMount() {
-    this.interval = setInterval(() => {
-      const rando = Math.random() * 115
-      this.setState({ value: rando > 100 ? 100 : rando })
-    }, 1500)
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval)
-  }
-
-  render() {
-    return (
-      <div
-        style={{ display: 'flex', flexDirection: 'column', minWidth: '300px' }}
-      >
-        <LinearProgress value={this.state.value} />
-        <div style={{ color: core.colorsTextIcon.highOnDark }}>
-          Value: {this.state.value}
-        </div>
+const AnimationDemo = props => {
+  const value = useRandom()
+  return (
+    <div
+      style={{ display: 'flex', flexDirection: 'column', minWidth: '300px' }}
+    >
+      <LinearProgress value={value} />
+      <div style={{ color: core.colorsTextIcon.highOnDark }}>
+        Value: {value}
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 storiesOf('LinearProgress', module)
