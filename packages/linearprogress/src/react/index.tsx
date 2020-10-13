@@ -32,8 +32,8 @@ interface LinearProgressProps extends HTMLAttributes<HTMLDivElement> {
 const LinearProgress: React.FC<LinearProgressProps> = ({ value, ...rest }) => {
   const themeName = useTheme()
   return (
-    <div {...styles.bg({ themeName })}>
-      <ScreenReaderOnly role="region" aria-live="off" {...rest}>
+    <div {...styles.bg({ themeName })} {...rest}>
+      <ScreenReaderOnly role="region" aria-live="off">
         {`${value}% complete`}
       </ScreenReaderOnly>
       <div {...styles.fg({ themeName, value })} />
