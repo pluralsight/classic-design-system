@@ -2940,6 +2940,18 @@
     "@pluralsight/ps-design-system-util" "^5.3.3"
     prop-types "^15.7.2"
 
+"@pluralsight/ps-design-system-icon@^18.2.6":
+  version "18.2.6"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-icon/-/ps-design-system-icon-18.2.6.tgz#951959569db4d4e2eb5b9786dfab140d64eb48a3"
+  integrity sha512-JmtGje5KF3AxK3AdiMd/+U4MomwO9kUjoKiseJ40hoDxXN3osjVkCcGTwlMLIIkTDVSOdqdxOFLtvbVAlKLcHA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.4.4"
+    "@pluralsight/ps-design-system-filter-react-props" "^1.1.20"
+    arg "^4.1.1"
+    fast-glob "^3.1.0"
+    prop-types "^15.7.2"
+    svgo "^1.3.2"
+
 "@pluralsight/ps-design-system-layout@^7.0.24":
   version "7.0.24"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-layout/-/ps-design-system-layout-7.0.24.tgz#ed028ef715276a3cbf7e2a31cdb873d999bac1e1"
