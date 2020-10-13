@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import CircularProgress from '../index.js'
+import CircularProgress from '..'
 
 describe('CircularProgress', () => {
   it('renders', () => {

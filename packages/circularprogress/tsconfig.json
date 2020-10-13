@@ -4,6 +4,5 @@
     "allowJs": true,
     "rootDir": null,
     "jsx": "react"
-  },
-  "include": ["**/*.tsx"]
+  }
 }

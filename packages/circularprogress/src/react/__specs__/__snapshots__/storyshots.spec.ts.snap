@@ -1,0 +1,509 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots animation animates to new values 1`] = `
+<div>
+  <div
+    data-css-1ie49mc=""
+  >
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      0% complete
+    </div>
+    <svg
+      data-css-r8je9y=""
+      version="1.1"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        data-css-rk8c6r=""
+        r={22}
+      />
+      <circle
+        cx="24"
+        cy="24"
+        data-css-17x5ehd=""
+        r={22}
+        strokeDasharray="138.23007675795088 138.23007675795088"
+        strokeDashoffset={138.23007675795088}
+      />
+    </svg>
+  </div>
+  <div
+    style={
+      Object {
+        "color": "rgba(255, 255, 255, 0.95)",
+      }
+    }
+  >
+    Value: 
+    0
+  </div>
+</div>
+`;
+
+exports[`Storyshots indeterminate medium 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
+  <svg
+    data-css-1txt1eh=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={103.67255756846316}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots indeterminate small 1`] = `
+<div
+  data-css-1abx40i=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
+  <svg
+    data-css-1txt1eh=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={103.67255756846316}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots size medium 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    75% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={34.55751918948772}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots size small 1`] = `
+<div
+  data-css-1abx40i=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    75% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={34.55751918948772}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots style overrides className (no viz change) 1`] = `
+<div
+  className="someString"
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
+  <svg
+    data-css-1txt1eh=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={103.67255756846316}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots style overrides style 1`] = `
+<div
+  data-css-1ie49mc=""
+  style={
+    Object {
+      "outline": "1px solid red",
+    }
+  }
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    Loading...
+  </div>
+  <svg
+    data-css-1txt1eh=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={103.67255756846316}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots value value 0 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    0% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={138.23007675795088}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots value value 25 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    25% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={103.67255756846316}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots value value 33 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    33% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={92.6141514278271}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots value value 50 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    50% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={69.11503837897544}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots value value 66 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    66% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={46.9982260977033}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots value value 75 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    75% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={34.55751918948772}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots value value 100 1`] = `
+<div
+  data-css-1ie49mc=""
+>
+  <div
+    aria-live="off"
+    data-css-6wu9td=""
+    role="region"
+  >
+    100% complete
+  </div>
+  <svg
+    data-css-r8je9y=""
+    version="1.1"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      data-css-rk8c6r=""
+      r={22}
+    />
+    <circle
+      cx="24"
+      cy="24"
+      data-css-17x5ehd=""
+      r={22}
+      strokeDasharray="138.23007675795088 138.23007675795088"
+      strokeDashoffset={0}
+    />
+  </svg>
+</div>
+`;
