@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Checkbox checked & indeterminate 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <div
+        aria-checked={true}
+        data-css-1cfeqew=""
+        role="checkbox"
+        tabIndex={0}
+      >
+        <svg
+          aria-label="Indeterminate Mark"
+          data-css-ey6g07=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="2"
+            width="10"
+            x="3"
+            y="7"
+          />
+        </svg>
+      </div>
+    </div>
+    <input
+      checked={true}
+      data-css-gyrv08=""
+      name="colorRed"
+      readOnly={true}
+      tabIndex={-1}
+      type="checkbox"
+      value="red"
+    />
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Checkbox checked 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <div
+        aria-checked={true}
+        data-css-1cfeqew=""
+        role="checkbox"
+        tabIndex={0}
+      >
+        <svg
+          aria-label="Checkmark"
+          data-css-ey6g07=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+          />
+        </svg>
+      </div>
+    </div>
+    <input
+      checked={true}
+      data-css-gyrv08=""
+      name="colorRed"
+      readOnly={true}
+      tabIndex={-1}
+      type="checkbox"
+      value="red"
+    />
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Checkbox default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <div
+        data-css-1lxtjk6=""
+        role="checkbox"
+        tabIndex={0}
+      />
+    </div>
+    <input
+      data-css-gyrv08=""
+      name="colorRed"
+      readOnly={true}
+      tabIndex={-1}
+      type="checkbox"
+      value="red"
+    />
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Checkbox disabled & errored 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-o2msqt=""
+    onClick={null}
+    onKeyDown={null}
+  >
+    <div
+      data-css-1xpuf1q=""
+    >
+      <div
+        data-css-1lxtjk6=""
+        role="checkbox"
+        tabIndex={-1}
+      />
+    </div>
+    <input
+      data-css-gyrv08=""
+      disabled={true}
+      name="colorRed"
+      readOnly={true}
+      tabIndex={-1}
+      type="checkbox"
+      value="red"
+    />
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Checkbox disabled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-o2msqt=""
+    onClick={null}
+    onKeyDown={null}
+  >
+    <div
+      data-css-1eqwi1x=""
+    >
+      <div
+        data-css-1lxtjk6=""
+        role="checkbox"
+        tabIndex={-1}
+      />
+    </div>
+    <input
+      data-css-gyrv08=""
+      disabled={true}
+      name="colorRed"
+      readOnly={true}
+      tabIndex={-1}
+      type="checkbox"
+      value="red"
+    />
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Checkbox error 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-f76l29=""
+      >
+        <div
+          aria-checked={true}
+          data-css-1cfeqew=""
+          role="checkbox"
+          tabIndex={0}
+        >
+          <svg
+            aria-label="Checkmark"
+            data-css-ey6g07=""
+            role="img"
+            version="1.1"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+            />
+          </svg>
+        </div>
+      </div>
+      <input
+        checked={true}
+        data-css-gyrv08=""
+        name="colorRed"
+        readOnly={true}
+        tabIndex={-1}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-ybwuvp=""
+      >
+        Red
+      </div>
+    </label>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-f76l29=""
+      >
+        <div
+          data-css-1lxtjk6=""
+          role="checkbox"
+          tabIndex={0}
+        />
+      </div>
+      <input
+        data-css-gyrv08=""
+        name="colorRed"
+        readOnly={true}
+        tabIndex={-1}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-ybwuvp=""
+      >
+        Red
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Checkbox indeterminate 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <div
+        data-css-1cfeqew=""
+        role="checkbox"
+        tabIndex={0}
+      >
+        <svg
+          aria-label="Indeterminate Mark"
+          data-css-ey6g07=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="2"
+            width="10"
+            x="3"
+            y="7"
+          />
+        </svg>
+      </div>
+    </div>
+    <input
+      data-css-gyrv08=""
+      name="colorRed"
+      readOnly={true}
+      tabIndex={-1}
+      type="checkbox"
+      value="red"
+    />
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Checkbox state demo 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "color": "rgba(255, 255, 255, 0.95)",
+        }
+      }
+    >
+      Checked:
+       
+      
+    </div>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1ij5lym=""
+      >
+        <div
+          aria-checked={false}
+          data-css-1lxtjk6=""
+          role="checkbox"
+          tabIndex={0}
+        />
+      </div>
+      <input
+        checked={false}
+        data-css-gyrv08=""
+        name="colorRed"
+        readOnly={true}
+        tabIndex={-1}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-ybwuvp=""
+      >
+        Red
+      </div>
+    </label>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1ij5lym=""
+      >
+        <div
+          aria-checked={false}
+          data-css-1lxtjk6=""
+          role="checkbox"
+          tabIndex={0}
+        />
+      </div>
+      <input
+        checked={false}
+        data-css-gyrv08=""
+        name="colorGreen"
+        readOnly={true}
+        tabIndex={-1}
+        type="checkbox"
+        value="green"
+      />
+      <div
+        data-css-ybwuvp=""
+      >
+        Green
+      </div>
+    </label>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1ij5lym=""
+      >
+        <div
+          aria-checked={false}
+          data-css-1lxtjk6=""
+          role="checkbox"
+          tabIndex={0}
+        />
+      </div>
+      <input
+        checked={false}
+        data-css-gyrv08=""
+        name="colorBlue"
+        readOnly={true}
+        tabIndex={-1}
+        type="checkbox"
+        value="blue"
+      />
+      <div
+        data-css-ybwuvp=""
+      >
+        Blue
+      </div>
+    </label>
+  </div>
+</div>
+`;

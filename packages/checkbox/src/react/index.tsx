@@ -5,7 +5,7 @@ import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 type StyleFn = (
   themeName: typeof Theme.names,
