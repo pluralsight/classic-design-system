@@ -1,7 +1,9 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import {
+  omit,
+  RefForwardingComponent
+} from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
 import React from 'react'
 
@@ -122,7 +124,7 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
         type="checkbox"
         value={props.value}
         {...styles.input()}
-        {...filterReactProps(props, { tagName: 'input' })}
+        {...omit(props, ['label', 'onCheck', 'error', 'indeterminate'])}
       />
       <div {...styles.label(themeName, props)}>{props.label}</div>
     </label>
