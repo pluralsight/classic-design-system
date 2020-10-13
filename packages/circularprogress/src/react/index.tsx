@@ -6,7 +6,6 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, keyframes, StyleAttribute } from 'glamor'
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import stylesheet from '../css'
@@ -106,13 +105,6 @@ const CircularProgress = React.forwardRef<
     </div>
   )
 }) as CircularProgressComponent
-
-CircularProgress.propTypes = {
-  className: PropTypes.string,
-  size: PropTypes.oneOf(Object.keys(vars.sizes)),
-  style: PropTypes.object,
-  value: PropTypes.number
-}
 CircularProgress.defaultProps = {
   size: vars.sizes.medium
 }
