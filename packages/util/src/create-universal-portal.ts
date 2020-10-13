@@ -8,7 +8,7 @@ export function createUniversalPortal(
   container: Element,
   key?: null | string
 ): ReactPortal {
-  if (!canUseDOM) return null
+  if (!canUseDOM()) return null
 
   return createPortal(children, container, key)
 }
