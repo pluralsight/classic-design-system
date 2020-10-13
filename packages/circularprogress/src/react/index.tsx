@@ -25,7 +25,7 @@ type StyleFn = (
 ) => StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
-  circularprogress: (themeName, { size }) =>
+  circularprogress: (themeName, { size = vars.sizes.medium }) =>
     css(stylesheet[`.psds-circularprogress--size-${size}`]),
 
   svg: (themeName, { value }) => {
@@ -105,9 +105,6 @@ const CircularProgress = React.forwardRef<
     </div>
   )
 }) as CircularProgressComponent
-CircularProgress.defaultProps = {
-  size: vars.sizes.medium
-}
 
 CircularProgress.sizes = vars.sizes
 export const sizes = vars.sizes
