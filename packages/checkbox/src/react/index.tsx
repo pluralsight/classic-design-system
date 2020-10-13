@@ -1,42 +1,71 @@
-import { compose, css } from 'glamor'
-import React from 'react'
-import PropTypes from 'prop-types'
-
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import { compose, css, StyleAttribute } from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css/index.js'
 
+type StyleFn = (
+  themeName: typeof Theme.names,
+  props: CheckboxProps
+) => StyleAttribute
+
 const styles = {
-  checkbox: (themeName, { disabled }) =>
+  checkbox: (themeName, props) =>
     compose(
       css(stylesheet['.psds-checkbox']),
-      disabled && css(stylesheet['.psds-checkbox--disabled'])
+      props.disabled && css(stylesheet['.psds-checkbox--disabled'])
     ),
-  square: (themeName, { checked, indeterminate }) =>
+  square: (themeName, props) =>
     compose(
       css(stylesheet['.psds-checkbox__square']),
       css(stylesheet[`.psds-checkbox__square.psds-theme--${themeName}`]),
-      (checked || indeterminate) &&
+      (props.checked || props.indeterminate) &&
         css(stylesheet['.psds-checkbox__square--active'])
     ),
   icon: () => css(stylesheet['.psds-checkbox__icon']),
   input: () => css(stylesheet['.psds-checkbox__input']),
-  label: themeName =>
+  label: (themeName, _props) =>
     compose(
       css(stylesheet['.psds-checkbox__label']),
       css(stylesheet[`.psds-checkbox__label.psds-theme--${themeName}`])
     )
 }
 
+interface CheckboxProps extends React.HTMLAttributes<HTMLDivElement> {
+  checked?: boolean
+  disabled?: boolean
+  error?: boolean
+  indeterminate?: boolean
+  label: React.ReactNode
+  name?: string
+  onCheck?: (
+    evt: Event,
+    checked: boolean,
+    value: string | number,
+    name: string | undefined
+  ) => void
+  value: string | number
+}
+
+interface CheckboxStatics {}
+
+interface CheckboxComponent
+  extends RefForwardingComponent<
+    CheckboxProps,
+    HTMLInputElement,
+    CheckboxStatics
+  > {}
+
 const Checkbox = React.forwardRef((props, forwardedRef) => {
   const themeName = useTheme()
 
-  const ref = React.useRef()
+  const ref = React.useRef<HTMLInputElement>()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const square = React.createRef()
+  const square = React.createRef<HTMLDivElement>()
 
   React.useEffect(
     function updateIndetermiateAttr() {
@@ -78,7 +107,7 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
           aria-checked={props.checked}
           ref={square}
           role="checkbox"
-          tabIndex={props.disabled ? '-1' : '0'}
+          tabIndex={props.disabled ? -1 : 0}
           {...styles.square(themeName, props)}
         >
           {props.indeterminate && <Indeterminate />}
@@ -89,38 +118,20 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
       <input
         readOnly
         ref={ref}
-        tabIndex="-1"
+        tabIndex={-1}
         type="checkbox"
         value={props.value}
-        {...styles.input(themeName, props)}
+        {...styles.input()}
         {...filterReactProps(props, { tagName: 'input' })}
       />
       <div {...styles.label(themeName, props)}>{props.label}</div>
     </label>
   )
-})
-
-Checkbox.propTypes = {
-  checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  error: PropTypes.bool,
-  indeterminate: PropTypes.bool,
-  label: PropTypes.node.isRequired,
-  name: PropTypes.string,
-  onCheck: PropTypes.func,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
-}
-
-Checkbox.defaultProps = {
-  checked: false,
-  disabled: false,
-  error: false,
-  indeterminate: false
-}
+}) as CheckboxComponent
 
 export default Checkbox
 
-const Checkmark = props => (
+const Checkmark = () => (
   <svg
     role="img"
     aria-label="Checkmark"
@@ -128,13 +139,12 @@ const Checkmark = props => (
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     {...styles.icon()}
-    {...props}
   >
     <polygon points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473" />
   </svg>
 )
 
-const Indeterminate = props => (
+const Indeterminate = () => (
   <svg
     role="img"
     aria-label="Indeterminate Mark"
@@ -142,7 +152,6 @@ const Indeterminate = props => (
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     {...styles.icon()}
-    {...props}
   >
     <rect x="3" y="7" width="10" height="2" />
   </svg>
