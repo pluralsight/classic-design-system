@@ -1,4 +1,3 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
@@ -71,20 +70,21 @@ const CircularProgress = React.forwardRef<
   HTMLDivElement,
   CircularProgressProps
 >((props, ref) => {
+  const defaultIndeterminateValue = 25
+  const { size, value = defaultIndeterminateValue, ...rest } = props
   const themeName = useTheme()
 
-  const isIndeterminate = typeof props.value === 'undefined'
-  const value = isIndeterminate ? 25 : props.value
+  /* if (typeof props.value !== 'undefined') { */
+  /*   value = props.value */
+  /* } */
   const dashOffset = ((100 - value) / 100) * circumference
 
   return (
-    <div
-      ref={ref}
-      {...styles.circularprogress(themeName, props)}
-      {...filterReactProps(props)}
-    >
+    <div ref={ref} {...styles.circularprogress(themeName, props)} {...rest}>
       <ScreenReaderOnly role="region" aria-live="off">
-        {isIndeterminate ? 'Loading...' : `${value}% complete`}
+        {typeof props.value === 'undefined'
+          ? 'Loading...'
+          : `${value}% complete`}
       </ScreenReaderOnly>
       <svg
         {...styles.svg(themeName, props)}

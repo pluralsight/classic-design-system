@@ -26,7 +26,7 @@ export default {
     transform: 'rotate(-90deg)'
   },
   // __svg--no-value
-  [`.psds-circularprogress__svg--no-value`]: ({ spin }) => ({
+  [`.psds-circularprogress__svg--no-value`]: ({ spin }: { spin?: string }) => ({
     animation: `${
       spin || 'psds-circularprogress__keyframes__spin'
     } 1s linear infinite`

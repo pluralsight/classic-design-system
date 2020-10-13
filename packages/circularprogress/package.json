@@ -21,7 +21,6 @@
   "style": "dist/css/index.css",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.4.4",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
     "@pluralsight/ps-design-system-screenreaderonly": "^2.0.17",
     "@pluralsight/ps-design-system-util": "^5.3.2"
   },
