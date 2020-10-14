@@ -8,7 +8,6 @@ workflow:
 
 stages:
   - .pre
-  - lint
   - test
   - .post
 
@@ -17,7 +16,7 @@ default:
     key: $CI_PROJECT_ID
     policy: pull
     untracked: true
-  image: node:13.8-alpine
+  image: node:14.3-alpine
   retry:
     max: 1
     when:
@@ -25,20 +24,18 @@ default:
   services:
     - docker:18.09.7-dind
 
-
-before_script:
-  - yarn config set ignore-engines true
-
 install:
   stage: .pre
+  cache:
+    key: $CI_PROJECT_ID
+    policy: pull-push
+    paths:
+      - .yarn
+      - node_modules
+      - 'packages/*/node_modules'
   script: 
-    - yarn install --frozen-lockfile 
-
-lint:
-  stage: lint
-  script:
-    - yarn danger:ci
-    - yarn lint:ci
+    - yarn config set ignore-engines true
+    - yarn install --frozen-lockfile --cache-folder .yarn
 
 test:
   stage: test
