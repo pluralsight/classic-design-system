@@ -2,7 +2,8 @@ import Halo from '@pluralsight/ps-design-system-halo'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   omit,
-  RefForwardingComponent
+  RefForwardingComponent,
+  ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
 import React from 'react'
@@ -10,12 +11,12 @@ import React from 'react'
 import stylesheet from '../css'
 
 type StyleFn = (
-  themeName: typeof Theme.names,
+  themeName: ValueOf<typeof Theme.names>,
   props: CheckboxProps
 ) => StyleAttribute
 
-const styles = {
-  checkbox: (themeName, props) =>
+const styles: { [key: string]: StyleFn } = {
+  checkbox: (_themeName, props) =>
     compose(
       css(stylesheet['.psds-checkbox']),
       props.disabled && css(stylesheet['.psds-checkbox--disabled'])
@@ -79,11 +80,15 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
     [props.indeterminate]
   )
 
-  const handleKeyDown = evt => {
+  const handleKeyDown = (evt: React.KeyboardEvent<HTMLLabelElement>) => {
     if (evt.key === 'Enter' || evt.key === ' ') handleClick(evt)
   }
 
-  const handleClick = evt => {
+  const handleClick = (
+    evt:
+      | React.KeyboardEvent<HTMLLabelElement>
+      | React.MouseEvent<HTMLLabelElement, MouseEvent>
+  ) => {
     evt.preventDefault()
     evt.stopPropagation()
 
@@ -97,8 +102,8 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
 
   return (
     <label
-      onClick={props.disabled ? null : handleClick}
-      onKeyDown={props.disabled ? null : handleKeyDown}
+      onClick={props.disabled ? undefined : handleClick}
+      onKeyDown={props.disabled ? undefined : handleKeyDown}
       {...styles.checkbox(themeName, props)}
     >
       <Halo
@@ -114,8 +119,12 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
           tabIndex={props.disabled ? -1 : 0}
           {...styles.square(themeName, props)}
         >
-          {props.indeterminate && <Indeterminate />}
-          {props.checked && !props.indeterminate && <Checkmark />}
+          {props.indeterminate && (
+            <Indeterminate {...props} themeName={themeName} />
+          )}
+          {props.checked && !props.indeterminate && (
+            <Checkmark {...props} themeName={themeName} />
+          )}
         </div>
       </Halo>
 
@@ -125,7 +134,7 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
         tabIndex={-1}
         type="checkbox"
         value={props.value}
-        {...styles.input()}
+        {...styles.input(themeName, props)}
         {...omit<CheckboxProps, ['label', 'onCheck', 'error', 'indeterminate']>(
           props,
           ['label', 'onCheck', 'error', 'indeterminate']
@@ -138,27 +147,36 @@ const Checkbox = React.forwardRef((props, forwardedRef) => {
 
 export default Checkbox
 
-const Checkmark = () => (
+interface CheckmarkProps extends CheckboxProps {
+  themeName: ValueOf<typeof Theme.names>
+}
+const Checkmark: React.FC<CheckmarkProps> = ({ themeName, ...props }) => (
   <svg
     role="img"
     aria-label="Checkmark"
     viewBox="0 0 16 16"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    {...styles.icon()}
+    {...styles.icon(themeName, props)}
   >
     <polygon points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473" />
   </svg>
 )
 
-const Indeterminate = () => (
+interface IndeterminateProps extends CheckboxProps {
+  themeName: ValueOf<typeof Theme.names>
+}
+const Indeterminate: React.FC<IndeterminateProps> = ({
+  themeName,
+  ...props
+}) => (
   <svg
     role="img"
     aria-label="Indeterminate Mark"
     viewBox="0 0 16 16"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    {...styles.icon()}
+    {...styles.icon(themeName, props)}
   >
     <rect x="3" y="7" width="10" height="2" />
   </svg>

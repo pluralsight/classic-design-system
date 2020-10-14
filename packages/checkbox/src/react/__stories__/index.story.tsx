@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+import { DecoratorFn, storiesOf } from '@storybook/react'
 
 import Checkbox from '..'
 
@@ -10,43 +10,50 @@ const PaddingDecorator = storyFn => (
 
 storiesOf('Checkbox', module)
   .addDecorator(PaddingDecorator)
-  .add('default', _ => <Checkbox name="colorRed" value="red" label="Red" />)
-  .add('checked', _ => (
+  .add('default', () => <Checkbox name="colorRed" value="red" label="Red" />)
+  .add('checked', () => (
     <Checkbox checked name="colorRed" value="red" label="Red" />
   ))
-  .add('indeterminate', _ => (
+  .add('indeterminate', () => (
     <Checkbox indeterminate name="colorRed" value="red" label="Red" />
   ))
-  .add('checked & indeterminate', _ => (
+  .add('checked & indeterminate', () => (
     <Checkbox checked indeterminate name="colorRed" value="red" label="Red" />
   ))
-  .add('error', _ => (
+  .add('error', () => (
     <div>
       <Checkbox checked error name="colorRed" value="red" label="Red" />
       <Checkbox error name="colorRed" value="red" label="Red" />
     </div>
   ))
-  .add('disabled', _ => (
+  .add('disabled', () => (
     <Checkbox disabled name="colorRed" value="red" label="Red" />
   ))
-  .add('disabled & errored', _ => (
+  .add('disabled & errored', () => (
     <Checkbox disabled error name="colorRed" value="red" label="Red" />
   ))
-  .add('state demo', _ => {
+  .add('state demo', () => {
     function StateDemo() {
       const [values, updateValues] = React.useState([])
 
-      function handleCheck(evt, checked, value, name) {
-        const nextValues = { ...values }
+      function handleCheck(
+        _evt: React.ChangeEvent<HTMLInputElement>,
+        checked: boolean,
+        value: React.ReactText,
+        name: string | undefined
+      ) {
+        if (typeof name === 'string') {
+          const nextValues = { ...values }
 
-        if (checked) nextValues[name] = value
-        else delete nextValues[name]
+          if (checked) nextValues[name] = value
+          else delete nextValues[name]
 
-        updateValues(nextValues)
+          updateValues(nextValues)
+        }
       }
 
       const colorNames = Object.keys(values)
-      const checked = name => colorNames.indexOf(name) > -1
+      const checked = (name: string) => colorNames.indexOf(name) > -1
 
       return (
         <div>
