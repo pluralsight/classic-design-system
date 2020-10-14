@@ -1,6 +1,5 @@
 import Button from '@pluralsight/ps-design-system-button'
 import SearchInput from '@pluralsight/ps-design-system-searchinput'
-import { layout } from '@pluralsight/ps-design-system-core'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
@@ -14,8 +13,6 @@ import logoDark from './logo-dark.png'
 import logoLight from './logo-light.png'
 import { useScrollRestoration } from './use-scroll-restoration'
 
-interface Props extends HTMLAttributes<HTMLDivElement> {}
-
 function toggleTitle(titles: string[], title: string) {
   const index = titles.indexOf(title)
   if (index > -1) {
@@ -25,18 +22,21 @@ function toggleTitle(titles: string[], title: string) {
   }
 }
 
-export const SideNav: React.FC<Props> = () => {
+interface SideNavProps extends HTMLAttributes<HTMLDivElement> {}
+export const SideNav: React.FC<SideNavProps> = () => {
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
   const headerContainingActiveHref = groups.find(
     group =>
-      !!group.items.find(item =>
-        new RegExp(item.href + '/?').test(window.location.pathname)
-      )
+      !!group.items.find(item => new RegExp(item.href + '/?').test(pathname))
   )
+
   const [openHeaderTitles, setOpenHeaderTitles] = useSessionStorage<string[]>(
     'psds-sidenav-openheadertitles',
     headerContainingActiveHref ? [headerContainingActiveHref.header.title] : []
   )
+
   const scrollRestore = useScrollRestoration('sidenav-list')
+
   return (
     <div className={styles.sideNav}>
       <div className={styles.header}>
@@ -443,6 +443,8 @@ function GithubIcon(props) {
 
 function useSessionStorage<T>(key: string, initialValue: T) {
   const [storedValue, setStoredValue] = useState(() => {
+    if (!canUseDOM()) return initialValue
+
     try {
       const item = window.sessionStorage.getItem(key)
       return item ? JSON.parse(item) : initialValue
@@ -453,6 +455,8 @@ function useSessionStorage<T>(key: string, initialValue: T) {
   })
 
   const setValue = value => {
+    if (!canUseDOM()) return
+
     try {
       const valueToStore =
         value instanceof Function ? value(storedValue) : value
