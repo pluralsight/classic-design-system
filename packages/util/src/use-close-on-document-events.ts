@@ -1,7 +1,7 @@
 import { MutableRefObject, useEffect } from 'react'
 import { canUseDOM } from '.'
 
-type Callback = (evt: MouseEvent | UIEvent) => void
+type Callback = (evt: Event | MouseEvent | UIEvent) => void
 
 export const onGlobalEventsClose = <El extends HTMLElement>(
   el: El,
@@ -18,8 +18,8 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
     }
   }
 
-  let currentAnimationFrame: number = null
-  const requestAnimationFrame = (evt: UIEvent) => {
+  let currentAnimationFrame: number
+  const requestAnimationFrame = (evt: Event | UIEvent) => {
     window.cancelAnimationFrame(currentAnimationFrame)
     currentAnimationFrame = window.requestAnimationFrame(() => callback(evt))
     return currentAnimationFrame
@@ -44,7 +44,7 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
 
 export const useCloseOnDocumentEvents = <El extends HTMLElement>(
   ref: MutableRefObject<El>,
-  callback: Callback
+  cb: Callback
 ) => {
   useEffect(() => {
     if (!canUseDOM()) return
@@ -52,7 +52,7 @@ export const useCloseOnDocumentEvents = <El extends HTMLElement>(
     let removeListeners = noop
 
     if (ref.current) {
-      removeListeners = onGlobalEventsClose<El>(ref.current, callback)
+      removeListeners = <typeof noop>onGlobalEventsClose<El>(ref.current, cb)
     }
 
     return removeListeners

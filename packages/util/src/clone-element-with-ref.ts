@@ -1,17 +1,31 @@
-import { cloneElement } from 'react'
+import {
+  RefCallback,
+  HTMLAttributes,
+  ReactHTMLElement,
+  MutableRefObject,
+  cloneElement
+} from 'react'
 
-import { isFunction, isRef } from '.'
+import { isCallbackRef, isRef } from '.'
 
-export function cloneElementWithRef(element, outerRef, props) {
-  const { ref } = element
+export const cloneElementWithRef = <
+  P extends HTMLAttributes<T>,
+  T extends HTMLElement
+>(
+  el: ReactHTMLElement<T>,
+  outerRef: MutableRefObject<T>,
+  props: P
+) => {
+  const { ref: innerRef } = el
 
-  return cloneElement(element, {
-    ...props,
-    ref: node => {
-      if (isRef(outerRef)) outerRef.current = node
+  const combine: RefCallback<T> = node => {
+    if (!node) return
 
-      if (isFunction(ref)) ref(node)
-      else if (isRef(ref)) ref.current = node
-    }
-  })
+    if (isRef<T>(outerRef)) outerRef.current = node
+
+    if (isCallbackRef<T>(innerRef)) innerRef(node)
+    else if (isRef<T>(innerRef)) innerRef.current = node
+  }
+
+  return cloneElement<P, T>(el, { ...props, ref: combine })
 }

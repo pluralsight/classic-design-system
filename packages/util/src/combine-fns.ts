@@ -2,9 +2,11 @@
 import { isFunction } from '.'
 
 export const combineFns = <Params extends any[]>(
-  ...fns: Callback<Params>[] | undefined
+  ...fns: (Callback<Params> | undefined)[]
 ) => (...args: Params) => {
-  return fns.filter(isFunction).forEach(fn => fn(...args))
+  return fns.filter(isFunction).forEach(fn => {
+    if (fn) fn(...args)
+  })
 }
 
 interface Callback<Params extends any[]> {

@@ -6,9 +6,9 @@ import { canUseDOM } from '.'
 export function createUniversalPortal(
   children: ReactNode,
   container: Element,
-  key?: null | string
-): ReactPortal {
-  if (!canUseDOM()) return null
+  key?: string
+): ReactPortal | undefined {
+  if (!canUseDOM()) return
 
   return createPortal(children, container, key)
 }
