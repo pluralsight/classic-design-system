@@ -28,17 +28,9 @@ default:
 
 before_script:
   - yarn config set ignore-engines true
-  - yarn install --frozen-lockfile --cache-folder .yarn
+  - yarn install --frozen-lockfile
 
 install:
-  stage: .pre
-  cache:
-    key: $CI_PROJECT_ID
-    policy: pull-push
-    paths:
-      - .yarn
-      - node_modules
-      - 'packages/*/node_modules'
   script: echo 'Warming the cache'
 
 lint:
