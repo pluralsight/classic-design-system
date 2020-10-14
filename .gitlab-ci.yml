@@ -28,10 +28,11 @@ default:
 
 before_script:
   - yarn config set ignore-engines true
-  - yarn install --frozen-lockfile
 
 install:
-  script: echo 'Warming the cache'
+  stage: .pre
+  script: 
+    - yarn install --frozen-lockfile 
 
 lint:
   stage: lint
