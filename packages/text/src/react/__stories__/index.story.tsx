@@ -30,7 +30,7 @@ heading.add('style override', () => (
   </Heading>
 ))
 heading.add('className override', () => (
-  <Heading className={(className as unknown) as string}>
+  <Heading className={...className}>
     <h2>orange</h2>
   </Heading>
 ))
