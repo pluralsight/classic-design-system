@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import CircularProgress from '../../index.js'
+import CircularProgress from '../..'
 
 const valueStory = storiesOf('value', module)
 ;[0, 25, 50, 75, 100, 33, 66].forEach(value =>
