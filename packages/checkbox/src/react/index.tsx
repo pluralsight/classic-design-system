@@ -48,7 +48,7 @@ interface CheckboxProps
   onCheck?: (
     evt: React.ChangeEvent<HTMLInputElement>,
     checked: boolean,
-    value: string | number,
+    value: React.ReactText,
     name: string | undefined
   ) => void
   value: string | number
