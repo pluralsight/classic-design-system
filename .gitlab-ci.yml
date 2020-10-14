@@ -28,7 +28,7 @@ default:
 
 before_script:
   - yarn config set ignore-engines true
-  - yarn install --cache-folder .yarn
+  - yarn install --frozen-lockfile --cache-folder .yarn
 
 install:
   stage: .pre
