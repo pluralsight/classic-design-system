@@ -1,20 +1,17 @@
 import {
   Children,
+  Ref,
+  HTMLAttributes,
   createContext,
-  createRef,
   useEffect,
+  useImperativeHandle,
   useLayoutEffect,
   useMemo,
-  useState,
-  MutableRefObject,
-  HTMLAttributes
+  useRef,
+  useState
 } from 'react'
 import { canUseDOM } from 'exenv'
-import {
-  useCombinedRefs,
-  useMenuRef,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { useMenuRef, ValueOf } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -88,7 +85,10 @@ const sortDropdownProps = ({
   }
 })
 
-export const useDropdown = (props: UseDropdownProps, forwardedRef) => {
+export const useDropdown = (
+  props: UseDropdownProps,
+  forwardedRef: Ref<HTMLButtonElement>
+) => {
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
 
@@ -179,21 +179,25 @@ export const useDropdown = (props: UseDropdownProps, forwardedRef) => {
 
   const longestMenuItemState = getLongestMenuLabelState()
   const [width, setWidth] = useState<React.ReactText>('auto')
-  const innerRef = createRef()
-  const combinedRef = useCombinedRefs(
-    forwardedRef,
-    innerRef
-  ) as MutableRefObject<HTMLButtonElement>
+
+  const ref = useRef<HTMLButtonElement>()
+  useImperativeHandle(forwardedRef, () => ref.current)
+
   useLayoutEffect(() => {
-    setWidth(combinedRef.current.getBoundingClientRect().width)
-  }, [combinedRef, forwardedRef])
+    const { current } = ref
+
+    if (!current) return
+
+    setWidth(current.getBoundingClientRect().width)
+  }, [])
+
   const inNode = canUseDOM ? document.body : null
   const [menuPosition, setMenuPosition] = useState({ left: 0, top: 0 })
 
   return {
     button: {
       ...rest.button,
-      ref: combinedRef,
+      ref,
       isOpen,
       onClick: handleToggleOpen,
       setMenuPosition
