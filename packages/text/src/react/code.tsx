@@ -1,27 +1,23 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import React, {HTMLAttributes} from 'react'
+import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
-const style = ({ themeName }) =>
+const style = ({ themeName } : { themeName: keyof typeof names; }) =>
   compose(
     css(stylesheet[`.psds-text__code`]),
     css(stylesheet[`.psds-text__code.psds-theme--${themeName}`])
   )
-const Code = props => {
+
+const Code: React.FC<HTMLAttributes<HTMLElement>> = props => {
   const themeName = useTheme()
 
   return props.children ? (
-    <code {...props} {...style({ ...props, themeName })}>
+    <code {...props} {...style({ themeName })}>
       {props.children}
     </code>
   ) : null
-}
-
-Code.propTypes = {
-  children: PropTypes.node
 }
 
 export default Code

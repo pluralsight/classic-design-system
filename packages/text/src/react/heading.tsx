@@ -1,40 +1,41 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import React, { HTMLAttributes } from 'react'
+import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
-const style = props =>
+const style = ({ themeName, size }: { themeName?: keyof typeof names; size?: keyof typeof vars.headingSizes }) =>
   compose(
     css(stylesheet['.psds-text__heading']),
-    css(stylesheet[`.psds-text__heading.psds-theme--${props.themeName}`]),
-    css(stylesheet[`.psds-text__heading--size-${props.size}`]),
+    css(stylesheet[`.psds-text__heading.psds-theme--${themeName}`]),
+    css(stylesheet[`.psds-text__heading--size-${size}`]),
     css(
-      stylesheet[
-        `.psds-text__heading--size-${props.size}.psds-theme--${props.themeName}`
-      ]
+      stylesheet[`.psds-text__heading--size-${size}.psds-theme--${themeName}`]
     )
   )
-const rmChildren = ({ children, ...rest }) => rest
 
-const Heading = props => {
+interface HeadingStatics {
+  sizes: typeof vars.headingSizes
+}
+
+interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+  size?:  keyof typeof vars.headingSizes
+}
+
+const Heading: React.FC<HeadingProps> & HeadingStatics = ({children, size, ...props}) => {
   const themeName = useTheme()
 
-  return React.cloneElement(React.Children.only(props.children), {
-    ...rmChildren(props),
+  return React.cloneElement(React.Children.only(children as React.ReactElement), {
+    ...props,
     ...style({
-      ...props,
+      size,
       themeName
     }),
     className: props.className
   })
 }
 
-Heading.propTypes = {
-  size: PropTypes.oneOf(Object.keys(vars.headingSizes))
-}
 Heading.defaultProps = {
   size: vars.headingSizes.large
 }

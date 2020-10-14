@@ -150,7 +150,6 @@ exports[`Storyshots Heading className override 1`] = `
       }
     }
     data-css-1uk9rqa=""
-    size="large"
   >
     orange
   </h2>
@@ -167,7 +166,6 @@ exports[`Storyshots Heading size: large 1`] = `
 >
   <h1
     data-css-1uk9rqa=""
-    size="large"
   >
     large
   </h1>
@@ -184,7 +182,6 @@ exports[`Storyshots Heading size: medium 1`] = `
 >
   <h1
     data-css-xhd98s=""
-    size="medium"
   >
     medium
   </h1>
@@ -200,8 +197,7 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
   }
 >
   <h1
-    data-css-k4y5mo=""
-    size="smallCaps"
+    data-css-ffti8h=""
   >
     smallCaps
   </h1>
@@ -218,7 +214,6 @@ exports[`Storyshots Heading size: xLarge 1`] = `
 >
   <h1
     data-css-1cnozti=""
-    size="xLarge"
   >
     xLarge
   </h1>
@@ -235,7 +230,6 @@ exports[`Storyshots Heading style override 1`] = `
 >
   <h2
     data-css-1uk9rqa=""
-    size="large"
     style={
       Object {
         "color": "#E7558B",

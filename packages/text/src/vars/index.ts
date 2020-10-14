@@ -1,12 +1,5 @@
-export const headingSizes = {
-  smallCaps: 'smallCaps',
-  medium: 'medium',
-  large: 'large',
-  xLarge: 'xLarge'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const listTypes = {
-  default: 'default',
-  bulleted: 'bulleted',
-  numbered: 'numbered'
-}
+export const headingSizes = keyMirror('smallCaps', 'medium', 'large', 'xLarge')
+
+export const listTypes = keyMirror('default', 'bulleted', 'numbered')
