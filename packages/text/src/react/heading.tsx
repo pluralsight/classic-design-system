@@ -36,7 +36,7 @@ const Heading: React.FC<HeadingProps> & HeadingStatics = ({
   ...props
 }) => {
   const themeName = useTheme()
-  if (!React.isValidElement(children)) return
+  if (!React.isValidElement(children)) return null
 
   return React.cloneElement(React.Children.only(children), {
     ...props,
