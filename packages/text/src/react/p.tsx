@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React, {HTMLAttributes} from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'

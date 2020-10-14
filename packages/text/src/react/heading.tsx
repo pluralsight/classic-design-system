@@ -6,7 +6,13 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 import * as vars from '../vars'
 
-const style = ({ themeName, size }: { themeName?: ValueOf<typeof names>; size?: ValueOf<typeof vars.headingSizes> }) =>
+const style = ({
+  themeName,
+  size
+}: {
+  themeName?: ValueOf<typeof names>
+  size?: ValueOf<typeof vars.headingSizes>
+}) =>
   compose(
     css(stylesheet['.psds-text__heading']),
     css(stylesheet[`.psds-text__heading.psds-theme--${themeName}`]),
@@ -21,13 +27,17 @@ interface HeadingStatics {
 }
 
 interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
-  size?:  ValueOf<typeof vars.headingSizes>
+  size?: ValueOf<typeof vars.headingSizes>
 }
 
-const Heading: React.FC<HeadingProps> & HeadingStatics = ({children, size, ...props}) => {
+const Heading: React.FC<HeadingProps> & HeadingStatics = ({
+  children,
+  size,
+  ...props
+}) => {
   const themeName = useTheme()
-  if(!React.isValidElement(children)) return
-  
+  if (!React.isValidElement(children)) return
+
   return React.cloneElement(React.Children.only(children), {
     ...props,
     ...style({

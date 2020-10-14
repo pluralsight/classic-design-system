@@ -121,7 +121,9 @@ storiesOf('P', module)
     </div>
   ))
   .add('style override', () => <P style={style}>pink</P>)
-  .add('className override', () => <P className={(className as unknown) as string}>orange</P>)
+  .add('className override', () => (
+    <P className={(className as unknown) as string}>orange</P>
+  ))
 
 const list = storiesOf('List', module)
   .addDecorator(PaddingDecorator)
