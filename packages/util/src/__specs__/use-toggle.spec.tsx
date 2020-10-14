@@ -8,6 +8,7 @@ describe('useToggle', () => {
   test('uncontrolled', () => {
     const { result } = renderHook(() => useToggle())
     expect(result.current.isOpen).toBe(false)
+
     act(() => {
       result.current.onToggle()
     })

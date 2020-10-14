@@ -1,13 +1,13 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { createRef, useImperativeHandle, useCallback, useState } from 'react'
+import { useRef, useImperativeHandle, useCallback, useState } from 'react'
 
 import { useCombinedRefs } from '..'
 
 describe('useCombinedRefs', () => {
   test('multiple refs', () => {
     const { result } = renderHook(() => {
-      const outer = createRef<HTMLElement>()
-      const inner = createRef<HTMLElement>()
+      const outer = useRef<HTMLElement>(null)
+      const inner = useRef<HTMLElement>(null)
       const combinedRef = useCombinedRefs(inner, outer)
 
       useImperativeHandle<unknown, unknown>(combinedRef, () => ({
@@ -22,8 +22,8 @@ describe('useCombinedRefs', () => {
 
   test('one ref', () => {
     const { result } = renderHook(() => {
-      const outer = createRef<HTMLElement>()
-      const inner = createRef<HTMLElement>()
+      const outer = useRef<HTMLElement>(null)
+      const inner = useRef<HTMLElement>(null)
       const combinedRef = useCombinedRefs(outer)
 
       useImperativeHandle<unknown, unknown>(combinedRef, () => ({
@@ -38,8 +38,8 @@ describe('useCombinedRefs', () => {
 
   test('no refs', () => {
     const { result } = renderHook(() => {
-      const outer = createRef<HTMLElement>()
-      const inner = createRef<HTMLElement>()
+      const outer = useRef<HTMLElement>(null)
+      const inner = useRef<HTMLElement>(null)
       const combinedRef = useCombinedRefs()
 
       useImperativeHandle<unknown, unknown>(combinedRef, () => ({

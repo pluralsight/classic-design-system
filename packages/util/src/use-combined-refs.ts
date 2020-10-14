@@ -1,8 +1,8 @@
-import { MutableRefObject, RefCallback, useEffect, useRef } from 'react'
+import { RefObject, RefCallback, useEffect, useRef } from 'react'
 
 import { isCallbackRef, isRef } from '.'
 
-type RefArg<El extends HTMLElement> = RefCallback<El> | MutableRefObject<El>
+type RefArg<El extends HTMLElement> = RefCallback<El> | RefObject<El>
 
 export const useCombinedRefs = <El extends HTMLElement>(
   ...refs: RefArg<El>[]
@@ -14,7 +14,7 @@ export const useCombinedRefs = <El extends HTMLElement>(
       if (!ref) return
 
       if (isCallbackRef<El>(ref)) ref(targetRef.current)
-      else if (isRef(ref)) ref.current = targetRef.current
+      else if (isRef<El>(ref)) ref.current = targetRef.current
     })
   }, [refs])
 

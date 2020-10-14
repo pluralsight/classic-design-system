@@ -2,9 +2,6 @@ import { MutableRefObject, Ref, RefCallback } from 'react'
 
 import { isFunction } from '.'
 
-/**
- * @deprecated we should stop supporting legacy refs
- */
 export const isCallbackRef = <El extends HTMLElement>(
   ref: Ref<El>
 ): ref is RefCallback<El> => isFunction(ref)

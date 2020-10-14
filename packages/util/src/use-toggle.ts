@@ -5,8 +5,11 @@ interface Options {
   onToggle?: () => unknown
 }
 
+// eslint-ignore-next-line @typescript-eslint/no-empty-function
+const noop = () => {}
+
 export const useToggle = (opts: Options = {}) => {
-  const { isOpen, onToggle } = opts
+  const { isOpen, onToggle = noop } = opts
   const [_isOpen, setOpen] = useState(false)
   return {
     ...(isOpen !== undefined
