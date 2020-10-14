@@ -6,8 +6,8 @@ import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { combineFns } from '@pluralsight/ps-design-system-util'
-import { useRadioContext } from './context.js'
-import stylesheet from '../css/index.js'
+import { useRadioContext } from './context'
+import stylesheet from '../css'
 
 const styles = {
   button: ({ disabled }) =>

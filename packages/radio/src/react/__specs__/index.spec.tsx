@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 
-import Radio from '../index.js'
+import Radio from '..'
 
 describe('Radio', () => {
   it('forwards refs', () => {

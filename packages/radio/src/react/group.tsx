@@ -3,9 +3,9 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { RadioContext } from './context.js'
+import { RadioContext } from './context'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   buttonContainer: _ => css(stylesheet['.psds-radio-group__button-container']),

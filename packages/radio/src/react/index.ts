@@ -1,5 +1,5 @@
-import Button from './button.js'
-import Group from './group.js'
+import Button from './button'
+import Group from './group'
 
 export default {
   Button,
