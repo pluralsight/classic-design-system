@@ -4,7 +4,7 @@ import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css'
 
-const style = ({ themeName } : { themeName: keyof typeof names; }) =>
+const style = ({ themeName } : { themeName: ValueOf<typeof names> }) =>
   compose(
     css(stylesheet[`.psds-text__code`]),
     css(stylesheet[`.psds-text__code.psds-theme--${themeName}`])
