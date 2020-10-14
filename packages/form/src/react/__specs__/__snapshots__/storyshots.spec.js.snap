@@ -223,7 +223,6 @@ exports[`Storyshots Sample Form null children 1`] = `
       >
         <h2
           data-css-1uk9rqa=""
-          size="large"
           style={
             Object {
               "maxWidth": "none",
@@ -425,7 +424,6 @@ exports[`Storyshots Sample Form sample 1`] = `
       >
         <h2
           data-css-1uk9rqa=""
-          size="large"
           style={
             Object {
               "maxWidth": "none",

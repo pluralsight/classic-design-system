@@ -37,7 +37,7 @@ exports[`Storyshots pages 403 1`] = `
     data-css-i38iv3=""
   >
     <h2
-      data-css-k4y5mo=""
+      data-css-ffti8h=""
       size="smallCaps"
     >
       Error code: 
@@ -96,7 +96,7 @@ exports[`Storyshots pages 404 1`] = `
     data-css-i38iv3=""
   >
     <h2
-      data-css-k4y5mo=""
+      data-css-ffti8h=""
       size="smallCaps"
     >
       Error code: 
@@ -168,7 +168,7 @@ exports[`Storyshots pages 500 1`] = `
     data-css-i38iv3=""
   >
     <h2
-      data-css-k4y5mo=""
+      data-css-ffti8h=""
       size="smallCaps"
     >
       Error code: 
@@ -227,7 +227,7 @@ exports[`Storyshots pages 503 1`] = `
     data-css-i38iv3=""
   >
     <h2
-      data-css-k4y5mo=""
+      data-css-ffti8h=""
       size="smallCaps"
     >
       Error code: 
