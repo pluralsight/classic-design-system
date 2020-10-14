@@ -160,8 +160,6 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
 >
   <label
     data-css-o2msqt=""
-    onClick={null}
-    onKeyDown={null}
   >
     <div
       data-css-1xpuf1q=""
@@ -200,8 +198,6 @@ exports[`Storyshots Checkbox disabled 1`] = `
 >
   <label
     data-css-o2msqt=""
-    onClick={null}
-    onKeyDown={null}
   >
     <div
       data-css-1eqwi1x=""

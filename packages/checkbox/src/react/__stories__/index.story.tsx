@@ -4,7 +4,7 @@ import { DecoratorFn, storiesOf } from '@storybook/react'
 
 import Checkbox from '..'
 
-const PaddingDecorator = storyFn => (
+const PaddingDecorator: DecoratorFn = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
@@ -34,10 +34,14 @@ storiesOf('Checkbox', module)
   ))
   .add('state demo', () => {
     function StateDemo() {
-      const [values, updateValues] = React.useState([])
+      const [values, updateValues] = React.useState<{
+        [name: string]: React.ReactText
+      }>({})
 
       function handleCheck(
-        _evt: React.ChangeEvent<HTMLInputElement>,
+        _evt:
+          | React.KeyboardEvent<HTMLLabelElement>
+          | React.MouseEvent<HTMLLabelElement, MouseEvent>,
         checked: boolean,
         value: React.ReactText,
         name: string | undefined

@@ -47,7 +47,9 @@ interface CheckboxProps
   label: React.ReactNode
   name?: string
   onCheck?: (
-    evt: React.ChangeEvent<HTMLInputElement>,
+    evt:
+      | React.KeyboardEvent<HTMLLabelElement>
+      | React.MouseEvent<HTMLLabelElement, MouseEvent>,
     checked: boolean,
     value: React.ReactText,
     name: string | undefined
@@ -64,86 +66,91 @@ interface CheckboxComponent
     CheckboxStatics
   > {}
 
-const Checkbox = React.forwardRef((props, forwardedRef) => {
-  const themeName = useTheme()
+const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+  (props, forwardedRef) => {
+    const themeName = useTheme()
 
-  const ref = React.useRef<HTMLInputElement>()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
+    const ref = React.useRef<HTMLInputElement>(null)
+    React.useImperativeHandle(
+      forwardedRef,
+      () => (ref.current as unknown) as HTMLInputElement
+    )
 
-  const square = React.createRef<HTMLDivElement>()
+    const square = React.createRef<HTMLDivElement>()
 
-  React.useEffect(
-    function updateIndetermiateAttr() {
-      if (!ref.current) return
-      ref.current.indeterminate = props.indeterminate
-    },
-    [props.indeterminate]
-  )
+    React.useEffect(
+      function updateIndetermiateAttr() {
+        if (!ref.current) return
+        ref.current.indeterminate = props.indeterminate || false
+      },
+      [props.indeterminate]
+    )
 
-  const handleKeyDown = (evt: React.KeyboardEvent<HTMLLabelElement>) => {
-    if (evt.key === 'Enter' || evt.key === ' ') handleClick(evt)
-  }
-
-  const handleClick = (
-    evt:
-      | React.KeyboardEvent<HTMLLabelElement>
-      | React.MouseEvent<HTMLLabelElement, MouseEvent>
-  ) => {
-    evt.preventDefault()
-    evt.stopPropagation()
-
-    const { onCheck } = props
-    if (typeof onCheck === 'function') {
-      onCheck(evt, !props.checked, props.value, props.name)
+    const handleKeyDown = (evt: React.KeyboardEvent<HTMLLabelElement>) => {
+      if (evt.key === 'Enter' || evt.key === ' ') handleClick(evt)
     }
 
-    if (square.current) square.current.focus()
-  }
+    const handleClick = (
+      evt:
+        | React.KeyboardEvent<HTMLLabelElement>
+        | React.MouseEvent<HTMLLabelElement>
+    ) => {
+      evt.preventDefault()
+      evt.stopPropagation()
 
-  return (
-    <label
-      onClick={props.disabled ? undefined : handleClick}
-      onKeyDown={props.disabled ? undefined : handleKeyDown}
-      {...styles.checkbox(themeName, props)}
-    >
-      <Halo
-        error={props.error}
-        gapSize={Halo.gapSizes.small}
-        inline
-        visibleOnFocus={!props.disabled}
+      const { onCheck } = props
+      if (typeof onCheck === 'function') {
+        onCheck(evt, !props.checked, props.value, props.name)
+      }
+
+      if (square.current) square.current.focus()
+    }
+
+    return (
+      <label
+        onClick={props.disabled ? undefined : handleClick}
+        onKeyDown={props.disabled ? undefined : handleKeyDown}
+        {...styles.checkbox(themeName, props)}
       >
-        <div
-          aria-checked={props.checked}
-          ref={square}
-          role="checkbox"
-          tabIndex={props.disabled ? -1 : 0}
-          {...styles.square(themeName, props)}
+        <Halo
+          error={props.error}
+          gapSize={Halo.gapSizes.small}
+          inline
+          visibleOnFocus={!props.disabled}
         >
-          {props.indeterminate && (
-            <Indeterminate {...props} themeName={themeName} />
-          )}
-          {props.checked && !props.indeterminate && (
-            <Checkmark {...props} themeName={themeName} />
-          )}
-        </div>
-      </Halo>
+          <div
+            aria-checked={props.checked}
+            ref={square}
+            role="checkbox"
+            tabIndex={props.disabled ? -1 : 0}
+            {...styles.square(themeName, props)}
+          >
+            {props.indeterminate && (
+              <Indeterminate {...props} themeName={themeName} />
+            )}
+            {props.checked && !props.indeterminate && (
+              <Checkmark {...props} themeName={themeName} />
+            )}
+          </div>
+        </Halo>
 
-      <input
-        readOnly
-        ref={ref}
-        tabIndex={-1}
-        type="checkbox"
-        value={props.value}
-        {...styles.input(themeName, props)}
-        {...omit<CheckboxProps, ['label', 'onCheck', 'error', 'indeterminate']>(
-          props,
-          ['label', 'onCheck', 'error', 'indeterminate']
-        )}
-      />
-      <div {...styles.label(themeName, props)}>{props.label}</div>
-    </label>
-  )
-}) as CheckboxComponent
+        <input
+          readOnly
+          ref={ref}
+          tabIndex={-1}
+          type="checkbox"
+          value={props.value}
+          {...styles.input(themeName, props)}
+          {...omit<
+            CheckboxProps,
+            ['label', 'onCheck', 'error', 'indeterminate']
+          >(props, ['label', 'onCheck', 'error', 'indeterminate'])}
+        />
+        <div {...styles.label(themeName, props)}>{props.label}</div>
+      </label>
+    )
+  }
+) as CheckboxComponent
 
 export default Checkbox
 
