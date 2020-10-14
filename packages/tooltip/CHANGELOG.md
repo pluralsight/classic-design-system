@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.1.0...@pluralsight/ps-design-system-tooltip@6.1.1) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.0.19...@pluralsight/ps-design-system-tooltip@6.1.0) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
+## [6.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.0.18...@pluralsight/ps-design-system-tooltip@6.0.19) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tooltip
+
+
+
+
+
 ## [6.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.0.17...@pluralsight/ps-design-system-tooltip@6.0.18) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip

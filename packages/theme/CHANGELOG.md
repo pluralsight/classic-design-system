@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@5.1.0...@pluralsight/ps-design-system-theme@5.1.1) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-theme
+
+
+
+
+
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@5.0.0...@pluralsight/ps-design-system-theme@5.1.0) (2020-10-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-theme
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@4.0.15...@pluralsight/ps-design-system-theme@5.0.0) (2020-10-13)
+
+
+### Code Refactoring
+
+* **theme:** convert to typscript ([0387e54](https://github.com/pluralsight/design-system/commit/0387e54561d97e1ee65bcb41c056ff781ec86f6b))
+
+
+### BREAKING CHANGES
+
+* **theme:** remove BaseComponent static on WithTheme hoc
+
+
+
+
+
 ## [4.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@4.0.14...@pluralsight/ps-design-system-theme@4.0.15) (2020-10-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-theme

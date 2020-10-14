@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-collapsible",
-  "version": "2.1.4",
+  "version": "2.2.1",
   "description": "Collapsible UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -18,13 +18,13 @@
     "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.17"
+    "@pluralsight/ps-design-system-build": "^1.12.1"
   }
 }

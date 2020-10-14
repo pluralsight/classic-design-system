@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-radio",
-  "version": "7.1.9",
+  "version": "7.2.1",
   "description": "Design system components for radio buttons",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -19,10 +19,10 @@
     "test:watch": "yarn test -- --watchAll"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.4",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.1.20",
-    "@pluralsight/ps-design-system-halo": "^7.0.16",
-    "@pluralsight/ps-design-system-util": "^5.3.2",
+    "@pluralsight/ps-design-system-core": "^6.5.1",
+    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
+    "@pluralsight/ps-design-system-halo": "^7.1.1",
+    "@pluralsight/ps-design-system-util": "^5.4.1",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -32,9 +32,9 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.17",
-    "@pluralsight/ps-design-system-icon": "^18.2.6",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.5",
-    "@pluralsight/ps-design-system-theme": "^4.0.15"
+    "@pluralsight/ps-design-system-build": "^1.12.1",
+    "@pluralsight/ps-design-system-icon": "^18.3.1",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.1",
+    "@pluralsight/ps-design-system-theme": "^5.1.1"
   }
 }

@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as vars from '../../vars/index.js'
+import * as vars from '../../vars'
 
-import Halo from '../index.js'
+import Halo from '..'
 
 describe('Halo', () => {
   describe('.gapSizes', () => {
