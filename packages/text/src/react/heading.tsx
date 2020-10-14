@@ -25,8 +25,9 @@ interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 
 const Heading: React.FC<HeadingProps> & HeadingStatics = ({children, size, ...props}) => {
   const themeName = useTheme()
-
-  return React.cloneElement(React.Children.only(children as React.ReactElement), {
+  if(!React.isValidElement(children)) return
+  
+  return React.cloneElement(React.Children.only(children), {
     ...props,
     ...style({
       size,
