@@ -1,14 +1,20 @@
-import { useEffect, useRef } from 'react'
+import { MutableRefObject, RefCallback, useEffect, useRef } from 'react'
 
-export const useCombinedRefs = (...refs) => {
-  const targetRef = useRef()
+import { isCallbackRef, isRef } from '.'
+
+type RefArg<El extends HTMLElement> = RefCallback<El> | MutableRefObject<El>
+
+export const useCombinedRefs = <El extends HTMLElement>(
+  ...refs: RefArg<El>[]
+) => {
+  const targetRef = useRef<El>()
 
   useEffect(() => {
     refs.forEach(ref => {
       if (!ref) return
 
-      if (typeof ref === 'function') ref(targetRef.current)
-      else ref.current = targetRef.current
+      if (isCallbackRef<El>(ref)) ref(targetRef.current)
+      else if (isRef(ref)) ref.current = targetRef.current
     })
   }, [refs])
 
