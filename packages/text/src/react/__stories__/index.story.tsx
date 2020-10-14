@@ -4,10 +4,10 @@ import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
 
-import List from '../list/index.js'
-import Code from '../code.js'
-import Heading from '../heading.js'
-import P from '../p.js'
+import List from '../list'
+import Code from '../code'
+import Heading from '../heading'
+import P from '../p'
 
 const style = { color: core.colorsPink.base }
 const className = glamor.css({ color: `${core.colorsBlue.base} !important` })
@@ -18,27 +18,27 @@ const PaddingDecorator = storyFn => (
 
 const heading = storiesOf('Heading', module).addDecorator(PaddingDecorator)
 Object.keys(Heading.sizes).forEach(size =>
-  heading.add(`size: ${size}`, _ => (
-    <Heading size={size}>
+  heading.add(`size: ${size}`, () => (
+    <Heading size={size as keyof typeof Heading.sizes}>
       <h1>{size}</h1>
     </Heading>
   ))
 )
-heading.add('style override', _ => (
+heading.add('style override', () => (
   <Heading style={style}>
     <h2>pink</h2>
   </Heading>
 ))
-heading.add('className override', _ => (
-  <Heading className={className}>
+heading.add('className override', () => (
+  <Heading className={(className as unknown) as string}>
     <h2>orange</h2>
   </Heading>
 ))
 
 storiesOf('P', module)
   .addDecorator(PaddingDecorator)
-  .add('vanilla', _ => <P>lorem ipsum</P>)
-  .add('stacked', _ => (
+  .add('vanilla', () => <P>lorem ipsum</P>)
+  .add('stacked', () => (
     <div>
       <P>
         We need a paradigm shift quick win. Not the long pole in my tent red
@@ -120,8 +120,10 @@ storiesOf('P', module)
       </P>
     </div>
   ))
-  .add('style override', _ => <P style={style}>pink</P>)
-  .add('className override', _ => <P className={className}>orange</P>)
+  .add('style override', () => <P style={style}>pink</P>)
+  .add('className override', () => (
+    <P className={(className as unknown) as string}>orange</P>
+  ))
 
 const list = storiesOf('List', module)
   .addDecorator(PaddingDecorator)
@@ -176,8 +178,8 @@ const list = storiesOf('List', module)
     </div>
   ))
 Object.keys(List.types).forEach(typeProp =>
-  list.add(`type: ${typeProp}`, _ => (
-    <List type={typeProp}>
+  list.add(`type: ${typeProp}`, () => (
+    <List type={typeProp as keyof typeof List.types}>
       <List.Item>one</List.Item>
       <List.Item>two</List.Item>
       <List.Item>three</List.Item>

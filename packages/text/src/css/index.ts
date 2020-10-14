@@ -11,7 +11,7 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 export default {
   '.psds-text__code': {
@@ -47,7 +47,7 @@ export default {
     textTransform: 'uppercase',
     fontSize: type.fontSizeXSmall,
     letterSpacing: type.letterSpacingXSmall,
-    lineHeight: type.lineHeighTight,
+    lineHeight: type.lineHeightTight,
     fontWeight: type.fontWeightMedium
   },
   [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeNames.light}`]: {

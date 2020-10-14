@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Tab from '../../index.js'
+import Tab from '../..'
 
 function randomIntBetween(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min)

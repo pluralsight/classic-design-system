@@ -9,8 +9,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Dog count
     </div>
@@ -30,8 +29,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Cat count
     </div>
@@ -49,8 +47,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Rafters on the River
     </div>
@@ -68,8 +65,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Flotsam
     </div>
@@ -91,8 +87,7 @@ exports[`Storyshots DataWell label/data 1`] = `
 >
   <div
     data-css-1pudd7j=""
-    data-css-k4y5mo=""
-    size="smallCaps"
+    data-css-ffti8h=""
   >
     Dog count
   </div>
@@ -113,8 +108,7 @@ exports[`Storyshots DataWell label/data/subLabel 1`] = `
 >
   <div
     data-css-1pudd7j=""
-    data-css-k4y5mo=""
-    size="smallCaps"
+    data-css-ffti8h=""
   >
     Dog count
   </div>
@@ -144,8 +138,7 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Dog count
     </div>
@@ -165,8 +158,7 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Cat count
     </div>
@@ -184,8 +176,7 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Rafters on the River
     </div>
@@ -203,8 +194,7 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div
       data-css-1pudd7j=""
-      data-css-k4y5mo=""
-      size="smallCaps"
+      data-css-ffti8h=""
     >
       Flotsam
     </div>
