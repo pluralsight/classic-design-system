@@ -1,11 +1,12 @@
 import { compose, css } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
 
-const style = ({ themeName, size }: { themeName?: keyof typeof names; size?: keyof typeof vars.headingSizes }) =>
+const style = ({ themeName, size }: { themeName?: ValueOf<typeof names>; size?: ValueOf<typeof vars.headingSizes> }) =>
   compose(
     css(stylesheet['.psds-text__heading']),
     css(stylesheet[`.psds-text__heading.psds-theme--${themeName}`]),
@@ -20,7 +21,7 @@ interface HeadingStatics {
 }
 
 interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
-  size?:  keyof typeof vars.headingSizes
+  size?:  ValueOf<typeof vars.headingSizes>
 }
 
 const Heading: React.FC<HeadingProps> & HeadingStatics = ({children, size, ...props}) => {

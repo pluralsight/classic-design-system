@@ -2,10 +2,11 @@ import { compose, css } from 'glamor'
 import React, {HTMLAttributes} from 'react'
 
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
-const style = ({ themeName }: { themeName: keyof typeof names }) =>
+const style = ({ themeName }: { themeName: ValueOf<typeof names> }) =>
   compose(
     css(stylesheet[`.psds-text__p`]),
     css(stylesheet[`.psds-text__p.psds-theme--${themeName}`])
