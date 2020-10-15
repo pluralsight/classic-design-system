@@ -1,27 +1,35 @@
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import { css, StyleAttribute } from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css'
 import { select } from '../js'
 import * as vars from '../vars'
 
-const styles = {
-  badge: props =>
+type StyleFn = (
+  props: InternalBadgeProps,
+  themeName: ValueOf<typeof Theme.names>
+) => StyleAttribute
+
+const styles: { [key: string]: StyleFn } = {
+  badge: (props, themeName) =>
     css(
       stylesheet['.psds-badge'],
-      stylesheet[select(props.themeName, props.appearance, props.color)]
+      stylesheet[select(themeName, props.appearance, props.color)]
     )
 }
 
-interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
-  appearance?: ValueOf<typeof vars.appearances>
-  color?: ValueOf<typeof vars.colors>
+interface InternalBadgeProps {
+  appearance: ValueOf<typeof vars.appearances>
+  color: ValueOf<typeof vars.colors>
 }
+
+type BadgeProps = React.HTMLAttributes<HTMLDivElement> &
+  Partial<InternalBadgeProps>
 
 interface BadgeStatics {
   appearances: typeof vars.appearances
@@ -31,20 +39,32 @@ interface BadgeStatics {
 interface BadgeComponent
   extends RefForwardingComponent<BadgeProps, HTMLDivElement, BadgeStatics> {}
 
-const Badge = React.forwardRef<HTMLDivElement, BadgeProps>((props, ref) => {
-  const themeName = useTheme()
-  const allProps = { themeName, ...props }
-  return (
-    <div {...styles.badge(allProps)} ref={ref}>
-      {props.children}
-    </div>
-  )
-}) as BadgeComponent
+const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
+  (
+    {
+      appearance = vars.appearances.default,
+      color = vars.colors.gray,
+      ...rest
+    },
+    forwardedRef
+  ) => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    // TODO: consider replacing with useCombinedRefs
+    React.useImperativeHandle(
+      forwardedRef,
+      () => (ref.current as unknown) as HTMLDivElement
+    )
+    const themeName = useTheme()
 
-Badge.defaultProps = {
-  appearance: vars.appearances.default,
-  color: vars.colors.gray
-}
+    return (
+      <div
+        {...styles.badge({ appearance, color }, themeName)}
+        ref={ref}
+        {...rest}
+      />
+    )
+  }
+) as BadgeComponent
 
 Badge.appearances = vars.appearances
 Badge.colors = vars.colors
