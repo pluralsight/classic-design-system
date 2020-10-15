@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Banner from '../index.js'
+import Banner from '..'
 
 describe('Banner', () => {
   it('renders', () => {
@@ -13,8 +13,8 @@ describe('Banner', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
-    const buttonRef = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
+    const buttonRef = React.createRef<HTMLButtonElement>()
 
     render(
       <Banner ref={ref}>
