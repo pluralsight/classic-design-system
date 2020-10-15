@@ -20,7 +20,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
         aria-checked={true}
         data-css-1cfeqew=""
         role="checkbox"
-        tabIndex="0"
+        tabIndex={0}
       >
         <svg
           aria-label="Indeterminate Mark"
@@ -42,10 +42,9 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
     <input
       checked={true}
       data-css-gyrv08=""
-      disabled={false}
       name="colorRed"
       readOnly={true}
-      tabIndex="-1"
+      tabIndex={-1}
       type="checkbox"
       value="red"
     />
@@ -78,7 +77,7 @@ exports[`Storyshots Checkbox checked 1`] = `
         aria-checked={true}
         data-css-1cfeqew=""
         role="checkbox"
-        tabIndex="0"
+        tabIndex={0}
       >
         <svg
           aria-label="Checkmark"
@@ -97,10 +96,9 @@ exports[`Storyshots Checkbox checked 1`] = `
     <input
       checked={true}
       data-css-gyrv08=""
-      disabled={false}
       name="colorRed"
       readOnly={true}
-      tabIndex="-1"
+      tabIndex={-1}
       type="checkbox"
       value="red"
     />
@@ -130,19 +128,16 @@ exports[`Storyshots Checkbox default 1`] = `
       data-css-1ij5lym=""
     >
       <div
-        aria-checked={false}
         data-css-1lxtjk6=""
         role="checkbox"
-        tabIndex="0"
+        tabIndex={0}
       />
     </div>
     <input
-      checked={false}
       data-css-gyrv08=""
-      disabled={false}
       name="colorRed"
       readOnly={true}
-      tabIndex="-1"
+      tabIndex={-1}
       type="checkbox"
       value="red"
     />
@@ -165,26 +160,22 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
 >
   <label
     data-css-o2msqt=""
-    onClick={null}
-    onKeyDown={null}
   >
     <div
       data-css-1xpuf1q=""
     >
       <div
-        aria-checked={false}
         data-css-1lxtjk6=""
         role="checkbox"
-        tabIndex="-1"
+        tabIndex={-1}
       />
     </div>
     <input
-      checked={false}
       data-css-gyrv08=""
       disabled={true}
       name="colorRed"
       readOnly={true}
-      tabIndex="-1"
+      tabIndex={-1}
       type="checkbox"
       value="red"
     />
@@ -207,26 +198,22 @@ exports[`Storyshots Checkbox disabled 1`] = `
 >
   <label
     data-css-o2msqt=""
-    onClick={null}
-    onKeyDown={null}
   >
     <div
       data-css-1eqwi1x=""
     >
       <div
-        aria-checked={false}
         data-css-1lxtjk6=""
         role="checkbox"
-        tabIndex="-1"
+        tabIndex={-1}
       />
     </div>
     <input
-      checked={false}
       data-css-gyrv08=""
       disabled={true}
       name="colorRed"
       readOnly={true}
-      tabIndex="-1"
+      tabIndex={-1}
       type="checkbox"
       value="red"
     />
@@ -260,7 +247,7 @@ exports[`Storyshots Checkbox error 1`] = `
           aria-checked={true}
           data-css-1cfeqew=""
           role="checkbox"
-          tabIndex="0"
+          tabIndex={0}
         >
           <svg
             aria-label="Checkmark"
@@ -279,10 +266,9 @@ exports[`Storyshots Checkbox error 1`] = `
       <input
         checked={true}
         data-css-gyrv08=""
-        disabled={false}
         name="colorRed"
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
         type="checkbox"
         value="red"
       />
@@ -301,19 +287,16 @@ exports[`Storyshots Checkbox error 1`] = `
         data-css-f76l29=""
       >
         <div
-          aria-checked={false}
           data-css-1lxtjk6=""
           role="checkbox"
-          tabIndex="0"
+          tabIndex={0}
         />
       </div>
       <input
-        checked={false}
         data-css-gyrv08=""
-        disabled={false}
         name="colorRed"
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
         type="checkbox"
         value="red"
       />
@@ -344,10 +327,9 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       data-css-1ij5lym=""
     >
       <div
-        aria-checked={false}
         data-css-1cfeqew=""
         role="checkbox"
-        tabIndex="0"
+        tabIndex={0}
       >
         <svg
           aria-label="Indeterminate Mark"
@@ -367,12 +349,10 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       </div>
     </div>
     <input
-      checked={false}
       data-css-gyrv08=""
-      disabled={false}
       name="colorRed"
       readOnly={true}
-      tabIndex="-1"
+      tabIndex={-1}
       type="checkbox"
       value="red"
     />
@@ -417,16 +397,15 @@ exports[`Storyshots Checkbox state demo 1`] = `
           aria-checked={false}
           data-css-1lxtjk6=""
           role="checkbox"
-          tabIndex="0"
+          tabIndex={0}
         />
       </div>
       <input
         checked={false}
         data-css-gyrv08=""
-        disabled={false}
         name="colorRed"
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
         type="checkbox"
         value="red"
       />
@@ -448,16 +427,15 @@ exports[`Storyshots Checkbox state demo 1`] = `
           aria-checked={false}
           data-css-1lxtjk6=""
           role="checkbox"
-          tabIndex="0"
+          tabIndex={0}
         />
       </div>
       <input
         checked={false}
         data-css-gyrv08=""
-        disabled={false}
         name="colorGreen"
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
         type="checkbox"
         value="green"
       />
@@ -479,16 +457,15 @@ exports[`Storyshots Checkbox state demo 1`] = `
           aria-checked={false}
           data-css-1lxtjk6=""
           role="checkbox"
-          tabIndex="0"
+          tabIndex={0}
         />
       </div>
       <input
         checked={false}
         data-css-gyrv08=""
-        disabled={false}
         name="colorBlue"
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
         type="checkbox"
         value="blue"
       />

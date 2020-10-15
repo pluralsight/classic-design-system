@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import Checkbox from '../index.js'
+import Checkbox from '..'
 
 describe('Checkbox', () => {
   it('renders', () => {
@@ -17,7 +17,7 @@ describe('Checkbox', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLInputElement>()
 
     render(<Checkbox label="test label" value="test value" ref={ref} />)
 
