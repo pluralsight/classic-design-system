@@ -3,7 +3,7 @@ import React, { HTMLAttributes, useState, useContext } from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { combineFns, ValueOf, RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import { combineFns, ValueOf } from '@pluralsight/ps-design-system-util'
 import { RadioContext } from './context'
 import stylesheet from '../css'
 
