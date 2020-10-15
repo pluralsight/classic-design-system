@@ -28,7 +28,7 @@ describe('Radio', () => {
         <Radio.Button value="blue" label="Blue" />
       </Radio.Group>
     )
-    const radio = container.querySelector('input') as HTMLInputElement
+    const radio = container.querySelector('input')
     fireEvent.click(radio)
     expect(spy).toHaveBeenCalledTimes(1)
   })

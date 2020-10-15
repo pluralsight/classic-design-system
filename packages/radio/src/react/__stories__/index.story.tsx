@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import Radio from '..'
 
-const PaddingDecorator = (storyFn: () =>{}) => (
+const PaddingDecorator = (storyFn) => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
@@ -61,8 +61,11 @@ storiesOf('Radio', module)
     function StateDemo() {
       const [value, setValue] = React.useState('red' as React.ReactText)
 
-      function handleChange(evt?: React.MouseEvent, nextValue?:React.ReactText) {
-        setValue(nextValue as React.ReactText)
+      function handleChange(
+        evt?: React.MouseEvent,
+        nextValue?: React.ReactText
+      ) {
+        setValue(nextValue)
       }
 
       return (
@@ -70,7 +73,9 @@ storiesOf('Radio', module)
           <div style={{ color: core.colorsTextIcon.highOnDark }}>
             Selected: {value}
             <br />
-            <button onClick={(e: React.MouseEvent) => handleChange(e, 'blue')}>blue</button>
+            <button onClick={(e: React.MouseEvent) => handleChange(e, 'blue')}>
+              blue
+            </button>
           </div>
           <Radio.Group value={value} onChange={handleChange} name="controlled">
             <Radio.Button value="red" label="Red" />

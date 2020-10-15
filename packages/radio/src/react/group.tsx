@@ -1,4 +1,5 @@
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 import { RadioContext } from './context'
@@ -12,34 +13,45 @@ const styles = {
       stylesheet['.psds-radio-group'],
       disabled && stylesheet['.psds-radio-group--disabled']
     ),
-  label: (themeName: string) =>
+  label: (themeName:  ValueOf<typeof Theme.names>) =>
     css(
       stylesheet['.psds-radio-group__label'],
       stylesheet[`.psds-radio-group__label.psds-theme--${themeName}`]
     ),
-  subLabel: (themeName: string) =>
+  subLabel: (themeName:  ValueOf<typeof Theme.names>) =>
     css(
       stylesheet['.psds-radio-group__sub-label'],
       stylesheet[`.psds-radio-group__sub-label.psds-theme--${themeName}`]
     )
 }
 
-const useValue = ({ value, onChange } : { value?: React.ReactText,  onChange?: (e?: React.MouseEvent, v?: React.ReactText) => void}) => {
+const useValue = ({
+  value,
+  onChange
+}: {
+  value?: React.ReactText
+  onChange?: (evt?: React.MouseEvent,val?: React.ReactText) => void
+}) => {
   const [_value, setValue] = React.useState(value)
   return {
     ...(value !== undefined && onChange !== undefined
       ? { checkedValue: value, onChange }
-      : { checkedValue: _value, onChange: (evt?: React.MouseEvent, val?:  React.ReactText) => setValue(val) })
+      : {
+          checkedValue: _value,
+          onChange: (evt?: React.MouseEvent, val?: React.ReactText) =>
+            setValue(val)
+        })
   }
 }
 
-export interface RadioGroupProps extends Omit<HTMLAttributes<HTMLDivElement>, 'onChange'> {
+export interface RadioGroupProps
+  extends Omit<HTMLAttributes<HTMLDivElement>, 'onChange'> {
   children?: React.ReactNode
   disabled?: boolean
   error?: boolean
   label?: React.ReactNode
   name: string
-  onChange?: (e?: React.MouseEvent, v?: React.ReactText) => void
+  onChange?: (evt?: React.MouseEvent,val?: React.ReactText) => void
   subLabel?: React.ReactNode
   value?: React.ReactText
 }
@@ -61,12 +73,7 @@ const Group = React.forwardRef<HTMLDivElement, RadioGroupProps>(
   ) => {
     const themeName = useTheme()
     return (
-      <div
-        {...styles.group(disabled)}
-        {...rest}
-        ref={ref}
-        role="radiogroup"
-      >
+      <div {...styles.group(disabled)} {...rest} ref={ref} role="radiogroup">
         {label && <div {...styles.label(themeName)}>{label}</div>}
         <div {...styles.buttonContainer()}>
           <RadioContext.Provider
