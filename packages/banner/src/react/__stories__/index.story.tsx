@@ -8,8 +8,8 @@ import Link from '@pluralsight/ps-design-system-link'
 import Banner from '..'
 
 const colorStory = storiesOf('color', module)
-Object.keys(Banner.colors).forEach(color =>
-  colorStory.add(color, _ => <Banner color={color}>{color}</Banner>)
+Object.values(Banner.colors).forEach(color =>
+  colorStory.add(color, () => <Banner color={color}>{color}</Banner>)
 )
 
 storiesOf('onClick', module)
@@ -26,7 +26,7 @@ storiesOf('onClick', module)
   ))
   .add('side by side', () => (
     <div>
-      {Object.keys(Banner.colors).map(color => (
+      {Object.values(Banner.colors).map(color => (
         <Banner key={color} color={color} onClick={action('click X')}>
           this is the text
         </Banner>
@@ -35,8 +35,8 @@ storiesOf('onClick', module)
   ))
 
 const buttonStory = storiesOf('Button', module)
-Object.keys(Banner.colors).forEach(color =>
-  buttonStory.add(color, _ => (
+Object.values(Banner.colors).forEach(color =>
+  buttonStory.add(color, () => (
     <Banner color={color}>
       this is the text with a <Banner.Button>button</Banner.Button>
     </Banner>

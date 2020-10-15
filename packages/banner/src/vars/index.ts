@@ -1,6 +1,3 @@
-export const colors = {
-  blue: 'blue',
-  green: 'green',
-  yellow: 'yellow',
-  red: 'red'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
+
+export const colors = keyMirror('blue', 'green', 'yellow', 'red')
