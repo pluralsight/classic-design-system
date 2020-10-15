@@ -6,20 +6,20 @@ import CircularProgress from '../..'
 
 const valueStory = storiesOf('value', module)
 ;[0, 25, 50, 75, 100, 33, 66].forEach(value =>
-  valueStory.add(`value ${value}`, _ => <CircularProgress value={value} />)
+  valueStory.add(`value ${value}`, () => <CircularProgress value={value} />)
 )
 
 const sizeStory = storiesOf('size', module)
 Object.values(CircularProgress.sizes).forEach(size =>
-  sizeStory.add(size, _ => <CircularProgress size={size} value={75} />)
+  sizeStory.add(size, () => <CircularProgress size={size} value={75} />)
 )
 
 const indeterminateStory = storiesOf('indeterminate', module)
 Object.values(CircularProgress.sizes).forEach(size =>
-  indeterminateStory.add(size, _ => <CircularProgress size={size} />)
+  indeterminateStory.add(size, () => <CircularProgress size={size} />)
 )
 
-storiesOf('animation', module).add('animates to new values', _ => {
+storiesOf('animation', module).add('animates to new values', () => {
   const AnimationDemo = () => {
     const [value, updateValue] = React.useState(0)
 
@@ -47,7 +47,7 @@ storiesOf('animation', module).add('animates to new values', _ => {
 })
 
 storiesOf('style overrides', module)
-  .add('style', _ => <CircularProgress style={{ outline: '1px solid red' }} />)
-  .add('className (no viz change)', _ => (
+  .add('style', () => <CircularProgress style={{ outline: '1px solid red' }} />)
+  .add('className (no viz change)', () => (
     <CircularProgress className="someString" />
   ))

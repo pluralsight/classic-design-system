@@ -4,7 +4,7 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 export default {
   '@keyframes psds-circularprogress__keyframes__spin': {
@@ -26,7 +26,7 @@ export default {
     transform: 'rotate(-90deg)'
   },
   // __svg--no-value
-  [`.psds-circularprogress__svg--no-value`]: ({ spin }) => ({
+  [`.psds-circularprogress__svg--no-value`]: ({ spin }: { spin?: string }) => ({
     animation: `${
       spin || 'psds-circularprogress__keyframes__spin'
     } 1s linear infinite`
