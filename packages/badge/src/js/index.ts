@@ -1,4 +1,13 @@
-export function select(themeName, appearance, color) {
+import Theme from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+
+import * as vars from '../vars'
+
+export function select(
+  themeName: ValueOf<typeof Theme.names>,
+  appearance: ValueOf<typeof vars.appearances>,
+  color: ValueOf<typeof vars.colors>
+) {
   return (
     '.psds-badge--apearance-' +
     appearance +

@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import CircularProgress from '../index.js'
+import CircularProgress from '..'
 
 describe('CircularProgress', () => {
   it('renders', () => {
@@ -12,7 +12,7 @@ describe('CircularProgress', () => {
     expect(getByTestId('mock-component')).toBeInTheDocument()
   })
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
     render(<CircularProgress ref={ref} />)
 

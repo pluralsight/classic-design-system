@@ -175,7 +175,7 @@ exports[`Storyshots onClick displays X 1`] = `
 `;
 
 exports[`Storyshots onClick side by side 1`] = `
-Array [
+<div>
   <div
     data-css-ue58aw=""
   >
@@ -202,7 +202,7 @@ Array [
         </svg>
       </div>
     </button>
-  </div>,
+  </div>
   <div
     data-css-q43imj=""
   >
@@ -229,7 +229,7 @@ Array [
         </svg>
       </div>
     </button>
-  </div>,
+  </div>
   <div
     data-css-12l9wqa=""
   >
@@ -256,7 +256,7 @@ Array [
         </svg>
       </div>
     </button>
-  </div>,
+  </div>
   <div
     data-css-1bpd8ni=""
   >
@@ -283,8 +283,8 @@ Array [
         </svg>
       </div>
     </button>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots onClick w/ long text 1`] = `

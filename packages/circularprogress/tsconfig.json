@@ -3,7 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "rootDir": null,
-    "jsx": "react"
-  },
-  "include": ["**/*.tsx"]
+    "jsx": "react",
+    "strict": true
+  }
 }
