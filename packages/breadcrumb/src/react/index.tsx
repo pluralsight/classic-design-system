@@ -1,21 +1,40 @@
-import { css } from 'glamor'
-import React from 'react'
-import PropTypes from 'prop-types'
-
 import Button from '@pluralsight/ps-design-system-button'
+// TODO: rm
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React from 'react'
+// TODO: rm packagej
+/* import PropTypes from 'prop-types' */
 
-import stylesheet from '../css/index.js'
+import * as stylesheet from '../css/index.js'
 
 const styles = {
-  breadcrumb: _ => css(stylesheet['.psds-breadcrumb'])
+  breadcrumb: () => css(stylesheet['.psds-breadcrumb'])
 }
+
+interface BreadcrumbProps
+  extends React.HTMLAttributes<HTMLAnchorElement | HTMLButtonElement> {
+  disabled?: boolean
+  // TODO: why is this required for tsc? Doesn't it get included by HTMLAnchorElement
+  href?: string
+  loading?: boolean
+}
+
+interface BreadcrumbStatics {}
+
+interface BreadcrumbComponent
+  extends RefForwardingComponent<
+    BreadcrumbProps,
+    HTMLAnchorElement | HTMLButtonElement,
+    BreadcrumbStatics
+  > {}
 
 const Breadcrumb = React.forwardRef((props, ref) => {
   const { disabled, href, loading, onClick, ...rest } = props
   return (
-    <div {...filterReactProps(rest)} {...styles.breadcrumb(props)}>
+    <div {...filterReactProps(rest)} {...styles.breadcrumb()}>
       <Button
         appearance={Button.appearances.flat}
         href={href}
@@ -30,18 +49,9 @@ const Breadcrumb = React.forwardRef((props, ref) => {
       </Button>
     </div>
   )
-})
+}) as BreadcrumbComponent
 
-Breadcrumb.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node,
-  disabled: PropTypes.bool,
-  href: PropTypes.string,
-  loading: PropTypes.bool,
-  onClick: PropTypes.func,
-  style: PropTypes.object
-}
-
+// TODO: replace
 Breadcrumb.defaultProps = {
   disabled: false
 }
