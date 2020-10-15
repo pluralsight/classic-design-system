@@ -3,8 +3,6 @@ import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
-// TODO: rm packagej
-/* import PropTypes from 'prop-types' */
 
 import stylesheet from '../css'
 
