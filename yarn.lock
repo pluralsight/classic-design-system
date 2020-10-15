@@ -4193,6 +4193,11 @@
   resolved "https://registry.yarnpkg.com/@types/fined/-/fined-1.1.2.tgz#05d2b9f93d144855c97c18c9675f424ed01400c4"
   integrity sha512-hzzTS+X9EqDhx4vwdch/DOZci/bfh5J6Nyz8lqvyfBg2ROx2fPafX+LpDfpVgSvQKj0EYkwTYpBO3z2etwbkOw==
 
+"@types/focus-within@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/focus-within/-/focus-within-1.0.0.tgz#650d9d8b518a7f664883d39864525c2785435dfe"
+  integrity sha512-CT4wbB46M2Vmw+njLkkVysCtKKErxt0lksk70SZcm7BnKYduMOsk/vCN+hn73onK7Oyax/2WCMg2L2Qkl0Gs2w==
+
 "@types/get-port@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@types/get-port/-/get-port-3.2.0.tgz#f9e0a11443cc21336470185eae3dfba4495d29bc"

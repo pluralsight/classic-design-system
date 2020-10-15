@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-screenreaderonly",
-  "version": "2.0.17",
+  "version": "2.1.1",
   "description": "ScreenReaderOnly UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,8 +22,8 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.4.4",
-    "@pluralsight/ps-design-system-util": "^5.3.2",
+    "@pluralsight/ps-design-system-core": "^6.5.1",
+    "@pluralsight/ps-design-system-util": "^5.4.1",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
@@ -32,7 +32,7 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.11.17",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.1.5"
+    "@pluralsight/ps-design-system-build": "^1.12.1",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.1"
   }
 }

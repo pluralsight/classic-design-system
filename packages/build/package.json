@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "1.11.17",
+  "version": "1.12.1",
   "description": "Utilities for building and configuring Design System packages",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
