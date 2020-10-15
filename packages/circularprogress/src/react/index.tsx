@@ -74,9 +74,6 @@ const CircularProgress = React.forwardRef<
   const { size, value = defaultIndeterminateValue, ...rest } = props
   const themeName = useTheme()
 
-  /* if (typeof props.value !== 'undefined') { */
-  /*   value = props.value */
-  /* } */
   const dashOffset = ((100 - value) / 100) * circumference
 
   return (
