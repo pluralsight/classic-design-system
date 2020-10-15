@@ -8,7 +8,7 @@ import React from 'react'
 // TODO: rm packagej
 /* import PropTypes from 'prop-types' */
 
-import * as stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   breadcrumb: () => css(stylesheet['.psds-breadcrumb'])
