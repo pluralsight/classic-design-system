@@ -67,11 +67,13 @@ Banner.displayName = 'Banner'
 interface ButtonProps
   extends React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {}
 
+interface ButtonStatics {}
+
 interface ButtonComponent
   extends RefForwardingComponent<
     ButtonProps,
     HTMLButtonElement | HTMLAnchorElement,
-    {}
+    ButtonStatics
   > {}
 
 const Button = React.forwardRef((props, forwardRef) => {
