@@ -56,9 +56,4 @@ const Breadcrumb = React.forwardRef<
   )
 }) as BreadcrumbComponent
 
-// TODO: replace
-Breadcrumb.defaultProps = {
-  disabled: false
-}
-
 export default Breadcrumb
