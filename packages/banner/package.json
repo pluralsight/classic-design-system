@@ -8,6 +8,8 @@
   "keywords": [],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "scripts": {
     "build": "run-s build:cjs build:esm build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
