@@ -46,7 +46,7 @@ exports[`Storyshots Radio controlled 1`] = `
                 aria-checked={true}
                 data-css-1olif27=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               >
                 <div
                   data-css-ppl1jg=""
@@ -84,7 +84,7 @@ exports[`Storyshots Radio controlled 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -118,7 +118,7 @@ exports[`Storyshots Radio controlled 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -173,7 +173,7 @@ exports[`Storyshots Radio default 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -207,7 +207,7 @@ exports[`Storyshots Radio default 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -241,7 +241,7 @@ exports[`Storyshots Radio default 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -295,7 +295,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -303,7 +303,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           data-css-fplhjw=""
           name="disabled & error"
           onBlur={[Function]}
-          onClick={null}
+          onClick={[Function]}
           onFocus={[Function]}
           readOnly={true}
           type="radio"
@@ -329,7 +329,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
               aria-checked={true}
               data-css-1olif27=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             >
               <div
                 data-css-ppl1jg=""
@@ -341,7 +341,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           data-css-fplhjw=""
           name="disabled & error"
           onBlur={[Function]}
-          onClick={null}
+          onClick={[Function]}
           onFocus={[Function]}
           readOnly={true}
           type="radio"
@@ -367,7 +367,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -375,7 +375,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           data-css-fplhjw=""
           name="disabled & error"
           onBlur={[Function]}
-          onClick={null}
+          onClick={[Function]}
           onFocus={[Function]}
           readOnly={true}
           type="radio"
@@ -421,7 +421,7 @@ exports[`Storyshots Radio disabled 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -429,7 +429,7 @@ exports[`Storyshots Radio disabled 1`] = `
           data-css-fplhjw=""
           name="disabled"
           onBlur={[Function]}
-          onClick={null}
+          onClick={[Function]}
           onFocus={[Function]}
           readOnly={true}
           type="radio"
@@ -455,7 +455,7 @@ exports[`Storyshots Radio disabled 1`] = `
               aria-checked={true}
               data-css-1olif27=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             >
               <div
                 data-css-ppl1jg=""
@@ -467,7 +467,7 @@ exports[`Storyshots Radio disabled 1`] = `
           data-css-fplhjw=""
           name="disabled"
           onBlur={[Function]}
-          onClick={null}
+          onClick={[Function]}
           onFocus={[Function]}
           readOnly={true}
           type="radio"
@@ -493,7 +493,7 @@ exports[`Storyshots Radio disabled 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -501,7 +501,7 @@ exports[`Storyshots Radio disabled 1`] = `
           data-css-fplhjw=""
           name="disabled"
           onBlur={[Function]}
-          onClick={null}
+          onClick={[Function]}
           onFocus={[Function]}
           readOnly={true}
           type="radio"
@@ -547,7 +547,7 @@ exports[`Storyshots Radio error 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -581,7 +581,7 @@ exports[`Storyshots Radio error 1`] = `
               aria-checked={true}
               data-css-1olif27=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             >
               <div
                 data-css-ppl1jg=""
@@ -619,7 +619,7 @@ exports[`Storyshots Radio error 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -678,7 +678,7 @@ exports[`Storyshots Radio labels 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -712,7 +712,7 @@ exports[`Storyshots Radio labels 1`] = `
               aria-checked={true}
               data-css-1olif27=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             >
               <div
                 data-css-ppl1jg=""
@@ -750,7 +750,7 @@ exports[`Storyshots Radio labels 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -810,7 +810,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -844,7 +844,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -878,7 +878,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -921,7 +921,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -955,7 +955,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -989,7 +989,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
                 aria-checked={false}
                 data-css-1wbxh41=""
                 role="radio"
-                tabIndex="-1"
+                tabIndex={-1}
               />
             </div>
           </div>
@@ -1044,7 +1044,7 @@ exports[`Storyshots Radio one selected 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>
@@ -1078,7 +1078,7 @@ exports[`Storyshots Radio one selected 1`] = `
               aria-checked={true}
               data-css-1olif27=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             >
               <div
                 data-css-ppl1jg=""
@@ -1116,7 +1116,7 @@ exports[`Storyshots Radio one selected 1`] = `
               aria-checked={false}
               data-css-1wbxh41=""
               role="radio"
-              tabIndex="-1"
+              tabIndex={-1}
             />
           </div>
         </div>

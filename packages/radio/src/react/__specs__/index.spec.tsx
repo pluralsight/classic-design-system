@@ -5,8 +5,8 @@ import Radio from '..'
 
 describe('Radio', () => {
   it('forwards refs', () => {
-    const group = React.createRef()
-    const button = React.createRef()
+    const group = React.createRef<HTMLDivElement>()
+    const button = React.createRef<HTMLInputElement>()
 
     render(
       <Radio.Group ref={group} name="forwards refs">
@@ -28,7 +28,7 @@ describe('Radio', () => {
         <Radio.Button value="blue" label="Blue" />
       </Radio.Group>
     )
-    const radio = container.querySelector('input')
+    const radio = container.querySelector('input') as HTMLInputElement
     fireEvent.click(radio)
     expect(spy).toHaveBeenCalledTimes(1)
   })

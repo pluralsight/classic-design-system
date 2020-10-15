@@ -1,21 +1,19 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React, { useState } from 'react'
+import React, { HTMLAttributes, useState, useContext } from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { combineFns } from '@pluralsight/ps-design-system-util'
-import { useRadioContext } from './context'
+import { useTheme, names } from '@pluralsight/ps-design-system-theme'
+import { combineFns, ValueOf, RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import { RadioContext } from './context'
 import stylesheet from '../css'
 
 const styles = {
-  button: ({ disabled }) =>
+  button: (disabled: boolean) =>
     compose(
       css(stylesheet['.psds-radio-button']),
       disabled && css(stylesheet['.psds-radio-button--disabled'])
     ),
-  circle: (themeName, checked) =>
+  circle: (themeName: ValueOf<typeof names>, checked: boolean) =>
     compose(
       css(stylesheet['.psds-radio-button__circle']),
       css(stylesheet[`.psds-radio-button__circle.psds-theme--${themeName}`]),
@@ -25,40 +23,48 @@ const styles = {
   circleInner: () => css(stylesheet['.psds-radio-button__circle-inner']),
   halo: () => css(stylesheet['.psds-radio-button__halo']),
   input: () => css(stylesheet['.psds-radio-button__input']),
-  label: themeName =>
+  label: (themeName: ValueOf<typeof names>) =>
     compose(
       css(stylesheet['.psds-radio-button__label']),
       css(stylesheet[`.psds-radio-button__label.psds-theme--${themeName}`])
     )
 }
 
-const isChecked = (a, b) => a === b
+const isChecked = (a: React.ReactText, b?: React.ReactText) => a === b
 
-const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
+export interface RadioButtonProps extends Omit<HTMLAttributes<HTMLInputElement>, 'onClick'> {
+  label: React.ReactNode
+  onBlur?: (e?: React.FocusEvent) => void
+  onClick?: (e?: React.MouseEvent, v?: React.ReactText) => void
+  onFocus?: (e?: React.FocusEvent) => void
+  value: React.ReactText
+}
+
+
+const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(({ value, label, ...props }, forwardedRef) => {
   const themeName = useTheme()
-  const { checkedValue, onChange, disabled, error, name } = useRadioContext()
-  const ref = React.useRef()
+  const { checkedValue, onChange, disabled, error, name } =  useContext(RadioContext)
+  const ref = React.useRef<HTMLInputElement>((null as unknown) as HTMLInputElement)
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const circleRef = React.useRef()
   const [isFocused, setFocus] = useState(false)
 
-  const handleFocus = e => {
+  const handleFocus = (e: React.FocusEvent) => {
     if (disabled) return
     combineFns(() => setFocus(true), props.onFocus)(e)
   }
-  const handleBlur = e => {
+  const handleBlur = (e: React.FocusEvent) => {
     if (disabled) return
-    combineFns(props.onFocus, () => setFocus(false))(e)
+    combineFns(props.onBlur, () => setFocus(false))(e)
   }
-  function handleClick(e) {
-    const value = e.target.value
+  function handleClick(e: React.MouseEvent) {
+    const value = (e.target as HTMLInputElement).value
     combineFns(onChange, props.onClick)(e, value)
     ref.current.focus()
   }
   const checked = isChecked(value, checkedValue)
   return (
-    <label {...styles.button({ disabled })}>
+    <label {...styles.button(disabled as boolean)}>
       <div {...styles.circleOuter()}>
         <Halo
           error={error}
@@ -71,8 +77,7 @@ const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
           <div
             role="radio"
             aria-checked={checked}
-            tabIndex="-1"
-            ref={circleRef}
+            tabIndex={-1}
             {...styles.circle(themeName, checked)}
           >
             {checked && <div {...styles.circleInner()} />}
@@ -81,8 +86,8 @@ const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
       </div>
 
       <input
-        {...filterReactProps(props, { tagName: 'input' })}
-        onClick={disabled ? null : handleClick}
+        {...props}
+        onClick={disabled ? () => {} : handleClick}
         onFocus={handleFocus}
         onBlur={handleBlur}
         type="radio"
@@ -99,13 +104,5 @@ const Button = React.forwardRef(({ value, label, ...props }, forwardedRef) => {
 })
 
 Button.displayName = 'Radio.Button'
-
-Button.propTypes = {
-  label: PropTypes.node.isRequired,
-  onBlur: PropTypes.func,
-  onClick: PropTypes.func,
-  onFocus: PropTypes.func,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
-}
 
 export default Button
