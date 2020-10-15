@@ -16,7 +16,6 @@ interface BreadcrumbProps
     'disabled' | 'href' | 'onClick'
   > {
   disabled?: boolean
-  // TODO: why is this required for tsc? Doesn't it get included by HTMLAnchorElement
   href?: string
   loading?: boolean
   onClick?: (
