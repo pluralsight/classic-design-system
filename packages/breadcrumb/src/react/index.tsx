@@ -1,6 +1,4 @@
 import Button from '@pluralsight/ps-design-system-button'
-// TODO: rm
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
@@ -15,11 +13,17 @@ const styles = {
 }
 
 interface BreadcrumbProps
-  extends React.HTMLAttributes<HTMLAnchorElement | HTMLButtonElement> {
+  extends Omit<
+    React.HTMLAttributes<HTMLDivElement>,
+    'disabled' | 'href' | 'onClick'
+  > {
   disabled?: boolean
   // TODO: why is this required for tsc? Doesn't it get included by HTMLAnchorElement
   href?: string
   loading?: boolean
+  onClick?: (
+    evt: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>
+  ) => void
 }
 
 interface BreadcrumbStatics {}
@@ -31,10 +35,13 @@ interface BreadcrumbComponent
     BreadcrumbStatics
   > {}
 
-const Breadcrumb = React.forwardRef((props, ref) => {
+const Breadcrumb = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  BreadcrumbProps
+>((props, ref) => {
   const { disabled, href, loading, onClick, ...rest } = props
   return (
-    <div {...filterReactProps(rest)} {...styles.breadcrumb()}>
+    <div {...rest} {...styles.breadcrumb()}>
       <Button
         appearance={Button.appearances.flat}
         href={href}
