@@ -913,7 +913,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     aria-checked={false}
                     data-css-1wbxh41=""
                     role="radio"
-                    tabIndex="-1"
+                    tabIndex={-1}
                   />
                 </div>
               </div>
@@ -947,7 +947,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     aria-checked={false}
                     data-css-1wbxh41=""
                     role="radio"
-                    tabIndex="-1"
+                    tabIndex={-1}
                   />
                 </div>
               </div>

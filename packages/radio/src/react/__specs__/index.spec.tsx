@@ -1,12 +1,12 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 
-import Radio from '../index.js'
+import Radio from '..'
 
 describe('Radio', () => {
   it('forwards refs', () => {
-    const group = React.createRef()
-    const button = React.createRef()
+    const group = React.createRef<HTMLDivElement>()
+    const button = React.createRef<HTMLInputElement>()
 
     render(
       <Radio.Group ref={group} name="forwards refs">
