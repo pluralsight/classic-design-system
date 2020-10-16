@@ -1,11 +1,11 @@
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import Breadcrumb from '../index.js'
+import Breadcrumb from '..'
 
 describe('Breadcrumb', () => {
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLButtonElement>()
     render(
       <Breadcrumb onClick={jest.fn()} ref={ref}>
         Clicks once
@@ -19,7 +19,7 @@ describe('Breadcrumb', () => {
     it('does not allow clicks', () => {
       const handleClick = jest.fn()
       const { container } = render(
-        <Breadcrumb disabled href="" onClick={handleClick}>
+        <Breadcrumb disabled onClick={handleClick}>
           Clicks once
         </Breadcrumb>
       )
