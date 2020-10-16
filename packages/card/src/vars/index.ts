@@ -1,1 +1,3 @@
-export const sizes = { small: 'small', medium: 'medium', large: 'large' }
+import { keyMirror } from '@pluralsight/ps-design-system-util'
+
+export const sizes = keyMirror('small', 'medium', 'large')

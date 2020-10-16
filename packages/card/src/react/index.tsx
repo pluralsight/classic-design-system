@@ -5,6 +5,7 @@ import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
+  omit,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -125,12 +126,16 @@ const styles: { [key: string]: StyleFn } = {
   }
 }
 
-const ActionBar: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
+interface ActionBarProps extends React.HTMLAttributes<HTMLDivElement> {
+  actionBarVisible?: boolean
+  fullOverlay?: typeof FullOverlayLink
+}
+const ActionBar: React.FC<ActionBarProps> = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
 interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
-  icon?: typeof React.Element // TODO: retype as Icon when it's TS
+  icon?: typeof React.ReactElement // TODO: retype as Icon when it's TS
   title: string
 }
 interface ActionBarActionStatics {}
@@ -160,10 +165,14 @@ const BonusBar: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
 )
 
 const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
-  <div {...styles.card(props)} {...filterReactProps(props)} />
+  <div {...styles.card()} {...filterReactProps(props)} />
 )
 
-const FullOverlay: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
+interface FullOverlayProps extends React.HTMLAttributes<HTMLDivElement> {
+  // TODO: ensure default
+  fullOverlayVisible: boolean
+}
+const FullOverlay: React.FC<FullOverlayProps> = props => (
   <div {...styles.fullOverlay(props)} {...filterReactProps(props)} />
 )
 
@@ -200,7 +209,10 @@ const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
 ImageLink.displayName = 'Card.ImageLink'
 
 // TODO: children?
-const Overlays: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
+interface OverlaysProps extends React.HTMLAttributes<HTMLDivElement> {
+  size: ValueOf<typeof vars.sizes>
+}
+const Overlays: React.FC<OverlaysProps> = props => (
   <div {...styles.overlays(props)} {...filterReactProps(props)} />
 )
 
@@ -209,8 +221,10 @@ const Progress: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.progress(props)} {...filterReactProps(props)} />
 )
 
-// TODO: children?
-const ProgressBar: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
+interface ProgressBarProps extends React.HTMLAttributes<HTMLDivElement> {
+  progress: number
+}
+const ProgressBar: React.FC<ProgressBarProps> = props => (
   <div {...styles.progressBar(props)} {...filterReactProps(props)} />
 )
 
@@ -262,9 +276,10 @@ const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
 TextLink.displayName = 'Card.TextLink'
 
 // TODO: children?
-const TitleContainer: React.FC<React.HTMLAttributes<
-  HTMLDivElement
->> = props => (
+interface TitleContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+  size?: ValueOf<vars.sizes>
+}
+const TitleContainer: React.FC<TitleContainerProps> = props => (
   <div {...styles.titleContainer(props)} {...filterReactProps(props)} />
 )
 
@@ -313,7 +328,7 @@ const MetaDataList: React.FC<MetaDataListProps> = props => {
     <Metadata {...props}>
       {props.metadata.map((m, i) => [
         <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
-        i < metadata.length - 1 && (
+        i < props.metadata.length - 1 && (
           <MetadataDot aria-hidden key={`dot${i}`}>
             ·
           </MetadataDot>
@@ -323,7 +338,7 @@ const MetaDataList: React.FC<MetaDataListProps> = props => {
   )
 }
 
-interface CardComponentProps {
+interface CardComponentProps extends Record<string, unknown> {
   actionBar?: typeof ActionBarAction[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactElement
@@ -349,51 +364,82 @@ interface CardComponentStatics {
   TextLink: typeof TextLink
   Title: typeof Title
 }
-const CardComponent: React.FC<CardComponentProps> & CardComponentStatics = ({
-  title,
-  metadata1,
-  metadata2,
-  ...props
-}) => (
-  <Card {...props}>
-    <Overlays size={props.size}>
-      {props.image ? props.image : null}
+const CardComponent: React.FC<CardComponentProps> &
+  CardComponentStatics = props => {
+  const htmlProps = omit<
+    CardComponentProps,
+    [
+      'actionBar',
+      'actionBarVisible',
+      'bonusBar',
+      'fullOverlay',
+      'fullOverlayVisible',
+      'image',
+      'metadata1',
+      'metadata2',
+      'progress',
+      'size',
+      'tag',
+      'title'
+    ]
+  >(props, [
+    'actionBar',
+    'actionBarVisible',
+    'bonusBar',
+    'fullOverlay',
+    'fullOverlayVisible',
+    'image',
+    'metadata1',
+    'metadata2',
+    'progress',
+    'size',
+    'tag',
+    'title'
+  ])
+  return (
+    <Card {...htmlProps}>
+      <Overlays size={props.size}>
+        {props.image ? props.image : null}
 
-      {props.fullOverlay ? (
-        <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
-          {props.fullOverlay}
-        </FullOverlay>
-      ) : null}
+        {props.fullOverlay ? (
+          <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
+            {props.fullOverlay}
+          </FullOverlay>
+        ) : null}
 
-      {Array.isArray(props.actionBar) && props.actionBar.length > 0 ? (
-        <ActionBar
-          actionBarVisible={props.actionBarVisible}
-          fullOverlay={props.fullOverlay}
-          fullOverlayVisible={props.fullOverlayVisible}
-        >
-          {props.actionBar}
-        </ActionBar>
-      ) : null}
+        {Array.isArray(props.actionBar) && props.actionBar.length > 0 ? (
+          <ActionBar
+            actionBarVisible={props.actionBarVisible}
+            fullOverlay={props.fullOverlay}
+          >
+            {props.actionBar}
+          </ActionBar>
+        ) : null}
 
-      {props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null}
+        {props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null}
 
-      {props.tag}
+        {props.tag}
 
-      {props.progress ? (
-        <Progress>
-          <ProgressBar
-            progress={props.progress}
-            aria-label={`${toPercentageString(props.progress)} complete`}
-          />
-        </Progress>
-      ) : null}
-    </Overlays>
+        {props.progress ? (
+          <Progress>
+            <ProgressBar
+              progress={props.progress}
+              aria-label={`${toPercentageString(props.progress)} complete`}
+            />
+          </Progress>
+        ) : null}
+      </Overlays>
 
-    <TitleContainer {...props}>{title}</TitleContainer>
-    {props.metadata1 && <MetaDataList size={props.size} metadata={metadata1} />}
-    {props.metadata2 && <MetaDataList size={props.size} metadata={metadata2} />}
-  </Card>
-)
+      <TitleContainer>{props.title}</TitleContainer>
+      {props.metadata1 && (
+        <MetaDataList size={props.size} metadata={props.metadata1} />
+      )}
+      {props.metadata2 && (
+        <MetaDataList size={props.size} metadata={props.metadata2} />
+      )}
+    </Card>
+  )
+}
 
 CardComponent.Action = ActionBarAction
 CardComponent.FullOverlayLink = FullOverlayLink
