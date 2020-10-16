@@ -1,13 +1,18 @@
 import polyfillFocusWithin from 'focus-within'
 
-import { compose, css } from 'glamor'
+import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
+// TODO: rm
+import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+import { compose, css, StyleAttribute } from 'glamor'
+// TODO: rm
 import PropTypes from 'prop-types'
 import React from 'react'
 import Shiitake from 'shiitake'
-
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css'
 import { toPercentageString } from '../js'
@@ -15,7 +20,8 @@ import * as vars from '../vars'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
-const styles = {
+type StyleFn = (props: CardProps) => StyleAttribute
+const styles: { [key: string]: StyleFn } = {
   actionBar: ({ actionBarVisible: visible, fullOverlay }) => {
     const label = 'psds-card__action-bar'
 
@@ -119,10 +125,21 @@ const styles = {
   }
 }
 
-const ActionBar = props => (
+const ActionBar: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.actionBar(props)} {...filterReactProps(props)} />
 )
 
+interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
+  icon?: typeof React.Element // TODO: retype as Icon when it's TS
+  title: string
+}
+interface ActionBarActionStatics {}
+interface ActionBarActionComponent
+  extends RefForwardingComponent<
+    ActionBarActionProps,
+    HTMLButtonElement,
+    ActionBarActionStatics
+  > {}
 const ActionBarAction = React.forwardRef(({ icon, ...props }, ref) => {
   const ariaLabel = props['aria-label'] || props.title
   return (
@@ -135,72 +152,36 @@ const ActionBarAction = React.forwardRef(({ icon, ...props }, ref) => {
       {icon}
     </button>
   )
-})
+}) as ActionBarActionComponent
 ActionBarAction.displayName = 'Card.Action'
-ActionBarAction.propTypes = {
-  'aria-label': PropTypes.string,
-  icon: PropTypes.element.isRequired,
-  title: PropTypes.string.isRequired
-}
 
-const renderActionBar = props =>
-  Array.isArray(props.actionBar) && props.actionBar.length > 0 ? (
-    <ActionBar
-      actionBarVisible={props.actionBarVisible}
-      fullOverlay={props.fullOverlay}
-      fullOverlayVisible={props.fullOverlayVisible}
-    >
-      {props.actionBar}
-    </ActionBar>
-  ) : null
-
-renderActionBar.propTypes = {
-  actionBar: PropTypes.arrayOf(PropTypes.element),
-  actionBarVisible: PropTypes.bool,
-  fullOverlay: PropTypes.element, // CardComponent.FullOverlayLink
-  fullOverlayVisible: PropTypes.bool
-}
-
-const BonusBar = props => (
+const BonusBar: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.bonusBar(props)} {...filterReactProps(props)} />
 )
 
-const renderBonusBar = props =>
-  props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null
-
-renderBonusBar.propTypes = {
-  bonusBar: PropTypes.node
-}
-
-const Card = props => (
+const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.card(props)} {...filterReactProps(props)} />
 )
 
-const FullOverlay = props => (
+const FullOverlay: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.fullOverlay(props)} {...filterReactProps(props)} />
 )
 
+// TODO: ensure adding children here isn't a problem
 const FullOverlayLink = props => (
   <span
     {...styles.fullOverlayLink(props)}
     {...filterReactProps(props, { tagName: 'span' })}
-  />
+  >
+    {props.children}
+  </span>
 )
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
-const renderFullOverlay = props =>
-  props.fullOverlay ? (
-    <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
-      {props.fullOverlay}
-    </FullOverlay>
-  ) : null
-
-renderFullOverlay.propTypes = {
-  fullOverlay: PropTypes.element,
-  fullOverlayVisible: PropTypes.bool
+interface ImageProps extends React.HTMLAttributes<HTMLDivElement> {
+  src: string
 }
-
-const Image = props => (
+const Image: React.FC<ImageProps> = props => (
   <div
     {...styles.image(props)}
     {...filterReactProps(props)}
@@ -208,59 +189,48 @@ const Image = props => (
   />
 )
 Image.displayName = 'Card.Image'
-Image.propTypes = {
-  src: PropTypes.string.isRequired
-}
 
-const ImageLink = props => (
+// TODO: specify children?
+const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
   <span
     {...styles.imageLink(props)}
     {...filterReactProps(props, { tagName: 'span' })}
   />
 )
-
 ImageLink.displayName = 'Card.ImageLink'
 
-const renderImage = props => (props.image ? props.image : null)
-
-const Overlays = props => (
+// TODO: children?
+const Overlays: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.overlays(props)} {...filterReactProps(props)} />
 )
 
-const Progress = props => (
+// TODO: children?
+const Progress: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.progress(props)} {...filterReactProps(props)} />
 )
 
-const ProgressBar = props => (
+// TODO: children?
+const ProgressBar: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.progressBar(props)} {...filterReactProps(props)} />
 )
 
-const renderProgress = props =>
-  props.progress ? (
-    <Progress>
-      <ProgressBar
-        progress={props.progress}
-        aria-label={`${toPercentageString(props.progress)} complete`}
-      />
-    </Progress>
-  ) : null
-
-renderProgress.propTypes = {
-  progress: PropTypes.number
-}
-
-const TagIcon = props => (
+// TODO: children?
+const TagIcon: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.tagIcon(props)} {...filterReactProps(props)} />
 )
 
-const TagText = props => (
+// TODO: children?
+const TagText: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
   <span
     {...styles.tagText(props)}
     {...filterReactProps(props, { tagName: 'span' })}
   />
 )
 
-const Tag = ({ children, icon, ...props }) => (
+interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
+  icon: React.ReactElement // TODO: Icon when Icon is TS
+}
+const Tag: React.FC<TagProps> = ({ children, icon, ...props }) => (
   <div {...styles.tag(props)} {...filterReactProps(props)}>
     {icon && (
       <TagIcon>{React.cloneElement(icon, { size: iconSizes.small })}</TagIcon>
@@ -270,17 +240,15 @@ const Tag = ({ children, icon, ...props }) => (
   </div>
 )
 Tag.displayName = 'Card.Tag'
-Tag.propTypes = {
-  children: PropTypes.node,
-  icon: PropTypes.element
-}
 
-const renderTag = props => props.tag
-
-const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
+// TODO: children?
+const Text: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
+  <span {...filterReactProps(props, { tagName: 'span' })} />
+)
 Text.displayName = 'Card.Text'
 
-const TextLink = props => {
+// TODO: children?
+const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
   const themeName = useTheme()
   const allProps = { themeName, ...props }
 
@@ -293,11 +261,15 @@ const TextLink = props => {
 }
 TextLink.displayName = 'Card.TextLink'
 
-const TitleContainer = props => (
+// TODO: children?
+const TitleContainer: React.FC<React.HTMLAttributes<
+  HTMLDivElement
+>> = props => (
   <div {...styles.titleContainer(props)} {...filterReactProps(props)} />
 )
 
-const Title = props => {
+// TODO: children?
+const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   const allProps = { themeName, ...props }
 
@@ -309,37 +281,37 @@ const Title = props => {
 }
 Title.displayName = 'Card.Title'
 
-const renderTitle = (props, title) => {
-  return <TitleContainer {...props}>{title}</TitleContainer>
-}
-
-const Metadata = props => {
+const Metadata: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   const allProps = { themeName, ...props }
 
   return <div {...styles.metadata(allProps)} {...filterReactProps(allProps)} />
 }
 
-const MetadataDatum = props => (
+const MetadataDatum: React.FC<React.HTMLAttributes<
+  HTMLSpanElement
+>> = props => (
   <span
     {...styles.metadataDatum(props)}
     {...filterReactProps(props, { tagName: 'span' })}
   />
 )
 
-const MetadataDot = props => (
+const MetadataDot: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
   <span
     {...styles.metadataDot(props)}
     {...filterReactProps(props, { tagName: 'span' })}
   />
 )
 
-const renderMetaData = (props, metadata) => {
-  if (!metadata) return null
-
+interface MetaDataListProps {
+  metadata: (string | typeof TextLink)[]
+  size: ValueOf<typeof vars.sizes>
+}
+const MetaDataList: React.FC<MetaDataListProps> = props => {
   return (
     <Metadata {...props}>
-      {metadata.map((m, i) => [
+      {props.metadata.map((m, i) => [
         <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
         i < metadata.length - 1 && (
           <MetadataDot aria-hidden key={`dot${i}`}>
@@ -350,24 +322,76 @@ const renderMetaData = (props, metadata) => {
     </Metadata>
   )
 }
-renderMetaData.propTypes = {
-  size: PropTypes.oneOf(Object.keys(vars.sizes))
+
+interface CardComponentProps {
+  actionBar?: typeof ActionBarAction[]
+  actionBarVisible?: boolean
+  bonusBar?: React.ReactElement
+  fullOverlay?: typeof FullOverlayLink
+  fullOverlayVisible?: boolean
+  image: typeof Image | typeof ImageLink
+  metadata1?: (string | typeof TextLink)[]
+  metadata2?: (string | typeof TextLink)[]
+  progress?: number
+  size?: ValueOf<typeof vars.sizes>
+  tag?: typeof Tag
+  title: typeof TextLink | typeof Title
 }
 
-const CardComponent = ({ title, metadata1, metadata2, ...props }) => (
+interface CardComponentStatics {
+  Action: typeof ActionBarAction
+  FullOverlayLink: typeof FullOverlayLink
+  Image: typeof Image
+  ImageLink: typeof ImageLink
+  sizes: typeof vars.sizes
+  Tag: typeof Tag
+  Text: typeof Text
+  TextLink: typeof TextLink
+  Title: typeof Title
+}
+const CardComponent: React.FC<CardComponentProps> & CardComponentStatics = ({
+  title,
+  metadata1,
+  metadata2,
+  ...props
+}) => (
   <Card {...props}>
     <Overlays size={props.size}>
-      {renderImage(props)}
-      {renderFullOverlay(props)}
-      {renderActionBar(props)}
-      {renderBonusBar(props)}
-      {renderTag(props)}
-      {renderProgress(props)}
+      {props.image ? props.image : null}
+
+      {props.fullOverlay ? (
+        <FullOverlay fullOverlayVisible={props.fullOverlayVisible}>
+          {props.fullOverlay}
+        </FullOverlay>
+      ) : null}
+
+      {Array.isArray(props.actionBar) && props.actionBar.length > 0 ? (
+        <ActionBar
+          actionBarVisible={props.actionBarVisible}
+          fullOverlay={props.fullOverlay}
+          fullOverlayVisible={props.fullOverlayVisible}
+        >
+          {props.actionBar}
+        </ActionBar>
+      ) : null}
+
+      {props.bonusBar ? <BonusBar>{props.bonusBar}</BonusBar> : null}
+
+      {props.tag}
+
+      {props.progress ? (
+        <Progress>
+          <ProgressBar
+            progress={props.progress}
+            aria-label={`${toPercentageString(props.progress)} complete`}
+          />
+        </Progress>
+      ) : null}
     </Overlays>
 
-    {renderTitle(props, title)}
-    {renderMetaData(props, metadata1)}
-    {renderMetaData(props, metadata2)}
+    <TitleContainer {...props}>{title}</TitleContainer>
+    {props.metadata1 && <MetaDataList size={props.size} metadata={metadata1} />}
+    {props.metadata2 && <MetaDataList size={props.size} metadata={metadata2} />}
   </Card>
 )
 
@@ -382,26 +406,7 @@ CardComponent.Title = Title
 
 CardComponent.sizes = vars.sizes
 
-// TODO: offer more specific guides where real constraints exist (component types)
-CardComponent.propTypes = {
-  actionBar: PropTypes.arrayOf(PropTypes.element), // CardComponent.Action
-  actionBarVisible: PropTypes.bool,
-  bonusBar: PropTypes.node,
-  fullOverlay: PropTypes.element, // CardComponent.FullOverlayLink
-  fullOverlayVisible: PropTypes.bool,
-  image: PropTypes.element.isRequired, // CardComponent.Image|ImageLink
-  metadata1: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ), // CardComponent.TextLink
-  metadata2: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ), // CardComponent.TextLink
-  progress: PropTypes.number,
-  size: PropTypes.oneOf(Object.keys(vars.sizes)),
-  tag: PropTypes.element, // CardComponent.Tag
-  title: PropTypes.element.isRequired // CardComponent.TextLink>Title|Title
-}
-
+// TODO: replace
 CardComponent.defaultProps = {
   actionBarVisible: false,
   fullOverlayVisible: false,
