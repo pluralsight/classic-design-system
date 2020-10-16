@@ -9,9 +9,9 @@ import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
-import { toPercentageString } from '../js/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import { toPercentageString } from '../js'
+import * as vars from '../vars'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 

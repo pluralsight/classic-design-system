@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import Card from '../index.js'
+import Card from '..'
 
 const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
   `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
