@@ -18,6 +18,7 @@
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
