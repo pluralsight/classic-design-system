@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import Radio from '..'
 
-const PaddingDecorator = (storyFn) => (
+const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 

@@ -36,7 +36,7 @@ export interface RadioButtonProps
   extends Omit<HTMLAttributes<HTMLInputElement>, 'onClick'> {
   label: React.ReactNode
   onBlur?: (evt?: React.FocusEvent) => void
-  onClick?: (evt?: React.MouseEvent,val?: React.ReactText) => void
+  onClick?: (evt?: React.MouseEvent, val?: React.ReactText) => void
   onFocus?: (evt?: React.FocusEvent) => void
   value: React.ReactText
 }

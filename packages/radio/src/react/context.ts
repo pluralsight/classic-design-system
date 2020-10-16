@@ -1,7 +1,7 @@
 import { createContext, ReactText, MouseEvent } from 'react'
 interface ContextValue {
   checkedValue?: ReactText
-  onChange?: (evt?: MouseEvent,val?: ReactText) => void
+  onChange?: (evt?: MouseEvent, val?: ReactText) => void
   disabled?: boolean
   error?: boolean
   name?: string

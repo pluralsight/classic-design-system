@@ -13,12 +13,12 @@ const styles = {
       stylesheet['.psds-radio-group'],
       disabled && stylesheet['.psds-radio-group--disabled']
     ),
-  label: (themeName:  ValueOf<typeof Theme.names>) =>
+  label: (themeName: ValueOf<typeof Theme.names>) =>
     css(
       stylesheet['.psds-radio-group__label'],
       stylesheet[`.psds-radio-group__label.psds-theme--${themeName}`]
     ),
-  subLabel: (themeName:  ValueOf<typeof Theme.names>) =>
+  subLabel: (themeName: ValueOf<typeof Theme.names>) =>
     css(
       stylesheet['.psds-radio-group__sub-label'],
       stylesheet[`.psds-radio-group__sub-label.psds-theme--${themeName}`]
@@ -30,7 +30,7 @@ const useValue = ({
   onChange
 }: {
   value?: React.ReactText
-  onChange?: (evt?: React.MouseEvent,val?: React.ReactText) => void
+  onChange?: (evt?: React.MouseEvent, val?: React.ReactText) => void
 }) => {
   const [_value, setValue] = React.useState(value)
   return {
@@ -51,7 +51,7 @@ export interface RadioGroupProps
   error?: boolean
   label?: React.ReactNode
   name: string
-  onChange?: (evt?: React.MouseEvent,val?: React.ReactText) => void
+  onChange?: (evt?: React.MouseEvent, val?: React.ReactText) => void
   subLabel?: React.ReactNode
   value?: React.ReactText
 }
