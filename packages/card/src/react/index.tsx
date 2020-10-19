@@ -3,7 +3,7 @@ import polyfillFocusWithin from 'focus-within'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 // TODO: rm
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   omit,
   RefForwardingComponent,
@@ -109,7 +109,7 @@ const styles: { [key: string]: StyleFn } = {
     )
   },
 
-  title: ({ themeName }) => {
+  title: (themeName: ValueOf<typeof Theme.names>) => {
     const label = 'psds-card__title'
 
     return compose(
@@ -255,6 +255,7 @@ Text.displayName = 'Card.Text'
 // TODO: children?
 const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
   const themeName = useTheme()
+  // TODO: separate
   const allProps = { themeName, ...props }
 
   return (
@@ -266,58 +267,39 @@ const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
 }
 TextLink.displayName = 'Card.TextLink'
 
-// TODO: children?
 const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
-  const allProps = { themeName, ...props }
+  const { children, ...rest } = props
 
   return (
-    <div {...styles.title(allProps)} {...filterReactProps(allProps)}>
-      <Shiitake lines={2}>{allProps.children}</Shiitake>
+    <div {...styles.title(themeName)} {...rest}>
+      <Shiitake lines={2}>{children}</Shiitake>
     </div>
   )
 }
 Title.displayName = 'Card.Title'
 
-const Metadata: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
-  const themeName = useTheme()
-  const allProps = { themeName, ...props }
-
-  return <div {...styles.metadata(allProps)} {...filterReactProps(allProps)} />
-}
-
-const MetadataDatum: React.FC<React.HTMLAttributes<
-  HTMLSpanElement
->> = props => (
-  <span
-    {...styles.metadataDatum(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-)
-
-const MetadataDot: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
-  <span
-    {...styles.metadataDot(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-)
-
-interface MetaDataListProps {
+interface MetaDataProps {
   metadata: (string | typeof TextLink)[]
   size: ValueOf<typeof vars.sizes>
 }
-const MetaDataList: React.FC<MetaDataListProps> = props => {
+const MetaData: React.FC<MetaDataProps> = props => {
+  const themeName = useTheme()
+  // TODO: separate
+  const allProps = { themeName, ...props }
   return (
-    <Metadata {...props}>
+    <div {...styles.metadata(allProps)} {...filterReactProps(allProps)}>
       {props.metadata.map((m, i) => [
-        <MetadataDatum key={`datum${i}`}>{m}</MetadataDatum>,
+        <span key={`datum${i}`} {...styles.metadataDatum(props)}>
+          {m}
+        </span>,
         i < props.metadata.length - 1 && (
-          <MetadataDot aria-hidden key={`dot${i}`}>
+          <span aria-hidden key={`dot${i}`} {...styles.metadataDot(props)}>
             ·
-          </MetadataDot>
+          </span>
         )
       ])}
-    </Metadata>
+    </div>
   )
 }
 
@@ -415,10 +397,10 @@ const CardComponent: React.FC<CardComponentProps> &
 
       <div {...styles.titleContainer(props)}>{props.title}</div>
       {props.metadata1 && (
-        <MetaDataList size={props.size} metadata={props.metadata1} />
+        <MetaData size={props.size} metadata={props.metadata1} />
       )}
       {props.metadata2 && (
-        <MetaDataList size={props.size} metadata={props.metadata2} />
+        <MetaData size={props.size} metadata={props.metadata2} />
       )}
     </Card>
   )
