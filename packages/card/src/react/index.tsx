@@ -21,13 +21,11 @@ import * as vars from '../vars'
 
 if (canUseDOM()) polyfillFocusWithin(document)
 
-type StyleFn = (
-  // TODO: specify
-  props?: any,
-  themeName?: ValueOf<typeof themeNames>
-) => StyleAttribute
-const styles: { [key: string]: StyleFn } = {
-  actionBar: ({ actionBarVisible: visible, fullOverlay }) => {
+const styles = {
+  actionBar: ({
+    actionBarVisible: visible,
+    fullOverlay
+  }: Partial<CardComponentProps>) => {
     const label = 'psds-card__action-bar'
 
     return compose(
@@ -38,7 +36,7 @@ const styles: { [key: string]: StyleFn } = {
       visible && css(stylesheet[`${label}--actionBarVisible`])
     )
   },
-  actionButton: ({ disabled }) => {
+  actionButton: ({ disabled }: Partial<ActionBarActionProps>) => {
     const label = 'psds-card__action-bar__button'
 
     return compose(
@@ -51,7 +49,9 @@ const styles: { [key: string]: StyleFn } = {
 
   card: () => css(stylesheet['.psds-card']),
 
-  fullOverlay: ({ fullOverlayVisible: visible }) => {
+  fullOverlay: ({
+    fullOverlayVisible: visible
+  }: Partial<CardComponentProps>) => {
     const label = 'psds-card__full-overlay'
 
     return compose(
@@ -64,7 +64,10 @@ const styles: { [key: string]: StyleFn } = {
   image: () => css(stylesheet['.psds-card__image']),
   imageLink: () => css(stylesheet['.psds-card__image-link']),
 
-  metadata: ({ size }, themeName) => {
+  metadata: (
+    { size }: Partial<MetaDataProps>,
+    themeName: ValueOf<typeof themeNames>
+  ) => {
     const label = 'psds-card__metadata'
 
     return compose(
@@ -76,7 +79,7 @@ const styles: { [key: string]: StyleFn } = {
   metadataDatum: () => css(stylesheet['.psds-card__metadata__datum']),
   metadataDot: () => css(stylesheet['.psds-card__metadata__dot']),
 
-  overlays: ({ size }) => {
+  overlays: ({ size }: Partial<CardComponentProps>) => {
     const label = 'psds-card__overlays'
 
     return compose(
@@ -86,7 +89,7 @@ const styles: { [key: string]: StyleFn } = {
   },
 
   progress: () => css(stylesheet['.psds-card__progress']),
-  progressBar: ({ progress }) => {
+  progressBar: ({ progress }: Partial<CardComponentProps>) => {
     const label = 'psds-card__progress__bar'
     const percent = toPercentageString(progress)
     const isCompleted = percent === '100%'
@@ -102,7 +105,7 @@ const styles: { [key: string]: StyleFn } = {
   tagIcon: () => css(stylesheet['.psds-card__tag__icon']),
   tagText: () => css(stylesheet['.psds-card__tag__text']),
 
-  textLink: (_props, themeName) => {
+  textLink: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-card__text-link'
 
     return compose(
@@ -111,7 +114,7 @@ const styles: { [key: string]: StyleFn } = {
     )
   },
 
-  title: (_props, themeName) => {
+  title: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-card__title'
 
     return compose(
@@ -120,7 +123,7 @@ const styles: { [key: string]: StyleFn } = {
     )
   },
 
-  titleContainer: ({ size }) => {
+  titleContainer: ({ size }: Partial<CardComponentProps>) => {
     const label = 'psds-card__title-container'
 
     return compose(
@@ -131,6 +134,7 @@ const styles: { [key: string]: StyleFn } = {
 }
 
 interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
+  disabled?: boolean
   icon?: React.ReactElement // TODO: retype as Icon when it's TS
   title: string
 }
@@ -160,7 +164,7 @@ ActionBarAction.displayName = 'Card.Action'
 
 const FullOverlayLink: React.FC<React.HTMLAttributes<
   HTMLSpanElement
->> = props => <span {...styles.fullOverlayLink(props)} {...props} />
+>> = props => <span {...styles.fullOverlayLink()} {...props} />
 
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
@@ -171,7 +175,7 @@ const Image: React.FC<ImageProps> = props => {
   const { src, ...rest } = props
   return (
     <div
-      {...styles.image(props)}
+      {...styles.image()}
       {...rest}
       style={{ backgroundImage: `url(${src})` }}
     />
@@ -180,7 +184,7 @@ const Image: React.FC<ImageProps> = props => {
 Image.displayName = 'Card.Image'
 
 const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
-  <span {...styles.imageLink(props)} {...props} />
+  <span {...styles.imageLink()} {...props} />
 )
 ImageLink.displayName = 'Card.ImageLink'
 
@@ -208,7 +212,7 @@ Text.displayName = 'Card.Text'
 
 const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
   const themeName = useTheme()
-  return <span {...styles.textLink(undefined, themeName)} {...props} />
+  return <span {...styles.textLink(themeName)} {...props} />
 }
 TextLink.displayName = 'Card.TextLink'
 
@@ -217,7 +221,7 @@ const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const { children, ...rest } = props
 
   return (
-    <div {...styles.title(undefined, themeName)} {...rest}>
+    <div {...styles.title(themeName)} {...rest}>
       <Shiitake lines={2}>{children}</Shiitake>
     </div>
   )
@@ -247,6 +251,7 @@ const MetaData: React.FC<MetaDataProps> = props => {
   )
 }
 
+// TODO: rename
 interface CardComponentProps extends Record<string, unknown> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
@@ -320,13 +325,13 @@ const CardComponent: React.FC<CardComponentProps> &
         ) : null}
 
         {props.bonusBar ? (
-          <div {...styles.bonusBar(props)}>{props.bonusBar}</div>
+          <div {...styles.bonusBar()}>{props.bonusBar}</div>
         ) : null}
 
         {props.tag}
 
         {props.progress ? (
-          <div {...styles.progress(props)}>
+          <div {...styles.progress()}>
             <div
               {...styles.progressBar(props)}
               aria-label={`${toPercentageString(props.progress)} complete`}
