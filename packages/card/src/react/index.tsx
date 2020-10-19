@@ -249,7 +249,6 @@ const MetaData: React.FC<MetaDataProps> = props => {
   )
 }
 
-// TODO: rename
 interface CardProps extends Record<string, unknown> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
