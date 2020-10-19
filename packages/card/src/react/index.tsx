@@ -223,7 +223,7 @@ const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
 Title.displayName = 'Card.Title'
 
 interface MetaDataProps {
-  metadata: (string | typeof TextLink)[]
+  metadata: (string | React.ReactElement<typeof TextLink>)[]
   size: ValueOf<typeof vars.sizes>
 }
 const MetaData: React.FC<MetaDataProps> = props => {
@@ -246,18 +246,18 @@ const MetaData: React.FC<MetaDataProps> = props => {
 }
 
 interface CardComponentProps extends Record<string, unknown> {
-  actionBar?: any // typeof ActionBarAction[] // TODO: specify
+  actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactNode
-  fullOverlay?: any // typeof FullOverlayLink // TODO: specify
+  fullOverlay?: React.ReactElement<typeof FullOverlayLink>
   fullOverlayVisible?: boolean
-  image: any // typeof Image | typeof ImageLink // TODO: specify
-  metadata1?: any // (string | typeof TextLink)[] // TODO: specify
-  metadata2?: any // (string | typeof TextLink)[] // TODO: specify
+  image: React.ReactElement<typeof ImageLink>
+  metadata1?: (string | React.ReactElement<typeof TextLink>)[]
+  metadata2?: (string | React.ReactElement<typeof TextLink>)[]
   progress?: number
   size?: ValueOf<typeof vars.sizes>
-  tag?: any // typeof Tag // TODO: specify
-  title: any // typeof TextLink | typeof Title // TODO: specify
+  tag?: React.ReactElement<typeof Tag>
+  title: React.ReactElement<typeof TextLink> | React.ReactElement<typeof Title>
 }
 
 interface CardComponentStatics {
