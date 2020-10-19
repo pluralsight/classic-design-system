@@ -18,7 +18,6 @@ import Shiitake from 'shiitake'
 import stylesheet from '../css'
 import { toPercentageString } from '../js'
 import * as vars from '../vars'
-console.log({ vars })
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
