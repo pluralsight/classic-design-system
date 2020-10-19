@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Radio from '../index.js'
+import Radio from '..'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
@@ -10,21 +10,21 @@ const PaddingDecorator = storyFn => (
 
 storiesOf('Radio', module)
   .addDecorator(PaddingDecorator)
-  .add('default', _ => (
+  .add('default', () => (
     <Radio.Group name="default">
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
-  .add('one selected', _ => (
+  .add('one selected', () => (
     <Radio.Group value="green" name="one selected">
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
-  .add('labels', _ => (
+  .add('labels', () => (
     <Radio.Group
       value="green"
       label="Colors"
@@ -36,32 +36,35 @@ storiesOf('Radio', module)
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
-  .add('error', _ => (
+  .add('error', () => (
     <Radio.Group value="green" error name="error">
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
-  .add('disabled', _ => (
+  .add('disabled', () => (
     <Radio.Group value="green" disabled name="disabled">
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
-  .add('disabled & error', _ => (
+  .add('disabled & error', () => (
     <Radio.Group value="green" disabled error name="disabled & error">
       <Radio.Button value="red" label="Red" />
       <Radio.Button value="green" label="Green" />
       <Radio.Button value="blue" label="Blue" />
     </Radio.Group>
   ))
-  .add('controlled', _ => {
+  .add('controlled', () => {
     function StateDemo() {
-      const [value, setValue] = React.useState('red')
+      const [value, setValue] = React.useState('red' as React.ReactText)
 
-      function handleChange(evt, nextValue) {
+      function handleChange(
+        evt?: React.MouseEvent,
+        nextValue?: React.ReactText
+      ) {
         setValue(nextValue)
       }
 
@@ -70,7 +73,9 @@ storiesOf('Radio', module)
           <div style={{ color: core.colorsTextIcon.highOnDark }}>
             Selected: {value}
             <br />
-            <button onClick={() => handleChange(1, 'blue')}>blue</button>
+            <button onClick={(e: React.MouseEvent) => handleChange(e, 'blue')}>
+              blue
+            </button>
           </div>
           <Radio.Group value={value} onChange={handleChange} name="controlled">
             <Radio.Button value="red" label="Red" />
@@ -83,7 +88,7 @@ storiesOf('Radio', module)
 
     return <StateDemo />
   })
-  .add('multiple radio groups', _ => (
+  .add('multiple radio groups', () => (
     <div>
       <Radio.Group name="group one">
         <Radio.Button value="red" label="Red" />
