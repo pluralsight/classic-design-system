@@ -1,7 +1,10 @@
 import polyfillFocusWithin from 'focus-within'
 
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
 import {
   omit,
   RefForwardingComponent,
@@ -17,11 +20,9 @@ import * as vars from '../vars'
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
-// TODO: split up per component
-// TODO: import named themeNames
 type StyleFn = (
   props?: any,
-  themeName?: ValueOf<typeof Theme.names>
+  themeName?: ValueOf<typeof themeNames>
 ) => StyleAttribute
 const styles: { [key: string]: StyleFn } = {
   actionBar: ({ actionBarVisible: visible, fullOverlay }) => {
