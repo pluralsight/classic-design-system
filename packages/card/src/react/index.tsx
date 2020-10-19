@@ -25,7 +25,7 @@ const styles = {
   actionBar: ({
     actionBarVisible: visible,
     fullOverlay
-  }: Partial<CardComponentProps>) => {
+  }: Partial<CardProps>) => {
     const label = 'psds-card__action-bar'
 
     return compose(
@@ -49,9 +49,7 @@ const styles = {
 
   card: () => css(stylesheet['.psds-card']),
 
-  fullOverlay: ({
-    fullOverlayVisible: visible
-  }: Partial<CardComponentProps>) => {
+  fullOverlay: ({ fullOverlayVisible: visible }: Partial<CardProps>) => {
     const label = 'psds-card__full-overlay'
 
     return compose(
@@ -79,7 +77,7 @@ const styles = {
   metadataDatum: () => css(stylesheet['.psds-card__metadata__datum']),
   metadataDot: () => css(stylesheet['.psds-card__metadata__dot']),
 
-  overlays: ({ size }: Partial<CardComponentProps>) => {
+  overlays: ({ size }: Partial<CardProps>) => {
     const label = 'psds-card__overlays'
 
     return compose(
@@ -89,7 +87,7 @@ const styles = {
   },
 
   progress: () => css(stylesheet['.psds-card__progress']),
-  progressBar: ({ progress }: Partial<CardComponentProps>) => {
+  progressBar: ({ progress }: Partial<CardProps>) => {
     const label = 'psds-card__progress__bar'
     const percent = toPercentageString(progress)
     const isCompleted = percent === '100%'
@@ -123,7 +121,7 @@ const styles = {
     )
   },
 
-  titleContainer: ({ size }: Partial<CardComponentProps>) => {
+  titleContainer: ({ size }: Partial<CardProps>) => {
     const label = 'psds-card__title-container'
 
     return compose(
@@ -252,7 +250,7 @@ const MetaData: React.FC<MetaDataProps> = props => {
 }
 
 // TODO: rename
-interface CardComponentProps extends Record<string, unknown> {
+interface CardProps extends Record<string, unknown> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactNode
@@ -267,7 +265,7 @@ interface CardComponentProps extends Record<string, unknown> {
   title: React.ReactElement<typeof TextLink> | React.ReactElement<typeof Title>
 }
 
-interface CardComponentStatics {
+interface CardStatics {
   Action: typeof ActionBarAction
   FullOverlayLink: typeof FullOverlayLink
   Image: typeof Image
@@ -278,10 +276,9 @@ interface CardComponentStatics {
   TextLink: typeof TextLink
   Title: typeof Title
 }
-const CardComponent: React.FC<CardComponentProps> &
-  CardComponentStatics = props => {
+const Card: React.FC<CardProps> & CardStatics = props => {
   const htmlProps = omit<
-    CardComponentProps,
+    CardProps,
     [
       'actionBar',
       'actionBarVisible',
@@ -347,17 +344,17 @@ const CardComponent: React.FC<CardComponentProps> &
   )
 }
 
-CardComponent.Action = ActionBarAction
-CardComponent.FullOverlayLink = FullOverlayLink
-CardComponent.Image = Image
-CardComponent.ImageLink = ImageLink
-CardComponent.Tag = Tag
-CardComponent.Text = Text
-CardComponent.TextLink = TextLink
-CardComponent.Title = Title
+Card.Action = ActionBarAction
+Card.FullOverlayLink = FullOverlayLink
+Card.Image = Image
+Card.ImageLink = ImageLink
+Card.Tag = Tag
+Card.Text = Text
+Card.TextLink = TextLink
+Card.Title = Title
 
-CardComponent.sizes = vars.sizes
+Card.sizes = vars.sizes
 
 export const sizes = vars.sizes
 
-export default CardComponent
+export default Card
