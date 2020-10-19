@@ -223,7 +223,6 @@ exports[`Storyshots Sample Form null children 1`] = `
       >
         <h2
           data-css-1uk9rqa=""
-          size="large"
           style={
             Object {
               "maxWidth": "none",
@@ -425,7 +424,6 @@ exports[`Storyshots Sample Form sample 1`] = `
       >
         <h2
           data-css-1uk9rqa=""
-          size="large"
           style={
             Object {
               "maxWidth": "none",
@@ -841,7 +839,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               aria-checked={true}
               data-css-1cfeqew=""
               role="checkbox"
-              tabIndex="0"
+              tabIndex={0}
             >
               <svg
                 aria-label="Checkmark"
@@ -860,7 +858,6 @@ exports[`Storyshots Sample Form sample 1`] = `
           <input
             checked={true}
             data-css-gyrv08=""
-            disabled={false}
             readOnly={true}
             style={
               Object {
@@ -868,7 +865,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 "width": "100%",
               }
             }
-            tabIndex="-1"
+            tabIndex={-1}
             type="checkbox"
             value="someVal"
           />
@@ -916,7 +913,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     aria-checked={false}
                     data-css-1wbxh41=""
                     role="radio"
-                    tabIndex="-1"
+                    tabIndex={-1}
                   />
                 </div>
               </div>
@@ -950,7 +947,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     aria-checked={false}
                     data-css-1wbxh41=""
                     role="radio"
-                    tabIndex="-1"
+                    tabIndex={-1}
                   />
                 </div>
               </div>

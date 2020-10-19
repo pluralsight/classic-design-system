@@ -133,7 +133,6 @@ exports[`Storyshots Note with DS Text components 1`] = `
         >
           <h3
             data-css-xhd98s=""
-            size="medium"
           >
             Bob Ross
           </h3>

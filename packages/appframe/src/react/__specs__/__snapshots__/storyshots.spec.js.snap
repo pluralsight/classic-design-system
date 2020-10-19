@@ -153,7 +153,6 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
             >
               <h3
                 data-css-1uk9rqa=""
-                size="large"
               >
                 Page title
               </h3>
@@ -400,7 +399,6 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
             >
               <h3
                 data-css-1uk9rqa=""
-                size="large"
               >
                 Page title
               </h3>
@@ -608,8 +606,7 @@ exports[`Storyshots AppFrame short content 1`] = `
                   }
                 >
                   <h2
-                    data-css-k4y5mo=""
-                    size="smallCaps"
+                    data-css-ffti8h=""
                     style={
                       Object {
                         "margin": 0,
@@ -989,8 +986,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
                   }
                 >
                   <h2
-                    data-css-k4y5mo=""
-                    size="smallCaps"
+                    data-css-ffti8h=""
                     style={
                       Object {
                         "margin": 0,
@@ -1162,7 +1158,6 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
             >
               <h3
                 data-css-1uk9rqa=""
-                size="large"
               >
                 Page title
               </h3>
@@ -1426,8 +1421,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
                   }
                 >
                   <h2
-                    data-css-k4y5mo=""
-                    size="smallCaps"
+                    data-css-ffti8h=""
                     style={
                       Object {
                         "margin": 0,
@@ -1599,7 +1593,6 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
             >
               <h3
                 data-css-1uk9rqa=""
-                size="large"
               >
                 Page title
               </h3>
@@ -1957,8 +1950,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
                   }
                 >
                   <h2
-                    data-css-k4y5mo=""
-                    size="smallCaps"
+                    data-css-ffti8h=""
                     style={
                       Object {
                         "margin": 0,
@@ -2224,8 +2216,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
                   }
                 >
                   <h2
-                    data-css-k4y5mo=""
-                    size="smallCaps"
+                    data-css-ffti8h=""
                     style={
                       Object {
                         "margin": 0,
@@ -2365,7 +2356,6 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
             >
               <h3
                 data-css-1uk9rqa=""
-                size="large"
               >
                 Page title
               </h3>
