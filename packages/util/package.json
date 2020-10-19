@@ -27,8 +27,6 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-position": "^4.2.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.1"
+    "@pluralsight/ps-design-system-build": "^1.12.1"
   }
 }
