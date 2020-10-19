@@ -6,6 +6,7 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
+  canUseDOM,
   omit,
   RefForwardingComponent,
   ValueOf
@@ -18,8 +19,7 @@ import stylesheet from '../css'
 import { toPercentageString } from '../js'
 import * as vars from '../vars'
 
-// TODO: use standard env check
-if (typeof window !== 'undefined') polyfillFocusWithin(document)
+if (canUseDOM()) polyfillFocusWithin(document)
 
 type StyleFn = (
   // TODO: specify
