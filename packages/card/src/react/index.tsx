@@ -8,8 +8,6 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
-// TODO: rm
-import PropTypes from 'prop-types'
 import * as React from 'react'
 import Shiitake from 'shiitake'
 

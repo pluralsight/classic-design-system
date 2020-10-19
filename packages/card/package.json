@@ -26,7 +26,6 @@
     "@pluralsight/ps-design-system-icon": "^18.3.1",
     "@pluralsight/ps-design-system-util": "^5.4.1",
     "focus-within": "^3.0.2",
-    "prop-types": "^15.7.2",
     "shiitake": "^3.0.2"
   },
   "peerDependencies": {
