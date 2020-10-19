@@ -129,7 +129,7 @@ const styles: { [key: string]: StyleFn } = {
 }
 
 interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
-  icon?: any // typeof React.ReactElement // TODO: retype as Icon when it's TS
+  icon?: React.ReactElement // TODO: retype as Icon when it's TS
   title: string
 }
 interface ActionBarActionStatics {}
@@ -183,7 +183,7 @@ const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
 ImageLink.displayName = 'Card.ImageLink'
 
 interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
-  icon?: any //  React.ReactElement // TODO: Icon when Icon is TS
+  icon?: React.ReactElement // TODO: Icon when Icon is TS
 }
 const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
   <div {...styles.tag()} {...rest}>
@@ -248,7 +248,7 @@ const MetaData: React.FC<MetaDataProps> = props => {
 interface CardComponentProps extends Record<string, unknown> {
   actionBar?: any // typeof ActionBarAction[] // TODO: specify
   actionBarVisible?: boolean
-  bonusBar?: any // React.ReactElement // TODO: specify
+  bonusBar?: React.ReactNode
   fullOverlay?: any // typeof FullOverlayLink // TODO: specify
   fullOverlayVisible?: boolean
   image: any // typeof Image | typeof ImageLink // TODO: specify
