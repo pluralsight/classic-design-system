@@ -18,9 +18,11 @@ import stylesheet from '../css'
 import { toPercentageString } from '../js'
 import * as vars from '../vars'
 
+// TODO: use standard env check
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 type StyleFn = (
+  // TODO: specify
   props?: any,
   themeName?: ValueOf<typeof themeNames>
 ) => StyleAttribute
@@ -303,9 +305,10 @@ const CardComponent: React.FC<CardComponentProps> &
     'tag',
     'title'
   ])
+  const size = props.size || sizes.medium
   return (
     <div {...styles.card()} {...htmlProps}>
-      <div {...styles.overlays(props)}>
+      <div {...styles.overlays({ size })}>
         {props.image ? props.image : null}
 
         {props.fullOverlay ? (
@@ -332,13 +335,9 @@ const CardComponent: React.FC<CardComponentProps> &
         ) : null}
       </div>
 
-      <div {...styles.titleContainer(props)}>{props.title}</div>
-      {props.metadata1 && (
-        <MetaData size={props.size} metadata={props.metadata1} />
-      )}
-      {props.metadata2 && (
-        <MetaData size={props.size} metadata={props.metadata2} />
-      )}
+      <div {...styles.titleContainer({ size })}>{props.title}</div>
+      {props.metadata1 && <MetaData size={size} metadata={props.metadata1} />}
+      {props.metadata2 && <MetaData size={size} metadata={props.metadata2} />}
     </div>
   )
 }
@@ -353,13 +352,6 @@ CardComponent.TextLink = TextLink
 CardComponent.Title = Title
 
 CardComponent.sizes = vars.sizes
-
-// TODO: replace
-CardComponent.defaultProps = {
-  actionBarVisible: false,
-  fullOverlayVisible: false,
-  size: vars.sizes.medium
-}
 
 export const sizes = vars.sizes
 
