@@ -18,7 +18,11 @@ import * as vars from '../vars'
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
 // TODO: split up per component
-type StyleFn = (props?: any) => StyleAttribute
+// TODO: import named themeNames
+type StyleFn = (
+  props?: any,
+  themeName?: ValueOf<typeof Theme.names>
+) => StyleAttribute
 const styles: { [key: string]: StyleFn } = {
   actionBar: ({ actionBarVisible: visible, fullOverlay }) => {
     const label = 'psds-card__action-bar'
@@ -95,7 +99,7 @@ const styles: { [key: string]: StyleFn } = {
   tagIcon: () => css(stylesheet['.psds-card__tag__icon']),
   tagText: () => css(stylesheet['.psds-card__tag__text']),
 
-  textLink: themeName => {
+  textLink: (_props, themeName) => {
     const label = 'psds-card__text-link'
 
     return compose(
@@ -104,7 +108,7 @@ const styles: { [key: string]: StyleFn } = {
     )
   },
 
-  title: (themeName: ValueOf<typeof Theme.names>) => {
+  title: (_props, themeName) => {
     const label = 'psds-card__title'
 
     return compose(
@@ -201,7 +205,7 @@ Text.displayName = 'Card.Text'
 
 const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
   const themeName = useTheme()
-  return <span {...styles.textLink(themeName)} {...props} />
+  return <span {...styles.textLink(undefined, themeName)} {...props} />
 }
 TextLink.displayName = 'Card.TextLink'
 
@@ -210,7 +214,7 @@ const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const { children, ...rest } = props
 
   return (
-    <div {...styles.title(themeName)} {...rest}>
+    <div {...styles.title(undefined, themeName)} {...rest}>
       <Shiitake lines={2}>{children}</Shiitake>
     </div>
   )
