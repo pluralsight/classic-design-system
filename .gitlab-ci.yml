@@ -28,6 +28,7 @@ default:
 
 before_script:
   - yarn config set ignore-engines true
+  - yarn config set workspaces-experimental true
   - yarn install --cache-folder .yarn
 
 install:
