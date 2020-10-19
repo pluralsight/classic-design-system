@@ -12,16 +12,18 @@ import {
 import { compose, css, StyleAttribute } from 'glamor'
 // TODO: rm
 import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 import Shiitake from 'shiitake'
 
 import stylesheet from '../css'
 import { toPercentageString } from '../js'
 import * as vars from '../vars'
+console.log({ vars })
 
 if (typeof window !== 'undefined') polyfillFocusWithin(document)
 
-type StyleFn = (props: CardProps) => StyleAttribute
+// TODO: split up per component
+type StyleFn = (props?: any) => StyleAttribute
 const styles: { [key: string]: StyleFn } = {
   actionBar: ({ actionBarVisible: visible, fullOverlay }) => {
     const label = 'psds-card__action-bar'
@@ -135,7 +137,7 @@ const ActionBar: React.FC<ActionBarProps> = props => (
 )
 
 interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
-  icon?: typeof React.ReactElement // TODO: retype as Icon when it's TS
+  icon?: any // typeof React.ReactElement // TODO: retype as Icon when it's TS
   title: string
 }
 interface ActionBarActionStatics {}
@@ -228,29 +230,18 @@ const ProgressBar: React.FC<ProgressBarProps> = props => (
   <div {...styles.progressBar(props)} {...filterReactProps(props)} />
 )
 
-// TODO: children?
-const TagIcon: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
-  <div {...styles.tagIcon(props)} {...filterReactProps(props)} />
-)
-
-// TODO: children?
-const TagText: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
-  <span
-    {...styles.tagText(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-)
-
 interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
-  icon: React.ReactElement // TODO: Icon when Icon is TS
+  icon?: any //  React.ReactElement // TODO: Icon when Icon is TS
 }
 const Tag: React.FC<TagProps> = ({ children, icon, ...props }) => (
   <div {...styles.tag(props)} {...filterReactProps(props)}>
     {icon && (
-      <TagIcon>{React.cloneElement(icon, { size: iconSizes.small })}</TagIcon>
+      <div {...styles.tagIcon(props)}>
+        {React.cloneElement(icon, { size: iconSizes.small })}
+      </div>
     )}
 
-    <TagText>{children}</TagText>
+    <span {...styles.tagText(props)}>{children}</span>
   </div>
 )
 Tag.displayName = 'Card.Tag'
@@ -274,14 +265,6 @@ const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
   )
 }
 TextLink.displayName = 'Card.TextLink'
-
-// TODO: children?
-interface TitleContainerProps extends React.HTMLAttributes<HTMLDivElement> {
-  size?: ValueOf<vars.sizes>
-}
-const TitleContainer: React.FC<TitleContainerProps> = props => (
-  <div {...styles.titleContainer(props)} {...filterReactProps(props)} />
-)
 
 // TODO: children?
 const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
@@ -339,18 +322,18 @@ const MetaDataList: React.FC<MetaDataListProps> = props => {
 }
 
 interface CardComponentProps extends Record<string, unknown> {
-  actionBar?: typeof ActionBarAction[]
+  actionBar?: any // typeof ActionBarAction[] // TODO: specify
   actionBarVisible?: boolean
-  bonusBar?: React.ReactElement
-  fullOverlay?: typeof FullOverlayLink
+  bonusBar?: any // React.ReactElement // TODO: specify
+  fullOverlay?: any // typeof FullOverlayLink // TODO: specify
   fullOverlayVisible?: boolean
-  image: typeof Image | typeof ImageLink
-  metadata1?: (string | typeof TextLink)[]
-  metadata2?: (string | typeof TextLink)[]
+  image: any // typeof Image | typeof ImageLink // TODO: specify
+  metadata1?: any // (string | typeof TextLink)[] // TODO: specify
+  metadata2?: any // (string | typeof TextLink)[] // TODO: specify
   progress?: number
   size?: ValueOf<typeof vars.sizes>
-  tag?: typeof Tag
-  title: typeof TextLink | typeof Title
+  tag?: any // typeof Tag // TODO: specify
+  title: any // typeof TextLink | typeof Title // TODO: specify
 }
 
 interface CardComponentStatics {
@@ -430,7 +413,7 @@ const CardComponent: React.FC<CardComponentProps> &
         ) : null}
       </Overlays>
 
-      <TitleContainer>{props.title}</TitleContainer>
+      <div {...styles.titleContainer(props)}>{props.title}</div>
       {props.metadata1 && (
         <MetaDataList size={props.size} metadata={props.metadata1} />
       )}
