@@ -28,6 +28,7 @@
     "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
     "@pluralsight/ps-design-system-halo": "^7.1.2",
     "@pluralsight/ps-design-system-icon": "^19.0.0",
+    "@pluralsight/ps-design-system-util": "^5.4.2",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
