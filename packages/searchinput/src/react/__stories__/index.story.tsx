@@ -1,20 +1,20 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import SearchInput from '..'
+import SearchInput, { SearchInputProps} from '..'
 
 const noop = () => {}
 
-const SearchInputWithDefaults = props => <SearchInput {...props} />
+const SearchInputWithDefaults: React.FC<SearchInputProps> = props => <SearchInput {...props} />
 SearchInputWithDefaults.defaultProps = {
   placeholder: 'Search'
 }
 
 storiesOf('SearchInput', module)
-  .add('default', _ => <SearchInputWithDefaults />)
-  .add('when loading', _ => <SearchInputWithDefaults loading />)
-  .add('with onClear prop', _ => <SearchInputWithDefaults onClear={noop} />)
-  .add('with TextInput-type props', _ => (
+  .add('default', () => <SearchInputWithDefaults />)
+  .add('when loading', () => <SearchInputWithDefaults loading />)
+  .add('with onClear prop', () => <SearchInputWithDefaults onClear={noop} />)
+  .add('with TextInput-type props', () => (
     <SearchInputWithDefaults
       onClear={noop}
       error
