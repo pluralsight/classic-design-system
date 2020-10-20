@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -8,7 +8,6 @@
   "keywords": [],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
   "scripts": {
     "build": "run-s build:cjs build:esm",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
@@ -17,8 +16,9 @@
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-util": "^5.4.1",
+    "@pluralsight/ps-design-system-util": "^5.4.2",
     "hoist-non-react-statics": "^3.3.0"
   },
   "peerDependencies": {

@@ -87,7 +87,7 @@ const Label = props => {
 const renderIcon = props => {
   if (!props.icon) return null
 
-  const css = {
+  const style = {
     cursor: props.icon.props.onClick ? 'pointer' : 'default'
   }
   const onClick = evt => {
@@ -97,7 +97,7 @@ const renderIcon = props => {
   const size =
     props.size === vars.sizes.small ? iconSizes.small : iconSizes.medium
 
-  return React.cloneElement(props.icon, { css, onClick, size })
+  return React.cloneElement(props.icon, { style, onClick, size })
 }
 
 export const sizes = vars.sizes
