@@ -4,7 +4,9 @@ import React, { useRef, useState, HTMLAttributes } from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
-import TextInput, { TextInputProps } from '@pluralsight/ps-design-system-textinput'
+import TextInput, {
+  TextInputProps
+} from '@pluralsight/ps-design-system-textinput'
 import { callAll } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'

@@ -14,7 +14,7 @@ describe('TextInput', () => {
       const ref = React.createRef<HTMLInputElement>()
 
       const { container } = render(<TextInput ref={ref} />)
-      const inputEl = container.querySelector('input') as HTMLInputElement
+      const inputEl = container.querySelector('input')
 
       expect(ref.current).not.toBeNull()
       expect(inputEl).toEqual(ref.current)
@@ -27,7 +27,7 @@ describe('TextInput', () => {
 
       const { container } = render(<TextInput ref={inputRef} />)
 
-      const inputEl = container.querySelector('input') as HTMLInputElement
+      const inputEl = container.querySelector('input')
       expect(inputEl).toEqual(inputRef.current)
     })
   })

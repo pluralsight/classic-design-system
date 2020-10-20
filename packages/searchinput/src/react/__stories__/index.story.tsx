@@ -1,11 +1,13 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import SearchInput, { SearchInputProps} from '..'
+import SearchInput, { SearchInputProps } from '..'
 
 const noop = () => {}
 
-const SearchInputWithDefaults: React.FC<SearchInputProps> = props => <SearchInput {...props} />
+const SearchInputWithDefaults: React.FC<SearchInputProps> = props => (
+  <SearchInput {...props} />
+)
 SearchInputWithDefaults.defaultProps = {
   placeholder: 'Search'
 }
