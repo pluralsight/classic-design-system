@@ -4,7 +4,7 @@ import React, { useRef, useState, HTMLAttributes } from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
-import TextInput from '@pluralsight/ps-design-system-textinput'
+import TextInput, { TextInputProps } from '@pluralsight/ps-design-system-textinput'
 import { callAll } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
@@ -18,17 +18,16 @@ const styles = {
   field: () => css(stylesheet['.psds-searchinput-field'])
 }
 
-export interface SearchInputProps
-  extends Omit<HTMLAttributes<HTMLInputElement>, 'onChange'> {
+export interface SearchInputProps extends TextInputProps {
   loading?: boolean
   onClear?: (evt?: React.MouseEvent) => void
-  onChange?: (evt: React.MouseEvent) => void
+  onChange?: (evt: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
   ({ loading = false, onClear, onChange, ...rest }, forwardedRef) => {
     const [clearVisible, toggleClear] = useState(false)
-    const handleChange = (evt: React.MouseEvent) => {
+    const handleChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
       ;(evt.currentTarget as HTMLInputElement).value.length > 0
         ? toggleClear(true)
         : toggleClear(false)
@@ -69,8 +68,8 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
         icon={icon}
         ref={ref}
         onChange={callAll(handleChange, onChange)}
-        type="search"
         {...rest}
+        type="search"
       />
     )
   }
