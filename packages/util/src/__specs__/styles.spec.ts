@@ -1,11 +1,11 @@
 import { stylesFor } from '../styles'
 
 it('returns empty object by default', () => {
-  expect(stylesFor()).toEqual({})
+  expect(stylesFor('', {})).toEqual({})
 })
 
 it('returns empty object without props', () => {
-  expect(stylesFor('someKey')).toEqual({})
+  expect(stylesFor('someKey', {})).toEqual({})
 })
 
 it('returns empty object without selectorKey', () => {

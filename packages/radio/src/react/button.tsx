@@ -1,5 +1,12 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes, useState, useContext } from 'react'
+import React, {
+  FocusEvent,
+  HTMLAttributes,
+  MouseEvent,
+  ReactText,
+  useContext,
+  useState
+} from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -30,14 +37,14 @@ const styles = {
     )
 }
 
-const isChecked = (a: React.ReactText, b?: React.ReactText) => a === b
+const isChecked = (a: ReactText, b?: ReactText) => a === b
 
 export interface RadioButtonProps
   extends Omit<HTMLAttributes<HTMLInputElement>, 'onClick'> {
   label: React.ReactNode
-  onBlur?: (evt?: React.FocusEvent) => void
-  onClick?: (evt?: React.MouseEvent, val?: React.ReactText) => void
-  onFocus?: (evt?: React.FocusEvent) => void
+  onBlur?: (evt: FocusEvent<HTMLInputElement>) => void
+  onClick?: (evt: MouseEvent<HTMLInputElement>, val?: ReactText) => void
+  onFocus?: (evt: FocusEvent<HTMLInputElement>) => void
   value: React.ReactText
 }
 
@@ -54,19 +61,24 @@ const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
 
     const [isFocused, setFocus] = useState(false)
 
-    const handleFocus = (e: React.FocusEvent) => {
+    const handleFocus = (evt: FocusEvent<HTMLInputElement>) => {
       if (disabled) return
-      combineFns(() => setFocus(true), props.onFocus)(e)
+
+      combineFns(_evt => setFocus(true), props.onFocus)(evt)
     }
-    const handleBlur = (e: React.FocusEvent) => {
+
+    const handleBlur = (evt: FocusEvent<HTMLInputElement>) => {
       if (disabled) return
-      combineFns(props.onBlur, () => setFocus(false))(e)
+
+      combineFns(props.onBlur, () => setFocus(false))(evt)
     }
-    function handleClick(e: React.MouseEvent) {
-      const value = (e.target as HTMLInputElement).value
-      combineFns(onChange, props.onClick)(e, value)
+
+    const handleClick = (evt: MouseEvent<HTMLInputElement>) => {
+      const value = (evt.target as HTMLInputElement).value
+      combineFns(onChange, props.onClick)(evt, value)
       ref.current.focus()
     }
+
     const checked = isChecked(value, checkedValue)
     return (
       <label {...styles.button(disabled)}>

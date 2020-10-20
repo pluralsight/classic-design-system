@@ -10,7 +10,7 @@ export function debounce<F extends SideEffectFn>(delay: number, fn: F): F {
     const context = this
 
     const doLater = function () {
-      timerId = null
+      timerId = undefined
 
       fn.apply(context, args)
     }

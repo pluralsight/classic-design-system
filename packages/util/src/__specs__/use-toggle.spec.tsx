@@ -8,11 +8,14 @@ describe('useToggle', () => {
   test('uncontrolled', () => {
     const { result } = renderHook(() => useToggle())
     expect(result.current.isOpen).toBe(false)
+
     act(() => {
       result.current.onToggle()
     })
+
     expect(result.current.isOpen).toBe(true)
   })
+
   test('controlled', () => {
     let open = false
     const mockCallback = jest.fn(() => (open = !open))
