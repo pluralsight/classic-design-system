@@ -6,11 +6,6 @@ exports[`Storyshots Utils/useMenuKeyEvents Basic 1`] = `
   data-testid="root-menu"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
-  style={
-    Object {
-      "color": "white",
-    }
-  }
 >
   <li
     data-testid="root-list-item-0"
