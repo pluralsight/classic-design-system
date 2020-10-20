@@ -2,7 +2,8 @@ import React, {
   HTMLAttributes,
   KeyboardEventHandler,
   MouseEvent,
-  ReactText
+  ReactText,
+  useImperativeHandle
 } from 'react'
 import { css, compose, keyframes } from 'glamor'
 import {
@@ -52,8 +53,9 @@ interface ActionMenuComponent
 
 export const ActionMenu = React.forwardRef<HTMLUListElement, Props>(
   ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
-    const fallbackRef = React.useRef()
-    const ref = forwardedRef || fallbackRef
+    const ref = React.useRef<HTMLUListElement>()
+    useImperativeHandle(forwardedRef, () => ref.current)
+
     useCloseOnDocumentEvents(ref, onClose)
 
     const handleKeyDown: KeyboardEventHandler<HTMLUListElement> = evt => {

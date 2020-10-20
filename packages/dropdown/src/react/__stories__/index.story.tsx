@@ -593,6 +593,7 @@ interface DropdownWithIconProps
 const DropdownWithIcon = forwardRef<HTMLButtonElement, DropdownWithIconProps>(
   ({ icon, ...props }, forwardedRef) => {
     const allProps = useDropdown(props, forwardedRef)
+
     return (
       <Dropdown.Layout
         {...allProps.layout}

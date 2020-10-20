@@ -10,9 +10,9 @@ export function usePortal() {
   const ref = React.useRef(initialRef)
 
   React.useEffect(() => {
-    if (!isBrowser) return
-
     const { current } = ref
+    if (!isBrowser || !current) return
+
     document.body.appendChild(current)
 
     return () => {
