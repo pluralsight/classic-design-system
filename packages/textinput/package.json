@@ -15,7 +15,7 @@
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "build:watch": "yarn build:esm -- --watch",
     "storybook": "start-storybook -p 6006",
-    "test": "jest",
+    "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
   "style": "dist/index.css",

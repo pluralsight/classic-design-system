@@ -129,13 +129,6 @@ export interface TextInputComponent
     TextInputStatics
   > {}
 
-export type MultipleRefs =
-  | {
-      field: React.Ref<HTMLDivElement>
-      input: React.Ref<HTMLInputElement>
-    }
-  | React.Ref<HTMLInputElement>
-
 const TextInput = React.forwardRef(
   (
     {
@@ -149,13 +142,10 @@ const TextInput = React.forwardRef(
       label,
       subLabel,
       ...props
-    }: TextInputProps,
-    forwardedRef: MultipleRefs
+    },
+    forwardedRef
   ) => {
     const themeName = useTheme()
-
-    const { fieldRef, inputRef } = useMultipleRefObjects(forwardedRef)
-
     return (
       <label
         {...styles.textInput(disabled)}
@@ -167,7 +157,6 @@ const TextInput = React.forwardRef(
         <div {...styles.fieldContainer()}>
           <Halo error={error} gapSize={Halo.gapSizes.small}>
             <div
-              ref={fieldRef}
               {...styles.field({
                 appearance,
                 error,
@@ -183,7 +172,7 @@ const TextInput = React.forwardRef(
                 {...styles.fieldInput(appearance, themeName)}
                 disabled={disabled}
                 placeholder={props.placeholder}
-                ref={inputRef}
+                ref={forwardedRef}
               />
               {fieldAfter}
             </div>
@@ -216,51 +205,3 @@ export const appearances = vars.appearances
 export const sizes = vars.sizes
 export const iconAligns = vars.iconAligns
 export default TextInput
-
-interface MultipleRefObjects {
-  field: React.RefObject<HTMLDivElement>
-  input: React.RefObject<HTMLInputElement>
-}
-
-function isRef(
-  ref: React.RefObject<HTMLDivElement> | React.RefObject<HTMLInputElement>
-) {
-  if (!isPlainObject(ref)) return false
-
-  return Object.prototype.hasOwnProperty.call(ref, 'current')
-}
-
-function isRefs(refs: MultipleRefs) {
-  if (!isPlainObject(refs)) return false
-
-  return Object.keys(refs as MultipleRefObjects).every(key =>
-    isRef((refs as MultipleRefObjects)[key as keyof MultipleRefObjects])
-  )
-}
-
-function isPlainObject(obj: unknown) {
-  return obj && !Array.isArray(obj) && typeof obj === 'object'
-}
-
-function useMultipleRefObjects(refs: MultipleRefs) {
-  const hasMultiple = isRefs(refs)
-
-  const forwardedFieldRef: React.RefObject<HTMLDivElement> =
-    hasMultiple && refs ? (refs as MultipleRefObjects).field : React.createRef()
-  const forwardedInputRef: React.RefObject<HTMLInputElement> =
-    hasMultiple && refs
-      ? (refs as MultipleRefObjects).input
-      : (refs as React.RefObject<HTMLInputElement>)
-
-  const fieldRef: React.RefObject<HTMLDivElement> = React.useRef<
-    HTMLDivElement
-  >(null)
-  const inputRef: React.RefObject<HTMLInputElement> = React.useRef<
-    HTMLInputElement
-  >(null)
-
-  React.useImperativeHandle(forwardedFieldRef, () => fieldRef.current)
-  React.useImperativeHandle(forwardedInputRef, () => inputRef.current)
-
-  return { fieldRef, inputRef }
-}

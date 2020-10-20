@@ -8,7 +8,7 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import TextInput from '..'
 
-const PaddingDecorator = storyFn => (
+const PaddingDecorator = (storyFn: () => React.ReactNode) => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
