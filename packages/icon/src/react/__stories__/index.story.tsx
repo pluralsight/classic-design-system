@@ -2,8 +2,9 @@ import { css } from 'glamor'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Icon from '../index.js'
-import * as Icons from '../icons/index.js'
+import Icon from '..'
+import * as Icons from '../icons'
+
 const styles = {
   grid: css({
     display: 'grid',
@@ -20,18 +21,21 @@ const styles = {
     paddingLeft: '8px'
   })
 }
-const Grid = props => <div {...props} {...styles.grid} />
 
-const GridItem = props => <div {...props} {...styles.gridItem} />
+const Grid: React.FC<unknown> = props => <div {...props} {...styles.grid} />
+
+const GridItem: React.FC<unknown> = props => (
+  <div {...props} {...styles.gridItem} />
+)
 
 const colorStory = storiesOf('appearance', module)
 Object.values(Icon.colors).forEach(color =>
-  colorStory.add(color, _ => <Icons.CheckIcon color={Icon.colors[color]} />)
+  colorStory.add(color, () => <Icons.CheckIcon color={Icon.colors[color]} />)
 )
 
 const sizeStory = storiesOf('size', module)
 Object.values(Icon.sizes).forEach(size =>
-  sizeStory.add(size, _ => (
+  sizeStory.add(size, () => (
     <Icons.CheckIcon color={Icon.colors.textIconHighOnDark} size={size} />
   ))
 )
@@ -50,7 +54,7 @@ idStory.add('all export names', () => (
   </Grid>
 ))
 Object.keys(Icons).forEach(id =>
-  idStory.add(id, _ => {
+  idStory.add(id, () => {
     const Comp = Icons[id]
     return (
       <Comp color={Icon.colors.textIconHighOnDark} size={Icon.sizes.large} />
@@ -65,7 +69,7 @@ storiesOf('custom props', module).add('aria-label', () => (
   />
 ))
 
-const SvgAccounticon = props => (
+const SvgAccounticon: React.FC<unknown> = props => (
   <svg aria-label="account icon" viewBox="0 0 24 24" role="img" {...props}>
     <path d="M20 2c1.103 0 2 .898 2 2v16c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2V4c0-1.102.897-2 2-2h16zm-4 18h4.001L20 4h-4v3h-2V4h-4v8H8V4H4v16h4v-3h2v3h4v-8h2v8zM6 13h6v3H6v-3zm6-5h6v3h-6V8z" />
   </svg>
