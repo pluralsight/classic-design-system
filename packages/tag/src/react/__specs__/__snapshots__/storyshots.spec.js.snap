@@ -37,6 +37,11 @@ exports[`Storyshots actions button w/ icon button 1`] = `
     <div
       data-css-7dab2f=""
       onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
       <svg
         aria-label="close icon"
@@ -67,6 +72,11 @@ exports[`Storyshots actions just icon button 1`] = `
     <div
       data-css-7dab2f=""
       onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
       <svg
         aria-label="close icon"
@@ -170,6 +180,11 @@ exports[`Storyshots icon medium 1`] = `
     <div
       data-css-7dab2f=""
       onClick={[Function]}
+      style={
+        Object {
+          "cursor": "default",
+        }
+      }
     >
       <svg
         aria-label="close icon"
@@ -200,6 +215,11 @@ exports[`Storyshots icon small 1`] = `
     <div
       data-css-1gzzcm2=""
       onClick={[Function]}
+      style={
+        Object {
+          "cursor": "default",
+        }
+      }
     >
       <svg
         aria-label="close icon"
@@ -254,6 +274,11 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
     <div
       data-css-7dab2f=""
       onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
     >
       <svg
         aria-label="close icon"
@@ -338,6 +363,11 @@ exports[`Storyshots long with icon 1`] = `
     <div
       data-css-7dab2f=""
       onClick={[Function]}
+      style={
+        Object {
+          "cursor": "default",
+        }
+      }
     >
       <svg
         aria-label="check icon"

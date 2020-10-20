@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.4.1...@pluralsight/ps-design-system-util@5.4.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* **util:** drop storybook dep to fix circle dep ([b0cb5cd](https://github.com/pluralsight/design-system/commit/b0cb5cd5710aa322683033a9ce8e8cfb867695e3))
+
+
+
+
+
 ## [5.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.4.0...@pluralsight/ps-design-system-util@5.4.1) (2020-10-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util

@@ -2,6 +2,7 @@ const { promises: fs } = require('fs')
 const fg = require('fast-glob')
 const path = require('path')
 const SVGO = require('svgo')
+
 const svgo = new SVGO({
   plugins: [
     { removeXMLNS: true },
@@ -9,10 +10,17 @@ const svgo = new SVGO({
     { removeAttrs: { attrs: '(stroke|fill)' } }
   ]
 })
-const regex = /aria-label=(?:"|')([\w ]+)(?:"|')/
-const addAria = (svg, name) =>
-  regex.test(svg) ? svg : svg.replace(/<svg/, `<svg aria-label="${name} icon"`)
+
+const ariaLabelRegEx = /aria-label=(?:"|')([\w ]+)(?:"|')/
+
+const addAria = (svg, name) => {
+  return ariaLabelRegEx.test(svg)
+    ? svg
+    : svg.replace(/<svg/, `<svg aria-label="${name} icon"`)
+}
+
 const dashCaseToLower = str => str.split('-').join(' ').toLowerCase()
+
 exports.cleanSvgs = async ({ src, dest = src }) => {
   try {
     await fs.mkdir(dest, { recursive: true })

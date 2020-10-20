@@ -19,7 +19,6 @@ const MockStory: React.FC = () => {
   return (
     <ul
       data-testid="root-menu"
-      style={{ color: 'white' }}
       onKeyDown={handleMenuKeyDownEvents}
       onKeyUp={handleMenuKeyUpEvents}
       ref={ref}

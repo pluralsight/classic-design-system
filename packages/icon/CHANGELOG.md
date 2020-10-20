@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [19.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.3.1...@pluralsight/ps-design-system-icon@19.0.0) (2020-10-20)
+
+
+### Code Refactoring
+
+* **icon:** convert to typescript ([c860e51](https://github.com/pluralsight/design-system/commit/c860e51de9efb97d7955241003e76ed691e65b66))
+
+
+### BREAKING CHANGES
+
+* **icon:** drop support for antiquated css prop
+
+Co-authored-by: Edward Irby<e.irby@pm.me>
+
+
+
+
+
 ## [18.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@18.3.0...@pluralsight/ps-design-system-icon@18.3.1) (2020-10-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
