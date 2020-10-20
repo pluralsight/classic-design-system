@@ -114,7 +114,7 @@ storiesOf('combo', module)
         </Card.ImageLink>
       }
       metadata1={[
-        <Card.TextLink>
+        <Card.TextLink key="meta">
           <a href="http://duckduckgo.com/?q=jaketrent">focusable</a>
         </Card.TextLink>
       ]}
@@ -303,12 +303,14 @@ storiesOf('metadata', module)
     <CardWithDefaults metadata1={['Jim Cooper', 'Of the Far North']} />
   ))
   .add('text wrapper', () => (
-    <CardWithDefaults metadata1={[<Card.Text>Jim Cooper</Card.Text>]} />
+    <CardWithDefaults
+      metadata1={[<Card.Text key="text">Jim Cooper</Card.Text>]}
+    />
   ))
   .add('text link', () => (
     <CardWithDefaults
       metadata1={[
-        <Card.TextLink>
+        <Card.TextLink key="text">
           <a href="http://duckduckgo.com?q=jim%20cooper">Jim Cooper</a>
         </Card.TextLink>
       ]}
@@ -317,16 +319,16 @@ storiesOf('metadata', module)
   .add('two lines, mixed content', () => (
     <CardWithDefaults
       metadata1={[
-        <Card.TextLink>
+        <Card.TextLink key="text">
           <a href="http://duckduckgo.com?q=jim%20cooper">Jim Cooper</a>
         </Card.TextLink>
       ]}
       metadata2={[
-        <Card.TextLink>
+        <Card.TextLink key="text1">
           <a href="http://duckduckgo.com?q=react">React Path</a>
         </Card.TextLink>,
         'Intermediate',
-        <Card.Text>90 mins</Card.Text>
+        <Card.Text key="text2">90 mins</Card.Text>
       ]}
     />
   ))
