@@ -256,8 +256,8 @@ function useMultipleRefObjects(refs: MultipleRefs) {
     HTMLInputElement
   >(null)
 
-  React.useImperativeHandle(forwardedFieldRef, () => fieldRef.current)
-  React.useImperativeHandle(forwardedInputRef, () => inputRef.current)
+  React.useImperativeHandle(forwardedFieldRef, () => fieldRef.current as HTMLDivElement)
+  React.useImperativeHandle(forwardedInputRef, () => inputRef.current as HTMLInputElement)
 
   return { fieldRef, inputRef }
 }
