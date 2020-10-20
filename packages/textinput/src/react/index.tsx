@@ -3,7 +3,10 @@ import React, { HTMLAttributes } from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
   RefForwardingComponent
@@ -28,7 +31,7 @@ const styles = {
     fieldAfter: React.ReactNode
     icon: React.ReactNode
     iconAlign: ValueOf<typeof vars.iconAligns>
-    themeName: ValueOf<typeof Theme.names>
+    themeName: ValueOf<typeof themeNames>
     size: ValueOf<typeof vars.sizes>
   }) => {
     const small = size === vars.sizes.small
@@ -56,7 +59,7 @@ const styles = {
   fieldContainer: () => css(stylesheet['.psds-text-input__field-container']),
   fieldInput: (
     appearance: ValueOf<typeof vars.appearances>,
-    themeName: ValueOf<typeof Theme.names>
+    themeName: ValueOf<typeof themeNames>
   ) =>
     css(
       stylesheet['.psds-text-input__field-input'],
@@ -72,7 +75,7 @@ const styles = {
     appearance: ValueOf<typeof vars.appearances>
     icon: React.ReactNode
     iconAlign: ValueOf<typeof vars.iconAligns>
-    themeName: ValueOf<typeof Theme.names>
+    themeName: ValueOf<typeof themeNames>
   }) =>
     css(
       stylesheet['.psds-text-input__icon'],
@@ -86,12 +89,12 @@ const styles = {
       stylesheet['.psds-text-input'],
       disabled && stylesheet['.psds-text-input--disabled']
     ),
-  label: (themeName: ValueOf<typeof Theme.names>) =>
+  label: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-text-input__label'],
       stylesheet[`.psds-text-input__label.psds-theme--${themeName}`]
     ),
-  subLabel: (themeName: ValueOf<typeof Theme.names>) =>
+  subLabel: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-text-input__sub-label'],
       stylesheet[`.psds-text-input__sub-label.psds-theme--${themeName}`]
@@ -146,7 +149,7 @@ const TextInput = React.forwardRef(
       label,
       subLabel,
       ...props
-    },
+    }: TextInputProps,
     forwardedRef: MultipleRefs
   ) => {
     const themeName = useTheme()
@@ -256,8 +259,8 @@ function useMultipleRefObjects(refs: MultipleRefs) {
     HTMLInputElement
   >(null)
 
-  React.useImperativeHandle(forwardedFieldRef, () => fieldRef.current as HTMLDivElement)
-  React.useImperativeHandle(forwardedInputRef, () => inputRef.current as HTMLInputElement)
+  React.useImperativeHandle(forwardedFieldRef, () => fieldRef.current)
+  React.useImperativeHandle(forwardedInputRef, () => inputRef.current)
 
   return { fieldRef, inputRef }
 }

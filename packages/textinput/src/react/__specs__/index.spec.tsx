@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import TextInput from '..'
+import TextInput, { MultipleRefs } from '..'
 
 describe('TextInput', () => {
   it('renders', () => {
@@ -34,10 +34,8 @@ describe('TextInput', () => {
     it('forwards the field ref to the field element', () => {
       const fieldRef = React.createRef<HTMLDivElement>()
       const inputRef = React.createRef<HTMLInputElement>()
-
-      const { container } = render(
-        <TextInput ref={{ field: fieldRef, input: inputRef }} />
-      )
+      const refs: MultipleRefs = { field: fieldRef, input: inputRef }
+      const { container } = render(<TextInput ref={refs} />)
       const input = container.querySelector('input')
       // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
       const fieldEl = (input as HTMLInputElement).parentNode
