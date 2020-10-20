@@ -22,7 +22,7 @@ export interface SearchInputProps
   extends Omit<HTMLAttributes<HTMLInputElement>, 'onChange'> {
   loading?: boolean
   onClear?: (evt?: React.MouseEvent) => void
-  onChange?: (evt?: React.MouseEvent, val?: React.ReactText) => void
+  onChange?: (evt: React.MouseEvent) => void
 }
 
 const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
