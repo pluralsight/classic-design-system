@@ -8,7 +8,7 @@ describe('SearchInput', () => {
     const noop = () => {}
     const { container } = render(<SearchInput onClear={noop} />)
     const input = container.querySelector('input')
-    const clearBtn = container.querySelector('button') as HTMLButtonElement
+    const clearBtn = container.querySelector('button')
 
     fireEvent.click(clearBtn)
     expect(input).toHaveFocus()
@@ -18,10 +18,10 @@ describe('SearchInput', () => {
     const noop = () => {}
 
     const { container } = render(<SearchInput onClear={noop} />)
-    const input = container.querySelector('input') as HTMLInputElement
+    const input = container.querySelector('input')
 
     input.value = 'Kindergarten'
-    const clearBtn = container.querySelector('button')as HTMLButtonElement
+    const clearBtn = container.querySelector('button')
 
     fireEvent.click(clearBtn)
 

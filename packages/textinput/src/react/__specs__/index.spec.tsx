@@ -35,7 +35,9 @@ describe('TextInput', () => {
       const fieldRef = React.createRef<HTMLDivElement>()
       const inputRef = React.createRef<HTMLInputElement>()
 
-      const { container } = render(<TextInput ref={{ field: fieldRef, input: inputRef}} />)
+      const { container } = render(
+        <TextInput ref={{ field: fieldRef, input: inputRef }} />
+      )
       const input = container.querySelector('input')
       // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
       const fieldEl = (input as HTMLInputElement).parentNode
