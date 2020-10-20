@@ -68,8 +68,8 @@ storiesOf('combo', module)
           </a>
         </Card.ImageLink>
       }
-      metadata1={longStringsMetaData.map(str => (
-        <Card.TextLink>
+      metadata1={longStringsMetaData.map((str, i) => (
+        <Card.TextLink key={i}>
           <a href="http://duckduckgo.com/?q=jaketrent">{str}</a>
         </Card.TextLink>
       ))}
