@@ -1,8 +1,7 @@
-export const appearances = {
-  default: 'default',
-  subtle: 'subtle'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const iconAligns = { left: 'left', right: 'right' }
+export const appearances = keyMirror('default', 'subtle')
 
-export const sizes = { medium: 'medium', small: 'small' }
+export const iconAligns = keyMirror('left', 'right')
+
+export const sizes = keyMirror('medium', 'small')

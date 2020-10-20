@@ -6,7 +6,7 @@ import React from 'react'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import TextInput from '../index.js'
+import TextInput from '..'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
@@ -14,27 +14,27 @@ const PaddingDecorator = storyFn => (
 
 storiesOf('labels', module)
   .addDecorator(PaddingDecorator)
-  .add('none', _ => <TextInput />)
-  .add('placeholder', _ => <TextInput placeholder="some placeholder" />)
-  .add('long placeholder', _ => (
+  .add('none', () => <TextInput />)
+  .add('placeholder', () => <TextInput placeholder="some placeholder" />)
+  .add('long placeholder', () => (
     <TextInput
       placeholder="some placeholder that goes on forever when the little things can't handle it"
       style={{ width: '100%' }}
     />
   ))
-  .add('label', _ => <TextInput label="Some label" />)
-  .add('subLabel', _ => <TextInput subLabel="Some sublabel" />)
-  .add('label and subLabel', _ => (
+  .add('label', () => <TextInput label="Some label" />)
+  .add('subLabel', () => <TextInput subLabel="Some sublabel" />)
+  .add('label and subLabel', () => (
     <TextInput label="Some label" subLabel="Some sublabel" />
   ))
-  .add('all', _ => (
+  .add('all', () => (
     <TextInput
       label="Some label"
       subLabel="Some sublabel"
       placeholder="Some placeholder"
     />
   ))
-  .add('all w/error', _ => (
+  .add('all w/error', () => (
     <TextInput
       error
       label="Some label"
@@ -45,16 +45,16 @@ storiesOf('labels', module)
 
 const appearanceStory = storiesOf('appearance', module)
   .addDecorator(PaddingDecorator)
-  .add(`small`, _ => (
+  .add(`small`, () => (
     <TextInput size={TextInput.sizes.small} placeholder="small input" />
   ))
 
-Object.keys(TextInput.appearances).forEach(appearance =>
-  Object.keys(TextInput.sizes).forEach(size =>
-    Object.keys(TextInput.iconAligns).forEach(iconAlign =>
+Object.values(TextInput.appearances).forEach(appearance =>
+  Object.values(TextInput.sizes).forEach(size =>
+    Object.values(TextInput.iconAligns).forEach(iconAlign =>
       appearanceStory.add(
         `${appearance} ${size} w/ iconAlign ${iconAlign}`,
-        _ => (
+        () => (
           <TextInput
             size={size}
             appearance={appearance}
@@ -67,21 +67,21 @@ Object.keys(TextInput.appearances).forEach(appearance =>
     )
   )
 )
-Object.keys(TextInput.appearances).forEach(appearance =>
-  appearanceStory.add(`${appearance} w/ error`, _ => (
+Object.values(TextInput.appearances).forEach(appearance =>
+  appearanceStory.add(`${appearance} w/ error`, () => (
     <TextInput appearance={appearance} error label="Problem field" />
   ))
 )
 
 storiesOf('after field', module)
   .addDecorator(PaddingDecorator)
-  .add('w/icon', _ => (
+  .add('w/icon', () => (
     <TextInput fieldAfter={<Icon.CloseIcon />} placeholder="Some placeholder" />
   ))
 
 storiesOf('disabled', module)
   .addDecorator(PaddingDecorator)
-  .add('compare', _ => (
+  .add('compare', () => (
     <div>
       <TextInput
         label="Normal"
@@ -106,22 +106,22 @@ storiesOf('disabled', module)
 
 storiesOf('whitelist', module)
   .addDecorator(PaddingDecorator)
-  .add('title', _ => <TextInput title="some title" />)
-  .add('type=password', _ => (
+  .add('title', () => <TextInput title="some title" />)
+  .add('type=password', () => (
     <TextInput placeholder="Password" type="password" />
   ))
-  .add('type=date', _ => <TextInput placeholder="Date" type="date" />)
-  .add('name', _ => (
+  .add('type=date', () => <TextInput placeholder="Date" type="date" />)
+  .add('name', () => (
     <TextInput placeholder="I have a form name" name="myFieldNameOfPower" />
   ))
-  .add('onChange', _ => (
+  .add('onChange', () => (
     <TextInput placeholder="Change me" onChange={action('I changed')} />
   ))
-  .add('className', _ => <TextInput className="shouldExistOnOneElement" />)
+  .add('className', () => <TextInput className="shouldExistOnOneElement" />)
 
 storiesOf('layouts', module)
   .addDecorator(PaddingDecorator)
-  .add('full width', _ => (
+  .add('full width', () => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
       <TextInput label="First" style={{ display: 'block', width: '100%' }} />
       <TextInput
@@ -142,7 +142,7 @@ storiesOf('layouts', module)
       />
     </div>
   ))
-  .add('right-aligned', _ => (
+  .add('right-aligned', () => (
     <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <TextInput
