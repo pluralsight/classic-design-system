@@ -89,7 +89,7 @@ const styles = {
   progress: () => css(stylesheet['.psds-card__progress']),
   progressBar: ({ progress }: Partial<CardProps>) => {
     const label = 'psds-card__progress__bar'
-    const percent = toPercentageString(progress)
+    const percent = toPercentageString(progress || 0)
     const isCompleted = percent === '100%'
 
     return compose(
@@ -249,7 +249,7 @@ const MetaData: React.FC<MetaDataProps> = props => {
   )
 }
 
-interface CardProps extends Record<string, unknown> {
+export interface CardProps extends Record<string, unknown> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactNode
