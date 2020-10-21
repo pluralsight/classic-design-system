@@ -44,12 +44,15 @@ exports[`Storyshots modal default 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-cxpnok=""
+      onClose={[Function]}
       onKeyUp={[Function]}
     >
       <div
@@ -192,12 +195,15 @@ exports[`Storyshots modal no click overlay 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={true}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-cxpnok=""
+      onClose={[Function]}
       onKeyUp={[Function]}
     >
       <div
@@ -340,12 +346,15 @@ exports[`Storyshots modal no close button 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-cxpnok=""
+      onClose={[Function]}
       onKeyUp={[Function]}
     >
       <div
@@ -472,12 +481,15 @@ exports[`Storyshots modal no escape key 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-cxpnok=""
+      onClose={[Function]}
     >
       <div
         data-css-jp50nh=""
@@ -619,12 +631,15 @@ exports[`Storyshots modal no focus on mount 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-cxpnok=""
+      onClose={[Function]}
       onKeyUp={[Function]}
     >
       <div
@@ -767,12 +782,15 @@ exports[`Storyshots modal no focusable child elements 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-cxpnok=""
+      onClose={[Function]}
       onKeyUp={[Function]}
     >
       <div
@@ -849,12 +867,15 @@ exports[`Storyshots modal overflow-y 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-cxpnok=""
+      onClose={[Function]}
       onKeyUp={[Function]}
     >
       <div
@@ -1266,13 +1287,17 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
       data-css-tlsxtk=""
+      onClose={[Function]}
       onKeyUp={[Function]}
+      tailPosition="topCenter"
     >
       <div
         data-css-jp50nh=""
@@ -1658,6 +1683,7 @@ exports[`Storyshots onClose with disableCloseButton 1`] = `
 exports[`Storyshots onClose with onClose 1`] = `
 <div
   data-css-1p4854x=""
+  onClose={[Function]}
   onKeyUp={[Function]}
 >
   <div
@@ -1798,12 +1824,23 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
   <div
     aria-label="Storybook Modal"
     data-css-hdres9=""
+    disableCloseOnOverlayClick={false}
     id="psds-dialog__overlay"
     onClick={[Function]}
+    onClose={[Function]}
     role="region"
   >
     <div
+      UNSAFE_stylesFor={
+        Object {
+          "dialog__content": Object {
+            "background": "red",
+            "padding": "128px",
+          },
+        }
+      }
       data-css-cxpnok=""
+      onClose={[Function]}
       onKeyUp={[Function]}
     >
       <div
@@ -1905,6 +1942,7 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
 exports[`Storyshots tailPosition bottomCenter 1`] = `
 <div
   data-css-1pr6kyo=""
+  tailPosition="bottomCenter"
 >
   <div
     data-css-jp50nh=""
@@ -1987,6 +2025,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
 exports[`Storyshots tailPosition bottomLeft 1`] = `
 <div
   data-css-13ex47j=""
+  tailPosition="bottomLeft"
 >
   <div
     data-css-jp50nh=""
@@ -2069,6 +2108,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
 exports[`Storyshots tailPosition bottomRight 1`] = `
 <div
   data-css-ajmdw=""
+  tailPosition="bottomRight"
 >
   <div
     data-css-jp50nh=""
@@ -2233,6 +2273,7 @@ exports[`Storyshots tailPosition none 1`] = `
 exports[`Storyshots tailPosition topCenter 1`] = `
 <div
   data-css-1xpagdj=""
+  tailPosition="topCenter"
 >
   <div
     data-css-jp50nh=""
@@ -2315,6 +2356,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
 exports[`Storyshots tailPosition topLeft 1`] = `
 <div
   data-css-pe4yzo=""
+  tailPosition="topLeft"
 >
   <div
     data-css-jp50nh=""
@@ -2397,6 +2439,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
 exports[`Storyshots tailPosition topRight 1`] = `
 <div
   data-css-1niqzga=""
+  tailPosition="topRight"
 >
   <div
     data-css-jp50nh=""

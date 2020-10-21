@@ -7,12 +7,12 @@ import { storiesOf } from '@storybook/react'
 import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Dialog from '..'
+import Dialog, { DialogProps } from '..'
 
 const closeAction = action('close')
 const openAction = action('open')
 
-const MockDialog: React.FC = props => {
+const MockDialog: React.FC<DialogProps> = props => {
   const children = props.children || (
     <>
       <Text.Heading>

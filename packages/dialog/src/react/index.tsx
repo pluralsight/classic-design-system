@@ -9,8 +9,8 @@ import {
   isFunction
 } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
@@ -47,16 +47,16 @@ const CloseButton: React.FC<HTMLAttributes<HTMLButtonElement>> = props => (
 )
 
 interface OverlayProps extends HTMLAttributes<HTMLDivElement> {
-  'aria-label': string
+  'aria-label'?: string
   disableCloseOnOverlayClick?: boolean
-  onClose: (evt: React.MouseEvent) => void
+  onClose?: (evt: React.MouseEvent) => void
 }
 
 const Overlay: React.FC<OverlayProps> = props => {
   function handleOverlayClick(evt: React.MouseEvent) {
     if (props.disableCloseOnOverlayClick) return
     if ((evt.target as HTMLDivElement).id === MODAL_OVERLAY_ID)
-      props.onClose(evt)
+      props.onClose && props.onClose(evt)
   }
 
   return (
@@ -74,17 +74,17 @@ export interface DialogStatics {
   tailPositions: typeof vars.tailPositions
 }
 export interface DialogProps extends HTMLAttributes<HTMLDivElement> {
-  'aria-label': string
-  disableCloseButton: boolean
-  disableCloseOnEscape: boolean
-  disableCloseOnOverlayClick: boolean
-  disableFocusOnMount: boolean
-  modal: boolean
-  onClose: (evt: React.KeyboardEvent | React.MouseEvent) => void
-  tailPosition: ValueOf<typeof vars.tailPositions>
-  returnFocus: boolean
+  'aria-label'?: string
+  disableCloseButton?: boolean
+  disableCloseOnEscape?: boolean
+  disableCloseOnOverlayClick?: boolean
+  disableFocusOnMount?: boolean
+  modal?: boolean
+  onClose?: (evt: React.KeyboardEvent | React.MouseEvent) => void
+  tailPosition?: ValueOf<typeof vars.tailPositions>
+  returnFocus?: boolean
   // eslint-disable-next-line camelcase
-  UNSAFE_stylesFor: Record<string, unknown>
+  UNSAFE_stylesFor?: Record<string, unknown>
 }
 
 export interface DialogComponent
@@ -100,7 +100,7 @@ const Dialog = React.forwardRef(
       modal = false,
       returnFocus = true,
       ...rest
-    },
+    }: DialogProps,
     ref
   ) => {
     const autofocus = !disableFocusOnMount
@@ -110,7 +110,7 @@ const Dialog = React.forwardRef(
     // TODO: combine fns
     function handleKeyUp(evt: React.KeyboardEvent) {
       if (!isEscape(evt)) return
-      rest.onClose(evt)
+      rest.onClose && rest.onClose(evt)
     }
 
     const content = (
