@@ -9,7 +9,7 @@ import Card from '@pluralsight/ps-design-system-card'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 
-import Carousel from '../index.js'
+import Carousel from '..'
 
 interface MockCardProps extends React.ComponentProps<Card> {
   titleText: string

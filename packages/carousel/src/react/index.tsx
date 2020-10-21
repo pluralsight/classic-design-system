@@ -11,18 +11,16 @@ import PropTypes from 'prop-types'
 // TODO: rm
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-// TODO: repath out index.js .js
-import stylesheet from '../css/index.js'
-import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index.js'
-import { chunk, isFunction, pick } from '../js/utils.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js'
+import { chunk, isFunction, pick } from '../js/utils'
+import * as vars from '../vars'
 
-import CarouselContext from './context.js'
-import { Control } from './control.js'
+import CarouselContext from './context'
+import { Control } from './control'
 
-/* import useResizeObserver from './use-resize-observer.js' */
-import useSwipe, { UseSwipeOpts } from './use-swipe.js'
-import useUniqueId from './use-unique-id.js'
+import useSwipe, { UseSwipeOpts } from './use-swipe'
+import useUniqueId from './use-unique-id'
 
 const styles = {
   carousel: (props, { ready }) =>

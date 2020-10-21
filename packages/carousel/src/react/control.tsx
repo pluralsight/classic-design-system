@@ -12,11 +12,10 @@ import { compose, css } from 'glamor'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// TODO: reimport without .js
-import CarouselContext from './context.js'
-import stylesheet from '../css/index.js'
-import { combineFns, toValues } from '../js/utils.js'
-import * as vars from '../vars/index.js'
+import CarouselContext from './context'
+import stylesheet from '../css'
+import { combineFns, toValues } from '../js/utils'
+import * as vars from '../vars/index'
 
 // TODO: flip param order to match most other components = props, themeName
 const styles = {
