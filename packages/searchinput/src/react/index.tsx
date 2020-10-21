@@ -34,7 +34,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
         ? toggleClear(true)
         : toggleClear(false)
     }
-    const ref = useRef<HTMLInputElement>(null)
+    const ref = useRef<HTMLInputElement>((null as unknown) as HTMLInputElement)
     React.useImperativeHandle(forwardedRef, () => ref.current)
 
     const handleClear = (evt: React.MouseEvent) => {
