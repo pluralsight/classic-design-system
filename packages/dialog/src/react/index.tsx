@@ -1,149 +1,68 @@
-import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { compose, css, keyframes } from 'glamor'
+import React, { HTMLAttributes } from 'react'
 
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
-import { stylesFor } from '@pluralsight/ps-design-system-util'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import {
+  ValueOf,
+  RefForwardingComponent,
+  isFunction
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index.js'
 import * as vars from '../vars/index.js'
 
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
-const fade = css.keyframes(
-  stylesheet['@keyframes psds-dialog__keyframes__fade']
-)
+const fade = keyframes(stylesheet['@keyframes psds-dialog__keyframes__fade'])
 
 const styles = {
-  dialog: ({ modal, onClose, tailPosition }) =>
+  dialog: (modal: boolean, tailPosition?: ValueOf<typeof vars.tailPositions>) =>
     compose(
       css(stylesheet['.psds-dialog']({ fade })),
       modal && css(stylesheet['.psds-dialog--modal']),
-      tailPosition &&
+      Boolean(tailPosition) &&
         compose(
           stylesheet['.psds-dialog--w-tail'],
           stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
         )
     ),
-  content: props =>
-    css(
-      stylesheet['.psds-dialog__content'],
-      stylesFor('dialog__content', props)
-    ),
-  close: _ => css(stylesheet['.psds-dialog__close']),
-  overlay: _ => css(stylesheet['.psds-dialog__overlay'])
+  content: (style: Record<string, unknown> = {}) =>
+    css(stylesheet['.psds-dialog__content'], style),
+  close: () => css(stylesheet['.psds-dialog__close']),
+  overlay: () => css(stylesheet['.psds-dialog__overlay'])
 }
 
-const Dialog = React.forwardRef((props, ref) => {
-  const autofocus = !props.disableFocusOnMount
-  const trapped = !!props.modal || !!props.onClose
-  const closeOnEscape = isFunction(props.onClose) && !props.disableCloseOnEscape
-  const returnFocus = props.returnFocus
-
-  // TODO: combine fns
-  function handleKeyUp(evt) {
-    if (!isEscape(evt)) return
-    props.onClose(evt)
-  }
-
-  const content = (
-    <FocusManager
-      {...styles.dialog(props)}
-      {...filterReactProps(props)}
-      {...(closeOnEscape && { onKeyUp: handleKeyUp })}
-      {...(props.modal && { 'aria-label': undefined })}
-      autofocus={autofocus}
-      trapped={trapped}
-      returnFocus={returnFocus}
-      ref={ref}
+const CloseButton: React.FC<HTMLAttributes<HTMLButtonElement>> = props => (
+  <button {...styles.close()} {...props} aria-label="Close dialog">
+    <svg
+      aria-label="close icon"
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <Theme name={Theme.names.light}>
-        <div {...styles.content(props)}>
-          {!props.disableCloseButton && isFunction(props.onClose) && (
-            <CloseButton onClick={props.onClose} />
-          )}
+      <path d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12" />
+    </svg>
+  </button>
+)
 
-          {props.children}
-        </div>
-      </Theme>
-    </FocusManager>
-  )
-
-  return props.modal ? (
-    <Overlay
-      aria-label={props['aria-label']}
-      disableCloseOnOverlayClick={props.disableCloseOnOverlayClick}
-      onClose={props.onClose}
-    >
-      {content}
-    </Overlay>
-  ) : (
-    content
-  )
-})
-
-Dialog.displayName = 'Dialog'
-
-Dialog.tailPositions = vars.tailPositions
-export const tailPositions = Dialog.tailPositions
-
-Dialog.propTypes = {
-  'aria-label': PropTypes.string,
-  children: PropTypes.node,
-  disableCloseButton: PropTypes.bool,
-  disableCloseOnEscape: PropTypes.bool,
-  disableCloseOnOverlayClick: PropTypes.bool,
-  disableFocusOnMount: PropTypes.bool,
-  modal: PropTypes.bool,
-  onClose: PropTypes.func,
-  tailPosition: PropTypes.oneOf(Object.values(Dialog.tailPositions)),
-  returnFocus: PropTypes.bool,
-  UNSAFE_stylesFor: PropTypes.object
+interface OverlayProps extends HTMLAttributes<HTMLDivElement> {
+  'aria-label': string
+  disableCloseOnOverlayClick?: boolean
+  onClose: (evt: React.MouseEvent) => void
 }
 
-Dialog.defaultProps = {
-  disableCloseButton: false,
-  disableCloseOnEscape: false,
-  disableCloseOnOverlayClick: false,
-  disableFocusOnMount: false,
-  modal: false,
-  returnFocus: true
-}
-
-export default Dialog
-
-function CloseButton(props) {
-  return (
-    <button
-      {...styles.close(props)}
-      {...filterReactProps(props, { tagName: 'button' })}
-      aria-label="Close dialog"
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12" />
-      </svg>
-    </button>
-  )
-}
-
-function Overlay(props) {
-  function handleOverlayClick(evt) {
+const Overlay: React.FC<OverlayProps> = props => {
+  function handleOverlayClick(evt: React.MouseEvent) {
     if (props.disableCloseOnOverlayClick) return
-    if (evt.target.id === MODAL_OVERLAY_ID) props.onClose(evt)
+    if ((evt.target as HTMLDivElement).id === MODAL_OVERLAY_ID)
+      props.onClose(evt)
   }
 
   return (
     <div
-      {...styles.overlay(props)}
-      {...filterReactProps(props)}
+      {...styles.overlay()}
+      {...props}
       id={MODAL_OVERLAY_ID}
       onClick={handleOverlayClick}
       role="region"
@@ -151,16 +70,100 @@ function Overlay(props) {
   )
 }
 
-Overlay.propTypes = {
-  'aria-label': PropTypes.string.isRequired,
-  disableCloseOnOverlayClick: PropTypes.bool,
-  onClose: PropTypes.func.isRequired
+export interface DialogStatics {
+  tailPositions: typeof vars.tailPositions
+}
+export interface DialogProps extends HTMLAttributes<HTMLDivElement> {
+  'aria-label': string
+  disableCloseButton: boolean
+  disableCloseOnEscape: boolean
+  disableCloseOnOverlayClick: boolean
+  disableFocusOnMount: boolean
+  modal: boolean
+  onClose: (evt: React.KeyboardEvent | React.MouseEvent) => void
+  tailPosition: ValueOf<typeof vars.tailPositions>
+  returnFocus: boolean
+  // eslint-disable-next-line camelcase
+  UNSAFE_stylesFor: Record<string, unknown>
 }
 
-function isEscape(evt) {
+export interface DialogComponent
+  extends RefForwardingComponent<DialogProps, HTMLDivElement, DialogStatics> {}
+
+const Dialog = React.forwardRef(
+  (
+    {
+      disableCloseButton = false,
+      disableCloseOnEscape = false,
+      disableCloseOnOverlayClick = false,
+      disableFocusOnMount = false,
+      modal = false,
+      returnFocus = true,
+      ...rest
+    },
+    ref
+  ) => {
+    const autofocus = !disableFocusOnMount
+    const trapped = !!modal || !!rest.onClose
+    const closeOnEscape = isFunction(rest.onClose) && !disableCloseOnEscape
+
+    // TODO: combine fns
+    function handleKeyUp(evt: React.KeyboardEvent) {
+      if (!isEscape(evt)) return
+      rest.onClose(evt)
+    }
+
+    const content = (
+      <FocusManager
+        {...styles.dialog(modal, rest.tailPosition)}
+        {...rest}
+        {...(closeOnEscape && { onKeyUp: handleKeyUp })}
+        {...(modal && { 'aria-label': undefined })}
+        autofocus={autofocus}
+        trapped={trapped}
+        returnFocus={returnFocus}
+        ref={ref}
+      >
+        <Theme name={Theme.names.light}>
+          <div
+            {...styles.content(
+              // eslint-disable-next-line camelcase
+              rest.UNSAFE_stylesFor?.dialog__content as Record<string, unknown>
+            )}
+          >
+            {!disableCloseButton && isFunction(rest.onClose) && (
+              // eslint-disable-next-line react/jsx-handler-names
+              <CloseButton onClick={rest.onClose} />
+            )}
+
+            {rest.children}
+          </div>
+        </Theme>
+      </FocusManager>
+    )
+
+    return modal ? (
+      <Overlay
+        aria-label={rest['aria-label']}
+        disableCloseOnOverlayClick={disableCloseOnOverlayClick}
+        // eslint-disable-next-line react/jsx-handler-names
+        onClose={rest.onClose}
+      >
+        {content}
+      </Overlay>
+    ) : (
+      content
+    )
+  }
+) as DialogComponent
+
+Dialog.displayName = 'Dialog'
+
+Dialog.tailPositions = vars.tailPositions
+export const tailPositions = Dialog.tailPositions
+
+export default Dialog
+
+function isEscape(evt: React.KeyboardEvent) {
   return evt.key === 'Escape'
-}
-
-function isFunction(fn) {
-  return typeof fn === 'function'
 }

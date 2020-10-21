@@ -6,7 +6,7 @@ import {
   type
 } from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 const tailDimension = '14px'
 
@@ -18,7 +18,7 @@ export default {
     }
   },
 
-  '.psds-dialog': ({ fade }) => ({
+  '.psds-dialog': ({ fade }: { fade: string }) => ({
     animation: `${fade || 'psds-dialog__keyframes__fade'} ${
       motion.speedFast
     } ease-out forwards`,

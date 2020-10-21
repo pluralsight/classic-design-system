@@ -1,8 +1,10 @@
-export const tailPositions = {
-  topLeft: 'topLeft',
-  topCenter: 'topCenter',
-  topRight: 'topRight',
-  bottomLeft: 'bottomLeft',
-  bottomCenter: 'bottomCenter',
-  bottomRight: 'bottomRight'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
+
+export const tailPositions = keyMirror(
+  'topLeft',
+  'topCenter',
+  'topRight',
+  'bottomLeft',
+  'bottomCenter',
+  'bottomRight'
+)
