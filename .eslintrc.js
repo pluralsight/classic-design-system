@@ -19,14 +19,15 @@ module.exports = {
     createDefaultProgram: true
   },
   settings: {
-    react: {
-      version: 'detect'
-    }
+    'import/cache': { lifetime: Infinity },
+    'import/internal-regex': '^@pluralsight/',
+    react: { version: 'detect' }
   },
   extends: [
     'standard',
     'standard-react',
     'eslint:recommended',
+    'plugin:import/typescript',
     'plugin:jest/recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -38,9 +39,17 @@ module.exports = {
     // NOTE: this must be the last item in the array
     'plugin:prettier/recommended'
   ],
-  plugins: ['@typescript-eslint', 'jest', 'react', 'react-hooks', 'prettier'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'jest',
+    'react',
+    'react-hooks',
+    'prettier'
+  ],
   rules: {
     'import/extensions': [WARNING, 'always', { ignorePackages: true }],
+    'import/no-cycle': ERROR,
     '@typescript-eslint/explicit-function-return-type': IGNORE,
     '@typescript-eslint/explicit-module-boundary-types': IGNORE,
     '@typescript-eslint/interface-name-prefix': IGNORE,
