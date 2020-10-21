@@ -21,7 +21,7 @@ import CarouselContext from './context.js'
 import { Control } from './control.js'
 
 /* import useResizeObserver from './use-resize-observer.js' */
-import useSwipe, { useSwipe } from './use-swipe.js'
+import useSwipe, { UseSwipeOpts } from './use-swipe.js'
 import useUniqueId from './use-unique-id.js'
 
 const styles = {
@@ -44,11 +44,12 @@ interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
   controlPrev?: React.ReactNode
   controlNext?: React.ReactNode
-  size: ValueOf<typeof vars.sizes>
+  size?: ValueOf<typeof vars.sizes>
 }
 interface CarouselStatics {
   Control: typeof Control
   Item: typeof Item
+  sizes: typeof vars.sizes
 }
 type CarouselComponent = React.FC<CarouselProps> & CarouselStatics
 
@@ -73,7 +74,7 @@ const Carousel: CarouselComponent = ({
 
   const pager = usePager(pageCount, [width])
   const ready = width && width > 0
-  const [transitioning, setTransitioning] = React.useState(false)
+  const [transitioning, setTransitioning] = React.useState<boolean>(false)
   const contextValue = {
     ...pick(pager, ['activePage', 'next', 'offset', 'prev']),
     id,
@@ -108,7 +109,6 @@ const Carousel: CarouselComponent = ({
               <Page
                 key={pageIndex}
                 isActivePage={isActivePage}
-                pageIndex={pageIndex}
                 paged={pager.paged}
               >
                 {items.map((item, itemIndex) => {
@@ -164,12 +164,11 @@ function Item({ children, ...props }) {
     </li>
   )
 }
+Item.displayName = 'Carousel.Item'
 
 Carousel.Control = Control
-Carousel.Control.displayName = 'Carousel.Control'
 
 Carousel.Item = Item
-Carousel.Item.displayName = 'Carousel.Item'
 
 Carousel.sizes = vars.sizes
 
@@ -223,6 +222,8 @@ const Pages = React.forwardRef((props, ref) => {
 Pages.displayName = 'Carousel.Pages'
 
 interface PageProps extends React.HTMLAttributes<HTMLUListElement> {
+  // TODO: removing from usage. Ensure not needed
+  // pageIndex: number
   paged?: boolean
   // TODO: is this actually required? proptypes are contradictory
   isActivePage?: boolean
@@ -239,7 +240,7 @@ const Page: React.FC<PageProps> = props => {
       const page = ref.current
       const focusFirstChild = e => {
         setTransitioning(false)
-        e.target === page && page.firstElementChild.focus()
+        e.target === page && (page.firstElementChild as HTMLElement).focus()
       }
       page.addEventListener('transitionend', focusFirstChild)
     }
@@ -275,7 +276,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
   const [activePage, setActivePage] = React.useState(0)
   const [offset, setOffset] = React.useState(0)
   const [paged, setPaged] = React.useState(false)
-  const ref = React.useRef()
+  const ref = React.useRef<HTMLDivElement>()
 
   React.useEffect(
     function respondToActivePageRemoval() {
@@ -286,7 +287,7 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
 
   React.useEffect(
     function updateOffset() {
-      const activePageEl = ref.current.childNodes[activePage]
+      const activePageEl = ref.current.childNodes[activePage] as HTMLDivElement
       if (!activePageEl) return
 
       const nextOffset = ref.current.offsetLeft - activePageEl.offsetLeft

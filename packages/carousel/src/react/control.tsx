@@ -1,7 +1,4 @@
-import { compose, css } from 'glamor'
-import React from 'react'
-import PropTypes from 'prop-types'
-
+// TODO: remove
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import {
@@ -10,13 +7,18 @@ import {
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React from 'react'
+import PropTypes from 'prop-types'
 
+// TODO: reimport without .js
+import CarouselContext from './context.js'
 import stylesheet from '../css/index.js'
 import { combineFns, toValues } from '../js/utils.js'
 import * as vars from '../vars/index.js'
 
-import CarouselContext from './context.js'
-
+// TODO: flip param order to match most other components = props, themeName
 const styles = {
   control: (_, { direction }) =>
     compose(
@@ -34,7 +36,16 @@ const styles = {
     )
 }
 
-export function Control(props) {
+interface ControlProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'> {
+  onClick?: (evt?: React.MouseEvent) => void
+  direction: ValueOf<typeof vars.controlDirections>
+}
+interface ControlStatics {
+  directions: typeof vars.controlDirections
+}
+type ControlComponent = React.FC<ControlProps> & ControlStatics
+export const Control: ControlComponent = props => {
   const context = React.useContext(CarouselContext)
   const themeName = useTheme()
 
@@ -69,10 +80,6 @@ export function Control(props) {
     </div>
   )
 }
+Control.displayName = 'Carousel.Control'
 
 Control.directions = vars.controlDirections
-
-Control.propTypes = {
-  onClick: PropTypes.func,
-  direction: PropTypes.oneOf(toValues(Control.directions)).isRequired
-}

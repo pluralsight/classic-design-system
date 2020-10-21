@@ -11,7 +11,10 @@ import { BelowRight } from '@pluralsight/ps-design-system-position'
 
 import Carousel from '../index.js'
 
-const MockCard = props => (
+interface MockCardProps extends React.ComponentProps<Card> {
+  titleText: string
+}
+const MockCard: React.FC<MockCardProps> = props => (
   <Card
     title={
       <Card.TextLink>

@@ -1,7 +1,5 @@
 import path from 'path'
-import initStoryshots, {
-  snapshotWithOptions
-} from '@storybook/addon-storyshots'
+import initStoryshots from '@storybook/addon-storyshots'
 
 jest.mock('../../js/utils.js', () => ({
   ...jest.requireActual('../../js/utils.js'),
@@ -10,10 +8,7 @@ jest.mock('../../js/utils.js', () => ({
     .mockImplementation((prefix = '') => prefix + 'mock_unique_id')
 }))
 
-const createNodeMock = () => document.createElement('div')
-
 initStoryshots({
   configPath: path.resolve(__dirname, '../../../.storybook'),
-  framework: 'react',
-  test: snapshotWithOptions({ createNodeMock })
+  framework: 'react'
 })
