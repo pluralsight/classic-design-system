@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
-const noop = () => {}
+const noop = (evt: MouseEvent | TouchEvent) => {}
 
-const defaultOpts = {
+const defaultOpts: Required<UseSwipeOpts> = {
   distanceThreshold: 20, // 20px
   onSwipeDown: noop,
   onSwipeLeft: noop,
@@ -12,7 +12,17 @@ const defaultOpts = {
   timeThreshold: 500 // 500ms
 }
 
-export default function useSwipe(ref, opts = {}) {
+export interface UseSwipeOpts {
+  distanceThreshold?: number
+  onSwipeDown?: (evt: MouseEvent | TouchEvent) => void
+  onSwipeLeft?: (evt: MouseEvent | TouchEvent) => void
+  onSwipeRight?: (evt: MouseEvent | TouchEvent) => void
+  onSwipeUp?: (evt: MouseEvent | TouchEvent) => void
+  supportMouse?: boolean
+  timeThreshold?: number
+}
+
+const useSwipe = (ref, opts = {}) => {
   const {
     distanceThreshold,
     onSwipeDown,
@@ -23,7 +33,7 @@ export default function useSwipe(ref, opts = {}) {
     timeThreshold
   } = { ...defaultOpts, ...opts }
 
-  const timeout = useRef()
+  const timeout = useRef<NodeJS.Timeout>()
 
   const [swipping, setSwipping] = useState(false)
   const [startPosition, setStartPosition] = useState(null)
@@ -60,7 +70,7 @@ export default function useSwipe(ref, opts = {}) {
     setStartPosition({ clientX, clientY })
   }
 
-  function handleEnd(evt) {
+  function handleEnd(evt: MouseEvent | TouchEvent) {
     setSwipping(false)
     clearTimeout(timeout.current)
 
@@ -90,5 +100,6 @@ export default function useSwipe(ref, opts = {}) {
     resetCoords()
   }
 }
+export default useSwipe
 
 const getTouch = evt => (evt.changedTouches ? evt.changedTouches[0] : evt)

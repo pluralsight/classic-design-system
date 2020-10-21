@@ -1,10 +1,17 @@
 /* eslint-disable react/jsx-handler-names */
+import {
+  RefForwardingComponent,
+  useResizeObserver,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { cloneElement } from 'react'
 import PropTypes from 'prop-types'
 
+// TODO: rm
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
+// TODO: repath out index.js .js
 import stylesheet from '../css/index.js'
 import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index.js'
 import { chunk, isFunction, pick } from '../js/utils.js'
@@ -13,8 +20,8 @@ import * as vars from '../vars/index.js'
 import CarouselContext from './context.js'
 import { Control } from './control.js'
 
-import useResizeObserver from './use-resize-observer.js'
-import useSwipe from './use-swipe.js'
+/* import useResizeObserver from './use-resize-observer.js' */
+import useSwipe, { useSwipe } from './use-swipe.js'
 import useUniqueId from './use-unique-id.js'
 
 const styles = {
@@ -33,9 +40,27 @@ const styles = {
   item: () => css(stylesheet['.psds-carousel__item'])
 }
 
-export default function Carousel({ controlPrev, controlNext, size, ...props }) {
+interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode
+  controlPrev?: React.ReactNode
+  controlNext?: React.ReactNode
+  size: ValueOf<typeof vars.sizes>
+}
+interface CarouselStatics {
+  Control: typeof Control
+  Item: typeof Item
+}
+type CarouselComponent = React.FC<CarouselProps> & CarouselStatics
+
+const Carousel: CarouselComponent = ({
+  controlPrev,
+  controlNext,
+  size,
+  ...props
+}) => {
   const id = useUniqueId('carousel-')
-  const { ref, width } = useResizeObserver()
+  const ref = React.useRef()
+  const { width } = useResizeObserver(ref)
 
   const constraints = vars.constraints[size]
   const perPage = calcItemsPerPage(constraints, width)
@@ -110,7 +135,20 @@ export default function Carousel({ controlPrev, controlNext, size, ...props }) {
     </CarouselContext.Provider>
   )
 }
+export default Carousel
 
+interface InternalItemProps {
+  isActivePage?: boolean
+  itemIndex?: number
+  itemsPerPage?: number
+  pageCount?: number
+  pageIndex?: number
+}
+interface ItemProps
+  extends React.HTMLAttributes<HTMLLIElement>,
+    InternalItemProps {
+  children: (props: InternalItemProps) => React.ReactNode | React.ReactNode
+}
 function Item({ children, ...props }) {
   return (
     <li {...styles.item()} {...filterReactProps(props)}>
@@ -127,15 +165,6 @@ function Item({ children, ...props }) {
   )
 }
 
-Item.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
-  isActivePage: PropTypes.bool,
-  itemIndex: PropTypes.number,
-  itemsPerPage: PropTypes.number,
-  pageCount: PropTypes.number,
-  pageIndex: PropTypes.number
-}
-
 Carousel.Control = Control
 Carousel.Control.displayName = 'Carousel.Control'
 
@@ -144,19 +173,14 @@ Carousel.Item.displayName = 'Carousel.Item'
 
 Carousel.sizes = vars.sizes
 
-Carousel.propTypes = {
-  controlPrev: PropTypes.node,
-  controlNext: PropTypes.node,
-  children: PropTypes.node.isRequired,
-  size: PropTypes.oneOf(Object.keys(Carousel.sizes))
-}
+// TODO: replace
 Carousel.defaultProps = {
   controlPrev: <Control direction={Control.directions.prev} />,
   controlNext: <Control direction={Control.directions.next} />,
   size: Carousel.sizes.narrow
 }
 
-function Instructions(props) {
+const Instructions: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const context = React.useContext(CarouselContext)
   const id = `${context.id}__instructions`
 
@@ -170,6 +194,12 @@ function Instructions(props) {
   )
 }
 
+interface PagesProps
+  extends React.HTMLAttributes<HTMLDivElement>,
+    Required<Pick<UseSwipeOpts, 'onSwipeLeft' | 'onSwipeRight'>> {}
+interface PagesStatics {}
+interface PagesComponent
+  extends RefForwardingComponent<PagesProps, HTMLDivElement, PagesStatics> {}
 const Pages = React.forwardRef((props, ref) => {
   const context = React.useContext(CarouselContext)
 
@@ -189,17 +219,16 @@ const Pages = React.forwardRef((props, ref) => {
       {...filterReactProps(props)}
     />
   )
-})
-
+}) as PagesComponent
 Pages.displayName = 'Carousel.Pages'
 
-Pages.propTypes = {
-  onSwipeLeft: PropTypes.func.isRequired,
-  onSwipeRight: PropTypes.func.isRequired
+interface PageProps extends React.HTMLAttributes<HTMLUListElement> {
+  paged?: boolean
+  // TODO: is this actually required? proptypes are contradictory
+  isActivePage?: boolean
 }
-
-const Page = props => {
-  const ref = React.useRef()
+const Page: React.FC<PageProps> = props => {
+  const ref = React.useRef<HTMLUListElement>()
 
   const { children, isActivePage, paged, ...rest } = props
   const { offset, transitioning, setTransitioning } = React.useContext(
@@ -230,16 +259,7 @@ const Page = props => {
     </ul>
   )
 }
-Pages.displayName = 'Carousel.Page'
-Page.propTypes = {
-  children: PropTypes.node,
-  paged: PropTypes.bool,
-  isActivePage: PropTypes.bool
-}
-
-Page.propTypes = {
-  isActivePage: PropTypes.bool.isRequired
-}
+Page.displayName = 'Carousel.Page'
 
 function insertEmptyItems(page, perPage) {
   if (page.length >= perPage) return page
