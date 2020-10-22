@@ -67,10 +67,6 @@ const Carousel: CarouselComponent = ({
 
   const childArr = React.Children.toArray(children) as React.ReactElement[]
   const pages = chunk<React.ReactElement>(childArr, perPage)
-  /* .map( */
-  /*   // TODO: why fill with empty items? */
-  /*   insertEmptyItems<React.ReactElement>(page, perPage) */
-  /* ) */
   const pageCount = pages.length
 
   const pager = usePager(pageCount, [width])
@@ -256,12 +252,6 @@ const Page: React.FC<PageProps> = props => {
   )
 }
 Page.displayName = 'Carousel.Page'
-
-function insertEmptyItems<T>(page: T[], perPage: number): (T | null)[] {
-  if (page.length >= perPage) return page
-
-  return page.concat(new Array(perPage - page.length).fill(null))
-}
 
 function isOfComponentType(
   instance: any,
