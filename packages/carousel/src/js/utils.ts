@@ -1,5 +1,5 @@
 // TODO: pick out fns that can go to general utils
-export function chunk(arr, size) {
+export function chunk<T>(arr: T[], size?: number): T[][] {
   if (!Array.isArray(arr)) throw new TypeError('#chunk input must be an array')
   if (!size || size <= 0) size = 1
 

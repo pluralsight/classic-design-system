@@ -22,7 +22,11 @@ export interface UseSwipeOpts {
   timeThreshold?: number
 }
 
-const useSwipe = (ref, opts = {}) => {
+interface Point {
+  clientX: number
+  clientY: number
+}
+const useSwipe = (ref: React.MutableRefObject<HTMLElement>, opts = {}) => {
   const {
     distanceThreshold,
     onSwipeDown,
@@ -35,8 +39,9 @@ const useSwipe = (ref, opts = {}) => {
 
   const timeout = useRef<NodeJS.Timeout>()
 
-  const [swipping, setSwipping] = useState(false)
-  const [startPosition, setStartPosition] = useState(null)
+  // TODO: rename typo
+  const [swipping, setSwipping] = useState<boolean>(false)
+  const [startPosition, setStartPosition] = useState<Point | null>(null)
 
   const resetCoords = () => setStartPosition(null)
 
@@ -58,25 +63,25 @@ const useSwipe = (ref, opts = {}) => {
     }
   }, [handleEnd, handleStart, opts, supportMouse])
 
-  function handleStart(evt) {
-    if (!ref.current.contains(evt.target)) return
+  function handleStart(evt: MouseEvent | TouchEvent) {
+    if (!ref?.current?.contains(evt.target as Node)) return
 
     setSwipping(true)
 
-    clearTimeout(timeout.current)
+    if (timeout.current) clearTimeout(timeout.current)
     timeout.current = setTimeout(() => resetCoords(), timeThreshold)
 
-    const { clientX, clientY } = getTouch(evt)
+    const { clientX, clientY } = getEventPoint(evt)
     setStartPosition({ clientX, clientY })
   }
 
   function handleEnd(evt: MouseEvent | TouchEvent) {
     setSwipping(false)
-    clearTimeout(timeout.current)
+    if (timeout.current) clearTimeout(timeout.current)
 
     if (!swipping || !startPosition) return
 
-    const { clientX, clientY } = getTouch(evt)
+    const { clientX, clientY } = getEventPoint(evt)
     const horzDiff = clientX - startPosition.clientX
     const vertDiff = clientY - startPosition.clientY
 
@@ -102,4 +107,14 @@ const useSwipe = (ref, opts = {}) => {
 }
 export default useSwipe
 
-const getTouch = evt => (evt.changedTouches ? evt.changedTouches[0] : evt)
+const getEventPoint = (evt: MouseEvent | TouchEvent): Touch | MouseEvent => {
+  if (isTouchEvent(evt)) {
+    return evt.changedTouches[0]
+  } else {
+    return evt as MouseEvent
+  }
+}
+
+const isTouchEvent = (evt: MouseEvent | TouchEvent): evt is TouchEvent => {
+  return Array.isArray((evt as TouchEvent).changedTouches)
+}

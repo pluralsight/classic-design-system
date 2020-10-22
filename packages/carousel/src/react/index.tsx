@@ -55,7 +55,7 @@ const Carousel: CarouselComponent = ({
   ...rest
 }) => {
   const id = useUniqueId('carousel-')
-  const ref = React.useRef()
+  const ref = React.useRef<HTMLDivElement>()
   const { width } = useResizeObserver(ref)
 
   controlPrev = controlPrev || <Control direction={Control.directions.prev} />
@@ -65,9 +65,9 @@ const Carousel: CarouselComponent = ({
   const constraints = vars.constraints[size]
   const perPage = calcItemsPerPage(constraints, width)
 
-  const childArr = React.Children.toArray(children)
-  const pages = chunk(childArr, perPage).map(page =>
-    insertEmptyItems(page, perPage)
+  const childArr: React.ReactNode[] = React.Children.toArray(children)
+  const pages = chunk<React.ReactNode>(childArr, perPage).map(page =>
+    insertEmptyItems<React.ReactNode>(page, perPage)
   )
   const pageCount = pages.length
 
@@ -178,7 +178,8 @@ const Instructions: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   return (
     <div {...styles.instructions()} {...props} id={id}>
       <p>
-        Currently on page {context.activePage + 1} of {context.pageCount}.
+        Currently on page {(context.activePage || 0) + 1} of {context.pageCount}
+        .
       </p>
       <p>Use left and right arrow keys for navigation.</p>
     </div>
@@ -191,11 +192,11 @@ interface PagesProps
 interface PagesStatics {}
 interface PagesComponent
   extends RefForwardingComponent<PagesProps, HTMLDivElement, PagesStatics> {}
-const Pages = React.forwardRef((props, ref) => {
+const Pages = React.forwardRef<HTMLDivElement, PagesProps>((props, ref) => {
   const { onSwipeLeft, onSwipeRight, ...rest } = props
   const context = React.useContext(CarouselContext)
 
-  useSwipe(ref, {
+  useSwipe(ref as React.MutableRefObject<HTMLDivElement>, {
     onSwipeLeft: onSwipeLeft,
     onSwipeRight: onSwipeRight
   })
@@ -219,7 +220,7 @@ interface PageProps extends React.HTMLAttributes<HTMLUListElement> {
   isActivePage?: boolean
 }
 const Page: React.FC<PageProps> = props => {
-  const ref = React.useRef<HTMLUListElement>()
+  const ref = React.useRef<HTMLUListElement>(null)
 
   const { children, isActivePage, paged, ...rest } = props
   const { offset, transitioning, setTransitioning } = React.useContext(
@@ -228,11 +229,13 @@ const Page: React.FC<PageProps> = props => {
   React.useEffect(() => {
     if (paged && isActivePage) {
       const page = ref.current
-      const focusFirstChild = e => {
-        setTransitioning(false)
-        e.target === page && (page.firstElementChild as HTMLElement).focus()
+      if (page) {
+        const focusFirstChild = (evt: TransitionEvent) => {
+          setTransitioning(false)
+          evt.target === page && (page.firstElementChild as HTMLElement).focus()
+        }
+        page.addEventListener('transitionend', focusFirstChild)
       }
-      page.addEventListener('transitionend', focusFirstChild)
     }
   }, [isActivePage, paged])
   return (
@@ -252,21 +255,21 @@ const Page: React.FC<PageProps> = props => {
 }
 Page.displayName = 'Carousel.Page'
 
-function insertEmptyItems(page, perPage) {
+function insertEmptyItems<T>(page: T[], perPage: number): (T | null)[] {
   if (page.length >= perPage) return page
 
   return page.concat(new Array(perPage - page.length).fill(null))
 }
 
-function isOfComponentType(instance, el) {
-  return instance && instance.type.displayName === el.displayName
+function isOfComponentType(instance: any, el: React.NamedExoticComponent) {
+  return instance && instance?.type?.displayName === el.displayName
 }
 
-function usePager(pageCount, additionalSideEffectTriggers = []) {
+function usePager(pageCount: number, additionalSideEffectTriggers = []) {
   const [activePage, setActivePage] = React.useState(0)
   const [offset, setOffset] = React.useState(0)
   const [paged, setPaged] = React.useState(false)
-  const ref = React.useRef<HTMLDivElement>()
+  const ref = React.useRef<HTMLDivElement>(null)
 
   React.useEffect(
     function respondToActivePageRemoval() {
@@ -277,12 +280,16 @@ function usePager(pageCount, additionalSideEffectTriggers = []) {
 
   React.useEffect(
     function updateOffset() {
-      const activePageEl = ref.current.childNodes[activePage] as HTMLDivElement
-      if (!activePageEl) return
+      if (ref.current) {
+        const activePageEl = ref.current.childNodes[
+          activePage
+        ] as HTMLDivElement
+        if (!activePageEl) return
 
-      const nextOffset = ref.current.offsetLeft - activePageEl.offsetLeft
+        const nextOffset = ref.current.offsetLeft - activePageEl.offsetLeft
 
-      setOffset(nextOffset)
+        setOffset(nextOffset)
+      }
     },
     [activePage, pageCount, ...additionalSideEffectTriggers]
   )
