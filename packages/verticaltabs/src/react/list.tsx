@@ -24,8 +24,9 @@ interface CollapsibleListProps extends ListProps {
   collapsed?: boolean
 }
 export const CollapsibleList: React.FC<CollapsibleListProps> = props => {
+  const { collapsed, ...rest } = props
   const forceCollapsed = useForceCollapsed()
-  const [open, setOpen] = useState(!props.collapsed)
+  const [open, setOpen] = useState(!collapsed)
 
   useEffect(() => {
     setOpen(!props.collapsed)
@@ -35,7 +36,7 @@ export const CollapsibleList: React.FC<CollapsibleListProps> = props => {
     <Collapsible
       isOpen={!forceCollapsed && open}
       tagName="ul"
-      {...props}
+      {...rest}
       {...styles.list()}
       {...styles.listCollapsible()}
     />
