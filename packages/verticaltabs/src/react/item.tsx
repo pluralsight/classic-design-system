@@ -114,9 +114,12 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
   const [collapsed, setCollapsed] = useState<boolean>(initialCollapsed)
   const themeName = useTheme()
 
-  const handleHeaderClick = combineFns(() => {
-    setCollapsed(!collapsed)
-  }, onClick)
+  const handleHeaderClick = combineFns<[React.MouseEvent<HTMLLIElement>]>(
+    () => {
+      setCollapsed(!collapsed)
+    },
+    onClick
+  )
   const ListComp = collapsible ? CollapsibleList : List
 
   return (
