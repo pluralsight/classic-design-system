@@ -66,7 +66,9 @@ const Carousel: CarouselComponent = ({
   const perPage = calcItemsPerPage(constraints, width)
 
   const childArr = React.Children.toArray(children) as React.ReactElement[]
-  const pages = chunk<React.ReactElement>(childArr, perPage)
+  const pages = chunk<React.ReactElement>(childArr, perPage).map(page =>
+    fillPageToMaintainItemWidth<React.ReactElement>(page, perPage)
+  )
   const pageCount = pages.length
 
   const pager = usePager(pageCount, [width])
@@ -104,20 +106,22 @@ const Carousel: CarouselComponent = ({
                 isActivePage={isActivePage}
                 paged={pager.paged}
               >
-                {items.map((item, itemIndex) => {
-                  const wrapped = isOfComponentType(item, Item)
-                  if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
+                {items.map(
+                  (item: React.ReactElement | null, itemIndex: number) => {
+                    const wrapped = !!item && isOfComponentType(item, Item)
+                    if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
 
-                  return cloneElement(item, {
-                    key: itemIndex,
-                    ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),
-                    isActivePage,
-                    itemIndex,
-                    itemsPerPage: perPage,
-                    pageCount,
-                    pageIndex
-                  })
-                })}
+                    return cloneElement(item!, {
+                      key: itemIndex,
+                      ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),
+                      isActivePage,
+                      itemIndex,
+                      itemsPerPage: perPage,
+                      pageCount,
+                      pageIndex
+                    })
+                  }
+                )}
               </Page>
             )
           })}
@@ -252,6 +256,15 @@ const Page: React.FC<PageProps> = props => {
   )
 }
 Page.displayName = 'Carousel.Page'
+
+function fillPageToMaintainItemWidth<T>(
+  page: T[],
+  perPage: number
+): (T | null)[] {
+  if (page.length >= perPage) return page
+
+  return page.concat(new Array(perPage - page.length).fill(null))
+}
 
 function isOfComponentType(
   instance: any,
