@@ -28,6 +28,7 @@ export default function useFocusManager(
 ) {
   const prevActiveElRef = React.useRef<HTMLElement>(null)
   React.useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     prevActiveElRef.current = document.activeElement
   }, [])
