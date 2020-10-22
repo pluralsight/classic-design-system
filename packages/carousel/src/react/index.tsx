@@ -59,6 +59,10 @@ const Carousel: CarouselComponent = ({
   const ref = React.useRef()
   const { width } = useResizeObserver(ref)
 
+  controlPrev = controlPrev || <Control direction={Control.directions.prev} />
+  controlNext = controlNext || <Control direction={Control.directions.next} />
+  size = size || Carousel.sizes.narrow
+
   const constraints = vars.constraints[size]
   const perPage = calcItemsPerPage(constraints, width)
 
@@ -128,6 +132,8 @@ const Carousel: CarouselComponent = ({
   )
 }
 export default Carousel
+Carousel.Control = Control
+Carousel.sizes = vars.sizes
 
 interface InternalItemProps {
   isActivePage?: boolean
@@ -141,7 +147,7 @@ interface ItemProps
     InternalItemProps {
   children: (props: InternalItemProps) => React.ReactNode | React.ReactNode
 }
-function Item(props) {
+const Item: React.FC<ItemProps> = props => {
   const {
     children,
     isActivePage,
@@ -166,19 +172,7 @@ function Item(props) {
   )
 }
 Item.displayName = 'Carousel.Item'
-
-Carousel.Control = Control
-
 Carousel.Item = Item
-
-Carousel.sizes = vars.sizes
-
-// TODO: replace
-Carousel.defaultProps = {
-  controlPrev: <Control direction={Control.directions.prev} />,
-  controlNext: <Control direction={Control.directions.next} />,
-  size: Carousel.sizes.narrow
-}
 
 const Instructions: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const context = React.useContext(CarouselContext)
