@@ -39,8 +39,7 @@ const useSwipe = (ref: React.MutableRefObject<HTMLElement>, opts = {}) => {
 
   const timeout = useRef<NodeJS.Timeout>()
 
-  // TODO: rename typo
-  const [swipping, setSwipping] = useState<boolean>(false)
+  const [swiping, setSwiping] = useState<boolean>(false)
   const [startPosition, setStartPosition] = useState<Point | null>(null)
 
   const resetCoords = () => setStartPosition(null)
@@ -66,7 +65,7 @@ const useSwipe = (ref: React.MutableRefObject<HTMLElement>, opts = {}) => {
   function handleStart(evt: MouseEvent | TouchEvent) {
     if (!ref?.current?.contains(evt.target as Node)) return
 
-    setSwipping(true)
+    setSwiping(true)
 
     if (timeout.current) clearTimeout(timeout.current)
     timeout.current = setTimeout(() => resetCoords(), timeThreshold)
@@ -76,10 +75,10 @@ const useSwipe = (ref: React.MutableRefObject<HTMLElement>, opts = {}) => {
   }
 
   function handleEnd(evt: MouseEvent | TouchEvent) {
-    setSwipping(false)
+    setSwiping(false)
     if (timeout.current) clearTimeout(timeout.current)
 
-    if (!swipping || !startPosition) return
+    if (!swiping || !startPosition) return
 
     const { clientX, clientY } = getEventPoint(evt)
     const horzDiff = clientX - startPosition.clientX
@@ -111,7 +110,7 @@ const getEventPoint = (evt: MouseEvent | TouchEvent): Touch | MouseEvent => {
   if (isTouchEvent(evt)) {
     return evt.changedTouches[0]
   } else {
-    return evt as MouseEvent
+    return evt
   }
 }
 
