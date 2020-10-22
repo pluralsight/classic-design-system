@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 
 import stylesheet from '../css'
 import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js'
-import { chunk, isFunction, pick } from '../js/utils'
+import { chunk, pick } from '../js/utils'
 import * as vars from '../vars'
 
 import CarouselContext from './context'
@@ -144,9 +144,7 @@ interface InternalItemProps {
 }
 interface ItemProps
   extends React.HTMLAttributes<HTMLLIElement>,
-    InternalItemProps {
-  children: (props: InternalItemProps) => React.ReactNode | React.ReactNode
-}
+    InternalItemProps {}
 const Item: React.FC<ItemProps> = props => {
   const {
     children,
@@ -159,13 +157,13 @@ const Item: React.FC<ItemProps> = props => {
   } = props
   return (
     <li {...styles.item()} {...rest}>
-      {isFunction(children)
+      {typeof children === 'function'
         ? children({
-            isActivePage: isActivePage,
-            itemIndex: itemIndex,
-            itemsPerPage: itemsPerPage,
-            pageCount: pageCount,
-            pageIndex: pageIndex
+            isActivePage,
+            itemIndex,
+            itemsPerPage,
+            pageCount,
+            pageIndex
           })
         : children}
     </li>

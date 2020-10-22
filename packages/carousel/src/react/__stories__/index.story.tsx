@@ -49,7 +49,7 @@ const longStringsMetaData = [
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
 
-const MockItem = props => (
+const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
     {...css({
       alignItems: 'center',
@@ -73,10 +73,6 @@ const MockItem = props => (
     </a>{' '}
   </div>
 )
-
-MockItem.propTypes = {
-  children: PropTypes.node
-}
 
 storiesOf('Carousel/items', module)
   .add('one item', _ => (
