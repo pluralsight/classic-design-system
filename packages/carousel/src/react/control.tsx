@@ -14,14 +14,13 @@ import stylesheet from '../css'
 import { combineFns, toValues } from '../js/utils'
 import * as vars from '../vars/index'
 
-// TODO: flip param order to match most other components = props, themeName
 const styles = {
-  control: (_, { direction }) =>
+  control: props =>
     compose(
       css(stylesheet['.psds-carousel__controls__control']),
-      css(stylesheet[`.psds-carousel__controls__control--${direction}`])
+      css(stylesheet[`.psds-carousel__controls__control--${props.direction}`])
     ),
-  controlButton: (themeName, { direction }) =>
+  controlButton: (_props, themeName) =>
     compose(
       css(stylesheet['.psds-carousel__controls__control__button']),
       css(
@@ -60,7 +59,7 @@ export const Control: ControlComponent = props => {
   return (
     <div
       data-testid="carousel control"
-      {...styles.control(themeName, props)}
+      {...styles.control(props, themeName)}
       {...(!visible && { hidden: true })}
     >
       <Halo shape={Halo.shapes.pill}>
@@ -68,7 +67,7 @@ export const Control: ControlComponent = props => {
           {...rest}
           onClick={handleClick}
           aria-label={scr}
-          {...styles.controlButton(themeName, props)}
+          {...styles.controlButton(props, themeName)}
           {...(!visible && { tabIndex: -1 })}
         >
           <IconCaret aria-hidden size={iconSizes.medium} />
