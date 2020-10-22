@@ -6,9 +6,9 @@ import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import Carousel from '..'
+import Carousel, { Item } from '..'
 
-interface MockCardProps extends React.ComponentProps<Card> {
+interface MockCardProps extends React.ComponentProps<typeof Card> {
   titleText: string
 }
 const MockCard: React.FC<MockCardProps> = props => (
@@ -69,25 +69,25 @@ const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
 )
 
 storiesOf('Carousel/items', module)
-  .add('one item', _ => (
+  .add('one item', () => (
     <Carousel>
       <MockItem>just one item</MockItem>
     </Carousel>
   ))
-  .add('two items', _ => (
+  .add('two items', () => (
     <Carousel>
       <MockItem>first item</MockItem>
       <MockItem>second item</MockItem>
     </Carousel>
   ))
-  .add('many items', _ => (
+  .add('many items', () => (
     <Carousel>
       {new Array(21).fill(null).map((_, index) => (
         <MockItem key={index}>item: {index + 1}</MockItem>
       ))}
     </Carousel>
   ))
-  .add('dynamic items', _ => {
+  .add('dynamic items', () => {
     function DynamicItems() {
       const [count, updateCount] = React.useState(4)
 
@@ -123,7 +123,7 @@ storiesOf('Carousel/items', module)
     return <DynamicItems />
   })
 
-storiesOf('Carousel/controls', module).add('custom alignment', _ => (
+storiesOf('Carousel/controls', module).add('custom alignment', () => (
   <Carousel
     controlPrev={
       <Carousel.Control
@@ -147,7 +147,7 @@ storiesOf('Carousel/controls', module).add('custom alignment', _ => (
 const sizeStories = storiesOf('Carousel/size', module)
 
 Object.values(Carousel.sizes).forEach(size => {
-  sizeStories.add(size, _ => (
+  sizeStories.add(size, () => (
     <Carousel size={size}>
       {new Array(13).fill(null).map((_, index) => (
         <MockItem key={index}>item: {index + 1}</MockItem>
@@ -156,7 +156,7 @@ Object.values(Carousel.sizes).forEach(size => {
   ))
 })
 storiesOf('Carousel/Item', module)
-  .add('with child nodes', _ => (
+  .add('with child nodes', () => (
     <Carousel size={Carousel.sizes.wide}>
       {new Array(9).fill(null).map((_, index) => (
         <Carousel.Item key={index}>
@@ -165,11 +165,11 @@ storiesOf('Carousel/Item', module)
       ))}
     </Carousel>
   ))
-  .add('with render props', _ => (
+  .add('with render props', () => (
     <Carousel size={Carousel.sizes.wide}>
       {new Array(9).fill(null).map((_, index) => (
         <Carousel.Item key={index}>
-          {data => (
+          {(data: React.ComponentProps<typeof Item>) => (
             <MockItem>
               <pre>{JSON.stringify(data, null, 2)}</pre>
             </MockItem>
@@ -182,7 +182,7 @@ storiesOf('Carousel/Item', module)
 const cardStories = storiesOf('Carousel/with Card', module)
 
 Object.values(Carousel.sizes).forEach(size => {
-  cardStories.add(size, _ => (
+  cardStories.add(size, () => (
     <>
       <Carousel size={size}>
         <MockCard metadata1={longStringsMetaData} titleText="Title Here" />
@@ -223,13 +223,13 @@ storiesOf('Carousel/with ActionMenu', module)
             controlPrev={
               <Carousel.Control
                 direction={Carousel.Control.directions.prev}
-                onClick={_ => setOpen(false)}
+                onClick={() => setOpen(false)}
               />
             }
             controlNext={
               <Carousel.Control
                 direction={Carousel.Control.directions.next}
-                onClick={_ => setOpen(false)}
+                onClick={() => setOpen(false)}
               />
             }
           >
@@ -253,7 +253,7 @@ storiesOf('Carousel/with ActionMenu', module)
                   <Card.Action
                     title="asdf"
                     icon={<Icon.MoreIcon />}
-                    onClick={_ => setOpen(!isOpen)}
+                    onClick={() => setOpen(!isOpen)}
                   />
                 </BelowRight>
               ]}
@@ -271,7 +271,7 @@ storiesOf('Carousel/with ActionMenu', module)
   .add('perf: many cards in portals', () => {
     const MOCK_DATA = { courses: genData(40) }
 
-    function genData(count) {
+    function genData(count: number) {
       return new Array(count).fill(null).map((_, i) => ({
         author: 'Some Author',
         id: i + 1,
@@ -284,7 +284,7 @@ storiesOf('Carousel/with ActionMenu', module)
     function PerfPortalStory() {
       const [courseIdForOpenMenu, openCourseMenu] = React.useState(-1)
 
-      function handleClickMore(evt, courseId) {
+      function handleClickMore(evt: React.MouseEvent, courseId: number) {
         evt.preventDefault()
         console.log('click more', { courseId })
         if (courseId === courseIdForOpenMenu) {
@@ -301,13 +301,13 @@ storiesOf('Carousel/with ActionMenu', module)
             controlPrev={
               <Carousel.Control
                 direction={Carousel.Control.directions.prev}
-                onClick={_ => openCourseMenu(-1)}
+                onClick={() => openCourseMenu(-1)}
               />
             }
             controlNext={
               <Carousel.Control
                 direction={Carousel.Control.directions.next}
-                onClick={_ => openCourseMenu(-1)}
+                onClick={() => openCourseMenu(-1)}
               />
             }
           >
@@ -339,7 +339,9 @@ storiesOf('Carousel/with ActionMenu', module)
                     <Card.Action
                       title="See more"
                       icon={<Icon.MoreIcon />}
-                      onClick={evt => handleClickMore(evt, course.id)}
+                      onClick={(evt: React.MouseEvent) =>
+                        handleClickMore(evt, course.id)
+                      }
                     />
                   </BelowRight>
                 ]}

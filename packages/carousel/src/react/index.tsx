@@ -146,7 +146,7 @@ interface InternalItemProps {
 interface ItemProps
   extends React.HTMLAttributes<HTMLLIElement>,
     InternalItemProps {}
-const Item: React.FC<ItemProps> = props => {
+export const Item: React.FC<ItemProps> = props => {
   const {
     children,
     isActivePage,

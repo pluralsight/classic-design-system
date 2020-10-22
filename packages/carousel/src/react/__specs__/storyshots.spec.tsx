@@ -4,7 +4,7 @@ import initStoryshots, {
 } from '@storybook/addon-storyshots'
 
 jest.mock('../../js/utils', () => ({
-  ...jest.requireActual('../../js/utils'),
+  ...(jest.requireActual('../../js/utils') as Record<string, unknown>),
   uniqueId: jest
     .fn()
     .mockImplementation((prefix = '') => prefix + 'mock_unique_id')

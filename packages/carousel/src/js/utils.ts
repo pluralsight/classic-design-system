@@ -15,11 +15,11 @@ export function combineFns(...fns) {
   return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))
 }
 
-export function isFunction(fn) {
+export function isFunction(fn: any) {
   return typeof fn === 'function'
 }
 
-export function isPlainObject(obj) {
+export function isPlainObject<T>(obj: T): boolean {
   return obj && !Array.isArray(obj) && typeof obj === 'object'
 }
 
@@ -28,19 +28,20 @@ export const uniqueId = (prefix = '') => {
   return String(prefix) + id
 }
 
-export function pick<T = Record<string, unknown>>(
+export function pick<T, K extends keyof T>(
   obj: T,
-  props: string[] = []
-): T {
-  if (!isPlainObject(obj)) throw new TypeError('#pick input must be an object')
+  props: K[] = []
+): Pick<T, K> {
+  if (!isPlainObject<T>(obj))
+    throw new TypeError('#pick input must be an object')
 
   return props.reduce((acc, key) => {
     if (Object.prototype.hasOwnProperty.call(obj, key)) acc[key] = obj[key]
     return acc
-  }, {})
+  }, {} as Pick<T, K>)
 }
 
-export function toValues(obj) {
+export function toValues(obj: Record<string, unknown>) {
   if (!isPlainObject(obj)) {
     throw new TypeError('#toValues input must be an object')
   }
