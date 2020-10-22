@@ -8,9 +8,6 @@ import { compose, css } from 'glamor'
 import React, { cloneElement } from 'react'
 import PropTypes from 'prop-types'
 
-// TODO: rm
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-
 import stylesheet from '../css'
 import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js'
 import { chunk, isFunction, pick } from '../js/utils'
@@ -23,12 +20,12 @@ import useSwipe, { UseSwipeOpts } from './use-swipe'
 import useUniqueId from './use-unique-id'
 
 const styles = {
-  carousel: (props, { ready }) =>
+  carousel: (ready: boolean) =>
     compose(
       css(stylesheet['.psds-carousel']),
       ready && css(stylesheet['.psds-carousel--ready'])
     ),
-  pages: props => compose(css(stylesheet['.psds-carousel__pages'])),
+  pages: () => compose(css(stylesheet['.psds-carousel__pages'])),
   page: props =>
     compose(
       css(stylesheet['.psds-carousel__page']),
@@ -52,10 +49,11 @@ interface CarouselStatics {
 type CarouselComponent = React.FC<CarouselProps> & CarouselStatics
 
 const Carousel: CarouselComponent = ({
+  children,
   controlPrev,
   controlNext,
   size,
-  ...props
+  ...rest
 }) => {
   const id = useUniqueId('carousel-')
   const ref = React.useRef()
@@ -64,7 +62,7 @@ const Carousel: CarouselComponent = ({
   const constraints = vars.constraints[size]
   const perPage = calcItemsPerPage(constraints, width)
 
-  const childArr = React.Children.toArray(props.children)
+  const childArr = React.Children.toArray(children)
   const pages = chunk(childArr, perPage).map(page =>
     insertEmptyItems(page, perPage)
   )
@@ -84,11 +82,7 @@ const Carousel: CarouselComponent = ({
 
   return (
     <CarouselContext.Provider value={contextValue}>
-      <div
-        {...styles.carousel(props, { ready })}
-        {...filterReactProps(props)}
-        ref={ref}
-      >
+      <div {...styles.carousel(ready)} {...rest} ref={ref}>
         {controlPrev}
         <Pages
           ref={pager.ref}
@@ -147,16 +141,25 @@ interface ItemProps
     InternalItemProps {
   children: (props: InternalItemProps) => React.ReactNode | React.ReactNode
 }
-function Item({ children, ...props }) {
+function Item(props) {
+  const {
+    children,
+    isActivePage,
+    itemIndex,
+    itemsPerPage,
+    pageCount,
+    pageIndex,
+    ...rest
+  } = props
   return (
-    <li {...styles.item()} {...filterReactProps(props)}>
+    <li {...styles.item()} {...rest}>
       {isFunction(children)
         ? children({
-            isActivePage: props.isActivePage,
-            itemIndex: props.itemIndex,
-            itemsPerPage: props.itemsPerPage,
-            pageCount: props.pageCount,
-            pageIndex: props.pageIndex
+            isActivePage: isActivePage,
+            itemIndex: itemIndex,
+            itemsPerPage: itemsPerPage,
+            pageCount: pageCount,
+            pageIndex: pageIndex
           })
         : children}
     </li>
@@ -198,11 +201,12 @@ interface PagesStatics {}
 interface PagesComponent
   extends RefForwardingComponent<PagesProps, HTMLDivElement, PagesStatics> {}
 const Pages = React.forwardRef((props, ref) => {
+  const { onSwipeLeft, onSwipeRight, ...rest } = props
   const context = React.useContext(CarouselContext)
 
   useSwipe(ref, {
-    onSwipeLeft: props.onSwipeLeft,
-    onSwipeRight: props.onSwipeRight
+    onSwipeLeft: onSwipeLeft,
+    onSwipeRight: onSwipeRight
   })
 
   return (
@@ -212,8 +216,8 @@ const Pages = React.forwardRef((props, ref) => {
       id={context.id}
       ref={ref}
       role="region"
-      {...styles.pages(props)}
-      {...filterReactProps(props)}
+      {...styles.pages()}
+      {...rest}
     />
   )
 }) as PagesComponent
@@ -248,7 +252,7 @@ const Page: React.FC<PageProps> = props => {
       ref={ref}
       {...styles.page(props)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
-      {...filterReactProps(rest)}
+      {...rest}
       {...(!isActivePage && {
         hidden: true,
         style: { visibility: transitioning ? 'visible' : 'hidden' }
