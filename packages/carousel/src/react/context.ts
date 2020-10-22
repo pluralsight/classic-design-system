@@ -1,20 +1,26 @@
 import React from 'react'
 
-const initialValue = {
-  transitioning: false,
-  setTransitioning: (_t: boolean) => {}
-}
 interface CarouselContextValue {
-  activePage?: number
-  next?: number
-  offset?: number
-  prev?: number
-  id?: string
-  pageCount?: number
-  perPage?: number
+  activePage: number
+  next: () => void
+  offset: number
+  prev: () => void
+  id: string
+  pageCount: number
+  perPage: number
   transitioning: boolean
   setTransitioning: React.Dispatch<React.SetStateAction<boolean>>
 }
-const context = React.createContext<CarouselContextValue>(initialValue)
+const context = React.createContext<CarouselContextValue>({
+  activePage: 0,
+  next: () => {},
+  offset: 0,
+  prev: () => {},
+  id: 'carousel-initialId',
+  pageCount: 0,
+  perPage: 0,
+  transitioning: false,
+  setTransitioning: () => {}
+})
 
 export default context

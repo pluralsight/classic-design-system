@@ -25,10 +25,10 @@ const styles = {
       ready && css(stylesheet['.psds-carousel--ready'])
     ),
   pages: () => compose(css(stylesheet['.psds-carousel__pages'])),
-  page: props =>
+  page: (isActivePage: boolean) =>
     compose(
       css(stylesheet['.psds-carousel__page']),
-      props.isActivePage && css(stylesheet['.psds-carousel__page--active'])
+      isActivePage && css(stylesheet['.psds-carousel__page--active'])
     ),
   instructions: () => css(stylesheet['.psds-carousel__instructions']),
   item: () => css(stylesheet['.psds-carousel__item'])
@@ -55,7 +55,7 @@ const Carousel: CarouselComponent = ({
   ...rest
 }) => {
   const id = useUniqueId('carousel-')
-  const ref = React.useRef<HTMLDivElement>()
+  const ref = React.useRef<HTMLDivElement>(null)
   const { width } = useResizeObserver(ref)
 
   controlPrev = controlPrev || <Control direction={Control.directions.prev} />
@@ -65,14 +65,16 @@ const Carousel: CarouselComponent = ({
   const constraints = vars.constraints[size]
   const perPage = calcItemsPerPage(constraints, width)
 
-  const childArr: React.ReactNode[] = React.Children.toArray(children)
-  const pages = chunk<React.ReactNode>(childArr, perPage).map(page =>
-    insertEmptyItems<React.ReactNode>(page, perPage)
-  )
+  const childArr = React.Children.toArray(children) as React.ReactElement[]
+  const pages = chunk<React.ReactElement>(childArr, perPage)
+  /* .map( */
+  /*   // TODO: why fill with empty items? */
+  /*   insertEmptyItems<React.ReactElement>(page, perPage) */
+  /* ) */
   const pageCount = pages.length
 
   const pager = usePager(pageCount, [width])
-  const ready = width && width > 0
+  const ready = !!width && width > 0
   const [transitioning, setTransitioning] = React.useState<boolean>(false)
   const contextValue = {
     ...pick(pager, ['activePage', 'next', 'offset', 'prev']),
@@ -241,7 +243,7 @@ const Page: React.FC<PageProps> = props => {
   return (
     <ul
       ref={ref}
-      {...styles.page(props)}
+      {...styles.page(!!props.isActivePage)}
       {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
       {...rest}
       {...(!isActivePage && {
@@ -261,11 +263,25 @@ function insertEmptyItems<T>(page: T[], perPage: number): (T | null)[] {
   return page.concat(new Array(perPage - page.length).fill(null))
 }
 
-function isOfComponentType(instance: any, el: React.NamedExoticComponent) {
+function isOfComponentType(
+  instance: any,
+  el: React.NamedExoticComponent | React.FC
+) {
   return instance && instance?.type?.displayName === el.displayName
 }
 
-function usePager(pageCount: number, additionalSideEffectTriggers = []) {
+export interface Pager {
+  activePage: number
+  next: () => void
+  offset: number
+  prev: () => void
+  ref: React.RefObject<HTMLDivElement>
+  paged: boolean
+}
+function usePager(
+  pageCount: number,
+  additionalSideEffectTriggers: any[] = []
+): Pager {
   const [activePage, setActivePage] = React.useState(0)
   const [offset, setOffset] = React.useState(0)
   const [paged, setPaged] = React.useState(false)

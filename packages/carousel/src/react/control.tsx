@@ -4,7 +4,10 @@ import {
   CaretRightIcon,
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React from 'react'
@@ -15,12 +18,12 @@ import { combineFns, toValues } from '../js/utils'
 import * as vars from '../vars/index'
 
 const styles = {
-  control: props =>
+  control: (direction: ValueOf<typeof vars.controlDirections>) =>
     compose(
       css(stylesheet['.psds-carousel__controls__control']),
-      css(stylesheet[`.psds-carousel__controls__control--${props.direction}`])
+      css(stylesheet[`.psds-carousel__controls__control--${direction}`])
     ),
-  controlButton: (_props, themeName) =>
+  controlButton: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet['.psds-carousel__controls__control__button']),
       css(
@@ -45,7 +48,13 @@ export const Control: ControlComponent = props => {
   const context = React.useContext(CarouselContext)
   const themeName = useTheme()
 
-  const { activePage, pageCount, next, prev, setTransitioning } = context
+  const {
+    activePage = 0,
+    pageCount = 0,
+    next,
+    prev,
+    setTransitioning
+  } = context
 
   const isPrev = direction === Control.directions.prev
   const visible = isPrev ? activePage > 0 : activePage !== pageCount - 1
@@ -59,7 +68,7 @@ export const Control: ControlComponent = props => {
   return (
     <div
       data-testid="carousel control"
-      {...styles.control(props, themeName)}
+      {...styles.control(props.direction)}
       {...(!visible && { hidden: true })}
     >
       <Halo shape={Halo.shapes.pill}>
@@ -67,7 +76,7 @@ export const Control: ControlComponent = props => {
           {...rest}
           onClick={handleClick}
           aria-label={scr}
-          {...styles.controlButton(props, themeName)}
+          {...styles.controlButton(themeName)}
           {...(!visible && { tabIndex: -1 })}
         >
           <IconCaret aria-hidden size={iconSizes.medium} />

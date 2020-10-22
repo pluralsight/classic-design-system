@@ -28,7 +28,10 @@ export const uniqueId = (prefix = '') => {
   return String(prefix) + id
 }
 
-export function pick(obj, props = []) {
+export function pick<T = Record<string, unknown>>(
+  obj: T,
+  props: string[] = []
+): T {
   if (!isPlainObject(obj)) throw new TypeError('#pick input must be an object')
 
   return props.reduce((acc, key) => {
