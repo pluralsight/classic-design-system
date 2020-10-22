@@ -1,99 +1,118 @@
-import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React, { useState, useEffect } from 'react'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { ValueOf, canUseDOM } from '@pluralsight/ps-design-system-util'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import {
   names as themeNames,
-  withTheme
+  useTheme
 } from '@pluralsight/ps-design-system-theme'
+import { compose, css } from 'glamor'
+import React, { HTMLAttributes, useState, useEffect } from 'react'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
-if (typeof window !== 'undefined') require('element-closest')
+if (canUseDOM()) require('element-closest')
 
 const styles = {
-  drawer: themeName => css(stylesheet[`.psds-drawer.psds-theme--${themeName}`]),
-  base: isOpen =>
+  drawer: (themeName: ValueOf<typeof themeNames>) =>
+    css(stylesheet[`.psds-drawer.psds-theme--${themeName}`]),
+  base: ({ open }: { open: boolean }) =>
     compose(
       css(stylesheet['.psds-drawer__base']),
-      isOpen && css(stylesheet['.psds-drawer__base--isOpen'])
+      open && css(stylesheet['.psds-drawer__base--isOpen'])
     ),
-  panel: ({ themeName }) =>
+  panel: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet['.psds-drawer__panel']),
       css(stylesheet[`.psds-drawer__panel.psds-theme--${themeName}`])
     ),
   panelContent: () => css(stylesheet[`.psds-drawer__panel-content`]),
-  rotatable: isRotated =>
+  rotatable: ({ open }: { open: boolean }) =>
     compose(
       css(stylesheet['.psds-drawer__rotatable']),
-      isRotated && css(stylesheet['.psds-drawer__rotatable--isOpen'])
+      open && css(stylesheet['.psds-drawer__rotatable--isOpen'])
     ),
   toggleButtonContainer: () =>
     css(stylesheet[`.psds-drawer__toggle-button-container`]),
-  toggleButton: themeName =>
+  toggleButton: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet[`.psds-drawer__toggle-button`]),
       css(stylesheet[`.psds-drawer__toggle-button.psds-theme--${themeName}`])
     ),
   collapsible: () => css(stylesheet['.psds-drawer__collapsible'])
 }
-const Drawer = ({
-  startOpen,
-  isOpen,
-  toggleButtonAriaLabel,
-  themeName,
-  children,
-  onToggle,
-  base,
-  ...rest
-}) => {
-  const [openState, setOpenState] = useState(startOpen)
-  const [controlled, setControlled] = useState()
+
+interface DrawerProps extends HTMLAttributes<HTMLDivElement> {
+  base: React.ReactNode
+  isOpen?: boolean
+  onToggle?: (open: boolean, evt: React.MouseEvent) => void
+  startOpen?: boolean
+  toggleButtonAriaLabel?: string
+}
+const Drawer: React.FC<DrawerProps> = props => {
+  const {
+    base,
+    children,
+    isOpen,
+    onToggle,
+    toggleButtonAriaLabel,
+    startOpen = false,
+    ...rest
+  } = props
+  const themeName = useTheme()
+
+  const [controlled, setControlled] = useState<boolean | undefined>(undefined)
   useEffect(() => {
-    if (controlled !== undefined) {
-      return
-    }
+    if (controlled !== undefined) return
+
     setControlled(isOpen !== undefined)
   }, [isOpen, controlled])
+
+  const [openState, setOpenState] = useState(startOpen)
   const open = isOpen !== undefined ? isOpen : openState
-  const getButtonAriaLabel = () => {
+
+  const getButtonAriaLabel = (): string => {
     const prefix = open ? 'Collapse' : 'Expand'
     return toggleButtonAriaLabel ? `${prefix} ${toggleButtonAriaLabel}` : prefix
   }
 
-  const isClickOnDrawerBase = evt => !evt.target.closest('a, button')
+  const handleClick: React.MouseEventHandler<HTMLDivElement> = evt => {
+    isClickOnDrawerBase(evt) && toggle(evt)
+  }
 
-  const toggle = evt => {
+  const isClickOnDrawerBase = (
+    evt: React.MouseEvent<HTMLDivElement>
+  ): boolean => {
+    const target = evt.target as HTMLElement
+    return !target.closest('a, button')
+  }
+
+  const toggle = (
+    evt: React.MouseEvent<HTMLButtonElement | HTMLDivElement>
+  ) => {
     const nextOpen = !open
     onToggle && onToggle(nextOpen, evt)
     !controlled && setOpenState(nextOpen)
   }
 
-  const handleClick = evt => {
-    isClickOnDrawerBase(evt) && toggle(evt)
-  }
-
   return (
-    <div {...styles.drawer(themeName)} {...filterReactProps(rest)}>
-      <div {...styles.base(open)} onClick={handleClick}>
+    <div {...styles.drawer(themeName)} {...rest}>
+      <div {...styles.base({ open })} onClick={handleClick}>
         <div {...styles.panelContent()}>{base}</div>
+
         <div {...styles.toggleButtonContainer()}>
           <button
-            onClick={toggle}
             aria-label={getButtonAriaLabel()}
+            onClick={toggle}
             {...styles.toggleButton(themeName)}
           >
-            <div {...styles.rotatable(open)}>
+            <div {...styles.rotatable({ open })}>
               <CaretDownIcon />
             </div>
           </button>
         </div>
       </div>
-      <div {...styles.panel({ themeName })}>
+
+      <div {...styles.panel(themeName)}>
         <Collapsible isOpen={open} {...styles.collapsible()}>
           {children}
         </Collapsible>
@@ -102,20 +121,4 @@ const Drawer = ({
   )
 }
 
-Drawer.displayName = 'Drawer'
-
-Drawer.propTypes = {
-  base: PropTypes.node.isRequired,
-  children: PropTypes.node.isRequired,
-  isOpen: PropTypes.bool,
-  onToggle: PropTypes.func,
-  startOpen: PropTypes.bool,
-  themeName: PropTypes.oneOf(Object.values(themeNames)),
-  toggleButtonAriaLabel: PropTypes.string
-}
-
-Drawer.defaultProps = {
-  startOpen: false
-}
-
-export default withTheme(Drawer)
+export default Drawer
