@@ -8,8 +8,6 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React from 'react'
-// TODO: rm
-import PropTypes from 'prop-types'
 
 import CarouselContext from './context'
 import stylesheet from '../css'

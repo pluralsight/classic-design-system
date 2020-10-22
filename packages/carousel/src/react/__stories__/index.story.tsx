@@ -1,13 +1,10 @@
-import { storiesOf } from '@storybook/react'
-
-import { css } from 'glamor'
-import React from 'react'
-import PropTypes from 'prop-types'
-
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Card from '@pluralsight/ps-design-system-card'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
+import { storiesOf } from '@storybook/react'
+import { css } from 'glamor'
+import React from 'react'
 
 import Carousel from '..'
 
@@ -39,9 +36,6 @@ const MockCard: React.FC<MockCardProps> = props => (
     {...props}
   />
 )
-MockCard.propTypes = {
-  titleText: PropTypes.string.isRequired
-}
 
 const longStringsMetaData = [
   'It is impossible to count the grand contributions of this great author',

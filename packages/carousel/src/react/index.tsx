@@ -6,7 +6,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { cloneElement } from 'react'
-import PropTypes from 'prop-types'
 
 import stylesheet from '../css'
 import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js'
