@@ -8,13 +8,13 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { combineFns, ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React from 'react'
 
 import CarouselContext from './context'
 import stylesheet from '../css'
-import { combineFns, toValues } from '../js/utils'
+import { toValues } from '../js/utils'
 import * as vars from '../vars/index'
 
 const styles = {

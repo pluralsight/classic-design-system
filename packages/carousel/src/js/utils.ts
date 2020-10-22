@@ -4,15 +4,11 @@ export function chunk<T>(arr: T[], size?: number): T[][] {
   if (!size || size <= 0) size = 1
 
   return arr.reduce((acc, item, index) => {
-    if (index % size === 0) acc.push([item])
+    if (index % size! === 0) acc.push([item])
     else acc[acc.length - 1].push(item)
 
     return acc
-  }, [])
-}
-
-export function combineFns(...fns) {
-  return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))
+  }, [] as T[][])
 }
 
 export function isFunction(fn: any) {

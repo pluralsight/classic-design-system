@@ -1,6 +1,11 @@
 import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const constraints = {
+export interface ConstraintSet {
+  gutter: number
+  minWidth: number
+  maxWidth: number
+}
+export const constraints: { [key in keyof typeof sizes]: ConstraintSet } = {
   narrow: { gutter: 16, minWidth: 160, maxWidth: 335 },
   wide: { gutter: 16, minWidth: 240, maxWidth: 495 }
 }
