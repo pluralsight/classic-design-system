@@ -107,13 +107,5 @@ const useSwipe = (ref: React.MutableRefObject<HTMLElement>, opts = {}) => {
 export default useSwipe
 
 const getEventPoint = (evt: MouseEvent | TouchEvent): Touch | MouseEvent => {
-  if (isTouchEvent(evt)) {
-    return evt.changedTouches[0]
-  } else {
-    return evt
-  }
-}
-
-const isTouchEvent = (evt: MouseEvent | TouchEvent): evt is TouchEvent => {
-  return Array.isArray((evt as TouchEvent).changedTouches)
+  return 'changedTouches' in evt ? evt.changedTouches[0] : evt
 }
