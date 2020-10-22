@@ -6,10 +6,10 @@ import Button from '@pluralsight/ps-design-system-button'
 import { headingSizes } from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
-import Heading from './heading.js'
-import icons from './icon-loader.js'
+import Heading from './heading'
+import icons from './icon-loader'
 
 const styles = {
   page: ({ themeName }) => {

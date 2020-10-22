@@ -7,7 +7,7 @@ import {
   type
 } from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 const shadowBlurWidth = '4px'
 const tailDimension = '14px'

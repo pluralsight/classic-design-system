@@ -1,15 +1,13 @@
-import { compose, css } from 'glamor'
+import { compose, css, keyframes } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
-const fade = css.keyframes(
-  stylesheet[`@keyframes psds-tooltip__keyframes__fade`]
-)
+const fade = keyframes(stylesheet[`@keyframes psds-tooltip__keyframes__fade`])
 const styles = {
   tail: ({ appearance, onClose, tailPosition }) => {
     const label = 'psds-tooltip__tail'

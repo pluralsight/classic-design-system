@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import ErrorPage from './error-page.js'
+import ErrorPage from './error-page'
 
 const NotFoundErrorPage = props => (
   <ErrorPage
