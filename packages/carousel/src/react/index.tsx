@@ -216,10 +216,7 @@ const Pages = React.forwardRef((props, ref) => {
 Pages.displayName = 'Carousel.Pages'
 
 interface PageProps extends React.HTMLAttributes<HTMLUListElement> {
-  // TODO: removing from usage. Ensure not needed
-  // pageIndex: number
   paged?: boolean
-  // TODO: is this actually required? proptypes are contradictory
   isActivePage?: boolean
 }
 const Page: React.FC<PageProps> = props => {

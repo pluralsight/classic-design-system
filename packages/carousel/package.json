@@ -24,7 +24,6 @@
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
     "@pluralsight/ps-design-system-halo": "^7.1.2",
     "@pluralsight/ps-design-system-icon": "^19.0.0",
     "@pluralsight/ps-design-system-util": "^5.4.2",

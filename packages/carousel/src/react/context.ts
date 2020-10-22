@@ -4,7 +4,6 @@ const initialValue = {
   transitioning: false,
   setTransitioning: (_t: boolean) => {}
 }
-// TODO: ensure that the optionality is appropriate here
 interface CarouselContextValue {
   activePage?: number
   next?: number

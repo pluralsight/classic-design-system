@@ -1,5 +1,3 @@
-// TODO: remove
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import {
   CaretLeftIcon,
@@ -10,6 +8,7 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React from 'react'
+// TODO: rm
 import PropTypes from 'prop-types'
 
 import CarouselContext from './context'
@@ -36,25 +35,26 @@ const styles = {
 }
 
 interface ControlProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'> {
-  onClick?: (evt?: React.MouseEvent) => void
+  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   direction: ValueOf<typeof vars.controlDirections>
+  onClick?: (evt?: React.MouseEvent) => void
 }
 interface ControlStatics {
   directions: typeof vars.controlDirections
 }
 type ControlComponent = React.FC<ControlProps> & ControlStatics
 export const Control: ControlComponent = props => {
+  const { direction, onClick, ...rest } = props
   const context = React.useContext(CarouselContext)
   const themeName = useTheme()
 
   const { activePage, pageCount, next, prev, setTransitioning } = context
 
-  const isPrev = props.direction === Control.directions.prev
+  const isPrev = direction === Control.directions.prev
   const visible = isPrev ? activePage > 0 : activePage !== pageCount - 1
 
   const IconCaret = isPrev ? CaretLeftIcon : CaretRightIcon
-  const handleClick = combineFns(isPrev ? prev : next, props.onClick, () =>
+  const handleClick = combineFns(isPrev ? prev : next, onClick, () =>
     setTransitioning(true)
   )
   const scr = `get ${isPrev ? 'previous' : 'next'} carousel page`
@@ -67,7 +67,7 @@ export const Control: ControlComponent = props => {
     >
       <Halo shape={Halo.shapes.pill}>
         <button
-          {...filterReactProps(props, { tagName: 'li' })}
+          {...rest}
           onClick={handleClick}
           aria-label={scr}
           {...styles.controlButton(themeName, props)}
