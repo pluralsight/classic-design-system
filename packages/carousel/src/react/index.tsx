@@ -111,6 +111,7 @@ const Carousel: CarouselComponent = ({
                     const wrapped = !!item && isOfComponentType(item, Item)
                     if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
 
+                    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
                     return cloneElement(item!, {
                       key: itemIndex,
                       ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),

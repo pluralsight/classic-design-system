@@ -29,7 +29,7 @@ const MockCard: React.FC<MockCardProps> = props => (
     ]}
     image={<Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />}
     metadata1={[
-      <Card.TextLink>
+      <Card.TextLink key="text">
         <a href="#">meta</a>
       </Card.TextLink>
     ]}

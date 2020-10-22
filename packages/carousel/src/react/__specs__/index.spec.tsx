@@ -34,6 +34,7 @@ describe('Carousel', () => {
         '[aria-label="get previous carousel page"]'
       )
       expect(page).toBeDefined()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
       const control = page!.closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })
@@ -43,6 +44,7 @@ describe('Carousel', () => {
         '[aria-label="get next carousel page"]'
       )
       expect(page).toBeDefined()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
       const control = page!.closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })

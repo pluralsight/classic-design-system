@@ -4,6 +4,7 @@ export function chunk<T>(arr: T[], size?: number): T[][] {
   if (!size || size <= 0) size = 1
 
   return arr.reduce((acc, item, index) => {
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     if (index % size! === 0) acc.push([item])
     else acc[acc.length - 1].push(item)
 
