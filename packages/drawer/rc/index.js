@@ -12,7 +12,7 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useToggle } from '@pluralsight/ps-design-system-util'
 
-import { useCollapsible } from '@pluralsight/ps-design-system-collapsible/rc'
+import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import stylesheet from './css/index.js'
 
 const styles = {
