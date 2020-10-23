@@ -1,15 +1,14 @@
-export const appearances = {
-  basic: 'basic',
-  accent: 'accent'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const tailPositions = {
-  bottomCenter: 'bottomCenter',
-  bottomLeft: 'bottomLeft',
-  bottomRight: 'bottomRight',
-  leftCenter: 'leftCenter',
-  rightCenter: 'rightCenter',
-  topCenter: 'topCenter',
-  topLeft: 'topLeft',
-  topRight: 'topRight'
-}
+export const appearances = keyMirror('basic', 'accent')
+
+export const tailPositions = keyMirror(
+  'bottomCenter',
+  'bottomLeft',
+  'bottomRight',
+  'leftCenter',
+  'rightCenter',
+  'topCenter',
+  'topLeft',
+  'topRight'
+)

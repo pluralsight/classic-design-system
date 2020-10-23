@@ -18,10 +18,12 @@
     "test": "jest",
     "test:watch": "yarn test -- --watchAll"
   },
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
-    "prop-types": "^15.7.2"
+    "@pluralsight/ps-design-system-util": "^5.4.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

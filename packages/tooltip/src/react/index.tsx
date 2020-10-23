@@ -1,15 +1,22 @@
 import { compose, css, keyframes } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 import * as vars from '../vars'
 
 const fade = keyframes(stylesheet[`@keyframes psds-tooltip__keyframes__fade`])
 const styles = {
-  tail: ({ appearance, onClose, tailPosition }) => {
+  tail: ({
+    appearance,
+    tailPosition
+  }: {
+    appearance: ValueOf<typeof vars.appearances>
+    tailPosition?: ValueOf<typeof vars.tailPositions>
+  }) => {
     const label = 'psds-tooltip__tail'
 
     return compose(
@@ -18,17 +25,23 @@ const styles = {
       css(stylesheet[`.${label}--tailPosition-${tailPosition}`])
     )
   },
-  tooltip: ({ appearance, onClose }) => {
+  tooltip: ({
+    appearance,
+    onClose
+  }: {
+    appearance: ValueOf<typeof vars.appearances>
+    onClose?: (evt?: React.MouseEvent) => void
+  }) => {
     const label = 'psds-tooltip'
     const closeable = typeof onClose === 'function'
 
     return compose(
-      css(stylesheet[`.${label}`]({ fade })),
+      css(stylesheet['.psds-tooltip']({ fade })),
       css(stylesheet[`.${label}--appearance-${appearance}`]),
       closeable && css(stylesheet[`.${label}--closeable`])
     )
   },
-  close: ({ appearance }) => {
+  close: (appearance: string) => {
     const label = 'psds-tooltip__close'
 
     return compose(
@@ -37,11 +50,14 @@ const styles = {
     )
   }
 }
-
-const CloseButton = props => (
+interface CloseButtonProps extends HTMLAttributes<HTMLButtonElement> {
+  onClick: (evt?: React.MouseEvent) => void
+  appearance: ValueOf<typeof vars.appearances>
+}
+const CloseButton: React.FC<CloseButtonProps> = props => (
   <button
-    {...styles.close(props)}
-    onClick={props.onClose}
+    {...styles.close(props.appearance)}
+    onClick={props.onClick}
     aria-label="Close tooltip"
   >
     <svg
@@ -54,32 +70,52 @@ const CloseButton = props => (
     </svg>
   </button>
 )
-CloseButton.propTypes = {
-  onClose: PropTypes.func.isRequired
+
+interface TooltipStatics {
+  appearances: typeof vars.appearances
+  tailPositions: typeof vars.tailPositions
 }
 
-const Tooltip = React.forwardRef((props, ref) => {
-  return (
-    <div {...styles.tooltip(props)} {...filterReactProps(props)} ref={ref}>
-      {typeof props.onClose === 'function' && (
-        <CloseButton appearance={props.appearance} onClose={props.onClose} />
-      )}
-      {props.children}
-      {props.tailPosition && <div {...styles.tail(props)} aria-hidden />}
-    </div>
-  )
-})
+interface TooltipProps extends HTMLAttributes<HTMLDivElement> {
+  appearance?: ValueOf<typeof vars.appearances>
+  children: React.ReactNode
+  onClose?: (evt?: React.MouseEvent) => void
+  tailPosition?: ValueOf<typeof vars.tailPositions>
+}
+
+interface TooltipComponent
+  extends RefForwardingComponent<
+    TooltipProps,
+    HTMLDivElement,
+    TooltipStatics
+  > {}
+
+const Tooltip = React.forwardRef(
+  (
+    {
+      appearance = vars.appearances.basic,
+      tailPosition,
+      children,
+      onClose,
+      ...rest
+    },
+    ref
+  ) => {
+    return (
+      <div {...styles.tooltip({ appearance, onClose })} {...rest} ref={ref}>
+        {typeof onClose === 'function' && (
+          <CloseButton appearance={appearance} onClick={onClose} />
+        )}
+        {children}
+        {tailPosition && (
+          <div {...styles.tail({ appearance, tailPosition })} aria-hidden />
+        )}
+      </div>
+    )
+  }
+) as TooltipComponent
 
 Tooltip.displayName = 'Tooltip'
-Tooltip.defaultProps = {
-  appearance: vars.appearances.basic
-}
-Tooltip.propTypes = {
-  appearance: PropTypes.oneOf(Object.keys(vars.appearances)),
-  children: PropTypes.node.isRequired,
-  onClose: PropTypes.func,
-  tailPosition: PropTypes.oneOf(Object.keys(vars.tailPositions))
-}
 
 Tooltip.appearances = vars.appearances
 Tooltip.tailPositions = vars.tailPositions

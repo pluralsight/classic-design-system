@@ -37,7 +37,7 @@ export default {
     '100%': { transform: 'translateY(0)', opacity: 1 }
   },
 
-  '.psds-tooltip': ({ fade }) => ({
+  '.psds-tooltip': ({ fade }: { fade: string }) => ({
     position: 'relative',
     display: 'inline-block',
     maxWidth: '320px',
@@ -179,9 +179,9 @@ export default {
   }
 }
 
-function getDiamondHeight(height, width) {
-  height = parseInt(height, 10)
-  width = parseInt(width, 10)
+function getDiamondHeight(height: string | number, width: string | number) {
+  height = parseInt(height as string, 10)
+  width = parseInt(width as string, 10)
 
   return (
     Math.sqrt(
@@ -191,9 +191,9 @@ function getDiamondHeight(height, width) {
   )
 }
 
-function getDiamondWidth(height, width) {
-  height = parseInt(height, 10)
-  width = parseInt(width, 10)
+function getDiamondWidth(height: string | number, width: string | number) {
+  height = parseInt(height as string, 10)
+  width = parseInt(width as string, 10)
 
   return (
     Math.sqrt(
