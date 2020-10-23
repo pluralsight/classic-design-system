@@ -1389,39 +1389,6 @@ exports[`Storyshots whitelist name 1`] = `
 </div>
 `;
 
-exports[`Storyshots whitelist onChange 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-ydex85=""
-        >
-          <input
-            data-css-zjzpem=""
-            disabled={false}
-            onChange={[Function]}
-            placeholder="Change me"
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
 exports[`Storyshots whitelist title 1`] = `
 <div
   style={
@@ -1512,6 +1479,44 @@ exports[`Storyshots whitelist type=password 1`] = `
             disabled={false}
             placeholder="Password"
             type="password"
+          />
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots whitelist value 1`] = `
+<div
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Email address
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ydex85=""
+        >
+          <input
+            data-css-zjzpem=""
+            disabled={false}
+            type="email"
+            value="steve@example.com"
           />
         </div>
       </div>
