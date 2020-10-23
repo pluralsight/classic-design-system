@@ -98,15 +98,16 @@ export interface DialogComponent
 const Dialog = React.forwardRef(
   (
     {
+      children,
       disableCloseButton = false,
       disableCloseOnEscape = false,
       disableCloseOnOverlayClick = false,
       disableFocusOnMount = false,
+      onClose,
       modal = false,
       returnFocus = true,
-      UNSAFE_stylesFor,
       tailPosition,
-      onClose,
+      UNSAFE_stylesFor,
       ...rest
     }: DialogProps,
     ref

@@ -1,4 +1,4 @@
-export function stylesFor(selectorKey: string, props: Props) {
+export function stylesFor(selectorKey: string, props: StylesForProps) {
   return (
     (props &&
       props.UNSAFE_stylesFor &&
