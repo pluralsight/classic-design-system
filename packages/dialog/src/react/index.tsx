@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { compose, css, keyframes } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 
@@ -52,11 +53,15 @@ interface OverlayProps extends HTMLAttributes<HTMLDivElement> {
   onClose?: (evt: React.MouseEvent) => void
 }
 
-const Overlay: React.FC<OverlayProps> = props => {
+const Overlay: React.FC<OverlayProps> = ({
+  disableCloseOnOverlayClick,
+  onClose,
+  ...props
+}) => {
   function handleOverlayClick(evt: React.MouseEvent) {
-    if (props.disableCloseOnOverlayClick) return
+    if (disableCloseOnOverlayClick) return
     if ((evt.target as HTMLDivElement).id === MODAL_OVERLAY_ID)
-      props.onClose && props.onClose(evt)
+      onClose && onClose(evt)
   }
 
   return (
@@ -99,23 +104,26 @@ const Dialog = React.forwardRef(
       disableFocusOnMount = false,
       modal = false,
       returnFocus = true,
+      UNSAFE_stylesFor,
+      tailPosition,
+      onClose,
       ...rest
     }: DialogProps,
     ref
   ) => {
     const autofocus = !disableFocusOnMount
-    const trapped = !!modal || !!rest.onClose
-    const closeOnEscape = isFunction(rest.onClose) && !disableCloseOnEscape
+    const trapped = !!modal || !!onClose
+    const closeOnEscape = isFunction(onClose) && !disableCloseOnEscape
 
     // TODO: combine fns
     function handleKeyUp(evt: React.KeyboardEvent) {
       if (!isEscape(evt)) return
-      rest.onClose && rest.onClose(evt)
+      onClose && onClose(evt)
     }
 
     const content = (
       <FocusManager
-        {...styles.dialog(modal, rest.tailPosition)}
+        {...styles.dialog(modal, tailPosition)}
         {...rest}
         {...(closeOnEscape && { onKeyUp: handleKeyUp })}
         {...(modal && { 'aria-label': undefined })}
@@ -127,16 +135,15 @@ const Dialog = React.forwardRef(
         <Theme name={Theme.names.light}>
           <div
             {...styles.content(
-              // eslint-disable-next-line camelcase
-              rest.UNSAFE_stylesFor?.dialog__content as Record<string, unknown>
+              UNSAFE_stylesFor?.dialog__content as Record<string, unknown>
             )}
           >
-            {!disableCloseButton && isFunction(rest.onClose) && (
+            {!disableCloseButton && isFunction(onClose) && (
               // eslint-disable-next-line react/jsx-handler-names
-              <CloseButton onClick={rest.onClose} />
+              <CloseButton onClick={onClose} />
             )}
 
-            {rest.children}
+            {children}
           </div>
         </Theme>
       </FocusManager>
@@ -147,7 +154,7 @@ const Dialog = React.forwardRef(
         aria-label={rest['aria-label']}
         disableCloseOnOverlayClick={disableCloseOnOverlayClick}
         // eslint-disable-next-line react/jsx-handler-names
-        onClose={rest.onClose}
+        onClose={onClose}
       >
         {content}
       </Overlay>
