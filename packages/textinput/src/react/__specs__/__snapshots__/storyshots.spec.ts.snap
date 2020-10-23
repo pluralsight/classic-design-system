@@ -24,7 +24,6 @@ exports[`Storyshots after field w/icon 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="Some placeholder"
-            size="medium"
           />
           <div
             data-css-7dab2f=""
@@ -70,7 +69,6 @@ exports[`Storyshots appearance default medium w/ iconAlign left 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="The placeholder "
-            size="medium"
           />
         </div>
       </div>
@@ -122,7 +120,6 @@ exports[`Storyshots appearance default medium w/ iconAlign right 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="The placeholder "
-            size="medium"
           />
         </div>
       </div>
@@ -174,7 +171,6 @@ exports[`Storyshots appearance default small w/ iconAlign left 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="The placeholder "
-            size="small"
           />
         </div>
       </div>
@@ -226,7 +222,6 @@ exports[`Storyshots appearance default small w/ iconAlign right 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="The placeholder "
-            size="small"
           />
         </div>
       </div>
@@ -282,7 +277,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
           <input
             data-css-zjzpem=""
             disabled={false}
-            size="medium"
           />
         </div>
       </div>
@@ -334,7 +328,6 @@ exports[`Storyshots appearance small 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="small input"
-            size="small"
           />
         </div>
       </div>
@@ -367,7 +360,6 @@ exports[`Storyshots appearance subtle medium w/ iconAlign left 1`] = `
             data-css-r9d4vy=""
             disabled={false}
             placeholder="The placeholder "
-            size="medium"
           />
         </div>
       </div>
@@ -419,7 +411,6 @@ exports[`Storyshots appearance subtle medium w/ iconAlign right 1`] = `
             data-css-r9d4vy=""
             disabled={false}
             placeholder="The placeholder "
-            size="medium"
           />
         </div>
       </div>
@@ -471,7 +462,6 @@ exports[`Storyshots appearance subtle small w/ iconAlign left 1`] = `
             data-css-r9d4vy=""
             disabled={false}
             placeholder="The placeholder "
-            size="small"
           />
         </div>
       </div>
@@ -523,7 +513,6 @@ exports[`Storyshots appearance subtle small w/ iconAlign right 1`] = `
             data-css-r9d4vy=""
             disabled={false}
             placeholder="The placeholder "
-            size="small"
           />
         </div>
       </div>
@@ -579,7 +568,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           <input
             data-css-r9d4vy=""
             disabled={false}
-            size="medium"
           />
         </div>
       </div>
@@ -637,7 +625,6 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-zjzpem=""
               disabled={false}
               placeholder="I'm normal, see"
-              size="medium"
             />
           </div>
         </div>
@@ -669,7 +656,6 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-zjzpem=""
               disabled={true}
               placeholder="I'm untouchable"
-              size="medium"
             />
           </div>
         </div>
@@ -701,7 +687,6 @@ exports[`Storyshots disabled compare 1`] = `
               data-css-zjzpem=""
               disabled={true}
               placeholder="I'm untouchable"
-              size="medium"
             />
           </div>
         </div>
@@ -764,7 +749,6 @@ exports[`Storyshots labels all 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="Some placeholder"
-            size="medium"
           />
         </div>
       </div>
@@ -807,7 +791,6 @@ exports[`Storyshots labels all w/error 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="Some placeholder"
-            size="medium"
           />
         </div>
       </div>
@@ -868,7 +851,6 @@ exports[`Storyshots labels label 1`] = `
           <input
             data-css-zjzpem=""
             disabled={false}
-            size="medium"
           />
         </div>
       </div>
@@ -905,7 +887,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
           <input
             data-css-zjzpem=""
             disabled={false}
-            size="medium"
           />
         </div>
       </div>
@@ -948,7 +929,11 @@ exports[`Storyshots labels long placeholder 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="some placeholder that goes on forever when the little things can't handle it"
-            size="medium"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
           />
         </div>
       </div>
@@ -980,7 +965,6 @@ exports[`Storyshots labels none 1`] = `
           <input
             data-css-zjzpem=""
             disabled={false}
-            size="medium"
           />
         </div>
       </div>
@@ -1013,7 +997,6 @@ exports[`Storyshots labels placeholder 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="some placeholder"
-            size="medium"
           />
         </div>
       </div>
@@ -1045,7 +1028,6 @@ exports[`Storyshots labels subLabel 1`] = `
           <input
             data-css-zjzpem=""
             disabled={false}
-            size="medium"
           />
         </div>
       </div>
@@ -1101,7 +1083,12 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-zjzpem=""
               disabled={false}
-              size="medium"
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
             />
           </div>
         </div>
@@ -1133,7 +1120,12 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-zjzpem=""
               disabled={false}
-              size="medium"
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
             />
           </div>
         </div>
@@ -1184,7 +1176,12 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-r9d4vy=""
               disabled={false}
-              size="medium"
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
             />
           </div>
         </div>
@@ -1216,7 +1213,12 @@ exports[`Storyshots layouts full width 1`] = `
             <input
               data-css-r9d4vy=""
               disabled={false}
-              size="medium"
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
             />
           </div>
         </div>
@@ -1284,7 +1286,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 data-css-r9d4vy=""
                 disabled={false}
                 placeholder="Search"
-                size="medium"
               />
             </div>
           </div>
@@ -1344,9 +1345,9 @@ exports[`Storyshots whitelist className 1`] = `
           data-css-ydex85=""
         >
           <input
+            className="shouldExistOnOneElement"
             data-css-zjzpem=""
             disabled={false}
-            size="medium"
           />
         </div>
       </div>
@@ -1380,7 +1381,6 @@ exports[`Storyshots whitelist name 1`] = `
             disabled={false}
             name="myFieldNameOfPower"
             placeholder="I have a form name"
-            size="medium"
           />
         </div>
       </div>
@@ -1414,7 +1414,6 @@ exports[`Storyshots whitelist onChange 1`] = `
             disabled={false}
             onChange={[Function]}
             placeholder="Change me"
-            size="medium"
           />
         </div>
       </div>
@@ -1446,7 +1445,6 @@ exports[`Storyshots whitelist title 1`] = `
           <input
             data-css-zjzpem=""
             disabled={false}
-            size="medium"
             title="some title"
           />
         </div>
@@ -1480,7 +1478,6 @@ exports[`Storyshots whitelist type=date 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="Date"
-            size="medium"
             type="date"
           />
         </div>
@@ -1514,7 +1511,6 @@ exports[`Storyshots whitelist type=password 1`] = `
             data-css-zjzpem=""
             disabled={false}
             placeholder="Password"
-            size="medium"
             type="password"
           />
         </div>

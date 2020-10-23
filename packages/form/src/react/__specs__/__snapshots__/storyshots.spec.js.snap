@@ -263,7 +263,12 @@ exports[`Storyshots Sample Form null children 1`] = `
                   data-css-zjzpem=""
                   disabled={false}
                   placeholder="What's your name?"
-                  size="medium"
+                  style={
+                    Object {
+                      "maxWidth": "none",
+                      "width": "100%",
+                    }
+                  }
                 />
               </div>
             </div>
@@ -300,7 +305,12 @@ exports[`Storyshots Sample Form null children 1`] = `
                   data-css-zjzpem=""
                   disabled={false}
                   placeholder="Do you have a nick name?"
-                  size="medium"
+                  style={
+                    Object {
+                      "maxWidth": "none",
+                      "width": "100%",
+                    }
+                  }
                 />
               </div>
             </div>
@@ -464,7 +474,12 @@ exports[`Storyshots Sample Form sample 1`] = `
                   data-css-zjzpem=""
                   disabled={false}
                   placeholder="What's your name?"
-                  size="medium"
+                  style={
+                    Object {
+                      "maxWidth": "none",
+                      "width": "100%",
+                    }
+                  }
                 />
               </div>
             </div>
@@ -501,7 +516,12 @@ exports[`Storyshots Sample Form sample 1`] = `
                   data-css-zjzpem=""
                   disabled={false}
                   placeholder="Do you have a nick name?"
-                  size="medium"
+                  style={
+                    Object {
+                      "maxWidth": "none",
+                      "width": "100%",
+                    }
+                  }
                 />
               </div>
             </div>
@@ -542,7 +562,12 @@ exports[`Storyshots Sample Form sample 1`] = `
                 <input
                   data-css-zjzpem=""
                   disabled={false}
-                  size="medium"
+                  style={
+                    Object {
+                      "maxWidth": "none",
+                      "width": "100%",
+                    }
+                  }
                   value="steve@example.com"
                 />
               </div>

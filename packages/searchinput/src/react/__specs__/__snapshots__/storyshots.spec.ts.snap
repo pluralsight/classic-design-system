@@ -19,7 +19,6 @@ exports[`Storyshots SearchInput default 1`] = `
           disabled={false}
           onChange={[Function]}
           placeholder="Search"
-          size="medium"
           type="search"
         />
       </div>
@@ -66,7 +65,6 @@ exports[`Storyshots SearchInput when loading 1`] = `
           disabled={false}
           onChange={[Function]}
           placeholder="Search"
-          size="medium"
           type="search"
         />
       </div>
@@ -135,7 +133,6 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           disabled={false}
           onChange={[Function]}
           placeholder="Le placeholder"
-          size="medium"
           type="search"
         />
         <button
@@ -234,7 +231,6 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           disabled={false}
           onChange={[Function]}
           placeholder="Search"
-          size="medium"
           type="search"
         />
         <button
