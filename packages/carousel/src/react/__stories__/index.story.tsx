@@ -8,13 +8,18 @@ import React from 'react'
 
 import Carousel, { Item } from '..'
 
-interface MockCardProps extends React.ComponentProps<typeof Card> {
+interface MockCardProps
+  extends Omit<
+    React.ComponentProps<typeof Card>,
+    'title' | 'actionBar' | 'image' | 'metadata1'
+  > {
   titleText: string
 }
 const MockCard: React.FC<MockCardProps> = props => {
   const { titleText, ...rest } = props
   return (
     <Card
+      {...rest}
       title={
         <Card.TextLink>
           <a href="#" tabIndex={1}>
@@ -37,7 +42,6 @@ const MockCard: React.FC<MockCardProps> = props => {
           <a href="#">meta</a>
         </Card.TextLink>
       ]}
-      {...rest}
     />
   )
 }
