@@ -1,18 +1,20 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import ErrorPage from './error-page'
 
-const NotFoundErrorPage = props => (
+interface NotFoundErrorPageProps extends HTMLAttributes<HTMLElement> {
+  action?: string
+}
+
+const NotFoundErrorPage: React.FC<NotFoundErrorPageProps> = ({
+  action = '/search'
+}) => (
   <ErrorPage
     iconId="spyglass"
     text="Sorry, the page you are looking for cannot be found. Try checking the URL for errors or search our library."
     code="404"
-    action={props.action || '/search'}
+    action={action}
   />
 )
-NotFoundErrorPage.propTypes = {
-  action: PropTypes.string
-}
 
 export default NotFoundErrorPage

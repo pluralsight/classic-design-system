@@ -1,14 +1,32 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
-import { css as textStylesheet } from '@pluralsight/ps-design-system-text'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  css as textStylesheet,
+  headingSizes
+} from '@pluralsight/ps-design-system-text'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
-const rmChildren = ({ children, ...rest }) => rest
+const rmChildren = ({
+  children,
+  ...rest
+}: {
+  children?: React.ReactNode
+  rest?: Record<string, unknown>
+}) => rest
 
 const styles = {
-  text: ({ size, themeName }) =>
+  text: ({
+    size,
+    themeName
+  }: {
+    size: ValueOf<typeof headingSizes>
+    themeName: ValueOf<typeof themeNames>
+  }) =>
     compose(
       css(textStylesheet['.psds-text__heading']),
       css(textStylesheet[`.psds-text__heading.psds-theme--${themeName}`]),
@@ -21,17 +39,20 @@ const styles = {
     )
 }
 
-const Heading = props => {
-  const themeName = useTheme()
-
-  return React.cloneElement(React.Children.only(props.children), {
-    ...rmChildren(props),
-    ...styles.text({ ...props, themeName })
-  })
+export interface HeadingProps extends HTMLAttributes<HTMLElement> {
+  size: ValueOf<typeof headingSizes>
 }
 
-Heading.propTypes = {
-  themeName: PropTypes.string
+const Heading: React.FC<HeadingProps> = ({ size, ...props }) => {
+  const themeName = useTheme()
+
+  return React.cloneElement(
+    React.Children.only(props.children as React.ReactElement),
+    {
+      ...rmChildren(props),
+      ...styles.text({ size, themeName })
+    }
+  )
 }
 
 export default Heading
