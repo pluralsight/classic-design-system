@@ -193,9 +193,12 @@ const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
   <div {...styles.tag()} {...rest}>
     {icon && (
       <div {...styles.tagIcon()}>
-        {React.cloneElement(icon as React.ReactElement<any>, {
-          size: iconSizes.small
-        })}
+        {
+          /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
+          React.cloneElement(icon as React.ReactElement<any>, {
+            size: iconSizes.small
+          })
+        }
       </div>
     )}
 
