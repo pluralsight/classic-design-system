@@ -11,31 +11,36 @@ import { BelowRight } from '@pluralsight/ps-design-system-position'
 
 import Carousel from '../index.js'
 
-const MockCard = props => (
-  <Card
-    title={
-      <Card.TextLink>
-        <a href="#" tabIndex={1}>
-          <Card.Title>{props.titleText}</Card.Title>
-        </a>
-      </Card.TextLink>
-    }
-    actionBar={[
-      <Card.Action
-        key="bookmark"
-        icon={<Icon.BookmarkIcon />}
-        title="Bookmark"
-      />
-    ]}
-    image={<Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />}
-    metadata1={[
-      <Card.TextLink>
-        <a href="#">meta</a>
-      </Card.TextLink>
-    ]}
-    {...props}
-  />
-)
+const MockCard = props => {
+  const { titleText, ...rest } = props
+  return (
+    <Card
+      title={
+        <Card.TextLink>
+          <a href="#" tabIndex={1}>
+            <Card.Title>{props.titleText}</Card.Title>
+          </a>
+        </Card.TextLink>
+      }
+      actionBar={[
+        <Card.Action
+          key="bookmark"
+          icon={<Icon.BookmarkIcon />}
+          title="Bookmark"
+        />
+      ]}
+      image={
+        <Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />
+      }
+      metadata1={[
+        <Card.TextLink>
+          <a href="#">meta</a>
+        </Card.TextLink>
+      ]}
+      {...rest}
+    />
+  )
+}
 MockCard.propTypes = {
   titleText: PropTypes.string.isRequired
 }

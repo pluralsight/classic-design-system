@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Collapsible from '../index.js'
+import Collapsible from '..'
 
 describe('Collapsible', () => {
   it('isOpen toggles open/closed', () => {
@@ -11,13 +11,16 @@ describe('Collapsible', () => {
       </Collapsible>
     )
     const wrapper = container.querySelector('[aria-hidden]')
+
     expect(wrapper).toHaveAttribute('aria-hidden', 'false')
     expect(wrapper).toHaveStyle(`height: auto`)
+
     rerender(
       <Collapsible isOpen={false}>
         <div>content</div>
       </Collapsible>
     )
+
     expect(wrapper).toHaveAttribute('aria-hidden', 'true')
     expect(wrapper).toHaveStyle(`height: 0`)
   })
