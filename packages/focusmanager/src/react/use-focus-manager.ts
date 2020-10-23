@@ -32,9 +32,7 @@ export default function useFocusManager(
     prevActiveElRef.current = document.activeElement
   }, [])
 
-  const [node, setNode] = React.useState(
-    (null as unknown) as HTMLDivElement | null
-  )
+  const [node, setNode] = React.useState<HTMLDivElement | null>(null)
   React.useEffect(() => {
     setNode(ref.current)
   }, [ref])
