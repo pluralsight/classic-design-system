@@ -40,7 +40,7 @@ export default function useFocusManager(
     setNode(ref.current)
   }, [ref])
 
-  const [focusableNodes, setFocusableEls] = React.useState([] as HTMLElement[])
+  const [focusableNodes, setFocusableEls] = React.useState<HTMLElement[]>([])
   const firstNode = React.useMemo(() => focusableNodes[0], [focusableNodes])
   const lastNode = React.useMemo(
     () => focusableNodes[focusableNodes.length - 1],
