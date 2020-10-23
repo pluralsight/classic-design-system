@@ -22,7 +22,6 @@
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
-  "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {

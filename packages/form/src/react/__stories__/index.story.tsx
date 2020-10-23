@@ -17,7 +17,7 @@ import * as Text from '@pluralsight/ps-design-system-text'
 import TextArea from '@pluralsight/ps-design-system-textarea'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 
-import Form from '../index.js'
+import Form from '..'
 
 const PaddingDecorator = storyFn => (
   <div style={{ padding: core.layout.spacingLarge, width: '50%' }}>

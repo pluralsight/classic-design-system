@@ -2,7 +2,7 @@ import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React, { Children, isValidElement } from 'react'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   layout: _ => css(stylesheet['.psds-form-vertical-layout']),

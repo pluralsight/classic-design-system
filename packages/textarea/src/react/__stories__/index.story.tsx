@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import TextInput from '../index.js'
+import TextInput from '..'
 
 storiesOf('labels', module)
   .add('none', _ => <TextInput />)

@@ -2,8 +2,8 @@ import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
 const styles = {
   buttonRow: props =>

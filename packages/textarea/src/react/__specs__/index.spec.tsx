@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import TextArea from '../index.js'
+import TextArea from '..'
 
 describe('TextArea', () => {
   it('renders', () => {

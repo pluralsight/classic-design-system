@@ -28,7 +28,7 @@ export default {
     fontSize: type.fontSizeSmall,
     lineHeight: type.lineHeightStandard,
     fontWeight: type.fontWeightBook,
-    color: colorsTextIcon.HighOnLight,
+    color: colorsTextIcon.highOnLight,
     padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
     border: `1px solid ${colorsBorder.lowOnDark}`,
 

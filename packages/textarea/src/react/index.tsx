@@ -8,7 +8,7 @@ import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const calcRowsPxHeight = rows => {
   const int = varVal => parseInt(varVal.replace('px', ''), 10)
