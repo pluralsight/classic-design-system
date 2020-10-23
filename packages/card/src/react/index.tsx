@@ -1,6 +1,6 @@
 import polyfillFocusWithin from 'focus-within'
 
-import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
+import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import {
   names as themeNames,
   useTheme
@@ -133,7 +133,7 @@ const styles = {
 
 interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean
-  icon?: React.ReactElement // TODO: retype as Icon when it's TS
+  icon?: React.ReactElement<typeof Icon>
   title: string
 }
 interface ActionBarActionStatics {}
@@ -187,13 +187,15 @@ const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
 ImageLink.displayName = 'Card.ImageLink'
 
 interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
-  icon?: React.ReactElement // TODO: Icon when Icon is TS
+  icon?: React.ReactElement<typeof Icon>
 }
 const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
   <div {...styles.tag()} {...rest}>
     {icon && (
       <div {...styles.tagIcon()}>
-        {React.cloneElement(icon, { size: iconSizes.small })}
+        {React.cloneElement(icon as React.ReactElement<any>, {
+          size: iconSizes.small
+        })}
       </div>
     )}
 
