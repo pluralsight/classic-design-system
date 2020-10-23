@@ -17,11 +17,14 @@ const styles = {
 export interface ButtonRowStatics {
   aligns: typeof vars.aligns
 }
-export interface ButtonRowProps extends HTMLAttributes<HTMLDivElement>{
+export interface ButtonRowProps extends HTMLAttributes<HTMLDivElement> {
   align?: ValueOf<typeof vars.aligns>
 }
 
-const ButtonRow: React.FC<ButtonRowProps>  & ButtonRowStatics = ({align = vars.aligns.left, children}) => (
+const ButtonRow: React.FC<ButtonRowProps> & ButtonRowStatics = ({
+  align = vars.aligns.left,
+  children
+}) => (
   <div {...styles.buttonRow(align)}>
     {React.Children.map(children, button => (
       <div {...styles.button()}>{button}</div>

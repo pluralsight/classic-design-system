@@ -8,7 +8,10 @@ const styles = {
   child: () => css(stylesheet['.psds-form-vertical-layout__child'])
 }
 
-const VerticalLayout: React.FC<HTMLAttributes<HTMLDivElement>> = ({ style, ...props}) => {
+const VerticalLayout: React.FC<HTMLAttributes<HTMLDivElement>> = ({
+  style,
+  ...props
+}) => {
   const children = Children.toArray(props.children).filter(child =>
     isValidElement(child)
   )
