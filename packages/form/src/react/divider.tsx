@@ -1,27 +1,23 @@
 import { css } from 'glamor'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { useTheme, names as themNames } from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
 const styles = {
-  divider: ({ themeName }) =>
+  divider: (themeName: ValueOf<typeof themNames>) =>
     css(
       stylesheet['.psds-form-divider'],
       stylesheet[`.psds-form-divider.psds-theme--${themeName}`]
     )
 }
 
-const Divider = props => {
+const Divider: React.FC = () => {
   const themeName = useTheme()
 
   return (
-    <div
-      {...styles.divider({
-        ...props,
-        themeName
-      })}
-    />
+    <div{...styles.divider(themeName)} />
   )
 }
 Divider.displayName = 'Divider'

@@ -353,10 +353,9 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-ctre2o=""
             >
               <textarea
-                data-css-dpjpe2=""
+                data-css-6488b4=""
                 disabled={false}
                 placeholder="Anything else to report?"
-                rows={4}
                 style={
                   Object {
                     "height": 112,
@@ -677,7 +676,6 @@ exports[`Storyshots Sample Form sample 1`] = `
         <div
           style={
             Object {
-              "display": "flex",
               "maxWidth": "none",
               "width": "100%",
             }
@@ -1076,10 +1074,9 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-ctre2o=""
             >
               <textarea
-                data-css-dpjpe2=""
+                data-css-6488b4=""
                 disabled={false}
                 placeholder="Anything else to report?"
-                rows={4}
                 style={
                   Object {
                     "height": 112,

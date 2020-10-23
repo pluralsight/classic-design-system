@@ -1,25 +1,24 @@
 import { css } from 'glamor'
-import PropTypes from 'prop-types'
-import React, { Children, isValidElement } from 'react'
+import React, { Children, isValidElement, HTMLAttributes } from 'react'
 
 import stylesheet from '../css'
 
 const styles = {
-  layout: _ => css(stylesheet['.psds-form-vertical-layout']),
-  child: _ => css(stylesheet['.psds-form-vertical-layout__child'])
+  layout: () => css(stylesheet['.psds-form-vertical-layout']),
+  child: () => css(stylesheet['.psds-form-vertical-layout__child'])
 }
 
-const VerticalLayout = props => {
+const VerticalLayout: React.FC<HTMLAttributes<HTMLDivElement>> = ({ style, ...props}) => {
   const children = Children.toArray(props.children).filter(child =>
     isValidElement(child)
   )
 
   return (
-    <div {...styles.layout(props)}>
+    <div {...styles.layout()}>
       {children.map((child, i) => (
-        <div key={i} {...styles.child(props)}>
-          {React.cloneElement(child, {
-            style: { ...child.props.style, width: '100%', maxWidth: 'none' }
+        <div key={i} {...styles.child()}>
+          {React.cloneElement(child as React.ReactElement, {
+            style: { ...style, width: '100%', maxWidth: 'none' }
           })}
         </div>
       ))}
@@ -28,11 +27,5 @@ const VerticalLayout = props => {
 }
 
 VerticalLayout.displayName = 'VerticalLayout'
-VerticalLayout.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ])
-}
 
 export default VerticalLayout

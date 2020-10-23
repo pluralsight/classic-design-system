@@ -1,34 +1,34 @@
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
 
 const styles = {
-  buttonRow: props =>
+  buttonRow: (align: string) =>
     css(
       stylesheet['.psds-form-button-row'],
-      stylesheet[`.psds-form-button-row--align-${props.align}`]
+      stylesheet[`.psds-form-button-row--align-${align}`]
     ),
-  button: _ => css(stylesheet['.psds-form-button-row__button'])
+  button: () => css(stylesheet['.psds-form-button-row__button'])
 }
 
-const ButtonRow = (props, context) => (
-  <div {...styles.buttonRow(props)}>
-    {React.Children.map(props.children, (button, i) => (
-      <div {...styles.button(props)}>{button}</div>
+export interface ButtonRowStatics {
+  aligns: typeof vars.aligns
+}
+export interface ButtonRowProps extends HTMLAttributes<HTMLDivElement>{
+  align?: ValueOf<typeof vars.aligns>
+}
+
+const ButtonRow: React.FC<ButtonRowProps>  & ButtonRowStatics = ({align = vars.aligns.left, children}) => (
+  <div {...styles.buttonRow(align)}>
+    {React.Children.map(children, button => (
+      <div {...styles.button()}>{button}</div>
     ))}
   </div>
 )
 ButtonRow.displayName = 'ButtonRow'
-ButtonRow.propTypes = {
-  align: PropTypes.oneOf(Object.keys(vars.aligns).map(k => vars.aligns[k])),
-  children: PropTypes.node
-}
-ButtonRow.defaultProps = {
-  align: vars.aligns.left
-}
 
 ButtonRow.aligns = vars.aligns
 
