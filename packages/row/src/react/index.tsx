@@ -1,63 +1,72 @@
-import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React, { useState } from 'react'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import {
-  withTheme,
-  names as themeNames
+  names as themeNames,
+  useTheme
 } from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React, {
+  Children,
+  FocusEventHandler,
+  HTMLAttributes,
+  ReactElement,
+  ReactNode,
+  cloneElement,
+  isValidElement,
+  useState
+} from 'react'
 
-import stylesheet from '../css/index.js'
-import { toPercentageString } from '../js/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import { toPercentageString, isString } from '../js'
+import * as vars from '../vars'
 
-import ConditionalWrap from './conditional-wrap.js'
-import Shave from './shave.js'
-import useMatchMedia from './use-match-media.js'
-
-const formatImageWidth = ({ image, size }) =>
-  image && size !== vars.sizes.small
-    ? `(${vars.style.overlaysWidth} + ${vars.style.overlaysMarginRight})`
-    : `0px`
-
-const formatActionBarWidth = ({ actionBar }) =>
-  Array.isArray(actionBar) && actionBar.length > 1
-    ? `(${actionBar.length} * ${vars.style.actionBarActionWidth} + ${actionBar.length} * ${vars.style.actionBarActionMarginLeft})`
-    : '0px'
+import ConditionalWrap from './conditional-wrap'
+import Shave from './shave'
+import { useMatchMedia } from './use-match-media'
 
 const styles = {
-  actionBar: ({ actionBarVisible: visible, fullOverlay }) =>
+  actionBar: (props: ActionBarProps) =>
     compose(
       css(stylesheet['.psds-row__action-bar']),
-      fullOverlay && css(stylesheet['.psds-row__action-bar--fullOverlay']),
-      visible && css(stylesheet['.psds-row__action-bar--actionBarVisible'])
+      !!props.fullOverlay &&
+        css(stylesheet['.psds-row__action-bar--fullOverlay']),
+      props.actionBarVisible &&
+        css(stylesheet['.psds-row__action-bar--actionBarVisible'])
     ),
-  fullOverlay: ({ fullOverlayVisible: visible, isFocused }) =>
+
+  fullOverlay: (props: FullOverlayProps) =>
     compose(
       css(stylesheet['.psds-row__full-overlay']),
-      isFocused && css(stylesheet['.psds-row__full-overlay--isFocused']),
-      visible && css(stylesheet['.psds-row__full-overlay--fullOverlayVisible'])
+      props.isFocused && css(stylesheet['.psds-row__full-overlay--isFocused']),
+      props.fullOverlayVisible &&
+        css(stylesheet['.psds-row__full-overlay--fullOverlayVisible'])
     ),
-  fullOverlayLink: props => css(stylesheet['.psds-row__full-overlay-link']),
-  image: props =>
+
+  fullOverlayLink: () => css(stylesheet['.psds-row__full-overlay-link']),
+
+  image: (props: ImageProps) =>
     compose(
       css(stylesheet['.psds-row__image']),
       css({ backgroundImage: `url(${props.src})` })
     ),
+
   imageLink: () => css(stylesheet['.psds-row__image-link']),
-  metadata: props =>
+
+  metadata: (themeName: ValueOf<typeof themeNames>, props: MetadataProps) =>
     compose(
       css(stylesheet['.psds-row__metadata']),
-      css(stylesheet[`.psds-row__metadata.psds-theme--${props.themeName}`]),
+      css(stylesheet[`.psds-row__metadata.psds-theme--${themeName}`]),
       css(stylesheet[`.psds-row__metadata--size-${props.size}`])
     ),
+
   metadataDatum: () => css(stylesheet['.psds-row__metadata__datum']),
+
   metadataDot: () => css(stylesheet['.psds-row__metadata__dot']),
+
   overlays: () => css(stylesheet['.psds-row__overlays']),
+
   progress: () => css(stylesheet['.psds-row__progress']),
-  progressBar: props => {
+
+  progressBar: (props: ProgressBarProps) => {
     const percent = toPercentageString(props.progress)
     const complete = percent === '100%'
 
@@ -67,25 +76,29 @@ const styles = {
       css({ width: percent })
     )
   },
-  row: props =>
+
+  row: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-row'],
-      stylesheet[`.psds-row.psds-theme--${props.themeName}`]
+      stylesheet[`.psds-row.psds-theme--${themeName}`]
     ),
-  textLink: props =>
+
+  textLink: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet['.psds-row__text-link']),
-      css(stylesheet[`.psds-row__text-link.psds-theme--${props.themeName}`])
+      css(stylesheet[`.psds-row__text-link.psds-theme--${themeName}`])
     ),
-  title: props =>
+
+  title: (themeName: ValueOf<typeof themeNames>, props: TitleProps) =>
     compose(
       css(stylesheet['.psds-row__title']),
       css(stylesheet[`.psds-row__title--size-${props.size}`]),
-      css(stylesheet[`.psds-row__title.psds-theme--${props.themeName}`])
+      css(stylesheet[`.psds-row__title.psds-theme--${themeName}`])
     ),
-  words: props => {
-    const imgWidth = formatImageWidth(props)
-    const actionBarWidth = formatActionBarWidth(props)
+
+  words: (props: Pick<WordsProps, 'actionBar' | 'image' | 'size'>) => {
+    const imgWidth = formatImageWidth(props.image, props.size)
+    const actionBarWidth = formatActionBarWidth(props.actionBar)
 
     return compose(
       css(stylesheet['.psds-row__words']),
@@ -94,206 +107,143 @@ const styles = {
   }
 }
 
-const ActionBar = props => (
-  <div {...styles.actionBar(props)} {...filterReactProps(props)} />
-)
+const formatImageWidth = (
+  image: unknown,
+  size?: ValueOf<typeof vars.sizes>
+): string => {
+  return image && size !== vars.sizes.small
+    ? `(${vars.style.overlaysWidth} + ${vars.style.overlaysMarginRight})`
+    : `0px`
+}
 
-const FullOverlayFocusManager = ({ fullOverlayVisible, fullOverlay }) => {
-  const [isFocused, setFocused] = useState(false)
+const formatActionBarWidth = (actionBar: unknown): string => {
+  return Array.isArray(actionBar) && actionBar.length > 1
+    ? `(${actionBar.length} * ${vars.style.actionBarActionWidth} + ${actionBar.length} * ${vars.style.actionBarActionMarginLeft})`
+    : '0px'
+}
 
-  const handleFocus = _ => {
-    setFocused(true)
-  }
+type MetadataNode =
+  | string
+  | ReactElement<typeof Text>
+  | ReactElement<typeof TextLink>
 
-  const handleBlur = _ => {
-    setFocused(false)
-  }
+// NOTE: the `title` prop clashes with a native html attr so we're exclude
+//       it from being mistakenly used in any child component
+interface RowProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
+  actionBar?: ReactNode[] // <Button size="small" appearance="secondary" />
+  actionBarVisible?: boolean
+  fullOverlay?: ReactNode | ReactElement<typeof FullOverlayLink>
+  fullOverlayVisible?: boolean
+  image?: ReactElement<typeof Image> | ReactElement<typeof ImageLink>
+  metadata1?: MetadataNode[]
+  metadata2?: MetadataNode[]
+  progress?: number
+  size?: ValueOf<typeof vars.sizes>
+  title?: string | ReactElement<typeof Text> | ReactElement<typeof TextLink>
+  titleTruncated?: boolean
+}
 
-  return fullOverlay ? (
-    <FullOverlay isFocused={isFocused} fullOverlayVisible={fullOverlayVisible}>
-      {React.cloneElement(fullOverlay, {
-        onFocus: handleFocus,
-        onBlur: handleBlur
+interface RowStatics {
+  FullOverlayLink: typeof FullOverlayLink
+  Image: typeof Image
+  ImageLink: typeof ImageLink
+  Text: typeof Text
+  TextLink: typeof TextLink
+  sizes: typeof vars.sizes
+}
+
+const Row: React.FC<RowProps> & RowStatics = props => {
+  const themeName = useTheme()
+
+  const {
+    actionBar,
+    actionBarVisible = false,
+    fullOverlay,
+    fullOverlayVisible = false,
+    image,
+    metadata1,
+    metadata2,
+    progress,
+    size: initialSize,
+    title,
+    titleTruncated,
+    ...rest
+  } = props
+
+  const isDesktop = useMatchMedia('screen and (min-width: 769px)')
+  const size = initialSize || (isDesktop ? vars.sizes.medium : vars.sizes.small)
+
+  return (
+    <div {...styles.row(themeName)} {...rest}>
+      {renderOverlays({
+        fullOverlay,
+        fullOverlayVisible,
+        image,
+        progress,
+        size
       })}
-    </FullOverlay>
-  ) : null
-}
-FullOverlayFocusManager.propTypes = {
-  fullOverlay: PropTypes.node,
-  fullOverlayVisible: PropTypes.bool
-}
 
-const FullOverlay = props => (
-  <div {...styles.fullOverlay(props)} {...filterReactProps(props)} />
-)
+      <Words image={image} size={size} actionBar={actionBar}>
+        <Title size={size} truncated={titleTruncated}>
+          {title}
+        </Title>
 
-const FullOverlayLink = props => (
-  <span
-    {...styles.fullOverlayLink(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-)
-FullOverlayLink.displayName = 'Row.FullOverlayLink'
+        {renderMetaData(metadata1, { size })}
+        {renderMetaData(metadata2, { size })}
+      </Words>
 
-const Image = props => (
-  <div {...styles.image(props)} {...filterReactProps(props)} />
-)
-Image.displayName = 'Row.Image'
-Image.propTypes = { src: PropTypes.string.isRequired }
-
-const ImageLink = props => (
-  <span
-    {...styles.imageLink(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-)
-ImageLink.displayName = 'Row.ImageLink'
-
-const Metadata = withTheme(props => (
-  <div {...styles.metadata(props)} {...filterReactProps(props)} />
-))
-Metadata.propTypes = {
-  size: PropTypes.any
-}
-
-const MetadataDatum = props => (
-  <span
-    {...styles.metadataDatum(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-  />
-)
-
-const MetadataDot = props => (
-  <span
-    {...styles.metadataDot(props)}
-    {...filterReactProps(props, { tagName: 'span' })}
-    aria-hidden
-  >
-    ·
-  </span>
-)
-
-const Overlays = props => (
-  <div {...styles.overlays(props)} {...filterReactProps(props)} />
-)
-
-const Progress = props => (
-  <div {...styles.progress(props)} {...filterReactProps(props)} />
-)
-
-const ProgressBar = props => {
-  const percent = toPercentageString(props.progress)
-
-  return (
-    <div
-      {...styles.progressBar(props)}
-      {...filterReactProps(props)}
-      aria-label={`${percent} complete`}
-    />
-  )
-}
-ProgressBar.propTypes = {
-  progress: PropTypes.number
-}
-
-const Text = props => <span {...filterReactProps(props, { tagName: 'span' })} />
-Text.displayName = 'Row.Text'
-
-const TextLink = withTheme(props => {
-  const { children, truncated } = props
-
-  const anchor = React.Children.only(children)
-  const anchorText = anchor.props.children
-  const childIsString = typeof anchorText === 'string'
-
-  return (
-    <span
-      {...styles.textLink(props)}
-      {...filterReactProps(props, { tagName: 'span' })}
-    >
-      <a {...anchor.props}>
-        <ConditionalWrap
-          shouldWrap={truncated && childIsString}
-          wrapper={c => <Shave lines={2}>{c}</Shave>}
-        >
-          {anchorText}
-        </ConditionalWrap>
-      </a>
-    </span>
-  )
-})
-TextLink.displayName = 'Row.TextLink'
-TextLink.defaultProps = {
-  truncated: false
-}
-TextLink.propTypes = {
-  children: PropTypes.oneOfType([elementOfType('a')]).isRequired,
-  truncated: PropTypes.bool
-}
-
-const Title = withTheme(({ truncated, children, ...rest }) => {
-  const childIsString = typeof children === 'string'
-
-  const wrapAsLink = c => React.cloneElement(c, { truncated })
-  const wrapWithShave = child => (
-    <ConditionalWrap
-      shouldWrap={truncated}
-      wrapper={c => <Shave lines={2}>{c}</Shave>}
-    >
-      {child}
-    </ConditionalWrap>
-  )
-
-  return (
-    <div {...styles.title(rest)} {...filterReactProps(rest)}>
-      {childIsString ? wrapWithShave(children) : wrapAsLink(children)}
+      {renderActionBar({ actionBar, actionBarVisible, fullOverlay })}
     </div>
   )
-})
-Title.defaultProps = {
-  truncated: false
-}
-Title.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, elementOfType(TextLink)]),
-  truncated: PropTypes.bool
 }
 
-const Words = props => (
-  <div {...styles.words(props)} {...filterReactProps(props)} />
-)
-Words.propTypes = {
-  actionBar: PropTypes.any,
-  image: PropTypes.any,
-  size: PropTypes.any
-}
-
-const renderActionBar = props => {
+const renderActionBar = (
+  props: Pick<RowProps, 'actionBar' | 'actionBarVisible' | 'fullOverlay'>
+) => {
   const { actionBar } = props
+
   if (!Array.isArray(actionBar) || actionBar.length === 0) return null
 
   return (
     <ActionBar
       actionBarVisible={props.actionBarVisible}
       fullOverlay={props.fullOverlay}
-      size={props.size}
     >
       {actionBar}
     </ActionBar>
   )
 }
-renderActionBar.propTypes = {
-  actionBar: PropTypes.any,
-  actionBarVisible: PropTypes.any,
-  fullOverlay: PropTypes.any,
-  size: PropTypes.any
+
+const renderOverlays = (
+  props: Pick<
+    RowProps,
+    'fullOverlay' | 'fullOverlayVisible' | 'image' | 'progress' | 'size'
+  >
+) => {
+  if (!props.image || props.size === vars.sizes.small) return null
+
+  return (
+    <Overlays>
+      {renderImage(props)}
+
+      <FullOverlayFocusManager
+        fullOverlayVisible={props.fullOverlayVisible}
+        fullOverlay={props.fullOverlay}
+      />
+
+      {renderProgress({ progress: props.progress })}
+    </Overlays>
+  )
 }
 
-const renderImage = props => props.image || null
-renderImage.propTypes = {
-  image: PropTypes.any
+const renderImage = (props: Pick<RowProps, 'image'>) => {
+  return props.image || null
 }
 
-const renderMetaData = (props, metadata) => {
+const renderMetaData = (
+  metadata: MetadataNode[] | undefined,
+  props: Required<Pick<RowProps, 'size'>>
+) => {
   if (!metadata) return null
 
   return (
@@ -308,32 +258,8 @@ const renderMetaData = (props, metadata) => {
     </Metadata>
   )
 }
-renderMetaData.propTypes = {
-  size: PropTypes.any
-}
 
-const renderOverlays = props => {
-  if (!props.image || props.size === vars.sizes.small) return null
-
-  return (
-    <Overlays size={props.size}>
-      {renderImage(props)}
-      <FullOverlayFocusManager
-        fullOverlayVisible={props.fullOverlayVisible}
-        fullOverlay={props.fullOverlay}
-      />
-      {renderProgress(props)}
-    </Overlays>
-  )
-}
-renderOverlays.propTypes = {
-  fullOverlay: PropTypes.any,
-  fullOverlayVisible: PropTypes.any,
-  image: PropTypes.any,
-  size: PropTypes.any
-}
-
-const renderProgress = props => {
+const renderProgress = (props: Pick<RowProps, 'progress'>) => {
   if (!props.progress) return null
 
   return (
@@ -342,80 +268,211 @@ const renderProgress = props => {
     </Progress>
   )
 }
-renderProgress.propTypes = {
-  progress: PropTypes.any
-}
 
-// NOTE: the `title` prop clashes with a native html attr so we're exclude it
-//       from being mistakenly used in any child component
-const Row = ({ title, titleTruncated, ...props }) => {
-  const isDesktop = useMatchMedia('screen and (min-width: 769px)')
-  if (!props.size) props.size = isDesktop ? vars.sizes.medium : vars.sizes.small
+interface ActionBarProps
+  extends Pick<RowProps, 'actionBarVisible' | 'fullOverlay'> {}
+
+const ActionBar: React.FC<ActionBarProps> = props => {
+  const { actionBarVisible, fullOverlay, ...rest } = props
 
   return (
-    <div {...styles.row(props)} {...filterReactProps(props)}>
-      {renderOverlays(props)}
+    <div {...styles.actionBar({ actionBarVisible, fullOverlay })} {...rest} />
+  )
+}
 
-      <Words image={props.image} size={props.size} actionBar={props.actionBar}>
-        <Title size={props.size} truncated={titleTruncated}>
-          {title}
-        </Title>
+interface FullOverlayFocusManagerProps
+  extends Pick<RowProps, 'fullOverlay' | 'fullOverlayVisible'> {}
 
-        {renderMetaData(props, props.metadata1)}
-        {renderMetaData(props, props.metadata2)}
-      </Words>
+const FullOverlayFocusManager: React.FC<FullOverlayFocusManagerProps> = props => {
+  const { fullOverlayVisible, fullOverlay } = props
 
-      {renderActionBar(props)}
+  const [isFocused, setFocused] = useState(false)
+
+  const handleFocus: FocusEventHandler<HTMLDivElement> = () => {
+    setFocused(true)
+  }
+
+  const handleBlur: FocusEventHandler<HTMLDivElement> = () => {
+    setFocused(false)
+  }
+
+  if (!isValidElement(fullOverlay)) return null
+
+  return (
+    <FullOverlay isFocused={isFocused} fullOverlayVisible={fullOverlayVisible}>
+      {cloneElement(fullOverlay, { onFocus: handleFocus, onBlur: handleBlur })}
+    </FullOverlay>
+  )
+}
+
+interface FullOverlayProps
+  extends HTMLAttributes<HTMLDivElement>,
+    Pick<RowProps, 'fullOverlayVisible'> {
+  isFocused: boolean
+}
+const FullOverlay: React.FC<FullOverlayProps> = props => {
+  const { fullOverlayVisible, isFocused, ...rest } = props
+
+  return (
+    <div {...styles.fullOverlay({ fullOverlayVisible, isFocused })} {...rest} />
+  )
+}
+
+interface FullOverlayLinkProps extends HTMLAttributes<HTMLSpanElement> {}
+const FullOverlayLink: React.FC<FullOverlayLinkProps> = props => {
+  return <span {...styles.fullOverlayLink()} {...props} />
+}
+FullOverlayLink.displayName = 'Row.FullOverlayLink'
+
+interface ImageProps extends HTMLAttributes<HTMLDivElement> {
+  src: string
+}
+const Image: React.FC<ImageProps> = props => {
+  const { src, ...rest } = props
+  return <div {...styles.image({ src })} {...rest} />
+}
+
+Image.displayName = 'Row.Image'
+
+interface ImageLinkProps extends HTMLAttributes<HTMLSpanElement> {}
+const ImageLink: React.FC<ImageLinkProps> = props => {
+  return <span {...styles.imageLink()} {...props} />
+}
+ImageLink.displayName = 'Row.ImageLink'
+
+interface MetadataProps
+  extends HTMLAttributes<HTMLDivElement>,
+    Required<Pick<RowProps, 'size'>> {}
+const Metadata: React.FC<MetadataProps> = props => {
+  const { size, ...rest } = props
+  const themeName = useTheme()
+
+  return <div {...styles.metadata(themeName, { size })} {...rest} />
+}
+
+interface MetadataDatumProps extends HTMLAttributes<HTMLSpanElement> {}
+const MetadataDatum: React.FC<MetadataDatumProps> = props => {
+  return <span {...styles.metadataDatum()} {...props} />
+}
+
+interface MetadataDotProps extends HTMLAttributes<HTMLSpanElement> {}
+const MetadataDot: React.FC<MetadataDotProps> = props => {
+  return (
+    <span {...styles.metadataDot()} {...props} aria-hidden>
+      ·
+    </span>
+  )
+}
+
+interface OverlaysProps extends HTMLAttributes<HTMLDivElement> {}
+const Overlays: React.FC<OverlaysProps> = props => {
+  return <div {...styles.overlays()} {...props} />
+}
+
+interface ProgressProps extends HTMLAttributes<HTMLDivElement> {}
+const Progress: React.FC<ProgressProps> = props => {
+  return <div {...styles.progress()} {...props} />
+}
+
+interface ProgressBarProps
+  extends HTMLAttributes<HTMLDivElement>,
+    Required<Pick<RowProps, 'progress'>> {}
+const ProgressBar: React.FC<ProgressBarProps> = props => {
+  const { progress = 0, ...rest } = props
+  const percent = toPercentageString(progress)
+
+  return (
+    <div
+      {...styles.progressBar({ progress })}
+      {...rest}
+      aria-label={`${percent} complete`}
+    />
+  )
+}
+
+interface TextProps extends HTMLAttributes<HTMLSpanElement> {}
+const Text: React.FC<TextProps> = props => <span {...props} />
+Text.displayName = 'Row.Text'
+
+interface TextLinkProps extends HTMLAttributes<HTMLSpanElement> {
+  children: React.ReactElement<'a'>
+  truncated?: boolean
+}
+const TextLink: React.FC<TextLinkProps> = props => {
+  const { children, truncated = false, ...rest } = props
+  const themeName = useTheme()
+
+  const anchor = Children.only(children)
+  const anchorText = anchor.props.children
+
+  const shouldWrap = truncated && isString(anchorText)
+  const shaveWrap = (child: ReactNode) => {
+    if (!isString(child)) return null
+
+    return <Shave lines={2}>{child}</Shave>
+  }
+
+  return (
+    <span {...styles.textLink(themeName)} {...rest}>
+      <a {...anchor.props}>
+        <ConditionalWrap shouldWrap={shouldWrap} wrapper={shaveWrap}>
+          {anchorText}
+        </ConditionalWrap>
+      </a>
+    </span>
+  )
+}
+TextLink.displayName = 'Row.TextLink'
+
+interface TitleProps
+  extends HTMLAttributes<HTMLDivElement>,
+    Required<Pick<RowProps, 'size'>> {
+  truncated?: boolean
+}
+const Title: React.FC<TitleProps> = props => {
+  const { children, size, truncated = false, ...rest } = props
+  const themeName = useTheme()
+
+  const wrapAsLink = (child: ReactNode) => {
+    if (!isValidElement(child)) return null
+
+    return cloneElement(child, { truncated })
+  }
+
+  const wrapWithShave = (child: ReactNode) => {
+    return (
+      <ConditionalWrap shouldWrap={truncated} wrapper={shaveWrap}>
+        {child}
+      </ConditionalWrap>
+    )
+  }
+  const shaveWrap = (child: ReactNode) => {
+    if (!isString(child)) return null
+    return <Shave lines={2}>{child}</Shave>
+  }
+
+  return (
+    <div {...styles.title(themeName, { size })} {...rest}>
+      {isString(children) ? wrapWithShave(children) : wrapAsLink(children)}
     </div>
   )
 }
 
-Row.propTypes = {
-  actionBar: PropTypes.arrayOf(PropTypes.object), // <Button size="small" appearance="secondary" />
-  actionBarVisible: PropTypes.bool,
-  fullOverlay: PropTypes.oneOfType([
-    PropTypes.element,
-    elementOfType(FullOverlayLink)
-  ]),
-  fullOverlayVisible: PropTypes.bool,
-  image: PropTypes.oneOfType([elementOfType(Image), elementOfType(ImageLink)]),
-  metadata1: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.string,
-      elementOfType(Text),
-      elementOfType(TextLink)
-    ])
-  ),
-  metadata2: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.string,
-      elementOfType(Text),
-      elementOfType(TextLink)
-    ])
-  ),
-  progress: PropTypes.number,
-  size: PropTypes.oneOf(Object.values(vars.sizes)),
-  themeName: PropTypes.oneOf(Object.values(themeNames)),
-  title: PropTypes.oneOfType([
-    PropTypes.string,
-    elementOfType(Text),
-    elementOfType(TextLink)
-  ]),
-  titleTruncated: PropTypes.bool
+interface WordsProps
+  extends Pick<RowProps, 'actionBar' | 'image' | 'size'>,
+    HTMLAttributes<HTMLDivElement> {}
+const Words: React.FC<WordsProps> = props => {
+  const { actionBar, image, size, ...rest } = props
+  return <div {...styles.words({ actionBar, image, size })} {...rest} />
 }
-
-Row.defaultProps = {
-  actionBarVisible: false,
-  fullOverlayVisible: false
-}
-
-Row.sizes = vars.sizes
-export const sizes = Row.sizes
 
 Row.FullOverlayLink = FullOverlayLink
 Row.Image = Image
 Row.ImageLink = ImageLink
 Row.Text = Text
 Row.TextLink = TextLink
+
+Row.sizes = vars.sizes
+export const sizes = Row.sizes
 
 export default Row

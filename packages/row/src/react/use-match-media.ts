@@ -1,22 +1,42 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
+import { canUseEventListeners } from 'exenv'
 
-export default function useMatchMedia(query) {
-  const [matches, setMatches] = useState(false)
+import { useHasMounted } from './use-has-mounted'
+
+export function useMatchMedia(query: string): boolean {
+  const hasMounted = useHasMounted()
+
+  const matcher = useCallback(() => window.matchMedia(query), [query])
+  const [queryList, setQueryList] = useState(matcher)
+
+  const matches = useMatches(queryList)
 
   useEffect(() => {
-    const update = () => {
-      const { matches: nextMatches } = window.matchMedia(query)
-      setMatches(nextMatches)
+    if (!hasMounted) return
+
+    const nextQueryList = matcher()
+
+    setQueryList(nextQueryList)
+  }, [hasMounted, matcher])
+
+  return matches
+}
+
+export function useMatches(queryList: MediaQueryList) {
+  const [matches, setMatches] = useState(queryList.matches)
+
+  useEffect(() => {
+    const updateMatches = () => {
+      setMatches(queryList.matches)
     }
 
-    update()
-
-    window.matchMedia(query).addListener(update)
+    if (canUseEventListeners) queryList.addListener(updateMatches)
+    updateMatches()
 
     return () => {
-      window.matchMedia(query).removeListener(update)
+      if (canUseEventListeners) queryList.removeListener(updateMatches)
     }
-  }, [query])
+  }, [queryList])
 
   return matches
 }

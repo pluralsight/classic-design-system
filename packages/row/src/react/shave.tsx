@@ -1,53 +1,56 @@
-import PropTypes from 'prop-types'
-import React, { useEffect, useRef, useCallback } from 'react'
+import { type } from '@pluralsight/ps-design-system-core'
+import React, { HTMLAttributes, useEffect, useRef, useCallback } from 'react'
 import shave from 'shave'
 
-import { type } from '@pluralsight/ps-design-system-core'
-
-const reset = (children, current) => {
-  if (current) {
-    current.innerHTML = children
-  }
+interface ShaveProps extends HTMLAttributes<HTMLDivElement> {
+  children: string
+  character?: string
+  lineHeight?: number
+  lines?: number
 }
-const Shave = ({ children, lineHeight, lines, character, ...rest }) => {
-  const elRef = useRef()
 
-  useEffect(() => {
-    reset(children, elRef.current)
+const Shave: React.FC<ShaveProps> = props => {
+  const {
+    children,
+    character = '&hellip;',
+    lineHeight = parseInt(type.lineHeightStandard, 10),
+    lines = 3,
+    ...rest
+  } = props
+
+  const ref = useRef<HTMLDivElement>(null)
+
+  const reset = useCallback(() => {
+    if (!ref.current) return
+
+    ref.current.innerHTML = children
   }, [children])
 
   const truncate = useCallback(() => {
+    if (!ref.current) return
+
     const maxHeight = lineHeight * lines
-    shave(elRef.current, maxHeight, { character: character })
+    shave(ref.current, maxHeight, { character })
   }, [lineHeight, lines, character])
+
+  useEffect(() => {
+    reset()
+  }, [reset])
 
   useEffect(() => {
     window.addEventListener('resize', truncate)
     truncate()
 
-    return _ => {
+    return () => {
       window.removeEventListener('resize', truncate)
     }
   }, [truncate])
 
   return (
-    <div ref={elRef} {...rest}>
+    <div ref={ref} {...rest}>
       {children}
     </div>
   )
-}
-
-Shave.defaultProps = {
-  character: '&hellip;',
-  lineHeight: parseInt(type.lineHeightStandard, 10),
-  lines: 3
-}
-
-Shave.propTypes = {
-  character: PropTypes.string,
-  children: PropTypes.string.isRequired,
-  lineHeight: PropTypes.number,
-  lines: PropTypes.number
 }
 
 export default Shave
