@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { fireEvent, render } from '@testing-library/react'
-import SearchInput from '../index.js'
+import SearchInput from '..'
 
 describe('SearchInput', () => {
   it('focuses input when clear button clicked', () => {
