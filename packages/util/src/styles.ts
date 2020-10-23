@@ -8,7 +8,7 @@ export function stylesFor(selectorKey: string, props: Props) {
   )
 }
 
-export interface Props {
+export interface StylesForProps {
   // eslint-disable-next-line camelcase
   UNSAFE_stylesFor?: Record<string, unknown>
 }
