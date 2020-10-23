@@ -1,26 +1,28 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import { layout, type } from '@pluralsight/ps-design-system-core'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
-const calcRowsPxHeight = rows => {
-  const int = varVal => parseInt(varVal.replace('px', ''), 10)
+const calcRowsPxHeight = (rows: React.ReactText) => {
+  const int = (varVal: string) => parseInt(varVal.replace('px', ''), 10)
   return (
     int(layout.spacingXSmall) * 2 +
-    parseInt(rows, 10) * int(type.lineHeightStandard)
+    parseInt(rows as string, 10) * int(type.lineHeightStandard)
   )
 }
 
 const styles = {
-  error: _ => css(stylesheet['.psds-text-area__error']),
-  field: (themeName, { error }) => {
+  error: () => css(stylesheet['.psds-text-area__error']),
+  field: (themeName: ValueOf<typeof themeNames>, error: boolean) => {
     const label = 'psds-text-area__field'
 
     return compose(
@@ -29,9 +31,8 @@ const styles = {
       error && css(stylesheet[`.${label}--error.psds-theme--${themeName}`])
     )
   },
-  fieldContainer: themeName =>
-    css(stylesheet['.psds-text-area__field-container']),
-  textarea: (themeName, { disabled }) => {
+  fieldContainer: () => css(stylesheet['.psds-text-area__field-container']),
+  textarea: (disabled: boolean) => {
     const label = 'psds-text-area'
 
     return compose(
@@ -39,7 +40,7 @@ const styles = {
       disabled && css(stylesheet[`.${label}--disabled`])
     )
   },
-  label: themeName => {
+  label: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-text-area__label'
 
     return compose(
@@ -47,7 +48,7 @@ const styles = {
       css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   },
-  subLabel: themeName => {
+  subLabel: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-text-area__sub-label'
 
     return compose(
@@ -57,57 +58,60 @@ const styles = {
   }
 }
 
-const TextArea = React.forwardRef((props, ref) => {
-  const themeName = useTheme()
-
-  return (
-    <label
-      {...styles.textarea(themeName, props)}
-      {...(props.style ? { style: props.style } : null)}
-      {...(props.className ? { className: props.className } : null)}
-    >
-      {props.label && <div {...styles.label(themeName)}>{props.label}</div>}
-      <div {...styles.fieldContainer(themeName)}>
-        <Halo error={props.error} gapSize={Halo.gapSizes.small}>
-          <textarea
-            {...filterReactProps(props, { tagName: 'textarea' })}
-            {...styles.field(themeName, props)}
-            disabled={props.disabled}
-            placeholder={props.placeholder}
-            ref={ref}
-            style={{ height: calcRowsPxHeight(props.rows) }}
-          />
-        </Halo>
-
-        {props.error && (
-          <div {...styles.error(themeName)}>
-            <WarningIcon />
-          </div>
-        )}
-      </div>
-
-      {props.subLabel && (
-        <div {...styles.subLabel(themeName)}>{props.subLabel}</div>
-      )}
-    </label>
-  )
-})
-
-TextArea.propTypes = {
-  className: PropTypes.string,
-  disabled: PropTypes.bool,
-  error: PropTypes.bool,
-  label: PropTypes.node,
-  placeholder: PropTypes.string,
-  rows: PropTypes.number,
-  style: PropTypes.object,
-  subLabel: PropTypes.node
+export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
+  disabled?: boolean
+  error?: boolean
+  label?: React.ReactNode
+  placeholder?: string
+  rows?: React.ReactText
+  subLabel?: React.ReactNode
+  value?: React.ReactText
+  name?: string
 }
 
-TextArea.defaultProps = {
-  disabled: false,
-  error: false,
-  rows: 4
-}
+const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
+  (
+    {
+      className,
+      disabled = false,
+      error = false,
+      label,
+      placeholder,
+      rows = 4,
+      style,
+      subLabel,
+      ...rest
+    },
+    ref
+  ) => {
+    const themeName = useTheme()
+
+    return (
+      <label {...styles.textarea(disabled)} style={style} className={className}>
+        {label && <div {...styles.label(themeName)}>{label}</div>}
+        <div {...styles.fieldContainer()}>
+          <Halo error={error} gapSize={Halo.gapSizes.small}>
+            <textarea
+              {...rest}
+              {...styles.field(themeName, error)}
+              disabled={disabled}
+              placeholder={placeholder}
+              ref={ref}
+              style={{ height: calcRowsPxHeight(rows) }}
+            />
+          </Halo>
+
+          {error && (
+            <div {...styles.error()}>
+              <WarningIcon />
+            </div>
+          )}
+        </div>
+
+        {subLabel && <div {...styles.subLabel(themeName)}>{subLabel}</div>}
+      </label>
+    )
+  }
+)
 
 export default TextArea

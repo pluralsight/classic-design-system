@@ -11,7 +11,7 @@ describe('TextArea', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLTextAreaElement>()
 
     render(<TextArea ref={ref} />)
 
