@@ -9,6 +9,7 @@ initStoryshots({
   configPath: path.resolve(__dirname, '../../../.storybook'),
   framework: 'react',
 
+  // eslint-disable-next-line
   // @ts-ignore
   test: snapshotWithOptions({ createNodeMock })
 })

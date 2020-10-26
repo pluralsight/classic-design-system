@@ -2,7 +2,11 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  ValueOf,
+  isString,
+  useMatchMedia
+} from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, {
   Children,
@@ -16,12 +20,11 @@ import React, {
 } from 'react'
 
 import stylesheet from '../css'
-import { toPercentageString, isString } from '../js'
+import { toPercentageString } from '../js'
 import * as vars from '../vars'
 
 import ConditionalWrap from './conditional-wrap'
 import Shave from './shave'
-import { useMatchMedia } from './use-match-media'
 
 const styles = {
   actionBar: (props: ActionBarProps) =>
