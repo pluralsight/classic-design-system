@@ -18,11 +18,11 @@ Drawer controls opening and closing by clicking on drawer head analytics callbac
 </Drawer>
 ```
 
-### <Drawer.Head /> 
+### <Drawer.Head />
 
 - Default display is `inline-flex`.
   - To align  child to the right pass it `margin-left: auto` style.
-- Styles can be overridden with inline styles or by passing it a new className. 
+- Styles can be overridden with inline styles or by passing it a new className.
 
 ## Controlled
 Use when there is a need to modify open state or hook into onToggle callback. The new Drawer only takes two props to take control of toggle microinteraction, (**onToggle**, **isOpen**).

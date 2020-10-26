@@ -6,7 +6,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import Row from '../index.js'
+import Row from '..'
 
 const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
   `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
@@ -17,11 +17,14 @@ const longStringsMetaData = [
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
 
-const PlayIcon = () => (
-  <Icon.PlayCircleIcon color={Icon.colors.white} size={Icon.sizes.large} />
+const PlayIcon: React.FC = () => (
+  <Icon.PlayCircleIcon
+    color={Icon.colors.textIconHighOnDark}
+    size={Icon.sizes.large}
+  />
 )
 
-storiesOf('combo', module).add('everything', _ => (
+storiesOf('combo', module).add('everything', () => (
   <Row
     title={
       <Row.TextLink>
@@ -48,8 +51,8 @@ storiesOf('combo', module).add('everything', _ => (
         </a>
       </Row.ImageLink>
     }
-    metadata1={longStringsMetaData.map(str => (
-      <Row.TextLink>
+    metadata1={longStringsMetaData.map((str, i) => (
+      <Row.TextLink key={i}>
         <a href="http://google.com/?query=jaketrent">{str}</a>
       </Row.TextLink>
     ))}
@@ -79,8 +82,8 @@ storiesOf('combo', module).add('everything', _ => (
 ))
 
 const sizeStory = storiesOf('size', module)
-Object.keys(Row.sizes).forEach(size =>
-  sizeStory.add(size, _ => (
+Object.values(Row.sizes).forEach(size =>
+  sizeStory.add(size, () => (
     <Row
       size={size}
       title={`${size} Row`}
@@ -91,8 +94,8 @@ Object.keys(Row.sizes).forEach(size =>
 )
 
 const titleStory = storiesOf('title', module)
-  .add('string', _ => <Row title="A String Title" />)
-  .add('string truncated', _ => (
+  .add('string', () => <Row title="A String Title" />)
+  .add('string truncated', () => (
     <div style={{ maxWidth: 400 }}>
       <Row
         title="We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy."
@@ -100,7 +103,7 @@ const titleStory = storiesOf('title', module)
       />
     </div>
   ))
-  .add('link', _ => (
+  .add('link', () => (
     <Row
       title={
         <Row.TextLink>
@@ -109,7 +112,7 @@ const titleStory = storiesOf('title', module)
       }
     />
   ))
-  .add('link truncated', _ => (
+  .add('link truncated', () => (
     <div style={{ maxWidth: 400 }}>
       <Row
         title={
@@ -127,8 +130,8 @@ const titleStory = storiesOf('title', module)
     </div>
   ))
 
-Object.keys(Row.sizes).forEach(size =>
-  titleStory.add(`${size} long title`, _ => (
+Object.values(Row.sizes).forEach(size =>
+  titleStory.add(`${size} long title`, () => (
     <Row
       size={size}
       title={`${size} With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000`}
@@ -140,7 +143,7 @@ Object.keys(Row.sizes).forEach(size =>
 
 const progressStory = storiesOf('progress', module)
 ;[0, 66.6667, 100].forEach(progress =>
-  progressStory.add(`${progress} progress`, _ => (
+  progressStory.add(`${progress} progress`, () => (
     <Row
       size="medium"
       progress={progress}
@@ -149,7 +152,7 @@ const progressStory = storiesOf('progress', module)
     />
   ))
 )
-progressStory.add(`no image`, _ => (
+progressStory.add('no image', () => (
   <Row
     size="medium"
     progress={55}
@@ -158,14 +161,14 @@ progressStory.add(`no image`, _ => (
 ))
 
 storiesOf('image', module)
-  .add(`with image`, _ => (
+  .add('with image', () => (
     <Row
       title="With Image"
       metadata1={['Jim Cooper']}
       image={<Row.Image src={getImgSrc()} />}
     />
   ))
-  .add(`with image with overlay`, _ => (
+  .add('with image with overlay', () => (
     <Row
       title="With Image"
       metadata1={['Jim Cooper']}
@@ -173,7 +176,7 @@ storiesOf('image', module)
       fullOverlay={<Row.FullOverlayLink>Element</Row.FullOverlayLink>}
     />
   ))
-  .add(`link`, _ => (
+  .add('link', () => (
     <Row
       title="Linked Image"
       image={
@@ -186,35 +189,35 @@ storiesOf('image', module)
       metadata1={['Jim Cooper']}
     />
   ))
-  .add(`wide image`, _ => (
+  .add('wide image', () => (
     <Row
       title="Wide Image"
       image={<Row.Image src={getImgSrc({ w: 350, h: 150 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
-  .add(`tall image`, _ => (
+  .add('tall image', () => (
     <Row
       title="Tall Image"
       image={<Row.Image src={getImgSrc({ w: 200, h: 400 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
-  .add(`small image`, _ => (
+  .add('small image', () => (
     <Row
       title="Small Image"
       image={<Row.Image src={getImgSrc({ w: 30, h: 30 })} />}
       metadata1={['Jim Cooper']}
     />
   ))
-  .add(`no image`, _ => (
+  .add('no image', () => (
     <Row
       title="No Image"
       metadata1={['Jim Cooper']}
       fullOverlay={<Row.FullOverlayLink>Element</Row.FullOverlayLink>}
     />
   ))
-  .add(`no image with overlay`, _ => (
+  .add('no image with overlay', () => (
     <Row
       title="No Image, With Overlay (Not Shown)"
       metadata1={['Jim Cooper']}
@@ -223,33 +226,33 @@ storiesOf('image', module)
   ))
 
 storiesOf('metadata', module)
-  .add('string', _ => (
+  .add('string', () => (
     <Row title="Meta with Strings" metadata1={['Jake Trent']} />
   ))
-  .add('link', _ => (
+  .add('link', () => (
     <Row
       title="Meta With Links"
       metadata1={[
-        <Row.TextLink>
+        <Row.TextLink key="link">
           <a href="http://google.com/?query=jaketrent">Jake Trent</a>
         </Row.TextLink>
       ]}
     />
   ))
-  .add('long strings', _ => (
+  .add('long strings', () => (
     <Row
       title="The Longest Strings in El Mundo"
       metadata1={longStringsMetaData}
     />
   ))
-  .add('long strings with image', _ => (
+  .add('long strings with image', () => (
     <Row
       title="Long Strings AND Los Imagereo"
       image={<Row.Image src={getImgSrc()} />}
       metadata1={longStringsMetaData}
     />
   ))
-  .add('super long first string', _ => (
+  .add('super long first string', () => (
     <Row
       title="Long Strings AND Los Imagereo"
       image={<Row.Image src={getImgSrc()} />}
@@ -260,17 +263,17 @@ storiesOf('metadata', module)
       ]}
     />
   ))
-  .add('long links', _ => (
+  .add('long links', () => (
     <Row
       title="Meta With Links"
-      metadata1={longStringsMetaData.map(str => (
-        <Row.TextLink>
+      metadata1={longStringsMetaData.map((str, i) => (
+        <Row.TextLink key={i}>
           <a href="http://google.com/?query=jaketrent">{str}</a>
         </Row.TextLink>
       ))}
     />
   ))
-  .add('two lines', _ => (
+  .add('two lines', () => (
     <Row
       title="Meta With Links"
       metadata1={['Jake Trent', 'School of the Internet', 'Blasted Good']}
@@ -279,7 +282,7 @@ storiesOf('metadata', module)
   ))
 
 storiesOf('actionBar', module)
-  .add('one action', _ => (
+  .add('one action', () => (
     <Row
       title="Ready, Action, Bar!"
       actionBar={[
@@ -292,7 +295,7 @@ storiesOf('actionBar', module)
       ]}
     />
   ))
-  .add('long title', _ => (
+  .add('long title', () => (
     <Row
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
       actionBar={[
@@ -305,7 +308,7 @@ storiesOf('actionBar', module)
       ]}
     />
   ))
-  .add('long title with image', _ => (
+  .add('long title with image', () => (
     <Row
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
       actionBar={[
@@ -319,7 +322,7 @@ storiesOf('actionBar', module)
       image={<Row.Image src={getImgSrc()} />}
     />
   ))
-  .add('locked visible', _ => (
+  .add('locked visible', () => (
     <Row
       actionBarVisible
       title="Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000"
@@ -336,14 +339,14 @@ storiesOf('actionBar', module)
   ))
 
 storiesOf('fullOverlay', module)
-  .add('element', _ => (
+  .add('element', () => (
     <Row
       title="Overlay This!"
       fullOverlay={<Row.FullOverlayLink>Element</Row.FullOverlayLink>}
       image={<Row.Image src={getImgSrc()} />}
     />
   ))
-  .add('link', _ => (
+  .add('link', () => (
     <Row
       title="Overlay This!"
       fullOverlay={
@@ -354,7 +357,7 @@ storiesOf('fullOverlay', module)
       image={<Row.Image src={getImgSrc()} />}
     />
   ))
-  .add('linked icon', _ => (
+  .add('linked icon', () => (
     <Row
       title="Overlay This!"
       fullOverlay={
@@ -367,7 +370,7 @@ storiesOf('fullOverlay', module)
       image={<Row.Image src={getImgSrc()} />}
     />
   ))
-  .add('linked icon with image link', _ => (
+  .add('linked icon with image link', () => (
     <Row
       title="Both Icon and Image Have Separate Click Targets"
       fullOverlay={
@@ -388,8 +391,8 @@ storiesOf('fullOverlay', module)
   ))
 
 const drawerStory = storiesOf('in drawer', module)
-Object.keys(Row.sizes).forEach(size =>
-  drawerStory.add(size, _ => (
+Object.values(Row.sizes).forEach(size =>
+  drawerStory.add(size, () => (
     <Drawer
       base={
         <Row
@@ -415,7 +418,7 @@ Object.keys(Row.sizes).forEach(size =>
   ))
 )
 
-storiesOf('in a stack', module).add('no top border on first row', _ => (
+storiesOf('in a stack', module).add('no top border on first row', () => (
   <>
     <Row
       title="Course thing you do"

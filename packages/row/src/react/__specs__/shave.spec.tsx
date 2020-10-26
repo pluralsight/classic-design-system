@@ -1,38 +1,29 @@
-import React from 'react'
+import * as core from '@pluralsight/ps-design-system-core'
 import { render } from '@testing-library/react'
+import React from 'react'
 
-import Shave from '../shave.js'
+import Shave from '../shave'
 
 jest.mock('shave')
 
 describe('Shave', () => {
-  let shaveFn
+  let shaveFn: jest.Mock<unknown>
 
   beforeEach(() => {
     shaveFn = require('shave')
   })
 
-  it('has default props', () => {
-    expect(Shave.defaultProps).toMatchInlineSnapshot(`
-Object {
-  "character": "&hellip;",
-  "lineHeight": 24,
-  "lines": 3,
-}
-`)
-  })
-
   it('shaves on initial mount', () => {
-    const { character, lineHeight, lines } = Shave.defaultProps
+    const character = '&hellip;'
+    const lineHeight = parseInt(core.type.lineHeightStandard, 10)
+    const lines = 3
 
     render(<Shave>some text string</Shave>)
 
     expect(shaveFn).toHaveBeenCalledWith(
       expect.anything(),
       lineHeight * lines,
-      {
-        character
-      }
+      { character }
     )
   })
 
@@ -60,7 +51,6 @@ Object {
     render(<Shave>some text string</Shave>)
     shaveFn.mockClear()
 
-    // eslint-disable-next-line
     global.dispatchEvent(new Event('resize'))
 
     expect(shaveFn).toHaveBeenCalled()

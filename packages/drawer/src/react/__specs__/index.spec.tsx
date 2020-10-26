@@ -1,7 +1,7 @@
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
-import Drawer from '../index.js'
+import Drawer from '..'
 
 describe('Drawer', () => {
   describe('when the arrow icons is clicked', () => {
@@ -12,7 +12,7 @@ describe('Drawer', () => {
         </Drawer>
       )
 
-      const btn = container.querySelector('button')
+      const btn = container.querySelector<HTMLButtonElement>('button')!
       const contentWrapper = container.querySelector('[aria-hidden]')
 
       fireEvent.click(btn)
