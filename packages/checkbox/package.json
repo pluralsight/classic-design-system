@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-halo": "^7.1.2"
+    "@pluralsight/ps-design-system-halo": "^7.1.2",
+    "@pluralsight/ps-design-system-util": "^5.4.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

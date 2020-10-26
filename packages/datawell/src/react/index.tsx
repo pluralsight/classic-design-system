@@ -1,11 +1,14 @@
-import { css } from 'glamor'
-import React from 'react'
-import PropTypes from 'prop-types'
-
+// TODO: rm
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React from 'react'
+// TODO: rm
+import PropTypes from 'prop-types'
 
+// TODO: rm ext
 import stylesheet from '../css/index.js'
 
 const styles = {
@@ -31,32 +34,34 @@ const styles = {
     )
 }
 
+interface DataWellProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode
+  label: string
+  subLabel?: React.ReactNode
+}
+
+interface DataWellStatics {}
+
+interface DataWellComponent
+  extends RefForwardingComponent<
+    DataWellProps,
+    HTMLDivElement,
+    DataWellStatics
+  > {}
+
 const DataWell = React.forwardRef((props, ref) => {
   const themeName = useTheme()
 
   return (
-    <div
-      ref={ref}
-      {...styles.dataWell(themeName, props)}
-      {...filterReactProps(props)}
-    >
-      <Heading
-        {...styles.label(themeName, props)}
-        size={Heading.sizes.smallCaps}
-      >
+    <div ref={ref} {...styles.dataWell(themeName)} {...filterReactProps(props)}>
+      <Heading {...styles.label(themeName)} size={Heading.sizes.smallCaps}>
         <div>{props.label}</div>
       </Heading>
 
-      <div {...styles.data(themeName, props)}>{props.children}</div>
-      <div {...styles.subLabel(themeName, props)}>{props.subLabel}</div>
+      <div {...styles.data(themeName)}>{props.children}</div>
+      <div {...styles.subLabel(themeName)}>{props.subLabel}</div>
     </div>
   )
-})
-
-DataWell.propTypes = {
-  children: PropTypes.node.isRequired,
-  label: PropTypes.string.isRequired,
-  subLabel: PropTypes.node
-}
+}) as DataWellComponent
 
 export default DataWell

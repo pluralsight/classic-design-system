@@ -15,7 +15,7 @@ describe('DataWell', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
     render(
       <DataWell ref={ref} label="Dog count">
