@@ -114,8 +114,8 @@ storiesOf('whitelist', module)
   .add('name', () => (
     <TextInput placeholder="I have a form name" name="myFieldNameOfPower" />
   ))
-  .add('onChange', () => (
-    <TextInput placeholder="Change me" onChange={action('I changed')} />
+  .add('value', () => (
+    <TextInput type="email" label="Email address" value="steve@example.com" />
   ))
   .add('className', () => <TextInput className="shouldExistOnOneElement" />)
 
