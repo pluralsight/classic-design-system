@@ -179,26 +179,26 @@ export default {
   }
 }
 
-function getDiamondHeight(height: string | number, width: string | number) {
-  height = parseInt(height as string, 10)
-  width = parseInt(width as string, 10)
+function getDiamondHeight(height: string, width: string) {
+  const h = parseInt(height, 10)
+  const w = parseInt(width, 10)
 
   return (
     Math.sqrt(
-      Math.pow(height, 2) -
-        Math.pow(Math.sqrt(Math.pow(height, 2) + Math.pow(width, 2)) / 2, 2)
+      Math.pow(h, 2) -
+        Math.pow(Math.sqrt(Math.pow(h, 2) + Math.pow(w, 2)) / 2, 2)
     ) * 2
   )
 }
 
-function getDiamondWidth(height: string | number, width: string | number) {
-  height = parseInt(height as string, 10)
-  width = parseInt(width as string, 10)
+function getDiamondWidth(height: string, width: string) {
+  const h = parseInt(height, 10)
+  const w = parseInt(width, 10)
 
   return (
     Math.sqrt(
-      Math.pow(width, 2) -
-        Math.pow(Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2)) / 2, 2)
+      Math.pow(w, 2) -
+        Math.pow(Math.sqrt(Math.pow(w, 2) + Math.pow(h, 2)) / 2, 2)
     ) * 2
   )
 }
