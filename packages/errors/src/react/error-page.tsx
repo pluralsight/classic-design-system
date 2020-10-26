@@ -35,14 +35,11 @@ const styles = {
       css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   },
-  text: () => {
-    const label = 'psds-error-page__text'
-
-    return media(
+  text: () =>
+    media(
       '(min-width: 769px)',
       stylesheet['@media (min-width: 769px)']['.psds-error-page__text']
-    )
-  },
+    ),
   code: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-error-page__code'],
