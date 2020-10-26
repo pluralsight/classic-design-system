@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-ignore
 import camelize from 'camelize'
-// @ts-ignore
 import importAll from 'import-all.macro'
 
 const imported = importAll.sync('./icons/*.dist.js')
