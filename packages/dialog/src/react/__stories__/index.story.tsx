@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import PropTypes from 'prop-types'
 
 import { action } from '@storybook/addon-actions'
@@ -7,12 +7,12 @@ import { storiesOf } from '@storybook/react'
 import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Dialog from '../index.js'
+import Dialog, { DialogProps } from '..'
 
 const closeAction = action('close')
 const openAction = action('open')
 
-function MockDialog(props) {
+const MockDialog: React.FC<DialogProps> = props => {
   const children = props.children || (
     <>
       <Text.Heading>
@@ -47,8 +47,8 @@ function MockDialog(props) {
 MockDialog.propTypes = { children: PropTypes.node }
 
 storiesOf('onClose', module)
-  .add('with onClose', _ => <MockDialog onClose={closeAction} />)
-  .add('with disableCloseButton', _ => (
+  .add('with onClose', () => <MockDialog onClose={closeAction} />)
+  .add('with disableCloseButton', () => (
     <MockDialog disableCloseButton>
       <Text.Heading>
         <h1>Wowzers, a Dialog</h1>
@@ -57,21 +57,28 @@ storiesOf('onClose', module)
   ))
 
 const positionStories = storiesOf('tailPosition', module)
-positionStories.add('none', _ => <MockDialog />)
+positionStories.add('none', () => <MockDialog />)
 
-Object.keys(Dialog.tailPositions).forEach(pos =>
-  positionStories.add(pos, _ => <MockDialog tailPosition={pos} />)
+Object.values(Dialog.tailPositions).forEach(pos =>
+  positionStories.add(pos, () => <MockDialog tailPosition={pos} />)
 )
 
-function ModalStory(props) {
+interface ModalStoryProps extends HTMLAttributes<HTMLDivElement> {
+  children: (
+    storyProps: Record<string, unknown>,
+    callbacks: Record<string, unknown>
+  ) => React.ReactNode
+}
+
+const ModalStory: React.FC<ModalStoryProps> = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(true)
 
-  const open = evt => {
+  const open = (evt: React.MouseEvent) => {
     setIsOpen(true)
     openAction(evt)
   }
 
-  const close = evt => {
+  const close = (evt: React.MouseEvent) => {
     setIsOpen(false)
     closeAction(evt)
   }
@@ -107,37 +114,36 @@ function ModalStory(props) {
         cream gingerbread tart candy canes dragée. Pie gingerbread icing.
       </Text.P>
 
-      {isOpen && props.children(storyProps, { close, open })}
+      {isOpen && children(storyProps, { close, open })}
     </div>
   )
 }
-ModalStory.propTypes = { children: PropTypes.func }
 
 storiesOf('modal', module)
-  .add('default', _ => (
+  .add('default', () => (
     <ModalStory>{props => <MockDialog {...props} />}</ModalStory>
   ))
-  .add('no close button', _ => (
+  .add('no close button', () => (
     <ModalStory>
       {props => <MockDialog {...props} disableCloseButton />}
     </ModalStory>
   ))
-  .add('no focus on mount', _ => (
+  .add('no focus on mount', () => (
     <ModalStory>
       {props => <MockDialog {...props} disableFocusOnMount />}
     </ModalStory>
   ))
-  .add('no click overlay', _ => (
+  .add('no click overlay', () => (
     <ModalStory>
       {props => <MockDialog {...props} disableCloseOnOverlayClick />}
     </ModalStory>
   ))
-  .add('no escape key', _ => (
+  .add('no escape key', () => (
     <ModalStory>
       {props => <MockDialog {...props} disableCloseOnEscape />}
     </ModalStory>
   ))
-  .add('no focusable child elements', _ => (
+  .add('no focusable child elements', () => (
     <ModalStory>
       {props => (
         <MockDialog {...props}>
@@ -148,7 +154,7 @@ storiesOf('modal', module)
       )}
     </ModalStory>
   ))
-  .add('overflow-y', _ => (
+  .add('overflow-y', () => (
     <ModalStory>
       {props => (
         <MockDialog {...props}>
@@ -166,7 +172,7 @@ storiesOf('modal', module)
       )}
     </ModalStory>
   ))
-  .add('overflow-y with tail', _ => (
+  .add('overflow-y with tail', () => (
     <ModalStory>
       {props => (
         <MockDialog {...props} tailPosition={Dialog.tailPositions.topCenter}>
@@ -185,7 +191,7 @@ storiesOf('modal', module)
     </ModalStory>
   ))
 
-storiesOf('stylesFor', module).add('dialog_content', _ => (
+storiesOf('stylesFor', module).add('dialog_content', () => (
   <ModalStory>
     {props => (
       <MockDialog

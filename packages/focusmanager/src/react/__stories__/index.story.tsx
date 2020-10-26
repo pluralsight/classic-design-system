@@ -3,10 +3,10 @@ import React from 'react'
 
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import FocusManager from '../index.js'
+import FocusManager from '..'
 
 storiesOf('FocusManager', module)
-  .add('trapped', _ => (
+  .add('trapped', () => (
     <FocusManager style={{ color: 'white', textAlign: 'center', margin: 100 }}>
       <Text.P>
         <a href="#">Tri-tip pork chop jowl</a>, spare ribs shankle sirloin
@@ -19,7 +19,7 @@ storiesOf('FocusManager', module)
       </Text.P>
     </FocusManager>
   ))
-  .add('not trapped', _ => (
+  .add('not trapped', () => (
     <FocusManager
       style={{ color: 'white', textAlign: 'center', margin: 100 }}
       trapped={false}
@@ -35,7 +35,7 @@ storiesOf('FocusManager', module)
       </Text.P>
     </FocusManager>
   ))
-  .add('no focusable children', _ => (
+  .add('no focusable children', () => (
     <FocusManager style={{ color: 'white', textAlign: 'center', margin: 100 }}>
       <Text.P>
         Tri-tip pork chop jowl, spare ribs shankle sirloin kevin. Ham hock
