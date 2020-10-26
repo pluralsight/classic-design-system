@@ -101,11 +101,8 @@ exports[`Storyshots pages 404 1`] = `
   </div>
   <form
     action="/search"
-    code="404"
     data-css-y92u4c=""
-    iconId="spyglass"
     method="get"
-    text="Sorry, the page you are looking for cannot be found. Try checking the URL for errors or search our library."
   >
     <div
       data-css-f8qy26=""

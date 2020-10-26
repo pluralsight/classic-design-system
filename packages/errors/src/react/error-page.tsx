@@ -70,27 +70,23 @@ const styles = {
     )
   }
 }
-interface SearchFormProps extends HTMLAttributes<HTMLFormElement> {
-  action?: string
-  themeName: ValueOf<typeof themeNames>
-}
-const SearchForm: React.FC<SearchFormProps> = ({
-  action,
-  themeName,
-  ...props
-}) => (
-  <form action={action} method="get" {...styles.search(themeName)} {...props}>
-    <div {...styles.searchIcon(themeName)}>{icons.search()}</div>
-    <input
-      {...styles.searchInput(themeName)}
-      type="text"
-      name="q"
-      placeholder="Search"
-    />
-  </form>
-)
 
-export interface ErrorPageProps extends HTMLAttributes<HTMLFormElement> {
+const SearchForm: React.FC<Pick<ErrorPageProps, 'action'>> = props => {
+  const themeName = useTheme()
+  return (
+    <form action={props.action} method="get" {...styles.search(themeName)}>
+      <div {...styles.searchIcon(themeName)}>{icons.search()}</div>
+      <input
+        {...styles.searchInput(themeName)}
+        type="text"
+        name="q"
+        placeholder="Search"
+      />
+    </form>
+  )
+}
+
+export interface ErrorPageProps extends HTMLAttributes<HTMLDivElement> {
   action?: string
   code?: string
   href?: string
@@ -99,28 +95,25 @@ export interface ErrorPageProps extends HTMLAttributes<HTMLFormElement> {
 }
 
 const ErrorPage: React.FC<ErrorPageProps> = props => {
+  const { action, code, href, iconId, text, ...rest } = props
   const themeName = useTheme()
-  const allProps = {
-    ...props,
-    themeName
-  }
   return (
-    <div {...styles.page(themeName)}>
-      {allProps.iconId && icons[allProps.iconId] && (
-        <div {...styles.icon(themeName)}>{icons[allProps.iconId]()}</div>
+    <div {...styles.page(themeName)} {...rest}>
+      {iconId && icons[iconId] && (
+        <div {...styles.icon(themeName)}>{icons[iconId]()}</div>
       )}
       <div {...styles.text()}>
         <Heading size={headingSizes.medium}>
-          <h1>{allProps.text}</h1>
+          <h1>{text}</h1>
         </Heading>
       </div>
       <div {...styles.code(themeName)}>
         <Heading size={headingSizes.smallCaps}>
-          <h2>Error code: {allProps.code}</h2>
+          <h2>Error code: {code}</h2>
         </Heading>
       </div>
-      {allProps.href && <Button href={allProps.href}>Contact support</Button>}
-      {allProps.action && <SearchForm {...allProps} />}
+      {href && <Button href={href}>Contact support</Button>}
+      {action && <SearchForm action={action} />}
     </div>
   )
 }
