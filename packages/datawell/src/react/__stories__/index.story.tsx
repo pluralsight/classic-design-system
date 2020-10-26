@@ -2,7 +2,7 @@ import { css } from 'glamor'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import DataWell from '../index.js'
+import DataWell from '..'
 
 storiesOf('DataWell', module)
   .add('label/data', _ => <DataWell label="Dog count">123</DataWell>)

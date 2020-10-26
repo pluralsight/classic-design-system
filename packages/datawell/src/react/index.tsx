@@ -6,8 +6,7 @@ import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
 
-// TODO: rm ext
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   dataWell: themeName =>
