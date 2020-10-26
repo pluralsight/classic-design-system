@@ -2,7 +2,7 @@ import { compose, css } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 
 import {
-  css as textStylesheet,
+  css as stylesheet,
   headingSizes
 } from '@pluralsight/ps-design-system-text'
 import {
@@ -28,13 +28,11 @@ const styles = {
     themeName: ValueOf<typeof themeNames>
   }) =>
     compose(
-      css(textStylesheet['.psds-text__heading']),
-      css(textStylesheet[`.psds-text__heading.psds-theme--${themeName}`]),
-      css(textStylesheet[`.psds-text__heading--size-${size}`]),
+      css(stylesheet['.psds-text__heading']),
+      css(stylesheet[`.psds-text__heading.psds-theme--${themeName}`]),
+      css(stylesheet[`.psds-text__heading--size-${size}`]),
       css(
-        textStylesheet[
-          `.psds-text__heading--size-${size}.psds-theme--${themeName}`
-        ]
+        stylesheet[`.psds-text__heading--size-${size}.psds-theme--${themeName}`]
       )
     )
 }
