@@ -19,7 +19,6 @@ const MockCard: React.FC<MockCardProps> = props => {
   const { titleText, ...rest } = props
   return (
     <Card
-      {...rest}
       title={
         <Card.TextLink>
           <a href="#" tabIndex={1}>
@@ -42,6 +41,7 @@ const MockCard: React.FC<MockCardProps> = props => {
           <a href="#">meta</a>
         </Card.TextLink>
       ]}
+      {...rest}
     />
   )
 }
