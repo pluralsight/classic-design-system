@@ -120,6 +120,7 @@ export interface TextInputProps extends HTMLAttributes<HTMLInputElement> {
   name?: string
   size?: ValueOf<typeof vars.sizes>
   subLabel?: React.ReactNode
+  value?: React.ReactText
 }
 
 export interface TextInputComponent
