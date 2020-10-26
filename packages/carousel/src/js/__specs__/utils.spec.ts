@@ -1,4 +1,4 @@
-import * as utils from '../utils.js'
+import * as utils from '../utils'
 
 describe('utils', () => {
   describe('#chunk', () => {
@@ -53,43 +53,6 @@ describe('utils', () => {
       const output = chunk(input, 5)
 
       expect(output).toEqual([[1, 2, 3]])
-    })
-  })
-
-  describe('#combineFns', () => {
-    const { combineFns } = utils
-
-    it('returns a function', () => {
-      const combined = combineFns(jest.fn(), jest.fn())
-      expect(combined).toBeInstanceOf(Function)
-    })
-
-    it('calls each function with args', () => {
-      const first = jest.fn()
-      const second = jest.fn()
-
-      const args = ['string', { obj: true }, ['array']]
-      const combined = combineFns(first, second)
-
-      combined(...args)
-
-      expect(first).toHaveBeenCalledWith(...args)
-      expect(second).toHaveBeenCalledWith(...args)
-    })
-
-    it('handles falsy values', () => {
-      const first = jest.fn()
-      const second = null
-      const third = undefined
-      const forth = jest.fn()
-
-      const args = ['string', { obj: true }, ['array']]
-      const combined = combineFns(first, second, third, forth)
-
-      combined(...args)
-
-      expect(first).toHaveBeenCalledWith(...args)
-      expect(forth).toHaveBeenCalledWith(...args)
     })
   })
 

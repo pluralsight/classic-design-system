@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
-const noop = () => {}
+const noop = (evt: MouseEvent | TouchEvent) => {}
 
-const defaultOpts = {
+const defaultOpts: Required<UseSwipeOpts> = {
   distanceThreshold: 20, // 20px
   onSwipeDown: noop,
   onSwipeLeft: noop,
@@ -12,7 +12,21 @@ const defaultOpts = {
   timeThreshold: 500 // 500ms
 }
 
-export default function useSwipe(ref, opts = {}) {
+export interface UseSwipeOpts {
+  distanceThreshold?: number
+  onSwipeDown?: (evt: MouseEvent | TouchEvent) => void
+  onSwipeLeft?: (evt: MouseEvent | TouchEvent) => void
+  onSwipeRight?: (evt: MouseEvent | TouchEvent) => void
+  onSwipeUp?: (evt: MouseEvent | TouchEvent) => void
+  supportMouse?: boolean
+  timeThreshold?: number
+}
+
+interface Point {
+  clientX: number
+  clientY: number
+}
+const useSwipe = (ref: React.MutableRefObject<HTMLElement>, opts = {}) => {
   const {
     distanceThreshold,
     onSwipeDown,
@@ -23,10 +37,10 @@ export default function useSwipe(ref, opts = {}) {
     timeThreshold
   } = { ...defaultOpts, ...opts }
 
-  const timeout = useRef()
+  const timeout = useRef<NodeJS.Timeout>()
 
-  const [swipping, setSwipping] = useState(false)
-  const [startPosition, setStartPosition] = useState(null)
+  const [swiping, setSwiping] = useState<boolean>(false)
+  const [startPosition, setStartPosition] = useState<Point | null>(null)
 
   const resetCoords = () => setStartPosition(null)
 
@@ -48,25 +62,25 @@ export default function useSwipe(ref, opts = {}) {
     }
   }, [handleEnd, handleStart, opts, supportMouse])
 
-  function handleStart(evt) {
-    if (!ref.current.contains(evt.target)) return
+  function handleStart(evt: MouseEvent | TouchEvent) {
+    if (!ref?.current?.contains(evt.target as Node)) return
 
-    setSwipping(true)
+    setSwiping(true)
 
-    clearTimeout(timeout.current)
+    if (timeout.current) clearTimeout(timeout.current)
     timeout.current = setTimeout(() => resetCoords(), timeThreshold)
 
-    const { clientX, clientY } = getTouch(evt)
+    const { clientX, clientY } = getEventPoint(evt)
     setStartPosition({ clientX, clientY })
   }
 
-  function handleEnd(evt) {
-    setSwipping(false)
-    clearTimeout(timeout.current)
+  function handleEnd(evt: MouseEvent | TouchEvent) {
+    setSwiping(false)
+    if (timeout.current) clearTimeout(timeout.current)
 
-    if (!swipping || !startPosition) return
+    if (!swiping || !startPosition) return
 
-    const { clientX, clientY } = getTouch(evt)
+    const { clientX, clientY } = getEventPoint(evt)
     const horzDiff = clientX - startPosition.clientX
     const vertDiff = clientY - startPosition.clientY
 
@@ -90,5 +104,8 @@ export default function useSwipe(ref, opts = {}) {
     resetCoords()
   }
 }
+export default useSwipe
 
-const getTouch = evt => (evt.changedTouches ? evt.changedTouches[0] : evt)
+const getEventPoint = (evt: MouseEvent | TouchEvent): Touch | MouseEvent => {
+  return 'changedTouches' in evt ? evt.changedTouches[0] : evt
+}

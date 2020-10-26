@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import Carousel from '../index.js'
-import * as vars from '../../vars/index.js'
+import Carousel from '..'
+import * as vars from '../../vars'
 
 describe('Carousel', () => {
   it('exports sizes', () => {
@@ -14,8 +14,8 @@ describe('Carousel', () => {
   })
 
   describe('with a single item', () => {
-    let container
-    let pages
+    let container: HTMLElement
+    let pages: NodeList
 
     beforeEach(() => {
       const { container: _container } = render(
@@ -30,16 +30,22 @@ describe('Carousel', () => {
     })
 
     it('should hide the prev control', () => {
-      const control = container
-        .querySelector('[aria-label="get previous carousel page"]')
-        .closest('[data-testid="carousel control"]')
+      const page = container.querySelector(
+        '[aria-label="get previous carousel page"]'
+      )
+      expect(page).toBeDefined()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      const control = page!.closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })
 
     it('should hide the next control', () => {
-      const control = container
-        .querySelector('[aria-label="get next carousel page"]')
-        .closest('[data-testid="carousel control"]')
+      const page = container.querySelector(
+        '[aria-label="get next carousel page"]'
+      )
+      expect(page).toBeDefined()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      const control = page!.closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })
 
@@ -49,7 +55,7 @@ describe('Carousel', () => {
   })
 
   describe('with multiple items', () => {
-    let pages
+    let pages: NodeList
 
     beforeEach(() => {
       const { container } = render(
@@ -80,7 +86,7 @@ describe('Carousel', () => {
     })
 
     it('should hide inactive pages', () => {
-      const inactive = Array.from(pages).slice(1)
+      const inactive = Array.from(pages || []).slice(1)
 
       for (const page of inactive) {
         expect(page).toHaveAttribute('hidden')
@@ -89,7 +95,7 @@ describe('Carousel', () => {
   })
 
   describe('when on the first page', () => {
-    let container
+    let container: HTMLElement
 
     beforeEach(() => {
       const { container: _container } = render(
@@ -111,7 +117,7 @@ describe('Carousel', () => {
       )
       expect(btn).toBeDefined()
 
-      const control = btn.closest('[data-testid="carousel control"]')
+      const control = btn?.closest('[data-testid="carousel control"]')
       expect(control).not.toHaveAttribute('hidden')
     })
 
@@ -121,7 +127,7 @@ describe('Carousel', () => {
       )
       expect(btn).toBeDefined()
 
-      const control = btn.closest('[data-testid="carousel control"]')
+      const control = btn?.closest('[data-testid="carousel control"]')
       expect(control).toHaveAttribute('hidden')
     })
   })
