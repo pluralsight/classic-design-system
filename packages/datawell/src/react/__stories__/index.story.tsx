@@ -5,13 +5,13 @@ import React from 'react'
 import DataWell from '..'
 
 storiesOf('DataWell', module)
-  .add('label/data', _ => <DataWell label="Dog count">123</DataWell>)
-  .add('label/data/subLabel', _ => (
+  .add('label/data', () => <DataWell label="Dog count">123</DataWell>)
+  .add('label/data/subLabel', () => (
     <DataWell label="Dog count" subLabel="All the doggies">
       234,345
     </DataWell>
   ))
-  .add('row', _ => (
+  .add('row', () => (
     <div
       style={{
         display: 'flex'
@@ -30,7 +30,7 @@ storiesOf('DataWell', module)
       </DataWell>
     </div>
   ))
-  .add('fixed width in row, no spaces', _ => (
+  .add('fixed width in row, no spaces', () => (
     <div
       {...css({
         display: 'flex',

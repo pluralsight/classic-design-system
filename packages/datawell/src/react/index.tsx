@@ -1,28 +1,34 @@
 import { Heading } from '@pluralsight/ps-design-system-text'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css'
 
 const styles = {
-  dataWell: themeName =>
+  dataWell: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-datawell'],
       stylesheet[`.psds-datawell.psds-theme--${themeName}`]
     ),
-  label: themeName =>
+  label: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-datawell__label'],
       stylesheet[`.psds-datawell__label.psds-theme--${themeName}`]
     ),
-  data: themeName =>
+  data: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-datawell__data'],
       stylesheet[`.psds-datawell__data.psds-theme--${themeName}`]
     ),
-  subLabel: themeName =>
+  subLabel: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-datawell__sublabel'],
       stylesheet[`.psds-datawell__sublabel.psds-theme--${themeName}`]
