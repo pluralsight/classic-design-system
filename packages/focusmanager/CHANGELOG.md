@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@5.1.2...@pluralsight/ps-design-system-focusmanager@5.2.0) (2020-10-26)
+
+
+### Features
+
+* **focusmanager:** change extensions ([f380848](https://github.com/pluralsight/design-system/commit/f3808482d4771a18d268dfd0fb5d9e0056f3f4bc))
+* **focusmanager:** config files ([a4f28b6](https://github.com/pluralsight/design-system/commit/a4f28b6f90835495f89174791e75898b570bfd59))
+* **focusmanager:** remove type cast ([1e6e130](https://github.com/pluralsight/design-system/commit/1e6e130d249b9a30f830346521dfd008c19c05b0))
+* **focusmanager:** ts conversion ([d1dcf4f](https://github.com/pluralsight/design-system/commit/d1dcf4fe1aee538c334f9b3bc687818d751e780f))
+* **focusmanager:** update packages/focusmanager/src/react/use-focus-manager.ts ([1c706cf](https://github.com/pluralsight/design-system/commit/1c706cf373304f92fb50b894b5044a5bb3e9a33c))
+
+
+
+
+
 ## [5.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@5.1.1...@pluralsight/ps-design-system-focusmanager@5.1.2) (2020-10-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

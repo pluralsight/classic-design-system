@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@7.1.2...@pluralsight/ps-design-system-form@8.0.0) (2020-10-26)
+
+
+### Features
+
+* **form:** ts conversion ([5561f7b](https://github.com/pluralsight/design-system/commit/5561f7b54ffec4ab4a2d13da5eeac54a4ce537c5))
+
+
+* Feat/searchinput ts conversion (#1348) ([60df731](https://github.com/pluralsight/design-system/commit/60df731cf78abe60c82e9433ace844f0b32b1a6d)), closes [#1348](https://github.com/pluralsight/design-system/issues/1348)
+
+
+### BREAKING CHANGES
+
+* single element reference only
+
+* feat(searchinput): fix typings
+
+* feat(searchinput): update stories types
+
+* feat(typeahead): use parentNode instead of second ref
+
+* feat(searchinput): lint fix
+
+* feat(searchinput): lint fix
+
+Co-authored-by: Jake Trent <trent.jake@gmail.com>
+
+
+
+
+
 ## [7.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@7.1.1...@pluralsight/ps-design-system-form@7.1.2) (2020-10-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

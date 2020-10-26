@@ -762,7 +762,6 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
             <input
               data-css-zjzpem=""
               disabled={false}
-              size="medium"
               type="date"
             />
           </div>

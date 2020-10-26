@@ -258,7 +258,6 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
               data-css-r9d4vy=""
               disabled={false}
               placeholder="Find Something"
-              size="medium"
             />
           </div>
         </div>

@@ -19,7 +19,6 @@ exports[`Storyshots Components | Typeahead / appearances default 1`] = `
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
-            size="medium"
             value=""
           />
         </div>
@@ -72,7 +71,6 @@ exports[`Storyshots Components | Typeahead / appearances subtle 1`] = `
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
-            size="medium"
             value=""
           />
         </div>
@@ -125,7 +123,6 @@ exports[`Storyshots Components | Typeahead / controlled default 1`] = `
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
-            size="medium"
             value=""
           />
         </div>
@@ -184,7 +181,6 @@ exports[`Storyshots Components | Typeahead / form props all 1`] = `
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Some placeholder"
-            size="medium"
             value=""
           />
         </div>
@@ -248,7 +244,6 @@ exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
             onChange={[Function]}
             onFocus={[Function]}
             placeholder="Some placeholder"
-            size="medium"
             value=""
           />
         </div>
@@ -330,7 +325,6 @@ exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] =
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
-            size="medium"
             value=""
           />
         </div>
@@ -388,7 +382,6 @@ exports[`Storyshots Components | Typeahead / uncontrolled default 1`] = `
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
-            size="medium"
             value=""
           />
         </div>
