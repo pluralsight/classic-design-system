@@ -8,8 +8,6 @@
   "keywords": [],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "style": "dist/index.css",
-  "types": "dist/esm/index.d.ts",
   "scripts": {
     "build": "run-s build:cjs build:esm build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
@@ -20,6 +18,8 @@
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-button": "^18.4.2",
     "@pluralsight/ps-design-system-core": "^6.5.1",

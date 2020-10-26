@@ -4,7 +4,8 @@ import { storiesOf } from '@storybook/react'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import Card from '../index.js'
+import Card, { CardProps } from '..'
+import { StoryFn } from '@storybook/addons'
 
 const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
   `//picsum.photos/${w}/${h}?image=${id}&gravity=north`
@@ -18,11 +19,10 @@ const longStringsMetaData = [
 const longTitle =
   'The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds'
 
-const CardWithDefaults = props => <Card {...props} />
-
-CardWithDefaults.defaultProps = {
-  title: <Card.Title>Card Title</Card.Title>,
-  image: <Card.Image src={getImgSrc()} />
+const CardWithDefaults = (props: Partial<CardProps>) => {
+  const title = props.title || <Card.Title>Card Title</Card.Title>
+  const image = props.image || <Card.Image src={getImgSrc()} />
+  return <Card {...props} title={title} image={image} />
 }
 
 const sizes = {
@@ -30,13 +30,13 @@ const sizes = {
   [Card.sizes.medium]: { width: '320px' },
   [Card.sizes.large]: { width: '540px' }
 }
-const ConstrainSizeDecorator = size => storyFn => (
-  <div style={sizes[size]}>{storyFn()}</div>
-)
+const ConstrainSizeDecorator = (size: keyof typeof sizes) => (
+  storyFn: StoryFn<JSX.Element>
+) => <div style={sizes[size]}>{storyFn()}</div>
 
 storiesOf('combo', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('everything locked', _ => (
+  .add('everything locked', () => (
     <Card
       title={
         <Card.TextLink>
@@ -68,8 +68,8 @@ storiesOf('combo', module)
           </a>
         </Card.ImageLink>
       }
-      metadata1={longStringsMetaData.map(str => (
-        <Card.TextLink>
+      metadata1={longStringsMetaData.map((str, i) => (
+        <Card.TextLink key={i}>
           <a href="http://duckduckgo.com/?q=jaketrent">{str}</a>
         </Card.TextLink>
       ))}
@@ -87,7 +87,7 @@ storiesOf('combo', module)
       tag={<Card.Tag icon={<Icon.PathIcon />}>Path</Card.Tag>}
     />
   ))
-  .add('everything focusable', _ => (
+  .add('everything focusable', () => (
     <Card
       title={
         <Card.TextLink>
@@ -114,7 +114,7 @@ storiesOf('combo', module)
         </Card.ImageLink>
       }
       metadata1={[
-        <Card.TextLink>
+        <Card.TextLink key="meta">
           <a href="http://duckduckgo.com/?q=jaketrent">focusable</a>
         </Card.TextLink>
       ]}
@@ -133,10 +133,10 @@ storiesOf('combo', module)
 
 storiesOf('title', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('title wrapper', _ => (
+  .add('title wrapper', () => (
     <CardWithDefaults title={<Card.Title>Text only</Card.Title>} />
   ))
-  .add('text link with title wrapper', _ => (
+  .add('text link with title wrapper', () => (
     <CardWithDefaults
       title={
         <Card.TextLink>
@@ -147,10 +147,10 @@ storiesOf('title', module)
       }
     />
   ))
-  .add('long title, title wrapper', _ => (
+  .add('long title, title wrapper', () => (
     <CardWithDefaults title={<Card.Title>{longTitle}</Card.Title>} />
   ))
-  .add('long title, text link with title wrapper', _ => (
+  .add('long title, text link with title wrapper', () => (
     <CardWithDefaults
       title={
         <Card.TextLink>
@@ -164,12 +164,12 @@ storiesOf('title', module)
 
 storiesOf('image', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('image only', _ => (
+  .add('image only', () => (
     <CardWithDefaults
       image={<Card.Image src={getImgSrc({ w: 400, h: 200 })} />}
     />
   ))
-  .add('image link', _ => (
+  .add('image link', () => (
     <CardWithDefaults
       image={
         <Card.ImageLink>
@@ -183,7 +183,7 @@ storiesOf('image', module)
 
 storiesOf('actionBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('single action', _ => (
+  .add('single action', () => (
     <CardWithDefaults
       actionBar={[
         <Card.Action
@@ -194,7 +194,7 @@ storiesOf('actionBar', module)
       ]}
     />
   ))
-  .add('multiple actions', _ => (
+  .add('multiple actions', () => (
     <CardWithDefaults
       actionBar={[
         <Card.Action
@@ -206,7 +206,7 @@ storiesOf('actionBar', module)
       ]}
     />
   ))
-  .add('locked visible', _ => (
+  .add('locked visible', () => (
     <CardWithDefaults
       actionBar={[
         <Card.Action
@@ -221,19 +221,19 @@ storiesOf('actionBar', module)
 
 storiesOf('bonusBar', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('only text', _ => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
-  .add('some element', _ => (
+  .add('only text', () => <CardWithDefaults bonusBar="Wow, I'm bonus." />)
+  .add('some element', () => (
     <CardWithDefaults bonusBar={<Icon.ChannelIcon size={Icon.sizes.large} />} />
   ))
 
 storiesOf('fullOverlay', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('text only', _ => (
+  .add('text only', () => (
     <CardWithDefaults
       fullOverlay={<Card.FullOverlayLink>Element</Card.FullOverlayLink>}
     />
   ))
-  .add('link', _ => (
+  .add('link', () => (
     <CardWithDefaults
       fullOverlay={
         <Card.FullOverlayLink>
@@ -242,7 +242,7 @@ storiesOf('fullOverlay', module)
       }
     />
   ))
-  .add('linked icon', _ => (
+  .add('linked icon', () => (
     <CardWithDefaults
       fullOverlay={
         <Card.FullOverlayLink>
@@ -256,7 +256,7 @@ storiesOf('fullOverlay', module)
       }
     />
   ))
-  .add('linked icon with image link', _ => (
+  .add('linked icon with image link', () => (
     <CardWithDefaults
       fullOverlay={
         <Card.FullOverlayLink>
@@ -277,7 +277,7 @@ storiesOf('fullOverlay', module)
       }
     />
   ))
-  .add('locked visible', _ => (
+  .add('locked visible', () => (
     <CardWithDefaults
       fullOverlay={<Card.FullOverlayLink>Element</Card.FullOverlayLink>}
       fullOverlayVisible
@@ -286,8 +286,8 @@ storiesOf('fullOverlay', module)
 
 const sizeStory = storiesOf('size', module)
 Object.values(Card.sizes).forEach(size =>
-  sizeStory.add(size, _ =>
-    ConstrainSizeDecorator(size)(_ => (
+  sizeStory.add(size, () =>
+    ConstrainSizeDecorator(size)(() => (
       <CardWithDefaults
         size={size}
         title={<Card.Title>{`${size} Card`}</Card.Title>}
@@ -298,56 +298,58 @@ Object.values(Card.sizes).forEach(size =>
 
 storiesOf('metadata', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('single text', _ => <CardWithDefaults metadata1={['Jim Cooper']} />)
-  .add('multiple text', _ => (
+  .add('single text', () => <CardWithDefaults metadata1={['Jim Cooper']} />)
+  .add('multiple text', () => (
     <CardWithDefaults metadata1={['Jim Cooper', 'Of the Far North']} />
   ))
-  .add('text wrapper', _ => (
-    <CardWithDefaults metadata1={[<Card.Text>Jim Cooper</Card.Text>]} />
+  .add('text wrapper', () => (
+    <CardWithDefaults
+      metadata1={[<Card.Text key="text">Jim Cooper</Card.Text>]}
+    />
   ))
-  .add('text link', _ => (
+  .add('text link', () => (
     <CardWithDefaults
       metadata1={[
-        <Card.TextLink>
+        <Card.TextLink key="text">
           <a href="http://duckduckgo.com?q=jim%20cooper">Jim Cooper</a>
         </Card.TextLink>
       ]}
     />
   ))
-  .add('two lines, mixed content', _ => (
+  .add('two lines, mixed content', () => (
     <CardWithDefaults
       metadata1={[
-        <Card.TextLink>
+        <Card.TextLink key="text">
           <a href="http://duckduckgo.com?q=jim%20cooper">Jim Cooper</a>
         </Card.TextLink>
       ]}
       metadata2={[
-        <Card.TextLink>
+        <Card.TextLink key="text1">
           <a href="http://duckduckgo.com?q=react">React Path</a>
         </Card.TextLink>,
         'Intermediate',
-        <Card.Text>90 mins</Card.Text>
+        <Card.Text key="text2">90 mins</Card.Text>
       ]}
     />
   ))
 
 storiesOf('progress', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('none', _ => <CardWithDefaults progress={0} />)
-  .add('some', _ => <CardWithDefaults progress={33.66667} />)
-  .add('done', _ => <CardWithDefaults progress={100} />)
+  .add('none', () => <CardWithDefaults progress={0} />)
+  .add('some', () => <CardWithDefaults progress={33.66667} />)
+  .add('done', () => <CardWithDefaults progress={100} />)
 
 storiesOf('tag', module)
   .addDecorator(ConstrainSizeDecorator(Card.sizes.medium))
-  .add('text only', _ => (
+  .add('text only', () => (
     <CardWithDefaults tag={<Card.Tag>Channel</Card.Tag>} />
   ))
-  .add('with icon', _ => (
+  .add('with icon', () => (
     <CardWithDefaults
       tag={<Card.Tag icon={<Icon.ChannelIcon />}>Channel</Card.Tag>}
     />
   ))
-  .add('long single word', _ => (
+  .add('long single word', () => (
     <CardWithDefaults
       tag={
         <Card.Tag icon={<Icon.ChannelIcon />}>
@@ -356,7 +358,7 @@ storiesOf('tag', module)
       }
     />
   ))
-  .add('long multi-word', _ => (
+  .add('long multi-word', () => (
     <CardWithDefaults
       tag={
         <Card.Tag icon={<Icon.ChannelIcon />}>
@@ -369,8 +371,8 @@ storiesOf('tag', module)
 
 const sizesWithTagsStory = storiesOf('sizes with tags', module)
 Object.values(Card.sizes).forEach(size =>
-  sizesWithTagsStory.add(size, _ =>
-    ConstrainSizeDecorator(size)(_ => (
+  sizesWithTagsStory.add(size, () =>
+    ConstrainSizeDecorator(size)(() => (
       <CardWithDefaults
         size={size}
         title={<Card.Title>{`${size} Card with tag`}</Card.Title>}

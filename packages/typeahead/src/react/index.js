@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React, { Children, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
@@ -32,8 +32,10 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
   const portal = usePortal()
   const containerRef = React.useRef()
 
-  const fieldRef = React.useRef()
-  const inputRef = React.useRef()
+  const [target, setTarget] = useState()
+  const inputRef = React.useCallback(node => {
+    setTarget(node ? node.parentNode : undefined)
+  })
   React.useImperativeHandle(forwardedRef, () => inputRef.current)
 
   const [controlled] = React.useState(typeof value !== 'undefined')
@@ -118,7 +120,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
             suggestions={filteredSuggestions}
           />
         }
-        target={fieldRef}
+        target={target}
       >
         <TextInput
           {...pick(props, TEXT_INPUT_PROPS)}
@@ -126,7 +128,7 @@ const Typeahead = React.forwardRef((props, forwardedRef) => {
           icon={<CaretDownIcon />}
           onChange={handleInputChange}
           onFocus={handleInputFocus}
-          ref={{ field: fieldRef, input: inputRef }}
+          ref={inputRef}
           value={innerValue}
         />
       </BelowLeft>

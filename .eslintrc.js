@@ -41,6 +41,12 @@ module.exports = {
   plugins: ['@typescript-eslint', 'jest', 'react', 'react-hooks', 'prettier'],
   rules: {
     'import/extensions': [WARNING, 'always', { ignorePackages: true }],
+    '@typescript-eslint/ban-ts-comment': [
+      ERROR,
+      {
+        'ts-ignore': 'allow-with-description'
+      }
+    ],
     '@typescript-eslint/explicit-function-return-type': IGNORE,
     '@typescript-eslint/explicit-module-boundary-types': IGNORE,
     '@typescript-eslint/interface-name-prefix': IGNORE,
