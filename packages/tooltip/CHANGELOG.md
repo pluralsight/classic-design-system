@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.1.2...@pluralsight/ps-design-system-tooltip@6.2.0) (2020-10-26)
+
+
+### Features
+
+* **tooltip:** ts conversion ([a8b95cb](https://github.com/pluralsight/design-system/commit/a8b95cb15dec8c0c3bc0be794416fbb81fa72ae1))
+* change extensions ([9554c58](https://github.com/pluralsight/design-system/commit/9554c58d9c2b7737579cdd2939ad5b200381ff0b))
+* update imports remove and _ params ([2f5011a](https://github.com/pluralsight/design-system/commit/2f5011a0015250d3a3df28d4aa57cfd8d740df7b))
+
+
+
+
+
 ## [6.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@6.1.1...@pluralsight/ps-design-system-tooltip@6.1.2) (2020-10-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip

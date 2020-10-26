@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.2.1...@pluralsight/ps-design-system-collapsible@3.0.0) (2020-10-26)
+
+
+### Code Refactoring
+
+* **collapsible:** typescript conversion ([6b6d9e8](https://github.com/pluralsight/design-system/commit/6b6d9e8c36c5b82ef7c2428b2fafb6898f6c9737))
+
+
+### BREAKING CHANGES
+
+* **collapsible:** useCollapsible hook is now exported and no longer available under /rc
+
+
+
+
+
 ## [2.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@2.2.0...@pluralsight/ps-design-system-collapsible@2.2.1) (2020-10-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-collapsible

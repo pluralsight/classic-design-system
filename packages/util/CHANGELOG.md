@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.4.2...@pluralsight/ps-design-system-util@5.5.0) (2020-10-26)
+
+
+### Bug Fixes
+
+* **util:** bad import path ([324159e](https://github.com/pluralsight/design-system/commit/324159e3daf1c40b0b1cdc99e1692696b2f03337))
+* **util:** call canUseDom in portal creation fn ([b57e56a](https://github.com/pluralsight/design-system/commit/b57e56ad7eac0c65154663bc3b1b0eae0ebd6c36))
+* **util:** update ref typings ([811ee18](https://github.com/pluralsight/design-system/commit/811ee18b7b44370569b2ec0570e4fc1302e78fd2))
+
+
+### Features
+
+* requested pr changes ([35cc723](https://github.com/pluralsight/design-system/commit/35cc72391adac7b6c3586d3f20f4ba919a74c4ab))
+* **dialog:** ts conversion ([665b666](https://github.com/pluralsight/design-system/commit/665b666c54079c9af50f47720bb87281a46f41b5))
+* **util:** deprecate prop-type utils ([9899684](https://github.com/pluralsight/design-system/commit/9899684dc49ee9305a7d5a7940bee4195ac5da96))
+* **util:** Update packages/util/src/styles.ts ([e909030](https://github.com/pluralsight/design-system/commit/e9090308562fd43d0705747f7e93490218cf7561))
+
+
+
+
+
 ## [5.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.4.1...@pluralsight/ps-design-system-util@5.4.2) (2020-10-20)
 
 
