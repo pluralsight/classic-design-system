@@ -68,7 +68,12 @@ const Position = React.forwardRef((props, forwardedRef) => {
   })
 
   const updateStyle = React.useCallback(() => {
-    const targetNode = target ? target.current : ref.current
+    const targetNode =
+      target instanceof HTMLElement
+        ? target
+        : target !== undefined
+        ? target.current
+        : ref.current
     if (!showRef.current || !targetNode) return
 
     const nextStyle = positionFn(targetNode).styleFor(showRef.current)
