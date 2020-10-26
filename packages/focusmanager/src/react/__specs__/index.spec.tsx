@@ -1,21 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
-import FocusManager from '../index.js'
+import FocusManager from '..'
 
 describe('FocusManager', () => {
-  beforeEach(() => {
-    document.activeElement.blur()
-  })
+  beforeEach(() => (document.activeElement as HTMLElement).blur())
 
   it('has defaultProps', () => {
-    expect(FocusManager.defaultProps).toMatchInlineSnapshot(`
-Object {
-  "autofocus": true,
-  "returnFocus": true,
-  "trapped": true,
-}
-`)
+    expect(FocusManager.defaultProps).toMatchInlineSnapshot(`undefined`)
   })
 
   it('renders', () => {
@@ -27,7 +20,7 @@ Object {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
     render(<FocusManager ref={ref} />)
 
@@ -113,7 +106,7 @@ Object {
   })
 
   describe('when trapped is enabled', () => {
-    let links = []
+    let links: NodeListOf<HTMLAnchorElement> | [] = []
 
     beforeEach(() => {
       const { container } = render(
@@ -142,7 +135,7 @@ Object {
       it('moves focus to last child', () => {
         links[0].focus()
 
-        fireEvent.keyDown(document.activeElement, {
+        fireEvent.keyDown(document.activeElement as Element, {
           key: 'Tab',
           shiftKey: true
         })
@@ -155,7 +148,7 @@ Object {
       it('moves focus to first child', () => {
         links[links.length - 1].focus()
 
-        fireEvent.keyDown(document.activeElement, {
+        fireEvent.keyDown(document.activeElement as Element, {
           key: 'Tab',
           shiftKey: false
         })

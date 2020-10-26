@@ -1,4 +1,4 @@
-export function stylesFor(selectorKey: string, props: Props) {
+export function stylesFor(selectorKey: string, props: StylesForProps) {
   return (
     (props &&
       props.UNSAFE_stylesFor &&
@@ -8,7 +8,7 @@ export function stylesFor(selectorKey: string, props: Props) {
   )
 }
 
-interface Props {
+export interface StylesForProps {
   // eslint-disable-next-line camelcase
   UNSAFE_stylesFor?: Record<string, unknown>
 }
