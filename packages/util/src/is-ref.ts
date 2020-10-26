@@ -1,6 +1,6 @@
 import { LegacyRef, MutableRefObject, Ref, RefCallback } from 'react'
 
-import { isFunction } from '.'
+import { isFunction } from './is-function'
 
 export const isCallbackRef = <El extends HTMLElement>(
   ref: LegacyRef<El> | Ref<El>
