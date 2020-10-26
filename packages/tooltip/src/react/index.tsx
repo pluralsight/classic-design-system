@@ -10,43 +10,31 @@ import * as vars from '../vars'
 
 const fade = keyframes(stylesheet[`@keyframes psds-tooltip__keyframes__fade`])
 const styles = {
-  tail: ({
-    appearance,
-    tailPosition
-  }: {
-    appearance: ValueOf<typeof vars.appearances>
-    tailPosition?: ValueOf<typeof vars.tailPositions>
-  }) => {
+  tail: (props: Pick<TooltipProps, 'appearance' | 'tailPosition'>) => {
     const label = 'psds-tooltip__tail'
 
     return compose(
       css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--appearance-${appearance}`]),
-      css(stylesheet[`.${label}--tailPosition-${tailPosition}`])
+      css(stylesheet[`.${label}--appearance-${props.appearance}`]),
+      css(stylesheet[`.${label}--tailPosition-${props.tailPosition}`])
     )
   },
-  tooltip: ({
-    appearance,
-    onClose
-  }: {
-    appearance: ValueOf<typeof vars.appearances>
-    onClose?: (evt?: React.MouseEvent) => void
-  }) => {
+  tooltip: (props: Pick<TooltipProps, 'appearance' | 'onClose'>) => {
     const label = 'psds-tooltip'
-    const closeable = typeof onClose === 'function'
+    const closeable = typeof props.onClose === 'function'
 
     return compose(
       css(stylesheet['.psds-tooltip']({ fade })),
-      css(stylesheet[`.${label}--appearance-${appearance}`]),
+      css(stylesheet[`.${label}--appearance-${props.appearance}`]),
       closeable && css(stylesheet[`.${label}--closeable`])
     )
   },
-  close: (appearance: string) => {
+  close: (props: Pick<TooltipProps, 'appearance'>) => {
     const label = 'psds-tooltip__close'
 
     return compose(
       css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--appearance-${appearance}`])
+      css(stylesheet[`.${label}--appearance-${props.appearance}`])
     )
   }
 }
@@ -56,7 +44,7 @@ interface CloseButtonProps extends HTMLAttributes<HTMLButtonElement> {
 }
 const CloseButton: React.FC<CloseButtonProps> = props => (
   <button
-    {...styles.close(props.appearance)}
+    {...styles.close(props)}
     onClick={props.onClick}
     aria-label="Close tooltip"
   >
