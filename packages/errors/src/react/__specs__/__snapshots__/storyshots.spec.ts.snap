@@ -28,7 +28,6 @@ exports[`Storyshots pages 403 1`] = `
   >
     <h1
       data-css-xhd98s=""
-      size="medium"
     >
       You are not authorized to view this page. Try contacting support or reaching out to your plan administrator.
     </h1>
@@ -38,7 +37,6 @@ exports[`Storyshots pages 403 1`] = `
   >
     <h2
       data-css-ffti8h=""
-      size="smallCaps"
     >
       Error code: 
       403
@@ -87,7 +85,6 @@ exports[`Storyshots pages 404 1`] = `
   >
     <h1
       data-css-xhd98s=""
-      size="medium"
     >
       Sorry, the page you are looking for cannot be found. Try checking the URL for errors or search our library.
     </h1>
@@ -97,7 +94,6 @@ exports[`Storyshots pages 404 1`] = `
   >
     <h2
       data-css-ffti8h=""
-      size="smallCaps"
     >
       Error code: 
       404
@@ -159,7 +155,6 @@ exports[`Storyshots pages 500 1`] = `
   >
     <h1
       data-css-xhd98s=""
-      size="medium"
     >
       Something unexpected has happened. Please try again. If you continue to experience problems, let us know.
     </h1>
@@ -169,7 +164,6 @@ exports[`Storyshots pages 500 1`] = `
   >
     <h2
       data-css-ffti8h=""
-      size="smallCaps"
     >
       Error code: 
       500
@@ -218,7 +212,6 @@ exports[`Storyshots pages 503 1`] = `
   >
     <h1
       data-css-xhd98s=""
-      size="medium"
     >
       Unfortunately the site is currently unavailable. We expect everything back in order shortly. Sorry for the inconvenience.
     </h1>
@@ -228,7 +221,6 @@ exports[`Storyshots pages 503 1`] = `
   >
     <h2
       data-css-ffti8h=""
-      size="smallCaps"
     >
       Error code: 
       503

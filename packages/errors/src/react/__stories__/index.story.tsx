@@ -6,10 +6,10 @@ import {
   NotFoundErrorPage,
   InternalServerErrorPage,
   ServiceUnavailableErrorPage
-} from '../index.js'
+} from '..'
 
 storiesOf('pages', module)
-  .add(`403`, _ => <ForbiddenErrorPage />)
-  .add(`404`, _ => <NotFoundErrorPage />)
-  .add(`500`, _ => <InternalServerErrorPage />)
-  .add(`503`, _ => <ServiceUnavailableErrorPage />)
+  .add(`403`, () => <ForbiddenErrorPage />)
+  .add(`404`, () => <NotFoundErrorPage />)
+  .add(`500`, () => <InternalServerErrorPage />)
+  .add(`503`, () => <ServiceUnavailableErrorPage />)

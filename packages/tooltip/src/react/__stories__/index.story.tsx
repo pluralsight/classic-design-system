@@ -4,25 +4,25 @@ import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
 
-import Tooltip from '../index.js'
+import Tooltip from '..'
 
-const PaddingDecorator = storyFn => (
+const PaddingDecorator = (storyFn: () => React.ReactNode) => (
   <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
 )
 
 const appearanceStory = storiesOf('appearance', module).addDecorator(
   PaddingDecorator
 )
-Object.keys(Tooltip.appearances).forEach(app =>
-  appearanceStory.add(app, _ => <Tooltip appearance={app}>Some text</Tooltip>)
+Object.values(Tooltip.appearances).forEach(app =>
+  appearanceStory.add(app, () => <Tooltip appearance={app}>Some text</Tooltip>)
 )
 
 const tailPositionStory = storiesOf('tailPosition', module).addDecorator(
   PaddingDecorator
 )
-Object.keys(Tooltip.appearances).forEach(appearance =>
-  Object.keys(Tooltip.tailPositions).forEach(tailPosition =>
-    tailPositionStory.add(`${appearance} ${tailPosition}`, _ => (
+Object.values(Tooltip.appearances).forEach(appearance =>
+  Object.values(Tooltip.tailPositions).forEach(tailPosition =>
+    tailPositionStory.add(`${appearance} ${tailPosition}`, () => (
       <Tooltip appearance={appearance} tailPosition={tailPosition}>
         Some text
       </Tooltip>
@@ -31,16 +31,16 @@ Object.keys(Tooltip.appearances).forEach(appearance =>
 )
 
 const closeStory = storiesOf('onClose', module).addDecorator(PaddingDecorator)
-Object.keys(Tooltip.appearances).forEach(appearance =>
-  closeStory.add(appearance, _ => (
-    <Tooltip appearance={appearance} onClose={_ => {}}>
+Object.values(Tooltip.appearances).forEach(appearance =>
+  closeStory.add(appearance, () => (
+    <Tooltip appearance={appearance} onClose={() => {}}>
       Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
     </Tooltip>
   ))
 )
-closeStory.add('short text', _ => <Tooltip onClose={_ => {}}>Short</Tooltip>)
-closeStory.add('tailPosition topRight', _ => (
-  <Tooltip tailPosition={Tooltip.tailPositions.topRight} onClose={_ => {}}>
+closeStory.add('short text', () => <Tooltip onClose={() => {}}>Short</Tooltip>)
+closeStory.add('tailPosition topRight', () => (
+  <Tooltip tailPosition={Tooltip.tailPositions.topRight} onClose={() => {}}>
     Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
   </Tooltip>
 ))

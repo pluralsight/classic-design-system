@@ -52,7 +52,7 @@ export default {
   },
   [`.psds-error-page__search.psds-theme--${themeNames.light}`]: {
     background: colorsWhite,
-    color: colorsTextIcon.lownOnLight
+    color: colorsTextIcon.lowOnLight
   },
   '.psds-error-page__search__icon': {
     position: 'absolute',

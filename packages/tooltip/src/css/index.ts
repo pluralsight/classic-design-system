@@ -7,7 +7,7 @@ import {
   type
 } from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
 const shadowBlurWidth = '4px'
 const tailDimension = '14px'
@@ -37,7 +37,7 @@ export default {
     '100%': { transform: 'translateY(0)', opacity: 1 }
   },
 
-  '.psds-tooltip': ({ fade }) => ({
+  '.psds-tooltip': ({ fade }: { fade: string }) => ({
     position: 'relative',
     display: 'inline-block',
     maxWidth: '320px',
@@ -179,26 +179,26 @@ export default {
   }
 }
 
-function getDiamondHeight(height, width) {
-  height = parseInt(height, 10)
-  width = parseInt(width, 10)
+function getDiamondHeight(height: string, width: string) {
+  const h = parseInt(height, 10)
+  const w = parseInt(width, 10)
 
   return (
     Math.sqrt(
-      Math.pow(height, 2) -
-        Math.pow(Math.sqrt(Math.pow(height, 2) + Math.pow(width, 2)) / 2, 2)
+      Math.pow(h, 2) -
+        Math.pow(Math.sqrt(Math.pow(h, 2) + Math.pow(w, 2)) / 2, 2)
     ) * 2
   )
 }
 
-function getDiamondWidth(height, width) {
-  height = parseInt(height, 10)
-  width = parseInt(width, 10)
+function getDiamondWidth(height: string, width: string) {
+  const h = parseInt(height, 10)
+  const w = parseInt(width, 10)
 
   return (
     Math.sqrt(
-      Math.pow(width, 2) -
-        Math.pow(Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2)) / 2, 2)
+      Math.pow(w, 2) -
+        Math.pow(Math.sqrt(Math.pow(w, 2) + Math.pow(h, 2)) / 2, 2)
     ) * 2
   )
 }
