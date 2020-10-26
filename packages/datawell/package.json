@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
     "@pluralsight/ps-design-system-text": "^16.1.2",
     "@pluralsight/ps-design-system-util": "^5.4.2"
   },

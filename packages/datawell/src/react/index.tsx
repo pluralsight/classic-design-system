@@ -1,5 +1,3 @@
-// TODO: rm
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
@@ -47,16 +45,17 @@ interface DataWellComponent
   > {}
 
 const DataWell = React.forwardRef((props, ref) => {
+  const { children, label, subLabel, ...rest } = props
   const themeName = useTheme()
 
   return (
-    <div ref={ref} {...styles.dataWell(themeName)} {...filterReactProps(props)}>
+    <div ref={ref} {...styles.dataWell(themeName)} {...rest}>
       <Heading {...styles.label(themeName)} size={Heading.sizes.smallCaps}>
-        <div>{props.label}</div>
+        <div>{label}</div>
       </Heading>
 
-      <div {...styles.data(themeName)}>{props.children}</div>
-      <div {...styles.subLabel(themeName)}>{props.subLabel}</div>
+      <div {...styles.data(themeName)}>{children}</div>
+      <div {...styles.subLabel(themeName)}>{subLabel}</div>
     </div>
   )
 }) as DataWellComponent
