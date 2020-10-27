@@ -1,9 +1,8 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 
-import * as vars from '../../vars/index.js'
-
-import DatePicker from '../index.js'
+import DatePicker from '..'
+import * as vars from '../../vars'
 
 describe('DatePicker', () => {
   describe('.appearances', () => {
@@ -17,7 +16,7 @@ describe('DatePicker', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLInputElement>()
 
     render(<DatePicker ref={ref} />)
 

@@ -1,48 +1,82 @@
+import { DateParts } from '../react'
+import { MonthDateParts } from '../react/calendar'
+
 const num = n => parseInt(n, 10)
 
-export const arrayOf = num => Array.apply(null, Array(num || 0))
+export const arrayOf = (num: string): undefined[] =>
+  Array.apply(null, Array(parseInt(num, 10) || 0))
 
-export const getDaysInMonth = ({ mm, yyyy }) => {
+export const getDaysInMonth = ({ mm, yyyy }: MonthDateParts): string => {
   const lastDayInPreviousMonth = 0
-  return new Date(yyyy, mm, lastDayInPreviousMonth).getDate()
+  return new Date(parseInt(yyyy, 10), parseInt(mm, 10), lastDayInPreviousMonth)
+    .getDate()
+    .toString()
 }
 
-export const forceValidDay = ({ dd, mm, yyyy } = {}) => {
-  const maxDays = getDaysInMonth({ mm, yyyy })
-  const day = num(dd)
-  return isNaN(day) ? '' : day > maxDays ? maxDays : day < 1 ? 1 : day
+// TODO: verify these are ok without the fallback obj in param
+export const forceValidDay = (date?: DateParts): string => {
+  if (!date) return ''
+
+  const maxDays = parseInt(getDaysInMonth(date), 10)
+  const day = parseInt(date.dd, 10)
+  return isNaN(day)
+    ? ''
+    : day > maxDays
+    ? maxDays.toString()
+    : day < 1
+    ? '1'
+    : day.toString()
 }
 
-export const forceValidMonth = ({ mm } = {}) => {
-  const month = num(mm)
-  return isNaN(month) ? '' : month > 12 ? 12 : month < 1 ? 1 : month
+// TODO: verify these are ok without the fallback obj in param
+export const forceValidMonth = (date?: Pick<DateParts, 'mm'>): string => {
+  if (!date) return ''
+
+  const month = num(date.mm)
+  return isNaN(month)
+    ? ''
+    : month > 12
+    ? '12'
+    : month < 1
+    ? '1'
+    : month.toString()
 }
 
-export const forceValidYear = ({ yyyy } = {}) =>
-  isNaN(num(yyyy)) ? '' : new Date(yyyy, 1, 1).getFullYear()
+// TODO: verify these are ok without the fallback obj in param
+export const forceValidYear = (date?: Pick<DateParts, 'yyyy'>): string => {
+  if (!date) return ''
 
-export const getFirstDayOfWeekForMonth = ({ mm, yyyy }) =>
-  new Date(yyyy, num(mm) - 1, 1).getDay()
+  const year = num(date.yyyy)
+  return isNaN(year) ? '' : new Date(year, 1, 1).getFullYear().toString()
+}
 
-export const getPrevMonthYear = ({ mm, yyyy }) => {
+export const getFirstDayOfWeekForMonth = ({
+  mm,
+  yyyy
+}: MonthDateParts): string =>
+  new Date(num(yyyy), num(mm) - 1, 1).getDay().toString()
+
+// TODO: return full type with dd ? or just pick?
+export const getPrevMonthYear = ({ mm, yyyy }): MonthDateParts => {
   const month = num(mm)
   const year = num(yyyy)
   return {
-    mm: month - 1 < 1 ? 12 : month - 1,
-    yyyy: month - 1 < 1 ? year - 1 : year
+    mm: month - 1 < 1 ? '12' : (month - 1).toString(),
+    yyyy: month - 1 < 1 ? (year - 1).toString() : year.toString()
   }
 }
 
-export const getNextMonthYear = ({ mm, yyyy }) => {
+// TODO: return full type with dd ? or just pick?
+export const getNextMonthYear = ({ mm, yyyy }): MonthDateParts => {
   const month = num(mm)
   const year = num(yyyy)
   return {
-    mm: month + 1 > 12 ? 1 : month + 1,
-    yyyy: month + 1 > 12 ? year + 1 : year
+    mm: month + 1 > 12 ? '1' : (month + 1).toString(),
+    yyyy: month + 1 > 12 ? (year + 1).toString() : year.toString()
   }
 }
 
-export const getMonthName = mm =>
+export const getMonthName = (mm: string): string =>
   [
     null,
     'January',
@@ -59,7 +93,7 @@ export const getMonthName = mm =>
     'December'
   ][num(mm)]
 
-export const parseDate = value => {
+export const parseDate = (value?: string): DateParts => {
   const [mm, dd, yyyy] = (value || '').split('/')
   return mm && dd && yyyy
     ? {
@@ -70,8 +104,12 @@ export const parseDate = value => {
     : { dd: '', mm: '', yyyy: '' }
 }
 
-export const formatDate = ({ mm, dd, yyyy } = {}) =>
-  mm && dd && yyyy ? mm + '/' + dd + '/' + yyyy : null
+export const formatDate = (date?: DateParts) => {
+  if (!date) return
+
+  const { mm, dd, yyyy } = date
+  return mm && dd && yyyy ? mm + '/' + dd + '/' + yyyy : null
+}
 
 export function combineFns(...fns) {
   return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))

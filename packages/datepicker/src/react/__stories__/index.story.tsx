@@ -1,13 +1,12 @@
+import * as core from '@pluralsight/ps-design-system-core'
+import TextInput from '@pluralsight/ps-design-system-textinput'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
-
+// TODO: rm
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import * as core from '@pluralsight/ps-design-system-core'
-import TextInput from '@pluralsight/ps-design-system-textinput'
-
-import DatePicker from '../index.js'
+import DatePicker from '..'
 
 function StateDemo(props) {
   const [value, setValue] = React.useState(props.value)

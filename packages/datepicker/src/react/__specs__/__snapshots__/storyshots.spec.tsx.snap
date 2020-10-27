@@ -1782,13 +1782,13 @@ exports[`Storyshots value single slash-separated value 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder={12}
+        placeholder="12"
         style={
           Object {
             "width": "32px",
           }
         }
-        value={12}
+        value="12"
       />
       <span
         data-css-9eecwn=""
@@ -1802,13 +1802,13 @@ exports[`Storyshots value single slash-separated value 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder={7}
+        placeholder="7"
         style={
           Object {
             "width": "24px",
           }
         }
-        value={7}
+        value="7"
       />
       <span
         data-css-9eecwn=""
@@ -1822,13 +1822,13 @@ exports[`Storyshots value single slash-separated value 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder={1941}
+        placeholder="1941"
         style={
           Object {
             "width": "48px",
           }
         }
-        value={1941}
+        value="1941"
       />
       <input
         data-css-gyrv08=""
@@ -1998,13 +1998,13 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          placeholder={3}
+          placeholder="3"
           style={
             Object {
               "width": "32px",
             }
           }
-          value={3}
+          value="3"
         />
         <span
           data-css-9eecwn=""
@@ -2018,13 +2018,13 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          placeholder={15}
+          placeholder="15"
           style={
             Object {
               "width": "24px",
             }
           }
-          value={15}
+          value="15"
         />
         <span
           data-css-9eecwn=""
@@ -2038,13 +2038,13 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          placeholder={1995}
+          placeholder="1995"
           style={
             Object {
               "width": "48px",
             }
           }
-          value={1995}
+          value="1995"
         />
         <input
           data-css-gyrv08=""
