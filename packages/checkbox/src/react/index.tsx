@@ -1,10 +1,7 @@
+import { accessibility } from '@pluralsight/ps-design-system-core'
 import Halo from '@pluralsight/ps-design-system-halo'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import {
-  omit,
-  RefForwardingComponent,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { ValueOf, omit, useUniqueId } from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
 import React from 'react'
 
@@ -29,7 +26,7 @@ const styles: { [key: string]: StyleFn } = {
         css(stylesheet['.psds-checkbox__square--active'])
     ),
   icon: () => css(stylesheet['.psds-checkbox__icon']),
-  input: () => css(stylesheet['.psds-checkbox__input']),
+  input: () => css(accessibility.screenReaderOnly),
   label: (themeName, _props) =>
     compose(
       css(stylesheet['.psds-checkbox__label']),
@@ -57,17 +54,9 @@ interface CheckboxProps
   value: string | number
 }
 
-interface CheckboxStatics {}
-
-interface CheckboxComponent
-  extends RefForwardingComponent<
-    CheckboxProps,
-    HTMLInputElement,
-    CheckboxStatics
-  > {}
-
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (props, forwardedRef) => {
+    const id = useUniqueId('psds-checkbox-')
     const themeName = useTheme()
 
     const ref = React.useRef<HTMLInputElement>(null)
@@ -108,6 +97,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
 
     return (
       <label
+        htmlFor={id}
         onClick={props.disabled ? undefined : handleClick}
         onKeyDown={props.disabled ? undefined : handleKeyDown}
         {...styles.checkbox(themeName, props)}
@@ -135,22 +125,20 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
         </Halo>
 
         <input
+          id={id}
           readOnly
           ref={ref}
           tabIndex={-1}
           type="checkbox"
           value={props.value}
           {...styles.input(themeName, props)}
-          {...omit<
-            CheckboxProps,
-            ['label', 'onCheck', 'error', 'indeterminate']
-          >(props, ['label', 'onCheck', 'error', 'indeterminate'])}
+          {...omit(props, ['label', 'onCheck', 'error', 'indeterminate'])}
         />
         <div {...styles.label(themeName, props)}>{props.label}</div>
       </label>
     )
   }
-) as CheckboxComponent
+)
 
 export default Checkbox
 
