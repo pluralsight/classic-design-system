@@ -18,6 +18,12 @@ export { whitelistProps } from './props'
 export { shallowCompare } from './shallow-compare'
 export { capitalize } from './string'
 export { stylesFor } from './styles'
+export { uniqueId } from './unique-id'
+
+export {
+  useCloseOnDocumentEvents,
+  onGlobalEventsClose
+} from './use-close-on-document-events'
 export { useCombinedRefs } from './use-combined-refs'
 export { useHasMounted } from './use-has-mounted'
 export { useMatchMedia } from './use-match-media'
@@ -25,7 +31,4 @@ export { usePortal } from './use-portal'
 export { usePrevious } from './use-previous'
 export { useResizeObserver } from './use-resize-observer'
 export { useToggle } from './use-toggle'
-export {
-  useCloseOnDocumentEvents,
-  onGlobalEventsClose
-} from './use-close-on-document-events'
+export { useUniqueId } from './use-unique-id'
