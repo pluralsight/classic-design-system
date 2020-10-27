@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { isFunction } from '.'
+import { isFunction } from './is-function'
 
 export const combineFns = <Params extends any[]>(
   ...fns: (Callback<Params> | undefined)[]

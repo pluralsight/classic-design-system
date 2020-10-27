@@ -1,5 +1,5 @@
 import { MutableRefObject, useEffect } from 'react'
-import { canUseDOM } from '.'
+import { canUseDOM } from './can-use-dom'
 
 type Callback = (evt: Event | MouseEvent | UIEvent) => void
 

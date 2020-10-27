@@ -1,5 +1,5 @@
 import { KeyboardEventHandler, useCallback, createRef } from 'react'
-import { useCombinedRefs } from '..'
+import { useCombinedRefs } from '../use-combined-refs'
 
 export const searchListItem = <E extends Element>(
   el?: E,

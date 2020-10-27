@@ -2,7 +2,8 @@ import { canUseDOM } from 'exenv'
 import { RefObject, useEffect, useState } from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
 
-import { combineFns, debounce } from '.'
+import { combineFns } from './combine-fns'
+import { debounce } from './debounce'
 
 export function useResizeObserver(
   ref: RefObject<HTMLElement>,

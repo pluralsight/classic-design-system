@@ -1,7 +1,7 @@
 import { ReactNode, ReactPortal } from 'react'
 import { createPortal } from 'react-dom'
 
-import { canUseDOM } from '.'
+import { canUseDOM } from './can-use-dom'
 
 export function createUniversalPortal(
   children: ReactNode,

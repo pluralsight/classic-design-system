@@ -6,7 +6,7 @@ import {
   cloneElement
 } from 'react'
 
-import { isCallbackRef, isRef } from '.'
+import { isCallbackRef, isRef } from './is-ref'
 
 export const cloneElementWithRef = <
   P extends HTMLAttributes<T>,
