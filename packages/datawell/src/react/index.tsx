@@ -36,7 +36,6 @@ const styles = {
 }
 
 interface DataWellProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode
   label: string
   subLabel?: React.ReactNode
 }
