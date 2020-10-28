@@ -1,3 +1,3 @@
-export function isFunction(fn: unknown) {
-  return typeof fn === 'function'
+export function isFunction(val: unknown): val is Function {
+  return typeof val === 'function'
 }
