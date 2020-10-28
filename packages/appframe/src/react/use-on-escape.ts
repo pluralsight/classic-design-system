@@ -3,7 +3,7 @@ import { canUseEventListeners } from 'exenv'
 
 const ESCAPE_KEY = 27
 
-export default function useOnEscape(handler) {
+export default function useOnEscape(handler: (evt: KeyboardEvent) => void) {
   const handleKeyDown = useCallback(
     evt => {
       if (evt.keyCode === ESCAPE_KEY) handler(evt)

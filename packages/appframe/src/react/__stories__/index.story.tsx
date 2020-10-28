@@ -1,14 +1,15 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
 
+// @ts-ignore: TODO: update typings
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import AppFrame from '../index.js'
-import { MockContent, SideNav, TopNav } from './shared.js'
+import AppFrame from '..'
+import { MockContent, SideNav, TopNav } from './shared'
 
 storiesOf('AppFrame', module)
-  .add('scrollable sidenav', _ => (
+  .add('scrollable sidenav', () => (
     <AppFrame
       topnav={<TopNav />}
       sidenav={
@@ -21,7 +22,7 @@ storiesOf('AppFrame', module)
       <MockContent />
     </AppFrame>
   ))
-  .add('sidenav controlled', _ => {
+  .add('sidenav controlled', () => {
     function Story() {
       const [sidenavOpen, setOpen] = useState(false)
 
@@ -55,7 +56,7 @@ storiesOf('AppFrame', module)
       <MockContent />
     </AppFrame>
   ))
-  .add('short content', _ => (
+  .add('short content', () => (
     <AppFrame
       sidenav={<SideNav collapsed />}
       sidenavOpen={false}
@@ -69,7 +70,7 @@ storiesOf('AppFrame', module)
       </PageWidthLayout>
     </AppFrame>
   ))
-  .add('no sidenav', _ => (
+  .add('no sidenav', () => (
     <AppFrame topnav={<TopNav />}>
       <MockContent />
     </AppFrame>
