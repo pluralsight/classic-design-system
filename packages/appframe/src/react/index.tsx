@@ -2,7 +2,7 @@ import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React, {
   HTMLAttributes,
-  ReactChild,
+  ReactNode,
   createContext,
   useCallback,
   useContext,
@@ -90,10 +90,10 @@ type RenderProp<P extends Record<string, unknown>> = (
 interface AppFrameProps extends HTMLAttributes<HTMLDivElement> {
   onRequestSideNavClose?: () => void
   onRequestSideNavOpen?: () => void
-  sidenav?: ReactChild | RenderProp<{ visible: boolean }>
+  sidenav?: ReactNode | RenderProp<{ visible: boolean }>
   sidenavOpen?: boolean
   topnav?:
-    | ReactChild
+    | ReactNode
     | RenderProp<
         Pick<
           AppFrameContextValue,
@@ -125,7 +125,10 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
   } = props
 
   const ref = React.useRef<HTMLDivElement>(null)
-  useImperativeHandle(forwardedRef, () => ref.current!)
+  useImperativeHandle(
+    forwardedRef,
+    () => (ref.current as unknown) as HTMLDivElement
+  )
 
   const themeName = useTheme()
 
@@ -264,8 +267,6 @@ interface SideNavStatics {
 }
 const SideNav: React.FC<SideNavProps> & SideNavStatics = props => {
   const { sidenavVariants: variants } = vars
-
-  const { children: _children, ...rest } = props
   const children = props.children as SideNavProps['children']
 
   const { closeSidenav, openSidenav, sidenavVariant } = useContext(
@@ -300,7 +301,7 @@ const SideNav: React.FC<SideNavProps> & SideNavStatics = props => {
       <div
         ref={ref}
         {...styles.sidenav(variant)}
-        {...rest}
+        {...props}
         {...(hoverable && {
           onMouseEnter: () => setHovered(true),
           onMouseLeave: () => setHovered(false)
@@ -323,7 +324,6 @@ interface TopNavProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const TopNav: React.FC<TopNavProps> = props => {
-  const { children: _children, ...rest } = props
   const children = props.children as TopNavProps['children']
   const { closeSidenav, openSidenav, sidenavOpen } = useContext(AppFrameContext)
 
@@ -331,8 +331,10 @@ const TopNav: React.FC<TopNavProps> = props => {
 
   return (
     <Theme name={Theme.names.dark}>
-      <div {...styles.topnav()} {...rest}>
-        {isFunction(children) ? children(meta) : children}
+      <div {...styles.topnav()} {...props}>
+        {isFunction<[typeof meta], ReactNode>(children)
+          ? children(meta)
+          : children}
       </div>
     </Theme>
   )
