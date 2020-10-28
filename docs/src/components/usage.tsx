@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { A } from './mdx'
+import { A } from './mdx/links'
 import * as styles from './usage.module.css'
 
 interface UsageProps {

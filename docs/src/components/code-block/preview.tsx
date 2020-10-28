@@ -6,7 +6,7 @@ import { Language } from 'prism-react-renderer'
 import React, { HTMLAttributes, useContext } from 'react'
 import { LiveError, LiveProvider, LivePreview } from 'react-live'
 
-import { CodeBlockContext } from './index'
+import { CodeBlockContext } from './context'
 import styles from './styles.module.css'
 import { mapPackageNameToScopes } from './package-map'
 
