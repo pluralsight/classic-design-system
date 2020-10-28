@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.5.0...@pluralsight/ps-design-system-util@5.6.0) (2020-10-28)
+
+
+### Features
+
+* **util:** add unique id util ([6a99152](https://github.com/pluralsight/design-system/commit/6a991522e0fe933b08576fd5988dfe386aa154a7))
+
+
+
+
+
 # [5.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.4.2...@pluralsight/ps-design-system-util@5.5.0) (2020-10-26)
 
 

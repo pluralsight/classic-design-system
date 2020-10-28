@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.3...@pluralsight/ps-design-system-checkbox@6.2.4) (2020-10-28)
+
+
+### Bug Fixes
+
+* **checkbox:** fix a11y by role markup ([72eb767](https://github.com/pluralsight/design-system/commit/72eb76739978d61a99c8c94ab1589a5d536ba85e))
+
+
+
+
+
 ## [6.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.2...@pluralsight/ps-design-system-checkbox@6.2.3) (2020-10-26)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
