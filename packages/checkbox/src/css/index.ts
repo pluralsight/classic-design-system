@@ -114,11 +114,6 @@ export default {
     fill: colorsTextIcon.highOnDark
   },
 
-  // __input
-  '.psds-checkbox__input': {
-    display: 'none'
-  },
-
   // __label
   '.psds-checkbox__label': {
     marginLeft: layout.spacingSmall,

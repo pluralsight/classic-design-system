@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import DataWell from '../index.js'
+import DataWell from '..'
 
 describe('DataWell', () => {
   it('renders', () => {
@@ -15,7 +15,7 @@ describe('DataWell', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
     render(
       <DataWell ref={ref} label="Dog count">
