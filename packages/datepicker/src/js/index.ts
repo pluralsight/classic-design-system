@@ -13,7 +13,6 @@ export const getDaysInMonth = ({ mm, yyyy }: MonthDateParts): string => {
     .toString()
 }
 
-// TODO: verify these are ok without the fallback obj in param
 export const forceValidDay = (date?: DateParts): string => {
   if (!date) return ''
 
@@ -28,7 +27,6 @@ export const forceValidDay = (date?: DateParts): string => {
     : day.toString()
 }
 
-// TODO: verify these are ok without the fallback obj in param
 export const forceValidMonth = (date?: Pick<DateParts, 'mm'>): string => {
   if (!date) return ''
 
@@ -42,7 +40,6 @@ export const forceValidMonth = (date?: Pick<DateParts, 'mm'>): string => {
     : month.toString()
 }
 
-// TODO: verify these are ok without the fallback obj in param
 export const forceValidYear = (date?: Pick<DateParts, 'yyyy'>): string => {
   if (!date) return ''
 
@@ -56,7 +53,6 @@ export const getFirstDayOfWeekForMonth = ({
 }: MonthDateParts): string =>
   new Date(num(yyyy), num(mm) - 1, 1).getDay().toString()
 
-// TODO: return full type with dd ? or just pick?
 export const getPrevMonthYear = ({
   mm,
   yyyy
@@ -69,7 +65,6 @@ export const getPrevMonthYear = ({
   }
 }
 
-// TODO: return full type with dd ? or just pick?
 export const getNextMonthYear = ({
   mm,
   yyyy

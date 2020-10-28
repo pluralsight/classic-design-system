@@ -2,8 +2,6 @@ import * as core from '@pluralsight/ps-design-system-core'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
-// TODO: rm
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import DatePicker from '..'
@@ -25,8 +23,6 @@ function StateDemo(props: { value?: string }) {
     </div>
   )
 }
-
-StateDemo.propTypes = { value: PropTypes.string }
 
 storiesOf('labels', module)
   .add('none', () => (

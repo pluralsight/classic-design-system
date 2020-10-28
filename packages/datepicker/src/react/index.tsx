@@ -1,4 +1,3 @@
-// TODO: don't forget strict
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
@@ -11,8 +10,6 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-// TODO: rm
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import Calendar from './calendar'
@@ -405,7 +402,6 @@ export interface DateParts {
   dd: string
   yyyy: string
 }
-// TODO: type with keyof?
 type DatePartKey = 'dd' | 'mm' | 'yyyy'
 function isValidDate({ mm, dd, yyyy }: DateParts) {
   const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd))
