@@ -852,7 +852,7 @@ exports[`Storyshots Sample Form sample 1`] = `
       >
         <label
           data-css-kn3wr0=""
-          htmlFor="psds-checkbox-m39ujz1gg"
+          htmlFor="psds-checkbox-unique-id"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -882,7 +882,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           <input
             checked={true}
             data-css-6wu9td=""
-            id="psds-checkbox-m39ujz1gg"
+            id="psds-checkbox-unique-id"
             readOnly={true}
             style={
               Object {
