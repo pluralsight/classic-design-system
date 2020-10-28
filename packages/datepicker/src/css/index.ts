@@ -146,7 +146,7 @@ export default {
   },
 
   // __calendar
-  '.psds-date-picker__calendar': ({ slide }) => ({
+  '.psds-date-picker__calendar': ({ slide }: { slide: string }) => ({
     position: 'relative',
     zIndex: '0',
     width: '286px',

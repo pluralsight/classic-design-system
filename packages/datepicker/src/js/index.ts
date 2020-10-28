@@ -1,9 +1,9 @@
 import { DateParts } from '../react'
 import { MonthDateParts } from '../react/calendar'
 
-const num = n => parseInt(n, 10)
+const num = (n: string) => parseInt(n, 10)
 
-export const arrayOf = (num: string): undefined[] =>
+export const arrayOf = (num: string): unknown[] =>
   Array.apply(null, Array(parseInt(num, 10) || 0))
 
 export const getDaysInMonth = ({ mm, yyyy }: MonthDateParts): string => {
@@ -57,7 +57,10 @@ export const getFirstDayOfWeekForMonth = ({
   new Date(num(yyyy), num(mm) - 1, 1).getDay().toString()
 
 // TODO: return full type with dd ? or just pick?
-export const getPrevMonthYear = ({ mm, yyyy }): MonthDateParts => {
+export const getPrevMonthYear = ({
+  mm,
+  yyyy
+}: MonthDateParts): MonthDateParts => {
   const month = num(mm)
   const year = num(yyyy)
   return {
@@ -67,7 +70,10 @@ export const getPrevMonthYear = ({ mm, yyyy }): MonthDateParts => {
 }
 
 // TODO: return full type with dd ? or just pick?
-export const getNextMonthYear = ({ mm, yyyy }): MonthDateParts => {
+export const getNextMonthYear = ({
+  mm,
+  yyyy
+}: MonthDateParts): MonthDateParts => {
   const month = num(mm)
   const year = num(yyyy)
   return {
@@ -78,7 +84,7 @@ export const getNextMonthYear = ({ mm, yyyy }): MonthDateParts => {
 
 export const getMonthName = (mm: string): string =>
   [
-    null,
+    '',
     'January',
     'February',
     'March',
@@ -104,27 +110,19 @@ export const parseDate = (value?: string): DateParts => {
     : { dd: '', mm: '', yyyy: '' }
 }
 
-export const formatDate = (date?: DateParts) => {
+export const formatDate = (date?: DateParts): string | undefined => {
   if (!date) return
 
   const { mm, dd, yyyy } = date
-  return mm && dd && yyyy ? mm + '/' + dd + '/' + yyyy : null
+  return mm && dd && yyyy ? mm + '/' + dd + '/' + yyyy : undefined
 }
 
-export function combineFns(...fns) {
-  return (...args) => fns.filter(isFunction).forEach(fn => fn(...args))
-}
-
-export function isFunction(fn) {
-  return typeof fn === 'function'
-}
-
-export function isNil(val) {
+export function isNil(val: any) {
   // NOTE: i know this isn't strict equality, it's by design to also get NaN
   return val == null
 }
 
-export function shallowEqual(a, b) {
+export function shallowEqual(a: any, b: any) {
   if (a === b) return true
   if (isNil(a) || isNil(b)) return false
 

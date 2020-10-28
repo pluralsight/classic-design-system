@@ -13,7 +13,6 @@ exports[`Storyshots appearance default 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -33,7 +32,6 @@ exports[`Storyshots appearance default 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -53,7 +51,6 @@ exports[`Storyshots appearance default 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -68,13 +65,11 @@ exports[`Storyshots appearance default 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -114,7 +109,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -134,7 +128,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -154,7 +147,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -169,13 +161,11 @@ exports[`Storyshots appearance default w/ error 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -229,7 +219,6 @@ exports[`Storyshots appearance subtle 1`] = `
     >
       <input
         data-css-18at7l7=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -249,7 +238,6 @@ exports[`Storyshots appearance subtle 1`] = `
       </span>
       <input
         data-css-18at7l7=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -269,7 +257,6 @@ exports[`Storyshots appearance subtle 1`] = `
       </span>
       <input
         data-css-18at7l7=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -284,13 +271,11 @@ exports[`Storyshots appearance subtle 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-1uq4y8i=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -330,7 +315,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
     >
       <input
         data-css-18at7l7=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -350,7 +334,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       </span>
       <input
         data-css-18at7l7=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -370,7 +353,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       </span>
       <input
         data-css-18at7l7=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -385,13 +367,11 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-1uq4y8i=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -451,7 +431,6 @@ exports[`Storyshots disabled compare 1`] = `
       >
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -471,7 +450,6 @@ exports[`Storyshots disabled compare 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -491,7 +469,6 @@ exports[`Storyshots disabled compare 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -506,13 +483,11 @@ exports[`Storyshots disabled compare 1`] = `
         />
         <input
           data-css-gyrv08=""
-          disabled={false}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
         />
         <button
           data-css-3txxwd=""
-          disabled={false}
           onClick={[Function]}
         >
           <div
@@ -611,7 +586,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-gyrv08=""
           disabled={true}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
         />
         <button
           data-css-3txxwd=""
@@ -664,7 +639,6 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
         >
           <input
             data-css-1ynlp2p=""
-            disabled={false}
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -684,7 +658,6 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
           </span>
           <input
             data-css-1ynlp2p=""
-            disabled={false}
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -704,7 +677,6 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
           </span>
           <input
             data-css-1ynlp2p=""
-            disabled={false}
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -719,13 +691,11 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
           />
           <input
             data-css-gyrv08=""
-            disabled={false}
             readOnly={true}
-            tabIndex="-1"
+            tabIndex={-1}
           />
           <button
             data-css-3txxwd=""
-            disabled={false}
             onClick={[Function]}
           >
             <div
@@ -790,7 +760,6 @@ exports[`Storyshots labels label 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -810,7 +779,6 @@ exports[`Storyshots labels label 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -830,7 +798,6 @@ exports[`Storyshots labels label 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -845,13 +812,11 @@ exports[`Storyshots labels label 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -891,7 +856,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -911,7 +875,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -931,7 +894,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -946,13 +908,11 @@ exports[`Storyshots labels label and subLabel 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -992,7 +952,6 @@ exports[`Storyshots labels none 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1012,7 +971,6 @@ exports[`Storyshots labels none 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1032,7 +990,6 @@ exports[`Storyshots labels none 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1047,14 +1004,11 @@ exports[`Storyshots labels none 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
-        onSelect={[Function]}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -1089,7 +1043,6 @@ exports[`Storyshots labels subLabel 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1109,7 +1062,6 @@ exports[`Storyshots labels subLabel 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1129,7 +1081,6 @@ exports[`Storyshots labels subLabel 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1144,13 +1095,11 @@ exports[`Storyshots labels subLabel 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -1209,7 +1158,6 @@ exports[`Storyshots layouts full width 1`] = `
       >
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1229,7 +1177,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1249,7 +1196,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1264,13 +1210,11 @@ exports[`Storyshots layouts full width 1`] = `
         />
         <input
           data-css-gyrv08=""
-          disabled={false}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
         />
         <button
           data-css-3txxwd=""
-          disabled={false}
           onClick={[Function]}
         >
           <div
@@ -1313,7 +1257,6 @@ exports[`Storyshots layouts full width 1`] = `
       >
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1333,7 +1276,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1353,7 +1295,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1368,13 +1309,11 @@ exports[`Storyshots layouts full width 1`] = `
         />
         <input
           data-css-gyrv08=""
-          disabled={false}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
         />
         <button
           data-css-3txxwd=""
-          disabled={false}
           onClick={[Function]}
         >
           <div
@@ -1436,7 +1375,6 @@ exports[`Storyshots layouts full width 1`] = `
       >
         <input
           data-css-18at7l7=""
-          disabled={false}
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1456,7 +1394,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-18at7l7=""
-          disabled={false}
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1476,7 +1413,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-18at7l7=""
-          disabled={false}
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1491,13 +1427,11 @@ exports[`Storyshots layouts full width 1`] = `
         />
         <input
           data-css-gyrv08=""
-          disabled={false}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
         />
         <button
           data-css-1uq4y8i=""
-          disabled={false}
           onClick={[Function]}
         >
           <div
@@ -1540,7 +1474,6 @@ exports[`Storyshots layouts full width 1`] = `
       >
         <input
           data-css-18at7l7=""
-          disabled={false}
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1560,7 +1493,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-18at7l7=""
-          disabled={false}
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1580,7 +1512,6 @@ exports[`Storyshots layouts full width 1`] = `
         </span>
         <input
           data-css-18at7l7=""
-          disabled={false}
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1595,13 +1526,11 @@ exports[`Storyshots layouts full width 1`] = `
         />
         <input
           data-css-gyrv08=""
-          disabled={false}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
         />
         <button
           data-css-1uq4y8i=""
-          disabled={false}
           onClick={[Function]}
         >
           <div
@@ -1671,7 +1600,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
         >
           <input
             data-css-18at7l7=""
-            disabled={false}
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1691,7 +1619,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
           </span>
           <input
             data-css-18at7l7=""
-            disabled={false}
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1711,7 +1638,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
           </span>
           <input
             data-css-18at7l7=""
-            disabled={false}
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1726,13 +1652,11 @@ exports[`Storyshots layouts right-aligned 1`] = `
           />
           <input
             data-css-gyrv08=""
-            disabled={false}
             readOnly={true}
-            tabIndex="-1"
+            tabIndex={-1}
           />
           <button
             data-css-1uq4y8i=""
-            disabled={false}
             onClick={[Function]}
           >
             <div
@@ -1777,7 +1701,6 @@ exports[`Storyshots value single slash-separated value 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1797,7 +1720,6 @@ exports[`Storyshots value single slash-separated value 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1817,7 +1739,6 @@ exports[`Storyshots value single slash-separated value 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -1832,14 +1753,12 @@ exports[`Storyshots value single slash-separated value 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
         value="12/07/1941"
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -1884,7 +1803,6 @@ exports[`Storyshots value updated value, no initial 1`] = `
       >
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1904,7 +1822,6 @@ exports[`Storyshots value updated value, no initial 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1924,7 +1841,6 @@ exports[`Storyshots value updated value, no initial 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1939,14 +1855,11 @@ exports[`Storyshots value updated value, no initial 1`] = `
         />
         <input
           data-css-gyrv08=""
-          disabled={false}
-          onSelect={[Function]}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
         />
         <button
           data-css-3txxwd=""
-          disabled={false}
           onClick={[Function]}
         >
           <div
@@ -1993,7 +1906,6 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
       >
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -2013,7 +1925,6 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -2033,7 +1944,6 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
-          disabled={false}
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -2048,15 +1958,12 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         />
         <input
           data-css-gyrv08=""
-          disabled={false}
-          onSelect={[Function]}
           readOnly={true}
-          tabIndex="-1"
+          tabIndex={-1}
           value="3/15/1995"
         />
         <button
           data-css-3txxwd=""
-          disabled={false}
           onClick={[Function]}
         >
           <div
@@ -2092,7 +1999,6 @@ exports[`Storyshots whitelist name 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -2112,7 +2018,6 @@ exports[`Storyshots whitelist name 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -2132,7 +2037,6 @@ exports[`Storyshots whitelist name 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -2147,14 +2051,12 @@ exports[`Storyshots whitelist name 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         name="myFieldNameOfPower"
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div
@@ -2189,7 +2091,6 @@ exports[`Storyshots whitelist onChange 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -2209,7 +2110,6 @@ exports[`Storyshots whitelist onChange 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -2229,7 +2129,6 @@ exports[`Storyshots whitelist onChange 1`] = `
       </span>
       <input
         data-css-1ynlp2p=""
-        disabled={false}
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -2244,14 +2143,12 @@ exports[`Storyshots whitelist onChange 1`] = `
       />
       <input
         data-css-gyrv08=""
-        disabled={false}
         onChange={[Function]}
         readOnly={true}
-        tabIndex="-1"
+        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""
-        disabled={false}
         onClick={[Function]}
       >
         <div

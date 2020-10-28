@@ -20,7 +20,6 @@ import {
   getPrevMonthYear,
   getMonthName,
   getFirstDayOfWeekForMonth,
-  isFunction,
   shallowEqual
 } from '../js'
 export type MonthDateParts = Pick<DateParts, 'mm' | 'yyyy'>
@@ -32,7 +31,7 @@ const slide = keyframes(
 const styles = {
   calendar: () => css(stylesheet['.psds-date-picker__calendar']({ slide })),
   days: () => css(stylesheet['.psds-date-picker__calendar__days']),
-  day: isSelected =>
+  day: (isSelected: boolean) =>
     compose(
       css(stylesheet['.psds-date-picker__calendar__day']),
       isSelected &&
@@ -50,12 +49,12 @@ const styles = {
 
 interface CalendarProps {
   date: DateParts
-  onSelect: (newDateString: string, newDateParts: DateParts) => void
+  onSelect: (value: string | undefined) => void
 }
 const Calendar: React.FC<CalendarProps> = props => {
   const { date, onSelect, ...rest } = props
-  const ref = React.useRef<HTMLDivElement>()
-  const selectedDayRef = React.useRef<HTMLButtonElement>()
+  const ref = React.useRef<HTMLDivElement>(null)
+  const selectedDayRef = React.useRef<HTMLButtonElement>(null)
 
   const initialDisplayed = React.useMemo<DateParts>(
     function getDerivedDisplayedDate() {
@@ -83,32 +82,33 @@ const Calendar: React.FC<CalendarProps> = props => {
   )
 
   React.useEffect(function focusCurrentOnMount() {
-    if (selectedDayRef.current) selectedDayRef.current.focus()
-    else ref.current.focus()
+    const current = selectedDayRef.current as HTMLButtonElement
+    if (current) current.focus()
+    else if (ref.current) ref.current.focus()
   }, [])
 
-  function handlePrevClick(evt) {
+  function handlePrevClick(evt: React.MouseEvent) {
     evt.preventDefault()
 
     const nextDisplayed = getPrevMonthYear(displayed)
     setDisplayed(nextDisplayed)
   }
 
-  function handleNextClick(evt) {
+  function handleNextClick(evt: React.MouseEvent) {
     evt.preventDefault()
 
     const nextDisplayed = getNextMonthYear(displayed)
     setDisplayed(nextDisplayed)
   }
 
-  function handleDayClick(evt, dd) {
+  function handleDayClick(evt: React.MouseEvent, dd: string) {
     evt.preventDefault()
 
     const nextSelected = { ...displayed, dd }
     setSelected(nextSelected)
 
-    if (isFunction(onSelect)) {
-      onSelect(formatDate(nextSelected), nextSelected)
+    if (typeof onSelect === 'function') {
+      onSelect(formatDate(nextSelected))
     }
   }
 
@@ -155,9 +155,10 @@ const Calendar: React.FC<CalendarProps> = props => {
             return (
               <button
                 key={i}
-                onClick={evt => handleDayClick(evt, currentDate.dd)}
+                onClick={evt => handleDayClick(evt, currentDate.dd.toString())}
                 {...styles.day(isSelected)}
                 {...(isSelected && { ref: selectedDayRef })}
+                ref={selectedDayRef}
               >
                 {currentDate.dd}
               </button>

@@ -1,13 +1,15 @@
 // TODO: don't forget strict
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
+import {
+  combineFns,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-// TODO: rm
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { compose, css } from 'glamor'
 // TODO: rm
 import PropTypes from 'prop-types'
@@ -16,12 +18,10 @@ import React from 'react'
 import Calendar from './calendar'
 import stylesheet from '../css'
 import {
-  combineFns,
   formatDate,
   forceValidDay,
   forceValidMonth,
   forceValidYear,
-  isFunction,
   parseDate
 } from '../js'
 import * as vars from '../vars'
@@ -29,20 +29,26 @@ import * as vars from '../vars'
 const styles = {
   calendarContainer: () =>
     css(stylesheet['.psds-date-picker__calendar-container']),
-  datePicker: (props, themeName) =>
+  datePicker: (
+    disabled: boolean | undefined,
+    themeName: ValueOf<typeof themeNames>
+  ) =>
     compose(
       css(stylesheet['.psds-date-picker']),
       css(stylesheet[`.psds-date-picker.psds-theme--${themeName}`]),
-      props.disabled && css(stylesheet['.psds-date-picker--disabled'])
+      disabled && css(stylesheet['.psds-date-picker--disabled'])
     ),
   error: () => compose(css(stylesheet['.psds-date-picker__error'])),
   field: () => compose(css(stylesheet['.psds-date-picker__field'])),
-  fieldContainer: (props, themeName) =>
+  fieldContainer: (
+    appearance: ValueOf<typeof vars.appearances>,
+    themeName: ValueOf<typeof themeNames>
+  ) =>
     compose(
       css(stylesheet['.psds-date-picker__field-container']),
       css(
         stylesheet[
-          `.psds-date-picker__field-container--appearance-${props.appearance}`
+          `.psds-date-picker__field-container--appearance-${appearance}`
         ]
       ),
       css(
@@ -51,25 +57,21 @@ const styles = {
         ]
       )
     ),
-  label: themeName =>
+  label: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet['.psds-date-picker__label']),
       css(stylesheet[`.psds-date-picker__label.psds-theme--${themeName}`])
     ),
-  icon: (props, themeName) =>
+  icon: (appearance: ValueOf<typeof vars.appearances>) =>
     compose(
       css(stylesheet['.psds-date-picker__icon']),
-      css(stylesheet[`.psds-date-picker__icon--appearance-${props.appearance}`])
+      css(stylesheet[`.psds-date-picker__icon--appearance-${appearance}`])
     ),
   overlay: () => css(stylesheet['.psds-date-picker__overlay']),
-  subField: props =>
+  subField: (appearance: ValueOf<typeof vars.appearances>) =>
     compose(
       css(stylesheet['.psds-date-picker__sub-field']),
-      css(
-        stylesheet[
-          `.psds-date-picker__sub-field--appearance-${props.appearance}`
-        ]
-      )
+      css(stylesheet[`.psds-date-picker__sub-field--appearance-${appearance}`])
     ),
   subFieldDivider: (appearance: ValueOf<typeof vars.appearances>) =>
     compose(
@@ -80,7 +82,7 @@ const styles = {
         ]
       )
     ),
-  subLabel: themeName =>
+  subLabel: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet['.psds-date-picker__sub-label']),
       css(stylesheet[`.psds-date-picker__sub-label.psds-theme--${themeName}`])
@@ -91,13 +93,15 @@ interface DatePickerProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onSelect'>,
     Record<string, unknown> {
   appearance?: ValueOf<typeof vars.appearances>
-  className?: string
   disabled?: boolean
   error?: boolean
   label?: React.ReactNode
   onKeyDown?: (evt: React.KeyboardEvent) => void
-  onSelect?: (newDateString: string, newDateParts: DateParts) => void
-  onSubBlur?: (date: string, evt: React.FocusEvent) => void
+  onSelect?: (
+    newDateString: string | undefined,
+    newDateParts?: DateParts
+  ) => void
+  onSubBlur?: (date: string | undefined, evt: React.FocusEvent) => void
   subLabel?: React.ReactNode
   value?: string
 }
@@ -114,6 +118,19 @@ interface DatePickerComponent
   > {}
 
 const DatePicker = React.forwardRef((props, ref) => {
+  const {
+    appearance = vars.appearances.default,
+    disabled,
+    error,
+    className,
+    label,
+    onSelect,
+    onSubBlur,
+    style,
+    subLabel,
+    ...rest
+  } = props
+
   const themeName = useTheme()
   const value = React.useMemo(() => parseDate(props.value), [props.value])
 
@@ -126,39 +143,51 @@ const DatePicker = React.forwardRef((props, ref) => {
 
   const [date, setDate] = React.useState<DateParts>(value)
 
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState<boolean>(false)
   const toggleIsOpen = (nextIsOpen = !isOpen) => setIsOpen(nextIsOpen)
 
-  function handleCalendarSelect(value) {
+  function handleCalendarSelect(value: string | undefined) {
     const nextDate = parseDate(value)
     setDate(nextDate)
     setIsOpen(false)
 
-    if (isFunction(props.onSelect)) {
+    if (typeof props.onSelect === 'function') {
       props.onSelect(formatDate(nextDate), nextDate)
     }
   }
 
-  function handleChange(evt) {
-    const { name, value } = evt.target
-    const updateRules = {
-      mm: /^\d{0,2}$/,
-      dd: /^\d{0,2}$/,
-      yyyy: /^\d{0,4}$/
+  function chooseValidationRule(key: DatePartKey) {
+    switch (key) {
+      case 'mm':
+        return /^\d{0,2}$/
+        break
+      case 'dd':
+        return /^\d{0,2}$/
+        break
+      case 'yyyy':
+        return /^\d{0,4}$/
+        break
+      default:
+        return /^IMPAWSIBLE$/
     }
+  }
 
-    if (updateRules[name] && updateRules[name].test(value)) {
+  function handleChange(evt: React.ChangeEvent) {
+    const target = evt.target as HTMLInputElement
+    const name = target.name as DatePartKey
+    const value = target.value
+
+    if (chooseValidationRule(name).test(value)) {
       const nextDate = { ...date, [name]: value }
       setDate(nextDate)
     }
   }
 
-  function handleIconClick(evt) {
+  function handleIconClick(evt: React.MouseEvent) {
     evt.preventDefault()
-    toggleIsOpen()
   }
 
-  const handleKeyDown = combineFns(evt => {
+  const handleKeyDown = combineFns((evt: React.KeyboardEvent) => {
     if (!isEscape(evt)) return
 
     evt.stopPropagation()
@@ -167,18 +196,25 @@ const DatePicker = React.forwardRef((props, ref) => {
     setIsOpen(false)
   }, props.onKeyDown)
 
-  function handleOverlayClick(evt) {
+  function handleOverlayClick(evt: React.MouseEvent) {
     evt.preventDefault()
     setIsOpen(false)
   }
 
-  function handleSubFieldBlur(evt) {
-    const { name, value } = evt.target
-    const forceValidValueFor = {
+  function handleSubFieldBlur(evt: React.FocusEvent) {
+    const target = evt.target as HTMLInputElement
+    const name = target.name as DatePartKey
+    const value = target.value
+    const forceValidValueFor: {
+      dd: (date?: DateParts | undefined) => string
+      mm: (date?: Pick<DateParts, 'mm'> | undefined) => string
+      yyyy: (date?: Pick<DateParts, 'yyyy'> | undefined) => string
+    } = {
       dd: forceValidDay,
       mm: forceValidMonth,
       yyyy: forceValidYear
     }
+    // TODO: maybe rework this to be less bug prone and make it typeable at the same time
     const currentDateOverwrittenByEventValue = {
       ...date,
       [name]: value
@@ -187,10 +223,10 @@ const DatePicker = React.forwardRef((props, ref) => {
       currentDateOverwrittenByEventValue
     )
 
-    const nextDate = {
+    const nextDate = ({
       dd: alwaysReValidateDay,
       [name]: forceValidValueFor[name](currentDateOverwrittenByEventValue)
-    } as DateParts
+    } as unknown) as DateParts
 
     const onBlurDate = {
       ...currentDateOverwrittenByEventValue,
@@ -199,9 +235,11 @@ const DatePicker = React.forwardRef((props, ref) => {
 
     setDate(nextDate)
 
-    isFunction(props.onSubBlur) && props.onSubBlur(formatDate(onBlurDate), evt)
-    if (isValidDate(nextDate) && isFunction(props.onSelect)) {
-      props.onSelect(formatDate(nextDate), nextDate)
+    if (typeof onSubBlur === 'function') {
+      onSubBlur(formatDate(onBlurDate), evt)
+    }
+    if (isValidDate(nextDate) && typeof onSelect === 'function') {
+      onSelect(formatDate(nextDate), nextDate)
     }
   }
 
@@ -209,74 +247,72 @@ const DatePicker = React.forwardRef((props, ref) => {
     setIsOpen(false)
   }
 
-  const { className, style, ...rest } = props
-
   return (
     <label
-      {...styles.datePicker(props, themeName)}
+      {...styles.datePicker(disabled, themeName)}
       className={className}
       onKeyDown={handleKeyDown}
       style={style}
     >
-      {props.label && <div {...styles.label(themeName)}>{props.label}</div>}
+      {label && <div {...styles.label(themeName)}>{label}</div>}
 
-      <Halo error={props.error} gapSize={Halo.gapSizes.small}>
-        <div {...styles.fieldContainer(props, themeName)}>
+      <Halo error={error} gapSize={Halo.gapSizes.small}>
+        <div {...styles.fieldContainer(appearance, themeName)}>
           <SubField
-            appearance={props.appearance}
+            appearance={appearance}
             onChange={handleChange}
             onFocus={handleSubFieldFocus}
             onBlur={handleSubFieldBlur}
             value={date.mm}
             name="mm"
-            disabled={props.disabled}
+            disabled={disabled}
             style={{ width: '32px' }}
           />
 
-          <SubFieldDivider appearance={props.appearance} />
+          <SubFieldDivider appearance={appearance} />
 
           <SubField
-            appearance={props.appearance}
+            appearance={appearance}
             onChange={handleChange}
             onFocus={handleSubFieldFocus}
             onBlur={handleSubFieldBlur}
             value={date.dd}
             name="dd"
-            disabled={props.disabled}
+            disabled={disabled}
             style={{ width: '24px' }}
           />
 
-          <SubFieldDivider appearance={props.appearance} />
+          <SubFieldDivider appearance={appearance} />
 
           <SubField
-            appearance={props.appearance}
+            appearance={appearance}
             onChange={handleChange}
             onFocus={handleSubFieldFocus}
             onBlur={handleSubFieldBlur}
             value={date.yyyy}
             name="yyyy"
-            disabled={props.disabled}
+            disabled={disabled}
             style={{ width: '48px' }}
           />
 
           <input
             {...styles.field()}
-            {...filterReactProps(rest, { tagName: 'input' })}
-            tabIndex="-1"
+            {...rest}
+            tabIndex={-1}
             readOnly
-            disabled={props.disabled}
+            disabled={disabled}
             ref={ref}
           />
 
           <button
-            {...styles.icon(props, themeName)}
-            disabled={props.disabled}
+            {...styles.icon(appearance)}
+            disabled={disabled}
             onClick={handleIconClick}
           >
             <CalendarIcon />
           </button>
 
-          {props.error && (
+          {error && (
             <div {...styles.error()}>
               <WarningIcon />
             </div>
@@ -294,9 +330,7 @@ const DatePicker = React.forwardRef((props, ref) => {
         </>
       )}
 
-      {props.subLabel && (
-        <div {...styles.subLabel(themeName)}>{props.subLabel}</div>
-      )}
+      {subLabel && <div {...styles.subLabel(themeName)}>{subLabel}</div>}
     </label>
   )
 }) as DatePickerComponent
@@ -304,17 +338,13 @@ const DatePicker = React.forwardRef((props, ref) => {
 DatePicker.appearances = vars.appearances
 export const appearances = DatePicker.appearances
 
-// TODO: replace
-DatePicker.defaultProps = {
-  appearance: DatePicker.appearances.default,
-  disabled: false,
-  error: false
-}
-
 export default DatePicker
 
-function Overlay(props) {
-  return <div {...styles.overlay()} {...props} />
+interface OverlayProps {
+  onClick: (evt: React.MouseEvent) => void
+}
+const Overlay: React.FC<OverlayProps> = props => {
+  return <div {...styles.overlay()} onClick={props.onClick} />
 }
 
 interface SubFieldProps
@@ -331,18 +361,33 @@ interface SubFieldProps
   value?: string | number
 }
 const SubField: React.FC<SubFieldProps> = props => {
-  const ref = React.useRef<HTMLInputElement>()
-  const handleFocus = combineFns(() => {
-    ref.current.select()
-  }, props.onFocus)
+  const {
+    appearance,
+    disabled,
+    name,
+    onBlur,
+    onChange,
+    onFocus,
+    value,
+    ...rest
+  } = props
+  const ref = React.useRef<HTMLInputElement>(null)
+  const handleFocus = combineFns<[React.FocusEvent]>(() => {
+    if (ref.current) ref.current.select()
+  }, onFocus)
 
   return (
     <input
-      {...styles.subField(props)}
-      {...filterReactProps(props, { tagName: 'input' })}
+      {...styles.subField(appearance)}
+      {...rest}
+      disabled={disabled}
+      name={name}
+      onBlur={onBlur}
+      onChange={onChange}
       onFocus={handleFocus}
-      placeholder={props.value || props.name}
+      placeholder={(value || name).toString()}
       ref={ref}
+      value={value}
     />
   )
 }
@@ -360,6 +405,8 @@ export interface DateParts {
   dd: string
   yyyy: string
 }
+// TODO: type with keyof?
+type DatePartKey = 'dd' | 'mm' | 'yyyy'
 function isValidDate({ mm, dd, yyyy }: DateParts) {
   const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd))
   const someFields = mm || dd || yyyy
