@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.6.0...@pluralsight/ps-design-system-util@5.7.0) (2020-10-29)
+
+
+### Features
+
+* **util:** update function type guard ([b1d57e4](https://github.com/pluralsight/design-system/commit/b1d57e43b39c112b8e386a8889272685ab34be47))
+* **util:** update function util with typeguard ([60794d6](https://github.com/pluralsight/design-system/commit/60794d61c8b8c9b2d32a7138cca1021945cfcace))
+
+
+
+
+
+# [5.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.5.0...@pluralsight/ps-design-system-util@5.6.0) (2020-10-28)
+
+
+### Features
+
+* **util:** add unique id util ([6a99152](https://github.com/pluralsight/design-system/commit/6a991522e0fe933b08576fd5988dfe386aa154a7))
+
+
+
+
+
 # [5.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.4.2...@pluralsight/ps-design-system-util@5.5.0) (2020-10-26)
 
 

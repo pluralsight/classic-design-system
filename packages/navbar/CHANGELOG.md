@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@1.2.4...@pluralsight/ps-design-system-navbar@1.2.5) (2020-10-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navbar
+
+
+
+
+
+## [1.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@1.2.3...@pluralsight/ps-design-system-navbar@1.2.4) (2020-10-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navbar
+
+
+
+
+
 ## [1.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@1.2.2...@pluralsight/ps-design-system-navbar@1.2.3) (2020-10-26)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navbar
