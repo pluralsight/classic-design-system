@@ -1,3 +1,4 @@
+import { axe } from 'jest-axe'
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
@@ -22,6 +23,13 @@ describe('Checkbox', () => {
     render(<Checkbox label="test label" value="test value" ref={ref} />)
 
     expect(ref.current).not.toBeNull()
+  })
+
+  it('passes a basic a11y audit', async () => {
+    const { container } = render(<Checkbox label="test-label" />)
+    const results = await axe(container)
+
+    expect(results).toHaveNoViolations()
   })
 
   it('is accessible by role', () => {
