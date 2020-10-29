@@ -80,6 +80,7 @@ const Calendar: React.FC<CalendarProps> = props => {
   )
 
   React.useEffect(function focusCurrentOnMount() {
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     const current = selectedDayRef.current as HTMLButtonElement
     if (current) current.focus()
     else if (ref.current) ref.current.focus()

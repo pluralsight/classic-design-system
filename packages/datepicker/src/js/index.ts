@@ -3,6 +3,7 @@ import { DateParts, MonthDateParts } from './types'
 const num = (n: string) => parseInt(n, 10)
 
 export const arrayOf = (num: string): unknown[] =>
+  // eslint-disable-next-line prefer-spread
   Array.apply(null, Array(parseInt(num, 10) || 0))
 
 export const getDaysInMonth = ({ mm, yyyy }: MonthDateParts): string => {
