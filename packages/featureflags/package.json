@@ -17,6 +17,7 @@
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
+  "types": "dist/esm/index.d.ts",
   "dependencies": {},
   "peerDependencies": {
     "react": ">=16.8.6 < 17.0.0"
