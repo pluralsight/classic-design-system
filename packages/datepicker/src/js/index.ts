@@ -18,26 +18,20 @@ export const forceValidDay = (date?: DateParts): string => {
 
   const maxDays = parseInt(getDaysInMonth(date), 10)
   const day = parseInt(date.dd, 10)
-  return isNaN(day)
-    ? ''
-    : day > maxDays
-    ? maxDays.toString()
-    : day < 1
-    ? '1'
-    : day.toString()
+  if (isNaN(day)) return ''
+  else if (day > maxDays) return maxDays.toString()
+  else if (day < 1) return '1'
+  else return day.toString()
 }
 
 export const forceValidMonth = (date?: Pick<DateParts, 'mm'>): string => {
   if (!date) return ''
 
   const month = num(date.mm)
-  return isNaN(month)
-    ? ''
-    : month > 12
-    ? '12'
-    : month < 1
-    ? '1'
-    : month.toString()
+  if (isNaN(month)) return ''
+  else if (month > 12) return '12'
+  else if (month < 1) return '1'
+  else return month.toString()
 }
 
 export const forceValidYear = (date?: Pick<DateParts, 'yyyy'>): string => {
