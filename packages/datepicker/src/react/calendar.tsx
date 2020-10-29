@@ -1,5 +1,4 @@
-import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
+import { compose, css, keyframes } from 'glamor'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -9,7 +8,8 @@ import {
 } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
+import { DateParts, MonthDateParts } from '../js/types'
 
 import {
   arrayOf,
@@ -19,54 +19,58 @@ import {
   getPrevMonthYear,
   getMonthName,
   getFirstDayOfWeekForMonth,
-  isFunction,
   shallowEqual
-} from '../js/index.js'
+} from '../js'
 
-const slide = css.keyframes(
+const slide = keyframes(
   stylesheet['@keyframes psds-date-picker__calendar__keyframes__slide']
 )
 
 const styles = {
-  calendar: _ => css(stylesheet['.psds-date-picker__calendar']({ slide })),
-  days: _ => css(stylesheet['.psds-date-picker__calendar__days']),
-  day: ({ isSelected }) =>
+  calendar: () => css(stylesheet['.psds-date-picker__calendar']({ slide })),
+  days: () => css(stylesheet['.psds-date-picker__calendar__days']),
+  day: (isSelected: boolean) =>
     compose(
       css(stylesheet['.psds-date-picker__calendar__day']),
       isSelected &&
         css(stylesheet['.psds-date-picker__calendar__day--selected'])
     ),
-  skippedDay: _ => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
-  switcher: _ => css(stylesheet['.psds-date-picker__calendar__switcher']),
-  switcherMonth: _ =>
+  skippedDay: () => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
+  switcher: () => css(stylesheet['.psds-date-picker__calendar__switcher']),
+  switcherMonth: () =>
     css(stylesheet['.psds-date-picker__calendar__switcher__month']),
-  weekHeading: _ =>
+  weekHeading: () =>
     css(stylesheet['.psds-date-picker__calendar__week-heading']),
-  weekHeadingDay: _ =>
+  weekHeadingDay: () =>
     css(stylesheet['.psds-date-picker__calendar__week-heading__day'])
 }
 
-function Calendar(props) {
-  const ref = React.useRef()
-  const selectedDayRef = React.useRef()
+interface CalendarProps {
+  date: DateParts
+  onSelect: (value: string | undefined) => void
+}
+const Calendar: React.FC<CalendarProps> = props => {
+  const { date, onSelect, ...rest } = props
+  const ref = React.useRef<HTMLDivElement>(null)
+  const selectedDayRef = React.useRef<HTMLButtonElement>(null)
 
-  const { date } = props
-
-  const initialDisplayed = React.useMemo(
+  const initialDisplayed = React.useMemo<DateParts>(
     function getDerivedDisplayedDate() {
       const today = new Date()
 
       return {
         dd: date.dd,
-        mm: date.mm || today.getMonth() + 1,
-        yyyy: date.yyyy || today.getFullYear()
+        mm: date.mm || (today.getMonth() + 1).toString(),
+        yyyy: date.yyyy || today.getFullYear().toString()
       }
     },
     [date]
   )
 
-  const [displayed, setDisplayed] = React.useState(initialDisplayed)
-  const [selected, setSelected] = React.useState(date)
+  const [displayed, setDisplayed] = React.useState<MonthDateParts>(
+    initialDisplayed
+  )
+  const [selected, setSelected] = React.useState<DateParts>(date)
 
   React.useEffect(
     function updateSelectedOnPropChange() {
@@ -76,39 +80,41 @@ function Calendar(props) {
   )
 
   React.useEffect(function focusCurrentOnMount() {
-    if (selectedDayRef.current) selectedDayRef.current.focus()
-    else ref.current.focus()
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+    const current = selectedDayRef.current as HTMLButtonElement
+    if (current) current.focus()
+    else if (ref.current) ref.current.focus()
   }, [])
 
-  function handlePrevClick(evt) {
+  function handlePrevClick(evt: React.MouseEvent) {
     evt.preventDefault()
 
     const nextDisplayed = getPrevMonthYear(displayed)
     setDisplayed(nextDisplayed)
   }
 
-  function handleNextClick(evt) {
+  function handleNextClick(evt: React.MouseEvent) {
     evt.preventDefault()
 
     const nextDisplayed = getNextMonthYear(displayed)
     setDisplayed(nextDisplayed)
   }
 
-  function handleDayClick(evt, dd) {
+  function handleDayClick(evt: React.MouseEvent, dd: string) {
     evt.preventDefault()
 
     const nextSelected = { ...displayed, dd }
     setSelected(nextSelected)
 
-    if (isFunction(props.onSelect)) {
-      props.onSelect(formatDate(nextSelected), nextSelected)
+    if (typeof onSelect === 'function') {
+      onSelect(formatDate(nextSelected))
     }
   }
 
   return (
     <Theme name={Theme.names.light}>
-      <div {...styles.calendar(props)} {...props} ref={ref} tabIndex={-1}>
-        <div {...styles.switcher(props)}>
+      <div {...styles.calendar()} {...rest} ref={ref} tabIndex={-1}>
+        <div {...styles.switcher()}>
           <Button
             onClick={handlePrevClick}
             icon={<CaretLeftIcon />}
@@ -116,7 +122,7 @@ function Calendar(props) {
             appearance={Button.appearances.flat}
           />
 
-          <div {...styles.switcherMonth(props)}>
+          <div {...styles.switcherMonth()}>
             {getMonthName(displayed.mm)} {displayed.yyyy}
           </div>
 
@@ -128,17 +134,17 @@ function Calendar(props) {
           />
         </div>
 
-        <div {...styles.weekHeading(props)}>
+        <div {...styles.weekHeading()}>
           {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-            <div {...styles.weekHeadingDay(props)} key={day}>
+            <div {...styles.weekHeadingDay()} key={day}>
               {day}
             </div>
           ))}
         </div>
 
-        <div {...styles.days(props)}>
+        <div {...styles.days()}>
           {arrayOf(getFirstDayOfWeekForMonth(displayed)).map((_, i) => (
-            <div key={i} {...styles.skippedDay(props)} />
+            <div key={i} {...styles.skippedDay()} />
           ))}
 
           {arrayOf(getDaysInMonth(displayed)).map((_, i) => {
@@ -148,9 +154,10 @@ function Calendar(props) {
             return (
               <button
                 key={i}
-                onClick={evt => handleDayClick(evt, currentDate.dd)}
-                {...styles.day({ isSelected })}
+                onClick={evt => handleDayClick(evt, currentDate.dd.toString())}
+                {...styles.day(isSelected)}
                 {...(isSelected && { ref: selectedDayRef })}
+                ref={selectedDayRef}
               >
                 {currentDate.dd}
               </button>
@@ -160,15 +167,6 @@ function Calendar(props) {
       </div>
     </Theme>
   )
-}
-
-Calendar.propTypes = {
-  date: PropTypes.shape({
-    dd: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    mm: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    yyyy: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-  }).isRequired,
-  onSelect: PropTypes.func
 }
 
 export default Calendar
