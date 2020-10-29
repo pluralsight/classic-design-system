@@ -1,7 +1,11 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 
-export const FeatureFlagsContext = React.createContext({
+interface FeatureFlagsContextValue {
+  flags: Record<string, unknown>
+}
+export const FeatureFlagsContext = React.createContext<
+  FeatureFlagsContextValue
+>({
   flags: {}
 })
 
@@ -10,21 +14,16 @@ export function useFeatureFlags() {
   return context
 }
 
-function FeatureFlags(props) {
-  const context = { flags: props.flags }
+interface FeatureFlagsProps {
+  flags: Record<string, unknown>
+}
+const FeatureFlags: React.FC<FeatureFlagsProps> = props => {
+  const context = { flags: props.flags || {} }
   return (
     <FeatureFlagsContext.Provider value={context}>
       {props.children}
     </FeatureFlagsContext.Provider>
   )
-}
-
-FeatureFlags.propTypes = {
-  children: PropTypes.any,
-  flags: PropTypes.object
-}
-FeatureFlags.defaultProps = {
-  flags: {}
 }
 
 export default FeatureFlags

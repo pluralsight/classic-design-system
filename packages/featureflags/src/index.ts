@@ -1,1 +1,1 @@
-export { default, useFeatureFlags } from './react/index.js'
+export { default, useFeatureFlags } from './react'
