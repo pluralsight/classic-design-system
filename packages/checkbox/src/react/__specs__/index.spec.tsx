@@ -23,4 +23,15 @@ describe('Checkbox', () => {
 
     expect(ref.current).not.toBeNull()
   })
+
+  it('is accessible by role', () => {
+    const { getByRole } = render(
+      <>
+        <Checkbox label="First" name="first" value="value" />
+        <Checkbox label="Second" name="second" value="value" />
+      </>
+    )
+
+    expect(getByRole('checkbox', { name: /first/i })).toBeInTheDocument()
+  })
 })

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-errors",
-  "version": "8.1.2",
+  "version": "8.2.2",
   "description": "Design system components for errors",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -10,9 +10,9 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "build": "run-s build:svg build:esm build:cjs build:css",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
+    "build:cjs": "babel --extensions \".js,.ts,.tsx\" --root-mode upward src --out-dir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build:esm": "cross-env ESM=true babel --extensions \".js,.ts,.tsx\" --root-mode upward src --out-dir dist/esm",
     "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/icons src/svg",
     "build:watch": "yarn build:js -- --watch",
     "storybook": "start-storybook -p 6006",
@@ -22,10 +22,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^18.4.2",
+    "@pluralsight/ps-design-system-button": "^19.0.1",
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-icon": "^19.0.0",
-    "@pluralsight/ps-design-system-text": "^16.1.2",
+    "@pluralsight/ps-design-system-icon": "^19.0.2",
+    "@pluralsight/ps-design-system-text": "^16.1.4",
     "camelize": "^1.0.0",
     "prop-types": "^15.7.2"
   },
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.1",
     "@pluralsight/ps-design-system-normalize": "^4.1.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.2",
-    "@pluralsight/ps-design-system-theme": "^5.1.2"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.4",
+    "@pluralsight/ps-design-system-theme": "^6.0.1"
   }
 }

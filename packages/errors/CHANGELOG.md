@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@8.2.1...@pluralsight/ps-design-system-errors@8.2.2) (2020-10-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-errors
+
+
+
+
+
+## [8.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@8.2.0...@pluralsight/ps-design-system-errors@8.2.1) (2020-10-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-errors
+
+
+
+
+
+# [8.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@8.1.2...@pluralsight/ps-design-system-errors@8.2.0) (2020-10-26)
+
+
+### Features
+
+* **errors:** ts conversion ([c5742f5](https://github.com/pluralsight/design-system/commit/c5742f5edea0297ab814b66e90497d3ef0e0dfa1))
+* **tooltip:** ts conversion ([a8b95cb](https://github.com/pluralsight/design-system/commit/a8b95cb15dec8c0c3bc0be794416fbb81fa72ae1))
+* update imports remove and _ params ([2f5011a](https://github.com/pluralsight/design-system/commit/2f5011a0015250d3a3df28d4aa57cfd8d740df7b))
+* **errors:** change extension ([10c337c](https://github.com/pluralsight/design-system/commit/10c337cf80e256959dc370d2a33dfd038d40fc1f))
+* change extensions ([9554c58](https://github.com/pluralsight/design-system/commit/9554c58d9c2b7737579cdd2939ad5b200381ff0b))
+
+
+
+
+
 ## [8.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@8.1.1...@pluralsight/ps-design-system-errors@8.1.2) (2020-10-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors

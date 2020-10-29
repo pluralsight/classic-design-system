@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-collapsible",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "Collapsible UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -18,7 +18,6 @@
     "test:watch": "yarn test -- --watchAll"
   },
   "types": "dist/esm/index.d.ts",
-  "dependencies": {},
   "peerDependencies": {
     "react": "^16.8.6"
   },

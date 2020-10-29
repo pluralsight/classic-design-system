@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.4.0...@pluralsight/ps-design-system-dialog@8.4.1) (2020-10-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
+# [8.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.3.2...@pluralsight/ps-design-system-dialog@8.4.0) (2020-10-26)
+
+
+### Features
+
+* requested pr changes ([35cc723](https://github.com/pluralsight/design-system/commit/35cc72391adac7b6c3586d3f20f4ba919a74c4ab))
+* **dialog:** change extensions ([1ccdab8](https://github.com/pluralsight/design-system/commit/1ccdab8ffd402370051b17a6d99bcf69bff8a813))
+* **dialog:** config updates ([bea3bc8](https://github.com/pluralsight/design-system/commit/bea3bc881ab408e9e1ce46b6a7e893e4a49a5030))
+* **dialog:** ts conversion ([538adf2](https://github.com/pluralsight/design-system/commit/538adf2b77152be612372cc18b103a617d8af5af))
+* **dialog:** ts conversion ([665b666](https://github.com/pluralsight/design-system/commit/665b666c54079c9af50f47720bb87281a46f41b5))
+
+
+
+
+
 ## [8.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.3.1...@pluralsight/ps-design-system-dialog@8.3.2) (2020-10-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "14.1.2",
+  "version": "14.1.4",
   "description": "Design System component for card ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -8,8 +8,6 @@
   "keywords": [],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "style": "dist/index.css",
-  "types": "dist/esm/index.d.ts",
   "scripts": {
     "build": "run-s build:cjs build:esm build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
@@ -20,11 +18,13 @@
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
     "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
-    "@pluralsight/ps-design-system-icon": "^19.0.0",
-    "@pluralsight/ps-design-system-util": "^5.4.2",
+    "@pluralsight/ps-design-system-icon": "^19.0.2",
+    "@pluralsight/ps-design-system-util": "^5.6.0",
     "focus-within": "^3.0.2",
     "shiitake": "^3.0.2"
   },
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.2",
-    "@pluralsight/ps-design-system-theme": "^5.1.2"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.4",
+    "@pluralsight/ps-design-system-theme": "^6.0.1"
   }
 }

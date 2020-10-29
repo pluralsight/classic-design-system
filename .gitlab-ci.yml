@@ -46,6 +46,7 @@ lint:
   stage: lint
   script:
     - yarn danger:ci
+    - yarn deps:check:circular
     - yarn lint:ci
 
 test:
