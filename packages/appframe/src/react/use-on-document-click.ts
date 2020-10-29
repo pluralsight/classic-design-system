@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
 import { canUseEventListeners } from 'exenv'
 
-export default function useOnDocumentClick(handler) {
+export type Callback = (evt: TouchEvent | MouseEvent) => void
+
+export default function useOnDocumentClick(handler: Callback) {
   useEffect(() => {
     if (!canUseEventListeners) return
 
