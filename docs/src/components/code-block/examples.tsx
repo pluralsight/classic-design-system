@@ -4,8 +4,7 @@ import * as Text from '@pluralsight/ps-design-system-text'
 import frontmatter from '@github-docs/frontmatter'
 import React, { useContext, useState } from 'react'
 
-import { CodeBlockContext } from './index'
-import { H2 } from '../mdx'
+import { H2 } from '../mdx/headings'
 
 import {
   Actions,
@@ -15,6 +14,7 @@ import {
   CodeSandboxAction,
   ExpandAction
 } from './actions'
+import { CodeBlockContext } from './context'
 import { Editor } from './editor'
 import { Preview } from './preview'
 import styles from './styles.module.css'
@@ -33,7 +33,7 @@ interface ExamplesSwitcherProps {
 export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
   const [selectedOption, setSelectedOption] = useState(props.examples[0].value)
 
-  function handleDropdownChange(_evt: React.ChangeEvent, value: string) {
+  function handleDropdownChange(_evt, value: string) {
     setSelectedOption(value)
   }
 
