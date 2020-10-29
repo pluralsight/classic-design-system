@@ -1,9 +1,17 @@
-import { useCallback, useEffect, useState } from 'react'
+import { RefObject, useCallback, useEffect, useState } from 'react'
 import { canUseEventListeners, canUseDOM } from 'exenv'
 
 import { usePrevious } from '@pluralsight/ps-design-system-util'
 
-export default function useOnInnerFocus(ref, { onEnter, onLeave }) {
+interface EventHandlers {
+  onEnter: () => void
+  onLeave: () => void
+}
+
+export default function useOnInnerFocus<El extends HTMLElement>(
+  ref: RefObject<El>,
+  { onEnter, onLeave }: EventHandlers
+) {
   const refContainsActiveElement = useCallback(() => {
     if (!canUseDOM || !ref.current) return false
 
@@ -40,4 +48,4 @@ export default function useOnInnerFocus(ref, { onEnter, onLeave }) {
   }, [handleFocus])
 }
 
-const exists = val => typeof val !== 'undefined'
+const exists = (val: unknown) => typeof val !== 'undefined'

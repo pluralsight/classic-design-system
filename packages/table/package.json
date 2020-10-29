@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "9.1.4",
+  "version": "9.1.6",
   "description": "Design System component for table ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,21 +20,21 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-drawer": "^7.3.4",
+    "@pluralsight/ps-design-system-drawer": "^7.3.6",
     "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
-    "@pluralsight/ps-design-system-icon": "^19.0.2",
+    "@pluralsight/ps-design-system-icon": "^19.0.4",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
-    "@pluralsight/ps-design-system-theme": "^4.0.0",
+    "@pluralsight/ps-design-system-theme": "^6.0.0",
     "glamor": "^2.20.40",
     "react": "^16.8.6"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-link": "^10.3.4",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.4",
-    "@pluralsight/ps-design-system-theme": "^6.0.1"
+    "@pluralsight/ps-design-system-link": "^10.3.6",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.6",
+    "@pluralsight/ps-design-system-theme": "^6.0.2"
   }
 }

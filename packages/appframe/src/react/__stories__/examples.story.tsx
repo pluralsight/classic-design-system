@@ -7,11 +7,10 @@ import {
   BrowseIcon,
   PlaceholderIcon
 } from '@pluralsight/ps-design-system-icon'
+import { useMatchMedia } from '@pluralsight/ps-design-system-util'
 
-import AppFrame from '../index.js'
-import { MockContent, SideNav, TopNav } from './shared.js'
-
-import useMatchMedia from '../use-match-media.js'
+import AppFrame from '..'
+import { MockContent, SideNav, TopNav } from './shared'
 
 storiesOf('AppFrame|Examples', module).add('Skills', () => {
   function Story() {
