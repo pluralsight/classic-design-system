@@ -15,7 +15,7 @@ export function useFeatureFlags() {
 }
 
 interface FeatureFlagsProps {
-  flags: Record<string, unknown>
+  flags?: Record<string, unknown>
 }
 const FeatureFlags: React.FC<FeatureFlagsProps> = props => {
   const context = { flags: props.flags || {} }

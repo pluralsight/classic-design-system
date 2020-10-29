@@ -5,7 +5,9 @@ import React from 'react'
 import FeatureFlags, { useFeatureFlags } from '..'
 
 describe('FeatureFlags', () => {
-  function MockComponent(props) {
+  const MockComponent: React.FC<React.ComponentProps<
+    typeof FeatureFlags
+  >> = props => {
     const { flags } = useFeatureFlags()
     const flagsStr = Object.keys(flags).reduce(
       (str, key) => str + key + ':' + flags[key] + ',',
