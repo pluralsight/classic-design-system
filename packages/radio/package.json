@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
-    "@pluralsight/ps-design-system-theme": "^4.0.0",
+    "@pluralsight/ps-design-system-theme": "^6.0.0",
     "glamor": "^2.20.40",
     "react": "^16.8.6"
   },
