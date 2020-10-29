@@ -1,5 +1,4 @@
-import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
+import React, { Fragment, HTMLAttributes } from 'react'
 
 import {
   colorsBorder,
@@ -10,17 +9,23 @@ import {
 import {
   PageHeadingLayout,
   PageWidthLayout
+  // @ts-ignore: TODO: update typings
 } from '@pluralsight/ps-design-system-layout'
 
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+
+// @ts-ignore: TODO: update typings
 import NavBar from '@pluralsight/ps-design-system-navbar'
+// @ts-ignore: TODO: update typings
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
+// @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
+// @ts-ignore: TODO: update typings
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import * as Text from '@pluralsight/ps-design-system-text'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 
-export function MockContent() {
+export const MockContent: React.FC = () => {
   return (
     <>
       <div style={{ background: colorsPink[6] }}>
@@ -133,8 +138,82 @@ export function MockContent() {
     </>
   )
 }
-export function SideNav(props) {
-  const { children, collapsed, sections, ...rest } = props
+
+interface SideNavProps extends HTMLAttributes<HTMLDivElement> {
+  collapsed?: boolean
+  sections?: Section[]
+}
+
+interface Section {
+  header?: SectionHeader
+  items: SectionItem[]
+}
+interface SectionHeader {
+  href?: string
+  id: string
+  icon?: React.ReactElement
+  title: string
+}
+interface SectionItem {
+  collapsible?: boolean
+  href?: string
+  id: string
+  icon?: React.ReactElement
+  subItems?: SectionSubItem[]
+  title: string
+}
+interface SectionSubItem {
+  href?: string
+  icon?: React.ReactElement
+  id: string
+  title: string
+}
+
+const defaultSections: Section[] = [
+  {
+    header: {
+      href: '#',
+      icon: <PlaceholderIcon />,
+      id: 'section-header',
+      title: 'Section Header'
+    },
+    items: [
+      {
+        href: '#',
+        icon: <PlaceholderIcon />,
+        id: 'section-item__first',
+        title: 'First Item',
+        subItems: [
+          {
+            href: '#',
+            icon: <PlaceholderIcon />,
+            id: 'section-subitem__first',
+            title: 'First SubItem'
+          },
+          {
+            href: '#',
+            icon: <PlaceholderIcon />,
+            id: 'section-subitem__second',
+            title: 'Second SubItem'
+          }
+        ]
+      },
+      {
+        href: '#',
+        icon: <PlaceholderIcon />,
+        id: 'section-item__second',
+        title: 'Second Item'
+      }
+    ]
+  }
+]
+export const SideNav: React.FC<SideNavProps> = props => {
+  const {
+    children,
+    collapsed = false,
+    sections = defaultSections,
+    ...rest
+  } = props
 
   return (
     <div {...rest}>
@@ -188,77 +267,11 @@ export function SideNav(props) {
   )
 }
 
-SideNav.defaultProps = {
-  collapsed: false,
-  sections: [
-    {
-      header: {
-        href: '#',
-        icon: <PlaceholderIcon />,
-        id: 'section-header',
-        title: 'Section Header'
-      },
-      items: [
-        {
-          href: '#',
-          icon: <PlaceholderIcon />,
-          id: 'section-item__first',
-          title: 'First Item',
-          subItems: [
-            {
-              href: '#',
-              icon: <PlaceholderIcon />,
-              id: 'section-subitem__first',
-              title: 'First SubItem'
-            },
-            {
-              href: '#',
-              icon: <PlaceholderIcon />,
-              id: 'section-subitem__second',
-              title: 'Second SubItem'
-            }
-          ]
-        },
-        {
-          href: '#',
-          icon: <PlaceholderIcon />,
-          id: 'section-item__second',
-          title: 'Second Item'
-        }
-      ]
-    }
-  ]
+interface SectionHeaderProps extends HTMLAttributes<HTMLDivElement> {
+  collapsed?: boolean
+  title: string
 }
-
-SideNav.propTypes = {
-  children: PropTypes.node,
-  collapsed: PropTypes.bool.isRequired,
-  sections: PropTypes.arrayOf(
-    PropTypes.shape({
-      header: PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired
-      }),
-      items: PropTypes.arrayOf(
-        PropTypes.shape({
-          collapsible: PropTypes.bool,
-          href: PropTypes.string,
-          icon: PropTypes.node,
-          id: PropTypes.string.isRequired,
-          subItems: PropTypes.arrayOf(
-            PropTypes.shape({
-              href: PropTypes.string,
-              id: PropTypes.string.isRequired,
-              title: PropTypes.string.isRequired
-            })
-          )
-        })
-      ).isRequired
-    })
-  )
-}
-
-export function SectionHeader(props) {
+export const SectionHeader: React.FC<SectionHeaderProps> = props => {
   const { collapsed = false, title, ...rest } = props
 
   return (
@@ -277,12 +290,8 @@ export function SectionHeader(props) {
   )
 }
 
-SectionHeader.propTypes = {
-  collapsed: PropTypes.bool,
-  title: PropTypes.string.isRequired
-}
-
-export function SectionDivider(props) {
+interface SectionDividerProps extends HTMLAttributes<HTMLDivElement> {}
+export const SectionDivider: React.FC<SectionDividerProps> = props => {
   return (
     <div
       style={{ height: 1, borderBottom: `1px solid ${colorsBorder.lowOnDark}` }}
@@ -291,11 +300,30 @@ export function SectionDivider(props) {
   )
 }
 
-export function TopNav(props) {
-  const { brand, children, onMobileMenuClick, items = [] } = props
+interface TopNavProps extends HTMLAttributes<HTMLDivElement> {
+  brand?: React.ReactNode
+  onMobileMenuClick?: React.MouseEventHandler
+  items?: TopNavItem[]
+}
+
+interface TopNavItem {
+  href?: string
+  id: string
+  icon?: React.ReactNode
+  title: string
+}
+
+export const TopNav: React.FC<TopNavProps> = props => {
+  const {
+    brand = <SkillsBrand />,
+    children,
+    items = [],
+    onMobileMenuClick,
+    ...rest
+  } = props
 
   return (
-    <div>
+    <div {...rest}>
       <NavBar
         brand={brand}
         items={
@@ -324,47 +352,31 @@ export function TopNav(props) {
   )
 }
 
-TopNav.defaultProps = {
-  brand: <SkillsBrand />,
-  items: []
-}
-TopNav.propTypes = {
-  brand: PropTypes.node,
-  children: PropTypes.node,
-  onMobileMenuClick: PropTypes.func,
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string,
-      icon: PropTypes.node,
-      title: PropTypes.string.isRequired
-    })
-  )
-}
-
-export function SkillsBrand(props) {
-  function SkillsLogo() {
-    return (
-      <svg aria-hidden viewBox="0 0 32 32">
-        <defs>
-          <linearGradient
-            id="skills-gradient"
-            x1="45.6377"
-            y1="47.4727"
-            x2="-32.2436"
-            y2="-35.2537"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.03" stopColor="#F05A28" />
-            <stop offset="0.93" stopColor="#EB008B" />
-          </linearGradient>
-        </defs>
-        <path
-          d="M0 0V32H32V0H0ZM9.4053 12.7438L15.088 16L9.4053 19.287V12.7438ZM9.4053 24.8503V21.6468L19.1842 16L9.4053 10.3532V7.17166L24.6955 16L9.4053 24.8503Z"
-          fill="url(#skills-gradient)"
-        />
-      </svg>
-    )
-  }
-
+interface SkillsBrandProps extends HTMLAttributes<HTMLDivElement> {}
+export const SkillsBrand: React.FC<SkillsBrandProps> = props => {
   return <NavBrand {...props} logo={<SkillsLogo />} wordmark="SKILLS" />
+}
+
+export const SkillsLogo: React.FC = () => {
+  return (
+    <svg aria-hidden viewBox="0 0 32 32">
+      <defs>
+        <linearGradient
+          id="skills-gradient"
+          x1="45.6377"
+          y1="47.4727"
+          x2="-32.2436"
+          y2="-35.2537"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.03" stopColor="#F05A28" />
+          <stop offset="0.93" stopColor="#EB008B" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M0 0V32H32V0H0ZM9.4053 12.7438L15.088 16L9.4053 19.287V12.7438ZM9.4053 24.8503V21.6468L19.1842 16L9.4053 10.3532V7.17166L24.6955 16L9.4053 24.8503Z"
+        fill="url(#skills-gradient)"
+      />
+    </svg>
+  )
 }

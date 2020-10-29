@@ -1,7 +1,8 @@
-import { canUseDOM } from 'exenv'
 import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React, {
+  HTMLAttributes,
+  ReactNode,
   createContext,
   useCallback,
   useContext,
@@ -11,27 +12,31 @@ import React, {
   useRef,
   useState
 } from 'react'
-import PropTypes from 'prop-types'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 
 import Button from '@pluralsight/ps-design-system-button'
 import { breakpoints } from '@pluralsight/ps-design-system-core'
+// @ts-ignore: TODO: update scrollable typings
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import { isFunction, usePrevious } from '@pluralsight/ps-design-system-util'
+import {
+  RefForwardingComponent,
+  ValueOf,
+  canUseDOM,
+  isFunction,
+  useMatchMedia,
+  usePrevious
+} from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css/index.js'
-import polyfillElementClosest from '../js/polyfill-element-closest.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import polyfillElementClosest from '../js/polyfill-element-closest'
+import * as vars from '../vars'
 
-import useBodyScrollLock from './use-body-scroll-lock.js'
-import useMatchMedia from './use-match-media.js'
-import useOnClickOutside from './use-on-click-outside.js'
-import useOnEscape from './use-on-escape.js'
-import useOnInnerFocus from './use-on-inner-focus.js'
+import useBodyScrollLock from './use-body-scroll-lock'
+import useOnClickOutside from './use-on-click-outside'
+import useOnEscape from './use-on-escape'
+import useOnInnerFocus from './use-on-inner-focus'
 
-if (canUseDOM) {
+if (canUseDOM()) {
   polyfillElementClosest()
   polyfillFocusWithin(document)
 }
@@ -40,7 +45,7 @@ const SKIP_TARGET_ID = 'ps-appframe--skip-target'
 const TOP_NAV_ID = 'ps-appframe--topnav'
 
 const styles = {
-  appframe: (themeName, _props) =>
+  appframe: (themeName: ValueOf<typeof Theme.names>) =>
     compose(
       css(stylesheet['.psds-appframe']),
       css(stylesheet[`.psds-appframe.psds-theme--${themeName}`])
@@ -48,13 +53,13 @@ const styles = {
 
   skipBanner: () => css(stylesheet['.psds-appframe__skip-banner']),
 
-  container: variant =>
+  container: (variant: ValueOf<typeof vars.sidenavVariants>) =>
     compose(
       css(stylesheet['.psds-appframe__container']),
       variant && css(stylesheet[`.psds-appframe__container--${variant}`])
     ),
   content: () => css(stylesheet['.psds-appframe__content']),
-  sidenav: variant =>
+  sidenav: (variant: ValueOf<typeof vars.sidenavVariants>) =>
     compose(
       css(stylesheet['.psds-appframe__sidenav']),
       variant && css(stylesheet[`.psds-appframe__sidenav--${variant}`])
@@ -65,7 +70,48 @@ const styles = {
   topnav: () => css(stylesheet['.psds-appframe__topnav'])
 }
 
-const AppFrameContext = createContext()
+interface AppFrameContextValue {
+  closeSidenav: () => void
+  openSidenav: () => void
+  sidenavOpen: boolean | undefined
+  sidenavVariant: ValueOf<typeof vars.sidenavVariants>
+}
+const AppFrameContext = createContext<AppFrameContextValue>({
+  closeSidenav: () => {},
+  openSidenav: () => {},
+  sidenavOpen: undefined,
+  sidenavVariant: vars.sidenavVariants.closed
+})
+
+type RenderProp<P extends Record<string, unknown>> = (
+  props: P
+) => React.ReactNode
+
+interface AppFrameProps extends HTMLAttributes<HTMLDivElement> {
+  onRequestSideNavClose?: () => void
+  onRequestSideNavOpen?: () => void
+  sidenav?: ReactNode | RenderProp<{ visible: boolean }>
+  sidenavOpen?: boolean
+  topnav?:
+    | ReactNode
+    | RenderProp<
+        Pick<
+          AppFrameContextValue,
+          'closeSidenav' | 'openSidenav' | 'sidenavOpen'
+        >
+      >
+}
+interface AppFrameStatics {
+  SideNav: typeof SideNav
+  TopNav: typeof TopNav
+}
+
+interface AppFrameComponent
+  extends RefForwardingComponent<
+    AppFrameProps,
+    HTMLDivElement,
+    AppFrameStatics
+  > {}
 
 const AppFrame = React.forwardRef((props, forwardedRef) => {
   const {
@@ -73,11 +119,16 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
     onRequestSideNavClose,
     onRequestSideNavOpen,
     sidenav,
-    topnav
+    sidenavOpen: initialSidenavOpen,
+    topnav,
+    ...rest
   } = props
 
-  const ref = React.useRef()
-  useImperativeHandle(forwardedRef, () => ref.current)
+  const ref = React.useRef<HTMLDivElement>(null)
+  useImperativeHandle(
+    forwardedRef,
+    () => (ref.current as unknown) as HTMLDivElement
+  )
 
   const themeName = useTheme()
 
@@ -86,9 +137,9 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
   const prevLargeMedia = usePrevious(largeMedia)
 
   const defaultSidenavOpen = useMemo(() => {
-    const controlled = typeof props.sidenavOpen !== 'undefined'
-    return controlled ? props.sidenavOpen : largeMedia
-  }, [props.sidenavOpen, largeMedia])
+    const controlled = typeof initialSidenavOpen !== 'undefined'
+    return controlled ? initialSidenavOpen : largeMedia
+  }, [initialSidenavOpen, largeMedia])
 
   const [sidenavOpen, setSidenavOpen] = useState(defaultSidenavOpen)
 
@@ -107,7 +158,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
   }, [props.sidenavOpen, onRequestSideNavOpen])
 
   useEffect(() => {
-    const enteringXLarge = (prevLargeMedia !== largeMedia) & largeMedia
+    const enteringXLarge = prevLargeMedia !== largeMedia && largeMedia
     if (enteringXLarge) openSidenav()
   }, [prevLargeMedia, largeMedia, openSidenav])
 
@@ -130,7 +181,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
     }
   }, [sidenav, sidenavOpen, smallMedia, largeMedia])
 
-  const skipTargetRef = useRef()
+  const skipTargetRef = useRef<HTMLAnchorElement>(null)
 
   const focusSkipTarget = useCallback(() => {
     if (!skipTargetRef.current) return
@@ -147,11 +198,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
 
   return (
     <AppFrameContext.Provider value={contextValue}>
-      <div
-        ref={ref}
-        {...styles.appframe(themeName, props)}
-        {...filterReactProps(props)}
-      >
+      <div ref={ref} {...styles.appframe(themeName)} {...rest}>
         <SkipBanner href={'#' + SKIP_TARGET_ID} />
 
         <TopNav id={TOP_NAV_ID}>{topnav}</TopNav>
@@ -172,21 +219,15 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
       </div>
     </AppFrameContext.Provider>
   )
-})
+}) as AppFrameComponent
 
 AppFrame.displayName = 'AppFrame'
-AppFrame.defaultProps = {}
 
-AppFrame.propTypes = {
-  children: PropTypes.node,
-  onRequestSideNavClose: PropTypes.func,
-  onRequestSideNavOpen: PropTypes.func,
-  sidenav: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
-  sidenavOpen: PropTypes.bool,
-  topnav: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
+// TODO: why is there a an href here?
+interface SkipBannerProps extends HTMLAttributes<HTMLDivElement> {
+  href: string
 }
-
-function SkipBanner(props) {
+const SkipBanner: React.FC<SkipBannerProps> = props => {
   return (
     <Theme name={Theme.names.dark}>
       <div {...styles.skipBanner()} {...props}>
@@ -202,28 +243,32 @@ function SkipBanner(props) {
   )
 }
 
-SkipBanner.propTypes = {
-  href: PropTypes.string.isRequired
+interface SkipTargetProps extends HTMLAttributes<HTMLAnchorElement> {
+  id: string
 }
-
-const SkipTarget = React.forwardRef((props, ref) => {
-  return <a ref={ref} tabIndex={-1} {...props} />
-})
+const SkipTarget = React.forwardRef<HTMLAnchorElement, SkipTargetProps>(
+  (props, ref) => {
+    return <a ref={ref} tabIndex={-1} {...props} />
+  }
+)
 
 SkipTarget.displayName = 'SkipTarget'
-SkipTarget.propTypes = {
-  id: PropTypes.string.isRequired
-}
 
-function Container(props) {
+const Container: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
   const context = useContext(AppFrameContext)
   return <div {...styles.container(context.sidenavVariant)} {...props} />
 }
 
-function SideNav(props) {
+interface SideNavProps extends HTMLAttributes<HTMLDivElement> {
+  children: AppFrameProps['sidenav']
+}
+interface SideNavStatics {
+  variants: typeof vars.sidenavVariants
+}
+const SideNav: React.FC<SideNavProps> & SideNavStatics = props => {
   const { sidenavVariants: variants } = vars
+  const children = props.children as SideNavProps['children']
 
-  const { children, ...rest } = props
   const { closeSidenav, openSidenav, sidenavVariant } = useContext(
     AppFrameContext
   )
@@ -234,7 +279,7 @@ function SideNav(props) {
   const variant = hoverable && hovered ? variants.overlay : sidenavVariant
   const visible = variant === variants.overlay || variant === variants.open
 
-  const ref = React.useRef()
+  const ref = React.useRef<HTMLDivElement>(null)
 
   const overlayed = variant === variants.overlay
   useBodyScrollLock(ref, overlayed)
@@ -244,7 +289,8 @@ function SideNav(props) {
   }, [overlayed, closeSidenav])
 
   useOnClickOutside(ref, evt => {
-    const inTopNav = evt.target && !!evt.target.closest(`#${TOP_NAV_ID}`)
+    const target = evt.target as HTMLElement
+    const inTopNav = target && !!target.closest(`#${TOP_NAV_ID}`)
     if (!inTopNav) closeIfOverlayed()
   })
   useOnEscape(closeIfOverlayed)
@@ -255,7 +301,7 @@ function SideNav(props) {
       <div
         ref={ref}
         {...styles.sidenav(variant)}
-        {...rest}
+        {...props}
         {...(hoverable && {
           onMouseEnter: () => setHovered(true),
           onMouseLeave: () => setHovered(false)
@@ -271,27 +317,27 @@ function SideNav(props) {
   )
 }
 
-SideNav.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
-}
 SideNav.variants = vars.sidenavVariants
 
-function TopNav(props) {
-  const { children, ...rest } = props
+interface TopNavProps extends HTMLAttributes<HTMLDivElement> {
+  children: AppFrameProps['topnav']
+}
+
+const TopNav: React.FC<TopNavProps> = props => {
+  const children = props.children as TopNavProps['children']
   const { closeSidenav, openSidenav, sidenavOpen } = useContext(AppFrameContext)
 
   const meta = { closeSidenav, openSidenav, sidenavOpen }
 
   return (
     <Theme name={Theme.names.dark}>
-      <div {...styles.topnav()} {...rest}>
-        {isFunction(children) ? children(meta) : children}
+      <div {...styles.topnav()} {...props}>
+        {isFunction<[typeof meta], ReactNode>(children)
+          ? children(meta)
+          : children}
       </div>
     </Theme>
   )
-}
-TopNav.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
 }
 
 AppFrame.SideNav = SideNav
