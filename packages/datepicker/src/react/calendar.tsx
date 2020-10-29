@@ -1,5 +1,4 @@
 import { compose, css, keyframes } from 'glamor'
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
