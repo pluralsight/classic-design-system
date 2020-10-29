@@ -1,5 +1,4 @@
-import { DateParts } from '../react'
-import { MonthDateParts } from '../react/calendar'
+import { DateParts, MonthDateParts } from './types'
 
 const num = (n: string) => parseInt(n, 10)
 

@@ -10,7 +10,7 @@ import {
 import Theme from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css'
-import { DateParts } from '.'
+import { DateParts, MonthDateParts } from '../js/types'
 
 import {
   arrayOf,
@@ -22,7 +22,6 @@ import {
   getFirstDayOfWeekForMonth,
   shallowEqual
 } from '../js'
-export type MonthDateParts = Pick<DateParts, 'mm' | 'yyyy'>
 
 const slide = keyframes(
   stylesheet['@keyframes psds-date-picker__calendar__keyframes__slide']

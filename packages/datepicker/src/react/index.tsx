@@ -21,6 +21,7 @@ import {
   forceValidYear,
   parseDate
 } from '../js'
+import { DateParts, DatePartKey } from '../js/types'
 import * as vars from '../vars'
 
 const styles = {
@@ -397,12 +398,6 @@ function isEscape(evt: React.KeyboardEvent) {
   return evt.key === 'Escape'
 }
 
-export interface DateParts {
-  mm: string
-  dd: string
-  yyyy: string
-}
-type DatePartKey = 'dd' | 'mm' | 'yyyy'
 function isValidDate({ mm, dd, yyyy }: DateParts) {
   const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd))
   const someFields = mm || dd || yyyy
