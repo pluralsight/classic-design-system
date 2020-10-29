@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-text",
-  "version": "16.1.5",
+  "version": "16.1.6",
   "description": "Design system component for text-related ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.5",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.6",
     "@pluralsight/ps-design-system-theme": "^6.0.2"
   }
 }
