@@ -28,6 +28,17 @@ describe('Button', () => {
     expect(el.tagName.toLowerCase()).toEqual('a')
   })
 
+  it('renders a name attribute onto button', () => {
+    const { getByTestId } = render(
+      <Button data-testid="undertest" href="/" name="someVal">
+        test
+      </Button>
+    )
+    const el = getByTestId('undertest')
+
+    expect(el.getAttribute('name')).toEqual('someVal')
+  })
+
   it('forwards refs', () => {
     const ref = React.createRef<HTMLAnchorElement | HTMLButtonElement>()
     render(<Button ref={ref}>with ref</Button>)

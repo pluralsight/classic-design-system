@@ -129,8 +129,7 @@ interface ButtonStatics {
   sizes: typeof vars.sizes
 }
 
-type ButtonElements = HTMLAnchorElement | HTMLButtonElement
-interface ButtonProps<E extends ButtonElements> extends HTMLAttributes<E> {
+interface BaseButtonProps {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   icon?: React.ReactNode
@@ -139,16 +138,17 @@ interface ButtonProps<E extends ButtonElements> extends HTMLAttributes<E> {
   size?: ValueOf<typeof vars.sizes>
 }
 
-type AnchorElProps = ButtonProps<HTMLAnchorElement> & { href: string }
-type ButtonElProps = ButtonProps<HTMLButtonElement> & {
-  name?: string
-  type?: string
-}
+type ButtonTagProps = BaseButtonProps &
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+type AnchorTagProps = BaseButtonProps &
+  React.AnchorHTMLAttributes<HTMLAnchorElement>
+
+type ButtonProps = ButtonTagProps | AnchorTagProps
 
 interface ButtonComponent
   extends RefForwardingComponent<
-    AnchorElProps | ButtonElProps,
-    ButtonElements,
+    ButtonProps,
+    HTMLAnchorElement | HTMLButtonElement,
     ButtonStatics
   > {}
 
@@ -169,7 +169,7 @@ const Button = React.forwardRef((props, forwardedRef) => {
   const isAnchor = 'href' in props
   const themeName = useTheme()
 
-  const ref = React.useRef<ButtonElements>()
+  const ref = React.useRef<HTMLAnchorElement | HTMLButtonElement>()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
   const nonLoadingWidth = React.useMemo(() => {
