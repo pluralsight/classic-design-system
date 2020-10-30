@@ -1,5 +1,4 @@
-/* eslint-disable camelcase */
-import { compose, css, keyframes } from 'glamor'
+import { StyleAttribute, compose, css, keyframes } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
@@ -7,12 +6,14 @@ import Theme from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
   RefForwardingComponent,
-  isFunction
+  isFunction,
+  stylesFor
 } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
 
+/* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
 const fade = keyframes(stylesheet['@keyframes psds-dialog__keyframes__fade'])
@@ -28,8 +29,11 @@ const styles = {
           stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
         )
     ),
-  content: (style: Record<string, unknown> = {}) =>
-    css(stylesheet['.psds-dialog__content'], style),
+  content: (props: DialogProps) =>
+    css(
+      stylesheet['.psds-dialog__content'],
+      stylesFor('dialog__content', props) as StyleAttribute
+    ),
   close: () => css(stylesheet['.psds-dialog__close']),
   overlay: () => css(stylesheet['.psds-dialog__overlay'])
 }
@@ -95,75 +99,67 @@ export interface DialogProps extends HTMLAttributes<HTMLDivElement> {
 export interface DialogComponent
   extends RefForwardingComponent<DialogProps, HTMLDivElement, DialogStatics> {}
 
-const Dialog = React.forwardRef(
-  (
-    {
-      children,
-      disableCloseButton = false,
-      disableCloseOnEscape = false,
-      disableCloseOnOverlayClick = false,
-      disableFocusOnMount = false,
-      onClose,
-      modal = false,
-      returnFocus = true,
-      tailPosition,
-      UNSAFE_stylesFor,
-      ...rest
-    }: DialogProps,
-    ref
-  ) => {
-    const autofocus = !disableFocusOnMount
-    const trapped = !!modal || !!onClose
-    const closeOnEscape = isFunction(onClose) && !disableCloseOnEscape
+const Dialog = React.forwardRef((props, ref) => {
+  const {
+    children,
+    disableCloseButton = false,
+    disableCloseOnEscape = false,
+    disableCloseOnOverlayClick = false,
+    disableFocusOnMount = false,
+    onClose,
+    modal = false,
+    returnFocus = true,
+    tailPosition,
+    UNSAFE_stylesFor,
+    ...rest
+  } = props
 
-    // TODO: combine fns
-    function handleKeyUp(evt: React.KeyboardEvent) {
-      if (!isEscape(evt)) return
-      onClose && onClose(evt)
-    }
+  const autofocus = !disableFocusOnMount
+  const trapped = !!modal || !!onClose
+  const closeOnEscape = isFunction(onClose) && !disableCloseOnEscape
 
-    const content = (
-      <FocusManager
-        {...styles.dialog(modal, tailPosition)}
-        {...rest}
-        {...(closeOnEscape && { onKeyUp: handleKeyUp })}
-        {...(modal && { 'aria-label': undefined })}
-        autofocus={autofocus}
-        trapped={trapped}
-        returnFocus={returnFocus}
-        ref={ref}
-      >
-        <Theme name={Theme.names.light}>
-          <div
-            {...styles.content(
-              UNSAFE_stylesFor?.dialog__content as Record<string, unknown>
-            )}
-          >
-            {!disableCloseButton && isFunction(onClose) && (
-              // eslint-disable-next-line react/jsx-handler-names
-              <CloseButton onClick={onClose} />
-            )}
-
-            {children}
-          </div>
-        </Theme>
-      </FocusManager>
-    )
-
-    return modal ? (
-      <Overlay
-        aria-label={rest['aria-label']}
-        disableCloseOnOverlayClick={disableCloseOnOverlayClick}
-        // eslint-disable-next-line react/jsx-handler-names
-        onClose={onClose}
-      >
-        {content}
-      </Overlay>
-    ) : (
-      content
-    )
+  // TODO: combine fns
+  function handleKeyUp(evt: React.KeyboardEvent) {
+    if (!isEscape(evt)) return
+    onClose && onClose(evt)
   }
-) as DialogComponent
+
+  const content = (
+    <FocusManager
+      {...styles.dialog(modal, tailPosition)}
+      {...rest}
+      {...(closeOnEscape && { onKeyUp: handleKeyUp })}
+      {...(modal && { 'aria-label': undefined })}
+      autofocus={autofocus}
+      trapped={trapped}
+      returnFocus={returnFocus}
+      ref={ref}
+    >
+      <Theme name={Theme.names.light}>
+        <div {...styles.content(props)}>
+          {!disableCloseButton && isFunction(onClose) && (
+            // eslint-disable-next-line react/jsx-handler-names
+            <CloseButton onClick={onClose} />
+          )}
+
+          {children}
+        </div>
+      </Theme>
+    </FocusManager>
+  )
+
+  return modal ? (
+    <Overlay
+      aria-label={rest['aria-label']}
+      disableCloseOnOverlayClick={disableCloseOnOverlayClick}
+      onClose={onClose}
+    >
+      {content}
+    </Overlay>
+  ) : (
+    content
+  )
+}) as DialogComponent
 
 Dialog.displayName = 'Dialog'
 
