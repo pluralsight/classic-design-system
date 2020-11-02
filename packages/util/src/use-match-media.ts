@@ -4,12 +4,18 @@ import { canUseEventListeners } from 'exenv'
 import { canUseDOM } from './can-use-dom'
 import { useHasMounted } from './use-has-mounted'
 
-export function useMatchMedia(query: string): boolean {
-  if (!canUseDOM()) return false
+const noopQueryList = {
+  matches: false,
+  media: ''
+} as MediaQueryList
 
+export function useMatchMedia(query: string): boolean {
   const hasMounted = useHasMounted()
 
-  const matcher = useCallback(() => window.matchMedia(query), [query])
+  const matcher = useCallback(
+    () => (canUseDOM() ? window.matchMedia(query) : noopQueryList),
+    [query]
+  )
   const [queryList, setQueryList] = useState(matcher)
 
   const matches = useMatches(queryList)
