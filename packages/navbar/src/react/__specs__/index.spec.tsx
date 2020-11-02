@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import NavBar from '../index.js'
+import NavBar from '..'
 
 describe('Navbar', () => {
   it('renders', () => {
@@ -11,7 +11,7 @@ describe('Navbar', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
     render(<NavBar ref={ref} />)
 

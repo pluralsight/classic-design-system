@@ -1,12 +1,10 @@
 import { css } from 'glamor'
 import { MenuIcon } from '@pluralsight/ps-design-system-icon'
+// @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
 
 const styles = {
   brand: () => css(stylesheet['.psds-navbar__brand']),
@@ -17,31 +15,36 @@ const styles = {
   utility: () => css(stylesheet['.psds-navbar__utility'])
 }
 
-const NavBar = React.forwardRef((props, forwardedRef) => {
-  const ref = React.useRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
-
-  return (
-    <div ref={ref} {...styles.navbar()} {...filterReactProps(props)}>
-      {props.onMobileMenuClick && (
-        <div {...styles.mobileMenu()}>
-          <NavItem onClick={props.onMobileMenuClick} icon={<MenuIcon />} />
-        </div>
-      )}
-      <div {...styles.brand()}>{props.brand}</div>
-      <div {...styles.items()}>{props.items}</div>
-      <div {...styles.utility()}>{props.utility}</div>
-      <div {...styles.user()}>{props.user}</div>
-    </div>
-  )
-})
-NavBar.displayName = 'NavBar'
-NavBar.propTypes = {
-  brand: PropTypes.node,
-  items: PropTypes.node,
-  onMobileMenuClick: PropTypes.func,
-  utility: PropTypes.node,
-  user: PropTypes.node
+interface NavBarProps extends React.HTMLAttributes<HTMLDivElement> {
+  brand?: React.ReactNode
+  items?: React.ReactNode
+  onMobileMenuClick?: React.MouseEventHandler
+  user?: React.ReactNode
+  utility?: React.ReactNode
 }
+
+const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
+  (props, forwardedRef) => {
+    const { brand, items, onMobileMenuClick, utility, user, ...rest } = props
+
+    const ref = React.useRef<HTMLDivElement>(null)
+    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
+
+    return (
+      <div ref={ref} {...styles.navbar()} {...rest}>
+        {onMobileMenuClick && (
+          <div {...styles.mobileMenu()}>
+            <NavItem onClick={onMobileMenuClick} icon={<MenuIcon />} />
+          </div>
+        )}
+        <div {...styles.brand()}>{brand}</div>
+        <div {...styles.items()}>{items}</div>
+        <div {...styles.utility()}>{utility}</div>
+        <div {...styles.user()}>{user}</div>
+      </div>
+    )
+  }
+)
+NavBar.displayName = 'NavBar'
 
 export default NavBar
