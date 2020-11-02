@@ -1,8 +1,7 @@
 import { compose, css, media } from 'glamor'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-import { pageWidthLayoutCSS as stylesheet } from '../css/index.js'
+import { pageWidthLayoutCSS as stylesheet } from '../css'
 
 const styles = {
   layout: () =>
@@ -15,7 +14,9 @@ const styles = {
     )
 }
 
-function PageWidthLayout(props) {
+const PageWidthLayout: React.FC<React.HTMLAttributes<
+  HTMLDivElement
+>> = props => {
   return (
     <div {...styles.layout()} {...props}>
       {props.children}
@@ -23,8 +24,5 @@ function PageWidthLayout(props) {
   )
 }
 PageWidthLayout.displayName = 'PageWidthLayout'
-PageWidthLayout.propTypes = {
-  children: PropTypes.any
-}
 
 export default PageWidthLayout
