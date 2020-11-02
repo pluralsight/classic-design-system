@@ -166,7 +166,6 @@ const Button = React.forwardRef((props, forwardedRef) => {
 
   const iconOnly = Children.count(children) <= 0
 
-  const isAnchor = 'href' in props
   const themeName = useTheme()
 
   const ref = React.useRef<HTMLAnchorElement | HTMLButtonElement>()
@@ -204,7 +203,7 @@ const Button = React.forwardRef((props, forwardedRef) => {
     <span {...styles.text()}>{children}</span>
   )
 
-  if (isAnchor) {
+  if ('href' in props && typeof props.href === 'string') {
     const anchorProps = rest as HTMLAttributes<HTMLAnchorElement>
 
     return (
@@ -219,23 +218,23 @@ const Button = React.forwardRef((props, forwardedRef) => {
         {labelEl}
       </a>
     )
+  } else {
+    const buttonProps = rest as HTMLAttributes<HTMLButtonElement>
+    delete (buttonProps as any).download
+
+    return (
+      <button
+        disabled={disabled || loading}
+        ref={ref as React.Ref<HTMLButtonElement>}
+        {...glamorStyle}
+        {...buttonProps}
+        style={style}
+      >
+        {iconEl}
+        {labelEl}
+      </button>
+    )
   }
-
-  const buttonProps = rest as HTMLAttributes<HTMLButtonElement>
-  delete (buttonProps as any).download
-
-  return (
-    <button
-      disabled={disabled || loading}
-      ref={ref as React.Ref<HTMLButtonElement>}
-      {...glamorStyle}
-      {...buttonProps}
-      style={style}
-    >
-      {iconEl}
-      {labelEl}
-    </button>
-  )
 }) as ButtonComponent
 
 Button.appearances = vars.appearances
