@@ -169,7 +169,9 @@ export default {
   '.psds-dropdown__menu': {
     position: 'fixed',
     zIndex: 980,
-    marginTop: layout.spacingXXSmall
+    marginTop: layout.spacingXXSmall,
+    maxHeight: 400,
+    overflowY: 'scroll'
   },
 
   '.psds-dropdown__field-halo': {

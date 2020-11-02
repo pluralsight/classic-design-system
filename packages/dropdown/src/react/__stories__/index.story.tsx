@@ -260,6 +260,30 @@ storiesOf('menu', module)
       }
     />
   ))
+  .add('max height', () => (
+    <Dropdown
+      label="Level"
+      menu={
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item>Four item</Dropdown.Item>
+          <Dropdown.Item>Five item</Dropdown.Item>
+          <Dropdown.Item>Six item</Dropdown.Item>
+          <Dropdown.Item>Seven item</Dropdown.Item>
+          <Dropdown.Item>Eight item</Dropdown.Item>
+          <Dropdown.Item>Nine item</Dropdown.Item>
+          <Dropdown.Item>Ten item</Dropdown.Item>
+          <Dropdown.Item>Eleven item</Dropdown.Item>
+          <Dropdown.Item>Twelve item</Dropdown.Item>
+          <Dropdown.Item>Thirteen item</Dropdown.Item>
+          <Dropdown.Item>Fourteen item</Dropdown.Item>
+          <Dropdown.Item>Fifteen item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
   .add('w/ value', () => (
     <Dropdown
       label="Level"
