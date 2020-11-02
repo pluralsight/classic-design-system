@@ -8,7 +8,6 @@ import {
   NotificationsIcon
 } from '@pluralsight/ps-design-system-icon'
 
-// @ts-ignore: TODO: update typings
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 // @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
@@ -157,9 +156,7 @@ const Filler: React.FC = props => {
   )
 }
 
-const SkillsBrand: React.FC<React.HTMLAttributes<
-  HTMLButtonElement
->> = props => {
+const SkillsBrand: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   return <NavBrand {...props} logo={<SkillsLogo />} wordmark="SKILLS" />
 }
 
