@@ -44,7 +44,6 @@ exports[`Storyshots pages 403 1`] = `
   </div>
   <a
     data-css-176v989=""
-    disabled={false}
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -171,7 +170,6 @@ exports[`Storyshots pages 500 1`] = `
   </div>
   <a
     data-css-176v989=""
-    disabled={false}
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
