@@ -171,7 +171,7 @@ export default {
     zIndex: 980,
     marginTop: layout.spacingXXSmall,
     maxHeight: 400,
-    overflowY: 'scroll'
+    overflowY: 'auto'
   },
 
   '.psds-dropdown__field-halo': {
