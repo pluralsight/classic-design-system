@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.7...@pluralsight/ps-design-system-docs@0.8.8) (2020-11-02)
+
+
+### Bug Fixes
+
+* **docs:** export mdx components for usage on HomePage ([af82cb6](https://github.com/pluralsight/design-system/commit/af82cb68d508d4ffe3b14e0efa016ddd183da520))
+
+
+
+
+
 ## [0.8.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.6...@pluralsight/ps-design-system-docs@0.8.7) (2020-10-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

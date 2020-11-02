@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.4.3...@pluralsight/ps-design-system-dialog@8.4.4) (2020-11-02)
+
+
+### Bug Fixes
+
+* **dialog:** bug with stylesFor lookup ([708e495](https://github.com/pluralsight/design-system/commit/708e495d05d26ae95f6c96abf8cbf29ea971c990))
+
+
+
+
+
 ## [8.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.4.2...@pluralsight/ps-design-system-dialog@8.4.3) (2020-10-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog
