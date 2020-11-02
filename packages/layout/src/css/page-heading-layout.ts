@@ -1,6 +1,12 @@
+import { CSSProperties } from 'glamor'
 import { layout } from '@pluralsight/ps-design-system-core'
 
-export default {
+const selectors: {
+  [selector: string]: CSSProperties
+  '@media (min-width: 769px)': {
+    [selector: string]: CSSProperties
+  }
+} = {
   '.psds-page-heading-layout': {
     padding: `${layout.spacingLarge} 0`
   },
@@ -37,3 +43,4 @@ export default {
     }
   }
 }
+export default selectors

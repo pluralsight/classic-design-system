@@ -208,7 +208,11 @@ const Box: React.FC = props => (
 Object.keys(EqualColumnLayout.counts).forEach(key =>
   equalColumnLayoutStory.add(key, () => (
     <div style={{ color: 'white' }}>
-      <EqualColumnLayout count={EqualColumnLayout.counts[key]}>
+      <EqualColumnLayout
+        count={
+          EqualColumnLayout.counts[key as keyof typeof EqualColumnLayout.counts]
+        }
+      >
         <Box>First child</Box>
         <Box>Second child</Box>
         <Box>Third child</Box>
