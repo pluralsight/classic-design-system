@@ -110,6 +110,7 @@ const Dialog = React.forwardRef((props, ref) => {
     modal = false,
     returnFocus = true,
     tailPosition,
+    /* eslint-disable-next-line camelcase */
     UNSAFE_stylesFor,
     ...rest
   } = props
