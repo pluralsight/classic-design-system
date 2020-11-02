@@ -1,17 +1,21 @@
-import { css, media } from 'glamor'
 import Halo from '@pluralsight/ps-design-system-halo'
-import React from 'react'
-import PropTypes from 'prop-types'
+import { css, media } from 'glamor'
+import React, { MouseEventHandler, ReactNode, RefObject } from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import stylesheet from '../css'
 
-import stylesheet from '../css/index.js'
+// TODO: move to utils
+type AnyTag = keyof JSX.IntrinsicElements
+type PropsOf<Tag extends AnyTag> = JSX.IntrinsicElements[Tag]
+type RefFor<K extends keyof HTMLElementTagNameMap> = RefObject<
+  HTMLElementTagNameMap[K]
+>
 
 const styles = {
-  logo: props =>
+  logo: (props: { children?: unknown }) =>
     css(
       stylesheet['.psds-navbrand__logo'],
-      props.wordmark &&
+      props.children &&
         media(
           '(min-width: 1200px)',
           stylesheet['@media (min-width: 1200px)'][
@@ -19,7 +23,7 @@ const styles = {
           ]
         )
     ),
-  navBrand: props =>
+  navBrand: (props: { href?: string; onClick?: unknown }) =>
     css(
       stylesheet['.psds-navbrand'],
       (props.href || props.onClick) && stylesheet['.psds-navbrand--clickable']
@@ -34,52 +38,79 @@ const styles = {
     )
 }
 
-const NavBrand = React.forwardRef((props, forwardedRef) => {
-  const ref = React.useRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
-
-  const tagName = props.href ? 'a' : props.onClick ? 'button' : 'div'
-
-  return (
-    <Halo inline gapSize={Halo.gapSizes.small}>
-      {React.createElement(
-        tagName,
-        {
-          ...styles.navBrand(props),
-          ...filterReactProps(props, { tagName }),
-          ref
-        },
-        <>
-          <Logo {...props} />
-          <Wordmark {...props} />
-        </>
-      )}
-    </Halo>
-  )
-})
-
-NavBrand.displayName = 'NavBrand'
-NavBrand.propTypes = {
-  href: PropTypes.string,
-  logo: PropTypes.node,
-  onClick: PropTypes.func,
-  wordmark: PropTypes.node
+interface BaseNavBrandProps {
+  logo?: ReactNode
+  wordmark?: ReactNode
 }
+interface AnchorProps extends BaseNavBrandProps, PropsOf<'a'> {
+  href: string
+  onClick?: MouseEventHandler<HTMLAnchorElement>
+}
+interface ButtonProps extends BaseNavBrandProps, PropsOf<'button'> {
+  href?: undefined
+  onClick: MouseEventHandler<HTMLButtonElement>
+}
+interface DivProps extends BaseNavBrandProps, PropsOf<'div'> {
+  href?: undefined
+  onClick?: MouseEventHandler<HTMLDivElement>
+}
+
+type NavBrandElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
+type NavBrandProps = AnchorProps | ButtonProps | DivProps
+type NavBrandComponent = {
+  (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
+  (props: ButtonProps, ref?: RefFor<'button'>): JSX.Element
+  (props: DivProps, ref?: RefFor<'div'>): JSX.Element
+}
+
+const NavBrand = React.forwardRef<NavBrandElement, NavBrandProps>(
+  (props, forwardedRef) => {
+    const { logo, wordmark, ...rest } = props
+
+    const ref = React.useRef<NavBrandElement>(null)
+    React.useImperativeHandle(
+      forwardedRef,
+      () => (ref.current as unknown) as NavBrandElement
+    )
+    const isAnchor = 'href' in props
+    const isButton = !isAnchor && 'onClick' in props
+
+    const Wrapper: React.FC = wrapperProps =>
+      isAnchor ? (
+        <a
+          ref={ref as RefFor<'a'>}
+          {...(rest as PropsOf<'a'>)}
+          {...wrapperProps}
+        />
+      ) : isButton ? (
+        <button
+          ref={ref as RefFor<'button'>}
+          {...wrapperProps}
+          {...(rest as PropsOf<'button'>)}
+        />
+      ) : (
+        <div
+          ref={ref as RefFor<'div'>}
+          {...wrapperProps}
+          {...(rest as PropsOf<'div'>)}
+        />
+      )
+
+    return (
+      <Halo inline gapSize={Halo.gapSizes.small}>
+        <Wrapper {...styles.navBrand(props)}>
+          <Logo>{logo}</Logo>
+          <Wordmark>{wordmark}</Wordmark>
+        </Wrapper>
+      </Halo>
+    )
+  }
+) as NavBrandComponent
 
 export default NavBrand
 
-function Logo(props) {
-  return <div {...styles.logo(props)}>{props.logo}</div>
-}
+const Logo: React.FC = props => <div {...styles.logo(props)} {...props} />
 Logo.displayName = 'NavBrand.Logo'
-Logo.propTypes = {
-  logo: PropTypes.node
-}
 
-function Wordmark(props) {
-  return <div {...styles.wordmark()}>{props.wordmark}</div>
-}
+const Wordmark: React.FC = props => <div {...styles.wordmark()} {...props} />
 Wordmark.displayName = 'NavBrand.Wordmark'
-Wordmark.propTypes = {
-  wordmark: PropTypes.node
-}
