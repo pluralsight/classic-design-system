@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.7.0...@pluralsight/ps-design-system-util@5.7.1) (2020-11-02)
+
+
+### Bug Fixes
+
+* **util:** update hook that fails during SSR ([b0b6e6f](https://github.com/pluralsight/design-system/commit/b0b6e6f41a9de6f71c79f6132507261bd6457e4a))
+* **util:** update hook that fails during SSR ([1883fc4](https://github.com/pluralsight/design-system/commit/1883fc4f12ab9fac684840cf286fa2dce9922f0f))
+
+
+
+
+
 # [5.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.6.0...@pluralsight/ps-design-system-util@5.7.0) (2020-10-29)
 
 
