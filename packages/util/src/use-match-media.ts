@@ -1,9 +1,12 @@
 import { useCallback, useEffect, useState } from 'react'
 import { canUseEventListeners } from 'exenv'
 
+import { canUseDOM } from './can-use-dom'
 import { useHasMounted } from './use-has-mounted'
 
 export function useMatchMedia(query: string): boolean {
+  if (!canUseDOM()) return false
+
   const hasMounted = useHasMounted()
 
   const matcher = useCallback(() => window.matchMedia(query), [query])
