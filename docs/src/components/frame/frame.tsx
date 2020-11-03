@@ -43,7 +43,6 @@ export const Frame: React.FC<Props> = props => {
     cookies[THEME_COOKIE_NAME] ||
     (prefersDark && Theme.names.dark) ||
     Theme.names.light
-  console.log({ cookie: cookies[THEME_COOKIE_NAME], prefersDark, initialTheme })
   const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
     initialTheme
   )
@@ -68,6 +67,15 @@ export const Frame: React.FC<Props> = props => {
     [styles.dark]: themeName === Theme.names.dark,
     [styles.light]: themeName === Theme.names.light,
     [styles.fullWidth]: !hasTableOfContents
+  })
+  console.log({
+    cookie: cookies[THEME_COOKIE_NAME],
+    prefersDark,
+    initialTheme,
+    themeName,
+    dark: themeName === Theme.names.dark,
+    light: themeName === Theme.names.light,
+    className
   })
 
   return (
