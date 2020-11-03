@@ -5,8 +5,11 @@ import React, { MouseEventHandler, ReactNode, RefObject } from 'react'
 import stylesheet from '../css'
 
 // TODO: move to utils
-type AnyTag = keyof JSX.IntrinsicElements
-type PropsOf<Tag extends AnyTag> = JSX.IntrinsicElements[Tag]
+type PropsOf<
+  Tag extends keyof JSX.IntrinsicElements
+> = JSX.IntrinsicElements[Tag]
+
+// TODO: move to utils
 type RefFor<K extends keyof HTMLElementTagNameMap> = RefObject<
   HTMLElementTagNameMap[K]
 >

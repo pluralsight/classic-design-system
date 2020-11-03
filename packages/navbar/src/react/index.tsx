@@ -1,7 +1,7 @@
-import { css } from 'glamor'
 import { MenuIcon } from '@pluralsight/ps-design-system-icon'
 // @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
+import { css } from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css'
@@ -28,7 +28,10 @@ const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
     const { brand, items, onMobileMenuClick, utility, user, ...rest } = props
 
     const ref = React.useRef<HTMLDivElement>(null)
-    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
+    React.useImperativeHandle(
+      forwardedRef,
+      () => (ref.current as unknown) as HTMLDivElement
+    )
 
     return (
       <div ref={ref} {...styles.navbar()} {...rest}>

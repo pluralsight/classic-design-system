@@ -1,13 +1,11 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
-import { storiesOf } from '@storybook/react'
 import {
   AccountIcon,
   HomeIcon,
   BrowseIcon,
   NotificationsIcon
 } from '@pluralsight/ps-design-system-icon'
-
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 // @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
@@ -15,6 +13,7 @@ import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 // @ts-ignore: TODO: update typings
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
+import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import NavBar from '..'
