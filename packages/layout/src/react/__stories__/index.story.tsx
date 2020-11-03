@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/react'
 
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -12,7 +11,7 @@ import {
   EqualColumnLayout,
   PageHeadingLayout,
   PageWidthLayout
-} from '../index.js'
+} from '..'
 
 const mockActions = [
   <Button key="action-1">Wow, an action</Button>,
@@ -41,12 +40,12 @@ const mockManyActions = [
 ]
 
 storiesOf('Layout / PageWidthLayout', module)
-  .add('default', _ => (
+  .add('default', () => (
     <PageWidthLayout style={{ color: 'white', outline: '1px solid red' }}>
       My content
     </PageWidthLayout>
   ))
-  .add('full-bleed', _ => (
+  .add('full-bleed', () => (
     <div style={{ background: 'rebeccapurple' }}>
       <PageWidthLayout style={{ color: 'white', outline: '1px solid red' }}>
         My content
@@ -55,10 +54,10 @@ storiesOf('Layout / PageWidthLayout', module)
   ))
 
 storiesOf('Layout / PageHeadingLayout', module)
-  .add('default', _ => (
+  .add('default', () => (
     <PageHeadingLayout heading={<h2>My Page</h2>}>My content</PageHeadingLayout>
   ))
-  .add('long title', _ => (
+  .add('long title', () => (
     <PageHeadingLayout
       heading={
         <h2>
@@ -70,12 +69,12 @@ storiesOf('Layout / PageHeadingLayout', module)
       My content
     </PageHeadingLayout>
   ))
-  .add('w/ actions', _ => (
+  .add('w/ actions', () => (
     <PageHeadingLayout heading={<h2>My Page</h2>} actions={mockActions}>
       My content
     </PageHeadingLayout>
   ))
-  .add('long title w/ actions', _ => (
+  .add('long title w/ actions', () => (
     <PageHeadingLayout
       actions={mockActions}
       heading={
@@ -88,7 +87,7 @@ storiesOf('Layout / PageHeadingLayout', module)
       My content
     </PageHeadingLayout>
   ))
-  .add('long titlew/ lots of actions', _ => (
+  .add('long titlew/ lots of actions', () => (
     <PageHeadingLayout
       heading={
         <h2>
@@ -101,7 +100,7 @@ storiesOf('Layout / PageHeadingLayout', module)
       My content
     </PageHeadingLayout>
   ))
-  .add('w/ lots of actions', _ => (
+  .add('w/ lots of actions', () => (
     <PageHeadingLayout heading={<h2>My Page</h2>} actions={mockManyActions}>
       My content
     </PageHeadingLayout>
@@ -109,7 +108,7 @@ storiesOf('Layout / PageHeadingLayout', module)
 
 const asideLayoutStory = storiesOf('Layout / AsideLayout', module)
 Object.keys(AsideLayout.asidePositions).map(pos =>
-  asideLayoutStory.add(`asidePosition: ${pos}`, _ => (
+  asideLayoutStory.add(`asidePosition: ${pos}`, () => (
     <div style={{ color: 'white' }}>
       <AsideLayout
         asidePosition={pos}
@@ -131,7 +130,7 @@ Object.keys(AsideLayout.asidePositions).map(pos =>
     </div>
   ))
 )
-asideLayoutStory.add('short main content', _ => (
+asideLayoutStory.add('short main content', () => (
   <div style={{ color: 'white' }}>
     <AsideLayout
       aside={
@@ -145,7 +144,7 @@ asideLayoutStory.add('short main content', _ => (
     />
   </div>
 ))
-asideLayoutStory.add('short aside content', _ => (
+asideLayoutStory.add('short aside content', () => (
   <div style={{ color: 'white' }}>
     <AsideLayout
       aside={<AsideLayout.Aside>Very short</AsideLayout.Aside>}
@@ -158,7 +157,7 @@ asideLayoutStory.add('short aside content', _ => (
     />
   </div>
 ))
-asideLayoutStory.add('wide, fixed aside content', _ => (
+asideLayoutStory.add('wide, fixed aside content', () => (
   <div style={{ color: 'white' }}>
     <AsideLayout
       aside={
@@ -178,7 +177,7 @@ asideLayoutStory.add('wide, fixed aside content', _ => (
   </div>
 ))
 
-asideLayoutStory.add('aside style overrides', _ => (
+asideLayoutStory.add('aside style overrides', () => (
   <div style={{ color: 'white' }}>
     <AsideLayout
       aside={
@@ -200,19 +199,20 @@ asideLayoutStory.add('aside style overrides', _ => (
 
 const equalColumnLayoutStory = storiesOf('Layout / EqualColumnLayout', module)
 
-const Box = props => (
+const Box: React.FC = props => (
   <div style={{ background: core.colorsPink.base }} {...props}>
     {props.children}
   </div>
 )
-Box.propTypes = {
-  children: PropTypes.node
-}
 
 Object.keys(EqualColumnLayout.counts).forEach(key =>
-  equalColumnLayoutStory.add(key, _ => (
+  equalColumnLayoutStory.add(key, () => (
     <div style={{ color: 'white' }}>
-      <EqualColumnLayout count={EqualColumnLayout.counts[key]}>
+      <EqualColumnLayout
+        count={
+          EqualColumnLayout.counts[key as keyof typeof EqualColumnLayout.counts]
+        }
+      >
         <Box>First child</Box>
         <Box>Second child</Box>
         <Box>Third child</Box>
@@ -223,7 +223,7 @@ Object.keys(EqualColumnLayout.counts).forEach(key =>
     </div>
   ))
 )
-equalColumnLayoutStory.add('custom markup', _ => (
+equalColumnLayoutStory.add('custom markup', () => (
   <div style={{ color: 'white' }}>
     <EqualColumnLayout count={EqualColumnLayout.counts.four}>
       <ul style={{ listStyle: 'none' }}>
