@@ -38,10 +38,14 @@ export const Frame: React.FC<Props> = props => {
 
   const prefersDark =
     canUseDOM() && window.matchMedia('(prefers-color-scheme: dark)').matches
-  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
+
+  const initialTheme =
     cookies[THEME_COOKIE_NAME] ||
-      (prefersDark && Theme.names.dark) ||
-      Theme.names.light
+    (prefersDark && Theme.names.dark) ||
+    Theme.names.light
+  console.log({ cookie: cookies[THEME_COOKIE_NAME], prefersDark, initialTheme })
+  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
+    initialTheme
   )
   const toggleTheme = () => {
     const newThemeName =
