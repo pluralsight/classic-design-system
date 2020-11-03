@@ -23,6 +23,11 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   hasTableOfContents: boolean
 }
 
+function oneYearFuture() {
+  const today = new Date()
+  return new Date(today.getFullYear() + 1, today.getMonth(), today.getDate())
+}
+
 export const Frame: React.FC<Props> = props => {
   const { aside, hasTableOfContents, children, ...rest } = props
 
@@ -33,16 +38,22 @@ export const Frame: React.FC<Props> = props => {
 
   const prefersDark =
     canUseDOM() && window.matchMedia('(prefers-color-scheme: dark)').matches
-  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
+
+  const initialTheme =
     cookies[THEME_COOKIE_NAME] ||
-      (prefersDark && Theme.names.dark) ||
-      Theme.names.light
+    (prefersDark && Theme.names.dark) ||
+    Theme.names.light
+  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
+    initialTheme
   )
   const toggleTheme = () => {
     const newThemeName =
       themeName === Theme.names.dark ? Theme.names.light : Theme.names.dark
     setTheme(newThemeName)
-    setCookie(THEME_COOKIE_NAME, newThemeName)
+    setCookie(THEME_COOKIE_NAME, newThemeName, {
+      path: '/',
+      expires: oneYearFuture()
+    })
   }
 
   const skipTargetRef = useRef<HTMLAnchorElement>(null)
@@ -56,6 +67,15 @@ export const Frame: React.FC<Props> = props => {
     [styles.dark]: themeName === Theme.names.dark,
     [styles.light]: themeName === Theme.names.light,
     [styles.fullWidth]: !hasTableOfContents
+  })
+  console.log({
+    cookie: cookies[THEME_COOKIE_NAME],
+    prefersDark,
+    initialTheme,
+    themeName,
+    dark: themeName === Theme.names.dark,
+    light: themeName === Theme.names.light,
+    className
   })
 
   return (

@@ -59,7 +59,6 @@ exports[`Storyshots Button / appearance stroke 1`] = `
 exports[`Storyshots Button / as link default 1`] = `
 <a
   data-css-176v989=""
-  disabled={false}
   href="https://duckduckgo.com"
   style={Object {}}
 >
@@ -74,7 +73,6 @@ exports[`Storyshots Button / as link default 1`] = `
 exports[`Storyshots Button / as link with icon 1`] = `
 <a
   data-css-1kih0hg=""
-  disabled={false}
   href="https://duckduckgo.com"
   style={Object {}}
 >
@@ -1597,7 +1595,6 @@ exports[`Storyshots Button / override styles with style 1`] = `
 exports[`Storyshots Button / props pass through anchor supports download 1`] = `
 <a
   data-css-176v989=""
-  disabled={false}
   download={true}
   href="/somewhere"
   style={Object {}}
