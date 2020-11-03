@@ -23,6 +23,11 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   hasTableOfContents: boolean
 }
 
+function oneYearFuture() {
+  const today = new Date()
+  return new Date(today.getFullYear() + 1, today.getMonth(), today.getDate())
+}
+
 export const Frame: React.FC<Props> = props => {
   const { aside, hasTableOfContents, children, ...rest } = props
 
@@ -42,7 +47,10 @@ export const Frame: React.FC<Props> = props => {
     const newThemeName =
       themeName === Theme.names.dark ? Theme.names.light : Theme.names.dark
     setTheme(newThemeName)
-    setCookie(THEME_COOKIE_NAME, newThemeName)
+    setCookie(THEME_COOKIE_NAME, newThemeName, {
+      path: '/',
+      expires: oneYearFuture()
+    })
   }
 
   const skipTargetRef = useRef<HTMLAnchorElement>(null)
