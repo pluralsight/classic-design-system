@@ -64,8 +64,6 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       () => (ref.current as unknown) as HTMLInputElement
     )
 
-    const square = React.createRef<HTMLDivElement>()
-
     React.useEffect(
       function updateIndetermiateAttr() {
         if (!ref.current) return
@@ -80,7 +78,6 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
         | React.KeyboardEvent<HTMLLabelElement>
     ) => {
       if (onCheck && isFunction(onCheck)) onCheck(evt, !checked, value, name)
-      if (square.current) square.current.focus()
     }
 
     const handleClick: React.MouseEventHandler<HTMLLabelElement> = evt => {
@@ -96,8 +93,14 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     const handleKeyDown: React.KeyboardEventHandler<HTMLLabelElement> = evt => {
       if (disabled) return
 
+      const shouldToggle = evt.key === 'Enter' || evt.key === ' '
+      if (!shouldToggle) return
+
+      evt.preventDefault()
+      evt.stopPropagation()
       evt.persist()
-      if (evt.key === 'Enter' || evt.key === ' ') toggle(evt)
+
+      toggle(evt)
     }
 
     return (
