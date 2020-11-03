@@ -40,3 +40,5 @@ const components = {
 export const MDXProvider: React.FC = props => (
   <BaseProvider components={components}>{props.children}</BaseProvider>
 )
+
+export { A, P, Ol, Ul }

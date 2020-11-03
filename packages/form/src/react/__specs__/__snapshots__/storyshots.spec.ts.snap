@@ -765,7 +765,6 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <input
                 data-css-1ynlp2p=""
-                disabled={false}
                 name="mm"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -785,7 +784,6 @@ exports[`Storyshots Sample Form sample 1`] = `
               </span>
               <input
                 data-css-1ynlp2p=""
-                disabled={false}
                 name="dd"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -805,7 +803,6 @@ exports[`Storyshots Sample Form sample 1`] = `
               </span>
               <input
                 data-css-1ynlp2p=""
-                disabled={false}
                 name="yyyy"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -820,13 +817,11 @@ exports[`Storyshots Sample Form sample 1`] = `
               />
               <input
                 data-css-gyrv08=""
-                disabled={false}
                 readOnly={true}
-                tabIndex="-1"
+                tabIndex={-1}
               />
               <button
                 data-css-3txxwd=""
-                disabled={false}
                 onClick={[Function]}
               >
                 <div
