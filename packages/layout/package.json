@@ -22,7 +22,6 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-prop-types": "^2.1.1",
     "@pluralsight/ps-design-system-text": "^16.1.7",
     "@pluralsight/ps-design-system-util": "^5.7.0"
   },
