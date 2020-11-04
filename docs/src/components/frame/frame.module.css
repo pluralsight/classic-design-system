@@ -55,7 +55,7 @@
 }
 
 .main {
-  overflow: auto;
+  overflow-x: auto;
   flex: 0 1 auto;
   margin: 0 auto;
   max-width: 1000px;
