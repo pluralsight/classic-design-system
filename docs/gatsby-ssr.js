@@ -1,4 +1,5 @@
 // Import React so that you can use JSX in HeadComponents
+const Theme = require('@pluralsight/ps-design-system-theme')
 const React = require('react')
 
 const HtmlAttributes = {
@@ -26,12 +27,40 @@ const BodyComponents = [
   />
 ]
 
+function FirstRenderTheme() {
+  const codeToRunOnClient = `
+(function setThemeOnBody() {
+function getCookie(name) {
+  const cookie = {}
+  document.cookie.split(';').forEach(function (el) {
+    const [k, v] = el.split('=')
+    cookie[k.trim()] = v
+  })
+  return cookie[name]
+}
+
+const cookieThemeName = getCookie('psds-docs-theme')
+
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+const initialThemeName =
+  cookieThemeName || (prefersDark && '${Theme.names.dark}') || '${Theme.names.light}'
+
+document.body.setAttribute('data-theme', initialThemeName)
+})()
+  `
+  // eslint-disable-next-line react/no-danger
+  return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />
+}
+
 exports.onRenderBody = ({
   setHeadComponents,
   setHtmlAttributes,
-  setPostBodyComponents
+  setPostBodyComponents,
+  setPreBodyComponents
 }) => {
   setHtmlAttributes(HtmlAttributes)
   setHeadComponents(HeadComponents)
   setPostBodyComponents(BodyComponents)
+  setPreBodyComponents(<FirstRenderTheme />)
 }

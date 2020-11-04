@@ -9,8 +9,6 @@ import { Link, navigate } from 'gatsby'
 import React, { HTMLAttributes, useState } from 'react'
 
 import styles from './index.module.css'
-import logoDark from './logo-dark.png'
-import logoLight from './logo-light.png'
 import { useScrollRestoration } from './use-scroll-restoration'
 
 function toggleTitle(titles: string[], title: string) {
@@ -431,7 +429,11 @@ function Logo() {
     <Link to="/">
       <img
         className={styles.logo}
-        src={themeName === Theme.names.light ? logoLight : logoDark}
+        src={
+          themeName === Theme.names.light
+            ? '/img/logo-light.png'
+            : '/img/logo-dark.png'
+        }
       />
     </Link>
   )

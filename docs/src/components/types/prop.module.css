@@ -1,16 +1,24 @@
+[data-theme='dark'] {
+  --nameColor: var(--psColorsPink4);
+  --nameType: var(--psColorsBlue4);
+}
+[data-theme='light'] {
+  --nameColor: var(--psColorsPink8);
+  --nameType: var(--psColorsBlue8);
+}
 .required {
   margin-left: var(--psLayoutSpacingXSmall);
 }
 .nameCode {
-  color: var(--color);
+  color: var(--nameColor);
   font-weight: var(--psTypeFontWeightBold);
 }
 .typeCode {
-  color: var(--color);
+  color: var(--typeColor);
 }
 .desc {
   font-size: var(--psTypeFontSizeXSmall);
 }
 .defaultCode {
-  color: var(--color);
+  color: var(--typeColor);
 }
