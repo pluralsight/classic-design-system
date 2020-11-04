@@ -33,6 +33,13 @@
   padding: var(--psLayoutSpacingMedium);
   background: var(--appColorsBackgroundLo);
   border-bottom: 1px solid var(--appColorsBorderLow);
+
+  &.dark {
+    background-color: var(--psColorsBackgroundDark2);
+  }
+  &.light {
+    background-color: var(--psColorsLightDark2);
+  }
 }
 
 .editor {

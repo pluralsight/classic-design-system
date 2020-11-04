@@ -34,12 +34,10 @@ export const CodeBlock: React.FC<CodeBlockProps> = props => {
         {props.switcher ? (
           <ExamplesSwitcher examples={examples} />
         ) : (
-          <>
-            <Example
-              description={firstExample.description}
-              code={firstExample.code}
-            />
-          </>
+          <Example
+            description={firstExample.description}
+            code={firstExample.code}
+          />
         )}
       </div>
     </CodeBlockContext.Provider>
