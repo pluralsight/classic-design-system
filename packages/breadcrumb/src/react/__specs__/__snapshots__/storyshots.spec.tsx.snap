@@ -6,7 +6,6 @@ exports[`Storyshots as link hrefs 1`] = `
 >
   <a
     data-css-mjh87q=""
-    disabled={false}
     href="https://duckduckgo.com"
     style={Object {}}
   >

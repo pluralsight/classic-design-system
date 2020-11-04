@@ -11,17 +11,27 @@ const HeadComponents = [
     key="font-import"
     referrerPolicy="strict-origin"
     rel="stylesheet"
+  />,
+  <link
+    key="docsearch-css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
   />
 ]
 
-const BodyAttributes = {}
+const BodyComponents = [
+  <script
+    key="docsearch-js"
+    src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"
+  />
+]
 
 exports.onRenderBody = ({
   setHeadComponents,
   setHtmlAttributes,
-  setBodyAttributes
+  setPostBodyComponents
 }) => {
   setHtmlAttributes(HtmlAttributes)
   setHeadComponents(HeadComponents)
-  setBodyAttributes(BodyAttributes)
+  setPostBodyComponents(BodyComponents)
 }
