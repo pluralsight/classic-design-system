@@ -1,3 +1,9 @@
+[data-theme='dark'] {
+  --bg: var(--psColorsBackgroundDark2);
+}
+[data-theme='light'] {
+  --bg: var(--psColorsBackgroundLight2);
+}
 .toc {
   width: 100%;
   max-width: 360px;
