@@ -16,7 +16,8 @@ main > .h3 {
   padding: var(--psLayoutSpacingXXSmall) 0 var(--psLayoutSpacingXXSmall)
     var(--psLayoutSpacingMedium);
 }
-.headingLink {
+
+:not(#fakeid-to-make-more-specific-than-glamor-styles) .headingLink {
   position: relative;
   color: inherit;
 
