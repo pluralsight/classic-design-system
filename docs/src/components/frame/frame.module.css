@@ -28,7 +28,7 @@
   }
 }
 
-.dark {
+[data-theme='dark'] {
   background: var(--psColorsBackgroundDark1);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundDark1);
@@ -41,7 +41,7 @@
   --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
 
-.light {
+[data-theme='light'] {
   background: var(--psColorsWhite);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundLight3);
@@ -61,4 +61,3 @@
   max-width: 1000px;
   padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingXLarge);
 }
-
