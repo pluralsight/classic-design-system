@@ -46,7 +46,7 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 const initialThemeName =
   cookieThemeName || (prefersDark && '${Theme.names.dark}') || '${Theme.names.light}'
 
-document.body.setAttribute('data-theme', initialThemeName)
+document.body.setAttribute('data-psds-theme', initialThemeName)
 })()
   `
   // eslint-disable-next-line react/no-danger

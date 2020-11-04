@@ -37,7 +37,7 @@ export const Frame: React.FC<Props> = props => {
 
   const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(undefined)
   React.useEffect(() => {
-    const clientRenderTheme = document.body.getAttribute('data-theme')
+    const clientRenderTheme = document.body.getAttribute('data-psds-theme')
     setTheme(clientRenderTheme as ValueOf<typeof Theme.names>)
   }, [])
   const toggleTheme = () => {
@@ -48,7 +48,7 @@ export const Frame: React.FC<Props> = props => {
       path: '/',
       expires: oneYearFuture()
     })
-    document.body.setAttribute('data-theme', newThemeName)
+    document.body.setAttribute('data-psds-theme', newThemeName)
   }
 
   const skipTargetRef = useRef<HTMLAnchorElement>(null)

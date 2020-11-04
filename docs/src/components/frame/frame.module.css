@@ -28,7 +28,7 @@
   }
 }
 
-[data-theme='dark'] {
+[data-psds-theme='dark'] {
   background: var(--psColorsBackgroundDark1);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundDark1);
@@ -41,7 +41,7 @@
   --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
 
-[data-theme='light'] {
+[data-psds-theme='light'] {
   background: var(--psColorsWhite);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundLight3);
