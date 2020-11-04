@@ -1,4 +1,4 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import Theme from '@pluralsight/ps-design-system-theme'
 import cx from 'classnames'
 import React, { HTMLAttributes } from 'react'
 import { Language } from 'prism-react-renderer'
@@ -15,16 +15,7 @@ interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   themeName?: ValueOf<typeof Theme.names>
 }
 export const CodeBlock: React.FC<CodeBlockProps> = props => {
-  const themeName = useTheme()
-  const isDarkTheme = themeName === Theme.names.dark
-  const className = cx(
-    {
-      [styles.codeBlock]: true,
-      [styles.dark]: isDarkTheme,
-      [styles.light]: !isDarkTheme
-    },
-    props.className
-  )
+  const className = cx(styles.codeBlock, props.className)
 
   const language = props.className?.replace(/language-/, '') as Language
   const examples = parseCode(props.children)

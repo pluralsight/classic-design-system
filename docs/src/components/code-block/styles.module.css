@@ -60,14 +60,14 @@
   height: 45px;
   pointer-events: none;
 }
-.light .editorFade {
+[data-theme='light'] .editorFade {
   background: linear-gradient(
     180deg,
     rgba(247, 249, 250, 0) 20%,
     rgba(247, 249, 250, 1) 100%
   );
 }
-.dark .editorFade {
+[data-theme='dark'] .editorFade {
   background: linear-gradient(
     to bottom,
     rgba(24, 28, 32, 0) 20%,
