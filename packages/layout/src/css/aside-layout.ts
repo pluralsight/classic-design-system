@@ -1,6 +1,6 @@
 import { layout } from '@pluralsight/ps-design-system-core'
 
-import { asideLayout as vars } from '../vars/index.js'
+import { asideLayout as vars } from '../vars'
 
 export default {
   '.psds-aside-layout': {

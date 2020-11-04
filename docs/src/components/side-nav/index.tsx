@@ -9,8 +9,6 @@ import { Link, navigate } from 'gatsby'
 import React, { HTMLAttributes, useState } from 'react'
 
 import styles from './index.module.css'
-import logoDark from './logo-dark.png'
-import logoLight from './logo-light.png'
 import { useScrollRestoration } from './use-scroll-restoration'
 
 function toggleTitle(titles: string[], title: string) {
@@ -36,12 +34,18 @@ export const SideNav: React.FC<SideNavProps> = () => {
   )
 
   const scrollRestore = useScrollRestoration('sidenav-list')
-
+  React.useLayoutEffect(() => {
+    window.docsearch({
+      apiKey: '67e67fb4a170ba472d8771660b39b5f2',
+      indexName: 'pluralsight_design-system',
+      inputSelector: '#ALGOLIA_DOCSEARCH_INPUT'
+    })
+  }, [])
   return (
     <div className={styles.sideNav}>
       <div className={styles.header}>
         <Logo />
-        <SearchInput id="ALGOLIA_DOCUSEARCH_INPUT" className={styles.search} />
+        <SearchInput id="ALGOLIA_DOCSEARCH_INPUT" className={styles.search} />
       </div>
       <Scrollable className={styles.scrollable} {...scrollRestore}>
         <nav>
@@ -425,7 +429,11 @@ function Logo() {
     <Link to="/">
       <img
         className={styles.logo}
-        src={themeName === Theme.names.light ? logoLight : logoDark}
+        src={
+          themeName === Theme.names.light
+            ? '/img/logo-light.png'
+            : '/img/logo-dark.png'
+        }
       />
     </Link>
   )

@@ -1,5 +1,4 @@
 import Theme from '@pluralsight/ps-design-system-theme'
-import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import cx from 'classnames'
 import React, {
   HTMLAttributes,
@@ -23,26 +22,33 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   hasTableOfContents: boolean
 }
 
+function oneYearFuture() {
+  const today = new Date()
+  return new Date(today.getFullYear() + 1, today.getMonth(), today.getDate())
+}
+
 export const Frame: React.FC<Props> = props => {
   const { aside, hasTableOfContents, children, ...rest } = props
 
-  const [cookies, setCookie] = useCookies([THEME_COOKIE_NAME])
+  const [_cookies, setCookie] = useCookies([THEME_COOKIE_NAME])
   const [menuOpen, setMenuOpen] = useState(false)
   const closeMenu = () => setMenuOpen(false)
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
-  const prefersDark =
-    canUseDOM() && window.matchMedia('(prefers-color-scheme: dark)').matches
-  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
-    cookies[THEME_COOKIE_NAME] ||
-      (prefersDark && Theme.names.dark) ||
-      Theme.names.light
-  )
+  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(undefined)
+  React.useEffect(() => {
+    const clientRenderTheme = document.body.getAttribute('data-theme')
+    setTheme(clientRenderTheme as ValueOf<typeof Theme.names>)
+  }, [])
   const toggleTheme = () => {
     const newThemeName =
       themeName === Theme.names.dark ? Theme.names.light : Theme.names.dark
     setTheme(newThemeName)
-    setCookie(THEME_COOKIE_NAME, newThemeName)
+    setCookie(THEME_COOKIE_NAME, newThemeName, {
+      path: '/',
+      expires: oneYearFuture()
+    })
+    document.body.setAttribute('data-theme', newThemeName)
   }
 
   const skipTargetRef = useRef<HTMLAnchorElement>(null)
@@ -53,8 +59,6 @@ export const Frame: React.FC<Props> = props => {
 
   const className = cx({
     [styles.frame]: true,
-    [styles.dark]: themeName === Theme.names.dark,
-    [styles.light]: themeName === Theme.names.light,
     [styles.fullWidth]: !hasTableOfContents
   })
 

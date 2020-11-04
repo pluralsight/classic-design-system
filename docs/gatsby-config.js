@@ -10,15 +10,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-algolia-docsearch`,
-      options: {
-        apiKey: '67e67fb4a170ba472d8771660b39b5f2', // required
-        indexName: 'pluralsight_design-system', // required
-        inputSelector: '#ALGOLIA_DOCUSEARCH_INPUT', // required
-        debug: false // (bool) Optional. Default `false`
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',

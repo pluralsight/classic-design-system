@@ -1,9 +1,4 @@
-import {
-  colorsBackgroundDark,
-  colorsBackgroundLight
-} from '@pluralsight/ps-design-system-core'
 import { Heading } from '@pluralsight/ps-design-system-text'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import React from 'react'
 import GithubSlugger from 'github-slugger'
@@ -19,23 +14,12 @@ interface TableOfContentsProps {
   headings: Heading[]
 }
 export const TableOfContents: React.FC<TableOfContentsProps> = props => {
-  const themeName = useTheme()
   let slugger = new GithubSlugger()
   React.useEffect(() => {
     slugger = new GithubSlugger()
   }, [slugger])
   return (
-    <nav
-      className={styles.toc}
-      style={
-        {
-          '--bg':
-            themeName === Theme.names.dark
-              ? colorsBackgroundDark[2]
-              : colorsBackgroundLight[2]
-        } as React.CSSProperties
-      }
-    >
+    <nav className={styles.toc}>
       <Heading size={Heading.sizes.smallCaps} className={styles.title}>
         <h2>Contents</h2>
       </Heading>
