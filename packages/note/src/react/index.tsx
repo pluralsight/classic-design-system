@@ -19,7 +19,11 @@ const styles = {
     ),
   actionBar: (
     themeName: ValueOf<typeof themeNames>,
-    { hasHeading, hasMetadata, actionBarVisible }
+    {
+      hasHeading,
+      hasMetadata,
+      actionBarVisible
+    }: { hasHeading: boolean; hasMetadata: boolean; actionBarVisible: boolean }
   ) =>
     compose(
       css(stylesheet['.psds-note__action-bar']),
@@ -71,7 +75,7 @@ interface NoteProps extends React.HTMLAttributes<HTMLDivElement> {
     | React.ReactElement<typeof AvatarLink>
   heading?: string | React.ReactElement
   message: React.ReactNode
-  metadata?: (string | React.ReactNode)[]
+  metadata?: React.ReactNode[]
   onMouseOut?: React.MouseEventHandler
   onMouseOver?: React.MouseEventHandler
 }
@@ -106,10 +110,10 @@ const Note: React.FC<NoteProps> & NoteStatics = props => {
     if (onMouseOut) onMouseOut(evt)
   }
 
-  const hasActions = !!actionBar && actionBar.length > 0
+  const hasActions = Array.isArray(actionBar) && actionBar.length > 0
   const hasAside = !!avatar
   const hasHeading = !!heading
-  const hasMetadata = !!metadata && metadata.length > 0
+  const hasMetadata = Array.isArray(metadata) && metadata.length > 0
 
   const renderActionBar = hasActions ? (
     <div
@@ -119,7 +123,7 @@ const Note: React.FC<NoteProps> & NoteStatics = props => {
         actionBarVisible: actionBarVisible || isHovered
       })}
     >
-      {actionBar.map((action, key) => {
+      {(actionBar || []).map((action, key) => {
         return React.cloneElement(action, { key })
       })}
     </div>
@@ -153,8 +157,8 @@ const Note: React.FC<NoteProps> & NoteStatics = props => {
         <div {...styles.footer()}>
           {hasMetadata && (
             <div {...styles.metadata(themeName)}>
-              {metadata.map((datum, i) => {
-                const hasNext = i < metadata.length - 1
+              {(metadata || []).map((datum: React.ReactNode, i) => {
+                const hasNext = i < (metadata || []).length - 1
 
                 return (
                   <React.Fragment key={`datum-${i}`}>

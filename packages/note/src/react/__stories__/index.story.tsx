@@ -5,6 +5,7 @@ import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
+// @ts-ignore: TODO: type position
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
 
@@ -16,27 +17,48 @@ const longStringsMetaData = [
   'A length of such amazing lengthitude so-as to blow the mind'
 ]
 
-const ConstrainWidth = props => <div {...props} style={{ maxWidth: '420px' }} />
+const ConstrainWidth: React.FC = props => (
+  <div {...props} style={{ maxWidth: '420px' }} />
+)
 
-const NoteWithDefaults = props => <Note {...props} />
-NoteWithDefaults.defaultProps = {
-  avatar: <Avatar name="Bob Ross" src="//picsum.photos/128" />,
-  heading: 'Bob Ross',
-  message: (
-    <p>
-      If these lines aren't straight, your water's going to run right out of
-      your painting and get your floor wet. At home you have unlimited time. See
-      there, told you that would be easy. Decide where your cloud lives. Maybe
-      he lives right in here.
-    </p>
-  ),
-  metadata: ['meta first', 'meta second']
+interface NoteWithDefaultProps
+  extends Partial<React.ComponentProps<typeof Note>> {
+  noAvatar?: boolean
+  noHeading?: boolean
+  noMetadata?: boolean
+}
+
+const NoteWithDefaults: React.FC<NoteWithDefaultProps> = props => {
+  const { noAvatar, noHeading, noMetadata, ...rest } = props
+  const avatar = noAvatar
+    ? undefined
+    : props.avatar || <Avatar name="Bob Ross" src="//picsum.photos/128" />
+  const heading = noHeading ? undefined : props.heading || 'Bob Ross'
+  const metadata = noMetadata
+    ? undefined
+    : props.metadata || ['meta first', 'meta second']
+  return (
+    <Note
+      message={
+        <p>
+          If these lines aren't straight, your water's going to run right out of
+          your painting and get your floor wet. At home you have unlimited time.
+          See there, told you that would be easy. Decide where your cloud lives.
+          Maybe he lives right in here.
+        </p>
+      }
+      {...rest}
+      avatar={avatar}
+      heading={heading}
+      metadata={metadata}
+    />
+  )
 }
 
 storiesOf('Note', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
-  .add('basic', _ => <NoteWithDefaults />)
-  .add('with linked avatar', _ => (
+  .add('basic', () => <NoteWithDefaults />)
+  .add('with linked avatar', () => (
     <NoteWithDefaults
       avatar={
         <Note.AvatarLink>
@@ -47,7 +69,7 @@ storiesOf('Note', module)
       }
     />
   ))
-  .add('with linked heading', _ => (
+  .add('with linked heading', () => (
     <NoteWithDefaults
       heading={
         <p>
@@ -58,10 +80,10 @@ storiesOf('Note', module)
       }
     />
   ))
-  .add('without avatar and author', _ => (
-    <NoteWithDefaults avatar={null} heading={null} />
+  .add('without avatar and author', () => (
+    <NoteWithDefaults noAvatar noHeading />
   ))
-  .add('with DS Text components', _ => (
+  .add('with DS Text components', () => (
     <NoteWithDefaults
       heading={
         <Text.Heading size={Text.Heading.sizes.medium}>
@@ -85,7 +107,7 @@ storiesOf('Note', module)
       }
     />
   ))
-  .add('with h1 in heading', _ => (
+  .add('with h1 in heading', () => (
     <NoteWithDefaults
       heading={<h1>Bob Ross</h1>}
       message={
@@ -108,10 +130,10 @@ storiesOf('Note', module)
 
 storiesOf('Note/metadata', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
-  .add('with long strings', _ => (
+  .add('with long strings', () => (
     <NoteWithDefaults metadata={longStringsMetaData} />
   ))
-  .add('as a link', _ => (
+  .add('as a link', () => (
     <NoteWithDefaults
       metadata={[
         <Link>
@@ -126,19 +148,19 @@ storiesOf('Note/metadata', module)
 
 storiesOf('Note/actions', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
-  .add('visible on hover', _ => (
+  .add('visible on hover', () => (
     <NoteWithDefaults
       actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
       actionBarVisible={false}
     />
   ))
-  .add('one action', _ => (
+  .add('one action', () => (
     <NoteWithDefaults
       actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
       actionBarVisible
     />
   ))
-  .add('two actions', _ => (
+  .add('two actions', () => (
     <NoteWithDefaults
       actionBar={[
         <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
@@ -147,7 +169,7 @@ storiesOf('Note/actions', module)
       actionBarVisible
     />
   ))
-  .add('three actions', _ => (
+  .add('three actions', () => (
     <NoteWithDefaults
       actionBar={[
         <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
@@ -157,7 +179,7 @@ storiesOf('Note/actions', module)
       actionBarVisible
     />
   ))
-  .add('with long heading', _ => (
+  .add('with long heading', () => (
     <NoteWithDefaults
       heading="This is probably the greatest thing that's ever happened in my life"
       actionBar={[
@@ -167,43 +189,43 @@ storiesOf('Note/actions', module)
       actionBarVisible
     />
   ))
-  .add('without author', _ => (
+  .add('without author', () => (
     <NoteWithDefaults
       actionBar={[
         <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
         <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
-      avatar={null}
-      heading={null}
+      noAvatar
+      noHeading
     />
   ))
-  .add('no author - long metadata', _ => (
+  .add('no author - long metadata', () => (
     <NoteWithDefaults
       actionBar={[
         <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
         <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
-      avatar={null}
-      heading={null}
+      noAvatar
+      noHeading
       metadata={longStringsMetaData}
     />
   ))
-  .add('no author - no metadata', _ => (
+  .add('no author - no metadata', () => (
     <NoteWithDefaults
       actionBar={[
         <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
         <Note.Action icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
-      avatar={null}
-      heading={null}
-      metadata={null}
+      noAvatar
+      noHeading
+      noMetadata
     />
   ))
-  .add('with an action menu', _ => {
-    const Story = props => {
+  .add('with an action menu', () => {
+    const Story = () => {
       const [isOpen, setIsOpen] = React.useState(false)
 
       return (
@@ -221,7 +243,7 @@ storiesOf('Note/actions', module)
               >
                 <Note.Action
                   icon={<Icon.MoreIcon />}
-                  onClick={_ => setIsOpen(!isOpen)}
+                  onClick={() => setIsOpen(!isOpen)}
                   title="More"
                 />
               </BelowLeft>
@@ -237,7 +259,7 @@ storiesOf('Note/actions', module)
 
 storiesOf('Note/in a list', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
-  .add('basic', _ => (
+  .add('basic', () => (
     <Note.List>
       <NoteWithDefaults />
       <NoteWithDefaults />
