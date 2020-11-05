@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import Switch from '../index.js'
+import Switch from '..'
 
 describe('Switch', () => {
   it('forwards refs', () => {

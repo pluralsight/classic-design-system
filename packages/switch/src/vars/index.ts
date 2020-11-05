@@ -1,15 +1,11 @@
-export const sizes = {
-  small: 'small',
-  large: 'large'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const labelAligns = {
-  left: 'left',
-  right: 'right'
-}
+export const sizes = keyMirror('small', 'large')
+ 
+export const labelAligns = keyMirror('left', 'right')
 
-export const colors = {
-  blue: 'blue',
-  green: 'green',
-  orange: 'orange'
-}
+export const colors = keyMirror(
+  'blue',
+  'green',
+  'orange'
+)

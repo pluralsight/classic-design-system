@@ -2,7 +2,7 @@ import PropType from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Switch from '../index.js'
+import Switch from '..'
 
 const sizeStory = storiesOf('size', module)
 Object.keys(Switch.sizes).forEach(size =>
