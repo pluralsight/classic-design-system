@@ -1,7 +1,7 @@
-.dark {
+[data-theme='dark'] {
   --baseLine: #4d90bc;
 }
-.light {
+[data-theme='light'] {
   --baseLine: #b4d9f2;
 }
 .lineHeights {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { fireEvent, render, waitForElement } from '@testing-library/react'
 
-import Note from '../index.js'
+import Note from '..'
 
 describe('Note', () => {
   it('exposes an Action Component', () => {

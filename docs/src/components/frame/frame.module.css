@@ -28,7 +28,7 @@
   }
 }
 
-.dark {
+[data-psds-theme='dark'] {
   background: var(--psColorsBackgroundDark1);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundDark1);
@@ -41,7 +41,7 @@
   --appColorsTextIconLow: var(--psColorsTextIconLowOnDark);
 }
 
-.light {
+[data-psds-theme='light'] {
   background: var(--psColorsWhite);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundLight3);
@@ -55,10 +55,9 @@
 }
 
 .main {
-  overflow: auto;
+  overflow-x: auto;
   flex: 0 1 auto;
   margin: 0 auto;
   max-width: 1000px;
   padding: var(--psLayoutSpacingMedium) var(--psLayoutSpacingXLarge);
 }
-

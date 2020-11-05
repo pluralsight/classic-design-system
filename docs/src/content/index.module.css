@@ -1,15 +1,14 @@
+[data-theme='light'] {
+  --robotImg: url(/img/robot-light@2x.png);
+  --backgroundColor: var(--psColorsBackgroundLight2);
+}
+[data-theme='dark'] {
+  --robotImg: url(/img/robot-dark@2x.png);
+  --backgroundColor: var(--psColorsBackgroundDark2);
+}
+
 .home {
   width: 100%;
-
-  &.light {
-    --robotImg: url(/img/robot-light@2x.png);
-    --backgroundColor: var(--psColorsBackgroundLight2);
-  }
-
-  &.dark {
-    --robotImg: url(/img/robot-dark@2x.png);
-    --backgroundColor: var(--psColorsBackgroundDark2);
-  }
 }
 
 .header {

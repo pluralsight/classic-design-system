@@ -1,5 +1,4 @@
 import Theme from '@pluralsight/ps-design-system-theme'
-import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import cx from 'classnames'
 import React, {
   HTMLAttributes,
@@ -31,21 +30,16 @@ function oneYearFuture() {
 export const Frame: React.FC<Props> = props => {
   const { aside, hasTableOfContents, children, ...rest } = props
 
-  const [cookies, setCookie] = useCookies([THEME_COOKIE_NAME])
+  const [_cookies, setCookie] = useCookies([THEME_COOKIE_NAME])
   const [menuOpen, setMenuOpen] = useState(false)
   const closeMenu = () => setMenuOpen(false)
   const toggleMenu = () => setMenuOpen(!menuOpen)
 
-  const prefersDark =
-    canUseDOM() && window.matchMedia('(prefers-color-scheme: dark)').matches
-
-  const initialTheme =
-    cookies[THEME_COOKIE_NAME] ||
-    (prefersDark && Theme.names.dark) ||
-    Theme.names.light
-  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(
-    initialTheme
-  )
+  const [themeName, setTheme] = useState<ValueOf<typeof Theme.names>>(undefined)
+  React.useEffect(() => {
+    const clientRenderTheme = document.body.getAttribute('data-psds-theme')
+    setTheme(clientRenderTheme as ValueOf<typeof Theme.names>)
+  }, [])
   const toggleTheme = () => {
     const newThemeName =
       themeName === Theme.names.dark ? Theme.names.light : Theme.names.dark
@@ -54,6 +48,7 @@ export const Frame: React.FC<Props> = props => {
       path: '/',
       expires: oneYearFuture()
     })
+    document.body.setAttribute('data-psds-theme', newThemeName)
   }
 
   const skipTargetRef = useRef<HTMLAnchorElement>(null)
@@ -64,18 +59,7 @@ export const Frame: React.FC<Props> = props => {
 
   const className = cx({
     [styles.frame]: true,
-    [styles.dark]: themeName === Theme.names.dark,
-    [styles.light]: themeName === Theme.names.light,
     [styles.fullWidth]: !hasTableOfContents
-  })
-  console.log({
-    cookie: cookies[THEME_COOKIE_NAME],
-    prefersDark,
-    initialTheme,
-    themeName,
-    dark: themeName === Theme.names.dark,
-    light: themeName === Theme.names.light,
-    className
   })
 
   return (

@@ -1,21 +1,12 @@
 import { Heading } from '@pluralsight/ps-design-system-text'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import cx from 'classnames'
 import React from 'react'
 
 import { A, P, Ul } from '../components/mdx'
 import * as styles from './index.module.css'
 
 export const HomePage: React.FC = () => {
-  const themeName = useTheme()
   return (
-    <div
-      className={cx({
-        [styles.home]: true,
-        [styles.light]: themeName === Theme.names.light,
-        [styles.dark]: themeName === Theme.names.dark
-      })}
-    >
+    <div className={styles.home}>
       <header className={styles.header}>
         <div className={styles.headerText}>
           <Heading size={Heading.sizes.xLarge}>
