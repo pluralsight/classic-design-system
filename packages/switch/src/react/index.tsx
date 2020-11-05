@@ -56,11 +56,10 @@ const styles = {
     ),
 
   label: (props: {
-      themeName: ValueOf<typeof themeNames>,
-      labelAlign: ValueOf<typeof vars.labelAligns>,
-      size: ValueOf<typeof vars.sizes>
-    }
-  ) =>
+    themeName: ValueOf<typeof themeNames>
+    labelAlign: ValueOf<typeof vars.labelAligns>
+    size: ValueOf<typeof vars.sizes>
+  }) =>
     compose(
       css(stylesheet['.psds-switch__label']),
       css(stylesheet[`.psds-switch__label--size-${props.size}`]),
@@ -123,7 +122,11 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
     forwardedRef
   ) => {
     const ref = React.useRef<HTMLInputElement>()
-    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLInputElement)
+    React.useImperativeHandle(
+      forwardedRef,
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      () => ref.current as HTMLInputElement
+    )
 
     const themeName = useTheme()
     const [isFocused, setIsFocused] = React.useState(false)
@@ -173,7 +176,9 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         />
 
         {children && (
-          <span {...styles.label({themeName, labelAlign, size})}>{children}</span>
+          <span {...styles.label({ themeName, labelAlign, size })}>
+            {children}
+          </span>
         )}
       </label>
     )

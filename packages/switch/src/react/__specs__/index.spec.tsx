@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-unnecessary-type-assertion */
+
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
@@ -17,8 +19,8 @@ describe('Switch', () => {
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const label = container.querySelector('label') as HTMLLabelElement
-    fireEvent.click(label)
+    const label = container.querySelector('label')
+    fireEvent.click(label as HTMLLabelElement)
 
     expect(handleClick).toHaveBeenCalled()
   })
@@ -29,8 +31,8 @@ describe('Switch', () => {
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const input = container.querySelector('input') as HTMLInputElement
-    fireEvent.click(input)
+    const input = container.querySelector('input')
+    fireEvent.click(input as HTMLInputElement)
 
     expect(handleClick).toHaveBeenCalled()
   })
@@ -41,8 +43,8 @@ describe('Switch', () => {
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const span = container.querySelector('span') as HTMLSpanElement
-    fireEvent.click(span)
+    const span = container.querySelector('span')
+    fireEvent.click(span as HTMLSpanElement)
 
     expect(handleClick).toHaveBeenCalled()
   })
