@@ -52,7 +52,7 @@ Object.values(Switch.sizes).forEach(size =>
   )
 )
 
-type RenderProp = {
+type RenderPropProps = {
   checked: boolean
   handleCheck: (nextChecked: boolean) => void
 }
@@ -60,14 +60,14 @@ type RenderProp = {
 storiesOf('disabled', module)
   .add('false', () => (
     <ClickDemo>
-      {({ checked, handleCheck }: RenderProp) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch disabled={false} checked={checked} onClick={handleCheck} />
       )}
     </ClickDemo>
   ))
   .add('true', () => (
     <ClickDemo>
-      {({ checked, handleCheck }: RenderProp) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch disabled checked={checked} onClick={handleCheck} />
       )}
     </ClickDemo>
@@ -76,14 +76,14 @@ storiesOf('disabled', module)
 storiesOf('error', module)
   .add('false', () => (
     <ClickDemo>
-      {({ checked, handleCheck }: RenderProp) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch error={false} checked={checked} onClick={handleCheck} />
       )}
     </ClickDemo>
   ))
   .add('true', () => (
     <ClickDemo>
-      {({ checked, handleCheck }: RenderProp) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch error checked={checked} onClick={handleCheck}>
           Clickable in error state
         </Switch>
@@ -92,7 +92,7 @@ storiesOf('error', module)
   ))
   .add('true w/ disabled', () => (
     <ClickDemo>
-      {({ checked, handleCheck }: RenderProp) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch error disabled checked={checked} onClick={handleCheck}>
           Such errors
         </Switch>
@@ -103,7 +103,7 @@ storiesOf('error', module)
 function ClickDemo({
   children
 }: {
-  children: (obj: RenderProp) => React.ReactElement
+  children: (obj: RenderPropProps) => React.ReactElement
 }) {
   const [checked, setChecked] = React.useState(false)
   const handleCheck = (nextChecked: boolean) => setChecked(nextChecked)

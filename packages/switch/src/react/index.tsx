@@ -55,20 +55,21 @@ const styles = {
         )
     ),
 
-  label: (
-    themeName: ValueOf<typeof themeNames>,
-    labelAlign: ValueOf<typeof vars.labelAligns>,
-    size: ValueOf<typeof vars.sizes>
+  label: (props: {
+      themeName: ValueOf<typeof themeNames>,
+      labelAlign: ValueOf<typeof vars.labelAligns>,
+      size: ValueOf<typeof vars.sizes>
+    }
   ) =>
     compose(
       css(stylesheet['.psds-switch__label']),
-      css(stylesheet[`.psds-switch__label--size-${size}`]),
+      css(stylesheet[`.psds-switch__label--size-${props.size}`]),
       css(
         stylesheet[
-          `.psds-switch__label--size-${size}.psds-switch__label--labelAlign-${labelAlign}`
+          `.psds-switch__label--size-${props.size}.psds-switch__label--labelAlign-${props.labelAlign}`
         ]
       ),
-      css(stylesheet[`.psds-switch__label.psds-theme--${themeName}`])
+      css(stylesheet[`.psds-switch__label.psds-theme--${props.themeName}`])
     ),
 
   checkbox: () => css(stylesheet['.psds-switch__checkbox'])
@@ -87,9 +88,9 @@ interface SwitchProps
   disabled?: boolean
   error?: boolean
   labelAlign?: ValueOf<typeof vars.labelAligns>
-  onBlur?: (evt: React.FocusEvent) => void
-  onClick?: (evt: boolean) => void
-  onFocus?: (evt: React.FocusEvent) => void
+  onBlur?: React.FocusEventHandler
+  onClick?: (checked: boolean) => void
+  onFocus?: React.FocusEventHandler
   size?: ValueOf<typeof vars.sizes>
   tabIndex?: number
 }
@@ -122,7 +123,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
     forwardedRef
   ) => {
     const ref = React.useRef<HTMLInputElement>()
-    React.useImperativeHandle(forwardedRef, () => ref.current)
+    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLInputElement)
 
     const themeName = useTheme()
     const [isFocused, setIsFocused] = React.useState(false)
@@ -172,7 +173,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         />
 
         {children && (
-          <span {...styles.label(themeName, labelAlign, size)}>{children}</span>
+          <span {...styles.label({themeName, labelAlign, size})}>{children}</span>
         )}
       </label>
     )
