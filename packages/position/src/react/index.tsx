@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { canUseDOM } from 'exenv'
 import {
+  canUseDOM,
   cloneElementWithRef,
   createUniversalPortal
 } from '@pluralsight/ps-design-system-util'
@@ -52,7 +52,10 @@ export const LeftOf = React.forwardRef((props, ref) => {
 LeftOf.displayName = 'LeftOf'
 
 const Position = React.forwardRef((props, forwardedRef) => {
-  const { target, position: positionFn, when } = props
+  const { target, position: positionFn } = props
+  const inNode = props.inNode || (canUseDOM() ? document.body : null)
+  const when = typeof props.when === 'boolean' ? props.when : true
+
   const [shownOnce, setShownOnce] = React.useState(false)
   const [style, setStyle] = React.useState({ position: 'absolute' })
 
@@ -103,7 +106,7 @@ const Position = React.forwardRef((props, forwardedRef) => {
         <div style={{ visibility: shownOnce ? 'visible' : 'hidden' }}>
           {when && showEl}
         </div>,
-        props.inNode
+        inNode
       )}
     </>
   )
@@ -116,11 +119,6 @@ Position.propTypes = {
   show: PropTypes.element,
   target: PropTypes.any, // NOTE: really HTML Element, but SSR not happy when mentioned.
   when: PropTypes.bool
-}
-
-Position.defaultProps = {
-  inNode: canUseDOM ? document.body : null,
-  when: true
 }
 
 function delayUntilNextTick(fn) {
