@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.8...@pluralsight/ps-design-system-docs@0.8.9) (2020-11-05)
+
+
+### Bug Fixes
+
+* **docs:** debug log theme cookie ([04a902d](https://github.com/pluralsight/design-system/commit/04a902d83abbc65cb5ddb16f94ca3a4e2453d2a4))
+* **docs:** fix themeName override ([6d686bf](https://github.com/pluralsight/design-system/commit/6d686bfbe42a3a69cdca7a097ce01be922ee8910)), closes [#1391](https://github.com/pluralsight/design-system/issues/1391)
+* **docs:** increase heading specificity ([e64fdfe](https://github.com/pluralsight/design-system/commit/e64fdfe5ec74073a24c6be2d3002ef1137316677)), closes [#1381](https://github.com/pluralsight/design-system/issues/1381)
+* **docs:** keep horz overflow for large code blocks ([825a73a](https://github.com/pluralsight/design-system/commit/825a73ae3e8fcc2931bec48be09ce3e6f48a2553))
+* **docs:** more theme debug logging ([9e0d8a7](https://github.com/pluralsight/design-system/commit/9e0d8a7c16c887e1d80c49eed71088728841eb20))
+* **docs:** one line import card ([60692a8](https://github.com/pluralsight/design-system/commit/60692a88a92806fedab8f376d3f7e055b5c8bf41))
+* **docs:** one-line the example imports ([6299f91](https://github.com/pluralsight/design-system/commit/6299f9175205ceb598abc323ec8f6108258b955d))
+* **docs:** one-line the example imports ([e0f10b2](https://github.com/pluralsight/design-system/commit/e0f10b2633f6e557a97e03bfc88e78e011c5ee06))
+* **docs:** one-line the example imports ([e38a36a](https://github.com/pluralsight/design-system/commit/e38a36ac2155b97ff3ee15c405d4df1bd6a9c92a))
+* **docs:** rm main body scrollbar ([513c79b](https://github.com/pluralsight/design-system/commit/513c79be30362c15414c17b42d93117954ef5cb3)), closes [#1399](https://github.com/pluralsight/design-system/issues/1399)
+* **docs:** set one cookie for all paths and time ([ad54ab0](https://github.com/pluralsight/design-system/commit/ad54ab09d8a244435b746909032487e694eb0fc6))
+
+
+
+
+
 ## [0.8.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.7...@pluralsight/ps-design-system-docs@0.8.8) (2020-11-02)
 
 

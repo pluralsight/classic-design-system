@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.7...@pluralsight/ps-design-system-checkbox@6.2.8) (2020-11-05)
+
+
+### Bug Fixes
+
+* **checkbox:** don't double toggle on space keypress ([d9d50af](https://github.com/pluralsight/design-system/commit/d9d50af3c38aae4a29b3d87a426341bb562804fe))
+
+
+
+
+
 ## [6.2.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.6...@pluralsight/ps-design-system-checkbox@6.2.7) (2020-11-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
