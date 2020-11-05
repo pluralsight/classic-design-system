@@ -136,10 +136,10 @@ storiesOf('Note/metadata', module)
   .add('as a link', () => (
     <NoteWithDefaults
       metadata={[
-        <Link>
+        <Link key="l1">
           <a href="#">i'm a link</a>
         </Link>,
-        <Link appearance={Link.appearances.subtle}>
+        <Link appearance={Link.appearances.subtle} key="l2">
           <a href="#">i'm a subtle link</a>
         </Link>
       ]}
@@ -150,21 +150,25 @@ storiesOf('Note/actions', module)
   .addDecorator(fn => <ConstrainWidth>{fn()}</ConstrainWidth>)
   .add('visible on hover', () => (
     <NoteWithDefaults
-      actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
+      actionBar={[
+        <Note.Action key="1" icon={<Icon.MoreIcon />} title="More" />
+      ]}
       actionBarVisible={false}
     />
   ))
   .add('one action', () => (
     <NoteWithDefaults
-      actionBar={[<Note.Action icon={<Icon.MoreIcon />} title="More" />]}
+      actionBar={[
+        <Note.Action key="1" icon={<Icon.MoreIcon />} title="More" />
+      ]}
       actionBarVisible
     />
   ))
   .add('two actions', () => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
+        <Note.Action key="1" icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action key="2" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
     />
@@ -172,9 +176,9 @@ storiesOf('Note/actions', module)
   .add('three actions', () => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
-        <Note.Action icon={<Icon.AnalyticsIcon />} title="Analytics" />,
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
+        <Note.Action key="1" icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action key="2" icon={<Icon.AnalyticsIcon />} title="Analytics" />,
+        <Note.Action key="3" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
     />
@@ -183,8 +187,8 @@ storiesOf('Note/actions', module)
     <NoteWithDefaults
       heading="This is probably the greatest thing that's ever happened in my life"
       actionBar={[
-        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
+        <Note.Action key="1" icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action key="2" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
     />
@@ -192,8 +196,8 @@ storiesOf('Note/actions', module)
   .add('without author', () => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
+        <Note.Action key="1" icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action key="2" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
       noAvatar
@@ -203,8 +207,8 @@ storiesOf('Note/actions', module)
   .add('no author - long metadata', () => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
+        <Note.Action key="1" icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action key="2" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
       noAvatar
@@ -215,8 +219,8 @@ storiesOf('Note/actions', module)
   .add('no author - no metadata', () => (
     <NoteWithDefaults
       actionBar={[
-        <Note.Action icon={<Icon.BookmarkIcon />} title="Bookmark" />,
-        <Note.Action icon={<Icon.MoreIcon />} title="More" />
+        <Note.Action key="1" icon={<Icon.BookmarkIcon />} title="Bookmark" />,
+        <Note.Action key="2" icon={<Icon.MoreIcon />} title="More" />
       ]}
       actionBarVisible
       noAvatar
@@ -233,6 +237,7 @@ storiesOf('Note/actions', module)
           <NoteWithDefaults
             actionBar={[
               <BelowLeft
+                key="1"
                 when={isOpen}
                 show={
                   <ActionMenu origin={ActionMenu.origins.topRight}>
