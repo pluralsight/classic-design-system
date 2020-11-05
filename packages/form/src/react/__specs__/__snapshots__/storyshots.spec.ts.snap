@@ -847,18 +847,27 @@ exports[`Storyshots Sample Form sample 1`] = `
       >
         <label
           data-css-kn3wr0=""
-          htmlFor="psds-checkbox-unique-id"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
           <div
             data-css-1ij5lym=""
           >
+            <input
+              checked={true}
+              data-css-6wu9td=""
+              readOnly={true}
+              style={
+                Object {
+                  "maxWidth": "none",
+                  "width": "100%",
+                }
+              }
+              type="checkbox"
+              value="someVal"
+            />
             <div
-              aria-checked={true}
               data-css-1cfeqew=""
-              role="checkbox"
-              tabIndex={0}
             >
               <svg
                 aria-label="Checkmark"
@@ -874,21 +883,6 @@ exports[`Storyshots Sample Form sample 1`] = `
               </svg>
             </div>
           </div>
-          <input
-            checked={true}
-            data-css-6wu9td=""
-            id="psds-checkbox-unique-id"
-            readOnly={true}
-            style={
-              Object {
-                "maxWidth": "none",
-                "width": "100%",
-              }
-            }
-            tabIndex={-1}
-            type="checkbox"
-            value="someVal"
-          />
           <div
             data-css-ybwuvp=""
           >
