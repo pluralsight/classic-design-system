@@ -1,21 +1,20 @@
-import PropType from 'prop-types'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Switch from '../index.js'
+import Switch from '..'
 
 const sizeStory = storiesOf('size', module)
-Object.keys(Switch.sizes).forEach(size =>
-  sizeStory.add(size, _ => <Switch size={size}>Click me</Switch>)
+Object.values(Switch.sizes).forEach(size =>
+  sizeStory.add(size, () => <Switch size={size}>Click me</Switch>)
 )
 
 storiesOf('checked', module)
-  .add('false', _ => <Switch>Click me</Switch>)
-  .add('true', _ => <Switch checked>Click me</Switch>)
+  .add('false', () => <Switch>Click me</Switch>)
+  .add('true', () => <Switch checked>Click me</Switch>)
 
 const colorStory = storiesOf('color', module)
-Object.keys(Switch.colors).forEach(color =>
-  colorStory.add(color, _ => (
+Object.values(Switch.colors).forEach(color =>
+  colorStory.add(color, () => (
     <Switch color={color} checked>
       Click me
     </Switch>
@@ -23,14 +22,14 @@ Object.keys(Switch.colors).forEach(color =>
 )
 
 storiesOf('click', module)
-  .add('large toggles', _ => (
+  .add('large toggles', () => (
     <ClickDemo>
       {({ checked, handleCheck }) => (
         <Switch checked={checked} onClick={handleCheck} />
       )}
     </ClickDemo>
   ))
-  .add('small toggles', _ => (
+  .add('small toggles', () => (
     <ClickDemo>
       {({ checked, handleCheck }) => (
         <Switch
@@ -43,9 +42,9 @@ storiesOf('click', module)
   ))
 
 const labelStory = storiesOf('label', module)
-Object.keys(Switch.sizes).forEach(size =>
-  Object.keys(Switch.labelAligns).forEach(labelAlign =>
-    labelStory.add(`${size} ${labelAlign}`, _ => (
+Object.values(Switch.sizes).forEach(size =>
+  Object.values(Switch.labelAligns).forEach(labelAlign =>
+    labelStory.add(`${size} ${labelAlign}`, () => (
       <Switch size={size} labelAlign={labelAlign}>
         Click me
       </Switch>
@@ -53,42 +52,47 @@ Object.keys(Switch.sizes).forEach(size =>
   )
 )
 
+type RenderPropProps = {
+  checked: boolean
+  handleCheck: (nextChecked: boolean) => void
+}
+
 storiesOf('disabled', module)
-  .add('false', _ => (
+  .add('false', () => (
     <ClickDemo>
-      {({ checked, handleCheck }) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch disabled={false} checked={checked} onClick={handleCheck} />
       )}
     </ClickDemo>
   ))
-  .add('true', _ => (
+  .add('true', () => (
     <ClickDemo>
-      {({ checked, handleCheck }) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch disabled checked={checked} onClick={handleCheck} />
       )}
     </ClickDemo>
   ))
 
 storiesOf('error', module)
-  .add('false', _ => (
+  .add('false', () => (
     <ClickDemo>
-      {({ checked, handleCheck }) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch error={false} checked={checked} onClick={handleCheck} />
       )}
     </ClickDemo>
   ))
-  .add('true', _ => (
+  .add('true', () => (
     <ClickDemo>
-      {({ checked, handleCheck }) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch error checked={checked} onClick={handleCheck}>
           Clickable in error state
         </Switch>
       )}
     </ClickDemo>
   ))
-  .add('true w/ disabled', _ => (
+  .add('true w/ disabled', () => (
     <ClickDemo>
-      {({ checked, handleCheck }) => (
+      {({ checked, handleCheck }: RenderPropProps) => (
         <Switch error disabled checked={checked} onClick={handleCheck}>
           Such errors
         </Switch>
@@ -96,11 +100,13 @@ storiesOf('error', module)
     </ClickDemo>
   ))
 
-function ClickDemo(props) {
+function ClickDemo({
+  children
+}: {
+  children: (obj: RenderPropProps) => React.ReactElement
+}) {
   const [checked, setChecked] = React.useState(false)
-  const handleCheck = nextChecked => setChecked(nextChecked)
+  const handleCheck = (nextChecked: boolean) => setChecked(nextChecked)
 
-  return props.children({ checked, handleCheck })
+  return children({ checked, handleCheck })
 }
-
-ClickDemo.propTypes = { children: PropType.func }

@@ -1007,7 +1007,6 @@ exports[`Storyshots Sample Form sample 1`] = `
               "width": "100%",
             }
           }
-          tabIndex={0}
         >
           <div
             data-css-1lu7sfl=""
@@ -1024,7 +1023,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             checked={false}
             data-css-6wu9td=""
             readOnly={true}
-            tabIndex="-1"
+            tabIndex={-1}
             type="checkbox"
           />
           <span
