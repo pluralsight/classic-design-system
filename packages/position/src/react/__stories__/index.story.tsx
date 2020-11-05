@@ -7,8 +7,8 @@ import { InfoIcon } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
-import * as positionFns from '../../js/index.js'
-import * as positionComponents from '../index.js'
+import * as positionFns from '../../js'
+import * as positionComponents from '..'
 
 const Box = React.forwardRef((props, forwardedRef) => {
   const ref = React.useRef()

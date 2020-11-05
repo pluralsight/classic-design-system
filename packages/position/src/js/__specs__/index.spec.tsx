@@ -1,7 +1,7 @@
 import { render, waitForElement } from '@testing-library/react'
 import React from 'react'
 
-import * as positionFns from '../index.js'
+import * as positionFns from '..'
 
 describe('#below', () => {
   const { below } = positionFns

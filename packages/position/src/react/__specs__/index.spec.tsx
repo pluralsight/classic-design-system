@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as components from '../index.js'
+import * as components from '..'
 
 describe('Position', () => {
   // NOTE: suppressing unnecessary warnings from test renderer.

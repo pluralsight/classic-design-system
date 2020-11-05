@@ -6,10 +6,10 @@ import {
   createUniversalPortal
 } from '@pluralsight/ps-design-system-util'
 
-import * as positionFns from '../js/index.js'
+import * as positionFns from '../js'
 
-import useOnWindowResize from './use-on-window-resize.js'
-import useOnWindowScroll from './use-on-window-scroll.js'
+import useOnWindowResize from './use-on-window-resize'
+import useOnWindowScroll from './use-on-window-scroll'
 
 export const Above = React.forwardRef((props, ref) => {
   return <Position position={positionFns.above} ref={ref} {...props} />
