@@ -52,7 +52,10 @@ Object.values(Switch.sizes).forEach(size =>
   )
 )
 
-type RenderProp = { checked: boolean, handleCheck: (nextChecked: boolean) => void }
+type RenderProp = {
+  checked: boolean
+  handleCheck: (nextChecked: boolean) => void
+}
 
 storiesOf('disabled', module)
   .add('false', () => (
@@ -97,7 +100,11 @@ storiesOf('error', module)
     </ClickDemo>
   ))
 
-function ClickDemo({ children }: { children: (obj: RenderProp) => React.ReactElement}) {
+function ClickDemo({
+  children
+}: {
+  children: (obj: RenderProp) => React.ReactElement
+}) {
   const [checked, setChecked] = React.useState(false)
   const handleCheck = (nextChecked: boolean) => setChecked(nextChecked)
 

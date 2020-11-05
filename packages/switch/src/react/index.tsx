@@ -2,8 +2,15 @@ import { compose, css } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
-import { useTheme, names as themeNames } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, isFunction, RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
+import {
+  ValueOf,
+  isFunction,
+  RefForwardingComponent
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -17,9 +24,9 @@ const styles = {
     ),
 
   track: (props: {
-    themeName: ValueOf<typeof themeNames>,
-    checked: boolean,
-    color: ValueOf<typeof vars.colors>,
+    themeName: ValueOf<typeof themeNames>
+    checked: boolean
+    color: ValueOf<typeof vars.colors>
     size: ValueOf<typeof vars.sizes>
   }) =>
     compose(
@@ -31,7 +38,9 @@ const styles = {
             `.psds-switch__track--checked.psds-switch__track--color-${props.color}`
           ]
         ),
-      css(stylesheet[`.psds-switch__track.psds-switch__track--size-${props.size}`])
+      css(
+        stylesheet[`.psds-switch__track.psds-switch__track--size-${props.size}`]
+      )
     ),
 
   thumb: (checked: boolean, size: ValueOf<typeof vars.sizes>) =>
@@ -46,7 +55,11 @@ const styles = {
         )
     ),
 
-  label: (themeName: ValueOf<typeof themeNames>, labelAlign: ValueOf<typeof vars.labelAligns>, size: ValueOf<typeof vars.sizes>) =>
+  label: (
+    themeName: ValueOf<typeof themeNames>,
+    labelAlign: ValueOf<typeof vars.labelAligns>,
+    size: ValueOf<typeof vars.sizes>
+  ) =>
     compose(
       css(stylesheet['.psds-switch__label']),
       css(stylesheet[`.psds-switch__label--size-${size}`]),
@@ -67,92 +80,104 @@ interface SwitchStatics {
   labelAligns: typeof vars.labelAligns
 }
 
-interface SwitchProps extends Omit<HTMLAttributes<HTMLInputElement | HTMLLabelElement>, 'onClick'> {
-  checked?: boolean,
-  color?: ValueOf<typeof vars.colors>,
-  disabled?: boolean,
-  error?: boolean,
-  labelAlign?: ValueOf<typeof vars.labelAligns>,
-  onBlur?: (evt: React.FocusEvent) => void,
-  onClick?: (evt: boolean) => void,
-  onFocus?: (evt: React.FocusEvent) => void,
-  size?: ValueOf<typeof vars.sizes>,
+interface SwitchProps
+  extends Omit<HTMLAttributes<HTMLInputElement | HTMLLabelElement>, 'onClick'> {
+  checked?: boolean
+  color?: ValueOf<typeof vars.colors>
+  disabled?: boolean
+  error?: boolean
+  labelAlign?: ValueOf<typeof vars.labelAligns>
+  onBlur?: (evt: React.FocusEvent) => void
+  onClick?: (evt: boolean) => void
+  onFocus?: (evt: React.FocusEvent) => void
+  size?: ValueOf<typeof vars.sizes>
   tabIndex?: number
 }
 
-interface SwitchComponent extends RefForwardingComponent<SwitchProps, HTMLInputElement | HTMLLabelElement, SwitchStatics>{}
+interface SwitchComponent
+  extends RefForwardingComponent<
+    SwitchProps,
+    HTMLInputElement | HTMLLabelElement,
+    SwitchStatics
+  > {}
 
-const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(({
-  checked =  false,
-  color =  vars.colors.orange,
-  disabled =  false,
-  error =  false,
-  labelAlign =  vars.labelAligns.right,
-  size =  vars.sizes.large,
-  tabIndex =  0,
-  onClick,
-  onBlur,
-  onFocus,
-  children,
-  style,
-  className,
-  ...rest
-}, forwardedRef) => {
+const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
+  (
+    {
+      checked = false,
+      color = vars.colors.orange,
+      disabled = false,
+      error = false,
+      labelAlign = vars.labelAligns.right,
+      size = vars.sizes.large,
+      tabIndex = 0,
+      onClick,
+      onBlur,
+      onFocus,
+      children,
+      style,
+      className,
+      ...rest
+    },
+    forwardedRef
+  ) => {
+    const ref = React.useRef<HTMLInputElement>()
+    React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const ref = React.useRef<HTMLInputElement>()
-  React.useImperativeHandle(forwardedRef, () => ref.current as HTMLInputElement)
+    const themeName = useTheme()
+    const [isFocused, setIsFocused] = React.useState(false)
 
-  const themeName = useTheme()
-  const [isFocused, setIsFocused] = React.useState(false)
+    const handleBlur = (evt: React.FocusEvent) => {
+      setIsFocused(false)
+      onBlur && onBlur(evt)
+    }
 
-  const handleBlur = (evt: React.FocusEvent) => {
-    setIsFocused(false)
-    onBlur && onBlur(evt) 
+    function handleClick(evt: React.MouseEvent) {
+      if (disabled || !isFunction(onClick)) return
+      evt.preventDefault()
+      onClick && onClick(!checked)
+    }
+
+    const handleFocus = (evt: React.FocusEvent) => {
+      setIsFocused(true)
+      onFocus && onFocus(evt)
+    }
+
+    return (
+      <label
+        className={className}
+        style={style}
+        aria-checked={checked}
+        role="checkbox"
+        {...styles.switch(disabled, labelAlign)}
+        {...(disabled && { tabIndex: -1 })}
+        onClick={handleClick}
+        onBlur={handleBlur}
+        onFocus={handleFocus}
+        {...rest}
+      >
+        <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
+          <div {...styles.track({ themeName, checked, color, size })}>
+            <div {...styles.thumb(checked, size)} />
+          </div>
+        </Halo>
+
+        <input
+          checked={checked}
+          readOnly
+          ref={ref as React.RefObject<HTMLInputElement>}
+          tabIndex={-1}
+          type="checkbox"
+          {...styles.checkbox()}
+        />
+
+        {children && (
+          <span {...styles.label(themeName, labelAlign, size)}>{children}</span>
+        )}
+      </label>
+    )
   }
-
-  function handleClick(evt: React.MouseEvent) {
-    if (disabled || !isFunction(onClick)) return
-    evt.preventDefault()
-    onClick && onClick(!checked)
-  }
-
-  const handleFocus = (evt: React.FocusEvent) => {
-    setIsFocused(true)
-    onFocus && onFocus(evt)
-  }
-
-  return (
-    <label
-      className={ className }
-      style={ style }
-      aria-checked={checked}
-      role="checkbox"
-      {...styles.switch(disabled, labelAlign)}
-      {...(disabled && { tabIndex: -1 })}
-      onClick={handleClick}
-      onBlur={handleBlur}
-      onFocus={handleFocus}
-      {...rest}
-    >
-      <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
-        <div {...styles.track({ themeName, checked, color, size})}>
-          <div {...styles.thumb(checked, size)} />
-        </div>
-      </Halo>
-
-      <input
-        checked={checked}
-        readOnly
-        ref={ref as React.RefObject<HTMLInputElement>}
-        tabIndex={-1}
-        type="checkbox"
-        {...styles.checkbox()}
-      />
-
-      {children && <span {...styles.label(themeName, labelAlign, size)}>{children}</span>}
-    </label>
-  )
-}) as SwitchComponent
+) as SwitchComponent
 
 Switch.displayName = 'Switch'
 
