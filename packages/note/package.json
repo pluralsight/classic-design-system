@@ -19,15 +19,16 @@
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
-  "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-avatar": "^6.1.7",
-    "@pluralsight/ps-design-system-core": "^6.5.1"
+    "@pluralsight/ps-design-system-core": "^6.5.1",
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^6.0.0",
-    "@pluralsight/ps-design-system-util": "*",
     "glamor": "^2.x.x",
     "react": "^16.8.6"
   },
