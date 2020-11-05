@@ -5,7 +5,7 @@ import Switch from '..'
 
 describe('Switch', () => {
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLInputElement>()
     render(<Switch ref={ref} />)
 
     expect(ref.current).not.toBeNull()
@@ -17,7 +17,7 @@ describe('Switch', () => {
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const label = container.querySelector('label')
+    const label = container.querySelector('label') as HTMLLabelElement
     fireEvent.click(label)
 
     expect(handleClick).toHaveBeenCalled()
@@ -29,7 +29,7 @@ describe('Switch', () => {
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const input = container.querySelector('input')
+    const input = container.querySelector('input') as HTMLInputElement
     fireEvent.click(input)
 
     expect(handleClick).toHaveBeenCalled()
@@ -41,7 +41,7 @@ describe('Switch', () => {
       <Switch onClick={handleClick}>Clicks once</Switch>
     )
 
-    const span = container.querySelector('span')
+    const span = container.querySelector('span') as HTMLSpanElement
     fireEvent.click(span)
 
     expect(handleClick).toHaveBeenCalled()
