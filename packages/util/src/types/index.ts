@@ -1,4 +1,12 @@
-import { ForwardRefExoticComponent, RefAttributes } from 'react'
+import { ForwardRefExoticComponent, RefAttributes, RefObject } from 'react'
+
+export type PropsOf<
+  Tag extends keyof JSX.IntrinsicElements
+> = JSX.IntrinsicElements[Tag]
+
+export type RefFor<K extends keyof HTMLElementTagNameMap> = RefObject<
+  HTMLElementTagNameMap[K]
+>
 
 export type RefForwardingComponent<
   P = Record<string, unknown>,
