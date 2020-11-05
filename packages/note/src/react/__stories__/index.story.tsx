@@ -8,7 +8,7 @@ import Link from '@pluralsight/ps-design-system-link'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Note from '../index.js'
+import Note from '..'
 
 const longStringsMetaData = [
   'It is impossible to count the grand contributions of this great author',
@@ -40,7 +40,7 @@ storiesOf('Note', module)
     <NoteWithDefaults
       avatar={
         <Note.AvatarLink>
-          <a href="#">
+          <a href="https://duck.com?q=pluralsight">
             <Avatar name="Bob Ross" src="//picsum.photos/128" />
           </a>
         </Note.AvatarLink>
