@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.9...@pluralsight/ps-design-system-docs@0.8.10) (2020-11-05)
+
+
+### Bug Fixes
+
+* **docs:** remove required flag from note prop ([cc58524](https://github.com/pluralsight/design-system/commit/cc585245ec09e98dda4748902105fa3cbf1918a2))
+
+
+
+
+
 ## [0.8.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.8...@pluralsight/ps-design-system-docs@0.8.9) (2020-11-05)
 
 

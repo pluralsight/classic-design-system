@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-datepicker",
-  "version": "8.0.5",
+  "version": "8.0.6",
   "description": "Design system components for date picker",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,11 +21,11 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^19.0.5",
+    "@pluralsight/ps-design-system-button": "^19.0.6",
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-halo": "^7.1.7",
-    "@pluralsight/ps-design-system-icon": "^19.0.5",
-    "@pluralsight/ps-design-system-util": "^5.7.1"
+    "@pluralsight/ps-design-system-halo": "^7.1.8",
+    "@pluralsight/ps-design-system-icon": "^19.0.6",
+    "@pluralsight/ps-design-system-util": "^5.8.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -35,8 +35,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.7",
-    "@pluralsight/ps-design-system-textinput": "^9.0.5",
-    "@pluralsight/ps-design-system-theme": "^6.0.3"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.8",
+    "@pluralsight/ps-design-system-textinput": "^9.0.6",
+    "@pluralsight/ps-design-system-theme": "^6.0.4"
   }
 }
