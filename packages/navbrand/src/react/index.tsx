@@ -1,18 +1,9 @@
 import Halo from '@pluralsight/ps-design-system-halo'
+import { PropsOf, RefFor } from '@pluralsight/ps-design-system-util'
 import { css, media } from 'glamor'
-import React, { MouseEventHandler, ReactNode, RefObject } from 'react'
+import React, { MouseEventHandler, ReactNode } from 'react'
 
 import stylesheet from '../css'
-
-// TODO: move to utils
-type PropsOf<
-  Tag extends keyof JSX.IntrinsicElements
-> = JSX.IntrinsicElements[Tag]
-
-// TODO: move to utils
-type RefFor<K extends keyof HTMLElementTagNameMap> = RefObject<
-  HTMLElementTagNameMap[K]
->
 
 const styles = {
   logo: (props: { children?: unknown }) =>
