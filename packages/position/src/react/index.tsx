@@ -9,50 +9,74 @@ import * as positionFns from '../js'
 import useOnWindowResize from './use-on-window-resize'
 import useOnWindowScroll from './use-on-window-scroll'
 
-export const Above = React.forwardRef((props, ref) => {
+export const Above = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.above} ref={ref} {...props} />
 })
 Above.displayName = 'Above'
 
-export const AboveLeft = React.forwardRef((props, ref) => {
+export const AboveLeft = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.aboveLeft} ref={ref} {...props} />
 })
 AboveLeft.displayName = 'AboveLeft'
 
-export const AboveRight = React.forwardRef((props, ref) => {
+export const AboveRight = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.aboveRight} ref={ref} {...props} />
 })
 AboveRight.displayName = 'AboveRight'
 
-export const Below = React.forwardRef((props, ref) => {
+export const Below = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.below} ref={ref} {...props} />
 })
 Below.displayName = 'Below'
 
-export const BelowLeft = React.forwardRef((props, ref) => {
+export const BelowLeft = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.belowLeft} ref={ref} {...props} />
 })
 BelowLeft.displayName = 'BelowLeft'
 
-export const BelowRight = React.forwardRef((props, ref) => {
+export const BelowRight = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.belowRight} ref={ref} {...props} />
 })
 BelowRight.displayName = 'BelowRight'
 
-export const RightOf = React.forwardRef((props, ref) => {
+export const RightOf = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.rightOf} ref={ref} {...props} />
 })
 RightOf.displayName = 'RightOf'
 
-export const LeftOf = React.forwardRef((props, ref) => {
+export const LeftOf = React.forwardRef<
+  HTMLElement,
+  Omit<PositionProps, 'position'>
+>((props, ref) => {
   return <Position position={positionFns.leftOf} ref={ref} {...props} />
 })
 LeftOf.displayName = 'LeftOf'
 
-interface PositionProps {
+interface PositionProps extends React.HTMLAttributes<HTMLElement> {
   inNode?: HTMLElement
   position: positionFns.PositionFunction
-  show?: React.ReactElement
+  show?: React.ReactElement & { ref: React.RefObject<HTMLElement> }
   target?: React.RefObject<HTMLElement>
   when?: boolean
 }
@@ -73,7 +97,7 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
     const showRef = props.show.ref || innerRef
     const showEl = React.cloneElement(props.show, {
       ref: showRef,
-      style: { ...props.show.props.style, ...style }
+      style: { ...(props.show.props as any).style, ...style }
     })
 
     const updateStyle = React.useCallback(() => {
@@ -106,7 +130,13 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
 
     return (
       <>
-        {target ? child : cloneElementWithRef(child, ref, {})}
+        {target
+          ? child
+          : cloneElementWithRef<React.HTMLAttributes<HTMLElement>, HTMLElement>(
+              child as any,
+              ref,
+              {}
+            )}
 
         {createUniversalPortal(
           <div style={{ visibility: shownOnce ? 'visible' : 'hidden' }}>
