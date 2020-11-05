@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 
 export default function useDebounceCallback(fn, delay = 100) {
-  const timeout = React.useRef()
+  const timeout = React.useRef(null)
 
   const debounced = React.useCallback(
     function () {
