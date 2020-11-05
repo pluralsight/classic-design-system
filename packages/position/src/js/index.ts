@@ -44,7 +44,16 @@ const clipAdjust: {
   ]
 }
 
-export function above(target: HTMLElement) {
+export type PositionFunction = (
+  target: HTMLElement
+) => {
+  styleFor: (
+    el: HTMLElement | undefined,
+    options?: Partial<StyleOptions>
+  ) => PositionStyle
+}
+
+export const above: PositionFunction = target => {
   return {
     styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
       if (!el) return
@@ -66,7 +75,7 @@ export function above(target: HTMLElement) {
   }
 }
 
-export function aboveLeft(target: HTMLElement) {
+export const aboveLeft: PositionFunction = target => {
   return {
     styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
       if (!el) return
@@ -85,7 +94,7 @@ export function aboveLeft(target: HTMLElement) {
   }
 }
 
-export function aboveRight(target) {
+export const aboveRight: PositionFunction = target => {
   return {
     styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
       if (!el) return
@@ -105,7 +114,7 @@ export function aboveRight(target) {
   }
 }
 
-export function rightOf(target: HTMLElement) {
+export const rightOf: PositionFunction = target => {
   return {
     styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
       if (!el) return
@@ -130,7 +139,7 @@ export function rightOf(target: HTMLElement) {
   }
 }
 
-export function below(target: HTMLElement) {
+export const below: PositionFunction = target => {
   return {
     styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
       if (!el) return
@@ -156,7 +165,7 @@ export function below(target: HTMLElement) {
   }
 }
 
-export function belowLeft(target: HTMLElement) {
+export const belowLeft: PositionFunction = target => {
   return {
     styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
       if (!el) return
@@ -178,7 +187,7 @@ export function belowLeft(target: HTMLElement) {
   }
 }
 
-export function belowRight(target: HTMLElement) {
+export const belowRight: PositionFunction = target => {
   return {
     styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
       if (!el) return
@@ -201,7 +210,7 @@ export function belowRight(target: HTMLElement) {
   }
 }
 
-export function leftOf(target: HTMLElement) {
+export const leftOf: PositionFunction = target => {
   if (!target) throw new TypeError('target element required')
 
   return {
