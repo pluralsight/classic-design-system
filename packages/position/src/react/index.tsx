@@ -75,7 +75,7 @@ LeftOf.displayName = 'LeftOf'
 
 interface ShowProps {
   ref?: React.RefObject<HTMLElement>
-  style?: CSSStyleDeclaration
+  style?: React.CSSProperties
 }
 interface PositionProps extends React.HTMLAttributes<HTMLElement> {
   inNode?: HTMLElement
@@ -91,9 +91,13 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
     const when = typeof props.when === 'boolean' ? props.when : true
 
     const [shownOnce, setShownOnce] = React.useState(false)
-    const [style, setStyle] = React.useState({ position: 'absolute' })
+    const [style, setStyle] = React.useState<
+      Partial<positionFns.PositionStyle>
+    >({
+      position: 'absolute'
+    })
 
-    const ref = React.useRef()
+    const ref = React.useRef<HTMLElement>(null)
     React.useImperativeHandle(forwardedRef, () => ref.current)
 
     const child = React.Children.only(props.children)

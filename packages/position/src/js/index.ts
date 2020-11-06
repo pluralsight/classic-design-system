@@ -240,7 +240,10 @@ function overrideDefaultOpts(
   return { ...opts, ...defaultOptions }
 }
 
-type PositionStyle = Pick<CSSStyleDeclaration, 'position' | 'left' | 'top'>
+export type PositionStyle = Pick<
+  React.CSSProperties,
+  'position' | 'left' | 'top'
+>
 function formatOutputAsStyles(x: number, y: number): PositionStyle {
   return {
     position: 'absolute',
