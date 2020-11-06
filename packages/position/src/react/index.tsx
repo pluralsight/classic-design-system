@@ -81,7 +81,7 @@ interface PositionProps extends React.HTMLAttributes<HTMLElement> {
   inNode?: HTMLElement
   position: positionFns.PositionFunction
   show?: React.FunctionComponentElement<ShowProps>
-  target?: React.RefObject<HTMLElement>
+  target?: HTMLElement | React.RefObject<HTMLElement>
   when?: boolean
 }
 const Position = React.forwardRef<HTMLElement, PositionProps>(
