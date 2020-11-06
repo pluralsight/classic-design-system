@@ -1,20 +1,42 @@
-import { storiesOf } from '@storybook/react'
-
-import { css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
 import { InfoIcon } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
+import { usePortal, ValueOf } from '@pluralsight/ps-design-system-util'
+import { storiesOf } from '@storybook/react'
+import { css } from 'glamor'
+import React from 'react'
 
-import * as positionFns from '../../js'
+import {
+  above,
+  aboveLeft,
+  aboveRight,
+  below,
+  belowLeft,
+  belowRight,
+  rightOf,
+  leftOf
+} from '../../js'
 import * as positionComponents from '..'
 
-const Box = React.forwardRef((props, forwardedRef) => {
-  const ref = React.useRef()
+const positionFns = {
+  above,
+  aboveLeft,
+  aboveRight,
+  below,
+  belowLeft,
+  belowRight,
+  rightOf,
+  leftOf
+}
+
+const Box = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>((props, forwardedRef) => {
+  const ref = React.useRef<HTMLDivElement>()
   React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const className = css({
+  const className = (css({
     alignItems: 'center',
     border: `4px dashed ${core.colorsPink.base}`,
     color: core.colorsPink.base,
@@ -25,14 +47,21 @@ const Box = React.forwardRef((props, forwardedRef) => {
     justifyContent: 'center',
     textAlign: 'center',
     width: '200px'
-  })
+  }) as unknown) as string
 
-  return <div className={className} ref={ref} {...props} />
+  return (
+    <div className={className} ref={ref}>
+      {props.children}
+    </div>
+  )
 })
 
-const MockToolip = React.forwardRef((props, forwardedRef) => {
-  const ref = React.useRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
+const MockToolip = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>((props, forwardedRef) => {
+  const ref = React.useRef<HTMLDivElement>(null)
+  React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
   return (
     <Tooltip ref={ref} {...props}>
@@ -41,21 +70,21 @@ const MockToolip = React.forwardRef((props, forwardedRef) => {
   )
 })
 
-const ScrollContainer = props => {
-  const containerClass = css({
+const ScrollContainer: React.FC = props => {
+  const containerClass = (css({
     border: `4px dashed ${core.colorsOrange.base}`,
     color: core.colorsTextIcon.highOnDark,
     height: 500,
     overflow: 'scroll',
     padding: 20,
     width: 500
-  })
-  const shimClass = css({
+  }) as unknown) as string
+  const shimClass = (css({
     border: `1px dashed ${core.colorsBorder.highOnLight}`,
     height: 200,
     margin: '20px 0',
     opacity: 0.4
-  })
+  }) as unknown) as string
 
   return (
     <div className={containerClass} {...props}>
@@ -65,7 +94,6 @@ const ScrollContainer = props => {
     </div>
   )
 }
-ScrollContainer.propTypes = { children: PropTypes.node }
 
 const basicStories = storiesOf('Components | Position / basic', module)
 Object.values(positionComponents).forEach(Comp => {
@@ -74,7 +102,7 @@ Object.values(positionComponents).forEach(Comp => {
 
   basicStories.add(displayName, () => (
     <Comp show={<MockToolip />}>
-      <Box>{name}</Box>
+      <div>{name}</div>
     </Comp>
   ))
 })
@@ -93,8 +121,11 @@ storiesOf('Components | Position / custom style', module).add(
 storiesOf('Components | Position / custom ref', module).add(
   'shown element keeps style prop',
   () => {
-    const ref = React.useRef()
-    const { x, y } = ref.current ? ref.current.getBoundingClientRect() : {}
+    const ref = React.useRef<HTMLDivElement>(null)
+    const { x, y } =
+      typeof ref.current === 'undefined'
+        ? { x: -1, y: -1 }
+        : ref.current.getBoundingClientRect()
 
     return (
       <>
@@ -132,26 +163,16 @@ Object.values(positionComponents).forEach(Comp => {
     return <div {...props} className={className} />
   }
 
-  function usePortal() {
-    const ref = React.useRef(document.createElement('div'))
-
-    React.useEffect(() => {
-      const { current } = ref
-      document.body.appendChild(current)
-
-      return () => {
-        document.body.removeChild(current)
-      }
-    }, [])
-
-    return ref
+  interface PortalStoryProps {
+    children(props: {
+      // TODO: make this type more precise in util package
+      portal: React.MutableRefObject<HTMLDivElement>
+    }): React.ReactNode
   }
-
-  function PortalStory(props) {
-    const portal = usePortal()
+  const PortalStory = (props: PortalStoryProps) => {
+    const portal = usePortal() as React.MutableRefObject<HTMLDivElement>
     return <Outer>{props.children({ portal })}</Outer>
   }
-  PortalStory.propTypes = { children: PropTypes.func.isRequired }
 
   portalStories.add(displayName, () => (
     <PortalStory>
@@ -207,11 +228,14 @@ storiesOf('Components | Position / in scrollable container', module).add(
 )
 
 const jsStory = storiesOf('Utilities | Position / position fns', module)
-Object.keys(positionFns).forEach(pos =>
-  jsStory.add(pos, _ => <JsStory positionType={pos} />)
+Object.keys(positionFns).forEach((pos: keyof typeof positionFns) =>
+  jsStory.add(pos, _ => <JsStory positionFnName={pos} />)
 )
 
-function JsStory({ positionType, ...rest }) {
+interface JsStoryProps {
+  positionFnName: keyof typeof positionFns
+}
+const JsStory: React.FC<JsStoryProps> = ({ positionFnName }) => {
   const TAIL_POSITION_MAP = {
     above: Tooltip.tailPositions.bottomCenter,
     aboveLeft: Tooltip.tailPositions.bottomLeft,
@@ -222,12 +246,14 @@ function JsStory({ positionType, ...rest }) {
     belowRight: Tooltip.tailPositions.topRight,
     leftOf: Tooltip.tailPositions.rightCenter
   }
-  const tailPosition = TAIL_POSITION_MAP[positionType]
+  const tailPosition = TAIL_POSITION_MAP[positionFnName]
 
-  const boxRef = React.useRef()
-  const tooltipRef = React.useRef()
+  const boxRef = React.useRef<HTMLDivElement>()
+  const tooltipRef = React.useRef<HTMLDivElement>()
 
-  const [styles, setStyles] = React.useState({ position: 'absolute' })
+  const [styles, setStyles] = React.useState<React.CSSProperties>({
+    position: 'absolute'
+  })
 
   React.useEffect(() => {
     const { current: box } = boxRef
@@ -235,25 +261,21 @@ function JsStory({ positionType, ...rest }) {
 
     if (!box || !tooltip) return
 
-    const fn = positionFns[positionType]
+    const fn = positionFns[positionFnName]
     const nextStyles = fn(box).styleFor(tooltip)
 
     setStyles(nextStyles)
-  }, [positionType])
+  }, [positionFnName])
 
   return (
     <div>
-      <Box ref={boxRef}>{positionType}</Box>
+      <Box ref={boxRef}>{positionFnName}</Box>
 
       <Tooltip ref={tooltipRef} style={styles} tailPosition={tailPosition}>
         The tip
       </Tooltip>
     </div>
   )
-}
-
-JsStory.propTypes = {
-  positionType: PropTypes.oneOf(Object.keys(positionFns)).isRequired
 }
 
 const edgeCaseStories = storiesOf('Position Edge', module)

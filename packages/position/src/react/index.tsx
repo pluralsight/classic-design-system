@@ -77,7 +77,8 @@ interface ShowProps {
   ref?: React.RefObject<HTMLElement>
   style?: React.CSSProperties
 }
-interface PositionProps extends React.HTMLAttributes<HTMLElement> {
+interface PositionProps {
+  children: React.FunctionComponentElement<{}>
   inNode?: HTMLElement
   position: positionFns.PositionFunction
   show?: React.FunctionComponentElement<ShowProps>
@@ -100,7 +101,9 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
     const ref = React.useRef<HTMLElement>(null)
     React.useImperativeHandle(forwardedRef, () => ref.current)
 
-    const child = React.Children.only(props.children)
+    const child = React.Children.only(
+      props.children as React.FunctionComponentElement<{}>
+    )
     const innerRef = React.useRef()
     const showRef = props.show.ref || innerRef
     const showEl = React.cloneElement(props.show, {
