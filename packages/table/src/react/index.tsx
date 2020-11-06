@@ -1,23 +1,25 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import {
   SortAscIcon,
   SortDescIcon,
   SortIcon
 } from '@pluralsight/ps-design-system-icon'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
 
 const drawerDisplayNameRegex = new RegExp(drawerDisplayName)
 
 const styles = {
-  cell: (themeName, { align, emphasis }) => {
+  cell: (align: ValueOf<typeof aligns>, emphasis: boolean) => {
     const label = 'psds-table__cell'
 
     return compose(
@@ -26,32 +28,37 @@ const styles = {
       align && css(stylesheet[`.${label}--align-${align}`])
     )
   },
-  columnHeader: (themeName, props, { active }) => {
-    const { align, onClick } = props
+  columnHeader: (props: {
+    themeName: ValueOf<typeof themeNames>
+    active: boolean
+    align: ValueOf<typeof vars.aligns>
+    onClick: boolean
+  }) => {
     const label = 'psds-table__column-header'
 
     return compose(
       css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
-      css(stylesheet[`.${label}--align-${align}`]),
-      active && css(stylesheet[`.${label}--active`]),
-      active && css(stylesheet[`.${label}--active.psds-theme--${themeName}`]),
-      onClick && css(stylesheet[`.${label}--onclick`]),
-      onClick && css(stylesheet[`.${label}--onclick.psds-theme--${themeName}`])
+      css(stylesheet[`.${label}.psds-theme--${props.themeName}`]),
+      css(stylesheet[`.${label}--align-${props.align}`]),
+      props.active && css(stylesheet[`.${label}--active`]),
+      props.active &&
+        css(stylesheet[`.${label}--active.psds-theme--${props.themeName}`]),
+      props.onClick && css(stylesheet[`.${label}--onclick`]),
+      props.onClick &&
+        css(stylesheet[`.${label}--onclick.psds-theme--${props.themeName}`])
     )
   },
   columnHeaderButton: () =>
     css(stylesheet['.psds-table__column-header__button']),
-  columnHeaderButtonInner: props => {
-    const { align } = props
+  columnHeaderButtonInner: (align: ValueOf<typeof vars.aligns>) => {
     const label = 'psds-table__column-header'
     return compose(
       css(stylesheet[`.${label}__button-inner`]),
       css(stylesheet[`.${label}--align-${align}`])
     )
   },
-  columnHeaderIcon: _ => css(stylesheet['.psds-table__column-header__icon']),
-  row: (themeName, { _tableHasDrawers }) => {
+  columnHeaderIcon: () => css(stylesheet['.psds-table__column-header__icon']),
+  row: (themeName: ValueOf<typeof themeNames>, _tableHasDrawers: boolean) => {
     const label = 'psds-table__row'
 
     return compose(
@@ -60,7 +67,7 @@ const styles = {
       _tableHasDrawers && css(stylesheet[`.${label}--drawers`])
     )
   },
-  table: (themeName, { inDrawer }) => {
+  table: (themeName: ValueOf<typeof themeNames>, inDrawer: boolean) => {
     const label = 'psds-table'
 
     return compose(
@@ -71,78 +78,99 @@ const styles = {
   }
 }
 
-const SortIconAsc = _ => <SortAscIcon {...styles.columnHeaderIcon()} />
+const SortIconAsc = () => <SortAscIcon {...styles.columnHeaderIcon()} />
 
-const SortIconDesc = _ => <SortDescIcon {...styles.columnHeaderIcon()} />
+const SortIconDesc = () => <SortDescIcon {...styles.columnHeaderIcon()} />
 
-const SortIconDefault = _ => <SortIcon {...styles.columnHeaderIcon()} />
+const SortIconDefault = () => <SortIcon {...styles.columnHeaderIcon()} />
 
-const getSortIcon = props =>
-  ({
-    [vars.sorts.asc]: <SortIconAsc />,
-    [vars.sorts.desc]: <SortIconDesc />
-  }[props.sort] || <SortIconDefault />)
-getSortIcon.propTypes = {
-  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
+const getSortIcon = ({
+  sort
+}: {
+  sort: ValueOf<typeof vars.sorts> | boolean
+}) =>
+  typeof sort === 'boolean' ? (
+    <SortIconDefault />
+  ) : (
+    {
+      [vars.sorts.asc]: <SortIconAsc />,
+      [vars.sorts.desc]: <SortIconDesc />
+    }[sort]
+  )
+
+const getToggledSort = ({
+  sort
+}: {
+  sort: ValueOf<typeof vars.sorts> | boolean
+}) =>
+  typeof sort === 'boolean'
+    ? vars.sorts.asc
+    : {
+        [vars.sorts.asc]: vars.sorts.desc,
+        [vars.sorts.desc]: vars.sorts.asc
+      }[sort]
+
+interface ColumnHeaderProps extends HTMLAttributes<HTMLDivElement> {
+  align?: ValueOf<typeof vars.aligns>
+  flex?: string
+  onClick?: (evt: React.MouseEvent, sort?: ValueOf<typeof vars.sorts>) => void
+  sort?: ValueOf<typeof vars.sorts> | boolean
 }
 
-getSortIcon.propTypes = {
-  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
-}
-
-getSortIcon.propTypes = {
-  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)])
-}
-
-const getToggledSort = props =>
-  ({
-    [vars.sorts.asc]: vars.sorts.desc,
-    [vars.sorts.desc]: vars.sorts.asc
-  }[props.sort] || vars.sorts.asc)
-
-function ColumnHeader({ onClick, ...props }) {
+const ColumnHeader: React.FC<ColumnHeaderProps> = ({
+  onClick,
+  sort,
+  flex,
+  align = vars.aligns.left,
+  ...props
+}) => {
   const themeName = useTheme()
-  const Tag = onClick ? 'button' : 'div'
 
-  const active = vars.sorts[props.sort] && typeof onClick === 'function'
+  const active =
+    typeof sort !== 'boolean' &&
+    typeof sort !== 'undefined' &&
+    vars.sorts[sort] &&
+    typeof onClick === 'function'
 
   const style = props.style || {}
-  if (props.flex && !style.flex) style.flex = props.flex
+  if (flex && !style.flex) style.flex = flex
 
   const handleClick = onClick
-    ? evt =>
-        onClick(...[evt, props.sort && getToggledSort(props)].filter(Boolean))
+    ? (evt: React.MouseEvent) =>
+        onClick(evt, sort ? getToggledSort({ sort }) : undefined)
     : undefined
   const children = onClick ? (
     <button {...styles.columnHeaderButton()} onClick={handleClick}>
-      <div {...styles.columnHeaderButtonInner(props)}>
+      <div {...styles.columnHeaderButtonInner(align)}>
         {props.children}
-        {props.sort && getSortIcon(props)}
+        {sort && getSortIcon({ sort })}
       </div>
     </button>
   ) : (
     <>
       {props.children}
-      {props.sort && getSortIcon(props)}
+      {sort && getSortIcon({ sort })}
     </>
   )
-  const sort = {
-    ...(props.sort && {
-      'aria-sort':
-        props.sort === vars.sorts.desc
-          ? 'descending'
-          : props.sort === vars.sorts.asc
-          ? 'ascending'
-          : 'none'
-    })
-  }
   return (
     <div
       role="columnheader"
-      {...styles.columnHeader(themeName, props, { active })}
-      {...filterReactProps(props, { tagName: Tag })}
+      {...styles.columnHeader({
+        themeName,
+        active,
+        align,
+        onClick: Boolean(onClick)
+      })}
+      {...props}
       style={style}
-      {...sort}
+      {...(sort && {
+        'aria-sort':
+          sort === vars.sorts.desc
+            ? 'descending'
+            : sort === vars.sorts.asc
+            ? 'ascending'
+            : 'none'
+      })}
     >
       {children}
     </div>
@@ -151,30 +179,26 @@ function ColumnHeader({ onClick, ...props }) {
 
 ColumnHeader.displayName = 'Table.ColumnHeader'
 
-ColumnHeader.propTypes = {
-  align: PropTypes.oneOf(Object.keys(vars.aligns)),
-  children: PropTypes.node,
-  flex: PropTypes.string,
-  onClick: PropTypes.func,
-  sort: PropTypes.oneOf([true, ...Object.keys(vars.sorts)]),
-  style: PropTypes.object
+interface CellProps extends HTMLAttributes<HTMLDivElement> {
+  align?: ValueOf<typeof vars.aligns>
+  emphasis?: boolean
+  flex?: string
 }
 
-ColumnHeader.defaultProps = {
-  align: vars.aligns.left
-}
-
-function Cell(props) {
-  const themeName = useTheme()
-
+const Cell: React.FC<CellProps> = ({
+  flex,
+  emphasis = false,
+  align = vars.aligns.left,
+  ...props
+}) => {
   const style = props.style || {}
-  if (props.flex && !style.flex) style.flex = props.flex
+  if (flex && !style.flex) style.flex = flex
 
   return (
     <div
       role="cell"
-      {...styles.cell(themeName, props)}
-      {...filterReactProps(props)}
+      {...styles.cell(align, emphasis)}
+      {...props}
       style={style}
     />
   )
@@ -182,64 +206,50 @@ function Cell(props) {
 
 Cell.displayName = 'Table.Cell'
 
-Cell.propTypes = {
-  align: PropTypes.oneOf(Object.keys(vars.aligns)),
-  emphasis: PropTypes.bool,
-  flex: PropTypes.string,
-  style: PropTypes.object
+interface RowProps extends HTMLAttributes<HTMLDivElement> {
+  _tableHasDrawers?: boolean
 }
 
-Cell.defaultProps = {
-  align: vars.aligns.left,
-  emphasis: false
-}
-
-function Row(props) {
+const Row: React.FC<RowProps> = ({ _tableHasDrawers = false, ...props }) => {
   const themeName = useTheme()
 
   return (
-    <div
-      role="row"
-      {...styles.row(themeName, props)}
-      {...filterReactProps(props)}
-    />
+    <div role="row" {...styles.row(themeName, _tableHasDrawers)} {...props} />
   )
 }
 Row.displayName = 'Table.Row'
-Row.propTypes = {
-  _tableHasDrawers: PropTypes.bool
-}
-Row.defaultProps = {
-  _tableHasDrawers: false
+
+interface TableStatics {
+  Row: typeof Row
+  Cell: typeof Cell
+  ColumnHeader: typeof ColumnHeader
+  aligns: typeof vars.aligns
+  sorts: typeof vars.sorts
 }
 
-export default function Table(props) {
-  const { children = [] } = props
+const Table: React.FC<HTMLAttributes<HTMLDivElement>> & TableStatics = ({
+  children = [],
+  ...props
+}) => {
   const themeName = useTheme()
 
-  const _tableHasDrawers = React.Children.map(
-    children,
+  const _tableHasDrawers: boolean = React.Children.map(
+    children as JSX.Element[],
     child =>
       child && child.type && drawerDisplayNameRegex.test(child.type.displayName)
   ).some(bool => bool)
 
   return (
-    <div
-      role="table"
-      {...styles.table(themeName, props)}
-      {...filterReactProps(props)}
-    >
-      {React.Children.map(children, child =>
+    <div role="table" {...styles.table(themeName, _tableHasDrawers)} {...props}>
+      {React.Children.map(children as JSX.Element[], (child: JSX.Element) =>
         child && child.type && child.type.displayName === Row.displayName
-          ? React.cloneElement(child, { _tableHasDrawers })
+          ? React.cloneElement((child as unknown) as React.ReactElement, {
+              _tableHasDrawers
+            })
           : child
       )}
     </div>
   )
-}
-
-Table.propTypes = {
-  children: PropTypes.node
 }
 
 Table.Row = Row
@@ -251,3 +261,5 @@ Table.sorts = vars.sorts
 
 export const aligns = vars.aligns
 export const sorts = vars.sorts
+
+export default Table

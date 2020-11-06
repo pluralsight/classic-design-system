@@ -867,7 +867,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
   >
     <div
       aria-sort="ascending"
-      data-css-1apk5wo=""
+      data-css-1yecw7w=""
       role="columnheader"
       style={Object {}}
     >
@@ -898,7 +898,7 @@ exports[`Storyshots columnHeader sort asc w/ onClick 1`] = `
     </div>
     <div
       aria-sort="none"
-      data-css-1whtcij=""
+      data-css-1pztpqq=""
       role="columnheader"
       style={Object {}}
     >
@@ -984,7 +984,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
   >
     <div
       aria-sort="none"
-      data-css-1whtcij=""
+      data-css-1pztpqq=""
       role="columnheader"
       style={Object {}}
     >
@@ -1015,7 +1015,7 @@ exports[`Storyshots columnHeader sort default w/ onClick 1`] = `
     </div>
     <div
       aria-sort="none"
-      data-css-1whtcij=""
+      data-css-1pztpqq=""
       role="columnheader"
       style={Object {}}
     >
@@ -1094,7 +1094,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
   >
     <div
       aria-sort="descending"
-      data-css-1apk5wo=""
+      data-css-1yecw7w=""
       role="columnheader"
       style={Object {}}
     >
@@ -1125,7 +1125,7 @@ exports[`Storyshots columnHeader sort desc w/ onClick 1`] = `
     </div>
     <div
       aria-sort="none"
-      data-css-1whtcij=""
+      data-css-1pztpqq=""
       role="columnheader"
       style={Object {}}
     >
@@ -1597,7 +1597,7 @@ exports[`Storyshots drawer nested table 1`] = `
         data-css-1j3g0qd=""
       >
         <div
-          data-css-qq9r6d=""
+          data-css-vijq7m=""
           role="table"
         >
           <div

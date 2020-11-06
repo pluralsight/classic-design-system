@@ -1,10 +1,5 @@
-export const aligns = {
-  left: 'left',
-  right: 'right',
-  center: 'center'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const sorts = {
-  asc: 'asc',
-  desc: 'desc'
-}
+export const aligns = keyMirror('left', 'right', 'center')
+
+export const sorts = keyMirror('asc', 'desc')
