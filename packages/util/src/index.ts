@@ -17,7 +17,7 @@ export { generateDefaultProps, generatePropTypes } from './prop-defs'
 export { whitelistProps } from './props'
 export { shallowCompare } from './shallow-compare'
 export { capitalize } from './string'
-export { stylesFor } from './styles'
+export * from './styles'
 export { uniqueId } from './unique-id'
 
 export {
