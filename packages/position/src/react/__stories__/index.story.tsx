@@ -71,26 +71,26 @@ const MockToolip = React.forwardRef<
 })
 
 const ScrollContainer: React.FC = props => {
-  const containerClass = (css({
+  const containerSelectors = css({
     border: `4px dashed ${core.colorsOrange.base}`,
     color: core.colorsTextIcon.highOnDark,
     height: 500,
     overflow: 'scroll',
     padding: 20,
     width: 500
-  }) as unknown) as string
-  const shimClass = (css({
+  })
+  const shimSelectors = css({
     border: `1px dashed ${core.colorsBorder.highOnLight}`,
     height: 200,
     margin: '20px 0',
     opacity: 0.4
-  }) as unknown) as string
+  })
 
   return (
-    <div className={containerClass} {...props}>
-      <div className={shimClass} />
+    <div {...containerSelectors}>
+      <div {...shimSelectors} />
       {props.children}
-      <div className={shimClass} />
+      <div {...shimSelectors} />
     </div>
   )
 }
@@ -102,7 +102,7 @@ Object.values(positionComponents).forEach(Comp => {
 
   basicStories.add(displayName, () => (
     <Comp show={<MockToolip />}>
-      <div>{name}</div>
+      <Box>{name}</Box>
     </Comp>
   ))
 })
@@ -121,7 +121,7 @@ storiesOf('Components | Position / custom style', module).add(
 storiesOf('Components | Position / custom ref', module).add(
   'shown element keeps style prop',
   () => {
-    const ref = React.useRef<HTMLDivElement>(null)
+    const ref = React.useRef<HTMLDivElement>()
     const { x, y } =
       typeof ref.current === 'undefined'
         ? { x: -1, y: -1 }

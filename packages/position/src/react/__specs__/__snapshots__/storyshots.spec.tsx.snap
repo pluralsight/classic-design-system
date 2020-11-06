@@ -296,7 +296,9 @@ Array [
     }
   >
     X: 
+    -1
     , Y: 
+    -1
   </span>,
 ]
 `;
@@ -960,18 +962,10 @@ exports[`Storyshots Components | Position / in custom portal RightOf 1`] = `
 
 exports[`Storyshots Components | Position / in scrollable container RightOf 1`] = `
 <div
-  className={
-    Object {
-      "data-css-1h4s9im": "",
-    }
-  }
+  data-css-1h4s9im=""
 >
   <div
-    className={
-      Object {
-        "data-css-916a33": "",
-      }
-    }
+    data-css-916a33=""
   />
   <div
     className={
@@ -1001,11 +995,7 @@ exports[`Storyshots Components | Position / in scrollable container RightOf 1`] 
     </div>
   </div>
   <div
-    className={
-      Object {
-        "data-css-916a33": "",
-      }
-    }
+    data-css-916a33=""
   />
 </div>
 `;
