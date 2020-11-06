@@ -1,7 +1,7 @@
-[data-theme='dark'] {
+[data-psds-theme='dark'] {
   --baseLine: #4d90bc;
 }
-[data-theme='light'] {
+[data-psds-theme='light'] {
   --baseLine: #b4d9f2;
 }
 .lineHeights {
