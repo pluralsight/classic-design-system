@@ -73,10 +73,14 @@ export const LeftOf = React.forwardRef<
 })
 LeftOf.displayName = 'LeftOf'
 
+interface ShowProps {
+  ref?: React.RefObject<HTMLElement>
+  style?: CSSStyleDeclaration
+}
 interface PositionProps extends React.HTMLAttributes<HTMLElement> {
   inNode?: HTMLElement
   position: positionFns.PositionFunction
-  show?: React.ReactElement & { ref: React.RefObject<HTMLElement> }
+  show?: React.FunctionComponentElement<ShowProps>
   target?: React.RefObject<HTMLElement>
   when?: boolean
 }
@@ -97,7 +101,7 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
     const showRef = props.show.ref || innerRef
     const showEl = React.cloneElement(props.show, {
       ref: showRef,
-      style: { ...(props.show.props as any).style, ...style }
+      style: { ...props.show.props.style, ...style }
     })
 
     const updateStyle = React.useCallback(() => {
