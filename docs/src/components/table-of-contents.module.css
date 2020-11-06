@@ -1,7 +1,7 @@
-[data-theme='dark'] {
+[data-psds-theme='dark'] {
   --bg: var(--psColorsBackgroundDark2);
 }
-[data-theme='light'] {
+[data-psds-theme='light'] {
   --bg: var(--psColorsBackgroundLight2);
 }
 .toc {
