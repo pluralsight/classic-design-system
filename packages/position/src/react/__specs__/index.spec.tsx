@@ -58,7 +58,7 @@ describe('Position', () => {
     })
 
     it('preserves ref on child component', () => {
-      const ref = React.createRef()
+      const ref = React.createRef<HTMLDivElement>()
 
       render(
         <Comp show={<div data-testid="tethered" />}>
