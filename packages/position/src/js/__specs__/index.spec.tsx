@@ -6,14 +6,10 @@ import * as positionFns from '..'
 describe('#below', () => {
   const { below } = positionFns
 
-  it('throws if no target el given', () => {
-    expect(_ => below()).toThrow(/target element required/)
-  })
-
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(below(targetEl).styleFor()).toBeUndefined()
+    expect(below(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('returns styles', async () => {
@@ -87,14 +83,10 @@ describe('#below', () => {
 describe('#belowLeft', () => {
   const { belowLeft } = positionFns
 
-  it('throws if no target el given', () => {
-    expect(_ => belowLeft()).toThrow(/target element required/)
-  })
-
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(belowLeft(targetEl).styleFor()).toBeUndefined()
+    expect(belowLeft(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('returns styles', async () => {
@@ -168,14 +160,10 @@ describe('#belowLeft', () => {
 describe('#belowRight', () => {
   const { belowRight } = positionFns
 
-  it('throws if no target el given', () => {
-    expect(_ => belowRight()).toThrow(/target element required/)
-  })
-
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(belowRight(targetEl).styleFor()).toBeUndefined()
+    expect(belowRight(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('returns styles', async () => {
@@ -249,7 +237,7 @@ describe('#above', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(above(targetEl).styleFor()).toBeUndefined()
+    expect(above(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('adjusts for target placement and dimensions', async () => {
@@ -297,7 +285,7 @@ describe('#aboveLeft', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(aboveLeft(targetEl).styleFor()).toBeUndefined()
+    expect(aboveLeft(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('adjusts for target placement and dimensions', async () => {
@@ -345,7 +333,7 @@ describe('#aboveRight', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(aboveRight(targetEl).styleFor()).toBeUndefined()
+    expect(aboveRight(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('adjusts for target placement and dimensions', async () => {
@@ -393,7 +381,7 @@ describe('#rightOf', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(rightOf(targetEl).styleFor()).toBeUndefined()
+    expect(rightOf(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('adjusts for target dimensions and placement', async () => {
@@ -439,7 +427,7 @@ describe('#leftOf', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(leftOf(targetEl).styleFor()).toBeUndefined()
+    expect(leftOf(targetEl).styleFor(undefined)).toBeUndefined()
   })
 
   it('adjusts for target dimensions and placement', async () => {
@@ -625,18 +613,19 @@ function randStr() {
   )
 }
 
-async function createEl(boundingClientRectOpts) {
+async function createEl(boundingClientRectOpts?: Partial<DOMRect>) {
   const id = randStr()
   const { getByTestId } = render(<div data-testid={id} />)
   const el = await waitForElement(() => getByTestId(id))
-  el.getBoundingClientRect = () => ({
-    width: 0,
-    height: 0,
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    ...boundingClientRectOpts
-  })
+  el.getBoundingClientRect = () =>
+    ({
+      width: 0,
+      height: 0,
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      ...boundingClientRectOpts
+    } as DOMRect)
   return el
 }
