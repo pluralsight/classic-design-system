@@ -1,5 +1,4 @@
 import { MenuIcon } from '@pluralsight/ps-design-system-icon'
-// @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import { css } from 'glamor'
 import React from 'react'
