@@ -1,7 +1,7 @@
 import { InfoIcon } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
-import { usePortal, ValueOf } from '@pluralsight/ps-design-system-util'
+import { usePortal } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
