@@ -6,10 +6,10 @@ import * as positionFns from '..'
 describe('#below', () => {
   const { below } = positionFns
 
-  it('returns undefined if no el given', async () => {
+  it('returns {} if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(below(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(below(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('returns styles', async () => {
@@ -83,10 +83,10 @@ describe('#below', () => {
 describe('#belowLeft', () => {
   const { belowLeft } = positionFns
 
-  it('returns undefined if no el given', async () => {
+  it('returns {} if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(belowLeft(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(belowLeft(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('returns styles', async () => {
@@ -160,10 +160,10 @@ describe('#belowLeft', () => {
 describe('#belowRight', () => {
   const { belowRight } = positionFns
 
-  it('returns undefined if no el given', async () => {
+  it('returns {} if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(belowRight(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(belowRight(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('returns styles', async () => {
@@ -234,10 +234,10 @@ describe('#belowRight', () => {
 describe('#above', () => {
   const { above } = positionFns
 
-  it('returns undefined if no el given', async () => {
+  it('returns {} if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(above(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(above(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('adjusts for target placement and dimensions', async () => {
@@ -282,10 +282,10 @@ describe('#above', () => {
 describe('#aboveLeft', () => {
   const { aboveLeft } = positionFns
 
-  it('returns undefined if no el given', async () => {
+  it('returns {} if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(aboveLeft(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(aboveLeft(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('adjusts for target placement and dimensions', async () => {
@@ -333,7 +333,7 @@ describe('#aboveRight', () => {
   it('returns undefined if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(aboveRight(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(aboveRight(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('adjusts for target placement and dimensions', async () => {
@@ -378,10 +378,10 @@ describe('#aboveRight', () => {
 describe('#rightOf', () => {
   const { rightOf } = positionFns
 
-  it('returns undefined if no el given', async () => {
+  it('returns {} if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(rightOf(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(rightOf(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('adjusts for target dimensions and placement', async () => {
@@ -424,10 +424,10 @@ describe('#rightOf', () => {
 describe('#leftOf', () => {
   const { leftOf } = positionFns
 
-  it('returns undefined if no el given', async () => {
+  it('returns {} if no el given', async () => {
     const { getByTestId } = render(<div data-testid="target-el" />)
     const targetEl = await waitForElement(() => getByTestId('target-el'))
-    expect(leftOf(targetEl).styleFor(undefined)).toBeUndefined()
+    expect(leftOf(targetEl).styleFor(undefined)).toEqual({})
   })
 
   it('adjusts for target dimensions and placement', async () => {

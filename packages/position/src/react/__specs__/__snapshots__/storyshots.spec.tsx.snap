@@ -658,11 +658,7 @@ Array [
 
 exports[`Storyshots Components | Position / in custom portal Above 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
@@ -696,11 +692,7 @@ exports[`Storyshots Components | Position / in custom portal Above 1`] = `
 
 exports[`Storyshots Components | Position / in custom portal AboveLeft 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
@@ -734,11 +726,7 @@ exports[`Storyshots Components | Position / in custom portal AboveLeft 1`] = `
 
 exports[`Storyshots Components | Position / in custom portal AboveRight 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
@@ -772,11 +760,7 @@ exports[`Storyshots Components | Position / in custom portal AboveRight 1`] = `
 
 exports[`Storyshots Components | Position / in custom portal Below 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
@@ -810,11 +794,7 @@ exports[`Storyshots Components | Position / in custom portal Below 1`] = `
 
 exports[`Storyshots Components | Position / in custom portal BelowLeft 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
@@ -848,11 +828,7 @@ exports[`Storyshots Components | Position / in custom portal BelowLeft 1`] = `
 
 exports[`Storyshots Components | Position / in custom portal BelowRight 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
@@ -886,11 +862,7 @@ exports[`Storyshots Components | Position / in custom portal BelowRight 1`] = `
 
 exports[`Storyshots Components | Position / in custom portal LeftOf 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
@@ -924,11 +896,7 @@ exports[`Storyshots Components | Position / in custom portal LeftOf 1`] = `
 
 exports[`Storyshots Components | Position / in custom portal RightOf 1`] = `
 <div
-  className={
-    Object {
-      "data-css-yact98": "",
-    }
-  }
+  data-css-yact98=""
 >
   <div
     className={
