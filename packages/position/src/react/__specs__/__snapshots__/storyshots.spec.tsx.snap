@@ -3,11 +3,7 @@
 exports[`Storyshots Components | Position / basic Above 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;Above /&gt;
   </div>,
@@ -35,11 +31,7 @@ Array [
 exports[`Storyshots Components | Position / basic AboveLeft 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;AboveLeft /&gt;
   </div>,
@@ -67,11 +59,7 @@ Array [
 exports[`Storyshots Components | Position / basic AboveRight 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;AboveRight /&gt;
   </div>,
@@ -99,11 +87,7 @@ Array [
 exports[`Storyshots Components | Position / basic Below 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;Below /&gt;
   </div>,
@@ -131,11 +115,7 @@ Array [
 exports[`Storyshots Components | Position / basic BelowLeft 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;BelowLeft /&gt;
   </div>,
@@ -163,11 +143,7 @@ Array [
 exports[`Storyshots Components | Position / basic BelowRight 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;BelowRight /&gt;
   </div>,
@@ -195,11 +171,7 @@ Array [
 exports[`Storyshots Components | Position / basic LeftOf 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;LeftOf /&gt;
   </div>,
@@ -227,11 +199,7 @@ Array [
 exports[`Storyshots Components | Position / basic RightOf 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;RightOf /&gt;
   </div>,
@@ -259,11 +227,7 @@ Array [
 exports[`Storyshots Components | Position / custom ref shown element keeps style prop 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     Tooltip is pink
   </div>,
@@ -306,11 +270,7 @@ Array [
 exports[`Storyshots Components | Position / custom style shown element keeps style prop 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     Tooltip is pink
   </div>,
@@ -339,11 +299,7 @@ Array [
 exports[`Storyshots Components | Position / custom target Above 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -379,11 +335,7 @@ Array [
 exports[`Storyshots Components | Position / custom target AboveLeft 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -419,11 +371,7 @@ Array [
 exports[`Storyshots Components | Position / custom target AboveRight 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -459,11 +407,7 @@ Array [
 exports[`Storyshots Components | Position / custom target Below 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -499,11 +443,7 @@ Array [
 exports[`Storyshots Components | Position / custom target BelowLeft 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -539,11 +479,7 @@ Array [
 exports[`Storyshots Components | Position / custom target BelowRight 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -579,11 +515,7 @@ Array [
 exports[`Storyshots Components | Position / custom target LeftOf 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -619,11 +551,7 @@ Array [
 exports[`Storyshots Components | Position / custom target RightOf 1`] = `
 Array [
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     <div
       style={
@@ -661,11 +589,7 @@ exports[`Storyshots Components | Position / in custom portal Above 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;Above /&gt;
   </div>
@@ -695,11 +619,7 @@ exports[`Storyshots Components | Position / in custom portal AboveLeft 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;AboveLeft /&gt;
   </div>
@@ -729,11 +649,7 @@ exports[`Storyshots Components | Position / in custom portal AboveRight 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;AboveRight /&gt;
   </div>
@@ -763,11 +679,7 @@ exports[`Storyshots Components | Position / in custom portal Below 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;Below /&gt;
   </div>
@@ -797,11 +709,7 @@ exports[`Storyshots Components | Position / in custom portal BelowLeft 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;BelowLeft /&gt;
   </div>
@@ -831,11 +739,7 @@ exports[`Storyshots Components | Position / in custom portal BelowRight 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;BelowRight /&gt;
   </div>
@@ -865,11 +769,7 @@ exports[`Storyshots Components | Position / in custom portal LeftOf 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;LeftOf /&gt;
   </div>
@@ -899,11 +799,7 @@ exports[`Storyshots Components | Position / in custom portal RightOf 1`] = `
   data-css-yact98=""
 >
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     &lt;RightOf /&gt;
   </div>
@@ -936,11 +832,7 @@ exports[`Storyshots Components | Position / in scrollable container RightOf 1`] 
     data-css-916a33=""
   />
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     target
   </div>
@@ -2059,11 +1951,7 @@ exports[`Storyshots Position Edge RightOf 1`] = `
 exports[`Storyshots Utilities | Position / position fns above 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     above
   </div>
@@ -2087,11 +1975,7 @@ exports[`Storyshots Utilities | Position / position fns above 1`] = `
 exports[`Storyshots Utilities | Position / position fns aboveLeft 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     aboveLeft
   </div>
@@ -2115,11 +1999,7 @@ exports[`Storyshots Utilities | Position / position fns aboveLeft 1`] = `
 exports[`Storyshots Utilities | Position / position fns aboveRight 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     aboveRight
   </div>
@@ -2143,11 +2023,7 @@ exports[`Storyshots Utilities | Position / position fns aboveRight 1`] = `
 exports[`Storyshots Utilities | Position / position fns below 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     below
   </div>
@@ -2171,11 +2047,7 @@ exports[`Storyshots Utilities | Position / position fns below 1`] = `
 exports[`Storyshots Utilities | Position / position fns belowLeft 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     belowLeft
   </div>
@@ -2199,11 +2071,7 @@ exports[`Storyshots Utilities | Position / position fns belowLeft 1`] = `
 exports[`Storyshots Utilities | Position / position fns belowRight 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     belowRight
   </div>
@@ -2227,11 +2095,7 @@ exports[`Storyshots Utilities | Position / position fns belowRight 1`] = `
 exports[`Storyshots Utilities | Position / position fns leftOf 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     leftOf
   </div>
@@ -2255,11 +2119,7 @@ exports[`Storyshots Utilities | Position / position fns leftOf 1`] = `
 exports[`Storyshots Utilities | Position / position fns rightOf 1`] = `
 <div>
   <div
-    className={
-      Object {
-        "data-css-5116is": "",
-      }
-    }
+    data-css-5116is=""
   >
     rightOf
   </div>

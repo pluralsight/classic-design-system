@@ -36,7 +36,7 @@ const Box = React.forwardRef<
   const ref = React.useRef<HTMLDivElement>(null)
   React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-  const className = (css({
+  const selectors = css({
     position: 'relative',
     top: '200px',
     left: '200px',
@@ -50,10 +50,10 @@ const Box = React.forwardRef<
     justifyContent: 'center',
     textAlign: 'center',
     width: '200px'
-  }) as unknown) as string
+  })
 
   return (
-    <div className={className} ref={ref}>
+    <div {...selectors} ref={ref}>
       {props.children}
     </div>
   )
