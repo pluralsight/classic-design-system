@@ -1,19 +1,19 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Navbrand from '../index.js'
+import NavBar from '..'
 
-describe('Navbrand', () => {
+describe('Navbar', () => {
   it('renders', () => {
-    const { getByTestId } = render(<Navbrand data-testid="undertest" />)
+    const { getByTestId } = render(<NavBar data-testid="undertest" />)
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
-    render(<Navbrand ref={ref} />)
+    render(<NavBar ref={ref} />)
 
     expect(ref.current).not.toBeNull()
   })

@@ -286,7 +286,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
       data-css-1kfsc44=""
     >
       <a
-        href="#"
+        href="https://duck.com?q=pluralsight"
       >
         <div
           aria-hidden={true}
@@ -552,7 +552,6 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -571,7 +570,6 @@ exports[`Storyshots Note/actions no author - long metadata 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -622,7 +620,6 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -641,7 +638,6 @@ exports[`Storyshots Note/actions no author - no metadata 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -720,7 +716,6 @@ exports[`Storyshots Note/actions one action 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -826,7 +821,6 @@ exports[`Storyshots Note/actions three actions 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -845,7 +839,6 @@ exports[`Storyshots Note/actions three actions 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<AnalyticsIcon />}
             title="Analytics"
           >
             <div
@@ -866,7 +859,6 @@ exports[`Storyshots Note/actions three actions 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -972,7 +964,6 @@ exports[`Storyshots Note/actions two actions 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -991,7 +982,6 @@ exports[`Storyshots Note/actions two actions 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -1097,7 +1087,6 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -1203,7 +1192,6 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             onClick={[Function]}
             title="More"
           >
@@ -1317,7 +1305,6 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -1336,7 +1323,6 @@ exports[`Storyshots Note/actions with long heading 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div
@@ -1434,7 +1420,6 @@ exports[`Storyshots Note/actions without author 1`] = `
         >
           <button
             data-css-td0jeq=""
-            icon={<BookmarkIcon />}
             title="Bookmark"
           >
             <div
@@ -1453,7 +1438,6 @@ exports[`Storyshots Note/actions without author 1`] = `
           </button>
           <button
             data-css-td0jeq=""
-            icon={<MoreIcon />}
             title="More"
           >
             <div

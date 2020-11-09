@@ -67,14 +67,14 @@
   height: 45px;
   pointer-events: none;
 }
-[data-theme='light'] .editorFade {
+[data-psds-theme='light'] .editorFade {
   background: linear-gradient(
     180deg,
     rgba(247, 249, 250, 0) 20%,
     rgba(247, 249, 250, 1) 100%
   );
 }
-[data-theme='dark'] .editorFade {
+[data-psds-theme='dark'] .editorFade {
   background: linear-gradient(
     to bottom,
     rgba(24, 28, 32, 0) 20%,

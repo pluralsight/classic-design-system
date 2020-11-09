@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@8.2.6...@pluralsight/ps-design-system-errors@8.2.7) (2020-11-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-errors
+
+
+
+
+
+## [8.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@8.2.5...@pluralsight/ps-design-system-errors@8.2.6) (2020-11-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-errors
+
+
+
+
+
 ## [8.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@8.2.4...@pluralsight/ps-design-system-errors@8.2.5) (2020-11-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors

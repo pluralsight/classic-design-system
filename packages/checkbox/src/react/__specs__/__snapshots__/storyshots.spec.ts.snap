@@ -10,18 +10,22 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
 >
   <label
     data-css-kn3wr0=""
-    htmlFor="psds-checkbox-unique-id"
     onClick={[Function]}
     onKeyDown={[Function]}
   >
     <div
       data-css-1ij5lym=""
     >
+      <input
+        checked={true}
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
       <div
-        aria-checked={true}
         data-css-1cfeqew=""
-        role="checkbox"
-        tabIndex={0}
       >
         <svg
           aria-label="Indeterminate Mark"
@@ -40,16 +44,6 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
         </svg>
       </div>
     </div>
-    <input
-      checked={true}
-      data-css-6wu9td=""
-      id="psds-checkbox-unique-id"
-      name="colorRed"
-      readOnly={true}
-      tabIndex={-1}
-      type="checkbox"
-      value="red"
-    />
     <div
       data-css-ybwuvp=""
     >
@@ -69,18 +63,22 @@ exports[`Storyshots Checkbox checked 1`] = `
 >
   <label
     data-css-kn3wr0=""
-    htmlFor="psds-checkbox-unique-id"
     onClick={[Function]}
     onKeyDown={[Function]}
   >
     <div
       data-css-1ij5lym=""
     >
+      <input
+        checked={true}
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
       <div
-        aria-checked={true}
         data-css-1cfeqew=""
-        role="checkbox"
-        tabIndex={0}
       >
         <svg
           aria-label="Checkmark"
@@ -96,16 +94,6 @@ exports[`Storyshots Checkbox checked 1`] = `
         </svg>
       </div>
     </div>
-    <input
-      checked={true}
-      data-css-6wu9td=""
-      id="psds-checkbox-unique-id"
-      name="colorRed"
-      readOnly={true}
-      tabIndex={-1}
-      type="checkbox"
-      value="red"
-    />
     <div
       data-css-ybwuvp=""
     >
@@ -125,28 +113,23 @@ exports[`Storyshots Checkbox default 1`] = `
 >
   <label
     data-css-kn3wr0=""
-    htmlFor="psds-checkbox-unique-id"
     onClick={[Function]}
     onKeyDown={[Function]}
   >
     <div
       data-css-1ij5lym=""
     >
+      <input
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
       <div
         data-css-1lxtjk6=""
-        role="checkbox"
-        tabIndex={0}
       />
     </div>
-    <input
-      data-css-6wu9td=""
-      id="psds-checkbox-unique-id"
-      name="colorRed"
-      readOnly={true}
-      tabIndex={-1}
-      type="checkbox"
-      value="red"
-    />
     <div
       data-css-ybwuvp=""
     >
@@ -166,27 +149,24 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
 >
   <label
     data-css-o2msqt=""
-    htmlFor="psds-checkbox-unique-id"
+    onClick={[Function]}
+    onKeyDown={[Function]}
   >
     <div
       data-css-1xpuf1q=""
     >
+      <input
+        data-css-6wu9td=""
+        disabled={true}
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
       <div
         data-css-1lxtjk6=""
-        role="checkbox"
-        tabIndex={-1}
       />
     </div>
-    <input
-      data-css-6wu9td=""
-      disabled={true}
-      id="psds-checkbox-unique-id"
-      name="colorRed"
-      readOnly={true}
-      tabIndex={-1}
-      type="checkbox"
-      value="red"
-    />
     <div
       data-css-ybwuvp=""
     >
@@ -206,27 +186,24 @@ exports[`Storyshots Checkbox disabled 1`] = `
 >
   <label
     data-css-o2msqt=""
-    htmlFor="psds-checkbox-unique-id"
+    onClick={[Function]}
+    onKeyDown={[Function]}
   >
     <div
       data-css-1eqwi1x=""
     >
+      <input
+        data-css-6wu9td=""
+        disabled={true}
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
       <div
         data-css-1lxtjk6=""
-        role="checkbox"
-        tabIndex={-1}
       />
     </div>
-    <input
-      data-css-6wu9td=""
-      disabled={true}
-      id="psds-checkbox-unique-id"
-      name="colorRed"
-      readOnly={true}
-      tabIndex={-1}
-      type="checkbox"
-      value="red"
-    />
     <div
       data-css-ybwuvp=""
     >
@@ -247,18 +224,22 @@ exports[`Storyshots Checkbox error 1`] = `
   <div>
     <label
       data-css-kn3wr0=""
-      htmlFor="psds-checkbox-unique-id"
       onClick={[Function]}
       onKeyDown={[Function]}
     >
       <div
         data-css-f76l29=""
       >
+        <input
+          checked={true}
+          data-css-6wu9td=""
+          name="colorRed"
+          readOnly={true}
+          type="checkbox"
+          value="red"
+        />
         <div
-          aria-checked={true}
           data-css-1cfeqew=""
-          role="checkbox"
-          tabIndex={0}
         >
           <svg
             aria-label="Checkmark"
@@ -274,16 +255,6 @@ exports[`Storyshots Checkbox error 1`] = `
           </svg>
         </div>
       </div>
-      <input
-        checked={true}
-        data-css-6wu9td=""
-        id="psds-checkbox-unique-id"
-        name="colorRed"
-        readOnly={true}
-        tabIndex={-1}
-        type="checkbox"
-        value="red"
-      />
       <div
         data-css-ybwuvp=""
       >
@@ -292,28 +263,23 @@ exports[`Storyshots Checkbox error 1`] = `
     </label>
     <label
       data-css-kn3wr0=""
-      htmlFor="psds-checkbox-unique-id"
       onClick={[Function]}
       onKeyDown={[Function]}
     >
       <div
         data-css-f76l29=""
       >
+        <input
+          data-css-6wu9td=""
+          name="colorRed"
+          readOnly={true}
+          type="checkbox"
+          value="red"
+        />
         <div
           data-css-1lxtjk6=""
-          role="checkbox"
-          tabIndex={0}
         />
       </div>
-      <input
-        data-css-6wu9td=""
-        id="psds-checkbox-unique-id"
-        name="colorRed"
-        readOnly={true}
-        tabIndex={-1}
-        type="checkbox"
-        value="red"
-      />
       <div
         data-css-ybwuvp=""
       >
@@ -334,17 +300,21 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
 >
   <label
     data-css-kn3wr0=""
-    htmlFor="psds-checkbox-unique-id"
     onClick={[Function]}
     onKeyDown={[Function]}
   >
     <div
       data-css-1ij5lym=""
     >
+      <input
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
       <div
         data-css-1cfeqew=""
-        role="checkbox"
-        tabIndex={0}
       >
         <svg
           aria-label="Indeterminate Mark"
@@ -363,15 +333,6 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
         </svg>
       </div>
     </div>
-    <input
-      data-css-6wu9td=""
-      id="psds-checkbox-unique-id"
-      name="colorRed"
-      readOnly={true}
-      tabIndex={-1}
-      type="checkbox"
-      value="red"
-    />
     <div
       data-css-ybwuvp=""
     >
@@ -403,30 +364,24 @@ exports[`Storyshots Checkbox state demo 1`] = `
     </div>
     <label
       data-css-kn3wr0=""
-      htmlFor="psds-checkbox-unique-id"
       onClick={[Function]}
       onKeyDown={[Function]}
     >
       <div
         data-css-1ij5lym=""
       >
+        <input
+          checked={false}
+          data-css-6wu9td=""
+          name="colorRed"
+          readOnly={true}
+          type="checkbox"
+          value="red"
+        />
         <div
-          aria-checked={false}
           data-css-1lxtjk6=""
-          role="checkbox"
-          tabIndex={0}
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        id="psds-checkbox-unique-id"
-        name="colorRed"
-        readOnly={true}
-        tabIndex={-1}
-        type="checkbox"
-        value="red"
-      />
       <div
         data-css-ybwuvp=""
       >
@@ -435,30 +390,24 @@ exports[`Storyshots Checkbox state demo 1`] = `
     </label>
     <label
       data-css-kn3wr0=""
-      htmlFor="psds-checkbox-unique-id"
       onClick={[Function]}
       onKeyDown={[Function]}
     >
       <div
         data-css-1ij5lym=""
       >
+        <input
+          checked={false}
+          data-css-6wu9td=""
+          name="colorGreen"
+          readOnly={true}
+          type="checkbox"
+          value="green"
+        />
         <div
-          aria-checked={false}
           data-css-1lxtjk6=""
-          role="checkbox"
-          tabIndex={0}
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        id="psds-checkbox-unique-id"
-        name="colorGreen"
-        readOnly={true}
-        tabIndex={-1}
-        type="checkbox"
-        value="green"
-      />
       <div
         data-css-ybwuvp=""
       >
@@ -467,30 +416,24 @@ exports[`Storyshots Checkbox state demo 1`] = `
     </label>
     <label
       data-css-kn3wr0=""
-      htmlFor="psds-checkbox-unique-id"
       onClick={[Function]}
       onKeyDown={[Function]}
     >
       <div
         data-css-1ij5lym=""
       >
+        <input
+          checked={false}
+          data-css-6wu9td=""
+          name="colorBlue"
+          readOnly={true}
+          type="checkbox"
+          value="blue"
+        />
         <div
-          aria-checked={false}
           data-css-1lxtjk6=""
-          role="checkbox"
-          tabIndex={0}
         />
       </div>
-      <input
-        checked={false}
-        data-css-6wu9td=""
-        id="psds-checkbox-unique-id"
-        name="colorBlue"
-        readOnly={true}
-        tabIndex={-1}
-        type="checkbox"
-        value="blue"
-      />
       <div
         data-css-ybwuvp=""
       >

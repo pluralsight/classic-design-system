@@ -8,7 +8,6 @@ exports[`Storyshots checked false 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -25,7 +24,7 @@ exports[`Storyshots checked false 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -44,7 +43,6 @@ exports[`Storyshots checked true 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -61,7 +59,7 @@ exports[`Storyshots checked true 1`] = `
     checked={true}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -80,7 +78,6 @@ exports[`Storyshots click large toggles 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -97,7 +94,7 @@ exports[`Storyshots click large toggles 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
 </label>
@@ -111,7 +108,6 @@ exports[`Storyshots click small toggles 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -128,7 +124,7 @@ exports[`Storyshots click small toggles 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
 </label>
@@ -142,7 +138,6 @@ exports[`Storyshots color blue 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -159,7 +154,7 @@ exports[`Storyshots color blue 1`] = `
     checked={true}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -178,7 +173,6 @@ exports[`Storyshots color green 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -195,7 +189,7 @@ exports[`Storyshots color green 1`] = `
     checked={true}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -214,7 +208,6 @@ exports[`Storyshots color orange 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -231,7 +224,7 @@ exports[`Storyshots color orange 1`] = `
     checked={true}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -250,7 +243,6 @@ exports[`Storyshots disabled false 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -267,7 +259,7 @@ exports[`Storyshots disabled false 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
 </label>
@@ -298,7 +290,7 @@ exports[`Storyshots disabled true 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
 </label>
@@ -312,7 +304,6 @@ exports[`Storyshots error false 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -329,7 +320,7 @@ exports[`Storyshots error false 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
 </label>
@@ -343,7 +334,6 @@ exports[`Storyshots error true 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-mmyfiy=""
@@ -360,7 +350,7 @@ exports[`Storyshots error true 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -396,7 +386,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -415,7 +405,6 @@ exports[`Storyshots label large left 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -432,7 +421,7 @@ exports[`Storyshots label large left 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -451,7 +440,6 @@ exports[`Storyshots label large right 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -468,7 +456,7 @@ exports[`Storyshots label large right 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -487,7 +475,6 @@ exports[`Storyshots label small left 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -504,7 +491,7 @@ exports[`Storyshots label small left 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -523,7 +510,6 @@ exports[`Storyshots label small right 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -540,7 +526,7 @@ exports[`Storyshots label small right 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -559,7 +545,6 @@ exports[`Storyshots size large 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -576,7 +561,7 @@ exports[`Storyshots size large 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span
@@ -595,7 +580,6 @@ exports[`Storyshots size small 1`] = `
   onClick={[Function]}
   onFocus={[Function]}
   role="checkbox"
-  tabIndex={0}
 >
   <div
     data-css-1lu7sfl=""
@@ -612,7 +596,7 @@ exports[`Storyshots size small 1`] = `
     checked={false}
     data-css-6wu9td=""
     readOnly={true}
-    tabIndex="-1"
+    tabIndex={-1}
     type="checkbox"
   />
   <span

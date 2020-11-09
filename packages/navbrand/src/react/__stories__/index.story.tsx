@@ -1,10 +1,9 @@
 import { storiesOf } from '@storybook/react'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-import NavBrand from '../index.js'
+import NavBrand from '..'
 
-storiesOf('NavBrand', module).add('states', _ => (
+storiesOf('NavBrand', module).add('states', () => (
   <Grid>
     <NavBrand logo={<SkillsLogo />} wordmark={<SkillsWordmark />} />
     <NavBrand logo={<FlowLogo />} wordmark={<FlowWordmark />} />
@@ -17,11 +16,11 @@ storiesOf('NavBrand', module).add('states', _ => (
   </Grid>
 ))
 
-function SkillsWordmark() {
-  return 'SKILLS'
+const SkillsWordmark: React.FC = () => {
+  return <>SKILLS</>
 }
 
-function SkillsLogo() {
+const SkillsLogo: React.FC = () => {
   return (
     <svg aria-hidden viewBox="0 0 32 32">
       <defs>
@@ -45,7 +44,7 @@ function SkillsLogo() {
   )
 }
 
-function FlowLogo() {
+const FlowLogo: React.FC = () => {
   return (
     <svg aria-hidden viewBox="0 0 32 32">
       <defs>
@@ -72,7 +71,7 @@ function FlowLogo() {
   )
 }
 
-function FlowWordmark() {
+const FlowWordmark: React.FC = () => {
   return (
     <svg
       fill="none"
@@ -91,7 +90,7 @@ function FlowWordmark() {
   )
 }
 
-function PlaceholderLogo() {
+const PlaceholderLogo: React.FC = () => {
   return (
     <svg
       width="24"
@@ -118,11 +117,11 @@ function PlaceholderLogo() {
   )
 }
 
-function PlaceholderWordmark() {
-  return 'TITLE'
+const PlaceholderWordmark: React.FC = () => {
+  return <>TITLE</>
 }
 
-function Grid(props) {
+const Grid: React.FC = props => {
   return (
     <div
       style={{
@@ -135,7 +134,4 @@ function Grid(props) {
       {props.children}
     </div>
   )
-}
-Grid.propTypes = {
-  children: PropTypes.node
 }
