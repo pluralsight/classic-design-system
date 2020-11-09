@@ -1,19 +1,19 @@
 import * as React from 'react'
 
-export default function useDebounceCallback(fn, delay = 100) {
-  const timeout = React.useRef(null)
+export default function useDebounceCallback(
+  fn: (...args: any[]) => void,
+  delay: number = 100
+) {
+  const timeout = React.useRef<NodeJS.Timeout>()
 
   const debounced = React.useCallback(
-    function () {
-      const self = this
-      const args = arguments
-
-      function later() {
-        timeout.current = null
-        fn.apply(self, args)
+    function callFunctionOnDelay(this: void, ...args: any[]) {
+      const later = () => {
+        timeout.current = undefined
+        fn.apply(this, args)
       }
 
-      clearTimeout(timeout.current)
+      if (typeof timeout.current !== 'undefined') clearTimeout(timeout.current)
       timeout.current = setTimeout(later, delay)
     },
     [fn, delay]
@@ -23,7 +23,7 @@ export default function useDebounceCallback(fn, delay = 100) {
     () => () => {
       if (!timeout.current) return
       clearTimeout(timeout.current)
-      timeout.current = null
+      timeout.current = undefined
     },
     [fn, delay]
   )

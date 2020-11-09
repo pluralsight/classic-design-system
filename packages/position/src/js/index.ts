@@ -55,8 +55,11 @@ export type PositionFunction = (
 
 export const above: PositionFunction = target => {
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -77,8 +80,11 @@ export const above: PositionFunction = target => {
 
 export const aboveLeft: PositionFunction = target => {
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -96,8 +102,11 @@ export const aboveLeft: PositionFunction = target => {
 
 export const aboveRight: PositionFunction = target => {
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -116,8 +125,11 @@ export const aboveRight: PositionFunction = target => {
 
 export const rightOf: PositionFunction = target => {
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -141,8 +153,11 @@ export const rightOf: PositionFunction = target => {
 
 export const below: PositionFunction = target => {
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -167,8 +182,11 @@ export const below: PositionFunction = target => {
 
 export const belowLeft: PositionFunction = target => {
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -189,8 +207,11 @@ export const belowLeft: PositionFunction = target => {
 
 export const belowRight: PositionFunction = target => {
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -214,8 +235,11 @@ export const leftOf: PositionFunction = target => {
   if (!target) throw new TypeError('target element required')
 
   return {
-    styleFor(el: HTMLElement | undefined, options?: Partial<StyleOptions>) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()

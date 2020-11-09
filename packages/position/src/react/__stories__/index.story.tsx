@@ -33,8 +33,8 @@ const Box = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >((props, forwardedRef) => {
-  const ref = React.useRef<HTMLDivElement>()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
+  const ref = React.useRef<HTMLDivElement>(null)
+  React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
   const className = (css({
     alignItems: 'center',
@@ -100,7 +100,7 @@ Object.values(positionComponents).forEach(Comp => {
   const { displayName } = Comp
   const name = `<${Comp.displayName} />`
 
-  basicStories.add(displayName, () => (
+  basicStories.add(displayName as string, () => (
     <Comp show={<MockToolip />}>
       <Box>{name}</Box>
     </Comp>
@@ -121,11 +121,10 @@ storiesOf('Components | Position / custom style', module).add(
 storiesOf('Components | Position / custom ref', module).add(
   'shown element keeps style prop',
   () => {
-    const ref = React.useRef<HTMLDivElement>()
-    const { x, y } =
-      typeof ref.current === 'undefined'
-        ? { x: -1, y: -1 }
-        : ref.current.getBoundingClientRect()
+    const ref = React.useRef<HTMLDivElement>(null)
+    const { x, y } = !ref.current
+      ? { x: -1, y: -1 }
+      : ref.current.getBoundingClientRect()
 
     return (
       <>
@@ -152,15 +151,15 @@ Object.values(positionComponents).forEach(Comp => {
   const { displayName } = Comp
   const name = `<${Comp.displayName} />`
 
-  const Outer = props => {
-    const className = css({
+  const Outer: React.FC = props => {
+    const selectors = css({
       border: `4px dashed ${core.colorsOrange.base}`,
       color: core.colorsTextIcon.highOnDark,
       height: 500,
       padding: 20,
       width: 500
     })
-    return <div {...props} className={className} />
+    return <div {...props} {...selectors} />
   }
 
   interface PortalStoryProps {
@@ -174,7 +173,7 @@ Object.values(positionComponents).forEach(Comp => {
     return <Outer>{props.children({ portal })}</Outer>
   }
 
-  portalStories.add(displayName, () => (
+  portalStories.add(displayName as string, () => (
     <PortalStory>
       {({ portal }) => (
         <Comp show={<MockToolip />} inNode={portal.current}>
@@ -187,8 +186,8 @@ Object.values(positionComponents).forEach(Comp => {
 
 const targetStories = storiesOf('Components | Position / custom target', module)
 Object.values(positionComponents).forEach(Comp => {
-  function TargetStory(props) {
-    const ref = React.useRef()
+  const TargetStory: React.FC = props => {
+    const ref = React.useRef<HTMLDivElement>(null)
 
     return (
       <Comp show={<MockToolip />} target={ref}>
@@ -203,7 +202,7 @@ Object.values(positionComponents).forEach(Comp => {
   const { displayName } = Comp
   const name = `<${Comp.displayName} />`
 
-  targetStories.add(displayName, () => <TargetStory />)
+  targetStories.add(displayName as string, () => <TargetStory />)
 })
 
 storiesOf('Components | Position / in scrollable container', module).add(
@@ -212,7 +211,7 @@ storiesOf('Components | Position / in scrollable container', module).add(
     const { RightOf } = positionComponents
 
     function ScrollStory() {
-      const ref = React.useRef()
+      const ref = React.useRef<HTMLDivElement>(null)
 
       return (
         <ScrollContainer>
@@ -228,8 +227,10 @@ storiesOf('Components | Position / in scrollable container', module).add(
 )
 
 const jsStory = storiesOf('Utilities | Position / position fns', module)
-Object.keys(positionFns).forEach((pos: keyof typeof positionFns) =>
-  jsStory.add(pos, _ => <JsStory positionFnName={pos} />)
+Object.keys(positionFns).forEach((pos: string) =>
+  jsStory.add(pos, () => (
+    <JsStory positionFnName={pos as keyof typeof positionFns} />
+  ))
 )
 
 interface JsStoryProps {
@@ -248,8 +249,8 @@ const JsStory: React.FC<JsStoryProps> = ({ positionFnName }) => {
   }
   const tailPosition = TAIL_POSITION_MAP[positionFnName]
 
-  const boxRef = React.useRef<HTMLDivElement>()
-  const tooltipRef = React.useRef<HTMLDivElement>()
+  const boxRef = React.useRef<HTMLDivElement>(null)
+  const tooltipRef = React.useRef<HTMLDivElement>(null)
 
   const [styles, setStyles] = React.useState<React.CSSProperties>({
     position: 'absolute'
@@ -370,5 +371,5 @@ Object.values(positionComponents).forEach(Comp => {
       </div>
     )
   }
-  edgeCaseStories.add(displayName, () => <Demo />)
+  edgeCaseStories.add(displayName as string, () => <Demo />)
 })

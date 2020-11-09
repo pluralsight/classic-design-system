@@ -481,7 +481,7 @@ describe('#edgeCases', () => {
     value: 500
   })
 
-  const targets = {
+  const targets: { [name: string]: Partial<DOMRect> } = {
     topLeft: {
       top: 0,
       right: 16,

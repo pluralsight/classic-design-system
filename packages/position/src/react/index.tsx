@@ -81,14 +81,14 @@ interface PositionProps {
   children: React.FunctionComponentElement<{}>
   inNode?: HTMLElement
   position: positionFns.PositionFunction
-  show?: React.FunctionComponentElement<ShowProps>
+  show: React.FunctionComponentElement<ShowProps>
   target?: HTMLElement | React.RefObject<HTMLElement>
   when?: boolean
 }
 const Position = React.forwardRef<HTMLElement, PositionProps>(
   (props, forwardedRef) => {
     const { target, position: positionFn } = props
-    const inNode = props.inNode || (canUseDOM() ? document.body : null)
+    const inNode = props.inNode || (canUseDOM() ? document.body : undefined)
     const when = typeof props.when === 'boolean' ? props.when : true
 
     const [shownOnce, setShownOnce] = React.useState(false)
@@ -98,18 +98,25 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
       position: 'absolute'
     })
 
-    const ref = React.useRef<HTMLElement>(null)
-    React.useImperativeHandle(forwardedRef, () => ref.current)
+    const ref = React.useRef<HTMLElement>()
+    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLElement)
 
     const child = React.Children.only(
       props.children as React.FunctionComponentElement<{}>
     )
-    const innerRef = React.useRef()
+    const innerRef = React.useRef<HTMLElement>()
     const showRef = props.show.ref || innerRef
-    const showEl = React.cloneElement(props.show, {
-      ref: showRef,
-      style: { ...props.show.props.style, ...style }
-    })
+    const showEl = cloneElementWithRef(
+      (props.show as unknown) as React.ReactHTMLElement<HTMLElement>,
+      innerRef,
+      {
+        style: { ...props.show.props.style, ...style }
+      }
+    )
+    /* const showEl = React.cloneElement(props.show, { */
+    /*   ref: showRef, */
+    /*   style: { ...props.show.props.style, ...style } */
+    /* }) */
 
     const updateStyle = React.useCallback(() => {
       const targetNode =
@@ -127,7 +134,8 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
 
     useOnWindowResize(evt => updateStyle())
     useOnWindowScroll(evt => {
-      const isInner = !showRef.current || showRef.current.contains(evt.target)
+      const isInner =
+        !showRef.current || showRef.current.contains(evt.target as Node)
       if (isInner) return
 
       updateStyle()
@@ -160,7 +168,7 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
   }
 )
 
-function delayUntilNextTick(fn) {
+function delayUntilNextTick(fn: Function) {
   // eslint-disable-next-line
   return setTimeout(fn, 1)
 }
