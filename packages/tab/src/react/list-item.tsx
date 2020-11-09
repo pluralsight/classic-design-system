@@ -45,7 +45,7 @@ const ListItem = React.forwardRef<
     'href' in props ? 'a' : 'button',
     {
       ...rest,
-      ...styles.listItem(active, themeName),
+      ...styles.listItem(active || false, themeName),
       'aria-selected': active,
       ref,
       role: 'tab',

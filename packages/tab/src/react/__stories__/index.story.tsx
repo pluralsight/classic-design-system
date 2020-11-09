@@ -61,16 +61,16 @@ function NavigableExample({
 }
 
 storiesOf('default', module)
-  .add('default', _ => <NavigableExample />)
-  .add('no items', _ => <Tab.List />)
-  .add('as links', _ => (
+  .add('default', () => <NavigableExample />)
+  .add('no items', () => <Tab.List />)
+  .add('as links', () => (
     <Tab.List>
       <Tab.ListItem href="https://duckduckgo.com" id={1} key={1}>
         External link
       </Tab.ListItem>
     </Tab.List>
   ))
-  .add('super long item', _ => (
+  .add('super long item', () => (
     <Tab.List>
       <Tab.ListItem id={1} key={1}>
         This is the song that doesn't end; yes, it goes on and on, my friend;
@@ -85,7 +85,7 @@ storiesOf('default', module)
       </Tab.ListItem>
     </Tab.List>
   ))
-  .add('active item offscreen', _ => (
+  .add('active item offscreen', () => (
     <div style={{ width: '500px', outline: '1px solid red' }}>
       <Tab.List>
         <Tab.ListItem id={1} key={1}>
@@ -117,36 +117,36 @@ storiesOf('default', module)
   ))
 
 storiesOf('scrolling', module)
-  .add('10 count', _ => <NavigableExample count={10} />)
-  .add('20 count', _ => <NavigableExample count={20} />)
-  .add('30 count', _ => <NavigableExample count={30} />)
-  .add('35 count', _ => <NavigableExample count={35} />)
-  .add('thinner container', _ => (
+  .add('10 count', () => <NavigableExample count={10} />)
+  .add('20 count', () => <NavigableExample count={20} />)
+  .add('30 count', () => <NavigableExample count={30} />)
+  .add('35 count', () => <NavigableExample count={35} />)
+  .add('thinner container', () => (
     <div style={{ outline: '1px solid red', width: '50%' }}>
       <NavigableExample count={35} />
     </div>
   ))
-  .add('short list, resizing container', _ => (
+  .add('short list, resizing container', () => (
     <NavigableExample count={7} resizeEvery={3000} />
   ))
-  .add('long list, resizing container', _ => (
+  .add('long list, resizing container', () => (
     <NavigableExample count={35} resizeEvery={3000} />
   ))
 
 storiesOf('style overrides', module)
-  .add('list no borderBottom (style)', _ => (
+  .add('list no borderBottom (style)', () => (
     <Tab.List style={{ borderBottom: 'none' }}>
       <Tab.ListItem id="wow">Wow</Tab.ListItem>
     </Tab.List>
   ))
-  .add('listItem disabled opacity (style)', _ => (
+  .add('listItem disabled opacity (style)', () => (
     <Tab.List>
       <Tab.ListItem style={{ opacity: 0.5 }} id="wow">
         Disabled look
       </Tab.ListItem>
     </Tab.List>
   ))
-  .add('panel disabled opacity (style)', _ => (
+  .add('panel disabled opacity (style)', () => (
     <div>
       <Tab.List>
         <Tab.ListItem style={{ opacity: 0.5 }} id="wow">

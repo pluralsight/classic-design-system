@@ -47,9 +47,9 @@ interface Overflows {
 }
 const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
-  const listRef = React.useRef()
+  const listRef = React.useRef<HTMLDivElement>(null)
   const { width: listWidth } = useResizeObserver(listRef)
-  const sliderRef = React.useRef()
+  const sliderRef = React.useRef<HTMLDivElement>(null)
   const [isRenderedOnce, setRenderedOnce] = React.useState<boolean>(false)
   const [overflows, setOverflows] = React.useState<Overflows>({
     toLeft: false,
@@ -131,12 +131,16 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     }
   }, [listWidth, listRef])
 
-  function handleListItemClick(i, originalOnClick, evt) {
+  function handleListItemClick(
+    i: number,
+    originalOnClick: ((i: number, event: React.MouseEvent) => void) | undefined,
+    evt: React.MouseEvent
+  ) {
     setActiveIndex(i)
     if (typeof originalOnClick === 'function') originalOnClick(i, evt)
   }
 
-  function handleKeyDown(evt) {
+  function handleKeyDown(evt: React.KeyboardEvent) {
     if (evt.key !== 'ArrowRight' && evt.key !== 'ArrowLeft') return
 
     evt.stopPropagation()
@@ -170,7 +174,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     }
   }
 
-  function handlePageLeft(evt) {
+  function handlePageLeft(evt: React.MouseEvent) {
     evt.preventDefault()
     const offscreenLeftWidth = getLeftX(listRef) - getLeftX(sliderRef)
     const smallestNeededWidth = Math.min(listWidth, offscreenLeftWidth)
@@ -178,7 +182,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     setXOffset(lesserXOffset)
   }
 
-  function handlePageRight(evt) {
+  function handlePageRight(evt: React.MouseEvent) {
     evt.preventDefault()
     const maxXOffset = -1 * sliderWidth + listWidth
     const furtherXOffset = Math.max(xOffset - listWidth, maxXOffset)
@@ -210,7 +214,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
             key: (comp as React.FunctionComponentElement<
               React.ComponentProps<typeof ListItem>
             >).props.id,
-            onClick: evt =>
+            onClick: (evt: React.MouseEvent) =>
               handleListItemClick(
                 i,
                 (comp as React.FunctionComponentElement<
@@ -256,25 +260,25 @@ function styleForXOffset(xOffset: number) {
   return { transform: `translateX(${xOffset}px)` }
 }
 
-function getWidth(ref) {
+function getWidth(ref: React.RefObject<HTMLElement>) {
   if (!(ref && ref.current)) return 0
   const rect = ref.current.getBoundingClientRect()
   return rect.width
 }
 
-function getLeftX(ref) {
+function getLeftX(ref: React.RefObject<HTMLElement>) {
   if (!(ref && ref.current)) return 0
   const rect = ref.current.getBoundingClientRect()
   return window.pageXOffset + rect.left
 }
 
-function getRightX(ref) {
+function getRightX(ref: React.RefObject<HTMLElement>) {
   if (!(ref && ref.current)) return 0
   const rect = ref.current.getBoundingClientRect()
   return window.pageXOffset + rect.left + rect.width
 }
 
-function findActiveIndex(els) {
+function findActiveIndex(els: React.ReactNode) {
   return React.Children.toArray(els).findIndex(
     el =>
       el &&
