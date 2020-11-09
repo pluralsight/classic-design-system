@@ -1,19 +1,32 @@
 import { compose, css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css/index.js'
-import * as vars from '../vars/index.js'
+import stylesheet from '../css'
+import * as vars from '../vars'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 const styles = {
-  tag: (themeName, { href, icon, isPressed, onClick, size }) => {
+  tag: ({
+    themeName,
+    clickable,
+    icon,
+    isPressed,
+    size
+  }: {
+    themeName: ValueOf<typeof themeNames>
+    clickable: boolean
+    icon: boolean
+    isPressed: boolean
+    size: ValueOf<typeof vars.sizes>
+  }) => {
     const label = 'psds-tag'
-    const clickable = href || onClick
 
     return compose(
       css(stylesheet[`.${label}`]),
@@ -29,7 +42,7 @@ const styles = {
         css(stylesheet[`.${label}--isPressed.${label}--clickable`])
     )
   },
-  label: (themeName, { icon }) => {
+  label: (themeName: ValueOf<typeof themeNames>, icon: boolean) => {
     const label = 'psds-tag__label'
 
     return compose(
@@ -40,21 +53,52 @@ const styles = {
   }
 }
 
-const Tag = props => {
-  const TagName = props.href ? 'a' : 'div'
+export interface TagStatics {
+  sizes: typeof vars.sizes
+}
+
+export interface TagProps
+  extends HTMLAttributes<HTMLAnchorElement & HTMLDivElement> {
+  error?: boolean
+  href?: string
+  icon?: React.ReactElement
+  isPressed?: boolean
+  onClick?: React.MouseEventHandler
+  size?: ValueOf<typeof vars.sizes>
+  target?: string
+}
+
+const Tag: React.FC<TagProps> & TagStatics = ({
+  children,
+  error = false,
+  icon,
+  isPressed = false,
+  onClick,
+  href,
+  size = vars.sizes.medium,
+  ...props
+}) => {
+  const TagName = href ? 'a' : 'div'
   const themeName = useTheme()
 
   return (
-    <Halo error={props.error} shape={Halo.shapes.pill} inline>
+    <Halo error={error} shape={Halo.shapes.pill} inline>
       <TagName
-        {...(props.isPressed && { 'aria-pressed': true })}
-        {...(props.onClick && { role: 'button', tabIndex: 0 })}
-        {...styles.tag(themeName, props)}
-        {...filterReactProps(props, { tagName: TagName })}
-        icon={undefined} // NOTE: prevent icon prop from passing through
+        {...(isPressed && { 'aria-pressed': true })}
+        {...(Boolean(onClick) && { role: 'button', tabIndex: 0 })}
+        {...styles.tag({
+          themeName,
+          clickable: Boolean(onClick || href),
+          icon: Boolean(icon),
+          isPressed,
+          size
+        })}
+        {...props}
+        href={href}
+        onClick={onClick}
       >
-        <Label>{props.children}</Label>
-        {renderIcon(props)}
+        <Label icon={Boolean(icon)}>{children}</Label>
+        {renderIcon(icon, size)}
       </TagName>
     </Halo>
   )
@@ -63,41 +107,35 @@ const Tag = props => {
 Tag.displayName = 'Tag'
 Tag.sizes = vars.sizes
 
-Tag.propTypes = {
-  children: PropTypes.node.isRequired,
-  error: PropTypes.bool,
-  href: PropTypes.string,
-  icon: PropTypes.element,
-  isPressed: PropTypes.bool,
-  onClick: PropTypes.func,
-  size: PropTypes.oneOf(Object.keys(vars.sizes))
+interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
+  icon: boolean
 }
 
-Tag.defaultProps = {
-  isPressed: false,
-  size: vars.sizes.medium
-}
-
-const Label = props => {
+const Label: React.FC<LabelProps> = ({ icon, ...props }) => {
   const themeName = useTheme()
 
-  return <span {...styles.label(themeName, props)} {...props} />
+  return <span {...styles.label(themeName, icon)} {...props} />
 }
 
-const renderIcon = props => {
-  if (!props.icon) return null
+const renderIcon = (
+  icon?: React.ReactElement,
+  size?: ValueOf<typeof sizes>
+) => {
+  if (!icon) return null
 
   const style = {
-    cursor: props.icon.props.onClick ? 'pointer' : 'default'
+    cursor: icon.props.onClick ? 'pointer' : 'default'
   }
-  const onClick = evt => {
+  const onClick = (evt: React.MouseEvent) => {
     evt.stopPropagation()
-    if (props.icon.props.onClick) props.icon.props.onClick(evt)
+    if (icon.props.onClick) icon.props.onClick(evt)
   }
-  const size =
-    props.size === vars.sizes.small ? iconSizes.small : iconSizes.medium
 
-  return React.cloneElement(props.icon, { style, onClick, size })
+  return React.cloneElement(icon, {
+    style,
+    onClick,
+    size: size === vars.sizes.small ? iconSizes.small : iconSizes.medium
+  })
 }
 
 export const sizes = vars.sizes
