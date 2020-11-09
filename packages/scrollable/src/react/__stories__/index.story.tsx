@@ -107,11 +107,35 @@ storiesOf('components|Scrollable', module)
   })
   .add('with custom tag', () => (
     <>
-      <ScrollableWithDefaults contentAs="main">
+      <ScrollableWithDefaults
+        renderContent={props => {
+          return (
+            <aside
+              {...props.cssSelectors}
+              onScroll={props.onScroll}
+              ref={props.setRef}
+            >
+              {props.children}
+            </aside>
+          )
+        }}
+      >
         <Filler />
       </ScrollableWithDefaults>
 
-      <ScrollableWithDefaults contentAs="aside">
+      <ScrollableWithDefaults
+        renderContent={props => {
+          return (
+            <aside
+              {...props.cssSelectors}
+              onScroll={props.onScroll}
+              ref={props.setRef}
+            >
+              {props.children}
+            </aside>
+          )
+        }}
+      >
         <Filler />
       </ScrollableWithDefaults>
     </>
@@ -174,7 +198,9 @@ const Filler = props => (
 )
 /* eslint-enable react/no-unescaped-entities */
 
-function ScrollableWithDefaults(props) {
+const ScrollableWithDefaults: React.FC<Partial<
+  React.ComponentProps<typeof Scrollable>
+>> = props => {
   return (
     <Scrollable
       {...css({
@@ -189,9 +215,7 @@ function ScrollableWithDefaults(props) {
   )
 }
 
-ScrollableWithDefaults.propTypes = { children: PropTypes.node }
-
-function VanillaScroll(props) {
+const VanillaScroll: React.FC = props => {
   return (
     <div
       {...css({

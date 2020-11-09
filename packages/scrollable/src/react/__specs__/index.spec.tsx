@@ -11,7 +11,7 @@ describe('Scrollable', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLElement>()
 
     render(<Scrollable ref={ref} />)
 
