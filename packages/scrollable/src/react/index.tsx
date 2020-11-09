@@ -25,34 +25,37 @@ const styles = {
     ),
   inner: () => css(stylesheet['.psds-scrollable__inner']),
   content: () => css(stylesheet['.psds-scrollable__content']),
-  handle: (_props, { grabbed }) =>
+  handle: (grabbed: boolean) =>
     compose(
       css(stylesheet['.psds-scrollable__handle']),
       grabbed && css(stylesheet['.psds-scrollable__handle--grabbed'])
     )
 }
 
-let BLANK_IMAGE
+let BLANK_IMAGE: HTMLImageElement | undefined
 if (canUseDOM()) {
   BLANK_IMAGE = new Image(0, 0)
   // prettier-ignore
   BLANK_IMAGE.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 }
 
-function areEqualProps(prevProps, nextProps) {
+function areEqualProps(
+  prevProps: Record<string, unknown>,
+  nextProps: Record<string, unknown>
+) {
   const changed = shallowCompare(prevProps, nextProps)
   return !changed
 }
 
-interface ScrollableProps {
+interface ScrollableProps extends React.HTMLAttributes<HTMLDivElement> {
   renderContent?: (props: renderContentProps) => React.ReactNode
 }
 const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
   (props, forwardedRef) => {
     const { renderContent = defaultRenderContent, ...rest } = props
 
-    const ref = useRef<HTMLElement>(null)
-    useImperativeHandle(forwardedRef, () => ref.current)
+    const ref = useRef<HTMLElement>()
+    useImperativeHandle(forwardedRef, () => ref.current as HTMLElement)
 
     const dragPreview = useRef(BLANK_IMAGE)
 
@@ -85,6 +88,7 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
       if (nextPageY <= 0) return
 
       const content = ref.current
+      if (!content) return
       const delta = evt.pageY - pageY
 
       setPageY(nextPageY)
@@ -96,7 +100,12 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
     }
 
     function onHandleDragStart(evt: React.DragEvent<HTMLDivElement>) {
-      if (evt && evt.dataTransfer && evt.dataTransfer.setDragImage) {
+      if (
+        evt &&
+        evt.dataTransfer &&
+        evt.dataTransfer.setDragImage &&
+        dragPreview.current
+      ) {
         evt.dataTransfer.setDragImage(dragPreview.current, 0, 0)
       }
 
@@ -183,7 +192,7 @@ const Handle: React.FC<HandleProps> = props => {
 
   return (
     <div
-      {...styles.handle(props, { grabbed })}
+      {...styles.handle(grabbed)}
       {...props}
       onDragEnd={onDragEnd}
       onDragStart={onDragStart}

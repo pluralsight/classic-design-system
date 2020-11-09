@@ -142,7 +142,7 @@ storiesOf('components|Scrollable', module)
   ))
 
 /* eslint-disable react/no-unescaped-entities */
-const Filler = props => (
+const Filler: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
     {...props}
     {...css({
