@@ -67,7 +67,7 @@ const styles = {
       _tableHasDrawers && css(stylesheet[`.${label}--drawers`])
     )
   },
-  table: (themeName: ValueOf<typeof themeNames>, inDrawer: boolean) => {
+  table: (themeName: ValueOf<typeof themeNames>, inDrawer?: boolean) => {
     const label = 'psds-table'
 
     return compose(
@@ -227,8 +227,13 @@ interface TableStatics {
   sorts: typeof vars.sorts
 }
 
-const Table: React.FC<HTMLAttributes<HTMLDivElement>> & TableStatics = ({
+export interface TableProps extends HTMLAttributes<HTMLDivElement> {
+  inDrawer?: boolean
+}
+
+const Table: React.FC<TableProps> & TableStatics = ({
   children = [],
+  inDrawer,
   ...props
 }) => {
   const themeName = useTheme()
@@ -240,7 +245,7 @@ const Table: React.FC<HTMLAttributes<HTMLDivElement>> & TableStatics = ({
   ).some(bool => bool)
 
   return (
-    <div role="table" {...styles.table(themeName, _tableHasDrawers)} {...props}>
+    <div role="table" {...styles.table(themeName, inDrawer)} {...props}>
       {React.Children.map(children as JSX.Element[], (child: JSX.Element) =>
         child && child.type && child.type.displayName === Row.displayName
           ? React.cloneElement((child as unknown) as React.ReactElement, {

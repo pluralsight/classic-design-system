@@ -435,7 +435,7 @@ storiesOf('drawer', module)
     return (
       <Table>
         <Drawer base={baseRow} startOpen>
-          <Table>
+          <Table inDrawer>
             <Table.Row>
               <Table.Cell>Child Cell</Table.Cell>
               <Table.Cell>Child Cell</Table.Cell>
