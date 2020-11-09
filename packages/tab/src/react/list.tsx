@@ -190,10 +190,10 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     ...rest,
     role: 'tablist',
     onKeyDown: handleKeyDown,
-    tabIndex: '0'
+    tabIndex: 0
   }
   return (
-    <div {...rest} {...styles.list(themeName)} ref={listRef}>
+    <div {...listProps} {...styles.list(themeName)} ref={listRef}>
       {overflows.toLeft && (
         <OverflowButton position="left" onClick={handlePageLeft} />
       )}
