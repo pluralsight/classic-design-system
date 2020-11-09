@@ -24,7 +24,7 @@ const styles = {
   textWidth: () => css(stylesheet['.psds-tab__list-item__text'])
 }
 
-interface BaseListItemProps {
+export interface BaseListItemProps {
   id: string | number
   active?: boolean
   onClick?: (i: number, event: React.MouseEvent) => void

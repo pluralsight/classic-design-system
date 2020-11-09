@@ -1,27 +1,10 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import * as React from 'react'
 
-const Panel = props => <div {...props} />
-
-const PanelComponent = props => {
-  const panelProps = {
-    role: 'tabpanel',
-    'aria-labelledby': props.labelledBy,
-    ...(props.style ? { style: props.style } : null),
-    ...(props.className ? { className: props.className } : null)
-  }
-  return <Panel {...panelProps}>{props.children}</Panel>
+export interface PanelProps extends React.HTMLAttributes<HTMLDivElement> {
+  labelledBy: string | number
 }
-
-PanelComponent.propTypes = {
-  labelledBy: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-    .isRequired,
-  style: PropTypes.object,
-  className: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ])
+const Panel: React.FC<PanelProps> = props => {
+  const { labelledBy, ...rest } = props
+  return <div role="tablpanel" aria-labelledby={String(labelledBy)} {...rest} />
 }
-
-export default PanelComponent
+export default Panel
