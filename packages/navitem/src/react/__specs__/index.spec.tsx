@@ -1,48 +1,38 @@
 import { render } from '@testing-library/react'
-import React, { MouseEventHandler } from 'react'
+import React from 'react'
 
 import NavItem from '..'
 
 describe('NavItem', () => {
-  it('should render a button', () => {
-    const ref = React.createRef<HTMLButtonElement>()
-    const onClick: MouseEventHandler<HTMLButtonElement> = jest.fn()
+  it('should render a button', async () => {
+    const { findByText } = render(<NavItem>test</NavItem>)
 
-    const { getByTestId } = render(
-      <NavItem
-        data-testid="undertest"
-        onClick={onClick}
-        name="someVal"
-        type="submit"
-        ref={ref}
-      >
-        test
-      </NavItem>
-    )
-    const el = getByTestId('undertest')
-
-    expect(el.tagName.toLowerCase()).toEqual('button')
-    expect(ref.current).not.toBeNull()
+    const label = await findByText('test')
+    const el = label.closest('button')
+    expect(el).not.toBeNull()
   })
 
-  it('should render a hyperlink when an `href` is present', () => {
-    const ref = React.createRef<HTMLAnchorElement>()
-    const onClick: MouseEventHandler<HTMLAnchorElement> = jest.fn()
-
-    const { getByTestId } = render(
-      <NavItem
-        data-testid="undertest"
-        data-custom-attr="custom-attr"
-        href="/"
-        onClick={onClick}
-        ref={ref}
-      >
+  it('should allow rendering an anchor element', async () => {
+    const { findByText } = render(
+      <NavItem renderContainer={props => <a href="" {...props} />}>
         test
       </NavItem>
     )
-    const el = getByTestId('undertest')
 
-    expect(el.tagName.toLowerCase()).toEqual('a')
+    const label = await findByText('test')
+    const el = label.closest('a')
+    expect(el).not.toBeNull()
+  })
+
+  it('should support refs', () => {
+    const ref = React.createRef<HTMLButtonElement>()
+
+    render(
+      <NavItem renderContainer={props => <button ref={ref} {...props} />}>
+        test
+      </NavItem>
+    )
+
     expect(ref.current).not.toBeNull()
   })
 
@@ -50,11 +40,8 @@ describe('NavItem', () => {
     render(
       <NavItem
         UNSAFE_stylesFor={{
-          navitem: {},
           navitem__bar: {},
-          'navitem__bar--selected': {},
-          navitem__hoz: {},
-          navitem__vert: {}
+          'navitem__bar--selected': {}
         }}
       >
         test

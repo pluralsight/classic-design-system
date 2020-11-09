@@ -1,0 +1,28 @@
+import React, { ReactNode, createContext } from 'react'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+
+import { alignments } from '../vars'
+
+interface ContainerProps {
+  children: ReactNode
+}
+
+export interface ContextValue {
+  alignment: ValueOf<typeof alignments>
+  bar?: ReactNode
+  icon?: ReactNode
+  menu: boolean
+  renderContainer: (props: ContainerProps) => JSX.Element
+  selected: boolean
+}
+
+export const initialValue: ContextValue = {
+  alignment: alignments.horizontal,
+  menu: false,
+  selected: false,
+  renderContainer: injected => <button {...injected} />
+}
+
+const Context = createContext<ContextValue>(initialValue)
+
+export default Context

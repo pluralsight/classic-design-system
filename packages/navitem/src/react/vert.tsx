@@ -1,10 +1,12 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { PropsOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useContext } from 'react'
 
-import { Bar, Button } from './common.js'
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
+
+import Context from './context'
+import { Bar, Button } from './common'
 
 const styles = {
   container: () => css(stylesheet['.psds-navitem__vert-container']),
@@ -14,55 +16,45 @@ const styles = {
   layout: () => css(stylesheet['.psds-navitem__vert-layout'])
 }
 
-export function VertContainer(props) {
-  return <span className={styles.container()}>{props.children}</span>
+export const VertLayout: React.FC = props => {
+  const { icon, menu } = useContext(Context)
+
+  return (
+    <VertContainer>
+      <Button>
+        <span {...styles.layout()}>
+          {icon && <VertIcon>{icon}</VertIcon>}
+          {props.children && <VertLabel>{props.children}</VertLabel>}
+          {menu && <VertCaret />}
+        </span>
+      </Button>
+
+      <Bar />
+    </VertContainer>
+  )
+}
+VertLayout.displayName = 'NavItem.VertLayout'
+
+const VertContainer: React.FC<PropsOf<'span'>> = props => {
+  return <span {...styles.container()} {...props} />
 }
 VertContainer.displayName = 'NavItem.VertContainer'
-VertContainer.propTypes = {
-  children: PropTypes.node
-}
 
-export function VertCaret(props) {
-  return props.menu ? (
-    <span className={styles.caret()}>
+const VertCaret: React.FC<PropsOf<'span'>> = props => {
+  return (
+    <span {...styles.caret()} {...props}>
       <CaretDownIcon size={CaretDownIcon.sizes.small} />
     </span>
-  ) : null
+  )
 }
 VertCaret.displayName = 'NavItem.VertCaret'
-VertCaret.propTypes = {
-  menu: PropTypes.bool
-}
 
-export function VertIcon(props) {
-  return props.icon ? <span className={styles.icon()}>{props.icon}</span> : null
+const VertIcon: React.FC = props => {
+  return <span {...styles.icon()} {...props} />
 }
 VertIcon.displayName = 'NavItem.VertIcon'
-VertIcon.propTypes = {
-  icon: PropTypes.element
-}
 
-export function VertLabel(props) {
-  return <span className={styles.label()}>{props.children}</span>
+const VertLabel: React.FC<PropsOf<'span'>> = props => {
+  return <span {...styles.label()} {...props} />
 }
 VertLabel.displayName = 'NavItem.VertLabel'
-VertLabel.propTypes = {
-  children: PropTypes.node
-}
-
-export const VertLayout = React.forwardRef((props, forwardedRef) => (
-  <VertContainer>
-    <Button {...props} ref={forwardedRef}>
-      <span className={styles.layout()}>
-        <VertIcon {...props} />
-        <VertLabel>{props.children}</VertLabel>
-        <VertCaret {...props} />
-      </span>
-    </Button>
-    <Bar {...props} />
-  </VertContainer>
-))
-VertLayout.displayName = 'NavItem.VertLayout'
-VertLayout.propTypes = {
-  children: PropTypes.node
-}

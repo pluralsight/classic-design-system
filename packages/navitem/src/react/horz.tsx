@@ -1,78 +1,74 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { css } from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { PropsOf } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React, { useContext } from 'react'
 
-import { Bar, Button } from './common.js'
-import stylesheet from '../css/index.js'
+import stylesheet from '../css'
+
+import Context from './context'
+import { Bar, Button } from './common'
 
 const styles = {
   container: () => css(stylesheet['.psds-navitem__horz-container']),
+
   caret: () => css(stylesheet['.psds-navitem__horz-caret']),
-  icon: props =>
-    css(
-      stylesheet['.psds-navitem__horz-icon'],
-      !props.children && stylesheet['.psds-navitem__horz-icon--icon-only']
+
+  icon: (props: { hasLabel: boolean }) =>
+    compose(
+      css(stylesheet['.psds-navitem__horz-icon']),
+      !props.hasLabel && css(stylesheet['.psds-navitem__horz-icon--icon-only'])
     ),
+
   label: () => css(stylesheet['.psds-navitem__horz-label']),
-  layout: props =>
-    css(
-      stylesheet['.psds-navitem__horz-layout'],
-      props.menu && stylesheet['.psds-navitem__horz-layout--menu']
+
+  layout: (props: { menu?: unknown }) =>
+    compose(
+      css(stylesheet['.psds-navitem__horz-layout']),
+      props.menu && css(stylesheet['.psds-navitem__horz-layout--menu'])
     )
 }
 
-export function HorzContainer(props) {
-  return <span className={styles.container(props)}>{props.children}</span>
+export const HorzLayout: React.FC = props => {
+  const { icon, menu } = useContext(Context)
+  const hasLabel = !!props.children
+
+  return (
+    <HorzContainer>
+      <Button>
+        <span {...styles.layout({ menu })}>
+          {icon && <HorzIcon hasLabel={hasLabel}>{icon}</HorzIcon>}
+          {hasLabel && <HorzLabel>{props.children}</HorzLabel>}
+          {menu && <HorzCaret />}
+        </span>
+      </Button>
+
+      <Bar />
+    </HorzContainer>
+  )
+}
+HorzLayout.displayName = 'NavItem.HorzLayout'
+
+const HorzContainer: React.FC<PropsOf<'span'>> = props => {
+  return <span {...styles.container()} {...props} />
 }
 HorzContainer.displayName = 'NavItem.HorzContainer'
-HorzContainer.propTypes = {
-  children: PropTypes.node
-}
 
-export function HorzCaret(props) {
-  return props.menu ? (
-    <span className={styles.caret()}>
+const HorzCaret: React.FC<PropsOf<'span'>> = props => {
+  return (
+    <span {...styles.caret()} {...props}>
       <CaretDownIcon size={CaretDownIcon.sizes.small} />
     </span>
-  ) : null
+  )
 }
 HorzCaret.displayName = 'NavItem.HorzCaret'
-HorzCaret.propTypes = {
-  menu: PropTypes.bool
-}
 
-export function HorzIcon(props) {
-  return props.icon ? <span {...styles.icon(props)}>{props.icon}</span> : null
+const HorzIcon: React.FC<{ hasLabel: boolean }> = props => {
+  const { hasLabel, ...rest } = props
+  return <span {...styles.icon({ hasLabel })} {...rest} />
 }
 HorzIcon.displayName = 'NavItem.HorzIcon'
-HorzIcon.propTypes = {
-  icon: PropTypes.element
-}
 
-export function HorzLabel(props) {
-  return props.children ? (
-    <span className={styles.label()}>{props.children}</span>
-  ) : null
+const HorzLabel: React.FC<PropsOf<'span'>> = props => {
+  return <span {...styles.label()} {...props} />
 }
 HorzLabel.displayName = 'NavItem.HorzLabel'
-HorzLabel.propTypes = {
-  children: PropTypes.node
-}
-
-export const HorzLayout = React.forwardRef((props, forwardedRef) => (
-  <HorzContainer>
-    <Button {...props} ref={forwardedRef}>
-      <span className={styles.layout(props)}>
-        <HorzIcon {...props} />
-        <HorzLabel {...props} />
-        <HorzCaret {...props} />
-      </span>
-    </Button>
-    <Bar {...props} />
-  </HorzContainer>
-))
-HorzLayout.displayName = 'NavItem.HorzLayout'
-HorzLayout.propTypes = {
-  children: PropTypes.node
-}

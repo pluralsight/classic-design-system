@@ -24,7 +24,9 @@ Object.values(NavItem.alignments).forEach(alignment => {
 
           <NavItem
             alignment={alignment}
-            href="https://jaketrent.com"
+            renderContainer={injected => (
+              <a {...injected} href="https://jaketrent.com" />
+            )}
             icon={<HomeIcon />}
           >
             Link to web

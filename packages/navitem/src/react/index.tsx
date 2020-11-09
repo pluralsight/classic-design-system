@@ -1,33 +1,44 @@
+import { PropsWithStylesFor } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-import PropTypes from 'prop-types'
 
-import { alignments } from '../vars/index.js'
-import { HorzLayout } from './horz.js'
-import { VertLayout } from './vert.js'
+import { alignments } from '../vars'
 
-const NavItem = React.forwardRef((props, forwardedRef) => {
-  return props.alignment === 'vertical' ? (
-    <VertLayout ref={forwardedRef} {...props} />
-  ) : (
-    <HorzLayout ref={forwardedRef} {...props} />
+import Context, { ContextValue, initialValue } from './context'
+import { HorzLayout } from './horz'
+import { VertLayout } from './vert'
+
+type AllowedSelectors = 'navitem__bar' | 'navitem__bar--selected'
+
+interface NavItemProps
+  extends PropsWithStylesFor<AllowedSelectors>,
+    Partial<ContextValue> {}
+
+interface NavItemStatics {
+  alignments: typeof alignments
+}
+
+const NavItem: React.FC<NavItemProps> & NavItemStatics = props => {
+  const {
+    alignment = initialValue.alignment,
+    bar,
+    children,
+    icon,
+    menu = initialValue.menu,
+    renderContainer = initialValue.renderContainer,
+    selected = initialValue.selected
+  } = props
+
+  const Layout = alignment === alignments.horizontal ? HorzLayout : VertLayout
+  const ctx = { alignment, bar, icon, menu, selected, renderContainer }
+
+  return (
+    <Context.Provider value={ctx}>
+      <Layout>{children}</Layout>
+    </Context.Provider>
   )
-})
+}
+
 NavItem.displayName = 'NavItem'
-NavItem.propTypes = {
-  alignment: PropTypes.oneOf(Object.keys(alignments).map(k => alignments[k])),
-  bar: PropTypes.element,
-  children: PropTypes.node,
-  href: PropTypes.string,
-  icon: PropTypes.element,
-  menu: PropTypes.bool,
-  selected: PropTypes.bool,
-  UNSAFE_stylesFor: PropTypes.object
-}
-NavItem.defaultProps = {
-  alignment: 'horizontal',
-  menu: false,
-  selected: false
-}
 NavItem.alignments = alignments
 
 export default NavItem
