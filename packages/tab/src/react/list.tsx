@@ -1,29 +1,37 @@
 import { motion } from '@pluralsight/ps-design-system-core'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import { css } from 'glamor'
 import {
   CaretRightIcon,
   CaretLeftIcon
 } from '@pluralsight/ps-design-system-icon'
-import PropTypes from 'prop-types'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
+import { useResizeObserver, ValueOf } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css'
-import useResizeObserver from './use-resize-observer'
+import ListItem, {
+  ListItemAnchorTagProps,
+  ListItemButtonTagProps
+} from './list-item'
 
 const slideAnimationLength = parseInt(motion.speedFast) + 10
 
 const styles = {
-  list: ({ themeName }) =>
+  list: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-tab__list'],
       stylesheet[`.psds-tab__list.psds-theme--${themeName}`]
     ),
-  overflowButton: ({ position, themeName }) =>
+  overflowButton: (
+    position: OverflowButtonPosition,
+    themeName: ValueOf<typeof themeNames>
+  ) =>
     css(
       stylesheet['.psds-tab__overflow-button'],
-      stylesheet[`.psds-tab__overflow-button--${position}`],
+      stylesheet[`.psds-tab__overflow-button--${String(position)}`],
       stylesheet[`.psds-tab__overflow-button.psds-theme--${themeName}`],
       stylesheet[
         `.psds-tab__overflow-button--${position}.psds-theme--${themeName}`
@@ -33,28 +41,32 @@ const styles = {
   slider: () => css(stylesheet['.psds-tab__slider'])
 }
 
-function List(props) {
+interface Overflows {
+  toLeft: boolean
+  toRight: boolean
+}
+const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
-  const allProps = {
-    ...props,
-    themeName
-  }
-  const { ref: listRef, width: listWidth } = useResizeObserver()
+  const listRef = React.useRef()
+  const { width: listWidth } = useResizeObserver(listRef)
   const sliderRef = React.useRef()
-  const [isRenderedOnce, setRenderedOnce] = React.useState(false)
-  const [overflows, setOverflows] = React.useState({
+  const [isRenderedOnce, setRenderedOnce] = React.useState<boolean>(false)
+  const [overflows, setOverflows] = React.useState<Overflows>({
     toLeft: false,
     toRight: false
   })
-  const [xOffset, setXOffset] = React.useState(0)
-  const [sliderWidth, setSliderWidth] = React.useState(0)
-  const activeIndexFromProps = findActiveIndex(allProps.children)
+  const [xOffset, setXOffset] = React.useState<number>(0)
+  const [sliderWidth, setSliderWidth] = React.useState<number>(0)
+  const activeIndexFromProps = findActiveIndex(props.children)
   const [activeIndex, setActiveIndex] = React.useState(
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
   )
   const itemRefs = React.useMemo(
-    _ => React.Children.map(allProps.children, () => React.createRef()) || [],
-    [allProps.children]
+    () =>
+      React.Children.map(props.children, () =>
+        React.createRef<HTMLElement>()
+      ) || [],
+    [props.children]
   )
 
   React.useEffect(
@@ -112,7 +124,11 @@ function List(props) {
   }, [listRef, sliderRef, xOffset, listWidth, sliderWidth])
 
   React.useEffect(() => {
-    listWidth >= listRef.current.scrollWidth && setXOffset(0)
+    if (listRef.current !== undefined) {
+      if (listWidth >= (listRef.current as HTMLDivElement).scrollWidth) {
+        setXOffset(0)
+      }
+    }
   }, [listWidth, listRef])
 
   function handleListItemClick(i, originalOnClick, evt) {
@@ -169,7 +185,7 @@ function List(props) {
     setXOffset(furtherXOffset)
   }
 
-  const { children, ...rest } = allProps
+  const { children, ...rest } = props
   const listProps = {
     ...rest,
     role: 'tablist',
@@ -177,30 +193,36 @@ function List(props) {
     tabIndex: '0'
   }
   return (
-    <div
-      {...filterReactProps(listProps)}
-      {...styles.list(listProps)}
-      ref={listRef}
-    >
+    <div {...rest} {...styles.list(themeName)} ref={listRef}>
       {overflows.toLeft && (
         <OverflowButton position="left" onClick={handlePageLeft} />
       )}
       <div
-        {...styles.slider(rest)}
+        {...styles.slider()}
         ref={sliderRef}
         style={styleForXOffset(xOffset)}
       >
-        {React.Children.map(
-          allProps.children,
-          (comp, i) =>
-            comp &&
-            React.cloneElement(comp, {
-              active: activeIndex === i,
-              key: comp.id,
-              onClick: evt => handleListItemClick(i, comp.props.onClick, evt),
-              ref: itemRefs[i]
-            })
-        )}
+        {React.Children.map(props.children, (comp, i) => {
+          if (!comp) return
+
+          const childProps = {
+            active: activeIndex === i,
+            key: (comp as React.FunctionComponentElement<
+              React.ComponentProps<typeof ListItem>
+            >).props.id,
+            onClick: evt =>
+              handleListItemClick(
+                i,
+                (comp as React.FunctionComponentElement<
+                  React.ComponentProps<typeof ListItem>
+                >).props.onClick,
+                evt
+              ),
+            ref: itemRefs[i]
+          }
+
+          return React.cloneElement(comp as any, childProps)
+        })}
       </div>
       {overflows.toRight && (
         <OverflowButton position="right" onClick={handlePageRight} />
@@ -208,35 +230,29 @@ function List(props) {
     </div>
   )
 }
-
-List.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ])
-}
-
 export default List
 
-function OverflowButton(props) {
+type OverflowButtonPosition = 'left' | 'right'
+interface OverflowButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+  position: OverflowButtonPosition
+}
+const OverflowButton: React.FC<OverflowButtonProps> = props => {
   const themeName = useTheme()
-  const allProps = {
-    ...props,
-    themeName
-  }
+  const { position, ...rest } = props
   return (
-    <button {...styles.overflowButton(allProps)} tabIndex="-1" {...props}>
+    <button
+      {...styles.overflowButton(position, themeName)}
+      tabIndex={-1}
+      {...rest}
+    >
       <div {...styles.overflowButtonIcon()}>
-        {allProps.position === 'right' ? <CaretRightIcon /> : <CaretLeftIcon />}
+        {position === 'right' ? <CaretRightIcon /> : <CaretLeftIcon />}
       </div>
     </button>
   )
 }
-OverflowButton.propTypes = {
-  position: PropTypes.oneOf(['left', 'right'])
-}
 
-function styleForXOffset(xOffset) {
+function styleForXOffset(xOffset: number) {
   return { transform: `translateX(${xOffset}px)` }
 }
 
@@ -259,5 +275,11 @@ function getRightX(ref) {
 }
 
 function findActiveIndex(els) {
-  return React.Children.toArray(els).findIndex(el => el && el.props.active)
+  return React.Children.toArray(els).findIndex(
+    el =>
+      el &&
+      (el as React.FunctionComponentElement<
+        React.ComponentProps<typeof ListItem>
+      >).props.active
+  )
 }

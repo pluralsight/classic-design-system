@@ -1,66 +1,63 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import PropTypes from 'prop-types'
 import React from 'react'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css'
 
 const styles = {
-  bar: _ => css(stylesheet['.psds-tab__list-item__bar']),
-  listItem: props =>
+  bar: () => css(stylesheet['.psds-tab__list-item__bar']),
+  listItem: (active: boolean, themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-tab__list-item'],
-      stylesheet[`.psds-tab__list-item.psds-theme--${props.themeName}`],
-      props.active &&
-        stylesheet[`.psds-tab__list-item.psds-tab__list-item--active`],
-      props.active &&
+      stylesheet[`.psds-tab__list-item.psds-theme--${themeName}`],
+      active && stylesheet[`.psds-tab__list-item.psds-tab__list-item--active`],
+      active &&
         stylesheet[
-          `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${props.themeName}`
+          `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeName}`
         ]
     ),
-  textInner: _ => css(stylesheet['.psds-tab__list-item__text-inner']),
-  textWidth: _ => css(stylesheet['.psds-tab__list-item__text'])
+  textInner: () => css(stylesheet['.psds-tab__list-item__text-inner']),
+  textWidth: () => css(stylesheet['.psds-tab__list-item__text'])
 }
 
-const ListItem = React.forwardRef((props, ref) => {
+interface BaseListItemProps {
+  id: string | number
+  active?: boolean
+  onClick?: (i: number, event: React.MouseEvent) => void
+}
+export type ListItemButtonTagProps = BaseListItemProps &
+  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'id' | 'onClick'>
+export type ListItemAnchorTagProps = BaseListItemProps &
+  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'id' | 'onClick'>
+type ListItemProps = ListItemButtonTagProps | ListItemAnchorTagProps
+
+const ListItem = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  ListItemProps
+>((props, ref) => {
+  const { active, children, ...rest } = props
   const themeName = useTheme()
-  const tagName = props.href ? 'a' : 'button'
-  const allProps = {
-    ...props,
-    themeName
-  }
   return React.createElement(
-    tagName,
-    filterReactProps(
-      {
-        ...props,
-        ...styles.listItem(allProps),
-        'aria-selected': allProps.active,
-        ref,
-        role: 'tab',
-        tabIndex: '-1'
-      },
-      { tagName }
-    ),
-    <div {...styles.textWidth(allProps)} tabIndex="-1">
-      <div {...styles.textInner(allProps)} tabIndex="-1">
-        {allProps.children}
+    'href' in props ? 'a' : 'button',
+    {
+      ...rest,
+      ...styles.listItem(active, themeName),
+      'aria-selected': active,
+      ref,
+      role: 'tab',
+      tabIndex: -1
+    },
+    <div {...styles.textWidth()} tabIndex={-1}>
+      <div {...styles.textInner()} tabIndex={-1}>
+        {children}
       </div>
-      <span {...styles.bar(allProps)} />
+      <span {...styles.bar()} />
     </div>
   )
 })
-ListItem.propTypes = {
-  active: PropTypes.bool,
-  children: PropTypes.node,
-  href: PropTypes.string,
-  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  innerRef: PropTypes.func,
-  onClick: PropTypes.func
-}
-ListItem.defaultProps = {
-  active: false
-}
 
 export default ListItem
