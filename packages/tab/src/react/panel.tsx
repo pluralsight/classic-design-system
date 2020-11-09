@@ -5,6 +5,6 @@ export interface PanelProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 const Panel: React.FC<PanelProps> = props => {
   const { labelledBy, ...rest } = props
-  return <div role="tablpanel" aria-labelledby={String(labelledBy)} {...rest} />
+  return <div role="tabpanel" aria-labelledby={String(labelledBy)} {...rest} />
 }
 export default Panel
