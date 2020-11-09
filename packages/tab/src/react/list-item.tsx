@@ -4,22 +4,23 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css'
+import stylesheet from '../css'
 
 const styles = {
-  bar: _ => glamor.css(css['.psds-tab__list-item__bar']),
+  bar: _ => glamor.css(stylesheet['.psds-tab__list-item__bar']),
   listItem: props =>
     glamor.css(
-      css['.psds-tab__list-item'],
-      css[`.psds-tab__list-item.psds-theme--${props.themeName}`],
-      props.active && css[`.psds-tab__list-item.psds-tab__list-item--active`],
+      stylesheet['.psds-tab__list-item'],
+      stylesheet[`.psds-tab__list-item.psds-theme--${props.themeName}`],
       props.active &&
-        css[
+        stylesheet[`.psds-tab__list-item.psds-tab__list-item--active`],
+      props.active &&
+        stylesheet[
           `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${props.themeName}`
         ]
     ),
-  textInner: _ => glamor.css(css['.psds-tab__list-item__text-inner']),
-  textWidth: _ => glamor.css(css['.psds-tab__list-item__text'])
+  textInner: _ => glamor.css(stylesheet['.psds-tab__list-item__text-inner']),
+  textWidth: _ => glamor.css(stylesheet['.psds-tab__list-item__text'])
 }
 
 const ListItem = React.forwardRef((props, ref) => {

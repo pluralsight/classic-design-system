@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css'
+import stylesheet from '../css'
 import useResizeObserver from './use-resize-observer'
 
 const slideAnimationLength = parseInt(motion.speedFast) + 10
@@ -17,18 +17,21 @@ const slideAnimationLength = parseInt(motion.speedFast) + 10
 const styles = {
   list: ({ themeName }) =>
     glamor.css(
-      css['.psds-tab__list'],
-      css[`.psds-tab__list.psds-theme--${themeName}`]
+      stylesheet['.psds-tab__list'],
+      stylesheet[`.psds-tab__list.psds-theme--${themeName}`]
     ),
   overflowButton: ({ position, themeName }) =>
     glamor.css(
-      css['.psds-tab__overflow-button'],
-      css[`.psds-tab__overflow-button--${position}`],
-      css[`.psds-tab__overflow-button.psds-theme--${themeName}`],
-      css[`.psds-tab__overflow-button--${position}.psds-theme--${themeName}`]
+      stylesheet['.psds-tab__overflow-button'],
+      stylesheet[`.psds-tab__overflow-button--${position}`],
+      stylesheet[`.psds-tab__overflow-button.psds-theme--${themeName}`],
+      stylesheet[
+        `.psds-tab__overflow-button--${position}.psds-theme--${themeName}`
+      ]
     ),
-  overflowButtonIcon: () => glamor.css(css['.psds-tab__overflow-button__icon']),
-  slider: () => glamor.css(css['.psds-tab__slider'])
+  overflowButtonIcon: () =>
+    glamor.css(stylesheet['.psds-tab__overflow-button__icon']),
+  slider: () => glamor.css(stylesheet['.psds-tab__slider'])
 }
 
 function List(props) {
