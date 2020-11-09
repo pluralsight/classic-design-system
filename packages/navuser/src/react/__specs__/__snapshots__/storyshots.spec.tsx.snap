@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Navuser states 1`] = `
+exports[`Storyshots NavUser states 1`] = `
 <div
   style={
     Object {
@@ -37,6 +37,16 @@ exports[`Storyshots Navuser states 1`] = `
         >
           :)
         </div>
+      </div>
+      <div
+        data-css-1mmc9g1=""
+      >
+        <div
+          data-css-6flzpu=""
+        />
+        <div
+          data-css-1085xn4=""
+        />
       </div>
     </div>
   </div>
@@ -132,7 +142,6 @@ exports[`Storyshots Navuser states 1`] = `
     <a
       data-css-6uwj3a=""
       href="https://jaketrent.com"
-      name="Jake Trent"
     >
       <div
         aria-hidden={true}
@@ -177,7 +186,6 @@ exports[`Storyshots Navuser states 1`] = `
   >
     <button
       data-css-6uwj3a=""
-      name="Jake Trent Name That is Long"
       onClick={[Function]}
     >
       <div
