@@ -37,6 +37,9 @@ const Box = React.forwardRef<
   React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
   const className = (css({
+    position: 'relative',
+    top: '200px',
+    left: '200px',
     alignItems: 'center',
     border: `4px dashed ${core.colorsPink.base}`,
     color: core.colorsPink.base,
