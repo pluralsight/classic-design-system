@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
+import css from '../css'
 
 const styles = {
   bar: _ => glamor.css(css['.psds-tab__list-item__bar']),

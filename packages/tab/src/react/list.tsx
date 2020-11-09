@@ -9,8 +9,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import css from '../css/index.js'
-import useResizeObserver from './use-resize-observer.js'
+import css from '../css'
+import useResizeObserver from './use-resize-observer'
 
 const slideAnimationLength = parseInt(motion.speedFast) + 10
 
