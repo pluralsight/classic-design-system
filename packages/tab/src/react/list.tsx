@@ -1,6 +1,6 @@
 import { motion } from '@pluralsight/ps-design-system-core'
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import {
   CaretRightIcon,
   CaretLeftIcon
@@ -16,12 +16,12 @@ const slideAnimationLength = parseInt(motion.speedFast) + 10
 
 const styles = {
   list: ({ themeName }) =>
-    glamor.css(
+    css(
       stylesheet['.psds-tab__list'],
       stylesheet[`.psds-tab__list.psds-theme--${themeName}`]
     ),
   overflowButton: ({ position, themeName }) =>
-    glamor.css(
+    css(
       stylesheet['.psds-tab__overflow-button'],
       stylesheet[`.psds-tab__overflow-button--${position}`],
       stylesheet[`.psds-tab__overflow-button.psds-theme--${themeName}`],
@@ -29,9 +29,8 @@ const styles = {
         `.psds-tab__overflow-button--${position}.psds-theme--${themeName}`
       ]
     ),
-  overflowButtonIcon: () =>
-    glamor.css(stylesheet['.psds-tab__overflow-button__icon']),
-  slider: () => glamor.css(stylesheet['.psds-tab__slider'])
+  overflowButtonIcon: () => css(stylesheet['.psds-tab__overflow-button__icon']),
+  slider: () => css(stylesheet['.psds-tab__slider'])
 }
 
 function List(props) {

@@ -1,5 +1,5 @@
 import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
-import * as glamor from 'glamor'
+import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -7,9 +7,9 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import stylesheet from '../css'
 
 const styles = {
-  bar: _ => glamor.css(stylesheet['.psds-tab__list-item__bar']),
+  bar: _ => css(stylesheet['.psds-tab__list-item__bar']),
   listItem: props =>
-    glamor.css(
+    css(
       stylesheet['.psds-tab__list-item'],
       stylesheet[`.psds-tab__list-item.psds-theme--${props.themeName}`],
       props.active &&
@@ -19,8 +19,8 @@ const styles = {
           `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${props.themeName}`
         ]
     ),
-  textInner: _ => glamor.css(stylesheet['.psds-tab__list-item__text-inner']),
-  textWidth: _ => glamor.css(stylesheet['.psds-tab__list-item__text'])
+  textInner: _ => css(stylesheet['.psds-tab__list-item__text-inner']),
+  textWidth: _ => css(stylesheet['.psds-tab__list-item__text'])
 }
 
 const ListItem = React.forwardRef((props, ref) => {
