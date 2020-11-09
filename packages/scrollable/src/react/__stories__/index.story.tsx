@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Scrollable from '../index.js'
+import Scrollable from '..'
 
 storiesOf('components|Scrollable', module)
   .addDecorator(storyFn => (
@@ -110,13 +110,13 @@ storiesOf('components|Scrollable', module)
       <ScrollableWithDefaults
         renderContent={props => {
           return (
-            <aside
+            <main
               {...props.cssSelectors}
               onScroll={props.onScroll}
               ref={props.setRef}
             >
               {props.children}
-            </aside>
+            </main>
           )
         }}
       >

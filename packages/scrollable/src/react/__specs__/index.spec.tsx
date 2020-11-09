@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Scrollable from '../index.js'
+import Scrollable from '..'
 
 describe('Scrollable', () => {
   it('renders', () => {
