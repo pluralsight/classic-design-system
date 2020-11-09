@@ -128,7 +128,7 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
       setShownOnce(true)
     }, [positionFn, target, showRef.current])
 
-    useOnWindowResize(evt => updateStyle())
+    useOnWindowResize(_evt => updateStyle())
     useOnWindowScroll(evt => {
       const isInner =
         !showRef.current || showRef.current.contains(evt.target as Node)
