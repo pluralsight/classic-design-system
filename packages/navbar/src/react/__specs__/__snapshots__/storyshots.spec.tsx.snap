@@ -106,7 +106,6 @@ exports[`Storyshots Navbar desktop 1`] = `
             >
               <span
                 data-css-1009u4g=""
-                hasLabel={false}
               >
                 <div
                   data-css-7dab2f=""
@@ -127,7 +126,9 @@ exports[`Storyshots Navbar desktop 1`] = `
             </span>
           </button>
         </div>
-        <div />
+        <div
+          data-css-14bdu2c=""
+        />
       </span>
     </div>
     <div
@@ -225,7 +226,6 @@ exports[`Storyshots Navbar desktop 1`] = `
             >
               <span
                 data-css-1009u4g=""
-                hasLabel={false}
               >
                 <div
                   data-css-7dab2f=""
@@ -246,7 +246,9 @@ exports[`Storyshots Navbar desktop 1`] = `
             </span>
           </button>
         </div>
-        <div />
+        <div
+          data-css-14bdu2c=""
+        />
       </span>
     </div>
     <div
@@ -374,7 +376,6 @@ exports[`Storyshots Navbar desktop 1`] = `
             >
               <span
                 data-css-1009u4g=""
-                hasLabel={false}
               >
                 <div
                   data-css-7dab2f=""
@@ -395,7 +396,9 @@ exports[`Storyshots Navbar desktop 1`] = `
             </span>
           </button>
         </div>
-        <div />
+        <div
+          data-css-14bdu2c=""
+        />
       </span>
     </div>
     <div
@@ -473,7 +476,6 @@ exports[`Storyshots Navbar desktop 1`] = `
               >
                 <span
                   data-css-1o9ctb7=""
-                  hasLabel={true}
                 >
                   <div
                     data-css-7dab2f=""
@@ -499,7 +501,9 @@ exports[`Storyshots Navbar desktop 1`] = `
               </span>
             </button>
           </div>
-          <div />
+          <div
+            data-css-14bdu2c=""
+          />
         </span>
       </div>
       <div
@@ -525,7 +529,6 @@ exports[`Storyshots Navbar desktop 1`] = `
                 >
                   <span
                     data-css-1o9ctb7=""
-                    hasLabel={true}
                   >
                     <div
                       data-css-7dab2f=""
@@ -568,7 +571,9 @@ exports[`Storyshots Navbar desktop 1`] = `
                 </span>
               </button>
             </div>
-            <div />
+            <div
+              data-css-14bdu2c=""
+            />
           </span>
         </div>
         <div
@@ -605,7 +610,6 @@ exports[`Storyshots Navbar desktop 1`] = `
               >
                 <span
                   data-css-1009u4g=""
-                  hasLabel={false}
                 >
                   <div
                     data-css-7dab2f=""
@@ -626,7 +630,9 @@ exports[`Storyshots Navbar desktop 1`] = `
               </span>
             </button>
           </div>
-          <div />
+          <div
+            data-css-14bdu2c=""
+          />
         </span>
       </div>
       <div
@@ -650,7 +656,6 @@ exports[`Storyshots Navbar desktop 1`] = `
               >
                 <span
                   data-css-1009u4g=""
-                  hasLabel={false}
                 >
                   <div
                     data-css-7dab2f=""
@@ -669,7 +674,9 @@ exports[`Storyshots Navbar desktop 1`] = `
               </span>
             </button>
           </div>
-          <div />
+          <div
+            data-css-14bdu2c=""
+          />
         </span>
       </div>
     </div>
