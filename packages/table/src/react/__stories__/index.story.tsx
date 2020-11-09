@@ -6,18 +6,18 @@ import { storiesOf } from '@storybook/react'
 import Drawer from '@pluralsight/ps-design-system-drawer'
 import Link from '@pluralsight/ps-design-system-link'
 
-import Table from '../index.js'
+import Table from '..'
 
 storiesOf('table', module)
-  .add('empty', _ => <Table />)
-  .add('custom className', _ => (
+  .add('empty', () => <Table />)
+  .add('custom className', () => (
     <Table className="some-class">
       <Table.Row>
         <Table.Cell>innocuous</Table.Cell>
       </Table.Row>
     </Table>
   ))
-  .add('custom style', _ => (
+  .add('custom style', () => (
     <Table style={{ outline: '1px solid red' }}>
       <Table.Row>
         <Table.Cell>innocuous</Table.Cell>
@@ -26,19 +26,19 @@ storiesOf('table', module)
   ))
 
 storiesOf('row', module)
-  .add('one row, empty', _ => (
+  .add('one row, empty', () => (
     <Table>
       <Table.Row />
     </Table>
   ))
-  .add('one row, content', _ => (
+  .add('one row, content', () => (
     <Table>
       <Table.Row>
         <Table.Cell>Something on a row</Table.Cell>
       </Table.Row>
     </Table>
   ))
-  .add('multiple rows', _ => (
+  .add('multiple rows', () => (
     <Table>
       <Table.Row>
         <Table.Cell>Something on a row</Table.Cell>
@@ -51,14 +51,14 @@ storiesOf('row', module)
       </Table.Row>
     </Table>
   ))
-  .add('custom className', _ => (
+  .add('custom className', () => (
     <Table>
       <Table.Row className="some-class">
         <Table.Cell>innocuous</Table.Cell>
       </Table.Row>
     </Table>
   ))
-  .add('custom style', _ => (
+  .add('custom style', () => (
     <Table>
       <Table.Row style={{ outline: '1px solid red' }}>
         <Table.Cell>innocuous</Table.Cell>
@@ -67,21 +67,21 @@ storiesOf('row', module)
   ))
 
 const cellStory = storiesOf('cell', module)
-  .add('empty', _ => (
+  .add('empty', () => (
     <Table>
       <Table.Row>
         <Table.Cell />
       </Table.Row>
     </Table>
   ))
-  .add('text', _ => (
+  .add('text', () => (
     <Table>
       <Table.Row>
         <Table.Cell>Cell text</Table.Cell>
       </Table.Row>
     </Table>
   ))
-  .add('multiple text', _ => (
+  .add('multiple text', () => (
     <Table>
       <Table.Row>
         <Table.Cell>Cell 1 text</Table.Cell>
@@ -89,7 +89,7 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-  .add('inner padding', _ => (
+  .add('inner padding', () => (
     <Table>
       <Table.Row>
         <Table.Cell>
@@ -103,7 +103,7 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-  .add('emphasis text', _ => (
+  .add('emphasis text', () => (
     <Table>
       <Table.Row>
         <Table.Cell emphasis>em-PHA-sis</Table.Cell>
@@ -111,7 +111,7 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-  .add('flex 1 | 4', _ => (
+  .add('flex 1 | 4', () => (
     <Table>
       <Table.Row>
         <Table.Cell flex="1">
@@ -123,7 +123,7 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-  .add('flex 2 | 1', _ => (
+  .add('flex 2 | 1', () => (
     <Table>
       <Table.Row>
         <Table.Cell flex="2">Flex 2</Table.Cell>
@@ -131,7 +131,7 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-  .add('flex, multiple cell, multiple row', _ => (
+  .add('flex, multiple cell, multiple row', () => (
     <Table>
       <Table.Row>
         <Table.Cell flex="2">Flex 2</Table.Cell>
@@ -143,7 +143,7 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-  .add('auto style anchor tag', _ => (
+  .add('auto style anchor tag', () => (
     <Table>
       <Table.Row>
         <Table.Cell>
@@ -161,8 +161,8 @@ const cellStory = storiesOf('cell', module)
       </Table.Row>
     </Table>
   ))
-Object.keys(Table.aligns).forEach(align => {
-  cellStory.add(`align ${align}`, _ => (
+Object.values(Table.aligns).forEach(align => {
+  cellStory.add(`align ${align}`, () => (
     <Table>
       <Table.Row>
         <Table.Cell align={align}>Cell aligned {align}</Table.Cell>
@@ -170,7 +170,7 @@ Object.keys(Table.aligns).forEach(align => {
     </Table>
   ))
 })
-cellStory.add('with child anchor', _ => (
+cellStory.add('with child anchor', () => (
   <Table>
     <Table.Row>
       <Table.Cell>
@@ -179,14 +179,14 @@ cellStory.add('with child anchor', _ => (
     </Table.Row>
   </Table>
 ))
-cellStory.add('custom className', _ => (
+cellStory.add('custom className', () => (
   <Table>
     <Table.Row>
       <Table.Cell className="some-classname">cell text</Table.Cell>
     </Table.Row>
   </Table>
 ))
-cellStory.add('custom style', _ => (
+cellStory.add('custom style', () => (
   <Table>
     <Table.Row>
       <Table.Cell style={{ outline: '1px solid red' }}>cell text</Table.Cell>
@@ -195,14 +195,14 @@ cellStory.add('custom style', _ => (
 ))
 
 const columnHeaderStory = storiesOf('columnHeader', module)
-  .add('text', _ => (
+  .add('text', () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader>header text</Table.ColumnHeader>
       </Table.Row>
     </Table>
   ))
-  .add('w/ rows', _ => (
+  .add('w/ rows', () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader sort>header text</Table.ColumnHeader>
@@ -214,7 +214,7 @@ const columnHeaderStory = storiesOf('columnHeader', module)
       </Table.Row>
     </Table>
   ))
-  .add('w/ drawers', _ => (
+  .add('w/ drawers', () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader sort>header text</Table.ColumnHeader>
@@ -232,15 +232,15 @@ const columnHeaderStory = storiesOf('columnHeader', module)
       </Drawer>
     </Table>
   ))
-  .add('sort default', _ => (
+  .add('sort default', () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader sort>header text</Table.ColumnHeader>
       </Table.Row>
     </Table>
   ))
-Object.keys(Table.sorts).forEach(sort =>
-  columnHeaderStory.add(`sort ${sort}`, _ => (
+Object.values(Table.sorts).forEach(sort =>
+  columnHeaderStory.add(`sort ${sort}`, () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader sort={sort}>sorted header</Table.ColumnHeader>
@@ -248,7 +248,7 @@ Object.keys(Table.sorts).forEach(sort =>
     </Table>
   ))
 )
-columnHeaderStory.add('sort default w/ onClick', _ => (
+columnHeaderStory.add('sort default w/ onClick', () => (
   <Table>
     <Table.Row>
       <Table.ColumnHeader sort onClick={action('click columnHeader 1')}>
@@ -260,8 +260,8 @@ columnHeaderStory.add('sort default w/ onClick', _ => (
     </Table.Row>
   </Table>
 ))
-Object.keys(Table.sorts).forEach(sort =>
-  columnHeaderStory.add(`sort ${sort} w/ onClick`, _ => (
+Object.values(Table.sorts).forEach(sort =>
+  columnHeaderStory.add(`sort ${sort} w/ onClick`, () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader
@@ -278,8 +278,8 @@ Object.keys(Table.sorts).forEach(sort =>
     </Table>
   ))
 )
-Object.keys(Table.aligns).forEach(align => {
-  columnHeaderStory.add(`align ${align}`, _ => (
+Object.values(Table.aligns).forEach(align => {
+  columnHeaderStory.add(`align ${align}`, () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader align={align}>
@@ -289,8 +289,8 @@ Object.keys(Table.aligns).forEach(align => {
     </Table>
   ))
 })
-Object.keys(Table.aligns).forEach(align => {
-  columnHeaderStory.add(`align ${align} w/ sort`, _ => (
+Object.values(Table.aligns).forEach(align => {
+  columnHeaderStory.add(`align ${align} w/ sort`, () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader sort align={align}>
@@ -300,8 +300,8 @@ Object.keys(Table.aligns).forEach(align => {
     </Table>
   ))
 })
-Object.keys(Table.aligns).forEach(align => {
-  columnHeaderStory.add(`long, align ${align} w/ sort`, _ => (
+Object.values(Table.aligns).forEach(align => {
+  columnHeaderStory.add(`long, align ${align} w/ sort`, () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader sort align={align}>
@@ -315,7 +315,7 @@ Object.keys(Table.aligns).forEach(align => {
   ))
 })
 columnHeaderStory
-  .add('custom className', _ => (
+  .add('custom className', () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader className="some-classname">
@@ -324,7 +324,7 @@ columnHeaderStory
       </Table.Row>
     </Table>
   ))
-  .add('custom style', _ => (
+  .add('custom style', () => (
     <Table>
       <Table.Row>
         <Table.ColumnHeader style={{ outline: '1px solid red' }}>
@@ -335,7 +335,7 @@ columnHeaderStory
   ))
 
 storiesOf('drawer', module)
-  .add('single', _ => (
+  .add('single', () => (
     <Table>
       <Drawer
         base={
@@ -348,7 +348,7 @@ storiesOf('drawer', module)
       </Drawer>
     </Table>
   ))
-  .add('mulitple', _ => (
+  .add('mulitple', () => (
     <Table>
       <Drawer
         base={
@@ -370,7 +370,7 @@ storiesOf('drawer', module)
       </Drawer>
     </Table>
   ))
-  .add('w/ flex, some wrap, some not', _ => (
+  .add('w/ flex, some wrap, some not', () => (
     <Table>
       <Drawer
         base={
@@ -423,7 +423,7 @@ storiesOf('drawer', module)
       </Drawer>
     </Table>
   ))
-  .add('nested table', _ => {
+  .add('nested table', () => {
     const baseRow = (
       <Table.Row>
         <Table.Cell>Parent Cell</Table.Cell>
@@ -435,7 +435,7 @@ storiesOf('drawer', module)
     return (
       <Table>
         <Drawer base={baseRow} startOpen>
-          <Table inDrawer>
+          <Table>
             <Table.Row>
               <Table.Cell>Child Cell</Table.Cell>
               <Table.Cell>Child Cell</Table.Cell>
