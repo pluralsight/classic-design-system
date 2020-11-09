@@ -113,10 +113,6 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
         style: { ...props.show.props.style, ...style }
       }
     )
-    /* const showEl = React.cloneElement(props.show, { */
-    /*   ref: showRef, */
-    /*   style: { ...props.show.props.style, ...style } */
-    /* }) */
 
     const updateStyle = React.useCallback(() => {
       const targetNode =
