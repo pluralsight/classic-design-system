@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as components from '../index.js'
+import * as components from '..'
 
 describe('Position', () => {
   // NOTE: suppressing unnecessary warnings from test renderer.
@@ -10,10 +10,10 @@ describe('Position', () => {
   const originalError = console.error
 
   beforeAll(() => {
-    console.error = (...args) => {
-      if (/Warning.*not wrapped in act/.test(args[0])) return
+    console.error = (message?: any, ...optionalParams: any[]): void => {
+      if (/Warning.*not wrapped in act/.test(message)) return
 
-      originalError.call(console, ...args)
+      originalError.call(console, message, ...optionalParams)
     }
   })
 
@@ -22,9 +22,7 @@ describe('Position', () => {
   })
   // END NOTE
 
-  describe.each(Object.keys(components))('%s', key => {
-    const Comp = components[key]
-
+  describe.each(Object.values(components))('%s', Comp => {
     it('should render', () => {
       const { getByTestId } = render(
         <Comp show={<div data-testid="tethered" />}>
@@ -46,7 +44,7 @@ describe('Position', () => {
     })
 
     it('forwards refs', () => {
-      const ref = React.createRef()
+      const ref = React.createRef<HTMLElement>()
 
       render(
         <Comp ref={ref} show={<div data-testid="tethered" />}>
@@ -58,7 +56,7 @@ describe('Position', () => {
     })
 
     it('preserves ref on child component', () => {
-      const ref = React.createRef()
+      const ref = React.createRef<HTMLDivElement>()
 
       render(
         <Comp show={<div data-testid="tethered" />}>
