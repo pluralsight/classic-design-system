@@ -83,5 +83,6 @@ export default Example
 />
 
 <TypesTable>
-  <TypesProp name="children" required type="React.ReactNode" />
+  <TypesProp name="renderContent" type="(props: { children: React.ReactNode, onScroll: React.UIEventHandler, [cssSelector: string]: '' }, ref: React.Ref) => React.ReactNode" default="Renders as a div" desc="Scrollable content render prop" />
+  <TypesProp name="children" required type="React.ReactNode" desc="Content to make scrollable" />
 </TypesTable>

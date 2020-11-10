@@ -150,7 +150,6 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
 Scrollable.displayName = 'Scrollable'
 
 export interface renderContentProps {
-  /* [cssSelector: string]: string */
   children: React.ReactNode
   onScroll: React.UIEventHandler
 }
