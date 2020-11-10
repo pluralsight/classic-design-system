@@ -4,7 +4,7 @@ import {
   shallowCompare,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
-import { compose, css, media, StyleAttribute } from 'glamor'
+import { compose, css, media } from 'glamor'
 import React, {
   forwardRef,
   useCallback,
@@ -48,7 +48,10 @@ function areEqualProps(
 }
 
 interface ScrollableProps extends React.HTMLAttributes<HTMLDivElement> {
-  renderContent?: (props: renderContentProps) => React.ReactNode
+  renderContent?: (
+    props: renderContentProps,
+    ref: React.RefCallback<HTMLElement>
+  ) => React.ReactNode
 }
 const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
   (props, forwardedRef) => {
@@ -123,12 +126,14 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
     return (
       <Outer data-scrollable {...rest}>
         <Inner key="scrollable-wrapper">
-          {renderContent({
-            children: props.children,
-            cssSelectors: styles.content(),
-            onScroll: updateDimensions,
-            setRef: (node: HTMLElement) => (ref.current = node)
-          })}
+          {renderContent(
+            {
+              children: props.children,
+              onScroll: updateDimensions,
+              ...styles.content()
+            },
+            (node: HTMLElement) => (ref.current = node)
+          )}
         </Inner>
 
         <Handle
@@ -144,19 +149,15 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
 )
 Scrollable.displayName = 'Scrollable'
 
-interface renderContentProps {
+export interface renderContentProps {
+  /* [cssSelector: string]: string */
   children: React.ReactNode
-  cssSelectors: StyleAttribute
   onScroll: React.UIEventHandler
-  setRef: React.RefCallback<HTMLElement>
 }
-const defaultRenderContent = (props: renderContentProps) => {
-  return (
-    <div {...props.cssSelectors} onScroll={props.onScroll} ref={props.setRef}>
-      {props.children}
-    </div>
-  )
-}
+const defaultRenderContent = (
+  contentProps: renderContentProps,
+  contentRef: React.RefCallback<HTMLElement>
+) => <div {...contentProps} ref={contentRef} />
 
 const Outer = React.memo<React.HTMLAttributes<HTMLDivElement>>(
   function OuterComp(props) {
