@@ -1,9 +1,9 @@
-import * as React from 'react'
+import React, { HTMLAttributes, FC } from 'react'
 
-export interface PanelProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface PanelProps extends HTMLAttributes<HTMLDivElement> {
   labelledBy: string | number
 }
-const Panel: React.FC<PanelProps> = props => {
+const Panel: FC<PanelProps> = props => {
   const { labelledBy, ...rest } = props
   return <div role="tabpanel" aria-labelledby={String(labelledBy)} {...rest} />
 }

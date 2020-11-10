@@ -9,7 +9,20 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { useResizeObserver, ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React from 'react'
+import React, {
+  ComponentProps,
+  FC,
+  FunctionComponentElement,
+  HTMLAttributes,
+  ReactNode,
+  RefObject,
+  cloneElement,
+  createRef,
+  useEffect,
+  useMemo,
+  useRef,
+  useState
+} from 'react'
 
 import stylesheet from '../css'
 import ListItem from './list-item'
@@ -42,31 +55,29 @@ interface Overflows {
   toLeft: boolean
   toRight: boolean
 }
-const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
+const List: FC<HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
-  const listRef = React.useRef<HTMLDivElement>(null)
+  const listRef = useRef<HTMLDivElement>(null)
   const { width: listWidth } = useResizeObserver(listRef)
-  const sliderRef = React.useRef<HTMLDivElement>(null)
-  const [isRenderedOnce, setRenderedOnce] = React.useState<boolean>(false)
-  const [overflows, setOverflows] = React.useState<Overflows>({
+  const sliderRef = useRef<HTMLDivElement>(null)
+  const [isRenderedOnce, setRenderedOnce] = useState<boolean>(false)
+  const [overflows, setOverflows] = useState<Overflows>({
     toLeft: false,
     toRight: false
   })
-  const [xOffset, setXOffset] = React.useState<number>(0)
-  const [sliderWidth, setSliderWidth] = React.useState<number>(0)
+  const [xOffset, setXOffset] = useState<number>(0)
+  const [sliderWidth, setSliderWidth] = useState<number>(0)
   const activeIndexFromProps = findActiveIndex(props.children)
-  const [activeIndex, setActiveIndex] = React.useState(
+  const [activeIndex, setActiveIndex] = useState(
     activeIndexFromProps > -1 ? activeIndexFromProps : 0
   )
-  const itemRefs = React.useMemo(
+  const itemRefs = useMemo(
     () =>
-      React.Children.map(props.children, () =>
-        React.createRef<HTMLElement>()
-      ) || [],
+      React.Children.map(props.children, () => createRef<HTMLElement>()) || [],
     [props.children]
   )
 
-  React.useEffect(
+  useEffect(
     function calcSliderWidth() {
       if (itemRefs)
         setSliderWidth(
@@ -76,7 +87,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     [itemRefs]
   )
 
-  React.useEffect(
+  useEffect(
     function ensureActiveItemOnscreen() {
       if (!isRenderedOnce) {
         const itemRightX = getRightX(itemRefs[activeIndex])
@@ -91,7 +102,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     [activeIndex, isRenderedOnce, itemRefs, listRef]
   )
 
-  React.useEffect(
+  useEffect(
     function setActiveIndexFromProps() {
       if (activeIndex !== activeIndexFromProps && activeIndexFromProps !== -1)
         setActiveIndex(activeIndexFromProps)
@@ -99,7 +110,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     [activeIndex, activeIndexFromProps]
   )
 
-  React.useEffect(() => {
+  useEffect(() => {
     function calcOverflow() {
       const toRight = sliderWidth + xOffset > listWidth
 
@@ -120,7 +131,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
     }
   }, [listRef, sliderRef, xOffset, listWidth, sliderWidth])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (listRef.current !== undefined) {
       /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
       if (listWidth >= (listRef.current as HTMLDivElement).scrollWidth) {
@@ -209,14 +220,14 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
 
           const childProps = {
             active: activeIndex === i,
-            key: (comp as React.FunctionComponentElement<
-              React.ComponentProps<typeof ListItem>
+            key: (comp as FunctionComponentElement<
+              ComponentProps<typeof ListItem>
             >).props.id,
             onClick: (evt: React.MouseEvent) =>
               handleListItemClick(
                 i,
-                (comp as React.FunctionComponentElement<
-                  React.ComponentProps<typeof ListItem>
+                (comp as FunctionComponentElement<
+                  ComponentProps<typeof ListItem>
                 >).props.onClick as
                   | ((i: number, evt: React.MouseEvent) => void)
                   | undefined,
@@ -225,7 +236,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
             ref: itemRefs[i]
           }
 
-          return React.cloneElement(comp as any, childProps)
+          return cloneElement(comp as any, childProps)
         })}
       </div>
       {overflows.toRight && (
@@ -237,10 +248,10 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
 export default List
 
 type OverflowButtonPosition = 'left' | 'right'
-interface OverflowButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+interface OverflowButtonProps extends HTMLAttributes<HTMLButtonElement> {
   position: OverflowButtonPosition
 }
-const OverflowButton: React.FC<OverflowButtonProps> = props => {
+const OverflowButton: FC<OverflowButtonProps> = props => {
   const themeName = useTheme()
   const { position, ...rest } = props
   return (
@@ -260,30 +271,29 @@ function styleForXOffset(xOffset: number) {
   return { transform: `translateX(${xOffset}px)` }
 }
 
-function getWidth(ref: React.RefObject<HTMLElement>) {
+function getWidth(ref: RefObject<HTMLElement>) {
   if (!(ref && ref.current)) return 0
   const rect = ref.current.getBoundingClientRect()
   return rect.width
 }
 
-function getLeftX(ref: React.RefObject<HTMLElement>) {
+function getLeftX(ref: RefObject<HTMLElement>) {
   if (!(ref && ref.current)) return 0
   const rect = ref.current.getBoundingClientRect()
   return window.pageXOffset + rect.left
 }
 
-function getRightX(ref: React.RefObject<HTMLElement>) {
+function getRightX(ref: RefObject<HTMLElement>) {
   if (!(ref && ref.current)) return 0
   const rect = ref.current.getBoundingClientRect()
   return window.pageXOffset + rect.left + rect.width
 }
 
-function findActiveIndex(els: React.ReactNode) {
+function findActiveIndex(els: ReactNode) {
   return React.Children.toArray(els).findIndex(
     el =>
       el &&
-      (el as React.FunctionComponentElement<
-        React.ComponentProps<typeof ListItem>
-      >).props.active
+      (el as FunctionComponentElement<ComponentProps<typeof ListItem>>).props
+        .active
   )
 }

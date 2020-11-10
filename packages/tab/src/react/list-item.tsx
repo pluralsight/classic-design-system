@@ -4,7 +4,7 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React from 'react'
+import React, { ForwardRefExoticComponent, RefObject, forwardRef } from 'react'
 
 import stylesheet from '../css'
 
@@ -42,39 +42,31 @@ export interface ListItemButtonProps
 }
 type ListItemElement = HTMLButtonElement | HTMLAnchorElement
 type ListItemProps = ListItemAnchorProps | ListItemButtonProps
-type ListItemComponent = React.ForwardRefExoticComponent<ListItemProps> & {
-  (
-    props: ListItemAnchorProps,
-    ref?: React.RefObject<HTMLAnchorElement>
-  ): JSX.Element
-  (
-    props: ListItemButtonProps,
-    ref?: React.RefObject<HTMLButtonElement>
-  ): JSX.Element
+type ListItemComponent = ForwardRefExoticComponent<ListItemProps> & {
+  (props: ListItemAnchorProps, ref?: RefObject<HTMLAnchorElement>): JSX.Element
+  (props: ListItemButtonProps, ref?: RefObject<HTMLButtonElement>): JSX.Element
 }
 
-const ListItem = React.forwardRef<ListItemElement, ListItemProps>(
-  (props, ref) => {
-    const { active, children, ...rest } = props
-    const themeName = useTheme()
-    return React.createElement(
-      'href' in props ? 'a' : 'button',
-      {
-        ...rest,
-        ...styles.listItem(active || false, themeName),
-        'aria-selected': active,
-        ref,
-        role: 'tab',
-        tabIndex: -1
-      },
-      <div {...styles.textWidth()} tabIndex={-1}>
-        <div {...styles.textInner()} tabIndex={-1}>
-          {children}
-        </div>
-        <span {...styles.bar()} />
+const ListItem = forwardRef<ListItemElement, ListItemProps>((props, ref) => {
+  const { active, children, ...rest } = props
+  const themeName = useTheme()
+  return React.createElement(
+    'href' in props ? 'a' : 'button',
+    {
+      ...rest,
+      ...styles.listItem(active || false, themeName),
+      'aria-selected': active,
+      ref,
+      role: 'tab',
+      tabIndex: -1
+    },
+    <div {...styles.textWidth()} tabIndex={-1}>
+      <div {...styles.textInner()} tabIndex={-1}>
+        {children}
       </div>
-    )
-  }
-) as ListItemComponent
+      <span {...styles.bar()} />
+    </div>
+  )
+}) as ListItemComponent
 
 export default ListItem
