@@ -1,7 +1,7 @@
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
-import Table from '../index.js'
+import Table from '..'
 
 describe('columnHeader', () => {
   test('sorted=false onClick called with just evt', () => {
@@ -12,7 +12,7 @@ describe('columnHeader', () => {
     const columnHeader = container.firstChild
     expect(columnHeader).not.toHaveAttribute('aria-sort')
     fireEvent.click(getByRole('button'))
-    expect(spy).toBeCalledWith(expect.anything())
+    expect(spy).toBeCalledWith(expect.anything(), undefined)
   })
 
   test('sorted=true onClick called with asc', () => {
