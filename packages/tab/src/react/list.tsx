@@ -12,10 +12,7 @@ import { css } from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css'
-import ListItem, {
-  ListItemAnchorTagProps,
-  ListItemButtonTagProps
-} from './list-item'
+import ListItem from './list-item'
 
 const slideAnimationLength = parseInt(motion.speedFast) + 10
 
@@ -220,7 +217,9 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
                 i,
                 (comp as React.FunctionComponentElement<
                   React.ComponentProps<typeof ListItem>
-                >).props.onClick,
+                >).props.onClick as
+                  | ((i: number, evt: React.MouseEvent) => void)
+                  | undefined,
                 evt
               ),
             ref: itemRefs[i]
