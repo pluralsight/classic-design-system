@@ -50,7 +50,7 @@ function areEqualProps(
 interface ScrollableProps extends React.HTMLAttributes<HTMLDivElement> {
   renderContent?: (
     props: renderContentProps,
-    ref: React.RefCallback<HTMLElement>
+    ref: React.Ref<HTMLElement>
   ) => React.ReactNode
 }
 const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
