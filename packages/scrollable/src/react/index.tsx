@@ -55,6 +55,7 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
     const { renderContent = defaultRenderContent, ...rest } = props
 
     const ref = useRef<HTMLElement>()
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
     useImperativeHandle(forwardedRef, () => ref.current as HTMLElement)
 
     const dragPreview = useRef(BLANK_IMAGE)
