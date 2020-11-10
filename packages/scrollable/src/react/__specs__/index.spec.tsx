@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Scrollable from '../index.js'
+import Scrollable from '..'
 
 describe('Scrollable', () => {
   it('renders', () => {
@@ -11,7 +11,7 @@ describe('Scrollable', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLElement>()
 
     render(<Scrollable ref={ref} />)
 
