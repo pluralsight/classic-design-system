@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.7.1...@pluralsight/ps-design-system-util@5.8.0) (2020-11-05)
+
+
+### Features
+
+* **util:** add PropsOf and RefFor ts utils ([fd57779](https://github.com/pluralsight/design-system/commit/fd5777978ba28b493c93da2a81ad4bbdd8700393))
+
+
+
+
+
 ## [5.7.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.7.0...@pluralsight/ps-design-system-util@5.7.1) (2020-11-02)
 
 

@@ -41,12 +41,11 @@ function getCookie(name) {
 
 const cookieThemeName = getCookie('psds-docs-theme')
 
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches
 
-const initialThemeName =
-  cookieThemeName || (prefersDark && '${Theme.names.dark}') || '${Theme.names.light}'
+const initialThemeName = cookieThemeName || (prefersLight && '${Theme.names.light}') || '${Theme.names.dark}'
 
-document.body.setAttribute('data-theme', initialThemeName)
+document.body.setAttribute('data-psds-theme', initialThemeName)
 })()
   `
   // eslint-disable-next-line react/no-danger

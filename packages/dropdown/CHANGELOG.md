@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.3.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.5...@pluralsight/ps-design-system-dropdown@9.3.6) (2020-11-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [9.3.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.4...@pluralsight/ps-design-system-dropdown@9.3.5) (2020-11-05)
+
+
+### Bug Fixes
+
+* **dropdown:** set max height ([#1378](https://github.com/pluralsight/design-system/issues/1378)) ([25aa66d](https://github.com/pluralsight/design-system/commit/25aa66d6bfe8a3d8f5ec335ea45fdd4b1a9b6da2))
+
+
+
+
+
 ## [9.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.3...@pluralsight/ps-design-system-dropdown@9.3.4) (2020-11-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

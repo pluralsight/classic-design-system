@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@10.1.7...@pluralsight/ps-design-system-badge@10.1.8) (2020-11-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-badge
+
+
+
+
+
 ## [10.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@10.1.6...@pluralsight/ps-design-system-badge@10.1.7) (2020-11-02)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge
