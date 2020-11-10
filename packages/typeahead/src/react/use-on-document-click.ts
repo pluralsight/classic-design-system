@@ -1,10 +1,12 @@
 import { canUseDOM } from '@pluralsight/ps-design-system-util'
-import React from 'react'
+import { useEffect } from 'react'
 
 const isBrowser = canUseDOM()
 
-export default function useOnDocumentClick(handler) {
-  React.useEffect(() => {
+type Callback = (evt: Event | MouseEvent | UIEvent) => void
+
+export default function useOnDocumentClick(handler: Callback) {
+  useEffect(() => {
     if (!isBrowser) return
 
     document.addEventListener('mousedown', handler)

@@ -1,173 +1,211 @@
-import React, { Children, useState } from 'react'
-import PropTypes from 'prop-types'
-
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+// @ts-ignore: TODO: update Position typings
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
-import { elementOfType } from '@pluralsight/ps-design-system-prop-types'
 import TextInput from '@pluralsight/ps-design-system-textinput'
-import { usePortal } from '@pluralsight/ps-design-system-util'
+import {
+  RefForwardingComponent,
+  combineFns,
+  usePortal
+} from '@pluralsight/ps-design-system-util'
+import React, { Children, useState } from 'react'
 
-import * as vars from '../vars/index.js'
+import * as vars from '../vars'
 
-import SuggestionsMenu from './menu.js'
-import useOnDocumentClick from './use-on-document-click.js'
-import { combineFns, omit, pick } from './utils.js'
+import SuggestionsMenu from './menu'
+import Suggestion, {
+  FilterFn,
+  filterSuggestions,
+  getSuggestionLabel,
+  getSuggestionValue
+} from './suggestion'
+import useOnDocumentClick from './use-on-document-click'
 
-const TEXT_INPUT_PROPS = [
-  'appearance',
-  'disabled',
-  'error',
-  'label',
-  'name',
-  'onChange',
-  'placeholder',
-  'subLabel',
-  'value',
-  'size'
-]
-const Typeahead = React.forwardRef((props, forwardedRef) => {
-  const { children, filterFn, onChange, value } = props
+interface TypeaheadProps
+  extends Pick<
+    React.ComponentProps<typeof TextInput>,
+    | 'appearance'
+    | 'disabled'
+    | 'error'
+    | 'label'
+    | 'placeholder'
+    | 'size'
+    | 'subLabel'
+  > {
+  children?:
+    | React.ReactElement<typeof Suggestion>
+    | React.ReactElement<typeof Suggestion>[]
+  filterFn?: FilterFn
+  loading?: boolean
+  onBlur?: React.FocusEventHandler<HTMLInputElement>
+  onChange?: (
+    evt:
+      | React.FormEvent<HTMLInputElement>
+      | React.MouseEvent<HTMLButtonElement>,
+    value: string
+  ) => void
 
-  const portal = usePortal()
-  const containerRef = React.useRef()
+  onFocus?: React.FocusEventHandler<HTMLInputElement>
+  value?: string
+}
+interface TypeaheadStatics {
+  Suggestion: typeof Suggestion
+  appearances: typeof vars.appearances
+  sizes: typeof vars.sizes
+}
 
-  const [target, setTarget] = useState()
-  const inputRef = React.useCallback(node => {
-    setTarget(node ? node.parentNode : undefined)
-  })
-  React.useImperativeHandle(forwardedRef, () => inputRef.current)
+type TypeaheadComponent = RefForwardingComponent<
+  TypeaheadProps,
+  HTMLDivElement,
+  TypeaheadStatics
+>
 
-  const [controlled] = React.useState(typeof value !== 'undefined')
-  const [open, setOpen] = React.useState(false)
+const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
+  (props, forwardedRef) => {
+    const {
+      appearance,
+      children,
+      disabled,
+      error,
+      filterFn = filterSuggestions,
+      label,
+      onChange,
+      placeholder,
+      size,
+      subLabel,
+      value,
+      ...rest
+    } = props
 
-  const [innerValue, setInnerValue] = React.useState(value || '')
-  const [searchTerm, setSearchTerm] = React.useState('')
+    const portal = usePortal()
+    const containerRef = React.useRef<HTMLDivElement>(null)
 
-  React.useEffect(
-    function updateControlledValue() {
-      if (controlled) setInnerValue(value)
-    },
-    [controlled, value]
-  )
+    const [target, setTarget] = useState<HTMLElement>()
+    const inputRef = React.useRef<HTMLInputElement | null>()
+    const setInputRef = React.useCallback(node => {
+      inputRef.current = node
+      setTarget(node ? node.parentNode : undefined)
+    }, [])
 
-  React.useEffect(
-    function clearSearchTermOnClose() {
-      if (!open) setSearchTerm('')
-    },
-    [open]
-  )
+    React.useImperativeHandle(
+      forwardedRef,
+      () => (inputRef.current as unknown) as HTMLInputElement
+    )
+    const [controlled] = React.useState<boolean>(typeof value !== 'undefined')
+    const [open, setOpen] = React.useState<boolean>(false)
 
-  useOnDocumentClick(evt => {
-    const isInnerClick =
-      !containerRef.current ||
-      containerRef.current.contains(evt.target) ||
-      portal.current.contains(evt.target)
+    const [innerValue, setInnerValue] = React.useState<string | undefined>(
+      value || ''
+    )
+    const [searchTerm, setSearchTerm] = React.useState<string>('')
 
-    if (isInnerClick) return
+    React.useEffect(
+      function updateControlledValue() {
+        if (controlled) setInnerValue(value)
+      },
+      [controlled, value]
+    )
 
-    setOpen(false)
-  })
+    React.useEffect(
+      function clearSearchTermOnClose() {
+        if (!open) setSearchTerm('')
+      },
+      [open]
+    )
 
-  const suggestions = React.useMemo(() => {
-    const childArray = Children.toArray(children)
-    return childArray.map((child, index) => ({
-      index,
-      label: getSuggestionLabel(child),
-      value: getSuggestionValue(child)
-    }))
-  }, [children])
+    useOnDocumentClick(evt => {
+      const target = evt.target as HTMLElement
+      const portalEl = portal.current as HTMLElement
 
-  const filteredSuggestions = React.useMemo(
-    () => filterFn(searchTerm, suggestions),
-    [filterFn, searchTerm, suggestions]
-  )
+      const isInnerClick =
+        !containerRef.current ||
+        containerRef.current.contains(target) ||
+        portalEl.contains(target)
 
-  const handleChange = (evt, nextValue) => {
-    setSearchTerm(nextValue)
+      if (isInnerClick) return
 
-    if (!controlled) setInnerValue(nextValue)
-    if (onChange) onChange(evt, nextValue)
-  }
+      setOpen(false)
+    })
 
-  const handleInputFocus = combineFns(evt => {
-    setOpen(true)
-  }, props.onFocus)
+    const suggestions = React.useMemo(() => {
+      return Children.toArray(children)
+        .filter(React.isValidElement)
+        .map((child, index) => ({
+          index,
+          label: getSuggestionLabel(child),
+          value: getSuggestionValue(child)
+        }))
+    }, [children])
 
-  const handleInputChange = evt => {
-    const nextValue = evt.target.value
+    const filteredSuggestions = React.useMemo(
+      () => filterFn(searchTerm, suggestions),
+      [filterFn, searchTerm, suggestions]
+    )
 
-    handleChange(evt, nextValue)
-  }
+    const handleChange = (
+      evt:
+        | React.FormEvent<HTMLInputElement>
+        | React.MouseEvent<HTMLButtonElement>,
+      nextValue: string
+    ) => {
+      setSearchTerm(nextValue)
 
-  const handleSuggestionMenuChange = (evt, nextValue) => {
-    setOpen(false)
-    handleChange(evt, nextValue)
-  }
+      if (!controlled) setInnerValue(nextValue)
+      if (onChange) onChange(evt, nextValue)
+    }
 
-  return (
-    <div
-      {...filterReactProps(omit(props, TEXT_INPUT_PROPS))}
-      ref={containerRef}
-    >
-      <BelowLeft
-        inNode={portal.current}
-        when={open}
-        show={
-          <SuggestionsMenu
-            activeValue={innerValue}
-            onChange={handleSuggestionMenuChange}
-            suggestions={filteredSuggestions}
+    const handleInputFocus = combineFns(_evt => {
+      setOpen(true)
+    }, props.onFocus)
+
+    const handleInputChange: React.FormEventHandler<HTMLInputElement> = evt => {
+      const target = evt.target as HTMLInputElement
+      const nextValue = target.value
+
+      handleChange(evt, nextValue)
+    }
+
+    const handleSuggestionMenuChange = (
+      evt: React.MouseEvent<HTMLButtonElement>,
+      nextValue: string
+    ) => {
+      setOpen(false)
+      handleChange(evt, nextValue)
+    }
+
+    return (
+      <div ref={containerRef} {...rest}>
+        <BelowLeft
+          inNode={portal.current}
+          when={open}
+          show={
+            <SuggestionsMenu
+              activeValue={innerValue}
+              onChange={handleSuggestionMenuChange}
+              suggestions={filteredSuggestions}
+            />
+          }
+          target={target}
+        >
+          <TextInput
+            appearance={appearance}
+            disabled={disabled}
+            error={error}
+            icon={<CaretDownIcon />}
+            iconAlign={TextInput.iconAligns.right}
+            label={label}
+            onChange={handleInputChange}
+            onFocus={handleInputFocus}
+            placeholder={placeholder}
+            ref={setInputRef}
+            size={size}
+            subLabel={subLabel}
+            value={innerValue}
           />
-        }
-        target={target}
-      >
-        <TextInput
-          {...pick(props, TEXT_INPUT_PROPS)}
-          iconAlign={TextInput.iconAligns.right}
-          icon={<CaretDownIcon />}
-          onChange={handleInputChange}
-          onFocus={handleInputFocus}
-          ref={inputRef}
-          value={innerValue}
-        />
-      </BelowLeft>
-    </div>
-  )
-})
-
-const Suggestion = React.forwardRef((props, forwardedRef) => {
-  return <div ref={forwardedRef} {...props} />
-})
-
-Suggestion.propTypes = {
-  children: PropTypes.string.isRequired,
-  value: PropTypes.string
-}
-
-Typeahead.propTypes = {
-  appearance: PropTypes.any,
-  children: PropTypes.oneOfType([
-    elementOfType(Suggestion),
-    PropTypes.arrayOf(elementOfType(Suggestion))
-  ]),
-  disabled: PropTypes.any,
-  error: PropTypes.any,
-  filterFn: PropTypes.func,
-  label: PropTypes.any,
-  loading: PropTypes.bool,
-  name: PropTypes.any,
-  onBlur: PropTypes.func,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
-  placeholder: PropTypes.any,
-  size: PropTypes.oneOf(Object.values(vars.sizes)),
-  subLabel: PropTypes.any,
-  value: PropTypes.string
-}
-Typeahead.defaultProps = {
-  filterFn: filterSuggestions
-}
+        </BelowLeft>
+      </div>
+    )
+  }
+) as TypeaheadComponent
 
 Typeahead.appearances = vars.appearances
 Typeahead.sizes = vars.sizes
@@ -178,24 +216,3 @@ export const sizes = vars.sizes
 export const appearances = vars.appearances
 
 export default Typeahead
-
-function getSuggestionLabel(sug) {
-  return sug.props.children
-}
-
-function getSuggestionValue(sug) {
-  return sug.props.value || sug.props.children
-}
-
-function filterSuggestions(searchTerm, children) {
-  if (!searchTerm || searchTerm.length <= 1) return children
-
-  const term = searchTerm.toLowerCase()
-  const matches = ({ label, value }) => {
-    return (
-      label.toLowerCase().includes(term) || value.toLowerCase().includes(term)
-    )
-  }
-
-  return children.filter(matches)
-}
