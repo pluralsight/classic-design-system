@@ -125,6 +125,7 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
 
   React.useEffect(() => {
     if (listRef.current !== undefined) {
+      /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
       if (listWidth >= (listRef.current as HTMLDivElement).scrollWidth) {
         setXOffset(0)
       }
