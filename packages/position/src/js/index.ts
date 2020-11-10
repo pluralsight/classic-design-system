@@ -1,6 +1,23 @@
-const defaultOptions = { bufferWidth: 12 }
+interface StyleOptions {
+  bufferWidth: number
+}
+const defaultOptions: StyleOptions = { bufferWidth: 12 }
 
-const clipAdjust = {
+interface ClipAdjusterProps {
+  x: number
+  y: number
+  elRect: DOMRect
+  targetRect: DOMRect
+  opts: StyleOptions
+}
+type ClipAdjustment = [number, number]
+type ClipAdjuster = (props: ClipAdjusterProps) => ClipAdjustment
+const clipAdjust: {
+  above: ClipAdjuster
+  below: ClipAdjuster
+  leftOf: ClipAdjuster
+  rightOf: ClipAdjuster
+} = {
   above: ({ x, y, elRect, targetRect, opts }) => [
     [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
     y < 0 ? targetRect.bottom + opts.bufferWidth : y
@@ -27,12 +44,22 @@ const clipAdjust = {
   ]
 }
 
-export function above(target) {
-  if (!target) throw new TypeError('target element required')
+export type PositionFunction = (
+  target: HTMLElement
+) => {
+  styleFor: (
+    el: HTMLElement | undefined,
+    options?: Partial<StyleOptions>
+  ) => PositionStyle
+}
 
+export const above: PositionFunction = target => {
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -51,12 +78,13 @@ export function above(target) {
   }
 }
 
-export function aboveLeft(target) {
-  if (!target) throw new TypeError('target element required')
-
+export const aboveLeft: PositionFunction = target => {
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -72,12 +100,13 @@ export function aboveLeft(target) {
   }
 }
 
-export function aboveRight(target) {
-  if (!target) throw new TypeError('target element required')
-
+export const aboveRight: PositionFunction = target => {
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -94,12 +123,13 @@ export function aboveRight(target) {
   }
 }
 
-export function rightOf(target) {
-  if (!target) throw new TypeError('target element required')
-
+export const rightOf: PositionFunction = target => {
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -121,12 +151,13 @@ export function rightOf(target) {
   }
 }
 
-export function below(target) {
-  if (!target) throw new TypeError('target element required')
-
+export const below: PositionFunction = target => {
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -149,12 +180,13 @@ export function below(target) {
   }
 }
 
-export function belowLeft(target) {
-  if (!target) throw new TypeError('target element required')
-
+export const belowLeft: PositionFunction = target => {
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -173,12 +205,13 @@ export function belowLeft(target) {
   }
 }
 
-export function belowRight(target) {
-  if (!target) throw new TypeError('target element required')
-
+export const belowRight: PositionFunction = target => {
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -198,12 +231,15 @@ export function belowRight(target) {
   }
 }
 
-export function leftOf(target) {
+export const leftOf: PositionFunction = target => {
   if (!target) throw new TypeError('target element required')
 
   return {
-    styleFor(el, options) {
-      if (!el) return
+    styleFor(
+      el: HTMLElement | undefined,
+      options?: Partial<StyleOptions>
+    ): PositionStyle {
+      if (!el) return {}
 
       const opts = overrideDefaultOpts(options)
       const targetRect = target.getBoundingClientRect()
@@ -222,14 +258,20 @@ export function leftOf(target) {
   }
 }
 
-function overrideDefaultOpts(opts) {
+function overrideDefaultOpts(
+  opts: Partial<StyleOptions> | undefined
+): StyleOptions {
   return { ...opts, ...defaultOptions }
 }
 
-function formatOutputAsStyles(x, y) {
+export type PositionStyle = Pick<
+  React.CSSProperties,
+  'position' | 'left' | 'top'
+>
+function formatOutputAsStyles(x: number, y: number): PositionStyle {
   return {
     position: 'absolute',
-    left: x + 'px',
-    top: y + 'px'
+    left: x.toString() + 'px',
+    top: y.toString() + 'px'
   }
 }
