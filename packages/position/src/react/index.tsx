@@ -78,7 +78,7 @@ interface ShowProps {
   style?: React.CSSProperties
 }
 interface PositionProps {
-  children: React.FunctionComponentElement<{}>
+  children: React.FunctionComponentElement<unknown>
   inNode?: HTMLElement
   position: positionFns.PositionFunction
   show: React.FunctionComponentElement<ShowProps>
@@ -99,10 +99,11 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
     })
 
     const ref = React.useRef<HTMLElement>()
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
     React.useImperativeHandle(forwardedRef, () => ref.current as HTMLElement)
 
     const child = React.Children.only(
-      props.children as React.FunctionComponentElement<{}>
+      props.children as React.FunctionComponentElement<unknown>
     )
     const innerRef = React.useRef<HTMLElement>()
     const showRef = props.show.ref || innerRef
@@ -164,7 +165,7 @@ const Position = React.forwardRef<HTMLElement, PositionProps>(
   }
 )
 
-function delayUntilNextTick(fn: Function) {
+function delayUntilNextTick(fn: () => void) {
   // eslint-disable-next-line
   return setTimeout(fn, 1)
 }

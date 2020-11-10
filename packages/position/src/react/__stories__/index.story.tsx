@@ -34,6 +34,7 @@ const Box = React.forwardRef<
   React.HTMLAttributes<HTMLDivElement>
 >((props, forwardedRef) => {
   const ref = React.useRef<HTMLDivElement>(null)
+  /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
   React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
   const selectors = css({
@@ -64,6 +65,7 @@ const MockToolip = React.forwardRef<
   React.HTMLAttributes<HTMLDivElement>
 >((props, forwardedRef) => {
   const ref = React.useRef<HTMLDivElement>(null)
+  /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
   React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
   return (

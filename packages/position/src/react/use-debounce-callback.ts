@@ -2,7 +2,7 @@ import * as React from 'react'
 
 export default function useDebounceCallback(
   fn: (...args: any[]) => void,
-  delay: number = 100
+  delay = 100
 ) {
   const timeout = React.useRef<NodeJS.Timeout>()
 
