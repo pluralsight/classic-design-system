@@ -115,6 +115,35 @@ storiesOf('default', module)
       </Tab.List>
     </div>
   ))
+  .add('active item preceded by null', () => {
+    function PrecedingNullExample() {
+      const [activeTab, setActiveTab] = React.useState(2)
+      const conditionallyRenderedTabListItem = null
+
+      return (
+        <>
+          <Tab.List>
+            {conditionallyRenderedTabListItem}
+            <Tab.ListItem
+              id={2}
+              onClick={() => setActiveTab(2)}
+              active={activeTab === 2}
+            >
+              Tab 2
+            </Tab.ListItem>
+          </Tab.List>
+
+          {activeTab === 1 ? (
+            <Tab.Panel labelledBy={1}>Panel 1</Tab.Panel>
+          ) : null}
+          {activeTab === 2 ? (
+            <Tab.Panel labelledBy={2}>Panel 2</Tab.Panel>
+          ) : null}
+        </>
+      )
+    }
+    return <PrecedingNullExample />
+  })
 
 storiesOf('scrolling', module)
   .add('10 count', () => <NavigableExample count={10} />)
