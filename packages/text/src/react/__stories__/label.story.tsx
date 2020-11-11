@@ -21,6 +21,14 @@ Object.keys(Label.sizes).forEach(size =>
     <Label size={size as keyof typeof Label.sizes}>{size}</Label>
   ))
 )
+
+stories.add('color: primary', () => <Label color="primary">Primary</Label>)
+stories.add('color: secondary', () => (
+  <Label color="secondary">Secondary</Label>
+))
+
+stories.add('strong: true', () => <Label strong>Strong</Label>)
+
 stories.add('style override', () => <Label style={style}>pink</Label>)
 
 stories.add('className override', () => (

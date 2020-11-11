@@ -145,11 +145,17 @@ export default {
     fontWeight: '500'
   },
 
-  [`.psds-text__p.psds-theme--${themeNames.light}`]: {
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__p.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
   },
   [`.psds-text__p--size-${vars.pSizes.small}`]: {
     fontSize: '14px',
@@ -170,11 +176,20 @@ export default {
     fontWeight: '400'
   },
 
-  [`.psds-text__label.psds-theme--${themeNames.light}`]: {
+  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__label.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-text__label--strong`]: {
+    fontWeight: '600'
   },
   [`.psds-text__label--size-${vars.labelSizes.xsmall}`]: {
     fontSize: '12px',

@@ -19,3 +19,5 @@ export const pSizes = keyMirror('small', 'normal', 'large')
 export const monospaceSizes = keyMirror('small', 'normal', 'large')
 
 export const listTypes = keyMirror('default', 'bulleted', 'numbered')
+
+export const textColors = keyMirror('primary', 'secondary')

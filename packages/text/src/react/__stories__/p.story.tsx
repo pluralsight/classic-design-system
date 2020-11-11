@@ -28,6 +28,28 @@ Object.keys(P.sizes).forEach(size =>
     </P>
   ))
 )
+
+stories.add('color: primary', () => (
+  <P color="primary">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam
+    pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta
+    tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa
+    interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa
+    tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac
+    libero luctus, euismod lectus eget, cursus nibh.
+  </P>
+))
+stories.add('color: secondary', () => (
+  <P color="secondary">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam
+    pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta
+    tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa
+    interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa
+    tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac
+    libero luctus, euismod lectus eget, cursus nibh.
+  </P>
+))
+
 stories.add('style override', () => (
   <P style={style}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam

@@ -8,37 +8,46 @@ import * as vars from '../vars'
 
 const style = ({
   themeName,
-  size
+  size,
+  color
 }: {
   themeName: ValueOf<typeof names>
   size: ValueOf<typeof vars.pSizes>
+  color: ValueOf<typeof vars.textColors>
 }) =>
   compose(
     css(stylesheet[`.psds-text__p`]),
     css(stylesheet[`.psds-text__p.psds-theme--${themeName}`]),
     css(stylesheet[`.psds-text__p--size-${size}`]),
-    css(stylesheet[`.psds-text__p--size-${size}.psds-theme--${themeName}`])
+    css(stylesheet[`.psds-text__p--size-${size}.psds-theme--${themeName}`]),
+    css(stylesheet[`.psds-text__p--color-${color}`]),
+    css(stylesheet[`.psds-text__p--color-${color}.psds-theme--${themeName}`])
   )
 
 interface PStatics {
   sizes: typeof vars.pSizes
+  colors: typeof vars.textColors
 }
 
 interface PProps extends HTMLAttributes<HTMLParagraphElement> {
   size?: ValueOf<typeof vars.pSizes>
+  color?: ValueOf<typeof vars.textColors>
 }
 
 const P: React.FC<PProps> & PStatics = ({
   size = vars.pSizes.normal,
+  color = vars.textColors.primary,
   ...rest
 }) => {
   const themeName = useTheme()
 
-  return <p {...rest} {...style({ themeName, size })} />
+  return <p {...rest} {...style({ themeName, size, color })} />
 }
 
 P.sizes = vars.pSizes
+P.colors = vars.textColors
 
 export const sizes = vars.pSizes
+export const colors = vars.textColors
 
 export default P

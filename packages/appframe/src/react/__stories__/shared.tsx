@@ -283,9 +283,9 @@ export const SectionHeader: React.FC<SectionHeaderProps> = props => {
       }}
       {...rest}
     >
-      <Text.Heading size={Text.Heading.sizes.smallCaps}>
+      <Text.Caps size={Text.Caps.sizes.medium}>
         <h2 style={{ margin: 0 }}>{title}</h2>
-      </Text.Heading>
+      </Text.Caps>
     </div>
   )
 }
