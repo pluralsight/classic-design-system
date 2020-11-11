@@ -1,9 +1,11 @@
-import React, { ReactNode, createContext } from 'react'
+import React, { CSSProperties, ReactNode, createContext } from 'react'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import { alignments } from '../vars'
 
-interface ContainerProps {
+export type AllowedSelectors = 'navitem__bar' | 'navitem__bar--selected'
+
+interface ContentProps {
   children: ReactNode
 }
 
@@ -12,15 +14,17 @@ export interface ContextValue {
   bar?: ReactNode
   icon?: ReactNode
   menu: boolean
-  renderContainer: (props: ContainerProps) => JSX.Element
+  renderContent: (props: ContentProps) => JSX.Element
   selected: boolean
+  // eslint-disable-next-line camelcase
+  UNSAFE_stylesFor?: Partial<Record<AllowedSelectors, CSSProperties>>
 }
 
 export const initialValue: ContextValue = {
   alignment: alignments.horizontal,
   menu: false,
   selected: false,
-  renderContainer: injected => <button {...injected} />
+  renderContent: injected => <button {...injected} />
 }
 
 const Context = createContext<ContextValue>(initialValue)

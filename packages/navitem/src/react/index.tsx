@@ -3,11 +3,13 @@ import React from 'react'
 
 import { alignments } from '../vars'
 
-import Context, { ContextValue, initialValue } from './context'
+import Context, {
+  AllowedSelectors,
+  ContextValue,
+  initialValue
+} from './context'
 import { HorzLayout } from './horz'
 import { VertLayout } from './vert'
-
-type AllowedSelectors = 'navitem__bar' | 'navitem__bar--selected'
 
 interface NavItemProps
   extends PropsWithStylesFor<AllowedSelectors>,
@@ -24,12 +26,22 @@ const NavItem: React.FC<NavItemProps> & NavItemStatics = props => {
     children,
     icon,
     menu = initialValue.menu,
-    renderContainer = initialValue.renderContainer,
-    selected = initialValue.selected
+    renderContent = initialValue.renderContent,
+    selected = initialValue.selected,
+    // eslint-disable-next-line camelcase
+    UNSAFE_stylesFor
   } = props
 
   const Layout = alignment === alignments.horizontal ? HorzLayout : VertLayout
-  const ctx = { alignment, bar, icon, menu, selected, renderContainer }
+  const ctx = {
+    alignment,
+    bar,
+    icon,
+    menu,
+    selected,
+    renderContent,
+    UNSAFE_stylesFor
+  }
 
   return (
     <Context.Provider value={ctx}>

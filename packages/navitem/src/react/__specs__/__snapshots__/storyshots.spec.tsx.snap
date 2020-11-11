@@ -198,7 +198,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       </button>
     </div>
     <div
-      data-css-14bdu2c=""
+      data-css-pdnvm8=""
     />
   </span>
   <span
@@ -241,7 +241,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       </button>
     </div>
     <div
-      data-css-14bdu2c=""
+      data-css-1apcnd2=""
     />
   </span>
   <span
@@ -284,7 +284,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       </button>
     </div>
     <div
-      data-css-14bdu2c=""
+      data-css-w3vs0f=""
     />
   </span>
   <span
@@ -331,6 +331,59 @@ exports[`Storyshots NavItem horizontal 1`] = `
     />
   </span>
 </div>
+`;
+
+exports[`Storyshots NavItem styleFor 1`] = `
+Array [
+  <span
+    data-css-ruxays=""
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <button
+        data-css-16atklq=""
+      >
+        <span
+          data-css-50rv4t=""
+        >
+          <span
+            data-css-1c3u483=""
+          >
+            test
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      data-css-1zj1zw=""
+    />
+  </span>,
+  <span
+    data-css-ruxays=""
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <button
+        data-css-8y1zv3=""
+      >
+        <span
+          data-css-50rv4t=""
+        >
+          <span
+            data-css-1c3u483=""
+          >
+            test
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      data-css-1g4s5as=""
+    />
+  </span>,
+]
 `;
 
 exports[`Storyshots NavItem vertical 1`] = `
@@ -593,7 +646,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       </button>
     </div>
     <div
-      data-css-14bdu2c=""
+      data-css-pdnvm8=""
     />
   </span>
   <span
@@ -636,7 +689,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       </button>
     </div>
     <div
-      data-css-14bdu2c=""
+      data-css-1apcnd2=""
     />
   </span>
   <span
@@ -679,7 +732,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       </button>
     </div>
     <div
-      data-css-14bdu2c=""
+      data-css-w3vs0f=""
     />
   </span>
   <span

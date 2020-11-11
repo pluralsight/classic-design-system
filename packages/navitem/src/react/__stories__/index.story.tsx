@@ -24,7 +24,7 @@ Object.values(NavItem.alignments).forEach(alignment => {
 
           <NavItem
             alignment={alignment}
-            renderContainer={injected => (
+            renderContent={injected => (
               <a {...injected} href="https://jaketrent.com" />
             )}
             icon={<HomeIcon />}
@@ -84,6 +84,29 @@ Object.values(NavItem.alignments).forEach(alignment => {
     return <Story />
   })
 })
+
+stories.add('styleFor', () => (
+  <>
+    <NavItem
+      UNSAFE_stylesFor={{
+        navitem__bar: { color: 'red' },
+        'navitem__bar--selected': { background: 'blue' }
+      }}
+    >
+      test
+    </NavItem>
+
+    <NavItem
+      selected
+      UNSAFE_stylesFor={{
+        navitem__bar: { color: 'red' },
+        'navitem__bar--selected': { background: 'blue' }
+      }}
+    >
+      test
+    </NavItem>
+  </>
+))
 
 const Grid: React.FC = props => (
   <div

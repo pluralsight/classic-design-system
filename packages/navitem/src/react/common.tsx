@@ -1,5 +1,5 @@
 import Halo from '@pluralsight/ps-design-system-halo'
-import { PropsOf, ValueOf, stylesFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf, stylesFor } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { useContext } from 'react'
 
@@ -12,6 +12,8 @@ const styles = {
   bar: (props: {
     alignment: ValueOf<typeof alignments>
     selected: boolean
+    // eslint-disable-next-line camelcase
+    UNSAFE_stylesFor: unknown
   }) => {
     const isHorz = (props.alignment = alignments.horizontal)
     const isVert = (props.alignment = alignments.vertical)
@@ -20,6 +22,7 @@ const styles = {
       css(stylesheet['.psds-navitem__bar']),
       isHorz && css(stylesheet['.psds-navitem__horz-bar']),
       isVert && css(stylesheet['.psds-navitem__vert-bar']),
+      props.selected && stylesheet['.psds-navitem__bar--selected'],
       stylesFor('navitem__bar', props),
       props.selected && stylesFor('navitem__bar--selected', props)
     )
@@ -31,17 +34,26 @@ const styles = {
     )
 }
 
-export const Bar: React.FC<PropsOf<'div'>> = props => {
-  const { alignment, selected } = useContext(Context)
-  return <div {...styles.bar({ alignment, selected })} {...props} />
+type DivElProps = JSX.IntrinsicElements['div']
+
+export const Bar: React.FC<DivElProps> = props => {
+  // eslint-disable-next-line camelcase
+  const { alignment, selected, UNSAFE_stylesFor } = useContext(Context)
+
+  return (
+    <div
+      {...styles.bar({ alignment, selected, UNSAFE_stylesFor })}
+      {...props}
+    />
+  )
 }
 
 export const Button: React.FC = props => {
-  const { renderContainer: Container, selected } = useContext(Context)
+  const { renderContent: Content, selected } = useContext(Context)
 
   return (
     <Halo inline gapSize={Halo.gapSizes.small}>
-      <Container {...styles.button({ selected })}>{props.children}</Container>
+      <Content {...styles.button({ selected })}>{props.children}</Content>
     </Halo>
   )
 }

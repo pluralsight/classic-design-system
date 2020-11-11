@@ -1,5 +1,4 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { PropsOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { useContext } from 'react'
 
@@ -28,6 +27,8 @@ const styles = {
     )
 }
 
+type SpanElProps = JSX.IntrinsicElements['span']
+
 export const HorzLayout: React.FC = props => {
   const { icon, menu } = useContext(Context)
   const hasLabel = !!props.children
@@ -48,12 +49,12 @@ export const HorzLayout: React.FC = props => {
 }
 HorzLayout.displayName = 'NavItem.HorzLayout'
 
-const HorzContainer: React.FC<PropsOf<'span'>> = props => {
+const HorzContainer: React.FC<SpanElProps> = props => {
   return <span {...styles.container()} {...props} />
 }
 HorzContainer.displayName = 'NavItem.HorzContainer'
 
-const HorzCaret: React.FC<PropsOf<'span'>> = props => {
+const HorzCaret: React.FC<SpanElProps> = props => {
   return (
     <span {...styles.caret()} {...props}>
       <CaretDownIcon size={CaretDownIcon.sizes.small} />
@@ -68,7 +69,7 @@ const HorzIcon: React.FC<{ hasLabel: boolean }> = props => {
 }
 HorzIcon.displayName = 'NavItem.HorzIcon'
 
-const HorzLabel: React.FC<PropsOf<'span'>> = props => {
+const HorzLabel: React.FC<SpanElProps> = props => {
   return <span {...styles.label()} {...props} />
 }
 HorzLabel.displayName = 'NavItem.HorzLabel'
