@@ -130,7 +130,6 @@ interface ButtonStatics {
 }
 interface BaseButtonProps {
   appearance?: ValueOf<typeof vars.appearances>
-  // TODO: rm? dup of html attr
   disabled?: boolean
   icon?: React.ReactNode
   iconAlign?: ValueOf<typeof vars.iconAligns>
