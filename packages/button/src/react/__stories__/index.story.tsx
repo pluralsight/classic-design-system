@@ -1,12 +1,11 @@
+import * as Icon from '@pluralsight/ps-design-system-icon'
+import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
-
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import * as Icon from '@pluralsight/ps-design-system-icon'
-import Theme from '@pluralsight/ps-design-system-theme'
 import Button from '..'
 
 const appearanceStory = storiesOf('Button / appearance', module)
