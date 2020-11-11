@@ -309,7 +309,7 @@ const SideNav: React.FC<SideNavProps> & SideNavStatics = props => {
       >
         <div {...styles.sidenavOverflowMask()}>
           <Scrollable {...styles.sidenavInner()}>
-            {isFunction(children) ? children({ visible }) : children}
+            {typeof children === 'function' ? children({ visible }) : children}
           </Scrollable>
         </div>
       </div>

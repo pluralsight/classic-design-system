@@ -13,7 +13,7 @@ export const cloneElementWithRef = <
   T extends HTMLElement
 >(
   el: ReactHTMLElement<T>,
-  outerRef: MutableRefObject<T>,
+  outerRef: MutableRefObject<T | undefined>,
   props: P
 ) => {
   const { ref: innerRef } = el

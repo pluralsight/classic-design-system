@@ -23929,6 +23929,11 @@ tiny-emitter@^2.0.0:
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
   integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
+tiny-hashes@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tiny-hashes/-/tiny-hashes-1.0.1.tgz#ddbe9060312ddb4efe0a174bb3a27e1331c425a1"
+  integrity sha512-knIN5zj4fl7kW4EBU5sLP20DWUvi/rVouvJezV0UAym2DkQaqm365Nyc8F3QEiOvunNDMxR8UhcXd1d5g+Wg1g==
+
 tiny-invariant@^1.0.2:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
