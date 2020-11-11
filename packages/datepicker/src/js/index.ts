@@ -1,7 +1,4 @@
-export const arrayOf = (num: string): unknown[] =>
-  // TODO: try spread
-  // eslint-disable-next-line prefer-spread
-  Array.apply(null, Array(parseInt(num, 10) || 0))
+export const arrayOf = (num: number): unknown[] => [...Array(num)]
 
 export const getDaysInMonth = (date: Date): number => {
   const input = new Date(date)
@@ -39,6 +36,35 @@ export const getNextMonthYear = (date: Date): Date => {
 
 export const getMonthName = (date: Date): string =>
   date.toLocaleString('default', { month: 'long' })
+
+export const areValidParts = (
+  yyyy: string | undefined,
+  mm: string | undefined,
+  dd: string | undefined
+): boolean => {
+  if (!yyyy || !mm || !dd) return false
+  else {
+    const year = parseInt(yyyy, 10)
+    const month1Based = parseInt(mm, 10)
+    const day = parseInt(dd, 10)
+    if (isNaN(year) || isNaN(month1Based) || isNaN(day)) return false
+    else if (month1Based < 1 || month1Based > 12) return false
+    else {
+      const validMonthYear = new Date(year, month1Based - 1)
+      const maxDays = getDaysInMonth(validMonthYear)
+      if (day < 1 || day > maxDays) return false
+      else return true
+    }
+  }
+}
+
+export const convertPartsToDate = (
+  yyyy: string,
+  mm: string,
+  dd: string
+): Date => {
+  return new Date(parseInt(yyyy), parseInt(mm, 10) - 1, parseInt(dd, 10))
+}
 
 export const formatDate = (date: Date): string => {
   return date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear()

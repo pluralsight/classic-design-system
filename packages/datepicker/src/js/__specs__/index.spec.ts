@@ -52,6 +52,40 @@ describe('#getNextMonthYear', () => {
   })
 })
 
+describe('#areValidParts', () => {
+  test('missing parts', () => {
+    expect(subject.areValidParts(undefined, undefined, undefined)).toEqual(
+      false
+    )
+  })
+
+  test('NaNs', () => {
+    expect(subject.areValidParts('ab', 'cd', '--')).toEqual(false)
+  })
+
+  test('month out of calendar range', () => {
+    expect(subject.areValidParts('1999', '13', '25')).toEqual(false)
+    expect(subject.areValidParts('1999', '0', '25')).toEqual(false)
+  })
+
+  test('day not valid for month', () => {
+    expect(subject.areValidParts('1999', '2', '30')).toEqual(false)
+    expect(subject.areValidParts('1999', '11', '31')).toEqual(false)
+  })
+
+  test('leap year', () => {
+    expect(subject.areValidParts('1964', '1', '29')).toEqual(true)
+  })
+})
+
+describe('#convertPartsToDate', () => {
+  test('assembles valid-only date parts', () => {
+    expect(subject.convertPartsToDate('1964', '2', '29')).toEqual(
+      new Date(1964, 1, 29)
+    )
+  })
+})
+
 describe('#formatDate', () => {
   test('valid date', () => {
     expect(subject.formatDate(new Date(1941, 11, 7))).toEqual('12/7/1941')
