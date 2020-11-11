@@ -50,3 +50,6 @@
   margin-right: var(--psLayoutSpacingMedium);
 }
 
+.algolia-autocomplete .ds-dropdown-menu { 
+  line-height: 1.15;
+}
