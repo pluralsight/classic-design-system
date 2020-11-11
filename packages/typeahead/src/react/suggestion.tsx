@@ -1,4 +1,3 @@
-import { PropsOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 export type FilterFn = (
@@ -12,7 +11,9 @@ export interface SuggestionOption {
   value: string
 }
 
-interface SuggestionProps extends PropsOf<'div'> {
+type DivElProps = JSX.IntrinsicElements['div']
+
+interface SuggestionProps extends DivElProps {
   value?: string
 }
 const Suggestion = React.forwardRef<HTMLDivElement, SuggestionProps>(
