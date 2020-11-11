@@ -26,8 +26,8 @@ ROUNDING_VALUES.forEach(value => {
   rounding.add(`${value}`, () => (
     <StarRating
       onChange={(
-        val: React.Key,
-        evt: React.ChangeEvent<Element> | React.MouseEvent<Element, MouseEvent>
+        _val: React.Key,
+        _evt: React.ChangeEvent<Element> | React.MouseEvent<Element, MouseEvent>
       ) => action('value changed')}
       value={value}
     />

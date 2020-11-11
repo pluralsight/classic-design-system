@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, Props } from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
@@ -10,7 +10,7 @@ import {
 
 import stylesheet from '../css'
 import * as vars from '../vars'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, PropsOf } from '@pluralsight/ps-design-system-util'
 
 const styles = {
   tag: ({
@@ -56,24 +56,27 @@ const styles = {
 export interface TagStatics {
   sizes: typeof vars.sizes
 }
-
-export interface TagProps
-  extends HTMLAttributes<HTMLAnchorElement & HTMLDivElement> {
+export interface BaseProps {
   error?: boolean
-  href?: string
   icon?: React.ReactElement
   isPressed?: boolean
-  onClick?: React.MouseEventHandler
   size?: ValueOf<typeof vars.sizes>
-  target?: string
 }
 
-const Tag: React.FC<TagProps> & TagStatics = ({
+interface AnchorProps extends BaseProps, PropsOf<"a"> {
+  href: string;
+}
+interface DivProps extends BaseProps, PropsOf<"div"> {
+  href?: undefined;
+}
+type TagProps = AnchorProps | DivProps
+
+
+const Tag: React.FC<TagProps> & TagStatics= ({
   children,
   error = false,
   icon,
   isPressed = false,
-  onClick,
   href,
   size = vars.sizes.medium,
   ...props
@@ -83,19 +86,20 @@ const Tag: React.FC<TagProps> & TagStatics = ({
 
   return (
     <Halo error={error} shape={Halo.shapes.pill} inline>
+      {/* 
+  // @ts-ignore: 🤷🏿‍♂️ */}
       <TagName
         {...(isPressed && { 'aria-pressed': true })}
-        {...(Boolean(onClick) && { role: 'button', tabIndex: 0 })}
+        {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
         {...styles.tag({
           themeName,
-          clickable: Boolean(onClick || href),
+          clickable: Boolean(props.onClick || href),
           icon: Boolean(icon),
           isPressed,
           size
         })}
         {...props}
         href={href}
-        onClick={onClick}
       >
         <Label icon={Boolean(icon)}>{children}</Label>
         {renderIcon(icon, size)}
