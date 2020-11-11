@@ -1,5 +1,4 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-// @ts-ignore: TODO: update Position typings
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import {
@@ -177,7 +176,7 @@ const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
     return (
       <div ref={containerRef} {...rest}>
         <BelowLeft
-          inNode={portal.current}
+          inNode={portal.current || undefined}
           when={open}
           show={
             <SuggestionsMenu
