@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Scrollable from '../index.js'
+import Scrollable, { renderContentProps } from '..'
 
 storiesOf('components|Scrollable', module)
   .addDecorator(storyFn => (
@@ -107,18 +107,34 @@ storiesOf('components|Scrollable', module)
   })
   .add('with custom tag', () => (
     <>
-      <ScrollableWithDefaults contentAs="main">
+      <ScrollableWithDefaults
+        renderContent={(props, ref) => {
+          return (
+            <main {...props} ref={ref}>
+              {props.children}
+            </main>
+          )
+        }}
+      >
         <Filler />
       </ScrollableWithDefaults>
 
-      <ScrollableWithDefaults contentAs="aside">
+      <ScrollableWithDefaults
+        renderContent={(props, ref) => {
+          return (
+            <aside {...props} ref={ref}>
+              {props.children}
+            </aside>
+          )
+        }}
+      >
         <Filler />
       </ScrollableWithDefaults>
     </>
   ))
 
 /* eslint-disable react/no-unescaped-entities */
-const Filler = props => (
+const Filler: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
     {...props}
     {...css({
@@ -174,7 +190,9 @@ const Filler = props => (
 )
 /* eslint-enable react/no-unescaped-entities */
 
-function ScrollableWithDefaults(props) {
+const ScrollableWithDefaults: React.FC<Partial<
+  React.ComponentProps<typeof Scrollable>
+>> = props => {
   return (
     <Scrollable
       {...css({
@@ -189,9 +207,7 @@ function ScrollableWithDefaults(props) {
   )
 }
 
-ScrollableWithDefaults.propTypes = { children: PropTypes.node }
-
-function VanillaScroll(props) {
+const VanillaScroll: React.FC = props => {
   return (
     <div
       {...css({
