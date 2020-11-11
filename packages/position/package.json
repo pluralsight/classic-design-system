@@ -10,20 +10,19 @@
     "access": "public"
   },
   "scripts": {
-    "build": "run-s build:js build:cjs",
-    "build:cjs": "babel --root-mode upward src --out-dir dist/cjs",
-    "build:js": "cross-env ESM=true babel --root-mode upward src --out-dir dist/esm",
-    "build:watch": "yarn build:js -- --watch",
+    "build": "run-s build:cjs build:esm",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build:watch": "yarn build:esm -- --watch",
     "storybook": "start-storybook -p 6006",
-    "test": "jest",
+    "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
-  "gitHead": "ea4595a4bff6a08255102a0321bb641dc4d25913",
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-util": "^5.8.0",
-    "exenv": "^1.2.2",
-    "prop-types": "^15.7.2"
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

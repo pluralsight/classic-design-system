@@ -13,7 +13,7 @@ exports[`Storyshots default active item offscreen 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -29,15 +29,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={1}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             One thing
           </div>
@@ -52,15 +52,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={2}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Two thing
           </div>
@@ -75,15 +75,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={3}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Three thing
           </div>
@@ -98,15 +98,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={4}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Four thing
           </div>
@@ -121,15 +121,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={5}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             ACTIVE thing
           </div>
@@ -144,15 +144,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={6}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Six thing
           </div>
@@ -167,15 +167,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={7}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Six thing
           </div>
@@ -190,15 +190,15 @@ exports[`Storyshots default active item offscreen 1`] = `
         id={8}
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Six thing
           </div>
@@ -212,12 +212,62 @@ exports[`Storyshots default active item offscreen 1`] = `
 </div>
 `;
 
+exports[`Storyshots default active item preceded by null 1`] = `
+Array [
+  <div
+    data-css-zduid6=""
+    onKeyDown={[Function]}
+    role="tablist"
+    tabIndex={0}
+  >
+    <div
+      data-css-z1scix=""
+      style={
+        Object {
+          "transform": "translateX(0px)",
+        }
+      }
+    >
+      <button
+        aria-selected={true}
+        data-css-f3j26t=""
+        id={2}
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+      >
+        <div
+          data-css-1cuoqce=""
+          tabIndex={-1}
+        >
+          <div
+            data-css-3omctz=""
+            tabIndex={-1}
+          >
+            Tab 2
+          </div>
+          <span
+            data-css-kuoqk0=""
+          />
+        </div>
+      </button>
+    </div>
+  </div>,
+  <div
+    aria-labelledby="2"
+    role="tabpanel"
+  >
+    Panel 2
+  </div>,
+]
+`;
+
 exports[`Storyshots default as links 1`] = `
 <div
   data-css-zduid6=""
   onKeyDown={[Function]}
   role="tablist"
-  tabIndex="0"
+  tabIndex={0}
 >
   <div
     data-css-z1scix=""
@@ -234,15 +284,15 @@ exports[`Storyshots default as links 1`] = `
       id={1}
       onClick={[Function]}
       role="tab"
-      tabIndex="-1"
+      tabIndex={-1}
     >
       <div
         data-css-1cuoqce=""
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-3omctz=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           External link
         </div>
@@ -268,7 +318,7 @@ exports[`Storyshots default default 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -284,15 +334,15 @@ exports[`Storyshots default default 1`] = `
         id="example0"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -307,15 +357,15 @@ exports[`Storyshots default default 1`] = `
         id="example1"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -330,15 +380,15 @@ exports[`Storyshots default default 1`] = `
         id="example2"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -353,15 +403,15 @@ exports[`Storyshots default default 1`] = `
         id="example3"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -376,15 +426,15 @@ exports[`Storyshots default default 1`] = `
         id="example4"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -413,7 +463,7 @@ exports[`Storyshots default no items 1`] = `
   data-css-zduid6=""
   onKeyDown={[Function]}
   role="tablist"
-  tabIndex="0"
+  tabIndex={0}
 >
   <div
     data-css-z1scix=""
@@ -431,7 +481,7 @@ exports[`Storyshots default super long item 1`] = `
   data-css-zduid6=""
   onKeyDown={[Function]}
   role="tablist"
-  tabIndex="0"
+  tabIndex={0}
 >
   <div
     data-css-z1scix=""
@@ -447,15 +497,15 @@ exports[`Storyshots default super long item 1`] = `
       id={1}
       onClick={[Function]}
       role="tab"
-      tabIndex="-1"
+      tabIndex={-1}
     >
       <div
         data-css-1cuoqce=""
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-3omctz=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           This is the song that doesn't end; yes, it goes on and on, my friend; some people started singing it, not knowing what it was; and they'll continue singing it forever just because
         </div>
@@ -470,15 +520,15 @@ exports[`Storyshots default super long item 1`] = `
       id={2}
       onClick={[Function]}
       role="tab"
-      tabIndex="-1"
+      tabIndex={-1}
     >
       <div
         data-css-1cuoqce=""
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-3omctz=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           Short
         </div>
@@ -493,15 +543,15 @@ exports[`Storyshots default super long item 1`] = `
       id={3}
       onClick={[Function]}
       role="tab"
-      tabIndex="-1"
+      tabIndex={-1}
     >
       <div
         data-css-1cuoqce=""
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-3omctz=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           A little less ridiculous but still long
         </div>
@@ -527,7 +577,7 @@ exports[`Storyshots scrolling 10 count 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -543,15 +593,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example0"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -566,15 +616,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example1"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -589,15 +639,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example2"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -612,15 +662,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example3"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -635,15 +685,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example4"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -658,15 +708,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example5"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 5
           </div>
@@ -681,15 +731,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example6"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 6
           </div>
@@ -704,15 +754,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example7"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 7
           </div>
@@ -727,15 +777,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example8"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 8
           </div>
@@ -750,15 +800,15 @@ exports[`Storyshots scrolling 10 count 1`] = `
         id="example9"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 9
           </div>
@@ -795,7 +845,7 @@ exports[`Storyshots scrolling 20 count 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -811,15 +861,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example0"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -834,15 +884,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example1"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -857,15 +907,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example2"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -880,15 +930,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example3"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -903,15 +953,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example4"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -926,15 +976,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example5"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 5
           </div>
@@ -949,15 +999,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example6"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 6
           </div>
@@ -972,15 +1022,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example7"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 7
           </div>
@@ -995,15 +1045,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example8"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 8
           </div>
@@ -1018,15 +1068,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example9"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 9
           </div>
@@ -1041,15 +1091,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example10"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 10
           </div>
@@ -1064,15 +1114,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example11"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 11
           </div>
@@ -1087,15 +1137,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example12"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 12
           </div>
@@ -1110,15 +1160,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example13"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 13
           </div>
@@ -1133,15 +1183,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example14"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 14
           </div>
@@ -1156,15 +1206,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example15"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 15
           </div>
@@ -1179,15 +1229,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example16"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 16
           </div>
@@ -1202,15 +1252,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example17"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 17
           </div>
@@ -1225,15 +1275,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example18"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 18
           </div>
@@ -1248,15 +1298,15 @@ exports[`Storyshots scrolling 20 count 1`] = `
         id="example19"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 19
           </div>
@@ -1293,7 +1343,7 @@ exports[`Storyshots scrolling 30 count 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -1309,15 +1359,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example0"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -1332,15 +1382,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example1"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -1355,15 +1405,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example2"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -1378,15 +1428,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example3"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -1401,15 +1451,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example4"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -1424,15 +1474,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example5"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 5
           </div>
@@ -1447,15 +1497,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example6"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 6
           </div>
@@ -1470,15 +1520,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example7"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 7
           </div>
@@ -1493,15 +1543,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example8"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 8
           </div>
@@ -1516,15 +1566,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example9"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 9
           </div>
@@ -1539,15 +1589,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example10"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 10
           </div>
@@ -1562,15 +1612,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example11"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 11
           </div>
@@ -1585,15 +1635,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example12"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 12
           </div>
@@ -1608,15 +1658,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example13"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 13
           </div>
@@ -1631,15 +1681,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example14"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 14
           </div>
@@ -1654,15 +1704,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example15"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 15
           </div>
@@ -1677,15 +1727,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example16"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 16
           </div>
@@ -1700,15 +1750,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example17"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 17
           </div>
@@ -1723,15 +1773,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example18"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 18
           </div>
@@ -1746,15 +1796,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example19"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 19
           </div>
@@ -1769,15 +1819,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example20"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 20
           </div>
@@ -1792,15 +1842,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example21"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 21
           </div>
@@ -1815,15 +1865,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example22"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 22
           </div>
@@ -1838,15 +1888,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example23"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 23
           </div>
@@ -1861,15 +1911,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example24"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 24
           </div>
@@ -1884,15 +1934,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example25"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 25
           </div>
@@ -1907,15 +1957,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example26"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 26
           </div>
@@ -1930,15 +1980,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example27"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 27
           </div>
@@ -1953,15 +2003,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example28"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 28
           </div>
@@ -1976,15 +2026,15 @@ exports[`Storyshots scrolling 30 count 1`] = `
         id="example29"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 29
           </div>
@@ -2021,7 +2071,7 @@ exports[`Storyshots scrolling 35 count 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -2037,15 +2087,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example0"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -2060,15 +2110,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example1"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -2083,15 +2133,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example2"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -2106,15 +2156,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example3"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -2129,15 +2179,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example4"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -2152,15 +2202,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example5"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 5
           </div>
@@ -2175,15 +2225,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example6"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 6
           </div>
@@ -2198,15 +2248,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example7"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 7
           </div>
@@ -2221,15 +2271,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example8"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 8
           </div>
@@ -2244,15 +2294,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example9"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 9
           </div>
@@ -2267,15 +2317,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example10"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 10
           </div>
@@ -2290,15 +2340,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example11"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 11
           </div>
@@ -2313,15 +2363,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example12"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 12
           </div>
@@ -2336,15 +2386,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example13"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 13
           </div>
@@ -2359,15 +2409,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example14"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 14
           </div>
@@ -2382,15 +2432,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example15"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 15
           </div>
@@ -2405,15 +2455,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example16"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 16
           </div>
@@ -2428,15 +2478,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example17"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 17
           </div>
@@ -2451,15 +2501,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example18"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 18
           </div>
@@ -2474,15 +2524,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example19"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 19
           </div>
@@ -2497,15 +2547,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example20"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 20
           </div>
@@ -2520,15 +2570,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example21"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 21
           </div>
@@ -2543,15 +2593,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example22"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 22
           </div>
@@ -2566,15 +2616,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example23"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 23
           </div>
@@ -2589,15 +2639,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example24"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 24
           </div>
@@ -2612,15 +2662,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example25"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 25
           </div>
@@ -2635,15 +2685,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example26"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 26
           </div>
@@ -2658,15 +2708,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example27"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 27
           </div>
@@ -2681,15 +2731,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example28"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 28
           </div>
@@ -2704,15 +2754,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example29"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 29
           </div>
@@ -2727,15 +2777,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example30"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 30
           </div>
@@ -2750,15 +2800,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example31"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 31
           </div>
@@ -2773,15 +2823,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example32"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 32
           </div>
@@ -2796,15 +2846,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example33"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 33
           </div>
@@ -2819,15 +2869,15 @@ exports[`Storyshots scrolling 35 count 1`] = `
         id="example34"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 34
           </div>
@@ -2864,7 +2914,7 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -2880,15 +2930,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example0"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -2903,15 +2953,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example1"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -2926,15 +2976,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example2"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -2949,15 +2999,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example3"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -2972,15 +3022,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example4"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -2995,15 +3045,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example5"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 5
           </div>
@@ -3018,15 +3068,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example6"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 6
           </div>
@@ -3041,15 +3091,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example7"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 7
           </div>
@@ -3064,15 +3114,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example8"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 8
           </div>
@@ -3087,15 +3137,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example9"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 9
           </div>
@@ -3110,15 +3160,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example10"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 10
           </div>
@@ -3133,15 +3183,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example11"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 11
           </div>
@@ -3156,15 +3206,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example12"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 12
           </div>
@@ -3179,15 +3229,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example13"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 13
           </div>
@@ -3202,15 +3252,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example14"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 14
           </div>
@@ -3225,15 +3275,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example15"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 15
           </div>
@@ -3248,15 +3298,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example16"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 16
           </div>
@@ -3271,15 +3321,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example17"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 17
           </div>
@@ -3294,15 +3344,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example18"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 18
           </div>
@@ -3317,15 +3367,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example19"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 19
           </div>
@@ -3340,15 +3390,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example20"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 20
           </div>
@@ -3363,15 +3413,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example21"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 21
           </div>
@@ -3386,15 +3436,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example22"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 22
           </div>
@@ -3409,15 +3459,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example23"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 23
           </div>
@@ -3432,15 +3482,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example24"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 24
           </div>
@@ -3455,15 +3505,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example25"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 25
           </div>
@@ -3478,15 +3528,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example26"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 26
           </div>
@@ -3501,15 +3551,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example27"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 27
           </div>
@@ -3524,15 +3574,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example28"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 28
           </div>
@@ -3547,15 +3597,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example29"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 29
           </div>
@@ -3570,15 +3620,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example30"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 30
           </div>
@@ -3593,15 +3643,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example31"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 31
           </div>
@@ -3616,15 +3666,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example32"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 32
           </div>
@@ -3639,15 +3689,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example33"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 33
           </div>
@@ -3662,15 +3712,15 @@ exports[`Storyshots scrolling long list, resizing container 1`] = `
         id="example34"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 34
           </div>
@@ -3707,7 +3757,7 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -3723,15 +3773,15 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
         id="example0"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -3746,15 +3796,15 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
         id="example1"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -3769,15 +3819,15 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
         id="example2"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -3792,15 +3842,15 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
         id="example3"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -3815,15 +3865,15 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
         id="example4"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -3838,15 +3888,15 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
         id="example5"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 5
           </div>
@@ -3861,15 +3911,15 @@ exports[`Storyshots scrolling short list, resizing container 1`] = `
         id="example6"
         onClick={[Function]}
         role="tab"
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Menu 6
           </div>
@@ -3914,7 +3964,7 @@ exports[`Storyshots scrolling thinner container 1`] = `
       data-css-zduid6=""
       onKeyDown={[Function]}
       role="tablist"
-      tabIndex="0"
+      tabIndex={0}
     >
       <div
         data-css-z1scix=""
@@ -3930,15 +3980,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example0"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 0
             </div>
@@ -3953,15 +4003,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example1"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 1
             </div>
@@ -3976,15 +4026,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example2"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 2
             </div>
@@ -3999,15 +4049,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example3"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 3
             </div>
@@ -4022,15 +4072,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example4"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 4
             </div>
@@ -4045,15 +4095,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example5"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 5
             </div>
@@ -4068,15 +4118,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example6"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 6
             </div>
@@ -4091,15 +4141,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example7"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 7
             </div>
@@ -4114,15 +4164,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example8"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 8
             </div>
@@ -4137,15 +4187,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example9"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 9
             </div>
@@ -4160,15 +4210,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example10"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 10
             </div>
@@ -4183,15 +4233,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example11"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 11
             </div>
@@ -4206,15 +4256,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example12"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 12
             </div>
@@ -4229,15 +4279,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example13"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 13
             </div>
@@ -4252,15 +4302,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example14"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 14
             </div>
@@ -4275,15 +4325,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example15"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 15
             </div>
@@ -4298,15 +4348,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example16"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 16
             </div>
@@ -4321,15 +4371,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example17"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 17
             </div>
@@ -4344,15 +4394,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example18"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 18
             </div>
@@ -4367,15 +4417,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example19"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 19
             </div>
@@ -4390,15 +4440,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example20"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 20
             </div>
@@ -4413,15 +4463,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example21"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 21
             </div>
@@ -4436,15 +4486,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example22"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 22
             </div>
@@ -4459,15 +4509,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example23"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 23
             </div>
@@ -4482,15 +4532,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example24"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 24
             </div>
@@ -4505,15 +4555,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example25"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 25
             </div>
@@ -4528,15 +4578,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example26"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 26
             </div>
@@ -4551,15 +4601,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example27"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 27
             </div>
@@ -4574,15 +4624,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example28"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 28
             </div>
@@ -4597,15 +4647,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example29"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 29
             </div>
@@ -4620,15 +4670,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example30"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 30
             </div>
@@ -4643,15 +4693,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example31"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 31
             </div>
@@ -4666,15 +4716,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example32"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 32
             </div>
@@ -4689,15 +4739,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example33"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 33
             </div>
@@ -4712,15 +4762,15 @@ exports[`Storyshots scrolling thinner container 1`] = `
           id="example34"
           onClick={[Function]}
           role="tab"
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-1cuoqce=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             <div
               data-css-3omctz=""
-              tabIndex="-1"
+              tabIndex={-1}
             >
               Menu 34
             </div>
@@ -4755,7 +4805,7 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
       "borderBottom": "none",
     }
   }
-  tabIndex="0"
+  tabIndex={0}
 >
   <div
     data-css-z1scix=""
@@ -4771,15 +4821,15 @@ exports[`Storyshots style overrides list no borderBottom (style) 1`] = `
       id="wow"
       onClick={[Function]}
       role="tab"
-      tabIndex="-1"
+      tabIndex={-1}
     >
       <div
         data-css-1cuoqce=""
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-3omctz=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           Wow
         </div>
@@ -4797,7 +4847,7 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
   data-css-zduid6=""
   onKeyDown={[Function]}
   role="tablist"
-  tabIndex="0"
+  tabIndex={0}
 >
   <div
     data-css-z1scix=""
@@ -4818,15 +4868,15 @@ exports[`Storyshots style overrides listItem disabled opacity (style) 1`] = `
           "opacity": 0.5,
         }
       }
-      tabIndex="-1"
+      tabIndex={-1}
     >
       <div
         data-css-1cuoqce=""
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-3omctz=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           Disabled look
         </div>
@@ -4845,7 +4895,7 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
     data-css-zduid6=""
     onKeyDown={[Function]}
     role="tablist"
-    tabIndex="0"
+    tabIndex={0}
   >
     <div
       data-css-z1scix=""
@@ -4866,15 +4916,15 @@ exports[`Storyshots style overrides panel disabled opacity (style) 1`] = `
             "opacity": 0.5,
           }
         }
-        tabIndex="-1"
+        tabIndex={-1}
       >
         <div
           data-css-1cuoqce=""
-          tabIndex="-1"
+          tabIndex={-1}
         >
           <div
             data-css-3omctz=""
-            tabIndex="-1"
+            tabIndex={-1}
           >
             Disabled look
           </div>
