@@ -1,40 +1,36 @@
-import { StyleAttribute, compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
-
-import { useTheme } from '@pluralsight/ps-design-system-theme'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { names as themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
+import { compose, css } from 'glamor'
+import React, { forwardRef } from 'react'
 
 import stylesheet from '../css'
 
-interface {{pascalCase name}}Props extends extends HTMLAttributes<HTMLDivElement> {}
+type DivEl = JSX.IntrinsicElements['div']
+interface {{pascalCase name}}Props extends DivEl {}
 
-type StyleFn = (themeName:string, props: {{pascalCase name}}Props) => StyleAttribute
-
-const styles: { [key: string]: StyleFn }  = {
-  {{camelCase name}}: (themeName, props) =>
+const styles  = {
+  {{camelCase name}}: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet['.psds-{{kebabCase name}}']),
-      css(stylesheet[`.psds-{{kebabCase name}}--${themeName}`])
+      css(stylesheet[`.psds-{{kebabCase name}}.psds-theme--${themeName}`])
     )
 }
 
-
-const {{pascalCase name}} = React.forwardRef((props, forwardedRef) => {
+const {{pascalCase name}} = forwardRef((props, forwardedRef) => {
+  const { ...rest } = props
   const themeName = useTheme()
 
-  const ref = React.useRef()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
+  const ref = React.useRef<HTMLDivElement>(null)
+  React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
   return (
     <div
       ref={ref}
-      {...styles.{{camelCase name}}(themeName, props)}
-      {...filterReactProps(props)}
+      {...styles.{{camelCase name}}(themeName)}
+      {...rest}
     />
   )
 })
-
-{{pascalCase name}}.defaultProps = {}
 {{pascalCase name}}.displayName = '{{pascalCase name}}'
 
 export default {{pascalCase name}}
