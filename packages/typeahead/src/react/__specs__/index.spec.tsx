@@ -45,8 +45,8 @@ describe('Typeahead', () => {
     const handleFocus = jest.fn()
     const { container } = render(<Typeahead onFocus={handleFocus} />)
 
-    const input = container.querySelector<HTMLInputElement>('input')
-    fireEvent.focus(input!)
+    const input = container.querySelector<HTMLInputElement>('input')!
+    fireEvent.focus(input)
 
     expect(handleFocus).toHaveBeenCalled()
   })
