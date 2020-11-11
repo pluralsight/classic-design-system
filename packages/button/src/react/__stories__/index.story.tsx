@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Button from '..'
 
@@ -176,31 +176,20 @@ loadingExample.add('lone icon', _ => (
   <Button icon={<Icon.CheckIcon />} size={Button.sizes.large} loading />
 ))
 
-class SwitchToLoading extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { loading: false }
-  }
+const SwitchToLoading: React.FC = props => {
+  const [loading, setLoading] = useState<boolean>(false)
 
-  componentDidMount() {
-    this.timeout = setInterval(_ => {
-      this.setState({ loading: !this.state.loading })
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setLoading(!loading)
     }, 1500)
-  }
 
-  componentWillUnmount() {
-    clearInterval(this.timeout)
-  }
+    return () => clearInterval(timer)
+  }, [loading])
 
-  render() {
-    return React.cloneElement(this.props.children, {
-      loading: this.state.loading
-    })
-  }
-}
-
-SwitchToLoading.propTypes = {
-  children: PropTypes.node.isRequired
+  return React.cloneElement(props.children, {
+    loading
+  })
 }
 
 loadingExample.add('no icon, hidden text', _ => (
