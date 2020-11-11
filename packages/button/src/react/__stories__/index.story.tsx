@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import * as glamor from 'glamor'
 import PropTypes from 'prop-types'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, ComponentProps } from 'react'
 
 import Button from '..'
 
@@ -103,7 +103,7 @@ storiesOf('Button / as link', module)
 
 storiesOf('Button / with ref', module).add('ref to handle focus', _ => {
   function FocusStory() {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLButtonElement>()
     React.useEffect(() => {
       if (ref && ref.current) ref.current.focus()
     })
@@ -125,9 +125,9 @@ storiesOf('Button / override styles', module)
     </Button>
   ))
   .add('with className', _ => {
-    const className = glamor.css({ background: 'green !important' })
+    const cssSelector = glamor.css({ background: 'green !important' })
     return (
-      <Button className={className} icon={<Icon.CheckIcon />}>
+      <Button {...cssSelector} icon={<Icon.CheckIcon />}>
         Green Button
       </Button>
     )
@@ -187,7 +187,7 @@ const SwitchToLoading: React.FC = props => {
     return () => clearInterval(timer)
   }, [loading])
 
-  return React.cloneElement(props.children, {
+  return React.cloneElement(props.children as any, {
     loading
   })
 }
