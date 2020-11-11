@@ -27,6 +27,7 @@ interface TypeaheadProps
     | 'disabled'
     | 'error'
     | 'label'
+    | 'name'
     | 'placeholder'
     | 'size'
     | 'subLabel'
@@ -68,6 +69,7 @@ const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
       error,
       filterFn = filterSuggestions,
       label,
+      name,
       onChange,
       placeholder,
       size,
@@ -193,6 +195,7 @@ const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
             icon={<CaretDownIcon />}
             iconAlign={TextInput.iconAligns.right}
             label={label}
+            name={name}
             onChange={handleInputChange}
             onFocus={handleInputFocus}
             placeholder={placeholder}
