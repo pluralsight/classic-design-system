@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes, Props } from 'react'
+import React, { HTMLAttributes } from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
@@ -63,16 +63,15 @@ export interface BaseProps {
   size?: ValueOf<typeof vars.sizes>
 }
 
-interface AnchorProps extends BaseProps, PropsOf<"a"> {
-  href: string;
+interface AnchorProps extends BaseProps, PropsOf<'a'> {
+  href: string
 }
-interface DivProps extends BaseProps, PropsOf<"div"> {
-  href?: undefined;
+interface DivProps extends BaseProps, PropsOf<'div'> {
+  href?: undefined
 }
-type TagProps = AnchorProps | DivProps
+export type TagProps = AnchorProps | DivProps
 
-
-const Tag: React.FC<TagProps> & TagStatics= ({
+const Tag: React.FC<TagProps> & TagStatics = ({
   children,
   error = false,
   icon,
