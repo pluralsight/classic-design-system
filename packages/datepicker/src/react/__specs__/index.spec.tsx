@@ -28,7 +28,7 @@ describe('DatePicker', () => {
     const { getByText, getByLabelText, container, rerender } = render(
       <DatePicker value="1/20/1993" />
     )
-    const icon = getByLabelText('calendar icon', { selector: 'svg' }) // container.querySelector<HTMLButtonElement>('button')
+    const icon = getByLabelText('calendar icon', { selector: 'svg' })
 
     fireEvent.click(icon)
 
