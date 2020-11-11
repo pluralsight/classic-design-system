@@ -74,9 +74,9 @@ storiesOf('Navbar', module).add('desktop', () => {
                       icon={<BrowseIcon />}
                       selected
                       menu
-                      renderContainer={containerProps => (
+                      renderContent={contentProps => (
                         <button
-                          {...containerProps}
+                          {...contentProps}
                           onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
                         />
                       )}
