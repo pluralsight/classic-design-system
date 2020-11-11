@@ -83,7 +83,7 @@ const Button = React.forwardRef((props, forwardRef) => {
     <DSButton
       {...props}
       {...styles.button({ color })}
-      ref={forwardRef}
+      ref={forwardRef as any}
       appearance={DSButton.appearances.stroke}
       size={DSButton.sizes.small}
     />
