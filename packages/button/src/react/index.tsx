@@ -5,7 +5,7 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { css, keyframes } from 'glamor'
-import React, { Children, HTMLAttributes } from 'react'
+import React, { Children, HTMLAttributes, RefObject } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -128,29 +128,33 @@ interface ButtonStatics {
   iconAligns: typeof vars.iconAligns
   sizes: typeof vars.sizes
 }
-
 interface BaseButtonProps {
   appearance?: ValueOf<typeof vars.appearances>
+  // TODO: rm? dup of html attr
   disabled?: boolean
   icon?: React.ReactNode
   iconAlign?: ValueOf<typeof vars.iconAligns>
   loading?: boolean
   size?: ValueOf<typeof vars.sizes>
 }
+type AnchorEl = JSX.IntrinsicElements['a']
+interface ButtonAnchorProps extends BaseButtonProps, AnchorEl {
+  href: string
+}
+type ButtonEl = JSX.IntrinsicElements['button']
+interface ButtonButtonProps extends BaseButtonProps, ButtonEl {
+  href?: undefined
+}
+type ButtonProps = ButtonAnchorProps | ButtonButtonProps
 
-type ButtonTagProps = BaseButtonProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement>
-type AnchorTagProps = BaseButtonProps &
-  React.AnchorHTMLAttributes<HTMLAnchorElement>
-
-type ButtonProps = ButtonTagProps | AnchorTagProps
-
-interface ButtonComponent
-  extends RefForwardingComponent<
-    ButtonProps,
-    HTMLAnchorElement | HTMLButtonElement,
-    ButtonStatics
-  > {}
+type ButtonComponent = RefForwardingComponent<
+  ButtonProps,
+  HTMLAnchorElement | HTMLButtonElement,
+  ButtonStatics
+> & {
+  (props: ButtonAnchorProps, ref?: RefObject<HTMLAnchorElement>): JSX.Element
+  (props: ButtonButtonProps, ref?: RefObject<HTMLButtonElement>): JSX.Element
+}
 
 const Button = React.forwardRef((props, forwardedRef) => {
   const {
