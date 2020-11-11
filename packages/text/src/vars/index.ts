@@ -2,9 +2,15 @@ import { keyMirror } from '@pluralsight/ps-design-system-util'
 
 export const displaySizes = keyMirror('small', 'medium', 'large')
 
-export const headingSizes = keyMirror('xsmall', 'small', 'medium', 'large', 'xlarge')
+export const headingSizes = keyMirror(
+  'xsmall',
+  'small',
+  'medium',
+  'large',
+  'xlarge'
+)
 
-export const smallCapsSizes = keyMirror('small', 'medium', 'large')
+export const capsSizes = keyMirror('small', 'medium', 'large')
 
 export const labelSizes = keyMirror('xsmall', 'small', 'normal', 'large')
 

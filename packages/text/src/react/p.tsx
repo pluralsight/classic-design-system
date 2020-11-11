@@ -6,20 +6,18 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 import * as vars from '../vars'
 
-const style = ({ 
+const style = ({
   themeName,
   size
-}: { 
-  themeName: ValueOf<typeof names> 
-  size?: ValueOf<typeof vars.pSizes>
+}: {
+  themeName: ValueOf<typeof names>
+  size: ValueOf<typeof vars.pSizes>
 }) =>
   compose(
     css(stylesheet[`.psds-text__p`]),
     css(stylesheet[`.psds-text__p.psds-theme--${themeName}`]),
     css(stylesheet[`.psds-text__p--size-${size}`]),
-    css(
-      stylesheet[`.psds-text__p--size-${size}.psds-theme--${themeName}`]
-    )
+    css(stylesheet[`.psds-text__p--size-${size}.psds-theme--${themeName}`])
   )
 
 interface PStatics {
@@ -31,25 +29,12 @@ interface PProps extends HTMLAttributes<HTMLParagraphElement> {
 }
 
 const P: React.FC<PProps> & PStatics = ({
-  children,
-  size,
-  ...props
+  size = vars.pSizes.normal,
+  ...rest
 }) => {
   const themeName = useTheme()
-  if (!React.isValidElement(children)) return null
 
-  return React.cloneElement(React.Children.only(children), {
-    ...props,
-    ...style({
-      size,
-      themeName
-    }),
-    className: props.className
-  })
-}
-
-P.defaultProps = {
-  size: vars.pSizes.normal
+  return <p {...rest} {...style({ themeName, size })} />
 }
 
 P.sizes = vars.pSizes

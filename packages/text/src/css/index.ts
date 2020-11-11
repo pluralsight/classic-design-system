@@ -35,7 +35,6 @@ export default {
     border: `1px solid ${colorsBorder.lowOnDark}`
   },
 
-
   [`.psds-text__monospace.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
@@ -57,7 +56,6 @@ export default {
     lineHeight: '24px',
     fontWeight: '400'
   },
-
 
   '.psds-text__display': {
     margin: `${layout.spacingMedium} 0`
@@ -83,7 +81,7 @@ export default {
     lineHeight: '96px',
     fontWeight: '700'
   },
-  
+
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`
   },
@@ -119,35 +117,33 @@ export default {
     fontWeight: '700'
   },
 
-
-  [`.psds-text__smallcaps--size-${vars.smallCapsSizes.medium}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
+  [`.psds-text__caps.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__smallcaps--size-${vars.smallCapsSizes.large}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
+  [`.psds-text__caps.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.highOnDark
   },
-  [`.psds-text__smallcaps--size-${vars.smallCapsSizes.small}`]: {
+  [`.psds-text__caps--size-${vars.capsSizes.small}`]: {
+    textTransform: 'uppercase',
+    fontSize: '10px',
+    letterSpacing: '0.08em',
+    lineHeight: '16px',
+    fontWeight: '500'
+  },
+  [`.psds-text__caps--size-${vars.capsSizes.medium}`]: {
     textTransform: 'uppercase',
     fontSize: '12px',
     letterSpacing: '0.08em',
     lineHeight: '16px',
-    fontWeight: "600"
+    fontWeight: '500'
   },
-  [`.psds-text__smallcaps--size-${vars.smallCapsSizes.medium}`]: {
+  [`.psds-text__caps--size-${vars.capsSizes.large}`]: {
     textTransform: 'uppercase',
     fontSize: '14px',
-    letterSpacing: '0.08em',
-    lineHeight: '16px',
-    fontWeight: "600"
-  },
-  [`.psds-text__smallcaps--size-${vars.smallCapsSizes.large}`]: {
-    textTransform: 'uppercase',
-    fontSize: '16px',
     letterSpacing: '0.07em',
     lineHeight: '20px',
-    fontWeight: "600"
+    fontWeight: '500'
   },
-
 
   [`.psds-text__p.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -173,7 +169,6 @@ export default {
     lineHeight: '32px',
     fontWeight: '400'
   },
-
 
   [`.psds-text__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -206,7 +201,6 @@ export default {
     fontWeight: '400'
   },
 
-
   [`.psds-text__list`]: {
     listStyle: 'none',
     marginLeft: 0,
@@ -228,5 +222,3 @@ export default {
     listStyleType: 'decimal'
   }
 }
-
-

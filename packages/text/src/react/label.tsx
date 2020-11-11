@@ -6,50 +6,35 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 import * as vars from '../vars'
 
-const style = ({ 
+const style = ({
   themeName,
   size
-}: { 
-  themeName: ValueOf<typeof names> 
-  size?: ValueOf<typeof vars.labelSizes>
+}: {
+  themeName: ValueOf<typeof names>
+  size: ValueOf<typeof vars.labelSizes>
 }) =>
   compose(
     css(stylesheet[`.psds-text__label`]),
     css(stylesheet[`.psds-text__label.psds-theme--${themeName}`]),
     css(stylesheet[`.psds-text__label--size-${size}`]),
-    css(
-      stylesheet[`.psds-text__label--size-${size}.psds-theme--${themeName}`]
-    )
+    css(stylesheet[`.psds-text__label--size-${size}.psds-theme--${themeName}`])
   )
 
 interface LabelStatics {
   sizes: typeof vars.labelSizes
 }
 
-interface LabelProps extends HTMLAttributes<HTMLParagraphElement> {
+interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
   size?: ValueOf<typeof vars.labelSizes>
 }
 
 const Label: React.FC<LabelProps> & LabelStatics = ({
-  children,
-  size,
-  ...props
+  size = vars.labelSizes.normal,
+  ...rest
 }) => {
   const themeName = useTheme()
-  if (!React.isValidElement(children)) return null
 
-  return React.cloneElement(React.Children.only(children), {
-    ...props,
-    ...style({
-      size,
-      themeName
-    }),
-    className: props.className
-  })
-}
-
-Label.defaultProps = {
-  size: vars.labelSizes.normal
+  return <span {...rest} {...style({ themeName, size })} />
 }
 
 Label.sizes = vars.labelSizes
