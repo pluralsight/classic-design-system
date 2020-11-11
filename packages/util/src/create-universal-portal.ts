@@ -5,10 +5,10 @@ import { canUseDOM } from './can-use-dom'
 
 export function createUniversalPortal(
   children: ReactNode,
-  container: Element,
+  container: Element | undefined,
   key?: string
 ): ReactPortal | undefined {
-  if (!canUseDOM()) return
+  if (!canUseDOM() || !container) return
 
   return createPortal(children, container, key)
 }

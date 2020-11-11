@@ -9,7 +9,6 @@ import {
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser'
-// @ts-ignore: TODO: update typings
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
