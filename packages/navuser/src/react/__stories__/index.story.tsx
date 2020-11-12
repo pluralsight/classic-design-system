@@ -1,27 +1,30 @@
 import { storiesOf } from '@storybook/react'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-import NavUser from '../index.js'
+import NavUser from '..'
 
-storiesOf('Navuser', module).add('states', _ => (
+storiesOf('NavUser', module).add('states', () => (
   <Grid>
     <NavUser src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg" />
+
     <NavUser
       src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
       name="Jake Trent"
     />
+
     <NavUser
       src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
       name="Jake Trent"
       meta="Accenture"
     />
+
     <NavUser
       src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
       name="Jake Trent"
       meta="Accenture"
       href="https://jaketrent.com"
     />
+
     <NavUser
       src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
       name="Jake Trent Name That is Long"
@@ -31,7 +34,7 @@ storiesOf('Navuser', module).add('states', _ => (
   </Grid>
 ))
 
-function Grid(props) {
+const Grid: React.FC = props => {
   return (
     <div
       style={{
@@ -40,11 +43,7 @@ function Grid(props) {
         gap: '32px',
         justifyItems: 'center'
       }}
-    >
-      {props.children}
-    </div>
+      {...props}
+    />
   )
-}
-Grid.propTypes = {
-  children: PropTypes.node
 }

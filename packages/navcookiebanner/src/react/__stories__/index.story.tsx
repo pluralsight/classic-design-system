@@ -1,11 +1,11 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import NavCookieBanner from '../index.js'
+import NavCookieBanner from '..'
 
 storiesOf('NavCookieBanner', module)
-  .add('Basic', _ => <NavCookieBanner />)
-  .add('Custom message', _ => (
+  .add('Basic', () => <NavCookieBanner />)
+  .add('Custom message', () => (
     <NavCookieBanner
       message={
         <>
