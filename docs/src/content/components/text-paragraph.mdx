@@ -11,7 +11,9 @@ import { P } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
-### Size: Normal (Default)
+### Sizes
+
+Use the `size` prop to set the size.
 
 ```typescript
 import { P } from '@pluralsight/ps-design-system-text'
@@ -21,16 +23,46 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <P>
-        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        Normal Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
         consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
         do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </P>
       <P>
-        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        Normal Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+
+      <P size={P.sizes.large}>
+        Large Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+      <P size={P.sizes.large}>
+        Large Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+
+      <P size={P.sizes.small}>
+        Small Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+      <P size={P.sizes.small}>
+        Small Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
         consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
         do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </P>
@@ -41,7 +73,9 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-### Size: Large
+### Colors
+
+Use the `color` prop to change the color.
 
 ```typescript
 import { P } from '@pluralsight/ps-design-system-text'
@@ -50,44 +84,7 @@ import React from 'react'
 const Example: React.FC = props => {
   return (
     <React.Fragment>
-      <P size={P.sizes.large}>
-        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </P>
-      <P size={P.sizes.large}>
-        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </P>
-    </React.Fragment>
-  )
-}
-
-export default Example
-```
-
-### Size: Small
-
-```typescript
-import { P } from '@pluralsight/ps-design-system-text'
-import React from 'react'
-
-const Example: React.FC = props => {
-  return (
-    <React.Fragment>
-      <P size={P.sizes.small}>
-        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </P>
-      <P size={P.sizes.small}>
+      <P color={P.colors.secondary}>
         Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
@@ -115,6 +112,11 @@ export default Example
     name="size"
     type={<TypesEnum enum={P.sizes} />}
     default={P.sizes.normal}
+  />
+  <TypesProp
+    name="color"
+    type={<TypesEnum enum={P.colors} />}
+    default={P.colors.primary}
   />
   <TypesProp name="children" type="React.ReactNode" />
 </TypesTable>

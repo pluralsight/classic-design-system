@@ -15,6 +15,10 @@ import { Heading } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
+### Sizes
+
+Use the `size` prop to set the size.
+
 ```typescript
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -47,6 +51,27 @@ const Example: React.FC = props => {
 export default Example
 ```
 
+### Colors
+
+Use the `color` prop to change the color.
+
+```typescript
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <Heading color={Caps.colors.secondary}>
+        <h2>The technology skills platform</h2>
+      </Heading>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
 ## Usage & types
 
 <Usage
@@ -62,5 +87,11 @@ export default Example
     type={<TypesEnum enum={Heading.sizes} />}
     desc="size of heading (from Heading.sizes)"
     default={Heading.sizes.large}
+  />
+  <TypesProp
+    name="color"
+    type={<TypesEnum enum={Heading.colors} />}
+    desc="colorof label (from Heading.colors)"
+    default={Heading.colors.primary}
   />
 </TypesTable>

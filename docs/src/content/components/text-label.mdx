@@ -13,6 +13,8 @@ import { Label } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
+### Sizes
+
 ```typescript
 import { Label } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -47,6 +49,29 @@ const Example: React.FC = props => {
 export default Example
 ```
 
+### Colors
+
+Use the `color` prop to change the color.
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Label color={Caps.colors.secondary}>
+          The technology skills platform
+        </Label>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
 ## Usage & types
 
 <Usage
@@ -62,5 +87,11 @@ export default Example
     type={<TypesEnum enum={Label.sizes} />}
     desc="size of label (from Label.sizes)"
     default={Label.sizes.normal}
+  />
+  <TypesProp
+    name="color"
+    type={<TypesEnum enum={Label.colors} />}
+    desc="colorof label (from Label.colors)"
+    default={Label.colors.primary}
   />
 </TypesTable>

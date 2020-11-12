@@ -15,6 +15,8 @@ import { Caps } from '@pluralsight/ps-design-system-text'
 
 ### Sizes
 
+Use the `size` prop to set the size.
+
 ```typescript
 import { Caps } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -46,6 +48,8 @@ export default Example
 
 ### Colors
 
+Use the `color` prop to set the color.
+
 ```typescript
 import { Caps } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -54,9 +58,7 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <div>
-        <Caps color={Caps.colors.secondary} caps>
-          Secondary
-        </Caps>
+        <Caps color={Caps.colors.secondary}>Secondary</Caps>
       </div>
     </React.Fragment>
   )
