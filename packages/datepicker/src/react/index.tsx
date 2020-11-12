@@ -1,4 +1,3 @@
-// TODO: break up file
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
@@ -20,9 +19,10 @@ import React, {
   useState
 } from 'react'
 
-import Calendar from './calendar'
+import { Calendar, Overlay } from './calendar'
 import stylesheet from '../css'
 import { convertPartsToDate, areValidParts } from '../js'
+import { SubField, SubFieldDivider } from './sub-field'
 import * as vars from '../vars'
 
 const styles = {
@@ -65,21 +65,6 @@ const styles = {
     compose(
       css(stylesheet['.psds-date-picker__icon']),
       css(stylesheet[`.psds-date-picker__icon--appearance-${appearance}`])
-    ),
-  overlay: () => css(stylesheet['.psds-date-picker__overlay']),
-  subField: (appearance: ValueOf<typeof vars.appearances>) =>
-    compose(
-      css(stylesheet['.psds-date-picker__sub-field']),
-      css(stylesheet[`.psds-date-picker__sub-field--appearance-${appearance}`])
-    ),
-  subFieldDivider: (appearance: ValueOf<typeof vars.appearances>) =>
-    compose(
-      css(stylesheet['.psds-date-picker__sub-field-divider']),
-      css(
-        stylesheet[
-          `.psds-date-picker__sub-field-divider--appearance-${appearance}`
-        ]
-      )
     ),
   subLabel: (themeName: ValueOf<typeof themeNames>) =>
     compose(
@@ -312,49 +297,3 @@ DatePicker.appearances = vars.appearances
 export const appearances = vars.appearances
 
 export default DatePicker
-
-interface OverlayProps {
-  onClick: (evt: React.MouseEvent) => void
-}
-const Overlay: FC<OverlayProps> = props => {
-  return <div {...styles.overlay()} onClick={props.onClick} />
-}
-
-interface SubFieldProps
-  extends Omit<
-    React.HTMLAttributes<HTMLInputElement>,
-    'onBlur' | 'onChange' | 'onFocus'
-  > {
-  appearance: ValueOf<typeof vars.appearances>
-  disabled?: boolean
-  name: string
-  onBlur: (evt: React.FocusEvent) => void
-  onFocus: (evt: React.FocusEvent) => void
-  value: number | undefined
-}
-const SubField: FC<SubFieldProps> = props => {
-  const { appearance, disabled, name, onBlur, onFocus, value, ...rest } = props
-  const ref = useRef<HTMLInputElement>(null)
-
-  const handleFocus = combineFns<[React.FocusEvent]>(() => {
-    if (ref.current) ref.current.select()
-  }, onFocus)
-
-  return (
-    <input
-      {...styles.subField(appearance)}
-      {...rest}
-      disabled={disabled}
-      name={name}
-      onBlur={onBlur}
-      onFocus={handleFocus}
-      placeholder={name}
-      ref={ref}
-      defaultValue={value}
-    />
-  )
-}
-
-const SubFieldDivider: FC<{
-  appearance: ValueOf<typeof vars.appearances>
-}> = ({ appearance }) => <span {...styles.subFieldDivider(appearance)}>/</span>

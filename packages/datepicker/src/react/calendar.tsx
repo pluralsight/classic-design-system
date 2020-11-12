@@ -1,15 +1,13 @@
-import { compose, css, keyframes } from 'glamor'
-import React from 'react'
-
 import Button from '@pluralsight/ps-design-system-button'
 import {
   CaretLeftIcon,
   CaretRightIcon
 } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { compose, css, keyframes } from 'glamor'
+import React, { useRef, useState, useEffect, FC } from 'react'
 
 import stylesheet from '../css'
-
 import {
   arrayOf,
   getDaysInMonth,
@@ -32,6 +30,7 @@ const styles = {
       isSelected &&
         css(stylesheet['.psds-date-picker__calendar__day--selected'])
     ),
+  overlay: () => css(stylesheet['.psds-date-picker__overlay']),
   skippedDay: () => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
   switcher: () => css(stylesheet['.psds-date-picker__calendar__switcher']),
   switcherMonth: () =>
@@ -46,22 +45,22 @@ interface CalendarProps {
   value: Date | undefined
   onSelect: (evt: React.MouseEvent, date: Date) => void
 }
-const Calendar: React.FC<CalendarProps> = props => {
+export const Calendar: FC<CalendarProps> = props => {
   const { value = new Date(), onSelect, ...rest } = props
-  const ref = React.useRef<HTMLDivElement>(null)
-  const selectedDayRef = React.useRef<HTMLButtonElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
+  const selectedDayRef = useRef<HTMLButtonElement>(null)
 
-  const [displayed, setDisplayed] = React.useState<Date>(value)
-  const [selected, setSelected] = React.useState<Date>(value)
+  const [displayed, setDisplayed] = useState<Date>(value)
+  const [selected, setSelected] = useState<Date>(value)
 
-  React.useEffect(
+  useEffect(
     function updateSelectedOnPropChange() {
       setSelected(value)
     },
     [value]
   )
 
-  React.useEffect(function focusCurrentOnMount() {
+  useEffect(function focusCurrentOnMount() {
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
     const selectedDayNode = selectedDayRef.current as HTMLButtonElement
     if (selectedDayNode) selectedDayNode.focus()
@@ -155,4 +154,10 @@ const Calendar: React.FC<CalendarProps> = props => {
   )
 }
 
-export default Calendar
+interface OverlayProps {
+  onClick: (evt: React.MouseEvent) => void
+}
+
+export const Overlay: FC<OverlayProps> = props => {
+  return <div {...styles.overlay()} onClick={props.onClick} />
+}
