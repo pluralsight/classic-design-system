@@ -30,8 +30,8 @@ interface SubFieldProps
   appearance: ValueOf<typeof vars.appearances>
   disabled?: boolean
   name: string
-  onBlur: (evt: React.FocusEvent) => void
-  onFocus: (evt: React.FocusEvent) => void
+  onBlur: React.FocusEventHandler
+  onFocus: React.FocusEventHandler
   value: number | undefined
 }
 export const SubField: FC<SubFieldProps> = props => {
