@@ -1,12 +1,11 @@
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { names as themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
 import React, { forwardRef } from 'react'
 
 import stylesheet from '../css'
 
-type DivEl = JSX.IntrinsicElements['div']
-interface {{pascalCase name}}Props extends DivEl {}
+interface {{pascalCase name}}Props extends HTMLPropsFor<'div'> {}
 
 const styles  = {
   {{camelCase name}}: (themeName: ValueOf<typeof themeNames>) =>
