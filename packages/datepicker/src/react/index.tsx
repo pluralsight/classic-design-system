@@ -22,7 +22,7 @@ import React, {
 
 import Calendar from './calendar'
 import stylesheet from '../css'
-import { convertPartsToDate, formatDate, areValidParts } from '../js'
+import { convertPartsToDate, areValidParts } from '../js'
 import * as vars from '../vars'
 
 const styles = {
@@ -173,7 +173,6 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       setIsOpen(false)
     }, props.onKeyDown)
 
-    // TODO: do with click doc util
     function handleOverlayClick(evt: React.MouseEvent) {
       evt.preventDefault()
       setIsOpen(false)
@@ -267,7 +266,6 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
               style={{ width: '48px' }}
             />
 
-            {/*TODO: rm*/}
             <input
               {...styles.field()}
               {...rest}
@@ -275,6 +273,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
               readOnly
               disabled={disabled}
               ref={ref}
+              value={value ? value.toUTCString() : undefined}
             />
 
             <button
@@ -317,7 +316,6 @@ export default DatePicker
 interface OverlayProps {
   onClick: (evt: React.MouseEvent) => void
 }
-// TODO: replace with util click in body
 const Overlay: FC<OverlayProps> = props => {
   return <div {...styles.overlay()} onClick={props.onClick} />
 }

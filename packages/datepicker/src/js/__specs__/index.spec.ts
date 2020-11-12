@@ -85,9 +85,3 @@ describe('#convertPartsToDate', () => {
     )
   })
 })
-
-describe('#formatDate', () => {
-  test('valid date', () => {
-    expect(subject.formatDate(new Date(1941, 11, 7))).toEqual('12/7/1941')
-  })
-})

@@ -119,9 +119,17 @@ storiesOf('disabled', module).add('compare', () => (
   </div>
 ))
 
-storiesOf('whitelist', module).add('onChange', () => (
-  <DatePicker onChange={action('I changed')} value={undefined} />
-))
+storiesOf('whitelist', module)
+  .add('onChange', () => (
+    <DatePicker onChange={action('I changed')} value={undefined} />
+  ))
+  .add('name', () => (
+    <DatePicker
+      onChange={action('I changed')}
+      value={new Date(1944, 3, 2, 0, 0, 0, 0)}
+      name="dateForForm"
+    />
+  ))
 
 storiesOf('layouts', module)
   .add('full width', () => (

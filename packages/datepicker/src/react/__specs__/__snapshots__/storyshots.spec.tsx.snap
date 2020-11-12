@@ -554,6 +554,7 @@ exports[`Storyshots disabled compare 1`] = `
           disabled={true}
           readOnly={true}
           tabIndex={-1}
+          value="Sun, 07 Dec 1941 07:00:00 GMT"
         />
         <button
           data-css-3txxwd=""
@@ -1670,6 +1671,7 @@ exports[`Storyshots value controlled value changes 1`] = `
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value="Sun, 07 Dec 1941 07:00:00 GMT"
         />
         <button
           data-css-3txxwd=""
@@ -1759,6 +1761,7 @@ exports[`Storyshots value date 1`] = `
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value="Sun, 07 Dec 1941 07:00:00 GMT"
       />
       <button
         data-css-3txxwd=""
@@ -1954,6 +1957,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value="Wed, 15 Mar 1995 07:00:00 GMT"
         />
         <button
           data-css-3txxwd=""
@@ -1977,6 +1981,97 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
     </div>
   </label>
 </div>
+`;
+
+exports[`Storyshots whitelist name 1`] = `
+<label
+  data-css-w0yocm=""
+  onKeyDown={[Function]}
+>
+  <div
+    data-css-ctre2o=""
+  >
+    <div
+      data-css-1gfowhv=""
+    >
+      <input
+        data-css-1ynlp2p=""
+        defaultValue={4}
+        name="mm"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder="mm"
+        style={
+          Object {
+            "width": "32px",
+          }
+        }
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        defaultValue={2}
+        name="dd"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder="dd"
+        style={
+          Object {
+            "width": "24px",
+          }
+        }
+      />
+      <span
+        data-css-9eecwn=""
+      >
+        /
+      </span>
+      <input
+        data-css-1ynlp2p=""
+        defaultValue={1944}
+        name="yyyy"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder="yyyy"
+        style={
+          Object {
+            "width": "48px",
+          }
+        }
+      />
+      <input
+        data-css-gyrv08=""
+        name="dateForForm"
+        onChange={[Function]}
+        readOnly={true}
+        tabIndex={-1}
+        value="Sun, 02 Apr 1944 06:00:00 GMT"
+      />
+      <button
+        data-css-3txxwd=""
+        onClick={[Function]}
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+</label>
 `;
 
 exports[`Storyshots whitelist onChange 1`] = `

@@ -62,7 +62,3 @@ export const convertPartsToDate = (
 ): Date => {
   return new Date(yyyy, mm - 1, dd)
 }
-
-export const formatDate = (date: Date): string => {
-  return date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear()
-}
