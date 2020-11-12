@@ -820,6 +820,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
             >
               <button
                 data-css-16atklq=""
+                onClick={[Function]}
               >
                 <span
                   data-css-50rv4t=""
@@ -847,7 +848,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
               </button>
             </div>
             <div
-              data-css-14bdu2c=""
+              data-css-1pig4yn=""
             />
           </span>
         </div>
@@ -1243,6 +1244,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
             >
               <button
                 data-css-16atklq=""
+                onClick={[Function]}
               >
                 <span
                   data-css-50rv4t=""
@@ -1270,7 +1272,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
               </button>
             </div>
             <div
-              data-css-14bdu2c=""
+              data-css-1pig4yn=""
             />
           </span>
         </div>
@@ -1666,6 +1668,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
             >
               <button
                 data-css-16atklq=""
+                onClick={[Function]}
               >
                 <span
                   data-css-50rv4t=""
@@ -1693,7 +1696,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
               </button>
             </div>
             <div
-              data-css-14bdu2c=""
+              data-css-1pig4yn=""
             />
           </span>
         </div>
