@@ -14,6 +14,41 @@ import {
 import * as vars from '../vars'
 
 export default {
+  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnLight
+  },
+  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-text__caps--size-${vars.capsSizes.small}`]: {
+    textTransform: 'uppercase',
+    fontSize: '10px',
+    letterSpacing: '0.08em',
+    lineHeight: '16px',
+    fontWeight: '500'
+  },
+  [`.psds-text__caps--size-${vars.capsSizes.medium}`]: {
+    textTransform: 'uppercase',
+    fontSize: '12px',
+    letterSpacing: '0.08em',
+    lineHeight: '16px',
+    fontWeight: '500'
+  },
+  [`.psds-text__caps--size-${vars.capsSizes.large}`]: {
+    textTransform: 'uppercase',
+    fontSize: '14px',
+    letterSpacing: '0.07em',
+    lineHeight: '20px',
+    fontWeight: '500'
+  },
+
+
   '.psds-text__code': {
     padding: `0 ${layout.spacingXXSmall}`,
     borderRadius: '2px',
@@ -35,52 +70,6 @@ export default {
     border: `1px solid ${colorsBorder.lowOnDark}`
   },
 
-  [`.psds-text__monospace.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__monospace.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__monospace--size-${vars.monospaceSizes.small}`]: {
-    fontSize: '12px',
-    lineHeight: '16px',
-    fontWeight: '400'
-  },
-  [`.psds-text__monospace--size-${vars.monospaceSizes.normal}`]: {
-    fontSize: '14px',
-    lineHeight: '20px',
-    fontWeight: '400'
-  },
-  [`.psds-text__monospace--size-${vars.monospaceSizes.large}`]: {
-    fontSize: '16px',
-    lineHeight: '24px',
-    fontWeight: '400'
-  },
-
-  '.psds-text__display': {
-    margin: `${layout.spacingMedium} 0`
-  },
-  [`.psds-text__display.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__display.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__display--size-${vars.displaySizes.small}`]: {
-    fontSize: '56px',
-    lineHeight: '64px',
-    fontWeight: '700'
-  },
-  [`.psds-text__display--size-${vars.displaySizes.medium}`]: {
-    fontSize: '64px',
-    lineHeight: '72px',
-    fontWeight: '700'
-  },
-  [`.psds-text__display--size-${vars.displaySizes.large}`]: {
-    fontSize: '80px',
-    lineHeight: '96px',
-    fontWeight: '700'
-  },
 
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`
@@ -117,74 +106,6 @@ export default {
     fontWeight: '700'
   },
 
-
-  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
-  [`.psds-text__caps--size-${vars.capsSizes.small}`]: {
-    textTransform: 'uppercase',
-    fontSize: '10px',
-    letterSpacing: '0.08em',
-    lineHeight: '16px',
-    fontWeight: '500'
-  },
-  [`.psds-text__caps--size-${vars.capsSizes.medium}`]: {
-    textTransform: 'uppercase',
-    fontSize: '12px',
-    letterSpacing: '0.08em',
-    lineHeight: '16px',
-    fontWeight: '500'
-  },
-  [`.psds-text__caps--size-${vars.capsSizes.large}`]: {
-    textTransform: 'uppercase',
-    fontSize: '14px',
-    letterSpacing: '0.07em',
-    lineHeight: '20px',
-    fontWeight: '500'
-  },
-
-  '.psds-text__p': {
-    margin: `${layout.spacingMedium} 0`
-  },
-  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
-  [`.psds-text__p--size-${vars.pSizes.small}`]: {
-    fontSize: '14px',
-    letterSpacing: '0.015em',
-    lineHeight: '24px',
-    fontWeight: '400'
-  },
-  [`.psds-text__p--size-${vars.pSizes.normal}`]: {
-    fontSize: '16px',
-    letterSpacing: '0.01em',
-    lineHeight: '28px',
-    fontWeight: '400'
-  },
-  [`.psds-text__p--size-${vars.pSizes.large}`]: {
-    fontSize: '18px',
-    letterSpacing: '0.005em',
-    lineHeight: '32px',
-    fontWeight: '400'
-  },
 
   [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -226,6 +147,7 @@ export default {
     fontWeight: '400'
   },
 
+
   [`.psds-text__list`]: {
     listStyle: 'none',
     marginLeft: 0,
@@ -246,4 +168,41 @@ export default {
     listStyle: 'initial',
     listStyleType: 'decimal'
   }
+
+
+  '.psds-text__p': {
+    margin: `${layout.spacingMedium} 0`
+  },
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnLight
+  },
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-text__p--size-${vars.pSizes.small}`]: {
+    fontSize: '14px',
+    letterSpacing: '0.015em',
+    lineHeight: '24px',
+    fontWeight: '400'
+  },
+  [`.psds-text__p--size-${vars.pSizes.normal}`]: {
+    fontSize: '16px',
+    letterSpacing: '0.01em',
+    lineHeight: '28px',
+    fontWeight: '400'
+  },
+  [`.psds-text__p--size-${vars.pSizes.large}`]: {
+    fontSize: '18px',
+    letterSpacing: '0.005em',
+    lineHeight: '32px',
+    fontWeight: '400'
+  },
+
+
 }
