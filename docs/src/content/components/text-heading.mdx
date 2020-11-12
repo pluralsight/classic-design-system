@@ -1,18 +1,19 @@
 ---
-name: Headings
-route: /components/text-headings
+name: Heading
+route: /components/text-heading
 ---
 
 import { Heading } from '@pluralsight/ps-design-system-text'
 
-# Headings
+# Heading
+
+<Intro>
+  Heading is used to create various levels of typographic hierarchies.
+</Intro>
 
 <TableOfContents {...props} />
 
 ## Examples
-
-Heading styles compose complimentary typography attributes for simplified
-implementation. Try to use common heading styles when possible.
 
 ```typescript
 import { Heading } from '@pluralsight/ps-design-system-text'
@@ -21,24 +22,23 @@ import React from 'react'
 const Example: React.FC = props => {
   return (
     <React.Fragment>
-      <Heading size={Heading.sizes.xSmall}>
-        <h2>The technology skills platform</h2>
-      </Heading>
-
-      <Heading size={Heading.sizes.small}>
-        <h2>The technology skills platform</h2>
-      </Heading>
-
-      <Heading size={Heading.sizes.medium}>
-        <h2>The technology skills platform</h2>
+      <Heading size={Heading.sizes.xlarge}>
+        <h2>xlarge. The technology skills platform</h2>
       </Heading>
 
       <Heading size={Heading.sizes.large}>
-        <h2>The technology skills platform</h2>
+        <h2>large. The technology skills platform</h2>
       </Heading>
 
-      <Heading size={Heading.sizes.xLarge}>
-        <h2>The technology skills platform</h2>
+      <Heading size={Heading.sizes.medium}>
+        <h2>medium. The technology skills platform</h2>
+      </Heading>
+      <Heading size={Heading.sizes.small}>
+        <h2>small. The technology skills platform</h2>
+      </Heading>
+
+      <Heading size={Heading.sizes.xsmall}>
+        <h2>xsmall. The technology skills platform</h2>
       </Heading>
     </React.Fragment>
   )
@@ -60,7 +60,7 @@ export default Example
   <TypesProp
     name="size"
     type={<TypesEnum enum={Heading.sizes} />}
-    desc="size and style of heading (from Heading.sizes)"
+    desc="size of heading (from Heading.sizes)"
     default={Heading.sizes.large}
   />
 </TypesTable>

@@ -1,0 +1,90 @@
+---
+name: Caps
+route: /components/text-caps
+---
+
+import { Caps } from '@pluralsight/ps-design-system-text'
+
+# Caps
+
+<Intro>Caps are similar to Label, but all uppercase</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Sizes
+
+```typescript
+import { Caps } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Caps size={Caps.sizes.large}>
+          Large. The technology skills platform
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Caps.sizes.medium}>
+          Medium. The technology skills platform
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Label.sizes.small}>
+          Small. The technology skills platform
+        </Caps>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### Colors
+
+```typescript
+import { Caps } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Caps color={Caps.colors.secondary} caps>
+          Secondary
+        </Caps>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-text"
+  import="import { Caps } from '@pluralsight/ps-design-system-text'"
+  packageName="text"
+  version={props.version}
+/>
+
+<TypesTable>
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Caps.sizes} />}
+    desc="size (from Caps.sizes)"
+    default={Label.sizes.normal}
+  />
+  <TypesProp
+    name="color"
+    type={<TypesEnum enum={Caps.colors} />}
+    desc="color (from Caps.colors)"
+    default={Caps.colors.normal}
+  />
+</TypesTable>

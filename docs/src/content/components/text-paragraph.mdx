@@ -5,13 +5,13 @@ route: /components/text-paragraph
 
 import { P } from '@pluralsight/ps-design-system-text'
 
-# Paragraphs
+# Paragraph
 
 <TableOfContents {...props} />
 
 ## Examples
 
-Try to use common paragraph style when possible.
+### Size: Normal (Default)
 
 ```typescript
 import { P } from '@pluralsight/ps-design-system-text'
@@ -19,13 +19,82 @@ import React from 'react'
 
 const Example: React.FC = props => {
   return (
-    <P>
-      Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-      consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </P>
+    <React.Fragment>
+      <P>
+        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+      <P>
+        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### Size: Large
+
+```typescript
+import { P } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <P size={P.sizes.large}>
+        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+      <P size={P.sizes.large}>
+        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### Size: Small
+
+```typescript
+import { P } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <P size={P.sizes.small}>
+        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+      <P size={P.sizes.small}>
+        Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
+        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </P>
+    </React.Fragment>
   )
 }
 
@@ -42,5 +111,10 @@ export default Example
 />
 
 <TypesTable>
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={P.sizes} />}
+    default={P.sizes.normal}
+  />
   <TypesProp name="children" type="React.ReactNode" />
 </TypesTable>

@@ -1,0 +1,66 @@
+---
+name: Label
+route: /components/text-label
+---
+
+import { Label } from '@pluralsight/ps-design-system-text'
+
+# Label
+
+<Intro>Labels are for all text except headings and paragraphs.</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Label size={Label.sizes.large}>
+          Large. The technology skills platform
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.normal}>
+          Normal. The technology skills platform
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small}>
+          Small. The technology skills platform
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xsmall}>
+          XSmall. The technology skills platform
+        </Label>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-text"
+  import="import { Label } from '@pluralsight/ps-design-system-text'"
+  packageName="text"
+  version={props.version}
+/>
+
+<TypesTable>
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Label.sizes} />}
+    desc="size of label (from Label.sizes)"
+    default={Label.sizes.normal}
+  />
+</TypesTable>
