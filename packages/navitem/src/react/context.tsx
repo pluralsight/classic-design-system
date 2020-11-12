@@ -5,7 +5,7 @@ import { alignments } from '../vars'
 
 export type AllowedSelectors = 'navitem__bar' | 'navitem__bar--selected'
 
-interface ContentProps {
+interface ContainerProps {
   children: ReactNode
 }
 
@@ -14,7 +14,7 @@ export interface ContextValue {
   bar?: ReactNode
   icon?: ReactNode
   menu: boolean
-  renderContainer: (props: ContentProps) => JSX.Element
+  renderContainer: (props: ContainerProps) => JSX.Element
   selected: boolean
   // eslint-disable-next-line camelcase
   UNSAFE_stylesFor?: Partial<Record<AllowedSelectors, CSSProperties>>
