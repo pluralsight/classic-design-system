@@ -24,6 +24,19 @@ describe('DatePicker', () => {
     expect(ref.current).not.toBeNull()
   })
 
+  it('opens calendar on icon click', () => {
+    const { getByText, getByLabelText, container, rerender } = render(
+      <DatePicker value="1/20/1993" />
+    )
+    const icon = getByLabelText('calendar icon', { selector: 'svg' })
+
+    fireEvent.click(icon)
+
+    const calendar = getByText('January 1993')
+
+    expect(calendar).toBeInTheDocument()
+  })
+
   describe('onBlur prop', () => {
     it('should call onBlur when onBlur is called for a valid date', () => {
       const onBlurMock = jest.fn()
