@@ -1,5 +1,9 @@
 import Halo from '@pluralsight/ps-design-system-halo'
-import { ValueOf, stylesFor } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  ValueOf,
+  stylesFor
+} from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { useContext } from 'react'
 
@@ -34,9 +38,7 @@ const styles = {
     )
 }
 
-type DivElProps = JSX.IntrinsicElements['div']
-
-export const Bar: React.FC<DivElProps> = props => {
+export const Bar: React.FC<HTMLPropsFor<'div'>> = props => {
   // eslint-disable-next-line camelcase
   const { alignment, selected, UNSAFE_stylesFor } = useContext(Context)
 

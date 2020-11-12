@@ -1,4 +1,5 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { useContext } from 'react'
 
@@ -14,8 +15,6 @@ const styles = {
   label: () => css(stylesheet['.psds-navitem__vert-label']),
   layout: () => css(stylesheet['.psds-navitem__vert-layout'])
 }
-
-type SpanElProps = JSX.IntrinsicElements['span']
 
 export const VertLayout: React.FC = props => {
   const { icon, menu } = useContext(Context)
@@ -36,12 +35,12 @@ export const VertLayout: React.FC = props => {
 }
 VertLayout.displayName = 'NavItem.VertLayout'
 
-const VertContainer: React.FC<SpanElProps> = props => {
+const VertContainer: React.FC<HTMLPropsFor<'span'>> = props => {
   return <span {...styles.container()} {...props} />
 }
 VertContainer.displayName = 'NavItem.VertContainer'
 
-const VertCaret: React.FC<SpanElProps> = props => {
+const VertCaret: React.FC<HTMLPropsFor<'span'>> = props => {
   return (
     <span {...styles.caret()} {...props}>
       <CaretDownIcon size={CaretDownIcon.sizes.small} />
@@ -55,7 +54,7 @@ const VertIcon: React.FC = props => {
 }
 VertIcon.displayName = 'NavItem.VertIcon'
 
-const VertLabel: React.FC<SpanElProps> = props => {
+const VertLabel: React.FC<HTMLPropsFor<'span'>> = props => {
   return <span {...styles.label()} {...props} />
 }
 VertLabel.displayName = 'NavItem.VertLabel'
