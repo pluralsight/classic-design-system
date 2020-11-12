@@ -1,5 +1,6 @@
+import sha1 from 'tiny-hashes/sha1'
+
 import { colors, fallbackPixel } from '../vars'
-import sha1 from './sha1.js'
 
 export const getInitials = (fullname: string) => {
   if (!fullname || !fullname.length) return ':)'

@@ -183,6 +183,7 @@ const DatePicker = React.forwardRef((props, ref) => {
 
   function handleIconClick(evt: React.MouseEvent) {
     evt.preventDefault()
+    toggleIsOpen()
   }
 
   const handleKeyDown = combineFns((evt: React.KeyboardEvent) => {

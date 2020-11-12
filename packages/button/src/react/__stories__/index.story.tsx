@@ -1,12 +1,11 @@
-import { action } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
-
-import * as glamor from 'glamor'
-import PropTypes from 'prop-types'
-import React from 'react'
-
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { action } from '@storybook/addon-actions'
+import { storiesOf } from '@storybook/react'
+import * as glamor from 'glamor'
+import PropTypes from 'prop-types'
+import React, { useEffect, useState, ComponentProps } from 'react'
+
 import Button from '..'
 
 const appearanceStory = storiesOf('Button / appearance', module)
@@ -104,7 +103,7 @@ storiesOf('Button / as link', module)
 
 storiesOf('Button / with ref', module).add('ref to handle focus', _ => {
   function FocusStory() {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLButtonElement>()
     React.useEffect(() => {
       if (ref && ref.current) ref.current.focus()
     })
@@ -126,9 +125,9 @@ storiesOf('Button / override styles', module)
     </Button>
   ))
   .add('with className', _ => {
-    const className = glamor.css({ background: 'green !important' })
+    const cssSelector = glamor.css({ background: 'green !important' })
     return (
-      <Button className={className} icon={<Icon.CheckIcon />}>
+      <Button {...cssSelector} icon={<Icon.CheckIcon />}>
         Green Button
       </Button>
     )
@@ -177,31 +176,20 @@ loadingExample.add('lone icon', _ => (
   <Button icon={<Icon.CheckIcon />} size={Button.sizes.large} loading />
 ))
 
-class SwitchToLoading extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { loading: false }
-  }
+const SwitchToLoading: React.FC = props => {
+  const [loading, setLoading] = useState<boolean>(false)
 
-  componentDidMount() {
-    this.timeout = setInterval(_ => {
-      this.setState({ loading: !this.state.loading })
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setLoading(!loading)
     }, 1500)
-  }
 
-  componentWillUnmount() {
-    clearInterval(this.timeout)
-  }
+    return () => clearInterval(timer)
+  }, [loading])
 
-  render() {
-    return React.cloneElement(this.props.children, {
-      loading: this.state.loading
-    })
-  }
-}
-
-SwitchToLoading.propTypes = {
-  children: PropTypes.node.isRequired
+  return React.cloneElement(props.children as any, {
+    loading
+  })
 }
 
 loadingExample.add('no icon, hidden text', _ => (
