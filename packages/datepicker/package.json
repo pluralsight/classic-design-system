@@ -37,6 +37,7 @@
     "@pluralsight/ps-design-system-build": "^1.12.1",
     "@pluralsight/ps-design-system-storybook-preset": "^0.2.8",
     "@pluralsight/ps-design-system-textinput": "^9.0.6",
-    "@pluralsight/ps-design-system-theme": "^6.0.4"
+    "@pluralsight/ps-design-system-theme": "^6.0.4",
+    "timezone-mock": "^1.1.2"
   }
 }

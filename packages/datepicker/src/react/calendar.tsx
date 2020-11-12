@@ -42,7 +42,7 @@ const styles = {
 }
 
 interface CalendarProps {
-  value: Date | undefined
+  value?: Date
   onSelect: (evt: React.MouseEvent, date: Date) => void
 }
 export const Calendar: FC<CalendarProps> = props => {

@@ -5,5 +5,9 @@ module.exports = {
   ...baseConfig,
   displayName: name,
   name: name,
-  testMatch: [`${__dirname}/**/*/?(*.)+(spec|test).(js|ts|tsx)`]
+  testMatch: [`${__dirname}/**/*/?(*.)+(spec|test).(js|ts|tsx)`],
+  setupFilesAfterEnv: [
+    ...baseConfig.setupFilesAfterEnv,
+    '<rootDir>/packages/datepicker/jest.setup.js'
+  ]
 }

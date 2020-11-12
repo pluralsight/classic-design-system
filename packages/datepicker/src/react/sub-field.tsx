@@ -30,9 +30,9 @@ interface SubFieldProps
   appearance: ValueOf<typeof vars.appearances>
   disabled?: boolean
   name: string
-  onBlur: (evt: React.FocusEvent) => void
-  onFocus: (evt: React.FocusEvent) => void
-  value: number | undefined
+  onBlur: React.FocusEventHandler
+  onFocus: React.FocusEventHandler
+  value?: number
 }
 export const SubField: FC<SubFieldProps> = props => {
   const { appearance, disabled, name, onBlur, onFocus, value, ...rest } = props

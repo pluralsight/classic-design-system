@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
@@ -10,14 +11,7 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, {
-  FC,
-  ReactNode,
-  forwardRef,
-  useEffect,
-  useRef,
-  useState
-} from 'react'
+import React, { ReactNode, forwardRef, useEffect, useState } from 'react'
 
 import { Calendar, Overlay } from './calendar'
 import stylesheet from '../css'
@@ -84,11 +78,11 @@ interface DatePickerProps
   disabled?: boolean
   error?: boolean
   label?: ReactNode
-  onKeyDown?: (evt: React.KeyboardEvent) => void
+  onKeyDown?: React.KeyboardEventHandler
   onSelect?: (evt: React.FocusEvent | React.MouseEvent, newDate: Date) => void
   onSubBlur?: (evt: React.FocusEvent, date: Date | undefined) => void
   subLabel?: ReactNode
-  value: Date | undefined
+  value?: Date
 }
 
 interface DatePickerStatics {
@@ -172,15 +166,15 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       let day = dd
 
       if (name === 'yyyy') {
-        let yyyy = parseInt(target.value, 10)
+        const yyyy = parseInt(target.value, 10)
         setYYYY(yyyy)
         year = yyyy
       } else if (name === 'mm') {
-        let mm = parseInt(target.value, 10)
+        const mm = parseInt(target.value, 10)
         setMM(parseInt(target.value, 10))
         month = mm
       } else if (name === 'dd') {
-        let dd = parseInt(target.value, 10)
+        const dd = parseInt(target.value, 10)
         setDD(parseInt(target.value, 10))
         day = dd
       }
