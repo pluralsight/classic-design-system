@@ -21,16 +21,4 @@ describe('NavItem', () => {
     const el = label.closest('a')
     expect(el).not.toBeNull()
   })
-
-  it('should support refs', () => {
-    const ref = React.createRef<HTMLButtonElement>()
-
-    render(
-      <NavItem renderContent={props => <button ref={ref} {...props} />}>
-        test
-      </NavItem>
-    )
-
-    expect(ref.current).not.toBeNull()
-  })
 })
