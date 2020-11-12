@@ -53,7 +53,7 @@ export default Example
 
 ### Colors
 
-Use the `color` prop to change the color.
+Use the `color` prop to change the color.  The default color is `Heading.colors.primary`, and you can use `Heading.colors.secondary` for a more subtle heading.
 
 ```typescript
 import { Heading } from '@pluralsight/ps-design-system-text'
@@ -62,8 +62,11 @@ import React from 'react'
 const Example: React.FC = props => {
   return (
     <React.Fragment>
+      <Heading color={Caps.colors.primary}>
+        <h2>Primary heading color</h2>
+      </Heading>
       <Heading color={Caps.colors.secondary}>
-        <h2>The technology skills platform</h2>
+        <h2>Secondary heading color</h2>
       </Heading>
     </React.Fragment>
   )
