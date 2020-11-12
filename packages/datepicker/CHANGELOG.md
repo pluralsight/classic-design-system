@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@8.0.6...@pluralsight/ps-design-system-datepicker@8.0.7) (2020-11-12)
+
+
+### Bug Fixes
+
+* **datepicker:** restore toggle open calendar functionality ([def6c19](https://github.com/pluralsight/design-system/commit/def6c193f20dd01a62ddda149141411d673ede9c))
+
+
+
+
+
 ## [8.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@8.0.5...@pluralsight/ps-design-system-datepicker@8.0.6) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
