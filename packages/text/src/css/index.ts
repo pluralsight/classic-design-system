@@ -89,7 +89,7 @@ export default {
   [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.lowOnDark
   },
-  [`.psds-text__heading--size-${vars.headingSizes.xsmall}`]: {
+  [`.psds-text__heading--size-${vars.headingSizes.xSmall}`]: {
     fontSize: '20px',
     lineHeight: '28px',
     fontWeight: '700'
@@ -109,7 +109,7 @@ export default {
     lineHeight: '40px',
     fontWeight: '700'
   },
-  [`.psds-text__heading--size-${vars.headingSizes.xlarge}`]: {
+  [`.psds-text__heading--size-${vars.headingSizes.xLarge}`]: {
     fontSize: '40px',
     lineHeight: '52px',
     fontWeight: '700'
@@ -133,7 +133,7 @@ export default {
   [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.lowOnDark
   },
-  [`.psds-text__label--size-${vars.labelSizes.xsmall}`]: {
+  [`.psds-text__label--size-${vars.labelSizes.xSmall}`]: {
     fontSize: '12px',
     letterSpacing: '0.02em',
     lineHeight: '16px',
@@ -209,7 +209,6 @@ export default {
     letterSpacing: '0.005em',
     lineHeight: '32px',
     fontWeight: '400'
-  },
-
+  }
 
 }
