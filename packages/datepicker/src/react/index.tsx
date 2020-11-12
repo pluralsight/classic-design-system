@@ -1,4 +1,3 @@
-// TODO: react named imports
 // TODO: break up file
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
@@ -12,7 +11,14 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import * as React from 'react'
+import React, {
+  FC,
+  ReactNode,
+  forwardRef,
+  useEffect,
+  useRef,
+  useState
+} from 'react'
 
 import Calendar from './calendar'
 import stylesheet from '../css'
@@ -92,11 +98,11 @@ interface DatePickerProps
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean
-  label?: React.ReactNode
+  label?: ReactNode
   onKeyDown?: (evt: React.KeyboardEvent) => void
   onSelect?: (evt: React.FocusEvent | React.MouseEvent, newDate: Date) => void
   onSubBlur?: (evt: React.FocusEvent, date: Date | undefined) => void
-  subLabel?: React.ReactNode
+  subLabel?: ReactNode
   value: Date | undefined
 }
 
@@ -111,7 +117,7 @@ interface DatePickerComponent
     DatePickerStatics
   > {}
 
-const DatePicker = React.forwardRef<HTMLInputElement, DatePickerProps>(
+const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
   (props, ref) => {
     const {
       appearance = vars.appearances.default,
@@ -128,13 +134,13 @@ const DatePicker = React.forwardRef<HTMLInputElement, DatePickerProps>(
     } = props
 
     const themeName = useTheme()
-    const [value, setValue] = React.useState<Date | undefined>(valueFromProps)
-    const [yyyy, setYYYY] = React.useState(value?.getFullYear())
-    const [mm, setMM] = React.useState(value ? value.getMonth() + 1 : undefined)
-    const [dd, setDD] = React.useState(value?.getDate())
-    const [isOpen, setIsOpen] = React.useState<boolean>(false)
+    const [value, setValue] = useState<Date | undefined>(valueFromProps)
+    const [yyyy, setYYYY] = useState(value?.getFullYear())
+    const [mm, setMM] = useState(value ? value.getMonth() + 1 : undefined)
+    const [dd, setDD] = useState(value?.getDate())
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
-    React.useEffect(
+    useEffect(
       function updateDateOnPropChange() {
         setValue(valueFromProps)
         setYYYY(valueFromProps?.getFullYear())
@@ -312,7 +318,7 @@ interface OverlayProps {
   onClick: (evt: React.MouseEvent) => void
 }
 // TODO: replace with util click in body
-const Overlay: React.FC<OverlayProps> = props => {
+const Overlay: FC<OverlayProps> = props => {
   return <div {...styles.overlay()} onClick={props.onClick} />
 }
 
@@ -328,9 +334,9 @@ interface SubFieldProps
   onFocus: (evt: React.FocusEvent) => void
   value: number | undefined
 }
-const SubField: React.FC<SubFieldProps> = props => {
+const SubField: FC<SubFieldProps> = props => {
   const { appearance, disabled, name, onBlur, onFocus, value, ...rest } = props
-  const ref = React.useRef<HTMLInputElement>(null)
+  const ref = useRef<HTMLInputElement>(null)
 
   // TODO: verify what this is for
   const handleFocus = combineFns<[React.FocusEvent]>(() => {
@@ -352,6 +358,6 @@ const SubField: React.FC<SubFieldProps> = props => {
   )
 }
 
-const SubFieldDivider: React.FC<{
+const SubFieldDivider: FC<{
   appearance: ValueOf<typeof vars.appearances>
 }> = ({ appearance }) => <span {...styles.subFieldDivider(appearance)}>/</span>
