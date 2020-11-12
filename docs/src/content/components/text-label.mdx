@@ -59,13 +59,18 @@ import React from 'react'
 
 const Example: React.FC = props => {
   return (
-    <React.Fragment>
-      <div>
-        <Label color={Caps.colors.secondary}>
-          The technology skills platform
+    <>
+    <div>
+        <Label color={Caps.colors.primary}>
+          Primary. The technology skills platform
         </Label>
       </div>
-    </React.Fragment>
+      <div>
+        <Label color={Caps.colors.secondary}>
+          Secondary. The technology skills platform
+        </Label>
+      </div>
+    </>
   )
 }
 
