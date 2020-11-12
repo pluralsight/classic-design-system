@@ -142,7 +142,6 @@ export const Calendar: FC<CalendarProps> = props => {
                 onClick={evt => handleDayClick(evt, dateForCalendarDayNoTime)}
                 {...styles.day(isSelected)}
                 {...(isSelected && { ref: selectedDayRef })}
-                ref={selectedDayRef}
               >
                 {dateForCalendarDayNoTime.getDate()}
               </button>
