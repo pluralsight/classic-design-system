@@ -329,7 +329,11 @@ storiesOf('Carousel/with ActionMenu', module)
                 actionBarVisible
                 actionBar={[
                   <BelowRight
-                    inNode={typeof document !== 'undefined' && document.body}
+                    inNode={
+                      typeof document !== 'undefined'
+                        ? document.body
+                        : undefined
+                    }
                     when={course.id === courseIdForOpenMenu}
                     show={
                       <ActionMenu>

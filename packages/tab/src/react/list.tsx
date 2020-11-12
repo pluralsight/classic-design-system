@@ -21,7 +21,8 @@ import React, {
   useEffect,
   useMemo,
   useRef,
-  useState
+  useState,
+  isValidElement
 } from 'react'
 
 import stylesheet from '../css'
@@ -289,11 +290,13 @@ function getRightX(ref: RefObject<HTMLElement>) {
   return window.pageXOffset + rect.left + rect.width
 }
 
+// NOTE: weird because React.Children.toArray strips nulls; React.Children.map strips false booleans
 function findActiveIndex(els: ReactNode) {
-  return React.Children.toArray(els).findIndex(
-    el =>
-      el &&
-      (el as FunctionComponentElement<ComponentProps<typeof ListItem>>).props
-        .active
-  )
+  const activity = React.Children.map<string, ReactNode>(els, (child, i) => {
+    return isValidElement(child) && child.props.active ? 'active' : 'inactive'
+  })
+
+  return (activity || []).findIndex(b => {
+    return b === 'active'
+  })
 }
