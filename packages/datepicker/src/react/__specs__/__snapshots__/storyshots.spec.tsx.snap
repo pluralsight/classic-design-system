@@ -499,7 +499,7 @@ exports[`Storyshots disabled compare 1`] = `
       >
         <input
           data-css-1ynlp2p=""
-          defaultValue={10}
+          defaultValue={12}
           disabled={true}
           name="mm"
           onBlur={[Function]}
@@ -1595,6 +1595,106 @@ exports[`Storyshots layouts right-aligned 1`] = `
 </div>
 `;
 
+exports[`Storyshots value controlled value changes 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "color": "rgba(255, 255, 255, 0.95)",
+      }
+    }
+  >
+    Sending in: 
+    Sun Dec 07 1941 00:00:00 GMT-0700 (Mountain Standard Time)
+  </div>
+  <label
+    data-css-w0yocm=""
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1gfowhv=""
+      >
+        <input
+          data-css-1ynlp2p=""
+          defaultValue={12}
+          name="mm"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="mm"
+          style={
+            Object {
+              "width": "32px",
+            }
+          }
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          defaultValue={7}
+          name="dd"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="dd"
+          style={
+            Object {
+              "width": "24px",
+            }
+          }
+        />
+        <span
+          data-css-9eecwn=""
+        >
+          /
+        </span>
+        <input
+          data-css-1ynlp2p=""
+          defaultValue={1941}
+          name="yyyy"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="yyyy"
+          style={
+            Object {
+              "width": "48px",
+            }
+          }
+        />
+        <input
+          data-css-gyrv08=""
+          readOnly={true}
+          tabIndex={-1}
+        />
+        <button
+          data-css-3txxwd=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
 exports[`Storyshots value date 1`] = `
 <label
   data-css-w0yocm=""
@@ -1608,7 +1708,7 @@ exports[`Storyshots value date 1`] = `
     >
       <input
         data-css-1ynlp2p=""
-        defaultValue={10}
+        defaultValue={12}
         name="mm"
         onBlur={[Function]}
         onFocus={[Function]}
@@ -1789,7 +1889,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
     }
   >
     Selected: 
-    3/15/1995
+    Wed Mar 15 1995 00:00:00 GMT-0700 (Mountain Standard Time)
   </div>
   <label
     data-css-w0yocm=""
@@ -1803,17 +1903,16 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
       >
         <input
           data-css-1ynlp2p=""
+          defaultValue={3}
           name="mm"
           onBlur={[Function]}
-          onChange={[Function]}
           onFocus={[Function]}
-          placeholder="3"
+          placeholder="mm"
           style={
             Object {
               "width": "32px",
             }
           }
-          value="3"
         />
         <span
           data-css-9eecwn=""
@@ -1822,17 +1921,16 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
+          defaultValue={15}
           name="dd"
           onBlur={[Function]}
-          onChange={[Function]}
           onFocus={[Function]}
-          placeholder="15"
+          placeholder="dd"
           style={
             Object {
               "width": "24px",
             }
           }
-          value="15"
         />
         <span
           data-css-9eecwn=""
@@ -1841,23 +1939,21 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         </span>
         <input
           data-css-1ynlp2p=""
+          defaultValue={1995}
           name="yyyy"
           onBlur={[Function]}
-          onChange={[Function]}
           onFocus={[Function]}
-          placeholder="1995"
+          placeholder="yyyy"
           style={
             Object {
               "width": "48px",
             }
           }
-          value="1995"
         />
         <input
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
-          value="3/15/1995"
         />
         <button
           data-css-3txxwd=""
@@ -1881,92 +1977,6 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
     </div>
   </label>
 </div>
-`;
-
-exports[`Storyshots whitelist name 1`] = `
-<label
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        name="myFieldNameOfPower"
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</label>
 `;
 
 exports[`Storyshots whitelist onChange 1`] = `

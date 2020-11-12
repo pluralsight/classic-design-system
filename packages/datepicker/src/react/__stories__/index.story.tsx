@@ -6,7 +6,7 @@ import React from 'react'
 
 import DatePicker from '..'
 
-function StateDemo(props: { value?: Date }) {
+const StateDemo: React.FC<{ value?: Date }> = props => {
   const [value, setValue] = React.useState(props.value)
 
   function handleDatePickerSelect(
@@ -19,7 +19,7 @@ function StateDemo(props: { value?: Date }) {
   return (
     <div>
       <div style={{ color: core.colorsTextIcon.highOnDark }}>
-        Selected: {value}
+        Selected: {value?.toString()}
       </div>
 
       <DatePicker value={value} onSelect={handleDatePickerSelect} />
@@ -60,6 +60,35 @@ storiesOf('value', module)
   .add('updated value, w/ initial', () => (
     <StateDemo value={new Date(1995, 2, 15)} />
   ))
+  .add('controlled value changes', () => {
+    const Demo: React.FC = props => {
+      const dates = [new Date(1941, 11, 7), new Date(1776, 6, 4)]
+      const [i, setI] = React.useState(0)
+      const [value, setValue] = React.useState(dates[i])
+
+      React.useEffect(() => {
+        const timer = setInterval(() => {
+          const newI = i === dates.length - 1 ? 0 : i + 1
+          setValue(dates[newI])
+          setI(newI)
+        }, 2000)
+
+        return () => clearTimeout(timer)
+      })
+
+      return (
+        <div>
+          <div style={{ color: core.colorsTextIcon.highOnDark }}>
+            Sending in: {value?.toString()}
+          </div>
+
+          <DatePicker value={value} />
+        </div>
+      )
+    }
+
+    return <Demo />
+  })
 
 const appearanceStory = storiesOf('appearance', module)
 Object.values(DatePicker.appearances).forEach(appearance =>

@@ -125,26 +125,21 @@ const DatePicker = React.forwardRef<HTMLInputElement, DatePickerProps>(
     } = props
 
     const themeName = useTheme()
+    const [value, setValue] = React.useState<Date | undefined>(valueFromProps)
+    const [yyyy, setYYYY] = React.useState(value?.getFullYear())
+    const [mm, setMM] = React.useState(value ? value.getMonth() + 1 : undefined)
+    const [dd, setDD] = React.useState(value?.getDate())
+    const [isOpen, setIsOpen] = React.useState<boolean>(false)
 
     React.useEffect(
       function updateDateOnPropChange() {
-        setValue(value)
+        setValue(valueFromProps)
+        setYYYY(valueFromProps?.getFullYear())
+        setMM(valueFromProps ? valueFromProps.getMonth() + 1 : undefined)
+        setDD(valueFromProps?.getDate())
       },
       [valueFromProps]
     )
-
-    const [value, setValue] = React.useState<Date | undefined>(valueFromProps)
-    const [yyyy, setYYYY] = React.useState(
-      value ? String(value.getFullYear()) : undefined
-    )
-    const [mm, setMM] = React.useState(
-      value ? String(value.getMonth() + 1) : undefined
-    )
-    const [dd, setDD] = React.useState(
-      value ? String(value.getDate()) : undefined
-    )
-
-    const [isOpen, setIsOpen] = React.useState<boolean>(false)
 
     function handleCalendarSelect(evt: React.MouseEvent, date: Date) {
       setValue(date)
@@ -169,6 +164,7 @@ const DatePicker = React.forwardRef<HTMLInputElement, DatePickerProps>(
       setIsOpen(false)
     }, props.onKeyDown)
 
+    // TODO: do with click doc util
     function handleOverlayClick(evt: React.MouseEvent) {
       evt.preventDefault()
       setIsOpen(false)
@@ -178,16 +174,26 @@ const DatePicker = React.forwardRef<HTMLInputElement, DatePickerProps>(
       const target = evt.target as HTMLInputElement
       const name = target.name
 
+      let year = yyyy
+      let month = mm
+      let day = dd
+
       if (name === 'yyyy') {
-        setYYYY(target.value)
+        let yyyy = parseInt(target.value, 10)
+        setYYYY(yyyy)
+        year = yyyy
       } else if (name === 'mm') {
-        setMM(target.value)
+        let mm = parseInt(target.value, 10)
+        setMM(parseInt(target.value, 10))
+        month = mm
       } else if (name === 'dd') {
-        setDD(target.value)
+        let dd = parseInt(target.value, 10)
+        setDD(parseInt(target.value, 10))
+        day = dd
       }
 
-      const newValidDate = areValidParts(yyyy, mm, dd)
-        ? convertPartsToDate(yyyy!, mm!, dd!)
+      const newValidDate = areValidParts(year, month, day)
+        ? convertPartsToDate(year!, month!, day!)
         : undefined
       if (typeof onSubBlur === 'function') {
         onSubBlur(evt, newValidDate)
@@ -214,12 +220,15 @@ const DatePicker = React.forwardRef<HTMLInputElement, DatePickerProps>(
         {label && <div {...styles.label(themeName)}>{label}</div>}
 
         <Halo error={error} gapSize={Halo.gapSizes.small}>
-          <div {...styles.fieldContainer(appearance, themeName)}>
+          <div
+            {...styles.fieldContainer(appearance, themeName)}
+            key={value?.getTime()}
+          >
             <SubField
               appearance={appearance}
               onFocus={handleSubFieldFocus}
               onBlur={handleSubFieldBlur}
-              value={value ? value.getMonth() - 1 : undefined}
+              value={value ? value.getMonth() + 1 : undefined}
               name="mm"
               disabled={disabled}
               style={{ width: '32px' }}
@@ -319,6 +328,8 @@ interface SubFieldProps
 const SubField: React.FC<SubFieldProps> = props => {
   const { appearance, disabled, name, onBlur, onFocus, value, ...rest } = props
   const ref = React.useRef<HTMLInputElement>(null)
+
+  // TODO: verify what this is for
   const handleFocus = combineFns<[React.FocusEvent]>(() => {
     if (ref.current) ref.current.select()
   }, onFocus)

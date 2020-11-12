@@ -38,32 +38,29 @@ export const getMonthName = (date: Date): string =>
   date.toLocaleString('default', { month: 'long' })
 
 export const areValidParts = (
-  yyyy: string | undefined,
-  mm: string | undefined,
-  dd: string | undefined
+  yyyy: number | undefined,
+  mm: number | undefined,
+  dd: number | undefined
 ): boolean => {
   if (!yyyy || !mm || !dd) return false
   else {
-    const year = parseInt(yyyy, 10)
-    const month1Based = parseInt(mm, 10)
-    const day = parseInt(dd, 10)
-    if (isNaN(year) || isNaN(month1Based) || isNaN(day)) return false
-    else if (month1Based < 1 || month1Based > 12) return false
+    if (isNaN(yyyy) || isNaN(mm) || isNaN(dd)) return false
+    else if (mm < 1 || mm > 12) return false
     else {
-      const validMonthYear = new Date(year, month1Based - 1)
+      const validMonthYear = new Date(yyyy, mm - 1)
       const maxDays = getDaysInMonth(validMonthYear)
-      if (day < 1 || day > maxDays) return false
+      if (dd < 1 || dd > maxDays) return false
       else return true
     }
   }
 }
 
 export const convertPartsToDate = (
-  yyyy: string,
-  mm: string,
-  dd: string
+  yyyy: number,
+  mm: number,
+  dd: number
 ): Date => {
-  return new Date(parseInt(yyyy), parseInt(mm, 10) - 1, parseInt(dd, 10))
+  return new Date(yyyy, mm - 1, dd)
 }
 
 export const formatDate = (date: Date): string => {

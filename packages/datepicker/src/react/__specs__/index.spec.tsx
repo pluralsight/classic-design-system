@@ -48,7 +48,7 @@ describe('DatePicker', () => {
       )
       fireEvent.blur(getByDisplayValue('2001'))
       expect(onBlurMock).toHaveBeenCalledTimes(1)
-      expect(onBlurMock).toHaveBeenCalledWith(date)
+      expect(onBlurMock).toHaveBeenCalledWith(expect.any(Object), date)
     })
 
     it('calls onBlur when onBlur is called for an invalid date', () => {
@@ -61,7 +61,7 @@ describe('DatePicker', () => {
       fireEvent.change(yearSubField, { target: { value: '' } })
       fireEvent.blur(yearSubField)
       expect(onBlurMock).toHaveBeenCalledTimes(1)
-      expect(onBlurMock).toHaveBeenCalledWith(undefined)
+      expect(onBlurMock).toHaveBeenCalledWith(expect.any(Object), undefined)
     })
   })
 
@@ -89,6 +89,8 @@ describe('DatePicker', () => {
     const date = new Date(1993, 0, 20)
     const { container, rerender } = render(<DatePicker value={date} />)
 
+    const newDate = new Date(2001, 7, 14)
+    rerender(<DatePicker value={newDate} />)
     const fields: { [key: string]: HTMLInputElement } = {
       day: container.querySelector<HTMLInputElement>(
         '[name="dd"]'
@@ -100,11 +102,9 @@ describe('DatePicker', () => {
         '[name="yyyy"]'
       ) as HTMLInputElement
     }
-    const newDate = new Date(2001, 7, 14)
-    rerender(<DatePicker value={newDate} />)
 
-    expect(fields.day.value).toEqual(newDate.getDate())
-    expect(fields.month.value).toEqual(newDate.getMonth() + 1)
-    expect(fields.year.value).toEqual(newDate.getFullYear())
+    expect(parseInt(fields.day.value, 10)).toEqual(newDate.getDate())
+    expect(parseInt(fields.month.value, 10)).toEqual(newDate.getMonth() + 1)
+    expect(parseInt(fields.year.value, 10)).toEqual(newDate.getFullYear())
   })
 })
