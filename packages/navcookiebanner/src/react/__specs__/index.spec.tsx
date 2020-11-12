@@ -1,19 +1,19 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import NavItem from '../index.js'
+import NavCookieBanner from '..'
 
-describe('NavItem', () => {
+describe('NavCookieBanner', () => {
   it('renders', () => {
-    const { getByTestId } = render(<NavItem data-testid="undertest" />)
+    const { getByTestId } = render(<NavCookieBanner data-testid="undertest" />)
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
 
-    render(<NavItem ref={ref} />)
+    render(<NavCookieBanner ref={ref} />)
 
     expect(ref.current).not.toBeNull()
   })

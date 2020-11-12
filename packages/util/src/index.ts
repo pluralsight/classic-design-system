@@ -15,7 +15,7 @@ export { isString } from './is-string'
 export { omit } from './omit'
 export { shallowCompare } from './shallow-compare'
 export { capitalize } from './string'
-export { stylesFor } from './styles'
+export * from './styles'
 export { uniqueId } from './unique-id'
 
 export {
