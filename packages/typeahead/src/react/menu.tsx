@@ -1,5 +1,5 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
-import { combineFns } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, combineFns } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { forwardRef, useEffect, useMemo, useState } from 'react'
 
@@ -18,10 +18,7 @@ const styles = {
     )
 }
 
-type ButtonElProps = JSX.IntrinsicElements['button']
-type DivElProps = JSX.IntrinsicElements['div']
-
-interface SuggestionsMenuProps extends Omit<DivElProps, 'onChange'> {
+interface SuggestionsMenuProps extends Omit<HTMLPropsFor<'div'>, 'onChange'> {
   activeValue?: string
   onChange: (evt: React.MouseEvent<HTMLButtonElement>, value: string) => void
   onFocus?: React.FocusEventHandler<HTMLDivElement>
@@ -131,8 +128,7 @@ const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
   }
 )
 
-// eslint-disable-next-line
-interface MenuItemProps extends ButtonElProps {
+interface MenuItemProps extends HTMLPropsFor<'button'> {
   selected?: boolean
 }
 const MenuItem: React.FC<MenuItemProps> = props => {
