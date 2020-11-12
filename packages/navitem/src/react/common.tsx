@@ -19,8 +19,8 @@ const styles = {
     // eslint-disable-next-line camelcase
     UNSAFE_stylesFor: unknown
   }) => {
-    const isHorz = (props.alignment = alignments.horizontal)
-    const isVert = (props.alignment = alignments.vertical)
+    const isHorz = props.alignment === alignments.horizontal
+    const isVert = props.alignment === alignments.vertical
 
     return compose(
       css(stylesheet['.psds-navitem__bar']),
