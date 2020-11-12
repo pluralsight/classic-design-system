@@ -1,6 +1,6 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Halo from '@pluralsight/ps-design-system-halo'
-import { PropsOf, RefFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { ReactNode, MouseEventHandler } from 'react'
 
@@ -25,15 +25,15 @@ interface BaseNavUserProps {
   name?: string
   src?: string
 }
-interface AnchorProps extends BaseNavUserProps, PropsOf<'a'> {
+interface AnchorProps extends BaseNavUserProps, HTMLPropsFor<'a'> {
   href: string
   onClick?: MouseEventHandler<HTMLAnchorElement>
 }
-interface ButtonProps extends BaseNavUserProps, PropsOf<'button'> {
+interface ButtonProps extends BaseNavUserProps, HTMLPropsFor<'button'> {
   href?: undefined
   onClick: MouseEventHandler<HTMLButtonElement>
 }
-interface DivProps extends BaseNavUserProps, PropsOf<'div'> {
+interface DivProps extends BaseNavUserProps, HTMLPropsFor<'div'> {
   href?: undefined
   onClick?: MouseEventHandler<HTMLDivElement>
 }
@@ -63,20 +63,20 @@ const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
       isAnchor ? (
         <a
           ref={ref as RefFor<'a'>}
-          {...(rest as PropsOf<'a'>)}
+          {...(rest as HTMLPropsFor<'a'>)}
           {...wrapperProps}
         />
       ) : isButton ? (
         <button
           ref={ref as RefFor<'button'>}
           {...wrapperProps}
-          {...(rest as PropsOf<'button'>)}
+          {...(rest as HTMLPropsFor<'button'>)}
         />
       ) : (
         <div
           ref={ref as RefFor<'div'>}
           {...wrapperProps}
-          {...(rest as PropsOf<'div'>)}
+          {...(rest as HTMLPropsFor<'div'>)}
         />
       )
 
@@ -97,7 +97,7 @@ NavUser.displayName = 'NavUser'
 
 export default NavUser
 
-interface WordsProps extends PropsOf<'div'> {
+interface WordsProps extends HTMLPropsFor<'div'> {
   meta?: ReactNode
   name?: string
 }
