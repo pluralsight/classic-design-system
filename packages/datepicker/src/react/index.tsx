@@ -336,7 +336,6 @@ const SubField: FC<SubFieldProps> = props => {
   const { appearance, disabled, name, onBlur, onFocus, value, ...rest } = props
   const ref = useRef<HTMLInputElement>(null)
 
-  // TODO: verify what this is for
   const handleFocus = combineFns<[React.FocusEvent]>(() => {
     if (ref.current) ref.current.select()
   }, onFocus)
