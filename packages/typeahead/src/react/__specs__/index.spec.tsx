@@ -2,7 +2,7 @@ import { fireEvent, render } from '@testing-library/react'
 
 import React from 'react'
 
-import Typeahead from '../index.js'
+import Typeahead from '..'
 
 describe('Typeahead', () => {
   // NOTE: suppressing unnecessary warnings from test renderer.
@@ -11,7 +11,7 @@ describe('Typeahead', () => {
   const originalError = console.error
 
   beforeAll(() => {
-    console.error = (...args) => {
+    console.error = (...args: any[]) => {
       if (/Warning.*not wrapped in act/.test(args[0])) return
 
       originalError.call(console, ...args)
@@ -35,7 +35,7 @@ describe('Typeahead', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLInputElement>()
     render(<Typeahead ref={ref} />)
 
     expect(ref.current).not.toBeNull()
@@ -45,7 +45,7 @@ describe('Typeahead', () => {
     const handleFocus = jest.fn()
     const { container } = render(<Typeahead onFocus={handleFocus} />)
 
-    const input = container.querySelector('input')
+    const input = container.querySelector<HTMLInputElement>('input')!
     fireEvent.focus(input)
 
     expect(handleFocus).toHaveBeenCalled()
@@ -54,7 +54,9 @@ describe('Typeahead', () => {
   describe('suggestion menu', () => {
     const handleChange = jest.fn()
 
-    let container, input, rerender
+    let container: HTMLElement
+    let input: HTMLInputElement
+    let rerender: (ui: React.ReactElement) => void
 
     beforeEach(() => {
       const result = render(
@@ -64,7 +66,7 @@ describe('Typeahead', () => {
           <Typeahead.Suggestion>third</Typeahead.Suggestion>
         </Typeahead>
       )
-      input = result.container.querySelector('input')
+      input = result.container.querySelector<HTMLInputElement>('input')!
 
       container = result.container
       rerender = result.rerender
@@ -143,7 +145,7 @@ describe('Typeahead', () => {
   describe('when value is uncontrolled', () => {
     const handleChange = jest.fn()
 
-    let input
+    let input: HTMLInputElement
 
     beforeEach(() => {
       const { container } = render(
@@ -152,7 +154,7 @@ describe('Typeahead', () => {
           <Typeahead.Suggestion>second</Typeahead.Suggestion>
         </Typeahead>
       )
-      input = container.querySelector('input')
+      input = container.querySelector<HTMLInputElement>('input')!
     })
 
     it('updates the inner input on change', () => {
@@ -170,7 +172,8 @@ describe('Typeahead', () => {
     const initialValue = 'the initial value'
     const handleChange = jest.fn()
 
-    let input, rerender
+    let input: HTMLInputElement
+    let rerender: (ui: React.ReactElement) => void
 
     beforeEach(() => {
       const result = render(
@@ -179,7 +182,7 @@ describe('Typeahead', () => {
           <Typeahead.Suggestion>second</Typeahead.Suggestion>
         </Typeahead>
       )
-      input = result.container.querySelector('input')
+      input = result.container.querySelector<HTMLInputElement>('input')!
       rerender = result.rerender
     })
 
