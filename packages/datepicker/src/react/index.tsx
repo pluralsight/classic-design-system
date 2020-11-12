@@ -1,5 +1,5 @@
+// TODO: react named imports
 // TODO: break up file
-// TODO: use JSX.IntrinsicElements instead of HTMLAttributes
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
@@ -12,7 +12,7 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { ForwardRefExoticComponent, RefAttributes } from 'react'
+import * as React from 'react'
 
 import Calendar from './calendar'
 import stylesheet from '../css'
@@ -82,10 +82,13 @@ const styles = {
     )
 }
 
-// TODO: experiment with JSX.Elem and no ValueOf
+// TODO: refactor util to match this
+export type HTMLPropsFor<
+  Tag extends keyof JSX.IntrinsicElements
+> = JSX.IntrinsicElements[Tag]
 
 interface DatePickerProps
-  extends Omit<React.HTMLAttributes<HTMLInputElement>, 'onSelect'> {
+  extends Omit<HTMLPropsFor<'input'>, 'value' | 'onSelect'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean
