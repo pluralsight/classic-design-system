@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, forwardRef } from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
@@ -10,7 +10,7 @@ import {
 
 import stylesheet from '../css'
 import * as vars from '../vars'
-import { ValueOf, PropsOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, PropsOf, RefFor } from '@pluralsight/ps-design-system-util'
 
 const styles = {
   tag: ({
@@ -69,43 +69,65 @@ interface AnchorProps extends BaseProps, PropsOf<'a'> {
 interface DivProps extends BaseProps, PropsOf<'div'> {
   href?: undefined
 }
+export type TagElement = HTMLAnchorElement | HTMLDivElement
 export type TagProps = AnchorProps | DivProps
+export type TagComponent = React.ForwardRefExoticComponent<TagProps> &
+  TagStatics & {
+    (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
+    (props: DivProps, ref?: RefFor<'div'>): JSX.Element
+  }
 
-const Tag: React.FC<TagProps> & TagStatics = ({
-  children,
-  error = false,
-  icon,
-  isPressed = false,
-  href,
-  size = vars.sizes.medium,
-  ...props
-}) => {
-  const TagName = href ? 'a' : 'div'
-  const themeName = useTheme()
+const Tag = forwardRef<TagElement, TagProps>(
+  (
+    {
+      children,
+      error = false,
+      icon,
+      isPressed = false,
+      href,
+      size = vars.sizes.medium,
+      ...props
+    },
+    ref
+  ) => {
+    const themeName = useTheme()
 
-  return (
-    <Halo error={error} shape={Halo.shapes.pill} inline>
-      {/* 
-  // @ts-ignore: 🤷🏿‍♂️ */}
-      <TagName
-        {...(isPressed && { 'aria-pressed': true })}
-        {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
-        {...styles.tag({
-          themeName,
-          clickable: Boolean(props.onClick || href),
-          icon: Boolean(icon),
-          isPressed,
-          size
-        })}
-        {...props}
-        href={href}
-      >
-        <Label icon={Boolean(icon)}>{children}</Label>
-        {renderIcon(icon, size)}
-      </TagName>
-    </Halo>
-  )
-}
+    const Wrapper: React.FC = wrapperProps =>
+      href ? (
+        <a
+          ref={ref as RefFor<'a'>}
+          href={href}
+          {...wrapperProps}
+          {...(props as PropsOf<'a'>)}
+        />
+      ) : (
+        <div
+          ref={ref as RefFor<'div'>}
+          {...wrapperProps}
+          {...(props as PropsOf<'div'>)}
+        />
+      )
+
+    return (
+      <Halo error={error} shape={Halo.shapes.pill} inline>
+        <Wrapper
+          {...(isPressed && { 'aria-pressed': true })}
+          {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
+          {...styles.tag({
+            themeName,
+            clickable: Boolean(props.onClick || href),
+            icon: Boolean(icon),
+            isPressed,
+            size
+          })}
+        >
+          <Label icon={Boolean(icon)}>{children}</Label>
+          {renderIcon(icon, size)}
+        </Wrapper>
+      </Halo>
+    )
+  }
+) as TagComponent
 
 Tag.displayName = 'Tag'
 Tag.sizes = vars.sizes
