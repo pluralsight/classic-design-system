@@ -36,7 +36,12 @@ const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
       <div ref={ref} {...styles.navbar()} {...rest}>
         {onMobileMenuClick && (
           <div {...styles.mobileMenu()}>
-            <NavItem onClick={onMobileMenuClick} icon={<MenuIcon />} />
+            <NavItem
+              renderContainer={renderProps => (
+                <button {...renderProps} onClick={onMobileMenuClick} />
+              )}
+              icon={<MenuIcon />}
+            />
           </div>
         )}
         <div {...styles.brand()}>{brand}</div>

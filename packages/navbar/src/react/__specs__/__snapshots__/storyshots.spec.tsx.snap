@@ -100,6 +100,7 @@ exports[`Storyshots Navbar desktop 1`] = `
         >
           <button
             data-css-16atklq=""
+            onClick={[Function]}
           >
             <span
               data-css-50rv4t=""
@@ -220,6 +221,7 @@ exports[`Storyshots Navbar desktop 1`] = `
         >
           <button
             data-css-16atklq=""
+            onClick={[Function]}
           >
             <span
               data-css-50rv4t=""
@@ -370,6 +372,7 @@ exports[`Storyshots Navbar desktop 1`] = `
         >
           <button
             data-css-16atklq=""
+            onClick={[Function]}
           >
             <span
               data-css-50rv4t=""
