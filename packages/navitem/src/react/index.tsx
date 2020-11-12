@@ -26,7 +26,7 @@ const NavItem: React.FC<NavItemProps> & NavItemStatics = props => {
     children,
     icon,
     menu = initialValue.menu,
-    renderContent = initialValue.renderContent,
+    renderContainer = initialValue.renderContainer,
     selected = initialValue.selected,
     // eslint-disable-next-line camelcase
     UNSAFE_stylesFor
@@ -39,7 +39,7 @@ const NavItem: React.FC<NavItemProps> & NavItemStatics = props => {
     icon,
     menu,
     selected,
-    renderContent,
+    renderContainer,
     UNSAFE_stylesFor
   }
 

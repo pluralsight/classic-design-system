@@ -14,7 +14,7 @@ export interface ContextValue {
   bar?: ReactNode
   icon?: ReactNode
   menu: boolean
-  renderContent: (props: ContentProps) => JSX.Element
+  renderContainer: (props: ContentProps) => JSX.Element
   selected: boolean
   // eslint-disable-next-line camelcase
   UNSAFE_stylesFor?: Partial<Record<AllowedSelectors, CSSProperties>>
@@ -24,7 +24,7 @@ export const initialValue: ContextValue = {
   alignment: alignments.horizontal,
   menu: false,
   selected: false,
-  renderContent: injected => <button {...injected} />
+  renderContainer: injected => <button {...injected} />
 }
 
 const Context = createContext<ContextValue>(initialValue)

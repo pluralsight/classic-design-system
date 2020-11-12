@@ -14,7 +14,9 @@ describe('NavItem', () => {
 
   it('should allow rendering an anchor element', async () => {
     const { findByText } = render(
-      <NavItem renderContent={props => <a href="" {...props} />}>test</NavItem>
+      <NavItem renderContainer={props => <a href="" {...props} />}>
+        test
+      </NavItem>
     )
 
     const label = await findByText('test')
