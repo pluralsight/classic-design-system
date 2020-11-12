@@ -14,6 +14,12 @@ import {
 import * as vars from '../vars'
 
 export default {
+  [`.psds-text__caps`]: {
+    fontWeight: '400'
+  },
+  [`.psds-text__caps--strong`]: {
+    fontWeight: '600'
+  },
   [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
@@ -31,21 +37,18 @@ export default {
     fontSize: '10px',
     letterSpacing: '0.08em',
     lineHeight: '16px',
-    fontWeight: '500'
   },
   [`.psds-text__caps--size-${vars.capsSizes.medium}`]: {
     textTransform: 'uppercase',
     fontSize: '12px',
     letterSpacing: '0.08em',
     lineHeight: '16px',
-    fontWeight: '500'
   },
   [`.psds-text__caps--size-${vars.capsSizes.large}`]: {
     textTransform: 'uppercase',
     fontSize: '14px',
     letterSpacing: '0.07em',
     lineHeight: '20px',
-    fontWeight: '500'
   },
 
 
@@ -74,11 +77,17 @@ export default {
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`
   },
-  [`.psds-text__heading.psds-theme--${themeNames.light}`]: {
+  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__heading.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
   },
   [`.psds-text__heading--size-${vars.headingSizes.xsmall}`]: {
     fontSize: '20px',
@@ -106,7 +115,12 @@ export default {
     fontWeight: '700'
   },
 
-
+  [`.psds-text__label`]: {
+    fontWeight: '400'
+  },
+  [`.psds-text__label--strong`]: {
+    fontWeight: '600'
+  },
   [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
@@ -119,27 +133,20 @@ export default {
   [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.lowOnDark
   },
-  [`.psds-text__label--strong`]: {
-    fontWeight: '600'
-  },
   [`.psds-text__label--size-${vars.labelSizes.xsmall}`]: {
     fontSize: '12px',
     letterSpacing: '0.02em',
     lineHeight: '16px',
-    fontWeight: '400'
   },
   [`.psds-text__label--size-${vars.labelSizes.small}`]: {
     fontSize: '14px',
     letterSpacing: '0.015em',
     lineHeight: '24px',
-    fontWeight: '400'
   },
   [`.psds-text__label--size-${vars.labelSizes.normal}`]: {
     fontSize: '16px',
     letterSpacing: '0.01em',
-    lineHeight: '28px',
-    fontWeight: '400'
-  },
+    lineHeight: '28px',  },
   [`.psds-text__label--size-${vars.labelSizes.large}`]: {
     fontSize: '18px',
     letterSpacing: '0.005em',
@@ -167,7 +174,7 @@ export default {
   [`.psds-text__list--type-${vars.listTypes.numbered}`]: {
     listStyle: 'initial',
     listStyleType: 'decimal'
-  }
+  },
 
 
   '.psds-text__p': {

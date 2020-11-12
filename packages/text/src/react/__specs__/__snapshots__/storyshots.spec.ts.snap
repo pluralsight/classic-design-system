@@ -1,5 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Caps className override 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    className="css-mbiza7"
+    data-css-1snto52=""
+  >
+    blue
+  </span>
+</div>
+`;
+
+exports[`Storyshots Caps color: primary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1snto52=""
+  >
+    Primary
+  </span>
+</div>
+`;
+
+exports[`Storyshots Caps color: secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-3nq6g1=""
+  >
+    Secondary
+  </span>
+</div>
+`;
+
+exports[`Storyshots Caps size: large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1d1nurx=""
+  >
+    large
+  </span>
+</div>
+`;
+
+exports[`Storyshots Caps size: medium 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1snto52=""
+  >
+    medium
+  </span>
+</div>
+`;
+
+exports[`Storyshots Caps size: small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-17zuyft=""
+  >
+    small
+  </span>
+</div>
+`;
+
+exports[`Storyshots Caps strong: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1pbpmpy=""
+  >
+    Strong
+  </span>
+</div>
+`;
+
+exports[`Storyshots Caps style override 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1snto52=""
+    style={
+      Object {
+        "color": "#E7558B",
+      }
+    }
+  >
+    pink
+  </span>
+</div>
+`;
+
 exports[`Storyshots Code empty 1`] = `
 <div
   style={
@@ -7,7 +141,14 @@ exports[`Storyshots Code empty 1`] = `
       "padding": "48px",
     }
   }
-/>
+>
+  <p
+    data-css-1xyzjvr=""
+  >
+    before|
+    |after
+  </p>
+</div>
 `;
 
 exports[`Storyshots Code ends single line 1`] = `
@@ -17,7 +158,18 @@ exports[`Storyshots Code ends single line 1`] = `
       "padding": "48px",
     }
   }
-/>
+>
+  <p
+    data-css-1xyzjvr=""
+  >
+    This is where we see 
+    <code
+      data-css-exlif5=""
+    >
+      inline code
+    </code>
+  </p>
+</div>
 `;
 
 exports[`Storyshots Code lead single line 1`] = `
@@ -27,7 +179,18 @@ exports[`Storyshots Code lead single line 1`] = `
       "padding": "48px",
     }
   }
-/>
+>
+  <p
+    data-css-1xyzjvr=""
+  >
+    <code
+      data-css-exlif5=""
+    >
+      inline code
+    </code>
+     that is here
+  </p>
+</div>
 `;
 
 exports[`Storyshots Code line wrap 1`] = `
@@ -37,7 +200,19 @@ exports[`Storyshots Code line wrap 1`] = `
       "padding": "48px",
     }
   }
-/>
+>
+  <p
+    data-css-1xyzjvr=""
+  >
+    text at the start
+    <code
+      data-css-exlif5=""
+    >
+      buy-in programmatically, or out of the loop. I'll book a meeting so we can solution this before the sprint is over get buy-in, and closing these latest prospects is like putting socks on an octopus. Knowledge is power
+    </code>
+    text on the end
+  </p>
+</div>
 `;
 
 exports[`Storyshots Code maintains whitespace 1`] = `
@@ -63,7 +238,19 @@ exports[`Storyshots Code middle of paragraph 1`] = `
       "padding": "48px",
     }
   }
-/>
+>
+  <p
+    data-css-1xyzjvr=""
+  >
+    Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
+    <code
+      data-css-exlif5=""
+    >
+      inline code
+    </code>
+     granularity minimize backwards overflow. Baseline locked and loaded, and locked and loaded. Get buy-in programmatically, or out of the loop. I'll book a meeting so we can solution this before the sprint is over get buy-in, and closing these latest prospects is like putting socks on an octopus. Knowledge is power bake it in but take five, punch the tree, and come back in here with a clear head.
+  </p>
+</div>
 `;
 
 exports[`Storyshots Code standalone 1`] = `
@@ -91,15 +278,43 @@ exports[`Storyshots Heading className override 1`] = `
   }
 >
   <h2
-    className={
-      Object {
-        "data-css-mbiza7": "",
-      }
-    }
-    data-css-s42h7m=""
+    className="css-mbiza7"
+    data-css-10l98dn=""
   >
     orange
   </h2>
+</div>
+`;
+
+exports[`Storyshots Heading color: primary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-10l98dn=""
+  >
+    Primary
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading color: secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-19m0az7=""
+  >
+    Secondary
+  </h1>
 </div>
 `;
 
@@ -112,7 +327,7 @@ exports[`Storyshots Heading size: large 1`] = `
   }
 >
   <h1
-    data-css-s42h7m=""
+    data-css-10l98dn=""
   >
     large
   </h1>
@@ -128,7 +343,7 @@ exports[`Storyshots Heading size: medium 1`] = `
   }
 >
   <h1
-    data-css-ytqci0=""
+    data-css-i24vp1=""
   >
     medium
   </h1>
@@ -144,7 +359,7 @@ exports[`Storyshots Heading size: small 1`] = `
   }
 >
   <h1
-    data-css-18cz2co=""
+    data-css-1jaabgz=""
   >
     small
   </h1>
@@ -160,7 +375,7 @@ exports[`Storyshots Heading size: xlarge 1`] = `
   }
 >
   <h1
-    data-css-14es85d=""
+    data-css-wf29cn=""
   >
     xlarge
   </h1>
@@ -176,7 +391,7 @@ exports[`Storyshots Heading size: xsmall 1`] = `
   }
 >
   <h1
-    data-css-rv3a9l=""
+    data-css-2wwwch=""
   >
     xsmall
   </h1>
@@ -192,7 +407,7 @@ exports[`Storyshots Heading style override 1`] = `
   }
 >
   <h2
-    data-css-s42h7m=""
+    data-css-10l98dn=""
     style={
       Object {
         "color": "#E7558B",
@@ -204,7 +419,157 @@ exports[`Storyshots Heading style override 1`] = `
 </div>
 `;
 
-exports[`Storyshots List mixed liste 1`] = `
+exports[`Storyshots Label className override 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    className="css-mbiza7"
+    data-css-e9bpt1=""
+  >
+    blue
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label color: primary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-e9bpt1=""
+  >
+    Primary
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label color: secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-rwxz6j=""
+  >
+    Secondary
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-18jb6r7=""
+  >
+    large
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: normal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-e9bpt1=""
+  >
+    normal
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1cjjkrz=""
+  >
+    small
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: xsmall 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-6xzxlg=""
+  >
+    xsmall
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label strong: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-6yq83=""
+  >
+    Strong
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label style override 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-e9bpt1=""
+    style={
+      Object {
+        "color": "#E7558B",
+      }
+    }
+  >
+    pink
+  </span>
+</div>
+`;
+
+exports[`Storyshots List mixed list 1`] = `
 <div
   style={
     Object {
@@ -217,7 +582,7 @@ exports[`Storyshots List mixed liste 1`] = `
       data-css-bhv8ao=""
     >
       <li>
-        one
+        aone
       </li>
       <li>
         two
@@ -429,10 +794,17 @@ exports[`Storyshots P className override 1`] = `
       "padding": "48px",
     }
   }
-/>
+>
+  <p
+    className="css-mbiza7"
+    data-css-1xyzjvr=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
 `;
 
-exports[`Storyshots P stacked 1`] = `
+exports[`Storyshots P color: primary 1`] = `
 <div
   style={
     Object {
@@ -440,7 +812,75 @@ exports[`Storyshots P stacked 1`] = `
     }
   }
 >
-  <div />
+  <p
+    data-css-1xyzjvr=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P color: secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-1vhod6k=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P size: large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-16knash=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P size: normal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-1xyzjvr=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P size: small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-16fryvu=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
 </div>
 `;
 
@@ -451,15 +891,16 @@ exports[`Storyshots P style override 1`] = `
       "padding": "48px",
     }
   }
-/>
-`;
-
-exports[`Storyshots P vanilla 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
+>
+  <p
+    data-css-1xyzjvr=""
+    style={
+      Object {
+        "color": "#E7558B",
+      }
     }
-  }
-/>
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
 `;

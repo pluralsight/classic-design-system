@@ -8,31 +8,35 @@ import * as vars from '../vars'
 
 const style = ({
   themeName,
-  size
+  size,
+  color
 }: {
   themeName?: ValueOf<typeof names>
   size?: ValueOf<typeof vars.headingSizes>
+  color: ValueOf<typeof vars.textColors>
 }) =>
   compose(
     css(stylesheet['.psds-text__heading']),
-    css(stylesheet[`.psds-text__heading.psds-theme--${themeName}`]),
     css(stylesheet[`.psds-text__heading--size-${size}`]),
     css(
-      stylesheet[`.psds-text__heading--size-${size}.psds-theme--${themeName}`]
+      stylesheet[`.psds-text__heading--color-${color}.psds-theme--${themeName}`]
     )
   )
 
 interface HeadingStatics {
   sizes: typeof vars.headingSizes
+  colors: typeof vars.textColors
 }
 
 interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   size?: ValueOf<typeof vars.headingSizes>
+  color?: ValueOf<typeof vars.textColors>
 }
 
 const Heading: React.FC<HeadingProps> & HeadingStatics = ({
   children,
-  size,
+  size = vars.labelSizes.large,
+  color = vars.textColors.primary,
   ...props
 }) => {
   const themeName = useTheme()
@@ -42,18 +46,17 @@ const Heading: React.FC<HeadingProps> & HeadingStatics = ({
     ...props,
     ...style({
       size,
+      color,
       themeName
     }),
     className: props.className
   })
 }
 
-Heading.defaultProps = {
-  size: vars.headingSizes.large
-}
-
 Heading.sizes = vars.headingSizes
+Heading.colors = vars.textColors
 
 export const sizes = vars.headingSizes
+export const colors = vars.textColors
 
 export default Heading

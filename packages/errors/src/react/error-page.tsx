@@ -2,7 +2,7 @@ import { compose, css, media } from 'glamor'
 import React, { HTMLAttributes } from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import { headingSizes } from '@pluralsight/ps-design-system-text'
+import { Heading, Caps } from '@pluralsight/ps-design-system-text'
 import {
   useTheme,
   names as themeNames
@@ -11,7 +11,6 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
-import Heading from './heading'
 import icons from './icon-loader'
 
 const styles = {
@@ -100,14 +99,14 @@ const ErrorPage: React.FC<ErrorPageProps> = props => {
         <div {...styles.icon(themeName)}>{icons[iconId]()}</div>
       )}
       <div {...styles.text()}>
-        <Heading size={headingSizes.medium}>
+        <Heading size={Heading.sizes.medium}>
           <h1>{text}</h1>
         </Heading>
       </div>
       <div {...styles.code(themeName)}>
-        <Heading size={headingSizes.smallCaps}>
-          <h2>Error code: {code}</h2>
-        </Heading>
+      <h2><Caps size={Caps.sizes.medium}>
+          Error code: {code}
+        </Caps></h2>
       </div>
       {href && <Button href={href}>Contact support</Button>}
       {action && <SearchForm action={action} />}

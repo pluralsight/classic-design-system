@@ -17,10 +17,7 @@ const style = ({
 }) =>
   compose(
     css(stylesheet[`.psds-text__p`]),
-    css(stylesheet[`.psds-text__p.psds-theme--${themeName}`]),
     css(stylesheet[`.psds-text__p--size-${size}`]),
-    css(stylesheet[`.psds-text__p--size-${size}.psds-theme--${themeName}`]),
-    css(stylesheet[`.psds-text__p--color-${color}`]),
     css(stylesheet[`.psds-text__p--color-${color}.psds-theme--${themeName}`])
   )
 

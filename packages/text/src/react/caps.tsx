@@ -9,19 +9,19 @@ import * as vars from '../vars'
 const style = ({
   themeName,
   size,
-  color
+  color,
+  strong
 }: {
   themeName?: ValueOf<typeof names>
   size?: ValueOf<typeof vars.capsSizes>
   color: ValueOf<typeof vars.textColors>
+  strong: boolean
 }) =>
   compose(
     css(stylesheet['.psds-text__caps']),
-    css(stylesheet[`.psds-text__caps.psds-theme--${themeName}`]),
     css(stylesheet[`.psds-text__caps--size-${size}`]),
-    css(stylesheet[`.psds-text__caps--size-${size}.psds-theme--${themeName}`]),
-    css(stylesheet[`.psds-text__caps--color-${color}`]),
-    css(stylesheet[`.psds-text__caps--color-${color}.psds-theme--${themeName}`])
+    css(stylesheet[`.psds-text__caps--color-${color}.psds-theme--${themeName}`]),
+    strong && css(stylesheet[`.psds-text__label--strong`])
   )
 
 interface CapsStatics {
@@ -32,16 +32,18 @@ interface CapsStatics {
 interface CapsProps extends HTMLAttributes<HTMLSpanElement> {
   size?: ValueOf<typeof vars.capsSizes>
   color?: ValueOf<typeof vars.textColors>
+  strong?: boolean
 }
 
 const Caps: React.FC<CapsProps> & CapsStatics = ({
   size = vars.capsSizes.medium,
   color = vars.textColors.primary,
+  strong = false,
   ...rest
 }) => {
   const themeName = useTheme()
 
-  return <span {...rest} {...style({ themeName, size, color })} />
+  return <span {...rest} {...style({ themeName, size, color, strong })} />
 }
 
 Caps.sizes = vars.capsSizes

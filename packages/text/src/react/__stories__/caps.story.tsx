@@ -27,6 +27,8 @@ stories.add('color: secondary', () => (
   <Caps color="secondary">Secondary</Caps>
 ))
 
+stories.add('strong: true', () => <Caps strong>Strong</Caps>)
+
 stories.add('style override', () => <Caps style={style}>pink</Caps>)
 
 stories.add('className override', () => <Caps className={className}>blue</Caps>)
