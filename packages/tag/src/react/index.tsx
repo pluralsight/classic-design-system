@@ -56,17 +56,17 @@ const styles = {
 export interface TagStatics {
   sizes: typeof vars.sizes
 }
-export interface BaseProps {
+export interface BaseTagProps {
   error?: boolean
   icon?: React.ReactElement
   isPressed?: boolean
   size?: ValueOf<typeof vars.sizes>
 }
 
-interface AnchorProps extends BaseProps, PropsOf<'a'> {
+interface AnchorProps extends BaseTagProps, PropsOf<'a'> {
   href: string
 }
-interface DivProps extends BaseProps, PropsOf<'div'> {
+interface DivProps extends BaseTagProps, PropsOf<'div'> {
   href?: undefined
 }
 export type TagElement = HTMLAnchorElement | HTMLDivElement
