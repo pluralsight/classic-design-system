@@ -198,16 +198,28 @@ const groups = [
     },
     items: [
       {
-        href: '/components/text-headings',
-        title: 'Headings'
+        href: '/components/text-heading',
+        title: 'Heading'
+      },
+      {
+        href: '/components/text-label',
+        title: 'Label'
+      },
+      {
+        href: '/components/text-caps',
+        title: 'Caps'
       },
       {
         href: '/components/text-paragraph',
         title: 'Paragraph'
       },
       {
-        href: '/components/text-lists',
-        title: 'Lists'
+        href: '/components/text-list',
+        title: 'List'
+      },
+      {
+        href: '/components/text-code',
+        title: 'Code'
       }
     ]
   },

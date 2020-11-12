@@ -1,8 +1,6 @@
 export { default as Caps } from './caps'
 export { default as Code } from './code'
-export { default as Display } from './display'
 export { default as Heading } from './heading'
 export { default as Label } from './label'
 export { default as List } from './list'
-export { default as Monospace } from './monospace'
 export { default as P } from './p'

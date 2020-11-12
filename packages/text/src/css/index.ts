@@ -117,11 +117,18 @@ export default {
     fontWeight: '700'
   },
 
-  [`.psds-text__caps.psds-theme--${themeNames.light}`]: {
+
+  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__caps.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
   },
   [`.psds-text__caps--size-${vars.capsSizes.small}`]: {
     textTransform: 'uppercase',
@@ -145,6 +152,9 @@ export default {
     fontWeight: '500'
   },
 
+  '.psds-text__p': {
+    margin: `${layout.spacingMedium} 0`
+  },
   [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },

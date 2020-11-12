@@ -21,6 +21,12 @@ Object.keys(Caps.sizes).forEach(size =>
     <Caps size={size as keyof typeof Caps.sizes}>{size}</Caps>
   ))
 )
+
+stories.add('color: primary', () => <Caps color="primary">Primary</Caps>)
+stories.add('color: secondary', () => (
+  <Caps color="secondary">Secondary</Caps>
+))
+
 stories.add('style override', () => <Caps style={style}>pink</Caps>)
 
 stories.add('className override', () => <Caps className={className}>blue</Caps>)
