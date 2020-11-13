@@ -16,7 +16,7 @@ export const getPrevMonthYear = (date: Date): Date => {
   const input = new Date(date)
   const month = input.getMonth()
   const year = input.getFullYear()
-  const newMonth = month == 0 ? 11 : month - 1
+  const newMonth = month === 0 ? 11 : month - 1
   const newYear = newMonth === 11 && month === 0 ? year - 1 : year
   input.setMonth(newMonth)
   input.setFullYear(newYear)
@@ -27,7 +27,7 @@ export const getNextMonthYear = (date: Date): Date => {
   const input = new Date(date)
   const month = input.getMonth()
   const year = input.getFullYear()
-  const newMonth = month == 11 ? 0 : month + 1
+  const newMonth = month === 11 ? 0 : month + 1
   const newYear = newMonth === 0 && month === 11 ? year + 1 : year
   input.setMonth(newMonth)
   input.setFullYear(newYear)

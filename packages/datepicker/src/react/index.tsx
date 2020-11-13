@@ -84,7 +84,7 @@ interface DatePickerProps
   disabled?: boolean
   error?: boolean
   label?: ReactNode
-  onKeyDown?: (evt: React.KeyboardEvent) => void
+  onKeyDown?: React.KeyboardEventHandler
   onSelect?: (evt: React.FocusEvent | React.MouseEvent, newDate: Date) => void
   onSubBlur?: (evt: React.FocusEvent, date: Date | undefined) => void
   subLabel?: ReactNode
@@ -172,15 +172,15 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       let day = dd
 
       if (name === 'yyyy') {
-        let yyyy = parseInt(target.value, 10)
+        const yyyy = parseInt(target.value, 10)
         setYYYY(yyyy)
         year = yyyy
       } else if (name === 'mm') {
-        let mm = parseInt(target.value, 10)
+        const mm = parseInt(target.value, 10)
         setMM(parseInt(target.value, 10))
         month = mm
       } else if (name === 'dd') {
-        let dd = parseInt(target.value, 10)
+        const dd = parseInt(target.value, 10)
         setDD(parseInt(target.value, 10))
         day = dd
       }
