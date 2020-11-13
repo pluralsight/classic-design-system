@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.8.0...@pluralsight/ps-design-system-util@6.0.0) (2020-11-12)
+
+
+### Code Refactoring
+
+* **util:** remove props and prop-type utils ([fff0a51](https://github.com/pluralsight/design-system/commit/fff0a51096641ac14c56f50b13257c052083a2b7))
+
+
+### Features
+
+* **util:** add pick fn ([d51a1ff](https://github.com/pluralsight/design-system/commit/d51a1ff202af96c362b2c472c74f951d39a911d5))
+* **util:** some stylesFor types ([2f577f4](https://github.com/pluralsight/design-system/commit/2f577f45cff9497548826f0e4447a1356f8199af))
+
+
+### BREAKING CHANGES
+
+* **util:** Remove props and prop-type utils; unused since TS
+conversion
+
+
+
+
+
 # [5.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@5.7.1...@pluralsight/ps-design-system-util@5.8.0) (2020-11-05)
 
 

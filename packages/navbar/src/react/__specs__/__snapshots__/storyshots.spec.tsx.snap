@@ -93,26 +93,17 @@ exports[`Storyshots Navbar desktop 1`] = `
       data-css-1qn6dtd=""
     >
       <span
-        className={
-          Object {
-            "data-css-ruxays": "",
-          }
-        }
+        data-css-ruxays=""
       >
         <div
           data-css-1ij5lym=""
         >
           <button
             data-css-16atklq=""
-            icon={<MenuIcon />}
             onClick={[Function]}
           >
             <span
-              className={
-                Object {
-                  "data-css-50rv4t": "",
-                }
-              }
+              data-css-50rv4t=""
             >
               <span
                 data-css-1009u4g=""
@@ -137,11 +128,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           </button>
         </div>
         <div
-          className={
-            Object {
-              "data-css-1pig4yn": "",
-            }
-          }
+          data-css-1pig4yn=""
         />
       </span>
     </div>
@@ -227,26 +214,17 @@ exports[`Storyshots Navbar desktop 1`] = `
       data-css-1qn6dtd=""
     >
       <span
-        className={
-          Object {
-            "data-css-ruxays": "",
-          }
-        }
+        data-css-ruxays=""
       >
         <div
           data-css-1ij5lym=""
         >
           <button
             data-css-16atklq=""
-            icon={<MenuIcon />}
             onClick={[Function]}
           >
             <span
-              className={
-                Object {
-                  "data-css-50rv4t": "",
-                }
-              }
+              data-css-50rv4t=""
             >
               <span
                 data-css-1009u4g=""
@@ -271,11 +249,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           </button>
         </div>
         <div
-          className={
-            Object {
-              "data-css-1pig4yn": "",
-            }
-          }
+          data-css-1pig4yn=""
         />
       </span>
     </div>
@@ -391,26 +365,17 @@ exports[`Storyshots Navbar desktop 1`] = `
       data-css-1qn6dtd=""
     >
       <span
-        className={
-          Object {
-            "data-css-ruxays": "",
-          }
-        }
+        data-css-ruxays=""
       >
         <div
           data-css-1ij5lym=""
         >
           <button
             data-css-16atklq=""
-            icon={<MenuIcon />}
             onClick={[Function]}
           >
             <span
-              className={
-                Object {
-                  "data-css-50rv4t": "",
-                }
-              }
+              data-css-50rv4t=""
             >
               <span
                 data-css-1009u4g=""
@@ -435,11 +400,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           </button>
         </div>
         <div
-          className={
-            Object {
-              "data-css-1pig4yn": "",
-            }
-          }
+          data-css-1pig4yn=""
         />
       </span>
     </div>
@@ -505,25 +466,16 @@ exports[`Storyshots Navbar desktop 1`] = `
         }
       >
         <span
-          className={
-            Object {
-              "data-css-ruxays": "",
-            }
-          }
+          data-css-ruxays=""
         >
           <div
             data-css-1ij5lym=""
           >
             <button
               data-css-16atklq=""
-              icon={<HomeIcon />}
             >
               <span
-                className={
-                  Object {
-                    "data-css-50rv4t": "",
-                  }
-                }
+                data-css-50rv4t=""
               >
                 <span
                   data-css-1o9ctb7=""
@@ -545,11 +497,7 @@ exports[`Storyshots Navbar desktop 1`] = `
                   </div>
                 </span>
                 <span
-                  className={
-                    Object {
-                      "data-css-1c3u483": "",
-                    }
-                  }
+                  data-css-1c3u483=""
                 >
                   Home
                 </span>
@@ -557,11 +505,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             </button>
           </div>
           <div
-            className={
-              Object {
-                "data-css-1pig4yn": "",
-              }
-            }
+            data-css-1pig4yn=""
           />
         </span>
       </div>
@@ -572,88 +516,69 @@ exports[`Storyshots Navbar desktop 1`] = `
           }
         }
       >
-        <span
-          className={
-            Object {
-              "data-css-ruxays": "",
-            }
-          }
-        >
-          <div
-            data-css-1ij5lym=""
+        <div>
+          <span
+            data-css-ruxays=""
           >
-            <button
-              data-css-8y1zv3=""
-              icon={<BrowseIcon />}
-              onClick={[Function]}
+            <div
+              data-css-1ij5lym=""
             >
-              <span
-                className={
-                  Object {
-                    "data-css-5vea0s": "",
-                  }
-                }
+              <button
+                data-css-8y1zv3=""
+                onClick={[Function]}
               >
                 <span
-                  data-css-1o9ctb7=""
+                  data-css-5vea0s=""
                 >
-                  <div
-                    data-css-7dab2f=""
+                  <span
+                    data-css-1o9ctb7=""
                   >
-                    <svg
-                      aria-label="browse icon"
-                      role="img"
-                      viewBox="0 0 24 24"
+                    <div
+                      data-css-7dab2f=""
                     >
-                      <path
-                        clipRule="evenodd"
-                        d="M3 9h18a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V10a1 1 0 011-1zm1 2v8h16v-8H4zm1-5h14a1 1 0 011 1v1H4V7a1 1 0 011-1zm3-3h8a1 1 0 011 1v1H7V4a1 1 0 011-1z"
-                        fillRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                </span>
-                <span
-                  className={
-                    Object {
-                      "data-css-1c3u483": "",
-                    }
-                  }
-                >
-                  Browse
-                </span>
-                <span
-                  className={
-                    Object {
-                      "data-css-1cbyl54": "",
-                    }
-                  }
-                >
-                  <div
-                    data-css-1gzzcm2=""
+                      <svg
+                        aria-label="browse icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M3 9h18a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V10a1 1 0 011-1zm1 2v8h16v-8H4zm1-5h14a1 1 0 011 1v1H4V7a1 1 0 011-1zm3-3h8a1 1 0 011 1v1H7V4a1 1 0 011-1z"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </span>
+                  <span
+                    data-css-1c3u483=""
                   >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
+                    Browse
+                  </span>
+                  <span
+                    data-css-1cbyl54=""
+                  >
+                    <div
+                      data-css-1gzzcm2=""
                     >
-                      <path
-                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                      />
-                    </svg>
-                  </div>
+                      <svg
+                        aria-label="caret down icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                        />
+                      </svg>
+                    </div>
+                  </span>
                 </span>
-              </span>
-            </button>
-          </div>
-          <div
-            className={
-              Object {
-                "data-css-1qafynz": "",
-              }
-            }
-          />
-        </span>
+              </button>
+            </div>
+            <div
+              data-css-1qafynz=""
+            />
+          </span>
+        </div>
         <div
           style={
             Object {
@@ -675,25 +600,16 @@ exports[`Storyshots Navbar desktop 1`] = `
         }
       >
         <span
-          className={
-            Object {
-              "data-css-ruxays": "",
-            }
-          }
+          data-css-ruxays=""
         >
           <div
             data-css-1ij5lym=""
           >
             <button
               data-css-16atklq=""
-              icon={<NotificationsIcon />}
             >
               <span
-                className={
-                  Object {
-                    "data-css-50rv4t": "",
-                  }
-                }
+                data-css-50rv4t=""
               >
                 <span
                   data-css-1009u4g=""
@@ -718,11 +634,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             </button>
           </div>
           <div
-            className={
-              Object {
-                "data-css-1pig4yn": "",
-              }
-            }
+            data-css-1pig4yn=""
           />
         </span>
       </div>
@@ -734,25 +646,16 @@ exports[`Storyshots Navbar desktop 1`] = `
         }
       >
         <span
-          className={
-            Object {
-              "data-css-ruxays": "",
-            }
-          }
+          data-css-ruxays=""
         >
           <div
             data-css-1ij5lym=""
           >
             <button
               data-css-16atklq=""
-              icon={<AccountIcon />}
             >
               <span
-                className={
-                  Object {
-                    "data-css-50rv4t": "",
-                  }
-                }
+                data-css-50rv4t=""
               >
                 <span
                   data-css-1009u4g=""
@@ -775,11 +678,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             </button>
           </div>
           <div
-            className={
-              Object {
-                "data-css-1pig4yn": "",
-              }
-            }
+            data-css-1pig4yn=""
           />
         </span>
       </div>
@@ -790,7 +689,6 @@ exports[`Storyshots Navbar desktop 1`] = `
       >
         <button
           data-css-6uwj3a=""
-          name="Jake"
           onClick={[Function]}
         >
           <div
@@ -818,7 +716,9 @@ exports[`Storyshots Navbar desktop 1`] = `
             </div>
             <div
               data-css-1085xn4=""
-            />
+            >
+              Accenture
+            </div>
           </div>
         </button>
       </div>

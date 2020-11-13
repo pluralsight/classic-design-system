@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@1.2.8...@pluralsight/ps-design-system-scrollable@2.0.0) (2020-11-12)
+
+
+### Code Refactoring
+
+* **scrollable:** tsc convert; use renderProp for content render ([fabf9cc](https://github.com/pluralsight/design-system/commit/fabf9cc77dc7577106a2e02452df2cc9440fb53d))
+
+
+### BREAKING CHANGES
+
+* **scrollable:** replace contentAs with renderProp in order to handle
+static typing
+
+
+
+
+
 ## [1.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@1.2.7...@pluralsight/ps-design-system-scrollable@1.2.8) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-scrollable

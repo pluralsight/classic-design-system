@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
 
-// @ts-ignore: TODO: update typings
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.2.8...@pluralsight/ps-design-system-tab@16.0.0) (2020-11-12)
+
+
+### Bug Fixes
+
+* **tab:** avoid setting nulls as active tab listitems ([b4b0ac6](https://github.com/pluralsight/design-system/commit/b4b0ac6b2f063c57648251da275116845be23e0c)), closes [#1350](https://github.com/pluralsight/design-system/issues/1350)
+
+
+### Code Refactoring
+
+* **tab:** remove old index.d.ts ([dbc9fe8](https://github.com/pluralsight/design-system/commit/dbc9fe85d891dbd384f6b20a55bebb22e67121ec))
+
+
+### BREAKING CHANGES
+
+* **tab:** Old index.d.ts replaced with full TS conversion, some
+types differing slightly
+
+
+
+
+
 ## [15.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@15.2.7...@pluralsight/ps-design-system-tab@15.2.8) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab
