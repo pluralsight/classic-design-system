@@ -30,7 +30,7 @@ describe('Button', () => {
 
   it('renders a name attribute onto button', () => {
     const { getByTestId } = render(
-      <Button data-testid="undertest" href="/" name="someVal">
+      <Button data-testid="undertest" name="someVal">
         test
       </Button>
     )
@@ -40,7 +40,7 @@ describe('Button', () => {
   })
 
   it('forwards refs', () => {
-    const ref = React.createRef<HTMLAnchorElement | HTMLButtonElement>()
+    const ref = React.createRef<HTMLButtonElement>()
     render(<Button ref={ref}>with ref</Button>)
     expect(ref.current).not.toBeNull()
   })
