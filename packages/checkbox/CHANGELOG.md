@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.9...@pluralsight/ps-design-system-checkbox@6.2.10) (2020-11-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
 ## [6.2.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.8...@pluralsight/ps-design-system-checkbox@6.2.9) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

@@ -116,7 +116,9 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
                 </div>
                 <div
                   data-css-1085xn4=""
-                />
+                >
+                  Accenture
+                </div>
               </div>
             </div>
           </div>
@@ -320,7 +322,9 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
                 </div>
                 <div
                   data-css-1085xn4=""
-                />
+                >
+                  Accenture
+                </div>
               </div>
             </div>
           </div>
@@ -566,7 +570,9 @@ exports[`Storyshots AppFrame short content 1`] = `
                 </div>
                 <div
                   data-css-1085xn4=""
-                />
+                >
+                  Accenture
+                </div>
               </div>
             </div>
           </div>
@@ -807,26 +813,17 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
           data-css-1qn6dtd=""
         >
           <span
-            className={
-              Object {
-                "data-css-ruxays": "",
-              }
-            }
+            data-css-ruxays=""
           >
             <div
               data-css-1ij5lym=""
             >
               <button
                 data-css-16atklq=""
-                icon={<MenuIcon />}
                 onClick={[Function]}
               >
                 <span
-                  className={
-                    Object {
-                      "data-css-50rv4t": "",
-                    }
-                  }
+                  data-css-50rv4t=""
                 >
                   <span
                     data-css-1009u4g=""
@@ -851,11 +848,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
               </button>
             </div>
             <div
-              className={
-                Object {
-                  "data-css-1pig4yn": "",
-                }
-              }
+              data-css-1pig4yn=""
             />
           </span>
         </div>
@@ -946,7 +939,9 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
                 </div>
                 <div
                   data-css-1085xn4=""
-                />
+                >
+                  Accenture
+                </div>
               </div>
             </div>
           </div>
@@ -1242,26 +1237,17 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
           data-css-1qn6dtd=""
         >
           <span
-            className={
-              Object {
-                "data-css-ruxays": "",
-              }
-            }
+            data-css-ruxays=""
           >
             <div
               data-css-1ij5lym=""
             >
               <button
                 data-css-16atklq=""
-                icon={<MenuIcon />}
                 onClick={[Function]}
               >
                 <span
-                  className={
-                    Object {
-                      "data-css-50rv4t": "",
-                    }
-                  }
+                  data-css-50rv4t=""
                 >
                   <span
                     data-css-1009u4g=""
@@ -1286,11 +1272,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
               </button>
             </div>
             <div
-              className={
-                Object {
-                  "data-css-1pig4yn": "",
-                }
-              }
+              data-css-1pig4yn=""
             />
           </span>
         </div>
@@ -1381,7 +1363,9 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
                 </div>
                 <div
                   data-css-1085xn4=""
-                />
+                >
+                  Accenture
+                </div>
               </div>
             </div>
           </div>
@@ -1677,26 +1661,17 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
           data-css-1qn6dtd=""
         >
           <span
-            className={
-              Object {
-                "data-css-ruxays": "",
-              }
-            }
+            data-css-ruxays=""
           >
             <div
               data-css-1ij5lym=""
             >
               <button
                 data-css-16atklq=""
-                icon={<MenuIcon />}
                 onClick={[Function]}
               >
                 <span
-                  className={
-                    Object {
-                      "data-css-50rv4t": "",
-                    }
-                  }
+                  data-css-50rv4t=""
                 >
                   <span
                     data-css-1009u4g=""
@@ -1721,11 +1696,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
               </button>
             </div>
             <div
-              className={
-                Object {
-                  "data-css-1pig4yn": "",
-                }
-              }
+              data-css-1pig4yn=""
             />
           </span>
         </div>
@@ -1816,7 +1787,9 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
                 </div>
                 <div
                   data-css-1085xn4=""
-                />
+                >
+                  Accenture
+                </div>
               </div>
             </div>
           </div>

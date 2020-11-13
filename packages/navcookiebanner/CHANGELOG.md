@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.3.8...@pluralsight/ps-design-system-navcookiebanner@1.4.0) (2020-11-12)
+
+
+### Features
+
+* **navcookiebanner:** convert to typescript ([bd38d67](https://github.com/pluralsight/design-system/commit/bd38d67ec7c112ce186ea1f3dbadc7578c079be9))
+
+
+
+
+
 ## [1.3.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.3.7...@pluralsight/ps-design-system-navcookiebanner@1.3.8) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
