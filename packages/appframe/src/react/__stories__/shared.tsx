@@ -9,18 +9,13 @@ import {
 import {
   PageHeadingLayout,
   PageWidthLayout
-  // @ts-ignore: TODO: update typings
 } from '@pluralsight/ps-design-system-layout'
 
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 
-// @ts-ignore: TODO: update typings
 import NavBar from '@pluralsight/ps-design-system-navbar'
-// @ts-ignore: TODO: update typings
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
-// @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
-// @ts-ignore: TODO: update typings
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import * as Text from '@pluralsight/ps-design-system-text'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
@@ -346,7 +341,7 @@ export const TopNav: React.FC<TopNavProps> = props => {
           </>
         }
         onMobileMenuClick={onMobileMenuClick}
-        user={<NavUser name="Jake" planName="Accenture" />}
+        user={<NavUser name="Jake" meta="Accenture" />}
       />
     </div>
   )

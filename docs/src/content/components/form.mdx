@@ -9,12 +9,11 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Banner from '@pluralsight/ps-design-system-banner'
 import {
-  FormFocusable,
-  Comp,
+  ControlExample,
   SwitchExample,
   TagExample,
   CheckboxExample
-} from './form-controls.tsx'
+} from './form-controls'
 
 # Form
 
@@ -334,40 +333,38 @@ const Comp = () => (
 export default Comp
 ```
 
-## Form Controls
+## Form controls
 
 Each one of these controls is a separate package. They are mean to be used inside the `Form` layout component. Find links to the docs below
 
 <FormFocusable>
-  <Comp
+  <ControlExample
     title="Text Input"
     href="/components/textinput"
     desc="For short textual input."
   >
     <TextInput label="First name" placeholder="What's your name?" />
-  </Comp>
+  </ControlExample>
 
+  <ControlExample
+    title="Checkbox"
+    href="/components/checkbox"
+    desc="For multiple selection."
+  >
+    <CheckboxExample />
+  </ControlExample>
 
-{' '}
-<Comp
-  title="Checkbox"
-  href="/components/checkbox"
-  desc="For multiple selection."
->
-  <CheckboxExample />
-</Comp>
-<Comp title="Switch" href="/components/switch" desc="For on/off selections.">
-  <SwitchExample />
-</Comp>
+  <ControlExample title="Switch" href="/components/switch" desc="For on/off selections.">
+    <SwitchExample />
+  </ControlExample>
 
-{' '}
-<Comp title="DatePicker" href="/components/datepicker" desc="For dates.">
-  <DatePicker label="Birthday" />
-</Comp>
+  <ControlExample title="DatePicker" href="/components/datepicker" desc="For dates.">
+    <DatePicker label="Birthday" />
+  </ControlExample>
 
-  <Comp title="Tag" href="/components/tag" desc="For dynamic lists.">
+  <ControlExample title="Tag" href="/components/tag" desc="For dynamic lists.">
     <TagExample />
-  </Comp>
+  </ControlExample>
 </FormFocusable>
 
 
@@ -529,3 +526,31 @@ Use `Form.Divider` to group similar fields together into logical groups for user
   packageName="form"
   version={props.version}
 />
+
+### Form.VerticalLayout
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="ReactNode"
+    desc="form elements that will be aligned and spaced"
+    required
+  />
+</TypesTable>
+
+### Form.ButtonRow
+
+<TypesTable>
+  <TypesProp
+    name="align"
+    type={<TypesEnum enum={Form.ButtonRow.aligns} />}
+    desc="horizontal alignment (from Form.ButtonRow.aligns)"
+    default="left"
+  />
+  <TypesProp
+    name="children"
+    type="ReactNode"
+    desc="buttons to be aligned"
+    required
+  />
+</TypesTable>

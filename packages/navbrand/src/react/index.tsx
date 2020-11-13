@@ -1,5 +1,5 @@
 import Halo from '@pluralsight/ps-design-system-halo'
-import { PropsOf, RefFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import { css, media } from 'glamor'
 import React, { MouseEventHandler, ReactNode } from 'react'
 
@@ -36,15 +36,15 @@ interface BaseNavBrandProps {
   logo?: ReactNode
   wordmark?: ReactNode
 }
-interface AnchorProps extends BaseNavBrandProps, PropsOf<'a'> {
+interface AnchorProps extends BaseNavBrandProps, HTMLPropsFor<'a'> {
   href: string
   onClick?: MouseEventHandler<HTMLAnchorElement>
 }
-interface ButtonProps extends BaseNavBrandProps, PropsOf<'button'> {
+interface ButtonProps extends BaseNavBrandProps, HTMLPropsFor<'button'> {
   href?: undefined
   onClick: MouseEventHandler<HTMLButtonElement>
 }
-interface DivProps extends BaseNavBrandProps, PropsOf<'div'> {
+interface DivProps extends BaseNavBrandProps, HTMLPropsFor<'div'> {
   href?: undefined
   onClick?: MouseEventHandler<HTMLDivElement>
 }
@@ -73,20 +73,20 @@ const NavBrand = React.forwardRef<NavBrandElement, NavBrandProps>(
       isAnchor ? (
         <a
           ref={ref as RefFor<'a'>}
-          {...(rest as PropsOf<'a'>)}
+          {...(rest as HTMLPropsFor<'a'>)}
           {...wrapperProps}
         />
       ) : isButton ? (
         <button
           ref={ref as RefFor<'button'>}
           {...wrapperProps}
-          {...(rest as PropsOf<'button'>)}
+          {...(rest as HTMLPropsFor<'button'>)}
         />
       ) : (
         <div
           ref={ref as RefFor<'div'>}
           {...wrapperProps}
-          {...(rest as PropsOf<'div'>)}
+          {...(rest as HTMLPropsFor<'div'>)}
         />
       )
 

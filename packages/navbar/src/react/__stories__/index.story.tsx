@@ -7,11 +7,8 @@ import {
   NotificationsIcon
 } from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
-// @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
-// @ts-ignore: TODO: update typings
 import NavUser from '@pluralsight/ps-design-system-navuser'
-// @ts-ignore: TODO: update typings
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
@@ -22,6 +19,7 @@ storiesOf('Navbar', module).add('desktop', () => {
   function Story() {
     const [isBrowseMenuOpen, setBrowseMenuOpen] = React.useState(false)
     const [isProfileMenuOpen, setProfileMenuOpen] = React.useState(false)
+
     return (
       <Grid>
         <NavBar
@@ -56,6 +54,7 @@ storiesOf('Navbar', module).add('desktop', () => {
               >
                 <NavItem icon={<HomeIcon />}>Home</NavItem>
               </div>
+
               <div
                 style={{
                   display: 'inline-block'
@@ -69,14 +68,21 @@ storiesOf('Navbar', module).add('desktop', () => {
                   }
                   when={isBrowseMenuOpen}
                 >
-                  <NavItem
-                    icon={<BrowseIcon />}
-                    selected
-                    menu
-                    onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
-                  >
-                    Browse
-                  </NavItem>
+                  <div>
+                    <NavItem
+                      icon={<BrowseIcon />}
+                      selected
+                      menu
+                      renderContainer={contentProps => (
+                        <button
+                          {...contentProps}
+                          onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
+                        />
+                      )}
+                    >
+                      Browse
+                    </NavItem>
+                  </div>
                 </BelowLeft>
               </div>
             </>
@@ -93,7 +99,7 @@ storiesOf('Navbar', module).add('desktop', () => {
             >
               <NavUser
                 name="Jake"
-                planName="Accenture"
+                meta="Accenture"
                 onClick={() => setProfileMenuOpen(!isProfileMenuOpen)}
               />
             </BelowRight>
