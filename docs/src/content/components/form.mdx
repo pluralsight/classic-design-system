@@ -526,3 +526,31 @@ Use `Form.Divider` to group similar fields together into logical groups for user
   packageName="form"
   version={props.version}
 />
+
+### Form.VerticalLayout
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="ReactNode"
+    desc="form elements that will be aligned and spaced"
+    required
+  />
+</TypesTable>
+
+### Form.ButtonRow
+
+<TypesTable>
+  <TypesProp
+    name="align"
+    type={<TypesEnum enum={Form.ButtonRow.aligns} />}
+    desc="horizontal alignment (from Form.ButtonRow.aligns)"
+    default="left"
+  />
+  <TypesProp
+    name="children"
+    type="ReactNode"
+    desc="buttons to be aligned"
+    required
+  />
+</TypesTable>
