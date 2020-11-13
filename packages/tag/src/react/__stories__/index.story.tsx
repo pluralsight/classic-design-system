@@ -3,7 +3,7 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Tag, { TagProps } from '..'
+import Tag from '..'
 
 const sizeStory = storiesOf('size', module)
 Object.values(Tag.sizes).forEach(size =>
@@ -19,12 +19,12 @@ Object.values(Tag.sizes).forEach(size =>
   ))
 )
 
-const PressedTag: React.FC<TagProps> = props => {
+const PressedTag = React.forwardRef((props, _ref) => {
   const [pressed, setPressed] = useState(true)
   return (
     <Tag isPressed={pressed} {...props} onClick={() => setPressed(!pressed)} />
   )
-}
+}) as typeof Tag
 
 storiesOf('actions', module)
   .add('link', () => <Tag href="https://duckduckgo.com/">As a link</Tag>)

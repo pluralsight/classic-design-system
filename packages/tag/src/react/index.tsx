@@ -1,12 +1,11 @@
-import { compose, css } from 'glamor'
-import React, { HTMLAttributes, forwardRef } from 'react'
-
 import Halo from '@pluralsight/ps-design-system-halo'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
+import { compose, css } from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -53,9 +52,6 @@ const styles = {
   }
 }
 
-export interface TagStatics {
-  sizes: typeof vars.sizes
-}
 export interface BaseTagProps {
   error?: boolean
   icon?: React.ReactElement
@@ -69,73 +65,74 @@ interface AnchorProps extends BaseTagProps, PropsOf<'a'> {
 interface DivProps extends BaseTagProps, PropsOf<'div'> {
   href?: undefined
 }
-export type TagElement = HTMLAnchorElement | HTMLDivElement
-export type TagProps = AnchorProps | DivProps
-export type TagComponent = React.ForwardRefExoticComponent<TagProps> &
-  TagStatics & {
-    (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
-    (props: DivProps, ref?: RefFor<'div'>): JSX.Element
-  }
 
-const Tag = forwardRef<TagElement, TagProps>(
-  (
-    {
-      children,
-      error = false,
-      icon,
-      isPressed = false,
-      href,
-      size = vars.sizes.medium,
-      ...props
-    },
-    ref
-  ) => {
-    const themeName = useTheme()
+type TagElement = HTMLAnchorElement | HTMLDivElement
+type TagProps = AnchorProps | DivProps
+type TagComponent = React.ForwardRefExoticComponent<unknown> & {
+  (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
+  (props: DivProps, ref?: RefFor<'div'>): JSX.Element
+}
 
-    const Wrapper: React.FC = wrapperProps =>
-      href ? (
-        <a
-          ref={ref as RefFor<'a'>}
-          href={href}
-          {...wrapperProps}
-          {...(props as PropsOf<'a'>)}
-        />
-      ) : (
-        <div
-          ref={ref as RefFor<'div'>}
-          {...wrapperProps}
-          {...(props as PropsOf<'div'>)}
-        />
-      )
+export interface TagStatics {
+  sizes: typeof vars.sizes
+}
 
-    return (
-      <Halo error={error} shape={Halo.shapes.pill} inline>
-        <Wrapper
-          {...(isPressed && { 'aria-pressed': true })}
-          {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
-          {...styles.tag({
-            themeName,
-            clickable: Boolean(props.onClick || href),
-            icon: Boolean(icon),
-            isPressed,
-            size
-          })}
-        >
-          <Label icon={Boolean(icon)}>{children}</Label>
-          {renderIcon(icon, size)}
-        </Wrapper>
-      </Halo>
+const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
+  const {
+    children,
+    error = false,
+    icon,
+    isPressed = false,
+    href,
+    size = vars.sizes.medium,
+    ...rest
+  } = props
+
+  const isAnchor = 'href' in props
+  const themeName = useTheme()
+
+  const Wrapper: React.FC = wrapperProps =>
+    isAnchor ? (
+      <a
+        href={href}
+        ref={ref as RefFor<'a'>}
+        {...(rest as PropsOf<'a'>)}
+        {...wrapperProps}
+      />
+    ) : (
+      <div
+        ref={ref as RefFor<'div'>}
+        {...(rest as PropsOf<'div'>)}
+        {...wrapperProps}
+      />
     )
-  }
-) as TagComponent
+
+  return (
+    <Halo error={error} shape={Halo.shapes.pill} inline>
+      <Wrapper
+        {...(isPressed && { 'aria-pressed': true })}
+        {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
+        {...styles.tag({
+          themeName,
+          clickable: Boolean(props.onClick || href),
+          icon: Boolean(icon),
+          isPressed,
+          size
+        })}
+      >
+        <Label icon={Boolean(icon)}>{children}</Label>
+        {renderIcon(icon, size)}
+      </Wrapper>
+    </Halo>
+  )
+}) as TagComponent & TagStatics
 
 Tag.displayName = 'Tag'
 Tag.sizes = vars.sizes
 
-interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
+interface LabelProps extends PropsOf<'span'> {
   icon: boolean
 }
-
 const Label: React.FC<LabelProps> = ({ icon, ...props }) => {
   const themeName = useTheme()
 
@@ -164,5 +161,4 @@ const renderIcon = (
 }
 
 export const sizes = vars.sizes
-
 export default Tag
