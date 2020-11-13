@@ -186,7 +186,8 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       }
 
       const newValidDate = areValidParts(year, month, day)
-        ? convertPartsToDate(year!, month!, day!)
+        ? /* eslint-ignore-next-line @typescript-eslint/no-unnecessary-type-assertion */
+          convertPartsToDate(year!, month!, day!)
         : undefined
       if (typeof onSubBlur === 'function') {
         onSubBlur(evt, newValidDate)
