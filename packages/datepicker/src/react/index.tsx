@@ -1,3 +1,4 @@
+/* eslint-ignore @typescript-eslint/no-unnecessary-type-assertion */
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
@@ -186,8 +187,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       }
 
       const newValidDate = areValidParts(year, month, day)
-        ? /* eslint-ignore-next-line @typescript-eslint/no-unnecessary-type-assertion */
-          convertPartsToDate(year!, month!, day!)
+        ? convertPartsToDate(year!, month!, day!)
         : undefined
       if (typeof onSubBlur === 'function') {
         onSubBlur(evt, newValidDate)
