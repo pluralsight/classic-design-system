@@ -39,8 +39,8 @@
     "publish:all": "yarn build && lerna publish --ignore-scripts --ignore-prepublish",
     "publish:all:beta": "yarn publish:all --npm-tag=beta",
     "start": "yarn docs",
-    "test": "jest",
-    "test:ci": "jest --ci"
+    "test": "env TZ='UTC' jest",
+    "test:ci": "env TZ='UTC' jest --ci"
   },
   "husky": {
     "hooks": {
@@ -151,6 +151,7 @@
     "link-parent-bin": "^1.0.2",
     "lint-staged": "^10.2.6",
     "madge": "^3.11.0",
+    "mockdate": "^3.0.2",
     "npm-run-all": "^4.1.5",
     "octopus-deploy": "^6.0.0",
     "plop": "^2.7.1",
