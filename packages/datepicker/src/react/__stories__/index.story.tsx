@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import DatePicker from '..'
+import { formatISO8601 } from '../../js'
 
 const StateDemo: React.FC<{ value?: Date }> = props => {
   const [value, setValue] = React.useState(props.value)
@@ -19,7 +20,7 @@ const StateDemo: React.FC<{ value?: Date }> = props => {
   return (
     <div>
       <div style={{ color: core.colorsTextIcon.highOnDark }}>
-        Selected: {value?.toString()}
+        Selected: {value ? formatISO8601(value) : '<none>'}
       </div>
 
       <DatePicker value={value} onSelect={handleDatePickerSelect} />
@@ -79,7 +80,7 @@ storiesOf('value', module)
       return (
         <div>
           <div style={{ color: core.colorsTextIcon.highOnDark }}>
-            Sending in: {value?.toString()}
+            Sending in: {value ? formatISO8601(value) : '<none>'}
           </div>
 
           <DatePicker value={value} />

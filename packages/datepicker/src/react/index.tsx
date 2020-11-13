@@ -21,7 +21,7 @@ import React, {
 
 import { Calendar, Overlay } from './calendar'
 import stylesheet from '../css'
-import { convertPartsToDate, areValidParts } from '../js'
+import { convertPartsToDate, formatISO8601, areValidParts } from '../js'
 import { SubField, SubFieldDivider } from './sub-field'
 import * as vars from '../vars'
 
@@ -258,7 +258,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
               readOnly
               disabled={disabled}
               ref={ref}
-              value={value ? value.toUTCString() : undefined}
+              value={value ? formatISO8601(value) : undefined}
             />
 
             <button

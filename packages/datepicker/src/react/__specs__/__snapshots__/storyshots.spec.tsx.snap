@@ -554,7 +554,7 @@ exports[`Storyshots disabled compare 1`] = `
           disabled={true}
           readOnly={true}
           tabIndex={-1}
-          value="Sun, 07 Dec 1941 07:00:00 GMT"
+          value="1941-12-7"
         />
         <button
           data-css-3txxwd=""
@@ -1606,7 +1606,7 @@ exports[`Storyshots value controlled value changes 1`] = `
     }
   >
     Sending in: 
-    Sun Dec 07 1941 00:00:00 GMT-0700 (Mountain Standard Time)
+    1941-12-7
   </div>
   <label
     data-css-w0yocm=""
@@ -1671,7 +1671,7 @@ exports[`Storyshots value controlled value changes 1`] = `
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
-          value="Sun, 07 Dec 1941 07:00:00 GMT"
+          value="1941-12-7"
         />
         <button
           data-css-3txxwd=""
@@ -1761,7 +1761,7 @@ exports[`Storyshots value date 1`] = `
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
-        value="Sun, 07 Dec 1941 07:00:00 GMT"
+        value="1941-12-7"
       />
       <button
         data-css-3txxwd=""
@@ -1796,6 +1796,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
     }
   >
     Selected: 
+    &lt;none&gt;
   </div>
   <label
     data-css-w0yocm=""
@@ -1892,7 +1893,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
     }
   >
     Selected: 
-    Wed Mar 15 1995 00:00:00 GMT-0700 (Mountain Standard Time)
+    1995-3-15
   </div>
   <label
     data-css-w0yocm=""
@@ -1957,7 +1958,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
-          value="Wed, 15 Mar 1995 07:00:00 GMT"
+          value="1995-3-15"
         />
         <button
           data-css-3txxwd=""
@@ -2049,7 +2050,7 @@ exports[`Storyshots whitelist name 1`] = `
         onChange={[Function]}
         readOnly={true}
         tabIndex={-1}
-        value="Sun, 02 Apr 1944 06:00:00 GMT"
+        value="1944-4-2"
       />
       <button
         data-css-3txxwd=""

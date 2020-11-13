@@ -85,3 +85,9 @@ describe('#convertPartsToDate', () => {
     )
   })
 })
+
+describe('#formatISO8601', () => {
+  test('23 Dec 1805', () => {
+    expect(subject.formatISO8601(new Date(1805, 11, 23))).toBe('1805-12-23')
+  })
+})

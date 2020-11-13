@@ -62,3 +62,7 @@ export const convertPartsToDate = (
 ): Date => {
   return new Date(yyyy, mm - 1, dd)
 }
+
+export const formatISO8601 = (date: Date): string => {
+  return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
+}
