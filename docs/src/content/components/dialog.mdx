@@ -168,7 +168,7 @@ When a modal Dialog (or non-modal Dialog) are shown on the screen, it will take 
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
-import { colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
+import { colorsBackgroundLight, layout } from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -202,6 +202,17 @@ function Example() {
           </div>
         </Dialog>
       )}
+
+      <style jsx>{`
+        .buttons {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: ${layout.spacingLarge};
+        }
+        .buttons > button:not(:last-child) {
+          margin-right: ${layout.spacingMedium};
+        }
+      `}</style>
     </>
   )
 }
