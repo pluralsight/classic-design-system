@@ -9,7 +9,11 @@ import React from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
-import { ValueOf, PropsOf, RefFor } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  RefFor,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 
 const styles = {
   tag: ({
@@ -59,10 +63,10 @@ export interface BaseTagProps {
   size?: ValueOf<typeof vars.sizes>
 }
 
-interface AnchorProps extends BaseTagProps, PropsOf<'a'> {
+interface AnchorProps extends BaseTagProps, HTMLPropsFor<'a'> {
   href: string
 }
-interface DivProps extends BaseTagProps, PropsOf<'div'> {
+interface DivProps extends BaseTagProps, HTMLPropsFor<'div'> {
   href?: undefined
 }
 
@@ -96,13 +100,13 @@ const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
       <a
         href={href}
         ref={ref as RefFor<'a'>}
-        {...(rest as PropsOf<'a'>)}
+        {...(rest as HTMLPropsFor<'a'>)}
         {...wrapperProps}
       />
     ) : (
       <div
         ref={ref as RefFor<'div'>}
-        {...(rest as PropsOf<'div'>)}
+        {...(rest as HTMLPropsFor<'div'>)}
         {...wrapperProps}
       />
     )
@@ -130,7 +134,7 @@ const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
 Tag.displayName = 'Tag'
 Tag.sizes = vars.sizes
 
-interface LabelProps extends PropsOf<'span'> {
+interface LabelProps extends HTMLPropsFor<'span'> {
   icon: boolean
 }
 const Label: React.FC<LabelProps> = ({ icon, ...props }) => {
