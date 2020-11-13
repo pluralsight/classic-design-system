@@ -1,20 +1,20 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import StarRating from '../index.js'
+import StarRating from '..'
 
 describe('StarRating', () => {
-  function collectStarNodes(container) {
+  function collectStarNodes(container: HTMLElement) {
     const nodeList = container.querySelectorAll('span, button')
 
-    return [...nodeList].filter(node => {
+    return [...((nodeList as unknown) as Element[])].filter(node => {
       const label = node.getAttribute('title')
       return label && label.includes('Rate')
     })
   }
 
   it('forwards refs', () => {
-    const ref = React.createRef()
+    const ref = React.createRef<HTMLDivElement>()
     render(<StarRating ref={ref} />)
 
     expect(ref.current).not.toBeNull()
