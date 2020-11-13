@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.4.8...@pluralsight/ps-design-system-navitem@1.5.0) (2020-11-12)
+
+
+### Bug Fixes
+
+* **navitem:** css for hor/vert options ([1fd680f](https://github.com/pluralsight/design-system/commit/1fd680f6a29bda64821512004aee1c5abee0df49))
+
+
+### Features
+
+* **navitem:** context value changes and typing updates ([41f9002](https://github.com/pluralsight/design-system/commit/41f90026559a511b06d2bfc5292660a019dc03e0))
+
+
+
+
+
 ## [1.4.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.4.7...@pluralsight/ps-design-system-navitem@1.4.8) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem

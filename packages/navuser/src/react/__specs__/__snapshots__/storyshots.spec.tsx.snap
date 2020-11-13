@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NavUser states 1`] = `
+<div
+  style={
+    Object {
+      "display": "grid",
+      "gap": "32px",
+      "gridTemplateColumns": "repeat(3, auto)",
+      "justifyItems": "center",
+    }
+  }
+>
+  <div
+    data-css-1ij5lym=""
+  >
+    <div
+      data-css-91smc8=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-79vgce=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+        />
+        <div
+          data-css-1h1qs66=""
+          style={
+            Object {
+              "backgroundColor": "#D1487B",
+            }
+          }
+        >
+          :)
+        </div>
+      </div>
+      <div
+        data-css-1mmc9g1=""
+      >
+        <div
+          data-css-6flzpu=""
+        />
+        <div
+          data-css-1085xn4=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1ij5lym=""
+  >
+    <div
+      data-css-91smc8=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-79vgce=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+        />
+        <div
+          aria-label="Jake Trent"
+          data-css-1h1qs66=""
+          style={
+            Object {
+              "backgroundColor": "#7048C6",
+            }
+          }
+        >
+          J
+        </div>
+      </div>
+      <div
+        data-css-1mmc9g1=""
+      >
+        <div
+          data-css-6flzpu=""
+        >
+          Jake Trent
+        </div>
+        <div
+          data-css-1085xn4=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1ij5lym=""
+  >
+    <div
+      data-css-91smc8=""
+    >
+      <div
+        aria-hidden={true}
+        data-css-79vgce=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+        />
+        <div
+          aria-label="Jake Trent"
+          data-css-1h1qs66=""
+          style={
+            Object {
+              "backgroundColor": "#7048C6",
+            }
+          }
+        >
+          J
+        </div>
+      </div>
+      <div
+        data-css-1mmc9g1=""
+      >
+        <div
+          data-css-6flzpu=""
+        >
+          Jake Trent
+        </div>
+        <div
+          data-css-1085xn4=""
+        >
+          Accenture
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1ij5lym=""
+  >
+    <a
+      data-css-6uwj3a=""
+      href="https://jaketrent.com"
+    >
+      <div
+        aria-hidden={true}
+        data-css-79vgce=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+        />
+        <div
+          aria-label="Jake Trent"
+          data-css-1h1qs66=""
+          style={
+            Object {
+              "backgroundColor": "#7048C6",
+            }
+          }
+        >
+          J
+        </div>
+      </div>
+      <div
+        data-css-1mmc9g1=""
+      >
+        <div
+          data-css-6flzpu=""
+        >
+          Jake Trent
+        </div>
+        <div
+          data-css-1085xn4=""
+        >
+          Accenture
+        </div>
+      </div>
+    </a>
+  </div>
+  <div
+    data-css-1ij5lym=""
+  >
+    <button
+      data-css-6uwj3a=""
+      onClick={[Function]}
+    >
+      <div
+        aria-hidden={true}
+        data-css-79vgce=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+        />
+        <div
+          aria-label="Jake Trent Name That is Long"
+          data-css-1h1qs66=""
+          style={
+            Object {
+              "backgroundColor": "#0074AB",
+            }
+          }
+        >
+          J
+        </div>
+      </div>
+      <div
+        data-css-1mmc9g1=""
+      >
+        <div
+          data-css-6flzpu=""
+        >
+          Jake Trent Name That is Long
+        </div>
+        <div
+          data-css-1085xn4=""
+        >
+          Accenture Company Name That is Long
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+`;

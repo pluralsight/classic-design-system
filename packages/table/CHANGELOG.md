@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@9.1.9...@pluralsight/ps-design-system-table@9.1.10) (2020-11-12)
+
+
+### Bug Fixes
+
+* **table:** missing prop ([32e30f2](https://github.com/pluralsight/design-system/commit/32e30f297b06853e8d517b5343e5f8074cd12c38))
+
+
+
+
+
 ## [9.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@9.1.8...@pluralsight/ps-design-system-table@9.1.9) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
