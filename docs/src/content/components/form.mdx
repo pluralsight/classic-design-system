@@ -9,12 +9,11 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Banner from '@pluralsight/ps-design-system-banner'
 import {
-  FormFocusable,
-  Comp,
+  ControlExample,
   SwitchExample,
   TagExample,
   CheckboxExample
-} from './form-controls.tsx'
+} from './form-controls'
 
 # Form
 
@@ -339,33 +338,33 @@ export default Comp
 Each one of these controls is a separate package. They are mean to be used inside the `Form` layout component. Find links to the docs below
 
 <FormFocusable>
-  <Comp
+  <ControlExample
     title="Text Input"
     href="/components/textinput"
     desc="For short textual input."
   >
     <TextInput label="First name" placeholder="What's your name?" />
-  </Comp>
+  </ControlExample>
 
-  <Comp
+  <ControlExample
     title="Checkbox"
     href="/components/checkbox"
     desc="For multiple selection."
   >
     <CheckboxExample />
-  </Comp>
+  </ControlExample>
 
-  <Comp title="Switch" href="/components/switch" desc="For on/off selections.">
+  <ControlExample title="Switch" href="/components/switch" desc="For on/off selections.">
     <SwitchExample />
-  </Comp>
+  </ControlExample>
 
-  <Comp title="DatePicker" href="/components/datepicker" desc="For dates.">
+  <ControlExample title="DatePicker" href="/components/datepicker" desc="For dates.">
     <DatePicker label="Birthday" />
-  </Comp>
+  </ControlExample>
 
-  <Comp title="Tag" href="/components/tag" desc="For dynamic lists.">
+  <ControlExample title="Tag" href="/components/tag" desc="For dynamic lists.">
     <TagExample />
-  </Comp>
+  </ControlExample>
 </FormFocusable>
 
 
