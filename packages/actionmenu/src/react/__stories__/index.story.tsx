@@ -1,12 +1,12 @@
-import React from 'react'
-
-import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import React from 'react'
 
+import * as vars from '../..'
 import ActionMenu from '..'
 
 storiesOf('menu items', module)
@@ -130,7 +130,7 @@ const FocusOnMount = React.forwardRef<HTMLUListElement>(
 )
 storiesOf('focus onMount', module).add('example', () => <FocusOnMount />)
 
-const NestedMenu = ({ origin = null }) => (
+const NestedMenu = ({ origin }: { origin?: ValueOf<typeof vars.origins> }) => (
   <ActionMenu origin={origin}>
     <ActionMenu.Item
       origin={origin}
@@ -173,7 +173,7 @@ const NestedMenu = ({ origin = null }) => (
 const nestedStory = storiesOf('nested', module).add(`no origin`, () => (
   <NestedMenu />
 ))
-Object.keys(ActionMenu.origins).forEach(origin =>
+Object.values(ActionMenu.origins).forEach(origin =>
   nestedStory.add(`origin ${origin}`, () => (
     <div
       style={{
@@ -297,12 +297,16 @@ storiesOf('disabled', module)
   ))
   .add('links', () => (
     <ActionMenu>
-      <ActionMenu.Item href="https://duck.com">Enabled</ActionMenu.Item>
-      <ActionMenu.Item disabled href="https://duck.com">
+      <ActionMenu.Item href="https://duck.com" tagName="a">
+        Enabled
+      </ActionMenu.Item>
+      <ActionMenu.Item disabled href="https://duck.com" tagName="a">
         Disabled
       </ActionMenu.Item>
-      <ActionMenu.Item href="https://duck.com">Enabled</ActionMenu.Item>
-      <ActionMenu.Item disabled href="https://duck.com">
+      <ActionMenu.Item href="https://duck.com" tagName="a">
+        Enabled
+      </ActionMenu.Item>
+      <ActionMenu.Item disabled href="https://duck.com" tagName="a">
         Disabled
       </ActionMenu.Item>
     </ActionMenu>
