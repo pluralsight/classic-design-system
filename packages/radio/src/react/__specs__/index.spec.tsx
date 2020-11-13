@@ -29,7 +29,7 @@ describe('Radio', () => {
       </Radio.Group>
     )
     const radio = container.querySelector('input')
-    fireEvent.click(radio)
+    fireEvent.click(radio!)
     expect(spy).toHaveBeenCalledTimes(1)
   })
 })
