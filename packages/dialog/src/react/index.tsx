@@ -1,14 +1,15 @@
-import { StyleAttribute, compose, css, keyframes } from 'glamor'
-import React, { HTMLAttributes } from 'react'
-
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
 import {
-  ValueOf,
   RefForwardingComponent,
+  ValueOf,
+  createUniversalPortal,
   isFunction,
-  stylesFor
+  stylesFor,
+  usePortal
 } from '@pluralsight/ps-design-system-util'
+import { StyleAttribute, compose, css, keyframes } from 'glamor'
+import React, { HTMLAttributes, MutableRefObject } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -119,6 +120,8 @@ const Dialog = React.forwardRef((props, ref) => {
   const trapped = !!modal || !!onClose
   const closeOnEscape = isFunction(onClose) && !disableCloseOnEscape
 
+  const portal = usePortal() as MutableRefObject<HTMLDivElement>
+
   // TODO: combine fns
   function handleKeyUp(evt: React.KeyboardEvent) {
     if (!isEscape(evt)) return
@@ -149,16 +152,21 @@ const Dialog = React.forwardRef((props, ref) => {
     </FocusManager>
   )
 
-  return modal ? (
-    <Overlay
-      aria-label={rest['aria-label']}
-      disableCloseOnOverlayClick={disableCloseOnOverlayClick}
-      onClose={onClose}
-    >
-      {content}
-    </Overlay>
-  ) : (
-    content
+  return (
+    <>
+      {modal
+        ? createUniversalPortal(
+            <Overlay
+              aria-label={rest['aria-label']}
+              disableCloseOnOverlayClick={disableCloseOnOverlayClick}
+              onClose={onClose}
+            >
+              {content}
+            </Overlay>,
+            portal.current
+          )
+        : content}
+    </>
   )
 }) as DialogComponent
 
