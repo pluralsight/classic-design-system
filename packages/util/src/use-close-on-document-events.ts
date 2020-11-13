@@ -11,18 +11,19 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
 
   const handleClickOutsideMenu = (evt: MouseEvent) => {
     if (evt.target instanceof HTMLElement) {
-      const innerClick = el.contains(evt.target)
-      if (!innerClick) return
-
+      if (el.contains(evt.target)) return
       callback(evt)
     }
   }
 
   let currentAnimationFrame: number
   const requestAnimationFrame = (evt: Event | UIEvent) => {
-    window.cancelAnimationFrame(currentAnimationFrame)
-    currentAnimationFrame = window.requestAnimationFrame(() => callback(evt))
-    return currentAnimationFrame
+    if (evt.target instanceof HTMLElement) {
+      if (el.contains(evt.target) || el === evt.target) return
+      window.cancelAnimationFrame(currentAnimationFrame)
+      currentAnimationFrame = window.requestAnimationFrame(() => callback(evt))
+      return currentAnimationFrame
+    }
   }
 
   document.addEventListener('click', handleClickOutsideMenu)
