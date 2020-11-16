@@ -24,9 +24,15 @@ Object.keys(Heading.sizes).forEach(size =>
   ))
 )
 
-stories.add('color: primary', () => <Heading color="primary"><h1>Primary</h1></Heading>)
+stories.add('color: primary', () => (
+  <Heading color="primary">
+    <h1>Primary</h1>
+  </Heading>
+))
 stories.add('color: secondary', () => (
-  <Heading color="secondary"><h1>Secondary</h1></Heading>
+  <Heading color="secondary">
+    <h1>Secondary</h1>
+  </Heading>
 ))
 
 stories.add('style override', () => (

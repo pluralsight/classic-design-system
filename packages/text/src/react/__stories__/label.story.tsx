@@ -31,7 +31,11 @@ stories.add('strong: true', () => <Label strong>Strong</Label>)
 
 stories.add('caps: true', () => <Label caps>Caps</Label>)
 
-stories.add('caps & strong: true', () => <Label caps strong>Caps</Label>)
+stories.add('caps & strong: true', () => (
+  <Label caps strong>
+    Caps
+  </Label>
+))
 
 stories.add('style override', () => <Label style={style}>pink</Label>)
 

@@ -22,7 +22,9 @@ const style = ({
   compose(
     css(stylesheet['.psds-text__label']),
     css(stylesheet[`.psds-text__label--size-${size}`]),
-    css(stylesheet[`.psds-text__label--color-${color}.psds-theme--${themeName}`]),
+    css(
+      stylesheet[`.psds-text__label--color-${color}.psds-theme--${themeName}`]
+    ),
     strong && css(stylesheet[`.psds-text__label--strong`]),
     caps && css(stylesheet[`.psds-text__label--caps`])
   )

@@ -14,7 +14,6 @@ import {
 import * as vars from '../vars'
 
 export default {
-
   '.psds-text__code': {
     padding: `0 ${layout.spacingXXSmall}`,
     borderRadius: '2px',
@@ -35,7 +34,6 @@ export default {
     background: colorsBackgroundUtility[25],
     border: `1px solid ${colorsBorder.lowOnDark}`
   },
-
 
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`
@@ -103,24 +101,24 @@ export default {
   [`.psds-text__label--size-${vars.labelSizes.xSmall}`]: {
     fontSize: '12px',
     letterSpacing: '0.02em',
-    lineHeight: '16px',
+    lineHeight: '16px'
   },
   [`.psds-text__label--size-${vars.labelSizes.small}`]: {
     fontSize: '14px',
     letterSpacing: '0.015em',
-    lineHeight: '24px',
+    lineHeight: '24px'
   },
   [`.psds-text__label--size-${vars.labelSizes.normal}`]: {
     fontSize: '16px',
     letterSpacing: '0.01em',
-    lineHeight: '28px',  },
+    lineHeight: '28px'
+  },
   [`.psds-text__label--size-${vars.labelSizes.large}`]: {
     fontSize: '18px',
     letterSpacing: '0.005em',
     lineHeight: '32px',
     fontWeight: '400'
   },
-
 
   [`.psds-text__list`]: {
     listStyle: 'none',
@@ -142,7 +140,6 @@ export default {
     listStyle: 'initial',
     listStyleType: 'decimal'
   },
-
 
   '.psds-text__p': {
     margin: `${layout.spacingMedium} 0`
@@ -177,5 +174,4 @@ export default {
     lineHeight: '32px',
     fontWeight: '400'
   }
-
 }
