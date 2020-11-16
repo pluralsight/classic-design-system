@@ -8,13 +8,16 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { combineFns, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  ValueOf,
+  combineFns
+} from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React from 'react'
 
 import CarouselContext from './context'
 import stylesheet from '../css'
-import { toValues } from '../js/utils'
 import * as vars from '../vars/index'
 
 const styles = {
@@ -34,8 +37,7 @@ const styles = {
     )
 }
 
-interface ControlProps
-  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onClick'> {
+interface ControlProps extends Omit<HTMLPropsFor<'button'>, 'onClick'> {
   direction: ValueOf<typeof vars.controlDirections>
   onClick?: (evt?: React.MouseEvent) => void
 }

@@ -1,8 +1,9 @@
 /* eslint-disable react/jsx-handler-names */
 import {
+  HTMLPropsFor,
   RefForwardingComponent,
-  useResizeObserver,
-  ValueOf
+  ValueOf,
+  useResizeObserver
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, { cloneElement } from 'react'
@@ -34,7 +35,7 @@ const styles = {
   item: () => css(stylesheet['.psds-carousel__item'])
 }
 
-interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
+interface CarouselProps extends HTMLPropsFor<'div'> {
   children: React.ReactNode
   controlPrev?: React.ReactNode
   controlNext?: React.ReactNode
@@ -144,9 +145,7 @@ interface InternalItemProps {
   pageCount?: number
   pageIndex?: number
 }
-interface ItemProps
-  extends React.HTMLAttributes<HTMLLIElement>,
-    InternalItemProps {}
+interface ItemProps extends HTMLPropsFor<'li'>, InternalItemProps {}
 export const Item: React.FC<ItemProps> = props => {
   const {
     children,
@@ -174,7 +173,7 @@ export const Item: React.FC<ItemProps> = props => {
 Item.displayName = 'Carousel.Item'
 Carousel.Item = Item
 
-const Instructions: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
+const Instructions: React.FC<HTMLPropsFor<'div'>> = props => {
   const context = React.useContext(CarouselContext)
   const id = `${context.id}__instructions`
 
@@ -190,7 +189,7 @@ const Instructions: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
 }
 
 interface PagesProps
-  extends React.HTMLAttributes<HTMLDivElement>,
+  extends HTMLPropsFor<'div'>,
     Required<Pick<UseSwipeOpts, 'onSwipeLeft' | 'onSwipeRight'>> {}
 interface PagesStatics {}
 interface PagesComponent
@@ -218,7 +217,7 @@ const Pages = React.forwardRef<HTMLDivElement, PagesProps>((props, ref) => {
 }) as PagesComponent
 Pages.displayName = 'Carousel.Pages'
 
-interface PageProps extends React.HTMLAttributes<HTMLUListElement> {
+interface PageProps extends HTMLPropsFor<'ul'> {
   paged?: boolean
   isActivePage?: boolean
 }
