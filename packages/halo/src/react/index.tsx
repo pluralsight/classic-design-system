@@ -3,13 +3,14 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
+  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   canUseDOM
 } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
-import React, { HTMLAttributes, forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 
 import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css'
 import * as vars from '../vars'
@@ -57,7 +58,7 @@ interface InternalHaloProps {
   visibleOnFocus: boolean
 }
 
-type HaloProps = HTMLAttributes<HTMLDivElement> & Partial<InternalHaloProps>
+type HaloProps = HTMLPropsFor<'div'> & Partial<InternalHaloProps>
 
 interface HaloStatics {
   gapSizes: typeof vars.gapSizes

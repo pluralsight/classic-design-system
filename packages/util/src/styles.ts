@@ -1,14 +1,24 @@
-export function stylesFor(selectorKey: string, props: StylesForProps) {
-  return (
-    (props &&
-      props.UNSAFE_stylesFor &&
-      selectorKey &&
-      props.UNSAFE_stylesFor[selectorKey]) ||
-    {}
-  )
-}
+/* eslint-disable camelcase */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-export interface StylesForProps {
-  // eslint-disable-next-line camelcase
-  UNSAFE_stylesFor?: Record<string, unknown>
+import { CSSProperties } from 'react'
+
+export type PropsWithStylesFor<
+  Selectors extends keyof any,
+  P = Record<string, unknown>
+> = {
+  UNSAFE_stylesFor?: StylesForProp<Selectors>
+} & P
+
+export type StylesForProp<Selectors extends keyof any> = Partial<
+  Record<Selectors, CSSProperties>
+>
+
+export const stylesFor = (
+  selectorKey = '',
+  props: PropsWithStylesFor<any, any> = {}
+) => {
+  const { UNSAFE_stylesFor } = props
+
+  return (UNSAFE_stylesFor && UNSAFE_stylesFor[selectorKey]) || {}
 }

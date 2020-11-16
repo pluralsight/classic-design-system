@@ -13,9 +13,10 @@ export { isFunction } from './is-function'
 export { isCallbackRef, isRef } from './is-ref'
 export { isString } from './is-string'
 export { omit } from './omit'
+export { pick } from './pick'
 export { shallowCompare } from './shallow-compare'
 export { capitalize } from './string'
-export { stylesFor } from './styles'
+export * from './styles'
 export { uniqueId } from './unique-id'
 
 export {

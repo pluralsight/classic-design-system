@@ -1,6 +1,6 @@
 import { MenuIcon } from '@pluralsight/ps-design-system-icon'
-// @ts-ignore: TODO: update typings
 import NavItem from '@pluralsight/ps-design-system-navitem'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
 
@@ -15,7 +15,7 @@ const styles = {
   utility: () => css(stylesheet['.psds-navbar__utility'])
 }
 
-interface NavBarProps extends React.HTMLAttributes<HTMLDivElement> {
+interface NavBarProps extends HTMLPropsFor<'div'> {
   brand?: React.ReactNode
   items?: React.ReactNode
   onMobileMenuClick?: React.MouseEventHandler
@@ -37,7 +37,12 @@ const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
       <div ref={ref} {...styles.navbar()} {...rest}>
         {onMobileMenuClick && (
           <div {...styles.mobileMenu()}>
-            <NavItem onClick={onMobileMenuClick} icon={<MenuIcon />} />
+            <NavItem
+              renderContainer={renderProps => (
+                <button {...renderProps} onClick={onMobileMenuClick} />
+              )}
+              icon={<MenuIcon />}
+            />
           </div>
         )}
         <div {...styles.brand()}>{brand}</div>

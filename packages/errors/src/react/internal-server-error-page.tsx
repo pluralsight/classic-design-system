@@ -1,13 +1,9 @@
-import React, { HTMLAttributes } from 'react'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import React from 'react'
 
 import ErrorPage from './error-page'
 
-interface InternalServerErrorPageProps
-  extends HTMLAttributes<HTMLAnchorElement> {
-  href?: string
-}
-
-const InternalServerErrorPage: React.FC<InternalServerErrorPageProps> = ({
+const InternalServerErrorPage: React.FC<HTMLPropsFor<'a'>> = ({
   href = 'https://help.pluralsight.com/help/contact-us'
 }) => (
   <ErrorPage

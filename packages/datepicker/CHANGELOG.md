@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@8.0.8...@pluralsight/ps-design-system-datepicker@9.0.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* **datepicker:** revert to conditional ref for selected calendar day ([17a8ec0](https://github.com/pluralsight/design-system/commit/17a8ec0722742d87574e9df6e914065e8d2112d2))
+
+
+### Code Refactoring
+
+* **datepicker:** change to use date type and cleanup ([2b7b4f1](https://github.com/pluralsight/design-system/commit/2b7b4f1eee45cda402f00fc475cd39d5d37303f4)), closes [#1344](https://github.com/pluralsight/design-system/issues/1344)
+
+
+### Features
+
+* **datepicker:** support single-field date in html for form usage ([1e1f6a9](https://github.com/pluralsight/design-system/commit/1e1f6a992116fb5fbc67eb0f501569c1eb12e8d2))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** Must be a controlled component via supplied value prop
+* **datepicker:** onSelect and onSubBlur signatures change
+* **datepicker:** input and output values are of Date type
+
+
+
+
+
+## [8.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@8.0.7...@pluralsight/ps-design-system-datepicker@8.0.8) (2020-11-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [8.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@8.0.6...@pluralsight/ps-design-system-datepicker@8.0.7) (2020-11-12)
+
+
+### Bug Fixes
+
+* **datepicker:** restore toggle open calendar functionality ([def6c19](https://github.com/pluralsight/design-system/commit/def6c193f20dd01a62ddda149141411d673ede9c))
+
+
+
+
+
 ## [8.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@8.0.5...@pluralsight/ps-design-system-datepicker@8.0.6) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
