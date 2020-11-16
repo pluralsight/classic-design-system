@@ -1,7 +1,7 @@
 import { InfoIcon } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
-import { usePortal } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, usePortal } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
@@ -29,36 +29,35 @@ const positionFns = {
   leftOf
 }
 
-const Box = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->((props, forwardedRef) => {
-  const ref = React.useRef<HTMLDivElement>(null)
-  /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
-  React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
+const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+  (props, forwardedRef) => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
+    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-  const selectors = css({
-    position: 'relative',
-    top: '200px',
-    left: '200px',
-    alignItems: 'center',
-    border: `4px dashed ${core.colorsPink.base}`,
-    color: core.colorsPink.base,
-    display: 'flex',
-    fontSize: core.type.fontSizeMedium,
-    fontWeight: core.type.fontWeightBold,
-    height: '200px',
-    justifyContent: 'center',
-    textAlign: 'center',
-    width: '200px'
-  })
+    const selectors = css({
+      position: 'relative',
+      top: '200px',
+      left: '200px',
+      alignItems: 'center',
+      border: `4px dashed ${core.colorsPink.base}`,
+      color: core.colorsPink.base,
+      display: 'flex',
+      fontSize: core.type.fontSizeMedium,
+      fontWeight: core.type.fontWeightBold,
+      height: '200px',
+      justifyContent: 'center',
+      textAlign: 'center',
+      width: '200px'
+    })
 
-  return (
-    <div {...selectors} ref={ref}>
-      {props.children}
-    </div>
-  )
-})
+    return (
+      <div {...selectors} ref={ref}>
+        {props.children}
+      </div>
+    )
+  }
+)
 
 const MockToolip = React.forwardRef<
   HTMLDivElement,

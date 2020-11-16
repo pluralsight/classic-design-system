@@ -14,7 +14,7 @@
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:esm": "cross-env ESM=true babel --extensions \".js,.ts,.tsx\" --root-mode upward src --out-dir dist/esm",
     "build:svg": "svgr --filename-case kebab --ext \"dist.js\" -d src/react/icons src/svg",
-    "build:watch": "yarn build:js -- --watch",
+    "build:watch": "yarn build:cjs -- --watch",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
@@ -26,8 +26,8 @@
     "@pluralsight/ps-design-system-core": "^6.5.1",
     "@pluralsight/ps-design-system-icon": "^19.0.7",
     "@pluralsight/ps-design-system-text": "^16.1.9",
-    "camelize": "^1.0.0",
-    "prop-types": "^15.7.2"
+    "@pluralsight/ps-design-system-util": "^6.0.0",
+    "camelize": "^1.0.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

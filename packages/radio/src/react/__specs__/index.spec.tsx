@@ -29,7 +29,8 @@ describe('Radio', () => {
       </Radio.Group>
     )
     const radio = container.querySelector('input')
-    fireEvent.click(radio)
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
+    fireEvent.click(radio!)
     expect(spy).toHaveBeenCalledTimes(1)
   })
 })

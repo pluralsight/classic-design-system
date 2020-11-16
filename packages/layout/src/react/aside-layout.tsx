@@ -1,4 +1,4 @@
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
 import React from 'react'
 
@@ -22,7 +22,7 @@ const styleLayout = (asidePosition: ValueOf<typeof vars.asidePositions>) => {
     )
   )
 }
-interface AsideLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
+interface AsideLayoutProps extends HTMLPropsFor<'div'> {
   main: React.ReactElement<typeof Main>
   aside: React.ReactElement<typeof Aside>
   asidePosition?: ValueOf<typeof vars.asidePositions>
@@ -66,7 +66,7 @@ const styleAside = (asidePosition: ValueOf<typeof vars.asidePositions>) => {
     )
   )
 }
-interface AsideProps extends React.HTMLAttributes<HTMLDivElement> {
+interface AsideProps extends HTMLPropsFor<'div'> {
   _asidePosition?: AsideLayoutProps['asidePosition']
 }
 const Aside: React.FC<AsideProps> = props => {
