@@ -77,7 +77,7 @@ storiesOf('Sample Form', module)
         <Tag href="http://google.com">Baz</Tag>
       </div>
 
-      <DatePicker label="Choose a Date" />
+      <DatePicker label="Choose a Date" value={undefined} />
 
       <Checkbox checked label="Checkbox selected" value="someVal" />
 

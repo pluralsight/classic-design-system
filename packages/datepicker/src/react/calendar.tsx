@@ -1,25 +1,20 @@
-import { compose, css, keyframes } from 'glamor'
-import React from 'react'
-
 import Button from '@pluralsight/ps-design-system-button'
 import {
   CaretLeftIcon,
   CaretRightIcon
 } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { compose, css, keyframes } from 'glamor'
+import React, { useRef, useState, useEffect, FC } from 'react'
 
 import stylesheet from '../css'
-import { DateParts, MonthDateParts } from '../js/types'
-
 import {
   arrayOf,
-  formatDate,
   getDaysInMonth,
   getNextMonthYear,
   getPrevMonthYear,
   getMonthName,
-  getFirstDayOfWeekForMonth,
-  shallowEqual
+  getFirstDayOfWeekForMonth
 } from '../js'
 
 const slide = keyframes(
@@ -35,6 +30,7 @@ const styles = {
       isSelected &&
         css(stylesheet['.psds-date-picker__calendar__day--selected'])
     ),
+  overlay: () => css(stylesheet['.psds-date-picker__overlay']),
   skippedDay: () => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
   switcher: () => css(stylesheet['.psds-date-picker__calendar__switcher']),
   switcherMonth: () =>
@@ -46,43 +42,28 @@ const styles = {
 }
 
 interface CalendarProps {
-  date: DateParts
-  onSelect: (value: string | undefined) => void
+  value: Date | undefined
+  onSelect: (evt: React.MouseEvent, date: Date) => void
 }
-const Calendar: React.FC<CalendarProps> = props => {
-  const { date, onSelect, ...rest } = props
-  const ref = React.useRef<HTMLDivElement>(null)
-  const selectedDayRef = React.useRef<HTMLButtonElement>(null)
+export const Calendar: FC<CalendarProps> = props => {
+  const { value = new Date(), onSelect, ...rest } = props
+  const ref = useRef<HTMLDivElement>(null)
+  const selectedDayRef = useRef<HTMLButtonElement>(null)
 
-  const initialDisplayed = React.useMemo<DateParts>(
-    function getDerivedDisplayedDate() {
-      const today = new Date()
+  const [displayed, setDisplayed] = useState<Date>(value)
+  const [selected, setSelected] = useState<Date>(value)
 
-      return {
-        dd: date.dd,
-        mm: date.mm || (today.getMonth() + 1).toString(),
-        yyyy: date.yyyy || today.getFullYear().toString()
-      }
-    },
-    [date]
-  )
-
-  const [displayed, setDisplayed] = React.useState<MonthDateParts>(
-    initialDisplayed
-  )
-  const [selected, setSelected] = React.useState<DateParts>(date)
-
-  React.useEffect(
+  useEffect(
     function updateSelectedOnPropChange() {
-      setSelected(date)
+      setSelected(value)
     },
-    [date]
+    [value]
   )
 
-  React.useEffect(function focusCurrentOnMount() {
+  useEffect(function focusCurrentOnMount() {
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    const current = selectedDayRef.current as HTMLButtonElement
-    if (current) current.focus()
+    const selectedDayNode = selectedDayRef.current as HTMLButtonElement
+    if (selectedDayNode) selectedDayNode.focus()
     else if (ref.current) ref.current.focus()
   }, [])
 
@@ -100,14 +81,12 @@ const Calendar: React.FC<CalendarProps> = props => {
     setDisplayed(nextDisplayed)
   }
 
-  function handleDayClick(evt: React.MouseEvent, dd: string) {
+  function handleDayClick(evt: React.MouseEvent, selectedDate: Date) {
     evt.preventDefault()
-
-    const nextSelected = { ...displayed, dd }
-    setSelected(nextSelected)
+    setSelected(selectedDate)
 
     if (typeof onSelect === 'function') {
-      onSelect(formatDate(nextSelected))
+      onSelect(evt, selectedDate)
     }
   }
 
@@ -123,7 +102,7 @@ const Calendar: React.FC<CalendarProps> = props => {
           />
 
           <div {...styles.switcherMonth()}>
-            {getMonthName(displayed.mm)} {displayed.yyyy}
+            {getMonthName(displayed)} {displayed.getFullYear()}
           </div>
 
           <Button
@@ -148,18 +127,23 @@ const Calendar: React.FC<CalendarProps> = props => {
           ))}
 
           {arrayOf(getDaysInMonth(displayed)).map((_, i) => {
-            const currentDate = { ...displayed, dd: i + 1 }
-            const isSelected = shallowEqual(currentDate, selected)
+            const dateForCalendarDayNoTime = new Date(displayed)
+            dateForCalendarDayNoTime.setDate(i + 1)
+            dateForCalendarDayNoTime.setHours(0, 0, 0, 0)
+            const selectedDateNoTime = new Date(selected)
+            selectedDateNoTime.setHours(0, 0, 0, 0)
+            const isSelected =
+              dateForCalendarDayNoTime.getTime() ===
+              selectedDateNoTime.getTime()
 
             return (
               <button
                 key={i}
-                onClick={evt => handleDayClick(evt, currentDate.dd.toString())}
+                onClick={evt => handleDayClick(evt, dateForCalendarDayNoTime)}
                 {...styles.day(isSelected)}
                 {...(isSelected && { ref: selectedDayRef })}
-                ref={selectedDayRef}
               >
-                {currentDate.dd}
+                {dateForCalendarDayNoTime.getDate()}
               </button>
             )
           })}
@@ -169,4 +153,10 @@ const Calendar: React.FC<CalendarProps> = props => {
   )
 }
 
-export default Calendar
+interface OverlayProps {
+  onClick: (evt: React.MouseEvent) => void
+}
+
+export const Overlay: FC<OverlayProps> = props => {
+  return <div {...styles.overlay()} onClick={props.onClick} />
+}
