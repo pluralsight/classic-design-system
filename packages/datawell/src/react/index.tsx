@@ -55,9 +55,17 @@ const DataWell = React.forwardRef((props, ref) => {
 
   return (
     <div ref={ref} {...styles.dataWell(themeName)} {...rest}>
-      <h3><Label {...styles.label(themeName)} size={Label.sizes.xSmall} color={Label.colors.secondary} strong caps>
-        {label}
-      </Label></h3>
+      <h3>
+        <Label
+          {...styles.label(themeName)}
+          size={Label.sizes.xSmall}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          {label}
+        </Label>
+      </h3>
 
       <div {...styles.data(themeName)}>{children}</div>
       <div {...styles.subLabel(themeName)}>{subLabel}</div>
