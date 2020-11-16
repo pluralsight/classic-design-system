@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-typeahead",
-  "version": "5.0.7",
+  "version": "5.0.8",
   "description": "Typeahead UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -26,7 +26,7 @@
     "@pluralsight/ps-design-system-core": "^6.5.1",
     "@pluralsight/ps-design-system-icon": "^19.0.7",
     "@pluralsight/ps-design-system-position": "^5.0.6",
-    "@pluralsight/ps-design-system-textinput": "^9.0.7",
+    "@pluralsight/ps-design-system-textinput": "^9.0.8",
     "@pluralsight/ps-design-system-theme": "^6.0.5",
     "@pluralsight/ps-design-system-util": "^6.0.0"
   },

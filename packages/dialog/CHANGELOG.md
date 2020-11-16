@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.4.7...@pluralsight/ps-design-system-dialog@9.0.0) (2020-11-13)
+
+
+### Code Refactoring
+
+* **dialog:** always render modal in a portal ([b9b5564](https://github.com/pluralsight/design-system/commit/b9b5564bf5dc92a8bad53ded3731ca2c3753bab2))
+
+
+### BREAKING CHANGES
+
+* **dialog:** Modal always renders in a portal. Made breaking change
+since it's uncertain whether this change in layout will affect users
+visually.
+
+
+
+
+
 ## [8.4.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@8.4.6...@pluralsight/ps-design-system-dialog@8.4.7) (2020-11-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

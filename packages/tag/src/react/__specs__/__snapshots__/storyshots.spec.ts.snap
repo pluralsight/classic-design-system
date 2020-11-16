@@ -30,7 +30,7 @@ exports[`Storyshots actions button w/ icon button 1`] = `
     tabIndex={0}
   >
     <span
-      data-css-1997kh1=""
+      data-css-13bnfv4=""
     >
       As a button
     </span>
@@ -65,7 +65,7 @@ exports[`Storyshots actions just icon button 1`] = `
     data-css-1fdqpqx=""
   >
     <span
-      data-css-1997kh1=""
+      data-css-13bnfv4=""
     >
       As a button
     </span>
@@ -173,7 +173,7 @@ exports[`Storyshots icon medium 1`] = `
     data-css-1fdqpqx=""
   >
     <span
-      data-css-1997kh1=""
+      data-css-13bnfv4=""
     >
       With Icon
     </span>
@@ -208,7 +208,7 @@ exports[`Storyshots icon small 1`] = `
     data-css-1icj9y5=""
   >
     <span
-      data-css-1997kh1=""
+      data-css-13bnfv4=""
     >
       With Icon
     </span>
@@ -267,7 +267,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
     tabIndex={0}
   >
     <span
-      data-css-1997kh1=""
+      data-css-13bnfv4=""
     >
       As a button
     </span>
@@ -356,7 +356,7 @@ exports[`Storyshots long with icon 1`] = `
     data-css-1fdqpqx=""
   >
     <span
-      data-css-1997kh1=""
+      data-css-13bnfv4=""
     >
       This is the string that goes on forever and always. There really isn't an end. Wow.
     </span>

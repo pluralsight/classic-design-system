@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.10.1...@pluralsight/ps-design-system-docs@0.10.2) (2020-11-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.10.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.10.0...@pluralsight/ps-design-system-docs@0.10.1) (2020-11-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.10.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.9.0...@pluralsight/ps-design-system-docs@0.10.0) (2020-11-13)
+
+
+### Bug Fixes
+
+* **docs:** mv off styled-jsx, theme aware form controls ([7668c02](https://github.com/pluralsight/design-system/commit/7668c02cea24bc3d5e6d824968c0da5a16bfc699))
+* **docs:** rm jsx spaces in form controls ([7b910a3](https://github.com/pluralsight/design-system/commit/7b910a3618f3fe96503ed15733a7b7931fedb9f7))
+* **docs:** style modal dialog buttons to be aligned right ([5b6596f](https://github.com/pluralsight/design-system/commit/5b6596fdaf857af3fcbed86f05da102fc0c934d9))
+
+
+### Features
+
+* **docs:** add proptypes for form subcomponents ([6ccc7c7](https://github.com/pluralsight/design-system/commit/6ccc7c7d390b8d41fa6405226e181d8dadcad2b5)), closes [#1444](https://github.com/pluralsight/design-system/issues/1444)
+
+
+
+
+
 # [0.9.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.8.10...@pluralsight/ps-design-system-docs@0.9.0) (2020-11-12)
 
 

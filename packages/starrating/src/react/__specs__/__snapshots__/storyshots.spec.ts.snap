@@ -20,11 +20,15 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-kgei9n=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -44,11 +48,15 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-kgei9n=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -68,11 +76,15 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -92,11 +104,15 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -116,11 +132,15 @@ exports[`Storyshots StarRating / interactive 0 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -168,11 +188,15 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     />
   </label>
   <button
+    appearance="half"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -216,11 +240,15 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-kgei9n=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -240,11 +268,15 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -264,11 +296,15 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -288,11 +324,15 @@ exports[`Storyshots StarRating / interactive 0.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -340,11 +380,15 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -364,11 +408,15 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-kgei9n=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -388,11 +436,15 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -412,11 +464,15 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -436,11 +492,15 @@ exports[`Storyshots StarRating / interactive 1 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -488,11 +548,15 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -512,11 +576,15 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </div>
   </button>
   <button
+    appearance="half"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -560,11 +628,15 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -584,11 +656,15 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -608,11 +684,15 @@ exports[`Storyshots StarRating / interactive 1.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -660,11 +740,15 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -684,11 +768,15 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -708,11 +796,15 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -732,11 +824,15 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -756,11 +852,15 @@ exports[`Storyshots StarRating / interactive 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -808,11 +908,15 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -832,11 +936,15 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -856,11 +964,15 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </div>
   </button>
   <button
+    appearance="half"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -904,11 +1016,15 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -928,11 +1044,15 @@ exports[`Storyshots StarRating / interactive 2.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -980,11 +1100,15 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -1004,11 +1128,15 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -1028,11 +1156,15 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -1052,11 +1184,15 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -1076,11 +1212,15 @@ exports[`Storyshots StarRating / interactive 3 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -1128,11 +1268,15 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -1152,11 +1296,15 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -1176,11 +1324,15 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -1200,11 +1352,15 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </div>
   </button>
   <button
+    appearance="half"
     aria-label="Rate 4 Stars"
     data-css-cpere9=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -1248,11 +1404,15 @@ exports[`Storyshots StarRating / interactive 3.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -1300,11 +1460,15 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -1324,11 +1488,15 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -1348,11 +1516,15 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -1372,11 +1544,15 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-cpere9=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -1396,11 +1572,15 @@ exports[`Storyshots StarRating / interactive 4 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -1448,11 +1628,15 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -1472,11 +1656,15 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -1496,11 +1684,15 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -1520,11 +1712,15 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-cpere9=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -1544,11 +1740,15 @@ exports[`Storyshots StarRating / interactive 4.5 1`] = `
     </div>
   </button>
   <button
+    appearance="half"
     aria-label="Rate 5 Stars"
     data-css-cpere9=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -1620,11 +1820,15 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -1644,11 +1848,15 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -1668,11 +1876,15 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -1692,11 +1904,15 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-cpere9=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -1716,11 +1932,15 @@ exports[`Storyshots StarRating / interactive 5 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-cpere9=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -1768,11 +1988,15 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     />
   </label>
   <button
+    appearance="empty"
     aria-label="Rate 1 Star"
     data-css-1pdn2sl=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -1792,11 +2016,15 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 2 Stars"
     data-css-1pdn2sl=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -1816,11 +2044,15 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 3 Stars"
     data-css-1pdn2sl=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -1840,11 +2072,15 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 4 Stars"
     data-css-1pdn2sl=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -1864,11 +2100,15 @@ exports[`Storyshots StarRating / interactive null 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 5 Stars"
     data-css-1pdn2sl=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -1915,11 +2155,15 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     />
   </label>
   <button
+    appearance="empty"
     aria-label="Rate 1 Star"
     data-css-1pdn2sl=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -1939,11 +2183,15 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 2 Stars"
     data-css-1pdn2sl=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -1963,11 +2211,15 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 3 Stars"
     data-css-1pdn2sl=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -1987,11 +2239,15 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 4 Stars"
     data-css-1pdn2sl=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2011,11 +2267,15 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
     </div>
   </button>
   <button
+    appearance="empty"
     aria-label="Rate 5 Stars"
     data-css-1pdn2sl=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -2045,11 +2305,15 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
 exports[`Storyshots StarRating / not interactive 0 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -2069,11 +2333,15 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -2093,11 +2361,15 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -2117,11 +2389,15 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2141,11 +2417,15 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -2176,11 +2456,15 @@ exports[`Storyshots StarRating / not interactive 0 1`] = `
 exports[`Storyshots StarRating / not interactive 0.5 1`] = `
 <div>
   <span
+    appearance="half"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -2224,11 +2508,15 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -2248,11 +2536,15 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -2272,11 +2564,15 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2296,11 +2592,15 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -2331,11 +2631,15 @@ exports[`Storyshots StarRating / not interactive 0.5 1`] = `
 exports[`Storyshots StarRating / not interactive 1 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -2355,11 +2659,15 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -2379,11 +2687,15 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -2403,11 +2715,15 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2427,11 +2743,15 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -2462,11 +2782,15 @@ exports[`Storyshots StarRating / not interactive 1 1`] = `
 exports[`Storyshots StarRating / not interactive 1.5 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -2486,11 +2810,15 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </div>
   </span>
   <span
+    appearance="half"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -2534,11 +2862,15 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -2558,11 +2890,15 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2582,11 +2918,15 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -2617,11 +2957,15 @@ exports[`Storyshots StarRating / not interactive 1.5 1`] = `
 exports[`Storyshots StarRating / not interactive 2 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -2641,11 +2985,15 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -2665,11 +3013,15 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -2689,11 +3041,15 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2713,11 +3069,15 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -2748,11 +3108,15 @@ exports[`Storyshots StarRating / not interactive 2 1`] = `
 exports[`Storyshots StarRating / not interactive 2.5 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -2772,11 +3136,15 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -2796,11 +3164,15 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </div>
   </span>
   <span
+    appearance="half"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -2844,11 +3216,15 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2868,11 +3244,15 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -2903,11 +3283,15 @@ exports[`Storyshots StarRating / not interactive 2.5 1`] = `
 exports[`Storyshots StarRating / not interactive 3 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -2927,11 +3311,15 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -2951,11 +3339,15 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -2975,11 +3367,15 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -2999,11 +3395,15 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -3034,11 +3434,15 @@ exports[`Storyshots StarRating / not interactive 3 1`] = `
 exports[`Storyshots StarRating / not interactive 3.5 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -3058,11 +3462,15 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -3082,11 +3490,15 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -3106,11 +3518,15 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </div>
   </span>
   <span
+    appearance="half"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -3154,11 +3570,15 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -3189,11 +3609,15 @@ exports[`Storyshots StarRating / not interactive 3.5 1`] = `
 exports[`Storyshots StarRating / not interactive 4 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -3213,11 +3637,15 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -3237,11 +3665,15 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -3261,11 +3693,15 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -3285,11 +3721,15 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -3320,11 +3760,15 @@ exports[`Storyshots StarRating / not interactive 4 1`] = `
 exports[`Storyshots StarRating / not interactive 4.5 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -3344,11 +3788,15 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -3368,11 +3816,15 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -3392,11 +3844,15 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -3416,11 +3872,15 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
     </div>
   </span>
   <span
+    appearance="half"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -3475,11 +3935,15 @@ exports[`Storyshots StarRating / not interactive 4.5 1`] = `
 exports[`Storyshots StarRating / not interactive 5 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -3499,11 +3963,15 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -3523,11 +3991,15 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -3547,11 +4019,15 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -3571,11 +4047,15 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-k4u9v3=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -3606,11 +4086,15 @@ exports[`Storyshots StarRating / not interactive 5 1`] = `
 exports[`Storyshots StarRating / not interactive null 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -3630,11 +4114,15 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -3654,11 +4142,15 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -3678,11 +4170,15 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -3702,11 +4198,15 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -3736,11 +4236,15 @@ exports[`Storyshots StarRating / not interactive null 1`] = `
 exports[`Storyshots StarRating / not interactive undefined 1`] = `
 <div>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -3760,11 +4264,15 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -3784,11 +4292,15 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -3808,11 +4320,15 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -3832,11 +4348,15 @@ exports[`Storyshots StarRating / not interactive undefined 1`] = `
     </div>
   </span>
   <span
+    appearance="full"
     aria-hidden={true}
     data-css-11f15fs=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -3883,11 +4403,15 @@ exports[`Storyshots StarRating / rounding to half integer values 1.7 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -3907,11 +4431,15 @@ exports[`Storyshots StarRating / rounding to half integer values 1.7 1`] = `
     </div>
   </button>
   <button
+    appearance="half"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -3955,11 +4483,15 @@ exports[`Storyshots StarRating / rounding to half integer values 1.7 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -3979,11 +4511,15 @@ exports[`Storyshots StarRating / rounding to half integer values 1.7 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -4003,11 +4539,15 @@ exports[`Storyshots StarRating / rounding to half integer values 1.7 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -4055,11 +4595,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -4079,11 +4623,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -4103,11 +4651,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -4127,11 +4679,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -4151,11 +4707,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -4203,11 +4763,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.2 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -4227,11 +4791,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -4251,11 +4819,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-kgei9n=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -4275,11 +4847,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -4299,11 +4875,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.2 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -4351,11 +4931,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.4 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -4375,11 +4959,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.4 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -4399,11 +4987,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.4 1`] = `
     </div>
   </button>
   <button
+    appearance="half"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -4447,11 +5039,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.4 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -4471,11 +5067,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.4 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -4523,11 +5123,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.6 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -4547,11 +5151,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.6 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -4571,11 +5179,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.6 1`] = `
     </div>
   </button>
   <button
+    appearance="half"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -4619,11 +5231,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.6 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -4643,11 +5259,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.6 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
@@ -4695,11 +5315,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.78 1`] = `
     />
   </label>
   <button
+    appearance="full"
     aria-label="Rate 1 Star"
     data-css-cpere9=""
+    index={0}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 1 Star"
@@ -4719,11 +5343,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.78 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 2 Stars"
     data-css-cpere9=""
+    index={1}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 2 Stars"
@@ -4743,11 +5371,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.78 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 3 Stars"
     data-css-cpere9=""
+    index={2}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 3 Stars"
@@ -4767,11 +5399,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.78 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 4 Stars"
     data-css-kgei9n=""
+    index={3}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 4 Stars"
@@ -4791,11 +5427,15 @@ exports[`Storyshots StarRating / rounding to half integer values 2.78 1`] = `
     </div>
   </button>
   <button
+    appearance="full"
     aria-label="Rate 5 Stars"
     data-css-kgei9n=""
+    index={4}
     onBlur={[Function]}
     onClick={[Function]}
+    onEnter={[Function]}
     onFocus={[Function]}
+    onLeave={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     title="Rate 5 Stars"
