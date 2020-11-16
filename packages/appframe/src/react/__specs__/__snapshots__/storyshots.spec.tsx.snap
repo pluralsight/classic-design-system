@@ -154,7 +154,7 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
               data-css-wlfhsa=""
             >
               <h3
-                data-css-10l98dn=""
+                data-css-12103dp=""
               >
                 Page title
               </h3>
@@ -402,7 +402,7 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
               data-css-wlfhsa=""
             >
               <h3
-                data-css-10l98dn=""
+                data-css-12103dp=""
               >
                 Page title
               </h3>
@@ -611,19 +611,19 @@ exports[`Storyshots AppFrame short content 1`] = `
                     }
                   }
                 >
-                  <span
-                    data-css-1snto52=""
-                  >
-                    <h2
-                      style={
-                        Object {
-                          "margin": 0,
-                        }
+                  <h2
+                    style={
+                      Object {
+                        "margin": 0,
                       }
+                    }
+                  >
+                    <span
+                      data-css-rg1vu8=""
                     >
                       Section Header
-                    </h2>
-                  </span>
+                    </span>
+                  </h2>
                 </div>
                 <ul
                   data-css-15hj73r=""
@@ -983,19 +983,19 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
                     }
                   }
                 >
-                  <span
-                    data-css-1snto52=""
-                  >
-                    <h2
-                      style={
-                        Object {
-                          "margin": 0,
-                        }
+                  <h2
+                    style={
+                      Object {
+                        "margin": 0,
                       }
+                    }
+                  >
+                    <span
+                      data-css-rg1vu8=""
                     >
                       Section Header
-                    </h2>
-                  </span>
+                    </span>
+                  </h2>
                 </div>
                 <ul
                   data-css-15hj73r=""
@@ -1158,7 +1158,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
               data-css-wlfhsa=""
             >
               <h3
-                data-css-10l98dn=""
+                data-css-12103dp=""
               >
                 Page title
               </h3>
@@ -1410,19 +1410,19 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
                     }
                   }
                 >
-                  <span
-                    data-css-1snto52=""
-                  >
-                    <h2
-                      style={
-                        Object {
-                          "margin": 0,
-                        }
+                  <h2
+                    style={
+                      Object {
+                        "margin": 0,
                       }
+                    }
+                  >
+                    <span
+                      data-css-rg1vu8=""
                     >
                       Section Header
-                    </h2>
-                  </span>
+                    </span>
+                  </h2>
                 </div>
                 <ul
                   data-css-15hj73r=""
@@ -1585,7 +1585,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
               data-css-wlfhsa=""
             >
               <h3
-                data-css-10l98dn=""
+                data-css-12103dp=""
               >
                 Page title
               </h3>
@@ -1931,19 +1931,19 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
                     }
                   }
                 >
-                  <span
-                    data-css-1snto52=""
-                  >
-                    <h2
-                      style={
-                        Object {
-                          "margin": 0,
-                        }
+                  <h2
+                    style={
+                      Object {
+                        "margin": 0,
                       }
+                    }
+                  >
+                    <span
+                      data-css-rg1vu8=""
                     >
                       Admin Tools
-                    </h2>
-                  </span>
+                    </span>
+                  </h2>
                 </div>
                 <ul
                   data-css-15hj73r=""
@@ -2200,19 +2200,19 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
                     }
                   }
                 >
-                  <span
-                    data-css-1snto52=""
-                  >
-                    <h2
-                      style={
-                        Object {
-                          "margin": 0,
-                        }
+                  <h2
+                    style={
+                      Object {
+                        "margin": 0,
                       }
+                    }
+                  >
+                    <span
+                      data-css-rg1vu8=""
                     >
                       Content Tools
-                    </h2>
-                  </span>
+                    </span>
+                  </h2>
                 </div>
                 <ul
                   data-css-15hj73r=""
@@ -2343,7 +2343,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
               data-css-wlfhsa=""
             >
               <h3
-                data-css-10l98dn=""
+                data-css-12103dp=""
               >
                 Page title
               </h3>

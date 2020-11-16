@@ -1,139 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Caps className override 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    className="css-mbiza7"
-    data-css-1snto52=""
-  >
-    blue
-  </span>
-</div>
-`;
-
-exports[`Storyshots Caps color: primary 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1snto52=""
-  >
-    Primary
-  </span>
-</div>
-`;
-
-exports[`Storyshots Caps color: secondary 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-3nq6g1=""
-  >
-    Secondary
-  </span>
-</div>
-`;
-
-exports[`Storyshots Caps size: large 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1d1nurx=""
-  >
-    large
-  </span>
-</div>
-`;
-
-exports[`Storyshots Caps size: medium 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1snto52=""
-  >
-    medium
-  </span>
-</div>
-`;
-
-exports[`Storyshots Caps size: small 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-17zuyft=""
-  >
-    small
-  </span>
-</div>
-`;
-
-exports[`Storyshots Caps strong: true 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1pbpmpy=""
-  >
-    Strong
-  </span>
-</div>
-`;
-
-exports[`Storyshots Caps style override 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1snto52=""
-    style={
-      Object {
-        "color": "#E7558B",
-      }
-    }
-  >
-    pink
-  </span>
-</div>
-`;
-
 exports[`Storyshots Code empty 1`] = `
 <div
   style={
@@ -279,7 +145,7 @@ exports[`Storyshots Heading className override 1`] = `
 >
   <h2
     className="css-mbiza7"
-    data-css-10l98dn=""
+    data-css-12103dp=""
   >
     orange
   </h2>
@@ -295,7 +161,7 @@ exports[`Storyshots Heading color: primary 1`] = `
   }
 >
   <h1
-    data-css-10l98dn=""
+    data-css-12103dp=""
   >
     Primary
   </h1>
@@ -311,7 +177,7 @@ exports[`Storyshots Heading color: secondary 1`] = `
   }
 >
   <h1
-    data-css-19m0az7=""
+    data-css-bnzoj7=""
   >
     Secondary
   </h1>
@@ -327,7 +193,7 @@ exports[`Storyshots Heading size: large 1`] = `
   }
 >
   <h1
-    data-css-10l98dn=""
+    data-css-12103dp=""
   >
     large
   </h1>
@@ -343,7 +209,7 @@ exports[`Storyshots Heading size: medium 1`] = `
   }
 >
   <h1
-    data-css-i24vp1=""
+    data-css-9zvq8n=""
   >
     medium
   </h1>
@@ -359,14 +225,14 @@ exports[`Storyshots Heading size: small 1`] = `
   }
 >
   <h1
-    data-css-1jaabgz=""
+    data-css-1kf2x8b=""
   >
     small
   </h1>
 </div>
 `;
 
-exports[`Storyshots Heading size: xlarge 1`] = `
+exports[`Storyshots Heading size: xLarge 1`] = `
 <div
   style={
     Object {
@@ -375,14 +241,14 @@ exports[`Storyshots Heading size: xlarge 1`] = `
   }
 >
   <h1
-    data-css-wf29cn=""
+    data-css-f6nlcp=""
   >
-    xlarge
+    xLarge
   </h1>
 </div>
 `;
 
-exports[`Storyshots Heading size: xsmall 1`] = `
+exports[`Storyshots Heading size: xSmall 1`] = `
 <div
   style={
     Object {
@@ -391,9 +257,9 @@ exports[`Storyshots Heading size: xsmall 1`] = `
   }
 >
   <h1
-    data-css-2wwwch=""
+    data-css-v25gd5=""
   >
-    xsmall
+    xSmall
   </h1>
 </div>
 `;
@@ -407,7 +273,7 @@ exports[`Storyshots Heading style override 1`] = `
   }
 >
   <h2
-    data-css-10l98dn=""
+    data-css-12103dp=""
     style={
       Object {
         "color": "#E7558B",
@@ -416,6 +282,38 @@ exports[`Storyshots Heading style override 1`] = `
   >
     pink
   </h2>
+</div>
+`;
+
+exports[`Storyshots Label caps & strong: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-19iiq6r=""
+  >
+    Caps
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label caps: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1sp6jud=""
+  >
+    Caps
+  </span>
 </div>
 `;
 
@@ -516,7 +414,7 @@ exports[`Storyshots Label size: small 1`] = `
 </div>
 `;
 
-exports[`Storyshots Label size: xsmall 1`] = `
+exports[`Storyshots Label size: xSmall 1`] = `
 <div
   style={
     Object {
@@ -527,7 +425,7 @@ exports[`Storyshots Label size: xsmall 1`] = `
   <span
     data-css-6xzxlg=""
   >
-    xsmall
+    xSmall
   </span>
 </div>
 `;
@@ -541,7 +439,7 @@ exports[`Storyshots Label strong: true 1`] = `
   }
 >
   <span
-    data-css-6yq83=""
+    data-css-19x6xyn=""
   >
     Strong
   </span>
