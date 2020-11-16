@@ -1,5 +1,5 @@
 import Button from '@pluralsight/ps-design-system-button'
-import { Heading, Caps } from '@pluralsight/ps-design-system-text'
+import { Heading, Label } from '@pluralsight/ps-design-system-text'
 import {
   useTheme,
   names as themeNames
@@ -102,9 +102,9 @@ const ErrorPage: React.FC<ErrorPageProps> = props => {
         </Heading>
       </div>
       <div {...styles.code(themeName)}>
-      <h2><Caps size={Caps.sizes.medium}>
+      <h2><Label size={Label.sizes.xSmall} color={Label.colors.secondary}>
           Error code: {code}
-        </Caps></h2>
+        </Label></h2>
       </div>
       {href && <Button href={href}>Contact support</Button>}
       {action && <SearchForm action={action} />}
