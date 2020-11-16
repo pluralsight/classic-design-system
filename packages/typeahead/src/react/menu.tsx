@@ -20,7 +20,12 @@ const styles = {
 
 interface SuggestionsMenuProps extends Omit<HTMLPropsFor<'div'>, 'onChange'> {
   activeValue?: string
-  onChange: (evt: React.MouseEvent<HTMLButtonElement>, value: string) => void
+  onChange: (
+    evt:
+      | React.MouseEvent<HTMLButtonElement>
+      | React.KeyboardEvent<HTMLDivElement>,
+    value: string
+  ) => void
   onFocus?: React.FocusEventHandler<HTMLDivElement>
   onKeyDown?: React.KeyboardEventHandler<HTMLDivElement>
   suggestions: SuggestionOption[]
@@ -87,13 +92,17 @@ const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
     }, props.onFocus)
 
     const handleKeyDown = combineFns(evt => {
-      const tab = evt.key === 'Tab'
-      if (tab) return
-
-      if (evt.key === 'ArrowDown') next()
+    
+      if (evt.shiftKey && evt.key === 'Tab') prev()
+      else if (evt.key === 'Tab') next()
+      else if (evt.key === 'ArrowDown') next()
       else if (evt.key === 'ArrowUp') prev()
       else if (evt.key === 'Home') first()
       else if (evt.key === 'End') last()
+      else if (evt.key === 'Enter' || evt.key === ' ') {
+        if (typeof cursor === 'number' && cursor > 0 && cursor < itemCount)
+          onChange(evt, suggestions[cursor].value)
+      }
 
       evt.preventDefault()
     }, props.onKeyDown)
