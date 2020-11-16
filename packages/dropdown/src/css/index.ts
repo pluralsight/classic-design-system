@@ -166,10 +166,12 @@ export default {
   },
 
   // __menu
-  '.psds-dropdown__menu': {
+  '.psds-dropdown__menu-wrapper': {
     position: 'fixed',
     zIndex: 980,
-    marginTop: layout.spacingXXSmall,
+    marginTop: layout.spacingXXSmall
+  },
+  '.psds-dropdown__menu': {
     maxHeight: 400,
     overflowY: 'auto'
   },
