@@ -92,7 +92,6 @@ const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
     }, props.onFocus)
 
     const handleKeyDown = combineFns(evt => {
-    
       if (evt.shiftKey && evt.key === 'Tab') prev()
       else if (evt.key === 'Tab') next()
       else if (evt.key === 'ArrowDown') next()
