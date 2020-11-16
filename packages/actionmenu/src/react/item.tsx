@@ -1,4 +1,4 @@
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
 import React, {
   HTMLAttributes,
@@ -12,7 +12,7 @@ import React, {
 } from 'react'
 
 import stylesheet from '../css'
-import { tagName } from '../vars'
+import { tagName as tagNames } from '../vars'
 
 import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
@@ -47,7 +47,7 @@ const styles: { [name: string]: StyleFn } = {
   textOnly: () => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-interface ItemProps extends Omit<HTMLAttributes<HTMLLIElement>, 'onClick'> {
+interface ItemProps extends Omit<HTMLPropsFor<'li'>, 'onClick'> {
   className?: string
   disabled?: boolean
   href?: string
@@ -66,7 +66,7 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
       nested,
       onClick,
       origin,
-      tagName: TagName = tagName.a,
+      tagName = tagNames.a,
       value,
       ...rest
     } = props
@@ -128,19 +128,22 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
         role="none"
         tabIndex={!disabled ? -1 : undefined}
       >
-        <TagName
-          {...filterReactProps(rest, { tagName: TagName })}
-          {...styles.item({ hasSubMenu })}
-          aria-haspopup={!!nested}
-          disabled={disabled}
-          onClick={!hasSubMenu ? handleClick : undefined}
-          role="menuitem"
-        >
+        {React.createElement(
+          tagName,
+          {
+            ...rest,
+            ...styles.item({ hasSubMenu }),
+            'aria-haspopup': !!nested,
+            disabled,
+            onClick: !hasSubMenu ? handleClick : undefined,
+            role: 'menuitem'
+          },
+
           <div className={className} {...styles.inner()}>
             {children}
             {hasSubMenu && <Arrow />}
           </div>
-        </TagName>
+        )}
 
         <ul
           {...styles.nested({ origin: origin || originContext })}
