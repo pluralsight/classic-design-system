@@ -3,7 +3,6 @@ import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import * as glamor from 'glamor'
-import PropTypes from 'prop-types'
 import React, { useEffect, useState, ComponentProps } from 'react'
 
 import Button from '..'
