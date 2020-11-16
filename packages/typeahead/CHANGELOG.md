@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@5.0.8...@pluralsight/ps-design-system-typeahead@5.0.9) (2020-11-16)
+
+
+### Bug Fixes
+
+* **typeahead:** allow selection with tab, enter and space keys ([f9a389c](https://github.com/pluralsight/design-system/commit/f9a389c8d4c2b1907c98154793a5295b50fe6a2e))
+
+
+
+
+
 ## [5.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@5.0.7...@pluralsight/ps-design-system-typeahead@5.0.8) (2020-11-13)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
