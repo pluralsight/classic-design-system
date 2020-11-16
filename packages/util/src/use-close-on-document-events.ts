@@ -18,12 +18,9 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
 
   let currentAnimationFrame: number
   const requestAnimationFrame = (evt: Event | UIEvent) => {
-    if (evt.target instanceof HTMLElement) {
-      if (el.contains(evt.target) || el === evt.target) return
-      window.cancelAnimationFrame(currentAnimationFrame)
-      currentAnimationFrame = window.requestAnimationFrame(() => callback(evt))
-      return currentAnimationFrame
-    }
+    window.cancelAnimationFrame(currentAnimationFrame)
+    currentAnimationFrame = window.requestAnimationFrame(() => callback(evt))
+    return currentAnimationFrame
   }
 
   document.addEventListener('click', handleClickOutsideMenu)
@@ -32,7 +29,7 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
     passive: true
   })
 
-  window.addEventListener('scroll', requestAnimationFrame, {
+  document.addEventListener('scroll', requestAnimationFrame, {
     passive: true
   })
 
