@@ -40,7 +40,8 @@ interface TypeaheadProps
   onChange?: (
     evt:
       | React.FormEvent<HTMLInputElement>
-      | React.MouseEvent<HTMLButtonElement>,
+      | React.MouseEvent<HTMLButtonElement>
+      | React.KeyboardEvent<HTMLDivElement>,
     value: string
   ) => void
 
@@ -145,7 +146,8 @@ const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
     const handleChange = (
       evt:
         | React.FormEvent<HTMLInputElement>
-        | React.MouseEvent<HTMLButtonElement>,
+        | React.MouseEvent<HTMLButtonElement>
+        | React.KeyboardEvent<HTMLDivElement>,
       nextValue: string
     ) => {
       setSearchTerm(nextValue)
@@ -166,7 +168,9 @@ const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
     }
 
     const handleSuggestionMenuChange = (
-      evt: React.MouseEvent<HTMLButtonElement>,
+      evt:
+        | React.MouseEvent<HTMLButtonElement>
+        | React.KeyboardEvent<HTMLDivElement>,
       nextValue: string
     ) => {
       setOpen(false)

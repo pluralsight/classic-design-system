@@ -1,8 +1,9 @@
-import React, { HTMLAttributes } from 'react'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import React from 'react'
 
 import ErrorPage from './error-page'
 
-interface NotFoundErrorPageProps extends HTMLAttributes<HTMLElement> {
+interface NotFoundErrorPageProps extends HTMLPropsFor<'div'> {
   action?: string
 }
 

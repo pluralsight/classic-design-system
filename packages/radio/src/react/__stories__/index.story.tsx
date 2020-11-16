@@ -3,8 +3,9 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Radio from '..'
+import { StoryFn } from '@storybook/addons'
 
-const PaddingDecorator = storyFn => (
+const PaddingDecorator = (storyFn: StoryFn<JSX.Element>) => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
 )
 
@@ -65,7 +66,7 @@ storiesOf('Radio', module)
         evt?: React.MouseEvent,
         nextValue?: React.ReactText
       ) {
-        setValue(nextValue)
+        if (nextValue) setValue(nextValue)
       }
 
       return (

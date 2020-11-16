@@ -1,5 +1,6 @@
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
@@ -25,7 +26,7 @@ const styles = {
   }
 }
 
-interface LinearProgressProps extends HTMLAttributes<HTMLDivElement> {
+interface LinearProgressProps extends HTMLPropsFor<'div'> {
   value?: number
 }
 
