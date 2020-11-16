@@ -102,9 +102,11 @@ const ErrorPage: React.FC<ErrorPageProps> = props => {
         </Heading>
       </div>
       <div {...styles.code(themeName)}>
-      <h2><Label size={Label.sizes.xSmall} color={Label.colors.secondary}>
-          Error code: {code}
-        </Label></h2>
+        <h2>
+          <Label size={Label.sizes.xSmall} color={Label.colors.secondary}>
+            Error code: {code}
+          </Label>
+        </h2>
       </div>
       {href && <Button href={href}>Contact support</Button>}
       {action && <SearchForm action={action} />}
