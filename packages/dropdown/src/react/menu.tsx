@@ -4,7 +4,10 @@ import { createUniversalPortal } from '@pluralsight/ps-design-system-util'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import stylesheet from '../css'
 
-const styles = css(stylesheet['.psds-dropdown__menu'])
+const styles = {
+  menuWrapper: css(stylesheet['.psds-dropdown__menu-wrapper']),
+  menu: css(stylesheet['.psds-dropdown__menu'])
+}
 
 interface DropdownMenuProps
   extends Omit<HTMLAttributes<HTMLUListElement>, 'onClick'> {
@@ -22,8 +25,9 @@ export const Menu = forwardRef<HTMLUListElement, DropdownMenuProps>(
       menu &&
       isOpen &&
       createUniversalPortal(
-        <div {...styles} style={menuPosition}>
+        <div {...styles.menuWrapper} style={menuPosition}>
           <ActionMenu
+            {...styles.menu}
             onClick={onClick}
             ref={ref}
             onClose={onClose}

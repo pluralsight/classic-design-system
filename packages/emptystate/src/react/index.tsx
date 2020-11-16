@@ -1,6 +1,15 @@
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
+import {
+  HTMLPropsFor,
+  RefForwardingComponent,
+  ValueOf,
+  useResizeObserver
+} from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
 import React, {
-  HTMLAttributes,
   ReactNode,
   forwardRef,
   useEffect,
@@ -9,23 +18,12 @@ import React, {
   useState
 } from 'react'
 
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
-import {
-  RefForwardingComponent,
-  ValueOf,
-  useResizeObserver
-} from '@pluralsight/ps-design-system-util'
-
+import Context, { ContextValue } from './context'
 import stylesheet, { sizeClasses, themeClasses } from '../css'
+import * as illustrations from './illustrations'
 import { illustrationNames, sizes } from '../vars'
 
-import Context, { ContextValue } from './context'
-import * as illustrations from './illustrations'
-
-export interface EmptyStateProps extends HTMLAttributes<HTMLDivElement> {
+export interface EmptyStateProps extends HTMLPropsFor<'div'> {
   size?: ValueOf<typeof sizes>
   actions?: ReactNode
   caption?: ReactNode
@@ -123,19 +121,19 @@ const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
   }
 ) as EmptyStateComponent
 
-const Actions: React.FC<HTMLAttributes<HTMLDivElement>> = props => (
+const Actions: React.FC<HTMLPropsFor<'div'>> = props => (
   <Context.Consumer>
     {ctx => <div {...styles.actions(props, ctx)} {...props} />}
   </Context.Consumer>
 )
 
-const Caption: React.FC<HTMLAttributes<HTMLParagraphElement>> = props => (
+const Caption: React.FC<HTMLPropsFor<'p'>> = props => (
   <Context.Consumer>
     {ctx => <p {...styles.caption(props, ctx)} {...props} />}
   </Context.Consumer>
 )
 
-interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+interface HeadingProps extends HTMLPropsFor<'h1'> {
   as?: keyof Pick<JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5'>
 }
 
@@ -149,7 +147,7 @@ const Heading: React.FC<HeadingProps> = props => {
   )
 }
 
-interface IllustrationProps extends HTMLAttributes<SVGElement> {
+interface IllustrationProps extends HTMLPropsFor<'svg'> {
   name?: ValueOf<typeof illustrationNames>
 }
 

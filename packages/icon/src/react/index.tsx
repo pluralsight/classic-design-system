@@ -1,10 +1,10 @@
 import {
+  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-
 import { StyleAttribute, css } from 'glamor'
-import React, { HTMLAttributes, forwardRef } from 'react'
+import React, { forwardRef } from 'react'
 
 import stylesheet from '../css'
 import { colors, sizes } from '../vars'
@@ -20,7 +20,7 @@ const style: { [name: string]: StyleFn } = {
     )
 }
 
-export interface IconProps extends HTMLAttributes<HTMLDivElement> {
+export interface IconProps extends HTMLPropsFor<'div'> {
   color?: ValueOf<typeof colors>
   size?: ValueOf<typeof sizes>
 }
