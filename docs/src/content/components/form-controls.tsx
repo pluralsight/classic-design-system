@@ -1,58 +1,15 @@
-import React, { HTMLAttributes } from 'react'
-import {
-  layout,
-  colorsBorder,
-  colorsOrange
-} from '@pluralsight/ps-design-system-core'
+import React, { FC } from 'react'
+import { layout } from '@pluralsight/ps-design-system-core'
 import { CloseIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
-import Link from '@pluralsight/ps-design-system-link'
 import Switch from '@pluralsight/ps-design-system-switch'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import { omit } from '../../components/util'
+import { A } from '../../components/mdx'
 
-interface Props extends HTMLAttributes<HTMLDivElement> {}
-
-export const FormFocusable: React.FC<Props> = props => (
-  <div className="focusable">
-    <style>{`
-      
-    `}</style>
-    {props.children}
-    <style>{`
-      .focusable {
-        position: relative;
-        z-index: 0;
-      }
-      .comp {
-        padding-bottom: ${layout.spacingLarge};
-        border-bottom: 1px solid ${colorsBorder.lowOnDark};
-        margin-bottom: ${layout.spacingXLarge};
-      }
-      .label {
-        margin-bottom: ${layout.spacingLarge};
-      }
-      .desc {
-        display: inline-block;
-        margin-right: ${layout.spacingXSmall};
-      }
-      .link {
-        display: inline-flex;
-        align-items: center;
-        color: ${colorsOrange[6]};
-      }
-      @media (min-width: 769px) {
-        .comp {
-          display: grid;
-          grid-template-columns: 50% 50%;
-          gap: ${layout.spacingLarge};
-        }
-      }
-    `}</style>
-  </div>
-)
+import * as styles from './form-controls.module.css'
 
 export const TagExample = () => {
   const [tags, setTags] = React.useState([
@@ -134,18 +91,21 @@ export const SwitchExample = () => {
   )
 }
 
-export const Comp = props => (
-  <div className="comp">
-    <div className="label">
+interface ControlExampleProps {
+  title: string
+  desc: string
+  href: string
+}
+export const ControlExample: FC<ControlExampleProps> = props => (
+  <div className={styles.control}>
+    <div className={styles.label}>
       <Text.Heading size={Text.Heading.sizes.medium}>
         <h3>{props.title}</h3>
       </Text.Heading>
       <div>
-        <span className="desc">{props.desc}</span>
+        <span className={styles.desc}>{props.desc}</span>
         <span className="link">
-          <Link>
-            <a href={props.href}>Docs</a>
-          </Link>
+          <A href={props.href}>Docs</A>
           <CaretRightIcon size={CaretRightIcon.sizes.small} />
         </span>
       </div>

@@ -46,7 +46,7 @@ const Breadcrumb = React.forwardRef<
         icon={<CaretLeftIcon />}
         loading={loading}
         onClick={onClick}
-        ref={ref}
+        ref={ref as any}
         size={Button.sizes.small}
       >
         {props.children}

@@ -11,7 +11,9 @@ describe('DatePicker', () => {
   })
 
   it('renders', () => {
-    const { getByTestId } = render(<DatePicker data-testid="mock-component" />)
+    const { getByTestId } = render(
+      <DatePicker data-testid="mock-component" value={undefined} />
+    )
 
     expect(getByTestId('mock-component')).toBeInTheDocument()
   })
@@ -19,74 +21,90 @@ describe('DatePicker', () => {
   it('forwards refs', () => {
     const ref = React.createRef<HTMLInputElement>()
 
-    render(<DatePicker ref={ref} />)
+    render(<DatePicker ref={ref} value={undefined} />)
 
     expect(ref.current).not.toBeNull()
   })
 
+  it('opens calendar on icon click', () => {
+    const { getByText, getByLabelText, container, rerender } = render(
+      <DatePicker value={new Date(1993, 0, 20)} />
+    )
+    const icon = getByLabelText('calendar icon', { selector: 'svg' })
+
+    fireEvent.click(icon)
+
+    const calendar = getByText('January 1993')
+
+    expect(calendar).toBeInTheDocument()
+  })
+
   describe('onBlur prop', () => {
-    it('should call onBlur when onBlur is called for a valid date', () => {
+    it('calls onBlur when onBlur is called for a valid date', () => {
       const onBlurMock = jest.fn()
+      const date = new Date(2001, 7, 14)
       const { getByDisplayValue } = render(
-        <DatePicker value="8/14/2001" onSubBlur={onBlurMock} />
+        <DatePicker value={date} onSubBlur={onBlurMock} />
       )
       fireEvent.blur(getByDisplayValue('2001'))
       expect(onBlurMock).toHaveBeenCalledTimes(1)
-      expect(onBlurMock).toHaveBeenCalledWith('8/14/2001', expect.any(Object))
+      expect(onBlurMock).toHaveBeenCalledWith(expect.any(Object), date)
     })
 
-    it('should call onBlur when onBlur is called for an invalid date', () => {
+    it('calls onBlur when onBlur is called for an invalid date', () => {
       const onBlurMock = jest.fn()
+      const date = new Date(2001, 7, 14)
       const { getByDisplayValue } = render(
-        <DatePicker value="8/14/2001" onSubBlur={onBlurMock} />
+        <DatePicker value={date} onSubBlur={onBlurMock} />
       )
       const yearSubField = getByDisplayValue('2001')
       fireEvent.change(yearSubField, { target: { value: '' } })
       fireEvent.blur(yearSubField)
       expect(onBlurMock).toHaveBeenCalledTimes(1)
-      expect(onBlurMock).toHaveBeenCalledWith(undefined, expect.any(Object))
+      expect(onBlurMock).toHaveBeenCalledWith(expect.any(Object), undefined)
     })
   })
 
-  describe('with a controlled value', () => {
-    it('derives initial value from prop', () => {
-      const { container, rerender } = render(<DatePicker value="1/20/1993" />)
+  it('derives initial value from prop', () => {
+    const date = new Date(1993, 0, 20)
+    const { container } = render(<DatePicker value={date} />)
 
-      const fields: { [key: string]: HTMLInputElement } = {
-        day: container.querySelector<HTMLInputElement>(
-          '[name="dd"]'
-        ) as HTMLInputElement,
-        month: container.querySelector<HTMLInputElement>(
-          '[name="mm"]'
-        ) as HTMLInputElement,
-        year: container.querySelector<HTMLInputElement>(
-          '[name="yyyy"]'
-        ) as HTMLInputElement
-      }
-      expect(fields.day.value).toEqual('20')
-      expect(fields.month.value).toEqual('1')
-      expect(fields.year.value).toEqual('1993')
-    })
+    const fields: { [key: string]: HTMLInputElement } = {
+      day: container.querySelector<HTMLInputElement>(
+        '[name="dd"]'
+      ) as HTMLInputElement,
+      month: container.querySelector<HTMLInputElement>(
+        '[name="mm"]'
+      ) as HTMLInputElement,
+      year: container.querySelector<HTMLInputElement>(
+        '[name="yyyy"]'
+      ) as HTMLInputElement
+    }
+    expect(parseInt(fields.day.value, 10)).toEqual(date.getDate())
+    expect(parseInt(fields.month.value, 10)).toEqual(date.getMonth() + 1)
+    expect(parseInt(fields.year.value, 10)).toEqual(date.getFullYear())
+  })
 
-    it('should update on prop change', () => {
-      const { container, rerender } = render(<DatePicker value="1/20/1993" />)
+  it('updates render state on prop change', () => {
+    const date = new Date(1993, 0, 20)
+    const { container, rerender } = render(<DatePicker value={date} />)
 
-      const fields: { [key: string]: HTMLInputElement } = {
-        day: container.querySelector<HTMLInputElement>(
-          '[name="dd"]'
-        ) as HTMLInputElement,
-        month: container.querySelector<HTMLInputElement>(
-          '[name="mm"]'
-        ) as HTMLInputElement,
-        year: container.querySelector<HTMLInputElement>(
-          '[name="yyyy"]'
-        ) as HTMLInputElement
-      }
-      rerender(<DatePicker value="8/14/2001" />)
+    const newDate = new Date(2001, 7, 14)
+    rerender(<DatePicker value={newDate} />)
+    const fields: { [key: string]: HTMLInputElement } = {
+      day: container.querySelector<HTMLInputElement>(
+        '[name="dd"]'
+      ) as HTMLInputElement,
+      month: container.querySelector<HTMLInputElement>(
+        '[name="mm"]'
+      ) as HTMLInputElement,
+      year: container.querySelector<HTMLInputElement>(
+        '[name="yyyy"]'
+      ) as HTMLInputElement
+    }
 
-      expect(fields.day.value).toEqual('14')
-      expect(fields.month.value).toEqual('8')
-      expect(fields.year.value).toEqual('2001')
-    })
+    expect(parseInt(fields.day.value, 10)).toEqual(newDate.getDate())
+    expect(parseInt(fields.month.value, 10)).toEqual(newDate.getMonth() + 1)
+    expect(parseInt(fields.year.value, 10)).toEqual(newDate.getFullYear())
   })
 })

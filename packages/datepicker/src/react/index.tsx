@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import Halo from '@pluralsight/ps-design-system-halo'
 import { CalendarIcon, WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
@@ -10,18 +11,19 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React from 'react'
+import React, {
+  FC,
+  ReactNode,
+  forwardRef,
+  useEffect,
+  useRef,
+  useState
+} from 'react'
 
-import Calendar from './calendar'
+import { Calendar, Overlay } from './calendar'
 import stylesheet from '../css'
-import {
-  formatDate,
-  forceValidDay,
-  forceValidMonth,
-  forceValidYear,
-  parseDate
-} from '../js'
-import { DateParts, DatePartKey } from '../js/types'
+import { convertPartsToDate, formatISO8601, areValidParts } from '../js'
+import { SubField, SubFieldDivider } from './sub-field'
 import * as vars from '../vars'
 
 const styles = {
@@ -65,21 +67,6 @@ const styles = {
       css(stylesheet['.psds-date-picker__icon']),
       css(stylesheet[`.psds-date-picker__icon--appearance-${appearance}`])
     ),
-  overlay: () => css(stylesheet['.psds-date-picker__overlay']),
-  subField: (appearance: ValueOf<typeof vars.appearances>) =>
-    compose(
-      css(stylesheet['.psds-date-picker__sub-field']),
-      css(stylesheet[`.psds-date-picker__sub-field--appearance-${appearance}`])
-    ),
-  subFieldDivider: (appearance: ValueOf<typeof vars.appearances>) =>
-    compose(
-      css(stylesheet['.psds-date-picker__sub-field-divider']),
-      css(
-        stylesheet[
-          `.psds-date-picker__sub-field-divider--appearance-${appearance}`
-        ]
-      )
-    ),
   subLabel: (themeName: ValueOf<typeof themeNames>) =>
     compose(
       css(stylesheet['.psds-date-picker__sub-label']),
@@ -87,21 +74,22 @@ const styles = {
     )
 }
 
+// TODO: refactor util to match this
+export type HTMLPropsFor<
+  Tag extends keyof JSX.IntrinsicElements
+> = JSX.IntrinsicElements[Tag]
+
 interface DatePickerProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onSelect'>,
-    Record<string, unknown> {
+  extends Omit<HTMLPropsFor<'input'>, 'value' | 'onSelect'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean
-  label?: React.ReactNode
-  onKeyDown?: (evt: React.KeyboardEvent) => void
-  onSelect?: (
-    newDateString: string | undefined,
-    newDateParts?: DateParts
-  ) => void
-  onSubBlur?: (date: string | undefined, evt: React.FocusEvent) => void
-  subLabel?: React.ReactNode
-  value?: string
+  label?: ReactNode
+  onKeyDown?: React.KeyboardEventHandler
+  onSelect?: (evt: React.FocusEvent | React.MouseEvent, newDate: Date) => void
+  onSubBlur?: (evt: React.FocusEvent, date: Date | undefined) => void
+  subLabel?: ReactNode
+  value: Date | undefined
 }
 
 interface DatePickerStatics {
@@ -115,292 +103,198 @@ interface DatePickerComponent
     DatePickerStatics
   > {}
 
-const DatePicker = React.forwardRef((props, ref) => {
-  const {
-    appearance = vars.appearances.default,
-    disabled,
-    error,
-    className,
-    label,
-    onSelect,
-    onSubBlur,
-    style,
-    subLabel,
-    ...rest
-  } = props
+const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
+  (props, ref) => {
+    const {
+      appearance = vars.appearances.default,
+      disabled,
+      error,
+      className,
+      label,
+      onSelect,
+      onSubBlur,
+      style,
+      subLabel,
+      value: valueFromProps,
+      ...rest
+    } = props
 
-  const themeName = useTheme()
-  const value = React.useMemo(() => parseDate(props.value), [props.value])
+    const themeName = useTheme()
+    const [value, setValue] = useState<Date | undefined>(valueFromProps)
+    const [yyyy, setYYYY] = useState(value?.getFullYear())
+    const [mm, setMM] = useState(value ? value.getMonth() + 1 : undefined)
+    const [dd, setDD] = useState(value?.getDate())
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  React.useEffect(
-    function updateDateOnPropChange() {
-      setDate(value)
-    },
-    [value]
-  )
-
-  const [date, setDate] = React.useState<DateParts>(value)
-
-  const [isOpen, setIsOpen] = React.useState<boolean>(false)
-  const toggleIsOpen = (nextIsOpen = !isOpen) => setIsOpen(nextIsOpen)
-
-  function handleCalendarSelect(value: string | undefined) {
-    const nextDate = parseDate(value)
-    setDate(nextDate)
-    setIsOpen(false)
-
-    if (typeof props.onSelect === 'function') {
-      props.onSelect(formatDate(nextDate), nextDate)
-    }
-  }
-
-  function chooseValidationRule(key: DatePartKey) {
-    switch (key) {
-      case 'mm':
-        return /^\d{0,2}$/
-        break
-      case 'dd':
-        return /^\d{0,2}$/
-        break
-      case 'yyyy':
-        return /^\d{0,4}$/
-        break
-      default:
-        return /^IMPAWSIBLE$/
-    }
-  }
-
-  function handleChange(evt: React.ChangeEvent) {
-    const target = evt.target as HTMLInputElement
-    const name = target.name as DatePartKey
-    const value = target.value
-
-    if (chooseValidationRule(name).test(value)) {
-      const nextDate = { ...date, [name]: value }
-      setDate(nextDate)
-    }
-  }
-
-  function handleIconClick(evt: React.MouseEvent) {
-    evt.preventDefault()
-  }
-
-  const handleKeyDown = combineFns((evt: React.KeyboardEvent) => {
-    if (!isEscape(evt)) return
-
-    evt.stopPropagation()
-    evt.preventDefault()
-
-    setIsOpen(false)
-  }, props.onKeyDown)
-
-  function handleOverlayClick(evt: React.MouseEvent) {
-    evt.preventDefault()
-    setIsOpen(false)
-  }
-
-  function handleSubFieldBlur(evt: React.FocusEvent) {
-    const target = evt.target as HTMLInputElement
-    const name = target.name as DatePartKey
-    const value = target.value
-    const forceValidValueFor: {
-      dd: (date?: DateParts | undefined) => string
-      mm: (date?: Pick<DateParts, 'mm'> | undefined) => string
-      yyyy: (date?: Pick<DateParts, 'yyyy'> | undefined) => string
-    } = {
-      dd: forceValidDay,
-      mm: forceValidMonth,
-      yyyy: forceValidYear
-    }
-    // TODO: maybe rework this to be less bug prone and make it typeable at the same time
-    const currentDateOverwrittenByEventValue = {
-      ...date,
-      [name]: value
-    }
-    const alwaysReValidateDay = forceValidValueFor.dd(
-      currentDateOverwrittenByEventValue
+    useEffect(
+      function updateDateOnPropChange() {
+        setValue(valueFromProps)
+        setYYYY(valueFromProps?.getFullYear())
+        setMM(valueFromProps ? valueFromProps.getMonth() + 1 : undefined)
+        setDD(valueFromProps?.getDate())
+      },
+      [valueFromProps]
     )
 
-    const nextDate = ({
-      dd: alwaysReValidateDay,
-      [name]: forceValidValueFor[name](currentDateOverwrittenByEventValue)
-    } as unknown) as DateParts
+    function handleCalendarSelect(evt: React.MouseEvent, date: Date) {
+      setValue(date)
+      setIsOpen(false)
 
-    const onBlurDate = {
-      ...currentDateOverwrittenByEventValue,
-      ...nextDate
+      if (typeof props.onSelect === 'function') {
+        props.onSelect(evt, date)
+      }
     }
 
-    setDate(nextDate)
-
-    if (typeof onSubBlur === 'function') {
-      onSubBlur(formatDate(onBlurDate), evt)
+    function handleIconClick(evt: React.MouseEvent) {
+      evt.preventDefault()
+      setIsOpen(!isOpen)
     }
-    if (isValidDate(nextDate) && typeof onSelect === 'function') {
-      onSelect(formatDate(nextDate), nextDate)
+
+    const handleKeyDown = combineFns((evt: React.KeyboardEvent) => {
+      if (evt.key !== 'Escape') return
+
+      evt.stopPropagation()
+      evt.preventDefault()
+
+      setIsOpen(false)
+    }, props.onKeyDown)
+
+    function handleOverlayClick(evt: React.MouseEvent) {
+      evt.preventDefault()
+      setIsOpen(false)
     }
-  }
 
-  function handleSubFieldFocus() {
-    setIsOpen(false)
-  }
+    function handleSubFieldBlur(evt: React.FocusEvent) {
+      const target = evt.target as HTMLInputElement
+      const name = target.name
 
-  return (
-    <label
-      {...styles.datePicker(disabled, themeName)}
-      className={className}
-      onKeyDown={handleKeyDown}
-      style={style}
-    >
-      {label && <div {...styles.label(themeName)}>{label}</div>}
+      let year = yyyy
+      let month = mm
+      let day = dd
 
-      <Halo error={error} gapSize={Halo.gapSizes.small}>
-        <div {...styles.fieldContainer(appearance, themeName)}>
-          <SubField
-            appearance={appearance}
-            onChange={handleChange}
-            onFocus={handleSubFieldFocus}
-            onBlur={handleSubFieldBlur}
-            value={date.mm}
-            name="mm"
-            disabled={disabled}
-            style={{ width: '32px' }}
-          />
+      if (name === 'yyyy') {
+        const yyyy = parseInt(target.value, 10)
+        setYYYY(yyyy)
+        year = yyyy
+      } else if (name === 'mm') {
+        const mm = parseInt(target.value, 10)
+        setMM(parseInt(target.value, 10))
+        month = mm
+      } else if (name === 'dd') {
+        const dd = parseInt(target.value, 10)
+        setDD(parseInt(target.value, 10))
+        day = dd
+      }
 
-          <SubFieldDivider appearance={appearance} />
+      const newValidDate = areValidParts(year, month, day)
+        ? convertPartsToDate(year!, month!, day!)
+        : undefined
+      if (typeof onSubBlur === 'function') {
+        onSubBlur(evt, newValidDate)
+      }
+      if (newValidDate) {
+        setValue(newValidDate)
+        if (typeof onSelect === 'function') {
+          onSelect(evt, newValidDate)
+        }
+      }
+    }
 
-          <SubField
-            appearance={appearance}
-            onChange={handleChange}
-            onFocus={handleSubFieldFocus}
-            onBlur={handleSubFieldBlur}
-            value={date.dd}
-            name="dd"
-            disabled={disabled}
-            style={{ width: '24px' }}
-          />
+    function handleSubFieldFocus() {
+      setIsOpen(false)
+    }
 
-          <SubFieldDivider appearance={appearance} />
+    return (
+      <label
+        {...styles.datePicker(disabled, themeName)}
+        className={className}
+        onKeyDown={handleKeyDown}
+        style={style}
+      >
+        {label && <div {...styles.label(themeName)}>{label}</div>}
 
-          <SubField
-            appearance={appearance}
-            onChange={handleChange}
-            onFocus={handleSubFieldFocus}
-            onBlur={handleSubFieldBlur}
-            value={date.yyyy}
-            name="yyyy"
-            disabled={disabled}
-            style={{ width: '48px' }}
-          />
-
-          <input
-            {...styles.field()}
-            {...rest}
-            tabIndex={-1}
-            readOnly
-            disabled={disabled}
-            ref={ref}
-          />
-
-          <button
-            {...styles.icon(appearance)}
-            disabled={disabled}
-            onClick={handleIconClick}
+        <Halo error={error} gapSize={Halo.gapSizes.small}>
+          <div
+            {...styles.fieldContainer(appearance, themeName)}
+            key={value?.getTime()}
           >
-            <CalendarIcon />
-          </button>
+            <SubField
+              appearance={appearance}
+              onFocus={handleSubFieldFocus}
+              onBlur={handleSubFieldBlur}
+              value={value ? value.getMonth() + 1 : undefined}
+              name="mm"
+              disabled={disabled}
+              style={{ width: '32px' }}
+            />
 
-          {error && (
-            <div {...styles.error()}>
-              <WarningIcon />
-            </div>
-          )}
-        </div>
-      </Halo>
+            <SubFieldDivider appearance={appearance} />
 
-      {isOpen && (
-        <>
-          <Overlay onClick={handleOverlayClick} />
+            <SubField
+              appearance={appearance}
+              onFocus={handleSubFieldFocus}
+              onBlur={handleSubFieldBlur}
+              value={value ? value.getDate() : undefined}
+              name="dd"
+              disabled={disabled}
+              style={{ width: '24px' }}
+            />
 
-          <div {...styles.calendarContainer()}>
-            <Calendar date={date} onSelect={handleCalendarSelect} />
+            <SubFieldDivider appearance={appearance} />
+
+            <SubField
+              appearance={appearance}
+              onFocus={handleSubFieldFocus}
+              onBlur={handleSubFieldBlur}
+              value={value ? value.getFullYear() : undefined}
+              name="yyyy"
+              disabled={disabled}
+              style={{ width: '48px' }}
+            />
+
+            <input
+              {...styles.field()}
+              {...rest}
+              tabIndex={-1}
+              readOnly
+              disabled={disabled}
+              ref={ref}
+              value={value ? formatISO8601(value) : undefined}
+            />
+
+            <button
+              {...styles.icon(appearance)}
+              disabled={disabled}
+              onClick={handleIconClick}
+            >
+              <CalendarIcon />
+            </button>
+
+            {error && (
+              <div {...styles.error()}>
+                <WarningIcon />
+              </div>
+            )}
           </div>
-        </>
-      )}
+        </Halo>
 
-      {subLabel && <div {...styles.subLabel(themeName)}>{subLabel}</div>}
-    </label>
-  )
-}) as DatePickerComponent
+        {isOpen && (
+          <>
+            <Overlay onClick={handleOverlayClick} />
+
+            <div {...styles.calendarContainer()}>
+              <Calendar value={value} onSelect={handleCalendarSelect} />
+            </div>
+          </>
+        )}
+
+        {subLabel && <div {...styles.subLabel(themeName)}>{subLabel}</div>}
+      </label>
+    )
+  }
+) as DatePickerComponent
 
 DatePicker.appearances = vars.appearances
-export const appearances = DatePicker.appearances
+export const appearances = vars.appearances
 
 export default DatePicker
-
-interface OverlayProps {
-  onClick: (evt: React.MouseEvent) => void
-}
-const Overlay: React.FC<OverlayProps> = props => {
-  return <div {...styles.overlay()} onClick={props.onClick} />
-}
-
-interface SubFieldProps
-  extends Omit<
-    React.HTMLAttributes<HTMLInputElement>,
-    'onBlur' | 'onChange' | 'onFocus'
-  > {
-  appearance: ValueOf<typeof vars.appearances>
-  disabled?: boolean
-  name: string
-  onBlur: (evt: React.FocusEvent) => void
-  onChange: (evt: React.ChangeEvent) => void
-  onFocus: (evt: React.FocusEvent) => void
-  value?: string | number
-}
-const SubField: React.FC<SubFieldProps> = props => {
-  const {
-    appearance,
-    disabled,
-    name,
-    onBlur,
-    onChange,
-    onFocus,
-    value,
-    ...rest
-  } = props
-  const ref = React.useRef<HTMLInputElement>(null)
-  const handleFocus = combineFns<[React.FocusEvent]>(() => {
-    if (ref.current) ref.current.select()
-  }, onFocus)
-
-  return (
-    <input
-      {...styles.subField(appearance)}
-      {...rest}
-      disabled={disabled}
-      name={name}
-      onBlur={onBlur}
-      onChange={onChange}
-      onFocus={handleFocus}
-      placeholder={(value || name).toString()}
-      ref={ref}
-      value={value}
-    />
-  )
-}
-
-const SubFieldDivider: React.FC<{
-  appearance: ValueOf<typeof vars.appearances>
-}> = ({ appearance }) => <span {...styles.subFieldDivider(appearance)}>/</span>
-
-function isEscape(evt: React.KeyboardEvent) {
-  return evt.key === 'Escape'
-}
-
-function isValidDate({ mm, dd, yyyy }: DateParts) {
-  const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd))
-  const someFields = mm || dd || yyyy
-  const jsDateWorks = !!date && date.getMonth() + 1 === parseInt(mm, 10)
-  return !someFields || (someFields && jsDateWorks)
-}

@@ -1,16 +1,14 @@
-import { compose, css, media } from 'glamor'
-import React, { HTMLAttributes } from 'react'
-
 import Button from '@pluralsight/ps-design-system-button'
 import { headingSizes } from '@pluralsight/ps-design-system-text'
 import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { compose, css, media } from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css'
-
 import Heading from './heading'
 import icons from './icon-loader'
 
@@ -83,7 +81,7 @@ const SearchForm: React.FC<Pick<ErrorPageProps, 'action'>> = props => {
   )
 }
 
-export interface ErrorPageProps extends HTMLAttributes<HTMLDivElement> {
+export interface ErrorPageProps extends HTMLPropsFor<'div'> {
   action?: string
   code?: string
   href?: string

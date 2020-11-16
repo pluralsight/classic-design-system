@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@1.2.8...@pluralsight/ps-design-system-navbar@1.2.9) (2020-11-12)
+
+
+### Bug Fixes
+
+* **navbar:** pass click handler through renderProps ([05f7527](https://github.com/pluralsight/design-system/commit/05f752783b5990208e05d9d10b73e7dcd2d01d8f))
+
+
+
+
+
 ## [1.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@1.2.7...@pluralsight/ps-design-system-navbar@1.2.8) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navbar

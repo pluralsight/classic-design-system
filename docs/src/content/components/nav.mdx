@@ -122,7 +122,10 @@ function Example() {
       </NavItem>
       <NavItem icon={<HomeIcon />}>Label</NavItem>
       <NavItem menu={<div>placeholder</div>}>Label</NavItem>
-      <NavItem>Label</NavItem>
+      <NavItem renderContainer={props => <a href="#" {...props} />}>
+        Label
+      </NavItem>
+
       <NavItem icon={<HomeIcon />} alignment={NavItem.alignments.vertical}>
         Label
       </NavItem>
@@ -167,7 +170,7 @@ export default Example
     desc="active element indicator"
   />
   <TypesProp name="children" type="React.ReactNode" desc="label" />
-  <TypesProp name="href" type="string" desc="destination url; renders anchor" />
+  <TypesProp name="renderContainer" type="(props) => React.ReactNode" desc="render custom link element" />
   <TypesProp name="icon" type="React.ReactNode" desc="icon displayed" />
   <TypesProp
     name="menu"

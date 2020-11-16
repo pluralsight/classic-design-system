@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@7.2.0...@pluralsight/ps-design-system-tag@7.2.1) (2020-11-13)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tag
+
+
+
+
+
+# [7.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@7.1.9...@pluralsight/ps-design-system-tag@7.2.0) (2020-11-13)
+
+
+### Bug Fixes
+
+* **tag:** lint fix ([26716b7](https://github.com/pluralsight/design-system/commit/26716b78d7dcf78d0386ccc5e69c297fa0ec87b5))
+* **tag:** updat polymorphic typing ([2eb1bc2](https://github.com/pluralsight/design-system/commit/2eb1bc2acaa4e9d917b1218075820e1c95c57243))
+* pr changes ([1f5cd84](https://github.com/pluralsight/design-system/commit/1f5cd84efc5363a2ab8708e0a1b1a4eed3355d09))
+
+
+### Features
+
+* **tag:** rename type ([2f76af5](https://github.com/pluralsight/design-system/commit/2f76af57c52f8fe66ba856c84f033402512f084b))
+* **tag:** ts conversion ([1015205](https://github.com/pluralsight/design-system/commit/10152055eb698b11d098d9b23eba86840c160460))
+* **tag:** use typing pattern from navband ([85f057a](https://github.com/pluralsight/design-system/commit/85f057ab57eeb0e7b94d552c4ded8ffe687b76a8))
+
+
+
+
+
+## [7.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@7.1.8...@pluralsight/ps-design-system-tag@7.1.9) (2020-11-12)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tag
+
+
+
+
+
 ## [7.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@7.1.7...@pluralsight/ps-design-system-tag@7.1.8) (2020-11-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tag
