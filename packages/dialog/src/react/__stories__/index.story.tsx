@@ -1,18 +1,18 @@
-import React, { HTMLAttributes } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
 
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
-import Dialog, { DialogProps } from '..'
+import Dialog from '..'
 
 const closeAction = action('close')
 const openAction = action('open')
 
-const MockDialog: React.FC<DialogProps> = props => {
+const MockDialog: React.FC<React.ComponentProps<typeof Dialog>> = props => {
   const children = props.children || (
     <>
       <Text.Heading>
@@ -44,8 +44,6 @@ const MockDialog: React.FC<DialogProps> = props => {
   return <Dialog {...props}>{children}</Dialog>
 }
 
-MockDialog.propTypes = { children: PropTypes.node }
-
 storiesOf('onClose', module)
   .add('with onClose', () => <MockDialog onClose={closeAction} />)
   .add('with disableCloseButton', () => (
@@ -63,7 +61,7 @@ Object.values(Dialog.tailPositions).forEach(pos =>
   positionStories.add(pos, () => <MockDialog tailPosition={pos} />)
 )
 
-interface ModalStoryProps extends HTMLAttributes<HTMLDivElement> {
+interface ModalStoryProps extends HTMLPropsFor<'div'> {
   children: (
     storyProps: Record<string, unknown>,
     callbacks: Record<string, unknown>
