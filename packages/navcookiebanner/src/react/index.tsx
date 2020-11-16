@@ -1,4 +1,5 @@
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
 import React from 'react'
 import { useCookies } from 'react-cookie'
@@ -22,7 +23,7 @@ const styles = {
   dismiss: () => css(stylesheet['.psds-navcookiebanner__dismiss'])
 }
 
-interface NavCookieBannerProps extends React.HTMLAttributes<HTMLDivElement> {
+interface NavCookieBannerProps extends HTMLPropsFor<'div'> {
   cookieOptions?: CookieSetOptions
   message?: React.ReactNode
   privacyUpdatedDate?: typeof Date
