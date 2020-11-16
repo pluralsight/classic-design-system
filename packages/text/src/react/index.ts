@@ -1,4 +1,3 @@
-export { default as Caps } from './caps'
 export { default as Code } from './code'
 export { default as Heading } from './heading'
 export { default as Label } from './label'

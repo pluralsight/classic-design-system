@@ -14,43 +14,6 @@ import {
 import * as vars from '../vars'
 
 export default {
-  [`.psds-text__caps`]: {
-    fontWeight: '400'
-  },
-  [`.psds-text__caps--strong`]: {
-    fontWeight: '600'
-  },
-  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-  [`.psds-text__caps--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__caps--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
-  [`.psds-text__caps--size-${vars.capsSizes.small}`]: {
-    textTransform: 'uppercase',
-    fontSize: '10px',
-    letterSpacing: '0.08em',
-    lineHeight: '16px',
-  },
-  [`.psds-text__caps--size-${vars.capsSizes.medium}`]: {
-    textTransform: 'uppercase',
-    fontSize: '12px',
-    letterSpacing: '0.08em',
-    lineHeight: '16px',
-  },
-  [`.psds-text__caps--size-${vars.capsSizes.large}`]: {
-    textTransform: 'uppercase',
-    fontSize: '14px',
-    letterSpacing: '0.07em',
-    lineHeight: '20px',
-  },
-
 
   '.psds-text__code': {
     padding: `0 ${layout.spacingXXSmall}`,
@@ -120,6 +83,10 @@ export default {
   },
   [`.psds-text__label--strong`]: {
     fontWeight: '600'
+  },
+  [`.psds-text__label--caps`]: {
+    textTransform: 'uppercase',
+    letterSpacing: '.1em'
   },
   [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
