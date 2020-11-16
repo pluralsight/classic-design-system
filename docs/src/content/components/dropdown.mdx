@@ -189,6 +189,40 @@ const Comp = () => (
 export default Comp
 ```
 
+### Max-height
+Ther dropdown component menu has a max height of 400px
+```typescript
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Comp = () => (
+  <Dropdown
+    label="max height example"
+    menu={
+       <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Three item</Dropdown.Item>
+          <Dropdown.Item>Four item</Dropdown.Item>
+          <Dropdown.Item>Five item</Dropdown.Item>
+          <Dropdown.Item>Six item</Dropdown.Item>
+          <Dropdown.Item>Seven item</Dropdown.Item>
+          <Dropdown.Item>Eight item</Dropdown.Item>
+          <Dropdown.Item>Nine item</Dropdown.Item>
+          <Dropdown.Item>Ten item</Dropdown.Item>
+          <Dropdown.Item>Eleven item</Dropdown.Item>
+          <Dropdown.Item>Twelve item</Dropdown.Item>
+          <Dropdown.Item>Thirteen item</Dropdown.Item>
+          <Dropdown.Item>Fourteen item</Dropdown.Item>
+          <Dropdown.Item>Fifteen item</Dropdown.Item>
+        </>
+    }
+  />
+)
+
+export default Comp
+```
+
 ## Stateful Example
 
 ```typescript
