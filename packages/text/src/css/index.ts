@@ -55,34 +55,34 @@ export default {
   [`.psds-text__heading--size-${vars.headingSizes.xSmall}`]: {
     fontSize: '20px',
     lineHeight: '28px',
-    fontWeight: '700'
+    fontWeight: '600'
   },
   [`.psds-text__heading--size-${vars.headingSizes.small}`]: {
     fontSize: '24px',
     lineHeight: '32px',
-    fontWeight: '700'
+    fontWeight: '600'
   },
   [`.psds-text__heading--size-${vars.headingSizes.medium}`]: {
     fontSize: '28px',
     lineHeight: '36px',
-    fontWeight: '700'
+    fontWeight: '600'
   },
   [`.psds-text__heading--size-${vars.headingSizes.large}`]: {
     fontSize: '34px',
     lineHeight: '40px',
-    fontWeight: '700'
+    fontWeight: '600'
   },
   [`.psds-text__heading--size-${vars.headingSizes.xLarge}`]: {
     fontSize: '40px',
     lineHeight: '52px',
-    fontWeight: '700'
+    fontWeight: '600'
   },
 
   [`.psds-text__label`]: {
     fontWeight: '400'
   },
   [`.psds-text__label--strong`]: {
-    fontWeight: '600'
+    fontWeight: '500'
   },
   [`.psds-text__label--caps`]: {
     textTransform: 'uppercase',
