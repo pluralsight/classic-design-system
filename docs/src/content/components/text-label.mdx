@@ -13,6 +13,8 @@ import { Label } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
+### Default label styles
+
 ```typescript
 import { Label } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -110,6 +112,147 @@ const Example: React.FC = props => {
 export default Example
 ```
 
+### Uppercase label styles
+
+Use all caps text styles sparingly. These can be appropriate for use in badges or in eyebrow headings. Heading styles should be used for headings. Never use these styles for multiple lines of text.
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Label
+          size={Label.sizes.large}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (large, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.primary} caps>
+          Label (large, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.large}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (large, Secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.secondary} caps>
+          Label (large, secondary, caps)
+        </Label>
+      </div>
+
+      <div>
+        <Label
+          size={Label.sizes.medium}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (medium, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.primary} caps>
+          Label (medium, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.medium}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (medium, secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.secondary} caps>
+          Label (medium, secondary, caps)
+        </Label>
+      </div>
+
+      <div>
+        <Label
+          size={Label.sizes.small}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (small, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.primary} caps>
+          Label (small, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.small}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (small, secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.secondary} caps>
+          Label (small, secondary, caps)
+        </Label>
+      </div>
+
+      <div>
+        <Label
+          size={Label.sizes.xSmall}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (xSmall, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.primary} caps>
+          Label (xSmall, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.xSmall}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (xSmall, secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.secondary} caps>
+          Label (xSmall, secondary, caps)
+        </Label>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
 ## Usage & types
 
 <Usage
@@ -123,14 +266,25 @@ export default Example
   <TypesProp
     name="size"
     type={<TypesEnum enum={Label.sizes} />}
-    desc="size of label (from Label.sizes)"
+    desc="Text size (from Label.sizes)"
     default={Label.sizes.normal}
   />
   <TypesProp
     name="color"
     type={<TypesEnum enum={Label.colors} />}
-    desc="colorof label (from Label.colors)"
+    desc="Text color (from Label.colors)"
     default={Label.colors.primary}
   />
-  <TypesProp name="strong" type="boolean" desc="Bold style" default="false" />
+  <TypesProp
+    name="strong"
+    type="boolean"
+    desc="Bold text style"
+    default="false"
+  />
+  <TypesProp
+    name="caps"
+    type="boolean"
+    desc="Uppercase text style"
+    default="false"
+  />
 </TypesTable>

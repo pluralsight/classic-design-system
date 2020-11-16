@@ -23,11 +23,9 @@
 .headerText {
   & h1 {
     margin-bottom: var(--psLayoutSpacingLarge);
-    font-weight: var(--psTypeFontWeightMedium);
   }
 
   & p {
-    font-size: var(--psTypeFontSizeMedium);
     line-height: var(--psTypeLineHeightStandard);
   }
 }

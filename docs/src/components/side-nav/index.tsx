@@ -206,10 +206,6 @@ const groups = [
         title: 'Label'
       },
       {
-        href: '/components/text-caps',
-        title: 'Caps'
-      },
-      {
         href: '/components/text-paragraph',
         title: 'Paragraph'
       },

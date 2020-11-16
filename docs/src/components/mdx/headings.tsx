@@ -9,7 +9,7 @@ export const H1: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   const className = cx(styles.h1, props.className)
 
   return (
-    <Text.Heading size={Text.Heading.sizes.xlarge} className={className}>
+    <Text.Heading size={Text.Heading.sizes.xLarge} className={className}>
       <h1 {...props}>{props.children}</h1>
     </Text.Heading>
   )
@@ -40,7 +40,7 @@ export const H3: React.FC<HTMLAttributes<HTMLHeadingElement>> = props => {
   const className = cx(styles.h3, props.className)
 
   return (
-    <Text.Heading size={Text.Heading.sizes.xsmall} className={className}>
+    <Text.Heading size={Text.Heading.sizes.xSmall} className={className}>
       <h3 {...props}>
         <LinkedHeaderText {...props} />
       </h3>
