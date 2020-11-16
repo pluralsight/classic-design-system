@@ -7,16 +7,12 @@ import { Caps } from '@pluralsight/ps-design-system-text'
 
 # Caps
 
-<Intro>Caps is an uppercase inline text element.</Intro>
+<Intro>For displaying uppsecase inline text elements in UI components.</Intro>
 
 <TableOfContents {...props} />
 
 ## Examples
 
-### Sizes
-
-Use the `size` prop to set the size.
-
 ```typescript
 import { Caps } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -25,41 +21,66 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <div>
-        <Caps size={Caps.sizes.large}>
-          Large. The technology skills platform
+        <Caps size={Caps.sizes.large} color={Caps.colors.primary} strong>
+          Caps (large, Primary, strong)
         </Caps>
       </div>
       <div>
-        <Caps size={Caps.sizes.medium}>
-          Medium. The technology skills platform
+        <Caps size={Caps.sizes.large} color={Caps.colors.primary}>
+          Caps (large, Primary)
         </Caps>
       </div>
       <div>
-        <Caps size={Label.sizes.small}>
-          Small. The technology skills platform
+        <Caps size={Caps.sizes.large} color={Caps.colors.secondary} strong>
+          Caps (large, secondary, strong)
         </Caps>
       </div>
-    </React.Fragment>
-  )
-}
-
-export default Example
-```
-
-### Colors
-
-For reduced emphasis use `Cap.colors.secondary`.
-
-```typescript
-import { Caps } from '@pluralsight/ps-design-system-text'
-import React from 'react'
-
-const Example: React.FC = props => {
-  return (
-    <React.Fragment>
       <div>
-        <Caps color={Caps.colors.primary}>Primary</Caps>
-        <Caps color={Caps.colors.secondary}>Secondary</Caps>
+        <Caps size={Caps.sizes.large} color={Caps.colors.secondary}>
+          Caps (large, secondary)
+        </Caps>
+      </div>
+
+      <div>
+        <Caps size={Caps.sizes.medium} color={Caps.colors.primary} strong>
+          Caps (Medium, Primary, strong)
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Caps.sizes.medium} color={Caps.colors.primary}>
+          Caps (Medium, Primary)
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Caps.sizes.medium} color={Caps.colors.secondary} strong>
+          Caps (Medium, secondary, strong)
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Caps.sizes.medium} color={Caps.colors.secondary}>
+          Caps (Medium, secondary)
+        </Caps>
+      </div>
+
+      <div>
+        <Caps size={Caps.sizes.small} color={Caps.colors.primary} strong>
+          Caps (Small, Primary, strong)
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Caps.sizes.small} color={Caps.colors.primary}>
+          Caps (Small, Primary)
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Caps.sizes.small} color={Caps.colors.secondary} strong>
+          Caps (Small, secondary, strong)
+        </Caps>
+      </div>
+      <div>
+        <Caps size={Caps.sizes.small} color={Caps.colors.secondary}>
+          Caps (Small, secondary)
+        </Caps>
       </div>
     </React.Fragment>
   )
@@ -90,4 +111,5 @@ export default Example
     desc="color (from Caps.colors)"
     default={Caps.colors.normal}
   />
+  <TypesProp name="strong" type="boolean" desc="Bold style" default="false" />
 </TypesTable>

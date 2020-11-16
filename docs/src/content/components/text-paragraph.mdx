@@ -7,14 +7,12 @@ import { P } from '@pluralsight/ps-design-system-text'
 
 # Paragraph
 
+<Intro>For displaying multiple lines of text.</Intro>
+
 <TableOfContents {...props} />
 
 ## Examples
 
-### Sizes
-
-Use the `size` prop to set the size.
-
 ```typescript
 import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -22,61 +20,58 @@ import React from 'react'
 const Example: React.FC = props => {
   return (
     <React.Fragment>
-      <P>
-        Normal Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <P size={P.sizes.large} color={P.colors.primary}>
+        Paragraph (large, primary) Lorem ipsum dolor sit amet adipisicing elit,
+        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
+        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
+      </P>
+      <P size={P.sizes.large} color={P.colors.secondary}>
+        Paragraph (large, secondary) Lorem ipsum dolor sit amet adipisicing
+        elit,
+        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
+        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
       </P>
 
-      <P size={P.sizes.large}>
-        Large Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <P size={P.sizes.normal} color={P.colors.primary}>
+        Paragraph (normal, primary) Lorem ipsum dolor sit amet adipisicing elit,
+        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
+        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
+      </P>
+      <P size={P.sizes.normal} color={P.colors.secondary}>
+        Paragraph (normal, primary) Lorem ipsum dolor sit amet adipisicing elit,
+        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
+        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
       </P>
 
-      <P size={P.sizes.small}>
-        Small Paragraph - Lorem ipsum dolor sit amet adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <P size={P.sizes.small} color={P.colors.primary}>
+        Paragraph (small, secondary) Lorem ipsum dolor sit amet adipisicing
+        elit,
+        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
+        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
       </P>
-    </React.Fragment>
-  )
-}
-
-export default Example
-```
-
-### Colors
-
-Use the `color` prop to change the color.  Use `P.colors.secondary` for a more subtle paragraph.
-
-```typescript
-import { P } from '@pluralsight/ps-design-system-text'
-import React from 'react'
-
-const Example: React.FC = props => {
-  return (
-    <React.Fragment>
-      <P color={P.colors.primary}>
-        *Primar color paragraph* - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </P>
-       
-       <P color={P.colors.secondary}>
-        *Secondary color paragraph* - Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo
-        consequat.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <P size={P.sizes.small} color={P.colors.secondary}>
+        Paragraph (small, secondary) Lorem ipsum dolor sit amet adipisicing
+        elit,
+        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
+        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
       </P>
     </React.Fragment>
   )
