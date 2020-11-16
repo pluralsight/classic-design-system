@@ -1,12 +1,16 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { ValueOf, canUseDOM } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  ValueOf,
+  canUseDOM
+} from '@pluralsight/ps-design-system-util'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import stylesheet from '../css'
 
@@ -41,7 +45,7 @@ const styles = {
   collapsible: () => css(stylesheet['.psds-drawer__collapsible'])
 }
 
-interface DrawerProps extends HTMLAttributes<HTMLDivElement> {
+interface DrawerProps extends HTMLPropsFor<'div'> {
   base: React.ReactNode
   isOpen?: boolean
   onToggle?: (open: boolean, evt: React.MouseEvent) => void
