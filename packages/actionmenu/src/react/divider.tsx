@@ -1,5 +1,6 @@
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import stylesheet from '../css'
 
@@ -7,7 +8,7 @@ const styles = {
   divider: () => css(stylesheet['.psds-actionmenu__divider'])
 }
 
-export const Divider: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+export const Divider: React.FC<HTMLPropsFor<'div'>> = props => {
   return <div {...styles.divider()} {...props} />
 }
 

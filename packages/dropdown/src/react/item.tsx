@@ -1,24 +1,24 @@
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { CheckIcon } from '@pluralsight/ps-design-system-icon'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React, {
   forwardRef,
   useContext,
   useEffect,
   useRef,
-  useImperativeHandle,
-  HTMLAttributes
+  useImperativeHandle
 } from 'react'
 import { css } from 'glamor'
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import { DropdownContext } from '../js'
-import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 
 import stylesheet from '../css'
+import { DropdownContext } from '../js'
 
 const styles = {
   icon: css(stylesheet['.psds-dropdown--selected-icon']),
   text: css(stylesheet['.psds-dropdown--item-text'])
 }
 
-interface DropdownItemProps extends HTMLAttributes<HTMLLIElement> {
+interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'ref'> {
   icon?: React.ReactNode
   value?: React.ReactText
   menu?: React.ReactNode
@@ -28,21 +28,18 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
   ({ value, icon, menu, children, ...rest }, forwardedRef) => {
     const selectedValue = useContext(DropdownContext)
     const showSelectedValue = value && selectedValue === value
+
     const ref = useRef<HTMLLIElement>()
     useImperativeHandle(forwardedRef, () => ref.current)
+
     useEffect(() => {
       if (showSelectedValue && ref.current) {
         ref.current.focus()
       }
     }, [showSelectedValue])
+
     return (
-      <ActionMenu.Item
-        ref={ref}
-        tagName="button"
-        value={value}
-        nested={menu}
-        {...rest}
-      >
+      <ActionMenu.Item tagName="button" value={value} nested={menu} {...rest}>
         <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
         <ActionMenu.Ellipsis {...styles.text}>{children}</ActionMenu.Ellipsis>
         {showSelectedValue && <CheckIcon {...styles.icon} />}
