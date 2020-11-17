@@ -22,12 +22,10 @@
   "dependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^15.3.7",
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
     "@pluralsight/ps-design-system-halo": "^7.1.10",
     "@pluralsight/ps-design-system-icon": "^19.0.8",
     "@pluralsight/ps-design-system-util": "^6.0.1",
-    "exenv": "^1.2.2",
-    "prop-types": "^15.7.2"
+    "exenv": "^1.2.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

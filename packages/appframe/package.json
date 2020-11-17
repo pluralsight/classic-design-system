@@ -25,7 +25,6 @@
   "dependencies": {
     "@pluralsight/ps-design-system-button": "^19.0.9",
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
     "@pluralsight/ps-design-system-scrollable": "^2.0.1",
     "@pluralsight/ps-design-system-util": "^6.0.1",
     "body-scroll-lock": "^3.0.3",
