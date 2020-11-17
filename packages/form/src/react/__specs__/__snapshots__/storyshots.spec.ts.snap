@@ -353,7 +353,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-ctre2o=""
             >
               <textarea
-                data-css-6488b4=""
+                data-css-frmafg=""
                 disabled={false}
                 placeholder="Anything else to report?"
                 style={
@@ -1058,7 +1058,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-ctre2o=""
             >
               <textarea
-                data-css-6488b4=""
+                data-css-frmafg=""
                 disabled={false}
                 placeholder="Anything else to report?"
                 style={
