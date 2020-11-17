@@ -15,10 +15,6 @@ import { Heading } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
-### Sizes
-
-Use the `size` prop to set the size.
-
 ```typescript
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -27,46 +23,43 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <Heading size={Heading.sizes.xLarge}>
-        <h2>xLarge. The technology skills platform</h2>
+        <h2>Heading (xLarge, primary)</h2>
+      </Heading>
+
+      <Heading size={Heading.sizes.xLarge} color={Heading.colors.secondary}>
+        <h2>Heading (xLarge, secondary)</h2>
       </Heading>
 
       <Heading size={Heading.sizes.large}>
-        <h2>large. The technology skills platform</h2>
+        <h2>Heading (large, primary)</h2>
+      </Heading>
+
+      <Heading size={Heading.sizes.large} color={Heading.colors.secondary}>
+        <h2>Heading (large, secondary)</h2>
       </Heading>
 
       <Heading size={Heading.sizes.medium}>
-        <h2>medium. The technology skills platform</h2>
+        <h2>Heading (medium, primary)</h2>
       </Heading>
+
+      <Heading size={Heading.sizes.medium} color={Heading.colors.secondary}>
+        <h2>Heading (medium, secondary)</h2>
+      </Heading>
+
       <Heading size={Heading.sizes.small}>
-        <h2>small. The technology skills platform</h2>
+        <h2>Heading (small, primary)</h2>
+      </Heading>
+
+      <Heading size={Heading.sizes.small} color={Heading.colors.secondary}>
+        <h2>Heading (small, secondary)</h2>
       </Heading>
 
       <Heading size={Heading.sizes.xSmall}>
-        <h2>xSmall. The technology skills platform</h2>
+        <h2>Heading (xSmall, primary)</h2>
       </Heading>
-    </React.Fragment>
-  )
-}
 
-export default Example
-```
-
-### Colors
-
-For reduced emphasis use `Header.colors.secondary`.
-
-```typescript
-import { Heading } from '@pluralsight/ps-design-system-text'
-import React from 'react'
-
-const Example: React.FC = props => {
-  return (
-    <React.Fragment>
-      <Heading color={Caps.colors.primary}>
-        <h2>Primary heading color</h2>
-      </Heading>
-      <Heading color={Caps.colors.secondary}>
-        <h2>Secondary heading color</h2>
+      <Heading size={Heading.sizes.xSmall} color={Heading.colors.secondary}>
+        <h2>Heading (xSmall, secondary)</h2>
       </Heading>
     </React.Fragment>
   )
