@@ -1,8 +1,8 @@
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 
 import React, { HTMLAttributes } from 'react'
-import PropTypes from 'prop-types'
 
 import Theme, { defaultName, useTheme, withTheme } from '..'
 
@@ -83,10 +83,12 @@ describe('useTheme', () => {
 })
 
 describe('withTheme', () => {
-  function MockComponent({ themeName, ...props }) {
+  const MockComponent: React.FC<{ themeName: ValueOf<typeof Theme.names> }> = ({
+    themeName,
+    ...props
+  }) => {
     return <div {...props}>{themeName}</div>
   }
-  MockComponent.propTypes = { themeName: PropTypes.string }
 
   let EnhancedComponent
 

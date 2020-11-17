@@ -1,5 +1,4 @@
 import React, { HTMLAttributes } from 'react'
-import PropTypes from 'prop-types'
 
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
@@ -43,8 +42,6 @@ const MockDialog: React.FC<DialogProps> = props => {
 
   return <Dialog {...props}>{children}</Dialog>
 }
-
-MockDialog.propTypes = { children: PropTypes.node }
 
 storiesOf('onClose', module)
   .add('with onClose', () => <MockDialog onClose={closeAction} />)

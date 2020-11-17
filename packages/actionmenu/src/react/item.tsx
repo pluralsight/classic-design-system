@@ -19,7 +19,7 @@ import React, {
 } from 'react'
 
 import stylesheet from '../css'
-import { origins } from '../vars'
+import { origins, tagName as tagNames } from '../vars'
 
 import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
@@ -53,11 +53,12 @@ const styles = {
 }
 
 interface BaseItemProps {
+  className?: string
   disabled?: boolean
   nested?: ReactNode
+  onClick?: (event: MouseEvent, value?: ReactText) => void
   origin?: ValueOf<typeof origins>
   value?: ReactText
-  onClick?: (event: MouseEvent, value?: ReactText) => void
 }
 
 interface AnchorProps
@@ -85,7 +86,7 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
       nested,
       onClick,
       origin,
-      tagName = 'a',
+      tagName = tagNames.a,
       value,
       ...rest
     } = props
