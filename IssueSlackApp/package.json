@@ -12,8 +12,13 @@
     "@slack/bolt": "^2.4.1",
     "axios": "^0.21.0",
     "dotenv": "^8.2.0",
+    "gestalt-pattern-matcher": "0.0.12",
     "mongoose": "^5.10.11",
     "nodemon": "^2.0.6",
-    "pg": "^8.4.2"
+    "pg": "^8.4.2",
+    "string-similarity": "^4.0.3"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
   }
 }
