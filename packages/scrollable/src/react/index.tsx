@@ -2,7 +2,8 @@ import {
   canUseDOM,
   combineFns,
   shallowCompare,
-  useResizeObserver
+  useResizeObserver,
+  HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
 import React, {
@@ -47,7 +48,7 @@ function areEqualProps(
   return !changed
 }
 
-interface ScrollableProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ScrollableProps extends HTMLPropsFor<'HTMLPropsFor'> {
   renderContent?: (
     props: renderContentProps,
     ref: React.Ref<HTMLElement>

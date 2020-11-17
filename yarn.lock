@@ -2818,13 +2818,12 @@
     string-width "^2.0.0"
     strip-ansi "^3"
 
-"@pluralsight/ps-design-system-util@^5.8.0":
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-5.8.0.tgz#c7bb393ff82f371f6b65f19d407aa980ccc3b39f"
-  integrity sha512-A47HuVSNdMpfyoM7ZAxx1AG626o6WgObjaMck9/LmAkhiRJZSi/zIrXu8AHQzSmdau325tI2QzfDOwttey3O7w==
+"@pluralsight/ps-design-system-util@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-6.0.2.tgz#e43ab53c95722a6b39b43c00d0894351f5f10aea"
+  integrity sha512-jOY4E8hC69ad/6DAKRNNm4g0kuA9orMpbr6ZlF9Alc917dXb7HEzwXw8Eh62Zxl6ukypYfO6ac4Bg3J4sKfJug==
   dependencies:
     exenv "^1.2.2"
-    prop-types "^15.7.2"
     resize-observer-polyfill "^1.5.1"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.1":

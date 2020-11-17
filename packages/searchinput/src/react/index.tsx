@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import React, { useRef, useState, HTMLAttributes } from 'react'
+import React, { useRef, useState } from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
