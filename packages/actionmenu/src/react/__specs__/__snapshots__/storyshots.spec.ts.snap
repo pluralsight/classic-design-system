@@ -151,7 +151,6 @@ exports[`Storyshots disabled item 1`] = `
     <a
       aria-haspopup={false}
       data-css-1v7ok0h=""
-      disabled={true}
       onClick={[Function]}
       role="menuitem"
     >
@@ -206,7 +205,6 @@ exports[`Storyshots disabled item 1`] = `
     <a
       aria-haspopup={false}
       data-css-1v7ok0h=""
-      disabled={true}
       onClick={[Function]}
       role="menuitem"
     >
@@ -272,7 +270,6 @@ exports[`Storyshots disabled links 1`] = `
     <a
       aria-haspopup={false}
       data-css-1v7ok0h=""
-      disabled={true}
       href="https://duck.com"
       onClick={[Function]}
       role="menuitem"
@@ -329,7 +326,6 @@ exports[`Storyshots disabled links 1`] = `
     <a
       aria-haspopup={false}
       data-css-1v7ok0h=""
-      disabled={true}
       href="https://duck.com"
       onClick={[Function]}
       role="menuitem"
@@ -368,7 +364,6 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     <a
       aria-haspopup={false}
       data-css-1v7ok0h=""
-      disabled={true}
       onClick={[Function]}
       role="menuitem"
     >
@@ -396,7 +391,6 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     <a
       aria-haspopup={false}
       data-css-1v7ok0h=""
-      disabled={true}
       onClick={[Function]}
       role="menuitem"
     >
@@ -461,7 +455,7 @@ exports[`Storyshots disabled nested 1`] = `
     <a
       aria-haspopup={true}
       data-css-1osbtyv=""
-      disabled={true}
+      onClick={[Function]}
       role="menuitem"
     >
       <div
@@ -514,7 +508,6 @@ exports[`Storyshots disabled single, disabled 1`] = `
     <a
       aria-haspopup={false}
       data-css-1v7ok0h=""
-      disabled={true}
       onClick={[Function]}
       role="menuitem"
     >
@@ -2172,7 +2165,7 @@ exports[`Storyshots menu items with icons 1`] = `
 
 exports[`Storyshots nested no origin 1`] = `
 <ul
-  data-css-sjidtt=""
+  data-css-rls1dj=""
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -2188,6 +2181,7 @@ exports[`Storyshots nested no origin 1`] = `
     <a
       aria-haspopup={true}
       data-css-1osbtyv=""
+      onClick={[Function]}
       role="menuitem"
     >
       <div
@@ -2214,7 +2208,7 @@ exports[`Storyshots nested no origin 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      data-css-1o6uz5i=""
+      data-css-kfdt74=""
       onKeyDown={[Function]}
       role="menu"
     >
@@ -2240,7 +2234,7 @@ exports[`Storyshots nested no origin 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-1o6uz5i=""
+          data-css-kfdt74=""
           onKeyDown={[Function]}
           role="menu"
         />
@@ -2256,6 +2250,7 @@ exports[`Storyshots nested no origin 1`] = `
         <a
           aria-haspopup={true}
           data-css-1osbtyv=""
+          onClick={[Function]}
           role="menuitem"
         >
           <div
@@ -2282,7 +2277,7 @@ exports[`Storyshots nested no origin 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-1o6uz5i=""
+          data-css-kfdt74=""
           onKeyDown={[Function]}
           role="menu"
         >
@@ -2308,7 +2303,7 @@ exports[`Storyshots nested no origin 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-1o6uz5i=""
+              data-css-kfdt74=""
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2335,7 +2330,7 @@ exports[`Storyshots nested no origin 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-1o6uz5i=""
+              data-css-kfdt74=""
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2362,7 +2357,7 @@ exports[`Storyshots nested no origin 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-1o6uz5i=""
+              data-css-kfdt74=""
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2394,7 +2389,7 @@ exports[`Storyshots nested no origin 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-1o6uz5i=""
+          data-css-kfdt74=""
           onKeyDown={[Function]}
           role="menu"
         />
@@ -2410,6 +2405,7 @@ exports[`Storyshots nested no origin 1`] = `
         <a
           aria-haspopup={true}
           data-css-1osbtyv=""
+          onClick={[Function]}
           role="menuitem"
         >
           <div
@@ -2436,7 +2432,7 @@ exports[`Storyshots nested no origin 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          data-css-1o6uz5i=""
+          data-css-kfdt74=""
           onKeyDown={[Function]}
           role="menu"
         >
@@ -2462,7 +2458,7 @@ exports[`Storyshots nested no origin 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-1o6uz5i=""
+              data-css-kfdt74=""
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2489,7 +2485,7 @@ exports[`Storyshots nested no origin 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              data-css-1o6uz5i=""
+              data-css-kfdt74=""
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2520,7 +2516,7 @@ exports[`Storyshots nested no origin 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      data-css-1o6uz5i=""
+      data-css-kfdt74=""
       onKeyDown={[Function]}
       role="menu"
     />
@@ -2557,6 +2553,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
       <a
         aria-haspopup={true}
         data-css-1osbtyv=""
+        onClick={[Function]}
         role="menuitem"
       >
         <div
@@ -2625,6 +2622,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -2779,6 +2777,7 @@ exports[`Storyshots nested origin bottomLeft 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -2927,6 +2926,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
       <a
         aria-haspopup={true}
         data-css-1osbtyv=""
+        onClick={[Function]}
         role="menuitem"
       >
         <div
@@ -2995,6 +2995,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -3149,6 +3150,7 @@ exports[`Storyshots nested origin bottomRight 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -3297,6 +3299,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
       <a
         aria-haspopup={true}
         data-css-1osbtyv=""
+        onClick={[Function]}
         role="menuitem"
       >
         <div
@@ -3365,6 +3368,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -3519,6 +3523,7 @@ exports[`Storyshots nested origin topLeft 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -3667,6 +3672,7 @@ exports[`Storyshots nested origin topRight 1`] = `
       <a
         aria-haspopup={true}
         data-css-1osbtyv=""
+        onClick={[Function]}
         role="menuitem"
       >
         <div
@@ -3735,6 +3741,7 @@ exports[`Storyshots nested origin topRight 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -3889,6 +3896,7 @@ exports[`Storyshots nested origin topRight 1`] = `
           <a
             aria-haspopup={true}
             data-css-1osbtyv=""
+            onClick={[Function]}
             role="menuitem"
           >
             <div
@@ -4144,6 +4152,7 @@ exports[`Storyshots onClick nested 1`] = `
     <a
       aria-haspopup={true}
       data-css-1osbtyv=""
+      onClick={[Function]}
       role="menuitem"
     >
       <div
@@ -4212,6 +4221,7 @@ exports[`Storyshots onClick nested 1`] = `
         <a
           aria-haspopup={true}
           data-css-1osbtyv=""
+          onClick={[Function]}
           role="menuitem"
         >
           <div
@@ -4366,6 +4376,7 @@ exports[`Storyshots onClick nested 1`] = `
         <a
           aria-haspopup={true}
           data-css-1osbtyv=""
+          onClick={[Function]}
           role="menuitem"
         >
           <div

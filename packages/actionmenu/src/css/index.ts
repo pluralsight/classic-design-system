@@ -55,7 +55,7 @@ export default {
     fontSize: type.fontSizeSmall,
     opacity: 0
   },
-  '.psds-actionmenu__animation': ({ slide }) => ({
+  '.psds-actionmenu__animation': ({ slide }: { slide: string }) => ({
     animation: `${slide || 'psds-actionmenu__keyframes__slide'} ${
       motion.speedNormal
     } forwards`

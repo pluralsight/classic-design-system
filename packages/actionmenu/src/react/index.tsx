@@ -1,5 +1,4 @@
 import React, {
-  HTMLAttributes,
   KeyboardEventHandler,
   MouseEvent,
   ReactText,
@@ -7,56 +6,75 @@ import React, {
 } from 'react'
 import { css, compose, keyframes } from 'glamor'
 import {
-  useMenuRef,
+  HTMLPropsFor,
+  RefForwardingComponent,
+  ValueOf,
   handleMenuKeyDownEvents,
   handleMenuKeyUpEvents,
   useCloseOnDocumentEvents,
-  RefForwardingComponent
+  useMenuRef
 } from '@pluralsight/ps-design-system-util'
+
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 import { ActionMenuContext } from './context'
 import { Divider } from './divider'
 import { Item } from './item'
 import { Ellipsis } from './ellipsis'
 import { Icon } from './icon'
-import stylesheet from '../css/index'
-import * as vars from '../vars/index'
 
 const slide = keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
 )
 
-const styles = ({ origin }) =>
+const styles = ({ origin }: { origin?: ValueOf<typeof vars.origins> }) =>
   compose(
     css(stylesheet['.psds-actionmenu']),
     css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
     css(stylesheet['.psds-actionmenu__animation']({ slide }))
   )
 
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+const noop = () => {}
+
 interface ActionMenuStatics {
   Divider: typeof Divider
-  Item: typeof Item
   Ellipsis: typeof Ellipsis
   Icon: typeof Icon
+  Item: typeof Item
   origins: typeof vars.origins
   tagName: typeof vars.tagName
   useMenuRef: typeof useMenuRef
 }
-
-interface Props extends Omit<HTMLAttributes<HTMLUListElement>, 'onClick'> {
+interface ActionMenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
+  onClick?: (evt: MouseEvent, value?: ReactText) => void
   onClose?: () => void
-  origin?: string
-  onClick?: (evt: MouseEvent, value: ReactText) => void
+  origin?: ValueOf<typeof vars.origins>
 }
-interface ActionMenuComponent
-  extends RefForwardingComponent<Props, HTMLUListElement, ActionMenuStatics> {}
+type ActionMenuComponent = RefForwardingComponent<
+  ActionMenuProps,
+  HTMLUListElement,
+  ActionMenuStatics
+>
+export const ActionMenu = React.forwardRef<HTMLUListElement, ActionMenuProps>(
+  (
+    {
+      onClose = noop,
+      origin = vars.origins.topLeft,
+      onClick,
+      children,
+      ...rest
+    },
+    forwardedRef
+  ) => {
+    const ref = React.useRef<HTMLUListElement | null>(null)
+    useImperativeHandle<HTMLUListElement | null, HTMLUListElement | null>(
+      forwardedRef,
+      () => ref.current
+    )
 
-export const ActionMenu = React.forwardRef<HTMLUListElement, Props>(
-  ({ onClick, onClose, children, origin, ...props }, forwardedRef) => {
-    const ref = React.useRef<HTMLUListElement>()
-    useImperativeHandle(forwardedRef, () => ref.current)
-
-    useCloseOnDocumentEvents(ref, onClose)
+    useCloseOnDocumentEvents<HTMLUListElement>(ref, onClose)
 
     const handleKeyDown: KeyboardEventHandler<HTMLUListElement> = evt => {
       handleMenuKeyDownEvents(evt)
@@ -70,7 +88,7 @@ export const ActionMenu = React.forwardRef<HTMLUListElement, Props>(
         onKeyDown={handleKeyDown}
         onKeyUp={handleMenuKeyUpEvents}
         role="menu"
-        {...props}
+        {...rest}
       >
         <ActionMenuContext.Provider
           value={{ onClickContext: onClick, onClose, originContext: origin }}
@@ -83,10 +101,6 @@ export const ActionMenu = React.forwardRef<HTMLUListElement, Props>(
 ) as ActionMenuComponent
 
 ActionMenu.displayName = 'ActionMenu.Menu'
-ActionMenu.defaultProps = {
-  onClose: () => {},
-  origin: vars.origins.topLeft
-}
 
 ActionMenu.Ellipsis = Ellipsis
 ActionMenu.Icon = Icon
