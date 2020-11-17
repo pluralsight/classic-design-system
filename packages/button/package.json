@@ -21,7 +21,6 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1",
     "@pluralsight/ps-design-system-icon": "^19.0.8",
     "@pluralsight/ps-design-system-util": "^6.0.1"
   },

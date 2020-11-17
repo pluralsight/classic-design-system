@@ -19,9 +19,7 @@
     "test:watch": "yarn test -- --watchAll"
   },
   "types": "dist/esm/index.d.ts",
-  "dependencies": {
-    "@pluralsight/ps-design-system-filter-react-props": "^1.2.1"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
     "glamor": "^2.x.x",

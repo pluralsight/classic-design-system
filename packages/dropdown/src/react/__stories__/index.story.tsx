@@ -1,5 +1,4 @@
 /* eslint-disable react/display-name */
-/* eslint-disable react/prop-types */
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 

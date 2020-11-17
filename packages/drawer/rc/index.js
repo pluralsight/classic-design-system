@@ -9,7 +9,6 @@ import React, {
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useToggle } from '@pluralsight/ps-design-system-util'
 
 import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
@@ -58,7 +57,7 @@ const Head = forwardRef(({ children, ...rest }, ref) => {
       ref={ref}
       role="button"
       aria-expanded={isOpen}
-      {...filterReactProps(rest)}
+      {...rest}
     >
       {children}
       <div {...styles.iconSlot()}>
@@ -78,7 +77,7 @@ const Body = forwardRef(({ children, ...rest }, forwardedRef) => {
       aria-hidden={ariaHidden}
       ref={ref}
       {...styles.body(themeName)}
-      {...filterReactProps(rest)}
+      {...rest}
     >
       {children}
     </div>
