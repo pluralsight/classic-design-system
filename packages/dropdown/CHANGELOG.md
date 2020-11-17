@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.3.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.7...@pluralsight/ps-design-system-dropdown@9.3.8) (2020-11-16)
+
+
+### Bug Fixes
+
+* dropdown & actionmenu close on events ([#1451](https://github.com/pluralsight/design-system/issues/1451)) ([1fd4a65](https://github.com/pluralsight/design-system/commit/1fd4a659aae76dc18a3a3154dc43d5ac1cf6bcd1))
+
+
+
+
+
 ## [9.3.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.6...@pluralsight/ps-design-system-dropdown@9.3.7) (2020-11-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

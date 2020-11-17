@@ -11,9 +11,7 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
 
   const handleClickOutsideMenu = (evt: MouseEvent) => {
     if (evt.target instanceof HTMLElement) {
-      const innerClick = el.contains(evt.target)
-      if (!innerClick) return
-
+      if (el.contains(evt.target)) return
       callback(evt)
     }
   }
@@ -31,7 +29,7 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
     passive: true
   })
 
-  window.addEventListener('scroll', requestAnimationFrame, {
+  document.addEventListener('scroll', requestAnimationFrame, {
     passive: true
   })
 
@@ -43,7 +41,7 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
 }
 
 export const useCloseOnDocumentEvents = <El extends HTMLElement>(
-  ref: MutableRefObject<El>,
+  ref: MutableRefObject<El | null>,
   cb: Callback
 ) => {
   useEffect(() => {

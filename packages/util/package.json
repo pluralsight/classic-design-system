@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-util",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Runtime dependencies for utilitarian tasks. Analogous to a lodash.",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,7 +20,6 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "exenv": "^1.2.2",
-    "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {

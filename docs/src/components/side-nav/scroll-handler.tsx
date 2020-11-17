@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { LocationContext } from '@reach/router'
-import PropTypes from 'prop-types'
 import { SessionStorage } from './session-storage'
 
 export const ScrollContext = React.createContext<SessionStorage>(
@@ -15,14 +14,11 @@ type ShouldUpdateScrollFn = (
 type ShouldUpdateScroll = undefined | ShouldUpdateScrollFn
 
 export class ScrollHandler extends React.Component<
-  LocationContext & { shouldUpdateScroll: ShouldUpdateScroll }
-> {
-  static propTypes = {
-    shouldUpdateScroll: PropTypes.func,
-    children: PropTypes.element.isRequired,
-    location: PropTypes.object.isRequired
+  LocationContext & {
+    shouldUpdateScroll: ShouldUpdateScroll
+    location: Record<string, unknown>
   }
-
+> {
   _stateStorage: SessionStorage = new SessionStorage()
 
   scrollListener = (): void => {

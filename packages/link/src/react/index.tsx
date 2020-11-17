@@ -1,5 +1,4 @@
 import { css } from 'glamor'
-import filterReactProps from '@pluralsight/ps-design-system-filter-react-props'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { appearances } from '../vars'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
@@ -36,21 +35,16 @@ interface LinkComponent
 
 const Link = React.forwardRef<HTMLAnchorElement, Props>(
   (props, forwardedRef) => {
+    const { appearance, children: _children, ...rest } = props
     const ref = React.useRef<HTMLAnchorElement>()
     React.useImperativeHandle(forwardedRef, () => ref.current)
     const themeName = useTheme()
 
-    let tagName = 'a'
-    React.useEffect(() => {
-      if (ref.current && ref.current.tagName) tagName = ref.current.tagName
-    })
-
-    const { children, ...rest } = props
     return React.cloneElement(
       React.Children.only(props.children as React.ReactElement),
       {
-        ...style({ appearance: props.appearance, themeName }),
-        ...filterReactProps(rest, { tagName })
+        ...style({ appearance, themeName }),
+        ...rest
       }
     )
   }
