@@ -77,7 +77,7 @@ describe('ActionMenu', () => {
 
   describe('ActionMenu.Item', () => {
     it('should render an anchor by default', () => {
-      const ref = React.createRef<HTMLAnchorElement>()
+      const ref = React.createRef<HTMLLIElement>()
 
       const { getByTestId } = render(
         <ActionMenu>
@@ -93,7 +93,7 @@ describe('ActionMenu', () => {
     })
 
     it('should render a button when `tagName` is `button`', () => {
-      const ref = React.createRef<HTMLButtonElement>()
+      const ref = React.createRef<HTMLLIElement>()
 
       const { getByTestId } = render(
         <ActionMenu>
@@ -109,7 +109,7 @@ describe('ActionMenu', () => {
     })
 
     it('should render a hyperlink when `tagName` is `a`', () => {
-      const ref = React.createRef<HTMLAnchorElement>()
+      const ref = React.createRef<HTMLLIElement>()
 
       const { getByTestId } = render(
         <ActionMenu>

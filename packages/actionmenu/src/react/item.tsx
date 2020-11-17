@@ -63,12 +63,14 @@ interface BaseItemProps {
 
 interface AnchorProps
   extends BaseItemProps,
-    Omit<HTMLPropsFor<'a'>, 'onClick'> {
+    Omit<HTMLPropsFor<'a'>, 'onClick' | 'ref'> {
+  ref?: RefFor<'li'>
   tagName?: 'a'
 }
 interface ButtonProps
   extends BaseItemProps,
-    Omit<HTMLPropsFor<'button'>, 'onClick' | 'value'> {
+    Omit<HTMLPropsFor<'button'>, 'onClick' | 'ref' | 'value'> {
+  ref?: RefFor<'li'>
   tagName: 'button'
 }
 
