@@ -41,7 +41,7 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
 }
 
 export const useCloseOnDocumentEvents = <El extends HTMLElement>(
-  ref: MutableRefObject<El>,
+  ref: MutableRefObject<El | null>,
   cb: Callback
 ) => {
   useEffect(() => {

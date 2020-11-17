@@ -1,26 +1,31 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
+import {
+  HTMLPropsFor,
+  RefFor,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
 import React, {
-  HTMLAttributes,
+  ForwardRefExoticComponent,
   KeyboardEventHandler,
+  MouseEvent,
   MouseEventHandler,
-  useState,
-  useRef,
+  ReactNode,
+  ReactText,
   forwardRef,
+  useContext,
   useImperativeHandle,
-  useContext
+  useRef,
+  useState
 } from 'react'
 
 import stylesheet from '../css'
-import { tagName as tagNames } from '../vars'
+import { origins, tagName as tagNames } from '../vars'
 
 import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
 
-type StyleFn = (obj?: unknown) => StyleAttribute
-
-const styles: { [name: string]: StyleFn } = {
-  itemContainer: ({ disabled }: { disabled: boolean }) =>
+const styles = {
+  itemContainer: ({ disabled }: { disabled?: boolean }) =>
     compose(
       css(stylesheet['.psds-actionmenu__item-container']),
       disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
@@ -36,7 +41,7 @@ const styles: { [name: string]: StyleFn } = {
       hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
     ),
   inner: () => css(stylesheet['.psds-actionmenu__item-inner']),
-  nested: ({ origin }: { origin: string }) =>
+  nested: ({ origin }: { origin?: ValueOf<typeof origins> }) =>
     compose(
       css(stylesheet['.psds-actionmenu']),
       css(stylesheet['.psds-actionmenu__nested']),
@@ -47,15 +52,32 @@ const styles: { [name: string]: StyleFn } = {
   textOnly: () => css(stylesheet['.psds-actionmenu__text-only'])
 }
 
-interface ItemProps extends Omit<HTMLPropsFor<'li'>, 'onClick'> {
+interface BaseItemProps {
   className?: string
   disabled?: boolean
-  href?: string
-  nested?: React.ReactNode
-  onClick?: (event: React.MouseEvent, value: React.ReactText) => void
-  origin?: string
-  tagName?: string
-  value?: string | number
+  nested?: ReactNode
+  onClick?: (event: MouseEvent, value?: ReactText) => void
+  origin?: ValueOf<typeof origins>
+  value?: ReactText
+}
+
+interface AnchorProps
+  extends BaseItemProps,
+    Omit<HTMLPropsFor<'a'>, 'onClick' | 'ref'> {
+  ref?: RefFor<'li'>
+  tagName?: 'a'
+}
+interface ButtonProps
+  extends BaseItemProps,
+    Omit<HTMLPropsFor<'button'>, 'onClick' | 'ref' | 'value'> {
+  ref?: RefFor<'li'>
+  tagName: 'button'
+}
+
+type ItemProps = AnchorProps | ButtonProps
+type ItemComponent = ForwardRefExoticComponent<unknown> & {
+  (props: AnchorProps, ref?: RefFor<'li'>): JSX.Element
+  (props: ButtonProps, ref?: RefFor<'li'>): JSX.Element
 }
 export const Item = forwardRef<HTMLLIElement, ItemProps>(
   (props, forwardedRef) => {
@@ -75,21 +97,16 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
       ActionMenuContext
     )
 
-    const ref = useRef()
-    useImperativeHandle(forwardedRef, () => ref.current)
+    const ref = useRef<HTMLLIElement>(null)
+    useImperativeHandle<HTMLLIElement | null, HTMLLIElement | null>(
+      forwardedRef,
+      () => ref.current
+    )
 
-    const subMenuRef = useRef()
+    const subMenuRef = useRef<HTMLUListElement>(null)
 
     const [open, setOpen] = useState(false)
     const hasSubMenu = Boolean(nested)
-
-    const handleMouseOver: MouseEventHandler<HTMLLIElement> = () => {
-      hasSubMenu && setOpen(true)
-    }
-
-    const handleMouseOut: MouseEventHandler<HTMLLIElement> = () => {
-      hasSubMenu && setOpen(false)
-    }
 
     const handleKeyDown: KeyboardEventHandler<HTMLLIElement> = evt => {
       if (evt.key === 'ArrowRight' && hasSubMenu) {
@@ -105,17 +122,49 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
 
       evt.preventDefault()
     }
+
+    const handleMouseOut: MouseEventHandler<HTMLLIElement> = () => {
+      hasSubMenu && setOpen(false)
+    }
+
+    const handleMouseOver: MouseEventHandler<HTMLLIElement> = () => {
+      hasSubMenu && setOpen(true)
+    }
+
     const handleArrowLeft: KeyboardEventHandler<HTMLUListElement> = evt => {
       if (evt.key === 'ArrowLeft' && hasSubMenu) {
         setOpen(false)
         evt.stopPropagation()
       }
     }
-    const handleClick: MouseEventHandler<HTMLLIElement> = evt => {
+
+    const handleClick = (evt: MouseEvent) => {
+      if (hasSubMenu) return
+
       onClick && onClick(evt, value)
       onClickContext && onClickContext(evt, value)
       onClose && onClose(evt, value) // : e.currentTarget.parentNode.focus()
     }
+
+    const isAnchor = tagName === 'a'
+
+    const Wrapper: React.FC = wrapperProps =>
+      isAnchor ? (
+        <a
+          onClick={handleClick as MouseEventHandler<HTMLAnchorElement>}
+          role="menuitem"
+          {...(rest as HTMLPropsFor<'a'>)}
+          {...wrapperProps}
+        />
+      ) : (
+        <button
+          disabled={disabled}
+          onClick={handleClick as MouseEventHandler<HTMLButtonElement>}
+          role="menuitem"
+          {...(rest as HTMLPropsFor<'button'>)}
+          {...wrapperProps}
+        />
+      )
 
     return (
       <li
@@ -128,22 +177,12 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
         role="none"
         tabIndex={!disabled ? -1 : undefined}
       >
-        {React.createElement(
-          tagName,
-          {
-            ...rest,
-            ...styles.item({ hasSubMenu }),
-            'aria-haspopup': !!nested,
-            disabled,
-            onClick: !hasSubMenu ? handleClick : undefined,
-            role: 'menuitem'
-          },
-
+        <Wrapper {...styles.item({ hasSubMenu })} aria-haspopup={!!nested}>
           <div className={className} {...styles.inner()}>
             {children}
             {hasSubMenu && <Arrow />}
           </div>
-        )}
+        </Wrapper>
 
         <ul
           {...styles.nested({ origin: origin || originContext })}
@@ -157,6 +196,6 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
       </li>
     )
   }
-)
+) as ItemComponent
 
 Item.displayName = 'ActionMenu.Item'
