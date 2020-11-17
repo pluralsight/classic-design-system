@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-text",
-  "version": "16.1.10",
+  "version": "16.1.11",
   "description": "Design system component for text-related ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-util": "^6.0.1"
+    "@pluralsight/ps-design-system-util": "^6.0.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.10",
-    "@pluralsight/ps-design-system-theme": "^6.0.6"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.11",
+    "@pluralsight/ps-design-system-theme": "^6.0.7"
   }
 }

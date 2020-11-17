@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.3.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.3.7...@pluralsight/ps-design-system-actionmenu@15.3.8) (2020-11-17)
+
+
+### Bug Fixes
+
+* **actionmenu:** ref typing ([a47fab3](https://github.com/pluralsight/design-system/commit/a47fab3ac79e3bf637d5e78f129c0f19e8567e28))
+
+
+
+
+
 ## [15.3.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.3.6...@pluralsight/ps-design-system-actionmenu@15.3.7) (2020-11-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@6.0.1...@pluralsight/ps-design-system-util@6.0.2) (2020-11-17)
+
+
+### Bug Fixes
+
+* oncscoll listner and add example to docs ([#1455](https://github.com/pluralsight/design-system/issues/1455)) ([aaf80b0](https://github.com/pluralsight/design-system/commit/aaf80b09217b6af684cecd8ef8aead82e88487ca))
+
+
+
+
+
 ## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@6.0.0...@pluralsight/ps-design-system-util@6.0.1) (2020-11-16)
 
 
