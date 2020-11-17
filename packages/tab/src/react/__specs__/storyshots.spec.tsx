@@ -3,11 +3,11 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
-const createNodeMock = () => document.createElement('div')
+const createNodeMock = (_el: React.ReactElement) =>
+  document.createElement('div')
 
 initStoryshots({
   configPath: path.resolve(__dirname, '../../../.storybook'),
   framework: 'react',
-  // @ts-ignore: Storyshots requires but is missing typings
-  test: snapshotWithOptions({ createNodeMock })
+  te st: snapshotWithOptions(() => ({ createNodeMock }))
 })
