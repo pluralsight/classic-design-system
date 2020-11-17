@@ -6,19 +6,13 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
-  combineFns,
+  HTMLPropsFor,
   RefForwardingComponent,
-  ValueOf
+  ValueOf,
+  combineFns
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, {
-  FC,
-  ReactNode,
-  forwardRef,
-  useEffect,
-  useRef,
-  useState
-} from 'react'
+import React, { ReactNode, forwardRef, useEffect, useState } from 'react'
 
 import { Calendar, Overlay } from './calendar'
 import stylesheet from '../css'
@@ -73,11 +67,6 @@ const styles = {
       css(stylesheet[`.psds-date-picker__sub-label.psds-theme--${themeName}`])
     )
 }
-
-// TODO: refactor util to match this
-export type HTMLPropsFor<
-  Tag extends keyof JSX.IntrinsicElements
-> = JSX.IntrinsicElements[Tag]
 
 interface DatePickerProps
   extends Omit<HTMLPropsFor<'input'>, 'value' | 'onSelect'> {

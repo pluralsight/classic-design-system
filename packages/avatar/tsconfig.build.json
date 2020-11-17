@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src"],
+  "include": ["src", "typings"],
   "exclude": [
     ".storybook",
     "node_modules",

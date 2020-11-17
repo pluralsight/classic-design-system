@@ -1,6 +1,7 @@
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
 import {
+  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   createUniversalPortal,
@@ -9,7 +10,7 @@ import {
   usePortal
 } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css, keyframes } from 'glamor'
-import React, { HTMLAttributes, MutableRefObject } from 'react'
+import React, { MutableRefObject } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -39,7 +40,7 @@ const styles = {
   overlay: () => css(stylesheet['.psds-dialog__overlay'])
 }
 
-const CloseButton: React.FC<HTMLAttributes<HTMLButtonElement>> = props => (
+const CloseButton: React.FC<HTMLPropsFor<'button'>> = props => (
   <button {...styles.close()} {...props} aria-label="Close dialog">
     <svg
       aria-label="close icon"
@@ -52,7 +53,7 @@ const CloseButton: React.FC<HTMLAttributes<HTMLButtonElement>> = props => (
   </button>
 )
 
-interface OverlayProps extends HTMLAttributes<HTMLDivElement> {
+interface OverlayProps extends HTMLPropsFor<'div'> {
   'aria-label'?: string
   disableCloseOnOverlayClick?: boolean
   onClose?: (evt: React.MouseEvent) => void
@@ -83,7 +84,7 @@ const Overlay: React.FC<OverlayProps> = ({
 export interface DialogStatics {
   tailPositions: typeof vars.tailPositions
 }
-export interface DialogProps extends HTMLAttributes<HTMLDivElement> {
+export interface DialogProps extends HTMLPropsFor<'div'> {
   'aria-label'?: string
   disableCloseButton?: boolean
   disableCloseOnEscape?: boolean

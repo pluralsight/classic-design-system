@@ -1,7 +1,12 @@
 import { accessibility } from '@pluralsight/ps-design-system-core'
 import Halo from '@pluralsight/ps-design-system-halo'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, omit, isFunction } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  ValueOf,
+  omit,
+  isFunction
+} from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React from 'react'
 
@@ -32,9 +37,7 @@ const styles = {
     )
 }
 
-interface CheckboxProps
-  extends React.HTMLAttributes<HTMLDivElement>,
-    Record<string, unknown> {
+interface CheckboxProps extends HTMLPropsFor<'div'>, Record<string, unknown> {
   checked?: boolean
   disabled?: boolean
   error?: boolean

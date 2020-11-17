@@ -15,13 +15,14 @@
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "build:watch": "yarn build:esm -- --watch",
     "storybook": "start-storybook -p 6006",
-    "test": "jest",
+    "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test -- --watchAll"
   },
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.1",
+    "@pluralsight/ps-design-system-util": "*",
     "tiny-hashes": "^1.0.1"
   },
   "peerDependencies": {

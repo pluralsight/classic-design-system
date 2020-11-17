@@ -1,4 +1,5 @@
-import React, { HTMLAttributes } from 'react'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import React from 'react'
 import { compose, css } from 'glamor'
 import stylesheet from '../css'
 
@@ -11,7 +12,7 @@ const styles = ({ disabled }) => {
   )
 }
 
-interface DropdownLayoutProps extends HTMLAttributes<HTMLLabelElement> {
+interface DropdownLayoutProps extends HTMLPropsFor<'label'> {
   button: React.ReactNode
   disabled?: boolean
   label?: React.ReactNode

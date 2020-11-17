@@ -1,6 +1,7 @@
-import React, { forwardRef, HTMLAttributes } from 'react'
+import React, { forwardRef } from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import {
+  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -28,8 +29,7 @@ interface DropdownStatics {
   Selected: typeof Selected
 }
 
-interface DropdownProps
-  extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
+interface DropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   className?: string

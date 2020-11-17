@@ -36,13 +36,15 @@ describe('Avatar', () => {
   })
 
   describe('with an image src and an alt attr', () => {
-    let container, el, image
+    let container
+    let el: HTMLDivElement
+    let image: HTMLImageElement
 
     beforeEach(() => {
       ;({ container } = render(<Avatar alt="alt text" src="//something.png" />))
 
-      el = container.querySelector('div')
-      image = container.querySelector('img')
+      el = container.querySelector('div')!
+      image = container.querySelector('img')!
     })
 
     it('should passes the alt attr to the image', () => {
@@ -65,13 +67,15 @@ describe('Avatar', () => {
 
   describe('WITHOUT an image src', () => {
     const name = 'Benedict Cumberbatch'
-    let container, el, initials
+    let container
+    let el: HTMLDivElement
+    let initials: HTMLDivElement
 
     beforeEach(() => {
       ;({ container } = render(<Avatar name={name} />))
 
-      el = container.querySelector('div')
-      initials = el.querySelector('div:last-child')
+      el = container.querySelector('div')!
+      initials = el.querySelector<HTMLDivElement>('div:last-child')!
     })
 
     it('displays initial', () => {

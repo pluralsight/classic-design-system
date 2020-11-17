@@ -1,27 +1,16 @@
+import {
+  HTMLPropsFor,
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
-import React, {
-  HTMLAttributes,
-  ForwardRefExoticComponent,
-  RefAttributes,
-  forwardRef,
-  useState
-} from 'react'
+import React, { ReactEventHandler, forwardRef, useState } from 'react'
 
 import stylesheet from '../css'
 import { sizes, widths } from '../vars'
 import { getColorByName, getInitials, transformSrc } from '../js'
 
-// TODO: move to core pkg
-export type RefForwardingComponentWithStatics<
-  P = Record<string, unknown>,
-  E = Element,
-  S = Record<string, unknown>
-> = ForwardRefExoticComponent<P & RefAttributes<E>> & S
-
-// TODO: move to core pkg
-type ValueOf<T> = T[keyof T]
-
-interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
+interface AvatarProps extends HTMLPropsFor<'div'> {
   alt?: string
   name?: string
   size?: ValueOf<typeof sizes>
@@ -33,12 +22,11 @@ interface AvatarStatics {
   widths: typeof widths
 }
 
-interface AvatarComponent
-  extends RefForwardingComponentWithStatics<
-    AvatarProps,
-    HTMLDivElement,
-    AvatarStatics
-  > {}
+type AvatarComponent = RefForwardingComponent<
+  AvatarProps,
+  HTMLDivElement,
+  AvatarStatics
+>
 
 type ImageState = 'loading' | 'error' | 'success'
 
@@ -56,16 +44,16 @@ const styles: { [key: string]: StyleFn } = {
 
 const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
   const { alt, name, size: _size, src, ...rest } = props
-  const initials = getInitials(name)
 
   const [imageState, setImageState] = useState<ImageState>('loading')
 
-  function handleImageLoadSuccess(evt) {
-    const isFallbackPixel = evt.target.naturalWidth === 1
+  const handleImageLoadSuccess: ReactEventHandler<HTMLImageElement> = evt => {
+    const pixel = evt.target as HTMLImageElement
+    const isFallbackPixel = pixel.naturalWidth === 1
     setImageState(isFallbackPixel ? 'error' : 'success')
   }
 
-  function handleImageLoadError() {
+  const handleImageLoadError: ReactEventHandler<HTMLImageElement> = () => {
     setImageState('error')
   }
 
@@ -97,7 +85,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
           aria-label={name}
           style={{ backgroundColor: getColorByName(name) }}
         >
-          {initials}
+          {getInitials(name)}
         </div>
       )}
     </div>

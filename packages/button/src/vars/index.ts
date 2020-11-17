@@ -1,17 +1,9 @@
-export const appearances = {
-  primary: 'primary',
-  secondary: 'secondary',
-  stroke: 'stroke',
-  flat: 'flat'
-}
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
-export const iconAligns = { left: 'left', right: 'right' }
+export const appearances = keyMirror('primary', 'secondary', 'stroke', 'flat')
 
-export const sizes = {
-  xSmall: 'xSmall',
-  small: 'small',
-  medium: 'medium',
-  large: 'large'
-}
+export const iconAligns = keyMirror('left', 'right')
+
+export const sizes = keyMirror('xSmall', 'small', 'medium', 'large')
 
 export const psds2020Colors = 'psds2020Colors'
