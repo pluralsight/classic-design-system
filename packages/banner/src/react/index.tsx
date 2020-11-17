@@ -78,15 +78,24 @@ type ButtonComponent = React.ForwardRefExoticComponent<unknown> & {
 const Button = React.forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
   AnchorProps | ButtonProps
->((props, forwardRef) => {
+>((props, ref) => {
   const color = useContext(ColorContext)
 
-  return (
+  return 'href' in props ? (
     <DSButton
-      {...props}
+      {...(props as HTMLPropsFor<'a'>)}
       {...styles.button({ color })}
-      ref={forwardRef as any}
       appearance={DSButton.appearances.stroke}
+      href={props.href || ''}
+      ref={ref as RefFor<'a'>}
+      size={DSButton.sizes.small}
+    />
+  ) : (
+    <DSButton
+      {...(props as HTMLPropsFor<'button'>)}
+      {...styles.button({ color })}
+      appearance={DSButton.appearances.stroke}
+      ref={ref as RefFor<'button'>}
       size={DSButton.sizes.small}
     />
   )
