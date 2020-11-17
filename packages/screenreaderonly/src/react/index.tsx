@@ -1,8 +1,9 @@
 import { accessibility } from '@pluralsight/ps-design-system-core'
+import {HTMLPropsFor} from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React, { ReactNode, forwardRef, HTMLAttributes } from 'react'
+import React, { ReactNode, forwardRef } from 'react'
 
-interface Props extends HTMLAttributes<HTMLElement> {
+interface Props extends HTMLPropsFor<'div'> {
   children?: ReactNode
   as?: React.ElementType | keyof JSX.IntrinsicElements
 }
