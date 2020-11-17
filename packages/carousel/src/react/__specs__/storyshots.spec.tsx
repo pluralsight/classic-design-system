@@ -11,11 +11,11 @@ jest.mock('../../js/utils', () => ({
     .mockImplementation((prefix = '') => prefix + 'mock_unique_id')
 }))
 
-const createNodeMock = () => document.createElement('div')
+const createNodeMock = (_el: React.ReactElement) =>
+  document.createElement('div')
 
 initStoryshots({
   configPath: path.resolve(__dirname, '../../../.storybook'),
-  // @ts-ignore: required for storyshots but not in storyshot typings
-  test: snapshotWithOptions({ createNodeMock }),
+  test: snapshotWithOptions(() => ({ createNodeMock })),
   framework: 'react'
 })
