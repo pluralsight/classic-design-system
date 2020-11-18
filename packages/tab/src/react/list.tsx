@@ -10,8 +10,7 @@ import {
 import {
   useResizeObserver,
   ValueOf,
-  HTMLPropsFor,
-  RefFor
+  HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, {
@@ -241,6 +240,7 @@ const List: FC<HTMLPropsFor<'div'>> = props => {
             ref: itemRefs[i]
           }
 
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           return cloneElement(comp as any, childProps)
         })}
       </div>
