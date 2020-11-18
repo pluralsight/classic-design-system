@@ -27,7 +27,7 @@ describe('DatePicker', () => {
   })
 
   it('opens calendar on icon click', () => {
-    const { getByText, getByLabelText, container, rerender } = render(
+    const { getByText, getByLabelText, rerender } = render(
       <DatePicker value={new Date(1993, 0, 20)} />
     )
     const icon = getByLabelText('calendar icon', { selector: 'svg' })
@@ -65,46 +65,43 @@ describe('DatePicker', () => {
     })
   })
 
-  it('derives initial value from prop', () => {
+  it('derives initial value from prop', async () => {
     const date = new Date(1993, 0, 20)
-    const { container } = render(<DatePicker value={date} />)
+    const { findByRole } = render(<DatePicker value={date} />)
 
-    const fields: { [key: string]: HTMLInputElement } = {
-      day: container.querySelector<HTMLInputElement>(
-        '[name="dd"]'
-      ) as HTMLInputElement,
-      month: container.querySelector<HTMLInputElement>(
-        '[name="mm"]'
-      ) as HTMLInputElement,
-      year: container.querySelector<HTMLInputElement>(
-        '[name="yyyy"]'
-      ) as HTMLInputElement
-    }
-    expect(parseInt(fields.day.value, 10)).toEqual(date.getDate())
-    expect(parseInt(fields.month.value, 10)).toEqual(date.getMonth() + 1)
-    expect(parseInt(fields.year.value, 10)).toEqual(date.getFullYear())
+    const dd = (await findByRole('textbox', {
+      name: 'day'
+    })) as HTMLInputElement
+    const mm = (await findByRole('textbox', {
+      name: 'month'
+    })) as HTMLInputElement
+    const yyyy = (await findByRole('textbox', {
+      name: 'year'
+    })) as HTMLInputElement
+
+    expect(parseInt(dd.value, 10)).toEqual(date.getDate())
+    expect(parseInt(mm.value, 10)).toEqual(date.getMonth() + 1)
+    expect(parseInt(yyyy.value, 10)).toEqual(date.getFullYear())
   })
 
-  it('updates render state on prop change', () => {
+  it('updates render state on prop change', async () => {
     const date = new Date(1993, 0, 20)
-    const { container, rerender } = render(<DatePicker value={date} />)
+    const { findByRole, rerender } = render(<DatePicker value={date} />)
 
     const newDate = new Date(2001, 7, 14)
     rerender(<DatePicker value={newDate} />)
-    const fields: { [key: string]: HTMLInputElement } = {
-      day: container.querySelector<HTMLInputElement>(
-        '[name="dd"]'
-      ) as HTMLInputElement,
-      month: container.querySelector<HTMLInputElement>(
-        '[name="mm"]'
-      ) as HTMLInputElement,
-      year: container.querySelector<HTMLInputElement>(
-        '[name="yyyy"]'
-      ) as HTMLInputElement
-    }
+    const dd = (await findByRole('textbox', {
+      name: 'day'
+    })) as HTMLInputElement
+    const mm = (await findByRole('textbox', {
+      name: 'month'
+    })) as HTMLInputElement
+    const yyyy = (await findByRole('textbox', {
+      name: 'year'
+    })) as HTMLInputElement
 
-    expect(parseInt(fields.day.value, 10)).toEqual(newDate.getDate())
-    expect(parseInt(fields.month.value, 10)).toEqual(newDate.getMonth() + 1)
-    expect(parseInt(fields.year.value, 10)).toEqual(newDate.getFullYear())
+    expect(parseInt(dd.value, 10)).toEqual(newDate.getDate())
+    expect(parseInt(mm.value, 10)).toEqual(newDate.getMonth() + 1)
+    expect(parseInt(yyyy.value, 10)).toEqual(newDate.getFullYear())
   })
 })
