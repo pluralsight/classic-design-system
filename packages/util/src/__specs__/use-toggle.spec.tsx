@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { renderHook } from '@testing-library/react-hooks'
 import { act } from 'react-test-renderer'
 

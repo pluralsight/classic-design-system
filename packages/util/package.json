@@ -20,7 +20,6 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "exenv": "^1.2.2",
-    "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
