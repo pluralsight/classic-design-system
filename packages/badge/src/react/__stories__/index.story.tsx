@@ -1,7 +1,6 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
 
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import Badge from '..'
@@ -22,10 +21,6 @@ const BadgeStory = ({
     ))}
   </div>
 )
-
-BadgeStory.propTypes = {
-  appearance: PropTypes.string.isRequired
-}
 
 const appearanceStory = storiesOf('appearance', module)
 Object.values(Badge.appearances).forEach(appearance =>

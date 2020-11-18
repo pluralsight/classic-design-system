@@ -8,9 +8,14 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import {
+  ValueOf,
+  HTMLPropsFor,
+  RefForwardingComponent
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
+import * as vars from '../vars'
 
 const calcRowsPxHeight = (rows: React.ReactText) => {
   const int = (varVal: string) => parseInt(varVal.replace('px', ''), 10)
@@ -22,11 +27,21 @@ const calcRowsPxHeight = (rows: React.ReactText) => {
 
 const styles = {
   error: () => css(stylesheet['.psds-text-area__error']),
-  field: (themeName: ValueOf<typeof themeNames>, error: boolean) => {
+  field: (
+    themeName: ValueOf<typeof themeNames>,
+    appearance: ValueOf<typeof vars.appearances>,
+    error: boolean
+  ) => {
     const label = 'psds-text-area__field'
 
     return compose(
       css(stylesheet[`.${label}`]),
+      css(stylesheet[`.${label}--appearance--${appearance}`]),
+      css(
+        stylesheet[
+          `.${label}--appearance-${appearance}.psds-theme--${themeName}`
+        ]
+      ),
       css(stylesheet[`.${label}.psds-theme--${themeName}`]),
       error && css(stylesheet[`.${label}--error.psds-theme--${themeName}`])
     )
@@ -58,7 +73,12 @@ const styles = {
   }
 }
 
+export interface TextAreaStatics {
+  appearances: typeof vars.appearances
+}
+
 export interface TextAreaProps extends Omit<HTMLPropsFor<'textarea'>, 'rows'> {
+  appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean
   label?: React.ReactNode
@@ -69,9 +89,17 @@ export interface TextAreaProps extends Omit<HTMLPropsFor<'textarea'>, 'rows'> {
   name?: string
 }
 
-const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
+export interface TextAreaComponent
+  extends RefForwardingComponent<
+    TextAreaProps,
+    HTMLTextAreaElement,
+    TextAreaStatics
+  > {}
+
+const TextArea = React.forwardRef(
   (
     {
+      appearance = vars.appearances.default,
       className,
       disabled = false,
       error = false,
@@ -93,7 +121,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
           <Halo error={error} gapSize={Halo.gapSizes.small}>
             <textarea
               {...rest}
-              {...styles.field(themeName, error)}
+              {...styles.field(themeName, appearance, error)}
               disabled={disabled}
               placeholder={placeholder}
               ref={ref}
@@ -112,6 +140,8 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
       </label>
     )
   }
-)
+) as TextAreaComponent
 
+TextArea.appearances = vars.appearances
+export const appearances = vars.appearances
 export default TextArea

@@ -1,6 +1,6 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 import { compose, css } from 'glamor'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 import * as vars from '../vars'
 
@@ -25,7 +25,7 @@ const styles = {
   }
 }
 
-interface DropdownSelectedProps extends HTMLAttributes<HTMLLabelElement> {
+interface DropdownSelectedProps extends HTMLPropsFor<'label'> {
   appearance?: ValueOf<typeof vars.appearances>
   label?: string
   placeholder?: string

@@ -1,7 +1,6 @@
 import { compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React, {
-  HTMLAttributes,
   ReactNode,
   createContext,
   useCallback,
@@ -15,10 +14,10 @@ import React, {
 
 import Button from '@pluralsight/ps-design-system-button'
 import { breakpoints } from '@pluralsight/ps-design-system-core'
-// @ts-ignore: TODO: update scrollable typings
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
+  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   canUseDOM,
@@ -87,7 +86,7 @@ type RenderProp<P extends Record<string, unknown>> = (
   props: P
 ) => React.ReactNode
 
-interface AppFrameProps extends HTMLAttributes<HTMLDivElement> {
+interface AppFrameProps extends HTMLPropsFor<'div'> {
   onRequestSideNavClose?: () => void
   onRequestSideNavOpen?: () => void
   sidenav?: ReactNode | RenderProp<{ visible: boolean }>
@@ -224,7 +223,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
 AppFrame.displayName = 'AppFrame'
 
 // TODO: why is there a an href here?
-interface SkipBannerProps extends HTMLAttributes<HTMLDivElement> {
+interface SkipBannerProps extends HTMLPropsFor<'div'> {
   href: string
 }
 const SkipBanner: React.FC<SkipBannerProps> = props => {
@@ -243,7 +242,7 @@ const SkipBanner: React.FC<SkipBannerProps> = props => {
   )
 }
 
-interface SkipTargetProps extends HTMLAttributes<HTMLAnchorElement> {
+interface SkipTargetProps extends HTMLPropsFor<'a'> {
   id: string
 }
 const SkipTarget = React.forwardRef<HTMLAnchorElement, SkipTargetProps>(
@@ -254,12 +253,12 @@ const SkipTarget = React.forwardRef<HTMLAnchorElement, SkipTargetProps>(
 
 SkipTarget.displayName = 'SkipTarget'
 
-const Container: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const Container: React.FC<HTMLPropsFor<'div'>> = props => {
   const context = useContext(AppFrameContext)
   return <div {...styles.container(context.sidenavVariant)} {...props} />
 }
 
-interface SideNavProps extends HTMLAttributes<HTMLDivElement> {
+interface SideNavProps extends HTMLPropsFor<'div'> {
   children: AppFrameProps['sidenav']
 }
 interface SideNavStatics {
@@ -319,7 +318,7 @@ const SideNav: React.FC<SideNavProps> & SideNavStatics = props => {
 
 SideNav.variants = vars.sidenavVariants
 
-interface TopNavProps extends HTMLAttributes<HTMLDivElement> {
+interface TopNavProps extends HTMLPropsFor<'div'> {
   children: AppFrameProps['topnav']
 }
 

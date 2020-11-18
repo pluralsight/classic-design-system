@@ -26,7 +26,7 @@
     "build": "lerna run build --ignore @pluralsight/ps-design-system-docs",
     "clean": "del '{,!(node_modules)/}**/dist'",
     "danger:ci": "danger ci --failOnErrors",
-    "deps:check:circular": "madge --exclude '^(dist|prop-types).*' --circular packages",
+    "deps:check:circular": "madge --exclude '^dist.*' --circular packages",
     "docs": "yarn workspace @pluralsight/ps-design-system-docs start:dev",
     "generate": "plop",
     "generate:component": "plop component",
@@ -71,7 +71,6 @@
   },
   "dependencies": {
     "glamor": "^2.20.40",
-    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-transition-group": "^4.4.1"

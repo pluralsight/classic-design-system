@@ -1,11 +1,12 @@
 import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
-  RefForwardingComponent,
+  HTMLPropsFor,
+  RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { css, keyframes } from 'glamor'
-import React, { Children, HTMLAttributes, RefObject } from 'react'
+import React, { Children } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -80,7 +81,7 @@ const mapIconSize = (size: string) => {
   return btnToIconSizes[size] ? btnToIconSizes[size] : iconSizes.medium
 }
 
-interface RenderIconProps extends HTMLAttributes<HTMLDivElement> {
+interface RenderIconProps extends HTMLPropsFor<'div'> {
   loading: boolean
   icon: React.ReactNode
   appearance: string
@@ -123,11 +124,6 @@ const renderIcon: React.FC<RenderIconProps> = props =>
     </div>
   ) : null
 
-interface ButtonStatics {
-  appearances: typeof vars.appearances
-  iconAligns: typeof vars.iconAligns
-  sizes: typeof vars.sizes
-}
 interface BaseButtonProps {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
@@ -136,109 +132,111 @@ interface BaseButtonProps {
   loading?: boolean
   size?: ValueOf<typeof vars.sizes>
 }
-type AnchorEl = JSX.IntrinsicElements['a']
-interface ButtonAnchorProps extends BaseButtonProps, AnchorEl {
+interface ButtonAnchorProps extends BaseButtonProps, HTMLPropsFor<'a'> {
   href: string
 }
-type ButtonEl = JSX.IntrinsicElements['button']
-interface ButtonButtonProps extends BaseButtonProps, ButtonEl {
+interface ButtonButtonProps extends BaseButtonProps, HTMLPropsFor<'button'> {
   href?: undefined
 }
+type ButtonElement = HTMLAnchorElement | HTMLButtonElement
 type ButtonProps = ButtonAnchorProps | ButtonButtonProps
-
-type ButtonComponent = RefForwardingComponent<
-  ButtonProps,
-  HTMLAnchorElement | HTMLButtonElement,
-  ButtonStatics
-> & {
-  (props: ButtonAnchorProps, ref?: RefObject<HTMLAnchorElement>): JSX.Element
-  (props: ButtonButtonProps, ref?: RefObject<HTMLButtonElement>): JSX.Element
+interface ButtonStatics {
+  appearances: typeof vars.appearances
+  iconAligns: typeof vars.iconAligns
+  sizes: typeof vars.sizes
 }
 
-const Button = React.forwardRef((props, forwardedRef) => {
-  const {
-    appearance = vars.appearances.primary,
-    children,
-    disabled = false,
-    icon,
-    iconAlign = vars.iconAligns.left,
-    loading = false,
-    size = vars.sizes.medium,
-    ...rest
-  } = props
+type ButtonComponent = React.ForwardRefExoticComponent<unknown> & {
+  (props: ButtonAnchorProps, ref?: RefFor<'a'>): JSX.Element
+  (props: ButtonButtonProps, ref?: RefFor<'button'>): JSX.Element
+}
 
-  const iconOnly = Children.count(children) <= 0
+const Button = React.forwardRef<ButtonElement, ButtonProps>(
+  (props, forwardedRef) => {
+    const {
+      appearance = vars.appearances.primary,
+      children,
+      disabled = false,
+      icon,
+      iconAlign = vars.iconAligns.left,
+      loading = false,
+      size = vars.sizes.medium,
+      ...rest
+    } = props
 
-  const themeName = useTheme()
+    const iconOnly = Children.count(children) <= 0
 
-  const ref = React.useRef<HTMLAnchorElement | HTMLButtonElement>()
-  React.useImperativeHandle(forwardedRef, () => ref.current)
+    const themeName = useTheme()
 
-  const nonLoadingWidth = React.useMemo(() => {
-    if (loading && ref && ref.current) return ref.current.offsetWidth
-  }, [loading, ref])
-  const isLoadingWithNoText = !!nonLoadingWidth
+    const ref = React.useRef<HTMLAnchorElement | HTMLButtonElement>()
+    React.useImperativeHandle(forwardedRef, () => ref.current)
 
-  const glamorStyle = styles.button({
-    appearance,
-    disabled,
-    icon,
-    iconAlign,
-    iconOnly,
-    size,
-    themeName
-  })
-  const style = {
-    ...(props.style || {}),
-    ...(isLoadingWithNoText && { width: nonLoadingWidth })
-  }
-  const iconEl = renderIcon({
-    appearance,
-    icon,
-    iconAlign,
-    iconOnly,
-    isLoadingWithNoText,
-    loading,
-    size,
-    themeName
-  })
-  const labelEl = !isLoadingWithNoText && (
-    <span {...styles.text()}>{children}</span>
-  )
+    const nonLoadingWidth = React.useMemo(() => {
+      if (loading && ref && ref.current) return ref.current.offsetWidth
+    }, [loading, ref])
+    const isLoadingWithNoText = !!nonLoadingWidth
 
-  if ('href' in props && typeof props.href === 'string') {
-    const anchorProps = rest as HTMLAttributes<HTMLAnchorElement>
-
-    return (
-      <a
-        ref={ref as React.Ref<HTMLAnchorElement>}
-        {...glamorStyle}
-        {...anchorProps}
-        onClick={disabled ? undefined : anchorProps.onClick}
-        style={style}
-      >
-        {iconEl}
-        {labelEl}
-      </a>
+    const glamorStyle = styles.button({
+      appearance,
+      disabled,
+      icon,
+      iconAlign,
+      iconOnly,
+      size,
+      themeName
+    })
+    const style = {
+      ...(props.style || {}),
+      ...(isLoadingWithNoText && { width: nonLoadingWidth })
+    }
+    const iconEl = renderIcon({
+      appearance,
+      icon,
+      iconAlign,
+      iconOnly,
+      isLoadingWithNoText,
+      loading,
+      size,
+      themeName
+    })
+    const labelEl = !isLoadingWithNoText && (
+      <span {...styles.text()}>{children}</span>
     )
-  } else {
-    const buttonProps = rest as HTMLAttributes<HTMLButtonElement>
-    delete (buttonProps as any).download
 
-    return (
-      <button
-        disabled={disabled || loading}
-        ref={ref as React.Ref<HTMLButtonElement>}
-        {...glamorStyle}
-        {...buttonProps}
-        style={style}
-      >
-        {iconEl}
-        {labelEl}
-      </button>
-    )
+    if ('href' in props && typeof props.href === 'string') {
+      const anchorProps = rest as HTMLPropsFor<'a'>
+
+      return (
+        <a
+          ref={ref as React.Ref<HTMLAnchorElement>}
+          {...glamorStyle}
+          {...anchorProps}
+          onClick={disabled ? undefined : anchorProps.onClick}
+          style={style}
+        >
+          {iconEl}
+          {labelEl}
+        </a>
+      )
+    } else {
+      const buttonProps = rest as HTMLPropsFor<'button'>
+      delete (buttonProps as any).download
+
+      return (
+        <button
+          disabled={disabled || loading}
+          ref={ref as React.Ref<HTMLButtonElement>}
+          {...glamorStyle}
+          {...buttonProps}
+          style={style}
+        >
+          {iconEl}
+          {labelEl}
+        </button>
+      )
+    }
   }
-}) as ButtonComponent
+) as ButtonComponent & ButtonStatics
 
 Button.appearances = vars.appearances
 Button.iconAligns = vars.iconAligns

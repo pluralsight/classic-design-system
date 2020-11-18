@@ -742,24 +742,6 @@ exports[`Storyshots Using Initials error-out image src, with name 1`] = `
 </div>
 `;
 
-exports[`Storyshots Using Initials null name, no src 1`] = `
-<div
-  data-css-1a2nnhr=""
->
-  <div
-    aria-label={null}
-    data-css-1h1qs66=""
-    style={
-      Object {
-        "backgroundColor": "#008F46",
-      }
-    }
-  >
-    :)
-  </div>
-</div>
-`;
-
 exports[`Storyshots Using Initials single string name, no src 1`] = `
 <div
   data-css-1a2nnhr=""
@@ -774,6 +756,23 @@ exports[`Storyshots Using Initials single string name, no src 1`] = `
     }
   >
     X
+  </div>
+</div>
+`;
+
+exports[`Storyshots Using Initials undefined name, no src 1`] = `
+<div
+  data-css-1a2nnhr=""
+>
+  <div
+    data-css-1h1qs66=""
+    style={
+      Object {
+        "backgroundColor": "#D1487B",
+      }
+    }
+  >
+    :)
   </div>
 </div>
 `;
