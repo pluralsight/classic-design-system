@@ -194,7 +194,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
     }
 
     return (
-      <label
+      <div
         {...styles.datePicker(disabled, themeName)}
         className={className}
         onKeyDown={handleKeyDown}
@@ -213,6 +213,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
               onBlur={handleSubFieldBlur}
               value={value ? value.getMonth() + 1 : undefined}
               name="mm"
+              aria-label="month"
               disabled={disabled}
               style={{ width: '32px' }}
             />
@@ -225,6 +226,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
               onBlur={handleSubFieldBlur}
               value={value ? value.getDate() : undefined}
               name="dd"
+              aria-label="day"
               disabled={disabled}
               style={{ width: '24px' }}
             />
@@ -237,6 +239,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
               onBlur={handleSubFieldBlur}
               value={value ? value.getFullYear() : undefined}
               name="yyyy"
+              aria-label="year"
               disabled={disabled}
               style={{ width: '48px' }}
             />
@@ -278,7 +281,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
         )}
 
         {subLabel && <div {...styles.subLabel(themeName)}>{subLabel}</div>}
-      </label>
+      </div>
     )
   }
 ) as DatePickerComponent
