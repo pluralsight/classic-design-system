@@ -6,7 +6,7 @@ import {
   ValueOf,
   isString,
   useMatchMedia,
-  HTMLPropsFor,
+  HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, {
@@ -463,7 +463,7 @@ const Title: React.FC<TitleProps> = props => {
 
 interface WordsProps
   extends Pick<RowProps, 'actionBar' | 'image' | 'size'>,
-  HTMLPropsFor<'div'> {}
+    HTMLPropsFor<'div'> {}
 const Words: React.FC<WordsProps> = props => {
   const { actionBar, image, size, ...rest } = props
   return <div {...styles.words({ actionBar, image, size })} {...rest} />

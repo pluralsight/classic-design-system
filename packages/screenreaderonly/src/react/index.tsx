@@ -1,5 +1,5 @@
 import { accessibility } from '@pluralsight/ps-design-system-core'
-import {HTMLPropsFor} from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { ReactNode, forwardRef } from 'react'
 
