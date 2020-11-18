@@ -742,7 +742,7 @@ exports[`Storyshots Sample Form sample 1`] = `
       <div
         data-css-4l6uky=""
       >
-        <label
+        <div
           data-css-w0yocm=""
           onKeyDown={[Function]}
           style={
@@ -764,6 +764,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-1gfowhv=""
             >
               <input
+                aria-label="month"
                 data-css-1ynlp2p=""
                 name="mm"
                 onBlur={[Function]}
@@ -781,6 +782,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 /
               </span>
               <input
+                aria-label="day"
                 data-css-1ynlp2p=""
                 name="dd"
                 onBlur={[Function]}
@@ -798,6 +800,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 /
               </span>
               <input
+                aria-label="year"
                 data-css-1ynlp2p=""
                 name="yyyy"
                 onBlur={[Function]}
@@ -834,7 +837,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               </button>
             </div>
           </div>
-        </label>
+        </div>
       </div>
       <div
         data-css-4l6uky=""
