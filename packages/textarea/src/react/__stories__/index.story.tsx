@@ -16,11 +16,19 @@ storiesOf('labels', module)
     <TextArea label="Some label" subLabel="Some sublabel" />
   ))
   .add('all', () => (
-    <TextArea
-      label="Some label"
-      subLabel="Some sublabel"
-      placeholder="Some placeholder"
-    />
+    <>
+      <TextArea
+        label="Some label"
+        subLabel="Some sublabel"
+        placeholder="Some placeholder"
+      />
+      <TextArea
+        appearance={TextArea.appearances.subtle}
+        label="Some label"
+        subLabel="Some sublabel"
+        placeholder="Some placeholder"
+      />
+    </>
   ))
 
 storiesOf('error', module).add('compare', () => (
