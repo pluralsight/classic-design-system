@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import { layout, type } from '@pluralsight/ps-design-system-core'
 import Halo from '@pluralsight/ps-design-system-halo'
@@ -8,7 +8,7 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
@@ -58,7 +58,7 @@ const styles = {
   }
 }
 
-export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaProps extends Omit<HTMLPropsFor<'textarea'>, 'rows'> {
   disabled?: boolean
   error?: boolean
   label?: React.ReactNode
