@@ -1,6 +1,7 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
-const ListItem: React.FC<HTMLAttributes<HTMLLIElement>> = props => (
+const ListItem: React.FC<HTMLPropsFor<'li'>> = props => (
   <li {...props}>{props.children}</li>
 )
 
