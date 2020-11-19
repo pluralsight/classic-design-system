@@ -6,6 +6,7 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { Item } from './item'
+import { Input } from './input'
 import { useDropdown, DropdownContext } from '../js'
 import { Label } from './label'
 import { Layout } from './layout'
@@ -21,6 +22,7 @@ interface DropdownStatics {
   Divider: typeof ActionMenu.Divider
   appearances: typeof vars.appearances
   sizes: typeof vars.sizes
+  Input: typeof Input
   Label: typeof Label
   Layout: typeof Layout
   Menu: typeof Menu
@@ -68,6 +70,7 @@ const Dropdown = forwardRef<HTMLButtonElement, DropdownProps>(
             <Selected {...allProps.selected} />
           </Button>
         }
+        input={<Input {...allProps.input} />}
       />
     )
   }
@@ -86,6 +89,7 @@ Dropdown.Item = Item
 Dropdown.Divider = ActionMenu.Divider
 Dropdown.appearances = vars.appearances
 Dropdown.sizes = vars.sizes
+Dropdown.Input = Input
 Dropdown.Label = Label
 Dropdown.Layout = Layout
 Dropdown.Menu = Menu

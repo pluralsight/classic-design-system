@@ -1,11 +1,15 @@
-import React, { forwardRef } from 'react'
-import { css } from 'glamor'
+import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import {
   HTMLPropsFor,
-  createUniversalPortal
+  createUniversalPortal,
+  cloneElementWithRef
 } from '@pluralsight/ps-design-system-util'
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import React, { forwardRef, cloneElement } from 'react'
+import { isFragment, isValidElementType } from 'react-is'
+import { css } from 'glamor'
+
 import stylesheet from '../css'
+import { Item } from './item'
 
 const styles = {
   menuWrapper: css(stylesheet['.psds-dropdown__menu-wrapper']),
@@ -16,33 +20,37 @@ interface DropdownMenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
   inNode?: HTMLElement
   isOpen: boolean
   menu: React.ReactNode
+  menuId: string
   menuPosition: { top: number; left: number }
   onClick: (e: React.MouseEvent, v?: React.ReactText) => void
   onClose: () => void
+  selectedItemId?: string
   width: React.ReactText
 }
 export const Menu = forwardRef<HTMLUListElement, DropdownMenuProps>(
-  ({ menu, menuPosition, isOpen, onClick, inNode, onClose, width }, ref) => {
+  (props, ref) => {
     return (
-      menu &&
-      isOpen &&
+      props.menu &&
+      props.isOpen &&
       createUniversalPortal(
-        <div {...styles.menuWrapper} style={menuPosition}>
+        <div {...styles.menuWrapper} style={props.menuPosition}>
           <ActionMenu
             {...styles.menu}
-            onClick={onClick}
+            onClick={props.onClick}
             ref={ref}
-            onClose={onClose}
+            role="listbox"
+            onClose={props.onClose}
             style={{
               minWidth: '0',
               maxWidth: 'none',
-              width
+              width: props.width
             }}
+            id={props.menuId}
           >
-            {menu}
+            {props.menu}
           </ActionMenu>
         </div>,
-        inNode
+        props.inNode
       )
     )
   }

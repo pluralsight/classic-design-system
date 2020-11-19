@@ -1,14 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots appearance default w/ error 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Problem field
+    <span>
+      Problem field
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -77,20 +92,35 @@ exports[`Storyshots appearance default w/ error 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots appearance gaps 1`] = `
 <div>
   <div>
-    <label
+    <div
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
-      <div
-        data-css-dysqqm=""
+      <label
+        htmlFor="dropdown-label-unique-id"
       >
-        Problem field
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant={null}
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          defaultValue=""
+          disabled={false}
+          id="dropdown-label-unique-id"
+        />
       </div>
       <div
         data-css-8befsb=""
@@ -140,17 +170,32 @@ exports[`Storyshots appearance gaps 1`] = `
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </div>
   <div>
-    <label
+    <div
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
-      <div
-        data-css-dysqqm=""
+      <label
+        htmlFor="dropdown-label-unique-id"
       >
-        Problem field
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant={null}
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          defaultValue=""
+          disabled={false}
+          id="dropdown-label-unique-id"
+        />
       </div>
       <div
         data-css-8befsb=""
@@ -219,17 +264,32 @@ exports[`Storyshots appearance gaps 1`] = `
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </div>
   <div>
-    <label
+    <div
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
-      <div
-        data-css-dysqqm=""
+      <label
+        htmlFor="dropdown-label-unique-id"
       >
-        Problem field
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant={null}
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          defaultValue=""
+          disabled={false}
+          id="dropdown-label-unique-id"
+        />
       </div>
       <div
         data-css-8befsb=""
@@ -279,17 +339,32 @@ exports[`Storyshots appearance gaps 1`] = `
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </div>
   <div>
-    <label
+    <div
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
-      <div
-        data-css-dysqqm=""
+      <label
+        htmlFor="dropdown-label-unique-id"
       >
-        Problem field
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant={null}
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          defaultValue=""
+          disabled={false}
+          id="dropdown-label-unique-id"
+        />
       </div>
       <div
         data-css-8befsb=""
@@ -358,16 +433,38 @@ exports[`Storyshots appearance gaps 1`] = `
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots appearance medium default 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -420,14 +517,36 @@ exports[`Storyshots appearance medium default 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots appearance medium subtle 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -480,14 +599,36 @@ exports[`Storyshots appearance medium subtle 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots appearance small default 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -540,14 +681,36 @@ exports[`Storyshots appearance small default 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots appearance small subtle 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -600,18 +763,33 @@ exports[`Storyshots appearance small subtle 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots appearance subtle w/ error 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Problem field
+    <span>
+      Problem field
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -680,14 +858,23 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots custom dynamic icon 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
   <div
     data-css-8befsb=""
   >
@@ -756,14 +943,23 @@ exports[`Storyshots custom dynamic icon 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots custom fixed icon 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
   <div
     data-css-8befsb=""
   >
@@ -841,19 +1037,34 @@ exports[`Storyshots custom fixed icon 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots disabled compare 1`] = `
 <div>
-  <label
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Normal
+      <span>
+        Normal
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant={null}
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue=""
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -912,15 +1123,30 @@ exports[`Storyshots disabled compare 1`] = `
     >
       Still normal
     </div>
-  </label>
-  <label
+  </div>
+  <div
     data-css-1h53i33=""
     onKeyDown={[Function]}
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      I'm not usable
+      <span>
+        I'm not usable
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant={null}
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue=""
+        disabled={true}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -979,15 +1205,37 @@ exports[`Storyshots disabled compare 1`] = `
     >
       Neither am I
     </div>
-  </label>
+  </div>
 </div>
 `;
 
 exports[`Storyshots focus autofocus with ref 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -1036,14 +1284,36 @@ exports[`Storyshots focus autofocus with ref 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots focus disabled 1`] = `
-<label
+<div
   data-css-1h53i33=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={true}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -1094,14 +1364,36 @@ exports[`Storyshots focus disabled 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots focus onBlur 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -1151,14 +1443,36 @@ exports[`Storyshots focus onBlur 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots focus onFocus 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -1208,18 +1522,33 @@ exports[`Storyshots focus onFocus 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots labels all 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Some label
+    <span>
+      Some label
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -1278,18 +1607,33 @@ exports[`Storyshots labels all 1`] = `
   >
     Some sublabel
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots labels label 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Some label
+    <span>
+      Some label
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -1339,18 +1683,33 @@ exports[`Storyshots labels label 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots labels label and subLabel 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Some label
+    <span>
+      Some label
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -1405,14 +1764,36 @@ exports[`Storyshots labels label and subLabel 1`] = `
   >
     Some sublabel
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots labels none 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -1461,14 +1842,36 @@ exports[`Storyshots labels none 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots labels placeholder 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -1521,14 +1924,36 @@ exports[`Storyshots labels placeholder 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots labels subLabel 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -1582,7 +2007,7 @@ exports[`Storyshots labels subLabel 1`] = `
   >
     Some sublabel
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots layouts custom width 1`] = `
@@ -1597,7 +2022,7 @@ exports[`Storyshots layouts custom width 1`] = `
     Value: 
     two
   </div>
-  <label
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
     style={
@@ -1606,10 +2031,25 @@ exports[`Storyshots layouts custom width 1`] = `
       }
     }
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Width 150
+      <span>
+        Width 150
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant="two"
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue="two"
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -1663,15 +2103,30 @@ exports[`Storyshots layouts custom width 1`] = `
         </div>
       </div>
     </div>
-  </label>
-  <label
+  </div>
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Width determined by longest item
+      <span>
+        Width determined by longest item
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant="two"
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue="two"
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -1725,7 +2180,7 @@ exports[`Storyshots layouts custom width 1`] = `
         </div>
       </div>
     </div>
-  </label>
+  </div>
 </div>
 `;
 
@@ -1738,7 +2193,7 @@ exports[`Storyshots layouts full width 1`] = `
     }
   }
 >
-  <label
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
     style={
@@ -1748,10 +2203,25 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      First
+      <span>
+        First
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant={null}
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue=""
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -1801,8 +2271,8 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </div>
     </div>
-  </label>
-  <label
+  </div>
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
     style={
@@ -1812,10 +2282,25 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Second
+      <span>
+        Second
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant={null}
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue=""
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -1884,8 +2369,8 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </div>
     </div>
-  </label>
-  <label
+  </div>
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
     style={
@@ -1895,10 +2380,25 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Third
+      <span>
+        Third
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant={null}
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue=""
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -1948,8 +2448,8 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </div>
     </div>
-  </label>
-  <label
+  </div>
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
     style={
@@ -1959,10 +2459,25 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Fourth
+      <span>
+        Fourth
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant={null}
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue=""
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -2031,7 +2546,7 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </div>
     </div>
-  </label>
+  </div>
 </div>
 `;
 
@@ -2051,10 +2566,32 @@ exports[`Storyshots layouts right-aligned 1`] = `
       }
     }
   >
-    <label
+    <div
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
+      <label
+        htmlFor="dropdown-label-unique-id"
+      >
+        <span
+          data-css-6wu9td=""
+        >
+          Dropdown
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant={null}
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          defaultValue=""
+          disabled={false}
+          id="dropdown-label-unique-id"
+        />
+      </div>
       <div
         data-css-8befsb=""
       >
@@ -2107,7 +2644,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </div>
   <div
     style={
@@ -2121,14 +2658,29 @@ exports[`Storyshots layouts right-aligned 1`] = `
 `;
 
 exports[`Storyshots menu divider 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2180,20 +2732,35 @@ exports[`Storyshots menu divider 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu in stack 1`] = `
 <div>
   <div>
-    <label
+    <div
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
-      <div
-        data-css-dysqqm=""
+      <label
+        htmlFor="dropdown-label-unique-id"
       >
-        Level
+        <span>
+          Level
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant={null}
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          defaultValue=""
+          disabled={false}
+          id="dropdown-label-unique-id"
+        />
       </div>
       <div
         data-css-8befsb=""
@@ -2247,17 +2814,32 @@ exports[`Storyshots menu in stack 1`] = `
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </div>
   <div>
-    <label
+    <div
       data-css-1hniuff=""
       onKeyDown={[Function]}
     >
-      <div
-        data-css-dysqqm=""
+      <label
+        htmlFor="dropdown-label-unique-id"
       >
-        Level
+        <span>
+          Level
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant={null}
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          defaultValue=""
+          disabled={false}
+          id="dropdown-label-unique-id"
+        />
       </div>
       <div
         data-css-8befsb=""
@@ -2311,20 +2893,35 @@ exports[`Storyshots menu in stack 1`] = `
           </div>
         </div>
       </div>
-    </label>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots menu max height 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2376,18 +2973,33 @@ exports[`Storyshots menu max height 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu nested 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2441,18 +3053,33 @@ exports[`Storyshots menu nested 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu onClicks 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2525,18 +3152,33 @@ exports[`Storyshots menu onClicks 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu single list 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2588,18 +3230,33 @@ exports[`Storyshots menu single list 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu single list w/ icon 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2653,18 +3310,33 @@ exports[`Storyshots menu single list w/ icon 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu super long 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2716,18 +3388,33 @@ exports[`Storyshots menu super long 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu w/ longer nested menu item label 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2779,18 +3466,33 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu w/ longer placeholder 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2844,18 +3546,33 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu w/ subLabel 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2912,18 +3629,33 @@ exports[`Storyshots menu w/ subLabel 1`] = `
   >
     The course level
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots menu w/ value 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant="three-1"
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue="three-1"
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -2977,14 +3709,36 @@ exports[`Storyshots menu w/ value 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots placeholder as pre-selected item 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
   <div
     data-css-8befsb=""
   >
@@ -3037,7 +3791,7 @@ exports[`Storyshots placeholder as pre-selected item 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots portal position 1`] = `
@@ -3054,14 +3808,29 @@ exports[`Storyshots portal position 1`] = `
   }
 >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed. Ornare lectus sit amet est placerat in egestas. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nisl nisi scelerisque eu ultrices. Amet risus nullam eget felis. Arcu non sodales neque sodales ut etiam. Tortor at auctor urna nunc. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Condimentum vitae sapien pellentesque habitant morbi tristique. Egestas maecenas pharetra convallis posuere morbi leo urna molestie. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Lobortis feugiat vivamus at augue eget arcu dictum. Fusce id velit ut tortor pretium viverra suspendisse. Convallis tellus id interdum velit. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tempor orci dapibus ultrices in iaculis nunc. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet massa vitae tortor. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing. Sed felis eget velit aliquet sagittis. Elit pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Id volutpat lacus laoreet non curabitur gravida arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet.
-  <label
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Level
+      <span>
+        Level
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant={null}
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue=""
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -3113,20 +3882,35 @@ exports[`Storyshots portal position 1`] = `
         </div>
       </div>
     </div>
-  </label>
+  </div>
   Aliquam sem et tortor consequat id. Vitae tempus quam pellentesque nec nam. Platea dictumst quisque sagittis purus sit amet volutpat. Convallis tellus id interdum velit laoreet id. Convallis tellus id interdum velit laoreet id donec ultrices. Metus vulputate eu scelerisque felis imperdiet. Luctus venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi tristique senectus. Mi bibendum neque egestas congue quisque egestas diam in. Faucibus interdum posuere lorem ipsum dolor sit. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Ut tortor pretium viverra suspendisse potenti. Lectus proin nibh nisl condimentum id venenatis a condimentum. Consequat id porta nibh venenatis cras sed felis eget velit. Placerat orci nulla pellentesque dignissim enim sit. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Malesuada fames ac turpis egestas integer. Consectetur purus ut faucibus pulvinar elementum integer. Consectetur adipiscing elit pellentesque habitant morbi. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Dictumst quisque sagittis purus sit. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Porttitor massa id neque aliquam vestibulum. Viverra maecenas accumsan lacus vel facilisis volutpat est. Ac orci phasellus egestas tellus. Dui vivamus arcu felis bibendum ut tristique. Pharetra convallis posuere morbi leo urna molestie at. Suscipit tellus mauris a diam maecenas. Cursus risus at ultrices mi tempus imperdiet nulla. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. In eu mi bibendum neque egestas congue quisque. Augue mauris augue neque gravida in fermentum. Interdum consectetur libero id faucibus nisl tincidunt eget. In metus vulputate eu scelerisque felis imperdiet proin. Ut lectus arcu bibendum at varius vel pharetra vel. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. In dictum non consectetur a erat nam at lectus urna. Sem fringilla ut morbi tincidunt. Porttitor massa id neque aliquam vestibulum morbi. Ut placerat orci nulla pellentesque dignissim enim sit amet. Sed augue lacus viverra vitae congue eu consequat. Nibh cras pulvinar mattis nunc sed. Nec ultrices dui sapien eget mi. Ut tellus elementum sagittis vitae. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Nisi vitae suscipit tellus mauris a diam. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Amet justo donec enim diam vulputate. Arcu vitae elementum curabitur vitae. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Vel turpis nunc eget lorem dolor sed viverra. Orci eu lobortis elementum nibh tellus molestie nunc non. Mi eget mauris pharetra et ultrices. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Vestibulum lectus mauris ultrices eros in cursus turpis massa.
 </div>
 `;
 
 exports[`Storyshots props whitelist title 1`] = `
-<label
+<div
   data-css-1hniuff=""
   onKeyDown={[Function]}
 >
-  <div
-    data-css-dysqqm=""
+  <label
+    htmlFor="dropdown-label-unique-id"
   >
-    Level
+    <span>
+      Level
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant={null}
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue=""
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
   </div>
   <div
     data-css-8befsb=""
@@ -3179,7 +3963,7 @@ exports[`Storyshots props whitelist title 1`] = `
       </div>
     </div>
   </div>
-</label>
+</div>
 `;
 
 exports[`Storyshots whitelist clear 1`] = `
@@ -3199,14 +3983,29 @@ exports[`Storyshots whitelist clear 1`] = `
   >
     Clear
   </button>
-  <label
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Thing to change
+      <span>
+        Thing to change
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant="two"
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue="two"
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -3260,7 +4059,7 @@ exports[`Storyshots whitelist clear 1`] = `
         </div>
       </div>
     </div>
-  </label>
+  </div>
 </div>
 `;
 
@@ -3276,14 +4075,29 @@ exports[`Storyshots whitelist onChange 1`] = `
     Value: 
     two
   </div>
-  <label
+  <div
     data-css-1hniuff=""
     onKeyDown={[Function]}
   >
-    <div
-      data-css-dysqqm=""
+    <label
+      htmlFor="dropdown-label-unique-id"
     >
-      Thing to change
+      <span>
+        Thing to change
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant="two"
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        defaultValue="two"
+        disabled={false}
+        id="dropdown-label-unique-id"
+      />
     </div>
     <div
       data-css-8befsb=""
@@ -3337,6 +4151,6 @@ exports[`Storyshots whitelist onChange 1`] = `
         </div>
       </div>
     </div>
-  </label>
+  </div>
 </div>
 `;

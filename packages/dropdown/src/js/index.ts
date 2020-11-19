@@ -11,11 +11,21 @@ import {
   useState
 } from 'react'
 import { canUseDOM } from 'exenv'
-import { useMenuRef, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  useUniqueId,
+  useMenuRef,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
-export const DropdownContext = createContext<React.ReactText>('')
+interface DropdownContextValue {
+  selectedItemId?: string
+  selectedValue?: number | string
+}
+export const DropdownContext = createContext<DropdownContextValue>({
+  selectedValue: ''
+})
 
 interface UseDropdownProps
   extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
@@ -64,6 +74,9 @@ const sortDropdownProps = ({
     onClick,
     placeholder
   },
+  input: {
+    disabled
+  },
   label: {
     label
   },
@@ -101,11 +114,20 @@ export const useDropdown = (
   )
   const [selectedValue, setSelectedValue] = useState(hook.value)
 
+  const labelId = useUniqueId('dropdown-label-')
+  const menuId = useUniqueId('dropdown-menu-')
+  const [selectedItemId, setSelectedItemId] = useState(
+    selectedValue || selectedLabel
+      ? menuId + (selectedValue || selectedLabel)
+      : undefined
+  )
+
   useEffect(() => {
-    setSelectedLabel(
-      itemMatchingValue ? itemMatchingValue.props.children : null
-    )
-    setSelectedValue(hook.value)
+    const newLabel = itemMatchingValue ? itemMatchingValue.props.children : null
+    const newValue = hook.value
+    setSelectedLabel(newLabel)
+    setSelectedValue(newValue)
+    setSelectedItemId(newValue || newLabel)
   }, [itemMatchingValue, hook.value])
 
   function handleToggleOpen(evt) {
@@ -202,7 +224,19 @@ export const useDropdown = (
       onClick: handleToggleOpen,
       setMenuPosition
     },
-    label: rest.label,
+    input: {
+      ...rest.input,
+      isOpen,
+      labelId,
+      menuId,
+      selectedItemId,
+      selectedLabel,
+      selectedValue
+    },
+    label: {
+      ...rest.label,
+      labelId
+    },
     layout: {
       ...rest.layout,
       onKeyDown: handleKeyDown
@@ -211,6 +245,7 @@ export const useDropdown = (
       ...rest.menu,
       inNode,
       isOpen,
+      menuId,
       menuPosition,
       onClick: handleMenuChange,
       onClose: () => {
@@ -226,7 +261,10 @@ export const useDropdown = (
     },
     subLabel: rest.subLabel,
     value: {
-      value: selectedValue
+      value: {
+        selectedItemId,
+        selectedValue
+      }
     }
   }
 }

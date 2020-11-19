@@ -24,8 +24,10 @@
     "@pluralsight/ps-design-system-core": "^6.5.2",
     "@pluralsight/ps-design-system-halo": "^7.1.12",
     "@pluralsight/ps-design-system-icon": "^19.0.10",
+    "@pluralsight/ps-design-system-screenreaderonly": "^2.1.12",
     "@pluralsight/ps-design-system-util": "^6.0.3",
-    "exenv": "^1.2.2"
+    "exenv": "^1.2.2",
+    "react-is": "^17.0.1"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -36,6 +38,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.2",
     "@pluralsight/ps-design-system-storybook-preset": "^0.2.12",
-    "@pluralsight/ps-design-system-theme": "^6.0.8"
+    "@pluralsight/ps-design-system-theme": "^6.0.8",
+    "@types/react-is": "^16.7.1"
   }
 }

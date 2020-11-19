@@ -12,9 +12,10 @@ const styles = ({ disabled }) => {
   )
 }
 
-interface DropdownLayoutProps extends HTMLPropsFor<'label'> {
+interface DropdownLayoutProps extends HTMLPropsFor<'div'> {
   button: React.ReactNode
   disabled?: boolean
+  input?: React.ReactNode
   label?: React.ReactNode
   menu?: React.ReactNode
   onKeyDown?: (e: React.KeyboardEvent) => void
@@ -22,27 +23,23 @@ interface DropdownLayoutProps extends HTMLPropsFor<'label'> {
 }
 
 export const Layout: React.FC<DropdownLayoutProps> = ({
-  className,
   button,
   disabled,
+  input,
   label,
   menu,
   onKeyDown,
-  style,
-  subLabel
+  subLabel,
+  ...rest
 }) => {
   return (
-    <label
-      {...styles({ disabled })}
-      style={style}
-      className={className}
-      onKeyDown={onKeyDown}
-    >
+    <div {...styles({ disabled })} onKeyDown={onKeyDown} {...rest}>
       {label}
+      {input}
       {button}
       {menu}
       {subLabel}
-    </label>
+    </div>
   )
 }
 

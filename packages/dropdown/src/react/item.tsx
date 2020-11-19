@@ -25,8 +25,10 @@ interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'ref'> {
 }
 
 export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
-  ({ value, icon, menu, children, ...rest }, forwardedRef) => {
-    const selectedValue = useContext(DropdownContext)
+  ({ value, icon, menu, children, ...rest }, forwardedRef): any => {
+    const context = useContext(DropdownContext)
+    const selectedItemId = context.selectedItemId
+    const selectedValue = context.selectedValue
     const showSelectedValue = value && selectedValue === value
 
     const ref = useRef<HTMLLIElement>()
@@ -39,7 +41,14 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
     }, [showSelectedValue])
 
     return (
-      <ActionMenu.Item tagName="button" value={value} nested={menu} {...rest}>
+      <ActionMenu.Item
+        tagName="button"
+        value={value}
+        nested={menu}
+        {...rest}
+        id={showSelectedValue ? selectedItemId : undefined}
+        ref={ref}
+      >
         <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
         <ActionMenu.Ellipsis {...styles.text}>{children}</ActionMenu.Ellipsis>
         {showSelectedValue && <CheckIcon {...styles.icon} />}

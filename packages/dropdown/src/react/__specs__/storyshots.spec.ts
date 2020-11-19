@@ -3,6 +3,11 @@ import initStoryshots, {
   snapshotWithOptions
 } from '@storybook/addon-storyshots'
 
+jest.mock('@pluralsight/ps-design-system-util', () => ({
+  ...jest.requireActual('@pluralsight/ps-design-system-util'),
+  useUniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id')
+}))
+
 const createNodeMock = () => document.createElement('div')
 
 initStoryshots({
