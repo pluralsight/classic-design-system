@@ -26,11 +26,9 @@ exports.checkSimilaritySubmissionEvent = async ({
     access_token = metadata[1];
     channel_id = metadata[2];
   } else {
-    access_token = process.env.ACCESS_TOKEN;
+    access_token = process.env.PLATFORMUI_ACCESS_TOKEN;
     channel_id = metadata[1];
   }
-
-  const issueLabel = view["title"]["text"];
 
   let issueTitle = "";
   let description = "";
@@ -49,26 +47,16 @@ exports.checkSimilaritySubmissionEvent = async ({
   let todayBehavior = "";
   let valueAdd = "";
   let tradeoffs = "";
-
+  console.log("*****", view.blocks[1]["text"]["text"])
   if (metadata[0] === "Bug") {
-    title = view["state"]["values"]["titleInput"]["title_input"].value;
-    shortDescription =
-      view["state"]["values"]["descriptionInput"]["description_input"].value;
-    expectedBehavior =
-      view["state"]["values"]["expectedBehaviorInput"]["expected_behavior_input"].value;
-    actualBehavior =
-      view["state"]["values"]["actualBehaviorInput"]["actual_behavior_input"]
-        .value;
-    stepsToRepro =
-      view["state"]["values"]["stepsToReproInput"]["steps_to_repro_input"]
-        .value;
-    relatedPackages =
-      view["state"]["values"]["relatedPackagesInput"]["related_packages_input"]
-        .value;
-    environment =
-      view["state"]["values"]["environmentInput"]["environment_input"].value;
+    title = view["blocks"][1]["text"]["text"];
+    expectedBehavior = view["blocks"][3]["text"]["text"];
+    actualBehavior = view["blocks"][5]["text"]["text"]
+    stepsToRepro = view["blocks"][7]["text"]["text"]
+    relatedPackages = view["blocks"][9]["text"]["text"]
+    environment = view["blocks"][11]["text"]["text"]
 
-    issueTitle = title + ": " + shortDescription;
+    issueTitle = title;
 
     description =
       `## Bug
@@ -98,19 +86,13 @@ ${environment}
     labels.push("bug");
     labels.push("needs-triage");
   } else {
-    title = view["state"]["values"]["titleInput"]["title_input"].value;
-    shortDescription =
-      view["state"]["values"]["descriptionInput"]["description_input"].value;
-    desiredBehavior =
-      view["state"]["values"]["desiredBehaviorInput"]["desired_behavior_input"].value;
-    todayBehavior =
-      view["state"]["values"]["todayBehaviorInput"]["today_behavior_input"].value;
-    valueAdd =
-      view["state"]["values"]["valueAddInput"]["value_add_input"].value;
-    tradeoffs =
-      view["state"]["values"]["tradeoffsInput"]["tradeoffs_input"].value;
+    title = view["blocks"][1]["text"]["text"];
+    desiredBehavior = view["blocks"][3]["text"]["text"];
+    todayBehavior = view["blocks"][5]["text"]["text"];
+    valueAdd = view["blocks"][7]["text"]["text"];
+    tradeoffs = view["blocks"][9]["text"]["text"];
 
-    issueTitle = `${title}: ${shortDescription}`;
+    issueTitle = title;
 
     description =
       `## Enhancement Request
@@ -160,6 +142,7 @@ ${tradeoffs}
   await axios
     .post(
       "https://api.github.com/repos/piercebring/resumeWebsite/issues",
+      //"https://api.github.com/repos/pluralsight/design-system/issues",
       {
         title: issueTitle,
         body: description,

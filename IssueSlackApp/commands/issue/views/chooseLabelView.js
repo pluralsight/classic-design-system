@@ -1,6 +1,4 @@
-const https = require("https");
 
-// Listen for a slash command invocation
 exports.chooseLabelView = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack();

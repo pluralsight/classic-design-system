@@ -17,7 +17,7 @@ exports.bugView = async ({ ack, body, client }) => {
         private_metadata: 'Bug ' + body.view.private_metadata,
         title: {
           type: 'plain_text',
-          text: 'Bug'
+          text: 'Issue Poster'
         },
         blocks: [
           {
@@ -30,22 +30,26 @@ exports.bugView = async ({ ack, body, client }) => {
             element: {
               type: 'plain_text_input',
               action_id: 'title_input',
+              placeholder: {
+                type: 'plain_text',
+                text: 'fill in title: format of "package name: short description"'
+              },
               multiline: false
             }
           },
-          {
-            type: 'input',
-            block_id: 'descriptionInput',
-            label: {
-              type: 'plain_text',
-              text: 'Short Description'
-            },
-            element: {
-              type: 'plain_text_input',
-              action_id: 'description_input',
-              multiline: false
-            }
-          },
+          // {
+          //   type: 'input',
+          //   block_id: 'descriptionInput',
+          //   label: {
+          //     type: 'plain_text',
+          //     text: 'Short Description'
+          //   },
+          //   element: {
+          //     type: 'plain_text_input',
+          //     action_id: 'description_input',
+          //     multiline: false
+          //   }
+          // },
           {
             type: 'input',
             block_id: 'expectedBehaviorInput',
@@ -96,10 +100,8 @@ exports.bugView = async ({ ack, body, client }) => {
             element: {
               type: 'plain_text_input',
               action_id: 'related_packages_input',
-              placeholder: {
-                type: 'plain_text',
-                text: '- button@7.0.1 \n- core@2.3.4'
-              },
+              initial_value: '- button@7.0.1 \n- core@2.3.4',
+
               multiline: true
             }
           },
@@ -113,10 +115,7 @@ exports.bugView = async ({ ack, body, client }) => {
             element: {
               type: 'plain_text_input',
               action_id: 'environment_input',
-              placeholder: {
-                type: 'plain_text',
-                text: '- OS - MacOS 10.12 \n- Browser version - Chrome v60'
-              },
+              initial_value: '- OS - MacOS 10.12 \n- Browser version - Chrome v60',        
               multiline: true
             }
           }
@@ -124,7 +123,7 @@ exports.bugView = async ({ ack, body, client }) => {
         ],
         submit: {
           type: 'plain_text',
-          text: 'Submit'
+          text: 'Continue'
         }
       }
     });

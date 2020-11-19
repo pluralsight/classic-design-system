@@ -9,7 +9,6 @@ const { openView } = require("./commands/issue/views/openView");
 const { signout } = require("./commands/issue-signout/signout");
 const { signin } = require("./commands/issue-signin/signin");
 const { help } = require("./commands/issue-help/help");
-const { checkSimilarityView } = require("./commands/issue/views/checkSimilarityView");
 const { checkSimilaritySubmissionEvent } = require("./commands/issue/submission/checkSimilaritySubmission");
 const axios = require("axios");
 
@@ -62,13 +61,17 @@ app.action("enhancement_issue", enhancementView);
 
 app.action("bug_issue", bugView);
 
-app.action("check_similarity", checkSimilarityView);
-
 //ON SUBMISSION
 
 app.view("view_1", viewSubmissionEvent);
 
 app.view("checkSimilarity", checkSimilaritySubmissionEvent);
+
+//HEALTH-CHECK
+
+receiver.router.get("/health-check", async (request, res) => {
+  res.sendStatus(200);
+})
 
 //
 //OAUTH

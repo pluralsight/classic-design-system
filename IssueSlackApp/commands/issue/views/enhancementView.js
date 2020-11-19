@@ -10,7 +10,6 @@ exports.enhancementView = async ({ ack, body, client }) => {
       // Pass the current hash to avoid race conditions
       hash: body.view.hash,
       // View payload with updated blocks
-
       view: {
         type: "modal",
         // View identifier
@@ -31,19 +30,10 @@ exports.enhancementView = async ({ ack, body, client }) => {
             element: {
               type: "plain_text_input",
               action_id: "title_input",
-              multiline: false
-            }
-          },
-          {
-            type: "input",
-            block_id: "descriptionInput",
-            label: {
-              type: "plain_text",
-              text: "Short Description"
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "description_input",
+              placeholder: {
+                type: 'plain_text',
+                text: 'fill in title: format of "package name: short description"'
+              },
               multiline: false
             }
           },

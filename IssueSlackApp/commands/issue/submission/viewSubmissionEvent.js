@@ -31,7 +31,7 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     access_token = metadata[1];
     channel_id = metadata[2];
   } else {
-    access_token = process.env.ACCESS_TOKEN;
+    access_token = process.env.PLATFORMUI_ACCESS_TOKEN;
     channel_id = metadata[1];
   }
 
@@ -57,8 +57,8 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
 
   if (metadata[0] === "Bug") {
     title = view["state"]["values"]["titleInput"]["title_input"].value;
-    shortDescription =
-      view["state"]["values"]["descriptionInput"]["description_input"].value;
+    // shortDescription =
+    //   view["state"]["values"]["descriptionInput"]["description_input"].value;
     expectedBehavior =
       view["state"]["values"]["expectedBehaviorInput"]["expected_behavior_input"].value;
     actualBehavior =
@@ -70,7 +70,7 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     environment =
       view["state"]["values"]["environmentInput"]["environment_input"].value;
 
-    issueTitle = title + ": " + shortDescription;
+    issueTitle = title;
 
     description =
       "## Bug\n\n### Expected Behavior\n\n" +
@@ -92,8 +92,8 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
   
   } else {
     title = view["state"]["values"]["titleInput"]["title_input"].value;
-    shortDescription =
-      view["state"]["values"]["descriptionInput"]["description_input"].value;
+    // shortDescription =
+    //   view["state"]["values"]["descriptionInput"]["description_input"].value;
     desiredBehavior =
       view["state"]["values"]["desiredBehaviorInput"]["desired_behavior_input"].value;
     todayBehavior =
@@ -103,7 +103,7 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     tradeoffs =
       view["state"]["values"]["tradeoffsInput"]["tradeoffs_input"].value;
 
-    issueTitle = title + ": " + shortDescription;
+    issueTitle = title 
 
     description =
       `## Enhancement Request
@@ -190,8 +190,102 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
             type: "section",
             text: {
               type: "mrkdwn",
+              text: '*Title*\n'
+            },
+          },
+          {
+            type: "section",
+            block_id: "titleInput",
+            text: {
+              type: "mrkdwn",
+              text: title
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Expected Behavior*\n'
+            }
+
+          },
+          {
+            type: "section",
+            block_id: "expectedBehaviorInput",
+            text: {
+              type: "mrkdwn",
+              text: expectedBehavior,
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Actual Behavior*\n'
+            }
+          },
+          {
+            type: "section",
+            block_id: "actualBehaviorInput",
+            text: {
+              type: "mrkdwn",
+              text: actualBehavior,
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Steps to repro*\n'
+            }
+          },
+          {
+            type: "section",
+            block_id: "stepsToReproInput",
+            text: {
+              type: "mrkdwn",
+              text: stepsToRepro,
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Related Packages*\n'
+            }
+          },
+          {
+            type: "section",
+            block_id: "relatedPackagesInput",
+            text: {
+              type: "plain_text",
+              text: relatedPackages,
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Environment*\n'
+            }
+          },
+          {
+            type: "section",
+            block_id: "environmentInput",
+            text: {
+              type: "plain_text",
+              text: environment,
+            },
+          },
+          {
+            type: "divider",
+          },
+          {
+            type: "header",
+            text: {
+              type: "plain_text",
               text:
-                "\n*Your issue may have already been submitted. Do any of these look like your issue?*",
+                "Your issue may have already been submitted. Do any of these look like your issue?",
             },
           },
           {
@@ -218,113 +312,14 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
                 `*${issueRecords[2].issue.title}*: <${issueRecords[2].issue.html_url}>`,
             },
           },
-          {
-            type: "input",
-            block_id: "titleInput",
-            label: {
-              type: "plain_text",
-              text: "Title",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "title_input",
-              initial_value: title,
-              multiline: false,
-            },
-          },
-          {
-            type: "input",
-            block_id: "descriptionInput",
-            label: {
-              type: "plain_text",
-              text: "Short Description",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "description_input",
-              multiline: false,
-              initial_value: shortDescription,
-            },
-          },
-          {
-            type: "input",
-            block_id: "expectedBehaviorInput",
-            label: {
-              type: "plain_text",
-              text: "Expected Behavior",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "expected_behavior_input",
-              multiline: true,
-              initial_value: expectedBehavior,
-            },
-          },
-          {
-            type: "input",
-            block_id: "actualBehaviorInput",
-            label: {
-              type: "plain_text",
-              text: "Actual Behavior",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "actual_behavior_input",
-              multiline: true,
-              initial_value: actualBehavior,
-            },
-          },
-          {
-            type: "input",
-            block_id: "stepsToReproInput",
-            label: {
-              type: "plain_text",
-              text: "Steps to repro",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "steps_to_repro_input",
-              initial_value: "1.",
-              multiline: true,
-              initial_value: stepsToRepro,
-            },
-          },
-          {
-            type: "input",
-            block_id: "relatedPackagesInput",
-            label: {
-              type: "plain_text",
-              text: "Related Packages",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "related_packages_input",
-              multiline: true,
-              initial_value: relatedPackages,
-            },
-          },
-          {
-            type: "input",
-            block_id: "environmentInput",
-            label: {
-              type: "plain_text",
-              text: "Environment",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "environment_input",
-              multiline: true,
-              initial_value: environment,
-            },
-          },
         ],
         submit: {
           type: "plain_text",
-          text: "No. Submit Issue.",
+          text: "Not a duplicate. Submit.",
         },
         close: {
           type: "plain_text",
-          text: "Yes! Nevermind then.",
+          text: "Issue exists. Cancel.",
         },
       },
     });
@@ -344,8 +339,87 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
             type: "section",
             text: {
               type: "mrkdwn",
+              text: '*Title*\n'
+            },
+          },
+          {
+            type: "section",
+            block_id: "titleInput",
+            text: {
+              type: "mrkdwn",
+              text: title
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Desired Behavior*\n'
+            }
+
+          },
+          {
+            type: "section",
+            block_id: "desiredBehaviorInput",
+            text: {
+              type: "mrkdwn",
+              text: desiredBehavior,
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Today\'s Behavior*\n'
+            }
+          },
+          {
+            type: "section",
+            block_id: "todayBehaviorInput",
+            text: {
+              type: "mrkdwn",
+              text: todayBehavior,
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*The Value Add*\n'
+            }
+          },
+          {
+            type: "section",
+            block_id: "valueAddInput",
+            text: {
+              type: "mrkdwn",
+              text: valueAdd,
+            },
+          },
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: '*Related Packages*\n'
+            }
+          },
+          {
+            type: "section",
+            block_id: "tradeoffsInput",
+            text: {
+              type: "plain_text",
+              text: tradeoffs,
+            },
+          },
+          {
+            type: "divider",
+          },
+          {
+            type: "header",
+            text: {
+              type: "plain_text",
               text:
-                "*Your issue may have already been submitted. Do any of these look like your issue?*",
+                "Your issue may have already been submitted. Do any of these look like your issue?",
             },
           },
           {
@@ -372,98 +446,14 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
                 `*${issueRecords[2].issue.title}*: <${issueRecords[2].issue.html_url}>`,
             },
           },
-          {
-            type: "input",
-            block_id: "titleInput",
-            label: {
-              type: "plain_text",
-              text: "Title",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "title_input",
-              multiline: false,
-              initial_value: title,
-            },
-          },
-          {
-            type: "input",
-            block_id: "descriptionInput",
-            label: {
-              type: "plain_text",
-              text: "Short Description",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "description_input",
-              multiline: false,
-              initial_value: shortDescription,
-            },
-          },
-          {
-            type: "input",
-            block_id: "desiredBehaviorInput",
-            label: {
-              type: "plain_text",
-              text: "Desired Behavior",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "desired_behavior_input",
-              multiline: true,
-              initial_value: desiredBehavior,
-            },
-          },
-          {
-            type: "input",
-            block_id: "todayBehaviorInput",
-            label: {
-              type: "plain_text",
-              text: "Today's Behavior",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "today_behavior_input",
-              multiline: true,
-              initial_value: todayBehavior,
-            },
-          },
-          {
-            type: "input",
-            block_id: "valueAddInput",
-            label: {
-              type: "plain_text",
-              text: "The Value Add",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "value_add_input",
-              multiline: true,
-              initial_value: valueAdd,
-            },
-          },
-          {
-            type: "input",
-            block_id: "tradeoffsInput",
-            label: {
-              type: "plain_text",
-              text: "The Tradeoffs",
-            },
-            element: {
-              type: "plain_text_input",
-              action_id: "tradeoffs_input",
-              multiline: true,
-              initial_value: tradeoffs,
-            },
-          },
         ],
         submit: {
           type: "plain_text",
-          text: "No. Submit Issue.",
+          text: "Not a duplicate. Submit.",
         },
         close: {
           type: "plain_text",
-          text: "Yes! Nevermind then.",
+          text: "Issue exists. Cancel.",
         },
       },
     });

@@ -31,7 +31,6 @@ exports.openView = async ({ ack, body, client }) => {
     .query(query1)
     .then((res) => {
       user = res.rows[0];
-      console.log(user);
     })
     .catch((err) => {
       console.log(err);
@@ -125,11 +124,11 @@ exports.openView = async ({ ack, body, client }) => {
                   url:
                     "https://github.com/login/oauth/authorize?client_id=" +
                     process.env.OAUTH_CLIENT_ID +
+                    "&scope=public_repo" +
                     "&state=" +
-                    userID +
-                    "&scope=repo" +
+                    userID  +
                     "&redirect_uri=" +
-                    process.env.REDIRECT_URI
+                    process.env.OAUTH_REDIRECT_URI
                 },
                 {
                   type: "button",

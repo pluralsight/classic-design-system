@@ -65,7 +65,7 @@ exports.signin = async ({ ack, body, client }) => {
             text: "Yes",
             type: "button",
             url:
-              `https://github.com/login/oauth/authorize?client_id=${process.env.OAUTH_CLIENT_ID}&state=${userID}&scope=repo&redirect_uri=${process.env.REDIRECT_URI}`,
+              `https://github.com/login/oauth/authorize?client_id=${process.env.OAUTH_CLIENT_ID}&scope=public_repo&state=${userID}&redirect_uri=${process.env.OAUTH_REDIRECT_URI}`,
           },
         ],
       },
