@@ -32,7 +32,7 @@ interface PProps extends HTMLAttributes<HTMLParagraphElement> {
 }
 
 const P: React.FC<PProps> & PStatics = ({
-  size = vars.pSizes.normal,
+  size = vars.pSizes.medium,
   color = vars.textColors.primary,
   ...rest
 }) => {

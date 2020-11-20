@@ -42,7 +42,7 @@ interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 const Label: React.FC<LabelProps> & LabelStatics = ({
-  size = vars.labelSizes.normal,
+  size = vars.labelSizes.medium,
   color = vars.textColors.primary,
   strong = false,
   caps = false,

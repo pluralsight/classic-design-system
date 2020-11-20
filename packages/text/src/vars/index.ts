@@ -1,6 +1,8 @@
 import { keyMirror } from '@pluralsight/ps-design-system-util'
 
 export const headingSizes = keyMirror(
+  'xXXSmall',
+  'xXSmall',
   'xSmall',
   'small',
   'medium',
@@ -8,10 +10,12 @@ export const headingSizes = keyMirror(
   'xLarge'
 )
 
-export const labelSizes = keyMirror('xSmall', 'small', 'normal', 'large')
+export const labelSizes = keyMirror('xSmall', 'small', 'medium', 'large')
 
 export const listTypes = keyMirror('default', 'bulleted', 'numbered')
 
-export const pSizes = keyMirror('small', 'normal', 'large')
+export const listSizes = keyMirror('small', 'medium', 'large')
+
+export const pSizes = keyMirror('small', 'medium', 'large')
 
 export const textColors = keyMirror('primary', 'secondary')
