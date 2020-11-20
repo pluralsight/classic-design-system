@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "19.0.8",
+  "version": "19.0.10",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -18,19 +18,19 @@
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "prebuild:svg": "yarn clean:svg",
     "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
-    "build:watch": "yarn build:esm -- --watch",
+    "build:watch": "yarn build:esm --watch",
     "clean:svg": "node bin/icon -s src/svg --clean",
     "copy:svg": "node cli/copy-svgs.js",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test -- --watchAll"
+    "test:watch": "yarn test --watchAll"
   },
   "sideEffects": false,
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-util": "^6.0.1",
+    "@pluralsight/ps-design-system-core": "^6.5.2",
+    "@pluralsight/ps-design-system-util": "^6.0.3",
     "arg": "^4.1.1",
     "fast-glob": "^3.1.0",
     "svgo": "^1.3.2"
@@ -41,8 +41,8 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.10",
+    "@pluralsight/ps-design-system-build": "^1.12.2",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.12",
     "@types/svgo": "^1.3.3",
     "ncp": "^2.0.0"
   }

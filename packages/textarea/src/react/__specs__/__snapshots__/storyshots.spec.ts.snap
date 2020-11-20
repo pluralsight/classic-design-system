@@ -17,7 +17,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-6488b4=""
+          data-css-frmafg=""
           disabled={false}
           placeholder="I'm normal, see"
           style={
@@ -49,7 +49,7 @@ exports[`Storyshots disabled compare 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-6488b4=""
+          data-css-frmafg=""
           disabled={true}
           placeholder="I'm untouchable"
           style={
@@ -86,7 +86,7 @@ exports[`Storyshots error compare 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-6488b4=""
+          data-css-frmafg=""
           disabled={false}
           placeholder="I'm normal, see"
           style={
@@ -118,7 +118,7 @@ exports[`Storyshots error compare 1`] = `
         data-css-in6gqi=""
       >
         <textarea
-          data-css-6488b4=""
+          data-css-frmafg=""
           disabled={false}
           style={
             Object {
@@ -168,7 +168,7 @@ exports[`Storyshots focus onFocus/onBlur 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -185,38 +185,72 @@ exports[`Storyshots focus onFocus/onBlur 1`] = `
 `;
 
 exports[`Storyshots labels all 1`] = `
-<label
-  data-css-na8jqt=""
->
-  <div
-    data-css-9kywkh=""
-  >
-    Some label
-  </div>
-  <div
-    data-css-1ios7mb=""
+Array [
+  <label
+    data-css-na8jqt=""
   >
     <div
-      data-css-ctre2o=""
+      data-css-9kywkh=""
     >
-      <textarea
-        data-css-6488b4=""
-        disabled={false}
-        placeholder="Some placeholder"
-        style={
-          Object {
-            "height": 112,
-          }
-        }
-      />
+      Some label
     </div>
-  </div>
-  <div
-    data-css-1u5arfw=""
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-frmafg=""
+          disabled={false}
+          placeholder="Some placeholder"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      data-css-1u5arfw=""
+    >
+      Some sublabel
+    </div>
+  </label>,
+  <label
+    data-css-na8jqt=""
   >
-    Some sublabel
-  </div>
-</label>
+    <div
+      data-css-9kywkh=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-1105jtv=""
+          disabled={false}
+          placeholder="Some placeholder"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      data-css-1u5arfw=""
+    >
+      Some sublabel
+    </div>
+  </label>,
+]
 `;
 
 exports[`Storyshots labels label 1`] = `
@@ -235,7 +269,7 @@ exports[`Storyshots labels label 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         style={
           Object {
@@ -264,7 +298,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         style={
           Object {
@@ -293,7 +327,7 @@ exports[`Storyshots labels none 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         style={
           Object {
@@ -317,7 +351,7 @@ exports[`Storyshots labels placeholder 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         placeholder="some placeholder"
         style={
@@ -342,7 +376,7 @@ exports[`Storyshots labels subLabel 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         style={
           Object {
@@ -388,7 +422,7 @@ exports[`Storyshots layouts Form.VerticalLayout 1`] = `
           data-css-ctre2o=""
         >
           <textarea
-            data-css-6488b4=""
+            data-css-frmafg=""
             disabled={false}
             style={
               Object {
@@ -433,7 +467,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-6488b4=""
+          data-css-frmafg=""
           disabled={false}
           style={
             Object {
@@ -466,7 +500,7 @@ exports[`Storyshots layouts full width 1`] = `
         data-css-in6gqi=""
       >
         <textarea
-          data-css-6488b4=""
+          data-css-frmafg=""
           disabled={false}
           style={
             Object {
@@ -515,7 +549,7 @@ exports[`Storyshots rows less than 4 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         style={
           Object {
@@ -544,7 +578,7 @@ exports[`Storyshots rows more than 4 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         style={
           Object {
@@ -568,7 +602,7 @@ exports[`Storyshots whitelist name 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         name="myFieldNameOfPower"
         placeholder="I have a form name"
@@ -594,7 +628,7 @@ exports[`Storyshots whitelist onChange 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-6488b4=""
+        data-css-frmafg=""
         disabled={false}
         onChange={[Function]}
         placeholder="Change me"

@@ -34,6 +34,24 @@ const Comp = () => (
 export default Comp
 ```
 
+### Appearance
+
+For a more subtle look in the dark theme, use `subtle` appearance. So subtle. 
+
+```typescript
+import React from 'react'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+
+const Example = () => (
+  <TextArea
+    appearance={TextArea.appearances.subtle}
+    placeholder="Type some subtleness"
+  />
+)
+
+export default Example
+```
+
 ### Disabled
 
 Disabled text inputs are unmodifiable and diminished visually.

@@ -1,6 +1,5 @@
 import * as core from '@pluralsight/ps-design-system-core'
-
-import keyMirror from './key-mirror'
+import { keyMirror } from '@pluralsight/ps-design-system-util'
 
 export const sizes = keyMirror('xSmall', 'small', 'medium', 'large', 'xLarge')
 
@@ -21,7 +20,7 @@ const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 export const colorByLetter = letters.reduce((map, letter, i) => {
   map[letter] = colors[i % colors.length]
   return map
-}, {})
+}, {} as Record<string, unknown>)
 
 export const fallbackPixel =
   'https://s3-us-west-2.amazonaws.com/ps-cdn/design-system/assets/transparent.gif'

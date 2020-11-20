@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-badge",
-  "version": "10.1.10",
+  "version": "10.1.12",
   "description": "Design System component for badge ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -13,15 +13,15 @@
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "build:watch": "yarn build:js -- --watch",
+    "build:watch": "yarn build:js --watch",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "test:watch": "yarn test -- --watchAll"
+    "test:watch": "yarn test --watchAll"
   },
   "style": "dist/css/index.css",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.5.1",
-    "@pluralsight/ps-design-system-util": "^6.0.1"
+    "@pluralsight/ps-design-system-core": "^6.5.2",
+    "@pluralsight/ps-design-system-util": "^6.0.3"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -30,8 +30,8 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.10",
-    "@pluralsight/ps-design-system-theme": "^6.0.6"
+    "@pluralsight/ps-design-system-build": "^1.12.2",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.12",
+    "@pluralsight/ps-design-system-theme": "^6.0.8"
   }
 }

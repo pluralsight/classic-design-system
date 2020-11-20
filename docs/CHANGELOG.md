@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.10.4...@pluralsight/ps-design-system-docs@0.11.0) (2020-11-18)
+
+
+### Features
+
+* **docs:** add subtle example to textarea ([3629ac3](https://github.com/pluralsight/design-system/commit/3629ac316c22bbe6a76cfb110d6c1139b6255bd7))
+
+
+
+
+
+## [0.10.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.10.3...@pluralsight/ps-design-system-docs@0.10.4) (2020-11-17)
+
+
+### Bug Fixes
+
+* oncscoll listner and add example to docs ([#1455](https://github.com/pluralsight/design-system/issues/1455)) ([aaf80b0](https://github.com/pluralsight/design-system/commit/aaf80b09217b6af684cecd8ef8aead82e88487ca))
+
+
+
+
+
 ## [0.10.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.10.2...@pluralsight/ps-design-system-docs@0.10.3) (2020-11-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

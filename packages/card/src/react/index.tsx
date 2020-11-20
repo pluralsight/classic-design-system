@@ -6,10 +6,11 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
-  canUseDOM,
-  omit,
+  HTMLPropsFor,
   RefForwardingComponent,
-  ValueOf
+  ValueOf,
+  canUseDOM,
+  omit
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
 import * as React from 'react'
@@ -131,7 +132,7 @@ const styles = {
   }
 }
 
-interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
+interface ActionBarActionProps extends HTMLPropsFor<'button'> {
   disabled?: boolean
   icon?: React.ReactElement<typeof Icon>
   title: string
@@ -160,13 +161,13 @@ const ActionBarAction = React.forwardRef((props, ref) => {
 }) as ActionBarActionComponent
 ActionBarAction.displayName = 'Card.Action'
 
-const FullOverlayLink: React.FC<React.HTMLAttributes<
-  HTMLSpanElement
->> = props => <span {...styles.fullOverlayLink()} {...props} />
+const FullOverlayLink: React.FC<HTMLPropsFor<'span'>> = props => (
+  <span {...styles.fullOverlayLink()} {...props} />
+)
 
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
-interface ImageProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ImageProps extends HTMLPropsFor<'div'> {
   src: string
 }
 const Image: React.FC<ImageProps> = props => {
@@ -181,12 +182,12 @@ const Image: React.FC<ImageProps> = props => {
 }
 Image.displayName = 'Card.Image'
 
-const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
+const ImageLink: React.FC<HTMLPropsFor<'span'>> = props => (
   <span {...styles.imageLink()} {...props} />
 )
 ImageLink.displayName = 'Card.ImageLink'
 
-interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
+interface TagProps extends HTMLPropsFor<'div'> {
   icon?: React.ReactElement<typeof Icon>
 }
 const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
@@ -208,18 +209,16 @@ const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
 
 Tag.displayName = 'Card.Tag'
 
-const Text: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
-  <span {...props} />
-)
+const Text: React.FC<HTMLPropsFor<'span'>> = props => <span {...props} />
 Text.displayName = 'Card.Text'
 
-const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
+const TextLink: React.FC<HTMLPropsFor<'span'>> = props => {
   const themeName = useTheme()
   return <span {...styles.textLink(themeName)} {...props} />
 }
 TextLink.displayName = 'Card.TextLink'
 
-const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
+const Title: React.FC<HTMLPropsFor<'div'>> = props => {
   const themeName = useTheme()
   const { children, ...rest } = props
 

@@ -1,7 +1,9 @@
 import DSButton from '@pluralsight/ps-design-system-button'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import {
+  HTMLPropsFor,
   RefForwardingComponent,
+  RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
@@ -31,8 +33,7 @@ const styles: { [name: string]: StyleFn } = {
   text: () => css(stylesheet['.psds-banner__text'])
 }
 
-interface BannerProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'> {
+interface BannerProps extends Omit<HTMLPropsFor<'div'>, 'onClick'> {
   color?: ValueOf<typeof vars.colors>
   onClick?: (evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
@@ -64,31 +65,42 @@ const Banner = React.forwardRef((props, ref) => {
 
 Banner.displayName = 'Banner'
 
-interface ButtonProps
-  extends React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {}
-
-interface ButtonStatics {}
-
-interface ButtonComponent
-  extends RefForwardingComponent<
-    ButtonProps,
-    HTMLButtonElement | HTMLAnchorElement,
-    ButtonStatics
-  > {}
-
-const Button = React.forwardRef((props, forwardRef) => {
+interface AnchorProps extends HTMLPropsFor<'a'> {
+  href: string
+}
+interface ButtonProps extends HTMLPropsFor<'button'> {
+  href?: undefined
+}
+type ButtonComponent = React.ForwardRefExoticComponent<unknown> & {
+  (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
+  (props: ButtonProps, ref?: RefFor<'button'>): JSX.Element
+}
+const Button = React.forwardRef<
+  HTMLAnchorElement | HTMLButtonElement,
+  AnchorProps | ButtonProps
+>((props, ref) => {
   const color = useContext(ColorContext)
 
-  return (
+  return 'href' in props ? (
     <DSButton
-      {...props}
+      {...(props as HTMLPropsFor<'a'>)}
       {...styles.button({ color })}
-      ref={forwardRef as any}
       appearance={DSButton.appearances.stroke}
+      href={props.href || ''}
+      ref={ref as RefFor<'a'>}
+      size={DSButton.sizes.small}
+    />
+  ) : (
+    <DSButton
+      {...(props as HTMLPropsFor<'button'>)}
+      {...styles.button({ color })}
+      appearance={DSButton.appearances.stroke}
+      ref={ref as RefFor<'button'>}
       size={DSButton.sizes.small}
     />
   )
 }) as ButtonComponent
+
 Button.displayName = 'Button'
 
 Banner.Button = Button
