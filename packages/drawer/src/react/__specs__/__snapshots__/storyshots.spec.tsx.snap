@@ -39,7 +39,7 @@ exports[`Storyshots drawer controlled 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Base Here
             </p>
@@ -88,7 +88,7 @@ exports[`Storyshots drawer controlled 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Content Here
             </p>
@@ -126,7 +126,7 @@ exports[`Storyshots drawer default 1`] = `
           }
         >
           <p
-            data-css-1xyzjvr=""
+            data-css-bbdowb=""
           >
             Drawer Base Here
           </p>
@@ -175,7 +175,7 @@ exports[`Storyshots drawer default 1`] = `
           }
         >
           <p
-            data-css-1xyzjvr=""
+            data-css-bbdowb=""
           >
             Drawer Content Here
           </p>
@@ -213,7 +213,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Base Here
             </p>
@@ -262,7 +262,7 @@ exports[`Storyshots drawer prevent toggle 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Content Here
             </p>
@@ -301,7 +301,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               The Drawer #1
             </p>
@@ -350,7 +350,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Content Here
             </p>
@@ -376,7 +376,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               The Drawer #2
             </p>
@@ -425,7 +425,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Content Here
             </p>
@@ -451,7 +451,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               The Drawer #2
             </p>
@@ -500,7 +500,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Content Here
             </p>
@@ -540,7 +540,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               }
             >
               <p
-                data-css-1xyzjvr=""
+                data-css-bbdowb=""
               >
                 The Drawer #1
               </p>
@@ -589,7 +589,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               }
             >
               <p
-                data-css-1xyzjvr=""
+                data-css-bbdowb=""
               >
                 Drawer Content Here
               </p>
@@ -617,7 +617,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               }
             >
               <p
-                data-css-1xyzjvr=""
+                data-css-bbdowb=""
               >
                 The Drawer #2
               </p>
@@ -666,7 +666,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               }
             >
               <p
-                data-css-1xyzjvr=""
+                data-css-bbdowb=""
               >
                 Drawer Content Here
               </p>
@@ -694,7 +694,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               }
             >
               <p
-                data-css-1xyzjvr=""
+                data-css-bbdowb=""
               >
                 The Drawer #2
               </p>
@@ -743,7 +743,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
               }
             >
               <p
-                data-css-1xyzjvr=""
+                data-css-bbdowb=""
               >
                 Drawer Content Here
               </p>
@@ -782,7 +782,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
           }
         >
           <p
-            data-css-1xyzjvr=""
+            data-css-bbdowb=""
           >
             Drawer Base Here
           </p>
@@ -831,7 +831,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
           }
         >
           <p
-            data-css-1xyzjvr=""
+            data-css-bbdowb=""
           >
             Drawer Content Here
           </p>
@@ -869,7 +869,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer is 
               closed
@@ -919,7 +919,7 @@ exports[`Storyshots drawer using onToggle prop 1`] = `
             }
           >
             <p
-              data-css-1xyzjvr=""
+              data-css-bbdowb=""
             >
               Drawer Content Here
             </p>
@@ -957,7 +957,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
           }
         >
           <p
-            data-css-1xyzjvr=""
+            data-css-bbdowb=""
           >
             Drawer Base Here
           </p>
@@ -1006,7 +1006,7 @@ exports[`Storyshots drawer using startOpen prop 1`] = `
           }
         >
           <p
-            data-css-1xyzjvr=""
+            data-css-bbdowb=""
           >
             Drawer Content Here
           </p>

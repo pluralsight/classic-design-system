@@ -9,7 +9,7 @@ exports[`Storyshots Code empty 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     before|
     |after
@@ -26,7 +26,7 @@ exports[`Storyshots Code ends single line 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     This is where we see 
     <code
@@ -47,7 +47,7 @@ exports[`Storyshots Code lead single line 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     <code
       data-css-exlif5=""
@@ -68,7 +68,7 @@ exports[`Storyshots Code line wrap 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     text at the start
     <code
@@ -106,7 +106,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
     <code
@@ -264,6 +264,38 @@ exports[`Storyshots Heading size: xSmall 1`] = `
 </div>
 `;
 
+exports[`Storyshots Heading size: xXSmall 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-y6gnkt=""
+  >
+    xXSmall
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading size: xXXSmall 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-bd63tk=""
+  >
+    xXXSmall
+  </h1>
+</div>
+`;
+
 exports[`Storyshots Heading style override 1`] = `
 <div
   style={
@@ -382,7 +414,7 @@ exports[`Storyshots Label size: large 1`] = `
 </div>
 `;
 
-exports[`Storyshots Label size: normal 1`] = `
+exports[`Storyshots Label size: medium 1`] = `
 <div
   style={
     Object {
@@ -393,7 +425,7 @@ exports[`Storyshots Label size: normal 1`] = `
   <span
     data-css-e9bpt1=""
   >
-    normal
+    medium
   </span>
 </div>
 `;
@@ -477,7 +509,7 @@ exports[`Storyshots List mixed list 1`] = `
 >
   <div>
     <ul
-      data-css-bhv8ao=""
+      data-css-15y1hmt=""
     >
       <li>
         aone
@@ -487,7 +519,7 @@ exports[`Storyshots List mixed list 1`] = `
       </li>
       <li>
         <ol
-          data-css-fytatr=""
+          data-css-epsy5x=""
         >
           <li>
             one
@@ -500,7 +532,7 @@ exports[`Storyshots List mixed list 1`] = `
           </li>
           <li>
             <ul
-              data-css-p6hwrs=""
+              data-css-m99z6v=""
             >
               <li>
                 one
@@ -532,7 +564,7 @@ exports[`Storyshots List mixed list 1`] = `
       </li>
     </ul>
     <ul
-      data-css-p6hwrs=""
+      data-css-m99z6v=""
       style={
         Object {
           "marginTop": 50,
@@ -547,7 +579,7 @@ exports[`Storyshots List mixed list 1`] = `
       </li>
       <li>
         <ul
-          data-css-bhv8ao=""
+          data-css-15y1hmt=""
         >
           <li>
             one
@@ -557,7 +589,7 @@ exports[`Storyshots List mixed list 1`] = `
           </li>
           <li>
             <ol
-              data-css-fytatr=""
+              data-css-epsy5x=""
             >
               <li>
                 one
@@ -595,6 +627,96 @@ exports[`Storyshots List mixed list 1`] = `
 </div>
 `;
 
+exports[`Storyshots List size: large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <ul
+    data-css-102qda0=""
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots List size: medium 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <ul
+    data-css-15y1hmt=""
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots List size: small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <ul
+    data-css-wquhl2=""
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots List type: bulleted 1`] = `
 <div
   style={
@@ -604,7 +726,7 @@ exports[`Storyshots List type: bulleted 1`] = `
   }
 >
   <ul
-    data-css-bhv8ao=""
+    data-css-15y1hmt=""
   >
     <li>
       one
@@ -634,7 +756,7 @@ exports[`Storyshots List type: default 1`] = `
   }
 >
   <ul
-    data-css-p6hwrs=""
+    data-css-m99z6v=""
   >
     <li>
       one
@@ -664,7 +786,7 @@ exports[`Storyshots List type: numbered 1`] = `
   }
 >
   <ol
-    data-css-fytatr=""
+    data-css-epsy5x=""
   >
     <li>
       one
@@ -695,7 +817,7 @@ exports[`Storyshots P className override 1`] = `
 >
   <p
     className="css-mbiza7"
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -711,7 +833,7 @@ exports[`Storyshots P color: primary 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -727,7 +849,7 @@ exports[`Storyshots P color: secondary 1`] = `
   }
 >
   <p
-    data-css-1vhod6k=""
+    data-css-u2dst9=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -743,14 +865,14 @@ exports[`Storyshots P size: large 1`] = `
   }
 >
   <p
-    data-css-16knash=""
+    data-css-14mdpvz=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
 </div>
 `;
 
-exports[`Storyshots P size: normal 1`] = `
+exports[`Storyshots P size: medium 1`] = `
 <div
   style={
     Object {
@@ -759,7 +881,7 @@ exports[`Storyshots P size: normal 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -791,7 +913,7 @@ exports[`Storyshots P style override 1`] = `
   }
 >
   <p
-    data-css-1xyzjvr=""
+    data-css-bbdowb=""
     style={
       Object {
         "color": "#E7558B",
