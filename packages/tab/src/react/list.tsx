@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/no-unnecessary-type-assertion */
 import { motion } from '@pluralsight/ps-design-system-core'
 import {
   CaretRightIcon,
@@ -240,7 +241,6 @@ const List: FC<HTMLPropsFor<'div'>> = props => {
               ),
             ref: itemRefs[i]
           }
-          // eslint-disable-next-line  @typescript-eslint/no-unnecessary-type-assertion
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           return cloneElement(comp as any, childProps)
         })}
