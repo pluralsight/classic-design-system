@@ -15,6 +15,8 @@ import { Heading } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
+Use with the `<h.../>`tag that is best suited for the semantic structure of the page.
+
 ```typescript
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -23,11 +25,11 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <Heading size={Heading.sizes.xLarge}>
-        <h2>Heading (xLarge, primary)</h2>
+        <h1>Heading (xLarge, primary)</h1>
       </Heading>
 
       <Heading size={Heading.sizes.xLarge} color={Heading.colors.secondary}>
-        <h2>Heading (xLarge, secondary)</h2>
+        <h1>Heading (xLarge, secondary)</h1>
       </Heading>
 
       <Heading size={Heading.sizes.large}>
@@ -39,27 +41,43 @@ const Example: React.FC = props => {
       </Heading>
 
       <Heading size={Heading.sizes.medium}>
-        <h2>Heading (medium, primary)</h2>
+        <h3>Heading (medium, primary)</h3>
       </Heading>
 
       <Heading size={Heading.sizes.medium} color={Heading.colors.secondary}>
-        <h2>Heading (medium, secondary)</h2>
+        <h3>Heading (medium, secondary)</h3>
       </Heading>
 
       <Heading size={Heading.sizes.small}>
-        <h2>Heading (small, primary)</h2>
+        <h4>Heading (small, primary)</h4>
       </Heading>
 
       <Heading size={Heading.sizes.small} color={Heading.colors.secondary}>
-        <h2>Heading (small, secondary)</h2>
+        <h4>Heading (small, secondary)</h4>
       </Heading>
 
       <Heading size={Heading.sizes.xSmall}>
-        <h2>Heading (xSmall, primary)</h2>
+        <h5>Heading (xSmall, primary)</h5>
       </Heading>
 
       <Heading size={Heading.sizes.xSmall} color={Heading.colors.secondary}>
-        <h2>Heading (xSmall, secondary)</h2>
+        <h5>Heading (xSmall, secondary)</h5>
+      </Heading>
+
+      <Heading size={Heading.sizes.xXSmall}>
+        <h6>Heading (xXSmall, primary)</h6>
+      </Heading>
+
+      <Heading size={Heading.sizes.xXSmall} color={Heading.colors.secondary}>
+        <h6>Heading (xXSmall, secondary)</h6>
+      </Heading>
+
+      <Heading size={Heading.sizes.xXXSmall}>
+        <h6>Heading (xXXSmall, primary)</h6>
+      </Heading>
+
+      <Heading size={Heading.sizes.xXXSmall} color={Heading.colors.secondary}>
+        <h6>Heading (xXXSmall, secondary)</h6>
       </Heading>
     </React.Fragment>
   )

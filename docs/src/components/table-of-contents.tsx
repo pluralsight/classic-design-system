@@ -1,4 +1,4 @@
-import { Label } from '@pluralsight/ps-design-system-text'
+import { Heading } from '@pluralsight/ps-design-system-text'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import React from 'react'
 import GithubSlugger from 'github-slugger'
@@ -20,11 +20,9 @@ export const TableOfContents: React.FC<TableOfContentsProps> = props => {
   }, [slugger])
   return (
     <nav className={styles.toc}>
-      <h2 className={styles.title}>
-        <Label size={Label.sizes.xSmall} color={Label.colors.secondary} caps>
-          Contents
-        </Label>
-      </h2>
+      <Heading size={Heading.sizes.xXXSmall} color={Heading.colors.secondary}>
+        <h4 className={styles.title}>Contents</h4>
+      </Heading>
       <VerticalTabs>
         {props.headings
           .filter(h => h.depth > 1)

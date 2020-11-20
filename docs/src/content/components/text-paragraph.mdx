@@ -93,11 +93,13 @@ export default Example
   <TypesProp
     name="size"
     type={<TypesEnum enum={P.sizes} />}
-    default={P.sizes.normal}
+    desc="Text size (from P.sizes)"
+    default={P.sizes.medium}
   />
   <TypesProp
     name="color"
     type={<TypesEnum enum={P.colors} />}
+    desc="Text color (from P.colors)"
     default={P.colors.primary}
   />
   <TypesProp name="children" type="React.ReactNode" />
