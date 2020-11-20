@@ -4,6 +4,7 @@
   "description": "Slack app with interface for creating Github Issues in pluralsight/design-system",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pierce Bringhurst",
