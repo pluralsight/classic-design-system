@@ -2,7 +2,11 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  ValueOf,
+  HTMLPropsFor,
+  RefFor
+} from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { ForwardRefExoticComponent, RefObject, forwardRef } from 'react'
 
@@ -30,21 +34,21 @@ export interface BaseListItemProps {
 }
 export interface ListItemAnchorProps
   extends BaseListItemProps,
-    Omit<JSX.IntrinsicElements['a'], 'id' | 'onClick'> {
+    Omit<HTMLPropsFor<'a'>, 'id' | 'onClick'> {
   href: string
   onClick?: (i: number, event: React.MouseEvent<HTMLAnchorElement>) => void
 }
 export interface ListItemButtonProps
   extends BaseListItemProps,
-    Omit<JSX.IntrinsicElements['button'], 'id' | 'onClick'> {
+    Omit<HTMLPropsFor<'button'>, 'id' | 'onClick'> {
   href?: undefined
   onClick?: (i: number, event: React.MouseEvent<HTMLButtonElement>) => void
 }
 type ListItemElement = HTMLButtonElement | HTMLAnchorElement
 type ListItemProps = ListItemAnchorProps | ListItemButtonProps
 type ListItemComponent = ForwardRefExoticComponent<ListItemProps> & {
-  (props: ListItemAnchorProps, ref?: RefObject<HTMLAnchorElement>): JSX.Element
-  (props: ListItemButtonProps, ref?: RefObject<HTMLButtonElement>): JSX.Element
+  (props: ListItemAnchorProps, ref?: RefFor<'a'>): JSX.Element
+  (props: ListItemButtonProps, ref?: RefFor<'button'>): JSX.Element
 }
 
 const ListItem = forwardRef<ListItemElement, ListItemProps>((props, ref) => {

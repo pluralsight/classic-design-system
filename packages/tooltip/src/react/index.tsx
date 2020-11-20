@@ -1,9 +1,10 @@
 import { compose, css, keyframes } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import {
   RefForwardingComponent,
-  ValueOf
+  ValueOf,
+  HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -38,7 +39,7 @@ const styles = {
     )
   }
 }
-interface CloseButtonProps extends HTMLAttributes<HTMLButtonElement> {
+interface CloseButtonProps extends HTMLPropsFor<'button'> {
   onClick: (evt?: React.MouseEvent) => void
   appearance: ValueOf<typeof vars.appearances>
 }
@@ -64,7 +65,7 @@ interface TooltipStatics {
   tailPositions: typeof vars.tailPositions
 }
 
-interface TooltipProps extends HTMLAttributes<HTMLDivElement> {
+interface TooltipProps extends HTMLPropsFor<'div'> {
   appearance?: ValueOf<typeof vars.appearances>
   children: React.ReactNode
   onClose?: (evt?: React.MouseEvent) => void

@@ -1,3 +1,6 @@
+import { compose, css } from 'glamor'
+import React from 'react'
+
 import { layout, type } from '@pluralsight/ps-design-system-core'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
@@ -6,11 +9,10 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 import {
-  RefForwardingComponent,
-  ValueOf
+  ValueOf,
+  HTMLPropsFor,
+  RefForwardingComponent
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -75,7 +77,7 @@ export interface TextAreaStatics {
   appearances: typeof vars.appearances
 }
 
-export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaProps extends Omit<HTMLPropsFor<'textarea'>, 'rows'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import React from 'react'
 
 import { fireEvent, render } from '@testing-library/react'
@@ -8,7 +9,7 @@ describe('SearchInput', () => {
     const noop = () => {}
     const { container } = render(<SearchInput onClear={noop} />)
     const input = container.querySelector('input')
-    const clearBtn = container.querySelector('button')
+    const clearBtn = container.querySelector('button') as HTMLButtonElement
 
     fireEvent.click(clearBtn)
     expect(input).toHaveFocus()
@@ -18,10 +19,10 @@ describe('SearchInput', () => {
     const noop = () => {}
 
     const { container } = render(<SearchInput onClear={noop} />)
-    const input = container.querySelector('input')
+    const input = container.querySelector('input') as HTMLInputElement
 
     input.value = 'Kindergarten'
-    const clearBtn = container.querySelector('button')
+    const clearBtn = container.querySelector('button') as HTMLButtonElement
 
     fireEvent.click(clearBtn)
 
