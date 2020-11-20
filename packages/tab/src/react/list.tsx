@@ -202,6 +202,7 @@ const List: FC<HTMLPropsFor<'div'>> = props => {
     setXOffset(furtherXOffset)
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { children, ...rest } = props
   const listProps = {
     ...rest,
@@ -239,7 +240,7 @@ const List: FC<HTMLPropsFor<'div'>> = props => {
               ),
             ref: itemRefs[i]
           }
-
+          // eslint-disable-next-line  @typescript-eslint/no-unnecessary-type-assertion
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           return cloneElement(comp as any, childProps)
         })}
