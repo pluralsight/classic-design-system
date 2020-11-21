@@ -17,13 +17,15 @@ const styles = ({
 }: {
   themeName: ValueOf<typeof names>
   size: ValueOf<typeof vars.listSizes>
-  color:  ValueOf<typeof vars.textColors>
+  color: ValueOf<typeof vars.textColors>
   type: ValueOf<typeof vars.listTypes>
 }) =>
   compose(
     css(stylesheet[`.psds-text__list`]),
     css(stylesheet[`.psds-text__list--size-${size}`]),
-    css(stylesheet[`.psds-text__list--color-${color}.psds-theme--${themeName}`]),
+    css(
+      stylesheet[`.psds-text__list--color-${color}.psds-theme--${themeName}`]
+    ),
     css(stylesheet[`.psds-text__list--type-${type}`])
   )
 

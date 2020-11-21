@@ -60,17 +60,17 @@ const list = storiesOf('List', module)
       </List>
     </div>
   ))
-  Object.keys(List.sizes).forEach(typeProp =>
-    list.add(`size: ${typeProp}`, () => (
-      <List type={List.types.bulleted} size={typeProp as keyof typeof List.sizes}>
-        <List.Item>one</List.Item>
-        <List.Item>two</List.Item>
-        <List.Item>three</List.Item>
-        <List.Item>four</List.Item>
-        <List.Item>five</List.Item>
-      </List>
-    ))
-  )
+Object.keys(List.sizes).forEach(typeProp =>
+  list.add(`size: ${typeProp}`, () => (
+    <List type={List.types.bulleted} size={typeProp as keyof typeof List.sizes}>
+      <List.Item>one</List.Item>
+      <List.Item>two</List.Item>
+      <List.Item>three</List.Item>
+      <List.Item>four</List.Item>
+      <List.Item>five</List.Item>
+    </List>
+  ))
+)
 Object.keys(List.types).forEach(typeProp =>
   list.add(`type: ${typeProp}`, () => (
     <List type={typeProp as keyof typeof List.types}>
