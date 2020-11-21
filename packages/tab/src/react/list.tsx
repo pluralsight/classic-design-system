@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/no-unnecessary-type-assertion */
 import { motion } from '@pluralsight/ps-design-system-core'
 import {
   CaretRightIcon,
@@ -7,13 +8,16 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { useResizeObserver, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  useResizeObserver,
+  ValueOf,
+  HTMLPropsFor
+} from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, {
   ComponentProps,
   FC,
   FunctionComponentElement,
-  HTMLAttributes,
   ReactNode,
   RefObject,
   cloneElement,
@@ -56,7 +60,7 @@ interface Overflows {
   toLeft: boolean
   toRight: boolean
 }
-const List: FC<HTMLAttributes<HTMLDivElement>> = props => {
+const List: FC<HTMLPropsFor<'div'>> = props => {
   const themeName = useTheme()
   const listRef = useRef<HTMLDivElement>(null)
   const { width: listWidth } = useResizeObserver(listRef)
@@ -199,6 +203,7 @@ const List: FC<HTMLAttributes<HTMLDivElement>> = props => {
     setXOffset(furtherXOffset)
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { children, ...rest } = props
   const listProps = {
     ...rest,
@@ -236,7 +241,7 @@ const List: FC<HTMLAttributes<HTMLDivElement>> = props => {
               ),
             ref: itemRefs[i]
           }
-
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           return cloneElement(comp as any, childProps)
         })}
       </div>
@@ -249,7 +254,7 @@ const List: FC<HTMLAttributes<HTMLDivElement>> = props => {
 export default List
 
 type OverflowButtonPosition = 'left' | 'right'
-interface OverflowButtonProps extends HTMLAttributes<HTMLButtonElement> {
+interface OverflowButtonProps extends HTMLPropsFor<'button'> {
   position: OverflowButtonPosition
 }
 const OverflowButton: FC<OverflowButtonProps> = props => {

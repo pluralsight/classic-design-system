@@ -1,7 +1,8 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
+
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -31,7 +32,7 @@ interface PProps extends HTMLAttributes<HTMLParagraphElement> {
   color?: ValueOf<typeof vars.textColors>
 }
 
-const P: React.FC<PProps> & PStatics = ({
+const P: React.FC<HTMLPropsFor<'p'>> = props => {
   size = vars.pSizes.medium,
   color = vars.textColors.primary,
   ...rest

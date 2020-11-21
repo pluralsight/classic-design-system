@@ -1,7 +1,9 @@
-import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import {
+  RefForwardingComponent,
+  HTMLPropsFor
+} from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React, { HTMLAttributes, forwardRef, useMemo } from 'react'
-
+import React, { forwardRef, useMemo } from 'react'
 import Context from './context'
 import Divider from './divider'
 import { Group, CollapsibleGroup } from './group'
@@ -13,7 +15,7 @@ const styles = {
   verticaltabs: () => css(stylesheet['.psds-verticaltabs'])
 }
 
-interface VerticalTabsProps extends HTMLAttributes<HTMLUListElement> {
+interface VerticalTabsProps extends HTMLPropsFor<'ul'> {
   forceCollapsed?: boolean
   hideLabels?: boolean
 }

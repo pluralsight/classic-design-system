@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import {
@@ -9,7 +9,9 @@ import {
 import {
   ValueOf,
   isFunction,
-  RefForwardingComponent
+  RefForwardingComponent,
+  HTMLPropsFor,
+  RefFor
 } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
@@ -80,8 +82,7 @@ interface SwitchStatics {
   labelAligns: typeof vars.labelAligns
 }
 
-interface SwitchProps
-  extends Omit<HTMLAttributes<HTMLInputElement | HTMLLabelElement>, 'onClick'> {
+interface SwitchProps extends Omit<HTMLPropsFor<'label'>, 'onClick'> {
   checked?: boolean
   color?: ValueOf<typeof vars.colors>
   disabled?: boolean
@@ -169,7 +170,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         <input
           checked={checked}
           readOnly
-          ref={ref as React.RefObject<HTMLInputElement>}
+          ref={ref as RefFor<'input'>}
           tabIndex={-1}
           type="checkbox"
           {...styles.checkbox()}

@@ -2,7 +2,8 @@ import {
   canUseDOM,
   combineFns,
   shallowCompare,
-  useResizeObserver
+  useResizeObserver,
+  HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
 import React, {
@@ -47,7 +48,7 @@ function areEqualProps(
   return !changed
 }
 
-interface ScrollableProps extends React.HTMLAttributes<HTMLDivElement> {
+interface ScrollableProps extends HTMLPropsFor<'div'> {
   renderContent?: (
     props: renderContentProps,
     ref: React.Ref<HTMLElement>
@@ -158,20 +159,14 @@ const defaultRenderContent = (
   contentRef: React.RefCallback<HTMLElement>
 ) => <div {...contentProps} ref={contentRef} />
 
-const Outer = React.memo<React.HTMLAttributes<HTMLDivElement>>(
-  function OuterComp(props) {
-    return <div {...styles.outer()} {...props} />
-  },
-  areEqualProps
-)
+const Outer = React.memo<HTMLPropsFor<'div'>>(function OuterComp(props) {
+  return <div {...styles.outer()} {...props} />
+}, areEqualProps)
 Outer.displayName = 'Scrollable.Outer'
 
-const Inner = React.memo<React.HTMLAttributes<HTMLDivElement>>(
-  function InnerComp(props) {
-    return <div {...styles.inner()} {...props} />
-  },
-  areEqualProps
-)
+const Inner = React.memo<HTMLPropsFor<'div'>>(function InnerComp(props) {
+  return <div {...styles.inner()} {...props} />
+}, areEqualProps)
 Inner.displayName = 'Scrollable.Inner'
 
 interface HandleProps {

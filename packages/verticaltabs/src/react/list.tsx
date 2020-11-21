@@ -1,9 +1,10 @@
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
 import { css } from 'glamor'
-import React, { HTMLAttributes, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { useForceCollapsed } from './context'
 import stylesheet from '../css'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 const styles = {
   list: () => css(stylesheet['.psds-verticaltabs__list']),
@@ -11,7 +12,7 @@ const styles = {
     css(stylesheet['.psds-verticaltabs__list--collapsible'])
 }
 
-interface ListProps extends HTMLAttributes<HTMLUListElement> {
+interface ListProps extends HTMLPropsFor<'ul'> {
   collapsed?: boolean
 }
 
