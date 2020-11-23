@@ -1,7 +1,7 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import React, { forwardRef, useContext } from 'react'
+import React, { ReactNode, ReactText, forwardRef, useContext } from 'react'
 import { css } from 'glamor'
 
 import stylesheet from '../css'
@@ -13,9 +13,10 @@ const styles = {
 }
 
 interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'ref'> {
-  icon?: React.ReactNode
-  value?: React.ReactText
-  menu?: React.ReactNode
+  children: ReactText
+  icon?: ReactNode
+  value?: ReactText
+  menu?: ReactNode
 }
 
 export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
