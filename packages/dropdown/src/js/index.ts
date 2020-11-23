@@ -134,7 +134,8 @@ export const useDropdown = (
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     if (
       evt.type === 'click' ||
-      (evt.type === 'keydown' && (evt.key === ' ' || evt.key === 'Enter'))
+      (evt.type === 'keydown' &&
+        (evt.key === ' ' || evt.key === 'Enter' || evt.key === 'ArrowDown'))
     ) {
       evt.preventDefault()
       evt.stopPropagation()

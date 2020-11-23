@@ -104,6 +104,32 @@ it('opens the menu with enter key', async () => {
   expect(menu).toBeInTheDocument()
 })
 
+it('opens the menu with down arrow', async () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  )
+
+  const button = screen.getByRole('button', { name: 'Select' })
+  button.focus()
+  fireEvent.keyDown(button, { key: 'ArrowDown', code: 'ArrowDown' })
+
+  const menu = screen.getByRole('listbox')
+  expect(menu).toBeInTheDocument()
+})
+
 it('selects by click', async () => {
   render(
     <Dropdown
