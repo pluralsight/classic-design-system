@@ -20,7 +20,7 @@ import {
 import * as vars from '../vars'
 
 interface DropdownContextValue {
-  selectedItemId?: string
+  menuId?: string
   selectedValue?: number | string
 }
 export const DropdownContext = createContext<DropdownContextValue>({
@@ -116,6 +116,7 @@ export const useDropdown = (
 
   const labelId = useUniqueId('dropdown-label-')
   const menuId = useUniqueId('dropdown-menu-')
+  // TODO: rm
   const [selectedItemId, setSelectedItemId] = useState(
     selectedValue || selectedLabel
       ? `${menuId}${selectedValue || selectedLabel}`
@@ -161,6 +162,7 @@ export const useDropdown = (
 
   const menuRef = useMenuRef(!selectedValue)
 
+  // TODO: move to top-level function
   function getLongestMenuLabelState() {
     const getMenuItems = (menu: React.ReactElement) =>
       Array.isArray(menu)
@@ -248,6 +250,7 @@ export const useDropdown = (
     },
     layout: {
       ...rest.layout,
+      // TODO: move to input
       onKeyDown: handleKeyDown
     },
     menu: {
@@ -271,7 +274,7 @@ export const useDropdown = (
     subLabel: rest.subLabel,
     value: {
       value: {
-        selectedItemId,
+        menuId,
         selectedValue
       }
     }
@@ -296,4 +299,16 @@ export function findMatchingActionMenuItem(menu?, value?) {
   }
 
   return matchingItem
+}
+
+export function formatItemId(
+  menuId: string,
+  value?: string | number,
+  label?: string
+) {
+  const formattedLabel =
+    typeof label === 'string'
+      ? label.toString().replace(' ', '')
+      : 'unknownItemLabel'
+  return `${menuId}-${value || formattedLabel}`
 }

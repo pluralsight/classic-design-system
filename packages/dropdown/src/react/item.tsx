@@ -11,7 +11,7 @@ import React, {
 import { css } from 'glamor'
 
 import stylesheet from '../css'
-import { DropdownContext } from '../js'
+import { DropdownContext, formatItemId } from '../js'
 
 const styles = {
   icon: css(stylesheet['.psds-dropdown--selected-icon']),
@@ -27,7 +27,7 @@ interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'ref'> {
 export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
   ({ value, icon, menu, children, ...rest }, forwardedRef): any => {
     const context = useContext(DropdownContext)
-    const selectedItemId = context.selectedItemId
+    const menuId = context.menuId
     const selectedValue = context.selectedValue
     const showSelectedValue = value && selectedValue === value
 
@@ -46,7 +46,7 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
         value={value}
         nested={menu}
         {...rest}
-        id={showSelectedValue ? selectedItemId : undefined}
+        id={formatItemId(menuId, value, children as string)}
         ref={ref}
       >
         <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
