@@ -104,12 +104,14 @@ export const useDropdown = (
   forwardedRef: Ref<HTMLButtonElement>
 ) => {
   const { hook, ...rest } = sortDropdownProps(props)
-  // TODO: derive from activeIndex > -1
   const [isOpen, setOpen] = useState(false)
   const labelId = useMemo(() => uniqueId('dropdown-label-'), [])
   const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
 
-  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [hook.menu])
+  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [
+    menuId,
+    hook.menu
+  ])
   const itemMatchingValueIndex = items.findIndex(
     item => item.value === hook.value || item.label === hook.value
   )
@@ -118,13 +120,9 @@ export const useDropdown = (
     itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0
   )
 
-  // TODO: derive?
-  const [selectedLabel, setSelectedLabel] = useState(
-    itemMatchingValue ? itemMatchingValue.label : null
-  )
+  const [selectedLabel, setSelectedLabel] = useState(itemMatchingValue?.label)
   const [selectedValue, setSelectedValue] = useState(hook.value)
 
-  // TODO: ensure that when value changes, all the new index stuff updates too
   useEffect(() => {
     const newLabel = itemMatchingValue?.label
     const newValue = hook.value
@@ -133,6 +131,14 @@ export const useDropdown = (
   }, [itemMatchingValue, hook.value])
 
   useEffect(() => {
+    function handleEscape(evt) {
+      if (evt.key === 'Escape') {
+        setOpen(false)
+        setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
+        buttonRef.current?.focus()
+      }
+    }
+
     if (canUseDOM() && isOpen) {
       document.addEventListener('keydown', handleEscape, false)
 
@@ -140,14 +146,7 @@ export const useDropdown = (
         document.removeEventListener('keydown', handleEscape, false)
       }
     }
-  }, [isOpen])
-  function handleEscape(evt) {
-    if (evt.key === 'Escape') {
-      setOpen(false)
-      setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
-      buttonRef.current?.focus()
-    }
-  }
+  }, [itemMatchingValueIndex, isOpen])
 
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     if (
