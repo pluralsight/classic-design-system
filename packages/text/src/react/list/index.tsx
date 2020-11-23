@@ -37,31 +37,30 @@ interface ListStatics {
 }
 
 interface UnorderedListProps extends HTMLPropsFor<'ul'> {
+  type?: ValueOf<typeof vars.listTypes>
   size?: ValueOf<typeof vars.listSizes>
   color?: ValueOf<typeof vars.textColors>
-  type?: ValueOf<typeof vars.listTypes>
 }
 
 interface OrderedListProps extends Omit<HTMLPropsFor<'ol'>, 'type'> {
   type?: ValueOf<typeof vars.listTypes>
+  size?: ValueOf<typeof vars.listSizes>
   color?: ValueOf<typeof vars.textColors>
-  type?: ValueOf<typeof vars.listTypes>
 }
 
 type ListProps = UnorderedListProps | OrderedListProps
 
 const List: React.FC<ListProps> & ListStatics = ({
+  type = vars.listTypes.default,
   size = vars.listSizes.medium,
   color = vars.textColors.primary,
-  type = vars.listTypes.default,
   ...props
 }) => {
   const themeName = useTheme()
   const Wrapper: React.FC = wrapperProps =>
     type === 'numbered' ? <ol {...wrapperProps} /> : <ul {...wrapperProps} />
 
-
-  return <Wrapper {...styles({ themeName, type })} {...props} />
+  return <Wrapper {...styles({ themeName, type, size, color })} {...props} />
 }
 
 List.sizes = vars.listSizes

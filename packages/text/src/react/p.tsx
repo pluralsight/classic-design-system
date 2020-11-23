@@ -27,19 +27,23 @@ interface PStatics {
   colors: typeof vars.textColors
 }
 
-interface PProps extends HTMLAttributes<HTMLParagraphElement> {
+interface PProps extends HTMLPropsFor<'p'> {
   size?: ValueOf<typeof vars.pSizes>
   color?: ValueOf<typeof vars.textColors>
 }
 
-const P: React.FC<HTMLPropsFor<'p'>> = props => {
+const P: React.FC<PProps> & PStatics = ({
   size = vars.pSizes.medium,
   color = vars.textColors.primary,
-  ...rest
+  ...props
 }) => {
   const themeName = useTheme()
 
-  return <p {...rest} {...style({ themeName, size, color })} />
+  return (
+    <p {...props} {...style({ themeName, size, color })}>
+      {props.children}
+    </p>
+  )
 }
 
 P.sizes = vars.pSizes
