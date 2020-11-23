@@ -27,6 +27,8 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
     return (
       <ActionMenu.Item
         active={isActive}
+        aria-selected={isActive}
+        role="option"
         tagName="button"
         value={value}
         nested={menu}

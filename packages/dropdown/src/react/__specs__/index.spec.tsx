@@ -125,10 +125,10 @@ it('selects by click', async () => {
   const button = screen.getByRole('button', { name: 'Two' })
   userEvent.click(button)
 
-  const item = screen.getByRole('menuitem', { name: /Three/ })
+  const item = screen.getByRole('option', { name: /Three/ })
   userEvent.click(item)
 
-  const input = await screen.findByRole('textbox')
+  const input = await screen.findByRole('combobox')
   expect(input).toHaveValue('h')
 })
 
@@ -174,6 +174,6 @@ it('navigates by arrows, selects by enter', async () => {
     code: 'Enter'
   })
 
-  const input = await screen.findByRole('textbox')
+  const input = await screen.findByRole('combobox')
   expect(input).toHaveValue('o')
 })
