@@ -348,7 +348,7 @@ export function formatItemId(
 
   const formattedLabel =
     typeof label === 'string'
-      ? label.toString().replace(' ', '')
+      ? label.toString().replace(/ /g, '')
       : 'unknownItemLabel'
   return `${menuId}-${value || formattedLabel}`
 }
