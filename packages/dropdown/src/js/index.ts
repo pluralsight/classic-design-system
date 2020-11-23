@@ -10,9 +10,11 @@ import {
   useRef,
   useState
 } from 'react'
-// TODO: use util
-import { canUseDOM } from 'exenv'
-import { uniqueId, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  canUseDOM,
+  uniqueId,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -131,7 +133,7 @@ export const useDropdown = (
   }, [itemMatchingValue, hook.value])
 
   useEffect(() => {
-    if (canUseDOM && isOpen) {
+    if (canUseDOM() && isOpen) {
       document.addEventListener('keydown', handleEscape, false)
 
       return () => {
@@ -202,54 +204,7 @@ export const useDropdown = (
     }
   }
 
-  // TODO: move to top-level function
-  function getLongestMenuLabelState() {
-    const getMenuItems = (menu: React.ReactElement) =>
-      Array.isArray(menu)
-        ? menu
-        : menu
-        ? Children.toArray(menu.props.children)
-        : []
-    const getNestedMenu = item => item && item.props.nested
-    const hasIcon = item => item && !!item.props.icon
-    const getLabel = (item): string =>
-      // NOTE: only works if it's a string -- are there valid cases where actionMenuItem child is not a string
-      (Children.toArray(item.props.children)[0] as string) || ''
-    const getState = item => ({
-      hasIcon: hasIcon(item),
-      label: getLabel(item)
-    })
-    const itemIsLonger = (state, item) =>
-      getLabel(item).length > state.label.length
-    const newStateIsLonger = (oldState, newState) =>
-      newState.label.length > oldState.label.length
-
-    const getLongestState = (startLongest, menu) => {
-      return getMenuItems(menu).reduce((currentLongest, item) => {
-        const nested = getNestedMenu(item)
-        if (nested) {
-          const nestedLongest = getLongestState(currentLongest, nested)
-          const newLongest = itemIsLonger(nestedLongest, item)
-            ? getState(item)
-            : nestedLongest
-          return newStateIsLonger(currentLongest, newLongest)
-            ? newLongest
-            : currentLongest
-        } else {
-          return itemIsLonger(currentLongest, item)
-            ? getState(item)
-            : currentLongest
-        }
-      }, startLongest)
-    }
-
-    return getLongestState(
-      { hasIcon: false, label: hook.placeholder || '' },
-      hook.menu
-    )
-  }
-
-  const longestMenuItemState = getLongestMenuLabelState()
+  const longestLabel = getLongestMenuLabel(items, hook.placeholder)
   const [width, setWidth] = useState<React.ReactText>('auto')
 
   const buttonRef = useRef<HTMLButtonElement>()
@@ -263,7 +218,7 @@ export const useDropdown = (
 
   const inputRef = useRef<HTMLInputElement>()
 
-  const inNode = canUseDOM ? document.body : null
+  const inNode = canUseDOM() ? document.body : null
   const [menuPosition, setMenuPosition] = useState({ left: 0, top: 0 })
 
   return {
@@ -305,7 +260,7 @@ export const useDropdown = (
     },
     selected: {
       ...rest.selected,
-      label: longestMenuItemState.label,
+      label: longestLabel,
       selectedLabel
     },
     subLabel: rest.subLabel,
@@ -347,4 +302,15 @@ export const formatItemId = (
   if (!value && !label) return
 
   return `${menuId}-${value || label.toString().replace(/ /g, '')}`
+}
+
+export const getLongestMenuLabel = (
+  items: Pick<ItemData, 'label'>[],
+  placeholder?: string
+) => {
+  return items.reduce((currentLongest, item) => {
+    return item.label?.length > currentLongest.length
+      ? item.label
+      : currentLongest
+  }, placeholder || '')
 }

@@ -5,7 +5,6 @@ import {
   cloneElementWithRef
 } from '@pluralsight/ps-design-system-util'
 import React, { forwardRef, cloneElement } from 'react'
-import { isFragment, isValidElementType } from 'react-is'
 import { css } from 'glamor'
 
 import stylesheet from '../css'

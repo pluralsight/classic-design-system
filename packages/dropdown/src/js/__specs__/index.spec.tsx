@@ -1,7 +1,8 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
-import { formatItemId, parseMenuChildren } from '..'
+import { getLongestMenuLabel, formatItemId, parseMenuChildren } from '..'
 import Item from '../../react'
 
 describe('#formatItemId', () => {
@@ -56,5 +57,33 @@ describe('#parseMenuChildren', () => {
       { id: 'aMenuId-w', label: 'Two', value: 'w' },
       { id: 'aMenuId-h', label: 'Three', value: 'h' }
     ])
+  })
+})
+
+describe('#getLongestMenuLabel', () => {
+  it('is empty string if no items and no placeholder', () => {
+    expect(getLongestMenuLabel([])).toEqual('')
+  })
+
+  it('is placeholder if no items', () => {
+    expect(getLongestMenuLabel([], 'aPlace')).toEqual('aPlace')
+  })
+
+  it('is placeholder if still longest', () => {
+    expect(
+      getLongestMenuLabel(
+        [{ label: 'One' }, { label: 'Two Longer' }, { label: 'Three' }],
+        'A Longest Placeholder'
+      )
+    ).toEqual('A Longest Placeholder')
+  })
+
+  it('is longest label', () => {
+    expect(
+      getLongestMenuLabel(
+        [{ label: 'One' }, { label: 'Two Longest' }, { label: 'Three' }],
+        'aPlace'
+      )
+    ).toEqual('Two Longest')
   })
 })
