@@ -1,4 +1,4 @@
-import { fireEvent, screen } from '@testing-library/dom'
+import { waitFor, fireEvent, screen } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import React from 'react'
@@ -48,11 +48,11 @@ it('button click opens the menu', async () => {
   const button = await screen.findByRole('button', { name: 'Select' })
   userEvent.click(button)
 
-  const menu = await screen.findByRole('listbox')
+  const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
 })
 
-it('space key opens the menu', async () => {
+it('opens the menu with space key', async () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -72,13 +72,37 @@ it('space key opens the menu', async () => {
 
   const button = screen.getByRole('button', { name: 'Select' })
   button.focus()
-  userEvent.type(button, '{space}')
+  fireEvent.keyDown(button, { key: ' ', code: 'Space' })
 
-  const menu = await screen.findByRole('listbox')
+  const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
 })
 
-it.todo('selects by enter')
+it('opens the menu with enter key', async () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  )
+
+  const button = screen.getByRole('button', { name: 'Select' })
+  button.focus()
+  fireEvent.keyDown(button, { key: 'Enter', code: 'Enter' })
+
+  const menu = await waitFor(() => screen.getByRole('listbox'))
+  expect(menu).toBeInTheDocument()
+})
 
 it('selects by click', async () => {
   render(
@@ -100,6 +124,34 @@ it('selects by click', async () => {
   )
   const button = screen.getByRole('button', { name: 'Two' })
   userEvent.click(button)
+
+  const item = screen.getByRole('menuitem', { name: /Three/ })
+  userEvent.click(item)
+
+  const input = await screen.findByRole('textbox')
+  expect(input).toHaveValue('h')
+})
+
+it.skip('selects by enter', async () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      value="w"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  )
+  const button = screen.getByRole('button', { name: 'Two' })
+  userEvent.type(document.activeElement, '{enter}')
 
   const item = screen.getByRole('menuitem', { name: /Three/ })
   userEvent.click(item)

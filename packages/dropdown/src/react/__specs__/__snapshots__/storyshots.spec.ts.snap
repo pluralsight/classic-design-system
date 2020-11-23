@@ -3,7 +3,6 @@
 exports[`Storyshots appearance default w/ error 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -22,6 +21,8 @@ exports[`Storyshots appearance default w/ error 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -99,7 +100,6 @@ exports[`Storyshots appearance gaps 1`] = `
   <div>
     <div
       data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <label
         htmlFor="dropdown-label-unique-id"
@@ -118,6 +118,8 @@ exports[`Storyshots appearance gaps 1`] = `
           defaultValue=""
           disabled={false}
           id="dropdown-label-unique-id"
+          onKeyDown={[Function]}
+          tabIndex={-1}
         />
       </div>
       <div
@@ -173,7 +175,6 @@ exports[`Storyshots appearance gaps 1`] = `
   <div>
     <div
       data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <label
         htmlFor="dropdown-label-unique-id"
@@ -192,6 +193,8 @@ exports[`Storyshots appearance gaps 1`] = `
           defaultValue=""
           disabled={false}
           id="dropdown-label-unique-id"
+          onKeyDown={[Function]}
+          tabIndex={-1}
         />
       </div>
       <div
@@ -266,7 +269,6 @@ exports[`Storyshots appearance gaps 1`] = `
   <div>
     <div
       data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <label
         htmlFor="dropdown-label-unique-id"
@@ -285,6 +287,8 @@ exports[`Storyshots appearance gaps 1`] = `
           defaultValue=""
           disabled={false}
           id="dropdown-label-unique-id"
+          onKeyDown={[Function]}
+          tabIndex={-1}
         />
       </div>
       <div
@@ -340,7 +344,6 @@ exports[`Storyshots appearance gaps 1`] = `
   <div>
     <div
       data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <label
         htmlFor="dropdown-label-unique-id"
@@ -359,6 +362,8 @@ exports[`Storyshots appearance gaps 1`] = `
           defaultValue=""
           disabled={false}
           id="dropdown-label-unique-id"
+          onKeyDown={[Function]}
+          tabIndex={-1}
         />
       </div>
       <div
@@ -436,7 +441,6 @@ exports[`Storyshots appearance gaps 1`] = `
 exports[`Storyshots appearance medium default 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -457,6 +461,8 @@ exports[`Storyshots appearance medium default 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -517,7 +523,6 @@ exports[`Storyshots appearance medium default 1`] = `
 exports[`Storyshots appearance medium subtle 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -538,6 +543,8 @@ exports[`Storyshots appearance medium subtle 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -598,7 +605,6 @@ exports[`Storyshots appearance medium subtle 1`] = `
 exports[`Storyshots appearance small default 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -619,6 +625,8 @@ exports[`Storyshots appearance small default 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -679,7 +687,6 @@ exports[`Storyshots appearance small default 1`] = `
 exports[`Storyshots appearance small subtle 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -700,6 +707,8 @@ exports[`Storyshots appearance small subtle 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -760,7 +769,6 @@ exports[`Storyshots appearance small subtle 1`] = `
 exports[`Storyshots appearance subtle w/ error 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -779,6 +787,8 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -854,7 +864,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
 exports[`Storyshots custom dynamic icon 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -939,7 +948,6 @@ exports[`Storyshots custom dynamic icon 1`] = `
 exports[`Storyshots custom fixed icon 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1001,8 +1009,10 @@ exports[`Storyshots custom fixed icon 1`] = `
                 Trailing 14 Days
               </span>
               <span
-                data-css-1t1vq03=""
-              />
+                data-css-phnd7x=""
+              >
+                Trailing 14 Days
+              </span>
             </div>
           </span>
         </button>
@@ -1034,7 +1044,6 @@ exports[`Storyshots disabled compare 1`] = `
 <div>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
   >
     <label
       htmlFor="dropdown-label-unique-id"
@@ -1053,6 +1062,8 @@ exports[`Storyshots disabled compare 1`] = `
         defaultValue=""
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -1115,7 +1126,6 @@ exports[`Storyshots disabled compare 1`] = `
   </div>
   <div
     data-css-1h53i33=""
-    onKeyDown={[Function]}
   >
     <label
       htmlFor="dropdown-label-unique-id"
@@ -1134,6 +1144,8 @@ exports[`Storyshots disabled compare 1`] = `
         defaultValue=""
         disabled={true}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -1200,7 +1212,6 @@ exports[`Storyshots disabled compare 1`] = `
 exports[`Storyshots focus autofocus with ref 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1221,6 +1232,8 @@ exports[`Storyshots focus autofocus with ref 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1277,7 +1290,6 @@ exports[`Storyshots focus autofocus with ref 1`] = `
 exports[`Storyshots focus disabled 1`] = `
 <div
   data-css-1h53i33=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1298,6 +1310,8 @@ exports[`Storyshots focus disabled 1`] = `
       defaultValue=""
       disabled={true}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1356,7 +1370,6 @@ exports[`Storyshots focus disabled 1`] = `
 exports[`Storyshots focus onBlur 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1377,6 +1390,8 @@ exports[`Storyshots focus onBlur 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1434,7 +1449,6 @@ exports[`Storyshots focus onBlur 1`] = `
 exports[`Storyshots focus onFocus 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1455,6 +1469,8 @@ exports[`Storyshots focus onFocus 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1512,7 +1528,6 @@ exports[`Storyshots focus onFocus 1`] = `
 exports[`Storyshots labels all 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1531,6 +1546,8 @@ exports[`Storyshots labels all 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1596,7 +1613,6 @@ exports[`Storyshots labels all 1`] = `
 exports[`Storyshots labels label 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1615,6 +1631,8 @@ exports[`Storyshots labels label 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1671,7 +1689,6 @@ exports[`Storyshots labels label 1`] = `
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1690,6 +1707,8 @@ exports[`Storyshots labels label and subLabel 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1751,7 +1770,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
 exports[`Storyshots labels none 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1772,6 +1790,8 @@ exports[`Storyshots labels none 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1828,7 +1848,6 @@ exports[`Storyshots labels none 1`] = `
 exports[`Storyshots labels placeholder 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1849,6 +1868,8 @@ exports[`Storyshots labels placeholder 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -1909,7 +1930,6 @@ exports[`Storyshots labels placeholder 1`] = `
 exports[`Storyshots labels subLabel 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -1930,6 +1950,8 @@ exports[`Storyshots labels subLabel 1`] = `
       defaultValue=""
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -2002,7 +2024,6 @@ exports[`Storyshots layouts custom width 1`] = `
   </div>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
     style={
       Object {
         "width": 150,
@@ -2027,6 +2048,8 @@ exports[`Storyshots layouts custom width 1`] = `
         defaultValue="two"
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -2084,7 +2107,6 @@ exports[`Storyshots layouts custom width 1`] = `
   </div>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
   >
     <label
       htmlFor="dropdown-label-unique-id"
@@ -2104,6 +2126,8 @@ exports[`Storyshots layouts custom width 1`] = `
         defaultValue="two"
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -2173,7 +2197,6 @@ exports[`Storyshots layouts full width 1`] = `
 >
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
     style={
       Object {
         "display": "block",
@@ -2198,6 +2221,8 @@ exports[`Storyshots layouts full width 1`] = `
         defaultValue=""
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -2251,7 +2276,6 @@ exports[`Storyshots layouts full width 1`] = `
   </div>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
     style={
       Object {
         "display": "block",
@@ -2276,6 +2300,8 @@ exports[`Storyshots layouts full width 1`] = `
         defaultValue=""
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -2348,7 +2374,6 @@ exports[`Storyshots layouts full width 1`] = `
   </div>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
     style={
       Object {
         "display": "block",
@@ -2373,6 +2398,8 @@ exports[`Storyshots layouts full width 1`] = `
         defaultValue=""
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -2426,7 +2453,6 @@ exports[`Storyshots layouts full width 1`] = `
   </div>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
     style={
       Object {
         "display": "block",
@@ -2451,6 +2477,8 @@ exports[`Storyshots layouts full width 1`] = `
         defaultValue=""
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -2542,7 +2570,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
   >
     <div
       data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <label
         htmlFor="dropdown-label-unique-id"
@@ -2563,6 +2590,8 @@ exports[`Storyshots layouts right-aligned 1`] = `
           defaultValue=""
           disabled={false}
           id="dropdown-label-unique-id"
+          onKeyDown={[Function]}
+          tabIndex={-1}
         />
       </div>
       <div
@@ -2633,7 +2662,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
 exports[`Storyshots menu divider 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -2646,12 +2674,15 @@ exports[`Storyshots menu divider 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -2679,8 +2710,10 @@ exports[`Storyshots menu divider 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1t1vq03=""
-            />
+              data-css-phnd7x=""
+            >
+              One item
+            </span>
           </span>
         </button>
         <div
@@ -2712,7 +2745,6 @@ exports[`Storyshots menu in stack 1`] = `
   <div>
     <div
       data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <label
         htmlFor="dropdown-label-unique-id"
@@ -2725,12 +2757,15 @@ exports[`Storyshots menu in stack 1`] = `
         data-css-6wu9td=""
       >
         <input
+          aria-activedescendant="dropdown-menu-unique-id-Oneitem"
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
-          defaultValue=""
+          defaultValue="One item"
           disabled={false}
           id="dropdown-label-unique-id"
+          onKeyDown={[Function]}
+          tabIndex={-1}
         />
       </div>
       <div
@@ -2758,9 +2793,9 @@ exports[`Storyshots menu in stack 1`] = `
                   Three and the amazing item
                 </span>
                 <span
-                  data-css-1t1vq03=""
+                  data-css-phnd7x=""
                 >
-                  Select one
+                  One item
                 </span>
               </span>
             </button>
@@ -2790,7 +2825,6 @@ exports[`Storyshots menu in stack 1`] = `
   <div>
     <div
       data-css-1hniuff=""
-      onKeyDown={[Function]}
     >
       <label
         htmlFor="dropdown-label-unique-id"
@@ -2803,12 +2837,15 @@ exports[`Storyshots menu in stack 1`] = `
         data-css-6wu9td=""
       >
         <input
+          aria-activedescendant="dropdown-menu-unique-id-Oneitem"
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
-          defaultValue=""
+          defaultValue="One item"
           disabled={false}
           id="dropdown-label-unique-id"
+          onKeyDown={[Function]}
+          tabIndex={-1}
         />
       </div>
       <div
@@ -2836,9 +2873,9 @@ exports[`Storyshots menu in stack 1`] = `
                   Three and the amazing item
                 </span>
                 <span
-                  data-css-1t1vq03=""
+                  data-css-phnd7x=""
                 >
-                  Select another one
+                  One item
                 </span>
               </span>
             </button>
@@ -2871,7 +2908,6 @@ exports[`Storyshots menu in stack 1`] = `
 exports[`Storyshots menu max height 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -2884,12 +2920,15 @@ exports[`Storyshots menu max height 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -2917,8 +2956,10 @@ exports[`Storyshots menu max height 1`] = `
               Thirteen item
             </span>
             <span
-              data-css-1t1vq03=""
-            />
+              data-css-phnd7x=""
+            >
+              One item
+            </span>
           </span>
         </button>
         <div
@@ -2948,7 +2989,6 @@ exports[`Storyshots menu max height 1`] = `
 exports[`Storyshots menu nested 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -2961,12 +3001,15 @@ exports[`Storyshots menu nested 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -2994,9 +3037,9 @@ exports[`Storyshots menu nested 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1t1vq03=""
+              data-css-phnd7x=""
             >
-              Select another one
+              One item
             </span>
           </span>
         </button>
@@ -3027,7 +3070,6 @@ exports[`Storyshots menu nested 1`] = `
 exports[`Storyshots menu onClicks 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3040,12 +3082,15 @@ exports[`Storyshots menu onClicks 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3073,9 +3118,9 @@ exports[`Storyshots menu onClicks 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-dafmp1=""
+              data-css-phnd7x=""
             >
-              Select another one
+              One item
             </span>
           </span>
         </button>
@@ -3125,7 +3170,6 @@ exports[`Storyshots menu onClicks 1`] = `
 exports[`Storyshots menu single list 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3138,12 +3182,15 @@ exports[`Storyshots menu single list 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3171,8 +3218,10 @@ exports[`Storyshots menu single list 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1t1vq03=""
-            />
+              data-css-phnd7x=""
+            >
+              One item
+            </span>
           </span>
         </button>
         <div
@@ -3202,7 +3251,6 @@ exports[`Storyshots menu single list 1`] = `
 exports[`Storyshots menu single list w/ icon 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3215,12 +3263,15 @@ exports[`Storyshots menu single list w/ icon 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3248,9 +3299,9 @@ exports[`Storyshots menu single list w/ icon 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1t1vq03=""
+              data-css-phnd7x=""
             >
-              Select one
+              One item
             </span>
           </span>
         </button>
@@ -3281,7 +3332,6 @@ exports[`Storyshots menu single list w/ icon 1`] = `
 exports[`Storyshots menu super long 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3294,12 +3344,15 @@ exports[`Storyshots menu super long 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Thislevel really is the longest level that anyone has ever seen. There is none longer"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="This level really is the longest level that anyone has ever seen. There is none longer"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3327,8 +3380,10 @@ exports[`Storyshots menu super long 1`] = `
               This level really is the longest level that anyone has ever seen. There is none longer
             </span>
             <span
-              data-css-1t1vq03=""
-            />
+              data-css-phnd7x=""
+            >
+              This level really is the longest level that anyone has ever seen. There is none longer
+            </span>
           </span>
         </button>
         <div
@@ -3358,7 +3413,6 @@ exports[`Storyshots menu super long 1`] = `
 exports[`Storyshots menu w/ longer nested menu item label 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3371,12 +3425,15 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Short"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="Short"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3404,8 +3461,10 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
               Short enough
             </span>
             <span
-              data-css-1t1vq03=""
-            />
+              data-css-phnd7x=""
+            >
+              Short
+            </span>
           </span>
         </button>
         <div
@@ -3435,7 +3494,6 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
 exports[`Storyshots menu w/ longer placeholder 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3448,12 +3506,15 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3481,9 +3542,9 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
               This one is longer than any menu item
             </span>
             <span
-              data-css-1t1vq03=""
+              data-css-phnd7x=""
             >
-              This one is longer than any menu item
+              One item
             </span>
           </span>
         </button>
@@ -3514,7 +3575,6 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
 exports[`Storyshots menu w/ subLabel 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3527,12 +3587,15 @@ exports[`Storyshots menu w/ subLabel 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3560,8 +3623,10 @@ exports[`Storyshots menu w/ subLabel 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1t1vq03=""
-            />
+              data-css-phnd7x=""
+            >
+              One item
+            </span>
           </span>
         </button>
         <div
@@ -3596,7 +3661,6 @@ exports[`Storyshots menu w/ subLabel 1`] = `
 exports[`Storyshots menu w/ value 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3616,6 +3680,8 @@ exports[`Storyshots menu w/ value 1`] = `
       defaultValue="three-1"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3689,7 +3755,6 @@ exports[`Storyshots portal position 1`] = `
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed. Ornare lectus sit amet est placerat in egestas. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nisl nisi scelerisque eu ultrices. Amet risus nullam eget felis. Arcu non sodales neque sodales ut etiam. Tortor at auctor urna nunc. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Condimentum vitae sapien pellentesque habitant morbi tristique. Egestas maecenas pharetra convallis posuere morbi leo urna molestie. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Lobortis feugiat vivamus at augue eget arcu dictum. Fusce id velit ut tortor pretium viverra suspendisse. Convallis tellus id interdum velit. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tempor orci dapibus ultrices in iaculis nunc. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet massa vitae tortor. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing. Sed felis eget velit aliquet sagittis. Elit pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Id volutpat lacus laoreet non curabitur gravida arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet.
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
   >
     <label
       htmlFor="dropdown-label-unique-id"
@@ -3702,12 +3767,15 @@ exports[`Storyshots portal position 1`] = `
       data-css-6wu9td=""
     >
       <input
+        aria-activedescendant="dropdown-menu-unique-id-Oneitem"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
-        defaultValue=""
+        defaultValue="One item"
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -3735,8 +3803,10 @@ exports[`Storyshots portal position 1`] = `
                 Three and the amazing item
               </span>
               <span
-                data-css-1t1vq03=""
-              />
+                data-css-phnd7x=""
+              >
+                One item
+              </span>
             </span>
           </button>
           <div
@@ -3768,7 +3838,6 @@ exports[`Storyshots portal position 1`] = `
 exports[`Storyshots props whitelist title 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3781,12 +3850,15 @@ exports[`Storyshots props whitelist title 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
-      defaultValue=""
+      defaultValue="One item"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3815,8 +3887,10 @@ exports[`Storyshots props whitelist title 1`] = `
               One item
             </span>
             <span
-              data-css-1t1vq03=""
-            />
+              data-css-phnd7x=""
+            >
+              One item
+            </span>
           </span>
         </button>
         <div
@@ -3846,7 +3920,6 @@ exports[`Storyshots props whitelist title 1`] = `
 exports[`Storyshots value shows pre-selected item 1`] = `
 <div
   data-css-1hniuff=""
-  onKeyDown={[Function]}
 >
   <label
     htmlFor="dropdown-label-unique-id"
@@ -3868,6 +3941,8 @@ exports[`Storyshots value shows pre-selected item 1`] = `
       defaultValue="h"
       disabled={false}
       id="dropdown-label-unique-id"
+      onKeyDown={[Function]}
+      tabIndex={-1}
     />
   </div>
   <div
@@ -3944,7 +4019,6 @@ exports[`Storyshots whitelist clear 1`] = `
   </button>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
   >
     <label
       htmlFor="dropdown-label-unique-id"
@@ -3964,6 +4038,8 @@ exports[`Storyshots whitelist clear 1`] = `
         defaultValue="two"
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div
@@ -4036,7 +4112,6 @@ exports[`Storyshots whitelist onChange 1`] = `
   </div>
   <div
     data-css-1hniuff=""
-    onKeyDown={[Function]}
   >
     <label
       htmlFor="dropdown-label-unique-id"
@@ -4056,6 +4131,8 @@ exports[`Storyshots whitelist onChange 1`] = `
         defaultValue="two"
         disabled={false}
         id="dropdown-label-unique-id"
+        onKeyDown={[Function]}
+        tabIndex={-1}
       />
     </div>
     <div

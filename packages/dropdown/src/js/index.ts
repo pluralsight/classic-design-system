@@ -95,62 +95,86 @@ const sortDropdownProps = ({
   }
 })
 
+// TODO: move to react folder? Uses React APIs.
 export const useDropdown = (
   props: UseDropdownProps,
   forwardedRef: Ref<HTMLButtonElement>
 ) => {
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
-
   const labelId = useMemo(() => uniqueId('dropdown-label-'), [])
   const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
 
-  const items = parseMenuChildren(menuId, hook.menu)
-
-  // TODO: ensure didn't need memo here
-  const itemMatchingValue = items.find(item => item.value === hook.value)
-
-  const [activeValue, setActiveValue] = useState<string | number | undefined>(
-    itemMatchingValue?.value
+  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [hook.menu])
+  const itemMatchingValueIndex = items.findIndex(
+    item => item.value === hook.value
   )
-  const [activeItemId, setActiveItemId] = useState<string | undefined>(
-    formatItemId(menuId, itemMatchingValue?.value, itemMatchingValue?.label)
+  const itemMatchingValue = items[itemMatchingValueIndex]
+  const [activeIndex, setActiveIndex] = useState(
+    itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0
   )
 
+  // TODO: derive?
   const [selectedLabel, setSelectedLabel] = useState(
     itemMatchingValue ? itemMatchingValue.label : null
   )
   const [selectedValue, setSelectedValue] = useState(hook.value)
 
+  // TODO: ensure that when value changes, all the new index stuff updates too
   useEffect(() => {
     const newLabel = itemMatchingValue?.label
     const newValue = hook.value
+    console.log('useEffect', { newLabel, newValue })
     setSelectedLabel(newLabel)
     setSelectedValue(newValue)
     // TODO: verify don't have to refind/setActiveItemId because itemMatchingValue was regen'ed
     /* setSelectedItemId(newValue || newLabel) */
   }, [itemMatchingValue, hook.value])
 
-  function handleButtonClick(evt) {
+  function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     evt.preventDefault()
     evt.stopPropagation()
-    const newOpen = !isOpen
-    setOpen(newOpen)
-    if (newOpen && inputRef.current) {
-      inputRef.current.focus()
+
+    if (
+      evt.type === 'click' ||
+      (evt.type === 'keydown' && (evt.key === ' ' || evt.key === 'Enter'))
+    ) {
+      console.log('button evt NOT OPENING', { type: evt.type, key: evt.key })
+      const newOpen = !isOpen
+      setOpen(newOpen)
+      console.log('button click', { newOpen, target: evt.target, key: evt.key })
+      if (newOpen && inputRef.current) {
+        inputRef.current.focus()
+      }
+      if (typeof hook.onClick === 'function') hook.onClick(evt)
+    } else {
+      console.log('button evt NOT OPENING', { type: evt.type, key: evt.key })
     }
-    if (typeof hook.onClick === 'function') hook.onClick(evt)
   }
 
   function handleInputKeyDown(evt: React.KeyboardEvent) {
     evt.preventDefault()
-    console.log({ target: evt.target, key: evt.key })
-    if (evt.key === 'ArrowDown') {
-      setOpen(true)
+    evt.stopPropagation()
+
+    console.log('input key', { isOpen, target: evt.target, key: evt.key })
+    if (isOpen) {
+      if (evt.key === 'ArrowUp') {
+        setActiveIndex(activeIndex > 0 ? activeIndex - 1 : 0)
+      } else if (evt.key === 'Enter' || evt.key === ' ') {
+        setSelectedValue(items[activeIndex]?.value)
+        setSelectedLabel(items[activeIndex]?.label)
+        setOpen(false)
+        buttonRef.current?.focus()
+      }
+    } else {
+      if (evt.key === 'ArrowDown' || evt.key === ' ') {
+        setOpen(true)
+      }
     }
   }
 
   function handleMenuChange(evt: React.MouseEvent, value?: React.ReactText) {
+    console.log('menu change', { value, target: evt.target })
     const innerText = (evt.currentTarget as HTMLElement).innerText
     const newLabel = value === innerText ? value : innerText
     setSelectedValue(value)
@@ -231,12 +255,13 @@ export const useDropdown = (
       ...rest.button,
       ref: buttonRef,
       isOpen,
-      onClick: handleButtonClick,
+      onClick: handleButtonEvent,
+      onKeyDown: handleButtonEvent,
       setMenuPosition
     },
     input: {
       ...rest.input,
-      activeItemId,
+      activeItemId: items[activeIndex]?.id,
       isOpen,
       labelId,
       onKeyDown: handleInputKeyDown,
@@ -270,7 +295,7 @@ export const useDropdown = (
     subLabel: rest.subLabel,
     value: {
       value: {
-        activeValue,
+        activeValue: items[activeIndex]?.value,
         menuId,
         selectedValue
       }
