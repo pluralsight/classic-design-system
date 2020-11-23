@@ -126,11 +126,8 @@ export const useDropdown = (
   useEffect(() => {
     const newLabel = itemMatchingValue?.label
     const newValue = hook.value
-    console.log('useEffect', { newLabel, newValue })
     setSelectedLabel(newLabel)
     setSelectedValue(newValue)
-    // TODO: verify don't have to refind/setActiveItemId because itemMatchingValue was regen'ed
-    /* setSelectedItemId(newValue || newLabel) */
   }, [itemMatchingValue, hook.value])
 
   useEffect(() => {
@@ -174,7 +171,6 @@ export const useDropdown = (
     evt.preventDefault()
     evt.stopPropagation()
 
-    console.log('input key', { isOpen, target: evt.target, key: evt.key })
     if (isOpen) {
       if (evt.key === 'ArrowDown') {
         setActiveIndex(activeIndex < items.length - 1 ? activeIndex + 1 : 0)
@@ -195,7 +191,6 @@ export const useDropdown = (
   }
 
   function handleMenuChange(evt: React.MouseEvent, value?: React.ReactText) {
-    console.log('menu change', { value, target: evt.target })
     const innerText = (evt.currentTarget as HTMLElement).innerText
     const newLabel = value === innerText ? value : innerText
     setSelectedValue(value)
