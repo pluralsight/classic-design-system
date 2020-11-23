@@ -3,11 +3,11 @@ import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React, { forwardRef, ReactText } from 'react'
 
 interface DropdownInputProps extends HTMLPropsFor<'input'> {
+  activeItemId?: string
   disabled?: boolean
   isOpen: boolean
   labelId: string
   menuId: string
-  selectedItemId?: string
   selectedLabel?: string
   selectedValue?: ReactText
 }
@@ -16,11 +16,11 @@ export const Input = forwardRef<HTMLInputElement, DropdownInputProps>(
   (
     // TODO: rename labelId to inputId
     {
+      activeItemId,
       disabled,
       isOpen,
       labelId,
       menuId,
-      selectedItemId,
       selectedLabel,
       selectedValue,
       ...rest
@@ -38,7 +38,7 @@ export const Input = forwardRef<HTMLInputElement, DropdownInputProps>(
           aria-haspopup="listbox"
           aria-expanded={isOpen}
           aria-controls={menuId}
-          aria-activedescendant={selectedItemId}
+          aria-activedescendant={activeItemId}
           {...rest}
         />
       </ScreenReaderOnly>

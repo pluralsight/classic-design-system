@@ -12,7 +12,7 @@ import {
 } from 'react'
 import { canUseDOM } from 'exenv'
 import {
-  useUniqueId,
+  uniqueId,
   useMenuRef,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -105,30 +105,32 @@ export const useDropdown = (
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
 
+  const labelId = useMemo(() => uniqueId('dropdown-label-'), [])
+  const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
+
   const itemMatchingValue = useMemo(() => {
-    return findMatchingActionMenuItem(hook.menu, hook.value)
+    return findSelectedMenuItem(hook.menu, hook.value)
   }, [hook.menu, hook.value])
+  const [activeItemId, setActiveItemId] = useState<string | undefined>(
+    formatItemId(
+      menuId,
+      itemMatchingValue ? itemMatchingValue.props.value : undefined,
+      itemMatchingValue ? itemMatchingValue.props.children : undefined
+    )
+  )
 
   const [selectedLabel, setSelectedLabel] = useState(
     itemMatchingValue ? itemMatchingValue.props.children : null
   )
   const [selectedValue, setSelectedValue] = useState(hook.value)
 
-  const labelId = useUniqueId('dropdown-label-')
-  const menuId = useUniqueId('dropdown-menu-')
-  // TODO: rm
-  const [selectedItemId, setSelectedItemId] = useState(
-    selectedValue || selectedLabel
-      ? `${menuId}${selectedValue || selectedLabel}`
-      : undefined
-  )
-
   useEffect(() => {
     const newLabel = itemMatchingValue ? itemMatchingValue.props.children : null
     const newValue = hook.value
     setSelectedLabel(newLabel)
     setSelectedValue(newValue)
-    setSelectedItemId(newValue || newLabel)
+    // TODO: verify don't have to refind/setActiveItemId because itemMatchingValue was regen'ed
+    /* setSelectedItemId(newValue || newLabel) */
   }, [itemMatchingValue, hook.value])
 
   function handleToggleOpen(evt) {
@@ -236,11 +238,11 @@ export const useDropdown = (
     },
     input: {
       ...rest.input,
+      activeItemId,
       isOpen,
       labelId,
       menuId,
       ref: inputRef,
-      selectedItemId,
       selectedLabel,
       selectedValue
     },
@@ -281,7 +283,8 @@ export const useDropdown = (
   }
 }
 
-export function findMatchingActionMenuItem(menu?, value?) {
+// TODO: type better
+export function findSelectedMenuItem(menu?, value?) {
   if (!menu || !value) return
 
   const items = Array.isArray(menu)
@@ -294,7 +297,7 @@ export function findMatchingActionMenuItem(menu?, value?) {
     matchingItem = nestedMenus.reduce((found, nested) => {
       if (found) return found
 
-      return findMatchingActionMenuItem(nested, value)
+      return findSelectedMenuItem(nested, value)
     }, undefined)
   }
 
@@ -306,6 +309,8 @@ export function formatItemId(
   value?: string | number,
   label?: string
 ) {
+  if (!value && !label) return
+
   const formattedLabel =
     typeof label === 'string'
       ? label.toString().replace(' ', '')

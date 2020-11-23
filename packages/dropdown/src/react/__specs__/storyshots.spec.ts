@@ -5,7 +5,7 @@ import initStoryshots, {
 
 jest.mock('@pluralsight/ps-design-system-util', () => ({
   ...jest.requireActual('@pluralsight/ps-design-system-util'),
-  useUniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id')
+  uniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id')
 }))
 
 const createNodeMock = () => document.createElement('div')

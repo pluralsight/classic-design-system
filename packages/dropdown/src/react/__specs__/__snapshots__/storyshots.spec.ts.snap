@@ -16,7 +16,6 @@ exports[`Storyshots appearance default w/ error 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -113,7 +112,6 @@ exports[`Storyshots appearance gaps 1`] = `
         data-css-6wu9td=""
       >
         <input
-          aria-activedescendant={null}
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
@@ -188,7 +186,6 @@ exports[`Storyshots appearance gaps 1`] = `
         data-css-6wu9td=""
       >
         <input
-          aria-activedescendant={null}
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
@@ -282,7 +279,6 @@ exports[`Storyshots appearance gaps 1`] = `
         data-css-6wu9td=""
       >
         <input
-          aria-activedescendant={null}
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
@@ -357,7 +353,6 @@ exports[`Storyshots appearance gaps 1`] = `
         data-css-6wu9td=""
       >
         <input
-          aria-activedescendant={null}
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
@@ -456,7 +451,6 @@ exports[`Storyshots appearance medium default 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -538,7 +532,6 @@ exports[`Storyshots appearance medium subtle 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -620,7 +613,6 @@ exports[`Storyshots appearance small default 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -702,7 +694,6 @@ exports[`Storyshots appearance small subtle 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -782,7 +773,6 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1057,7 +1047,6 @@ exports[`Storyshots disabled compare 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant={null}
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -1139,7 +1128,6 @@ exports[`Storyshots disabled compare 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant={null}
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -1227,7 +1215,6 @@ exports[`Storyshots focus autofocus with ref 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1305,7 +1292,6 @@ exports[`Storyshots focus disabled 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1385,7 +1371,6 @@ exports[`Storyshots focus onBlur 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1464,7 +1449,6 @@ exports[`Storyshots focus onFocus 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1541,7 +1525,6 @@ exports[`Storyshots labels all 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1626,7 +1609,6 @@ exports[`Storyshots labels label 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1702,7 +1684,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1785,7 +1766,6 @@ exports[`Storyshots labels none 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1863,7 +1843,6 @@ exports[`Storyshots labels placeholder 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -1945,7 +1924,6 @@ exports[`Storyshots labels subLabel 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -2042,7 +2020,7 @@ exports[`Storyshots layouts custom width 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant="two"
+        aria-activedescendant="dropdown-menu-unique-id-two"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -2119,7 +2097,7 @@ exports[`Storyshots layouts custom width 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant="two"
+        aria-activedescendant="dropdown-menu-unique-id-two"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -2214,7 +2192,6 @@ exports[`Storyshots layouts full width 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant={null}
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -2293,7 +2270,6 @@ exports[`Storyshots layouts full width 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant={null}
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -2391,7 +2367,6 @@ exports[`Storyshots layouts full width 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant={null}
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -2470,7 +2445,6 @@ exports[`Storyshots layouts full width 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant={null}
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -2583,7 +2557,6 @@ exports[`Storyshots layouts right-aligned 1`] = `
         data-css-6wu9td=""
       >
         <input
-          aria-activedescendant={null}
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
@@ -2673,7 +2646,6 @@ exports[`Storyshots menu divider 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -2753,7 +2725,6 @@ exports[`Storyshots menu in stack 1`] = `
         data-css-6wu9td=""
       >
         <input
-          aria-activedescendant={null}
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
@@ -2832,7 +2803,6 @@ exports[`Storyshots menu in stack 1`] = `
         data-css-6wu9td=""
       >
         <input
-          aria-activedescendant={null}
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
           aria-haspopup="listbox"
@@ -2914,7 +2884,6 @@ exports[`Storyshots menu max height 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -2992,7 +2961,6 @@ exports[`Storyshots menu nested 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3072,7 +3040,6 @@ exports[`Storyshots menu onClicks 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3171,7 +3138,6 @@ exports[`Storyshots menu single list 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3249,7 +3215,6 @@ exports[`Storyshots menu single list w/ icon 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3329,7 +3294,6 @@ exports[`Storyshots menu super long 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3407,7 +3371,6 @@ exports[`Storyshots menu w/ longer nested menu item label 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3485,7 +3448,6 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3565,7 +3527,6 @@ exports[`Storyshots menu w/ subLabel 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3648,7 +3609,7 @@ exports[`Storyshots menu w/ value 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant="three-1"
+      aria-activedescendant="dropdown-menu-unique-id-three-1"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3741,7 +3702,6 @@ exports[`Storyshots portal position 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant={null}
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -3821,7 +3781,6 @@ exports[`Storyshots props whitelist title 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant={null}
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3902,7 +3861,7 @@ exports[`Storyshots value shows pre-selected item 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant="h"
+      aria-activedescendant="dropdown-menu-unique-id-h"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
       aria-haspopup="listbox"
@@ -3998,7 +3957,7 @@ exports[`Storyshots whitelist clear 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant="two"
+        aria-activedescendant="dropdown-menu-unique-id-two"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"
@@ -4090,7 +4049,7 @@ exports[`Storyshots whitelist onChange 1`] = `
       data-css-6wu9td=""
     >
       <input
-        aria-activedescendant="two"
+        aria-activedescendant="dropdown-menu-unique-id-two"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
         aria-haspopup="listbox"

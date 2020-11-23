@@ -1,21 +1,21 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import React from 'react'
 
-import { findMatchingActionMenuItem } from '..'
+import { findSelectedMenuItem } from '..'
 
 describe('#findMatchingActionMenuItem', () => {
   it('returns undefined for undefined menu', () => {
-    const item = findMatchingActionMenuItem()
+    const item = findSelectedMenuItem()
     expect(item).toBeUndefined()
   })
 
   it('returns undefined for empty menu', () => {
-    const item = findMatchingActionMenuItem(<ActionMenu />, 'findme')
+    const item = findSelectedMenuItem(<ActionMenu />, 'findme')
     expect(item).toBeUndefined()
   })
 
   it('returns undefined for unmatchable menu', () => {
-    const item = findMatchingActionMenuItem(
+    const item = findSelectedMenuItem(
       <ActionMenu>
         <ActionMenu.Item value="diff">Different</ActionMenu.Item>
       </ActionMenu>,
@@ -26,7 +26,7 @@ describe('#findMatchingActionMenuItem', () => {
 
   it('returns item for matched first-level option', () => {
     const toFind = <ActionMenu.Item value="findme">Find Me</ActionMenu.Item>
-    const item = findMatchingActionMenuItem(
+    const item = findSelectedMenuItem(
       <ActionMenu>
         <ActionMenu.Item value="diff">Different</ActionMenu.Item>
         {toFind}
@@ -40,7 +40,7 @@ describe('#findMatchingActionMenuItem', () => {
 
   it('returns item for matched 2nd-level option', () => {
     const toFind = <ActionMenu.Item value="findme">Find Me</ActionMenu.Item>
-    const item = findMatchingActionMenuItem(
+    const item = findSelectedMenuItem(
       <ActionMenu>
         <ActionMenu.Item value="diff">Different</ActionMenu.Item>
         <ActionMenu.Item
