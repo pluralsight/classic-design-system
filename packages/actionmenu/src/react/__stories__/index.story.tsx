@@ -500,16 +500,3 @@ storiesOf('onClose', module).add('toggle show/hide', () => {
 
   return <Story />
 })
-
-storiesOf('form children', module).add('input', () => {
-  const handleKeyDown: React.KeyboardEventHandler = e => {
-    e.stopPropagation()
-  }
-  return (
-    <ActionMenu>
-      <ActionMenu.Item>
-        <input onKeyDown={handleKeyDown} />
-      </ActionMenu.Item>
-    </ActionMenu>
-  )
-})

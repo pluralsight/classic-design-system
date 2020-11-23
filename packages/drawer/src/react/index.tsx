@@ -7,30 +7,31 @@ import React, {
 } from 'react'
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { useTheme, names as themeNames } from '@pluralsight/ps-design-system-theme'
 import {
   useToggle,
   RefFor,
-  HTMLPropsFor
+  HTMLPropsFor,
+  ValueOf
 } from '@pluralsight/ps-design-system-util'
 
 import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import stylesheet from '../css'
 
 const styles = {
-  head: (themeName: string, isOpen: boolean) =>
+  head: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>
     css(
       stylesheet[`.psds-drawer__summary`],
       isOpen && stylesheet['.psds-drawer__summary.psds-drawer--isOpen'],
       stylesheet[`.psds-drawer__summary.psds-theme--${themeName}`]
     ),
-  body: (themeName: string) =>
+  body: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['.psds-drawer__details'],
       stylesheet[`.psds-drawer__details.psds-theme--${themeName}`]
     ),
   iconSlot: () => css(stylesheet['.psds-drawer__icon-slot']),
-  rotatable: (themeName: string, isOpen: boolean) =>
+  rotatable: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>
     css(
       stylesheet['.psds-drawer__rotatable'],
       stylesheet[`.psds-drawer__rotatable.psds-theme--${themeName}`],
