@@ -105,7 +105,7 @@ export const useDropdown = (
 ) => {
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
-  const labelId = useMemo(() => uniqueId('dropdown-label-'), [])
+  const inputId = useMemo(() => uniqueId('dropdown-input-'), [])
   const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
 
   const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [
@@ -233,7 +233,7 @@ export const useDropdown = (
       ...rest.input,
       activeItemId: items[activeIndex]?.id,
       isOpen,
-      labelId,
+      inputId,
       onKeyDown: handleInputKeyDown,
       menuId,
       ref: inputRef,
@@ -242,7 +242,7 @@ export const useDropdown = (
     },
     label: {
       ...rest.label,
-      labelId
+      inputId
     },
     layout: rest.layout,
     menu: {

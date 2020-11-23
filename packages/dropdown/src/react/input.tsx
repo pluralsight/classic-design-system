@@ -6,7 +6,7 @@ interface DropdownInputProps extends HTMLPropsFor<'input'> {
   activeItemId?: string
   disabled?: boolean
   isOpen: boolean
-  labelId: string
+  inputId: string
   menuId: string
   selectedLabel?: string
   selectedValue?: ReactText
@@ -14,12 +14,11 @@ interface DropdownInputProps extends HTMLPropsFor<'input'> {
 
 export const Input = forwardRef<HTMLInputElement, DropdownInputProps>(
   (
-    // TODO: rename labelId to inputId
     {
       activeItemId,
       disabled,
       isOpen,
-      labelId,
+      inputId,
       menuId,
       selectedLabel,
       selectedValue,
@@ -31,7 +30,7 @@ export const Input = forwardRef<HTMLInputElement, DropdownInputProps>(
     return (
       <ScreenReaderOnly key={value}>
         <input
-          id={labelId}
+          id={inputId}
           defaultValue={value}
           disabled={disabled}
           ref={ref}

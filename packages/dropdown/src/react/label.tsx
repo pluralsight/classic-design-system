@@ -5,7 +5,7 @@ import React, { FC, ReactNode } from 'react'
 
 import stylesheet from '../css'
 
-const styles = ({ themeName }) =>
+const styles = themeName =>
   compose(
     css(stylesheet['psds-dropdown__label']),
     css(stylesheet[`.psds-dropdown__label.psds-theme--${themeName}`])
@@ -13,14 +13,14 @@ const styles = ({ themeName }) =>
 
 interface LabelProps {
   label?: ReactNode
-  labelId: string
+  inputId: string
 }
 export const Label: FC<LabelProps> = props => {
   const themeName = useTheme()
   return (
-    <label htmlFor={props.labelId}>
+    <label htmlFor={props.inputId}>
       {props.label ? (
-        <span {...styles({ themeName })}>{props.label}</span>
+        <span {...styles(themeName)}>{props.label}</span>
       ) : (
         <ScreenReaderOnly as="span">Dropdown</ScreenReaderOnly>
       )}
