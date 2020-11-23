@@ -118,7 +118,7 @@ export const useDropdown = (
   const menuId = useUniqueId('dropdown-menu-')
   const [selectedItemId, setSelectedItemId] = useState(
     selectedValue || selectedLabel
-      ? menuId + (selectedValue || selectedLabel)
+      ? `${menuId}${selectedValue || selectedLabel}`
       : undefined
   )
 
@@ -133,8 +133,12 @@ export const useDropdown = (
   function handleToggleOpen(evt) {
     evt.preventDefault()
     evt.stopPropagation()
-    setOpen(!isOpen)
+    const newOpen = !isOpen
+    setOpen(newOpen)
     if (typeof hook.onClick === 'function') hook.onClick(evt)
+    if (newOpen && inputRef.current) {
+      inputRef.current.focus()
+    }
   }
 
   function handleKeyDown(evt: React.KeyboardEvent) {
@@ -150,6 +154,9 @@ export const useDropdown = (
     setSelectedLabel(newLabel)
     setOpen(false)
     if (typeof hook.onChange === 'function') hook.onChange(evt, value)
+    if (buttonRef.current) {
+      buttonRef.current.focus()
+    }
   }
 
   const menuRef = useMenuRef(!selectedValue)
@@ -203,16 +210,16 @@ export const useDropdown = (
   const longestMenuItemState = getLongestMenuLabelState()
   const [width, setWidth] = useState<React.ReactText>('auto')
 
-  const ref = useRef<HTMLButtonElement>()
-  useImperativeHandle(forwardedRef, () => ref.current)
+  const buttonRef = useRef<HTMLButtonElement>()
+  useImperativeHandle(forwardedRef, () => buttonRef.current)
 
   useLayoutEffect(() => {
-    const { current } = ref
+    if (!buttonRef.current) return
 
-    if (!current) return
-
-    setWidth(current.getBoundingClientRect().width)
+    setWidth(buttonRef.current.getBoundingClientRect().width)
   }, [])
+
+  const inputRef = useRef<HTMLInputElement>()
 
   const inNode = canUseDOM ? document.body : null
   const [menuPosition, setMenuPosition] = useState({ left: 0, top: 0 })
@@ -220,7 +227,7 @@ export const useDropdown = (
   return {
     button: {
       ...rest.button,
-      ref,
+      ref: buttonRef,
       isOpen,
       onClick: handleToggleOpen,
       setMenuPosition
@@ -230,6 +237,7 @@ export const useDropdown = (
       isOpen,
       labelId,
       menuId,
+      ref: inputRef,
       selectedItemId,
       selectedLabel,
       selectedValue
