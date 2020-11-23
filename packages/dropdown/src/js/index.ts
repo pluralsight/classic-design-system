@@ -325,7 +325,7 @@ interface ItemData {
   value?: string | number
 }
 
-const parseMenuChildren = (menuId: string, menu?): ItemData[] => {
+export const parseMenuChildren = (menuId: string, menu?): ItemData[] => {
   if (!menu) return []
 
   const items = Array.isArray(menu)
@@ -339,16 +339,12 @@ const parseMenuChildren = (menuId: string, menu?): ItemData[] => {
   }))
 }
 
-export function formatItemId(
+export const formatItemId = (
   menuId: string,
   value?: string | number,
   label?: string
-) {
+) => {
   if (!value && !label) return
 
-  const formattedLabel =
-    typeof label === 'string'
-      ? label.toString().replace(/ /g, '')
-      : 'unknownItemLabel'
-  return `${menuId}-${value || formattedLabel}`
+  return `${menuId}-${value || label.toString().replace(/ /g, '')}`
 }
