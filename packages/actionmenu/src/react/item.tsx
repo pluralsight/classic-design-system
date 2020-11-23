@@ -178,10 +178,10 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
         tabIndex={!disabled ? -1 : undefined}
       >
         <Wrapper {...styles.item({ hasSubMenu })} aria-haspopup={!!nested}>
-          <div className={className} {...styles.inner()}>
+          <span className={className} {...styles.inner()}>
             {children}
             {hasSubMenu && <Arrow />}
-          </div>
+          </span>
         </Wrapper>
 
         <ul
