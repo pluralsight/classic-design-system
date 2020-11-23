@@ -52,6 +52,11 @@ exports[`Storyshots drawer:rc controlled: external state 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -120,6 +125,11 @@ exports[`Storyshots drawer:rc controlled: open with button only 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -183,6 +193,11 @@ exports[`Storyshots drawer:rc controlled: start open 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Expanded
+      </div>
     </div>
   </div>
   <div
@@ -245,6 +260,11 @@ exports[`Storyshots drawer:rc default 1`] = `
             d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
+      </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
       </div>
     </div>
   </div>
@@ -408,6 +428,11 @@ exports[`Storyshots drawer:rc row component with actions 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -472,6 +497,11 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
             />
           </svg>
         </div>
+        <div
+          data-css-6wu9td=""
+        >
+          Collapsed
+        </div>
       </div>
     </div>
     <div
@@ -524,6 +554,11 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
             />
           </svg>
         </div>
+        <div
+          data-css-6wu9td=""
+        >
+          Collapsed
+        </div>
       </div>
     </div>
     <div
@@ -575,6 +610,11 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
               d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
+        </div>
+        <div
+          data-css-6wu9td=""
+        >
+          Collapsed
         </div>
       </div>
     </div>
@@ -641,6 +681,11 @@ exports[`Storyshots drawer:rc stack of non-sibling drawers 1`] = `
             />
           </svg>
         </div>
+        <div
+          data-css-6wu9td=""
+        >
+          Collapsed
+        </div>
       </div>
     </div>
     <div
@@ -695,6 +740,11 @@ exports[`Storyshots drawer:rc stack of non-sibling drawers 1`] = `
             />
           </svg>
         </div>
+        <div
+          data-css-6wu9td=""
+        >
+          Collapsed
+        </div>
       </div>
     </div>
     <div
@@ -748,6 +798,11 @@ exports[`Storyshots drawer:rc stack of non-sibling drawers 1`] = `
               d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
+        </div>
+        <div
+          data-css-6wu9td=""
+        >
+          Collapsed
         </div>
       </div>
     </div>
@@ -813,6 +868,11 @@ exports[`Storyshots drawer:rc using custom aria label 1`] = `
             d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
+      </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
       </div>
     </div>
   </div>
@@ -936,6 +996,11 @@ exports[`Storyshots drawer:rc with row component 1`] = `
             d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
+      </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
       </div>
     </div>
   </div>

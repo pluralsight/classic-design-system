@@ -1281,6 +1281,11 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -1408,6 +1413,11 @@ exports[`Storyshots drawer mulitple 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -1450,6 +1460,11 @@ exports[`Storyshots drawer mulitple 1`] = `
             d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
+      </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
       </div>
     </div>
   </div>
@@ -1515,6 +1530,11 @@ exports[`Storyshots drawer nested table 1`] = `
             d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
+      </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Expanded
       </div>
     </div>
   </div>
@@ -1649,6 +1669,11 @@ exports[`Storyshots drawer single 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -1715,6 +1740,11 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -1773,6 +1803,11 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
           />
         </svg>
       </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
     </div>
   </div>
   <div
@@ -1830,6 +1865,11 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
             d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
+      </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
       </div>
     </div>
   </div>

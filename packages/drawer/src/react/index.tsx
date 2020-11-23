@@ -7,6 +7,7 @@ import React, {
 } from 'react'
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import {
   useTheme,
   names as themeNames
@@ -81,6 +82,7 @@ const Summary = forwardRef<HTMLDivElement, SummaryProps>(
         {children}
         <div {...styles.iconSlot()}>
           <CaretDownIcon {...styles.rotatable(themeName, isOpen)} />
+          <ScreenReaderOnly>{ isOpen ? 'Expanded' : 'Collapsed'}</ScreenReaderOnly>
         </div>
       </div>
     )
