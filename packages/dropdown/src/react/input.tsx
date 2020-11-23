@@ -35,6 +35,7 @@ export const Input = forwardRef<HTMLInputElement, DropdownInputProps>(
           defaultValue={value}
           disabled={disabled}
           ref={ref}
+          tabIndex={-1}
           aria-haspopup="listbox"
           aria-expanded={isOpen}
           aria-controls={menuId}

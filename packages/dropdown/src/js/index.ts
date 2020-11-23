@@ -16,6 +16,7 @@ import { uniqueId, ValueOf } from '@pluralsight/ps-design-system-util'
 import * as vars from '../vars'
 
 interface DropdownContextValue {
+  activeValue?: number | string
   menuId?: string
   selectedValue?: number | string
 }
@@ -107,6 +108,10 @@ export const useDropdown = (
   const itemMatchingValue = useMemo(() => {
     return findSelectedMenuItem(hook.menu, hook.value)
   }, [hook.menu, hook.value])
+
+  const [activeValue, setActiveValue] = useState<string | undefined>(
+    itemMatchingValue ? itemMatchingValue.props.value : undefined
+  )
   const [activeItemId, setActiveItemId] = useState<string | undefined>(
     formatItemId(
       menuId,
@@ -129,21 +134,20 @@ export const useDropdown = (
     /* setSelectedItemId(newValue || newLabel) */
   }, [itemMatchingValue, hook.value])
 
-  function handleToggleOpen(evt) {
+  function handleButtonClick(evt) {
     evt.preventDefault()
     evt.stopPropagation()
     const newOpen = !isOpen
     setOpen(newOpen)
-    if (typeof hook.onClick === 'function') hook.onClick(evt)
-    console.log('toggling open', { newOpen, inputRef: inputRef.current })
     if (newOpen && inputRef.current) {
-      console.log('focusing input')
       inputRef.current.focus()
     }
+    if (typeof hook.onClick === 'function') hook.onClick(evt)
   }
 
   function handleInputKeyDown(evt: React.KeyboardEvent) {
-    console.log({ key: evt.key })
+    evt.preventDefault()
+    console.log({ target: evt.target, key: evt.key })
     if (evt.key === 'ArrowDown') {
       setOpen(true)
     }
@@ -230,7 +234,7 @@ export const useDropdown = (
       ...rest.button,
       ref: buttonRef,
       isOpen,
-      onClick: handleToggleOpen,
+      onClick: handleButtonClick,
       setMenuPosition
     },
     input: {
@@ -269,6 +273,7 @@ export const useDropdown = (
     subLabel: rest.subLabel,
     value: {
       value: {
+        activeValue,
         menuId,
         selectedValue
       }
