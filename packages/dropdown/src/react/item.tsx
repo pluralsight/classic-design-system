@@ -1,13 +1,7 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import React, {
-  forwardRef,
-  useContext,
-  useEffect,
-  useRef,
-  useImperativeHandle
-} from 'react'
+import React, { forwardRef, useContext } from 'react'
 import { css } from 'glamor'
 
 import stylesheet from '../css'
@@ -31,15 +25,6 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
     const selectedValue = context.selectedValue
     const showSelectedValue = value && selectedValue === value
 
-    const ref = useRef<HTMLLIElement>()
-    useImperativeHandle(forwardedRef, () => ref.current)
-
-    useEffect(() => {
-      if (showSelectedValue && ref.current) {
-        ref.current.focus()
-      }
-    }, [showSelectedValue])
-
     return (
       <ActionMenu.Item
         tagName="button"
@@ -47,7 +32,7 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
         nested={menu}
         {...rest}
         id={formatItemId(menuId, value, children as string)}
-        ref={ref}
+        ref={forwardedRef}
       >
         <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
         <ActionMenu.Ellipsis {...styles.text}>{children}</ActionMenu.Ellipsis>

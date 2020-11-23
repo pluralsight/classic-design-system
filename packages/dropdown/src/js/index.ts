@@ -11,11 +11,7 @@ import {
   useState
 } from 'react'
 import { canUseDOM } from 'exenv'
-import {
-  uniqueId,
-  useMenuRef,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { uniqueId, ValueOf } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -139,12 +135,15 @@ export const useDropdown = (
     const newOpen = !isOpen
     setOpen(newOpen)
     if (typeof hook.onClick === 'function') hook.onClick(evt)
+    console.log('toggling open', { newOpen, inputRef: inputRef.current })
     if (newOpen && inputRef.current) {
+      console.log('focusing input')
       inputRef.current.focus()
     }
   }
 
-  function handleKeyDown(evt: React.KeyboardEvent) {
+  function handleInputKeyDown(evt: React.KeyboardEvent) {
+    console.log({ key: evt.key })
     if (evt.key === 'ArrowDown') {
       setOpen(true)
     }
@@ -161,8 +160,6 @@ export const useDropdown = (
       buttonRef.current.focus()
     }
   }
-
-  const menuRef = useMenuRef(!selectedValue)
 
   // TODO: move to top-level function
   function getLongestMenuLabelState() {
@@ -241,6 +238,7 @@ export const useDropdown = (
       activeItemId,
       isOpen,
       labelId,
+      onKeyDown: handleInputKeyDown,
       menuId,
       ref: inputRef,
       selectedLabel,
@@ -250,11 +248,7 @@ export const useDropdown = (
       ...rest.label,
       labelId
     },
-    layout: {
-      ...rest.layout,
-      // TODO: move to input
-      onKeyDown: handleKeyDown
-    },
+    layout: rest.layout,
     menu: {
       ...rest.menu,
       inNode,
@@ -265,7 +259,6 @@ export const useDropdown = (
       onClose: () => {
         setOpen(false)
       },
-      ref: menuRef,
       width
     },
     selected: {

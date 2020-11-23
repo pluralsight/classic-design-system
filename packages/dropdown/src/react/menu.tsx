@@ -27,6 +27,7 @@ interface DropdownMenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
   selectedItemId?: string
   width: React.ReactText
 }
+// TODO: rm forwardRef?
 export const Menu = forwardRef<HTMLUListElement, DropdownMenuProps>(
   (props, ref) => {
     return (
@@ -37,7 +38,6 @@ export const Menu = forwardRef<HTMLUListElement, DropdownMenuProps>(
           <ActionMenu
             {...styles.menu}
             onClick={props.onClick}
-            ref={ref}
             role="listbox"
             onClose={props.onClose}
             style={{
