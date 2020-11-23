@@ -1,6 +1,6 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import React, { forwardRef, useContext } from 'react'
 import { css } from 'glamor'
 
@@ -32,7 +32,7 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
         nested={menu}
         {...rest}
         id={formatItemId(context.menuId, value, children as string)}
-        ref={forwardedRef}
+        ref={forwardedRef as RefFor<'li'>}
       >
         <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
         <ActionMenu.Ellipsis {...styles.text}>{children}</ActionMenu.Ellipsis>
