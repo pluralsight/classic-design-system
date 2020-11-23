@@ -7,13 +7,17 @@ import Drawer from '@pluralsight/ps-design-system-drawer'
 
 # Drawer
 
+<Intro>
+  The Drawer can be used as an uncontrolled or controlled component. It consist
+  of two subcomponents Summary and Details. The top-level component Drawer is headless.
+  It's puporse is to supply context and cordinate the subcomponents.
+</Intro>
+
 <TableOfContents {...props} />
 
-## Examples
+## Examples: uncontrolled
 
-### Adaptive size
-
-A drawer as well as its expanded region can be wrapped around other components and adapt to their size.
+Use when there is no need to modify open state or hook into onToggle callback.
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
@@ -25,20 +29,20 @@ import React from 'react'
 
 function Example() {
   return (
-    <>
-      <Drawer base={<ExampleDrawerBase />}>
-        <ExampleDrawerPanel />
-      </Drawer>
-      <Drawer startOpen base={<ExampleDrawerBase />}>
-        <ExampleDrawerPanel />
-      </Drawer>
-    </>
+    <Drawer>
+      <Drawer.Summary>
+        <ExampleDrawerSummary />
+      </Drawer.Summary>
+      <Drawer.Details>
+        <ExampleDrawerDetails />
+      </Drawer.Details>
+    </Drawer>
   )
 }
 
 export default Example
 
-const ExampleDrawerBase = () => (
+const ExampleDrawerSummary = () => (
   <div>
     <Row
       title="Building a Web App with ASP.NET Core"
@@ -46,7 +50,7 @@ const ExampleDrawerBase = () => (
       metadata1={['Joe Eames', 'Intermediate', 'Jul 21, 2016']}
       image={<div className="image-placeholder" />}
     />
-    <style jsx>{`
+    <style>{`
       .image-placeholder {
         width: 100%;
         height: 100%;
@@ -56,7 +60,7 @@ const ExampleDrawerBase = () => (
   </div>
 )
 
-const ExampleDrawerPanel = () => (
+const ExampleDrawerDetails = () => (
   <div className="drawer-panel-example">
     <Row
       title="Course Overview"
@@ -86,7 +90,7 @@ const ExampleDrawerPanel = () => (
       size={Row.sizes.small}
       actionBarVisible
     />
-    <style jsx>{`
+    <style>{`
       .drawer-panel-example {
         padding: ${layout.spacingXLarge} ${layout.spacingXLarge}
           ${layout.spacingMedium} ${layout.spacingXLarge};
@@ -96,9 +100,13 @@ const ExampleDrawerPanel = () => (
 )
 ```
 
-### Drawer base
-
-The DrawerBase may expand to fit any elements, and includes the mechanism to expose the DrawerPanel.
+### Drawer Subcomponents
+Styles can be overridden with inline styles or by passing it a new className to either node
+**Drawer.Summary**
+- Default display is `inline-flex`.
+  - To center align a child to the right pass it `margin-left: auto` style.
+**Drawer.Details**
+- Default display is `block`
 
 ```typescript
 import { colorsPink, type } from '@pluralsight/ps-design-system-core'
@@ -109,8 +117,13 @@ import React from 'react'
 
 function Example() {
   return (
-    <Drawer startOpen base={<PinkBox>DrawerBase</PinkBox>}>
-      <div style={{ height: 128 }} />
+    <Drawer>
+      <Drawer.Summary>
+        <PinkBox>Drawer Summary</PinkBox>
+      </Drawer.Summary>
+      <Drawer.Details>
+        <div style={{ height: 128 }} />
+      </Drawer.Details>
     </Drawer>
   )
 }
@@ -118,12 +131,9 @@ function Example() {
 export default Example
 
 const PinkBox = props => (
-  <div
-    className="pink-box"
-    style={{ height: props.children === 'DrawerBase' ? 100 : 128 }}
-  >
+  <div className="pink-box">
     <span>{`<${props.children}>`}</span>
-    <style jsx>{`
+    <style>{`
       .pink-box {
         display: flex;
         align-items: center;
@@ -132,52 +142,109 @@ const PinkBox = props => (
         color: ${colorsPink[6]};
         font-size: 16px;
         font-family: ${type.fontFamilyCode};
+        margin-left: auto
       }
     `}</style>
   </div>
 )
 ```
 
-### Drawer panel
-
-The DrawerPanel may expand to fit any elements. No default spacing is built in.
+### Custom layout
+If you wish to for example customize the header or body 
+you can make use of the useDrawerContext hook to provide your own 
+Drawer sub-components.
 
 ```typescript
-import { colorsPink, type } from '@pluralsight/ps-design-system-core'
-import Drawer from '@pluralsight/ps-design-system-drawer'
-import { BookmarkIcon } from '@pluralsight/ps-design-system-icon'
-import Row from '@pluralsight/ps-design-system-row'
+import Drawer, { useDrawerContext } from '@pluralsight/ps-design-system-drawer'
+import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
+
+const CustomSummary = ({ children }) => {
+  const { isOpen, onToggle } = useDrawerContext()
+  return (
+    <Heading size={Heading.sizes.medium}>
+      <h2 onClick={onToggle} style={{marginBottom: 0, paddingBottom: 16}}>{children}</h2>
+    </Heading>
+  )
+}
 
 function Example() {
   return (
-    <Drawer startOpen base={<div style={{ height: 100 }} />}>
-      <PinkBox>DrawerPanel</PinkBox>
+    <Drawer>
+      <CustomSummary>Click to open</CustomSummary>
+      <Drawer.Details>
+        <div style={{ height: 128 }} />
+      </Drawer.Details>
     </Drawer>
   )
 }
 
 export default Example
 
-const PinkBox = props => (
-  <div
-    className="pink-box"
-    style={{ height: props.children === 'DrawerBase' ? 100 : 128 }}
-  >
-    <span>{`<${props.children}>`}</span>
-    <style jsx>{`
-      .pink-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px dashed ${colorsPink[6]};
-        color: ${colorsPink[6]};
-        font-size: 16px;
-        font-family: ${type.fontFamilyCode};
-      }
-    `}</style>
-  </div>
-)
+```
+
+## Examples: controlled
+Use when there is a need to modify open state or hook into onToggle callback.
+The Drawer only takes two props to take control of toggle microinteraction, (**onToggle**, **isOpen**).
+
+
+### Mount drawer open (AKA startOpen)
+
+```typescript
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import {P} from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example = () => {
+  const [open, setOpen] = useState(true)
+  const handleToggle = (e) => {
+    /** custom logic **/
+    setOpen(!open)
+  }
+  return (
+    <Drawer onToggle={handleToggle} isOpen={open}>
+      <Drawer.Summary>
+        <P style={{ padding: '10px 0', margin: 0 }}>Click me to open</P>
+      </Drawer.Summary>
+      <Drawer.Details>
+        <P style={{ padding: '10px 0', margin: 0 }}>Drawer Content here</P>
+      </Drawer.Details>
+    </Drawer>
+  )
+}
+
+export default Example
+```
+
+### Prevent clicking on `<Drawer.Summary />` from opening `<Drawer />`
+
+```typescript 
+import Drawer from '@pluralsight/ps-design-system-drawer'
+import {P} from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example = () => {
+  const [open, setOpen] = useState(false)
+  const handleToggle = (e) => {
+    /** custom logic **/
+    setOpen(!open)
+  }
+  return (
+    <>
+      <button onClick={handleToggle}>toggle drawer</button>
+      <Drawer isOpen={open}>
+        <Drawer.Summary>
+          <P style={{ padding: '10px 0', margin: 0 }}>Clicking me won't toggle drawer</P>
+        </Drawer.Summary>
+        <Drawer.Details>
+          <P style={{ padding: '10px 0', margin: 0 }}>Drawer Content here</P>
+        </Drawer.Details>
+      </Drawer>
+    </>
+  )
+}
+
+ export default Example
 ```
 
 ## Usage & Types
@@ -189,37 +256,16 @@ const PinkBox = props => (
   version={props.version}
 />
 
+### Drawer
 <TypesTable>
-  <TypesProp
-    name="base"
-    required
-    type="React.ReactNode"
-    desc="content the drawer slides out from"
-  />
   <TypesProp
     name="children"
     type="React.ReactNode"
     desc="content inside the drawer"
   />
   <TypesProp
-    name="isOpen"
-    type="boolean"
-    desc="override for controlling internal drawer state"
-  />
-  <TypesProp
     name="onToggle"
-    type="(boolean, Event) => void"
+    type="() => void"
     desc="triggered when the drawer opens or closes"
-  />
-  <TypesProp
-    name="startOpen"
-    type="boolean"
-    desc="drawer is open on first render"
-    default="false"
-  />
-  <TypesProp
-    name="toggleButtonAriaLabel"
-    type="string"
-    desc="custom label for drawer toggle for screenreaders"
   />
 </TypesTable>

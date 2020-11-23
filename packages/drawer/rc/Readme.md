@@ -6,19 +6,19 @@ New api for Drawer component allows simpler use as uncontrolled or controlled co
 Use when there is no need to modify open state or hook into onToggle callback.
 
 ### Usage
-Drawer controls opening and closing by clicking on drawer head analytics callbacks and props can be passed to `<Drawer />` tag.
+Drawer controls opening and closing by clicking on drawer summary analytics callbacks and props can be passed to `<Drawer />` tag.
 ```jsx
 <Drawer>
-  <Drawer.Head>
+  <Drawer.Summary>
     <p>Click me to open</p>
-  </Drawer.Head>
-  <Drawer.Body>
+  </Drawer.Summary>
+  <Drawer.Details>
     <p>Drawer Content here</p>
-  </Drawer.Body>
+  </Drawer.Details>
 </Drawer>
 ```
 
-### <Drawer.Head />
+### <Drawer.Summary />
 
 - Default display is `inline-flex`.
   - To align  child to the right pass it `margin-left: auto` style.
@@ -52,12 +52,12 @@ const PrevenetHeadClick = () => {
     <>
       <button onClick={handleToggle}>toggle drawer</button>
       <Drawer isOpen={open}>
-        <Drawer.Head>
+        <Drawer.Summary>
           <p>Click me to open</p>
-        </Drawer.Head>
-        <Drawer.Body>
+        </Drawer.Summary>
+        <Drawer.Details>
           <p>Drawer Content here</p>
-        </Drawer.Body>
+        </Drawer.Details>
       </Drawer>
     </>
   )
@@ -76,18 +76,18 @@ const StartOpen = () => {
   }
   return (
     <Drawer onToggle={handleToggle} isOpen={open}>
-      <Drawer.Head>
+      <Drawer.Summary>
         <p>Click me to open</p>
-      </Drawer.Head>
-      <Drawer.Body>
+      </Drawer.Summary>
+      <Drawer.Details>
         <p>Drawer Content here</p>
-      </Drawer.Body>
+      </Drawer.Details>
     </Drawer>
   )
 }
 ```
 
-### Use case: prevent clicking on `<Drawer.Head />` from opening `<Drawer />`
+### Use case: prevent clicking on `<Drawer.Summary />` from opening `<Drawer />`
 
 ```jsx
 const PrevenetHeadClick = () => {
@@ -100,12 +100,12 @@ const PrevenetHeadClick = () => {
     <>
       <button onClick={handleToggle}>toggle drawer</button>
       <Drawer isOpen={open}>
-        <Drawer.Head>
+        <Drawer.Summary>
           <p>Clicking me won't toggle drawer</p>
-        </Drawer.Head>
-        <Drawer.Body>
+        </Drawer.Summary>
+        <Drawer.Details>
           <p>Drawer Content here</p>
-        </Drawer.Body>
+        </Drawer.Details>
       </Drawer>
     </>
   )

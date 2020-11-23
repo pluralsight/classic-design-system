@@ -257,7 +257,7 @@ export default Example
 
 Pass the `Drawer` component as a direct child of `Table` in order to expose
 additional content or controls in your UI. Pass the row's `Table.Row` to the
-`Drawer` `base` prop.
+`Drawer.Summary`.
 
 ```typescript
 import { colorsPink, type } from '@pluralsight/ps-design-system-core'
@@ -269,7 +269,7 @@ const PinkBox: React.FC = props => (
   <React.Fragment>
     <div className="pink-box">{props.children}</div>
 
-    <style jsx>{`
+    <style>{`
       .pink-box {
         display: flex;
         align-items: center;
@@ -284,43 +284,50 @@ const PinkBox: React.FC = props => (
   </React.Fragment>
 )
 
-const Example: React.FC = props => {
-  return (
-    <Table>
-      <Table.Row>
-        <Table.ColumnHeader>Column</Table.ColumnHeader>
-        <Table.ColumnHeader>Column</Table.ColumnHeader>
-        <Table.ColumnHeader>Column</Table.ColumnHeader>
-      </Table.Row>
-
-      <Drawer
-        startOpen
-        base={
-          <Table.Row>
-            <Table.Cell>Cell</Table.Cell>
-            <Table.Cell>Cell</Table.Cell>
-            <Table.Cell>Cell</Table.Cell>
-          </Table.Row>
-        }
-      >
-        <PinkBox>DrawerPanel</PinkBox>
-      </Drawer>
-
-      <Drawer
-        startOpen
-        base={
-          <Table.Row>
-            <Table.Cell>Cell</Table.Cell>
-            <Table.Cell>Cell</Table.Cell>
-            <Table.Cell>Cell</Table.Cell>
-          </Table.Row>
-        }
-      >
-        <PinkBox>DrawerPanel</PinkBox>
-      </Drawer>
-    </Table>
-  )
+const useStartOpen = () => {
+   const [isOpen, setOpen] = useState(true)
+  const onToggle = () => {
+    /** custom logic **/
+    setOpen(!isOpen)
+  }
+  return { isOpen, onToggle}
 }
+
+const Example: React.FC = props => (
+  <Table>
+    <Table.Row>
+      <Table.ColumnHeader>Column</Table.ColumnHeader>
+      <Table.ColumnHeader>Column</Table.ColumnHeader>
+      <Table.ColumnHeader>Column</Table.ColumnHeader>
+    </Table.Row>
+
+    <Drawer {...useStartOpen()}>
+      <Drawer.Summary>
+          <Table.Row>
+          <Table.Cell>Cell</Table.Cell>
+          <Table.Cell>Cell</Table.Cell>
+          <Table.Cell>Cell</Table.Cell>
+        </Table.Row>
+      </Drawer.Summary>
+      <Drawer.Details>
+        <PinkBox>Drawer Details</PinkBox>
+      </Drawer.Details>
+    </Drawer>
+
+    <Drawer{...useStartOpen()}>
+      <Drawer.Summary>
+          <Table.Row>
+          <Table.Cell>Cell</Table.Cell>
+          <Table.Cell>Cell</Table.Cell>
+          <Table.Cell>Cell</Table.Cell>
+        </Table.Row>
+      </Drawer.Summary>
+      <Drawer.Details>
+        <PinkBox>Drawer Details</PinkBox>
+      </Drawer.Details>
+    </Drawer>
+  </Table>
+)
 
 export default Example
 ```
@@ -333,25 +340,31 @@ import Drawer from '@pluralsight/ps-design-system-drawer'
 import Table from '@pluralsight/ps-design-system-table'
 import React from 'react'
 
-const Example: React.FC = props => {
-  return (
-    <Table>
-      <Table.Row>
-        <Table.ColumnHeader>Column</Table.ColumnHeader>
-        <Table.ColumnHeader>Column</Table.ColumnHeader>
-        <Table.ColumnHeader>Column</Table.ColumnHeader>
-      </Table.Row>
+const useStartOpen = () => {
+   const [isOpen, setOpen] = useState(true)
+  const onToggle = () => {
+    /** custom logic **/
+    setOpen(!isOpen)
+  }
+  return { isOpen, onToggle}
+}
 
-      <Drawer
-        startOpen
-        base={
+const Example: React.FC = props => (
+  <Table>
+    <Table.Row>
+      <Table.ColumnHeader>Column</Table.ColumnHeader>
+      <Table.ColumnHeader>Column</Table.ColumnHeader>
+      <Table.ColumnHeader>Column</Table.ColumnHeader>
+    </Table.Row>
+      <Drawer {...useStartOpen()}>
+      <Drawer.Summary>
           <Table.Row>
-            <Table.Cell>Cell</Table.Cell>
-            <Table.Cell>Cell</Table.Cell>
-            <Table.Cell>Cell</Table.Cell>
-          </Table.Row>
-        }
-      >
+          <Table.Cell>Cell</Table.Cell>
+          <Table.Cell>Cell</Table.Cell>
+          <Table.Cell>Cell</Table.Cell>
+        </Table.Row>
+      </Drawer.Summary>
+      <Drawer.Details>
         <Table inDrawer>
           <Table.Row>
             <Table.Cell>Nested Cell</Table.Cell>
@@ -369,10 +382,10 @@ const Example: React.FC = props => {
             <Table.Cell>Nested Cell</Table.Cell>
           </Table.Row>
         </Table>
-      </Drawer>
-    </Table>
-  )
-}
+      </Drawer.Details>
+    </Drawer>
+  </Table>
+)
 
 export default Example
 ```

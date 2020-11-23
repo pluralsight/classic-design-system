@@ -1,46 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
 import Drawer from '..'
 
 describe('Drawer', () => {
-  describe('when the arrow icons is clicked', () => {
-    it('toggles open/close', () => {
-      const { container } = render(
-        <Drawer base={<div />}>
-          <div />
+  describe('when uncontrolled', () => {
+    it('toggles open/close', async () => {
+      const { getByTestId } = render(
+        <Drawer>
+          <Drawer.Summary data-testid="head">
+            <p>Click me to open</p>
+          </Drawer.Summary>
+          <Drawer.Details data-testid="body">
+            <p>Drawer Content here</p>
+          </Drawer.Details>
         </Drawer>
       )
 
-      const btn = container.querySelector<HTMLButtonElement>('button')!
-      const contentWrapper = container.querySelector('[aria-hidden]')
-
+      const btn = getByTestId('head')
+      const contentWrapper = getByTestId('body')
+      expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
       fireEvent.click(btn)
       expect(contentWrapper).toHaveAttribute('aria-hidden', 'false')
-
       fireEvent.click(btn)
       expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
     })
   })
-
-  describe('when is controlled', () => {
-    it('isOpen toggles open/closed', () => {
-      const { container, rerender } = render(
-        <Drawer base={<div />} isOpen>
-          <div />
+  it('when controlled', () => {
+    const Controlled = () => {
+      const [open, setOpen] = useState(false)
+      return (
+        <Drawer onToggle={() => setOpen(!open)} isOpen={open}>
+          <Drawer.Summary data-testid="head">
+            <p>Click me to open</p>
+          </Drawer.Summary>
+          <Drawer.Details data-testid="body">
+            <p>Drawer Content here</p>
+          </Drawer.Details>
         </Drawer>
       )
-
-      const contentWrapper = container.querySelector('[aria-hidden]')
-      expect(contentWrapper).toHaveAttribute('aria-hidden', 'false')
-
-      rerender(
-        <Drawer base={<div />} isOpen={false}>
-          <div />
-        </Drawer>
-      )
-
-      expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
-    })
+    }
+    const { getByTestId } = render(<Controlled />)
+    const btn = getByTestId('head')
+    const contentWrapper = getByTestId('body')
+    expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
+    fireEvent.click(btn)
+    expect(contentWrapper).toHaveAttribute('aria-hidden', 'false')
+    fireEvent.click(btn)
+    expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
   })
 })

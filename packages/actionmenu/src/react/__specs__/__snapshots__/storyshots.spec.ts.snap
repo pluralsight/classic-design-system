@@ -752,6 +752,45 @@ exports[`Storyshots focus onMount example 1`] = `
 </ul>
 `;
 
+exports[`Storyshots form children input 1`] = `
+<ul
+  data-css-rls1dj=""
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  role="menu"
+>
+  <li
+    data-css-1a2slgk=""
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <a
+      aria-haspopup={false}
+      data-css-1v7ok0h=""
+      onClick={[Function]}
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <input
+          onKeyDown={[Function]}
+        />
+      </div>
+    </a>
+    <ul
+      aria-expanded={false}
+      data-css-kfdt74=""
+      onKeyDown={[Function]}
+      role="menu"
+    />
+  </li>
+</ul>
+`;
+
 exports[`Storyshots link a w/ href 1`] = `
 <ul
   data-css-rls1dj=""

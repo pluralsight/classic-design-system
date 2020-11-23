@@ -730,226 +730,192 @@ Array [
 `;
 
 exports[`Storyshots in drawer medium 1`] = `
-<div
-  data-css-knxp45=""
->
+Array [
   <div
-    data-css-k6dw9o=""
+    aria-expanded={false}
+    data-css-eueoca=""
     onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-euzj8=""
+      data-css-19vzw9x=""
     >
       <div
-        data-css-19vzw9x=""
+        data-css-js3ti3=""
       >
         <div
-          data-css-js3ti3=""
+          data-css-6x74ml=""
+        />
+      </div>
+      <div
+        data-css-kxulf3=""
+      >
+        <div
+          data-css-2pesz8=""
         >
-          <div
-            data-css-6x74ml=""
-          />
+          Course thing you do
         </div>
         <div
-          data-css-kxulf3=""
+          data-css-145nbth=""
         >
-          <div
-            data-css-2pesz8=""
+          <span
+            data-css-1kcrbi9=""
           >
-            Course thing you do
-          </div>
-          <div
-            data-css-145nbth=""
-          >
-            <span
-              data-css-1kcrbi9=""
-            >
-              1m 46s
-            </span>
-          </div>
+            1m 46s
+          </span>
         </div>
-        <div
-          data-css-7zyoug=""
+      </div>
+      <div
+        data-css-7zyoug=""
+      >
+        <button
+          data-css-kovzf5=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
         >
-          <button
-            data-css-kovzf5=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
+          <div
+            data-css-y80vay=""
           >
             <div
-              data-css-y80vay=""
+              data-css-7dab2f=""
             >
-              <div
-                data-css-7dab2f=""
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="more icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                />
+              </svg>
             </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-qs2rg7=""
-    >
-      <button
-        aria-label="Expand"
-        data-css-xkympi=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-1byjzqg=""
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-              />
-            </svg>
           </div>
-        </div>
-      </button>
-    </div>
-  </div>
-  <div
-    data-css-v1c8as=""
-  >
-    <div
-      aria-hidden={true}
-      data-css-1j3g0qd=""
-    >
-      <div>
-        some goodies in the drawer
+          <span
+            data-css-15b13by=""
+          />
+        </button>
       </div>
     </div>
-  </div>
-</div>
+    <div
+      data-css-17v14zz=""
+    >
+      <div
+        data-css-1h00rme=""
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>,
+  <div
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    <div>
+      some goodies in the drawer
+    </div>
+  </div>,
+]
 `;
 
 exports[`Storyshots in drawer small 1`] = `
-<div
-  data-css-knxp45=""
->
+Array [
   <div
-    data-css-k6dw9o=""
+    aria-expanded={false}
+    data-css-eueoca=""
     onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-euzj8=""
+      data-css-19vzw9x=""
     >
       <div
-        data-css-19vzw9x=""
+        data-css-1tiyrld=""
       >
         <div
-          data-css-1tiyrld=""
+          data-css-nu4y7h=""
         >
-          <div
-            data-css-nu4y7h=""
-          >
-            Course thing you do
-          </div>
-          <div
-            data-css-1b2ftmj=""
-          >
-            <span
-              data-css-1kcrbi9=""
-            >
-              1m 46s
-            </span>
-          </div>
+          Course thing you do
         </div>
         <div
-          data-css-7zyoug=""
+          data-css-1b2ftmj=""
         >
-          <button
-            data-css-kovzf5=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
+          <span
+            data-css-1kcrbi9=""
+          >
+            1m 46s
+          </span>
+        </div>
+      </div>
+      <div
+        data-css-7zyoug=""
+      >
+        <button
+          data-css-kovzf5=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
           >
             <div
-              data-css-y80vay=""
+              data-css-7dab2f=""
             >
-              <div
-                data-css-7dab2f=""
+              <svg
+                aria-label="more icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="more icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                />
+              </svg>
             </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-qs2rg7=""
-    >
-      <button
-        aria-label="Expand"
-        data-css-xkympi=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-1byjzqg=""
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-              />
-            </svg>
           </div>
-        </div>
-      </button>
-    </div>
-  </div>
-  <div
-    data-css-v1c8as=""
-  >
-    <div
-      aria-hidden={true}
-      data-css-1j3g0qd=""
-    >
-      <div>
-        some goodies in the drawer
+          <span
+            data-css-15b13by=""
+          />
+        </button>
       </div>
     </div>
-  </div>
-</div>
+    <div
+      data-css-17v14zz=""
+    >
+      <div
+        data-css-1h00rme=""
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>,
+  <div
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    <div>
+      some goodies in the drawer
+    </div>
+  </div>,
+]
 `;
 
 exports[`Storyshots metadata link 1`] = `

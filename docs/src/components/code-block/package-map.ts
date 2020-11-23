@@ -13,7 +13,7 @@ import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import DataWell from '@pluralsight/ps-design-system-datawell'
 import DatePicker from '@pluralsight/ps-design-system-datepicker'
 import Dialog from '@pluralsight/ps-design-system-dialog'
-import Drawer from '@pluralsight/ps-design-system-drawer'
+import Drawer, { useDrawerContext } from '@pluralsight/ps-design-system-drawer'
 import Dropdown, {
   useDropdown,
   DropdownContext
@@ -81,7 +81,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-datawell': { DataWell },
   '@pluralsight/ps-design-system-datepicker': { DatePicker },
   '@pluralsight/ps-design-system-dialog': { Dialog },
-  '@pluralsight/ps-design-system-drawer': { Drawer },
+  '@pluralsight/ps-design-system-drawer': { Drawer, useDrawerContext },
   '@pluralsight/ps-design-system-dropdown': {
     Dropdown,
     useDropdown,

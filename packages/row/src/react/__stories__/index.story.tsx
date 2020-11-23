@@ -393,8 +393,8 @@ storiesOf('fullOverlay', module)
 const drawerStory = storiesOf('in drawer', module)
 Object.values(Row.sizes).forEach(size =>
   drawerStory.add(size, () => (
-    <Drawer
-      base={
+    <Drawer>
+      <Drawer.Summary>
         <Row
           title="Course thing you do"
           metadata1={['1m 46s']}
@@ -411,9 +411,10 @@ Object.values(Row.sizes).forEach(size =>
           actionBarVisible
           size={size}
         />
-      }
-    >
-      <div>some goodies in the drawer</div>
+      </Drawer.Summary>
+      <Drawer.Details>
+        <div>some goodies in the drawer</div>
+      </Drawer.Details>
     </Drawer>
   ))
 )

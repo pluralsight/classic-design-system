@@ -1191,7 +1191,7 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
   role="table"
 >
   <div
-    data-css-lmjdxe=""
+    data-css-1km4byb=""
     role="row"
   >
     <div
@@ -1240,73 +1240,54 @@ exports[`Storyshots columnHeader w/ drawers 1`] = `
     </div>
   </div>
   <div
-    data-css-knxp45=""
+    aria-expanded={false}
+    data-css-eueoca=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-k6dw9o=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            cell text
-          </div>
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            cell2 text
-          </div>
-        </div>
+        cell text
       </div>
       <div
-        data-css-qs2rg7=""
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
       >
-        <button
-          aria-label="Expand"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1byjzqg=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        cell2 text
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={true}
-        data-css-1j3g0qd=""
+        data-css-1h00rme=""
+        data-css-7dab2f=""
       >
-        Panel contnet
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
       </div>
     </div>
+  </div>
+  <div
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    Details content
   </div>
 </div>
 `;
@@ -1393,128 +1374,90 @@ exports[`Storyshots drawer mulitple 1`] = `
   role="table"
 >
   <div
-    data-css-knxp45=""
+    aria-expanded={false}
+    data-css-eueoca=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-k6dw9o=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            wow
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-qs2rg7=""
-      >
-        <button
-          aria-label="Expand"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1byjzqg=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        wow
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={true}
-        data-css-1j3g0qd=""
+        data-css-1h00rme=""
+        data-css-7dab2f=""
       >
-        This is panel content
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
       </div>
     </div>
   </div>
   <div
-    data-css-knxp45=""
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    This is details content
+  </div>
+  <div
+    aria-expanded={false}
+    data-css-eueoca=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-k6dw9o=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            wow
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-qs2rg7=""
-      >
-        <button
-          aria-label="Expand"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1byjzqg=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        wow
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={true}
-        data-css-1j3g0qd=""
+        data-css-1h00rme=""
+        data-css-7dab2f=""
       >
-        This is panel content
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
       </div>
     </div>
+  </div>
+  <div
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    This is details content
   </div>
 </div>
 `;
@@ -1525,159 +1468,140 @@ exports[`Storyshots drawer nested table 1`] = `
   role="table"
 >
   <div
-    data-css-knxp45=""
+    aria-expanded={true}
+    data-css-w6nawk=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-157tm1l=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            Parent Cell
-          </div>
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            Parent Cell
-          </div>
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            Parent Cell
-          </div>
-        </div>
+        Parent Cell
       </div>
       <div
-        data-css-qs2rg7=""
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
       >
-        <button
-          aria-label="Collapse"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-xnveog=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        Parent Cell
+      </div>
+      <div
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
+      >
+        Parent Cell
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={false}
-        data-css-1j3g0qd=""
+        data-css-7dab2f=""
+        data-css-ns6sfg=""
+      >
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden={false}
+    data-css-1s813js=""
+  >
+    <div
+      data-css-qq9r6d=""
+      role="table"
+    >
+      <div
+        data-css-lmjdxe=""
+        role="row"
       >
         <div
-          data-css-qq9r6d=""
-          role="table"
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
         >
-          <div
-            data-css-lmjdxe=""
-            role="row"
-          >
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-          </div>
-          <div
-            data-css-lmjdxe=""
-            role="row"
-          >
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-          </div>
-          <div
-            data-css-lmjdxe=""
-            role="row"
-          >
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-            <div
-              data-css-yawg45=""
-              role="cell"
-              style={Object {}}
-            >
-              Child Cell
-            </div>
-          </div>
+          Child Cell
+        </div>
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
+        </div>
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
+        </div>
+      </div>
+      <div
+        data-css-lmjdxe=""
+        role="row"
+      >
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
+        </div>
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
+        </div>
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
+        </div>
+      </div>
+      <div
+        data-css-lmjdxe=""
+        role="row"
+      >
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
+        </div>
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
+        </div>
+        <div
+          data-css-yawg45=""
+          role="cell"
+          style={Object {}}
+        >
+          Child Cell
         </div>
       </div>
     </div>
@@ -1691,66 +1615,47 @@ exports[`Storyshots drawer single 1`] = `
   role="table"
 >
   <div
-    data-css-knxp45=""
+    aria-expanded={false}
+    data-css-eueoca=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-k6dw9o=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={Object {}}
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={Object {}}
-          >
-            wow
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-qs2rg7=""
-      >
-        <button
-          aria-label="Expand"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1byjzqg=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        wow
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={true}
-        data-css-1j3g0qd=""
+        data-css-1h00rme=""
+        data-css-7dab2f=""
       >
-        This is panel content
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
       </div>
     </div>
+  </div>
+  <div
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    This is details content
   </div>
 </div>
 `;
@@ -1761,235 +1666,178 @@ exports[`Storyshots drawer w/ flex, some wrap, some not 1`] = `
   role="table"
 >
   <div
-    data-css-knxp45=""
+    aria-expanded={false}
+    data-css-eueoca=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-k6dw9o=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={
+          Object {
+            "flex": "2",
+          }
+        }
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={
-              Object {
-                "flex": "2",
-              }
-            }
-          >
-            flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
-          </div>
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={
-              Object {
-                "flex": "1",
-              }
-            }
-          >
-            flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
-          </div>
-        </div>
+        flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
       </div>
       <div
-        data-css-qs2rg7=""
+        data-css-yawg45=""
+        role="cell"
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
       >
-        <button
-          aria-label="Expand"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1byjzqg=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={true}
-        data-css-1j3g0qd=""
+        data-css-1h00rme=""
+        data-css-7dab2f=""
       >
-        This is panel content
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
       </div>
     </div>
   </div>
   <div
-    data-css-knxp45=""
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    This is details content
+  </div>
+  <div
+    aria-expanded={false}
+    data-css-eueoca=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-k6dw9o=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={
+          Object {
+            "flex": "2",
+          }
+        }
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={
-              Object {
-                "flex": "2",
-              }
-            }
-          >
-            flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
-          </div>
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={
-              Object {
-                "flex": "1",
-              }
-            }
-          >
-            flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
-          </div>
-        </div>
+        flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
       </div>
       <div
-        data-css-qs2rg7=""
+        data-css-yawg45=""
+        role="cell"
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
       >
-        <button
-          aria-label="Expand"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1byjzqg=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={true}
-        data-css-1j3g0qd=""
+        data-css-1h00rme=""
+        data-css-7dab2f=""
       >
-        This is panel content
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
       </div>
     </div>
   </div>
   <div
-    data-css-knxp45=""
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    This is details content
+  </div>
+  <div
+    aria-expanded={false}
+    data-css-eueoca=""
+    onClick={[Function]}
+    role="button"
   >
     <div
-      data-css-k6dw9o=""
-      onClick={[Function]}
+      data-css-lmjdxe=""
+      role="row"
     >
       <div
-        data-css-euzj8=""
+        data-css-yawg45=""
+        role="cell"
+        style={
+          Object {
+            "flex": "2",
+          }
+        }
       >
-        <div
-          data-css-lmjdxe=""
-          role="row"
-        >
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={
-              Object {
-                "flex": "2",
-              }
-            }
-          >
-            flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
-          </div>
-          <div
-            data-css-yawg45=""
-            role="cell"
-            style={
-              Object {
-                "flex": "1",
-              }
-            }
-          >
-            flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
-          </div>
-        </div>
+        flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
       </div>
       <div
-        data-css-qs2rg7=""
+        data-css-yawg45=""
+        role="cell"
+        style={
+          Object {
+            "flex": "1",
+          }
+        }
       >
-        <button
-          aria-label="Expand"
-          data-css-xkympi=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1byjzqg=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
+        flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
       </div>
     </div>
     <div
-      data-css-v1c8as=""
+      data-css-17v14zz=""
     >
       <div
-        aria-hidden={true}
-        data-css-1j3g0qd=""
+        data-css-1h00rme=""
+        data-css-7dab2f=""
       >
-        This is panel content
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
       </div>
     </div>
+  </div>
+  <div
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    This is details content
   </div>
 </div>
 `;
