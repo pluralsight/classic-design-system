@@ -10,6 +10,7 @@ import {
   useRef,
   useState
 } from 'react'
+// TODO: use util
 import { canUseDOM } from 'exenv'
 import { uniqueId, ValueOf } from '@pluralsight/ps-design-system-util'
 
@@ -101,6 +102,7 @@ export const useDropdown = (
   forwardedRef: Ref<HTMLButtonElement>
 ) => {
   const { hook, ...rest } = sortDropdownProps(props)
+  // TODO: derive from activeIndex > -1
   const [isOpen, setOpen] = useState(false)
   const labelId = useMemo(() => uniqueId('dropdown-label-'), [])
   const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
@@ -130,6 +132,25 @@ export const useDropdown = (
     // TODO: verify don't have to refind/setActiveItemId because itemMatchingValue was regen'ed
     /* setSelectedItemId(newValue || newLabel) */
   }, [itemMatchingValue, hook.value])
+
+  useEffect(() => {
+    if (canUseDOM && isOpen) {
+      function handleEscape(evt) {
+        if (evt.key === 'Escape') {
+          setOpen(false)
+          setActiveIndex(
+            itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0
+          )
+          buttonRef.current?.focus()
+        }
+      }
+      document.addEventListener('keydown', handleEscape, false)
+
+      return () => {
+        document.removeEventListener('keydown', handleEscape, false)
+      }
+    }
+  }, [isOpen])
 
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     if (
@@ -163,6 +184,7 @@ export const useDropdown = (
         setSelectedValue(items[activeIndex]?.value)
         setSelectedLabel(items[activeIndex]?.label)
         setOpen(false)
+        setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
         buttonRef.current?.focus()
       }
     } else {
@@ -179,6 +201,7 @@ export const useDropdown = (
     setSelectedValue(value)
     setSelectedLabel(newLabel)
     setOpen(false)
+    setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
     if (typeof hook.onChange === 'function') hook.onChange(evt, value)
     if (buttonRef.current) {
       buttonRef.current.focus()
