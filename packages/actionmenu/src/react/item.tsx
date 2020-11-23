@@ -25,19 +25,18 @@ import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
 
 const styles = {
-  itemContainer: ({ disabled }: { disabled?: boolean }) =>
+  itemContainer: ({
+    active,
+    disabled
+  }: Pick<BaseItemProps, 'active' | 'disabled'>) =>
     compose(
       css(stylesheet['.psds-actionmenu__item-container']),
-      disabled && css(stylesheet['.psds-actionmenu__item--disabled'])
+      disabled && css(stylesheet['.psds-actionmenu__item--disabled']),
+      active && css(stylesheet['.psds-actionmenu__item-container--active'])
     ),
   item: ({ hasSubMenu }: { hasSubMenu: boolean }) =>
     compose(
       css(stylesheet['.psds-actionmenu__item']),
-      css({
-        ':focus': stylesheet['.psds-actionmenu__item--focus-keyboard'],
-        ':focus div':
-          stylesheet['.psds-actionmenu__item__arrow--focus-keyboard']
-      }),
       hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
     ),
   inner: () => css(stylesheet['.psds-actionmenu__item-inner']),
@@ -53,6 +52,7 @@ const styles = {
 }
 
 interface BaseItemProps {
+  active?: boolean
   className?: string
   disabled?: boolean
   nested?: ReactNode
@@ -82,6 +82,7 @@ type ItemComponent = ForwardRefExoticComponent<unknown> & {
 export const Item = forwardRef<HTMLLIElement, ItemProps>(
   (props, forwardedRef) => {
     const {
+      active,
       children,
       className,
       disabled,
@@ -168,7 +169,7 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
 
     return (
       <li
-        {...styles.itemContainer({ disabled })}
+        {...styles.itemContainer({ active, disabled })}
         data-disabled={disabled}
         onKeyDown={handleKeyDown}
         onMouseOut={handleMouseOut}
