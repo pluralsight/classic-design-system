@@ -34,7 +34,7 @@ interface UseDropdownProps
   label?: React.ReactNode
   menu?: React.ReactNode
   onChange?: (e: React.MouseEvent, v: React.ReactText) => void
-  onClick?: (e: React.MouseEvent) => void
+  onClick?: (e: React.MouseEvent | React.KeyboardEvent) => void
   placeholder?: string
   size?: ValueOf<typeof vars.sizes>
   style?: React.CSSProperties
@@ -132,15 +132,6 @@ export const useDropdown = (
 
   useEffect(() => {
     if (canUseDOM && isOpen) {
-      function handleEscape(evt) {
-        if (evt.key === 'Escape') {
-          setOpen(false)
-          setActiveIndex(
-            itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0
-          )
-          buttonRef.current?.focus()
-        }
-      }
       document.addEventListener('keydown', handleEscape, false)
 
       return () => {
@@ -148,11 +139,19 @@ export const useDropdown = (
       }
     }
   }, [isOpen])
+  function handleEscape(evt) {
+    if (evt.key === 'Escape') {
+      setOpen(false)
+      setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
+      buttonRef.current?.focus()
+    }
+  }
 
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     if (
       evt.type === 'click' ||
       (evt.type === 'keydown' &&
+        'key' in evt &&
         (evt.key === ' ' || evt.key === 'Enter' || evt.key === 'ArrowDown'))
     ) {
       evt.preventDefault()
