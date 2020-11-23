@@ -105,28 +105,25 @@ export const useDropdown = (
   const labelId = useMemo(() => uniqueId('dropdown-label-'), [])
   const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
 
-  const itemMatchingValue = useMemo(() => {
-    return findSelectedMenuItem(hook.menu, hook.value)
-  }, [hook.menu, hook.value])
+  const items = parseMenuChildren(menuId, hook.menu)
 
-  const [activeValue, setActiveValue] = useState<string | undefined>(
-    itemMatchingValue ? itemMatchingValue.props.value : undefined
+  // TODO: ensure didn't need memo here
+  const itemMatchingValue = items.find(item => item.value === hook.value)
+
+  const [activeValue, setActiveValue] = useState<string | number | undefined>(
+    itemMatchingValue?.value
   )
   const [activeItemId, setActiveItemId] = useState<string | undefined>(
-    formatItemId(
-      menuId,
-      itemMatchingValue ? itemMatchingValue.props.value : undefined,
-      itemMatchingValue ? itemMatchingValue.props.children : undefined
-    )
+    formatItemId(menuId, itemMatchingValue?.value, itemMatchingValue?.label)
   )
 
   const [selectedLabel, setSelectedLabel] = useState(
-    itemMatchingValue ? itemMatchingValue.props.children : null
+    itemMatchingValue ? itemMatchingValue.label : null
   )
   const [selectedValue, setSelectedValue] = useState(hook.value)
 
   useEffect(() => {
-    const newLabel = itemMatchingValue ? itemMatchingValue.props.children : null
+    const newLabel = itemMatchingValue?.label
     const newValue = hook.value
     setSelectedLabel(newLabel)
     setSelectedValue(newValue)
@@ -281,25 +278,24 @@ export const useDropdown = (
   }
 }
 
-// TODO: type better
-export function findSelectedMenuItem(menu?, value?) {
-  if (!menu || !value) return
+interface ItemData {
+  id: string
+  label: string
+  value?: string | number
+}
+
+const parseMenuChildren = (menuId: string, menu?): ItemData[] => {
+  if (!menu) return []
 
   const items = Array.isArray(menu)
     ? menu
     : Children.toArray(menu.props.children)
-  let matchingItem = items.find(it => it.props.value === value)
 
-  const nestedMenus = items.map(item => item.props.nested)
-  if (!matchingItem && nestedMenus.length > 0) {
-    matchingItem = nestedMenus.reduce((found, nested) => {
-      if (found) return found
-
-      return findSelectedMenuItem(nested, value)
-    }, undefined)
-  }
-
-  return matchingItem
+  return items.map(item => ({
+    id: formatItemId(menuId, item.props.value, item.props.children),
+    label: item.props.children,
+    value: item.props.value
+  }))
 }
 
 export function formatItemId(
