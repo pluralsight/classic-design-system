@@ -7,7 +7,10 @@ import React, {
 } from 'react'
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { useTheme, names as themeNames } from '@pluralsight/ps-design-system-theme'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 import {
   useToggle,
   RefFor,
