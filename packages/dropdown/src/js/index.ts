@@ -132,23 +132,19 @@ export const useDropdown = (
   }, [itemMatchingValue, hook.value])
 
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
-    evt.preventDefault()
-    evt.stopPropagation()
-
     if (
       evt.type === 'click' ||
       (evt.type === 'keydown' && (evt.key === ' ' || evt.key === 'Enter'))
     ) {
-      console.log('button evt NOT OPENING', { type: evt.type, key: evt.key })
+      evt.preventDefault()
+      evt.stopPropagation()
+
       const newOpen = !isOpen
       setOpen(newOpen)
-      console.log('button click', { newOpen, target: evt.target, key: evt.key })
       if (newOpen && inputRef.current) {
         inputRef.current.focus()
       }
       if (typeof hook.onClick === 'function') hook.onClick(evt)
-    } else {
-      console.log('button evt NOT OPENING', { type: evt.type, key: evt.key })
     }
   }
 
