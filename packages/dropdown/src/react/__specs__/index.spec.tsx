@@ -132,7 +132,7 @@ it('selects by click', async () => {
   expect(input).toHaveValue('h')
 })
 
-it.skip('selects by enter', async () => {
+it('navigates by arrows, selects by enter', async () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -151,11 +151,29 @@ it.skip('selects by enter', async () => {
     />
   )
   const button = screen.getByRole('button', { name: 'Two' })
-  userEvent.type(document.activeElement, '{enter}')
+  button.focus()
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
 
-  const item = screen.getByRole('menuitem', { name: /Three/ })
-  userEvent.click(item)
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowDown',
+    code: 'ArrowDown'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowUp',
+    code: 'ArrowUp'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowUp',
+    code: 'ArrowUp'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
 
   const input = await screen.findByRole('textbox')
-  expect(input).toHaveValue('h')
+  expect(input).toHaveValue('o')
 })

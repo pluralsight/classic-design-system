@@ -154,7 +154,9 @@ export const useDropdown = (
 
     console.log('input key', { isOpen, target: evt.target, key: evt.key })
     if (isOpen) {
-      if (evt.key === 'ArrowUp') {
+      if (evt.key === 'ArrowDown') {
+        setActiveIndex(activeIndex < items.length - 1 ? activeIndex + 1 : 0)
+      } else if (evt.key === 'ArrowUp') {
         setActiveIndex(activeIndex > 0 ? activeIndex - 1 : 0)
       } else if (evt.key === 'Enter' || evt.key === ' ') {
         setSelectedValue(items[activeIndex]?.value)
