@@ -67,7 +67,10 @@ export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
     useLayoutEffect(() => {
       if (!isOpen) return
       const { left, bottom } = fieldContainerRef.current.getBoundingClientRect()
-      requestAnimationFrame(() => setMenuPosition({ left, top: bottom }))
+      const requestId = requestAnimationFrame(() =>
+        setMenuPosition({ left, top: bottom })
+      )
+      return () => cancelAnimationFrame(requestId)
     }, [fieldContainerRef, isOpen, setMenuPosition])
     return (
       <div {...styles.fieldContainer()} ref={fieldContainerRef}>
