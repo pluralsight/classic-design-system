@@ -145,8 +145,9 @@ export const useDropdown = (
 
   function handleMenuChange(evt: React.MouseEvent, value?: React.ReactText) {
     const innerText = (evt.currentTarget as HTMLElement).innerText
+    const newLabel = value === innerText ? value : innerText
     setSelectedValue(value)
-    setSelectedLabel(value === innerText ? value : innerText)
+    setSelectedLabel(newLabel)
     setOpen(false)
     if (typeof hook.onChange === 'function') hook.onChange(evt, value)
   }

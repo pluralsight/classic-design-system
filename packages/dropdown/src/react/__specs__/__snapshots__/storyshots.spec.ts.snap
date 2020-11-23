@@ -3712,88 +3712,6 @@ exports[`Storyshots menu w/ value 1`] = `
 </div>
 `;
 
-exports[`Storyshots placeholder as pre-selected item 1`] = `
-<div
-  data-css-1hniuff=""
-  onKeyDown={[Function]}
->
-  <label
-    htmlFor="dropdown-label-unique-id"
-  >
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant={null}
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      aria-haspopup="listbox"
-      defaultValue=""
-      disabled={false}
-      id="dropdown-label-unique-id"
-    />
-  </div>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          data-css-94lg5r=""
-          disabled={false}
-          onClick={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Three item
-            </span>
-            <span
-              data-css-1t1vq03=""
-            >
-              Two item
-            </span>
-          </span>
-        </button>
-        <div
-          data-css-1af7ks9=""
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots portal position 1`] = `
 <div
   style={
@@ -3940,6 +3858,88 @@ exports[`Storyshots props whitelist title 1`] = `
             <span
               data-css-1t1vq03=""
             />
+          </span>
+        </button>
+        <div
+          data-css-1af7ks9=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots value shows pre-selected item 1`] = `
+<div
+  data-css-1hniuff=""
+  onKeyDown={[Function]}
+>
+  <label
+    htmlFor="dropdown-label-unique-id"
+  >
+    <span
+      data-css-6wu9td=""
+    >
+      Dropdown
+    </span>
+  </label>
+  <div
+    data-css-6wu9td=""
+  >
+    <input
+      aria-activedescendant="h"
+      aria-controls="dropdown-menu-unique-id"
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      defaultValue="h"
+      disabled={false}
+      id="dropdown-label-unique-id"
+    />
+  </div>
+  <div
+    data-css-8befsb=""
+  >
+    <div
+      data-css-3ah8pf=""
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-ne3jjf=""
+      >
+        <button
+          data-css-94lg5r=""
+          disabled={false}
+          onClick={[Function]}
+        >
+          <span
+            data-css-1m4meif=""
+          >
+            <span
+              aria-hidden={true}
+              data-css-mlkf0z=""
+            >
+              Preselected three item
+            </span>
+            <span
+              data-css-phnd7x=""
+            >
+              Preselected three item
+            </span>
           </span>
         </button>
         <div

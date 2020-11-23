@@ -232,14 +232,15 @@ storiesOf('layouts', module)
     return <ChangeStory />
   })
 
-storiesOf('placeholder', module).add('as pre-selected item', () => (
+storiesOf('value', module).add('shows pre-selected item', () => (
   <Dropdown
-    placeholder="Two item"
+    placeholder="Not shown until empty"
+    value="h"
     menu={
       <>
-        <Dropdown.Item>One item</Dropdown.Item>
-        <Dropdown.Item>Two item</Dropdown.Item>
-        <Dropdown.Item>Three item</Dropdown.Item>
+        <Dropdown.Item value="o">One item</Dropdown.Item>
+        <Dropdown.Item value="w">Two item</Dropdown.Item>
+        <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
       </>
     }
   />
