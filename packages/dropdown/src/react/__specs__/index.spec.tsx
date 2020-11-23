@@ -233,3 +233,25 @@ it('navigates by arrows, selects by enter', async () => {
   const input = await screen.findByRole('combobox')
   expect(input).toHaveValue('o')
 })
+
+it('value set as label if option has no value', async () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      value="Two"
+      menu={[
+        <Dropdown.Item key="1">One</Dropdown.Item>,
+        <Dropdown.Item key="2">Two</Dropdown.Item>,
+        <Dropdown.Item key="3">Three</Dropdown.Item>
+      ]}
+    />
+  )
+  const button = screen.getByRole('button', { name: 'Two' })
+  userEvent.click(button)
+
+  const item = screen.getByRole('option', { name: /Three/ })
+  userEvent.click(item)
+
+  const input = await screen.findByRole('combobox')
+  expect(input).toHaveValue('Three')
+})

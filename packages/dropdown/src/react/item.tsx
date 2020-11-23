@@ -30,7 +30,7 @@ export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
         aria-selected={isActive}
         role="option"
         tagName="button"
-        value={value}
+        value={value || children}
         nested={menu}
         {...rest}
         id={formatItemId(context.menuId, value, children as string)}

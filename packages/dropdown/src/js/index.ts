@@ -109,7 +109,7 @@ export const useDropdown = (
 
   const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [hook.menu])
   const itemMatchingValueIndex = items.findIndex(
-    item => item.value === hook.value
+    item => item.value === hook.value || item.label === hook.value
   )
   const itemMatchingValue = items[itemMatchingValueIndex]
   const [activeIndex, setActiveIndex] = useState(

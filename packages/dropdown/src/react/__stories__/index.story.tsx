@@ -2,7 +2,7 @@
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
-import React, { forwardRef, useState, HTMLAttributes } from 'react'
+import React, { useEffect, forwardRef, useState, HTMLAttributes } from 'react'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../'
@@ -232,19 +232,87 @@ storiesOf('layouts', module)
     return <ChangeStory />
   })
 
-storiesOf('value', module).add('shows pre-selected item', () => (
-  <Dropdown
-    placeholder="Not shown until empty"
-    value="h"
-    menu={
-      <>
-        <Dropdown.Item value="o">One item</Dropdown.Item>
-        <Dropdown.Item value="w">Two item</Dropdown.Item>
-        <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
-      </>
+storiesOf('value', module)
+  .add('no preselection', () => (
+    <Dropdown
+      placeholder="Shown until selection made"
+      menu={
+        <>
+          <Dropdown.Item value="o">One item</Dropdown.Item>
+          <Dropdown.Item value="w">Two item</Dropdown.Item>
+          <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('shows pre-selected item by label', () => (
+    <Dropdown
+      placeholder="Shown because can't find option"
+      value="Preselected three item"
+      menu={
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Preselected three item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('shows pre-selected item by value', () => (
+    <Dropdown
+      placeholder="Not shown until empty"
+      value="h"
+      menu={
+        <>
+          <Dropdown.Item value="o">One item</Dropdown.Item>
+          <Dropdown.Item value="w">Two item</Dropdown.Item>
+          <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('value is not an item in the list', () => (
+    <Dropdown
+      placeholder="Shown because can't find option"
+      value="unknown"
+      menu={
+        <>
+          <Dropdown.Item value="o">One item</Dropdown.Item>
+          <Dropdown.Item value="w">Two item</Dropdown.Item>
+          <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('external state change', () => {
+    function StateChange() {
+      const values = ['o', 'w', 'h']
+      const [value, setValue] = useState(values[0])
+      useEffect(() => {
+        const timerId = setInterval(() => {
+          const i = values.findIndex(v => v === value)
+          setValue(i < values.length - 1 ? values[i + 1] : values[0])
+        }, 1000)
+
+        return () => clearInterval(timerId)
+      })
+
+      return (
+        <Dropdown
+          placeholder="Not shown until empty"
+          value={value}
+          menu={
+            <>
+              <Dropdown.Item value="o">One item</Dropdown.Item>
+              <Dropdown.Item value="w">Two item</Dropdown.Item>
+              <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
+            </>
+          }
+        />
+      )
     }
-  />
-))
+    return <StateChange />
+  })
 
 storiesOf('menu', module)
   .add('single list', () => (
