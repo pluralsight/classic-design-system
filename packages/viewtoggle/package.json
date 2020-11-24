@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-viewtoggle",
-  "version": "6.1.12",
+  "version": "6.1.13",
   "description": "Design System component for view toggle ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
