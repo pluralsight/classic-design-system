@@ -83,6 +83,7 @@
     "gatsby-plugin-express": "^1.1.6",
     "gatsby-plugin-glamor": "^2.3.12",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sitemap": "^2.7.0",
     "gatsby-plugin-styled-jsx": "^3.3.13",
     "gatsby-remark-autolink-headers": "^2.3.13",
     "gatsby-remark-table-of-contents": "^0.1.1",
