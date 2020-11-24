@@ -82,7 +82,9 @@ const Summary = forwardRef<HTMLDivElement, SummaryProps>(
         {children}
         <div {...styles.iconSlot()}>
           <CaretDownIcon {...styles.rotatable(themeName, isOpen)} />
-          <ScreenReaderOnly>{ isOpen ? 'Expanded' : 'Collapsed'}</ScreenReaderOnly>
+          <ScreenReaderOnly>
+            {isOpen ? 'Expanded' : 'Collapsed'}
+          </ScreenReaderOnly>
         </div>
       </div>
     )

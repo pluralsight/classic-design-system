@@ -85,7 +85,7 @@ const ControlledButtonOnly = () => {
     </>
   )
 }
-storiesOf('drawer:rc', module)
+storiesOf('drawer', module)
   .addDecorator(story => <div style={{ padding: 48 }}>{story()}</div>)
   .add('default', () => {
     return (

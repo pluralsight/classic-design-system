@@ -7,15 +7,15 @@ import Drawer from '@pluralsight/ps-design-system-drawer'
 
 # Drawer
 
-<Intro>
-  The Drawer can be used as an uncontrolled or controlled component. It consist
-  of two subcomponents Summary and Details. The top-level component Drawer is headless.
-  It's puporse is to supply context and cordinate the subcomponents.
-</Intro>
-
 <TableOfContents {...props} />
 
-## Examples: uncontrolled
+## Examples
+
+The Drawer can be used as an uncontrolled or controlled component. It consist
+of two subcomponents Summary and Details. The top-level component Drawer is headless.
+It's puporse is to supply context and cordinate the subcomponents.
+
+### Basic usage
 
 Use when there is no need to modify open state or hook into onToggle callback.
 
@@ -100,7 +100,7 @@ const ExampleDrawerDetails = () => (
 )
 ```
 
-### Drawer Subcomponents
+### Drawer subcomponents
 Styles can be overridden with inline styles or by passing it a new className to either node
 **Drawer.Summary**
 - Default display is `inline-flex`.
@@ -183,12 +183,11 @@ export default Example
 
 ```
 
-## Examples: controlled
-Use when there is a need to modify open state or hook into onToggle callback.
-The Drawer only takes two props to take control of toggle microinteraction, (**onToggle**, **isOpen**).
+### Controlled mount drawer open (AKA startOpen)
 
-
-### Mount drawer open (AKA startOpen)
+When there is a need to modify/observe open state or hook into onToggle callback it's best to use the
+Drawer as a controlled component. The Drawer only takes two props which allow one to take control of 
+toggle microinteraction, (**onToggle**, **isOpen**).
 
 ```typescript
 import Drawer from '@pluralsight/ps-design-system-drawer'
@@ -216,7 +215,7 @@ const Example = () => {
 export default Example
 ```
 
-### Prevent clicking on `<Drawer.Summary />` from opening `<Drawer />`
+### Controlled prevent clicking on `<Drawer.Summary />` from opening `<Drawer />`
 
 ```typescript 
 import Drawer from '@pluralsight/ps-design-system-drawer'

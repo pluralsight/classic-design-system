@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots drawer:rc controlled: external state 1`] = `
+exports[`Storyshots drawer controlled: external state 1`] = `
 <div
   style={
     Object {
@@ -78,7 +78,7 @@ exports[`Storyshots drawer:rc controlled: external state 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc controlled: open with button only 1`] = `
+exports[`Storyshots drawer controlled: open with button only 1`] = `
 <div
   style={
     Object {
@@ -151,7 +151,7 @@ exports[`Storyshots drawer:rc controlled: open with button only 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc controlled: start open 1`] = `
+exports[`Storyshots drawer controlled: start open 1`] = `
 <div
   style={
     Object {
@@ -219,7 +219,7 @@ exports[`Storyshots drawer:rc controlled: start open 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc default 1`] = `
+exports[`Storyshots drawer default 1`] = `
 <div
   style={
     Object {
@@ -287,7 +287,7 @@ exports[`Storyshots drawer:rc default 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc row component with actions 1`] = `
+exports[`Storyshots drawer row component with actions 1`] = `
 <div
   style={
     Object {
@@ -454,7 +454,7 @@ exports[`Storyshots drawer:rc row component with actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc stack of drawers 1`] = `
+exports[`Storyshots drawer stack of drawers 1`] = `
 <div
   style={
     Object {
@@ -638,7 +638,7 @@ exports[`Storyshots drawer:rc stack of drawers 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc stack of non-sibling drawers 1`] = `
+exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
 <div
   style={
     Object {
@@ -826,7 +826,7 @@ exports[`Storyshots drawer:rc stack of non-sibling drawers 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc using custom aria label 1`] = `
+exports[`Storyshots drawer using custom aria label 1`] = `
 <div
   style={
     Object {
@@ -896,7 +896,7 @@ exports[`Storyshots drawer:rc using custom aria label 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer:rc with row component 1`] = `
+exports[`Storyshots drawer with row component 1`] = `
 <div
   style={
     Object {
