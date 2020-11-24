@@ -47,9 +47,15 @@ describe('#parseMenuChildren', () => {
 
   it('parses an array of children', () => {
     const children = [
-      <Item value="o">One</Item>,
-      <Item value="w">Two</Item>,
-      <Item value="h">Three</Item>
+      <Item value="o" key="o">
+        One
+      </Item>,
+      <Item value="w" key="w">
+        Two
+      </Item>,
+      <Item value="h" key="h">
+        Three
+      </Item>
     ]
 
     expect(parseMenuChildren('aMenuId', children)).toEqual([
