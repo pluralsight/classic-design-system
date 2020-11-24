@@ -186,7 +186,6 @@ export const useDropdown = (
         setSelectedValue(items[activeIndex]?.value)
         setSelectedLabel(items[activeIndex]?.label)
         setOpen(false)
-        setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
         buttonRef.current?.focus()
       }
     } else {

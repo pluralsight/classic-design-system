@@ -344,6 +344,24 @@ storiesOf('value', module)
     return <StateChange />
   })
 
+  .add('test the spec', () => (
+    <Dropdown
+      placeholder="Select"
+      value="w"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  ))
+
 storiesOf('menu', module)
   .add('single list', () => (
     <Dropdown

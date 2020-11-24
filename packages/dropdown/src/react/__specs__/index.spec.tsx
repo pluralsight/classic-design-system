@@ -234,6 +234,68 @@ it('navigates by arrows, selects by enter', async () => {
   expect(input).toHaveValue('o')
 })
 
+it('re-navigates, active index is maintained on selection', async () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      value="w"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  )
+  const button = screen.getByRole('button', { name: 'Two' })
+  button.focus()
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowDown',
+    code: 'ArrowDown'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowUp',
+    code: 'ArrowUp'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowUp',
+    code: 'ArrowUp'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+
+  let input = screen.getByRole('combobox')
+  expect(input).toHaveValue('o')
+
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowDown',
+    code: 'ArrowDown'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+
+  input = screen.getByRole('combobox')
+  expect(input).toHaveValue('w')
+})
+
 it('value set as label if option has no value', async () => {
   render(
     <Dropdown
