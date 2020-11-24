@@ -23,27 +23,29 @@ const styles = {
 }
 
 // TODO: breaking change: rm href
-interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'ref'> {
+interface DropdownItemProps
+  extends Omit<HTMLPropsFor<'button'>, 'ref' | 'onClick'> {
   children: ReactText
   disabled?: boolean
+  onClick?: (evt: React.MouseEvent, value: ReactText) => void
   icon?: ReactNode
   value?: ReactText
 }
 
 export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
-  ({ disabled, value, icon, children, ...rest }, forwardedRef): any => {
+  (
+    { disabled, onClick, value, icon, children, ...rest },
+    forwardedRef
+  ): any => {
     const context = useContext(DropdownContext)
     const isActive = value && context.activeValue === value
     const isSelected = value && context.selectedValue === value
 
     const handleClick = (evt: React.MouseEvent) => {
       context.onMenuClick(evt, value || children)
-      /* rest.onClick && rest.onClick(evt, value) */
-      /* onClickContext && onClickContext(evt, value) */
-      /* rest.onClose && rest.onClose(evt, value) */
+      if (typeof onClick === 'function') onClick(evt, value || children)
     }
 
-    // TODO: verify onClick gets passed in (as well as other props)
     return (
       <button
         {...styles.item(isActive, disabled)}

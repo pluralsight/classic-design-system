@@ -35,7 +35,6 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^1.12.2",
     "@pluralsight/ps-design-system-storybook-preset": "^0.2.12",
-    "@pluralsight/ps-design-system-theme": "^6.0.8",
-    "@types/react-is": "^16.7.1"
+    "@pluralsight/ps-design-system-theme": "^6.0.8"
   }
 }

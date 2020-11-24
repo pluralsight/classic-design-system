@@ -114,9 +114,10 @@ export const useDropdown = (
     menuId,
     hook.menu
   ])
-  // TODO: fix preselection for just label -- value needs to be label text or no preselect
   const itemMatchingValueIndex = items.findIndex(
-    item => item.value === hook.value || item.label === hook.value
+    item =>
+      (typeof item.value !== 'undefined' && item.value === hook.value) ||
+      item.label === hook.value
   )
   const itemMatchingValue = items[itemMatchingValueIndex]
   const [activeIndex, setActiveIndex] = useState(

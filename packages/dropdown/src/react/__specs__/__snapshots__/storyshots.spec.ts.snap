@@ -1031,10 +1031,8 @@ exports[`Storyshots custom fixed icon 1`] = `
                 Trailing 14 Days
               </span>
               <span
-                data-css-phnd7x=""
-              >
-                Trailing 14 Days
-              </span>
+                data-css-1t1vq03=""
+              />
             </div>
           </span>
         </button>
@@ -1255,7 +1253,7 @@ exports[`Storyshots disabled compare items 1`] = `
         aria-autocomplete="list"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
-        defaultValue="Normal Label 1"
+        defaultValue=""
         disabled={false}
         id="dropdown-input-unique-id"
         onKeyDown={[Function]}
@@ -1289,9 +1287,9 @@ exports[`Storyshots disabled compare items 1`] = `
                 Has mixed labels
               </span>
               <span
-                data-css-phnd7x=""
+                data-css-1t1vq03=""
               >
-                Normal Label 1
+                Has mixed labels
               </span>
             </span>
           </button>
@@ -2823,7 +2821,7 @@ exports[`Storyshots menu divider 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -2857,10 +2855,8 @@ exports[`Storyshots menu divider 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-phnd7x=""
-            >
-              One item
-            </span>
+              data-css-1t1vq03=""
+            />
           </span>
         </button>
         <div
@@ -2908,7 +2904,7 @@ exports[`Storyshots menu in stack 1`] = `
           aria-autocomplete="list"
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
-          defaultValue="One item"
+          defaultValue=""
           disabled={false}
           id="dropdown-input-unique-id"
           onKeyDown={[Function]}
@@ -2942,9 +2938,9 @@ exports[`Storyshots menu in stack 1`] = `
                   Three and the amazing item
                 </span>
                 <span
-                  data-css-phnd7x=""
+                  data-css-1t1vq03=""
                 >
-                  One item
+                  Select one
                 </span>
               </span>
             </button>
@@ -2990,7 +2986,7 @@ exports[`Storyshots menu in stack 1`] = `
           aria-autocomplete="list"
           aria-controls="dropdown-menu-unique-id"
           aria-expanded={false}
-          defaultValue="One item"
+          defaultValue=""
           disabled={false}
           id="dropdown-input-unique-id"
           onKeyDown={[Function]}
@@ -3024,9 +3020,9 @@ exports[`Storyshots menu in stack 1`] = `
                   Three and the amazing item
                 </span>
                 <span
-                  data-css-phnd7x=""
+                  data-css-1t1vq03=""
                 >
-                  One item
+                  Select another one
                 </span>
               </span>
             </button>
@@ -3075,7 +3071,7 @@ exports[`Storyshots menu max height 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3109,10 +3105,8 @@ exports[`Storyshots menu max height 1`] = `
               Thirteen item
             </span>
             <span
-              data-css-phnd7x=""
-            >
-              One item
-            </span>
+              data-css-1t1vq03=""
+            />
           </span>
         </button>
         <div
@@ -3158,7 +3152,7 @@ exports[`Storyshots menu onClicks 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3192,9 +3186,9 @@ exports[`Storyshots menu onClicks 1`] = `
               Select another one
             </span>
             <span
-              data-css-phnd7x=""
+              data-css-dafmp1=""
             >
-              One item
+              Select another one
             </span>
           </span>
         </button>
@@ -3260,7 +3254,7 @@ exports[`Storyshots menu single list 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3294,10 +3288,8 @@ exports[`Storyshots menu single list 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-phnd7x=""
-            >
-              One item
-            </span>
+              data-css-1t1vq03=""
+            />
           </span>
         </button>
         <div
@@ -3343,7 +3335,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3377,9 +3369,9 @@ exports[`Storyshots menu single list w/ icon 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-phnd7x=""
+              data-css-1t1vq03=""
             >
-              One item
+              Select one
             </span>
           </span>
         </button>
@@ -3426,7 +3418,7 @@ exports[`Storyshots menu super long 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="This level really is the longest level that anyone has ever seen. There is none longer"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3460,10 +3452,8 @@ exports[`Storyshots menu super long 1`] = `
               This level really is the longest level that anyone has ever seen. There is none longer
             </span>
             <span
-              data-css-phnd7x=""
-            >
-              This level really is the longest level that anyone has ever seen. There is none longer
-            </span>
+              data-css-1t1vq03=""
+            />
           </span>
         </button>
         <div
@@ -3509,7 +3499,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3543,9 +3533,9 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
               This one is longer than any menu item
             </span>
             <span
-              data-css-phnd7x=""
+              data-css-1t1vq03=""
             >
-              One item
+              This one is longer than any menu item
             </span>
           </span>
         </button>
@@ -3592,7 +3582,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3626,10 +3616,8 @@ exports[`Storyshots menu w/ subLabel 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-phnd7x=""
-            >
-              One item
-            </span>
+              data-css-1t1vq03=""
+            />
           </span>
         </button>
         <div
@@ -3776,7 +3764,7 @@ exports[`Storyshots portal position 1`] = `
         aria-autocomplete="list"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
-        defaultValue="One item"
+        defaultValue=""
         disabled={false}
         id="dropdown-input-unique-id"
         onKeyDown={[Function]}
@@ -3810,10 +3798,8 @@ exports[`Storyshots portal position 1`] = `
                 Three and the amazing item
               </span>
               <span
-                data-css-phnd7x=""
-              >
-                One item
-              </span>
+                data-css-1t1vq03=""
+              />
             </span>
           </button>
           <div
@@ -3861,7 +3847,7 @@ exports[`Storyshots props whitelist title 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="One item"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}
@@ -3896,10 +3882,8 @@ exports[`Storyshots props whitelist title 1`] = `
               One item
             </span>
             <span
-              data-css-phnd7x=""
-            >
-              One item
-            </span>
+              data-css-1t1vq03=""
+            />
           </span>
         </button>
         <div
@@ -4121,7 +4105,7 @@ Array [
         aria-autocomplete="list"
         aria-controls="dropdown-menu-unique-id"
         aria-expanded={false}
-        defaultValue="One item"
+        defaultValue=""
         disabled={false}
         id="dropdown-input-unique-id"
         onKeyDown={[Function]}
@@ -4155,9 +4139,9 @@ Array [
                 Shown until selection made
               </span>
               <span
-                data-css-phnd7x=""
+                data-css-1t1vq03=""
               >
-                One item
+                Shown until selection made
               </span>
             </span>
           </button>
@@ -4203,7 +4187,7 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant="dropdown-menu-unique-id-Preselectedthreeitem"
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
@@ -4241,9 +4225,9 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
               Shown because can't find option
             </span>
             <span
-              data-css-phnd7x=""
+              data-css-1t1vq03=""
             >
-              Preselected three item
+              Shown because can't find option
             </span>
           </span>
         </button>

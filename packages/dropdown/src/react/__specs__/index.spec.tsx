@@ -255,3 +255,24 @@ it('value set as label if option has no value', async () => {
   const input = await screen.findByRole('combobox')
   expect(input).toHaveValue('Three')
 })
+
+it('item onClick is triggered', async () => {
+  const onClick = jest.fn()
+  render(
+    <Dropdown
+      placeholder="Select"
+      menu={
+        <>
+          <Dropdown.Item onClick={onClick}>One</Dropdown.Item>
+        </>
+      }
+    />
+  )
+  const button = screen.getByRole('button', { name: 'Select' })
+  userEvent.click(button)
+
+  const item = screen.getByRole('option', { name: /One/ })
+  userEvent.click(item)
+
+  expect(onClick).toHaveBeenCalledWith(expect.any(Object), 'One')
+})
