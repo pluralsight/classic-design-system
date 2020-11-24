@@ -34,23 +34,12 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   menu: React.ReactNode
   menuId: string
   menuPosition: { top: number; left: number }
-  selectedItemId?: string
   // TODO: use and fix
   width: ReactText
 }
 export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
   (
-    {
-      inNode,
-      isOpen,
-      menu,
-      menuId,
-      menuPosition,
-      onClick,
-      selectedItemId,
-      width,
-      ...rest
-    },
+    { inNode, isOpen, menu, menuId, menuPosition, width, ...rest },
     forwardedRef
   ) => {
     const context = useContext(DropdownContext)
@@ -62,9 +51,6 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
 
     useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
 
-    // TODO: ensure originContext usages get vars.origins.topLeft
-    // TODO: refactor out menuWrapper?
-    // TODO: remove onClick from ul?
     return (
       menu &&
       isOpen &&
@@ -73,7 +59,6 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
           <div
             {...styles.menu()}
             ref={ref}
-            onClick={onClick}
             role="listbox"
             id={menuId}
             {...rest}
