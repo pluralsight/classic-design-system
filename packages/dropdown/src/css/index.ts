@@ -213,7 +213,7 @@ export default {
     display: 'block'
   },
 
-  '.psds-dropdown--selected-icon': {
+  '.psds-dropdown__selected-icon': {
     marginLeft: 'auto',
     color: colorsBlue[7]
   },

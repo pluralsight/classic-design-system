@@ -8,21 +8,17 @@ import stylesheet from '../css'
 import { DropdownContext, formatItemId } from '../js'
 
 const styles = {
-  // TODO: verify proper BEM
-  icon: () => css(stylesheet['.psds-dropdown--selected-icon']),
   item: (isActive: boolean, disabled: boolean) =>
     css(
       stylesheet['.psds-dropdown__item'],
       disabled && stylesheet['.psds-dropdown__item--disabled'],
       isActive && stylesheet['.psds-dropdown__item--active']
     ),
-  itemInner: () => css(stylesheet['.psds-dropdown__item-inner']),
   itemIcon: () => css(stylesheet[`.psds-dropdown__item-icon`]),
-  // TODO: rename?
-  itemEllipsis: () => css(stylesheet[`.psds-dropdown__item-ellipsis`])
+  itemEllipsis: () => css(stylesheet[`.psds-dropdown__item-text`]),
+  itemSelectedIcon: () => css(stylesheet['.psds-dropdown__item-selected-icon'])
 }
 
-// TODO: breaking change: rm href
 interface DropdownItemProps
   extends Omit<HTMLPropsFor<'button'>, 'ref' | 'onClick'> {
   children: ReactText
@@ -59,7 +55,7 @@ export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
       >
         <span {...styles.itemIcon()}>{icon}</span>
         <span {...styles.itemEllipsis()}>{children}</span>
-        {isSelected && <CheckIcon {...styles.icon()} />}
+        {isSelected && <CheckIcon {...styles.itemSelectedIcon()} />}
       </button>
     )
   }
