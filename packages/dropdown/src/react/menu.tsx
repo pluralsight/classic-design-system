@@ -1,55 +1,87 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import {
   HTMLPropsFor,
   createUniversalPortal,
-  cloneElementWithRef
+  useCloseOnDocumentEvents
 } from '@pluralsight/ps-design-system-util'
-import React, { forwardRef, cloneElement } from 'react'
-import { css } from 'glamor'
+import React, {
+  ReactText,
+  forwardRef,
+  useImperativeHandle,
+  useRef
+} from 'react'
+import { css, keyframes } from 'glamor'
 
 import stylesheet from '../css'
-import { Item } from './item'
+
+const slide = keyframes(
+  stylesheet['@keyframes psds-dropdown__menu__keyframes__slide']
+)
 
 const styles = {
-  menuWrapper: css(stylesheet['.psds-dropdown__menu-wrapper']),
-  menu: css(stylesheet['.psds-dropdown__menu'])
+  menuWrapper: () => css(stylesheet['.psds-dropdown__menu-wrapper']),
+  menu: () =>
+    css(
+      stylesheet['.psds-dropdown__menu'],
+      stylesheet['.psds-dropdown__menu__animation']({ slide })
+    )
 }
 
-interface DropdownMenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
+interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   inNode?: HTMLElement
   isOpen: boolean
   menu: React.ReactNode
   menuId: string
   menuPosition: { top: number; left: number }
-  onClick: (e: React.MouseEvent, v?: React.ReactText) => void
+  // TODO: use/rm?
   onClose: () => void
   selectedItemId?: string
-  width: React.ReactText
+  // TODO: use and fix
+  width: ReactText
 }
-export const Menu = forwardRef<HTMLUListElement, DropdownMenuProps>(
-  (props, ref) => {
+export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
+  (
+    {
+      inNode,
+      isOpen,
+      menu,
+      menuId,
+      menuPosition,
+      onClick,
+      onClose,
+      selectedItemId,
+      width,
+      ...rest
+    },
+    forwardedRef
+  ) => {
+    const ref = useRef<HTMLDivElement | null>(null)
+    useImperativeHandle<HTMLDivElement | null, HTMLDivElement | null>(
+      forwardedRef,
+      () => ref.current
+    )
+
+    useCloseOnDocumentEvents<HTMLDivElement>(ref, onClose)
+
+    // TODO: ensure originContext usages get vars.origins.topLeft
+    // TODO: refactor out menuWrapper?
+    // TODO: remove onClick from ul?
     return (
-      props.menu &&
-      props.isOpen &&
+      menu &&
+      isOpen &&
       createUniversalPortal(
-        <div {...styles.menuWrapper} style={props.menuPosition}>
-          <ActionMenu
-            {...styles.menu}
-            onClick={props.onClick}
-            role="listbox"
-            onClose={props.onClose}
-            style={{
-              minWidth: '0',
-              maxWidth: 'none',
-              width: props.width
-            }}
-            id={props.menuId}
+        <div {...styles.menuWrapper()} style={menuPosition}>
+          <div
+            {...styles.menu()}
             ref={ref}
+            onClick={onClick}
+            role="listbox"
+            id={menuId}
+            {...rest}
           >
-            {props.menu}
-          </ActionMenu>
+            {menu}
+          </div>
         </div>,
-        props.inNode
+        inNode
       )
     )
   }

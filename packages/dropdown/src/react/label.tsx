@@ -15,6 +15,7 @@ interface LabelProps {
   label?: ReactNode
   inputId: string
 }
+// TODO: fix theming
 export const Label: FC<LabelProps> = props => {
   const themeName = useTheme()
   return (

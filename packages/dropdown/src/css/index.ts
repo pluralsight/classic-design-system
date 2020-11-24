@@ -6,6 +6,7 @@ import {
   colorsStatus,
   colorsTextIcon,
   layout,
+  motion,
   type
 } from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
@@ -14,6 +15,13 @@ import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import * as vars from '../vars'
 
 export default {
+  '@keyframes psds-dropdown__menu__keyframes__slide': {
+    '100%': {
+      transform: 'translate(0,0)',
+      opacity: 1
+    }
+  },
+
   '.psds-dropdown': {
     display: 'inline-block',
     position: 'relative'
@@ -173,8 +181,31 @@ export default {
   },
   '.psds-dropdown__menu': {
     maxHeight: 400,
-    overflowY: 'auto'
+    maxWidth: 'none',
+    overflowY: 'auto',
+
+    display: 'inline-block',
+    marginLeft: 0,
+    background: colorsBackgroundLight[3],
+    borderRadius: '2px',
+    padding: `${layout.spacingXXSmall} 0`,
+    /* minWidth: menuMinWidth, */
+    /* maxWidth: '320px', */
+    listStyle: 'none',
+    boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
+    fontSize: type.fontSizeSmall,
+    opacity: 0,
+
+    // from origin
+    transform: `translate(0, calc(-1 * ${layout.spacingXSmall}))`,
+    right: 0,
+    top: 0
   },
+  '.psds-dropdown__menu__animation': ({ slide }: { slide: string }) => ({
+    animation: `${slide || 'psds-dropdown__menu__keyframes__slide'} ${
+      motion.speedNormal
+    } forwards`
+  }),
 
   '.psds-dropdown__field-halo': {
     maxWidth: '100%',
@@ -187,9 +218,55 @@ export default {
     color: colorsBlue[7]
   },
 
-  '.psds-dropdown--item-text': {
+  // TODO: rm :focus?
+  '.psds-dropdown__item': {
+    label: 'dropdown__item',
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'left',
+    width: '100%',
+    transition: `background ${motion.speedXFast}`,
+    color: colorsTextIcon.highOnLight,
+    lineHeight: type.lineHeightExtra,
+    fontWeight: type.fontWeightMedium,
+    cursor: 'pointer',
+    border: 'none',
+    paddingTop: '0',
+    paddingBottom: '0',
+    paddingLeft: layout.spacingMedium,
+    paddingRight: layout.spacingMedium,
+    background: 'none',
+
+    '&:hover, &:focus': {
+      outline: 'none'
+    },
+    '&:focus': {
+      background: colorsBackgroundUtility[25],
+      color: colorsTextIcon.highOnLight
+    },
+    '&:hover:not(:disabled)': {
+      background: colorsBackgroundUtility[25],
+      color: colorsTextIcon.highOnLight
+    }
+  },
+  '.psds-dropdown__item--active': {
+    '&:not(:disabled)': {
+      background: colorsBackgroundUtility[25],
+      color: colorsTextIcon.highOnLight
+    }
+  },
+  '.psds-dropdown__item-ellipsis': {
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+
     '&:not(:last-child)': {
       marginRight: layout.spacingXSmall
     }
+  },
+  '.psds-actionmenu__item-icon': {
+    display: 'inline-flex',
+    alignItems: 'center',
+    marginRight: layout.spacingXSmall
   }
 }

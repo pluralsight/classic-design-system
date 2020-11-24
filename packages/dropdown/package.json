@@ -20,7 +20,6 @@
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^15.3.9",
     "@pluralsight/ps-design-system-core": "^6.5.2",
     "@pluralsight/ps-design-system-halo": "^7.1.12",
     "@pluralsight/ps-design-system-icon": "^19.0.10",

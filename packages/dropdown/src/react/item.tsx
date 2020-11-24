@@ -8,39 +8,57 @@ import stylesheet from '../css'
 import { DropdownContext, formatItemId } from '../js'
 
 const styles = {
-  icon: css(stylesheet['.psds-dropdown--selected-icon']),
-  text: css(stylesheet['.psds-dropdown--item-text'])
+  // TODO: verify proper BEM
+  icon: () => css(stylesheet['.psds-dropdown--selected-icon']),
+  item: (isActive: boolean) =>
+    css(
+      stylesheet['.psds-dropdown__item'],
+      isActive && stylesheet['.psds-dropdown__item--active']
+    ),
+  itemInner: () => css(stylesheet['.psds-dropdown__item-inner']),
+  itemIcon: () => css(stylesheet[`.psds-dropdown__item-icon`]),
+  // TODO: rename?
+  itemEllipsis: () => css(stylesheet[`.psds-dropdown__item-ellipsis`])
 }
 
+// TODO: breaking change: rm href
 interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'ref'> {
   children: ReactText
+  disabled?: boolean
   icon?: ReactNode
   value?: ReactText
-  menu?: ReactNode
 }
 
-export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
-  ({ value, icon, menu, children, ...rest }, forwardedRef): any => {
+export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
+  ({ disabled, value, icon, children, ...rest }, forwardedRef): any => {
     const context = useContext(DropdownContext)
     const isActive = value && context.activeValue === value
-    const showSelectedValue = value && context.selectedValue === value
+    const isSelected = value && context.selectedValue === value
 
+    const handleClick = (evt: React.MouseEvent) => {
+      context.onMenuClick(evt, value || children)
+      /* rest.onClick && rest.onClick(evt, value) */
+      /* onClickContext && onClickContext(evt, value) */
+      /* rest.onClose && rest.onClose(evt, value) */
+    }
+
+    // TODO: verify disabled working
+    // TODO: verify onClick gets passed in (as well as other props)
     return (
-      <ActionMenu.Item
-        active={isActive}
-        aria-selected={isActive}
+      <button
+        {...styles.item(isActive)}
+        disabled={disabled}
+        onClick={handleClick}
         role="option"
-        tagName="button"
-        value={value || children}
-        nested={menu}
-        {...rest}
+        ref={forwardedRef}
         id={formatItemId(context.menuId, value, children as string)}
-        ref={forwardedRef as RefFor<'li'>}
+        tabIndex={-1}
+        {...rest}
       >
-        <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
-        <ActionMenu.Ellipsis {...styles.text}>{children}</ActionMenu.Ellipsis>
-        {showSelectedValue && <CheckIcon {...styles.icon} />}
-      </ActionMenu.Item>
+        <span {...styles.itemIcon()}>{icon}</span>
+        <span {...styles.itemEllipsis()}>{children}</span>
+        {isSelected && <CheckIcon {...styles.icon()} />}
+      </button>
     )
   }
 )

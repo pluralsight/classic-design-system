@@ -20,10 +20,12 @@ import * as vars from '../vars'
 
 interface DropdownContextValue {
   activeValue?: number | string
+  onMenuClick: (evt: React.MouseEvent, value?: number | string) => void
   menuId?: string
   selectedValue?: number | string
 }
 export const DropdownContext = createContext<DropdownContextValue>({
+  onMenuClick: (_evt, _value) => {},
   selectedValue: ''
 })
 
@@ -190,6 +192,7 @@ export const useDropdown = (
     }
   }
 
+  // TODO: rename handleMenuClick
   function handleMenuChange(evt: React.MouseEvent, value?: React.ReactText) {
     const innerText = (evt.currentTarget as HTMLElement).innerText
     const newLabel = value === innerText ? value : innerText
@@ -251,7 +254,6 @@ export const useDropdown = (
       isOpen,
       menuId,
       menuPosition,
-      onClick: handleMenuChange,
       onClose: () => {
         setOpen(false)
       },
@@ -266,6 +268,7 @@ export const useDropdown = (
     value: {
       value: {
         activeValue: items[activeIndex]?.value,
+        onMenuClick: handleMenuChange,
         menuId,
         selectedValue
       }

@@ -459,31 +459,6 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('nested', () => (
-    <Dropdown
-      label="Level"
-      placeholder="Select another one"
-      menu={
-        <>
-          <Dropdown.Item>One item</Dropdown.Item>
-          <Dropdown.Item>Two item</Dropdown.Item>
-          <Dropdown.Item>Three item</Dropdown.Item>
-          <Dropdown.Item
-            menu={
-              <>
-                <Dropdown.Item>3 - One item</Dropdown.Item>
-                <Dropdown.Item>3 - Two item</Dropdown.Item>
-                <Dropdown.Item>3 - Three item</Dropdown.Item>
-              </>
-            }
-            icon={<Icon.CheckIcon />}
-          >
-            Three and the amazing item
-          </Dropdown.Item>
-        </>
-      }
-    />
-  ))
   .add('onClicks', () => (
     <Dropdown
       label="Level"
@@ -495,24 +470,6 @@ storiesOf('menu', module)
           <Dropdown.Item onClick={action('one')}>One item</Dropdown.Item>
           <Dropdown.Item onClick={action('two')}>Two item</Dropdown.Item>
           <Dropdown.Item onClick={action('three')}>Three item</Dropdown.Item>
-          <Dropdown.Item
-            menu={
-              <>
-                <Dropdown.Item onClick={action('three - One')}>
-                  3 - One item
-                </Dropdown.Item>
-                <Dropdown.Item onClick={action('three - Two')}>
-                  3 - Two item
-                </Dropdown.Item>
-                <Dropdown.Item onClick={action('three -  Three')}>
-                  3 - Three item
-                </Dropdown.Item>
-              </>
-            }
-            icon={<Icon.CheckIcon />}
-          >
-            Three and the amazing item
-          </Dropdown.Item>
         </>
       }
     />
@@ -525,37 +482,6 @@ storiesOf('menu', module)
         <>
           <Dropdown.Item>One item</Dropdown.Item>
           <Dropdown.Item>Two item</Dropdown.Item>
-        </>
-      }
-    />
-  ))
-  .add('w/ longer nested menu item label', () => (
-    <Dropdown
-      label="Level"
-      menu={
-        <>
-          <Dropdown.Item>Short</Dropdown.Item>
-          <Dropdown.Item
-            menu={
-              <>
-                <Dropdown.Item
-                  menu={
-                    <>
-                      <Dropdown.Item>This is pretty longest</Dropdown.Item>
-                      <Dropdown.Item>
-                        The longest in el mundo. Find me!
-                      </Dropdown.Item>
-                    </>
-                  }
-                >
-                  Longer and longer
-                </Dropdown.Item>
-                <Dropdown.Item>This one is longer</Dropdown.Item>
-              </>
-            }
-          >
-            Short enough
-          </Dropdown.Item>
         </>
       }
     />
