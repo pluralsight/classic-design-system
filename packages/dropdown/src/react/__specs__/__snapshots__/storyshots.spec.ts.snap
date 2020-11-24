@@ -2817,7 +2817,6 @@ exports[`Storyshots menu divider 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
@@ -4187,7 +4186,7 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
     data-css-6wu9td=""
   >
     <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
+      aria-activedescendant="dropdown-menu-unique-id-Preselectedthreeitem"
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
@@ -4225,9 +4224,9 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
               Shown because can't find option
             </span>
             <span
-              data-css-1t1vq03=""
+              data-css-phnd7x=""
             >
-              Shown because can't find option
+              Preselected three item
             </span>
           </span>
         </button>

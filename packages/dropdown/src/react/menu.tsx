@@ -34,7 +34,6 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   menu: React.ReactNode
   menuId: string
   menuPosition: { top: number; left: number }
-  // TODO: use and fix
   width: ReactText
 }
 export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
@@ -62,6 +61,12 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
             role="listbox"
             id={menuId}
             {...rest}
+            style={{
+              minWidth: 0,
+              maxWidth: 'none',
+              width,
+              ...rest.style
+            }}
           >
             {menu}
           </div>

@@ -213,11 +213,6 @@ export default {
     display: 'block'
   },
 
-  '.psds-dropdown__selected-icon': {
-    marginLeft: 'auto',
-    color: colorsBlue[7]
-  },
-
   '.psds-dropdown__item': {
     label: 'dropdown__item',
     display: 'flex',
@@ -256,7 +251,12 @@ export default {
       color: colorsTextIcon.highOnLight
     }
   },
-  '.psds-dropdown__item-ellipsis': {
+  '.psds-actionmenu__item-icon': {
+    display: 'inline-flex',
+    alignItems: 'center',
+    marginRight: layout.spacingXSmall
+  },
+  '.psds-dropdown__item-text': {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -265,9 +265,8 @@ export default {
       marginRight: layout.spacingXSmall
     }
   },
-  '.psds-actionmenu__item-icon': {
-    display: 'inline-flex',
-    alignItems: 'center',
-    marginRight: layout.spacingXSmall
+  '.psds-dropdown__item-selected-icon': {
+    /* marginLeft: 'auto', */
+    color: colorsBlue[7]
   }
 }
