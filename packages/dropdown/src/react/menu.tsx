@@ -7,11 +7,13 @@ import React, {
   ReactText,
   forwardRef,
   useImperativeHandle,
+  useContext,
   useRef
 } from 'react'
 import { css, keyframes } from 'glamor'
 
 import stylesheet from '../css'
+import { DropdownContext } from '../js'
 
 const slide = keyframes(
   stylesheet['@keyframes psds-dropdown__menu__keyframes__slide']
@@ -32,8 +34,6 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   menu: React.ReactNode
   menuId: string
   menuPosition: { top: number; left: number }
-  // TODO: use/rm?
-  onClose: () => void
   selectedItemId?: string
   // TODO: use and fix
   width: ReactText
@@ -47,20 +47,20 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
       menuId,
       menuPosition,
       onClick,
-      onClose,
       selectedItemId,
       width,
       ...rest
     },
     forwardedRef
   ) => {
+    const context = useContext(DropdownContext)
     const ref = useRef<HTMLDivElement | null>(null)
     useImperativeHandle<HTMLDivElement | null, HTMLDivElement | null>(
       forwardedRef,
       () => ref.current
     )
 
-    useCloseOnDocumentEvents<HTMLDivElement>(ref, onClose)
+    useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
 
     // TODO: ensure originContext usages get vars.origins.topLeft
     // TODO: refactor out menuWrapper?

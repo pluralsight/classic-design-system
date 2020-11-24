@@ -20,11 +20,13 @@ import * as vars from '../vars'
 
 interface DropdownContextValue {
   activeValue?: number | string
+  onDocumentEvents: (evt: Event) => void
   onMenuClick: (evt: React.MouseEvent, value?: number | string) => void
   menuId?: string
   selectedValue?: number | string
 }
 export const DropdownContext = createContext<DropdownContextValue>({
+  onDocumentEvents: _evt => {},
   onMenuClick: (_evt, _value) => {},
   selectedValue: ''
 })
@@ -255,9 +257,6 @@ export const useDropdown = (
       isOpen,
       menuId,
       menuPosition,
-      onClose: () => {
-        setOpen(false)
-      },
       width
     },
     selected: {
@@ -269,6 +268,9 @@ export const useDropdown = (
     value: {
       value: {
         activeValue: items[activeIndex]?.value,
+        onDocumentEvents: (_evt: Event) => {
+          setOpen(false)
+        },
         onMenuClick: handleMenuItemClick,
         menuId,
         selectedValue
