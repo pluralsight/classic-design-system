@@ -72,7 +72,7 @@ it('opens the menu with space key', () => {
 
   const button = screen.getByRole('button', { name: 'Select' })
   button.focus()
-  fireEvent.keyDown(button, { key: ' ', code: 'Space' })
+  spaceKey()
 
   const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
@@ -98,7 +98,7 @@ it('opens the menu with enter key', () => {
 
   const button = screen.getByRole('button', { name: 'Select' })
   button.focus()
-  fireEvent.keyDown(button, { key: 'Enter', code: 'Enter' })
+  enterKey()
 
   const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
@@ -124,7 +124,7 @@ it('opens the menu with down arrow', () => {
 
   const button = screen.getByRole('button', { name: 'Select' })
   button.focus()
-  fireEvent.keyDown(button, { key: 'ArrowDown', code: 'ArrowDown' })
+  arrowDownKey()
 
   const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
@@ -150,12 +150,12 @@ it('closes the menu with escape', () => {
 
   const button = screen.getByRole('button', { name: 'Select' })
   button.focus()
-  fireEvent.keyDown(button, { key: 'ArrowDown', code: 'ArrowDown' })
+  arrowDownKey()
 
   let menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
 
-  fireEvent.keyDown(document.activeElement, { key: 'Escape', code: 'Escape' })
+  escapeKey()
   menu = screen.queryByRole('listbox')
   expect(menu).not.toBeInTheDocument()
 })
@@ -208,27 +208,12 @@ it('navigates by arrows, selects by enter', () => {
   )
   const button = screen.getByRole('button', { name: 'Two' })
   button.focus()
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
+  enterKey()
 
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowDown',
-    code: 'ArrowDown'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowUp',
-    code: 'ArrowUp'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowUp',
-    code: 'ArrowUp'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
+  arrowDownKey()
+  arrowUpKey()
+  arrowUpKey()
+  enterKey()
 
   const input = screen.getByRole('combobox')
   expect(input).toHaveValue('o')
@@ -247,19 +232,10 @@ it('navigates value-less items by arrows/enter', () => {
   )
   const button = screen.getByRole('button', { name: 'Select' })
   button.focus()
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
+  enterKey()
 
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowDown',
-    code: 'ArrowDown'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
+  arrowDownKey()
+  enterKey()
 
   const input = screen.getByRole('combobox')
   expect(input).toHaveValue('Two')
@@ -285,43 +261,18 @@ it('re-navigates, active index is maintained on selection', () => {
   )
   const button = screen.getByRole('button', { name: 'Two' })
   button.focus()
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
-
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowDown',
-    code: 'ArrowDown'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowUp',
-    code: 'ArrowUp'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowUp',
-    code: 'ArrowUp'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
+  enterKey()
+  arrowDownKey()
+  arrowUpKey()
+  arrowUpKey()
+  enterKey()
 
   let input = screen.getByRole('combobox')
   expect(input).toHaveValue('o')
 
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'ArrowDown',
-    code: 'ArrowDown'
-  })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
+  enterKey()
+  arrowDownKey()
+  enterKey()
 
   input = screen.getByRole('combobox')
   expect(input).toHaveValue('w')
@@ -411,18 +362,38 @@ it('calls on change with keydown on value', () => {
   )
   const button = screen.getByRole('button', { name: 'Select' })
   button.focus()
+  enterKey()
+  arrowDownKey()
+  enterKey()
+
+  expect(onChange).toHaveBeenCalledWith(expect.any(Object), 'w')
+})
+
+function enterKey() {
   fireEvent.keyDown(document.activeElement, {
     key: 'Enter',
     code: 'Enter'
   })
+}
+
+function spaceKey() {
+  fireEvent.keyDown(document.activeElement, { key: ' ', code: 'Space' })
+}
+
+function arrowDownKey() {
   fireEvent.keyDown(document.activeElement, {
     key: 'ArrowDown',
     code: 'ArrowDown'
   })
-  fireEvent.keyDown(document.activeElement, {
-    key: 'Enter',
-    code: 'Enter'
-  })
+}
 
-  expect(onChange).toHaveBeenCalledWith(expect.any(Object), 'w')
-})
+function arrowUpKey() {
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowUp',
+    code: 'ArrowUp'
+  })
+}
+
+function escapeKey() {
+  fireEvent.keyDown(document.activeElement, { key: 'Escape', code: 'Escape' })
+}
