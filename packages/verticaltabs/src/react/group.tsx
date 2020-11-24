@@ -4,14 +4,15 @@ import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import {
   RefForwardingComponent,
   ValueOf,
+  HTMLPropsFor,
   omit
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React, {
-  HTMLAttributes,
   ReactElement,
   cloneElement,
   forwardRef,
+  HTMLAttributes,
   isValidElement,
   useState
 } from 'react'
@@ -50,7 +51,7 @@ const styles = {
   headerLabel: () => css(stylesheet['.psds-verticaltabs__header__label'])
 }
 
-interface GroupProps extends HTMLAttributes<HTMLLIElement> {
+interface GroupProps extends HTMLPropsFor<'li'> {
   header?: ReactElement<typeof GroupHeader>
   startOpen?: boolean
 }
@@ -95,7 +96,7 @@ Group.Header = GroupHeader
 Group.displayName = 'VerticalTabs.Group'
 Group.Header.displayName = 'VerticalTabs.Group.Header'
 
-interface CollapsibleGroupProps extends HTMLAttributes<HTMLDivElement> {
+interface CollapsibleGroupProps extends HTMLPropsFor<'div'> {
   groupButtonAriaLabel?: string
   header?: ReactElement<typeof CollapsibleGroupHeader>
   startOpen?: boolean

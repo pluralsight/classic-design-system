@@ -1,9 +1,9 @@
 import { css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import Star from './star'
 import stylesheet from '../css'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 const styles = {
   screenReaderInput: () =>
@@ -12,7 +12,7 @@ const styles = {
     css(stylesheet[`.psds-starrating__screen-reader-text`])
 }
 
-interface ScreenReaderInputProps extends HTMLAttributes<HTMLInputElement> {
+interface ScreenReaderInputProps extends HTMLPropsFor<'input'> {
   type: string
   min: number
   max: number
@@ -24,12 +24,11 @@ const ScreenReaderInput: React.FC<ScreenReaderInputProps> = props => (
   <input {...styles.screenReaderInput()} tabIndex={-1} {...props} />
 )
 
-const ScreenReaderText: React.FC<HTMLAttributes<HTMLSpanElement>> = props => (
+const ScreenReaderText: React.FC<HTMLPropsFor<'span'>> = props => (
   <span {...styles.screenReaderText()} {...props} />
 )
 
-export interface StarRatingProps
-  extends Omit<HTMLAttributes<HTMLDivElement>, 'onChange'> {
+export interface StarRatingProps extends Omit<HTMLPropsFor<'div'>, 'onChange'> {
   onChange?: (
     val: React.ReactText,
     evt: React.ChangeEvent | React.MouseEvent
