@@ -234,6 +234,37 @@ it('navigates by arrows, selects by enter', async () => {
   expect(input).toHaveValue('o')
 })
 
+it('navigates value-less items by arrows/enter', async () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      menu={[
+        <Dropdown.Item key="1">One</Dropdown.Item>,
+        <Dropdown.Item key="2">Two</Dropdown.Item>,
+        <Dropdown.Item key="3">Three</Dropdown.Item>
+      ]}
+    />
+  )
+  const button = screen.getByRole('button', { name: 'Select' })
+  button.focus()
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowDown',
+    code: 'ArrowDown'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+
+  const input = await screen.findByRole('combobox')
+  expect(input).toHaveValue('Two')
+})
+
 it('re-navigates, active index is maintained on selection', async () => {
   render(
     <Dropdown
@@ -296,7 +327,7 @@ it('re-navigates, active index is maintained on selection', async () => {
   expect(input).toHaveValue('w')
 })
 
-it('value set as label if option has no value', async () => {
+it('label set as value if option has no value', async () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -338,3 +369,5 @@ it('item onClick is triggered', async () => {
 
   expect(onClick).toHaveBeenCalledWith(expect.any(Object), 'One')
 })
+
+it.todo('calls onchange')

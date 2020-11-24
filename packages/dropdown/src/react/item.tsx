@@ -34,10 +34,12 @@ export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
     forwardedRef
   ): any => {
     const context = useContext(DropdownContext)
-    const isActive = value && context.activeValue === value
+    const isActive =
+      (value && context.activeItem?.value === value) ||
+      context.activeItem?.label === children
     const isSelected =
-      (value && context.selectedValue === value) ||
-      context.selectedValue === children
+      (value && context.selectedItem?.value === value) ||
+      context.selectedItem?.label === children
 
     const handleClick = (evt: React.MouseEvent) => {
       context.onMenuClick(evt, value || children)

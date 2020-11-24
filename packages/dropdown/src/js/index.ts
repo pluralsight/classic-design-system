@@ -1,11 +1,11 @@
 import {
   Children,
-  Ref,
   HTMLAttributes,
+  ReactText,
+  Ref,
   createContext,
   useEffect,
   useImperativeHandle,
-  useLayoutEffect,
   useMemo,
   useRef,
   useState
@@ -19,11 +19,11 @@ import {
 import * as vars from '../vars'
 
 interface DropdownContextValue {
-  activeValue?: number | string
+  activeItem?: ItemData
   onDocumentEvents: (evt: Event) => void
   onMenuClick: (evt: React.MouseEvent, value?: number | string) => void
   menuId?: string
-  selectedValue?: number | string
+  selectedItem?: ItemData
 }
 export const DropdownContext = createContext<DropdownContextValue>({
   onDocumentEvents: _evt => {},
@@ -116,25 +116,21 @@ export const useDropdown = (
     menuId,
     hook.menu
   ])
-  const itemMatchingValueIndex = items.findIndex(
-    item =>
-      (typeof item.value !== 'undefined' && item.value === hook.value) ||
-      item.label === hook.value
+  const itemMatchingValueIndex = findIndexMatchingValueOrLabel(
+    items,
+    hook.value,
+    hook.value
   )
   const itemMatchingValue = items[itemMatchingValueIndex]
   const [activeIndex, setActiveIndex] = useState(
     itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0
   )
 
-  const [selectedLabel, setSelectedLabel] = useState(itemMatchingValue?.label)
-  const [selectedValue, setSelectedValue] = useState(hook.value)
+  const [selectedItem, setSelectedItem] = useState(itemMatchingValue)
 
   useEffect(() => {
-    const newLabel = itemMatchingValue?.label
-    const newValue = hook.value
-    setSelectedLabel(newLabel)
-    setSelectedValue(newValue)
-  }, [itemMatchingValue, hook.value])
+    setSelectedItem(itemMatchingValue)
+  }, [itemMatchingValue])
 
   useEffect(() => {
     function handleEscape(evt) {
@@ -179,12 +175,13 @@ export const useDropdown = (
 
     if (isOpen) {
       if (evt.key === 'ArrowDown') {
-        setActiveIndex(activeIndex < items.length - 1 ? activeIndex + 1 : 0)
+        const newActiveIndex =
+          activeIndex < items.length - 1 ? activeIndex + 1 : 0
+        setActiveIndex(newActiveIndex)
       } else if (evt.key === 'ArrowUp') {
         setActiveIndex(activeIndex > 0 ? activeIndex - 1 : 0)
       } else if (evt.key === 'Enter' || evt.key === ' ') {
-        setSelectedValue(items[activeIndex]?.value)
-        setSelectedLabel(items[activeIndex]?.label)
+        setSelectedItem(items[activeIndex])
         setOpen(false)
         buttonRef.current?.focus()
       }
@@ -195,14 +192,13 @@ export const useDropdown = (
     }
   }
 
-  function handleMenuItemClick(evt: React.MouseEvent, value?: React.ReactText) {
-    const innerText = (evt.currentTarget as HTMLElement).innerText
-    const newLabel = value === innerText ? value : innerText
-    setSelectedValue(value)
-    setSelectedLabel(newLabel)
+  function handleMenuItemClick(
+    evt: React.MouseEvent,
+    itemValue?: React.ReactText
+  ) {
+    setSelectedItem(findItemMatchingValueOrLabel(items, itemValue, itemValue))
     setOpen(false)
-    setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
-    if (typeof hook.onChange === 'function') hook.onChange(evt, value)
+    if (typeof hook.onChange === 'function') hook.onChange(evt, itemValue)
     if (buttonRef.current) {
       buttonRef.current.focus()
     }
@@ -233,14 +229,14 @@ export const useDropdown = (
     },
     input: {
       ...rest.input,
+      // TODO: replace with activeItem
       activeItemId: items[activeIndex]?.id,
       isOpen,
       inputId,
       onKeyDown: handleInputKeyDown,
       menuId,
       ref: inputRef,
-      selectedLabel,
-      selectedValue
+      selectedItem
     },
     label: {
       ...rest.label,
@@ -257,24 +253,45 @@ export const useDropdown = (
     selected: {
       ...rest.selected,
       label: longestLabel,
-      selectedLabel
+      selectedItem
     },
     subLabel: rest.subLabel,
     value: {
       value: {
-        activeValue: items[activeIndex]?.value,
+        activeItem: items[activeIndex],
         onDocumentEvents: (_evt: Event) => {
           setOpen(false)
         },
         onMenuClick: handleMenuItemClick,
         menuId,
-        selectedValue
+        selectedItem
       }
     }
   }
 }
 
-interface ItemData {
+function findIndexMatchingValueOrLabel(
+  items: ItemData[],
+  label: ReactText,
+  value?: ReactText
+): number {
+  return items.findIndex(
+    item =>
+      (typeof item.value !== 'undefined' && item.value === value) ||
+      item.label === label
+  )
+}
+
+function findItemMatchingValueOrLabel(
+  items: ItemData[],
+  label: ReactText,
+  value?: ReactText
+) {
+  const index = findIndexMatchingValueOrLabel(items, label, value)
+  return items[index]
+}
+
+export interface ItemData {
   id: string
   label: string
   value?: string | number

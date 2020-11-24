@@ -2,31 +2,23 @@ import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React, { forwardRef, ReactText } from 'react'
 
+import { ItemData } from '../js'
+
 interface DropdownInputProps extends HTMLPropsFor<'input'> {
   activeItemId?: string
   disabled?: boolean
   isOpen: boolean
   inputId: string
   menuId: string
-  selectedLabel?: string
-  selectedValue?: ReactText
+  selectedItem?: ItemData
 }
 
 export const Input = forwardRef<HTMLInputElement, DropdownInputProps>(
   (
-    {
-      activeItemId,
-      disabled,
-      isOpen,
-      inputId,
-      menuId,
-      selectedLabel,
-      selectedValue,
-      ...rest
-    },
+    { activeItemId, disabled, isOpen, inputId, menuId, selectedItem, ...rest },
     ref
   ) => {
-    const value = selectedValue || selectedLabel || ''
+    const value = selectedItem?.value || selectedItem?.label || ''
     return (
       <ScreenReaderOnly key={value}>
         <input
