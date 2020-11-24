@@ -1,6 +1,7 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import React from 'react'
 import { css } from 'glamor'
+import React from 'react'
+
 import stylesheet from '../css'
 
 const styles = {

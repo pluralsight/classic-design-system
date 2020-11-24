@@ -210,21 +210,18 @@ export const useDropdown = (
   }
 
   const longestLabel = getLongestMenuLabel(items, hook.placeholder)
-  const [width, setWidth] = useState<React.ReactText>('auto')
 
   const buttonRef = useRef<HTMLButtonElement>()
   useImperativeHandle(forwardedRef, () => buttonRef.current)
 
-  useLayoutEffect(() => {
-    if (!buttonRef.current) return
-
-    setWidth(buttonRef.current.getBoundingClientRect().width)
-  }, [])
-
   const inputRef = useRef<HTMLInputElement>()
 
   const inNode = canUseDOM() ? document.body : null
-  const [menuPosition, setMenuPosition] = useState({ left: 0, top: 0 })
+  const [menuPosition, setMenuPosition] = useState({
+    left: 0,
+    top: 0,
+    width: 0
+  })
 
   return {
     button: {
@@ -256,8 +253,7 @@ export const useDropdown = (
       inNode,
       isOpen,
       menuId,
-      menuPosition,
-      width
+      menuPosition
     },
     selected: {
       ...rest.selected,

@@ -176,27 +176,20 @@ export default {
   // __menu
   '.psds-dropdown__menu-wrapper': {
     position: 'fixed',
+    // TODO: use layers when in core
     zIndex: 980,
     marginTop: layout.spacingXXSmall
   },
   '.psds-dropdown__menu': {
     maxHeight: 400,
-    maxWidth: 'none',
     overflowY: 'auto',
-
-    display: 'inline-block',
-    marginLeft: 0,
+    display: 'block',
     background: colorsBackgroundLight[3],
     borderRadius: '2px',
     padding: `${layout.spacingXXSmall} 0`,
-    /* minWidth: menuMinWidth, */
-    /* maxWidth: '320px', */
-    listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     fontSize: type.fontSizeSmall,
     opacity: 0,
-
-    // from origin
     transform: `translate(0, calc(-1 * ${layout.spacingXSmall}))`,
     right: 0,
     top: 0
@@ -266,7 +259,7 @@ export default {
     }
   },
   '.psds-dropdown__item-selected-icon': {
-    /* marginLeft: 'auto', */
+    marginLeft: 'auto',
     color: colorsBlue[7]
   }
 }

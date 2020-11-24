@@ -33,14 +33,11 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   isOpen: boolean
   menu: React.ReactNode
   menuId: string
-  menuPosition: { top: number; left: number }
-  width: ReactText
+  menuPosition: { top: number; left: number; width: number }
 }
+
 export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
-  (
-    { inNode, isOpen, menu, menuId, menuPosition, width, ...rest },
-    forwardedRef
-  ) => {
+  ({ inNode, isOpen, menu, menuId, menuPosition, ...rest }, forwardedRef) => {
     const context = useContext(DropdownContext)
     const ref = useRef<HTMLDivElement | null>(null)
     useImperativeHandle<HTMLDivElement | null, HTMLDivElement | null>(
@@ -61,12 +58,6 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
             role="listbox"
             id={menuId}
             {...rest}
-            style={{
-              minWidth: 0,
-              maxWidth: 'none',
-              width,
-              ...rest.style
-            }}
           >
             {menu}
           </div>
