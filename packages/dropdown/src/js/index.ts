@@ -194,8 +194,7 @@ export const useDropdown = (
     }
   }
 
-  // TODO: rename handleMenuClick
-  function handleMenuChange(evt: React.MouseEvent, value?: React.ReactText) {
+  function handleMenuItemClick(evt: React.MouseEvent, value?: React.ReactText) {
     const innerText = (evt.currentTarget as HTMLElement).innerText
     const newLabel = value === innerText ? value : innerText
     setSelectedValue(value)
@@ -270,7 +269,7 @@ export const useDropdown = (
     value: {
       value: {
         activeValue: items[activeIndex]?.value,
-        onMenuClick: handleMenuChange,
+        onMenuClick: handleMenuItemClick,
         menuId,
         selectedValue
       }
