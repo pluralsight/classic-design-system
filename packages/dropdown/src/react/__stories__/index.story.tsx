@@ -70,21 +70,37 @@ appearanceStory.add('gaps', () => (
   </div>
 ))
 
-storiesOf('disabled', module).add('compare', () => (
-  <div>
-    <Dropdown
-      label="Normal"
-      subLabel="Still normal"
-      placeholder="I'm normal, see"
-    />
-    <Dropdown
-      label="I'm not usable"
-      subLabel="Neither am I"
-      disabled
-      placeholder="I'm untouchable"
-    />
-  </div>
-))
+storiesOf('disabled', module)
+  .add('compare dropdown', () => (
+    <div>
+      <Dropdown
+        label="Normal"
+        subLabel="Still normal"
+        placeholder="I'm normal, see"
+      />
+      <Dropdown
+        label="I'm not usable"
+        subLabel="Neither am I"
+        disabled
+        placeholder="I'm untouchable"
+      />
+    </div>
+  ))
+  .add('compare items', () => (
+    <div>
+      <Dropdown
+        label="Normal"
+        placeholder="Has mixed labels"
+        menu={
+          <>
+            <Dropdown.Item>Normal Label 1</Dropdown.Item>
+            <Dropdown.Item disabled>Disabled Label 2</Dropdown.Item>
+            <Dropdown.Item>Normal Label 3</Dropdown.Item>
+          </>
+        }
+      />
+    </div>
+  ))
 
 storiesOf('whitelist', module)
   .add('onChange', () => {
@@ -234,16 +250,30 @@ storiesOf('layouts', module)
 
 storiesOf('value', module)
   .add('no preselection', () => (
-    <Dropdown
-      placeholder="Shown until selection made"
-      menu={
-        <>
-          <Dropdown.Item value="o">One item</Dropdown.Item>
-          <Dropdown.Item value="w">Two item</Dropdown.Item>
-          <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
-        </>
-      }
-    />
+    <>
+      <h2>With values</h2>
+      <Dropdown
+        placeholder="Shown until selection made"
+        menu={
+          <>
+            <Dropdown.Item value="o">One item</Dropdown.Item>
+            <Dropdown.Item value="w">Two item</Dropdown.Item>
+            <Dropdown.Item value="h">Three item</Dropdown.Item>
+          </>
+        }
+      />
+      <h2>Just labels</h2>
+      <Dropdown
+        placeholder="Shown until selection made"
+        menu={
+          <>
+            <Dropdown.Item>One item</Dropdown.Item>
+            <Dropdown.Item>Two item</Dropdown.Item>
+            <Dropdown.Item>Three item</Dropdown.Item>
+          </>
+        }
+      />
+    </>
   ))
   .add('shows pre-selected item by label', () => (
     <Dropdown

@@ -10,9 +10,10 @@ import { DropdownContext, formatItemId } from '../js'
 const styles = {
   // TODO: verify proper BEM
   icon: () => css(stylesheet['.psds-dropdown--selected-icon']),
-  item: (isActive: boolean) =>
+  item: (isActive: boolean, disabled: boolean) =>
     css(
       stylesheet['.psds-dropdown__item'],
+      disabled && stylesheet['.psds-dropdown__item--disabled'],
       isActive && stylesheet['.psds-dropdown__item--active']
     ),
   itemInner: () => css(stylesheet['.psds-dropdown__item-inner']),
@@ -42,11 +43,10 @@ export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
       /* rest.onClose && rest.onClose(evt, value) */
     }
 
-    // TODO: verify disabled working
     // TODO: verify onClick gets passed in (as well as other props)
     return (
       <button
-        {...styles.item(isActive)}
+        {...styles.item(isActive, disabled)}
         disabled={disabled}
         onClick={handleClick}
         role="option"

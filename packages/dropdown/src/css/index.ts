@@ -218,7 +218,6 @@ export default {
     color: colorsBlue[7]
   },
 
-  // TODO: rm :focus?
   '.psds-dropdown__item': {
     label: 'dropdown__item',
     display: 'flex',
@@ -237,17 +236,19 @@ export default {
     paddingRight: layout.spacingMedium,
     background: 'none',
 
-    '&:hover, &:focus': {
+    '&:hover': {
       outline: 'none'
-    },
-    '&:focus': {
-      background: colorsBackgroundUtility[25],
-      color: colorsTextIcon.highOnLight
     },
     '&:hover:not(:disabled)': {
       background: colorsBackgroundUtility[25],
       color: colorsTextIcon.highOnLight
     }
+  },
+  '.psds-dropdown__item--disabled': {
+    opacity: '50%',
+    cursor: 'not-allowed',
+    outline: 'none',
+    pointerEvents: 'none'
   },
   '.psds-dropdown__item--active': {
     '&:not(:disabled)': {
