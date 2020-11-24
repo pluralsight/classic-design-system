@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-circularprogress",
-  "version": "7.0.9",
+  "version": "7.0.10",
   "description": "Design System component for circular progress ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,7 +22,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.2",
-    "@pluralsight/ps-design-system-screenreaderonly": "^2.1.12",
+    "@pluralsight/ps-design-system-screenreaderonly": "^2.1.13",
     "@pluralsight/ps-design-system-util": "^6.0.3"
   },
   "peerDependencies": {
