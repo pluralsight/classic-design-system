@@ -1,11 +1,11 @@
-import { waitFor, fireEvent, screen } from '@testing-library/dom'
+import { fireEvent, screen } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import React from 'react'
 
 import Dropdown from '..'
 
-it('has an input queryable by label', async () => {
+it('has an input queryable by label', () => {
   render(
     <Dropdown
       label="Level"
@@ -24,11 +24,11 @@ it('has an input queryable by label', async () => {
       value="w"
     />
   )
-  const input = await screen.findByLabelText('Level')
+  const input = screen.getByLabelText('Level')
   expect(input).toHaveValue('w')
 })
 
-it('button click opens the menu', async () => {
+it('button click opens the menu', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -45,14 +45,14 @@ it('button click opens the menu', async () => {
       ]}
     />
   )
-  const button = await screen.findByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: 'Select' })
   userEvent.click(button)
 
   const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
 })
 
-it('opens the menu with space key', async () => {
+it('opens the menu with space key', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -78,7 +78,7 @@ it('opens the menu with space key', async () => {
   expect(menu).toBeInTheDocument()
 })
 
-it('opens the menu with enter key', async () => {
+it('opens the menu with enter key', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -100,11 +100,11 @@ it('opens the menu with enter key', async () => {
   button.focus()
   fireEvent.keyDown(button, { key: 'Enter', code: 'Enter' })
 
-  const menu = await waitFor(() => screen.getByRole('listbox'))
+  const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
 })
 
-it('opens the menu with down arrow', async () => {
+it('opens the menu with down arrow', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -130,7 +130,7 @@ it('opens the menu with down arrow', async () => {
   expect(menu).toBeInTheDocument()
 })
 
-it('closes the menu with escape', async () => {
+it('closes the menu with escape', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -160,7 +160,7 @@ it('closes the menu with escape', async () => {
   expect(menu).not.toBeInTheDocument()
 })
 
-it('selects by click', async () => {
+it('selects by click', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -184,11 +184,11 @@ it('selects by click', async () => {
   const item = screen.getByRole('option', { name: /Three/ })
   userEvent.click(item)
 
-  const input = await screen.findByRole('combobox')
+  const input = screen.getByRole('combobox')
   expect(input).toHaveValue('h')
 })
 
-it('navigates by arrows, selects by enter', async () => {
+it('navigates by arrows, selects by enter', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -230,11 +230,11 @@ it('navigates by arrows, selects by enter', async () => {
     code: 'Enter'
   })
 
-  const input = await screen.findByRole('combobox')
+  const input = screen.getByRole('combobox')
   expect(input).toHaveValue('o')
 })
 
-it('navigates value-less items by arrows/enter', async () => {
+it('navigates value-less items by arrows/enter', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -261,11 +261,11 @@ it('navigates value-less items by arrows/enter', async () => {
     code: 'Enter'
   })
 
-  const input = await screen.findByRole('combobox')
+  const input = screen.getByRole('combobox')
   expect(input).toHaveValue('Two')
 })
 
-it('re-navigates, active index is maintained on selection', async () => {
+it('re-navigates, active index is maintained on selection', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -327,7 +327,7 @@ it('re-navigates, active index is maintained on selection', async () => {
   expect(input).toHaveValue('w')
 })
 
-it('label set as value if option has no value', async () => {
+it('label set as value if option has no value', () => {
   render(
     <Dropdown
       placeholder="Select"
@@ -345,11 +345,11 @@ it('label set as value if option has no value', async () => {
   const item = screen.getByRole('option', { name: /Three/ })
   userEvent.click(item)
 
-  const input = await screen.findByRole('combobox')
+  const input = screen.getByRole('combobox')
   expect(input).toHaveValue('Three')
 })
 
-it('item onClick is triggered', async () => {
+it('item onClick is triggered', () => {
   const onClick = jest.fn()
   render(
     <Dropdown
@@ -370,4 +370,59 @@ it('item onClick is triggered', async () => {
   expect(onClick).toHaveBeenCalledWith(expect.any(Object), 'One')
 })
 
-it.todo('calls onchange')
+it('calls on change with click on label text', () => {
+  const onChange = jest.fn()
+  render(
+    <Dropdown
+      placeholder="Select"
+      onChange={onChange}
+      menu={
+        <>
+          <Dropdown.Item>One</Dropdown.Item>
+          <Dropdown.Item>Two</Dropdown.Item>
+          <Dropdown.Item>Three</Dropdown.Item>
+        </>
+      }
+    />
+  )
+  const button = screen.getByRole('button', { name: 'Select' })
+  userEvent.click(button)
+
+  const item = screen.getByRole('option', { name: /Three/ })
+  userEvent.click(item)
+
+  expect(onChange).toHaveBeenCalledWith(expect.any(Object), 'Three')
+})
+
+it('calls on change with keydown on value', () => {
+  const onChange = jest.fn()
+  render(
+    <Dropdown
+      placeholder="Select"
+      onChange={onChange}
+      menu={
+        <>
+          <Dropdown.Item value="o">One</Dropdown.Item>
+          <Dropdown.Item value="w">Two</Dropdown.Item>
+          <Dropdown.Item value="h">Three</Dropdown.Item>
+        </>
+      }
+    />
+  )
+  const button = screen.getByRole('button', { name: 'Select' })
+  button.focus()
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'ArrowDown',
+    code: 'ArrowDown'
+  })
+  fireEvent.keyDown(document.activeElement, {
+    key: 'Enter',
+    code: 'Enter'
+  })
+
+  expect(onChange).toHaveBeenCalledWith(expect.any(Object), 'w')
+})

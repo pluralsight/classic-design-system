@@ -2854,7 +2854,7 @@ exports[`Storyshots menu divider 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-1t1vq03=""
+              data-css-phnd7x=""
             />
           </span>
         </button>
@@ -4445,7 +4445,7 @@ exports[`Storyshots value value is not an item in the list 1`] = `
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
-      defaultValue="unknown"
+      defaultValue=""
       disabled={false}
       id="dropdown-input-unique-id"
       onKeyDown={[Function]}

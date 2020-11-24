@@ -27,8 +27,7 @@ interface DropdownContextValue {
 }
 export const DropdownContext = createContext<DropdownContextValue>({
   onDocumentEvents: _evt => {},
-  onMenuClick: (_evt, _value) => {},
-  selectedValue: ''
+  onMenuClick: (_evt, _value) => {}
 })
 
 interface UseDropdownProps
@@ -39,7 +38,10 @@ interface UseDropdownProps
   error?: boolean
   label?: React.ReactNode
   menu?: React.ReactNode
-  onChange?: (e: React.MouseEvent, v: React.ReactText) => void
+  onChange?: (
+    e: React.MouseEvent | React.KeyboardEvent,
+    v: React.ReactText
+  ) => void
   onClick?: (e: React.MouseEvent | React.KeyboardEvent) => void
   placeholder?: string
   size?: ValueOf<typeof vars.sizes>
@@ -183,6 +185,9 @@ export const useDropdown = (
       } else if (evt.key === 'Enter' || evt.key === ' ') {
         setSelectedItem(items[activeIndex])
         setOpen(false)
+        if (typeof hook.onChange === 'function') {
+          hook.onChange(evt, items[activeIndex].value)
+        }
         buttonRef.current?.focus()
       }
     } else {
