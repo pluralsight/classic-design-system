@@ -47,8 +47,7 @@ const styles = {
       css(
         stylesheet[`.psds-actionmenu__nested.psds-actionmenu--origin-${origin}`]
       )
-    ),
-  textOnly: () => css(stylesheet['.psds-actionmenu__text-only'])
+    )
 }
 
 interface BaseItemProps {
