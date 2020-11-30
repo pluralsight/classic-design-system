@@ -1,20 +1,21 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
 import React from 'react'
-import { compose, css } from 'glamor'
+
 import stylesheet from '../css'
 
-const styles = ({ disabled }) => {
-  const label = 'psds-dropdown'
-
-  return compose(
-    css(stylesheet[`.${label}`]),
-    disabled && css(stylesheet[`.${label}--disabled`])
-  )
+const styles = {
+  layout: (disabled?: boolean) =>
+    css(
+      stylesheet[`.psds-dropdown`],
+      disabled && stylesheet[`.psds-dropdown--disabled`]
+    )
 }
 
-interface DropdownLayoutProps extends HTMLPropsFor<'label'> {
+interface DropdownLayoutProps extends HTMLPropsFor<'div'> {
   button: React.ReactNode
   disabled?: boolean
+  input?: React.ReactNode
   label?: React.ReactNode
   menu?: React.ReactNode
   onKeyDown?: (e: React.KeyboardEvent) => void
@@ -22,27 +23,23 @@ interface DropdownLayoutProps extends HTMLPropsFor<'label'> {
 }
 
 export const Layout: React.FC<DropdownLayoutProps> = ({
-  className,
   button,
   disabled,
+  input,
   label,
   menu,
   onKeyDown,
-  style,
-  subLabel
+  subLabel,
+  ...rest
 }) => {
   return (
-    <label
-      {...styles({ disabled })}
-      style={style}
-      className={className}
-      onKeyDown={onKeyDown}
-    >
+    <div {...styles.layout(disabled)} onKeyDown={onKeyDown} {...rest}>
       {label}
+      {input}
       {button}
       {menu}
       {subLabel}
-    </label>
+    </div>
   )
 }
 

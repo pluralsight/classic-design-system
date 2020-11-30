@@ -43,7 +43,15 @@ interface DropdownButtonProps extends HTMLPropsFor<'button'> {
   error?: boolean
   isOpen?: boolean
   onClick?: React.MouseEventHandler<HTMLButtonElement>
-  setMenuPosition?: ({ left, top }: { left: number; top: number }) => void
+  setMenuPosition?: ({
+    left,
+    top,
+    width
+  }: {
+    left: number
+    top: number
+    width: number
+  }) => void
   size?: ValueOf<typeof vars.sizes>
 }
 
@@ -66,8 +74,15 @@ export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
     const fieldContainerRef = useRef<HTMLDivElement>()
     useLayoutEffect(() => {
       if (!isOpen) return
-      const { left, bottom } = fieldContainerRef.current.getBoundingClientRect()
-      requestAnimationFrame(() => setMenuPosition({ left, top: bottom }))
+      const {
+        left,
+        bottom,
+        width
+      } = fieldContainerRef.current.getBoundingClientRect()
+      const requestId = requestAnimationFrame(() =>
+        setMenuPosition({ left, top: bottom, width })
+      )
+      return () => cancelAnimationFrame(requestId)
     }, [fieldContainerRef, isOpen, setMenuPosition])
     return (
       <div {...styles.fieldContainer()} ref={fieldContainerRef}>

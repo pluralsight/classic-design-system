@@ -2,7 +2,7 @@
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 
-import React, { forwardRef, useState, HTMLAttributes } from 'react'
+import React, { useEffect, forwardRef, useState, HTMLAttributes } from 'react'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Dropdown from '../'
@@ -70,21 +70,37 @@ appearanceStory.add('gaps', () => (
   </div>
 ))
 
-storiesOf('disabled', module).add('compare', () => (
-  <div>
-    <Dropdown
-      label="Normal"
-      subLabel="Still normal"
-      placeholder="I'm normal, see"
-    />
-    <Dropdown
-      label="I'm not usable"
-      subLabel="Neither am I"
-      disabled
-      placeholder="I'm untouchable"
-    />
-  </div>
-))
+storiesOf('disabled', module)
+  .add('compare dropdown', () => (
+    <div>
+      <Dropdown
+        label="Normal"
+        subLabel="Still normal"
+        placeholder="I'm normal, see"
+      />
+      <Dropdown
+        label="I'm not usable"
+        subLabel="Neither am I"
+        disabled
+        placeholder="I'm untouchable"
+      />
+    </div>
+  ))
+  .add('compare items', () => (
+    <div>
+      <Dropdown
+        label="Normal"
+        placeholder="Has mixed labels"
+        menu={
+          <>
+            <Dropdown.Item>Normal Label 1</Dropdown.Item>
+            <Dropdown.Item disabled>Disabled Label 2</Dropdown.Item>
+            <Dropdown.Item>Normal Label 3</Dropdown.Item>
+          </>
+        }
+      />
+    </div>
+  ))
 
 storiesOf('whitelist', module)
   .add('onChange', () => {
@@ -232,18 +248,119 @@ storiesOf('layouts', module)
     return <ChangeStory />
   })
 
-storiesOf('placeholder', module).add('as pre-selected item', () => (
-  <Dropdown
-    placeholder="Two item"
-    menu={
-      <>
-        <Dropdown.Item>One item</Dropdown.Item>
-        <Dropdown.Item>Two item</Dropdown.Item>
-        <Dropdown.Item>Three item</Dropdown.Item>
-      </>
+storiesOf('value', module)
+  .add('no preselection', () => (
+    <>
+      <h2>With values</h2>
+      <Dropdown
+        placeholder="Shown until selection made"
+        menu={
+          <>
+            <Dropdown.Item value="o">One item</Dropdown.Item>
+            <Dropdown.Item value="w">Two item</Dropdown.Item>
+            <Dropdown.Item value="h">Three item</Dropdown.Item>
+          </>
+        }
+      />
+      <h2>Just labels</h2>
+      <Dropdown
+        placeholder="Shown until selection made"
+        menu={
+          <>
+            <Dropdown.Item>One item</Dropdown.Item>
+            <Dropdown.Item>Two item</Dropdown.Item>
+            <Dropdown.Item>Three item</Dropdown.Item>
+          </>
+        }
+      />
+    </>
+  ))
+  .add('shows pre-selected item by label', () => (
+    <Dropdown
+      placeholder="Shown because can't find option"
+      value="Preselected three item"
+      menu={
+        <>
+          <Dropdown.Item>One item</Dropdown.Item>
+          <Dropdown.Item>Two item</Dropdown.Item>
+          <Dropdown.Item>Preselected three item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('shows pre-selected item by value', () => (
+    <Dropdown
+      placeholder="Not shown until empty"
+      value="h"
+      menu={
+        <>
+          <Dropdown.Item value="o">One item</Dropdown.Item>
+          <Dropdown.Item value="w">Two item</Dropdown.Item>
+          <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('value is not an item in the list', () => (
+    <Dropdown
+      placeholder="Shown because can't find option"
+      value="unknown"
+      menu={
+        <>
+          <Dropdown.Item value="o">One item</Dropdown.Item>
+          <Dropdown.Item value="w">Two item</Dropdown.Item>
+          <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
+        </>
+      }
+    />
+  ))
+  .add('external state change', () => {
+    function StateChange() {
+      const values = ['o', 'w', 'h']
+      const [value, setValue] = useState(values[0])
+      useEffect(() => {
+        const timerId = setInterval(() => {
+          const i = values.findIndex(v => v === value)
+          setValue(i < values.length - 1 ? values[i + 1] : values[0])
+        }, 1000)
+
+        return () => clearInterval(timerId)
+      })
+
+      return (
+        <Dropdown
+          placeholder="Not shown until empty"
+          value={value}
+          menu={
+            <>
+              <Dropdown.Item value="o">One item</Dropdown.Item>
+              <Dropdown.Item value="w">Two item</Dropdown.Item>
+              <Dropdown.Item value="h">Preselected three item</Dropdown.Item>
+            </>
+          }
+        />
+      )
     }
-  />
-))
+    return <StateChange />
+  })
+
+  .add('test the spec', () => (
+    <Dropdown
+      placeholder="Select"
+      value="w"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  ))
 
 storiesOf('menu', module)
   .add('single list', () => (
@@ -390,31 +507,6 @@ storiesOf('menu', module)
       }
     />
   ))
-  .add('nested', () => (
-    <Dropdown
-      label="Level"
-      placeholder="Select another one"
-      menu={
-        <>
-          <Dropdown.Item>One item</Dropdown.Item>
-          <Dropdown.Item>Two item</Dropdown.Item>
-          <Dropdown.Item>Three item</Dropdown.Item>
-          <Dropdown.Item
-            menu={
-              <>
-                <Dropdown.Item>3 - One item</Dropdown.Item>
-                <Dropdown.Item>3 - Two item</Dropdown.Item>
-                <Dropdown.Item>3 - Three item</Dropdown.Item>
-              </>
-            }
-            icon={<Icon.CheckIcon />}
-          >
-            Three and the amazing item
-          </Dropdown.Item>
-        </>
-      }
-    />
-  ))
   .add('onClicks', () => (
     <Dropdown
       label="Level"
@@ -426,24 +518,6 @@ storiesOf('menu', module)
           <Dropdown.Item onClick={action('one')}>One item</Dropdown.Item>
           <Dropdown.Item onClick={action('two')}>Two item</Dropdown.Item>
           <Dropdown.Item onClick={action('three')}>Three item</Dropdown.Item>
-          <Dropdown.Item
-            menu={
-              <>
-                <Dropdown.Item onClick={action('three - One')}>
-                  3 - One item
-                </Dropdown.Item>
-                <Dropdown.Item onClick={action('three - Two')}>
-                  3 - Two item
-                </Dropdown.Item>
-                <Dropdown.Item onClick={action('three -  Three')}>
-                  3 - Three item
-                </Dropdown.Item>
-              </>
-            }
-            icon={<Icon.CheckIcon />}
-          >
-            Three and the amazing item
-          </Dropdown.Item>
         </>
       }
     />
@@ -456,37 +530,6 @@ storiesOf('menu', module)
         <>
           <Dropdown.Item>One item</Dropdown.Item>
           <Dropdown.Item>Two item</Dropdown.Item>
-        </>
-      }
-    />
-  ))
-  .add('w/ longer nested menu item label', () => (
-    <Dropdown
-      label="Level"
-      menu={
-        <>
-          <Dropdown.Item>Short</Dropdown.Item>
-          <Dropdown.Item
-            menu={
-              <>
-                <Dropdown.Item
-                  menu={
-                    <>
-                      <Dropdown.Item>This is pretty longest</Dropdown.Item>
-                      <Dropdown.Item>
-                        The longest in el mundo. Find me!
-                      </Dropdown.Item>
-                    </>
-                  }
-                >
-                  Longer and longer
-                </Dropdown.Item>
-                <Dropdown.Item>This one is longer</Dropdown.Item>
-              </>
-            }
-          >
-            Short enough
-          </Dropdown.Item>
         </>
       }
     />

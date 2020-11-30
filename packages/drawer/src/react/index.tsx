@@ -1,128 +1,146 @@
-import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import {
-  HTMLPropsFor,
-  ValueOf,
-  canUseDOM
-} from '@pluralsight/ps-design-system-util'
-import Collapsible from '@pluralsight/ps-design-system-collapsible'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
-import React, { useState, useEffect } from 'react'
+import { css } from 'glamor'
+import React, {
+  createContext,
+  useContext,
+  useImperativeHandle,
+  forwardRef
+} from 'react'
 
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
+import {
+  useToggle,
+  RefFor,
+  HTMLPropsFor,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+
+import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import stylesheet from '../css'
 
-if (canUseDOM()) require('element-closest')
-
 const styles = {
-  drawer: (themeName: ValueOf<typeof themeNames>) =>
-    css(stylesheet[`.psds-drawer.psds-theme--${themeName}`]),
-  base: ({ open }: { open: boolean }) =>
-    compose(
-      css(stylesheet['.psds-drawer__base']),
-      open && css(stylesheet['.psds-drawer__base--isOpen'])
+  head: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>
+    css(
+      stylesheet[`.psds-drawer__summary`],
+      isOpen && stylesheet['.psds-drawer__summary.psds-drawer--isOpen'],
+      stylesheet[`.psds-drawer__summary.psds-theme--${themeName}`]
     ),
-  panel: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-drawer__panel']),
-      css(stylesheet[`.psds-drawer__panel.psds-theme--${themeName}`])
+  body: (themeName: ValueOf<typeof themeNames>) =>
+    css(
+      stylesheet['.psds-drawer__details'],
+      stylesheet[`.psds-drawer__details.psds-theme--${themeName}`]
     ),
-  panelContent: () => css(stylesheet[`.psds-drawer__panel-content`]),
-  rotatable: ({ open }: { open: boolean }) =>
-    compose(
-      css(stylesheet['.psds-drawer__rotatable']),
-      open && css(stylesheet['.psds-drawer__rotatable--isOpen'])
-    ),
-  toggleButtonContainer: () =>
-    css(stylesheet[`.psds-drawer__toggle-button-container`]),
-  toggleButton: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet[`.psds-drawer__toggle-button`]),
-      css(stylesheet[`.psds-drawer__toggle-button.psds-theme--${themeName}`])
+  iconSlot: () => css(stylesheet['.psds-drawer__icon-slot']),
+  rotatable: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>
+    css(
+      stylesheet['.psds-drawer__rotatable'],
+      stylesheet[`.psds-drawer__rotatable.psds-theme--${themeName}`],
+      isOpen && stylesheet['.psds-drawer__rotatable.psds-drawer--isOpen']
     ),
   collapsible: () => css(stylesheet['.psds-drawer__collapsible'])
 }
 
-interface DrawerProps extends HTMLPropsFor<'div'> {
-  base: React.ReactNode
-  isOpen?: boolean
-  onToggle?: (open: boolean, evt: React.MouseEvent) => void
-  startOpen?: boolean
-  toggleButtonAriaLabel?: string
+interface DrawerContextValue {
+  isOpen: boolean
+  onToggle: () => unknown
 }
-const Drawer: React.FC<DrawerProps> = props => {
-  const {
-    base,
-    children,
-    isOpen,
-    onToggle,
-    toggleButtonAriaLabel,
-    startOpen = false,
-    ...rest
-  } = props
-  const themeName = useTheme()
+const initialValue = {
+  isOpen: false,
+  onToggle: () => {}
+}
 
-  const [controlled, setControlled] = useState<boolean | undefined>(undefined)
-  useEffect(() => {
-    if (controlled !== undefined) return
+const DrawerContext = createContext<DrawerContextValue>(initialValue)
 
-    setControlled(isOpen !== undefined)
-  }, [isOpen, controlled])
-
-  const [openState, setOpenState] = useState(startOpen)
-  const open = isOpen !== undefined ? isOpen : openState
-
-  const getButtonAriaLabel = (): string => {
-    const prefix = open ? 'Collapse' : 'Expand'
-    return toggleButtonAriaLabel ? `${prefix} ${toggleButtonAriaLabel}` : prefix
+export const useDrawerContext = () => {
+  const context = useContext(DrawerContext)
+  if (!context) {
+    throw new Error(
+      `Drawer compound components cannot be rendered outside the Drawer component`
+    )
   }
+  return context
+}
 
-  const handleClick: React.MouseEventHandler<HTMLDivElement> = evt => {
-    isClickOnDrawerBase(evt) && toggle(evt)
-  }
-
-  const isClickOnDrawerBase = (
-    evt: React.MouseEvent<HTMLDivElement>
-  ): boolean => {
-    const target = evt.target as HTMLElement
-    return !target.closest('a, button')
-  }
-
-  const toggle = (
-    evt: React.MouseEvent<HTMLButtonElement | HTMLDivElement>
-  ) => {
-    const nextOpen = !open
-    onToggle && onToggle(nextOpen, evt)
-    !controlled && setOpenState(nextOpen)
-  }
-
-  return (
-    <div {...styles.drawer(themeName)} {...rest}>
-      <div {...styles.base({ open })} onClick={handleClick}>
-        <div {...styles.panelContent()}>{base}</div>
-
-        <div {...styles.toggleButtonContainer()}>
-          <button
-            aria-label={getButtonAriaLabel()}
-            onClick={toggle}
-            {...styles.toggleButton(themeName)}
-          >
-            <div {...styles.rotatable({ open })}>
-              <CaretDownIcon />
-            </div>
-          </button>
+interface SummaryProps extends HTMLPropsFor<'div'> {}
+const Summary = forwardRef<HTMLDivElement, SummaryProps>(
+  ({ children, ...rest }, ref) => {
+    const themeName = useTheme()
+    const { isOpen, onToggle } = useDrawerContext()
+    return (
+      <div
+        {...styles.head(themeName, isOpen)}
+        onClick={onToggle}
+        ref={ref}
+        role="button"
+        aria-expanded={isOpen}
+        {...rest}
+      >
+        {children}
+        <div {...styles.iconSlot()}>
+          <CaretDownIcon {...styles.rotatable(themeName, isOpen)} />
+          <ScreenReaderOnly>
+            {isOpen ? 'Expanded' : 'Collapsed'}
+          </ScreenReaderOnly>
         </div>
       </div>
+    )
+  }
+)
 
-      <div {...styles.panel(themeName)}>
-        <Collapsible isOpen={open} {...styles.collapsible()}>
-          {children}
-        </Collapsible>
-      </div>
-    </div>
+interface DetailsProps extends HTMLPropsFor<'div'> {}
+const Details = forwardRef<HTMLDivElement, DetailsProps>(
+  (props, forwardedRef) => {
+    const themeName = useTheme()
+    const { isOpen } = useDrawerContext()
+    const { 'aria-hidden': ariaHidden, ref } = useCollapsible(isOpen)
+    useImperativeHandle(
+      forwardedRef,
+      () =>
+        (((ref as unknown) as RefFor<'div'>)
+          .current as unknown) as HTMLDivElement
+    )
+    return (
+      <div
+        aria-hidden={ariaHidden}
+        ref={ref}
+        {...styles.body(themeName)}
+        {...props}
+      />
+    )
+  }
+)
+
+interface DrawerStatics {
+  Summary: typeof Summary
+  Details: typeof Details
+}
+
+interface DrawerProps {
+  isOpen?: boolean
+  onToggle?: () => unknown
+}
+
+const Drawer: React.FC<DrawerProps> & DrawerStatics = ({
+  children,
+  isOpen,
+  onToggle
+}) => {
+  const value = useToggle({ isOpen, onToggle })
+  return (
+    <DrawerContext.Provider value={value}>{children}</DrawerContext.Provider>
   )
 }
+
+Summary.displayName = 'Drawer.Summary'
+
+Details.displayName = 'Drawer.Details'
+
+Drawer.displayName = 'Drawer'
+Drawer.Summary = Summary
+Drawer.Details = Details
 
 export default Drawer

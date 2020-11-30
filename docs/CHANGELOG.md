@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.12.1...@pluralsight/ps-design-system-docs@0.12.2) (2020-11-30)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.12.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.12.0...@pluralsight/ps-design-system-docs@0.12.1) (2020-11-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.12.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.11.0...@pluralsight/ps-design-system-docs@0.12.0) (2020-11-24)
+
+
+* Feat/drawer rc conversion (#1472) ([01cc3ce](https://github.com/pluralsight/design-system/commit/01cc3ce200afa8117eca187c56a658425bd5f1be)), closes [#1472](https://github.com/pluralsight/design-system/issues/1472)
+
+
+### BREAKING CHANGES
+
+* see docs
+
+
+
+
+
 # [0.11.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.10.4...@pluralsight/ps-design-system-docs@0.11.0) (2020-11-18)
 
 

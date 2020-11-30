@@ -4,9 +4,11 @@ import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 import * as vars from '../vars'
 
+import { ItemData } from '../js'
+
 const styles = {
   buttonSizer: () => css(stylesheet['.psds-dropdown__button-sizer']),
-  placeholder: ({ appearance, selectedLabel, size }) => {
+  placeholder: ({ appearance, selectedItem, size }) => {
     const label = 'psds-dropdown__placeholder'
     const isSmall = size === vars.sizes.small
     const placeholderColor =
@@ -20,7 +22,7 @@ const styles = {
     return compose(
       css(stylesheet[`.${label}`]),
       isSmall && css(stylesheet[`.${label}.psds-dropdown--small`]),
-      !selectedLabel && placeholderColor
+      !selectedItem && placeholderColor
     )
   }
 }
@@ -29,7 +31,7 @@ interface DropdownSelectedProps extends HTMLPropsFor<'label'> {
   appearance?: ValueOf<typeof vars.appearances>
   label?: string
   placeholder?: string
-  selectedLabel?: string
+  selectedItem?: ItemData
   size?: ValueOf<typeof vars.sizes>
 }
 
@@ -37,7 +39,7 @@ export const Selected: React.FC<DropdownSelectedProps> = ({
   appearance,
   label,
   placeholder,
-  selectedLabel,
+  selectedItem,
   size
 }) => {
   return (
@@ -45,8 +47,8 @@ export const Selected: React.FC<DropdownSelectedProps> = ({
       <span aria-hidden {...styles.buttonSizer()}>
         {label || placeholder}
       </span>
-      <span {...styles.placeholder({ appearance, selectedLabel, size })}>
-        {selectedLabel || placeholder}
+      <span {...styles.placeholder({ appearance, selectedItem, size })}>
+        {selectedItem?.label || placeholder}
       </span>
     </>
   )

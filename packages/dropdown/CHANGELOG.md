@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.11...@pluralsight/ps-design-system-dropdown@10.0.0) (2020-11-30)
+
+
+### Bug Fixes
+
+* **dropdown:** cleanup requestanimationframe in menu ([6e82e34](https://github.com/pluralsight/design-system/commit/6e82e34617d3d44cd8d4294fd5f5737ea42714bc))
+* **dropdown:** replace all spaces in id ([6fd43ac](https://github.com/pluralsight/design-system/commit/6fd43ac1af4db40e05f4cbcb318d6d04733176e0))
+
+
+### Code Refactoring
+
+* **dropdown:** item explicitly only takes ReactText as children ([0346d76](https://github.com/pluralsight/design-system/commit/0346d76482c51d3d11a0db63a09c3a0050c8e9f4))
+* **dropdown:** remove usage of ActionMenu ([9af4077](https://github.com/pluralsight/design-system/commit/9af407793b3ce3075b604d9b5d5ea56169826107))
+* **dropdown:** tsc fixes; change useDropdown onClick API ([5b9ea27](https://github.com/pluralsight/design-system/commit/5b9ea273529e3ca17c9b86d11beb308be6234a6b))
+
+
+### Features
+
+* **dropdown:** make accessible by label in test ([41328df](https://github.com/pluralsight/design-system/commit/41328df0f0e33e057bd0ef8a1ee582a48a677a81)), closes [/www.w3.org/TR/wai-aria-1.2/#example-6](https://github.com//www.w3.org/TR/wai-aria-1.2//issues/example-6)
+* **dropdown:** pre-select and select by label if value is not present ([1e2d9e4](https://github.com/pluralsight/design-system/commit/1e2d9e438e6b2b70b26c8d1508c1fdbb5688642d))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** Remove Dropdown.Item menu and href props. Dropdown.Item
+always renders as a button now. Anchors are no longer possible. Nested
+menus are also impossible.
+* **dropdown:** Dropdown.Item explicitly only takes ReactText as children
+* **dropdown:** useDropdown's onClick function event parameter may now
+be a React.KeyboardEvent
+* **dropdown:** The markup for the dropdown has changed a fair bit to
+follow the WAI-ARIA-1.2 guidelines for a combobox
+
+
+
+
+
+## [9.3.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.10...@pluralsight/ps-design-system-dropdown@9.3.11) (2020-11-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
 ## [9.3.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.9...@pluralsight/ps-design-system-dropdown@9.3.10) (2020-11-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

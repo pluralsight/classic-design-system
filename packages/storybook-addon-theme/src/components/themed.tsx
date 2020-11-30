@@ -23,6 +23,10 @@ const Container = styled.div<{ themeName: keyof typeof Theme.names }>`
     themeName === Theme.names.dark
       ? core.colorsBackgroundDark[2]
       : core.colorsBackgroundLight[2]};
+  color: ${({ themeName }) =>
+    themeName === Theme.names.dark
+      ? core.colorsTextIcon.highOnDark
+      : core.colorsTextIcon.highOnLight};
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;

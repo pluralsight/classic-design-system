@@ -11953,12 +11953,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       0
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -11981,12 +11981,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       1
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12009,12 +12009,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       2
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12037,12 +12037,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       3
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12065,12 +12065,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       4
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12093,12 +12093,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       5
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12121,12 +12121,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       6
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12149,12 +12149,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       7
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12201,12 +12201,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       0
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12229,12 +12229,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       1
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12257,12 +12257,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       2
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12285,12 +12285,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       3
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12313,12 +12313,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       4
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12341,12 +12341,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       5
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12369,12 +12369,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       6
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}
@@ -12397,12 +12397,12 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                     onClick={[Function]}
                     role="menuitem"
                   >
-                    <div
+                    <span
                       data-css-fxdh11=""
                     >
                       item: 
                       7
-                    </div>
+                    </span>
                   </a>
                   <ul
                     aria-expanded={false}

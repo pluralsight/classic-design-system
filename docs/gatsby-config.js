@@ -6,9 +6,16 @@ const remarkSlug = require('remark-slug')
 
 module.exports = {
   siteMetadata: {
-    title: 'Pluralsight Design System'
+    title: 'Pluralsight Design System',
+    siteUrl: 'https://design-system.pluralsight.com/'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        sitemapSize: 5000
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
