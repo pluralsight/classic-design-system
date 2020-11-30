@@ -1,56 +1,178 @@
+import { axe } from 'jest-axe'
 import React from 'react'
-import { fireEvent, render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import Table from '..'
+import * as stories from '../__stories__/index.story'
 
-describe('columnHeader', () => {
-  test('sorted=false onClick called with just evt', () => {
-    const spy = jest.fn()
-    const { getByRole, container } = render(
-      <Table.ColumnHeader onClick={spy}>Click me</Table.ColumnHeader>
-    )
-    const columnHeader = container.firstChild
-    expect(columnHeader).not.toHaveAttribute('aria-sort')
-    fireEvent.click(getByRole('button'))
-    expect(spy).toBeCalledWith(expect.anything(), undefined)
+type TableProps = React.ComponentProps<typeof Table>
+type RenderContainer = TableProps['renderContainer']
+
+describe('Table', () => {
+  const { Basic } = stories
+
+  it('should passes a basic a11y audit', async () => {
+    const { container } = render(<Basic />)
+    const results = await axe(container)
+
+    expect(results).toHaveNoViolations()
   })
 
-  test('sorted=true onClick called with asc', () => {
-    const spy = jest.fn()
-    const { getByRole, container } = render(
-      <Table.ColumnHeader sort onClick={spy}>
-        Click me
-      </Table.ColumnHeader>
-    )
-    const columnHeader = container.firstChild
-    expect(columnHeader).toHaveAttribute('aria-sort', 'none')
-    fireEvent.click(getByRole('button'))
-    expect(spy).toBeCalledWith(expect.anything(), Table.sorts.asc)
+  describe('Table', () => {
+    it('should forward refs', () => {
+      const ref = React.createRef<HTMLTableElement>()
+
+      render(<Table data-testid="undertest" ref={ref} />)
+      const el = screen.getByTestId('undertest')
+
+      expect(ref.current).not.toBeNull()
+      expect(ref.current).toBe(el)
+    })
+
+    describe('with a custom container', () => {
+      let ref: React.RefObject<HTMLElement>
+
+      beforeEach(() => {
+        ref = React.createRef<HTMLElement>()
+
+        const renderContainer: RenderContainer = props => (
+          <main
+            className="custom class names"
+            data-custom-attribute="i'm special"
+            data-testid="undertest"
+            ref={ref}
+            {...props}
+          />
+        )
+
+        render(
+          <Table renderContainer={renderContainer}>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell />
+              </Table.Row>
+            </Table.Body>
+          </Table>
+        )
+      })
+
+      it('should allow a custom tag', () => {
+        const el = screen.getByTestId('undertest')
+
+        expect(el).toBeInTheDocument()
+        expect(el.tagName.toLowerCase()).toEqual('main')
+      })
+
+      it('should allow custom classNames', () => {
+        const el = screen.getByTestId('undertest')
+
+        expect(el).toHaveClass('custom class names')
+      })
+
+      it('should allow data attributes', () => {
+        const el = screen.getByTestId('undertest')
+
+        expect(el).toHaveAttribute('data-custom-attribute', "i'm special")
+      })
+
+      it('should allow custom refs', () => {
+        const el = screen.getByTestId('undertest')
+
+        expect(ref.current).not.toBeNull()
+        expect(ref.current).toBe(el)
+      })
+    })
   })
 
-  test('sorted=asc onClick called with desc', () => {
-    const spy = jest.fn()
-    const { getByRole, container } = render(
-      <Table.ColumnHeader sort={Table.sorts.asc} onClick={spy}>
-        Click me
-      </Table.ColumnHeader>
-    )
-    const columnHeader = container.firstChild
-    expect(columnHeader).toHaveAttribute('aria-sort', 'ascending')
-    fireEvent.click(getByRole('button'))
-    expect(spy).toBeCalledWith(expect.anything(), Table.sorts.desc)
+  describe('Table.Body', () => {
+    it('should forward refs', () => {
+      const ref = React.createRef<HTMLTableSectionElement>()
+
+      render(
+        <Table>
+          <Table.Body data-testid="undertest" ref={ref} />
+        </Table>
+      )
+      const el = screen.getByTestId('undertest')
+
+      expect(ref.current).not.toBeNull()
+      expect(ref.current).toBe(el)
+    })
   })
 
-  test('sorted=desc onClick called with asc', () => {
-    const spy = jest.fn()
-    const { getByRole, container } = render(
-      <Table.ColumnHeader sort={Table.sorts.desc} onClick={spy}>
-        Click me
-      </Table.ColumnHeader>
-    )
-    const columnHeader = container.firstChild
-    expect(columnHeader).toHaveAttribute('aria-sort', 'descending')
-    fireEvent.click(getByRole('button'))
-    expect(spy).toBeCalledWith(expect.anything(), Table.sorts.asc)
+  describe('Table.Cell', () => {
+    it('should forward refs', () => {
+      const ref = React.createRef<HTMLTableCellElement>()
+
+      render(
+        <Table>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell data-testid="undertest" ref={ref} />
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      )
+      const el = screen.getByTestId('undertest')
+
+      expect(ref.current).not.toBeNull()
+      expect(ref.current).toBe(el)
+    })
+  })
+
+  describe('Table.Head', () => {
+    it('should forward refs', () => {
+      const ref = React.createRef<HTMLTableSectionElement>()
+
+      render(
+        <Table>
+          <Table.Head data-testid="undertest" ref={ref} />
+        </Table>
+      )
+      const el = screen.getByTestId('undertest')
+
+      expect(ref.current).not.toBeNull()
+      expect(ref.current).toBe(el)
+    })
+  })
+
+  describe('Table.Header', () => {
+    it('should forward refs', () => {
+      const ref = React.createRef<HTMLTableHeaderCellElement>()
+
+      render(
+        <Table>
+          <Table.Body>
+            <Table.Row>
+              <Table.Header data-testid="undertest" ref={ref} />
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      )
+      const el = screen.getByTestId('undertest')
+
+      expect(ref.current).not.toBeNull()
+      expect(ref.current).toBe(el)
+    })
+  })
+
+  describe('Table.Row', () => {
+    it('should forward refs', () => {
+      const ref = React.createRef<HTMLTableRowElement>()
+
+      render(
+        <Table>
+          <Table.Body>
+            <Table.Row data-testid="undertest" ref={ref}>
+              <Table.Cell />
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      )
+      const el = screen.getByTestId('undertest')
+
+      expect(ref.current).not.toBeNull()
+      expect(ref.current).toBe(el)
+    })
   })
 })
