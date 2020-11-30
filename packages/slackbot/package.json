@@ -1,8 +1,9 @@
 {
-  "name": "issueslackapp",
+  "name": "@pluralsight/psds-slackbot",
   "version": "1.0.0",
   "description": "Slack app with interface for creating Github Issues in pluralsight/design-system",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
