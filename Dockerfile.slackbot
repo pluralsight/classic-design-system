@@ -1,0 +1,36 @@
+# DOCKER STAGE: BUILD
+FROM node:11.4-alpine 
+
+ENV NODE_ENV=production
+
+RUN mkdir -p /usr/src/app
+
+COPY packages/slackbot/. /usr/src/app
+
+WORKDIR /usr/src/app
+
+RUN npm ci
+
+# ARG NEW_RELIC_APP_NAME=DesignSystemDocs::Production
+# ENV NEW_RELIC_APP_NAME $NEW_RELIC_APP_NAME
+
+ARG HOST=0.0.0.0
+ENV HOST $HOST
+
+ARG PORT=3000
+ENV PORT $PORT
+
+ENV TZ=America/Denver
+
+# ARG LOG_LEVEL=info
+# ENV LOG_LEVEL $LOG_LEVEL
+
+# the official node image provides an unprivileged user as a security best practice
+# https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#non-root-user
+USER node
+
+# TODO: add health check 
+# HEALTHCHECK --interval=5s --timeout=30s --retries=3 \
+#   CMD node /usr/src/app/health-check.js
+
+CMD ["node", "./app.js"]
