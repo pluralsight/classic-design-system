@@ -1,49 +1,65 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import React, {
-  forwardRef,
-  useContext,
-  useEffect,
-  useRef,
-  useImperativeHandle
-} from 'react'
+import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
+import React, { ReactNode, ReactText, forwardRef, useContext } from 'react'
 import { css } from 'glamor'
 
 import stylesheet from '../css'
-import { DropdownContext } from '../js'
+import { DropdownContext, formatItemId } from '../js'
 
 const styles = {
-  icon: css(stylesheet['.psds-dropdown--selected-icon']),
-  text: css(stylesheet['.psds-dropdown--item-text'])
+  item: (isActive: boolean, disabled: boolean) =>
+    css(
+      stylesheet['.psds-dropdown__item'],
+      disabled && stylesheet['.psds-dropdown__item--disabled'],
+      isActive && stylesheet['.psds-dropdown__item--active']
+    ),
+  itemIcon: () => css(stylesheet[`.psds-dropdown__item-icon`]),
+  itemEllipsis: () => css(stylesheet[`.psds-dropdown__item-text`]),
+  itemSelectedIcon: () => css(stylesheet['.psds-dropdown__item-selected-icon'])
 }
 
-interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'ref'> {
-  icon?: React.ReactNode
-  value?: React.ReactText
-  menu?: React.ReactNode
+interface DropdownItemProps
+  extends Omit<HTMLPropsFor<'button'>, 'ref' | 'onClick'> {
+  children: ReactText
+  disabled?: boolean
+  onClick?: (evt: React.MouseEvent, value: ReactText) => void
+  icon?: ReactNode
+  value?: ReactText
 }
 
-export const Item = forwardRef<HTMLLIElement, DropdownItemProps>(
-  ({ value, icon, menu, children, ...rest }, forwardedRef) => {
-    const selectedValue = useContext(DropdownContext)
-    const showSelectedValue = value && selectedValue === value
+export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
+  (
+    { disabled, onClick, value, icon, children, ...rest },
+    forwardedRef
+  ): any => {
+    const context = useContext(DropdownContext)
+    const isActive =
+      (value && context.activeItem?.value === value) ||
+      context.activeItem?.label === children
+    const isSelected =
+      (value && context.selectedItem?.value === value) ||
+      context.selectedItem?.label === children
 
-    const ref = useRef<HTMLLIElement>()
-    useImperativeHandle(forwardedRef, () => ref.current)
-
-    useEffect(() => {
-      if (showSelectedValue && ref.current) {
-        ref.current.focus()
-      }
-    }, [showSelectedValue])
+    const handleClick = (evt: React.MouseEvent) => {
+      context.onMenuClick(evt, value || children)
+      if (typeof onClick === 'function') onClick(evt, value || children)
+    }
 
     return (
-      <ActionMenu.Item tagName="button" value={value} nested={menu} {...rest}>
-        <ActionMenu.Icon marginLeft>{icon}</ActionMenu.Icon>
-        <ActionMenu.Ellipsis {...styles.text}>{children}</ActionMenu.Ellipsis>
-        {showSelectedValue && <CheckIcon {...styles.icon} />}
-      </ActionMenu.Item>
+      <button
+        {...styles.item(isActive, disabled)}
+        disabled={disabled}
+        onClick={handleClick}
+        role="option"
+        ref={forwardedRef}
+        id={formatItemId(context.menuId, value, children as string)}
+        tabIndex={-1}
+        {...rest}
+      >
+        <span {...styles.itemIcon()}>{icon}</span>
+        <span {...styles.itemEllipsis()}>{children}</span>
+        {isSelected && <CheckIcon {...styles.itemSelectedIcon()} />}
+      </button>
     )
   }
 )

@@ -20,12 +20,11 @@
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^15.3.10",
     "@pluralsight/ps-design-system-core": "^6.5.2",
     "@pluralsight/ps-design-system-halo": "^7.1.12",
     "@pluralsight/ps-design-system-icon": "^19.0.10",
-    "@pluralsight/ps-design-system-util": "^6.0.3",
-    "exenv": "^1.2.2"
+    "@pluralsight/ps-design-system-screenreaderonly": "^2.1.12",
+    "@pluralsight/ps-design-system-util": "^6.0.3"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

@@ -3,6 +3,7 @@ import initStoryshots from '@storybook/addon-storyshots'
 
 jest.mock('@pluralsight/ps-design-system-util', () => ({
   ...jest.requireActual('@pluralsight/ps-design-system-util'),
+  uniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id'),
   useUniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id')
 }))
 

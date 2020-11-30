@@ -11,6 +11,44 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 
 ## Examples
 
+### Controlling with value
+
+```typescript
+import React from 'react'
+import ActionMenu from '@pluralsight/ps-design-system-dropdown'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Button from '@pluralsight/ps-design-system-button'
+import { layout } from '@pluralsight/ps-design-system-core'
+
+function Example() {
+  const options = [
+    { value: 'beg', label: 'Beginner' },
+    { value: 'int', label: 'Intermediate' },
+    { value: 'adv', label: 'Advanced' }
+  ]
+  const [value, setValue] = React.useState(options[1].value)
+  return (
+    <div className="example-flex-column">
+      <Button onClick={() => setValue('beg')}>Set Beginner</Button>
+      <Dropdown
+        label="Level"
+        placeholder="Select"
+        onChange={(evt, value, label) => setValue(value)}
+        menu={options.map(opt => (
+          <Dropdown.Item key={opt.value} value={opt.value}>
+            {opt.label}
+          </Dropdown.Item>
+        ))}
+        value={value}
+      />
+      <div>Selected: {value}</div>
+    </div>
+  )
+}
+
+export default Example
+```
+
 ### Label
 
 Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
@@ -24,27 +62,6 @@ const Comp = () => (
   <div className="example-flex-column">
     <Dropdown
       label="Level"
-      menu={
-        <>
-          <Dropdown.Item>Beginner</Dropdown.Item>
-          <Dropdown.Item>Intermediate</Dropdown.Item>
-          <Dropdown.Item>Advanced</Dropdown.Item>
-        </>
-      }
-    />
-    <Dropdown
-      label="Level"
-      placeholder="Select level"
-      menu={
-        <>
-          <Dropdown.Item>Beginner</Dropdown.Item>
-          <Dropdown.Item>Intermediate</Dropdown.Item>
-          <Dropdown.Item>Advanced</Dropdown.Item>
-        </>
-      }
-    />
-    <Dropdown
-      label="Level"
       placeholder="Select level"
       subLabel="Which audience is this course aimed at?"
       menu={
@@ -56,31 +73,6 @@ const Comp = () => (
       }
     />
   </div>
-)
-export default Comp
-```
-
-### Pre-selected Label
-
-Primary identification of a dropdown comes through the label. Usage hints are given in the placeholder. Supporting text and error messaging is set in the subLabel.
-
-```typescript
-import React from 'react'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
-
-const Comp = () => (
-  <Dropdown
-    label="Level"
-    placeholder="Intermediate"
-    subLabel="Which audience is this course aimed at?"
-    menu={
-      <>
-        <Dropdown.Item>Beginner</Dropdown.Item>
-        <Dropdown.Item>Intermediate</Dropdown.Item>
-        <Dropdown.Item>Advanced</Dropdown.Item>
-      </>
-    }
-  />
 )
 export default Comp
 ```
@@ -106,6 +98,43 @@ const Comp = () => (
       </React.Fragment>
     }
   />
+)
+
+export default Comp
+```
+
+### Smaller dropdowns in tables
+
+For table rows, step down to the `small` size.
+
+```typescript
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <Dropdown
+      placeholder="Medium dropdown"
+      menu={
+        <>
+          <Dropdown.Item>Beginner</Dropdown.Item>
+          <Dropdown.Item>Intermediate</Dropdown.Item>
+          <Dropdown.Item>Advanced</Dropdown.Item>
+        </>
+      }
+    />
+    <Dropdown
+      size={Dropdown.sizes.small}
+      placeholder="Small dropdown"
+      menu={
+        <>
+          <Dropdown.Item>Beginner</Dropdown.Item>
+          <Dropdown.Item>Intermediate</Dropdown.Item>
+          <Dropdown.Item>Advanced</Dropdown.Item>
+        </>
+      }
+    />
+  </div>
 )
 
 export default Comp
@@ -152,52 +181,17 @@ const Comp = () => (
 export default Comp
 ```
 
-### Size
+### Menu scrolling
 
-The small dropdown is ideal for usage within table rows otherwise use the `default`, `medium` size dropdown, in forms for example.
+The dropdown component menu has a max height of 400px and will scroll for content needing more vertical space.
 
 ```typescript
 import React from 'react'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 
-const Comp = () => (
-  <div className="example-flex-column">
-    <Dropdown
-      placeholder="medium dropdown"
-      menu={
-        <>
-          <Dropdown.Item>Beginner</Dropdown.Item>
-          <Dropdown.Item>Intermediate</Dropdown.Item>
-          <Dropdown.Item>Advanced</Dropdown.Item>
-        </>
-      }
-    />
-    <Dropdown
-      size={Dropdown.sizes.small}
-      placeholder="Small dropdown"
-      menu={
-        <>
-          <Dropdown.Item>Beginner</Dropdown.Item>
-          <Dropdown.Item>Intermediate</Dropdown.Item>
-          <Dropdown.Item>Advanced</Dropdown.Item>
-        </>
-      }
-    />
-  </div>
-)
-
-export default Comp
-```
-
-### Max-height
-Ther dropdown component menu has a max height of 400px
-```typescript
-import React from 'react'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
-
-const Comp = () => (
+const Example = () => (
   <Dropdown
-    label="max height example"
+    label="Max height example"
     menu={
        <>
           <Dropdown.Item>One item</Dropdown.Item>
@@ -220,50 +214,10 @@ const Comp = () => (
   />
 )
 
-export default Comp
-```
-
-## Stateful Example
-
-```typescript
-import React from 'react'
-import ActionMenu from '@pluralsight/ps-design-system-dropdown'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
-import Button from '@pluralsight/ps-design-system-button'
-import { layout } from '@pluralsight/ps-design-system-core'
-
-function Example() {
-  const options = [
-    { value: 'beg', label: 'Beginner' },
-    { value: 'int', label: 'Intermediate' },
-    { value: 'adv', label: 'Advanced' }
-  ]
-  const [value, setValue] = React.useState(options[1].value)
-  return (
-    <div className="example-flex-column">
-      <Button onClick={() => setValue('beg')}>Set Beginner</Button>
-      <Dropdown
-        label="Level"
-        placeholder="Select"
-        onChange={(evt, value, label) => setValue(value)}
-        menu={options.map(opt => (
-          <Dropdown.Item key={opt.value} value={opt.value}>
-            {opt.label}
-          </Dropdown.Item>
-        ))}
-        value={value}
-      />
-      <div>Selected: {value}</div>
-    </div>
-  )
-}
-
 export default Example
 ```
 
-## Extending Behavior
-
-### Fixed Icon
+### Customizing with icon
 
 ```typescript
 import React from 'react'
@@ -320,7 +274,7 @@ function Example() {
 export default Example
 ```
 
-### Dynamic Icon
+### Customizing with dynamic icon
 
 ```typescript
 import React, { HTMLAttributes } from 'react'
@@ -443,13 +397,13 @@ export default Example
   <TypesProp
     name="onChange"
     type="(Event, value, label) => void"
-    desc="triggered when an item selected ((event, value, label) => ())"
+    desc="triggered when an item selected"
   />
   <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
   <TypesProp
     name="size"
     type={<TypesEnum enum={Dropdown.sizes} />}
-    desc="sets dorpdown size (from Dropdown.sizes)"
+    desc="sets dropdown size (from Dropdown.sizes)"
     default="medium"
   />
   <TypesProp
@@ -467,9 +421,7 @@ export default Example
     type="boolean"
     desc="visually disabled, non-interactive"
   />
-  <TypesProp name="href" type="string" desc="anchor tag uri" />
   <TypesProp name="icon" type="*Icon" desc="An Icon component" />
-  <TypesProp name="menu" type="Dropdown.Item(s)" desc="Menu items" />
   <TypesProp
     name="onClick"
     type="(Event, value) => void"
