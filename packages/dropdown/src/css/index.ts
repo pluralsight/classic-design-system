@@ -244,7 +244,7 @@ export default {
       color: colorsTextIcon.highOnLight
     }
   },
-  '.psds-actionmenu__item-icon': {
+  '.psds-dropdown__item-icon': {
     display: 'inline-flex',
     alignItems: 'center',
     marginRight: layout.spacingXSmall
