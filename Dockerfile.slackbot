@@ -5,7 +5,7 @@ ENV NODE_ENV=production
 
 RUN mkdir -p /usr/src/app
 
-COPY IssueSlackApp/. /usr/src/app
+COPY packages/slackbot/. /usr/src/app
 
 WORKDIR /usr/src/app
 
