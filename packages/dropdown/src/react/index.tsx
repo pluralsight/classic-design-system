@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react'
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
+import { Divider } from './divider'
 import { Item } from './item'
 import { Input } from './input'
 import { useDropdown, DropdownContext } from '../js'
@@ -19,7 +19,7 @@ import * as vars from '../vars'
 interface DropdownStatics {
   context: typeof DropdownContext
   Item: typeof Item
-  Divider: typeof ActionMenu.Divider
+  Divider: typeof Divider
   appearances: typeof vars.appearances
   sizes: typeof vars.sizes
   Input: typeof Input
@@ -86,7 +86,7 @@ Dropdown.defaultProps = {
 }
 Dropdown.context = DropdownContext
 Dropdown.Item = Item
-Dropdown.Divider = ActionMenu.Divider
+Dropdown.Divider = Divider
 Dropdown.appearances = vars.appearances
 Dropdown.sizes = vars.sizes
 Dropdown.Input = Input

@@ -1,4 +1,3 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 

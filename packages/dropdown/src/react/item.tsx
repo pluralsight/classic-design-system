@@ -1,4 +1,3 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import React, { ReactNode, ReactText, forwardRef, useContext } from 'react'

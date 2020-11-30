@@ -94,6 +94,13 @@ export default {
     maxWidth: '100%'
   },
 
+  '.psds-dropdown__divider': {
+    height: '1px',
+    width: '100%',
+    backgroundColor: colorsBorder.lowOnLight,
+    margin: `${layout.spacingXXSmall} 0`
+  },
+
   // __icon
   '.psds-dropdown__icon': {
     position: 'absolute',
