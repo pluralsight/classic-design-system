@@ -110,6 +110,17 @@ export default {
       opacity: 1
     }
   },
+  '.psds-actionmenu__item-container--active': {
+    '&:not([data-disabled])': {
+      background: colorsBackgroundUtility[25],
+      color: colorsTextIcon.highOnLight,
+
+      '& > :first-child [data-submenu-arrow]': {
+        color: colorsTextIcon.highOnLight
+      }
+    }
+  },
+
   '.psds-actionmenu__nested': {
     label: 'subMenu',
     display: 'inline-block',

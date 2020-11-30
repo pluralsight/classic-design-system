@@ -7,7 +7,7 @@ import Switch from '..'
 
 describe('Switch', () => {
   it('forwards refs', () => {
-    const ref = React.createRef<HTMLInputElement>()
+    const ref = React.createRef<HTMLLabelElement>()
     render(<Switch ref={ref} />)
 
     expect(ref.current).not.toBeNull()

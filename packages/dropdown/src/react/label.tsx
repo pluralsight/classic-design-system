@@ -1,20 +1,34 @@
-import React from 'react'
-import { compose, css } from 'glamor'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { css } from 'glamor'
+import React, { FC, ReactNode } from 'react'
+
 import stylesheet from '../css'
 
-const styles = ({ themeName }) => {
-  const label = 'psds-dropdown__label'
-
-  return compose(
-    css(stylesheet[`.${label}`]),
-    css(stylesheet[`.${label}.psds-theme--${themeName}`])
-  )
+const styles = {
+  label: themeName =>
+    css(
+      stylesheet['psds-dropdown__label'],
+      stylesheet[`.psds-dropdown__label.psds-theme--${themeName}`]
+    )
 }
 
-export const Label: React.FC<{ label?: React.ReactNode }> = ({ label }) => {
+interface LabelProps {
+  label?: ReactNode
+  inputId: string
+}
+
+export const Label: FC<LabelProps> = props => {
   const themeName = useTheme()
-  return label ? <div {...styles({ themeName })}>{label}</div> : null
+  return (
+    <label htmlFor={props.inputId}>
+      {props.label ? (
+        <span {...styles.label(themeName)}>{props.label}</span>
+      ) : (
+        <ScreenReaderOnly as="span">Dropdown</ScreenReaderOnly>
+      )}
+    </label>
+  )
 }
 
 Label.displayName = 'Dropdown.Label'

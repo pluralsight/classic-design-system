@@ -1,7 +1,7 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -26,7 +26,8 @@ interface HeadingStatics {
   sizes: typeof vars.headingSizes
 }
 
-interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+interface HeadingProps
+  extends HTMLPropsFor<'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'> {
   size?: ValueOf<typeof vars.headingSizes>
 }
 

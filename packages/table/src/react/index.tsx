@@ -1,5 +1,5 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
 import {
@@ -11,7 +11,7 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -110,7 +110,7 @@ const getToggledSort = ({
         [vars.sorts.desc]: vars.sorts.asc
       }[sort]
 
-interface ColumnHeaderProps extends HTMLAttributes<HTMLDivElement> {
+interface ColumnHeaderProps extends HTMLPropsFor<'div'> {
   align?: ValueOf<typeof vars.aligns>
   flex?: string
   onClick?: (evt: React.MouseEvent, sort?: ValueOf<typeof vars.sorts>) => void
@@ -179,7 +179,7 @@ const ColumnHeader: React.FC<ColumnHeaderProps> = ({
 
 ColumnHeader.displayName = 'Table.ColumnHeader'
 
-interface CellProps extends HTMLAttributes<HTMLDivElement> {
+interface CellProps extends HTMLPropsFor<'div'> {
   align?: ValueOf<typeof vars.aligns>
   emphasis?: boolean
   flex?: string
@@ -206,7 +206,7 @@ const Cell: React.FC<CellProps> = ({
 
 Cell.displayName = 'Table.Cell'
 
-interface RowProps extends HTMLAttributes<HTMLDivElement> {
+interface RowProps extends HTMLPropsFor<'div'> {
   _tableHasDrawers?: boolean
 }
 
@@ -227,7 +227,7 @@ interface TableStatics {
   sorts: typeof vars.sorts
 }
 
-export interface TableProps extends HTMLAttributes<HTMLDivElement> {
+export interface TableProps extends HTMLPropsFor<'div'> {
   inDrawer?: boolean
 }
 

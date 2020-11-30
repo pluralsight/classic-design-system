@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-focusmanager",
-  "version": "5.2.8",
+  "version": "5.2.11",
   "description": "FocusManager UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -13,10 +13,10 @@
     "build": "run-s build:esm build:cjs",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "build:watch": "yarn build:esm -- --watch",
+    "build:watch": "yarn build:esm --watch",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test -- --watchAll"
+    "test:watch": "yarn test --watchAll"
   },
   "types": "dist/esm/index.d.ts",
   "peerDependencies": {
@@ -25,8 +25,8 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^1.12.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.11",
-    "@pluralsight/ps-design-system-text": "^16.1.11"
+    "@pluralsight/ps-design-system-build": "^1.12.2",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.13",
+    "@pluralsight/ps-design-system-text": "^16.1.14"
   }
 }

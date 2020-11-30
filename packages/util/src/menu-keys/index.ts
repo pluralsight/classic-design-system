@@ -88,9 +88,12 @@ const end = (evt: KeyboardEvent) => {
 }
 
 const startsWith = (el: HTMLElement, key: string) => {
-  return (
-    el.innerText.startsWith(key) || el.innerText.startsWith(key.toUpperCase())
-  )
+  if (el && typeof el.innerText === 'string') {
+    return (
+      el.innerText.startsWith(key) || el.innerText.startsWith(key.toUpperCase())
+    )
+  }
+  return false
 }
 
 const character = (evt: KeyboardEvent) => {

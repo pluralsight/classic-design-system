@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
@@ -9,7 +9,8 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
-  RefForwardingComponent
+  RefForwardingComponent,
+  HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
@@ -107,7 +108,7 @@ export interface TextInputStatics {
   sizes: typeof vars.sizes
 }
 
-export interface TextInputProps extends HTMLAttributes<HTMLInputElement> {
+export interface TextInputProps extends Omit<HTMLPropsFor<'input'>, 'size'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean

@@ -1,21 +1,34 @@
 import {
   Children,
-  Ref,
   HTMLAttributes,
+  ReactText,
+  Ref,
   createContext,
   useEffect,
   useImperativeHandle,
-  useLayoutEffect,
   useMemo,
   useRef,
   useState
 } from 'react'
-import { canUseDOM } from 'exenv'
-import { useMenuRef, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  canUseDOM,
+  uniqueId,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
-export const DropdownContext = createContext<React.ReactText>('')
+interface DropdownContextValue {
+  activeItem?: ItemData
+  onDocumentEvents: (evt: Event) => void
+  onMenuClick: (evt: React.MouseEvent, value?: number | string) => void
+  menuId?: string
+  selectedItem?: ItemData
+}
+export const DropdownContext = createContext<DropdownContextValue>({
+  onDocumentEvents: _evt => {},
+  onMenuClick: (_evt, _value) => {}
+})
 
 interface UseDropdownProps
   extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
@@ -25,8 +38,11 @@ interface UseDropdownProps
   error?: boolean
   label?: React.ReactNode
   menu?: React.ReactNode
-  onChange?: (e: React.MouseEvent, v: React.ReactText) => void
-  onClick?: (e: React.MouseEvent) => void
+  onChange?: (
+    e: React.MouseEvent | React.KeyboardEvent,
+    v: React.ReactText
+  ) => void
+  onClick?: (e: React.MouseEvent | React.KeyboardEvent) => void
   placeholder?: string
   size?: ValueOf<typeof vars.sizes>
   style?: React.CSSProperties
@@ -64,6 +80,9 @@ const sortDropdownProps = ({
     onClick,
     placeholder
   },
+  input: {
+    disabled
+  },
   label: {
     label
   },
@@ -85,168 +104,235 @@ const sortDropdownProps = ({
   }
 })
 
+// TODO: move to react folder? Uses React APIs.
 export const useDropdown = (
   props: UseDropdownProps,
   forwardedRef: Ref<HTMLButtonElement>
 ) => {
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
+  const inputId = useMemo(() => uniqueId('dropdown-input-'), [])
+  const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
 
-  const itemMatchingValue = useMemo(() => {
-    return findMatchingActionMenuItem(hook.menu, hook.value)
-  }, [hook.menu, hook.value])
-
-  const [selectedLabel, setSelectedLabel] = useState(
-    itemMatchingValue ? itemMatchingValue.props.children : null
+  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [
+    menuId,
+    hook.menu
+  ])
+  const itemMatchingValueIndex = findIndexMatchingValueOrLabel(
+    items,
+    hook.value,
+    hook.value
   )
-  const [selectedValue, setSelectedValue] = useState(hook.value)
+  const itemMatchingValue = items[itemMatchingValueIndex]
+  const [activeIndex, setActiveIndex] = useState(
+    itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0
+  )
+
+  const [selectedItem, setSelectedItem] = useState(itemMatchingValue)
 
   useEffect(() => {
-    setSelectedLabel(
-      itemMatchingValue ? itemMatchingValue.props.children : null
-    )
-    setSelectedValue(hook.value)
-  }, [itemMatchingValue, hook.value])
+    setSelectedItem(itemMatchingValue)
+  }, [itemMatchingValue])
 
-  function handleToggleOpen(evt) {
+  useEffect(() => {
+    function handleEscape(evt) {
+      if (evt.key === 'Escape') {
+        setOpen(false)
+        setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
+        buttonRef.current?.focus()
+      }
+    }
+
+    if (canUseDOM() && isOpen) {
+      document.addEventListener('keydown', handleEscape, false)
+
+      return () => {
+        document.removeEventListener('keydown', handleEscape, false)
+      }
+    }
+  }, [itemMatchingValueIndex, isOpen])
+
+  function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
+    if (
+      evt.type === 'click' ||
+      (evt.type === 'keydown' &&
+        'key' in evt &&
+        (evt.key === ' ' || evt.key === 'Enter' || evt.key === 'ArrowDown'))
+    ) {
+      evt.preventDefault()
+      evt.stopPropagation()
+
+      const newOpen = !isOpen
+      setOpen(newOpen)
+      if (newOpen && inputRef.current) {
+        inputRef.current.focus()
+      }
+      if (typeof hook.onClick === 'function') hook.onClick(evt)
+    }
+  }
+
+  function handleInputKeyDown(evt: React.KeyboardEvent) {
     evt.preventDefault()
     evt.stopPropagation()
-    setOpen(!isOpen)
-    if (typeof hook.onClick === 'function') hook.onClick(evt)
-  }
 
-  function handleKeyDown(evt: React.KeyboardEvent) {
-    if (evt.key === 'ArrowDown') {
-      setOpen(true)
-    }
-  }
-
-  function handleMenuChange(evt: React.MouseEvent, value?: React.ReactText) {
-    const innerText = (evt.currentTarget as HTMLElement).innerText
-    setSelectedValue(value)
-    setSelectedLabel(value === innerText ? value : innerText)
-    setOpen(false)
-    if (typeof hook.onChange === 'function') hook.onChange(evt, value)
-  }
-
-  const menuRef = useMenuRef(!selectedValue)
-
-  function getLongestMenuLabelState() {
-    const getMenuItems = (menu: React.ReactElement) =>
-      Array.isArray(menu)
-        ? menu
-        : menu
-        ? Children.toArray(menu.props.children)
-        : []
-    const getNestedMenu = item => item && item.props.nested
-    const hasIcon = item => item && !!item.props.icon
-    const getLabel = (item): string =>
-      // NOTE: only works if it's a string -- are there valid cases where actionMenuItem child is not a string
-      (Children.toArray(item.props.children)[0] as string) || ''
-    const getState = item => ({
-      hasIcon: hasIcon(item),
-      label: getLabel(item)
-    })
-    const itemIsLonger = (state, item) =>
-      getLabel(item).length > state.label.length
-    const newStateIsLonger = (oldState, newState) =>
-      newState.label.length > oldState.label.length
-
-    const getLongestState = (startLongest, menu) => {
-      return getMenuItems(menu).reduce((currentLongest, item) => {
-        const nested = getNestedMenu(item)
-        if (nested) {
-          const nestedLongest = getLongestState(currentLongest, nested)
-          const newLongest = itemIsLonger(nestedLongest, item)
-            ? getState(item)
-            : nestedLongest
-          return newStateIsLonger(currentLongest, newLongest)
-            ? newLongest
-            : currentLongest
-        } else {
-          return itemIsLonger(currentLongest, item)
-            ? getState(item)
-            : currentLongest
+    if (isOpen) {
+      if (evt.key === 'ArrowDown') {
+        const newActiveIndex =
+          activeIndex < items.length - 1 ? activeIndex + 1 : 0
+        setActiveIndex(newActiveIndex)
+      } else if (evt.key === 'ArrowUp') {
+        setActiveIndex(activeIndex > 0 ? activeIndex - 1 : 0)
+      } else if (evt.key === 'Enter' || evt.key === ' ') {
+        setSelectedItem(items[activeIndex])
+        setOpen(false)
+        if (typeof hook.onChange === 'function') {
+          hook.onChange(evt, items[activeIndex].value)
         }
-      }, startLongest)
+        buttonRef.current?.focus()
+      }
+    } else {
+      if (evt.key === 'ArrowDown' || evt.key === ' ') {
+        setOpen(true)
+      }
     }
-
-    return getLongestState(
-      { hasIcon: false, label: hook.placeholder || '' },
-      hook.menu
-    )
   }
 
-  const longestMenuItemState = getLongestMenuLabelState()
-  const [width, setWidth] = useState<React.ReactText>('auto')
+  function handleMenuItemClick(
+    evt: React.MouseEvent,
+    itemValue?: React.ReactText
+  ) {
+    setSelectedItem(findItemMatchingValueOrLabel(items, itemValue, itemValue))
+    setOpen(false)
+    if (typeof hook.onChange === 'function') hook.onChange(evt, itemValue)
+    if (buttonRef.current) {
+      buttonRef.current.focus()
+    }
+  }
 
-  const ref = useRef<HTMLButtonElement>()
-  useImperativeHandle(forwardedRef, () => ref.current)
+  const longestLabel = getLongestMenuLabel(items, hook.placeholder)
 
-  useLayoutEffect(() => {
-    const { current } = ref
+  const buttonRef = useRef<HTMLButtonElement>()
+  useImperativeHandle(forwardedRef, () => buttonRef.current)
 
-    if (!current) return
+  const inputRef = useRef<HTMLInputElement>()
 
-    setWidth(current.getBoundingClientRect().width)
-  }, [])
-
-  const inNode = canUseDOM ? document.body : null
-  const [menuPosition, setMenuPosition] = useState({ left: 0, top: 0 })
+  const inNode = canUseDOM() ? document.body : null
+  const [menuPosition, setMenuPosition] = useState({
+    left: 0,
+    top: 0,
+    width: 0
+  })
 
   return {
     button: {
       ...rest.button,
-      ref,
+      ref: buttonRef,
       isOpen,
-      onClick: handleToggleOpen,
+      onClick: handleButtonEvent,
+      onKeyDown: handleButtonEvent,
       setMenuPosition
     },
-    label: rest.label,
-    layout: {
-      ...rest.layout,
-      onKeyDown: handleKeyDown
+    input: {
+      ...rest.input,
+      // TODO: replace with activeItem
+      activeItemId: items[activeIndex]?.id,
+      isOpen,
+      inputId,
+      onKeyDown: handleInputKeyDown,
+      menuId,
+      ref: inputRef,
+      selectedItem
     },
+    label: {
+      ...rest.label,
+      inputId
+    },
+    layout: rest.layout,
     menu: {
       ...rest.menu,
       inNode,
       isOpen,
-      menuPosition,
-      onClick: handleMenuChange,
-      onClose: () => {
-        setOpen(false)
-      },
-      ref: menuRef,
-      width
+      menuId,
+      menuPosition
     },
     selected: {
       ...rest.selected,
-      label: longestMenuItemState.label,
-      selectedLabel
+      label: longestLabel,
+      selectedItem
     },
     subLabel: rest.subLabel,
     value: {
-      value: selectedValue
+      value: {
+        activeItem: items[activeIndex],
+        onDocumentEvents: (_evt: Event) => {
+          setOpen(false)
+        },
+        onMenuClick: handleMenuItemClick,
+        menuId,
+        selectedItem
+      }
     }
   }
 }
 
-export function findMatchingActionMenuItem(menu?, value?) {
-  if (!menu || !value) return
+function findIndexMatchingValueOrLabel(
+  items: ItemData[],
+  label: ReactText,
+  value?: ReactText
+): number {
+  return items.findIndex(
+    item =>
+      (typeof item.value !== 'undefined' && item.value === value) ||
+      item.label === label
+  )
+}
+
+function findItemMatchingValueOrLabel(
+  items: ItemData[],
+  label: ReactText,
+  value?: ReactText
+) {
+  const index = findIndexMatchingValueOrLabel(items, label, value)
+  return items[index]
+}
+
+export interface ItemData {
+  id: string
+  label: string
+  value?: string | number
+}
+
+export const parseMenuChildren = (menuId: string, menu?): ItemData[] => {
+  if (!menu) return []
 
   const items = Array.isArray(menu)
     ? menu
     : Children.toArray(menu.props.children)
-  let matchingItem = items.find(it => it.props.value === value)
 
-  const nestedMenus = items.map(item => item.props.nested)
-  if (!matchingItem && nestedMenus.length > 0) {
-    matchingItem = nestedMenus.reduce((found, nested) => {
-      if (found) return found
+  return items.map(item => ({
+    id: formatItemId(menuId, item.props.value, item.props.children),
+    label: item.props.children,
+    value: item.props.value
+  }))
+}
 
-      return findMatchingActionMenuItem(nested, value)
-    }, undefined)
-  }
+export const formatItemId = (
+  menuId: string,
+  value?: string | number,
+  label?: string
+) => {
+  if (!value && !label) return
 
-  return matchingItem
+  return `${menuId}-${value || label.toString().replace(/ /g, '')}`
+}
+
+export const getLongestMenuLabel = (
+  items: Pick<ItemData, 'label'>[],
+  placeholder?: string
+) => {
+  return items.reduce((currentLongest, item) => {
+    return item.label?.length > currentLongest.length
+      ? item.label
+      : currentLongest
+  }, placeholder || '')
 }

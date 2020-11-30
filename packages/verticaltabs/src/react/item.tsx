@@ -1,9 +1,14 @@
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { ValueOf, combineFns, omit } from '@pluralsight/ps-design-system-util'
+import {
+  ValueOf,
+  combineFns,
+  omit,
+  HTMLPropsFor,
+  RefFor
+} from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
 import React, {
-  HTMLAttributes,
   ReactElement,
   ReactNode,
   cloneElement,
@@ -83,7 +88,7 @@ const styles: { [key: string]: StyleFn } = {
   }
 }
 
-interface ItemProps extends HTMLAttributes<HTMLLIElement> {
+interface ItemProps extends HTMLPropsFor<'li'> {
   active?: ReactNode
   collapsed?: boolean
   collapsible?: boolean
@@ -91,13 +96,28 @@ interface ItemProps extends HTMLAttributes<HTMLLIElement> {
   itemType?: string
 }
 
-interface ItemHeaderProps
-  extends HTMLAttributes<HTMLAnchorElement | HTMLButtonElement | HTMLElement> {
+interface ItemHeaderBaseProps {
   active?: boolean
   collapsed?: boolean
   collapsible?: boolean
+  icon?: ReactElement
+}
+interface AnchorHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'a'> {
+  onclick?: undefined
   href?: string
 }
+interface ButtonHeaderProps
+  extends ItemHeaderBaseProps,
+    HTMLPropsFor<'button'> {
+  onclick?: React.MouseEventHandler
+  href?: undefined
+}
+interface SpanHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'span'> {
+  onclick?: undefined
+  href?: undefined
+}
+
+type ItemHeaderProps = AnchorHeaderProps | ButtonHeaderProps | SpanHeaderProps
 
 const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
   const {
@@ -144,25 +164,26 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
 
 Item.displayName = 'VerticalTabs.Item'
 
-interface Tier1Props extends ItemProps {
+interface Tier1Props extends Omit<React.ComponentProps<typeof Item>, 'header'> {
   header: ReactElement<typeof Tier1Header>
 }
 const Tier1: React.FC<Tier1Props> & { Header: typeof Tier1Header } = props => (
   <Item {...props} itemType="tier1" />
 )
 
-interface Tier1HeaderProps extends ItemHeaderProps {
-  icon?: ReactElement
-}
-
-const Tier1Header = forwardRef<any, Tier1HeaderProps>((props, ref) => {
+const Tier1Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
   const { active, collapsed, collapsible, children, icon, ...rest } = props
   const hideLabels = useHideLabels()
-
-  const Tag = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
-
+  const Tag: React.FC = wrapperProps =>
+    rest.href ? (
+      <a {...wrapperProps} ref={ref as RefFor<'a'>} />
+    ) : rest.onClick ? (
+      <button {...wrapperProps} ref={ref as RefFor<'button'>} />
+    ) : (
+      <span {...wrapperProps} ref={ref as RefFor<'span'>} />
+    )
   return (
-    <Tag {...styles.tier1Header()} {...rest} ref={ref}>
+    <Tag {...styles.tier1Header()} {...rest}>
       {icon &&
         cloneElement(icon, {
           size: CaretDownIcon.sizes.medium,
@@ -187,7 +208,7 @@ Tier1.Header = Tier1Header
 Tier1.displayName = 'VerticalTabs.Tier1'
 Tier1.Header.displayName = 'VerticalTabs.Tier1.Header'
 
-interface Tier2Props extends ItemProps {
+interface Tier2Props extends Omit<React.ComponentProps<typeof Item>, 'header'> {
   header: ReactElement<typeof Tier1Header>
 }
 
@@ -197,17 +218,23 @@ const Tier2: React.FC<Tier2Props> & {
   return <Item {...props} itemType="tier2" />
 }
 
-interface Tier2HeaderProps extends ItemHeaderProps {}
-const Tier2Header = forwardRef<any, Tier2HeaderProps>((props, ref) => {
+const Tier2Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
   const hideLabels = useHideLabels()
 
   // NOTE: some props are given during clone that are not used as should not be
   //       passed to the underlying dom node
   const rest = omit(props as any, ['active', 'collapsed', 'collapsible'])
-  const Tag = rest.href ? 'a' : rest.onClick ? 'button' : 'span'
+  const Tag: React.FC = wrapperProps =>
+    rest.href ? (
+      <a {...wrapperProps} ref={ref as RefFor<'a'>} />
+    ) : rest.onClick ? (
+      <button {...wrapperProps} ref={ref as RefFor<'button'>} />
+    ) : (
+      <span {...wrapperProps} ref={ref as RefFor<'span'>} />
+    )
 
   return (
-    <Tag {...styles.tier2Header} {...rest} ref={ref}>
+    <Tag {...styles.tier2Header} {...rest}>
       <span {...styles.tierHeaderLabel(null, { hideLabels })}>
         {props.children}
       </span>

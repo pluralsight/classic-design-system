@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.3.10...@pluralsight/ps-design-system-actionmenu@15.4.0) (2020-11-30)
+
+
+### Features
+
+* **actionmenu:** style item with active prop to look same as focused ([6813388](https://github.com/pluralsight/design-system/commit/68133886f330a333e50450dc95cbb6e1362a3fd3))
+
+
+
+
+
+## [15.3.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.3.9...@pluralsight/ps-design-system-actionmenu@15.3.10) (2020-11-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.3.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.3.8...@pluralsight/ps-design-system-actionmenu@15.3.9) (2020-11-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
 ## [15.3.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.3.7...@pluralsight/ps-design-system-actionmenu@15.3.8) (2020-11-17)
 
 

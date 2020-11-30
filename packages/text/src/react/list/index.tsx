@@ -1,8 +1,8 @@
 import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import ListItem from './list-item'
 
@@ -27,19 +27,25 @@ interface ListStatics {
   Item: typeof ListItem
 }
 
-interface ListProps
-  extends HTMLAttributes<HTMLUListElement | HTMLOListElement> {
+interface UnorderedListProps extends HTMLPropsFor<'ul'> {
   type?: ValueOf<typeof vars.listTypes>
 }
+
+interface OrderedListProps extends Omit<HTMLPropsFor<'ol'>, 'type'> {
+  type?: ValueOf<typeof vars.listTypes>
+}
+
+type ListProps = UnorderedListProps | OrderedListProps
 
 const List: React.FC<ListProps> & ListStatics = ({
   type = vars.listTypes.default,
   ...props
 }) => {
   const themeName = useTheme()
-  const TagName = type === 'numbered' ? 'ol' : 'ul'
+  const Wrapper: React.FC = wrapperProps =>
+    type === 'numbered' ? <ol {...wrapperProps} /> : <ul {...wrapperProps} />
 
-  return <TagName {...styles({ themeName, type })} {...props} />
+  return <Wrapper {...styles({ themeName, type })} {...props} />
 }
 
 List.types = vars.listTypes

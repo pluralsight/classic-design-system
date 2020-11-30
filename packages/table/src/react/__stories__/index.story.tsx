@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
@@ -220,15 +220,14 @@ const columnHeaderStory = storiesOf('columnHeader', module)
         <Table.ColumnHeader sort>header text</Table.ColumnHeader>
         <Table.ColumnHeader sort>header2 text</Table.ColumnHeader>
       </Table.Row>
-      <Drawer
-        base={
+      <Drawer>
+        <Drawer.Summary>
           <Table.Row>
             <Table.Cell>cell text</Table.Cell>
             <Table.Cell>cell2 text</Table.Cell>
           </Table.Row>
-        }
-      >
-        Panel contnet
+        </Drawer.Summary>
+        <Drawer.Details>Details content</Drawer.Details>
       </Drawer>
     </Table>
   ))
@@ -337,43 +336,40 @@ columnHeaderStory
 storiesOf('drawer', module)
   .add('single', () => (
     <Table>
-      <Drawer
-        base={
+      <Drawer>
+        <Drawer.Summary>
           <Table.Row>
             <Table.Cell>wow</Table.Cell>
           </Table.Row>
-        }
-      >
-        This is panel content
+        </Drawer.Summary>
+        <Drawer.Details>This is details content</Drawer.Details>
       </Drawer>
     </Table>
   ))
   .add('mulitple', () => (
     <Table>
-      <Drawer
-        base={
+      <Drawer>
+        <Drawer.Summary>
           <Table.Row>
             <Table.Cell>wow</Table.Cell>
           </Table.Row>
-        }
-      >
-        This is panel content
+        </Drawer.Summary>
+        <Drawer.Details>This is details content</Drawer.Details>
       </Drawer>
-      <Drawer
-        base={
+      <Drawer>
+        <Drawer.Summary>
           <Table.Row>
             <Table.Cell>wow</Table.Cell>
           </Table.Row>
-        }
-      >
-        This is panel content
+        </Drawer.Summary>
+        <Drawer.Details>This is details content</Drawer.Details>
       </Drawer>
     </Table>
   ))
   .add('w/ flex, some wrap, some not', () => (
     <Table>
-      <Drawer
-        base={
+      <Drawer>
+        <Drawer.Summary>
           <Table.Row>
             <Table.Cell flex="2">
               flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
@@ -385,12 +381,11 @@ storiesOf('drawer', module)
               flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
             </Table.Cell>
           </Table.Row>
-        }
-      >
-        This is panel content
+        </Drawer.Summary>
+        <Drawer.Details>This is details content</Drawer.Details>
       </Drawer>
-      <Drawer
-        base={
+      <Drawer>
+        <Drawer.Summary>
           <Table.Row>
             <Table.Cell flex="2">
               flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
@@ -402,12 +397,11 @@ storiesOf('drawer', module)
               flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
             </Table.Cell>
           </Table.Row>
-        }
-      >
-        This is panel content
+        </Drawer.Summary>
+        <Drawer.Details>This is details content</Drawer.Details>
       </Drawer>
-      <Drawer
-        base={
+      <Drawer>
+        <Drawer.Summary>
           <Table.Row>
             <Table.Cell flex="2">
               flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2 flex 2
@@ -417,41 +411,52 @@ storiesOf('drawer', module)
               flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1 flex 1
             </Table.Cell>
           </Table.Row>
-        }
-      >
-        This is panel content
+        </Drawer.Summary>
+        <Drawer.Details>This is details content</Drawer.Details>
       </Drawer>
     </Table>
   ))
   .add('nested table', () => {
-    const baseRow = (
+    const BaseRow = () => (
       <Table.Row>
         <Table.Cell>Parent Cell</Table.Cell>
         <Table.Cell>Parent Cell</Table.Cell>
         <Table.Cell>Parent Cell</Table.Cell>
       </Table.Row>
     )
-
+    const useStartOpen = () => {
+      const [isOpen, setOpen] = useState(true)
+      const onToggle = () => {
+        /** custom logic **/
+        setOpen(!isOpen)
+      }
+      return { isOpen, onToggle }
+    }
     return (
       <Table>
-        <Drawer base={baseRow} startOpen>
-          <Table inDrawer>
-            <Table.Row>
-              <Table.Cell>Child Cell</Table.Cell>
-              <Table.Cell>Child Cell</Table.Cell>
-              <Table.Cell>Child Cell</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Child Cell</Table.Cell>
-              <Table.Cell>Child Cell</Table.Cell>
-              <Table.Cell>Child Cell</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>Child Cell</Table.Cell>
-              <Table.Cell>Child Cell</Table.Cell>
-              <Table.Cell>Child Cell</Table.Cell>
-            </Table.Row>
-          </Table>
+        <Drawer {...useStartOpen()}>
+          <Drawer.Summary>
+            <BaseRow />
+          </Drawer.Summary>
+          <Drawer.Details>
+            <Table inDrawer>
+              <Table.Row>
+                <Table.Cell>Child Cell</Table.Cell>
+                <Table.Cell>Child Cell</Table.Cell>
+                <Table.Cell>Child Cell</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>Child Cell</Table.Cell>
+                <Table.Cell>Child Cell</Table.Cell>
+                <Table.Cell>Child Cell</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>Child Cell</Table.Cell>
+                <Table.Cell>Child Cell</Table.Cell>
+                <Table.Cell>Child Cell</Table.Cell>
+              </Table.Row>
+            </Table>
+          </Drawer.Details>
         </Drawer>
       </Table>
     )

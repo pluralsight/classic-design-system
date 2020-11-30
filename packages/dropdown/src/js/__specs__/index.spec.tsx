@@ -1,62 +1,94 @@
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
-import { findMatchingActionMenuItem } from '..'
+import { getLongestMenuLabel, formatItemId, parseMenuChildren } from '..'
+import Item from '../../react'
 
-describe('#findMatchingActionMenuItem', () => {
-  it('returns undefined for undefined menu', () => {
-    const item = findMatchingActionMenuItem()
-    expect(item).toBeUndefined()
+describe('#formatItemId', () => {
+  it('is undefined for no input', () => {
+    expect(formatItemId('aMenuId')).toBeUndefined()
   })
 
-  it('returns undefined for empty menu', () => {
-    const item = findMatchingActionMenuItem(<ActionMenu />, 'findme')
-    expect(item).toBeUndefined()
+  it('is menuId-value by default', () => {
+    expect(formatItemId('aMenuId', 'aValue')).toEqual('aMenuId-aValue')
+    expect(formatItemId('aMenuId', 123)).toEqual('aMenuId-123')
   })
 
-  it('returns undefined for unmatchable menu', () => {
-    const item = findMatchingActionMenuItem(
-      <ActionMenu>
-        <ActionMenu.Item value="diff">Different</ActionMenu.Item>
-      </ActionMenu>,
-      'findme'
+  it('is menuId-label as a secondary option', () => {
+    expect(formatItemId('aMenuId', undefined, 'aLabel')).toEqual(
+      'aMenuId-aLabel'
     )
-    expect(item).toBeUndefined()
+    expect(formatItemId('aMenuId', undefined, 'a Fine Label')).toEqual(
+      'aMenuId-aFineLabel'
+    )
+  })
+})
+
+describe('#parseMenuChildren', () => {
+  it('is empty array if no menu given', () => {
+    expect(parseMenuChildren('aMenuId')).toEqual([])
   })
 
-  it('returns item for matched first-level option', () => {
-    const toFind = <ActionMenu.Item value="findme">Find Me</ActionMenu.Item>
-    const item = findMatchingActionMenuItem(
-      <ActionMenu>
-        <ActionMenu.Item value="diff">Different</ActionMenu.Item>
-        {toFind}
-        <ActionMenu.Item value="morediff">Different</ActionMenu.Item>
-      </ActionMenu>,
-      'findme'
+  it('parses a fragment of children', () => {
+    const children = (
+      <>
+        <Item value="o">One</Item>
+        <Item value="w">Two</Item>
+        <Item value="h">Three</Item>
+      </>
     )
-    expect(item.props.children).toEqual(toFind.props.children)
-    expect(item.props.value).toEqual(toFind.props.value)
+    expect(parseMenuChildren('aMenuId', children)).toEqual([
+      { id: 'aMenuId-o', label: 'One', value: 'o' },
+      { id: 'aMenuId-w', label: 'Two', value: 'w' },
+      { id: 'aMenuId-h', label: 'Three', value: 'h' }
+    ])
   })
 
-  it('returns item for matched 2nd-level option', () => {
-    const toFind = <ActionMenu.Item value="findme">Find Me</ActionMenu.Item>
-    const item = findMatchingActionMenuItem(
-      <ActionMenu>
-        <ActionMenu.Item value="diff">Different</ActionMenu.Item>
-        <ActionMenu.Item
-          nested={
-            <>
-              <ActionMenu.Item value="stilldiff">Still Diff</ActionMenu.Item>
-              {toFind}
-            </>
-          }
-        >
-          Nested Different
-        </ActionMenu.Item>
-      </ActionMenu>,
-      'findme'
-    )
-    expect(item.props.children).toEqual(toFind.props.children)
-    expect(item.props.value).toEqual(toFind.props.value)
+  it('parses an array of children', () => {
+    const children = [
+      <Item value="o" key="o">
+        One
+      </Item>,
+      <Item value="w" key="w">
+        Two
+      </Item>,
+      <Item value="h" key="h">
+        Three
+      </Item>
+    ]
+
+    expect(parseMenuChildren('aMenuId', children)).toEqual([
+      { id: 'aMenuId-o', label: 'One', value: 'o' },
+      { id: 'aMenuId-w', label: 'Two', value: 'w' },
+      { id: 'aMenuId-h', label: 'Three', value: 'h' }
+    ])
+  })
+})
+
+describe('#getLongestMenuLabel', () => {
+  it('is empty string if no items and no placeholder', () => {
+    expect(getLongestMenuLabel([])).toEqual('')
+  })
+
+  it('is placeholder if no items', () => {
+    expect(getLongestMenuLabel([], 'aPlace')).toEqual('aPlace')
+  })
+
+  it('is placeholder if still longest', () => {
+    expect(
+      getLongestMenuLabel(
+        [{ label: 'One' }, { label: 'Two Longer' }, { label: 'Three' }],
+        'A Longest Placeholder'
+      )
+    ).toEqual('A Longest Placeholder')
+  })
+
+  it('is longest label', () => {
+    expect(
+      getLongestMenuLabel(
+        [{ label: 'One' }, { label: 'Two Longest' }, { label: 'Three' }],
+        'aPlace'
+      )
+    ).toEqual('Two Longest')
   })
 })

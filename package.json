@@ -101,6 +101,7 @@
     "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^11.0.4",
     "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/user-event": "^12.2.2",
     "@types/classnames": "^2.2.10",
     "@types/exenv": "^1.2.0",
     "@types/jest-axe": "^3.5.1",

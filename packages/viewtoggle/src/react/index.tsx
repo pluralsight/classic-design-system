@@ -2,12 +2,13 @@ import { names, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
   ValueOf,
-  combineFns
+  combineFns,
+  HTMLPropsFor,
+  RefFor
 } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
 import React, {
   Children,
-  HTMLAttributes,
   ReactElement,
   ReactNode,
   cloneElement,
@@ -29,7 +30,7 @@ type StyleFn = (
 ) => StyleAttribute
 
 interface ViewToggleProps
-  extends Omit<HTMLAttributes<HTMLDivElement>, 'onSelect'> {
+  extends Omit<React.ComponentProps<typeof List>, 'onSelect'> {
   onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index: number) => void
 }
 
@@ -73,7 +74,7 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
   (props, forwardedRef) => {
     const { children, onSelect, ...rest } = props
 
-    const ref = useRef<HTMLDivElement>()
+    const ref = useRef<HTMLDivElement>(null)
     useImperativeHandle(forwardedRef, () => ref.current)
 
     const hasRenderedOnce = useHasRenderedOnce()
@@ -134,24 +135,22 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
   }
 ) as ViewToggleComponent
 
-const ActivePillBg: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const ActivePillBg: React.FC<HTMLPropsFor<'div'>> = props => {
   const themeName = useTheme()
   return <div {...styles.activePillBg(themeName)} aria-hidden {...props} />
 }
 
-const List = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
-  (props, ref) => {
-    const themeName = useTheme()
-    return <div ref={ref} {...styles.list(themeName)} {...props} />
-  }
-)
+const List = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>((props, ref) => {
+  const themeName = useTheme()
+  return <div ref={ref} {...styles.list(themeName)} {...props} />
+})
 
-const PillBgSpacer: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+const PillBgSpacer: React.FC<HTMLPropsFor<'div'>> = props => {
   const themeName = useTheme()
   return <div {...styles.pillBgSpacer(themeName)} {...props} />
 }
 
-interface OptionButtonProps extends HTMLAttributes<HTMLButtonElement> {
+interface OptionButtonProps extends HTMLPropsFor<'button'> {
   active: boolean
 }
 const OptionButton = forwardRef<HTMLButtonElement, OptionButtonProps>(
@@ -166,7 +165,11 @@ const OptionButton = forwardRef<HTMLButtonElement, OptionButtonProps>(
   }
 )
 
-interface OptionProps extends HTMLAttributes<HTMLButtonElement> {
+interface OptionProps
+  extends Omit<
+    React.ComponentProps<typeof OptionButton>,
+    '_i' | '_onselect' | 'active'
+  > {
   _i?: number
   _onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index: number) => void
   active?: boolean
