@@ -29,6 +29,7 @@
 }
 
 [data-psds-theme='dark'] {
+  color: var(--psColorsTextIconHighOnDark);
   background: var(--psColorsBackgroundDark1);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundDark1);
@@ -42,6 +43,7 @@
 }
 
 [data-psds-theme='light'] {
+  color: var(--psColorsTextIconHighOnLight);
   background: var(--psColorsWhite);
 
   --appColorsBackgroundLo: var(--psColorsBackgroundLight3);

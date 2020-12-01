@@ -222,7 +222,7 @@ exports[`Storyshots Sample Form null children 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-1uk9rqa=""
+          data-css-12103dp=""
           style={
             Object {
               "maxWidth": "none",
@@ -432,7 +432,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-1uk9rqa=""
+          data-css-12103dp=""
           style={
             Object {
               "maxWidth": "none",
@@ -601,9 +601,8 @@ exports[`Storyshots Sample Form sample 1`] = `
       <div
         data-css-4l6uky=""
       >
-        <label
+        <div
           data-css-1hniuff=""
-          onKeyDown={[Function]}
           style={
             Object {
               "maxWidth": "none",
@@ -611,10 +610,28 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           }
         >
-          <div
-            data-css-dysqqm=""
+          <label
+            htmlFor="dropdown-input-unique-id"
           >
-            Occupation
+            <span>
+              Occupation
+            </span>
+          </label>
+          <div
+            data-css-6wu9td=""
+          >
+            <input
+              aria-activedescendant="dropdown-menu-unique-id-Engineer"
+              aria-autocomplete="list"
+              aria-controls="dropdown-menu-unique-id"
+              aria-expanded={false}
+              defaultValue=""
+              disabled={false}
+              id="dropdown-input-unique-id"
+              onKeyDown={[Function]}
+              role="combobox"
+              tabIndex={-1}
+            />
           </div>
           <div
             data-css-8befsb=""
@@ -630,6 +647,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                   data-css-94lg5r=""
                   disabled={false}
                   onClick={[Function]}
+                  onKeyDown={[Function]}
                 >
                   <span
                     data-css-1m4meif=""
@@ -668,7 +686,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               </div>
             </div>
           </div>
-        </label>
+        </div>
       </div>
       <div
         data-css-4l6uky=""

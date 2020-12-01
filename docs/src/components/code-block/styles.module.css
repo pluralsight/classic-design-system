@@ -35,9 +35,11 @@
   border-bottom: 1px solid var(--appColorsBorderLow);
 
   &.dark {
+    color: var(--psColorsTextIconHighOnDark);
     background-color: var(--psColorsBackgroundDark2);
   }
   &.light {
+    color: var(--psColorsTextIconHighOnLight);
     background-color: var(--psColorsLightDark2);
   }
 }

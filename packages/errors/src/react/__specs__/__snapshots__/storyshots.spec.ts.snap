@@ -27,7 +27,7 @@ exports[`Storyshots pages 403 1`] = `
     data-css-1qym0u7=""
   >
     <h1
-      data-css-xhd98s=""
+      data-css-9zvq8n=""
     >
       You are not authorized to view this page. Try contacting support or reaching out to your plan administrator.
     </h1>
@@ -35,11 +35,13 @@ exports[`Storyshots pages 403 1`] = `
   <div
     data-css-i38iv3=""
   >
-    <h2
-      data-css-ffti8h=""
-    >
-      Error code: 
-      403
+    <h2>
+      <span
+        data-css-jkm1gb=""
+      >
+        Error code: 
+        403
+      </span>
     </h2>
   </div>
   <a
@@ -83,7 +85,7 @@ exports[`Storyshots pages 404 1`] = `
     data-css-1qym0u7=""
   >
     <h1
-      data-css-xhd98s=""
+      data-css-9zvq8n=""
     >
       Sorry, the page you are looking for cannot be found. Try checking the URL for errors or search our library.
     </h1>
@@ -91,11 +93,13 @@ exports[`Storyshots pages 404 1`] = `
   <div
     data-css-i38iv3=""
   >
-    <h2
-      data-css-ffti8h=""
-    >
-      Error code: 
-      404
+    <h2>
+      <span
+        data-css-jkm1gb=""
+      >
+        Error code: 
+        404
+      </span>
     </h2>
   </div>
   <form
@@ -153,7 +157,7 @@ exports[`Storyshots pages 500 1`] = `
     data-css-1qym0u7=""
   >
     <h1
-      data-css-xhd98s=""
+      data-css-9zvq8n=""
     >
       Something unexpected has happened. Please try again. If you continue to experience problems, let us know.
     </h1>
@@ -161,11 +165,13 @@ exports[`Storyshots pages 500 1`] = `
   <div
     data-css-i38iv3=""
   >
-    <h2
-      data-css-ffti8h=""
-    >
-      Error code: 
-      500
+    <h2>
+      <span
+        data-css-jkm1gb=""
+      >
+        Error code: 
+        500
+      </span>
     </h2>
   </div>
   <a
@@ -209,7 +215,7 @@ exports[`Storyshots pages 503 1`] = `
     data-css-1qym0u7=""
   >
     <h1
-      data-css-xhd98s=""
+      data-css-9zvq8n=""
     >
       Unfortunately the site is currently unavailable. We expect everything back in order shortly. Sorry for the inconvenience.
     </h1>
@@ -217,11 +223,13 @@ exports[`Storyshots pages 503 1`] = `
   <div
     data-css-i38iv3=""
   >
-    <h2
-      data-css-ffti8h=""
-    >
-      Error code: 
-      503
+    <h2>
+      <span
+        data-css-jkm1gb=""
+      >
+        Error code: 
+        503
+      </span>
     </h2>
   </div>
 </div>

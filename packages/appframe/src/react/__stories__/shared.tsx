@@ -278,9 +278,15 @@ export const SectionHeader: React.FC<SectionHeaderProps> = props => {
       }}
       {...rest}
     >
-      <Text.Heading size={Text.Heading.sizes.smallCaps}>
-        <h2 style={{ margin: 0 }}>{title}</h2>
-      </Text.Heading>
+      <h2 style={{ margin: 0 }}>
+        <Text.Label
+          size={Text.Label.sizes.xSmall}
+          color={Text.Label.colors.secondary}
+          caps
+        >
+          {title}
+        </Text.Label>
+      </h2>
     </div>
   )
 }
