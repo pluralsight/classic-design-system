@@ -23,6 +23,8 @@ import {
 
 We no longer use the Gotham font from typography.com. You should remove any remaining references to that.  As we are transitioning, Gotham is still listed as a fallback font. Eventually it will be fully removed.
 
+Internally, we are using a [variable font](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide) to provide all weights programmatically. This should drastically reduce the number of network requests and overall page weight dedicated to fonts. IE 11 does not support variable fonts, and IE users will get the `sans-serif` fallback.
+
 <FontFamily />
 
 The `@font-face` declaration is included in the normalize stylesheet.  Install with:
