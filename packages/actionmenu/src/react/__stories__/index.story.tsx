@@ -97,6 +97,15 @@ storiesOf('menu items', module)
       <ActionMenu.Item>Skip to three item</ActionMenu.Item>
     </ActionMenu>
   ))
+  .add('active item', () => (
+    <ActionMenu>
+      <ActionMenu.Item>Not active</ActionMenu.Item>
+      <ActionMenu.Item active>Active (styled w/o :focus)</ActionMenu.Item>
+      <ActionMenu.Item active disabled>
+        Active disabled
+      </ActionMenu.Item>
+    </ActionMenu>
+  ))
 
 storiesOf('dividers', module)
   .add('edge', () => (

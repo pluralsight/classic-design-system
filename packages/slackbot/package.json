@@ -1,0 +1,25 @@
+{
+  "name": "@pluralsight/psds-slackbot",
+  "version": "1.0.0",
+  "description": "Slack app with interface for creating Github Issues in pluralsight/design-system",
+  "main": "src/app.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Pierce Bringhurst",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "@slack/bolt": "^2.4.1",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "gestalt-pattern-matcher": "0.0.12",
+    "mongoose": "^5.10.11",
+    "nodemon": "^2.0.6",
+    "pg": "^8.4.2",
+    "string-similarity": "^4.0.3"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
+  }
+}

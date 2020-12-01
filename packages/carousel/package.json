@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-carousel",
-  "version": "10.2.13",
+  "version": "10.2.14",
   "description": "Carousel UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,9 +24,9 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.5.2",
-    "@pluralsight/ps-design-system-halo": "^7.1.12",
-    "@pluralsight/ps-design-system-icon": "^19.0.10",
-    "@pluralsight/ps-design-system-util": "^6.0.3",
+    "@pluralsight/ps-design-system-halo": "^7.1.13",
+    "@pluralsight/ps-design-system-icon": "^19.0.11",
+    "@pluralsight/ps-design-system-util": "^6.0.4",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
@@ -36,11 +36,11 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^15.3.10",
+    "@pluralsight/ps-design-system-actionmenu": "^15.4.0",
     "@pluralsight/ps-design-system-build": "^1.12.2",
-    "@pluralsight/ps-design-system-card": "^14.1.12",
-    "@pluralsight/ps-design-system-position": "^5.0.10",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.12",
-    "@pluralsight/ps-design-system-theme": "^6.0.8"
+    "@pluralsight/ps-design-system-card": "^14.1.13",
+    "@pluralsight/ps-design-system-position": "^5.0.11",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.13",
+    "@pluralsight/ps-design-system-theme": "^6.0.9"
   }
 }
