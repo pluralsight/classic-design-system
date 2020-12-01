@@ -1,6 +1,6 @@
 exports.bugView = async ({ ack, body, client }) => {
   // Acknowledge the command request
-  await ack();
+  await ack()
 
   try {
     // Call views.open with the built-in client
@@ -32,7 +32,8 @@ exports.bugView = async ({ ack, body, client }) => {
               action_id: 'title_input',
               placeholder: {
                 type: 'plain_text',
-                text: 'fill in title: format of "package name: short description"'
+                text:
+                  'fill in title: format of "package name: short description"'
               },
               multiline: false
             }
@@ -115,22 +116,20 @@ exports.bugView = async ({ ack, body, client }) => {
             element: {
               type: 'plain_text_input',
               action_id: 'environment_input',
-              initial_value: '- OS - MacOS 10.12 \n- Browser version - Chrome v60',        
+              initial_value:
+                '- OS - MacOS 10.12 \n- Browser version - Chrome v60',
               multiline: true
             }
           }
-
         ],
         submit: {
           type: 'plain_text',
           text: 'Continue'
         }
       }
-    });
-    console.log(result);
+    })
+    console.log(result)
+  } catch (error) {
+    console.error(error)
   }
-  catch (error) {
-    console.error(error);
-  }
-
 }
