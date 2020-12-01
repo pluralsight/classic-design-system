@@ -16,6 +16,7 @@ export default {
     borderColor: colorsBorder.lowOnLight
   },
   '.psds-datawell__label': {
+    display: 'block',
     margin: 0,
     fontSize: type.fontSizeXSmall,
     lineHeight: '16px',

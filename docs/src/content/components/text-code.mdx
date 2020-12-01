@@ -1,0 +1,52 @@
+---
+name: Code
+route: /components/text-code
+---
+
+import { Code } from '@pluralsight/ps-design-system-text'
+
+# Code
+
+<Intro>For styling monospace type.</Intro>
+
+<TableOfContents {...props} />
+
+## Example
+
+```typescript
+import { P, Code } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <P>
+        <Code>code block</Code> at the beginning of a paragraph.
+      </P>
+      <P>
+        At the beginning of a paragraph <Code>code block</Code>
+      </P>
+      <P>
+        Wrapping code block
+        <Code>
+          buy-in programmatically, or out of the loop. I'll book a meeting so we
+          can solution this before the sprint is over get buy-in, and closing
+          these latest prospects is like putting socks on an octopus. Knowledge
+          is power
+        </Code> with text on the end.
+      </P>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+## Usage
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-text"
+  import="import { Code } from '@pluralsight/ps-design-system-text'"
+  packageName="text"
+  version={props.version}
+/>
