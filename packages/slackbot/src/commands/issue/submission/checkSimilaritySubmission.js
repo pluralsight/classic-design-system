@@ -138,8 +138,8 @@ ${tradeoffs}
 
   await axios
     .post(
-      'https://api.github.com/repos/piercebring/resumeWebsite/issues',
-      // "https://api.github.com/repos/pluralsight/design-system/issues",
+      // 'https://api.github.com/repos/piercebring/resumeWebsite/issues',
+      'https://api.github.com/repos/pluralsight/design-system/issues',
       {
         title: issueTitle,
         body: description,
