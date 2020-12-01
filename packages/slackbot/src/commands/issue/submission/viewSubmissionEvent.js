@@ -35,14 +35,14 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     channel_id = metadata[1]
   }
 
-  const issueLabel = view['title']['text']
+  const issueLabel = view.title.text
 
   let issueTitle = ''
   let description = ''
-  let labels = []
+  const labels = []
 
   let title = ''
-  let shortDescription = ''
+  const shortDescription = ''
 
   let expectedBehavior = ''
   let actualBehavior = ''
@@ -56,23 +56,18 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
   let tradeoffs = ''
 
   if (metadata[0] === 'Bug') {
-    title = view['state']['values']['titleInput']['title_input'].value
+    title = view.state.values.titleInput.title_input.value
     // shortDescription =
     //   view["state"]["values"]["descriptionInput"]["description_input"].value;
     expectedBehavior =
-      view['state']['values']['expectedBehaviorInput'][
-        'expected_behavior_input'
-      ].value
+      view.state.values.expectedBehaviorInput.expected_behavior_input.value
     actualBehavior =
-      view['state']['values']['actualBehaviorInput']['actual_behavior_input']
-        .value
+      view.state.values.actualBehaviorInput.actual_behavior_input.value
     stepsToRepro =
-      view['state']['values']['stepsToReproInput']['steps_to_repro_input'].value
+      view.state.values.stepsToReproInput.steps_to_repro_input.value
     relatedPackages =
-      view['state']['values']['relatedPackagesInput']['related_packages_input']
-        .value
-    environment =
-      view['state']['values']['environmentInput']['environment_input'].value
+      view.state.values.relatedPackagesInput.related_packages_input.value
+    environment = view.state.values.environmentInput.environment_input.value
 
     issueTitle = title
 
@@ -94,18 +89,15 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     labels.push('bug')
     labels.push('needs-triage')
   } else {
-    title = view['state']['values']['titleInput']['title_input'].value
+    title = view.state.values.titleInput.title_input.value
     // shortDescription =
     //   view["state"]["values"]["descriptionInput"]["description_input"].value;
     desiredBehavior =
-      view['state']['values']['desiredBehaviorInput']['desired_behavior_input']
-        .value
+      view.state.values.desiredBehaviorInput.desired_behavior_input.value
     todayBehavior =
-      view['state']['values']['todayBehaviorInput']['today_behavior_input']
-        .value
-    valueAdd = view['state']['values']['valueAddInput']['value_add_input'].value
-    tradeoffs =
-      view['state']['values']['tradeoffsInput']['tradeoffs_input'].value
+      view.state.values.todayBehaviorInput.today_behavior_input.value
+    valueAdd = view.state.values.valueAddInput.value_add_input.value
+    tradeoffs = view.state.values.tradeoffsInput.tradeoffs_input.value
 
     issueTitle = title
 
@@ -133,10 +125,10 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     labels.push('needs-triage')
   }
 
-  const user = body['user']['id']
-  const username = body['user']['name']
+  const user = body.user.id
+  const username = body.user.name
 
-  let config = {
+  const config = {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/vnd.github.v3+json',
@@ -145,7 +137,7 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     }
   }
 
-  let issueRecords = []
+  const issueRecords = []
 
   await axios
     .get(
@@ -154,13 +146,16 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
     )
     .then(res => {
       res.data.forEach(issue => {
-        //let rating = stringSimilarity.compareTwoStrings(description, issue.body)
-        let rating = stringSimilarity.compareTwoStrings(issueTitle, issue.title)
+        // let rating = stringSimilarity.compareTwoStrings(description, issue.body)
+        const rating = stringSimilarity.compareTwoStrings(
+          issueTitle,
+          issue.title
+        )
 
-        //let rating = gestaltSimilarity(description, issue.body)
-        //let rating = gestaltSimilarity(issueTitle, issue.title)
+        // let rating = gestaltSimilarity(description, issue.body)
+        // let rating = gestaltSimilarity(issueTitle, issue.title)
 
-        let issueRecord = {
+        const issueRecord = {
           issue: issue,
           rating: rating
         }

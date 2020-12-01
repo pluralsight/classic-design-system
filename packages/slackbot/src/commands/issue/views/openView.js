@@ -16,7 +16,7 @@ exports.openView = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 
-  const userID = body['user_id']
+  const userID = body.user_id
 
   const query1 = {
     // give the query a unique name
@@ -46,7 +46,7 @@ exports.openView = async ({ ack, body, client }) => {
           type: 'modal',
           // View identifier
           callback_id: 'view_1',
-          private_metadata: user.access_token + ' ' + body['channel_id'],
+          private_metadata: user.access_token + ' ' + body.channel_id,
           title: {
             type: 'plain_text',
             text: 'Issue Poster'
@@ -99,7 +99,7 @@ exports.openView = async ({ ack, body, client }) => {
           type: 'modal',
           // View identifier
           callback_id: 'view_1',
-          private_metadata: body['channel_id'],
+          private_metadata: body.channel_id,
           title: {
             type: 'plain_text',
             text: 'Issue Poster'

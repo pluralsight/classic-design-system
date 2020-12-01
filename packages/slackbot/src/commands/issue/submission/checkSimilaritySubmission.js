@@ -32,10 +32,10 @@ exports.checkSimilaritySubmissionEvent = async ({
 
   let issueTitle = ''
   let description = ''
-  let labels = []
+  const labels = []
 
   let title = ''
-  let shortDescription = ''
+  const shortDescription = ''
 
   let expectedBehavior = ''
   let actualBehavior = ''
@@ -47,14 +47,14 @@ exports.checkSimilaritySubmissionEvent = async ({
   let todayBehavior = ''
   let valueAdd = ''
   let tradeoffs = ''
-  console.log('*****', view.blocks[1]['text']['text'])
+  console.log('*****', view.blocks[1].text.text)
   if (metadata[0] === 'Bug') {
-    title = view['blocks'][1]['text']['text']
-    expectedBehavior = view['blocks'][3]['text']['text']
-    actualBehavior = view['blocks'][5]['text']['text']
-    stepsToRepro = view['blocks'][7]['text']['text']
-    relatedPackages = view['blocks'][9]['text']['text']
-    environment = view['blocks'][11]['text']['text']
+    title = view.blocks[1].text.text
+    expectedBehavior = view.blocks[3].text.text
+    actualBehavior = view.blocks[5].text.text
+    stepsToRepro = view.blocks[7].text.text
+    relatedPackages = view.blocks[9].text.text
+    environment = view.blocks[11].text.text
 
     issueTitle = title
 
@@ -85,11 +85,11 @@ ${environment}
     labels.push('bug')
     labels.push('needs-triage')
   } else {
-    title = view['blocks'][1]['text']['text']
-    desiredBehavior = view['blocks'][3]['text']['text']
-    todayBehavior = view['blocks'][5]['text']['text']
-    valueAdd = view['blocks'][7]['text']['text']
-    tradeoffs = view['blocks'][9]['text']['text']
+    title = view.blocks[1].text.text
+    desiredBehavior = view.blocks[3].text.text
+    todayBehavior = view.blocks[5].text.text
+    valueAdd = view.blocks[7].text.text
+    tradeoffs = view.blocks[9].text.text
 
     issueTitle = title
 
@@ -116,10 +116,10 @@ ${tradeoffs}
     labels.push('needs-triage')
   }
 
-  const user = body['user']['id']
-  const username = body['user']['name']
+  const user = body.user.id
+  const username = body.user.name
 
-  let data = JSON.stringify({
+  const data = JSON.stringify({
     title: issueTitle,
     body: description,
     labels: labels
@@ -140,7 +140,7 @@ ${tradeoffs}
   await axios
     .post(
       'https://api.github.com/repos/piercebring/resumeWebsite/issues',
-      //"https://api.github.com/repos/pluralsight/design-system/issues",
+      // "https://api.github.com/repos/pluralsight/design-system/issues",
       {
         title: issueTitle,
         body: description,

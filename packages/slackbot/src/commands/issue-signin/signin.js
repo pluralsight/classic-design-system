@@ -16,7 +16,7 @@ exports.signin = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 
-  const userID = body['user_id']
+  const userID = body.user_id
 
   const query1 = {
     // give the query a unique name
@@ -71,9 +71,9 @@ exports.signin = async ({ ack, body, client }) => {
 
   try {
     await app.client.chat.postEphemeral({
-      token: client['token'],
+      token: client.token,
       attachments: attachments,
-      channel: body['channel_id'],
+      channel: body.channel_id,
       user: userID
     })
   } catch (error) {

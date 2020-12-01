@@ -15,7 +15,7 @@ exports.signout = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 
-  const userID = body['user_id']
+  const userID = body.user_id
 
   const deleteUser = {
     // give the query a unique name
@@ -44,8 +44,8 @@ exports.signout = async ({ ack, body, client }) => {
 
   try {
     await app.client.chat.postEphemeral({
-      token: client['token'],
-      channel: body['channel_id'],
+      token: client.token,
+      channel: body.channel_id,
       user: userID,
       text: msg
     })

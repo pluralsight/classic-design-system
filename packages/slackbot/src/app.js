@@ -52,12 +52,12 @@ app.command('/issue-signin', signin)
 app.command('/issue-help', help)
 
 //
-//LISTENERS FOR /issue COMMAND
+// LISTENERS FOR /issue COMMAND
 //
 
 app.command('/issue', openView)
 
-//VIEWS FOR /issue
+// VIEWS FOR /issue
 
 app.action('no_account', chooseLabelView)
 
@@ -65,20 +65,20 @@ app.action('enhancement_issue', enhancementView)
 
 app.action('bug_issue', bugView)
 
-//ON SUBMISSION
+// ON SUBMISSION
 
 app.view('view_1', viewSubmissionEvent)
 
 app.view('checkSimilarity', checkSimilaritySubmissionEvent)
 
-//HEALTH-CHECK
+// HEALTH-CHECK
 
 receiver.router.get('/health-check', async (request, res) => {
   res.sendStatus(200)
 })
 
 //
-//OAUTH
+// OAUTH
 //
 
 receiver.router.get('/oauth-callback', async (request, res) => {
@@ -89,9 +89,9 @@ receiver.router.get('/oauth-callback', async (request, res) => {
     state: request.query.state
   })
 
-  let userID = request.query.state
+  const userID = request.query.state
   let accessToken = ''
-  let config = {
+  const config = {
     headers: {
       'Content-Type': 'application/json',
       'Content-Length': data.length,
@@ -137,7 +137,7 @@ receiver.router.get('/oauth-callback', async (request, res) => {
     }
   })
 
-  //RETURN MESSAGE TELLING USER THAT SLACK/GITHUB ACCOUNTS HAVE BEEN LINKED.
+  // RETURN MESSAGE TELLING USER THAT SLACK/GITHUB ACCOUNTS HAVE BEEN LINKED.
 
   // Message the user
   try {

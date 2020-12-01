@@ -11,10 +11,10 @@ exports.help = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 
-  const userID = body['user_id']
+  const userID = body.user_id
 
-  let attachments = null
-  let msg =
+  const attachments = null
+  const msg =
     'Thanks for using the Issue Poster app! \n\n' +
     'You can use Issue Poster to submit issues to the design-system GitHub repository. \n\n' +
     "Don't have a GitHub account? Just use the `/issue` command and follow the prompts. \n\n" +
@@ -24,9 +24,9 @@ exports.help = async ({ ack, body, client }) => {
 
   try {
     await app.client.chat.postEphemeral({
-      token: client['token'],
+      token: client.token,
       attachments: null,
-      channel: body['channel_id'],
+      channel: body.channel_id,
       user: userID,
       text: msg
     })
