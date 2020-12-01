@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
+import userEvent from '@testing-library/user-event'
+import { screen } from '@testing-library/dom'
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 
@@ -69,18 +71,18 @@ describe('DatePicker', () => {
     const date = new Date(1993, 0, 20)
     const { findByRole } = render(<DatePicker value={date} />)
 
-    const dd = (await findByRole('textbox', {
-      name: 'day'
-    })) as HTMLInputElement
     const mm = (await findByRole('textbox', {
       name: 'month'
+    })) as HTMLInputElement
+    const dd = (await findByRole('textbox', {
+      name: 'day'
     })) as HTMLInputElement
     const yyyy = (await findByRole('textbox', {
       name: 'year'
     })) as HTMLInputElement
 
-    expect(parseInt(dd.value, 10)).toEqual(date.getDate())
     expect(parseInt(mm.value, 10)).toEqual(date.getMonth() + 1)
+    expect(parseInt(dd.value, 10)).toEqual(date.getDate())
     expect(parseInt(yyyy.value, 10)).toEqual(date.getFullYear())
   })
 
@@ -90,18 +92,46 @@ describe('DatePicker', () => {
 
     const newDate = new Date(2001, 7, 14)
     rerender(<DatePicker value={newDate} />)
-    const dd = (await findByRole('textbox', {
-      name: 'day'
-    })) as HTMLInputElement
     const mm = (await findByRole('textbox', {
       name: 'month'
+    })) as HTMLInputElement
+    const dd = (await findByRole('textbox', {
+      name: 'day'
     })) as HTMLInputElement
     const yyyy = (await findByRole('textbox', {
       name: 'year'
     })) as HTMLInputElement
 
-    expect(parseInt(dd.value, 10)).toEqual(newDate.getDate())
     expect(parseInt(mm.value, 10)).toEqual(newDate.getMonth() + 1)
+    expect(parseInt(dd.value, 10)).toEqual(newDate.getDate())
     expect(parseInt(yyyy.value, 10)).toEqual(newDate.getFullYear())
+  })
+
+  it('tabs through subfields', () => {
+    render(<DatePicker value={undefined} />)
+    const mm = screen.getByRole('textbox', { name: 'month' })
+    mm.focus()
+    expect(document.activeElement?.getAttribute('name')).toEqual('mm')
+    userEvent.tab()
+    expect(document.activeElement?.getAttribute('name')).toEqual('dd')
+    userEvent.tab()
+    expect(document.activeElement?.getAttribute('name')).toEqual('yyyy')
+  })
+
+  it('types in subfields', () => {
+    let value
+    const onSelect = (evt: React.FocusEvent | React.MouseEvent, date: Date) =>
+      (value = date)
+    render(<DatePicker value={value} onSelect={onSelect} />)
+    const mm = screen.getByRole('textbox', { name: 'month' })
+    mm.focus()
+    userEvent.type(document.activeElement!, '12')
+    userEvent.tab()
+    userEvent.type(document.activeElement!, '7')
+    userEvent.tab()
+    userEvent.type(document.activeElement!, '1941')
+    userEvent.tab()
+    const expected = new Date(1941, 11, 7, 0, 0, 0, 0)
+    expect(value).toEqual(expected)
   })
 })
