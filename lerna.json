@@ -1,5 +1,5 @@
 {
-  "packages": ["docs", "./packages/*"],
+  "packages": ["docs", "./packages/*", "./examples/*"],
   "command": {
     "version": {
       "allowBranch": "master",
