@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Variable Font Demo</title>
+
+    <style type="text/css">
+      body {
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding: 100px;
+        color: rgba(0, 0, 0, 0.9);
+        font-feature-settings: "tnum" on, "lnum" on;
+      }
+      body.dark {
+        background: #181c20;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      body.light {
+        background: #fff;
+        color: rgba(0, 0, 0, 0.9);
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      @font-face {
+        font-family: "PS TT Commons Roman TTF";
+        src: url("fonts/ps-tt-commons/PS_TT_Commons_Var_Roman-VF.ttf") format("truetype");
+        font-weight: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "PS TT Commons Roman TTF";
+        src: url("fonts/ps-tt-commons/PS_TT_Commons_Var_Italic-VF.ttf") format("truetype");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+      }
+      .ttf {
+        font-family: "PS TT Commons Roman TTF", serif;
+      }
+
+      @font-face {
+        font-family: "PS TT Commons Roman WOFF";
+        src: url("fonts/ps-tt-commons/PS_TT_Commons_Var_Roman-VF.woff") format("woff-variations");
+        font-weight: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "PS TT Commons Roman WOFF";
+        src: url("fonts/ps-tt-commons/PS_TT_Commons_Var_Italic-VF.woff") format("woff-variations");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+      }
+      .woff {
+        font-family: "PS TT Commons Roman WOFF", serif;
+      }
+
+      @font-face {
+        font-family: "PS TT Commons Roman WOFF2";
+        src: url("fonts/ps-tt-commons/PS_TT_Commons_Var_Roman-VF.woff2") format("woff2-variations");
+        font-weight: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "PS TT Commons Roman WOFF2";
+        src: url("fonts/ps-tt-commons/PS_TT_Commons_Var_Italic-VF.woff2") format("woff2-variations");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+      }
+      .woff2 {
+        font-family: "PS TT Commons Roman WOFF2", serif;
+      }
+
+      .face {
+        font-size: 1.75em;
+        margin-bottom: 0.25em;
+      }
+
+      h2 {
+        font-family: serif;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        margin-bottom: 1.5em;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .extralight {
+        font-variation-settings: 'wght' 200;
+        font-weight: 200;
+      }
+      .light {
+        font-variation-settings: 'wght' 300;
+        font-weight: 300;
+      }
+      .book {
+        font-variation-settings: 'wght' 400;
+        font-weight: 400;
+      }
+      .medium {
+        font-variation-settings: 'wght' 500;
+        font-weight: 500;
+      }
+      .bold {
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+    </style>
+
+    <script charset="utf-8">
+      window.addEventListener('load', () => {
+        document.getElementById('browser').innerHTML = window.navigator.userAgent
+      })
+    </script>
+  </head>
+
+  <body class="dark">
+    <h1 id="browser"></h1>
+    <div class="row">
+      <section class="ttf">
+        <h2>Variable TTF</h2>
+        <div class="face extralight">Extra Light. 200. PS TT Commons</div>
+        <div class="face light">Light. 300. PS TT Commons</div>
+        <div class="face book">Book. 400. PS TT Commons</div>
+        <div class="face medium">Medium. 500. PS TT Commons</div>
+        <div class="face bold">Bold. 700. PS TT Commons</div>
+      </section>
+      <section class="woff">
+        <h2>Variable WOFF</h2>
+        <div class="face extralight">Extra Light. 200. PS TT Commons</div>
+        <div class="face light">Light. 300. PS TT Commons</div>
+        <div class="face book">Book. 400. PS TT Commons</div>
+        <div class="face medium">Medium. 500. PS TT Commons</div>
+        <div class="face bold">Bold. 700. PS TT Commons</div>
+      </section>
+      <section class="woff2">
+        <h2>Variable WOFF2</h2>
+        <div class="face extralight">Extra Light. 200. PS TT Commons</div>
+        <div class="face light">Light. 300. PS TT Commons</div>
+        <div class="face book">Book. 400. PS TT Commons</div>
+        <div class="face medium">Medium. 500. PS TT Commons</div>
+        <div class="face bold">Bold. 700. PS TT Commons</div>
+      </section>
+    </div>
+    <div class="row italic">
+      <section class="ttf">
+        <h2>Variable TTF</h2>
+        <div class="face extralight">Extra Light. 200. PS TT Commons</div>
+        <div class="face light">Light. 300. PS TT Commons</div>
+        <div class="face book">Book. 400. PS TT Commons</div>
+        <div class="face medium">Medium. 500. PS TT Commons</div>
+        <div class="face bold">Bold. 700. PS TT Commons</div>
+      </section>
+      <section class="woff">
+        <h2>Variable WOFF</h2>
+        <div class="face extralight">Extra Light. 200. PS TT Commons</div>
+        <div class="face light">Light. 300. PS TT Commons</div>
+        <div class="face book">Book. 400. PS TT Commons</div>
+        <div class="face medium">Medium. 500. PS TT Commons</div>
+        <div class="face bold">Bold. 700. PS TT Commons</div>
+      </section>
+      <section class="woff2">
+        <h2>Variable WOFF2</h2>
+        <div class="face extralight">Extra Light. 200. PS TT Commons</div>
+        <div class="face light">Light. 300. PS TT Commons</div>
+        <div class="face book">Book. 400. PS TT Commons</div>
+        <div class="face medium">Medium. 500. PS TT Commons</div>
+        <div class="face bold">Bold. 700. PS TT Commons</div>
+      </section>
+    </div>
+  </body>
+</html>
