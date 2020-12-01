@@ -8,12 +8,12 @@ Copy font files into this directory so it looks like this:
 ├── font-demo.html
 ├── fonts
 │   └── ps-tt-commons
-│       ├── PS_TT_Commons_Var_Italic-VF.ttf
-│       ├── PS_TT_Commons_Var_Italic-VF.woff
-│       ├── PS_TT_Commons_Var_Italic-VF.woff2
-│       ├── PS_TT_Commons_Var_Roman-VF.ttf
-│       ├── PS_TT_Commons_Var_Roman-VF.woff
-│       └── PS_TT_Commons_Var_Roman-VF.woff2
+│       ├── ps-tt-commons-variable-italic.ttf
+│       ├── ps-tt-commons-variable-italic.woff
+│       ├── ps-tt-commons-variable-italic.woff2
+│       ├── ps-tt-commons-variable-roman.ttf
+│       ├── ps-tt-commons-variable-roman.woff
+│       └── ps-tt-commons-variable-roman.woff2
 ```
 
 No server required. Open in browser.
