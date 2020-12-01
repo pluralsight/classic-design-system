@@ -16,24 +16,16 @@ import {
 
 <TableOfContents {...props} />
 
-## Install the font
-
-To use the Pluralsight font-family on your site, you must install it by importing it from typography.com using Pluralsight's assigned CSS Key.
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cloud.typography.com/6966154/6397212/css/fonts.css"
-/>
-```
-
 ## Font family
 
-Pluralsight's font family for the web is Gotham SSm.
+<Badge color="yellow">New</Badge> Pluralsight's font family for the web is a custom font called PS TT Commons. 
+
+
+We no longer use the Gotham font from typography.com. You should remove any remaining references to that.  As we are transitioning, Gotham is still listed as a fallback font. Eventually it will be fully removed.
 
 <FontFamily />
 
-Apply the font family to the entire page. The recommended method is to include the normalize stylesheet. First install:
+The `@font-face` declaration is included in the normalize stylesheet.  Install with:
 
 ```bash
 npm install @pluralsight/ps-design-system-normalize
@@ -43,6 +35,14 @@ Then include it in your global stylesheet:
 
 ```css
 @import '@pluralsight/ps-design-system-normalize';
+```
+
+## CDN reference
+
+The normalize stylesheet should be used in most cases. But if you need a direct reference to the font file, it is located at:
+
+```
+TODO:fillInCloudFrontURLToFile
 ```
 
 ## Font weight
