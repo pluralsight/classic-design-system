@@ -24,16 +24,92 @@ exports[`Storyshots Components/Table Alignment 1`] = `
         <th
           data-css-1qf9mo3=""
         >
-          Align Center
+          Align center
         </th>
         <th
           data-css-av945f=""
         >
-          Align Right
+          Align right
         </th>
       </tr>
     </thead>
     <tbody>
+      <tr
+        data-css-1195cc4=""
+      >
+        <th
+          data-css-1c7qoga=""
+        >
+          Enrico
+        </th>
+        <td
+          data-css-rg0vl=""
+        >
+          VonRueden
+        </td>
+        <td
+          data-css-486wol=""
+        >
+          Helen_Schmeler@yahoo.com
+        </td>
+      </tr>
+      <tr
+        data-css-1195cc4=""
+      >
+        <th
+          data-css-1c7qoga=""
+        >
+          Brittany
+        </th>
+        <td
+          data-css-rg0vl=""
+        >
+          Leuschke
+        </td>
+        <td
+          data-css-486wol=""
+        >
+          Yasmeen49@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-1195cc4=""
+      >
+        <th
+          data-css-1c7qoga=""
+        >
+          Eva
+        </th>
+        <td
+          data-css-rg0vl=""
+        >
+          Jacobs
+        </td>
+        <td
+          data-css-486wol=""
+        >
+          Birdie0@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-1195cc4=""
+      >
+        <th
+          data-css-1c7qoga=""
+        >
+          Erich
+        </th>
+        <td
+          data-css-rg0vl=""
+        >
+          Dach
+        </td>
+        <td
+          data-css-486wol=""
+        >
+          Hubert_Welch@yahoo.com
+        </td>
+      </tr>
       <tr
         data-css-1195cc4=""
       >
@@ -51,82 +127,6 @@ exports[`Storyshots Components/Table Alignment 1`] = `
           data-css-486wol=""
         >
           Derrick_Raynor@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Ignacio
-        </th>
-        <td
-          data-css-rg0vl=""
-        >
-          Swift
-        </td>
-        <td
-          data-css-486wol=""
-        >
-          Hans.Marquardt@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Edwina
-        </th>
-        <td
-          data-css-rg0vl=""
-        >
-          Predovic
-        </td>
-        <td
-          data-css-486wol=""
-        >
-          Damaris_Wilderman@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Devante
-        </th>
-        <td
-          data-css-rg0vl=""
-        >
-          Schuppe
-        </td>
-        <td
-          data-css-486wol=""
-        >
-          Kris_Parker@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Skylar
-        </th>
-        <td
-          data-css-rg0vl=""
-        >
-          Greenholt
-        </td>
-        <td
-          data-css-486wol=""
-        >
-          Gust.Hodkiewicz@hotmail.com
         </td>
       </tr>
     </tbody>
@@ -679,17 +679,17 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         <td
           data-css-nyp2vl=""
         >
-          Era
+          Ignacio
         </td>
         <td
           data-css-nyp2vl=""
         >
-          Dooley
+          Swift
         </td>
         <td
           data-css-nyp2vl=""
         >
-          Schuyler_MacGyver50@hotmail.com
+          Hans.Marquardt@yahoo.com
         </td>
       </tr>
       <tr
@@ -728,6 +728,199 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                   />
                 </svg>
               </div>
+            </div>
+            <div
+              data-css-ybwuvp=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Edwina
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Predovic
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Damaris_Wilderman@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-1195cc4=""
+      >
+        <td
+          data-css-nyp2vl=""
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-ybwuvp=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Devante
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Schuppe
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Kris_Parker@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-1195cc4=""
+      >
+        <td
+          data-css-nyp2vl=""
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-ybwuvp=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Skylar
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Greenholt
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Gust.Hodkiewicz@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-10jq9h3=""
+      >
+        <td
+          data-css-nyp2vl=""
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={true}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1cfeqew=""
+              >
+                <svg
+                  aria-label="Checkmark"
+                  data-css-ey6g07=""
+                  role="img"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              data-css-ybwuvp=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Era
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Dooley
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Schuyler_MacGyver50@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-1195cc4=""
+      >
+        <td
+          data-css-nyp2vl=""
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
             </div>
             <div
               data-css-ybwuvp=""
@@ -796,51 +989,6 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
-      >
-        <td
-          data-css-nyp2vl=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Noemy
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Baumbach
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Jerrell.Hackett@hotmail.com
-        </td>
-      </tr>
-      <tr
         data-css-10jq9h3=""
       >
         <td
@@ -876,6 +1024,51 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                   />
                 </svg>
               </div>
+            </div>
+            <div
+              data-css-ybwuvp=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Noemy
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Baumbach
+        </td>
+        <td
+          data-css-nyp2vl=""
+        >
+          Jerrell.Hackett@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-1195cc4=""
+      >
+        <td
+          data-css-nyp2vl=""
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
             </div>
             <div
               data-css-ybwuvp=""
@@ -943,199 +1136,6 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           Coy87@hotmail.com
         </td>
       </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <td
-          data-css-nyp2vl=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Delphine
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Huel
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Forest_Lind@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-10jq9h3=""
-      >
-        <td
-          data-css-nyp2vl=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={true}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1cfeqew=""
-              >
-                <svg
-                  aria-label="Checkmark"
-                  data-css-ey6g07=""
-                  role="img"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polygon
-                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Brittany
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Hirthe
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Efrain_Gerhold71@gmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <td
-          data-css-nyp2vl=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Geovany
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Franecki
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Nathanael.Wolff9@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <td
-          data-css-nyp2vl=""
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Ena
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Boyle
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Luna.Christiansen@gmail.com
-        </td>
-      </tr>
     </tbody>
   </table>
 </div>
@@ -1158,7 +1158,12 @@ exports[`Storyshots Components/Table Sorting 1`] = `
         data-css-1195cc4=""
       >
         <th
+          aria-label="First name: No sort applied"
+          aria-sort="none"
           data-css-m2a81v=""
+          onClick={[Function]}
+          tabIndex={0}
+          title="First name"
         >
           First name
           <div
@@ -1166,18 +1171,23 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             data-css-yaqq33=""
           >
             <svg
-              aria-label="sort desc icon"
+              aria-label="sort icon"
               role="img"
               viewBox="0 0 24 24"
             >
               <path
-                d="M11.646 5.354L7.354 9.646a.5.5 0 000 .707l.703.704a.5.5 0 00.707 0L11 8.827V17.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5V8.827l2.236 2.23a.5.5 0 00.707 0l.704-.704a.5.5 0 000-.707l-4.293-4.292a.5.5 0 00-.707 0z"
+                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
               />
             </svg>
           </div>
         </th>
         <th
+          aria-label="Last name: No sort applied"
+          aria-sort="none"
           data-css-m2a81v=""
+          onClick={[Function]}
+          tabIndex={0}
+          title="Last name"
         >
           Last name
           <div
@@ -1185,18 +1195,23 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             data-css-yaqq33=""
           >
             <svg
-              aria-label="sort desc icon"
+              aria-label="sort icon"
               role="img"
               viewBox="0 0 24 24"
             >
               <path
-                d="M11 15.173l-2.236-2.23a.5.5 0 00-.707 0l-.703.703a.5.5 0 000 .708l4.292 4.292a.5.5 0 00.707 0l4.293-4.292a.5.5 0 000-.708l-.703-.703a.5.5 0 00-.707 0L13 15.173V6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v8.673z"
+                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
               />
             </svg>
           </div>
         </th>
         <th
+          aria-label="Email: No sort applied"
+          aria-sort="none"
           data-css-m2a81v=""
+          onClick={[Function]}
+          tabIndex={0}
+          title="Email"
         >
           Email
           <div
@@ -1222,6 +1237,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
       >
         <th
           data-css-1c7qoga=""
+          title="First name"
         >
           Jorge
         </th>
@@ -1234,82 +1250,6 @@ exports[`Storyshots Components/Table Sorting 1`] = `
           data-css-nyp2vl=""
         >
           Silas.Will@gmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Enrico
-        </th>
-        <td
-          data-css-nyp2vl=""
-        >
-          VonRueden
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Helen_Schmeler@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Brittany
-        </th>
-        <td
-          data-css-nyp2vl=""
-        >
-          Leuschke
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Yasmeen49@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Eva
-        </th>
-        <td
-          data-css-nyp2vl=""
-        >
-          Jacobs
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Birdie0@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1195cc4=""
-      >
-        <th
-          data-css-1c7qoga=""
-        >
-          Erich
-        </th>
-        <td
-          data-css-nyp2vl=""
-        >
-          Dach
-        </td>
-        <td
-          data-css-nyp2vl=""
-        >
-          Hubert_Welch@yahoo.com
         </td>
       </tr>
     </tbody>
@@ -1372,21 +1312,25 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </td>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
-            Full Name
+            Full name
           </th>
           <th
             data-css-1c7qoga=""
+            title="First name"
           >
             First name
           </th>
           <th
             data-css-1c7qoga=""
+            title="Last name"
           >
             Last name
           </th>
           <th
             data-css-1c7qoga=""
+            title="Email"
           >
             Email
           </th>
@@ -1423,6 +1367,215 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </td>
           <th
             data-css-1c7qoga=""
+            title="Full name"
+          >
+            Delphine
+             
+            Huel
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Delphine
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Huel
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Forest_Lind@yahoo.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <td
+            data-css-nyp2vl=""
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </td>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
+          >
+            Brittany
+             
+            Hirthe
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Brittany
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Hirthe
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Efrain_Gerhold71@gmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <td
+            data-css-nyp2vl=""
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </td>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
+          >
+            Geovany
+             
+            Franecki
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Geovany
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Franecki
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Nathanael.Wolff9@hotmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <td
+            data-css-nyp2vl=""
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </td>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
+          >
+            Ena
+             
+            Boyle
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Ena
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Boyle
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Luna.Christiansen@gmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <td
+            data-css-nyp2vl=""
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </td>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
           >
             Emil
              
@@ -1442,210 +1595,6 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
             data-css-nyp2vl=""
           >
             Lura_Pouros95@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <td
-            data-css-nyp2vl=""
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </td>
-          <th
-            data-css-1c7qoga=""
-          >
-            Monique
-             
-            Reilly
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Monique
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Reilly
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Rhoda_Botsford43@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <td
-            data-css-nyp2vl=""
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </td>
-          <th
-            data-css-1c7qoga=""
-          >
-            Araceli
-             
-            Huels
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Araceli
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Huels
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Hailey33@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <td
-            data-css-nyp2vl=""
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </td>
-          <th
-            data-css-1c7qoga=""
-          >
-            Nathan
-             
-            Becker
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Nathan
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Becker
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Thad33@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <td
-            data-css-nyp2vl=""
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </td>
-          <th
-            data-css-1c7qoga=""
-          >
-            Maximillian
-             
-            McKenzie
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Maximillian
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            McKenzie
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Julius87@hotmail.com
           </td>
         </tr>
       </tbody>
@@ -1691,6 +1640,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
                 "width": 1,
               }
             }
+            title="Selection"
           >
             <label
               data-css-kn3wr0=""
@@ -1718,7 +1668,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
             data-css-17w5r9f=""
             scope="col"
           >
-            Full Name
+            Full name
           </th>
           <th
             data-css-17w5r9f=""
@@ -1772,6 +1722,219 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
+          >
+            Eric
+             
+            Gerlach
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Eric
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Gerlach
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Earnest_Wiza@hotmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
+          >
+            Amber
+             
+            DuBuque
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Amber
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            DuBuque
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Adam.Aufderhar@hotmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
+          >
+            Merritt
+             
+            Kohler
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Merritt
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Kohler
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Junius.Torphy@hotmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
+          >
+            Estrella
+             
+            Green
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Estrella
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Green
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Gerhard_Spencer@yahoo.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+            title="Full name"
           >
             Troy
              
@@ -1824,6 +1987,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Nona
              
@@ -1876,6 +2040,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Brown
              
@@ -1928,6 +2093,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Neal
              
@@ -1980,6 +2146,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Electa
              
@@ -2032,6 +2199,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Forrest
              
@@ -2084,6 +2252,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Robert
              
@@ -2136,6 +2305,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Benedict
              
@@ -2188,6 +2358,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Kristopher
              
@@ -2240,6 +2411,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Camden
              
@@ -2292,6 +2464,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Abdul
              
@@ -2344,6 +2517,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Dagmar
              
@@ -2396,6 +2570,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Maryse
              
@@ -2448,6 +2623,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Deonte
              
@@ -2500,6 +2676,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Arvilla
              
@@ -2552,6 +2729,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            title="Full name"
           >
             Eldon
              
@@ -2571,214 +2749,6 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
             data-css-nyp2vl=""
           >
             Danielle76@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Clair
-             
-            Thompson
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Clair
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Thompson
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Josue29@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Ardith
-             
-            Schoen
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Ardith
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Schoen
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Ahmad_Cremin94@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Lorine
-             
-            Hayes
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Lorine
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Hayes
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Ole.Daugherty@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Josue
-             
-            Effertz
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Josue
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Effertz
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Margot28@gmail.com
           </td>
         </tr>
       </tbody>
@@ -2819,7 +2789,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
             data-css-17w5r9f=""
             scope="col"
           >
-            Full Name
+            Full name
           </th>
           <th
             data-css-17w5r9f=""
@@ -2842,6 +2812,110 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
         </tr>
       </thead>
       <tbody>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-1c7qoga=""
+          >
+            Monique
+             
+            Reilly
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Monique
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Reilly
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Rhoda_Botsford43@gmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-1c7qoga=""
+          >
+            Araceli
+             
+            Huels
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Araceli
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Huels
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Hailey33@hotmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-1c7qoga=""
+          >
+            Nathan
+             
+            Becker
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Nathan
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Becker
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Thad33@yahoo.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-1c7qoga=""
+          >
+            Maximillian
+             
+            McKenzie
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Maximillian
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            McKenzie
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Julius87@hotmail.com
+          </td>
+        </tr>
         <tr
           data-css-1195cc4=""
         >
@@ -3258,110 +3332,6 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
             Nicola46@gmail.com
           </td>
         </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-1c7qoga=""
-          >
-            Annabelle
-             
-            Stokes
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Annabelle
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Stokes
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Zackery.Lind@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-1c7qoga=""
-          >
-            Donna
-             
-            Morar
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Donna
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Morar
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Quinton.Rippin@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-1c7qoga=""
-          >
-            Kiana
-             
-            Grimes
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Kiana
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Grimes
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Wilhelm_Batz@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-1c7qoga=""
-          >
-            Kaelyn
-             
-            Corwin
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Kaelyn
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Corwin
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Kiley_Sipes17@gmail.com
-          </td>
-        </tr>
       </tbody>
     </table>
   </div>
@@ -3404,6 +3374,7 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
                 "width": 1,
               }
             }
+            title="Selection"
           >
             <label
               data-css-kn3wr0=""
@@ -3430,7 +3401,7 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           <th
             data-css-1c7qoga=""
           >
-            Full Name
+            Full name
           </th>
           <th
             data-css-1c7qoga=""
@@ -3482,6 +3453,214 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           <th
             data-css-1c7qoga=""
           >
+            Annabelle
+             
+            Stokes
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Annabelle
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Stokes
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Zackery.Lind@hotmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+          >
+            Donna
+             
+            Morar
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Donna
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Morar
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Quinton.Rippin@yahoo.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+          >
+            Kiana
+             
+            Grimes
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Kiana
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Grimes
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Wilhelm_Batz@hotmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+          >
+            Kaelyn
+             
+            Corwin
+          </th>
+          <td
+            data-css-nyp2vl=""
+          >
+            Kaelyn
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Corwin
+          </td>
+          <td
+            data-css-nyp2vl=""
+          >
+            Kiley_Sipes17@gmail.com
+          </td>
+        </tr>
+        <tr
+          data-css-1195cc4=""
+        >
+          <th
+            data-css-17w5r9f=""
+            scope="row"
+          >
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1lxtjk6=""
+                />
+              </div>
+              <div
+                data-css-ybwuvp=""
+              />
+            </label>
+          </th>
+          <th
+            data-css-1c7qoga=""
+          >
             Jadon
              
             Koch
@@ -3500,214 +3679,6 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
             data-css-nyp2vl=""
           >
             Ned73@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Eric
-             
-            Gerlach
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Eric
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Gerlach
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Earnest_Wiza@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Amber
-             
-            DuBuque
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Amber
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            DuBuque
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Adam.Aufderhar@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Merritt
-             
-            Kohler
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Merritt
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Kohler
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Junius.Torphy@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1195cc4=""
-        >
-          <th
-            data-css-17w5r9f=""
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-          >
-            Estrella
-             
-            Green
-          </th>
-          <td
-            data-css-nyp2vl=""
-          >
-            Estrella
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Green
-          </td>
-          <td
-            data-css-nyp2vl=""
-          >
-            Gerhard_Spencer@yahoo.com
           </td>
         </tr>
       </tbody>

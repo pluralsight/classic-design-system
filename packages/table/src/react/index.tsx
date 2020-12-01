@@ -9,7 +9,8 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { forwardRef } from 'react'
+import invariant from 'invariant'
+import React, { forwardRef, useMemo } from 'react'
 
 import stylesheet from '../css'
 import { alignments, sorts } from '../vars'
@@ -138,6 +139,7 @@ interface TableHeaderProps extends HTMLPropsFor<'th'> {
   align?: ValueOf<typeof alignments>
   sort?: boolean | ValueOf<typeof sorts>
   sticky?: boolean
+  title?: string
 }
 const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
   (props, ref) => {
@@ -146,16 +148,56 @@ const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
       children,
       sort,
       sticky = false,
+      title,
       ...rest
     } = props
     const sortable = isDefined(sort)
     const sorted = !isBoolean(sort)
 
-    let Icon = SortIcon
-    if (sorted) Icon = sort === sorts.desc ? SortDescIcon : SortAscIcon
+    if (sortable) {
+      const msg =
+        'Missing title prop in Table.Header. A title is required when the header is sortable.'
+
+      invariant(title, msg)
+    }
+
+    const ariaSort = useMemo(() => {
+      if (!sorted) return 'none'
+      return sort === sorts.asc ? 'ascending' : 'descending'
+    }, [sort, sorted])
+
+    const ariaLabel = useMemo(() => {
+      const options = {
+        ascending: 'Ascending sort applied',
+        descending: 'Descending sort applied',
+        none: 'No sort applied'
+      }
+
+      return `${title || ''}: ${options[ariaSort]}`
+    }, [ariaSort, title])
+
+    const Icon = useMemo(() => {
+      const options = {
+        ascending: SortAscIcon,
+        descending: SortDescIcon,
+        none: SortIcon
+      }
+
+      return options[ariaSort]
+    }, [ariaSort])
 
     return (
-      <th ref={ref} {...styles.header({ align, sortable, sticky })} {...rest}>
+      <th
+        ref={ref}
+        title={title}
+        {...styles.header({ align, sortable, sticky })}
+        {...(sortable && {
+          'aria-label': ariaLabel,
+          'aria-sort': ariaSort,
+          tabIndex: 0
+        })}
+        {...rest}
+      >
         {children}
         {sortable && <Icon {...styles.sortIcon()} />}
       </th>

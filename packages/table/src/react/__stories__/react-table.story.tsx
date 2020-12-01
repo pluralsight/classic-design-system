@@ -132,13 +132,16 @@ export const Advanced: Story = () => {
                   ? { width: 1 }
                   : {}
 
+                const textContent = column.render('Header') as string
+
                 return (
                   <Table.Header
                     {...column.getHeaderProps(column.getSortByToggleProps())}
                     sort={sortable ? sort : undefined}
                     style={style}
+                    title={sortable ? textContent : ''}
                   >
-                    {column.render('Header')}
+                    {textContent}
                   </Table.Header>
                 )
               })}

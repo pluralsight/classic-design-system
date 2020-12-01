@@ -23,10 +23,10 @@ export const HorizontalScroll: Story = () => {
             <Table.Cell>
               <Checkbox />
             </Table.Cell>
-            <Table.Header>Full Name</Table.Header>
-            <Table.Header>First name</Table.Header>
-            <Table.Header>Last name</Table.Header>
-            <Table.Header>Email</Table.Header>
+            <Table.Header title="Full name">Full name</Table.Header>
+            <Table.Header title="First name">First name</Table.Header>
+            <Table.Header title="Last name">Last name</Table.Header>
+            <Table.Header title="Email">Email</Table.Header>
           </Table.Row>
         </Table.Head>
 
@@ -36,7 +36,7 @@ export const HorizontalScroll: Story = () => {
               <Table.Cell>
                 <Checkbox />
               </Table.Cell>
-              <Table.Header>
+              <Table.Header title="Full name">
                 {user.firstName} {user.lastName}
               </Table.Header>
               <Table.Cell>{user.firstName}</Table.Cell>
@@ -60,7 +60,7 @@ export const StickyColumnHeader: Story = () => {
         <Table.Head>
           <Table.Row>
             <Table.Header scope="col" sticky>
-              Full Name
+              Full name
             </Table.Header>
             <Table.Header scope="col" sticky>
               First name
@@ -99,10 +99,15 @@ export const StickyRowHeader: Story = () => {
       <Table>
         <Table.Head>
           <Table.Row>
-            <Table.Header scope="row" sticky style={{ width: 1 }}>
+            <Table.Header
+              scope="row"
+              sticky
+              style={{ width: 1 }}
+              title="Selection"
+            >
               <Checkbox />
             </Table.Header>
-            <Table.Header>Full Name</Table.Header>
+            <Table.Header>Full name</Table.Header>
             <Table.Header>First name</Table.Header>
             <Table.Header>Last name</Table.Header>
             <Table.Header>Email</Table.Header>
@@ -137,11 +142,16 @@ export const StickyColumnAndRowHeaders: Story = () => {
       <Table>
         <Table.Head>
           <Table.Row>
-            <Table.Header scope="col" sticky style={{ width: 1 }}>
+            <Table.Header
+              scope="col"
+              sticky
+              style={{ width: 1 }}
+              title="Selection"
+            >
               <Checkbox />
             </Table.Header>
             <Table.Header scope="col" sticky>
-              Full Name
+              Full name
             </Table.Header>
             <Table.Header scope="col" sticky>
               First name
@@ -161,7 +171,7 @@ export const StickyColumnAndRowHeaders: Story = () => {
               <Table.Header scope="row" sticky>
                 <Checkbox />
               </Table.Header>
-              <Table.Header>
+              <Table.Header title="Full name">
                 {user.firstName} {user.lastName}
               </Table.Header>
               <Table.Cell>{user.firstName}</Table.Cell>

@@ -72,29 +72,71 @@ export const MixedContent: Story = () => {
 }
 
 export const Sorting: Story = () => {
-  const data = new Array(5).fill(null).map(() => generateUser())
+  type SortOptions = boolean | 'asc' | 'desc'
+  type SortHeader = {
+    id: string
+    title: string
+    sort: SortOptions
+  }
 
-  return (
-    <Table>
-      <Table.Head>
-        <Table.Row>
-          <Table.Header sort="asc">First name</Table.Header>
-          <Table.Header sort="desc">Last name</Table.Header>
-          <Table.Header sort>Email</Table.Header>
-        </Table.Row>
-      </Table.Head>
+  const data = new Array(1).fill(null).map(() => generateUser())
 
-      <Table.Body>
-        {data.map((user, i) => (
-          <Table.Row key={i}>
-            <Table.Header>{user.firstName}</Table.Header>
-            <Table.Cell>{user.lastName}</Table.Cell>
-            <Table.Cell>{user.email}</Table.Cell>
+  const SortingStory: React.FC = () => {
+    const [headers, setHeaders] = React.useState<SortHeader[]>([
+      { id: 'first-name', title: 'First name', sort: false },
+      { id: 'last-name', title: 'Last name', sort: false },
+      { id: 'email', title: 'Email', sort: false }
+    ])
+
+    const [users] = React.useState(data)
+
+    const applyColSort = (header: SortHeader) => {
+      const prevSort: SortOptions = header.sort
+      let nextSort: SortOptions
+
+      if (typeof prevSort === 'boolean') nextSort = 'desc'
+      else if (prevSort === 'desc') nextSort = 'asc'
+      else if (prevSort === 'asc') nextSort = false
+
+      const nextHeaders = headers.map(h => ({
+        ...h,
+        sort: h.id === header.id ? nextSort : false
+      }))
+
+      setHeaders(nextHeaders)
+    }
+
+    return (
+      <Table>
+        <Table.Head>
+          <Table.Row>
+            {headers.map(header => (
+              <Table.Header
+                key={header.id}
+                onClick={() => applyColSort(header)}
+                sort={header.sort}
+                title={header.title}
+              >
+                {header.title}
+              </Table.Header>
+            ))}
           </Table.Row>
-        ))}
-      </Table.Body>
-    </Table>
-  )
+        </Table.Head>
+
+        <Table.Body>
+          {users.map((user, i) => (
+            <Table.Row key={i}>
+              <Table.Header title="First name">{user.firstName}</Table.Header>
+              <Table.Cell>{user.lastName}</Table.Cell>
+              <Table.Cell>{user.email}</Table.Cell>
+            </Table.Row>
+          ))}
+        </Table.Body>
+      </Table>
+    )
+  }
+
+  return <SortingStory />
 }
 
 export const Alignment: Story = () => {
@@ -105,8 +147,8 @@ export const Alignment: Story = () => {
       <Table.Head>
         <Table.Row>
           <Table.Header align="left">Align Left</Table.Header>
-          <Table.Header align="center">Align Center</Table.Header>
-          <Table.Header align="right">Align Right</Table.Header>
+          <Table.Header align="center">Align center</Table.Header>
+          <Table.Header align="right">Align right</Table.Header>
         </Table.Row>
       </Table.Head>
 

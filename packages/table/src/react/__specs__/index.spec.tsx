@@ -1,6 +1,6 @@
 import { axe } from 'jest-axe'
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 
 import Table from '..'
 import * as stories from '../__stories__/index.story'
@@ -9,15 +9,6 @@ type TableProps = React.ComponentProps<typeof Table>
 type RenderContainer = TableProps['renderContainer']
 
 describe('Table', () => {
-  const { Basic } = stories
-
-  it('should passes a basic a11y audit', async () => {
-    const { container } = render(<Basic />)
-    const results = await axe(container)
-
-    expect(results).toHaveNoViolations()
-  })
-
   describe('Table', () => {
     it('should forward refs', () => {
       const ref = React.createRef<HTMLTableElement>()
@@ -144,7 +135,11 @@ describe('Table', () => {
         <Table>
           <Table.Body>
             <Table.Row>
-              <Table.Header data-testid="undertest" ref={ref} />
+              <Table.Header
+                data-testid="undertest"
+                ref={ref}
+                title="header title"
+              />
             </Table.Row>
           </Table.Body>
         </Table>
@@ -173,6 +168,69 @@ describe('Table', () => {
 
       expect(ref.current).not.toBeNull()
       expect(ref.current).toBe(el)
+    })
+  })
+
+  describe('with basic markup', () => {
+    const { Basic } = stories
+
+    it('should pass an axe a11y audit', async () => {
+      const { container } = render(<Basic />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
+  })
+
+  describe('when sorting', () => {
+    const { Sorting } = stories
+
+    it('should pass an axe a11y audit', async () => {
+      const { container } = render(<Sorting />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
+
+    it('should have keyboard focusable column headers', () => {
+      const { container } = render(<Sorting />)
+
+      const head = container.querySelector('thead')!
+      const headings = within(head).getAllByRole('columnheader')
+
+      headings.forEach(h => {
+        expect(h).toHaveAttribute('tabindex', '0')
+      })
+    })
+
+    it('should toggle aria attributes', () => {
+      const { container } = render(<Sorting />)
+
+      const head = container.querySelector('thead')!
+      const headings = within(head).getAllByRole('columnheader')
+
+      expect(headings).toHaveLength(3)
+
+      const [firstNameHeading] = headings
+      expect(firstNameHeading).toHaveAttribute('aria-sort', 'none')
+      expect(firstNameHeading).toHaveAttribute(
+        'aria-label',
+        expect.stringContaining('No sort applied')
+      )
+
+      fireEvent.click(firstNameHeading)
+      expect(firstNameHeading).toHaveAttribute('aria-sort', 'descending')
+      expect(firstNameHeading).toHaveAttribute(
+        'aria-label',
+        expect.stringContaining('Descending sort applied')
+      )
+
+      fireEvent.click(firstNameHeading)
+      expect(firstNameHeading).toHaveAttribute('aria-sort', 'ascending')
+      expect(firstNameHeading).toHaveAttribute(
+        'aria-label',
+        expect.stringContaining('Ascending sort applied')
+      )
     })
   })
 })
