@@ -108,7 +108,7 @@ describe('DatePicker', () => {
   })
 
   it('tabs through subfields', () => {
-    render(<DatePicker />)
+    render(<DatePicker value={undefined} />)
     const mm = screen.getByRole('textbox', { name: 'month' })
     mm.focus()
     expect(document.activeElement?.getAttribute('name')).toEqual('mm')
@@ -119,17 +119,19 @@ describe('DatePicker', () => {
   })
 
   it('types in subfields', () => {
-    const onSelect = jest.fn()
-    render(<DatePicker onSelect={onSelect} />)
+    let value
+    const onSelect = (evt: React.FocusEvent | React.MouseEvent, date: Date) =>
+      (value = date)
+    render(<DatePicker value={value} onSelect={onSelect} />)
     const mm = screen.getByRole('textbox', { name: 'month' })
     mm.focus()
-    userEvent.type(document.activeElement, '12')
+    userEvent.type(document.activeElement!, '12')
     userEvent.tab()
-    userEvent.type(document.activeElement, '7')
+    userEvent.type(document.activeElement!, '7')
     userEvent.tab()
-    userEvent.type(document.activeElement, '1941')
+    userEvent.type(document.activeElement!, '1941')
     userEvent.tab()
     const expected = new Date(1941, 11, 7, 0, 0, 0, 0)
-    expect(onSelect).toHaveBeenCalledWith(expect.any(Object), expected)
+    expect(value).toEqual(expected)
   })
 })
