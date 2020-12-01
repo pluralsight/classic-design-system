@@ -18,6 +18,7 @@
   }
 }
 
-h2.title {
+h4.title {
+  color: red;
   margin: var(--psLayoutSpacingLarge) 0 0 var(--psLayoutSpacingLarge);
 }
