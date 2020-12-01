@@ -1,40 +1,40 @@
-const dotenv = require("dotenv");
-dotenv.config();
-const { Client } = require("pg");
+const dotenv = require('dotenv')
+dotenv.config()
+const { Client } = require('pg')
 
-const { App } = require("@slack/bolt");
+const { App } = require('@slack/bolt')
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   signingSecret: process.env.SLACK_SIGNING_SECRET
-});
+})
 
-const db = new Client();
-db.connect();
+const db = new Client()
+db.connect()
 
 exports.openView = async ({ ack, body, client }) => {
   // Acknowledge the command request
-  await ack();
+  await ack()
 
-  const userID = body["user_id"];
+  const userID = body['user_id']
 
   const query1 = {
     // give the query a unique name
-    name: "fetch-user",
-    text: "SELECT * FROM authenticatedusers WHERE slack_id = $1",
+    name: 'fetch-user',
+    text: 'SELECT * FROM authenticatedusers WHERE slack_id = $1',
     values: [userID]
-  };
+  }
 
-  let user = null;
+  let user = null
 
   await db
     .query(query1)
-    .then((res) => {
-      user = res.rows[0];
+    .then(res => {
+      user = res.rows[0]
     })
-    .catch((err) => {
-      console.log(err);
-    });
+    .catch(err => {
+      console.log(err)
+    })
 
   if (user) {
     try {
@@ -43,49 +43,49 @@ exports.openView = async ({ ack, body, client }) => {
         trigger_id: body.trigger_id,
 
         view: {
-          type: "modal",
+          type: 'modal',
           // View identifier
-          callback_id: "view_1",
-          private_metadata: user.access_token + " " + body["channel_id"],
+          callback_id: 'view_1',
+          private_metadata: user.access_token + ' ' + body['channel_id'],
           title: {
-            type: "plain_text",
-            text: "Issue Poster"
+            type: 'plain_text',
+            text: 'Issue Poster'
           },
           blocks: [
             {
-              type: "section",
+              type: 'section',
               text: {
-                type: "mrkdwn",
-                text: "Choose an issue label."
+                type: 'mrkdwn',
+                text: 'Choose an issue label.'
               }
             },
             {
-              type: "actions",
+              type: 'actions',
               elements: [
                 {
-                  type: "button",
+                  type: 'button',
                   text: {
-                    type: "plain_text",
-                    text: "Bug"
+                    type: 'plain_text',
+                    text: 'Bug'
                   },
-                  action_id: "bug_issue"
+                  action_id: 'bug_issue'
                 },
                 {
-                  type: "button",
+                  type: 'button',
                   text: {
-                    type: "plain_text",
-                    text: "Enhancement request"
+                    type: 'plain_text',
+                    text: 'Enhancement request'
                   },
-                  action_id: "enhancement_issue"
+                  action_id: 'enhancement_issue'
                 }
               ]
             }
           ]
         }
-      });
-      console.log(result);
+      })
+      console.log(result)
     } catch (error) {
-      console.error(error);
+      console.error(error)
     }
   } else {
     try {
@@ -96,56 +96,56 @@ exports.openView = async ({ ack, body, client }) => {
         // View payload
 
         view: {
-          type: "modal",
+          type: 'modal',
           // View identifier
-          callback_id: "view_1",
-          private_metadata: body["channel_id"],
+          callback_id: 'view_1',
+          private_metadata: body['channel_id'],
           title: {
-            type: "plain_text",
-            text: "Issue Poster"
+            type: 'plain_text',
+            text: 'Issue Poster'
           },
           blocks: [
             {
-              type: "section",
+              type: 'section',
               text: {
-                type: "mrkdwn",
-                text: "Do you have a GitHub account?"
+                type: 'mrkdwn',
+                text: 'Do you have a GitHub account?'
               }
             },
             {
-              type: "actions",
+              type: 'actions',
               elements: [
                 {
-                  type: "button",
+                  type: 'button',
                   text: {
-                    type: "plain_text",
-                    text: "Yes"
+                    type: 'plain_text',
+                    text: 'Yes'
                   },
                   url:
-                    "https://github.com/login/oauth/authorize?client_id=" +
+                    'https://github.com/login/oauth/authorize?client_id=' +
                     process.env.OAUTH_CLIENT_ID +
-                    "&scope=public_repo" +
-                    "&state=" +
-                    userID  +
-                    "&redirect_uri=" +
+                    '&scope=public_repo' +
+                    '&state=' +
+                    userID +
+                    '&redirect_uri=' +
                     process.env.OAUTH_REDIRECT_URI
                 },
                 {
-                  type: "button",
+                  type: 'button',
                   text: {
-                    type: "plain_text",
-                    text: "No"
+                    type: 'plain_text',
+                    text: 'No'
                   },
-                  action_id: "no_account"
+                  action_id: 'no_account'
                 }
               ]
             }
           ]
         }
-      });
-      console.log(result);
+      })
+      console.log(result)
     } catch (error) {
-      console.error(error);
+      console.error(error)
     }
   }
-};
+}

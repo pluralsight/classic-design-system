@@ -1,6 +1,6 @@
 exports.enhancementView = async ({ ack, body, client }) => {
   // Acknowledge the command request
-  await ack();
+  await ack()
 
   try {
     // Call views.open with the built-in client
@@ -11,110 +11,111 @@ exports.enhancementView = async ({ ack, body, client }) => {
       hash: body.view.hash,
       // View payload with updated blocks
       view: {
-        type: "modal",
+        type: 'modal',
         // View identifier
-        callback_id: "view_1",
-        private_metadata: "Enhancement " + body.view.private_metadata,
+        callback_id: 'view_1',
+        private_metadata: 'Enhancement ' + body.view.private_metadata,
         title: {
-          type: "plain_text",
-          text: "Enhancement Request"
+          type: 'plain_text',
+          text: 'Enhancement Request'
         },
         blocks: [
           {
-            type: "input",
-            block_id: "titleInput",
+            type: 'input',
+            block_id: 'titleInput',
             label: {
-              type: "plain_text",
-              text: "Title"
+              type: 'plain_text',
+              text: 'Title'
             },
             element: {
-              type: "plain_text_input",
-              action_id: "title_input",
+              type: 'plain_text_input',
+              action_id: 'title_input',
               placeholder: {
                 type: 'plain_text',
-                text: 'fill in title: format of "package name: short description"'
+                text:
+                  'fill in title: format of "package name: short description"'
               },
               multiline: false
             }
           },
           {
-            type: "input",
-            block_id: "desiredBehaviorInput",
+            type: 'input',
+            block_id: 'desiredBehaviorInput',
             label: {
-              type: "plain_text",
-              text: "Desired Behavior"
+              type: 'plain_text',
+              text: 'Desired Behavior'
             },
             element: {
-              type: "plain_text_input",
+              type: 'plain_text_input',
               placeholder: {
-                type: "plain_text",
-                text: "Support you wish you had."
+                type: 'plain_text',
+                text: 'Support you wish you had.'
               },
-              action_id: "desired_behavior_input",
+              action_id: 'desired_behavior_input',
               multiline: true
             }
           },
           {
-            type: "input",
-            block_id: "todayBehaviorInput",
+            type: 'input',
+            block_id: 'todayBehaviorInput',
             label: {
-              type: "plain_text",
+              type: 'plain_text',
               text: "Today's Behavior"
             },
             element: {
-              type: "plain_text_input",
+              type: 'plain_text_input',
               placeholder: {
-                type: "plain_text",
-                text: "Problems/friction you encounter."
+                type: 'plain_text',
+                text: 'Problems/friction you encounter.'
               },
-              action_id: "today_behavior_input",
+              action_id: 'today_behavior_input',
               multiline: true
             }
           },
           {
-            type: "input",
-            block_id: "valueAddInput",
+            type: 'input',
+            block_id: 'valueAddInput',
             label: {
-              type: "plain_text",
-              text: "The Value Add"
+              type: 'plain_text',
+              text: 'The Value Add'
             },
             element: {
-              type: "plain_text_input",
-              action_id: "value_add_input",
+              type: 'plain_text_input',
+              action_id: 'value_add_input',
               placeholder: {
-                type: "plain_text",
+                type: 'plain_text',
                 text:
-                  "Why this should be added/changed in the Design System. Where we could use it."
+                  'Why this should be added/changed in the Design System. Where we could use it.'
               },
               multiline: true
             }
           },
           {
-            type: "input",
-            block_id: "tradeoffsInput",
+            type: 'input',
+            block_id: 'tradeoffsInput',
             label: {
-              type: "plain_text",
-              text: "The Tradeoffs"
+              type: 'plain_text',
+              text: 'The Tradeoffs'
             },
             element: {
-              type: "plain_text_input",
-              action_id: "tradeoffs_input",
+              type: 'plain_text_input',
+              action_id: 'tradeoffs_input',
               placeholder: {
-                type: "plain_text",
-                text: "What we give up or deoptimize to get it. The costs."
+                type: 'plain_text',
+                text: 'What we give up or deoptimize to get it. The costs.'
               },
               multiline: true
             }
           }
         ],
         submit: {
-          type: "plain_text",
-          text: "Continue"
+          type: 'plain_text',
+          text: 'Continue'
         }
       }
-    });
-    console.log(result);
+    })
+    console.log(result)
   } catch (error) {
-    console.error(error);
+    console.error(error)
   }
-};
+}
