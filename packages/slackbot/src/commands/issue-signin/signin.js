@@ -1,4 +1,3 @@
-https = require('https')
 const { App } = require('@slack/bolt')
 const dotenv = require('dotenv')
 dotenv.config()

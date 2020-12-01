@@ -111,7 +111,7 @@ receiver.router.get('/oauth-callback', async (request, res) => {
       config
     )
     .then(res => {
-      if (res.status == 200) {
+      if (res.status === 200) {
         accessToken = res.data.access_token
       } else {
         console.log('Error retrieving access token: ' + res.status)

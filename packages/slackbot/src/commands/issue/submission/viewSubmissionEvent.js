@@ -1,9 +1,8 @@
-https = require('https')
 const { App } = require('@slack/bolt')
 const axios = require('axios')
 const dotenv = require('dotenv')
 const stringSimilarity = require('string-similarity')
-const gestaltSimilarity = require('gestalt-pattern-matcher').default
+// const gestaltSimilarity = require('gestalt-pattern-matcher').default
 dotenv.config()
 
 function compareByRating(a, b) {
@@ -24,15 +23,15 @@ const app = new App({
 exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
   const metadata = body.view.private_metadata.split(' ')
 
-  let access_token = ''
-  let channel_id = ''
+  let accessToken = ''
+  let channelId = ''
 
   if (metadata.length === 3) {
-    access_token = metadata[1]
-    channel_id = metadata[2]
+    accessToken = metadata[1]
+    channelId = metadata[2]
   } else {
-    access_token = process.env.PLATFORMUI_ACCESS_TOKEN
-    channel_id = metadata[1]
+    accessToken = process.env.PLATFORMUI_ACCESS_TOKEN
+    channelId = metadata[1]
   }
 
   const issueLabel = view.title.text
@@ -133,7 +132,7 @@ exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
       'Content-Type': 'application/json',
       Accept: 'application/vnd.github.v3+json',
       'User-Agent': 'Issue Poster',
-      Authorization: 'token ' + access_token
+      Authorization: 'token ' + accessToken
     }
   }
 

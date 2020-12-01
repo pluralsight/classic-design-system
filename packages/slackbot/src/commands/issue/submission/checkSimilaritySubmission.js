@@ -1,4 +1,3 @@
-https = require('https')
 const { App } = require('@slack/bolt')
 const axios = require('axios')
 const dotenv = require('dotenv')
@@ -19,15 +18,15 @@ exports.checkSimilaritySubmissionEvent = async ({
 
   const metadata = body.view.private_metadata.split(' ')
 
-  let access_token = ''
-  let channel_id = ''
+  let accessToken = ''
+  let channelId = ''
 
   if (metadata.length === 3) {
-    access_token = metadata[1]
-    channel_id = metadata[2]
+    accessToken = metadata[1]
+    channelId = metadata[2]
   } else {
-    access_token = process.env.PLATFORMUI_ACCESS_TOKEN
-    channel_id = metadata[1]
+    accessToken = process.env.PLATFORMUI_ACCESS_TOKEN
+    channelId = metadata[1]
   }
 
   let issueTitle = ''
@@ -125,13 +124,13 @@ ${tradeoffs}
     labels: labels
   })
 
-  config = {
+  const config = {
     headers: {
       'Content-Type': 'application/json',
       'Content-Length': data.length,
       Accept: 'application/vnd.github.v3+json',
       'User-Agent': 'Issue Poster',
-      Authorization: 'token ' + access_token
+      Authorization: 'token ' + accessToken
     }
   }
 
@@ -149,7 +148,7 @@ ${tradeoffs}
       config
     )
     .then(res => {
-      if (res.status == 201) {
+      if (res.status === 201) {
         msg = `An issue has been posted by ${username}: ${res.data.html_url}`
       } else {
         msg = `Failure to post issue. Status code: ${res.status}`
@@ -162,7 +161,7 @@ ${tradeoffs}
   try {
     await app.client.chat.postMessage({
       token: context.botToken,
-      channel: channel_id,
+      channel: channelId,
       text: msg
     })
   } catch (error) {
