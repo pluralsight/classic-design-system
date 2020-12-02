@@ -62,9 +62,12 @@ const styles = {
       combineClasses('.psds-emptystate', ctx),
       !hasRenderedOnce && stylesheet['.psds-emptystate--hidden']
     ),
-  actions: (ctx: ContextValue) => combineClasses('.psds-emptystate__actions', ctx),
-  caption: (ctx: ContextValue) => combineClasses('.psds-emptystate__caption', ctx),
-  heading: (ctx: ContextValue) => combineClasses('.psds-emptystate__heading', ctx),
+  actions: (ctx: ContextValue) =>
+    combineClasses('.psds-emptystate__actions', ctx),
+  caption: (ctx: ContextValue) =>
+    combineClasses('.psds-emptystate__caption', ctx),
+  heading: (ctx: ContextValue) =>
+    combineClasses('.psds-emptystate__heading', ctx),
   illustration: (ctx: ContextValue) =>
     combineClasses('.psds-emptystate__illustration', ctx)
 }
