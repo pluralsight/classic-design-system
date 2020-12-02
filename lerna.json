@@ -1,10 +1,10 @@
 {
-  "packages": ["docs", "./packages/*"],
+  "packages": ["docs", "./packages/*", "./examples/*"],
   "command": {
     "version": {
       "allowBranch": "master",
       "conventionalCommits": true,
-      "ignore": ["docs"],
+      "ignore": ["docs", "./examples/*"],
       "message": "build: publish"
     }
   },

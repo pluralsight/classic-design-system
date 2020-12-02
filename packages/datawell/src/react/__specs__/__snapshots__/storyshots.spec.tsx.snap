@@ -7,11 +7,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Dog count
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Dog count
+      </span>
     </div>
     <div
       data-css-1m134w8=""
@@ -27,11 +29,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Cat count
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Cat count
+      </span>
     </div>
     <div
       data-css-1m134w8=""
@@ -45,11 +49,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Rafters on the River
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Rafters on the River
+      </span>
     </div>
     <div
       data-css-1m134w8=""
@@ -63,11 +69,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Flotsam
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Flotsam
+      </span>
     </div>
     <div
       data-css-1m134w8=""
@@ -85,11 +93,13 @@ exports[`Storyshots DataWell label/data 1`] = `
 <div
   data-css-76j83k=""
 >
-  <div
-    data-css-1pudd7j=""
-    data-css-ffti8h=""
-  >
-    Dog count
+  <div>
+    <span
+      data-css-1bgwrb4=""
+      data-css-twu960=""
+    >
+      Dog count
+    </span>
   </div>
   <div
     data-css-1m134w8=""
@@ -106,11 +116,13 @@ exports[`Storyshots DataWell label/data/subLabel 1`] = `
 <div
   data-css-76j83k=""
 >
-  <div
-    data-css-1pudd7j=""
-    data-css-ffti8h=""
-  >
-    Dog count
+  <div>
+    <span
+      data-css-1bgwrb4=""
+      data-css-twu960=""
+    >
+      Dog count
+    </span>
   </div>
   <div
     data-css-1m134w8=""
@@ -136,11 +148,13 @@ exports[`Storyshots DataWell row 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Dog count
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Dog count
+      </span>
     </div>
     <div
       data-css-1m134w8=""
@@ -156,11 +170,13 @@ exports[`Storyshots DataWell row 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Cat count
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Cat count
+      </span>
     </div>
     <div
       data-css-1m134w8=""
@@ -174,11 +190,13 @@ exports[`Storyshots DataWell row 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Rafters on the River
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Rafters on the River
+      </span>
     </div>
     <div
       data-css-1m134w8=""
@@ -192,11 +210,13 @@ exports[`Storyshots DataWell row 1`] = `
   <div
     data-css-76j83k=""
   >
-    <div
-      data-css-1pudd7j=""
-      data-css-ffti8h=""
-    >
-      Flotsam
+    <div>
+      <span
+        data-css-1bgwrb4=""
+        data-css-twu960=""
+      >
+        Flotsam
+      </span>
     </div>
     <div
       data-css-1m134w8=""
