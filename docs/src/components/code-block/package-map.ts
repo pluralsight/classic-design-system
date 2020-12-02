@@ -63,9 +63,23 @@ import pkg from '../../../package.json'
 
 const deps = { ...pkg.dependencies, ...pkg.devDependencies } as const
 
-type PackageMap = { [key in keyof typeof deps]?: unknown }
+type PackageMap = { [key: string]: unknown }
+
+const USER_ROWS_FIXTURE = [
+  {
+    firstName: 'Dane',
+    lastName: 'Thurber',
+    email: 'dane@adventureworks.com'
+  },
+  {
+    firstName: 'Brian',
+    lastName: 'Sweeting',
+    email: 'brian@adventureworks.com'
+  }
+]
 
 export const PACKAGE_MAP: PackageMap = {
+  './fixtures.json': { users: USER_ROWS_FIXTURE },
   '@pluralsight/ps-design-system-actionmenu': { ActionMenu },
   '@pluralsight/ps-design-system-appframe': { AppFrame },
   '@pluralsight/ps-design-system-avatar': { Avatar },
