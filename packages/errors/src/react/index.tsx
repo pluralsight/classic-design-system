@@ -34,10 +34,8 @@ interface ErrorPageStatics {
   sizes: typeof sizes
 }
 
-export const ForbiddenErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
-  href,
-  size
-}) => (
+export const ForbiddenErrorPage: React.FC<ErrorPageProps> &
+  ErrorPageStatics = ({ href, size }) => (
   <ErrorPage
     {...subComponents(codes[403])}
     actions={<Action href={href} />}
@@ -47,7 +45,10 @@ export const ForbiddenErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = (
 
 ForbiddenErrorPage.sizes = sizes
 
-export const NotFoundErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({ href, size }) => (
+export const NotFoundErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
+  href,
+  size
+}) => (
   <ErrorPage
     {...subComponents(codes[404])}
     actions={<Action href={href} />}
@@ -57,10 +58,8 @@ export const NotFoundErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
 
 NotFoundErrorPage.sizes = sizes
 
-export const InternalServerErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
-  href,
-  size
-}) => (
+export const InternalServerErrorPage: React.FC<ErrorPageProps> &
+  ErrorPageStatics = ({ href, size }) => (
   <ErrorPage
     {...subComponents(codes[500])}
     actions={<Action href={href} />}
@@ -69,17 +68,15 @@ export const InternalServerErrorPage: React.FC<ErrorPageProps> & ErrorPageStatic
 )
 InternalServerErrorPage.sizes = sizes
 
-export const ServiceUnavailableErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
-  size
-}) => <ErrorPage {...subComponents(codes[503])} size={size} />
+export const ServiceUnavailableErrorPage: React.FC<ErrorPageProps> &
+  ErrorPageStatics = ({ size }) => (
+  <ErrorPage {...subComponents(codes[503])} size={size} />
+)
 ServiceUnavailableErrorPage.sizes = sizes
 
-export const GatewayTimeoutErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
-  href,
-  size
-}) => (
+export const GatewayTimeoutErrorPage: React.FC<ErrorPageProps> &
+  ErrorPageStatics = ({ href, size }) => (
   <ErrorPage
-
     {...subComponents(codes[504])}
     actions={<Action href={href} />}
     size={size}

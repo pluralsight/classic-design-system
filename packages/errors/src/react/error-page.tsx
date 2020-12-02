@@ -21,7 +21,7 @@ import React, {
 
 import Context, { ContextValue } from './context'
 import stylesheet, { sizeClasses, themeClasses } from '../css'
-import {error} from './illustrations'
+import { error } from './illustrations'
 import { sizes } from '../vars'
 
 export interface ErrorPageProps extends HTMLPropsFor<'div'> {

@@ -1,4 +1,3 @@
-
 export const codes = {
   403: {
     heading: 'You’re not authorized to view this page',
