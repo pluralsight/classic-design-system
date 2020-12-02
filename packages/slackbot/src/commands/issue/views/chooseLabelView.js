@@ -1,7 +1,6 @@
-
 exports.chooseLabelView = async ({ ack, body, client }) => {
   // Acknowledge the command request
-  await ack();
+  await ack()
 
   try {
     // Call views.open with the built-in client
@@ -12,48 +11,48 @@ exports.chooseLabelView = async ({ ack, body, client }) => {
       hash: body.view.hash,
       // View payload with updated blocks
       view: {
-        type: "modal",
+        type: 'modal',
         // View identifier
-        callback_id: "view_1",
+        callback_id: 'view_1',
         private_metadata: body.view.private_metadata,
         title: {
-          type: "plain_text",
-          text: "Issue Poster",
+          type: 'plain_text',
+          text: 'Issue Poster'
         },
         blocks: [
           {
-            type: "section",
+            type: 'section',
             text: {
-              type: "mrkdwn",
-              text: "Choose an issue label.",
-            },
+              type: 'mrkdwn',
+              text: 'Choose an issue label.'
+            }
           },
           {
-            type: "actions",
+            type: 'actions',
             elements: [
               {
-                type: "button",
+                type: 'button',
                 text: {
-                  type: "plain_text",
-                  text: "Bug",
+                  type: 'plain_text',
+                  text: 'Bug'
                 },
-                action_id: "bug_issue",
+                action_id: 'bug_issue'
               },
               {
-                type: "button",
+                type: 'button',
                 text: {
-                  type: "plain_text",
-                  text: "Enhancement request",
+                  type: 'plain_text',
+                  text: 'Enhancement request'
                 },
-                action_id: "enhancement_issue",
-              },
-            ],
-          },
-        ],
-      },
-    });
-    console.log(result);
+                action_id: 'enhancement_issue'
+              }
+            ]
+          }
+        ]
+      }
+    })
+    console.log(result)
   } catch (error) {
-    console.error(error);
+    console.error(error)
   }
-};
+}

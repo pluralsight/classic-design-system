@@ -1,4 +1,4 @@
-import { Heading } from '@pluralsight/ps-design-system-text'
+import { Label } from '@pluralsight/ps-design-system-text'
 import {
   names as themeNames,
   useTheme
@@ -56,9 +56,17 @@ const DataWell = React.forwardRef((props, ref) => {
 
   return (
     <div ref={ref} {...styles.dataWell(themeName)} {...rest}>
-      <Heading {...styles.label(themeName)} size={Heading.sizes.smallCaps}>
-        <div>{label}</div>
-      </Heading>
+      <div>
+        <Label
+          {...styles.label(themeName)}
+          size={Label.sizes.xSmall}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          {label}
+        </Label>
+      </div>
 
       <div {...styles.data(themeName)}>{children}</div>
       <div {...styles.subLabel(themeName)}>{subLabel}</div>
