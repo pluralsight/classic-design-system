@@ -8,26 +8,33 @@ exports[`Storyshots Components/Table Alignment 1`] = `
 >
   <table
     data-css-9fiqqd=""
-    role="table"
+    role="grid"
   >
     <thead
       data-css-1ts1rl3=""
     >
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           Align Left
         </th>
         <th
           data-css-1qf9mo3=""
+          role="columnheader"
+          scope="col"
         >
           Align center
         </th>
         <th
           data-css-av945f=""
+          role="columnheader"
+          scope="col"
         >
           Align right
         </th>
@@ -36,95 +43,120 @@ exports[`Storyshots Components/Table Alignment 1`] = `
     <tbody>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Enrico
         </th>
         <td
           data-css-rg0vl=""
+          role="gridcell"
         >
           VonRueden
         </td>
         <td
           data-css-486wol=""
+          role="gridcell"
         >
           Helen_Schmeler@yahoo.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Brittany
         </th>
         <td
           data-css-rg0vl=""
+          role="gridcell"
         >
           Leuschke
         </td>
         <td
           data-css-486wol=""
+          role="gridcell"
         >
           Yasmeen49@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Eva
         </th>
         <td
           data-css-rg0vl=""
+          role="gridcell"
         >
           Jacobs
         </td>
         <td
           data-css-486wol=""
+          role="gridcell"
         >
           Birdie0@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Erich
         </th>
         <td
           data-css-rg0vl=""
+          role="gridcell"
         >
           Dach
         </td>
         <td
           data-css-486wol=""
+          role="gridcell"
         >
           Hubert_Welch@yahoo.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Baron
         </th>
         <td
           data-css-rg0vl=""
+          role="gridcell"
         >
           Beer
         </td>
         <td
           data-css-486wol=""
+          role="gridcell"
         >
           Derrick_Raynor@yahoo.com
         </td>
@@ -142,26 +174,33 @@ exports[`Storyshots Components/Table Basic 1`] = `
 >
   <table
     data-css-9fiqqd=""
-    role="table"
+    role="grid"
   >
     <thead
       data-css-1ts1rl3=""
     >
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           First name
         </th>
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           Last name
         </th>
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           Email
         </th>
@@ -170,95 +209,120 @@ exports[`Storyshots Components/Table Basic 1`] = `
     <tbody>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Adolphus
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Donnelly
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Braulio_Rempel33@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Krystal
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           MacGyver
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Kacey7@yahoo.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Aglae
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Greenholt
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Vivianne.Johnson79@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Vladimir
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           White
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Beaulah_Douglas@yahoo.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           Hillard
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Bauch
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Michelle_OConnell58@hotmail.com
         </td>
@@ -276,26 +340,33 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
 >
   <table
     data-css-9fiqqd=""
-    role="table"
+    role="grid"
   >
     <thead
       data-css-1ts1rl3=""
     >
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           First name
         </th>
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           Last name
         </th>
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           Email
         </th>
@@ -304,9 +375,12 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
     <tbody>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           <div
             style={
@@ -346,20 +420,25 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Romaguera
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Kathryn91@gmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           <div
             style={
@@ -399,20 +478,25 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Treutel
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Rogelio.Kuhic@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           <div
             style={
@@ -452,20 +536,25 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Bernier
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Bridget23@yahoo.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           <div
             style={
@@ -505,20 +594,25 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Stamm
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Bruce_Bartell@gmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
         >
           <div
             style={
@@ -558,11 +652,13 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Goyette
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Luisa.Nader53@yahoo.com
         </td>
@@ -580,16 +676,19 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
 >
   <table
     data-css-9fiqqd=""
-    role="table"
+    role="grid"
   >
     <thead
       data-css-1ts1rl3=""
     >
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           <label
             data-css-kn3wr0=""
@@ -631,16 +730,22 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </th>
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           First name
         </th>
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           Last name
         </th>
         <th
           data-css-1c7qoga=""
+          role="columnheader"
+          scope="col"
         >
           Email
         </th>
@@ -649,9 +754,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
     <tbody>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -678,25 +785,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Ignacio
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Swift
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Hans.Marquardt@yahoo.com
         </td>
       </tr>
       <tr
         data-css-10jq9h3=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -736,25 +848,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Edwina
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Predovic
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Damaris_Wilderman@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -781,25 +898,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Devante
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Schuppe
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Kris_Parker@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -826,25 +948,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Skylar
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Greenholt
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Gust.Hodkiewicz@hotmail.com
         </td>
       </tr>
       <tr
         data-css-10jq9h3=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -884,25 +1011,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Era
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Dooley
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Schuyler_MacGyver50@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -929,25 +1061,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Delmer
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Schaefer
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Mathilde2@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -974,25 +1111,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Liliane
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Heaney
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Fabian_Reichel@gmail.com
         </td>
       </tr>
       <tr
         data-css-10jq9h3=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -1032,25 +1174,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Noemy
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Baumbach
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Jerrell.Hackett@hotmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -1077,25 +1224,30 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Alexandrea
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Haley
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Wilson.Jakubowski@gmail.com
         </td>
       </tr>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           <label
             data-css-kn3wr0=""
@@ -1122,16 +1274,19 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Constance
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Kutch
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Coy87@hotmail.com
         </td>
@@ -1148,25 +1303,42 @@ exports[`Storyshots Components/Table Sorting 1`] = `
   tabIndex={0}
 >
   <table
+    aria-labelledby="test-caption-id"
     data-css-9fiqqd=""
-    role="table"
+    role="grid"
   >
+    <caption
+      aria-live="polite"
+      id="test-caption-id"
+    >
+      <div
+        data-css-6wu9td=""
+      >
+        Mock table title: Not sorted
+      </div>
+    </caption>
     <thead
       data-css-1ts1rl3=""
     >
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           aria-label="First name: No sort applied"
           aria-sort="none"
           data-css-m2a81v=""
+          data-header-id="h-first-name"
           onClick={[Function]}
+          onKeyUp={[Function]}
+          role="columnheader"
+          scope="col"
           tabIndex={0}
           title="First name"
         >
           First name
           <div
+            aria-hidden={true}
             data-css-7dab2f=""
             data-css-yaqq33=""
           >
@@ -1185,12 +1357,17 @@ exports[`Storyshots Components/Table Sorting 1`] = `
           aria-label="Last name: No sort applied"
           aria-sort="none"
           data-css-m2a81v=""
+          data-header-id="h-last-name"
           onClick={[Function]}
+          onKeyUp={[Function]}
+          role="columnheader"
+          scope="col"
           tabIndex={0}
           title="Last name"
         >
           Last name
           <div
+            aria-hidden={true}
             data-css-7dab2f=""
             data-css-yaqq33=""
           >
@@ -1209,12 +1386,17 @@ exports[`Storyshots Components/Table Sorting 1`] = `
           aria-label="Email: No sort applied"
           aria-sort="none"
           data-css-m2a81v=""
+          data-header-id="h-email"
           onClick={[Function]}
+          onKeyUp={[Function]}
+          role="columnheader"
+          scope="col"
           tabIndex={0}
           title="Email"
         >
           Email
           <div
+            aria-hidden={true}
             data-css-7dab2f=""
             data-css-yaqq33=""
           >
@@ -1234,20 +1416,25 @@ exports[`Storyshots Components/Table Sorting 1`] = `
     <tbody>
       <tr
         data-css-1195cc4=""
+        role="row"
       >
         <th
           data-css-1c7qoga=""
+          role="rowheader"
+          scope="row"
           title="First name"
         >
           Jorge
         </th>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           O'Connell
         </td>
         <td
           data-css-nyp2vl=""
+          role="gridcell"
         >
           Silas.Will@gmail.com
         </td>
@@ -1277,16 +1464,18 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
   >
     <table
       data-css-9fiqqd=""
-      role="table"
+      role="grid"
     >
       <thead
         data-css-1ts1rl3=""
       >
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             <label
               data-css-kn3wr0=""
@@ -1312,24 +1501,32 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </td>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="col"
             title="Full name"
           >
             Full name
           </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="col"
             title="First name"
           >
             First name
           </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="col"
             title="Last name"
           >
             Last name
           </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="col"
             title="Email"
           >
             Email
@@ -1339,9 +1536,12 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
       <tbody>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
-          <td
-            data-css-nyp2vl=""
+          <th
+            data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             <label
               data-css-kn3wr0=""
@@ -1364,9 +1564,11 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
                 data-css-ybwuvp=""
               />
             </label>
-          </td>
+          </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
             title="Full name"
           >
             Delphine
@@ -1375,25 +1577,31 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Delphine
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Huel
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Forest_Lind@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
-          <td
-            data-css-nyp2vl=""
+          <th
+            data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             <label
               data-css-kn3wr0=""
@@ -1416,9 +1624,11 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
                 data-css-ybwuvp=""
               />
             </label>
-          </td>
+          </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
             title="Full name"
           >
             Brittany
@@ -1427,25 +1637,31 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Brittany
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Hirthe
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Efrain_Gerhold71@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
-          <td
-            data-css-nyp2vl=""
+          <th
+            data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             <label
               data-css-kn3wr0=""
@@ -1468,9 +1684,11 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
                 data-css-ybwuvp=""
               />
             </label>
-          </td>
+          </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
             title="Full name"
           >
             Geovany
@@ -1479,25 +1697,31 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Geovany
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Franecki
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Nathanael.Wolff9@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
-          <td
-            data-css-nyp2vl=""
+          <th
+            data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             <label
               data-css-kn3wr0=""
@@ -1520,9 +1744,11 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
                 data-css-ybwuvp=""
               />
             </label>
-          </td>
+          </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
             title="Full name"
           >
             Ena
@@ -1531,25 +1757,31 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Ena
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Boyle
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Luna.Christiansen@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
-          <td
-            data-css-nyp2vl=""
+          <th
+            data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             <label
               data-css-kn3wr0=""
@@ -1572,9 +1804,11 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
                 data-css-ybwuvp=""
               />
             </label>
-          </td>
+          </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
             title="Full name"
           >
             Emil
@@ -1583,16 +1817,19 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Emil
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Willms
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Lura_Pouros95@gmail.com
           </td>
@@ -1624,16 +1861,18 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
   >
     <table
       data-css-9fiqqd=""
-      role="table"
+      role="grid"
     >
       <thead
         data-css-1ts1rl3=""
       >
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
             style={
               Object {
@@ -1665,25 +1904,29 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
             </label>
           </th>
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             Full name
           </th>
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             First name
           </th>
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             Last name
           </th>
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             Email
@@ -1693,9 +1936,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
       <tbody>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -1722,6 +1967,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Eric
@@ -1730,25 +1977,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Eric
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Gerlach
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Earnest_Wiza@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -1775,6 +2027,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Amber
@@ -1783,25 +2037,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Amber
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             DuBuque
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Adam.Aufderhar@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -1828,6 +2087,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Merritt
@@ -1836,25 +2097,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Merritt
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Kohler
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Junius.Torphy@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -1881,6 +2147,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Estrella
@@ -1889,25 +2157,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Estrella
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Green
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Gerhard_Spencer@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -1934,6 +2207,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Troy
@@ -1942,25 +2217,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Troy
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Grady
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Aliza.Heller@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -1987,6 +2267,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Nona
@@ -1995,25 +2277,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Nona
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Bergstrom
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Adelbert50@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2040,6 +2327,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Brown
@@ -2048,25 +2337,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Brown
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Schuster
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Caterina18@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2093,6 +2387,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Neal
@@ -2101,25 +2397,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Neal
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Rath
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Name_Marquardt58@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2146,6 +2447,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Electa
@@ -2154,25 +2457,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Electa
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Schoen
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Vincenza.Gleason78@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2199,6 +2507,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Forrest
@@ -2207,25 +2517,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Forrest
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Farrell
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Cortez56@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2252,6 +2567,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Robert
@@ -2260,25 +2577,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Robert
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Connelly
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Rafaela_Grimes@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2305,6 +2627,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Benedict
@@ -2313,25 +2637,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Benedict
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Dibbert
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Elton73@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2358,6 +2687,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Kristopher
@@ -2366,25 +2697,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Kristopher
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Hayes
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Gloria_Moen@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2411,6 +2747,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Camden
@@ -2419,25 +2757,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Camden
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Kutch
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Eleanora_Wolff47@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2464,6 +2807,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Abdul
@@ -2472,25 +2817,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Abdul
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Rowe
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Mae.Tremblay32@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2517,6 +2867,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Dagmar
@@ -2525,25 +2877,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Dagmar
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             VonRueden
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Virginie_Wunsch@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2570,6 +2927,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Maryse
@@ -2578,25 +2937,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Maryse
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Moen
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Jodie.Nitzsche@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2623,6 +2987,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Deonte
@@ -2631,25 +2997,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Deonte
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Heaney
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Adolf_Klein25@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2676,6 +3047,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Arvilla
@@ -2684,25 +3057,30 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Arvilla
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Quigley
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Alexandre87@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -2729,6 +3107,8 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
             title="Full name"
           >
             Eldon
@@ -2737,16 +3117,19 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Eldon
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Pouros
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Danielle76@gmail.com
           </td>
@@ -2777,34 +3160,39 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
   >
     <table
       data-css-9fiqqd=""
-      role="table"
+      role="grid"
     >
       <thead
         data-css-1ts1rl3=""
       >
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             Full name
           </th>
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             First name
           </th>
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             Last name
           </th>
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="col"
           >
             Email
@@ -2814,9 +3202,12 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
       <tbody>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Monique
              
@@ -2824,25 +3215,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Monique
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Reilly
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Rhoda_Botsford43@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Araceli
              
@@ -2850,25 +3247,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Araceli
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Huels
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Hailey33@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Nathan
              
@@ -2876,25 +3279,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Nathan
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Becker
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Thad33@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Maximillian
              
@@ -2902,25 +3311,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Maximillian
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             McKenzie
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Julius87@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Brad
              
@@ -2928,25 +3343,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Brad
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Lang
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Flavio.Morar82@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Frederick
              
@@ -2954,25 +3375,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Frederick
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Lindgren
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Jaycee_Rice@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Gerard
              
@@ -2980,25 +3407,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Gerard
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Frami
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Cicero_Hartmann90@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Virgie
              
@@ -3006,25 +3439,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Virgie
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Satterfield
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Ron54@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Eino
              
@@ -3032,25 +3471,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Eino
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Homenick
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Delta_Yost13@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Luella
              
@@ -3058,25 +3503,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Luella
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Kirlin
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Addison_Bins@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Otilia
              
@@ -3084,25 +3535,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Otilia
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Collins
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Seamus.Hettinger46@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Baby
              
@@ -3110,25 +3567,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Baby
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Mayert
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Karianne24@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Aisha
              
@@ -3136,25 +3599,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Aisha
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             VonRueden
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Mitchel.Parker@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Lynn
              
@@ -3162,25 +3631,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Lynn
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Runolfsdottir
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Vivienne.Jenkins@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Viva
              
@@ -3188,25 +3663,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Viva
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Sipes
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Haven2@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Hollis
              
@@ -3214,25 +3695,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Hollis
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Johns
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Serena_Hamill@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Tianna
              
@@ -3240,25 +3727,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Tianna
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Gislason
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Leone.Turcotte67@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Elza
              
@@ -3266,25 +3759,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Elza
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Hegmann
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Leila_Nolan94@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Virgie
              
@@ -3292,25 +3791,31 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Virgie
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Fay
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Annabell.Stracke71@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Lempi
              
@@ -3318,16 +3823,19 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Lempi
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Emmerich
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Nicola46@gmail.com
           </td>
@@ -3358,16 +3866,18 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
   >
     <table
       data-css-9fiqqd=""
-      role="table"
+      role="grid"
     >
       <thead
         data-css-1ts1rl3=""
       >
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="columnheader"
             scope="row"
             style={
               Object {
@@ -3400,21 +3910,29 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             Full name
           </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             First name
           </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             Last name
           </th>
           <th
             data-css-1c7qoga=""
+            role="columnheader"
+            scope="row"
           >
             Email
           </th>
@@ -3423,9 +3941,11 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
       <tbody>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -3452,6 +3972,8 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Annabelle
              
@@ -3459,25 +3981,30 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Annabelle
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Stokes
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Zackery.Lind@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -3504,6 +4031,8 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Donna
              
@@ -3511,25 +4040,30 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Donna
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Morar
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Quinton.Rippin@yahoo.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -3556,6 +4090,8 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Kiana
              
@@ -3563,25 +4099,30 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Kiana
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Grimes
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Wilhelm_Batz@hotmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -3608,6 +4149,8 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Kaelyn
              
@@ -3615,25 +4158,30 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Kaelyn
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Corwin
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Kiley_Sipes17@gmail.com
           </td>
         </tr>
         <tr
           data-css-1195cc4=""
+          role="row"
         >
           <th
-            data-css-17w5r9f=""
+            data-css-c4j9jh=""
+            role="rowheader"
             scope="row"
           >
             <label
@@ -3660,6 +4208,8 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <th
             data-css-1c7qoga=""
+            role="rowheader"
+            scope="row"
           >
             Jadon
              
@@ -3667,16 +4217,19 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </th>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Jadon
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Koch
           </td>
           <td
             data-css-nyp2vl=""
+            role="gridcell"
           >
             Ned73@gmail.com
           </td>

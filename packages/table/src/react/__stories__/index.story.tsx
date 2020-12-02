@@ -1,5 +1,6 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
@@ -20,16 +21,24 @@ export const Basic: Story = () => {
     <Table>
       <Table.Head>
         <Table.Row>
-          <Table.Header>First name</Table.Header>
-          <Table.Header>Last name</Table.Header>
-          <Table.Header>Email</Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            First name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Last name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Email
+          </Table.Header>
         </Table.Row>
       </Table.Head>
 
       <Table.Body>
         {data.map((user, i) => (
           <Table.Row key={i}>
-            <Table.Header>{user.firstName}</Table.Header>
+            <Table.Header role="rowheader" scope="row">
+              {user.firstName}
+            </Table.Header>
             <Table.Cell>{user.lastName}</Table.Cell>
             <Table.Cell>{user.email}</Table.Cell>
           </Table.Row>
@@ -46,16 +55,22 @@ export const MixedContent: Story = () => {
     <Table>
       <Table.Head>
         <Table.Row>
-          <Table.Header>First name</Table.Header>
-          <Table.Header>Last name</Table.Header>
-          <Table.Header>Email</Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            First name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Last name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Email
+          </Table.Header>
         </Table.Row>
       </Table.Head>
 
       <Table.Body>
         {data.map((user, i) => (
           <Table.Row key={i}>
-            <Table.Header>
+            <Table.Header role="rowheader" scope="row">
               <FlexContainer>
                 <Avatar alt="avatar" name={`${user.firstName}`} size="xSmall" />
                 <HorzSpacer />
@@ -83,12 +98,27 @@ export const Sorting: Story = () => {
 
   const SortingStory: React.FC = () => {
     const [headers, setHeaders] = React.useState<SortHeader[]>([
-      { id: 'first-name', title: 'First name', sort: false },
-      { id: 'last-name', title: 'Last name', sort: false },
-      { id: 'email', title: 'Email', sort: false }
+      { id: 'h-first-name', title: 'First name', sort: false },
+      { id: 'h-last-name', title: 'Last name', sort: false },
+      { id: 'h-email', title: 'Email', sort: false }
     ])
 
     const [users] = React.useState(data)
+
+    const title = 'Mock table title'
+    const initialCaption = `${title}: Not sorted`
+    const [caption, setCaption] = React.useState(initialCaption)
+
+    React.useEffect(() => {
+      const active = headers.find(h => h.sort)
+      if (!active || typeof active.sort !== 'string') {
+        setCaption(initialCaption)
+        return
+      }
+
+      const direction = { asc: 'ascending', desc: 'descending' }[active.sort]
+      setCaption(`${title} sorted by ${active.title}: ${direction} order`)
+    }, [headers, initialCaption])
 
     const applyColSort = (header: SortHeader) => {
       const prevSort: SortOptions = header.sort
@@ -106,14 +136,39 @@ export const Sorting: Story = () => {
       setHeaders(nextHeaders)
     }
 
+    const handleSortClick: React.MouseEventHandler = evt => {
+      const id = (evt.target as HTMLElement).getAttribute('data-header-id')
+      const header = headers.find(h => h.id === id)!
+
+      applyColSort(header)
+    }
+
+    const handleSortKeyUp: React.KeyboardEventHandler = evt => {
+      const supportedKey = ['Enter', ' '].includes(evt.key)
+      if (!supportedKey) return
+
+      const id = (evt.target as HTMLElement).getAttribute('data-header-id')
+      const header = headers.find(h => h.id === id)!
+
+      applyColSort(header)
+    }
+
     return (
-      <Table>
+      <Table aria-labelledby="test-caption-id">
+        <caption aria-live="polite" id="test-caption-id">
+          <ScreenReaderOnly>{caption}</ScreenReaderOnly>
+        </caption>
+
         <Table.Head>
           <Table.Row>
             {headers.map(header => (
               <Table.Header
+                data-header-id={header.id}
                 key={header.id}
-                onClick={() => applyColSort(header)}
+                onClick={handleSortClick}
+                onKeyUp={handleSortKeyUp}
+                role="columnheader"
+                scope="col"
                 sort={header.sort}
                 title={header.title}
               >
@@ -126,7 +181,9 @@ export const Sorting: Story = () => {
         <Table.Body>
           {users.map((user, i) => (
             <Table.Row key={i}>
-              <Table.Header title="First name">{user.firstName}</Table.Header>
+              <Table.Header role="rowheader" scope="row" title="First name">
+                {user.firstName}
+              </Table.Header>
               <Table.Cell>{user.lastName}</Table.Cell>
               <Table.Cell>{user.email}</Table.Cell>
             </Table.Row>
@@ -146,16 +203,24 @@ export const Alignment: Story = () => {
     <Table>
       <Table.Head>
         <Table.Row>
-          <Table.Header align="left">Align Left</Table.Header>
-          <Table.Header align="center">Align center</Table.Header>
-          <Table.Header align="right">Align right</Table.Header>
+          <Table.Header align="left" role="columnheader" scope="col">
+            Align Left
+          </Table.Header>
+          <Table.Header align="center" role="columnheader" scope="col">
+            Align center
+          </Table.Header>
+          <Table.Header align="right" role="columnheader" scope="col">
+            Align right
+          </Table.Header>
         </Table.Row>
       </Table.Head>
 
       <Table.Body>
         {data.map((user, i) => (
           <Table.Row key={i}>
-            <Table.Header align="left">{user.firstName}</Table.Header>
+            <Table.Header align="left" role="rowheader" scope="row">
+              {user.firstName}
+            </Table.Header>
             <Table.Cell align="center">{user.lastName}</Table.Cell>
             <Table.Cell align="right">{user.email}</Table.Cell>
           </Table.Row>
@@ -172,12 +237,18 @@ export const RowSelection: Story = () => {
     <Table>
       <Table.Head>
         <Table.Row>
-          <Table.Header>
+          <Table.Header role="columnheader" scope="col">
             <Checkbox indeterminate />
           </Table.Header>
-          <Table.Header>First name</Table.Header>
-          <Table.Header>Last name</Table.Header>
-          <Table.Header>Email</Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            First name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Last name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Email
+          </Table.Header>
         </Table.Row>
       </Table.Head>
 

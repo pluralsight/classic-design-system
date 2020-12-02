@@ -23,20 +23,28 @@ export const HorizontalScroll: Story = () => {
             <Table.Cell>
               <Checkbox />
             </Table.Cell>
-            <Table.Header title="Full name">Full name</Table.Header>
-            <Table.Header title="First name">First name</Table.Header>
-            <Table.Header title="Last name">Last name</Table.Header>
-            <Table.Header title="Email">Email</Table.Header>
+            <Table.Header role="columnheader" scope="col" title="Full name">
+              Full name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="col" title="First name">
+              First name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="col" title="Last name">
+              Last name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="col" title="Email">
+              Email
+            </Table.Header>
           </Table.Row>
         </Table.Head>
 
         <Table.Body>
           {data.map((user, i) => (
             <Table.Row key={i}>
-              <Table.Cell>
+              <Table.Header role="columnheader" scope="row">
                 <Checkbox />
-              </Table.Cell>
-              <Table.Header title="Full name">
+              </Table.Header>
+              <Table.Header role="columnheader" scope="row" title="Full name">
                 {user.firstName} {user.lastName}
               </Table.Header>
               <Table.Cell>{user.firstName}</Table.Cell>
@@ -59,16 +67,16 @@ export const StickyColumnHeader: Story = () => {
       <Table>
         <Table.Head>
           <Table.Row>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               Full name
             </Table.Header>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               First name
             </Table.Header>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               Last name
             </Table.Header>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               Email
             </Table.Header>
           </Table.Row>
@@ -77,7 +85,7 @@ export const StickyColumnHeader: Story = () => {
         <Table.Body>
           {data.map((user, i) => (
             <Table.Row key={i}>
-              <Table.Header>
+              <Table.Header role="rowheader" scope="row">
                 {user.firstName} {user.lastName}
               </Table.Header>
               <Table.Cell>{user.firstName}</Table.Cell>
@@ -100,6 +108,7 @@ export const StickyRowHeader: Story = () => {
         <Table.Head>
           <Table.Row>
             <Table.Header
+              role="columnheader"
               scope="row"
               sticky
               style={{ width: 1 }}
@@ -107,20 +116,28 @@ export const StickyRowHeader: Story = () => {
             >
               <Checkbox />
             </Table.Header>
-            <Table.Header>Full name</Table.Header>
-            <Table.Header>First name</Table.Header>
-            <Table.Header>Last name</Table.Header>
-            <Table.Header>Email</Table.Header>
+            <Table.Header role="columnheader" scope="row">
+              Full name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="row">
+              First name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="row">
+              Last name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="row">
+              Email
+            </Table.Header>
           </Table.Row>
         </Table.Head>
 
         <Table.Body>
           {data.map((user, i) => (
             <Table.Row key={i}>
-              <Table.Header scope="row" sticky>
+              <Table.Header role="rowheader" scope="row" sticky>
                 <Checkbox />
               </Table.Header>
-              <Table.Header>
+              <Table.Header role="rowheader" scope="row">
                 {user.firstName} {user.lastName}
               </Table.Header>
               <Table.Cell>{user.firstName}</Table.Cell>
@@ -143,6 +160,7 @@ export const StickyColumnAndRowHeaders: Story = () => {
         <Table.Head>
           <Table.Row>
             <Table.Header
+              role="columnheader"
               scope="col"
               sticky
               style={{ width: 1 }}
@@ -150,16 +168,16 @@ export const StickyColumnAndRowHeaders: Story = () => {
             >
               <Checkbox />
             </Table.Header>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               Full name
             </Table.Header>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               First name
             </Table.Header>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               Last name
             </Table.Header>
-            <Table.Header scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" sticky>
               Email
             </Table.Header>
           </Table.Row>
@@ -168,10 +186,10 @@ export const StickyColumnAndRowHeaders: Story = () => {
         <Table.Body>
           {data.map((user, i) => (
             <Table.Row key={i}>
-              <Table.Header scope="row" sticky>
+              <Table.Header role="rowheader" scope="row" sticky>
                 <Checkbox />
               </Table.Header>
-              <Table.Header title="Full name">
+              <Table.Header role="rowheader" scope="row" title="Full name">
                 {user.firstName} {user.lastName}
               </Table.Header>
               <Table.Cell>{user.firstName}</Table.Cell>

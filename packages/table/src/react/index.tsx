@@ -47,17 +47,25 @@ const styles = {
       css(stylesheet['.psds-table__head']),
       css(stylesheet[`.psds-table__head.psds-theme--${themeName}`])
     ),
-  header: (opts: {
-    align: ValueOf<typeof alignments>
-    sortable: boolean
-    sticky: boolean
-  }) =>
-    compose(
+  header: (
+    themeName: ValueOf<typeof themeNames>,
+    opts: {
+      align: ValueOf<typeof alignments>
+      sortable: boolean
+      sticky: boolean
+    }
+  ) => {
+    const stickyClasses = compose(
+      css(stylesheet['.psds-table__header--sticky']),
+      css(stylesheet[`.psds-table__header--sticky.psds-theme--${themeName}`])
+    )
+    return compose(
       css(stylesheet['.psds-table__header']),
       css(stylesheet[`.psds-table__header--align-${opts.align}`]),
       opts.sortable && css(stylesheet['.psds-table__header--sortable']),
-      opts.sticky && css(stylesheet['.psds-table__header--sticky'])
-    ),
+      opts.sticky && stickyClasses
+    )
+  },
   sortIcon: () => css(stylesheet['.psds-table__header__sort-icon']),
   row: (
     themeName: ValueOf<typeof themeNames>,
@@ -101,7 +109,7 @@ const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
       {...styles.container(themeName, { scrollable })}
       {...(scrollable && { role: 'region', tabIndex: 0 })}
     >
-      <table ref={ref} role="table" {...styles.table(themeName)} {...rest} />
+      <table role="grid" ref={ref} {...styles.table(themeName)} {...rest} />
     </Container>
   )
 }) as TableComponent
@@ -121,7 +129,9 @@ interface TableCellProps extends HTMLPropsFor<'td'> {
 const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
   (props, ref) => {
     const { align = alignments.left, ...rest } = props
-    return <td ref={ref} {...styles.cell({ align })} {...rest} />
+    return (
+      <td role="gridcell" ref={ref} {...styles.cell({ align })} {...rest} />
+    )
   }
 )
 TableCell.displayName = 'Table.Cell'
@@ -137,6 +147,8 @@ TableHead.displayName = 'Table.Head'
 
 interface TableHeaderProps extends HTMLPropsFor<'th'> {
   align?: ValueOf<typeof alignments>
+  role: 'columnheader' | 'rowheader'
+  scope: 'col' | 'row'
   sort?: boolean | ValueOf<typeof sorts>
   sticky?: boolean
   title?: string
@@ -153,6 +165,7 @@ const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
     } = props
     const sortable = isDefined(sort)
     const sorted = !isBoolean(sort)
+    const themeName = useTheme()
 
     if (sortable) {
       const msg =
@@ -190,7 +203,7 @@ const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
       <th
         ref={ref}
         title={title}
-        {...styles.header({ align, sortable, sticky })}
+        {...styles.header(themeName, { align, sortable, sticky })}
         {...(sortable && {
           'aria-label': ariaLabel,
           'aria-sort': ariaSort,
@@ -199,7 +212,7 @@ const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
         {...rest}
       >
         {children}
-        {sortable && <Icon {...styles.sortIcon()} />}
+        {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
       </th>
     )
   }
@@ -217,6 +230,7 @@ const TableRow = forwardRef<HTMLTableRowElement, TableRowProps>(
 
     return (
       <tr
+        role="row"
         ref={ref}
         {...styles.row(themeName, { expanded, selected })}
         {...rest}

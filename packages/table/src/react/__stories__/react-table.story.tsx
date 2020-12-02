@@ -88,7 +88,7 @@ export const Advanced: Story = () => {
     []
   )
 
-  const data = useMemo(() => generateNestedUserRows(200, 4), [])
+  const data = useMemo(() => generateNestedUserRows(50, 2), [])
 
   const plugins = [
     useGlobalFilter,
@@ -98,7 +98,7 @@ export const Advanced: Story = () => {
     useRowSelect
   ]
   const hooks = [expanderHook, selectionHook]
-  const initialState = { pageSize: 50 }
+  const initialState = { pageSize: 2 }
   const table = useTable({ columns, data, initialState }, ...plugins, ...hooks)
 
   const showBulkActions = useMemo(
@@ -137,6 +137,8 @@ export const Advanced: Story = () => {
                 return (
                   <Table.Header
                     {...column.getHeaderProps(column.getSortByToggleProps())}
+                    role="columnheader"
+                    scope="col"
                     sort={sortable ? sort : undefined}
                     style={style}
                     title={sortable ? textContent : ''}
@@ -239,7 +241,7 @@ interface TablePagerProps {
   table: TableInstance
 }
 const TablePager: React.FC<TablePagerProps> = props => {
-  const { perPageOptions = [10, 50, 100], table } = props
+  const { perPageOptions = [2, 5, 10], table } = props
   const { pageIndex, pageSize } = table.state
 
   const handlePrevPage = () => table.previousPage()

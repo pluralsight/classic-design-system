@@ -137,6 +137,8 @@ describe('Table', () => {
             <Table.Row>
               <Table.Header
                 data-testid="undertest"
+                role="rowheader"
+                scope="row"
                 ref={ref}
                 title="header title"
               />
@@ -231,6 +233,28 @@ describe('Table', () => {
         'aria-label',
         expect.stringContaining('Ascending sort applied')
       )
+    })
+
+    it('should have a descriptive caption', () => {
+      const { container } = render(<Sorting />)
+
+      const caption = container.querySelector('caption')!
+      expect(caption).toHaveAttribute('aria-live', 'polite')
+
+      const head = container.querySelector('thead')!
+      const headings = within(head).getAllByRole('columnheader')
+
+      const [, lastNameHeading] = headings
+
+      expect(caption).toHaveTextContent(/not sorted/i)
+
+      fireEvent.click(lastNameHeading)
+      expect(caption).toHaveTextContent(/sorted by last name/i)
+      expect(caption).toHaveTextContent(/descending/i)
+
+      fireEvent.click(lastNameHeading)
+      expect(caption).toHaveTextContent(/sorted by last name/i)
+      expect(caption).toHaveTextContent(/ascending/i)
     })
   })
 })

@@ -41,6 +41,7 @@
     "@pluralsight/ps-design-system-checkbox": "*",
     "@pluralsight/ps-design-system-dropdown": "*",
     "@pluralsight/ps-design-system-layout": "*",
+    "@pluralsight/ps-design-system-screenreaderonly": "*",
     "@pluralsight/ps-design-system-searchinput": "*",
     "@pluralsight/ps-design-system-storybook-preset": "*",
     "@pluralsight/ps-design-system-text": "*",
