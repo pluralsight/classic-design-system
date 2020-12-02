@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { codes, illustrationNames } from '../vars'
 import ErrorPage from './error-page'
+import { codes } from './codes'
+import { sizes } from '../vars'
 
 const Action: React.FC<HTMLPropsFor<'a'>> = ({
   href = 'https://help.pluralsight.com/help/contact-us'
@@ -11,17 +12,15 @@ const Action: React.FC<HTMLPropsFor<'a'>> = ({
 export default ErrorPage
 
 export const subComponents = ({
-  illustration,
   heading,
   caption,
   errorCode
 }: {
-  illustration: ValueOf<typeof illustrationNames>
   heading: string
   caption: string
   errorCode: string
 }) => ({
-  illustration: <ErrorPage.Illustration name={illustration} />,
+  illustration: <ErrorPage.Illustration />,
   heading: <ErrorPage.Heading>{heading}</ErrorPage.Heading>,
   caption: <ErrorPage.Caption>{caption} </ErrorPage.Caption>,
   errorCode: <ErrorPage.ErrorCode>{errorCode}</ErrorPage.ErrorCode>
@@ -31,7 +30,11 @@ interface ErrorPageProps extends HTMLPropsFor<'a'> {
   size: ValueOf<typeof ErrorPage.sizes>
 }
 
-export const ForbiddenErrorPage: React.FC<ErrorPageProps> = ({
+interface ErrorPageStatics {
+  sizes: typeof sizes
+}
+
+export const ForbiddenErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
   href,
   size
 }) => (
@@ -42,7 +45,9 @@ export const ForbiddenErrorPage: React.FC<ErrorPageProps> = ({
   />
 )
 
-export const NotFoundErrorPage: React.FC<ErrorPageProps> = ({ href, size }) => (
+ForbiddenErrorPage.sizes = sizes
+
+export const NotFoundErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({ href, size }) => (
   <ErrorPage
     {...subComponents(codes[404])}
     actions={<Action href={href} />}
@@ -50,7 +55,9 @@ export const NotFoundErrorPage: React.FC<ErrorPageProps> = ({ href, size }) => (
   />
 )
 
-export const InternalServerErrorPage: React.FC<ErrorPageProps> = ({
+NotFoundErrorPage.sizes = sizes
+
+export const InternalServerErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
   href,
   size
 }) => (
@@ -60,18 +67,22 @@ export const InternalServerErrorPage: React.FC<ErrorPageProps> = ({
     size={size}
   />
 )
+InternalServerErrorPage.sizes = sizes
 
-export const ServiceUnavailableErrorPage: React.FC<ErrorPageProps> = ({
+export const ServiceUnavailableErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
   size
 }) => <ErrorPage {...subComponents(codes[503])} size={size} />
+ServiceUnavailableErrorPage.sizes = sizes
 
-export const GatewayTimeoutErrorPage: React.FC<ErrorPageProps> = ({
+export const GatewayTimeoutErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics = ({
   href,
   size
 }) => (
   <ErrorPage
+
     {...subComponents(codes[504])}
     actions={<Action href={href} />}
     size={size}
   />
 )
+GatewayTimeoutErrorPage.sizes = sizes

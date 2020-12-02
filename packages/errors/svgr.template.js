@@ -17,13 +17,9 @@ function template(api, _opts, values) {
     ${interfaces}
 
     const ${componentName} = (allProps: Props) => {
-      const { title, ...props} = allProps
+      const { title = '${defaultTitle}', ...props} = allProps
       return ${jsx}
     };
-
-    ${componentName}.defaultProps = {
-      title: ${defaultTitle}
-    }
 
     ${exports}
   `

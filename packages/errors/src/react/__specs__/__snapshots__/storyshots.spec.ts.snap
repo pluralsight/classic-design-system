@@ -772,3 +772,160 @@ exports[`Storyshots pages 504: small 1`] = `
   </a>
 </div>
 `;
+
+exports[`Storyshots pages Custom: large 1`] = `
+<div
+  data-css-g3x4fp=""
+>
+  <div
+    data-css-11zs1jp=""
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      role="img"
+      viewBox="0 0 128 128"
+    >
+      <title>
+        Error
+      </title>
+      <path
+        clipRule="evenodd"
+        d="M61.149 26H56a4 4 0 00-4 4v12.13l2-3.526V30a2 2 0 012-2h4.014l1.135-2zm18.747 23H94a2 2 0 002-2V30a2 2 0 00-2-2H67.986l-1.135-2H94a4 4 0 014 4v17a4 4 0 01-4 4H81.03l-1.134-2zm-34.06 4H22a4 4 0 00-4 4v21a4 4 0 004 4h7.388l1.134-2H22a2 2 0 01-2-2V57a2 2 0 012-2h22.701l1.134-2zM36 91v13a4 4 0 004 4h41a4 4 0 004-4v-6h20a4 4 0 004-4V77a4 4 0 00-4-4H93.508l1.134 2H105a2 2 0 012 2v17a2 2 0 01-2 2H85v-5h-2v5H71a2 2 0 01-2-2v-3h-2v3a4 4 0 004 4h12v6a2 2 0 01-2 2H40a2 2 0 01-2-2V91h-2z"
+        fill="#8A99A8"
+        fillOpacity={0.25}
+        fillRule="evenodd"
+      />
+      <path
+        d="M64.87 26.56l34.566 60.947a1 1 0 01-.87 1.493H29.434a1 1 0 01-.87-1.493L63.13 26.56a1 1 0 011.74 0z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      />
+      <path
+        d="M64 88V27L29.5 88H64z"
+        fill="#8A99A8"
+        fillOpacity={0.25}
+      />
+      <path
+        d="M64 68.5l-2.593-20.31a2.831 2.831 0 115.61.058L64 68.5z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      />
+      <circle
+        cx={64}
+        cy={77}
+        r={3}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+  <h1
+    data-css-10xrzzy=""
+  >
+    Heading goes here
+  </h1>
+  <p
+    data-css-146pdhd=""
+  >
+    Error caption goes here
+  </p>
+  <p
+    data-css-1szvytz=""
+  >
+    error code: ### 
+  </p>
+  <a
+    data-css-176v989=""
+    href="https://help.pluralsight.com/help/contact-us"
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      Contact support
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Storyshots pages Custom: small 1`] = `
+<div
+  data-css-g3x4fp=""
+>
+  <div
+    data-css-1gwvklx=""
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      role="img"
+      viewBox="0 0 64 64"
+    >
+      <title>
+        ErrorSmall
+      </title>
+      <path
+        d="M32.876 9.662L56.49 52.517A1 1 0 0155.614 54H8.386a1 1 0 01-.876-1.483L31.124 9.662a1 1 0 011.752 0z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      />
+      <path
+        d="M32 54V9L6 54h26z"
+        fill="#8A99A8"
+        fillOpacity={0.25}
+      />
+      <path
+        d="M31.923 39L29.61 27.92a2.425 2.425 0 114.743.026L31.923 39z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      />
+      <circle
+        cx={32}
+        cy={45}
+        r={2}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+  <h1
+    data-css-amk6wt=""
+  >
+    Heading goes here
+  </h1>
+  <p
+    data-css-146pdhd=""
+  >
+    Error caption goes here
+  </p>
+  <p
+    data-css-1szvytz=""
+  >
+    error code: ### 
+  </p>
+  <a
+    data-css-176v989=""
+    href="https://help.pluralsight.com/help/contact-us"
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      Contact support
+    </span>
+  </a>
+</div>
+`;

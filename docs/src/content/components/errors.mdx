@@ -3,12 +3,7 @@ name: Error pages
 route: /components/errors
 ---
 
-import {
-  ForbiddenErrorPage,
-  NotFoundErrorPage,
-  InternalServerErrorPage,
-  ServiceUnavailableErrorPage
-} from '@pluralsight/ps-design-system-errors'
+import ErrorPage from '@pluralsight/ps-design-system-errors'
 
 # Error pages
 
@@ -21,16 +16,16 @@ import {
 
 ## Examples
 
-### 403 Forbidden
+### 403 Forbidden (size=small)
 
 [403 Forbidden](https://httpstatuses.com/403) The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
 
 ```typescript
-import ForbiddenErrorPage from '@pluralsight/ps-design-system-errors'
+import {ForbiddenErrorPage} from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
-  return <ForbiddenErrorPage />
+  return <ForbiddenErrorPage size={ForbiddenErrorPage.sizes.small}/>
 }
 
 export default Example
@@ -46,6 +41,12 @@ export default Example
     default="
   https://help.pluralsight.com/help/contact-us"
   />
+   <TypesProp
+    name="size"
+    type={<TypesEnum enum={ErrorPage.sizes} />}
+    desc="Size of error message"
+    default="large, unless viewport cannot support size"
+  />
 </TypesTable>
 
 ### 404 Not Found
@@ -53,7 +54,7 @@ export default Example
 [404 Not Found](https://httpstatuses.com/404) The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
 
 ```typescript
-import NotFoundErrorPage from '@pluralsight/ps-design-system-errors'
+import {NotFoundErrorPage} from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
@@ -67,9 +68,17 @@ export default Example
 
 <TypesTable>
   <TypesProp
-    name="action"
+    name="href"
     type="string"
-    desc="Search form destination; handles q query string"
+    desc="Destination of ”Contact support“ button"
+    default="
+  https://help.pluralsight.com/help/contact-us"
+  />
+   <TypesProp
+    name="size"
+    type={<TypesEnum enum={ErrorPage.sizes} />}
+    desc="Size of error message"
+    default="large, unless viewport cannot support size"
   />
 </TypesTable>
 
@@ -78,7 +87,7 @@ export default Example
 [500 Internal Server Error](https://httpstatuses.com/500) A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
 
 ```typescript
-import InternalServerErrorPage from '@pluralsight/ps-design-system-errors'
+import {InternalServerErrorPage} from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
@@ -98,6 +107,12 @@ export default Example
     default="
   https://help.pluralsight.com/help/contact-us"
   />
+   <TypesProp
+    name="size"
+    type={<TypesEnum enum={ErrorPage.sizes} />}
+    desc="Size of error message"
+    default="large, unless viewport cannot support size"
+  />
 </TypesTable>
 
 ### 503 Service Unavailable
@@ -105,7 +120,7 @@ export default Example
 [503 Service Unavailable](https://httpstatuses.com/503) The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.
 
 ```typescript
-import ServiceUnavailableErrorPage from '@pluralsight/ps-design-system-errors'
+import {ServiceUnavailableErrorPage} from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
@@ -114,13 +129,123 @@ function Example() {
 
 export default Example
 ```
+#### Types
+
+<TypesTable>
+   <TypesProp
+    name="size"
+    type={<TypesEnum enum={ErrorPage.sizes} />}
+    desc="Size of error message"
+    default="large, unless viewport cannot support size"
+  />
+</TypesTable>
+
+### 504 Gateway Timeout Error
+
+[504 Gateway Timeout Error](https://httpstatuses.com/504) The server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request.
+
+```typescript
+import {GatewayTimeoutErrorPage} from '@pluralsight/ps-design-system-errors'
+import React from 'react'
+
+function Example() {
+  return <GatewayTimeoutErrorPage />
+}
+
+export default Example
+```
+
+#### Types
+
+<TypesTable>
+  <TypesProp
+    name="href"
+    type="string"
+    desc="Destination of ”Contact support“ button"
+    default="
+  https://help.pluralsight.com/help/contact-us"
+  />
+   <TypesProp
+    name="size"
+    type={<TypesEnum enum={ErrorPage.sizes} />}
+    desc="Size of error message"
+    default="large, unless viewport cannot support size"
+  />
+</TypesTable>
+
+### Custom Error
+
+To display a custom ErrorPage using the ErrorPage component layout and styling see example:
+
+```typescript
+import ErrorPage from '@pluralsight/ps-design-system-errors'
+import Button from '@pluralsight/ps-design-system-button'
+import React from 'react'
+
+function Example() {
+  return (
+     <ErrorPage
+      illustration={ <ErrorPage.Illustration /> }
+      heading={ <ErrorPage.Heading>Heading goes here</ErrorPage.Heading> }
+      caption={ <ErrorPage.Caption>Error caption goes here</ErrorPage.Caption> }
+      errorCode={ <ErrorPage.ErrorCode>error code: ### </ErrorPage.ErrorCode>}
+      actions={<Button href={'https://help.pluralsight.com/help/contact-us'}>Contact support</Button>}
+      size={ErrorPage.sizes.large}
+    />
+  )
+}
+
+export default Example
+```
+
+#### Types: ErrorPage
+
+<TypesTable>
+   <TypesProp
+    name="illustration"
+    type="ErrorPage.Illustration"
+  />
+  <TypesProp
+    name="heading"
+    type="ErrorPage.Heading"
+  />
+   <TypesProp
+    name="caption"
+    type="ErrorPage.Caption"
+  />
+   <TypesProp
+    name="errorCode"
+    type="ErrorPage.ErrorCode"
+  />
+  <TypesProp
+    name="actions"
+    type="Button | ReactNode"
+  />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={ErrorPage.sizes} />}
+    desc="Size of error message"
+    default="large, unless viewport cannot support size"
+  />
+</TypesTable>
+
+
+#### Types: ErrorPage.Illustration
+
+<TypesTable>
+   <TypesProp
+    name="children"
+    type="ReactNode"
+    desc="Custom SvG if default icon is not desired"
+  />
+</TypesTable>
 
 ## Usage
 
 <Usage
   install="npm install @pluralsight/ps-design-system-errors"
   import={`
-import {
+import ErrorPage, {
   ForbiddenErrorPage,
   NotFoundErrorPage,
   InternalServerErrorPage,

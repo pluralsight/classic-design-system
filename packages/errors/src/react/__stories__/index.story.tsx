@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import Button from '@pluralsight/ps-design-system-button'
 
 import ErrorPage, {
   ForbiddenErrorPage,
@@ -34,5 +35,17 @@ Object.values(ErrorPage.sizes).forEach(size => {
 Object.values(ErrorPage.sizes).forEach(size => {
   pages.add(`504: ${size}`, () => (
     <GatewayTimeoutErrorPage size={size} />
+  ))
+})
+Object.values(ErrorPage.sizes).forEach(size => {
+  pages.add(`Custom: ${size}`, ()=> (
+    <ErrorPage
+    illustration={ <ErrorPage.Illustration /> }
+    heading={ <ErrorPage.Heading>Heading goes here</ErrorPage.Heading> }
+    caption={ <ErrorPage.Caption>Error caption goes here</ErrorPage.Caption> }
+    errorCode={ <ErrorPage.ErrorCode>error code: ### </ErrorPage.ErrorCode>}
+    actions={<Button href={'https://help.pluralsight.com/help/contact-us'}>Contact support</Button>}
+      size={size}
+    />
   ))
 })

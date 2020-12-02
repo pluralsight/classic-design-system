@@ -21,8 +21,8 @@ import React, {
 
 import Context, { ContextValue } from './context'
 import stylesheet, { sizeClasses, themeClasses } from '../css'
-import * as illustrations from './illustrations'
-import { illustrationNames, sizes } from '../vars'
+import {error} from './illustrations'
+import { sizes } from '../vars'
 
 export interface ErrorPageProps extends HTMLPropsFor<'div'> {
   size?: ValueOf<typeof sizes>
@@ -164,25 +164,16 @@ const Heading: React.FC<HeadingProps> = props => {
   )
 }
 
-interface IllustrationProps extends HTMLPropsFor<'svg'> {
-  name?: ValueOf<typeof illustrationNames>
-}
+interface IllustrationProps extends HTMLPropsFor<'svg'> {}
 
-interface IllustrationStatics {
-  names: typeof illustrationNames
-}
-
-const IllustrationNotFound = () => null
-
-const Illustration: React.FC<IllustrationProps> &
-  IllustrationStatics = props => {
-  const { children: custom, name, ...rest } = props
+const Illustration: React.FC<IllustrationProps> = props => {
+  const { children: custom, ...rest } = props
 
   return (
     <Context.Consumer>
       {ctx => {
         // @ts-ignore: necessary conditional
-        let Comp: any = illustrations[name] || IllustrationNotFound
+        let Comp: any = error
         const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
 
         if (isSmall) Comp = Comp.small
@@ -197,8 +188,6 @@ const Illustration: React.FC<IllustrationProps> &
     </Context.Consumer>
   )
 }
-
-Illustration.names = illustrationNames
 
 ErrorPage.Actions = Actions
 ErrorPage.Caption = Caption
