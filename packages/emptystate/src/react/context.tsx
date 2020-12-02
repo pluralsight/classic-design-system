@@ -10,8 +10,8 @@ export interface ContextValue {
 }
 
 export const initialValue: ContextValue = {
-  size: null,
-  themeName: null
+  size: undefined,
+  themeName: undefined
 }
 
 const Context = createContext<ContextValue>(initialValue)

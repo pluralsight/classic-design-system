@@ -12,12 +12,12 @@ import {
 
 import * as vars from '../vars'
 
-export const sizeClasses = {
+export const sizeClasses: { [key: string]: string } = {
   [vars.sizes.small]: '.psds-emptystate--size-small',
   [vars.sizes.large]: '.psds-emptystate--size-large'
 }
 
-export const themeClasses = {
+export const themeClasses: { [key: string]: string } = {
   [themeDefaultName]: `.psds-theme--dark`,
   [themeNames.light]: `.psds-theme--light`
 }
