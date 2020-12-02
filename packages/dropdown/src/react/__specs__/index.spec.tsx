@@ -69,8 +69,8 @@ it('caret down click opens the menu', () => {
       ]}
     />
   )
-  const catetDown = screen.getByRole('img', { name: "caret down icon" })
-  userEvent.click(catetDown)
+  const caretDown = screen.getByRole('img', { name: "caret down icon" })
+  userEvent.click(caretDown)
 
   const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
