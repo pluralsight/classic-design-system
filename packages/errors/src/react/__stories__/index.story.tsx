@@ -1,15 +1,38 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import {
+import ErrorPage, {
   ForbiddenErrorPage,
   NotFoundErrorPage,
   InternalServerErrorPage,
-  ServiceUnavailableErrorPage
+  ServiceUnavailableErrorPage,
+  GatewayTimeoutErrorPage,
 } from '..'
 
-storiesOf('pages', module)
-  .add(`403`, () => <ForbiddenErrorPage />)
-  .add(`404`, () => <NotFoundErrorPage />)
-  .add(`500`, () => <InternalServerErrorPage />)
-  .add(`503`, () => <ServiceUnavailableErrorPage />)
+const pages = storiesOf('pages', module)
+
+Object.values(ErrorPage.sizes).forEach(size => {
+  pages.add(`403: ${size}`, () => (
+    <ForbiddenErrorPage size={size} />
+  ))
+})
+Object.values(ErrorPage.sizes).forEach(size => {
+  pages.add(`404: ${size}`, () => (
+    <NotFoundErrorPage size={size} />
+  ))
+})
+Object.values(ErrorPage.sizes).forEach(size => {
+  pages.add(`500: ${size}`, () => (
+    <InternalServerErrorPage size={size} />
+  ))
+})
+Object.values(ErrorPage.sizes).forEach(size => {
+  pages.add(`503: ${size}`, () => (
+    <ServiceUnavailableErrorPage size={size} />
+  ))
+})
+Object.values(ErrorPage.sizes).forEach(size => {
+  pages.add(`504: ${size}`, () => (
+    <GatewayTimeoutErrorPage size={size} />
+  ))
+})
