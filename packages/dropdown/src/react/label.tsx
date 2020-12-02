@@ -1,12 +1,16 @@
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { FC, ReactNode } from 'react'
 
 import stylesheet from '../css'
 
 const styles = {
-  label: themeName =>
+  label: (themeName: ValueOf<typeof themeNames>) =>
     css(
       stylesheet['psds-dropdown__label'],
       stylesheet[`.psds-dropdown__label.psds-theme--${themeName}`]

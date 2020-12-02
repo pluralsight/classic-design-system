@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react'
+import React, { ReactText, ReactElement, ReactNode, forwardRef } from 'react'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -36,13 +36,16 @@ interface DropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   disabled?: boolean
   className?: string
   error?: boolean
-  label?: React.ReactNode
-  menu?: React.ReactNode
-  onChange?: (e: React.MouseEvent, v: React.ReactText) => void
-  onClick?: (e: React.MouseEvent) => void
+  label?: ReactNode
+  menu?: ReactElement | ReactElement[]
+  onChange?: (
+    evt: React.MouseEvent | React.KeyboardEvent,
+    value?: ReactText
+  ) => void
+  onClick?: (e: React.MouseEvent | React.KeyboardEvent) => void
   placeholder?: string
   size?: ValueOf<typeof vars.sizes>
-  subLabel?: React.ReactNode
+  subLabel?: ReactNode
   value?: React.ReactText
 }
 interface DropdownComponent
@@ -77,12 +80,12 @@ const Dropdown = forwardRef<HTMLButtonElement, DropdownProps>(
 ) as DropdownComponent
 
 Dropdown.displayName = 'Dropdown'
+// TODO: replace
 Dropdown.defaultProps = {
   appearance: vars.appearances.default,
   disabled: false,
   error: false,
-  size: vars.sizes.medium,
-  menu: <span />
+  size: vars.sizes.medium
 }
 Dropdown.context = DropdownContext
 Dropdown.Item = Item

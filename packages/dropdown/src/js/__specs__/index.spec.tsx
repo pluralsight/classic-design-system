@@ -2,23 +2,19 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 import { getLongestMenuLabel, formatItemId, parseMenuChildren } from '..'
-import Item from '../../react'
+import Dropdown from '../../react'
 
 describe('#formatItemId', () => {
-  it('is undefined for no input', () => {
-    expect(formatItemId('aMenuId')).toBeUndefined()
-  })
-
   it('is menuId-value by default', () => {
-    expect(formatItemId('aMenuId', 'aValue')).toEqual('aMenuId-aValue')
-    expect(formatItemId('aMenuId', 123)).toEqual('aMenuId-123')
+    expect(formatItemId('aMenuId', 'aLabel', 'aValue')).toEqual(
+      'aMenuId-aValue'
+    )
+    expect(formatItemId('aMenuId', 'aLabel', 123)).toEqual('aMenuId-123')
   })
 
   it('is menuId-label as a secondary option', () => {
-    expect(formatItemId('aMenuId', undefined, 'aLabel')).toEqual(
-      'aMenuId-aLabel'
-    )
-    expect(formatItemId('aMenuId', undefined, 'a Fine Label')).toEqual(
+    expect(formatItemId('aMenuId', 'aLabel')).toEqual('aMenuId-aLabel')
+    expect(formatItemId('aMenuId', 'a Fine Label')).toEqual(
       'aMenuId-aFineLabel'
     )
   })
@@ -32,9 +28,9 @@ describe('#parseMenuChildren', () => {
   it('parses a fragment of children', () => {
     const children = (
       <>
-        <Item value="o">One</Item>
-        <Item value="w">Two</Item>
-        <Item value="h">Three</Item>
+        <Dropdown.Item value="o">One</Dropdown.Item>
+        <Dropdown.Item value="w">Two</Dropdown.Item>
+        <Dropdown.Item value="h">Three</Dropdown.Item>
       </>
     )
     expect(parseMenuChildren('aMenuId', children)).toEqual([
@@ -46,17 +42,33 @@ describe('#parseMenuChildren', () => {
 
   it('parses an array of children', () => {
     const children = [
-      <Item value="o" key="o">
+      <Dropdown.Item value="o" key="o">
         One
-      </Item>,
-      <Item value="w" key="w">
+      </Dropdown.Item>,
+      <Dropdown.Item value="w" key="w">
         Two
-      </Item>,
-      <Item value="h" key="h">
+      </Dropdown.Item>,
+      <Dropdown.Item value="h" key="h">
         Three
-      </Item>
+      </Dropdown.Item>
     ]
 
+    expect(parseMenuChildren('aMenuId', children)).toEqual([
+      { id: 'aMenuId-o', label: 'One', value: 'o' },
+      { id: 'aMenuId-w', label: 'Two', value: 'w' },
+      { id: 'aMenuId-h', label: 'Three', value: 'h' }
+    ])
+  })
+
+  it('removes dividers', () => {
+    const children = (
+      <>
+        <Dropdown.Item value="o">One</Dropdown.Item>
+        <Dropdown.Item value="w">Two</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item value="h">Three</Dropdown.Item>
+      </>
+    )
     expect(parseMenuChildren('aMenuId', children)).toEqual([
       { id: 'aMenuId-o', label: 'One', value: 'o' },
       { id: 'aMenuId-w', label: 'Two', value: 'w' },

@@ -4,7 +4,7 @@ import {
   useCloseOnDocumentEvents
 } from '@pluralsight/ps-design-system-util'
 import React, {
-  ReactText,
+  ForwardRefRenderFunction,
   forwardRef,
   useImperativeHandle,
   useContext,
@@ -36,39 +36,33 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   menuPosition: { top: number; left: number; width: number }
 }
 
-export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(
-  ({ inNode, isOpen, menu, menuId, menuPosition, ...rest }, forwardedRef) => {
-    const context = useContext(DropdownContext)
-    const ref = useRef<HTMLDivElement | null>(null)
-    useImperativeHandle<HTMLDivElement | null, HTMLDivElement | null>(
-      forwardedRef,
-      () => ref.current
-    )
+export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
+  props,
+  forwardedRef
+) => {
+  const { inNode, isOpen, menu, menuId, menuPosition, ...rest } = props
+  const context = useContext(DropdownContext)
+  const ref = useRef<HTMLDivElement>(null)
+  useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-    useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
+  useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
 
-    return (
-      menu &&
-      isOpen &&
-      createUniversalPortal(
-        <div {...styles.menuWrapper()} style={menuPosition}>
-          <div
-            {...styles.menu()}
-            ref={ref}
-            role="listbox"
-            id={menuId}
-            {...rest}
-          >
-            {menu}
-          </div>
-        </div>,
-        inNode
-      )
+  return (
+    menu &&
+    isOpen &&
+    createUniversalPortal(
+      <div {...styles.menuWrapper()} style={menuPosition}>
+        <div {...styles.menu()} ref={ref} role="listbox" id={menuId} {...rest}>
+          {menu}
+        </div>
+      </div>,
+      inNode
     )
-  }
-)
+  )
+}) as ForwardRefRenderFunction<HTMLDivElement, DropdownMenuProps>)
 
 Menu.displayName = 'Dropdown.Menu'
+// TODO: replace
 Menu.defaultProps = {
   menu: <span />
 }

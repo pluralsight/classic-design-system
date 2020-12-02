@@ -915,9 +915,9 @@ exports[`Storyshots custom dynamic icon 1`] = `
             <div
               style={
                 Object {
-                  "height": 24,
-                  "marginRight": 8,
-                  "width": 24,
+                  "height": "24px",
+                  "marginRight": "8px",
+                  "width": "24px",
                 }
               }
             />
@@ -1184,7 +1184,6 @@ exports[`Storyshots disabled compare dropdown 1`] = `
           <button
             data-css-94lg5r=""
             disabled={true}
-            onClick={null}
             onKeyDown={[Function]}
           >
             <span
@@ -1440,7 +1439,6 @@ exports[`Storyshots focus disabled 1`] = `
           data-css-94lg5r=""
           disabled={true}
           onBlur={[Function]}
-          onClick={null}
           onFocus={[Function]}
           onKeyDown={[Function]}
         >
@@ -2817,6 +2815,7 @@ exports[`Storyshots menu divider 1`] = `
     data-css-6wu9td=""
   >
     <input
+      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
       aria-autocomplete="list"
       aria-controls="dropdown-menu-unique-id"
       aria-expanded={false}
@@ -2854,7 +2853,7 @@ exports[`Storyshots menu divider 1`] = `
               Three and the amazing item
             </span>
             <span
-              data-css-phnd7x=""
+              data-css-1t1vq03=""
             />
           </span>
         </button>
