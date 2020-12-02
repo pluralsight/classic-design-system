@@ -69,7 +69,7 @@ it('caret down click opens the menu', () => {
       ]}
     />
   )
-  const caretDown = screen.getByRole('img', { name: "caret down icon" })
+  const caretDown = screen.getByRole('img', { name: 'caret down icon' })
   userEvent.click(caretDown)
 
   const menu = screen.getByRole('listbox')
