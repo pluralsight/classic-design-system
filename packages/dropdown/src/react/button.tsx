@@ -96,11 +96,11 @@ export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
               ref={ref}
             >
               <span {...styles.inner()}>{children}</span>
-            <div {...styles.icon({ appearance, themeName })}>
-              <Icon>
-                <CaretDown />
-              </Icon>
-            </div>
+              <div {...styles.icon({ appearance, themeName })}>
+                <Icon>
+                  <CaretDown />
+                </Icon>
+              </div>
             </button>
           </div>
         </Halo>
