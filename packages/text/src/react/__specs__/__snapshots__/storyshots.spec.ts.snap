@@ -9,7 +9,7 @@ exports[`Storyshots Code empty 1`] = `
   }
 >
   <p
-    data-css-1djw98v=""
+    data-css-bbdowb=""
   >
     before|
     |after
@@ -26,7 +26,7 @@ exports[`Storyshots Code ends single line 1`] = `
   }
 >
   <p
-    data-css-1djw98v=""
+    data-css-bbdowb=""
   >
     This is where we see 
     <code
@@ -47,7 +47,7 @@ exports[`Storyshots Code lead single line 1`] = `
   }
 >
   <p
-    data-css-1djw98v=""
+    data-css-bbdowb=""
   >
     <code
       data-css-exlif5=""
@@ -68,7 +68,7 @@ exports[`Storyshots Code line wrap 1`] = `
   }
 >
   <p
-    data-css-1djw98v=""
+    data-css-bbdowb=""
   >
     text at the start
     <code
@@ -106,7 +106,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
   }
 >
   <p
-    data-css-1djw98v=""
+    data-css-bbdowb=""
   >
     Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
     <code
@@ -144,15 +144,43 @@ exports[`Storyshots Heading className override 1`] = `
   }
 >
   <h2
-    className={
-      Object {
-        "data-css-mbiza7": "",
-      }
-    }
-    data-css-1uk9rqa=""
+    className="css-mbiza7"
+    data-css-12103dp=""
   >
     orange
   </h2>
+</div>
+`;
+
+exports[`Storyshots Heading color: primary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-12103dp=""
+  >
+    Primary
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading color: secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-bnzoj7=""
+  >
+    Secondary
+  </h1>
 </div>
 `;
 
@@ -165,7 +193,7 @@ exports[`Storyshots Heading size: large 1`] = `
   }
 >
   <h1
-    data-css-1uk9rqa=""
+    data-css-12103dp=""
   >
     large
   </h1>
@@ -181,14 +209,14 @@ exports[`Storyshots Heading size: medium 1`] = `
   }
 >
   <h1
-    data-css-xhd98s=""
+    data-css-9zvq8n=""
   >
     medium
   </h1>
 </div>
 `;
 
-exports[`Storyshots Heading size: smallCaps 1`] = `
+exports[`Storyshots Heading size: small 1`] = `
 <div
   style={
     Object {
@@ -197,9 +225,9 @@ exports[`Storyshots Heading size: smallCaps 1`] = `
   }
 >
   <h1
-    data-css-ffti8h=""
+    data-css-1kf2x8b=""
   >
-    smallCaps
+    small
   </h1>
 </div>
 `;
@@ -213,9 +241,57 @@ exports[`Storyshots Heading size: xLarge 1`] = `
   }
 >
   <h1
-    data-css-1cnozti=""
+    data-css-f6nlcp=""
   >
     xLarge
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading size: xSmall 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-v25gd5=""
+  >
+    xSmall
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading size: xXSmall 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-y6gnkt=""
+  >
+    xXSmall
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Heading size: xXXSmall 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <h1
+    data-css-bd63tk=""
+  >
+    xXXSmall
   </h1>
 </div>
 `;
@@ -229,7 +305,7 @@ exports[`Storyshots Heading style override 1`] = `
   }
 >
   <h2
-    data-css-1uk9rqa=""
+    data-css-12103dp=""
     style={
       Object {
         "color": "#E7558B",
@@ -241,7 +317,189 @@ exports[`Storyshots Heading style override 1`] = `
 </div>
 `;
 
-exports[`Storyshots List mixed liste 1`] = `
+exports[`Storyshots Label caps & strong: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-19iiq6r=""
+  >
+    Caps
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label caps: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1sp6jud=""
+  >
+    Caps
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label className override 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    className="css-mbiza7"
+    data-css-e9bpt1=""
+  >
+    blue
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label color: primary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-e9bpt1=""
+  >
+    Primary
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label color: secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-rwxz6j=""
+  >
+    Secondary
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-18jb6r7=""
+  >
+    large
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: medium 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-e9bpt1=""
+  >
+    medium
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-1cjjkrz=""
+  >
+    small
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label size: xSmall 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-6xzxlg=""
+  >
+    xSmall
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label strong: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-19x6xyn=""
+  >
+    Strong
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label style override 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <span
+    data-css-e9bpt1=""
+    style={
+      Object {
+        "color": "#E7558B",
+      }
+    }
+  >
+    pink
+  </span>
+</div>
+`;
+
+exports[`Storyshots List mixed list 1`] = `
 <div
   style={
     Object {
@@ -251,17 +509,17 @@ exports[`Storyshots List mixed liste 1`] = `
 >
   <div>
     <ul
-      data-css-trzyei=""
+      data-css-15y1hmt=""
     >
       <li>
-        one
+        aone
       </li>
       <li>
         two
       </li>
       <li>
         <ol
-          data-css-yr69um=""
+          data-css-epsy5x=""
         >
           <li>
             one
@@ -274,7 +532,7 @@ exports[`Storyshots List mixed liste 1`] = `
           </li>
           <li>
             <ul
-              data-css-1mfvpjq=""
+              data-css-m99z6v=""
             >
               <li>
                 one
@@ -306,7 +564,7 @@ exports[`Storyshots List mixed liste 1`] = `
       </li>
     </ul>
     <ul
-      data-css-1mfvpjq=""
+      data-css-m99z6v=""
       style={
         Object {
           "marginTop": 50,
@@ -321,7 +579,7 @@ exports[`Storyshots List mixed liste 1`] = `
       </li>
       <li>
         <ul
-          data-css-trzyei=""
+          data-css-15y1hmt=""
         >
           <li>
             one
@@ -331,7 +589,7 @@ exports[`Storyshots List mixed liste 1`] = `
           </li>
           <li>
             <ol
-              data-css-yr69um=""
+              data-css-epsy5x=""
             >
               <li>
                 one
@@ -369,6 +627,96 @@ exports[`Storyshots List mixed liste 1`] = `
 </div>
 `;
 
+exports[`Storyshots List size: large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <ul
+    data-css-102qda0=""
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots List size: medium 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <ul
+    data-css-15y1hmt=""
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots List size: small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <ul
+    data-css-wquhl2=""
+  >
+    <li>
+      one
+    </li>
+    <li>
+      two
+    </li>
+    <li>
+      three
+    </li>
+    <li>
+      four
+    </li>
+    <li>
+      five
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots List type: bulleted 1`] = `
 <div
   style={
@@ -378,7 +726,7 @@ exports[`Storyshots List type: bulleted 1`] = `
   }
 >
   <ul
-    data-css-trzyei=""
+    data-css-15y1hmt=""
   >
     <li>
       one
@@ -408,7 +756,7 @@ exports[`Storyshots List type: default 1`] = `
   }
 >
   <ul
-    data-css-1mfvpjq=""
+    data-css-m99z6v=""
   >
     <li>
       one
@@ -438,7 +786,7 @@ exports[`Storyshots List type: numbered 1`] = `
   }
 >
   <ol
-    data-css-yr69um=""
+    data-css-epsy5x=""
   >
     <li>
       one
@@ -468,19 +816,15 @@ exports[`Storyshots P className override 1`] = `
   }
 >
   <p
-    className={
-      Object {
-        "data-css-mbiza7": "",
-      }
-    }
-    data-css-1djw98v=""
+    className="css-mbiza7"
+    data-css-bbdowb=""
   >
-    orange
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
 </div>
 `;
 
-exports[`Storyshots P stacked 1`] = `
+exports[`Storyshots P color: primary 1`] = `
 <div
   style={
     Object {
@@ -488,23 +832,75 @@ exports[`Storyshots P stacked 1`] = `
     }
   }
 >
-  <div>
-    <p
-      data-css-1djw98v=""
-    >
-      We need a paradigm shift quick win. Not the long pole in my tent red flag value prop yet accountable talk move the needle into the weeds loop back. Due diligence after I ran into Helen at a restaurant, I realized she was just office pretty, or can we align on lunch orders globalize. Re-inventing the wheel product management breakout fastworks but we don't want to boil the ocean, and personal development yet shoot me an email but waste of resources. Drink from the firehose quick win. Design thinking organic growth, nor vertical integration, so we need a paradigm shift cross sabers. We're ahead of the curve on that one quarterly sales are at an all-time low. We need to have a Come to Jesus meeting with Phil about his attitude churning anomalies on-brand but completeley fresh. Market-facing. No scraps hit the floor digitalize i'll book a meeting so we can solution this before the sprint is over curate who's responsible for the ask for this request? please advise soonest so organic growth. This vendor is incompetent blue money, for this is a no-brainer take five, punch the tree, and come back in here with a clear head diversify kpis digitalize for feature creep. Product management breakout fastworks best practices, we're ahead of the curve on that one nor we need to future-proof this, yet rock Star/Ninja get buy-in. Blue sky. Staff engagement. Sacred cow translating our vision of having a market leading platfrom good optics yet curate this is meaningless.
-    </p>
-    <p
-      data-css-1djw98v=""
-    >
-      To be inspired is to become creative, innovative and energized we want this philosophy to trickle down to all our stakeholders horsehead offer, and are we in agreeance, so in this space. Lean into that problem even dead cats bounce. Imagineer knowledge is power. Best practices quick win great plan! let me diarize this, and we can synchronise ourselves at a later timepoint no scraps hit the floor we need to start advertising on social media get buy-in yet gain traction. Into the weeds programmatically player-coach can you send me an invite? or we need to socialize the comms with the wider stakeholder community. Red flag not the long pole in my tent bench mark knowledge process outsourcing tbrand terrorists strategic high-level 30,000 ft view I just wanted to give you a heads-up. Quick win closing these latest prospects is like putting socks on an octopus win-win action item, but touch base, nor bells and whistles, for your work on this project has been really impactful. New economy. Open door policy digital literacy table the discussion . Ultimate measure of success put a record on and see who dances pro-sumer software. Please advise soonest shotgun approach low-hanging fruit yet come up with something buzzworthy, nor clear blue water who's responsible for the ask for this request?. Pull in ten extra bodies to help roll the tortoise where the metal hits the meat game plan, and blue money horsehead offer. Not enough bandwidth gain traction for bells and whistles, so knowledge is power for prethink, or prairie dogging. Wheelhouse let's unpack that later or cross sabers. Can you ballpark the cost per unit for me we are running out of runway so win-win after I ran into Helen at a restaurant, I realized she was just office pretty, yet price point, and run it up the flagpole, ping the boss and circle back. Going forward data-point if you want to motivate these clowns, try less carrot and more stick, it's a simple lift and shift job. Cross sabers can I just chime in on that one, for bench mark, yet move the needle. Criticality marketing computer development html roi feedback team website for pipeline price point we need a paradigm shift UX. Re-inventing the wheel we need a paradigm shift. Commitment to the cause run it up the flagpole, proceduralize, but can you send me an invite? yet please advise soonest. Time to open the kimono red flag drink the Kool-aid.
-    </p>
-    <p
-      data-css-1djw98v=""
-    >
-      UX. Pixel pushing value-added, nor draw a line in the sand pig in a python, but this vendor is incompetent . Vertical integration those options are already baked in with this model. Proceduralize design thinking execute hit the ground running. Deploy this is a no-brainer shelfware come up with something buzzworthy clear blue water hit the ground running. Win-win-win quick win, so wiggle room, but three-martini lunch. Get all your ducks in a row waste of resources shoot me an email but overcome key issues to meet key milestones, please advise soonest. Table the discussion wheelhouse, nor ladder up / ladder back to the strategy. Open door policy future-proof even dead cats bounce, yet viral engagement ultimate measure of success nor cross sabers. Quick win imagineer get all your ducks in a row. We want to see more charts. Globalize. Get six alpha pups in here for a focus group granularity blue money come up with something buzzworthy open door policy. We need to socialize the comms with the wider stakeholder community driving the initiative forward yet time to open the kimono.
-    </p>
-  </div>
+  <p
+    data-css-bbdowb=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P color: secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-u2dst9=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P size: large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-14mdpvz=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P size: medium 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-bbdowb=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots P size: small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-16fryvu=""
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
 </div>
 `;
 
@@ -517,30 +913,14 @@ exports[`Storyshots P style override 1`] = `
   }
 >
   <p
-    data-css-1djw98v=""
+    data-css-bbdowb=""
     style={
       Object {
         "color": "#E7558B",
       }
     }
   >
-    pink
-  </p>
-</div>
-`;
-
-exports[`Storyshots P vanilla 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <p
-    data-css-1djw98v=""
-  >
-    lorem ipsum
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
 </div>
 `;

@@ -20,8 +20,8 @@ export const TableOfContents: React.FC<TableOfContentsProps> = props => {
   }, [slugger])
   return (
     <nav className={styles.toc}>
-      <Heading size={Heading.sizes.smallCaps} className={styles.title}>
-        <h2>Contents</h2>
+      <Heading size={Heading.sizes.xXXSmall} color={Heading.colors.secondary}>
+        <h4 className={styles.title}>Contents</h4>
       </Heading>
       <VerticalTabs>
         {props.headings

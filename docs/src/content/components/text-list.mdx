@@ -67,4 +67,16 @@ export default Example
     desc="semantics and bullet styles (from List.types)"
     default={List.types.default}
   />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={List.sizes} />}
+    desc="Text size (from List.sizes)"
+    default={List.sizes.medium}
+  />
+  <TypesProp
+    name="color"
+    type={<TypesEnum enum={List.colors} />}
+    desc="Text color (from List.colors)"
+    default={List.colors.primary}
+  />
 </TypesTable>
