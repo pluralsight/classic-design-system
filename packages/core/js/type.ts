@@ -1,6 +1,6 @@
 export default {
   fontFamily:
-    '"PS TT Commons Roman", "Gotham SSm A", "Gotham SSm B", sans-serif',
+    '"PS TT Commons Roman", "Gotham SSm A", "Gotham SSm B", Arial, sans-serif',
   fontFamilyCode: '"Source Code Pro", monospace',
 
   /* font size */
