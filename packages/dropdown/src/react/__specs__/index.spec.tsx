@@ -45,8 +45,32 @@ it('button click opens the menu', () => {
       ]}
     />
   )
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
+
+  const menu = screen.getByRole('listbox')
+  expect(menu).toBeInTheDocument()
+})
+
+it('caret down click opens the menu', () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  )
+  const caretDown = screen.getByRole('img', { name: 'caret down icon' })
+  userEvent.click(caretDown)
 
   const menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
@@ -70,7 +94,7 @@ it('opens the menu with space key', () => {
     />
   )
 
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   spaceKey()
 
@@ -96,7 +120,7 @@ it('opens the menu with enter key', () => {
     />
   )
 
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   enterKey()
 
@@ -122,7 +146,7 @@ it('opens the menu with down arrow', () => {
     />
   )
 
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   arrowDownKey()
 
@@ -148,7 +172,7 @@ it('closes the menu with escape', () => {
     />
   )
 
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   arrowDownKey()
 
@@ -179,7 +203,7 @@ it('selects by click', () => {
       ]}
     />
   )
-  const button = screen.getByRole('button', { name: 'Two' })
+  const button = screen.getByRole('button', { name: /Two/ })
   userEvent.click(button)
 
   const item = screen.getByRole('option', { name: /Three/ })
@@ -207,7 +231,7 @@ it('navigates by arrows, selects by enter', () => {
       ]}
     />
   )
-  const button = screen.getByRole('button', { name: 'Two' })
+  const button = screen.getByRole('button', { name: /Two/ })
   button.focus()
   enterKey()
 
@@ -231,7 +255,7 @@ it('navigates value-less items by arrows/enter', () => {
       ]}
     />
   )
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   enterKey()
 
@@ -260,7 +284,7 @@ it('re-navigates, active index is maintained on selection', () => {
       ]}
     />
   )
-  const button = screen.getByRole('button', { name: 'Two' })
+  const button = screen.getByRole('button', { name: /Two/ })
   button.focus()
   enterKey()
   arrowDownKey()
@@ -291,7 +315,7 @@ it('label set as value if option has no value', () => {
       ]}
     />
   )
-  const button = screen.getByRole('button', { name: 'Two' })
+  const button = screen.getByRole('button', { name: /Two/ })
   userEvent.click(button)
 
   const item = screen.getByRole('option', { name: /Three/ })
@@ -313,7 +337,7 @@ it('item onClick is triggered', () => {
       }
     />
   )
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
 
   const item = screen.getByRole('option', { name: /One/ })
@@ -337,7 +361,7 @@ it('calls on change with click on label text', () => {
       }
     />
   )
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
 
   const item = screen.getByRole('option', { name: /Three/ })
@@ -361,7 +385,7 @@ it('calls on change with keydown on value', () => {
       }
     />
   )
-  const button = screen.getByRole('button', { name: 'Select' })
+  const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   enterKey()
   arrowDownKey()
