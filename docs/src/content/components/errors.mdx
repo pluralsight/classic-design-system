@@ -16,7 +16,7 @@ import ErrorPage from '@pluralsight/ps-design-system-errors'
 
 ## Examples
 
-### 403 Forbidden (size=small)
+### 403 Forbidden
 
 [403 Forbidden](https://httpstatuses.com/403) The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
 
@@ -25,7 +25,7 @@ import {ForbiddenErrorPage} from '@pluralsight/ps-design-system-errors'
 import React from 'react'
 
 function Example() {
-  return <ForbiddenErrorPage size={ForbiddenErrorPage.sizes.small}/>
+  return <ForbiddenErrorPage />
 }
 
 export default Example
@@ -173,6 +173,19 @@ export default Example
   />
 </TypesTable>
 
+### Size small  
+To display a small ErrorPage you can set the size prop to small like so.
+
+```typescript
+import {ForbiddenErrorPage} from '@pluralsight/ps-design-system-errors'
+import React from 'react'
+
+function Example() {
+  return <ForbiddenErrorPage size={ForbiddenErrorPage.sizes.small}/>
+}
+
+export default Example
+```
 ### Custom Error
 
 To display a custom ErrorPage using the ErrorPage component layout and styling see example:
@@ -204,27 +217,32 @@ export default Example
    <TypesProp
     name="illustration"
     type="ErrorPage.Illustration"
+    desc="Icon display on error page"
   />
   <TypesProp
     name="heading"
     type="ErrorPage.Heading"
+    desc="Heading of error page"
   />
    <TypesProp
     name="caption"
     type="ErrorPage.Caption"
+    desc="Caption of error page"
   />
    <TypesProp
     name="errorCode"
     type="ErrorPage.ErrorCode"
+    desc="Error code of error page"
   />
   <TypesProp
     name="actions"
     type="Button | ReactNode"
+    desc="Action of error page"
   />
   <TypesProp
     name="size"
     type={<TypesEnum enum={ErrorPage.sizes} />}
-    desc="Size of error message"
+    desc="Size of error page"
     default="large, unless viewport cannot support size"
   />
 </TypesTable>
@@ -236,7 +254,7 @@ export default Example
    <TypesProp
     name="children"
     type="ReactNode"
-    desc="Custom SvG if default icon is not desired"
+    desc="Custom SVG if default icon is not desired"
   />
 </TypesTable>
 
