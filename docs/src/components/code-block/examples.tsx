@@ -4,7 +4,7 @@ import * as Text from '@pluralsight/ps-design-system-text'
 import frontmatter from '@github-docs/frontmatter'
 import React, { useContext, useState } from 'react'
 
-import { H2 } from '../mdx/headings'
+import { H3 } from '../mdx/headings'
 
 import {
   Actions,
@@ -33,26 +33,30 @@ interface ExamplesSwitcherProps {
 export const ExamplesSwitcher: React.FC<ExamplesSwitcherProps> = props => {
   const [selectedOption, setSelectedOption] = useState(props.examples[0].value)
 
-  function handleDropdownChange(_evt, value: string) {
+  const handleDropdownChange = (_evt: React.FormEvent, value: string) => {
     setSelectedOption(value)
   }
 
   return (
     <div>
       <header className={styles.header}>
-        <H2 className={styles.title}>Examples</H2>
+        <div style={{ flex: 0 }}>
+          <H3 className={styles.title}>Examples:</H3>
+        </div>
 
-        <Dropdown
-          menu={props.examples.map(example => {
-            return (
-              <Dropdown.Item key={example.id} value={example.value}>
-                {example.title}
-              </Dropdown.Item>
-            )
-          })}
-          onChange={handleDropdownChange}
-          value={selectedOption}
-        />
+        <div style={{ flex: 2 }}>
+          <Dropdown
+            menu={props.examples.map(example => {
+              return (
+                <Dropdown.Item key={example.id} value={example.value}>
+                  {example.title}
+                </Dropdown.Item>
+              )
+            })}
+            onChange={handleDropdownChange}
+            value={selectedOption}
+          />
+        </div>
       </header>
 
       <div>

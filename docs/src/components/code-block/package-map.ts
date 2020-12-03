@@ -56,6 +56,7 @@ import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 import * as util from '@pluralsight/ps-design-system-util'
 
 import React from 'react'
+import * as reactTable from 'react-table'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
 import { omit } from '../util'
@@ -138,8 +139,10 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-util': { ...util },
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
+
   react: { React, ...React },
-  'react-router-dom': { Router, withRouter }
+  'react-router-dom': { Router, withRouter },
+  'react-table': { ...reactTable }
 }
 
 export function mapPackageNameToScopes(pkgName: string) {

@@ -138,6 +138,683 @@ export default Example
 
 ### Fixed header
 
+## Usage with react-table
+
+The Design System aims to provide the UI building block necessary for great
+interfaces but does not implement some of the more advanced features you might
+need to build an interactive table. When you need more advanced features we
+suggest you use a library like [react-table](https://github.com/tannerlinsley/react-table)
+to ease implementing your table.
+
+
+```typescript switcher
+---
+title: Basic
+---
+
+import { PageHeadingLayout, PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import Table from '@pluralsight/ps-design-system-table'
+import { Heading } from '@pluralsight/ps-design-system-text'
+
+import React from 'react'
+import { Column, useTable } from 'react-table'
+
+const ReactTableExample: React.FC = () => {
+  const columns = React.useMemo<Column[]>(() => [
+    { Header: 'First name', accessor: user => user.firstName, title: "First name" },
+    { Header: 'Last name', accessor: user => user.lastName, title: 'Last name' }
+  ], [])
+  const data = React.useMemo(() => [
+    { firstName: 'Lucy', lastName: 'Peck' },
+    { firstName: 'Jayden', lastName: 'Morales' },
+    { firstName: 'Milton', lastName: 'Lane' },
+    { firstName: 'Dwayne', lastName: 'Kelly' }
+  ], [])
+
+  const table = useTable({ columns, data })
+
+  return (
+    <Table {...table.getTableProps()}>
+      <Table.Head>
+      {table.headerGroups.map(group => (
+        <Table.Row {...group.getHeaderGroupProps()}>
+        {group.headers.map(column => (
+          <Table.Header {...column.getHeaderProps({ title: column.title })}>
+            {column.render('Header')}
+          </Table.Header>
+        ))}
+        </Table.Row>
+      ))}
+      </Table.Head>
+
+      <Table.Body {...table.getTableBodyProps}>
+      {table.rows
+        .map(row => {
+          table.prepareRow(row)
+          return row
+        })
+        .map(row => (
+          <Table.Row {...row.getRowProps()}>
+            {row.cells.map(cell => (
+              <Table.Cell {...cell.getCellProps()}>
+                {cell.render('Cell')}
+              </Table.Cell>
+            ))}
+          </Table.Row>
+        ))}
+      </Table.Body>
+    </Table>
+  )
+}
+
+const Example: React.FC = () => (
+  <PageHeadingLayout
+    heading={
+      <Heading size="large">
+        <h1>Basic example using react-table</h1>
+      </Heading>
+    }
+  >
+    <ReactTableExample />
+  </PageHeadingLayout>
+)
+
+export default Example
+
+===
+
+---
+title: Sorting
+---
+
+import { PageHeadingLayout, PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import Table from '@pluralsight/ps-design-system-table'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import { useUniqueId } from '@pluralsight/ps-design-system-util'
+
+import React from 'react'
+import { Column, useTable, useSortBy } from 'react-table'
+
+const ReactTableExample: React.FC = () => {
+  const columns = React.useMemo<Column[]>(() => [
+    { Header: 'First name', accessor: user => user.firstName, title: "First name" },
+    { Header: 'Last name', accessor: user => user.lastName, title: 'Last name' }
+  ], [])
+  const data = React.useMemo(() => [
+    { firstName: 'Lucy', lastName: 'Peck' },
+    { firstName: 'Jayden', lastName: 'Morales' },
+    { firstName: 'Milton', lastName: 'Lane' },
+    { firstName: 'Dwayne', lastName: 'Kelly' }
+  ], [])
+
+  const table = useTable({ columns, data }, useSortBy)
+
+  const captionId = useUniqueId()
+  const title = 'Employees'
+  const initialCaption = `${title}: Not sorted`
+  const [caption, setCaption] = React.useState(initialCaption)
+
+  React.useEffect(() => {
+    const [activeSortRule] = table.state.sortBy
+    if (!activeSortRule) {
+      setCaption(initialCaption)
+      return
+    }
+    const { id: ruleId, desc } = activeSortRule
+    const ruleDir = desc ? 'descending' : 'ascending'
+
+    setCaption(`${title} sorted by ${ruleId}: ${ruleDir} order`)
+  }, [table.state.sortBy, initialCaption])
+
+  return (
+    <Table {...table.getTableProps()} aria-labelledby={captionId}>
+      <caption aria-live="polite" id={captionId}>
+        <ScreenReaderOnly>{caption}</ScreenReaderOnly>
+      </caption>
+
+      <Table.Head>
+      {table.headerGroups.map(group => (
+        <Table.Row {...group.getHeaderGroupProps()}>
+        {group.headers.map(column => {
+          const { canSort, isSorted, isSortedDesc } = column
+
+          const sort = isSorted ? (isSortedDesc ? 'desc' : 'asc') : false
+          const title: string = (column as any).title
+
+          const sortByProps = column.getSortByToggleProps()
+          const headerProps = column.getHeaderProps(sortByProps)
+
+          return (
+            <Table.Header
+              {...headerProps}
+              role="columnheader"
+              scope="col"
+              sort={canSort ? sort : undefined}
+              title={title}
+            >
+              {column.render('Header')}
+            </Table.Header>
+          )
+        })}
+        </Table.Row>
+      ))}
+      </Table.Head>
+
+      <Table.Body {...table.getTableBodyProps}>
+      {table.rows
+        .map(row => {
+          table.prepareRow(row)
+          return row
+        })
+        .map(row => (
+          <Table.Row {...row.getRowProps()}>
+            {row.cells.map(cell => (
+              <Table.Cell {...cell.getCellProps()}>
+                {cell.render('Cell')}
+              </Table.Cell>
+            ))}
+          </Table.Row>
+        ))}
+      </Table.Body>
+    </Table>
+  )
+}
+
+const Example: React.FC = () => (
+  <PageHeadingLayout
+    heading={
+      <Heading size="large">
+        <h1>Sorting example using react-table</h1>
+      </Heading>
+    }
+  >
+    <ReactTableExample />
+  </PageHeadingLayout>
+)
+
+export default Example
+
+===
+
+---
+title: Multi Select
+---
+
+import Button from '@pluralsight/ps-design-system-button'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import { layout } from '@pluralsight/ps-design-system-core'
+import { PageHeadingLayout, PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import { ChatIcon, MoveIcon } from '@pluralsight/ps-design-system-icon'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import Table from '@pluralsight/ps-design-system-table'
+import { Heading } from '@pluralsight/ps-design-system-text'
+
+import React from 'react'
+import { Column, useTable, useRowSelect } from 'react-table'
+
+const selectionHook = (hooks: Hooks<any>) => {
+  hooks.visibleColumns.push(columns => [
+    {
+      Cell: SelectionCell,
+      Header: SelectionHeader,
+      disableGroupBy: true,
+      id: '_selection'
+    },
+    ...columns
+  ])
+}
+
+const SelectionCell: React.FC<CellProps<any>> = props => {
+  const { row } = props
+  return <TableCheckbox {...row.getToggleRowSelectedProps()} />
+}
+
+const SelectionHeader: React.FC<HeaderProps<any>> = props => {
+  const { getToggleAllRowsSelectedProps } = props
+  const style = { width: 1 }
+  return <TableCheckbox {...getToggleAllRowsSelectedProps({ style })} />
+}
+
+interface TableCheckboxProps extends Omit<HTMLPropsFor<'input'>, 'ref'> {
+  indeterminate?: boolean
+}
+const TableCheckbox: React.FC<TableCheckboxProps> = props => {
+  const { onChange, ...rest } = props
+  return <Checkbox onCheck={onChange} {...rest} />
+}
+
+const ReactTableExample: React.FC = () => {
+  const columns = React.useMemo<Column[]>(() => [
+    { Header: 'First name', accessor: user => user.firstName, title: "First name" },
+    { Header: 'Last name', accessor: user => user.lastName, title: 'Last name' }
+  ], [])
+  const data = React.useMemo(() => [
+    { firstName: 'Lucy', lastName: 'Peck' },
+    { firstName: 'Jayden', lastName: 'Morales' },
+    { firstName: 'Milton', lastName: 'Lane' },
+    { firstName: 'Dwayne', lastName: 'Kelly' }
+  ], [])
+
+  const table = useTable({ columns, data }, useRowSelect, selectionHook)
+
+  const actionsDisabled = React.useMemo(
+    () => Object.keys(table.state.selectedRowIds).length <= 0,
+    [table.state.selectedRowIds]
+  )
+
+  return (
+    <div>
+      <FlexContainer>
+        <Button
+          appearance="secondary"
+          disabled={actionsDisabled}
+          icon={<MoveIcon />}
+        >
+          Move to team
+        </Button>
+
+        <HorzSpacer />
+
+        <Button
+          appearance="secondary"
+          disabled={actionsDisabled}
+          icon={<ChatIcon />}
+        >
+          Send message
+        </Button>
+      </FlexContainer>
+
+      <br />
+
+      <Table {...table.getTableProps()}>
+        <Table.Head>
+        {table.headerGroups.map(group => (
+          <Table.Row {...group.getHeaderGroupProps()}>
+          {group.headers.map(column => {
+            const title: string = (column as any).title
+            const style = {
+              width: column.id === '_selection' ? 1 : undefined
+            }
+
+            return (
+              <Table.Header
+                {...column.getHeaderProps()}
+                role="columnheader"
+                scope="col"
+                style={style}
+                title={title}
+              >
+                {column.render('Header')}
+              </Table.Header>
+            )
+          })}
+          </Table.Row>
+        ))}
+        </Table.Head>
+
+        <Table.Body {...table.getTableBodyProps}>
+        {table.rows
+          .map(row => {
+            table.prepareRow(row)
+            return row
+          })
+          .map(row => (
+            <Table.Row selected={row.isSelected} {...row.getRowProps()}>
+              {row.cells.map(cell => (
+                <Table.Cell {...cell.getCellProps()}>
+                  {cell.render('Cell')}
+                </Table.Cell>
+              ))}
+            </Table.Row>
+          ))}
+        </Table.Body>
+      </Table>
+    </div>
+  )
+}
+
+
+const FlexContainer: React.FC = props => (
+  <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
+)
+
+const HorzSpacer: React.FC = props => (
+  <div style={{ display: 'inline-block', width: layout.spacingSmall }} {...props} />
+)
+
+const Example: React.FC = () => (
+  <PageHeadingLayout
+    heading={
+      <Heading size="large">
+        <h1>Row selection example using react-table</h1>
+      </Heading>
+    }
+  >
+    <ReactTableExample />
+  </PageHeadingLayout>
+)
+
+export default Example
+
+===
+
+---
+title: Expandable Rows
+---
+
+import Button from '@pluralsight/ps-design-system-button'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import { layout } from '@pluralsight/ps-design-system-core'
+import { PageHeadingLayout, PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import { CaretDownIcon, CaretLeftIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import Table from '@pluralsight/ps-design-system-table'
+import { Heading } from '@pluralsight/ps-design-system-text'
+
+import React from 'react'
+import { Column, useExpanded, useTable } from 'react-table'
+
+const expanderHook = (hooks: Hooks<any>) => {
+  hooks.visibleColumns.push(columns => [
+    {
+      Cell: ExpanderCell,
+      Header: ExpanderHeader,
+      disableGroupBy: true,
+      id: '_expander'
+    },
+    ...columns
+  ])
+}
+
+const ExpanderCell: React.FC<CellProps<any>> = props => {
+  const { row } = props
+  if (!row.canExpand) return null
+
+  const style = {
+    paddingLeft: `calc(${layout.spacingLarge} * ${row.depth})`
+  }
+
+  const icon = row.isExpanded ? <CaretDownIcon /> : <CaretRightIcon />
+
+  return (
+    <span {...row.getToggleRowExpandedProps({ style })}>
+      <Button
+        appearance="flat"
+        icon={icon}
+        size="xSmall"
+        title="Expand/Collapse additional content"
+      />
+    </span>
+  )
+}
+
+const ExpanderHeader: React.FC<HeaderProps<any>> = props => {
+  const { getToggleAllRowsExpandedProps, isAllRowsExpanded } = props
+  const icon = isAllRowsExpanded ? <CaretDownIcon /> : <CaretRightIcon />
+  return (
+    <span {...getToggleAllRowsExpandedProps()}>
+      <Button
+        appearance="flat"
+        icon={icon}
+        size="xSmall"
+        title="Expand/Collapse additional content"
+        {...getToggleAllRowsExpandedProps()}
+      />
+    </span>
+  )
+}
+
+const ReactTableExample: React.FC = () => {
+  const columns = React.useMemo<Column[]>(() => [
+    { Header: 'First name', accessor: user => user.firstName, title: "First name" },
+    { Header: 'Last name', accessor: user => user.lastName, title: 'Last name' }
+  ], [])
+  const data = React.useMemo(() => [
+    {
+      firstName: 'Lucy',
+      lastName: 'Peck',
+      subRows: [
+        { firstName: 'Milton', lastName: 'Lane' },
+        { firstName: 'Dwayne', lastName: 'Kelly' }
+      ]
+    },
+    {
+      firstName: 'Jayden',
+      lastName: 'Morales',
+      subRows: [
+        { firstName: 'Milton', lastName: 'Lane' },
+        { firstName: 'Dwayne', lastName: 'Kelly' }
+      ]
+    },
+  ], [])
+
+  const table = useTable({ columns, data }, useExpanded, expanderHook)
+
+  return (
+    <Table {...table.getTableProps()}>
+      <Table.Head>
+      {table.headerGroups.map(group => (
+        <Table.Row {...group.getHeaderGroupProps()}>
+        {group.headers.map(column => {
+          const title: string = (column as any).title
+          const style = {
+            width: column.id === '_selection' ? 1 : undefined
+          }
+
+          return (
+            <Table.Header
+              {...column.getHeaderProps()}
+              role="columnheader"
+              scope="col"
+              style={style}
+              title={title}
+            >
+              {column.render('Header')}
+            </Table.Header>
+          )
+        })}
+        </Table.Row>
+      ))}
+      </Table.Head>
+
+      <Table.Body {...table.getTableBodyProps}>
+      {table.rows
+        .map(row => {
+          table.prepareRow(row)
+          return row
+        })
+        .map(row => (
+          <Table.Row {...row.getRowProps()}>
+            {row.cells.map(cell => (
+              <Table.Cell {...cell.getCellProps()}>
+                {cell.render('Cell')}
+              </Table.Cell>
+            ))}
+          </Table.Row>
+        ))}
+      </Table.Body>
+    </Table>
+  )
+}
+
+const Example: React.FC = () => (
+  <PageHeadingLayout
+    heading={
+      <Heading size="large">
+        <h1>Exandable row example using react-table</h1>
+      </Heading>
+    }
+  >
+    <ReactTableExample />
+  </PageHeadingLayout>
+)
+
+export default Example
+
+===
+
+---
+title: Pagination
+---
+
+import Button from '@pluralsight/ps-design-system-button'
+import { layout } from '@pluralsight/ps-design-system-core'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import { CaretLeftIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
+import { PageHeadingLayout, PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import Table from '@pluralsight/ps-design-system-table'
+import { Heading, P } from '@pluralsight/ps-design-system-text'
+
+import React from 'react'
+import { TableInstance, Column, useTable, usePagination } from 'react-table'
+
+const ReactTableExample: React.FC = () => {
+  const columns = React.useMemo<Column[]>(() => [
+    { Header: 'First name', accessor: user => user.firstName, title: "First name" },
+    { Header: 'Last name', accessor: user => user.lastName, title: 'Last name' }
+  ], [])
+  const data = React.useMemo(() => [
+    { firstName: 'Lucy', lastName: 'Peck' },
+    { firstName: 'Jayden', lastName: 'Morales' },
+    { firstName: 'Milton', lastName: 'Lane' },
+    { firstName: 'Dwayne', lastName: 'Kelly' },
+    { firstName: 'Don', lastName: 'Morgan' },
+    { firstName: 'Camila', lastName: 'Turner' },
+    { firstName: 'Gabe', lastName: 'Austin' },
+    { firstName: 'Jeanne', lastName: 'Pierce' },
+    { firstName: 'Scarlette', lastName: 'Obrien' },
+    { firstName: 'Jimmie', lastName: 'Carpenter' }
+  ], [])
+
+  const initialState = { pageSize: 2 }
+  const table = useTable({ columns, data, initialState }, usePagination)
+
+  return (
+    <div>
+      <Table {...table.getTableProps()}>
+        <Table.Head>
+        {table.headerGroups.map(group => (
+          <Table.Row {...group.getHeaderGroupProps()}>
+          {group.headers.map(column => (
+            <Table.Header {...column.getHeaderProps({ title: column.title })}>
+              {column.render('Header')}
+            </Table.Header>
+          ))}
+          </Table.Row>
+        ))}
+        </Table.Head>
+
+        <Table.Body {...table.getTableBodyProps}>
+        {table.page
+          .map(row => {
+            table.prepareRow(row)
+            return row
+          })
+          .map(row => (
+            <Table.Row {...row.getRowProps()}>
+              {row.cells.map(cell => (
+                <Table.Cell {...cell.getCellProps()}>
+                  {cell.render('Cell')}
+                </Table.Cell>
+              ))}
+            </Table.Row>
+          ))}
+        </Table.Body>
+      </Table>
+
+      <FlexContainer>
+        <Paginator table={table} />
+      </FlexContainer>
+    </div>
+  )
+}
+
+interface PaginatorProps {
+  perPageOptions?: number[]
+  table: TableInstance
+}
+const Paginator: React.FC<PaginatorProps> = props => {
+  const { perPageOptions = [2, 5, 10], table } = props
+  const { pageIndex, pageSize } = table.state
+
+  const handlePrevPage = () => table.previousPage()
+  const handleNextPage = () => table.nextPage()
+
+  const cursorStart = pageIndex * pageSize + 1
+  const cursorEnd = cursorStart + pageSize - 1
+  const total = table.pageCount * pageSize
+
+  return (
+    <div style={{ display: 'flex', marginBottom: layout.spacingMedium }}>
+      <Button
+        appearance="secondary"
+        disabled={!table.canPreviousPage}
+        icon={<CaretLeftIcon />}
+        onClick={handlePrevPage}
+        title="Previous page"
+      />
+      <HorzSpacer />
+      <Button
+        appearance="secondary"
+        disabled={!table.canNextPage}
+        icon={<CaretRightIcon />}
+        onClick={handleNextPage}
+        title="Next page"
+      />
+
+      <HorzSpacer />
+
+      <P>
+        {cursorStart.toLocaleString()}-{cursorEnd.toLocaleString()} of{' '}
+        {total.toLocaleString()}
+      </P>
+
+      <HorzSpacer />
+
+      <Dropdown
+        appearance="subtle"
+        onChange={(_evt, value) => {
+          table.setPageSize(Number(value))
+        }}
+        menu={
+          <>
+            {perPageOptions.map(option => (
+              <Dropdown.Item key={option} value={option}>
+                {String(option) + ' rows'}
+              </Dropdown.Item>
+            ))}
+          </>
+        }
+        value={pageSize}
+      />
+    </div>
+  )
+}
+
+const FlexContainer: React.FC = props => (
+  <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
+)
+
+const HorzSpacer: React.FC = props => (
+  <div style={{ display: 'inline-block', width: layout.spacingSmall }} {...props} />
+)
+
+const Example: React.FC = () => (
+  <PageHeadingLayout
+    heading={
+      <Heading size="large">
+        <h1>Basic example using react-table</h1>
+      </Heading>
+    }
+  >
+    <ReactTableExample />
+  </PageHeadingLayout>
+)
+
+export default Example
+```
+
 ## Usage & types
 
 <Usage

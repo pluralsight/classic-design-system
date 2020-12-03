@@ -1,12 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/jsx-handler-names */
-
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import EmptyState from '@pluralsight/ps-design-system-emptystate'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import {
   CaretDownIcon,
@@ -19,14 +15,16 @@ import {
   PageHeadingLayout,
   PageWidthLayout
 } from '@pluralsight/ps-design-system-layout'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import * as Text from '@pluralsight/ps-design-system-text'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, useUniqueId } from '@pluralsight/ps-design-system-util'
 
 import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { useMemo } from 'react'
+import React from 'react'
 import {
   CellProps,
+  Column,
   HeaderProps,
   Hooks,
   TableInstance,
@@ -40,7 +38,7 @@ import {
 
 import Table from '..'
 
-import { generateNestedUserRows } from './seed'
+import { generateNestedUserRows, generateUserRows } from './seed'
 import { FlexContainer, HorzSpacer } from './shared'
 
 export default {
@@ -64,98 +62,479 @@ export default {
   parameters: { center: { disabled: true }, storyshots: { disable: true } }
 } as Meta
 
-export const Advanced: Story = () => {
-  const columns = useMemo(
+export const Basic: Story = () => {
+  const columns = React.useMemo<Column[]>(
     () => [
       {
         Cell: UserDataCell,
         Header: 'User',
-        accessor: ({ user }: any) => `${user.firstName} ${user.lastName}`
-      },
-      {
-        Header: 'Company',
-        accessor: 'user.company.name'
+        accessor: ({ user }: any) => `${user.firstName} ${user.lastName}`,
+        title: 'User'
       },
       {
         Header: 'Job',
-        accessor: 'user.job.title'
-      },
-      {
-        Header: 'Handle',
-        accessor: 'user.handle'
+        accessor: ({ user }: any) => user.job.title,
+        title: 'Job title'
       }
     ],
     []
   )
-
-  const data = useMemo(() => generateNestedUserRows(50, 2), [])
-
-  const plugins = [
-    useGlobalFilter,
-    useSortBy,
-    useExpanded,
-    usePagination,
-    useRowSelect
-  ]
-  const hooks = [expanderHook, selectionHook]
-  const initialState = { pageSize: 2 }
-  const table = useTable({ columns, data, initialState }, ...plugins, ...hooks)
-
-  const showBulkActions = useMemo(
-    () => Object.keys(table.state.selectedRowIds).length > 0,
-    [table.state.selectedRowIds]
-  )
+  const data = React.useMemo(() => generateUserRows(5), [])
+  const table = useTable({ columns, data })
 
   return (
-    <TableLayout
-      actions={showBulkActions && <BulkActions />}
-      filters={
-        <SearchFilter
-          onChange={(_e, next) => table.setGlobalFilter(next)}
-          value={table.state.globalFilter}
-        />
-      }
-      pager={<TablePager table={table} />}
-    >
+    <TableLayout>
       <Table {...table.getTableProps()}>
         <Table.Head>
           {table.headerGroups.map(group => (
             <Table.Row {...group.getHeaderGroupProps()}>
               {group.headers.map(column => {
-                const sortable = column.canSort
-                const sort = column.isSorted
-                  ? column.isSortedDesc
-                    ? 'desc'
-                    : 'asc'
-                  : column.canSort
-                const style = ['_expander', '_selection'].includes(column.id)
-                  ? { width: 1 }
-                  : {}
-
-                const textContent = column.render('Header') as string
+                const title: string = (column as any).title
 
                 return (
                   <Table.Header
-                    {...column.getHeaderProps(column.getSortByToggleProps())}
+                    {...column.getHeaderProps()}
                     role="columnheader"
                     scope="col"
-                    sort={sortable ? sort : undefined}
-                    style={style}
-                    title={sortable ? textContent : ''}
+                    title={title}
                   >
-                    {textContent}
+                    {column.render('Header')}
                   </Table.Header>
                 )
               })}
             </Table.Row>
           ))}
         </Table.Head>
-
         <Table.Body {...table.getTableBodyProps()}>
-          {table.page.map(row => {
-            table.prepareRow(row)
+          {table.rows
+            .map(row => {
+              table.prepareRow(row)
+              return row
+            })
+            .map(row => (
+              <Table.Row {...row.getRowProps()}>
+                {row.cells.map(cell => (
+                  <Table.Cell {...cell.getCellProps()}>
+                    {cell.render('Cell')}
+                  </Table.Cell>
+                ))}
+              </Table.Row>
+            ))}
+        </Table.Body>
+      </Table>
+    </TableLayout>
+  )
+}
 
-            return (
+export const Sorting: Story = () => {
+  const columns = React.useMemo<Column[]>(
+    () => [
+      {
+        Cell: UserDataCell,
+        Header: 'User',
+        accessor: ({ user }: any) => `${user.firstName} ${user.lastName}`,
+        title: 'User'
+      },
+      {
+        Header: 'Job',
+        accessor: ({ user }: any) => user.job.title,
+        title: 'Job title'
+      }
+    ],
+    []
+  )
+  const data = React.useMemo(() => generateUserRows(5), [])
+  const table = useTable({ columns, data }, useSortBy)
+
+  const captionId = useUniqueId()
+  const title = 'Employees'
+  const initialCaption = `${title}: Not sorted`
+  const [caption, setCaption] = React.useState(initialCaption)
+
+  React.useEffect(() => {
+    const [activeSortRule] = table.state.sortBy
+    if (!activeSortRule) {
+      setCaption(initialCaption)
+      return
+    }
+    const { id: ruleId, desc } = activeSortRule
+    const ruleDir = desc ? 'descending' : 'ascending'
+
+    setCaption(`${title} sorted by ${ruleId}: ${ruleDir} order`)
+  }, [table.state.sortBy, initialCaption])
+
+  return (
+    <Table {...table.getTableProps()} aria-labelledby={captionId}>
+      <caption aria-live="polite" id={captionId}>
+        <ScreenReaderOnly>{caption}</ScreenReaderOnly>
+      </caption>
+
+      <Table.Head>
+        {table.headerGroups.map(group => (
+          <Table.Row {...group.getHeaderGroupProps()}>
+            {group.headers.map(column => {
+              const { canSort, isSorted, isSortedDesc } = column
+
+              const sort = isSorted ? (isSortedDesc ? 'desc' : 'asc') : false
+              const title: string = (column as any).title
+
+              const sortByProps = column.getSortByToggleProps()
+              const headerProps = column.getHeaderProps(sortByProps)
+
+              return (
+                <Table.Header
+                  {...headerProps}
+                  role="columnheader"
+                  scope="col"
+                  sort={canSort ? sort : undefined}
+                  title={title}
+                >
+                  {column.render('Header')}
+                </Table.Header>
+              )
+            })}
+          </Table.Row>
+        ))}
+      </Table.Head>
+      <Table.Body {...table.getTableBodyProps()}>
+        {table.rows
+          .map(row => {
+            table.prepareRow(row)
+            return row
+          })
+          .map(row => (
+            <Table.Row {...row.getRowProps()}>
+              {row.cells.map(cell => (
+                <Table.Cell {...cell.getCellProps()}>
+                  {cell.render('Cell')}
+                </Table.Cell>
+              ))}
+            </Table.Row>
+          ))}
+      </Table.Body>
+    </Table>
+  )
+}
+
+export const Filtering: Story = () => {
+  const columns = React.useMemo<Column[]>(
+    () => [
+      {
+        Cell: UserDataCell,
+        Header: 'User',
+        accessor: ({ user }: any) => `${user.firstName} ${user.lastName}`,
+        title: 'User'
+      },
+      {
+        Header: 'Job',
+        accessor: ({ user }: any) => user.job.title,
+        title: 'Job title'
+      }
+    ],
+    []
+  )
+  const data = React.useMemo(() => generateUserRows(5), [])
+  const table = useTable({ columns, data }, useGlobalFilter)
+
+  return (
+    <TableLayout
+      filters={
+        <SearchFilter
+          onChange={(_e, next) => table.setGlobalFilter(next)}
+          value={table.state.globalFilter}
+        />
+      }
+    >
+      <Table {...table.getTableProps()}>
+        <Table.Head>
+          {table.headerGroups.map(group => (
+            <Table.Row {...group.getHeaderGroupProps()}>
+              {group.headers.map(column => {
+                const title: string = (column as any).title
+
+                return (
+                  <Table.Header
+                    {...column.getHeaderProps()}
+                    role="columnheader"
+                    scope="col"
+                    title={title}
+                  >
+                    {column.render('Header')}
+                  </Table.Header>
+                )
+              })}
+            </Table.Row>
+          ))}
+        </Table.Head>
+        <Table.Body {...table.getTableBodyProps()}>
+          {table.rows.length <= 0 && (
+            <Table.Row>
+              <Table.Cell colSpan={columns.length}>
+                <EmptyState
+                  heading={
+                    <EmptyState.Heading>
+                      No results match term: {table.state.globalFilter}
+                    </EmptyState.Heading>
+                  }
+                  caption={
+                    <EmptyState.Caption>
+                      Hedwig Daily Prophet treacle tart full-moon Ollivanders
+                      You-Know-Who cursed. Fawkes maze raw-steak Voldemort
+                      Goblin Wars snitch Forbidden forest grindylows wool socks.
+                    </EmptyState.Caption>
+                  }
+                  illustration={
+                    <EmptyState.Illustration
+                      name={EmptyState.Illustration.names.magnify}
+                    />
+                  }
+                  actions={
+                    <EmptyState.Actions
+                      onClick={() => table.setGlobalFilter('')}
+                    >
+                      <Button appearance={Button.appearances.stroke}>
+                        Reset search filter
+                      </Button>
+                    </EmptyState.Actions>
+                  }
+                />
+              </Table.Cell>
+            </Table.Row>
+          )}
+
+          {table.rows
+            .map(row => {
+              table.prepareRow(row)
+              return row
+            })
+            .map(row => (
+              <Table.Row {...row.getRowProps()}>
+                {row.cells.map(cell => (
+                  <Table.Cell {...cell.getCellProps()}>
+                    {cell.render('Cell')}
+                  </Table.Cell>
+                ))}
+              </Table.Row>
+            ))}
+        </Table.Body>
+      </Table>
+    </TableLayout>
+  )
+}
+
+export const Pagination: Story = () => {
+  const initialState = { pageSize: 2 }
+  const columns = React.useMemo<Column[]>(
+    () => [
+      {
+        Cell: UserDataCell,
+        Header: 'User',
+        accessor: ({ user }: any) => `${user.firstName} ${user.lastName}`,
+        title: 'User'
+      },
+      {
+        Header: 'Job',
+        accessor: ({ user }: any) => user.job.title,
+        title: 'Job title'
+      }
+    ],
+    []
+  )
+  const data = React.useMemo(() => generateUserRows(25), [])
+  const table = useTable({ columns, data, initialState }, usePagination)
+
+  return (
+    <TableLayout pager={<Paginator table={table} />}>
+      <Table {...table.getTableProps()}>
+        <Table.Head>
+          {table.headerGroups.map(group => (
+            <Table.Row {...group.getHeaderGroupProps()}>
+              {group.headers.map(column => {
+                const title: string = (column as any).title
+
+                return (
+                  <Table.Header
+                    {...column.getHeaderProps()}
+                    role="columnheader"
+                    scope="col"
+                    title={title}
+                  >
+                    {column.render('Header')}
+                  </Table.Header>
+                )
+              })}
+            </Table.Row>
+          ))}
+        </Table.Head>
+        <Table.Body {...table.getTableBodyProps()}>
+          {table.page
+            .map(row => {
+              table.prepareRow(row)
+              return row
+            })
+            .map(row => (
+              <Table.Row {...row.getRowProps()}>
+                {row.cells.map(cell => (
+                  <Table.Cell {...cell.getCellProps()}>
+                    {cell.render('Cell')}
+                  </Table.Cell>
+                ))}
+              </Table.Row>
+            ))}
+        </Table.Body>
+      </Table>
+    </TableLayout>
+  )
+}
+
+export const RowExpansion: Story = () => {
+  const columns = React.useMemo<Column[]>(
+    () => [
+      {
+        Cell: UserDataCell,
+        Header: 'User',
+        accessor: ({ user }: any) => `${user.firstName} ${user.lastName}`,
+        title: 'User'
+      },
+      {
+        Header: 'Job',
+        accessor: ({ user }: any) => user.job.title,
+        title: 'Job title'
+      }
+    ],
+    []
+  )
+  const data = React.useMemo(() => generateNestedUserRows(5, 3), [])
+  const table = useTable({ columns, data }, useExpanded, expanderHook)
+
+  return (
+    <TableLayout>
+      <Table {...table.getTableProps()}>
+        <Table.Head>
+          {table.headerGroups.map(group => (
+            <Table.Row {...group.getHeaderGroupProps()}>
+              {group.headers.map(column => {
+                const title: string = (column as any).title
+                const style = {
+                  width: column.id === '_expander' ? 1 : undefined
+                }
+
+                return (
+                  <Table.Header
+                    {...column.getHeaderProps()}
+                    role="columnheader"
+                    style={style}
+                    scope="col"
+                    title={title}
+                  >
+                    {column.render('Header')}
+                  </Table.Header>
+                )
+              })}
+            </Table.Row>
+          ))}
+        </Table.Head>
+        <Table.Body {...table.getTableBodyProps()}>
+          {table.rows
+            .map(row => {
+              table.prepareRow(row)
+              return row
+            })
+            .map(row => (
+              <Table.Row {...row.getRowProps()}>
+                {row.cells.map(cell => (
+                  <Table.Cell {...cell.getCellProps()}>
+                    {cell.render('Cell')}
+                  </Table.Cell>
+                ))}
+              </Table.Row>
+            ))}
+        </Table.Body>
+      </Table>
+    </TableLayout>
+  )
+}
+export const RowSelection: Story = () => {
+  const columns = React.useMemo<Column[]>(
+    () => [
+      {
+        Cell: UserDataCell,
+        Header: 'User',
+        accessor: ({ user }: any) => `${user.firstName} ${user.lastName}`,
+        title: 'User'
+      },
+      {
+        Header: 'Job',
+        accessor: ({ user }: any) => user.job.title,
+        title: 'Job title'
+      }
+    ],
+    []
+  )
+  const data = React.useMemo(() => generateUserRows(5), [])
+  const table = useTable({ columns, data }, useRowSelect, selectionHook)
+
+  const actionsDisabled = React.useMemo(
+    () => Object.keys(table.state.selectedRowIds).length <= 0,
+    [table.state.selectedRowIds]
+  )
+
+  return (
+    <TableLayout
+      actions={
+        <>
+          <Button
+            appearance="secondary"
+            disabled={actionsDisabled}
+            icon={<MoveIcon />}
+          >
+            Move to team
+          </Button>
+
+          <HorzSpacer />
+
+          <Button
+            appearance="secondary"
+            disabled={actionsDisabled}
+            icon={<ChatIcon />}
+          >
+            Send message
+          </Button>
+        </>
+      }
+    >
+      <Table {...table.getTableProps()}>
+        <Table.Head>
+          {table.headerGroups.map(group => (
+            <Table.Row {...group.getHeaderGroupProps()}>
+              {group.headers.map(column => {
+                const title: string = (column as any).title
+                const style = {
+                  width: column.id === '_selection' ? 1 : undefined
+                }
+
+                return (
+                  <Table.Header
+                    {...column.getHeaderProps()}
+                    role="columnheader"
+                    scope="col"
+                    style={style}
+                    title={title}
+                  >
+                    {column.render('Header')}
+                  </Table.Header>
+                )
+              })}
+            </Table.Row>
+          ))}
+        </Table.Head>
+        <Table.Body {...table.getTableBodyProps()}>
+          {table.rows
+            .map(row => {
+              table.prepareRow(row)
+              return row
+            })
+            .map(row => (
               <Table.Row selected={row.isSelected} {...row.getRowProps()}>
                 {row.cells.map(cell => (
                   <Table.Cell {...cell.getCellProps()}>
@@ -163,8 +542,7 @@ export const Advanced: Story = () => {
                   </Table.Cell>
                 ))}
               </Table.Row>
-            )
-          })}
+            ))}
         </Table.Body>
       </Table>
     </TableLayout>
@@ -195,21 +573,6 @@ const TableLayout: React.FC<TableLayoutProps> = props => {
     </div>
   )
 }
-const BulkActions: React.FC = () => {
-  return (
-    <>
-      <Button appearance="secondary" icon={<MoveIcon />}>
-        Move to team
-      </Button>
-
-      <HorzSpacer />
-
-      <Button appearance="secondary" icon={<ChatIcon />}>
-        Send message
-      </Button>
-    </>
-  )
-}
 
 interface SearchFilterProps {
   value: any
@@ -236,11 +599,11 @@ const SearchFilter: React.FC<SearchFilterProps> = props => {
   )
 }
 
-interface TablePagerProps {
+interface PaginatorProps {
   perPageOptions?: number[]
   table: TableInstance
 }
-const TablePager: React.FC<TablePagerProps> = props => {
+const Paginator: React.FC<PaginatorProps> = props => {
   const { perPageOptions = [2, 5, 10], table } = props
   const { pageIndex, pageSize } = table.state
 
