@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-text",
-  "version": "16.1.14",
+  "version": "17.0.0",
   "description": "Design system component for text-related ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

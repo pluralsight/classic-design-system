@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.12.2...@pluralsight/ps-design-system-docs@0.13.0) (2020-12-03)
+
+
+### Features
+
+* **docs:** give default fg color for example theme overrides ([4227d33](https://github.com/pluralsight/design-system/commit/4227d33fd1cecbda21209786dbb1d79c7fbb9572))
+* **docs:** give default fg color for theming ([045a845](https://github.com/pluralsight/design-system/commit/045a8455a6c052131f311e8692493a3672f7bdca))
+
+
+
+
+
 ## [0.12.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.12.1...@pluralsight/ps-design-system-docs@0.12.2) (2020-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
