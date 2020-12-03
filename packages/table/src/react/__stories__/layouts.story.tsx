@@ -17,7 +17,7 @@ export const HorizontalScroll: Story = () => {
 
   return (
     <OutlineBox style={{ width: 500 }}>
-      <Table>
+      <Table scrollable>
         <Table.Head>
           <Table.Row>
             <Table.Cell>
@@ -64,7 +64,7 @@ export const StickyColumnHeader: Story = () => {
 
   return (
     <OutlineBox style={{ height: 500 }}>
-      <Table>
+      <Table scrollable>
         <Table.Head>
           <Table.Row>
             <Table.Header role="columnheader" scope="col" sticky>
@@ -104,7 +104,7 @@ export const StickyRowHeader: Story = () => {
 
   return (
     <OutlineBox style={{ width: 500 }}>
-      <Table>
+      <Table scrollable>
         <Table.Head>
           <Table.Row>
             <Table.Header
@@ -156,7 +156,7 @@ export const StickyColumnAndRowHeaders: Story = () => {
 
   return (
     <OutlineBox style={{ height: 500, width: 500 }}>
-      <Table>
+      <Table scrollable>
         <Table.Head>
           <Table.Row>
             <Table.Header

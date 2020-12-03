@@ -99,7 +99,7 @@ type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   const {
     renderContainer: Container = defaultRenderContainer,
-    scrollable = true,
+    scrollable = false,
     ...rest
   } = props
   const themeName = useTheme()

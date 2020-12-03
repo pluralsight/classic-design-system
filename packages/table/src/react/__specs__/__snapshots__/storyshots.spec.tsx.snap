@@ -2,9 +2,7 @@
 
 exports[`Storyshots Components/Table Alignment 1`] = `
 <div
-  data-css-f9xxs9=""
-  role="region"
-  tabIndex={0}
+  data-css-f3t1g9=""
 >
   <table
     data-css-9fiqqd=""
@@ -14,7 +12,7 @@ exports[`Storyshots Components/Table Alignment 1`] = `
       data-css-1ts1rl3=""
     >
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -42,7 +40,7 @@ exports[`Storyshots Components/Table Alignment 1`] = `
     </thead>
     <tbody>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -66,7 +64,7 @@ exports[`Storyshots Components/Table Alignment 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -90,7 +88,7 @@ exports[`Storyshots Components/Table Alignment 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -114,7 +112,7 @@ exports[`Storyshots Components/Table Alignment 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -138,7 +136,7 @@ exports[`Storyshots Components/Table Alignment 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -168,9 +166,7 @@ exports[`Storyshots Components/Table Alignment 1`] = `
 
 exports[`Storyshots Components/Table Basic 1`] = `
 <div
-  data-css-f9xxs9=""
-  role="region"
-  tabIndex={0}
+  data-css-f3t1g9=""
 >
   <table
     data-css-9fiqqd=""
@@ -180,7 +176,7 @@ exports[`Storyshots Components/Table Basic 1`] = `
       data-css-1ts1rl3=""
     >
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -208,7 +204,7 @@ exports[`Storyshots Components/Table Basic 1`] = `
     </thead>
     <tbody>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -232,7 +228,7 @@ exports[`Storyshots Components/Table Basic 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -256,7 +252,7 @@ exports[`Storyshots Components/Table Basic 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -280,7 +276,7 @@ exports[`Storyshots Components/Table Basic 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -304,7 +300,7 @@ exports[`Storyshots Components/Table Basic 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -334,9 +330,7 @@ exports[`Storyshots Components/Table Basic 1`] = `
 
 exports[`Storyshots Components/Table Mixed Content 1`] = `
 <div
-  data-css-f9xxs9=""
-  role="region"
-  tabIndex={0}
+  data-css-f3t1g9=""
 >
   <table
     data-css-9fiqqd=""
@@ -346,7 +340,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
       data-css-1ts1rl3=""
     >
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -374,7 +368,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
     </thead>
     <tbody>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -432,7 +426,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -490,7 +484,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -548,7 +542,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -606,7 +600,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -670,9 +664,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
 
 exports[`Storyshots Components/Table Row Selection 1`] = `
 <div
-  data-css-f9xxs9=""
-  role="region"
-  tabIndex={0}
+  data-css-f3t1g9=""
 >
   <table
     data-css-9fiqqd=""
@@ -682,7 +674,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
       data-css-1ts1rl3=""
     >
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -753,7 +745,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
     </thead>
     <tbody>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <td
@@ -803,7 +795,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-10jq9h3=""
+        data-css-1ywjru9=""
         role="row"
       >
         <td
@@ -866,7 +858,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <td
@@ -916,7 +908,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <td
@@ -966,7 +958,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-10jq9h3=""
+        data-css-1ywjru9=""
         role="row"
       >
         <td
@@ -1029,7 +1021,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <td
@@ -1079,7 +1071,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <td
@@ -1129,7 +1121,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-10jq9h3=""
+        data-css-1ywjru9=""
         role="row"
       >
         <td
@@ -1192,7 +1184,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <td
@@ -1242,7 +1234,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         </td>
       </tr>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <td
@@ -1298,9 +1290,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
 
 exports[`Storyshots Components/Table Sorting 1`] = `
 <div
-  data-css-f9xxs9=""
-  role="region"
-  tabIndex={0}
+  data-css-f3t1g9=""
 >
   <table
     aria-labelledby="test-caption-id"
@@ -1321,7 +1311,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
       data-css-1ts1rl3=""
     >
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -1415,7 +1405,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
     </thead>
     <tbody>
       <tr
-        data-css-1195cc4=""
+        data-css-v3use0=""
         role="row"
       >
         <th
@@ -1458,7 +1448,7 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
   }
 >
   <div
-    data-css-f9xxs9=""
+    data-css-1f123cr=""
     role="region"
     tabIndex={0}
   >
@@ -1470,7 +1460,7 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
         data-css-1ts1rl3=""
       >
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <td
@@ -1535,7 +1525,7 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
       </thead>
       <tbody>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -1595,7 +1585,7 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -1655,7 +1645,7 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -1715,7 +1705,7 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -1775,7 +1765,7 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -1855,7 +1845,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
   }
 >
   <div
-    data-css-f9xxs9=""
+    data-css-1f123cr=""
     role="region"
     tabIndex={0}
   >
@@ -1867,11 +1857,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
         data-css-1ts1rl3=""
       >
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
             style={
@@ -1904,28 +1894,28 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
             </label>
           </th>
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
             Full name
           </th>
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
             First name
           </th>
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
             Last name
           </th>
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
@@ -1935,11 +1925,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
       </thead>
       <tbody>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -1995,11 +1985,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2055,11 +2045,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2115,11 +2105,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2175,11 +2165,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2235,11 +2225,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2295,11 +2285,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2355,11 +2345,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2415,11 +2405,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2475,11 +2465,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2535,11 +2525,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2595,11 +2585,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2655,11 +2645,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2715,11 +2705,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2775,11 +2765,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2835,11 +2825,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2895,11 +2885,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -2955,11 +2945,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -3015,11 +3005,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -3075,11 +3065,11 @@ exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] =
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -3154,7 +3144,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
   }
 >
   <div
-    data-css-f9xxs9=""
+    data-css-1f123cr=""
     role="region"
     tabIndex={0}
   >
@@ -3166,32 +3156,32 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
         data-css-1ts1rl3=""
       >
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
             Full name
           </th>
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
             First name
           </th>
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
             Last name
           </th>
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="col"
           >
@@ -3201,7 +3191,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
       </thead>
       <tbody>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3233,7 +3223,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3265,7 +3255,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3297,7 +3287,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3329,7 +3319,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3361,7 +3351,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3393,7 +3383,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3425,7 +3415,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3457,7 +3447,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3489,7 +3479,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3521,7 +3511,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3553,7 +3543,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3585,7 +3575,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3617,7 +3607,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3649,7 +3639,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3681,7 +3671,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3713,7 +3703,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3745,7 +3735,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3777,7 +3767,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3809,7 +3799,7 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
@@ -3860,7 +3850,7 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
   }
 >
   <div
-    data-css-f9xxs9=""
+    data-css-1f123cr=""
     role="region"
     tabIndex={0}
   >
@@ -3872,11 +3862,11 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
         data-css-1ts1rl3=""
       >
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="columnheader"
             scope="row"
             style={
@@ -3940,11 +3930,11 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
       </thead>
       <tbody>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -3999,11 +3989,11 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -4058,11 +4048,11 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -4117,11 +4107,11 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >
@@ -4176,11 +4166,11 @@ exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1195cc4=""
+          data-css-v3use0=""
           role="row"
         >
           <th
-            data-css-c4j9jh=""
+            data-css-1ozkkps=""
             role="rowheader"
             scope="row"
           >

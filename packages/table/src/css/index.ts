@@ -16,9 +16,9 @@ const dark = {
   className: `.psds-theme--${themeNames.dark}`,
 
   borderColor: colorsBorder.lowOnDark,
-  rowHoverColor: colorsBackgroundDark[1],
+  rowHoverColor: colorsBackgroundDark[2],
   rowSelectedColor: colorsBackgroundDark[3],
-  stickyBgColor: colorsBackgroundDark[1],
+  stickyBgColor: colorsBackgroundDark[2],
   textColor: colorsTextIcon.highOnDark,
   textHeadingColor: colorsTextIcon.lowOnDark,
   textHeadingColorHover: colorsTextIcon.highOnDark
@@ -28,9 +28,9 @@ const light = {
   className: `.psds-theme--${themeNames.light}`,
 
   borderColor: colorsBorder.lowOnLight,
-  rowHoverColor: colorsBackgroundLight[3],
+  rowHoverColor: colorsBackgroundLight[2],
   rowSelectedColor: colorsBackgroundLight[1],
-  stickyBgColor: colorsBackgroundLight[3],
+  stickyBgColor: colorsBackgroundLight[2],
   textColor: colorsTextIcon.highOnLight,
   textHeadingColor: colorsTextIcon.lowOnLight,
   textHeadingColorHover: colorsTextIcon.highOnLight
@@ -52,27 +52,29 @@ export default {
 
   [`.psds-table__container--scrollable${dark.className}`]: {
     background: `
-      linear-gradient(to right, ${colorsBackgroundDark[2]} 30%, transparent),
-      linear-gradient(to right, transparent, ${colorsBackgroundDark[2]} 70%) 0 100%,
-      radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.8), transparent),
-      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.8), transparent) 0 100%
+      linear-gradient(to right, ${colorsBackgroundDark[1]} 30%, ${colorsBackgroundDark[1]}),
+      linear-gradient(to right, ${colorsBackgroundDark[1]}, ${colorsBackgroundDark[1]} 70%) 0 100%,
+      radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,1), ${colorsBackgroundDark[1]}),
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,1), ${colorsBackgroundDark[1]}) 0 100%
     `,
     backgroundAttachment: 'local, local, scroll, scroll',
+    backgroundColor: colorsBackgroundDark[1],
     backgroundPosition: '0 0, 100%, 0 0, 100%',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '4em 100%, 4em 100%, 1.4em 100%, 1.4em 100%'
+    backgroundSize: '40px 100%, 40px 100%, 10px 100%, 10px 100%'
   },
   [`.psds-table__container--scrollable${light.className}`]: {
     background: `
-      linear-gradient(to right, ${colorsBackgroundLight[2]} 30%, transparent),
-      linear-gradient(to right, transparent, ${colorsBackgroundLight[2]} 70%) 0 100%,
-      radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), transparent),
-      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), transparent) 0 100%
+      linear-gradient(to right, ${colorsBackgroundLight[3]} 30%, ${colorsBackgroundLight[3]}),
+      linear-gradient(to right, ${colorsBackgroundLight[3]}, ${colorsBackgroundLight[3]} 70%) 0 100%,
+      radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,0.2), ${colorsBackgroundLight[3]}),
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.2), ${colorsBackgroundLight[3]}) 0 100%
     `,
     backgroundAttachment: 'local, local, scroll, scroll',
+    backgroundColor: colorsBackgroundLight[3],
     backgroundPosition: '0 0, 100%, 0 0, 100%',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '4em 100%, 4em 100%, 1.4em 100%, 1.4em 100%'
+    backgroundSize: '40px 100%, 40px 100%, 10px 100%, 10px 100%'
   },
 
   '.psds-table': {
