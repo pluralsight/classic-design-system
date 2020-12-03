@@ -50,9 +50,9 @@ Object.values(Typeahead.appearances).forEach(appearance => {
   appearances.add(appearance, () => <ControlledStory appearance={appearance} />)
 })
 
-const ControlledStory: React.FC<React.ComponentProps<
-  typeof Typeahead
->> = props => {
+const ControlledStory: React.FC<
+  React.ComponentProps<typeof Typeahead>
+> = props => {
   const [value, setValue] = React.useState('')
 
   const handleChange = (_evt: unknown, nextValue: string) => {

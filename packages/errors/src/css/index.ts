@@ -1,96 +1,111 @@
 import {
-  colorsBorder,
   colorsTextIcon,
-  colorsWhite,
   layout,
+  motion,
   type
 } from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
-import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
+
+import {
+  defaultName as themeDefaultName,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
+
+import * as vars from '../vars'
+
+export const sizeClasses: { [key: string]: string } = {
+  [vars.sizes.small]: '.psds-error-page--size-small',
+  [vars.sizes.large]: '.psds-error-page--size-large'
+}
+
+export const themeClasses: { [key: string]: string } = {
+  [themeDefaultName]: `.psds-theme--dark`,
+  [themeNames.light]: `.psds-theme--light`
+}
 
 export default {
   '.psds-error-page': {
-    maxWidth: '500px',
     margin: '0 auto',
     padding: `${layout.spacingXLarge} ${layout.spacingLarge}`,
     textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: `opacity ${motion.speedXFast} ${motion.speedNormal}`
+  },
+  '.psds-error-page--hidden': {
+    opacity: 0
+  },
+  ['.psds-error-page' + themeClasses[themeDefaultName]]: {
     color: colorsTextIcon.highOnDark
   },
-  [`.psds-error-page.psds-theme--${themeNames.light}`]: {
+  ['.psds-error-page' + themeClasses[themeNames.light]]: {
     color: colorsTextIcon.highOnLight
   },
 
-  // __icon
-  '.psds-error-page__icon': {
-    margin: '0 auto',
-    fill: 'currentColor',
-    height: '128px',
-    width: '128px'
-  },
-  [`.psds-error-page__icon.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
+  // __actions
+  '.psds-error-page__actions': {
+    maxWidth: 500
   },
 
-  // __code
-  '.psds-error-page__code': {
-    padding: `4px 0 ${layout.spacingSmall} 0`,
-    '& > h2': {
-      color: colorsTextIcon.lowOnDark
-    }
-  },
-  [`.psds-error-page__code.psds-theme--${themeNames.light}`]: {
-    '& > h2': {
-      color: colorsTextIcon.lowOnLight
-    }
-  },
-
-  // __search
-  '.psds-error-page__search': {
-    position: 'relative',
-    display: 'inline-flex',
-    alignItems: 'center'
-  },
-  [`.psds-error-page__search.psds-theme--${themeNames.light}`]: {
-    background: colorsWhite,
-    color: colorsTextIcon.lowOnLight
-  },
-  '.psds-error-page__search__icon': {
-    position: 'absolute',
-    left: layout.spacingXSmall,
-    width: iconWidths.medium,
-    height: iconWidths.medium,
-    fill: colorsTextIcon.lowOnDark
-  },
-  [`.psds-error-page__search__icon.psds-theme--${themeNames.light}`]: {
-    fill: colorsTextIcon.lowOnLight
-  },
-  '.psds-error-page__search__input': {
-    position: 'relative',
-    height: '40px',
-    padding: `0 ${layout.spacingXSmall} 0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall})`,
-    color: colorsTextIcon.lowOnDark,
+  // __caption
+  '.psds-error-page__caption': {
+    marginBottom: layout.spacingLarge,
     fontSize: type.fontSizeSmall,
+    letterSpacing: type.letterSpacingSmall,
     lineHeight: type.lineHeightStandard,
-    background: 'none',
-    border: `1px solid ${colorsBorder.highOnDark}`,
-    borderRadius: '2px'
+    maxWidth: 500
   },
-  [`.psds-error-page__search__input.psds-theme--${themeNames.light}`]: {
-    border: `1px solid ${colorsBorder.highOnLight}`,
+  ['.psds-error-page__caption' + themeClasses[themeDefaultName]]: {
+    color: colorsTextIcon.highOnDark
+  },
+  ['.psds-error-page__caption' + themeClasses[themeNames.light]]: {
+    color: colorsTextIcon.highOnLight
+  },
+
+  // __error-code
+  '.psds-error-page__error-code': {
+    textTransform: 'uppercase',
+    marginBottom: layout.spacingLarge,
+    fontSize: type.fontSizeXSmall,
+    letterSpacing: type.letterSpacingSmall,
+    lineHeight: '16px',
+    maxWidth: 500
+  },
+  ['.psds-error-page__error-code' + themeClasses[themeDefaultName]]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  ['.psds-error-page__error-code' + themeClasses[themeNames.light]]: {
     color: colorsTextIcon.lowOnLight
   },
 
-  '@media (min-width: 769px)': {
-    '.psds-error-page': {
-      paddingTop: '92px'
-    },
+  // __heading,
+  '.psds-error-page__heading': {
+    marginBottom: layout.spacingLarge,
+    letterSpacing: type.letterSpacingLarge,
+    fontWeight: type.fontWeightBook,
+    maxWidth: 500
+  },
+  ['.psds-error-page__heading' + sizeClasses.small]: {
+    fontSize: type.fontSizeMedium
+  },
+  ['.psds-error-page__heading' + sizeClasses.large]: {
+    fontSize: type.fontSizeLarge,
+    lineHeight: type.lineHeightExtra
+  },
 
-    '.psds-error-page__text': {
-      '& > h1': {
-        fontSize: type.fontSizeLarge,
-        fontWeight: type.fontWeightBook,
-        lineHeight: type.lineHeightExtra
-      }
-    }
+  // __illustration
+  '.psds-error-page__illustration': {
+    display: 'inline-block',
+    marginBottom: layout.spacingLarge,
+    transition: `all ${motion.speedXFast}`
+  },
+  ['.psds-error-page__illustration' + sizeClasses.small]: {
+    width: 64,
+    height: 64
+  },
+  ['.psds-error-page__illustration' + sizeClasses.large]: {
+    width: 128,
+    height: 128
   }
 }

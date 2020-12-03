@@ -72,7 +72,7 @@ app.view('view_1', viewSubmissionEvent)
 app.view('checkSimilarity', checkSimilaritySubmissionEvent)
 
 // HEALTH-CHECK
-
+// eslint-disable-next-line  @typescript-eslint/no-misused-promises
 receiver.router.get('/health-check', async (request, res) => {
   res.sendStatus(200)
 })
@@ -80,7 +80,7 @@ receiver.router.get('/health-check', async (request, res) => {
 //
 // OAUTH
 //
-
+// eslint-disable-next-line  @typescript-eslint/no-misused-promises
 receiver.router.get('/oauth-callback', async (request, res) => {
   const data = JSON.stringify({
     client_id: process.env.OAUTH_CLIENT_ID,

@@ -5,6 +5,7 @@ import {
 import {
   HTMLPropsFor,
   RefForwardingComponent,
+  RefFor,
   ValueOf,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
@@ -55,24 +56,27 @@ type StyleFn = (
 
 const renderSmallIfElementLessThan = 450
 
-const styles: { [key: string]: StyleFn } = {
-  emptyState: (_, ctx, { hasRenderedOnce }: { hasRenderedOnce: boolean }) =>
+const styles = {
+  emptyState: (ctx: ContextValue, hasRenderedOnce: boolean) =>
     compose(
       combineClasses('.psds-emptystate', ctx),
       !hasRenderedOnce && stylesheet['.psds-emptystate--hidden']
     ),
-  actions: (_, ctx) => combineClasses('.psds-emptystate__actions', ctx),
-  caption: (_, ctx) => combineClasses('.psds-emptystate__caption', ctx),
-  heading: (_, ctx) => combineClasses('.psds-emptystate__heading', ctx),
-  illustration: (_, ctx) =>
+  actions: (ctx: ContextValue) =>
+    combineClasses('.psds-emptystate__actions', ctx),
+  caption: (ctx: ContextValue) =>
+    combineClasses('.psds-emptystate__caption', ctx),
+  heading: (ctx: ContextValue) =>
+    combineClasses('.psds-emptystate__heading', ctx),
+  illustration: (ctx: ContextValue) =>
     combineClasses('.psds-emptystate__illustration', ctx)
 }
 
 const combineClasses = (className: string, { size, themeName }: ContextValue) =>
   css(
     stylesheet[className],
-    stylesheet[className + themeClasses[themeName]],
-    stylesheet[className + sizeClasses[size]]
+    stylesheet[className + themeClasses[themeName as string]],
+    stylesheet[className + sizeClasses[size as string]]
   )
 
 const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
@@ -86,8 +90,9 @@ const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
       ...rest
     } = props
 
-    const ref = useRef()
-    useImperativeHandle(forwardedRef, () => ref.current)
+    const ref = useRef<HTMLDivElement>()
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+    useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
     const themeName = useTheme()
 
@@ -107,9 +112,9 @@ const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
     return (
       <Context.Provider value={ctx}>
         <div
-          {...styles.emptyState(props, ctx, { hasRenderedOnce })}
+          {...styles.emptyState(ctx, hasRenderedOnce)}
           {...rest}
-          ref={ref}
+          ref={ref as RefFor<'div'>}
         >
           {illustration}
           {heading}
@@ -123,13 +128,13 @@ const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
 
 const Actions: React.FC<HTMLPropsFor<'div'>> = props => (
   <Context.Consumer>
-    {ctx => <div {...styles.actions(props, ctx)} {...props} />}
+    {ctx => <div {...styles.actions(ctx)} {...props} />}
   </Context.Consumer>
 )
 
 const Caption: React.FC<HTMLPropsFor<'p'>> = props => (
   <Context.Consumer>
-    {ctx => <p {...styles.caption(props, ctx)} {...props} />}
+    {ctx => <p {...styles.caption(ctx)} {...props} />}
   </Context.Consumer>
 )
 
@@ -142,7 +147,7 @@ const Heading: React.FC<HeadingProps> = props => {
 
   return (
     <Context.Consumer>
-      {ctx => <Tag {...styles.heading(props, ctx)} {...rest} />}
+      {ctx => <Tag {...styles.heading(ctx)} {...rest} />}
     </Context.Consumer>
   )
 }
@@ -164,6 +169,7 @@ const Illustration: React.FC<IllustrationProps> &
   return (
     <Context.Consumer>
       {ctx => {
+        // @ts-ignore: necessary conditional
         let Comp: any = illustrations[name] || IllustrationNotFound
         const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
 
@@ -171,7 +177,7 @@ const Illustration: React.FC<IllustrationProps> &
         if (custom) Comp = () => custom
 
         return (
-          <div {...styles.illustration(props, ctx)}>
+          <div {...styles.illustration(ctx)}>
             <Comp {...rest} />
           </div>
         )
