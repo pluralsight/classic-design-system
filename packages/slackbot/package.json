@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "private": true,
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node dbmigrate.js && node src/app.js"
   },
   "author": "Pierce Bringhurst",
   "license": "Apache 2.0",
