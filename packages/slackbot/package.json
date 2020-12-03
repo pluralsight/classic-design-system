@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/psds-slackbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slack app with interface for creating Github Issues in pluralsight/design-system",
   "main": "src/app.js",
   "private": true,
