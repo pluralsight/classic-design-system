@@ -27,10 +27,6 @@ const ExampleFrame: React.FC<ExampleFrameProps> = props => {
   return (
     <MDXProvider>
       <Helmet>
-        <link
-          rel="stylesheet"
-          href="https://cloud.typography.com/6966154/6397212/css/fonts.css"
-        />
         <script src="https://unpkg.com/iframe-resizer@4.2.11/js/iframeResizer.contentWindow.min.js" />
       </Helmet>
 

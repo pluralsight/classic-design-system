@@ -1,6 +1,7 @@
 :root {
-  --psTypeFontFamily: "Gotham SSm A", "Gotham SSm B", sans-serif;
-  --psTypeFontFamilyCode: "Source Code Pro", monospace;
+  /* prettier-ignore */
+  --psTypeFontFamily: 'PS TT Commons Roman', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
+  --psTypeFontFamilyCode: 'Source Code Pro', monospace;
 
   /* font size */
   --psTypeFontSizeGigantic: 60px;
