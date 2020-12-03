@@ -1,8 +1,15 @@
 module.exports = {
   dimensions: false,
   icon: true,
+  replaceAttrValues: {
+    '#fff': 'currentColor',
+    '#FFFFFF': 'currentColor',
+    '#FFF': 'currentColor'
+  },
   svgProps: {
+    'aria-hidden': 'true',
     role: 'img'
   },
-  titleProp: false
+  template: require('./svgr.template.js'),
+  titleProp: true
 }
