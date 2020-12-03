@@ -1,14 +1,14 @@
 {
   "name": "@pluralsight/psds-slackbot",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Slack app with interface for creating Github Issues in pluralsight/design-system",
-  "main": "src/app.js",
+  "license": "Apache 2.0",
   "private": true,
+  "author": "Pierce Bringhurst",
+  "main": "src/app.js",
   "scripts": {
     "start": "node dbmigrate.js && node src/app.js"
   },
-  "author": "Pierce Bringhurst",
-  "license": "Apache 2.0",
   "dependencies": {
     "@slack/bolt": "^2.4.1",
     "axios": "^0.21.0",
