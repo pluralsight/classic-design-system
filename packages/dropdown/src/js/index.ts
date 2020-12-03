@@ -13,13 +13,12 @@ import {
 } from 'react'
 import {
   canUseDOM,
-  displayNameMatches,
   uniqueId,
   ValueOf,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
+import innerText from 'react-innertext'
 
-import { Item } from '../react/item'
 import * as vars from '../vars'
 
 interface DropdownContextValue {
@@ -317,7 +316,7 @@ export const parseMenuChildren = (
   if (!menu) return []
 
   function parseItem(item: ReactElement) {
-    return displayNameMatches(item, Item)
+    return innerText(item) !== ''
       ? {
           id: formatItemId(menuId, item.props.children, item.props.value),
           label: item.props.children,

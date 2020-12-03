@@ -24,7 +24,8 @@
     "@pluralsight/ps-design-system-halo": "^7.1.14",
     "@pluralsight/ps-design-system-icon": "^19.0.12",
     "@pluralsight/ps-design-system-screenreaderonly": "^2.1.15",
-    "@pluralsight/ps-design-system-util": "^6.0.5"
+    "@pluralsight/ps-design-system-util": "^6.0.5",
+    "react-innertext": "^1.1.5"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",

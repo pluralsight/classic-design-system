@@ -60,12 +60,13 @@ describe('#parseMenuChildren', () => {
     ])
   })
 
-  it('removes dividers', () => {
+  it('removes dividers and other non-items', () => {
     const children = (
       <>
         <Dropdown.Item value="o">One</Dropdown.Item>
         <Dropdown.Item value="w">Two</Dropdown.Item>
         <Dropdown.Divider />
+        <img />
         <Dropdown.Item value="h">Three</Dropdown.Item>
       </>
     )
