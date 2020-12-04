@@ -69,13 +69,13 @@ const styles = {
 }
 
 interface DatePickerProps
-  extends Omit<HTMLPropsFor<'input'>, 'value' | 'onSelect'> {
+  extends Omit<HTMLPropsFor<'input'>, 'value' | 'onChange'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean
   label?: ReactNode
   onKeyDown?: React.KeyboardEventHandler
-  onSelect?: (evt: React.ChangeEvent | React.MouseEvent, newDate: Date) => void
+  onChange?: (evt: React.ChangeEvent | React.MouseEvent, newDate: Date) => void
   onSubBlur?: (evt: React.FocusEvent, date: Date | undefined) => void
   subLabel?: ReactNode
   value: Date | undefined
@@ -100,7 +100,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       error,
       className,
       label,
-      onSelect,
+      onChange,
       onSubBlur,
       style,
       subLabel,
@@ -125,12 +125,12 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       [valueFromProps]
     )
 
-    function handleCalendarSelect(evt: React.MouseEvent, date: Date) {
+    function handleCalendarChange(evt: React.MouseEvent, date: Date) {
       setValue(date)
       setIsOpen(false)
 
-      if (typeof props.onSelect === 'function') {
-        props.onSelect(evt, date)
+      if (typeof props.onChange === 'function') {
+        props.onChange(evt, date)
       }
     }
 
@@ -176,8 +176,8 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       const isValidDate = newDate && !isNaN(newDate.getTime())
       if (newDate && isValidDate) {
         setValue(newDate)
-        if (typeof onSelect === 'function') {
-          onSelect(evt, newDate)
+        if (typeof onChange === 'function') {
+          onChange(evt, newDate)
         }
       }
     }
@@ -268,7 +268,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
             <Overlay onClick={handleOverlayClick} />
 
             <div {...styles.calendarContainer()}>
-              <Calendar value={value} onSelect={handleCalendarSelect} />
+              <Calendar value={value} onChange={handleCalendarChange} />
             </div>
           </>
         )}

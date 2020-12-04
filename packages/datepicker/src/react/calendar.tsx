@@ -43,10 +43,10 @@ const styles = {
 
 interface CalendarProps {
   value: Date | undefined
-  onSelect: (evt: React.MouseEvent, date: Date) => void
+  onChange: (evt: React.MouseEvent, date: Date) => void
 }
 export const Calendar: FC<CalendarProps> = props => {
-  const { value = new Date(), onSelect, ...rest } = props
+  const { value = new Date(), onChange, ...rest } = props
   const ref = useRef<HTMLDivElement>(null)
   const selectedDayRef = useRef<HTMLButtonElement>(null)
 
@@ -85,8 +85,8 @@ export const Calendar: FC<CalendarProps> = props => {
     evt.preventDefault()
     setSelected(selectedDate)
 
-    if (typeof onSelect === 'function') {
-      onSelect(evt, selectedDate)
+    if (typeof onChange === 'function') {
+      onChange(evt, selectedDate)
     }
   }
 

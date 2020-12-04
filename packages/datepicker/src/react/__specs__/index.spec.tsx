@@ -144,12 +144,12 @@ describe('DatePicker', () => {
     expect(yyyy).toHaveValue('2000')
   })
 
-  it('calls onSelect when new date is valid', () => {
+  it('calls onChange when new date is valid', () => {
     let value = undefined
-    const onSelect = jest.fn(
+    const onChange = jest.fn(
       (evt: React.ChangeEvent | React.MouseEvent, date: Date) => (value = date)
     )
-    render(<DatePicker value={value} onSelect={onSelect} />)
+    render(<DatePicker value={value} onChange={onChange} />)
     const mm = screen.getByRole('textbox', { name: 'month' })
     mm.focus()
     userEvent.type(document.activeElement!, '12')
@@ -162,24 +162,24 @@ describe('DatePicker', () => {
     expect(document.activeElement!).toHaveValue('1941')
     userEvent.tab()
     const expected = new Date(1941, 11, 7, 0, 0, 0, 0)
-    expect(onSelect).toHaveBeenCalledTimes(1)
-    expect(onSelect).toHaveBeenCalledWith(expect.any(Object), expected)
+    expect(onChange).toHaveBeenCalledTimes(1)
+    expect(onChange).toHaveBeenCalledWith(expect.any(Object), expected)
     expect(value).toEqual(expected)
   })
 
-  it('calls onSelect every time the date is updated in a valid way', () => {
+  it('calls onChange every time the date is updated in a valid way', () => {
     let value = new Date(2019, 2, 15)
-    const onSelect = jest.fn(
+    const onChange = jest.fn(
       (evt: React.ChangeEvent | React.MouseEvent, date: Date) => (value = date)
     )
-    render(<DatePicker value={value} onSelect={onSelect} />)
+    render(<DatePicker value={value} onChange={onChange} />)
     const mm = screen.getByRole('textbox', { name: 'month' })
 
     mm.focus()
     userEvent.type(document.activeElement!, '12')
     expect(document.activeElement!).toHaveValue('12')
     userEvent.tab()
-    expect(onSelect).toHaveBeenCalledWith(
+    expect(onChange).toHaveBeenCalledWith(
       expect.any(Object),
       new Date(2019, 11, 15, 0, 0, 0, 0)
     )
@@ -187,7 +187,7 @@ describe('DatePicker', () => {
     userEvent.type(document.activeElement!, '7')
     expect(document.activeElement!).toHaveValue('7')
     userEvent.tab()
-    expect(onSelect).toHaveBeenCalledWith(
+    expect(onChange).toHaveBeenCalledWith(
       expect.any(Object),
       new Date(2019, 11, 7, 0, 0, 0, 0)
     )
@@ -196,9 +196,9 @@ describe('DatePicker', () => {
     expect(document.activeElement!).toHaveValue('1941')
     userEvent.tab()
     const finalDate = new Date(1941, 11, 7, 0, 0, 0, 0)
-    expect(onSelect).toHaveBeenCalledWith(expect.any(Object), finalDate)
+    expect(onChange).toHaveBeenCalledWith(expect.any(Object), finalDate)
 
-    expect(onSelect).toHaveBeenCalledTimes(3)
+    expect(onChange).toHaveBeenCalledTimes(3)
     expect(value).toEqual(finalDate)
   })
 
