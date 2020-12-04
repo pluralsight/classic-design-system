@@ -1,4 +1,4 @@
-import path from 'path'
+const path = require('path')
 
 const baseConfig = require('../../jest/base.config.js')
 const { name } = require('./package.json')
