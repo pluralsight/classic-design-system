@@ -237,25 +237,4 @@ describe('DatePicker', () => {
     expect(dd).toHaveValue('25')
     expect(yyyy).toHaveValue('2000')
   })
-
-  // TODO: rm and send to will
-  /* it.only('wills test', async () => { */
-  /*   render(<DatePicker value={new Date(2019, 0, 2)} />) */
-  /*   const mm = screen.getByRole('textbox', { name: 'month' }) */
-  /*   const dd = screen.getByRole('textbox', { name: 'day' }) */
-  /*   const yyyy = screen.getByRole('textbox', { name: 'year' }) */
-  /*   expect(mm).toHaveValue('1') */
-  /*   expect(dd).toHaveValue('2') */
-  /*   expect(yyyy).toHaveValue('2019') */
-  /*   mm.focus() */
-  /*   userEvent.type(document.activeElement!, '07') */
-  /*   userEvent.tab() */
-  /*   userEvent.type(document.activeElement!, '15') */
-  /*   userEvent.tab() */
-  /*   userEvent.type(document.activeElement!, '2015') */
-  /*   userEvent.tab() */
-  /*   expect(mm).toHaveValue('7') */
-  /*   expect(dd).toHaveValue('15') */
-  /*   expect(yyyy).toHaveValue('2015') */
-  /* }) */
 })
