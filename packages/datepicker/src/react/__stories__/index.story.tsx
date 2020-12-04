@@ -11,7 +11,7 @@ const StateDemo: React.FC<{ value?: Date }> = props => {
   const [value, setValue] = React.useState(props.value)
 
   function handleDatePickerSelect(
-    _evt: React.MouseEvent | React.FocusEvent,
+    _evt: React.MouseEvent | React.ChangeEvent,
     nextValue: Date
   ) {
     setValue(nextValue)
@@ -30,11 +30,7 @@ const StateDemo: React.FC<{ value?: Date }> = props => {
 
 storiesOf('labels', module)
   .add('none', () => (
-    <DatePicker
-      onSelect={action('onselect')}
-      onSubBlur={action('onblur')}
-      value={undefined}
-    />
+    <DatePicker onSelect={action('onselect')} value={undefined} />
   ))
   .add('compare w/ textinput', () => (
     <div>

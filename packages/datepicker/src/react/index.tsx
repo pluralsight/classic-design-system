@@ -75,7 +75,7 @@ interface DatePickerProps
   error?: boolean
   label?: ReactNode
   onKeyDown?: React.KeyboardEventHandler
-  onSelect?: (evt: React.FocusEvent | React.MouseEvent, newDate: Date) => void
+  onSelect?: (evt: React.ChangeEvent | React.MouseEvent, newDate: Date) => void
   onSubBlur?: (evt: React.FocusEvent, date: Date | undefined) => void
   subLabel?: ReactNode
   value: Date | undefined
@@ -153,38 +153,31 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
       setIsOpen(false)
     }
 
-    function handleSubFieldBlur(evt: React.FocusEvent) {
+    function handleSubFieldChange(evt: React.ChangeEvent) {
       const target = evt.target as HTMLInputElement
       const name = target.name
-
-      let year = yyyy
-      let month = mm
-      let day = dd
 
       if (name === 'yyyy') {
         const yyyy = parseInt(target.value, 10)
         setYYYY(yyyy)
-        year = yyyy
       } else if (name === 'mm') {
         const mm = parseInt(target.value, 10)
-        setMM(parseInt(target.value, 10))
-        month = mm
+        setMM(mm)
       } else if (name === 'dd') {
         const dd = parseInt(target.value, 10)
-        setDD(parseInt(target.value, 10))
-        day = dd
+        setDD(dd)
       }
+    }
 
-      const newValidDate = areValidParts(year, month, day)
-        ? convertPartsToDate(year!, month!, day!)
+    function handleSubFieldBlur(evt: React.FocusEvent) {
+      const newDate = areValidParts(yyyy, mm, dd)
+        ? convertPartsToDate(yyyy!, mm!, dd!)
         : undefined
-      if (typeof onSubBlur === 'function') {
-        onSubBlur(evt, newValidDate)
-      }
-      if (newValidDate) {
-        setValue(newValidDate)
+      const isValidDate = newDate && !isNaN(newDate.getTime())
+      if (newDate && isValidDate) {
+        setValue(newDate)
         if (typeof onSelect === 'function') {
-          onSelect(evt, newValidDate)
+          onSelect(evt, newDate)
         }
       }
     }
@@ -203,15 +196,13 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
         {label && <div {...styles.label(themeName)}>{label}</div>}
 
         <Halo error={error} gapSize={Halo.gapSizes.small}>
-          <div
-            {...styles.fieldContainer(appearance, themeName)}
-            key={value?.getTime()}
-          >
+          <div {...styles.fieldContainer(appearance, themeName)}>
             <SubField
               appearance={appearance}
               onFocus={handleSubFieldFocus}
+              onChange={handleSubFieldChange}
               onBlur={handleSubFieldBlur}
-              value={value ? value.getMonth() + 1 : undefined}
+              value={mm || ''}
               name="mm"
               aria-label="month"
               disabled={disabled}
@@ -223,8 +214,9 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
             <SubField
               appearance={appearance}
               onFocus={handleSubFieldFocus}
+              onChange={handleSubFieldChange}
               onBlur={handleSubFieldBlur}
-              value={value ? value.getDate() : undefined}
+              value={dd || ''}
               name="dd"
               aria-label="day"
               disabled={disabled}
@@ -236,8 +228,9 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
             <SubField
               appearance={appearance}
               onFocus={handleSubFieldFocus}
+              onChange={handleSubFieldChange}
               onBlur={handleSubFieldBlur}
-              value={value ? value.getFullYear() : undefined}
+              value={yyyy || ''}
               name="yyyy"
               aria-label="year"
               disabled={disabled}
@@ -251,7 +244,7 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
               readOnly
               disabled={disabled}
               ref={ref}
-              value={value ? formatISO8601(value) : undefined}
+              value={value ? formatISO8601(value) : ''}
             />
 
             <button
