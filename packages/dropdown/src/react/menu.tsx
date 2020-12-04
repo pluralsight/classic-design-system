@@ -41,10 +41,15 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
   forwardedRef
 ) => {
   const { inNode, isOpen, menu, menuId, menuPosition, ...rest } = props
+  /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const context = useContext(DropdownContext)
+  /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const ref = useRef<HTMLDivElement>(null)
+  /* eslint-disable-next-line react-hooks/rules-of-hooks */
+  /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
   useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
+  /* eslint-disable-next-line react-hooks/rules-of-hooks */
   useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
 
   return (
