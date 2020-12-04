@@ -15,7 +15,7 @@
   },
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@storybook/addons": "^6.0.26"
+    "@storybook/addons": "^6.1.10"
   },
   "peerDependencies": {
     "react": "^16.8.6"
