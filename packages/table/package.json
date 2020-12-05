@@ -46,8 +46,10 @@
     "@pluralsight/ps-design-system-searchinput": "*",
     "@pluralsight/ps-design-system-storybook-preset": "*",
     "@pluralsight/ps-design-system-text": "*",
+    "@types/react-beautiful-dnd": "^13.0.0",
     "@types/react-table": "^7.0.25",
     "faker": "^5.1.0",
+    "react-beautiful-dnd": "^13.0.0",
     "react-table": "^7.6.2"
   }
 }
