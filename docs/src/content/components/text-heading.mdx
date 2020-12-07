@@ -15,7 +15,9 @@ import { Heading } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
-Use with the `<h.../>`tag that is best suited for the semantic structure of the page.
+### Sizes
+
+Seven text sizes are available using the `size` prop. Use with the `<h.../>` tag that is best suited for the semantic structure of the page.
 
 ```typescript
 import { Heading } from '@pluralsight/ps-design-system-text'
@@ -25,59 +27,56 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <Heading size={Heading.sizes.xLarge}>
-        <h1>Heading (xLarge, primary)</h1>
-      </Heading>
-
-      <Heading size={Heading.sizes.xLarge} color={Heading.colors.secondary}>
-        <h1>Heading (xLarge, secondary)</h1>
+        <h1>Heading xLarge</h1>
       </Heading>
 
       <Heading size={Heading.sizes.large}>
-        <h2>Heading (large, primary)</h2>
-      </Heading>
-
-      <Heading size={Heading.sizes.large} color={Heading.colors.secondary}>
-        <h2>Heading (large, secondary)</h2>
+        <h2>Heading large</h2>
       </Heading>
 
       <Heading size={Heading.sizes.medium}>
-        <h3>Heading (medium, primary)</h3>
-      </Heading>
-
-      <Heading size={Heading.sizes.medium} color={Heading.colors.secondary}>
-        <h3>Heading (medium, secondary)</h3>
+        <h3>Heading medium</h3>
       </Heading>
 
       <Heading size={Heading.sizes.small}>
-        <h4>Heading (small, primary)</h4>
-      </Heading>
-
-      <Heading size={Heading.sizes.small} color={Heading.colors.secondary}>
-        <h4>Heading (small, secondary)</h4>
+        <h4>Heading small</h4>
       </Heading>
 
       <Heading size={Heading.sizes.xSmall}>
-        <h5>Heading (xSmall, primary)</h5>
-      </Heading>
-
-      <Heading size={Heading.sizes.xSmall} color={Heading.colors.secondary}>
-        <h5>Heading (xSmall, secondary)</h5>
+        <h5>Heading xSmall</h5>
       </Heading>
 
       <Heading size={Heading.sizes.xXSmall}>
-        <h6>Heading (xXSmall, primary)</h6>
-      </Heading>
-
-      <Heading size={Heading.sizes.xXSmall} color={Heading.colors.secondary}>
-        <h6>Heading (xXSmall, secondary)</h6>
+        <h6>Heading xXSmall</h6>
       </Heading>
 
       <Heading size={Heading.sizes.xXXSmall}>
-        <h6>Heading (xXXSmall, primary)</h6>
+        <h6>Heading xXXSmall</h6>
+      </Heading>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### Colors
+
+Text color can be set to Primary (high contrast) or Secondary (medium contrast) using the `color` prop.
+
+```typescript
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <Heading color={Heading.colors.primary}>
+        <h1>Primary</h1>
       </Heading>
 
-      <Heading size={Heading.sizes.xXXSmall} color={Heading.colors.secondary}>
-        <h6>Heading (xXXSmall, secondary)</h6>
+      <Heading color={Heading.colors.secondary}>
+        <h1>Secondary</h1>
       </Heading>
     </React.Fragment>
   )
