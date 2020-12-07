@@ -1,6 +1,9 @@
 import React, { forwardRef, useLayoutEffect, useRef } from 'react'
 import { compose, css } from 'glamor'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
 import stylesheet from '../css'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Halo from '@pluralsight/ps-design-system-halo'
@@ -10,7 +13,14 @@ import { ErrorIcon } from './error-icon'
 import * as vars from '../vars'
 
 const styles = {
-  field: ({ appearance, error, themeName, size }) => {
+  field: (
+    {
+      appearance,
+      error,
+      size
+    }: Pick<DropdownButtonProps, 'appearance' | 'error' | 'size'>,
+    themeName: ValueOf<typeof themeNames>
+  ) => {
     const label = 'psds-dropdown__field'
     const isSmall = size === vars.sizes.small
 
@@ -25,7 +35,10 @@ const styles = {
   fieldAligner: () => css(stylesheet['.psds-dropdown__field-aligner']),
   fieldContainer: () => css(stylesheet['.psds-dropdown__field-container']),
   halo: () => css(stylesheet['.psds-dropdown__field-halo']),
-  icon: ({ appearance, themeName }) => {
+  icon: (
+    appearance: DropdownButtonProps['appearance'],
+    themeName: ValueOf<typeof themeNames>
+  ) => {
     const label = 'psds-dropdown__icon'
 
     return compose(
@@ -42,8 +55,10 @@ interface DropdownButtonProps extends HTMLPropsFor<'button'> {
   disabled?: boolean
   error?: boolean
   isOpen?: boolean
-  onClick?: React.MouseEventHandler<HTMLButtonElement>
-  setMenuPosition?: ({
+  onClick: (evt: React.MouseEvent | React.KeyboardEvent) => void
+  onKeyDown: (evt: React.MouseEvent | React.KeyboardEvent) => void
+  // TODO: see if we can make more of these non-null
+  setMenuPosition: ({
     left,
     top,
     width
@@ -71,9 +86,9 @@ export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
     ref
   ) => {
     const themeName = useTheme()
-    const fieldContainerRef = useRef<HTMLDivElement>()
+    const fieldContainerRef = useRef<HTMLDivElement>(null)
     useLayoutEffect(() => {
-      if (!isOpen) return
+      if (!isOpen || !fieldContainerRef.current) return
       const {
         left,
         bottom,
@@ -90,13 +105,13 @@ export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
           <div {...styles.fieldAligner()}>
             <button
               {...rest}
-              {...styles.field({ appearance, error, themeName, size })}
+              {...styles.field({ appearance, error, size }, themeName)}
               disabled={disabled}
-              onClick={disabled ? null : onClick}
+              onClick={disabled ? undefined : onClick}
               ref={ref}
             >
               <span {...styles.inner()}>{children}</span>
-              <div {...styles.icon({ appearance, themeName })}>
+              <div {...styles.icon(appearance, themeName)}>
                 <Icon>
                   <CaretDown />
                 </Icon>
@@ -104,7 +119,7 @@ export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
             </button>
           </div>
         </Halo>
-        <ErrorIcon error={error} />
+        <ErrorIcon error={!!error} />
       </div>
     )
   }
