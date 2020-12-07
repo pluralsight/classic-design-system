@@ -5,6 +5,12 @@ const path = require('path')
 const remarkSlug = require('remark-slug')
 
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+    FAST_DEV: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    QUERY_ON_DEMAND: true
+  },
   siteMetadata: {
     title: 'Pluralsight Design System',
     siteUrl: 'https://design-system.pluralsight.com/'
@@ -20,7 +26,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
-        path: `${__dirname}/src/content/`
+        path: path.join(__dirname, `src/content/`)
       }
     },
     {
