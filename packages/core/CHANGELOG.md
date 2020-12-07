@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.5.3...@pluralsight/ps-design-system-core@6.6.0) (2020-12-07)
+
+
+### Features
+
+* **core:** add Arial behind Gotham for IE in font stack ([99dd8ea](https://github.com/pluralsight/design-system/commit/99dd8eafd52178d8d3c17ef792af5bcbd1b3e2cb))
+* **core:** add PS TT Commons first in line for font family ([2c05c7c](https://github.com/pluralsight/design-system/commit/2c05c7c7772e77413ab8e076be74928cc93b6843))
+
+
+
+
+
 ## [6.5.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.5.2...@pluralsight/ps-design-system-core@6.5.3) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core

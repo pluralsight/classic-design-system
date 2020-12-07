@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.14.0...@pluralsight/ps-design-system-docs@0.15.0) (2020-12-07)
+
+
+### Features
+
+* **docs:** add domain-restrict typography note ([39e9156](https://github.com/pluralsight/design-system/commit/39e9156eda68e90da8c5dd6198617b507f04828b))
+* **docs:** add variable font notice ([99402e9](https://github.com/pluralsight/design-system/commit/99402e9e3fbe30463a43ebc0c0a860f7d6ab48af))
+
+
+
+
+
 # [0.14.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.13.0...@pluralsight/ps-design-system-docs@0.14.0) (2020-12-03)
 
 

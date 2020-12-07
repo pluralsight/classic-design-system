@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "14.1.14",
+  "version": "14.1.15",
   "description": "Design System component for card ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,9 +21,9 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.5.3",
-    "@pluralsight/ps-design-system-icon": "^19.0.12",
-    "@pluralsight/ps-design-system-util": "^6.0.5",
+    "@pluralsight/ps-design-system-core": "^6.6.0",
+    "@pluralsight/ps-design-system-icon": "^19.0.13",
+    "@pluralsight/ps-design-system-util": "^6.0.6",
     "focus-within": "^3.0.2",
     "shiitake": "^3.0.2"
   },
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.14",
-    "@pluralsight/ps-design-system-theme": "^6.0.10"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.15",
+    "@pluralsight/ps-design-system-theme": "^6.0.11"
   }
 }

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@9.0.7...@pluralsight/ps-design-system-datepicker@10.0.0) (2020-12-07)
+
+
+### Code Refactoring
+
+* **datepicker:** change from onSelect to onChange ([b825152](https://github.com/pluralsight/design-system/commit/b82515268090a5b048d9cd2177421c364cb96579))
+* **datepicker:** remove onSubBlur; fix re-type date in test errors ([cae14cd](https://github.com/pluralsight/design-system/commit/cae14cd368eccbbbfe7930d7c6a08d001ae955cb))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** Rename onSelect to onChange to closer align with React
+norms
+* **datepicker:** Remove onSubBlur event listener
+* **datepicker:** onSelect event param type changed to receive
+React.ChangeEvent instead of React.FocusEvent
+
+
+
+
+
 ## [9.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@9.0.6...@pluralsight/ps-design-system-datepicker@9.0.7) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
