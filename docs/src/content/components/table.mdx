@@ -94,9 +94,9 @@ The Design System aims to provide the UI building block necessary for great
 interfaces but does not implement some of the more advanced features you might
 need to build an interactive table. When you need more advanced features we
 suggest you use a library like [react-table](https://github.com/tannerlinsley/react-table)
-to ease implementing your table.
+to ease implementation.
 
-### Basic react-table usage example
+### Basic react-table usage
 
 ```typescript
 import Table from '@pluralsight/ps-design-system-table'
@@ -155,7 +155,7 @@ const Example: React.FC = () => {
 export default Example
 ```
 
-### Sorting w/react-table
+### Sorting
 
 ```typescript
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
@@ -253,7 +253,7 @@ const Example: React.FC = () => {
 export default Example
 ```
 
-### Multi select w/react-table
+### Multi select
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
@@ -346,16 +346,13 @@ const Example: React.FC = () => {
           <Table.Row {...group.getHeaderGroupProps()}>
           {group.headers.map(column => {
             const title: string = (column as any).title
-            const style = {
-              width: column.id === '_selection' ? 1 : undefined
-            }
 
             return (
               <Table.Header
                 {...column.getHeaderProps()}
                 role="columnheader"
                 scope="col"
-                style={style}
+                style={{ width: column.id === '_selection' ? 1 : undefined }}
                 title={title}
               >
                 {column.render('Header')}
@@ -399,7 +396,7 @@ const HorzSpacer: React.FC = props => (
 export default Example
 ```
 
-### Toggling expanding rows w/react-table
+### Row expand/collapse
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
@@ -495,16 +492,13 @@ const Example: React.FC = () => {
         <Table.Row {...group.getHeaderGroupProps()}>
         {group.headers.map(column => {
           const title: string = (column as any).title
-          const style = {
-            width: column.id === '_selection' ? 1 : undefined
-          }
 
           return (
             <Table.Header
               {...column.getHeaderProps()}
               role="columnheader"
               scope="col"
-              style={style}
+              style={{ width: column.id === '_expander' ? 1 : undefined }}
               title={title}
             >
               {column.render('Header')}
@@ -538,7 +532,7 @@ const Example: React.FC = () => {
 export default Example
 ```
 
-### Pagination w/react-table
+### Pagination
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
@@ -780,7 +774,7 @@ const DraggableRow = React.forwardRef<HTMLTableRowElement, DraggableRowProps>(
 
     return (
       <Table.Row ref={ref} {...provided.draggableProps} {...rest}>
-        <Table.Cell>
+        <Table.Cell style={{ width: 1 }}>
           <Handle {...provided.dragHandleProps} />
         </Table.Cell>
         {children}
@@ -850,5 +844,80 @@ export default Example
 ### Table
 
 <TypesTable>
-  <TypesProp name="scrollable" type="boolean" desc=" " default="false" />
+  <TypesProp
+    name="renderContainer"
+    type="(props) => React.ReactNode"
+    desc="container render prop"
+    default="(p) => <div {...p} />"
+  />
+  <TypesProp
+    name="scrollable"
+    type="boolean"
+    desc="enables horizontal scrolling"
+    default="false"
+  />
+</TypesTable>
+
+### Table.Cell
+
+<TypesTable>
+  <TypesProp
+    name="align"
+    type={<TypesEnum enum={Table.alignments} />}
+    desc="text alignment"
+    default={Table.alignments.left}
+  />
+</TypesTable>
+
+### Table.Header
+
+<TypesTable>
+  <TypesProp
+    name="align"
+    type={<TypesEnum enum={Table.alignments} />}
+    desc="text alignment"
+    default={Table.alignments.left}
+  />
+  <TypesProp
+    name="role"
+    required
+    type="columnheader | rowheader"
+  />
+  <TypesProp
+    name="scope"
+    required
+    type="col | row"
+  />
+  <TypesProp
+    name="sort"
+    type="true | asc | desc"
+    desc="column sorting options"
+  />
+  <TypesProp
+    name="sticky"
+    type="boolean"
+    desc="[experimental]: positions header relative to scroll container"
+  />
+  <TypesProp
+    name="title"
+    type="string"
+    desc="accessible title. required when using sortable columns"
+  />
+</TypesTable>
+
+### Table.Row
+
+<TypesTable>
+  <TypesProp
+    name="expanded"
+    type="boolean"
+    desc="exapanded styling"
+    default="false"
+  />
+  <TypesProp
+    name="selected"
+    type="boolean"
+    desc="selected styling"
+    default="false"
+  />
 </TypesTable>
