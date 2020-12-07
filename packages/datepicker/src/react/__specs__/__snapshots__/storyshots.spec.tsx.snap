@@ -16,6 +16,7 @@ exports[`Storyshots appearance default 1`] = `
         data-css-1ynlp2p=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -23,6 +24,7 @@ exports[`Storyshots appearance default 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -34,6 +36,7 @@ exports[`Storyshots appearance default 1`] = `
         data-css-1ynlp2p=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -41,6 +44,7 @@ exports[`Storyshots appearance default 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -52,6 +56,7 @@ exports[`Storyshots appearance default 1`] = `
         data-css-1ynlp2p=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -59,11 +64,13 @@ exports[`Storyshots appearance default 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-3txxwd=""
@@ -109,6 +116,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         data-css-1ynlp2p=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -116,6 +124,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -127,6 +136,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         data-css-1ynlp2p=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -134,6 +144,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -145,6 +156,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         data-css-1ynlp2p=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -152,11 +164,13 @@ exports[`Storyshots appearance default w/ error 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-3txxwd=""
@@ -216,6 +230,7 @@ exports[`Storyshots appearance subtle 1`] = `
         data-css-18at7l7=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -223,6 +238,7 @@ exports[`Storyshots appearance subtle 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-2cik8p=""
@@ -234,6 +250,7 @@ exports[`Storyshots appearance subtle 1`] = `
         data-css-18at7l7=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -241,6 +258,7 @@ exports[`Storyshots appearance subtle 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-2cik8p=""
@@ -252,6 +270,7 @@ exports[`Storyshots appearance subtle 1`] = `
         data-css-18at7l7=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -259,11 +278,13 @@ exports[`Storyshots appearance subtle 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-1uq4y8i=""
@@ -309,6 +330,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-18at7l7=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -316,6 +338,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-2cik8p=""
@@ -327,6 +350,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-18at7l7=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -334,6 +358,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-2cik8p=""
@@ -345,6 +370,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-18at7l7=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -352,11 +378,13 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-1uq4y8i=""
@@ -422,6 +450,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-1ynlp2p=""
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -429,6 +458,7 @@ exports[`Storyshots disabled compare 1`] = `
               "width": "32px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -440,6 +470,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-1ynlp2p=""
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -447,6 +478,7 @@ exports[`Storyshots disabled compare 1`] = `
               "width": "24px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -458,6 +490,7 @@ exports[`Storyshots disabled compare 1`] = `
           data-css-1ynlp2p=""
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -465,11 +498,13 @@ exports[`Storyshots disabled compare 1`] = `
               "width": "48px",
             }
           }
+          value=""
         />
         <input
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value=""
         />
         <button
           data-css-3txxwd=""
@@ -515,10 +550,10 @@ exports[`Storyshots disabled compare 1`] = `
         <input
           aria-label="month"
           data-css-1ynlp2p=""
-          defaultValue={12}
           disabled={true}
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -526,6 +561,7 @@ exports[`Storyshots disabled compare 1`] = `
               "width": "32px",
             }
           }
+          value={12}
         />
         <span
           data-css-9eecwn=""
@@ -535,10 +571,10 @@ exports[`Storyshots disabled compare 1`] = `
         <input
           aria-label="day"
           data-css-1ynlp2p=""
-          defaultValue={7}
           disabled={true}
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -546,6 +582,7 @@ exports[`Storyshots disabled compare 1`] = `
               "width": "24px",
             }
           }
+          value={7}
         />
         <span
           data-css-9eecwn=""
@@ -555,10 +592,10 @@ exports[`Storyshots disabled compare 1`] = `
         <input
           aria-label="year"
           data-css-1ynlp2p=""
-          defaultValue={1941}
           disabled={true}
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -566,6 +603,7 @@ exports[`Storyshots disabled compare 1`] = `
               "width": "48px",
             }
           }
+          value={1941}
         />
         <input
           data-css-gyrv08=""
@@ -628,6 +666,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
             data-css-1ynlp2p=""
             name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             placeholder="mm"
             style={
@@ -635,6 +674,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
                 "width": "32px",
               }
             }
+            value=""
           />
           <span
             data-css-9eecwn=""
@@ -646,6 +686,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
             data-css-1ynlp2p=""
             name="dd"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             placeholder="dd"
             style={
@@ -653,6 +694,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
                 "width": "24px",
               }
             }
+            value=""
           />
           <span
             data-css-9eecwn=""
@@ -664,6 +706,7 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
             data-css-1ynlp2p=""
             name="yyyy"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             placeholder="yyyy"
             style={
@@ -671,11 +714,13 @@ exports[`Storyshots labels compare w/ textinput 1`] = `
                 "width": "48px",
               }
             }
+            value=""
           />
           <input
             data-css-gyrv08=""
             readOnly={true}
             tabIndex={-1}
+            value=""
           />
           <button
             data-css-3txxwd=""
@@ -746,6 +791,7 @@ exports[`Storyshots labels label 1`] = `
         data-css-1ynlp2p=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -753,6 +799,7 @@ exports[`Storyshots labels label 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -764,6 +811,7 @@ exports[`Storyshots labels label 1`] = `
         data-css-1ynlp2p=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -771,6 +819,7 @@ exports[`Storyshots labels label 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -782,6 +831,7 @@ exports[`Storyshots labels label 1`] = `
         data-css-1ynlp2p=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -789,11 +839,13 @@ exports[`Storyshots labels label 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-3txxwd=""
@@ -839,6 +891,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-1ynlp2p=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -846,6 +899,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -857,6 +911,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-1ynlp2p=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -864,6 +919,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -875,6 +931,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-1ynlp2p=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -882,11 +939,13 @@ exports[`Storyshots labels label and subLabel 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-3txxwd=""
@@ -932,6 +991,7 @@ exports[`Storyshots labels none 1`] = `
         data-css-1ynlp2p=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -939,6 +999,7 @@ exports[`Storyshots labels none 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -950,6 +1011,7 @@ exports[`Storyshots labels none 1`] = `
         data-css-1ynlp2p=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -957,6 +1019,7 @@ exports[`Storyshots labels none 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -968,6 +1031,7 @@ exports[`Storyshots labels none 1`] = `
         data-css-1ynlp2p=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -975,11 +1039,13 @@ exports[`Storyshots labels none 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-3txxwd=""
@@ -1020,6 +1086,7 @@ exports[`Storyshots labels subLabel 1`] = `
         data-css-1ynlp2p=""
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -1027,6 +1094,7 @@ exports[`Storyshots labels subLabel 1`] = `
             "width": "32px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -1038,6 +1106,7 @@ exports[`Storyshots labels subLabel 1`] = `
         data-css-1ynlp2p=""
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -1045,6 +1114,7 @@ exports[`Storyshots labels subLabel 1`] = `
             "width": "24px",
           }
         }
+        value=""
       />
       <span
         data-css-9eecwn=""
@@ -1056,6 +1126,7 @@ exports[`Storyshots labels subLabel 1`] = `
         data-css-1ynlp2p=""
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -1063,11 +1134,13 @@ exports[`Storyshots labels subLabel 1`] = `
             "width": "48px",
           }
         }
+        value=""
       />
       <input
         data-css-gyrv08=""
         readOnly={true}
         tabIndex={-1}
+        value=""
       />
       <button
         data-css-3txxwd=""
@@ -1132,6 +1205,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1ynlp2p=""
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -1139,6 +1213,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "32px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -1150,6 +1225,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1ynlp2p=""
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -1157,6 +1233,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "24px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -1168,6 +1245,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1ynlp2p=""
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -1175,11 +1253,13 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "48px",
             }
           }
+          value=""
         />
         <input
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value=""
         />
         <button
           data-css-3txxwd=""
@@ -1228,6 +1308,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1ynlp2p=""
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -1235,6 +1316,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "32px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -1246,6 +1328,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1ynlp2p=""
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -1253,6 +1336,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "24px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -1264,6 +1348,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-1ynlp2p=""
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -1271,11 +1356,13 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "48px",
             }
           }
+          value=""
         />
         <input
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value=""
         />
         <button
           data-css-3txxwd=""
@@ -1343,6 +1430,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-18at7l7=""
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -1350,6 +1438,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "32px",
             }
           }
+          value=""
         />
         <span
           data-css-2cik8p=""
@@ -1361,6 +1450,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-18at7l7=""
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -1368,6 +1458,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "24px",
             }
           }
+          value=""
         />
         <span
           data-css-2cik8p=""
@@ -1379,6 +1470,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-18at7l7=""
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -1386,11 +1478,13 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "48px",
             }
           }
+          value=""
         />
         <input
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value=""
         />
         <button
           data-css-1uq4y8i=""
@@ -1439,6 +1533,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-18at7l7=""
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -1446,6 +1541,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "32px",
             }
           }
+          value=""
         />
         <span
           data-css-2cik8p=""
@@ -1457,6 +1553,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-18at7l7=""
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -1464,6 +1561,7 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "24px",
             }
           }
+          value=""
         />
         <span
           data-css-2cik8p=""
@@ -1475,6 +1573,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-18at7l7=""
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -1482,11 +1581,13 @@ exports[`Storyshots layouts full width 1`] = `
               "width": "48px",
             }
           }
+          value=""
         />
         <input
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value=""
         />
         <button
           data-css-1uq4y8i=""
@@ -1562,6 +1663,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-18at7l7=""
             name="mm"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             placeholder="mm"
             style={
@@ -1569,6 +1671,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 "width": "32px",
               }
             }
+            value=""
           />
           <span
             data-css-2cik8p=""
@@ -1580,6 +1683,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-18at7l7=""
             name="dd"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             placeholder="dd"
             style={
@@ -1587,6 +1691,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 "width": "24px",
               }
             }
+            value=""
           />
           <span
             data-css-2cik8p=""
@@ -1598,6 +1703,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-18at7l7=""
             name="yyyy"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             placeholder="yyyy"
             style={
@@ -1605,11 +1711,13 @@ exports[`Storyshots layouts right-aligned 1`] = `
                 "width": "48px",
               }
             }
+            value=""
           />
           <input
             data-css-gyrv08=""
             readOnly={true}
             tabIndex={-1}
+            value=""
           />
           <button
             data-css-1uq4y8i=""
@@ -1669,9 +1777,9 @@ exports[`Storyshots value controlled value changes 1`] = `
         <input
           aria-label="month"
           data-css-1ynlp2p=""
-          defaultValue={12}
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -1679,6 +1787,7 @@ exports[`Storyshots value controlled value changes 1`] = `
               "width": "32px",
             }
           }
+          value={12}
         />
         <span
           data-css-9eecwn=""
@@ -1688,9 +1797,9 @@ exports[`Storyshots value controlled value changes 1`] = `
         <input
           aria-label="day"
           data-css-1ynlp2p=""
-          defaultValue={7}
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -1698,6 +1807,7 @@ exports[`Storyshots value controlled value changes 1`] = `
               "width": "24px",
             }
           }
+          value={7}
         />
         <span
           data-css-9eecwn=""
@@ -1707,9 +1817,9 @@ exports[`Storyshots value controlled value changes 1`] = `
         <input
           aria-label="year"
           data-css-1ynlp2p=""
-          defaultValue={1941}
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -1717,6 +1827,7 @@ exports[`Storyshots value controlled value changes 1`] = `
               "width": "48px",
             }
           }
+          value={1941}
         />
         <input
           data-css-gyrv08=""
@@ -1762,9 +1873,9 @@ exports[`Storyshots value date 1`] = `
       <input
         aria-label="month"
         data-css-1ynlp2p=""
-        defaultValue={12}
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -1772,6 +1883,7 @@ exports[`Storyshots value date 1`] = `
             "width": "32px",
           }
         }
+        value={12}
       />
       <span
         data-css-9eecwn=""
@@ -1781,9 +1893,9 @@ exports[`Storyshots value date 1`] = `
       <input
         aria-label="day"
         data-css-1ynlp2p=""
-        defaultValue={7}
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -1791,6 +1903,7 @@ exports[`Storyshots value date 1`] = `
             "width": "24px",
           }
         }
+        value={7}
       />
       <span
         data-css-9eecwn=""
@@ -1800,9 +1913,9 @@ exports[`Storyshots value date 1`] = `
       <input
         aria-label="year"
         data-css-1ynlp2p=""
-        defaultValue={1941}
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -1810,6 +1923,7 @@ exports[`Storyshots value date 1`] = `
             "width": "48px",
           }
         }
+        value={1941}
       />
       <input
         data-css-gyrv08=""
@@ -1867,6 +1981,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
           data-css-1ynlp2p=""
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -1874,6 +1989,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
               "width": "32px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -1885,6 +2001,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
           data-css-1ynlp2p=""
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -1892,6 +2009,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
               "width": "24px",
             }
           }
+          value=""
         />
         <span
           data-css-9eecwn=""
@@ -1903,6 +2021,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
           data-css-1ynlp2p=""
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -1910,11 +2029,13 @@ exports[`Storyshots value updated value, no initial 1`] = `
               "width": "48px",
             }
           }
+          value=""
         />
         <input
           data-css-gyrv08=""
           readOnly={true}
           tabIndex={-1}
+          value=""
         />
         <button
           data-css-3txxwd=""
@@ -1965,9 +2086,9 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         <input
           aria-label="month"
           data-css-1ynlp2p=""
-          defaultValue={3}
           name="mm"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="mm"
           style={
@@ -1975,6 +2096,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
               "width": "32px",
             }
           }
+          value={3}
         />
         <span
           data-css-9eecwn=""
@@ -1984,9 +2106,9 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         <input
           aria-label="day"
           data-css-1ynlp2p=""
-          defaultValue={15}
           name="dd"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="dd"
           style={
@@ -1994,6 +2116,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
               "width": "24px",
             }
           }
+          value={15}
         />
         <span
           data-css-9eecwn=""
@@ -2003,9 +2126,9 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
         <input
           aria-label="year"
           data-css-1ynlp2p=""
-          defaultValue={1995}
           name="yyyy"
           onBlur={[Function]}
+          onChange={[Function]}
           onFocus={[Function]}
           placeholder="yyyy"
           style={
@@ -2013,6 +2136,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
               "width": "48px",
             }
           }
+          value={1995}
         />
         <input
           data-css-gyrv08=""
@@ -2058,9 +2182,9 @@ exports[`Storyshots whitelist name 1`] = `
       <input
         aria-label="month"
         data-css-1ynlp2p=""
-        defaultValue={4}
         name="mm"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="mm"
         style={
@@ -2068,6 +2192,7 @@ exports[`Storyshots whitelist name 1`] = `
             "width": "32px",
           }
         }
+        value={4}
       />
       <span
         data-css-9eecwn=""
@@ -2077,9 +2202,9 @@ exports[`Storyshots whitelist name 1`] = `
       <input
         aria-label="day"
         data-css-1ynlp2p=""
-        defaultValue={2}
         name="dd"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="dd"
         style={
@@ -2087,6 +2212,7 @@ exports[`Storyshots whitelist name 1`] = `
             "width": "24px",
           }
         }
+        value={2}
       />
       <span
         data-css-9eecwn=""
@@ -2096,9 +2222,9 @@ exports[`Storyshots whitelist name 1`] = `
       <input
         aria-label="year"
         data-css-1ynlp2p=""
-        defaultValue={1944}
         name="yyyy"
         onBlur={[Function]}
+        onChange={[Function]}
         onFocus={[Function]}
         placeholder="yyyy"
         style={
@@ -2106,103 +2232,14 @@ exports[`Storyshots whitelist name 1`] = `
             "width": "48px",
           }
         }
+        value={1944}
       />
       <input
         data-css-gyrv08=""
         name="dateForForm"
-        onChange={[Function]}
         readOnly={true}
         tabIndex={-1}
         value="1944-4-2"
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots whitelist onChange 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        onChange={[Function]}
-        readOnly={true}
-        tabIndex={-1}
       />
       <button
         data-css-3txxwd=""

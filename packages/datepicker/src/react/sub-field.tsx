@@ -1,6 +1,10 @@
-import { combineFns, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  combineFns,
+  ValueOf,
+  HTMLPropsFor
+} from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { FC, useRef } from 'react'
+import React, { FC } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
@@ -22,37 +26,24 @@ const styles = {
     )
 }
 
-interface SubFieldProps
-  extends Omit<
-    React.HTMLAttributes<HTMLInputElement>,
-    'onBlur' | 'onChange' | 'onFocus'
-  > {
+interface SubFieldProps extends HTMLPropsFor<'input'> {
   appearance: ValueOf<typeof vars.appearances>
-  disabled?: boolean
-  name: string
-  onBlur: React.FocusEventHandler
-  onFocus: React.FocusEventHandler
-  value: number | undefined
+  onFocus: React.FocusEventHandler<HTMLInputElement>
 }
 export const SubField: FC<SubFieldProps> = props => {
-  const { appearance, disabled, name, onBlur, onFocus, value, ...rest } = props
-  const ref = useRef<HTMLInputElement>(null)
+  const { appearance, name, onFocus, ...rest } = props
 
-  const handleFocus = combineFns<[React.FocusEvent]>(() => {
-    if (ref.current) ref.current.select()
+  const handleFocus = combineFns<[React.FocusEvent<HTMLInputElement>]>(evt => {
+    evt.target.select()
   }, onFocus)
 
   return (
     <input
       {...styles.subField(appearance)}
       {...rest}
-      disabled={disabled}
-      name={name}
-      onBlur={onBlur}
-      onFocus={handleFocus}
       placeholder={name}
-      ref={ref}
-      defaultValue={value}
+      name={name}
+      onFocus={handleFocus}
     />
   )
 }
