@@ -145,7 +145,7 @@ describe('DatePicker', () => {
   })
 
   it('calls onChange when new date is valid', () => {
-    let value = undefined
+    let value
     const onChange = jest.fn(
       (evt: React.ChangeEvent | React.MouseEvent, date: Date) => (value = date)
     )
