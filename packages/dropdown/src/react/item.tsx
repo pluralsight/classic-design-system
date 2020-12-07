@@ -28,10 +28,7 @@ interface DropdownItemProps
 }
 
 export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
-  (
-    { disabled, onClick, value, icon, children, ...rest },
-    forwardedRef
-  ): any => {
+  ({ disabled, onClick, value, icon, children, ...rest }, forwardedRef) => {
     const context = useContext(DropdownContext)
     const isActive =
       (value && context.activeItem?.value === value) ||
@@ -47,12 +44,12 @@ export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
 
     return (
       <button
-        {...styles.item(isActive, disabled)}
+        {...styles.item(isActive, !!disabled)}
         disabled={disabled}
         onClick={handleClick}
         role="option"
         ref={forwardedRef}
-        id={formatItemId(context.menuId, value, children as string)}
+        id={formatItemId(context.menuId, children as string, value)}
         tabIndex={-1}
         {...rest}
       >

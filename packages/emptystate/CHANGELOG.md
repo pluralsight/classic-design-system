@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@10.0.1...@pluralsight/ps-design-system-emptystate@10.0.2) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-emptystate
+
+
+
+
+
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@10.0.0...@pluralsight/ps-design-system-emptystate@10.0.1) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-emptystate
+
+
+
+
+
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@9.0.14...@pluralsight/ps-design-system-emptystate@10.0.0) (2020-12-03)
+
+
+* Feat/update error component (#1485) ([3bd45ef](https://github.com/pluralsight/design-system/commit/3bd45efa91aac5265525af191f10e59244289071)), closes [#1485](https://github.com/pluralsight/design-system/issues/1485)
+
+
+### BREAKING CHANGES
+
+* Named error pages only take size and href now
+
+* fix(emptystate): remove default prop from generates icons
+
+* fix: lint fixes
+
+* docs: add small example to errors
+
+
+
+
+
 ## [9.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@9.0.13...@pluralsight/ps-design-system-emptystate@9.0.14) (2020-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate

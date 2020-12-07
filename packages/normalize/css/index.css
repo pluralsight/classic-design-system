@@ -2,6 +2,13 @@
 
 @import '@pluralsight/ps-design-system-core';
 
+@font-face {
+  font-family: 'PS TT Commons Roman';
+  src: url('https://s2.pluralsight.com/fonts/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff')
+    format('woff-variations');
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;

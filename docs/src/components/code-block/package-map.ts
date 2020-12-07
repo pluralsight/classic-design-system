@@ -19,7 +19,7 @@ import Dropdown, {
   DropdownContext
 } from '@pluralsight/ps-design-system-dropdown'
 import EmptyState from '@pluralsight/ps-design-system-emptystate'
-import * as Errors from '@pluralsight/ps-design-system-errors'
+import ErrorPage, * as ErrorPages from '@pluralsight/ps-design-system-errors'
 import FeatureFlags, {
   useFeatureFlags
 } from '@pluralsight/ps-design-system-featureflags'
@@ -91,7 +91,10 @@ export const PACKAGE_MAP: PackageMap = {
     DropdownContext
   },
   '@pluralsight/ps-design-system-emptystate': { EmptyState },
-  '@pluralsight/ps-design-system-errors': { ...omit(Errors, ['default']) },
+  '@pluralsight/ps-design-system-errors': {
+    ErrorPage,
+    ...omit(ErrorPages, ['default'])
+  },
   '@pluralsight/ps-design-system-featureflags': {
     FeatureFlags,
     useFeatureFlags

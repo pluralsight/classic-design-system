@@ -1,9 +1,8 @@
 {
   "name": "create-react-app",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test"

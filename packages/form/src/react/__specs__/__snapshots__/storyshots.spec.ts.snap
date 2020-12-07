@@ -222,7 +222,7 @@ exports[`Storyshots Sample Form null children 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-1uk9rqa=""
+          data-css-12103dp=""
           style={
             Object {
               "maxWidth": "none",
@@ -432,7 +432,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-1uk9rqa=""
+          data-css-12103dp=""
           style={
             Object {
               "maxWidth": "none",
@@ -664,25 +664,25 @@ exports[`Storyshots Sample Form sample 1`] = `
                       Select your occupation...
                     </span>
                   </span>
-                </button>
-                <div
-                  data-css-1af7ks9=""
-                >
                   <div
-                    data-css-7dab2f=""
+                    data-css-1af7ks9=""
                   >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <div
+                      data-css-7dab2f=""
                     >
-                      <path
-                        d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                      />
-                    </svg>
+                      <svg
+                        aria-label="caret down icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -786,6 +786,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-1ynlp2p=""
                 name="mm"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 placeholder="mm"
                 style={
@@ -793,6 +794,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     "width": "32px",
                   }
                 }
+                value=""
               />
               <span
                 data-css-9eecwn=""
@@ -804,6 +806,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-1ynlp2p=""
                 name="dd"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 placeholder="dd"
                 style={
@@ -811,6 +814,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     "width": "24px",
                   }
                 }
+                value=""
               />
               <span
                 data-css-9eecwn=""
@@ -822,6 +826,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-1ynlp2p=""
                 name="yyyy"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 placeholder="yyyy"
                 style={
@@ -829,11 +834,13 @@ exports[`Storyshots Sample Form sample 1`] = `
                     "width": "48px",
                   }
                 }
+                value=""
               />
               <input
                 data-css-gyrv08=""
                 readOnly={true}
                 tabIndex={-1}
+                value=""
               />
               <button
                 data-css-3txxwd=""

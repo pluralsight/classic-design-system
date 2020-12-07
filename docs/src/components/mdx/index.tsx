@@ -1,4 +1,5 @@
 import { MDXProvider as BaseProvider } from '@mdx-js/react'
+import Badge from '@pluralsight/ps-design-system-badge'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
@@ -18,6 +19,7 @@ import { P } from './paragraphs'
 const components = {
   a: A,
   A,
+  Badge,
   blockquote: BlockQuote,
   code: CodeBlock,
   Guideline,

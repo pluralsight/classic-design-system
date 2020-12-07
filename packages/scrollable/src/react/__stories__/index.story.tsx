@@ -189,9 +189,9 @@ const Filler: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
 )
 /* eslint-enable react/no-unescaped-entities */
 
-const ScrollableWithDefaults: React.FC<Partial<
-  React.ComponentProps<typeof Scrollable>
->> = props => {
+const ScrollableWithDefaults: React.FC<
+  Partial<React.ComponentProps<typeof Scrollable>>
+> = props => {
   return (
     <Scrollable
       {...css({

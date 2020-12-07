@@ -34,58 +34,140 @@ export default {
     background: colorsBackgroundUtility[25],
     border: `1px solid ${colorsBorder.lowOnDark}`
   },
+
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`
   },
-  [`.psds-text__heading.psds-theme--${themeNames.light}`]: {
+  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__heading.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}`]: {
-    textTransform: 'uppercase',
-    fontSize: type.fontSizeXSmall,
-    letterSpacing: type.letterSpacingXSmall,
-    lineHeight: type.lineHeightTight,
-    fontWeight: type.fontWeightMedium
-  },
-  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeNames.light}`]: {
+  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.lowOnLight
   },
-  [`.psds-text__heading--size-${vars.headingSizes.smallCaps}.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.lowOnDark
   },
+  [`.psds-text__heading--size-${vars.headingSizes.xXXSmall}`]: {
+    fontSize: '12px',
+    lineHeight: '16px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '.08em'
+  },
+  [`.psds-text__heading--size-${vars.headingSizes.xXSmall}`]: {
+    fontSize: '14px',
+    lineHeight: '20px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '.08em'
+  },
+  [`.psds-text__heading--size-${vars.headingSizes.xSmall}`]: {
+    fontSize: '20px',
+    lineHeight: '28px',
+    fontWeight: '600'
+  },
+  [`.psds-text__heading--size-${vars.headingSizes.small}`]: {
+    fontSize: '24px',
+    lineHeight: '32px',
+    fontWeight: '600'
+  },
   [`.psds-text__heading--size-${vars.headingSizes.medium}`]: {
-    fontSize: type.fontSizeMedium,
-    letterSpacing: type.letterSpacingMedium,
-    lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightMedium
+    fontSize: '28px',
+    lineHeight: '36px',
+    fontWeight: '600'
   },
   [`.psds-text__heading--size-${vars.headingSizes.large}`]: {
-    fontSize: type.fontSizeLarge,
-    letterSpacing: type.letterSpacingLarge,
-    lineHeight: type.lineHeightExtra,
-    fontWeight: type.fontWeightBook
+    fontSize: '34px',
+    lineHeight: '40px',
+    fontWeight: '600'
   },
   [`.psds-text__heading--size-${vars.headingSizes.xLarge}`]: {
-    fontSize: type.fontSizeXXLarge,
-    letterSpacing: type.letterSpacingXLarge,
-    lineHeight: type.lineHeightHuge,
-    fontWeight: type.fontWeightLight
+    fontSize: '40px',
+    lineHeight: '52px',
+    fontWeight: '600'
+  },
+
+  [`.psds-text__label`]: {
+    fontWeight: '400'
+  },
+  [`.psds-text__label--strong`]: {
+    fontWeight: '500'
+  },
+  [`.psds-text__label--caps`]: {
+    textTransform: 'uppercase',
+    letterSpacing: '.1em'
+  },
+  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.highOnLight
+  },
+  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-text__label--size-${vars.labelSizes.xSmall}`]: {
+    fontSize: '12px',
+    letterSpacing: '0.02em',
+    lineHeight: '16px'
+  },
+  [`.psds-text__label--size-${vars.labelSizes.small}`]: {
+    fontSize: '14px',
+    letterSpacing: '0.015em',
+    lineHeight: '24px'
+  },
+  [`.psds-text__label--size-${vars.labelSizes.medium}`]: {
+    fontSize: '16px',
+    letterSpacing: '0.01em',
+    lineHeight: '28px'
+  },
+  [`.psds-text__label--size-${vars.labelSizes.large}`]: {
+    fontSize: '18px',
+    letterSpacing: '0.005em',
+    lineHeight: '32px',
+    fontWeight: '400'
   },
 
   [`.psds-text__list`]: {
     listStyle: 'none',
     marginLeft: 0,
-    fontSize: type.fontSizeSmall,
     lineHeight: type.lineHeightExtra
   },
-  [`.psds-text__list.psds-theme--${themeNames.light}`]: {
+  [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__list.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__list--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__list--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-text__list--size-${vars.listSizes.small}`]: {
+    fontSize: '14px',
+    letterSpacing: '0.015em',
+    lineHeight: '24px',
+    fontWeight: '400'
+  },
+  [`.psds-text__list--size-${vars.listSizes.medium}`]: {
+    fontSize: '16px',
+    letterSpacing: '0.01em',
+    lineHeight: '24px',
+    fontWeight: '400'
+  },
+  [`.psds-text__list--size-${vars.listSizes.large}`]: {
+    fontSize: '18px',
+    letterSpacing: '0.005em',
+    lineHeight: '28px',
+    fontWeight: '400'
   },
   [`.psds-text__list--type-${vars.listTypes.bulleted}`]: {
     listStyle: 'initial',
@@ -97,14 +179,36 @@ export default {
   },
 
   '.psds-text__p': {
-    fontSize: type.fontSizeSmall,
-    margin: `${layout.spacingSmall} 0`,
-    lineHeight: type.lineHeightStandard
+    margin: `${layout.spacingMedium} 0`
   },
-  [`.psds-text__p.psds-theme--${themeNames.light}`]: {
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
-  [`.psds-text__p.psds-theme--${themeDefaultName}`]: {
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark
+  },
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-text__p--size-${vars.pSizes.small}`]: {
+    fontSize: '14px',
+    letterSpacing: '0.015em',
+    lineHeight: '24px',
+    fontWeight: '400'
+  },
+  [`.psds-text__p--size-${vars.pSizes.medium}`]: {
+    fontSize: '16px',
+    letterSpacing: '0.01em',
+    lineHeight: '24px',
+    fontWeight: '400'
+  },
+  [`.psds-text__p--size-${vars.pSizes.large}`]: {
+    fontSize: '18px',
+    letterSpacing: '0.005em',
+    lineHeight: '28px',
+    fontWeight: '400'
   }
 }

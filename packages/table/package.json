@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "10.0.1",
+  "version": "10.0.5",
   "description": "Table UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,8 +24,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "*",
     "@pluralsight/ps-design-system-icon": "*",
-    "@pluralsight/ps-design-system-util": "*",
-    "@types/faker": "^5.1.4"
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -46,6 +45,7 @@
     "@pluralsight/ps-design-system-searchinput": "*",
     "@pluralsight/ps-design-system-storybook-preset": "*",
     "@pluralsight/ps-design-system-text": "*",
+    "@types/faker": "^5.1.4",
     "@types/react-beautiful-dnd": "^13.0.0",
     "@types/react-table": "^7.0.25",
     "faker": "^5.1.0",

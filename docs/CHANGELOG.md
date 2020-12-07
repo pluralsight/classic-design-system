@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.15.0...@pluralsight/ps-design-system-docs@0.15.1) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.15.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.14.0...@pluralsight/ps-design-system-docs@0.15.0) (2020-12-07)
+
+
+### Features
+
+* **docs:** add domain-restrict typography note ([39e9156](https://github.com/pluralsight/design-system/commit/39e9156eda68e90da8c5dd6198617b507f04828b))
+* **docs:** add variable font notice ([99402e9](https://github.com/pluralsight/design-system/commit/99402e9e3fbe30463a43ebc0c0a860f7d6ab48af))
+
+
+
+
+
+# [0.14.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.13.0...@pluralsight/ps-design-system-docs@0.14.0) (2020-12-03)
+
+
+* Feat/update error component (#1485) ([3bd45ef](https://github.com/pluralsight/design-system/commit/3bd45efa91aac5265525af191f10e59244289071)), closes [#1485](https://github.com/pluralsight/design-system/issues/1485)
+
+
+### BREAKING CHANGES
+
+* Named error pages only take size and href now
+
+* fix(emptystate): remove default prop from generates icons
+
+* fix: lint fixes
+
+* docs: add small example to errors
+
+
+
+
+
+# [0.13.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.12.2...@pluralsight/ps-design-system-docs@0.13.0) (2020-12-03)
+
+
+### Features
+
+* **docs:** give default fg color for example theme overrides ([4227d33](https://github.com/pluralsight/design-system/commit/4227d33fd1cecbda21209786dbb1d79c7fbb9572))
+* **docs:** give default fg color for theming ([045a845](https://github.com/pluralsight/design-system/commit/045a8455a6c052131f311e8692493a3672f7bdca))
+
+
+
+
+
 ## [0.12.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.12.1...@pluralsight/ps-design-system-docs@0.12.2) (2020-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

@@ -1,0 +1,290 @@
+---
+name: Label
+route: /components/text-label
+---
+
+import { Label } from '@pluralsight/ps-design-system-text'
+
+# Label
+
+<Intro>For displaying inline text elements in UI components.</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Default label styles
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.primary} strong>
+          Label (large, primary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.primary}>
+          Label (large, primary)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.secondary} strong>
+          Label (large, Secondary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.secondary}>
+          Label (large, secondary)
+        </Label>
+      </div>
+
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.primary} strong>
+          Label (medium, primary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.primary}>
+          Label (medium, primary)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.secondary} strong>
+          Label (medium, secondary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.secondary}>
+          Label (medium, secondary)
+        </Label>
+      </div>
+
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.primary} strong>
+          Label (small, primary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.primary}>
+          Label (small, primary)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.secondary} strong>
+          Label (small, secondary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.secondary}>
+          Label (small, secondary)
+        </Label>
+      </div>
+
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.primary} strong>
+          Label (xSmall, primary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.primary}>
+          Label (xSmall, primary)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.secondary} strong>
+          Label (xSmall, secondary, strong)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.secondary}>
+          Label (xSmall, secondary)
+        </Label>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### Uppercase label styles
+
+Use all caps text styles sparingly. Heading styles should be used for headings.
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Label
+          size={Label.sizes.large}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (large, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.primary} caps>
+          Label (large, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.large}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (large, Secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.large} color={Label.colors.secondary} caps>
+          Label (large, secondary, caps)
+        </Label>
+      </div>
+
+      <div>
+        <Label
+          size={Label.sizes.medium}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (medium, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.primary} caps>
+          Label (medium, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.medium}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (medium, secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.medium} color={Label.colors.secondary} caps>
+          Label (medium, secondary, caps)
+        </Label>
+      </div>
+
+      <div>
+        <Label
+          size={Label.sizes.small}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (small, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.primary} caps>
+          Label (small, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.small}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (small, secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.small} color={Label.colors.secondary} caps>
+          Label (small, secondary, caps)
+        </Label>
+      </div>
+
+      <div>
+        <Label
+          size={Label.sizes.xSmall}
+          color={Label.colors.primary}
+          strong
+          caps
+        >
+          Label (xSmall, primary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.primary} caps>
+          Label (xSmall, primary, caps)
+        </Label>
+      </div>
+      <div>
+        <Label
+          size={Label.sizes.xSmall}
+          color={Label.colors.secondary}
+          strong
+          caps
+        >
+          Label (xSmall, secondary, strong, caps)
+        </Label>
+      </div>
+      <div>
+        <Label size={Label.sizes.xSmall} color={Label.colors.secondary} caps>
+          Label (xSmall, secondary, caps)
+        </Label>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-text"
+  import="import { Label } from '@pluralsight/ps-design-system-text'"
+  packageName="text"
+  version={props.version}
+/>
+
+<TypesTable>
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Label.sizes} />}
+    desc="Text size (from Label.sizes)"
+    default={Label.sizes.normal}
+  />
+  <TypesProp
+    name="color"
+    type={<TypesEnum enum={Label.colors} />}
+    desc="Text color (from Label.colors)"
+    default={Label.colors.primary}
+  />
+  <TypesProp
+    name="strong"
+    type="boolean"
+    desc="Bold text style"
+    default="false"
+  />
+  <TypesProp
+    name="caps"
+    type="boolean"
+    desc="Uppercase text style"
+    default="false"
+  />
+</TypesTable>

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.0.3...@pluralsight/ps-design-system-dropdown@10.0.4) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [10.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.0.2...@pluralsight/ps-design-system-dropdown@10.0.3) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [10.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.0.1...@pluralsight/ps-design-system-dropdown@10.0.2) (2020-12-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.0.0...@pluralsight/ps-design-system-dropdown@10.0.1) (2020-12-03)
+
+
+### Bug Fixes
+
+* make CaretDown component in dropdown clickable ([91d4e00](https://github.com/pluralsight/design-system/commit/91d4e00af5b5e3f854aae88147943a55c98e8b46))
+
+
+
+
+
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@9.3.11...@pluralsight/ps-design-system-dropdown@10.0.0) (2020-11-30)
 
 

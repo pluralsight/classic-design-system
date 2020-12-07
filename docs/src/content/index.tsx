@@ -1,4 +1,4 @@
-import { Heading } from '@pluralsight/ps-design-system-text'
+import { Heading, Label } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 import { A, P, Ul } from '../components/mdx'
@@ -15,7 +15,7 @@ export const HomePage: React.FC = () => {
               Design System
             </h1>
           </Heading>
-          <P>
+          <P size={P.sizes.large}>
             The cohesive design language, shared vocabulary, and building block
             components to accelerate the building of Pluralsight products.
           </P>
@@ -25,43 +25,67 @@ export const HomePage: React.FC = () => {
 
       <ul className={styles.steps}>
         <li>
-          <Heading size={Heading.sizes.medium}>
+          <Heading size={Heading.sizes.small}>
             <h2>Design</h2>
           </Heading>
-          <P>Learn how to use the design system Figma libraries.</P>
-          <A href="/guides/designworkflow">See more</A>
+          <P size={P.sizes.normal}>
+            Learn how to use the design system Figma libraries.
+          </P>
+          <Label strong>
+            <A href="/guides/designworkflow">See more</A>
+          </Label>
         </li>
         <li>
-          <Heading size={Heading.sizes.medium}>
+          <Heading size={Heading.sizes.small}>
             <h2>Develop</h2>
           </Heading>
-          <P>Everything you need to get up and running with the code.</P>
-          <A href="/guides/developmentworkflow">See more</A>
+          <P size={P.sizes.normal}>
+            Everything you need to get up and running with the code.
+          </P>
+          <Label strong>
+            <A href="/guides/developmentworkflow">See more</A>
+          </Label>
         </li>
         <li>
-          <Heading size={Heading.sizes.medium}>
+          <Heading size={Heading.sizes.small}>
             <h2>Contribute</h2>
           </Heading>
-          <P>Learn how you can contribute to the design system.</P>
-          <A href="/guides/contribute">See more</A>
+          <P size={P.sizes.normal}>
+            Learn how you can contribute to the design system.
+          </P>
+          <Label strong>
+            <A href="/guides/contribute">See more</A>
+          </Label>
         </li>
         <li>
-          <Heading size={Heading.sizes.medium}>
+          <Heading size={Heading.sizes.small}>
             <h2>Resources</h2>
           </Heading>
           <ul className={styles.resources}>
             <li>
-              <A href="https://github.com/pluralsight/design-system">Github</A>
+              <Label strong>
+                <A href="https://github.com/pluralsight/design-system">
+                  Github
+                </A>
+              </Label>
             </li>
             <li>
-              <A href="slack://channel?id=70HPSJPP&team=02A50N5X">Slack</A>{' '}
-              (internal)
+              <Label strong>
+                <A href="slack://channel?id=70HPSJPP&team=02A50N5X">Slack</A>
+              </Label>{' '}
+              <Label size="small" color="secondary">
+                (internal)
+              </Label>
             </li>
             <li>
-              <A href="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web?node-id=69%3A2190">
-                Figma
-              </A>{' '}
-              (internal)
+              <Label strong>
+                <A href="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web?node-id=69%3A2190">
+                  Figma
+                </A>
+              </Label>{' '}
+              <Label size="small" color="secondary">
+                (internal)
+              </Label>
             </li>
           </ul>
         </li>

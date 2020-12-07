@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@17.0.2...@pluralsight/ps-design-system-text@17.0.3) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [17.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@17.0.1...@pluralsight/ps-design-system-text@17.0.2) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+## [17.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@17.0.0...@pluralsight/ps-design-system-text@17.0.1) (2020-12-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
+# [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@16.1.14...@pluralsight/ps-design-system-text@17.0.0) (2020-12-03)
+
+
+### Code Refactoring
+
+* **text:** add missing label to /react cjs export ([8ba63be](https://github.com/pluralsight/design-system/commit/8ba63bee6afb6669ebc67a2ed8dc2d7a7523f28a))
+
+
+### BREAKING CHANGES
+
+* **text:** Lots of api changes. Size props and actual size changes. New component, Text.Label, for general text use.
+
+
+
+
+
 ## [16.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@16.1.13...@pluralsight/ps-design-system-text@16.1.14) (2020-11-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-text
