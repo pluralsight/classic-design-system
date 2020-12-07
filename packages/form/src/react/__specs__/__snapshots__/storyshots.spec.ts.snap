@@ -786,6 +786,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-1ynlp2p=""
                 name="mm"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 placeholder="mm"
                 style={
@@ -793,6 +794,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     "width": "32px",
                   }
                 }
+                value=""
               />
               <span
                 data-css-9eecwn=""
@@ -804,6 +806,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-1ynlp2p=""
                 name="dd"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 placeholder="dd"
                 style={
@@ -811,6 +814,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                     "width": "24px",
                   }
                 }
+                value=""
               />
               <span
                 data-css-9eecwn=""
@@ -822,6 +826,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-1ynlp2p=""
                 name="yyyy"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onFocus={[Function]}
                 placeholder="yyyy"
                 style={
@@ -829,11 +834,13 @@ exports[`Storyshots Sample Form sample 1`] = `
                     "width": "48px",
                   }
                 }
+                value=""
               />
               <input
                 data-css-gyrv08=""
                 readOnly={true}
                 tabIndex={-1}
+                value=""
               />
               <button
                 data-css-3txxwd=""

@@ -114,14 +114,9 @@ export default Example
   />
   <TypesProp name="label" type="string" desc="identifying string for input" />
   <TypesProp
-    name="onSubBlur"
-    type="(React.FocusEvent, Date) => void"
-    desc="on subfield blur, returns undefined if invalid date"
-  />
-  <TypesProp
-    name="onSelect"
-    type="(React.FocusEvent | React.MouseEvent, Date) => void"
-    desc="triggered when a valid date selected from calendar or after sub field blur"
+    name="onChange"
+    type="(React.ChangeEvent | React.MouseEvent, Date) => void"
+    desc="triggered when a valid date selected from calendar or hen sub field onChange is triggered with a valid date"
   />
   <TypesProp
     name="subLabel"

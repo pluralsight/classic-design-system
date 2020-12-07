@@ -1,12 +1,20 @@
 /* eslint-disable react/display-name */
+import { layout } from '@pluralsight/ps-design-system-core'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
-
-import React, { useEffect, forwardRef, useState, HTMLAttributes } from 'react'
-import * as Icon from '@pluralsight/ps-design-system-icon'
+import React, {
+  HTMLAttributes,
+  ReactElement,
+  ReactText,
+  forwardRef,
+  useEffect,
+  useState
+} from 'react'
 
 import Dropdown from '../'
 import { DropdownContext, useDropdown } from '../../js'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 storiesOf('labels', module)
   .add('none', () => <Dropdown />)
@@ -105,9 +113,12 @@ storiesOf('disabled', module)
 storiesOf('whitelist', module)
   .add('onChange', () => {
     function ChangeStory() {
-      const [value, setValue] = React.useState('two')
+      const [value, setValue] = React.useState<ReactText | undefined>('two')
 
-      function handleChange(evt: React.MouseEvent, value: string) {
+      function handleChange(
+        evt: React.MouseEvent | React.KeyboardEvent,
+        value?: ReactText
+      ) {
         setValue(value)
       }
 
@@ -133,15 +144,18 @@ storiesOf('whitelist', module)
     return <ChangeStory />
   })
   .add('clear', () => {
-    function ClearStory(props) {
-      const [value, setValue] = React.useState('two')
+    const ClearStory: React.FC = props => {
+      const [value, setValue] = React.useState<ReactText | undefined>('two')
 
-      function handleChange(evt: React.MouseEvent, value: string) {
+      function handleChange(
+        evt: React.MouseEvent | React.KeyboardEvent,
+        value?: ReactText
+      ) {
         setValue(value)
       }
 
       function handleClear() {
-        setValue(null)
+        setValue(undefined)
       }
 
       return (
@@ -203,8 +217,11 @@ storiesOf('layouts', module)
   ))
   .add('custom width', () => {
     function ChangeStory() {
-      const [value, setValue] = React.useState('two')
-      function handleChange(ev: React.MouseEvent, value: string) {
+      const [value, setValue] = React.useState<ReactText | undefined>('two')
+      function handleChange(
+        evt: React.MouseEvent | React.KeyboardEvent,
+        value?: ReactText
+      ) {
         setValue(value)
       }
 
@@ -317,7 +334,7 @@ storiesOf('value', module)
   .add('external state change', () => {
     function StateChange() {
       const values = ['o', 'w', 'h']
-      const [value, setValue] = useState(values[0])
+      const [value, setValue] = useState<ReactText | undefined>(values[0])
       useEffect(() => {
         const timerId = setInterval(() => {
           const i = values.findIndex(v => v === value)
@@ -547,11 +564,11 @@ storiesOf('props whitelist', module).add('title', () => (
   />
 ))
 
-function AutofocusStory(props) {
+const AutofocusStory: React.FC = props => {
   const ref = React.createRef<HTMLButtonElement>()
 
   React.useEffect(() => {
-    ref.current.focus()
+    ref.current?.focus()
   })
 
   return <Dropdown {...props} ref={ref} />
@@ -649,11 +666,8 @@ storiesOf('portal', module).add('position', () => (
   </div>
 ))
 
-interface DropdownWithIconProps
-  extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
-  icon: React.ReactNode
-  onChange?: (e: React.MouseEvent, value: string) => void
-  menu: React.ReactNode
+interface DropdownWithIconProps extends React.ComponentProps<typeof Dropdown> {
+  icon: ReactElement
 }
 
 const DropdownWithIcon = forwardRef<HTMLButtonElement, DropdownWithIconProps>(
@@ -684,8 +698,13 @@ const DropdownWithIcon = forwardRef<HTMLButtonElement, DropdownWithIconProps>(
 )
 
 const DropdownWithDynamicIcon = () => {
-  const [selected, setSelected] = useState<null | string>()
-  const values = {
+  const [selected, setSelected] = useState<ReactText | undefined>()
+  interface ItemValues {
+    value: string
+    icon: ReactElement
+    label: string
+  }
+  const values: { [key: string]: ItemValues } = {
     channel: {
       value: 'channel',
       icon: <Icon.ChannelIcon style={{ marginRight: 8 }} />,
@@ -707,14 +726,26 @@ const DropdownWithDynamicIcon = () => {
       label: 'Labs'
     }
   }
-  const handleChange = (e: React.MouseEvent, value: string) => {
+  const handleChange = (
+    _evt: React.MouseEvent | React.KeyboardEvent,
+    value?: React.ReactText
+  ) => {
     setSelected(value)
   }
-  const icon = values[selected] ? (
-    values[selected].icon
-  ) : (
-    <div style={{ width: 24, height: 24, marginRight: 8 }} />
+
+  let icon = (
+    <div
+      style={{
+        width: layout.spacingLarge,
+        height: layout.spacingLarge,
+        marginRight: layout.spacingXSmall
+      }}
+    />
   )
+
+  if (typeof selected !== 'undefined' && values[selected]) {
+    icon = values[selected].icon
+  }
   return (
     <DropdownWithIcon
       icon={icon}

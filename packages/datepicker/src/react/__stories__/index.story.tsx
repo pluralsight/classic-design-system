@@ -10,8 +10,8 @@ import { formatISO8601 } from '../../js'
 const StateDemo: React.FC<{ value?: Date }> = props => {
   const [value, setValue] = React.useState(props.value)
 
-  function handleDatePickerSelect(
-    _evt: React.MouseEvent | React.FocusEvent,
+  function handleDatePickerChange(
+    _evt: React.MouseEvent | React.ChangeEvent,
     nextValue: Date
   ) {
     setValue(nextValue)
@@ -23,18 +23,14 @@ const StateDemo: React.FC<{ value?: Date }> = props => {
         Selected: {value ? formatISO8601(value) : '<none>'}
       </div>
 
-      <DatePicker value={value} onSelect={handleDatePickerSelect} />
+      <DatePicker value={value} onChange={handleDatePickerChange} />
     </div>
   )
 }
 
 storiesOf('labels', module)
   .add('none', () => (
-    <DatePicker
-      onSelect={action('onselect')}
-      onSubBlur={action('onblur')}
-      value={undefined}
-    />
+    <DatePicker onChange={action('onchange')} value={undefined} />
   ))
   .add('compare w/ textinput', () => (
     <div>
@@ -120,17 +116,13 @@ storiesOf('disabled', module).add('compare', () => (
   </div>
 ))
 
-storiesOf('whitelist', module)
-  .add('onChange', () => (
-    <DatePicker onChange={action('I changed')} value={undefined} />
-  ))
-  .add('name', () => (
-    <DatePicker
-      onChange={action('I changed')}
-      value={new Date(1944, 3, 2, 0, 0, 0, 0)}
-      name="dateForForm"
-    />
-  ))
+storiesOf('whitelist', module).add('name', () => (
+  <DatePicker
+    onChange={action('I changed')}
+    value={new Date(1944, 3, 2, 0, 0, 0, 0)}
+    name="dateForForm"
+  />
+))
 
 storiesOf('layouts', module)
   .add('full width', () => (

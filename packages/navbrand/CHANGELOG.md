@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@1.2.15...@pluralsight/ps-design-system-navbrand@1.2.16) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navbrand
+
+
+
+
+
+## [1.2.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@1.2.14...@pluralsight/ps-design-system-navbrand@1.2.15) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navbrand
+
+
+
+
+
 ## [1.2.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@1.2.13...@pluralsight/ps-design-system-navbrand@1.2.14) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navbrand

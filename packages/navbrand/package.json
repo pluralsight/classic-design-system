@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navbrand",
-  "version": "1.2.14",
+  "version": "1.2.16",
   "description": "Navbrand UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,9 +22,9 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.5.3",
-    "@pluralsight/ps-design-system-halo": "^7.1.14",
-    "@pluralsight/ps-design-system-util": "^6.0.5"
+    "@pluralsight/ps-design-system-core": "^6.6.1",
+    "@pluralsight/ps-design-system-halo": "^7.1.16",
+    "@pluralsight/ps-design-system-util": "^6.0.7"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.8",
@@ -33,7 +33,7 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^2.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.14"
+    "@pluralsight/ps-design-system-build": "^2.0.1",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.16"
   }
 }
