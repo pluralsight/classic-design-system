@@ -17,8 +17,8 @@ const dark = {
 
   borderColor: colorsBorder.lowOnDark,
   rowHoverColor: colorsBackgroundDark[2],
-  rowSelectedColor: colorsBackgroundDark[3],
-  stickyBgColor: colorsBackgroundDark[2],
+  rowSelectedColor: colorsBackgroundDark[2],
+  stickyBgColor: colorsBackgroundDark[1],
   textColor: colorsTextIcon.highOnDark,
   textHeadingColor: colorsTextIcon.lowOnDark,
   textHeadingColorHover: colorsTextIcon.highOnDark
@@ -30,7 +30,7 @@ const light = {
   borderColor: colorsBorder.lowOnLight,
   rowHoverColor: colorsBackgroundLight[2],
   rowSelectedColor: colorsBackgroundLight[1],
-  stickyBgColor: colorsBackgroundLight[2],
+  stickyBgColor: colorsBackgroundLight[3],
   textColor: colorsTextIcon.highOnLight,
   textHeadingColor: colorsTextIcon.lowOnLight,
   textHeadingColorHover: colorsTextIcon.highOnLight
@@ -94,11 +94,13 @@ export default {
   },
   [`.psds-table${dark.className}`]: {
     borderColor: dark.borderColor,
-    color: dark.textColor
+    color: dark.textColor,
+    '& > tbody > tr:first-child': { borderColor: colorsBorder.highOnDark }
   },
   [`.psds-table${light.className}`]: {
     borderColor: light.borderColor,
-    color: light.textColor
+    color: light.textColor,
+    '& > tbody > tr:first-child': { borderColor: colorsBorder.highOnLight }
   },
 
   '.psds-table__cell': {
@@ -191,11 +193,15 @@ export default {
 
   [`.psds-table__row${dark.className}`]: {
     borderTop: `1px solid ${dark.borderColor}`,
-    '&:hover > th, &:hover > td': { backgroundColor: dark.rowHoverColor }
+    'tbody &:hover > th, tbody &:hover > td': {
+      backgroundColor: dark.rowHoverColor
+    }
   },
   [`.psds-table__row${light.className}`]: {
     borderTop: `1px solid ${light.borderColor}`,
-    '&:hover > th, &:hover > td': { backgroundColor: light.rowHoverColor }
+    'tbody &:hover > th, tbody &:hover > td': {
+      backgroundColor: light.rowHoverColor
+    }
   },
   '.psds-table__row--collapsed': { display: 'none' },
   [`.psds-table__row--selected${dark.className}`]: {
