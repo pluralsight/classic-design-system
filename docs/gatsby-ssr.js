@@ -48,6 +48,7 @@ const initialThemeName = cookieThemeName || (prefersLight && '${Theme.names.ligh
 document.body.setAttribute('data-psds-theme', initialThemeName)
 })()
   `
+
   // eslint-disable-next-line react/no-danger
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />
 }
