@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
