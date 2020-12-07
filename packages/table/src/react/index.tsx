@@ -93,6 +93,7 @@ interface TableStatics {
   Head: typeof TableHead
   Header: typeof TableHeader
   Row: typeof TableRow
+  alignments: typeof alignments
 }
 type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
@@ -245,6 +246,8 @@ Table.Cell = TableCell
 Table.Head = TableHead
 Table.Header = TableHeader
 Table.Row = TableRow
+
+Table.alignments = alignments
 
 const isBoolean = (val: unknown) => typeof val === 'boolean'
 const isDefined = (val: unknown) => typeof val !== 'undefined'
