@@ -1,7 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots disabled compare 1`] = `
-<div>
+exports[`Storyshots Components/TextArea All Labels 1`] = `
+Array [
+  <label
+    data-css-na8jqt=""
+  >
+    <div
+      data-css-9kywkh=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-frmafg=""
+          disabled={false}
+          placeholder="Some placeholder"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      data-css-1u5arfw=""
+    >
+      Some sub label
+    </div>
+  </label>,
+  <label
+    data-css-na8jqt=""
+  >
+    <div
+      data-css-9kywkh=""
+    >
+      Some label
+    </div>
+    <div
+      data-css-1ios7mb=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <textarea
+          data-css-1105jtv=""
+          disabled={false}
+          placeholder="Some placeholder"
+          style={
+            Object {
+              "height": 112,
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      data-css-1u5arfw=""
+    >
+      Some sub label
+    </div>
+  </label>,
+]
+`;
+
+exports[`Storyshots Components/TextArea Disabled Compare 1`] = `
+Array [
   <label
     data-css-na8jqt=""
   >
@@ -33,7 +102,7 @@ exports[`Storyshots disabled compare 1`] = `
     >
       Still normal
     </div>
-  </label>
+  </label>,
   <label
     data-css-1tctpgo=""
   >
@@ -65,12 +134,12 @@ exports[`Storyshots disabled compare 1`] = `
     >
       Neither am I
     </div>
-  </label>
-</div>
+  </label>,
+]
 `;
 
-exports[`Storyshots error compare 1`] = `
-<div>
+exports[`Storyshots Components/TextArea Error Compare 1`] = `
+Array [
   <label
     data-css-na8jqt=""
   >
@@ -102,7 +171,7 @@ exports[`Storyshots error compare 1`] = `
     >
       Still normal
     </div>
-  </label>
+  </label>,
   <label
     data-css-na8jqt=""
   >
@@ -153,170 +222,11 @@ exports[`Storyshots error compare 1`] = `
     >
       Here
     </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots focus onFocus/onBlur 1`] = `
-<label
-  data-css-na8jqt=""
->
-  <div
-    data-css-1ios7mb=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <textarea
-        data-css-frmafg=""
-        disabled={false}
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="Focus on me!"
-        style={
-          Object {
-            "height": 112,
-          }
-        }
-      />
-    </div>
-  </div>
-</label>
-`;
-
-exports[`Storyshots labels all 1`] = `
-Array [
-  <label
-    data-css-na8jqt=""
-  >
-    <div
-      data-css-9kywkh=""
-    >
-      Some label
-    </div>
-    <div
-      data-css-1ios7mb=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <textarea
-          data-css-frmafg=""
-          disabled={false}
-          placeholder="Some placeholder"
-          style={
-            Object {
-              "height": 112,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      data-css-1u5arfw=""
-    >
-      Some sublabel
-    </div>
-  </label>,
-  <label
-    data-css-na8jqt=""
-  >
-    <div
-      data-css-9kywkh=""
-    >
-      Some label
-    </div>
-    <div
-      data-css-1ios7mb=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <textarea
-          data-css-1105jtv=""
-          disabled={false}
-          placeholder="Some placeholder"
-          style={
-            Object {
-              "height": 112,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      data-css-1u5arfw=""
-    >
-      Some sublabel
-    </div>
   </label>,
 ]
 `;
 
-exports[`Storyshots labels label 1`] = `
-<label
-  data-css-na8jqt=""
->
-  <div
-    data-css-9kywkh=""
-  >
-    Some label
-  </div>
-  <div
-    data-css-1ios7mb=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <textarea
-        data-css-frmafg=""
-        disabled={false}
-        style={
-          Object {
-            "height": 112,
-          }
-        }
-      />
-    </div>
-  </div>
-</label>
-`;
-
-exports[`Storyshots labels label and subLabel 1`] = `
-<label
-  data-css-na8jqt=""
->
-  <div
-    data-css-9kywkh=""
-  >
-    Some label
-  </div>
-  <div
-    data-css-1ios7mb=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <textarea
-        data-css-frmafg=""
-        disabled={false}
-        style={
-          Object {
-            "height": 112,
-          }
-        }
-      />
-    </div>
-  </div>
-  <div
-    data-css-1u5arfw=""
-  >
-    Some sublabel
-  </div>
-</label>
-`;
-
-exports[`Storyshots labels none 1`] = `
+exports[`Storyshots Components/TextArea Focus 1`] = `
 <label
   data-css-na8jqt=""
 >
@@ -340,104 +250,7 @@ exports[`Storyshots labels none 1`] = `
 </label>
 `;
 
-exports[`Storyshots labels placeholder 1`] = `
-<label
-  data-css-na8jqt=""
->
-  <div
-    data-css-1ios7mb=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <textarea
-        data-css-frmafg=""
-        disabled={false}
-        placeholder="some placeholder"
-        style={
-          Object {
-            "height": 112,
-          }
-        }
-      />
-    </div>
-  </div>
-</label>
-`;
-
-exports[`Storyshots labels subLabel 1`] = `
-<label
-  data-css-na8jqt=""
->
-  <div
-    data-css-1ios7mb=""
-  >
-    <div
-      data-css-ctre2o=""
-    >
-      <textarea
-        data-css-frmafg=""
-        disabled={false}
-        style={
-          Object {
-            "height": 112,
-          }
-        }
-      />
-    </div>
-  </div>
-  <div
-    data-css-1u5arfw=""
-  >
-    Some sublabel
-  </div>
-</label>
-`;
-
-exports[`Storyshots layouts Form.VerticalLayout 1`] = `
-<div
-  data-css-63oe3q=""
->
-  <div
-    data-css-4l6uky=""
-  >
-    <label
-      data-css-na8jqt=""
-      style={
-        Object {
-          "maxWidth": "none",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        data-css-9kywkh=""
-      >
-        Inside Form.VerticalLayout
-      </div>
-      <div
-        data-css-1ios7mb=""
-      >
-        <div
-          data-css-ctre2o=""
-        >
-          <textarea
-            data-css-frmafg=""
-            disabled={false}
-            style={
-              Object {
-                "height": 112,
-              }
-            }
-          />
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots layouts full width 1`] = `
+exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
 <div
   style={
     Object {
@@ -533,14 +346,77 @@ exports[`Storyshots layouts full width 1`] = `
 </div>
 `;
 
-exports[`Storyshots rows less than 4 1`] = `
+exports[`Storyshots Components/TextArea Label 1`] = `
 <label
   data-css-na8jqt=""
 >
   <div
     data-css-9kywkh=""
   >
-    Min Height Engages
+    Some label
+  </div>
+  <div
+    data-css-1ios7mb=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <textarea
+        data-css-frmafg=""
+        disabled={false}
+        style={
+          Object {
+            "height": 112,
+          }
+        }
+      />
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextArea Label And Sub Label 1`] = `
+<label
+  data-css-na8jqt=""
+>
+  <div
+    data-css-9kywkh=""
+  >
+    Some label
+  </div>
+  <div
+    data-css-1ios7mb=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <textarea
+        data-css-frmafg=""
+        disabled={false}
+        style={
+          Object {
+            "height": 112,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    data-css-1u5arfw=""
+  >
+    Some sublabel
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextArea Less Than Four Rows 1`] = `
+<label
+  data-css-na8jqt=""
+>
+  <div
+    data-css-9kywkh=""
+  >
+    Min height engages
   </div>
   <div
     data-css-1ios7mb=""
@@ -562,14 +438,14 @@ exports[`Storyshots rows less than 4 1`] = `
 </label>
 `;
 
-exports[`Storyshots rows more than 4 1`] = `
+exports[`Storyshots Components/TextArea More Than Four Rows 1`] = `
 <label
   data-css-na8jqt=""
 >
   <div
     data-css-9kywkh=""
   >
-    6 Rows of Text
+    6 rows of text
   </div>
   <div
     data-css-1ios7mb=""
@@ -591,7 +467,56 @@ exports[`Storyshots rows more than 4 1`] = `
 </label>
 `;
 
-exports[`Storyshots whitelist name 1`] = `
+exports[`Storyshots Components/TextArea No Label 1`] = `
+<label
+  data-css-na8jqt=""
+>
+  <div
+    data-css-1ios7mb=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <textarea
+        data-css-frmafg=""
+        disabled={false}
+        style={
+          Object {
+            "height": 112,
+          }
+        }
+      />
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextArea Placeholder 1`] = `
+<label
+  data-css-na8jqt=""
+>
+  <div
+    data-css-1ios7mb=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <textarea
+        data-css-frmafg=""
+        disabled={false}
+        placeholder="some placeholder"
+        style={
+          Object {
+            "height": 112,
+          }
+        }
+      />
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextArea Prop Name 1`] = `
 <label
   data-css-na8jqt=""
 >
@@ -617,7 +542,7 @@ exports[`Storyshots whitelist name 1`] = `
 </label>
 `;
 
-exports[`Storyshots whitelist onChange 1`] = `
+exports[`Storyshots Components/TextArea Prop On Change 1`] = `
 <label
   data-css-na8jqt=""
 >
@@ -630,8 +555,9 @@ exports[`Storyshots whitelist onChange 1`] = `
       <textarea
         data-css-frmafg=""
         disabled={false}
-        onChange={[Function]}
-        placeholder="Change me"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        placeholder="Focus on me!"
         style={
           Object {
             "height": 112,
@@ -639,6 +565,35 @@ exports[`Storyshots whitelist onChange 1`] = `
         }
       />
     </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextArea Sub Label 1`] = `
+<label
+  data-css-na8jqt=""
+>
+  <div
+    data-css-1ios7mb=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <textarea
+        data-css-frmafg=""
+        disabled={false}
+        style={
+          Object {
+            "height": 112,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    data-css-1u5arfw=""
+  >
+    Some sublabel
   </div>
 </label>
 `;

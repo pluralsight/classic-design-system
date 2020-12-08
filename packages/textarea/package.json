@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.1",
-    "@pluralsight/ps-design-system-form": "^8.0.19",
     "@pluralsight/ps-design-system-storybook-preset": "^0.2.16",
     "@pluralsight/ps-design-system-theme": "^6.0.12"
   }
