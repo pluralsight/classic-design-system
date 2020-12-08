@@ -33,7 +33,6 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.1",
     "@pluralsight/ps-design-system-button": "^19.0.15",
-    "@pluralsight/ps-design-system-drawer": "^8.0.5",
     "@pluralsight/ps-design-system-icon": "^19.0.14",
     "@pluralsight/ps-design-system-storybook-preset": "^0.2.16",
     "@pluralsight/ps-design-system-theme": "^6.0.12"
