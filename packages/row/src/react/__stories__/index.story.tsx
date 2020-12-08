@@ -1,9 +1,7 @@
-import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
-import Drawer from '@pluralsight/ps-design-system-drawer'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
 import Row from '..'
@@ -389,35 +387,6 @@ storiesOf('fullOverlay', module)
       }
     />
   ))
-
-const drawerStory = storiesOf('in drawer', module)
-Object.values(Row.sizes).forEach(size =>
-  drawerStory.add(size, () => (
-    <Drawer>
-      <Drawer.Summary>
-        <Row
-          title="Course thing you do"
-          metadata1={['1m 46s']}
-          image={<Row.Image src={getImgSrc()} />}
-          actionBar={[
-            <Button
-              size={Button.sizes.small}
-              appearance={Button.appearances.flat}
-              icon={<Icon.MoreIcon />}
-              key="more"
-              onClick={action('clicked action')}
-            />
-          ]}
-          actionBarVisible
-          size={size}
-        />
-      </Drawer.Summary>
-      <Drawer.Details>
-        <div>some goodies in the drawer</div>
-      </Drawer.Details>
-    </Drawer>
-  ))
-)
 
 storiesOf('in a stack', module).add('no top border on first row', () => (
   <>
