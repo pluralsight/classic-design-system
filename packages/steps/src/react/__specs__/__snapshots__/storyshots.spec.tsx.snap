@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Steps Three 1`] = `
+<div>
+  <div>
+    first
+  </div>
+  <div>
+    second
+  </div>
+  <div>
+    third
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps Two 1`] = `
+<div>
+  <div>
+    first
+  </div>
+  <div>
+    second
+  </div>
+</div>
+`;
