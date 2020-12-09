@@ -428,6 +428,17 @@ const groups = [
         title: 'Feature flags'
       }
     ]
+  },
+  {
+    header: {
+      title: 'Patterns'
+    },
+    items: [
+      {
+        href: '/patterns/page-headings',
+        title: 'Page headings'
+      }
+    ]
   }
 ]
 

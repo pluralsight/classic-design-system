@@ -1,0 +1,64 @@
+---
+name: Page headings
+route: /patterns/page-headings
+---
+
+# Page heading patterns
+
+<TableOfContents {...props} />
+
+### "Basic" heading
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Button from '@pluralsight/ps-design-system-button'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="heading">
+      <div className="title">
+        <Heading>
+          <h1>Heading</h1>
+        </Heading>
+      </div>
+      <div className="button-bar">
+        <SearchInput placeholder="Placeholder" />
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button>Label</Button>
+      </div>
+      <style jsx>{`
+        @media (max-width: 767px) {
+          .button-bar > * {
+            display: block;
+            margin-bottom: ${layout.spacingXSmall};
+            width: 100%;
+          }
+        }
+        @media (min-width: 768px) {
+          .button-bar > * {
+            margin-right: ${layout.spacingXSmall};
+          }
+          .button-bar > *:last-child {
+            margin-right: 0;
+          }
+        }
+        @media (min-width: 1024px) {
+          .heading {
+            display: flex;
+            align-items: center;
+          }
+          .title {
+            margin-right: ${layout.spacingLarge};
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```
