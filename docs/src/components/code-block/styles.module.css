@@ -20,7 +20,7 @@
   display: flex;
   height: 40px;
   padding: 0 var(--psLayoutSpacingXSmall);
-  background-color: var(--appColorsBackground2);
+  background-color: var(--appColorsBackgroundMed);
 }
 .actionsLeft {
   margin-right: auto;
