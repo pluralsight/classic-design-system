@@ -16,9 +16,10 @@ import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
+// TODO: right-align button-bar on desktop size
 function Example() {
   return (
-    <div className="heading">
+    <div className="basic-heading">
       <div className="title">
         <Heading>
           <h1>Heading</h1>
@@ -54,13 +55,102 @@ function Example() {
           }
         }
         @media (min-width: 1024px) {
-          .heading {
+          .basic-heading {
             display: flex;
             align-items: center;
           }
           .title {
             margin-right: ${layout.spacingLarge};
           }
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```
+
+### "Robust" heading
+
+```typescript
+import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
+import Badge from '@pluralsight/ps-design-system-badge'
+import Button from '@pluralsight/ps-design-system-button'
+import StarRating from '@pluralsight/ps-design-system-starrating'
+import Tag from '@pluralsight/ps-design-system-tag'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="robust-heading">
+      <Badge>
+        Course
+      </Badge>
+      <Heading>
+        <h1>Heading</h1>
+      </Heading>
+      <P>
+        I'm baby chambray cronut vegan cray banjo man bun organic biodiesel
+        readymade tumblr la croix pug blog microdosing. Cred squid man bun
+        iPhone, ethical banh mi post-ironic palo santo 90's vexillologist. 8-bit
+        viral.
+      </P>
+      <div className="tags">
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+      </div>
+      <ul className="metadata">
+        <li>Meta data</li>
+        <li>Meta data</li>
+        <li>Meta data</li>
+        <li>
+          <StarRating value={3} />
+        </li>
+      </ul>
+      <div className="button-bar">
+        <Button>Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+      </div>
+      <style jsx>{`
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .tags > * {
+          margin-right: ${layout.spacingXSmall};
+          margin-bottom: ${layout.spacingXSmall};
+        }
+        .metadata {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          list-style: none;
+          margin: ${layout.spacingXSmall} 0;
+        }
+        .metadata > * {
+          margin-bottom: ${layout.spacingXSmall};
+        }
+        .metadata > *:not(:last-child):after {
+          content: '\\00b7';
+          display: inline-block;
+          height: 1em;
+          width: ${layout.spacingLarge};
+          text-align: center;
+        }
+        .button-bar {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .button-bar > * {
+          margin-right: ${layout.spacingXSmall};
+          margin-bottom: ${layout.spacingXSmall};
         }
       `}</style>
     </div>
