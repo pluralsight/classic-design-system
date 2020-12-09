@@ -32,14 +32,20 @@ function Example() {
         <Button>Label</Button>
       </div>
       <style jsx>{`
+        .button-bar > * {
+          margin-bottom: ${layout.spacingXSmall};
+        }
         @media (max-width: 767px) {
           .button-bar > * {
             display: block;
-            margin-bottom: ${layout.spacingXSmall};
             width: 100%;
           }
         }
         @media (min-width: 768px) {
+          .button-bar {
+            display: flex;
+            flex-wrap: wrap;
+          }
           .button-bar > * {
             margin-right: ${layout.spacingXSmall};
           }
