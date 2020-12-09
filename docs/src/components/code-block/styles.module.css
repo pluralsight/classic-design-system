@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:500');
+@import url('https://fonts.googleapis.com/css?family=DM+Mono:400');
 
 .header {
   display: flex;
@@ -46,7 +46,7 @@
 
 .editor {
   position: relative;
-  font-family: 'source code pro', monospace;
+  font-family: 'DM Mono', monospace;
   font-size: var(--psTypeFontSizeSmall);
   line-height: var(--psTypeLineHeightTight);
   overflow: auto;
