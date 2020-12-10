@@ -19,12 +19,12 @@ import React from 'react'
 function Example() {
   return (
     <div className="basic-heading">
-      <div className="title">
+      <div className="basic-heading__title">
         <Heading size="xLarge">
           <h1>Heading</h1>
         </Heading>
       </div>
-      <div className="button-bar">
+      <div className="basic-heading__button-bar">
         <SearchInput placeholder="Placeholder" />
         <Button appearance="secondary">Label</Button>
         <Button appearance="secondary">Label</Button>
@@ -32,24 +32,24 @@ function Example() {
         <Button>Label</Button>
       </div>
       <style jsx>{`
-        .button-bar > * {
+        .basic-heading__button-bar > * {
           margin-bottom: ${layout.spacingXSmall};
         }
         @media (max-width: 767px) {
-          .button-bar > * {
+          .basic-heading__button-bar > * {
             display: block;
             width: 100%;
           }
         }
         @media (min-width: 768px) {
-          .button-bar {
+          .basic-heading__button-bar {
             display: flex;
             flex-wrap: wrap;
           }
-          .button-bar > * {
+          .basic-heading__button-bar > * {
             margin-right: ${layout.spacingXSmall};
           }
-          .button-bar > *:last-child {
+          .basic-heading__button-bar > *:last-child {
             margin-right: 0;
           }
         }
@@ -59,7 +59,7 @@ function Example() {
             justify-content: space-between;
             align-items: center;
           }
-          .title {
+          .basic-heading__title {
             margin-right: ${layout.spacingLarge};
           }
         }
@@ -163,7 +163,7 @@ function Example() {
         iPhone, ethical banh mi post-ironic palo santo 90's vexillologist. 8-bit
         viral.
       </P>
-      <div className="tags">
+      <div className="robust-heading__tags">
         <Tag>Tag label</Tag>
         <Tag>Tag label</Tag>
         <Tag>Tag label</Tag>
@@ -171,7 +171,7 @@ function Example() {
         <Tag>Tag label</Tag>
         <Tag>Tag label</Tag>
       </div>
-      <ul className="metadata">
+      <ul className="robust-heading__metadata">
         <li>Meta data</li>
         <li>Meta data</li>
         <li>Meta data</li>
@@ -179,43 +179,43 @@ function Example() {
           <StarRating value={3} />
         </li>
       </ul>
-      <div className="button-bar">
+      <div className="robust-heading__button-bar">
         <Button>Label</Button>
         <Button appearance="secondary">Label</Button>
         <Button appearance="secondary">Label</Button>
         <Button appearance="secondary">Label</Button>
       </div>
       <style jsx>{`
-        .tags {
+        .robust-heading__tags {
           display: flex;
           flex-wrap: wrap;
         }
-        .tags > * {
+        .robust-heading__tags > * {
           margin-right: ${layout.spacingXSmall};
           margin-bottom: ${layout.spacingXSmall};
         }
-        .metadata {
+        .robust-heading__metadata {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
           list-style: none;
           margin: ${layout.spacingXSmall} 0;
         }
-        .metadata > * {
+        .robust-heading__metadata > * {
           margin-bottom: ${layout.spacingXSmall};
         }
-        .metadata > *:not(:last-child):after {
+        .robust-heading__metadata > *:not(:last-child):after {
           content: '\\00b7';
           display: inline-block;
           height: 1em;
           width: ${layout.spacingLarge};
           text-align: center;
         }
-        .button-bar {
+        .robust-heading__button-bar {
           display: flex;
           flex-wrap: wrap;
         }
-        .button-bar > * {
+        .robust-heading__button-bar > * {
           margin-right: ${layout.spacingXSmall};
           margin-bottom: ${layout.spacingXSmall};
         }
@@ -239,14 +239,14 @@ import React from 'react'
 function Example() {
   return (
     <div className="power-heading">
-      <div className="title">
+      <div className="power-heading__title">
         <div>
           <Breadcrumb>Label</Breadcrumb>
           <Heading>
             <h1>Page Title</h1>
           </Heading>
         </div>
-        <div className="main-action-group">
+        <div className="power-heading__main-action-group">
           <div>
             <div>
               <Label strong size="medium">
@@ -273,25 +273,25 @@ function Example() {
       </Tab.List>
       <style jsx>{`
         @media (max-width: 767px) {
-          .main-action-group > * {
+          .power-heading__main-action-group > * {
             display: block;
             width: 100%;
           }
-          .title {
+          .power-heading__title {
             margin-bottom: ${layout.spacingLarge};
           }
         }
         @media (min-width: 768px) {
-          .title {
+          .power-heading__title {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
           }
-          .main-action-group {
+          .power-heading__main-action-group {
             display: flex;
             align-items: center;
           }
-          .main-action-group > div:first-child {
+          .power-heading__main-action-group > div:first-child {
             text-align: right;
             margin-right: ${layout.spacingSmall};
           }
