@@ -16,12 +16,11 @@ import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
-// TODO: right-align button-bar on desktop size
 function Example() {
   return (
     <div className="basic-heading">
       <div className="title">
-        <Heading>
+        <Heading size="xLarge">
           <h1>Heading</h1>
         </Heading>
       </div>
@@ -57,9 +56,79 @@ function Example() {
         @media (min-width: 1024px) {
           .basic-heading {
             display: flex;
+            justify-content: space-between;
             align-items: center;
           }
           .title {
+            margin-right: ${layout.spacingLarge};
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```
+
+### "Basic alt 2" heading
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Button from '@pluralsight/ps-design-system-button'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="basic-heading2">
+      <div className="basic-heading2__title">
+        <Heading>
+          <h1>Heading</h1>
+        </Heading>
+        <PlaceholderIcon />
+      </div>
+      <div className="basic-heading2__button-bar">
+        <Button>Label</Button>
+        <SearchInput placeholder="Placeholder" />
+      </div>
+      <style jsx>{`
+        .basic-heading2__title {
+          display: flex;
+          align-items: center;
+        }
+        .basic-heading2__title > *:last-child {
+          margin-left: ${layout.spacingSmall};
+        }
+        .basic-heading2__button-bar > * {
+          margin-bottom: ${layout.spacingXSmall};
+        }
+        @media (max-width: 767px) {
+          .basic-heading2__button-bar > * {
+            display: block;
+            width: 100%;
+          }
+        }
+        @media (min-width: 768px) {
+          .basic-heading2__button-bar {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .basic-heading2__button-bar > * {
+            margin-right: ${layout.spacingXSmall};
+          }
+          .basic-heading2__button-bar > *:last-child {
+            margin-right: 0;
+          }
+        }
+        @media (min-width: 1024px) {
+          .basic-heading2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .basic-heading2__title {
             margin-right: ${layout.spacingLarge};
           }
         }
