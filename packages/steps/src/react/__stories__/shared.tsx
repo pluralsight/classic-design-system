@@ -1,4 +1,6 @@
+import * as core from '@pluralsight/ps-design-system-core'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
 import React from 'react'
 
 import { statuses } from '../../vars'
@@ -62,4 +64,12 @@ export function useStoryData() {
   )
 
   return { steps, selectStep }
+}
+
+export const FixedWidthContainer: React.FC<{ width?: number }> = props => {
+  const { width = 300, ...rest } = props
+
+  return (
+    <div {...css({ padding: core.layout.spacingMedium, width })} {...rest} />
+  )
 }

@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-circularprogress": "*",
     "@pluralsight/ps-design-system-storybook-preset": "*"
   }
 }

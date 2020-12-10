@@ -1,374 +1,396 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
+exports[`Storyshots Components/Steps/Marker Animations 1`] = `
 <div
-  data-css-yyluzm=""
+  data-css-103e380=""
 >
   <div
-    data-css-kbm103=""
+    data-css-1bdr1pk=""
+    data-css-mwehb=""
   >
-    <div
-      data-css-1n9kjbf=""
-      data-css-37nc4w=""
-      data-status="completed"
+    <svg
+      viewBox="0 0 36 36"
     >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-67s38y=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
+      <circle
+        cx={18}
+        cy={18}
+        data-css-sbdtqb=""
+        r={17}
+        strokeWidth={2}
+      />
+      <polyline
+        data-css-67s38y=""
+        points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
           "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Select type
-    </div>
+        strokeWidth={2}
+      />
+    </svg>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Marker Completed Large 1`] = `
+<div
+  data-css-103e380=""
+>
   <div
-    data-css-kbm103=""
+    data-css-1bdr1pk=""
+    data-css-mwehb=""
   >
-    <div
-      data-css-1ss5c56=""
-      data-css-37nc4w=""
-      data-status="current"
+    <svg
+      viewBox="0 0 36 36"
     >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
+      <circle
+        cx={18}
+        cy={18}
+        data-css-sbdtqb=""
+        r={17}
+        strokeWidth={2}
+      />
+      <polyline
+        data-css-67s38y=""
+        points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Marker Completed Medium 1`] = `
+<div
+  data-css-103e380=""
+>
+  <div
+    data-css-37nc4w=""
+    data-css-tx2fkq=""
+  >
+    <svg
+      viewBox="0 0 24 24"
+    >
+      <circle
+        cx={12}
+        cy={12}
+        data-css-sbdtqb=""
+        r={11}
+        strokeWidth={2}
+      />
+      <polyline
+        data-css-67s38y=""
+        points="
             6.315789473684211 12,
             10.434782608695652 16,
             17.142857142857142 8
           "
-          strokeWidth={2}
-        />
-      </svg>
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Marker Current Large 1`] = `
+<div
+  data-css-103e380=""
+>
+  <div
+    data-css-1q7daym=""
+    data-css-mwehb=""
+  >
+    <svg
+      viewBox="0 0 36 36"
+    >
+      <circle
+        cx={18}
+        cy={18}
+        data-css-sbdtqb=""
+        r={17}
+        strokeWidth={2}
+      />
+      <polyline
+        data-css-y56a94=""
+        points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Marker Current Medium 1`] = `
+<div
+  data-css-103e380=""
+>
+  <div
+    data-css-16wiowc=""
+    data-css-37nc4w=""
+  >
+    <svg
+      viewBox="0 0 24 24"
+    >
+      <circle
+        cx={12}
+        cy={12}
+        data-css-sbdtqb=""
+        r={11}
+        strokeWidth={2}
+      />
+      <polyline
+        data-css-y56a94=""
+        points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Marker Incomplete Large 1`] = `
+<div
+  data-css-103e380=""
+>
+  <div
+    data-css-2195hb=""
+    data-css-mwehb=""
+  >
+    <svg
+      viewBox="0 0 36 36"
+    >
+      <circle
+        cx={18}
+        cy={18}
+        data-css-sbdtqb=""
+        r={17}
+        strokeWidth={2}
+      />
+      <polyline
+        data-css-y56a94=""
+        points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Marker Incomplete Medium 1`] = `
+<div
+  data-css-103e380=""
+>
+  <div
+    data-css-1dvenk2=""
+    data-css-37nc4w=""
+  >
+    <svg
+      viewBox="0 0 24 24"
+    >
+      <circle
+        cx={12}
+        cy={12}
+        data-css-sbdtqb=""
+        r={11}
+        strokeWidth={2}
+      />
+      <polyline
+        data-css-y56a94=""
+        points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+        strokeWidth={2}
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-1abx40i=""
+      >
+        <div
+          aria-live="off"
+          data-css-6wu9td=""
+          role="region"
+        >
+          100% complete
+        </div>
+        <svg
+          data-css-r8je9y=""
+          version="1.1"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="24"
+            cy="24"
+            data-css-rk8c6r=""
+            r={22}
+          />
+          <circle
+            cx="24"
+            cy="24"
+            data-css-17x5ehd=""
+            r={22}
+            strokeDasharray="138.23007675795088 138.23007675795088"
+            strokeDashoffset={0}
+          />
+        </svg>
+      </div>
     </div>
     <div>
-      Select template
       <div
-        data-css-do8pgt=""
+        data-css-15tg1fu=""
       >
-        An optional description to provide more detail about this step.
+        <p>
+          Grapple case shot
+        </p>
       </div>
     </div>
   </div>
   <div
-    data-css-kbm103=""
+    data-css-1xgx4w1=""
   >
     <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
+      data-css-1f2gu5k=""
     >
-      <svg
-        viewBox="0 0 24 24"
+      <div
+        data-css-1abx40i=""
       >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
+        <div
+          aria-live="off"
+          data-css-6wu9td=""
+          role="region"
+        >
+          60% complete
+        </div>
+        <svg
+          data-css-r8je9y=""
+          version="1.1"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="24"
+            cy="24"
+            data-css-rk8c6r=""
+            r={22}
+          />
+          <circle
+            cx="24"
+            cy="24"
+            data-css-17x5ehd=""
+            r={22}
+            strokeDasharray="138.23007675795088 138.23007675795088"
+            strokeDashoffset={55.29203070318036}
+          />
+        </svg>
+      </div>
     </div>
     <div>
-      Add details
+      <div
+        data-css-16qh227=""
+      >
+        <p>
+          Grapple case shot
+        </p>
+      </div>
     </div>
   </div>
   <div
-    data-css-kbm103=""
+    data-css-1jawhk1=""
   >
     <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
+      data-css-1f2gu5k=""
     >
-      <svg
-        viewBox="0 0 24 24"
+      <div
+        data-css-1abx40i=""
       >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
+        <div
+          aria-live="off"
+          data-css-6wu9td=""
+          role="region"
+        >
+          0% complete
+        </div>
+        <svg
+          data-css-r8je9y=""
+          version="1.1"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="24"
+            cy="24"
+            data-css-rk8c6r=""
+            r={22}
+          />
+          <circle
+            cx="24"
+            cy="24"
+            data-css-17x5ehd=""
+            r={22}
+            strokeDasharray="138.23007675795088 138.23007675795088"
+            strokeDashoffset={138.23007675795088}
+          />
+        </svg>
+      </div>
     </div>
     <div>
-      Select goals
-    </div>
-  </div>
-  <div
-    data-css-kbm103=""
-  >
-    <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
-    >
-      <svg
-        viewBox="0 0 24 24"
+      <div
+        data-css-15tg1fu=""
       >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Review
+        <p>
+          Grapple case shot
+        </p>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Components/Steps/vertical Basic 1`] = `
+exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
 <div
-  data-css-yyluzm=""
+  data-css-12c8fh6=""
 >
   <div
-    data-css-kbm103=""
+    data-css-1jawhk1=""
   >
     <div
-      data-css-1n9kjbf=""
-      data-css-37nc4w=""
-      data-status="completed"
-    >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-67s38y=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Select type
-    </div>
-  </div>
-  <div
-    data-css-kbm103=""
-  >
-    <div
-      data-css-1ss5c56=""
-      data-css-37nc4w=""
-      data-status="current"
-    >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Select template
-      <div
-        data-css-do8pgt=""
-      >
-        An optional description to provide more detail about this step.
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-kbm103=""
-  >
-    <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
-    >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Add details
-    </div>
-  </div>
-  <div
-    data-css-kbm103=""
-  >
-    <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
-    >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Select goals
-    </div>
-  </div>
-  <div
-    data-css-kbm103=""
-  >
-    <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
-    >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Review
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
-<div
-  data-css-r17z78=""
->
-  <div
-    data-css-yyluzm=""
-  >
-    <div
-      data-css-y62ldj=""
-      onClick={[Function]}
+      data-css-1f2gu5k=""
     >
       <div
-        data-css-1n9kjbf=""
+        data-css-14khs4=""
         data-css-37nc4w=""
-        data-status="completed"
       >
         <svg
           viewBox="0 0 24 24"
@@ -391,18 +413,26 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Select type
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Grapple case shot
+        </p>
       </div>
     </div>
+  </div>
+  <div
+    data-css-1xgx4w1=""
+  >
     <div
-      data-css-y62ldj=""
-      onClick={[Function]}
+      data-css-1f2gu5k=""
     >
       <div
-        data-css-1ss5c56=""
         data-css-37nc4w=""
-        data-status="current"
+        data-css-z68f3q=""
       >
         <svg
           viewBox="0 0 24 24"
@@ -425,115 +455,1700 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Select template
-        <div
-          data-css-do8pgt=""
+    </div>
+    <div>
+      <div
+        data-css-16qh227=""
+      >
+        <p>
+          Grapple case shot
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-1f22xu6=""
+        data-css-37nc4w=""
+      >
+        <svg
+          viewBox="0 0 24 24"
         >
-          An optional description to provide more detail about this step.
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Grapple case shot
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Large 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-cbpt11=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-1bdr1pk=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Grapple case shot
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Large Description 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-cbpt11=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-1bdr1pk=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Fathom belaying pin
+        </p>
+      </div>
+      <div
+        data-css-4gx26r=""
+      >
+        <p>
+          Scuttle rigging booty pink six pounders code of conduct mizzen schooner scallywag long clothes.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Large Interactive 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-i3pwx6=""
+    onClick={[Function]}
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-1bdr1pk=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Gaff knave plunder
+        </p>
+      </div>
+      <div
+        data-css-4gx26r=""
+      >
+        <p>
+          Yo-ho-ho hardtack no prey, no pay crack Jennys tea cup draught case shot gally doubloon poop deck reef sails.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Large Long Title 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-cbpt11=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-1bdr1pk=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Hang the jib measured fer yer chains aft list long clothes transom pinnace barque American Main cog.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Medium 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-37nc4w=""
+        data-css-tx2fkq=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Grapple case shot
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Medium Description 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-37nc4w=""
+        data-css-tx2fkq=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Fathom belaying pin
+        </p>
+      </div>
+      <div
+        data-css-f3xrwq=""
+      >
+        <p>
+          Scuttle rigging booty pink six pounders code of conduct mizzen schooner scallywag long clothes.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Medium Interactive 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-1ikqesf=""
+    onClick={[Function]}
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-37nc4w=""
+        data-css-tx2fkq=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Gaff knave plunder
+        </p>
+      </div>
+      <div
+        data-css-f3xrwq=""
+      >
+        <p>
+          Yo-ho-ho hardtack no prey, no pay crack Jennys tea cup draught case shot gally doubloon poop deck reef sails.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/Step Medium Long Title 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-37nc4w=""
+        data-css-tx2fkq=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Hang the jib measured fer yer chains aft list long clothes transom pinnace barque American Main cog.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/examples Wizard 1`] = `
+<div
+  data-css-1wckvg7=""
+>
+  <div
+    data-css-wtycqp=""
+  >
+    <div
+      data-css-y9mz72=""
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-1q7daym=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15f98wj=""
+        >
+          <p>
+            First step
+          </p>
+        </div>
+        <div
+          data-css-cvdoch=""
+        >
+          <p>
+            Prow scuttle parrel provost Sail ho shrouds
+          </p>
         </div>
       </div>
     </div>
     <div
-      data-css-y62ldj=""
-      onClick={[Function]}
+      data-css-9kt1cm=""
     >
       <div
-        data-css-37nc4w=""
-        data-css-zzpr94=""
-        data-status="incomplete"
+        data-css-1kqp8s2=""
       >
-        <svg
-          viewBox="0 0 24 24"
+        <div
+          data-css-2195hb=""
+          data-css-mwehb=""
         >
-          <circle
-            cx={12}
-            cy={12}
-            data-css-sbdtqb=""
-            r={11}
-            strokeWidth={2}
-          />
-          <polyline
-            data-css-y56a94=""
-            points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
           "
-            strokeWidth={2}
-          />
-        </svg>
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
       </div>
       <div>
-        Add details
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Second step
+          </p>
+        </div>
       </div>
     </div>
     <div
-      data-css-y62ldj=""
-      onClick={[Function]}
+      data-css-9kt1cm=""
     >
       <div
-        data-css-37nc4w=""
-        data-css-zzpr94=""
-        data-status="incomplete"
+        data-css-1kqp8s2=""
       >
-        <svg
-          viewBox="0 0 24 24"
+        <div
+          data-css-2195hb=""
+          data-css-mwehb=""
         >
-          <circle
-            cx={12}
-            cy={12}
-            data-css-sbdtqb=""
-            r={11}
-            strokeWidth={2}
-          />
-          <polyline
-            data-css-y56a94=""
-            points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
           "
-            strokeWidth={2}
-          />
-        </svg>
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
       </div>
       <div>
-        Select goals
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Third step
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o4qfb1=""
+  >
+    <p
+      data-css-1k9fqjs=""
+    >
+      <button
+        disabled={true}
+        onClick={[Function]}
+      >
+        Previous
+      </button>
+      <span>
+         
+      </span>
+      <button
+        disabled={false}
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </p>
+    <pre>
+      [
+  {
+    "description": "Prow scuttle parrel provost Sail ho shrouds",
+    "title": "First step",
+    "status": "current"
+  },
+  {
+    "description": "Deadlights jack lad schooner scallywag dance",
+    "title": "Second step",
+    "status": "incomplete"
+  },
+  {
+    "description": "Trysail Sail ho Corsair red ensign hulk smartly boom",
+    "title": "Third step",
+    "status": "incomplete"
+  }
+]
+    </pre>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
+<div
+  data-css-1y16c93=""
+>
+  <div
+    data-css-wtycqp=""
+  >
+    <div
+      data-css-9kt1cm=""
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-1bdr1pk=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-67s38y=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Select type
+          </p>
+        </div>
       </div>
     </div>
     <div
-      data-css-y62ldj=""
+      data-css-y9mz72=""
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-1q7daym=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15f98wj=""
+        >
+          <p>
+            Select template
+          </p>
+        </div>
+        <div
+          data-css-cvdoch=""
+        >
+          <p>
+            An optional description to provide more detail about this step.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-9kt1cm=""
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-2195hb=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Add details
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
+<div
+  data-css-1y16c93=""
+>
+  <div
+    data-css-wtycqp=""
+  >
+    <div
+      data-css-1t6za67=""
       onClick={[Function]}
     >
       <div
-        data-css-37nc4w=""
-        data-css-zzpr94=""
-        data-status="incomplete"
+        data-css-1kqp8s2=""
       >
-        <svg
-          viewBox="0 0 24 24"
+        <div
+          data-css-1bdr1pk=""
+          data-css-mwehb=""
         >
-          <circle
-            cx={12}
-            cy={12}
-            data-css-sbdtqb=""
-            r={11}
-            strokeWidth={2}
-          />
-          <polyline
-            data-css-y56a94=""
-            points="
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-67s38y=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Select type
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-6at8c0=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-1q7daym=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15f98wj=""
+        >
+          <p>
+            Select template
+          </p>
+        </div>
+        <div
+          data-css-cvdoch=""
+        >
+          <p>
+            An optional description to provide more detail about this step.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1t6za67=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-2195hb=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Add details
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
+<div
+  data-css-1y16c93=""
+>
+  <div
+    data-css-wtycqp=""
+  >
+    <div
+      data-css-ffob6h=""
+    >
+      <div
+        data-css-1f2gu5k=""
+      >
+        <div
+          data-css-37nc4w=""
+          data-css-tx2fkq=""
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx={12}
+              cy={12}
+              data-css-sbdtqb=""
+              r={11}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-67s38y=""
+              points="
             6.315789473684211 12,
             10.434782608695652 16,
             17.142857142857142 8
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15tg1fu=""
+        >
+          <p>
+            Select type
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-xcclut=""
+    >
+      <div
+        data-css-1f2gu5k=""
+      >
+        <div
+          data-css-16wiowc=""
+          data-css-37nc4w=""
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx={12}
+              cy={12}
+              data-css-sbdtqb=""
+              r={11}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-16qh227=""
+        >
+          <p>
+            Select template
+          </p>
+        </div>
+        <div
+          data-css-tt6emo=""
+        >
+          <p>
+            An optional description to provide more detail about this step.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ffob6h=""
+    >
+      <div
+        data-css-1f2gu5k=""
+      >
+        <div
+          data-css-1dvenk2=""
+          data-css-37nc4w=""
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx={12}
+              cy={12}
+              data-css-sbdtqb=""
+              r={11}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15tg1fu=""
+        >
+          <p>
+            Add details
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/horizontal Responsive 1`] = `
+<div
+  data-css-1y16c93=""
+>
+  <div
+    data-css-yyluzm=""
+  >
+    <div
+      data-css-1jawhk1=""
+    >
+      <div
+        data-css-1f2gu5k=""
+      >
+        <div
+          data-css-37nc4w=""
+          data-css-tx2fkq=""
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx={12}
+              cy={12}
+              data-css-sbdtqb=""
+              r={11}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-67s38y=""
+              points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15tg1fu=""
+        >
+          <p>
+            Select type
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1xgx4w1=""
+    >
+      <div
+        data-css-1f2gu5k=""
+      >
+        <div
+          data-css-16wiowc=""
+          data-css-37nc4w=""
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx={12}
+              cy={12}
+              data-css-sbdtqb=""
+              r={11}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-16qh227=""
+        >
+          <p>
+            Select template
+          </p>
+        </div>
+        <div
+          data-css-tt6emo=""
+        >
+          <p>
+            An optional description to provide more detail about this step.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1jawhk1=""
+    >
+      <div
+        data-css-1f2gu5k=""
+      >
+        <div
+          data-css-1dvenk2=""
+          data-css-37nc4w=""
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx={12}
+              cy={12}
+              data-css-sbdtqb=""
+              r={11}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15tg1fu=""
+        >
+          <p>
+            Add details
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/vertical Basic 1`] = `
+<div
+  data-css-yyluzm=""
+>
+  <div
+    data-css-cbpt11=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-1bdr1pk=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
           "
             strokeWidth={2}
           />
         </svg>
       </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Select type
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1vp0vwv=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-1q7daym=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15f98wj=""
+      >
+        <p>
+          Select template
+        </p>
+      </div>
+      <div
+        data-css-cvdoch=""
+      >
+        <p>
+          An optional description to provide more detail about this step.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-cbpt11=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-2195hb=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Add details
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-cbpt11=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-2195hb=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Select goals
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-cbpt11=""
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-2195hb=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Review
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
+<div
+  data-css-12c8fh6=""
+>
+  <div
+    data-css-yyluzm=""
+  >
+    <div
+      data-css-i3pwx6=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-1bdr1pk=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-67s38y=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
       <div>
-        Review
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Select type
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-srn761=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-1q7daym=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-15f98wj=""
+        >
+          <p>
+            Select template
+          </p>
+        </div>
+        <div
+          data-css-cvdoch=""
+        >
+          <p>
+            An optional description to provide more detail about this step.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-i3pwx6=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-2195hb=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Add details
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-i3pwx6=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-2195hb=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Select goals
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-i3pwx6=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-1kqp8s2=""
+      >
+        <div
+          data-css-2195hb=""
+          data-css-mwehb=""
+        >
+          <svg
+            viewBox="0 0 36 36"
+          >
+            <circle
+              cx={18}
+              cy={18}
+              data-css-sbdtqb=""
+              r={17}
+              strokeWidth={2}
+            />
+            <polyline
+              data-css-y56a94=""
+              points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+              strokeWidth={2}
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <div
+          data-css-2wbji0=""
+        >
+          <p>
+            Review
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -545,178 +2160,449 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
   data-css-yyluzm=""
 >
   <div
-    data-css-y62ldj=""
+    data-css-i3pwx6=""
     onClick={[Function]}
   >
     <div
-      data-css-1n9kjbf=""
-      data-css-37nc4w=""
-      data-status="completed"
+      data-css-1kqp8s2=""
     >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-67s38y=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Select type
-    </div>
-  </div>
-  <div
-    data-css-y62ldj=""
-    onClick={[Function]}
-  >
-    <div
-      data-css-1ss5c56=""
-      data-css-37nc4w=""
-      data-status="current"
-    >
-      <svg
-        viewBox="0 0 24 24"
-      >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
-          "
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <div>
-      Select template
       <div
-        data-css-do8pgt=""
+        data-css-1bdr1pk=""
+        data-css-mwehb=""
       >
-        An optional description to provide more detail about this step.
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Select type
+        </p>
       </div>
     </div>
   </div>
   <div
-    data-css-y62ldj=""
+    data-css-srn761=""
     onClick={[Function]}
   >
     <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
+      data-css-1kqp8s2=""
     >
-      <svg
-        viewBox="0 0 24 24"
+      <div
+        data-css-1q7daym=""
+        data-css-mwehb=""
       >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
           "
-          strokeWidth={2}
-        />
-      </svg>
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
     </div>
     <div>
-      Add details
+      <div
+        data-css-15f98wj=""
+      >
+        <p>
+          Select template
+        </p>
+      </div>
+      <div
+        data-css-cvdoch=""
+      >
+        <p>
+          An optional description to provide more detail about this step.
+        </p>
+      </div>
     </div>
   </div>
   <div
-    data-css-y62ldj=""
+    data-css-i3pwx6=""
     onClick={[Function]}
   >
     <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
+      data-css-1kqp8s2=""
     >
-      <svg
-        viewBox="0 0 24 24"
+      <div
+        data-css-2195hb=""
+        data-css-mwehb=""
       >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
-            6.315789473684211 12,
-            10.434782608695652 16,
-            17.142857142857142 8
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
           "
-          strokeWidth={2}
-        />
-      </svg>
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
     </div>
     <div>
-      Select goals
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Add details
+        </p>
+      </div>
     </div>
   </div>
   <div
-    data-css-y62ldj=""
+    data-css-i3pwx6=""
     onClick={[Function]}
   >
     <div
-      data-css-37nc4w=""
-      data-css-zzpr94=""
-      data-status="incomplete"
+      data-css-1kqp8s2=""
     >
-      <svg
-        viewBox="0 0 24 24"
+      <div
+        data-css-2195hb=""
+        data-css-mwehb=""
       >
-        <circle
-          cx={12}
-          cy={12}
-          data-css-sbdtqb=""
-          r={11}
-          strokeWidth={2}
-        />
-        <polyline
-          data-css-y56a94=""
-          points="
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Select goals
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-i3pwx6=""
+    onClick={[Function]}
+  >
+    <div
+      data-css-1kqp8s2=""
+    >
+      <div
+        data-css-2195hb=""
+        data-css-mwehb=""
+      >
+        <svg
+          viewBox="0 0 36 36"
+        >
+          <circle
+            cx={18}
+            cy={18}
+            data-css-sbdtqb=""
+            r={17}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            9.473684210526317 18,
+            15.65217391304348 24,
+            25.714285714285715 12
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-2wbji0=""
+      >
+        <p>
+          Review
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps/vertical Medium 1`] = `
+<div
+  data-css-yyluzm=""
+>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-37nc4w=""
+        data-css-tx2fkq=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-67s38y=""
+            points="
             6.315789473684211 12,
             10.434782608695652 16,
             17.142857142857142 8
           "
-          strokeWidth={2}
-        />
-      </svg>
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
     </div>
     <div>
-      Review
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Select type
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1xgx4w1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-16wiowc=""
+        data-css-37nc4w=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-16qh227=""
+      >
+        <p>
+          Select template
+        </p>
+      </div>
+      <div
+        data-css-tt6emo=""
+      >
+        <p>
+          An optional description to provide more detail about this step.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-1dvenk2=""
+        data-css-37nc4w=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Add details
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-1dvenk2=""
+        data-css-37nc4w=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Select goals
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1jawhk1=""
+  >
+    <div
+      data-css-1f2gu5k=""
+    >
+      <div
+        data-css-1dvenk2=""
+        data-css-37nc4w=""
+      >
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            data-css-sbdtqb=""
+            r={11}
+            strokeWidth={2}
+          />
+          <polyline
+            data-css-y56a94=""
+            points="
+            6.315789473684211 12,
+            10.434782608695652 16,
+            17.142857142857142 8
+          "
+            strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <div
+        data-css-15tg1fu=""
+      >
+        <p>
+          Review
+        </p>
+      </div>
     </div>
   </div>
 </div>

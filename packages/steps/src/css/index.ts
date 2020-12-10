@@ -19,7 +19,14 @@ export default {
     label: 'steps',
 
     counterReset: 'line-number',
-    display: 'flex',
+    display: 'flex'
+  },
+
+  [`.psds-steps--${vars.orientations.horizontal}`]: {
+    flexDirection: 'row',
+    marginBottom: layout.spacingMedium
+  },
+  [`.psds-steps--${vars.orientations.vertical}`]: {
     flexDirection: 'column'
   },
 
@@ -30,7 +37,6 @@ export default {
     counterIncrement: 'line-number',
     display: 'flex',
     flex: 1,
-    marginBottom: layout.spacingXSmall,
     padding: layout.spacingXSmall
   },
   '.psds-steps__step--interactive': {
@@ -40,18 +46,81 @@ export default {
     '&:hover': { backgroundColor: colorsBackgroundUtility[25] }
   },
 
-  '.psds-steps__description': {
-    label: 'steps__description',
+  [`.psds-steps__step${dark}`]: {
+    color: colorsTextIcon.lowOnDark
+  },
+  [`.psds-steps_step${light}`]: {
+    color: colorsTextIcon.lowOnLight
+  },
 
+  [`.psds-steps__step--${vars.orientations.horizontal}`]: {
+    marginRight: layout.spacingXSmall,
+
+    '&:last-child': { marginRight: 0 }
+  },
+  [`.psds-steps__step--${vars.orientations.vertical}`]: {
+    marginBottom: layout.spacingXSmall,
+
+    '&:last-child': { marginBottom: 0 }
+  },
+
+  [`.psds-steps__step--${vars.sizes.medium}`]: {
+    fontSize: type.fontSizeSmall
+  },
+  [`.psds-steps__step--${vars.sizes.large}`]: {
+    fontSize: type.fontSizeMedium
+  },
+
+  [`.psds-steps__step--${vars.statuses.current}`]: {
+    fontWeight: type.fontWeightBold
+  },
+
+  '.psds-steps__title': {
+    '& p:last-child': { marginBottom: 0 }
+  },
+  [`.psds-steps__title--${vars.sizes.large}`]: {
+    paddingTop: 5 // NOTE: align text vertically with marker
+  },
+  [`.psds-steps__title--${vars.sizes.medium}`]: {
+    paddingTop: 1 // NOTE: align text vertically with marker
+  },
+  [`.psds-steps__title--${vars.statuses.current}${dark}`]: {
+    color: colorsTextIcon.highOnDark
+  },
+  [`.psds-steps__title--${vars.statuses.current}${light}`]: {
+    color: colorsTextIcon.highOnLight
+  },
+
+  '.psds-steps__description': {
+    '& p:last-child': { marginBottom: 0 }
+  },
+  [`.psds-steps__description--${vars.sizes.medium}`]: {
     fontSize: type.fontSizeXSmall
+  },
+  [`.psds-steps__description--${vars.sizes.large}`]: {
+    fontSize: type.fontSizeSmall
+  },
+  [`.psds-steps__description--${vars.statuses.current}`]: {
+    fontWeight: type.fontWeightBook
+  },
+
+  '.psds-steps__marker-container': {
+    label: 'steps__marker-container',
+
+    flexShrink: 0
+  },
+
+  [`.psds-steps__marker-container--${vars.sizes.medium}`]: {
+    marginRight: layout.spacingXSmall
+  },
+  [`.psds-steps__marker-container--${vars.sizes.large}`]: {
+    marginRight: layout.spacingSmall
   },
 
   '.psds-steps__marker': {
     label: 'steps__marker',
 
-    flexShrink: 0,
     fontSize: type.fontSizeXSmall,
-    marginRight: layout.spacingXSmall,
     position: 'relative',
     textAlign: 'center',
 
@@ -63,9 +132,12 @@ export default {
       position: 'absolute',
       top: '50%',
       transform: 'translate(-50%, -50%)',
-      transition: `opacity ${motion.speedFast}`,
+      transition: `all ${motion.speedFast}`,
       width: '50%'
     }
+  },
+  '.psds-steps__marker--hide-counter': {
+    '&:after': { content: '' }
   },
 
   [`.psds-steps__marker${dark}`]: {
@@ -73,6 +145,13 @@ export default {
   },
   [`.psds-steps__marker${light}`]: {
     color: colorsTextIcon.lowOnLight
+  },
+
+  [`.psds-steps__marker--${vars.sizes.medium}`]: {
+    fontSize: type.fontSizeXSmall
+  },
+  [`.psds-steps__marker--${vars.sizes.large}`]: {
+    fontSize: type.fontSizeMedium
   },
 
   [`.psds-steps__marker--${vars.statuses.completed}`]: {

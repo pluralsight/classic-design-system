@@ -1,40 +1,97 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  ValueOf,
+  isString
+} from '@pluralsight/ps-design-system-util'
 import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useContext, useMemo } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
 
+import Context, { ContextValue, initialContext } from './context'
+
 const styles = {
-  steps: (themeName: ValueOf<typeof themeNames>) =>
+  steps: (
+    themeName: ValueOf<typeof themeNames>,
+    opts: { orientation: ValueOf<typeof vars.orientations> }
+  ) =>
     compose(
       css(stylesheet['.psds-steps']),
-      css(stylesheet[`.psds-steps.psds-theme--${themeName}`])
+      css(stylesheet[`.psds-steps.psds-theme--${themeName}`]),
+      css(stylesheet[`.psds-steps--${opts.orientation}`])
     ),
   step: (
     themeName: ValueOf<typeof themeNames>,
-    opts: { interactive: boolean }
+    opts: {
+      interactive: boolean
+      orientation: ValueOf<typeof vars.orientations>
+      size: ValueOf<typeof vars.sizes>
+      status: ValueOf<typeof vars.statuses>
+    }
   ) =>
     compose(
       css(stylesheet['.psds-steps__step']),
       css(stylesheet[`.psds-steps__step.psds-theme--${themeName}`]),
+      css(stylesheet[`.psds-steps__step--${opts.orientation}`]),
+      css(stylesheet[`.psds-steps__step--${opts.size}`]),
+      css(stylesheet[`.psds-steps__step--${opts.status}`]),
       opts.interactive && css(stylesheet['.psds-steps__step--interactive'])
     ),
 
-  description: () => css(stylesheet['.psds-steps__description']),
+  title: (
+    themeName: ValueOf<typeof themeNames>,
+    opts: {
+      size: ValueOf<typeof vars.sizes>
+      status: ValueOf<typeof vars.statuses>
+    }
+  ) => {
+    const theme = `.psds-theme--${themeName}`
+    const status = `.psds-steps__title--${opts.status}`
+
+    return compose(
+      css(stylesheet['.psds-steps__title']),
+      css(stylesheet['.psds-steps__title' + theme]),
+      css(stylesheet[`.psds-steps__title--${opts.size}`]),
+      css(stylesheet[status]),
+      css(stylesheet[status + theme])
+    )
+  },
+
+  description: (opts: {
+    size: ValueOf<typeof vars.sizes>
+    status: ValueOf<typeof vars.statuses>
+  }) =>
+    compose(
+      css(stylesheet['.psds-steps__description']),
+      css(stylesheet[`.psds-steps__description--${opts.size}`]),
+      css(stylesheet[`.psds-steps__description--${opts.status}`])
+    ),
+
+  markerContainer: (opts: { size: ValueOf<typeof vars.sizes> }) =>
+    compose(
+      css(stylesheet['.psds-steps__marker-container']),
+      css(stylesheet[`.psds-steps__marker-container--${opts.size}`])
+    ),
 
   marker: (
     themeName: ValueOf<typeof themeNames>,
-    opts: { status: ValueOf<typeof vars.statuses> }
+    opts: {
+      counter: boolean
+      size: ValueOf<typeof vars.sizes>
+      status: ValueOf<typeof vars.statuses>
+    }
   ) =>
     compose(
       css(stylesheet['.psds-steps__marker']),
       css(stylesheet[`.psds-steps__marker.psds-theme--${themeName}`]),
-      css(stylesheet[`.psds-steps__marker--${opts.status}`])
+      css(stylesheet[`.psds-steps__marker--${opts.size}`]),
+      css(stylesheet[`.psds-steps__marker--${opts.status}`]),
+      !opts.counter && css(stylesheet['.psds-steps__marker--hide-counter'])
     ),
   markerCircle: () => css(stylesheet['.psds-steps__marker__circle']),
   markerCheck: (opts: { status: ValueOf<typeof vars.statuses> }) =>
@@ -53,34 +110,79 @@ interface StepsStatics {
 }
 
 interface StepsProps extends HTMLPropsFor<'div'> {
+  counter?: boolean
   orientation?: ValueOf<typeof Steps.orientations>
   size?: ValueOf<typeof Steps.sizes>
 }
 const Steps = forwardRef<HTMLDivElement, StepsProps>((props, ref) => {
-  const { ...rest } = props
-  const themeName = useTheme()
+  const {
+    counter = initialContext.counter,
+    orientation = initialContext.orientation,
+    size = initialContext.size,
+    ...rest
+  } = props
 
-  return <div ref={ref} {...styles.steps(themeName)} {...rest} />
+  const themeName = useTheme()
+  const contextValue: ContextValue = { counter, orientation, size }
+
+  return (
+    <Context.Provider value={contextValue}>
+      <div ref={ref} {...styles.steps(themeName, { orientation })} {...rest} />
+    </Context.Provider>
+  )
 }) as React.ForwardRefExoticComponent<StepsProps> & StepsStatics
 
 Steps.displayName = 'Steps'
 
 interface StepProps extends HTMLPropsFor<'div'> {
   description?: React.ReactNode
+  marker?: React.ComponentType<MarkerProps>
+  renderMarkerContainer?: (props: HTMLPropsFor<'div'>) => React.ReactElement
   status: ValueOf<typeof Steps.statuses>
 }
+const defaultMarkerContainer = (props: HTMLPropsFor<'div'>) => (
+  <div {...props} />
+)
+
 const Step = forwardRef<HTMLDivElement, StepProps>((props, ref) => {
-  const { children, description, status, ...rest } = props
-  const themeName = useTheme()
+  const {
+    children,
+    description,
+    marker: StepMarker = Marker,
+    renderMarkerContainer = defaultMarkerContainer,
+    status,
+    ...rest
+  } = props
+
+  const MarkerContainer = useMemo(() => renderMarkerContainer, [
+    renderMarkerContainer
+  ])
+
   const interactive = 'onClick' in props
 
+  const themeName = useTheme()
+  const { orientation, size } = useContext(Context)
+
   return (
-    <div ref={ref} {...styles.step(themeName, { interactive })} {...rest}>
-      <Marker status={status} />
+    <div
+      ref={ref}
+      {...styles.step(themeName, { interactive, orientation, size, status })}
+      {...rest}
+    >
+      <MarkerContainer {...styles.markerContainer({ size })}>
+        <StepMarker status={status} />
+      </MarkerContainer>
 
       <div>
-        {children}
-        {description && <div {...styles.description()}>{description}</div>}
+        <div {...styles.title(themeName, { size, status })}>
+          {isString(children) ? <p>{children}</p> : children}
+        </div>
+
+        {description && (
+          <div {...styles.description({ size, status })}>
+            {isString(description) ? <p>{description}</p> : description}
+          </div>
+        )}
       </div>
     </div>
   )
@@ -90,26 +192,33 @@ Step.displayName = 'Steps.Step'
 interface MarkerProps extends Omit<HTMLPropsFor<'div'>, 'ref'> {
   status: ValueOf<typeof Steps.statuses>
 }
+
 const Marker = forwardRef<HTMLDivElement, MarkerProps>((props, ref) => {
   const { status, ...rest } = props
-  const themeName = useTheme()
 
-  const size = 24
-  const stroke = 2
-  const radius = size / 2 - stroke / 2
+  const themeName = useTheme()
+  const { counter, size } = useContext(Context)
+
+  const [diameter, stroke, radius] = useMemo(() => {
+    const large = size === 'large'
+    const _diameter = large ? 36 : 24
+    const _stroke = large ? 2 : 2
+    const _radius = _diameter / 2 - _stroke / 2
+
+    return [_diameter, _stroke, _radius]
+  }, [size])
 
   return (
     <div
-      data-status={status}
       ref={ref}
-      {...styles.marker(themeName, { status })}
-      {...css({ width: size, height: size })}
+      {...styles.marker(themeName, { counter, size, status })}
+      {...css({ width: diameter, height: diameter })}
       {...rest}
     >
-      <svg viewBox={`0 0 ${size} ${size}`}>
+      <svg viewBox={`0 0 ${diameter} ${diameter}`}>
         <circle
-          cx={size / 2}
-          cy={size / 2}
+          cx={diameter / 2}
+          cy={diameter / 2}
           r={radius}
           strokeWidth={stroke}
           {...styles.markerCircle()}
@@ -118,9 +227,9 @@ const Marker = forwardRef<HTMLDivElement, MarkerProps>((props, ref) => {
         <polyline
           strokeWidth={stroke}
           points={`
-            ${size / 3.8} ${size / 2},
-            ${size / 2.3} ${size / 1.5},
-            ${size / 1.4} ${size / 3}
+            ${diameter / 3.8} ${diameter / 2},
+            ${diameter / 2.3} ${diameter / 1.5},
+            ${diameter / 1.4} ${diameter / 3}
           `}
           {...styles.markerCheck({ status })}
         />
