@@ -85,14 +85,19 @@ const styles = {
       size: ValueOf<typeof vars.sizes>
       status: ValueOf<typeof vars.statuses>
     }
-  ) =>
-    compose(
+  ) => {
+    const theme = `.psds-theme--${themeName}`
+    const status = `.psds-steps__marker--${opts.status}`
+
+    return compose(
       css(stylesheet['.psds-steps__marker']),
-      css(stylesheet[`.psds-steps__marker.psds-theme--${themeName}`]),
+      css(stylesheet['.psds-steps__marker' + theme]),
       css(stylesheet[`.psds-steps__marker--${opts.size}`]),
-      css(stylesheet[`.psds-steps__marker--${opts.status}`]),
+      css(stylesheet[status]),
+      css(stylesheet[status + theme]),
       !opts.counter && css(stylesheet['.psds-steps__marker--hide-counter'])
-    ),
+    )
+  },
   markerCircle: () => css(stylesheet['.psds-steps__marker__circle']),
   markerCheck: (opts: { status: ValueOf<typeof vars.statuses> }) =>
     compose(

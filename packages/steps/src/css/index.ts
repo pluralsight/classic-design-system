@@ -1,6 +1,6 @@
 import {
   colorsBackgroundUtility,
-  colorsBlue,
+  colorsPrimaryAction,
   colorsGreen,
   colorsTextIcon,
   layout,
@@ -159,10 +159,12 @@ export default {
 
     '&:after': { opacity: 0 }
   },
-  [`.psds-steps__marker--${vars.statuses.current}`]: {
-    color: colorsBlue.base
+  [`.psds-steps__marker--${vars.statuses.current}${dark}`]: {
+    color: colorsPrimaryAction.textDarkTheme
   },
-  [`.psds-steps__marker--${vars.statuses.incomplete}`]: {},
+  [`.psds-steps__marker--${vars.statuses.current}${light}`]: {
+    color: colorsPrimaryAction.textLightTheme
+  },
 
   '.psds-steps__marker__circle': {
     label: 'steps__marker__circle',
