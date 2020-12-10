@@ -1,0 +1,265 @@
+---
+name: Steps
+route: /components/steps
+---
+
+import Steps from '@pluralsight/ps-design-system-steps'
+
+# Steps
+
+<Intro>Use the Steps component to display sequential navigation. A step will display an incremental counter and may have a title and description.</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Orientations
+
+The `Steps` component can be oriented vertically or horizontally.
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+  return (
+    <Steps orientation="vertical">
+      <Steps.Step status={Steps.statuses.completed}>
+        Finished
+      </Steps.Step>
+
+      <Steps.Step
+        description="An optional description to provide more detail about this step."
+        status={Steps.statuses.current}
+      >
+        In Progress
+      </Steps.Step>
+
+      <Steps.Step status={Steps.statuses.incomplete}>
+        Waiting
+      </Steps.Step>
+    </Steps>
+  )
+}
+
+export default Example
+```
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+  return (
+    <Steps orientation="horizontal">
+      <Steps.Step status={Steps.statuses.completed}>
+        Finished
+      </Steps.Step>
+
+      <Steps.Step
+        description="An options description to provide more detail about this step."
+        status={Steps.statuses.current}
+      >
+        In Progress
+      </Steps.Step>
+
+      <Steps.Step status={Steps.statuses.incomplete}>
+        Waiting
+      </Steps.Step>
+    </Steps>
+  )
+}
+
+export default Example
+```
+
+### Sizes
+
+The `size` prop will adjust the font and marker dimensions.
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+  return (
+    <>
+      <Steps orientation="horizontal" size="medium">
+        <Steps.Step status={Steps.statuses.completed}>Medium</Steps.Step>
+      </Steps>
+
+      <Steps orientation="horizontal" size="large">
+        <Steps.Step status={Steps.statuses.completed}>Large</Steps.Step>
+      </Steps>
+    </>
+  )
+}
+
+export default Example
+```
+
+### Interactive
+
+Add an `onClick` prop to display the step as interactive.
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+ const { steps, select } = useData()
+
+  return (
+    <Steps orientation="vertical">
+      {steps.map((step, index) => (
+        <Steps.Step
+          key={index}
+          description={step.status === 'current' && step.description}
+          onClick={() => select(step)}
+          status={step.status}
+        >
+          {step.title}
+        </Steps.Step>
+      ))}
+    </Steps>
+  )
+}
+
+function useData(){
+  const description = 'An optional description to provide more detail about this step.'
+  const { statuses } = Steps
+
+  const [steps, setSteps] = React.useState([
+    { description, title: 'Select type', status: statuses.completed },
+    { description, title: 'Select template', status: statuses.current },
+    { description, title: 'Add details', status: statuses.incomplete },
+    { description, title: 'Select goals', status: statuses.incomplete },
+    { description, title: 'Review', status: statuses.incomplete }
+  ])
+
+  const select = React.useCallback((nextStep) => {
+    const curIndex = steps.indexOf(nextStep)
+    if (curIndex < 0) return
+
+    setSteps(prev => prev.map((step, index) => ({
+      ...step,
+      status: index === curIndex
+        ? 'current'
+        : index < curIndex ? 'completed' : 'incomplete'
+    })))
+  }, [steps])
+
+  return { steps, select }
+}
+
+export default Example
+```
+
+
+### Step status
+
+Use the `status` prop to defined the status of each step.
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+  return (
+    <Steps orientation="horizontal" size="medium">
+      <Steps.Step status={Steps.statuses.incomplete}>Incomplete</Steps.Step>
+      <Steps.Step status={Steps.statuses.current}>Current</Steps.Step>
+      <Steps.Step status={Steps.statuses.completed}>Completed</Steps.Step>
+    </Steps>
+  )
+}
+
+export default Example
+```
+
+### Marker counters
+
+Incremental counters can optionally be hidden using the `counter` prop.
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+  return (
+    <Steps counter={false} orientation="horizontal" size="medium">
+      <Steps.Step status={Steps.statuses.completed}>
+        Finished
+      </Steps.Step>
+
+      <Steps.Step
+        description="An optional description to provide more detail about this step."
+        status={Steps.statuses.current}
+      >
+        In Progress
+      </Steps.Step>
+
+      <Steps.Step status={Steps.statuses.incomplete}>
+        Waiting
+      </Steps.Step>
+    </Steps>
+  )
+}
+
+export default Example
+```
+
+
+## Usage & Types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-steps"
+  import="import Badge from '@pluralsight/ps-design-system-steps'"
+  packageName="steps"
+  version={props.version}
+/>
+
+### Steps
+
+<TypesTable>
+  <TypesProp
+    name="counter"
+    desc="show/hide the marker counter"
+    type="boolean"
+    default="true"
+  />
+  <TypesProp
+    name="orientation"
+    type={<TypesEnum enum={Steps.orientations} />}
+    default="vertical"
+  />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Steps.sizes} />}
+    default="large"
+  />
+</TypesTable>
+
+### Steps.Step
+
+<TypesTable>
+  <TypesProp name="description" type="string" />
+  <TypesProp
+    desc="custom marker"
+    name="marker"
+    type="Marker"
+  />
+  <TypesProp
+    default="(p) => <div {...p} />"
+    desc="render prop for custom marker container"
+    name="renderMarkerContainer"
+    type="(props) => React.ReactNode"
+  />
+  <TypesProp
+    desc="step status"
+    name="status"
+    required
+    type={<TypesEnum enum={Steps.statuses} />}
+  />
+</TypesTable>
+
