@@ -84,9 +84,7 @@ import React from 'react'
 function Example() {
   return (
     <div className="robust-heading">
-      <Badge>
-        Course
-      </Badge>
+      <Badge>Course</Badge>
       <Heading>
         <h1>Heading</h1>
       </Heading>
@@ -151,6 +149,83 @@ function Example() {
         .button-bar > * {
           margin-right: ${layout.spacingXSmall};
           margin-bottom: ${layout.spacingXSmall};
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```
+
+### "Power" heading
+
+```typescript
+import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
+import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
+import Button from '@pluralsight/ps-design-system-button'
+import { Label, Heading } from '@pluralsight/ps-design-system-text'
+import Tab from '@pluralsight/ps-design-system-tab'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="power-heading">
+      <div className="title">
+        <div>
+          <Breadcrumb>Label</Breadcrumb>
+          <Heading>
+            <h1>Page Title</h1>
+          </Heading>
+        </div>
+        <div className="main-action-group">
+          <div>
+            <div>
+              <Label strong size="medium">
+                Label: Status
+              </Label>
+            </div>
+            <div>
+              <Label color="secondary" size="small">
+                Sublabel: September 20, 2018
+              </Label>
+            </div>
+          </div>
+          <Button>Label</Button>
+        </div>
+      </div>
+      <Tab.List>
+        <Tab.ListItem active>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+      </Tab.List>
+      <style jsx>{`
+        @media (max-width: 767px) {
+          .main-action-group > * {
+            display: block;
+            width: 100%;
+          }
+          .title {
+            margin-bottom: ${layout.spacingLarge};
+          }
+        }
+        @media (min-width: 768px) {
+          .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+          }
+          .main-action-group {
+            display: flex;
+            align-items: center;
+          }
+          .main-action-group > div:first-child {
+            text-align: right;
+            margin-right: ${layout.spacingSmall};
+          }
         }
       `}</style>
     </div>
