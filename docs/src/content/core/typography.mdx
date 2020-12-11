@@ -18,16 +18,17 @@ import {
 
 ## Font family
 
-<Badge color="yellow">New</Badge> Pluralsight's font family for the web is a custom font called PS TT Commons. 
+<Badge color="yellow">New</Badge>
 
+Pluralsight's font family for the web is a custom font called PS TT Commons.
 
-We no longer use the Gotham font from typography.com. You should remove any remaining references to that.  As we are transitioning, Gotham is still listed as a fallback font. Eventually it will be fully removed.
+We no longer use the Gotham font from typography.com. You should remove any remaining references to that. As we are transitioning, Gotham is still listed as a fallback font. Eventually it will be fully removed.
 
 Internally, we are using a [variable font](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide) to provide all weights programmatically. This should drastically reduce the number of network requests and overall page weight dedicated to fonts. IE 11 does not support variable fonts, and IE users will get the `sans-serif` fallback.
 
 <FontFamily />
 
-The `@font-face` declaration is included in the normalize stylesheet.  Install with:
+The `@font-face` declaration is included in the normalize stylesheet. Install with:
 
 ```bash
 npm install @pluralsight/ps-design-system-normalize
@@ -44,7 +45,7 @@ Then include it in your global stylesheet:
 The normalize stylesheet should be used in most cases. But if you need a direct reference to the font file, it is located at:
 
 ```
-https://s2.pluralsight.com/fonts/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff
+https://s2.pluralsight.com/fonts/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff2
 ```
 
 ## Domain-restricted access
@@ -97,12 +98,16 @@ Four line height increments are available. Each font size also has a default lin
 
 ## Monospace font
 
+Pluralsight’s monospace font family for the web is [Source Code Pro](https://fonts.google.com/specimen/DM+Mono).
 
 <MonospaceGlyphs />
 
+To use the Source Code Pro on your site, you can install it by importing it from [Google fonts](https://fonts.google.com/specimen/DM+Mono).
 
 ```html
+<link rel="preconnect" href="https://fonts.gstatic.com" />
 <link
+  href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"
   rel="stylesheet"
 />
 ```
