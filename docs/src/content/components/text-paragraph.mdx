@@ -13,6 +13,10 @@ import { P } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
+### Sizes
+
+Three text sizes are available using the `size` prop.
+
 ```typescript
 import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -20,58 +24,66 @@ import React from 'react'
 const Example: React.FC = props => {
   return (
     <React.Fragment>
-      <P size={P.sizes.large} color={P.colors.primary}>
-        Paragraph (large, primary) Lorem ipsum dolor sit amet adipisicing elit,
-        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
-        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.
-      </P>
-      <P size={P.sizes.large} color={P.colors.secondary}>
-        Paragraph (large, secondary) Lorem ipsum dolor sit amet adipisicing
-        elit,
-        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
-        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.
+      <P size={P.sizes.large}>
+        <strong>Paragraph - large</strong> - Lorem ipsum dolor sit amet
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut
+        aliquip ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
       </P>
 
-      <P size={P.sizes.normal} color={P.colors.primary}>
-        Paragraph (normal, primary) Lorem ipsum dolor sit amet adipisicing elit,
-        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
-        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.
-      </P>
-      <P size={P.sizes.normal} color={P.colors.secondary}>
-        Paragraph (normal, primary) Lorem ipsum dolor sit amet adipisicing elit,
-        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
-        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.
+      <P size={P.sizes.normal}>
+        <strong>Paragraph - normal</strong> - Lorem ipsum dolor sit amet
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut
+        aliquip ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
       </P>
 
-      <P size={P.sizes.small} color={P.colors.primary}>
-        Paragraph (small, secondary) Lorem ipsum dolor sit amet adipisicing
-        elit,
-        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
-        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.
+      <P size={P.sizes.small}>
+        <strong>Paragraph - small</strong> - Lorem ipsum dolor sit amet
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut
+        aliquip ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
       </P>
-      <P size={P.sizes.small} color={P.colors.secondary}>
-        Paragraph (small, secondary) Lorem ipsum dolor sit amet adipisicing
-        elit,
-        <strong>sed do eiusmod tempor incididunt</strong> ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip
-        ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### Colors
+
+Text color can be set to Primary (high contrast) or Secondary (medium contrast) using the `color` prop.
+
+```typescript
+import { P } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <P color={P.colors.primary}>
+        <strong>Paragraph - primary</strong> - Lorem ipsum dolor sit amet
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut
+        aliquip ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
+      </P>
+
+      <P color={P.colors.secondary}>
+        <strong>Paragraph - secondary</strong> - Lorem ipsum dolor sit amet
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut
+        aliquip ex ea commodo consequat. Lorem <em>ipsum dolor sit</em> amet
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
       </P>
     </React.Fragment>
   )
