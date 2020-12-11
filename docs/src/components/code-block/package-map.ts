@@ -48,14 +48,17 @@ import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
 import TextArea from '@pluralsight/ps-design-system-textarea'
 import TextInput from '@pluralsight/ps-design-system-textinput'
-import Theme from '@pluralsight/ps-design-system-theme'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import Typeahead from '@pluralsight/ps-design-system-typeahead'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 import * as util from '@pluralsight/ps-design-system-util'
 
+import * as glamor from 'glamor'
 import React from 'react'
+import * as reactBeautifulDnd from 'react-beautiful-dnd'
+import * as reactTable from 'react-table'
 import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
 import { omit } from '../util'
@@ -121,14 +124,18 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-text': { ...omit(Text, ['default']) },
   '@pluralsight/ps-design-system-textarea': { TextArea },
   '@pluralsight/ps-design-system-textinput': { TextInput },
-  '@pluralsight/ps-design-system-theme': { Theme },
+  '@pluralsight/ps-design-system-theme': { Theme, useTheme },
   '@pluralsight/ps-design-system-tooltip': { Tooltip },
   '@pluralsight/ps-design-system-typeahead': { Typeahead },
   '@pluralsight/ps-design-system-util': { ...util },
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
+
+  glamor: { ...glamor },
   react: { React, ...React },
-  'react-router-dom': { Router, withRouter }
+  'react-beautiful-dnd': { ...reactBeautifulDnd },
+  'react-router-dom': { Router, withRouter },
+  'react-table': { ...reactTable }
 }
 
 export function mapPackageNameToScopes(pkgName: string) {

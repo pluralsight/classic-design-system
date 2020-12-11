@@ -3,11 +3,12 @@
 .header {
   display: flex;
   align-items: center;
+  margin-bottom: var(--psLayoutSpacingLarge);
 }
 .title {
   &:not(.hack-to-make-more-specific) {
     margin: 0;
-    margin-right: var(--psLayoutSpacingLarge);
+    margin-right: var(--psLayoutSpacingMedium);
   }
 }
 
