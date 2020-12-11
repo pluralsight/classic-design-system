@@ -435,8 +435,8 @@ const groups = [
     },
     items: [
       {
-        href: '/patterns/page-headings',
-        title: 'Page headings'
+        href: '/patterns/page-headers',
+        title: 'Page headers'
       }
     ]
   }
