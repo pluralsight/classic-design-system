@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.7...@pluralsight/ps-design-system-navcookiebanner@1.4.8) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
 ## [1.4.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.6...@pluralsight/ps-design-system-navcookiebanner@1.4.7) (2020-12-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner

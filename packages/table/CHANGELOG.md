@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@10.0.5...@pluralsight/ps-design-system-table@11.0.0) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+### Code Refactoring
+
+* **table:** better support for adaptive tech ([811fb1a](https://github.com/pluralsight/design-system/commit/811fb1a036453a6b733ad7cc620bd69261bafe4c))
+
+
+### Features
+
+* **table:** export alignments vars ([3d6d24a](https://github.com/pluralsight/design-system/commit/3d6d24a9e080223662fba6d78457098dff0125ce))
+* **table:** fix safari shadow. default not scrollable ([c658596](https://github.com/pluralsight/design-system/commit/c658596fbfe749ec1a517c069923525118e245d0))
+* **table:** new Table component with tabular markup ([02a604a](https://github.com/pluralsight/design-system/commit/02a604a7545ef4607e42b8c6d9f67d0f799e168a)), closes [#1362](https://github.com/pluralsight/design-system/issues/1362)
+* **table:** sorting accessibility updates ([0308be4](https://github.com/pluralsight/design-system/commit/0308be4b6c0d513278a67bd2a5524debd34e54a1))
+
+
+### BREAKING CHANGES
+
+* **table:** header cells are required to have a `scope` and `role`
+* **table:** a new set of components that should be used like native html tables
+
+
+
+
+
 ## [10.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@10.0.4...@pluralsight/ps-design-system-table@10.0.5) (2020-12-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table
