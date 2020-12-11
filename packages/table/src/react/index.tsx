@@ -1,270 +1,255 @@
-import { compose, css } from 'glamor'
-import React from 'react'
-
-import { drawerDisplayName } from '@pluralsight/ps-design-system-drawer'
 import {
   SortAscIcon,
   SortDescIcon,
   SortIcon
 } from '@pluralsight/ps-design-system-icon'
 import {
-  useTheme,
-  names as themeNames
+  names as themeNames,
+  useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import invariant from 'invariant'
+import React, { forwardRef, useMemo } from 'react'
 
 import stylesheet from '../css'
-import * as vars from '../vars'
-
-const drawerDisplayNameRegex = new RegExp(drawerDisplayName)
+import { alignments, sorts } from '../vars'
 
 const styles = {
-  cell: (align: ValueOf<typeof aligns>, emphasis: boolean) => {
-    const label = 'psds-table__cell'
+  container: (
+    themeName: ValueOf<typeof themeNames>,
+    opts: { scrollable?: boolean }
+  ) => {
+    const themeClass = `.psds-theme--${themeName}`
 
     return compose(
-      css(stylesheet[`.${label}`]),
-      emphasis && css(stylesheet[`.${label}--emphasis`]),
-      align && css(stylesheet[`.${label}--align-${align}`])
+      css(stylesheet['.psds-table__container']),
+      css(stylesheet[`.psds-table__container${themeClass}`]),
+      opts.scrollable &&
+        compose(
+          css(stylesheet['.psds-table__container--scrollable']),
+          css(stylesheet[`.psds-table__container--scrollable${themeClass}`])
+        )
     )
   },
-  columnHeader: (props: {
-    themeName: ValueOf<typeof themeNames>
-    active: boolean
-    align: ValueOf<typeof vars.aligns>
-    onClick: boolean
-  }) => {
-    const label = 'psds-table__column-header'
+  table: (themeName: ValueOf<typeof themeNames>) =>
+    compose(
+      css(stylesheet['.psds-table']),
+      css(stylesheet[`.psds-table.psds-theme--${themeName}`])
+    ),
+  cell: (opts: { align: ValueOf<typeof alignments> }) =>
+    compose(
+      css(stylesheet['.psds-table__cell']),
+      css(stylesheet[`.psds-table__cell--align-${opts.align}`])
+    ),
+  head: (themeName: ValueOf<typeof themeNames>) =>
+    compose(
+      css(stylesheet['.psds-table__head']),
+      css(stylesheet[`.psds-table__head.psds-theme--${themeName}`])
+    ),
+  header: (
+    themeName: ValueOf<typeof themeNames>,
+    opts: {
+      align: ValueOf<typeof alignments>
+      sortable: boolean
+      sticky: boolean
+    }
+  ) => {
+    const stickyClasses = compose(
+      css(stylesheet['.psds-table__header--sticky']),
+      css(stylesheet[`.psds-table__header--sticky.psds-theme--${themeName}`])
+    )
+    return compose(
+      css(stylesheet['.psds-table__header']),
+      css(stylesheet[`.psds-table__header--align-${opts.align}`]),
+      opts.sortable && css(stylesheet['.psds-table__header--sortable']),
+      opts.sticky && stickyClasses
+    )
+  },
+  sortIcon: () => css(stylesheet['.psds-table__header__sort-icon']),
+  row: (
+    themeName: ValueOf<typeof themeNames>,
+    opts: { expanded: boolean; selected: boolean }
+  ) => {
+    const collapsed = !opts.expanded
+    const themeClass = `.psds-theme--${themeName}`
 
     return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${props.themeName}`]),
-      css(stylesheet[`.${label}--align-${props.align}`]),
-      props.active && css(stylesheet[`.${label}--active`]),
-      props.active &&
-        css(stylesheet[`.${label}--active.psds-theme--${props.themeName}`]),
-      props.onClick && css(stylesheet[`.${label}--onclick`]),
-      props.onClick &&
-        css(stylesheet[`.${label}--onclick.psds-theme--${props.themeName}`])
-    )
-  },
-  columnHeaderButton: () =>
-    css(stylesheet['.psds-table__column-header__button']),
-  columnHeaderButtonInner: (align: ValueOf<typeof vars.aligns>) => {
-    const label = 'psds-table__column-header'
-    return compose(
-      css(stylesheet[`.${label}__button-inner`]),
-      css(stylesheet[`.${label}--align-${align}`])
-    )
-  },
-  columnHeaderIcon: () => css(stylesheet['.psds-table__column-header__icon']),
-  row: (themeName: ValueOf<typeof themeNames>, _tableHasDrawers: boolean) => {
-    const label = 'psds-table__row'
-
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
-      _tableHasDrawers && css(stylesheet[`.${label}--drawers`])
-    )
-  },
-  table: (themeName: ValueOf<typeof themeNames>, inDrawer?: boolean) => {
-    const label = 'psds-table'
-
-    return compose(
-      css(stylesheet[`.${label}`]),
-      inDrawer && css(stylesheet[`.${label}--in-drawer`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+      css(stylesheet[`.psds-table__row${themeClass}`]),
+      collapsed && css(stylesheet['.psds-table__row--collapsed']),
+      opts.selected &&
+        css(stylesheet[`.psds-table__row--selected${themeClass}`])
     )
   }
 }
 
-const SortIconAsc = () => <SortAscIcon {...styles.columnHeaderIcon()} />
-
-const SortIconDesc = () => <SortDescIcon {...styles.columnHeaderIcon()} />
-
-const SortIconDefault = () => <SortIcon {...styles.columnHeaderIcon()} />
-
-const getSortIcon = ({
-  sort
-}: {
-  sort: ValueOf<typeof vars.sorts> | boolean
-}) =>
-  typeof sort === 'boolean' ? (
-    <SortIconDefault />
-  ) : (
-    {
-      [vars.sorts.asc]: <SortIconAsc />,
-      [vars.sorts.desc]: <SortIconDesc />
-    }[sort]
-  )
-
-const getToggledSort = ({
-  sort
-}: {
-  sort: ValueOf<typeof vars.sorts> | boolean
-}) =>
-  typeof sort === 'boolean'
-    ? vars.sorts.asc
-    : {
-        [vars.sorts.asc]: vars.sorts.desc,
-        [vars.sorts.desc]: vars.sorts.asc
-      }[sort]
-
-interface ColumnHeaderProps extends HTMLPropsFor<'div'> {
-  align?: ValueOf<typeof vars.aligns>
-  flex?: string
-  onClick?: (evt: React.MouseEvent, sort?: ValueOf<typeof vars.sorts>) => void
-  sort?: ValueOf<typeof vars.sorts> | boolean
+interface TableProps extends HTMLPropsFor<'table'> {
+  renderContainer?: (props: unknown) => React.ReactElement
+  scrollable?: boolean
 }
-
-const ColumnHeader: React.FC<ColumnHeaderProps> = ({
-  onClick,
-  sort,
-  flex,
-  align = vars.aligns.left,
-  ...props
-}) => {
-  const themeName = useTheme()
-
-  const active =
-    typeof sort !== 'boolean' &&
-    typeof sort !== 'undefined' &&
-    vars.sorts[sort] &&
-    typeof onClick === 'function'
-
-  const style = props.style || {}
-  if (flex && !style.flex) style.flex = flex
-
-  const handleClick = onClick
-    ? (evt: React.MouseEvent) =>
-        onClick(evt, sort ? getToggledSort({ sort }) : undefined)
-    : undefined
-  const children = onClick ? (
-    <button {...styles.columnHeaderButton()} onClick={handleClick}>
-      <div {...styles.columnHeaderButtonInner(align)}>
-        {props.children}
-        {sort && getSortIcon({ sort })}
-      </div>
-    </button>
-  ) : (
-    <>
-      {props.children}
-      {sort && getSortIcon({ sort })}
-    </>
-  )
-  return (
-    <div
-      role="columnheader"
-      {...styles.columnHeader({
-        themeName,
-        active,
-        align,
-        onClick: Boolean(onClick)
-      })}
-      {...props}
-      style={style}
-      {...(sort && {
-        'aria-sort':
-          sort === vars.sorts.desc
-            ? 'descending'
-            : sort === vars.sorts.asc
-            ? 'ascending'
-            : 'none'
-      })}
-    >
-      {children}
-    </div>
-  )
-}
-
-ColumnHeader.displayName = 'Table.ColumnHeader'
-
-interface CellProps extends HTMLPropsFor<'div'> {
-  align?: ValueOf<typeof vars.aligns>
-  emphasis?: boolean
-  flex?: string
-}
-
-const Cell: React.FC<CellProps> = ({
-  flex,
-  emphasis = false,
-  align = vars.aligns.left,
-  ...props
-}) => {
-  const style = props.style || {}
-  if (flex && !style.flex) style.flex = flex
-
-  return (
-    <div
-      role="cell"
-      {...styles.cell(align, emphasis)}
-      {...props}
-      style={style}
-    />
-  )
-}
-
-Cell.displayName = 'Table.Cell'
-
-interface RowProps extends HTMLPropsFor<'div'> {
-  _tableHasDrawers?: boolean
-}
-
-const Row: React.FC<RowProps> = ({ _tableHasDrawers = false, ...props }) => {
-  const themeName = useTheme()
-
-  return (
-    <div role="row" {...styles.row(themeName, _tableHasDrawers)} {...props} />
-  )
-}
-Row.displayName = 'Table.Row'
-
 interface TableStatics {
-  Row: typeof Row
-  Cell: typeof Cell
-  ColumnHeader: typeof ColumnHeader
-  aligns: typeof vars.aligns
-  sorts: typeof vars.sorts
+  Body: typeof TableBody
+  Cell: typeof TableCell
+  Head: typeof TableHead
+  Header: typeof TableHeader
+  Row: typeof TableRow
+  alignments: typeof alignments
 }
+type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
-export interface TableProps extends HTMLPropsFor<'div'> {
-  inDrawer?: boolean
-}
-
-const Table: React.FC<TableProps> & TableStatics = ({
-  children = [],
-  inDrawer,
-  ...props
-}) => {
+const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
+  const {
+    renderContainer: Container = defaultRenderContainer,
+    scrollable = false,
+    ...rest
+  } = props
   const themeName = useTheme()
 
-  const _tableHasDrawers: boolean = React.Children.map(
-    children as JSX.Element[],
-    child =>
-      child && child.type && drawerDisplayNameRegex.test(child.type.displayName)
-  ).some(bool => bool)
-
   return (
-    <div role="table" {...styles.table(themeName, inDrawer)} {...props}>
-      {React.Children.map(children as JSX.Element[], (child: JSX.Element) =>
-        child && child.type && child.type.displayName === Row.displayName
-          ? React.cloneElement((child as unknown) as React.ReactElement, {
-              _tableHasDrawers
-            })
-          : child
-      )}
-    </div>
+    <Container
+      {...styles.container(themeName, { scrollable })}
+      {...(scrollable && { role: 'region', tabIndex: 0 })}
+    >
+      <table role="grid" ref={ref} {...styles.table(themeName)} {...rest} />
+    </Container>
   )
+}) as TableComponent
+
+const defaultRenderContainer: React.FC = props => <div {...props} />
+
+const TableBody = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'tbody'>>(
+  (props, ref) => {
+    return <tbody ref={ref} {...props} />
+  }
+)
+TableBody.displayName = 'Table.Body'
+
+interface TableCellProps extends HTMLPropsFor<'td'> {
+  align?: ValueOf<typeof alignments>
 }
+const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
+  (props, ref) => {
+    const { align = alignments.left, ...rest } = props
+    return (
+      <td role="gridcell" ref={ref} {...styles.cell({ align })} {...rest} />
+    )
+  }
+)
+TableCell.displayName = 'Table.Cell'
 
-Table.Row = Row
-Table.Cell = Cell
-Table.ColumnHeader = ColumnHeader
+const TableHead = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'thead'>>(
+  (props, ref) => {
+    const themeName = useTheme()
 
-Table.aligns = vars.aligns
-Table.sorts = vars.sorts
+    return <thead ref={ref} {...styles.head(themeName)} {...props} />
+  }
+)
+TableHead.displayName = 'Table.Head'
 
-export const aligns = vars.aligns
-export const sorts = vars.sorts
+interface TableHeaderProps extends HTMLPropsFor<'th'> {
+  align?: ValueOf<typeof alignments>
+  role: 'columnheader' | 'rowheader'
+  scope: 'col' | 'row'
+  sort?: boolean | ValueOf<typeof sorts>
+  sticky?: boolean
+  title?: string
+}
+const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
+  (props, ref) => {
+    const {
+      align = alignments.left,
+      children,
+      sort,
+      sticky = false,
+      title,
+      ...rest
+    } = props
+    const sortable = isDefined(sort)
+    const sorted = !isBoolean(sort)
+    const themeName = useTheme()
+
+    if (sortable) {
+      const msg =
+        'Missing title prop in Table.Header. A title is required when the header is sortable.'
+
+      invariant(title, msg)
+    }
+
+    const ariaSort = useMemo(() => {
+      if (!sorted) return 'none'
+      return sort === sorts.asc ? 'ascending' : 'descending'
+    }, [sort, sorted])
+
+    const ariaLabel = useMemo(() => {
+      const options = {
+        ascending: 'Ascending sort applied',
+        descending: 'Descending sort applied',
+        none: 'No sort applied'
+      }
+
+      return `${title || ''}: ${options[ariaSort]}`
+    }, [ariaSort, title])
+
+    const Icon = useMemo(() => {
+      const options = {
+        ascending: SortAscIcon,
+        descending: SortDescIcon,
+        none: SortIcon
+      }
+
+      return options[ariaSort]
+    }, [ariaSort])
+
+    return (
+      <th
+        ref={ref}
+        title={title}
+        {...styles.header(themeName, { align, sortable, sticky })}
+        {...(sortable && {
+          'aria-label': ariaLabel,
+          'aria-sort': ariaSort,
+          tabIndex: 0
+        })}
+        {...rest}
+      >
+        {children}
+        {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
+      </th>
+    )
+  }
+)
+TableHeader.displayName = 'Table.Header'
+
+interface TableRowProps extends HTMLPropsFor<'tr'> {
+  expanded?: boolean
+  selected?: boolean
+}
+const TableRow = forwardRef<HTMLTableRowElement, TableRowProps>(
+  (props, ref) => {
+    const { expanded = true, selected = false, ...rest } = props
+    const themeName = useTheme()
+
+    return (
+      <tr
+        role="row"
+        ref={ref}
+        {...styles.row(themeName, { expanded, selected })}
+        {...rest}
+      />
+    )
+  }
+)
+TableRow.displayName = 'Table.Row'
+
+Table.Body = TableBody
+Table.Cell = TableCell
+Table.Head = TableHead
+Table.Header = TableHeader
+Table.Row = TableRow
+
+Table.alignments = alignments
+
+const isBoolean = (val: unknown) => typeof val === 'boolean'
+const isDefined = (val: unknown) => typeof val !== 'undefined'
 
 export default Table

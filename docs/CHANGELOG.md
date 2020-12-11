@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.15.1...@pluralsight/ps-design-system-docs@0.16.0) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+### Features
+
+* **docs:** try to speed up dev env ([411558b](https://github.com/pluralsight/design-system/commit/411558b8500e5100485503f391574c11061cb960))
+* **table:** fix safari shadow. default not scrollable ([c658596](https://github.com/pluralsight/design-system/commit/c658596fbfe749ec1a517c069923525118e245d0))
+
+
+
+
+
 ## [0.15.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.15.0...@pluralsight/ps-design-system-docs@0.15.1) (2020-12-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

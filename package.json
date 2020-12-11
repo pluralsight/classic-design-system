@@ -71,6 +71,7 @@
     "prismjs": "^1.21.0"
   },
   "dependencies": {
+    "@types/invariant": "^2.2.34",
     "glamor": "^2.20.40",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

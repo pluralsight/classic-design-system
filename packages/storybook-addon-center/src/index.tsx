@@ -8,6 +8,8 @@ export const withCenter = makeDecorator({
   name: ADDON_ID,
   parameterName: PARAM_KEY,
   wrapper: (storyFn, context, { parameters }) => {
+    if (parameters?.disabled) return storyFn(context)
+
     return <Center>{storyFn(context)}</Center>
   }
 })
