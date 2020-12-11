@@ -4,9 +4,10 @@
 
 @font-face {
   font-family: 'PS TT Commons Roman';
-  src: url('https://s2.pluralsight.com/fonts/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff')
+  src: url('https://s2.pluralsight.com/fonts/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff2')
     format('woff-variations');
   font-display: swap;
+  font-feature-settings: 'tnum' on, 'lnum' on;
 }
 
 html {
@@ -14,7 +15,7 @@ html {
   text-size-adjust: 100%;
   font-family: var(--psTypeFontFamily);
   font-size: 0.875em;
-  font-weight: var(--psTypeFontWeightBook);
+  font-weight: var(--psTypeFontWeightRegular);
   line-height: 1.71429; /* calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)); */
 }
 
@@ -50,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--psTypeFontWeightBook);
+  font-weight: var(--psTypeFontWeightRegular);
 }
 
 ul,
