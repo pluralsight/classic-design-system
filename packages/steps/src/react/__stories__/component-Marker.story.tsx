@@ -101,7 +101,10 @@ function useInterval(callback: IntervalCallback, ms: number) {
   }, [callback])
 
   React.useEffect(() => {
-    const handler = (...args: unknown[]) => callbackRef.current!(...args)
+    const handler = (...args: unknown[]) => {
+      if (!callbackRef.current) return
+      callbackRef.current(...args)
+    }
 
     if (ms !== null) {
       const intervalId = setInterval(handler, ms)
