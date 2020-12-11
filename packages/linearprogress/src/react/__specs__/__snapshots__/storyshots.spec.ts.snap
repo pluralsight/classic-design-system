@@ -21,13 +21,13 @@ exports[`Storyshots LinearProgress animates to new values 1`] = `
       0% complete
     </div>
     <div
-      data-css-lskj0=""
+      data-css-kku7py=""
     />
   </div>
   <div
     style={
       Object {
-        "color": "rgba(255, 255, 255, 0.95)",
+        "color": "rgba(255, 255, 255, 0.90)",
       }
     }
   >
@@ -58,7 +58,7 @@ exports[`Storyshots LinearProgress fills container 1`] = `
       66% complete
     </div>
     <div
-      data-css-1y8zqkb=""
+      data-css-1rjy3r7=""
     />
   </div>
 </div>
@@ -76,7 +76,7 @@ exports[`Storyshots LinearProgress min width, no val 1`] = `
     0% complete
   </div>
   <div
-    data-css-lskj0=""
+    data-css-kku7py=""
   />
 </div>
 `;
@@ -93,7 +93,7 @@ exports[`Storyshots LinearProgress value, 0% 1`] = `
     0% complete
   </div>
   <div
-    data-css-lskj0=""
+    data-css-kku7py=""
   />
 </div>
 `;
@@ -110,7 +110,7 @@ exports[`Storyshots LinearProgress value, 33% 1`] = `
     33% complete
   </div>
   <div
-    data-css-6wpswa=""
+    data-css-sflz8p=""
   />
 </div>
 `;
@@ -127,7 +127,7 @@ exports[`Storyshots LinearProgress value, 50% 1`] = `
     50% complete
   </div>
   <div
-    data-css-qfqbsq=""
+    data-css-cvxb3x=""
   />
 </div>
 `;
