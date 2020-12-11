@@ -24,11 +24,16 @@
   --psTypeLetterSpacingXSmall: 0;
 
   /* font weight */
+  --psTypeFontWeightBlack: 900;
+  --psTypeFontWeightXBold: 800;
   --psTypeFontWeightBold: 700;
+  --psTypeFontWeightDemiBold: 600;
   --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightRegular: 400;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
   --psTypeFontWeightXLight: 200;
+  --psTypeFontWeightThin: 100;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
