@@ -29,7 +29,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
       >
         <svg
           aria-label="Indeterminate Mark"
-          data-css-ey6g07=""
+          data-css-1m8h1an=""
           role="img"
           version="1.1"
           viewBox="0 0 16 16"
@@ -45,7 +45,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
       </div>
     </div>
     <div
-      data-css-ybwuvp=""
+      data-css-55isdw=""
     >
       Red
     </div>
@@ -82,7 +82,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       >
         <svg
           aria-label="Checkmark"
-          data-css-ey6g07=""
+          data-css-1m8h1an=""
           role="img"
           version="1.1"
           viewBox="0 0 16 16"
@@ -95,7 +95,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       </div>
     </div>
     <div
-      data-css-ybwuvp=""
+      data-css-55isdw=""
     >
       Red
     </div>
@@ -131,7 +131,7 @@ exports[`Storyshots Checkbox default 1`] = `
       />
     </div>
     <div
-      data-css-ybwuvp=""
+      data-css-55isdw=""
     >
       Red
     </div>
@@ -168,7 +168,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
       />
     </div>
     <div
-      data-css-ybwuvp=""
+      data-css-55isdw=""
     >
       Red
     </div>
@@ -205,7 +205,7 @@ exports[`Storyshots Checkbox disabled 1`] = `
       />
     </div>
     <div
-      data-css-ybwuvp=""
+      data-css-55isdw=""
     >
       Red
     </div>
@@ -243,7 +243,7 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <svg
             aria-label="Checkmark"
-            data-css-ey6g07=""
+            data-css-1m8h1an=""
             role="img"
             version="1.1"
             viewBox="0 0 16 16"
@@ -256,7 +256,7 @@ exports[`Storyshots Checkbox error 1`] = `
         </div>
       </div>
       <div
-        data-css-ybwuvp=""
+        data-css-55isdw=""
       >
         Red
       </div>
@@ -281,7 +281,7 @@ exports[`Storyshots Checkbox error 1`] = `
         />
       </div>
       <div
-        data-css-ybwuvp=""
+        data-css-55isdw=""
       >
         Red
       </div>
@@ -318,7 +318,7 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       >
         <svg
           aria-label="Indeterminate Mark"
-          data-css-ey6g07=""
+          data-css-1m8h1an=""
           role="img"
           version="1.1"
           viewBox="0 0 16 16"
@@ -334,7 +334,7 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       </div>
     </div>
     <div
-      data-css-ybwuvp=""
+      data-css-55isdw=""
     >
       Red
     </div>
@@ -354,7 +354,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
     <div
       style={
         Object {
-          "color": "rgba(255, 255, 255, 0.95)",
+          "color": "rgba(255, 255, 255, 0.90)",
         }
       }
     >
@@ -383,7 +383,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         />
       </div>
       <div
-        data-css-ybwuvp=""
+        data-css-55isdw=""
       >
         Red
       </div>
@@ -409,7 +409,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         />
       </div>
       <div
-        data-css-ybwuvp=""
+        data-css-55isdw=""
       >
         Green
       </div>
@@ -435,7 +435,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
         />
       </div>
       <div
-        data-css-ybwuvp=""
+        data-css-55isdw=""
       >
         Blue
       </div>

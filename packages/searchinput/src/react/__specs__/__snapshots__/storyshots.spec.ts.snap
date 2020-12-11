@@ -11,7 +11,7 @@ exports[`Storyshots SearchInput default 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1c5qy71=""
+        data-css-pbmn8a=""
       >
         <input
           data-css-r2g0l1=""
@@ -57,7 +57,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1c5qy71=""
+        data-css-pbmn8a=""
       >
         <input
           data-css-r2g0l1=""
@@ -97,7 +97,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-17x5ehd=""
+            data-css-vyp88e=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={103.67255756846316}
@@ -114,7 +114,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
   data-css-w0yocm=""
 >
   <div
-    data-css-dysqqm=""
+    data-css-1jmxzqo=""
   >
     Label
   </div>
@@ -125,7 +125,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       data-css-in6gqi=""
     >
       <div
-        data-css-1kh5e1a=""
+        data-css-1p8usza=""
       >
         <input
           data-css-r2g0l1=""
@@ -136,7 +136,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           type="search"
         />
         <button
-          data-css-kovzf5=""
+          data-css-dvk6df=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
@@ -223,7 +223,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1kh5e1a=""
+        data-css-1p8usza=""
       >
         <input
           data-css-r2g0l1=""
@@ -234,7 +234,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           type="search"
         />
         <button
-          data-css-kovzf5=""
+          data-css-dvk6df=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}

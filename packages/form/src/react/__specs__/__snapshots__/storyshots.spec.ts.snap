@@ -43,7 +43,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-176v989=""
+              data-css-a3dmt8=""
               disabled={false}
               style={Object {}}
             >
@@ -58,7 +58,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-17fxkyy=""
+              data-css-bu16i2=""
               disabled={false}
               style={Object {}}
             >
@@ -119,7 +119,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-176v989=""
+              data-css-a3dmt8=""
               disabled={false}
               style={Object {}}
             >
@@ -134,7 +134,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-17fxkyy=""
+              data-css-bu16i2=""
               disabled={false}
               style={Object {}}
             >
@@ -181,7 +181,7 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
             data-css-7d5932=""
           >
             <button
-              data-css-176v989=""
+              data-css-a3dmt8=""
               disabled={false}
               style={Object {}}
             >
@@ -222,7 +222,7 @@ exports[`Storyshots Sample Form null children 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-12103dp=""
+          data-css-12i2j55=""
           style={
             Object {
               "maxWidth": "none",
@@ -246,7 +246,7 @@ exports[`Storyshots Sample Form null children 1`] = `
           }
         >
           <div
-            data-css-dysqqm=""
+            data-css-1jmxzqo=""
           >
             Name
           </div>
@@ -257,10 +257,10 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-ctre2o=""
             >
               <div
-                data-css-ydex85=""
+                data-css-1okk1dp=""
               >
                 <input
-                  data-css-zjzpem=""
+                  data-css-1iyk6mt=""
                   disabled={false}
                   placeholder="What's your name?"
                   style={
@@ -288,7 +288,7 @@ exports[`Storyshots Sample Form null children 1`] = `
           }
         >
           <div
-            data-css-dysqqm=""
+            data-css-1jmxzqo=""
           >
             Alias
           </div>
@@ -299,10 +299,10 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-ctre2o=""
             >
               <div
-                data-css-ydex85=""
+                data-css-1okk1dp=""
               >
                 <input
-                  data-css-zjzpem=""
+                  data-css-1iyk6mt=""
                   disabled={false}
                   placeholder="Do you have a nick name?"
                   style={
@@ -342,7 +342,7 @@ exports[`Storyshots Sample Form null children 1`] = `
           }
         >
           <div
-            data-css-9kywkh=""
+            data-css-k6qvfq=""
           >
             Comment
           </div>
@@ -353,7 +353,7 @@ exports[`Storyshots Sample Form null children 1`] = `
               data-css-ctre2o=""
             >
               <textarea
-                data-css-frmafg=""
+                data-css-1paz7u7=""
                 disabled={false}
                 placeholder="Anything else to report?"
                 style={
@@ -376,7 +376,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-176v989=""
+              data-css-a3dmt8=""
               disabled={false}
               style={Object {}}
             >
@@ -391,7 +391,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-17fxkyy=""
+              data-css-bu16i2=""
               disabled={false}
               style={Object {}}
             >
@@ -432,7 +432,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-12103dp=""
+          data-css-12i2j55=""
           style={
             Object {
               "maxWidth": "none",
@@ -456,7 +456,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-dysqqm=""
+            data-css-1jmxzqo=""
           >
             Name
           </div>
@@ -467,10 +467,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-ctre2o=""
             >
               <div
-                data-css-ydex85=""
+                data-css-1okk1dp=""
               >
                 <input
-                  data-css-zjzpem=""
+                  data-css-1iyk6mt=""
                   disabled={false}
                   placeholder="What's your name?"
                   style={
@@ -498,7 +498,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-dysqqm=""
+            data-css-1jmxzqo=""
           >
             Alias
           </div>
@@ -509,10 +509,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-ctre2o=""
             >
               <div
-                data-css-ydex85=""
+                data-css-1okk1dp=""
               >
                 <input
-                  data-css-zjzpem=""
+                  data-css-1iyk6mt=""
                   disabled={false}
                   placeholder="Do you have a nick name?"
                   style={
@@ -545,7 +545,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-dysqqm=""
+            data-css-1jmxzqo=""
           >
             Email address
           </div>
@@ -556,10 +556,10 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-in6gqi=""
             >
               <div
-                data-css-ydex85=""
+                data-css-1okk1dp=""
               >
                 <input
-                  data-css-zjzpem=""
+                  data-css-1iyk6mt=""
                   disabled={false}
                   style={
                     Object {
@@ -644,7 +644,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-ne3jjf=""
               >
                 <button
-                  data-css-94lg5r=""
+                  data-css-185vr3w=""
                   disabled={false}
                   onClick={[Function]}
                   onKeyDown={[Function]}
@@ -659,13 +659,13 @@ exports[`Storyshots Sample Form sample 1`] = `
                       Select your occupation...
                     </span>
                     <span
-                      data-css-1t1vq03=""
+                      data-css-13czx1q=""
                     >
                       Select your occupation...
                     </span>
                   </span>
                   <div
-                    data-css-1af7ks9=""
+                    data-css-19x2evt=""
                   >
                     <div
                       data-css-7dab2f=""
@@ -703,7 +703,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1aye8gw=""
+              data-css-1r5esr3=""
               href="http://google.com"
             >
               <span
@@ -724,7 +724,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1aye8gw=""
+              data-css-1r5esr3=""
               href="http://google.com"
             >
               <span
@@ -745,7 +745,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1aye8gw=""
+              data-css-1r5esr3=""
               href="http://google.com"
             >
               <span
@@ -771,7 +771,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-dysqqm=""
+            data-css-1jmxzqo=""
           >
             Choose a Date
           </div>
@@ -783,7 +783,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <input
                 aria-label="month"
-                data-css-1ynlp2p=""
+                data-css-1549q07=""
                 name="mm"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -797,13 +797,13 @@ exports[`Storyshots Sample Form sample 1`] = `
                 value=""
               />
               <span
-                data-css-9eecwn=""
+                data-css-14iu1jp=""
               >
                 /
               </span>
               <input
                 aria-label="day"
-                data-css-1ynlp2p=""
+                data-css-1549q07=""
                 name="dd"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -817,13 +817,13 @@ exports[`Storyshots Sample Form sample 1`] = `
                 value=""
               />
               <span
-                data-css-9eecwn=""
+                data-css-14iu1jp=""
               >
                 /
               </span>
               <input
                 aria-label="year"
-                data-css-1ynlp2p=""
+                data-css-1549q07=""
                 name="yyyy"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -843,7 +843,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 value=""
               />
               <button
-                data-css-3txxwd=""
+                data-css-14ley1g=""
                 onClick={[Function]}
               >
                 <div
@@ -893,7 +893,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <svg
                 aria-label="Checkmark"
-                data-css-ey6g07=""
+                data-css-1m8h1an=""
                 role="img"
                 version="1.1"
                 viewBox="0 0 16 16"
@@ -906,7 +906,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             </div>
           </div>
           <div
-            data-css-ybwuvp=""
+            data-css-55isdw=""
           >
             Checkbox selected
           </div>
@@ -964,7 +964,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 value="full"
               />
               <div
-                data-css-nrxvu5=""
+                data-css-18udfrp=""
               >
                 Full-time employement
               </div>
@@ -998,7 +998,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 value="part"
               />
               <div
-                data-css-nrxvu5=""
+                data-css-18udfrp=""
               >
                 Part-time employement
               </div>
@@ -1049,7 +1049,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             type="checkbox"
           />
           <span
-            data-css-1oms9gl=""
+            data-css-k7ezbc=""
           >
             toggle
           </span>
@@ -1075,7 +1075,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-9kywkh=""
+            data-css-k6qvfq=""
           >
             Comment
           </div>
@@ -1086,7 +1086,7 @@ exports[`Storyshots Sample Form sample 1`] = `
               data-css-ctre2o=""
             >
               <textarea
-                data-css-frmafg=""
+                data-css-1paz7u7=""
                 disabled={false}
                 placeholder="Anything else to report?"
                 style={
@@ -1109,7 +1109,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-176v989=""
+              data-css-a3dmt8=""
               disabled={false}
               style={Object {}}
             >
@@ -1124,7 +1124,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-17fxkyy=""
+              data-css-bu16i2=""
               disabled={false}
               style={Object {}}
             >
