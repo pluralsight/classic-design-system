@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-appframe",
-  "version": "1.2.21",
+  "version": "1.2.22",
   "description": "AppFrame UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,9 +23,9 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^19.0.16",
-    "@pluralsight/ps-design-system-core": "^6.6.2",
-    "@pluralsight/ps-design-system-scrollable": "^3.0.3",
+    "@pluralsight/ps-design-system-button": "^19.0.17",
+    "@pluralsight/ps-design-system-core": "^6.6.3",
+    "@pluralsight/ps-design-system-scrollable": "^3.0.4",
     "@pluralsight/ps-design-system-util": "^6.0.8",
     "body-scroll-lock": "^3.0.3",
     "exenv": "^1.2.2",
@@ -40,16 +40,16 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.2",
     "@pluralsight/ps-design-system-button": "*",
-    "@pluralsight/ps-design-system-icon": "^19.0.15",
-    "@pluralsight/ps-design-system-layout": "^7.1.21",
-    "@pluralsight/ps-design-system-navbar": "^1.2.18",
-    "@pluralsight/ps-design-system-navbrand": "^1.2.17",
-    "@pluralsight/ps-design-system-navitem": "^1.5.8",
-    "@pluralsight/ps-design-system-navuser": "^1.2.17",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.17",
-    "@pluralsight/ps-design-system-text": "^17.0.4",
+    "@pluralsight/ps-design-system-icon": "^19.0.16",
+    "@pluralsight/ps-design-system-layout": "^7.1.22",
+    "@pluralsight/ps-design-system-navbar": "^1.2.19",
+    "@pluralsight/ps-design-system-navbrand": "^1.2.18",
+    "@pluralsight/ps-design-system-navitem": "^1.5.9",
+    "@pluralsight/ps-design-system-navuser": "^1.2.18",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.18",
+    "@pluralsight/ps-design-system-text": "^17.0.5",
     "@pluralsight/ps-design-system-theme": "^6.0.13",
-    "@pluralsight/ps-design-system-verticaltabs": "^4.2.18",
+    "@pluralsight/ps-design-system-verticaltabs": "^4.2.19",
     "@types/body-scroll-lock": "^2.6.1"
   }
 }
