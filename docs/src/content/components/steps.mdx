@@ -98,6 +98,60 @@ function Example() {
 export default Example
 ```
 
+
+### Step status
+
+Use the `status` prop to defined the status of each step.
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+  return (
+    <Steps orientation="horizontal" size="medium">
+      <Steps.Step status={Steps.statuses.incomplete}>Incomplete</Steps.Step>
+      <Steps.Step status={Steps.statuses.current}>Current</Steps.Step>
+      <Steps.Step status={Steps.statuses.completed}>Completed</Steps.Step>
+    </Steps>
+  )
+}
+
+export default Example
+```
+
+### Marker counters
+
+Incremental counters can optionally be hidden using the `counter` prop.
+
+```typescript
+import React from 'react'
+import Steps from '@pluralsight/ps-design-system-steps'
+
+function Example() {
+  return (
+    <Steps counter={false} orientation="horizontal" size="medium">
+      <Steps.Step status={Steps.statuses.completed}>
+        Finished
+      </Steps.Step>
+
+      <Steps.Step
+        description="An optional description to provide more detail about this step."
+        status={Steps.statuses.current}
+      >
+        In Progress
+      </Steps.Step>
+
+      <Steps.Step status={Steps.statuses.incomplete}>
+        Waiting
+      </Steps.Step>
+    </Steps>
+  )
+}
+
+export default Example
+```
+
 ### Interactive
 
 Add an `onClick` prop to display the step as interactive.
@@ -156,61 +210,8 @@ export default Example
 ```
 
 
-### Step status
 
-Use the `status` prop to defined the status of each step.
-
-```typescript
-import React from 'react'
-import Steps from '@pluralsight/ps-design-system-steps'
-
-function Example() {
-  return (
-    <Steps orientation="horizontal" size="medium">
-      <Steps.Step status={Steps.statuses.incomplete}>Incomplete</Steps.Step>
-      <Steps.Step status={Steps.statuses.current}>Current</Steps.Step>
-      <Steps.Step status={Steps.statuses.completed}>Completed</Steps.Step>
-    </Steps>
-  )
-}
-
-export default Example
-```
-
-### Marker counters
-
-Incremental counters can optionally be hidden using the `counter` prop.
-
-```typescript
-import React from 'react'
-import Steps from '@pluralsight/ps-design-system-steps'
-
-function Example() {
-  return (
-    <Steps counter={false} orientation="horizontal" size="medium">
-      <Steps.Step status={Steps.statuses.completed}>
-        Finished
-      </Steps.Step>
-
-      <Steps.Step
-        description="An optional description to provide more detail about this step."
-        status={Steps.statuses.current}
-      >
-        In Progress
-      </Steps.Step>
-
-      <Steps.Step status={Steps.statuses.incomplete}>
-        Waiting
-      </Steps.Step>
-    </Steps>
-  )
-}
-
-export default Example
-```
-
-
-## Usage & Types
+## Usage & types
 
 <Usage
   install="npm install @pluralsight/ps-design-system-steps"
