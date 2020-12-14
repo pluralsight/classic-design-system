@@ -259,7 +259,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-17x5ehd=""
+            data-css-vyp88e=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={0}
@@ -308,7 +308,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-17x5ehd=""
+            data-css-vyp88e=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={55.29203070318036}
@@ -318,7 +318,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
     </div>
     <div>
       <div
-        data-css-16qh227=""
+        data-css-k4yhz3=""
       >
         <p>
           Grapple case shot
@@ -357,7 +357,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-17x5ehd=""
+            data-css-vyp88e=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={138.23007675795088}
@@ -458,7 +458,7 @@ exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
     </div>
     <div>
       <div
-        data-css-16qh227=""
+        data-css-k4yhz3=""
       >
         <p>
           Grapple case shot
@@ -974,7 +974,7 @@ exports[`Storyshots Components/Steps/examples Wizard 1`] = `
       </div>
       <div>
         <div
-          data-css-15f98wj=""
+          data-css-2vh19s=""
         >
           <p>
             First step
@@ -1202,7 +1202,7 @@ exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
       </div>
       <div>
         <div
-          data-css-15f98wj=""
+          data-css-2vh19s=""
         >
           <p>
             Select template
@@ -1348,7 +1348,7 @@ exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
       </div>
       <div>
         <div
-          data-css-15f98wj=""
+          data-css-2vh19s=""
         >
           <p>
             Select template
@@ -1493,7 +1493,7 @@ exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
       </div>
       <div>
         <div
-          data-css-16qh227=""
+          data-css-k4yhz3=""
         >
           <p>
             Select template
@@ -1637,7 +1637,7 @@ exports[`Storyshots Components/Steps/horizontal Responsive 1`] = `
       </div>
       <div>
         <div
-          data-css-16qh227=""
+          data-css-k4yhz3=""
         >
           <p>
             Select template
@@ -1778,7 +1778,7 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
     </div>
     <div>
       <div
-        data-css-15f98wj=""
+        data-css-2vh19s=""
       >
         <p>
           Select template
@@ -2007,7 +2007,7 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
       </div>
       <div>
         <div
-          data-css-15f98wj=""
+          data-css-2vh19s=""
         >
           <p>
             Select template
@@ -2237,7 +2237,7 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
     </div>
     <div>
       <div
-        data-css-15f98wj=""
+        data-css-2vh19s=""
       >
         <p>
           Select template
@@ -2464,7 +2464,7 @@ exports[`Storyshots Components/Steps/vertical Medium 1`] = `
     </div>
     <div>
       <div
-        data-css-16qh227=""
+        data-css-k4yhz3=""
       >
         <p>
           Select template
