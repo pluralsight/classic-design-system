@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@8.0.5...@pluralsight/ps-design-system-drawer@8.0.6) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
 ## [8.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@8.0.4...@pluralsight/ps-design-system-drawer@8.0.5) (2020-12-07)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

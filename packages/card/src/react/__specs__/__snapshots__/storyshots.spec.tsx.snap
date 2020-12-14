@@ -27,7 +27,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       >
         <button
           aria-label="Bookmark"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="Bookmark"
         >
           <div
@@ -50,7 +50,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -174,7 +174,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
       >
         <button
           aria-label="Bookmark"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="Bookmark"
         >
           <div
@@ -193,7 +193,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
         </button>
         <button
           aria-label="More"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="More"
         >
           <div
@@ -216,7 +216,7 @@ exports[`Storyshots actionBar multiple actions 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -340,7 +340,7 @@ exports[`Storyshots actionBar single action 1`] = `
       >
         <button
           aria-label="Bookmark"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="Bookmark"
         >
           <div
@@ -363,7 +363,7 @@ exports[`Storyshots actionBar single action 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -483,7 +483,7 @@ exports[`Storyshots bonusBar only text 1`] = `
         }
       />
       <div
-        data-css-68klfw=""
+        data-css-y2uzfz=""
       >
         Wow, I'm bonus.
       </div>
@@ -492,7 +492,7 @@ exports[`Storyshots bonusBar only text 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -612,7 +612,7 @@ exports[`Storyshots bonusBar some element 1`] = `
         }
       />
       <div
-        data-css-68klfw=""
+        data-css-y2uzfz=""
       >
         <div
           data-css-1vvr7he=""
@@ -635,7 +635,7 @@ exports[`Storyshots bonusBar some element 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -766,7 +766,7 @@ exports[`Storyshots combo everything focusable 1`] = `
         data-css-14m9qky=""
       >
         <span
-          data-css-11lki9j=""
+          data-css-1hi8c=""
         >
           <a
             href="http://duckduckgo.com?q=overlay"
@@ -799,7 +799,7 @@ exports[`Storyshots combo everything focusable 1`] = `
       >
         <button
           aria-label="Bookmark"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="Bookmark"
         >
           <div
@@ -818,7 +818,7 @@ exports[`Storyshots combo everything focusable 1`] = `
         </button>
         <button
           aria-label="Settings"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="Settings"
         >
           <div
@@ -839,7 +839,7 @@ exports[`Storyshots combo everything focusable 1`] = `
         </button>
         <button
           aria-label="More"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="More"
         >
           <div
@@ -858,7 +858,7 @@ exports[`Storyshots combo everything focusable 1`] = `
         </button>
       </div>
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -890,13 +890,13 @@ exports[`Storyshots combo everything focusable 1`] = `
       data-css-piydn8=""
     >
       <span
-        data-css-18hqvbo=""
+        data-css-3mq1xc=""
       >
         <a
           href="http://duckduckgo.com?q=title"
         >
           <div
-            data-css-fvvao4=""
+            data-css-b1354r=""
           >
             <div
               className=""
@@ -998,7 +998,7 @@ exports[`Storyshots combo everything focusable 1`] = `
         data-css-1tz10dh=""
       >
         <span
-          data-css-18hqvbo=""
+          data-css-3mq1xc=""
         >
           <a
             href="http://duckduckgo.com/?q=jaketrent"
@@ -1046,7 +1046,7 @@ exports[`Storyshots combo everything locked 1`] = `
         data-css-5tk5g6=""
       >
         <span
-          data-css-11lki9j=""
+          data-css-1hi8c=""
         >
           <a
             href="http://duckduckgo.com?q=overlay"
@@ -1081,7 +1081,7 @@ exports[`Storyshots combo everything locked 1`] = `
       >
         <button
           aria-label="Bookmark"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="Bookmark"
         >
           <div
@@ -1100,7 +1100,7 @@ exports[`Storyshots combo everything locked 1`] = `
         </button>
         <button
           aria-label="Settings"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="Settings"
         >
           <div
@@ -1121,7 +1121,7 @@ exports[`Storyshots combo everything locked 1`] = `
         </button>
         <button
           aria-label="More"
-          data-css-45oxhg=""
+          data-css-1y4u3tm=""
           title="More"
         >
           <div
@@ -1140,7 +1140,7 @@ exports[`Storyshots combo everything locked 1`] = `
         </button>
       </div>
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -1172,13 +1172,13 @@ exports[`Storyshots combo everything locked 1`] = `
       data-css-piydn8=""
     >
       <span
-        data-css-18hqvbo=""
+        data-css-3mq1xc=""
       >
         <a
           href="http://duckduckgo.com?q=title"
         >
           <div
-            data-css-fvvao4=""
+            data-css-b1354r=""
           >
             <div
               className=""
@@ -1280,7 +1280,7 @@ exports[`Storyshots combo everything locked 1`] = `
         data-css-1tz10dh=""
       >
         <span
-          data-css-18hqvbo=""
+          data-css-3mq1xc=""
         >
           <a
             href="http://duckduckgo.com/?q=jaketrent"
@@ -1299,7 +1299,7 @@ exports[`Storyshots combo everything locked 1`] = `
         data-css-1tz10dh=""
       >
         <span
-          data-css-18hqvbo=""
+          data-css-3mq1xc=""
         >
           <a
             href="http://duckduckgo.com/?q=jaketrent"
@@ -1318,7 +1318,7 @@ exports[`Storyshots combo everything locked 1`] = `
         data-css-1tz10dh=""
       >
         <span
-          data-css-18hqvbo=""
+          data-css-3mq1xc=""
         >
           <a
             href="http://duckduckgo.com/?q=jaketrent"
@@ -1367,7 +1367,7 @@ exports[`Storyshots fullOverlay link 1`] = `
         data-css-14m9qky=""
       >
         <span
-          data-css-11lki9j=""
+          data-css-1hi8c=""
         >
           <a
             href="http://duckduckgo.com?q=overlay"
@@ -1381,7 +1381,7 @@ exports[`Storyshots fullOverlay link 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -1504,7 +1504,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
         data-css-14m9qky=""
       >
         <span
-          data-css-11lki9j=""
+          data-css-1hi8c=""
         >
           <a
             href="http://duckduckgo.com?q=overlay"
@@ -1537,7 +1537,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -1668,7 +1668,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
         data-css-14m9qky=""
       >
         <span
-          data-css-11lki9j=""
+          data-css-1hi8c=""
         >
           <a
             href="http://duckduckgo.com?q=overlay"
@@ -1701,7 +1701,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -1824,7 +1824,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
         data-css-5tk5g6=""
       >
         <span
-          data-css-11lki9j=""
+          data-css-1hi8c=""
         >
           Element
         </span>
@@ -1834,7 +1834,7 @@ exports[`Storyshots fullOverlay locked visible 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -1957,7 +1957,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
         data-css-14m9qky=""
       >
         <span
-          data-css-11lki9j=""
+          data-css-1hi8c=""
         >
           Element
         </span>
@@ -1967,7 +1967,7 @@ exports[`Storyshots fullOverlay text only 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -2099,7 +2099,7 @@ exports[`Storyshots image image link 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -2223,7 +2223,7 @@ exports[`Storyshots image image only 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -2347,7 +2347,7 @@ exports[`Storyshots metadata multiple text 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -2491,7 +2491,7 @@ exports[`Storyshots metadata single text 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -2624,7 +2624,7 @@ exports[`Storyshots metadata text link 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -2724,7 +2724,7 @@ exports[`Storyshots metadata text link 1`] = `
         data-css-1tz10dh=""
       >
         <span
-          data-css-18hqvbo=""
+          data-css-3mq1xc=""
         >
           <a
             href="http://duckduckgo.com?q=jim%20cooper"
@@ -2765,7 +2765,7 @@ exports[`Storyshots metadata text wrapper 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -2900,7 +2900,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3000,7 +3000,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         data-css-1tz10dh=""
       >
         <span
-          data-css-18hqvbo=""
+          data-css-3mq1xc=""
         >
           <a
             href="http://duckduckgo.com?q=jim%20cooper"
@@ -3017,7 +3017,7 @@ exports[`Storyshots metadata two lines, mixed content 1`] = `
         data-css-1tz10dh=""
       >
         <span
-          data-css-18hqvbo=""
+          data-css-3mq1xc=""
         >
           <a
             href="http://duckduckgo.com?q=react"
@@ -3090,7 +3090,7 @@ exports[`Storyshots progress done 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3214,7 +3214,7 @@ exports[`Storyshots progress none 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3346,7 +3346,7 @@ exports[`Storyshots progress some 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3470,7 +3470,7 @@ exports[`Storyshots size large 1`] = `
       data-css-fvo1sh=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3594,7 +3594,7 @@ exports[`Storyshots size medium 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3718,7 +3718,7 @@ exports[`Storyshots size small 1`] = `
       data-css-pzomq8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3838,7 +3838,7 @@ exports[`Storyshots sizes with tags large 1`] = `
         }
       />
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -3870,7 +3870,7 @@ exports[`Storyshots sizes with tags large 1`] = `
       data-css-fvo1sh=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -3990,7 +3990,7 @@ exports[`Storyshots sizes with tags medium 1`] = `
         }
       />
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -4022,7 +4022,7 @@ exports[`Storyshots sizes with tags medium 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -4142,7 +4142,7 @@ exports[`Storyshots sizes with tags small 1`] = `
         }
       />
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -4174,7 +4174,7 @@ exports[`Storyshots sizes with tags small 1`] = `
       data-css-pzomq8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -4294,7 +4294,7 @@ exports[`Storyshots tag long multi-word 1`] = `
         }
       />
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -4326,7 +4326,7 @@ exports[`Storyshots tag long multi-word 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -4446,7 +4446,7 @@ exports[`Storyshots tag long single word 1`] = `
         }
       />
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -4478,7 +4478,7 @@ exports[`Storyshots tag long single word 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -4598,7 +4598,7 @@ exports[`Storyshots tag text only 1`] = `
         }
       />
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <span
           data-css-tz46pd=""
@@ -4611,7 +4611,7 @@ exports[`Storyshots tag text only 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -4731,7 +4731,7 @@ exports[`Storyshots tag with icon 1`] = `
         }
       />
       <div
-        data-css-11tzvtj=""
+        data-css-1ejtvlp=""
       >
         <div
           data-css-1pif58i=""
@@ -4763,7 +4763,7 @@ exports[`Storyshots tag with icon 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -4887,13 +4887,13 @@ exports[`Storyshots title long title, text link with title wrapper 1`] = `
       data-css-piydn8=""
     >
       <span
-        data-css-18hqvbo=""
+        data-css-3mq1xc=""
       >
         <a
           href="http://duckduckgo.com?q=text"
         >
           <div
-            data-css-fvvao4=""
+            data-css-b1354r=""
           >
             <div
               className=""
@@ -5019,7 +5019,7 @@ exports[`Storyshots title long title, title wrapper 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""
@@ -5143,13 +5143,13 @@ exports[`Storyshots title text link with title wrapper 1`] = `
       data-css-piydn8=""
     >
       <span
-        data-css-18hqvbo=""
+        data-css-3mq1xc=""
       >
         <a
           href="http://duckduckgo.com?q=text"
         >
           <div
-            data-css-fvvao4=""
+            data-css-b1354r=""
           >
             <div
               className=""
@@ -5275,7 +5275,7 @@ exports[`Storyshots title title wrapper 1`] = `
       data-css-piydn8=""
     >
       <div
-        data-css-fvvao4=""
+        data-css-b1354r=""
       >
         <div
           className=""

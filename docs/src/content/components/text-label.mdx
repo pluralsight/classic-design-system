@@ -13,7 +13,9 @@ import { Label } from '@pluralsight/ps-design-system-text'
 
 ## Examples
 
-### Default label styles
+### Sizes
+
+Four text sizes are available using the `size` prop.
 
 ```typescript
 import { Label } from '@pluralsight/ps-design-system-text'
@@ -23,87 +25,16 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <div>
-        <Label size={Label.sizes.large} color={Label.colors.primary} strong>
-          Label (large, primary, strong)
-        </Label>
+        <Label size={Label.sizes.large}>Label - large</Label>
       </div>
       <div>
-        <Label size={Label.sizes.large} color={Label.colors.primary}>
-          Label (large, primary)
-        </Label>
+        <Label size={Label.sizes.medium}>Label - medium</Label>
       </div>
       <div>
-        <Label size={Label.sizes.large} color={Label.colors.secondary} strong>
-          Label (large, Secondary, strong)
-        </Label>
+        <Label size={Label.sizes.small}>Label - small</Label>
       </div>
       <div>
-        <Label size={Label.sizes.large} color={Label.colors.secondary}>
-          Label (large, secondary)
-        </Label>
-      </div>
-
-      <div>
-        <Label size={Label.sizes.medium} color={Label.colors.primary} strong>
-          Label (medium, primary, strong)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.medium} color={Label.colors.primary}>
-          Label (medium, primary)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.medium} color={Label.colors.secondary} strong>
-          Label (medium, secondary, strong)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.medium} color={Label.colors.secondary}>
-          Label (medium, secondary)
-        </Label>
-      </div>
-
-      <div>
-        <Label size={Label.sizes.small} color={Label.colors.primary} strong>
-          Label (small, primary, strong)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.small} color={Label.colors.primary}>
-          Label (small, primary)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.small} color={Label.colors.secondary} strong>
-          Label (small, secondary, strong)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.small} color={Label.colors.secondary}>
-          Label (small, secondary)
-        </Label>
-      </div>
-
-      <div>
-        <Label size={Label.sizes.xSmall} color={Label.colors.primary} strong>
-          Label (xSmall, primary, strong)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.xSmall} color={Label.colors.primary}>
-          Label (xSmall, primary)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.xSmall} color={Label.colors.secondary} strong>
-          Label (xSmall, secondary, strong)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.xSmall} color={Label.colors.secondary}>
-          Label (xSmall, secondary)
-        </Label>
+        <Label size={Label.sizes.xSmall}>Label - xSmall</Label>
       </div>
     </React.Fragment>
   )
@@ -112,9 +43,9 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-### Uppercase label styles
+### Strong
 
-Use all caps text styles sparingly. Heading styles should be used for headings.
+The `strong` prop increases the font weight.
 
 ```typescript
 import { Label } from '@pluralsight/ps-design-system-text'
@@ -124,127 +55,52 @@ const Example: React.FC = props => {
   return (
     <React.Fragment>
       <div>
-        <Label
-          size={Label.sizes.large}
-          color={Label.colors.primary}
-          strong
-          caps
-        >
-          Label (large, primary, strong, caps)
-        </Label>
+        <Label strong>Label - strong</Label>
       </div>
-      <div>
-        <Label size={Label.sizes.large} color={Label.colors.primary} caps>
-          Label (large, primary, caps)
-        </Label>
-      </div>
-      <div>
-        <Label
-          size={Label.sizes.large}
-          color={Label.colors.secondary}
-          strong
-          caps
-        >
-          Label (large, Secondary, strong, caps)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.large} color={Label.colors.secondary} caps>
-          Label (large, secondary, caps)
-        </Label>
-      </div>
+    </React.Fragment>
+  )
+}
 
-      <div>
-        <Label
-          size={Label.sizes.medium}
-          color={Label.colors.primary}
-          strong
-          caps
-        >
-          Label (medium, primary, strong, caps)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.medium} color={Label.colors.primary} caps>
-          Label (medium, primary, caps)
-        </Label>
-      </div>
-      <div>
-        <Label
-          size={Label.sizes.medium}
-          color={Label.colors.secondary}
-          strong
-          caps
-        >
-          Label (medium, secondary, strong, caps)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.medium} color={Label.colors.secondary} caps>
-          Label (medium, secondary, caps)
-        </Label>
-      </div>
+export default Example
+```
 
-      <div>
-        <Label
-          size={Label.sizes.small}
-          color={Label.colors.primary}
-          strong
-          caps
-        >
-          Label (small, primary, strong, caps)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.small} color={Label.colors.primary} caps>
-          Label (small, primary, caps)
-        </Label>
-      </div>
-      <div>
-        <Label
-          size={Label.sizes.small}
-          color={Label.colors.secondary}
-          strong
-          caps
-        >
-          Label (small, secondary, strong, caps)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.small} color={Label.colors.secondary} caps>
-          Label (small, secondary, caps)
-        </Label>
-      </div>
+### Colors
 
+Text color can be set to Primary (high contrast) or Secondary (medium contrast) using the `color` prop.
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
       <div>
-        <Label
-          size={Label.sizes.xSmall}
-          color={Label.colors.primary}
-          strong
-          caps
-        >
-          Label (xSmall, primary, strong, caps)
-        </Label>
+        <Label color={Heading.colors.primary}>Label - primary</Label>
       </div>
       <div>
-        <Label size={Label.sizes.xSmall} color={Label.colors.primary} caps>
-          Label (xSmall, primary, caps)
-        </Label>
+        <Label color={Heading.colors.secondary}>Label - secondary</Label>
       </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
+### All caps
+
+The `caps` prop will uppercase the text and adds some letter-spacing to properly track out the text.
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
       <div>
-        <Label
-          size={Label.sizes.xSmall}
-          color={Label.colors.secondary}
-          strong
-          caps
-        >
-          Label (xSmall, secondary, strong, caps)
-        </Label>
-      </div>
-      <div>
-        <Label size={Label.sizes.xSmall} color={Label.colors.secondary} caps>
-          Label (xSmall, secondary, caps)
-        </Label>
+        <Label caps>Label - caps</Label>
       </div>
     </React.Fragment>
   )

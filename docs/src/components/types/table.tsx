@@ -5,14 +5,25 @@ import * as styles from './table.module.css'
 
 export const Table: React.FC = props => {
   return (
-    <DSTable className={styles.table}>
-      <DSTable.Row>
-        <DSTable.ColumnHeader>Name</DSTable.ColumnHeader>
-        <DSTable.ColumnHeader>Type</DSTable.ColumnHeader>
-        <DSTable.ColumnHeader>Description</DSTable.ColumnHeader>
-        <DSTable.ColumnHeader>Default</DSTable.ColumnHeader>
-      </DSTable.Row>
-      {props.children}
+    <DSTable className={styles.table} scrollable={false}>
+      <DSTable.Head>
+        <DSTable.Row>
+          <DSTable.Header role="columnheader" scope="col">
+            Name
+          </DSTable.Header>
+          <DSTable.Header role="columnheader" scope="col">
+            Type
+          </DSTable.Header>
+          <DSTable.Header role="columnheader" scope="col">
+            Description
+          </DSTable.Header>
+          <DSTable.Header role="columnheader" scope="col">
+            Default
+          </DSTable.Header>
+        </DSTable.Row>
+      </DSTable.Head>
+
+      <DSTable.Body>{props.children}</DSTable.Body>
     </DSTable>
   )
 }

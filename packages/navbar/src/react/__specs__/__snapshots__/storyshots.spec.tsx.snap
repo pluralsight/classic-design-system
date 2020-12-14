@@ -99,7 +99,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           data-css-1ij5lym=""
         >
           <button
-            data-css-16atklq=""
+            data-css-zyosl8=""
             onClick={[Function]}
           >
             <span
@@ -220,7 +220,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           data-css-1ij5lym=""
         >
           <button
-            data-css-16atklq=""
+            data-css-zyosl8=""
             onClick={[Function]}
           >
             <span
@@ -371,7 +371,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           data-css-1ij5lym=""
         >
           <button
-            data-css-16atklq=""
+            data-css-zyosl8=""
             onClick={[Function]}
           >
             <span
@@ -472,7 +472,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             data-css-1ij5lym=""
           >
             <button
-              data-css-16atklq=""
+              data-css-zyosl8=""
             >
               <span
                 data-css-50rv4t=""
@@ -524,7 +524,7 @@ exports[`Storyshots Navbar desktop 1`] = `
               data-css-1ij5lym=""
             >
               <button
-                data-css-8y1zv3=""
+                data-css-1jfp54v=""
                 onClick={[Function]}
               >
                 <span
@@ -606,7 +606,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             data-css-1ij5lym=""
           >
             <button
-              data-css-16atklq=""
+              data-css-zyosl8=""
             >
               <span
                 data-css-50rv4t=""
@@ -652,7 +652,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             data-css-1ij5lym=""
           >
             <button
-              data-css-16atklq=""
+              data-css-zyosl8=""
             >
               <span
                 data-css-50rv4t=""
@@ -696,7 +696,7 @@ exports[`Storyshots Navbar desktop 1`] = `
           >
             <div
               aria-label="Jake"
-              data-css-1h1qs66=""
+              data-css-1osvuqz=""
               style={
                 Object {
                   "backgroundColor": "#008F46",
@@ -707,7 +707,7 @@ exports[`Storyshots Navbar desktop 1`] = `
             </div>
           </div>
           <div
-            data-css-1mmc9g1=""
+            data-css-2tkfb5=""
           >
             <div
               data-css-6flzpu=""
