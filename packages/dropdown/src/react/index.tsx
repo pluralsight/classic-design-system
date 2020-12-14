@@ -46,6 +46,7 @@ interface DropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   placeholder?: string
   size?: ValueOf<typeof vars.sizes>
   subLabel?: ReactNode
+  uniqueId?: (prefix: string) => string
   value?: React.ReactText
 }
 interface DropdownComponent

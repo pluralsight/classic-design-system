@@ -13,7 +13,7 @@ import {
 } from 'react'
 import {
   canUseDOM,
-  uniqueId,
+  uniqueId as defaultUniqueId,
   ValueOf,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
@@ -50,6 +50,7 @@ interface UseDropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   size?: ValueOf<typeof vars.sizes>
   style?: React.CSSProperties
   subLabel?: ReactNode
+  uniqueId?: (prefix: string) => string
   value?: number | string
 }
 
@@ -66,6 +67,7 @@ const sortDropdownProps = ({
   size,
   subLabel,
   style,
+  uniqueId,
   value,
   ...rest
 }: UseDropdownProps) => ({
@@ -114,6 +116,7 @@ export const useDropdown = (
 ) => {
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
+  const uniqueId = props.uniqueId || defaultUniqueId
   const inputId = useMemo(() => uniqueId('dropdown-input-'), [])
   const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
 
