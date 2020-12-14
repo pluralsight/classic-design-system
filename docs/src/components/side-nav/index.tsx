@@ -239,6 +239,10 @@ const groups = [
       {
         href: '/components/verticaltabs',
         title: 'Vertical tabs'
+      },
+      {
+        href: '/components/steps',
+        title: 'Steps'
       }
     ]
   },
