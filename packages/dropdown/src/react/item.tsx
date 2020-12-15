@@ -39,7 +39,7 @@ export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
       context.selectedItem?.label === children
 
     const handleClick = (evt: React.MouseEvent) => {
-      const valueToSend = valueExists ? value : children
+      const valueToSend = typeof value !== 'undefined' ? value : children || ''
       context.onMenuClick(evt, valueToSend)
       if (typeof onClick === 'function') onClick(evt, valueToSend)
     }
