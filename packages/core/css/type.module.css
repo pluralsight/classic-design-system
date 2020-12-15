@@ -1,7 +1,7 @@
 :root {
   /* prettier-ignore */
   --psTypeFontFamily: 'PS TT Commons Roman', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
-  --psTypeFontFamilyCode: 'Source Code Pro', monospace;
+  --psTypeFontFamilyCode: 'DM Mono', monospace;
 
   /* font size */
   --psTypeFontSizeGigantic: 60px;
