@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.1.0...@pluralsight/ps-design-system-dropdown@10.1.1) (2020-12-15)
+
+
+### Bug Fixes
+
+* **dropdown:** allow falsy values to be selected ([7d04dc1](https://github.com/pluralsight/design-system/commit/7d04dc19b80cd33d49734d692bc1cddf5f12919b)), closes [#1521](https://github.com/pluralsight/design-system/issues/1521)
+
+
+
+
+
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.0.6...@pluralsight/ps-design-system-dropdown@10.1.0) (2020-12-15)
+
+
+### Features
+
+* **dropdown:** expose uniqueId prop for testing ([def4f9d](https://github.com/pluralsight/design-system/commit/def4f9d17ffc44839e7cd82ff4997b9c704338a4))
+
+
+
+
+
+## [10.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.0.5...@pluralsight/ps-design-system-dropdown@10.0.6) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
 ## [10.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@10.0.4...@pluralsight/ps-design-system-dropdown@10.0.5) (2020-12-11)
 
 

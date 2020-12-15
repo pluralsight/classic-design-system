@@ -18,7 +18,10 @@ export const Input = forwardRef<HTMLInputElement, DropdownInputProps>(
     { activeItemId, disabled, isOpen, inputId, menuId, selectedItem, ...rest },
     ref
   ) => {
-    const value = selectedItem?.value || selectedItem?.label || ''
+    const value =
+      typeof selectedItem?.value === 'undefined'
+        ? selectedItem?.label || ''
+        : selectedItem?.value
     return (
       <ScreenReaderOnly key={value}>
         <input

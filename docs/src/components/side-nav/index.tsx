@@ -239,6 +239,10 @@ const groups = [
       {
         href: '/components/verticaltabs',
         title: 'Vertical tabs'
+      },
+      {
+        href: '/components/steps',
+        title: 'Steps'
       }
     ]
   },
@@ -426,6 +430,17 @@ const groups = [
       {
         href: '/components/featureflags',
         title: 'Feature flags'
+      }
+    ]
+  },
+  {
+    header: {
+      title: 'Patterns'
+    },
+    items: [
+      {
+        href: '/patterns/page-headers',
+        title: 'Page headers'
       }
     ]
   }
