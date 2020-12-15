@@ -7,7 +7,7 @@
   src: url('https://s2.pluralsight.com/fonts/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff2')
     format('woff-variations');
   font-display: swap;
-  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-weight: 100 900;
 }
 
 html {
@@ -17,6 +17,7 @@ html {
   font-size: 0.875em;
   font-weight: var(--psTypeFontWeightRegular);
   line-height: 1.71429; /* calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)); */
+  font-feature-settings: 'tnum' on, 'lnum' on;
 }
 
 *,
