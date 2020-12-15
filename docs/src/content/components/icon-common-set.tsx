@@ -11,7 +11,7 @@ export const IconCommonSet: React.FC<Props> = () => (
       display: 'flex',
       flexWrap: 'wrap',
       borderRadius: 12,
-      backgroundColor: core.colorsBackgroundLight[2]
+      backgroundColor: 'var(--appColorsBackgroundMed)'
     }}
   >
     {Object.keys(Icons).map((id, i) => {
