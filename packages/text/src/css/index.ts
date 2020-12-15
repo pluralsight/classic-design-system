@@ -19,7 +19,7 @@ export default {
     borderRadius: '2px',
     lineHeight: type.lineHeightStandard,
     whiteSpace: 'pre-wrap',
-    fontFamily: '"Source Code Pro", monospace',
+    fontFamily: '"DM Mono", monospace',
     fontWeight: type.fontWeightMedium,
     fontSize: type.fontSizeSmall,
     wordBreak: 'break-word'
@@ -37,7 +37,6 @@ export default {
 
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`,
-    fontVariationSettings: '"wght" 600',
     fontWeight: '600'
   },
   [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
@@ -86,11 +85,9 @@ export default {
   },
 
   [`.psds-text__label`]: {
-    fontVariationSettings: '"wght" 400',
     fontWeight: '400'
   },
   [`.psds-text__label--strong`]: {
-    fontVariationSettings: '"wght" 500',
     fontWeight: '500'
   },
   [`.psds-text__label--caps`]: {
@@ -134,7 +131,6 @@ export default {
     listStyle: 'none',
     marginLeft: 0,
     lineHeight: type.lineHeightExtra,
-    fontVariationSettings: '"wght" 400',
     fontWeight: '400'
   },
   [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
@@ -175,7 +171,6 @@ export default {
 
   '.psds-text__p': {
     margin: `${layout.spacingMedium} 0`,
-    fontVariationSettings: '"wght" 400',
     fontWeight: '400'
   },
   [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
