@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "11.0.2",
+  "version": "11.0.3",
   "description": "Table UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -38,7 +38,7 @@
     "@pluralsight/ps-design-system-build": "^2.0.2",
     "@pluralsight/ps-design-system-button": "^19.0.17",
     "@pluralsight/ps-design-system-checkbox": "^6.2.19",
-    "@pluralsight/ps-design-system-dropdown": "^10.1.0",
+    "@pluralsight/ps-design-system-dropdown": "^10.1.1",
     "@pluralsight/ps-design-system-emptystate": "^10.0.4",
     "@pluralsight/ps-design-system-layout": "^7.1.22",
     "@pluralsight/ps-design-system-screenreaderonly": "^2.1.19",
