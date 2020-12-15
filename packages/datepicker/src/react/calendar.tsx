@@ -1,162 +1,186 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
+import React from 'react'
 import Button from '@pluralsight/ps-design-system-button'
+import Theme from '@pluralsight/ps-design-system-theme'
+import { css, keyframes } from 'glamor'
+
+import {
+  HTMLPropsFor,
+  RefFor,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
+
+import { RenderProps } from 'dayzed'
+
 import {
   CaretLeftIcon,
   CaretRightIcon
 } from '@pluralsight/ps-design-system-icon'
-import Theme from '@pluralsight/ps-design-system-theme'
-import { compose, css, keyframes } from 'glamor'
-import React, { useRef, useState, useEffect, FC } from 'react'
+
+import { DateContext } from './context'
 
 import stylesheet from '../css'
-import {
-  arrayOf,
-  getDaysInMonth,
-  getNextMonthYear,
-  getPrevMonthYear,
-  getMonthName,
-  getFirstDayOfWeekForMonth
-} from '../js'
+import { slides } from '../vars'
 
-const slide = keyframes(
-  stylesheet['@keyframes psds-date-picker__calendar__keyframes__slide']
+const forward = keyframes(
+  stylesheet['@keyframes psds-calendar__keyframes__forward']
+)
+const backward = keyframes(
+  stylesheet['@keyframes psds-calendar__keyframes__backward']
 )
 
 const styles = {
-  calendar: () => css(stylesheet['.psds-date-picker__calendar']({ slide })),
-  days: () => css(stylesheet['.psds-date-picker__calendar__days']),
-  day: (isSelected: boolean) =>
-    compose(
-      css(stylesheet['.psds-date-picker__calendar__day']),
-      isSelected &&
-        css(stylesheet['.psds-date-picker__calendar__day--selected'])
+  calendar: () => css(stylesheet['.psds-calendar']),
+  headerWrapper: () => css(stylesheet[`.psds-calendar__header-wrapper`]),
+  gridWrapper: () => css(stylesheet[`.psds-calendar__grid-wrapper`]),
+  gridSlide: (slide?: ValueOf<typeof slides>) =>
+    css(
+      stylesheet[`.psds-calendar__grid-slide`],
+      slide === 'forward' &&
+        stylesheet[`.psds-calendar__grid-slide--forward`](forward),
+      slide === 'backward' &&
+        stylesheet[`.psds-calendar__grid-slide--backward`](backward)
     ),
-  overlay: () => css(stylesheet['.psds-date-picker__overlay']),
-  skippedDay: () => css(stylesheet['.psds-date-picker__calendar__skipped-day']),
-  switcher: () => css(stylesheet['.psds-date-picker__calendar__switcher']),
-  switcherMonth: () =>
-    css(stylesheet['.psds-date-picker__calendar__switcher__month']),
-  weekHeading: () =>
-    css(stylesheet['.psds-date-picker__calendar__week-heading']),
-  weekHeadingDay: () =>
-    css(stylesheet['.psds-date-picker__calendar__week-heading__day'])
+  month: () => css(stylesheet['.psds-calendar__month']),
+  header: () => css(stylesheet['.psds-calendar__header']),
+  headerButton: () => css(stylesheet['.psds-calendar__header-button']),
+  headerMonth: () => css(stylesheet['.psds-calendar__header-month']),
+  weekdayHeader: () => css(stylesheet['.psds-calendar__weekday-header']),
+  dateFiller: () => css(stylesheet['.psds-calendar__filler']),
+  dateGrid: () => css(stylesheet['.psds-calendar__date-grid'])
 }
 
-interface CalendarProps {
-  value: Date | undefined
-  onSelect: (evt: React.MouseEvent, date: Date) => void
+const monthNamesShort = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec'
+]
+const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+
+interface CalendarProps
+  extends HTMLPropsFor<'div'>,
+    Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
+  slide?: ValueOf<typeof slides>
 }
-export const Calendar: FC<CalendarProps> = props => {
-  const { value = new Date(), onSelect, ...rest } = props
-  const ref = useRef<HTMLDivElement>(null)
-  const selectedDayRef = useRef<HTMLButtonElement>(null)
 
-  const [displayed, setDisplayed] = useState<Date>(value)
-  const [selected, setSelected] = useState<Date>(value)
-
-  useEffect(
-    function updateSelectedOnPropChange() {
-      setSelected(value)
-    },
-    [value]
-  )
-
-  useEffect(function focusCurrentOnMount() {
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    const selectedDayNode = selectedDayRef.current as HTMLButtonElement
-    if (selectedDayNode) selectedDayNode.focus()
-    else if (ref.current) ref.current.focus()
-  }, [])
-
-  function handlePrevClick(evt: React.MouseEvent) {
-    evt.preventDefault()
-
-    const nextDisplayed = getPrevMonthYear(displayed)
-    setDisplayed(nextDisplayed)
-  }
-
-  function handleNextClick(evt: React.MouseEvent) {
-    evt.preventDefault()
-
-    const nextDisplayed = getNextMonthYear(displayed)
-    setDisplayed(nextDisplayed)
-  }
-
-  function handleDayClick(evt: React.MouseEvent, selectedDate: Date) {
-    evt.preventDefault()
-    setSelected(selectedDate)
-
-    if (typeof onSelect === 'function') {
-      onSelect(evt, selectedDate)
+export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
+  (
+    { calendars, getBackProps, getForwardProps, children, slide, ...rest },
+    ref
+  ) => {
+    const [_slide, setSlide] = React.useState<ValueOf<typeof slides>>(slide)
+    const [height, setHeight] = React.useState<number | undefined>()
+    const { onClick: onBackClick, ...backRest } = getBackProps({ calendars })
+    const { onClick: onForwardClick, ...forwardRest } = getForwardProps({
+      calendars
+    })
+    const handleForwardClick = (e: React.MouseEvent) => {
+      onForwardClick(e)
+      setSlide(slides.forward)
     }
-  }
-
-  return (
-    <Theme name={Theme.names.light}>
-      <div {...styles.calendar()} {...rest} ref={ref} tabIndex={-1}>
-        <div {...styles.switcher()}>
-          <Button
-            onClick={handlePrevClick}
-            icon={<CaretLeftIcon />}
-            size={Button.sizes.small}
-            appearance={Button.appearances.flat}
-          />
-
-          <div {...styles.switcherMonth()}>
-            {getMonthName(displayed)} {displayed.getFullYear()}
-          </div>
-
-          <Button
-            onClick={handleNextClick}
-            icon={<CaretRightIcon />}
-            size={Button.sizes.small}
-            appearance={Button.appearances.flat}
-          />
-        </div>
-
-        <div {...styles.weekHeading()}>
-          {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-            <div {...styles.weekHeadingDay()} key={day}>
-              {day}
-            </div>
-          ))}
-        </div>
-
-        <div {...styles.days()}>
-          {arrayOf(getFirstDayOfWeekForMonth(displayed)).map((_, i) => (
-            <div key={i} {...styles.skippedDay()} />
-          ))}
-
-          {arrayOf(getDaysInMonth(displayed)).map((_, i) => {
-            const dateForCalendarDayNoTime = new Date(displayed)
-            dateForCalendarDayNoTime.setDate(i + 1)
-            dateForCalendarDayNoTime.setHours(0, 0, 0, 0)
-            const selectedDateNoTime = new Date(selected)
-            selectedDateNoTime.setHours(0, 0, 0, 0)
-            const isSelected =
-              dateForCalendarDayNoTime.getTime() ===
-              selectedDateNoTime.getTime()
-
-            return (
-              <button
-                key={i}
-                onClick={evt => handleDayClick(evt, dateForCalendarDayNoTime)}
-                {...styles.day(isSelected)}
-                {...(isSelected && { ref: selectedDayRef })}
+    const handleBackClick = (e: React.MouseEvent) => {
+      onBackClick(e)
+      setSlide(slides.backward)
+    }
+    const animationRef = React.useRef<HTMLDivElement>()
+    React.useEffect(() => {
+      const el = animationRef.current
+      if (el) {
+        const { height } = el.getBoundingClientRect()
+        setHeight(height)
+      }
+    }, [_slide, slide])
+    React.useEffect(() => {
+      const el = animationRef.current
+      if (el) {
+        const { height } = el.getBoundingClientRect()
+        setHeight(height)
+        const updateOffset = () => setSlide(undefined)
+        el.addEventListener('animationend', updateOffset)
+        return () => el.removeEventListener('animationend', updateOffset)
+      }
+    }, [])
+    if (calendars.length) {
+      return (
+        <div {...styles.calendar()} {...rest} ref={ref}>
+          <div {...styles.headerWrapper()}>
+            {calendars.map((calendar, i) => (
+              <div
+                key={`${calendar.month}${calendar.year}`}
+                {...styles.header()}
               >
-                {dateForCalendarDayNoTime.getDate()}
-              </button>
-            )
-          })}
+                <Theme name={Theme.names.light}>
+                  <div {...styles.month()}>
+                    {i === 0 ? (
+                      <Button
+                        {...backRest}
+                        {...styles.headerButton()}
+                        onClick={handleBackClick}
+                        icon={<CaretLeftIcon />}
+                        appearance={Button.appearances.flat}
+                      />
+                    ) : (
+                      <div {...styles.headerButton()} />
+                    )}
+                    <div
+                      key={`${calendar.month}${calendar.year}`}
+                      {...styles.headerMonth()}
+                    >
+                      {monthNamesShort[calendar.month]} {calendar.year}
+                    </div>
+                    {calendars.length - 1 === i ? (
+                      <Button
+                        {...forwardRest}
+                        {...styles.headerButton()}
+                        onClick={handleForwardClick}
+                        icon={<CaretRightIcon />}
+                        appearance={Button.appearances.flat}
+                      />
+                    ) : (
+                      <div {...styles.headerButton()} />
+                    )}
+                  </div>
+                </Theme>
+                {weekdayNamesShort.map(weekday => (
+                  <div
+                    key={`${calendar.month}${calendar.year}${weekday}`}
+                    {...styles.weekdayHeader()}
+                  >
+                    {weekday}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div style={{ height }} {...styles.gridWrapper()}>
+            <div
+              {...styles.gridSlide(_slide)}
+              ref={animationRef as RefFor<'div'>}
+            >
+              {calendars.map((calendar, i) => (
+                <div
+                  {...styles.dateGrid()}
+                  key={`${calendar.month}${calendar.year}`}
+                >
+                  <DateContext.Provider value={calendar}>
+                    {children}
+                  </DateContext.Provider>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </Theme>
-  )
-}
-
-interface OverlayProps {
-  onClick: (evt: React.MouseEvent) => void
-}
-
-export const Overlay: FC<OverlayProps> = props => {
-  return <div {...styles.overlay()} onClick={props.onClick} />
-}
+      )
+    }
+    return null
+  }
+)

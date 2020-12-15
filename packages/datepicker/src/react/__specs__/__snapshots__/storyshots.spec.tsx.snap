@@ -1,2228 +1,4450 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots appearance default 1`] = `
+exports[`Storyshots MultiDate Calendar 1`] = `
 <div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
+  data-css-x9z9na=""
 >
   <div
-    data-css-ctre2o=""
+    data-css-1cqgl9p=""
   >
     <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance default w/ error 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-dysqqm=""
-  >
-    Problem field
-  </div>
-  <div
-    data-css-in6gqi=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-      <div
-        data-css-1ha66tv=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="warning icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1usw9cb=""
-    >
-      <input
-        aria-label="month"
-        data-css-18at7l7=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-18at7l7=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-18at7l7=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-1uq4y8i=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle w/ error 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-dysqqm=""
-  >
-    Problem field
-  </div>
-  <div
-    data-css-in6gqi=""
-  >
-    <div
-      data-css-1usw9cb=""
-    >
-      <input
-        aria-label="month"
-        data-css-18at7l7=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-18at7l7=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-18at7l7=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-1uq4y8i=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-      <div
-        data-css-1ha66tv=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="warning icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots disabled compare 1`] = `
-<div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Normal
-    </div>
-    <div
-      data-css-ctre2o=""
+      data-css-1by070m=""
     >
       <div
-        data-css-1gfowhv=""
+        data-css-1vc8xgt=""
       >
-        <input
-          aria-label="month"
-          data-css-1ynlp2p=""
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1ynlp2p=""
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1ynlp2p=""
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-        />
         <button
-          data-css-3txxwd=""
+          aria-label="Go back 1 month"
+          data-css-2nui7m=""
+          disabled={false}
           onClick={[Function]}
+          style={Object {}}
         >
           <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-6ga4kh=""
-    >
-      Still normal
-    </div>
-  </div>
-  <div
-    data-css-1y0hkm3=""
-    onKeyDown={[Function]}
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      I'm not usable
-    </div>
-    <div
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-1gfowhv=""
-      >
-        <input
-          aria-label="month"
-          data-css-1ynlp2p=""
-          defaultValue={12}
-          disabled={true}
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1ynlp2p=""
-          defaultValue={7}
-          disabled={true}
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1ynlp2p=""
-          defaultValue={1941}
-          disabled={true}
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          disabled={true}
-          readOnly={true}
-          tabIndex={-1}
-          value="1941-12-7"
-        />
-        <button
-          data-css-3txxwd=""
-          disabled={true}
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-6ga4kh=""
-    >
-      Neither am I
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels compare w/ textinput 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "marginBottom": "12px",
-      }
-    }
-  >
-    <div
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1gfowhv=""
-        >
-          <input
-            aria-label="month"
-            data-css-1ynlp2p=""
-            name="mm"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            aria-label="day"
-            data-css-1ynlp2p=""
-            name="dd"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "24px",
-              }
-            }
-          />
-          <span
-            data-css-9eecwn=""
-          >
-            /
-          </span>
-          <input
-            aria-label="year"
-            data-css-1ynlp2p=""
-            name="yyyy"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "48px",
-              }
-            }
-          />
-          <input
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex={-1}
-          />
-          <button
-            data-css-3txxwd=""
-            onClick={[Function]}
+            data-css-y80vay=""
           >
             <div
               data-css-7dab2f=""
             >
               <svg
-                aria-label="calendar icon"
+                aria-label="caret left icon"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1r967oi=""
-      >
-        <div
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-ydex85=""
-          >
-            <input
-              data-css-zjzpem=""
-              disabled={false}
-              type="date"
-            />
           </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels label 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-dysqqm=""
-  >
-    Some label
-  </div>
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels label and subLabel 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-dysqqm=""
-  >
-    Some label
-  </div>
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-  <div
-    data-css-6ga4kh=""
-  >
-    Some sublabel
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels none 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels subLabel 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-  <div
-    data-css-6ga4kh=""
-  >
-    Some sublabel
-  </div>
-</div>
-`;
-
-exports[`Storyshots layouts full width 1`] = `
-<div
-  style={
-    Object {
-      "border": "1px solid blue",
-      "width": "500px",
-    }
-  }
->
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      First
-    </div>
-    <div
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-1gfowhv=""
-      >
-        <input
-          aria-label="month"
-          data-css-1ynlp2p=""
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1ynlp2p=""
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1ynlp2p=""
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-        />
-        <button
-          data-css-3txxwd=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Second
-    </div>
-    <div
-      data-css-in6gqi=""
-    >
-      <div
-        data-css-1gfowhv=""
-      >
-        <input
-          aria-label="month"
-          data-css-1ynlp2p=""
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1ynlp2p=""
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1ynlp2p=""
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-        />
-        <button
-          data-css-3txxwd=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-        <div
-          data-css-1ha66tv=""
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="warning icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                clipRule="evenodd"
-                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Third
-    </div>
-    <div
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-1usw9cb=""
-      >
-        <input
-          aria-label="month"
-          data-css-18at7l7=""
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-18at7l7=""
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-18at7l7=""
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-        />
-        <button
-          data-css-1uq4y8i=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Fourth
-    </div>
-    <div
-      data-css-in6gqi=""
-    >
-      <div
-        data-css-1usw9cb=""
-      >
-        <input
-          aria-label="month"
-          data-css-18at7l7=""
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-18at7l7=""
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-18at7l7=""
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-        />
-        <button
-          data-css-1uq4y8i=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-        <div
-          data-css-1ha66tv=""
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="warning icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                clipRule="evenodd"
-                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots layouts right-aligned 1`] = `
-<div
-  style={
-    Object {
-      "border": "1px solid blue",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "display": "flex",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <div
-      data-css-w0yocm=""
-      onKeyDown={[Function]}
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1usw9cb=""
-        >
-          <input
-            aria-label="month"
-            data-css-18at7l7=""
-            name="mm"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-          />
           <span
-            data-css-2cik8p=""
-          >
-            /
-          </span>
-          <input
-            aria-label="day"
-            data-css-18at7l7=""
-            name="dd"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "24px",
-              }
-            }
+            data-css-15b13by=""
           />
-          <span
-            data-css-2cik8p=""
-          >
-            /
-          </span>
-          <input
-            aria-label="year"
-            data-css-18at7l7=""
-            name="yyyy"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "48px",
-              }
-            }
-          />
-          <input
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex={-1}
-          />
-          <button
-            data-css-1uq4y8i=""
-            onClick={[Function]}
+        </button>
+        <div
+          data-css-fpvw2v=""
+        >
+          Jan
+           
+          2021
+        </div>
+        <button
+          aria-label="Go forward 1 month"
+          data-css-2nui7m=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
           >
             <div
               data-css-7dab2f=""
             >
               <svg
-                aria-label="calendar icon"
+                aria-label="caret right icon"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sun
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Mon
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Tue
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Wed
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Thu
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Fri
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sat
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-50jhqn=""
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
+  >
+    <div
+      data-css-1a94b64=""
+    >
+      <div
+        data-css-1k5y6zw=""
+      >
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <button
+          aria-label="Fri Jan 01 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          1
+        </button>
+        <button
+          aria-label="Sat Jan 02 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          2
+        </button>
+        <button
+          aria-label="Sun Jan 03 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          3
+        </button>
+        <button
+          aria-label="Mon Jan 04 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          4
+        </button>
+        <button
+          aria-label="Tue Jan 05 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          5
+        </button>
+        <button
+          aria-label="Wed Jan 06 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          6
+        </button>
+        <button
+          aria-label="Thu Jan 07 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          7
+        </button>
+        <button
+          aria-label="Fri Jan 08 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          8
+        </button>
+        <button
+          aria-label="Sat Jan 09 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          9
+        </button>
+        <button
+          aria-label="Sun Jan 10 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          10
+        </button>
+        <button
+          aria-label="Mon Jan 11 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          11
+        </button>
+        <button
+          aria-label="Tue Jan 12 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          12
+        </button>
+        <button
+          aria-label="Wed Jan 13 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          13
+        </button>
+        <button
+          aria-label="Thu Jan 14 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          14
+        </button>
+        <button
+          aria-label="Fri Jan 15 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          15
+        </button>
+        <button
+          aria-label="Sat Jan 16 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          16
+        </button>
+        <button
+          aria-label="Sun Jan 17 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          17
+        </button>
+        <button
+          aria-label="Mon Jan 18 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          18
+        </button>
+        <button
+          aria-label="Tue Jan 19 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          19
+        </button>
+        <button
+          aria-label="Wed Jan 20 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          20
+        </button>
+        <button
+          aria-label="Thu Jan 21 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          21
+        </button>
+        <button
+          aria-label="Fri Jan 22 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          22
+        </button>
+        <button
+          aria-label="Sat Jan 23 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          23
+        </button>
+        <button
+          aria-label="Sun Jan 24 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          24
+        </button>
+        <button
+          aria-label="Mon Jan 25 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          25
+        </button>
+        <button
+          aria-label="Tue Jan 26 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          26
+        </button>
+        <button
+          aria-label="Wed Jan 27 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          27
+        </button>
+        <button
+          aria-label="Thu Jan 28 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          28
+        </button>
+        <button
+          aria-label="Fri Jan 29 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          29
+        </button>
+        <button
+          aria-label="Sat Jan 30 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          30
+        </button>
+        <button
+          aria-label="Sun Jan 31 2021"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          31
+        </button>
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots RangeDate Calendar 1`] = `
+<div
+  data-css-x9z9na=""
+  onMouseLeave={[Function]}
+>
+  <div
+    data-css-1cqgl9p=""
+  >
+    <div
+      data-css-1by070m=""
+    >
+      <div
+        data-css-1vc8xgt=""
+      >
+        <button
+          aria-label="Go back 1 month"
+          data-css-2nui7m=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+        <div
+          data-css-fpvw2v=""
+        >
+          May
+           
+          2020
+        </div>
+        <button
+          aria-label="Go forward 1 month"
+          data-css-2nui7m=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sun
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Mon
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Tue
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Wed
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Thu
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Fri
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sat
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-50jhqn=""
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
+  >
+    <div
+      data-css-1a94b64=""
+    >
+      <div
+        data-css-1k5y6zw=""
+      >
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <button
+          aria-label="Fri May 01 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          1
+        </button>
+        <button
+          aria-label="Sat May 02 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          2
+        </button>
+        <button
+          aria-label="Sun May 03 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          3
+        </button>
+        <button
+          aria-label="Mon May 04 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          4
+        </button>
+        <button
+          aria-label="Tue May 05 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          5
+        </button>
+        <button
+          aria-label="Wed May 06 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          6
+        </button>
+        <button
+          aria-label="Thu May 07 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          7
+        </button>
+        <button
+          aria-label="Fri May 08 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          8
+        </button>
+        <button
+          aria-label="Sat May 09 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          9
+        </button>
+        <button
+          aria-label="Sun May 10 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          10
+        </button>
+        <button
+          aria-label="Mon May 11 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          11
+        </button>
+        <button
+          aria-label="Tue May 12 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          12
+        </button>
+        <button
+          aria-label="Wed May 13 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          13
+        </button>
+        <button
+          aria-label="Thu May 14 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          14
+        </button>
+        <button
+          aria-label="Fri May 15 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          15
+        </button>
+        <button
+          aria-label="Sat May 16 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          16
+        </button>
+        <button
+          aria-label="Sun May 17 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          17
+        </button>
+        <button
+          aria-label="Mon May 18 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          18
+        </button>
+        <button
+          aria-label="Tue May 19 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          19
+        </button>
+        <button
+          aria-label="Wed May 20 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          20
+        </button>
+        <button
+          aria-label="Thu May 21 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          21
+        </button>
+        <button
+          aria-label="Fri May 22 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          22
+        </button>
+        <button
+          aria-label="Sat May 23 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          23
+        </button>
+        <button
+          aria-label="Sun May 24 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          24
+        </button>
+        <button
+          aria-label="Mon May 25 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          25
+        </button>
+        <button
+          aria-label="Tue May 26 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          26
+        </button>
+        <button
+          aria-label="Wed May 27 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          27
+        </button>
+        <button
+          aria-label="Thu May 28 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          28
+        </button>
+        <button
+          aria-label="Fri May 29 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          29
+        </button>
+        <button
+          aria-label="Sat May 30 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          30
+        </button>
+        <button
+          aria-label="Sun May 31 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="button"
+        >
+          31
+        </button>
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots RangeDate Calendar: with button 1`] = `
+Array [
+  <button
+    onClick={[Function]}
+  >
+    5/13/2020 - 05/30/2020
+  </button>,
+  <div
+    data-css-x9z9na=""
+    onMouseLeave={[Function]}
+  >
+    <div
+      data-css-1cqgl9p=""
+    >
+      <div
+        data-css-1by070m=""
+      >
+        <div
+          data-css-1vc8xgt=""
+        >
+          <button
+            aria-label="Go back 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+          <div
+            data-css-fpvw2v=""
+          >
+            May
+             
+            2020
+          </div>
+          <button
+            aria-label="Go forward 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
           </button>
         </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sun
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Mon
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Tue
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Wed
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Thu
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Fri
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sat
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-50jhqn=""
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+    >
+      <div
+        data-css-1a94b64=""
+      >
+        <div
+          data-css-1k5y6zw=""
+        >
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <button
+            aria-label="Fri May 01 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            1
+          </button>
+          <button
+            aria-label="Sat May 02 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            2
+          </button>
+          <button
+            aria-label="Sun May 03 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            3
+          </button>
+          <button
+            aria-label="Mon May 04 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            4
+          </button>
+          <button
+            aria-label="Tue May 05 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            5
+          </button>
+          <button
+            aria-label="Wed May 06 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            6
+          </button>
+          <button
+            aria-label="Thu May 07 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            7
+          </button>
+          <button
+            aria-label="Fri May 08 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            8
+          </button>
+          <button
+            aria-label="Sat May 09 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            9
+          </button>
+          <button
+            aria-label="Sun May 10 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            10
+          </button>
+          <button
+            aria-label="Mon May 11 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            11
+          </button>
+          <button
+            aria-label="Tue May 12 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            12
+          </button>
+          <button
+            aria-label="Wed May 13 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            13
+          </button>
+          <button
+            aria-label="Thu May 14 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            14
+          </button>
+          <button
+            aria-label="Fri May 15 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            15
+          </button>
+          <button
+            aria-label="Sat May 16 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            16
+          </button>
+          <button
+            aria-label="Sun May 17 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            17
+          </button>
+          <button
+            aria-label="Mon May 18 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            18
+          </button>
+          <button
+            aria-label="Tue May 19 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            19
+          </button>
+          <button
+            aria-label="Wed May 20 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            20
+          </button>
+          <button
+            aria-label="Thu May 21 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            21
+          </button>
+          <button
+            aria-label="Fri May 22 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            22
+          </button>
+          <button
+            aria-label="Sat May 23 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            23
+          </button>
+          <button
+            aria-label="Sun May 24 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            24
+          </button>
+          <button
+            aria-label="Mon May 25 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            25
+          </button>
+          <button
+            aria-label="Tue May 26 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            26
+          </button>
+          <button
+            aria-label="Wed May 27 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            27
+          </button>
+          <button
+            aria-label="Thu May 28 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            28
+          </button>
+          <button
+            aria-label="Fri May 29 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            29
+          </button>
+          <button
+            aria-label="Sat May 30 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            30
+          </button>
+          <button
+            aria-label="Sun May 31 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            31
+          </button>
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots RangeDate calendar: with input (display two months) 1`] = `
+Array [
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ydex85=""
+        >
+          <input
+            data-css-zjzpem=""
+            disabled={false}
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </label>,
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ydex85=""
+        >
+          <input
+            data-css-zjzpem=""
+            disabled={false}
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </label>,
+  <div
+    data-css-x9z9na=""
+    onMouseLeave={[Function]}
+  >
+    <div
+      data-css-1cqgl9p=""
+    >
+      <div
+        data-css-1by070m=""
+      >
+        <div
+          data-css-1vc8xgt=""
+        >
+          <button
+            aria-label="Go back 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+          <div
+            data-css-fpvw2v=""
+          >
+            May
+             
+            2020
+          </div>
+          <div />
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sun
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Mon
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Tue
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Wed
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Thu
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Fri
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sat
+        </div>
+      </div>
+      <div
+        data-css-1by070m=""
+      >
+        <div
+          data-css-1vc8xgt=""
+        >
+          <div />
+          <div
+            data-css-fpvw2v=""
+          >
+            Jun
+             
+            2020
+          </div>
+          <button
+            aria-label="Go forward 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sun
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Mon
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Tue
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Wed
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Thu
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Fri
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sat
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-50jhqn=""
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+    >
+      <div
+        data-css-1a94b64=""
+      >
+        <div
+          data-css-1k5y6zw=""
+        >
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <button
+            aria-label="Fri May 01 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            1
+          </button>
+          <button
+            aria-label="Sat May 02 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            2
+          </button>
+          <button
+            aria-label="Sun May 03 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            3
+          </button>
+          <button
+            aria-label="Mon May 04 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            4
+          </button>
+          <button
+            aria-label="Tue May 05 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            5
+          </button>
+          <button
+            aria-label="Wed May 06 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            6
+          </button>
+          <button
+            aria-label="Thu May 07 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            7
+          </button>
+          <button
+            aria-label="Fri May 08 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            8
+          </button>
+          <button
+            aria-label="Sat May 09 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            9
+          </button>
+          <button
+            aria-label="Sun May 10 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            10
+          </button>
+          <button
+            aria-label="Mon May 11 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            11
+          </button>
+          <button
+            aria-label="Tue May 12 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            12
+          </button>
+          <button
+            aria-label="Wed May 13 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            13
+          </button>
+          <button
+            aria-label="Thu May 14 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            14
+          </button>
+          <button
+            aria-label="Fri May 15 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            15
+          </button>
+          <button
+            aria-label="Sat May 16 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            16
+          </button>
+          <button
+            aria-label="Sun May 17 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            17
+          </button>
+          <button
+            aria-label="Mon May 18 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            18
+          </button>
+          <button
+            aria-label="Tue May 19 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            19
+          </button>
+          <button
+            aria-label="Wed May 20 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            20
+          </button>
+          <button
+            aria-label="Thu May 21 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            21
+          </button>
+          <button
+            aria-label="Fri May 22 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            22
+          </button>
+          <button
+            aria-label="Sat May 23 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            23
+          </button>
+          <button
+            aria-label="Sun May 24 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            24
+          </button>
+          <button
+            aria-label="Mon May 25 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            25
+          </button>
+          <button
+            aria-label="Tue May 26 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            26
+          </button>
+          <button
+            aria-label="Wed May 27 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            27
+          </button>
+          <button
+            aria-label="Thu May 28 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            28
+          </button>
+          <button
+            aria-label="Fri May 29 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            29
+          </button>
+          <button
+            aria-label="Sat May 30 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            30
+          </button>
+          <button
+            aria-label="Sun May 31 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            31
+          </button>
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+        </div>
+        <div
+          data-css-1k5y6zw=""
+        >
+          <div
+            data-css-h18ka=""
+          />
+          <button
+            aria-label="Mon Jun 01 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            1
+          </button>
+          <button
+            aria-label="Tue Jun 02 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            2
+          </button>
+          <button
+            aria-label="Wed Jun 03 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            3
+          </button>
+          <button
+            aria-label="Thu Jun 04 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            4
+          </button>
+          <button
+            aria-label="Fri Jun 05 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            5
+          </button>
+          <button
+            aria-label="Sat Jun 06 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            6
+          </button>
+          <button
+            aria-label="Sun Jun 07 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            7
+          </button>
+          <button
+            aria-label="Mon Jun 08 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            8
+          </button>
+          <button
+            aria-label="Tue Jun 09 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            9
+          </button>
+          <button
+            aria-label="Wed Jun 10 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            10
+          </button>
+          <button
+            aria-label="Thu Jun 11 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            11
+          </button>
+          <button
+            aria-label="Fri Jun 12 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            12
+          </button>
+          <button
+            aria-label="Sat Jun 13 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            13
+          </button>
+          <button
+            aria-label="Sun Jun 14 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            14
+          </button>
+          <button
+            aria-label="Mon Jun 15 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            15
+          </button>
+          <button
+            aria-label="Tue Jun 16 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            16
+          </button>
+          <button
+            aria-label="Wed Jun 17 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            17
+          </button>
+          <button
+            aria-label="Thu Jun 18 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            18
+          </button>
+          <button
+            aria-label="Fri Jun 19 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            19
+          </button>
+          <button
+            aria-label="Sat Jun 20 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            20
+          </button>
+          <button
+            aria-label="Sun Jun 21 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            21
+          </button>
+          <button
+            aria-label="Mon Jun 22 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            22
+          </button>
+          <button
+            aria-label="Tue Jun 23 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            23
+          </button>
+          <button
+            aria-label="Wed Jun 24 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            24
+          </button>
+          <button
+            aria-label="Thu Jun 25 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            25
+          </button>
+          <button
+            aria-label="Fri Jun 26 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            26
+          </button>
+          <button
+            aria-label="Sat Jun 27 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            27
+          </button>
+          <button
+            aria-label="Sun Jun 28 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            28
+          </button>
+          <button
+            aria-label="Mon Jun 29 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            29
+          </button>
+          <button
+            aria-label="Tue Jun 30 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            30
+          </button>
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots RangeDate calendar: with input 1`] = `
+Array [
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ydex85=""
+        >
+          <input
+            data-css-zjzpem=""
+            disabled={false}
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </label>,
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ydex85=""
+        >
+          <input
+            data-css-zjzpem=""
+            disabled={false}
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </label>,
+  <div
+    data-css-x9z9na=""
+    onMouseLeave={[Function]}
+  >
+    <div
+      data-css-1cqgl9p=""
+    >
+      <div
+        data-css-1by070m=""
+      >
+        <div
+          data-css-1vc8xgt=""
+        >
+          <button
+            aria-label="Go back 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+          <div
+            data-css-fpvw2v=""
+          >
+            May
+             
+            2020
+          </div>
+          <button
+            aria-label="Go forward 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sun
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Mon
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Tue
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Wed
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Thu
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Fri
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sat
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-50jhqn=""
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+    >
+      <div
+        data-css-1a94b64=""
+      >
+        <div
+          data-css-1k5y6zw=""
+        >
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <button
+            aria-label="Fri May 01 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            1
+          </button>
+          <button
+            aria-label="Sat May 02 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            2
+          </button>
+          <button
+            aria-label="Sun May 03 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            3
+          </button>
+          <button
+            aria-label="Mon May 04 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            4
+          </button>
+          <button
+            aria-label="Tue May 05 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            5
+          </button>
+          <button
+            aria-label="Wed May 06 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            6
+          </button>
+          <button
+            aria-label="Thu May 07 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            7
+          </button>
+          <button
+            aria-label="Fri May 08 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            8
+          </button>
+          <button
+            aria-label="Sat May 09 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            9
+          </button>
+          <button
+            aria-label="Sun May 10 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            10
+          </button>
+          <button
+            aria-label="Mon May 11 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            11
+          </button>
+          <button
+            aria-label="Tue May 12 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            12
+          </button>
+          <button
+            aria-label="Wed May 13 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            13
+          </button>
+          <button
+            aria-label="Thu May 14 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            14
+          </button>
+          <button
+            aria-label="Fri May 15 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            15
+          </button>
+          <button
+            aria-label="Sat May 16 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            16
+          </button>
+          <button
+            aria-label="Sun May 17 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            17
+          </button>
+          <button
+            aria-label="Mon May 18 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            18
+          </button>
+          <button
+            aria-label="Tue May 19 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            19
+          </button>
+          <button
+            aria-label="Wed May 20 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            20
+          </button>
+          <button
+            aria-label="Thu May 21 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            21
+          </button>
+          <button
+            aria-label="Fri May 22 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            22
+          </button>
+          <button
+            aria-label="Sat May 23 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            23
+          </button>
+          <button
+            aria-label="Sun May 24 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            24
+          </button>
+          <button
+            aria-label="Mon May 25 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            25
+          </button>
+          <button
+            aria-label="Tue May 26 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            26
+          </button>
+          <button
+            aria-label="Wed May 27 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            27
+          </button>
+          <button
+            aria-label="Thu May 28 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            28
+          </button>
+          <button
+            aria-label="Fri May 29 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            29
+          </button>
+          <button
+            aria-label="Sat May 30 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            30
+          </button>
+          <button
+            aria-label="Sun May 31 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            31
+          </button>
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
+<div
+  data-css-x9z9na=""
+>
+  <div
+    data-css-1cqgl9p=""
+  >
+    <div
+      data-css-1by070m=""
+    >
+      <div
+        data-css-1vc8xgt=""
+      >
+        <button
+          aria-label="Go back 1 month"
+          data-css-2nui7m=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+        <div
+          data-css-fpvw2v=""
+        >
+          Apr
+           
+          2020
+        </div>
+        <button
+          aria-label="Go forward 1 month"
+          data-css-2nui7m=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sun
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Mon
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Tue
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Wed
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Thu
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Fri
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sat
       </div>
     </div>
   </div>
   <div
+    data-css-50jhqn=""
     style={
       Object {
-        "border": "3px solid green",
-        "height": "50px",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots value controlled value changes 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "color": "rgba(255, 255, 255, 0.95)",
+        "height": undefined,
       }
     }
   >
-    Sending in: 
-    1941-12-7
+    <div
+      data-css-1a94b64=""
+    >
+      <div
+        data-css-1k5y6zw=""
+      >
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <button
+          aria-label="Wed Apr 01 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          1
+        </button>
+        <button
+          aria-label="Thu Apr 02 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          2
+        </button>
+        <button
+          aria-label="Fri Apr 03 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          3
+        </button>
+        <button
+          aria-label="Sat Apr 04 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          4
+        </button>
+        <button
+          aria-label="Sun Apr 05 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          5
+        </button>
+        <button
+          aria-label="Mon Apr 06 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          6
+        </button>
+        <button
+          aria-label="Tue Apr 07 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          7
+        </button>
+        <button
+          aria-label="Wed Apr 08 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          8
+        </button>
+        <button
+          aria-label="Thu Apr 09 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          9
+        </button>
+        <button
+          aria-label="Fri Apr 10 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          10
+        </button>
+        <button
+          aria-label="Sat Apr 11 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          11
+        </button>
+        <button
+          aria-label="Sun Apr 12 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          12
+        </button>
+        <button
+          aria-label="Mon Apr 13 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          13
+        </button>
+        <button
+          aria-label="Tue Apr 14 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          14
+        </button>
+        <button
+          aria-label="Wed Apr 15 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          15
+        </button>
+        <button
+          aria-label="Thu Apr 16 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          16
+        </button>
+        <button
+          aria-label="Fri Apr 17 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          17
+        </button>
+        <button
+          aria-label="Sat Apr 18 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          18
+        </button>
+        <button
+          aria-label="Sun Apr 19 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          19
+        </button>
+        <button
+          aria-label="Mon Apr 20 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          20
+        </button>
+        <button
+          aria-label="Tue Apr 21 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          21
+        </button>
+        <button
+          aria-label="Wed Apr 22 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          22
+        </button>
+        <button
+          aria-label="Thu Apr 23 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          23
+        </button>
+        <button
+          aria-label="Fri Apr 24 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          24
+        </button>
+        <button
+          aria-label="Sat Apr 25 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          25
+        </button>
+        <button
+          aria-label="Sun Apr 26 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          26
+        </button>
+        <button
+          aria-label="Mon Apr 27 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          27
+        </button>
+        <button
+          aria-label="Tue Apr 28 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          28
+        </button>
+        <button
+          aria-label="Wed Apr 29 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          29
+        </button>
+        <button
+          aria-label="Thu Apr 30 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          30
+        </button>
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SingleDate calendar: date is selected 1`] = `
+<div
+  data-css-x9z9na=""
+>
+  <div
+    data-css-1cqgl9p=""
+  >
+    <div
+      data-css-1by070m=""
+    >
+      <div
+        data-css-1vc8xgt=""
+      >
+        <button
+          aria-label="Go back 1 month"
+          data-css-2nui7m=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+        <div
+          data-css-fpvw2v=""
+        >
+          May
+           
+          2020
+        </div>
+        <button
+          aria-label="Go forward 1 month"
+          data-css-2nui7m=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sun
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Mon
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Tue
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Wed
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Thu
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Fri
+      </div>
+      <div
+        data-css-qrsteh=""
+      >
+        Sat
+      </div>
+    </div>
   </div>
   <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
+    data-css-50jhqn=""
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
+  >
+    <div
+      data-css-1a94b64=""
+    >
+      <div
+        data-css-1k5y6zw=""
+      >
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <button
+          aria-label="Fri May 01 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          1
+        </button>
+        <button
+          aria-label="Sat May 02 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          2
+        </button>
+        <button
+          aria-label="Sun May 03 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          3
+        </button>
+        <button
+          aria-label="Mon May 04 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          4
+        </button>
+        <button
+          aria-label="Tue May 05 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          5
+        </button>
+        <button
+          aria-label="Wed May 06 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          6
+        </button>
+        <button
+          aria-label="Thu May 07 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          7
+        </button>
+        <button
+          aria-label="Fri May 08 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          8
+        </button>
+        <button
+          aria-label="Sat May 09 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          9
+        </button>
+        <button
+          aria-label="Sun May 10 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          10
+        </button>
+        <button
+          aria-label="Mon May 11 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          11
+        </button>
+        <button
+          aria-label="Tue May 12 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          12
+        </button>
+        <button
+          aria-label="Wed May 13 2020"
+          aria-pressed={true}
+          data-css-10t13xk=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          13
+        </button>
+        <button
+          aria-label="Thu May 14 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          14
+        </button>
+        <button
+          aria-label="Fri May 15 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          15
+        </button>
+        <button
+          aria-label="Sat May 16 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          16
+        </button>
+        <button
+          aria-label="Sun May 17 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          17
+        </button>
+        <button
+          aria-label="Mon May 18 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          18
+        </button>
+        <button
+          aria-label="Tue May 19 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          19
+        </button>
+        <button
+          aria-label="Wed May 20 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          20
+        </button>
+        <button
+          aria-label="Thu May 21 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          21
+        </button>
+        <button
+          aria-label="Fri May 22 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          22
+        </button>
+        <button
+          aria-label="Sat May 23 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          23
+        </button>
+        <button
+          aria-label="Sun May 24 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          24
+        </button>
+        <button
+          aria-label="Mon May 25 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          25
+        </button>
+        <button
+          aria-label="Tue May 26 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          26
+        </button>
+        <button
+          aria-label="Wed May 27 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          27
+        </button>
+        <button
+          aria-label="Thu May 28 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          28
+        </button>
+        <button
+          aria-label="Fri May 29 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          29
+        </button>
+        <button
+          aria-label="Sat May 30 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          30
+        </button>
+        <button
+          aria-label="Sun May 31 2020"
+          aria-pressed={false}
+          data-css-ftvwv7=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          31
+        </button>
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SingleDate calendar: input with dropdown 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
   >
     <div
       data-css-ctre2o=""
     >
       <div
-        data-css-1gfowhv=""
+        data-css-ydex85=""
       >
         <input
-          aria-label="month"
-          data-css-1ynlp2p=""
-          defaultValue={12}
-          name="mm"
-          onBlur={[Function]}
+          data-css-zjzpem=""
+          disabled={false}
+          onChange={[Function]}
           onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
+          value=""
         />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1ynlp2p=""
-          defaultValue={7}
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1ynlp2p=""
-          defaultValue={1941}
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-          value="1941-12-7"
-        />
-        <button
-          data-css-3txxwd=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
       </div>
     </div>
   </div>
-</div>
+</label>
 `;
 
-exports[`Storyshots value date 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
+exports[`Storyshots SingleDate calendar: with button 1`] = `
+Array [
+  <button
+    onClick={[Function]}
+  >
+    5/13/2020
+  </button>,
   <div
-    data-css-ctre2o=""
+    data-css-x9z9na=""
   >
     <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        defaultValue={12}
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        defaultValue={7}
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        defaultValue={1941}
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-        value="1941-12-7"
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots value updated value, no initial 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "color": "rgba(255, 255, 255, 0.95)",
-      }
-    }
-  >
-    Selected: 
-    &lt;none&gt;
-  </div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-  >
-    <div
-      data-css-ctre2o=""
+      data-css-1cqgl9p=""
     >
       <div
-        data-css-1gfowhv=""
+        data-css-1by070m=""
       >
-        <input
-          aria-label="month"
-          data-css-1ynlp2p=""
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
+        <div
+          data-css-1vc8xgt=""
         >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1ynlp2p=""
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1ynlp2p=""
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-        />
-        <button
-          data-css-3txxwd=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
+          <button
+            aria-label="Go back 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
           >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              data-css-y80vay=""
             >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+          <div
+            data-css-fpvw2v=""
+          >
+            May
+             
+            2020
           </div>
-        </button>
+          <button
+            aria-label="Go forward 1 month"
+            data-css-2nui7m=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sun
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Mon
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Tue
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Wed
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Thu
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Fri
+        </div>
+        <div
+          data-css-qrsteh=""
+        >
+          Sat
+        </div>
       </div>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots value updated value, w/ initial 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "color": "rgba(255, 255, 255, 0.95)",
-      }
-    }
-  >
-    Selected: 
-    1995-3-15
-  </div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-  >
     <div
-      data-css-ctre2o=""
+      data-css-50jhqn=""
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
     >
       <div
-        data-css-1gfowhv=""
+        data-css-1a94b64=""
       >
-        <input
-          aria-label="month"
-          data-css-1ynlp2p=""
-          defaultValue={3}
-          name="mm"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1ynlp2p=""
-          defaultValue={15}
-          name="dd"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-        />
-        <span
-          data-css-9eecwn=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1ynlp2p=""
-          defaultValue={1995}
-          name="yyyy"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-          value="1995-3-15"
-        />
-        <button
-          data-css-3txxwd=""
-          onClick={[Function]}
+        <div
+          data-css-1k5y6zw=""
         >
           <div
-            data-css-7dab2f=""
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <button
+            aria-label="Fri May 01 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
           >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
+            1
+          </button>
+          <button
+            aria-label="Sat May 02 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            2
+          </button>
+          <button
+            aria-label="Sun May 03 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            3
+          </button>
+          <button
+            aria-label="Mon May 04 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            4
+          </button>
+          <button
+            aria-label="Tue May 05 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            5
+          </button>
+          <button
+            aria-label="Wed May 06 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            6
+          </button>
+          <button
+            aria-label="Thu May 07 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            7
+          </button>
+          <button
+            aria-label="Fri May 08 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            8
+          </button>
+          <button
+            aria-label="Sat May 09 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            9
+          </button>
+          <button
+            aria-label="Sun May 10 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            10
+          </button>
+          <button
+            aria-label="Mon May 11 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            11
+          </button>
+          <button
+            aria-label="Tue May 12 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            12
+          </button>
+          <button
+            aria-label="Wed May 13 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            13
+          </button>
+          <button
+            aria-label="Thu May 14 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            14
+          </button>
+          <button
+            aria-label="Fri May 15 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            15
+          </button>
+          <button
+            aria-label="Sat May 16 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            16
+          </button>
+          <button
+            aria-label="Sun May 17 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            17
+          </button>
+          <button
+            aria-label="Mon May 18 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            18
+          </button>
+          <button
+            aria-label="Tue May 19 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            19
+          </button>
+          <button
+            aria-label="Wed May 20 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            20
+          </button>
+          <button
+            aria-label="Thu May 21 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            21
+          </button>
+          <button
+            aria-label="Fri May 22 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            22
+          </button>
+          <button
+            aria-label="Sat May 23 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            23
+          </button>
+          <button
+            aria-label="Sun May 24 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            24
+          </button>
+          <button
+            aria-label="Mon May 25 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            25
+          </button>
+          <button
+            aria-label="Tue May 26 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            26
+          </button>
+          <button
+            aria-label="Wed May 27 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            27
+          </button>
+          <button
+            aria-label="Thu May 28 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            28
+          </button>
+          <button
+            aria-label="Fri May 29 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            29
+          </button>
+          <button
+            aria-label="Sat May 30 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            30
+          </button>
+          <button
+            aria-label="Sun May 31 2020"
+            aria-pressed={false}
+            data-css-ftvwv7=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            31
+          </button>
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+        </div>
       </div>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots whitelist name 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        defaultValue={4}
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        defaultValue={2}
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        defaultValue={1944}
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        name="dateForForm"
-        onChange={[Function]}
-        readOnly={true}
-        tabIndex={-1}
-        value="1944-4-2"
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots whitelist onChange 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1ynlp2p=""
-        name="mm"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1ynlp2p=""
-        name="dd"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-      />
-      <span
-        data-css-9eecwn=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1ynlp2p=""
-        name="yyyy"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-      />
-      <input
-        data-css-gyrv08=""
-        onChange={[Function]}
-        readOnly={true}
-        tabIndex={-1}
-      />
-      <button
-        data-css-3txxwd=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
+  </div>,
+]
 `;
