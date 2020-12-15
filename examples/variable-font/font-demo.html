@@ -9,7 +9,6 @@
         font-size: 16px;
         padding: 50px;
         font-feature-settings: 'tnum' on, 'lnum' on;
-        text-rendering: optimizeLegibility;
       }
       body.dark {
         background: #181c20;
@@ -22,7 +21,7 @@
 
       .row {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
       }
 
@@ -32,17 +31,20 @@
 
       @font-face {
         font-family: 'PS TT Commons TTF';
-        src: url('fonts/ps-tt-commons/ps-tt-commons-thin.ttf') format('truetype');
+        src: url('fonts/ps-tt-commons/static/ttf/ps-tt-commons-thin.ttf')
+          format('truetype');
         font-weight: 100;
       }
       @font-face {
         font-family: 'PS TT Commons TTF';
-        src: url('fonts/ps-tt-commons/ps-tt-commons-medium.ttf') format('truetype');
+        src: url('fonts/ps-tt-commons/static/ttf/ps-tt-commons-medium.ttf')
+          format('truetype');
         font-weight: 500;
       }
       @font-face {
         font-family: 'PS TT Commons TTF';
-        src: url('fonts/ps-tt-commons/ps-tt-commons-bold.ttf') format('truetype');
+        src: url('fonts/ps-tt-commons/static/ttf/ps-tt-commons-bold.ttf')
+          format('truetype');
         font-weight: 700;
       }
       .pstt-ttf {
@@ -51,21 +53,35 @@
 
       @font-face {
         font-family: 'PS TT Commons WOFF';
-        src: url('fonts/ps-tt-commons/ps-tt-commons-thin.woff') format('woff');
+        src: url('fonts/ps-tt-commons/static/woff/ps-tt-commons-thin.woff')
+          format('woff');
         font-weight: 100;
       }
       @font-face {
         font-family: 'PS TT Commons WOFF';
-        src: url('fonts/ps-tt-commons/ps-tt-commons-medium.woff') format('woff');
+        src: url('fonts/ps-tt-commons/static/woff/ps-tt-commons-medium.woff')
+          format('woff');
         font-weight: 500;
       }
       @font-face {
         font-family: 'PS TT Commons WOFF';
-        src: url('fonts/ps-tt-commons/ps-tt-commons-bold.woff') format('woff');
+        src: url('fonts/ps-tt-commons/static/woff/ps-tt-commons-bold.woff')
+          format('woff');
         font-weight: 700;
       }
       .pstt-woff {
         font-family: 'PS TT Commons WOFF', sans-serif;
+      }
+
+      @font-face {
+        font-family: 'PS TT Commons WOFF2 Variable';
+        src: url('fonts/ps-tt-commons/variable/woff2/ps-tt-commons-variable-roman.woff2')
+          format('woff');
+        font-weight: 100 900;
+      }
+
+      .pstt-woff2-variable {
+        font-family: 'PS TT Commons WOFF2 Variable', sans-serif;
       }
 
       .face {
@@ -101,10 +117,10 @@
       }
 
       .dark .rgba-50 {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.5);
       }
       .dark .rgba-75 {
-        color: rgba(255, 255, 255, .75);
+        color: rgba(255, 255, 255, 0.75);
       }
       .dark .rgba-100 {
         color: rgba(255, 255, 255, 1);
@@ -153,9 +169,9 @@
       <section class="arial">
         <h2>Arial</h2>
         <div class="face">
-          <div class="fw-thin">Thin. Font Weight 100. </div>
-          <div class="fw-medium">Medium. Font Weight 500. </div>
-          <div class="fw-bold">Bold. Font Weight 700. </div>
+          <div class="fw-thin">Thin. Font Weight 100.</div>
+          <div class="fw-medium">Medium. Font Weight 500.</div>
+          <div class="fw-bold">Bold. Font Weight 700.</div>
         </div>
         <div class="face">
           <div class="a-50">Opacity 50.</div>
@@ -176,9 +192,9 @@
       <section class="pstt-ttf">
         <h2>PS TT Commons TTF</h2>
         <div class="face">
-          <div class="fw-thin">Thin. Font Weight 100. </div>
-          <div class="fw-medium">Medium. Font Weight 500. </div>
-          <div class="fw-bold">Bold. Font Weight 700. </div>
+          <div class="fw-thin">Thin. Font Weight 100.</div>
+          <div class="fw-medium">Medium. Font Weight 500.</div>
+          <div class="fw-bold">Bold. Font Weight 700.</div>
         </div>
         <div class="face">
           <div class="a-50">Opacity 50.</div>
@@ -199,9 +215,33 @@
       <section class="pstt-woff">
         <h2>PS TT Commons WOFF</h2>
         <div class="face">
-          <div class="fw-thin">Thin. Font Weight 100. </div>
-          <div class="fw-medium">Medium. Font Weight 500. </div>
-          <div class="fw-bold">Bold. Font Weight 700. </div>
+          <div class="fw-thin">Thin. Font Weight 100.</div>
+          <div class="fw-medium">Medium. Font Weight 500.</div>
+          <div class="fw-bold">Bold. Font Weight 700.</div>
+        </div>
+        <div class="face">
+          <div class="a-50">Opacity 50.</div>
+          <div class="a-75">Opacity 75.</div>
+          <div class="a-100">Opacity 100.</div>
+        </div>
+        <div class="face">
+          <div class="a-50 fw-bold">Opacity 50. Font Weight 700.</div>
+          <div class="a-75 fw-bold">Opacity 75. Font Weight 700.</div>
+          <div class="a-100 fw-bold">Opacity 100. Font Weight 700.</div>
+        </div>
+        <div class="face">
+          <div class="rgba-50 fw-bold">Rgba 50. Font Weight 700.</div>
+          <div class="rgba-75 fw-bold">Rgba 75. Font Weight 700.</div>
+          <div class="rgba-100 fw-bold">Rgba 100. Font Weight 700.</div>
+        </div>
+      </section>
+
+      <section class="pstt-woff2-variable">
+        <h2>PS TT Commons WOFF2 Variable</h2>
+        <div class="face">
+          <div class="fw-thin">Thin. Font Weight 100.</div>
+          <div class="fw-medium">Medium. Font Weight 500.</div>
+          <div class="fw-bold">Bold. Font Weight 700.</div>
         </div>
         <div class="face">
           <div class="a-50">Opacity 50.</div>
@@ -220,6 +260,5 @@
         </div>
       </section>
     </div>
-
   </body>
 </html>
