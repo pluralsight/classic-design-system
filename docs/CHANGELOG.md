@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.16.1...@pluralsight/ps-design-system-docs@0.17.0) (2020-12-15)
+
+
+### Features
+
+* **docs:** add uniqueId dropdown prop ([797388e](https://github.com/pluralsight/design-system/commit/797388ebcc39f58edd874fe6eb1adb8a50c56123))
+
+
+
+
+
 ## [0.16.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.16.0...@pluralsight/ps-design-system-docs@0.16.1) (2020-12-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
