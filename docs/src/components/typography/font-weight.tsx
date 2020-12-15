@@ -35,6 +35,12 @@ const weights = [
     jsVarName: 'type.fontWeightMedium'
   },
   {
+    label: 'REGULAR',
+    weight: 400,
+    varName: 'psTypeFontWeightRegular',
+    jsVarName: 'type.fontWeightRegular'
+  },
+  {
     label: 'BOOK',
     weight: 400,
     varName: 'psTypeFontWeightBook',

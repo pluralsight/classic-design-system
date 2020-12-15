@@ -17,6 +17,6 @@ export const MonospaceGlyphs = () => (
 export const MonospaceFontWeight = () => (
   <Box className={cx(styles.box, styles.fontWeight)}>
     <div className={styles.fontLetter}>Aa</div>
-    <div className={styles.fontLabel}>MEDIUM (500)</div>
+    <div className={styles.fontLabel}>MEDIUM (400)</div>
   </Box>
 )
