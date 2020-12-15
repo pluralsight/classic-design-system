@@ -4,6 +4,7 @@ import {
   colorsBorder,
   colorsTextIcon,
   layout,
+  motion,
   type
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
@@ -15,7 +16,9 @@ const cellPadding = `${layout.spacingXSmall} ${layout.spacingSmall}`
 const dark = {
   className: `.psds-theme--${themeNames.dark}`,
 
-  borderColor: colorsBorder.lowOnDark,
+  // TODO: should be using colorsBorder.lowOnDark but border collapse used with
+  //       a transparent color causes weird multi-shade borders
+  borderColor: '#343434',
   rowHoverColor: colorsBackgroundDark[2],
   rowSelectedColor: colorsBackgroundDark[2],
   stickyBgColor: colorsBackgroundDark[1],
@@ -27,7 +30,9 @@ const dark = {
 const light = {
   className: `.psds-theme--${themeNames.light}`,
 
-  borderColor: colorsBorder.lowOnLight,
+  // TODO: should be using colorsBorder.lowOnLight but border collapse used with
+  //       a transparent color causes weird multi-shade borders
+  borderColor: '#D9D9D9',
   rowHoverColor: colorsBackgroundLight[2],
   rowSelectedColor: colorsBackgroundLight[1],
   stickyBgColor: colorsBackgroundLight[3],
@@ -120,7 +125,7 @@ export default {
     fontWeight: type.fontWeightBook,
     textTransform: 'uppercase',
 
-    '& >:first-of-type': { borderTop: 'none' }
+    '& > tr:first-of-type': { borderTop: 'none' }
   },
 
   [`.psds-table__head${dark.className}`]: { color: dark.textHeadingColor },
@@ -193,21 +198,34 @@ export default {
 
   [`.psds-table__row${dark.className}`]: {
     borderTop: `1px solid ${dark.borderColor}`,
+
     'tbody &:hover > th, tbody &:hover > td': {
       backgroundColor: dark.rowHoverColor
     }
   },
   [`.psds-table__row${light.className}`]: {
     borderTop: `1px solid ${light.borderColor}`,
+
     'tbody &:hover > th, tbody &:hover > td': {
       backgroundColor: light.rowHoverColor
     }
   },
-  '.psds-table__row--collapsed': { display: 'none' },
+  '.psds-table__row--collapsed': {
+    borderColor: 'transparent',
+    height: 0,
+    visibility: 'hidden'
+  },
   [`.psds-table__row--selected${dark.className}`]: {
     '& > th, & > td': { backgroundColor: dark.rowSelectedColor }
   },
   [`.psds-table__row--selected${light.className}`]: {
     '& > th, & > td': { backgroundColor: light.rowSelectedColor }
-  }
+  },
+
+  '.psds-table__drawer': {
+    borderTopColor: 'transparent',
+    'tbody &:hover > th, tbody &:hover > td': { backgroundColor: 'transparent' }
+  },
+  '.psds-table__drawer__cell': { padding: 0 },
+  '.psds-table__drawer__inner': { transition: `all ${motion.speedNormal}` }
 }
