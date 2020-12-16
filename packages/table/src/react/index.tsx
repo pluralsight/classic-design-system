@@ -84,7 +84,7 @@ const styles = {
 }
 
 interface TableProps extends HTMLPropsFor<'table'> {
-  renderContainer?: (props: unknown) => React.ReactElement
+  renderContainer?: typeof defaultRenderContainer
   scrollable?: boolean
 }
 interface TableStatics {
@@ -99,14 +99,18 @@ type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
 const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   const {
-    renderContainer: Container = defaultRenderContainer,
+    renderContainer = defaultRenderContainer,
     scrollable = false,
     ...rest
   } = props
   const themeName = useTheme()
 
+  const containerRef = React.useRef<HTMLDivElement>(null)
+  const Container = React.useMemo(() => renderContainer, [renderContainer])
+
   return (
     <Container
+      ref={containerRef}
       {...styles.container(themeName, { scrollable })}
       {...(scrollable && { role: 'region', tabIndex: 0 })}
     >
@@ -115,7 +119,9 @@ const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   )
 }) as TableComponent
 
-const defaultRenderContainer: React.FC = props => <div {...props} />
+const defaultRenderContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+  (props, ref) => <div ref={ref} {...props} />
+)
 
 const TableBody = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'tbody'>>(
   (props, ref) => {
@@ -212,8 +218,10 @@ const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
         })}
         {...rest}
       >
-        {children}
-        {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
+        <div>
+          {children}
+          {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
+        </div>
       </th>
     )
   }

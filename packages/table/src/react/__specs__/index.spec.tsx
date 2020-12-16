@@ -5,9 +5,6 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import Table from '..'
 import * as stories from '../__stories__/index.story'
 
-type TableProps = React.ComponentProps<typeof Table>
-type RenderContainer = TableProps['renderContainer']
-
 describe('Table', () => {
   describe('Table', () => {
     it('should forward refs', () => {
@@ -26,14 +23,16 @@ describe('Table', () => {
       beforeEach(() => {
         ref = React.createRef<HTMLElement>()
 
-        const renderContainer: RenderContainer = props => (
-          <main
-            className="custom class names"
-            data-custom-attribute="i'm special"
-            data-testid="undertest"
-            ref={ref}
-            {...props}
-          />
+        const renderContainer = React.forwardRef<HTMLDivElement>(
+          (props, ref) => (
+            <main
+              className="custom class names"
+              data-custom-attribute="i'm special"
+              data-testid="undertest"
+              ref={ref}
+              {...props}
+            />
+          )
         )
 
         render(
