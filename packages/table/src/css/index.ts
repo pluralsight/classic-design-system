@@ -213,7 +213,9 @@ export default {
   '.psds-table__row--collapsed': {
     borderColor: 'transparent',
     height: 0,
-    visibility: 'hidden'
+    visibility: 'hidden',
+
+    '& > th, & > td': { paddingBottom: 0, paddingTop: 0 }
   },
   [`.psds-table__row--selected${dark.className}`]: {
     '& > th, & > td': { backgroundColor: dark.rowSelectedColor }
@@ -224,8 +226,15 @@ export default {
 
   '.psds-table__drawer': {
     borderTopColor: 'transparent',
+
     'tbody &:hover > th, tbody &:hover > td': { backgroundColor: 'transparent' }
   },
-  '.psds-table__drawer__cell': { padding: 0 },
-  '.psds-table__drawer__inner': { transition: `all ${motion.speedNormal}` }
+  '.psds-table__drawer__cell': {
+    paddingBottom: layout.spacingSmall,
+    paddingTop: layout.spacingSmall,
+    transition: `padding ${motion.speedNormal}`
+  },
+  '.psds-table__drawer__inner': {
+    transition: `all ${motion.speedNormal}`
+  }
 }
