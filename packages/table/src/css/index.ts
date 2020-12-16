@@ -16,7 +16,7 @@ const cellPadding = `${layout.spacingXSmall} ${layout.spacingSmall}`
 const dark = {
   className: `.psds-theme--${themeNames.dark}`,
 
-  // TODO: should be using colorsBorder.lowOnDark but border collapse used with
+  // NOTE: should be using colorsBorder.lowOnDark but border collapse used with
   //       a transparent color causes weird multi-shade borders
   borderColor: '#343434',
   rowHoverColor: colorsBackgroundDark[2],
@@ -30,7 +30,7 @@ const dark = {
 const light = {
   className: `.psds-theme--${themeNames.light}`,
 
-  // TODO: should be using colorsBorder.lowOnLight but border collapse used with
+  // NOTE: should be using colorsBorder.lowOnLight but border collapse used with
   //       a transparent color causes weird multi-shade borders
   borderColor: '#D9D9D9',
   rowHoverColor: colorsBackgroundLight[2],
