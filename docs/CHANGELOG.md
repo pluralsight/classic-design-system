@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.0...@pluralsight/ps-design-system-docs@0.18.1) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.18.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.17.0...@pluralsight/ps-design-system-docs@0.18.0) (2020-12-15)
+
+
+### Bug Fixes
+
+* **docs:** make icon set bg respond to theme ([ac666b2](https://github.com/pluralsight/design-system/commit/ac666b2a80656db283aad0a1ce5747b54ac1b8e4)), closes [#1505](https://github.com/pluralsight/design-system/issues/1505)
+
+
+### Features
+
+* **docs:** add basic page heading pattern ([cb2f6fc](https://github.com/pluralsight/design-system/commit/cb2f6fc1290596d9264c292d85982462065998e8))
+* **docs:** add robust page heading pattern ([26ca837](https://github.com/pluralsight/design-system/commit/26ca8375e172ab9ef7bf231f5e7e796ae450420d))
+* **docs:** basic alt 2 heading pattern ([9158e62](https://github.com/pluralsight/design-system/commit/9158e62e9174851d41edf39f07b36da8eb74dd8e))
+* **docs:** power heading pattern ([c7fef57](https://github.com/pluralsight/design-system/commit/c7fef570de5d2dc87beee01749a167bdf0682714))
+
+
+
+
+
 # [0.17.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.16.1...@pluralsight/ps-design-system-docs@0.17.0) (2020-12-15)
 
 

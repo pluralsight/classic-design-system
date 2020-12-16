@@ -13,7 +13,7 @@
   composes: glyphs;
   padding: var(--psLayoutSpacingLarge);
   font-family: var(--psTypeFontFamilyCode);
-  font-weight: var(--psTypeFontWeightMedium);
+  font-weight: var(--psTypeFontWeightRegular);
   font-size: var(--psTypeFontSizeGigantic);
   letter-spacing: var(--psTypeLetterSpacingGigantic);
 }

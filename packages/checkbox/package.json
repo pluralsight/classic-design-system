@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-checkbox",
-  "version": "6.2.19",
+  "version": "6.2.20",
   "description": "Design system components for checkbox",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,8 +21,8 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.6.3",
-    "@pluralsight/ps-design-system-halo": "^7.1.18",
+    "@pluralsight/ps-design-system-core": "^6.6.4",
+    "@pluralsight/ps-design-system-halo": "^7.1.19",
     "@pluralsight/ps-design-system-util": "^6.0.8"
   },
   "peerDependencies": {
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.2",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.18",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.19",
     "@pluralsight/ps-design-system-theme": "^6.0.13"
   }
 }
