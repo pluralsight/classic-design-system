@@ -22,6 +22,7 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
+    "@pluralsight/ps-design-system-collapsible": "*",
     "@pluralsight/ps-design-system-core": "^6.6.4",
     "@pluralsight/ps-design-system-icon": "^19.0.17",
     "@pluralsight/ps-design-system-util": "^6.0.8"

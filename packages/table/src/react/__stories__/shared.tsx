@@ -1,5 +1,35 @@
+import Button from '@pluralsight/ps-design-system-button'
 import { layout } from '@pluralsight/ps-design-system-core'
+import {
+  CaretDownIcon,
+  CaretRightIcon
+} from '@pluralsight/ps-design-system-icon'
 import React from 'react'
+
+interface ExpandButtonProps extends React.ComponentProps<typeof Button> {
+  expanded: boolean
+}
+export const ExpandButton: React.FC<ExpandButtonProps> = props => {
+  const {
+    appearance = 'flat',
+    expanded,
+    size = 'xSmall',
+    title = 'Expand/Collapse additional content',
+    ...rest
+  } = props
+
+  const icon = expanded ? <CaretDownIcon /> : <CaretRightIcon />
+
+  return (
+    <Button
+      appearance={appearance}
+      icon={icon}
+      size={size}
+      title={title}
+      {...rest}
+    />
+  )
+}
 
 export const FlexContainer: React.FC = props => (
   <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
