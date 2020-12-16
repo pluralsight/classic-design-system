@@ -8,7 +8,7 @@ export const FontFamily = () => (
     <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
     <div>abcdefghijklmnopqrstuvwxyz</div>
     <div>0123456789</div>
-    <div>{`‘?’“!”(%)[#]{@}/&\<-+÷×=>`}</div>
+    <div>{`‘?’“!”(%)[#]{@}/&<-+÷×=>`}</div>
     <div>®©$€£¥¢:;,.*•</div>
   </Box>
 )
