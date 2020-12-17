@@ -60,25 +60,26 @@ export const Basic: Story = () => {
     setData(nextData)
   }
 
+  const Container = React.forwardRef<HTMLDivElement>((p, containerRef) => (
+    <div {...p} ref={containerRef} style={{ maxHeight: 500 }} />
+  ))
+
   return (
     <DragDropContext
       onBeforeDragStart={handleBeforeDragStart}
       onDragEnd={handleDragEnd}
     >
-      <Table
-        renderContainer={p => <div {...p} style={{ maxHeight: 500 }} />}
-        scrollable
-      >
+      <Table renderContainer={Container} scrollable>
         <Table.Head>
           <Table.Row>
-            <Table.Header role="columnheader" scope="col" sticky />
-            <Table.Header role="columnheader" scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" />
+            <Table.Header role="columnheader" scope="col">
               First name
             </Table.Header>
-            <Table.Header role="columnheader" scope="col" sticky>
+            <Table.Header role="columnheader" scope="col">
               Last name
             </Table.Header>
-            <Table.Header role="columnheader" scope="col" sticky>
+            <Table.Header role="columnheader" scope="col">
               Email
             </Table.Header>
           </Table.Row>

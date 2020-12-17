@@ -133,11 +133,15 @@ export default {
 
   '.psds-table__header': {
     label: 'table__header',
+    padding: 0,
 
-    fontWeight: type.fontWeightBold,
-    padding: cellPadding,
-    textAlign: 'left',
-    whiteSpace: 'nowrap'
+    '& > div': {
+      fontWeight: type.fontWeightBold,
+      padding: cellPadding,
+      textAlign: 'left',
+      verticalAlign: 'bottom',
+      whiteSpace: 'nowrap'
+    }
   },
   [`.psds-table__header--align-${alignments.center}`]: { textAlign: 'center' },
   [`.psds-table__header--align-${alignments.left}`]: { textAlign: 'left' },
@@ -164,10 +168,25 @@ export default {
 
   '.psds-table__header--sticky': {
     '&[scope="col"]': {
+      border: 'none',
       top: 0,
       position: 'sticky',
-      zIndex: 2
+      zIndex: 2,
+
+      '& > div': { padding: cellPadding }
     },
+
+    // NOTE: used by StickyContainer
+    '&[scope="col"][data-stuck]': {
+      position: 'initial',
+
+      '& > div': {
+        position: 'fixed',
+        top: 0,
+        zIndex: 2
+      }
+    },
+
     '&[scope="row"]': {
       left: 0,
       position: 'sticky',
@@ -176,7 +195,7 @@ export default {
   },
 
   [`.psds-table__header--sticky${dark.className}`]: {
-    '&[scope="col"]': {
+    '&[scope="col"] > div': {
       backgroundColor: dark.stickyBgColor,
       boxShadow: `0 1px 0 0 ${dark.borderColor}`
     },
@@ -186,7 +205,7 @@ export default {
     }
   },
   [`.psds-table__header--sticky${light.className}`]: {
-    '&[scope="col"]': {
+    '&[scope="col"] > div': {
       backgroundColor: light.stickyBgColor,
       boxShadow: `0 1px 0 0 ${light.borderColor}`
     },
