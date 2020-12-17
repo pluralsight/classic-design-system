@@ -432,6 +432,17 @@ const groups = [
         title: 'Feature flags'
       }
     ]
+  },
+  {
+    header: {
+      title: 'Patterns'
+    },
+    items: [
+      {
+        href: '/patterns/page-headers',
+        title: 'Page headers'
+      }
+    ]
   }
 ]
 
@@ -443,8 +454,8 @@ function Logo() {
         className={styles.logo}
         src={
           themeName === Theme.names.light
-            ? '/img/logo-light.png'
-            : '/img/logo-dark.png'
+            ? '/img/logo-light@2x.png'
+            : '/img/logo-dark@2x.png'
         }
       />
     </Link>

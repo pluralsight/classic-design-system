@@ -8,6 +8,7 @@
     var(--psLayoutSpacingLarge);
 }
 .logo {
+  width: 192px;
   margin-bottom: var(--psLayoutSpacingLarge);
 }
 .search {

@@ -214,6 +214,34 @@ it('selects by click', () => {
   expect(input).toHaveValue('h')
 })
 
+it('selects a value of 0', () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      value={1}
+      menu={[
+        <Dropdown.Item key="1" value={0}>
+          Zero
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value={1}>
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value={2}>
+          Two
+        </Dropdown.Item>
+      ]}
+    />
+  )
+  const button = screen.getByRole('button', { name: /One/ })
+  userEvent.click(button)
+
+  const item = screen.getByRole('option', { name: /Zero/ })
+  userEvent.click(item)
+
+  const input = screen.getByRole('combobox')
+  expect(input).toHaveValue('0')
+})
+
 it('navigates by arrows, selects by enter', () => {
   render(
     <Dropdown

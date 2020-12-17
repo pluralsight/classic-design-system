@@ -19,7 +19,7 @@ export default {
     borderRadius: '2px',
     lineHeight: type.lineHeightStandard,
     whiteSpace: 'pre-wrap',
-    fontFamily: '"Source Code Pro", monospace',
+    fontFamily: '"DM Mono", monospace',
     fontWeight: type.fontWeightMedium,
     fontSize: type.fontSizeSmall,
     wordBreak: 'break-word'
@@ -36,7 +36,8 @@ export default {
   },
 
   '.psds-text__heading': {
-    margin: `${layout.spacingMedium} 0`
+    margin: `${layout.spacingMedium} 0`,
+    fontWeight: '600'
   },
   [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -53,41 +54,34 @@ export default {
   [`.psds-text__heading--size-${vars.headingSizes.xXXSmall}`]: {
     fontSize: '12px',
     lineHeight: '16px',
-    fontWeight: '600',
     textTransform: 'uppercase',
     letterSpacing: '.08em'
   },
   [`.psds-text__heading--size-${vars.headingSizes.xXSmall}`]: {
     fontSize: '14px',
     lineHeight: '20px',
-    fontWeight: '600',
     textTransform: 'uppercase',
     letterSpacing: '.08em'
   },
   [`.psds-text__heading--size-${vars.headingSizes.xSmall}`]: {
     fontSize: '20px',
-    lineHeight: '28px',
-    fontWeight: '600'
+    lineHeight: '28px'
   },
   [`.psds-text__heading--size-${vars.headingSizes.small}`]: {
     fontSize: '24px',
-    lineHeight: '32px',
-    fontWeight: '600'
+    lineHeight: '32px'
   },
   [`.psds-text__heading--size-${vars.headingSizes.medium}`]: {
     fontSize: '28px',
-    lineHeight: '36px',
-    fontWeight: '600'
+    lineHeight: '36px'
   },
   [`.psds-text__heading--size-${vars.headingSizes.large}`]: {
     fontSize: '34px',
-    lineHeight: '40px',
-    fontWeight: '600'
+    lineHeight: '40px'
   },
   [`.psds-text__heading--size-${vars.headingSizes.xLarge}`]: {
     fontSize: '40px',
-    lineHeight: '52px',
-    fontWeight: '600'
+    lineHeight: '52px'
   },
 
   [`.psds-text__label`]: {
@@ -130,14 +124,14 @@ export default {
   [`.psds-text__label--size-${vars.labelSizes.large}`]: {
     fontSize: '18px',
     letterSpacing: '0.005em',
-    lineHeight: '32px',
-    fontWeight: '400'
+    lineHeight: '32px'
   },
 
   [`.psds-text__list`]: {
     listStyle: 'none',
     marginLeft: 0,
-    lineHeight: type.lineHeightExtra
+    lineHeight: type.lineHeightExtra,
+    fontWeight: '400'
   },
   [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -154,20 +148,17 @@ export default {
   [`.psds-text__list--size-${vars.listSizes.small}`]: {
     fontSize: '14px',
     letterSpacing: '0.015em',
-    lineHeight: '24px',
-    fontWeight: '400'
+    lineHeight: '24px'
   },
   [`.psds-text__list--size-${vars.listSizes.medium}`]: {
     fontSize: '16px',
     letterSpacing: '0.01em',
-    lineHeight: '24px',
-    fontWeight: '400'
+    lineHeight: '24px'
   },
   [`.psds-text__list--size-${vars.listSizes.large}`]: {
     fontSize: '18px',
     letterSpacing: '0.005em',
-    lineHeight: '28px',
-    fontWeight: '400'
+    lineHeight: '28px'
   },
   [`.psds-text__list--type-${vars.listTypes.bulleted}`]: {
     listStyle: 'initial',
@@ -179,7 +170,8 @@ export default {
   },
 
   '.psds-text__p': {
-    margin: `${layout.spacingMedium} 0`
+    margin: `${layout.spacingMedium} 0`,
+    fontWeight: '400'
   },
   [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -196,19 +188,16 @@ export default {
   [`.psds-text__p--size-${vars.pSizes.small}`]: {
     fontSize: '14px',
     letterSpacing: '0.015em',
-    lineHeight: '24px',
-    fontWeight: '400'
+    lineHeight: '24px'
   },
   [`.psds-text__p--size-${vars.pSizes.medium}`]: {
     fontSize: '16px',
     letterSpacing: '0.01em',
-    lineHeight: '24px',
-    fontWeight: '400'
+    lineHeight: '24px'
   },
   [`.psds-text__p--size-${vars.pSizes.large}`]: {
     fontSize: '18px',
     letterSpacing: '0.005em',
-    lineHeight: '28px',
-    fontWeight: '400'
+    lineHeight: '28px'
   }
 }

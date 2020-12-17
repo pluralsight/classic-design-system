@@ -24,11 +24,16 @@ export default {
   letterSpacingXSmall: 0,
 
   /* font weight */
+  fontWeightBlack: 900,
+  fontWeightXBold: 800,
   fontWeightBold: 700,
+  fontWeightDemiBold: 600,
   fontWeightMedium: 500,
+  fontWeightRegular: 400,
   fontWeightBook: 400,
   fontWeightLight: 300,
   fontWeightXLight: 200,
+  fontWeightThin: 100,
 
   /* line height */
   lineHeightTight: '20px',

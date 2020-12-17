@@ -533,7 +533,7 @@ exports[`Storyshots Layout / PageHeadingLayout default 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-12i2j55=""
+      data-css-1cti5ps=""
     >
       My Page
     </h2>
@@ -550,7 +550,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-12i2j55=""
+      data-css-1cti5ps=""
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
     </h2>
@@ -567,7 +567,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-12i2j55=""
+      data-css-1cti5ps=""
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
     </h2>
@@ -605,7 +605,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
     data-css-wlfhsa=""
   >
     <h2
-      data-css-12i2j55=""
+      data-css-1cti5ps=""
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
     </h2>
@@ -694,7 +694,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-12i2j55=""
+      data-css-1cti5ps=""
     >
       My Page
     </h2>
@@ -732,7 +732,7 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-12i2j55=""
+      data-css-1cti5ps=""
     >
       My Page
     </h2>
