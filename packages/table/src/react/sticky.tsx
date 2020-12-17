@@ -1,8 +1,9 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import React from 'react'
+import React, { useCallback, useRef, useState } from 'react'
 import invariant from 'invariant'
 
 import { Sentinel, useIntersectionSentinels } from './sentinel'
+import { useOnResize, useOnScroll } from './event-hooks'
 
 type StickyContainerProps = Omit<HTMLPropsFor<'div'>, 'ref'>
 export const StickyContainer = React.forwardRef<
@@ -10,13 +11,14 @@ export const StickyContainer = React.forwardRef<
   StickyContainerProps
 >((props, ref) => {
   const { children, ...rest } = props
-
   invariant(ref, 'ref is required')
 
-  const start = React.useRef<HTMLDivElement>(null)
-  const end = React.useRef<HTMLDivElement>(null)
+  const [stuck, setStuck] = useState<boolean>(false)
 
-  const getHeaders = React.useCallback(() => {
+  const start = useRef<HTMLDivElement>(null)
+  const end = useRef<HTMLDivElement>(null)
+
+  const getHeaders = useCallback(() => {
     const { current: el } = ref as React.MutableRefObject<HTMLDivElement>
     if (!el) return []
 
@@ -24,37 +26,58 @@ export const StickyContainer = React.forwardRef<
     return Array.from(el.querySelectorAll<HTMLDivElement>(selector))
   }, [ref])
 
-  const stick = React.useCallback(() => {
+  const stickHeaders = useCallback(() => {
     const headers = getHeaders()
 
     for (const el of Array.from(headers)) {
       const th = el.parentNode as HTMLTableHeaderCellElement
+      const { left, height, width } = th.getBoundingClientRect()
 
-      const { height, width } = th.getBoundingClientRect()
-
-      el.style.width = `${width}px`
-
+      th.setAttribute('data-stuck', 'true')
       th.style.height = `${height}px`
       th.style.width = `${width}px`
-      th.setAttribute('data-stuck', 'true')
+
+      el.style.left = `${left}px`
+      el.style.width = `${width}px`
     }
   }, [getHeaders])
 
-  const unstick = React.useCallback(() => {
+  const unstickHeaders = useCallback(() => {
     const headers = getHeaders()
 
     for (const el of Array.from(headers)) {
       const th = el.parentNode as HTMLTableHeaderCellElement
 
-      el.style.width = 'initial'
-
+      th.removeAttribute('data-stuck')
       th.style.height = 'initial'
       th.style.width = 'initial'
-      th.removeAttribute('data-stuck')
+
+      el.style.left = 'initial'
+      el.style.width = 'initial'
     }
   }, [getHeaders])
 
+  React.useEffect(() => {
+    if (stuck) stickHeaders()
+    else unstickHeaders()
+  }, [stickHeaders, unstickHeaders, stuck])
+
+  const stick = useCallback(() => {
+    setStuck(true)
+  }, [])
+
+  const unstick = useCallback(() => {
+    setStuck(false)
+  }, [])
+
   useIntersectionSentinels(stick, unstick, { start, end })
+
+  const update = useCallback(() => {
+    if (stuck) stickHeaders()
+  }, [stuck, stickHeaders])
+
+  useOnResize(update)
+  useOnScroll(update)
 
   return (
     <div ref={ref} {...rest}>

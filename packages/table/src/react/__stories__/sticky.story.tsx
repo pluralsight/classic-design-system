@@ -16,7 +16,6 @@ export default {
 export const FixedContainer: Story = () => (
   <div style={{ width: 500, height: 500 }}>
     <MockTable scrollable />
-    <OutlineBox style={{ height: 200, margin: 20 }}>Blank Area</OutlineBox>
   </div>
 )
 

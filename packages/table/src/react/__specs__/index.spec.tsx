@@ -1,3 +1,4 @@
+import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
 import { axe } from 'jest-axe'
 import React from 'react'
 import { fireEvent, render, screen, within } from '@testing-library/react'
@@ -24,15 +25,19 @@ describe('Table', () => {
         ref = React.createRef<HTMLElement>()
 
         const renderContainer = React.forwardRef<HTMLDivElement>(
-          (props, ref) => (
-            <main
-              className="custom class names"
-              data-custom-attribute="i'm special"
-              data-testid="undertest"
-              ref={ref}
-              {...props}
-            />
-          )
+          (props, forwardedRef) => {
+            const combined = useCombinedRefs(ref, forwardedRef as any)
+
+            return (
+              <main
+                className="custom class names"
+                data-custom-attribute="i'm special"
+                data-testid="undertest"
+                ref={combined}
+                {...props}
+              />
+            )
+          }
         )
 
         render(

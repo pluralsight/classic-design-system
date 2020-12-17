@@ -72,14 +72,14 @@ export const Basic: Story = () => {
       <Table renderContainer={Container} scrollable>
         <Table.Head>
           <Table.Row>
-            <Table.Header role="columnheader" scope="col" sticky />
-            <Table.Header role="columnheader" scope="col" sticky>
+            <Table.Header role="columnheader" scope="col" />
+            <Table.Header role="columnheader" scope="col">
               First name
             </Table.Header>
-            <Table.Header role="columnheader" scope="col" sticky>
+            <Table.Header role="columnheader" scope="col">
               Last name
             </Table.Header>
-            <Table.Header role="columnheader" scope="col" sticky>
+            <Table.Header role="columnheader" scope="col">
               Email
             </Table.Header>
           </Table.Row>
