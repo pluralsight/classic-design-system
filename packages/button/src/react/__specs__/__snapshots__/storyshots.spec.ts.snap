@@ -1280,6 +1280,44 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button / layout fullWidth 1`] = `
+<div
+  style={
+    Object {
+      "outline": "3px dashed #E7558B",
+      "width": "400px",
+    }
+  }
+>
+  <div>
+    <button
+      data-css-a3dmt8=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Normal
+      </span>
+    </button>
+  </div>
+  <div>
+    <button
+      data-css-18brbs1=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Full width
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button / loading flat 1`] = `
 <button
   data-css-xtxkix=""

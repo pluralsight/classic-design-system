@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.6.4...@pluralsight/ps-design-system-core@6.7.0) (2020-12-17)
+
+
+### Features
+
+* **core:** add layers for z-index ([15f9028](https://github.com/pluralsight/design-system/commit/15f90283d67f6b53c8db3638bd6181a8b6b3805c))
+
+
+
+
+
 ## [6.6.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.6.3...@pluralsight/ps-design-system-core@6.6.4) (2020-12-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core

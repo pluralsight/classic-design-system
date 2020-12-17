@@ -1,3 +1,4 @@
+import { colorsPink } from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
@@ -235,4 +236,15 @@ storiesOf('Button / theme', module).add('nested', _ => (
       </Theme>
     </Theme>
   </Theme>
+))
+
+storiesOf('Button / layout', module).add('fullWidth', _ => (
+  <div style={{ outline: `3px dashed ${colorsPink.base}`, width: '400px' }}>
+    <div>
+      <Button>Normal</Button>
+    </div>
+    <div>
+      <Button layout="fullWidth">Full width</Button>
+    </div>
+  </div>
 ))
