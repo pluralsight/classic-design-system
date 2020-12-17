@@ -3,5 +3,5 @@ export default {
   globalSidenav: '930',
   globalTopnav: '950',
   globalDropdown: '1000',
-  globalSkiptoContentBanner: '1600'
+  globalSkipToContentBanner: '1600'
 }
