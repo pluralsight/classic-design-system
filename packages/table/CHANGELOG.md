@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.1.1...@pluralsight/ps-design-system-table@11.2.0) (2020-12-17)
+
+
+### Features
+
+* **table:** add intersection observer feat detection ([0116b70](https://github.com/pluralsight/design-system/commit/0116b70855157de7315c8a7b86acc34451feb54f))
+* **table:** sticky headers ([d49a231](https://github.com/pluralsight/design-system/commit/d49a231f0317b2ae2269163162eda6af018e88f1))
+* **table:** update sticky positioning for resize/scroll events ([a930760](https://github.com/pluralsight/design-system/commit/a93076027cd850c3bb2555f90902bb7624d90bcd))
+
+
+
+
+
 ## [11.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.1.0...@pluralsight/ps-design-system-table@11.1.1) (2020-12-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

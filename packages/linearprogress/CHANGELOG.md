@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@5.2.21...@pluralsight/ps-design-system-linearprogress@5.2.22) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-linearprogress
+
+
+
+
+
 ## [5.2.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@5.2.20...@pluralsight/ps-design-system-linearprogress@5.2.21) (2020-12-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-linearprogress
