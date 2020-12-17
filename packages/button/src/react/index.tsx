@@ -20,11 +20,13 @@ const styles = {
     icon,
     iconAlign,
     iconOnly,
+    layout,
     size,
     themeName
   }) =>
     css(
       stylesheet['.psds-button'],
+      stylesheet[`.psds-button--layout-${layout}`],
       stylesheet[`.psds-button--size-${size}`],
       stylesheet[`.psds-button--appearance-${appearance}`],
       stylesheet[
@@ -127,6 +129,7 @@ const renderIcon: React.FC<RenderIconProps> = props =>
 interface BaseButtonProps {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
+  layout?: ValueOf<typeof vars.layouts>
   icon?: React.ReactNode
   iconAlign?: ValueOf<typeof vars.iconAligns>
   loading?: boolean
@@ -142,6 +145,7 @@ type ButtonElement = HTMLAnchorElement | HTMLButtonElement
 type ButtonProps = ButtonAnchorProps | ButtonButtonProps
 interface ButtonStatics {
   appearances: typeof vars.appearances
+  layouts: typeof vars.layouts
   iconAligns: typeof vars.iconAligns
   sizes: typeof vars.sizes
 }
@@ -159,6 +163,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       disabled = false,
       icon,
       iconAlign = vars.iconAligns.left,
+      layout = vars.layouts.inline,
       loading = false,
       size = vars.sizes.medium,
       ...rest
@@ -182,6 +187,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       icon,
       iconAlign,
       iconOnly,
+      layout,
       size,
       themeName
     })
@@ -240,6 +246,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
 
 Button.appearances = vars.appearances
 Button.iconAligns = vars.iconAligns
+Button.layouts = vars.layouts
 Button.sizes = vars.sizes
 
 export const appearances = vars.appearances
