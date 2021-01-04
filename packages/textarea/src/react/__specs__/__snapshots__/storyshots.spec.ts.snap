@@ -6,7 +6,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       Some label
     </div>
@@ -17,7 +17,7 @@ Array [
         data-css-ctre2o=""
       >
         <textarea
-          data-css-frmafg=""
+          data-css-1paz7u7=""
           disabled={false}
           placeholder="Some placeholder"
           style={
@@ -38,7 +38,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       Some label
     </div>
@@ -49,7 +49,7 @@ Array [
         data-css-ctre2o=""
       >
         <textarea
-          data-css-1105jtv=""
+          data-css-11onv2k=""
           disabled={false}
           placeholder="Some placeholder"
           style={
@@ -75,7 +75,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       Normal
     </div>
@@ -86,7 +86,7 @@ Array [
         data-css-ctre2o=""
       >
         <textarea
-          data-css-frmafg=""
+          data-css-1paz7u7=""
           disabled={false}
           placeholder="I'm normal, see"
           style={
@@ -107,7 +107,7 @@ Array [
     data-css-1tctpgo=""
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       I'm not usable
     </div>
@@ -118,7 +118,7 @@ Array [
         data-css-ctre2o=""
       >
         <textarea
-          data-css-frmafg=""
+          data-css-1paz7u7=""
           disabled={true}
           placeholder="I'm untouchable"
           style={
@@ -144,7 +144,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       Normal
     </div>
@@ -155,7 +155,7 @@ Array [
         data-css-ctre2o=""
       >
         <textarea
-          data-css-frmafg=""
+          data-css-1paz7u7=""
           disabled={false}
           placeholder="I'm normal, see"
           style={
@@ -176,7 +176,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       I'm in an error state
     </div>
@@ -187,7 +187,7 @@ Array [
         data-css-in6gqi=""
       >
         <textarea
-          data-css-frmafg=""
+          data-css-1paz7u7=""
           disabled={false}
           style={
             Object {
@@ -237,7 +237,7 @@ exports[`Storyshots Components/TextArea Focus 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         style={
           Object {
@@ -269,7 +269,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
     }
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       max-width still applies
     </div>
@@ -280,7 +280,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
         data-css-ctre2o=""
       >
         <textarea
-          data-css-frmafg=""
+          data-css-1paz7u7=""
           disabled={false}
           style={
             Object {
@@ -302,7 +302,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
     }
   >
     <div
-      data-css-9kywkh=""
+      data-css-k6qvfq=""
     >
       remove max-width
     </div>
@@ -313,7 +313,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
         data-css-in6gqi=""
       >
         <textarea
-          data-css-frmafg=""
+          data-css-1paz7u7=""
           disabled={false}
           style={
             Object {
@@ -351,7 +351,7 @@ exports[`Storyshots Components/TextArea Label 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-9kywkh=""
+    data-css-k6qvfq=""
   >
     Some label
   </div>
@@ -362,7 +362,7 @@ exports[`Storyshots Components/TextArea Label 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         style={
           Object {
@@ -380,7 +380,7 @@ exports[`Storyshots Components/TextArea Label And Sub Label 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-9kywkh=""
+    data-css-k6qvfq=""
   >
     Some label
   </div>
@@ -391,7 +391,7 @@ exports[`Storyshots Components/TextArea Label And Sub Label 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         style={
           Object {
@@ -414,7 +414,7 @@ exports[`Storyshots Components/TextArea Less Than Four Rows 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-9kywkh=""
+    data-css-k6qvfq=""
   >
     Min height engages
   </div>
@@ -425,7 +425,7 @@ exports[`Storyshots Components/TextArea Less Than Four Rows 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         style={
           Object {
@@ -443,7 +443,7 @@ exports[`Storyshots Components/TextArea More Than Four Rows 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-9kywkh=""
+    data-css-k6qvfq=""
   >
     6 rows of text
   </div>
@@ -454,7 +454,7 @@ exports[`Storyshots Components/TextArea More Than Four Rows 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         style={
           Object {
@@ -478,7 +478,7 @@ exports[`Storyshots Components/TextArea No Label 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         style={
           Object {
@@ -502,7 +502,7 @@ exports[`Storyshots Components/TextArea Placeholder 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         placeholder="some placeholder"
         style={
@@ -527,7 +527,7 @@ exports[`Storyshots Components/TextArea Prop Name 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         name="myFieldNameOfPower"
         placeholder="I have a form name"
@@ -553,7 +553,7 @@ exports[`Storyshots Components/TextArea Prop On Change 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -580,7 +580,7 @@ exports[`Storyshots Components/TextArea Sub Label 1`] = `
       data-css-ctre2o=""
     >
       <textarea
-        data-css-frmafg=""
+        data-css-1paz7u7=""
         disabled={false}
         style={
           Object {

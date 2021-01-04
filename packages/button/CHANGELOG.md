@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [19.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@19.1.0...@pluralsight/ps-design-system-button@19.1.1) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
+# [19.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@19.0.18...@pluralsight/ps-design-system-button@19.1.0) (2020-12-17)
+
+
+### Features
+
+* **button:** support fullWidth layout ([a92cc4c](https://github.com/pluralsight/design-system/commit/a92cc4c41ac5f8b0847eab6a977d3b6bdb2ac460))
+
+
+
+
+
+## [19.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@19.0.17...@pluralsight/ps-design-system-button@19.0.18) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
+## [19.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@19.0.16...@pluralsight/ps-design-system-button@19.0.17) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
 ## [19.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@19.0.15...@pluralsight/ps-design-system-button@19.0.16) (2020-12-11)
 
 

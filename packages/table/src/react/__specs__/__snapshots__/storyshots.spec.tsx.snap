@@ -5,158 +5,174 @@ exports[`Storyshots Components/Table Alignment 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-bfreby=""
+    data-css-w7hohw=""
     role="grid"
   >
     <thead
-      data-css-1ts1rl3=""
+      data-css-131nlok=""
     >
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="columnheader"
           scope="col"
         >
-          Align Left
+          <div>
+            Align Left
+          </div>
         </th>
         <th
-          data-css-1qf9mo3=""
+          data-css-1tr0yhh=""
           role="columnheader"
           scope="col"
         >
-          Align center
+          <div>
+            Align center
+          </div>
         </th>
         <th
-          data-css-av945f=""
+          data-css-1p23zrp=""
           role="columnheader"
           scope="col"
         >
-          Align right
+          <div>
+            Align right
+          </div>
         </th>
       </tr>
     </thead>
     <tbody>
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="rowheader"
           scope="row"
         >
-          Enrico
+          <div>
+            Delmer
+          </div>
         </th>
         <td
           data-css-rg0vl=""
           role="gridcell"
         >
-          VonRueden
+          Schaefer
         </td>
         <td
           data-css-486wol=""
           role="gridcell"
         >
-          Helen_Schmeler@yahoo.com
+          Mathilde2@hotmail.com
         </td>
       </tr>
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="rowheader"
           scope="row"
         >
-          Brittany
+          <div>
+            Liliane
+          </div>
         </th>
         <td
           data-css-rg0vl=""
           role="gridcell"
         >
-          Leuschke
+          Heaney
         </td>
         <td
           data-css-486wol=""
           role="gridcell"
         >
-          Yasmeen49@hotmail.com
+          Fabian_Reichel@gmail.com
         </td>
       </tr>
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="rowheader"
           scope="row"
         >
-          Eva
+          <div>
+            Noemy
+          </div>
         </th>
         <td
           data-css-rg0vl=""
           role="gridcell"
         >
-          Jacobs
+          Baumbach
         </td>
         <td
           data-css-486wol=""
           role="gridcell"
         >
-          Birdie0@hotmail.com
+          Jerrell.Hackett@hotmail.com
         </td>
       </tr>
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="rowheader"
           scope="row"
         >
-          Erich
+          <div>
+            Alexandrea
+          </div>
         </th>
         <td
           data-css-rg0vl=""
           role="gridcell"
         >
-          Dach
+          Haley
         </td>
         <td
           data-css-486wol=""
           role="gridcell"
         >
-          Hubert_Welch@yahoo.com
+          Wilson.Jakubowski@gmail.com
         </td>
       </tr>
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="rowheader"
           scope="row"
         >
-          Baron
+          <div>
+            Constance
+          </div>
         </th>
         <td
           data-css-rg0vl=""
           role="gridcell"
         >
-          Beer
+          Kutch
         </td>
         <td
           data-css-486wol=""
           role="gridcell"
         >
-          Derrick_Raynor@yahoo.com
+          Coy87@hotmail.com
         </td>
       </tr>
     </tbody>
@@ -169,1252 +185,58 @@ exports[`Storyshots Components/Table Basic 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-bfreby=""
+    data-css-w7hohw=""
     role="grid"
   >
     <thead
-      data-css-1ts1rl3=""
+      data-css-131nlok=""
     >
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="columnheader"
           scope="col"
         >
-          First name
-        </th>
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          Last name
-        </th>
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          Email
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          Adolphus
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Donnelly
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Braulio_Rempel33@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          Krystal
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          MacGyver
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Kacey7@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          Aglae
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Greenholt
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Vivianne.Johnson79@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          Vladimir
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          White
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Beaulah_Douglas@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          Hillard
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Bauch
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Michelle_OConnell58@hotmail.com
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-`;
-
-exports[`Storyshots Components/Table Mixed Content 1`] = `
-<div
-  data-css-f3t1g9=""
->
-  <table
-    data-css-bfreby=""
-    role="grid"
-  >
-    <thead
-      data-css-1ts1rl3=""
-    >
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          First name
-        </th>
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          Last name
-        </th>
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          Email
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          <div
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-              }
-            }
-          >
-            <div
-              data-css-79vgce=""
-            >
-              <div
-                aria-label="Darien"
-                data-css-1h1qs66=""
-                style={
-                  Object {
-                    "backgroundColor": "#009380",
-                  }
-                }
-              >
-                D
-              </div>
-            </div>
-            <div
-              style={
-                Object {
-                  "display": "inline-block",
-                  "width": "12px",
-                }
-              }
-            />
-            <span>
-              Darien
-            </span>
-          </div>
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Romaguera
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Kathryn91@gmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          <div
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-              }
-            }
-          >
-            <div
-              data-css-79vgce=""
-            >
-              <div
-                aria-label="Libby"
-                data-css-1h1qs66=""
-                style={
-                  Object {
-                    "backgroundColor": "#0074AB",
-                  }
-                }
-              >
-                L
-              </div>
-            </div>
-            <div
-              style={
-                Object {
-                  "display": "inline-block",
-                  "width": "12px",
-                }
-              }
-            />
-            <span>
-              Libby
-            </span>
-          </div>
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Treutel
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Rogelio.Kuhic@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          <div
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-              }
-            }
-          >
-            <div
-              data-css-79vgce=""
-            >
-              <div
-                aria-label="Myrna"
-                data-css-1h1qs66=""
-                style={
-                  Object {
-                    "backgroundColor": "#008F46",
-                  }
-                }
-              >
-                M
-              </div>
-            </div>
-            <div
-              style={
-                Object {
-                  "display": "inline-block",
-                  "width": "12px",
-                }
-              }
-            />
-            <span>
-              Myrna
-            </span>
-          </div>
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Bernier
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Bridget23@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          <div
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-              }
-            }
-          >
-            <div
-              data-css-79vgce=""
-            >
-              <div
-                aria-label="Darrell"
-                data-css-1h1qs66=""
-                style={
-                  Object {
-                    "backgroundColor": "#B28300",
-                  }
-                }
-              >
-                D
-              </div>
-            </div>
-            <div
-              style={
-                Object {
-                  "display": "inline-block",
-                  "width": "12px",
-                }
-              }
-            />
-            <span>
-              Darrell
-            </span>
-          </div>
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Stamm
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Bruce_Bartell@gmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="rowheader"
-          scope="row"
-        >
-          <div
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-              }
-            }
-          >
-            <div
-              data-css-79vgce=""
-            >
-              <div
-                aria-label="Damon"
-                data-css-1h1qs66=""
-                style={
-                  Object {
-                    "backgroundColor": "#B28300",
-                  }
-                }
-              >
-                D
-              </div>
-            </div>
-            <div
-              style={
-                Object {
-                  "display": "inline-block",
-                  "width": "12px",
-                }
-              }
-            />
-            <span>
-              Damon
-            </span>
-          </div>
-        </th>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Goyette
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Luisa.Nader53@yahoo.com
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-`;
-
-exports[`Storyshots Components/Table Row Selection 1`] = `
-<div
-  data-css-f3t1g9=""
->
-  <table
-    data-css-bfreby=""
-    role="grid"
-  >
-    <thead
-      data-css-1ts1rl3=""
-    >
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1cfeqew=""
-              >
-                <svg
-                  aria-label="Indeterminate Mark"
-                  data-css-ey6g07=""
-                  role="img"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    height="2"
-                    width="10"
-                    x="3"
-                    y="7"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </th>
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          First name
-        </th>
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          Last name
-        </th>
-        <th
-          data-css-1c7qoga=""
-          role="columnheader"
-          scope="col"
-        >
-          Email
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Ignacio
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Swift
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Hans.Marquardt@yahoo.com
-        </td>
-      </tr>
-      <tr
-        data-css-6ii6jh=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={true}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1cfeqew=""
-              >
-                <svg
-                  aria-label="Checkmark"
-                  data-css-ey6g07=""
-                  role="img"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polygon
-                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Edwina
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Predovic
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Damaris_Wilderman@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Devante
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Schuppe
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Kris_Parker@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Skylar
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Greenholt
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Gust.Hodkiewicz@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-6ii6jh=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={true}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1cfeqew=""
-              >
-                <svg
-                  aria-label="Checkmark"
-                  data-css-ey6g07=""
-                  role="img"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polygon
-                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Era
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Dooley
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Schuyler_MacGyver50@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Delmer
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Schaefer
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Mathilde2@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Liliane
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Heaney
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Fabian_Reichel@gmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-6ii6jh=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={true}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1cfeqew=""
-              >
-                <svg
-                  aria-label="Checkmark"
-                  data-css-ey6g07=""
-                  role="img"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <polygon
-                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Noemy
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Baumbach
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Jerrell.Hackett@hotmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Alexandrea
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Haley
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Wilson.Jakubowski@gmail.com
-        </td>
-      </tr>
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          <label
-            data-css-kn3wr0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <div
-              data-css-1ij5lym=""
-            >
-              <input
-                checked={false}
-                data-css-6wu9td=""
-                readOnly={true}
-                type="checkbox"
-              />
-              <div
-                data-css-1lxtjk6=""
-              />
-            </div>
-            <div
-              data-css-ybwuvp=""
-            />
-          </label>
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Constance
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Kutch
-        </td>
-        <td
-          data-css-nyp2vl=""
-          role="gridcell"
-        >
-          Coy87@hotmail.com
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-`;
-
-exports[`Storyshots Components/Table Sorting 1`] = `
-<div
-  data-css-f3t1g9=""
->
-  <table
-    aria-labelledby="test-caption-id"
-    data-css-bfreby=""
-    role="grid"
-  >
-    <caption
-      aria-live="polite"
-      id="test-caption-id"
-    >
-      <div
-        data-css-6wu9td=""
-      >
-        Mock table title: Not sorted
-      </div>
-    </caption>
-    <thead
-      data-css-1ts1rl3=""
-    >
-      <tr
-        data-css-1eccb7b=""
-        role="row"
-      >
-        <th
-          aria-label="First name: No sort applied"
-          aria-sort="none"
-          data-css-m2a81v=""
-          data-header-id="h-first-name"
-          onClick={[Function]}
-          onKeyUp={[Function]}
-          role="columnheader"
-          scope="col"
-          tabIndex={0}
-          title="First name"
-        >
-          First name
-          <div
-            aria-hidden={true}
-            data-css-7dab2f=""
-            data-css-yaqq33=""
-          >
-            <svg
-              aria-label="sort icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
-              />
-            </svg>
+          <div>
+            First name
           </div>
         </th>
         <th
-          aria-label="Last name: No sort applied"
-          aria-sort="none"
-          data-css-m2a81v=""
-          data-header-id="h-last-name"
-          onClick={[Function]}
-          onKeyUp={[Function]}
+          data-css-1whnigc=""
           role="columnheader"
           scope="col"
-          tabIndex={0}
-          title="Last name"
         >
-          Last name
-          <div
-            aria-hidden={true}
-            data-css-7dab2f=""
-            data-css-yaqq33=""
-          >
-            <svg
-              aria-label="sort icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
-              />
-            </svg>
+          <div>
+            Last name
           </div>
         </th>
         <th
-          aria-label="Email: No sort applied"
-          aria-sort="none"
-          data-css-m2a81v=""
-          data-header-id="h-email"
-          onClick={[Function]}
-          onKeyUp={[Function]}
+          data-css-1whnigc=""
           role="columnheader"
           scope="col"
-          tabIndex={0}
-          title="Email"
         >
-          Email
-          <div
-            aria-hidden={true}
-            data-css-7dab2f=""
-            data-css-yaqq33=""
-          >
-            <svg
-              aria-label="sort icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
-              />
-            </svg>
+          <div>
+            Email
           </div>
         </th>
       </tr>
     </thead>
     <tbody>
       <tr
-        data-css-1eccb7b=""
+        data-css-nr5oo2=""
         role="row"
       >
         <th
-          data-css-1c7qoga=""
+          data-css-1whnigc=""
           role="rowheader"
           scope="row"
-          title="First name"
         >
-          Jorge
+          <div>
+            Jorge
+          </div>
         </th>
         <td
           data-css-nyp2vl=""
@@ -1429,12 +251,2277 @@ exports[`Storyshots Components/Table Sorting 1`] = `
           Silas.Will@gmail.com
         </td>
       </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Enrico
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          VonRueden
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Helen_Schmeler@yahoo.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Brittany
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Leuschke
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Yasmeen49@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Eva
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Jacobs
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Birdie0@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Erich
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Dach
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Hubert_Welch@yahoo.com
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
 `;
 
-exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
+exports[`Storyshots Components/Table Mixed Content 1`] = `
+<div
+  data-css-f3t1g9=""
+>
+  <table
+    data-css-w7hohw=""
+    role="grid"
+  >
+    <thead
+      data-css-131nlok=""
+    >
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            First name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Last name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Email
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                }
+              }
+            >
+              <div
+                data-css-79vgce=""
+              >
+                <div
+                  aria-label="Baron"
+                  data-css-1osvuqz=""
+                  style={
+                    Object {
+                      "backgroundColor": "#7048C6",
+                    }
+                  }
+                >
+                  B
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "12px",
+                  }
+                }
+              />
+              <span>
+                Baron
+              </span>
+            </div>
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Beer
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Derrick_Raynor@yahoo.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                }
+              }
+            >
+              <div
+                data-css-79vgce=""
+              >
+                <div
+                  aria-label="Ignacio"
+                  data-css-1osvuqz=""
+                  style={
+                    Object {
+                      "backgroundColor": "#D1487B",
+                    }
+                  }
+                >
+                  I
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "12px",
+                  }
+                }
+              />
+              <span>
+                Ignacio
+              </span>
+            </div>
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Swift
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Hans.Marquardt@yahoo.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                }
+              }
+            >
+              <div
+                data-css-79vgce=""
+              >
+                <div
+                  aria-label="Edwina"
+                  data-css-1osvuqz=""
+                  style={
+                    Object {
+                      "backgroundColor": "#009380",
+                    }
+                  }
+                >
+                  E
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "12px",
+                  }
+                }
+              />
+              <span>
+                Edwina
+              </span>
+            </div>
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Predovic
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Damaris_Wilderman@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                }
+              }
+            >
+              <div
+                data-css-79vgce=""
+              >
+                <div
+                  aria-label="Devante"
+                  data-css-1osvuqz=""
+                  style={
+                    Object {
+                      "backgroundColor": "#CB670B",
+                    }
+                  }
+                >
+                  D
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "12px",
+                  }
+                }
+              />
+              <span>
+                Devante
+              </span>
+            </div>
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Schuppe
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Kris_Parker@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                }
+              }
+            >
+              <div
+                data-css-79vgce=""
+              >
+                <div
+                  aria-label="Skylar"
+                  data-css-1osvuqz=""
+                  style={
+                    Object {
+                      "backgroundColor": "#CB670B",
+                    }
+                  }
+                >
+                  S
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "12px",
+                  }
+                }
+              />
+              <span>
+                Skylar
+              </span>
+            </div>
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Greenholt
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Gust.Hodkiewicz@hotmail.com
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Components/Table Row Selection 1`] = `
+<div
+  data-css-f3t1g9=""
+>
+  <table
+    data-css-w7hohw=""
+    role="grid"
+  >
+    <thead
+      data-css-131nlok=""
+    >
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            <label
+              data-css-kn3wr0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                data-css-1ij5lym=""
+              >
+                <input
+                  data-css-6wu9td=""
+                  readOnly={true}
+                  type="checkbox"
+                />
+                <div
+                  data-css-1cfeqew=""
+                >
+                  <svg
+                    aria-label="Indeterminate Mark"
+                    data-css-1m8h1an=""
+                    role="img"
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      height="2"
+                      width="10"
+                      x="3"
+                      y="7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-css-55isdw=""
+              />
+            </label>
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            First name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Last name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Email
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Delphine
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Huel
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Forest_Lind@yahoo.com
+        </td>
+      </tr>
+      <tr
+        data-css-pf8cc5=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={true}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1cfeqew=""
+              >
+                <svg
+                  aria-label="Checkmark"
+                  data-css-1m8h1an=""
+                  role="img"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Brittany
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Hirthe
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Efrain_Gerhold71@gmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Geovany
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Franecki
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Nathanael.Wolff9@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Ena
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Boyle
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Luna.Christiansen@gmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-pf8cc5=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={true}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1cfeqew=""
+              >
+                <svg
+                  aria-label="Checkmark"
+                  data-css-1m8h1an=""
+                  role="img"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Emil
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Willms
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Lura_Pouros95@gmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Monique
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Reilly
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Rhoda_Botsford43@gmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Araceli
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Huels
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Hailey33@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-pf8cc5=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={true}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1cfeqew=""
+              >
+                <svg
+                  aria-label="Checkmark"
+                  data-css-1m8h1an=""
+                  role="img"
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Nathan
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Becker
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Thad33@yahoo.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Maximillian
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          McKenzie
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Julius87@hotmail.com
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <label
+            data-css-kn3wr0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              data-css-1ij5lym=""
+            >
+              <input
+                checked={false}
+                data-css-6wu9td=""
+                readOnly={true}
+                type="checkbox"
+              />
+              <div
+                data-css-1lxtjk6=""
+              />
+            </div>
+            <div
+              data-css-55isdw=""
+            />
+          </label>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Brad
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Lang
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Flavio.Morar82@gmail.com
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Components/Table Sorting 1`] = `
+<div
+  data-css-f3t1g9=""
+>
+  <table
+    aria-labelledby="test-caption-id"
+    data-css-w7hohw=""
+    role="grid"
+  >
+    <caption
+      aria-live="polite"
+      id="test-caption-id"
+    >
+      <div
+        data-css-6wu9td=""
+      >
+        Mock table title: Not sorted
+      </div>
+    </caption>
+    <thead
+      data-css-131nlok=""
+    >
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          aria-label="First name: No sort applied"
+          aria-sort="none"
+          data-css-1xaywgm=""
+          data-header-id="h-first-name"
+          onClick={[Function]}
+          onKeyUp={[Function]}
+          role="columnheader"
+          scope="col"
+          tabIndex={0}
+          title="First name"
+        >
+          <div>
+            First name
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+              data-css-yaqq33=""
+            >
+              <svg
+                aria-label="sort icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th
+          aria-label="Last name: No sort applied"
+          aria-sort="none"
+          data-css-1xaywgm=""
+          data-header-id="h-last-name"
+          onClick={[Function]}
+          onKeyUp={[Function]}
+          role="columnheader"
+          scope="col"
+          tabIndex={0}
+          title="Last name"
+        >
+          <div>
+            Last name
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+              data-css-yaqq33=""
+            >
+              <svg
+                aria-label="sort icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th
+          aria-label="Email: No sort applied"
+          aria-sort="none"
+          data-css-1xaywgm=""
+          data-header-id="h-email"
+          onClick={[Function]}
+          onKeyUp={[Function]}
+          role="columnheader"
+          scope="col"
+          tabIndex={0}
+          title="Email"
+        >
+          <div>
+            Email
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+              data-css-yaqq33=""
+            >
+              <svg
+                aria-label="sort icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.646 5.354a.5.5 0 01.708 0l4.292 4.292a.5.5 0 010 .708l-.703.703a.5.5 0 01-.707 0L12 7.83l-3.236 3.227a.5.5 0 01-.707 0l-.703-.703a.5.5 0 010-.708l4.292-4.292zm0 13.292l-4.292-4.292a.5.5 0 010-.708l.703-.703a.5.5 0 01.707 0L12 16.17l3.236-3.227a.5.5 0 01.707 0l.703.703a.5.5 0 010 .708l-4.292 4.292a.5.5 0 01-.708 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="rowheader"
+          scope="row"
+          title="First name"
+        >
+          <div>
+            Era
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Dooley
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Schuyler_MacGyver50@hotmail.com
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
+<div
+  data-css-f3t1g9=""
+>
+  <table
+    data-css-w7hohw=""
+    role="grid"
+  >
+    <thead
+      data-css-131nlok=""
+    >
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        />
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            First name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Last name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Email
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Adolphus
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Donnelly
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Braulio_Rempel33@hotmail.com
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        />
+        <td
+          colSpan={3}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Krystal
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          MacGyver
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Kacey7@yahoo.com
+        </td>
+      </tr>
+      <tr
+        aria-hidden={false}
+        data-css-glcvea=""
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        />
+        <td
+          colSpan={3}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Aglae
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Greenholt
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Vivianne.Johnson79@hotmail.com
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        />
+        <td
+          colSpan={3}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Vladimir
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          White
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Beaulah_Douglas@yahoo.com
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        />
+        <td
+          colSpan={3}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Hillard
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Bauch
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Michelle_OConnell58@hotmail.com
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        />
+        <td
+          colSpan={3}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
+<div
+  data-css-f3t1g9=""
+>
+  <table
+    data-css-w7hohw=""
+    role="grid"
+  >
+    <thead
+      data-css-131nlok=""
+    >
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            First name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Last name
+          </div>
+        </th>
+        <th
+          data-css-1whnigc=""
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Email
+          </div>
+        </th>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Darien
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Romaguera
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Kathryn91@gmail.com
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          colSpan={4}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Libby
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Treutel
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Rogelio.Kuhic@hotmail.com
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        aria-hidden={false}
+        data-css-glcvea=""
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          colSpan={4}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Myrna
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Bernier
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Bridget23@yahoo.com
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          colSpan={4}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Darrell
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Stamm
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Bruce_Bartell@gmail.com
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          colSpan={4}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr
+        data-css-nr5oo2=""
+        role="row"
+      >
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Damon
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Goyette
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          Luisa.Nader53@yahoo.com
+        </td>
+        <td
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <button
+            data-css-ut0avc=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title="Expand/Collapse additional content"
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-1gzzcm2=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </td>
+      </tr>
+      <tr
+        aria-hidden={true}
+        data-css-e862eu=""
+        data-css-glcvea=""
+        role="row"
+      >
+        <td
+          colSpan={4}
+          data-css-1hk2tgq=""
+          data-css-nyp2vl=""
+          role="gridcell"
+        >
+          <div
+            data-css-16cxc22=""
+          >
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "height": 100,
+                  "justifyContent": "center",
+                  "margin": 2,
+                  "outline": "2px dashed pink",
+                  "padding": 20,
+                }
+              }
+            >
+              Drawer Content
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
 <div
   style={
     Object {
@@ -1453,14 +2540,14 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
     tabIndex={0}
   >
     <table
-      data-css-bfreby=""
+      data-css-w7hohw=""
       role="grid"
     >
       <thead
-        data-css-1ts1rl3=""
+        data-css-131nlok=""
       >
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <td
@@ -1485,1883 +2572,97 @@ exports[`Storyshots Components/Table/layouts Horizontal Scroll 1`] = `
                 />
               </div>
               <div
-                data-css-ybwuvp=""
+                data-css-55isdw=""
               />
             </label>
           </td>
           <th
-            data-css-1c7qoga=""
+            data-css-1whnigc=""
             role="columnheader"
             scope="col"
             title="Full name"
           >
-            Full name
+            <div>
+              Full name
+            </div>
           </th>
           <th
-            data-css-1c7qoga=""
+            data-css-1whnigc=""
             role="columnheader"
             scope="col"
             title="First name"
           >
-            First name
+            <div>
+              First name
+            </div>
           </th>
           <th
-            data-css-1c7qoga=""
+            data-css-1whnigc=""
             role="columnheader"
             scope="col"
             title="Last name"
           >
-            Last name
+            <div>
+              Last name
+            </div>
           </th>
           <th
-            data-css-1c7qoga=""
+            data-css-1whnigc=""
             role="columnheader"
             scope="col"
             title="Email"
           >
-            Email
+            <div>
+              Email
+            </div>
           </th>
         </tr>
       </thead>
       <tbody>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
+            data-css-1whnigc=""
             role="columnheader"
             scope="row"
           >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
               >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
                 <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-            title="Full name"
-          >
-            Delphine
-             
-            Huel
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Delphine
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Huel
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Forest_Lind@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
                 <div
-                  data-css-1lxtjk6=""
+                  data-css-55isdw=""
                 />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
+              </label>
+            </div>
           </th>
           <th
-            data-css-1c7qoga=""
+            data-css-1whnigc=""
             role="columnheader"
             scope="row"
             title="Full name"
           >
-            Brittany
-             
-            Hirthe
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Brittany
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Hirthe
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Efrain_Gerhold71@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-            title="Full name"
-          >
-            Geovany
-             
-            Franecki
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Geovany
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Franecki
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Nathanael.Wolff9@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-            title="Full name"
-          >
-            Ena
-             
-            Boyle
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Ena
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Boyle
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Luna.Christiansen@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-            title="Full name"
-          >
-            Emil
-             
-            Willms
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Emil
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Willms
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Lura_Pouros95@gmail.com
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Table/layouts Sticky Column And Row Headers 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "height": 500,
-      "justifyContent": "center",
-      "outline": "2px dashed pink",
-      "padding": 20,
-      "width": 500,
-    }
-  }
->
-  <div
-    data-css-1f123cr=""
-    role="region"
-    tabIndex={0}
-  >
-    <table
-      data-css-bfreby=""
-      role="grid"
-    >
-      <thead
-        data-css-1ts1rl3=""
-      >
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-            style={
-              Object {
-                "width": 1,
-              }
-            }
-            title="Selection"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            Full name
-          </th>
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            First name
-          </th>
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            Last name
-          </th>
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            Email
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Eric
-             
-            Gerlach
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Eric
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Gerlach
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Earnest_Wiza@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Amber
-             
-            DuBuque
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Amber
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            DuBuque
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Adam.Aufderhar@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Merritt
-             
-            Kohler
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Merritt
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Kohler
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Junius.Torphy@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Estrella
-             
-            Green
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Estrella
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Green
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Gerhard_Spencer@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Troy
-             
-            Grady
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Troy
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Grady
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Aliza.Heller@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Nona
-             
-            Bergstrom
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Nona
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Bergstrom
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Adelbert50@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Brown
-             
-            Schuster
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Brown
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Schuster
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Caterina18@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Neal
-             
-            Rath
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Neal
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Rath
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Name_Marquardt58@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Electa
-             
-            Schoen
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Electa
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Schoen
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Vincenza.Gleason78@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Forrest
-             
-            Farrell
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Forrest
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Farrell
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Cortez56@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Robert
-             
-            Connelly
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Robert
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Connelly
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Rafaela_Grimes@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Benedict
-             
-            Dibbert
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Benedict
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Dibbert
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Elton73@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Kristopher
-             
-            Hayes
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Kristopher
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Hayes
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Gloria_Moen@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Camden
-             
-            Kutch
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Camden
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Kutch
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Eleanora_Wolff47@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Abdul
-             
-            Rowe
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Abdul
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Rowe
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Mae.Tremblay32@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Dagmar
-             
-            VonRueden
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Dagmar
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            VonRueden
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Virginie_Wunsch@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Maryse
-             
-            Moen
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Maryse
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Moen
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Jodie.Nitzsche@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Deonte
-             
-            Heaney
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Deonte
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Heaney
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Adolf_Klein25@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Arvilla
-             
-            Quigley
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Arvilla
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Quigley
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Alexandre87@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-            title="Full name"
-          >
-            Eldon
-             
-            Pouros
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Eldon
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Pouros
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Danielle76@gmail.com
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "height": 500,
-      "justifyContent": "center",
-      "outline": "2px dashed pink",
-      "padding": 20,
-    }
-  }
->
-  <div
-    data-css-1f123cr=""
-    role="region"
-    tabIndex={0}
-  >
-    <table
-      data-css-bfreby=""
-      role="grid"
-    >
-      <thead
-        data-css-1ts1rl3=""
-      >
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            Full name
-          </th>
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            First name
-          </th>
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            Last name
-          </th>
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="col"
-          >
-            Email
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Monique
-             
-            Reilly
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Monique
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Reilly
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Rhoda_Botsford43@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Araceli
-             
-            Huels
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Araceli
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Huels
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Hailey33@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Nathan
-             
-            Becker
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Nathan
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Becker
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Thad33@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Maximillian
-             
-            McKenzie
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Maximillian
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            McKenzie
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Julius87@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Brad
-             
-            Lang
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Brad
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Lang
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Flavio.Morar82@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Frederick
-             
-            Lindgren
+            <div>
+              Frederick
+               
+              Lindgren
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3383,17 +2684,49 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
-            role="rowheader"
+            data-css-1whnigc=""
+            role="columnheader"
             scope="row"
           >
-            Gerard
-             
-            Frami
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+            title="Full name"
+          >
+            <div>
+              Gerard
+               
+              Frami
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3415,17 +2748,49 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
-            role="rowheader"
+            data-css-1whnigc=""
+            role="columnheader"
             scope="row"
           >
-            Virgie
-             
-            Satterfield
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+            title="Full name"
+          >
+            <div>
+              Virgie
+               
+              Satterfield
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3447,17 +2812,49 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
-            role="rowheader"
+            data-css-1whnigc=""
+            role="columnheader"
             scope="row"
           >
-            Eino
-             
-            Homenick
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+            title="Full name"
+          >
+            <div>
+              Eino
+               
+              Homenick
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3479,17 +2876,49 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
-            role="rowheader"
+            data-css-1whnigc=""
+            role="columnheader"
             scope="row"
           >
-            Luella
-             
-            Kirlin
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+            title="Full name"
+          >
+            <div>
+              Luella
+               
+              Kirlin
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3510,18 +2939,158 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
             Addison_Bins@hotmail.com
           </td>
         </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+      "outline": "2px dashed pink",
+      "padding": 20,
+      "width": 500,
+    }
+  }
+>
+  <div
+    data-css-1f123cr=""
+    role="region"
+    tabIndex={0}
+  >
+    <table
+      data-css-w7hohw=""
+      role="grid"
+    >
+      <thead
+        data-css-131nlok=""
+      >
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
+            data-css-w2kyr1=""
+            role="columnheader"
+            scope="row"
+            style={
+              Object {
+                "width": 1,
+              }
+            }
+            title="Selection"
+          >
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+          >
+            <div>
+              Full name
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+          >
+            <div>
+              First name
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+          >
+            <div>
+              Last name
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="columnheader"
+            scope="row"
+          >
+            <div>
+              Email
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          data-css-nr5oo2=""
+          role="row"
+        >
+          <th
+            data-css-w2kyr1=""
             role="rowheader"
             scope="row"
           >
-            Otilia
-             
-            Collins
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="rowheader"
+            scope="row"
+          >
+            <div>
+              Otilia
+               
+              Collins
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3543,17 +3112,48 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
+            data-css-w2kyr1=""
             role="rowheader"
             scope="row"
           >
-            Baby
-             
-            Mayert
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="rowheader"
+            scope="row"
+          >
+            <div>
+              Baby
+               
+              Mayert
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3575,17 +3175,48 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
+            data-css-w2kyr1=""
             role="rowheader"
             scope="row"
           >
-            Aisha
-             
-            VonRueden
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="rowheader"
+            scope="row"
+          >
+            <div>
+              Aisha
+               
+              VonRueden
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3607,17 +3238,48 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
+            data-css-w2kyr1=""
             role="rowheader"
             scope="row"
           >
-            Lynn
-             
-            Runolfsdottir
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="rowheader"
+            scope="row"
+          >
+            <div>
+              Lynn
+               
+              Runolfsdottir
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3639,17 +3301,48 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
           </td>
         </tr>
         <tr
-          data-css-1eccb7b=""
+          data-css-nr5oo2=""
           role="row"
         >
           <th
-            data-css-1c7qoga=""
+            data-css-w2kyr1=""
             role="rowheader"
             scope="row"
           >
-            Viva
-             
-            Sipes
+            <div>
+              <label
+                data-css-kn3wr0=""
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  data-css-1ij5lym=""
+                >
+                  <input
+                    data-css-6wu9td=""
+                    readOnly={true}
+                    type="checkbox"
+                  />
+                  <div
+                    data-css-1lxtjk6=""
+                  />
+                </div>
+                <div
+                  data-css-55isdw=""
+                />
+              </label>
+            </div>
+          </th>
+          <th
+            data-css-1whnigc=""
+            role="rowheader"
+            scope="row"
+          >
+            <div>
+              Viva
+               
+              Sipes
+            </div>
           </th>
           <td
             data-css-nyp2vl=""
@@ -3668,560 +3361,6 @@ exports[`Storyshots Components/Table/layouts Sticky Column Header 1`] = `
             role="gridcell"
           >
             Haven2@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Hollis
-             
-            Johns
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Hollis
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Johns
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Serena_Hamill@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Tianna
-             
-            Gislason
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Tianna
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Gislason
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Leone.Turcotte67@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Elza
-             
-            Hegmann
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Elza
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Hegmann
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Leila_Nolan94@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Virgie
-             
-            Fay
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Virgie
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Fay
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Annabell.Stracke71@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Lempi
-             
-            Emmerich
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Lempi
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Emmerich
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Nicola46@gmail.com
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Table/layouts Sticky Row Header 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "justifyContent": "center",
-      "outline": "2px dashed pink",
-      "padding": 20,
-      "width": 500,
-    }
-  }
->
-  <div
-    data-css-1f123cr=""
-    role="region"
-    tabIndex={0}
-  >
-    <table
-      data-css-bfreby=""
-      role="grid"
-    >
-      <thead
-        data-css-1ts1rl3=""
-      >
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="columnheader"
-            scope="row"
-            style={
-              Object {
-                "width": 1,
-              }
-            }
-            title="Selection"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            Full name
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            First name
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            Last name
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="columnheader"
-            scope="row"
-          >
-            Email
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Annabelle
-             
-            Stokes
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Annabelle
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Stokes
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Zackery.Lind@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Donna
-             
-            Morar
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Donna
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Morar
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Quinton.Rippin@yahoo.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Kiana
-             
-            Grimes
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Kiana
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Grimes
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Wilhelm_Batz@hotmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Kaelyn
-             
-            Corwin
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Kaelyn
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Corwin
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Kiley_Sipes17@gmail.com
-          </td>
-        </tr>
-        <tr
-          data-css-1eccb7b=""
-          role="row"
-        >
-          <th
-            data-css-c4j9jh=""
-            role="rowheader"
-            scope="row"
-          >
-            <label
-              data-css-kn3wr0=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <div
-                data-css-1ij5lym=""
-              >
-                <input
-                  data-css-6wu9td=""
-                  readOnly={true}
-                  type="checkbox"
-                />
-                <div
-                  data-css-1lxtjk6=""
-                />
-              </div>
-              <div
-                data-css-ybwuvp=""
-              />
-            </label>
-          </th>
-          <th
-            data-css-1c7qoga=""
-            role="rowheader"
-            scope="row"
-          >
-            Jadon
-             
-            Koch
-          </th>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Jadon
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Koch
-          </td>
-          <td
-            data-css-nyp2vl=""
-            role="gridcell"
-          >
-            Ned73@gmail.com
           </td>
         </tr>
       </tbody>

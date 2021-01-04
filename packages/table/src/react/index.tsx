@@ -1,3 +1,4 @@
+import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import {
   SortAscIcon,
   SortDescIcon,
@@ -80,16 +81,20 @@ const styles = {
       opts.selected &&
         css(stylesheet[`.psds-table__row--selected${themeClass}`])
     )
-  }
+  },
+  drawer: () => css(stylesheet['.psds-table__drawer']),
+  drawerCell: () => css(stylesheet['.psds-table__drawer__cell']),
+  drawerInner: () => css(stylesheet['.psds-table__drawer__inner'])
 }
 
 interface TableProps extends HTMLPropsFor<'table'> {
-  renderContainer?: (props: unknown) => React.ReactElement
+  renderContainer?: typeof defaultRenderContainer
   scrollable?: boolean
 }
 interface TableStatics {
   Body: typeof TableBody
   Cell: typeof TableCell
+  Drawer: typeof TableDrawer
   Head: typeof TableHead
   Header: typeof TableHeader
   Row: typeof TableRow
@@ -99,14 +104,18 @@ type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
 const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   const {
-    renderContainer: Container = defaultRenderContainer,
+    renderContainer = defaultRenderContainer,
     scrollable = false,
     ...rest
   } = props
   const themeName = useTheme()
 
+  const containerRef = React.useRef<HTMLDivElement>(null)
+  const Container = React.useMemo(() => renderContainer, [renderContainer])
+
   return (
     <Container
+      ref={containerRef}
       {...styles.container(themeName, { scrollable })}
       {...(scrollable && { role: 'region', tabIndex: 0 })}
     >
@@ -115,7 +124,9 @@ const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   )
 }) as TableComponent
 
-const defaultRenderContainer: React.FC = props => <div {...props} />
+const defaultRenderContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+  (props, ref) => <div ref={ref} {...props} />
+)
 
 const TableBody = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'tbody'>>(
   (props, ref) => {
@@ -212,8 +223,10 @@ const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
         })}
         {...rest}
       >
-        {children}
-        {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
+        <div>
+          {children}
+          {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
+        </div>
       </th>
     )
   }
@@ -241,11 +254,51 @@ const TableRow = forwardRef<HTMLTableRowElement, TableRowProps>(
 )
 TableRow.displayName = 'Table.Row'
 
+interface TableDrawerProps extends Omit<HTMLPropsFor<'tr'>, 'ref'> {
+  expanded: boolean
+  colSpan: number
+  indentWithCell?: boolean
+}
+const TableDrawer = forwardRef<HTMLTableRowElement, TableDrawerProps>(
+  (props, ref) => {
+    const {
+      expanded,
+      colSpan,
+      children,
+      indentWithCell = true,
+      ...rest
+    } = props
+    const { 'aria-hidden': ariaHidden, ref: inner } = useCollapsible(expanded)
+
+    const cSpan = indentWithCell ? colSpan - 1 : colSpan
+
+    return (
+      <TableRow
+        aria-hidden={ariaHidden}
+        expanded={expanded}
+        ref={ref}
+        {...styles.drawer()}
+        {...rest}
+      >
+        {indentWithCell && <TableCell {...styles.drawerCell()} />}
+
+        <TableCell colSpan={cSpan} {...styles.drawerCell()}>
+          <div ref={inner} {...styles.drawerInner()}>
+            {children}
+          </div>
+        </TableCell>
+      </TableRow>
+    )
+  }
+)
+TableDrawer.displayName = 'Table.Drawer'
+
 Table.Body = TableBody
 Table.Cell = TableCell
 Table.Head = TableHead
 Table.Header = TableHeader
 Table.Row = TableRow
+Table.Drawer = TableDrawer
 
 Table.alignments = alignments
 

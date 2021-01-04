@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.1.1...@pluralsight/ps-design-system-table@11.2.0) (2020-12-17)
+
+
+### Features
+
+* **table:** add intersection observer feat detection ([0116b70](https://github.com/pluralsight/design-system/commit/0116b70855157de7315c8a7b86acc34451feb54f))
+* **table:** sticky headers ([d49a231](https://github.com/pluralsight/design-system/commit/d49a231f0317b2ae2269163162eda6af018e88f1))
+* **table:** update sticky positioning for resize/scroll events ([a930760](https://github.com/pluralsight/design-system/commit/a93076027cd850c3bb2555f90902bb7624d90bcd))
+
+
+
+
+
+## [11.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.1.0...@pluralsight/ps-design-system-table@11.1.1) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.0.4...@pluralsight/ps-design-system-table@11.1.0) (2020-12-16)
+
+
+### Features
+
+* **table:** add vert padding to drawers ([7a47282](https://github.com/pluralsight/design-system/commit/7a472821c2f11a3d4f57e331c9e704bae6050f59))
+* **table:** drawers ([3605c72](https://github.com/pluralsight/design-system/commit/3605c72721cf70d56d31220e4f11f44f05273d20))
+
+
+
+
+
+## [11.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.0.3...@pluralsight/ps-design-system-table@11.0.4) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [11.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.0.2...@pluralsight/ps-design-system-table@11.0.3) (2020-12-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.0.1...@pluralsight/ps-design-system-table@11.0.2) (2020-12-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.0.0...@pluralsight/ps-design-system-table@11.0.1) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@10.0.5...@pluralsight/ps-design-system-table@11.0.0) (2020-12-11)
 
 

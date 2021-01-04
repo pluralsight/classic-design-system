@@ -68,6 +68,10 @@ export default {
       transform: 'scale(0.98)'
     }
   },
+  [`.psds-button--layout-${vars.layouts.fullWidth}`]: {
+    display: 'flex',
+    width: '100%'
+  },
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
     fontSize: type.fontSizeXSmall,
     padding: `0 ${layout.spacingXSmall}`,

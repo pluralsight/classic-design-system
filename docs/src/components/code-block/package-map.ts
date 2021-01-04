@@ -41,9 +41,10 @@ import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import StarRating from '@pluralsight/ps-design-system-starrating'
+import Steps from '@pluralsight/ps-design-system-steps'
 import Switch from '@pluralsight/ps-design-system-switch'
 import Tab from '@pluralsight/ps-design-system-tab'
-import Table from '@pluralsight/ps-design-system-table'
+import Table, { StickyContainer } from '@pluralsight/ps-design-system-table'
 import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
 import TextArea from '@pluralsight/ps-design-system-textarea'
@@ -117,9 +118,10 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-scrollable': { Scrollable },
   '@pluralsight/ps-design-system-searchinput': { SearchInput },
   '@pluralsight/ps-design-system-starrating': { StarRating },
+  '@pluralsight/ps-design-system-steps': { Steps },
   '@pluralsight/ps-design-system-switch': { Switch },
   '@pluralsight/ps-design-system-tab': { Tab },
-  '@pluralsight/ps-design-system-table': { Table },
+  '@pluralsight/ps-design-system-table': { Table, StickyContainer },
   '@pluralsight/ps-design-system-tag': { Tag },
   '@pluralsight/ps-design-system-text': { ...omit(Text, ['default']) },
   '@pluralsight/ps-design-system-textarea': { TextArea },

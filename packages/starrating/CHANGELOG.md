@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.3.12...@pluralsight/ps-design-system-starrating@7.3.13) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [7.3.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.3.11...@pluralsight/ps-design-system-starrating@7.3.12) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [7.3.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.3.10...@pluralsight/ps-design-system-starrating@7.3.11) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
+## [7.3.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.3.9...@pluralsight/ps-design-system-starrating@7.3.10) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
 ## [7.3.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.3.8...@pluralsight/ps-design-system-starrating@7.3.9) (2020-12-11)
 
 

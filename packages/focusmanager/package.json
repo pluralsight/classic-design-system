@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-focusmanager",
-  "version": "5.2.16",
+  "version": "5.2.20",
   "description": "FocusManager UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.2",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.17",
-    "@pluralsight/ps-design-system-text": "^17.0.4"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.21",
+    "@pluralsight/ps-design-system-text": "^17.0.8"
   }
 }

@@ -88,6 +88,347 @@ const HorzSpacer: React.FC = props => (
 export default Example
 ```
 
+### Table with drawers
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Button from '@pluralsight/ps-design-system-button'
+import { CaretDownIcon, CaretRightIcon, MoreIcon } from '@pluralsight/ps-design-system-icon'
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  const [users] = React.useState([
+    { id: '1', firstName: 'Lucy', lastName: 'Peck', email: 'lucy.peck@example.com' },
+    { id: '2', firstName: 'Jayden', lastName: 'Morales', email: 'jayden.morales@example.com' },
+    { id: '3', firstName: 'Milton', lastName: 'Lane', email: 'milton.lane@example.com' }
+  ])
+
+  const initialState = [users[1].id]
+  const [expandedIds, setExpandedIds] = React.useState(initialState)
+
+  const expand = (user: { id: string }) => {
+    const next = expandedIds.concat(user.id)
+    setExpandedIds(next)
+  }
+  const collapse = (user: { id: string }) => {
+    const next = expandedIds.filter(str => str !== user.id)
+    setExpandedIds(next)
+  }
+
+  return (
+    <Table>
+      <Table.Head>
+        <Table.Row>
+          <Table.Cell />
+          <Table.Header role="columnheader" scope="col">
+            First name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Last name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Email
+          </Table.Header>
+        </Table.Row>
+      </Table.Head>
+
+      <Table.Body>
+        {users.map((user, i) => {
+          const expanded = expandedIds.includes(user.id)
+          const toggle = expanded ? collapse : expand
+
+          return (
+            <React.Fragment key={i}>
+              <Table.Row>
+                <Table.Cell>
+                  <ExpandButton
+                    expanded={expanded}
+                    onClick={() => toggle(user)}
+                  />
+                </Table.Cell>
+                <Table.Cell>{user.firstName}</Table.Cell>
+                <Table.Cell>{user.lastName}</Table.Cell>
+                <Table.Cell>{user.email}</Table.Cell>
+              </Table.Row>
+
+              <Table.Drawer expanded={expanded} colSpan={4}>
+                <div>
+                  Drawer Content
+                </div>
+              </Table.Drawer>
+            </React.Fragment>
+          )
+        })}
+      </Table.Body>
+    </Table>
+  )
+}
+
+
+interface ExpandButtonProps extends React.ComponentProps<typeof Button> {
+  expanded: boolean
+}
+
+const ExpandButton: React.FC<ExpandButtonProps> = props => {
+  const {
+    appearance = 'flat',
+    expanded,
+    size = 'xSmall',
+    title = 'Expand/Collapse additional content',
+    ...rest
+  } = props
+
+  const icon = expanded ? <CaretDownIcon /> : <CaretRightIcon />
+
+  return (
+    <Button
+      appearance={appearance}
+      icon={icon}
+      size={size}
+      title={title}
+      {...rest}
+    />
+  )
+}
+
+const FlexContainer: React.FC = props => (
+  <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
+)
+
+const HorzSpacer: React.FC = props => (
+  <div
+    style={{
+      display: 'inline-block',
+      width: layout.spacingSmall
+    }}
+    {...props}
+  />
+)
+
+export default Example
+```
+
+### Sticky headers
+
+Column headers can be stuck relative to a scrollable container.
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  const [users] = React.useState([
+    { firstName: 'Lucy', lastName: 'Peck', email: 'lucy.peck@example.com' },
+    { firstName: 'Jayden', lastName: 'Morales', email: 'jayden.morales@example.com' },
+    { firstName: 'Milton', lastName: 'Lane', email: 'milton.lane@example.com' },
+    { firstName: 'Lucy', lastName: 'Peck', email: 'lucy.peck@example.com' },
+    { firstName: 'Jayden', lastName: 'Morales', email: 'jayden.morales@example.com' },
+    { firstName: 'Milton', lastName: 'Lane', email: 'milton.lane@example.com' }
+  ])
+
+  return (
+    <div style={{ height: 200 }}>
+      <Table scrollable>
+        <Table.Head>
+          <Table.Row>
+            <Table.Header role="columnheader" scope="col" sticky>
+              First name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="col" sticky>
+              Last name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="col" sticky>
+              Email
+            </Table.Header>
+          </Table.Row>
+        </Table.Head>
+
+        <Table.Body>
+          {users.map((user, i) => (
+            <Table.Row key={i}>
+              <Table.Header role="rowheader" scope="row">
+                <FlexContainer>
+                  <Avatar alt="avatar" name={user.firstName} size="xSmall" />
+                  <HorzSpacer />
+                  <span>{user.firstName}</span>
+                </FlexContainer>
+              </Table.Header>
+              <Table.Cell>{user.lastName}</Table.Cell>
+              <Table.Cell>{user.email}</Table.Cell>
+            </Table.Row>
+          ))}
+        </Table.Body>
+      </Table>
+    </div>
+  )
+}
+
+const FlexContainer: React.FC = props => (
+  <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
+)
+
+const HorzSpacer: React.FC = props => (
+  <div
+    style={{
+      display: 'inline-block',
+      width: layout.spacingSmall
+    }}
+    {...props}
+  />
+)
+
+export default Example
+```
+
+Row headers can also be stuck relative to a scrollable container.
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import Table from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  const [users] = React.useState([
+    { firstName: 'Lucy', lastName: 'Peck', email: 'lucy.peck@example.com' },
+    { firstName: 'Jayden', lastName: 'Morales', email: 'jayden.morales@example.com' },
+    { firstName: 'Milton', lastName: 'Lane', email: 'milton.lane@example.com' }
+  ])
+
+  return (
+    <div style={{ width: 250 }}>
+      <Table scrollable>
+        <Table.Head>
+          <Table.Row>
+            <Table.Cell />
+            <Table.Header role="columnheader" scope="col">
+              First name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="col">
+              Last name
+            </Table.Header>
+            <Table.Header role="columnheader" scope="col">
+              Email
+            </Table.Header>
+          </Table.Row>
+        </Table.Head>
+
+        <Table.Body>
+          {users.map((user, i) => (
+            <Table.Row key={i}>
+              <Table.Header role="rowheader" scope="row" sticky>
+                <Checkbox />
+              </Table.Header>
+              <Table.Header role="rowheader" scope="row">
+                <FlexContainer>
+                  <Avatar alt="avatar" name={user.firstName} size="xSmall" />
+                  <HorzSpacer />
+                  <span>{user.firstName}</span>
+                </FlexContainer>
+              </Table.Header>
+              <Table.Cell>{user.lastName}</Table.Cell>
+              <Table.Cell>{user.email}</Table.Cell>
+            </Table.Row>
+          ))}
+        </Table.Body>
+      </Table>
+    </div>
+  )
+}
+
+const FlexContainer: React.FC = props => (
+  <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
+)
+
+const HorzSpacer: React.FC = props => (
+  <div
+    style={{
+      display: 'inline-block',
+      width: layout.spacingSmall
+    }}
+    {...props}
+  />
+)
+
+export default Example
+```
+
+To position the sticky header relative to the viewport, the Design System
+exports a renderContainer component to track positioning and update the column
+headers accordingly.
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Avatar from '@pluralsight/ps-design-system-avatar'
+import Table, { StickyContainer } from '@pluralsight/ps-design-system-table'
+import React from 'react'
+
+const Example: React.FC = props => {
+  const [users] = React.useState([
+    { firstName: 'Lucy', lastName: 'Peck', email: 'lucy.peck@example.com' },
+    { firstName: 'Jayden', lastName: 'Morales', email: 'jayden.morales@example.com' },
+    { firstName: 'Milton', lastName: 'Lane', email: 'milton.lane@example.com' }
+  ])
+
+  return (
+    <Table renderContainer={StickyContainer}>
+      <Table.Head>
+        <Table.Row>
+          <Table.Header role="columnheader" scope="col" sticky>
+            First name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col" sticky>
+            Last name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col" sticky>
+            Email
+          </Table.Header>
+        </Table.Row>
+      </Table.Head>
+
+      <Table.Body>
+        {users.map((user, i) => (
+          <Table.Row key={i}>
+            <Table.Header role="rowheader" scope="row">
+              <FlexContainer>
+                <Avatar alt="avatar" name={user.firstName} size="xSmall" />
+                <HorzSpacer />
+                <span>{user.firstName}</span>
+              </FlexContainer>
+            </Table.Header>
+            <Table.Cell>{user.lastName}</Table.Cell>
+            <Table.Cell>{user.email}</Table.Cell>
+          </Table.Row>
+        ))}
+      </Table.Body>
+    </Table>
+  )
+}
+
+const FlexContainer: React.FC = props => (
+  <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
+)
+
+const HorzSpacer: React.FC = props => (
+  <div
+    style={{
+      display: 'inline-block',
+      width: layout.spacingSmall
+    }}
+    {...props}
+  />
+)
+
+export default Example
+```
+
+> NOTE: Sticky headers are an advanced feature and are expected to gracefully degrade in non evergreen/modern browsers.
+
 ## Usage with react-table
 
 The Design System aims to provide the UI building block necessary for great
@@ -896,7 +1237,6 @@ export default Example
   <TypesProp
     name="sticky"
     type="boolean"
-    desc="[experimental]: positions header relative to scroll container"
   />
   <TypesProp
     name="title"
@@ -911,13 +1251,11 @@ export default Example
   <TypesProp
     name="expanded"
     type="boolean"
-    desc="exapanded styling"
     default="false"
   />
   <TypesProp
     name="selected"
     type="boolean"
-    desc="selected styling"
     default="false"
   />
 </TypesTable>
