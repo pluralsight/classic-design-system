@@ -134,11 +134,11 @@ export default {
   '.psds-table__header': {
     label: 'table__header',
     padding: 0,
+    textAlign: 'left',
 
     '& > div': {
       fontWeight: type.fontWeightBold,
       padding: cellPadding,
-      textAlign: 'left',
       verticalAlign: 'bottom',
       whiteSpace: 'nowrap'
     }
