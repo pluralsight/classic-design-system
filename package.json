@@ -144,6 +144,7 @@
     "fork-ts-checker-webpack-plugin": "^6.0.5",
     "format-package": "^6.1.0",
     "husky": "^4.2.5",
+    "identity-obj-proxy": "^3.0.0",
     "import-all.macro": "^2.0.3",
     "jest": "^26.5.2",
     "jest-axe": "^4.0.0",

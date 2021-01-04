@@ -3,6 +3,10 @@ const path = require('path')
 module.exports = {
   coverageDirectory: '<rootDir>/coverage',
   coverageReporters: ['lcov'],
+  moduleNameMapper: {
+    '@pluralsight/ps-design-system-normalize': 'identity-obj-proxy',
+    '\\.(css)$': 'identity-obj-proxy'
+  },
   modulePathIgnorePatterns: ['<rootDir>/scripts/', '<rootDir>/.*/__mocks__'],
   rootDir: path.resolve(__dirname, '..'),
   setupFilesAfterEnv: [
