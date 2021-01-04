@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-actionmenu",
-  "version": "15.4.8",
+  "version": "15.4.9",
   "description": "Design System component for actionmenu ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,8 +22,8 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.7.1",
-    "@pluralsight/ps-design-system-icon": "^19.0.19",
-    "@pluralsight/ps-design-system-util": "^6.0.8"
+    "@pluralsight/ps-design-system-icon": "^19.0.20",
+    "@pluralsight/ps-design-system-util": "^6.0.9"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.2",
-    "@pluralsight/ps-design-system-position": "^5.0.19",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.21"
+    "@pluralsight/ps-design-system-position": "^5.0.20",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.22"
   }
 }

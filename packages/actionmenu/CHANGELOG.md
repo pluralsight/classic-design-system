@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.8...@pluralsight/ps-design-system-actionmenu@15.4.9) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
 ## [15.4.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.7...@pluralsight/ps-design-system-actionmenu@15.4.8) (2020-12-17)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

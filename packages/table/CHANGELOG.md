@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.2.0...@pluralsight/ps-design-system-table@11.2.1) (2021-01-04)
+
+
+### Bug Fixes
+
+* **table:** header alignment ([b019c37](https://github.com/pluralsight/design-system/commit/b019c37cddda0e75c2d86ff57941a9046bdd2fd4)), closes [#1535](https://github.com/pluralsight/design-system/issues/1535)
+
+
+
+
+
 # [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.1.1...@pluralsight/ps-design-system-table@11.2.0) (2020-12-17)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-util",
-  "version": "6.0.8",
+  "version": "6.0.9",
   "description": "Runtime dependencies for utilitarian tasks. Analogous to a lodash.",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
