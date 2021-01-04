@@ -51,11 +51,13 @@ export const Bar: React.FC<HTMLPropsFor<'div'>> = props => {
 }
 
 export const Button: React.FC = props => {
-  const { renderContainer: Container, selected } = useContext(Context)
+  const { renderContainer: Container, selected, rest } = useContext(Context)
 
   return (
     <Halo inline gapSize={Halo.gapSizes.small}>
-      <Container {...styles.button({ selected })}>{props.children}</Container>
+      <Container {...styles.button({ selected })} {...rest}>
+        {props.children}
+      </Container>
     </Halo>
   )
 }

@@ -18,6 +18,7 @@ export interface ContextValue {
   selected: boolean
   // eslint-disable-next-line camelcase
   UNSAFE_stylesFor?: Partial<Record<AllowedSelectors, CSSProperties>>
+  rest?: Record<string, unknown>
 }
 
 export const initialValue: ContextValue = {

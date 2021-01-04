@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions'
 import { colorsGradient } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import { storiesOf } from '@storybook/react'
@@ -84,6 +85,15 @@ Object.values(NavItem.alignments).forEach(alignment => {
     return <Story />
   })
 })
+
+stories.add('rest props', () => (
+  <>
+    <NavItem href="https://jaketrent.com">Link</NavItem>
+    <NavItem selected onClick={action('clicked')}>
+      Action
+    </NavItem>
+  </>
+))
 
 stories.add('styleFor', () => (
   <>
