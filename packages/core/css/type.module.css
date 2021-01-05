@@ -13,6 +13,69 @@
   --psTypeFontSizeSmall: 14px;
   --psTypeFontSizeXSmall: 12px;
 
+  /* heading */
+  --psTypeHeadingXLargeFontSize: 40px;
+  --psTypeHeadingXLargeLineHeight: 52px;
+  --psTypeHeadingXLargeLetterSpacing: -0.01em;
+  --psTypeHeadingXLargeFontWeight: 600;
+
+  --psTypeHeadingLargeFontSize: 34px;
+  --psTypeHeadingLargeLineHeight: 40px;
+  --psTypeHeadingLargeLetterSpacing: -0.01em;
+  --psTypeHeadingLargeFontWeight: 600;
+
+  --psTypeHeadingMediumFontSize: 24px;
+  --psTypeHeadingMediumLineHeight: 32px;
+  --psTypeHeadingMediumLetterSpacing: -0.01em;
+  --psTypeHeadingMediumFontWeight: 600;
+
+  --psTypeHeadingSmallFontSize: 20px;
+  --psTypeHeadingSmallLineHeight: 28px;
+  --psTypeHeadingSmallLetterSpacing: -0.01em;
+  --psTypeHeadingSmallFontWeight: 600;
+
+  --psTypeHeadingXSmallFontSize: 14px;
+  --psTypeHeadingXSmallLineHeight: 20px;
+  --psTypeHeadingXSmallLetterSpacing: 0.08em;
+  --psTypeHeadingXSmallFontWeight: 600;
+  --psTypeHeadingXSmallTextTransform: uppercase;
+
+  --psTypeHeadingXXSmallFontSize: 12px;
+  --psTypeHeadingXXSmallLineHeight: 16px;
+  --psTypeHeadingXXSmallLetterSpacing: 0.08em;
+  --psTypeHeadingXXSmallFontWeight: 600;
+  --psTypeHeadingXXSmallTextTransform: uppercase;
+
+  /* label */
+  --psTypeLabelLargeFontSize: 18px;
+  --psTypeLabelLargeLineHeight: 24px;
+  --psTypeLabelLargeLetterSpacing: 0.005em;
+
+  --psTypeLabelMediumFontSize: 16px;
+  --psTypeLabelMediumLineHeight: 20px;
+  --psTypeLabelMediumLetterSpacing: 0.01em;
+
+  --psTypeLabelSmallFontSize: 14px;
+  --psTypeLabelSmallLineHeight: 20px;
+  --psTypeLabelSmallLetterSpacing: 0.015em;
+
+  --psTypeLabelXSmallFontSize: 12px;
+  --psTypeLabelXSmallLineHeight: 16px;
+  --psTypeLabelXSmallLetterSpacing: 0.02em;
+
+  /* paragraph */
+  --psTypeParagraphLargeFontSize: 18px;
+  --psTypeParagraphLargeLineHeight: 28px;
+  --psTypeParagraphLargeLetterSpacing: 0.005em;
+
+  --psTypeParagraphMediumFontSize: 16px;
+  --psTypeParagraphMediumLineHeight: 24px;
+  --psTypeParagraphMediumLetterSpacing: 0.01em;
+
+  --psTypeParagraphSmallFontSize: 14px;
+  --psTypeParagraphSmallLineHeight: 24px;
+  --psTypeParagraphSmallLetterSpacing: 0.015em;
+
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
   --psTypeLetterSpacingJumbo: -0.72px;

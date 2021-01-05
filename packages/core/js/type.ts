@@ -13,6 +13,69 @@ export default {
   fontSizeSmall: '14px',
   fontSizeXSmall: '12px',
 
+  /* heading */
+  headingXLargeFontSize: '40px',
+  headingXLargeLineHeight: '52px',
+  headingXLargeLetterSpacing: '-0.01em',
+  headingXLargeFontWeight: '600',
+
+  headingLargeFontSize: '34px',
+  headingLargeLineHeight: '40px',
+  headingLargeLetterSpacing: '-0.01em',
+  headingLargeFontWeight: '600',
+
+  headingMediumFontSize: '24px',
+  headingMediumLineHeight: '32px',
+  headingMediumLetterSpacing: '-0.01em',
+  headingMediumFontWeight: '600',
+
+  headingSmallFontSize: '20px',
+  headingSmallLineHeight: '28px',
+  headingSmallLetterSpacing: '-0.01em',
+  headingSmallFontWeight: '600',
+
+  headingXSmallFontSize: '14px',
+  headingXSmallLineHeight: '20px',
+  headingXSmallLetterSpacing: '0.08em',
+  headingXSmallFontWeight: '600',
+  headingXSmallTextTransform: 'uppercase',
+
+  headingXXSmallFontSize: '12px',
+  headingXXSmallLineHeight: '16px',
+  headingXXSmallLetterSpacing: '0.08em',
+  headingXXSmallFontWeight: '600',
+  headingXXSmallTextTransform: 'uppercase',
+
+  /* label */
+  labelLargeFontSize: '18px',
+  labelLargeLineHeight: '24px',
+  labelLargeLetterSpacing: '0.005em',
+
+  labelMediumFontSize: '16px',
+  labelMediumLineHeight: '20px',
+  labelMediumLetterSpacing: '0.01em',
+
+  labelSmallFontSize: '14px',
+  labelSmallLineHeight: '20px',
+  labelSmallLetterSpacing: '0.015em',
+
+  labelXSmallFontSize: '12px',
+  labelXSmallLineHeight: '16px',
+  labelXSmallLetterSpacing: '0.02em',
+
+  /* paragraph */
+  paragraphLargeFontSize: '18px',
+  paragraphLargeLineHeight: '28px',
+  paragraphLargeLetterSpacing: '0.005em',
+
+  paragraphMediumFontSize: '16px',
+  paragraphMediumLineHeight: '24px',
+  paragraphMediumLetterSpacing: '0.01em',
+
+  paragraphSmallFontSize: '14px',
+  paragraphSmallLineHeight: '24px',
+  paragraphSmallLetterSpacing: '0.015em',
+
   /* letter spacing */
   letterSpacingGigantic: '-1px',
   letterSpacingJumbo: '-0.72px',
