@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-featureflags",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Feature flags utility component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,6 +22,6 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^2.0.2"
+    "@pluralsight/ps-design-system-build": "^2.0.3"
   }
 }

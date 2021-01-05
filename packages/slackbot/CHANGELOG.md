@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/psds-slackbot@2.0.3...@pluralsight/psds-slackbot@2.0.4) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/psds-slackbot
+
+
+
+
+
 ## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/psds-slackbot@2.0.2...@pluralsight/psds-slackbot@2.0.3) (2020-12-16)
 
 **Note:** Version bump only for package @pluralsight/psds-slackbot

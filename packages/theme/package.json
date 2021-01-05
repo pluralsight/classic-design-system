@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "6.0.14",
+  "version": "6.0.15",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -18,7 +18,7 @@
   },
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-util": "^6.0.9",
+    "@pluralsight/ps-design-system-util": "^6.0.10",
     "hoist-non-react-statics": "^3.3.0"
   },
   "peerDependencies": {
