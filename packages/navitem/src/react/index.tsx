@@ -29,7 +29,8 @@ const NavItem: React.FC<NavItemProps> & NavItemStatics = props => {
     renderContainer = initialValue.renderContainer,
     selected = initialValue.selected,
     // eslint-disable-next-line camelcase
-    UNSAFE_stylesFor
+    UNSAFE_stylesFor,
+    ...rest
   } = props
 
   const Layout = alignment === alignments.horizontal ? HorzLayout : VertLayout
@@ -40,7 +41,8 @@ const NavItem: React.FC<NavItemProps> & NavItemStatics = props => {
     menu,
     selected,
     renderContainer,
-    UNSAFE_stylesFor
+    UNSAFE_stylesFor,
+    rest
   }
 
   return (
