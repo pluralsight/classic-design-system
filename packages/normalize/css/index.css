@@ -17,7 +17,7 @@ html {
   font-size: 0.875em;
   font-weight: var(--psTypeFontWeightRegular);
   line-height: 1.71429; /* calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)); */
-  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: 'tnum' on, 'lnum' on, 'liga' off;
 }
 
 *,
