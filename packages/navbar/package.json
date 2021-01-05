@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navbar",
-  "version": "1.2.24",
+  "version": "1.2.25",
   "description": "Navbar UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.7.2",
     "@pluralsight/ps-design-system-icon": "^19.0.21",
-    "@pluralsight/ps-design-system-navitem": "^1.5.14",
+    "@pluralsight/ps-design-system-navitem": "^1.5.15",
     "@pluralsight/ps-design-system-util": "^6.0.10"
   },
   "peerDependencies": {

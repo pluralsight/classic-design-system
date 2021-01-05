@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.14...@pluralsight/ps-design-system-navitem@1.5.15) (2021-01-05)
+
+
+### Bug Fixes
+
+* **navitem:** pass unspecified props to button ([e7d2a23](https://github.com/pluralsight/design-system/commit/e7d2a235e344716284f70d9824e058537aea9104))
+
+
+
+
+
 ## [1.5.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.13...@pluralsight/ps-design-system-navitem@1.5.14) (2021-01-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem
