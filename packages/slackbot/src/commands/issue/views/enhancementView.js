@@ -1,4 +1,4 @@
-exports.enhancementView = async ({ ack, body, client }) => {
+export const enhancementView = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 

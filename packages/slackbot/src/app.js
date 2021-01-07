@@ -1,24 +1,20 @@
-const { App, ExpressReceiver } = require('@slack/bolt')
-const https = require('https')
-const dotenv = require('dotenv')
-const { chooseLabelView } = require('./commands/issue/views/chooseLabelView')
-const { enhancementView } = require('./commands/issue/views/enhancementView')
-const {
-  viewSubmissionEvent
-} = require('./commands/issue/submission/viewSubmissionEvent')
-const { bugView } = require('./commands/issue/views/bugView')
-const { openView } = require('./commands/issue/views/openView')
-const { signout } = require('./commands/issue-signout/signout')
-const { signin } = require('./commands/issue-signin/signin')
-const { help } = require('./commands/issue-help/help')
-const {
-  checkSimilaritySubmissionEvent
-} = require('./commands/issue/submission/checkSimilaritySubmission')
-const axios = require('axios')
+import { App, ExpressReceiver } from '@slack/bolt'
+import * as axios from 'axios'
+import * as dotenv from 'dotenv'
+import * as https from 'https'
+import pg from 'pg'
 
-const { Client } = require('pg')
+import { chooseLabelView } from './commands/issue/views/chooseLabelView.js'
+import { enhancementView } from './commands/issue/views/enhancementView.js'
+import { viewSubmissionEvent } from './commands/issue/submission/viewSubmissionEvent.js'
+import { bugView } from './commands/issue/views/bugView.js'
+import { openView } from './commands/issue/views/openView.js'
+import { signout } from './commands/issue-signout/signout.js'
+import { signin } from './commands/issue-signin/signin.js'
+import { help } from './commands/issue-help/help.js'
+import { checkSimilaritySubmissionEvent } from './commands/issue/submission/checkSimilaritySubmission.js'
 
-const db = new Client()
+const db = new pg.Client()
 db.connect()
 
 dotenv.config()

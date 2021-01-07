@@ -1,6 +1,7 @@
-const { App } = require('@slack/bolt')
-const axios = require('axios')
-const dotenv = require('dotenv')
+import { App } from '@slack/bolt'
+import * as axios from 'axios'
+import * as dotenv from 'dotenv'
+
 dotenv.config()
 
 const app = new App({
@@ -8,7 +9,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-exports.checkSimilaritySubmissionEvent = async ({
+export const checkSimilaritySubmissionEvent = async ({
   ack,
   body,
   context,

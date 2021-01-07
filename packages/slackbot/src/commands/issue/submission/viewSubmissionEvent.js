@@ -1,8 +1,9 @@
-const { App } = require('@slack/bolt')
-const axios = require('axios')
-const dotenv = require('dotenv')
-const stringSimilarity = require('string-similarity')
+import { App } from '@slack/bolt'
+import * as axios from 'axios'
+import * as dotenv from 'dotenv'
+import stringSimilarity from 'string-similarity'
 // const gestaltSimilarity = require('gestalt-pattern-matcher').default
+
 dotenv.config()
 
 function compareByRating(a, b) {
@@ -20,7 +21,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-exports.viewSubmissionEvent = async ({ ack, body, context, view }) => {
+export const viewSubmissionEvent = async ({ ack, body, context, view }) => {
   const metadata = body.view.private_metadata.split(' ')
 
   let accessToken = ''

@@ -1,5 +1,6 @@
-const { App } = require('@slack/bolt')
-const dotenv = require('dotenv')
+import { App } from '@slack/bolt'
+import * as dotenv from 'dotenv'
+
 dotenv.config()
 
 const app = new App({
@@ -7,7 +8,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-exports.help = async ({ ack, body, client }) => {
+export const help = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 

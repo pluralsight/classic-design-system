@@ -1,9 +1,10 @@
-const { App } = require('@slack/bolt')
-const dotenv = require('dotenv')
-dotenv.config()
-const { Client } = require('pg')
+import { App } from '@slack/bolt'
+import * as dotenv from 'dotenv'
+import pg from 'pg'
 
-const db = new Client()
+dotenv.config()
+
+const db = new pg.Client()
 db.connect()
 
 const app = new App({
@@ -11,7 +12,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-exports.signin = async ({ ack, body, client }) => {
+export const signin = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 

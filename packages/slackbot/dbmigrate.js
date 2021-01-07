@@ -1,9 +1,9 @@
-require('dotenv').config()
+import * as dotenv from 'dotenv'
+import pg from 'pg'
 
-const { Client } = require('pg')
-
+dotenv.config()
 ;(async () => {
-  const db = new Client()
+  const db = new pg.Client()
   await db.connect()
 
   const createSql = `

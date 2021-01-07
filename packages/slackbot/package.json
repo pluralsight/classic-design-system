@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node dbmigrate.js && node src/app.js"
   },
+  "type": "module",
   "dependencies": {
     "@slack/bolt": "^2.4.1",
     "axios": "^0.21.0",

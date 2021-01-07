@@ -1,4 +1,4 @@
-exports.chooseLabelView = async ({ ack, body, client }) => {
+export const chooseLabelView = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 

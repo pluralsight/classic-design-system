@@ -1,18 +1,18 @@
-const dotenv = require('dotenv')
-dotenv.config()
-const { Client } = require('pg')
+import { App } from '@slack/bolt'
+import * as dotenv from 'dotenv'
+import pg from 'pg'
 
-const { App } = require('@slack/bolt')
+dotenv.config()
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-const db = new Client()
+const db = new pg.Client()
 db.connect()
 
-exports.openView = async ({ ack, body, client }) => {
+export const openView = async ({ ack, body, client }) => {
   // Acknowledge the command request
   await ack()
 
