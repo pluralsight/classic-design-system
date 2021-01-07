@@ -1,5 +1,5 @@
 # DOCKER STAGE: BUILD
-FROM node:11.4-alpine 
+FROM node:15.5-alpine
 
 ENV NODE_ENV=production
 
