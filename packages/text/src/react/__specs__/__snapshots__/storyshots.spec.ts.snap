@@ -9,7 +9,7 @@ exports[`Storyshots Code empty 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     before|
     |after
@@ -26,7 +26,7 @@ exports[`Storyshots Code ends single line 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     This is where we see 
     <code
@@ -47,7 +47,7 @@ exports[`Storyshots Code lead single line 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     <code
       data-css-cdof7b=""
@@ -68,7 +68,7 @@ exports[`Storyshots Code line wrap 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     text at the start
     <code
@@ -106,7 +106,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
     <code
@@ -145,7 +145,7 @@ exports[`Storyshots Heading className override 1`] = `
 >
   <h2
     className="css-mbiza7"
-    data-css-1cti5ps=""
+    data-css-1hlooqy=""
   >
     orange
   </h2>
@@ -161,7 +161,7 @@ exports[`Storyshots Heading color: primary 1`] = `
   }
 >
   <h1
-    data-css-1cti5ps=""
+    data-css-1hlooqy=""
   >
     Primary
   </h1>
@@ -177,7 +177,7 @@ exports[`Storyshots Heading color: secondary 1`] = `
   }
 >
   <h1
-    data-css-10ful38=""
+    data-css-jvac71=""
   >
     Secondary
   </h1>
@@ -193,7 +193,7 @@ exports[`Storyshots Heading size: large 1`] = `
   }
 >
   <h1
-    data-css-1cti5ps=""
+    data-css-1hlooqy=""
   >
     large
   </h1>
@@ -209,7 +209,7 @@ exports[`Storyshots Heading size: medium 1`] = `
   }
 >
   <h1
-    data-css-1iuhukt=""
+    data-css-15hnmrv=""
   >
     medium
   </h1>
@@ -225,7 +225,7 @@ exports[`Storyshots Heading size: small 1`] = `
   }
 >
   <h1
-    data-css-1elyo8o=""
+    data-css-a6my4y=""
   >
     small
   </h1>
@@ -241,7 +241,7 @@ exports[`Storyshots Heading size: xLarge 1`] = `
   }
 >
   <h1
-    data-css-181hrbd=""
+    data-css-14geujc=""
   >
     xLarge
   </h1>
@@ -257,7 +257,7 @@ exports[`Storyshots Heading size: xSmall 1`] = `
   }
 >
   <h1
-    data-css-12r1ije=""
+    data-css-xojmei=""
   >
     xSmall
   </h1>
@@ -273,7 +273,7 @@ exports[`Storyshots Heading size: xXSmall 1`] = `
   }
 >
   <h1
-    data-css-1ogf8b5=""
+    data-css-1jlm84l=""
   >
     xXSmall
   </h1>
@@ -289,7 +289,7 @@ exports[`Storyshots Heading size: xXXSmall 1`] = `
   }
 >
   <h1
-    data-css-w74fkr=""
+    data-css-qftb57=""
   >
     xXXSmall
   </h1>
@@ -305,7 +305,7 @@ exports[`Storyshots Heading style override 1`] = `
   }
 >
   <h2
-    data-css-1cti5ps=""
+    data-css-1hlooqy=""
     style={
       Object {
         "color": "#E7558B",
@@ -326,7 +326,7 @@ exports[`Storyshots Label caps & strong: true 1`] = `
   }
 >
   <span
-    data-css-11ocmsq=""
+    data-css-1kni1o6=""
   >
     Caps
   </span>
@@ -342,7 +342,7 @@ exports[`Storyshots Label caps: true 1`] = `
   }
 >
   <span
-    data-css-hm9y8j=""
+    data-css-185v1t9=""
   >
     Caps
   </span>
@@ -359,7 +359,7 @@ exports[`Storyshots Label className override 1`] = `
 >
   <span
     className="css-mbiza7"
-    data-css-1hc6yrq=""
+    data-css-12ca7mp=""
   >
     blue
   </span>
@@ -375,7 +375,7 @@ exports[`Storyshots Label color: primary 1`] = `
   }
 >
   <span
-    data-css-1hc6yrq=""
+    data-css-12ca7mp=""
   >
     Primary
   </span>
@@ -391,7 +391,7 @@ exports[`Storyshots Label color: secondary 1`] = `
   }
 >
   <span
-    data-css-rwxz6j=""
+    data-css-8mg8xl=""
   >
     Secondary
   </span>
@@ -407,7 +407,7 @@ exports[`Storyshots Label size: large 1`] = `
   }
 >
   <span
-    data-css-1asuxjc=""
+    data-css-1vdm40l=""
   >
     large
   </span>
@@ -423,7 +423,7 @@ exports[`Storyshots Label size: medium 1`] = `
   }
 >
   <span
-    data-css-1hc6yrq=""
+    data-css-12ca7mp=""
   >
     medium
   </span>
@@ -439,7 +439,7 @@ exports[`Storyshots Label size: small 1`] = `
   }
 >
   <span
-    data-css-jteikv=""
+    data-css-pk5zmz=""
   >
     small
   </span>
@@ -455,7 +455,7 @@ exports[`Storyshots Label size: xSmall 1`] = `
   }
 >
   <span
-    data-css-onkulu=""
+    data-css-mys1z7=""
   >
     xSmall
   </span>
@@ -471,7 +471,7 @@ exports[`Storyshots Label strong: true 1`] = `
   }
 >
   <span
-    data-css-gub0gh=""
+    data-css-9ed07o=""
   >
     Strong
   </span>
@@ -487,7 +487,7 @@ exports[`Storyshots Label style override 1`] = `
   }
 >
   <span
-    data-css-1hc6yrq=""
+    data-css-12ca7mp=""
     style={
       Object {
         "color": "#E7558B",
@@ -817,7 +817,7 @@ exports[`Storyshots P className override 1`] = `
 >
   <p
     className="css-mbiza7"
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -833,7 +833,7 @@ exports[`Storyshots P color: primary 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -849,7 +849,7 @@ exports[`Storyshots P color: secondary 1`] = `
   }
 >
   <p
-    data-css-1glikd8=""
+    data-css-1mzei1k=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -865,7 +865,7 @@ exports[`Storyshots P size: large 1`] = `
   }
 >
   <p
-    data-css-qi3lii=""
+    data-css-zqedpj=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -881,7 +881,7 @@ exports[`Storyshots P size: medium 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -897,7 +897,7 @@ exports[`Storyshots P size: small 1`] = `
   }
 >
   <p
-    data-css-lgzk7b=""
+    data-css-1w0ezwp=""
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
@@ -913,7 +913,7 @@ exports[`Storyshots P style override 1`] = `
   }
 >
   <p
-    data-css-r3ja7m=""
+    data-css-1joltl8=""
     style={
       Object {
         "color": "#E7558B",
