@@ -37,7 +37,7 @@ export default {
 
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`,
-    fontWeight: '600'
+    fontWeight: type.fontWeightDemiBold
   },
   [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -52,43 +52,48 @@ export default {
     color: colorsTextIcon.lowOnDark
   },
   [`.psds-text__heading--size-${vars.headingSizes.xXXSmall}`]: {
-    fontSize: '12px',
-    lineHeight: '16px',
-    textTransform: 'uppercase',
-    letterSpacing: '.08em'
+    fontSize: type.headingXXXSmallFontSize,
+    lineHeight: type.headingXXXSmallLineHeight,
+    letterSpacing: type.headingXXXSmallLetterSpacing,
+    textTransform: type.headingXXXSmallTextTransform
   },
   [`.psds-text__heading--size-${vars.headingSizes.xXSmall}`]: {
-    fontSize: '14px',
-    lineHeight: '20px',
-    textTransform: 'uppercase',
-    letterSpacing: '.08em'
+    fontSize: type.headingXXSmallFontSize,
+    lineHeight: type.headingXXSmallLineHeight,
+    letterSpacing: type.headingXXSmallLetterSpacing,
+    textTransform: type.headingXXSmallTextTransform
   },
   [`.psds-text__heading--size-${vars.headingSizes.xSmall}`]: {
-    fontSize: '20px',
-    lineHeight: '28px'
+    fontSize: type.headingXSmallFontSize,
+    lineHeight: type.headingXSmallLineHeight,
+    letterSpacing: type.headingXSmallLetterSpacing
   },
   [`.psds-text__heading--size-${vars.headingSizes.small}`]: {
-    fontSize: '24px',
-    lineHeight: '32px'
+    fontSize: type.headingSmallFontSize,
+    lineHeight: type.headingSmallLineHeight,
+    letterSpacing: type.headingSmallLetterSpacing
   },
   [`.psds-text__heading--size-${vars.headingSizes.medium}`]: {
-    fontSize: '28px',
-    lineHeight: '36px'
+    fontSize: type.headingMediumFontSize,
+    lineHeight: type.headingMediumLineHeight,
+    letterSpacing: type.headingMediumLetterSpacing
   },
   [`.psds-text__heading--size-${vars.headingSizes.large}`]: {
-    fontSize: '34px',
-    lineHeight: '40px'
+    fontSize: type.headingLargeFontSize,
+    lineHeight: type.headingLargeLineHeight,
+    letterSpacing: type.headingLargeLetterSpacing
   },
   [`.psds-text__heading--size-${vars.headingSizes.xLarge}`]: {
-    fontSize: '40px',
-    lineHeight: '52px'
+    fontSize: type.headingXLargeFontSize,
+    lineHeight: type.headingXLargeLineHeight,
+    letterSpacing: type.headingXLargeLetterSpacing
   },
 
   [`.psds-text__label`]: {
-    fontWeight: '400'
+    fontWeight: type.fontWeightRegular
   },
   [`.psds-text__label--strong`]: {
-    fontWeight: '500'
+    fontWeight: type.fontWeightDemiBold
   },
   [`.psds-text__label--caps`]: {
     textTransform: 'uppercase',
@@ -107,24 +112,24 @@ export default {
     color: colorsTextIcon.lowOnDark
   },
   [`.psds-text__label--size-${vars.labelSizes.xSmall}`]: {
-    fontSize: '12px',
-    letterSpacing: '0.02em',
-    lineHeight: '16px'
+    fontSize: type.labelXSmallFontSize,
+    lineHeight: type.labelXSmallLineHeight,
+    letterSpacing: type.labelXSmallLetterSpacing
   },
   [`.psds-text__label--size-${vars.labelSizes.small}`]: {
-    fontSize: '14px',
-    letterSpacing: '0.015em',
-    lineHeight: '24px'
+    fontSize: type.labelSmallFontSize,
+    lineHeight: type.labelSmallLineHeight,
+    letterSpacing: type.labelSmallLetterSpacing
   },
   [`.psds-text__label--size-${vars.labelSizes.medium}`]: {
-    fontSize: '16px',
-    letterSpacing: '0.01em',
-    lineHeight: '28px'
+    fontSize: type.labelMediumFontSize,
+    lineHeight: type.labelMediumLineHeight,
+    letterSpacing: type.labelMediumLetterSpacing
   },
   [`.psds-text__label--size-${vars.labelSizes.large}`]: {
-    fontSize: '18px',
-    letterSpacing: '0.005em',
-    lineHeight: '32px'
+    fontSize: type.labelLargeFontSize,
+    lineHeight: type.labelLargeLineHeight,
+    letterSpacing: type.labelLargeLetterSpacing
   },
 
   [`.psds-text__list`]: {
@@ -186,18 +191,18 @@ export default {
     color: colorsTextIcon.lowOnDark
   },
   [`.psds-text__p--size-${vars.pSizes.small}`]: {
-    fontSize: '14px',
-    letterSpacing: '0.015em',
-    lineHeight: '24px'
+    fontSize: type.paragraphSmallFontSize,
+    lineHeight: type.paragraphSmallLineHeight,
+    letterSpacing: type.paragraphSmallLetterSpacing
   },
   [`.psds-text__p--size-${vars.pSizes.medium}`]: {
-    fontSize: '16px',
-    letterSpacing: '0.01em',
-    lineHeight: '24px'
+    fontSize: type.paragraphMediumFontSize,
+    lineHeight: type.paragraphMediumLineHeight,
+    letterSpacing: type.paragraphMediumLetterSpacing
   },
   [`.psds-text__p--size-${vars.pSizes.large}`]: {
-    fontSize: '18px',
-    letterSpacing: '0.005em',
-    lineHeight: '28px'
+    fontSize: type.paragraphLargeFontSize,
+    lineHeight: type.paragraphLargeLineHeight,
+    letterSpacing: type.paragraphLargeLetterSpacing
   }
 }
