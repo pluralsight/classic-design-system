@@ -1,7 +1,7 @@
 export default {
   fontFamily:
     '"PS TT Commons Roman", "Gotham SSm A", "Gotham SSm B", Arial, sans-serif',
-  fontFamilyCode: '"Source Code Pro", monospace',
+  fontFamilyCode: '"DM Mono", monospace',
 
   /* font size */
   fontSizeGigantic: '60px',
@@ -24,27 +24,32 @@ export default {
   headingLargeLetterSpacing: '-0.01em',
   headingLargeFontWeight: '600',
 
-  headingMediumFontSize: '24px',
-  headingMediumLineHeight: '32px',
+  headingMediumFontSize: '28px',
+  headingMediumLineHeight: '36px',
   headingMediumLetterSpacing: '-0.01em',
   headingMediumFontWeight: '600',
 
-  headingSmallFontSize: '20px',
-  headingSmallLineHeight: '28px',
+  headingSmallFontSize: '24px',
+  headingSmallLineHeight: '32px',
   headingSmallLetterSpacing: '-0.01em',
   headingSmallFontWeight: '600',
 
-  headingXSmallFontSize: '14px',
-  headingXSmallLineHeight: '20px',
-  headingXSmallLetterSpacing: '0.08em',
+  headingXSmallFontSize: '20px',
+  headingXSmallLineHeight: '28px',
+  headingXSmallLetterSpacing: '-0.01em',
   headingXSmallFontWeight: '600',
-  headingXSmallTextTransform: 'uppercase',
 
-  headingXXSmallFontSize: '12px',
-  headingXXSmallLineHeight: '16px',
+  headingXXSmallFontSize: '14px',
+  headingXXSmallLineHeight: '20px',
   headingXXSmallLetterSpacing: '0.08em',
   headingXXSmallFontWeight: '600',
   headingXXSmallTextTransform: 'uppercase',
+
+  headingXXXSmallFontSize: '12px',
+  headingXXXSmallLineHeight: '16px',
+  headingXXXSmallLetterSpacing: '0.08em',
+  headingXXXSmallFontWeight: '600',
+  headingXXXSmallTextTransform: 'uppercase',
 
   /* label */
   labelLargeFontSize: '18px',
