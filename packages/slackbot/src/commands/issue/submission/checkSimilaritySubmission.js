@@ -47,7 +47,6 @@ export const checkSimilaritySubmissionEvent = async ({
   let todayBehavior = ''
   let valueAdd = ''
   let tradeoffs = ''
-  console.log('*****', view.blocks[1].text.text)
   if (metadata[0] === 'Bug') {
     title = view.blocks[1].text.text
     expectedBehavior = view.blocks[3].text.text
@@ -154,8 +153,8 @@ ${tradeoffs}
         msg = `Failure to post issue. Status code: ${res.status}`
       }
     })
-    .catch(error => {
-      console.log(error)
+    .catch(err => {
+      context.logger.error({ msg: 'Github post issue error', err })
     })
 
   try {
@@ -164,7 +163,7 @@ ${tradeoffs}
       channel: channelId,
       text: msg
     })
-  } catch (error) {
-    console.error(error)
+  } catch (err) {
+    context.logger.error({ msg: 'Slack post github post error', err })
   }
 }

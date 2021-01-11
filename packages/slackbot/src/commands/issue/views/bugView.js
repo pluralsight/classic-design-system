@@ -1,4 +1,4 @@
-export const bugView = async ({ ack, body, client }) => {
+export const bugView = async ({ ack, body, client, context }) => {
   // Acknowledge the command request
   await ack()
 
@@ -128,8 +128,8 @@ export const bugView = async ({ ack, body, client }) => {
         }
       }
     })
-    console.log(result)
-  } catch (error) {
-    console.error(error)
+    context.logger.debug({ msg: 'Bug view success', result })
+  } catch (err) {
+    context.logger.error({ msg: 'Bug view error', err })
   }
 }

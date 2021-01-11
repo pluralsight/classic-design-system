@@ -8,7 +8,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-export const help = async ({ ack, body, client }) => {
+export const help = async ({ ack, body, client, context }) => {
   // Acknowledge the command request
   await ack()
 
@@ -31,7 +31,7 @@ export const help = async ({ ack, body, client }) => {
       user: userID,
       text: msg
     })
-  } catch (error) {
-    console.error(error)
+  } catch (err) {
+    context.logger.error({ msg: 'Help slack post error', userID, err })
   }
 }

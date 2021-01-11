@@ -12,7 +12,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-export const signin = async ({ ack, body, client }) => {
+export const signin = async ({ ack, body, client, context }) => {
   // Acknowledge the command request
   await ack()
 
@@ -31,10 +31,10 @@ export const signin = async ({ ack, body, client }) => {
     .query(query1)
     .then(res => {
       user = res.rows[0]
-      console.log(user)
+      context.logger.debug({ msg: 'Fetch user success', user })
     })
     .catch(err => {
-      console.log(err)
+      context.logger.error({ msg: 'Fetch user error', userID, err })
     })
 
   let attachments = null

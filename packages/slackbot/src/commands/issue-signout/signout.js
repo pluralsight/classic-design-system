@@ -12,7 +12,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET
 })
 
-export const signout = async ({ ack, body, client }) => {
+export const signout = async ({ ack, body, client, context }) => {
   // Acknowledge the command request
   await ack()
 
@@ -31,7 +31,7 @@ export const signout = async ({ ack, body, client }) => {
     .query(deleteUser)
     .then(res => {
       user = res.rows[0]
-      console.log(user)
+      context.logger.debug({ msg: 'Delete user success', user })
 
       if (user) {
         msg = 'You have signed out of your Github account.'
@@ -40,7 +40,7 @@ export const signout = async ({ ack, body, client }) => {
       }
     })
     .catch(err => {
-      console.log(err)
+      context.logger.error({ msg: 'Delete user error', userID, err })
     })
 
   try {
@@ -51,6 +51,6 @@ export const signout = async ({ ack, body, client }) => {
       text: msg
     })
   } catch (error) {
-    console.error(error)
+    context.logger.error({ msg: 'Delete user slack post error', userID, err })
   }
 }

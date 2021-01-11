@@ -36,7 +36,7 @@ const app = new App({
   // Start your app
   await app.start(process.env.PORT || 3000)
 
-  console.log('⚡️ Bolt app is running on ' + process.env.PORT)
+  logger.info('⚡️ Bolt app is running on ' + process.env.PORT)
 })()
 
 app.use(logger.boltGlobalMiddleware)
@@ -113,11 +113,18 @@ receiver.router.get('/oauth-callback', async (request, res) => {
       if (res.status === 200) {
         accessToken = res.data.access_token
       } else {
-        console.log('Error retrieving access token: ' + res.status)
+        logger.error({
+          msg: 'Github get access token non-2000',
+          status: res.status,
+          res
+        })
       }
     })
-    .catch(error => {
-      console.log(error)
+    .catch(err => {
+      logger.error({
+        msg: 'Github get access token error',
+        err
+      })
     })
 
   const insertQuery = {
@@ -130,7 +137,7 @@ receiver.router.get('/oauth-callback', async (request, res) => {
 
   db.query(insertQuery, (err, res) => {
     if (err) {
-      console.log(err)
+      logger.error({ msg: 'Insert user error', userID, err })
     } else {
       user = res.rows[0]
     }
@@ -146,8 +153,8 @@ receiver.router.get('/oauth-callback', async (request, res) => {
       text:
         'You can now post issues to design-system under your GitHub account using the `/issue` command. \n\n Use the `issue-signout` command to sign-out.'
     })
-  } catch (error) {
-    console.error(error)
+  } catch (err) {
+    logger.error({ msg: 'Slack post insert user error', userID, err })
   }
 
   res.redirect(process.env.APP_HOMEPAGE_URI)

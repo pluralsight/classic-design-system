@@ -6,7 +6,7 @@ const defaults = {
   logDirectory: '/var/log',
   logFileEnabled: false,
   logFileName: 'application.log',
-  logLevel: 'info'
+  logLevel: 'debug'
 }
 
 // NOTE: create and load config as soon as this file is accessed

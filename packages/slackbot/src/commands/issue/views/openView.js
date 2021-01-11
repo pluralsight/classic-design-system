@@ -12,7 +12,7 @@ const app = new App({
 const db = new pg.Client()
 db.connect()
 
-export const openView = async ({ ack, body, client }) => {
+export const openView = async ({ ack, body, client, context }) => {
   // Acknowledge the command request
   await ack()
 
@@ -143,9 +143,9 @@ export const openView = async ({ ack, body, client }) => {
           ]
         }
       })
-      console.log(result)
-    } catch (error) {
-      console.error(error)
+      context.logger.debug({ msg: 'Open view success', result })
+    } catch (err) {
+      context.logger.error({ msg: 'Open view error', err })
     }
   }
 }

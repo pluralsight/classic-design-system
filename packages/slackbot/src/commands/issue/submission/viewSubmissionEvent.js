@@ -163,8 +163,8 @@ export const viewSubmissionEvent = async ({ ack, body, context, view }) => {
         issueRecords.push(issueRecord)
       })
     })
-    .catch(error => {
-      console.log(error)
+    .catch(err => {
+      context.logger.error({ msg: 'Fetch and analyze issues error', err })
     })
 
   issueRecords.sort(compareByRating)

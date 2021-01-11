@@ -1,4 +1,4 @@
-export const enhancementView = async ({ ack, body, client }) => {
+export const enhancementView = async ({ ack, body, client, context }) => {
   // Acknowledge the command request
   await ack()
 
@@ -114,8 +114,8 @@ export const enhancementView = async ({ ack, body, client }) => {
         }
       }
     })
-    console.log(result)
-  } catch (error) {
-    console.error(error)
+    context.logger.debug({ msg: 'Enhancement view success', result })
+  } catch (err) {
+    context.logger.error({ msg: 'Enhancement view error', err })
   }
 }
