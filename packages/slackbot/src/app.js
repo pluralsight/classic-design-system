@@ -8,12 +8,14 @@ import { chooseLabelView } from './commands/issue/views/chooseLabelView.js'
 import { enhancementView } from './commands/issue/views/enhancementView.js'
 import { viewSubmissionEvent } from './commands/issue/submission/viewSubmissionEvent.js'
 import { bugView } from './commands/issue/views/bugView.js'
+import { createLogger } from './logger.js'
 import { openView } from './commands/issue/views/openView.js'
 import { signout } from './commands/issue-signout/signout.js'
 import { signin } from './commands/issue-signin/signin.js'
 import { help } from './commands/issue-help/help.js'
 import { checkSimilaritySubmissionEvent } from './commands/issue/submission/checkSimilaritySubmission.js'
 
+const logger = createLogger()
 const db = new pg.Client()
 db.connect()
 
@@ -37,10 +39,11 @@ const app = new App({
   console.log('⚡️ Bolt app is running on ' + process.env.PORT)
 })()
 
+app.use(logger.boltGlobalMiddleware)
+
 //
 // LISTENER FOR /issue-signout COMMAND
 //
-
 app.command('/issue-signout', signout)
 
 app.command('/issue-signin', signin)

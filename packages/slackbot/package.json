@@ -11,6 +11,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@pluralsight/ps-logging-node": "^3.2.1",
     "@slack/bolt": "^2.4.1",
     "axios": "^0.21.0",
     "dotenv": "^8.2.0",
@@ -18,7 +19,8 @@
     "mongoose": "^5.10.11",
     "nodemon": "^2.0.6",
     "pg": "^8.4.2",
-    "string-similarity": "^4.0.3"
+    "string-similarity": "^4.0.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "prettier": "2.1.2"
