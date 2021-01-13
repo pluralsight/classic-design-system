@@ -1,9 +1,0 @@
-{
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "allowJs": true,
-    "rootDir": null,
-    "jsx": "react",
-    "strict": true
-  }
-}
