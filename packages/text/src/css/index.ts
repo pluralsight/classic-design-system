@@ -37,7 +37,7 @@ export default {
 
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`,
-    fontWeight: type.fontWeight600
+    fontWeight: type.fontWeightStrong
   },
   [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -85,10 +85,10 @@ export default {
   },
 
   [`.psds-text__label`]: {
-    fontWeight: type.fontWeight400
+    fontWeight: type.fontWeightDefault
   },
   [`.psds-text__label--strong`]: {
-    fontWeight: type.fontWeight500
+    fontWeight: type.fontWeightStrong
   },
   [`.psds-text__label--caps`]: {
     textTransform: 'uppercase',
@@ -131,7 +131,7 @@ export default {
     listStyle: 'none',
     marginLeft: 0,
     lineHeight: type.lineHeightExtra,
-    fontWeight: type.fontWeight400
+    fontWeight: type.fontWeightDefault
   },
   [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -171,7 +171,7 @@ export default {
 
   '.psds-text__p': {
     margin: `${layout.spacingMedium} 0`,
-    fontWeight: type.fontWeight400
+    fontWeight: type.fontWeightDefault
   },
   [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
