@@ -9,8 +9,8 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Dog count
       </span>
@@ -31,8 +31,8 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Cat count
       </span>
@@ -51,8 +51,8 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Rafters on the River
       </span>
@@ -71,8 +71,8 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Flotsam
       </span>
@@ -95,8 +95,8 @@ exports[`Storyshots DataWell label/data 1`] = `
 >
   <div>
     <span
+      data-css-11vxu8g=""
       data-css-1bgwrb4=""
-      data-css-mrv3s5=""
     >
       Dog count
     </span>
@@ -118,8 +118,8 @@ exports[`Storyshots DataWell label/data/subLabel 1`] = `
 >
   <div>
     <span
+      data-css-11vxu8g=""
       data-css-1bgwrb4=""
-      data-css-mrv3s5=""
     >
       Dog count
     </span>
@@ -150,8 +150,8 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Dog count
       </span>
@@ -172,8 +172,8 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Cat count
       </span>
@@ -192,8 +192,8 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Rafters on the River
       </span>
@@ -212,8 +212,8 @@ exports[`Storyshots DataWell row 1`] = `
   >
     <div>
       <span
+        data-css-11vxu8g=""
         data-css-1bgwrb4=""
-        data-css-mrv3s5=""
       >
         Flotsam
       </span>
