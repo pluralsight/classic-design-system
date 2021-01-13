@@ -63,12 +63,12 @@ It is recommended to use `psTypeFontWeightDefault` (400) & `psTypeFontWeightStro
 
 <FontWeight />
 
-To apply the font weights, use the vars in css:
+Applying font weight using CSS vars:
 
 ```css
 @import "@pluralsight/ps-design-system-core";
 
-.mySelector { font-weight: var(--psTypeFontWeightBold); }`}
+.mySelector { font-weight: var(--psTypeFontWeightStrong); }`}
 ```
 
 ### Font size
@@ -77,13 +77,13 @@ Eight font sizes are available. Use `psTypeFontSizeBase` (16px) for the default 
 
 <FontSize />
 
-To apply the font sizes, use the vars in css:
+Applying font sizes using CSS vars:
 
 ```css
 @import '@pluralsight/ps-design-system-core';
 
 .mySelector {
-  font-size: var(--psTypeFontSizeLarge);
+  font-size: var(--psTypeFontSize500);
 }
 ```
 
@@ -106,6 +106,8 @@ Four line height increments are available. Each font size also has a default lin
 Adjust the letter spacing (tracking) of an element. A general guideline, type larger than the base size (16px) should tighten, and type smaller than the base size should loosen to aid legibility.
 
 <LetterSpacing />
+
+Applying letter spacing using CSS vars:
 
 ```css
 @import '@pluralsight/ps-design-system-core';
