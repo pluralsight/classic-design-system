@@ -37,7 +37,7 @@ export default {
 
   '.psds-text__heading': {
     margin: `${layout.spacingMedium} 0`,
-    fontWeight: type.fontSize600
+    fontWeight: type.fontWeight600
   },
   [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
@@ -52,13 +52,13 @@ export default {
     color: colorsTextIcon.lowOnDark
   },
   [`.psds-text__heading--size-${vars.headingSizes.xXXSmall}`]: {
-    fontSize: type.fontSize300,
+    fontSize: type.fontSize200,
     lineHeight: '16px',
     textTransform: 'uppercase',
     letterSpacing: type.letterSpacingAllCaps
   },
   [`.psds-text__heading--size-${vars.headingSizes.xXSmall}`]: {
-    fontSize: type.fontSize200,
+    fontSize: type.fontSize300,
     lineHeight: '20px',
     textTransform: 'uppercase',
     letterSpacing: type.letterSpacingAllCaps
