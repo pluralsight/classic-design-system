@@ -35,11 +35,12 @@ export const SideNav: React.FC<SideNavProps> = () => {
 
   const scrollRestore = useScrollRestoration('sidenav-list')
   React.useLayoutEffect(() => {
-    window.docsearch({
-      apiKey: '67e67fb4a170ba472d8771660b39b5f2',
-      indexName: 'pluralsight_design-system',
-      inputSelector: '#ALGOLIA_DOCSEARCH_INPUT'
-    })
+    if (typeof window.docsearch === 'function')
+      window.docsearch({
+        apiKey: '67e67fb4a170ba472d8771660b39b5f2',
+        indexName: 'pluralsight_design-system',
+        inputSelector: '#ALGOLIA_DOCSEARCH_INPUT'
+      })
   }, [])
   return (
     <div className={styles.sideNav}>
