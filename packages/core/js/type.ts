@@ -34,13 +34,11 @@ export default {
   letterSpacingSmall: 0,
   letterSpacingXSmall: 0,
 
-  letterSpacingTightest: '-0.010em',
-  letterSpacingTighter: '-0.015em',
-  letterSpacingTight: '-0.005em',
+  letterSpacingTighter: '-0.025em',
+  letterSpacingTight: '-0.01em',
   letterSpacingNone: 0,
-  letterSpacingWide: '0.005em',
-  letterSpacingWider: '0.010em',
-  letterSpacingWidest: '0.015em',
+  letterSpacingWide: '0.01em',
+  letterSpacingWider: '0.025em',
   letterSpacingAllCaps: '0.08em',
 
   /* font weight */

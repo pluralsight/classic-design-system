@@ -34,13 +34,11 @@
   --psTypeLetterSpacingSmall: 0;
   --psTypeLetterSpacingXSmall: 0;
 
-  --psTypeLetterSpacingTightest: -0.01em;
-  --psTypeLetterSpacingTighter: -0.015em;
-  --psTypeLetterSpacingTight: -0.005em;
+  --psTypeLetterSpacingTighter: -0.025em;
+  --psTypeLetterSpacingTight: -0.01em;
   --psTypeLetterSpacingNone: 0;
-  --psTypeLetterSpacingWide: 0.005em;
-  --psTypeLetterSpacingWider: 0.01em;
-  --psTypeLetterSpacingWidest: 0.015em;
+  --psTypeLetterSpacingLoose: 0.01em;
+  --psTypeLetterSpacingLooser: 0.025em;
   --psTypeLetterSpacingAllCaps: 0.8em;
 
   /* font weight */
