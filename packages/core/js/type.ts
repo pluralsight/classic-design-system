@@ -23,7 +23,6 @@ export default {
   fontSize300: '16px',
   fontSize200: '14px',
   fontSize100: '12px',
-  fontSize50: '11px',
 
   /* letter spacing */
   letterSpacingGigantic: '-1px',
@@ -56,6 +55,8 @@ export default {
   fontWeightXLight: 200,
   fontWeightThin: 100,
 
+  fontWeightDefault: 400,
+  fontWeightStrong: 600,
   fontWeight900: 900,
   fontWeight800: 800,
   fontWeight700: 700,

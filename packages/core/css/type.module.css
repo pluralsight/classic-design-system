@@ -23,7 +23,6 @@
   --psTypeFontSize300: 16px;
   --psTypeFontSize200: 14px;
   --psTypeFontSize100: 12px;
-  --psTypeFontSize50: 11px;
 
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
@@ -56,6 +55,8 @@
   --psTypeFontWeightXLight: 200;
   --psTypeFontWeightThin: 100;
 
+  --psTypeFontWeightDefault: 400;
+  --psTypeFontWeightStrong: 600;
   --psTypeFontWeight900: 900;
   --psTypeFontWeight800: 800;
   --psTypeFontWeight700: 700;
