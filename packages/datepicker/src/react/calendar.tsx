@@ -51,14 +51,6 @@ export const Calendar: FC<CalendarProps> = props => {
   const selectedDayRef = useRef<HTMLButtonElement>(null)
 
   const [displayed, setDisplayed] = useState<Date>(value)
-  const [selected, setSelected] = useState<Date>(value)
-
-  useEffect(
-    function updateSelectedOnPropChange() {
-      setSelected(value)
-    },
-    [value]
-  )
 
   useEffect(function focusCurrentOnMount() {
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
@@ -83,7 +75,6 @@ export const Calendar: FC<CalendarProps> = props => {
 
   function handleDayClick(evt: React.MouseEvent, selectedDate: Date) {
     evt.preventDefault()
-    setSelected(selectedDate)
 
     if (typeof onChange === 'function') {
       onChange(evt, selectedDate)
@@ -130,7 +121,7 @@ export const Calendar: FC<CalendarProps> = props => {
             const dateForCalendarDayNoTime = new Date(displayed)
             dateForCalendarDayNoTime.setDate(i + 1)
             dateForCalendarDayNoTime.setHours(0, 0, 0, 0)
-            const selectedDateNoTime = new Date(selected)
+            const selectedDateNoTime = new Date(value)
             selectedDateNoTime.setHours(0, 0, 0, 0)
             const isSelected =
               dateForCalendarDayNoTime.getTime() ===
