@@ -55,33 +55,6 @@ export default {
     position: 'relative'
   },
 
-  [`.psds-table__container--scrollable${dark.className}`]: {
-    background: `
-      linear-gradient(to right, ${colorsBackgroundDark[1]} 30%, ${colorsBackgroundDark[1]}),
-      linear-gradient(to right, ${colorsBackgroundDark[1]}, ${colorsBackgroundDark[1]} 70%) 0 100%,
-      radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,1), ${colorsBackgroundDark[1]}),
-      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,1), ${colorsBackgroundDark[1]}) 0 100%
-    `,
-    backgroundAttachment: 'local, local, scroll, scroll',
-    backgroundColor: colorsBackgroundDark[1],
-    backgroundPosition: '0 0, 100%, 0 0, 100%',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '40px 100%, 40px 100%, 10px 100%, 10px 100%'
-  },
-  [`.psds-table__container--scrollable${light.className}`]: {
-    background: `
-      linear-gradient(to right, ${colorsBackgroundLight[3]} 30%, ${colorsBackgroundLight[3]}),
-      linear-gradient(to right, ${colorsBackgroundLight[3]}, ${colorsBackgroundLight[3]} 70%) 0 100%,
-      radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,0.2), ${colorsBackgroundLight[3]}),
-      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.2), ${colorsBackgroundLight[3]}) 0 100%
-    `,
-    backgroundAttachment: 'local, local, scroll, scroll',
-    backgroundColor: colorsBackgroundLight[3],
-    backgroundPosition: '0 0, 100%, 0 0, 100%',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '40px 100%, 40px 100%, 10px 100%, 10px 100%'
-  },
-
   '.psds-table': {
     label: 'table',
 
