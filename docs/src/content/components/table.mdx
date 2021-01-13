@@ -958,9 +958,9 @@ const Paginator: React.FC<PaginatorProps> = props => {
   const handlePrevPage = () => table.previousPage()
   const handleNextPage = () => table.nextPage()
 
+  const total = table.rows.length
   const cursorStart = pageIndex * pageSize + 1
-  const cursorEnd = cursorStart + pageSize - 1
-  const total = table.pageCount * pageSize
+  const cursorEnd = Math.min(cursorStart + pageSize - 1, total)
 
   return (
     <div style={{ display: 'flex', marginBottom: layout.spacingMedium }}>
