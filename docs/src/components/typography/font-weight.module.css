@@ -8,15 +8,15 @@
 }
 .weightLetters {
   grid-area: letters;
-  font-size: var(--psTypeFontSizeGigantic);
-  letter-spacing: var(--psTypeLetterSpacingGigantic);
+  font-size: var(--psTypeFontSize800);
+  letter-spacing: var(--psTypeLetterSpacingWide);
   line-height: 1em;
 }
 .labels {
   grid-area: vars;
   display: flex;
   flex-direction: column-reverse;
-  font-size: var(--psTypeFontSizeXSmall);
+  font-size: var(--psTypeFontSizeBase);
   font-weight: var(--psTypeFontWeightMedium);
 }
 .labels code {

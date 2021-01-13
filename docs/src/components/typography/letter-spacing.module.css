@@ -1,19 +1,20 @@
-.sizes {
+.letterSpacings {
   white-space: nowrap;
   margin-bottom: var(--psLayoutSpacingMedium);
   max-width: 900px;
 }
-.size {
+.letterSpacing {
   color: var(--appColorsTextIconHigh);
 }
-.size + .size {
+.letterSpacing + .letterSpacing {
   margin-top: var(--psLayoutSpacingLarge);
 }
-.sizeSentence {
+.sentence {
+  font-size: var(--psTypeFontSizeBase);
   color: var(--appColorsTextIconHigh);
   margin-bottom: var(--psLayoutSpacingXSmall);
 }
-.sizeLabel {
+.label {
   color: var(--appColorsTextIconLow);
   font-size: var(--psTypeFontSizeBase);
 }
