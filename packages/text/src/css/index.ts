@@ -108,22 +108,22 @@ export default {
   },
   [`.psds-text__label--size-${vars.labelSizes.xSmall}`]: {
     fontSize: type.fontSize100,
-    letterSpacing: type.letterSpacingWidest,
+    letterSpacing: type.letterSpacingLooser,
     lineHeight: '16px'
   },
   [`.psds-text__label--size-${vars.labelSizes.small}`]: {
     fontSize: type.fontSize200,
-    letterSpacing: type.letterSpacingWidest,
+    letterSpacing: type.letterSpacingLoose,
     lineHeight: '24px'
   },
   [`.psds-text__label--size-${vars.labelSizes.medium}`]: {
     fontSize: type.fontSize300,
-    letterSpacing: type.letterSpacingWider,
+    letterSpacing: type.letterSpacingLoose,
     lineHeight: '28px'
   },
   [`.psds-text__label--size-${vars.labelSizes.large}`]: {
     fontSize: type.fontSize400,
-    letterSpacing: type.letterSpacingWide,
+    letterSpacing: type.letterSpacingNone,
     lineHeight: '32px'
   },
 
@@ -147,17 +147,17 @@ export default {
   },
   [`.psds-text__list--size-${vars.listSizes.small}`]: {
     fontSize: type.fontSize200,
-    letterSpacing: type.letterSpacingWidest,
+    letterSpacing: type.letterSpacingLooser,
     lineHeight: '24px'
   },
   [`.psds-text__list--size-${vars.listSizes.medium}`]: {
     fontSize: type.fontSize300,
-    letterSpacing: type.letterSpacingWider,
+    letterSpacing: type.letterSpacingLoose,
     lineHeight: '24px'
   },
   [`.psds-text__list--size-${vars.listSizes.large}`]: {
     fontSize: type.fontSize400,
-    letterSpacing: type.letterSpacingWide,
+    letterSpacing: type.letterSpacingNone,
     lineHeight: '28px'
   },
   [`.psds-text__list--type-${vars.listTypes.bulleted}`]: {
@@ -187,17 +187,17 @@ export default {
   },
   [`.psds-text__p--size-${vars.pSizes.small}`]: {
     fontSize: type.fontSize200,
-    letterSpacing: type.letterSpacingWidest,
+    letterSpacing: type.letterSpacingLooser,
     lineHeight: '24px'
   },
   [`.psds-text__p--size-${vars.pSizes.medium}`]: {
     fontSize: type.fontSize300,
-    letterSpacing: type.letterSpacingWider,
+    letterSpacing: type.letterSpacingLoose,
     lineHeight: '24px'
   },
   [`.psds-text__p--size-${vars.pSizes.large}`]: {
     fontSize: type.fontSize400,
-    letterSpacing: type.letterSpacingWide,
+    letterSpacing: type.letterSpacingNone,
     lineHeight: '28px'
   }
 }
