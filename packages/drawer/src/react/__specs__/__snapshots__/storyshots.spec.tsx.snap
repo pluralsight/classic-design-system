@@ -25,7 +25,7 @@ exports[`Storyshots drawer controlled: external state 1`] = `
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -64,7 +64,7 @@ exports[`Storyshots drawer controlled: external state 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -98,7 +98,7 @@ exports[`Storyshots drawer controlled: open with button only 1`] = `
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -137,7 +137,7 @@ exports[`Storyshots drawer controlled: open with button only 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -166,7 +166,7 @@ exports[`Storyshots drawer controlled: start open 1`] = `
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -205,7 +205,7 @@ exports[`Storyshots drawer controlled: start open 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -234,7 +234,7 @@ exports[`Storyshots drawer default 1`] = `
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -273,7 +273,7 @@ exports[`Storyshots drawer default 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -440,7 +440,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -470,7 +470,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -509,7 +509,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -527,7 +527,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -566,7 +566,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -584,7 +584,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -623,7 +623,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -654,7 +654,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -693,7 +693,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -713,7 +713,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -752,7 +752,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -772,7 +772,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -811,7 +811,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-r3ja7m=""
         style={
           Object {
             "margin": 0,
@@ -842,7 +842,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -882,7 +882,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
@@ -1009,7 +1009,7 @@ exports[`Storyshots drawer with row component 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-r3ja7m=""
       style={
         Object {
           "margin": 0,
