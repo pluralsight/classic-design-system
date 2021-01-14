@@ -115,15 +115,21 @@ const DatePicker = forwardRef<HTMLInputElement, DatePickerProps>(
     const [dd, setDD] = useState(value?.getDate())
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
+    function updateFields(date: Date | undefined) {
+      setYYYY(date?.getFullYear())
+      setMM(date ? date.getMonth() + 1 : undefined)
+      setDD(date?.getDate())
+    }
+
     useEffect(
-      function updateDateOnPropChange() {
+      function updateStateAndFieldsOnPropChange() {
         setValue(valueFromProps)
-        setYYYY(valueFromProps?.getFullYear())
-        setMM(valueFromProps ? valueFromProps.getMonth() + 1 : undefined)
-        setDD(valueFromProps?.getDate())
+        updateFields(valueFromProps)
       },
       [valueFromProps]
     )
+
+    useEffect(() => updateFields(value), [value])
 
     function handleCalendarChange(evt: React.MouseEvent, date: Date) {
       setValue(date)
