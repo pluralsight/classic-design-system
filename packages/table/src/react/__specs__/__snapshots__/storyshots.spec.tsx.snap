@@ -2535,7 +2535,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
   }
 >
   <div
-    data-css-1f123cr=""
+    data-css-62vpq9=""
     role="region"
     tabIndex={0}
   >
@@ -2959,7 +2959,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
   }
 >
   <div
-    data-css-1f123cr=""
+    data-css-62vpq9=""
     role="region"
     tabIndex={0}
   >
