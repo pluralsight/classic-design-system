@@ -9,16 +9,16 @@
 .letterSpacing + .letterSpacing {
   margin-top: var(--psLayoutSpacingLarge);
 }
-.sentence {
+.letterSpacingExample {
   font-size: var(--psTypeFontSizeBase);
   color: var(--appColorsTextIconHigh);
   margin-bottom: var(--psLayoutSpacingXSmall);
 }
-.label {
+.letterSpacingVariableLabel {
   color: var(--appColorsTextIconLow);
   font-size: var(--psTypeFontSizeBase);
 }
-.variable {
+.letterSpacingVariable {
   margin-top: var(--psLayoutSpacingSmall);
   font-size: var(--psTypeFontSizeXSmall);
   color: var(--psColorsPink6);

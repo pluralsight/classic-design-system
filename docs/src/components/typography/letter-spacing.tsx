@@ -49,19 +49,21 @@ export const LetterSpacing = () => (
       <div className={styles.letterSpacing} key={i}>
         <div
           style={{ letterSpacing: w.value, textTransform: w.textTransform }}
-          className={styles.sentence}
+          className={styles.letterSpacingExample}
         >
           Antidisestablishmentarianism
         </div>
-        <div className={styles.label}>
+        <div className={styles.letterSpacingLabel}>
           {w.label} ({w.value})
         </div>
-        <div className={styles.labels}>
+        <div className={styles.letterSpacingLabels}>
           <div>
-            CSS: <code className={styles.variable}>{w.varNameCSS}</code>
+            CSS:{' '}
+            <code className={styles.letterSpacingVariable}>{w.varNameCSS}</code>
           </div>
           <div>
-            JS: <code className={styles.variable}>{w.varNameJS}</code>
+            JS:{' '}
+            <code className={styles.letterSpacingVariable}>{w.varNameJS}</code>
           </div>
         </div>
       </div>
