@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@14.1.23...@pluralsight/ps-design-system-card@14.1.24) (2021-01-14)
+
+
+### Bug Fixes
+
+* **card:** make actionBarVisible work again ([cdc6ae1](https://github.com/pluralsight/design-system/commit/cdc6ae16ca3108782c76ca984489db9a2116d732))
+
+
+
+
+
 ## [14.1.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@14.1.22...@pluralsight/ps-design-system-card@14.1.23) (2021-01-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@10.0.8...@pluralsight/ps-design-system-datepicker@10.0.9) (2021-01-14)
+
+
+### Bug Fixes
+
+* **datepicker:** avoid infinite loop in calendar state update ([37a846c](https://github.com/pluralsight/design-system/commit/37a846c06483535753a4de139e2b694eef22f6c5)), closes [#1544](https://github.com/pluralsight/design-system/issues/1544)
+
+
+
+
+
 ## [10.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@10.0.7...@pluralsight/ps-design-system-datepicker@10.0.8) (2021-01-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

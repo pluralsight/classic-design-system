@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.8...@pluralsight/ps-design-system-docs@0.18.9) (2021-01-14)
+
+
+### Bug Fixes
+
+* **docs:** adjust table pagination example cursor code ([55dab5b](https://github.com/pluralsight/design-system/commit/55dab5bbee0dc354961249d514deef7d0c9a332b)), closes [#1551](https://github.com/pluralsight/design-system/issues/1551)
+* **docs:** safer docsearch call to fix local ([c09b8c7](https://github.com/pluralsight/design-system/commit/c09b8c75d0ae6aa6396080113bbd646093a02698))
+
+
+
+
+
 ## [0.18.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.7...@pluralsight/ps-design-system-docs@0.18.8) (2021-01-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
