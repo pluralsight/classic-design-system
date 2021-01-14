@@ -32,7 +32,7 @@
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^6.0.0",
     "glamor": "^2.20.40",
-    "react": "^16.8.6"
+    "react": "^17.0.1"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-actionmenu": "^15.4.10",
