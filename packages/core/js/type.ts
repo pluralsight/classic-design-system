@@ -37,8 +37,8 @@ export default {
   letterSpacingTighter: '-0.025em',
   letterSpacingTight: '-0.01em',
   letterSpacingNone: 0,
-  letterSpacingWide: '0.01em',
-  letterSpacingWider: '0.025em',
+  letterSpacingLoose: '0.01em',
+  letterSpacingLooser: '0.025em',
   letterSpacingAllCaps: '0.08em',
 
   /* font weight */
