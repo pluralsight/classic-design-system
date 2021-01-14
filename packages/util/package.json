@@ -23,7 +23,7 @@
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^17.0.1"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.3"
