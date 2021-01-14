@@ -19,7 +19,7 @@ export default {
     borderRadius: '2px',
     lineHeight: type.lineHeightStandard,
     whiteSpace: 'pre-wrap',
-    fontFamily: '"DM Mono", "Source Code Pro", monospace',
+    fontFamily: type.fontFamilyCode,
     fontWeight: type.fontWeightMedium,
     fontSize: type.fontSizeSmall,
     wordBreak: 'break-word'
