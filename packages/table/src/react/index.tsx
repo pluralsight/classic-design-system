@@ -26,11 +26,7 @@ const styles = {
     return compose(
       css(stylesheet['.psds-table__container']),
       css(stylesheet[`.psds-table__container${themeClass}`]),
-      opts.scrollable &&
-        compose(
-          css(stylesheet['.psds-table__container--scrollable']),
-          css(stylesheet[`.psds-table__container--scrollable${themeClass}`])
-        )
+      opts.scrollable && css(stylesheet['.psds-table__container--scrollable'])
     )
   },
   table: (themeName: ValueOf<typeof themeNames>) =>

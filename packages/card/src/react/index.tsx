@@ -34,7 +34,7 @@ const styles = {
       fullOverlay &&
         !visible &&
         css(stylesheet[`.${label}--fullOverlay.${label}--no-actionBarVisible`]),
-      visible && css(stylesheet[`${label}--actionBarVisible`])
+      visible && css(stylesheet[`.${label}--actionBarVisible`])
     )
   },
   actionButton: ({ disabled }: Partial<ActionBarActionProps>) => {
