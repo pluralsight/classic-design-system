@@ -5,64 +5,70 @@ import * as styles from './font-weight.module.css'
 
 const weights = [
   {
-    label: 'BLACK',
-    weight: 900,
-    varName: 'psTypeFontWeightBlack',
-    jsVarName: 'type.fontWeightBlack'
+    label: 'Default (400)',
+    weight: 400,
+    varName: 'psTypeFontWeightDefault',
+    jsVarName: 'type.fontWeightDefault'
   },
   {
-    label: 'EXTRABOLD',
-    weight: 800,
-    varName: 'psTypeFontWeightXBold',
-    jsVarName: 'type.fontWeightXBold'
-  },
-  {
-    label: 'BOLD',
-    weight: 700,
-    varName: 'psTypeFontWeightBold',
-    jsVarName: 'type.fontWeightBold'
-  },
-  {
-    label: 'DEMIBOLD',
+    label: 'Strong (600)',
     weight: 600,
-    varName: 'psTypeFontWeightDemiBold',
-    jsVarName: 'type.fontWeightDemiBold'
+    varName: 'psTypeFontWeightStrong',
+    jsVarName: 'type.fontWeightStrong'
   },
   {
-    label: 'MEDIUM',
+    label: '900',
+    weight: 900,
+    varName: 'psTypeFontWeight900',
+    jsVarName: 'type.fontWeight900'
+  },
+  {
+    label: '800',
+    weight: 800,
+    varName: 'psTypeFontWeight800',
+    jsVarName: 'type.fontWeight800'
+  },
+  {
+    label: '700',
+    weight: 700,
+    varName: 'psTypeFontWeight700',
+    jsVarName: 'type.fontWeight700'
+  },
+  {
+    label: '600',
+    weight: 600,
+    varName: 'psTypeFontWeight600',
+    jsVarName: 'type.fontWeight600'
+  },
+  {
+    label: '500',
     weight: 500,
-    varName: 'psTypeFontWeightMedium',
-    jsVarName: 'type.fontWeightMedium'
+    varName: 'psTypeFontWeight500',
+    jsVarName: 'type.fontWeight500'
   },
   {
-    label: 'REGULAR',
+    label: '400',
     weight: 400,
-    varName: 'psTypeFontWeightRegular',
-    jsVarName: 'type.fontWeightRegular'
+    varName: 'psTypeFontWeight400',
+    jsVarName: 'type.fontWeight400'
   },
   {
-    label: 'BOOK',
-    weight: 400,
-    varName: 'psTypeFontWeightBook',
-    jsVarName: 'type.fontWeightBook'
-  },
-  {
-    label: 'LIGHT',
+    label: '300',
     weight: 300,
-    varName: 'psTypeFontWeightLight',
-    jsVarName: 'type.fontWeightLight'
+    varName: 'psTypeFontWeight300',
+    jsVarName: 'type.fontWeight300'
   },
   {
-    label: 'EXTRA LIGHT',
+    label: '200',
     weight: 200,
-    varName: 'psTypeFontWeightXLight',
-    jsVarName: 'type.fontWeightXLight'
+    varName: 'psTypeFontWeight200',
+    jsVarName: 'type.fontWeight200'
   },
   {
-    label: 'THIN',
+    label: '100',
     weight: 100,
-    varName: 'psTypeFontWeightThin',
-    jsVarName: 'type.fontWeightThin'
+    varName: 'psTypeFontWeight100',
+    jsVarName: 'type.fontWeight100'
   }
 ]
 
@@ -77,10 +83,8 @@ export const FontWeight = () => {
           >
             Aa
           </div>
-          <div className={styles.weightLabel}>
-            {w.label} ({w.weight})
-          </div>
           <div className={styles.labels}>
+            <div className={styles.weightLabel}>{w.label}</div>
             <div>
               JS: <code>{w.jsVarName}</code>
             </div>
