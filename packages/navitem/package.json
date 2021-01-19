@@ -34,8 +34,11 @@
     "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-actionmenu": "*",
     "@pluralsight/ps-design-system-build": "^2.0.3",
+    "@pluralsight/ps-design-system-button": "*",
     "@pluralsight/ps-design-system-icon": "^19.0.22",
+    "@pluralsight/ps-design-system-position": "*",
     "@pluralsight/ps-design-system-storybook-preset": "^0.2.24"
   }
 }
