@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import React, { useState, useEffect, SyntheticEvent } from 'react'
 import { DateObj } from 'dayzed'
-import { parse, format, differenceInCalendarMonths, isMatch } from 'date-fns'
+import { parse, format, differenceInCalendarMonths } from 'date-fns'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { slides } from '../vars'
 import { css } from 'glamor'
@@ -160,30 +160,27 @@ export const useDateSelectChange = ({
   const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
     const nextValue = evt.target.value
     setValue(nextValue)
-    const fulldate = isMatch(nextValue, dateFormat)
-    try {
-      const nextSelected = fulldate
-        ? parse(nextValue, dateFormat, new Date())
-        : selected
+    const regex = /[0-1][0-9]\/[0-3][0-9]\/[0-9][0-9][0-9][0-9]/
+    const fulldate = regex.test(nextValue)
+    const nextSelected = fulldate
+      ? parse(nextValue, dateFormat, new Date())
+      : selected
 
-      if (
-        nextSelected instanceof Date &&
-        !isNaN((nextSelected as unknown) as number)
-      ) {
-        let nextSlide: ValueOf<typeof slides>
-        if (selected) {
-          nextSlide =
-            differenceInCalendarMonths(nextSelected, selected) > 0
-              ? 'forward'
-              : differenceInCalendarMonths(nextSelected, selected) < 0
-              ? 'backward'
-              : undefined
-        }
-        setSelected(nextSelected)
-        setSlide(nextSlide)
+    if (
+      nextSelected instanceof Date &&
+      !isNaN((nextSelected as unknown) as number)
+    ) {
+      let nextSlide: ValueOf<typeof slides>
+      if (selected) {
+        nextSlide =
+          differenceInCalendarMonths(nextSelected, selected) > 0
+            ? 'forward'
+            : differenceInCalendarMonths(nextSelected, selected) < 0
+            ? 'backward'
+            : undefined
       }
-    } catch (error) {
-      ;() => {}
+      setSelected(nextSelected)
+      setSlide(nextSlide)
     }
   }
   return [value, onChange]
@@ -201,43 +198,40 @@ export const useRangeSelectChange = ({
   string,
   (event: React.ChangeEvent<HTMLInputElement>) => void
 ] => {
+  const dateFormat = 'MM/dd/yyyy'
   const _selected = start ? selected[0] : selected[1]
   const [value, setValue] = React.useState<string>(
-    _selected ? format(_selected, 'MM/dd/yyyy') : ''
+    _selected ? format(_selected, dateFormat) : ''
   )
   useEffect(() => {
-    _selected ? setValue(format(_selected, 'MM/dd/yyyy')) : ''
+    _selected ? setValue(format(_selected, dateFormat)) : ''
   }, [_selected])
   const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
     const nextValue = evt.target.value
     setValue(nextValue)
     const regex = /[0-1][0-9]\/[0-3][0-9]\/[0-9][0-9][0-9][0-9]/
     const fulldate = regex.test(nextValue)
-    try {
-      const nextSelected = fulldate
-        ? parse(nextValue, 'MM/dd/yyyy', new Date())
-        : selected
+    const nextSelected = fulldate
+      ? parse(nextValue, dateFormat, new Date())
+      : selected
 
-      if (
-        nextSelected instanceof Date &&
-        !isNaN((nextSelected as unknown) as number)
-      ) {
-        let nextSlide: ValueOf<typeof slides>
-        if (selected) {
-          !selected[0] && setSelected([])
-          start && setSelected([nextSelected, selected[1]].filter(Boolean))
-          selected[0] && !start && setSelected([selected[0], nextSelected])
-          nextSlide =
-            differenceInCalendarMonths(nextSelected, _selected) > 0
-              ? slides.forward
-              : differenceInCalendarMonths(nextSelected, _selected) < 0
-              ? slides.backward
-              : slides.undefined
-        }
-        setSlide(nextSlide)
+    if (
+      nextSelected instanceof Date &&
+      !isNaN((nextSelected as unknown) as number)
+    ) {
+      let nextSlide: ValueOf<typeof slides>
+      if (selected) {
+        !selected[0] && setSelected([])
+        start && setSelected([nextSelected, selected[1]].filter(Boolean))
+        selected[0] && !start && setSelected([selected[0], nextSelected])
+        nextSlide =
+          differenceInCalendarMonths(nextSelected, _selected) > 0
+            ? slides.forward
+            : differenceInCalendarMonths(nextSelected, _selected) < 0
+            ? slides.backward
+            : slides.undefined
       }
-    } catch (error) {
-      ;() => {}
+      setSlide(nextSlide)
     }
   }
   return [value, onChange]

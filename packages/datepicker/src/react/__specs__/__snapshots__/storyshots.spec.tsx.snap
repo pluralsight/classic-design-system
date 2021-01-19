@@ -2,7 +2,7 @@
 
 exports[`Storyshots MultiDate Calendar 1`] = `
 <div
-  data-css-x9z9na=""
+  data-css-1p61hwy=""
 >
   <div
     data-css-1cqgl9p=""
@@ -479,7 +479,7 @@ exports[`Storyshots MultiDate Calendar 1`] = `
 
 exports[`Storyshots RangeDate Calendar 1`] = `
 <div
-  data-css-x9z9na=""
+  data-css-1p61hwy=""
   onMouseLeave={[Function]}
 >
   <div
@@ -994,7 +994,7 @@ Array [
     5/13/2020 - 05/30/2020
   </button>,
   <div
-    data-css-x9z9na=""
+    data-css-1p61hwy=""
     onMouseLeave={[Function]}
   >
     <div
@@ -1549,7 +1549,7 @@ Array [
     </div>
   </label>,
   <div
-    data-css-x9z9na=""
+    data-css-1p61hwy=""
     onMouseLeave={[Function]}
   >
     <div
@@ -2505,7 +2505,7 @@ Array [
     </div>
   </label>,
   <div
-    data-css-x9z9na=""
+    data-css-1p61hwy=""
     onMouseLeave={[Function]}
   >
     <div
@@ -3015,7 +3015,7 @@ Array [
 
 exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
 <div
-  data-css-x9z9na=""
+  data-css-1p61hwy=""
 >
   <div
     data-css-1cqgl9p=""
@@ -3464,7 +3464,7 @@ exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
 
 exports[`Storyshots SingleDate calendar: date is selected 1`] = `
 <div
-  data-css-x9z9na=""
+  data-css-1p61hwy=""
 >
   <div
     data-css-1cqgl9p=""
@@ -3940,29 +3940,60 @@ exports[`Storyshots SingleDate calendar: date is selected 1`] = `
 `;
 
 exports[`Storyshots SingleDate calendar: input with dropdown 1`] = `
-<label
-  data-css-w0yocm=""
+<div
+  style={
+    Object {
+      "display": "inline-block",
+      "position": "relative",
+    }
+  }
 >
-  <div
-    data-css-1r967oi=""
+  <label
+    data-css-w0yocm=""
   >
     <div
-      data-css-ctre2o=""
+      data-css-1r967oi=""
     >
       <div
-        data-css-ydex85=""
+        data-css-ctre2o=""
       >
-        <input
-          data-css-zjzpem=""
-          disabled={false}
-          onChange={[Function]}
-          onFocus={[Function]}
-          value=""
-        />
+        <div
+          data-css-j2bcjh=""
+        >
+          <input
+            data-css-zjzpem=""
+            disabled={false}
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-9fh4h5=""
+      >
+        <div
+          data-css-7dab2f=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-</label>
+  </label>
+</div>
 `;
 
 exports[`Storyshots SingleDate calendar: with button 1`] = `
@@ -3973,7 +4004,7 @@ Array [
     5/13/2020
   </button>,
   <div
-    data-css-x9z9na=""
+    data-css-1p61hwy=""
   >
     <div
       data-css-1cqgl9p=""

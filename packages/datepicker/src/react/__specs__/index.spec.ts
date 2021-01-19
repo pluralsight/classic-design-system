@@ -237,32 +237,32 @@ test('useDateSelectChange', () => {
   expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onChange({
-      target: { value: '1/10/2020' }
+      target: { value: '01/10/2020' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('01/10/2020')
   expect(formatISO(result.current.selected)).toBe(
-    formatISO(new Date('1/10/2020'))
+    formatISO(new Date('01/10/2020'))
   )
   expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onChange({
-      target: { value: '8/10/2020' }
+      target: { value: '08/10/2020' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('08/10/2020')
   expect(formatISO(result.current.selected)).toBe(
-    formatISO(new Date('8/10/2020'))
+    formatISO(new Date('08/10/2020'))
   )
   expect(result.current.slide).toBe('forward')
   act(() => {
     result.current.onChange({
-      target: { value: '3/10/2020' }
+      target: { value: '03/10/2020' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('03/10/2020')
   expect(formatISO(result.current.selected)).toBe(
-    formatISO(new Date('3/10/2020'))
+    formatISO(new Date('03/10/2020'))
   )
   expect(result.current.slide).toBe('backward')
   act(() => {
@@ -272,9 +272,9 @@ test('useDateSelectChange', () => {
   })
   expect(result.current.value).toBe('13/10/2020')
   expect(formatISO(result.current.selected)).toBe(
-    formatISO(new Date('3/10/2020'))
+    formatISO(new Date('03/10/2020'))
   )
-  expect(result.current.slide).toBe(undefined)
+  expect(result.current.slide).toBe('backward')
   act(() => {
     result.current.onChange({
       target: { value: '03/11/2020' }
@@ -282,7 +282,7 @@ test('useDateSelectChange', () => {
   })
   expect(result.current.value).toBe('03/11/2020')
   expect(formatISO(result.current.selected)).toBe(
-    formatISO(new Date('3/11/2020'))
+    formatISO(new Date('03/11/2020'))
   )
   expect(result.current.slide).toBe(undefined)
 })

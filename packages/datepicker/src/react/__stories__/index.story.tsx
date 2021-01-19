@@ -3,6 +3,7 @@ import React from 'react'
 import { useDayzed, DateObj } from 'dayzed'
 
 import TextInput from '@pluralsight/ps-design-system-textinput'
+import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import {
   Calendar,
   CalendarDates,
@@ -14,22 +15,6 @@ import {
 } from '..'
 import { slides } from '../../vars'
 import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
-
-const useInputClientRect = (
-  inputRef: React.MutableRefObject<HTMLInputElement | undefined>
-) => {
-  const [menuPosition, setMenuPosition] = React.useState({
-    left: 0,
-    top: 0
-  })
-  React.useEffect(() => {
-    if (inputRef.current) {
-      const { left, bottom } = inputRef.current.getBoundingClientRect()
-      setMenuPosition({ left: left - 18, top: bottom + 10 })
-    }
-  }, [inputRef])
-  return menuPosition
-}
 
 storiesOf('SingleDate', module)
   .add('calendar: date is selected', () => {
@@ -105,22 +90,19 @@ storiesOf('SingleDate', module)
   })
   .add('calendar: input with dropdown', () => {
     const [selected, setSelected] = React.useState<Date | undefined>()
+    const [open, setOpen] = React.useState<boolean>(false)
     const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
       setSelected(dateObj.date)
+      setOpen(false)
     }
     const { getDateProps, ...dayzedData } = useDayzed({
       date: selected || new Date('05/30/2020'),
       selected,
       onDateSelected
     })
-    const inputRef = React.useRef<HTMLInputElement | undefined>(undefined)
-    const [open, setOpen] = React.useState<boolean>(false)
-    const onFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
-      if (evt.target === inputRef.current) {
-        setOpen(true)
-      }
+    const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
+      setOpen(!open)
     }
-    const menuPosition = useInputClientRect(inputRef)
     const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
     const [value, onChange] = useDateSelectChange({
       selected,
@@ -128,18 +110,23 @@ storiesOf('SingleDate', module)
       setSelected
     })
     return (
-      <>
+      <div style={{ display: 'inline-block', position: 'relative' }}>
         <TextInput
-          ref={inputRef as RefFor<'input'>}
           onChange={onChange}
           value={value}
-          onFocus={onFocus}
+          icon={
+            <CalendarIcon
+              onClick={handleIconClick}
+              style={{ cursor: 'pointer' }}
+            />
+          }
         />
         {open && (
           <Calendar
             {...dayzedData}
-            style={{ position: 'absolute', ...menuPosition }}
+            style={{ position: 'absolute', marginTop: 4 }}
             slide={slide}
+            tabIndex={0}
           >
             <CalendarDates getDateProps={getDateProps}>
               {renderProps => {
@@ -148,7 +135,7 @@ storiesOf('SingleDate', module)
             </CalendarDates>
           </Calendar>
         )}
-      </>
+      </div>
     )
   })
 storiesOf('RangeDate', module)
@@ -194,6 +181,7 @@ storiesOf('RangeDate', module)
         <Calendar {...dayzedData} onMouseLeave={onMouseLeave}>
           <CalendarDates getDateProps={getDateProps}>
             {(renderProps, dateObj) => {
+              const { selectable } = dateObj
               return (
                 <button
                   {...renderProps}
