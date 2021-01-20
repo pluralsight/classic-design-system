@@ -36,13 +36,13 @@ export default {
   [`.psds-avatar--size-${vars.sizes.large}`]: {
     width: vars.widths.large,
     height: vars.widths.large,
-    fontSize: type.fontSizeJumbo,
+    fontSize: type.fontSize1000,
     fontWeight: type.fontWeightLight
   },
   [`.psds-avatar--size-${vars.sizes.xLarge}`]: {
     width: vars.widths.xLarge,
     height: vars.widths.xLarge,
-    fontSize: '96px',
+    fontSize: type.fontSize1200,
     fontWeight: type.fontWeightLight
   },
 
