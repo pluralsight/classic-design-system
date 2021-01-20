@@ -226,12 +226,12 @@ const groups = [
     },
     items: [
       {
-        href: '/components/breadcrumb',
-        title: 'Breadcrumb'
-      },
-      {
         href: '/components/nav',
         title: 'Global navigation'
+      },
+      {
+        href: '/components/breadcrumb',
+        title: 'Breadcrumb'
       },
       {
         href: '/components/tab',
