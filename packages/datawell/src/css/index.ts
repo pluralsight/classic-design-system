@@ -32,7 +32,7 @@ export default {
   },
   '.psds-datawell__data': {
     fontWeight: type.fontWeightMedium,
-    fontSize: type.fontSizeXXLarge,
+    fontSize: type.fontSize800,
     lineHeight: type.lineHeightHuge,
     color: colorsTextIcon.highOnDark,
     marginBottom: layout.spacingMedium,
