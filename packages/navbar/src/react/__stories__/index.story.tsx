@@ -14,6 +14,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import NavBar from '..'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 storiesOf('Navbar', module).add('desktop', () => {
   function Story() {
@@ -73,7 +74,9 @@ storiesOf('Navbar', module).add('desktop', () => {
                       icon={<BrowseIcon />}
                       selected
                       menu
-                      renderContainer={contentProps => (
+                      renderContainer={(
+                        contentProps: HTMLPropsFor<'button'>
+                      ) => (
                         <button
                           {...contentProps}
                           onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
