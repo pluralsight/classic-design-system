@@ -14,6 +14,9 @@ export default {
   fontSizeXSmall: '12px',
 
   fontSizeBase: '16px',
+  fontSize1200: '88px',
+  fontSize1100: '72px',
+  fontSize1000: '56px',
   fontSize900: '40px',
   fontSize800: '34px',
   fontSize700: '28px',
