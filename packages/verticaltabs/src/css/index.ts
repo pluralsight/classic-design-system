@@ -115,7 +115,7 @@ export default {
   },
 
   '.psds-verticaltabs__tier1': {
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     fontWeight: type.fontWeightMedium,
     height: '40px',
 
@@ -176,7 +176,7 @@ export default {
 
     '& > *': {
       ...truncate,
-      fontSize: type.fontSizeXSmall,
+      fontSize: type.fontSize100,
       fontWeight: type.fontWeightBook,
       marginLeft: '37px',
       minHeight: '32px',
