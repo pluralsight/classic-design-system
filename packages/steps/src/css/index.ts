@@ -65,10 +65,10 @@ export default {
   },
 
   [`.psds-steps__step--${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeSmall
+    fontSize: type.fontSize200
   },
   [`.psds-steps__step--${vars.sizes.large}`]: {
-    fontSize: type.fontSizeMedium
+    fontSize: type.fontSize400
   },
 
   [`.psds-steps__step--${vars.statuses.current}`]: {
@@ -95,10 +95,10 @@ export default {
     '& p:last-child': { marginBottom: 0 }
   },
   [`.psds-steps__description--${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeXSmall
+    fontSize: type.fontSize100
   },
   [`.psds-steps__description--${vars.sizes.large}`]: {
-    fontSize: type.fontSizeSmall
+    fontSize: type.fontSize200
   },
   [`.psds-steps__description--${vars.statuses.current}`]: {
     fontWeight: type.fontWeightBook
@@ -120,7 +120,7 @@ export default {
   '.psds-steps__marker': {
     label: 'steps__marker',
 
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     position: 'relative',
     textAlign: 'center',
 
@@ -148,10 +148,10 @@ export default {
   },
 
   [`.psds-steps__marker--${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeXSmall
+    fontSize: type.fontSize100
   },
   [`.psds-steps__marker--${vars.sizes.large}`]: {
-    fontSize: type.fontSizeMedium
+    fontSize: type.fontSize400
   },
 
   [`.psds-steps__marker--${vars.statuses.completed}`]: {
