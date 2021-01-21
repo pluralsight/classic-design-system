@@ -51,7 +51,7 @@ export default {
   // __caption
   '.psds-emptystate__caption': {
     marginBottom: layout.spacingLarge,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     letterSpacing: type.letterSpacingSmall,
     lineHeight: type.lineHeightStandard,
     maxWidth: 500
@@ -71,10 +71,10 @@ export default {
     maxWidth: 500
   },
   ['.psds-emptystate__heading' + sizeClasses.small]: {
-    fontSize: type.fontSizeMedium
+    fontSize: type.fontSize400
   },
   ['.psds-emptystate__heading' + sizeClasses.large]: {
-    fontSize: type.fontSizeLarge,
+    fontSize: type.fontSize600,
     lineHeight: type.lineHeightExtra
   },
 
