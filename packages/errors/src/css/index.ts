@@ -52,7 +52,7 @@ export default {
   '.psds-error-page__caption': {
     marginBottom: layout.spacingLarge,
     fontSize: type.fontSize200,
-    letterSpacing: type.letterSpacingSmall,
+    letterSpacing: type.letterSpacingLoose,
     lineHeight: type.lineHeightStandard,
     maxWidth: 500
   },
@@ -68,7 +68,7 @@ export default {
     textTransform: 'uppercase',
     marginBottom: layout.spacingLarge,
     fontSize: type.fontSize100,
-    letterSpacing: type.letterSpacingSmall,
+    letterSpacing: type.letterSpacingAllCaps,
     lineHeight: '16px',
     maxWidth: 500
   },
