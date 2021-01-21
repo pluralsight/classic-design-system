@@ -18,13 +18,13 @@ export default {
   [`.psds-avatar--size-${vars.sizes.xSmall}`]: {
     width: vars.widths.xSmall,
     height: vars.widths.xSmall,
-    fontSize: type.fontSizeMedium,
+    fontSize: type.fontSize400,
     fontWeight: type.fontWeightBook
   },
   [`.psds-avatar--size-${vars.sizes.small}`]: {
     width: vars.widths.small,
     height: vars.widths.small,
-    fontSize: type.fontSizeLarge,
+    fontSize: type.fontSize600,
     fontWeight: type.fontWeightBook
   },
   [`.psds-avatar--size-${vars.sizes.medium}`]: {
