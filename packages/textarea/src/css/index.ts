@@ -28,7 +28,7 @@ export default {
     width: '100%',
     borderRadius: '2px',
     background: colorsBackgroundLight[3],
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
     fontWeight: type.fontWeightBook,
     color: colorsTextIcon.highOnLight,
@@ -68,7 +68,7 @@ export default {
   '.psds-text-area__label': {
     width: '100%',
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     marginBottom: layout.spacingXXSmall
   },
@@ -78,7 +78,7 @@ export default {
 
   '.psds-text-area__sub-label': {
     color: colorsTextIcon.lowOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     marginTop: layout.spacingXXSmall
   },
