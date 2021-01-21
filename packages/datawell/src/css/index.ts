@@ -31,7 +31,7 @@ export default {
     }
   },
   '.psds-datawell__data': {
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     fontSize: type.fontSize800,
     lineHeight: type.lineHeightHuge,
     color: colorsTextIcon.highOnDark,
