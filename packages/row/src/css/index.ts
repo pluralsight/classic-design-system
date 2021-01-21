@@ -147,7 +147,7 @@ export default {
   // __title
   '.psds-row__title': {
     display: 'block',
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     textAlign: 'left'
   },
   [`.psds-row__title.psds-theme--${themeDefaultName}`]: {
@@ -215,7 +215,7 @@ export default {
   '.psds-row__metadata': {
     display: 'flex',
     alignItems: 'center',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightTight,
     maxWidth: '100%',
     paddingTop: layout.spacingXXSmall
