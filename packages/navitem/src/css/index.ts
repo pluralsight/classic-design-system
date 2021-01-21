@@ -64,7 +64,7 @@ export default {
     marginRight: 0
   },
   '.psds-navitem__horz-label': {
-    fontWeight: type.fontWeightBold,
+    fontWeight: type.fontWeight700,
     fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
     letterSpacing: '-1%',
@@ -103,7 +103,7 @@ export default {
     marginBottom: '2px'
   },
   '.psds-navitem__vert-label': {
-    fontWeight: type.fontWeightBold,
+    fontWeight: type.fontWeight700,
     fontSize: '10px',
     lineHeight: '12px',
     whiteSpace: 'nowrap',
