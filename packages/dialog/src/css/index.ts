@@ -35,7 +35,7 @@ export default {
   '.psds-dialog__content': {
     color: colorsTextIcon.highOnLight,
     fontSize: type.fontSize200,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     lineHeight: type.lineHeightTight,
     padding: layout.spacingLarge,
     flex: '1 1 auto',
