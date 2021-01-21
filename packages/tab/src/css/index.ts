@@ -14,7 +14,7 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 
 const listItemText = {
-  fontWeight: type.fontWeightMedium
+  fontWeight: type.fontWeight500
 }
 const listItemTextLightHover = {
   color: colorsTextIcon.highOnLight
@@ -193,7 +193,7 @@ export default {
     display: 'flex',
     alignItems: 'center',
     height: '100%',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     padding: `0 0 ${layout.spacingXXSmall} 0`,
     transition: `color ${motion.speedXFast} linear`,
     '&:focus': {
