@@ -45,7 +45,7 @@ export default {
   '.psds-note': {
     alignItems: 'flex-start',
     display: 'flex',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightStandard,
     padding: `${layout.spacingLarge} ${layout.spacingMedium}`
   },
@@ -111,13 +111,13 @@ export default {
 
   '.psds-note__heading': {
     fontSize: type.fontSize200,
-    fontWeight: type.fontWeightBold,
+    fontWeight: type.fontWeight700,
     lineHeight: type.lineHeightTight,
     marginRight: 'auto',
 
     '& > *': {
       fontSize: type.fontSize200,
-      fontWeight: type.fontWeightBold,
+      fontWeight: type.fontWeight700,
       lineHeight: type.lineHeightTight
     },
     '& a': {
@@ -145,7 +145,7 @@ export default {
     color: colorsTextIcon.lowOnDark,
     display: 'flex',
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightTight,
     marginRight: 'auto',
     maxWidth: '100%',
