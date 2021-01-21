@@ -14,7 +14,7 @@ export default {
     borderRadius: '2px',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
     display: 'inline-block',
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     listStyle: 'none',
     marginLeft: 0,
     maxHeight: '277px',
