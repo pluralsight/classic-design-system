@@ -157,11 +157,11 @@ export default {
     color: colorsTextIcon.highOnLight
   },
   [`.psds-row__title--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightTight
   },
   [`.psds-row__title--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeMedium,
+    fontSize: type.fontSize400,
     lineHeight: type.lineHeightStandard
   },
 
@@ -227,11 +227,11 @@ export default {
     color: colorsTextIcon.lowOnLight
   },
   [`.psds-row__metadata--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     paddingTop: 0
   },
   [`.psds-row__metadata--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     paddingTop: layout.spacingXXSmall
   },
 
