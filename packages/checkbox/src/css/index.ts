@@ -118,7 +118,7 @@ export default {
   '.psds-checkbox__label': {
     marginLeft: layout.spacingSmall,
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
     fontWeight: type.fontWeightBook
   },
