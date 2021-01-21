@@ -169,7 +169,7 @@ export default {
     width: '100%',
     color: 'inherit',
     lineHeight: type.lineHeightExtra,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     cursor: 'pointer',
     border: 'none',
     paddingTop: '0',
