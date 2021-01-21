@@ -24,7 +24,7 @@ export default {
   '.psds-radio-group__label': {
     color: colorsTextIcon.highOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     marginBottom: layout.spacingXXSmall
   },
   [`.psds-radio-group__label.psds-theme--${themeNames.light}`]: {
@@ -34,7 +34,7 @@ export default {
   '.psds-radio-group__sub-label': {
     color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     marginTop: layout.spacingXXSmall
   },
   [`.psds-radio-group__sub-label.psds-theme--${themeNames.light}`]: {
@@ -104,7 +104,7 @@ export default {
     color: colorsTextIcon.highOnDark,
     fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightBook
+    fontWeight: type.fontWeightDefault
   },
   [`.psds-radio-button__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
