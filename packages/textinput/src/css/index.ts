@@ -29,7 +29,7 @@ export default {
     borderRadius: '2px',
     color: colorsTextIcon.highOnLight,
     display: 'flex',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     height: '40px',
     minWidth: '192px',
     padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
@@ -132,7 +132,7 @@ export default {
   '.psds-text-input__label': {
     color: colorsTextIcon.highOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     marginBottom: layout.spacingXXSmall
   },
   [`.psds-text-input__label.psds-theme--${themeNames.light}`]: {
@@ -143,7 +143,7 @@ export default {
   '.psds-text-input__sub-label': {
     color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     marginTop: layout.spacingXXSmall
   },
   [`.psds-text-input__sub-label.psds-theme--${themeNames.light}`]: {
