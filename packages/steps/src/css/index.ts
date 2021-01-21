@@ -72,7 +72,7 @@ export default {
   },
 
   [`.psds-steps__step--${vars.statuses.current}`]: {
-    fontWeight: type.fontWeightBold
+    fontWeight: type.fontWeight700
   },
 
   '.psds-steps__title': {
@@ -101,7 +101,7 @@ export default {
     fontSize: type.fontSize200
   },
   [`.psds-steps__description--${vars.statuses.current}`]: {
-    fontWeight: type.fontWeightBook
+    fontWeight: type.fontWeightDefault
   },
 
   '.psds-steps__marker-container': {
