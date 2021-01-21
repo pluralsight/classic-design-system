@@ -67,7 +67,7 @@ export default {
   '.psds-emptystate__heading': {
     marginBottom: layout.spacingLarge,
     letterSpacing: type.letterSpacingTight,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     maxWidth: 500
   },
   ['.psds-emptystate__heading' + sizeClasses.small]: {
