@@ -22,7 +22,7 @@ export default {
     overflow: 'hidden',
     fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     padding: `${layout.spacingXSmall} ${layout.spacingSmall}`
   },
 
