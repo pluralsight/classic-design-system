@@ -166,7 +166,7 @@ export default {
 
   // __action-bar__button
   '.psds-card__action-bar__button': {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     padding: 0,
     cursor: 'pointer',
     border: 'none',
@@ -209,7 +209,7 @@ export default {
     borderRadius: '0 2px 2px 0',
     color: colorsTextIcon.highOnLight,
     textTransform: 'uppercase',
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightBold,
     lineHeight: '16px',
     boxShadow: '0 1px 4px 0 rgba(0, 0, 0, 0.5)',
@@ -256,15 +256,15 @@ export default {
 
   // __title-container
   [`.psds-card__title-container--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: type.lineHeightTight
   },
   [`.psds-card__title-container--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightTight
   },
   [`.psds-card__title-container--size-${vars.sizes.large}`]: {
-    fontSize: type.fontSizeMedium,
+    fontSize: type.fontSize400,
     lineHeight: type.lineHeightStandard
   },
   // __title
@@ -297,13 +297,13 @@ export default {
   },
   // __metadata--size
   [`.psds-card__metadata--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeXSmall
+    fontSize: type.fontSize100
   },
   [`.psds-card__metadata--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeXSmall
+    fontSize: type.fontSize100
   },
   [`.psds-card__metadata--size-${vars.sizes.large}`]: {
-    fontSize: type.fontSizeSmall
+    fontSize: type.fontSize200
   },
 
   // __metadata__datum
