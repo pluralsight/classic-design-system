@@ -12,7 +12,7 @@ const stylesheet: { [selector: string]: Record<string, unknown> } = {
     background: core.colorsBackgroundLight[1],
     borderRadius: '2px',
     cursor: 'pointer',
-    fontSize: core.type.fontSizeSmall,
+    fontSize: core.type.fontSize200,
     fontWeight: core.type.fontWeightBook,
     lineHeight: core.type.lineHeightStandard,
     outline: 'none',
