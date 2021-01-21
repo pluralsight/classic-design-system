@@ -48,7 +48,7 @@ export default {
     border: 0,
     borderRadius: '2px',
     fontSize: type.fontSize200,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     textAlign: 'center',
     whiteSpace: 'nowrap',
     textDecoration: 'none',
