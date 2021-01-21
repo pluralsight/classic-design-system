@@ -13,7 +13,7 @@ const stylesheet: { [selector: string]: Record<string, unknown> } = {
     borderRadius: '2px',
     cursor: 'pointer',
     fontSize: core.type.fontSize200,
-    fontWeight: core.type.fontWeightBook,
+    fontWeight: core.type.fontWeightDefault,
     lineHeight: core.type.lineHeightStandard,
     outline: 'none',
     padding: `${core.layout.spacingXSmall} ${core.layout.spacingMedium}`,
