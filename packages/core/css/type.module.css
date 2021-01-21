@@ -42,7 +42,7 @@
   --psTypeLetterSpacingNone: 0;
   --psTypeLetterSpacingLoose: 0.01em;
   --psTypeLetterSpacingLooser: 0.025em;
-  --psTypeLetterSpacingAllCaps: 0.8em;
+  --psTypeLetterSpacingAllCaps: 0.08em;
 
   /* font weight */
   --psTypeFontWeightBlack: 900;
