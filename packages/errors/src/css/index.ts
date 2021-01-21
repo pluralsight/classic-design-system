@@ -51,7 +51,7 @@ export default {
   // __caption
   '.psds-error-page__caption': {
     marginBottom: layout.spacingLarge,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     letterSpacing: type.letterSpacingSmall,
     lineHeight: type.lineHeightStandard,
     maxWidth: 500
@@ -67,7 +67,7 @@ export default {
   '.psds-error-page__error-code': {
     textTransform: 'uppercase',
     marginBottom: layout.spacingLarge,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     letterSpacing: type.letterSpacingSmall,
     lineHeight: '16px',
     maxWidth: 500
@@ -87,10 +87,10 @@ export default {
     maxWidth: 500
   },
   ['.psds-error-page__heading' + sizeClasses.small]: {
-    fontSize: type.fontSizeMedium
+    fontSize: type.fontSize400
   },
   ['.psds-error-page__heading' + sizeClasses.large]: {
-    fontSize: type.fontSizeLarge,
+    fontSize: type.fontSize600,
     lineHeight: type.lineHeightExtra
   },
 
