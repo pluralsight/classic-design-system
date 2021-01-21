@@ -21,7 +21,7 @@ export default {
     alignItems: 'center',
     textAlign: 'center',
     borderRadius: '16px',
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     textDecoration: 'none',
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBackgroundUtility[25],
