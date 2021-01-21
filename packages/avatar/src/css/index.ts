@@ -19,31 +19,31 @@ export default {
     width: vars.widths.xSmall,
     height: vars.widths.xSmall,
     fontSize: type.fontSize400,
-    fontWeight: type.fontWeightBook
+    fontWeight: type.fontWeightDefault
   },
   [`.psds-avatar--size-${vars.sizes.small}`]: {
     width: vars.widths.small,
     height: vars.widths.small,
     fontSize: type.fontSize600,
-    fontWeight: type.fontWeightBook
+    fontWeight: type.fontWeightDefault
   },
   [`.psds-avatar--size-${vars.sizes.medium}`]: {
     width: vars.widths.medium,
     height: vars.widths.medium,
     fontSize: type.fontSizeXXLarge,
-    fontWeight: type.fontWeightLight
+    fontWeight: type.fontWeight300
   },
   [`.psds-avatar--size-${vars.sizes.large}`]: {
     width: vars.widths.large,
     height: vars.widths.large,
     fontSize: type.fontSize1000,
-    fontWeight: type.fontWeightLight
+    fontWeight: type.fontWeight300
   },
   [`.psds-avatar--size-${vars.sizes.xLarge}`]: {
     width: vars.widths.xLarge,
     height: vars.widths.xLarge,
     fontSize: type.fontSize1200,
-    fontWeight: type.fontWeightLight
+    fontWeight: type.fontWeight300
   },
 
   '.psds-avatar__image': {
