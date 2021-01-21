@@ -44,7 +44,7 @@ export default {
     padding: `${layout.spacingXSmall} ${layout.spacingSmall}`,
     borderRadius: '2px',
     boxShadow,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: type.lineHeightTight,
     fontWeight: type.fontWeightMedium,
     transform: `translateY(${layout.spacingXSmall})`,
