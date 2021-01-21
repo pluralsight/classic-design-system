@@ -43,7 +43,7 @@ const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
       border: `4px dashed ${core.colorsPink.base}`,
       color: core.colorsPink.base,
       display: 'flex',
-      fontSize: core.type.fontSizeMedium,
+      fontSize: core.type.fontSize400,
       fontWeight: core.type.fontWeightBold,
       height: '200px',
       justifyContent: 'center',
