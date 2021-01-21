@@ -30,7 +30,7 @@ export default {
     background: colorsBackgroundLight[3],
     fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     color: colorsTextIcon.highOnLight,
     padding: `${layout.spacingXSmall} ${layout.spacingMedium}`,
     border: `1px solid ${colorsBorder.lowOnDark}`,
@@ -69,7 +69,7 @@ export default {
     width: '100%',
     color: colorsTextIcon.highOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     marginBottom: layout.spacingXXSmall
   },
   [`.psds-text-area__label.psds-theme--${themeNames.light}`]: {
@@ -79,7 +79,7 @@ export default {
   '.psds-text-area__sub-label': {
     color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     marginTop: layout.spacingXXSmall
   },
   [`.psds-text-area__sub-label.psds-theme--${themeNames.light}`]: {
