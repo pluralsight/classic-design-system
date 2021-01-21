@@ -21,7 +21,7 @@ export default {
     borderRadius: '2px',
     display: 'inline-block',
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     lineHeight: type.lineHeightStandard,
     padding: `0 ${layout.spacingXSmall}`,
     textTransform: 'uppercase'
