@@ -102,7 +102,7 @@ export default {
   // __label
   '.psds-date-picker__label': {
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     marginBottom: layout.spacingXXSmall
   },
@@ -113,7 +113,7 @@ export default {
   // __sub-label
   '.psds-date-picker__sub-label': {
     color: colorsTextIcon.lowOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightBook,
     marginTop: layout.spacingXXSmall
   },
@@ -155,7 +155,7 @@ export default {
     color: colorsTextIcon.highOnLight,
     borderRadius: '2px',
     padding: `${layout.spacingMedium} ${layout.spacingLarge}`,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
     opacity: 0,
@@ -224,6 +224,6 @@ export default {
 
   // __calendar__switcher__month
   '.psds-date-picker__calendar__switcher__month': {
-    fontSize: type.fontSizeSmall
+    fontSize: type.fontSize200
   }
 }
