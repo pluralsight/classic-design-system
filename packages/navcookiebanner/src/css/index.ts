@@ -15,7 +15,7 @@ export default {
     color: colorsTextIcon.highOnDark,
     display: 'flex',
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     justifyContent: 'center',
     left: layout.spacingSmall,
     lineHeight: type.lineHeightTight,
