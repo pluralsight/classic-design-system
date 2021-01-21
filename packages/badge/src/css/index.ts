@@ -20,7 +20,7 @@ export default {
     border: `1px solid transparent`,
     borderRadius: '2px',
     display: 'inline-block',
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     lineHeight: type.lineHeightStandard,
     padding: `0 ${layout.spacingXSmall}`,
