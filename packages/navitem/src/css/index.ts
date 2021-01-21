@@ -65,7 +65,7 @@ export default {
   },
   '.psds-navitem__horz-label': {
     fontWeight: type.fontWeightBold,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
     letterSpacing: '-1%',
     whiteSpace: 'nowrap'
