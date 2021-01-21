@@ -210,7 +210,7 @@ export default {
     color: colorsTextIcon.highOnLight,
     textTransform: 'uppercase',
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightBold,
+    fontWeight: type.fontWeight700,
     lineHeight: '16px',
     boxShadow: '0 1px 4px 0 rgba(0, 0, 0, 0.5)',
     maxWidth: '75%'
@@ -271,7 +271,7 @@ export default {
   '.psds-card__title': {
     display: 'block',
     paddingTop: layout.spacingXSmall,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     overflow: 'hidden'
   },
   [`.psds-card__title--theme-${themeNames.dark}`]: {
@@ -285,7 +285,7 @@ export default {
   '.psds-card__metadata': {
     display: 'flex',
     alignItems: 'center',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightTight,
     maxWidth: '100%'
   },
