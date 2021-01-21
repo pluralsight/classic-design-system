@@ -18,7 +18,7 @@ export default {
   '.psds-datawell__label': {
     display: 'block',
     margin: 0,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: '16px',
 
     '& > div': {
@@ -42,7 +42,7 @@ export default {
     color: colorsTextIcon.highOnLight
   },
   '.psds-datawell__sublabel': {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: '16px',
     color: colorsTextIcon.lowOnDark
   },
