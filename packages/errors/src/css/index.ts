@@ -83,7 +83,7 @@ export default {
   '.psds-error-page__heading': {
     marginBottom: layout.spacingLarge,
     letterSpacing: type.letterSpacingLarge,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     maxWidth: 500
   },
   ['.psds-error-page__heading' + sizeClasses.small]: {
