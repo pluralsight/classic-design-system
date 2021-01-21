@@ -23,7 +23,7 @@ export default {
 
   '.psds-radio-group__label': {
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     marginBottom: layout.spacingXXSmall
   },
@@ -33,7 +33,7 @@ export default {
 
   '.psds-radio-group__sub-label': {
     color: colorsTextIcon.lowOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightBook,
     marginTop: layout.spacingXXSmall
   },
@@ -102,7 +102,7 @@ export default {
 
   '.psds-radio-button__label': {
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
     fontWeight: type.fontWeightBook
   },
