@@ -20,7 +20,7 @@ export default {
     alignItems: 'flex-start',
     width: '100%',
     overflow: 'hidden',
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
     fontWeight: type.fontWeightMedium,
     padding: `${layout.spacingXSmall} ${layout.spacingSmall}`
