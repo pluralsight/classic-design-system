@@ -20,7 +20,7 @@ export default {
     lineHeight: type.lineHeightStandard,
     whiteSpace: 'pre-wrap',
     fontFamily: type.fontFamilyCode,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     fontSize: type.fontSize200,
     wordBreak: 'break-word'
   },
