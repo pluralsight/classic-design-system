@@ -32,7 +32,7 @@ export default {
   '.psds-navuser__plan-name': {
     color: colorsTextIcon.lowOnDark,
     fontSize: '11px',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     overflow: 'hidden',
     textOverflow: 'ellipsis'
   },
@@ -45,7 +45,7 @@ export default {
     color: colorsTextIcon.highOnDark,
     lineHeight: '16px',
     marginLeft: layout.spacingXSmall,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     textAlign: 'left',
     whiteSpace: 'nowrap',
     maxWidth: '120px'
