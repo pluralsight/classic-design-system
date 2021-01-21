@@ -61,7 +61,7 @@ export default {
     borderCollapse: 'collapse',
     borderColor: 'transparent',
     color: 'initial',
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     fontWeight: type.fontWeightBook,
     lineHeight: type.lineHeightTight,
     verticalAlign: 'middle',
@@ -94,7 +94,7 @@ export default {
   '.psds-table__head': {
     label: 'table__head',
 
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightBook,
     textTransform: 'uppercase',
 
