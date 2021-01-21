@@ -14,7 +14,7 @@ export default {
     boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.65)',
     color: colorsTextIcon.highOnDark,
     display: 'flex',
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     justifyContent: 'center',
     left: layout.spacingSmall,
