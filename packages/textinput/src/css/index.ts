@@ -52,7 +52,7 @@ export default {
     background: 'none',
     border: 'none',
     color: 'inherit',
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightStandard,
     outline: 'none',
     padding: 0,
@@ -131,7 +131,7 @@ export default {
   // __label
   '.psds-text-input__label': {
     color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightMedium,
     marginBottom: layout.spacingXXSmall
   },
@@ -142,7 +142,7 @@ export default {
   // __sub-label
   '.psds-text-input__sub-label': {
     color: colorsTextIcon.lowOnDark,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     fontWeight: type.fontWeightBook,
     marginTop: layout.spacingXXSmall
   },
