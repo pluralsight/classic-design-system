@@ -21,7 +21,7 @@ export default {
     whiteSpace: 'pre-wrap',
     fontFamily: type.fontFamilyCode,
     fontWeight: type.fontWeightMedium,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     wordBreak: 'break-word'
   },
   [`.psds-text__code.psds-theme--${themeNames.light}`]: {
