@@ -30,7 +30,7 @@ export default {
     color: colorsTextIcon.highOnLight,
     cursor: 'pointer',
     display: 'flex',
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     lineHeight: type.lineHeightExtra,
     overflow: 'hidden',
     paddingBottom: '0',
