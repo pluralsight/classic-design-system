@@ -62,7 +62,7 @@ export default {
     borderColor: 'transparent',
     color: 'initial',
     fontSize: type.fontSize200,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightTight,
     verticalAlign: 'middle',
     width: '100%',
@@ -95,7 +95,7 @@ export default {
     label: 'table__head',
 
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     textTransform: 'uppercase',
 
     '& > tr:first-of-type': { borderTop: 'none' }
@@ -110,7 +110,7 @@ export default {
     textAlign: 'left',
 
     '& > div': {
-      fontWeight: type.fontWeightBold,
+      fontWeight: type.fontWeight700,
       padding: cellPadding,
       verticalAlign: 'bottom',
       whiteSpace: 'nowrap'
