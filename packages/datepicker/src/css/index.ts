@@ -103,7 +103,7 @@ export default {
   '.psds-date-picker__label': {
     color: colorsTextIcon.highOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     marginBottom: layout.spacingXXSmall
   },
   [`.psds-date-picker__label.psds-theme--${themeNames.light}`]: {
@@ -114,7 +114,7 @@ export default {
   '.psds-date-picker__sub-label': {
     color: colorsTextIcon.lowOnDark,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     marginTop: layout.spacingXXSmall
   },
   [`.psds-date-picker__sub-label.psds-theme--${themeNames.light}`]: {
@@ -156,7 +156,7 @@ export default {
     borderRadius: '2px',
     padding: `${layout.spacingMedium} ${layout.spacingLarge}`,
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
     opacity: 0,
     transform: `translateY(calc(-1 * ${layout.spacingXSmall}))`,
@@ -198,7 +198,7 @@ export default {
     ...dayDimensions,
     borderRadius: '50%',
     lineHeight: '1em',
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     background: 'none',
     cursor: 'pointer',
 
