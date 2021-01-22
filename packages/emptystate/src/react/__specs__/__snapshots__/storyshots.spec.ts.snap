@@ -56,7 +56,7 @@ exports[`Storyshots EmptyState combo 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
@@ -146,7 +146,7 @@ exports[`Storyshots EmptyState in a small fixed size container 1`] = `
       </svg>
     </div>
     <h1
-      data-css-amk6wt=""
+      data-css-1akj4c1=""
     >
       Filet mignon pork chop salami shank tail.
     </h1>
@@ -230,7 +230,7 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
@@ -342,7 +342,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
@@ -544,7 +544,7 @@ exports[`Storyshots EmptyState/actions with tags 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
@@ -740,7 +740,7 @@ exports[`Storyshots EmptyState/illustrations/large bookmark 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     bookmark
   </h1>
@@ -792,7 +792,7 @@ exports[`Storyshots EmptyState/illustrations/large channel 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     channel
   </h1>
@@ -843,7 +843,7 @@ exports[`Storyshots EmptyState/illustrations/large cloud 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     cloud
   </h1>
@@ -931,7 +931,7 @@ exports[`Storyshots EmptyState/illustrations/large code 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     code
   </h1>
@@ -957,7 +957,7 @@ exports[`Storyshots EmptyState/illustrations/large custom 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     Custom Illustration
   </h1>
@@ -1014,7 +1014,7 @@ exports[`Storyshots EmptyState/illustrations/large data 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     data
   </h1>
@@ -1094,7 +1094,7 @@ exports[`Storyshots EmptyState/illustrations/large document 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     document
   </h1>
@@ -1163,7 +1163,7 @@ exports[`Storyshots EmptyState/illustrations/large magnify 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     magnify
   </h1>
@@ -1221,7 +1221,7 @@ exports[`Storyshots EmptyState/illustrations/large signal 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     signal
   </h1>
@@ -1261,7 +1261,7 @@ exports[`Storyshots EmptyState/illustrations/large video 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     video
   </h1>
@@ -1314,7 +1314,7 @@ exports[`Storyshots EmptyState/illustrations/large zen 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     zen
   </h1>
@@ -1354,7 +1354,7 @@ exports[`Storyshots EmptyState/illustrations/small bookmark 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     bookmark
   </h1>
@@ -1411,7 +1411,7 @@ exports[`Storyshots EmptyState/illustrations/small channel 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     channel
   </h1>
@@ -1451,7 +1451,7 @@ exports[`Storyshots EmptyState/illustrations/small cloud 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     cloud
   </h1>
@@ -1534,7 +1534,7 @@ exports[`Storyshots EmptyState/illustrations/small code 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     code
   </h1>
@@ -1560,7 +1560,7 @@ exports[`Storyshots EmptyState/illustrations/small custom 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     Custom Illustration
   </h1>
@@ -1597,7 +1597,7 @@ exports[`Storyshots EmptyState/illustrations/small data 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     data
   </h1>
@@ -1660,7 +1660,7 @@ exports[`Storyshots EmptyState/illustrations/small document 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     document
   </h1>
@@ -1723,7 +1723,7 @@ exports[`Storyshots EmptyState/illustrations/small magnify 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     magnify
   </h1>
@@ -1762,7 +1762,7 @@ exports[`Storyshots EmptyState/illustrations/small signal 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     signal
   </h1>
@@ -1794,7 +1794,7 @@ exports[`Storyshots EmptyState/illustrations/small video 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     video
   </h1>
@@ -1853,7 +1853,7 @@ exports[`Storyshots EmptyState/illustrations/small zen 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     zen
   </h1>
@@ -1929,7 +1929,7 @@ Array [
       </svg>
     </div>
     <h1
-      data-css-amk6wt=""
+      data-css-1akj4c1=""
     >
       Filet mignon pork chop salami shank tail.
     </h1>
@@ -2019,7 +2019,7 @@ exports[`Storyshots EmptyState/sizes large 1`] = `
     </svg>
   </div>
   <h1
-    data-css-10xrzzy=""
+    data-css-u9a1zj=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
@@ -2102,7 +2102,7 @@ exports[`Storyshots EmptyState/sizes small 1`] = `
     </svg>
   </div>
   <h1
-    data-css-amk6wt=""
+    data-css-1akj4c1=""
   >
     Filet mignon pork chop salami shank tail.
   </h1>
