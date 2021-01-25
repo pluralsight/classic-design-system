@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.8.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.7.3...@pluralsight/ps-design-system-core@6.8.0) (2021-01-25)
+
+
+### Bug Fixes
+
+* **core:** adjust letterSpacingSmallCaps css var ([fc47657](https://github.com/pluralsight/design-system/commit/fc4765715536c12c8ab5ca9d379ddbc2f4ebb546)), closes [#1568](https://github.com/pluralsight/design-system/issues/1568)
+
+
+### Features
+
+* **core:** add large display font sizes ([b0f8a16](https://github.com/pluralsight/design-system/commit/b0f8a168b009cc7e96bf771367e4163cf82f853f))
+
+
+
+
+
 ## [6.7.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.7.2...@pluralsight/ps-design-system-core@6.7.3) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core

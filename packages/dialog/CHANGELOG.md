@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@9.0.17...@pluralsight/ps-design-system-dialog@10.0.0) (2021-01-25)
+
+
+### Build System
+
+* **dialog:** update to react@17 ([e23f796](https://github.com/pluralsight/design-system/commit/e23f79664e1655264446e8a1c15fe41c20a55237))
+
+
+### BREAKING CHANGES
+
+* **dialog:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [9.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@9.0.16...@pluralsight/ps-design-system-dialog@9.0.17) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

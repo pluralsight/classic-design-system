@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@8.0.13...@pluralsight/ps-design-system-drawer@9.0.0) (2021-01-25)
+
+
+### Build System
+
+* **drawer:** update to react@17 ([3bf1f2e](https://github.com/pluralsight/design-system/commit/3bf1f2e8bff0989849a48be4292bc6fdc6483cb5))
+
+
+### BREAKING CHANGES
+
+* **drawer:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [8.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@8.0.12...@pluralsight/ps-design-system-drawer@8.0.13) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

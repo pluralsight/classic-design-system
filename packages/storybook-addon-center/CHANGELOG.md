@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-center@3.2.1...@pluralsight/ps-design-system-storybook-addon-center@4.0.0) (2021-01-25)
+
+
+### Build System
+
+* **storybook-addon-center:** update to react@17 ([de23387](https://github.com/pluralsight/design-system/commit/de23387e71760944d7582a290ae6bbeac47a163c))
+
+
+### BREAKING CHANGES
+
+* **storybook-addon-center:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [3.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-center@3.2.0...@pluralsight/ps-design-system-storybook-addon-center@3.2.1) (2021-01-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-center

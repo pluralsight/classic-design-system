@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@7.0.22...@pluralsight/ps-design-system-circularprogress@8.0.0) (2021-01-25)
+
+
+### Build System
+
+* **circularprogress:** update to react@17 ([f87e0cc](https://github.com/pluralsight/design-system/commit/f87e0cce4cb2c69e56ef4a864b7eecbc16958345))
+
+
+### BREAKING CHANGES
+
+* **circularprogress:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [7.0.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@7.0.21...@pluralsight/ps-design-system-circularprogress@7.0.22) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress

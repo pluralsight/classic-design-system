@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@5.2.23...@pluralsight/ps-design-system-focusmanager@6.0.0) (2021-01-25)
+
+
+### Build System
+
+* **focusmanager:** update to react@17 ([bc5e5b8](https://github.com/pluralsight/design-system/commit/bc5e5b82ac8940641188fe67fe6aac8df5b5fa44))
+
+
+### BREAKING CHANGES
+
+* **focusmanager:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [5.2.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@5.2.22...@pluralsight/ps-design-system-focusmanager@5.2.23) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

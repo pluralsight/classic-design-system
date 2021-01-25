@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@9.0.24...@pluralsight/ps-design-system-textinput@10.0.0) (2021-01-25)
+
+
+### Build System
+
+* **textinput:** update to react@17 ([b210d92](https://github.com/pluralsight/design-system/commit/b210d9267e2ea1b205a3683915edf00db7599cc0))
+
+
+### BREAKING CHANGES
+
+* **textinput:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [9.0.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@9.0.23...@pluralsight/ps-design-system-textinput@9.0.24) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

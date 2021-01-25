@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@5.2.25...@pluralsight/ps-design-system-linearprogress@6.0.0) (2021-01-25)
+
+
+### Build System
+
+* **linearprogress:** update to react@17 ([8022d0c](https://github.com/pluralsight/design-system/commit/8022d0c82e2b0e584c2d0c51fc9d879805a52b16))
+
+
+### BREAKING CHANGES
+
+* **linearprogress:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [5.2.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@5.2.24...@pluralsight/ps-design-system-linearprogress@5.2.25) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-linearprogress

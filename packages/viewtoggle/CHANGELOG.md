@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@6.1.25...@pluralsight/ps-design-system-viewtoggle@7.0.0) (2021-01-25)
+
+
+### Build System
+
+* **viewtoggle:** update to react@17 ([d3b92ca](https://github.com/pluralsight/design-system/commit/d3b92cafa7d3221b26181c5d9bb1870e24d33147))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [6.1.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@6.1.24...@pluralsight/ps-design-system-viewtoggle@6.1.25) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

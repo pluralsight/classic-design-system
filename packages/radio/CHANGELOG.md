@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@7.2.24...@pluralsight/ps-design-system-radio@8.0.0) (2021-01-25)
+
+
+### Build System
+
+* **radio:** update to react@17 ([f599695](https://github.com/pluralsight/design-system/commit/f599695878ec652e189e2933683d9f74587aa4fc))
+
+
+### BREAKING CHANGES
+
+* **radio:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [7.2.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@7.2.23...@pluralsight/ps-design-system-radio@7.2.24) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio
