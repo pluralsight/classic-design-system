@@ -17,6 +17,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-storybook-addon-center": "^3.2.1",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^7.1.23",
+    "@storybook/addon-a11y": "^6.0.21",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-viewport": "^6.0.21",
     "@storybook/addons": "^6.0.21",

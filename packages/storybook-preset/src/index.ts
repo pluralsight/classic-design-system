@@ -3,6 +3,7 @@ import { merge as wpMerge } from 'webpack-merge'
 
 const addons = {
   actions: '@storybook/addon-actions',
+  a11y: '@storybook/addon-a11y',
   center: '@pluralsight/ps-design-system-storybook-addon-center',
   theme: '@pluralsight/ps-design-system-storybook-addon-theme',
   viewport: '@storybook/addon-viewport'
@@ -16,11 +17,26 @@ export function config(entry = [], options: Options = {}) {
     .filter(key => optionEnabled(options[key]))
     .map(key => addons[key])
     .reduce((acc, pkgName) => {
+      let addonSupportsPreview = false
+
       try {
         const preview = join(pkgName, 'preview')
         acc = acc.concat(require.resolve(preview))
+
+        addonSupportsPreview = true
+
         // eslint-disable-next-line
       } catch (err) {}
+
+      if (!addonSupportsPreview) {
+        try {
+          const preset = join(pkgName, 'preset')
+          const { config: presetConfig } = require(require.resolve(preset))
+          acc = acc.concat(presetConfig())
+
+          // eslint-disable-next-line
+        } catch (err) {}
+      }
 
       return acc
     }, [])
