@@ -117,7 +117,7 @@ export default {
 
     '& > *': {
       fontSize: type.fontSize200,
-      fontWeight: type.fontWeight700,
+      fontWeight: type.fontWeightStrong,
       lineHeight: type.lineHeightTight
     },
     '& a': {

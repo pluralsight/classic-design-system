@@ -110,7 +110,7 @@ export default {
     textAlign: 'left',
 
     '& > div': {
-      fontWeight: type.fontWeight700,
+      fontWeight: type.fontWeightStrong,
       padding: cellPadding,
       verticalAlign: 'bottom',
       whiteSpace: 'nowrap'

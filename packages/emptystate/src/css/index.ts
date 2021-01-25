@@ -74,7 +74,7 @@ export default {
     fontSize: type.fontSize400
   },
   ['.psds-emptystate__heading' + sizeClasses.large]: {
-    fontSize: type.fontSize600,
+    fontSize: type.fontSize700,
     lineHeight: type.lineHeightExtra
   },
 

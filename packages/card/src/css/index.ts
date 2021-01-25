@@ -210,7 +210,7 @@ export default {
     color: colorsTextIcon.highOnLight,
     textTransform: 'uppercase',
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeight700,
+    fontWeight: type.fontWeightStrong,
     lineHeight: '16px',
     boxShadow: '0 1px 4px 0 rgba(0, 0, 0, 0.5)',
     maxWidth: '75%'
