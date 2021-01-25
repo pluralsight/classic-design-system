@@ -46,7 +46,7 @@ exports[`Storyshots Note basic 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -129,7 +129,7 @@ exports[`Storyshots Note with DS Text components 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           <h3
             data-css-obtfp0=""
@@ -223,7 +223,7 @@ exports[`Storyshots Note with h1 in heading 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           <h1>
             Bob Ross
@@ -319,7 +319,7 @@ exports[`Storyshots Note with linked avatar 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -402,7 +402,7 @@ exports[`Storyshots Note with linked heading 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           <p>
             <a
@@ -707,7 +707,7 @@ exports[`Storyshots Note/actions one action 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -812,7 +812,7 @@ exports[`Storyshots Note/actions three actions 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -955,7 +955,7 @@ exports[`Storyshots Note/actions two actions 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -1078,7 +1078,7 @@ exports[`Storyshots Note/actions visible on hover 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -1183,7 +1183,7 @@ exports[`Storyshots Note/actions with an action menu 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -1296,7 +1296,7 @@ exports[`Storyshots Note/actions with long heading 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           This is probably the greatest thing that's ever happened in my life
         </div>
@@ -1513,7 +1513,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-15wuh48=""
+              data-css-191rnud=""
             >
               Bob Ross
             </div>
@@ -1589,7 +1589,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-15wuh48=""
+              data-css-191rnud=""
             >
               Bob Ross
             </div>
@@ -1665,7 +1665,7 @@ exports[`Storyshots Note/in a list basic 1`] = `
             data-css-1wkpnw7=""
           >
             <div
-              data-css-15wuh48=""
+              data-css-191rnud=""
             >
               Bob Ross
             </div>
@@ -1750,7 +1750,7 @@ exports[`Storyshots Note/metadata as a link 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>
@@ -1843,7 +1843,7 @@ exports[`Storyshots Note/metadata with long strings 1`] = `
         data-css-1wkpnw7=""
       >
         <div
-          data-css-15wuh48=""
+          data-css-191rnud=""
         >
           Bob Ross
         </div>

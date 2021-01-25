@@ -20,8 +20,8 @@ export default {
     lineHeight: type.lineHeightStandard,
     whiteSpace: 'pre-wrap',
     fontFamily: type.fontFamilyCode,
-    fontWeight: type.fontWeightMedium,
-    fontSize: type.fontSizeSmall,
+    fontWeight: type.fontWeight500,
+    fontSize: type.fontSize200,
     wordBreak: 'break-word'
   },
   [`.psds-text__code.psds-theme--${themeNames.light}`]: {
