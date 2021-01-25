@@ -3964,6 +3964,7 @@ exports[`Storyshots SingleDate calendar: input with dropdown 1`] = `
             data-css-1iyk6mt=""
             disabled={false}
             onChange={[Function]}
+            placeholder="mm/dd/yyyy"
             value=""
           />
         </div>
