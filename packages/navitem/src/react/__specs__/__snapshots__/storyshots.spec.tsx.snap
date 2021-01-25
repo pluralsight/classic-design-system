@@ -333,6 +333,119 @@ exports[`Storyshots NavItem horizontal 1`] = `
 </div>
 `;
 
+exports[`Storyshots NavItem position 1`] = `
+<div>
+  <button
+    data-css-15ils3b=""
+    disabled={false}
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="home icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            clipRule="evenodd"
+            d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      Button 
+      false
+    </span>
+  </button>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+  <span
+    data-css-ruxays=""
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <button
+        data-css-zyosl8=""
+        onClick={[Function]}
+      >
+        <span
+          data-css-5vea0s=""
+        >
+          <span
+            data-css-1o9ctb7=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
+          <span
+            data-css-1c3u483=""
+          >
+            NavItem 
+            false
+          </span>
+          <span
+            data-css-1cbyl54=""
+          >
+            <div
+              data-css-1gzzcm2=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      data-css-1pig4yn=""
+    />
+  </span>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots NavItem rest props 1`] = `
 Array [
   <span
