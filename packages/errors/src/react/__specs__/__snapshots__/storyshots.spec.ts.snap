@@ -2,7 +2,7 @@
 
 exports[`Storyshots pages 403: large 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-11zs1jp=""
@@ -59,7 +59,7 @@ exports[`Storyshots pages 403: large 1`] = `
     You’re not authorized to view this page
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Try contacting support or your plan administrator.
      
@@ -70,7 +70,7 @@ exports[`Storyshots pages 403: large 1`] = `
     error code: 403
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -85,7 +85,7 @@ exports[`Storyshots pages 403: large 1`] = `
 
 exports[`Storyshots pages 403: small 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-1gwvklx=""
@@ -135,7 +135,7 @@ exports[`Storyshots pages 403: small 1`] = `
     You’re not authorized to view this page
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Try contacting support or your plan administrator.
      
@@ -146,7 +146,7 @@ exports[`Storyshots pages 403: small 1`] = `
     error code: 403
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -161,7 +161,7 @@ exports[`Storyshots pages 403: small 1`] = `
 
 exports[`Storyshots pages 404: large 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-11zs1jp=""
@@ -218,7 +218,7 @@ exports[`Storyshots pages 404: large 1`] = `
     The page you are looking for can’t be found
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Check the web address and try again.
      
@@ -229,7 +229,7 @@ exports[`Storyshots pages 404: large 1`] = `
     error code: 404
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -244,7 +244,7 @@ exports[`Storyshots pages 404: large 1`] = `
 
 exports[`Storyshots pages 404: small 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-1gwvklx=""
@@ -294,7 +294,7 @@ exports[`Storyshots pages 404: small 1`] = `
     The page you are looking for can’t be found
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Check the web address and try again.
      
@@ -305,7 +305,7 @@ exports[`Storyshots pages 404: small 1`] = `
     error code: 404
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -320,7 +320,7 @@ exports[`Storyshots pages 404: small 1`] = `
 
 exports[`Storyshots pages 500: large 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-11zs1jp=""
@@ -377,7 +377,7 @@ exports[`Storyshots pages 500: large 1`] = `
     There’s a problem loading this page
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Please try again. If you continue to experience problems, let us know.
      
@@ -388,7 +388,7 @@ exports[`Storyshots pages 500: large 1`] = `
     error code: 500
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -403,7 +403,7 @@ exports[`Storyshots pages 500: large 1`] = `
 
 exports[`Storyshots pages 500: small 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-1gwvklx=""
@@ -453,7 +453,7 @@ exports[`Storyshots pages 500: small 1`] = `
     There’s a problem loading this page
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Please try again. If you continue to experience problems, let us know.
      
@@ -464,7 +464,7 @@ exports[`Storyshots pages 500: small 1`] = `
     error code: 500
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -479,7 +479,7 @@ exports[`Storyshots pages 500: small 1`] = `
 
 exports[`Storyshots pages 503: large 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-11zs1jp=""
@@ -536,7 +536,7 @@ exports[`Storyshots pages 503: large 1`] = `
     The site is currently unavailable
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     We expect everything back in order shortly. Sorry for the inconvenience.
      
@@ -551,7 +551,7 @@ exports[`Storyshots pages 503: large 1`] = `
 
 exports[`Storyshots pages 503: small 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-1gwvklx=""
@@ -601,7 +601,7 @@ exports[`Storyshots pages 503: small 1`] = `
     The site is currently unavailable
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     We expect everything back in order shortly. Sorry for the inconvenience.
      
@@ -616,7 +616,7 @@ exports[`Storyshots pages 503: small 1`] = `
 
 exports[`Storyshots pages 504: large 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-11zs1jp=""
@@ -673,7 +673,7 @@ exports[`Storyshots pages 504: large 1`] = `
     There’s a problem loading this page
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Please try again. If you continue to experience problems, let us know.
      
@@ -684,7 +684,7 @@ exports[`Storyshots pages 504: large 1`] = `
     error code: 504
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -699,7 +699,7 @@ exports[`Storyshots pages 504: large 1`] = `
 
 exports[`Storyshots pages 504: small 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-1gwvklx=""
@@ -749,7 +749,7 @@ exports[`Storyshots pages 504: small 1`] = `
     There’s a problem loading this page
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Please try again. If you continue to experience problems, let us know.
      
@@ -760,7 +760,7 @@ exports[`Storyshots pages 504: small 1`] = `
     error code: 504
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -775,7 +775,7 @@ exports[`Storyshots pages 504: small 1`] = `
 
 exports[`Storyshots pages Custom: large 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-11zs1jp=""
@@ -832,7 +832,7 @@ exports[`Storyshots pages Custom: large 1`] = `
     Heading goes here
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Error caption goes here
   </p>
@@ -842,7 +842,7 @@ exports[`Storyshots pages Custom: large 1`] = `
     error code: ### 
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >
@@ -857,7 +857,7 @@ exports[`Storyshots pages Custom: large 1`] = `
 
 exports[`Storyshots pages Custom: small 1`] = `
 <div
-  data-css-g3x4fp=""
+  data-css-3s9q5m=""
 >
   <div
     data-css-1gwvklx=""
@@ -907,7 +907,7 @@ exports[`Storyshots pages Custom: small 1`] = `
     Heading goes here
   </h1>
   <p
-    data-css-146pdhd=""
+    data-css-tjvoq7=""
   >
     Error caption goes here
   </p>
@@ -917,7 +917,7 @@ exports[`Storyshots pages Custom: small 1`] = `
     error code: ### 
   </p>
   <a
-    data-css-176v989=""
+    data-css-a3dmt8=""
     href="https://help.pluralsight.com/help/contact-us"
     style={Object {}}
   >

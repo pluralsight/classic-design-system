@@ -43,6 +43,6 @@ stories.add('style override', () => (
 
 stories.add('className override', () => (
   <Heading className={(className as unknown) as string}>
-    <h2>orange</h2>
+    <h2>blue</h2>
   </Heading>
 ))

@@ -3,6 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.15...@pluralsight/ps-design-system-navitem@1.5.16) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.14...@pluralsight/ps-design-system-navitem@1.5.15) (2021-01-05)
+
+
+### Bug Fixes
+
+* **navitem:** pass unspecified props to button ([e7d2a23](https://github.com/pluralsight/design-system/commit/e7d2a235e344716284f70d9824e058537aea9104))
+
+
+
+
+
+## [1.5.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.13...@pluralsight/ps-design-system-navitem@1.5.14) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.12...@pluralsight/ps-design-system-navitem@1.5.13) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.11...@pluralsight/ps-design-system-navitem@1.5.12) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.10...@pluralsight/ps-design-system-navitem@1.5.11) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.9...@pluralsight/ps-design-system-navitem@1.5.10) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.8...@pluralsight/ps-design-system-navitem@1.5.9) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.7...@pluralsight/ps-design-system-navitem@1.5.8) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
+## [1.5.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.6...@pluralsight/ps-design-system-navitem@1.5.7) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
+## [1.5.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.5...@pluralsight/ps-design-system-navitem@1.5.6) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
 ## [1.5.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.4...@pluralsight/ps-design-system-navitem@1.5.5) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem

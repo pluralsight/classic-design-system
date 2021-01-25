@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.25...@pluralsight/ps-design-system-datawell@4.1.26) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.24...@pluralsight/ps-design-system-datawell@4.1.25) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.23...@pluralsight/ps-design-system-datawell@4.1.24) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.22...@pluralsight/ps-design-system-datawell@4.1.23) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.21...@pluralsight/ps-design-system-datawell@4.1.22) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.20...@pluralsight/ps-design-system-datawell@4.1.21) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.19...@pluralsight/ps-design-system-datawell@4.1.20) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.18...@pluralsight/ps-design-system-datawell@4.1.19) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
+## [4.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.17...@pluralsight/ps-design-system-datawell@4.1.18) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [4.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.16...@pluralsight/ps-design-system-datawell@4.1.17) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
 ## [4.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@4.1.15...@pluralsight/ps-design-system-datawell@4.1.16) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datawell

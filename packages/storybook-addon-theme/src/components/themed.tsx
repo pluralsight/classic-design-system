@@ -21,8 +21,8 @@ export const Themed: React.FC<ThemedProps> = props => {
 const Container = styled.div<{ themeName: keyof typeof Theme.names }>`
   background-color: ${({ themeName }) =>
     themeName === Theme.names.dark
-      ? core.colorsBackgroundDark[2]
-      : core.colorsBackgroundLight[2]};
+      ? core.colorsBackgroundDark[1]
+      : core.colorsBackgroundLight[3]};
   color: ${({ themeName }) =>
     themeName === Theme.names.dark
       ? core.colorsTextIcon.highOnDark

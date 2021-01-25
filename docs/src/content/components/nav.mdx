@@ -11,11 +11,110 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
 
 # Global navigation
 
+<Intro>
+  Nav components are the building blocks for creating the global navigation bar
+  for your experience.
+</Intro>
+
 <TableOfContents {...props} />
+
+## Reference design
+
+This is an example of how the navigation components can be used together to create a global navigation system for your product experience that is consistent with other global navigation bars across Pluralsight&rsquo;s apps.
+
+```typescript
+import { AccountIcon, BrowseIcon NotificationsIcon } from '@pluralsight/ps-design-system-icon'
+import { layout } from '@pluralsight/ps-design-system-core'
+import NavBar from '@pluralsight/ps-design-system-navbar'
+import NavBrand from '@pluralsight/ps-design-system-navbrand'
+import NavItem from '@pluralsight/ps-design-system-navitem'
+import NavUser from '@pluralsight/ps-design-system-navuser'
+import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
+import React from 'react'
+
+function Example() {
+  return <NavBar
+    brand={<NavBrand logo={<MyLogo />} wordmark="TITLE" />}
+    items={
+      <>
+        <div
+          style={{
+            marginRight: layout.spacingXXSmall,
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<HomeIcon />}>Home</NavItem>
+        </div>
+        <div
+          style={{
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<BrowseIcon />} selected>
+            Browse
+          </NavItem>
+        </div>
+      </>
+    }
+    onMobileMenuClick={() => alert('mobile click')}
+    user={
+      <NavUser
+        name="Jake"
+        planName="Accenture"
+        onClick={() => alert('user click')}
+      />
+    }
+    utility={
+      <React.Fragment>
+        <div
+          style={{
+            marginRight: layout.spacingXXSmall,
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<NotificationsIcon />} />
+        </div>
+        <div
+          style={{
+            display: 'inline-block'
+          }}
+        >
+          <NavItem icon={<AccountIcon />} />
+        </div>
+      </React.Fragment>
+    }
+  />
+}
+
+export default Example
+
+function MyLogo() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="24" height="24" fill="url(#logo)" />
+      <defs>
+        <linearGradient id="logo" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#8A99A8" />
+          <stop offset="1" stopColor="#576675" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+```
+
+### Global navigation guidelines
+
+To ensure consistency when navigating across product experiences with different global navigation:
+
+- Always keep the navigation bar height 56px.
+- The navigation bar should be fluid and sticky to the left/top/right edges of the browser viewport. This will happen automatically if you use the app frame component.
+- The brand, utility, and user elements should always be in the same place to ensure consistency across products. Brand on the left, utility and user on the right.
+- The items visible to a user in the product switcher should be the same across all products.
 
 ## Nav bar
 
-### Examples
+### Example
 
 The nav bar component is the container of the global navigation. It’s 56px tall and should be fluid and sticky to the left/top/right of the browser viewport.
 
@@ -56,11 +155,6 @@ function Example() {
 
 export default Example
 ```
-
-### Nav bar guidelines
-
-- Always keep the navigation bar height 56px.
-- The navigation bar should be fluid and sticky to the left/top/right edges of the browser viewport. This will happen automatically if you use the app frame component.
 
 ### Nav bar usage & types
 
@@ -170,7 +264,11 @@ export default Example
     desc="active element indicator"
   />
   <TypesProp name="children" type="React.ReactNode" desc="label" />
-  <TypesProp name="renderContainer" type="(props) => React.ReactNode" desc="render custom link element" />
+  <TypesProp
+    name="renderContainer"
+    type="(props) => React.ReactNode"
+    desc="render custom link element"
+  />
   <TypesProp name="icon" type="React.ReactNode" desc="icon displayed" />
   <TypesProp
     name="menu"
@@ -310,7 +408,7 @@ export default Example
 
 ## Nav cookie banner
 
-### Examples
+### Example
 
 The nav cookie banner is common nav element that should be present on the page in order to comply with laws requiring notice that cookies are used in our product. It will be affixed to the bottom/left of the app frame.
 
@@ -360,88 +458,3 @@ export default Example
     desc="date of last terms update"
   />
 </TypesTable>
-
-## Reference design
-
-This is a more full example of how the navigation components can be used together to create a consistent global navigation system for your app.
-
-```typescript
-import { AccountIcon, BrowseIcon NotificationsIcon } from '@pluralsight/ps-design-system-icon'
-import { layout } from '@pluralsight/ps-design-system-core'
-import NavBar from '@pluralsight/ps-design-system-navbar'
-import NavBrand from '@pluralsight/ps-design-system-navbrand'
-import NavItem from '@pluralsight/ps-design-system-navitem'
-import NavUser from '@pluralsight/ps-design-system-navuser'
-import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
-import React from 'react'
-
-function Example() {
-  return <NavBar
-    brand={<NavBrand logo={<MyLogo />} wordmark="TITLE" />}
-    items={
-      <>
-        <div
-          style={{
-            marginRight: layout.spacingXXSmall,
-            display: 'inline-block'
-          }}
-        >
-          <NavItem icon={<HomeIcon />}>Home</NavItem>
-        </div>
-        <div
-          style={{
-            display: 'inline-block'
-          }}
-        >
-          <NavItem icon={<BrowseIcon />} selected>
-            Browse
-          </NavItem>
-        </div>
-      </>
-    }
-    onMobileMenuClick={() => alert('mobile click')}
-    user={
-      <NavUser
-        name="Jake"
-        planName="Accenture"
-        onClick={() => alert('user click')}
-      />
-    }
-    utility={
-      <React.Fragment>
-        <div
-          style={{
-            marginRight: layout.spacingXXSmall,
-            display: 'inline-block'
-          }}
-        >
-          <NavItem icon={<NotificationsIcon />} />
-        </div>
-        <div
-          style={{
-            display: 'inline-block'
-          }}
-        >
-          <NavItem icon={<AccountIcon />} />
-        </div>
-      </React.Fragment>
-    }
-  />
-}
-
-export default Example
-
-function MyLogo() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="24" height="24" fill="url(#logo)" />
-      <defs>
-        <linearGradient id="logo" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#8A99A8" />
-          <stop offset="1" stopColor="#576675" />
-        </linearGradient>
-      </defs>
-    </svg>
-  )
-}
-```

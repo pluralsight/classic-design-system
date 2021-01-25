@@ -2,28 +2,21 @@
   display: grid;
   grid-template-columns: 90px 1fr;
   grid-gap: var(--psLayoutSpacingMedium);
-  grid-template-areas: 'letters vars' 'weight weight';
   color: var(--appColorsTextIconHigh);
   margin-bottom: var(--psLayoutSpacingLarge);
 }
 .weightLetters {
-  grid-area: letters;
-  font-size: var(--psTypeFontSizeGigantic);
-  letter-spacing: var(--psTypeLetterSpacingGigantic);
+  font-size: var(--psTypeFontSize800);
+  letter-spacing: var(--psTypeLetterSpacingWide);
   line-height: 1em;
 }
 .labels {
-  grid-area: vars;
-  display: flex;
-  flex-direction: column-reverse;
-  font-size: var(--psTypeFontSizeXSmall);
-  font-weight: var(--psTypeFontWeightMedium);
+  font-size: var(--psTypeFontSize200);
 }
 .labels code {
   color: var(--psColorsPink6);
 }
 .weightLabel {
-  grid-area: weight;
   color: var(--appColorsTextIconLow);
-  font-size: var(--psTypeFontSizeXSmall);
+  font-size: var(--psTypeFontSizeBase);
 }

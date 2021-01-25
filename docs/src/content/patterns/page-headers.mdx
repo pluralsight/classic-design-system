@@ -1,0 +1,304 @@
+---
+name: Page headers
+route: /patterns/page-headers
+---
+
+# Page header patterns
+
+<TableOfContents {...props} />
+
+### "Basic" header
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Button from '@pluralsight/ps-design-system-button'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="basic-heading">
+      <div className="basic-heading__title">
+        <Heading size="xLarge">
+          <h1>Heading</h1>
+        </Heading>
+      </div>
+      <div className="basic-heading__button-bar">
+        <SearchInput placeholder="Placeholder" />
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button>Label</Button>
+      </div>
+      <style jsx>{`
+        .basic-heading__button-bar > * {
+          margin-bottom: ${layout.spacingXSmall};
+        }
+        @media (max-width: 767px) {
+          .basic-heading__button-bar > * {
+            display: block;
+            width: 100%;
+          }
+        }
+        @media (min-width: 768px) {
+          .basic-heading__button-bar {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .basic-heading__button-bar > * {
+            margin-right: ${layout.spacingXSmall};
+          }
+          .basic-heading__button-bar > *:last-child {
+            margin-right: 0;
+          }
+        }
+        @media (min-width: 1024px) {
+          .basic-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .basic-heading__title {
+            margin-right: ${layout.spacingLarge};
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```
+
+### "Basic alt 2" header
+
+```typescript
+import { layout } from '@pluralsight/ps-design-system-core'
+import Button from '@pluralsight/ps-design-system-button'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="basic-heading2">
+      <div className="basic-heading2__title">
+        <Heading>
+          <h1>Heading</h1>
+        </Heading>
+        <PlaceholderIcon />
+      </div>
+      <div className="basic-heading2__button-bar">
+        <Button>Label</Button>
+        <SearchInput placeholder="Placeholder" />
+      </div>
+      <style jsx>{`
+        .basic-heading2__title {
+          display: flex;
+          align-items: center;
+        }
+        .basic-heading2__title > *:last-child {
+          margin-left: ${layout.spacingSmall};
+        }
+        .basic-heading2__button-bar > * {
+          margin-bottom: ${layout.spacingXSmall};
+        }
+        @media (max-width: 767px) {
+          .basic-heading2__button-bar > * {
+            display: block;
+            width: 100%;
+          }
+        }
+        @media (min-width: 768px) {
+          .basic-heading2__button-bar {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .basic-heading2__button-bar > * {
+            margin-right: ${layout.spacingXSmall};
+          }
+          .basic-heading2__button-bar > *:last-child {
+            margin-right: 0;
+          }
+        }
+        @media (min-width: 1024px) {
+          .basic-heading2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .basic-heading2__title {
+            margin-right: ${layout.spacingLarge};
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```
+
+### "Robust" header
+
+```typescript
+import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
+import Badge from '@pluralsight/ps-design-system-badge'
+import Button from '@pluralsight/ps-design-system-button'
+import StarRating from '@pluralsight/ps-design-system-starrating'
+import Tag from '@pluralsight/ps-design-system-tag'
+import { Heading } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="robust-heading">
+      <Badge>Course</Badge>
+      <Heading>
+        <h1>Heading</h1>
+      </Heading>
+      <P>
+        I'm baby chambray cronut vegan cray banjo man bun organic biodiesel
+        readymade tumblr la croix pug blog microdosing. Cred squid man bun
+        iPhone, ethical banh mi post-ironic palo santo 90's vexillologist. 8-bit
+        viral.
+      </P>
+      <div className="robust-heading__tags">
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+        <Tag>Tag label</Tag>
+      </div>
+      <ul className="robust-heading__metadata">
+        <li>Meta data</li>
+        <li>Meta data</li>
+        <li>Meta data</li>
+        <li>
+          <StarRating value={3} />
+        </li>
+      </ul>
+      <div className="robust-heading__button-bar">
+        <Button>Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+        <Button appearance="secondary">Label</Button>
+      </div>
+      <style jsx>{`
+        .robust-heading__tags {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .robust-heading__tags > * {
+          margin-right: ${layout.spacingXSmall};
+          margin-bottom: ${layout.spacingXSmall};
+        }
+        .robust-heading__metadata {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          list-style: none;
+          margin: ${layout.spacingXSmall} 0;
+        }
+        .robust-heading__metadata > * {
+          margin-bottom: ${layout.spacingXSmall};
+        }
+        .robust-heading__metadata > *:not(:last-child):after {
+          content: '\\00b7';
+          display: inline-block;
+          height: 1em;
+          width: ${layout.spacingLarge};
+          text-align: center;
+        }
+        .robust-heading__button-bar {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .robust-heading__button-bar > * {
+          margin-right: ${layout.spacingXSmall};
+          margin-bottom: ${layout.spacingXSmall};
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```
+
+### "Power" header
+
+```typescript
+import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
+import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
+import Button from '@pluralsight/ps-design-system-button'
+import { Label, Heading } from '@pluralsight/ps-design-system-text'
+import Tab from '@pluralsight/ps-design-system-tab'
+import React from 'react'
+
+function Example() {
+  return (
+    <div className="power-heading">
+      <div className="power-heading__title">
+        <div>
+          <Breadcrumb>Label</Breadcrumb>
+          <Heading>
+            <h1>Page Title</h1>
+          </Heading>
+        </div>
+        <div className="power-heading__main-action-group">
+          <div>
+            <div>
+              <Label strong size="medium">
+                Label: Status
+              </Label>
+            </div>
+            <div>
+              <Label color="secondary" size="small">
+                Sublabel: September 20, 2018
+              </Label>
+            </div>
+          </div>
+          <Button>Label</Button>
+        </div>
+      </div>
+      <Tab.List>
+        <Tab.ListItem active>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+        <Tab.ListItem>Label</Tab.ListItem>
+      </Tab.List>
+      <style jsx>{`
+        @media (max-width: 767px) {
+          .power-heading__main-action-group > * {
+            display: block;
+            width: 100%;
+          }
+          .power-heading__title {
+            margin-bottom: ${layout.spacingLarge};
+          }
+        }
+        @media (min-width: 768px) {
+          .power-heading__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+          }
+          .power-heading__main-action-group {
+            display: flex;
+            align-items: center;
+          }
+          .power-heading__main-action-group > div:first-child {
+            text-align: right;
+            margin-right: ${layout.spacingSmall};
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
+export default Example
+```

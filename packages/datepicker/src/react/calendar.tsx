@@ -37,9 +37,9 @@ const styles = {
     css(
       stylesheet[`.psds-calendar__grid-slide`],
       slide === 'forward' &&
-        stylesheet[`.psds-calendar__grid-slide--forward`](forward),
+      stylesheet[`.psds-calendar__grid-slide--forward`](forward),
       slide === 'backward' &&
-        stylesheet[`.psds-calendar__grid-slide--backward`](backward)
+      stylesheet[`.psds-calendar__grid-slide--backward`](backward)
     ),
   month: () => css(stylesheet['.psds-calendar__month']),
   header: () => css(stylesheet['.psds-calendar__header']),
@@ -68,7 +68,7 @@ const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 interface CalendarProps
   extends HTMLPropsFor<'div'>,
-    Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
+  Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
   slide?: ValueOf<typeof slides>
 }
 
@@ -129,8 +129,8 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                         appearance={Button.appearances.flat}
                       />
                     ) : (
-                      <div {...styles.headerButton()} />
-                    )}
+                        <div {...styles.headerButton()} />
+                      )}
                     <div
                       key={`${calendar.month}${calendar.year}`}
                       {...styles.headerMonth()}
@@ -146,8 +146,8 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                         appearance={Button.appearances.flat}
                       />
                     ) : (
-                      <div {...styles.headerButton()} />
-                    )}
+                        <div {...styles.headerButton()} />
+                      )}
                   </div>
                 </Theme>
                 {weekdayNamesShort.map(weekday => (

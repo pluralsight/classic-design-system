@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import { fireEvent, screen } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
@@ -176,7 +177,8 @@ it('closes the menu with escape', () => {
   button.focus()
   arrowDownKey()
 
-  let menu = screen.getByRole('listbox')
+  let menu
+  menu = screen.getByRole('listbox')
   expect(menu).toBeInTheDocument()
 
   escapeKey()
@@ -210,6 +212,34 @@ it('selects by click', () => {
 
   const input = screen.getByRole('combobox')
   expect(input).toHaveValue('h')
+})
+
+it('selects a value of 0', () => {
+  render(
+    <Dropdown
+      placeholder="Select"
+      value={1}
+      menu={[
+        <Dropdown.Item key="1" value={0}>
+          Zero
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value={1}>
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value={2}>
+          Two
+        </Dropdown.Item>
+      ]}
+    />
+  )
+  const button = screen.getByRole('button', { name: /One/ })
+  userEvent.click(button)
+
+  const item = screen.getByRole('option', { name: /Zero/ })
+  userEvent.click(item)
+
+  const input = screen.getByRole('combobox')
+  expect(input).toHaveValue('0')
 })
 
 it('navigates by arrows, selects by enter', () => {
@@ -394,30 +424,30 @@ it('calls on change with keydown on value', () => {
 })
 
 function enterKey() {
-  fireEvent.keyDown(document.activeElement, {
+  fireEvent.keyDown(document.activeElement!, {
     key: 'Enter',
     code: 'Enter'
   })
 }
 
 function spaceKey() {
-  fireEvent.keyDown(document.activeElement, { key: ' ', code: 'Space' })
+  fireEvent.keyDown(document.activeElement!, { key: ' ', code: 'Space' })
 }
 
 function arrowDownKey() {
-  fireEvent.keyDown(document.activeElement, {
+  fireEvent.keyDown(document.activeElement!, {
     key: 'ArrowDown',
     code: 'ArrowDown'
   })
 }
 
 function arrowUpKey() {
-  fireEvent.keyDown(document.activeElement, {
+  fireEvent.keyDown(document.activeElement!, {
     key: 'ArrowUp',
     code: 'ArrowUp'
   })
 }
 
 function escapeKey() {
-  fireEvent.keyDown(document.activeElement, { key: 'Escape', code: 'Escape' })
+  fireEvent.keyDown(document.activeElement!, { key: 'Escape', code: 'Escape' })
 }

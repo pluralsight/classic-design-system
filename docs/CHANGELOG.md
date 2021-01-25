@@ -3,6 +3,165 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.9...@pluralsight/ps-design-system-docs@0.18.10) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.8...@pluralsight/ps-design-system-docs@0.18.9) (2021-01-14)
+
+
+### Bug Fixes
+
+* **docs:** adjust table pagination example cursor code ([55dab5b](https://github.com/pluralsight/design-system/commit/55dab5bbee0dc354961249d514deef7d0c9a332b)), closes [#1551](https://github.com/pluralsight/design-system/issues/1551)
+* **docs:** safer docsearch call to fix local ([c09b8c7](https://github.com/pluralsight/design-system/commit/c09b8c75d0ae6aa6396080113bbd646093a02698))
+
+
+
+
+
+## [0.18.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.7...@pluralsight/ps-design-system-docs@0.18.8) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.6...@pluralsight/ps-design-system-docs@0.18.7) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.5...@pluralsight/ps-design-system-docs@0.18.6) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.4...@pluralsight/ps-design-system-docs@0.18.5) (2020-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.3...@pluralsight/ps-design-system-docs@0.18.4) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.2...@pluralsight/ps-design-system-docs@0.18.3) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.1...@pluralsight/ps-design-system-docs@0.18.2) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.18.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.0...@pluralsight/ps-design-system-docs@0.18.1) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.18.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.17.0...@pluralsight/ps-design-system-docs@0.18.0) (2020-12-15)
+
+
+### Bug Fixes
+
+* **docs:** make icon set bg respond to theme ([ac666b2](https://github.com/pluralsight/design-system/commit/ac666b2a80656db283aad0a1ce5747b54ac1b8e4)), closes [#1505](https://github.com/pluralsight/design-system/issues/1505)
+
+
+### Features
+
+* **docs:** add basic page heading pattern ([cb2f6fc](https://github.com/pluralsight/design-system/commit/cb2f6fc1290596d9264c292d85982462065998e8))
+* **docs:** add robust page heading pattern ([26ca837](https://github.com/pluralsight/design-system/commit/26ca8375e172ab9ef7bf231f5e7e796ae450420d))
+* **docs:** basic alt 2 heading pattern ([9158e62](https://github.com/pluralsight/design-system/commit/9158e62e9174851d41edf39f07b36da8eb74dd8e))
+* **docs:** power heading pattern ([c7fef57](https://github.com/pluralsight/design-system/commit/c7fef570de5d2dc87beee01749a167bdf0682714))
+
+
+
+
+
+# [0.17.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.16.1...@pluralsight/ps-design-system-docs@0.17.0) (2020-12-15)
+
+
+### Features
+
+* **docs:** add uniqueId dropdown prop ([797388e](https://github.com/pluralsight/design-system/commit/797388ebcc39f58edd874fe6eb1adb8a50c56123))
+
+
+
+
+
+## [0.16.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.16.0...@pluralsight/ps-design-system-docs@0.16.1) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.16.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.15.1...@pluralsight/ps-design-system-docs@0.16.0) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+### Features
+
+* **docs:** try to speed up dev env ([411558b](https://github.com/pluralsight/design-system/commit/411558b8500e5100485503f391574c11061cb960))
+* **table:** fix safari shadow. default not scrollable ([c658596](https://github.com/pluralsight/design-system/commit/c658596fbfe749ec1a517c069923525118e245d0))
+
+
+
+
+
+## [0.15.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.15.0...@pluralsight/ps-design-system-docs@0.15.1) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.15.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.14.0...@pluralsight/ps-design-system-docs@0.15.0) (2020-12-07)
+
+
+### Features
+
+* **docs:** add domain-restrict typography note ([39e9156](https://github.com/pluralsight/design-system/commit/39e9156eda68e90da8c5dd6198617b507f04828b))
+* **docs:** add variable font notice ([99402e9](https://github.com/pluralsight/design-system/commit/99402e9e3fbe30463a43ebc0c0a860f7d6ab48af))
+
+
+
+
+
 # [0.14.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.13.0...@pluralsight/ps-design-system-docs@0.14.0) (2020-12-03)
 
 

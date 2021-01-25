@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.24...@pluralsight/ps-design-system-verticaltabs@4.2.25) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.23...@pluralsight/ps-design-system-verticaltabs@4.2.24) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.22...@pluralsight/ps-design-system-verticaltabs@4.2.23) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.21...@pluralsight/ps-design-system-verticaltabs@4.2.22) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.20...@pluralsight/ps-design-system-verticaltabs@4.2.21) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.19...@pluralsight/ps-design-system-verticaltabs@4.2.20) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.18...@pluralsight/ps-design-system-verticaltabs@4.2.19) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.17...@pluralsight/ps-design-system-verticaltabs@4.2.18) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
+## [4.2.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.16...@pluralsight/ps-design-system-verticaltabs@4.2.17) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [4.2.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.15...@pluralsight/ps-design-system-verticaltabs@4.2.16) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
 ## [4.2.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.14...@pluralsight/ps-design-system-verticaltabs@4.2.15) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs

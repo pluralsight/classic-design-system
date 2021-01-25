@@ -12,10 +12,10 @@ describe('#debounce', () => {
     debounced()
 
     expect(fn).not.toHaveBeenCalled()
-    jest.runTimersToTime(50)
+    jest.advanceTimersByTime(50)
 
     expect(fn).not.toHaveBeenCalled()
-    jest.runTimersToTime(100)
+    jest.advanceTimersByTime(100)
 
     expect(fn).toHaveBeenCalled()
     expect(fn.mock.calls.length).toBe(1)

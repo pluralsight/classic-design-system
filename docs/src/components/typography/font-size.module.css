@@ -15,9 +15,9 @@
 }
 .sizeLabel {
   color: var(--appColorsTextIconLow);
-  font-size: var(--psTypeFontSizeXSmall);
+  font-size: var(--psTypeFontSizeBase);
 }
-.sizeVar {
+.variable {
   margin-top: var(--psLayoutSpacingSmall);
   font-size: var(--psTypeFontSizeXSmall);
   color: var(--psColorsPink6);

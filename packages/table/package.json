@@ -1,41 +1,56 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "10.0.3",
-  "description": "Design System component for table ui",
+  "version": "11.2.4",
+  "description": "Table UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
-  "author": "jaketrent",
-  "keywords": [],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "run-s build:cjs build:esm build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "build:watch": "yarn build:esm --watch",
+    "build:watch": "yarn build:esm -- --watch",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test --watchAll"
+    "test:watch": "yarn test -- --watchAll"
   },
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.5.3",
-    "@pluralsight/ps-design-system-drawer": "^8.0.3",
-    "@pluralsight/ps-design-system-icon": "^19.0.12",
-    "@pluralsight/ps-design-system-util": "^6.0.5"
+    "@pluralsight/ps-design-system-collapsible": "^3.0.5",
+    "@pluralsight/ps-design-system-core": "^6.7.3",
+    "@pluralsight/ps-design-system-icon": "^19.0.22",
+    "@pluralsight/ps-design-system-util": "^6.0.10"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^6.0.0",
-    "glamor": "^2.20.40",
-    "react": "^16.8.6"
+    "glamor": "^2.x.x",
+    "invariant": "^2.2.4",
+    "react": ">=16.8.6 < 17.0.0"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^2.0.0",
-    "@pluralsight/ps-design-system-link": "^10.3.14",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.14",
-    "@pluralsight/ps-design-system-theme": "^6.0.10"
+    "@pluralsight/ps-design-system-avatar": "^6.1.24",
+    "@pluralsight/ps-design-system-build": "^2.0.3",
+    "@pluralsight/ps-design-system-button": "^19.1.4",
+    "@pluralsight/ps-design-system-checkbox": "^6.2.25",
+    "@pluralsight/ps-design-system-dropdown": "^10.1.7",
+    "@pluralsight/ps-design-system-emptystate": "^10.0.10",
+    "@pluralsight/ps-design-system-layout": "^7.1.28",
+    "@pluralsight/ps-design-system-screenreaderonly": "^2.1.25",
+    "@pluralsight/ps-design-system-searchinput": "^6.0.24",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.24",
+    "@pluralsight/ps-design-system-text": "^17.0.11",
+    "@types/faker": "^5.1.4",
+    "@types/react-beautiful-dnd": "^13.0.0",
+    "@types/react-table": "^7.0.25",
+    "faker": "^5.1.0",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-table": "^7.6.2"
   }
 }

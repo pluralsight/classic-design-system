@@ -1,7 +1,7 @@
 {
   "name": "@pluralsight/ps-design-system-datepicker",
-  "version": "9.0.7",
-  "description": "Date picker calendar components and hooks for Pluralsight design system",
+  "version": "10.0.10",
+  "description": "Design system components for date picker",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "main": "dist/cjs/index.js",

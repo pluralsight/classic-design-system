@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/pluralsight/design-system/compare/create-react-app@0.2.2...create-react-app@0.2.3) (2021-01-05)
+
+**Note:** Version bump only for package create-react-app
+
+
+
+
+
+## [0.2.2](https://github.com/pluralsight/design-system/compare/create-react-app@0.2.1...create-react-app@0.2.2) (2020-12-11)
+
+**Note:** Version bump only for package create-react-app
+
+
+
+
+
+## [0.2.1](https://github.com/pluralsight/design-system/compare/create-react-app@0.2.0...create-react-app@0.2.1) (2020-12-07)
+
+**Note:** Version bump only for package create-react-app
+
+
+
+
+
 # 0.2.0 (2020-12-03)
 
 

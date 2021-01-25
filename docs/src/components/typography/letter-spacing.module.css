@@ -1,0 +1,25 @@
+.letterSpacings {
+  white-space: nowrap;
+  margin-bottom: var(--psLayoutSpacingMedium);
+  max-width: 900px;
+}
+.letterSpacing {
+  color: var(--appColorsTextIconHigh);
+}
+.letterSpacing + .letterSpacing {
+  margin-top: var(--psLayoutSpacingLarge);
+}
+.letterSpacingExample {
+  font-size: var(--psTypeFontSizeBase);
+  color: var(--appColorsTextIconHigh);
+  margin-bottom: var(--psLayoutSpacingXSmall);
+}
+.letterSpacingVariableLabel {
+  color: var(--appColorsTextIconLow);
+  font-size: var(--psTypeFontSizeBase);
+}
+.letterSpacingVariable {
+  margin-top: var(--psLayoutSpacingSmall);
+  font-size: var(--psTypeFontSizeXSmall);
+  color: var(--psColorsPink6);
+}

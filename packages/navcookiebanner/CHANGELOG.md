@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.14...@pluralsight/ps-design-system-navcookiebanner@1.4.15) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.13...@pluralsight/ps-design-system-navcookiebanner@1.4.14) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.12...@pluralsight/ps-design-system-navcookiebanner@1.4.13) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.11...@pluralsight/ps-design-system-navcookiebanner@1.4.12) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.10...@pluralsight/ps-design-system-navcookiebanner@1.4.11) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.9...@pluralsight/ps-design-system-navcookiebanner@1.4.10) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.8...@pluralsight/ps-design-system-navcookiebanner@1.4.9) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.7...@pluralsight/ps-design-system-navcookiebanner@1.4.8) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
+## [1.4.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.6...@pluralsight/ps-design-system-navcookiebanner@1.4.7) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
+## [1.4.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.5...@pluralsight/ps-design-system-navcookiebanner@1.4.6) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
+
+
+
+
+
 ## [1.4.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.4...@pluralsight/ps-design-system-navcookiebanner@1.4.5) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner

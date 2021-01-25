@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.8...@pluralsight/ps-design-system-normalize@4.2.9) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.7...@pluralsight/ps-design-system-normalize@4.2.8) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.6...@pluralsight/ps-design-system-normalize@4.2.7) (2020-12-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.5...@pluralsight/ps-design-system-normalize@4.2.6) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.4...@pluralsight/ps-design-system-normalize@4.2.5) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.3...@pluralsight/ps-design-system-normalize@4.2.4) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.2...@pluralsight/ps-design-system-normalize@4.2.3) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.1...@pluralsight/ps-design-system-normalize@4.2.2) (2020-12-11)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+## [4.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.0...@pluralsight/ps-design-system-normalize@4.2.1) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-normalize
+
+
+
+
+
+# [4.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.1.3...@pluralsight/ps-design-system-normalize@4.2.0) (2020-12-07)
+
+
+### Features
+
+* **normalize:** add font-face definition for PS TT Commons ([8b833e8](https://github.com/pluralsight/design-system/commit/8b833e8970641abd2ace527a0a947d982ab198d9))
+
+
+
+
+
 ## [4.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.1.2...@pluralsight/ps-design-system-normalize@4.1.3) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize

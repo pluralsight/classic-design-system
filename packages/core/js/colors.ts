@@ -121,10 +121,10 @@ export const colorsPurple = {
 }
 
 export const colorsTextIcon = {
-  highOnDark: 'rgba(255, 255, 255, 0.95)',
-  highOnLight: 'rgba(0, 0, 0, 0.95)',
+  highOnDark: 'rgba(255, 255, 255, 0.90)',
+  highOnLight: 'rgba(0, 0, 0, 0.90)',
   lowOnDark: 'rgba(255, 255, 255, 0.65)',
-  lowOnLight: 'rgba(0, 0, 0, 0.55)'
+  lowOnLight: 'rgba(0, 0, 0, 0.65)'
 }
 
 export const colorsBorder = {

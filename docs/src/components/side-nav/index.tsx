@@ -35,11 +35,12 @@ export const SideNav: React.FC<SideNavProps> = () => {
 
   const scrollRestore = useScrollRestoration('sidenav-list')
   React.useLayoutEffect(() => {
-    window.docsearch({
-      apiKey: '67e67fb4a170ba472d8771660b39b5f2',
-      indexName: 'pluralsight_design-system',
-      inputSelector: '#ALGOLIA_DOCSEARCH_INPUT'
-    })
+    if (typeof window.docsearch === 'function')
+      window.docsearch({
+        apiKey: '67e67fb4a170ba472d8771660b39b5f2',
+        indexName: 'pluralsight_design-system',
+        inputSelector: '#ALGOLIA_DOCSEARCH_INPUT'
+      })
   }, [])
   return (
     <div className={styles.sideNav}>
@@ -225,12 +226,12 @@ const groups = [
     },
     items: [
       {
-        href: '/components/breadcrumb',
-        title: 'Breadcrumb'
-      },
-      {
         href: '/components/nav',
         title: 'Global navigation'
+      },
+      {
+        href: '/components/breadcrumb',
+        title: 'Breadcrumb'
       },
       {
         href: '/components/tab',
@@ -239,6 +240,10 @@ const groups = [
       {
         href: '/components/verticaltabs',
         title: 'Vertical tabs'
+      },
+      {
+        href: '/components/steps',
+        title: 'Steps'
       }
     ]
   },
@@ -428,6 +433,17 @@ const groups = [
         title: 'Feature flags'
       }
     ]
+  },
+  {
+    header: {
+      title: 'Patterns'
+    },
+    items: [
+      {
+        href: '/patterns/page-headers',
+        title: 'Page headers'
+      }
+    ]
   }
 ]
 
@@ -439,8 +455,8 @@ function Logo() {
         className={styles.logo}
         src={
           themeName === Theme.names.light
-            ? '/img/logo-light.png'
-            : '/img/logo-dark.png'
+            ? '/img/logo-light@2x.png'
+            : '/img/logo-dark@2x.png'
         }
       />
     </Link>

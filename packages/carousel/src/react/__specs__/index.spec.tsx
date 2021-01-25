@@ -14,7 +14,7 @@ describe('Carousel', () => {
   })
 
   describe('with a single item', () => {
-    let container: HTMLElement
+    let container: Element
     let pages: NodeList
 
     beforeEach(() => {
@@ -95,7 +95,7 @@ describe('Carousel', () => {
   })
 
   describe('when on the first page', () => {
-    let container: HTMLElement
+    let container: Element
 
     beforeEach(() => {
       const { container: _container } = render(

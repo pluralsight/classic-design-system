@@ -10,13 +10,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Dog count
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       234,345
     </div>
@@ -32,13 +32,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Cat count
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       123
     </div>
@@ -52,13 +52,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Rafters on the River
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       1,345/23,235
     </div>
@@ -72,13 +72,13 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Flotsam
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       About 3
     </div>
@@ -96,13 +96,13 @@ exports[`Storyshots DataWell label/data 1`] = `
   <div>
     <span
       data-css-1bgwrb4=""
-      data-css-twu960=""
+      data-css-1pfuugf=""
     >
       Dog count
     </span>
   </div>
   <div
-    data-css-1m134w8=""
+    data-css-11qqyxr=""
   >
     123
   </div>
@@ -119,13 +119,13 @@ exports[`Storyshots DataWell label/data/subLabel 1`] = `
   <div>
     <span
       data-css-1bgwrb4=""
-      data-css-twu960=""
+      data-css-1pfuugf=""
     >
       Dog count
     </span>
   </div>
   <div
-    data-css-1m134w8=""
+    data-css-11qqyxr=""
   >
     234,345
   </div>
@@ -151,13 +151,13 @@ exports[`Storyshots DataWell row 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Dog count
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       234,345
     </div>
@@ -173,13 +173,13 @@ exports[`Storyshots DataWell row 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Cat count
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       123
     </div>
@@ -193,13 +193,13 @@ exports[`Storyshots DataWell row 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Rafters on the River
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       12/23
     </div>
@@ -213,13 +213,13 @@ exports[`Storyshots DataWell row 1`] = `
     <div>
       <span
         data-css-1bgwrb4=""
-        data-css-twu960=""
+        data-css-1pfuugf=""
       >
         Flotsam
       </span>
     </div>
     <div
-      data-css-1m134w8=""
+      data-css-11qqyxr=""
     >
       About 3
     </div>

@@ -8,7 +8,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
     </div>
@@ -17,7 +17,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
     data-css-7zyoug=""
   >
     <button
-      data-css-kovzf5=""
+      data-css-dvk6df=""
       disabled={false}
       style={Object {}}
     >
@@ -54,7 +54,7 @@ exports[`Storyshots actionBar long title 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
     </div>
@@ -63,7 +63,7 @@ exports[`Storyshots actionBar long title 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-kovzf5=""
+      data-css-dvk6df=""
       disabled={false}
       style={Object {}}
     >
@@ -100,7 +100,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Amazingly, the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
     </div>
@@ -109,7 +109,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-kovzf5=""
+      data-css-dvk6df=""
       disabled={false}
       style={Object {}}
     >
@@ -146,7 +146,7 @@ exports[`Storyshots actionBar one action 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Ready, Action, Bar!
     </div>
@@ -155,7 +155,7 @@ exports[`Storyshots actionBar one action 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-kovzf5=""
+      data-css-dvk6df=""
       disabled={false}
       style={Object {}}
     >
@@ -192,10 +192,10 @@ exports[`Storyshots combo everything 1`] = `
     data-css-5n4uhw=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       <span
-        data-css-1bnk4mn=""
+        data-css-rlw4ch=""
       >
         <a
           href="http://google.com?query=title"
@@ -211,7 +211,7 @@ exports[`Storyshots combo everything 1`] = `
         data-css-1kcrbi9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com/?query=jaketrent"
@@ -230,7 +230,7 @@ exports[`Storyshots combo everything 1`] = `
         data-css-1kcrbi9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com/?query=jaketrent"
@@ -249,7 +249,7 @@ exports[`Storyshots combo everything 1`] = `
         data-css-1kcrbi9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com/?query=jaketrent"
@@ -273,7 +273,7 @@ exports[`Storyshots combo everything 1`] = `
     data-css-7b22zo=""
   >
     <button
-      data-css-kovzf5=""
+      data-css-dvk6df=""
       disabled={false}
       style={Object {}}
     >
@@ -299,7 +299,7 @@ exports[`Storyshots combo everything 1`] = `
       />
     </button>
     <button
-      data-css-kovzf5=""
+      data-css-dvk6df=""
       disabled={false}
       style={Object {}}
     >
@@ -327,7 +327,7 @@ exports[`Storyshots combo everything 1`] = `
       />
     </button>
     <button
-      data-css-kovzf5=""
+      data-css-dvk6df=""
       disabled={false}
       style={Object {}}
     >
@@ -364,7 +364,7 @@ exports[`Storyshots fullOverlay element 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Overlay This!
     </div>
@@ -380,7 +380,7 @@ exports[`Storyshots fullOverlay link 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Overlay This!
     </div>
@@ -396,7 +396,7 @@ exports[`Storyshots fullOverlay linked icon 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Overlay This!
     </div>
@@ -412,7 +412,7 @@ exports[`Storyshots fullOverlay linked icon with image link 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Both Icon and Image Have Separate Click Targets
     </div>
@@ -428,7 +428,7 @@ exports[`Storyshots image link 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Linked Image
     </div>
@@ -453,7 +453,7 @@ exports[`Storyshots image no image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       No Image
     </div>
@@ -478,7 +478,7 @@ exports[`Storyshots image no image with overlay 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       No Image, With Overlay (Not Shown)
     </div>
@@ -503,7 +503,7 @@ exports[`Storyshots image small image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Small Image
     </div>
@@ -528,7 +528,7 @@ exports[`Storyshots image tall image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Tall Image
     </div>
@@ -553,7 +553,7 @@ exports[`Storyshots image wide image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Wide Image
     </div>
@@ -578,7 +578,7 @@ exports[`Storyshots image with image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       With Image
     </div>
@@ -603,7 +603,7 @@ exports[`Storyshots image with image with overlay 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       With Image
     </div>
@@ -629,7 +629,7 @@ Array [
       data-css-1tiyrld=""
     >
       <div
-        data-css-nu4y7h=""
+        data-css-13elyt9=""
       >
         Course thing you do
       </div>
@@ -647,7 +647,7 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-kovzf5=""
+        data-css-dvk6df=""
         disabled={false}
         style={Object {}}
       >
@@ -681,7 +681,7 @@ Array [
       data-css-1tiyrld=""
     >
       <div
-        data-css-nu4y7h=""
+        data-css-13elyt9=""
       >
         Course thing you do
       </div>
@@ -699,7 +699,7 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-kovzf5=""
+        data-css-dvk6df=""
         disabled={false}
         style={Object {}}
       >
@@ -729,205 +729,6 @@ Array [
 ]
 `;
 
-exports[`Storyshots in drawer medium 1`] = `
-Array [
-  <div
-    aria-expanded={false}
-    data-css-eueoca=""
-    onClick={[Function]}
-    role="button"
-  >
-    <div
-      data-css-19vzw9x=""
-    >
-      <div
-        data-css-js3ti3=""
-      >
-        <div
-          data-css-6x74ml=""
-        />
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          Course thing you do
-        </div>
-        <div
-          data-css-145nbth=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            1m 46s
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-7zyoug=""
-      >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-17v14zz=""
-    >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-      <div
-        data-css-6wu9td=""
-      >
-        Collapsed
-      </div>
-    </div>
-  </div>,
-  <div
-    aria-hidden={true}
-    data-css-1s813js=""
-  >
-    <div>
-      some goodies in the drawer
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots in drawer small 1`] = `
-Array [
-  <div
-    aria-expanded={false}
-    data-css-eueoca=""
-    onClick={[Function]}
-    role="button"
-  >
-    <div
-      data-css-19vzw9x=""
-    >
-      <div
-        data-css-1tiyrld=""
-      >
-        <div
-          data-css-nu4y7h=""
-        >
-          Course thing you do
-        </div>
-        <div
-          data-css-1b2ftmj=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            1m 46s
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-7zyoug=""
-      >
-        <button
-          data-css-kovzf5=""
-          disabled={false}
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-17v14zz=""
-    >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-      <div
-        data-css-6wu9td=""
-      >
-        Collapsed
-      </div>
-    </div>
-  </div>,
-  <div
-    aria-hidden={true}
-    data-css-1s813js=""
-  >
-    <div>
-      some goodies in the drawer
-    </div>
-  </div>,
-]
-`;
-
 exports[`Storyshots metadata link 1`] = `
 <div
   data-css-19vzw9x=""
@@ -936,7 +737,7 @@ exports[`Storyshots metadata link 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Meta With Links
     </div>
@@ -947,7 +748,7 @@ exports[`Storyshots metadata link 1`] = `
         data-css-1kcrbi9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com/?query=jaketrent"
@@ -969,7 +770,7 @@ exports[`Storyshots metadata long links 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Meta With Links
     </div>
@@ -980,7 +781,7 @@ exports[`Storyshots metadata long links 1`] = `
         data-css-1kcrbi9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com/?query=jaketrent"
@@ -999,7 +800,7 @@ exports[`Storyshots metadata long links 1`] = `
         data-css-1kcrbi9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com/?query=jaketrent"
@@ -1018,7 +819,7 @@ exports[`Storyshots metadata long links 1`] = `
         data-css-1kcrbi9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com/?query=jaketrent"
@@ -1040,7 +841,7 @@ exports[`Storyshots metadata long strings 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       The Longest Strings in El Mundo
     </div>
@@ -1087,7 +888,7 @@ exports[`Storyshots metadata long strings with image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Long Strings AND Los Imagereo
     </div>
@@ -1134,7 +935,7 @@ exports[`Storyshots metadata string 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Meta with Strings
     </div>
@@ -1159,7 +960,7 @@ exports[`Storyshots metadata super long first string 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Long Strings AND Los Imagereo
     </div>
@@ -1206,7 +1007,7 @@ exports[`Storyshots metadata two lines 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       Meta With Links
     </div>
@@ -1269,7 +1070,7 @@ exports[`Storyshots progress 0 progress 1`] = `
     data-css-kxulf3=""
   >
     <div
-      data-css-2pesz8=""
+      data-css-1uo9356=""
     >
       0 progress
     </div>
@@ -1292,7 +1093,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
     >
       <div
         aria-label="67% complete"
-        data-css-6fy8id=""
+        data-css-dq6hju=""
       />
     </div>
   </div>
@@ -1300,7 +1101,7 @@ exports[`Storyshots progress 66.6667 progress 1`] = `
     data-css-kxulf3=""
   >
     <div
-      data-css-2pesz8=""
+      data-css-1uo9356=""
     >
       66.6667 progress
     </div>
@@ -1331,7 +1132,7 @@ exports[`Storyshots progress 100 progress 1`] = `
     data-css-kxulf3=""
   >
     <div
-      data-css-2pesz8=""
+      data-css-1uo9356=""
     >
       100 progress
     </div>
@@ -1347,7 +1148,7 @@ exports[`Storyshots progress no image 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-2pesz8=""
+      data-css-1uo9356=""
     >
       No image, with progress (not shown)
     </div>
@@ -1370,7 +1171,7 @@ exports[`Storyshots size medium 1`] = `
     data-css-kxulf3=""
   >
     <div
-      data-css-2pesz8=""
+      data-css-1uo9356=""
     >
       medium Row
     </div>
@@ -1395,7 +1196,7 @@ exports[`Storyshots size small 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       small Row
     </div>
@@ -1420,10 +1221,10 @@ exports[`Storyshots title link 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       <span
-        data-css-1bnk4mn=""
+        data-css-rlw4ch=""
       >
         <a
           href="http://google.com"
@@ -1451,10 +1252,10 @@ exports[`Storyshots title link truncated 1`] = `
       data-css-1tiyrld=""
     >
       <div
-        data-css-nu4y7h=""
+        data-css-13elyt9=""
       >
         <span
-          data-css-1bnk4mn=""
+          data-css-rlw4ch=""
         >
           <a
             href="http://google.com"
@@ -1485,7 +1286,7 @@ exports[`Storyshots title medium long title 1`] = `
     data-css-kxulf3=""
   >
     <div
-      data-css-2pesz8=""
+      data-css-1uo9356=""
     >
       medium With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
     </div>
@@ -1510,7 +1311,7 @@ exports[`Storyshots title small long title 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       small With the Longest Title in the World Because It's Known That If You Give Room For This Kind of a Title, It Will Definitely Come to Pass 2000
     </div>
@@ -1535,7 +1336,7 @@ exports[`Storyshots title string 1`] = `
     data-css-1tiyrld=""
   >
     <div
-      data-css-nu4y7h=""
+      data-css-13elyt9=""
     >
       A String Title
     </div>
@@ -1558,7 +1359,7 @@ exports[`Storyshots title string truncated 1`] = `
       data-css-1tiyrld=""
     >
       <div
-        data-css-nu4y7h=""
+        data-css-13elyt9=""
       >
         <div>
           We'll have a super time. You can create the world you want to see and be a part of. You have that power. These things happen automatically. All you have to do is just let them happen. Only think about one thing at a time. Don't get greedy.

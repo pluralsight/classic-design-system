@@ -2,7 +2,7 @@
 
 exports[`useIsInRange: start date and end date selected: in range 1`] = `
 Object {
-  "data-css-4a5f34": "",
+  "data-css-r2vu8v": "",
 }
 `;
 
@@ -16,7 +16,7 @@ Object {
 
 exports[`useIsInRange: start date selected: in range 1`] = `
 Object {
-  "data-css-4a5f34": "",
+  "data-css-r2vu8v": "",
 }
 `;
 

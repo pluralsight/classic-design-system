@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.4.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.10...@pluralsight/ps-design-system-actionmenu@15.4.11) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.9...@pluralsight/ps-design-system-actionmenu@15.4.10) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.8...@pluralsight/ps-design-system-actionmenu@15.4.9) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.7...@pluralsight/ps-design-system-actionmenu@15.4.8) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.6...@pluralsight/ps-design-system-actionmenu@15.4.7) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.5...@pluralsight/ps-design-system-actionmenu@15.4.6) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.4...@pluralsight/ps-design-system-actionmenu@15.4.5) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.3...@pluralsight/ps-design-system-actionmenu@15.4.4) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
+## [15.4.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.2...@pluralsight/ps-design-system-actionmenu@15.4.3) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
+## [15.4.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.1...@pluralsight/ps-design-system-actionmenu@15.4.2) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
+
+
+
+
+
 ## [15.4.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.0...@pluralsight/ps-design-system-actionmenu@15.4.1) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

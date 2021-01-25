@@ -12,7 +12,7 @@ exports[`Storyshots Radio controlled 1`] = `
     <div
       style={
         Object {
-          "color": "rgba(255, 255, 255, 0.95)",
+          "color": "rgba(255, 255, 255, 0.90)",
         }
       }
     >
@@ -65,7 +65,7 @@ exports[`Storyshots Radio controlled 1`] = `
             value="red"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Red
           </div>
@@ -99,7 +99,7 @@ exports[`Storyshots Radio controlled 1`] = `
             value="green"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Green
           </div>
@@ -133,7 +133,7 @@ exports[`Storyshots Radio controlled 1`] = `
             value="blue"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Blue
           </div>
@@ -188,7 +188,7 @@ exports[`Storyshots Radio default 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Red
         </div>
@@ -222,7 +222,7 @@ exports[`Storyshots Radio default 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Green
         </div>
@@ -256,7 +256,7 @@ exports[`Storyshots Radio default 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Blue
         </div>
@@ -309,7 +309,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Red
         </div>
@@ -346,7 +346,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Green
         </div>
@@ -379,7 +379,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Blue
         </div>
@@ -432,7 +432,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Red
         </div>
@@ -469,7 +469,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Green
         </div>
@@ -502,7 +502,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Blue
         </div>
@@ -556,7 +556,7 @@ exports[`Storyshots Radio error 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Red
         </div>
@@ -594,7 +594,7 @@ exports[`Storyshots Radio error 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Green
         </div>
@@ -628,7 +628,7 @@ exports[`Storyshots Radio error 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Blue
         </div>
@@ -651,7 +651,7 @@ exports[`Storyshots Radio labels 1`] = `
     role="radiogroup"
   >
     <div
-      data-css-dysqqm=""
+      data-css-1jmxzqo=""
     >
       Colors
     </div>
@@ -687,7 +687,7 @@ exports[`Storyshots Radio labels 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Red
         </div>
@@ -725,7 +725,7 @@ exports[`Storyshots Radio labels 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Green
         </div>
@@ -759,7 +759,7 @@ exports[`Storyshots Radio labels 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Blue
         </div>
@@ -819,7 +819,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="red"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Red
           </div>
@@ -853,7 +853,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="green"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Green
           </div>
@@ -887,7 +887,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="blue"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Blue
           </div>
@@ -930,7 +930,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="red"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Red
           </div>
@@ -964,7 +964,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="green"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Green
           </div>
@@ -998,7 +998,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="blue"
           />
           <div
-            data-css-nrxvu5=""
+            data-css-18udfrp=""
           >
             Blue
           </div>
@@ -1053,7 +1053,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Red
         </div>
@@ -1091,7 +1091,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Green
         </div>
@@ -1125,7 +1125,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          data-css-18udfrp=""
         >
           Blue
         </div>

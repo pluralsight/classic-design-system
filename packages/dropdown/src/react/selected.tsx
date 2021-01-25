@@ -8,7 +8,11 @@ import { ItemData } from '../js'
 
 const styles = {
   buttonSizer: () => css(stylesheet['.psds-dropdown__button-sizer']),
-  placeholder: ({ appearance, selectedItem, size }) => {
+  placeholder: ({
+    appearance,
+    selectedItem,
+    size
+  }: Pick<DropdownSelectedProps, 'appearance' | 'selectedItem' | 'size'>) => {
     const label = 'psds-dropdown__placeholder'
     const isSmall = size === vars.sizes.small
     const placeholderColor =

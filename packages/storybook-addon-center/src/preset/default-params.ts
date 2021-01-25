@@ -1,5 +1,5 @@
 import { PARAM_KEY } from '../constants'
 
 export const parameters = {
-  [PARAM_KEY]: {}
+  [PARAM_KEY]: { disabled: false }
 }

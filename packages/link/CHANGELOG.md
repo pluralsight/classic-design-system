@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.3.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.23...@pluralsight/ps-design-system-link@10.3.24) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.22...@pluralsight/ps-design-system-link@10.3.23) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.21...@pluralsight/ps-design-system-link@10.3.22) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.20...@pluralsight/ps-design-system-link@10.3.21) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.19...@pluralsight/ps-design-system-link@10.3.20) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.18...@pluralsight/ps-design-system-link@10.3.19) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.17...@pluralsight/ps-design-system-link@10.3.18) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.16...@pluralsight/ps-design-system-link@10.3.17) (2020-12-11)
+
+
+### Bug Fixes
+
+* test config syntax and lint errors ([37429b2](https://github.com/pluralsight/design-system/commit/37429b289e428500233a3954c5bf1bb96df852a6))
+
+
+
+
+
+## [10.3.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.15...@pluralsight/ps-design-system-link@10.3.16) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [10.3.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.14...@pluralsight/ps-design-system-link@10.3.15) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
 ## [10.3.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@10.3.13...@pluralsight/ps-design-system-link@10.3.14) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.22...@pluralsight/ps-design-system-storybook-addon-theme@7.1.23) (2021-01-15)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.21...@pluralsight/ps-design-system-storybook-addon-theme@7.1.22) (2021-01-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.20...@pluralsight/ps-design-system-storybook-addon-theme@7.1.21) (2021-01-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.19...@pluralsight/ps-design-system-storybook-addon-theme@7.1.20) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.18...@pluralsight/ps-design-system-storybook-addon-theme@7.1.19) (2020-12-17)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.17...@pluralsight/ps-design-system-storybook-addon-theme@7.1.18) (2020-12-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.16...@pluralsight/ps-design-system-storybook-addon-theme@7.1.17) (2020-12-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.15...@pluralsight/ps-design-system-storybook-addon-theme@7.1.16) (2020-12-11)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.14...@pluralsight/ps-design-system-storybook-addon-theme@7.1.15) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
+## [7.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.13...@pluralsight/ps-design-system-storybook-addon-theme@7.1.14) (2020-12-07)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
+
+
+
+
+
 ## [7.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@7.1.12...@pluralsight/ps-design-system-storybook-addon-theme@7.1.13) (2020-12-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme

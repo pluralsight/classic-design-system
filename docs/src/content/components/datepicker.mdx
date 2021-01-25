@@ -455,6 +455,7 @@ Our JSX structure if going to look like this:
   <TextInput
     onChange={onChange}
     value={value}
+    placeholder='mm/dd/yyyy'
     icon={
       <CalendarIcon
         onClick={handleIconClick}
@@ -534,6 +535,7 @@ const Comp = () => {
           <TextInput
             onChange={onChange}
             value={value}
+            placeholder='mm/dd/yyyy'
             icon={
               <CalendarIcon
                 onClick={handleIconClick}
@@ -735,8 +737,8 @@ import React from 'react'
         </div>
         <div className="example">
         <div>
-        <TextInput onChange={onStartChange} value={startValue} />
-        <TextInput onChange={onEndChange} value={endValue} />
+        <TextInput onChange={onStartChange} value={startValue} placeholder='mm/dd/yyyy' />
+        <TextInput onChange={onEndChange} value={endValue} placeholder='mm/dd/yyyy' />
         </div>
         <br />
         <Calendar {...dayzedData} onMouseLeave={onMouseLeave} slide={slide}>

@@ -14,7 +14,7 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -390,7 +390,7 @@ exports[`Storyshots Carousel/Item with child nodes 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div
@@ -442,7 +442,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -980,7 +980,7 @@ exports[`Storyshots Carousel/Item with render props 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div
@@ -1032,7 +1032,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         style={
           Object {
@@ -1449,7 +1449,7 @@ exports[`Storyshots Carousel/controls custom alignment 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         style={
           Object {
@@ -1507,7 +1507,7 @@ Array [
       >
         <button
           aria-label="get previous carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -1709,7 +1709,7 @@ Array [
       >
         <button
           aria-label="get next carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
         >
           <div
@@ -1777,7 +1777,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -2693,7 +2693,7 @@ exports[`Storyshots Carousel/items many items 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div
@@ -2745,7 +2745,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -2820,7 +2820,7 @@ exports[`Storyshots Carousel/items one item 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -2873,7 +2873,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -2987,7 +2987,7 @@ exports[`Storyshots Carousel/items two items 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div
@@ -3039,7 +3039,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -3619,7 +3619,7 @@ exports[`Storyshots Carousel/size narrow 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div
@@ -3671,7 +3671,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -4251,7 +4251,7 @@ exports[`Storyshots Carousel/size wide 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div
@@ -4312,7 +4312,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -4364,11 +4364,11 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="asdf"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="asdf"
                 >
@@ -4399,14 +4399,14 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
               data-css-piydn8=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
                   tabIndex={1}
                 >
                   <div
-                    data-css-fvvao4=""
+                    data-css-b1354r=""
                   >
                     <div
                       className=""
@@ -4506,7 +4506,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
                 data-css-1tz10dh=""
               >
                 <span
-                  data-css-18hqvbo=""
+                  data-css-3mq1xc=""
                 >
                   <a
                     href="#"
@@ -4643,7 +4643,7 @@ exports[`Storyshots Carousel/with ActionMenu in portal 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
         >
           <div
@@ -4705,7 +4705,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -4757,11 +4757,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -4792,7 +4792,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -4934,11 +4934,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -4969,7 +4969,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -5111,11 +5111,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -5146,7 +5146,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -5288,11 +5288,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -5323,7 +5323,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -5465,11 +5465,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -5500,7 +5500,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -5642,11 +5642,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -5677,7 +5677,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -5819,11 +5819,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -5854,7 +5854,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -5996,11 +5996,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -6031,7 +6031,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -6173,11 +6173,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -6208,7 +6208,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -6350,11 +6350,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -6385,7 +6385,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -6527,11 +6527,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -6562,7 +6562,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -6704,11 +6704,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -6739,7 +6739,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -6881,11 +6881,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -6916,7 +6916,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -7058,11 +7058,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -7093,7 +7093,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -7235,11 +7235,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -7270,7 +7270,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -7412,11 +7412,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -7447,7 +7447,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -7589,11 +7589,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -7624,7 +7624,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -7766,11 +7766,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -7801,7 +7801,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -7943,11 +7943,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -7978,7 +7978,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -8120,11 +8120,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -8155,7 +8155,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -8297,11 +8297,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -8332,7 +8332,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -8474,11 +8474,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -8509,7 +8509,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -8651,11 +8651,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -8686,7 +8686,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -8828,11 +8828,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -8863,7 +8863,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -9005,11 +9005,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -9040,7 +9040,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -9182,11 +9182,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -9217,7 +9217,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -9359,11 +9359,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -9394,7 +9394,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -9536,11 +9536,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -9571,7 +9571,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -9713,11 +9713,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -9748,7 +9748,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -9890,11 +9890,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -9925,7 +9925,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -10067,11 +10067,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -10102,7 +10102,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -10244,11 +10244,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -10279,7 +10279,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -10421,11 +10421,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -10456,7 +10456,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -10598,11 +10598,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -10633,7 +10633,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -10775,11 +10775,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -10810,7 +10810,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -10952,11 +10952,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -10987,7 +10987,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -11129,11 +11129,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -11164,7 +11164,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -11306,11 +11306,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -11341,7 +11341,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -11483,11 +11483,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -11518,7 +11518,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -11660,11 +11660,11 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
                 }
               />
               <div
-                data-css-4ed7vx=""
+                data-css-1kb1o0e=""
               >
                 <button
                   aria-label="See more"
-                  data-css-45oxhg=""
+                  data-css-1y4u3tm=""
                   onClick={[Function]}
                   title="See more"
                 >
@@ -11695,7 +11695,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
               data-css-piydn8=""
             >
               <div
-                data-css-fvvao4=""
+                data-css-b1354r=""
               >
                 <div
                   className=""
@@ -11819,7 +11819,7 @@ exports[`Storyshots Carousel/with ActionMenu perf: many cards in portals 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
         >
           <div
@@ -11881,7 +11881,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
       >
         <button
           aria-label="get previous carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
           tabIndex={-1}
         >
@@ -11940,7 +11940,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 }
               >
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -11968,7 +11968,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -11996,7 +11996,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12024,7 +12024,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12052,7 +12052,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12080,7 +12080,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12108,7 +12108,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12136,7 +12136,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12188,7 +12188,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                 }
               >
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12216,7 +12216,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12244,7 +12244,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12272,7 +12272,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12300,7 +12300,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12328,7 +12328,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12356,7 +12356,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12384,7 +12384,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   />
                 </li>
                 <li
-                  data-css-1a2slgk=""
+                  data-css-1vqdttp=""
                   onKeyDown={[Function]}
                   onMouseOut={[Function]}
                   onMouseOver={[Function]}
@@ -12921,7 +12921,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
       >
         <button
           aria-label="get next carousel page"
-          data-css-1bqkmub=""
+          data-css-170yy8n=""
           onClick={[Function]}
         >
           <div
@@ -12974,7 +12974,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -13030,7 +13030,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -13053,14 +13053,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -13219,7 +13219,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -13242,14 +13242,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -13349,7 +13349,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -13394,7 +13394,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -13417,14 +13417,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -13524,7 +13524,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -13569,7 +13569,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -13592,14 +13592,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -13699,7 +13699,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -13744,7 +13744,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -13767,14 +13767,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -13874,7 +13874,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -13919,7 +13919,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -13942,14 +13942,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -14049,7 +14049,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -14094,7 +14094,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -14117,14 +14117,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -14224,7 +14224,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -14269,7 +14269,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -14292,14 +14292,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -14399,7 +14399,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -14444,7 +14444,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -14467,14 +14467,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -14574,7 +14574,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -14619,7 +14619,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -14642,14 +14642,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -14749,7 +14749,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -14794,7 +14794,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -14817,14 +14817,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -14924,7 +14924,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -14969,7 +14969,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -14992,14 +14992,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -15099,7 +15099,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -15144,7 +15144,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -15167,14 +15167,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -15274,7 +15274,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -15319,7 +15319,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -15342,14 +15342,14 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -15449,7 +15449,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -15472,7 +15472,7 @@ exports[`Storyshots Carousel/with Card narrow 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div
@@ -15524,7 +15524,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     >
       <button
         aria-label="get previous carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
         tabIndex={-1}
       >
@@ -15580,7 +15580,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -15603,14 +15603,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -15769,7 +15769,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -15792,14 +15792,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -15899,7 +15899,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -15944,7 +15944,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -15967,14 +15967,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -16074,7 +16074,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -16119,7 +16119,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -16142,14 +16142,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -16249,7 +16249,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -16294,7 +16294,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -16317,14 +16317,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -16424,7 +16424,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -16469,7 +16469,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -16492,14 +16492,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -16599,7 +16599,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -16644,7 +16644,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -16667,14 +16667,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -16774,7 +16774,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -16819,7 +16819,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -16842,14 +16842,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -16949,7 +16949,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -16994,7 +16994,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -17017,14 +17017,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -17124,7 +17124,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -17169,7 +17169,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -17192,14 +17192,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -17299,7 +17299,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -17344,7 +17344,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -17367,14 +17367,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -17474,7 +17474,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -17519,7 +17519,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -17542,14 +17542,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -17649,7 +17649,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -17694,7 +17694,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -17717,14 +17717,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -17824,7 +17824,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -17869,7 +17869,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             >
               <button
                 aria-label="Bookmark"
-                data-css-45oxhg=""
+                data-css-1y4u3tm=""
                 title="Bookmark"
               >
                 <div
@@ -17892,14 +17892,14 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
             data-css-piydn8=""
           >
             <span
-              data-css-18hqvbo=""
+              data-css-3mq1xc=""
             >
               <a
                 href="#"
                 tabIndex={1}
               >
                 <div
-                  data-css-fvvao4=""
+                  data-css-b1354r=""
                 >
                   <div
                     className=""
@@ -17999,7 +17999,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
               data-css-1tz10dh=""
             >
               <span
-                data-css-18hqvbo=""
+                data-css-3mq1xc=""
               >
                 <a
                   href="#"
@@ -18022,7 +18022,7 @@ exports[`Storyshots Carousel/with Card wide 1`] = `
     >
       <button
         aria-label="get next carousel page"
-        data-css-1bqkmub=""
+        data-css-170yy8n=""
         onClick={[Function]}
       >
         <div

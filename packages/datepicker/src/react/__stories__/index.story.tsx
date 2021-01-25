@@ -114,6 +114,7 @@ storiesOf('SingleDate', module)
         <TextInput
           onChange={onChange}
           value={value}
+          placeholder='mm/dd/yyyy'
           icon={
             <CalendarIcon
               onClick={handleIconClick}

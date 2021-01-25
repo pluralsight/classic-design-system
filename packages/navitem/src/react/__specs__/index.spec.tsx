@@ -1,5 +1,6 @@
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
-import React from 'react'
+import React, { createRef } from 'react'
 
 import NavItem from '..'
 
@@ -14,7 +15,9 @@ describe('NavItem', () => {
 
   it('should allow rendering an anchor element', async () => {
     const { findByText } = render(
-      <NavItem renderContainer={props => <a href="" {...props} />}>
+      <NavItem
+        renderContainer={(props: HTMLPropsFor<'a'>) => <a href="" {...props} />}
+      >
         test
       </NavItem>
     )
@@ -22,5 +25,13 @@ describe('NavItem', () => {
     const label = await findByText('test')
     const el = label.closest('a')
     expect(el).not.toBeNull()
+  })
+
+  it('forwards refs', () => {
+    const ref = createRef<HTMLButtonElement>()
+
+    render(<NavItem ref={ref} />)
+
+    expect(ref.current).not.toBeNull()
   })
 })

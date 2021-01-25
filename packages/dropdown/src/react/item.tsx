@@ -28,31 +28,30 @@ interface DropdownItemProps
 }
 
 export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
-  (
-    { disabled, onClick, value, icon, children, ...rest },
-    forwardedRef
-  ): any => {
+  ({ disabled, onClick, value, icon, children, ...rest }, forwardedRef) => {
     const context = useContext(DropdownContext)
+    const valueExists = typeof value !== 'undefined'
     const isActive =
-      (value && context.activeItem?.value === value) ||
+      (valueExists && context.activeItem?.value === value) ||
       context.activeItem?.label === children
     const isSelected =
-      (value && context.selectedItem?.value === value) ||
+      (valueExists && context.selectedItem?.value === value) ||
       context.selectedItem?.label === children
 
     const handleClick = (evt: React.MouseEvent) => {
-      context.onMenuClick(evt, value || children)
-      if (typeof onClick === 'function') onClick(evt, value || children)
+      const valueToSend = typeof value !== 'undefined' ? value : children || ''
+      context.onMenuClick(evt, valueToSend)
+      if (typeof onClick === 'function') onClick(evt, valueToSend)
     }
 
     return (
       <button
-        {...styles.item(isActive, disabled)}
+        {...styles.item(isActive, !!disabled)}
         disabled={disabled}
         onClick={handleClick}
         role="option"
         ref={forwardedRef}
-        id={formatItemId(context.menuId, value, children as string)}
+        id={formatItemId(context.menuId, children as string, value)}
         tabIndex={-1}
         {...rest}
       >

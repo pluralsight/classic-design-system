@@ -1,7 +1,7 @@
 :root {
   /* prettier-ignore */
   --psTypeFontFamily: 'PS TT Commons Roman', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
-  --psTypeFontFamilyCode: 'Source Code Pro', monospace;
+  --psTypeFontFamilyCode: 'DM Mono', 'Source Code Pro', monospace;
 
   /* font size */
   --psTypeFontSizeGigantic: 60px;
@@ -13,6 +13,17 @@
   --psTypeFontSizeSmall: 14px;
   --psTypeFontSizeXSmall: 12px;
 
+  --psTypeFontSizeBase: 16px;
+  --psTypeFontSize900: 40px;
+  --psTypeFontSize800: 34px;
+  --psTypeFontSize700: 28px;
+  --psTypeFontSize600: 24px;
+  --psTypeFontSize500: 20px;
+  --psTypeFontSize400: 18px;
+  --psTypeFontSize300: 16px;
+  --psTypeFontSize200: 14px;
+  --psTypeFontSize100: 12px;
+
   /* letter spacing */
   --psTypeLetterSpacingGigantic: -1px;
   --psTypeLetterSpacingJumbo: -0.72px;
@@ -23,12 +34,36 @@
   --psTypeLetterSpacingSmall: 0;
   --psTypeLetterSpacingXSmall: 0;
 
+  --psTypeLetterSpacingTighter: -0.025em;
+  --psTypeLetterSpacingTight: -0.01em;
+  --psTypeLetterSpacingNone: 0;
+  --psTypeLetterSpacingLoose: 0.01em;
+  --psTypeLetterSpacingLooser: 0.025em;
+  --psTypeLetterSpacingAllCaps: 0.8em;
+
   /* font weight */
+  --psTypeFontWeightBlack: 900;
+  --psTypeFontWeightXBold: 800;
   --psTypeFontWeightBold: 700;
+  --psTypeFontWeightDemiBold: 600;
   --psTypeFontWeightMedium: 500;
+  --psTypeFontWeightRegular: 400;
   --psTypeFontWeightBook: 400;
   --psTypeFontWeightLight: 300;
   --psTypeFontWeightXLight: 200;
+  --psTypeFontWeightThin: 100;
+
+  --psTypeFontWeightDefault: 400;
+  --psTypeFontWeightStrong: 600;
+  --psTypeFontWeight900: 900;
+  --psTypeFontWeight800: 800;
+  --psTypeFontWeight700: 700;
+  --psTypeFontWeight600: 600;
+  --psTypeFontWeight500: 500;
+  --psTypeFontWeight400: 400;
+  --psTypeFontWeight300: 300;
+  --psTypeFontWeight200: 200;
+  --psTypeFontWeight100: 100;
 
   /* line height */
   --psTypeLineHeightTight: 20px;
