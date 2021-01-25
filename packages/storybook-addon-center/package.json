@@ -18,6 +18,6 @@
     "@storybook/addons": "^6.1.10"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^17.0.1"
   }
 }

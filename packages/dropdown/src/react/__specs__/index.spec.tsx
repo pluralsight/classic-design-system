@@ -449,5 +449,5 @@ function arrowUpKey() {
 }
 
 function escapeKey() {
-  fireEvent.keyDown(document.activeElement!, { key: 'Escape', code: 'Escape' })
+  fireEvent.keyDown(document, { key: 'Escape', code: 'Escape' })
 }

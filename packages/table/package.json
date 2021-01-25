@@ -32,7 +32,7 @@
     "@pluralsight/ps-design-system-theme": "^6.0.0",
     "glamor": "^2.x.x",
     "invariant": "^2.2.4",
-    "react": ">=16.8.6 < 17.0.0"
+    "react": "^17.0.1"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-avatar": "^6.1.24",
