@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-circularprogress",
-  "version": "7.0.21",
+  "version": "7.0.22",
   "description": "Design System component for circular progress ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,8 +21,8 @@
   "style": "dist/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.7.2",
-    "@pluralsight/ps-design-system-screenreaderonly": "^2.1.24",
+    "@pluralsight/ps-design-system-core": "^6.7.3",
+    "@pluralsight/ps-design-system-screenreaderonly": "^2.1.25",
     "@pluralsight/ps-design-system-util": "^6.0.10"
   },
   "peerDependencies": {
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.3",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.23",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.24",
     "@pluralsight/ps-design-system-theme": "^6.0.15"
   }
 }

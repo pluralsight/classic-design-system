@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-note",
-  "version": "7.1.25",
+  "version": "7.1.26",
   "description": "Note UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,8 +22,8 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-avatar": "^6.1.23",
-    "@pluralsight/ps-design-system-core": "^6.7.2",
+    "@pluralsight/ps-design-system-avatar": "^6.1.24",
+    "@pluralsight/ps-design-system-core": "^6.7.3",
     "@pluralsight/ps-design-system-util": "^6.0.10"
   },
   "peerDependencies": {
@@ -33,13 +33,13 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^15.4.10",
+    "@pluralsight/ps-design-system-actionmenu": "^15.4.11",
     "@pluralsight/ps-design-system-build": "^2.0.3",
-    "@pluralsight/ps-design-system-icon": "^19.0.21",
-    "@pluralsight/ps-design-system-link": "^10.3.23",
-    "@pluralsight/ps-design-system-position": "^5.0.21",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.23",
-    "@pluralsight/ps-design-system-text": "^17.0.10",
+    "@pluralsight/ps-design-system-icon": "^19.0.22",
+    "@pluralsight/ps-design-system-link": "^10.3.24",
+    "@pluralsight/ps-design-system-position": "^5.0.22",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.2.24",
+    "@pluralsight/ps-design-system-text": "^17.0.11",
     "@pluralsight/ps-design-system-theme": "^6.0.15"
   }
 }

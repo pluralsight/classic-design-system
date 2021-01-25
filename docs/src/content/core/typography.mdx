@@ -8,6 +8,7 @@ import {
   FontWeight,
   FontSize,
   LineHeight,
+  LetterSpacing,
   MonospaceFontWeight,
   MonospaceGlyphs
 } from '../../components/typography'
@@ -16,7 +17,9 @@ import {
 
 <TableOfContents {...props} />
 
-## Font family
+## Font
+
+### Font family
 
 <Badge color="yellow">New</Badge>
 
@@ -40,7 +43,7 @@ Then include it in your global stylesheet:
 @import '@pluralsight/ps-design-system-normalize';
 ```
 
-## CDN reference
+### CDN reference
 
 The normalize stylesheet should be used in most cases. But if you need a direct reference to the font file, it is located at:
 
@@ -48,51 +51,71 @@ The normalize stylesheet should be used in most cases. But if you need a direct 
 https://fonts.pluralsight.com/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff2
 ```
 
-## Domain-restricted access
+### Domain-restricted access
 
 The CDN reference used by the Normalize stylesheet is domain-restricted. In other words, only requests coming from enumerated domains will succeed. If you have a new domain that you require new font access on, please contact #platform-ui in Slack.
 
-## Font weight
+## Type variables
 
-10 font weights are available.
+### Font weight
+
+It is recommended to use `psTypeFontWeightDefault` (400) & `psTypeFontWeightStrong` (600) for most text. Additionally there are 9 total weights available. Never use a font weight less than 400 on font sizes 18px or lower.
 
 <FontWeight />
 
-To apply the font weights, use the vars in css:
+Example of using CSS vars to adjust `font-weight`:
 
 ```css
 @import "@pluralsight/ps-design-system-core";
 
-.mySelector { font-weight: var(--psTypeFontWeightBold); }`}
+.mySelector { font-weight: var(--psTypeFontWeightStrong); }
 ```
 
-## Font size
+### Font size
 
-Eight font sizes are available.
+Eight font sizes are available. Use `psTypeFontSizeBase` (16px) for the default font size.
 
 <FontSize />
 
-To apply the font sizes, use the vars in css:
+Example of using CSS vars to adjust `font-size`:
 
 ```css
 @import '@pluralsight/ps-design-system-core';
 
 .mySelector {
-  font-size: var(--psTypeFontSizeLarge);
+  font-size: var(--psTypeFontSize500);
 }
 ```
 
-## Line height
+### Line height
 
 Four line height increments are available. Each font size also has a default line height.
 
 <LineHeight />
+
+Example of using CSS vars to adjust `line-height`:
 
 ```css
 @import '@pluralsight/ps-design-system-core';
 
 .mySelector {
   line-height: var(--psTypeLineHeightStandard);
+}
+```
+
+### Letter spacing
+
+Adjust the letter spacing (tracking) of an element. A general guideline, type larger than the base size (16px) should tighten, and type smaller than the base size should loosen to aid legibility.
+
+<LetterSpacing />
+
+Example of using CSS vars to adjust `letter-spacing`:
+
+```css
+@import '@pluralsight/ps-design-system-core';
+
+.mySelector {
+  letter-spacing: var(--psTypeLetterSpacingNone);
 }
 ```
 
