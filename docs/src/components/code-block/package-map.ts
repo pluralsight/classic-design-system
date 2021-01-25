@@ -86,7 +86,9 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-circularprogress': { CircularProgress },
   '@pluralsight/ps-design-system-core': { ...core },
   '@pluralsight/ps-design-system-datawell': { DataWell },
-  '@pluralsight/ps-design-system-datepicker': { ...omit(DatePicker, ['default'])},
+  '@pluralsight/ps-design-system-datepicker': {
+    ...omit(DatePicker, ['default'])
+  },
   '@pluralsight/ps-design-system-dialog': { Dialog },
   '@pluralsight/ps-design-system-drawer': { Drawer, useDrawerContext },
   '@pluralsight/ps-design-system-dropdown': {
