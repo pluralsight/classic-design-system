@@ -53,6 +53,31 @@ it('button click opens the menu', () => {
   expect(menu).toBeInTheDocument()
 })
 
+it('disabled click doesnt open menu', () => {
+  render(
+    <Dropdown
+      disabled
+      placeholder="Select"
+      menu={[
+        <Dropdown.Item key="1" value="o">
+          One
+        </Dropdown.Item>,
+        <Dropdown.Item key="2" value="w">
+          Two
+        </Dropdown.Item>,
+        <Dropdown.Item key="3" value="h">
+          Three
+        </Dropdown.Item>
+      ]}
+    />
+  )
+  const button = screen.getByRole('button', { name: /Select/ })
+  userEvent.click(button)
+
+  const menu = screen.queryByRole('listbox')
+  expect(menu).not.toBeInTheDocument()
+})
+
 it('caret down click opens the menu', () => {
   render(
     <Dropdown
