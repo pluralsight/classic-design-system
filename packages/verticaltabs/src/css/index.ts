@@ -209,7 +209,7 @@ export default {
     alignItems: 'center',
     display: 'flex',
     fontSize: '11px',
-    fontWeight: type.fontWeight700,
+    fontWeight: type.fontWeightStrong,
     textTransform: 'uppercase',
 
     '& > a, & > button, & > div': {
