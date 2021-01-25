@@ -13,32 +13,29 @@ type Options = { [K in keyof typeof addons]?: Option }
 type Option = boolean | Record<string, unknown>
 
 export function config(entry = [], options: Options = {}) {
+  function getEntriesFromPreview(pkgName: string) {
+    try {
+      const preview = join(pkgName, 'preview')
+      return require.resolve(preview)
+    } catch (err) {}
+  }
+
+  function getEntriesFromPresets(pkgName: string) {
+    try {
+      const preset = join(pkgName, 'preset')
+      const { config: presetConfig } = require(require.resolve(preset))
+      return presetConfig()
+    } catch (err) {}
+  }
+
   const entries = Object.keys(addons)
     .filter(key => optionEnabled(options[key]))
     .map(key => addons[key])
     .reduce((acc, pkgName) => {
-      let addonSupportsPreview = false
+      const pkgEntries =
+        getEntriesFromPreview(pkgName) || getEntriesFromPresets(pkgName) || []
 
-      try {
-        const preview = join(pkgName, 'preview')
-        acc = acc.concat(require.resolve(preview))
-
-        addonSupportsPreview = true
-
-        // eslint-disable-next-line
-      } catch (err) {}
-
-      if (!addonSupportsPreview) {
-        try {
-          const preset = join(pkgName, 'preset')
-          const { config: presetConfig } = require(require.resolve(preset))
-          acc = acc.concat(presetConfig())
-
-          // eslint-disable-next-line
-        } catch (err) {}
-      }
-
-      return acc
+      return acc.concat(pkgEntries)
     }, [])
 
   return [require.resolve('./default-params'), ...entry, ...entries]
