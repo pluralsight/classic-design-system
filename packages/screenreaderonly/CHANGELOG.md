@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@2.1.25...@pluralsight/ps-design-system-screenreaderonly@3.0.0) (2021-01-25)
+
+
+### Build System
+
+* **screenreaderonly:** update to react@17 ([a31a53c](https://github.com/pluralsight/design-system/commit/a31a53c6b19b37a1ec2a6219fc97464b4317dab1))
+
+
+### BREAKING CHANGES
+
+* **screenreaderonly:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [2.1.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@2.1.24...@pluralsight/ps-design-system-screenreaderonly@2.1.25) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-screenreaderonly

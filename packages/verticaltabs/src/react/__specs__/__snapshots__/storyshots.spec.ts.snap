@@ -11,7 +11,7 @@ exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
       data-css-1268me8=""
     >
       <h2
-        data-css-1ix4obe=""
+        data-css-1g0nzxz=""
       >
         <div>
           <span
@@ -187,7 +187,7 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
   >
     <div>
       <h2
-        data-css-1ix4obe=""
+        data-css-1g0nzxz=""
       >
         <button
           aria-label="Expand"
@@ -298,7 +298,7 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
   >
     <div>
       <h2
-        data-css-1ix4obe=""
+        data-css-1g0nzxz=""
       >
         <button
           aria-label="Collapse"
@@ -411,7 +411,7 @@ exports[`Storyshots components|VerticalTabs/Group header 1`] = `
       data-css-1268me8=""
     >
       <h2
-        data-css-1ix4obe=""
+        data-css-1g0nzxz=""
       >
         <div>
           <span
@@ -505,7 +505,7 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
       data-css-1268me8=""
     >
       <h2
-        data-css-1ix4obe=""
+        data-css-1g0nzxz=""
       >
         <div>
           <span
@@ -1320,7 +1320,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         data-css-1268me8=""
       >
         <h2
-          data-css-1ix4obe=""
+          data-css-1g0nzxz=""
         >
           <div>
             <span
@@ -1426,7 +1426,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         data-css-1268me8=""
       >
         <h2
-          data-css-1ix4obe=""
+          data-css-1g0nzxz=""
         >
           <div>
             <span
@@ -1623,7 +1623,7 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
         data-css-1268me8=""
       >
         <h2
-          data-css-1ix4obe=""
+          data-css-1g0nzxz=""
         >
           <div>
             <span
@@ -2285,7 +2285,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
       data-css-1268me8=""
     >
       <h2
-        data-css-1ix4obe=""
+        data-css-1g0nzxz=""
       >
         <div>
           <span
@@ -2440,7 +2440,7 @@ exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
     </li>
     <div>
       <h2
-        data-css-1ix4obe=""
+        data-css-1g0nzxz=""
       >
         <button
           aria-label="Collapse"

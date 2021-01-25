@@ -14,6 +14,9 @@
   --psTypeFontSizeXSmall: 12px;
 
   --psTypeFontSizeBase: 16px;
+  --psTypeFontSize1200: 88px;
+  --psTypeFontSize1100: 72px;
+  --psTypeFontSize1000: 56px;
   --psTypeFontSize900: 40px;
   --psTypeFontSize800: 34px;
   --psTypeFontSize700: 28px;
@@ -39,7 +42,7 @@
   --psTypeLetterSpacingNone: 0;
   --psTypeLetterSpacingLoose: 0.01em;
   --psTypeLetterSpacingLooser: 0.025em;
-  --psTypeLetterSpacingAllCaps: 0.8em;
+  --psTypeLetterSpacingAllCaps: 0.08em;
 
   /* font weight */
   --psTypeFontWeightBlack: 900;

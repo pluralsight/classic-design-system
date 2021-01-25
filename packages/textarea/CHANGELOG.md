@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@7.3.14...@pluralsight/ps-design-system-textarea@8.0.0) (2021-01-25)
+
+
+### Build System
+
+* **textarea:** update to react@17 ([e27313f](https://github.com/pluralsight/design-system/commit/e27313fb7ff0ece95705ddcf9d6ad944dc103d06))
+
+
+### BREAKING CHANGES
+
+* **textarea:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [7.3.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@7.3.13...@pluralsight/ps-design-system-textarea@7.3.14) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

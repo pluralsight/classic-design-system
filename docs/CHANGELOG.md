@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.10...@pluralsight/ps-design-system-docs@0.18.11) (2021-01-25)
+
+
+### Bug Fixes
+
+* **docs:** add invariant to codesandbox peerDeps for table ([e056ff9](https://github.com/pluralsight/design-system/commit/e056ff951816689e42229e40a04ad7e959718a32))
+
+
+
+
+
 ## [0.18.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.18.9...@pluralsight/ps-design-system-docs@0.18.10) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

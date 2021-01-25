@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-center",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "description": "Storybook addon for Centering",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -18,6 +18,6 @@
     "@storybook/addons": "^6.1.10"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^17.0.1"
   }
 }

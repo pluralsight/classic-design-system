@@ -20,8 +20,8 @@ export default {
     border: `1px solid transparent`,
     borderRadius: '2px',
     display: 'inline-block',
-    fontSize: type.fontSizeXSmall,
-    fontWeight: type.fontWeightMedium,
+    fontSize: type.fontSize100,
+    fontWeight: type.fontWeight500,
     lineHeight: type.lineHeightStandard,
     padding: `0 ${layout.spacingXSmall}`,
     textTransform: 'uppercase'

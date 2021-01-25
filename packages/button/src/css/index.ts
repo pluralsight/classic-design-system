@@ -47,8 +47,8 @@ export default {
     padding: `${layout.spacingSmall} ${layout.spacingMedium}`,
     border: 0,
     borderRadius: '2px',
-    fontSize: type.fontSizeSmall,
-    fontWeight: type.fontWeightMedium,
+    fontSize: type.fontSize200,
+    fontWeight: type.fontWeight500,
     textAlign: 'center',
     whiteSpace: 'nowrap',
     textDecoration: 'none',
@@ -73,22 +73,22 @@ export default {
     width: '100%'
   },
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     padding: `0 ${layout.spacingXSmall}`,
     height: '24px'
   },
   [`.psds-button--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     padding: `${layout.spacingXXSmall} ${layout.spacingXSmall}`,
     height: '32px'
   },
   [`.psds-button--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
     height: '40px'
   },
   [`.psds-button--size-${vars.sizes.large}`]: {
-    fontSize: type.fontSizeMedium,
+    fontSize: type.fontSize400,
     padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
     height: '48px'
   },

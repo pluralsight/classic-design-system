@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@1.2.24...@pluralsight/ps-design-system-navbrand@2.0.0) (2021-01-25)
+
+
+### Build System
+
+* **navbrand:** update to react@17 ([5422e4c](https://github.com/pluralsight/design-system/commit/5422e4c0e1842767529160d19a00232efb6aa932))
+
+
+### BREAKING CHANGES
+
+* **navbrand:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [1.2.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@1.2.23...@pluralsight/ps-design-system-navbrand@1.2.24) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navbrand

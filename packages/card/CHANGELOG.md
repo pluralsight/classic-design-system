@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@14.1.25...@pluralsight/ps-design-system-card@15.0.0) (2021-01-25)
+
+
+### Build System
+
+* **card:** update to react@17 ([82022b4](https://github.com/pluralsight/design-system/commit/82022b4f3e01f2de576a0e3de6c17ad4a9bb7229))
+
+
+### BREAKING CHANGES
+
+* **card:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [14.1.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@14.1.24...@pluralsight/ps-design-system-card@14.1.25) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

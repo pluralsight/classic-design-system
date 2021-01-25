@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.16...@pluralsight/ps-design-system-navitem@2.0.0) (2021-01-25)
+
+
+### Bug Fixes
+
+* **navitem:** forward ref to allow it to work with forwardRef ([a11c954](https://github.com/pluralsight/design-system/commit/a11c954a0dce135341395a0bdabe629a19c26bcc)), closes [#1561](https://github.com/pluralsight/design-system/issues/1561)
+
+
+### Build System
+
+* **navitem:** update to react@17 ([ae56a9b](https://github.com/pluralsight/design-system/commit/ae56a9b38144332b81a196dce3882a4ab4cad1c7))
+
+
+### BREAKING CHANGES
+
+* **navitem:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [1.5.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@1.5.15...@pluralsight/ps-design-system-navitem@1.5.16) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem

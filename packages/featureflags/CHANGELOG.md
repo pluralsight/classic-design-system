@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-featureflags@2.0.3...@pluralsight/ps-design-system-featureflags@3.0.0) (2021-01-25)
+
+
+### Build System
+
+* **featureflags:** update to react@17 ([7e60ea9](https://github.com/pluralsight/design-system/commit/7e60ea90fcd715dcad118df81517636c3a7edd32))
+
+
+### BREAKING CHANGES
+
+* **featureflags:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [2.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-featureflags@2.0.2...@pluralsight/ps-design-system-featureflags@2.0.3) (2021-01-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-featureflags

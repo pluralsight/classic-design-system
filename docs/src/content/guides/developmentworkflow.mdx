@@ -60,8 +60,7 @@ module.exports = {
 }
 ```
 
-<Badge color={Badge.colors.yellow}>Important</Badge>
-See the CSS config docs for other CSS tech config options if the above doesn't apply.
+See the [CSS Configuration](#css-configuration) section for other CSS config options if the above doesn't apply.
 
 For usage details, see the Core Usage docs.
 
@@ -77,14 +76,6 @@ All components support theming and have a peer dependency on the Theme package. 
 
 ```bash startExpanded
 npm install @pluralsight/ps-design-system-theme
-```
-
-<Badge color={Badge.colors.yellow}>Note</Badge> Some components currently have FeatureFlags
-as another peer dependency. If you see an expected warning in npm installs, add this
-package:
-
-```bash startExpanded
-npm install @pluralsight/ps-design-system-featureflags
 ```
 
 Each component is installed separately. The JavaScript is prebuilt Node modules. Assets are inlined. Find and use what you need. For example:

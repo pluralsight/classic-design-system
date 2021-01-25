@@ -94,14 +94,14 @@ export default {
   },
 
   [`.psds-switch__label`]: {
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: '1em'
   },
   [`.psds-switch__label--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeXSmall
+    fontSize: type.fontSize100
   },
   [`.psds-switch__label--size-${vars.sizes.large}`]: {
-    fontSize: type.fontSizeSmall
+    fontSize: type.fontSize200
   },
   [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
     marginRight: layout.spacingXSmall

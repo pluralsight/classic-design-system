@@ -96,6 +96,9 @@ const Star: React.FC<StarProp> & StarStatics = ({
   active = false,
   bright = false,
   interactive = false,
+  onClick,
+  onEnter,
+  onLeave,
   ...props
 }) => {
   const themeName = useTheme()
@@ -105,15 +108,15 @@ const Star: React.FC<StarProp> & StarStatics = ({
   const label = `Rate ${value} Star${value > 1 ? 's' : ''}`
 
   function handleClicked(event: React.MouseEvent) {
-    if (typeof props.onClick === 'function') props.onClick(props.index, event)
+    if (typeof onClick === 'function') onClick(props.index, event)
   }
 
   function handleEnter(event: React.MouseEvent | React.FocusEvent) {
-    if (typeof props.onEnter === 'function') props.onEnter(props.index, event)
+    if (typeof onEnter === 'function') onEnter(props.index, event)
   }
 
   function handleLeave(event: React.MouseEvent | React.FocusEvent) {
-    if (typeof props.onLeave === 'function') props.onLeave(props.index, event)
+    if (typeof onLeave === 'function') onLeave(props.index, event)
   }
 
   return (

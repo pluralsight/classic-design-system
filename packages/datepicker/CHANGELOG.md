@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@10.0.10...@pluralsight/ps-design-system-datepicker@11.0.0) (2021-01-25)
+
+
+### Build System
+
+* **datepicker:** update to react@17 ([28f47b2](https://github.com/pluralsight/design-system/commit/28f47b223de46153916ed2e806c96c2714603e6e))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [10.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@10.0.9...@pluralsight/ps-design-system-datepicker@10.0.10) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

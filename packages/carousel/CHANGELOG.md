@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@10.2.26...@pluralsight/ps-design-system-carousel@11.0.0) (2021-01-25)
+
+
+### Build System
+
+* **carousel:** update to react@17 ([e764598](https://github.com/pluralsight/design-system/commit/e7645989705fb1604ed8b676e46dd1cb0b6861ed))
+
+
+### BREAKING CHANGES
+
+* **carousel:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [10.2.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@10.2.25...@pluralsight/ps-design-system-carousel@10.2.26) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

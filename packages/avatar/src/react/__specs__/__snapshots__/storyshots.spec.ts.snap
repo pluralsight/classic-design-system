@@ -28,7 +28,7 @@ exports[`Storyshots Default className override 1`] = `
 
 exports[`Storyshots Default large 1`] = `
 <div
-  data-css-1vpftcu=""
+  data-css-1bcvkli=""
 >
   <img
     alt="large avatar"
@@ -155,7 +155,7 @@ exports[`Storyshots Default style override 1`] = `
 
 exports[`Storyshots Default xLarge 1`] = `
 <div
-  data-css-1c3gh8k=""
+  data-css-1vdca9w=""
 >
   <img
     alt="xLarge avatar"

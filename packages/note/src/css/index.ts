@@ -45,7 +45,7 @@ export default {
   '.psds-note': {
     alignItems: 'flex-start',
     display: 'flex',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightStandard,
     padding: `${layout.spacingLarge} ${layout.spacingMedium}`
   },
@@ -73,7 +73,7 @@ export default {
   '.psds-note__action': {
     ...resetButton,
     cursor: 'pointer',
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     transition: `all ${motion.speedNormal}`,
 
     '&:hover, &:active': { color: colorsTextIcon.highOnDark },
@@ -110,14 +110,14 @@ export default {
   },
 
   '.psds-note__heading': {
-    fontSize: type.fontSizeSmall,
-    fontWeight: type.fontWeightBold,
+    fontSize: type.fontSize200,
+    fontWeight: type.fontWeight700,
     lineHeight: type.lineHeightTight,
     marginRight: 'auto',
 
     '& > *': {
-      fontSize: type.fontSizeSmall,
-      fontWeight: type.fontWeightBold,
+      fontSize: type.fontSize200,
+      fontWeight: type.fontWeightStrong,
       lineHeight: type.lineHeightTight
     },
     '& a': {
@@ -144,8 +144,8 @@ export default {
     alignItems: 'center',
     color: colorsTextIcon.lowOnDark,
     display: 'flex',
-    fontSize: type.fontSizeXSmall,
-    fontWeight: type.fontWeightBook,
+    fontSize: type.fontSize100,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightTight,
     marginRight: 'auto',
     maxWidth: '100%',

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@3.0.10...@pluralsight/ps-design-system-scrollable@4.0.0) (2021-01-25)
+
+
+### Build System
+
+* **scrollable:** update to react@17 ([9004db0](https://github.com/pluralsight/design-system/commit/9004db04489a4847015a91cba95b537056d467d8))
+
+
+### BREAKING CHANGES
+
+* **scrollable:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [3.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@3.0.9...@pluralsight/ps-design-system-scrollable@3.0.10) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-scrollable
