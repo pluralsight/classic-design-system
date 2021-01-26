@@ -20,7 +20,7 @@ const option = {
   whiteSpace: 'nowrap',
   lineHeight: `calc(${vars.style.innerHeight} - 1px)`,
   fontSize: '10px',
-  fontWeight: type.fontWeightMedium,
+  fontWeight: type.fontWeight500,
   padding: `0 ${layout.spacingSmall}`,
   border: 'none',
   borderRadius: `calc(${vars.style.innerHeight} / 2)`,

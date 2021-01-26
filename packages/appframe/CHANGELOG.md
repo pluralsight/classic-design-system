@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@1.2.29...@pluralsight/ps-design-system-appframe@2.0.0) (2021-01-25)
+
+
+### Build System
+
+* **appframe:** update to react@17 ([93f9a1e](https://github.com/pluralsight/design-system/commit/93f9a1ec81c088f6978a5b1722f3d9d851c8dc69))
+
+
+### BREAKING CHANGES
+
+* **appframe:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [1.2.29](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@1.2.28...@pluralsight/ps-design-system-appframe@1.2.29) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe

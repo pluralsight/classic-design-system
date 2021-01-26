@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@6.1.24...@pluralsight/ps-design-system-avatar@7.0.0) (2021-01-25)
+
+
+### Build System
+
+* **avatar:** update to react@17 ([2956a88](https://github.com/pluralsight/design-system/commit/2956a889f513c3e6a36ba068756b4ffa951ae73c))
+
+
+### BREAKING CHANGES
+
+* **avatar:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [6.1.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@6.1.23...@pluralsight/ps-design-system-avatar@6.1.24) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

@@ -18,7 +18,7 @@ export default {
   '.psds-datawell__label': {
     display: 'block',
     margin: 0,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: '16px',
 
     '& > div': {
@@ -31,8 +31,8 @@ export default {
     }
   },
   '.psds-datawell__data': {
-    fontWeight: type.fontWeightMedium,
-    fontSize: type.fontSizeXXLarge,
+    fontWeight: type.fontWeightStrong,
+    fontSize: type.fontSize800,
     lineHeight: type.lineHeightHuge,
     color: colorsTextIcon.highOnDark,
     marginBottom: layout.spacingMedium,
@@ -42,7 +42,7 @@ export default {
     color: colorsTextIcon.highOnLight
   },
   '.psds-datawell__sublabel': {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: '16px',
     color: colorsTextIcon.lowOnDark
   },

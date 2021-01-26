@@ -61,8 +61,8 @@ export default {
     borderCollapse: 'collapse',
     borderColor: 'transparent',
     color: 'initial',
-    fontSize: type.fontSizeSmall,
-    fontWeight: type.fontWeightBook,
+    fontSize: type.fontSize200,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightTight,
     verticalAlign: 'middle',
     width: '100%',
@@ -94,8 +94,8 @@ export default {
   '.psds-table__head': {
     label: 'table__head',
 
-    fontSize: type.fontSizeXSmall,
-    fontWeight: type.fontWeightBook,
+    fontSize: type.fontSize100,
+    fontWeight: type.fontWeightDefault,
     textTransform: 'uppercase',
 
     '& > tr:first-of-type': { borderTop: 'none' }
@@ -110,7 +110,7 @@ export default {
     textAlign: 'left',
 
     '& > div': {
-      fontWeight: type.fontWeightBold,
+      fontWeight: type.fontWeightStrong,
       padding: cellPadding,
       verticalAlign: 'bottom',
       whiteSpace: 'nowrap'

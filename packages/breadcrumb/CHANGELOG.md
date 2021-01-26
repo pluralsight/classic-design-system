@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@8.0.23...@pluralsight/ps-design-system-breadcrumb@9.0.0) (2021-01-25)
+
+
+### Build System
+
+* **breadcrumb:** update to react@17 ([67aa267](https://github.com/pluralsight/design-system/commit/67aa267a678b6cdc14325842f0eeed0a0db77044))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [8.0.23](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@8.0.22...@pluralsight/ps-design-system-breadcrumb@8.0.23) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb

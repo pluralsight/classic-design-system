@@ -30,7 +30,7 @@ export default {
     maxHeight: 360,
     backgroundColor: colorsWhite,
     color: colorsTextIcon.highOnLight,
-    display: 'flex',
+    display: 'inline-flex',
     flexDirection: 'column'
   },
   '.psds-calendar__grid-wrapper': {

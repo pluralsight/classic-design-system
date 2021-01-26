@@ -4,7 +4,7 @@ import React from 'react'
 import StarRating from '..'
 
 describe('StarRating', () => {
-  function collectStarNodes(container: HTMLElement) {
+  function collectStarNodes(container: Element) {
     const nodeList = container.querySelectorAll('span, button')
 
     return [...((nodeList as unknown) as Element[])].filter(node => {

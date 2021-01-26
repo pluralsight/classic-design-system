@@ -115,8 +115,8 @@ export default {
   },
 
   '.psds-verticaltabs__tier1': {
-    fontSize: type.fontSizeSmall,
-    fontWeight: type.fontWeightMedium,
+    fontSize: type.fontSize200,
+    fontWeight: type.fontWeight500,
     height: '40px',
 
     '&:before': {
@@ -176,8 +176,8 @@ export default {
 
     '& > *': {
       ...truncate,
-      fontSize: type.fontSizeXSmall,
-      fontWeight: type.fontWeightBook,
+      fontSize: type.fontSize100,
+      fontWeight: type.fontWeightDefault,
       marginLeft: '37px',
       minHeight: '32px',
       padding: `${layout.spacingXSmall} ${layout.spacingLarge}`,
@@ -209,7 +209,7 @@ export default {
     alignItems: 'center',
     display: 'flex',
     fontSize: '11px',
-    fontWeight: type.fontWeightBold,
+    fontWeight: type.fontWeightStrong,
     textTransform: 'uppercase',
 
     '& > a, & > button, & > div': {

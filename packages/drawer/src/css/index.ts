@@ -29,7 +29,7 @@ export default {
     display: 'inline-flex',
     width: '100%',
     overflow: 'hidden',
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     cursor: 'pointer',
     border: 'none',
     background: 'none',

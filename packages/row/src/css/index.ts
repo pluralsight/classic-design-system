@@ -147,7 +147,7 @@ export default {
   // __title
   '.psds-row__title': {
     display: 'block',
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     textAlign: 'left'
   },
   [`.psds-row__title.psds-theme--${themeDefaultName}`]: {
@@ -157,11 +157,11 @@ export default {
     color: colorsTextIcon.highOnLight
   },
   [`.psds-row__title--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightTight
   },
   [`.psds-row__title--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeMedium,
+    fontSize: type.fontSize400,
     lineHeight: type.lineHeightStandard
   },
 
@@ -215,7 +215,7 @@ export default {
   '.psds-row__metadata': {
     display: 'flex',
     alignItems: 'center',
-    fontWeight: type.fontWeightBook,
+    fontWeight: type.fontWeightDefault,
     lineHeight: type.lineHeightTight,
     maxWidth: '100%',
     paddingTop: layout.spacingXXSmall
@@ -227,11 +227,11 @@ export default {
     color: colorsTextIcon.lowOnLight
   },
   [`.psds-row__metadata--size-${vars.sizes.small}`]: {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     paddingTop: 0
   },
   [`.psds-row__metadata--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     paddingTop: layout.spacingXXSmall
   },
 

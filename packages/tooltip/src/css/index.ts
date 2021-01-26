@@ -44,9 +44,9 @@ export default {
     padding: `${layout.spacingXSmall} ${layout.spacingSmall}`,
     borderRadius: '2px',
     boxShadow,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: type.lineHeightTight,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     transform: `translateY(${layout.spacingXSmall})`,
     opacity: 0,
     animation: `${fade || 'psds-tooltip__keyframes__fade'} ${

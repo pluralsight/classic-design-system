@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.25...@pluralsight/ps-design-system-checkbox@7.0.0) (2021-01-25)
+
+
+### Build System
+
+* **checkbox:** update to react@17 ([68bfeca](https://github.com/pluralsight/design-system/commit/68bfeca9ee5ea1c23c3827507fc4a3eff0390ef1))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [6.2.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@6.2.24...@pluralsight/ps-design-system-checkbox@6.2.25) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
