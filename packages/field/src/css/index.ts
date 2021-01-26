@@ -1,19 +1,11 @@
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
-
-const dark = {
-  className: `.psds-theme--${themeNames.dark}`
-}
-
-const light = {
-  className: `.psds-theme--${themeNames.light}`
-}
+import field from './field'
+import input from './input'
+import label from './label'
+import subLabel from './sub-label'
 
 export default {
-  '.psds-field__container': { label: 'field__container' },
-  [`.psds-field__container${dark.className}`]: {},
-  [`.psds-field__container${light.className}`]: {},
-
-  '.psds-field': { label: 'field' },
-  [`.psds-field${dark.className}`]: {},
-  [`.psds-field${light.className}`]: {}
+  field,
+  input,
+  label,
+  subLabel
 }

@@ -1,33 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Field Basic 1`] = `
+exports[`Storyshots Components/Field Text Input 1`] = `
 <div
   data-css-1268me8=""
 >
   <label
     data-css-1268me8=""
   >
-    <div>
-      some name
-    </div>
-    <div>
-      hint text
-    </div>
+    some name
   </label>
-</div>
-`;
-
-exports[`Storyshots Components/Field No Labels 1`] = `
-<div
-  data-css-1268me8=""
->
-  <label
+  <div
+    data-css-uxzi0e=""
+  >
+    <div
+      data-css-1268me8=""
+    >
+      <input
+        data-css-1e4sodz=""
+        type="text"
+      />
+    </div>
+  </div>
+  <div
     data-css-1268me8=""
-  />
+  >
+    hint text
+  </div>
 </div>
 `;
 
-exports[`Storyshots Components/Field/with downshift/TagsInput Basic 1`] = `
+exports[`Storyshots Components/Field/downshift/TagsInput Basic 1`] = `
 Array [
   <div
     data-css-1268me8=""
@@ -35,14 +37,16 @@ Array [
     <label
       data-css-1268me8=""
     >
-      <div>
-        Select an option
-      </div>
+      Select an option
+    </label>
+    <div
+      data-css-uxzi0e=""
+    >
       <div
-        data-css-1lu7sfl=""
+        data-css-1djcb20=""
       >
         <div
-          data-css-ddciwn=""
+          data-css-1dp4arf=""
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
@@ -74,17 +78,24 @@ Array [
           </div>
         </div>
       </div>
-      <input
-        onChange={[Function]}
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        type="text"
-        value=""
-      />
-      <div>
-        some hint text
+      <div
+        data-css-1268me8=""
+      >
+        <input
+          data-css-1e4sodz=""
+          onChange={[Function]}
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
       </div>
-    </label>
+    </div>
+    <div
+      data-css-1268me8=""
+    >
+      some hint text
+    </div>
   </div>,
   <div
     style={
@@ -167,6 +178,358 @@ Array [
       <li>
         <span>
           Oxygen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Fluorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Neon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sodium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Magnesium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Aluminum
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Silicon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Phosphorus
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sulfur
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chlorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Argon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Potassium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Calcium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Scandium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Titanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Vanadium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chromium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Manganese
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Iron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Cobalt
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nickel
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Copper
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zinc
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Gallium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Germanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Arsenic
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Selenium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Bromine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Krypton
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Rubidium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Strontium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Yttrium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zirconium
            
         </span>
         <button

@@ -10,15 +10,11 @@ import React, {
   useState
 } from 'react'
 
+import { Option, periodicElements } from '../__fixtures__/options'
 import Field from '..'
 
 interface TagsInputProps extends ComponentProps<typeof Field> {
   options: Option[]
-}
-
-interface Option {
-  label: string
-  value: string
 }
 
 const TagsInput: React.FC<TagsInputProps> = props => {
@@ -73,7 +69,7 @@ const TagsInput: React.FC<TagsInputProps> = props => {
           )
         })}
 
-        <input
+        <Field.Input
           onChange={handleFilterTermChange}
           type="text"
           value={filterTerm}
@@ -111,21 +107,13 @@ const TagsInput: React.FC<TagsInputProps> = props => {
 }
 
 export default {
-  title: 'Components/Field/with downshift/TagsInput',
+  title: 'Components/Field/downshift/TagsInput',
   component: TagsInput,
   args: {
-    options: [
-      { label: 'Hydrogen', value: 'H' },
-      { label: 'Helium', value: 'He' },
-      { label: 'Lithium', value: 'Li' },
-      { label: 'Beryllium', value: 'Be' },
-      { label: 'Boron', value: 'B' },
-      { label: 'Carbon', value: 'C' },
-      { label: 'Nitrogren', value: 'N' },
-      { label: 'Oxygen', value: 'O' }
-    ],
     label: <Field.Label>Select an option</Field.Label>,
-    subLabel: <Field.SubLabel>some hint text</Field.SubLabel>
+    subLabel: <Field.SubLabel>some hint text</Field.SubLabel>,
+
+    options: periodicElements
   }
 } as Meta
 

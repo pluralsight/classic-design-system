@@ -23,7 +23,8 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "*",
-    "@pluralsight/ps-design-system-util": "*"
+    "@pluralsight/ps-design-system-util": "*",
+    "@pluralsight/ps-design-system-halo": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
