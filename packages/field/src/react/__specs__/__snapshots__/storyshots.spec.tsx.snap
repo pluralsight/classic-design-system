@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Field Basic 1`] = `
+<div
+  data-css-1268me8=""
+>
+  <label
+    data-css-1268me8=""
+  >
+    <div>
+      some name
+    </div>
+    <div>
+      hint text
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/Field No Labels 1`] = `
+<div
+  data-css-1268me8=""
+>
+  <label
+    data-css-1268me8=""
+  />
+</div>
+`;
+
+exports[`Storyshots Components/Field/with downshift/TagsInput Basic 1`] = `
+Array [
+  <div
+    data-css-1268me8=""
+  >
+    <label
+      data-css-1268me8=""
+    >
+      <div>
+        Select an option
+      </div>
+      <div
+        data-css-1lu7sfl=""
+      >
+        <div
+          data-css-ddciwn=""
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            data-css-13bnfv4=""
+          >
+            Helium
+          </span>
+          <div
+            data-css-1gzzcm2=""
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+          >
+            <svg
+              aria-label="close icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <input
+        onChange={[Function]}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        type="text"
+        value=""
+      />
+      <div>
+        some hint text
+      </div>
+    </label>
+  </div>,
+  <div
+    style={
+      Object {
+        "border": "2px dashed pink",
+        "margin": "20px 0",
+        "maxHeight": 200,
+        "overflow": "scroll",
+        "padding": 20,
+      }
+    }
+  >
+    <ul>
+      <li>
+        <span>
+          Hydrogen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Lithium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Beryllium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Boron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Carbon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nitrogren
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Oxygen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+    </ul>
+  </div>,
+]
+`;
