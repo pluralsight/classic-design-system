@@ -8,8 +8,12 @@ export default {
   '.psds-input': {
     label: 'input',
 
-    all: 'unset', // TODO: add a style reset that works in IE11
+    border: 'none',
+    outline: 'none',
+    padding: 0,
     width: '100%',
+
+    '&:focus': { outline: 'none' },
 
     '&[type=search]::-webkit-search-decoration': { appearance: 'none' },
     '&[type=search]::-webkit-search-cancel-button': { appearance: 'none' },
