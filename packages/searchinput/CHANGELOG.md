@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@6.0.24...@pluralsight/ps-design-system-searchinput@7.0.0) (2021-01-25)
+
+
+### Build System
+
+* **searchinput:** update to react@17 ([8e11ca5](https://github.com/pluralsight/design-system/commit/8e11ca5d84ec5384e859549c2d905e88135af31e))
+
+
+### BREAKING CHANGES
+
+* **searchinput:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [6.0.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@6.0.23...@pluralsight/ps-design-system-searchinput@6.0.24) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput

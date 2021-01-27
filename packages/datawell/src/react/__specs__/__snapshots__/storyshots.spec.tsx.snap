@@ -16,7 +16,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       234,345
     </div>
@@ -38,7 +38,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       123
     </div>
@@ -58,7 +58,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       1,345/23,235
     </div>
@@ -78,7 +78,7 @@ exports[`Storyshots DataWell fixed width in row, no spaces 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       About 3
     </div>
@@ -102,7 +102,7 @@ exports[`Storyshots DataWell label/data 1`] = `
     </span>
   </div>
   <div
-    data-css-11qqyxr=""
+    data-css-1d1j327=""
   >
     123
   </div>
@@ -125,7 +125,7 @@ exports[`Storyshots DataWell label/data/subLabel 1`] = `
     </span>
   </div>
   <div
-    data-css-11qqyxr=""
+    data-css-1d1j327=""
   >
     234,345
   </div>
@@ -157,7 +157,7 @@ exports[`Storyshots DataWell row 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       234,345
     </div>
@@ -179,7 +179,7 @@ exports[`Storyshots DataWell row 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       123
     </div>
@@ -199,7 +199,7 @@ exports[`Storyshots DataWell row 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       12/23
     </div>
@@ -219,7 +219,7 @@ exports[`Storyshots DataWell row 1`] = `
       </span>
     </div>
     <div
-      data-css-11qqyxr=""
+      data-css-1d1j327=""
     >
       About 3
     </div>

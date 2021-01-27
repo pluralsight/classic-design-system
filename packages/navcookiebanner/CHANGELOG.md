@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.15...@pluralsight/ps-design-system-navcookiebanner@2.0.0) (2021-01-25)
+
+
+### Build System
+
+* **navcookiebanner:** update to react@17 ([cd4ab73](https://github.com/pluralsight/design-system/commit/cd4ab73bc3c3b8ca1241ef5bc715e6b06e1e2843))
+
+
+### BREAKING CHANGES
+
+* **navcookiebanner:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [1.4.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@1.4.14...@pluralsight/ps-design-system-navcookiebanner@1.4.15) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.2.4...@pluralsight/ps-design-system-table@12.0.0) (2021-01-25)
+
+
+### Build System
+
+* **table:** update to react@17 ([65ff9f1](https://github.com/pluralsight/design-system/commit/65ff9f1ebd71f1e883a688a6fb0616a2bb46c46e))
+
+
+### BREAKING CHANGES
+
+* **table:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [11.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@11.2.3...@pluralsight/ps-design-system-table@11.2.4) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

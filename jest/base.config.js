@@ -14,6 +14,7 @@ module.exports = {
     'jest-axe/extend-expect',
     '<rootDir>/jest/setup/index.js'
   ],
+  testEnvironment: 'jest-environment-jsdom-sixteen',
   transform: {
     '^.+\\.js$': '<rootDir>/jest/babel-transformer.js',
     '^.+\\.tsx?$': '<rootDir>/jest/babel-transformer.js'

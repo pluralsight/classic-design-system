@@ -52,7 +52,7 @@ export default {
     maxWidth: '320px',
     listStyle: 'none',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     opacity: 0
   },
   '.psds-actionmenu__animation': ({ slide }: { slide: string }) => ({
@@ -169,7 +169,7 @@ export default {
     width: '100%',
     color: 'inherit',
     lineHeight: type.lineHeightExtra,
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     cursor: 'pointer',
     border: 'none',
     paddingTop: '0',

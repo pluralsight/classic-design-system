@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.25...@pluralsight/ps-design-system-verticaltabs@5.0.0) (2021-01-25)
+
+
+### Build System
+
+* **verticaltabs:** update to react@17 ([eac232f](https://github.com/pluralsight/design-system/commit/eac232f8f840e342d455903b99c6f211e9265112))
+
+
+### BREAKING CHANGES
+
+* **verticaltabs:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [4.2.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@4.2.24...@pluralsight/ps-design-system-verticaltabs@4.2.25) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@1.2.24...@pluralsight/ps-design-system-navuser@2.0.0) (2021-01-25)
+
+
+### Build System
+
+* **navuser:** update to react@17 ([970bd22](https://github.com/pluralsight/design-system/commit/970bd22126606df4aabe21b8a2afe118e4b1eca6))
+
+
+### BREAKING CHANGES
+
+* **navuser:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [1.2.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@1.2.23...@pluralsight/ps-design-system-navuser@1.2.24) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navuser

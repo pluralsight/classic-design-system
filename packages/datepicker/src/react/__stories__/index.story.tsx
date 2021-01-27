@@ -122,6 +122,7 @@ storiesOf('SingleDate', module)
             />
           }
         />
+        <br />
         {open && (
           <Calendar
             {...dayzedData}
@@ -218,7 +219,7 @@ storiesOf('RangeDate', module)
       setSelected
     })
     return (
-      <>
+      <div>
         <TextInput onChange={onStartChange} value={startValue} />
         <TextInput onChange={onEndChange} value={endValue} />
         <Calendar {...dayzedData} onMouseLeave={onMouseLeave} slide={slide}>
@@ -234,7 +235,7 @@ storiesOf('RangeDate', module)
             }}
           </CalendarDates>
         </Calendar>
-      </>
+      </div>
     )
   })
   .add('calendar: with input (display two months)', () => {

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@7.1.24...@pluralsight/ps-design-system-halo@8.0.0) (2021-01-25)
+
+
+### Build System
+
+* **halo:** update to react@17 ([e6334b4](https://github.com/pluralsight/design-system/commit/e6334b495fe3bbf83d32c64620f0230c37be98e0))
+
+
+### BREAKING CHANGES
+
+* **halo:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [7.1.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@7.1.23...@pluralsight/ps-design-system-halo@7.1.24) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-halo

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@3.0.5...@pluralsight/ps-design-system-collapsible@4.0.0) (2021-01-25)
+
+
+### Build System
+
+* **collapsible:** update to react@17 ([f6bba3b](https://github.com/pluralsight/design-system/commit/f6bba3b1c4118928026dbc55eccd6481ed691771))
+
+
+### BREAKING CHANGES
+
+* **collapsible:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [3.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@3.0.4...@pluralsight/ps-design-system-collapsible@3.0.5) (2021-01-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-collapsible

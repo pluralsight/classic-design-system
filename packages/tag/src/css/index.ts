@@ -21,7 +21,7 @@ export default {
     alignItems: 'center',
     textAlign: 'center',
     borderRadius: '16px',
-    fontWeight: type.fontWeightMedium,
+    fontWeight: type.fontWeight500,
     textDecoration: 'none',
     color: colorsTextIcon.highOnDark,
     backgroundColor: colorsBackgroundUtility[25],
@@ -49,13 +49,13 @@ export default {
   [`${base}--size-${vars.sizes.small}`]: {
     height: '24px',
     padding: `0 ${layout.spacingSmall}`,
-    fontSize: type.fontSizeXSmall,
+    fontSize: type.fontSize100,
     lineHeight: type.lineHeightStandard
   },
   [`${base}--size-${vars.sizes.medium}`]: {
     height: '32px',
     padding: `0 ${layout.spacingMedium}`,
-    fontSize: type.fontSizeSmall,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightExtra
   },
 

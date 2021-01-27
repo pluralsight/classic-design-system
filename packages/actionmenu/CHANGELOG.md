@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.11...@pluralsight/ps-design-system-actionmenu@16.0.0) (2021-01-25)
+
+
+### Build System
+
+* **actionmenu:** update to react@17 ([0ce7d36](https://github.com/pluralsight/design-system/commit/0ce7d36e2883753583df319effcfec6a13dbb596))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** react@17 peerDependency upgrade
+
+
+
+
+
 ## [15.4.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@15.4.10...@pluralsight/ps-design-system-actionmenu@15.4.11) (2021-01-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu
