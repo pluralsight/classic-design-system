@@ -1,0 +1,1748 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Field/TagsField Basic 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-ep1lt2=""
+    >
+      Select an option
+    </label>
+    <div>
+      <div
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1a24qct=""
+          data-css-1q3e54w=""
+        >
+          <div
+            data-css-1ofa43o=""
+          >
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Helium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-1ffn65r=""
+                data-css-cxchbu=""
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "border": "2px dashed pink",
+        "margin": "20px 0",
+        "maxHeight": 200,
+        "overflow": "scroll",
+        "padding": 20,
+      }
+    }
+  >
+    <ul>
+      <li>
+        <span>
+          Hydrogen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Lithium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Beryllium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Boron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Carbon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nitrogren
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Oxygen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Fluorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Neon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sodium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Magnesium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Aluminum
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Silicon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Phosphorus
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sulfur
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chlorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Argon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Potassium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Calcium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Scandium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Titanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Vanadium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chromium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Manganese
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Iron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Cobalt
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nickel
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Copper
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zinc
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Gallium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Germanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Arsenic
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Selenium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Bromine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Krypton
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Rubidium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Strontium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Yttrium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zirconium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-ep1lt2=""
+    >
+      Select an option
+    </label>
+    <div>
+      <div
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1a24qct=""
+          data-css-1q3e54w=""
+        >
+          <div
+            data-css-1ofa43o=""
+          >
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Helium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-1ffn65r=""
+                data-css-cxchbu=""
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            data-css-1dghjw7=""
+          >
+            <div
+              data-css-b8eohb=""
+              onClick={[Function]}
+            >
+              <p
+                data-css-1ea0ufb=""
+              >
+                custom suffix
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "border": "2px dashed pink",
+        "margin": "20px 0",
+        "maxHeight": 200,
+        "overflow": "scroll",
+        "padding": 20,
+      }
+    }
+  >
+    <ul>
+      <li>
+        <span>
+          Hydrogen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Lithium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Beryllium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Boron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Carbon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nitrogren
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Oxygen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Fluorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Neon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sodium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Magnesium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Aluminum
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Silicon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Phosphorus
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sulfur
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chlorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Argon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Potassium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Calcium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Scandium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Titanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Vanadium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chromium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Manganese
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Iron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Cobalt
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nickel
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Copper
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zinc
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Gallium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Germanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Arsenic
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Selenium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Bromine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Krypton
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Rubidium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Strontium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Yttrium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zirconium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
+<div
+  data-css-h2yjsn=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            disabled={true}
+            id="text-area__area-unique-id"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8ff2sc=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Icon Prefix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-12zuhy9=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Icon Suffix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+          />
+        </div>
+        <div
+          data-css-1dghjw7=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Size Small 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1q3e54w=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+            placeholder="Enter some text here"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
+<div
+  data-css-h2yjsn=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            disabled={true}
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Error 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8ff2sc=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-12zuhy9=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+        <div
+          data-css-1dghjw7=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            id="text-input__input-unique-id"
+            type="password"
+          />
+        </div>
+        <div
+          data-css-1dghjw7=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="lock icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13.5 15.5a1.5 1.5 0 11-3.001 0 1.5 1.5 0 013.001 0M17 8v2c1.103 0 2 .897 2 2v7c0 1.104-.897 2-2 2H7c-1.103 0-2-.896-2-2v-7c0-1.103.897-2 2-2V8c0-2.756 2.243-5 5-5s5 2.244 5 5zM7 19h10.001L17 12H7v7zM9 8v2h6V8c0-1.653-1.346-3-3-3S9 6.348 9 8z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1q3e54w=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-cxchbu=""
+            id="text-input__input-unique-id"
+            placeholder="Enter some text here"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;

@@ -27,7 +27,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 })
 Input.displayName = 'Field.Input'
 
-// TODO: different types of Container styles
 const defaultRenderContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
   (props, ref) => <div ref={ref} {...props} />
 )

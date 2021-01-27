@@ -6,14 +6,28 @@ import {
   type
 } from '@pluralsight/ps-design-system-core'
 
-import { dark, light } from './shared'
+import { sizes } from '../vars'
 
 export default {
   '.psds-field__container': {
-    label: 'field__container'
+    label: 'field__container',
+
+    display: 'inline-block'
   },
-  [`.psds-field__container${dark.className}`]: {},
-  [`.psds-field__container${light.className}`]: {},
+  '.psds-field__container--disabled': {
+    opacity: 0.5,
+    cursor: 'not-allowed'
+  },
+  '.psds-field__container--error': {},
+
+  //   '.psds-text-input__error': {
+  //     position: 'absolute',
+  //     right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
+  //     display: 'flex',
+  //     alignItems: 'center',
+  //     color: colorsStatus.error,
+  //     marginLeft: layout.spacingXSmall
+  //   }
 
   '.psds-field': {
     label: 'field',
@@ -25,10 +39,35 @@ export default {
     color: colorsTextIcon.highOnLight,
     display: 'flex',
     fontWeight: type.fontWeightDefault,
-    height: '40px',
-    minWidth: '192px',
-    padding: layout.spacingXSmall,
+    // minHeight: '40px',
+    // minWidth: '192px',
+    padding: `${layout.spacingXSmall} ${layout.spacingSmall}`,
     position: 'relative',
     width: '100%'
+  },
+  [`.psds-field--${sizes.small}`]: {
+    // minHeight: '32px',
+    padding: layout.spacingXSmall
+  },
+
+  '.psds-field__prefix': {
+    label: 'input__prefix',
+
+    alignSelf: 'stretch',
+    display: 'flex',
+    flex: '0 0 auto',
+    height: 'auto',
+    marginRight: layout.spacingXSmall
+  },
+
+  '.psds-field__suffix': {
+    label: 'input__suffix',
+
+    alignSelf: 'stretch',
+    display: 'flex',
+    flex: '0 0 auto',
+    height: 'auto',
+    marginLeft: layout.spacingXSmall,
+    overflow: 'visible'
   }
 }
