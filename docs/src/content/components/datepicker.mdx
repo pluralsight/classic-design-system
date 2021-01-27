@@ -327,8 +327,6 @@ return (
 )
 ```
 
-TODO: pick up
-
 ### useRangeSelectChange
 
 `useRangeSelectChange` is like the `useDateSelectChange` hook except it's designed to work with two inputs representing the start and end of a date range. 
@@ -427,16 +425,14 @@ return (
 
 ## Examples
 
-### Single date (basic usage)
+### Single date
 
-1. We create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the intial date. 
-2. Next we create an `onDateSelected` callback that will update the selected state when a calendar date is clicked along
-with any side effects we might desire.
-3. We then pass `selected`, `setSelected`, and `onDateSelected` to the `useDayzed`
-hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) we
-wish to set.
-4. Finally we destructure `getDateProps` and pass it to the `CalendarDates` component which uses a renderProp
-pattern to apply styles and handlers to buttons that represent individual dates in a month.
+For this first example, here are steps that to be considered when determining how to configure a date picker. Most other examples don't have these steps but should be similar. Learn this example well first in order to understand the rest more easily.
+
+1. Create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the intial date. 
+2. Create an `onDateSelected` callback that will update the selected state when a calendar date is clicked along with any side effects desired.
+3. Pass `selected`, `setSelected`, and `onDateSelected` to the `useDayzed` hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) desired.
+4. Destructure `getDateProps`, and pass it to the `CalendarDates` component which uses a renderProp pattern to apply styles and handlers to buttons that represent individual dates in a month.
 
 ```typescript 
 import { useDayzed, DateObj } from 'dayzed'
@@ -445,7 +441,7 @@ import { colorsBackgroundLight, type, colorsTextIcon, colorsBackgroundDark, layo
 import {Calendar, CalendarDates} from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
 
-function Comp() {
+function Example() {
  const [selected, setSelected] = React.useState<Date | undefined>(
     new Date('05/13/2020')
   )
@@ -509,13 +505,12 @@ function Comp() {
     )
 }
 
-export default Comp
+export default Example
 ```
 
-### Single date (with button)
+### Single date controlled by external state
 
-We can also trigger calendar updates by setting the shared state object selected via a onClick handler passed to'
-a button.
+Calendar updates can also be triggered by setting the shared state object selected via an onClick handler passed to a button.
 
 ```typescript
 import { useDayzed, DateObj } from 'dayzed'
@@ -525,7 +520,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import {Calendar, CalendarDates} from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
 
-const Comp = () => {
+const Example = () => {
   const [selected, setSelected] = React.useState<Date | undefined>()
   const [value, setValue] = React.useState<string | undefined>('05/13/2020')
     const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
@@ -561,140 +556,22 @@ const Comp = () => {
       </div>
     )
 }
-export default Comp
+export default Example
 ```
 
-### Single date (migration guide)
-To migrate our old DatePicker to this new implementation we need to do a little setup.
-Our JSX structure if going to look like this:
 
-```typescript noRender 
-<div style={{ display: 'inline-block' }}>
-  <TextInput
-    onChange={onChange}
-    value={value}
-    placeholder='mm/dd/yyyy'
-    icon={
-      <CalendarIcon
-        onClick={handleIconClick}
-        style={{ cursor: 'pointer' }}
-      />
-    }
-  />
-  <br />
-  {open && (
-    <Calendar
-      {...dayzedData}
-      style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
-      slide={slide}
-    >
-      <CalendarDates getDateProps={getDateProps}>
-        {renderProps => {
-          return <button {...renderProps} />
-        }}
-      </CalendarDates>
-    </Calendar>
-  )}
-</div>
-```
+### Range
 
-1. We create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the intial date. 
-1. We create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<boolean>>` then set it to false. 
-2. Next we create an `onDateSelected` callback that will update the selected and open states when a calendar date is clicked along
-with any side effects we might desire.
-3. We destructure `getDateProps` and pass it to the `CalendarDates` component which uses a renderProp
+Range selection setup is a little different from date selection cases, so here's a short tutorial to help learn the concepts.
+
+1. Create a new state object & setter `selected: Date[]` and `setSelected: React.Dispatch<React.SetStateAction<Date[] | undefined>>` then optionally set the intial date.
+2. Import an `onRangeDateSelected` callback that will update the selected state when a calendar date is clicked along
+with any side effects desired using the `onSelect` argument.
+3. Pass `selected`, `setSelected`, and `onRangeDateSelected` to the `useDayzed`
+hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) desired.
+4. Destructure `getDateProps` and pass it to the `CalendarDates` component which uses a renderProp
 pattern to apply styles and handlers to buttons that represent individual dates in a month.
-4. We then pass `selected`, `setSelected`, and `onDateSelected` to the `useDayzed`
-hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) we
-wish to set.
-5. We now want to create a handleIconClick callback to be passed to CalendarIcon and will toggle the open state when clicked.
-6. Now we create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<ValueOf<typeof slides>>>` and pass slide to the Calendar.
-7. We use the `useDateSelectChange` hook and pass it `selected`, `setSlide`, and `setSelected`.
-We destructure the returned value and onChange callback and pass them to the TextInput. 
-To manipulate the calendar using an input we require a bit more setup. The DatePicker package provides us with
-a handy hook to reduce the amount of boilerplate necessary for such a composite component, `useDateSelectChange`. 
-
-```typescript
-import { useDayzed, DateObj } from 'dayzed'
-import { format } from 'date-fns'
-import { colorsBackgroundLight, type, colorsTextIcon, colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
-import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
-import TextInput from '@pluralsight/ps-design-system-textinput'
-import {Calendar, CalendarDates, slides} from '@pluralsight/ps-design-system-datepicker'
-import React from 'react'
-
-const Comp = () => {
-  const [selected, setSelected] = React.useState<Date | undefined>()
-  const [open, setOpen] = React.useState<boolean>(false)
-  const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
-    setSelected(dateObj.date)
-    setOpen(false)
-  }
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected || new Date('05/30/2020'),
-    selected,
-    onDateSelected
-  })
-  const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
-    setOpen(!open)
-  }
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [value, onChange] = useDateSelectChange({
-    selected,
-    setSlide,
-    setSelected
-  })
-  return (
-    <div className="root">
-      <div className="date">
-        Date: <span className="exampleNumber">{value}</span>
-      </div>
-      <div className="example">
-        <div style={{ display: 'inline-block' }}>
-          <TextInput
-            onChange={onChange}
-            value={value}
-            placeholder='mm/dd/yyyy'
-            icon={
-              <CalendarIcon
-                onClick={handleIconClick}
-                style={{ cursor: 'pointer' }}
-              />
-            }
-          />
-          <br />
-          {open && (
-            <Calendar
-              {...dayzedData}
-              style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
-              slide={slide}
-            >
-              <CalendarDates getDateProps={getDateProps}>
-                {renderProps => {
-                  return <button {...renderProps} />
-                }}
-              </CalendarDates>
-            </Calendar>
-          )}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default Comp
-```
-
-### Range (basic usage)
-1. We create a new state object & setter `selected: Date[]` and `setSelected: React.Dispatch<React.SetStateAction<Date[] | undefined>>` then optionally set the intial date.
-2. Next we import an `onRangeDateSelected` callback that will update the selected state when a calendar date is clicked along
-with any side effects we might desire using the `onSelect` argument.
-3. We then pass `selected`, `setSelected`, and `onRangeDateSelected` to the `useDayzed`
-hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) we
-wish to set.
-4. Now we destructure `getDateProps` and pass it to the `CalendarDates` component which uses a renderProp
-pattern to apply styles and handlers to buttons that represent individual dates in a month.
-5. Finally we import and setup `useIsInRange` hook and pass the return to `Calendar`, `CalendarDates` and `button` as shown below
+5. Import and setup `useIsInRange` hook and pass the return to `Calendar`, `CalendarDates` and `button` as shown below
 ```typescript 
 import { useDayzed, DateObj } from 'dayzed'
 import { format } from 'date-fns'
@@ -702,7 +579,7 @@ import { colorsBackgroundLight, type, colorsTextIcon, colorsBackgroundDark, layo
 import {Calendar, CalendarDates, useIsInRange, onRangeDateSelected} from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
 
-const Comp = () => {
+const Example = () => {
   const [selected, setSelected] = React.useState<Date[] | undefined>()
   const [values, setValues] = React.useState<string[]>([])
   React.useEffect(() => {
@@ -745,13 +622,10 @@ const Comp = () => {
   )
 }
 
-export default Comp
+export default Example
 ```
 
-
-### Range (with button)
-
-Like with single date we can also use a button to set a range on our Calendar.
+### Range controlled by external state
 
 ```typescript
 import { useDayzed, DateObj } from 'dayzed'
@@ -761,7 +635,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import {Calendar, CalendarDates, useIsInRange, onRangeDateSelected} from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
 
-  const Comp = () => {
+  const Example = () => {
     const [selected, setSelected] = React.useState<Date[]>([])
     const [values, setValues] = React.useState<string[]>([])
     React.useEffect(() => {
@@ -810,11 +684,12 @@ import React from 'react'
       </div>
     )
   }
-  export default Comp
+  export default Example
 ```
 
-### Range (with input)
-We can also use `TextInput` with range selection as well as shown below.
+### Range with bi-directional updates
+
+External `TextInput` with range selection can be used to update the `Calendar` and vice versa.
 
 ```typescript
 import { useDayzed, DateObj } from 'dayzed'
@@ -824,7 +699,7 @@ import TextInput from '@pluralsight/ps-design-system-textinput'
 import {Calendar, CalendarDates, useIsInRange, onRangeDateSelected, useRangeSelectChange, slides} from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
 
-  const Comp = () => {
+  const Example = () => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
     const { getDateProps, ...dayzedData } = useDayzed({
       monthsToDisplay: 2,
@@ -878,10 +753,10 @@ import React from 'react'
       </div>
     )
   }
-  export default Comp
+  export default Example
 ```
 
-### Multi-date (basic usage)
+### Multi-date
 
 ```typescript
 import { useDayzed, DateObj } from 'dayzed'
@@ -890,7 +765,7 @@ import { colorsBackgroundLight, type, colorsTextIcon, colorsBackgroundDark, layo
 import {Calendar, CalendarDates, onMultiDateSelected} from '@pluralsight/ps-design-system-datepicker'
 import React from 'react'
 
-const Comp = () => {
+const Example = () => {
   const [selected, setSelected] = React.useState<Date[]>([])
   const [values, setValues] = React.useState<string[]>([])
     React.useEffect(() => {
@@ -955,5 +830,89 @@ const Comp = () => {
   )
 }
 
-export default Comp
+export default Example
+```
+
+## Migration guide from v11.x and before to v12.x
+
+This guide is to migrate the old DatePicker to a single datepicker using the new components and functions.
+
+1. Create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the intial date. 
+1. Create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<boolean>>` then set it to false. 
+2. Create an `onDateSelected` callback that will update the selected and open states when a calendar date is clicked along with any side effects desired.
+3. Destructure `getDateProps` and pass it to the `CalendarDates` component which uses a renderProp pattern to apply styles and handlers to buttons that represent individual dates in a month.
+4. Pass `selected`, `setSelected`, and `onDateSelected` to the `useDayzed` hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) desired.
+5. Create a handleIconClick callback to be passed to CalendarIcon and will toggle the open state when clicked.
+6. Create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<ValueOf<typeof slides>>>` and pass slide to the Calendar.
+7. Use the `useDateSelectChange` hook and pass it `selected`, `setSlide`, and `setSelected`.  Destructure the returned value and onChange callback and pass them to the TextInput.  To manipulate the calendar using an input will require a bit more setup. The DatePicker package provides us with a handy hook to reduce the amount of boilerplate necessary for such a composite component, `useDateSelectChange`. 
+
+```typescript
+import { useDayzed, DateObj } from 'dayzed'
+import { format } from 'date-fns'
+import { colorsBackgroundLight, type, colorsTextIcon, colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
+import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import {Calendar, CalendarDates, slides} from '@pluralsight/ps-design-system-datepicker'
+import React from 'react'
+
+const Example = () => {
+  const [selected, setSelected] = React.useState<Date | undefined>()
+  const [open, setOpen] = React.useState<boolean>(false)
+  const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
+    setSelected(dateObj.date)
+    setOpen(false)
+  }
+  const { getDateProps, ...dayzedData } = useDayzed({
+    date: selected || new Date('05/30/2020'),
+    selected,
+    onDateSelected
+  })
+  const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
+    setOpen(!open)
+  }
+  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
+  const [value, onChange] = useDateSelectChange({
+    selected,
+    setSlide,
+    setSelected
+  })
+  return (
+    <div className="root">
+      <div className="date">
+        Date: <span className="exampleNumber">{value}</span>
+      </div>
+      <div className="example">
+        <div style={{ display: 'inline-block' }}>
+          <TextInput
+            onChange={onChange}
+            value={value}
+            placeholder='mm/dd/yyyy'
+            icon={
+              <CalendarIcon
+                onClick={handleIconClick}
+                style={{ cursor: 'pointer' }}
+              />
+            }
+          />
+          <br />
+          {open && (
+            <Calendar
+              {...dayzedData}
+              style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
+              slide={slide}
+            >
+              <CalendarDates getDateProps={getDateProps}>
+                {renderProps => {
+                  return <button {...renderProps} />
+                }}
+              </CalendarDates>
+            </Calendar>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Example
 ```
