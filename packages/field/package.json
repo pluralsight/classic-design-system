@@ -23,8 +23,8 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "*",
-    "@pluralsight/ps-design-system-util": "*",
-    "@pluralsight/ps-design-system-halo": "*"
+    "@pluralsight/ps-design-system-halo": "*",
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
     "@pluralsight/ps-design-system-icon": "*",
+    "@pluralsight/ps-design-system-screenreaderonly": "*",
     "@pluralsight/ps-design-system-storybook-preset": "*",
     "@pluralsight/ps-design-system-tag": "*",
     "downshift": "^6.1.0"

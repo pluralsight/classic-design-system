@@ -1,5 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Field/SelectField Basic 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="downshift-0-toggle-button"
+    id="downshift-0-label"
+  >
+    Choose an element
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-lhhmvg=""
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          aria-labelledby="downshift-0-label downshift-0-toggle-button"
+          data-css-1xqnm3u=""
+          id="downshift-0-toggle-button"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          <span>
+            Do something
+          </span>
+          <div
+            data-css-1dghjw7=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Field/TagsField Basic 1`] = `
 <div
   style={
