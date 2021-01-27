@@ -14,8 +14,10 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
   >
     <label
       data-css-ep1lt2=""
+      htmlFor="tags-input__input-unique-id"
+      id="tags-input__label-unique-id"
     >
-      Select an option
+      Some label text
     </label>
     <div>
       <div
@@ -74,7 +76,8 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
             >
               <input
                 data-css-1ffn65r=""
-                data-css-cxchbu=""
+                data-css-1na6nif=""
+                id="tags-input__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
                 onKeyDown={[Function]}
@@ -547,8 +550,10 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
   >
     <label
       data-css-ep1lt2=""
+      htmlFor="tags-input__input-unique-id"
+      id="tags-input__label-unique-id"
     >
-      Select an option
+      Some label text
     </label>
     <div>
       <div
@@ -607,7 +612,8 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
             >
               <input
                 data-css-1ffn65r=""
-                data-css-cxchbu=""
+                data-css-1na6nif=""
+                id="tags-input__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
                 onKeyDown={[Function]}
@@ -1405,7 +1411,7 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1444,7 +1450,7 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             disabled={true}
             id="text-input__input-unique-id"
             type="text"
@@ -1484,7 +1490,7 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1540,7 +1546,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1579,7 +1585,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1635,7 +1641,7 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             id="text-input__input-unique-id"
             type="password"
           />
@@ -1691,7 +1697,7 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1730,7 +1736,7 @@ exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-cxchbu=""
+            data-css-1na6nif=""
             id="text-input__input-unique-id"
             placeholder="Enter some text here"
             type="text"

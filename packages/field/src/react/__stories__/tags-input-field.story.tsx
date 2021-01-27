@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, useUniqueId } from '@pluralsight/ps-design-system-util'
 import { useMultipleSelection } from 'downshift'
 import { css } from 'glamor'
 import React, {
@@ -27,6 +27,9 @@ interface TagsFieldProps extends ComponentProps<typeof Field> {
 
 const TagsField: React.FC<TagsFieldProps> = props => {
   const { options, ...rest } = props
+
+  const labelId = useUniqueId('tags-input__label-')
+  const inputId = useUniqueId('tags-input__input-')
 
   const [filterTerm, setFilterTerm] = useState<string>('')
   const handleFilterTermChange: ChangeEventHandler<HTMLInputElement> = useCallback(
@@ -77,7 +80,16 @@ const TagsField: React.FC<TagsFieldProps> = props => {
 
   return (
     <>
-      <Field renderTag={CustomFieldTag} size={sizes.small} {...rest}>
+      <Field
+        label={
+          <Field.Label htmlFor={inputId} id={labelId}>
+            Some label text
+          </Field.Label>
+        }
+        renderTag={CustomFieldTag}
+        size={sizes.small}
+        {...rest}
+      >
         <div
           {...css({
             alignItems: 'center',
@@ -106,6 +118,7 @@ const TagsField: React.FC<TagsFieldProps> = props => {
           })}
 
           <TagsFieldInput
+            id={inputId}
             onChange={handleFilterTermChange}
             value={filterTerm}
             {...getDropdownProps()}
@@ -154,9 +167,14 @@ const TagsFieldTag = forwardRef<HTMLDivElement, TagsFieldTagProps>(
         {...rest}
         {...css({ margin: `calc(${GUTTER_SIZE}px / 2)` })}
       >
+        {/*
+          NOTE: Using isPressed prop to get blue background...
+                Tag should have additional variants if this is something we want
+                to officially support
+        */}
         <Tag
-          isPressed
           icon={<CloseIcon onClick={onRequestRemove} />}
+          isPressed
           size={Tag.sizes.small}
         >
           {children}
@@ -202,10 +220,7 @@ export default {
   title: 'Components/Field/TagsField',
   component: TagsField,
   decorators: [ConstrainWidthDecorator],
-  args: {
-    label: <Field.Label>Select an option</Field.Label>,
-    options: periodicElements
-  }
+  args: { options: periodicElements }
 } as Meta
 
 const Template: Story<ComponentProps<typeof TagsField>> = args => {
