@@ -32,14 +32,11 @@ export default {
     color: colorsTextIcon.highOnLight,
     display: 'flex',
     fontWeight: type.fontWeightDefault,
-    // minHeight: '40px',
-    // minWidth: '192px',
-    padding: `${layout.spacingXSmall} ${layout.spacingSmall}`,
+    padding: layout.spacingSmall,
     position: 'relative',
     width: '100%'
   },
   [`.psds-field--${sizes.small}`]: {
-    // minHeight: '32px',
     padding: layout.spacingXSmall
   },
 
