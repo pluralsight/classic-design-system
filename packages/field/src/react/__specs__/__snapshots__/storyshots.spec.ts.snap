@@ -1,5 +1,187 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-ep1lt2=""
+      htmlFor="downshift-0-input"
+      id="downshift-0-label"
+    >
+      Choose an element
+    </label>
+    <div>
+      <div
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1a24qct=""
+          data-css-1q3e54w=""
+        >
+          <div
+            aria-expanded={false}
+            aria-haspopup="listbox"
+            aria-owns="downshift-0-menu"
+            data-css-1ofa43o=""
+            role="combobox"
+          >
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Helium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Lithium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-labelledby="downshift-0-label"
+                autoComplete="off"
+                data-css-1ffn65r=""
+                data-css-1na6nif=""
+                id="downshift-0-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Do something"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            data-css-1dghjw7=""
+          >
+            <div
+              data-css-3feg78=""
+              onClick={[Function]}
+            >
+              <button
+                aria-label="toggle menu"
+                data-css-xqz18p=""
+                disabled={false}
+                id="downshift-0-toggle-button"
+                onClick={[Function]}
+                style={Object {}}
+                tabIndex={-1}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    data-css-1gzzcm2=""
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-15b13by=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Field/SelectField Basic 1`] = `
 <div
   data-css-w0yocm=""
@@ -7,8 +189,8 @@ exports[`Storyshots Components/Field/SelectField Basic 1`] = `
 >
   <label
     data-css-ep1lt2=""
-    htmlFor="downshift-0-toggle-button"
-    id="downshift-0-label"
+    htmlFor="downshift-1-toggle-button"
+    id="downshift-1-label"
   >
     Choose an element
   </label>
@@ -22,9 +204,9 @@ exports[`Storyshots Components/Field/SelectField Basic 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup="listbox"
-          aria-labelledby="downshift-0-label downshift-0-toggle-button"
+          aria-labelledby="downshift-1-label downshift-1-toggle-button"
           data-css-1xqnm3u=""
-          id="downshift-0-toggle-button"
+          id="downshift-1-toggle-button"
           onClick={[Function]}
           onKeyDown={[Function]}
         >

@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
+    "@pluralsight/ps-design-system-button": "*",
     "@pluralsight/ps-design-system-storybook-preset": "*",
     "@pluralsight/ps-design-system-tag": "*",
     "downshift": "^6.1.0"
