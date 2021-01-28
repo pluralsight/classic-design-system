@@ -1,4 +1,5 @@
 import Halo from '@pluralsight/ps-design-system-halo'
+import { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
   HTMLPropsFor,
   ValueOf,
@@ -39,7 +40,8 @@ const styles = {
       css(stylesheet[`.psds-field--${opts.size}`])
     ),
   prefix: () => css(stylesheet['.psds-field__prefix']),
-  suffix: () => css(stylesheet['.psds-field__suffix'])
+  suffix: () => css(stylesheet['.psds-field__suffix']),
+  errorIcon: () => css(stylesheet['.psds-field__error-icon'])
 }
 
 type InputElements = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
@@ -121,6 +123,12 @@ const Field = forwardRef<HTMLDivElement, FieldProps>((props, forwardedRef) => {
               {children}
 
               {suffix && <div {...styles.suffix()}>{suffix}</div>}
+
+              {error && (
+                <div {...styles.errorIcon()}>
+                  <WarningIcon />
+                </div>
+              )}
             </Tag>
           </Halo>
         </div>

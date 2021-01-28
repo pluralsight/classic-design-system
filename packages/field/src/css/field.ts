@@ -1,10 +1,12 @@
 import {
   colorsBackgroundLight,
   colorsBorder,
+  colorsStatus,
   colorsTextIcon,
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
+import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 
 import { sizes } from '../vars'
 
@@ -19,15 +21,6 @@ export default {
     cursor: 'not-allowed'
   },
   '.psds-field__container--error': {},
-
-  //   '.psds-text-input__error': {
-  //     position: 'absolute',
-  //     right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
-  //     display: 'flex',
-  //     alignItems: 'center',
-  //     color: colorsStatus.error,
-  //     marginLeft: layout.spacingXSmall
-  //   }
 
   '.psds-field': {
     label: 'field',
@@ -51,7 +44,7 @@ export default {
   },
 
   '.psds-field__prefix': {
-    label: 'input__prefix',
+    label: 'field__prefix',
 
     alignSelf: 'stretch',
     display: 'flex',
@@ -61,7 +54,7 @@ export default {
   },
 
   '.psds-field__suffix': {
-    label: 'input__suffix',
+    label: 'field__suffix',
 
     alignSelf: 'stretch',
     display: 'flex',
@@ -69,5 +62,14 @@ export default {
     height: 'auto',
     marginLeft: layout.spacingXSmall,
     overflow: 'visible'
+  },
+  '.psds-field__error-icon': {
+    label: 'field__error-icon',
+
+    alignItems: 'center',
+    color: colorsStatus.error,
+    display: 'flex',
+    position: 'absolute',
+    right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`
   }
 }
