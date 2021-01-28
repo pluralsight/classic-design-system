@@ -1353,6 +1353,8 @@ exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
           <textarea
             data-css-1mpu7ok=""
             id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
           />
         </div>
       </div>
@@ -1392,6 +1394,8 @@ exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
             data-css-1mpu7ok=""
             disabled={true}
             id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
           />
         </div>
       </div>
@@ -1430,6 +1434,8 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
           <textarea
             data-css-1mpu7ok=""
             id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
           />
         </div>
         <div
@@ -1504,6 +1510,8 @@ exports[`Storyshots Components/Field/TextAreaField Icon Prefix 1`] = `
           <textarea
             data-css-1mpu7ok=""
             id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
           />
         </div>
       </div>
@@ -1542,6 +1550,8 @@ exports[`Storyshots Components/Field/TextAreaField Icon Suffix 1`] = `
           <textarea
             data-css-1mpu7ok=""
             id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
           />
         </div>
         <div
@@ -1597,6 +1607,8 @@ exports[`Storyshots Components/Field/TextAreaField Size Small 1`] = `
           <textarea
             data-css-1mpu7ok=""
             id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
           />
         </div>
       </div>
@@ -1635,7 +1647,9 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
           <textarea
             data-css-1mpu7ok=""
             id="text-area__area-unique-id"
+            onChange={[Function]}
             placeholder="Enter some text here"
+            value=""
           />
         </div>
       </div>
