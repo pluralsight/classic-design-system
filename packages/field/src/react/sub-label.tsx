@@ -11,8 +11,8 @@ import stylesheet from '../css/sub-label'
 const styles = {
   subLabel: (themeName: ValueOf<typeof themeNames>) =>
     compose(
-      css(stylesheet['.psds-sub-label']),
-      css(stylesheet[`.psds-sub-label.psds-theme--${themeName}`])
+      css(stylesheet['.psds-field__sub-label']),
+      css(stylesheet[`.psds-field__sub-label.psds-theme--${themeName}`])
     )
 }
 

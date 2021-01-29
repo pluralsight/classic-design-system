@@ -5,8 +5,8 @@ import React, { forwardRef } from 'react'
 import stylesheet from '../css/input'
 
 const styles = {
-  container: () => css(stylesheet['.psds-input__container']),
-  input: () => css(stylesheet['.psds-input'])
+  container: () => css(stylesheet['.psds-field__input__container']),
+  input: () => css(stylesheet['.psds-field__input'])
 }
 
 interface InputProps extends HTMLPropsFor<'input'> {

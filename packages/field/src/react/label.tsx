@@ -11,8 +11,8 @@ import stylesheet from '../css/label'
 const styles = {
   label: (themeName: ValueOf<typeof themeNames>) =>
     compose(
-      css(stylesheet['.psds-label']),
-      css(stylesheet[`.psds-label.psds-theme--${themeName}`])
+      css(stylesheet['.psds-field__label']),
+      css(stylesheet[`.psds-field__label.psds-theme--${themeName}`])
     )
 }
 

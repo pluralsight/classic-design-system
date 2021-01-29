@@ -7,18 +7,18 @@ import {
 import { dark, light } from './shared'
 
 export default {
-  '.psds-label': {
-    label: 'label',
+  '.psds-field__label': {
+    label: 'field__label',
 
     display: 'block',
     fontSize: type.fontSize100,
     fontWeight: type.fontWeight500,
     marginBottom: layout.spacingXXSmall
   },
-  [`.psds-label${dark.className}`]: {
+  [`.psds-field__label${dark.className}`]: {
     color: colorsTextIcon.highOnDark
   },
-  [`.psds-label${light.className}`]: {
+  [`.psds-field__label${light.className}`]: {
     color: colorsTextIcon.highOnLight
   }
 }

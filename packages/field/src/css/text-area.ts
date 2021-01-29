@@ -1,12 +1,12 @@
 export default {
-  '.psds-text-area__container': {
-    label: 'text-area__container',
+  '.psds-field__text-area__container': {
+    label: 'field__text-area__container',
 
     flex: '1'
   },
 
-  '.psds-text-area': {
-    label: 'text-area',
+  '.psds-field__text-area': {
+    label: 'field__text-area',
 
     border: 'none',
     outline: 'none',

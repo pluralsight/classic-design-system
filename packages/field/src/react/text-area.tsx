@@ -5,8 +5,8 @@ import React, { forwardRef } from 'react'
 import stylesheet from '../css/text-area'
 
 const styles = {
-  container: () => css(stylesheet['.psds-text-area__container']),
-  textArea: () => css(stylesheet['.psds-text-area'])
+  container: () => css(stylesheet['.psds-field__text-area__container']),
+  textArea: () => css(stylesheet['.psds-field__text-area'])
 }
 
 interface TextAreaProps extends HTMLPropsFor<'textarea'> {

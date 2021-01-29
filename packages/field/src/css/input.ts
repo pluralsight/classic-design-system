@@ -1,12 +1,12 @@
 export default {
-  '.psds-input__container': {
-    label: 'input__container',
+  '.psds-field__input__container': {
+    label: 'field__input__container',
 
     flex: '1'
   },
 
-  '.psds-input': {
-    label: 'input',
+  '.psds-field__input': {
+    label: 'field__input',
 
     border: 'none',
     outline: 'none',
