@@ -52,6 +52,13 @@ const selectToString = (...infos: SelectorInfo[]) => {
   return `${hashedSelector} ${dedupedRawSelectors}`
 }
 
+const mergeProps = (first: unknown, second: unknown) => {
+  if (typeof first === 'string' || typeof second === 'string') {
+    return [first, second].filter(Boolean).join(' ')
+  }
+  // TODO: etc
+}
+
 const selectButton = select.bind(null, stylesheet)
 
 const styles = {
@@ -265,7 +272,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       return (
         <a
           ref={ref as React.Ref<HTMLAnchorElement>}
-          className={glamorStyle}
+          className={mergeProps(glamorStyle, props.className)}
           {...anchorProps}
           onClick={disabled ? undefined : anchorProps.onClick}
           style={style}
@@ -282,7 +289,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
         <button
           disabled={disabled || loading}
           ref={ref as React.Ref<HTMLButtonElement>}
-          className={glamorStyle}
+          className={mergeProps(glamorStyle, props.className)}
           {...buttonProps}
           style={style}
         >

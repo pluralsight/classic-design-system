@@ -132,6 +132,17 @@ storiesOf('Button / override styles', module)
       </Button>
     )
   })
+  .add('with raw selectors', _ => {
+    glamor.css.global('#localized .psds-button', { background: 'red' })
+    return (
+      <>
+        <div id="localized">
+          <Button icon={<Icon.CheckIcon />}>Red by global css</Button>
+        </div>
+        <Button icon={<Icon.CheckIcon />}> Unaffected</Button>
+      </>
+    )
+  })
 
 storiesOf('Button / props pass through', module)
   .add('aria-expanded', _ => <Button aria-expanded>aria-expanded</Button>)
