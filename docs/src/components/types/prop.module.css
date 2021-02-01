@@ -15,6 +15,7 @@
 }
 .typeCode {
   color: var(--typeColor);
+  overflow-wrap: break-word;
 }
 .desc {
   font-size: var(--psTypeFontSizeXSmall);
