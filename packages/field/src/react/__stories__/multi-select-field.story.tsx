@@ -1,33 +1,29 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import Button from '@pluralsight/ps-design-system-button'
 import { layout } from '@pluralsight/ps-design-system-core'
-import { CaretDownIcon, CloseIcon } from '@pluralsight/ps-design-system-icon'
-import Tag from '@pluralsight/ps-design-system-tag'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { useCombobox, useMultipleSelection } from 'downshift'
 import { css } from 'glamor'
 import React, {
   ChangeEventHandler,
   ComponentProps,
   MouseEvent,
-  MouseEventHandler,
-  forwardRef,
   useCallback,
   useMemo,
   useState
 } from 'react'
 
 import { Option, periodicElements } from '../__fixtures__/options'
-import Field from '..'
+import { ConstrainWidthDecorator, Pills } from './shared'
 
-const GUTTER_SIZE = 4
+import Field from '..'
 
 interface MultiSelectFieldProps extends ComponentProps<typeof Field> {
   options: Option[]
   placeholder?: string
 }
 const MultiSelectField: React.FC<MultiSelectFieldProps> = props => {
-  const { options, disabled, placeholder, ...rest } = props
+  const { disabled, options, placeholder, ...rest } = props
 
   const [filterTerm, setFilterTerm] = useState<string>('')
   const handleFilterTermChange: ChangeEventHandler<HTMLInputElement> = useCallback(
@@ -50,29 +46,22 @@ const MultiSelectField: React.FC<MultiSelectFieldProps> = props => {
     selectedItems
   } = useMultipleSelection({ initialSelectedItems })
 
-  const handleRemoveSelected = useCallback(
-    (evt: MouseEvent<unknown>, item: string) => {
-      evt.stopPropagation()
-      removeSelectedItem(item)
-    },
-    [removeSelectedItem]
-  )
+  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: string) => {
+    evt.stopPropagation()
+    removeSelectedItem(item)
+  }
 
-  const unselectedOptions = useMemo(() => {
-    return options.filter(option => !selectedItems.includes(option.value))
-  }, [options, selectedItems])
-
-  const filteredOptions = useMemo(() => {
-    if (!filterTerm) return unselectedOptions
-
-    return unselectedOptions.filter(option =>
-      option.label.toLowerCase().includes(filterTerm)
+  const filteredItems = useMemo(() => {
+    const unselected = options.filter(
+      option => !selectedItems.includes(option.value)
     )
-  }, [filterTerm, unselectedOptions])
 
-  const filteredItems = useMemo(() => filteredOptions.map(o => o.value), [
-    filteredOptions
-  ])
+    if (!filterTerm) return unselected.map(o => o.value)
+
+    return unselected
+      .filter(o => o.label.toLowerCase().includes(filterTerm))
+      .map(o => o.value)
+  }, [options, filterTerm, selectedItems])
 
   const {
     isOpen,
@@ -119,7 +108,7 @@ const MultiSelectField: React.FC<MultiSelectFieldProps> = props => {
         label={
           <Field.Label {...getLabelProps()}>Choose an element</Field.Label>
         }
-        renderTag={CustomRenderTag}
+        renderTag={RenderTagNoPadding}
         size={Field.sizes.small}
         suffix={
           <div
@@ -128,9 +117,6 @@ const MultiSelectField: React.FC<MultiSelectFieldProps> = props => {
               display: 'flex',
               margin: layout.spacingSmall
             })}
-            onClick={e => {
-              e.stopPropagation()
-            }}
           >
             <Button
               appearance={Button.appearances.flat}
@@ -144,140 +130,68 @@ const MultiSelectField: React.FC<MultiSelectFieldProps> = props => {
         }
         {...rest}
       >
-        <TagsContainer {...getComboboxProps()}>
+        <Pills {...getComboboxProps()}>
           {selectedItems.map((selectedItem, index) => {
             const option = options.find(o => o.value === selectedItem)
             if (!option) return null
 
             return (
-              <CustomTag
+              <Pills.Pill
                 key={`selected-item-${index}`}
                 onRequestRemove={e => handleRemoveSelected(e, selectedItem)}
                 {...getSelectedItemProps({ selectedItem, index })}
               >
                 {option.label}
-              </CustomTag>
+              </Pills.Pill>
             )
           })}
 
-          <CustomInput
+          <Pills.Input
             disabled={disabled}
             onChange={handleFilterTermChange}
             placeholder={placeholder}
             value={filterTerm}
             {...getInputProps(getDropdownProps({ preventKeyAction: isOpen }))}
           />
-        </TagsContainer>
+        </Pills>
       </Field>
 
-      {isOpen && (
-        <div
-          style={{
-            border: '2px dashed pink',
-            margin: '20px 0',
-            maxHeight: 200,
-            overflow: 'scroll',
-            padding: 20
-          }}
-        >
-          <ul {...getMenuProps()}>
-            {filteredItems.map((item, index) => {
-              const option = options.find(o => item === o.value)
-              if (!option) return null
+      <div
+        style={{
+          border: '2px dashed pink',
+          display: isOpen ? 'block' : 'none',
+          margin: '20px 0',
+          maxHeight: 200,
+          overflow: 'scroll',
+          padding: 20
+        }}
+      >
+        <ul {...getMenuProps()}>
+          {filteredItems.map((item, index) => {
+            const option = options.find(o => item === o.value)
+            if (!option) return null
 
-              return (
-                <li
-                  key={`menu-option-${index}`}
-                  {...getItemProps({ item, index })}
-                  {...css({
-                    backgroundColor: highlightedIndex === index ? 'blue' : ''
-                  })}
-                >
-                  <span>{option?.label} </span>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-      )}
+            return (
+              <li
+                key={`menu-option-${index}`}
+                {...getItemProps({ item, index })}
+                {...css({
+                  backgroundColor: highlightedIndex === index ? 'blue' : ''
+                })}
+              >
+                <span>{option?.label} </span>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     </>
   )
 }
 
-const CustomInputContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => (
-    <div
-      ref={ref}
-      {...props}
-      {...css({ margin: `calc(${GUTTER_SIZE}px / 2)` })}
-    />
-  )
+const RenderTagNoPadding: React.FC = p => (
+  <div {...p} {...css({ padding: 0 })} />
 )
-interface CustomInputProps extends ComponentProps<typeof Field.Input> {}
-const CustomInput = forwardRef<HTMLInputElement, CustomInputProps>(
-  (props, ref) => {
-    return (
-      <Field.Input
-        renderContainer={CustomInputContainer}
-        ref={ref}
-        type="text"
-        {...props}
-        {...css({ minWidth: 50 })}
-      />
-    )
-  }
-)
-const CustomRenderTag = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => <div ref={ref} {...props} {...css({ padding: 0 })} />
-)
-
-interface CustomTagProps extends HTMLPropsFor<'div'> {
-  onRequestRemove: MouseEventHandler
-}
-const CustomTag = forwardRef<HTMLDivElement, CustomTagProps>((props, ref) => {
-  const { children, onRequestRemove, ...rest } = props
-
-  return (
-    <div ref={ref} {...rest} {...css({ margin: `calc(${GUTTER_SIZE}px / 2)` })}>
-      {/*
-          NOTE: Using isPressed prop to get blue background...
-                Tag should have additional variants if this is something we want
-                to officially support
-        */}
-      <Tag
-        icon={<CloseIcon onClick={onRequestRemove} />}
-        isPressed
-        size={Tag.sizes.small}
-      >
-        {children}
-      </Tag>
-    </div>
-  )
-})
-
-const TagsContainer: React.FC<HTMLPropsFor<'div'>> = props => (
-  <div
-    {...props}
-    {...css({
-      alignItems: 'center',
-      display: 'flex',
-      flex: 1,
-      flexWrap: 'wrap',
-      maxHeight: 75,
-      overflowY: 'scroll',
-      padding: GUTTER_SIZE,
-      width: '100%'
-    })}
-  />
-)
-
-const ConstrainWidthDecorator = (Story: Story) => {
-  return (
-    <div style={{ maxWidth: '400px' }}>
-      <Story />
-    </div>
-  )
-}
 
 export default {
   title: 'Components/Field/MultiSelectField',

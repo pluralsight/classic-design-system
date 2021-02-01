@@ -1,13 +1,25 @@
 import path from 'path'
-import initStoryshots from '@storybook/addon-storyshots'
+import initStoryshots, {
+  snapshotWithOptions
+} from '@storybook/addon-storyshots'
 
-jest.mock('@pluralsight/ps-design-system-util', () => ({
-  ...jest.requireActual('@pluralsight/ps-design-system-util'),
-  uniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id'),
-  useUniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id')
-}))
+jest.mock('@pluralsight/ps-design-system-util', () => {
+  const actual = jest.requireActual('@pluralsight/ps-design-system-util')
+  const mockUniqueId = (prefix: string) => `${prefix}unique-id`
+
+  return {
+    ...actual,
+    uniqueId: jest.fn().mockImplementation(mockUniqueId),
+    useUniqueId: jest.fn().mockImplementation(mockUniqueId)
+  }
+})
 
 initStoryshots({
   configPath: path.resolve(__dirname, '../../../.storybook'),
-  framework: 'react'
+  framework: 'react',
+  test: snapshotWithOptions(() => ({ createNodeMock }))
 })
+
+function createNodeMock(el) {
+  return document.createElement(el?.type || 'div')
+}

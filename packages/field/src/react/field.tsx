@@ -10,7 +10,6 @@ import { compose, css } from 'glamor'
 import React, {
   ForwardRefExoticComponent,
   MouseEventHandler,
-  RefAttributes,
   ReactNode,
   SyntheticEvent,
   forwardRef,
@@ -52,8 +51,8 @@ interface FieldProps extends Omit<HTMLPropsFor<'div'>, 'prefix' | 'ref'> {
   label?: ReactNode
   onClick?: MouseEventHandler<HTMLDivElement>
   prefix?: ReactNode
-  renderContainer?: typeof defaultRenderContainer
-  renderTag?: typeof defaultRenderTag
+  renderContainer?: ForwardRefExoticComponent<unknown>
+  renderTag?: React.FC
   size?: ValueOf<typeof sizes>
   subLabel?: ReactNode
   suffix?: ReactNode
@@ -69,11 +68,9 @@ export interface FieldStatics {
   sizes: typeof sizes
 }
 
-type FieldPropsWithRefAttributes = FieldProps & RefAttributes<HTMLDivElement>
-type FieldComponent = ForwardRefExoticComponent<FieldPropsWithRefAttributes> &
-  FieldStatics
+type FieldComponent = React.FC<FieldProps> & FieldStatics
 
-const Field = forwardRef<HTMLDivElement, FieldProps>((props, forwardedRef) => {
+const Field: FieldComponent = props => {
   const {
     children,
     disabled,
@@ -95,8 +92,8 @@ const Field = forwardRef<HTMLDivElement, FieldProps>((props, forwardedRef) => {
 
   const focusOnClick: MouseEventHandler = useCallback(evt => {
     const focusableTags = ['input', 'select', 'textarea']
-    const { current: el } = containerRef
 
+    const { current: el } = containerRef
     if (!el || el.contains(document.activeElement)) return
     if (focusableTags.includes(getTargetTag(evt))) return
 
@@ -117,7 +114,7 @@ const Field = forwardRef<HTMLDivElement, FieldProps>((props, forwardedRef) => {
       <Theme name={themeNames.light}>
         <div>
           <Halo error={error} gapSize={Halo.gapSizes.small}>
-            <Tag {...styles.field({ size })} ref={forwardedRef} {...rest}>
+            <Tag {...styles.field({ size })} {...rest}>
               {prefix && <div {...styles.prefix()}>{prefix}</div>}
 
               {children}
@@ -137,17 +134,19 @@ const Field = forwardRef<HTMLDivElement, FieldProps>((props, forwardedRef) => {
       {subLabel && subLabel}
     </Container>
   )
-}) as FieldComponent
+}
 
 const defaultRenderContainer = forwardRef<
   HTMLDivElement,
   Omit<HTMLPropsFor<'div'>, 'ref'>
 >((props, ref) => <div ref={ref} {...props} />)
 
-const defaultRenderTag = forwardRef<
-  HTMLDivElement,
-  Omit<HTMLPropsFor<'div'>, 'ref'>
->((props, ref) => <div ref={ref} {...props} />)
+const defaultRenderTag: React.FC = props => <div {...props} />
+
+const getTargetTag = (evt: SyntheticEvent | Event): string => {
+  if (!(evt.target instanceof Element)) return 'unknown'
+  return evt.target.tagName.toLowerCase()
+}
 
 Field.displayName = 'Field'
 
@@ -161,8 +160,3 @@ Field.sizes = sizes
 
 export { appearances, sizes }
 export default Field
-
-const getTargetTag = (evt: SyntheticEvent | Event): string => {
-  if (!(evt.target instanceof Element)) return 'unknown'
-  return evt.target.tagName.toLowerCase()
-}

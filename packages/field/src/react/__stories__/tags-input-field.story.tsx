@@ -1,43 +1,39 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
-import Tag from '@pluralsight/ps-design-system-tag'
-import { HTMLPropsFor, useUniqueId } from '@pluralsight/ps-design-system-util'
+import { useUniqueId } from '@pluralsight/ps-design-system-util'
 import { useMultipleSelection } from 'downshift'
 import { css } from 'glamor'
 import React, {
   ChangeEventHandler,
   ComponentProps,
   MouseEvent,
-  MouseEventHandler,
-  forwardRef,
-  useCallback,
   useMemo,
   useState
 } from 'react'
 
 import { sizes } from '../../vars'
 import { Option, periodicElements } from '../__fixtures__/options'
+import { ConstrainWidthDecorator, Pills } from './shared'
+
 import Field from '..'
 
 const GUTTER_SIZE = 4
 
 interface TagsFieldProps extends ComponentProps<typeof Field> {
   options: Option[]
+  placeholder?: string
 }
 
 const TagsField: React.FC<TagsFieldProps> = props => {
-  const { options, ...rest } = props
+  const { disabled, options, placeholder, ...rest } = props
 
   const labelId = useUniqueId('tags-input__label-')
   const inputId = useUniqueId('tags-input__input-')
 
   const [filterTerm, setFilterTerm] = useState<string>('')
-  const handleFilterTermChange: ChangeEventHandler<HTMLInputElement> = useCallback(
-    evt => {
-      setFilterTerm(evt.target.value)
-    },
-    [setFilterTerm]
-  )
+
+  const handleFilterTermChange: ChangeEventHandler<HTMLInputElement> = evt => {
+    setFilterTerm(evt.target.value)
+  }
 
   const initialSelectedItems = useMemo(() => [options[1].value], [options])
   const {
@@ -48,23 +44,17 @@ const TagsField: React.FC<TagsFieldProps> = props => {
     selectedItems
   } = useMultipleSelection({ initialSelectedItems })
 
-  const handleAddSelected = useCallback(
-    (evt: MouseEvent<unknown>, item: string) => {
-      evt.stopPropagation()
+  const handleAddSelected = (evt: MouseEvent<unknown>, item: string) => {
+    evt.stopPropagation()
 
-      setFilterTerm('')
-      addSelectedItem(item)
-    },
-    [addSelectedItem]
-  )
+    setFilterTerm('')
+    addSelectedItem(item)
+  }
 
-  const handleRemoveSelected = useCallback(
-    (evt: MouseEvent<unknown>, item: string) => {
-      evt.stopPropagation()
-      removeSelectedItem(item)
-    },
-    [removeSelectedItem]
-  )
+  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: string) => {
+    evt.stopPropagation()
+    removeSelectedItem(item)
+  }
 
   const unselectedOptions = useMemo(() => {
     return options.filter(option => !selectedItems.includes(option.value))
@@ -86,44 +76,35 @@ const TagsField: React.FC<TagsFieldProps> = props => {
             Some label text
           </Field.Label>
         }
-        renderTag={CustomFieldTag}
+        renderTag={RenderTagNoPadding}
         size={sizes.small}
         {...rest}
       >
-        <div
-          {...css({
-            alignItems: 'center',
-            display: 'flex',
-            flex: 1,
-            flexWrap: 'wrap',
-            maxHeight: 75,
-            overflowY: 'scroll',
-            padding: GUTTER_SIZE,
-            width: '100%'
-          })}
-        >
+        <Pills>
           {selectedItems.map((selectedItem, index) => {
             const option = options.find(o => o.value === selectedItem)
             if (!option) return null
 
             return (
-              <TagsFieldTag
+              <Pills.Pill
                 key={`selected-item-${index}`}
                 onRequestRemove={e => handleRemoveSelected(e, selectedItem)}
                 {...getSelectedItemProps({ selectedItem, index })}
               >
                 {option.label}
-              </TagsFieldTag>
+              </Pills.Pill>
             )
           })}
 
-          <TagsFieldInput
+          <Pills.Input
+            disabled={disabled}
+            placeholder={placeholder}
             id={inputId}
             onChange={handleFilterTermChange}
             value={filterTerm}
             {...getDropdownProps()}
           />
-        </div>
+        </Pills>
       </Field>
 
       <div
@@ -149,72 +130,9 @@ const TagsField: React.FC<TagsFieldProps> = props => {
     </>
   )
 }
-
-const CustomFieldTag = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => <div ref={ref} {...props} {...css({ padding: 0 })} />
+const RenderTagNoPadding: React.FC = p => (
+  <div {...p} {...css({ padding: 0 })} />
 )
-
-interface TagsFieldTagProps extends HTMLPropsFor<'div'> {
-  onRequestRemove: MouseEventHandler
-}
-const TagsFieldTag = forwardRef<HTMLDivElement, TagsFieldTagProps>(
-  (props, ref) => {
-    const { children, onRequestRemove, ...rest } = props
-
-    return (
-      <div
-        ref={ref}
-        {...rest}
-        {...css({ margin: `calc(${GUTTER_SIZE}px / 2)` })}
-      >
-        {/*
-          NOTE: Using isPressed prop to get blue background...
-                Tag should have additional variants if this is something we want
-                to officially support
-        */}
-        <Tag
-          icon={<CloseIcon onClick={onRequestRemove} />}
-          isPressed
-          size={Tag.sizes.small}
-        >
-          {children}
-        </Tag>
-      </div>
-    )
-  }
-)
-
-const TagsFieldInputContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => (
-    <div
-      ref={ref}
-      {...props}
-      {...css({ margin: `calc(${GUTTER_SIZE}px / 2)` })}
-    />
-  )
-)
-interface TagsFieldInputProps extends ComponentProps<typeof Field.Input> {}
-const TagsFieldInput = forwardRef<HTMLInputElement, TagsFieldInputProps>(
-  (props, ref) => {
-    return (
-      <Field.Input
-        renderContainer={TagsFieldInputContainer}
-        ref={ref}
-        type="text"
-        {...props}
-        {...css({ minWidth: 50 })}
-      />
-    )
-  }
-)
-
-const ConstrainWidthDecorator = (Story: Story) => {
-  return (
-    <div style={{ maxWidth: '400px' }}>
-      <Story />
-    </div>
-  )
-}
 
 export default {
   title: 'Components/Field/TagsField',
