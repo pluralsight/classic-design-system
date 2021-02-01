@@ -280,6 +280,10 @@ const groups = [
     },
     items: [
       {
+        href: '/components/field',
+        title: 'Field'
+      },
+      {
         href: '/components/textinput',
         title: 'Text Input'
       },
