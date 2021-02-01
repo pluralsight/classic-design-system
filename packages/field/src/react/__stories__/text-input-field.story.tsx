@@ -8,7 +8,7 @@ import Field from '..'
 
 interface TextInputFieldProps extends ComponentProps<typeof Field> {
   placeholder?: string
-  type: 'text' | 'search' | 'password'
+  type?: 'text' | 'search' | 'password'
 }
 
 const TextInputField: React.FC<TextInputFieldProps> = props => {

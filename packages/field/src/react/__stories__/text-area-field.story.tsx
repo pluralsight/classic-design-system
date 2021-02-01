@@ -78,7 +78,7 @@ function useAutoGrow(
 export default {
   title: 'Components/Field/TextAreaField',
   component: TextAreaField,
-  args: {}
+  args: { size: sizes.medium }
 } as Meta
 
 const Template: Story<ComponentProps<typeof TextAreaField>> = args => {
