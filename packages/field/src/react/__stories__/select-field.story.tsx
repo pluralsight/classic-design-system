@@ -68,36 +68,35 @@ const SelectField: React.FC<SelectFieldProps> = props => {
         <span>{selectedOption ? selectedOption.label : placeholder}</span>
       </Field>
 
-      {/* TODO: use ActionMenu and position */}
-      {isOpen && (
-        <div
-          style={{
-            border: '2px dashed pink',
-            margin: '20px 0',
-            height: 200,
-            overflow: 'scroll',
-            padding: 20
-          }}
-        >
-          <ul {...getMenuProps()}>
-            {items.map((item, index) => {
-              const option = options.find(o => item === o.value)
+      {/* TODO: use ActionMenu and Position */}
+      <div
+        style={{
+          border: '2px dashed pink',
+          display: isOpen ? 'block' : 'none',
+          margin: '20px 0',
+          height: 200,
+          overflow: 'scroll',
+          padding: 20
+        }}
+      >
+        <ul {...getMenuProps()}>
+          {items.map((item, index) => {
+            const option = options.find(o => item === o.value)
 
-              return (
-                <li
-                  key={`menu-option-${index}`}
-                  {...getItemProps({ item, index })}
-                  {...css({
-                    backgroundColor: highlightedIndex === index ? 'blue' : ''
-                  })}
-                >
-                  <span>{option?.label} </span>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-      )}
+            return (
+              <li
+                key={`menu-option-${index}`}
+                {...getItemProps({ item, index })}
+                {...css({
+                  backgroundColor: highlightedIndex === index ? 'blue' : ''
+                })}
+              >
+                <span>{option?.label} </span>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     </>
   )
 }
