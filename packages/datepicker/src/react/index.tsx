@@ -7,3 +7,4 @@ export {
   useDateSelectChange,
   useRangeSelectChange
 } from './utils'
+export { DropdownDatePicker } from './dropdown-datepicker'

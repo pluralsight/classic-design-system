@@ -4,7 +4,10 @@ import React from 'react'
 import * as styles from './table.module.css'
 
 export const TableContext = React.createContext(true)
-export const Table = ({ defaultColumn = true, ...props }) => {
+export const Table: React.FC<{ defaultColumn?: boolean }> = ({
+  defaultColumn = true,
+  ...props
+}) => {
   return (
     <TableContext.Provider value={defaultColumn}>
       <DSTable className={styles.table} scrollable={false}>

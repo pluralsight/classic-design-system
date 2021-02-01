@@ -748,7 +748,21 @@ export default Example
 
 ## Migration guide from v11.x and before to v12.x
 
-This guide is to migrate the old DatePicker to a single datepicker using the new components and functions.
+### Simple
+
+```typescript noRender startExpanded
+import { DropdownDatePicker } from '@pluralsight/ps-design-system-datepicker'
+import { DateObj } from 'dayzed'
+
+interface DatePickerProps {
+  onSelect: (evt: React.SyntheticEvent, dateObj: DateObj) => void
+}
+const DatePicker = (props: DatePickerProps) => <DropdownDatePicker onSelect={ props.onSelect} />
+```
+
+### Custom
+
+This guide is to migrate the old DatePicker to a single datepicker using the new components and functions using a custom setup. This is useful when one needs to grab ref or handle unique logic.
 
 1. Create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the initial date. 
 1. Create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<boolean>>` then set it to false. 
@@ -790,7 +804,7 @@ const Example = () => {
     setSelected
   })
   return (
-    <div style={{ display: 'inline-block' }}>
+    <div style={{ display: 'inline-block', position: 'relative'  }}>
       <TextInput
         onChange={onChange}
         value={value}

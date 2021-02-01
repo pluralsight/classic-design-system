@@ -7,6 +7,7 @@ import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import {
   Calendar,
   CalendarDates,
+  DropdownDatePicker,
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
@@ -14,7 +15,7 @@ import {
   useRangeSelectChange
 } from '..'
 import { slides } from '../../vars'
-import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 storiesOf('SingleDate', module)
   .add('calendar: date is selected', () => {
@@ -140,6 +141,7 @@ storiesOf('SingleDate', module)
       </div>
     )
   })
+  .add('DropdownDatePicker', () => <DropdownDatePicker />)
 storiesOf('RangeDate', module)
   .add('Calendar', () => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
