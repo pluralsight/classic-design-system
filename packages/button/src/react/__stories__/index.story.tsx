@@ -134,10 +134,16 @@ storiesOf('Button / override styles', module)
   })
   .add('with raw selectors', _ => {
     glamor.css.global('#localized .psds-button', { background: 'red' })
+    glamor.css.global('#localized2 .psds-button__text', {
+      outline: '1px solid red'
+    })
     return (
       <>
         <div id="localized">
           <Button icon={<Icon.CheckIcon />}>Red by global css</Button>
+        </div>
+        <div id="localized2">
+          <Button icon={<Icon.CheckIcon />}>Sub element changed</Button>
         </div>
         <Button icon={<Icon.CheckIcon />}> Unaffected</Button>
       </>
