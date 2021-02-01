@@ -23,6 +23,7 @@ import ErrorPage, * as ErrorPages from '@pluralsight/ps-design-system-errors'
 import FeatureFlags, {
   useFeatureFlags
 } from '@pluralsight/ps-design-system-featureflags'
+import Field from '@pluralsight/ps-design-system-field'
 import Form from '@pluralsight/ps-design-system-form'
 import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout'
@@ -56,6 +57,7 @@ import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 import * as util from '@pluralsight/ps-design-system-util'
 
+import * as downshift from 'downshift'
 import * as glamor from 'glamor'
 import React from 'react'
 import * as reactBeautifulDnd from 'react-beautiful-dnd'
@@ -100,6 +102,7 @@ export const PACKAGE_MAP: PackageMap = {
     FeatureFlags,
     useFeatureFlags
   },
+  '@pluralsight/ps-design-system-field': { Field },
   '@pluralsight/ps-design-system-form': { Form },
   '@pluralsight/ps-design-system-icon': { Icon, ...omit(Icons, ['default']) },
   '@pluralsight/ps-design-system-layout': { ...omit(Layout, ['default']) },
@@ -133,6 +136,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
 
+  downshift: { ...omit(downshift, ['default']) },
   glamor: { ...glamor },
   react: { React, ...React },
   'react-beautiful-dnd': { ...reactBeautifulDnd },
