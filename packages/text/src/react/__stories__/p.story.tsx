@@ -28,6 +28,14 @@ Object.keys(P.sizes).forEach(size =>
     </P>
   ))
 )
+stories.add('em', () => (
+  <P color="secondary">
+    Cras faucibus ex id ligula aliquam, eget porta
+    <em>this is em</em> tortor efficitur. Duis eget ultrices ligula.
+    Pellentesque laoreet massa interdum. Vestibulum id nisi a massa{' '}
+    <em>THIS IS EM</em> tincidunt malesuada vitae non risus. cursus nibh.
+  </P>
+))
 
 stories.add('color: primary', () => (
   <P color="primary">

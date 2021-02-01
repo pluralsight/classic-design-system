@@ -728,6 +728,31 @@ exports[`Storyshots P color: secondary 1`] = `
 </div>
 `;
 
+exports[`Storyshots P em 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <p
+    data-css-7cn0vw=""
+  >
+    Cras faucibus ex id ligula aliquam, eget porta
+    <em>
+      this is em
+    </em>
+     tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum. Vestibulum id nisi a massa
+     
+    <em>
+      THIS IS EM
+    </em>
+     tincidunt malesuada vitae non risus. cursus nibh.
+  </p>
+</div>
+`;
+
 exports[`Storyshots P size: large 1`] = `
 <div
   style={
