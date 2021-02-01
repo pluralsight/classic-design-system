@@ -5,13 +5,54 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { css, keyframes } from 'glamor'
+import { compose, css, keyframes, StyleAttribute, Rule } from 'glamor'
 import React, { Children } from 'react'
 
 import stylesheet from '../css'
 import * as vars from '../vars'
 
 const spin = keyframes(stylesheet['@keyframes psds-button__keyframes__spin'])
+
+interface SelectorInfo {
+  styleAttribute: StyleAttribute
+  rawSelectors: string[]
+}
+
+const selectAll = (...infos: SelectorInfo[]) => ({
+  styleAttribute: compose(infos.map(info => info?.styleAttribute)),
+  rawSelectors: infos.reduce<string[]>(
+    (acc, info) => acc.concat(info?.rawSelectors),
+    []
+  )
+})
+
+type RuleFunction = (args: unknown) => Rule
+const select = (
+  stylesheet: Record<string, Rule>,
+  selector: string,
+  args: unknown | undefined
+) => {
+  const rawSelectors = selector.split('.').filter(Boolean)
+  return {
+    styleAttribute: css(
+      typeof args === 'undefined'
+        ? stylesheet[selector]
+        : (stylesheet[selector] as RuleFunction)(args)
+    ),
+    rawSelectors: Array.isArray(rawSelectors) ? rawSelectors : []
+  }
+}
+
+const selectToString = (...infos: SelectorInfo[]) => {
+  const finalInfo = infos.length > 1 ? selectAll(...infos) : infos[0]
+  const hashedSelector = finalInfo.styleAttribute.toString()
+  const dedupedRawSelectors = finalInfo.rawSelectors
+    .filter((selector, i, self) => self.indexOf(selector) === i)
+    .join(' ')
+  return `${hashedSelector} ${dedupedRawSelectors}`
+}
+
+const selectButton = select.bind(null, stylesheet)
 
 const styles = {
   button: ({
@@ -24,53 +65,62 @@ const styles = {
     size,
     themeName
   }) =>
-    css(
-      stylesheet['.psds-button'],
-      stylesheet[`.psds-button--layout-${layout}`],
-      stylesheet[`.psds-button--size-${size}`],
-      stylesheet[`.psds-button--appearance-${appearance}`],
-      stylesheet[
-        `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
-      ],
-      disabled && {
-        ...stylesheet[`.psds-button--disabled`],
-        ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
-        ...stylesheet[
-          `.psds-button--disabled.psds-button--appearance-${appearance}`
-        ]
-      },
-      icon &&
-        !iconOnly && {
-          ...stylesheet[
-            `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly`
-          ],
-          ...stylesheet[
-            `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly.psds-button--size-${size}`
-          ]
-        },
-      iconAlign === vars.iconAligns.right &&
-        stylesheet[`.psds-button--iconAlign-${iconAlign}`],
-      iconOnly && {
-        ...stylesheet[`.psds-button--iconOnly`],
-        ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
-      }
+    selectToString(
+      selectAll(
+        selectButton('.psds-button'),
+        selectButton(`.psds-button--layout-${layout}`),
+        selectButton(`.psds-button--size-${size}`),
+        selectButton(`.psds-button--appearance-${appearance}`),
+        selectButton(
+          `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
+        ),
+        disabled &&
+          selectAll(
+            selectButton(`.psds-button--disabled`),
+            selectButton(`.psds-button--disabled.psds-theme--${themeName}`),
+            selectButton(
+              `.psds-button--disabled.psds-button--appearance-${appearance}`
+            )
+          ),
+        icon &&
+          !iconOnly &&
+          selectAll(
+            selectButton(
+              `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly`
+            ),
+            selectButton(
+              `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly.psds-button--size-${size}`
+            )
+          ),
+        iconAlign === vars.iconAligns.right &&
+          selectButton(`.psds-button--iconAlign-${iconAlign}`),
+        iconOnly &&
+          selectAll(
+            selectButton(`.psds-button--iconOnly`),
+            selectButton(`.psds-button--iconOnly.psds-button--size-${size}`)
+          )
+      )
     ),
   loading: ({ appearance, themeName }) =>
-    css(
-      stylesheet[`.psds-button__loading`]({ spin }),
-      stylesheet[`.psds-button__loading--appearance-${appearance}`],
-      stylesheet[
-        `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
-      ]
+    selectToString(
+      selectAll(
+        selectButton(`.psds-button__loading`, { spin }),
+        selectButton(`.psds-button__loading--appearance-${appearance}`),
+        selectButton(
+          `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
+        )
+      )
     ),
   icon: ({ iconAlign, iconOnly, isLoadingWithNoText }) =>
-    css(
-      stylesheet['.psds-button__icon'],
-      stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
-      (iconOnly || isLoadingWithNoText) &&
-        stylesheet['.psds-button__icon--iconOnly']
+    selectToString(
+      selectAll(
+        selectButton('.psds-button__icon'),
+        selectButton(`.psds-button__icon--iconAlign-${iconAlign}`),
+        (iconOnly || isLoadingWithNoText) &&
+          selectButton('.psds-button__icon--iconOnly')
+      )
     ),
-  text: () => css(stylesheet[`.psds-button__text`])
+  text: () => selectToString(selectButton(`.psds-button__text`))
 }
 
 const mapIconSize = (size: string) => {
@@ -97,7 +147,7 @@ interface RenderIconProps extends HTMLPropsFor<'div'> {
 const renderIcon: React.FC<RenderIconProps> = props =>
   props.loading ? (
     <div
-      {...styles.icon({
+      className={styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
         isLoadingWithNoText: props.isLoadingWithNoText
@@ -105,7 +155,7 @@ const renderIcon: React.FC<RenderIconProps> = props =>
     >
       <Icon size={mapIconSize(props.size)}>
         <span
-          {...styles.loading({
+          className={styles.loading({
             appearance: props.appearance,
             themeName: props.themeName
           })}
@@ -114,7 +164,7 @@ const renderIcon: React.FC<RenderIconProps> = props =>
     </div>
   ) : props.icon ? (
     <div
-      {...styles.icon({
+      className={styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
         isLoadingWithNoText: props.isLoadingWithNoText
@@ -206,7 +256,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       themeName
     })
     const labelEl = !isLoadingWithNoText && (
-      <span {...styles.text()}>{children}</span>
+      <span className={styles.text()}>{children}</span>
     )
 
     if ('href' in props && typeof props.href === 'string') {
@@ -215,7 +265,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       return (
         <a
           ref={ref as React.Ref<HTMLAnchorElement>}
-          {...glamorStyle}
+          className={glamorStyle}
           {...anchorProps}
           onClick={disabled ? undefined : anchorProps.onClick}
           style={style}
@@ -232,7 +282,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
         <button
           disabled={disabled || loading}
           ref={ref as React.Ref<HTMLButtonElement>}
-          {...glamorStyle}
+          className={glamorStyle}
           {...buttonProps}
           style={style}
         >

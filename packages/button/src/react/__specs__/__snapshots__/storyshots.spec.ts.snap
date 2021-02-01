@@ -2,12 +2,12 @@
 
 exports[`Storyshots Button / appearance flat 1`] = `
 <button
-  data-css-bu16i2=""
+  className="css-bu16i2 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -16,12 +16,12 @@ exports[`Storyshots Button / appearance flat 1`] = `
 
 exports[`Storyshots Button / appearance primary 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -30,12 +30,12 @@ exports[`Storyshots Button / appearance primary 1`] = `
 
 exports[`Storyshots Button / appearance secondary 1`] = `
 <button
-  data-css-pbt4vr=""
+  className="css-pbt4vr psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -44,12 +44,12 @@ exports[`Storyshots Button / appearance secondary 1`] = `
 
 exports[`Storyshots Button / appearance stroke 1`] = `
 <button
-  data-css-1pp3uul=""
+  className="css-1pp3uul psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -58,12 +58,12 @@ exports[`Storyshots Button / appearance stroke 1`] = `
 
 exports[`Storyshots Button / as link default 1`] = `
 <a
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   href="https://duckduckgo.com"
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click as link
   </span>
@@ -72,12 +72,12 @@ exports[`Storyshots Button / as link default 1`] = `
 
 exports[`Storyshots Button / as link with icon 1`] = `
 <a
-  data-css-15ils3b=""
+  className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   href="https://duckduckgo.com"
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -94,7 +94,7 @@ exports[`Storyshots Button / as link with icon 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click as link
   </span>
@@ -112,93 +112,93 @@ exports[`Storyshots Button / disabled all 1`] = `
   }
 >
   <button
-    data-css-a3dmt8=""
+    className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-1nalajf=""
+    className="css-1nalajf psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled "
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       primary disabled
     </span>
   </button>
   <button
-    data-css-pbt4vr=""
+    className="css-pbt4vr psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-5qvz26=""
+    className="css-5qvz26 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark psds-button--disabled "
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       secondary disabled
     </span>
   </button>
   <button
-    data-css-1pp3uul=""
+    className="css-1pp3uul psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-jcrgzh=""
+    className="css-jcrgzh psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark psds-button--disabled "
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       stroke disabled
     </span>
   </button>
   <button
-    data-css-bu16i2=""
+    className="css-bu16i2 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       flat
     </span>
   </button>
   <button
-    data-css-1rjramm=""
+    className="css-1rjramm psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark psds-button--disabled "
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       flat disabled
     </span>
@@ -208,12 +208,12 @@ exports[`Storyshots Button / disabled all 1`] = `
 
 exports[`Storyshots Button / disabled with icon 1`] = `
 <button
-  data-css-vjz72d=""
+  className="css-vjz72d psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled psds-button--iconAlign-left psds-button--not-iconOnly "
   disabled={true}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -230,7 +230,7 @@ exports[`Storyshots Button / disabled with icon 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Disabled
   </span>
@@ -239,12 +239,12 @@ exports[`Storyshots Button / disabled with icon 1`] = `
 
 exports[`Storyshots Button / icon flat 1`] = `
 <button
-  data-css-8dkqkx=""
+  className="css-8dkqkx psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -261,7 +261,7 @@ exports[`Storyshots Button / icon flat 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -270,12 +270,12 @@ exports[`Storyshots Button / icon flat 1`] = `
 
 exports[`Storyshots Button / icon large 1`] = `
 <button
-  data-css-t520ac=""
+  className="css-t520ac psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -292,7 +292,7 @@ exports[`Storyshots Button / icon large 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -301,12 +301,12 @@ exports[`Storyshots Button / icon large 1`] = `
 
 exports[`Storyshots Button / icon left 1`] = `
 <button
-  data-css-15ils3b=""
+  className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -323,7 +323,7 @@ exports[`Storyshots Button / icon left 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -332,12 +332,12 @@ exports[`Storyshots Button / icon left 1`] = `
 
 exports[`Storyshots Button / icon lone flat large 1`] = `
 <button
-  data-css-1mzw1rj=""
+  className="css-1mzw1rj psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-flat psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -354,19 +354,19 @@ exports[`Storyshots Button / icon lone flat large 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone flat medium 1`] = `
 <button
-  data-css-i4ffpe=""
+  className="css-i4ffpe psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -383,19 +383,19 @@ exports[`Storyshots Button / icon lone flat medium 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone flat small 1`] = `
 <button
-  data-css-dvk6df=""
+  className="css-dvk6df psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -412,19 +412,19 @@ exports[`Storyshots Button / icon lone flat small 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone flat xSmall 1`] = `
 <button
-  data-css-ut0avc=""
+  className="css-ut0avc psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-1gzzcm2=""
@@ -441,19 +441,19 @@ exports[`Storyshots Button / icon lone flat xSmall 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone primary large 1`] = `
 <button
-  data-css-1lo6emb=""
+  className="css-1lo6emb psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -470,19 +470,19 @@ exports[`Storyshots Button / icon lone primary large 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone primary medium 1`] = `
 <button
-  data-css-bkirxp=""
+  className="css-bkirxp psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -499,19 +499,19 @@ exports[`Storyshots Button / icon lone primary medium 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone primary small 1`] = `
 <button
-  data-css-5tc49u=""
+  className="css-5tc49u psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -528,19 +528,19 @@ exports[`Storyshots Button / icon lone primary small 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone primary xSmall 1`] = `
 <button
-  data-css-1fiuxvy=""
+  className="css-1fiuxvy psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-1gzzcm2=""
@@ -557,19 +557,19 @@ exports[`Storyshots Button / icon lone primary xSmall 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone secondary large 1`] = `
 <button
-  data-css-rm9g5a=""
+  className="css-rm9g5a psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-secondary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -586,19 +586,19 @@ exports[`Storyshots Button / icon lone secondary large 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone secondary medium 1`] = `
 <button
-  data-css-ydscpp=""
+  className="css-ydscpp psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -615,19 +615,19 @@ exports[`Storyshots Button / icon lone secondary medium 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone secondary small 1`] = `
 <button
-  data-css-mn3d4p=""
+  className="css-mn3d4p psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -644,19 +644,19 @@ exports[`Storyshots Button / icon lone secondary small 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone secondary xSmall 1`] = `
 <button
-  data-css-1mwtcm9=""
+  className="css-1mwtcm9 psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-secondary psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-1gzzcm2=""
@@ -673,19 +673,19 @@ exports[`Storyshots Button / icon lone secondary xSmall 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone stroke large 1`] = `
 <button
-  data-css-wo6byy=""
+  className="css-wo6byy psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-stroke psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -702,19 +702,19 @@ exports[`Storyshots Button / icon lone stroke large 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone stroke medium 1`] = `
 <button
-  data-css-1cl3oxr=""
+  className="css-1cl3oxr psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -731,19 +731,19 @@ exports[`Storyshots Button / icon lone stroke medium 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone stroke small 1`] = `
 <button
-  data-css-d28myp=""
+  className="css-d28myp psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -760,19 +760,19 @@ exports[`Storyshots Button / icon lone stroke small 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon lone stroke xSmall 1`] = `
 <button
-  data-css-utdgyk=""
+  className="css-utdgyk psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-stroke psds-theme--dark  psds-button--iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-1gzzcm2=""
@@ -789,19 +789,19 @@ exports[`Storyshots Button / icon lone stroke xSmall 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / icon medium 1`] = `
 <button
-  data-css-15ils3b=""
+  className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -818,7 +818,7 @@ exports[`Storyshots Button / icon medium 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -827,12 +827,12 @@ exports[`Storyshots Button / icon medium 1`] = `
 
 exports[`Storyshots Button / icon primary 1`] = `
 <button
-  data-css-15ils3b=""
+  className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -849,7 +849,7 @@ exports[`Storyshots Button / icon primary 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -858,12 +858,12 @@ exports[`Storyshots Button / icon primary 1`] = `
 
 exports[`Storyshots Button / icon right 1`] = `
 <button
-  data-css-pu8zp0=""
+  className="css-pu8zp0 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-right psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-8b1vtw=""
+    className="css-8b1vtw psds-button__icon psds-button__icon--iconAlign-right "
   >
     <div
       data-css-7dab2f=""
@@ -880,7 +880,7 @@ exports[`Storyshots Button / icon right 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -889,12 +889,12 @@ exports[`Storyshots Button / icon right 1`] = `
 
 exports[`Storyshots Button / icon secondary 1`] = `
 <button
-  data-css-yem1i0=""
+  className="css-yem1i0 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -911,7 +911,7 @@ exports[`Storyshots Button / icon secondary 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -920,12 +920,12 @@ exports[`Storyshots Button / icon secondary 1`] = `
 
 exports[`Storyshots Button / icon small 1`] = `
 <button
-  data-css-bn2mco=""
+  className="css-bn2mco psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -942,7 +942,7 @@ exports[`Storyshots Button / icon small 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -951,12 +951,12 @@ exports[`Storyshots Button / icon small 1`] = `
 
 exports[`Storyshots Button / icon stroke 1`] = `
 <button
-  data-css-1w3vj1k=""
+  className="css-1w3vj1k psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -973,7 +973,7 @@ exports[`Storyshots Button / icon stroke 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -983,12 +983,12 @@ exports[`Storyshots Button / icon stroke 1`] = `
 exports[`Storyshots Button / icon vertically aligned rows 1`] = `
 <div>
   <button
-    data-css-15ils3b=""
+    className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
     disabled={false}
     style={Object {}}
   >
     <div
-      data-css-1mgd019=""
+      className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
     >
       <div
         data-css-7dab2f=""
@@ -1005,18 +1005,18 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
       </div>
     </div>
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       With icon
     </span>
   </button>
   <button
-    data-css-a3dmt8=""
+    className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       Without icon
     </span>
@@ -1026,12 +1026,12 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
 
 exports[`Storyshots Button / icon xSmall 1`] = `
 <button
-  data-css-z782b9=""
+  className="css-z782b9 psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-1gzzcm2=""
@@ -1048,7 +1048,7 @@ exports[`Storyshots Button / icon xSmall 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With Icon
   </span>
@@ -1068,100 +1068,45 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
     }
   >
     <button
-      data-css-b33333=""
+      className="css-b33333 psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-1e1yw2j=""
+      className="css-1e1yw2j psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-secondary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-1knupbt=""
+      className="css-1knupbt psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-stroke psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-q7dmls=""
+      className="css-q7dmls psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-  </div>
-  <div
-    style={
-      Object {
-        "display": "grid",
-        "gap": "8px",
-        "gridTemplateColumns": "auto auto auto auto",
-        "marginBottom": "8px",
-      }
-    }
-  >
-    <button
-      data-css-1j6gc1e=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1runvcu=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1kmqdxd=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-u4vzga=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
@@ -1178,45 +1123,45 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
     }
   >
     <button
-      data-css-a3dmt8=""
+      className="css-1j6gc1e psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-pbt4vr=""
+      className="css-1runvcu psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-1pp3uul=""
+      className="css-1kmqdxd psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-bu16i2=""
+      className="css-u4vzga psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
@@ -1233,45 +1178,100 @@ exports[`Storyshots Button / in row same vertical height 1`] = `
     }
   >
     <button
-      data-css-kf1eef=""
+      className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-itdtm6=""
+      className="css-pbt4vr psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-t6awe6=""
+      className="css-1pp3uul psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
     </button>
     <button
-      data-css-xtxkix=""
+      className="css-bu16i2 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
+      >
+        button
+      </span>
+    </button>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gap": "8px",
+        "gridTemplateColumns": "auto auto auto auto",
+        "marginBottom": "8px",
+      }
+    }
+  >
+    <button
+      className="css-kf1eef psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark "
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        className="css-15b13by psds-button__text"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="css-itdtm6 psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-secondary psds-theme--dark "
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        className="css-15b13by psds-button__text"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="css-t6awe6 psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-stroke psds-theme--dark "
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        className="css-15b13by psds-button__text"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="css-xtxkix psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-flat psds-theme--dark "
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        className="css-15b13by psds-button__text"
       >
         button
       </span>
@@ -1291,12 +1291,12 @@ exports[`Storyshots Button / layout fullWidth 1`] = `
 >
   <div>
     <button
-      data-css-a3dmt8=""
+      className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         Normal
       </span>
@@ -1304,12 +1304,12 @@ exports[`Storyshots Button / layout fullWidth 1`] = `
   </div>
   <div>
     <button
-      data-css-18brbs1=""
+      className="css-18brbs1 psds-button psds-button--layout-fullWidth psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
       disabled={false}
       style={Object {}}
     >
       <span
-        data-css-15b13by=""
+        className="css-15b13by psds-button__text"
       >
         Full width
       </span>
@@ -1320,23 +1320,23 @@ exports[`Storyshots Button / layout fullWidth 1`] = `
 
 exports[`Storyshots Button / loading flat 1`] = `
 <button
-  data-css-xtxkix=""
+  className="css-xtxkix psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-flat psds-theme--dark "
   disabled={true}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-flat psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1345,24 +1345,24 @@ exports[`Storyshots Button / loading flat 1`] = `
 
 exports[`Storyshots Button / loading large 1`] = `
 <button
-  data-css-kf1eef=""
+  className="css-kf1eef psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark "
   disabled={true}
   onClick={[Function]}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1371,47 +1371,47 @@ exports[`Storyshots Button / loading large 1`] = `
 
 exports[`Storyshots Button / loading lone icon 1`] = `
 <button
-  data-css-1lo6emb=""
+  className="css-1lo6emb psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark  psds-button--iconOnly"
   disabled={true}
   style={Object {}}
 >
   <div
-    data-css-y80vay=""
+    className="css-y80vay psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   />
 </button>
 `;
 
 exports[`Storyshots Button / loading medium 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={true}
   onClick={[Function]}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1420,12 +1420,12 @@ exports[`Storyshots Button / loading medium 1`] = `
 
 exports[`Storyshots Button / loading no icon, hidden text 1`] = `
 <button
-  data-css-kf1eef=""
+  className="css-kf1eef psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Text doesnt show when loading if no icon
   </span>
@@ -1434,23 +1434,23 @@ exports[`Storyshots Button / loading no icon, hidden text 1`] = `
 
 exports[`Storyshots Button / loading primary 1`] = `
 <button
-  data-css-kf1eef=""
+  className="css-kf1eef psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark "
   disabled={true}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1459,23 +1459,23 @@ exports[`Storyshots Button / loading primary 1`] = `
 
 exports[`Storyshots Button / loading secondary 1`] = `
 <button
-  data-css-itdtm6=""
+  className="css-itdtm6 psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-secondary psds-theme--dark "
   disabled={true}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-secondary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1484,24 +1484,24 @@ exports[`Storyshots Button / loading secondary 1`] = `
 
 exports[`Storyshots Button / loading small 1`] = `
 <button
-  data-css-1j6gc1e=""
+  className="css-1j6gc1e psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark "
   disabled={true}
   onClick={[Function]}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1510,23 +1510,23 @@ exports[`Storyshots Button / loading small 1`] = `
 
 exports[`Storyshots Button / loading stroke 1`] = `
 <button
-  data-css-t6awe6=""
+  className="css-t6awe6 psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-stroke psds-theme--dark "
   disabled={true}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-1nq0vnb=""
+        className="css-1nq0vnb psds-button__loading psds-button__loading--appearance-stroke psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1535,24 +1535,24 @@ exports[`Storyshots Button / loading stroke 1`] = `
 
 exports[`Storyshots Button / loading xSmall 1`] = `
 <button
-  data-css-b33333=""
+  className="css-b33333 psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark "
   disabled={true}
   onClick={[Function]}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-1gzzcm2=""
     >
       <span
-        data-css-1agpeua=""
+        className="css-1agpeua psds-button__loading psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Loading...
   </span>
@@ -1561,13 +1561,13 @@ exports[`Storyshots Button / loading xSmall 1`] = `
 
 exports[`Storyshots Button / override styles with className 1`] = `
 <button
-  data-css-15ils3b=""
+  className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   data-css-jxpnuu=""
   disabled={false}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -1584,7 +1584,7 @@ exports[`Storyshots Button / override styles with className 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Green Button
   </span>
@@ -1593,7 +1593,7 @@ exports[`Storyshots Button / override styles with className 1`] = `
 
 exports[`Storyshots Button / override styles with style 1`] = `
 <button
-  data-css-15ils3b=""
+  className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   style={
     Object {
@@ -1602,7 +1602,7 @@ exports[`Storyshots Button / override styles with style 1`] = `
   }
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -1619,7 +1619,7 @@ exports[`Storyshots Button / override styles with style 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Red Button
   </span>
@@ -1628,13 +1628,13 @@ exports[`Storyshots Button / override styles with style 1`] = `
 
 exports[`Storyshots Button / props pass through anchor supports download 1`] = `
 <a
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   download={true}
   href="/somewhere"
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Link with download
   </span>
@@ -1644,12 +1644,12 @@ exports[`Storyshots Button / props pass through anchor supports download 1`] = `
 exports[`Storyshots Button / props pass through aria-expanded 1`] = `
 <button
   aria-expanded={true}
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     aria-expanded
   </span>
@@ -1658,12 +1658,12 @@ exports[`Storyshots Button / props pass through aria-expanded 1`] = `
 
 exports[`Storyshots Button / props pass through button doesnt support download 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Button with download
   </span>
@@ -1672,13 +1672,13 @@ exports[`Storyshots Button / props pass through button doesnt support download 1
 
 exports[`Storyshots Button / props pass through data-something 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   data-something="wow"
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Custom data attributes
   </span>
@@ -1687,13 +1687,13 @@ exports[`Storyshots Button / props pass through data-something 1`] = `
 
 exports[`Storyshots Button / props pass through not supported 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   onMouseOver={[Function]}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Should not mouseover
   </span>
@@ -1702,13 +1702,13 @@ exports[`Storyshots Button / props pass through not supported 1`] = `
 
 exports[`Storyshots Button / props pass through role 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   role="link"
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Role Link
   </span>
@@ -1717,13 +1717,13 @@ exports[`Storyshots Button / props pass through role 1`] = `
 
 exports[`Storyshots Button / props pass through title 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
   title="My caption"
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     With title
   </span>
@@ -1732,12 +1732,12 @@ exports[`Storyshots Button / props pass through title 1`] = `
 
 exports[`Storyshots Button / size large 1`] = `
 <button
-  data-css-kf1eef=""
+  className="css-kf1eef psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -1746,12 +1746,12 @@ exports[`Storyshots Button / size large 1`] = `
 
 exports[`Storyshots Button / size medium 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -1760,12 +1760,12 @@ exports[`Storyshots Button / size medium 1`] = `
 
 exports[`Storyshots Button / size small 1`] = `
 <button
-  data-css-1j6gc1e=""
+  className="css-1j6gc1e psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -1774,12 +1774,12 @@ exports[`Storyshots Button / size small 1`] = `
 
 exports[`Storyshots Button / size xSmall 1`] = `
 <button
-  data-css-b33333=""
+  className="css-b33333 psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Click me
   </span>
@@ -1789,34 +1789,34 @@ exports[`Storyshots Button / size xSmall 1`] = `
 exports[`Storyshots Button / theme nested 1`] = `
 Array [
   <button
-    data-css-bu16i2=""
+    className="css-bu16i2 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       dark
     </span>
   </button>,
   <button
-    data-css-7j1z4c=""
+    className="css-7j1z4c psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       light
     </span>
   </button>,
   <button
-    data-css-bu16i2=""
+    className="css-bu16i2 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark "
     disabled={false}
     style={Object {}}
   >
     <span
-      data-css-15b13by=""
+      className="css-15b13by psds-button__text"
     >
       dark
     </span>
@@ -1826,13 +1826,13 @@ Array [
 
 exports[`Storyshots Button / with onClick clicks once 1`] = `
 <button
-  data-css-15ils3b=""
+  className="css-15ils3b psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark  psds-button--iconAlign-left psds-button--not-iconOnly"
   disabled={false}
   onClick={[Function]}
   style={Object {}}
 >
   <div
-    data-css-1mgd019=""
+    className="css-1mgd019 psds-button__icon psds-button__icon--iconAlign-left "
   >
     <div
       data-css-7dab2f=""
@@ -1849,7 +1849,7 @@ exports[`Storyshots Button / with onClick clicks once 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Clicks once
   </span>
@@ -1858,12 +1858,12 @@ exports[`Storyshots Button / with onClick clicks once 1`] = `
 
 exports[`Storyshots Button / with ref ref to handle focus 1`] = `
 <button
-  data-css-a3dmt8=""
+  className="css-a3dmt8 psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark "
   disabled={false}
   style={Object {}}
 >
   <span
-    data-css-15b13by=""
+    className="css-15b13by psds-button__text"
   >
     Should be focused
   </span>
