@@ -44,6 +44,7 @@ export default {
     label: 'field__prefix',
 
     alignSelf: 'stretch',
+    color: colorsTextIcon.lowOnLight,
     display: 'flex',
     flex: '0 0 auto',
     height: 'auto',
@@ -54,6 +55,7 @@ export default {
     label: 'field__suffix',
 
     alignSelf: 'stretch',
+    color: colorsTextIcon.lowOnLight,
     display: 'flex',
     flex: '0 0 auto',
     height: 'auto',
