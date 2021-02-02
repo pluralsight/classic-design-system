@@ -108,9 +108,9 @@
   --psColorsPurple10: #351973;
 
   --psColorsTextIconHighOnDark: rgba(255, 255, 255, 0.95);
-  --psColorsTextIconHighOnLight: rgba(0, 0, 0, 0.95);
-  --psColorsTextIconLowOnDark: rgba(255, 255, 255, 0.65);
-  --psColorsTextIconLowOnLight: rgba(0, 0, 0, 0.55);
+  --psColorsTextIconHighOnLight: rgba(0, 0, 0, 0.9);
+  --psColorsTextIconLowOnDark: rgba(255, 255, 255, 0.7);
+  --psColorsTextIconLowOnLight: rgba(0, 0, 0, 0.65);
 
   --psColorsBorderHighOnDark: rgba(255, 255, 255, 0.3);
   --psColorsBorderHighOnLight: rgba(0, 0, 0, 0.3);
@@ -126,6 +126,9 @@
   --psColorsBackgroundLight3: #ffffff;
 
   --psColorsBackgroundUtilityBase: #b0b0b0;
+  --psColorsBackgroundUtility10: rgba(138, 153, 168, 0.1);
+  --psColorsBackgroundUtility15: rgba(138, 153, 168, 0.15);
+  --psColorsBackgroundUtility20: rgba(138, 153, 168, 0.2);
   --psColorsBackgroundUtility25: rgba(138, 153, 168, 0.25);
   --psColorsBackgroundUtility30: rgba(138, 153, 168, 0.3);
   --psColorsBackgroundUtility40: rgba(138, 153, 168, 0.4);
@@ -146,13 +149,13 @@
   --psColorsGradientFlowStop0: #2968b2;
   --psColorsGradientFlowStop100: #27aae1;
 
-  --psColorsPrimaryActionBackground: #0084bd;
+  --psColorsPrimaryActionBackground: #0074ab;
   --psColorsPrimaryActionTextDarkTheme: #2ea0d6;
   --psColorsPrimaryActionTextLightTheme: #0074ab;
 
-  --psColorsStatusError: #d21c09;
-  --psColorsStatusInfo: #0084bd;
-  --psColorsStatusSuccess: #009e52;
+  --psColorsStatusError: #c00f00;
+  --psColorsStatusInfo: #0074ab;
+  --psColorsStatusSuccess: #007c3a;
   --psColorsStatusWarning: #fad000;
 
   --psColorsWhite: #ffffff;
