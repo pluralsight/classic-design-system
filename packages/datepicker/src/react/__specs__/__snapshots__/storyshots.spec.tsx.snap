@@ -15,7 +15,7 @@ exports[`Storyshots MultiDate Calendar 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -50,7 +50,7 @@ exports[`Storyshots MultiDate Calendar 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -451,7 +451,7 @@ exports[`Storyshots RangeDate Calendar 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -486,7 +486,7 @@ exports[`Storyshots RangeDate Calendar 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -966,7 +966,7 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1001,7 +1001,7 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1521,7 +1521,7 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1608,7 +1608,7 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2477,7 +2477,7 @@ exports[`Storyshots RangeDate calendar: with input 1`] = `
         >
           <button
             aria-label="Go back 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2512,7 +2512,7 @@ exports[`Storyshots RangeDate calendar: with input 1`] = `
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -3045,7 +3045,7 @@ exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -3080,7 +3080,7 @@ exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -3494,7 +3494,7 @@ exports[`Storyshots SingleDate calendar: date is selected 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -3529,7 +3529,7 @@ exports[`Storyshots SingleDate calendar: date is selected 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-i4ffpe=""
+          data-css-jk4b1r=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -4036,7 +4036,7 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -4071,7 +4071,7 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-i4ffpe=""
+            data-css-jk4b1r=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}

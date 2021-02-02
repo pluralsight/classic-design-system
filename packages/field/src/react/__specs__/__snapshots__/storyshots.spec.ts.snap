@@ -1,0 +1,3094 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
+<div
+  data-css-z8g6as=""
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-ep1lt2=""
+      htmlFor="downshift-0-input"
+      id="downshift-0-label"
+    >
+      Choose an element
+    </label>
+    <div>
+      <div
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1a24qct=""
+          data-css-1q3e54w=""
+        >
+          <div
+            aria-expanded={false}
+            aria-haspopup="listbox"
+            aria-owns="downshift-0-menu"
+            data-css-1ecjssy=""
+            role="combobox"
+          >
+            <div
+              data-css-lxaqlq=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Helium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-lxaqlq=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Lithium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-lxaqlq=""
+              data-css-n9fe5c=""
+            >
+              <input
+                aria-autocomplete="list"
+                aria-controls="downshift-0-menu"
+                aria-labelledby="downshift-0-label"
+                autoComplete="off"
+                data-css-1ffn65r=""
+                data-css-1na6nif=""
+                id="downshift-0-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Do something"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            data-css-n5p4fh=""
+          >
+            <div
+              data-css-3feg78=""
+            >
+              <button
+                aria-label="toggle menu"
+                data-css-xqz18p=""
+                disabled={false}
+                id="downshift-0-toggle-button"
+                onClick={[Function]}
+                style={Object {}}
+                tabIndex={-1}
+              >
+                <div
+                  data-css-y80vay=""
+                >
+                  <div
+                    data-css-1gzzcm2=""
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <span
+                  data-css-15b13by=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "border": "2px dashed pink",
+        "display": "none",
+        "margin": "20px 0",
+        "maxHeight": 200,
+        "overflow": "scroll",
+        "padding": 20,
+      }
+    }
+  >
+    <ul
+      aria-labelledby="downshift-0-label"
+      id="downshift-0-menu"
+      onMouseLeave={[Function]}
+      role="listbox"
+    >
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-0"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Hydrogen
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-1"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Beryllium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-2"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Boron
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-3"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Carbon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-4"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Nitrogren
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-5"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Oxygen
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-6"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Fluorine
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-7"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Neon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-8"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Sodium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-9"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Magnesium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-10"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Aluminum
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-11"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Silicon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-12"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Phosphorus
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-13"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Sulfur
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-14"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Chlorine
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-15"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Argon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-16"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Potassium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-17"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Calcium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-18"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Scandium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-19"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Titanium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-20"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Vanadium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-21"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Chromium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-22"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Manganese
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-23"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Iron
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-24"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Cobalt
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-25"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Nickel
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-26"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Copper
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-27"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Zinc
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-28"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Gallium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-29"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Germanium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-30"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Arsenic
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-31"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Selenium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-32"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Bromine
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-33"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Krypton
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-34"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Rubidium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-35"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Strontium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-36"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Yttrium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-0-item-37"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Zirconium
+           
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/SelectField Basic 1`] = `
+Array [
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-ep1lt2=""
+      htmlFor="downshift-1-toggle-button"
+      id="downshift-1-label"
+    >
+      Choose an element
+    </label>
+    <div>
+      <div
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1r5pcu2=""
+        >
+          <button
+            aria-expanded={false}
+            aria-haspopup="listbox"
+            aria-labelledby="downshift-1-label downshift-1-toggle-button"
+            data-css-1xqnm3u=""
+            id="downshift-1-toggle-button"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span>
+              Do something
+            </span>
+            <div
+              data-css-n5p4fh=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-1s76hio=""
+    >
+      Area for additional information
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "border": "2px dashed pink",
+        "display": "none",
+        "height": 200,
+        "margin": "20px 0",
+        "overflow": "scroll",
+        "padding": 20,
+      }
+    }
+  >
+    <ul
+      aria-labelledby="downshift-1-label"
+      id="downshift-1-menu"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      onMouseLeave={[Function]}
+      role="listbox"
+      tabIndex={-1}
+    >
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-0"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Hydrogen
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-1"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Helium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-2"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Lithium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-3"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Beryllium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-4"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Boron
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-5"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Carbon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-6"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Nitrogren
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-7"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Oxygen
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-8"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Fluorine
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-9"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Neon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-10"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Sodium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-11"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Magnesium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-12"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Aluminum
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-13"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Silicon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-14"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Phosphorus
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-15"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Sulfur
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-16"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Chlorine
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-17"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Argon
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-18"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Potassium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-19"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Calcium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-20"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Scandium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-21"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Titanium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-22"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Vanadium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-23"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Chromium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-24"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Manganese
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-25"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Iron
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-26"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Cobalt
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-27"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Nickel
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-28"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Copper
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-29"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Zinc
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-30"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Gallium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-31"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Germanium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-32"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Arsenic
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-33"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Selenium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-34"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Bromine
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-35"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Krypton
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-36"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Rubidium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-37"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Strontium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-38"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Yttrium
+           
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        data-css-1gkxtmt=""
+        id="downshift-1-item-39"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="option"
+      >
+        <span>
+          Zirconium
+           
+        </span>
+      </li>
+    </ul>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Field/TagsField Basic 1`] = `
+<div
+  data-css-z8g6as=""
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-ep1lt2=""
+      htmlFor="tags-input__input-unique-id"
+      id="tags-input__label-unique-id"
+    >
+      Some label text
+    </label>
+    <div>
+      <div
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1a24qct=""
+          data-css-1q3e54w=""
+        >
+          <div
+            data-css-1ecjssy=""
+          >
+            <div
+              data-css-lxaqlq=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Helium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-lxaqlq=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-1ffn65r=""
+                data-css-1na6nif=""
+                id="tags-input__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "border": "2px dashed pink",
+        "margin": "20px 0",
+        "maxHeight": 200,
+        "overflow": "scroll",
+        "padding": 20,
+      }
+    }
+  >
+    <ul>
+      <li>
+        <span>
+          Hydrogen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Lithium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Beryllium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Boron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Carbon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nitrogren
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Oxygen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Fluorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Neon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sodium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Magnesium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Aluminum
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Silicon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Phosphorus
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sulfur
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chlorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Argon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Potassium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Calcium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Scandium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Titanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Vanadium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chromium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Manganese
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Iron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Cobalt
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nickel
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Copper
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zinc
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Gallium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Germanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Arsenic
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Selenium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Bromine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Krypton
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Rubidium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Strontium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Yttrium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zirconium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
+<div
+  data-css-z8g6as=""
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-ep1lt2=""
+      htmlFor="tags-input__input-unique-id"
+      id="tags-input__label-unique-id"
+    >
+      Some label text
+    </label>
+    <div>
+      <div
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1a24qct=""
+          data-css-1q3e54w=""
+        >
+          <div
+            data-css-1ecjssy=""
+          >
+            <div
+              data-css-lxaqlq=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-146no9u=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    Helium
+                  </span>
+                  <div
+                    data-css-1gzzcm2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-lxaqlq=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-1ffn65r=""
+                data-css-1na6nif=""
+                id="tags-input__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            data-css-n5p4fh=""
+          >
+            <div
+              data-css-b8eohb=""
+              onClick={[Function]}
+            >
+              <p
+                data-css-1ea0ufb=""
+              >
+                custom suffix
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "border": "2px dashed pink",
+        "margin": "20px 0",
+        "maxHeight": 200,
+        "overflow": "scroll",
+        "padding": 20,
+      }
+    }
+  >
+    <ul>
+      <li>
+        <span>
+          Hydrogen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Lithium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Beryllium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Boron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Carbon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nitrogren
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Oxygen
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Fluorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Neon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sodium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Magnesium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Aluminum
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Silicon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Phosphorus
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Sulfur
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chlorine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Argon
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Potassium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Calcium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Scandium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Titanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Vanadium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Chromium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Manganese
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Iron
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Cobalt
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Nickel
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Copper
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zinc
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Gallium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Germanium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Arsenic
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Selenium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Bromine
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Krypton
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Rubidium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Strontium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Yttrium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+      <li>
+        <span>
+          Zirconium
+           
+        </span>
+        <button
+          onClick={[Function]}
+        >
+          add
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
+<div
+  data-css-h2yjsn=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            disabled={true}
+            id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8ff2sc=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+        <div
+          data-css-qrpvsu=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Icon Prefix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-1tx8me8=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Icon Suffix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+        <div
+          data-css-n5p4fh=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField Size Small 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1q3e54w=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-area__area-unique-id"
+    id="text-area__label-unique-id"
+  >
+    Text area label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <textarea
+            data-css-1mpu7ok=""
+            id="text-area__area-unique-id"
+            onChange={[Function]}
+            placeholder="Enter some text here"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
+<div
+  data-css-h2yjsn=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            disabled={true}
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Error 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8ff2sc=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+        <div
+          data-css-qrpvsu=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-1tx8me8=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+        <div
+          data-css-n5p4fh=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            type="password"
+          />
+        </div>
+        <div
+          data-css-n5p4fh=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="lock icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13.5 15.5a1.5 1.5 0 11-3.001 0 1.5 1.5 0 013.001 0M17 8v2c1.103 0 2 .897 2 2v7c0 1.104-.897 2-2 2H7c-1.103 0-2-.896-2-2v-7c0-1.103.897-2 2-2V8c0-2.756 2.243-5 5-5s5 2.244 5 5zM7 19h10.001L17 12H7v7zM9 8v2h6V8c0-1.653-1.346-3-3-3S9 6.348 9 8z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1q3e54w=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
+<div
+  data-css-w0yocm=""
+  onClick={[Function]}
+>
+  <label
+    data-css-ep1lt2=""
+    htmlFor="text-input__input-unique-id"
+    id="text-input__label-unique-id"
+  >
+    Text input label area
+  </label>
+  <div>
+    <div
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            placeholder="Enter some text here"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1s76hio=""
+  >
+    Area for additional information
+  </div>
+</div>
+`;

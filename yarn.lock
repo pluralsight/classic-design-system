@@ -3335,14 +3335,6 @@
     hoist-non-react-statics "^3.3.0"
     prop-types "^15.7.2"
 
-"@pluralsight/ps-design-system-theme@^6.0.0":
-  version "6.0.15"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-theme/-/ps-design-system-theme-6.0.15.tgz#b8adba4902dcee6221116b6fd689718415931ac6"
-  integrity sha512-DUXvoDZmg6jPg8As6HD4ijLU8npVY3vWGsVebHrG5sUJhZLJsr+03n+UvJBICybRrWklnim5RRwzBMmpbRk45w==
-  dependencies:
-    "@pluralsight/ps-design-system-util" "^6.0.10"
-    hoist-non-react-statics "^3.3.0"
-
 "@pluralsight/ps-design-system-util@^3.0.11":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-3.5.0.tgz#a2782d639d7fdcd5e2147993f0a9035ce731d71b"
@@ -3350,14 +3342,6 @@
   dependencies:
     exenv "^1.2.2"
     prop-types "^15.7.2"
-    resize-observer-polyfill "^1.5.1"
-
-"@pluralsight/ps-design-system-util@^6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-6.0.10.tgz#f88ddb2fede089c7412a7d233de5c9fc47043380"
-  integrity sha512-0zit9EyqGherlSnwWlGh05viFCY2w+WeQkGAAG6LDFiO+dzZCBqyiJiTkPxGmCfCESZfLw2lCJB6RofEsCZ6Yw==
-  dependencies:
-    exenv "^1.2.2"
     resize-observer-polyfill "^1.5.1"
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.1", "@pmmmwh/react-refresh-webpack-plugin@^0.4.2":
@@ -10486,7 +10470,7 @@ dotenv@^6.2.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
   integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
 
-downshift@^6.0.6:
+downshift@^6.0.6, downshift@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/downshift/-/downshift-6.1.0.tgz#f008063d9b63935910d9db12ead07979ab51ce66"
   integrity sha512-MnEJERij+1pTVAsOPsH3q9MJGNIZuu2sT90uxOCEOZYH6sEzkVGtUcTBVDRQkE8y96zpB7uEbRn24aE9VpHnZg==
@@ -15946,7 +15930,7 @@ jake@^10.6.1:
     filelist "^1.0.1"
     minimatch "^3.0.4"
 
-jest-axe@^4.0.0:
+jest-axe@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/jest-axe/-/jest-axe-4.1.0.tgz#5e73069c6517ffa106f31bb6a589a09250e4a04c"
   integrity sha512-TPWRbwQYwdt1jtvM0DRi//0e51omWirMkyf99paeY7kYS5XsUZ9IcyP4omrqPKJ46xHDxs1AYqIwVz/minBoFw==

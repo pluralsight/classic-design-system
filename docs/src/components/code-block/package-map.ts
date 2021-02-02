@@ -23,6 +23,7 @@ import ErrorPage, * as ErrorPages from '@pluralsight/ps-design-system-errors'
 import FeatureFlags, {
   useFeatureFlags
 } from '@pluralsight/ps-design-system-featureflags'
+import Field from '@pluralsight/ps-design-system-field'
 import Form from '@pluralsight/ps-design-system-form'
 import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout'
@@ -59,6 +60,7 @@ import * as util from '@pluralsight/ps-design-system-util'
 import { useDayzed } from 'dayzed'
 import { format } from 'date-fns'
 
+import * as downshift from 'downshift'
 import * as glamor from 'glamor'
 import React from 'react'
 import * as reactBeautifulDnd from 'react-beautiful-dnd'
@@ -105,6 +107,7 @@ export const PACKAGE_MAP: PackageMap = {
     FeatureFlags,
     useFeatureFlags
   },
+  '@pluralsight/ps-design-system-field': { Field },
   '@pluralsight/ps-design-system-form': { Form },
   '@pluralsight/ps-design-system-icon': { Icon, ...omit(Icons, ['default']) },
   '@pluralsight/ps-design-system-layout': { ...omit(Layout, ['default']) },
@@ -140,6 +143,7 @@ export const PACKAGE_MAP: PackageMap = {
   dayzed: { useDayzed },
   'date-fns': { format },
 
+  downshift: { ...omit(downshift, ['default']) },
   glamor: { ...glamor },
   react: { React, ...React },
   'react-beautiful-dnd': { ...reactBeautifulDnd },

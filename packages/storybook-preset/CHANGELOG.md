@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.2.25...@pluralsight/ps-design-system-storybook-preset@0.3.0) (2021-02-01)
+
+
+### Features
+
+* **storybook-preset:** add a11y addon ([4aef176](https://github.com/pluralsight/design-system/commit/4aef176253d299162b2b7ec6471819d6f092d8b2))
+
+
+
+
+
 ## [0.2.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.2.24...@pluralsight/ps-design-system-storybook-preset@0.2.25) (2021-01-25)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-preset
