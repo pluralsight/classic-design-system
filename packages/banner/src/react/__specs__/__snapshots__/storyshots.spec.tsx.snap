@@ -2,15 +2,15 @@
 
 exports[`Storyshots Button blue 1`] = `
 <div
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
 >
   <div
     data-css-ctomgo=""
   >
     this is the text with a 
     <button
+      data-css-1etths7=""
       data-css-1irnvz6=""
-      data-css-1kmqdxd=""
       disabled={false}
       style={Object {}}
     >
@@ -26,15 +26,15 @@ exports[`Storyshots Button blue 1`] = `
 
 exports[`Storyshots Button green 1`] = `
 <div
-  data-css-8fmfv5=""
+  data-css-q43imj=""
 >
   <div
     data-css-ctomgo=""
   >
     this is the text with a 
     <button
+      data-css-1etths7=""
       data-css-1irnvz6=""
-      data-css-1kmqdxd=""
       disabled={false}
       style={Object {}}
     >
@@ -50,15 +50,15 @@ exports[`Storyshots Button green 1`] = `
 
 exports[`Storyshots Button red 1`] = `
 <div
-  data-css-1lyt22f=""
+  data-css-1bpd8ni=""
 >
   <div
     data-css-ctomgo=""
   >
     this is the text with a 
     <button
+      data-css-1etths7=""
       data-css-1irnvz6=""
-      data-css-1kmqdxd=""
       disabled={false}
       style={Object {}}
     >
@@ -81,7 +81,7 @@ exports[`Storyshots Button yellow 1`] = `
   >
     this is the text with a 
     <button
-      data-css-1kmqdxd=""
+      data-css-1etths7=""
       data-css-be14da=""
       disabled={false}
       style={Object {}}
@@ -98,7 +98,7 @@ exports[`Storyshots Button yellow 1`] = `
 
 exports[`Storyshots color blue 1`] = `
 <div
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
 >
   <div
     data-css-ctomgo=""
@@ -110,7 +110,7 @@ exports[`Storyshots color blue 1`] = `
 
 exports[`Storyshots color green 1`] = `
 <div
-  data-css-8fmfv5=""
+  data-css-q43imj=""
 >
   <div
     data-css-ctomgo=""
@@ -122,7 +122,7 @@ exports[`Storyshots color green 1`] = `
 
 exports[`Storyshots color red 1`] = `
 <div
-  data-css-1lyt22f=""
+  data-css-1bpd8ni=""
 >
   <div
     data-css-ctomgo=""
@@ -146,7 +146,7 @@ exports[`Storyshots color yellow 1`] = `
 
 exports[`Storyshots onClick displays X 1`] = `
 <div
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
 >
   <div
     data-css-ctomgo=""
@@ -177,7 +177,7 @@ exports[`Storyshots onClick displays X 1`] = `
 exports[`Storyshots onClick side by side 1`] = `
 <div>
   <div
-    data-css-1mbfmmn=""
+    data-css-ue58aw=""
   >
     <div
       data-css-ctomgo=""
@@ -204,7 +204,7 @@ exports[`Storyshots onClick side by side 1`] = `
     </button>
   </div>
   <div
-    data-css-8fmfv5=""
+    data-css-q43imj=""
   >
     <div
       data-css-ctomgo=""
@@ -258,7 +258,7 @@ exports[`Storyshots onClick side by side 1`] = `
     </button>
   </div>
   <div
-    data-css-1lyt22f=""
+    data-css-1bpd8ni=""
   >
     <div
       data-css-ctomgo=""
@@ -289,7 +289,7 @@ exports[`Storyshots onClick side by side 1`] = `
 
 exports[`Storyshots onClick w/ long text 1`] = `
 <div
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
 >
   <div
     data-css-ctomgo=""
@@ -320,7 +320,7 @@ exports[`Storyshots onClick w/ long text 1`] = `
 
 exports[`Storyshots styling child Link component auto-styled 1`] = `
 <div
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
 >
   <div
     data-css-ctomgo=""
@@ -328,7 +328,7 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
     this is the text with an
      
     <a
-      data-css-1ud2sxh=""
+      data-css-1o01808=""
       href="https://duckduckgo.com"
     >
       Link component
@@ -340,7 +340,7 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
 
 exports[`Storyshots styling child anchor tag auto-styled 1`] = `
 <div
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
 >
   <div
     data-css-ctomgo=""
@@ -377,7 +377,7 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
 exports[`Storyshots styling className prop 1`] = `
 <div
   className="someClass"
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
 >
   <div
     data-css-ctomgo=""
@@ -407,7 +407,7 @@ exports[`Storyshots styling className prop 1`] = `
 
 exports[`Storyshots styling style prop 1`] = `
 <div
-  data-css-1mbfmmn=""
+  data-css-ue58aw=""
   style={
     Object {
       "outline": "3px solid red",

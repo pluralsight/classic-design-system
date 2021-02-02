@@ -11,11 +11,11 @@ exports[`Storyshots SearchInput default 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-pbmn8a=""
+        data-css-1c5qy71=""
       >
         <input
+          data-css-7mw7i0=""
           data-css-r2g0l1=""
-          data-css-r9d4vy=""
           disabled={false}
           onChange={[Function]}
           placeholder="Search"
@@ -24,7 +24,7 @@ exports[`Storyshots SearchInput default 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1kca8ps=""
     >
       <div
         data-css-7dab2f=""
@@ -57,11 +57,11 @@ exports[`Storyshots SearchInput when loading 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-pbmn8a=""
+        data-css-1c5qy71=""
       >
         <input
+          data-css-7mw7i0=""
           data-css-r2g0l1=""
-          data-css-r9d4vy=""
           disabled={false}
           onChange={[Function]}
           placeholder="Search"
@@ -70,7 +70,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1kca8ps=""
     >
       <div
         data-css-1abx40i=""
@@ -97,7 +97,7 @@ exports[`Storyshots SearchInput when loading 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-vyp88e=""
+            data-css-17x5ehd=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={103.67255756846316}
@@ -114,7 +114,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
   data-css-w0yocm=""
 >
   <div
-    data-css-1jmxzqo=""
+    data-css-dysqqm=""
   >
     Label
   </div>
@@ -122,21 +122,21 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
     data-css-1r967oi=""
   >
     <div
-      data-css-in6gqi=""
+      data-css-1epd8xq=""
     >
       <div
-        data-css-1p8usza=""
+        data-css-1kh5e1a=""
       >
         <input
+          data-css-7mw7i0=""
           data-css-r2g0l1=""
-          data-css-r9d4vy=""
           disabled={false}
           onChange={[Function]}
           placeholder="Le placeholder"
           type="search"
         />
         <button
-          data-css-dvk6df=""
+          data-css-rtltbq=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
@@ -166,7 +166,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1kca8ps=""
     >
       <div
         data-css-7dab2f=""
@@ -185,7 +185,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
       </div>
     </div>
     <div
-      data-css-1ha66tv=""
+      data-css-j3f9he=""
     >
       <div
         data-css-7dab2f=""
@@ -205,7 +205,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
     </div>
   </div>
   <div
-    data-css-6ga4kh=""
+    data-css-o89kbw=""
   >
     Sub label
   </div>
@@ -223,18 +223,18 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1p8usza=""
+        data-css-1kh5e1a=""
       >
         <input
+          data-css-7mw7i0=""
           data-css-r2g0l1=""
-          data-css-r9d4vy=""
           disabled={false}
           onChange={[Function]}
           placeholder="Search"
           type="search"
         />
         <button
-          data-css-dvk6df=""
+          data-css-rtltbq=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
@@ -264,7 +264,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
       </div>
     </div>
     <div
-      data-css-1os68q9=""
+      data-css-1kca8ps=""
     >
       <div
         data-css-7dab2f=""

@@ -30,8 +30,8 @@ exports[`Storyshots appearance default w/ error 1`] = `
     data-css-8befsb=""
   >
     <div
+      data-css-1epd8xq=""
       data-css-3ah8pf=""
-      data-css-in6gqi=""
     >
       <div
         data-css-ne3jjf=""
@@ -75,7 +75,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
       </div>
     </div>
     <div
-      data-css-vaotfo=""
+      data-css-t21wsg=""
     >
       <div
         data-css-7dab2f=""
@@ -206,8 +206,8 @@ exports[`Storyshots appearance gaps 1`] = `
         data-css-8befsb=""
       >
         <div
+          data-css-1epd8xq=""
           data-css-3ah8pf=""
-          data-css-in6gqi=""
         >
           <div
             data-css-ne3jjf=""
@@ -251,7 +251,7 @@ exports[`Storyshots appearance gaps 1`] = `
           </div>
         </div>
         <div
-          data-css-vaotfo=""
+          data-css-t21wsg=""
         >
           <div
             data-css-7dab2f=""
@@ -309,7 +309,7 @@ exports[`Storyshots appearance gaps 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-14wjo7a=""
+              data-css-1c2g7cd=""
               disabled={false}
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -322,11 +322,11 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-mlkf0z=""
                 />
                 <span
-                  data-css-dafmp1=""
+                  data-css-12qzma8=""
                 />
               </span>
               <div
-                data-css-eycxdp=""
+                data-css-cfp7r0=""
               >
                 <div
                   data-css-7dab2f=""
@@ -379,14 +379,14 @@ exports[`Storyshots appearance gaps 1`] = `
         data-css-8befsb=""
       >
         <div
+          data-css-1epd8xq=""
           data-css-3ah8pf=""
-          data-css-in6gqi=""
         >
           <div
             data-css-ne3jjf=""
           >
             <button
-              data-css-14wjo7a=""
+              data-css-1c2g7cd=""
               disabled={false}
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -399,11 +399,11 @@ exports[`Storyshots appearance gaps 1`] = `
                   data-css-mlkf0z=""
                 />
                 <span
-                  data-css-dafmp1=""
+                  data-css-12qzma8=""
                 />
               </span>
               <div
-                data-css-eycxdp=""
+                data-css-cfp7r0=""
               >
                 <div
                   data-css-7dab2f=""
@@ -424,7 +424,7 @@ exports[`Storyshots appearance gaps 1`] = `
           </div>
         </div>
         <div
-          data-css-vaotfo=""
+          data-css-t21wsg=""
         >
           <div
             data-css-7dab2f=""
@@ -571,7 +571,7 @@ exports[`Storyshots appearance medium subtle 1`] = `
         data-css-ne3jjf=""
       >
         <button
-          data-css-14wjo7a=""
+          data-css-1c2g7cd=""
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -586,13 +586,13 @@ exports[`Storyshots appearance medium subtle 1`] = `
               The placeholder 
             </span>
             <span
-              data-css-dafmp1=""
+              data-css-12qzma8=""
             >
               The placeholder 
             </span>
           </span>
           <div
-            data-css-eycxdp=""
+            data-css-cfp7r0=""
           >
             <div
               data-css-7dab2f=""
@@ -739,7 +739,7 @@ exports[`Storyshots appearance small subtle 1`] = `
         data-css-ne3jjf=""
       >
         <button
-          data-css-1hecju2=""
+          data-css-cdtd9o=""
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -754,13 +754,13 @@ exports[`Storyshots appearance small subtle 1`] = `
               The placeholder 
             </span>
             <span
-              data-css-10w7h1z=""
+              data-css-1wx2y9r=""
             >
               The placeholder 
             </span>
           </span>
           <div
-            data-css-eycxdp=""
+            data-css-cfp7r0=""
           >
             <div
               data-css-7dab2f=""
@@ -814,14 +814,14 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
     data-css-8befsb=""
   >
     <div
+      data-css-1epd8xq=""
       data-css-3ah8pf=""
-      data-css-in6gqi=""
     >
       <div
         data-css-ne3jjf=""
       >
         <button
-          data-css-14wjo7a=""
+          data-css-1c2g7cd=""
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -834,11 +834,11 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
               data-css-mlkf0z=""
             />
             <span
-              data-css-dafmp1=""
+              data-css-12qzma8=""
             />
           </span>
           <div
-            data-css-eycxdp=""
+            data-css-cfp7r0=""
           >
             <div
               data-css-7dab2f=""
@@ -859,7 +859,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       </div>
     </div>
     <div
-      data-css-vaotfo=""
+      data-css-t21wsg=""
     >
       <div
         data-css-7dab2f=""
@@ -1141,7 +1141,7 @@ exports[`Storyshots disabled compare dropdown 1`] = `
       </div>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       Still normal
     </div>
@@ -1224,7 +1224,7 @@ exports[`Storyshots disabled compare dropdown 1`] = `
       </div>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       Neither am I
     </div>
@@ -1720,7 +1720,7 @@ exports[`Storyshots labels all 1`] = `
     </div>
   </div>
   <div
-    data-css-6ga4kh=""
+    data-css-o89kbw=""
   >
     Some sublabel
   </div>
@@ -1881,7 +1881,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
     </div>
   </div>
   <div
-    data-css-6ga4kh=""
+    data-css-o89kbw=""
   >
     Some sublabel
   </div>
@@ -2130,7 +2130,7 @@ exports[`Storyshots labels subLabel 1`] = `
     </div>
   </div>
   <div
-    data-css-6ga4kh=""
+    data-css-o89kbw=""
   >
     Some sublabel
   </div>
@@ -2442,8 +2442,8 @@ exports[`Storyshots layouts full width 1`] = `
       data-css-8befsb=""
     >
       <div
+        data-css-1epd8xq=""
         data-css-3ah8pf=""
-        data-css-in6gqi=""
       >
         <div
           data-css-ne3jjf=""
@@ -2487,7 +2487,7 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </div>
       <div
-        data-css-vaotfo=""
+        data-css-t21wsg=""
       >
         <div
           data-css-7dab2f=""
@@ -2549,7 +2549,7 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-ne3jjf=""
         >
           <button
-            data-css-14wjo7a=""
+            data-css-1c2g7cd=""
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2562,11 +2562,11 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-mlkf0z=""
               />
               <span
-                data-css-dafmp1=""
+                data-css-12qzma8=""
               />
             </span>
             <div
-              data-css-eycxdp=""
+              data-css-cfp7r0=""
             >
               <div
                 data-css-7dab2f=""
@@ -2623,14 +2623,14 @@ exports[`Storyshots layouts full width 1`] = `
       data-css-8befsb=""
     >
       <div
+        data-css-1epd8xq=""
         data-css-3ah8pf=""
-        data-css-in6gqi=""
       >
         <div
           data-css-ne3jjf=""
         >
           <button
-            data-css-14wjo7a=""
+            data-css-1c2g7cd=""
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2643,11 +2643,11 @@ exports[`Storyshots layouts full width 1`] = `
                 data-css-mlkf0z=""
               />
               <span
-                data-css-dafmp1=""
+                data-css-12qzma8=""
               />
             </span>
             <div
-              data-css-eycxdp=""
+              data-css-cfp7r0=""
             >
               <div
                 data-css-7dab2f=""
@@ -2668,7 +2668,7 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </div>
       <div
-        data-css-vaotfo=""
+        data-css-t21wsg=""
       >
         <div
           data-css-7dab2f=""
@@ -2745,7 +2745,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-ne3jjf=""
           >
             <button
-              data-css-14wjo7a=""
+              data-css-1c2g7cd=""
               disabled={false}
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -2760,13 +2760,13 @@ exports[`Storyshots layouts right-aligned 1`] = `
                   Filter
                 </span>
                 <span
-                  data-css-dafmp1=""
+                  data-css-12qzma8=""
                 >
                   Filter
                 </span>
               </span>
               <div
-                data-css-eycxdp=""
+                data-css-cfp7r0=""
               >
                 <div
                   data-css-7dab2f=""
@@ -3162,14 +3162,14 @@ exports[`Storyshots menu onClicks 1`] = `
     data-css-8befsb=""
   >
     <div
+      data-css-1epd8xq=""
       data-css-3ah8pf=""
-      data-css-in6gqi=""
     >
       <div
         data-css-ne3jjf=""
       >
         <button
-          data-css-14wjo7a=""
+          data-css-1c2g7cd=""
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -3184,13 +3184,13 @@ exports[`Storyshots menu onClicks 1`] = `
               Select another one
             </span>
             <span
-              data-css-dafmp1=""
+              data-css-12qzma8=""
             >
               Select another one
             </span>
           </span>
           <div
-            data-css-eycxdp=""
+            data-css-cfp7r0=""
           >
             <div
               data-css-7dab2f=""
@@ -3211,7 +3211,7 @@ exports[`Storyshots menu onClicks 1`] = `
       </div>
     </div>
     <div
-      data-css-vaotfo=""
+      data-css-t21wsg=""
     >
       <div
         data-css-7dab2f=""
@@ -3640,7 +3640,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
     </div>
   </div>
   <div
-    data-css-6ga4kh=""
+    data-css-o89kbw=""
   >
     The course level
   </div>

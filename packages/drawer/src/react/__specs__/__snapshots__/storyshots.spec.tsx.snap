@@ -20,12 +20,12 @@ exports[`Storyshots drawer controlled: external state 1`] = `
   </button>
   <div
     aria-expanded={false}
-    data-css-1jlt4vf=""
+    data-css-1suuvy1=""
     onClick={[Function]}
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -64,7 +64,7 @@ exports[`Storyshots drawer controlled: external state 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -93,12 +93,12 @@ exports[`Storyshots drawer controlled: open with button only 1`] = `
   </button>
   <div
     aria-expanded={false}
-    data-css-1jlt4vf=""
+    data-css-1suuvy1=""
     onClick={[Function]}
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -137,7 +137,7 @@ exports[`Storyshots drawer controlled: open with button only 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -161,12 +161,12 @@ exports[`Storyshots drawer controlled: start open 1`] = `
 >
   <div
     aria-expanded={true}
-    data-css-sp3b3x=""
+    data-css-1u3wau6=""
     onClick={[Function]}
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -205,7 +205,7 @@ exports[`Storyshots drawer controlled: start open 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -229,12 +229,12 @@ exports[`Storyshots drawer default 1`] = `
 >
   <div
     aria-expanded={false}
-    data-css-1jlt4vf=""
+    data-css-1suuvy1=""
     onClick={[Function]}
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -273,7 +273,7 @@ exports[`Storyshots drawer default 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -297,7 +297,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
 >
   <div
     aria-expanded={false}
-    data-css-1jlt4vf=""
+    data-css-1suuvy1=""
     onClick={[Function]}
     role="button"
   >
@@ -338,10 +338,10 @@ exports[`Storyshots drawer row component with actions 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1uo9356=""
+          data-css-2pesz8=""
         >
           <span
-            data-css-rlw4ch=""
+            data-css-1bnk4mn=""
           >
             <a
               href="https://duckduckgo.com?q=title"
@@ -351,13 +351,13 @@ exports[`Storyshots drawer row component with actions 1`] = `
           </span>
         </div>
         <div
-          data-css-145nbth=""
+          data-css-1f22p8h=""
         >
           <span
             data-css-1kcrbi9=""
           >
             <span
-              data-css-rlw4ch=""
+              data-css-1bnk4mn=""
             >
               <a
                 href="https://duckduckgo.com?q=cats"
@@ -383,7 +383,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
         data-css-7b22zo=""
       >
         <button
-          data-css-dvk6df=""
+          data-css-rtltbq=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -440,7 +440,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -465,12 +465,12 @@ exports[`Storyshots drawer stack of drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1jlt4vf=""
+      data-css-1suuvy1=""
       onClick={[Function]}
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -509,7 +509,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -522,12 +522,12 @@ exports[`Storyshots drawer stack of drawers 1`] = `
     </div>
     <div
       aria-expanded={false}
-      data-css-1jlt4vf=""
+      data-css-1suuvy1=""
       onClick={[Function]}
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -566,7 +566,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -579,12 +579,12 @@ exports[`Storyshots drawer stack of drawers 1`] = `
     </div>
     <div
       aria-expanded={false}
-      data-css-1jlt4vf=""
+      data-css-1suuvy1=""
       onClick={[Function]}
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -623,7 +623,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -649,12 +649,12 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1jlt4vf=""
+      data-css-1suuvy1=""
       onClick={[Function]}
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -693,7 +693,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -708,12 +708,12 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1jlt4vf=""
+      data-css-1suuvy1=""
       onClick={[Function]}
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -752,7 +752,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -767,12 +767,12 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1jlt4vf=""
+      data-css-1suuvy1=""
       onClick={[Function]}
       role="button"
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -811,7 +811,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
       data-css-1s813js=""
     >
       <p
-        data-css-xtc4oe=""
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -837,12 +837,12 @@ exports[`Storyshots drawer using custom aria label 1`] = `
   <div
     aria-expanded={false}
     aria-label="custom drawer header"
-    data-css-1jlt4vf=""
+    data-css-1suuvy1=""
     onClick={[Function]}
     role="button"
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -882,7 +882,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -906,7 +906,7 @@ exports[`Storyshots drawer with row component 1`] = `
 >
   <div
     aria-expanded={false}
-    data-css-1jlt4vf=""
+    data-css-1suuvy1=""
     onClick={[Function]}
     role="button"
   >
@@ -924,12 +924,12 @@ exports[`Storyshots drawer with row component 1`] = `
         data-css-kxulf3=""
       >
         <div
-          data-css-1uo9356=""
+          data-css-2pesz8=""
         >
           Look at me! I'm a &lt;Row /&gt;!
         </div>
         <div
-          data-css-145nbth=""
+          data-css-1f22p8h=""
         >
           <span
             data-css-1kcrbi9=""
@@ -953,7 +953,7 @@ exports[`Storyshots drawer with row component 1`] = `
         data-css-7zyoug=""
       >
         <button
-          data-css-dvk6df=""
+          data-css-rtltbq=""
           disabled={false}
           style={Object {}}
         >
@@ -1009,7 +1009,7 @@ exports[`Storyshots drawer with row component 1`] = `
     data-css-1s813js=""
   >
     <p
-      data-css-xtc4oe=""
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,

@@ -5,11 +5,11 @@ exports[`Storyshots Components/Table Alignment 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-w7hohw=""
+    data-css-1sa3un9=""
     role="grid"
   >
     <thead
-      data-css-131nlok=""
+      data-css-1decmr1=""
     >
       <tr
         data-css-nr5oo2=""
@@ -185,11 +185,11 @@ exports[`Storyshots Components/Table Basic 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-w7hohw=""
+    data-css-1sa3un9=""
     role="grid"
   >
     <thead
-      data-css-131nlok=""
+      data-css-1decmr1=""
     >
       <tr
         data-css-nr5oo2=""
@@ -365,11 +365,11 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-w7hohw=""
+    data-css-1sa3un9=""
     role="grid"
   >
     <thead
-      data-css-131nlok=""
+      data-css-1decmr1=""
     >
       <tr
         data-css-nr5oo2=""
@@ -428,7 +428,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               >
                 <div
                   aria-label="Baron"
-                  data-css-1osvuqz=""
+                  data-css-1h1qs66=""
                   style={
                     Object {
                       "backgroundColor": "#7048C6",
@@ -488,7 +488,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               >
                 <div
                   aria-label="Ignacio"
-                  data-css-1osvuqz=""
+                  data-css-1h1qs66=""
                   style={
                     Object {
                       "backgroundColor": "#D1487B",
@@ -548,7 +548,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               >
                 <div
                   aria-label="Edwina"
-                  data-css-1osvuqz=""
+                  data-css-1h1qs66=""
                   style={
                     Object {
                       "backgroundColor": "#009380",
@@ -608,7 +608,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               >
                 <div
                   aria-label="Devante"
-                  data-css-1osvuqz=""
+                  data-css-1h1qs66=""
                   style={
                     Object {
                       "backgroundColor": "#CB670B",
@@ -668,7 +668,7 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               >
                 <div
                   aria-label="Skylar"
-                  data-css-1osvuqz=""
+                  data-css-1h1qs66=""
                   style={
                     Object {
                       "backgroundColor": "#CB670B",
@@ -715,11 +715,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-w7hohw=""
+    data-css-1sa3un9=""
     role="grid"
   >
     <thead
-      data-css-131nlok=""
+      data-css-1decmr1=""
     >
       <tr
         data-css-nr5oo2=""
@@ -749,7 +749,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 >
                   <svg
                     aria-label="Indeterminate Mark"
-                    data-css-1m8h1an=""
+                    data-css-ey6g07=""
                     role="img"
                     version="1.1"
                     viewBox="0 0 16 16"
@@ -765,7 +765,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 </div>
               </div>
               <div
-                data-css-55isdw=""
+                data-css-ybwuvp=""
               />
             </label>
           </div>
@@ -823,11 +823,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                data-css-1lxtjk6=""
+                data-css-gx66zw=""
               />
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -877,7 +877,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-1m8h1an=""
+                  data-css-ey6g07=""
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -890,7 +890,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               </div>
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -936,11 +936,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                data-css-1lxtjk6=""
+                data-css-gx66zw=""
               />
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -986,11 +986,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                data-css-1lxtjk6=""
+                data-css-gx66zw=""
               />
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -1040,7 +1040,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-1m8h1an=""
+                  data-css-ey6g07=""
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -1053,7 +1053,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               </div>
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -1099,11 +1099,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                data-css-1lxtjk6=""
+                data-css-gx66zw=""
               />
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -1149,11 +1149,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                data-css-1lxtjk6=""
+                data-css-gx66zw=""
               />
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -1203,7 +1203,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-1m8h1an=""
+                  data-css-ey6g07=""
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -1216,7 +1216,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               </div>
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -1262,11 +1262,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                data-css-1lxtjk6=""
+                data-css-gx66zw=""
               />
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -1312,11 +1312,11 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                data-css-1lxtjk6=""
+                data-css-gx66zw=""
               />
             </div>
             <div
-              data-css-55isdw=""
+              data-css-ybwuvp=""
             />
           </label>
         </td>
@@ -1350,7 +1350,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
 >
   <table
     aria-labelledby="test-caption-id"
-    data-css-w7hohw=""
+    data-css-1sa3un9=""
     role="grid"
   >
     <caption
@@ -1364,7 +1364,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
       </div>
     </caption>
     <thead
-      data-css-131nlok=""
+      data-css-1decmr1=""
     >
       <tr
         data-css-nr5oo2=""
@@ -1503,11 +1503,11 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-w7hohw=""
+    data-css-1sa3un9=""
     role="grid"
   >
     <thead
-      data-css-131nlok=""
+      data-css-1decmr1=""
     >
       <tr
         data-css-nr5oo2=""
@@ -1556,7 +1556,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1650,7 +1650,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1744,7 +1744,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1838,7 +1838,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1932,7 +1932,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2027,11 +2027,11 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
   data-css-f3t1g9=""
 >
   <table
-    data-css-w7hohw=""
+    data-css-1sa3un9=""
     role="grid"
   >
     <thead
-      data-css-131nlok=""
+      data-css-1decmr1=""
     >
       <tr
         data-css-nr5oo2=""
@@ -2098,7 +2098,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2187,7 +2187,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2276,7 +2276,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2365,7 +2365,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2454,7 +2454,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-ut0avc=""
+            data-css-8deujv=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2540,11 +2540,11 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
     tabIndex={0}
   >
     <table
-      data-css-w7hohw=""
+      data-css-1sa3un9=""
       role="grid"
     >
       <thead
-        data-css-131nlok=""
+        data-css-1decmr1=""
       >
         <tr
           data-css-nr5oo2=""
@@ -2568,11 +2568,11 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                   type="checkbox"
                 />
                 <div
-                  data-css-1lxtjk6=""
+                  data-css-gx66zw=""
                 />
               </div>
               <div
-                data-css-55isdw=""
+                data-css-ybwuvp=""
               />
             </label>
           </td>
@@ -2643,11 +2643,11 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -2707,11 +2707,11 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -2771,11 +2771,11 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -2835,11 +2835,11 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -2899,11 +2899,11 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -2964,11 +2964,11 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
     tabIndex={0}
   >
     <table
-      data-css-w7hohw=""
+      data-css-1sa3un9=""
       role="grid"
     >
       <thead
-        data-css-131nlok=""
+        data-css-1decmr1=""
       >
         <tr
           data-css-nr5oo2=""
@@ -3000,11 +3000,11 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -3072,11 +3072,11 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -3135,11 +3135,11 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -3198,11 +3198,11 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -3261,11 +3261,11 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>
@@ -3324,11 +3324,11 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    data-css-1lxtjk6=""
+                    data-css-gx66zw=""
                   />
                 </div>
                 <div
-                  data-css-55isdw=""
+                  data-css-ybwuvp=""
                 />
               </label>
             </div>

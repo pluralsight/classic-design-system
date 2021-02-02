@@ -28,7 +28,7 @@ exports[`Storyshots NavUser states 1`] = `
           src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
         />
         <div
-          data-css-1osvuqz=""
+          data-css-1h1qs66=""
           style={
             Object {
               "backgroundColor": "#D1487B",
@@ -39,13 +39,13 @@ exports[`Storyshots NavUser states 1`] = `
         </div>
       </div>
       <div
-        data-css-2tkfb5=""
+        data-css-1mmc9g1=""
       >
         <div
           data-css-6flzpu=""
         />
         <div
-          data-css-1085xn4=""
+          data-css-60db85=""
         />
       </div>
     </div>
@@ -68,7 +68,7 @@ exports[`Storyshots NavUser states 1`] = `
         />
         <div
           aria-label="Jake Trent"
-          data-css-1osvuqz=""
+          data-css-1h1qs66=""
           style={
             Object {
               "backgroundColor": "#7048C6",
@@ -79,7 +79,7 @@ exports[`Storyshots NavUser states 1`] = `
         </div>
       </div>
       <div
-        data-css-2tkfb5=""
+        data-css-1mmc9g1=""
       >
         <div
           data-css-6flzpu=""
@@ -87,7 +87,7 @@ exports[`Storyshots NavUser states 1`] = `
           Jake Trent
         </div>
         <div
-          data-css-1085xn4=""
+          data-css-60db85=""
         />
       </div>
     </div>
@@ -110,7 +110,7 @@ exports[`Storyshots NavUser states 1`] = `
         />
         <div
           aria-label="Jake Trent"
-          data-css-1osvuqz=""
+          data-css-1h1qs66=""
           style={
             Object {
               "backgroundColor": "#7048C6",
@@ -121,7 +121,7 @@ exports[`Storyshots NavUser states 1`] = `
         </div>
       </div>
       <div
-        data-css-2tkfb5=""
+        data-css-1mmc9g1=""
       >
         <div
           data-css-6flzpu=""
@@ -129,7 +129,7 @@ exports[`Storyshots NavUser states 1`] = `
           Jake Trent
         </div>
         <div
-          data-css-1085xn4=""
+          data-css-60db85=""
         >
           Accenture
         </div>
@@ -155,7 +155,7 @@ exports[`Storyshots NavUser states 1`] = `
         />
         <div
           aria-label="Jake Trent"
-          data-css-1osvuqz=""
+          data-css-1h1qs66=""
           style={
             Object {
               "backgroundColor": "#7048C6",
@@ -166,7 +166,7 @@ exports[`Storyshots NavUser states 1`] = `
         </div>
       </div>
       <div
-        data-css-2tkfb5=""
+        data-css-1mmc9g1=""
       >
         <div
           data-css-6flzpu=""
@@ -174,7 +174,7 @@ exports[`Storyshots NavUser states 1`] = `
           Jake Trent
         </div>
         <div
-          data-css-1085xn4=""
+          data-css-60db85=""
         >
           Accenture
         </div>
@@ -200,7 +200,7 @@ exports[`Storyshots NavUser states 1`] = `
         />
         <div
           aria-label="Jake Trent Name That is Long"
-          data-css-1osvuqz=""
+          data-css-1h1qs66=""
           style={
             Object {
               "backgroundColor": "#0074AB",
@@ -211,7 +211,7 @@ exports[`Storyshots NavUser states 1`] = `
         </div>
       </div>
       <div
-        data-css-2tkfb5=""
+        data-css-1mmc9g1=""
       >
         <div
           data-css-6flzpu=""
@@ -219,7 +219,7 @@ exports[`Storyshots NavUser states 1`] = `
           Jake Trent Name That is Long
         </div>
         <div
-          data-css-1085xn4=""
+          data-css-60db85=""
         >
           Accenture Company Name That is Long
         </div>

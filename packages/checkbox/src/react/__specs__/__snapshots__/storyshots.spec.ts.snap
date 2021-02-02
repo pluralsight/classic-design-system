@@ -29,7 +29,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
       >
         <svg
           aria-label="Indeterminate Mark"
-          data-css-1m8h1an=""
+          data-css-ey6g07=""
           role="img"
           version="1.1"
           viewBox="0 0 16 16"
@@ -45,7 +45,7 @@ exports[`Storyshots Checkbox checked & indeterminate 1`] = `
       </div>
     </div>
     <div
-      data-css-55isdw=""
+      data-css-ybwuvp=""
     >
       Red
     </div>
@@ -82,7 +82,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       >
         <svg
           aria-label="Checkmark"
-          data-css-1m8h1an=""
+          data-css-ey6g07=""
           role="img"
           version="1.1"
           viewBox="0 0 16 16"
@@ -95,7 +95,7 @@ exports[`Storyshots Checkbox checked 1`] = `
       </div>
     </div>
     <div
-      data-css-55isdw=""
+      data-css-ybwuvp=""
     >
       Red
     </div>
@@ -127,11 +127,11 @@ exports[`Storyshots Checkbox default 1`] = `
         value="red"
       />
       <div
-        data-css-1lxtjk6=""
+        data-css-gx66zw=""
       />
     </div>
     <div
-      data-css-55isdw=""
+      data-css-ybwuvp=""
     >
       Red
     </div>
@@ -153,7 +153,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1xpuf1q=""
+      data-css-c6wckm=""
     >
       <input
         data-css-6wu9td=""
@@ -164,11 +164,11 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
         value="red"
       />
       <div
-        data-css-1lxtjk6=""
+        data-css-gx66zw=""
       />
     </div>
     <div
-      data-css-55isdw=""
+      data-css-ybwuvp=""
     >
       Red
     </div>
@@ -201,11 +201,11 @@ exports[`Storyshots Checkbox disabled 1`] = `
         value="red"
       />
       <div
-        data-css-1lxtjk6=""
+        data-css-gx66zw=""
       />
     </div>
     <div
-      data-css-55isdw=""
+      data-css-ybwuvp=""
     >
       Red
     </div>
@@ -228,7 +228,7 @@ exports[`Storyshots Checkbox error 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-f76l29=""
+        data-css-1oy6az8=""
       >
         <input
           checked={true}
@@ -243,7 +243,7 @@ exports[`Storyshots Checkbox error 1`] = `
         >
           <svg
             aria-label="Checkmark"
-            data-css-1m8h1an=""
+            data-css-ey6g07=""
             role="img"
             version="1.1"
             viewBox="0 0 16 16"
@@ -256,7 +256,7 @@ exports[`Storyshots Checkbox error 1`] = `
         </div>
       </div>
       <div
-        data-css-55isdw=""
+        data-css-ybwuvp=""
       >
         Red
       </div>
@@ -267,7 +267,7 @@ exports[`Storyshots Checkbox error 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-f76l29=""
+        data-css-1oy6az8=""
       >
         <input
           data-css-6wu9td=""
@@ -277,11 +277,11 @@ exports[`Storyshots Checkbox error 1`] = `
           value="red"
         />
         <div
-          data-css-1lxtjk6=""
+          data-css-gx66zw=""
         />
       </div>
       <div
-        data-css-55isdw=""
+        data-css-ybwuvp=""
       >
         Red
       </div>
@@ -318,7 +318,7 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       >
         <svg
           aria-label="Indeterminate Mark"
-          data-css-1m8h1an=""
+          data-css-ey6g07=""
           role="img"
           version="1.1"
           viewBox="0 0 16 16"
@@ -334,7 +334,7 @@ exports[`Storyshots Checkbox indeterminate 1`] = `
       </div>
     </div>
     <div
-      data-css-55isdw=""
+      data-css-ybwuvp=""
     >
       Red
     </div>
@@ -354,7 +354,7 @@ exports[`Storyshots Checkbox state demo 1`] = `
     <div
       style={
         Object {
-          "color": "rgba(255, 255, 255, 0.90)",
+          "color": "rgba(255, 255, 255, 0.95)",
         }
       }
     >
@@ -379,11 +379,11 @@ exports[`Storyshots Checkbox state demo 1`] = `
           value="red"
         />
         <div
-          data-css-1lxtjk6=""
+          data-css-gx66zw=""
         />
       </div>
       <div
-        data-css-55isdw=""
+        data-css-ybwuvp=""
       >
         Red
       </div>
@@ -405,11 +405,11 @@ exports[`Storyshots Checkbox state demo 1`] = `
           value="green"
         />
         <div
-          data-css-1lxtjk6=""
+          data-css-gx66zw=""
         />
       </div>
       <div
-        data-css-55isdw=""
+        data-css-ybwuvp=""
       >
         Green
       </div>
@@ -431,11 +431,11 @@ exports[`Storyshots Checkbox state demo 1`] = `
           value="blue"
         />
         <div
-          data-css-1lxtjk6=""
+          data-css-gx66zw=""
         />
       </div>
       <div
-        data-css-55isdw=""
+        data-css-ybwuvp=""
       >
         Blue
       </div>

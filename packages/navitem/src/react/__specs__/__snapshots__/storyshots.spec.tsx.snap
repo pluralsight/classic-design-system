@@ -18,7 +18,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-50rv4t=""
@@ -61,7 +61,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <a
-        data-css-zyosl8=""
+        data-css-167upi1=""
         href="https://jaketrent.com"
       >
         <span
@@ -105,7 +105,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-5vea0s=""
@@ -165,7 +165,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
       >
         <span
           data-css-50rv4t=""
@@ -208,7 +208,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
       >
         <span
           data-css-50rv4t=""
@@ -251,7 +251,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
       >
         <span
           data-css-50rv4t=""
@@ -294,7 +294,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-50rv4t=""
@@ -336,7 +336,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
 exports[`Storyshots NavItem position 1`] = `
 <div>
   <button
-    data-css-15ils3b=""
+    data-css-14n5c32=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -381,7 +381,7 @@ exports[`Storyshots NavItem position 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
         onClick={[Function]}
       >
         <span
@@ -455,7 +455,7 @@ Array [
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
         href="https://jaketrent.com"
       >
         <span
@@ -480,7 +480,7 @@ Array [
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
         onClick={[Function]}
       >
         <span
@@ -510,7 +510,7 @@ Array [
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-50rv4t=""
@@ -534,7 +534,7 @@ Array [
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
       >
         <span
           data-css-50rv4t=""
@@ -572,7 +572,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-ie8n0y=""
@@ -596,7 +596,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-ie8n0y=""
@@ -639,7 +639,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-ie8n0y=""
@@ -677,7 +677,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <a
-        data-css-zyosl8=""
+        data-css-167upi1=""
         href="https://jaketrent.com"
       >
         <span
@@ -721,7 +721,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-ie8n0y=""
@@ -781,7 +781,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
       >
         <span
           data-css-ie8n0y=""
@@ -824,7 +824,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
       >
         <span
           data-css-ie8n0y=""
@@ -867,7 +867,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-1jfp54v=""
+        data-css-8y1zv3=""
       >
         <span
           data-css-ie8n0y=""
@@ -910,7 +910,7 @@ exports[`Storyshots NavItem vertical 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-zyosl8=""
+        data-css-167upi1=""
       >
         <span
           data-css-ie8n0y=""

@@ -101,12 +101,12 @@ exports[`Storyshots appearance default w/ error 1`] = `
   onKeyDown={[Function]}
 >
   <div
-    data-css-1jmxzqo=""
+    data-css-dysqqm=""
   >
     Problem field
   </div>
   <div
-    data-css-in6gqi=""
+    data-css-1epd8xq=""
   >
     <div
       data-css-1gfowhv=""
@@ -191,7 +191,7 @@ exports[`Storyshots appearance default w/ error 1`] = `
         </div>
       </button>
       <div
-        data-css-1ha66tv=""
+        data-css-j3f9he=""
       >
         <div
           data-css-7dab2f=""
@@ -223,11 +223,11 @@ exports[`Storyshots appearance subtle 1`] = `
     data-css-ctre2o=""
   >
     <div
-      data-css-1nabeaf=""
+      data-css-1usw9cb=""
     >
       <input
         aria-label="month"
-        data-css-1b47zg9=""
+        data-css-14e4ts3=""
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -241,13 +241,13 @@ exports[`Storyshots appearance subtle 1`] = `
         value=""
       />
       <span
-        data-css-ribk7q=""
+        data-css-2cik8p=""
       >
         /
       </span>
       <input
         aria-label="day"
-        data-css-1b47zg9=""
+        data-css-14e4ts3=""
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -261,13 +261,13 @@ exports[`Storyshots appearance subtle 1`] = `
         value=""
       />
       <span
-        data-css-ribk7q=""
+        data-css-2cik8p=""
       >
         /
       </span>
       <input
         aria-label="year"
-        data-css-1b47zg9=""
+        data-css-14e4ts3=""
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -287,7 +287,7 @@ exports[`Storyshots appearance subtle 1`] = `
         value=""
       />
       <button
-        data-css-1uq4y8i=""
+        data-css-1oi28xc=""
         onClick={[Function]}
       >
         <div
@@ -315,19 +315,19 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
   onKeyDown={[Function]}
 >
   <div
-    data-css-1jmxzqo=""
+    data-css-dysqqm=""
   >
     Problem field
   </div>
   <div
-    data-css-in6gqi=""
+    data-css-1epd8xq=""
   >
     <div
-      data-css-1nabeaf=""
+      data-css-1usw9cb=""
     >
       <input
         aria-label="month"
-        data-css-1b47zg9=""
+        data-css-14e4ts3=""
         name="mm"
         onBlur={[Function]}
         onChange={[Function]}
@@ -341,13 +341,13 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         value=""
       />
       <span
-        data-css-ribk7q=""
+        data-css-2cik8p=""
       >
         /
       </span>
       <input
         aria-label="day"
-        data-css-1b47zg9=""
+        data-css-14e4ts3=""
         name="dd"
         onBlur={[Function]}
         onChange={[Function]}
@@ -361,13 +361,13 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         value=""
       />
       <span
-        data-css-ribk7q=""
+        data-css-2cik8p=""
       >
         /
       </span>
       <input
         aria-label="year"
-        data-css-1b47zg9=""
+        data-css-14e4ts3=""
         name="yyyy"
         onBlur={[Function]}
         onChange={[Function]}
@@ -387,7 +387,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         value=""
       />
       <button
-        data-css-1uq4y8i=""
+        data-css-1oi28xc=""
         onClick={[Function]}
       >
         <div
@@ -405,7 +405,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         </div>
       </button>
       <div
-        data-css-1ha66tv=""
+        data-css-j3f9he=""
       >
         <div
           data-css-7dab2f=""
@@ -435,7 +435,7 @@ exports[`Storyshots disabled compare 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Normal
     </div>
@@ -527,7 +527,7 @@ exports[`Storyshots disabled compare 1`] = `
       </div>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       Still normal
     </div>
@@ -537,7 +537,7 @@ exports[`Storyshots disabled compare 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       I'm not usable
     </div>
@@ -634,7 +634,7 @@ exports[`Storyshots disabled compare 1`] = `
       </div>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       Neither am I
     </div>
@@ -776,7 +776,7 @@ exports[`Storyshots labels label 1`] = `
   onKeyDown={[Function]}
 >
   <div
-    data-css-1jmxzqo=""
+    data-css-dysqqm=""
   >
     Some label
   </div>
@@ -876,7 +876,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
   onKeyDown={[Function]}
 >
   <div
-    data-css-1jmxzqo=""
+    data-css-dysqqm=""
   >
     Some label
   </div>
@@ -968,7 +968,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
     </div>
   </div>
   <div
-    data-css-6ga4kh=""
+    data-css-o89kbw=""
   >
     Some sublabel
   </div>
@@ -1163,7 +1163,7 @@ exports[`Storyshots labels subLabel 1`] = `
     </div>
   </div>
   <div
-    data-css-6ga4kh=""
+    data-css-o89kbw=""
   >
     Some sublabel
   </div>
@@ -1190,7 +1190,7 @@ exports[`Storyshots layouts full width 1`] = `
     }
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       First
     </div>
@@ -1293,12 +1293,12 @@ exports[`Storyshots layouts full width 1`] = `
     }
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Second
     </div>
     <div
-      data-css-in6gqi=""
+      data-css-1epd8xq=""
     >
       <div
         data-css-1gfowhv=""
@@ -1383,7 +1383,7 @@ exports[`Storyshots layouts full width 1`] = `
           </div>
         </button>
         <div
-          data-css-1ha66tv=""
+          data-css-j3f9he=""
         >
           <div
             data-css-7dab2f=""
@@ -1415,7 +1415,7 @@ exports[`Storyshots layouts full width 1`] = `
     }
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Third
     </div>
@@ -1423,11 +1423,11 @@ exports[`Storyshots layouts full width 1`] = `
       data-css-ctre2o=""
     >
       <div
-        data-css-1nabeaf=""
+        data-css-1usw9cb=""
       >
         <input
           aria-label="month"
-          data-css-1b47zg9=""
+          data-css-14e4ts3=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1441,13 +1441,13 @@ exports[`Storyshots layouts full width 1`] = `
           value=""
         />
         <span
-          data-css-ribk7q=""
+          data-css-2cik8p=""
         >
           /
         </span>
         <input
           aria-label="day"
-          data-css-1b47zg9=""
+          data-css-14e4ts3=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1461,13 +1461,13 @@ exports[`Storyshots layouts full width 1`] = `
           value=""
         />
         <span
-          data-css-ribk7q=""
+          data-css-2cik8p=""
         >
           /
         </span>
         <input
           aria-label="year"
-          data-css-1b47zg9=""
+          data-css-14e4ts3=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1487,7 +1487,7 @@ exports[`Storyshots layouts full width 1`] = `
           value=""
         />
         <button
-          data-css-1uq4y8i=""
+          data-css-1oi28xc=""
           onClick={[Function]}
         >
           <div
@@ -1518,19 +1518,19 @@ exports[`Storyshots layouts full width 1`] = `
     }
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Fourth
     </div>
     <div
-      data-css-in6gqi=""
+      data-css-1epd8xq=""
     >
       <div
-        data-css-1nabeaf=""
+        data-css-1usw9cb=""
       >
         <input
           aria-label="month"
-          data-css-1b47zg9=""
+          data-css-14e4ts3=""
           name="mm"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1544,13 +1544,13 @@ exports[`Storyshots layouts full width 1`] = `
           value=""
         />
         <span
-          data-css-ribk7q=""
+          data-css-2cik8p=""
         >
           /
         </span>
         <input
           aria-label="day"
-          data-css-1b47zg9=""
+          data-css-14e4ts3=""
           name="dd"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1564,13 +1564,13 @@ exports[`Storyshots layouts full width 1`] = `
           value=""
         />
         <span
-          data-css-ribk7q=""
+          data-css-2cik8p=""
         >
           /
         </span>
         <input
           aria-label="year"
-          data-css-1b47zg9=""
+          data-css-14e4ts3=""
           name="yyyy"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1590,7 +1590,7 @@ exports[`Storyshots layouts full width 1`] = `
           value=""
         />
         <button
-          data-css-1uq4y8i=""
+          data-css-1oi28xc=""
           onClick={[Function]}
         >
           <div
@@ -1608,7 +1608,7 @@ exports[`Storyshots layouts full width 1`] = `
           </div>
         </button>
         <div
-          data-css-1ha66tv=""
+          data-css-j3f9he=""
         >
           <div
             data-css-7dab2f=""
@@ -1656,11 +1656,11 @@ exports[`Storyshots layouts right-aligned 1`] = `
         data-css-ctre2o=""
       >
         <div
-          data-css-1nabeaf=""
+          data-css-1usw9cb=""
         >
           <input
             aria-label="month"
-            data-css-1b47zg9=""
+            data-css-14e4ts3=""
             name="mm"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1674,13 +1674,13 @@ exports[`Storyshots layouts right-aligned 1`] = `
             value=""
           />
           <span
-            data-css-ribk7q=""
+            data-css-2cik8p=""
           >
             /
           </span>
           <input
             aria-label="day"
-            data-css-1b47zg9=""
+            data-css-14e4ts3=""
             name="dd"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1694,13 +1694,13 @@ exports[`Storyshots layouts right-aligned 1`] = `
             value=""
           />
           <span
-            data-css-ribk7q=""
+            data-css-2cik8p=""
           >
             /
           </span>
           <input
             aria-label="year"
-            data-css-1b47zg9=""
+            data-css-14e4ts3=""
             name="yyyy"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1720,7 +1720,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
             value=""
           />
           <button
-            data-css-1uq4y8i=""
+            data-css-1oi28xc=""
             onClick={[Function]}
           >
             <div
@@ -1757,7 +1757,7 @@ exports[`Storyshots value controlled value changes 1`] = `
   <div
     style={
       Object {
-        "color": "rgba(255, 255, 255, 0.90)",
+        "color": "rgba(255, 255, 255, 0.95)",
       }
     }
   >
@@ -1959,7 +1959,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
   <div
     style={
       Object {
-        "color": "rgba(255, 255, 255, 0.90)",
+        "color": "rgba(255, 255, 255, 0.95)",
       }
     }
   >
@@ -2066,7 +2066,7 @@ exports[`Storyshots value updated value, w/ initial 1`] = `
   <div
     style={
       Object {
-        "color": "rgba(255, 255, 255, 0.90)",
+        "color": "rgba(255, 255, 255, 0.95)",
       }
     }
   >
