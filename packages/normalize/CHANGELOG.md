@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.10...@pluralsight/ps-design-system-normalize@4.2.11) (2021-02-02)
+
+
+### Bug Fixes
+
+* **normalize:** load italic variable font for chrome ([c1648f0](https://github.com/pluralsight/design-system/commit/c1648f00fe7f9f55c4c43d98165d4a9ac1945859)), closes [#1578](https://github.com/pluralsight/design-system/issues/1578)
+
+
+
+
+
 ## [4.2.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.2.9...@pluralsight/ps-design-system-normalize@4.2.10) (2021-01-25)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize
