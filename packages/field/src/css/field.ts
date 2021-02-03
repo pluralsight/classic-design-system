@@ -40,6 +40,8 @@ export default {
     padding: layout.spacingXSmall
   },
 
+  '.psds-field__halo': { width: '100%' },
+
   '.psds-field__prefix': {
     label: 'field__prefix',
 

@@ -1,7 +1,13 @@
 import { LockIcon, PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { useUniqueId } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { ComponentProps } from 'react'
+import React, { ComponentProps, forwardRef } from 'react'
+
+import {
+  ConstrainWidthDecorator,
+  OutlineDecorator,
+  SetWidthDecorator
+} from './shared'
 
 import { sizes } from '../../vars'
 import Field from '..'
@@ -43,7 +49,8 @@ const TextInputField: React.FC<TextInputFieldProps> = props => {
 export default {
   title: 'Components/Field/TextInputField',
   component: TextInputField,
-  args: { size: sizes.medium, type: 'text' }
+  args: { size: sizes.medium, type: 'text' },
+  decorators: [ConstrainWidthDecorator]
 } as Meta
 
 const Template: Story<ComponentProps<typeof TextInputField>> = args => {
@@ -72,3 +79,11 @@ IconSuffix.args = { suffix: <PlaceholderIcon /> }
 
 export const PasswordType = Template.bind({})
 PasswordType.args = { suffix: <LockIcon />, type: 'password' }
+
+export const StyleOverrideDisplayBlock = Template.bind({})
+StyleOverrideDisplayBlock.decorators = [SetWidthDecorator, OutlineDecorator]
+StyleOverrideDisplayBlock.args = {
+  renderContainer: forwardRef((props, ref) => (
+    <div ref={ref} {...props} style={{ display: 'block' }} />
+  ))
+}
