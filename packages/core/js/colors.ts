@@ -173,10 +173,10 @@ export const colorsPrimaryAction = {
 }
 
 export const colorsStatus = {
-  error: colorsRed[7],
-  info: colorsBlue[7],
-  success: colorsGreen[8],
-  warning: colorsYellow[6]
+  error: colorsRed.base,
+  info: colorsBlue.base,
+  success: colorsGreen.base,
+  warning: colorsYellow.base
 }
 
 export const colorsCode = {
