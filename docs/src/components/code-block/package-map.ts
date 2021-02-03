@@ -11,7 +11,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
 import DataWell from '@pluralsight/ps-design-system-datawell'
-import DatePicker from '@pluralsight/ps-design-system-datepicker'
+import * as DatePicker from '@pluralsight/ps-design-system-datepicker'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import Drawer, { useDrawerContext } from '@pluralsight/ps-design-system-drawer'
 import Dropdown, {
@@ -57,6 +57,9 @@ import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 import * as util from '@pluralsight/ps-design-system-util'
 
+import { useDayzed } from 'dayzed'
+import { format } from 'date-fns'
+
 import * as downshift from 'downshift'
 import * as glamor from 'glamor'
 import React from 'react'
@@ -85,7 +88,9 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-circularprogress': { CircularProgress },
   '@pluralsight/ps-design-system-core': { ...core },
   '@pluralsight/ps-design-system-datawell': { DataWell },
-  '@pluralsight/ps-design-system-datepicker': { DatePicker },
+  '@pluralsight/ps-design-system-datepicker': {
+    ...omit(DatePicker, ['default'])
+  },
   '@pluralsight/ps-design-system-dialog': { Dialog },
   '@pluralsight/ps-design-system-drawer': { Drawer, useDrawerContext },
   '@pluralsight/ps-design-system-dropdown': {
@@ -135,6 +140,8 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-util': { ...util },
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
+  dayzed: { useDayzed },
+  'date-fns': { format },
 
   downshift: { ...omit(downshift, ['default']) },
   glamor: { ...glamor },

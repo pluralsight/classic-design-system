@@ -37,7 +37,7 @@
     "@pluralsight/ps-design-system-circularprogress": "^8.0.1",
     "@pluralsight/ps-design-system-core": "^6.8.0",
     "@pluralsight/ps-design-system-datawell": "^5.0.2",
-    "@pluralsight/ps-design-system-datepicker": "^9.0.5",
+    "@pluralsight/ps-design-system-datepicker": "^12.0.0",
     "@pluralsight/ps-design-system-dialog": "^10.0.2",
     "@pluralsight/ps-design-system-drawer": "^9.0.2",
     "@pluralsight/ps-design-system-dropdown": "^11.0.1",

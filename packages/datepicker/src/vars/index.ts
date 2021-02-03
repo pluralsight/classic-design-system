@@ -1,3 +1,11 @@
-import { keyMirror } from '@pluralsight/ps-design-system-util'
+interface Slides {
+  forward: 'forward'
+  backward: 'backward'
+  undefined: undefined
+}
 
-export const appearances = keyMirror('default', 'subtle')
+export const slides: Slides = {
+  forward: 'forward',
+  backward: 'backward',
+  undefined: undefined
+}
