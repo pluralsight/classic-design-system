@@ -57,7 +57,7 @@ exports[`Storyshots modal default 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg
@@ -205,7 +205,7 @@ exports[`Storyshots modal no click overlay 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg
@@ -484,7 +484,7 @@ exports[`Storyshots modal no escape key 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg
@@ -632,7 +632,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg
@@ -780,7 +780,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg
@@ -862,7 +862,7 @@ exports[`Storyshots modal overflow-y 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg
@@ -1279,7 +1279,7 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg
@@ -1665,7 +1665,7 @@ exports[`Storyshots onClose with onClose 1`] = `
   >
     <button
       aria-label="Close dialog"
-      data-css-fblgxm=""
+      data-css-11c2ipp=""
       onClick={[Function]}
     >
       <svg
@@ -1811,7 +1811,7 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-fblgxm=""
+          data-css-11c2ipp=""
           onClick={[Function]}
         >
           <svg

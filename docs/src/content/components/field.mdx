@@ -1,0 +1,463 @@
+---
+name: Field
+route: /components/fidl
+---
+
+import Field from '@pluralsight/ps-design-system-field'
+
+# Field
+
+<TableOfContents {...props} />
+
+<Intro>
+  The Field suite of components provide the basic building blocks for creating various form controls. These components are provided with the expectation they can be used to create consistent Design System forms.
+</Intro>
+
+## Examples
+
+### Text input field
+
+An example of creating a basic input field component through composition.
+
+```typescript
+import React, { ComponentProps } from 'react'
+import Field from '@pluralsight/ps-design-system-field'
+
+interface Props extends ComponentProps<typeof Field> {}
+const TextInputField: React.FC<Props> = (props) => {
+  const { disabled, placeholder, type = 'text', ...rest } = props
+
+  const labelId = 'this-needs-to-be-a-unique-label-id-1'
+  const inputId = 'this-needs-to-be-a-unique-input-id-1'
+
+  return (
+    <Field
+      disabled={disabled}
+      label={
+        <Field.Label htmlFor={inputId} id={labelId}>
+          Text input label area
+        </Field.Label>
+      }
+      subLabel={
+        <Field.SubLabel>Area for additional information</Field.SubLabel>
+      }
+      {...rest}
+    >
+      <Field.Input
+        disabled={disabled}
+        id={inputId}
+        placeholder={placeholder}
+        type={type}
+      />
+    </Field>
+  )
+}
+
+const Example = () => <TextInputField />
+
+export default Example
+```
+
+### Text area field
+
+An example of creating a basic textarea field component that grows with the content.
+
+```typescript
+import React, { ComponentProps, RefObject } from 'react'
+import Field from '@pluralsight/ps-design-system-field'
+
+interface Props extends ComponentProps<typeof Field> {}
+const TextAreaField: React.FC<Props> = (props) => {
+  const { disabled, placeholder, ...rest } = props
+
+  const [value, setValue] = useState<string>('')
+
+  const labelId = 'this-needs-to-be-a-unique-label-id-2'
+  const areaId = 'this-needs-to-be-a-unique-area-id-2'
+
+  const areaRef = useRef<HTMLTextAreaElement>(null)
+  useAutoGrow(areaRef, value)
+
+  return (
+    <Field
+      disabled={disabled}
+      label={
+        <Field.Label htmlFor={areaId} id={labelId}>
+          Text area label area
+        </Field.Label>
+      }
+      subLabel={
+        <Field.SubLabel>Area for additional information</Field.SubLabel>
+      }
+      {...rest}
+    >
+      <Field.TextArea
+        ref={areaRef}
+        disabled={disabled}
+        id={areaId}
+        onChange={evt => {
+          setValue(evt.target.value)
+        }}
+        placeholder={placeholder}
+        value={value}
+      />
+    </Field>
+  )
+}
+
+function useAutoGrow(
+  ref: RefObject<HTMLTextAreaElement | undefined>,
+  value: string
+) {
+  useEffect(() => {
+    if (!ref.current) return
+    const { current: el } = ref
+
+    el.style.height = 'inherit'
+
+    const computed = window.getComputedStyle(el)
+
+    const height =
+      parseInt(computed.getPropertyValue('border-top-width'), 10) +
+      parseInt(computed.getPropertyValue('padding-top'), 10) +
+      el.scrollHeight +
+      parseInt(computed.getPropertyValue('padding-bottom'), 10) +
+      parseInt(computed.getPropertyValue('border-bottom-width'), 10)
+
+    el.style.height = String(height) + 'px'
+  }, [ref, value])
+}
+
+const Example = () => <TextAreaField />
+
+export default Example
+```
+
+## Advanced examples integrating downshift
+
+Here are some examples of building more complicated fields using the [downshift](https://github.com/downshift-js/downshift) headless library.
+
+### Tags Field
+
+```typescript
+import { css } from 'glamor'
+import React, { useMemo } from 'react'
+
+import { layout } from '@pluralsight/ps-design-system-core'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import Tag from '@pluralsight/ps-design-system-tag'
+
+import Field from '@pluralsight/ps-design-system-field'
+import { useMultipleSelection } from 'downshift'
+
+const GUTTER_SIZE = 2
+
+interface Props extends ComponentProps<typeof Field> {}
+const TagField: React.FC<Props> = (props) => {
+  const { disabled, ...rest } = props
+
+  const options = useMemo(() => [
+    { label: 'Hydrogen', value: 'H' },
+    { label: 'Helium', value: 'He' },
+    { label: 'Lithium', value: 'Li' },
+    { label: 'Beryllium', value: 'Be' },
+    { label: 'Boron', value: 'B' },
+    { label: 'Carbon', value: 'C' },
+    { label: 'Nitrogren', value: 'N' },
+    { label: 'Oxygen', value: 'O' },
+    { label: 'Fluorine', value: 'F' },
+  ], [])
+
+  const labelId = 'this-needs-to-be-a-unique-label-id-3'
+  const inputId = 'this-needs-to-be-a-unique-input-id-3'
+
+  const [filterTerm, setFilterTerm] = useState('')
+
+  const handleFilterTermChange = evt => {
+    setFilterTerm(evt.target.value)
+  }
+
+  const initialSelectedItems = useMemo(() => [options[1].value], [options])
+  const {
+    addSelectedItem,
+    getDropdownProps,
+    getSelectedItemProps,
+    removeSelectedItem,
+    selectedItems
+  } = useMultipleSelection({ initialSelectedItems })
+
+  const handleAddSelected = (evt, item) => {
+    evt.stopPropagation()
+
+    setFilterTerm('')
+    addSelectedItem(item)
+  }
+
+  const handleRemoveSelected = (evt, item) => {
+    evt.stopPropagation()
+    removeSelectedItem(item)
+  }
+
+  const unselectedOptions = useMemo(() => {
+    return options.filter(option => !selectedItems.includes(option.value))
+  }, [options, selectedItems])
+
+  const filterResults = useMemo(() => {
+    if (!filterTerm) return unselectedOptions
+
+    return unselectedOptions.filter(option =>
+      option.label.toLowerCase().includes(filterTerm)
+    )
+  }, [filterTerm, unselectedOptions])
+
+  return (
+    <>
+      <Field
+        label={
+          <Field.Label htmlFor={inputId} id={labelId}>
+            Some label text
+          </Field.Label>
+        }
+        renderTag={RenderTagNoPadding}
+        size={Field.sizes.small}
+        {...rest}
+      >
+        <Pills>
+          {selectedItems.map((selectedItem, index) => {
+            const option = options.find(o => o.value === selectedItem)
+            if (!option) return null
+
+            return (
+              <Pill
+                key={`selected-item-${index}`}
+                onRequestRemove={e => handleRemoveSelected(e, selectedItem)}
+                {...getSelectedItemProps({ selectedItem, index })}
+              >
+                {option.label}
+              </Pill>
+            )
+          })}
+
+          <CustomInput
+            disabled={disabled}
+            placeholder={placeholder}
+            id={inputId}
+            onChange={handleFilterTermChange}
+            value={filterTerm}
+            {...getDropdownProps()}
+          />
+        </Pills>
+
+      </Field>
+
+
+      <div
+        style={{
+          border: '2px dashed pink',
+          margin: '20px 0',
+          maxHeight: 200,
+          overflow: 'scroll',
+          padding: 20
+        }}
+      >
+
+        <p>Filtered Options</p>
+        <ul>
+          {filterResults.map((option, index) => (
+            <li key={`filter-result-${index}`}>
+              <span>{option.label} </span>
+              <button onClick={e => handleAddSelected(e, option.value)}>
+                add
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  )
+
+}
+
+const RenderTagNoPadding: React.FC = p => (
+  <div {...p} {...css({ padding: 0 })} />
+)
+
+const Pills = forwardRef((props, ref) => {
+  const { children, ...rest } = props
+
+  const styles = {
+    alignItems: 'center',
+    display: 'flex',
+    flex: 1,
+    flexWrap: 'wrap',
+    maxHeight: 75,
+    overflowY: 'scroll',
+    padding: `${layout.spacingXSmall}`,
+    width: '100%'
+  }
+
+  return (
+    <div ref={ref} {...rest} {...css(styles)}>
+      {children}
+    </div>
+  )
+})
+
+interface PillProps extends ComponentProps<typeof Tag> {
+  onRequestRemove: React.MouseEventHandler
+}
+const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
+  const { children, onRequestRemove, ...rest } = props
+
+  const styles = { margin: `calc(${GUTTER_SIZE}px / 2)` }
+
+  return (
+    <div ref={ref} {...rest} {...css(styles)}>
+      <Tag
+        icon={<CloseIcon onClick={onRequestRemove} />}
+        isPressed
+        size={Tag.sizes.small}
+      >
+        {children}
+      </Tag>
+    </div>
+  )
+})
+
+const CustomInput = forwardRef<HTMLInputElement, React.ComponentProps<typeof Field.Input>>((props, ref) => {
+  const Container = useMemo(
+    () =>
+      forwardRef((p, r) => (
+        <div
+          ref={r}
+          {...p}
+          {...css({ margin: `calc(${GUTTER_SIZE}px / 2)` })}
+        />
+      )),
+    []
+  )
+
+  return (
+    <Field.Input
+      ref={ref}
+      renderContainer={Container}
+      type="text"
+      {...props}
+      {...css({ minWidth: 50 })}
+    />
+  )
+})
+
+const Example = () => <TagField />
+
+
+export default Example
+```
+
+
+## Usage & types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-field"
+  import="import Field from '@pluralsight/ps-design-system-field'"
+  packageName="field"
+  version={props.version}
+/>
+
+### Field
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="ReactNode"
+  />
+  <TypesProp
+    name="disable"
+    type="boolean"
+    desc="disabled state"
+    default="false"
+  />
+  <TypesProp
+    name="error"
+    type="boolean"
+    desc="error state"
+    default="false"
+  />
+  <TypesProp
+    name="label"
+    type="ReactNode"
+  />
+  <TypesProp
+    name="prefix"
+    type="ReactNode"
+  />
+  <TypesProp
+    name="renderContainer"
+    type="(props, ref) => ReactNode"
+    desc="render prop used to replace container with custom element"
+    default="(props, ref) => <div ref={ref} {...props} />"
+  />
+  <TypesProp
+    name="renderTag"
+    type="(props) => ReactNode"
+    desc="render prop used to replace field tag with custom element"
+    default="(props) => <div {...props} />"
+  />
+  <TypesProp
+    name="size"
+    type={<TypesEnum enum={Field.sizes} />}
+    desc="size (from Field.sizes)"
+  />
+  <TypesProp
+    name="subLabel"
+    type="ReactNode"
+  />
+  <TypesProp
+    name="suffix"
+    type="ReactNode"
+  />
+</TypesTable>
+
+### Field.Label
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="ReactNode"
+  />
+</TypesTable>
+
+### Field.SubLabel
+
+<TypesTable>
+  <TypesProp
+    name="children"
+    type="ReactNode"
+  />
+</TypesTable>
+
+### Field.Input
+
+An unstyled `input` element that can be used inside the Field.
+
+<TypesTable>
+  <TypesProp
+    name="renderContainer"
+    type="(props, ref) => ReactNode"
+    desc="render prop used to replace container with custom element"
+    default="(props, ref) => <div ref={ref} {...props} />"
+  />
+</TypesTable>
+
+### Field.TextArea
+
+An unstyled `textarea` element that can be used inside the Field.
+
+<TypesTable>
+  <TypesProp
+    name="renderContainer"
+    type="(props, ref) => ReactNode"
+    desc="render prop used to replace container with custom element"
+    default="(props, ref) => <div ref={ref} {...props} />"
+  />
+</TypesTable>

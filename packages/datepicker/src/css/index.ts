@@ -1,229 +1,179 @@
 import {
-  colorsStatus,
-  colorsBackgroundDark,
-  colorsBackgroundLight,
+  colorsWhite,
   colorsTextIcon,
-  colorsBorder,
-  colorsPrimaryAction,
-  layout,
+  colorsBlue,
   type,
-  motion
+  motion,
+  layout
 } from '@pluralsight/ps-design-system-core'
-import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
-
-import * as vars from '../vars'
-
-const dayDimensions = {
-  height: '32px',
-  width: '32px',
-  margin: `0 2px ${layout.spacingXSmall} 0`,
-  border: '3px solid transparent'
-}
-
 export default {
-  '.psds-date-picker': {
-    display: 'inline-block'
-  },
-  '.psds-date-picker--disabled': {
-    opacity: 0.5
-  },
+  '@keyframes psds-calendar__keyframes__forward': {
+    from: {
+      transform: `translateX(calc(-1 * ${layout.spacingXSmall}))`
+    },
 
-  // __field
-  '.psds-date-picker__field': {
-    display: 'none'
-  },
-
-  // __sub-field
-  '.psds-date-picker__sub-field': {
-    border: 'none',
-    display: 'inline-block',
-    background: 'none',
-    color: colorsTextIcon.highOnLight,
-
-    '&:focus': { outline: 'none' },
-    '&::placeholder': { color: colorsTextIcon.lowOnLight }
-  },
-  [`.psds-date-picker__sub-field--appearance-${vars.appearances.subtle}`]: {
-    color: colorsTextIcon.highOnDark,
-
-    '&::placeholder': { color: colorsTextIcon.lowOnDark }
-  },
-
-  // __sub-field-divider
-  '.psds-date-picker__sub-field-divider': {
-    border: 'none',
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-date-picker__sub-field-divider--appearance-${vars.appearances.subtle}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-
-  // __field-container
-  '.psds-date-picker__field-container': {
-    position: 'relative',
-    display: 'flex',
-    border: `1px solid ${colorsBorder.highOnDark}`,
-    borderRadius: '2px',
-    alignItems: 'center',
-    width: '100%',
-    height: '40px',
-    minWidth: `calc(144px + ${iconWidths.medium} + ${layout.spacingXSmall})`,
-    padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium}) 0 ${layout.spacingMedium}`,
-    background: colorsBackgroundLight[3]
-  },
-  [`.psds-date-picker__field-container.psds-theme--${themeNames.light}`]: {
-    border: `1px solid ${colorsBorder.highOnLight}`
-  },
-  [`.psds-date-picker__field-container--appearance-${vars.appearances.subtle}`]: {
-    color: colorsTextIcon.highOnDark,
-    background: colorsBackgroundDark[1],
-    border: `1px solid ${colorsBorder.highOnDark}`
-  },
-
-  // __icon
-  '.psds-date-picker__icon': {
-    position: 'absolute',
-    top: '0',
-    left: 'auto',
-    right: '0',
-    display: 'flex',
-    alignItems: 'center',
-    height: '100%',
-    color: colorsTextIcon.lowOnLight,
-    cursor: 'pointer',
-    background: 'none',
-    border: 'none'
-  },
-  [`.psds-date-picker__icon--appearance-${vars.appearances.subtle}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
-
-  // __label
-  '.psds-date-picker__label': {
-    color: colorsTextIcon.highOnDark,
-    fontSize: type.fontSize100,
-    fontWeight: type.fontWeight500,
-    marginBottom: layout.spacingXXSmall
-  },
-  [`.psds-date-picker__label.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-
-  // __sub-label
-  '.psds-date-picker__sub-label': {
-    color: colorsTextIcon.lowOnDark,
-    fontSize: type.fontSize100,
-    fontWeight: type.fontWeightDefault,
-    marginTop: layout.spacingXXSmall
-  },
-  [`.psds-date-picker__sub-label.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-
-  // __error
-  '.psds-date-picker__error': {
-    position: 'absolute',
-    right: `calc(-1 * (${iconWidths.medium} + ${layout.spacingXSmall}))`,
-    display: 'flex',
-    alignItems: 'center',
-    color: colorsStatus.error,
-    marginLeft: layout.spacingXSmall
-  },
-
-  // __calendar-container
-  '.psds-date-picker__calendar-container': {
-    position: 'absolute',
-    zIndex: '1',
-    marginTop: layout.spacingXXSmall
-  },
-
-  '@keyframes psds-date-picker__calendar__keyframes__slide': {
-    '100%': {
-      transform: 'translateY(0)',
-      opacity: 1
+    to: {
+      transform: 'translateX(0)'
     }
   },
+  '@keyframes psds-calendar__keyframes__backward': {
+    from: {
+      transform: `translateX(${layout.spacingXSmall})`
+    },
 
-  // __calendar
-  '.psds-date-picker__calendar': ({ slide }: { slide: string }) => ({
-    position: 'relative',
-    zIndex: '0',
-    width: '286px',
-    maxHeight: '352px',
-    background: colorsBackgroundLight[3],
+    to: {
+      transform: 'translateX(0)'
+    }
+  },
+  '.psds-calendar': {
+    padding: '24px',
+    maxHeight: 360,
+    backgroundColor: colorsWhite,
     color: colorsTextIcon.highOnLight,
-    borderRadius: '2px',
-    padding: `${layout.spacingMedium} ${layout.spacingLarge}`,
-    fontSize: type.fontSize100,
-    fontWeight: type.fontWeight500,
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)',
-    opacity: 0,
-    transform: `translateY(calc(-1 * ${layout.spacingXSmall}))`,
-    animation: `${slide || 'psds-date-picker__calendar__keyframes__slide'} ${
+    display: 'inline-flex',
+    flexDirection: 'column'
+  },
+  '.psds-calendar__grid-wrapper': {
+    transition: `height ${motion.speedNormal}`
+  },
+  '.psds-calendar__grid-slide': {
+    display: 'flex',
+    flex: 1,
+    alignItems: 'flex-start'
+  },
+  '.psds-calendar__grid-slide--forward': (forward: string) => ({
+    animation: `${forward || 'psds-calendar__keyframes__forward'} ${
       motion.speedNormal
     } forwards`
   }),
-
-  // __calendar__week-heading
-  '.psds-date-picker__calendar__week-heading': {
+  '.psds-calendar__grid-slide--backward': (backward: string) => ({
+    animation: `${backward || 'psds-calendar__keyframes__backward'} ${
+      motion.speedNormal
+    } forwards`
+  }),
+  '.psds-calendar__month': {
     display: 'flex',
-    justifyContent: 'flex-start',
-    color: colorsTextIcon.lowOnLight,
-    textTransform: 'uppercase',
-    marginBottom: layout.spacingSmall
+    padding: '8px',
+    alignItems: 'center',
+    width: '100%'
   },
-
-  // __calendar__week-heading__day
-  '.psds-date-picker__calendar__week-heading__day': {
-    width: '32px',
-    textAlign: 'center',
-    marginRight: '2px'
+  '.psds-calendar__header-wrapper': {
+    display: 'flex'
   },
-
-  // __calendar__days
-  '.psds-date-picker__calendar__days': {
+  '.psds-calendar__header': {
+    width: 280,
+    '&:not(:last-child)': {
+      marginRight: layout.spacingLarge
+    }
+  },
+  '.psds-calendar__header-button': {},
+  '.psds-calendar__header-month': {
     display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'flex-start',
-    color: colorsTextIcon.highOnLight,
-    textTransform: 'uppercase'
+    flex: 1,
+    flexDirection: 'column',
+    fontSize: '16px',
+    lineHeight: '20px',
+    textAlign: 'center'
   },
-
-  // __calendar__day
-  '.psds-date-picker__calendar__day': {
-    display: 'flex',
+  '.psds-calendar__weekday-header': {
+    display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'center',
-    ...dayDimensions,
-    borderRadius: '50%',
-    lineHeight: '1em',
-    fontWeight: type.fontWeight500,
-    background: 'none',
-    cursor: 'pointer',
-
-    '&:hover': { border: `3px solid ${colorsPrimaryAction.background}` }
+    width: 40,
+    height: '32px',
+    color: colorsTextIcon.lowOnLight,
+    fontWeight: type.fontWeightBook
   },
-  '.psds-date-picker__calendar__day--selected': {
-    background: colorsPrimaryAction.background,
-    color: colorsTextIcon.highOnDark,
-
-    '&:hover': { border: '3px solid transparent' }
-  },
-
-  // __calendar__skipped-day
-  '.psds-date-picker__calendar__skipped-day': dayDimensions,
-
-  // __calendar__switcher
-  '.psds-date-picker__calendar__switcher': {
+  '.psds-calendar__date-grid': {
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: layout.spacingMedium
+    flexWrap: 'wrap',
+    zIndex: 1,
+    position: 'relative',
+    width: 280,
+    '&:not(:last-child)': {
+      marginRight: layout.spacingLarge
+    }
   },
-
-  // __calendar__switcher__month
-  '.psds-date-picker__calendar__switcher__month': {
-    fontSize: type.fontSize200
+  '.psds-calendar__date': {
+    width: 40,
+    height: '40px',
+    padding: 0,
+    boxSizing: 'border-box',
+    color: colorsTextIcon.highOnLight,
+    fontWeight: 600,
+    fontSize: type.fontSizeXSmall,
+    lineHeight: '16px',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyItems: 'center',
+    backgroundColor: 'transparent',
+    border: 'none',
+    [`&:focus`]: {
+      outline: 'none'
+    },
+    [`&:hover`]: {
+      borderRadius: '50%',
+      border: `2px solid ${colorsBlue[6]}`,
+      background: colorsBlue[2],
+      color: colorsTextIcon.highOnLight
+    },
+    [`&:disabled`]: {
+      color: colorsTextIcon.lowOnLight,
+      textDecoration: 'line-through'
+    }
+  },
+  '.psds-calendar__date--in-range': {
+    transition: `background-color ${motion.speedNormal}`,
+    background: colorsBlue[2],
+    [`&:hover`]: {
+      borderRadius: '0',
+      border: `none`,
+      background: colorsBlue[3],
+      color: colorsTextIcon.highOnLight
+    }
+  },
+  '.psds-calendar__date--selected': {
+    borderRadius: '50%',
+    border: `2px solid ${colorsBlue[6]}`,
+    background: colorsBlue[6],
+    color: colorsTextIcon.highOnDark,
+    position: 'relative',
+    [`&:hover`]: {
+      color: colorsTextIcon.highOnLight,
+      background: colorsBlue[2]
+    }
+  },
+  '.psds-calendar__date--selected-start': {
+    position: 'relative',
+    '&:after': {
+      content: ' ',
+      display: 'block',
+      position: 'absolute',
+      zIndex: -1,
+      top: '-2px',
+      transform: 'translateX(100%)',
+      width: 'calc(1px + 50%)',
+      height: '40px',
+      background: colorsBlue[2]
+    }
+  },
+  '.psds-calendar__date--selected-end': {
+    position: 'relative',
+    '&:after': {
+      content: ' ',
+      display: 'block',
+      position: 'absolute',
+      top: '-2px',
+      zIndex: -1,
+      transform: 'translateX(-2px)',
+      width: 'calc(2px + 50%)',
+      height: '40px',
+      background: colorsBlue[2]
+    }
+  },
+  '.psds-calendar__date--today': {},
+  '.psds-calendar__filler': {
+    width: 40,
+    height: '40px'
   }
 }

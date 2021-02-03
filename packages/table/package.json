@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "12.0.0",
+  "version": "12.0.2",
   "description": "Table UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,7 +24,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-collapsible": "^4.0.0",
     "@pluralsight/ps-design-system-core": "^6.8.0",
-    "@pluralsight/ps-design-system-icon": "^20.0.0",
+    "@pluralsight/ps-design-system-icon": "^20.0.1",
     "@pluralsight/ps-design-system-util": "^7.0.0"
   },
   "peerDependencies": {
@@ -35,17 +35,17 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-avatar": "^7.0.0",
+    "@pluralsight/ps-design-system-avatar": "^7.0.1",
     "@pluralsight/ps-design-system-build": "^2.0.3",
-    "@pluralsight/ps-design-system-button": "^20.0.0",
-    "@pluralsight/ps-design-system-checkbox": "^7.0.0",
-    "@pluralsight/ps-design-system-dropdown": "^11.0.0",
-    "@pluralsight/ps-design-system-emptystate": "^11.0.0",
-    "@pluralsight/ps-design-system-layout": "^8.0.0",
-    "@pluralsight/ps-design-system-screenreaderonly": "^3.0.0",
-    "@pluralsight/ps-design-system-searchinput": "^7.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.2.25",
-    "@pluralsight/ps-design-system-text": "^18.0.0",
+    "@pluralsight/ps-design-system-button": "^20.0.1",
+    "@pluralsight/ps-design-system-checkbox": "^7.0.1",
+    "@pluralsight/ps-design-system-dropdown": "^11.0.1",
+    "@pluralsight/ps-design-system-emptystate": "^11.0.1",
+    "@pluralsight/ps-design-system-layout": "^8.0.2",
+    "@pluralsight/ps-design-system-screenreaderonly": "^3.0.1",
+    "@pluralsight/ps-design-system-searchinput": "^7.0.1",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.3.0",
+    "@pluralsight/ps-design-system-text": "^18.0.2",
     "@types/faker": "^5.1.4",
     "@types/react-beautiful-dnd": "^13.0.0",
     "@types/react-table": "^7.0.25",
