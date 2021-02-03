@@ -17,7 +17,7 @@ exports[`Storyshots actionBar locked visible 1`] = `
     data-css-7zyoug=""
   >
     <button
-      data-css-rtltbq=""
+      data-css-1w9jmcf=""
       disabled={false}
       style={Object {}}
     >
@@ -63,7 +63,7 @@ exports[`Storyshots actionBar long title 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-rtltbq=""
+      data-css-1w9jmcf=""
       disabled={false}
       style={Object {}}
     >
@@ -109,7 +109,7 @@ exports[`Storyshots actionBar long title with image 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-rtltbq=""
+      data-css-1w9jmcf=""
       disabled={false}
       style={Object {}}
     >
@@ -155,7 +155,7 @@ exports[`Storyshots actionBar one action 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-rtltbq=""
+      data-css-1w9jmcf=""
       disabled={false}
       style={Object {}}
     >
@@ -273,7 +273,7 @@ exports[`Storyshots combo everything 1`] = `
     data-css-7b22zo=""
   >
     <button
-      data-css-rtltbq=""
+      data-css-1w9jmcf=""
       disabled={false}
       style={Object {}}
     >
@@ -299,7 +299,7 @@ exports[`Storyshots combo everything 1`] = `
       />
     </button>
     <button
-      data-css-rtltbq=""
+      data-css-1w9jmcf=""
       disabled={false}
       style={Object {}}
     >
@@ -327,7 +327,7 @@ exports[`Storyshots combo everything 1`] = `
       />
     </button>
     <button
-      data-css-rtltbq=""
+      data-css-1w9jmcf=""
       disabled={false}
       style={Object {}}
     >
@@ -647,7 +647,7 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-rtltbq=""
+        data-css-1w9jmcf=""
         disabled={false}
         style={Object {}}
       >
@@ -699,7 +699,7 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-rtltbq=""
+        data-css-1w9jmcf=""
         disabled={false}
         style={Object {}}
       >
