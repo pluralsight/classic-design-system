@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@1.1.0...@pluralsight/ps-design-system-field@1.2.0) (2021-02-03)
+
+
+### Features
+
+* **field:** style for block display ([f28bf92](https://github.com/pluralsight/design-system/commit/f28bf92dc7779325ce6925efaaee1d730192f6ac))
+
+
+
+
+
 # 1.1.0 (2021-02-01)
 
 

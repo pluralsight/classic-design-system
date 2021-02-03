@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-datepicker",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "description": "Design system components for date picker",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

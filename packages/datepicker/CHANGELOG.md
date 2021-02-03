@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@11.0.1...@pluralsight/ps-design-system-datepicker@13.0.0) (2021-02-03)
+
+
+### Features
+
+* **date:** needs animation,  text input examples, hook tests ([#1524](https://github.com/pluralsight/design-system/issues/1524)) ([f57c16b](https://github.com/pluralsight/design-system/commit/f57c16bb9aae30944d96b16ec53241d391b40329))
+
+
+### BREAKING CHANGES
+
+* **date:** Complete rewrite with new vars and named imports please review docs.
+
+* docs(datepicker): example and guides updated
+
+* test(datepicker): lint fix
+
+* test(datepicker): lint fix
+
+* refactor(docs): update component section of datepicker
+
+* refactor(docs): update examples section of datepicker
+
+* docs(datepicker): simplify examples for copy & pasta
+
+update doc table to optionally hide default defaultColumn
+
+* feat(datepicker): export DropdownDatePicker
+
+* feat(datepicker): set consistent api for onSelect
+
+Co-authored-by: jaketrent <trent.jake@gmail.com>
+
+
+
+
+
 ## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@11.0.0...@pluralsight/ps-design-system-datepicker@11.0.1) (2021-02-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
