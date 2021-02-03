@@ -1,10 +1,13 @@
 import {
+  colorsBackgroundUtility,
+  colorsPrimaryAction,
   colorsWhite,
   colorsTextIcon,
   layout,
   motion,
   type
 } from '@pluralsight/ps-design-system-core'
+import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -106,17 +109,46 @@ export default {
 
   // __close
   '.psds-dialog__close': {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    display: 'block',
-    lineHeight: '0',
-    padding: '0',
     position: 'absolute',
     right: layout.spacingMedium,
     top: layout.spacingMedium,
 
-    '& > svg': {
+    // NOTE: copy-paste-modify from psds-button, etc
+    display: 'inline-flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: '2px',
+    fontWeight: type.fontWeight500,
+    textAlign: 'center',
+    whiteSpace: 'nowrap',
+    textDecoration: 'none',
+    transition: `all ${motion.speedNormal}`,
+    verticalAlign: 'middle',
+    fontSize: type.fontSize200,
+    lineHeight: 0,
+    padding: 0,
+    height: '32px',
+    width: '32px',
+    border: 'none',
+    background: 'none',
+    color: colorsTextIcon.lowOnLight,
+    '&:not([disabled]):hover, &:not([disabled]):focus': {
+      outline: 'none',
+      boxShadow: `0 0 0 3px ${transparentize(
+        0.5,
+        colorsPrimaryAction.background
+      )}`,
+      cursor: 'pointer',
+      background: transparentize(0.55, colorsBackgroundUtility.base),
+      color: colorsTextIcon.highOnLight
+    },
+    '&:not([disabled]):active': {
+      background: transparentize(0.35, colorsBackgroundUtility.base),
+      color: colorsTextIcon.highOnLight,
+      transform: 'scale(0.98)'
+    },
+
+    '& svg': {
       fill: colorsTextIcon.lowOnLight,
       height: '24px',
       width: '24px'
