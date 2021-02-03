@@ -13,7 +13,6 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util'
-import { NoEmitOnErrorsPlugin } from 'webpack'
 
 import * as vars from '../vars'
 
