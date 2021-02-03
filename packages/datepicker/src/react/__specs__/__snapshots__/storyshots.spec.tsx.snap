@@ -15,490 +15,7 @@ exports[`Storyshots MultiDate Calendar 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-jk4b1r=""
-          disabled={false}
-          onClick={[Function]}
-          style={Object {}}
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance default w/ error 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-dysqqm=""
-  >
-    Problem field
-  </div>
-  <div
-    data-css-1epd8xq=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1549q07=""
-        name="mm"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-        value=""
-      />
-      <span
-        data-css-14iu1jp=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-1549q07=""
-        name="dd"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-        value=""
-      />
-      <span
-        data-css-14iu1jp=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-1549q07=""
-        name="yyyy"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-        value=""
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-        value=""
-      />
-      <button
-        data-css-14ley1g=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-fpvw2v=""
-        >
-          Feb
-
-          2021
-        </div>
-      </button>
-      <div
-        data-css-j3f9he=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <div
-            data-css-y80vay=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret right icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1usw9cb=""
-    >
-      <input
-        aria-label="month"
-        data-css-14e4ts3=""
-        name="mm"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-        value=""
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-14e4ts3=""
-        name="dd"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-        value=""
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-14e4ts3=""
-        name="yyyy"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-        value=""
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-        value=""
-      />
-      <button
-        data-css-1oi28xc=""
-        onClick={[Function]}
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle w/ error 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-dysqqm=""
-  >
-    Problem field
-  </div>
-  <div
-    data-css-1epd8xq=""
-  >
-    <div
-      data-css-1usw9cb=""
-    >
-      <input
-        aria-label="month"
-        data-css-14e4ts3=""
-        name="mm"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-        value=""
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="day"
-        data-css-14e4ts3=""
-        name="dd"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="dd"
-        style={
-          Object {
-            "width": "24px",
-          }
-        }
-        value=""
-      />
-      <span
-        data-css-2cik8p=""
-      >
-        /
-      </span>
-      <input
-        aria-label="year"
-        data-css-14e4ts3=""
-        name="yyyy"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="yyyy"
-        style={
-          Object {
-            "width": "48px",
-          }
-        }
-        value=""
-      />
-      <input
-        data-css-gyrv08=""
-        readOnly={true}
-        tabIndex={-1}
-        value=""
-      />
-      <button
-        data-css-1oi28xc=""
-        onClick={[Function]}
-      >
-        Fri
-      </div>
-      <div
-        data-css-j3f9he=""
-      >
-        Sat
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-50jhqn=""
-    style={
-      Object {
-        "height": undefined,
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Normal
-    </div>
-    <div
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-1k5y6zw=""
-      >
-        <div
-          data-css-h18ka=""
-        />
-        <button
-          aria-label="Mon Feb 01 2021"
-          aria-pressed={false}
-          data-css-1uw46i0=""
-          disabled={false}
-          onClick={[Function]}
-          role="button"
-        >
-          1
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-o89kbw=""
-    >
-      Still normal
-    </div>
-  </div>
-  <div
-    data-css-1y0hkm3=""
-    onKeyDown={[Function]}
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      I'm not usable
-    </div>
-    <div
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-1gfowhv=""
-      >
-        <input
-          aria-label="month"
-          data-css-1549q07=""
-          disabled={true}
-          name="mm"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-          value={12}
-        />
-        <span
-          data-css-14iu1jp=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1549q07=""
-          disabled={true}
-          name="dd"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-          value={7}
-        />
-        <span
-          data-css-14iu1jp=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1549q07=""
-          disabled={true}
-          name="yyyy"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-          value={1941}
-        />
-        <input
-          data-css-gyrv08=""
-          disabled={true}
-          readOnly={true}
-          tabIndex={-1}
-          value="1941-12-7"
-        />
-        <button
-          aria-label="Tue Feb 02 2021"
-          aria-pressed={false}
-          data-css-1uw46i0=""
-          disabled={false}
-          onClick={[Function]}
-          role="button"
-        >
-          2
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-o89kbw=""
-    >
-      Neither am I
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots RangeDate Calendar 1`] = `
-<div
-  data-css-1xqevlv=""
-  onMouseLeave={[Function]}
->
-  <div
-    data-css-1cqgl9p=""
-  >
-    <div
-      data-css-1by070m=""
-    >
-      <div
-        data-css-1vc8xgt=""
-      >
-        <button
-          aria-label="Go back 1 month"
-          data-css-jk4b1r=""
+          data-css-cjzwb2=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -527,13 +44,13 @@ exports[`Storyshots RangeDate Calendar 1`] = `
         <div
           data-css-fpvw2v=""
         >
-          May
-
-          2020
+          Feb
+           
+          2021
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-jk4b1r=""
+          data-css-cjzwb2=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -565,44 +82,8 @@ exports[`Storyshots RangeDate Calendar 1`] = `
       >
         Sun
       </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels label 1`] = `
-<div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
->
-  <div
-    data-css-dysqqm=""
-  >
-    Some label
-  </div>
-  <div
-    data-css-ctre2o=""
-  >
-    <div
-      data-css-1gfowhv=""
-    >
-      <input
-        aria-label="month"
-        data-css-1549q07=""
-        name="mm"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        placeholder="mm"
-        style={
-          Object {
-            "width": "32px",
-          }
-        }
-        value=""
-      />
-      <span
-        data-css-14iu1jp=""
+      <div
+        data-css-s7dkwb=""
       >
         Mon
       </div>
@@ -633,18 +114,441 @@ exports[`Storyshots labels label 1`] = `
       </div>
     </div>
   </div>
+  <div
+    data-css-50jhqn=""
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
+  >
+    <div
+      data-css-1a94b64=""
+    >
+      <div
+        data-css-1k5y6zw=""
+      >
+        <div
+          data-css-h18ka=""
+        />
+        <button
+          aria-label="Mon Feb 01 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          1
+        </button>
+        <button
+          aria-label="Tue Feb 02 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          2
+        </button>
+        <button
+          aria-label="Wed Feb 03 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          3
+        </button>
+        <button
+          aria-label="Thu Feb 04 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          4
+        </button>
+        <button
+          aria-label="Fri Feb 05 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          5
+        </button>
+        <button
+          aria-label="Sat Feb 06 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          6
+        </button>
+        <button
+          aria-label="Sun Feb 07 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          7
+        </button>
+        <button
+          aria-label="Mon Feb 08 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          8
+        </button>
+        <button
+          aria-label="Tue Feb 09 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          9
+        </button>
+        <button
+          aria-label="Wed Feb 10 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          10
+        </button>
+        <button
+          aria-label="Thu Feb 11 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          11
+        </button>
+        <button
+          aria-label="Fri Feb 12 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          12
+        </button>
+        <button
+          aria-label="Sat Feb 13 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          13
+        </button>
+        <button
+          aria-label="Sun Feb 14 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          14
+        </button>
+        <button
+          aria-label="Mon Feb 15 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          15
+        </button>
+        <button
+          aria-label="Tue Feb 16 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          16
+        </button>
+        <button
+          aria-label="Wed Feb 17 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          17
+        </button>
+        <button
+          aria-label="Thu Feb 18 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          18
+        </button>
+        <button
+          aria-label="Fri Feb 19 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          19
+        </button>
+        <button
+          aria-label="Sat Feb 20 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          20
+        </button>
+        <button
+          aria-label="Sun Feb 21 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          21
+        </button>
+        <button
+          aria-label="Mon Feb 22 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          22
+        </button>
+        <button
+          aria-label="Tue Feb 23 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          23
+        </button>
+        <button
+          aria-label="Wed Feb 24 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          24
+        </button>
+        <button
+          aria-label="Thu Feb 25 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          25
+        </button>
+        <button
+          aria-label="Fri Feb 26 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          26
+        </button>
+        <button
+          aria-label="Sat Feb 27 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          27
+        </button>
+        <button
+          aria-label="Sun Feb 28 2021"
+          aria-pressed={false}
+          data-css-1uw46i0=""
+          disabled={false}
+          onClick={[Function]}
+          role="button"
+        >
+          28
+        </button>
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+        <div
+          data-css-h18ka=""
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Storyshots labels label and subLabel 1`] = `
+exports[`Storyshots RangeDate Calendar 1`] = `
 <div
-  data-css-w0yocm=""
-  onKeyDown={[Function]}
+  data-css-1xqevlv=""
+  onMouseLeave={[Function]}
 >
   <div
-    data-css-dysqqm=""
+    data-css-1cqgl9p=""
   >
-    Some label
+    <div
+      data-css-1by070m=""
+    >
+      <div
+        data-css-1vc8xgt=""
+      >
+        <button
+          aria-label="Go back 1 month"
+          data-css-cjzwb2=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+        <div
+          data-css-fpvw2v=""
+        >
+          May
+           
+          2020
+        </div>
+        <button
+          aria-label="Go forward 1 month"
+          data-css-cjzwb2=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+      <div
+        data-css-s7dkwb=""
+      >
+        Sun
+      </div>
+      <div
+        data-css-s7dkwb=""
+      >
+        Mon
+      </div>
+      <div
+        data-css-s7dkwb=""
+      >
+        Tue
+      </div>
+      <div
+        data-css-s7dkwb=""
+      >
+        Wed
+      </div>
+      <div
+        data-css-s7dkwb=""
+      >
+        Thu
+      </div>
+      <div
+        data-css-s7dkwb=""
+      >
+        Fri
+      </div>
+      <div
+        data-css-s7dkwb=""
+      >
+        Sat
+      </div>
+    </div>
   </div>
   <div
     data-css-50jhqn=""
@@ -1037,11 +941,6 @@ exports[`Storyshots labels label and subLabel 1`] = `
       </div>
     </div>
   </div>
-  <div
-    data-css-o89kbw=""
-  >
-    Some sublabel
-  </div>
 </div>
 `;
 
@@ -1067,7 +966,7 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1097,12 +996,12 @@ Array [
             data-css-fpvw2v=""
           >
             May
-
+             
             2020
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1622,7 +1521,7 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1652,7 +1551,7 @@ Array [
             data-css-fpvw2v=""
           >
             May
-
+             
             2020
           </div>
           <div />
@@ -1704,12 +1603,12 @@ Array [
             data-css-fpvw2v=""
           >
             Jun
-
+             
             2020
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2578,7 +2477,7 @@ exports[`Storyshots RangeDate calendar: with input 1`] = `
         >
           <button
             aria-label="Go back 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2608,12 +2507,12 @@ exports[`Storyshots RangeDate calendar: with input 1`] = `
             data-css-fpvw2v=""
           >
             May
-
+             
             2020
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -3069,11 +2968,6 @@ exports[`Storyshots RangeDate calendar: with input 1`] = `
       </div>
     </div>
   </div>
-  <div
-    data-css-o89kbw=""
-  >
-    Some sublabel
-  </div>
 </div>
 `;
 
@@ -3086,125 +2980,17 @@ exports[`Storyshots SingleDate DatePicker 1`] = `
     }
   }
 >
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      First
-    </div>
-    <div
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-1gfowhv=""
-      >
-        <input
-          aria-label="month"
-          data-css-1549q07=""
-          name="mm"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-          value=""
-        />
-        <span
-          data-css-14iu1jp=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-1549q07=""
-          name="dd"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-          value=""
-        />
-        <span
-          data-css-14iu1jp=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-1549q07=""
-          name="yyyy"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-          value=""
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-          value=""
-        />
-        <button
-          data-css-14ley1g=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
+  <label
     data-css-w0yocm=""
   >
     <div
-      data-css-dysqqm=""
-    >
-      Second
-    </div>
-    <div
-      data-css-1epd8xq=""
+      data-css-1r967oi=""
     >
       <div
         data-css-ctre2o=""
       >
         <div
-          data-css-j3f9he=""
+          data-css-1iawjij=""
         >
           <input
             data-css-1iyk6mt=""
@@ -3215,213 +3001,17 @@ exports[`Storyshots SingleDate DatePicker 1`] = `
           />
         </div>
       </div>
-    </div>
-  </div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Third
-    </div>
-    <div
-      data-css-ctre2o=""
-    >
       <div
-        data-css-1usw9cb=""
+        data-css-1sdemx4=""
       >
-        <input
-          aria-label="month"
-          data-css-14e4ts3=""
-          name="mm"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-          value=""
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-14e4ts3=""
-          name="dd"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
-          style={
-            Object {
-              "width": "24px",
-            }
-          }
-          value=""
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-14e4ts3=""
-          name="yyyy"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-          value=""
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-          value=""
-        />
-        <button
-          data-css-1oi28xc=""
+        <div
+          data-css-7dab2f=""
           onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-w0yocm=""
-    onKeyDown={[Function]}
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Fourth
-    </div>
-    <div
-      data-css-1epd8xq=""
-    >
-      <div
-        data-css-1usw9cb=""
-      >
-        <input
-          aria-label="month"
-          data-css-14e4ts3=""
-          name="mm"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="mm"
-          style={
-            Object {
-              "width": "32px",
-            }
-          }
-          value=""
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="day"
-          data-css-14e4ts3=""
-          name="dd"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="dd"
           style={
             Object {
               "cursor": "pointer",
             }
           }
-          value=""
-        />
-        <span
-          data-css-2cik8p=""
-        >
-          /
-        </span>
-        <input
-          aria-label="year"
-          data-css-14e4ts3=""
-          name="yyyy"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="yyyy"
-          style={
-            Object {
-              "width": "48px",
-            }
-          }
-          value=""
-        />
-        <input
-          data-css-gyrv08=""
-          readOnly={true}
-          tabIndex={-1}
-          value=""
-        />
-        <button
-          data-css-1oi28xc=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </button>
-        <div
-          data-css-j3f9he=""
         >
           <svg
             aria-label="calendar icon"
@@ -3453,73 +3043,50 @@ exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
       <div
         data-css-1vc8xgt=""
       >
-        <div
-          data-css-1usw9cb=""
+        <button
+          aria-label="Go back 1 month"
+          data-css-cjzwb2=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
         >
-          <input
-            aria-label="month"
-            data-css-14e4ts3=""
-            name="mm"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="mm"
-            style={
-              Object {
-                "width": "32px",
-              }
-            }
-            value=""
-          />
-          <span
-            data-css-2cik8p=""
+          <div
+            data-css-y80vay=""
           >
-            /
-          </span>
-          <input
-            aria-label="day"
-            data-css-14e4ts3=""
-            name="dd"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="dd"
-            style={
-              Object {
-                "width": "24px",
-              }
-            }
-            value=""
-          />
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </div>
           <span
-            data-css-2cik8p=""
-          >
-            /
-          </span>
-          <input
-            aria-label="year"
-            data-css-14e4ts3=""
-            name="yyyy"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            placeholder="yyyy"
-            style={
-              Object {
-                "width": "48px",
-              }
-            }
-            value=""
+            data-css-15b13by=""
           />
-          <input
-            data-css-gyrv08=""
-            readOnly={true}
-            tabIndex={-1}
-            value=""
-          />
-          <button
-            data-css-1oi28xc=""
-            onClick={[Function]}
+        </button>
+        <div
+          data-css-fpvw2v=""
+        >
+          Apr
+           
+          2020
+        </div>
+        <button
+          aria-label="Go forward 1 month"
+          data-css-cjzwb2=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-y80vay=""
           >
             <div
               data-css-7dab2f=""
@@ -3581,20 +3148,7 @@ exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
     data-css-50jhqn=""
     style={
       Object {
-        "border": "3px solid green",
-        "height": "50px",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots value controlled value changes 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "color": "rgba(255, 255, 255, 0.95)",
+        "height": undefined,
       }
     }
   >
@@ -3925,18 +3479,10 @@ exports[`Storyshots value controlled value changes 1`] = `
 </div>
 `;
 
-exports[`Storyshots value updated value, no initial 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "color": "rgba(255, 255, 255, 0.95)",
-      }
-    }
-  >
-    Selected:
-    &lt;none&gt;
-  </div>
+exports[`Storyshots SingleDate calendar: date is selected 1`] = `
+<div
+  data-css-1xqevlv=""
+>
   <div
     data-css-1cqgl9p=""
   >
@@ -3948,7 +3494,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-jk4b1r=""
+          data-css-cjzwb2=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -3978,12 +3524,12 @@ exports[`Storyshots value updated value, no initial 1`] = `
           data-css-fpvw2v=""
         >
           May
-
+           
           2020
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-jk4b1r=""
+          data-css-cjzwb2=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -4051,7 +3597,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
     data-css-50jhqn=""
     style={
       Object {
-        "color": "rgba(255, 255, 255, 0.95)",
+        "height": undefined,
       }
     }
   >
@@ -4199,7 +3745,7 @@ exports[`Storyshots value updated value, no initial 1`] = `
         <button
           aria-label="Wed May 13 2020"
           aria-pressed={true}
-          data-css-1rzjgqb=""
+          data-css-cm4yn4=""
           disabled={false}
           onClick={[Function]}
           role="button"
@@ -4490,7 +4036,7 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -4520,12 +4066,12 @@ Array [
             data-css-fpvw2v=""
           >
             May
-
+             
             2020
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-jk4b1r=""
+            data-css-cjzwb2=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}

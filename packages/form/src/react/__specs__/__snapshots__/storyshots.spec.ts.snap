@@ -767,16 +767,11 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           }
         >
-          <div
-            data-css-dysqqm=""
-          >
-            Choose a Date
-          </div>
-          <div
-            data-css-ctre2o=""
+          <label
+            data-css-w0yocm=""
           >
             <div
-              data-css-1jmxzqo=""
+              data-css-dysqqm=""
             >
               Choose a Date
             </div>
