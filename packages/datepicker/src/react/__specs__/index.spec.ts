@@ -81,7 +81,7 @@ test('onRangeDateSelected: onSelect', () => {
       onSelect
     })(dateObj, {} as React.SyntheticEvent)
   })
-  expect(onSelect).toHaveBeenCalledWith(dateObj, {})
+  expect(onSelect).toHaveBeenCalledWith({}, dateObj)
 })
 test('onRangeDateSelected: selectable true', () => {
   const { result } = renderHook(() => React.useState<Date[] | undefined>())
@@ -183,7 +183,7 @@ test('onMultiDateSelected: onSelect', () => {
       onSelect
     })(dateObj, {} as React.SyntheticEvent)
   })
-  expect(onSelect).toHaveBeenCalledWith(dateObj, {})
+  expect(onSelect).toHaveBeenCalledWith({}, dateObj)
 })
 test('onMultiDateSelected: selectable (toggle test)', () => {
   const selectedDate = new Date('06/20/2020')

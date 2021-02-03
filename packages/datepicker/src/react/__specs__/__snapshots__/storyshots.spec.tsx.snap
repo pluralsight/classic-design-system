@@ -2971,7 +2971,7 @@ exports[`Storyshots RangeDate calendar: with input 1`] = `
 </div>
 `;
 
-exports[`Storyshots SingleDate DropdownDatePicker 1`] = `
+exports[`Storyshots SingleDate DatePicker 1`] = `
 <div
   style={
     Object {

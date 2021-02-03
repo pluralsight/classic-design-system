@@ -8,12 +8,11 @@ import { CalendarDates } from './calendar-dates'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 
-interface DropdownDatePickerProps
-  extends Omit<HTMLPropsFor<'div'>, 'onSelect'> {
+interface DatePickerProps extends Omit<HTMLPropsFor<'div'>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
 }
 
-export const DropdownDatePicker: React.FC<DropdownDatePickerProps> = ({
+export const DatePicker: React.FC<DatePickerProps> = ({
   onSelect,
   ...props
 }) => {

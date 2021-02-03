@@ -62,7 +62,7 @@ export const useIsInRange = (selected: Date[] = []) => {
 interface OnMultipleDatesSelected {
   setSelected: (arr: Date[]) => void
   selected?: Date[]
-  onSelect?: (selectedDate: DateObj, evt: SyntheticEvent) => void
+  onSelect?: (evt: SyntheticEvent, selectedDate: DateObj) => void
 }
 
 export const onRangeDateSelected = ({
@@ -92,7 +92,7 @@ export const onRangeDateSelected = ({
     newDates.push(date)
     setSelected(newDates)
   }
-  onSelect && onSelect(dateObj, evt)
+  onSelect && onSelect(evt, dateObj)
 }
 
 const getDateIndex = (
@@ -133,7 +133,7 @@ export const onMultiDateSelected = ({
     newSelectedDates.splice(index, 0, date)
   }
   setSelected(newSelectedDates)
-  onSelect && onSelect(dateObj, evt)
+  onSelect && onSelect(evt, dateObj)
 }
 
 interface HandleChange<T> {

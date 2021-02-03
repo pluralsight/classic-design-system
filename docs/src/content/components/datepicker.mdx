@@ -15,6 +15,22 @@ import { layout } from '@pluralsight/ps-design-system-core'
 
 ## Components
 
+## Datepicker
+A drop in replacement for the the preivous DatePicker. It takes an `onSelect` prop that returns a [`dayzed.DateObj`](https://github.com/deseretdigital/dayzed/blob/ebf1de1ceb9695738895f8b08bf45ad9a894fe00/typings/dayzed.d.ts#L9-L16) each time a valid date is selected.
+```typescript noRender startExpanded
+import { DatePicker } from '@pluralsight/ps-design-system-datepicker'
+
+
+<DatePicker onSelect={ props.onSelect} />
+```
+
+<TypesTable defaultColumn={false}>
+  <TypesProp
+    name="onSelect"
+    type="(evt: SyntheticEvent, selectedDate: DateObj) => void"
+    desc="callback that return DateObj"
+  />
+</TypesTable>
 ### Calendar
 
 Calendar is a top-level component for creating a calendar. When used in concert with the [`useDayzed`](https://github.com/deseretdigital/dayzed) hook, it takes all returned props except `getDateProps`
@@ -140,7 +156,7 @@ The `onRangeDateSelected` hook is a helper which returns a function to pass to t
 <TypesTable defaultColumn={false}>
   <TypesProp
     name="onSelect"
-    type="(selectedDate: dazyed.DateObj, event: React.SyntheticEvent): void"
+    type="(event: React.SyntheticEvent, selectedDate: dazyed.DateObj): void"
     desc="callback for side effects when a date is selected"
   />
   <TypesProp
@@ -209,7 +225,7 @@ The `onMultiDateSelected` hook is similar to the `onRangeDateSelected` hook, exc
 <TypesTable defaultColumn={false}>
   <TypesProp
     name="onSelect"
-    type="(selectedDate: dazyed.DateObj, event: React.SyntheticEvent): void"
+    type="(event: React.SyntheticEvent, selectedDate: dazyed.DateObj): void"
     desc="callback for side effects when a date is selected"
   />
   <TypesProp
@@ -574,7 +590,7 @@ const Example = () => {
     onDateSelected: onRangeDateSelected({
       selected,
       setSelected,
-      // onSelect: (selectedDate: DateObj, event: React.SyntheticEvent<Element, Event>): void
+      // onSelect: (event: React.SyntheticEvent<Element, Event>, selectedDate: DateObj): void
     }),
     date: new Date('05/30/2020')
   })
@@ -617,7 +633,7 @@ import React from 'react'
       onDateSelected: onRangeDateSelected({
         selected,
         setSelected,
-        // onSelect: (selectedDate: DateObj, event: React.SyntheticEvent<Element, Event>): void
+        // onSelect: (event: React.SyntheticEvent<Element, Event>, selectedDate: DateObj): void
       }),
       date: new Date('05/30/2020')
     })
@@ -669,7 +685,7 @@ import React from 'react'
       onDateSelected: onRangeDateSelected({
         selected,
         setSelected,
-        // onSelect: (selectedDate: DateObj, event: React.SyntheticEvent<Element, Event>): void
+        // onSelect: (event: React.SyntheticEvent<Element, Event>, selectedDate: DateObj): void
       }),
       date: new Date('05/30/2020')
     })
@@ -729,7 +745,7 @@ const Example = () => {
     onDateSelected: onMultiDateSelected({
       selected,
       setSelected,
-      // onSelect: (selectedDate: DateObj, event: React.SyntheticEvent<Element, Event>): void
+      // onSelect: (event: React.SyntheticEvent<Element, Event>, selectedDate: DateObj): void
     })
   })
   return (
@@ -747,18 +763,6 @@ export default Example
 ```
 
 ## Migration guide from v11.x and before to v12.x
-
-### Simple
-
-```typescript noRender startExpanded
-import { DropdownDatePicker } from '@pluralsight/ps-design-system-datepicker'
-import { DateObj } from 'dayzed'
-
-interface DatePickerProps {
-  onSelect: (evt: React.SyntheticEvent, dateObj: DateObj) => void
-}
-const DatePicker = (props: DatePickerProps) => <DropdownDatePicker onSelect={ props.onSelect} />
-```
 
 ### Custom
 
