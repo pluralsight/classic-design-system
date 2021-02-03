@@ -8,9 +8,13 @@ export default {
   title: 'Components/MultiSelectField',
   component: MultiSelectField,
   args: {
-    placeholder: 'Do something',
-    options: periodicElements
-    // size: MultiSelectField.sizes.medium
+    placeholder: 'Search...',
+    label: 'a label',
+    menu: periodicElements.map(option => (
+      <MultiSelectField.Item key={option.value} value={option.value}>
+        {option.label}
+      </MultiSelectField.Item>
+    ))
   }
 } as Meta
 
