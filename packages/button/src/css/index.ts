@@ -49,20 +49,32 @@ export default {
     '&:not([disabled]):hover': {
       cursor: 'pointer'
     },
-    '&:focus': {
-      outline: 'none',
-      boxShadow: `0 0 0 2px ${colorsBlue[4]}`
-    },
     '&:focus:not(:focus-visible)': {
       outline: 'none',
       boxShadow: 'none'
     },
-    '&:focus-visible': {
+    '&:not([disabled]):active': {
+      transform: 'scale(0.98)'
+    }
+  },
+  [`.psds-button.psds-theme--${themeDefaultName}`]: {
+    '&:focus': {
       outline: 'none',
       boxShadow: `0 0 0 2px ${colorsBlue[4]}`
     },
-    '&:not([disabled]):active': {
-      transform: 'scale(0.98)'
+    '&:focus-visible': {
+      outline: 'none',
+      boxShadow: `0 0 0 2px ${colorsBlue[4]}`
+    }
+  },
+  [`.psds-button.psds-theme--${themeNames.light}`]: {
+    '&:focus': {
+      outline: 'none',
+      boxShadow: `0 0 0 2px ${colorsBlue[8]}`
+    },
+    '&:focus-visible': {
+      outline: 'none',
+      boxShadow: `0 0 0 2px ${colorsBlue[8]}`
     }
   },
   [`.psds-button--layout-${vars.layouts.fullWidth}`]: {
@@ -117,7 +129,11 @@ export default {
     },
     '&:not([disabled]):focus': {
       background: colorsBlue[8],
-      cursor: 'pointer'
+      cursor: 'pointer',
+      boxShadow: `0 0 0 2px ${colorsBlue[5]}`
+    },
+    '&:not([disabled]):focus-visible': {
+      boxShadow: `0 0 0 2px ${colorsBlue[5]}`
     },
     '&:not([disabled]):active': {
       background: colorsBlue[9]
