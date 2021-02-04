@@ -95,16 +95,48 @@ describe('ActionMenu', () => {
     it('should render a button when `tagName` is `button`', () => {
       const ref = React.createRef<HTMLLIElement>()
 
-      const { getByTestId } = render(
+      const { getByRole } = render(
         <ActionMenu>
-          <ActionMenu.Item data-testid="undertest" ref={ref} tagName="button">
+          <ActionMenu.Item ref={ref} tagName="button">
             test
           </ActionMenu.Item>
         </ActionMenu>
       )
-      const el = getByTestId('undertest')
+      const el = getByRole('menuitem')
 
       expect(el.tagName.toLowerCase()).toEqual('button')
+      expect(ref.current).not.toBeNull()
+    })
+
+    it('should render a button that is disabled`', () => {
+      const ref = React.createRef<HTMLLIElement>()
+
+      const { getByRole } = render(
+        <ActionMenu>
+          <ActionMenu.Item disabled ref={ref} tagName="button">
+            test
+          </ActionMenu.Item>
+        </ActionMenu>
+      )
+      const el = getByRole('menuitem')
+
+      expect(el.getAttribute('disabled')).toEqual('')
+      expect(ref.current).not.toBeNull()
+    })
+
+    it('should render a anchor that is disabled`', () => {
+      const ref = React.createRef<HTMLLIElement>()
+
+      const { getByRole } = render(
+        <ActionMenu>
+          <ActionMenu.Item disabled ref={ref} tagName="a">
+            test
+          </ActionMenu.Item>
+        </ActionMenu>
+      )
+      const el = getByRole('menuitem')
+
+      expect(el.getAttribute('aria-disabled')).toEqual('true')
       expect(ref.current).not.toBeNull()
     })
 
