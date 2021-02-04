@@ -15,128 +15,139 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
     >
       Choose an element
     </label>
-    <div>
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
       <div
-        data-css-8qmpxt=""
+        data-css-1a24qct=""
+        data-css-1q3e54w=""
       >
         <div
-          data-css-1a24qct=""
-          data-css-1q3e54w=""
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          aria-owns="downshift-0-menu"
+          data-css-1ecjssy=""
+          role="combobox"
         >
           <div
-            aria-expanded={false}
-            aria-haspopup="listbox"
-            aria-owns="downshift-0-menu"
-            data-css-1ecjssy=""
-            role="combobox"
+            data-css-lxaqlq=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={-1}
           >
             <div
-              data-css-lxaqlq=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              tabIndex={-1}
+              data-css-1djcb20=""
             >
               <div
-                data-css-1djcb20=""
+                aria-pressed={true}
+                data-css-146no9u=""
               >
                 <div
                   aria-pressed={true}
                   data-css-8a12hv=""
                 >
-                  <span
-                    data-css-13bnfv4=""
-                  >
-                    Helium
-                  </span>
-                  <div
-                    data-css-1gzzcm2=""
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "cursor": "pointer",
-                      }
-                    }
-                  >
-                    <svg
-                      aria-label="close icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              data-css-lxaqlq=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              tabIndex={-1}
-            >
-              <div
-                data-css-1djcb20=""
-              >
+                  Helium
+                </span>
                 <div
-                  aria-pressed={true}
-                  data-css-8a12hv=""
-                >
-                  <span
-                    data-css-13bnfv4=""
-                  >
-                    Lithium
-                  </span>
-                  <div
-                    data-css-1gzzcm2=""
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "cursor": "pointer",
-                      }
+                  data-css-1gzzcm2=""
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
                     }
+                  }
+                >
+                  <svg
+                    aria-label="close icon"
+                    role="img"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      aria-label="close icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                    />
+                  </svg>
                 </div>
               </div>
-            </div>
-            <div
-              data-css-lxaqlq=""
-              data-css-n9fe5c=""
-            >
-              <input
-                aria-autocomplete="list"
-                aria-controls="downshift-0-menu"
-                aria-labelledby="downshift-0-label"
-                autoComplete="off"
-                data-css-1ffn65r=""
-                data-css-1na6nif=""
-                id="downshift-0-input"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onClick={[Function]}
-                onKeyDown={[Function]}
-                placeholder="Do something"
-                type="text"
-                value=""
-              />
             </div>
           </div>
           <div
-            data-css-n5p4fh=""
+            data-css-lxaqlq=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={-1}
           >
             <div
-              data-css-3feg78=""
+              data-css-1djcb20=""
+            >
+              <div
+                aria-pressed={true}
+                data-css-146no9u=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  Lithium
+                </span>
+                <div
+                  data-css-1gzzcm2=""
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
+                    }
+                  }
+                >
+                  <svg
+                    aria-label="close icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-css-lxaqlq=""
+            data-css-n9fe5c=""
+          >
+            <input
+              aria-autocomplete="list"
+              aria-controls="downshift-0-menu"
+              aria-labelledby="downshift-0-label"
+              autoComplete="off"
+              data-css-1ffn65r=""
+              data-css-1na6nif=""
+              id="downshift-0-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Do something"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          data-css-n5p4fh=""
+        >
+          <div
+            data-css-3feg78=""
+          >
+            <button
+              aria-label="toggle menu"
+              data-css-xqz18p=""
+              disabled={false}
+              id="downshift-0-toggle-button"
+              onClick={[Function]}
+              style={Object {}}
+              tabIndex={-1}
             >
               <button
                 aria-label="toggle menu"
@@ -148,27 +159,23 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
                 tabIndex={-1}
               >
                 <div
-                  data-css-y80vay=""
+                  data-css-1gzzcm2=""
                 >
-                  <div
-                    data-css-1gzzcm2=""
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      aria-label="caret down icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                    />
+                  </svg>
                 </div>
-                <span
-                  data-css-15b13by=""
-                />
-              </button>
-            </div>
+              </div>
+              <span
+                data-css-15b13by=""
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -202,7 +209,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Hydrogen
-           
+
         </span>
       </li>
       <li
@@ -215,7 +222,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Beryllium
-           
+
         </span>
       </li>
       <li
@@ -228,7 +235,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Boron
-           
+
         </span>
       </li>
       <li
@@ -241,7 +248,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Carbon
-           
+
         </span>
       </li>
       <li
@@ -254,7 +261,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Nitrogren
-           
+
         </span>
       </li>
       <li
@@ -267,7 +274,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Oxygen
-           
+
         </span>
       </li>
       <li
@@ -280,7 +287,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Fluorine
-           
+
         </span>
       </li>
       <li
@@ -293,7 +300,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Neon
-           
+
         </span>
       </li>
       <li
@@ -306,7 +313,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Sodium
-           
+
         </span>
       </li>
       <li
@@ -319,7 +326,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Magnesium
-           
+
         </span>
       </li>
       <li
@@ -332,7 +339,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Aluminum
-           
+
         </span>
       </li>
       <li
@@ -345,7 +352,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Silicon
-           
+
         </span>
       </li>
       <li
@@ -358,7 +365,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Phosphorus
-           
+
         </span>
       </li>
       <li
@@ -371,7 +378,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Sulfur
-           
+
         </span>
       </li>
       <li
@@ -384,7 +391,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Chlorine
-           
+
         </span>
       </li>
       <li
@@ -397,7 +404,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Argon
-           
+
         </span>
       </li>
       <li
@@ -410,7 +417,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Potassium
-           
+
         </span>
       </li>
       <li
@@ -423,7 +430,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Calcium
-           
+
         </span>
       </li>
       <li
@@ -436,7 +443,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Scandium
-           
+
         </span>
       </li>
       <li
@@ -449,7 +456,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Titanium
-           
+
         </span>
       </li>
       <li
@@ -462,7 +469,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Vanadium
-           
+
         </span>
       </li>
       <li
@@ -475,7 +482,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Chromium
-           
+
         </span>
       </li>
       <li
@@ -488,7 +495,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Manganese
-           
+
         </span>
       </li>
       <li
@@ -501,7 +508,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Iron
-           
+
         </span>
       </li>
       <li
@@ -514,7 +521,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Cobalt
-           
+
         </span>
       </li>
       <li
@@ -527,7 +534,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Nickel
-           
+
         </span>
       </li>
       <li
@@ -540,7 +547,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Copper
-           
+
         </span>
       </li>
       <li
@@ -553,7 +560,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Zinc
-           
+
         </span>
       </li>
       <li
@@ -566,7 +573,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Gallium
-           
+
         </span>
       </li>
       <li
@@ -579,7 +586,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Germanium
-           
+
         </span>
       </li>
       <li
@@ -592,7 +599,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Arsenic
-           
+
         </span>
       </li>
       <li
@@ -605,7 +612,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Selenium
-           
+
         </span>
       </li>
       <li
@@ -618,7 +625,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Bromine
-           
+
         </span>
       </li>
       <li
@@ -631,7 +638,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Krypton
-           
+
         </span>
       </li>
       <li
@@ -644,7 +651,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Rubidium
-           
+
         </span>
       </li>
       <li
@@ -657,7 +664,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Strontium
-           
+
         </span>
       </li>
       <li
@@ -670,7 +677,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Yttrium
-           
+
         </span>
       </li>
       <li
@@ -683,7 +690,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
       >
         <span>
           Zirconium
-           
+
         </span>
       </li>
     </ul>
@@ -704,44 +711,43 @@ Array [
     >
       Choose an element
     </label>
-    <div>
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
       <div
-        data-css-8qmpxt=""
+        data-css-1r5pcu2=""
       >
-        <div
-          data-css-1r5pcu2=""
+        <button
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          aria-labelledby="downshift-1-label downshift-1-toggle-button"
+          data-css-1xqnm3u=""
+          id="downshift-1-toggle-button"
+          onClick={[Function]}
+          onKeyDown={[Function]}
         >
-          <button
-            aria-expanded={false}
-            aria-haspopup="listbox"
-            aria-labelledby="downshift-1-label downshift-1-toggle-button"
-            data-css-1xqnm3u=""
-            id="downshift-1-toggle-button"
-            onClick={[Function]}
-            onKeyDown={[Function]}
+          <span>
+            Do something
+          </span>
+          <div
+            data-css-n5p4fh=""
           >
-            <span>
-              Do something
-            </span>
             <div
-              data-css-n5p4fh=""
+              data-css-7dab2f=""
             >
-              <div
-                data-css-7dab2f=""
+              <svg
+                aria-label="caret down icon"
+                role="img"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                />
+              </svg>
             </div>
-          </button>
-        </div>
+          </div>
+        </button>
       </div>
     </div>
     <div
@@ -781,7 +787,7 @@ Array [
       >
         <span>
           Hydrogen
-           
+
         </span>
       </li>
       <li
@@ -794,7 +800,7 @@ Array [
       >
         <span>
           Helium
-           
+
         </span>
       </li>
       <li
@@ -807,7 +813,7 @@ Array [
       >
         <span>
           Lithium
-           
+
         </span>
       </li>
       <li
@@ -820,7 +826,7 @@ Array [
       >
         <span>
           Beryllium
-           
+
         </span>
       </li>
       <li
@@ -833,7 +839,7 @@ Array [
       >
         <span>
           Boron
-           
+
         </span>
       </li>
       <li
@@ -846,7 +852,7 @@ Array [
       >
         <span>
           Carbon
-           
+
         </span>
       </li>
       <li
@@ -859,7 +865,7 @@ Array [
       >
         <span>
           Nitrogren
-           
+
         </span>
       </li>
       <li
@@ -872,7 +878,7 @@ Array [
       >
         <span>
           Oxygen
-           
+
         </span>
       </li>
       <li
@@ -885,7 +891,7 @@ Array [
       >
         <span>
           Fluorine
-           
+
         </span>
       </li>
       <li
@@ -898,7 +904,7 @@ Array [
       >
         <span>
           Neon
-           
+
         </span>
       </li>
       <li
@@ -911,7 +917,7 @@ Array [
       >
         <span>
           Sodium
-           
+
         </span>
       </li>
       <li
@@ -924,7 +930,7 @@ Array [
       >
         <span>
           Magnesium
-           
+
         </span>
       </li>
       <li
@@ -937,7 +943,7 @@ Array [
       >
         <span>
           Aluminum
-           
+
         </span>
       </li>
       <li
@@ -950,7 +956,7 @@ Array [
       >
         <span>
           Silicon
-           
+
         </span>
       </li>
       <li
@@ -963,7 +969,7 @@ Array [
       >
         <span>
           Phosphorus
-           
+
         </span>
       </li>
       <li
@@ -976,7 +982,7 @@ Array [
       >
         <span>
           Sulfur
-           
+
         </span>
       </li>
       <li
@@ -989,7 +995,7 @@ Array [
       >
         <span>
           Chlorine
-           
+
         </span>
       </li>
       <li
@@ -1002,7 +1008,7 @@ Array [
       >
         <span>
           Argon
-           
+
         </span>
       </li>
       <li
@@ -1015,7 +1021,7 @@ Array [
       >
         <span>
           Potassium
-           
+
         </span>
       </li>
       <li
@@ -1028,7 +1034,7 @@ Array [
       >
         <span>
           Calcium
-           
+
         </span>
       </li>
       <li
@@ -1041,7 +1047,7 @@ Array [
       >
         <span>
           Scandium
-           
+
         </span>
       </li>
       <li
@@ -1054,7 +1060,7 @@ Array [
       >
         <span>
           Titanium
-           
+
         </span>
       </li>
       <li
@@ -1067,7 +1073,7 @@ Array [
       >
         <span>
           Vanadium
-           
+
         </span>
       </li>
       <li
@@ -1080,7 +1086,7 @@ Array [
       >
         <span>
           Chromium
-           
+
         </span>
       </li>
       <li
@@ -1093,7 +1099,7 @@ Array [
       >
         <span>
           Manganese
-           
+
         </span>
       </li>
       <li
@@ -1106,7 +1112,7 @@ Array [
       >
         <span>
           Iron
-           
+
         </span>
       </li>
       <li
@@ -1119,7 +1125,7 @@ Array [
       >
         <span>
           Cobalt
-           
+
         </span>
       </li>
       <li
@@ -1132,7 +1138,7 @@ Array [
       >
         <span>
           Nickel
-           
+
         </span>
       </li>
       <li
@@ -1145,7 +1151,7 @@ Array [
       >
         <span>
           Copper
-           
+
         </span>
       </li>
       <li
@@ -1158,7 +1164,7 @@ Array [
       >
         <span>
           Zinc
-           
+
         </span>
       </li>
       <li
@@ -1171,7 +1177,7 @@ Array [
       >
         <span>
           Gallium
-           
+
         </span>
       </li>
       <li
@@ -1184,7 +1190,7 @@ Array [
       >
         <span>
           Germanium
-           
+
         </span>
       </li>
       <li
@@ -1197,7 +1203,7 @@ Array [
       >
         <span>
           Arsenic
-           
+
         </span>
       </li>
       <li
@@ -1210,7 +1216,7 @@ Array [
       >
         <span>
           Selenium
-           
+
         </span>
       </li>
       <li
@@ -1223,7 +1229,7 @@ Array [
       >
         <span>
           Bromine
-           
+
         </span>
       </li>
       <li
@@ -1236,7 +1242,7 @@ Array [
       >
         <span>
           Krypton
-           
+
         </span>
       </li>
       <li
@@ -1249,7 +1255,7 @@ Array [
       >
         <span>
           Rubidium
-           
+
         </span>
       </li>
       <li
@@ -1262,7 +1268,7 @@ Array [
       >
         <span>
           Strontium
-           
+
         </span>
       </li>
       <li
@@ -1275,7 +1281,7 @@ Array [
       >
         <span>
           Yttrium
-           
+
         </span>
       </li>
       <li
@@ -1288,7 +1294,7 @@ Array [
       >
         <span>
           Zirconium
-           
+
         </span>
       </li>
     </ul>
@@ -1311,72 +1317,72 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
     >
       Some label text
     </label>
-    <div>
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
       <div
-        data-css-8qmpxt=""
+        data-css-1a24qct=""
+        data-css-1q3e54w=""
       >
         <div
-          data-css-1a24qct=""
-          data-css-1q3e54w=""
+          data-css-1ecjssy=""
         >
           <div
-            data-css-1ecjssy=""
+            data-css-lxaqlq=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={-1}
           >
             <div
-              data-css-lxaqlq=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              tabIndex={-1}
+              data-css-1djcb20=""
             >
               <div
-                data-css-1djcb20=""
+                aria-pressed={true}
+                data-css-146no9u=""
               >
                 <div
                   aria-pressed={true}
                   data-css-8a12hv=""
                 >
-                  <span
-                    data-css-13bnfv4=""
-                  >
-                    Helium
-                  </span>
-                  <div
-                    data-css-1gzzcm2=""
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "cursor": "pointer",
-                      }
+                  Helium
+                </span>
+                <div
+                  data-css-1gzzcm2=""
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
                     }
+                  }
+                >
+                  <svg
+                    aria-label="close icon"
+                    role="img"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      aria-label="close icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
-            <div
-              data-css-lxaqlq=""
-              data-css-n9fe5c=""
-            >
-              <input
-                data-css-1ffn65r=""
-                data-css-1na6nif=""
-                id="tags-input__input-unique-id"
-                onChange={[Function]}
-                onClick={[Function]}
-                onKeyDown={[Function]}
-                type="text"
-                value=""
-              />
-            </div>
+          </div>
+          <div
+            data-css-lxaqlq=""
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-1ffn65r=""
+              data-css-1na6nif=""
+              id="tags-input__input-unique-id"
+              onChange={[Function]}
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              type="text"
+              value=""
+            />
           </div>
         </div>
       </div>
@@ -1397,7 +1403,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Hydrogen
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1408,7 +1414,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Lithium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1419,7 +1425,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Beryllium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1430,7 +1436,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Boron
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1441,7 +1447,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Carbon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1452,7 +1458,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Nitrogren
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1463,7 +1469,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Oxygen
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1474,7 +1480,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Fluorine
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1485,7 +1491,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Neon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1496,7 +1502,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Sodium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1507,7 +1513,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Magnesium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1518,7 +1524,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Aluminum
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1529,7 +1535,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Silicon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1540,7 +1546,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Phosphorus
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1551,7 +1557,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Sulfur
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1562,7 +1568,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Chlorine
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1573,7 +1579,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Argon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1584,7 +1590,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Potassium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1595,7 +1601,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Calcium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1606,7 +1612,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Scandium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1617,7 +1623,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Titanium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1628,7 +1634,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Vanadium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1639,7 +1645,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Chromium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1650,7 +1656,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Manganese
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1661,7 +1667,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Iron
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1672,7 +1678,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Cobalt
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1683,7 +1689,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Nickel
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1694,7 +1700,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Copper
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1705,7 +1711,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Zinc
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1716,7 +1722,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Gallium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1727,7 +1733,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Germanium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1738,7 +1744,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Arsenic
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1749,7 +1755,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Selenium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1760,7 +1766,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Bromine
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1771,7 +1777,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Krypton
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1782,7 +1788,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Rubidium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1793,7 +1799,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Strontium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1804,7 +1810,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Yttrium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1815,7 +1821,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
       <li>
         <span>
           Zirconium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1843,86 +1849,86 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
     >
       Some label text
     </label>
-    <div>
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
       <div
-        data-css-8qmpxt=""
+        data-css-1a24qct=""
+        data-css-1q3e54w=""
       >
         <div
-          data-css-1a24qct=""
-          data-css-1q3e54w=""
+          data-css-1ecjssy=""
         >
           <div
-            data-css-1ecjssy=""
+            data-css-lxaqlq=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={-1}
           >
             <div
-              data-css-lxaqlq=""
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              tabIndex={-1}
+              data-css-1djcb20=""
             >
               <div
-                data-css-1djcb20=""
+                aria-pressed={true}
+                data-css-146no9u=""
               >
                 <div
                   aria-pressed={true}
                   data-css-8a12hv=""
                 >
-                  <span
-                    data-css-13bnfv4=""
-                  >
-                    Helium
-                  </span>
-                  <div
-                    data-css-1gzzcm2=""
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "cursor": "pointer",
-                      }
+                  Helium
+                </span>
+                <div
+                  data-css-1gzzcm2=""
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
                     }
+                  }
+                >
+                  <svg
+                    aria-label="close icon"
+                    role="img"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      aria-label="close icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
-            <div
-              data-css-lxaqlq=""
-              data-css-n9fe5c=""
-            >
-              <input
-                data-css-1ffn65r=""
-                data-css-1na6nif=""
-                id="tags-input__input-unique-id"
-                onChange={[Function]}
-                onClick={[Function]}
-                onKeyDown={[Function]}
-                type="text"
-                value=""
-              />
-            </div>
           </div>
           <div
-            data-css-n5p4fh=""
+            data-css-lxaqlq=""
+            data-css-n9fe5c=""
           >
-            <div
-              data-css-b8eohb=""
+            <input
+              data-css-1ffn65r=""
+              data-css-1na6nif=""
+              id="tags-input__input-unique-id"
+              onChange={[Function]}
               onClick={[Function]}
+              onKeyDown={[Function]}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          data-css-n5p4fh=""
+        >
+          <div
+            data-css-b8eohb=""
+            onClick={[Function]}
+          >
+            <p
+              data-css-1ea0ufb=""
             >
-              <p
-                data-css-1ea0ufb=""
-              >
-                custom suffix
-              </p>
-            </div>
+              custom suffix
+            </p>
           </div>
         </div>
       </div>
@@ -1943,7 +1949,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Hydrogen
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1954,7 +1960,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Lithium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1965,7 +1971,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Beryllium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1976,7 +1982,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Boron
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1987,7 +1993,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Carbon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -1998,7 +2004,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Nitrogren
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2009,7 +2015,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Oxygen
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2020,7 +2026,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Fluorine
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2031,7 +2037,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Neon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2042,7 +2048,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Sodium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2053,7 +2059,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Magnesium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2064,7 +2070,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Aluminum
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2075,7 +2081,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Silicon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2086,7 +2092,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Phosphorus
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2097,7 +2103,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Sulfur
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2108,7 +2114,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Chlorine
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2119,7 +2125,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Argon
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2130,7 +2136,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Potassium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2141,7 +2147,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Calcium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2152,7 +2158,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Scandium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2163,7 +2169,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Titanium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2174,7 +2180,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Vanadium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2185,7 +2191,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Chromium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2196,7 +2202,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Manganese
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2207,7 +2213,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Iron
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2218,7 +2224,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Cobalt
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2229,7 +2235,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Nickel
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2240,7 +2246,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Copper
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2251,7 +2257,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Zinc
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2262,7 +2268,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Gallium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2273,7 +2279,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Germanium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2284,7 +2290,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Arsenic
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2295,7 +2301,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Selenium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2306,7 +2312,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Bromine
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2317,7 +2323,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Krypton
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2328,7 +2334,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Rubidium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2339,7 +2345,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Strontium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2350,7 +2356,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Yttrium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2361,7 +2367,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
       <li>
         <span>
           Zirconium
-           
+
         </span>
         <button
           onClick={[Function]}
@@ -2386,23 +2392,22 @@ exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
   >
     Text area label area
   </label>
-  <div>
+  <div
+    data-css-63oe3q=""
+    data-css-8qmpxt=""
+  >
     <div
-      data-css-8qmpxt=""
+      data-css-1r5pcu2=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-n9fe5c=""
       >
-        <div
-          data-css-n9fe5c=""
-        >
-          <textarea
-            data-css-1mpu7ok=""
-            id="text-area__area-unique-id"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
+        <textarea
+          data-css-1mpu7ok=""
+          id="text-area__area-unique-id"
+          onChange={[Function]}
+          value=""
+        />
       </div>
     </div>
   </div>
@@ -2426,24 +2431,23 @@ exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
   >
     Text area label area
   </label>
-  <div>
+  <div
+    data-css-63oe3q=""
+    data-css-8qmpxt=""
+  >
     <div
-      data-css-8qmpxt=""
+      data-css-1r5pcu2=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-n9fe5c=""
       >
-        <div
-          data-css-n9fe5c=""
-        >
-          <textarea
-            data-css-1mpu7ok=""
-            disabled={true}
-            id="text-area__area-unique-id"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
+        <textarea
+          data-css-1mpu7ok=""
+          disabled={true}
+          id="text-area__area-unique-id"
+          onChange={[Function]}
+          value=""
+        />
       </div>
     </div>
   </div>
@@ -2467,12 +2471,25 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
   >
     Text area label area
   </label>
-  <div>
+  <div
+    data-css-63oe3q=""
+    data-css-8ff2sc=""
+  >
     <div
       data-css-1tidrro=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-n9fe5c=""
+      >
+        <textarea
+          data-css-1mpu7ok=""
+          id="text-area__area-unique-id"
+          onChange={[Function]}
+          value=""
+        />
+      </div>
+      <div
+        data-css-qrpvsu=""
       >
         <div
           data-css-n9fe5c=""
@@ -2487,21 +2504,17 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
         <div
           data-css-z6m763=""
         >
-          <div
-            data-css-7dab2f=""
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-label="warning icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                clipRule="evenodd"
-                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </div>
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
         </div>
       </div>
     </div>
@@ -2526,40 +2539,39 @@ exports[`Storyshots Components/Field/TextAreaField Icon Prefix 1`] = `
   >
     Text area label area
   </label>
-  <div>
+  <div
+    data-css-63oe3q=""
+    data-css-8qmpxt=""
+  >
     <div
-      data-css-8qmpxt=""
+      data-css-1r5pcu2=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-1tx8me8=""
       >
         <div
-          data-css-1tx8me8=""
+          data-css-7dab2f=""
         >
-          <div
-            data-css-7dab2f=""
+          <svg
+            aria-label="placeholder icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-label="placeholder icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-              />
-            </svg>
-          </div>
+            <path
+              d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+            />
+          </svg>
         </div>
-        <div
-          data-css-n9fe5c=""
-        >
-          <textarea
-            data-css-1mpu7ok=""
-            id="text-area__area-unique-id"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
+      </div>
+      <div
+        data-css-n9fe5c=""
+      >
+        <textarea
+          data-css-1mpu7ok=""
+          id="text-area__area-unique-id"
+          onChange={[Function]}
+          value=""
+        />
       </div>
     </div>
   </div>
@@ -2583,39 +2595,38 @@ exports[`Storyshots Components/Field/TextAreaField Icon Suffix 1`] = `
   >
     Text area label area
   </label>
-  <div>
+  <div
+    data-css-63oe3q=""
+    data-css-8qmpxt=""
+  >
     <div
-      data-css-8qmpxt=""
+      data-css-1r5pcu2=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-n9fe5c=""
+      >
+        <textarea
+          data-css-1mpu7ok=""
+          id="text-area__area-unique-id"
+          onChange={[Function]}
+          value=""
+        />
+      </div>
+      <div
+        data-css-n5p4fh=""
       >
         <div
-          data-css-n9fe5c=""
+          data-css-7dab2f=""
         >
-          <textarea
-            data-css-1mpu7ok=""
-            id="text-area__area-unique-id"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
-        <div
-          data-css-n5p4fh=""
-        >
-          <div
-            data-css-7dab2f=""
+          <svg
+            aria-label="placeholder icon"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-label="placeholder icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-              />
-            </svg>
-          </div>
+            <path
+              d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+            />
+          </svg>
         </div>
       </div>
     </div>
@@ -2640,23 +2651,22 @@ exports[`Storyshots Components/Field/TextAreaField Size Small 1`] = `
   >
     Text area label area
   </label>
-  <div>
+  <div
+    data-css-63oe3q=""
+    data-css-8qmpxt=""
+  >
     <div
-      data-css-8qmpxt=""
+      data-css-1q3e54w=""
     >
       <div
-        data-css-1q3e54w=""
+        data-css-n9fe5c=""
       >
-        <div
-          data-css-n9fe5c=""
-        >
-          <textarea
-            data-css-1mpu7ok=""
-            id="text-area__area-unique-id"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
+        <textarea
+          data-css-1mpu7ok=""
+          id="text-area__area-unique-id"
+          onChange={[Function]}
+          value=""
+        />
       </div>
     </div>
   </div>
@@ -2680,24 +2690,23 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
   >
     Text area label area
   </label>
-  <div>
+  <div
+    data-css-63oe3q=""
+    data-css-8qmpxt=""
+  >
     <div
-      data-css-8qmpxt=""
+      data-css-1r5pcu2=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-n9fe5c=""
       >
-        <div
-          data-css-n9fe5c=""
-        >
-          <textarea
-            data-css-1mpu7ok=""
-            id="text-area__area-unique-id"
-            onChange={[Function]}
-            placeholder="Enter some text here"
-            value=""
-          />
-        </div>
+        <textarea
+          data-css-1mpu7ok=""
+          id="text-area__area-unique-id"
+          onChange={[Function]}
+          placeholder="Enter some text here"
+          value=""
+        />
       </div>
     </div>
   </div>
@@ -2711,18 +2720,22 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
 <div
-  data-css-w0yocm=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
+      data-css-63oe3q=""
       data-css-8qmpxt=""
     >
       <div
@@ -2750,18 +2763,22 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
 <div
-  data-css-h2yjsn=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
+      data-css-63oe3q=""
       data-css-8qmpxt=""
     >
       <div
@@ -2790,17 +2807,20 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Error 1`] = `
 <div
-  data-css-w0yocm=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
       data-css-1tidrro=""
     >
@@ -2848,18 +2868,22 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
 <div
-  data-css-w0yocm=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
+      data-css-63oe3q=""
       data-css-8qmpxt=""
     >
       <div
@@ -2904,18 +2928,22 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
 <div
-  data-css-w0yocm=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
+      data-css-63oe3q=""
       data-css-8qmpxt=""
     >
       <div
@@ -2960,18 +2988,22 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
 <div
-  data-css-w0yocm=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
+      data-css-63oe3q=""
       data-css-8qmpxt=""
     >
       <div
@@ -3016,18 +3048,22 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
 <div
-  data-css-w0yocm=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
+      data-css-63oe3q=""
       data-css-8qmpxt=""
     >
       <div
@@ -3044,29 +3080,88 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
         </div>
       </div>
     </div>
+    <div
+      data-css-1s76hio=""
+    >
+      Area for additional information
+    </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/Field/TextInputField Style Override Display Block 1`] = `
+<div
+  data-css-z8g6as=""
+>
   <div
     data-css-bv851e=""
   >
-    Area for additional information
+    <div
+      data-css-pifd7f=""
+    >
+      <div
+        data-css-w0yocm=""
+        onClick={[Function]}
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      >
+        <label
+          data-css-ep1lt2=""
+          htmlFor="text-input__input-unique-id"
+          id="text-input__label-unique-id"
+        >
+          Text input label area
+        </label>
+        <div
+          data-css-63oe3q=""
+          data-css-8qmpxt=""
+        >
+          <div
+            data-css-1r5pcu2=""
+          >
+            <div
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-1na6nif=""
+                id="text-input__input-unique-id"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          data-css-1s76hio=""
+        >
+          Area for additional information
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
 <div
-  data-css-w0yocm=""
-  onClick={[Function]}
+  data-css-z8g6as=""
 >
   <label
     data-css-5jjrbq=""
     htmlFor="text-input__input-unique-id"
     id="text-input__label-unique-id"
   >
-    Text input label area
-  </label>
-  <div>
+    <label
+      data-css-ep1lt2=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
     <div
+      data-css-63oe3q=""
       data-css-8qmpxt=""
     >
       <div

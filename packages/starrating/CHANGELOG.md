@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.3.18...@pluralsight/ps-design-system-starrating@7.3.19) (2021-02-04)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-starrating
+
+
+
+
+
 ## [7.3.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@7.3.17...@pluralsight/ps-design-system-starrating@7.3.18) (2021-02-01)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating

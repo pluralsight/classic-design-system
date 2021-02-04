@@ -11948,6 +11948,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -11976,6 +11977,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12004,6 +12006,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12032,6 +12035,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12060,6 +12064,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12088,6 +12093,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12116,6 +12122,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12144,6 +12151,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12196,6 +12204,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12224,6 +12233,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12252,6 +12262,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12280,6 +12291,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12308,6 +12320,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12336,6 +12349,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12364,6 +12378,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}
@@ -12392,6 +12407,7 @@ exports[`Storyshots Carousel/with ActionMenu positioned child 1`] = `
                   tabIndex={-1}
                 >
                   <a
+                    aria-disabled={false}
                     aria-haspopup={false}
                     data-css-1v7ok0h=""
                     onClick={[Function]}

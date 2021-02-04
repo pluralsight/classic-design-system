@@ -58,6 +58,54 @@ const Example = () => <TextInputField />
 export default Example
 ```
 
+Fields are designed to display inline but can be changed to block display. Doing
+so will allow the contents to stretch fully to the parent's width.
+
+> You can apply additional styles, like `display`, to the outermost container using the prop `renderContainer`.
+
+```typescript
+import React, { ComponentProps, forwardRef } from 'react'
+import Field from '@pluralsight/ps-design-system-field'
+
+const BlockRenderContainer = forwardRef((props, ref) => (
+  <div ref={ref} {...props} style={{ display: 'block'}} />
+))
+
+const TextInputField: React.FC<ComponentProps<typeof Field>> = (props) => {
+  const { disabled, placeholder, type = 'text', ...rest } = props
+
+  const labelId = 'this-needs-to-be-a-unique-label-id-1'
+  const inputId = 'this-needs-to-be-a-unique-input-id-1'
+
+  return (
+    <Field
+      renderContainer={BlockRenderContainer}
+      disabled={disabled}
+      label={
+        <Field.Label htmlFor={inputId} id={labelId}>
+        My content stretchs fully to my parent's width
+        </Field.Label>
+      }
+      subLabel={
+        <Field.SubLabel>Area for additional information</Field.SubLabel>
+      }
+      {...rest}
+    >
+      <Field.Input
+        disabled={disabled}
+        id={inputId}
+        placeholder={placeholder}
+        type={type}
+      />
+    </Field>
+  )
+}
+
+const Example = () => <TextInputField />
+
+export default Example
+```
+
 ### Text area field
 
 An example of creating a basic textarea field component that grows with the content.

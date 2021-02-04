@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-appframe",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "AppFrame UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -23,10 +23,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^20.0.1",
+    "@pluralsight/ps-design-system-button": "^20.0.2",
     "@pluralsight/ps-design-system-core": "^6.8.0",
-    "@pluralsight/ps-design-system-scrollable": "^4.0.2",
-    "@pluralsight/ps-design-system-util": "^7.0.0",
+    "@pluralsight/ps-design-system-scrollable": "^4.0.3",
+    "@pluralsight/ps-design-system-util": "^7.0.1",
     "body-scroll-lock": "^3.0.3",
     "exenv": "^1.2.2",
     "focus-within": "^3.0.2"
@@ -40,16 +40,16 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.3",
     "@pluralsight/ps-design-system-button": "*",
-    "@pluralsight/ps-design-system-icon": "^20.0.1",
-    "@pluralsight/ps-design-system-layout": "^8.0.2",
-    "@pluralsight/ps-design-system-navbar": "^2.0.1",
-    "@pluralsight/ps-design-system-navbrand": "^2.0.1",
-    "@pluralsight/ps-design-system-navitem": "^2.0.1",
-    "@pluralsight/ps-design-system-navuser": "^2.0.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.3.0",
-    "@pluralsight/ps-design-system-text": "^18.0.2",
-    "@pluralsight/ps-design-system-theme": "^7.0.0",
-    "@pluralsight/ps-design-system-verticaltabs": "^5.0.1",
+    "@pluralsight/ps-design-system-icon": "^20.0.2",
+    "@pluralsight/ps-design-system-layout": "^8.0.3",
+    "@pluralsight/ps-design-system-navbar": "^2.0.2",
+    "@pluralsight/ps-design-system-navbrand": "^2.0.2",
+    "@pluralsight/ps-design-system-navitem": "^2.0.2",
+    "@pluralsight/ps-design-system-navuser": "^2.0.2",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.3.1",
+    "@pluralsight/ps-design-system-text": "^18.0.3",
+    "@pluralsight/ps-design-system-theme": "^7.0.1",
+    "@pluralsight/ps-design-system-verticaltabs": "^5.0.2",
     "@types/body-scroll-lock": "^2.6.1"
   }
 }
