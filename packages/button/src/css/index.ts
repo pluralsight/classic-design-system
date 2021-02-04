@@ -43,7 +43,7 @@ export default {
     textAlign: 'center',
     whiteSpace: 'nowrap',
     textDecoration: 'none',
-    transition: `all ${motion.speedXFast}`,
+    transition: `background ${motion.speedFast}, transform ${motion.speedXFast}`,
     verticalAlign: 'middle',
     '&:not([disabled]):hover': {
       cursor: 'pointer'
