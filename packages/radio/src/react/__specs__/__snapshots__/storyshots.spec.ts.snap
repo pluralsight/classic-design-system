@@ -288,8 +288,8 @@ exports[`Storyshots Radio disabled & error 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1mtgsq9=""
             data-css-iwspcj=""
+            data-css-j6capy=""
           >
             <div
               aria-checked={false}
@@ -321,8 +321,8 @@ exports[`Storyshots Radio disabled & error 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1mtgsq9=""
             data-css-iwspcj=""
+            data-css-j6capy=""
           >
             <div
               aria-checked={true}
@@ -358,8 +358,8 @@ exports[`Storyshots Radio disabled & error 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1mtgsq9=""
             data-css-iwspcj=""
+            data-css-j6capy=""
           >
             <div
               aria-checked={false}
@@ -535,7 +535,7 @@ exports[`Storyshots Radio error 1`] = `
         >
           <div
             data-css-iwspcj=""
-            data-css-xs8u9z=""
+            data-css-mmyfiy=""
           >
             <div
               aria-checked={false}
@@ -569,7 +569,7 @@ exports[`Storyshots Radio error 1`] = `
         >
           <div
             data-css-iwspcj=""
-            data-css-xs8u9z=""
+            data-css-mmyfiy=""
           >
             <div
               aria-checked={true}
@@ -607,7 +607,7 @@ exports[`Storyshots Radio error 1`] = `
         >
           <div
             data-css-iwspcj=""
-            data-css-xs8u9z=""
+            data-css-mmyfiy=""
           >
             <div
               aria-checked={false}

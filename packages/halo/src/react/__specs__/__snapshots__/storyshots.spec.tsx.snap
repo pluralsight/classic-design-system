@@ -12,7 +12,7 @@ exports[`Storyshots Halo/error false 1`] = `
 
 exports[`Storyshots Halo/error true 1`] = `
 <div
-  data-css-1epd8xq=""
+  data-css-in6gqi=""
 >
   <div>
     error
@@ -66,7 +66,7 @@ exports[`Storyshots Halo/shapes pill 1`] = `
 
 exports[`Storyshots Halo/visible false & error 1`] = `
 <div
-  data-css-1epd8xq=""
+  data-css-in6gqi=""
 >
   <div>
     not visible (always visible if error) & error
@@ -116,7 +116,7 @@ exports[`Storyshots Halo/visible true 1`] = `
 
 exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
 <div
-  data-css-1epd8xq=""
+  data-css-in6gqi=""
 >
   <div>
     visible when focused with error

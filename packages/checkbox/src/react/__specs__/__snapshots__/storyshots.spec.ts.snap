@@ -153,7 +153,7 @@ exports[`Storyshots Checkbox disabled & errored 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      data-css-c6wckm=""
+      data-css-1xpuf1q=""
     >
       <input
         data-css-6wu9td=""
@@ -228,7 +228,7 @@ exports[`Storyshots Checkbox error 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1oy6az8=""
+        data-css-f76l29=""
       >
         <input
           checked={true}
@@ -267,7 +267,7 @@ exports[`Storyshots Checkbox error 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        data-css-1oy6az8=""
+        data-css-f76l29=""
       >
         <input
           data-css-6wu9td=""
