@@ -209,10 +209,13 @@ const MultiSelectField: MultiSelectFieldComponent = props => {
             placeholder={placeholder}
             value={searchTerm}
             {...getInputProps({
-              ...getDropdownProps({ preventKeyAction: isOpen }),
-              onFocus: () => {
-                openMenu()
-              }
+              ...getDropdownProps({
+                onFocus: () => {
+                  if (isOpen) return
+                  openMenu()
+                },
+                preventKeyAction: isOpen
+              })
             })}
           />
         </Pills>
