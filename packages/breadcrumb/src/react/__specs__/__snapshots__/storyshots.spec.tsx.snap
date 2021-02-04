@@ -5,7 +5,7 @@ exports[`Storyshots as link hrefs 1`] = `
   data-css-nipl9k=""
 >
   <a
-    data-css-1ohap0j=""
+    data-css-n726ta=""
     href="https://duckduckgo.com"
     style={Object {}}
   >
@@ -40,7 +40,7 @@ exports[`Storyshots disabled disabled 1`] = `
   data-css-nipl9k=""
 >
   <button
-    data-css-1ppcfhc=""
+    data-css-1nn4jjv=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
@@ -76,7 +76,7 @@ exports[`Storyshots normal looks great 1`] = `
   data-css-nipl9k=""
 >
   <button
-    data-css-1ohap0j=""
+    data-css-n726ta=""
     disabled={false}
     style={Object {}}
   >
@@ -111,7 +111,7 @@ exports[`Storyshots with onClick clicks once 1`] = `
   data-css-nipl9k=""
 >
   <button
-    data-css-1ohap0j=""
+    data-css-n726ta=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}

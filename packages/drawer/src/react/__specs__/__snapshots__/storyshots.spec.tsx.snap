@@ -383,7 +383,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
         data-css-7b22zo=""
       >
         <button
-          data-css-1w9jmcf=""
+          data-css-1b3czpf=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
@@ -953,7 +953,7 @@ exports[`Storyshots drawer with row component 1`] = `
         data-css-7zyoug=""
       >
         <button
-          data-css-1w9jmcf=""
+          data-css-1b3czpf=""
           disabled={false}
           style={Object {}}
         >

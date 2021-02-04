@@ -136,7 +136,7 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           type="search"
         />
         <button
-          data-css-1w9jmcf=""
+          data-css-1b3czpf=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
@@ -234,7 +234,7 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           type="search"
         />
         <button
-          data-css-1w9jmcf=""
+          data-css-1b3czpf=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}

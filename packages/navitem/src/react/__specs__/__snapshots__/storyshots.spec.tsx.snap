@@ -336,7 +336,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
 exports[`Storyshots NavItem position 1`] = `
 <div>
   <button
-    data-css-1tam86v=""
+    data-css-1swwsjd=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}

@@ -140,7 +140,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
             >
               <button
                 aria-label="toggle menu"
-                data-css-1f2x5lu=""
+                data-css-b5utls=""
                 disabled={false}
                 id="downshift-0-toggle-button"
                 onClick={[Function]}

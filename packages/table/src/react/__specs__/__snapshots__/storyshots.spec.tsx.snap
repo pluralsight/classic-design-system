@@ -1556,7 +1556,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1650,7 +1650,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1744,7 +1744,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1838,7 +1838,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -1932,7 +1932,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2098,7 +2098,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2187,7 +2187,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2276,7 +2276,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2365,7 +2365,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}
@@ -2454,7 +2454,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-1fi9n1z=""
+            data-css-1n225x7=""
             disabled={false}
             onClick={[Function]}
             style={Object {}}

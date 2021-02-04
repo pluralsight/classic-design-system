@@ -9,7 +9,7 @@ exports[`Storyshots AppFrame no sidenav 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-1582bk9=""
+      data-css-126k7md=""
       disabled={false}
       style={Object {}}
       tabIndex={0}
@@ -215,7 +215,7 @@ exports[`Storyshots AppFrame scrollable sidenav 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-1582bk9=""
+      data-css-126k7md=""
       disabled={false}
       style={Object {}}
       tabIndex={0}
@@ -463,7 +463,7 @@ exports[`Storyshots AppFrame short content 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-1582bk9=""
+      data-css-126k7md=""
       disabled={false}
       style={Object {}}
       tabIndex={0}
@@ -792,7 +792,7 @@ exports[`Storyshots AppFrame sidenav controlled 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-1582bk9=""
+      data-css-126k7md=""
       disabled={false}
       style={Object {}}
       tabIndex={0}
@@ -1219,7 +1219,7 @@ exports[`Storyshots AppFrame sidenav uncontrolled 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-1582bk9=""
+      data-css-126k7md=""
       disabled={false}
       style={Object {}}
       tabIndex={0}
@@ -1646,7 +1646,7 @@ exports[`Storyshots AppFrame|Examples Skills 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-1582bk9=""
+      data-css-126k7md=""
       disabled={false}
       style={Object {}}
       tabIndex={0}
