@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@7.0.0...@pluralsight/ps-design-system-util@7.0.1) (2021-02-04)
+
+
+### Bug Fixes
+
+* **util:** react 17 patch ([#1592](https://github.com/pluralsight/design-system/issues/1592)) ([c510b37](https://github.com/pluralsight/design-system/commit/c510b375be281ed7653365a2658e64f330be88ad))
+
+
+
+
+
 # [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@6.0.10...@pluralsight/ps-design-system-util@7.0.0) (2021-01-25)
 
 
