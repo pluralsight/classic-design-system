@@ -1,29 +1,41 @@
 import { useCombobox, useMultipleSelection } from 'downshift'
-import { compose, css } from 'glamor'
+import { css } from 'glamor'
 import React, {
   ChangeEventHandler,
   Children,
   ComponentProps,
+  MouseEvent,
+  MouseEventHandler,
   ReactElement,
   SyntheticEvent,
+  forwardRef,
   isValidElement,
-  useEffect,
-  useState,
-  useMemo
+  useMemo,
+  useState
 } from 'react'
 
+import { CaretDownIcon, CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
+import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
 import { FilterFn, OnStateChangeFn, Option, StateReducer } from './types'
-import { arraysAreEqual, noop, simpleTextFilter, switchcase } from './utils'
+import { noop, simpleTextFilter, switchcase } from './utils'
 
 const { stateChangeTypes } = useCombobox
 
 const styles = {
-  multiSelectField: () => compose(css(stylesheet['.psds-multi-select-field']))
+  multiSelectField: () => css(stylesheet['.psds-multi-select']),
+  renderTag: () => css(stylesheet['.psds-multi-select__render-tag']),
+  caret: () => css(stylesheet['.psds-multi-select__caret']),
+
+  inputContainer: () => css(stylesheet['.psds-multi-select__input-container']),
+  input: () => css(stylesheet['.psds-multi-select__input']),
+
+  pills: () => css(stylesheet['.psds-multi-select__pills']),
+  pill: () => css(stylesheet['.psds-multi-select__pill'])
 }
 
 interface MultiSelectFieldProps
@@ -31,13 +43,12 @@ interface MultiSelectFieldProps
     ComponentProps<typeof Field>,
     'children' | 'label' | 'onChange' | 'subLabel'
   > {
-  label: string
-  subLabel?: string
   filterFn?: FilterFn
-  // loading?: boolean
+  label: string
   menu: ReactElement<typeof Item>[]
-  onChange: (evt: SyntheticEvent, nextValue: string) => void
+  onChange: (evt: SyntheticEvent | null, nextValue: string[]) => void
   placeholder?: string
+  subLabel?: string
   value: string[]
 }
 
@@ -51,7 +62,6 @@ type MultiSelectFieldComponent = React.FC<MultiSelectFieldProps> &
 
 const MultiSelectField: MultiSelectFieldComponent = props => {
   const {
-    children,
     disabled,
     filterFn = simpleTextFilter,
     label,
@@ -63,58 +73,57 @@ const MultiSelectField: MultiSelectFieldComponent = props => {
     ...rest
   } = props
 
-  const [innerValue, setInnerValue] = useState(value)
-  useEffect(
-    function updateControlledValue() {
-      if (arraysAreEqual<string>(value, innerValue)) return
-      setInnerValue(value)
-    },
-    [innerValue, value]
-  )
-
   const [searchTerm, setSearchTerm] = useState('')
   const handleInputChange: ChangeEventHandler<HTMLInputElement> = evt => {
     setSearchTerm(evt.target.value)
   }
 
-  const [options, initialSelectedItems] = useMemo(() => {
-    const opts: Option[] = Children.toArray(menu).reduce<Option[]>(
-      (acc, child) => {
-        if (!isValidElement(child)) return acc
+  const options = useMemo(() => {
+    return Children.toArray(menu).reduce<Option[]>((acc, child) => {
+      if (!isValidElement(child)) return acc
 
-        const { children: label, value } = child.props
-        return acc.concat([{ label, value }])
-      },
-      []
-    )
-
-    const initialItems: string[] = opts.map(o => o.value)
-
-    return [opts, initialItems]
+      const { children: label, value } = child.props
+      return acc.concat([{ label, value }])
+    }, [])
   }, [menu])
 
   const {
-    getSelectedItemProps,
-    getDropdownProps,
     addSelectedItem,
+    getDropdownProps,
+    getSelectedItemProps,
     removeSelectedItem,
     selectedItems
-  } = useMultipleSelection({ initialSelectedItems })
+  } = useMultipleSelection({
+    onSelectedItemsChange: changes => {
+      const { selectedItems: nextValue = [] } = changes
+      onChange(null, nextValue)
+    },
+    selectedItems: value
+  })
+
+  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: string) => {
+    evt.stopPropagation()
+    removeSelectedItem(item)
+  }
+
+  const unselectedOptions = useMemo(() => {
+    return options.filter(o => !selectedItems.includes(o.value))
+  }, [options, selectedItems])
 
   const filteredItems = useMemo(() => {
-    const results = filterFn(searchTerm, options)
+    const results = filterFn(searchTerm, unselectedOptions)
     return results.map(o => o.value)
-  }, [options, filterFn, searchTerm])
+  }, [unselectedOptions, filterFn, searchTerm])
 
   const {
-    isOpen,
-    getToggleButtonProps,
+    getComboboxProps,
+    getInputProps,
+    getItemProps,
     getLabelProps,
     getMenuProps,
-    getInputProps,
-    getComboboxProps,
     highlightedIndex,
-    getItemProps
+    isOpen,
+    openMenu
   } = useCombobox({
     defaultHighlightedIndex: 0,
     inputValue: searchTerm,
@@ -164,22 +173,81 @@ const MultiSelectField: MultiSelectFieldComponent = props => {
   })
 
   return (
-    <Field
-      disabled={disabled}
-      label={<Field.Label {...getLabelProps()}>{label}</Field.Label>}
-      {...styles.multiSelectField()}
-      {...rest}
-    >
-      <Field.Input
+    <>
+      <Field
         disabled={disabled}
-        onChange={handleInputChange}
-        placeholder={placeholder}
-        value={searchTerm}
-        {...getInputProps(getDropdownProps({ preventKeyAction: isOpen }))}
-      />
+        label={<Field.Label {...getLabelProps()}>{label}</Field.Label>}
+        subLabel={subLabel && <Field.SubLabel>{subLabel}</Field.SubLabel>}
+        renderTag={RenderTagNoPadding}
+        size={Field.sizes.small}
+        suffix={
+          <div {...styles.caret()}>
+            <CaretDownIcon />
+          </div>
+        }
+        {...styles.multiSelectField()}
+        {...rest}
+      >
+        <Pills {...getComboboxProps()}>
+          {selectedItems.map((selectedItem, index) => {
+            const option = options.find(o => o.value === selectedItem)
+            if (!option) return null
 
-      {/**/}
-    </Field>
+            return (
+              <Pill
+                key={`selected-item-${index}`}
+                onRequestRemove={e => handleRemoveSelected(e, selectedItem)}
+                {...getSelectedItemProps({ selectedItem, index })}
+              >
+                {option.label}
+              </Pill>
+            )
+          })}
+          <PillAdjacentInput
+            disabled={disabled}
+            onChange={handleInputChange}
+            placeholder={placeholder}
+            value={searchTerm}
+            {...getInputProps({
+              ...getDropdownProps({ preventKeyAction: isOpen }),
+              onFocus: () => {
+                openMenu()
+              }
+            })}
+          />
+        </Pills>
+      </Field>
+
+      <div
+        style={{
+          border: '2px dashed pink',
+          display: isOpen ? 'block' : 'none',
+          margin: '20px 0',
+          maxHeight: 200,
+          overflow: 'scroll',
+          padding: 20
+        }}
+      >
+        <ul {...getMenuProps()}>
+          {filteredItems.map((item, index) => {
+            const option = options.find(o => item === o.value)
+            if (!option) return null
+
+            return (
+              <li
+                key={`menu-option-${index}`}
+                {...getItemProps({ item, index })}
+                {...css({
+                  backgroundColor: highlightedIndex === index ? 'blue' : ''
+                })}
+              >
+                <span>{option?.label} </span>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </>
   )
 }
 
@@ -202,3 +270,55 @@ Item.displayName = 'MultiSelectField.Item'
 MultiSelectField.Item = Item
 
 export default MultiSelectField
+
+const Pills = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>((props, ref) => {
+  const { children, ...rest } = props
+
+  return (
+    <div ref={ref} {...rest} {...styles.pills()}>
+      {children}
+    </div>
+  )
+})
+
+interface PillProps extends ComponentProps<typeof Tag> {
+  onRequestRemove: MouseEventHandler
+}
+const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
+  const { children, onRequestRemove, ...rest } = props
+
+  return (
+    <div ref={ref} {...rest} {...styles.pill()}>
+      <Tag
+        icon={<CloseIcon onClick={onRequestRemove} />}
+        isPressed
+        size={Tag.sizes.small}
+      >
+        {children}
+      </Tag>
+    </div>
+  )
+})
+
+const PillAdjacentInputContainer = forwardRef<HTMLDivElement>((props, ref) => {
+  return <div ref={ref} {...props} {...styles.inputContainer()} />
+})
+
+const PillAdjacentInput = forwardRef<
+  HTMLInputElement,
+  ComponentProps<typeof Field.Input>
+>((props, ref) => {
+  return (
+    <Field.Input
+      ref={ref}
+      renderContainer={PillAdjacentInputContainer}
+      type="text"
+      {...props}
+      {...styles.input()}
+    />
+  )
+})
+
+const RenderTagNoPadding: React.FC = p => {
+  return <div {...p} {...styles.renderTag()} />
+}

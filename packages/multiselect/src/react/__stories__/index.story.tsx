@@ -4,34 +4,44 @@ import React, { ComponentProps } from 'react'
 import { periodicElements } from '../__fixtures__/options'
 import MultiSelectField from '..'
 
+const ConstrainWidthDecorator = (Story: Story) => {
+  return (
+    <div style={{ maxWidth: '400px' }}>
+      <Story />
+    </div>
+  )
+}
+
 export default {
   title: 'Components/MultiSelectField',
   component: MultiSelectField,
-  args: {
-    placeholder: 'Search...',
-    label: 'a label',
-    menu: periodicElements.map(option => (
-      <MultiSelectField.Item key={option.value} value={option.value}>
-        {option.label}
-      </MultiSelectField.Item>
-    ))
-  }
+  decorators: [ConstrainWidthDecorator]
 } as Meta
 
+const defaultArgs = {
+  placeholder: 'Search...',
+  label: 'Multi select field label',
+  subLabel: 'Multi select field sublabel',
+  menu: periodicElements.map(option => (
+    <MultiSelectField.Item key={option.value} value={option.value}>
+      {option.label}
+    </MultiSelectField.Item>
+  ))
+}
+
 const Template: Story<ComponentProps<typeof MultiSelectField>> = args => {
-  // const [value, setValue] = React.useState('')
+  const [value, setValue] = React.useState(['H', 'Be'])
 
-  // const handleChange = (_evt: unknown, nextValue: string) => {
-  //   const nextState = US_STATES.find(state => state.abbreviation === nextValue)
-
-  //   if (nextState) {
-  //     setValue(nextState.name)
-  //   } else {
-  //     setValue(nextValue)
-  //   }
-  // }
-
-  return <MultiSelectField {...args} />
+  return (
+    <MultiSelectField
+      {...args}
+      onChange={(_, nextValue) => {
+        setValue(nextValue)
+      }}
+      value={value}
+    />
+  )
 }
 
 export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
