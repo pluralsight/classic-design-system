@@ -23,14 +23,16 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
     return currentAnimationFrame
   }
 
-  document.addEventListener('click', handleClickOutsideMenu)
+  document.addEventListener('click', handleClickOutsideMenu, { capture: true })
 
   window.addEventListener('resize', requestAnimationFrame, {
-    passive: true
+    passive: true,
+    capture: true
   })
 
   document.addEventListener('scroll', requestAnimationFrame, {
-    passive: true
+    passive: true,
+    capture: true
   })
 
   return () => {
