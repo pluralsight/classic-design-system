@@ -7,8 +7,22 @@ import React from 'react'
 
 import * as stories from '../__stories__/index.story'
 
+jest.mock('@pluralsight/ps-design-system-position', () => {
+  return {
+    esModule: true,
+    BelowLeft: jest.fn().mockImplementation(props => {
+      const { children, show, ...rest } = props
+      return (
+        <div {...rest}>
+          <div data-testid="position-show">{show}</div>
+          <div data-testid="position-children">{children}</div>
+        </div>
+      )
+    })
+  }
+})
+
 describe('MultiSelectField', () => {
-  const { Basic } = stories
   const cases = generateCasesFromStories(stories)
 
   describe.each(cases)('%s story', (_name, Story) => {
@@ -20,20 +34,21 @@ describe('MultiSelectField', () => {
     })
   })
 
-  // describe('Basic story', () => {
-  //   it('should focus input when label clicked', () => {
-  //     const onChange = jest.fn()
-  //     render(
-  //       <Basic {...Basic.args} onChange={onChange} options={[]} value=[] />
-  //     )
-  //     const label = screen.getByLabelText('TODO')
-  //     const input = screen.getByRole('textbox')
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-  //     userEvent.click(label)
+    it.skip('should focus input when label clicked', () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const label = screen.getByLabelText('The label')
+      const input = screen.getByRole('textbox')
 
-  //     expect(input).toHaveFocus()
-  //   })
-  // })
+      userEvent.click(label)
+
+      expect(input).toHaveFocus()
+    })
+
+    it.todo('test more interactions')
+  })
 })
 
 function generateCasesFromStories(

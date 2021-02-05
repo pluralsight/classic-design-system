@@ -1,8 +1,9 @@
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { ComponentProps } from 'react'
+import React, { ComponentProps, useMemo, useState } from 'react'
 
 import { periodicElements } from '../__fixtures__/options'
-import MultiSelectField from '..'
+import MultiSelect, { Option } from '..'
 
 const ConstrainWidthDecorator = (Story: Story) => {
   return (
@@ -13,31 +14,27 @@ const ConstrainWidthDecorator = (Story: Story) => {
 }
 
 export default {
-  title: 'Components/MultiSelectField',
-  component: MultiSelectField,
+  title: 'Components/MultiSelect',
+  component: MultiSelect,
   decorators: [ConstrainWidthDecorator]
 } as Meta
 
 const defaultArgs = {
-  placeholder: 'Search...',
-  label: 'Multi select field label',
-  subLabel: 'Multi select field sublabel',
-  menu: periodicElements.map(option => (
-    <MultiSelectField.Item key={option.value} value={option.value}>
-      {option.label}
-    </MultiSelectField.Item>
-  ))
+  label: 'The label',
+  subLabel: 'The sub label'
 }
 
-const Template: Story<ComponentProps<typeof MultiSelectField>> = args => {
-  const [value, setValue] = React.useState(['H', 'Be'])
+const Template: Story<ComponentProps<typeof MultiSelect>> = args => {
+  const options = useMemo(() => periodicElements, [])
+  const [value, setValue] = useState<Option[]>(options.slice(0, 2))
 
   return (
-    <MultiSelectField
+    <MultiSelect
       {...args}
       onChange={(_, nextValue) => {
         setValue(nextValue)
       }}
+      options={options}
       value={value}
     />
   )
@@ -45,3 +42,26 @@ const Template: Story<ComponentProps<typeof MultiSelectField>> = args => {
 
 export const Basic = Template.bind({})
 Basic.args = { ...defaultArgs }
+
+export const ReactNodeLabel = Template.bind({})
+ReactNodeLabel.args = {
+  ...defaultArgs,
+  label: <MultiSelect.Label>React node label</MultiSelect.Label>
+}
+
+export const NoLabels = Template.bind({})
+NoLabels.args = {
+  ...defaultArgs,
+  label: undefined,
+  placeholder: 'Placeholder...', // NOTE: a11y requirement when there are no labels
+  subLabel: undefined
+}
+
+export const Disabled = Template.bind({})
+Disabled.args = { ...defaultArgs, disabled: true }
+
+export const Error = Template.bind({})
+Error.args = { ...defaultArgs, error: true }
+
+export const IconPrefix = Template.bind({})
+IconPrefix.args = { ...defaultArgs, prefix: <PlaceholderIcon /> }

@@ -22,6 +22,7 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
+    "@pluralsight/ps-design-system-actionmenu": "*",
     "@pluralsight/ps-design-system-core": "*",
     "@pluralsight/ps-design-system-field": "*",
     "@pluralsight/ps-design-system-icon": "*",

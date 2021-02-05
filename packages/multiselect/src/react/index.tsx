@@ -1,35 +1,49 @@
 import { useCombobox, useMultipleSelection } from 'downshift'
-import { css } from 'glamor'
+import { compose, css } from 'glamor'
 import React, {
   ChangeEventHandler,
-  Children,
   ComponentProps,
   MouseEvent,
   MouseEventHandler,
   ReactElement,
+  ReactNode,
   SyntheticEvent,
+  cloneElement,
   forwardRef,
   isValidElement,
+  useCallback,
   useMemo,
+  useRef,
   useState
 } from 'react'
 
 import { CaretDownIcon, CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
+import { Menu } from './menu'
 import { FilterFn, OnStateChangeFn, Option, StateReducer } from './types'
 import { noop, simpleTextFilter, switchcase } from './utils'
+
+export { Option }
 
 const { stateChangeTypes } = useCombobox
 
 const styles = {
-  multiSelectField: () => css(stylesheet['.psds-multi-select']),
-  renderTag: () => css(stylesheet['.psds-multi-select__render-tag']),
+  multiSelect: (opts: { disabled?: boolean }) =>
+    compose(
+      css(stylesheet['.psds-multi-select']),
+      opts.disabled && css(stylesheet['.psds-multi-select--disabled'])
+    ),
+
+  prefix: () => css(stylesheet['.psds-multi-select__prefix']),
   caret: () => css(stylesheet['.psds-multi-select__caret']),
+
+  menu: () => css(stylesheet['.psds-multi-select__menu']),
 
   inputContainer: () => css(stylesheet['.psds-multi-select__input-container']),
   input: () => css(stylesheet['.psds-multi-select__input']),
@@ -41,33 +55,34 @@ const styles = {
 interface MultiSelectFieldProps
   extends Omit<
     ComponentProps<typeof Field>,
-    'children' | 'label' | 'onChange' | 'subLabel'
+    'children' | 'label' | 'onChange' | 'subLabel' | 'suffix'
   > {
   filterFn?: FilterFn
-  label: string
-  menu: ReactElement<typeof Item>[]
-  onChange: (evt: SyntheticEvent | null, nextValue: string[]) => void
+  label?: string | ReactElement<typeof Field.Label>
+  onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
+  options: Option[]
   placeholder?: string
-  subLabel?: string
-  value: string[]
+  subLabel?: string | ReactNode
+  value: Option[]
 }
 
 interface MultiSelectFieldStatics {
-  Item: typeof Item
-  Items: typeof Items
+  Label: typeof Field.Label
+  SubLabel: typeof Field.SubLabel
 }
 
 type MultiSelectFieldComponent = React.FC<MultiSelectFieldProps> &
   MultiSelectFieldStatics
 
-const MultiSelectField: MultiSelectFieldComponent = props => {
+const MultiSelect: MultiSelectFieldComponent = props => {
   const {
     disabled,
     filterFn = simpleTextFilter,
     label,
-    menu,
     onChange,
+    options,
     placeholder,
+    prefix,
     subLabel,
     value = [],
     ...rest
@@ -77,15 +92,6 @@ const MultiSelectField: MultiSelectFieldComponent = props => {
   const handleInputChange: ChangeEventHandler<HTMLInputElement> = evt => {
     setSearchTerm(evt.target.value)
   }
-
-  const options = useMemo(() => {
-    return Children.toArray(menu).reduce<Option[]>((acc, child) => {
-      if (!isValidElement(child)) return acc
-
-      const { children: label, value } = child.props
-      return acc.concat([{ label, value }])
-    }, [])
-  }, [menu])
 
   const {
     addSelectedItem,
@@ -101,18 +107,17 @@ const MultiSelectField: MultiSelectFieldComponent = props => {
     selectedItems: value
   })
 
-  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: string) => {
+  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: Option) => {
     evt.stopPropagation()
     removeSelectedItem(item)
   }
 
   const unselectedOptions = useMemo(() => {
-    return options.filter(o => !selectedItems.includes(o.value))
-  }, [options, selectedItems])
+    return options.filter(option => value.indexOf(option) < 0)
+  }, [options, value])
 
-  const filteredItems = useMemo(() => {
-    const results = filterFn(searchTerm, unselectedOptions)
-    return results.map(o => o.value)
+  const filteredOptions = useMemo(() => {
+    return filterFn(searchTerm, unselectedOptions)
   }, [unselectedOptions, filterFn, searchTerm])
 
   const {
@@ -127,7 +132,7 @@ const MultiSelectField: MultiSelectFieldComponent = props => {
   } = useCombobox({
     defaultHighlightedIndex: 0,
     inputValue: searchTerm,
-    items: filteredItems,
+    items: filteredOptions,
     selectedItem: null,
     onStateChange: changes => {
       const updateSearchTerm: OnStateChangeFn = ({ inputValue = '' }) => {
@@ -172,107 +177,96 @@ const MultiSelectField: MultiSelectFieldComponent = props => {
     }
   })
 
+  const positionTarget = useRef<HTMLDivElement>(null)
+  const RenderTag = useCallback(p => <div ref={positionTarget} {...p} />, [
+    positionTarget
+  ])
+
+  const Label = useMemo(() => {
+    if (isValidElement(label)) {
+      return cloneElement<any>(label, { ...getLabelProps() })
+    }
+
+    return <Field.Label {...getLabelProps()}>{label}</Field.Label>
+  }, [label, getLabelProps])
+
+  const SubLabel = useMemo(() => {
+    if (isValidElement(subLabel)) return subLabel
+
+    return <Field.SubLabel>{subLabel}</Field.SubLabel>
+  }, [subLabel])
+
   return (
     <>
       <Field
         disabled={disabled}
-        label={<Field.Label {...getLabelProps()}>{label}</Field.Label>}
-        subLabel={subLabel && <Field.SubLabel>{subLabel}</Field.SubLabel>}
-        renderTag={RenderTagNoPadding}
+        label={Label}
+        subLabel={SubLabel}
+        renderTag={RenderTag}
         size={Field.sizes.small}
-        suffix={
-          <div {...styles.caret()}>
-            <CaretDownIcon />
-          </div>
-        }
-        {...styles.multiSelectField()}
+        prefix={prefix && <Prefix>{prefix}</Prefix>}
+        suffix={<CaretSuffix />}
+        {...styles.multiSelect({ disabled })}
         {...rest}
       >
-        <Pills {...getComboboxProps()}>
-          {selectedItems.map((selectedItem, index) => {
-            const option = options.find(o => o.value === selectedItem)
-            if (!option) return null
-
-            return (
+        <div>
+          <Pills {...getComboboxProps()}>
+            {selectedItems.map((option, index) => (
               <Pill
                 key={`selected-item-${index}`}
-                onRequestRemove={e => handleRemoveSelected(e, selectedItem)}
-                {...getSelectedItemProps({ selectedItem, index })}
+                onRequestRemove={e => handleRemoveSelected(e, option)}
+                {...getSelectedItemProps({ selectedItem: option, index })}
               >
                 {option.label}
               </Pill>
-            )
-          })}
-          <PillAdjacentInput
-            disabled={disabled}
-            onChange={handleInputChange}
-            placeholder={placeholder}
-            value={searchTerm}
-            {...getInputProps({
-              ...getDropdownProps({
-                onFocus: () => {
-                  if (isOpen) return
-                  openMenu()
-                },
-                preventKeyAction: isOpen
-              })
-            })}
-          />
-        </Pills>
+            ))}
+
+            <PillAdjacentInput
+              disabled={disabled}
+              onChange={handleInputChange}
+              placeholder={placeholder}
+              value={searchTerm}
+              {...getInputProps({
+                ...getDropdownProps({
+                  onFocus: () => {
+                    if (!isOpen) openMenu()
+                  },
+                  preventKeyAction: isOpen
+                })
+              })}
+            />
+          </Pills>
+
+          <BelowLeft
+            target={positionTarget}
+            show={
+              <div>
+                <Menu {...getMenuProps()} open={isOpen}>
+                  {filteredOptions.map((option, index) => (
+                    <Menu.Item
+                      key={`menu-option-${index}`}
+                      highlighted={highlightedIndex === index}
+                      {...getItemProps({ item: option, index })}
+                    >
+                      {option?.label}
+                    </Menu.Item>
+                  ))}
+                </Menu>
+              </div>
+            }
+          >
+            <div />
+          </BelowLeft>
+        </div>
       </Field>
-
-      <div
-        style={{
-          border: '2px dashed pink',
-          display: isOpen ? 'block' : 'none',
-          margin: '20px 0',
-          maxHeight: 200,
-          overflow: 'scroll',
-          padding: 20
-        }}
-      >
-        <ul {...getMenuProps()}>
-          {filteredItems.map((item, index) => {
-            const option = options.find(o => item === o.value)
-            if (!option) return null
-
-            return (
-              <li
-                key={`menu-option-${index}`}
-                {...getItemProps({ item, index })}
-                {...css({
-                  backgroundColor: highlightedIndex === index ? 'blue' : ''
-                })}
-              >
-                <span>{option?.label} </span>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
     </>
   )
 }
 
-interface ItemsProps extends HTMLPropsFor<'ul'> {}
-const Items: React.FC<ItemsProps> = props => {
-  return <ul {...props} />
-}
-Items.displayName = 'MultiSelectField.Items'
-MultiSelectField.Items = Items
+MultiSelect.Label = Field.Label
+MultiSelect.SubLabel = Field.SubLabel
 
-interface ItemProps extends HTMLPropsFor<'li'> {
-  children: string
-  value: string
-}
-const Item: React.FC<ItemProps> = props => {
-  const { children, ...rest } = props
-  return <li {...rest}>{children}</li>
-}
-Item.displayName = 'MultiSelectField.Item'
-MultiSelectField.Item = Item
-
-export default MultiSelectField
+export default MultiSelect
 
 const Pills = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>((props, ref) => {
   const { children, ...rest } = props
@@ -322,6 +316,10 @@ const PillAdjacentInput = forwardRef<
   )
 })
 
-const RenderTagNoPadding: React.FC = p => {
-  return <div {...p} {...styles.renderTag()} />
-}
+const Prefix: React.FC = props => <div {...props} {...styles.prefix()} />
+
+const CaretSuffix: React.FC = props => (
+  <div {...props} {...styles.caret()}>
+    <CaretDownIcon />
+  </div>
+)
