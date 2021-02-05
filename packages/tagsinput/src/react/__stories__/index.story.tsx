@@ -8,7 +8,7 @@ import React, {
 } from 'react'
 
 import { periodicElements } from '../__fixtures__/options'
-import TagsInput from '..'
+import TagsInput, { Option } from '..'
 
 const ConstrainWidthDecorator = (Story: Story) => {
   return (
@@ -25,36 +25,31 @@ export default {
 } as Meta
 
 const defaultArgs = {
-  placeholder: 'Search...',
-  label: 'Tags input label',
-  subLabel: 'Tags input sublabel',
-  menu: periodicElements.map(option => (
-    <TagsInput.Item key={option.value} value={option.value}>
-      {option.label}
-    </TagsInput.Item>
-  ))
+  label: 'The label',
+  subLabel: 'The sub label'
 }
 
 type TemplateArgs = Pick<
   ComponentProps<typeof TagsInput>,
-  'placeholder' | 'label' | 'subLabel' | 'menu'
+  'placeholder' | 'label' | 'subLabel'
 >
 const Template: Story<TemplateArgs> = args => {
+  const options = useMemo(() => periodicElements, [])
+
   const [searchTerm, setSearchTerm] = useState('')
   const handleInputChange: ChangeEventHandler<HTMLInputElement> = evt => {
     setSearchTerm(evt.target.value)
   }
 
-  const [value, setValue] = useState(['H', 'Be'])
-  const options = useMemo(() => periodicElements, [])
+  const [value, setValue] = useState(options.slice(0, 2))
 
-  const handleAddSelected = (_: SyntheticEvent, itemValue: string) => {
-    setValue([...value, itemValue])
+  const handleAddSelected = (_: SyntheticEvent, o: Option) => {
+    setValue([...value, o])
     setSearchTerm('')
   }
 
   const unselectedOptions = useMemo(() => {
-    return options.filter(option => !value.includes(option.value))
+    return options.filter(option => value.indexOf(option) < 0)
   }, [options, value])
 
   return (
@@ -82,9 +77,7 @@ const Template: Story<TemplateArgs> = args => {
           {unselectedOptions.map((option, index) => (
             <li key={`filter-result-${index}`}>
               <span>{option.label} </span>
-              <button onClick={e => handleAddSelected(e, option.value)}>
-                add
-              </button>
+              <button onClick={e => handleAddSelected(e, option)}>add</button>
             </li>
           ))}
         </ul>
@@ -95,3 +88,17 @@ const Template: Story<TemplateArgs> = args => {
 
 export const Basic = Template.bind({})
 Basic.args = { ...defaultArgs }
+
+export const ReactNodeLabel = Template.bind({})
+ReactNodeLabel.args = {
+  ...defaultArgs,
+  label: <TagsInput.Label>React node label</TagsInput.Label>
+}
+
+export const NoLabels = Template.bind({})
+NoLabels.args = {
+  ...defaultArgs,
+  label: undefined,
+  placeholder: 'Placeholder...',
+  subLabel: undefined
+}

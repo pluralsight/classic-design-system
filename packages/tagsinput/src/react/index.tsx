@@ -2,12 +2,13 @@ import { useMultipleSelection } from 'downshift'
 import { css } from 'glamor'
 import React, {
   ChangeEventHandler,
-  Children,
   ComponentProps,
   MouseEvent,
   MouseEventHandler,
   ReactElement,
+  ReactNode,
   SyntheticEvent,
+  cloneElement,
   forwardRef,
   isValidElement,
   useMemo
@@ -21,6 +22,7 @@ import { HTMLPropsFor, useUniqueId } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 
 import { Option } from './types'
+export { Option }
 
 const styles = {
   tagsInput: () => css(stylesheet['.psds-tagsinput']),
@@ -33,34 +35,31 @@ const styles = {
   pill: () => css(stylesheet['.psds-tagsinput__pill'])
 }
 
-interface MultiSelectFieldProps
+interface TagsInputProps
   extends Omit<
     ComponentProps<typeof Field>,
     'children' | 'label' | 'onChange' | 'subLabel'
   > {
-  label: string
-  menu: ReactElement<typeof Item>[]
-  onChange: (evt: SyntheticEvent | null, nextValue: string[]) => void
+  label: string | ReactElement<typeof Field.Label>
+  onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
   onSearchInputChange: ChangeEventHandler<HTMLInputElement>
   placeholder?: string
   searchInputValue: string
-  subLabel?: string
-  value: string[]
+  subLabel?: string | ReactNode
+  value: Option[]
 }
 
-interface MultiSelectFieldStatics {
-  Item: typeof Item
-  Items: typeof Items
+interface TagsInputStatics {
+  Label: typeof Field.Label
+  SubLabel: typeof Field.SubLabel
 }
 
-type MultiSelectFieldComponent = React.FC<MultiSelectFieldProps> &
-  MultiSelectFieldStatics
+type TagsInputComponent = React.FC<TagsInputProps> & TagsInputStatics
 
-const TagsInput: MultiSelectFieldComponent = props => {
+const TagsInput: TagsInputComponent = props => {
   const {
     disabled,
     label,
-    menu,
     onChange,
     onSearchInputChange,
     placeholder,
@@ -70,17 +69,7 @@ const TagsInput: MultiSelectFieldComponent = props => {
     ...rest
   } = props
 
-  const labelId = useUniqueId('tagsinput__label-')
   const inputId = useUniqueId('tagsinput__input-')
-
-  const options = useMemo(() => {
-    return Children.toArray(menu).reduce<Option[]>((acc, child) => {
-      if (!isValidElement(child)) return acc
-
-      const { children: label, value } = child.props
-      return acc.concat([{ label, value }])
-    }, [])
-  }, [menu])
 
   const {
     getDropdownProps,
@@ -94,40 +83,46 @@ const TagsInput: MultiSelectFieldComponent = props => {
     selectedItems: value
   })
 
-  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: string) => {
+  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: Option) => {
     evt.stopPropagation()
     removeSelectedItem(item)
   }
 
+  const Label = useMemo(() => {
+    if (isValidElement(label)) {
+      return cloneElement<any>(label, { htmlFor: inputId })
+    }
+
+    return <Field.Label htmlFor={inputId}>{label}</Field.Label>
+  }, [label, inputId])
+
+  const SubLabel = useMemo(() => {
+    if (isValidElement(subLabel)) return subLabel
+
+    return <Field.SubLabel>{subLabel}</Field.SubLabel>
+  }, [subLabel])
+
   return (
     <Field
       disabled={disabled}
-      label={
-        <Field.Label htmlFor={inputId} id={labelId}>
-          {label}
-        </Field.Label>
-      }
-      subLabel={subLabel && <Field.SubLabel>{subLabel}</Field.SubLabel>}
+      label={Label}
       renderTag={RenderTagNoPadding}
       size={Field.sizes.small}
+      subLabel={SubLabel}
       {...styles.tagsInput()}
       {...rest}
     >
       <Pills>
-        {selectedItems.map((selectedItem, index) => {
-          const option = options.find(o => o.value === selectedItem)
-          if (!option) return null
+        {selectedItems.map((option, index) => (
+          <Pill
+            key={`selected-item-${index}`}
+            onRequestRemove={e => handleRemoveSelected(e, option)}
+            {...getSelectedItemProps({ selectedItem: option, index })}
+          >
+            {option.label}
+          </Pill>
+        ))}
 
-          return (
-            <Pill
-              key={`selected-item-${index}`}
-              onRequestRemove={e => handleRemoveSelected(e, selectedItem)}
-              {...getSelectedItemProps({ selectedItem, index })}
-            >
-              {option.label}
-            </Pill>
-          )
-        })}
         <PillAdjacentInput
           disabled={disabled}
           id={inputId}
@@ -141,23 +136,8 @@ const TagsInput: MultiSelectFieldComponent = props => {
   )
 }
 
-interface ItemsProps extends HTMLPropsFor<'ul'> {}
-const Items: React.FC<ItemsProps> = props => {
-  return <ul {...props} />
-}
-Items.displayName = 'TagsInput.Items'
-TagsInput.Items = Items
-
-interface ItemProps extends HTMLPropsFor<'li'> {
-  children: string
-  value: string
-}
-const Item: React.FC<ItemProps> = props => {
-  const { children, ...rest } = props
-  return <li {...rest}>{children}</li>
-}
-Item.displayName = 'TagsInput.Item'
-TagsInput.Item = Item
+TagsInput.Label = Field.Label
+TagsInput.SubLabel = Field.SubLabel
 
 export default TagsInput
 

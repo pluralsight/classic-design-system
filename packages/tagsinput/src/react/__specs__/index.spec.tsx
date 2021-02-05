@@ -7,7 +7,6 @@ import React from 'react'
 import * as stories from '../__stories__/index.story'
 
 describe('TagsInput', () => {
-  const { Basic } = stories
   const cases = generateCasesFromStories(stories)
 
   describe.each(cases)('%s story', (_name, Story) => {
@@ -19,17 +18,21 @@ describe('TagsInput', () => {
     })
   })
 
-  it('should focus input when label clicked', () => {
-    render(<Basic {...(Basic.args as any)} />)
-    const label = screen.getByLabelText('Tags input label')
-    const input = screen.getByRole('textbox')
+  describe('Basic', () => {
+    const { Basic } = stories
 
-    userEvent.click(label)
+    it('should focus input when label clicked', () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const label = screen.getByLabelText('The label')
+      const input = screen.getByRole('textbox')
 
-    expect(input).toHaveFocus()
+      userEvent.click(label)
+
+      expect(input).toHaveFocus()
+    })
+
+    it.todo('test more interactions')
   })
-
-  it.todo('test more interactions')
 })
 
 function generateCasesFromStories(

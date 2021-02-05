@@ -1,6 +1,6 @@
 import { layout } from '@pluralsight/ps-design-system-core'
 
-const GUTTER_SIZE = 2
+const GUTTER_SIZE = 4
 
 const INPUT_MIN_HEIGHT = 24 // NOTE: this matches the size of the small Tag
 const INPUT_MIN_WIDTH = 50
