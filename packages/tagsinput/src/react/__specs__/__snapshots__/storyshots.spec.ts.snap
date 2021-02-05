@@ -13,7 +13,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tagsinput__input-unique-id"
     >
       The label
@@ -40,7 +40,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -80,7 +80,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -124,11 +124,12 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
               value=""
             />
           </div>
+          <div />
         </div>
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       The sub label
     </div>
@@ -581,7 +582,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tagsinput__input-unique-id"
     >
       The label
@@ -608,7 +609,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -648,7 +649,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -693,11 +694,12 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
               value=""
             />
           </div>
+          <div />
         </div>
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       The sub label
     </div>
@@ -1150,7 +1152,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tagsinput__input-unique-id"
     >
       The label
@@ -1177,7 +1179,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -1217,7 +1219,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -1261,6 +1263,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
               value=""
             />
           </div>
+          <div />
         </div>
         <div
           data-css-qrpvsu=""
@@ -1284,7 +1287,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       The sub label
     </div>
@@ -1737,7 +1740,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tagsinput__input-unique-id"
     >
       The label
@@ -1785,7 +1788,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -1825,7 +1828,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -1869,11 +1872,12 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
               value=""
             />
           </div>
+          <div />
         </div>
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       The sub label
     </div>
@@ -2326,7 +2330,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tagsinput__input-unique-id"
     >
       The label
@@ -2353,7 +2357,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -2393,7 +2397,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -2437,6 +2441,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
               value=""
             />
           </div>
+          <div />
         </div>
         <div
           data-css-n5p4fh=""
@@ -2462,7 +2467,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       The sub label
     </div>
@@ -2915,7 +2920,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tagsinput__input-unique-id"
     />
     <div
@@ -2940,7 +2945,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -2980,7 +2985,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -3025,11 +3030,12 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
               value=""
             />
           </div>
+          <div />
         </div>
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     />
   </div>
   <div
@@ -3480,7 +3486,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tagsinput__input-unique-id"
     >
       React node label
@@ -3507,7 +3513,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -3547,7 +3553,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -3591,11 +3597,12 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
               value=""
             />
           </div>
+          <div />
         </div>
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       The sub label
     </div>

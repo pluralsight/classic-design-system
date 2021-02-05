@@ -11,7 +11,9 @@ import React, {
   cloneElement,
   forwardRef,
   isValidElement,
-  useMemo
+  useLayoutEffect,
+  useMemo,
+  useRef
 } from 'react'
 
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
@@ -110,6 +112,19 @@ const TagsInput: TagsInputComponent = props => {
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
+  const afterInputSentinel = useRef<HTMLDivElement>(null)
+  useLayoutEffect(
+    function keepInputInView() {
+      if (!afterInputSentinel.current) return
+
+      const { scrollIntoView } = afterInputSentinel.current
+      if (!scrollIntoView) return
+
+      scrollIntoView()
+    },
+    [selectedItems]
+  )
+
   return (
     <Field
       disabled={disabled}
@@ -140,6 +155,8 @@ const TagsInput: TagsInputComponent = props => {
           value={searchInputValue}
           {...getDropdownProps()}
         />
+
+        <div ref={afterInputSentinel} />
       </Pills>
     </Field>
   )
