@@ -1,4 +1,4 @@
-import { LockIcon, PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React, {
   ChangeEventHandler,

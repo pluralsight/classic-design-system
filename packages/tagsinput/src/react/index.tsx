@@ -46,7 +46,7 @@ interface TagsInputProps
     ComponentProps<typeof Field>,
     'children' | 'label' | 'onChange' | 'subLabel'
   > {
-  label: string | ReactElement<typeof Field.Label>
+  label?: string | ReactElement<typeof Field.Label>
   onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
   onSearchInputChange: ChangeEventHandler<HTMLInputElement>
   placeholder?: string
