@@ -5,9 +5,9 @@ import React, { ComponentProps, useMemo, useState } from 'react'
 import { periodicElements } from '../__fixtures__/options'
 import MultiSelect, { Option } from '..'
 
-const ConstrainWidthDecorator = (Story: Story) => {
+const SetWidthDecorator = (Story: Story) => {
   return (
-    <div style={{ maxWidth: '400px' }}>
+    <div style={{ width: '400px' }}>
       <Story />
     </div>
   )
@@ -16,7 +16,7 @@ const ConstrainWidthDecorator = (Story: Story) => {
 export default {
   title: 'Components/MultiSelect',
   component: MultiSelect,
-  decorators: [ConstrainWidthDecorator]
+  decorators: [SetWidthDecorator]
 } as Meta
 
 const defaultArgs = {

@@ -5,7 +5,11 @@ import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 
 const styles = {
-  menu: () => css(stylesheet['.psds-multi-select__menu']),
+  menu: (opts: { open: boolean }) =>
+    compose(
+      css(stylesheet['.psds-multi-select__menu']),
+      opts.open && css(stylesheet['.psds-multi-select__menu--open'])
+    ),
 
   menuItem: (opts: { highlighted: boolean }) =>
     compose(
@@ -27,14 +31,7 @@ type MenuComponent = ForwardRefExoticComponent<MenuProps> & MenuStatics
 const Menu = forwardRef<HTMLUListElement, MenuProps>((props, ref) => {
   const { open, ...rest } = props
 
-  return (
-    <ul
-      ref={ref}
-      {...rest}
-      {...styles.menu()}
-      style={{ display: open ? 'block' : 'none' }}
-    />
-  )
+  return <ul ref={ref} {...rest} {...styles.menu({ open })} />
 }) as MenuComponent
 
 interface ItemProps extends Omit<HTMLPropsFor<'li'>, 'ref'> {

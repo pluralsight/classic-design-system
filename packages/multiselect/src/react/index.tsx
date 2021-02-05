@@ -12,6 +12,7 @@ import React, {
   forwardRef,
   isValidElement,
   useCallback,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState
@@ -196,6 +197,19 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
+  const afterInputSentinel = useRef<HTMLDivElement>(null)
+  useLayoutEffect(
+    function keepInputInView() {
+      if (!isOpen || !afterInputSentinel.current) return
+
+      const { scrollIntoView } = afterInputSentinel.current
+      if (!scrollIntoView) return
+
+      scrollIntoView()
+    },
+    [isOpen, selectedItems]
+  )
+
   return (
     <>
       <Field
@@ -222,10 +236,6 @@ const MultiSelect: MultiSelectFieldComponent = props => {
             ))}
 
             <PillAdjacentInput
-              disabled={disabled}
-              onChange={handleInputChange}
-              placeholder={placeholder}
-              value={searchTerm}
               {...getInputProps({
                 ...getDropdownProps({
                   onFocus: () => {
@@ -234,7 +244,12 @@ const MultiSelect: MultiSelectFieldComponent = props => {
                   preventKeyAction: isOpen
                 })
               })}
+              disabled={disabled}
+              onChange={handleInputChange}
+              placeholder={placeholder}
+              value={searchTerm}
             />
+            <div ref={afterInputSentinel} />
           </Pills>
 
           <BelowLeft
