@@ -7,7 +7,16 @@ const INPUT_MIN_WIDTH = 50
 
 export default {
   '.psds-tagsinput': { label: 'tagsinput' },
-  '.psds-tagsinput__render-tag': { padding: 0 },
+  '.psds-tagsinput--disabled': { pointerEvents: 'none' },
+
+  '.psds-tagsinput__prefix': {
+    alignItems: 'center',
+    display: 'flex'
+  },
+  '.psds-tagsinput__suffix': {
+    alignItems: 'center',
+    display: 'flex'
+  },
 
   '.psds-tagsinput__pills': {
     alignItems: 'center',
@@ -16,6 +25,7 @@ export default {
     flexWrap: 'wrap',
     maxHeight: 75,
     overflowY: 'scroll',
+    margin: `calc(${GUTTER_SIZE}px * -2)`,
     padding: `${layout.spacingXSmall}`,
     width: '100%'
   },

@@ -1,3 +1,4 @@
+import { LockIcon, PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React, {
   ChangeEventHandler,
@@ -29,11 +30,7 @@ const defaultArgs = {
   subLabel: 'The sub label'
 }
 
-type TemplateArgs = Pick<
-  ComponentProps<typeof TagsInput>,
-  'placeholder' | 'label' | 'subLabel'
->
-const Template: Story<TemplateArgs> = args => {
+const Template: Story<ComponentProps<typeof TagsInput>> = args => {
   const options = useMemo(() => periodicElements, [])
 
   const [searchTerm, setSearchTerm] = useState('')
@@ -99,6 +96,18 @@ export const NoLabels = Template.bind({})
 NoLabels.args = {
   ...defaultArgs,
   label: undefined,
-  placeholder: 'Placeholder...',
+  placeholder: 'Placeholder...', // NOTE: a11y requirement when there are no labels
   subLabel: undefined
 }
+
+export const Disabled = Template.bind({})
+Disabled.args = { ...defaultArgs, disabled: true }
+
+export const Error = Template.bind({})
+Error.args = { ...defaultArgs, error: true }
+
+export const IconPrefix = Template.bind({})
+IconPrefix.args = { ...defaultArgs, prefix: <PlaceholderIcon /> }
+
+export const IconSuffix = Template.bind({})
+IconSuffix.args = { ...defaultArgs, suffix: <PlaceholderIcon /> }

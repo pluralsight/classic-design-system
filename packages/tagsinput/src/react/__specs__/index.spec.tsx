@@ -18,7 +18,7 @@ describe('TagsInput', () => {
     })
   })
 
-  describe('Basic', () => {
+  describe('Basic story', () => {
     const { Basic } = stories
 
     it('should focus input when label clicked', () => {

@@ -1,5 +1,5 @@
 import { useMultipleSelection } from 'downshift'
-import { css } from 'glamor'
+import { compose, css } from 'glamor'
 import React, {
   ChangeEventHandler,
   ComponentProps,
@@ -25,8 +25,14 @@ import { Option } from './types'
 export { Option }
 
 const styles = {
-  tagsInput: () => css(stylesheet['.psds-tagsinput']),
-  renderTag: () => css(stylesheet['.psds-tagsinput__render-tag']),
+  tagsInput: (opts: { disabled?: boolean }) =>
+    compose(
+      css(stylesheet['.psds-tagsinput']),
+      opts.disabled && css(stylesheet['.psds-tagsinput--disabled'])
+    ),
+
+  prefix: () => css(stylesheet['.psds-tagsinput__prefix']),
+  suffix: () => css(stylesheet['.psds-tagsinput__suffix']),
 
   inputContainer: () => css(stylesheet['.psds-tagsinput__input-container']),
   input: () => css(stylesheet['.psds-tagsinput__input']),
@@ -63,8 +69,10 @@ const TagsInput: TagsInputComponent = props => {
     onChange,
     onSearchInputChange,
     placeholder,
+    prefix,
     searchInputValue,
     subLabel,
+    suffix,
     value = [],
     ...rest
   } = props
@@ -106,10 +114,11 @@ const TagsInput: TagsInputComponent = props => {
     <Field
       disabled={disabled}
       label={Label}
-      renderTag={RenderTagNoPadding}
+      prefix={prefix && <Prefix>{prefix}</Prefix>}
       size={Field.sizes.small}
       subLabel={SubLabel}
-      {...styles.tagsInput()}
+      suffix={suffix && <Suffix>{suffix}</Suffix>}
+      {...styles.tagsInput({ disabled })}
       {...rest}
     >
       <Pills>
@@ -189,6 +198,6 @@ const PillAdjacentInput = forwardRef<
   )
 })
 
-const RenderTagNoPadding: React.FC = p => {
-  return <div {...p} {...styles.renderTag()} />
-}
+const Prefix: React.FC = p => <div {...p} {...styles.prefix()} />
+
+const Suffix: React.FC = p => <div {...p} {...styles.suffix()} />
