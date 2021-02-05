@@ -29,6 +29,7 @@ const styles = {
       stylesheet[`.psds-button--layout-${layout}`],
       stylesheet[`.psds-button--size-${size}`],
       stylesheet[`.psds-button--appearance-${appearance}`],
+      stylesheet[`.psds-button.psds-theme--${themeName}`],
       stylesheet[
         `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
       ],

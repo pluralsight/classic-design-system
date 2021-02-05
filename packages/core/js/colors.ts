@@ -121,9 +121,9 @@ export const colorsPurple = {
 }
 
 export const colorsTextIcon = {
-  highOnDark: 'rgba(255, 255, 255, 0.90)',
+  highOnDark: 'rgba(255, 255, 255, 0.95)',
   highOnLight: 'rgba(0, 0, 0, 0.90)',
-  lowOnDark: 'rgba(255, 255, 255, 0.65)',
+  lowOnDark: 'rgba(255, 255, 255, 0.70)',
   lowOnLight: 'rgba(0, 0, 0, 0.65)'
 }
 
@@ -148,6 +148,9 @@ export const colorsBackgroundLight = {
 
 export const colorsBackgroundUtility = {
   base: '#8A99A8',
+  10: 'rgba(138,153,168, 0.10)',
+  15: 'rgba(138,153,168, 0.15)',
+  20: 'rgba(138,153,168, 0.20)',
   25: 'rgba(138,153,168, 0.25)',
   30: 'rgba(138,153,168, 0.30)',
   40: 'rgba(138,153,168, 0.40)',
@@ -164,7 +167,7 @@ export const colorsGradient = {
 }
 
 export const colorsPrimaryAction = {
-  background: colorsBlue.base,
+  background: colorsBlue[7],
   textDarkTheme: colorsBlue[5],
   textLightTheme: colorsBlue[7]
 }

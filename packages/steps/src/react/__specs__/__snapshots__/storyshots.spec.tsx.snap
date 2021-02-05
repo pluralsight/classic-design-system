@@ -165,7 +165,7 @@ exports[`Storyshots Components/Steps/Marker Incomplete Large 1`] = `
   data-css-103e380=""
 >
   <div
-    data-css-2195hb=""
+    data-css-1b6awg7=""
     data-css-mwehb=""
   >
     <svg
@@ -197,8 +197,8 @@ exports[`Storyshots Components/Steps/Marker Incomplete Medium 1`] = `
   data-css-103e380=""
 >
   <div
-    data-css-1dvenk2=""
     data-css-37nc4w=""
+    data-css-dkw9ct=""
   >
     <svg
       viewBox="0 0 24 24"
@@ -229,7 +229,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
@@ -259,7 +259,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-vyp88e=""
+            data-css-17x5ehd=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={0}
@@ -278,7 +278,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
     </div>
   </div>
   <div
-    data-css-1xgx4w1=""
+    data-css-1b94shp=""
   >
     <div
       data-css-1f2gu5k=""
@@ -308,7 +308,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-vyp88e=""
+            data-css-17x5ehd=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={55.29203070318036}
@@ -318,7 +318,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
     </div>
     <div>
       <div
-        data-css-k4yhz3=""
+        data-css-16qh227=""
       >
         <p>
           Grapple case shot
@@ -327,7 +327,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
     </div>
   </div>
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
@@ -357,7 +357,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
           <circle
             cx="24"
             cy="24"
-            data-css-vyp88e=""
+            data-css-17x5ehd=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={138.23007675795088}
@@ -383,7 +383,7 @@ exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
@@ -425,7 +425,7 @@ exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
     </div>
   </div>
   <div
-    data-css-1xgx4w1=""
+    data-css-1b94shp=""
   >
     <div
       data-css-1f2gu5k=""
@@ -458,7 +458,7 @@ exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
     </div>
     <div>
       <div
-        data-css-k4yhz3=""
+        data-css-16qh227=""
       >
         <p>
           Grapple case shot
@@ -467,14 +467,14 @@ exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
     </div>
   </div>
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
     >
       <div
-        data-css-1f22xu6=""
         data-css-37nc4w=""
+        data-css-8rftgy=""
       >
         <svg
           viewBox="0 0 24 24"
@@ -516,7 +516,7 @@ exports[`Storyshots Components/Steps/Step Large 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-cbpt11=""
+    data-css-16xy16e=""
   >
     <div
       data-css-1kqp8s2=""
@@ -565,7 +565,7 @@ exports[`Storyshots Components/Steps/Step Large Description 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-cbpt11=""
+    data-css-16xy16e=""
   >
     <div
       data-css-1kqp8s2=""
@@ -621,7 +621,7 @@ exports[`Storyshots Components/Steps/Step Large Interactive 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-i3pwx6=""
+    data-css-dlz1d4=""
     onClick={[Function]}
   >
     <div
@@ -678,7 +678,7 @@ exports[`Storyshots Components/Steps/Step Large Long Title 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-cbpt11=""
+    data-css-16xy16e=""
   >
     <div
       data-css-1kqp8s2=""
@@ -727,7 +727,7 @@ exports[`Storyshots Components/Steps/Step Medium 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
@@ -776,7 +776,7 @@ exports[`Storyshots Components/Steps/Step Medium Description 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
@@ -832,7 +832,7 @@ exports[`Storyshots Components/Steps/Step Medium Interactive 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-1ikqesf=""
+    data-css-1hok350=""
     onClick={[Function]}
   >
     <div
@@ -889,7 +889,7 @@ exports[`Storyshots Components/Steps/Step Medium Long Title 1`] = `
   data-css-12c8fh6=""
 >
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
@@ -941,7 +941,7 @@ exports[`Storyshots Components/Steps/examples Wizard 1`] = `
     data-css-wtycqp=""
   >
     <div
-      data-css-y9mz72=""
+      data-css-18wdfqv=""
     >
       <div
         data-css-1kqp8s2=""
@@ -974,7 +974,7 @@ exports[`Storyshots Components/Steps/examples Wizard 1`] = `
       </div>
       <div>
         <div
-          data-css-2vh19s=""
+          data-css-15f98wj=""
         >
           <p>
             First step
@@ -990,13 +990,13 @@ exports[`Storyshots Components/Steps/examples Wizard 1`] = `
       </div>
     </div>
     <div
-      data-css-9kt1cm=""
+      data-css-1hksre9=""
     >
       <div
         data-css-1kqp8s2=""
       >
         <div
-          data-css-2195hb=""
+          data-css-1b6awg7=""
           data-css-mwehb=""
         >
           <svg
@@ -1032,13 +1032,13 @@ exports[`Storyshots Components/Steps/examples Wizard 1`] = `
       </div>
     </div>
     <div
-      data-css-9kt1cm=""
+      data-css-1hksre9=""
     >
       <div
         data-css-1kqp8s2=""
       >
         <div
-          data-css-2195hb=""
+          data-css-1b6awg7=""
           data-css-mwehb=""
         >
           <svg
@@ -1127,7 +1127,7 @@ exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
     data-css-wtycqp=""
   >
     <div
-      data-css-9kt1cm=""
+      data-css-1hksre9=""
     >
       <div
         data-css-1kqp8s2=""
@@ -1169,7 +1169,7 @@ exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
       </div>
     </div>
     <div
-      data-css-y9mz72=""
+      data-css-18wdfqv=""
     >
       <div
         data-css-1kqp8s2=""
@@ -1202,7 +1202,7 @@ exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
       </div>
       <div>
         <div
-          data-css-2vh19s=""
+          data-css-15f98wj=""
         >
           <p>
             Select template
@@ -1218,13 +1218,13 @@ exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
       </div>
     </div>
     <div
-      data-css-9kt1cm=""
+      data-css-1hksre9=""
     >
       <div
         data-css-1kqp8s2=""
       >
         <div
-          data-css-2195hb=""
+          data-css-1b6awg7=""
           data-css-mwehb=""
         >
           <svg
@@ -1271,7 +1271,7 @@ exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
     data-css-wtycqp=""
   >
     <div
-      data-css-1t6za67=""
+      data-css-19rv4v6=""
       onClick={[Function]}
     >
       <div
@@ -1314,7 +1314,7 @@ exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
       </div>
     </div>
     <div
-      data-css-6at8c0=""
+      data-css-1hr2q1h=""
       onClick={[Function]}
     >
       <div
@@ -1348,7 +1348,7 @@ exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
       </div>
       <div>
         <div
-          data-css-2vh19s=""
+          data-css-15f98wj=""
         >
           <p>
             Select template
@@ -1364,14 +1364,14 @@ exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
       </div>
     </div>
     <div
-      data-css-1t6za67=""
+      data-css-19rv4v6=""
       onClick={[Function]}
     >
       <div
         data-css-1kqp8s2=""
       >
         <div
-          data-css-2195hb=""
+          data-css-1b6awg7=""
           data-css-mwehb=""
         >
           <svg
@@ -1418,7 +1418,7 @@ exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
     data-css-wtycqp=""
   >
     <div
-      data-css-ffob6h=""
+      data-css-7phubm=""
     >
       <div
         data-css-1f2gu5k=""
@@ -1460,7 +1460,7 @@ exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
       </div>
     </div>
     <div
-      data-css-xcclut=""
+      data-css-z3aan7=""
     >
       <div
         data-css-1f2gu5k=""
@@ -1493,7 +1493,7 @@ exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
       </div>
       <div>
         <div
-          data-css-k4yhz3=""
+          data-css-16qh227=""
         >
           <p>
             Select template
@@ -1509,14 +1509,14 @@ exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
       </div>
     </div>
     <div
-      data-css-ffob6h=""
+      data-css-7phubm=""
     >
       <div
         data-css-1f2gu5k=""
       >
         <div
-          data-css-1dvenk2=""
           data-css-37nc4w=""
+          data-css-dkw9ct=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -1562,7 +1562,7 @@ exports[`Storyshots Components/Steps/horizontal Responsive 1`] = `
     data-css-yyluzm=""
   >
     <div
-      data-css-1jawhk1=""
+      data-css-mjd7ch=""
     >
       <div
         data-css-1f2gu5k=""
@@ -1604,7 +1604,7 @@ exports[`Storyshots Components/Steps/horizontal Responsive 1`] = `
       </div>
     </div>
     <div
-      data-css-1xgx4w1=""
+      data-css-1b94shp=""
     >
       <div
         data-css-1f2gu5k=""
@@ -1637,7 +1637,7 @@ exports[`Storyshots Components/Steps/horizontal Responsive 1`] = `
       </div>
       <div>
         <div
-          data-css-k4yhz3=""
+          data-css-16qh227=""
         >
           <p>
             Select template
@@ -1653,14 +1653,14 @@ exports[`Storyshots Components/Steps/horizontal Responsive 1`] = `
       </div>
     </div>
     <div
-      data-css-1jawhk1=""
+      data-css-mjd7ch=""
     >
       <div
         data-css-1f2gu5k=""
       >
         <div
-          data-css-1dvenk2=""
           data-css-37nc4w=""
+          data-css-dkw9ct=""
         >
           <svg
             viewBox="0 0 24 24"
@@ -1703,7 +1703,7 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
   data-css-yyluzm=""
 >
   <div
-    data-css-cbpt11=""
+    data-css-16xy16e=""
   >
     <div
       data-css-1kqp8s2=""
@@ -1745,7 +1745,7 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-1vp0vwv=""
+    data-css-119q09h=""
   >
     <div
       data-css-1kqp8s2=""
@@ -1778,7 +1778,7 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
     </div>
     <div>
       <div
-        data-css-2vh19s=""
+        data-css-15f98wj=""
       >
         <p>
           Select template
@@ -1794,13 +1794,13 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-cbpt11=""
+    data-css-16xy16e=""
   >
     <div
       data-css-1kqp8s2=""
     >
       <div
-        data-css-2195hb=""
+        data-css-1b6awg7=""
         data-css-mwehb=""
       >
         <svg
@@ -1836,13 +1836,13 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-cbpt11=""
+    data-css-16xy16e=""
   >
     <div
       data-css-1kqp8s2=""
     >
       <div
-        data-css-2195hb=""
+        data-css-1b6awg7=""
         data-css-mwehb=""
       >
         <svg
@@ -1878,13 +1878,13 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-cbpt11=""
+    data-css-16xy16e=""
   >
     <div
       data-css-1kqp8s2=""
     >
       <div
-        data-css-2195hb=""
+        data-css-1b6awg7=""
         data-css-mwehb=""
       >
         <svg
@@ -1930,7 +1930,7 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
     data-css-yyluzm=""
   >
     <div
-      data-css-i3pwx6=""
+      data-css-dlz1d4=""
       onClick={[Function]}
     >
       <div
@@ -1973,7 +1973,7 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
       </div>
     </div>
     <div
-      data-css-srn761=""
+      data-css-194nfi4=""
       onClick={[Function]}
     >
       <div
@@ -2007,7 +2007,7 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
       </div>
       <div>
         <div
-          data-css-2vh19s=""
+          data-css-15f98wj=""
         >
           <p>
             Select template
@@ -2023,14 +2023,14 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
       </div>
     </div>
     <div
-      data-css-i3pwx6=""
+      data-css-dlz1d4=""
       onClick={[Function]}
     >
       <div
         data-css-1kqp8s2=""
       >
         <div
-          data-css-2195hb=""
+          data-css-1b6awg7=""
           data-css-mwehb=""
         >
           <svg
@@ -2066,14 +2066,14 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
       </div>
     </div>
     <div
-      data-css-i3pwx6=""
+      data-css-dlz1d4=""
       onClick={[Function]}
     >
       <div
         data-css-1kqp8s2=""
       >
         <div
-          data-css-2195hb=""
+          data-css-1b6awg7=""
           data-css-mwehb=""
         >
           <svg
@@ -2109,14 +2109,14 @@ exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
       </div>
     </div>
     <div
-      data-css-i3pwx6=""
+      data-css-dlz1d4=""
       onClick={[Function]}
     >
       <div
         data-css-1kqp8s2=""
       >
         <div
-          data-css-2195hb=""
+          data-css-1b6awg7=""
           data-css-mwehb=""
         >
           <svg
@@ -2160,7 +2160,7 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
   data-css-yyluzm=""
 >
   <div
-    data-css-i3pwx6=""
+    data-css-dlz1d4=""
     onClick={[Function]}
   >
     <div
@@ -2203,7 +2203,7 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
     </div>
   </div>
   <div
-    data-css-srn761=""
+    data-css-194nfi4=""
     onClick={[Function]}
   >
     <div
@@ -2237,7 +2237,7 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
     </div>
     <div>
       <div
-        data-css-2vh19s=""
+        data-css-15f98wj=""
       >
         <p>
           Select template
@@ -2253,14 +2253,14 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
     </div>
   </div>
   <div
-    data-css-i3pwx6=""
+    data-css-dlz1d4=""
     onClick={[Function]}
   >
     <div
       data-css-1kqp8s2=""
     >
       <div
-        data-css-2195hb=""
+        data-css-1b6awg7=""
         data-css-mwehb=""
       >
         <svg
@@ -2296,14 +2296,14 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
     </div>
   </div>
   <div
-    data-css-i3pwx6=""
+    data-css-dlz1d4=""
     onClick={[Function]}
   >
     <div
       data-css-1kqp8s2=""
     >
       <div
-        data-css-2195hb=""
+        data-css-1b6awg7=""
         data-css-mwehb=""
       >
         <svg
@@ -2339,14 +2339,14 @@ exports[`Storyshots Components/Steps/vertical Interactive 1`] = `
     </div>
   </div>
   <div
-    data-css-i3pwx6=""
+    data-css-dlz1d4=""
     onClick={[Function]}
   >
     <div
       data-css-1kqp8s2=""
     >
       <div
-        data-css-2195hb=""
+        data-css-1b6awg7=""
         data-css-mwehb=""
       >
         <svg
@@ -2389,7 +2389,7 @@ exports[`Storyshots Components/Steps/vertical Medium 1`] = `
   data-css-yyluzm=""
 >
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
@@ -2431,7 +2431,7 @@ exports[`Storyshots Components/Steps/vertical Medium 1`] = `
     </div>
   </div>
   <div
-    data-css-1xgx4w1=""
+    data-css-1b94shp=""
   >
     <div
       data-css-1f2gu5k=""
@@ -2464,7 +2464,7 @@ exports[`Storyshots Components/Steps/vertical Medium 1`] = `
     </div>
     <div>
       <div
-        data-css-k4yhz3=""
+        data-css-16qh227=""
       >
         <p>
           Select template
@@ -2480,14 +2480,14 @@ exports[`Storyshots Components/Steps/vertical Medium 1`] = `
     </div>
   </div>
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
     >
       <div
-        data-css-1dvenk2=""
         data-css-37nc4w=""
+        data-css-dkw9ct=""
       >
         <svg
           viewBox="0 0 24 24"
@@ -2522,14 +2522,14 @@ exports[`Storyshots Components/Steps/vertical Medium 1`] = `
     </div>
   </div>
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
     >
       <div
-        data-css-1dvenk2=""
         data-css-37nc4w=""
+        data-css-dkw9ct=""
       >
         <svg
           viewBox="0 0 24 24"
@@ -2564,14 +2564,14 @@ exports[`Storyshots Components/Steps/vertical Medium 1`] = `
     </div>
   </div>
   <div
-    data-css-1jawhk1=""
+    data-css-mjd7ch=""
   >
     <div
       data-css-1f2gu5k=""
     >
       <div
-        data-css-1dvenk2=""
         data-css-37nc4w=""
+        data-css-dkw9ct=""
       >
         <svg
           viewBox="0 0 24 24"

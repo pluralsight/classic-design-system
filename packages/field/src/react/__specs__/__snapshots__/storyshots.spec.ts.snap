@@ -9,7 +9,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="downshift-0-input"
       id="downshift-0-label"
     >
@@ -41,7 +41,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -81,7 +81,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -140,7 +140,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
           >
             <button
               aria-label="toggle menu"
-              data-css-xqz18p=""
+              data-css-b5utls=""
               disabled={false}
               id="downshift-0-toggle-button"
               onClick={[Function]}
@@ -697,7 +697,7 @@ Array [
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="downshift-1-toggle-button"
       id="downshift-1-label"
     >
@@ -743,7 +743,7 @@ Array [
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -1303,7 +1303,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tags-input__input-unique-id"
       id="tags-input__label-unique-id"
     >
@@ -1331,7 +1331,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -1834,7 +1834,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="tags-input__input-unique-id"
       id="tags-input__label-unique-id"
     >
@@ -1862,7 +1862,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
             >
               <div
                 aria-pressed={true}
-                data-css-146no9u=""
+                data-css-8a12hv=""
               >
                 <span
                   data-css-13bnfv4=""
@@ -2376,7 +2376,7 @@ exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
   onClick={[Function]}
 >
   <label
-    data-css-ep1lt2=""
+    data-css-5jjrbq=""
     htmlFor="text-area__area-unique-id"
     id="text-area__label-unique-id"
   >
@@ -2402,7 +2402,7 @@ exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-1s76hio=""
+    data-css-bv851e=""
   >
     Area for additional information
   </div>
@@ -2415,7 +2415,7 @@ exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
   onClick={[Function]}
 >
   <label
-    data-css-ep1lt2=""
+    data-css-5jjrbq=""
     htmlFor="text-area__area-unique-id"
     id="text-area__label-unique-id"
   >
@@ -2442,7 +2442,7 @@ exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
     </div>
   </div>
   <div
-    data-css-1s76hio=""
+    data-css-bv851e=""
   >
     Area for additional information
   </div>
@@ -2455,7 +2455,7 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
   onClick={[Function]}
 >
   <label
-    data-css-ep1lt2=""
+    data-css-5jjrbq=""
     htmlFor="text-area__area-unique-id"
     id="text-area__label-unique-id"
   >
@@ -2500,7 +2500,7 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
     </div>
   </div>
   <div
-    data-css-1s76hio=""
+    data-css-bv851e=""
   >
     Area for additional information
   </div>
@@ -2513,7 +2513,7 @@ exports[`Storyshots Components/Field/TextAreaField Icon Prefix 1`] = `
   onClick={[Function]}
 >
   <label
-    data-css-ep1lt2=""
+    data-css-5jjrbq=""
     htmlFor="text-area__area-unique-id"
     id="text-area__label-unique-id"
   >
@@ -2556,7 +2556,7 @@ exports[`Storyshots Components/Field/TextAreaField Icon Prefix 1`] = `
     </div>
   </div>
   <div
-    data-css-1s76hio=""
+    data-css-bv851e=""
   >
     Area for additional information
   </div>
@@ -2569,7 +2569,7 @@ exports[`Storyshots Components/Field/TextAreaField Icon Suffix 1`] = `
   onClick={[Function]}
 >
   <label
-    data-css-ep1lt2=""
+    data-css-5jjrbq=""
     htmlFor="text-area__area-unique-id"
     id="text-area__label-unique-id"
   >
@@ -2612,7 +2612,7 @@ exports[`Storyshots Components/Field/TextAreaField Icon Suffix 1`] = `
     </div>
   </div>
   <div
-    data-css-1s76hio=""
+    data-css-bv851e=""
   >
     Area for additional information
   </div>
@@ -2625,7 +2625,7 @@ exports[`Storyshots Components/Field/TextAreaField Size Small 1`] = `
   onClick={[Function]}
 >
   <label
-    data-css-ep1lt2=""
+    data-css-5jjrbq=""
     htmlFor="text-area__area-unique-id"
     id="text-area__label-unique-id"
   >
@@ -2651,7 +2651,7 @@ exports[`Storyshots Components/Field/TextAreaField Size Small 1`] = `
     </div>
   </div>
   <div
-    data-css-1s76hio=""
+    data-css-bv851e=""
   >
     Area for additional information
   </div>
@@ -2664,7 +2664,7 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
   onClick={[Function]}
 >
   <label
-    data-css-ep1lt2=""
+    data-css-5jjrbq=""
     htmlFor="text-area__area-unique-id"
     id="text-area__label-unique-id"
   >
@@ -2691,7 +2691,7 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
     </div>
   </div>
   <div
-    data-css-1s76hio=""
+    data-css-bv851e=""
   >
     Area for additional information
   </div>
@@ -2707,7 +2707,7 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -2732,7 +2732,7 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -2749,7 +2749,7 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -2775,7 +2775,7 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -2792,7 +2792,7 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -2836,7 +2836,7 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -2853,7 +2853,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -2895,7 +2895,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -2912,7 +2912,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -2954,7 +2954,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -2971,7 +2971,7 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -3013,7 +3013,7 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -3030,7 +3030,7 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -3055,7 +3055,7 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>
@@ -3083,7 +3083,7 @@ exports[`Storyshots Components/Field/TextInputField Style Override Display Block
         }
       >
         <label
-          data-css-ep1lt2=""
+          data-css-5jjrbq=""
           htmlFor="text-input__input-unique-id"
           id="text-input__label-unique-id"
         >
@@ -3108,7 +3108,7 @@ exports[`Storyshots Components/Field/TextInputField Style Override Display Block
           </div>
         </div>
         <div
-          data-css-1s76hio=""
+          data-css-bv851e=""
         >
           Area for additional information
         </div>
@@ -3127,7 +3127,7 @@ exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
     onClick={[Function]}
   >
     <label
-      data-css-ep1lt2=""
+      data-css-5jjrbq=""
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
@@ -3153,7 +3153,7 @@ exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
       </div>
     </div>
     <div
-      data-css-1s76hio=""
+      data-css-bv851e=""
     >
       Area for additional information
     </div>

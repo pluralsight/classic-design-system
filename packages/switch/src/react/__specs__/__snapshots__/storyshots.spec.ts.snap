@@ -28,7 +28,7 @@ exports[`Storyshots checked false 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Click me
   </span>
@@ -63,7 +63,7 @@ exports[`Storyshots checked true 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Click me
   </span>
@@ -158,7 +158,7 @@ exports[`Storyshots color blue 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Click me
   </span>
@@ -193,7 +193,7 @@ exports[`Storyshots color green 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Click me
   </span>
@@ -228,7 +228,7 @@ exports[`Storyshots color orange 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Click me
   </span>
@@ -354,7 +354,7 @@ exports[`Storyshots error true 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Clickable in error state
   </span>
@@ -390,7 +390,7 @@ exports[`Storyshots error true w/ disabled 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Such errors
   </span>
@@ -425,7 +425,7 @@ exports[`Storyshots label large left 1`] = `
     type="checkbox"
   />
   <span
-    data-css-ivahyw=""
+    data-css-16fknc=""
   >
     Click me
   </span>
@@ -460,7 +460,7 @@ exports[`Storyshots label large right 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Click me
   </span>
@@ -495,7 +495,7 @@ exports[`Storyshots label small left 1`] = `
     type="checkbox"
   />
   <span
-    data-css-1n855vm=""
+    data-css-i4my9=""
   >
     Click me
   </span>
@@ -530,7 +530,7 @@ exports[`Storyshots label small right 1`] = `
     type="checkbox"
   />
   <span
-    data-css-1ppq9hy=""
+    data-css-y6ldsm=""
   >
     Click me
   </span>
@@ -565,7 +565,7 @@ exports[`Storyshots size large 1`] = `
     type="checkbox"
   />
   <span
-    data-css-k7ezbc=""
+    data-css-1oms9gl=""
   >
     Click me
   </span>
@@ -600,7 +600,7 @@ exports[`Storyshots size small 1`] = `
     type="checkbox"
   />
   <span
-    data-css-1ppq9hy=""
+    data-css-y6ldsm=""
   >
     Click me
   </span>

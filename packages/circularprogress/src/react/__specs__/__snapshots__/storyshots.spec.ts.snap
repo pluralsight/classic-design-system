@@ -27,7 +27,7 @@ exports[`Storyshots animation animates to new values 1`] = `
       <circle
         cx="24"
         cy="24"
-        data-css-vyp88e=""
+        data-css-17x5ehd=""
         r={22}
         strokeDasharray="138.23007675795088 138.23007675795088"
         strokeDashoffset={138.23007675795088}
@@ -37,7 +37,7 @@ exports[`Storyshots animation animates to new values 1`] = `
   <div
     style={
       Object {
-        "color": "rgba(255, 255, 255, 0.90)",
+        "color": "rgba(255, 255, 255, 0.95)",
       }
     }
   >
@@ -73,7 +73,7 @@ exports[`Storyshots indeterminate medium 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={103.67255756846316}
@@ -108,7 +108,7 @@ exports[`Storyshots indeterminate small 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={103.67255756846316}
@@ -143,7 +143,7 @@ exports[`Storyshots size medium 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={34.55751918948772}
@@ -178,7 +178,7 @@ exports[`Storyshots size small 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={34.55751918948772}
@@ -214,7 +214,7 @@ exports[`Storyshots style overrides className (no viz change) 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={103.67255756846316}
@@ -254,7 +254,7 @@ exports[`Storyshots style overrides style 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={103.67255756846316}
@@ -289,7 +289,7 @@ exports[`Storyshots value value 0 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={138.23007675795088}
@@ -324,7 +324,7 @@ exports[`Storyshots value value 25 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={103.67255756846316}
@@ -359,7 +359,7 @@ exports[`Storyshots value value 33 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={92.6141514278271}
@@ -394,7 +394,7 @@ exports[`Storyshots value value 50 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={69.11503837897544}
@@ -429,7 +429,7 @@ exports[`Storyshots value value 66 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={46.9982260977033}
@@ -464,7 +464,7 @@ exports[`Storyshots value value 75 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={34.55751918948772}
@@ -499,7 +499,7 @@ exports[`Storyshots value value 100 1`] = `
     <circle
       cx="24"
       cy="24"
-      data-css-vyp88e=""
+      data-css-17x5ehd=""
       r={22}
       strokeDasharray="138.23007675795088 138.23007675795088"
       strokeDashoffset={0}

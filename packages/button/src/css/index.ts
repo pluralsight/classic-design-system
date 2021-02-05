@@ -16,15 +16,6 @@ import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
-export const colorsSecondaryAction = {
-  backgroundDefaultOnDark: transparentize(0.75, colorsBackgroundUtility.base),
-  backgroundHoverOnDark: transparentize(0.65, colorsBackgroundUtility.base),
-  backgroundPressedOnDark: transparentize(0.8, colorsBackgroundUtility.base),
-  backgroundDefaultOnLight: transparentize(0.75, colorsBackgroundUtility.base),
-  backgroundHoverOnLight: transparentize(0.55, colorsBackgroundUtility.base),
-  backgroundPressedOnLight: transparentize(0.35, colorsBackgroundUtility.base)
-}
-
 export const loading = {
   trackColorOnLight: colorsBorder.lowOnLight,
   trackColorOnDark: colorsBorder.lowOnDark,
@@ -46,26 +37,43 @@ export default {
     alignItems: 'stretch',
     padding: `${layout.spacingSmall} ${layout.spacingMedium}`,
     border: 0,
-    borderRadius: '2px',
-    fontSize: type.fontSize200,
+    borderRadius: '3px',
+    fontSize: type.fontSize300,
     fontWeight: type.fontWeight500,
     textAlign: 'center',
     whiteSpace: 'nowrap',
     textDecoration: 'none',
-    transition: `all ${motion.speedNormal}`,
+    transition: `background ${motion.speedFast}, transform ${motion.speedXFast}`,
     verticalAlign: 'middle',
     '&:not([disabled]):hover': {
       cursor: 'pointer'
     },
-    '&:focus': {
+    '&:focus:not(:focus-visible)': {
       outline: 'none',
-      boxShadow: `0 0 0 3px ${transparentize(
-        0.5,
-        colorsPrimaryAction.background
-      )}`
+      boxShadow: 'none'
     },
     '&:not([disabled]):active': {
       transform: 'scale(0.98)'
+    }
+  },
+  [`.psds-button.psds-theme--${themeDefaultName}`]: {
+    '&:focus': {
+      outline: 'none',
+      boxShadow: `0 0 0 2px ${colorsBlue[4]}`
+    },
+    '&:focus-visible': {
+      outline: 'none',
+      boxShadow: `0 0 0 2px ${colorsBlue[4]}`
+    }
+  },
+  [`.psds-button.psds-theme--${themeNames.light}`]: {
+    '&:focus': {
+      outline: 'none',
+      boxShadow: `0 0 0 2px ${colorsBlue[8]}`
+    },
+    '&:focus-visible': {
+      outline: 'none',
+      boxShadow: `0 0 0 2px ${colorsBlue[8]}`
     }
   },
   [`.psds-button--layout-${vars.layouts.fullWidth}`]: {
@@ -74,79 +82,88 @@ export default {
   },
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
     fontSize: type.fontSize100,
+    letterSpacing: type.letterSpacingLooser,
     padding: `0 ${layout.spacingXSmall}`,
     height: '24px'
   },
   [`.psds-button--size-${vars.sizes.small}`]: {
     fontSize: type.fontSize200,
-    padding: `${layout.spacingXXSmall} ${layout.spacingXSmall}`,
+    letterSpacing: type.letterSpacingLooser,
+    padding: `${layout.spacingXXSmall} ${layout.spacingSmall}`,
     height: '32px'
   },
   [`.psds-button--size-${vars.sizes.medium}`]: {
-    fontSize: type.fontSize200,
+    fontSize: type.fontSize300,
+    letterSpacing: type.letterSpacingLoose,
     padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
     height: '40px'
   },
   [`.psds-button--size-${vars.sizes.large}`]: {
     fontSize: type.fontSize400,
-    padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
+    letterSpacing: type.letterSpacingNone,
+    padding: `${layout.spacingXXSmall} ${layout.spacingLarge}`,
     height: '48px'
   },
   [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark,
     background: colorsPrimaryAction.background,
     '&:not([disabled]):hover': {
-      background: colorsBlue[7],
+      background: colorsBlue[8],
       cursor: 'pointer'
     },
     '&:not([disabled]):focus': {
-      background: colorsBlue[7],
+      background: colorsBlue[8],
       cursor: 'pointer'
     },
     '&:not([disabled]):active': {
-      background: colorsBlue[8]
+      background: colorsBlue[9]
     }
   },
   [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnDark,
     background: colorsPrimaryAction.background,
     '&:not([disabled]):hover': {
-      background: colorsBlue[7],
+      background: colorsBlue[8],
       cursor: 'pointer'
     },
     '&:not([disabled]):focus': {
-      background: colorsBlue[7],
-      cursor: 'pointer'
+      background: colorsBlue[8],
+      cursor: 'pointer',
+      boxShadow: `0 0 0 2px ${colorsBlue[5]}`
+    },
+    '&:not([disabled]):focus-visible': {
+      boxShadow: `0 0 0 2px ${colorsBlue[5]}`
     },
     '&:not([disabled]):active': {
-      background: colorsBlue[8]
+      background: colorsBlue[9]
     }
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.highOnDark,
-    background: colorsSecondaryAction.backgroundDefaultOnDark,
+    background: colorsBackgroundUtility[25],
 
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHoverOnDark
+      background: colorsBackgroundUtility[30]
     },
     '&:not([disabled]):focus': {
-      background: colorsSecondaryAction.backgroundHoverOnDark
+      background: colorsBackgroundUtility[30]
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnDark
+      background: colorsBackgroundUtility[20]
     }
   },
   [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight,
-    background: colorsSecondaryAction.backgroundDefaultOnLight,
+    background: colorsBackgroundUtility[20],
+
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHoverOnLight
+      background: colorsBackgroundUtility[25]
     },
     '&:not([disabled]):focus': {
-      background: colorsSecondaryAction.backgroundHoverOnLight
+      background: colorsBackgroundUtility[25]
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnLight
+      background: colorsBackgroundUtility[30]
     }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeDefaultName}`]: {
@@ -156,15 +173,17 @@ export default {
 
     '&:not([disabled]):hover': {
       border: `2px solid ${colorsBlue[5]}`,
-      background: transparentize(0.85, colorsBlue.base)
+      background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
+      color: colorsBlue[4]
     },
     '&:not([disabled]):focus': {
       border: `2px solid ${colorsBlue[5]}`,
-      background: transparentize(0.85, colorsBlue.base)
+      background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
+      color: colorsBlue[4]
     },
     '&:not([disabled]):active': {
       border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.8, colorsBlue.base)
+      background: transparentize(0.8, colorsPrimaryAction.textDarkTheme)
     }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeNames.light}`]: {
@@ -174,15 +193,17 @@ export default {
 
     '&:not([disabled]):hover': {
       border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.95, colorsBlue.base)
+      background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
+      color: colorsBlue[8]
     },
     '&:not([disabled]):focus': {
       border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.95, colorsBlue.base)
+      background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
+      color: colorsBlue[8]
     },
     '&:not([disabled]):active': {
       border: `2px solid ${colorsBlue[8]}`,
-      background: transparentize(0.9, colorsBlue.base)
+      background: transparentize(0.9, colorsPrimaryAction.textLightTheme)
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}`]: {
@@ -192,30 +213,30 @@ export default {
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.lowOnDark,
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHoverOnDark,
+      background: colorsBackgroundUtility[25],
       color: colorsTextIcon.highOnDark
     },
     '&:not([disabled]):focus': {
-      background: colorsSecondaryAction.backgroundHoverOnDark,
+      background: colorsBackgroundUtility[25],
       color: colorsTextIcon.highOnDark
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnDark,
+      background: colorsBackgroundUtility[20],
       color: colorsTextIcon.highOnDark
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.lowOnLight,
     '&:not([disabled]):hover': {
-      background: colorsSecondaryAction.backgroundHoverOnLight,
+      background: colorsBackgroundUtility[20],
       color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):focus': {
-      background: colorsSecondaryAction.backgroundHoverOnLight,
+      background: colorsBackgroundUtility[20],
       color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):active': {
-      background: colorsSecondaryAction.backgroundPressedOnLight,
+      background: colorsBackgroundUtility[15],
       color: colorsTextIcon.highOnLight
     }
   },
@@ -246,10 +267,22 @@ export default {
   [`.psds-button--iconAlign-${vars.iconAligns.right}`]: {
     flexDirection: 'row-reverse'
   },
-  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly`]: {
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]: {
+    paddingRight: layout.spacingXXSmall
+  },
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]: {
+    paddingLeft: layout.spacingXXSmall
+  },
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]: {
+    paddingRight: layout.spacingXXSmall
+  },
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]: {
+    paddingLeft: layout.spacingXXSmall
+  },
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]: {
     paddingRight: layout.spacingXSmall
   },
-  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly`]: {
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]: {
     paddingLeft: layout.spacingXSmall
   },
   [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {

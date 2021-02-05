@@ -6,7 +6,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       Some label
     </div>
@@ -29,7 +29,7 @@ Array [
       </div>
     </div>
     <div
-      data-css-1u5arfw=""
+      data-css-tayj8l=""
     >
       Some sub label
     </div>
@@ -38,7 +38,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       Some label
     </div>
@@ -49,7 +49,7 @@ Array [
         data-css-ctre2o=""
       >
         <textarea
-          data-css-11onv2k=""
+          data-css-8khcid=""
           disabled={false}
           placeholder="Some placeholder"
           style={
@@ -61,7 +61,7 @@ Array [
       </div>
     </div>
     <div
-      data-css-1u5arfw=""
+      data-css-tayj8l=""
     >
       Some sub label
     </div>
@@ -75,7 +75,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       Normal
     </div>
@@ -98,7 +98,7 @@ Array [
       </div>
     </div>
     <div
-      data-css-1u5arfw=""
+      data-css-tayj8l=""
     >
       Still normal
     </div>
@@ -107,7 +107,7 @@ Array [
     data-css-1tctpgo=""
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       I'm not usable
     </div>
@@ -130,7 +130,7 @@ Array [
       </div>
     </div>
     <div
-      data-css-1u5arfw=""
+      data-css-tayj8l=""
     >
       Neither am I
     </div>
@@ -144,7 +144,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       Normal
     </div>
@@ -167,7 +167,7 @@ Array [
       </div>
     </div>
     <div
-      data-css-1u5arfw=""
+      data-css-tayj8l=""
     >
       Still normal
     </div>
@@ -176,7 +176,7 @@ Array [
     data-css-na8jqt=""
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       I'm in an error state
     </div>
@@ -218,7 +218,7 @@ Array [
       </div>
     </div>
     <div
-      data-css-1u5arfw=""
+      data-css-tayj8l=""
     >
       Here
     </div>
@@ -269,7 +269,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
     }
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       max-width still applies
     </div>
@@ -302,7 +302,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
     }
   >
     <div
-      data-css-k6qvfq=""
+      data-css-9kywkh=""
     >
       remove max-width
     </div>
@@ -351,7 +351,7 @@ exports[`Storyshots Components/TextArea Label 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-k6qvfq=""
+    data-css-9kywkh=""
   >
     Some label
   </div>
@@ -380,7 +380,7 @@ exports[`Storyshots Components/TextArea Label And Sub Label 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-k6qvfq=""
+    data-css-9kywkh=""
   >
     Some label
   </div>
@@ -402,7 +402,7 @@ exports[`Storyshots Components/TextArea Label And Sub Label 1`] = `
     </div>
   </div>
   <div
-    data-css-1u5arfw=""
+    data-css-tayj8l=""
   >
     Some sublabel
   </div>
@@ -414,7 +414,7 @@ exports[`Storyshots Components/TextArea Less Than Four Rows 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-k6qvfq=""
+    data-css-9kywkh=""
   >
     Min height engages
   </div>
@@ -443,7 +443,7 @@ exports[`Storyshots Components/TextArea More Than Four Rows 1`] = `
   data-css-na8jqt=""
 >
   <div
-    data-css-k6qvfq=""
+    data-css-9kywkh=""
   >
     6 rows of text
   </div>
@@ -591,7 +591,7 @@ exports[`Storyshots Components/TextArea Sub Label 1`] = `
     </div>
   </div>
   <div
-    data-css-1u5arfw=""
+    data-css-tayj8l=""
   >
     Some sublabel
   </div>
